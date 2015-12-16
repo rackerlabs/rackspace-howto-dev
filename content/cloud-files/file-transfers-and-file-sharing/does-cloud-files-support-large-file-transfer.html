@@ -1,0 +1,144 @@
+---
+node_id: 3021
+title: Does Cloud Files support the transfer of large files?
+permalink: frequently-asked-question/does-cloud-files-support-large-file-transfer
+type: frequently_asked_question
+created_date: '2012-09-27 10:20:40'
+created_by: tom.hopkins
+last_modified: '2015-03-25 17:0444'
+last_modified_by: kelly.holcomb
+products: Cloud Files
+categories: File Transfers and File Sharing
+body_format: tinymce
+---
+
+<p>Yes, the Rackspace Cloud now supports the transfer and storage of larger files. Following is a list of frequently asked questions about our large file support.</p>
+
+<h4>How does Rackspace support the upload of large files to Cloud Files?</h4>
+
+<p>Although support for uploading content to Cloud Files through the Cloud Control Panel is limited to files smaller than 5 GB, we can accommodate the transfer of files larger than 5 GB by allowing you to segment your files into multiple file segments.</p>
+
+<h4>How large should my file segments be?</h4>
+
+<p>Rackspace does not enforce any lower limits on the file size. File segments cannot be larger than 5 GB, and we recommend not storing file segments that are smaller than 100 MB.</p>
+
+<h4>Can I serve my large files over the CDN?</h4>
+
+<p>At this time, you cannot serve files larger than 10 GB from the CDN.</p>
+
+<h4>Is there a simpler way to use this process?</h4>
+
+<p>We have created a tool called Swift to make this process easier. Swift segments your large file for you, creates a manifest file, and uploads the segments accordingly. After it uploads the segments, Swift manages the segments for you, deleting and updating them as needed. You can get <a href="https://launchpad.net/swift">information about the Swift Tool</a> and <a class="external text" href="https://launchpad.net/swift/essex/1.4.8/+download/swift-1.4.8.tar.gz" rel="nofollow" title="http://bazaar.launchpad.net/~hudson-openstack/swift/1.2/download/head:/st.py-20100712220340-zzyjabj9xczdm4cg-15/st">download </a>the Swift tool.</p>
+
+<h4>When should I use the API instead of the Swift tool?</h4>
+
+<p>If you are interested in developing against the Rackspace Large File Support code to incorporate into your application, you should work directly with the Cloud Files API. Use the following steps:</p>
+
+<ol>
+	<li>Upload the segments:
+	<pre>
+curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \     http://&lt;storage_url&gt;/container/myobject/1 --data-binary '1' 
+curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \     http://&lt;storage_url&gt;/container/myobject/2 --data-binary '2' 
+curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \     http://&lt;storage_url&gt;/container/myobject/3 --data-binary '3'</pre>
+	</li>
+	<li>Create the manifest file:
+	<pre>
+curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \     
+-H 'X-Object-Manifest: container/myobject/' \     http://&lt;storage_url&gt;/container/myobject --data-binary ''</pre>
+	</li>
+	<li>Download the segments as a single object:
+	<pre>
+curl -H 'X-Auth-Token: &lt;token&gt;' \     
+http://&lt;storage_url&gt;/container/myobject</pre>
+	</li>
+</ol>
+
+<h4>When should I use the Swift tool instead of the API, and what is the process?</h4>
+
+<p>If you want to upload large files but do not want to incorporate our code into an application, you might find it easier to use the <a class="external text" href="http://bazaar.launchpad.net/~hudson-openstack/swift/1.2/view/head:/bin/st" rel="nofollow" title="http://bazaar.launchpad.net/~hudson-openstack/swift/1.2/view/head:/bin/st">Swift tool</a> for your uploads and management. If you are using the tool, the process looks as follows:</p>
+
+<p>The following code uploads <strong>largefile.iso</strong> to <strong>test_container</strong> in 10 segments (in this case, 10 MB per segment for a total of 100 MB).</p>
+
+<pre>
+$ st -A https://auth.api.rackspacecloud.com/v1.0 -U glh -K 3a25c2dc74f24c3122407a26566093c8 upload -S 1048576 test_container largefile.iso
+largefile.iso segment01
+largefile.iso segment06
+largefile.iso segment09
+largefile.iso segment04
+largefile.iso segment05
+largefile.iso segment03
+largefile.iso segment07
+largefile.iso segment08
+largefile.iso segment02
+largefile.iso segment00
+largefile.iso
+</pre>
+
+<p>The following code downloads the large file as a single object:</p>
+
+<pre>
+$ st -A https://auth.api.rackspacecloud.com/v1.0 -U glh -K 3a25c2dc74f24c3122407a26566093c8 download test_container largefile.iso
+largefile.iso
+</pre>
+
+<p>Alternatively, you can list the segments and download them separately:</p>
+
+<pre>
+$ st -A https://auth.api.rackspacecloud.com/v1.0 -U glh -K 3a25c2dc74f24c3122407a26566093c8 list test_container_segments
+largefile.iso/1300906481.0/10485760/00000000
+largefile.iso/1300906481.0/10485760/00000001
+largefile.iso/1300906481.0/10485760/00000002
+largefile.iso/1300906481.0/10485760/00000003
+largefile.iso/1300906481.0/10485760/00000004
+largefile.iso/1300906481.0/10485760/00000005
+largefile.iso/1300906481.0/10485760/00000006
+largefile.iso/1300906481.0/10485760/00000007
+largefile.iso/1300906481.0/10485760/00000008
+largefile.iso/1300906481.0/10485760/00000009
+</pre>
+
+<p>You can list the main large object itself:</p>
+
+<pre>
+$ st -A https://auth.api.rackspacecloud.com/v1.0 -U glh -K 3a25c2dc74f24c3122407a26566093c8 list test_container
+largefile.iso
+</pre>
+
+<p>When you use the object name to list large object segments, the segment names are returned in alphabetical order. Plan segment names accordingly. For example, <strong>name10</strong> would come before <strong>name9</strong> alphabetically, so to preserve the correct order, the latter segment should be named <strong>name09</strong>.</p>
+
+<h4>What will the download experience be like?</h4>
+
+<p>After files are segmented and uploaded with a manifest file, your large file will be served as a single file, so the experience will mimic the download or service of any other object retrieval.</p>
+
+<p><a name="keepaccess7"></a></p>
+
+<p><a id="Do_I_keep_access_to_my_file_segments.3F" name="Do_I_keep_access_to_my_file_segments.3F"></a></p>
+
+<h4>Do I have access to my file segments?</h4>
+
+<p>Yes, you can edit your file segments just like any other object within Cloud Files.</p>
+
+<p><a name="ensurelinked8"></a></p>
+
+<p><a id="How_do_I_ensure_my_files_are_linked_correctly.3F" name="How_do_I_ensure_my_files_are_linked_correctly.3F"></a></p>
+
+<h4>How do I ensure that my files are linked correctly?</h4>
+
+<p>Include your manifest file in your upload. You can change your file name by editing this manifest file as well. We recommend using prefixing in your file segments to easily map your manifest file to the portions of your large file. For example, you could name your segments as follows:</p>
+
+<pre>
+Myfavoritemovie-01
+Myfavoritemovie-02
+Myfavoritemovie-03
+..etc..
+</pre>
+
+<p>In this case, you would point your manifest file to the prefix:</p>
+
+<pre>
+Myfavoritemovie
+</pre>
+
+<h4>Can I use this feature from the Cloud Control Panel?</h4>
+
+<p>At this time, Rackspace has not implemented this functionality into the Rackspace Cloud Control Panel.</p>

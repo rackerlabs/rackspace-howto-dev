@@ -1,0 +1,62 @@
+---
+node_id: 2252
+title: Getting Started with Cloud Files Streaming
+permalink: frequently-asked-question/streaming-for-cloud-files-faq
+type: frequently_asked_question
+created_date: '2012-12-05 09:00:47'
+created_by: David Hendler
+last_modified: '2014-11-13 11:2757'
+last_modified_by: David Hendler
+products: Cloud Files
+categories: Web Technologies
+body_format: tinymce
+---
+
+<p>Streaming content through Cloud Files lets you deliver video content quickly and easily, without making your users download the content first. They can begin viewing your content immediately and can jump around the video stream without needing to buffer.</p>
+
+<p>Because Rackspace uses HTTP delivery for streaming content, you can use the Akamai CDN network to deliver your content. This means the performance should be identical to CDN speeds customers are used to. Before you begin, you must CDN-enable the container that holds your streaming content. In the Cloud Control Panel, click the gear icon of the container and select "Make Public (Enable CDN)".</p>
+
+<p>Once your container is CDN-enabled, you will need its Streaming URLs. In the Cloud Control Panel, click the gear icon for the container and select "View All Links...".&nbsp; Below is an example of the CDN links that display:</p>
+
+<pre>
+HTTP: http://cdc4c16471588d4846bf-cc339a649709710bbecd3db1e126ec2b.r3.cf1.rackcdn.com
+
+HTTPS: https://ac3c779acb946eaf4819-cc339a649709710bbecd3db1e126ec2b.ssl.cf1.rackcdn.com
+
+Streaming: http://b0c42c537095921be66c-cc339a649709710bbecd3db1e126ec2b.r3.stream.cf1.rackcdn.com
+
+iOS Streaming: http://09ac235af93af07922d6-cc339a649709710bbecd3db1e126ec2b.iosr.cf1.rackcdn.com</pre>
+
+<p>There are several different ways to stream your content with Cloud Files. Click a link below to find out more for each approach.</p>
+
+<ul>
+	<li><a href="/knowledge_center/article/streaming-cloud-files-with-jw-player">JW Player</a></li>
+	<li><a href="/knowledge_center/article/cloud-files-streaming-with-flowplayer-plugins">FlowPlayer</a></li>
+	<li><a href="/knowledge_center/article/cloud-files-streaming-with-osmf-plugins">OSMF (Open Source Media Framework)</a>, which allows you to build your own player</li>
+	<li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/iOS-Streaming-d1f3725.html">iOS Device Streaming</a> (link goes to API Developer Guide)</li>
+</ul>
+
+<h3><br />
+<a name="faqs"></a>Cloud Files Streaming FAQs</h3>
+
+<h4>Why have we chosen to support specific players?</h4>
+
+<p>Many Rackspace customers are not flash developers, but still want to use a streaming offer. There are a few players that are dominating the market, and we will plan to support each of them. Custom plugins are required in order for Streaming delivery to work properly over the Akamai network. As Akamai adds support for more players, our customers will have access to them.<br />
+&nbsp;</p>
+
+<h4>Why are we not using RTMP?</h4>
+
+<ul>
+	<li>RTMP is probably the most popular delivery format today, but the market is quickly moving towards HTTP delivery for Streaming content. Here are just a few reasons the market is moving towards HTTP.</li>
+	<li>Accessibility- Many firewalls block RTMP and RTSP streaming protocols because corporations don't want users watching video at work. HTTP appears to be normal web traffic, meaning that videos served over HTTP are usually left open.</li>
+	<li>Startup times- Akamai sees a significant reduction in stream startup times on average for traffic served via HTTP.</li>
+	<li>Throughput (image quality)- With the HTTP network being larger than many other networks, Akamai is closer to the end user on their HTTP network meaning they get better throughput of data. that means customers will experience higher bit rates uninterupted (and without buffering) and increase the end user's over all experience.</li>
+</ul>
+
+<h4>&nbsp;</h4>
+
+<h4>Is this available internationally?</h4>
+
+<p>Yes, this is available to both US and UK Cloud customers.</p>
+
+<p>&nbsp;</p>

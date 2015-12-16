@@ -1,0 +1,127 @@
+---
+node_id: 3886
+title: Upgrading to Exchange 2013
+permalink: article/upgrading-to-exchange-2013
+type: article
+created_date: '2014-02-03 11:18:09'
+created_by: mawutor.amesawu
+last_modified: '2015-07-23 14:4316'
+last_modified_by: kyle.laffoon
+products: Cloud Office
+categories: Hosted Exchange
+tags: 'migrations,upgrade,Exchange 2007,exchange 2013,hosted exchange,email'
+body_format: tinymce
+body_summary: "<p>Welcome to the Exchange 2013 upgrade portal. Here you will find information regarding your upgrade from your current Exchange environment to Exchange 2013. The topics below will walk you through all of the required steps to successfully migrate to Exchange 2013.</p>\r\n"
+---
+
+<p>Welcome to the Exchange 2013 upgrade portal. Here you will find information regarding your upgrade from your current Exchange environment to Exchange 2013. Follow the required steps explained in this article to successfully migrate to Exchange 2013.</p>
+
+<p>&nbsp;</p>
+
+<h2>Prior to your Migration</h2>
+
+<p>We do not anticipate any issues with the migration; however, if you have any mission critical data, we highly recommend that you back up that data prior to the migration. You can back up your data by performing a PST export using Outlook.&nbsp; It is important to note that any corrupt data will not move.</p>
+
+<h3>Autodiscover</h3>
+
+<p>It is important to setup your Autodiscover DNS record for Exchange 2013. Features such as Automatic Outlook Configuration, Free/Busy Time, Out of Office, and Public Folders will function only if this record is in place.</p>
+
+<p>Complete instructions for setting up your Autodiscover record are located here: <a href="http://www.rackspace.com/knowledge_center/article/autodiscover-and-hosted-microsoft-exchange">Autodiscover and Hosted Microsoft Exchange</a></p>
+
+<h3>Outlook Web Access</h3>
+
+<p>The Outlook Web Access (OWA) tool will be available via two links:</p>
+
+<ul type="disc">
+	<li>Rackspace Unified Login - <a href="https://apps.rackspace.com">https://apps.rackspace.com</a></li>
+	<li>Direct Login - <a href="https://mex08.emailsrvr.com">https://mex08.emailsrvr.com</a><br />
+	<br />
+	Note: Exchange 2013 Upgrades completed prior to January 27, 2015 still use Direct Login - <a href="https://mex06.emailsrvr.com">https://mex06.emailsrvr.com</a></li>
+</ul>
+
+<h3>Public Folders</h3>
+
+<p>Exchange 2013 now offers public folders on a hosted environment. Public folders on Exchange 2013 will have the following limitations:</p>
+
+<ul>
+	<li>25 folders with a max size of 250MB per folder. (Root Folder included)</li>
+	<li>
+	<p>Exchange 2013 admins must use Control Panel to manage public folders</p>
+	</li>
+	<li>
+	<p>Public folder administration (create, edit, move, etc.) is disabled in Outlook for 2013 customers</p>
+	</li>
+	<li>
+	<p>User permissions (such as granting read/edit/delete access) is not available<br />
+	Note: For a complete list of public folder limitations, please review the migration plan provided.</p>
+	</li>
+</ul>
+
+<h3>Spam Filtering</h3>
+
+<p>The spam handling in Exchange 2013 is the same as Exchange 2010, and is different from Exchange 2007. We are no longer utilizing the quarantine manager for exchange mailboxes and any spam messages that are sent to the users will be delivered to the junk/spam folder of the email client.</p>
+
+<p>The domain quarantine will still receive spam messages for other exchange addresses (contacts, distribution lists, public folders, resources). You can set the user's spam to be delivered to the domain quarantine but only an admin will be able to access this quarantine manager.</p>
+
+<h3>Data Handling</h3>
+
+<p>Users may see an increase in the mailbox size due to the way Exchange 2013 handles data. The increase in mailbox size is due to the inclusion of all item properties into quota calculations such as the recover deleted items folder.</p>
+
+<p>&nbsp;</p>
+
+<h2>Post Migration: Mail Client and Mobile Device Configuration</h2>
+
+<p>Note: Outlook 2003 and Entourage 2004 are not supported with Exchange 2013. Users on Outlook 2007 must be running Service Pack 3.</p>
+
+<h3>Autodiscover</h3>
+
+<p>Once your migration is complete, an alert will appear indicating that Autodiscover is requesting to reconfigure your email profile. Check&nbsp; "Always Do This Option," and select&nbsp; "Allow." Exchange 2013 mailbox will then begin to re-sync.</p>
+
+<h3>Manual Configurations</h3>
+
+<p>We highly recommend using Autodiscover to configure users. If a manual configuration is needed, visit the following link for our set up guides: <a href="http://www.rackspace.com/knowledge_center/article/setting-up-microsoft-exchange-email-clients-mobile-devices">Setup Up Microsoft Exchange Email Clients and Mobile Devices</a></p>
+
+<h3>Rackspace Auto Configuration Tool (Outlook 2007, Outlook 2010, Outlook 2013)</h3>
+
+<p>Your users can download the Rackspace Auto Configuration Tool to make setup very easy. The tool only requires the user's email address and password to automatically configure Outlook for Rackspace Exchange.</p>
+
+<pre>
+ftp://connect.emailsrvr.com/OutlookProfileConfigTool.exe.</pre>
+
+<p>&nbsp;</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<ol>
+	<li><strong>Do I need to change my MX records?</strong>
+
+	<p><em>In most cases, you do not need to change your MX records since they should already be pointed to our environment. Our MX record details are located here: </em><a href="http://www.rackspace.com/knowledge_center/article/updating-your-mx-records-microsoft-exchange"><em>Updating Your Mx Records</em></a></p>
+	</li>
+	<li><strong>Could we migrate a portion of our mailboxes?</strong>
+	<p><em>This type of migration requires all users to migrate at once. This is due to our environment allowing the domain to reside in one exchange environment.</em></p>
+	</li>
+	<li><strong>If Autodiscover is not setup, and I set it up now, will my users receive a prompt?</strong>
+	<p><em>The reconfiguration prompt will occur in the following situations:</em></p>
+
+	<ul type="disc">
+		<li><em>The user is using Outlook 2007, 2010 or 2013.</em></li>
+		<li><em>The user set up their profile using Autodiscover</em></li>
+		<li><em>The Autodiscover CNAME points to autodiscover.emailsrvr.com and the profile was configured using Autodiscover.&nbsp;</em><br />
+		&nbsp;</li>
+	</ul>
+	</li>
+	<li><strong>Is there any downtime?</strong>
+	<p><em>There is no downtime during the migration. Mail will be delivered without interruption. Users will still be able to send/receive normally until their mailbox has completed migrating.</em></p>
+	</li>
+	<li><strong>How long does the migration take?</strong>
+	<p><em>Unfortunately, there are many factors that affect the speed of the migration, so it is difficult to accurately judge the migration time.</em></p>
+	</li>
+	<li><strong>Will I need to reconfigure my mobile devices?</strong>
+	<p><em>Yes, all mobile devices will need to be reconfigured. For all ActiveSync devices, you can simply update the existing entries or remove the account and re-add. Blackberry devices configured as BES must be wiped to ensure proper re-activation on the new Exchange platform. We recommend backing up any data prior to wiping. For Blackberry devices with software version 10.0 and above using ActiveSync, no wipe will be necessary.</em></p>
+	</li>
+	<li><strong>Will I have access to my Control Panel during the migration?</strong>
+	<p><em>You will still be able to access your admin control panel but it is important that no changes are made to your domain. If changes are made during the migration, it will cause issues.</em></p>
+	</li>
+</ol>
+
+<p>&nbsp;</p>

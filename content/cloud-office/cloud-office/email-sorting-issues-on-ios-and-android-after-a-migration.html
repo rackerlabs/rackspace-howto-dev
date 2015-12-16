@@ -1,0 +1,16 @@
+---
+node_id: 3787
+title: Email sorting issues on iOS and Android after an email migration
+permalink: article/email-sorting-issues-on-ios-and-android-after-a-migration
+type: article
+created_date: '2013-11-18 21:26:06'
+created_by: milton.prado
+last_modified: '2013-11-28 12:2000'
+last_modified_by: jered.heeschen
+products: Cloud Office
+categories: Cloud Office
+tags: 'email,migrate,migration,android,iOS,iPhone,sorting,dates'
+body_format: tinymce
+---
+
+<p>After completing an email migration to Rackspace, some iOS and Android users may experience issues in the way emails are sorted on their mobile devices.</p><h3>Specific Behavior</h3><p>Users may notice messages sorted in order from oldest to newest or may notice date gaps between messages.</p><p>Mobile Devices set up with IMAP (via Exchange) would display legacy messages in the order of oldest to newest. &nbsp;New messages that arrive to the mobile devices show up in the correct order. &nbsp;The only users that should be affected by this are users that choose to view a longer timeframe of data on their mobile phones after a migration.&nbsp;</p><h3>Cause</h3><p>This is caused during the migration of data. &nbsp;The process exports mail from the source mailbox in order from newest to oldest, and imports the mail to the destination mailbox in the same fashion. &nbsp;This process causes the message creation or modification date to appear newer or more recent for older mail because it is the last to enter the mailbox.</p><h3>Solution</h3><p>Most migration tools, including MigrationWiz, migrate recent emails first. This is done so that users can start using their mailbox faster by having recent content immediately available to them. &nbsp;iOS and Android email clients are unique in the way they view this data. Those devices use the Created/Modified Date value for sorting. &nbsp;Most other email programs sort emails by Received Date. Unfortunately, this is a limitation of these mobile devices.</p><p>In order to prevent this issue, we recommend that users not have email from long timeframes set to be viewed on thier mobile devices.&nbsp;</p>

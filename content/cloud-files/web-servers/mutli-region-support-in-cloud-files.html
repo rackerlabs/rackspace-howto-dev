@@ -1,0 +1,61 @@
+---
+node_id: 2157
+title: Multi-region support in Cloud Files
+permalink: article/mutli-region-support-in-cloud-files
+type: article
+created_date: '2012-09-12 13:31:38'
+created_by: David Hendler
+last_modified: '2014-12-23 13:0132'
+last_modified_by: rose.contreras
+products: Cloud Files
+categories: Web Servers
+tags: Cloud Files
+body_format: tinymce
+---
+
+<p>Rackspace allows you to choose the data center where you would like to store your content. You may select our Dallas (DFW), Chicago (ORD), North Virginia (IAD), Hong Kong (HKG), or Sydney, Australia (SYD) locations through our multi region support. This means you can have your Cloud Servers or Dedicated Servers in one location and your data in another. Or, you can keep them in the same data center to reduce latency and take advantage of free bandwidth using our internal data center network, ServiceNet.<br />
+<br />
+Customers who only serve certain geographic regions may also find it helpful to locate the Cloud Files objects as close to that region as possible. &nbsp;Note that not all third-party libraries that communicate with Cloud Files have been updated to support multiple regions. &nbsp;In some cases if the tool you use isn't uploading to the region you expect, you can contact Support and ask them to change your account's default region. &nbsp;That may get the tool to use your preferred region for file transfers.</p>
+
+<h3>&nbsp;</h3>
+
+<h3>How do I set up Multi Region?</h3>
+
+<p>You don’t need to do anything to set up multi region capabilities for your account. All U.S. accounts have access to multiple regions.&nbsp; If you use the Auth 1.1 or 2.0 API, you may choose which endpoint to interact with; once you've authenticated against the regional endpoint, your Cloud Files operations will only affect that region's content. So, if you have content in two locations and you want to make edits, you will have to make those edits in both locations.</p>
+
+<p><br />
+MyRackspace and <a href="http://mycloud.rackspace.com">Cloud Control Panel</a> users can also take advantage of the multi region feature. When you create a container, choose the data center where you would like it. Your control panel will reflect the location of your container.<br />
+<br />
+The following screenshots illustrate this new capability:</p>
+
+<p>MyRackspace Portal - Create New Container:</p>
+
+<p><img alt="" height="401" src="/knowledge_center/sites/default/files/field/image/CreateContainer.png" width="745" /></p>
+
+<p>Cloud Control Panel - Create New Container:</p>
+
+<p><img alt="" height="346" src="/knowledge_center/sites/default/files/field/image/TestContainerVirginia_0.png" width="448" /></p>
+
+<p>&nbsp;</p>
+
+<p>Cloud Control Panel - Upload Files or click the Containers link in the breadcrumb trail to see your container list.</p>
+
+<p><img alt="" height="361" src="/knowledge_center/sites/default/files/field/image/ContainerContent_0.png" width="727" /></p>
+
+<p>&nbsp;</p>
+
+<p>Cloud Control Panel - List Containers</p>
+
+<p><img alt="" height="368" src="/knowledge_center/sites/default/files/field/image/ContainerList_0.png" width="1003" /></p>
+
+<p>Our API users will also see changes in their Service Catalog, which now shows multiple endpoints for “object store”:</p>
+
+<p><img alt="" height="406" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cf%20-%20api%20access%20points.png" title="" width="599" /></p>
+
+<p>&nbsp;</p>
+
+<p>Cloud Files does NOT automatically replicate data across regions. Customers who would like to have their data in both places should ensure PUTs are done to both endpoints and they will be charged for data stored in both locations along with related bandwidth charges.<br />
+<br />
+All customers existing previous to September 1, 2012 had their current region set as their “default", which orders it first in the list of endpoints when authenticating against Cloud Files using our Auth 1.1 or 2.0 APIs. Customers using Auth 1.0 will still only have a single endpoint returned.<br />
+<br />
+If you have customers around the world, don’t forget that you can deliver your content rapidly with Akamai’s Content Delivery Network (CDN), which caches content at global edge locations and saves users time because the requested content is received from within the region instead of coming from the origin data center.</p>

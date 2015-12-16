@@ -1,0 +1,46 @@
+---
+node_id: 3633
+title: Using RBAC with MyRackspace
+permalink: article/using-rbac-with-myrackspace
+type: article
+created_date: '2013-07-30 11:46:05'
+created_by: renee.rendon
+last_modified: '2014-11-13 12:1717'
+last_modified_by: David Hendler
+products: Cloud Files
+categories: '- Getting Started -'
+tags: 'RBAC,Cloud Control Panel,control panel,cloud'
+body_format: tinymce
+---
+
+<p>Users who access their cloud accounts through the MyRackspace Portal are acting as the Cloud account owners. With the implementation of RBAC, account owners can leave permissions as they are in MyRackspace or set up restricted access to specific products for users through the Cloud Control Panel. RBAC is not available in MyRackspace, so these restricted users have access to the linked Cloud account only through the Cloud Control Panel.</p>
+
+<p>Through the MyRackspace Portal, account owners grant users the following permissions to linked Cloud accounts:</p>
+
+<ul>
+	<li><strong>Admin</strong>, which only grants full access across all linked Cloud products</li>
+	<li><strong>Read-only</strong>, which grants read-only access across all linked Cloud products</li>
+	<li><strong>None</strong></li>
+</ul>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>The following scenario illustrates how account managers can grant access through MyRackspace and through the Cloud Control Panel using RBAC:</strong></p>
+
+<p>Rob Smith is the owner of a MyRackspace account that is linked to a Cloud account. Within the MyRackspace Portal, Rob has granted Bill admin permissions to the Cloud account and has granted Alice read-only permissions to the Cloud account. Three other users - Chris, Ted, and Val - have no access to the Cloud account.</p>
+
+<p>Rob has decided to use RBAC to provide restricted permissions for Chris, Ted, and Val. Through the Cloud Control Panel, Rob sets up these users and grants them the following roles:</p>
+
+<ul>
+	<li>Chris - admin role for Cloud Files</li>
+	<li>Ted - creator role for Next Gen Cloud Servers</li>
+	<li>Val - observer role for Cloud Load Balancers</li>
+</ul>
+
+<p class="p1">As a result, Bill and Alice retain their access to the linked Cloud account through the MyRackspace Portal only. Chris, Ted, and Val now have access to the linked Cloud account, according to the privileges granted to their respective roles, through the Cloud Control Panel (but not through the MyRackspace Portal).</p>
+
+<p class="p1">The following graphic illustrates this scenario.</p>
+
+<p class="p1"><img alt="" height="751" src="/knowledge_center/sites/default/files/field/image/MyRack%20BEST%20Diagram.png" width="652" /></p>
+
+<h2 class="p1"><a href="http://www.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac">&lt; Managing RBAC </a>&nbsp; &nbsp;- &nbsp; <a href="http://www.rackspace.com/knowledge_center/article/comprehensive-detailed-permissions-matrix">RBAC Permissions Matrix &gt;</a></h2>

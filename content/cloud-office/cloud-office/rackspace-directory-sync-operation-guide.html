@@ -1,0 +1,132 @@
+---
+node_id: 4050
+title: Rackspace Directory Sync Operation Guide
+permalink: article/rackspace-directory-sync-operation-guide
+type: article
+created_date: '2014-04-29 16:40:17'
+created_by: aaron.medrano
+last_modified: '2015-09-14 10:2945'
+last_modified_by: kelly.holcomb
+products: Cloud Office
+categories: Cloud Office
+tags: 'directory sync,guide'
+body_format: tinymce
+---
+
+<p>This article provides step-by-step information about using your Active Directory to synchronize by using Rackspace Directory Sync and Rackspace Hosted Email. It provides instructions for creating new email addresses, distribution lists, and contacts for Hosted Exchange.</p>
+
+<h2>Add a new mailbox</h2>
+
+<p>If the email address does not exist in the control panel, a new mailbox will be created during the next synchronization.</p>
+
+<p><strong>Note:</strong> User objects must be direct members of the specified email security group. Nested groups are seen by Directory Sync to create a distribution group and not create mailboxes for users in the nested group.</p>
+
+<ol start="1">
+	<li>Set the Active Directory user’s email address property (<code>mail</code> attribute) to the email address.</li>
+	<li>Add the new user to the email security group.</li>
+</ol>
+
+<p>Directory Sync creates a mailbox for the user and synchronize the user's password. If this is a first-time setup, the password must be changed to ensure that the password is synchronized.</p>
+
+<h2>Create a mailbox for an existing user</h2>
+
+<p>If the email address exists in the control panel, the Active Directory user synchronizes to the existing mailbox.</p>
+
+<p><strong>Note:</strong> User objects must be direct members of the specified email security group. Nested groups are seen by Directory Sync to create a distribution group and not create mailboxes for users in the nested group.</p>
+
+<ol start="1">
+	<li>Ensure that the Active Directory user’s email address property (<code style="line-height: 20.8px;">mail</code><span style="line-height: 20.8px;">&nbsp;</span>attribute) matches the email address.</li>
+	<li>Add the User object to the email security group.</li>
+</ol>
+
+<p><b>D</b>irectory Sync creates a mailbox for the user and synchronize the user's password. If this is a first-time setup, the password must be changed to ensure that the password is synchronized.</p>
+
+<h2>Remove a user mailbox</h2>
+
+<ol start="1">
+	<li>Remove the user from the email security group.<br />
+	<strong>Note</strong>: Directory Sync disables the user’s mailbox.</li>
+	<li>Go to the administration Control Panel.</li>
+	<li>Confirm that the mailbox is disabled.</li>
+	<li>Delete the mailbox.</li>
+</ol>
+
+<p><strong>Note</strong>: <span style="line-height: 20.8px;">To prevent accidental deletions,&nbsp;</span>Directory Sync does not automatically delete mailboxes.</p>
+
+<h2>Create a distribution list</h2>
+
+<ol start="1">
+	<li>Create a group within the Active Directory (or use an already existing group). This Active Directory group can be either a security group or a distribution list.</li>
+	<li>Set the group email address property (<code style="line-height: 20.8px;">mail</code><span style="line-height: 20.8px;">&nbsp;</span>​attribute).
+	<ul>
+		<li>For new distribution lists, provide an email address before subscribing to the Hosted Exchange security group.</li>
+		<li>For existing distribution lists, add an email address if it doesn't exist, or update the email address to match the email in the Cloud Office Control Panel before synchronizing. If the email address doesn't match what is in the Cloud Office Control Panel, a new distribution list is created.</li>
+	</ul>
+	</li>
+	<li>Subscribe the new group created in step 1 to the Hosted Exchange group specified in the Directory Sync settings. You must set the email address in step 2 before you subscribe the distribution group to the Hosted Exchange security group.</li>
+</ol>
+
+<p><strong>Note</strong>: For memberships of the distribution list created in step 1 to synchronize as members of the distribution list in the control panel, the members must also be subscribed to either the Hosted Exchange group or the Hosted Email group specified in the Directory Sync settings.</p>
+
+<h2>Delete a distribution list</h2>
+
+<p>To delete a distribution list, remove the Distribution List group from the Hosted Exchange security group specified in the Directory Sync settings.</p>
+
+<p><strong>Note</strong>: After the next synchronization, the distribution list is deleted from the Cloud Office Control Panel.</p>
+
+<h2>Create a contact (Exchange)</h2>
+
+<ol start="1">
+	<li>Create a Contact object within the Active Directory.<br />
+	<strong>Note</strong>: When you are creating the contact, the Display Name within the object will create the Display Name within the Cloud Office Control Panel for the contact.</li>
+	<li>After the Contact object is created, set the email address. The email address points to the external email address of the contact.</li>
+	<li>Subscribe the new contact to the Hosted Exchange group specified in the Directory Sync settings.</li>
+</ol>
+
+<p><strong>Note</strong>: The <code>objectGUID</code> attribute of the contact is used as the username for the contact within the Cloud Office Control Panel. Active Directory automatically creates this and is how Directory Sync references the contact through our API.</p>
+
+<p>Customers with multiple email domains must edit the <code>otherMailBox</code> attribute (of the Contact object) to contain the domain to synchronize. You only need to have the domain set within this attribute.</p>
+
+<h2>Delete a contact (Exchange)</h2>
+
+<p>To delete a contact from Exchange, remove the contact from the Hosted Exchange security group specified in the Directory Sync settings.</p>
+
+<p><strong>Note</strong>: After the next synchronization, the contact will be deleted from the Cloud Office Control Panel.</p>
+
+<h2>Change the external email address of a contact (Exchange)</h2>
+
+<ol start="1">
+	<li>Remove the contact from the Hosted Exchange security group set in the Directory Sync settings.</li>
+	<li>Allow the Directory Sync tool to synchronize the new changes. Either a manual or an automatic operaton&nbsp;will synchronize the new changes.</li>
+	<li>Change the email address of the contact.</li>
+	<li>Add the contact address to the Hosted Exchange security group and synchronize.</li>
+</ol>
+
+<h2>Rename a Hosted Service security group</h2>
+
+<ol start="1">
+	<li>On the Settings page, select <strong>Do Not Sync</strong>&nbsp;from the email service list and then click <strong>Save &amp; Start Sync</strong>.</li>
+	<li>In Active Directory, rename the security group and the pre-Windows 2000 group name. The group name and pre-Windows 2000 group name must be identical.</li>
+	<li>Back on the Settings page, select the new group name from the list and then&nbsp;click <strong>Save &amp; Start Sync</strong>.</li>
+</ol>
+
+<h2>Add an alternate email address (optional synchronization)</h2>
+
+<ol start="1">
+	<li>Enable synchronization. (This is value is turned off by default).
+	<ol start="a" type="a">
+		<li>In the <strong>\Directory Sync Service\web</strong> directory, open the <strong>appSettings.config</strong> file.</li>
+		<li>Find the following config value:
+		<pre>
+&lt;add key="SyncProxyAddresses" value="False" /&gt;</pre>
+		</li>
+		<li>Change the <code>value</code> attribute to <code>True</code> to enable synchronization of the proxy addresses. This setting will be persistent.</li>
+	</ol>
+	</li>
+	<li>Open Active Directory Users and Computers.</li>
+	<li>Open the Attribute Editor of the User Object. (The <strong>Advanced Features</strong> tab must be enabled in the <strong>View</strong> settings to display this tab).</li>
+	<li>Go to the <strong>proxyAddresses</strong> attribute and click <strong>Edit</strong>.</li>
+	<li>Add the alternate email address.</li>
+</ol>
+
+<p><strong>Note</strong>: The alternate email addresses are formatted as <strong>SMTP:userA@example.com</strong>. For all alternate email addresses beginning with <strong>SMTP:</strong>, the full email address must be listed. Domain Aliases <em>cannot&nbsp;</em>be placed in this attribute. Only the Primary Domain and Accepted Domains can be listed in this attribute, because domain aliases are automatically created from the primary domain.</p>

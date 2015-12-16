@@ -1,0 +1,15 @@
+---
+node_id: 4624
+title: Can Cloud Files be used for my Cross-domain policy file?
+permalink: frequently-asked-question/can-cloud-files-be-used-for-my-cross-domain-policy-file
+type: frequently_asked_question
+created_date: '2015-03-23 09:28:58'
+created_by: brian.metzler
+last_modified: '2015-03-23 09:2924'
+last_modified_by: kyle.laffoon
+products: Cloud Files
+categories: Account Services
+body_format: tinymce
+---
+
+<p>No. The Cloud Files CDN does not support exposing a custom crossdomain.xml file, as this is a required file by the Openstack Swift project. OpenStack Swift uses this as a global configuration file for the installation, and can not be modified for multiple tenants, such as our Public Cloud.</p>
