@@ -15,7 +15,7 @@ env:
 
 install:
     - gem install specific_install
-    - gem specific_install https://github.com/rackerlabs/rackspace-howto-dev.git
+    - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
 
 script:
     - kc-preparer
