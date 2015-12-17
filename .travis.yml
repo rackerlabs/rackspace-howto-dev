@@ -1,0 +1,21 @@
+language: ruby
+
+rvm:
+    - 2.2.3
+
+branches:
+    only:
+        - master
+
+env:
+    - KC_DOC_ROOT=content
+    - KC_BASE_URL=https://github.com/rackerlabs/rackspace-howto-dev
+    - NEXUS_URL=http://172.99.65.43:9000
+    - secure: hH4WbUZ7FvpHFXmwVf2Z16/IB5D3mK8kVi8MeXHHUAjc9CaX7FZiJX0m8ZIrE5rChXcye+PozadGH/p+ZQaZQMLimuAcDJ4jS49tHyovPA6Vd7aq1YUjfpQVklGf+Sard34WVHLpFjaJDXpB8Nu5HpF/oCylE3q6f2nU7E5sOKRe6f4RJ+geG+pOl0ZXvYiPWMTBgkIAnt4+8ve6emEjsk4qvFh1bfBpVrQkXkighQaIT7m6jPQkEju5Q8LlsiyrMrEl4uSg6z/G9I4o/AFiggOdkKsss3hcXzl/u3knCLxHwaq+f6pzLcBlPmfFuVE24Mh0VZP0/lNqNd7EN2HyCHHidRDqjcqB5l/rjl828NtiWEw82zguo6qU2mmKENSq4Cgl27HXU3oNPioN2TFTFD7QWr10i9t+I/Lch2h9M46Ye6kVXryxcwsylsyxYQ54fqvJcI9/8wrhgvLQItM22dUJ9oZGcAvgqm0q0E8grSSl8mFpyA1C8pwrzJGSIvCIyqP4ewrlNsqEVxXi97YfTAxXbHrNBUW+sb7AZgYpOYAvN7v6RkbVTGdQp85Mkt7TgPQSh9+5ECB05pssTxsyoeo/MmabNkr9cN9EEBw8CFT9pD1eKP+P0wq3LH7PPjQsvsKAgWT5QqeHHoGvRruNeDFV2GtMjoxCKZatJOwcfSE=
+
+install:
+    - gem install specific_install
+    - gem specific_install git@github.com:rackerlabs/rackspace-howto-preparer.git
+
+script:
+    - kc-preparer
