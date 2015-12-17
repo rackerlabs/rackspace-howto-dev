@@ -17,6 +17,8 @@ env:
 install:
     - gem install specific_install
     - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
+    - echo $TRAVIS_REPO_SLUG
+    - echo $TRAVIS_COMMIT
 
 script:
     - kc-preparer
