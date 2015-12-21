@@ -1,0 +1,45 @@
+---
+node_id: 4735
+title: Set up a server to work with Rackspace Intelligence
+permalink: article/setting-up-a-server-to-work-with-rackspace-intelligence
+type: article
+created_date: '2015-07-12 23:20:35'
+created_by: rose.coste
+last_modified_date: '2015-09-01 23:5243'
+last_modified_by: constanze.kratel
+products: Rackspace Intelligence
+categories: General
+body_format: tinymce
+---
+
+<p>You can use Rackspace Intelligence to help you observe the status of your server if you set up the server to be visible to Rackspace Intelligence. You can do this through the&nbsp;<a href="https://mycloud.rackspace.com/">Cloud Control Panel</a> by following these steps:</p>
+
+<ol>
+	<li>Log in to the Cloud Control Panel. If you are in the Rackspace Intelligence interface, you can open the control panel by clicking the <strong>Rackspace Intelligence</strong> menu at the top of the interface and selecting <strong>Rackspace Cloud</strong>.</li>
+	<li>Create a server as you normally would, or select an existing server. For instructions on creating a server, see&nbsp;<a href="https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-a-cloud-server">Rackspace Cloud Essentials - Creating A Cloud Server</a>.</li>
+	<li>List the server's details by selecting <strong>Servers &gt; Cloud Servers</strong> and then clicking the server’s name.<br />
+	&nbsp;<br />
+	<img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/servers-list-details-.png" /><br />
+	&nbsp;</li>
+	<li>On the server details page, scroll down to the&nbsp;<strong>Monitoring Data</strong>&nbsp;section and click the <strong>View Server's Metrics in Rackspace Intelligence</strong> link.</li>
+	<li>Install the monitoring agent on the server by clicking&nbsp;<strong>Get Started</strong>.<br />
+	<img alt="" border="2" height="409" src="/knowledge_center/sites/default/files/field/image/intelligence-monitoring-notset.png" width="672" /><br />
+	&nbsp;</li>
+	<li>On the&nbsp;<strong>Monitoring Agent Installation</strong>&nbsp;page, choose the platform installed on your server and choose the type of installation instructions that you prefer. The following example shows the&nbsp;<strong>Step By Step</strong>&nbsp;instructions for a Linux platform. Follow the instructions to install, configure, and start the agent.<br />
+	<br />
+	<img alt="" border="2" height="527" src="/knowledge_center/sites/default/files/field/image/intelligence-install-agent-linux_0.png" width="649" /><br />
+	The instructions require you to send commands to the server. The commands you must send to the server vary depending on what kind of server you want to monitor. Similarly, detailed procedures for sending commands to a server vary depending on what kind of workstation you use when you communicate with the server. For example, <a href="https://admin.rackspace.com/knowledge_center/article/connecting-to-linux-from-mac-os-x-by-using-terminal">Connecting to Linux from Mac OS X by using Terminal</a>&nbsp;shows how to install and use the Terminal utility on a Mac OS X workstation communicating with a Linux server; if you are working in a different configuration, adapt these instructions to match your environment<br />
+	<br />
+	<strong>Note:&nbsp;</strong>No matter what kind of server you want to monitor, you must know the server's IP address and password before you can log in and begin installing the monitoring agent there. The server's IP address is provided when you use the Cloud Control Panel to list details about the server. If you do not know the server's password but you are able to log in to the Cloud Control Panel for your account, you can change the server's password as described at&nbsp;<a href="https://admin.rackspace.com/knowledge_center/video/how-to-change-your-server-rootadmin-password-from-your-account">How to change your server root/admin password from your account</a>.<br />
+	<br />
+	In the terminal session where you entered the installation commands, you can confirm that the installation succeeded if you see the message Your Agent configuration is now complete. After this, with the agent running, if you look again at the&nbsp;<strong>Monitoring Agent Installation</strong>&nbsp;page you can see that the agent connection status is&nbsp;<strong>Connected</strong>.<br />
+	<br />
+	<img alt="" border="2" height="154" src="/knowledge_center/sites/default/files/field/image/intelligence-agent-connected.png" width="359" /></li>
+	<li>Click&nbsp;<strong>Setup Checks</strong>&nbsp;to configure at least one check. In the following example, two CPU-related checks are configured, monitoring CPU usage and average CPU load.<br />
+	<br />
+	<img alt="" border="2" height="555" src="/knowledge_center/sites/default/files/field/image/intelligence-check-selection.png" width="637" /></li>
+	<li>Click&nbsp;<strong>Apply Checks</strong>&nbsp;to activate the checks that you defined. When the checks are activated, their status is reported on the entities details&nbsp;page for the server, in the <strong>Monitoring Checks</strong> section.<br />
+	<br />
+	<img alt="" border="2" height="202" src="/knowledge_center/sites/default/files/field/image/intelligence-monitoring-checks-2set.png" width="779" /></li>
+	<li>To make the checks useful, define alarms that identify boundaries between OK, Warning, and Critical statuses. For instructions, see&nbsp;<u><a href="https://admin.rackspace.com/knowledge_center/article/working-with-alarms">Working with alarms</a></u><u> in Rackspace Intelligence</u>.</li>
+</ol>

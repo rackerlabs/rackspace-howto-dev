@@ -1,0 +1,49 @@
+---
+node_id: 113
+title: Controlling access to Linux Cloud Sites based on the client IP address
+permalink: article/how-do-i-deny-certain-ip-addresses-from-accessing-my-site-on-cloud-sites
+type: article
+created_date: '2011-03-10 17:13:30'
+created_by: RackKCAdmin
+last_modified_date: '2014-07-25 18:3124'
+last_modified_by: jered.heeschen
+products: Cloud Sites
+categories: Security
+body_format: tinymce
+---
+
+<p>On Cloud Sites, due to our unique hosting environment, we require an addition to the <strong>Allow/Deny</strong> instruction in the .htaccess file when controlling access to a site based on IP address. The issue is that the requesting IP address coming into a server is the IP address of our load balancing server instead of the visitor's IP address. This means limiting access on an IP address level through .htaccess becomes problematic. To work around that, we provide an environment variable called <strong>X-Cluster-Client-Ip</strong> that contains the visitor's IP address.</p>
+<p>In the .htaccess file containing your rules, make the appropriate change from the list below based on your requirements.</p>
+<h4><span class="mw-headline">Allowing only a certain IP/IP Addresses:</span></h4>
+<pre>order deny,allow
+deny from all
+allow from env=allowclient
+SetEnvIf X-Cluster-Client-Ip 000.000.000.000 allowclient</pre>
+<h4><a id="Allowing_only_a_certain_IP_IP_Addresses_when_your_site_is_using_SSL" name="Allowing_only_a_certain_IP_IP_Addresses_when_your_site_is_using_SSL"></a> <span class="mw-headline">Allowing only a certain IP/IP Addresses when your site is using SSL:</span></h4>
+<pre>order deny,allow
+deny from all
+allow from env=allowclient
+SetEnvIf X-FORWARDED-FOR ^000.000.000.000$ allowclient
+</pre>
+<p>Replace <strong>000.000.000.000</strong> with your IP address. This will only allow your IP address to access your site, and is a great way to develop your site without the risk of someone reaching it before it's ready.<br /> <strong>You can repeat line 1 to allow multiple IPs.</strong></p>
+<p><a id="Denying_an_IPMultiple_IP_Addresses" name="Denying_an_IPMultiple_IP_Addresses"></a></p>
+<h4><span class="mw-headline">Denying an IP/Multiple IP addresses:</span></h4>
+<pre>Order Allow,Deny
+Deny from env=DenyAccess
+Allow from all
+SetEnvIf X-Cluster-Client-Ip "^000\.000\.000\.000" DenyAccess
+</pre>
+<p><a id="Denying_an_IPMultiple_IP_addresses_when_your_site_is_using_SSL" name="Denying_an_IPMultiple_IP_addresses_when_your_site_is_using_SSL"></a></p>
+<h4><span class="mw-headline">Denying an IP/Multiple IP addresses when your site is using SSL:</span></h4>
+<pre>Order Allow,Deny
+Deny from env=DenyAccess
+Allow from all
+SetEnvIf X-FORWARDED-FOR "^000\.000\.000\.000" DenyAccess
+</pre>
+<p>Replace <strong>000\.000\.000\.000</strong> with the IP address you want to deny. This will deny the IP address specified/multiple IP addresses (If you use multiple lines, as specified below).<br /> <strong>You can repeat line 1 to deny multiple IP addresses.</strong></p>
+<p><strong>Important note:</strong> Implementing this code may prevent images from loading on your cloud site. To address this you can add the following code do your .htaccess file:</p>
+<pre>&lt;FilesMatch "\.(gif|jpe?p|png)$"&gt;
+order deny,allow
+allow from env=allowclient
+&lt;/FilesMatch&gt;
+</pre>

@@ -1,0 +1,754 @@
+---
+node_id: 3390
+title: Permissions Matrix for Cloud Load Balancers
+permalink: article/detailed-permissions-matrix-for-lbaas-0
+type: article
+created_date: '2013-04-10 16:05:06'
+created_by: renee.rendon
+last_modified_date: '2015-05-26 13:1148'
+last_modified_by: kyle.laffoon
+products: Cloud Load Balancers
+categories: Load Balancing
+body_format: tinymce
+---
+
+<title></title>
+<p>The&nbsp;following&nbsp;permissions matrix displays specific permissions for the roles in Cloud Load Balancers. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.</p>
+
+<p><strong><a href="http://docs.rackspace.com/">API Documentation</a><span>&nbsp;</span></strong></p>
+
+<p><strong><a href="http://www.rackspace.com/knowledge_center/cloud-hosting">Related Knowledge Center Articles</a></strong></p>
+
+<p><strong><a href="#Cloud%20Load%20Balancer%20Terminology">Cloud Load Balancer Terminology</a></strong></p>
+
+<p><strong>As of May 24, 2015</strong></p>
+
+<table border="1" class="tftable" id="tfhover">
+	<tbody>
+		<tr>
+			<th colspan="2">CAPABILITY</th>
+			<th colspan="3">ROLE</th>
+			<th colspan="1">DESCRIPTION&nbsp;</th>
+		</tr>
+		<tr>
+			<th>Method Name</th>
+			<th>API Action</th>
+			<th>Observer</th>
+			<th>Creator</th>
+			<th>Admin</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>LOAD BALANCER</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Load Balancers</span></td>
+			<td><span>GET /loadbalancers</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Provide a list of all load balancers configured and associated with your account.</span></td>
+		</tr>
+		<tr>
+			<td><span>List Load Balancer Details</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Provide a list of all load balancers configured and associated with your account. *</span></td>
+		</tr>
+		<tr>
+			<td><span>Create Load Balancer</span></td>
+			<td><span>POST /loadbalancers</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Create a new load balancer with the configuration defined by the request.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update Load Balancer Attributes</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<img alt="check" height="39" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Asynchronously update the attributes of the specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Remove Load Balancer</span></td>
+			<td><span>DELETE /loadbalancers/</span><span>{loadBalancerId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Remove the specified load balancer and its associated configuration from the account.</span></td>
+		</tr>
+		<tr>
+			<td><span>Remove Load Balancer Batch Delete</span></td>
+			<td><span>DELETE /loadbalancers{?id}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Bulk-delete load balancers.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>ERROR PAGES</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Error Page</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List error page configured for the specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update Error Page</span></td>
+			<td><span>PUT /loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<img alt="check" height="39" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Set custom error page for the specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Error Page</span></td>
+			<td><span>DELETE /loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete custom error page for the specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>LOAD BALANCER STATISTICS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Load Balancer Stats</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}</span><span>/stats</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Provide detailed stats output for a specific load balancer.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>NODES</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Nodes</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}/</span><span>nodes</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List node(s) configured for the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>List Details of Specific Node</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List details of a specific node.</span></td>
+		</tr>
+		<tr>
+			<td><span>Add Nodes</span></td>
+			<td><span>POST /loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>Add a new node to the load balancer.</td>
+		</tr>
+		<tr>
+			<td><span>Modify Nodes</span></td>
+			<td><span>PUT /loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<img alt="check" height="39" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Modify the configuration of a node on the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Nodes</span></td>
+			<td><span>DELETE /loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{?nodeId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a node from a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Nodes Batch</span></td>
+			<td><span>DELETE /loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Bulk-delete the specified nodes from a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>List Nodes</span></td>
+			<td><span>GET /loadbalancers/</span><span>{loadBalancerId}/</span><span>nodes</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List node(s) configured for the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>VIRTUAL IPs</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Virtual IPs</span></td>
+			<td><span>GET /loadbalancers/loadBalancerId/virtualips</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List virtual IPs that are associated with a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Add Virtual IPs</span></td>
+			<td><span>POST /loadbalancers/{loadBalancerId}/virtualips</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Add virtual IP version 6.</span></td>
+		</tr>
+		<tr>
+			<td><span>Bulk-delete Virtual IPs</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/virtualips/{?virtualIpId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Bulk-delete specified virtual IPs.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Virtual IPs</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a specified virtual IP.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>ALLOWED DOMAINS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Allowed Domains</span></td>
+			<td><span>GET /loadbalancers/alloweddomains</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>View a list of allowed domains. **</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>USAGE REPORTS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Billable Load Balancers</span></td>
+			<td><span>GET /loadbalancers/billable</span><span>{?startTime,endTime,offset, limit}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List billable load balancers for the given date range. The response is paginated with a default limit of 500 and a maximum limit of 1000.</span></td>
+		</tr>
+		<tr>
+			<td><span>Show Account-level Usage</span></td>
+			<td><span>GET /loadbalancers/usage</span><span>{?startTime,endTime}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show account-level usage.</span></td>
+		</tr>
+		<tr>
+			<td><span>Show Historical Usage</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/usage{?startTime,endTime}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show historical usage. ***</span></td>
+		</tr>
+		<tr>
+			<td><span>Show Current Usage</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/usage/current/</span><span>{?startTime,endTime}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show current usage.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>ACCESS LISTS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Access List</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/accesslist</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show the access list.</span></td>
+		</tr>
+		<tr>
+			<td><span>Create or Update Access List</span></td>
+			<td><span>POST /loadbalancers/{loadBalancerId}/accesslist</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Create or append to an existing access list.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Access List</span></td>
+			<td>
+			<p><span>DELETE /loadbalancers/{loadBalancerId}/accesslist</span></p>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete the entire access list.</span></td>
+		</tr>
+		<tr>
+			<td><span>Bulk-delete Specified Networks</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/accesslist/{?networkItemId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Bulk-delete the specified networks from an access list.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Network Item from Access List</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/accesslist/ {networkItemId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a network item from a specified access list.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>MONITOR HEALTH</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Health Monitor Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/healthmonitor</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show the health monitor configuration, if one exists.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update Health Monitor</span></td>
+			<td><span>PUT /loadbalancers/loadBalancerId/healthmonitor</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Update the settings for a health monitor.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Health Monitor</span></td>
+			<td><span>DELETE /loadbalancers/loadBalancerId/healthmonitor</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a health monitor.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>SESSION PERSISTENCE</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Session Persistence Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/sessionpersistence</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List session persistence configuration.</span></td>
+		</tr>
+		<tr>
+			<td><span>Enable Session Persistence</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/sessionpersistence</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Enable session persistence.</span></td>
+		</tr>
+		<tr>
+			<td><span>Disable Session Persistence</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/sessionpersistence</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Disable session persistence.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>LOG CONNECTIONS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Connection Logging Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/connectionlogging</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show connection logging configuration.</span></td>
+		</tr>
+		<tr>
+			<td><span>Enable or Disable Connection Logging</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/connectionlogging</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>
+			<p><span>Enable or disable connection logging.</span></p>
+
+			<p>Note: Enable connection logging requires that the user have access to Cloud Files, which is used for storing the logs.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>THROTTLE CONNECTIONS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Connection Throttling Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/connectionthrottling</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show connection throttling configuration.</span></td>
+		</tr>
+		<tr>
+			<td><span>Create or Update Connection Throttling Configuration</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/connectionthrottling</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Create or update throttling configuration.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Connection Throttling Configuration</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/connectionthrottling</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete connection throttling configurations.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>CONTENT CACHING</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show Content Caching Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/contentcaching</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show current configuration of content caching.</span></td>
+		</tr>
+		<tr>
+			<td><span>Enable or Disable Content Caching</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/contentcaching</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Enable or disable content caching.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>PROTOCOLS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Load Balancer Protocols</span></td>
+			<td><span>GET /loadbalancers/protocol</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List supported load balancing protocols.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>ALGORITHMS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>List Load Balancer Algorithms</span></td>
+			<td><span>GET /loadbalancers/algorithms</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List all supported load balancing algorithms.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>SSL TERMINATION&nbsp;/ CERTIFICATE MAPPINGS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Show SSL Termination Configuration</span></td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/ssltermination</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show the load balancer's SSL termination configuration.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update SSL Termination</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/ssltermination</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Update the SSL termination. *****</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete SSL Termination</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/ssltermination</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete SSL termination.</span></td>
+		</tr>
+		<tr>
+			<td><span>List Certificate Mappings</span></td>
+			<td><span>GET /</span><span>loadbalancers/{loadBalancerId}/ssltermination/certificatemappings</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>List certificate mappings that are configured for a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Add&nbsp;</span><span>Certificate Mapping</span></td>
+			<td><span>POST /</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Add a certificate mapping to a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Show&nbsp;</span><span>Certificate Mappings Details</span></td>
+			<td><span>GET /</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show details for a specified certificate mapping.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update&nbsp;</span><span>Certificate Mapping</span></td>
+			<td><span>PUT /</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Update the configuration for a specified certificate mapping on a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete&nbsp;</span><span>Certificate Mapping</span></td>
+			<td><span>DELETE /</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a certificate mapping from a specified load&nbsp;</span>balancer.</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>METADATA</h3>
+			</td>
+		</tr>
+		<tr>
+			<td><span>Add Load Balancer Metadata&nbsp;</span></td>
+			<td><span>POST /loadbalancers/{loadBalancerId}/metadata</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Add a new metadata item to the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td>Show Load Balancer Metadata</td>
+			<td>
+			<p class="p1">GET /loadbalancers/{loadBalancerId}/metadata</p>
+			</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>
+			<p class="p1">Show all metadata associated with the specified load balancer.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p class="p1">Bulk-delete Load Balancer Metadata Items</p>
+			</td>
+			<td>
+			<p class="p1">DELETE /loadbalancers/{loadBalancerId}/metadata{?metaId}</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>
+			<p class="p1">Bulk-delete the metadata items given specified id list.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Show Load Balancer Metadata Item</td>
+			<td><span>GET /loadbalancers/{loadBalancerId}/metadata/{metaId}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show details for a specified metadata item for a specified load balancer.</span></td>
+		</tr>
+		<tr>
+			<td>Update&nbsp;<span>Load Balancer Metadata Item</span></td>
+			<td><span>PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Update the configuration of a metadata item on the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Load Balancer Metadata Item</span></td>
+			<td><span>DELETE /loadbalancers/{loadBalancerId}/metadata/{metaId}</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a metadata item from the load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Show Load Balancer Node Metadata</span></td>
+			<td>GET&nbsp;<span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<img alt="check" height="39" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show all metadata associated with a specified node and load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Add Load Balancer Node Metadata</span></td>
+			<td><span>POST&nbsp;</span><span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;<img alt="check" height="39" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Adds a metadata item to a specified node and load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Bulk-delete Load Balancer Node Metadata Items</span></td>
+			<td>DELETE&nbsp;<span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata​{?metaId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Bulk-deletes the metadata items given specified id list.</span></td>
+		</tr>
+		<tr>
+			<td>Show Load Balancer Node Metadata Item</td>
+			<td><span>GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Show details for a specified metadata item for a specified node and load balancer.</span></td>
+		</tr>
+		<tr>
+			<td><span>Update Load Balancer Node Metadata Item</span></td>
+			<td>PUT&nbsp;<span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span></td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Update the configuration of a metadata item on the node.</span></td>
+		</tr>
+		<tr>
+			<td><span>Delete Load Balancer Node Metadata Item&nbsp;</span></td>
+			<td><span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td><span>Delete a metadata item from the node.</span></td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>LIMITS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>List Absolute Limits</td>
+			<td>&nbsp;<span>GET /loadbalancers/absolutelimits/</span></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<span>Return the current absolute limits for the account.</span></td>
+		</tr>
+		<tr>
+			<td>List Limits</td>
+			<td>&nbsp;<span>GET /loadbalancers/limits</span></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<img alt="check" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png" width="41" /></td>
+			<td>&nbsp;<span>Return the current limits for the account.</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>* This operation is not capable of returning details for a load balancer which has been deleted.</p>
+
+<p>**&nbsp;<span>Currently only Rackspace-based domain names are supported.</span></p>
+
+<p><span>***&nbsp;</span><span>Historical usage data is available for up to 90 days of service activity.</span></p>
+
+<p><span>*****&nbsp;</span><strong><span>Warning</span></strong><span>:</span> If<span>&nbsp;SSL is enabled on a load balancer that is configured with nodes that are NOT in the same datacenter, then decrypted traffic will be sent in clear text over the public internet to the external node(s) and will no longer be secure.</span></p>
+
+<p><span>&nbsp;</span></p>
+
+<h2><a name="Cloud Load Balancer Terminology"></a>Cloud Load Balancer Terminology</h2>
+
+<h3>Algorithm</h3>
+
+<p>A Process&nbsp;<span>that defines how traffic should be directed between back-end nodes.</span></p>
+
+<h3><strong>Connection Logging</strong></h3>
+
+<p>A feature that allows logs to be delivered to a Cloud Files account every hour. For HTTP-based protocol traffic, these are Apache-style access logs. For all other traffic, this is connection and transfer logging.</p>
+
+<h3><a href="http://www.rackspace.com/knowledge_center/article/content-caching-for-cloud-load-balancers"><strong>Content Caching</strong></a></h3>
+
+<p><span>An operation that stores&nbsp;</span><span>recently-accessed files on the load balancer for easy retrieval by web clients.&nbsp;</span></p>
+
+<h3><strong><span>Error Page</span></strong></h3>
+
+<p><span>The HTML file that is shown to an end user who is attempting to access a load balancer.</span></p>
+
+<h3><strong><span>Health Monitor</span></strong></h3>
+
+<p><span>A configurable feature of each load balancer. It is used to determine whether or not a back-end node is usable for processing a request. The load balancing service currently supports active health monitoring.</span></p>
+
+<h3><a href="http://www.rackspace.com/knowledge_center/article/configuring-a-cloud-load-balancer-0#Virtual_IP_Type"><strong>Load Balancer</strong></a></h3>
+
+<p><span>A logical device which belongs to a cloud account. It is used to distribute workloads between multiple back-end systems or services, based on the criteria defined as part of its configuration.</span></p>
+
+<h3><span>Metadata</span></h3>
+
+<p><span>Metadata can be associated with each load balancer and each node for the client's personal use. It is defined using key-value pairs where the key and value consist of alphanumeric characters. A key is unique per load balancer.</span></p>
+
+<h3><strong><span>Node</span></strong></h3>
+
+<p><span>A back-end device providing a service on a specified IP and port.</span></p>
+
+<h3><strong>Session Persistence</strong></h3>
+
+<p>A<span>&nbsp;feature of the load balancing service that forces multiple requests from clients to be directed to the same node.</span></p>
+
+<h3><strong><span>Usage Reports</span></strong></h3>
+
+<p><span>A report that provides a view of all transfer activity, average number of connections, and number of virtual IPs associated with the load balancing service.&nbsp;</span></p>
+
+<h3><strong><span>Virtual IP</span></strong></h3>
+
+<p><span>An Internet Protocol (IP) configured on the load balancer for use by clients connecting to a service that is load balanced. Incoming connections are distributed to back-end nodes based on the configuration of the load balancer.</span></p>
+
+<p><span>&nbsp;</span></p>
+
+<h2><a href="http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac">&lt; Permission Matrices for RBAC</a></h2>
+
+<p>&nbsp;</p>

@@ -1,0 +1,119 @@
+---
+node_id: 4942
+title: VMware vRealize Operations 6.1 Permissions List
+permalink: product-articles/managed-vmware-services/vrealize-operations-permissions-list
+type: article
+created_date: '2015-11-18 19:26:31'
+created_by: erik.wilson
+last_modified_date: '2015-11-19 16:5550'
+last_modified_by: Nate.Archer
+products: Managed VMware Services
+categories: Managed Operations
+body_format: tinymce
+---
+
+<p>Dedicated VMware<sup>®</sup> vCenter Server<span>™</span>, and Rackspace Private Cloud powered by VMware vCloud<sup>®</sup> customers&nbsp;are assigned the VMware<span>®</span> vRealize<span>™</span> Operations<span>™</span> (vROps) <strong>PowerUserMinusRemediation</strong> role and have privileges to perform all of the same actions as those who are assigned the Administrator role, EXCEPT for user management, cluster management or remediation actions.</p>
+
+<p>The following table identifies the privileges that are&nbsp;<strong>NOT </strong>assigned to the PowerUserMinusRemediation role.</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="row">Privilege Category</th>
+			<th scope="col">Privileges</th>
+			<th scope="col">Impact</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">Administration -&nbsp; Access Control</th>
+			<td>
+			<ul>
+				<li>Add, edit or delete a role</li>
+				<li>Manage object permission for user</li>
+				<li>Manage user related operations</li>
+				<li>Update password policy</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user can view, but cannot configure access control for other users.&nbsp;</p>
+
+			<p>For example, the user cannot configure authentication sources.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Administration – Manage AuthSources</th>
+			<td>
+			<ul>
+				<li>Configure AuthSources</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user can view, but cannot configure authentication sources.</p>
+
+			<p>For example, the user cannot add an Active Directory domain as authentication source in the vROps environment.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Administration – Manage Cluster</th>
+			<td>
+			<ul>
+				<li>All administrative actions</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user can view, but cannot perform any administration actions on the cluster.</p>
+
+			<p>For example, the user cannot add new vROps nodes to the cluster.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Administration – REST APIs</th>
+			<td>
+			<ul>
+				<li>Delete alert note</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user can use REST APIs to perform all provided activities, except delete alert notes.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Content</th>
+			<td>
+			<ul>
+				<li>Manage<br />
+				Heat map configurations</li>
+				<li>Manage<br />
+				Plug-Ins</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user can manage all content, except heat map configurations and plug-ins.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Environment</th>
+			<td>
+			<ul>
+				<li>Action</li>
+			</ul>
+			</td>
+			<td>
+			<p>The user cannot perform any of the out-of-the-box actions.</p>
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">Environment –<br />
+			Alert Notes Management</th>
+			<td>
+			<ul>
+				<li>Delete</li>
+			</ul>
+			</td>
+			<td>User can add, but cannot delete alert notes.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

@@ -1,0 +1,781 @@
+---
+node_id: 3799
+title: Rackspace Private Cloud v4.2.1 Release Notes
+permalink: article/rackspace-private-cloud-v421-release-notes-0
+type: article
+created_date: '2013-12-04 15:30:41'
+created_by: Karin Levenstein
+last_modified_date: '2015-06-10 16:3210'
+last_modified_by: kyle.laffoon
+products: Rackspace Private Cloud - OpenStack
+categories: Getting Started
+body_format: tinymce
+---
+
+<div class="toc">
+<p>This article documents the changes in Rackspace Private Cloud v4.2.1 and v4.2.0 and identified known issues.</p>
+
+<p>For the release notes for previous versions, refer to the following articles:</p>
+
+<ul>
+	<li><a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-v-412-release-notes-0">Rackspace Private Cloud v4.1.2 Release Notes </a></li>
+	<li><a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-v-40-release-notes">Rackspace Private Cloud v4.0 Release Notes</a></li>
+</ul>
+</div>
+
+<div class="toc">
+<p><strong>Table of Contents</strong></p>
+
+<dl>
+	<dt><span class="chapter"><a href="#overview">1. Overview</a></span></dt>
+	<dd>
+	<dl>
+		<dt><span class="section"><a href="#overview-audience">Intended audience</a></span></dt>
+		<dt><span class="section"><a href="#overview-dochistory">Document change history</a></span></dt>
+		<dt><span class="section"><a href="#overview-resources">Additional resources</a></span></dt>
+		<dt><span class="section"><a href="#contact-rackspace">Contact Rackspace</a></span></dt>
+	</dl>
+	</dd>
+	<dt><span class="chapter"><a href="#newfeatures-4.2.1">2. What's new in Rackspace Private Cloud v4.2.1</a></span></dt>
+	<dd>
+	<dl>
+		<dt><span class="section"><a href="#cookbook-download-4.2.1">Cookbook version</a></span></dt>
+		<dt><span class="section"><a href="#openstack-networking-lbaas">LBaaS in OpenStack Networking (Neutron)</a></span></dt>
+		<dt><span class="section"><a href="#upgrade-tool">Upgrading from v4.1.n to v4.2.1</a></span></dt>
+		<dt><span class="section"><a href="#rpc-sandbox">Rackspace Private Cloud Sandbox</a></span></dt>
+	</dl>
+	</dd>
+	<dt><span class="chapter"><a href="#newfeatures-4.2.0">3. What's new in Rackspace Private Cloud v4.2.0</a></span></dt>
+	<dd>
+	<dl>
+		<dt><span class="section"><a href="#openstack-changes">OpenStack</a></span></dt>
+		<dt><span class="section"><a href="#high-availability">High Availability</a></span></dt>
+		<dt><span class="section"><a href="#openstack-networking">OpenStack Networking (Neutron)</a></span></dt>
+		<dt><span class="section"><a href="#cinder">OpenStack Block Storage (Cinder)</a></span></dt>
+		<dt><span class="section"><a href="#other-changes">Dashboard changes</a></span></dt>
+	</dl>
+	</dd>
+	<dt><span class="chapter"><a href="#openstack-objectstorage">4. Rackspace Private Cloud Object Storage </a></span></dt>
+	<dt><span class="chapter"><a href="#known-issues">5. Known Issues</a></span></dt>
+	<dd>
+	<dl>
+		<dt><span class="section"><a href="#upgrading-4.1.3-to-4.2.1">Upgrading from v4.1.3 to v4.2.1</a></span></dt>
+		<dt><span class="section"><a href="#upgrading-to-4.2.1">Upgrading from v4.2.0 to v4.2.1</a></span></dt>
+		<dt><span class="section"><a href="#known-rabbitmq-restart">Restarting RabbitMQ</a></span></dt>
+		<dt><span class="section"><a href="#known-failover-rabbitmq">Intermittent failover failure</a></span></dt>
+		<dt><span class="section"><a href="#known-orchestration-instance-name">OpenStack Orchestration and instance names</a></span></dt>
+		<dt><span class="section"><a href="#known-neutron-redhat">CentOS and RHEL challenges with advanced OpenStack Networking</a></span></dt>
+		<dt><span class="section"><a href="#known-cinder-centOS">Snapshot deletion on CentOS</a></span></dt>
+		<dt><span class="section"><a href="#known-ceilometer-vis">OpenStack Metering visualization</a></span></dt>
+		<dt><span class="section"><a href="#known-openstack-timeouts">OpenStack service timeouts</a></span></dt>
+		<dt><span class="section"><a href="#known-ephemeral-disks">Ephemeral and swap disks on RHEL</a></span></dt>
+		<dt><span class="section"><a href="#known-ceilometer-packages">Ceilometer packages fail to install</a></span></dt>
+		<dt><span class="section"><a href="#known-horizon-install">Horizon is not installed correctly</a></span></dt>
+	</dl>
+	</dd>
+</dl>
+</div>
+
+<div class="chapter" title="1.&nbsp;Overview">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="overview"></a>1.&nbsp;Overview</h2>
+</div>
+</div>
+</div>
+
+<p>Rackspace has developed a fast, free, and easy way to install a Rackspace Private Cloud powered by OpenStack in any data center. This method is suitable for anyone who wants to install a stable, tested, and supportable OpenStack-powered private cloud, and can be used for all scenarios from initial evaluations to production deployments.</p>
+
+<p>Rackspace Private Cloud v4.2.n supports the <a class="link" href="http://www.openstack.org/software/grizzly/" target="_top">Havana release of OpenStack</a>.</p>
+
+<div class="section" title="Intended audience">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="overview-audience"></a>Intended audience</h3>
+</div>
+</div>
+</div>
+
+<p>This document describes the updates in Rackspace Private Cloud v4.2.n and any known issues in the product. You should already be familiar with Rackspace Private Cloud Software and have prior knowledge of OpenStack and cloud computing, and basic Linux administration skills.</p>
+</div>
+
+<div class="section" title="Document change history">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="overview-dochistory"></a>Document change history</h3>
+</div>
+</div>
+</div>
+
+<p>This version of the Rackspace Private Cloud Release Notes replaces and obsoletes all previous versions. The most recent changes are described in the table below:</p>
+
+<table id="d5e47" rules="all">
+	<thead>
+		<tr>
+			<td align="center">Revision Date</td>
+			<td align="center" colspan="4">Summary of Changes</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>December 18, 2013</td>
+			<td colspan="4">
+			<div class="itemizedlist">
+			<ul class="itemizedlist" compact="compact" type="disc">
+				<li>Rackspace Private Cloud v4.2.1 release.</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td>November 13, 2013</td>
+			<td colspan="4">
+			<div class="itemizedlist">
+			<ul class="itemizedlist" compact="compact" type="disc">
+				<li>Rackspace Private Cloud v4.2.0 release.</li>
+			</ul>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+</div>
+
+<div class="section" title="Additional resources">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="overview-resources"></a>Additional resources</h3>
+</div>
+</div>
+</div>
+
+<div class="itemizedlist">
+<ul class="itemizedlist" compact="compact" type="disc">
+	<li><a class="link" href="http://www.rackspace.com/cloud/private/" target="_top">Rackspace Private Cloud Home Page</a></li>
+	<li><a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">Rackspace Private Cloud Knowledge Center</a></li>
+	<li><a class="link" href="http://privatecloudforums.rackspace.com/" target="_top">Rackspace Private Cloud Forums</a></li>
+</ul>
+</div>
+
+<div class="section" title="Contact Rackspace">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="contact-rackspace"></a>Contact Rackspace</h3>
+</div>
+</div>
+</div>
+
+<p>For more information about sales and support, send an email to <a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:opencloudinfo@rackspace.com">opencloudinfo@rackspace.com</a><a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&gt;</code></a>.</p>
+
+<p>If you have feedback about the product and the documentation, send and email to <a class="link" href="mailto:RPCFeedback@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:RPCFeedback@rackspace.com">RPCFeedback@rackspace.com</a><a class="link" href="mailto:RPCFeedback@rackspace.com" target="_top"><code class="email">&gt;</code></a>. For the documentation, you can also leave a comment at <a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">the Knowledge Center</a>.</p>
+
+<p>For more troubleshooting information and user discussion, you can also inquire at the Rackspace Private Cloud Support Forum at <a class="link" href="https://community.rackspace.com/products/f/45" target="_top"><code class="uri">https://community.rackspace.com/products/f/45</code></a></p>
+</div>
+</div>
+
+<div class="chapter" title="2.&nbsp;What's new in Rackspace Private Cloud v4.2.1">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="newfeatures-4.2.1"></a>2.&nbsp;What's new in Rackspace Private Cloud v4.2.1</h2>
+</div>
+</div>
+</div>
+
+<p>In addition to several stability and usability fixes, Rackspace Private Cloud v4.2.1 has the following changes.</p>
+
+<div class="section" title="Cookbook version">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="cookbook-download-4.2.1"></a>Cookbook version</h3>
+</div>
+</div>
+</div>
+
+<p>The latest cookbook version number is <code class="filename">v4.2.1</code>. This change is reflected in the instructions under <a class="link" href="http://www.rackspace.com/knowledge_center/article/installing-openstack-with-rackspace-private-cloud-tools#install-cookbooks" target="_top">Install the Rackspace Private Cloud Cookbooks</a>.</p>
+
+<p>Where Rackspace Private Cloud v4.2.0 was made available as an Early Access release, Rackspace Private Cloud v4.2.1 is a production-ready release based on the OpenStack Havana code base. For detailed information about the Havana release, refer to the <a class="link" href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana" target="_top">OpenStack Havana Release Notes</a>.</p>
+</div>
+
+<div class="section" title="LBaaS in OpenStack Networking (Neutron)">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="openstack-networking-lbaas"></a>LBaaS in OpenStack Networking (Neutron)</h3>
+</div>
+</div>
+</div>
+
+<p>Rackspace Private Cloud v4.2.1 adds a technology preview implementation of Load Balancing as a Service (LBaaS) support with the <code class="filename">neutron-lbaas-agent</code> recipe, which is part of the <code class="filename">single-network-node</code> role. The Rackspace Private Cloud cookbooks currently support only the HAProxy LBaaS service provider. LBaaS is not currently recommended for Rackspace Private Cloud production environments.</p>
+
+<p>For more information, refer to <a class="link" href="http://www.rackspace.com/knowledge_center/article/configuring-openstack-networking#neutron-lbaas" target="_top">Configuring Load Balancing as a Service</a>.</p>
+</div>
+
+<div class="section" title="Upgrading from v4.1.n to v4.2.1">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="upgrade-tool"></a>Upgrading from v4.1.n to v4.2.1</h3>
+</div>
+</div>
+</div>
+
+<p>Users who want to upgrade from an existing Rackspace Private Cloud v4.1.n Grizzly cluster to a Havana cluster should upgrade to v4.2.1. Because of the OpenStack version change and the renaming of attributes from <code class="filename">quantum</code> to <code class="filename">neutron</code>, this upgrade process is more complex and is best facilitated with the Rackspace Private Cloud <code class="filename">mungerator</code> tool. This upgrade process is documented in <a class="link" href="http://www.rackspace.com/knowledge_center/article/upgrading-your-private-cloud#upgrade-v41n-v42n" target="_top">Upgrading from v4.1.n to v4.2.1</a></p>
+
+<p>The following matrix indicates which upgrade scenarios are supported.</p>
+
+<table id="d5e114" rules="all">
+	<thead>
+		<tr>
+			<td>Upgrade Scenario</td>
+			<td>Supported</td>
+			<td>Not Supported</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>v4.2.0 =&gt; v4.2.n</td>
+			<td>&nbsp;</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>v4.1.n =&gt; v4.2.1</td>
+			<td>X</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>v4.1.n =&gt; v4.2.0</td>
+			<td>&nbsp;</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>v4.1.n =&gt; v4.1.n</td>
+			<td>X</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>v4.0.0 =&gt; v4.2.n</td>
+			<td>&nbsp;</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>v4.0.0 =&gt; v4.1.n</td>
+			<td>X</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>v3 (OpenCenter) =&gt; Any</td>
+			<td>&nbsp;</td>
+			<td>X</td>
+		</tr>
+		<tr>
+			<td>v2 (Alamo) =&gt; Any</td>
+			<td>&nbsp;</td>
+			<td>X</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Users who currently have Rackspace Private Cloud v4.0.0 and want to upgrade to v4.2.1 must first upgrade to v4.1.3.</p>
+
+<div class="note" title="Note">
+<table border="0" summary="Note">
+	<tbody>
+		<tr>
+			<th align="left">Note</th>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<p>For users who installed v4.2.0, which was made available only as an Early Access release, there is a known issue in upgrades from v4.2.0 to v4.2.1 relating to HAProxy . For more information, see <a class="link" href="#upgrading-to-4.2.1" title="Upgrading from v4.2.0 to v4.2.1">Upgrading to from v4.2.0 to v4.2.1</a>.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div class="section" title="Rackspace Private Cloud Sandbox">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="rpc-sandbox"></a>Rackspace Private Cloud Sandbox</h3>
+</div>
+</div>
+</div>
+
+<p>Rackspace Private Cloud Sandbox enables you to install an OpenStack-powered private cloud for testing or demonstration purposes in VMWare or VirtualBox. Rackspace Private Cloud Sandbox v1.0 runs Rackspace Private Cloud v4.2.1 powered by the Havana release of OpenStack. For information about this product and instructions for using it, see <a class="link" href="/knowledge_center/article/rackspace-private-cloud-sandbox" target="_top">Rackspace Private Cloud Sandbox</a>.</p>
+</div>
+</div>
+
+<div class="chapter" title="3.&nbsp;What's new in Rackspace Private Cloud v4.2.0">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="newfeatures-4.2.0"></a>3.&nbsp;What's new in Rackspace Private Cloud v4.2.0</h2>
+</div>
+</div>
+</div>
+
+<p>In addition to several stability and usability fixes, Rackspace Private Cloud v4.2.0 has the following changes.</p>
+
+<div class="note" title="Note">
+<table border="0" summary="Note">
+	<tbody>
+		<tr>
+			<th align="left">Note</th>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<p>Rackspace Private Cloud was made available as an Early Access release. Rackspace recommends using Rackspace Private Cloud v4.2.1 for a Havana-based private cloud and Rackspace Private Cloud v4.1.3 for a Grizzly-based private cloud.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="section" title="OpenStack">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="openstack-changes"></a>OpenStack</h3>
+</div>
+</div>
+</div>
+
+<p>The following changes have been made to OpenStack support in Rackspace Private Cloud:</p>
+
+<ul>
+	<li>Rackspace Private Cloud v4.2.0 is based on the Havana release of OpenStack. For detailed information about the Havana release, refer to the <a class="link" href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana" target="_top">OpenStack Havana Release Notes</a>.</li>
+	<li><a class="link" href="http://docs.openstack.org/developer/ceilometer/overview.html#metering" target="_top">OpenStack Metering (Ceilometer)</a> is fully implemented, including access to OpenStack statistics through the Horizon dashboard.
+	<p>The Rackspace Private Cloud implementation of Metering is based on a MySQL framework and uses SQL Alchemy. For more information about the parameters involved in this implementation, refer to <a class="link" href="http://docs.openstack.org/developer/ceilometer/configuration.html" target="_top">the OpenStack documentation on Metering configuration options</a>. For a list of database backends and what they support, refer to <a class="link" href="http://docs.openstack.org/developer/ceilometer/install/dbreco.html" target="_top">the OpenStack documentation on choosing a database backend for metering</a>.</p>
+	</li>
+	<li><a class="link" href="https://developer.rackspace.com/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat/" target="_top">A technology preview presentation of OpenStack Orchestration (Heat)</a> is available. This tool enables you to manage infrastructure and applications within OpenStack clouds. The Rackspace Private Cloud implementation of Orchestration includes the following components:
+	<div class="itemizedlist">
+	<ul class="itemizedlist" type="circle">
+		<li>The standard Heat API</li>
+		<li>The heat-api-cfn API</li>
+		<li>The CloudWatch API, which enables metric collection</li>
+	</ul>
+
+	<p>OpenStack Orchestration is not installed by default in the all-in-one or controller cookbooks, but can be installed afterward by applying the Heat roles to the Controller node.</p>
+	</div>
+	</li>
+</ul>
+</div>
+
+<div class="section" title="High Availability">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="high-availability"></a>High Availability</h3>
+</div>
+</div>
+</div>
+
+<p>The following changes have been made to High Availability in Rackspace Private Cloud:</p>
+
+<ul>
+	<li>Increased reliability under a wider range of circumstances, such as manual failover for maintenance, power loss, and network isolation.</li>
+	<li>Messages with lost messages during rabbitmq failover have been resolved.</li>
+	<li>OpenStack Networking availability in failure scenarios has been increased. The RPCDaemon tool improves OpenStack Networking scheduling of DHCP agents and L3 agents.</li>
+</ul>
+</div>
+
+<div class="section" title="OpenStack Networking (Neutron)">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="openstack-networking"></a>OpenStack Networking (Neutron)</h3>
+</div>
+</div>
+</div>
+
+<p>The following changes have been made to OpenStack Networking in Rackspace Private Cloud:</p>
+
+<ul>
+	<li>The Rackspace Private Cloud v4.2.0 cookbooks have been updated to change packages and attributes from <code class="filename">quantum</code> to <code class="filename">neutron</code>, reflecting the OpenStack project name change.</li>
+	<li>L3 agent support is now available, which enables floating IPs and routers. For more information about L3 routing, refer to <a class="link" href="http://docs.openstack.org/network-admin/admin/content/l3_workflow.html" target="_top">"L3 Routing and NAT" in the OpenStack Networking Administration Guide</a>.</li>
+</ul>
+</div>
+
+<div class="section" title="OpenStack Block Storage (Cinder)">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="cinder"></a>OpenStack Block Storage (Cinder)</h3>
+</div>
+</div>
+</div>
+
+<p>The following changes have been made to OpenStack Block Storage in Rackspace Private Cloud:</p>
+
+<ul>
+	<li>LVM provider is now used by default, which provides better performance and reliability.</li>
+	<li>Standard paste configuration is now used, to provide the same configuration on CentOS/RHEL and Ubuntu.</li>
+</ul>
+</div>
+
+<div class="section" title="Dashboard changes">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="other-changes"></a>Dashboard changes</h3>
+</div>
+</div>
+</div>
+
+<p>You can access <a class="link" href="http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud" target="_top">Rackspace Private Cloud documentation on the Knowledge Center</a> by clicking the Help link on the dashboard.</p>
+</div>
+</div>
+
+<div class="chapter" title="4.&nbsp;Rackspace Private Cloud Object Storage">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="openstack-objectstorage"></a>4.&nbsp;Rackspace Private Cloud Object Storage</h2>
+</div>
+</div>
+</div>
+
+<p>Rackspace has developed an Object Storage offering compatible with the Rackspace Private Cloud offering.</p>
+
+<p>If you are interested in a deployment of Rackspace Private Cloud Object Storage, contact your Rackspace support representative for more information. You can work with Rackspace to have an Object Storage cluster configured in your data center or in a Rackspace data center.</p>
+
+<p>For an overview of the Rackspace Private Cloud Object Storage architecture, refer to "Distributed Object Storage" on our <a class="link" href="http://www.rackspace.com/cloud/private/architecture/" target="_top">Private Cloud Architectures page</a>.</p>
+</div>
+
+<div class="chapter" title="5.&nbsp;Known Issues">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="known-issues"></a>5.&nbsp;Known Issues</h2>
+</div>
+</div>
+</div>
+
+<p>The following issues have been identified in Rackspace Private Cloud v4.2.0 and v4.2.1.</p>
+
+<div class="section" title="Upgrading from v4.1.3 to v4.2.1">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="upgrading-4.1.3-to-4.2.1"></a>Upgrading from v4.1.3 to v4.2.1</h3>
+</div>
+</div>
+</div>
+
+<p>When upgrading from v4.1.3 to v4.2.1, chef-client may fail on the Compute nodes due to a conflict in python-swiftclient versions. If this failure occurs, run chef-client a second time.</p>
+</div>
+
+<div class="section" title="Upgrading from v4.2.0 to v4.2.1">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="upgrading-to-4.2.1"></a>Upgrading from v4.2.0 to v4.2.1</h3>
+</div>
+</div>
+</div>
+
+<p>The implementation of HAProxy VIP routing has changed in v4.2.1. After an upgrade from v4.2.0 to v4.2.1, the HAProxy VIP must be removed from the loopback interface (lo). This issue applies <span class="bold"><strong>only</strong></span> to upgrades from v4.2.0 to v4.2.1.</p>
+
+<p>The following upgrade process ensures that the HAProxy VIP is configured correctly for v4.2.1, and should prevent you from having to manually remove the HAProxy VIP.</p>
+
+<ol>
+	<li>Log into the Chef server as the root user.</li>
+	<li>Run the <span class="command"><strong>knife environment edit</strong></span> command.
+	<pre class="screen">
+<code class="prompt">#</code> knife environment edit <em class="replaceable"><code>&lt;environmentName&gt;</code></em>
+                </pre>
+	</li>
+	<li>Edit the environment by changing the <code class="filename">do_package_upgrades</code> and <code class="filename">image_upload</code> override attributes. This forces the package upgrades and also disables image uploading, which enables you to work around issues related to Glance.
+	<pre class="screen">
+    "override_attributes": {
+      "osops": {
+        "do_package_upgrades": true
+      },
+      [...]
+      "glance": {
+        "image_upload": false
+      },
+      [...]
+      }
+                        </pre>
+	</li>
+	<li>Check out the cookbooks and specify <strong class="userinput"><code>v4.2.1</code></strong>.
+	<pre class="screen">
+<code class="prompt">/root#</code> git clone https://github.com/rcbops/chef-cookbooks.git
+<code class="prompt">/root#</code> cd chef-cookbooks
+<code class="prompt">/root/chef-cookbooks#</code> git checkout v4.2.1
+<code class="prompt">/root/chef-cookbooks#</code> git submodule init
+<code class="prompt">/root/chef-cookbooks#</code> git submodule sync
+<code class="prompt">/root/chef-cookbooks#</code> git submodule update
+                        </pre>
+	</li>
+	<li>Upload the cookbooks and the roles to the Chef server.
+	<pre class="screen">
+<code class="prompt">/root/chef-cookbooks#</code> knife cookbook upload -a -o cookbooks
+
+<code class="prompt">/root/chef-cookbooks#</code> knife role from file roles/*rb
+                        </pre>
+	</li>
+	<li>Stop the following OpenStack services on the backup Controller node, beginning with monit:
+	<ul>
+		<li>monit</li>
+		<li>keystone</li>
+		<li>nova</li>
+		<li>glance</li>
+		<li>cinder</li>
+		<li>haproxy</li>
+		<li>keepalived</li>
+	</ul>
+	</li>
+	<li>Run chef-client on the backup node. You may have to run chef-client twice.</li>
+	<li>After the last chef-client run that completes the upgrade, run the following command on the backup node:
+	<pre class="screen">
+<code class="prompt">#</code> ip addr show lo
+                            </pre>
+
+	<p>It should generate output similar to the following:</p>
+
+	<pre class="screen">
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN
+     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+     inet 127.0.0.1/8 scope host lo
+        valid_lft forever preferred_lft forever 
+     inet 169.254.123.1/30 scope host lo
+        valid_lft forever preferred_lft forever                                
+                            </pre>
+
+	<p>In the correct configuration, shown here, it should include <code class="filename">169.254.123.1/30</code>, which is the configured APIPA address that a Rackspace Private Cloud environment uses for HAProxy binding and communication,</p>
+	</li>
+	<li>Run the following command on the active node to manually failover to the backup node.
+	<pre class="screen">
+<code class="prompt">#</code> service keepalived restart
+                            </pre>
+	</li>
+	<li>On the original active node, perform Steps 1-6 of this procedure and run chef-client.</li>
+	<li>After the last chef-client run that completes the upgrade, run the following command on the original active node:
+	<pre class="screen">
+<code class="prompt">#</code> ip addr show lo
+                            </pre>
+
+	<p>As with the backup node in Step 2, it should generate output similar to the following:</p>
+
+	<pre class="screen">
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN
+     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+     inet 127.0.0.1/8 scope host lo
+        valid_lft forever preferred_lft forever 
+     inet 169.254.123.1/30 scope host lo
+        valid_lft forever preferred_lft forever                                
+                            </pre>
+	</li>
+</ol>
+
+<p>If at any point you need to manually remove the VIP from lo, use the following command:</p>
+
+<pre class="screen">
+<code class="prompt">#</code> ip addr del <em class="replaceable"><code>&lt;HAProxyVIP&gt;</code></em> dev lo
+                            </pre>
+
+<p>In an environment where the HAProxy VIP was <code class="filename">192.0.2.0/32</code>, the command would be:</p>
+
+<pre class="screen">
+<code class="prompt">#</code> ip addr del 192.0.2.0/32 dev lo
+                        </pre>
+
+<p>Run <span class="command"><strong>ip addr show lo</strong></span> again to verify that the VIP has been removed and run chef-client on the node again to re-run the upgrade.</p>
+</div>
+
+<div class="section" title="Restarting RabbitMQ">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-rabbitmq-restart"></a>Restarting RabbitMQ</h3>
+</div>
+</div>
+</div>
+
+<p>When a RabbitMQ cluster fails, it must be brought up in the reverse order in which it went down, or the restart will fail. For example, if RabbitMQ goes down on <code class="filename">controller1</code> and then on <code class="filename">controller2</code>, the service should first be started on <code class="filename">controller2</code>, and then on <code class="filename">controller1</code>.</p>
+</div>
+
+<div class="section" title="Intermittent failover failure">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-failover-rabbitmq"></a>Intermittent failover failure</h3>
+</div>
+</div>
+</div>
+
+<p>Occasionally, failover between HA Controller nodes may fail due to multiple RabbitMQ processes existing on the secondary Controller node. Restarting RabbitMQ will bring the cluster back online:</p>
+
+<pre class="screen">
+<code class="prompt">#</code> pkill -f rabbitmq; service rabbitmq-server restart
+                </pre>
+</div>
+
+<div class="section" title="OpenStack Orchestration and instance names">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="known-orchestration-instance-name"></a>OpenStack Orchestration and instance names</h2>
+</div>
+</div>
+</div>
+
+<p>OpenStack Orchestration builds instance names based on the stack name, which results in long instance names. Instance names that are longer than 64 characters may cause the stack to fail to build. You should keep stack names short to avert this issue.</p>
+</div>
+
+<div class="section" title="CentOS and RHEL challenges with advanced OpenStack Networking">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-neutron-redhat"></a>CentOS and RHEL challenges with advanced OpenStack Networking</h3>
+</div>
+</div>
+</div>
+
+<p>When using OpenStack Networking (Neutron), Controller nodes with Networking features and standalone Networking nodes require namespace kernel features that are not available in the default kernel shipped with CentOS 6.4, RHEL 6.4, and older versions of these operating systems. More information about Neutron limitations is available in the <a class="link" href="http://docs.openstack.org/grizzly/openstack-network/admin/content/ch_limitations.html" target="_top">OpenStack documentation</a>, and more information about RedHat-derivative kernel limitations is provided in the <a class="link" href="http://openstack.redhat.com/Frequently_Asked_Questions#For_which_distributions_does_RDO_provide_packages.3F" target="_top">RDO FAQ</a>.</p>
+
+<p>Rackspace recommends that you upgrade to the latest RDO kernel if you are going to use CentOS or RHEL for networking nodes.</p>
+</div>
+
+<div class="section" title="Snapshot deletion on CentOS">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-cinder-centOS"></a>Snapshot deletion on CentOS</h3>
+</div>
+</div>
+</div>
+
+<p>Setting <code class="filename">volume_clear</code> in <code class="filename">cinder.conf</code> to <code class="filename">shred</code> or <code class="filename">zero</code> will cause snapshot deletion to fail in OpenStack Grizzly installations on CentOS. Rackspace recommends you set <code class="filename">volume_clear</code> to <code class="filename">none</code> until this issue is resolved in OpenStack.</p>
+</div>
+
+<div class="section" title="OpenStack Metering visualization">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-ceilometer-vis"></a>OpenStack Metering visualization</h3>
+</div>
+</div>
+</div>
+
+<p>Rackspace Private Cloud is currently using the patch referenced in <a class="link" href="https://bugs.launchpad.net/ceilometer/+bug/1093625" target="_top">Ceilometer bug #1093625</a> to address issues with OpenStack Metering visualization. If the underlying packages are updated, you may experience patch issues. We will continue to monitor the status of this bug for future releases.</p>
+</div>
+
+<div class="section" title="OpenStack service timeouts">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-openstack-timeouts"></a>OpenStack service timeouts</h3>
+</div>
+</div>
+</div>
+
+<p>OpenStack service timeouts cannot be configured, which makes it possible for an OpenStack client to remain connected to a failed service for a longer period than is desirable. If you cannot wait for the connection to close, you can restart the service that is holding the connection. For example, if the nova compute service has failed, restart it with service nova-compute restart on Ubuntu or <span class="command"><strong>service openstack-nova-compute restart</strong></span> on CentOS.</p>
+</div>
+
+<div class="section" title="Ephemeral and swap disks on RHEL">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-ephemeral-disks"></a>Ephemeral and swap disks on RHEL</h3>
+</div>
+</div>
+</div>
+
+<p>In RHEL-based clusters, ephemeral and swap disks cannot be used to create a custom image. If you do so, you will be unable to boot an instance. This is related to <a class="link" href="https://bugs.launchpad.net/nova/+bug/1251152" target="_top">Nova bug #1251152</a>.</p>
+</div>
+</div>
+</div>
+
+<div class="section" title="Ceilometer packages fail to install">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-ceilometer-packages"></a>Ceilometer packages fail to install</h3>
+</div>
+</div>
+</div>
+
+<p>In some cases, the Ceilometer packages may not be correctly downloaded or installed on the Compute nodes. On the primary Controller node, follow this procedure to clean up the Compute nodes and re-install the packages.</p>
+
+<div class="note" title="Note">
+<table border="0" summary="Note">
+	<tbody>
+		<tr>
+			<th align="left">Note</th>
+		</tr>
+		<tr>
+			<td align="left" valign="top">
+			<p>The procedure as written is designed to be run on the primary Controller node. The <span class="command"><strong>dsh -g compute -c</strong></span> command enables you to run the quoted commands concurrently on all compute nodes. If desired, you can log into each individual Compute node and run the quoted commands individually, but this is not recommended in large clusters.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<ol>
+	<li>Install the <code class="filename">python-swiftclient</code>, <code class="filename">python-warlock</code>, and <code class="filename">babel</code> packages.
+
+	<pre class="screen">
+# dsh -g compute -c "apt-get -y install python-swiftclient python-warlock babel"
+</pre>
+	</li>
+	<li>Verify the installed packages. Review the output for <code class="computeroutput">ERROR</code>. If there are no errors, the packages are correctly installed.
+	<pre class="screen">
+# dsh -g compute -c "apt-get -f install"
+            </pre>
+	</li>
+	<li>Run the following command to remove unneeded packages from the Compute nodes.
+	<pre class="screen">
+# dsh -g compute -c "apt-get -y autoremove"
+</pre>
+	</li>
+	<li>Run chef-client again:
+	<pre class="screen">
+# dsh -g compute -c "chef-client"
+            </pre>
+	</li>
+</ol>
+</div>
+
+<div class="section" title="Horizon is not installed correctly">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="known-horizon-install"></a>Horizon is not installed correctly</h3>
+</div>
+</div>
+</div>
+
+<p>In some cases on Ubuntu, Horizon packages are not installed correctly. If Hypervisors tab does not contain pie charts, or if the Stats page on the Resource Usage tab is not rendering graphs, Horizon has not been correctly installed. To resolve this issue, you will uninstall Horizon and django and run chef-client again.</p>
+
+<ol>
+	<li>On the primary Controller node, uninstall Horizon and django:
+	<pre class="screen">
+ # apt-get -y remove openstack-dashboard python-django-horizon &amp;&amp; apt-get -y autoremove
+                             </pre>
+	</li>
+	<li>Run <span class="command"><strong>chef-client</strong></span>.</li>
+	<li>Log out of Horizon and log back in again.</li>
+</ol>
+
+<p>You should now see the correct Hypervisors and Stats content.</p>
+
+<p>In rare cases you may need to manually run Horizon's <span class="command"><strong>collectstatic</strong></span> command to localize all of the Horizon resources. Run the following command on the primary Controller node to perform this task.</p>
+
+<pre class="screen">
+# /usr/share/openstack-dashboard/manage.py collectstatic --noinput
+                </pre>
+</div>

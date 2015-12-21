@@ -1,0 +1,201 @@
+---
+node_id: 3426
+title: Best Practices for Cloud Backup
+permalink: article/best-practices-for-cloud-backup
+type: article
+created_date: '2013-04-22 19:23:55'
+created_by: David Hendler
+last_modified_date: '2015-06-23 19:4808'
+last_modified_by: David Hendler
+products: Cloud Backup
+categories: Backups
+body_format: tinymce
+---
+
+<h2>Best Practices for Cloud Backup</h2>
+<h3>Contents</h3>
+<ul>
+<li><a href="#purpose">Purpose of this Guide</a></li>
+<li><a href="#conventions">Document Conventions</a></li>
+<li><a href="#concepts">Key Concepts</a></li>
+<li><a href="#choosing">Choosing What to Backup</a></li>
+<li><a href="#best_practices">Backup and Restore Best Practices</a></li>
+<ul>
+<li>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#frequency">Backup Frequency</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#restores">Effective Restores</a></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#encryption">Encryption: Costs and Benefits</a></li>
+</ul>
+<li><a href="#issues">Frequently Encountered Issues</a></li>
+</ul>
+<p>&nbsp;</p>
+<h2><a name="purpose"></a>Purpose of this Guide</h2>
+<p>This Guide shows you how to get the most out of Rackspace Cloud Backup well and addresses frequently encountered scenarios. Working through this guide, you will better understand the key backup concepts, how to make smart choices about what to backup (and how often), how to make the most of data restoration, and how to resolve the most commonly encountered Cloud Backup issues.</p>
+<h2><a name="conventions"></a>Conventions</h2>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_best_practice.png" alt="" width="38" height="37" /></td>
+<td><strong>Best Practice.</strong> Look to these when you need to make good backup decisions.</td>
+</tr>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_caution.png" alt="" width="38" height="38" /></td>
+<td><strong>Caution.</strong> Consider the potential outcomes before you do these actions.</td>
+</tr>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_do_not_attempt.png" alt="" width="38" height="38" /></td>
+<td><strong>Do Not Attempt.</strong> These are warnings against possible future trouble.</td>
+</tr>
+</tbody>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="concepts"></a>Key Concepts</h2>
+<p>Knowing the language of backup goes a long way towards helping you make informed decisions about your backup operations.<br /><br /></p>
+<ul>
+<li><strong>Backup</strong>—a spare copy of data to be used in the event of a failure or loss of the original.</li>
+<li><strong>Backup Configuration</strong>—instructions to the backup agent that indicate 1) what you want to backup and 2) how often you'd like to save that information.</li>
+<li><strong>Block</strong>—a chunk of data from a file.</li>
+<li><strong>Bundle</strong>—several blocks packaged together.</li>
+<li><strong>Cloud Backup Agent</strong>—a program installed on your server that knows how to perform backups and restores.</li>
+<li><strong>Data Churn</strong>—how often a file changes.</li>
+<li><strong>Encryption</strong>—a method of scrambling the contents of data using a key or a password so that only those that have the password or key can read the data.</li>
+<li><strong>Restore</strong>—to bring your system back to a previously saved state, usually using a backup as the checkpoint.</li>
+<li><strong>Snapshot</strong>—a checkpoint of system data/state, usually a backup.</li>
+<li><strong>The Vault</strong>—disk space that contains information about every block of data that you've ever stored. It is shared between all of your backup configurations.</li>
+</ul>
+<h2>&nbsp;</h2>
+<h2><a name="choosing"></a>Choosing What to Backup</h2>
+<p>Our best guidance is not what to backup, but what not to backup. The three items that <strong>should not be</strong> backed up through the Cloud Backup Agent:</p>
+<ul>
+<li>Databases</li>
+<li>Caches and session files</li>
+<li>Frequently changing files, such as logs</li>
+</ul>
+<p>The Cloud Backup Agent tries to be helpful, and skips the below types of files automatically. You may, however, manually add them to your backup.</p>
+<ul>
+<li>Memory-only file systems (Linux: /proc, etc. )</li>
+<li>Cloud Backup agent data directories</li>
+<li>Recovery information (Windows)</li>
+<li>Recycle Bin (Windows)</li>
+<li>desktop.ini and thumbs.db (Windows)</li>
+</ul>
+<p><br />These file types either change too rapidly (databases, logs, caches) or don't exist long enough to be backed up (session files). Session files should be avoided entirely. And if the information is valuable to your business, log files should track it. Caches should also be avoided, as their data is meant to be discarded. <br />&nbsp;&nbsp;&nbsp; If you do need to back up these files, our suggested workarounds are:</p>
+<ul>
+<li>Databases—Take a snapshot of the database (e.g., a database dump) and back up the dump.</li>
+<li>Log files—Take snapshots of your log files and back them up.</li>
+</ul>
+<ul>
+<li>To avoid running out of disk space, rotate your log files periodically.</li>
+</ul>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_do_not_attempt.png" alt="" width="38" height="38" /></td>
+<td>Do not back up session files or caches at all. Don't back up databases or log files directly; use a snapshot instead.</td>
+</tr>
+</tbody>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="best_practices"></a>Backup and Restore Best Practices</h2>
+<p>There are many ways to configure backups and restores. To make Cloud Backup work best for you, it helps to understand some of the tradeoffs you make when you configure the many options available to you.</p>
+<p><strong>NOTE:</strong> With Performance Cloud Servers, Cloud Monitoring will only monitor the system disk. The data disk is not monitored. For data disk backup, <a href="/knowledge_center/frequently-asked-question/what-is-rackspace-cloud-backup-rcbu">Rackspace Cloud Backup</a> or <a href="/knowledge_center/article/cloud-block-storage-overview">Cloud Block Storage</a> should be used.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_best_practice.png" alt="" width="38" height="37" /></td>
+<td>
+<p>First off, choose your contact email carefully when you configure your backup. If anything goes wrong, you will be alerted there first.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><a name="frequency"></a>Backup Frequency</h3>
+<p>When trying to determine how often to back up a file, there are three variables to consider:</p>
+<ol>
+<li>Criticality—How important is tracking changes in the file to your business processes?</li>
+<li>Size—How large is the file?</li>
+<li>Data Churn—How often does the file change?</li>
+</ol>
+<p><br />&nbsp;&nbsp;&nbsp; Criticality is the most important factor to consider when making backup decisions. The more critical the file is to your business operations, the more often you'll want to back this file up. <br />&nbsp;&nbsp;&nbsp; Size is an important consideration if the speed of backups/restores is important to you. Large files take longer to backup and to restore. It may be wise to backup large files less frequently. <br />&nbsp;&nbsp;&nbsp; Data churn is the last variable to consider, and perhaps the trickiest to handle. Files that change often invalidate blocks that have been stored previously. Depending on criticality, it may still be wise to snapshot files with high data churn and backup those snapshots. <br /><br /></p>
+<table border="0">
+<tbody>
+<tr><th bgcolor="#2E2EFE">Back up less often files that have...</th><th bgcolor="#2E2EFE">Back up more often files that have...</th></tr>
+<tr bgcolor="#81BEF7">
+<td>Lower Criticality</td>
+<td>Higher Criticality</td>
+</tr>
+<tr>
+<td>High Data Churn</td>
+<td>Low Data Churn</td>
+</tr>
+<tr bgcolor="#81BEF7">
+<td>Larger Size</td>
+<td>Smaller Size</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_caution.png" alt="" width="38" height="38" /></td>
+<td>Do not make decisions about backup frequency lightly. If you try to backup or restore files more frequently than the backup engine can keep up with, anomalous behavior may result.</td>
+</tr>
+</tbody>
+</table>
+<h3>&nbsp;</h3>
+<h3><a name="restores"></a>Effective Restores</h3>
+<p>It is a good idea to periodically test your restores to make sure that they are working as you expect. You do not want to get in the situation where needed backups aren’t available because you haven't been configured as you expected.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_best_practice.png" alt="" width="38" height="37" /></td>
+<td>
+<p>Test your restores periodically to make sure that your data is saved as you expect it to be.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Another point to consider is the restore destination. Restoring to the original location and overwriting saves on storage space, but you risk accidentally overwriting important existing files. Proceed with caution when restoring.</p>
+<h3>&nbsp;</h3>
+<h3><a name="encryption"></a>Encryption: Costs and Benefits</h3>
+<p>Encryption is important for keeping your data confidential. However, encryption has its costs. It takes significantly longer to backup and restore encrypted data. Consider if the data you are storing must be encrypted. If not, then it is best to proceed without encryption. Encryption applies across the board, and once you encrypt a backup server, you may not remove it.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_caution.png" alt="" width="38" height="38" /></td>
+<td>Once you've set a server to encrypt data, <strong>all backups performed on that server will be encrypted</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2>&nbsp;</h2>
+<h2><a name="issues"></a>Frequently Encountered Issues</h2>
+<p>This section is similar to an FAQ. If you encounter a problem and need immediate help, look it up here first. There's a good chance a solution already exists.</p>
+<table border="0">
+<tbody>
+<tr>
+<td><img src="/knowledge_center/sites/default/files/field/image/icon_best_practice.png" alt="" width="38" height="37" /></td>
+<td>
+<p>To minimize your chances of issues, keep your Backup Agent updated. Many errors and issues are fixed between releases.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Issue</strong>—My backups are getting randomly corrupted. Why?</p>
+<ul>
+<li>Does your server have a backup agent and did you clone it to create a new backup system? This means that two backup agents exist with the same credentials writing to the same Vault.</li>
+</ul>
+<p><strong>Solution</strong>—Ensure the agent on the cloned backup server is re-registered before any backups are run.<br /><br /></p>
+<p><strong>Issue</strong>—My backup is experiencing network errors.<br /><strong>Solution</strong>—Make sure that your backup server has a connection to both Service Net and public net. If it is on an isolated network, the backup agent will not be able to function properly.<br /><br /></p>
+<p><strong>Issue</strong>—Sometimes, my backups fail.</p>
+<ul>
+<li>This is most commonly caused by either a failure to communicate with Cloud Files, running out of disk space, or a failure to communicate with Cloud Backup.</li>
+<li>Sometimes, the agent may fail to backup a particular file because of a permissions error. Either the file is in use when the agent attempts to save it or the file in question cannot be read by the agent. Consider permissions when hunting for the root cause of a backup failure.</li>
+</ul>
+<p><strong>Solution</strong>—Ensure you're running the latest agent release. Then, attempt to determine the cause of the error. Try the backup/restore again if it is an intermittent error. We're always working on making Cloud Backup more robust.<br /><br /></p>
+<p><strong>Issue</strong>—My backup/restore is slow. What can I do?</p>
+<ul>
+<li>If your backup or restore is encrypted, it will be especially slow. Encryption comes at a cost. Otherwise, look to the section above, “What Should I Not Save?”. The less there is to save/restore, the faster it will be.</li>
+<li>We're always working on optimizing the agent to make backup and restore faster.</li>
+</ul>
+<p>&nbsp;</p>

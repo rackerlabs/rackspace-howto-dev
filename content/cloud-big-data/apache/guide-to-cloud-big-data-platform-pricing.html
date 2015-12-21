@@ -1,0 +1,156 @@
+---
+node_id: 4063
+title: Cloud Big Data Platform provisioning and pricing
+permalink: article/guide-to-cloud-big-data-platform-pricing
+type: article
+created_date: '2014-05-07 15:02:15'
+created_by: david.grier
+last_modified_date: '2014-11-25 19:5739'
+last_modified_by: jered.heeschen
+products: Cloud Big Data
+categories: Apache
+body_format: tinymce
+---
+
+<p>Rackspace Cloud Big Data Platform is a new public cloud offering leveraging the Hortonworks Data Platform (HDP) and OpenStack. Users can quickly deploy a full HDP stack and scale the solution simply by adding new nodes on the configuration. The provisioning of resources in Cloud Big Data Platform can be done easily via the Rackspace Cloud Control Panel or API. For more information about how to get started using Cloud Big Data Platform, see the <a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started/content/DB_Doc_Change_History.html">Getting Started</a> Guide.</p>
+
+<p>Although Cloud Big Data Platform uses a standard and common Apache Hadoop<sup>TM</sup> distribution, it differs from running Hadoop on dedicated servers or plain cloud servers. The back-end infrastructure of Cloud Big Data Platform has been optimized for running Hadoop at scale and includes gigabit Ethernet, optimized local storage, and easy API access.</p>
+
+<p>The following sections provide information that will help you understand the pricing and provisioning of this service.</p>
+
+<h2>Data node instances</h2>
+
+<p>Cloud Big Data Platform offers four datanode sizes:</p>
+
+<table border="0">
+	<tbody>
+		<tr>
+			<td>
+			<h3><strong>Flavor ID</strong></h3>
+			</td>
+			<td>
+			<h3><strong>Name</strong></h3>
+			</td>
+			<td>
+			<h3><strong>vCPU</strong></h3>
+			</td>
+			<td>
+			<h3><strong>RAM</strong></h3>
+			</td>
+			<td>
+			<h3><strong>Disk</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>hadoop1-7</p>
+			</td>
+			<td>
+			<p>Small Hadoop Instance</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>7.5G</p>
+			</td>
+			<td>
+			<p>1.25T</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>hadoop1-15</p>
+			</td>
+			<td>
+			<p>Medium Hadoop Instance</p>
+			</td>
+			<td>
+			<p>4</p>
+			</td>
+			<td>
+			<p>15G</p>
+			</td>
+			<td>
+			<p>2.5T</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>hadoop1-30</p>
+			</td>
+			<td>
+			<p>Large Hadoop Instance</p>
+			</td>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>30G</p>
+			</td>
+			<td>
+			<p>5T</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>hadoop1-60</p>
+			</td>
+			<td>
+			<p>XLarge Hadoop Instance</p>
+			</td>
+			<td>
+			<p>16</p>
+			</td>
+			<td>
+			<p>60G</p>
+			</td>
+			<td>
+			<p>10T</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p class="p1">onmetal-io1</p>
+			</td>
+			<td>OnMetal Hadoop instance</td>
+			<td>40</td>
+			<td>128G</td>
+			<td>3.2T</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>When provisioning, you need to know how much data node (disk) space is needed to process your query or job. HDFS has a configurable level of replication which we set based on the size of the provisioned cluster.</p>
+
+<ul>
+	<li><span>Replication Factor 1: 1-2 Datanodes</span></li>
+	<li><span>Replication Factor 2: 3-4 Datanodes</span></li>
+	<li><span>Replication Factor 3: &gt;4 Datanodes</span></li>
+</ul>
+
+<p>Considering a Cloud Big Data deployment with 3x replication, you must first take your raw data set and multiply that volume by 3. This value indicates how much Cloud Big Data Platform resources you need.<br />
+<br />
+One additional thing to note is that a 10 TB instance actually occupies an entire physical machine, so users do not have to worry about sharing resources.</p>
+
+<h2>Gateway node</h2>
+
+<p>The Gateway node is provisioned automatically when you create a cluster. It is designed to give you access directly into the data nodes residing in the cluster.</p>
+
+<h2>Name node</h2>
+
+<p>The Name node is provisioned at the time of cluster creation. The Name node handles the master services of the Hadoop cluster including the map operation and logical location of the data copies.</p>
+
+<h2>Bandwidth</h2>
+
+<p>All incoming bandwidth is provided at no charge, which means that you are not metered or billed for bandwidth usage during import. Only outgoing bandwidth is metered, which means that anything exported from or distributed from the Hadoop cluster is charged. Bandwidth between data nodes and the Name node or Gateway node, or between sets of data nodes, is not metered or billed.</p>
+
+<h2>Scaling</h2>
+
+<p>Hadoop is a distributed technology that allows for seamless horizontal scaling. This means that you can easily expand the capacity of your Hadoop cluster by simply adding a node to the cluster via the Coud Control Panel or API. You can also scale down the resources by removing data node instances from the cluster.</p>
+
+<h2>Cloud Files integration</h2>
+
+<p>One of the main features of Cloud Big Data Platform is its ability to process data that lives in Cloud Files. For detailed information about how to do this, see <a href="http://www.rackspace.com/knowledge_center/article/getting-data-into-your-big-data-cluster">Getting data into your Big Data Cluster guide</a>. It is important to note that any usage of Cloud Files is billed at the storage rate for Cloud Files as outlined on the <a href="http://www.rackspace.com/cloud/files/pricing/" target="_self">Cloud Files pricing page</a>. Bandwidth and transfer of Cloud Files data to Cloud Big Data is at no charge; however, customers might incur bandwidth when exporting results back into Cloud Files if the Cloud Files container is not in the same region (data center) as the Hadoop cluster.</p>
+
+<p>We hope that these additional points help you successfully understand and deploy your Cloud Big Data solution. If you need help, reach out to our data specialist support team by creating a ticket in the Rackspace Cloud Control Panel.</p>

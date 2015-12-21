@@ -1,0 +1,182 @@
+---
+node_id: 1272
+title: Install EPEL and additional repositories on CentOS and Red Hat
+permalink: article/installing-rhel-epel-repo-on-centos-5x-or-6x
+type: article
+created_date: '2012-01-11 19:46:34'
+created_by: RackKCAdmin
+last_modified_date: '2015-11-03 19:5652'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: 'CentOS/Fedora/Red Hat Enterprise Linux,File Transfers and File Sharing,Linux and PHP,Linux Tools'
+body_format: tinymce
+---
+
+<p>This article describes how to configure a CentOS or Red Hat Enterprise Linux system to use the <a href="https://fedoraproject.org/wiki/EPEL" target="_blank">Fedora Extra Packages for Enterprise Linux (EPEL) repository</a>. The EPEL repository provides useful software packages that are not included in the official CentOS or Red Hat Enterprise Linux repositories.</p>
+
+<p>Instructions are also included for installing other third-party repositories, the <a href="https://ius.io/" target="_blank">IUS Community Project</a> and the <a href="http://rpms.famillecollet.com/" target="_blank">Remi RPM Repository</a>. Whereas EPEL provides only software that is <em>not</em> in the CentOS and Red Hat Enterprise Linux official repositories, IUS and Remi provide newer versions of software (like MySQL and PHP) that exists in the official repositories.</p>
+
+<p><strong>Note:</strong> Exercise caution when using any third-party repository. If you have a managed support agreement, contact your provider before following the instructions in this article to ensure that you don’t create an unsupported server configuration.</p>
+
+<h2>Install the EPEL repository</h2>
+
+<p>You install the EPEL repository by downloading the appropriate RPM package for your system and installing it. The following instructions use the 64-bit packages that work with Rackspace Cloud Servers instances.</p>
+
+<h3>CentOS Extras repository</h3>
+
+<p>The CentOS Extras repository includes a package to install EPEL, and&nbsp;is enabled by default. To install the EPEL package, run the following command:</p>
+
+<pre>
+sudo yum install epel-release</pre>
+
+<p>If that command doesn't work, perhaps because the CentOS Extras repository is disabled, the following sections provide manual installation instructions based on your distribution version.</p>
+
+<h3>CentOS and Red Hat Enterprise Linux 5.x</h3>
+
+<pre>
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
+sudo rpm -Uvh epel-release-5*.rpm</pre>
+
+<h3>CentOS and Red Hat Enterprise Linux 6.x</h3>
+
+<pre>
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
+sudo rpm -Uvh epel-release-6*.rpm</pre>
+
+<h3>CentOS and Red Hat Enterprise Linux 7.x</h3>
+
+<pre>
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo rpm -Uvh epel-release-7*.rpm</pre>
+
+<p>If you get a File Not Found error message when trying to download the package, the version number might have changed. You can access the latest version of the RPM installer from the <a href="https://fedoraproject.org/wiki/EPEL">Fedora EPEL wiki page</a>. The wiki page also includes additional instructions for Red Hat Network subscribers who are installing the EPEL repository.</p>
+
+<h2>Install the IUS repository <em>(optional)</em></h2>
+
+<p>The IUS repository provides newer versions of some software in the official CentOS and Red Hat repositories. The IUS repository depends on the EPEL repository.</p>
+
+<p>The package names in the IUS repository are <em>different from</em>&nbsp;the package names used in the official repositories. &nbsp;The difference helps to avoid unintentional conflicts or software version updates.</p>
+
+<p><strong>Note:</strong> Because IUS uses package names that are different from the package names in the official repositories, we recommend IUS over Remi for Rackspace customers with managed support levels that include server software.&nbsp;Managed servers automatically update nightly by default, which can cause unplanned upgrades if package names are the same in more than one enabled repository.</p>
+
+<p>Installing the IUS repository&nbsp;is a matter of downloading the appropriate RPM package for your system and installing it. The following instructions use the 64-bit packages that work with our Cloud Server instances.</p>
+
+<h3>CentOS 5.x</h3>
+
+<pre>
+wget https://centos5.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<h3>CentOS 6.x</h3>
+
+<pre>
+wget https://centos6.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<h3>CentOS 7.x</h3>
+
+<pre>
+wget https://centos7.iuscommunity.org/ius-release.rpm 
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<h3>Red Hat 5.x</h3>
+
+<pre>
+wget https://rhel5.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<h3>Red Hat 6.x</h3>
+
+<pre>
+wget https://rhel6.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<h3>Red Hat 7.x</h3>
+
+<pre>
+wget https://rhel7.iuscommunity.org/ius-release.rpm
+sudo rpm -Uvh ius-release*.rpm</pre>
+
+<p>If you get a&nbsp;File Not Found&nbsp;error message when trying to download the RPM, the version number might have changed. You can access the latest version of the repository package from&nbsp;the <a href="https://ius.io/GettingStarted/">IUS Getting Started Page</a>.</p>
+
+<h3>Upgrade installed packages to IUS versions</h3>
+
+<p>If you already have a software package installed that you want to upgrade to a newer version in the IUS repository, install the IUS yum plug-in for package replacement to simplify the upgrade process.</p>
+
+<pre>
+sudo yum install yum-plugin-replace</pre>
+
+<p>The plug-in provides a <code>yum replace</code> command that replaces a specified package and installs any required dependencies at the same time. &nbsp;For example, to replace the installed PHP package with the PHP 5.3 package from the IUS repository, run the following command:</p>
+
+<pre>
+sudo yum replace php --replace-with php53</pre>
+
+<p>For more information, see the <a href="https://ius.io/Usage/" target="_blank">IUS Usage Guide</a>.</p>
+
+<h2>Install the Remi repository <em>(optional)</em></h2>
+
+<p>The Remi repository provides newer versions of the software in the core CentOS and Red Hat Enterprise Linux repositories. The Remi repository depends on the EPEL repository.</p>
+
+<p>Package names in the Remi repository are the same as the package names used in the official repositories. This similarity can result in inadvertent package upgrades when you run an update with yum, so use the Remi repository with care.</p>
+
+<p><strong>Note:</strong> Because Remi uses package names that are the same as the package names in the official repositories, we do not recommend Remi for Rackspace customers with a managed level of support. Managed servers automatically update nightly by default, which can cause unplanned upgrades if the Remi repository is enabled. If you require the Remi repository or another repository with package name conflicts, contact Rackspace Support before applying any upgrades to ensure continued support for your server.</p>
+
+<p>You install the Remi repository by downloading the appropriate RPM package for your system and installing it. The following instructions use the 64-bit packages that work with Cloud Servers instances.</p>
+
+<h3>CentOS and Red Hat Enterprise Linux 5.x</h3>
+
+<pre>
+wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
+sudo rpm -Uvh remi-release-5*.rpm</pre>
+
+<h3>CentOS and Red Hat Enterprise Linux 6.x</h3>
+
+<pre>
+wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm 
+sudo rpm -Uvh remi-release-6*.rpm</pre>
+
+<h3>CentOS and Red Hat Enterprise Linux 7.x</h3>
+
+<pre>
+wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm 
+sudo rpm -Uvh remi-release-7*.rpm</pre>
+
+<p>If you get a File Not Found error message when trying to download the package, the version number might have changed. You can access the latest version of the RPM installer from the <a href="http://blog.remirepo.net/pages/Config-en">Remi Repository Configuration</a> page. The configuration page also includes additional instructions for Red Hat Network subscribers who are installing the Remi repository.</p>
+
+<h3>Enable the Remi repository</h3>
+
+<p>The Remi repository is disabled by default.</p>
+
+<p>To use the Remi repository only when you know you need it, use the <code>--enablerepo=remi</code> option when installing a package. For example:</p>
+
+<pre>
+sudo yum --enablerepo=remi install php-tcpdf</pre>
+
+<p>If you want to permanently enable the Remi repository, you need to edit the yum configuration file for Remi.</p>
+
+<p>Open the repository configuration file by using a text editor of your choice:</p>
+
+<pre>
+sudo nano /etc/yum.repos.d/remi.repo
+Edit the [remi] portion of the file to set the enabled option to 1. This action enables the Remi repository by default.
+name=Les RPM de remi pour Enterprise Linux $releasever - $basearch
+#baseurl=http://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/
+mirrorlist=http://rpms.famillecollet.com/enterprise/$releasever/remi/mirror
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+failovermethod=priority</pre>
+
+<h2>Check available repositories</h2>
+
+<p>You can see if the repositories that you need are installed and enabled by running the following command:</p>
+
+<pre>
+yum repolist</pre>
+
+<p>Some repositories, like Remi, are disabled by default. To list disabled repositories, run the following command:</p>
+
+<pre>
+yum repolist disabled</pre>
+
+<p>&nbsp;</p>

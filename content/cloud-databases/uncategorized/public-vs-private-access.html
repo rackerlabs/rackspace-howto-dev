@@ -1,0 +1,15 @@
+---
+node_id: 1509
+title: Public and Private Access for Cloud Databases
+permalink: article/public-vs-private-access
+type: article
+created_date: '2012-07-24 00:36:50'
+created_by: RackKCAdmin
+last_modified_date: '2013-12-16 21:5849'
+last_modified_by: jered.heeschen
+products: Cloud Databases
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p class="p1">Cloud Databases provides several options for connecting to your database, giving you complete flexibility in how you access your database. For increased security, your database is available on the Rackspace private network by default. However, you can connect to your Cloud Database using any of the following methods:</p><ul><li><strong>Connect using the database Hostname string (private access within the same Rackspace region)</strong></li></ul><p class="p1">If you have additional Rackspace cloud resources, such as Cloud Servers, Cloud Sites, and Cloud Load Balancers, you can create a private connection from these resources to your database using the database Hostname string. To use this connection method, the resources must be located in the same region. This connection method does not incur bandwidth charges. Keep this in mind when choosing a region for Cloud Servers, Cloud Load Balancers, and Cloud Databases.</p><ul><li><strong>Connect using an ssh tunnel (public access)</strong></li></ul><p class="p1">You can create a secure connection to a Cloud Server using an ssh tunnel. Once you're connected to your server, you can use the MySQL client, or a similar tool, to manage your database. This method lets you connect external, non-Rackspace resources to your Cloud Database.</p><ul><li><strong>Connect using a Cloud Load Balancer (public access)</strong></li></ul><p class="p1">This connection method places a Cloud Load Balancer in front of your database and provides public access to your database. If the load balancer and database are in the same region, no bandwidth charges are incurred for this connection. Any data sent outside of the data center incurs normal bandwidth charges.</p><p class="p1">Here's a visual representation of how you connect to your Cloud Database. Choose the connection method that works best for your implementation.</p><p><img style="border-width: 2px; border-style: solid; width: 478px; height: 491px;" src="http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustration-rev2.png" alt="Accessing a Cloud Database" data-cke-saved-src="http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustration-rev2.png" /></p><h3 id="relatedinformation">Related Information</h3><p><a title="Connecting to Your Cloud Database" href="http://www.rackspace.com/knowledge_center/article/connecting-to-your-cloud-database">Connecting to Your Cloud Database</a></p>

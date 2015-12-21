@@ -1,0 +1,40 @@
+---
+node_id: 2038
+title: Rackspace Cloud Backup - Create a backup
+permalink: article/rackspace-cloud-backup-create-a-backup-0
+type: article
+created_date: '2012-08-22 19:00:02'
+created_by: David Hendler
+last_modified_date: '2015-08-12 17:0525'
+last_modified_by: rose.contreras
+products: Cloud Backup
+categories: Backups
+body_format: full_html
+---
+
+<! ----Rackspace Cloud Backup - Create a backup ---- />
+
+<p>The following steps show how to use the Cloud Backup service to create a backup of the data on your cloud server.</p>
+
+<p><strong>Note:</strong> You can use the Cloud Backup tool to back up your data files but not to back up a full operating system. To restore your data, you need to restore only your files; you do not need to restore all of the operating system files. To back up the operating system, create an image of your server. For more information about restoring a server from an image, see <a href="http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">Create an image of a server and restore a server from a saved image</a>.</p>
+
+
+<h2>Create a server backup</h2>
+
+<ol>
+	<li>Log in to the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>.<br /><br /></li>
+	<li>In the top navigation bar, select <strong>Backups &gt; Systems</strong>.<br />
+		<p><img src="/knowledge_center/sites/default/files/field/image/2038-1_0.png" width="138" height="132" border="1" alt=""  /></p></li>
+	<li>On the Cloud Backup Systems page, click the name of the server for which you want to create a backup.
+	<p><strong>Note:</strong> If you do not see your server listed on this page, you must install the backup agent on the server. If you have an account with the Managed Operations service level, check with your account manager to install the agent. If your account has a different service level, follow the instructions in <a href="https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent">How to Install the Agent</a>.</p></li>
+	<li>On the Configure Backup page, configure the following items and then click <strong>Next Step:</strong><br /><br />
+	<ul>
+		<li>Enter a name for the backup.<br /><br /></li>
+		<li>In the <strong>Schedule</strong> section, specify a schedule for the backup and select how many prior backup versions to retain.<br /><br /></li>
+		<li>In the <strong>Notifications</strong> section, specify the email address for notifications and select whether you want to receive notifications of successful backups.<br /><br /></li>
+	</ul></li>
+	<li>On the Select Items to Backup page, select the files and folder to back up, and then click <strong>Next Step</strong>.<br /><br /></li>
+	<li>Confirm that the backup agent is set up correctly, and then click <strong>Save</strong>.<br /><br /></li>
+</ol>
+
+<p>In the next article describes <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-information-0">how to view backup information</a>.</p>

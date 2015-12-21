@@ -1,0 +1,75 @@
+---
+node_id: 3785
+title: Rackspace Auto Scale Control Panel User Guide - Create a scaling policy
+permalink: article/rackspace-auto-scale-getting-started-guide-creating-scaling-policies
+type: article
+created_date: '2013-11-18 21:00:52'
+created_by: Rackspace Support
+last_modified_date: '2015-10-22 14:1237'
+last_modified_by: kyle.laffoon
+products: Auto Scale
+categories: Scaling and High Availability
+body_format: tinymce
+---
+
+<p>The previous section, <a href="http://rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups" target="_self" title="Creatng Scaling Groups">Create a scaling group</a>, described how to set the parameters for scaling policies through scaling group configuration. This section discusses the Auto Scale current policy options and how group configurations affect policy execution. A scaling policy determines what actions are taken on your scaling group and when they are taken. You can create scaling policies for an existing scaling group at any time by returning to the group configuration page. Typically, you will create at least two policies: one to scale up and one to scale down. You can create up to 1000 policies per group.</p>
+
+<p>There are two steps to create a scaling policy:</p>
+
+<ul>
+	<li><a href="#createpolicy">Create a scaling policy</a></li>
+	<li><a href="#testconfig">Test&nbsp; your configuration</a></li>
+</ul>
+
+<h4><a name="createpolicy"></a>Create a scaling policy</h4>
+
+<ol>
+	<li>On the Create Scaling Group page or on the details page of an existing group, click&nbsp; <strong>Create Policy</strong>.</li>
+	<li>In the dialog box that opens, enter information for the following values:
+	<ul>
+		<li><strong>Name</strong>: Specify a name for the policy, for example, <strong>Scale up by 10 on Fridays at 5p.m.</strong></li>
+		<li><strong>Scale Trigger</strong>: Select who the policy will be triggered, either by a specific schedule or a webhook. After you make this choice, fill in the schedule or webhook information according to your selection:
+		<ul>
+			<li><strong>Scheduled (repeating)</strong>: Specify how often the policy will occur and when.</li>
+			<li><strong>Scheduled (once)</strong>: Specify when the policy will occur.</li>
+			<li><strong>Scheduled (cron)</strong>: Enter a cron expression. You can click <strong>Cron Expression Helper</strong> to open a new tab to a Cron expression helper and generate a cron expression; use the tabs at the top if necessary. Then copy the expression into Auto Scale.</li>
+			<li><strong>Webhook URL</strong>: You must create and configure the webhook by using the Auto Scale API. To learn more about this, read about <a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Authenticated_Webhooks_and_Anonymous_Webhooks.html">Webhooks</a> in the <em>Auto Scale API Developer's Guide</em>.</li>
+		</ul>
+		</li>
+		<li><strong>Amount</strong>: Select <strong>Scale Up</strong> or <strong>Scale Down</strong>, enter an integer, and select <strong>Servers</strong> or <strong>Percent</strong>. If you specify <strong>Scale Up by 2 Servers</strong>, the policy will add two servers to your scaling group when the policy is triggered. If you specify <strong>Scale Up by 2 Percent</strong>, the policy will add servers to equal the equivalent of two percent of your current scaling group, whatever size it is. See <a href="https://admin.rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-concepts#Scaleupbypercentage">Scale Up by Percentage Policy</a> for a visual explanation.</li>
+		<li><strong>Cooldown Period</strong>: The policy cooldown, like the group cooldown, prevents a policy from being executed too frequently. For schedule-based policies, we advise leaving this value empty or setting it to 0 (zero). This option is available for <strong>Scheduled (cron)</strong> and <strong>Webhook URL</strong> triggers only.</li>
+	</ul>
+	</li>
+	<li>Click <strong>Create Policy</strong>.<br />
+	The dialog box closes and the scaling policy that you created is added to the list of scaling policies on the page.</li>
+</ol>
+
+<h4><a name="testconfig"></a>Test your configuration</h4>
+
+<p>After you create a scaling group and scaling policy, in addition to checking the status and animated gifs showing deployment, you can test your configuration by changing the minimum number of entities for the group and watching the new server or servers being added.</p>
+
+<h4><a name="nextsteps"></a>Next steps</h4>
+
+<p>After you have created a scaling group and policy, following are some next steps that you might take:</p>
+
+<ul>
+	<li>To learn more about Auto Scale, read the <a href="/knowledge_center/article/rackspace-autoscale-faq">Rackspace Auto Scale FAQ</a>, <a href="/knowledge_center/article/rackspace-auto-scale-glossary#GroupCooldown">Rackspace Auto Scale Glossary</a>, and <a href="/knowledge_center/article/rackspace-auto-scale-overview-0">Rackspace Auto Scale Overview</a>.<br />
+	&nbsp;</li>
+	<li>To learn about the Auto Scale API, see the <a href="http://docs.autoscale.apiary.io/">Rackspace Auto Scale Developer Guide</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+<h4>User Guide sections</h4>
+
+<ul>
+	<li><a href="http://rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-introduction" target="_self" title="Introduction">Rackspace Auto Scale Control Panel User Guide - Introduction</a></li>
+	<li><a href="http://rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-concepts" target="_self" title="Concepts">Rackspace Auto Scale Control Panel User Guide - Concepts</a></li>
+	<li><a href="http://rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups" target="_self" title="Creating Scaling Groups">Rackspace Auto Scale Control Panel User Guide - Create a scaling group</a></li>
+	<li><a href="https://www.rackspace.com/knowledge_center/article/create-auto-scale-scaling-policies-in-the-control-panel" target="_self" title="Crating Scaling Policies">Rackspace Auto Scale Control Panel User Guide - Create a scaling policy</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

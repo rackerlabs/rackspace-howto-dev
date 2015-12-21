@@ -1,0 +1,83 @@
+---
+node_id: 662
+title: How to remap database users in myLittleAdmin
+permalink: article/how-to-remap-database-users-in-mylittleadmin
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2011-11-07 15:5709'
+last_modified_by: jered.heeschen
+products: Cloud Sites
+categories: MSSQL
+body_format: tinymce
+---
+
+<table id="toc" class="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+				<div id="toctitle">
+					<h2>
+						Contents
+					</h2>
+				</div>
+				<ul>
+					<li class="toclevel-1">
+						<a href="#MSSQL_Security"><span class="tocnumber">1</span> <span class="toctext">MSSQL Security</span></a>
+					</li>
+					<li class="toclevel-1">
+						<a href="#Remapping_MSSQL_Users"><span class="tocnumber">2</span> <span class="toctext">Remapping MSSQL Users</span></a><ul>
+							<li class="toclevel-2">
+								<a href="#Remapping_Database_Users_to_Logins"><span class="tocnumber">2.1</span>&#160;<span class="toctext">Remapping Database Users to Logins</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	<a name="MSSQL_Security" id="MSSQL_Security"></a>
+<h2>
+	<span class="mw-headline">MSSQL Security</span>
+</h2>
+<p>
+	MSSQL has two logical layers of security. The term <strong>login</strong> refers to the account at the server level. The term <strong>user</strong> refers to the account that lives inside the database. When you restore a database from one server to another server you effectively sever the mapping between the server-level login and the database-level users.
+</p>
+<p>
+	All databases have a single owner that is assigned to a server-level login. That special owner login is mapped to the a special database user called <strong>dbo</strong>. The owner login account and password is the primary administrative account for your database.
+</p>
+<p>
+	You may need to reestablish the mappings between the server-level logins and the database users in order for the new database to be accessible.
+</p>
+<p>
+	Your new server-level logins are found in your Rackspace Cloud control panel under your MSSQL 2008 Database.
+</p>
+	<a name="Remapping_MSSQL_Users" id="Remapping_MSSQL_Users"></a>
+<h2>
+	<span class="mw-headline">Remapping MSSQL Users</span>
+</h2>
+<p>
+	To manage your MSSQL database, you'll first need to <a href="/knowledge_center/index.php/Working_with_a_MSSQL_database" title="Working with a MSSQL database">login to the online manager (myLittleAdmin)</a>.</p>
+	<a name="Remapping_Database_Users_to_Logins" id="Remapping_Database_Users_to_Logins"></a>
+<h3>
+	<span class="mw-headline">Remapping Database Users to Logins</span>
+</h3>
+<p>
+	For additional login to user mappings that are not the special owner account you can use the following command:</p><pre>ALTER USER [123456_olduser] WITH LOGIN = [123456_newlogin]
+</pre>
+<ol>
+	<li>Click <strong>Tools</strong> then <strong>New Query</strong>
+	</li>
+	<li>Please type in the following command to reassign ownership to the new login you created in the control panel (the brackets are required). Please remember to replace your database name and login name:
+<pre>ALTER AUTHORIZATION
+ON Database::[123456_database]
+TO [123456_login]
+</pre>
+		<p>
+			<img src="http://c0476992.cdn.cloudfiles.rackspacecloud.com/mssql2.jpg" alt="mssql2.jpg" />
+		</p>
+	</li>
+	<li>Verify the command worked by going to your database and viewing the properties. The login should now be listed as the new owner
+	</li>
+</ol>

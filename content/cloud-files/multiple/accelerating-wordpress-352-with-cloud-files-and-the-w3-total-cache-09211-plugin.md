@@ -3,13 +3,12 @@ node_id: 1464
 title: 'Accelerating WordPress with Cloud Files, CDN, and the W3 Total Cache Plugin'
 permalink: article/accelerating-wordpress-352-with-cloud-files-and-the-w3-total-cache-09211-plugin
 type: article
-created_date: '2012-07-15 20:51:38'
+created_date: '2012-07-16 01:51:38'
 created_by: RackKCAdmin
-last_modified: '2015-11-12 12:0900'
+last_modified_date: '2015-11-12 18:0900'
 last_modified_by: Nate.Archer
 products: Cloud Files
 categories: 'Content Management Systems,Performance'
-tags: wordpress
 body_format: markdown_w_tinymce
 ---
 

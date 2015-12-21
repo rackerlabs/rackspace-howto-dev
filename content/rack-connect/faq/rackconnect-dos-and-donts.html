@@ -1,0 +1,95 @@
+---
+node_id: 2053
+title: RackConnect v2.0 Best Practices
+permalink: article/rackconnect-dos-and-donts
+type: article
+created_date: '2012-08-23 17:35:12'
+created_by: juan.perez
+last_modified_date: '2015-09-04 17:2031'
+last_modified_by: constanze.kratel
+products: RackConnect
+categories: FAQ
+body_format: tinymce
+---
+
+<p><strong>APPLIES TO</strong>: RackConnect v2.0</p>
+
+<p>This document outlines <a href="#recommendations">recommendations</a> and <a href="#cautions">cautions</a> based on customer feedback with RackConnect.</p>
+
+<h3><a name="recommendations"></a>Recommendations</h3>
+
+<h4>Use RackConnect Network Policies to make changes to network access for your Cloud Servers</h4>
+
+<p>When you need to open ports to or from your Cloud Server, or you need to make changes to the software firewall, you&nbsp;<em>must</em> use the RackConnect Network Policies section of the <a href="https://my.rackspace.com/">MyRackspace&nbsp;</a>Portal to make the changes.&nbsp; If you use the Firewall Control Panel, the RackConnect automation that services your installation could fail, a conflict in your Network Policies might arise, and your rules will be removed when there are updates to the system.&nbsp; A note on terminology: "software firewall" refers to IPTables in Linux and Windows Firewall in Windows.</p>
+
+<p><strong>Note:</strong> The term <em>software firewall</em> refers to iptables in Linux, and Windows Firewall in Windows.</p>
+
+<h4>Monitor your Cloud Server status during a rebuild</h4>
+
+<p>If you rebuild a server, you can monitor its automation status in the RackConnect Management Interface in the <a href="https://my.rackspace.com/">MyRackspace </a>Portal or you can use the <a href="http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers">API to monitor the automation status</a>.</p>
+
+<h4><strong>Understand how your servers use RackConnect</strong></h4>
+
+<p>In order to understand how RackConnect transfers data to your Cloud Server, please read the following description of the process.</p>
+
+<ul>
+	<li>The traffic flow is between the eth0 / public interfaces (Private IP) on your Dedicated servers to the eth1 / private interfaces (Private IP) on your Cloud Servers.</li>
+	<li>The gateway for the Cloud Servers is configured on your Dedicated Firewall or Load Balancer.</li>
+	<li>Traffic speed is generally limited by the slowest network in your environment. A Dedicated Firewall or Load Balancer with a slower (less than 1GB) network interface will limit speeds, and Dedicated servers (currently on a 1GB network) won't be able to take direct advantage of the higher network speed for our General Purpose&nbsp;and work-optimized Cloud Servers (currently on a 10GB network).</li>
+	<li>The <strong>eth0 / public interface is disabled</strong> on your Cloud Servers and ALL traffic must flow from the eth1 / private interface through your Dedicated Firewall or Load Balancer.</li>
+</ul>
+
+<p>Traffic flow between Dedicated and Cloud Servers: RackConnect Firewall</p>
+
+<p><img alt="" class="image-full_width" src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.png" title="" /><br />
+&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;Traffic Flow between Dedicated and Cloud Servers: RackConnect Load Balancer</p>
+
+<p><img alt="" class="image-full_width" src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.LB_.png" title="" /><br />
+&nbsp;</p>
+
+<hr />
+<h3><a name="cautions"></a>Cautions</h3>
+
+<h4>Do not change your root/administrator password before your Cloud Server is deployed</h4>
+
+<p>For several minutes after your Cloud Server is built, automation scripts use the root/administrator password to establish a service account.&nbsp; The service account is used to configure the server for RackConnect as well as implement updates to the server in the future.&nbsp; If the password is changed before the service account can be created, the automation fails.&nbsp; You may change the root/administrator password after your Cloud Server is deployed.&nbsp; You know it is deployed when the Server's status shows a green circle in the&nbsp;<a href="https://my.rackspace.com/">MyRackspace&nbsp;</a>Portal under <strong>Network</strong> -&gt; <strong>RackConnect</strong> -&gt; &lt;<strong>yourCloudAccount</strong>&gt; -&gt; <strong>&lt;yourCloudServer&gt;</strong> (<em>not</em> under the Cloud Server tab).</p>
+
+<h4>Do not delete or modify the "rackconnect" user</h4>
+
+<p>When RackConnect is implemented on your Cloud Servers, a user account named "rackconnect" is created with administrator rights.&nbsp; Automation scripts depend on this user and without it, the scripts fail.&nbsp; If this user is deleted, it must be re-created.</p>
+
+<p><em>Linux users:</em>&nbsp;If you modify the /etc/sudoers file, be sure to keep all references to the "rackconnect" user unchanged.&nbsp; If you change the login authentication method from password authentication to key based authentication, be sure to still allow password authentication for the "rackconnect" user.</p>
+
+<p><em>Windows users:</em>&nbsp;The user needs to be in the Administrators group.&nbsp; If you update your server to be a domain controller, be sure to create a ticket and inform the RackConnect team about this change.&nbsp; You must manually create a “rackconnect” user account on the domain and add the account to the “Domain Admins” global group.&nbsp; The RackConnect team will add “DOMAIN\rackconnect” account to the RackConnect system instead of “rackconnect” to get RackConnect to work with your server.</p>
+
+<h4>Do not prevent the root user from logging in using Password Authentication via SSH before the completion of the initial RackConnect process</h4>
+
+<p>RackConnect does not support key-based authentication, so password authentication must be allowed for the root user during the RackConnect automation process.<br />
+<br />
+The PermitRootLogin entry must be set to YES in the sshd config file during the initial process of connecting your Linux Cloud Servers through RackConnect. After the "rackconnect" user has been added to the server, and your server is properly deployed with RackConnect, SSH access by the root user can be disabled because RackConnect uses the "rackconnect" user from that point forward.</p>
+
+<h4>Do not modify the standard port used by SSH (Port 22)</h4>
+
+<p>If you modify the port number, RackConnect automation breaks. Rackspace does not have the ability to support non-standard SSH ports at this time.</p>
+
+<h4>Do not mount an NFS on a dedicated hosted system before completion of the initial RackConnect process</h4>
+
+<p>The RackConnect initial process gives the cloud server access to the dedicated network, so mounting a network file share before the process is complete causes the process to fail.</p>
+
+<h4><strong>Do not use overly complicated network configurations with RackConnect Cloud Servers</strong></h4>
+
+<p>Complex networking configurations, such as bridged interfaces, will likely break RackConnect automation.</p>
+
+<h4><strong>Do not enable SELinux on RackConnect Cloud Servers</strong></h4>
+
+<p>Rackspace does not currently support Security-Enhanced Linux (SELinux). If it is enabled, disable it or set it to Permissive mode.</p>
+
+<h4>Do not remove any basic system utilities like sed, awk, or ip from Linux Cloud Servers</h4>
+
+<p>Removing basic system utilities such as sed, awk, or ip can break the RackConnect automation process.</p>
+
+<p><span>&nbsp;</span></p>

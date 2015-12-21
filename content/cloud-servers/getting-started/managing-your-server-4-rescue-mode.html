@@ -1,0 +1,127 @@
+---
+node_id: 1358
+title: Managing Your Server - Rescue Mode
+permalink: article/managing-your-server-4-rescue-mode
+type: article
+created_date: '2012-03-27 18:42:06'
+created_by: RackKCAdmin
+last_modified_date: '2015-11-12 19:2748'
+last_modified_by: stephanie.fillmon
+products: Cloud Servers
+categories: Getting Started
+body_format: tinymce
+---
+
+<p>If your Linux system has become non-bootable or is suffering from critical system errors, you can use&nbsp;<strong>Rescue Mode</strong>&nbsp;to recover your system data. These problems may be caused by file system corruption, boot file corruption, or other configuration errors. Normally, if your system encounters any problem during the boot process, you would boot in to a maintenance mode environment known as Single User Mode that would allow you to login with your root password and check for any errors. Unfortunately, using Single User Mode has its share of problems:</p>
+
+<ul>
+	<li><strong>Your system is read-only and you cannot make corrective changes.</strong></li>
+	<li>Most services such as networking are disabled. This would prevent you from copying your data to another server.</li>
+	<li>You would have to access your server using the Console, which is slower than using a traditional SSH login.</li>
+</ul>
+
+<p>To avoid having to use Single User Mode, you can bring your server up in&nbsp;<strong>Rescue Mode</strong>&nbsp;through the Rackspace Cloud Control Panel.</p>
+
+<h2>Contents</h2>
+
+<ul>
+	<li><a href="#What_is_Rescue_mode">What is Rescue mode?</a></li>
+	<li><a href="#Getting_your_server_into_Rescue_mode">Getting your server into Rescue mode</a></li>
+	<li><a href="#Connecting_to_your_server_in_Rescue_Mode">Connecting to your server in Rescue Mode</a></li>
+	<li><a href="#Troubleshooting_your_server_in_Rescue_Mode">Troubleshooting your server in Rescue Mode</a></li>
+	<li><a href="#Exiting_Rescue_Mode">Exiting Rescue Mode</a></li>
+</ul>
+
+<h4><a id="What_is_Rescue_mode" name="What_is_Rescue_mode"></a><strong>What is Rescue mode?</strong></h4>
+
+<p>Rescue mode grants the root user full access to your non-bootable server’s filesystem. You can use it to modify problems in configuration files or to copy data from your Cloud Server to a remote location. Rescue Mode through the Rackspace Cloud Control Panel is similar to booting into single-user mode with networking enabled.</p>
+
+<p><a id="Getting_your_server_into_Rescue_mode" name="Getting_your_server_into_Rescue_mode"></a><strong>Getting your server into Rescue mode</strong></p>
+
+<ol>
+	<li>Log in to the&nbsp;<a href="https://mycloud.rackspace.com/" target="_blank">Cloud Control Panel</a>, and click&nbsp;<strong>Servers</strong>.</li>
+	<li>From your list of servers, click the Actions cog next to the server that you want to bring up in Rescue Mode and select&nbsp;<strong>Enter Rescue Mode&nbsp;</strong>from the drop-down menu.
+	<p><img alt="" border="2" height="280" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Enter%20Rescue%20Mode%20in%20Action%20Cog.png" title="" width="203" /></p>
+	</li>
+	<li>Read the text in the Rescue Mode pop-over and then click&nbsp;<strong>Enter Rescue Mode</strong>.
+	<p><img alt="" border="2" height="237" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Enter%20Rescue%20Mode.png" title="" width="410" /></p>
+	</li>
+	<li>The temporary password is displayed. Copy the password to a safe location since you won't be able to see it again after closing this message.
+	<p><img alt="" border="2" height="207" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Rescue%20Mode%20Temporary%20Password_2.png" title="" width="382" /></p>
+	</li>
+	<li>After copying the temporary password click&nbsp;<strong>Dismiss Password</strong>.</li>
+</ol>
+
+<p>The server will start to enter Rescue Mode and display an orange status field next to the server name. The initial status should be&nbsp;<strong>Preparing Rescue</strong>.</p>
+
+<p><img alt="" border="2" height="251" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Preparing%20Rescue%20Mode.png" title="" width="388" /></p>
+
+<p>When the Rescue Mode build is complete, the status will turn red and display&nbsp;<strong>Rescue</strong>.</p>
+
+<p><img alt="" border="2" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/server_in_rescue.png" title="" width="600" /></p>
+
+<p>Notice that the rescue environment is limited to 24 hours. This means that you will have one day to correct the problems on your server before it automatically reverts to its original state.</p>
+
+<h4><a id="Connecting_to_your_server_in_Rescue_Mode" name="Connecting_to_your_server_in_Rescue_Mode"></a>Connecting to your server in Rescue Mode</h4>
+
+<p>You can now use an SSH client to connect to your server using the public IP address and the temporary root password to login to Rescue Mode.</p>
+
+<p><img alt="RootAtRescue.png" border="2" src="http://c579335.r35.cf2.rackcdn.com/RootAtRescue.png" width="600" /></p>
+
+<h4><a id="Troubleshooting_your_server_in_Rescue_Mode" name="Troubleshooting_your_server_in_Rescue_Mode"></a>Troubleshooting your server in Rescue Mode</h4>
+
+<p>Before you can access the files on your server you'll need to mount the server's file system. To do that you'll need to look at your partitions to determine your file system's device.&nbsp;<strong>NOTE: If you plan on using fsck on this filesystem, DO NOT MOUNT the fiesystem.</strong></p>
+
+<p>After you've logged into your server in Rescue Mode, run the command:</p>
+
+<pre>
+<code>fdisk -l</code>
+</pre>
+
+<p>You'll get output that looks similar to what is below:</p>
+
+<p><img alt="fdisk.png" border="2" src="http://c579335.r35.cf2.rackcdn.com/fdisk.png" width="600" /></p>
+
+<p>Look at the different disk names that are found. A disk entry looks like:</p>
+
+<pre>
+<code>Disk /dev/sdb1: 2147 MB</code>
+</pre>
+
+<p>This shows us the device and the size of the disk. Here is a description of the different disks in the screenshot:</p>
+
+<ol>
+	<li>The first block, the one with the size of about 2GB, is the rescue mode filesystem.</li>
+	<li>The second block, the one in the screenshot with a size of 10.2GB, is the server's file system. Its size will be different depending on the size of your server.</li>
+	<li>The third block will be your swap space.</li>
+</ol>
+
+<p>Once you've identified the block for your server's file system check out the&nbsp;part after "<em>Disk</em>" that looks like a file path. In the example above, the device is:</p>
+
+<pre>
+<code>/dev/sda1</code>
+</pre>
+
+<p>It can be different depending on the distribution image used to build your server. &nbsp;Now that you know your file system's device you can assign it a directory and mount it for access. Plug your file system device into the following command in place of "/dev/diskdevice":</p>
+
+<pre>
+<code>mount /dev/diskdevice /mnt</code>
+</pre>
+
+<p>For example, for /dev/sda1 the command would be:</p>
+
+<p><code>mount /dev/sda1 /mnt</code></p>
+
+<p>Now you can access your files through the "/mnt" directory. Just remember that you'll need to put "/mnt" in front of the usual paths you'd use to get to files. For example, if you have a problem in the /etc/fstab file you need to fix, you'd actually access that file at:</p>
+
+<pre>
+<code>/mnt/etc/fstab</code>
+</pre>
+
+<p>If you were to just edit "/etc/fstab" while in rescue mode you'd change the fstab for the rescue mode file system, not your normal file system.</p>
+
+<h4><a id="Exiting_Rescue_Mode" name="Exiting_Rescue_Mode"></a><strong>Exiting Rescue Mode</strong></h4>
+
+<p>After you are done troubleshooting your system, you can exit Rescue Mode by clicking the button labeled&nbsp;<strong>Exit Rescue Mode</strong>&nbsp;in the Rackspace Cloud Control Panel on your Server Details page.</p>
+
+<p>Now that we've seen different ways to connect to a Linux Cloud Server, we're going to cover some important security concepts for keeping them safe, starting with a discussion about&nbsp;<a href="http://www.rackspace.com/knowledge_center/checking-ssh-host-fingerprint-with-the-web-console">Host Key Fingerprints</a>.</p>

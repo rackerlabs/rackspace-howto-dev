@@ -1,0 +1,150 @@
+---
+node_id: 3649
+title: Available checks for Rackspace Monitoring
+permalink: article/control-panel-monitoring-what-do-the-options-do
+type: article
+created_date: '2013-08-19 19:40:45'
+created_by: Jim Culbreath
+last_modified_date: '2015-12-18 03:5224'
+last_modified_by: constanze.kratel
+products: Cloud Monitoring
+categories: Monitoring and Troubleshooting
+body_format: tinymce
+---
+
+<p>In the Cloud Control Panel, you can choose to set monitoring checks on your servers. This article explains each check and the options that you can set for them. For information about setting up one of these monitoring checks, see&nbsp;<a href="https://admin.rackspace.com/knowledge_center/article/creating-a-monitoring-check-using-the-cloud-control-panel">Create a monitoring check using the Cloud Control Panel</a>.</p>
+
+<p><span>For API check definitions, see the Rackspace Monitoring Developer's guide </span><a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/check-type-reference">Available Check Types and Fields.</a><span>&nbsp;</span></p>
+
+<p>Monitoring checks and alarms are located in the Cloud Servers section of the control panel.</p>
+
+<ul>
+	<li>You can create a check by clicking the gear icon next to your individual server name and selecting <strong>Create Check</strong>.</li>
+	<li>To edit a check, click on the server name and scroll to the <strong>Monitoring Checks</strong> section of the server details page. From there, you can click a check name and make changes to it.</li>
+</ul>
+
+<h2>Available monitoring checks</h2>
+
+<p>The following table lists each check that you can create for your server, the options that you can set when you create the check, and the options that you can edit for an existing check.</p>
+
+<table border="1" cellpadding="1" cellspacing="1" height="636" width="902">
+	<thead>
+		<tr>
+			<th scope="col">Check type</th>
+			<th scope="col">Creation options</th>
+			<th scope="col">Editing options</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>HTTP</td>
+			<td>
+			<p>Set the URL and specific body context with regular expressions allowed.</p>
+			Click <strong>Advanced Options</strong> to open a <strong>Body Match</strong> text box in which you can provide more syntax.</td>
+			<td>
+			<ul>
+				<li><strong>Target</strong>:&nbsp;Specify the server IP address or a specified host name.</li>
+				<li><strong>Details</strong>: Specify the exact URL and body content to use. Regular expressions are allowed.</li>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out, as well as which regions the check uses.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click&nbsp;<strong>Create Alarm</strong> to add an alarm</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>TCP</td>
+			<td>
+			<p>Set the port that you want to monitor for connectivity. Provide the following information:</p>
+
+			<ul>
+				<li>Port number</li>
+				<li>Target IP address or target host name</li>
+			</ul>
+			</td>
+			<td>
+			<ul>
+				<li><strong>Target</strong>: Specify the server IP address or a specified host name.</li>
+				<li><strong>Details</strong>: Specify the port to be monitored.</li>
+				<li><strong>Parameters</strong>: Set ho often the check will run and when it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Ala</strong>rm to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Ping</td>
+			<td>Select a name and select the target type as IP address or host name.</td>
+			<td>
+			<ul>
+				<li><strong>Details</strong>: Set the packet count and the number of packets that are sent at one time.</li>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out, as well as which regions the check will use.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Memory</td>
+			<td>There are no special settings when creating a memory check.</td>
+			<td>
+			<ul>
+				<li><strong>Parameters</strong>: Set how often the check will run and whei it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>CPU</td>
+			<td>There are no special settings with creating a CPU check.</td>
+			<td>
+			<ul>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Load Average</td>
+			<td>There are no special settings when creating a load balancer check.</td>
+			<td>
+			<ul>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Filesystem</td>
+			<td>Specify the disk for which you want to monitor space.</td>
+			<td>
+			<ul>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Network</td>
+			<td>
+			<ul>
+				<li>Select which network interface to use (typically eth0 or eth1).</li>
+				<li>Set the receive rate alert for warning and critical states.</li>
+				<li>Set the transmit rate alert for warning and critical states. (For more information, see <a href="https://www.rackspace.com/knowledge_center/article/rackspace-cloud-monitoring-checks-and-alarms">Rackspace Monitoring Checks and Alarms</a>.)</li>
+			</ul>
+			</td>
+			<td>
+			<ul>
+				<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+				<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2>Data graphs for monitoring<strong><strong> </strong></strong></h2>
+
+<p>&nbsp;</p>
+
+<p>You can view graphical information about resource use on the server details page. In the <strong>Monitoring Data</strong> section of the page, you can view historical check data. This viewing option is available for all checks and does not require the monitoring agent to be installed. Use the drop-down menu under <strong>Monitoring Data</strong> to select the monitoring check you want to view.</p>
+
+<p><img alt="" height="317" src="/knowledge_center/sites/default/files/field/image/Monitoring-Data.png" width="742" /></p>

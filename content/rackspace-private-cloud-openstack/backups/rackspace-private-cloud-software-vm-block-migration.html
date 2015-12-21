@@ -1,0 +1,122 @@
+---
+node_id: 3173
+title: Rackspace Private Cloud Software - VM Block Migration
+permalink: article/rackspace-private-cloud-software-vm-block-migration
+type: article
+created_date: '2012-11-05 18:03:20'
+created_by: Karin Levenstein
+last_modified_date: '2012-11-15 06:5805'
+last_modified_by: jered.heeschen
+products: Rackspace Private Cloud - OpenStack
+categories: Backups
+body_format: tinymce
+---
+
+<h2><a name="overview"></a>Overview</h2><p>Rackspace Private Cloud Software installs a collection of Chef cookbooks that deploy and manage the suite of OpenStack core projects: Compute (Nova), Image Service (Glance), Dashboard (Horizon), Identity (Keystone), and Block Storage (Cinder). OpenStack Object Storage (Swift) is installed separately, as described in this document.</p><p>Rackspace Private Cloud Software v 2.0 (Alamo) supports the <a class="link" href="http://www.openstack.org/software/essex/" target="_top">Folsom release of OpenStack</a> for these components.</p><h3><a name="overview-audience"></a>Intended Audience</h3><p>This guide is intended for users who have used Rackspace Private Cloud Software to deploy an OpenStack-powered cloud that has been tested and optimized by the OpenStack experts at Rackspace. This document discusses the migration of virtual machine (VM) guests from one compute node to another.</p><p>To use the product and this document, you should have prior knowledge of OpenStack and cloud computing, basic Linux administration skills, and a side of bacon.</p><h3><a name="overview-dochistory"></a>Document Change History</h3><p>This version of the Rackspace Private Cloud Cookbook Update Guide replaces and obsoletes all previous versions. The most recent changes are described in the table below:</p><table id="d5e39" rules="all"><thead><tr><td align="center">Revision Date</td><td colspan="4" align="center">Summary of Changes</td></tr></thead><tbody><tr><td align="center">November 15, 2012</td><td colspan="4"><ul><li>Rackspace Private Cloud Software v 2.0 release</li></ul></td></tr></tbody></table><h3><a name="overview-resources"></a>Additional Resources</h3><ul><li><a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">Rackspace Private Cloud Knowledge Center</a></li><li><a class="link" href="http://docs.openstack.org" target="_top">OpenStack Manuals</a></li><li><a class="link" href="http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html" target="_top">OpenStack Documentation: Configuring Live Migrations</a></li></ul><h2><a name="migration-concepts"></a>OpenStack Compute Migration Concepts</h2><p>In virtual machine migration, a VM (also known as a guest) that is running on one OpenStack Compute (Nova) compute node is moved to another compute node, with minimum downtime for the guest. In other words, the guest is migrated while still running. This can be useful when you need to apply patches or perform maintenance on the physical node or when you want to redistribute guest machine load across a cluster of nova compute nodes.&nbsp;</p><p>The guest components that are migrated include the current memory pages and disk state, and the host components include the network rules and IP addresses that allow access to and from the guest. There are two different modes of guest migration, <a class="link" title="Live Migrations" href="#migration-live">live migration</a> and <a class="link" title="Block Migrations" href="#migration-block">block migration</a>.&nbsp; Both types of migration must be performed by an admin user.</p><div class="section" title="Live Migrations"><h3><a name="migration-live"></a>Live Migrations</h3><p>For a live migration to be successful, your configuration must meet the following prerequisites:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li>The guest machine images are stored on shared storage that is accessible to all compute nodes in the compute cluster.</li><li>The shared storage is running some kind of distributed filesystem, like NFS.</li><li>The shared storage is mounted in the same place on each of the compute hosts. The default value of this path can be found in <code>flags.instances_path</code> in <code>nova.compute.manager</code>.</li><li>The libvirt configuration is modified so that libvirt is listening for connections on the network.</li></ul><p>Optionally, some flags can be set in <code>nova.conf</code> to control the behavior of the live migration.</p><p>If these prerequisites are met, the guest images are actually stored on shared storage. This means that during a live migration, the actual guest image stays where it is in the storage system. First, the guest is briefly paused while its memory is copied over to the destination node, and the MySQL database is updated to show that the guest is in <code>migration</code> status. If the memory copy is successful, the source node removes any traces of the guest, including any network rules and IPs that were associated with the guest. Finally, the destination node adds the relevant network details, unpauses the guest, and updates the database to show that the migration is complete.</p><h3><a name="migration-block"></a>Block Migrations</h3><p>Block migrations are useful when you don't have, and don't want the management overhead of, shared storage to place your guest images on.&nbsp; The stages of the migration are similar to those of the live migration, with the additional step of copying the guest disk image over the network from the source node to the destination node.&nbsp; This does mean that the migration takes a little longer, but achieves a similar result in that the guest is fully migrated from one node to another.</p><h2><a name="migration-alamo"></a>Rackspace Private Cloud Block Migration</h2><p>By default, shared storage is not configured in an Rackspace Private Cloud (Alamo) install, so your guest migration will use the block migration feature instead.&nbsp; This section describes a sample block migration. In this example, we have a 2-node nova compute cluster, with compute hosts called <code>compute1</code> and <code>compute2</code>. All actions are performed with <code>root</code> access.</p><h3><a name="migration-howto"></a>Migration Example</h3><p>First, get a list of the VM guests:</p><pre>$ <code>nova list</code>
+<code class="computeroutput">+-------------------------+----------+--------+-------------------+
+|          ID             |   Name   | Status |      Networks     |
++-------------------------+----------+--------+-------------------+
+| 89a5e582-[id_truncated] | myserver | ACTIVE | public=172.31.0.7 |
++-------------------------+----------+--------+-------------------+</code>
+</pre><p>We will be migrating the guest <code>myserver</code>. View the details of the guest:</p><pre>$ <code>nova show myserver</code>
+<code class="computeroutput">+-------------------------------------+--------------------------------------+
+|               Property              |                 Value                |
++-------------------------------------+--------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                               |
+| OS-EXT-SRV-ATTR:host                | compute1                             |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | None                                 |
+| OS-EXT-SRV-ATTR:instance_name       | instance-00000013                    |
+| OS-EXT-STS:power_state              | 1                                    |
+| OS-EXT-STS:task_state               | None                                 |
+| OS-EXT-STS:vm_state                 | active                               |
+| accessIPv4                          |                                      |
+| accessIPv6                          |                                      |
+| config_drive                        |                                      |
+| created                             | 2012-08-30T11:27:22Z                 |
+| flavor                              | m1.tiny                              |
+| hostId                              | cc42c70[id_truncated]                |
+| id                                  | 89a5e582-d3f3-4665-afc2-03c2114f0bbb |
+| image                               | cirros-image                         |
+| key_name                            |                                      |
+| metadata                            | {}                                   |
+| name                                | myserver                             |
+| progress                            | 0                                    |
+| public network                      | 172.31.0.7                           |
+| status                              | ACTIVE                               |
+| tenant_id                           | 502c4cc57e6240438eb9b0bd2041701f     |
+| updated                             | 2012-08-30T11:27:27Z                 |
+| user_id                             | 03332d7fa8db4006aed4526fb--5a6d8e8   |
++-------------------------------------+--------------------------------------+</code>
+</pre><p>This information shows us that the guest is running on the <code>compute1</code> host, and its internal instance name is <code>instance-00000013</code>.</p><p>We can also log on to <code>compute1</code> and can locate the guest files in the nova instances directory:</p><pre>$ <code>ls -al /var/lib/nova/instances/instance-00000013/</code>
+<code class="computeroutput">total 33492
+drwxrwxr-x 2 nova         nova     4096 Aug 30 07:27 .
+drwxr-xr-x 4 nova         nova     4096 Aug 30 07:27 ..
+-rw-rw---- 1 libvirt-qemu kvm     16134 Aug 30 07:30 console.log
+-rw-r--r-- 1 libvirt-qemu kvm  31457280 Aug 30 07:31 disk
+-rw-rw-r-- 1 libvirt-qemu kvm   4731440 Aug 30 07:27 kernel
+-rw-rw-r-- 1 nova         nova     1650 Aug 30 07:27 libvirt.xml
+-rw-rw-r-- 1 libvirt-qemu kvm   2254249 Aug 30 07:27 ramdisk</code>
+</pre><p>We can also log in to the guest. In this example, it has a cirros image installed:</p><pre>$ <code>ssh cirros@172.31.0.7</code>
+<code class="computeroutput">cirros@172.31.0.7's password:</code>
+$ <code>pwd</code>
+<code class="computeroutput">/home/cirros</code>
+</pre><p>Before we migrate the guest, verify that the destination node has enough resources to receive our guest:</p><pre>$ <code>nova-manage service describe_resource compute2</code>
+<code class="computeroutput">HOST                              PROJECT     cpu mem(mb)     hdd
+compute2        (total)                         2    2003      17
+compute2        (used_now)                      0     330       1
+compute2        (used_max)                      0       0       0</code>
+</pre><p>Note that some debug output from the <code>nova-manage</code> command has been omitted. Debug mode is enabled by default in an Alamo install with the <code>verbose=true</code> flag in <code>/etc/nova/nova.conf</code>.</p><p>Now that source location of the guest and the available space on the destination node have been verified, we can actually perform the block migration with the <code>nova live-migration</code> command:</p><pre>$ <code>nova live-migration --block_migrate 89a5e582-d3f3-4665-afc2-03c2114f0bbb compute2</code>
+</pre><p>When the command is executed, nothing appears to happen, but if you're quick enough you can use <code>nova list</code> to see the guest placed in <code class="computeroutput">MIGRATING</code> status:</p><pre>$ <code>nova list</code>
+<code class="computeroutput">+-------------------------+----------+-----------+-------------------+
+|           ID            |   Name   |   Status  |      Networks     |
++-------------------------+----------+-----------+-------------------+
+| 89a5e582-[id_truncated] | myserver | MIGRATING | public=172.31.0.7 |
++-------------------------+----------+-----------+-------------------+</code>
+</pre><p>A few seconds later (or more, depending on the size of the guest VM), <code>nova list</code> will show that the guest is now active again:</p><pre>$ <code>nova list</code>
+<code class="computeroutput">+-------------------------+----------+--------+-------------------+
+|           ID            |   Name   | Status |      Networks     |
++-------------------------+----------+--------+-------------------+
+| 89a5e582-[id_truncated] | myserver | ACTIVE | public=172.31.0.7 |
++-------------------------+----------+--------+-------------------+</code>
+</pre><p>We can verify that it is running on the expected node, <code>compute2</code>:</p><pre>$ <code>nova show myserver | grep 'OS-EXT-SRV-ATTR:host'</code>
+<code class="computeroutput">| OS-EXT-SRV-ATTR:host    | compute2     |</code>
+</pre><p>We can also verify that it is no longer located on <code>compute1</code> by logging into that node and trying to list the instance directory:</p><pre>$ <code>ls -al /var/lib/nova/instances/instance-00000013/</code>
+<code class="computeroutput">ls: cannot access /var/lib/nova/instances/instance-00000013/: No such file or directory</code>
+</pre><p>When we log onto <code>compute2</code> and list the instance directory, the instance files appear:</p><pre>$ <code>ls -al /var/lib/nova/instances/instance-00000013/</code>
+<code class="computeroutput">total 33476
+drwxrwxr-x 2 nova         nova     4096 Aug 30 08:01 .
+drwxr-xr-x 4 nova         nova     4096 Aug 30 08:01 ..
+-rw------- 1 libvirt-qemu kvm         0 Aug 30 08:01 console.log
+-rw-r--r-- 1 libvirt-qemu kvm  31457280 Aug 30 08:02 disk
+-rw-rw-r-- 1 libvirt-qemu kvm   4731440 Aug 30 08:01 kernel
+-rw-rw-r-- 1 nova         nova     1650 Aug 30 08:01 libvirt.xml
+-rw-rw-r-- 1 libvirt-qemu kvm   2254249 Aug 30 08:01 ramdisk</code>
+</pre><p>Finally, we can log into the guest normally:</p><pre>$<code>~# ssh cirros@172.31.0.7</code>
+<code class="computeroutput">cirros@172.31.0.7's password:</code>
+$ <code>pwd</code>
+<code class="computeroutput">/home/cirros</code>
+$ <code>uptime</code>
+ <code class="computeroutput">06:06:48 up 17 min, load average: 0.00, 0.00, 0.00</code>
+</pre><p>Note the uptime shows 17 minutes, which in this example is the total time since the initial creation of the guest. This is because migrations, whether tagged as live or block migrations, do not shutdown or reboot the virtual machine: they simply freeze it in a running state while the necessary files are copied over the network, and then unfreeze it at the other end of the migration process.</p><div class="section" title="Troubleshooting a Migration"><h3><a name="migration-troubleshooting"></a>Troubleshooting a Migration</h3><p>Sometimes when attempting a migration, you will encounter an error from the nova client, similar to the following :</p><pre>$ <code>nova live-migration --block_migrate 89a5e582-d3f3-4665-afc2-03c2114f0bbb compute2</code>
+<code class="computeroutput">ERROR: Live migration of instance 89a5e582-d3f3-4665-afc2-03c2114f0bbb to host compute2 failed (HTTP 400)</code>
+</pre><p>This error indicates that the migration failed, but not why it failed. For that, we can go and look in the nova-scheduler log (<code>/var/log/nova/nova-scheduler.log</code>)on the Alamo controller node. Toward the end of that file, we find an error block:</p><pre><code class="computeroutput">2012-08-30 08:11:57 WARNING nova.scheduler.manager [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8 502c4cc57e6240438eb9b0bd2041701f] Failed to schedule_live_migration: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).
+2012-08-30 08:11:57 ERROR nova.rpc.amqp [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8 502c4cc57e6240438eb9b0bd2041701f] Exception during message handling
+2012-08-30 08:11:57 TRACE nova.rpc.amqp Traceback (most recent call last):
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/rpc/amqp.py", line 253, in _process_data
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     rval = node_func(context=ctxt, **node_args)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 97, in _schedule
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     context, ex, *args, **kwargs)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/contextlib.py", line 24, in __exit__
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     self.gen.next()
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 92, in _schedule
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     return driver_method(*args, **kwargs)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 218, in schedule_live_migration
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     disk_over_commit)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 294, in _live_migration_dest_check
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     instance_id=instance_ref['uuid'], host=dest)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp UnableToMigrateToSelf: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).
+</code>
+</pre><p>In this case, we can see that the migration failed as we were attempting to migrate the guest to the host on which it was already running. Different failure conditions will produce different errors in this log. For example, if nova-compute on the destination host is not running/unavailable for some reason, you'll see a message similar to the following in the <code>nova-scheduler.log</code>:</p><pre><code class="computeroutput">2012-08-30 08:18:28 TRACE nova.rpc.amqp Timeout: Timeout while waiting on RPC response.</code>
+</pre><p>Another fairly common error you may see is if you attempt a migration as a non-admin user. This error will occur even if your user is a member of the admin tenant:</p><pre>$ <code>nova live-migration --block_migrate 89a5e582-d3f3-4665-afc2-03c2114f0bbb compute1</code>
+<code class="computeroutput">ERROR: Policy doesn't allow compute_extension:admin_actions:migrateLive to be performed. (HTTP 403)</code>
+</pre><p>Generally, if you have any issues migrating your guests, the best places to check would be the following log files:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li><code>/var/log/nova/nova-scheduler.log</code> on the Alamo controller node</li><li><code>/var/log/nova/nova-compute.log</code> on your source/destination compute hosts</li></ul></div></div></div></div>

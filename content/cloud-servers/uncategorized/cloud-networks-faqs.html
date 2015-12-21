@@ -1,0 +1,123 @@
+---
+node_id: 3717
+title: Cloud Networks FAQ
+permalink: article/cloud-networks-faqs
+type: article
+created_date: '2013-10-02 03:28:44'
+created_by: sameer.satyam
+last_modified_date: '2015-11-12 15:5036'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>Get quick answers to common questions about the Rackspace Cloud Networks service.</p>
+
+<ul>
+	<li><a href="#differentnetworks">What are the different networks in the Rackspace Cloud?</a></li>
+	<li><a href="#differentAPIs">What are the different network APIs in the Rackspace Cloud?</a></li>
+	<li><a href="#howmanynetworks">How many cloud networks can I create?</a></li>
+	<li><a href="#limitonnumberofservers">Is there a limit on the number of servers that can be attached to a single cloud network?</a></li>
+	<li><a href="#otherlimits">What are the limits in the Cloud Networks service?</a></li>
+	<li><a href="#addorremoveexistingnetworks">Can I add or remove existing networks from a cloud server?&nbsp;</a>&nbsp;&nbsp;&nbsp;</li>
+	<li><a href="#transfercloudnetworksIPaddress">Can I transfer Cloud Networks IP addresses from one Rackspace cloud server to another?</a></li>
+	<li><a href="#transferpublicorprivatenetaddress">Can I transfer a PublicNet or ServiceNet IP address from one Rackspace cloud server to another?</a></li>
+	<li><a href="#throughputoncloudservers">What is the network throughput on cloud servers?</a></li>
+	<li><a href="#scopeofcloudnetwork">What is the scope of a cloud network?</a></li>
+</ul>
+
+<h3><a id="differentnetworks" name="differentnetworks"></a>What are the different networks in the Rackspace Cloud?</h3>
+
+<p>The Rackspace Cloud contains the following networks:</p>
+
+<ul>
+	<li><strong>PublicNet</strong> (public)<br />
+	<br />
+	PublicNet connects a cloud server to the Internet. &nbsp;When you create cloud servers with PublicNet, your servers get an IPv4 address and an IPv6 address. &nbsp;Outbound public traffic is billed according to <a href="http://www.rackspace.com/cloud/public-pricing/#bandwidth">published rates</a>. &nbsp;You can create a server without a public network; however, access to operating system updates, Cloud Monitoring remote checks, and so on might not work. For more information about the limitations of not having a public network, see <a href="/knowledge_center/article/removing-networks-from-a-cloud-server" target="_self">Removing Networks from a Cloud Server</a>.&nbsp;<br />
+	<br />
+	<strong>Note</strong>: PublicNet is required for RackConnect and Managed Operations service level customers.<br />
+	&nbsp;</li>
+	<li><strong>ServiceNet</strong> (Private)<br />
+	<br />
+	ServiceNet is an internal, multi-tenant network within each Rackspace Cloud region. It provides cloud servers access to regional services, such as Cloud Files, Cloud Load Balancers, Cloud Databases, and Cloud Backup, at no cost. &nbsp;ServiceNet is currently IPv4 only. Historically, ServiceNet was used for server-to-server communication, but Cloud Networks is now recommended for this purpose. &nbsp;ServiceNet is also required for Windows cloud server activation.&nbsp; We recommend that cloud servers be connected to ServiceNet and that all new connections inbound to the server be denied by a software firewall such as iptables or Windows Firewall. &nbsp;For more information, see <a href="/knowledge_center/article/removing-networks-from-a-cloud-server" target="_self">Removing Networks from a Cloud Server</a>.<br />
+	<br />
+	<strong>Note</strong>: ServiceNet is required for RackConnect and Managed Operations service level customers.<br />
+	&nbsp;</li>
+	<li><strong>Cloud networks</strong> (isolated)<br />
+	<br />
+	Cloud networks are isolated networks that can be used for secure communication between your cloud servers. &nbsp;Cloud networks are completely private and single tenant, and can be either IPv4 or IPv6. &nbsp;Cloud networks are recommended for all communication between cloud servers. Like ServiceNet, all bandwidth on cloud networks is provided at no charge.</li>
+</ul>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><br />
+<a id="differentAPIs" name="differentAPIs"></a>What are the different networking APIs in the Rackspace Cloud?</h3>
+
+<p>The Rackspace Cloud has two networking APIs - Neutron and Nova-Network. Rackspace first introduced networking services that were based on the OpenStack Nova-Network API. This version of the service is now superseded by the current networking API, based on OpenStack Neutron, which offers a richer suite of networking services. Both APIs continue to function, but the Neutron API will be the base for all the future networking services that Rackspace offers. For more information, see <a href="https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#networking-neutron-versus-nova-network" target="_self">Networking: Neutron versus Nova-Network</a> in the Cloud Networks Developer Guide.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><br />
+<a id="howmanynetworks" name="howmanynetworks"></a><strong>How many cloud networks can I create?</strong></h3>
+
+<p>Every Rackspace Managed Infrastructure account has a default limit of 10 cloud networks per region. To request an increase, please submit a ticket in the Cloud Control Panel with details about how you intend to use the additional networks.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="limitonnumberofservers" name="limitonnumberofservers"></a>Is there a limit on the number of servers that can be attached to a single cloud network?</strong></h3>
+
+<p>Yes. A maximum of 250 servers can be attached to a single cloud network.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="otherlimits" name="otherlimits"></a>What are the other limits in the Cloud Networks service?</strong></h3>
+
+<p>The following list shows all the limits defined for the service:</p>
+
+<ul>
+	<li>Cloud networks per region: 10</li>
+	<li>Subnets per network: 2 (one IPv4 and one IPv6)</li>
+	<li>DNS name servers per subnet: 2</li>
+	<li>Host routes per subnet: 3</li>
+	<li>Allocation pools per subnet: 5</li>
+	<li>Number of fixed IP addresses per port: 4</li>
+	<li>Ports (hosts) per network: 250</li>
+	<li>Security groups per port: 5</li>
+	<li>Security group rules per security group: 20</li>
+	<li>Security group rules per user: 100</li>
+</ul>
+
+<h3><strong><a id="addorremoveexistingnetworks" name="addorremoveexistingnetworks"></a>Can I add or remove existing networks from a cloud server?</strong></h3>
+
+<p>Yes. You can add or remove any network (PublicNet, ServiceNet, or cloud network) from a server that is in a Managed Infrastructure service level account. However, Managed Operations service level and RackConnect customers are required to have PublicNet and ServiceNet interfaces. This capability means that you can freely make networking changes to your existing deployments without having to rebuild Cloud Servers. For more information, see the <a href="https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#virtual-interfaces-extension">Virtual Interfaces extension</a> in the Cloud Servers Developer Guide (using the nova-network API) or <a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/boot_new_server.html">Boot a new server with your cloud network</a> in the Cloud Networks Getting Started Guide (using the neutron API).</p>
+
+<p><strong>Note</strong>: Be aware that removing PublicNet or ServiceNet interfaces might impact certain Rackspace services and capabilities.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="transfercloudnetworksIPaddress" name="transfercloudnetworksIPaddress"></a>Can I transfer Cloud Networks IP addresses from one Rackspace cloud server to another?</strong></h3>
+
+<p>Yes. IP addresses on Cloud Networks are usable by any other cloud server on that network.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="transferpublicorprivatenetaddress" name="transferpublicorprivatenetaddress"></a>Can I transfer a PublicNet or ServiceNet IP address from one Rackspace cloud server to another?</strong></h3>
+
+<p>No. At this time, you cannot transfer a PublicNet or ServiceNet IP address between cloud servers.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="throughputoncloudservers" name="throughputoncloudservers"></a>What is the network throughput on Cloud Servers?</strong></h3>
+
+<p>The amount of network throughput varies based on the Cloud Server flavor. For more details, see the <a href="http://www.rackspace.com/cloud/public-pricing/#cloud-servers">Cloud Servers pricing information</a>.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<h3><strong><a id="scopeofcloudnetwork" name="scopeofcloudnetwork"></a>What is the scope of a cloud network?</strong></h3>
+
+<p>Cloud networks are regional in scope and can be attached to any of your cloud servers in a given region.</p>
+
+<p><sup><a href="#top">back to top</a></sup></p>
+
+<p>&nbsp;</p>

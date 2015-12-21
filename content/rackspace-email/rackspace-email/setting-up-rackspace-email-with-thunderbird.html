@@ -1,0 +1,63 @@
+---
+node_id: 4070
+title: Set up Rackspace Email with Thunderbird
+permalink: article/setting-up-rackspace-email-with-thunderbird
+type: article
+created_date: '2014-05-20 21:44:22'
+created_by: ian.avery
+last_modified_date: '2015-03-30 16:0454'
+last_modified_by: kelly.holcomb
+products: Rackspace Email
+categories: Rackspace Email
+body_format: tinymce
+---
+
+<p>This article shows you how to set up your Rackspace Email account using your Thunderbird email client.</p>
+
+<ol>
+	<li>Open Thunderbird.</li>
+	<li>In the navigation pane, click <strong>Local Folders</strong> and under <strong>Create a new account</strong>, click <strong>Email</strong>.
+	<p><img alt="" border="2" height="194" src="/knowledge_center/sites/default/files/field/image/thunderbird_create_acccount.png" width="336" /></p>
+	</li>
+	<li>When prompted to create a new email address, click the <strong>Skip this and use my existing email</strong> button at the bottom of the dialog box.</li>
+	<li>In the Mail Account Setup dialog box, enter the following information in the fields provided:
+	<ul>
+		<li><strong>Your name</strong>: Enter the name that you want to appear in the <strong>From</strong> field of messages that you send.</li>
+		<li><strong>Email address</strong>: Enter your entire email address (for example, <strong>yourName@example.com</strong>).</li>
+		<li><strong>Password</strong>: Enter the password for the email account that you are setting up.</li>
+	</ul>
+
+	<p><img alt="" height="424" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.20.05%20AM.png" width="468" /></p>
+	</li>
+	<li>Click <strong>Continue</strong>.</li>
+	<li>When Thunderbird attempts to automatically detect the server settings, click <strong>Manual config</strong>. You must enter the settings manually.
+	<p><img alt="" height="204" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.27.35%20AM.png" width="452" /></p>
+
+	<p>The dialog box expands to show new fields.</p>
+
+	<p><img alt="" height="426" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.35.41%20AM.png" width="702" /></p>
+	</li>
+	<li>Enter the following values in the <strong>Incoming</strong> row:
+	<ul>
+		<li>IMAP</li>
+		<li><strong>Server hostname</strong>: secure.emailsrvr.com</li>
+		<li><strong>Port</strong>: 993</li>
+		<li><strong>SSL</strong>: SSL/TLS (This value should autopopulate when you enter the port number.)</li>
+		<li><strong>Authentication</strong>: Autodetect</li>
+	</ul>
+	</li>
+	<li>Enter the following values in the <strong>Outgoing</strong> row:
+	<ul>
+		<li><strong>Server hostname</strong>: secure.emailsrvr.com</li>
+		<li><strong>Port</strong>: 465</li>
+		<li><strong>SSL</strong>: SSL/TLS (This value should autopopulate when you enter the port number.)</li>
+		<li><strong>Authentication</strong>: Autodetect</li>
+	</ul>
+	</li>
+	<li>Click <strong>Re-test</strong>.
+	<p>The <strong>Authentication</strong> fields should change to <strong>Normal Password</strong> and you will see a message in the middle of the screen stating <code>The following setting were found by probing the given server</code>.</p>
+	</li>
+	<li>Click <strong>Done</strong>.
+	<p>The setup process is done. You should now see your mailbox added in Thunderbird and mail will start populating the Inbox.</p>
+	</li>
+</ol>

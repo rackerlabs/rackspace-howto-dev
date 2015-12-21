@@ -1,0 +1,243 @@
+---
+node_id: 1118
+title: Set up MySQL master-slave replication
+permalink: article/mysql-master-slave-replication
+type: article
+created_date: '2011-06-02 23:37:51'
+created_by: RackKCAdmin
+last_modified_date: '2015-08-27 13:3545'
+last_modified_by: stephanie.fillmon
+products: Cloud Servers
+categories: MySQL
+body_format: tinymce
+---
+
+<p>Master-slave data replication allows for replicated data to be copied to multiple computers for backup and analysis by multiple parties.&nbsp;Needed changes identified by a group member must to be submitted to the designated "master" of the node. This differs from <a href="http://www.rackspace.com/knowledge_center/article/mysql-master-master-replication">Master-Master replication</a>, in which data can be updated by any authorized contributor of the group.</p>
+
+<p>This article provides steps for setting up MySQL master-slave database replication between two cloud servers. The operating system used for the examples in the article is CentOS 6, built from a Rackspace Cloud Servers base image.</p>
+
+<div id="toctitle">
+<p><strong>Contents</strong></p>
+</div>
+
+<ul>
+	<li class="toclevel-1"><a href="#1"><span class="toctext">Before you begin</span></a></li>
+	<li class="toclevel-1"><a href="#2"><span class="toctext">Create the Cloud Servers</span></a></li>
+	<li class="toclevel-1"><a href="#3"><span class="toctext">Install MySQL</span></a></li>
+	<li class="toclevel-1"><a href="#4"><span class="toctext">Configure replication</span></a></li>
+	<li class="toclevel-1"><a href="#5"><span class="toctext">Test replication</span></a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><span class="mw-headline"><a id="1" name="1"></a>Before you begin</span></h3>
+
+<p>The steps in this article use two cloud servers named db01 and db02. Cloud servers have two IP addresses (one public, one private). The examples demonstrate configuring replication over the private IP interface so that no bandwidth charges are incurred. For the duration of the article,&nbsp;db01 is considered the <em>master </em>MySQL server&nbsp;(running in read-write mode), and&nbsp;db02 is considered the <em>slave</em>&nbsp;server (running in read-only mode).</p>
+
+<p>If you already have a MySQL database running on the master node, a dump and restore into the slave node is required before configuring replication between them. You use the&nbsp;<strong>mysqldump</strong>&nbsp;command to dump a database into a file, then transfer it and restore it to the slave. After the necessary configuration has been performed, replication is in effect. For more information, see the <a href="#4">Configure replication</a> section.</p>
+
+<p>&nbsp;</p>
+
+<h3><span class="mw-headline"><a id="2" name="2"></a>Create the Cloud Servers</span></h3>
+
+<p>Create two Linux cloud servers, using the Centos 6 base image. Use the following steps to create each server separately.</p>
+
+<ol>
+	<li>Log in to your <a href="https://mycloud.rackspace.com/">Rackspace Cloud Control Panel</a>.</li>
+	<li>On the Cloud Servers page, click <strong>Create Server</strong>.</li>
+	<li>Name the servers so that you can easily identify them during the setup.</li>
+	<li>Select the Centos 6 base image.</li>
+	<li>Select the RAM configuration (flavor) appropriate for your database requirements.</li>
+	<li>Click <strong>Create Server</strong>.</li>
+</ol>
+
+<p>The commands outlined in the following sections need to be executed by a privileged (root, sudo group) user. Any strings or values specified in brackets should be replaced with data specific to your setup.</p>
+
+<p>&nbsp;</p>
+
+<h3><span class="mw-headline"><a id="3" name="3"></a>Install MySQL</span></h3>
+
+<p>You must install the <em>mysql-server</em> package on both CentOS Cloud Servers.</p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li>Before installing MySQL, confirm that the package database is up-to-date by running the following command:
+	<pre>
+ 
+#yum update
+</pre>
+	</li>
+	<li>Install MySQL and enable it to run at boot automatically:
+	<pre>
+ 
+ #yum install mysql-server
+#chkconfig mysqld on
+</pre>
+	</li>
+	<li>Start the mysqld service:
+	<pre>
+ 
+#service mysqld start
+</pre>
+	</li>
+	<li>After the <em>mysqld</em> service has been started, set your mysql server root password by using following commands:
+	<pre>
+ 
+/usr/bin/mysqladmin -u root password 'new-password'
+/usr/bin/mysqladmin -u root -h web01 password 'new-password'
+</pre>
+
+	<p><strong>Note</strong>: Alternatively, you can run the secure installation script packaged with the MySQL installation:</p>
+
+	<pre>
+ 
+# /usr/bin/mysql_secure_installation
+Enter current password for root (enter for none):
+...
+Set root password? [Y/n] Y
+...
+Remove anonymous users? [Y/n] Y
+...
+Disallow root login remotely? [Y/n] Y
+...
+Remove test database and access to it? [Y/n] Y
+...
+Reload privilege tables now? [Y/n] Y
+</pre>
+	</li>
+	<li>To permit connections on port 3306 (the mysqld default port), add a TCP port 3306 rule with an insert at the last line number in the RH-Firewall-1-INPUT chain (in this case, line 10):
+	<pre>
+ 
+# iptables -I RH-Firewall-1-INPUT 10 -p tcp --dport 3306 -j ACCEPT
+</pre>
+	</li>
+	<li><span class="mw-headline">Save the firewall configuration:</span>
+	<pre>
+# service iptables save </pre>
+	</li>
+</ol>
+
+<p>Complete the following section to make relevant configuration changes to enable replication.</p>
+
+<p>&nbsp;</p>
+
+<h3><span class="mw-headline"><a id="4" name="4"></a>Configure replication</span></h3>
+
+<p>A MySQL user is required on the master server (db01) to be used for replication.</p>
+
+<ol>
+	<li>Run the following commands to set up the MySQL user, updatng the entries in brackets with strings or values you that you want to use with your setup.
+	<pre>
+ 
+# mysql -u root -p
+mysql&gt; grant replication slave on *.* TO [replication_username]@’[private IP of db02]’ identified by '[some password]';
+mysql&gt; flush privileges;
+mysql&gt; quit
+</pre>
+	</li>
+	<li>Edit the&nbsp;<strong>/etc/my.cnf</strong>&nbsp;file and add the following entries:
+	<pre>
+ 
+bind-address = 0.0.0.0
+server-id = 1
+log-bin = mysql-bin
+binlog-ignore-db = “mysql”
+</pre>
+	</li>
+	<li>After you have finished updating the&nbsp;<strong>/etc/my.cnf</strong>&nbsp;file, restart the MySQL service.
+	<pre>
+ 
+#service mysqld restart
+</pre>
+
+	<p>Before starting replication, the data on each server (master and slave) must be the same. To accomplish this duplication, dump the data from the master (db01) server and add it to the slave (db02) server, as instructed in the following.</p>
+	</li>
+	<li>Use the following command to ensure that nothing can write to the master database during a database dump. Also note the filename and position of the binary log because you will need these values to complete the replication configuration on db02.
+	<pre>
+ 
+# mysql -u root –p
+mysql&gt; FLUSH TABLES WITH READ LOCK;
+mysql&gt; SHOW MASTER STATUS;
+ 
++------------------+--------------------------+------------------+
+| File             | Position  | Binlog_Do_DB | Binlog_Ignore_DB |
++------------------+--------------------------+------------------+
+| mysql-bin.000010 |        10 |              | mysql            |
++------------------+--------------------------+------------------+
+1 row in set (0.00 sec)
+</pre>
+	</li>
+	<li>Perform a database dump by using mysqldump as follows. list all the databases barring mysql and information_schema:
+	<pre>
+ 
+# mysqldump -u root -p --databases [database-1] [database-2] ...  &gt; /root/db_dump.sql
+</pre>
+	</li>
+	<li>Aftre the database dump has completed, lift the read lock from the master (db01):
+	<pre>
+ 
+# mysql -u root –p
+mysql&gt; UNLOCK TABLES;
+</pre>
+	</li>
+	<li>Copy the database dump file to the slave server so that it can be restored. You can use the scp command to accomplish this:
+	<pre>
+ 
+scp /root/db_dump.sql [private-IP-of-db02]:/root/
+</pre>
+	</li>
+	<li>On db02, edit the <strong>/etc/my.cnf</strong> file and add the following entries:
+	<pre>
+ 
+bind-address = 0.0.0.0
+server-id = 2
+master-host =  [private-IP-of-db01]
+master-user = [replication-username]
+master-password = [replication-password]
+master-connect-retry = 60
+</pre>
+	</li>
+	<li>Import the <strong>db_dump.sql</strong> file copied earlier and restart the MySQL service.
+	<pre>
+ 
+# mysql –u root –p &lt; /root/db_dump.sql
+# service mysqld restart
+</pre>
+	</li>
+	<li>Complete the slave replication steps:
+	<pre>
+ 
+# mysql -u root –p
+mysql&gt; SLAVE STOP;
+mysql&gt; CHANGE MASTER TO MASTER_HOST='[private-IP-of-db01]',
+MASTER_USER='[replication-username]',
+MASTER_PASSWORD='[replication-password]',
+MASTER_LOG_FILE='[file-listed-on-master-status]',
+MASTER_LOG_POS=[log-position-listed–on-master-status];
+mysql&gt; START SLAVE;
+mysql&gt; SHOW SLAVE STATUS\G
+</pre>
+
+	<p>The <strong>Slave_IO_State</strong> field should show "Waiting for master to send event". If it shows "Connecting to Master" please check your MySQL log file. By default it is (CODE)/var/log/mysqld.log(/CODE) but it may be configured differently on your system. As always (CODE)/etc/my.cnf(/CODE) will define the location of your log file.</p>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3><span class="mw-headline"><a id="5" name="5"></a>Test replication</span></h3>
+
+<p>To test the replication setup, create a new database and associated table on db01, and insert data to confirm that the changes are mirrored on db02. In the following example, the new database is called <strong>testing</strong> and the new table is called <strong>users</strong>:</p>
+
+<pre>
+ 
+# mysql -u root -p
+mysql&gt; create database testing;
+mysql&gt; use testing
+mysql&gt; create table users(id int not null auto_increment, primary key(id), username varchar(30) not null);
+mysql&gt; insert into users (username) values ('foo');
+mysql&gt; insert into users (username) values ('bar');
+mysql&gt; exit
+</pre>
+
+<p>The changes should be visible on db02 immediately.</p>

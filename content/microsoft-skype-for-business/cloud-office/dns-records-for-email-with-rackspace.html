@@ -1,0 +1,152 @@
+---
+node_id: 4189
+title: Set up DNS records for Cloud Office email and Skype for Business
+permalink: article/dns-records-for-email-with-rackspace
+type: article
+created_date: '2014-08-15 21:09:05'
+created_by: cody.jobson
+last_modified_date: '2015-10-28 13:4504'
+last_modified_by: stephanie.fillmon
+products: Microsoft Skype for Business
+categories: Cloud Office
+body_format: tinymce
+---
+
+<p>To complete the configuration of your Rackspace Email, your hosted implementation of Microsoft Exchange, or your hosted implementation of Microsoft Skype for Business, you must set up DNS records. If incorrect DNS settings are associated with your domain, you will experience problems using these applications.</p>
+
+<h2>Set up DNS records for email</h2>
+
+<p>This section provides information about the DNS records that you need to set up for email transfer in Rackspace Email or Hosted Exchange.</p>
+
+<p>Create the following entries on your DNS server:</p>
+
+<ul>
+	<li><a href="#MX">MX records</a></li>
+	<li><a href="#Autodiscover">Autodiscover record</a></li>
+	<li><a href="#SPF">SPF record</a></li>
+</ul>
+
+<h3><strong><a name="MX"></a>MX records</strong></h3>
+
+<p>A mail exchange (MX) record directs incoming email sent to your domain to the specific server set up to accept email traffic for your domain. For example, if your email is hosted through Rackspace you have MX records that point to <strong>mx1.emailsrvr.com (10)</strong> and <strong>mx2.emailsrvr.com (20)</strong>.</p>
+
+<p>Set up the following MX records on your DNS server.</p>
+
+<table border="1" cellpadding="0">
+	<thead>
+		<tr>
+			<td width="110"><strong>Hostname</strong></td>
+			<td width="130"><strong>Time to live (TTL)</strong></td>
+			<td width="112"><strong>Record type</strong></td>
+			<td width="130"><strong>Destination</strong></td>
+			<td width="75"><strong>Priority</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="110">Blank or @</td>
+			<td width="130">3600</td>
+			<td width="112">MX</td>
+			<td width="130">mx1.emailsrvr.com</td>
+			<td width="75">10</td>
+		</tr>
+		<tr>
+			<td width="110">Blank or @</td>
+			<td width="130">3600</td>
+			<td width="112">MX</td>
+			<td width="130">mx2.emailsrvr.com</td>
+			<td width="75">20</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Note:</strong> To change the settings for your domain, you must own and have access to edit these records. If you do not have access to do so, contact your DNS provider. Typically it takes between 24 and 48 hours for changes to DNS records to fully propagate. We recommend updating your DNS records during off-peak traffic hours to allow for DNS propagation. No mail is lost during this time.</p>
+
+<p>&nbsp;</p>
+
+<h3><strong><a name="Autodiscover"></a>Autodiscover records</strong></h3>
+
+<p>Autodiscover is a service that enables you and your team to easily configure your email clients by knowing only your Rackspace Email or Microsoft Exchange email address and password. Autodiscover enables additional features for Microsoft Exchange mailboxes such as downloading the offline address book, viewing free and busy time in a calendar, and using the Out-of-Office Assistant.</p>
+
+<p><strong>Note:</strong> Autodiscover is not compatible with Outlook 2011, Outlook 2016, or Mac Mail when setting up an email account as POP or IMAP.</p>
+
+<p>To enable Autodiscover, set up the following Canonical Name (CNAME) record.<br />
+Replace <em>example.com</em> with your own domain name.</p>
+
+<table border="1" cellpadding="0">
+	<thead>
+		<tr>
+			<td><strong>Hostname</strong></td>
+			<td width="156"><strong>Time to live (TTL)</strong></td>
+			<td width="118"><strong>Record type</strong></td>
+			<td width="225"><strong>Destination</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>autodiscover.<em>example.com</em></td>
+			<td width="156">Lowest possible</td>
+			<td width="118">CNAME</td>
+			<td width="225">autodiscover.emailsrvr.com</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><strong><a name="SPF"></a>SPF records</strong></h3>
+
+<p>The Sender Policy Framework (SPF) record is a DNS record designed to combat and reduce spam for your domain. SPF records help mail servers identify unauthorized use of your domain in the form of forgeries (spoofing). SPF records also help improve your email deliverability rate by preventing the email that you send from landing in a recipient’s spam or junk mail inbox.</p>
+
+<p>To have an SPF record implemented, contact your DNS hosting provider, and have them add the following TXT record to your DNS.</p>
+
+<table border="1" cellpadding="0">
+	<thead>
+		<tr>
+			<td width="92"><strong>Hostname</strong></td>
+			<td width="141"><strong>Time to live (TTL)</strong></td>
+			<td width="118"><strong>Record type</strong></td>
+			<td width="225"><strong>Destination</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td width="92">Blank or @</td>
+			<td width="141">Lowest possible</td>
+			<td width="118">TXT</td>
+			<td width="225">v=spf1 include:emailsrvr.com ~all</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><strong><a name="LyncDNSSetUp"></a>Set up DNS records for Hosted Skype for Business</strong></h2>
+
+<p>To complete the configuration of your hosted implementation of Microsoft Skype for Business formerly Microsoft Lync, you must set up DNS records. The following three CNAME records and two SRV records must be in place to enable Skype for Business to work with the Hosted Exchange Environment.</p>
+
+<p>CNAME records</p>
+
+<ul>
+	<li>autodiscover.<em>example.com</em></li>
+	<li>lyncdiscover.<em>example.com</em></li>
+	<li>sip.<em>example.com</em></li>
+</ul>
+
+<p>SRV records</p>
+
+<ul>
+	<li>_sip._tls.<em>example.com</em></li>
+	<li>_sipfederationtls._tcp.<em>example.com</em></li>
+</ul>
+
+<p>Because of the nature of our hosted environment, the domain listed for these three CNAME records will contain specific Skype for Business DNS records. Use our help tool for the specific DNS records for your domain. After you log in with a mailbox that is enabled for Skype for Business, you can find the DNS settings through the <a href="https://emailhelp.rackspace.com/">Help Tool</a> as shown in the following image.</p>
+
+<p><img alt="" border="2" height="261" src="/knowledge_center/sites/default/files/field/image/SkypeforBusinessa.png" width="656" /></p>
+
+<p><strong>Notes</strong>:</p>
+
+<ul>
+	<li>If you have an internal DNS, you must also set up these records on your internal DNS.</li>
+	<li>If you want to enable Lync federation with domains hosted outside of Rackspace or domains that are hosted within Rackspace, contact our support team to learn more.</li>
+</ul>

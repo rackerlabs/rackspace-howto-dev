@@ -1,0 +1,72 @@
+---
+node_id: 1325
+title: Prepare to migrate a Linux server
+permalink: article/preparing-for-a-cloud-server-migration
+type: article
+created_date: '2012-03-13 20:14:19'
+created_by: jered.heeschen
+last_modified_date: '2015-02-24 18:1340'
+last_modified_by: jered.heeschen
+products: Cloud Servers
+categories: Server Migration
+body_format: tinymce
+---
+
+<p>This article provides recommended actions that you can perform before you migrate your Linux server to mitigate common issues and optimize your server for a faster transition. These recommendations are based on common issues identified by our&nbsp;support technicians, but these are not mandatory. Some&nbsp;of these recommendations can cause significant downtime, so you should schedule them accordingly.</p>
+
+<p>For Windows migration preparation, see&nbsp;<a href="/knowledge_center/node/4489">Prepare to migrate a Windows server</a>.</p>
+
+<ul>
+	<li><a href="#backUpYourData">Back up your data</a></li>
+	<li><a href="#prepareforSystemReboot">Prepare for a system reboot</a></li>
+	<li><a href="#generalPrep">General preparation</a></li>
+	<li><a href="#rightBefore">Right before the migration</a></li>
+	<li><a href="#afterMigration">After a migration</a></li>
+</ul>
+
+<h2><a id="backUpYourData" name="backUpYourData"></a>Back up your data</h2>
+
+<p>Before you perform any migration, create a file-level backup of important data. You can use Rackspace Cloud Backup to automate the storing and retrieving of backup data from Cloud Files, or you can use rsync to copy your data to another server.</p>
+
+<ul>
+	<li><a href="/knowledge_center/node/4057">Rackspace Cloud Backup - Install the agent on Linux</a></li>
+	<li><a href="/knowledge_center/node/266">Backing up your files with rsync</a></li>
+</ul>
+
+<h2><a id="prepareforSystemReboot" name="prepareforSystemReboot"></a>Prepare for a system reboot</h2>
+
+<p>It's good practice&nbsp;to&nbsp;shut down your server&nbsp;during the final stages of a migration to safely copy dynamic content to the new host. During a Rackspace-automated migration, the server is usually shut down for this purpose.</p>
+
+<p>Ensure that your server will reboot quickly and safely when the migration completes. For configuration recommendations, see&nbsp;<a href="/knowledge_center/node/4490">Prevent issues with&nbsp;Linux server reboots</a>.</p>
+
+<h2><a id="generalPrep" name="generalPrep"></a>General preparation</h2>
+
+<p>The following tasks help to avoid issues with server time and the size of the disk space on the server.</p>
+
+<h3>Set accurate&nbsp;time via NTP</h3>
+
+<p>Some older cloud servers&nbsp;pull&nbsp;time from their host machine instead of&nbsp;keeping time independently from&nbsp;the host.&nbsp;Unfortunately, the time set on these hosts can be inaccurate. To avoid migration issues related to the server date or&nbsp;file time stamps, set up and configure Network Time Protocol (NTP) on your server.</p>
+
+<p>For details on setting up NTP on your server, see <a href="/knowledge_center/node/3406">Using NTP to sync time</a>.</p>
+
+<h2><a id="rightBefore" name="rightBefore"></a>Right before the migration</h2>
+
+<p>You can reduce the time required for a migration and improve the reliability of a resulting image by reducing the number and size of files that might change during the migration operation.</p>
+
+<h3>Lock databases</h3>
+
+<p>If a database changes during a migration, data could be lost data or the database in the image could be corrupted.</p>
+
+<p>We recommend that you bring the database down entirely for the migration. If that isn't practical, however, make your tables read-only so that they won't be written to during the operation.</p>
+
+<p>To lock your tables in MySQL, run the following command:</p>
+
+<pre>
+mysql -u root -p --execute="FLUSH TABLES WITH READ LOCK"
+</pre>
+
+<h2><a id="afterMigration" name="afterMigration"></a>After a migration</h2>
+
+<p>After a migration is complete and your new server starts, you should test your web sites and applications. Ensure that applications are responsive and that they can write information to their databases.</p>
+
+<p>If you have any services that need to communicate to other servers, explicitly test their connectivity to ensure that they still talk to each other.</p>

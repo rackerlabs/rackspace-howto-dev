@@ -1,0 +1,36 @@
+---
+node_id: 2021
+title: What are the requirements for implementing RackConnect v2.0?
+permalink: article/what-are-the-requirements-for-implementing-rackconnect
+type: article
+created_date: '2012-08-21 17:05:25'
+created_by: juan.perez
+last_modified_date: '2015-07-15 14:4337'
+last_modified_by: kelly.holcomb
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>APPLIES TO</strong>: RackConnect v2.0</p>
+<p>In order to Implement RackConnect, the following are required:</p>
+<p><strong>Supported Network Device</strong> - The RackConnect automation is compatible with any Cisco ASA firewall (5505 Security+ or better) or F5 Big-IP load balancer.&nbsp; You need at least one of these devices in your managed hosting configuration in order to implement RackConnect. If you already have one, there is no additional charge for RackConnect.</p>
+<p><strong>Supported Region</strong> - RackConnect is currently available in our Chicago (ORD), Dallas (DFW), Virginia (IAD), Sydney (SYD), Hong Kong (HKG), and London (LON3) regions.&nbsp; Your dedicated managed hosting environment and Cloud environment must be located in the same region in order to implement RackConnect.</p>
+<p><strong>Technical Description</strong><br />RackConnect connects an available physical interface on your Network Device to the Cloud internal network.&nbsp; Creating a new Cloud Server triggers the RackConnect automation process, which, in cases where all Automation Features are enabled, will:</p>
+<ol>
+<li>
+<p>Validate the existence of a Gateway IP address on your RackConnect Connected Device, and add the appropriate Gateway IP address, if it does not exist</p>
+</li>
+<li>
+<p>Provision a public IP address for the Cloud Server and configure a static NAT translation for it on the RackConnect Edge Network Device</p>
+</li>
+<li>
+<p>Connect to the Cloud Server, disable its public interface, and route all traffic through its private interface (a.k.a. ServiceNet, which has the 10.x.x.x IP address) towards your RackConnect Connected Device as the default gateway.</p>
+</li>
+<li>
+<p>The automation then adjusts access lists on the firewall, load balancer (if applicable), and Cloud Server software firewalls based on your pre-defined Network Policies.</p>
+</li>
+</ol>
+<p><img src="/knowledge_center/sites/default/files/field/image/Without.RC_.png" alt="" width="320" height="218" /><br /><em><strong>Without RackConnect:</strong> Traffic is routed out through the Internet when connecting from Dedicated to Cloud.</em></p>
+<p><img src="/knowledge_center/sites/default/files/field/image/With.RC_.png" alt="" width="320" height="218" /><br /><em><strong>With RackConnect:</strong> Traffic is routed via your Dedicated Network Device to the Cloud.&nbsp; RackConnect automation keeps your dedicated configuration and Cloud Servers secure.</em></p>
+<p>We hope that you have found this article helpful, but if you have any further questions, we are always here to help, so please reach out to us; contact information is available on the <a href="http://www.rackspace.com/knowledge_center/support">Contact Us</a> page.</p>

@@ -1,0 +1,18 @@
+---
+node_id: 274
+title: Rackspace Cloud Essentials - CentOS - Configuring a user in vsftpd
+permalink: article/rackspace-cloud-essentials-5-centos-configuring-a-user-in-vsftpd
+type: article
+created_date: '2011-04-04 16:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2014-04-17 15:0449'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: File Transfers and File Sharing
+body_format: tinymce
+---
+
+<p>In the last article,&nbsp;<a title="CentOS - Installing vsftpd" href="/knowledge_center/index.php/CentOS_-_Installing_vsftpd">CentOS - Installing vsftpd</a>, we walked through setting up a working install of vsftpd. This article will be fairly short, we're going to walk through creating a system user and chrooting (jail - isolation to their home directory) them if necessary.</p><hr /><table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li class="toclevel-1"><a href="#Add_your_system_User"><span class="tocnumber">1</span> <span class="toctext">Add your system User</span></a></li><li class="toclevel-1"><a href="#Disable_SSH_access_for_FTP_users"><span class="tocnumber">2</span> <span class="toctext">Disable SSH access for FTP users</span></a></li><li class="toclevel-1"><a href="#Chroot_a_user"><span class="tocnumber">3</span> <span class="toctext">Chroot a user</span></a></li></ul></td></tr></tbody></table><p><a id="Add_your_system_User" name="Add_your_system_User"></a></p><h2><span class="mw-headline">Add your system User </span></h2><p>Yes, it is this simple, creating a new user for ftp access in vsftpd is as easy as creating a new valid linux system user.</p><pre>    # useradd test
+    # passwd test
+</pre><p><a id="Disable_SSH_access_for_FTP_users" name="Disable_SSH_access_for_FTP_users"></a></p><h2><span class="mw-headline">Disable SSH access for FTP users </span></h2><p>The default user creation script will give a user the /bin/bash shell, which can be a little too powerful. &nbsp;If you don't want your users logging into your server via SSH, we need to know how to block this access. &nbsp;If you change the shell to /bin/false, the users will only be able to login via ftp or mail if you have that setup. Here is how to modify your users:</p><pre>usermod -s /sbin/nologin test
+</pre><p><a id="Chroot_a_user" name="Chroot_a_user"></a></p><h2><span class="mw-headline">Chroot a user </span></h2><p>Alright and probably the most important part of this article is the ability to lock a user down to their own home directory so they don't go around mucking with things they aren't supposed to. The beauty of this is it is a function built in to vsftpd and was covered in the <a href="http://www.rackspace.com/knowledge_center/index.php/CentOS_-_Installing_vsftpd#Config_file_Changes">Installing vsftpd</a> article. When a user logs in they will be unable to move 'up' a level in the directory structure.</p><p>That pretty much covers it for vsftpd, and at this point you should be able to create a new system user, set them up for vsftpd and do some basic tweaks to their access level. &nbsp;These last two articles dealt with vsftpd in a CentOS Linux system. &nbsp;Now we will show you how to <a href="http://www.rackspace.com/knowledge_center/index.php/Ubuntu_-_Installing_vsftpd">install vsftpd on a server running Ubuntu</a>.</p>

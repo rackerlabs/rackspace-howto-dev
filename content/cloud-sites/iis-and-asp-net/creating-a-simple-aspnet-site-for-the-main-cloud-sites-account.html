@@ -1,0 +1,73 @@
+---
+node_id: 533
+title: Creating a Simple ASP.NET site for the main Cloud Sites account
+permalink: article/creating-a-simple-aspnet-site-for-the-main-cloud-sites-account
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-05-04 13:1745'
+last_modified_by: kyle.laffoon
+products: Cloud Sites
+categories: IIS and ASP.NET
+body_format: tinymce
+---
+
+<p><strong>Note</strong>: This article refers to the <a href="https://manage.rackspacecloud.com/" target="_blank">Cloud Sites Control Panel</a>. You can access this interface from the <a href="https://mycloud.rackspace.com/" target="_blank">Cloud Control Panel</a> by clicking the <strong>Cloud Control Panel</strong> menu at the top of the window and selecting <strong>Cloud Sites</strong>.</p>
+
+<p><strong>Prerequisites</strong></p>
+
+<ul>
+	<li>Administrative access to the website</li>
+</ul>
+
+<p><strong>To create the ASP.NET web page</strong></p>
+
+<ol>
+	<li>Log in to the <a href="http://manage.rackspacecloud.com/pages/Login.jsp|">Cloud Sites Control Panel</a>.
+
+	<p>If you are new to the Rackspace Cloud an have not yet create a website, see <a href="/knowledge_center/index.php/Adding_a_new_website">How to add a new website</a>.</p>
+
+	<p><strong>Note</strong>: The domain must have .Net and Asp technology Feature enabled. If necessary, this can be verified and changed in the <strong>Features </strong>tab of the domain as shown below.</p>
+	</li>
+	<li>Navigate to <strong>Hosting &gt; Cloud Sites</strong>.</li>
+	<li>In the list of all the websites owned by the account, click the website that you want to update.</li>
+	<li>Create the following two files:
+	<ul>
+		<li><strong>First_asp_page.asp</strong> - This is a simple ASP page:
+		<pre>
+&lt;html&gt;
+ &lt;head&gt;
+
+ &lt;title&gt;My First ASP Page&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body bgcolor="white" text="black"&gt;
+ &lt;%
+   'Dimension variables
+   Dim strMessage 			
+   strMessage = "Hello World"
+   Response.Write (strMessage)
+   Response.Write (" ")
+   Response.Write ("The time on the server is: " &amp; Time())
+&nbsp;%&gt;
+
+ &lt;/body&gt;
+ &lt;/html&gt;
+</pre>
+		</li>
+		<li><strong>web.config</strong> This is the configuration file. Enter your username and password to allow impersonation. For more information, see <a href="https://msdn.microsoft.com/en-us/library/xh507fc5.aspx">ASP.NET Impersonation</a> on MSDN.
+		<pre>
+ &lt;?xml version="1.0" encoding="utf-8"&nbsp;?&gt;
+
+ &lt;configuration&gt;
+   &lt;system.web&gt;
+    &lt;identity impersonate="true" userName="dfw\YOURNAME" password="YOURPASSWORD" /&gt;
+   &lt;/system.web&gt;
+ &lt;/configuration&gt;
+</pre>
+		</li>
+	</ul>
+	</li>
+	<li>Verify that logging is turned on. For instructions, see <a href="/knowledge_center/index.php/Enabling_logging_for_a_website" rel="nofollow" title="/knowledge_center/index.php/Enabling_logging_for_a_website">Enable raw logging for a Cloud Sites website</a>.</li>
+	<li>Upload the two files created to the main directory of the website using FTP: For instructions, see <a href="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP" rel="nofollow" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP">Uploading your content</a>.</li>
+	<li>Navigate to the <strong>First_asp_page.asp</strong> file by using the Testing URL if necessary. For instrutions, see <a class="external text" href="/knowledge_center/index.php/Using_a_staging_URL" rel="nofollow" title="/knowledge_center/index.php/Using_a_staging_URL">Use a staging URL</a>.</li>
+</ol>

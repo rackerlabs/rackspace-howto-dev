@@ -1,0 +1,26 @@
+---
+node_id: 439
+title: Setting up a Mail Relay
+permalink: article/setting-up-a-mail-relay
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2013-04-17 20:4218'
+last_modified_by: jered.heeschen
+products: Cloud Servers
+categories: Mail Servers
+body_format: tinymce
+---
+
+<p>Since IP addresses are dynamically assigned in cloud servers, the IP space has been declared unfit for email use. This means that major blacklist providers have stated that email coming from cloud servers should not be accepted. For this reason, email from Cloud Servers may not reliably get through to your intended recipients.</p><p>To be able to send email reliably from your server, we recommend you sign up for a Rackspace Email account (<a class="external free" title="http://www.rackspace.com/apps/email_hosting/" href="http://www.rackspace.com/apps/email_hosting/" rel="nofollow">http://www.rackspace.com/apps/email_hosting/</a>), use a relay service like <a href="http://www.rackspace.com/knowledge_center/article/introduction-to-mailgun-email-automation">Mailgun</a>, or use any email account that allows you to send email via secure SMTP authentication. You can then configure your server to send email through that account. This way, you are still able to send mail and avoid these issues.</p><p>This article is here to help with that setup. For our example, we will show how to set up this relay with Rackspace Email and using the a smarthost, but the basic steps are the same for most email providers. This is specifically intended for system generated emails, like sign-up scripts, password conformation pages, etc. that you cannot otherwise easily route through an outside mail provider. Depending on your email needs, you may need to configure an account with a third party like Mailgun, Mailchimp, or SendGrid.</p><p>For Managed Support customers, you can request support to do this for you. All we will need are the email server, the username and the password for the account you are going to send the mail to. For our other Cloud Servers customer, this article is intended to help you with the basic setup.</p><p><a id="Step_by_Step" name="Step_by_Step"></a></p><h2><span class="mw-headline">Step by Step </span></h2><dl><dt>1. Install postfix and SASL tools</dt><dd>&nbsp;</dd></dl><p>For RHEL or CentOS:</p><pre>yum install postfix cyrus-sasl-plain cyrus-sasl-md5</pre><p>For Ubuntu:</p><pre>aptitude update
+apt-get install postfix libsasl2-modules</pre><dl><dt>2. Configure Postfix</dt></dl><p>Add the following to /etc/postfix/main.cf:</p><pre>relayhost = secure.emailsrvr.com 
+smtp_sasl_auth_enable=yes 
+smtp_sasl_password_maps=hash:/etc/postfix/sasl_passwd
+smtp_sasl_mechanism_filter = AUTH LOGIN
+smtp_sasl_security_options =</pre><p>Add the Rackspace Email username and password to /etc/postfix/sasl_passwd by running these commands:</p><pre>echo 'secure.emailsrvr.com username@domain.com:secretpassword' &gt; /etc/postfix/sasl_passwd
+chmod 600 /etc/postfix/sasl_passwd 
+postmap /etc/postfix/sasl_passwd</pre><p>Restart Postfix and check the mail logs, you should see something like this:</p><pre>Nov 23 10:46:05 web2 postfix/qmgr\[24259\]: 5497F3708AA:
+from=&lt;orders@myawesomeecommercesite.com&gt;, size=1762, nrcpt=1 (queue active)
+Nov 23 10:46:05 web2 postfix/smtp\[1343\]:497F3708AA:to=&lt;customer@someisp.com&gt;,
+relay=secure.emailsrvr.com\[98.129.185.2\]:25, delay=0.31, delays=0.02/0.01/0.19/0.1,
+dsn=2.0.0, status=sent (250 2.0.0 Ok: queued as B5E3D2D0476)</pre>

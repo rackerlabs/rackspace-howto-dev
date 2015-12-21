@@ -1,0 +1,28 @@
+---
+node_id: 1947
+title: Alarm Language - Generic Thresholds Made Easy
+permalink: article/alarm-language-generic-thresholds-made-easy-0
+type: article
+created_date: '2012-08-10 19:05:26'
+created_by: daniel.dispaltro
+last_modified_date: '2014-05-15 19:1614'
+last_modified_by: rose.contreras
+products: Cloud Monitoring
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>It is not necessary to edit config files on a Nagios server. Rackspace Cloud Monitoring lets you:</p>
+
+<ul>
+<li><p>Set thresholds with an easy to use alarm language:</p><pre>if (metrics['code'] != "200") {<br /> &nbsp;return CRITICAL, "Bad HTTP Status: #{code}"<br />}</pre></li>
+<li><p>Create expressive alarms that validate multiple criteria while maintaining an easy to use javascript-like interface:</p>
+<pre>if (metric['duration'] &gt; 2000) {<br /> &nbsp;return CRITICAL, "HTTP request took more than 2 seconds, it took #{duration} milliseconds."<br />} <br />if (metric['duration'] &gt; 1000) { <br /> &nbsp;return WARNING, "HTTP request took more than 1 second, it took #{duration} milliseconds."<br />} <br /># Check for an empty body match<br />if (metric['body_match'] == "") {<br /> &nbsp;return CRITICAL, "Body match missing" <br />} <br />return OK, "HTTP connection time is normal"</pre>
+</li>
+<li>See the solution patterns in our best practices documentation and then easily create your own complex alarms. Our API makes it simple to keep up to date on these examples, <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarm-examples.html">get more information here</a>.</li>
+<li>Put developers in control by letting them build thresholds similar to how you create your application code.</li>
+<li>Test thresholds before you configure them. Use data from our <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html#service-checks-test">Test Check API</a> and feed that into our <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarms.html#service-alarms-test">Test Alarm API</a> to simulate an alerting scenario.</li>
+<li>Use multiple data center alert policies to seamlessly evaluate alarm criteria from multiple datacenters:</li>
+</ul>
+
+</ul><p><img title="" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Alarm%20Visualization_0.png" alt="" width="717" height="262" /></p><p><em>The graph above shows a check running in 3 monitoring zones. The yellow and red areas represent when an alarm is in WARNING and CRITICAL respectively.</em></p><hr /><h2>Key Takeaways</h2><ul><ul><ul><li>Don't run a DIY nagios server.</li><li>Start monitoring faster and spend less sysadmin time on making sure that server stays up.</li><li>Reduce false alerts on network hiccups.</li><li>Monitor your website from up to <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html">5 different locations.</a> Set the policy you’d like to execute on mixed results.</li><li>Send an alert to different <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html">notification addresses depending on severity</a>.</li><li>Supports dual stacks, both IPv4 and IPv6.</li><li>Our <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html">flexible alerting language</a> puts you in control, don’t bother with an awkward JSON API for defining thresholds.</li></ul></ul></ul><p>&nbsp;</p>

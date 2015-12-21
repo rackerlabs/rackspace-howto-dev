@@ -1,0 +1,117 @@
+---
+node_id: 3151
+title: RackConnect v2.0 Operational Limits
+permalink: article/rackconnect-operational-limits
+type: article
+created_date: '2012-10-30 12:59:30'
+created_by: juan.perez
+last_modified_date: '2014-09-30 15:2223'
+last_modified_by: jered.heeschen
+products: RackConnect
+categories: API
+body_format: tinymce
+---
+
+<p><strong>APPLIES TO</strong>: RackConnect v2.0</p>
+<p>This article details the recommended RackConnect Operational Limits to use when building multiple Cloud Servers through the Cloud Servers API.</p>
+<p><strong>IMPORTANT:</strong> These limits are guidelines and might not exactly match what is possible in your environment. Some variables that can affect the limits for your environment include:</p>
+<ul>
+<li>The number of RackConnect network policies that are active in your environment</li>
+<li>The type of Net Devices you are using with RackConnect</li>
+</ul>
+<p>For details about the performance capabilities associated with each of the Network Devices supported by RackConnect, see the <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison">RackConnect Network Device Comparison</a> article.</p>
+<h3>RackConnect Operational Limits</h3>
+<table border="1">
+<tbody>
+<tr><th colspan="2">API Limits</th></tr>
+<tr>
+<td>
+<p><strong>Maximum Number of Total Cloud Servers connect to RackConnect when bursting</strong></p>
+<p>The maximum number of cloud servers that you can deploy in your environment before you can expect to begin receiving consistent RackConnect deployment failures. If you need to deploy more than this amount of Cloud Servers, we highly recommend contacting your RackConnect Support Team first.</p>
+<p><strong>Note:</strong> Not all customer environments (Net Devices) will be capable of handling 500 active cloud servers adequately.</p>
+</td>
+<td>
+<p align="center">500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>API: Optimal number of concurrent builds (bursting)</strong></p>
+<p>The maximum number of cloud servers you should burst at the same time. Exceeding this value might lead to a degradation in performance or to build errors or failures.</p>
+</td>
+<td>
+<p align="center">50</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>API: Optimal time delay between builds</strong></p>
+<p>The minimum amount of time you should wait between cloud server builds. This limit applies even between cloud servers built during a single bursting process. Exceeding this value might lead to a degradation in performance or to build errors or failures.</p>
+</td>
+<td>
+<p align="center">3 seconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>API: Optimal time delay between groups of builds</strong></p>
+<p>After bursting a group of cloud servers, the amount of time you should wait before bursting another group of cloud servers. The Once All Deployed time delay signifies that after bursting a group of cloud servers, you should wait until that group is fully deployed with RackConnect before attempting to burst another group of cloud servers.</p>
+</td>
+<td>
+<p align="center">Once All Deployed</p>
+</td>
+</tr>
+<tr><th colspan="2">Linux Limits</th></tr>
+<tr>
+<td>
+<p><strong>Total Potential 512 MB Linux Builds Per Hour (bursting 50 at a time)</strong></p>
+<p>The total number of Linux cloud servers that you can expect to build in an hour by bursting 75 cloud servers, waiting for them to fully deploy with RackConnect, then immediately bursting 75 more cloud servers, repeating this same bursting process for a full hour.</p>
+</td>
+<td>
+<p align="center">150*</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Potential Time to Build 100 (512 MB) Linux Cloud Servers (bursting 50 at a time)</strong></p>
+<p>The total amount of time that you can expect it to take to build 100 Linux cloud servers by bursting 75 cloud servers, waiting for them to fully deploy with RackConnect, then immediately bursting 25 more cloud servers.</p>
+</td>
+<td>
+<p align="center">40 minutes*</p>
+</td>
+</tr>
+<tr><th colspan="2">Windows Limits</th></tr>
+<tr>
+<td>
+<p><strong>Total Potential 1 GB Windows Builds Per Hour (bursting 50 at a time)</strong></p>
+<p>The total number of Windows cloud servers that you can expect to build in an hour by bursting 75 cloud servers, waiting for them to fully deploy with RackConnect, then immediately bursting 75 more cloud servers, repeating this same bursting process for a full hour.</p>
+</td>
+<td>100*</td>
+</tr>
+<tr>
+<td>
+<p><strong>Potential Time to Build 100 (1 GB) Windows Cloud Servers (bursting 50 at a time)</strong></p>
+<p>The total amount of time that you can expect it to take to build 100 Windows cloud servers by bursting 75 cloud servers, waiting for them to fully deploy with RackConnect, then immediately bursting 25 more cloud servers.</p>
+</td>
+<td>60 minutes*</td>
+</tr>
+</tbody>
+</table>
+<p>* These values are estimates and might not always match your results.</p>
+<h2>Summary of findings</h2>
+<ul>
+<li>If you need to create more than 500 cloud servers in your RackConnect environment, we recommend contacting your RackConnect Support Team first. Because of the time requirements when deploying more than 500 Cloud Servers, it might be feasible only in static environments that will not change often.</li>
+<li>For the best results, there should always be a 3-second time delay between API build calls when building multiple cloud servers at once.</li>
+<li>For the best results, you should burst no more than 50 cloud servers at once (with a 3-second delay between builds), wait for them to all go into a RackConnect Deployed status, then burst no more than 50 more, repeating the same bursting process until the number of cloud servers you need is reached.</li>
+<li>The Once All Deployed time delay signifies that after bursting a group of cloud servers, you should wait until that group is fully deployed with RackConnect before attempting to burst another group of cloud servers.</li>
+<li>As long as you follow the limits in this article, there should not be a significant time difference (normally less than 20 percent) between building smaller and larger cloud server flavors.</li>
+</ul>
+<p>For more information about using the available APIs, see the following documentation:</p>
+<ul>
+<ul>
+<li><a href="http://docs.rackspace.com/api/">Next gen Cloud Servers API documentation</a></li>
+<li><a href="http://www.rackspace.com/knowledge_center/article/the-rackconnect-api">The RackConnect API</a></li>
+<li><a href="http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers">How to programmatically determine the RackConnect automation status of your cloud servers</a></li>
+</ul>
+</ul>
+<p>&nbsp;</p>

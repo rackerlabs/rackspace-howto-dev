@@ -1,0 +1,92 @@
+---
+node_id: 4703
+title: Configure Rackspace Auto Scale web hooks with Rackspace Monitoring
+permalink: article/configure-rackspace-auto-scale-web-hooks-with-cloud-monitoring
+type: article
+created_date: '2015-06-04 14:44:18'
+created_by: Jake.Coe
+last_modified_date: '2015-12-18 01:4135'
+last_modified_by: constanze.kratel
+products: Auto Scale
+categories: General
+body_format: tinymce
+---
+
+<p>Auto Scale uses webhooks to initiate scaling events. A webhook is an industry-standard protocol for sending events between systems; for Auto Scale, they are used to execute policies. A webhook consists of an HTTP callback that is triggered by some user-defined event, such as an alarm that is set through Rackspace Monitoring or another monitoring service. When that event occurs, the source site makes an HTTP request to the URI configured for the webhook. Therefore, correct configuration of the webhooks is needed for the Auto Scale service to perform correctly.</p>
+
+<p>Contents</p>
+
+<ul>
+	<li><a href="#beforeBegin">Before you begin</a></li>
+	<li><a href="#createPolicies">Create Auto Scale policies</a></li>
+	<li><a href="#createWebhook">Create a webhook</a></li>
+	<li><a href="#setUpCloudMonitoring">Set up Rackspace Monitoring</a></li>
+</ul>
+
+<h2><a id="beforeBegin" name="beforeBegin"></a>Before you begin</h2>
+
+<p>Before you can configure the webhooks, you must&nbsp; <a href="http://www.rackspace.com/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups#CreateScalingGroup">create an Auto Scale group</a>.</p>
+
+<h2><strong><a id="createPolicies" name="createPolicies"></a></strong>Create Auto Scale policies</h2>
+
+<ol>
+	<li>In the Cloud Control Panel, select <strong>Servers</strong> &gt; <strong>Auto Scale</strong>.</li>
+	<li>Select your Auto Scale group from the list.</li>
+	<li>Scroll down to <strong>Policies</strong> and click <strong>Create Policy</strong>.</li>
+	<li>Create two policies, one for scaling up and one for scaling down. Specify the following values, and then click <strong>Create Policy</strong>:
+	<ul>
+		<li><strong>Name:</strong> Specify a name to identify each policy</li>
+		<li><strong>Scale Trigger:</strong> &nbsp;Select <strong>Webhook URL </strong>for both policies</li>
+		<li><strong>Amount:</strong> Specify how many servers to scale up and how many to scale down.</li>
+		<li><strong>Cooldown Period:</strong> Specify the cooldown period, which prevents scaling up or down too fast. The policy will wait for the policy cooldown period to elapse, or the group's minimum cooldown to elapse, whichever is longer.</li>
+	</ul>
+	</li>
+</ol>
+
+<h2><strong><a id="createWebhook" name="createWebhook"></a>Create a webhook</strong></h2>
+
+<p>Create a corresponding webhook to activate each of the Auto Scale policies you created.</p>
+
+<ol>
+	<li>On the Scaling Group details page, click the&nbsp;gear icon&nbsp;next to the policy name and click <strong>View Webhooks</strong>.</li>
+	<li>In the popup dialog box, click<strong> Create Webhook.</strong></li>
+	<li>In the popup dialog box, enter a name for the webhook, and then click <strong>Save Webhook</strong>.</li>
+	<li>Copy the address created for the webhook. You will need it during the next set of steps.<br />
+	<br />
+	You can now execute a POST request against this URL in order to use your webhook manually via CURL. For more information, see the <a href="https://developer.rackspace.com/docs/autoscale/v1/developer-guide/#webhooks-and-capability-urls">Auto Scale Developer Guide</a>.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h2><strong><a id="setUpCloudMonitoring" name="setUpCloudMonitoring"></a>Set up Rackspace Monitoring </strong></h2>
+
+<ol>
+	<li>On the Scaling group details pages, click the cloud server at the bottom of the page.</li>
+	<li>Log in to the server and install the Rackspace Monitoring Agent following the instructions in this <a href="http://www.rackspace.com/knowledge_center/article/install-and-configure-the-cloud-monitoring-agent">article</a></li>
+	<li>Open Rackspace&nbsp; Intelligence and click <strong>Notify</strong>.</li>
+	<li>Create a new <strong>Notification Plan </strong>called <strong>AutoScale</strong>.</li>
+	<li>Select the notification plan from the list and Select <strong>Add Notifications &gt; Create a new notification.</strong></li>
+	<li>In the popup dialog box, specify the following values:<strong>​</strong>
+	<ul>
+		<li><strong>Name</strong>: This name should match the webhook name that you chose earlier, for example, <strong>ScaleUp</strong>.</li>
+		<li><strong>Type: </strong>Select <strong>Webhook</strong>.</li>
+		<li><strong>URL: </strong>Enter the webhook URL for your Auto Scale Policies. If you did not copy this URL in an earlier step, you can view it by selecting the gear icon next to the policy name and selecting <strong>View Webhooks</strong>.</li>
+	</ul>
+	</li>
+	<li>Click <strong>Create and Select Notification</strong>.</li>
+	<li>At the bottom of the popup dialog box, specify what type of monitoring alarm will trigger the notification. For example, you could specify that the ScaleUp notification is triggered when an alarm of Critical or Warning occurs, and that ScaleDown is triggered if the monitoring is set to OK.</li>
+	<li>Click Save <strong>Notification Plan</strong>.</li>
+	<li>At the top of the Rackspace Intelligence window, click <strong>Monitor</strong>.<br />
+	The cloud server is listed.</li>
+	<li>Click the cloud server name, and on the details page, click&nbsp;<strong>Create Check</strong>&nbsp;under Monitoring Checks.</li>
+	<li>Enter the following information:
+	<ul>
+		<li><strong>Check Type:</strong>&nbsp;You can select from the list a wide range of monitoring checks such as CPU or Memory. Select the type of check that is appropriate for your environment.</li>
+		<li><strong>Check Name:</strong>&nbsp;Enter a name to easily identify the check.</li>
+	</ul>
+	</li>
+	<li>Click<strong> Create Check</strong>.<br />
+	The details page for the check is displayed.<br />
+	&nbsp;</li>
+	<li>To set up the alarm criteria that will trigger the monitoring check that you just created, click <strong>Create Alarm</strong>.</li>
+</ol>

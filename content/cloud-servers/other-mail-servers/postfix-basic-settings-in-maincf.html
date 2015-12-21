@@ -1,0 +1,197 @@
+---
+node_id: 412
+title: Basic settings in the Postfix main.cf file
+permalink: article/postfix-basic-settings-in-maincf
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-04-02 17:4442'
+last_modified_by: kelly.holcomb
+products: Cloud Servers
+categories: Other Mail Servers
+body_format: tinymce
+---
+
+<p>After you have <a href="/knowledge_center/node/104">installed Postfix</a>, you can work with settings in the <strong>main.cf</strong> file to further configure Postfix.</p>
+
+<ul>
+	<li><a href="#modular">Modular nature of Postfix</a></li>
+	<li><a href="#maincf">The main.cf file</a></li>
+	<li><a href="#test">Test the settings</a></li>
+	<li><a href="#summary">Summary</a></li>
+	<li><a href="#gofromhere">Where to go from here</a></li>
+</ul>
+
+<p><strong>Note:</strong> This article assumes that you are using a single domain for your email needs.</p>
+
+<h2 id="modular">Modular nature of Postfix</h2>
+
+<p>One of the key aspects of Postfix is that it is designed to be a modular package. The base installation itself is fairly small, and the vast majority of the "usual" mail administration, such as anti-spam and anti-virus, is actually conducted by third-party packages like SpamAssassin.</p>
+
+<p>You can begin to see the modular nature of Postfix when you look at the <strong>main.cf</strong> file. Many settings refer to other files on the server. This setup can seem slightly confusing at first, and your initial reaction might be to hard code the data rather than reference another file with a single word in it. However, we recommend retaining the modularity of Postfix and editing multiple files for what might seem like simple settings. Such modularity will be useful when you start adding multiple domains, users, and aliases to your setup.</p>
+
+<h2 id="maincf">The main.cf file</h2>
+
+<p>To see the <strong>main.cf</strong> file, issue the following command:</p>
+
+<pre>
+sudo nano /etc/postfix/main.cf</pre>
+
+<p>The file consists of basically three sections. The first section includes several settings such as the <code>smtpd_banner</code> and <code>biff</code> parameters. The second section has settings for TLS parameters.</p>
+
+<p>This article focuses on the last section, which looks as follows on the <strong>democloud</strong> server:</p>
+
+<pre>
+myhostname = mail.democloud.com
+
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+
+myorigin = /etc/mailname
+mydestination = mail.democloud.com, localhost.democloud.com, , localhost
+
+relayhost =
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all</pre>
+
+<p>Note that some of the settings already have the host name from the base Postfix installation.</p>
+
+<p>Although some of the settings might be self-explanatory, the following sections describe them so that you can get a better understanding of Postfix and what you can do with it.</p>
+
+<h3>myhostname</h3>
+
+<p>The <code>myhostname</code> value was set during the Postfix installation when you entered the domain name that you want to use. This name also matches the cloud server host name.</p>
+
+<h3>aliases</h3>
+
+<p>Aliases provide a method for delivering mail to different users without having to set up dozens of different accounts. The default settings in the <strong>main.cf</strong> reference another file:</p>
+
+<pre>
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases</pre>
+
+<p>Open that file, as follows:</p>
+
+<pre>
+sudo nano /etc/aliases</pre>
+
+<p>The file shows a list of names followed by <code>root</code>. Mail delivered to the first name is actually delivered to the second name. You do not need to set up the <code>postmaster</code>, <code>news</code>, <code>webmaster</code>, <code>abuse</code>, and other users for Postfix because mail delivered to those names is sent to <code>root</code>.</p>
+
+<p>Using the same syntax, you can have all mail for <code>root</code> delivered to the admin user by adding the following line (<code>demo&nbsp;</code>is the main admin user for the <strong>democloud</strong> server):</p>
+
+<pre>
+root: demo</pre>
+
+<p>As a result, the delivery destination would change as follows:</p>
+
+<ol>
+	<li>Mail sent to <code>mailer-daemon</code> is sent to <code>postmaster</code>.</li>
+	<li>Mail to <code>postmaster</code> is sent to <code>root</code>.</li>
+	<li>Mail sent to <code>root</code> is sent to the main admin user <code>demo</code>.</li>
+</ol>
+
+<p>You can adjust the aliases as you see fit, but instead of changing all the <code>root</code> users in the file, it is easier to add the one line as shown. Adding that line also makes future migration and administration easier.</p>
+
+<p>After you change the <strong>aliases</strong> file, you must refresh the aliases database for any changes to occur. Use the following command:</p>
+
+<pre>
+sudo newaliases</pre>
+
+<h3>myorigin</h3>
+
+<p>Internal emails from packages such as cron jobs do not supply full mail credentials; they use the <code>myorigin</code> setting instead. As such, you need to set this parameter to the main host name of the server.</p>
+
+<p>By default, the setting refers to the <strong>/etc/mailname</strong> file. To look at the contents, run the following command:</p>
+
+<pre>
+cat /etc/mailname</pre>
+
+<p>Example output for the <strong>democloud </strong>server is as follows:</p>
+
+<pre>
+mail.democloud.com</pre>
+
+<p>However, you can also set <code>myorigin</code> by using <code>$mydomain</code> in the <strong>main.cf</strong> file, as follows:</p>
+
+<pre>
+myorigin = $mydomain</pre>
+
+<p>Although you haven't specifically set the <code>$mydomain</code> variable, Postfix gets the information from the <code>myhostname</code> setting, parsing the host name to gain the main domain name.</p>
+
+<p>Setting the <code>myorigin</code> parameter this way allows for easier administration at a later date because only one setting (<code>myhostname</code>) needs to change. All the other parameters take the change from that.</p>
+
+<h3>mydestination</h3>
+
+<p>Although you have not yet set the server to receive mail (that is covered <a href="/knowledge_center/node/413">in the next article</a>), the <code>mydestination</code> parameter defines the domains from which the server will accept mail.</p>
+
+<p>The default looks as follows:</p>
+
+<pre>
+mydestination = mail.democloud.com, localhost.democloud.com, , localhost</pre>
+
+<p>The default is adequate when you are setting up mail for a single domain. However, like with the <code>myorigin</code> setting, you can reduce future administration by using the <code>$mydomain</code> variable as follows:</p>
+
+<pre>
+mydestination = $mydomain, localhost.$mydomain, localhost</pre>
+
+<h3>relayhosts</h3>
+
+<p>For the setup in this series of articles, you do not need this setting. You can leave it blank.</p>
+
+<h3>mynetworks</h3>
+
+<p>The <code>mynetworks</code> parameter defines the network to use. The default value includes IPv6 settings, which you can remove. The remaining value looks as follows:</p>
+
+<pre>
+mynetworks = 127.0.0.0/8</pre>
+
+<h3>The rest</h3>
+
+<p>You can use the default values for the remaining settings. They are relevant for more complex configurations.</p>
+
+<h3>Final settings</h3>
+
+<p>After the preceding changes, the last section in the example <strong>main.cf</strong> file looks as follows:</p>
+
+<pre>
+myhostname = mail.democloud.com
+
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+
+myorigin = $mydomain
+mydestination = $mydomain, localhost.$mydomain, localhost
+
+relayhost =
+mynetworks = 127.0.0.0/8
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all</pre>
+
+<h2 id="test">Test the settings</h2>
+
+<p>As with all packages, after you have made any changes to the configuration, you must restart, as follows:</p>
+
+<pre>
+sudo /etc/init.d/postfix restart</pre>
+
+<p>After Postfix is restarted, you can conduct a quick test by sending an email to a working email address, as shown in the following example. (For instructions, see the test section in <a href="/knowledge_center/node/104">Install Postfix</a>.)</p>
+
+<pre>
+mail user@example.com
+Subject: test
+test
+.
+Cc:</pre>
+
+<p>You should receive an email from the correct user and the correct domain. Check the headers to verify that they are correct.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>Configuring&nbsp;Postfix can be a daunting task. This introduction helps with the basics and shows how using variables instead of hard coding domain names can save time and effort in any future administration.</p>
+
+<h2 id="gofromhere">Where to go from here</h2>
+
+<p><a href="/knowledge_center/node/413">Creating DNS records and receiving emails via Postfix </a></p>

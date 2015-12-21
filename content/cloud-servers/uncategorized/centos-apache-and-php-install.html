@@ -1,0 +1,163 @@
+---
+node_id: 92
+title: CentOS 6 - Apache and PHP Install
+permalink: article/centos-apache-and-php-install
+type: article
+created_date: '2011-03-09 18:24:07'
+created_by: RackKCAdmin
+last_modified_date: '2015-10-15 20:0034'
+last_modified_by: stephanie.fillmon
+products: Cloud Servers
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>&nbsp;</p>
+
+<p>This article demonstrates how to install Apache and PHP on CentOS 6.</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td>
+			<h2>Contents</h2>
+
+			<ul>
+				<li><a href="#CentOS_-_Installing_Apache_and_PHP5">1 CentOS - Installing Apache and PHP5</a></li>
+				<li><a href="#Apache_Install">2 Apache Install</a></li>
+				<li><a href="#ServerName">3 ServerName</a></li>
+				<li><a href="#Firewall">4 Firewall</a></li>
+				<li><a href="#Default_Page">5 Default Page</a></li>
+				<li><a href="#Chkconfig">6 Chkconfig</a></li>
+				<li><a href="#PHP5_Install">7 PHP5 Install</a></li>
+				<li><a href="#Almost">8 Almost</a></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2><a id="CentOS_-_Installing_Apache_and_PHP5" name="CentOS_-_Installing_Apache_and_PHP5"></a>CentOS - Installing Apache and PHP5</h2>
+
+<p>CentOS comes with Apache v.2.2.3 and PHP v.5.1.6 and they are easily installed via the default CentOS Package Manager, yum.</p>
+
+<p>The advantage of using yum (as opposed to installing via source code) is that you will get any security updates (if and when distributed) and dependencies are automatically taken care of.</p>
+
+<h2><a id="Apache_Install" name="Apache_Install"></a>Apache Install</h2>
+
+<p>A basic Apache install is very easy:</p>
+
+<pre>
+sudo yum install httpd mod_ssl
+</pre>
+
+<p><a id="ServerName" name="ServerName"></a>Oddly, the server does not start automatically when you install it so you have to do this by hand:</p>
+
+<pre>
+sudo /usr/sbin/apachectl start
+</pre>
+
+<p>The first thing you will see is this error:</p>
+
+<pre>
+Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name,
+using 127.0.0.1 for ServerName
+</pre>
+
+<p>As you can see, the address 127.0.0.1 (or whatever address you see there, usually your main IP address) is used as the server name by default. It's a good idea to set the ServerName for the next time the server is started.</p>
+
+<p>Open the main Apache “config”:</p>
+
+<pre>
+sudo nano /etc/httpd/conf/httpd.conf
+</pre>
+
+<p>Towards the end of the file you'll find a section that starts with ServerName and gives the example:</p>
+
+<pre>
+#ServerName www.example.com:80
+</pre>
+
+<p>All you need to do is enter your Cloud Server host name or a fully-qualified domain name:</p>
+
+<pre>
+ServerName demo
+</pre>
+
+<p>Note that my Cloud Server host name is “demo”.</p>
+
+<p>Now just reload Apache:</p>
+
+<pre>
+sudo /usr/sbin/apachectl restart
+</pre>
+
+<p>And the warning has gone.</p>
+
+<h2><a id="Firewall" name="Firewall"></a>Firewall</h2>
+
+<p>Notice that in some versions of CentOS, a firewall is installed by default which will block access to port 80, on which Apache runs. The following command will open this port:</p>
+
+<pre>
+sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+</pre>
+
+<p>Remember to save your firewall rules after adding that instruction so your web server will be accessible the next time you reboot:</p>
+
+<pre>
+sudo service iptables save</pre>
+
+<p>For more information on firewalls and their configuration, it is strongly recommended to read the <a href="/knowledge_center/index.php/List_of_Articles#Firewalls" title="/knowledge_center/index.php/List_of_Articles#Firewalls">Firewalls</a> section of our knowledge base.</p>
+
+<h2><a id="Default_Page" name="Default_Page"></a>Default Page</h2>
+
+<p>If you navigate to your Cloud Server IP address:</p>
+
+<pre>
+http://123.45.67.89
+</pre>
+
+<p>You will see the default CentOS Apache welcome screen:</p>
+
+<p><img alt=" centos_apache_welcome.jpg" height="342" src="http://c458924.r24.cf2.rackcdn.com/Cent0SWelcome01.png" width="490" /></p>
+
+<p>This means the Apache install is a success.</p>
+
+<p><a id="Chkconfig" name="Chkconfig"></a></p>
+
+<h2>Chkconfig</h2>
+
+<p>Now that we have Apache installed and working properly, we need to make sure that it's set to start automatically when the Cloud Server is rebooted.</p>
+
+<pre>
+sudo /sbin/chkconfig httpd on
+</pre>
+
+<p>Let's check our work to confirm:</p>
+
+<pre>
+sudo /sbin/chkconfig --list httpd
+httpd           0:off        1:off  2:on    3:on    4:on    5:on    6:off
+</pre>
+
+<p>The setting works.<a id="PHP5_Install" name="PHP5_Install"></a></p>
+
+<h2>PHP5 Install</h2>
+
+<p>Let's move on to the PHP5 install. I'm not going to install all the modules available, just a few common ones so you get the idea.</p>
+
+<p>As before, due to using yum to install PHP5, any dependencies are taken care of:</p>
+
+<pre>
+sudo yum install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+</pre>
+
+<p>Once done, reload Apache:</p>
+
+<pre>
+sudo /usr/sbin/apachectl restart
+</pre>
+
+<h2><a id="Almost" name="Almost"></a>Almost done</h2>
+
+<p>The last thing we need to do is configure Apache for our setup so we can host multiple sites. We'll cover that in the <a href="/knowledge_center/index.php/CentOS_-_Apache_Virtual_Hosts"> next article</a>&nbsp;in this series.</p>

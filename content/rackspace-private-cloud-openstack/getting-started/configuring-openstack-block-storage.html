@@ -1,0 +1,314 @@
+---
+node_id: 3172
+title: Configuring OpenStack Block Storage
+permalink: article/configuring-openstack-block-storage
+type: article
+created_date: '2012-11-05 16:54:40'
+created_by: Karin Levenstein
+last_modified_date: '2015-09-23 13:3234'
+last_modified_by: kyle.laffoon
+products: Rackspace Private Cloud - OpenStack
+categories: Getting Started
+body_format: tinymce
+---
+
+<p>Rackspace has developed a set of OpenStack Block Storage (Cinder) chef recipes, combined into a cookbook, that can be used to configure a Cinder node or group of nodes. This section discusses the concepts and architecture behind Cinder and describes the procedures for configuring Cinder nodes.</p>
+
+<h2><a name="cinder-about"></a>Block Storage Overview</h2>
+
+<p>The Cinder project provides "block storage as a service" functionality in OpenStack. Beginning in the Folsom release and going forward, it is designed to replace the nova-volumes service.</p>
+
+<p>The Cinder architecture includes the following components:</p>
+
+<ul>
+	<li><strong>API service</strong>: Responsible for receiving and handling requests and placing them in the message queue. OpenStack clusters deployed with Rackspace Private Cloud will use rabbitmq.</li>
+	<li><strong>Scheduler service</strong>: Assigns tasks in the queue and determines the volume server to which provisioning requests are sent.</li>
+	<li><strong>Volume service</strong>: Runs on the storage node and manages the storage space. The volume service can run on multiple nodes, each constituting part of the block storage "pool"; the scheduler service will distribute requests across all nodes that are running the volume service.</li>
+</ul>
+
+<p>With the Rackspace Private Cloud Cinder recipes, you can install the services across multiple nodes or all together on a single node. The Rackspace Private Cloud cookbooks provide convenient chef roles to assist in installing services on nodes. The <code class="filename">cinder-api</code>, <code class="filename">cinder-scheduler</code>, and <code class="filename">cinder-volume</code> roles, when applied to a node, will install the respective services by running the relevant recipes. The <code class="filename">cinder-all</code> meta-role includes all three cinder roles.</p>
+
+<h2><a name="cinder-additional"></a>Adding Volume Storage Nodes</h2>
+
+<p>Rackspace Private Cloud installs <code class="filename">cinder-api</code> and <code class="filename">cinder-scheduler</code> on the controller node by default. You will need to add additional <code class="filename">cinder-volume</code> nodes to use OpenStack Block Storage on your cluster.</p>
+
+<h3 class="title"><a name="cinder-prereqs"></a>Node Prerequisites</h3>
+
+<p>Rackspace recommends that the physical server that will become a Cinder volume node or a Cinder all-in-one node meet the following criteria.</p>
+
+<ul>
+	<li>1 core per 3TB capacity</li>
+	<li>At least 6 SATA or SAS drives of at least 1TB capacity each.</li>
+	<li>At least 2GB RAM, plus an additional 250MB RAM per TB of drive.</li>
+	<li>RAID Controller with battery backup in RAID5 or RAID10 configuration.</li>
+</ul>
+
+<p>Your environment must meet the following criteria.</p>
+
+<ul>
+	<li>An OpenStack controller node is running Nova controller components and APIs, Glance, Horizon, Keystone, rabbitmq, and MySQL, installed with Rackspace Private Cloud.</li>
+	<li>At least one node is running nova-compute, and was installed with Rackspace Private Cloud.</li>
+	<li>A Chef server is available on the cluster.</li>
+	<li>You have the means to install Ubuntu 12.04 on the server where the Cinder node will exist.</li>
+	<li>You DO NOT already have a node running nova-volumes in the OpenStack cluster.</li>
+</ul>
+
+<h3 class="title"><a name="cinder-volume-procedure"></a>Volume Storage Installation</h3>
+
+<ol>
+	<li>Install Ubuntu 12.04 on the server that will become the Cinder volume node.</li>
+	<li>Install and configure chef-client on the new server. The following commands will ensure that the chef-client points to the Chef server on the controller node.
+	<pre class="screen">
+<code class="prompt">$</code> <code>curl -L http://opscode.com/chef/install.sh | bash</code>
+<code class="prompt">$</code> <code>mkdir -p /etc/chef</code>
+<code class="prompt">$</code> <code>export chef=<em class="replaceable"><code>&lt;yourControllerIP&gt;</code></em></code>
+<code class="prompt">$</code> <code>cat &gt; /etc/chef/client.rb &lt;&lt;EOF
+    chef_server_url "http://${chef}:4000"
+    environment "rpcs"
+  EOF</code>
+                        </pre>
+	</li>
+	<li>On the controller node, locate <code class="filename">/etc/chef/validation.pem</code>.</li>
+	<li>Copy this file to <code class="filename">/etc/chef/</code> on the new server.</li>
+	<li>Run chef-client on the new server to register the new server.
+	<pre class="screen">
+<code class="prompt">$</code> <code>rm -fr /etc/chef/client.pem ; chef-client</code>
+                        </pre>
+	</li>
+	<li>Log into the controller node and switch to root access with <code>sudo -i</code>. Update the cookbooks and roles with the procedure documented in "Update the Cookbooks".</li>
+	<li>Create an LVM volume group on the new server. In this example, the server has a disk that appears as <code class="filename">/dev/sdb</code>, and a volume group called <code class="filename">cinder-volumes</code>will be created on this disk.
+	<pre class="screen">
+<code class="prompt">$</code> <code>ssh <em class="replaceable"><code>&lt;serverIP&gt;</code></em></code>
+<code class="prompt">$</code> <code>sudo pvcreate /dev/sdb</code>
+<code class="prompt">$</code> <code>sudo vgcreate cinder-volumes /dev/sdb</code>
+                        </pre>
+	</li>
+	<li>On the controller node, execute the following knife command to add the <code class="filename">cinder-volume</code> role to the server. For <code class="filename"><em class="replaceable"><code>&lt;serverName&gt;</code></em></code>, substitute the fully qualified domain name of the server, such as <code class="uri">cindervolume1.mydomain.com</code>.
+	<pre class="screen">
+<code class="prompt">$</code> <code>knife node run_list add <em class="replaceable"><code>&lt;serverName&gt;</code></em> 'role[cinder-volume]'</code>
+                        </pre>
+	</li>
+	<li>Run chef-client on the server to complete the process.
+	<pre class="screen">
+<code class="prompt">$</code> <code>ssh my.new.server</code>
+<code class="prompt">$</code> <code>sudo chef-client</code>
+              </pre>
+	</li>
+</ol>
+
+<p>When the procedure is complete, you should receive output similar to the following:</p>
+
+<pre class="screen">
+[2012-10-30T10:32:02+00:00] INFO: *** Chef 10.14.2 ***
+[2012-10-30T10:32:04+00:00] INFO: Run List is [role[cinder-volume]]
+<em class="replaceable"><code>&lt;--output truncated--&gt;</code></em>
+[2012-10-29T16:23:34+00:00] INFO: Running report handlers
+[2012-10-29T16:23:34+00:00] INFO: Report handlers complete
+        </pre>
+
+<p>When the process is complete, the new Cinder volume node will be ready to use.</p>
+
+<h2><a name="cinder-create-volume"></a>Create a Volume</h2>
+
+<p>Volumes can be created through the Dashboard or with python-cinderclient. The client is installed by default on the cinder node, but you can install it on your local workstation with the following command:</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>sudo apt-get install python-cinderclient</code>
+            </pre>
+
+<p>You should also ensure that your workstation's environment variables have been set correctly, as described in Viewing and Setting Environment Variables.</p>
+
+<p>In this example, a volume called <code class="filename">myvolume</code> with a size of 1 is created and attached to an instance with python-cinderclient.</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>cinder create --display-name myvolume 1</code>
+<code class="computeroutput">+---------------------+--------------------------------------+
+|       Property      |                Value                 |
++---------------------+--------------------------------------+
+|     attachments     |                  []                  |
+|  availability_zone  |                 nova                 |
+|      created_at     |      2012-10-29T17:16:23.260483      |
+| display_description |                 None                 |
+|     display_name    |               myvolume               |
+|          id         | 845514f9-8fff-44bb-b82a-27d4e32b9939 |
+|       metadata      |                  {}                  |
+|         size        |                  1                   |
+|     snapshot_id     |                 None                 |
+|        status       |               creating               |
+|     volume_type     |                 None                 |
++---------------------+--------------------------------------+</code>
+
+<code class="prompt">$</code> <code>cinder list</code>
+<code class="computeroutput">+------------------------+-----------+---------+------+--------+---------+
+|          ID            |   Status  | Display | Size | Volume | Attached|
+|                        |           | Name    |      | Type   | to      |
++------------------------+-----------+---------+------+--------+---------+
+| 845514f9[id truncated] | available |myvolume |  1   | None   |         |
++------------------------+-----------+---------+------+--------+---------+</code>
+</pre>
+
+<p>This volume is now available to be attached to a nova instance. For this example, <code class="filename">myvolume</code> will be attached to an instance called <code class="filename">myserver</code> with the <code>nova volume-attach</code> command. The <code>auto</code> argument allows the Block Storage API to determine how the disk will appear when its information is viewed from within the virtual machine. In this case, Cinder assigns a block device named <code class="filename">/dev/vdb</code> to the volume.</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>nova list</code>
+<code class="computeroutput">+------------------------+----------+--------+----------------------+
+| ID                     | Name     | Status | Networks             |
++------------------------+----------+--------+----------------------+
+| f947896e[id truncated] | myserver | ACTIVE | public=192.168.100.4 |
++------------------------+----------+--------+----------------------+
+</code>
+<code class="prompt">$</code> <code>cinder list</code>
+<code class="computeroutput">+------------------------+-----------+---------+------+--------+---------+
+|          ID            |   Status  | Display | Size | Volume | Attached|
+|                        |           | Name    |      | Type   | to      |
++------------------------+-----------+---------+------+--------+---------+
+| 845514f9[id truncated] | available |myvolume |  1   | None   |         |
++------------------------+-----------+---------+------+--------+---------+</code>
+
+<code class="prompt">$</code> <code>nova volume-attach f947896e-600a-4600-a27a-3f372146b6e9 \
+  845514f9-8fff-44bb-b82a-27d4e32b9939 auto</code>
+<code class="computeroutput">+----------+--------------------------------------+
+| Property | Value                                |
++----------+--------------------------------------+
+| device   | /dev/vdb                             |
+| id       | 0501bc27-5ebd-44f2-8a4a-bb1595ee7e42 |
+| serverId | f947896e-600a-4600-a27a-3f372146b6e9 |
+| volumeId | 0501bc27-5ebd-44f2-8a4a-bb1595ee7e42 |
++----------+--------------------------------------+</code>
+            </pre>
+
+<p>The Cinder volume is now attached to <code class="filename">myserver</code>.</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>cinder list</code>
+<code class="computeroutput">+------------------------+-----------+---------+------+--------+------------+
+|          ID            |   Status  | Display | Size | Volume | Attached   |
+|                        |           | Name    |      | Type   | to         |
++------------------------+-----------+---------+------+--------+------------+
+| 845514f9[id truncated] | available |myvolume |  1   | None   | f947896e...|
++------------------------+-----------+---------+------+--------+------------+</code>
+            </pre>
+
+<p>When you ssh to the instance to which the volume was attached and look up the disk information, you will see the disk information for the block device. In this example, the instance has an IP address of <code class="uri">192.168.100.4</code>.</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>ssh cirros@192.168.100.4</code>
+<code class="prompt">$</code> <code>sudo fdisk -l /dev/vdb</code>
+ 
+<code class="computeroutput">Disk /dev/vdb: 1073 MB, 1073741824 bytes
+16 heads, 63 sectors/track, 2080 cylinders, total 2097152 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00000000
+
+Disk /dev/vdb doesn't contain a valid partition table</code>    
+       </pre>
+
+<h2><a name="cinder-allinone"></a>Building a Block Storage All-In-One Node</h2>
+
+<p>If you did not use a Rackspace Private Cloud installer to create your cluster, and if you did not use the Rackspace <code class="filename">single-controller</code> role in a manual configuration, you will need to create a Block Storage node with the <code class="filename">cinder-all</code> role. This will create a node with the <code class="filename">cinder-api</code>, <code class="filename">cinder-scheduler</code>, and <code class="filename">cinder-volume</code> roles.</p>
+
+<p>You can also create a block storage all-in-one node following the steps outlined in <a class="link" href="#cinder-additional" title="Adding Volume Storage Nodes">Adding Volume Storage Nodes</a>, with one change.</p>
+
+<p>In step 8, you will specify the <code class="filename">cinder-all</code> role instead of <code class="filename">cinder-volume</code>. For <code class="filename"><em class="replaceable"><code>&lt;serverName&gt;</code></em></code>, substitute the fully qualified domain name of the server, such as <code class="uri">cinder1.mydomain.com</code>.</p>
+
+<pre class="screen">
+<code class="prompt">$</code> <code>knife node run_list add <em class="replaceable"><code>&lt;serverName&gt;</code></em> 'role[cinder-volume]'</code>
+                        </pre>
+
+<p>When the procedure is complete, you should receive output similar to the following:</p>
+
+<pre class="screen">
+<code class="computeroutput">[2012-10-30T10:32:02+00:00] INFO: *** Chef 10.14.2 ***
+[2012-10-30T10:32:04+00:00] INFO: Run List is [role[cinder-all]]
+[2012-10-30T10:32:04+00:00] INFO: Run List expands to [osops-utils::packages, openssh, ntp, sosreport, rsyslog::default, hardware, osops-utils::default, cinder::cinder-api, cinder::cinder-scheduler, cinder::cinder-volume]
+<em class="replaceable"><code>&lt;--output truncated--&gt;</code></em>
+[2012-10-29T16:23:34+00:00] INFO: Running report handlers
+[2012-10-29T16:23:34+00:00] INFO: Report handlers complete</code>
+            </pre>
+
+<p>When the process is complete, the new Cinder all-in-one node will be ready to use.</p>
+
+<h2><a name="cinder-thirdparty"></a>Configuring Cinder for Third-Party Storage Options</h2>
+
+<p>By default, Cinder uses LVM for volume storage. An environment created with the Rackspace Private Cloud cookbooks can also be configured to use the following drivers.</p>
+
+<ul>
+	<li><a class="link" href="#cinder-emc" title="Using Cinder with EMC">EMC</a></li>
+	<li><a class="link" href="#cinder-netapp" title="Using Cinder with NetApp">NetApp</a></li>
+	<li><a class="link" href="#cinder-solidfire" title="Using Cinder with SolidFire">SolidFire</a></li>
+</ul>
+
+<p>When using Cinder with one of these drivers, the <code class="filename">cinder-volume</code> service interfaces via iscsi with the driver API instead of going through the usual LVM volume group that it would normally use on the compute node. &nbsp;When a provisioning request for a new volume comes in through the <code class="filename">cinder-api</code>, <code class="filename">cinder-volume</code> makes a request via the driver API, and the storage tool will provision the new volume.</p>
+
+<p>When a request is made via the <code class="filename">cinder-api</code> to attach a provisioned volume to an instance, the <code class="filename">cinder-volume</code> service will ensure that the tool exports the relevant LUN via iscsi to the compute node on which the instance resides. <code class="filename">nova-compute</code> on the compute node will then present the volume as a disk to the instance.</p>
+
+<h3 class="title"><a name="cinder-emc"></a>Using Cinder with EMC</h3>
+
+<p>Additional information about using Cinder with EMC can be found at the <a class="link" href="https://wiki.openstack.org/wiki/Cinder/EMCVolumeDriver" target="_top">OpenStack wiki page for Cinder/EMCVolumeDriver</a>.</p>
+
+<p>To configure Cinder to use EMC, you must set the following variables in the override_attributes section of your Chef environment:</p>
+
+<pre class="screen">
+node[cinder][storage][provider] = "emc"
+                    </pre>
+
+<p>By default, this variable is unset and Cinder uses LVM by default. Specifying <code class="literal">emc</code> ensures that cinder-volume will use the EMC API instead. After you set this variable, you must specify the following additional variables with the values appropriate to your environment:</p>
+
+<pre class="screen">
+node["cinder"]["storage"]["iscsi"]["ip_address"] = "<em class="replaceable"><code>&lt;IPAddressOfStorageProcessor&gt;</code></em>"
+node["cinder"]["storage"]["provider"] = "emc"
+node["cinder"]["storage"]["emc"]["config"] = "/etc/cinder/cinder_emc_config.xml"
+node["cinder"]["storage"]["emc"]["StorageType"] = "<em class="replaceable"><code>&lt;poolName&gt;</code></em>"
+node["cinder"]["storage"]["emc"]["EcomServerIP"] = "<em class="replaceable"><code>&lt;IPAddressOfEcomServer&gt;</code></em>"
+node["cinder"]["storage"]["emc"]["EcomServerPort"] = 5988
+node["cinder"]["storage"]["emc"]["EcomUserName"] = "<em class="replaceable"><code>&lt;userName&gt;</code></em>"
+node["cinder"]["storage"]["emc"]["EcomPassword"] = "<em class="replaceable"><code>&lt;userPassword&gt;</code></em>"
+                    </pre>
+
+<p>These will then be used to populate <code class="filename">/etc/cinder.conf</code> appropriately, and provisioning can proceed.</p>
+
+<h3 class="title"><a name="cinder-netapp"></a>Using Cinder with NetApp</h3>
+
+<p>Rackspace has tested NetApp with NFS with OpenStack Grizzly. NetApp with iscsi exists, but has not been tested yet. For information about the iscsi configuration, refer to the readme at <a class="link" href="https://github.com/rcbops-cookbooks/cinder" target="_top"><code class="uri">https://github.com/rcbops-cookbooks/cinder</code></a></p>
+
+<p>To configure Cinder to use NetApp and NFS, you must set the following variables in the override_attributes section of your Chef environment:</p>
+
+<pre class="screen">
+node[cinder][storage][provider] = "netappnfsdirect"
+                    </pre>
+
+<p>By default, this variable is unset and Cinder uses LVM by default. Specifying <code class="literal">netappnfsdirect</code> ensures that cinder-volume will use the NetApp API instead. After you set this variable, you must specify the following additional variables with the values appropriate to your environment:</p>
+
+<pre class="screen">
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["server_hostname"] = "<em class="replaceable"><code>&lt;NetAppHostnameOrIP&gt;</code></em>"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["port"] = "<em class="replaceable"><code>&lt;NetAppPort(80/443)&gt;</code></em>"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["login"] = "<em class="replaceable"><code>&lt;userName&gt;</code></em>"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["password"] = "<em class="replaceable"><code>&lt;userPassword&gt;</code></em>"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["transport_type"] = "<em class="replaceable"><code>http/https</code></em>"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["nfs_shares_config"] = "/etc/cinder/shares.txt"
+node["cinder"]["storage"]["netapp"]["nfsdirect"]["export"] = "<em class="replaceable"><code>&lt;NetAppExportedVolumeToUse&gt;</code></em>"
+                    </pre>
+
+<p><em>Note:&nbsp;You will need to obtain the wsdl URL and credentials from your NetApp administrator.</em></p>
+
+<p>These will then be used to populate <code class="filename">/etc/cinder.conf</code> appropriately, and provisioning can proceed.</p>
+
+<h3 class="title"><a name="cinder-solidfire"></a>Using Cinder with SolidFire</h3>
+
+<p>To configure Cinder to use SolidFire, you must set the following variables in the override_attributes section of your Chef environment:</p>
+
+<pre class="screen">
+node[cinder][storage][provider] = "solidfire"
+                    </pre>
+
+<p>By default, this variable is unset and Cinder uses LVM by default. Specifying <code class="literal">solidfire</code> ensures that cinder-volume will use the SolidFire API instead. After you set this variable, you must specify the following additional variables with the values appropriate to your environment:</p>
+
+<pre class="screen">
+node["cinder"]["storage"]["solidfire"]["mvip"] = "<em class="replaceable"><code>&lt;serviceVIPofSolidFireDevice&gt;</code></em>"
+node["cinder"]["storage"]["solidfire"]["username"] = "<em class="replaceable"><code>userName</code></em>"
+node["cinder"]["storage"]["solidfire"]["password"] = "<em class="replaceable"><code>userPassword</code></em>"
+                    </pre>
+
+<p>These will then be used to populate <code class="filename">/etc/cinder.conf</code> appropriately, and provisioning can proceed.</p>

@@ -1,0 +1,62 @@
+---
+node_id: 1773
+title: Choosing the Right Protocol
+permalink: article/choosing-the-right-protocol
+type: article
+created_date: '2012-07-31 04:31:03'
+created_by: jered.heeschen
+last_modified_date: '2014-11-14 17:5736'
+last_modified_by: jered.heeschen
+products: Cloud Hosting
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>The following list provides information about the protocols you can choose when configuring a Cloud Load Balancer:</p>
+
+<p><strong>DNS (TCP)</strong> - This protocol works with IPv6 and allows your DNS server to receive traffic using TCP port 53. Learn more about <a href="#UDP">UDP</a>.</p>
+
+<p><strong>DNS (UDP)</strong> - This protocol works with IPv6 and allows your DNS server to receive traffic using UDP port 53. Learn more about <a href="#TCP">TCP</a>.</p>
+
+<p><strong>FTP</strong> - The File Transfer Protocol defines how files are transported over the Internet. It's typically used when downloading or uploading files to or from web servers.</p>
+
+<p><strong>HTTP</strong> - The Hypertext Transfer Protocol defines how communications occur on the Internet between clients and web servers. For example, if you request a web page in your browser, HTTP defines how the web server fetches the page and returns it your browser.</p>
+
+<p><strong>HTTPS</strong> - The Hypertext Transfer Protocol over Secure Socket Layer (SSL) provides encrypted communication over the Internet. It securely verifies the authenticity of the web server you're communicating with.&nbsp;</p>
+
+<p><strong><a name="IMAPS"></a>IMAPS</strong> - The Internet Message Application Protocol over Secure Socket Layer (SSL) defines how an email client, such as Microsoft Outlook, retrieves and transfers email messages with a mail server.</p>
+
+<p><strong>IMAPv2</strong> - Version 2 of IMAPS.</p>
+
+<p><strong>IMAPv3</strong> - Version 3 of IMAPS.</p>
+
+<p><strong>IMAPv4</strong> - Version 4, and the current version of IMAP.</p>
+
+<p><strong>LDAP</strong> - The Lightweight Directory Access Protocol provides access to distributed directory information services over the Internet. This protocol is typically used to access a large set of hierarchical records, such as corporate email or a telephone directory.</p>
+
+<p><strong>LDAPS</strong> - The Lightweight Directory Access Protocol over Secure Socket Layer (SSL). See LDAP above.</p>
+
+<p><strong>MYSQL</strong> - This protocol allows communication with MySQL, an open source database management system.</p>
+
+<p><strong>POP3</strong> - The Post Office Protocol is one of the two most common protocols for communciation between email clients and email servers. Version 3 is the current standard of POP. See <a href="#IMAPS">IMAPS</a>.</p>
+
+<p><strong>POP3S</strong> - Post Office Protocol over Secure Socket Layer. See POP3 above.</p>
+
+<p><strong>SFTP</strong> - The SSH File Transfer Protocol is a secure file transfer and management protocol. This protocol assumes the files are using a secure channel, such as SSH, and that the identity of the client is available to the protocol.</p>
+
+<p><strong>SMTP</strong> - The Simple Mail Transfer Protocol is used by electronic mail servers to send and receive email messages. Email clients use this protocol to relay messages to another computer or web server, but use IMAP or POP to send and receive messages.</p>
+
+<p><a name="TCP"></a><strong>TCP</strong> - The Transmission Control Protocol is a part of the Transport Layer protocol and is one of the core protocols of the Internet Protocol Suite. It provides a reliable, ordered delivery of a stream of bytes from one program on a computer to another program on another computer. Applications that require an ordered and reliable delivery of packets use this protocol. See UDP.&nbsp;</p>
+
+<p><strong>TCP (Client First)&nbsp;</strong>- This protocol is similiar to TCP, but is more efficient when a client is required to write the data to the server before receiving the server's respone.<br />
+<em>Note: TCP_CLIENT_FIRST cannot be placed on a VIP that already dispatches HTTP.</em></p>
+
+<p><strong>TCP (Stream)</strong>&nbsp;-&nbsp;TCP Streaming allows either the client or server to send the first message when a connection is established. This option is for protocols where there is no request-response semantic. Either side of the connection can write the first message, with no response being necessarily required or expected.</p>
+
+<p><a name="UDP"></a><strong>UDP</strong> - The&nbsp;User Datagram Protocol provides a datagram service that&nbsp;emphasizes speed over reliability, It works well with applications that provide security through other measures.&nbsp;</p>
+
+<p><strong>UDP (Stream) </strong>- This protocol is designed to stream media over networks and is built on top of UDP.</p>
+
+<h3>Limitations for UDP Protocols</h3>
+
+<p>UDP-Based protocols (DNS over&nbsp;UDP, UDP, and streaming UDP) are not capable of using the Health Monitor features. Also, SSL Termination is unavailable when using UDP-based ports.</p>

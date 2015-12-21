@@ -1,0 +1,171 @@
+---
+node_id: 4489
+title: Prepare to migrate a Windows server
+permalink: article/preparing-for-a-cloud-server-migration-windows
+type: article
+created_date: '2015-01-22 21:51:03'
+created_by: hounsou.dansou
+last_modified_date: '2015-07-15 12:3739'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: Server Migration
+body_format: tinymce
+---
+
+<p>This article provides recommended actions that you can perform before you migrate your Windows server to mitigate common issues and optimize your server for a faster transition. These recommendations are based on common issues identified by our support technicians and are not required operations. Some of these recommendations can cause significant downtime, so you should schedule them accordingly.</p>
+
+<p><span>For Linux migration preparation</span><span>, see&nbsp;</span><a href="/knowledge_center/node/1325">Prepare to migrate a Linux&nbsp;server</a><span>.</span></p>
+
+<ul>
+	<li><a href="#backupData">Back up your data</a></li>
+	<li><a href="#verifyServerisPatched">Verify that the server is fully patched</a></li>
+	<li><a href="#checkBootStatus">Check the pending reboot status</a></li>
+	<li><a href="#pruneOldData">Prune and archive old data</a></li>
+	<li><a href="#truncateLog">Truncate the database log</a></li>
+	<li><a href="#ensureAutoStart">Ensure all critical services are set to auto start</a></li>
+	<li><a href="#afterMigration">After the migration</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2><a id="backupData" name="backupData"></a>Back up your data</h2>
+
+<p>Before you perform any migration, create a tested, file-level backup of important data. Rackspace offers a backup solution, Cloud Backup, which requires a backup agent to be installed on the server. For instructions on installing this agent, see <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-windows">Rackspace Cloud Backup - Install the agent (Windows)</a>.</p>
+
+<p><strong>Note</strong>:&nbsp;Cloud Backup does not back up live databases. The first step for <a href="http://www.rackspace.com/knowledge_center/article/backing-up-an-ms-sql-server-2008-database">backing up a Microsoft SQL Server database</a> is through Microsoft SQL Server Management Studio.&nbsp;</p>
+
+<p>To set up your backup directory and a schedule for exporting your backup to Cloud Files, see the instructions at <a href="https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0">Rackspace Cloud Backup - Create a Backup</a>.</p>
+
+<p>You can find more information about Cloud Backup at&nbsp;<a href="http://www.rackspace.com/cloud/backup">http://www.rackspace.com/cloud/backup</a>.</p>
+
+<h2><a id="verifyServerisPatched" name="verifyServerisPatched"></a>Verify that the server is fully patched</h2>
+
+<p>If the server is not fully patched, it will likely attempt to install remaining patches during the migration, which will delay the operation. To prevent this issue, install all pending updates before beginning the migration. Use the following instructions appropriate for your server version.</p>
+
+<h3>Windows Server 2008 and 2008 R2</h3>
+
+<ol>
+	<li>Click <strong>Start</strong> &gt; <strong>Control Panel</strong>.</li>
+	<li>Click <strong>Windows Update</strong> to view the information related to updates ready to be installed.<br />
+	If there is a green shield on the Windows Update page, the server has all patches applied.<br />
+	Otherwise, proceed with the installation of any pending updates.</li>
+</ol>
+
+<h3>Windows Server 2012 and 2012 R2</h3>
+
+<ol>
+	<li>Move the cursor to the bottom-right corner of the screen and activate the Charms bar.</li>
+	<li>Click the search icon and type <strong>Control Panel</strong> for the search term.</li>
+	<li>On the ribbon under the search field, click&nbsp;<strong>Control Panel</strong>.</li>
+	<li>Click&nbsp;<strong>System and Security</strong>&nbsp;and then&nbsp;<strong>Windows Update</strong>&nbsp;to see if there are pending updates to install.</li>
+	<li>If so, install the updates at a convenient time.</li>
+</ol>
+
+<h2><a id="checkBootStatus" name="checkBootStatus"></a>Check the pending reboot status</h2>
+
+<p>A migration can require a server reboot if you're performing a full server migration.&nbsp;Verify whether your server is already pending a reboot because of updates, and if it is, perform the reboot before the migration.”</p>
+
+<p>To ensure your server comes online after the migration, confirm that there are no pending Windows Updates that require a reboot. Pending Windows updates can cause errors when run on a newly migrated server, so it is especially important to make sure updates are completed before imaging or migrating a server.</p>
+
+<h4>For Windows Server 2008 and 2008 R2</h4>
+
+<ol>
+	<li>Click <strong>Start &gt;</strong><strong>Control Panel</strong>.</li>
+	<li>Click <strong>Windows Update</strong>.<br />
+	If there is a pending reboot, the page will display a message to restart the server. Reboot the server and apply the updates on reboot.</li>
+</ol>
+
+<h4>For Windows Server 2012 and 2012 R2</h4>
+
+<ol>
+	<li>Move the cursor to the bottom right corner of the screen and activate the Charms bar.</li>
+	<li>Click on the search icon and type <strong>Control Panel</strong> for the search term.</li>
+	<li>On the ribbon under the search field, click <strong>Control Panel</strong>.</li>
+	<li>Click <strong>System and Security</strong> and then <strong>Windows Update</strong> to see if Windows is pending a reboot or restart.<br />
+	If any pending updates are present, reboot the server and apply the updates on reboot.</li>
+</ol>
+
+<h2><a id="pruneOldData" name="pruneOldData"></a>Prune and archive old data</h2>
+
+<p>Remove or export all large or unused files. You can use Cloud Backup to export large files to Cloud Files.</p>
+
+<p>Delete old logs.</p>
+
+<h2><a id="truncateLog" name="truncateLog"></a>Truncate the database log</h2>
+
+<p>If your database log is large, consider truncating it. Microsoft provides instructions at <a href="http://msdn.microsoft.com/en-us/library/ms189493.aspx">http://msdn.microsoft.com/en-us/library/ms189493.aspx</a>.</p>
+
+<h3>Stop all create and update operations in the database</h3>
+
+<p>Rackspaces recommends limiting disk activity during the migration as this will only increase the total amount of time to migrate the server. Normally the biggest contributor to disk activity is the database service Mssql. Before you begin this step, ensure that you have a great maintenance page to inform your customer about an ongoing maintenance.</p>
+
+<h3>Option 1: Put the database in read-only mode</h3>
+
+<p>During the migration, you may consider running your database in read only mode to stop all create and update operations. The TSQL query below must be executed on the Database server.</p>
+
+<pre>
+ALTER DATABASE databaseName
+SET READ_ONLY
+WITH NO_WAIT
+</pre>
+
+<p>If you want to make the server roll back all open connections, run the following query instead:</p>
+
+<pre>
+ALTER DATABASE databaseNeme
+SET READ_ONLY
+WITH ROLLBACK IMMEDIATE
+</pre>
+
+<h3>Option 2: Stop the database service</h3>
+
+<p>If you prefer to stop the database service instead of putting the database in read only mode, use the following steps to stop the database service.</p>
+
+<h4>Windows Server 2008 and 2008 R2</h4>
+
+<ol>
+	<li>Click <strong>Start &gt;&nbsp;All Programs &gt;&nbsp;Microsoft SQL Server &gt;&nbsp;Configuration Tools &gt;&nbsp;SQL Server Configuration Manager</strong>.</li>
+	<li>In the <strong>SQL&nbsp;Server Configuration Manager</strong>, expand SQL Server&nbsp;<strong>Services</strong>.</li>
+	<li>In the right pane, right-click <strong>SQL Server (<em>instanceName</em>)</strong> and stop the service.<br />
+	<em>instanceName</em> is the instance name of the database server.</li>
+</ol>
+
+<h4>Windows Server 2012 and 2012 R2</h4>
+
+<ol>
+	<li>Move the cursor&nbsp; to the bottom right corner of the screen and activate the Charms bar.</li>
+	<li>Click on the search icon, and type “SQL Server Configuration Manager”.</li>
+	<li>On the ribbon under the search field, click <strong>SQL Server Configuration Manager</strong>.</li>
+	<li>In the SQL<strong> Server Configuration Manager</strong>, expand SQL Server <strong>Services</strong>.</li>
+	<li>In the right pane, right click <strong>SQL Server (<em>instanceName</em>)</strong> and stop the service.<br />
+	<em>instanceName </em>is the instance name of the database server.</li>
+</ol>
+
+<h2><a id="ensureAutoStart" name="ensureAutoStart"></a>Ensure that all critical services are set to start automatically</h2>
+
+<p>Review and confirm that all of the services critical to your processes are set to start automatically.</p>
+
+<h4>Windows Server 2008 and 2008 R2</h4>
+
+<ol>
+	<li>Click the <strong>Start </strong>menu, type <strong>services.msc</strong> in the search field and press <strong>Enter</strong>.</li>
+	<li>In the <strong>Services Management</strong> window, double click a service that you want to configure to automatically start, and set the startup type to <strong>Automatic</strong>.</li>
+</ol>
+
+<h4>Windows Server 2012 and 2012 R2</h4>
+
+<ol>
+	<li>Move the cursor to the bottom right corner of the screen and activate the Charms bar.</li>
+	<li>Click the search icon and type “services.msc”. On the ribbon under the search field, click <strong>services.msc</strong>.</li>
+	<li>When the <strong>Services Management</strong> window opens, double click on a service that you want to configure to auto start and set the startup type to <strong>Automatic</strong>.</li>
+</ol>
+
+<h2><a id="afterMigration" name="afterMigration"></a>After the migration</h2>
+
+<ul>
+	<li>Ensure that the server is online. You can ping the IP address by running the ping command followed by your server’s IP address.</li>
+	<li>Ensure that the remote connection to the server works by initiating an RDP session to the server.</li>
+	<li>Ensure that all sites or applications load.</li>
+	<li>Ensure that the database is running and accessible. If you turned off the database service before the migration, turn on the database service again.</li>
+	<li>If you have more than one server, ensure that they can communicate.</li>
+</ul>

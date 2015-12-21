@@ -1,0 +1,90 @@
+---
+node_id: 2010
+title: Creating a monitoring check using the Cloud Control Panel
+permalink: article/creating-a-monitoring-check
+type: article
+created_date: '2012-08-15 20:31:46'
+created_by: Susan Million
+last_modified_date: '2015-07-16 13:5648'
+last_modified_by: stephanie.fillmon
+products: Cloud Monitoring
+categories: Control Panel Software
+body_format: tinymce
+---
+
+<p>This article describes how to create monitoring checks by using Cloud Monitoring through the Cloud Control Panel. Each of the monitoring checks that you can create with the Cloud Control Panel are based on predefined check templates.</p>
+
+<p>You can view the settings for each check template in the <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarm-examples.html">Rackspace Cloud Monitoring Developer Guide</a>.</p>
+
+<p>You can also use the Rackspace <a href="http://docs.rackspace.com">Cloud Monitoring API</a> <a href="http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-monitoring">raxmon</a> command-line interface to perform these and other actions on a Cloud Monitoring check.</p>
+
+<p>For the latest information about Cloud Monitoring pricing and other general questions, see the <a href="http://www.rackspace.com/knowledge_center/product-faq/cloud-monitoring">Cloud Monitoring FAQ</a> and the <a href="http://www.rackspace.com/cloud/monitoring/">Cloud Monitoring main product page</a>.</p>
+
+<p><strong>Note:</strong> With General Purpose servers, Cloud Monitoring monitors only the system disk. The data disk is not monitored.</p>
+
+<hr />
+<h3>Contents</h3>
+
+<ul>
+	<li><a href="#Create">Creating a Monitoring Check</a></li>
+	<li><a href="#ChkRegion">The Check Region</a></li>
+	<li><a href="#ChkStatus">The Check Status</a></li>
+</ul>
+
+<h2><a id="Create" name="Create"></a>Create a Monitoring Check</h2>
+
+<ol>
+	<li>Log in to the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>&nbsp;at <a href="http://mycloud.rackspace.com" target="_blank">http://mycloud.rackspace.com</a>.</li>
+	<li>In the list of servers, click the name of the server for which you want to create a check.</li>
+	<li>On the server details page, scroll to the Monitoring Checks section and click <strong>Create Check</strong>.</li>
+	<li>From the <strong>Check Type</strong> list, select the service that you want to monitor.
+	<p><img alt="" border="5" height="283" src="/knowledge_center/sites/default/files/field/image/CreateCheck.png" width="465" /><br />
+	&nbsp;</p>
+	</li>
+	<li>Enter a descriptive name for the check in the Check Name box.</li>
+	<li>If you selected the <strong>HTTP Check (website)</strong> check, enter the URL of the website that you want to monitor.</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;<img alt="" border="5" height="538" src="/knowledge_center/sites/default/files/field/image/CheckDetails3.png" width="542" /></p>
+
+<ul>
+	<li><em>(Optional: HTTP Check Only)</em> Click <strong>Advanced Options</strong> and enter a word or phrase in the <strong>Body Match</strong> box that will appear on the page when it loads successfully. For example, you can do a body match on the copyright date.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2><a id="ChkRegion" name="ChkRegion"></a>The Check Region</h2>
+
+<p>Each check is configured by default to originate from the 3 regions: DFW, ORD, and LON. Once your monitoring check has been created, you can edit the Parameters under the Check Details to include additional regions, including: IAD (Northern Virginia), HKG (Hong Kong), and SYD (Sydney).</p>
+
+<p><img alt="" height="390" src="/knowledge_center/sites/default/files/field/image/EditMonitoringParam.png" width="715" /></p>
+
+<p>&nbsp;</p>
+
+<h2><a id="ChkStatus" name="ChkStatus"></a>The Check Status</h2>
+
+<p>The check status is calculated by determining if there is an agreement from a majority of the monitoring zones (two out of three monitoring zones running the check). This method helps to avoid reporting false negatives. A check has to fail in two of the three monitoring zones before the check state is deemed CRITICAL.</p>
+
+<p>The combined results of the check from all three monitoring zones determine the check's state. The check state can be one of the following:</p>
+
+<ul>
+	<li>
+	<p>Green = OK</p>
+	</li>
+	<li>
+	<p>Yellow = WARNING</p>
+	</li>
+	<li>
+	<p>Red = CRITICAL. The Technical Contact (the primary contact on the Rackspace account) will receive an email describing the situation.</p>
+	</li>
+</ul>
+
+<p>The following example shows a check in the OK state and one in the CRITICAL state:</p>
+
+<p><img alt="" border="&quot;5" height="106" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Check%20Status_0.png" title="" width="534" /></p>
+
+<h2>&nbsp;</h2>
+
+<p>&nbsp;</p>

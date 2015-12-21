@@ -1,0 +1,159 @@
+---
+node_id: 538
+title: Rackspace Cloud Sites Essentials - MyLittleAdmin Database Management Interface
+permalink: article/rackspace-cloud-sites-essentials-4-mylittleadmin-database-management-interface
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-07-15 12:5235'
+last_modified_by: kyle.laffoon
+products: Cloud Sites
+categories: MSSQL
+body_format: tinymce
+---
+
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><strong>Note</strong>: This article is written for our <a href="https://manage.rackspacecloud.com/" target="_self">Cloud Sites Control Panel</a>. You can get to it from the Cloud Control Panel by clicking your name in the upper-right corner and selecting <a href="https://manage.rackspacecloud.com/" target="_self">Cloud Sites Control Panel</a>.</p>
+
+<p>Rackspace Cloud Sites has made it easy to manage your MSSQL 2012 or 2014&nbsp;databases by creating a server-wide install of a tool called myLittleAdmin.</p>
+
+<p>You can reach this interface at:</p>
+
+<ul>
+	<li>DFW 1-1:&nbsp;<a href="https://mssql.dfw1-1.websitesettings.com/mla/">https://mssql.dfw1-1.websitesettings.com/mla/</a></li>
+	<li>DFW 1-2:&nbsp;<a href="https://mssql.dfw1-2.websitesettings.com/mla/">https://mssql.dfw1-2.websitesettings.com/mla/</a></li>
+	<li>ORD:&nbsp;<a href="https://mssql.ord1-1.websitesettings.com/mla/">https://mssql.ord1-1.websitesettings.com/mla/</a></li>
+</ul>
+
+<p><strong>NOTE:</strong> <em>To find out if your account is located in our ORD or DFW datacenter, check the test link for your site. If your testlink includes dfw in the URL, such as www.domain.com.php54-2.dfw1-1.websitetestlink.com then your account is in DFW.</em></p>
+
+<p>When logging into myLittleAdmin, you will need to make sure to select the correct server choice from the drop down menu. You can find the correct value within the control panel on the <strong>View Database</strong> page.</p>
+
+<p><strong>NOTE:</strong> <em>Alternatively, you can use other programs such as Management Studio Express or Enterprise Manager to manage your MSSQL databases as well.</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Logging Into MyLittleAdmin</strong></p>
+
+<ul>
+	<li>Login the <a href="http://manage.rackspacecloud.com">Rackspace Cloud Control Panel</a></li>
+	<li>Navigate to <strong>Hosting-&gt;Cloud Sites</strong>
+	<p><img alt="" height="246" src="/knowledge_center/sites/default/files/field/image/hosting_0.png" width="187" /></p>
+	</li>
+</ul>
+
+<ul>
+	<li>Click on the&nbsp;<strong>domain name</strong>&nbsp;that the database exists under</li>
+	<li>Click on the&nbsp;<strong>Features</strong>&nbsp;tab
+	<p><img alt="" border="2" height="111" src="https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/sites_tabs.png" width="563" /></p>
+	</li>
+</ul>
+
+<ul>
+	<li>Confirm that the database is active by scrolling to the&nbsp;Databases&nbsp;section; if the database is active it will display a green check mark icon in the status column as shown in the following figure:
+	<p><img alt="" border="2" height="180" src="https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/sites_dblist_0.png" width="323" /></p>
+	</li>
+</ul>
+
+<ul>
+	<li>To start working with this database, you will need the <strong>Hostname</strong>, <strong>username</strong> and <strong>password</strong>. The details can be viewed by clicking on the hyperlink for the database, which results in a page that should be similar to this:<br />
+	<br />
+	<img alt="" border="2" height="612" src="https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/dbinfo_0.png" width="545" />
+	<ul>
+		<li>The Server Name is listed as&nbsp;<strong>Hostname</strong>&nbsp;under the&nbsp;Database Information&nbsp;section.</li>
+		<li>The Login is the <strong>username</strong>.</li>
+	</ul>
+	</li>
+</ul>
+
+<p><strong>NOTE:</strong> <em>The usernames are listed under the&nbsp;Database Users&nbsp;section; by default there is only one user and this would be the username you would use to login to myLittleAdmin. If there are multiple users listed, you may login with any of them. The number that prefixes the username is the account number for the website owner (yourself or your client) and&nbsp;is&nbsp;important when logging in, so be sure to enter the username exactly as it is listed on this page.</em></p>
+
+<ul>
+	<li>The <strong>password</strong> is the password associated with the database user, which would have been chosen when you created the database and database user.</li>
+</ul>
+
+<p><strong>NOTE:</strong> <em>Because this user is separate from your control panel account and FTP users, the password may or may not be the same as those users. If you cannot remember your database password you can reset the password by clicking on the user in the list and filling out the password form; however,&nbsp;please be aware that your website code may rely on the existing password, so changing the password for a database user could cause database connection errors on your website!&nbsp;If you are working with a live website and cannot risk this password reset, please contact a web developer for assistance.</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>With the above information, you're ready to start working with the database.</strong></p>
+
+<ul>
+	<li>To do so, click on the&nbsp;<strong>Online Manager&nbsp;link</strong></li>
+	<li>A myLittleAdmin interface will display in the browser. Select the correct <strong>Server Name--which is the&nbsp;Hostname&nbsp;from the details page</strong>, as outlined above--from the drop down list.</li>
+	<li>Enter the <strong>database name</strong> (including the numbered prefix as shown below)</li>
+	<li>Enter the <strong>login</strong>--which is one of the&nbsp;Usernames&nbsp;from the details page, as outline above--(including the numbered prefix as shown below)</li>
+	<li>Finally, enter the <strong>password</strong> for this database user and click&nbsp;<strong>Connect</strong>
+	<p><img alt="" border="2" height="287" src="https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/dblogin_0.png" width="404" /></p>
+	</li>
+</ul>
+
+<ul>
+	<li>Now that you're logged into myLittleAdmin, you can manage your MSSQL database as necessary.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h2>Backing Up Your MSSQL Database</h2>
+
+<ol>
+	<li>After you are logged into the online manager, click on&nbsp;<strong>Tools</strong>&nbsp;in the bottom of the left frame.<br />
+	&nbsp;</li>
+	<li>Then on the&nbsp;<strong>Tools</strong>&nbsp;menu, click&nbsp;<strong>Database Backup and Restore.</strong><br />
+	<br />
+	This will open the myLittleBackup interface in a new window:<br />
+	&nbsp;</li>
+	<li>From myLittleBackup, click on&nbsp;<strong>Backup databases</strong>&nbsp;from the left menu.<br />
+	<br />
+	The database backup form will load in the window's right frame.<br />
+	&nbsp;</li>
+	<li>In step 1, choose the database you would like to backup from the drop-down menu (which should be the only one listed) and click OK to continue.<br />
+	&nbsp;</li>
+	<li>Step 2 is just for information and verification; you will find generic information about your database in this step. Keep in mind that the backup process duration depends on the database size you see in this step. Since you only have one database you can just click OK:.
+	<ul>
+		<li><strong>Note:</strong>&nbsp;If you see the notification (<em>There are too many backup files in your backup folder</em>), it means you all ready have a backup file saved in myLittleBackup.</li>
+	</ul>
+	</li>
+	<li>Step 3 is&nbsp;<strong>optional</strong>, but feel free to choose a backup set name and description.<br />
+	<br />
+	If you don't want choose a backup set name and description or you're not sure what to use, just leave it blank or use the database name as both!<br />
+	&nbsp;</li>
+	<li>If everything above looks correct, you're ready to click the&nbsp;<strong>Backup</strong>&nbsp;button in Step 4.<br />
+	<br />
+	During this time you will see a loading message on the screen. Please take heed of the warning myLittleBackup gives:&nbsp;<strong>You're now ready to backup your database. The process can take several minutes. Be patient and do not click the stop button until done.</strong><br />
+	&nbsp;</li>
+</ol>
+
+<p><a id="Finish_Line" name="Finish_Line"></a></p>
+
+<h2>Finish Line</h2>
+
+<p>Congratulations! You have just created a backup of your MSSQL database! You should now see a link to download your database backup in Step 5.</p>
+
+<p>If you experience a problem or you have further questions or concerns, please do not hesitate to contact our technical support 24x7 via phone, chat or by submitting a ticket through your control panel.</p>
+&nbsp;
+
+<p>This concludes the series on adding and managing your databases for Cloud Sites. We've discussed how to create a new MySQL database, a MSSQL database and connect to the online interface offered by the Rackspace Cloud, and hos to perform database backups. In the next series, we will dive into the different web services offered in Cloud Sites.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://admin.rackspace.com/knowledge_center/Cloud_Sites_First_48">Back to the First 48 Guide</a></p>
+
+<p><a href="https://admin.rackspace.com/knowledge_center/cloud_sites_web_services">Forward to the Cloud Sites Web Services Guide</a></p>
+</div>
+</div>
+</div>
+
+<div class="book-navigation" id="book-navigation-1533">
+<div class="page-links clearfix"><a class="page-up" href="https://admin.rackspace.com/knowledge_center/article/cloud-sites-essentials-guide-managing-cloud-sites-databases" title="Go to parent page">up</a></div>
+</div>
+</div>
+
+<div>
+<p>&nbsp;</p>
+</div>

@@ -1,0 +1,106 @@
+---
+node_id: 3978
+title: Limits for Cloud Big Data
+permalink: article/what-are-the-limits-for-cloud-big-data
+type: article
+created_date: '2014-03-28 17:07:42'
+created_by: rose.contreras
+last_modified_date: '2015-05-08 20:1447'
+last_modified_by: kelly.holcomb
+products: Cloud Big Data
+categories: Apache
+body_format: tinymce
+---
+
+<p>All accounts, by default, have a preconfigured set of thresholds (or limits) to manage capacity and prevent abuse of the system. The system recognizes <em>rate limits</em> and <em>absolute limits</em>. Rate limits are thresholds that are reset after a certain amount of time passes. Absolute limits are fixed.</p>
+
+<h2>Rate limits</h2>
+
+<p>Rate limits are specified in both a human-readable wildcard URI and a machine-processable regular expression. The regular expression boundary matcher <code>^</code> takes effect after the root URI path. For example, the regular expression <code>^/v1.0/clusters</code> would match the bold portion of the following URL: <code>https://dfw.bigdata.api.rackspacecloud.com<strong>/v1.0/clusters</strong></code></p>
+
+<p>The following table specifies the default rate limits for all GET, POST, PUT, and DELETE API operations for clusters.</p>
+
+<table border="1" cellpadding="5">
+	<thead>
+		<tr>
+			<th>Verb</th>
+			<th>URI</th>
+			<th>Regular expression</th>
+			<th>Default</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>GET changes-since</td>
+			<td>*/clusters/*</td>
+			<td>^/vd+.d+/clusters.*</td>
+			<td>3 per minute</td>
+		</tr>
+		<tr>
+			<td>POST</td>
+			<td>*/clusters/*</td>
+			<td>^/vd+.d+/clusters.*</td>
+			<td>2 per minute</td>
+		</tr>
+		<tr>
+			<td>POST clusters</td>
+			<td>*/clusters/*</td>
+			<td>^/vd+.d+/clusters.*</td>
+			<td>50 per day</td>
+		</tr>
+		<tr>
+			<td>PUT</td>
+			<td>*/clusters/*</td>
+			<td>^/vd+.d+/clusters.*</td>
+			<td>2 per minute</td>
+		</tr>
+		<tr>
+			<td>DELETE</td>
+			<td>*/clusters/*</td>
+			<td>^/vd+.d+/clusters.*</td>
+			<td>5 per minute</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Rate limits are applied in order relative to the verb, going from least to most specific. For example, although the threshold for issuing a POST request to <code>/v1.0/*</code> is 2 per minute, you cannot issue a POST request to <code>/v1.0/*</code> more than 50 times within a single day.</p>
+
+<p>If you exceed the thresholds established for your account, a 413 (OverLimit) HTTP response is returned with a Retry-After header to notify the client when it can attempt to try again.</p>
+
+<h2>Absolute limits</h2>
+
+<p>The following table describes the absolute limits that are set.</p>
+
+<table border="1" cellpadding="2">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+			<th>Limit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Node Count</td>
+			<td>Maximum number of allowed data notes</td>
+			<td>5</td>
+		</tr>
+		<tr>
+			<td>Disk</td>
+			<td>Maximum disk capacity across all data nodes, in gigabytes (GB)</td>
+			<td>5120</td>
+		</tr>
+		<tr>
+			<td>RAM</td>
+			<td>Maximum RAM across all data notes, in gigabytes (GB)</td>
+			<td>40960</td>
+		</tr>
+		<tr>
+			<td>VCPUs</td>
+			<td>Maximum virtual CPUs across all data nodes</td>
+			<td>10</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

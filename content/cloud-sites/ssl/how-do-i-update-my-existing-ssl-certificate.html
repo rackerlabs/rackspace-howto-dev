@@ -1,0 +1,93 @@
+---
+node_id: 1183
+title: How Do I Update My Existing SSL Certificate
+permalink: article/how-do-i-update-my-existing-ssl-certificate
+type: article
+created_date: '2011-08-16 17:01:03'
+created_by: chris.farmer
+last_modified_date: '2015-10-06 18:5026'
+last_modified_by: margaret.eker
+products: Cloud Sites
+categories: SSL
+body_format: tinymce
+---
+
+<p>Updating your existing SSL Certificate is a quick and simple process. Whether your SSL Certificate is expiring or you are simply needing to change to a new SSL Certificate, you can follow these instructions to get your SSL updated and installed quickly.&nbsp;<br />
+<br />
+<strong>Attention MyRack users:</strong> To update the SSL certificates for your environment, follow the instructions in the <a href="https://community.rackspace.com/products/f/43/t/4478">Reissuing your Rackspace SSL Certificates</a> article posted in the Rackspace Support forum.</p>
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<div id="toctitle">
+			<h2>Contents</h2>
+			</div>
+
+			<ul>
+				<li class="toclevel-1"><a href="#Getting_Started"><span class="tocnumber">1</span> <span class="toctext">Getting Started</span></a></li>
+				<li class="toclevel-1"><a href="#Renewing_Your_Certificate"><span class="tocnumber">2</span> <span class="toctext">R</span>enewing Your Certificate</a></li>
+				<li class="toclevel-1"><a href="#Installing_the_Certificate"><span class="tocnumber">3</span> <span class="toctext">Installing the Certificate</span></a></li>
+				<li class="toclevel-1"><a href="#DNS_Update"><span class="tocnumber">4</span> <span class="toctext">DNS Update</span></a></li>
+				<li class="toclevel-1"><a href="#What_To_Watch_For"><span class="tocnumber">5</span> <span class="toctext">What To Watch For</span></a></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><a id="Getting_Started" name="Getting_Started"></a></p>
+
+<h2><span class="mw-headline">Getting Started</span></h2>
+
+<p>In order to update or renew your SSL Certificate, you will need your CSR. If you don't have your CSR saved, please contact support to have a new one generated. You can contact our Fanatical Support through a ticket, live chat or via phone and we can assist you with obtaining this information.</p>
+
+<h2><a name="Renewing_Your_Certificate"></a>Renewing Your Certificate</h2>
+
+<p>Next, you will need to update/renew your SSL Certificate. SSL Certificates are available from a number of third party sources. Some recommended sellers are <a class="external text" href="http://www.rapidssl.com" rel="nofollow" title="http://www.rapidssl.com">RapidSSL</a>, <a class="external text" href="http://www.geotrust.com" rel="nofollow" title="http://www.geotrust.com">Geotrust</a>, and <a class="external text" href="http://www.verisign.com" rel="nofollow" title="http://www.verisign.com">Verisign</a>. <a href="/knowledge_center/index.php/What_kinds_of_SSL_certificates_can_be_installed%3F" title="What kinds of SSL certificates can be installed?">Click here for a more complete list of supported certificates.</a></p>
+
+<p>Follow your vendor's SSL Certificate renewal process; in particular you may require the following details:</p>
+
+<ul>
+	<li><strong>Server type</strong>: Apache 2</li>
+	<li><strong>SSL type</strong>: OpenSSL</li>
+	<li><strong>CSR</strong></li>
+</ul>
+
+<p>Once you have completed your certificate renewal, you're ready to <a href="#Installing_the_Certificate" title="">install the new certificate</a>!</p>
+
+<p><a id="Installing_the_Certificate" name="Installing_the_Certificate"></a></p>
+
+<h2><span class="mw-headline">Installing the Certificate</span></h2>
+
+<p><span class="mw-headline">In order to install your new SSL certificate, you will need the following information:</span></p>
+
+<ol>
+	<li>Certificate</li>
+	<li>Private Key</li>
+	<li>Intermediate Certificate (Typically supplied in a separate file from the vendor)</li>
+</ol>
+
+<p>Once you have the above information, you can install your new certificate by clicking on the Security tab of your site, then click on the Edit Certificate link:</p>
+
+<p><img alt="" border="1" src="/knowledge_center/sites/default/files/field/image/Edit%20Certificate.png" width="650" /></p>
+
+<p>On the next screen, you will see three fields for Certificate, Private Key, and Intermediate Certificate; simply replace the current information with your updated info and hit save.</p>
+
+<p><a id="DNS_Update" name="DNS_Update"></a></p>
+
+<h2><span class="mw-headline">DNS Update</span></h2>
+
+<p>Because you are updating an existing SSL certificate, you will not need to wait for propagation as you would when installing a new SSL Certificate.</p>
+
+<p><a id="What_To_Watch_For" name="What_To_Watch_For"></a></p>
+
+<h2><span class="mw-headline">What To Watch For</span></h2>
+
+<ul>
+	<li>Rackspace Cloud Sites does not support wildcard certificates - such as&nbsp;<strong>*.domain.com</strong>&nbsp;or&nbsp;<strong>*.example.com</strong>. - or self-signed certificates.</li>
+	<li>Rackspace Cloud Sites does not support Extended Validation certificates (EV).</li>
+	<li>Removing the SSL certificate from your site will change its IP address, which can require a DNS change.</li>
+</ul>

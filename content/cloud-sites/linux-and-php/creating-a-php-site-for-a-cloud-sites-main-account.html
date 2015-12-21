@@ -1,0 +1,50 @@
+---
+node_id: 532
+title: Creating a PHP Site for a Cloud Sites main account
+permalink: article/creating-a-php-site-for-a-cloud-sites-main-account
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2014-08-25 02:0243'
+last_modified_by: rose.contreras
+products: Cloud Sites
+categories: Linux and PHP
+body_format: tinymce
+---
+
+<p><strong>NOTE:</strong> This article refers to the <a href="https://manage.rackspacecloud.com/" target="_blank">Cloud Sites Control Panel</a>. You can access this interface from the <a href="https://mycloud.rackspace.com/" target="_blank">Cloud Control Panel</a> by clicking your username in the upper-right corner of the control panel and selecting Cloud Sites Control Panel.</p>
+<p><strong>Pre-reqs</strong></p>
+<ul>
+<li>User has administration access to the website</li>
+</ul>
+<p><strong>Procedure</strong></p>
+<ul>
+<li>Login to the <a class="external text" title="http://manage.rackspacecloud.com/pages/Login.jsp|" href="http://manage.rackspacecloud.com/pages/Login.jsp|" rel="nofollow">Cloud Sites Control Panel</a></li>
+<li>If you are new to The Rackspace Cloud, please refer to <a class="external text" title="/knowledge_center/index.php/Adding_a_new_website" href="/knowledge_center/index.php/Adding_a_new_website" rel="nofollow">Adding a new website</a> and add the website.</li>
+<li>Navigate to Hosting -&gt; Cloud Sites -&gt; This will list all the domains/websites owned by the account, now click on the php website hyperlink</li>
+</ul>
+<p><img src="/knowledge_center/sites/default/files/field/image/Screenshot_5_20_13_12_11_PM.png" alt="" width="509" height="285" /></p>
+<ul>
+<li>Verify that logging is turned on if needed. Refer to <a class="external text" title="/knowledge_center/index.php/Enabling_logging_for_a_website" href="/knowledge_center/index.php/Enabling_logging_for_a_website" rel="nofollow">Enable logging for a website</a></li>
+<li>Upload a sample index.php file (like the one shown below) to the main directory for the website using FTP - Refer to <a class="external text" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP" href="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP" rel="nofollow">Upload content to a website using FTP</a></li>
+</ul>
+<pre> &lt;html&gt;
+
+  &lt;head&gt;
+   &lt;title&gt;Sample Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+   &lt;?php echo '&lt;p&gt;Hello World&lt;/p&gt;';&nbsp;?&gt; 
+  &lt;/body&gt;
+
+ &lt;/html
+ </pre>
+<ul>
+<li>Navigate to index.php using the Test URL if necessary. Refer to <a class="external text" title="/knowledge_center/index.php/Using_a_staging_URL" href="/knowledge_center/index.php/Using_a_staging_URL" rel="nofollow">Using a Staging URL</a>. Ensure that is served by Cloud Sites.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Additional Resources</strong></p>
+<ul>
+<li>A complete <a class="external text" title="/knowledge_center/index.php/List_of_Articles" href="/knowledge_center/index.php/List_of_Articles" rel="nofollow">List of Articles</a> is available to address user questions.</li>
+</ul>
+<p>--<strong>RKN</strong> - 12/6/2009</p>

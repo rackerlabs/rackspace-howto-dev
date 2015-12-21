@@ -1,0 +1,49 @@
+---
+node_id: 3780
+title: Rackspace Auto Scale overview
+permalink: article/rackspace-auto-scale-overview
+type: article
+created_date: '2013-11-15 21:00:09'
+created_by: maria.abrahms
+last_modified_date: '2014-11-18 23:3233'
+last_modified_by: David Hendler
+products: Auto Scale
+categories: Scaling and High Availability
+body_format: tinymce
+---
+
+<p>Rackspace Auto Scale automatically scales resources that are allocated to your application up or down based on user-defined need. Scaling events can be based on scaling rules that you define through your monitoring system, or on a simple schedule that you configure.</p>
+
+<h3>How Is Auto Scale Used?</h3>
+
+<p>Scaling is triggered either by webhooks that are placed in monitoring services or by a schedule. An Auto Scale group, or <em>scaling group</em>, consists of the following items:</p>
+
+<ul>
+	<li>Scaling group configuration: The group name, cooldown time limit, and minimum and maximum number of needed servers</li>
+	<li>Launch configuration: When an Auto Scale event is triggered, the actions taken to create a server by specifying which image to start and which load balancer to attach to the server</li>
+	<li>Scaling policy: Defines the action of the policy (for example, scale up by 5 servers)</li>
+	<li>Webhook (capability-based URL): Triggers a scaling policy (for example, “When this URL is hit, execute this scaling policy.”)</li>
+</ul>
+
+<h3>Use Cases</h3>
+
+<ul>
+	<li><strong>eCommerce sale </strong><br />
+	Customer W has a one-day sale on its site on Monday, that is, beginning at 12:01 a.m. Monday and ending at 12:00 a.m. Tuesday. The customer predicts substantially increased traffic because of this sale. The customer can create a schedule-based policy to add 10 servers to its pool starting at 11:45 p.m. Sunday, which gives enough time for the servers to be created, configured, and added to the load balancer. The customer can create a second schedule to decrease the number of servers by 10 starting at 12:00 a.m. Tuesday morning, after the sale has ended.</li>
+	<li><strong>Marketing campaign </strong><br />
+	Similar to the preceding use case, Customer X is running a week-long marketing campaign and expects 20 percent more traffic to their website. The campaign begins at 7:00 a.m. EST on Monday and ends at 7:00 p.m. EST on Friday. The customer can create a schedule-based policy to increase the number of servers in their pool by 20 percent starting at 6:30 a.m. EST on Monday, which gives enough time for the servers to be created, configured, and added to the load balancer. The customer can create a second schedule-based policy to decrease the number of servers by 20 percent at 7:00 p.m. EST on Friday evening.</li>
+</ul>
+
+<ul type="disc">
+	<li><strong>Known traffic fluctuations</strong><br />
+	Customer Y notices that, traffic to their website decreases by 15 percent every weekend. That is, traffic decreases every Friday night and returns to normal on Monday morning. The customer can create a recurring schedule-based policy to decrease the number of servers by 15 percent starting at 6:00 p.m. every Friday. The customer can also create a second schedule-based policy to increase the number of servers by 15 percent every Monday morning at 6:00 a.m.</li>
+	<li><strong>Integration with Monitoring</strong><br />
+	Customer Z has unpredictable traffic when publishing blog posts. The customer already monitors the environment with Nagios. The customer creates a scaling policy to add 10 percent more servers with a webhook. The customer then creates a Nagios alert to trigger the webhook when traffic exceeds 6000 requests per minute. The customer creates a second policy to return the servers to the baseline when the spike decreases.</li>
+</ul>
+
+<h3>Additional resources</h3>
+
+<ul>
+	<li>To learn about using Auto Scale in the Cloud Control Panel, see the <a href="http://www.rackspace.com/knowledge_center/getting-started/auto-scale">Rackspace Auto Scale Getting Started page</a>.</li>
+	<li>To learn more about the Rackspace Auto Scale API, see the&nbsp;<a class="link" href="http://docs.rackspace.com/cas/api/v1.0/autoscale-gettingstarted/content/Overview.html" target="_top">Rackspace Auto Scale Getting Started guide Overivew section.</a></li>
+</ul>

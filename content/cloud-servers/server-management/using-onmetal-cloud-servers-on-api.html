@@ -1,0 +1,217 @@
+---
+node_id: 4156
+title: Using OnMetal Cloud Servers through API
+permalink: article/using-onmetal-cloud-servers-on-api
+type: article
+created_date: '2014-07-24 04:53:40'
+created_by: russell.haering
+last_modified_date: '2014-11-10 17:5559'
+last_modified_by: rose.contreras
+products: Cloud Servers
+categories: Server Management
+body_format: full_html
+---
+
+<p>OnMetal Cloud Servers enables you to boot bare metal servers via the Rackspace Cloud Servers API. Use the following steps to set up an OnMetal server through the API:</p>
+
+<ul>
+	<li><a href="#apiClientSetup" target="_self">API Client Setup</a></li>
+	<li><a href="#uploadKey" target="_self">Uploading an SSH key</a></li>
+	<li><a href="#bootServer" target="_self">Boot your server</a></li>
+	<li><a href="#loginDelete" target="_self">Logging in or deleting a server</a></li>
+	<li><a href="#usingOnMetal" target="_self">Using OnMetal</a>
+	<h2><a name="apiClientSetup"></a></h2>
+	</li>
+</ul>
+
+<p><strong>Note:</strong>&nbsp;For the parallel steps in the Cloud Control Panel, see <a href="http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers">Using OnMetal Cloud Servers</a>.</p>
+
+<h2>Set up the API client</h2>
+
+<p>If you will be creating your OnMetal server through the API and do not yet have an OpenStack Nova API client set up, you must do so.</p>
+
+<ol>
+	<li>Install <a href="http://supernova.readthedocs.org/en/latest/">supernova </a>and rackspace-novaclient via <a href="https://pip.pypa.io/en/latest/">pip</a>:
+
+	<pre>
+    pip install supernova rackspace-novaclient
+	</pre>
+	</li>
+	<li>After you have been granted access to OnMetal, configure supernova to work with the Rackspace IAD region by adding the following information to <code>~/.supernova</code>:
+	<pre>
+ [iad] 
+ OS_AUTH_URL=https://identity.api.rackspacecloud.com/v2.0/ 
+ OS_USERNAME=&lt; Your Rackspace Username &gt;
+ OS_PASSWORD=&lt; Your Rackspace API Key &gt; 
+ OS_TENANT_NAME=&lt; Your Rackspace Tenant ID&gt; 
+ OS_AUTH_SYSTEM=rackspace OS_REGION_NAME=IAD
+ NOVA_SERVICE_NAME=cloudServersOpenStack
+	</pre>
+	</li>
+</ol>
+
+<p><strong>Note</strong>: Be sure to set the appropriate values for the following parameters:</p>
+
+<ul>
+	<li><strong>OS_USERNAME</strong> Your Rackspace Cloud user name, which is the user name that you use to log in to the Cloud Control Panel.</li>
+	<li><strong>OS_PASSWORD</strong> Your Rackspace Cloud API key, which you can access in the Cloud Control Panel by clicking <strong>Account: <em>userName</em> &gt; Account Settings</strong>.</li>
+	<li><strong>OS_TENANT_NAME</strong> Your Rackspace Cloud tenant ID, which is displayed as your <strong>Account #</strong> in the <strong>Account: <em>username</em></strong> menu of the Cloud Control Panel. Do not include the #.</li>
+</ul>
+
+<p><strong>IMPORTANT:</strong> OnMetal servers must be created using an SSH key pair. Thus, you should ignore the administrator password returned by a create server operation because it does not allow access to the OnMetal server. For information about generating SSH Keys, see <a href="http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient" target="_self">Manage SSH Key Pairs for Cloud Servers with python-novaclient</a>.</p>
+
+<h2>Upload an SSH key pair</h2>
+
+<p>OnMetal servers do not support password-based login, so you must upload an SSH key pair.</p>
+
+<pre>
+supernova iad keypair-add –pub-key &lt;path to your public key&gt; &lt;public key name&gt;</pre>
+
+<p>For example:</p>
+
+<pre>
+supernova iad keypair-add --pub-key ~/.ssh/id_rsa.pub Russell</pre>
+
+<p>For information on generating SSH Keys, see <a href="http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient" target="_self">Manage SSH Key Pairs for Cloud Servers with python-novaclient</a>.</p>
+
+<h2><a name="bootServer"></a>Boot your server</h2>
+
+<p>To boot your OnMetal server, choose an image (operating system) and a flavor (server size).</p>
+
+<h3>Supported Images</h3>
+
+<ul>
+	<li>OnMetal - CentOS 7</li>
+	<li>OnMetal - CentOS 6.5<br />
+	<strong>Note</strong>: Run the CentOS 6.5 image only on a Linux Kernel release of 3.10 or higher, to avoid performance degradation.</li>
+	<li>OnMetal - Debian 7 (Wheezy)</li>
+</ul>
+
+<p><strong>Note</strong>: Other images will be available soon.</p>
+
+<h3>Supported Flavors</h3>
+
+<p><img alt="" height="168" src="/knowledge_center/sites/default/files/field/image/SupportedFlavors_0.png" width="704" /></p>
+
+<ul>
+	<li>All flavors have a 32 GB system disk.</li>
+	<li>All flavors include dual 10 GigE NICs in a high availability bonded configuration and use VLAN tagging to access ServiceNet (for traffic within a Rackspace region) and PublicNet (the Internet).</li>
+</ul>
+
+<h3>Run the boot command</h3>
+
+<p>Use the following command to boot your OnMetal server.</p>
+
+<pre>
+supernova iad boot --flavor &lt;flavor ID&gt; --image &lt;image ID&gt; --key-name &lt;key name&gt;
+    &lt;server name&gt;</pre>
+
+<p>For example:</p>
+
+<p><code>supernova iad boot --flavor onmetal-compute1 --image 1387253c-7735-4542-9612-26bc9ff77a9d --key-name johndoe onmetal-test</code></p>
+
+<p>You should see output similar to the following example:</p>
+
+<pre>
+    +------------------------+--------------------------------------+
+    | Property | Value |
+    +------------------------+--------------------------------------+
+    | status | BUILD |
+    | updated | 2014-05-31T00:23:29Z |
+    | OS-EXT-STS:task_state | scheduling |
+    | key_name | johndoe |
+    | image | OnMetal - Debian 7 (Wheezy) |
+    | hostId | |
+    | OS-EXT-STS:vm_state | building |
+    | flavor | OnMetal I/O v1 |
+    | id | a8ea2366-9e50-4604-b6ce-e3edb8750451 |
+    | user_id | 83362 |
+    | name | teeth5 |
+    | adminPass | 6FgtaEqkapRo |
+    | tenant_id | 545251 |
+    | created | 2014-05-31T00:23:29Z |
+    | OS-DCF:diskConfig | MANUAL |
+    | accessIPv4 | |
+    | accessIPv6 | |
+    | progress | 0 |
+    | OS-EXT-STS:power_state | 0 |
+    | config_drive | |
+    | metadata | {} |
+    +------------------------+--------------------------------------+
+</pre>
+
+<p><strong>Note</strong>: Although this output displays an admin password, this password is not actually used. You can safely ignore it.</p>
+
+<p>The server should take about five minutes to build. You can check the status by running the following command:</p>
+
+<pre>
+supernova iad show &lt;instance id&gt;</pre>
+
+<p>The output should look like the following example:</p>
+
+<pre>
+    +------------------------+--------------------------------------------------------------------+
+
+    | Property | Value |
+    +------------------------+--------------------------------------------------------------------+
+    | status | ACTIVE |
+    | updated | 2014-05-31T00:27:34Z |
+    | OS-EXT-STS:task_state | None |
+    | private network | 10.184.0.48 |
+    | key_name | johndoe |
+    | image | OnMetal - Debian 7 (Wheezy) (1387253c-7735-4542-9612-26bc9ff77a9d) |
+    | hostId | 8a12611e45a1e15a1aec221ab05c8494524d6bf00e7fb17c5c82722a |
+    | OS-EXT-STS:vm_state | active |
+    | public network | 23.253.157.48 |
+    | flavor | OnMetal I/O v1 (onmetal-io1) |
+    | id | a8ea2366-9e50-4604-b6ce-e3edb8750451 |
+    | user_id | 83362 |
+    | name | teeth5 |
+    | created | 2014-05-31T00:23:29Z |
+    | tenant_id | 545251 |
+    | OS-DCF:diskConfig | MANUAL |
+    | accessIPv4 | 23.253.157.48 |
+    | accessIPv6 | |
+    | progress | 0 |
+    | OS-EXT-STS:power_state | 1 |
+    | config_drive | |
+    | metadata | {} |
+    +------------------------+--------------------------------------------------------------------+</pre>
+
+<p>Within a few minutes, the server is assigned a public and private IP, which you can see in the output of the <code>show</code> command. After the status becomes <code>ACTIVE</code>, the server boots for the first time. The server will not be reachable, however, until the network configuration is complete, which may take another few minutes.</p>
+
+<h2><a name="loginDelete"></a>Log in to the server</h2>
+
+<p>After the server has booted, use the SSH key pair that you specified to log in to the server:</p>
+
+<p><strong>Note:</strong> The default user on Debian and CentOS is root.</p>
+
+<pre>
+ssh root@&lt;publicIPaddress&gt;</pre>
+
+<h2>Delete the server</h2>
+
+<p>If needed, you can also deleteor cancel the server.</p>
+
+<ol>
+	<li>Run the following command, replacing the example ID with your server's ID:
+		<pre>supernova iad delete a8ea2366-9e50-4604-b6ce-e3edb8750451</pre></li>
+	<li>Use the following command to see the progress.
+		<pre>supernova iad list</pre>
+
+	<p>The output should look similar ot the following example:</p>
+
+	<pre>
+    +--------------------------------------+---------+--------+------------+-------------+---------------------------------------------+
+    | ID | Name | Status | Task State | Power State | Networks |
+    +--------------------------------------+---------+--------+------------+-------------+---------------------------------------------+
+    | d1d58868-2b14-4fa5-b01f-e51d658556a8 | highcpu | ACTIVE | deleting | Running | public=23.253.157.105; private=10.184.0.105 |
+    +--------------------------------------+---------+--------+------------+-------------+---------------------------------------------+</pre>
+	</li>
+</ol>
+
+<p><strong>Note</strong>: Your server goes in to the task state <code>deleting</code>. OnMetal server deletions take longer than virtual server deletions, usually a few minutes.</p>
+
+<h2><a name="usingOnMetal"></a>Using OnMetal</h2>
+
+<p>The flash cards included with the OnMetal I/O flavor are unformatted. You can format them however you like. For more information, see <a href="http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives" target="_self">Configure flash drives in High I/O instances as Data drives</a>.</p>

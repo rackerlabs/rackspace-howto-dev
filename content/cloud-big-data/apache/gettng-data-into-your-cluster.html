@@ -1,0 +1,18 @@
+---
+node_id: 3813
+title: Getting data into your Big Data cluster
+permalink: article/gettng-data-into-your-cluster
+type: article
+created_date: '2013-12-14 19:07:32'
+created_by: david.dobbins
+last_modified_date: '2014-06-30 21:4710'
+last_modified_by: jered.heeschen
+products: Cloud Big Data
+categories: Apache
+body_format: tinymce
+---
+
+<p>After you have successfully created a new Cloud Big Data cluster, you need to get your data into the cluster so that you can put Hadoop to work. You can use many methods to accomplish this, but the method that you choose will likely depend on where your data currently resides.</p><p>The following sections provide instructions based on the current location of your data:</p><ul><li>Data resides in Cloud Files</li><li>Data resides on an HTTP or FTP server</li><li>Data resides on a local computer</li><li>Data resides in another cluster</li></ul><p>The examples in this article assume that your new Cloud Big Data cluster is named speedy and your data is stored in a file named importantdata.txt.</p><h3>Data resides in Cloud Files</h3><p>A command line tool called swiftly is already installed on the gateway node of your cluster. Use it to get the data from Cloud Files to the cluster, as follows:</p><ol><li>Use SSH to access your gateway node. The easiest way to do this it to use the lava command-line tool:<pre>lava ssh speedy</pre></li><li>Set the following environment variables, giving your Cloud credentials. <strong>Tip:</strong> You can find these credentials on the Account Settings page of the Cloud Control Panel at mycloud.rackspace.com. To access the Account Settings page, click your username in the top-right corner of the panel.<pre>export SWIFTLY_AUTH_URL=https://identity.api.rackspacecloud.com/v2.0
+export SWIFTLY_AUTH_USER=&lt;myusername&gt;
+export SWIFTLY_AUTH_KEY=&lt;myapikey&gt;</pre></li><li>Finally, run swiftly to copy the data to stdout and send it to Hadoop to put it in HDFS:<pre>swiftly get containername/importantdata.txt |hadoop fs -put - /user/&lt;myusername&gt;/some/file/path</pre></li></ol><p>Alternatively, your MapReduce jobs and Hadoop tools like Pig and Hive can read and write directly to Cloud Files by using the <a href="/knowledge_center/article/swift-filesystem-for-hadoop">Swift for Hadoop</a>.</p><h3>Data resides on an HTTP or FTP server</h3><p>Log in to your gateway node (see the preceding section) and use <code>wget</code> to copy the data.</p><pre>wget http://server.mydomain.com/importantdata.txt -O - |hadoop fs -put - /user/&lt;myusername&gt;/some/file/path</pre><h3>Data resides on a local computer</h3><p>If you have an SCP or SFTP client, you can upload the data directly to HDFS by using an hdfs-scp server running on the gateway node of your cluster on port 9022. In Linux, the command line would be as follows:</p><pre>scp -P 9022 importantdata.txt myuser@&lt;gatewayip&gt;:/user/&lt;myusername&gt;/some/file/path</pre><p>or you can use the lava CLI, as follows:</p><pre>lava scp —hdfs —dest-path /user/&lt;myusername&gt;/some/file/path importantdata.txt clustername</pre><h3>Data resides in another cluster</h3><p>If your data already resides in another Hadoop cluster, the distcp tool bundled with Hadoop is your best option. For example:</p><pre>hadoop distcp hdfs://nn1:8020/path/to/importantdata.txt hdfs://nn2:8020/user/&lt;myusername&gt;/some/file/path
+</pre><p>By default, your Cloud Big Data cluster has firewall (iptables) rules in place that prevent network connections from outside the cluster. Ensure that you adjust your firewall rules appropriately to allow your clusters to communicate.</p><p>We are working to support additional data transfer tools, such as Flume and Sqoop. If you have questions or need additional help, contact us.</p>

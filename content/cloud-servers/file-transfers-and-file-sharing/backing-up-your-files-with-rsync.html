@@ -1,0 +1,40 @@
+---
+node_id: 266
+title: Backing up your files with rsync
+permalink: article/backing-up-your-files-with-rsync
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2013-01-11 23:5058'
+last_modified_by: jered.heeschen
+products: Cloud Servers
+categories: File Transfers and File Sharing
+body_format: tinymce
+---
+
+<p>Backing up files on a regular basis is an integral part of administering your server.</p><p>One way is to download each and every file when you want to save them. However, rsync makes the task a lot easier as it only downloads files that have changed - saving time and bandwidth.</p><table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div><ul><li class="toclevel-1"><a href="#Installation"><span class="tocnumber">1</span> <span class="toctext">Installation</span></a></li><li class="toclevel-1"><a href="#Preparation"><span class="tocnumber">2</span> <span class="toctext">Preparation</span></a></li><li class="toclevel-1"><a href="#Security"><span class="tocnumber">3</span> <span class="toctext">Security</span></a></li><li class="toclevel-1"><a href="#Command"><span class="tocnumber">4</span> <span class="toctext">Command</span></a></li><li class="toclevel-1"><a href="#Output"><span class="tocnumber">5</span> <span class="toctext">Output</span></a></li><li class="toclevel-1"><a href="#Summary"><span class="tocnumber">6</span> <span class="toctext">Summary</span></a></li></ul></td></tr></tbody></table><p><a id="Installation" name="Installation"></a></p><h2><span class="mw-headline">Installation </span></h2><p>Installing rsync is as simple as implementing your OS's package manager such as:</p><pre> 
+sudo aptitude install rsync
+...
+sudo emerge rsync
+...
+sudo yum install rsync
+</pre><p>Do remember that if you are downloading files to another system, both will require rsync to be installed.</p><p><a id="Preparation" name="Preparation"></a></p><h2><span class="mw-headline">Preparation </span></h2><p>Very little to do here expect to establish where the saved files will be located.</p><p>In this example, I am going to backup my main Cloud Server home directory to another server.</p><p><a id="Security" name="Security"></a></p><h2><span class="mw-headline">Security </span></h2><p>As a rule (and one I stick to very closely), we don't upload and download anything without some encryption in place. As such we will be using the SSH protocol with rsync to ensure no one else can sniff out the data being transferred.</p><p>What does this mean? Well, if you want to automate your backups, you will need to ensure the destination server (where the backup directory is) has access to the originating server.</p><p>In my case, I have setup ssh keys so I don't need to enter a password each time I attempt to rsync my home folder. It's perfectly fine not to do it that way, but you will need to enter the password each time you rsync.</p><p><a id="Command" name="Command"></a></p><h2><span class="mw-headline">Command </span></h2><p>So on the destination server, the command I would give is as follows:</p><pre> 
+rsync -e 'ssh -p 30000' -avl --delete --stats --progress demo@123.45.67.890:/home/demo /backup
+</pre><p>Let's go through the command in order:</p><p>-e 'ssh -p 30000': this ensures rsync uses the SSH protocol and sets the port.</p><p>-avl: This contains three options;</p><p>(a) is archive mode which basically keep the permission settings for the files. (v) is verbose mode. You can leave it out or increase it by appending two v's (-vv). (l) preserves any links you may have created.</p><p>--delete: deletes files from the destination folder that are no longer required (i.e. they have been deleted from the folder being backed up).</p><p>--stats: Adds a little more output regarding the file transfer status.</p><p>--progress: shows the progress of each file transfer. Can be useful to know if you have large files being backup up.</p><p>demo@123.45.67.890:/home/demo: The originating folders to backup.</p><p>The syntax here is very important - naturally you need the username and IP address of the originating server - but note in this example there is no trailing slash (/).</p><p>If you leave the trailing slash off, the named folder and contents will be downloaded. So in this case I would have a folder called 'demo' in my backup directory.</p><p>If I added the trailing slash (demo@123.45.67.890:/home/demo/) then I would have the contents of demo in my backup. So I may have folders called 'public_html' or 'configs' or 'bin' and so on.</p><p>/backup/: Identifies the folder on the backup server to place the files.</p><p><a id="Output" name="Output"></a></p><h2><span class="mw-headline">Output </span></h2><p>So from the command above, my storage server would start to output something like this:</p><pre> 
+receiving file list ...
+31345 files to consider
+./
+tuning-primer.sh
+       42596 100%  533.30kB/s    0:00:00 (xfer#2, to-check=31331/31345)
+bin/
+bin/Backup
+         618 100%    7.74kB/s    0:00:00 (xfer#3, to-check=31310/31345)
+bin/Search
+         455 100%    5.70kB/s    0:00:00 (xfer#4, to-check=31309/31345)
+configs/
+configs/php.ini
+         114 100%    1.43kB/s    0:00:00 (xfer#5, to-check=31307/31345)
+public_html/
+...
+...
+</pre><p>As you can see, it receives a list of files (31,345 of them) and, for the first run, downloads them all.</p><p>Running rsync again will only download files that have changed so, depending on how busy your home directory is, a much smaller download will be conducted.</p><p><a id="Summary" name="Summary"></a></p><h2><span class="mw-headline">Summary </span></h2><p>This was a quick introduction to rsync. The command shown is a simple but effective and secure means of creating an incremental backup of your files.</p><p>The next articles will concentrate on some more options such as <a title="Excluding Certain Files or Directories" href="/knowledge_center/index.php/Excluding_Certain_Files_or_Directories">excluding files or directories</a> from the backup and creating a script to automate the process and put the backups into daily folders.</p><p>--<a class="new" title="User:Kkoehn (page does not exist)" href="/knowledge_center/index.php?title=User:Kkoehn&amp;action=edit&amp;redlink=1">Kelly Koehn</a> 13:30, 2 April 2009 (CDT)</p>

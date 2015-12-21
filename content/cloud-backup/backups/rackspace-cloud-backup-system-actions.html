@@ -1,0 +1,129 @@
+---
+node_id: 2036
+title: Rackspace Cloud Backup - System Actions
+permalink: article/rackspace-cloud-backup-system-actions
+type: article
+created_date: '2012-08-22 17:23:38'
+created_by: David Hendler
+last_modified_date: '2015-03-19 16:4937'
+last_modified_by: brian.metzler
+products: Cloud Backup
+categories: Backups
+body_format: tinymce
+---
+
+<h3>Getting Started with Rackspace Cloud Backup - Part 5</h3>
+
+<h2>How to Use System Actions</h2>
+
+<p><strong>Important</strong>: The system actions are for users who are familiar with Rackspace Cloud Backup. Users with Managed Cloud Service Level accounts might want to contact their account manager before performing any of the following actions.</p>
+
+<p>You may perform several actions on your system. This article describes them.</p>
+
+<p>You can access the System Actions drop-down menu from the gear widget next to the system name on the Systems List or from the "Actions" button on the System Details Screen. This menu is <em>not</em> the one that appears on the Single Backup screens.</p>
+
+<p>The System Actions menu offers the following actions:</p>
+
+<ul>
+	<li><a href="#createbackup">Create Backup</a></li>
+	<li><a href="#restorebackup">Restore Backup</a></li>
+	<li><a href="#encryptsystem">Encrypt System</a></li>
+	<li><a href="#cleanupsystem">Cleanup System</a></li>
+	<li><a href="#disablesystem">Disable System</a></li>
+	<li><a href="#deletesystem">Delete System</a></li>
+</ul>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="createbackup" name="createbackup"></a>Create Backup</h4>
+</div>
+
+<p>Clicking <strong>Create Backup</strong> from the System Actions menu is the same as clicking Create Backup on the system screen. For complete instructions, see <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0" target="_blank">Create a Backup</a> in this guide.</p>
+
+<ul>
+	<li>Note: You cannot back up restore a system that is offline. If the system status displays “offline” and your server is active, contact support.</li>
+</ul>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="restorebackup" name="restorebackup"></a>Restore Backup</h4>
+</div>
+
+<p>Clicking <strong>Restore Backup</strong> from the System Actions menu is the same as clicking Restore Backup from the Single Backup Action menu. For complete instructions, see <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#restorebackup"><em>Restore Backup</em></a> in this guide.</p>
+
+<ul>
+	<li>Note: You cannot back up or restore to a system with an offline status. If the system status displays “offline” and your server is active, please contact support.</li>
+</ul>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="encryptsystem" name="encryptsystem"></a>Encrypt System</h4>
+</div>
+
+<p>You may encrypt your backups with AES-256 encryption. The key or passphrase you that create is known only to you. If you lose or forget your passphrase, you cannot recover your backups.</p>
+
+<p>Let's state that again:</p>
+
+<h3>If you lose or forget your passphrase, you cannot recover your backups.</h3>
+
+<p>Also, after you turn on encryption, <strong>you cannot turn it off</strong>. You can only change your passphrase. This is a security measure. If anyone ever gained access to your account, they would not be able to access your backups without your passphrase.</p>
+
+<p>When you use a passphrase, we encrypt it locally on your browser using a javascript RSA library before it is even submitted over the web. Rackspace will never know your passphrase. All communication between your computer and Rackspace servers for Cloud Backup is done over SSL, which means that no one can intercept and read your messages.</p>
+
+<p>To encrypt your backups, perform the following steps:</p>
+
+<ol>
+	<li>From the Systems Actions menu, select <strong>Encrypt</strong>.</li>
+</ol>
+
+<p><img alt="RCBU Encryption - Enter passphrase" height="441" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/rcbu_begin_encryption.png" title="" width="478" /></p>
+
+<ol start="2">
+	<li>Enter a passphrase that only you know.</li>
+	<li>Enter your passphrase again.</li>
+	<li>Click <strong>Save Passphrase</strong>.</li>
+</ol>
+
+<p>You can confirm that you have enabled encryption by clicking <strong>Encrypt... </strong>from the System Actions. On the Backup encryption screen, your system name will have the encrypted flag next to it. Also, your encrypted backups will display "This is an encrypted backup," on the Single Backup Details screen.</p>
+
+<p>You can change your passphrase for encryption as follows:</p>
+
+<ol>
+	<li>Select <strong>Encrypt... </strong>from the System Actions.</li>
+	<li>Enter your current passphrase.</li>
+	<li>Enter a new passphrase that only you know.</li>
+	<li>Enter your new passphrase again.</li>
+	<li>Click <strong>Save Passphrase</strong>.</li>
+</ol>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="cleanupsystem" name="cleanupsystem"></a>Cleanup System</h4>
+</div>
+
+<p>The Cleanup Vault allows you to manually start a cleanup at any time, even if you have an automatic backup scheduled. A cleanup frees unused space in your Cloud Files account, where you backups are stored.</p>
+
+<ol>
+	<li>If your system is encrypted, confirm your passphrase when prompted<strong>.</strong></li>
+	<li>After you enter your passphrase, click the<strong> Check</strong> button.</li>
+</ol>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="disablesystem" name="disablesystem"></a>Disable System</h4>
+</div>
+
+<p>When you disable a system, you prevent all future backups from running. You can re-enable the system at any time and no data will be deleted. To re-enable the system, select Enable System from the System Actions menu.</p>
+
+<div>&nbsp;</div>
+
+<div>
+<h4><a id="deletesystem" name="deletesystem"></a>Delete System</h4>
+</div>
+
+<p>The Delete System command permanently deletes all backups and any data associated with this system. A confirmation prompt requires you to verify that this is your intention.</p>
