@@ -1,0 +1,47 @@
+---
+node_id: 3902
+title: Cloud Block Storage Quotas
+permalink: article/cloud-block-storage-quotas
+type: article
+created_date: '2014-02-12 21:14:18'
+created_by: rose.contreras
+last_modified_date: '2014-10-16 17:3434'
+last_modified_by: kyle.laffoon
+products: Cloud Block Storage
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>By default, all new Cloud Block Storage users are assigned a 10 TB / 50 volume quota in each region. This quota is primarily to help with capacity planning and to prevent system abuse. If your application requires more storage or volumes than the default quota, simply submit a support request to ask for an increase. In your request, be sure to include the storage amount that you need (TBs or volume count), storage type (SATA or SSD), and region (for example, DFW or LON).</p><p>Note: Your Cloud Block Storage quota is independent from any other account quotas that you might have.</p><p>You can use the OpenStack Cinder API to see your current block storage quota. The following is an example of the cURL request to use:</p>
+<pre>
+curl https://dfw.blockstorage.api.rackspacecloud.com/v1/&lt;Customer Number&gt;/os-quota-sets/&lt;
+            -H "X-Auth-Project-Id: &lt;Customer Number&gt;" \
+            -H "User-Agent: python-cinderclient" \
+            -H "Accept: application/json" \
+            -H "X-Auth-Token: &lt;My Auth Token&gt;"
+</pre>
+
+<p>The result of this request follows:
+<pre>
+{
+    "quota_set": {
+        "gigabytes": 10240,
+        "id": “&lt;Customer Number&gt;",
+        "snapshots": -1,
+        "volumes": 50
+    }
+}
+</pre>
+
+<p>For Cinder client users, the request looks like the following example:</p>
+
+<pre>MFTUG6DH2G->$ cinder quota-show &lt;Customer Number&gt;
++-----------+-------+
+|  Property | Value |
++-----------+-------+
+| gigabytes | 10240 |
+| snapshots |   -1  |
+|  volumes  |   50  |
++-----------+-------+
+</pre>
+<p>&nbsp;</p>

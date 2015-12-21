@@ -1,0 +1,808 @@
+---
+node_id: 3313
+title: Rackspace Private Cloud Active Directory and LDAP Integration
+permalink: article/ldap-support
+type: article
+created_date: '2013-03-04 17:28:32'
+created_by: Karin Levenstein
+last_modified_date: '2014-10-30 18:3113'
+last_modified_by: jered.heeschen
+products: Rackspace Private Cloud - OpenStack
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>NOTE</strong>: These instructions apply only to Rackspace Private Cloud v4, deployed with Chef.</p>
+<hr />
+<p>&nbsp;</p>
+<p>This article describes the processes for enabling <a href="#active-directory">Active Directory</a> and <a href="#rackspace-private-cloud-ldap">LDAP</a> in your Rackspace Private Cloud environment.</p>
+<div class="toc">
+<p><strong>Table of Contents</strong></p>
+<dl><dt><span class="chapter"><a href="#overview">Overview</a></span></dt><dd><dl><dt><span class="section"><a href="#overview-audience">Intended audience</a></span></dt><dt><span class="section"><a href="#overview-dochistory">Document change history</a></span></dt><dt><span class="section"><a href="#overview-resources">Additional resources</a></span></dt><dt><span class="section"><a href="#contact-rackspace">Contact Rackspace</a></span></dt></dl></dd><dt><span class="chapter"><a href="#ad-ldapprereqs">Prerequisites</a></span></dt><dd><dl><dt><span class="section"><a href="#prereqs-activedirectory">Active Directory prerequisites</a></span></dt><dt><span class="section"><a href="#prereqs-ldap">LDAP prerequisites</a></span></dt></dl></dd><dt><span class="chapter"><a href="#ad-ldap-requiredinfo">Required information</a></span></dt><dd><dl><dt><span class="section"><a href="#active-directory-requiredinfo">Active Directory required information</a></span></dt><dt><span class="section"><a href="#ldap-required-info">LDAP required information</a></span></dt></dl></dd><dt><span class="chapter"><a href="#ad-ldap-howto-havana">Adding Active Directory/LDAP integration for OpenStack Havana</a></span></dt><dd><dl><dt><span class="section"><a href="#ad-ldap-prereqs-havana">Prerequisites for Active Directory/LDAP in OpenStack Havana</a></span></dt><dt><span class="section"><a href="#ad-ldap-howto-havana-new">Adding Active Directory/LDAP</a></span></dt><dt><span class="section"><a href="#ad-ldap-howto-multiple-rpcs-havana">Using replicated Active Directory/LDAP controllers across multiple environments</a></span></dt></dl></dd><dt><span class="chapter"><a href="#ad-ldap-howto-grizzly">Adding Active Directory/LDAP integration for OpenStack Grizzly</a></span></dt></dl></div>
+<div class="chapter" title="Chapter&nbsp;1.&nbsp;Overview">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="overview"></a>Overview</h2>
+</div>
+</div>
+</div>
+<p>Rackspace has developed a fast, no-charge, and easy way to deploy a Rackspace Private Cloud powered by OpenStack in any data center. This method is suitable for anyone who wants to install a stable, tested, and supportable OpenStack private cloud, and can be used for all scenarios from initial evaluations to production deployments. Two versions are available:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p>Rackspace Private Cloud v4.2.2 is based on the <a class="link" href="http://www.openstack.org/software/havana/" target="_top">OpenStack Havana</a> code base,</p>
+</li>
+<li class="listitem">
+<p>Rackspace Private Cloud v4.1.3 is based on the <a class="link" href="http://www.openstack.org/software/grizzly/" target="_top">OpenStack Grizzly</a> code base.</p>
+</li>
+</ul>
+</div>
+<div class="section" title="Intended audience">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="overview-audience"></a>Intended audience</h3>
+</div>
+</div>
+</div>
+<p>This document provides an overview of how to use the Rackspace Private Cloud cookbooks to connect OpenStack Identity to an existing Active Directory/LDAP authentication system for single sign on. It also provides an example of Chef environments that have been tested to achieve integration for each authentication service.</p>
+<p>The scope of this document does <span class="bold"><strong>not</strong></span> include the administration or configuration of an Active Directory service, except insofar as is required to achieve integration. It is also important to point out that this is only currently applicable to authentication. Authorization is not discussed in this document.</p>
+<p>To use the product and this document, you should have prior knowledge of OpenStack and cloud computing, and basic Linux administration skills.</p>
+</div>
+<div class="section" title="Document change history">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="overview-dochistory"></a>Document change history</h3>
+</div>
+</div>
+</div>
+<p>This version of Rackspace Private Cloud Active Directory Integration replaces and obsoletes all previous versions. The most recent changes are described in the table below:</p>
+<table id="d5e47" rules="all">
+<thead>
+<tr>
+<td align="center">Revision Date</td>
+<td colspan="4" align="center">Summary of Changes</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>March 17, 2014</td>
+<td colspan="4">
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc" compact="compact">
+<li class="listitem">
+<p>Rackspace Private Cloud v4.2.2 General Availability release.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td align="center">February 2014</td>
+<td colspan="4">
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc" compact="compact">
+<li class="listitem">
+<p>Updates for v4.2.2/OpenStack Havana</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td align="center">June 25, 2013</td>
+<td colspan="4">
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc" compact="compact">
+<li class="listitem">
+<p>Release of Rackspace Private Cloud v. 4.0</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" title="Additional resources">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="overview-resources"></a>Additional resources</h3>
+</div>
+</div>
+</div>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc" compact="compact">
+<li class="listitem">
+<p><a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">Rackspace Private Cloud Knowledge Center</a></p>
+</li>
+<li class="listitem">
+<p><a class="link" href="http://docs.openstack.org" target="_top">OpenStack Manuals</a></p>
+</li>
+<li class="listitem">
+<p><a class="link" href="http://api.openstack.org" target="_top">OpenStack API Reference</a></p>
+</li>
+<li class="listitem">
+<p><a class="link" href="http://docs.openstack.org/developer/keystone" target="_top">OpenStack - Keystone Developer Documentation</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" title="Contact Rackspace">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="contact-rackspace"></a>Contact Rackspace</h3>
+</div>
+</div>
+</div>
+<p>For more information about sales and support, send an email to <a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:opencloudinfo@rackspace.com">opencloudinfo@rackspace.com</a><a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&gt;</code></a>.</p>
+<p>If you have feedback about the product and the documentation, send and email to <a class="link" href="mailto:RPCFeedback@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:RPCFeedback@rackspace.com">RPCFeedback@rackspace.com</a><a class="link" href="mailto:RPCFeedback@rackspace.com" target="_top"><code class="email">&gt;</code></a>. For the documentation, you can also leave a comment at <a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">the Knowledge Center</a>.</p>
+<p>For more troubleshooting information and user discussion, you can also inquire at the Rackspace Private Cloud Support Forum at <a class="link" href="https://community.rackspace.com/products/f/45" target="_top"><code class="uri">https://community.rackspace.com/products/f/45</code></a></p>
+</div>
+</div>
+<div class="chapter" title="Chapter&nbsp;2.&nbsp;Prerequisites">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="ad-ldapprereqs"></a>Prerequisites</h2>
+</div>
+</div>
+</div>
+<p>To use these instructions, you should have an understanding of OpenStack Identity (Keystone) core concepts, including users, roles, tenants, and tokens, and a working knowledge of Active Directory and LDAP.</p>
+<div class="section" title="Active Directory prerequisites">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="prereqs-activedirectory"></a>Active Directory prerequisites</h3>
+</div>
+</div>
+</div>
+<p>Your environment must have the following features already configured:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p>A working Active Directory server.</p>
+</li>
+<li class="listitem">
+<p>The address, hostname, or URL of the Active Directory server, such as <code class="uri">activeserver.example.com</code>.</p>
+</li>
+<li class="listitem">
+<p>A configured user with enough privileges to search all of the organizational units that are defined within the environment, such as <code class="filename">Administrator</code>.</p>
+</li>
+</ul>
+</div>
+<p>You may have existing users and groups already defined, but this is not required.</p>
+</div>
+<div class="section" title="LDAP prerequisites">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="prereqs-ldap"></a>LDAP prerequisites</h3>
+</div>
+</div>
+</div>
+<p>Your LDAP environment must have the following features already configured:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p>A working LDAP server with OpenLDAP or 389 Directory Server installed. The top level organization should already be created, as in the following example:</p>
+<pre class="screen"> dn: cn=example,cn=com
+ dc: example
+ objectClass: dcObject
+ objectClass: organizationalUnit
+ o: example.com
+                            </pre>
+</li>
+<li class="listitem">
+<p>The address, hostname, or URL of the LDAP server, such as <code class="uri">ldapserver.example.com</code>.</p>
+</li>
+<li class="listitem">
+<p>A configured user with enough privileges to search all of the organization units that are defined within the environment, as in the following example:</p>
+<pre class="screen">cn=admin,dc=example,dc=com 
+                            </pre>
+</li>
+</ul>
+</div>
+<p>You may have existing users and groups already defined, but this is not required.</p>
+</div>
+</div>
+<div class="chapter" title="Chapter&nbsp;3.&nbsp;Required information">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="ad-ldap-requiredinfo"></a>Required information</h2>
+</div>
+</div>
+</div>
+<div class="toc">The Chef cookbooks for the Keystone service have been made intentionally flexible for this type of deployment, and does not enforce any defaults except the most basic default Keystone configuration. This design ensures that a user can integrate Keystone without modifying any existing LDAP schema. You must understand Active Directory and your underlying LDAP schema to correctly integrate the Keystone service.</div>
+<div class="section" title="Active Directory required information">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="active-directory-requiredinfo"></a>Active Directory required information</h3>
+</div>
+</div>
+</div>
+<p>The example in this section is based on a clean Active Directory installation.</p>
+<p>Before you begin, you must make <code class="filename">groupOfNames</code> a superior for <code class="filename">organizationalRole</code>. This enables Keystone roles to work correctly with Active Directory.</p>
+<div class="procedure" title="Procedure&nbsp;3.1.&nbsp;To configure groupOfNames"><a name="d5e140"></a>
+<p class="title"><strong>Procedure&nbsp;3.1.&nbsp;To configure groupOfNames</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>In the Active Directory schema master, use ASDI Edit and select <code class="filename">schema</code>.</p>
+</li>
+<li class="step" title="Step 2">
+<p>Open <code class="filename">CN=Organizational-Role</code>.</p>
+</li>
+<li class="step" title="Step 3">
+<p>In the attribute editor, select <code class="filename">possSuperiors</code>.</p>
+</li>
+<li class="step" title="Step 4">
+<p>Add <code class="filename">groupOfNames</code> to the list of values and click OK to save the change.</p>
+</li>
+</ol></div>
+<p>After completing this task, you can proceed with collecting the required information about your Active Directory configuration with Active Directory Users and Computers.</p>
+<div class="procedure" title="Procedure&nbsp;3.2.&nbsp;To identify Active Directory configuration information"><a name="d5e156"></a>
+<p class="title"><strong>Procedure&nbsp;3.2.&nbsp;To identify Active Directory configuration information</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>Locate the Organizational Unit (OU) that contains Users. You will use this information to configure the lookup point for users in Keystone. Because Active Directory identifies the Users OU differently than LDAP does, you will search for the Common Name (CN).</p>
+<p>In the following example, the OU is called <code class="filename">Users</code>.</p>
+<pre class="screen">CN=Users,dc=example,dc=com
+                                </pre>
+</li>
+<li class="step" title="Step 2">
+<p>Locate the OU that contains Groups. You will use this information to configure the lookup point for tenants in Keystone.</p>
+<p>In the following example, the OU is called <code class="filename">Tenants</code>.</p>
+<pre class="screen">OU=Tenants,dc=example,dc=com
+                                </pre>
+</li>
+<li class="step" title="Step 3">
+<p>Locate the OU that contains Roles. If one does not already exist, the AD administrator should create a Roles OU. You will use this information in Keystone to set up roles and manage user/tenant interaction within the OpenStack cluster.</p>
+<p>In the following example, the OU is called <code class="filename">Roles</code>.</p>
+<pre class="screen">OU=Roles,dc=example,dc=com
+                            </pre>
+</li>
+<li class="step" title="Step 4">
+<p><span class="bold"><strong>Note</strong></span>: If you are using Keystone 2013.1.1, you may skip this step.</p>
+<p>The LDAP administrator will need to create an OU called <code class="filename">Domains</code> and a single object named <code class="filename">Default</code> that has the objectClass <code class="filename">groupOfNames</code>.</p>
+</li>
+<li class="step" title="Step 5">
+<p>Identify the objectClass that will be used by objects in the User, Group, Role, and Domain OUs. The objectClass will depend on your own LDAP schema.</p>
+<p>In this example, the following objectClass definitions are used:</p>
+<pre class="screen">User: person
+Group: groupOfNames
+Role: organizationalRole
+Domain: Group
+                            </pre>
+</li>
+</ol></div>
+</div>
+<div class="section" title="LDAP required information">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="ldap-required-info"></a>LDAP required information</h3>
+</div>
+</div>
+</div>
+<p>The example in this section is based on a default deployment of OpenLDAP that contains the following enabled OpenLDAP <code class="filename">.ldif</code> files:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p><code class="filename">core.ldif</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">cosine.ldif</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">nis.ldif</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">inetorgperson.ldif</code></p>
+</li>
+</ul>
+</div>
+<p>Follow this process to gather the information required to add LDAP to your Chef environment.</p>
+<div class="procedure" title="Procedure&nbsp;3.3.&nbsp;To identify LDAP configuration information"><a name="d5e204"></a>
+<p class="title"><strong>Procedure&nbsp;3.3.&nbsp;To identify LDAP configuration information</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>Identify the Organizational Unit (OU) that contains Users. You will use this information to configure the lookup point for users in Keystone.</p>
+<p>In the following example, the OU is called <code class="filename">users</code>.</p>
+<pre class="screen">ldapsearch -x -LLL -H ldapi:/// -b dc=example,dc=com "(objectClass=organizationalUnit)"
+dn: ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+ou: users
+                                </pre>
+</li>
+<li class="step" title="Step 2">
+<p>Identify the OU that contains Groups. You will use this information to configure the lookup point for tenants in Keystone.</p>
+<p>In the following example, the OU is called <code class="filename">groups</code>.</p>
+<pre class="screen">ldapsearch -x -LLL -H ldapi:/// -b dc=example,dc=com "(objectClass=organizationalUnit)"
+dn: ou=Groups,dc=example,dc=com
+objectClass: organizationalUnit
+ou: groups
+                                </pre>
+</li>
+<li class="step" title="Step 3">
+<p>Identify the OU that contains Roles. If one does not already exist, the LDAP administrator should create a Roles OU. You will use this information in Keystone to set up roles and manage user/tenant interaction within the OpenStack cluster.</p>
+<p>In the following example, the OU is called <code class="filename">roles</code>.</p>
+<pre class="screen">ldapsearch -x -LLL -H ldapi:/// -b dc=example,dc=com "(objectClass=organizationalUnit)
+dn: ou=Roles,dc=example,dc=com
+objectClass: organizationalUnit
+ou: roles   
+                            </pre>
+</li>
+<li class="step" title="Step 4">
+<p><span class="bold"><strong>Note</strong></span>: If you are using Keystone 2013.1.1, you may skip this step.</p>
+<p>The LDAP administrator will need to create an OU called <code class="filename">domains</code> and a single object named <code class="filename">Default</code> that has the objectClass <code class="filename">groupOfNames</code>.</p>
+</li>
+<li class="step" title="Step 5">
+<p>Identify the objectClass that will be used by objects in the User, Group, Role, and Domain OUs. The objectClass will depend on your own LDAP schema.</p>
+<p>In this example, the following objectClass definitions are used:</p>
+<pre class="screen">User: inetOrgPerson
+Group: groupOfNames
+Role: organizationalRole
+Domain: groupOfNames
+                            </pre>
+</li>
+</ol></div>
+</div>
+</div>
+<div class="chapter" title="Chapter&nbsp;4.&nbsp;Adding Active Directory/LDAP integration to the Chef environment (OpenStack Havana)">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="ad-ldap-howto-havana"></a>Adding Active Directory/LDAP integration for OpenStack Havana</h2>
+</div>
+</div>
+</div>
+<p>The instructions in this section apply to Active Directory implementations in Private Clouds that are running OpenStack Havana (Rackspace Private Cloud v4.2.2).</p>
+<p>If you are running OpenStack Grizzly (Rackspace Private Cloud v4.1.n), refer to Adding Active Directory integration to the Chef environment (OpenStack Grizzly).</p>
+<div class="section" title="Prerequisites for Active Directory/LDAP in OpenStack Havana">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="ad-ldap-prereqs-havana"></a>Prerequisites for Active Directory/LDAP in OpenStack Havana</h3>
+</div>
+</div>
+</div>
+<p>In Rackspace Private Cloud v4.2.2, you <span class="bold"><strong>must</strong></span> have an Active Directory/LDAP user for every service, and the Chef environment must have an override containing the password for that user.</p>
+<p>If you are adding Active Directory/LDAP to an existing environment, you will need to ensure that the service user passwords in Active Directory/LDAP match the existing MySQL passwords.</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;" title="Note">
+<table summary="Note" border="0">
+<tbody>
+<tr><th align="left">Note</th></tr>
+<tr>
+<td align="left" valign="top">
+<p>The MySQL service user passwords must match the Active Directory/LDAP server's password policy.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="procedure" title="Procedure&nbsp;4.1.&nbsp;To retrieve existing MySQL passwords"><a name="d5e244"></a>
+<p class="title"><strong>Procedure&nbsp;4.1.&nbsp;To retrieve existing MySQL passwords</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>Log on to the Chef server.</p>
+</li>
+<li class="step" title="Step 2">
+<p>Run the following command, using the hostname of the primary Controller node:</p>
+<pre class="screen">$ for i in monitoring glance ceilometer neutron cinder nova; do echo $i; \
+  if [ "$i" == "monitoring" ]; \
+  then knife node show <em class="replaceable"><code>&lt;primaryControllerNodeHostname&gt;</code></em> \
+  -a keystone | grep -A2 monitoring | \
+  awk '/password:/';else knife node show <em class="replaceable"><code>&lt;primaryControllerNodeHostname&gt;</code></em> \
+  -a $i| grep service_pass;fi;done
+                        </pre>
+<p>You will receive output listing the MySQL passwords for the OpenStack service users.</p>
+</li>
+</ol></div>
+<p>You can now make changes to the environment that will enable Active Directory/LDAP in your private cloud.</p>
+</div>
+<div class="section" title="Adding Active Directory/LDAP">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="ad-ldap-howto-havana-new"></a>Adding Active Directory/LDAP</h3>
+</div>
+</div>
+</div>
+<p>You will now add your Active Directory environment information to the Chef environment, which executes the configuration changes in your OpenStack environment. The procedure is the same for Active Directory and LDAP.</p>
+<p>In this example, you will integrate Keystone and Active Directory in an environment called <code class="filename">default</code>. This example uses the Knife command line tool to edit the environment's <code class="filename">.json</code> file.</p>
+<div class="procedure" title="Procedure&nbsp;4.2.&nbsp;To add Active Directory/LDAP to an environment (Havana)"><a name="d5e262"></a>
+<p class="title"><strong>Procedure&nbsp;4.2.&nbsp;To add Active Directory/LDAP to an environment (Havana)</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>In Active Directory/LDAP, create users for the following OpenStack services and assign passwords to them:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p><code class="filename">ceilometer</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">cinder</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">glance</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">neutron</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">nova</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">monitoring</code></p>
+</li>
+<li class="listitem">
+<p><code class="filename">admin</code></p>
+</li>
+</ul>
+</div>
+<p>The <code class="filename">admin</code> user will use the OpenStack admin user password.</p>
+<p>If you are adding Active Directory/LDAP to an existing environment, be sure to assign to these users the MySQL passwords that you retrieved in <a class="link" title="Prerequisites for Active Directory/LDAP in OpenStack Havana" href="#ad-ldap-prereqs-havana">Prerequisites for Active Directory/LDAP in OpenStack Havana</a>.</p>
+</li>
+<li class="step" title="Step 2">
+<p>When logged into the Chef server or on a device that has knife access to your Chef environment, define your text editor with <span class="command"><strong>EXPORT</strong></span>. In this example, the editor is <code class="filename">vim</code>.</p>
+<pre class="screen">$ export EDITOR=vim 
+                                </pre>
+</li>
+<li class="step" title="Step 3">
+<p>Use the <span class="command"><strong>knife</strong></span> command to enter the environment editing mode.</p>
+<pre class="screen">$ knife environment edit default 
+                            </pre>
+<p>You will now be able to edit the environment <code class="filename">.json</code> file directly.</p>
+</li>
+<li class="step" title="Step 4">
+<p>Locate the <code class="filename">override_attributes</code> setting inside the file.</p>
+</li>
+<li class="step" title="Step 5">
+<p>Locate the <code class="filename">ceilometer</code>, <code class="filename">cinder</code>, <code class="filename">glance</code>, <code class="filename">neutron</code>, and <code class="filename">nova</code> override attributes. If these sections to not exist, you will need to add them.</p>
+<p>Add the service passwords that you created in Step 1 to each section. Note that in this example and the following examples, only overrides relevant to Active Directory are shown. You may have other attributes in your environment.</p>
+<pre class="screen">    "ceilometer": {
+      "service_pass": <em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+    },
+    "cinder": {
+      "service_pass": <em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+    },
+    "glance": {
+      "service_pass": <em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+    },
+    "neutron": {
+      "service_pass": <em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+    },
+    "nova": {
+      "service_pass": <em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+    },
+
+                            </pre>
+</li>
+<li class="step" title="Step 6">
+<p>Locate the <code class="filename">keystone</code> section within the override section. If it does not already exist, you will need to add it.</p>
+<p>Edit the <code class="filename">keystone</code> section to match one of the following examples, depending on whether you are using Active Directory or LDAP. Add the service password and substituting in the OU and objectClass information that you gathered earlier in the lines with italicized variables.</p>
+<p>Active Directory Overrides:</p>
+<pre class="screen">    "keystone": {
+      "users": {
+        "admin": {
+          "password": "<em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+        },
+        "monitoring": {
+          "password": "<em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+        },
+      "ldap": {
+        "user_attribute_ignore": "password,tenant_id,tenants",
+        "tenant_allow_create": "True",
+        "tenant_allow_update": "True",
+        "user_mail_attribute": "mail",
+        "user_enabled_attribute": "userAccountControl",
+        "user_allow_delete": "False",
+        "role_allow_update": "True",
+        "domain_objectclass": "Group",
+        "tenant_tree_dn": "<em class="replaceable"><code>&lt;OU=Tenants,dc=example,dc=com&gt;</code></em>",
+        "tenant_allow_delete": "True",
+        "role_tree_dn": "<em class="replaceable"><code>&lt;OU=Roles,dc=example,dc=com&gt;</code></em>",
+        "role_member_attribute": "roleOccupant",
+        "domain_enabled_emulation_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "group_attribute_ignore": "enabled",
+        "user_id_attribute": "cn",
+        "tenant_member_attribute": "member",
+        "url": "ldap://<em class="replaceable"><code>&lt;LDAPServerHostnameOrIP&gt;</code></em>",
+        "tenant_objectclass": "groupOfNames",
+        "tenant_id_attribute": "cn",
+        "domain_tree_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "use_dumb_member": "True",
+        "user_tree_dn": "<em class="replaceable"><code>&lt;CN=Users,dc=example,dc=com&gt;</code></em>",
+        "user_objectclass": "person",
+        "tenant_name_attribute": "ou",
+        "tenant_desc_attribute": "description",
+        "role_objectclass": "organizationalRole",
+        "role_id_attribute": "cn",
+        "role_allow_create": "True",
+        "domain_attribute_ignore": "enabled",
+        "suffix": "dc=example,dc=com",
+        "dumb_member": "<em class="replaceable"><code>&lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "user_enabled_mask": "2",
+        "user_enabled_default": "512",
+        "role_name_attribute": "ou",
+        "user_domain_id_attribute": "businessCategory",
+        "domain_enabled_emulation": "True",
+        "user": "<em class="replaceable"><code>&lt;DOMAIN\\username&gt; or &lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "password": "<em class="replaceable"><code>&lt;administratorPassword&gt;</code></em>",
+        "tenant_enabled_attribute": "extensionName",
+        "user_name_attribute": "<em class="replaceable"><code>sAMAccountName</code></em>",
+        "user_allow_create": "False",
+        "user_allow_update": "False",
+        "role_allow_delete": "True"
+      },
+      "auth_type": "ldap",
+      "debug": "True"
+      "verbose": "True"
+    }
+                            </pre>
+<p>LDAP Overrides:</p>
+<pre class="screen">    "keystone": {
+      "users": {
+        "admin": {
+          "password": "<em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+        },
+        "monitoring": {
+          "password": "<em class="replaceable"><code>&lt;servicePassword&gt;</code></em>"
+        },
+      "ldap": {
+        "user_attribute_ignore": "password,tenant_id,tenants",
+        "tenant_tree_dn": "<em class="replaceable"><code>&lt;OU=Tenants,dc=example,dc=com&gt;</code></em>",
+        "role_tree_dn": "<em class="replaceable"><code>&lt;OU=Roles,dc=example,dc=com&gt;</code></em>",
+        "tenant_attribute_ignore": "tenantId",
+        "group_attribute_ignore": "enabled",
+        "url": "ldap://<em class="replaceable"><code>&lt;LDAPServerHostnameOrIP&gt;</code></em>",
+        "tenant_objectclass": "groupOfNames",
+        "tenant_id_attribute": "cn",
+        "tenant_enabled_emulation": "True",
+        "use_dumb_member": "True",
+        "user_tree_dn": "<em class="replaceable"><code>&lt;CN=Users,dc=example,dc=com&gt;</code></em>",
+        "user_objectclass": "person",
+        "role_objectclass": "organizationalRole",
+        "user_enabled_emulation": "True",
+        "allow_subtree_delete": "false",
+        "suffix": "<em class="replaceable"><code>&lt;dc=example,dc=com&gt;</code></em>",
+        "user": "<em class="replaceable"><code>&lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "password": "<em class="replaceable"><code>&lt;administratorPassword&gt;</code></em>",
+      },
+      "auth_type": "ldap",
+      "debug": "True"
+      "verbose": "True"
+    }
+                            
+                        </pre>
+</li>
+<li class="step" title="Step 7">
+<p>Run <span class="command"><strong>chef-client</strong></span> on the Chef server and on each server in your OpenStack environment to implement the changes.</p>
+</li>
+</ol></div>
+<p>If you would like to view all of the available Active Directory/LDAP options available in the Rackspace cookbooks you can review them here:</p>
+<p><a class="link" href="https://github.com/rcbops-cookbooks/keystone/blob/master/attributes/default.rb#L22" target="_top"><code class="uri">https://github.com/rcbops-cookbooks/keystone/blob/master/attributes/default.rb#L22</code></a></p>
+</div>
+<div class="section" title="Using replicated Active Directory/LDAP controllers across multiple environments">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title" style="clear: both;"><a name="ad-ldap-howto-multiple-rpcs-havana"></a>Using replicated Active Directory/LDAP controllers across multiple environments</h3>
+</div>
+</div>
+</div>
+<p>It is possible to replicate Active Directory/LDAP controllers for multiple Rackspace Private Cloud environments.</p>
+<p>This scenario has the following limitations:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" type="disc">
+<li class="listitem">
+<p>All service users must have consistent passwords across the Rackspace Private Cloud environments. For example, the <code class="filename">nova</code> user must have the same password in each environment, and the other service users must be consistent as well.</p>
+</li>
+<li class="listitem">
+<p>Only one Active Directory tree can be used, and all Rackspace Private Cloud users must be in the same tree.</p>
+</li>
+<li class="listitem">
+<p>If you are using the Active Directory/LDAP server for separate development and production Rackspace Private Cloud environments, use the production environment service passwords. This will ensure that you do not lose connectivity and services during a migration.</p>
+</li>
+<li class="listitem">
+<p>For Rackspace hosting customers: if your environment is located in more than one datacenter and you need assistance from Rackspace Support, ensure that your support representative is aware of the replication.</p>
+</li>
+</ul>
+</div>
+<div class="procedure" title="Procedure&nbsp;4.3.&nbsp;To use replicated Active Directory/LDAP controllers"><a name="d5e371"></a>
+<p class="title"><strong>Procedure&nbsp;4.3.&nbsp;To use replicated Active Directory/LDAP controllers</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>On one environment, perform the prerequisite and environment update procedures documented in the previous two sections.</p>
+</li>
+<li class="step" title="Step 2">
+<p>On a second environment, stop the OpenStack services. If you do not stop these services, both environments may lock out the service users until Active Directory releases the lock.</p>
+</li>
+<li class="step" title="Step 3">
+<p>Perform the environment update procedure on the second environment. The chef-client run will restart the OpenStack services.</p>
+<p>This environment will experience downtime during the chef-client run.</p>
+</li>
+<li class="step" title="Step 4">
+<p>Repeat steps 2 and 3 on each environment that will use the Active Directory/LDAP server.</p>
+</li>
+</ol></div>
+</div>
+</div>
+<div class="chapter" title="Chapter&nbsp;5.&nbsp;Adding Active Directory/LDAP integration to the Chef environment (OpenStack Grizzly)">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="ad-ldap-howto-grizzly"></a>Adding Active Directory/LDAP integration for OpenStack Grizzly</h2>
+</div>
+</div>
+</div>
+<p>The instructions in this section apply to Active Directory implementations in Private Clouds that are running OpenStack Grizzly (Rackspace Private Cloud v4.1.n).</p>
+<p>If you are running OpenStack Havana (Rackspace Private Cloud v4.2.2), refer to Adding Active Directory integration to the Chef environment (OpenStack Havana).</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;" title="Note">
+<table summary="Note" border="0">
+<tbody>
+<tr><th align="left">Note</th></tr>
+<tr>
+<td align="left" valign="top">
+<p>The instructions in this section should be used <span class="bold"><strong>only</strong></span> for greenfield deployments of Rackspace Private Cloud and Active Directory/LDAP. If you need to use an existing Active Directory/LDAP service with Rackspace Private Cloud, contact your Rackspace support representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The following procedure adds your Active Directory environment information to the Chef environment, which executes the configuration changes in your OpenStack environment. The procedure is the same for Active Directory and LDAP.</p>
+<p>In this example, you will integrate Keystone and Active Directory in an environment called <code class="filename">default</code>. This example uses the Knife command line tool to edit the environment's <code class="filename">.json</code> file.</p>
+<div class="procedure" title="Procedure&nbsp;5.1.&nbsp;To add Active Directory/LDAP information to the Chef environment (Grizzly)"><a name="d5e395"></a>
+<p class="title"><strong>Procedure&nbsp;5.1.&nbsp;To add Active Directory/LDAP information to the Chef environment (Grizzly)</strong></p>
+<ol class="procedure" type="1">
+<li class="step" title="Step 1">
+<p>Define your text editor with <span class="command"><strong>EXPORT</strong></span>. In this example, the editor is <code class="filename">vim</code>.</p>
+<pre class="screen">$ export EDITOR=vim 
+                                </pre>
+</li>
+<li class="step" title="Step 2">
+<p>Use the <span class="command"><strong>knife</strong></span> command to enter the environment editing mode.</p>
+<pre class="screen">$ knife environment edit default 
+                            </pre>
+</li>
+<li class="step" title="Step 3">
+<p>You will now be able to edit the environment <code class="filename">.json</code> file directly. Locate the <code class="filename">override_attributes: {</code> setting inside the file, and locate the <code class="filename">"keystone": {</code> section within the override section. If it does not already exist, you will need to add it.</p>
+</li>
+<li class="step" title="Step 4">
+<p>Edit the <code class="filename">"keystone": {</code> section to match the following code, substituting in the OU and objectClass information that you gathered earlier in the lines with italicized variables.</p>
+<pre class="screen">    "keystone": {
+      "ldap": {
+        "user_attribute_ignore": "password,tenantId,tenants",
+        "tenant_allow_create": "True",
+        "tenant_allow_update": "True",
+        "user_mail_attribute": "mail",
+        "user_enabled_attribute": "userAccountControl",
+        "user_allow_delete": "False",
+        "role_allow_update": "True",
+        "domain_objectclass": "Group",
+        "tenant_tree_dn": "<em class="replaceable"><code>&lt;OU=Tenants,dc=example,dc=com&gt;</code></em>",
+        "tenant_allow_delete": "True",
+        "role_tree_dn": "<em class="replaceable"><code>&lt;OU=Roles,dc=example,dc=com&gt;</code></em>",
+        "role_member_attribute": "roleOccupant",
+        "domain_enabled_emulation_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "group_attribute_ignore": "enabled",
+        "user_id_attribute": "cn",
+        "tenant_member_attribute": "member",
+        "url": "ldap://<em class="replaceable"><code>&lt;LDAPServerHostnameOrIP&gt;</code></em>",
+        "tenant_objectclass": "groupOfNames",
+        "tenant_id_attribute": "cn",
+        "domain_tree_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "use_dumb_member": "True",
+        "user_tree_dn": "CN=Users,dc=<em class="replaceable"><code>&lt;example&gt;</code></em>,dc=<em class="replaceable"><code>&lt;example2&gt;</code></em>",
+        "user_objectclass": "person",
+        "tenant_name_attribute": "ou",
+        "tenant_desc_attribute": "description",
+        "role_objectclass": "organizationalRole",
+        "role_id_attribute": "cn",
+        "role_allow_create": "True",
+        "domain_attribute_ignore": "enabled",
+        "suffix": "dc=example,dc=com",
+        "dumb_member": ""<em class="replaceable"><code>&lt;DOMAIN\\username&gt; or &lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>"",
+        "user_enabled_mask": "2",
+        "user_enabled_default": "512",
+        "role_name_attribute": "ou",
+        "user_domain_id_attribute": "businessCategory",
+        "domain_enabled_emulation": "True",
+        "user": "<em class="replaceable"><code>&lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "password": "<em class="replaceable"><code>&lt;administratorPassword&gt;</code></em>",
+        "tenant_enabled_attribute": "extensionName",
+        "user_name_attribute": "cn",
+        "user_allow_create": "False",
+        "user_allow_update": "False",
+        "role_allow_delete": "True"
+      },
+      "auth_type": "ldap",
+      "debug": "True"
+    }
+                            </pre>
+</li>
+<li class="step" title="Step 5">
+<p>If the schema uses existing LDAP users for the Nova and Glance service users, you should also ensure that these are defined in the environment file and that user creation, updating, and deletion is disabled. If you do not define them here, the Rackspace cookbooks will attempt to create those users for you. The following example shows an environment with Nova and Glance service user information defined.</p>
+<pre class="screen">      "override_attributes": {
+         "glance": {
+                 "service_pass": "<em class="replaceable"><code>&lt;glance user password&gt;</code></em>"
+         },
+         "nova": {
+                 "service_pass": "<em class="replaceable"><code>&lt;nova user password&gt;</code></em>"
+         },
+    "keystone": {
+      "ldap": {
+        "user_attribute_ignore": "password,tenantId,tenants",
+        "tenant_allow_create": "True",
+        "tenant_allow_update": "True",
+        "user_mail_attribute": "mail",
+        "user_enabled_attribute": "userAccountControl",
+        "user_allow_delete": "False",
+        "role_allow_update": "True",
+        "domain_objectclass": "Group",
+        "tenant_tree_dn": "<em class="replaceable"><code>&lt;OU=Tenants,dc=example,dc=com&gt;</code></em>",
+        "tenant_allow_delete": "True",
+        "role_tree_dn": "<em class="replaceable"><code>&lt;OU=Roles,dc=example,dc=com&gt;</code></em>",
+        "role_member_attribute": "roleOccupant",
+        "domain_enabled_emulation_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "group_attribute_ignore": "enabled",
+        "user_id_attribute": "cn",
+        "tenant_member_attribute": "member",
+        "url": "ldap://<em class="replaceable"><code>&lt;LDAPServerHostnameOrIP&gt;</code></em>",
+        "tenant_objectclass": "groupOfNames",
+        "tenant_id_attribute": "cn",
+        "domain_tree_dn": "<em class="replaceable"><code>&lt;OU=Domains,dc=example,dc=com&gt;</code></em>",
+        "use_dumb_member": "True",
+        "user_tree_dn": "<em class="replaceable"><code>&lt;CN=Users,dc=example,dc=com&gt;</code></em>",
+        "user_objectclass": "person",
+        "tenant_name_attribute": "ou",
+        "tenant_desc_attribute": "description",
+        "role_objectclass": "organizationalRole",
+        "role_id_attribute": "cn",
+        "role_allow_create": "True",
+        "domain_attribute_ignore": "enabled",
+        "suffix": "dc=example,dc=com",
+        "dumb_member": "<em class="replaceable"><code>&lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "user_enabled_mask": "2",
+        "user_enabled_default": "512",
+        "role_name_attribute": "ou",
+        "user_domain_id_attribute": "businessCategory",
+        "domain_enabled_emulation": "True",
+        "user": "<em class="replaceable"><code>&lt;DOMAIN\\username&gt; or &lt;CN=Administrator,CN=Users,dc=example,dc=com&gt;</code></em>",
+        "password": "<em class="replaceable"><code>&lt;administratorPassword&gt;</code></em>",
+        "tenant_enabled_attribute": "extensionName",
+        "user_name_attribute": "cn",
+        "user_allow_create": "False",
+        "user_allow_update": "False",
+        "role_allow_delete": "True"
+      },
+      "auth_type": "ldap",
+      "users": {
+        "admin": {
+          "password": "Openstack admin password"
+        },
+        "monitoring": {
+          "password": "monitoring password"
+        }
+      },
+      "debug": "True"
+    }	 
+                            </pre>
+</li>
+<li class="step" title="Step 6">
+<p>Run <span class="command"><strong>chef-client</strong></span> on the Chef server and on each server in your OpenStack environment to implement the changes.</p>
+</li>
+<li class="step" title="Step 7">
+<p>Run <span class="command"><strong>chef-client</strong></span> again. The second run resolves an issue related to <a class="link" href="https://bugs.launchpad.net/keystone/+bug/1176270" target="_top">Keystone bug 1176270</a>.</p>
+<p>Once this process is complete, you will be able to authenticate with Keystone with an Active Directory backend.</p>
+</li>
+</ol></div>
+<p>If you would like to view all of the available Active Directory options available in the Rackspace cookbooks you can review them here:</p>
+<p><a class="link" href="https://github.com/rcbops-cookbooks/keystone/blob/master/attributes/default.rb#L22" target="_top"><code class="uri">https://github.com/rcbops-cookbooks/keystone/blob/master/attributes/default.rb#L22</code></a></p>
+</div>

@@ -1,0 +1,194 @@
+---
+node_id: 4759
+title: Using Swift Signal Resources to Determine Status for Cloud Orchestration User Data Scripts
+permalink: article/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts
+type: article
+created_date: '2015-07-24 17:38:22'
+created_by: Mike Asthalter
+last_modified_date: '2015-07-31 14:2833'
+last_modified_by: Mike Asthalter
+products: Cloud Orchestration
+categories: Templates
+body_format: tinymce
+---
+
+<h2>Summary</h2>
+
+<p><code>OS::Heat::SwiftSignal</code> can be used to coordinate resource creation with notifications/signals that could be coming from sources external or internal to the stack. It is often used in conjunction with <code>OS::Heat::SwiftSignalHandle</code> resource.</p>
+
+<p><code>SwiftSignalHandle</code> is used to create a temporary URL, and this URL is used by applications and scripts to send signals. <code>SwiftSignal</code> resource waits on this URL for a specified number of signals in a given time.</p>
+
+<p>&nbsp;</p>
+
+<h3>Example template</h3>
+
+<p>In the following example template, you will set up a single node Linux server that signals success or failure of <code>user_data</code> script execution at a given URL.</p>
+
+<p>Start by adding the top-level template sections:</p>
+
+<p>&nbsp;</p>
+
+<pre>
+heat_template_version: 2014-10-16
+
+description: |
+  Single node linux server with swift signaling.
+
+resources:
+
+outputs:
+</pre>
+
+<p>&nbsp;</p>
+
+<h3>Resources section</h3>
+
+<h4>Add a <code>SwiftSignalHandle</code> resource</h4>
+
+<p><code>SwiftSignalHandle</code> is a resource to create a temporary URL to receive notification/signals. Note that the temporary URL is created using Rackspace Cloud Files.</p>
+
+<pre>
+
+signal_handle:
+  type: "OS::Heat::SwiftSignalHandle"
+
+</pre>
+
+<h4>Add <code>SwiftSignal</code> resource</h4>
+
+<p>The <code>SwiftSignal</code> resource waits for a specified number of "SUCCESS" signals (the number is provided as <code>count</code> property) on the given URL (<code>handle</code> property). The stack will be marked as a failure if the specified number of signals are not received in the given <code>timeout</code>, or if a non "SUCCESS" signal is received such as a "FAILURE". A data string and a reason string may be attached along with the success or failure notification. The data string is an attribute that can be displayed as template output.</p>
+
+<pre>
+wait_on_server:
+  type: OS::Heat::SwiftSignal
+  properties:
+    handle: {get_resource: signal_handle}
+    count: 1
+    timeout: 600
+
+</pre>
+
+<p>Here <code>SwiftSignal</code> resource would wait for <code>600</code> seconds to receive 1 signal on the <code>handle</code>.</p>
+
+<h4>&nbsp;</h4>
+
+<h4>Add a server resource</h4>
+
+<p>Add a Linux server with a bash script in the <code>user_data</code> property. At the end of the script execution, send a success/failure message to the temporary URL created by the above <code>SwiftSignalHandle</code> resource.</p>
+
+<pre>
+
+linux_server:
+  type: OS::Nova::Server
+  properties:
+    image: 4b14a92e-84c8-4770-9245-91ecb8501cc2
+    flavor: 1 GB Performance
+    user_data:
+      str_replace:
+        template: |
+          #!/bin/bash -x
+          # assume you are doing a long running operation here
+          sleep 300
+
+          # Assuming long running operation completed successfully,
+          # notify success signal
+          wc_notify --data-binary '{"status": "SUCCESS", "data": "Script execution succeeded"}'
+
+          # Alternatively if operation fails, a FAILURE with reason and data may be sent,
+          # notify failure signal example below
+          # wc_notify --data-binary '{"status": "FAILURE", "reason":"Operation failed due to xyz error", "data":"Script execution failed"}'
+
+        params:
+          # Replace all occurances of "wc_notify" in the script with an
+          # appropriate curl PUT request using the "curl_cli" attribute
+          # of the SwiftSignalHandle resource
+          wc_notify: { get_attr: ['signal_handle', 'curl_cli']
+
+</pre>
+
+<h3>Outputs section</h3>
+
+<p>Add Swift signal URL to the <code>outputs</code> section.</p>
+
+<pre>
+#Get the signal URL which contains all information passed to the signal handle
+signal_url:
+  value: { get_attr: ['wait_handle', 'curl_cli'] }
+  description: Swift signal URL
+
+#Obtain data describing script results. If nothing is passed, this value will be NULL
+signal_data:
+  value: { get_attr: ['wait_on_server', 'data'] }
+  description: Data describing script results
+
+#Obtain IPv4 address of server
+server_public_ip:
+  value:{ get_attr: [ linux_server, accessIPv4 ] }
+  description: Linux server public IP
+
+</pre>
+
+<p>&nbsp;</p>
+
+<h3>Full Example Template</h3>
+
+<p>&nbsp;</p>
+
+<pre>
+
+heat_template_version: 2014-10-16
+
+description: |
+  Single node linux server with swift signaling.
+
+resources:
+
+  signal_handle:
+    type: "OS::Heat::SwiftSignalHandle"
+
+  wait_on_server:
+    type: OS::Heat::SwiftSignal
+    properties:
+      handle: {get_resource: signal_handle}
+      count: 1
+      timeout: 600
+
+  linux_server:
+    type: OS::Nova::Server
+    properties:
+      image: 4b14a92e-84c8-4770-9245-91ecb8501cc2
+      flavor: 1 GB Performance
+      user_data:
+        str_replace:
+          template: |
+            #!/bin/bash -x
+            # assume you are doing a long running operation here
+            sleep 300
+
+            # Assuming long running operation completed successfully, notify success signal
+            wc_notify --data-binary '{"status": "SUCCESS", "data": "Script execution succeeded"}'
+
+            # Alternatively if operation fails a FAILURE with reason and data may be sent,
+            # notify failure signal example below
+            # wc_notify --data-binary '{"status": "FAILURE", "reason":"Operation failed due to xyz error", "data":"Script execution failed"}'
+
+          params:
+            wc_notify: { get_attr: ['signal_handle', 'curl_cli'] }
+
+outputs:
+  #Get the signal URL which contains all information passed to the signal handle
+  signal_url:
+    value: { get_attr: ['signal_handle', 'curl_cli'] }
+    description: Swift signal URL
+
+  #Obtain data describing script results. If nothing is passed, this value will be NULL
+  signal_data:
+    value: { get_attr: ['wait_on_server', 'data'] }
+    description: Data describing script results
+
+  #Obtain IPv4 address of server  
+  server_public_ip:
+    value: { get_attr: [ linux_server, accessIPv4 ] }
+    description: Linux server public IP
+
+</pre>

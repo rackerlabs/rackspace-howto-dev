@@ -1,0 +1,28 @@
+---
+node_id: 615
+title: Enable detailed errors in classic ASP and server-side errors on Cloud Sites
+permalink: article/how-do-i-enable-detailed-errors-in-classic-asp-and-server-side-errors-on-cloud-sites
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-06-23 16:4726'
+last_modified_by: kelly.holcomb
+products: Cloud Sites
+categories: IIS and ASP.NET
+body_format: tinymce
+---
+
+<p>You can enable detailed error messages for your classic ASP site on Windows IIS by using a <strong>web.config</strong> file with the following code.</p>
+
+<p><strong>Note:</strong> This code is useful in diagnosing issues with a site, but for security reasons should be turned off when the site is in production.</p>
+
+<pre>
+&lt;configuration&gt;
+
+  &lt;system.webServer&gt;
+    &lt;httpErrors errorMode="Detailed" /&gt;
+  &lt;/system.webServer&gt;
+&lt;/configuration&gt;
+</pre>
+
+<p>For more information about the syntax and use of the &lt;<code>httpErrors&gt;</code> element, see <a class="external text" href="http://www.iis.net/ConfigReference/system.webServer/httpErrors" rel="nofollow" title="http://www.iis.net/ConfigReference/system.webServer/httpErrors">the HTTP Errors article on www.iis.net</a>.</p>

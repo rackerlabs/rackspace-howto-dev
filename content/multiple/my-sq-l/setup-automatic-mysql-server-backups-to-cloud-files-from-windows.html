@@ -1,0 +1,160 @@
+---
+node_id: 1120
+title: Setup Automatic MySQL Server Backups to Cloud Files from Windows
+permalink: article/setup-automatic-mysql-server-backups-to-cloud-files-from-windows
+type: article
+created_date: '2011-06-07 21:31:05'
+created_by: RackKCAdmin
+last_modified_date: '2015-01-06 00:3301'
+last_modified_by: jered.heeschen
+products: 'Cloud Servers,Cloud Files'
+categories: MySQL
+body_format: tinymce
+---
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<div id="toctitle">
+			<h2>Contents</h2>
+			</div>
+
+			<ul>
+				<li class="toclevel-1"><a href="#Setup_automatic_MySQL_Server_Backups_to_Cloud_Files_in_Windows"><span class="tocnumber">1</span> <span class="toctext">Setup automatic MySQL Server Backups to Cloud Files in Windows</span></a>
+
+				<ul>
+					<li class="toclevel-2"><a href="#1._Download_and_build_the_upload_software"><span class="tocnumber">1.1</span> <span class="toctext">1. Download and build the upload software</span></a></li>
+					<li class="toclevel-2"><a href="#2._Create_a_.bat_file_for_taking_backups"><span class="tocnumber">1.2</span> <span class="toctext">2. Create a .bat file for taking backups</span></a></li>
+					<li class="toclevel-2"><a href="#3._Fully_automate.2C_scheduled_task"><span class="tocnumber">1.3</span> <span class="toctext">3. Fully automate, scheduled task</span></a></li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="Setup_automatic_MySQL_Server_Backups_to_Cloud_Files_in_Windows" name="Setup_automatic_MySQL_Server_Backups_to_Cloud_Files_in_Windows"></a></p>
+
+<h2><span class="mw-headline">Setup automatic MySQL Server Backups to Cloud Files in Windows</span></h2>
+
+<p>This article is about setting up automatic MySQL server backups from your Windows Cloud Server to your Rackspace Cloud Files container. Follow these three steps to perform this task.</p>
+
+<ol>
+	<li>Download and build a small piece of software to upload a file to Cloud Files.</li>
+	<li>Create a .bat file to take the backup of your MySQL server database and upload it to Cloud Files using the software created in the previous step.</li>
+	<li>Create a scheduled task in Windows to run the above .bat file from step 2 at a scheduled date and time.</li>
+</ol>
+
+<p><a id="1._Download_and_build_the_upload_software" name="1._Download_and_build_the_upload_software"></a></p>
+
+<h3><span class="mw-headline">1. Download and build the upload software</span></h3>
+
+<p>First you will need to download a small piece of C# software and compile it on Windows Cloud Server. Use the following easy steps to build the Cloud Files upload software.</p>
+
+<ul>
+	<li>Download the software from this <a class="external text" href="http://c16281.r81.cf2.rackcdn.com/chmouel-upload-to-cf-cs-0.1-0-g79abd66.zip" rel="nofollow" title="http://c16281.r81.cf2.rackcdn.com/chmouel-upload-to-cf-cs-0.1-0-g79abd66.zip">link</a>.</li>
+</ul>
+
+<ul>
+	<li>After downloading, extract the software into your C: drive, e.g. c:/upload-to-cf-cs-0.1/</li>
+</ul>
+
+<ul>
+	<li>Now download and install nant, a free .Net Build tool, from <a class="external free" href="http://nant.sourceforge.net/" rel="nofollow" title="http://nant.sourceforge.net/">http://nant.sourceforge.net/</a>.</li>
+</ul>
+
+<ul>
+	<li>Once you have successfully installed nant, then open a command prompt and navigate to the directory <strong>c:/upload-to-cf-cs-0.1</strong> and run <strong>nant.exe</strong> command as shown in the following screenshot.</li>
+</ul>
+
+<p><img alt="mysqlbackuptoCF1.png" src="http://c602889.r89.cf2.rackcdn.com/mysqlbackuptoCF1.png" width="650" /></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>The above command will compile the binary file upload-to-cf.exe. We will be using this binary file to upload our backup files to Cloud Files. You can test this command using the following syntax:</li>
+</ul>
+
+<pre>
+ 
+upload-to-cf.exe [cloud username] [cloud api_key] [container name] [file path]
+</pre>
+
+<p><a id="2._Create_a_.bat_file_for_taking_backups" name="2._Create_a_.bat_file_for_taking_backups"></a></p>
+
+<h3><span class="mw-headline">2. Create a .bat file for taking backups</span></h3>
+
+<ul>
+	<li>Next, we need to create a .bat file to automate the MySQL database backup procedure. We want to backup the MySQL database backup file to a date-stamped file. There are several ways to do this, but the easiest way is through a batch file. The command we'll be using is as follows:</li>
+</ul>
+
+<pre>
+ 
+c:\&lt;path-to-mysql&gt;\bin\mysqldump -u[user] -p[password] --result-file="c:\&lt;path&gt;\backup.%DATE:~0,3%.sql" [database name]
+</pre>
+
+<ul>
+	<li>Replace the values for username, password, and database name with your MySQL information. You can try this command from the normal command prompt to make sure that it works without any problems before actually including it in a .bat file. The above command should end up with a .sql file containing a full dump of the MySQL database, with the name you provided at the end of the above command.</li>
+</ul>
+
+<ul>
+	<li>Once you are satisfied that the above command works without any problem, you can go ahead and create a .bat backup file (e.g., mysql-backup.bat). It can look like this...</li>
+</ul>
+
+<p><em>Note: You need to replace the values in [] brackets with actual values for your system.</em></p>
+
+<pre>
+ 
+@echo off 
+echo “Running dump... “
+c:\&lt;path-to-mysql&gt;\bin\mysqldump -u[user] -p[password] --result-file="c:\&lt;path&gt;\backup.%DATE:~0,3%.sql" [database name] 
+echo “MySQL dump done!”
+echo “Uploading to cloud files”
+upload-to-cf.exe [cloud username] [cloud api_key] [container name] “c:\&lt;path&gt;\backup.%DATE:~0,3%.sql”
+echo “backup file uploaded to cloud files!”
+</pre>
+
+<ul>
+	<li>Now you should be able to run <strong>mysql-backup.bat</strong> from a command prompt. If it works, you should see a success message, and a file should be generated in the directory you specified. If not, make sure you have the correct username, password, and database values specified and then try it again.</li>
+</ul>
+
+<p><a id="3._Fully_automate.2C_scheduled_task" name="3._Fully_automate.2C_scheduled_task"></a></p>
+
+<h3><span class="mw-headline">3. Fully automate, scheduled task</span></h3>
+
+<ul>
+	<li>So now we should have our mysql-backup.bat file that creates the backup of our MySQL database and uploads the file to Rackspace Cloud Files using the upload-to-cf.exe program. The next step is to create a Windows Scheduled Task so that all the above steps run automatically at a scheduled date and time. Follow the steps below to setup a scheduled task in Windows.</li>
+</ul>
+
+<ul>
+	<li>Click Start, click Run, type cmd, and then click OK.</li>
+</ul>
+
+<ul>
+	<li>At the command prompt, type <strong>net start</strong>, and then press ENTER to display a list of currently running services. If Task Scheduler is not displayed in the list, type net start "task scheduler", and then press ENTER.</li>
+</ul>
+
+<p><img alt="mysqlbackuptoCF2.png" src="http://c602889.r89.cf2.rackcdn.com/mysqlbackuptoCF2.png" width="650" /></p>
+
+<ul>
+	<li>At the command prompt, type the following command and then press ENTER:</li>
+</ul>
+
+<pre>
+schtasks /create /tn "MySQL_Backup" /tr c:\apps\mysql-backup.bat /sc Value /st HH:MM:SS /ed MM/DD/YYYY</pre>
+
+<ul>
+	<li>Note that you may have to change the parameters for your situation. For example, you might type <em><strong>schtasks /create /tn "MySQL_backup" /tr c:\apps\mysql-backup.bat /sc daily /st 08:00:00 /ed 12/31/2014</strong></em></li>
+</ul>
+
+<p><img alt="MySQLbackuptoCF3.png" src="http://c602889.r89.cf2.rackcdn.com/MySQLbackuptoCF3.png" width="650" /></p>
+
+<ul>
+	<li>This example schedules the MySQL_Backup program to run once a day, every day, at 8:00 A.M. until December 31, 2014. Because it omits the <strong>/mo</strong> parameter, the default interval of 1 is used to run the command every day.</li>
+</ul>
+
+<ul>
+	<li>During the task creation you will be asked your currently logged in user’s password. Once you enter the password, a new task will be created for you. You can view the newly created task with the <strong>schtasks</strong> command.</li>
+</ul>

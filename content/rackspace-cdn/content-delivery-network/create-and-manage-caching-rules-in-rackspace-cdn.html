@@ -1,0 +1,82 @@
+---
+node_id: 4661
+title: Create and manage caching rules in Rackspace CDN
+permalink: article/create-and-manage-caching-rules-in-rackspace-cdn
+type: article
+created_date: '2015-05-11 14:48:23'
+created_by: Rackspace Support
+last_modified_date: '2015-10-02 16:4257'
+last_modified_by: catherine.richardson
+products: Rackspace CDN
+categories: Content Delivery Network
+body_format: tinymce
+---
+
+<p>Caching rules are designed to determine how long your content should live on the edge nodes before the origin is checked for an update. If your content changes frequently, you might want to set up a time to live (TTL) rule that pulls content from the origin every few minutes. If your content does not change frequently, we suggest you set a longer TTL of 12-24 hours.&nbsp;</p>
+
+<p>When you create multiple rules, you must order rules from least specific to most specific.</p>
+
+<p>For more information about rules, see the following sections and <a href="https://www.rackspace.com/knowledge_center/article/rackspace-cdn-edge-rules">Rackspace CDN edge rules</a>.</p>
+
+<p>After you create your service, you enter caching rules in the <strong>Caching Rules</strong> section of the CDN service page.</p>
+
+<p><img alt="" border="2" height="188" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.19.22%20AM.png" width="604" /></p>
+
+<h3>To create a caching rule</h3>
+
+<p>After you have created your service, follow these steps to create a caching rule:</p>
+
+<p><br />
+1. Click <strong>Add Rule</strong>. A popup dialog box appears.<br />
+<br />
+<img alt="" border="2" height="185" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.22.58%20AM.png" width="392" /></p>
+
+<p>2. Enter the following information to define the rule:</p>
+
+<ul>
+	<li><strong>Name</strong>: Name for the rule.</li>
+	<li><strong>TTL</strong>: The TTL to wait before the origin is checked for updates. Enter a value, and then select seconds, minutes, hours, or days as the unit for the TTL.</li>
+	<li><strong>Path</strong>: Path for the rule.</li>
+</ul>
+
+<p>3. Click <strong>Save Rule</strong>. The <strong>Service Status</strong> is <strong>Pending</strong> until the new rule is deployed. After the rule is deployed, it is displayed in the <strong>Caching Rules</strong> list.<br />
+<br />
+<img alt="" border="2" height="211" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.28.41%20AM.png" width="635" /></p>
+
+<p>&nbsp;</p>
+
+<h3>To edit a caching rule</h3>
+
+<p>To edit a caching rule, follow these steps:</p>
+
+<p>1. Click the gear icon beside the rule that you want to edit, and select <strong>Edit Rule</strong>.</p>
+
+<p>2. Edit the name, the TTL, or the path for the rule.<br />
+<br />
+<img alt="" border="2" height="172" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.39.23%20AM.png" width="354" /></p>
+
+<p>3. Click <strong>Save Rule</strong>. The <strong>Service Status</strong> is <strong>Pending</strong> until the updated rule is deployed. After the rule is deployed, it is displayed in the <strong>Caching Rules</strong> list.</p>
+
+<p>&nbsp;</p>
+
+<h3>To delete a caching rule</h3>
+
+<p>To delete a caching rule, follow these steps:</p>
+
+<p>1. Click the gear icon beside the rule that you want to delete, and select <strong>Delete Rule</strong>.</p>
+
+<p>2. In the popup dialog box, click <strong>Delete Rule</strong>.</p>
+
+<p><img alt="" border="2" height="127" src="/knowledge_center/sites/default/files/field/image/DeleteOriginRule_0.png" width="196" /></p>
+
+<p>The <strong>Service Status</strong> is <strong>Pending</strong> until the caching rule is deleted. After the rule is deleted, it is removed from the <strong>Caching Rules</strong> list.</p>
+
+<p>&nbsp;</p>
+
+<h4><a href="https://www.rackspace.com/knowledge_center/article/work-with-origins-and-origin-rules-in-rackspace-cdn">&lt; Work with origins and origin rules in Rackspace CDN</a>&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp; <a href="https://www.rackspace.com/knowledge_center/article/create-and-manage-restrictions-in-rackspace-cdn">Create and manage restrictions in Rackspace CDN &gt;</a></h4>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>

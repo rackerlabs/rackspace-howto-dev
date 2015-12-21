@@ -1,0 +1,128 @@
+---
+node_id: 130
+title: Modified Medium Trust on Cloud Sites
+permalink: article/modified-medium-trust-on-cloud-sites
+type: article
+created_date: '2011-03-15 15:49:06'
+created_by: RackKCAdmin
+last_modified_date: '2015-10-02 19:4107'
+last_modified_by: kyle.laffoon
+products: Cloud Sites
+categories: IIS and ASP.NET
+body_format: tinymce
+---
+
+<p>The Rackspace Cloud’s Windows environment operates in modified Medium Trust.</p>
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<div id="toctitle">
+			<h2>Contents</h2>
+			</div>
+
+			<ul>
+				<li class="toclevel-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+				<li class="toclevel-1"><a href="#Running_Applications_under_Medium_Trust"><span class="tocnumber">2</span> <span class="toctext">Running Applications under Medium Trust</span></a>
+				<ul>
+					<li class="toclevel-2"><a href="#DotNetNuke"><span class="tocnumber">2.1</span> <span class="toctext">DotNetNuke</span></a></li>
+					<li class="toclevel-2"><a href="#ASPDotNetStoreFront"><span class="tocnumber">2.2</span> <span class="toctext">ASPDotNetStoreFront</span></a></li>
+					<li class="toclevel-2"><a href="#Umbraco"><span class="tocnumber">2.3</span> <span class="toctext">Umbraco</span></a></li>
+					<li class="toclevel-2"><a href="#BlogEngine"><span class="tocnumber">2.4</span> <span class="toctext">BlogEngine</span></a></li>
+					<li class="toclevel-2"><a href="#mojoPortal"><span class="tocnumber">2.5</span> <span class="toctext">mojoPortal</span></a></li>
+				</ul>
+				</li>
+				<li class="toclevel-1"><a href="#Partially_Trusted_Callers"><span class="tocnumber">3</span> <span class="toctext">Partially Trusted Callers</span></a></li>
+				<li class="toclevel-1"><a href="#Other_Items"><span class="tocnumber">4</span> <span class="toctext">Other Items</span></a>
+				<ul>
+					<li class="toclevel-2"><a href="#AspJpeg"><span class="tocnumber">4.1</span> <span class="toctext">AspJpeg</span></a></li>
+					<li class="toclevel-2"><a href="#Configurations"><span class="tocnumber">4.2</span>&nbsp;<span class="toctext">Configurations</span></a></li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="Overview" name="Overview"></a></p>
+
+<h2><span class="mw-headline">Overview</span></h2>
+
+<p>The "trust level" refers to permissions set in the Web.config file that dictate what operations can and cannot be performed by web applications. Our ASP.NET 3.5 servers use the default <strong>Medium Trust</strong> level with the addition of <strong>OleDbPermission</strong>, <strong>OdbcPermission</strong>, <strong>ConfigurationPermission</strong>, <strong>ReflectionPermission</strong>, a less-restrictive <strong>WebPermission</strong> and <strong>SocketPermission</strong> as detailed below:</p>
+
+<ul>
+	<li>WebPermission Unrestricted="true"</li>
+	<li>OleDbPermission Unrestricted="true"</li>
+	<li>OdbcPermission Unrestricted="true"</li>
+	<li>SocketPermission Unrestricted="true"</li>
+	<li>ConfigurationPermission Unrestricted="true"</li>
+	<li>ReflectionPermission Unrestricted="true"</li>
+</ul>
+
+<p>Using a Medium Trust level prevents applications from accessing shared system resources and eliminates the potential for application interference. Adding <strong>OleDbPermission</strong> and <strong>OdbcPermission</strong> allows applications to use those data providers to access databases. <strong>WebPermission</strong> is modified to allow outbound HTTP and HTTPS traffic. <strong>SocketPermission</strong> is modified to allow better access to payment services. Adding <strong>ConfigurationPermission</strong> allows methods or classes to access configuration files. Adding <strong>ReflectionPermission</strong> allows access to non-public types and members.</p>
+
+<p>Applications operating under a Medium Trust level have no registry access, and no access to the Windows event log. Both network and file system access will be limited.</p>
+
+<p><a id="Running_Applications_under_Medium_Trust" name="Running_Applications_under_Medium_Trust"></a></p>
+
+<h2><span class="mw-headline">Running Applications under Medium Trust</span></h2>
+
+<p><a id="DotNetNuke" name="DotNetNuke"></a></p>
+
+<h3><span class="mw-headline">DotNetNuke</span></h3>
+
+<p>DotNetNuke can be installed in our modified Medium Trust environment by following <a href="/knowledge_center/index.php/DotNetNuke" title="DotNetNuke">our guide</a>. If you do encounter any issues with the installation of the CMS, please report the issue to our support team, post in our forums, or <a class="external text" href="http://www.dotnetnuke.com/tabid/795/default.aspx" title="http://www.dotnetnuke.com/tabid/795/default.aspx">visit DotNetNuke's community forums</a>.</p>
+
+<p><a id="ASPDotNetStoreFront" name="ASPDotNetStoreFront"></a></p>
+
+<h3><span class="mw-headline">ASPDotNetStoreFront</span></h3>
+
+<p>Per <a class="external text" href="https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=105" title="https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=105">this article at ASPDotNetStoreFront's website</a>:<br />
+"Beginning with version 7.0.2.5, the software will run in Medium Trust natively. Customers on earlier versions than that will need to contact <a class="external text" href="http://www.aspdotnetstorefront.com/t-support.aspx" title="http://www.aspdotnetstorefront.com/t-support.aspx">ASPDotNetStoreFront's support</a> with their original order number for a special medium trust build."</p>
+
+<p><a id="Umbraco" name="Umbraco"></a></p>
+
+<h3><span class="mw-headline">Umbraco</span></h3>
+
+<p><a href="http://umbraco.com/" target="_blank">Umbraco</a> can be configured to run in a Medium Trust environment.</p>
+
+<p><a id="BlogEngine" name="BlogEngine"></a></p>
+
+<h3><span class="mw-headline">BlogEngine</span></h3>
+
+<p>BlogEngine works in our modified Medium Trust environment. If you do encounter any issues with the installation of the CMS, please report the issue to our support team, post in our forums, or <a class="external text" href="http://www.codeplex.com/blogengine/Thread/List.aspx" title="http://www.codeplex.com/blogengine/Thread/List.aspx">visit BlogEngine’s community forums</a>.</p>
+
+<p><a id="mojoPortal" name="mojoPortal"></a></p>
+
+<h3><span class="mw-headline">mojoPortal</span></h3>
+
+<p>mojoPortal works in our modified Medium Trust environment. If you do encounter any issues with the installation of the CMS, please report the issue to our support team, post in our forums, or <a class="external text" href="http://www.mojoportal.com/forums.aspx" title="http://www.mojoportal.com/forums.aspx">visit mojoPortal's community forums</a>.</p>
+
+<p><a id="Partially_Trusted_Callers" name="Partially_Trusted_Callers"></a></p>
+
+<h2><span class="mw-headline">Partially Trusted Callers</span></h2>
+
+<p>If you do experience trust-related issues, it may relate to assemblies that do not allow <em>Partially Trusted Callers</em>. For additional information on this, please review Microsoft’s documentation regarding Partially Trusted Callers <a class="external text" href="http://msdn.microsoft.com/en-us/library/wyts434y.aspx" title="http://msdn.microsoft.com/en-us/library/wyts434y.aspx">here</a> and <a class="external text" href="http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7" title="http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7">here</a> (these are components that will <strong>NOT</strong> work with Partially Trusted Callers).</p>
+
+<p>Many components also have support documentation concerning functioning in a Medium Trust.</p>
+
+<p><a id="Other_Items" name="Other_Items"></a></p>
+
+<h2><span class="mw-headline">Other Items</span></h2>
+
+<p><a id="AspJpeg" name="AspJpeg"></a></p>
+
+<h3><span class="mw-headline">AspJpeg</span></h3>
+
+<p>The Rackspace Cloud has been working with Persists, the creator of AspJpeg, to determine if their component will work under .NET in our modified Medium Trust environment. It should be noted, however, that the AspJpeg component is fully functional under Classic ASP.</p>
+
+<p><a id="Configurations" name="Configurations"></a></p>
+
+<h3 class="p1"><span class="mw-headline">Configurations</span></h3>
+
+<p>To facilitate your ability to test your applications on your local development machine, we have made our modified Medium Trust configuration available:<br />
+<a href="http://c4959820.r20.cf2.rackcdn.com/web_customtrust.config">Click here to download modified Medium Trust configuration file for .NET 3.5</a></p>
+
+<p><a href="http://c4959820.r20.cf2.rackcdn.com/web_custom40.config"><span>Click here to download modified Medium Trust configuration file for .NET 4</span>.0</a></p>

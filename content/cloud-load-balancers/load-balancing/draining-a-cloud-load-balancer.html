@@ -1,0 +1,15 @@
+---
+node_id: 3552
+title: Draining a load balanced server
+permalink: article/draining-a-cloud-load-balancer
+type: article
+created_date: '2013-06-26 20:43:07'
+created_by: kyle.laffoon
+last_modified_date: '2013-07-12 20:2837'
+last_modified_by: kyle.laffoon
+products: Cloud Load Balancers
+categories: Load Balancing
+body_format: tinymce
+---
+
+<p><span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">Server “draining” is the redirection of incoming calls and new connections from the specified server to other servers connected to the same load balancer.<span style="mso-spacerun: yes;">&nbsp; </span>This is used to minimize service interruption when taking a server offline for needed maintenance.&nbsp; Sessions started before the server is put into draining status will continue until they naturally end.&nbsp; When all sessions have ended, the server is considered drained and can then be taken offline. </span>The following steps help to ensure minimal service <span style="mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman';">interruption</span> when removing a cloud server from an active load balancer.</p><ol><li>Select the <strong>Load Balancers</strong> tab.</li><li>Click the name of the applicable load balancer to view the connected servers.</li><li>Click Action Cog next to server to be drained.</li><li>Select <strong>Edit Node Condition </strong>from the options presented.<p><img src="/knowledge_center/sites/default/files/field/image/EditNodeConditionwitharrow.jpeg" alt="Edit Node Connection" width="340" height="226" border="2!" /></p></li><li>Select <strong>Draining Connections</strong> for the server condition and click <strong>Save Condition</strong>.<p><img src="/knowledge_center/sites/default/files/field/image/Drainingconnections_0.jpg" alt="" width="371" height="416" border="2!" /></p></li><li>Monitor the <a href="http://www.rackspace.com/knowledge_center/article/configuring-a-cloud-load-balancer-0#Protocol_and_Port_Number">applicable port</a> of the currently draining node for continued activity (for a Linux server check <a href="http://www.rackspace.com/knowledge_center/article/checking-listening-ports-with-netstat">netstat</a> for new connections).</li><li>When activity has ceased, repeat the first 5 steps above (as needed) and select <strong>Disabled</strong> in the repeated 5th step.</li></ol><p>Once disabled, the server can be removed from the load balancer and the application can be stopped or the instance deleted, depending on your needs.</p><p><img src="/knowledge_center/sites/default/files/field/image/Removefromloadbalancer.jpeg" alt="Remove from Load Balancer" width="340" height="226" border="2!" />&nbsp;</p>

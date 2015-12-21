@@ -1,0 +1,51 @@
+---
+node_id: 3708
+title: Upgrading resources for General Purpose or I/O optimized Cloud Servers
+permalink: article/changing-the-size-of-your-performance-flavor-server
+type: article
+created_date: '2013-09-25 21:08:13'
+created_by: kyle.laffoon
+last_modified_date: '2015-07-17 14:5727'
+last_modified_by: renee.rendon
+products: Cloud Servers
+categories: Server Management
+body_format: tinymce
+---
+
+<p>In the architecture of General Purpose Cloud Servers and I/O-optimized servers, you may change the size of your local system storage space in one of two ways:</p>
+
+<ul>
+	<li><a href="/knowledge_center/node/3708#increasestorage">Increase Available Storage with Cloud Block Storage</a></li>
+	<li><a href="/knowledge_center/node/3708#changeflavor">Create a new server with more resources</a>&nbsp;</li>
+</ul>
+
+<p>Note that these instructions apply to General Purpose and I/O optimized servers with local system disks only. Resource allocation for servers that boot from Cloud Block Storage volumes can be changed by using the boot volume to create a new server.</p>
+
+<h2><a name="increasestorage"></a>Increasing Available Storage</h2>
+
+<p>You can add to the available data storage space of your server by adding Cloud Block Storage volumes. Cloud Block Storage volumes come in two types: SATA for standard performance and SSD for high performance. For more information about Cloud Block Storage, see <a href="http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume ">Create and Attach a Cloud Block Storage Volume</a>.</p>
+
+<h2><a name="changeflavor"></a>Creating a new server with more resources</h2>
+
+<p>You can migrate your data to a new server with a larger allocation of&nbsp;RAM, vCPUs, data disks, and network throughput if you require more capacity. &nbsp;Note that a saved image cannot be used to create a server with a smaller system disk allocation than the original server.</p>
+
+<p>You can migrate your data to a new server by performing the following steps:</p>
+
+<ol>
+	<li>Create an image of your system disk. (See <a href="/knowledge_center/article/create-an-image-or-restore-a-cloud-server-from-an-image">Create an image or restore a Cloud Server from an image</a>&nbsp;for more information.)</li>
+	<li>Back up your data disk, either to a <a href="http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume ">Cloud Block Storage volume</a> or with <a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-backup">Cloud Backup</a>.<br />
+	<strong>Notes</strong>:
+	<ul>
+		<li>To decide between these options, consider your needs. For information about the advantages of each, see <a href="http://www.rackspace.com/knowledge_center/article/best-practices-%E2%80%93-cloud-block-storage-versus-cloud-backup">Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup</a>.</li>
+		<li>&nbsp;If you have rsync (Linux) or xcopy/robocopy (Microsoft Windows) installed on your server, you can use it to migrate&nbsp;data from your&nbsp;data disks&nbsp;after you have created the new server in step 3.</li>
+	</ul>
+	</li>
+	<li>Use the image of your system disk to create a new server with the configuration that you prefer.&nbsp; From the control panel select <strong>Servers</strong> then select <strong>Create Server</strong>.<br />
+	<strong>Note</strong>: Create the server as normal, however, from the <strong>Image</strong> section you will need to select the image from the <strong>Saved</strong> tab rather than the stock Rackspace images.</li>
+	<li>Copy the data from your data disk backup to your new data disk.</li>
+	<li>When you are satisfied with your new server, delete the old one.</li>
+</ol>
+
+<h2>&nbsp;Additional Resources</h2>
+
+<p>You can use Auto Scale to&nbsp;accomplish server resizing keeping your IP address, and have it happen dynamically in response to load. For details, see the Rackspace Auto Scale tip <a href="http://www.rackspace.com/knowledge_center/article/rackspace-auto-scale-tips-and-how-tos#changePerfServerSize">How to use Auto Scale to change the size of your General Purpose or optimized&nbsp;servers</a>.</p>

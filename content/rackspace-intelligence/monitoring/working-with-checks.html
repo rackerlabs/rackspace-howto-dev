@@ -1,0 +1,127 @@
+---
+node_id: 4778
+title: Working with checks
+permalink: article/working-with-checks
+type: article
+created_date: '2015-08-05 01:55:31'
+created_by: constanze.kratel
+last_modified_date: '2015-08-27 22:2341'
+last_modified_by: constanze.kratel
+products: Rackspace Intelligence
+categories: Monitoring
+body_format: tinymce
+---
+
+<p>Rackspace Intelligence provides an interface that you can use to create new checks to generate metrics for your entities, and to update existing checks.</p>
+
+<p>Each check has a designated&nbsp;<em>type</em>. The check type instructs the monitoring system how to check the monitored resource. For more information, see <a href="http://ttp://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-check-types.html.">Check types</a>.</p>
+
+<p>Checks types are divided into two categories:</p>
+
+<ul>
+	<li><em>Agent</em>&nbsp;checks&nbsp;monitor an entity's resource utilization. Agent checks are performed by the monitoring agent running on a server.<br />
+	For example, a&nbsp;Memory check&nbsp;can trigger an alarm if it detects memory usage above a specified percentage. Agent checks require the monitoring agent to be installed on the server. For a list of available agent check types, see&nbsp;<a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html">Agent check types</a>. For information on how to install the monitoring agent, see&nbsp;<a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/install-configure.html">Install and configure</a>.<br />
+	Rackspace Intelligence supports the following types of agent checks:
+	<ul>
+		<li>Apache</li>
+		<li>CPU</li>
+		<li>Custom Plugin</li>
+		<li>Disk</li>
+		<li>Filesystem</li>
+		<li>Load Average</li>
+		<li>Memory</li>
+		<li>SQL Plan Cache</li>
+		<li>SQL Memory Manager</li>
+		<li>SQL Buffer Manager</li>
+		<li>SQL Version</li>
+		<li>SQL Statistics</li>
+		<li>MySQL</li>
+		<li>Network</li>
+		<li>Redis</li>
+		<li>Windows PerfOS</li>
+	</ul>
+	</li>
+	<li><em>Remote</em> checks monitor an entity's internet connectivity. Remote checks are performed by attempting to contact the entity from outside the entity.<br />
+	For example, Ping check can trigger an alarm if it detects packet loss above a specified percentage. For a list of available remote check types, see <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-remote.html">Remote check types</a>.<br />
+	Rackspace Intelligence supports the following types of remote checks:
+	<ul>
+		<li>DNS</li>
+		<li>FTP Banner</li>
+		<li>HTTP</li>
+		<li>IMAP Banner</li>
+		<li>Ping</li>
+		<li>POP3 Banner</li>
+		<li>SMTP Banner</li>
+		<li>SMTP</li>
+		<li>SSH</li>
+		<li>TCP</li>
+		<li>Telnet Banner</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Some checks that cannot be created with the&nbsp;Rackspace Intelligence interface can be created by using the Cloud Monitoring CLI or API. These checks are listed at <a href="/knowledge_center/article/rackspace-cloud-monitoring-checks-and-alarms">Rackspace Cloud Monitoring Checks and Alarms</a>.</p>
+
+<p>Checks can generate alerts. You can observe open alerts within the Rackspace Intelligence dashboard. You can also choose to notify someone (for example, on-call technical support) or to suppress notification (for example, during scheduled maintenance).</p>
+
+<h2><a id="createcheck" name="createcheck"></a>Create a check</h2>
+
+<p>To create a new check, complete the following steps:</p>
+
+<ol>
+	<li>Log in to the <a href="http://intelligence.rackspace.com">Rackspace Intelligence interface</a>.</li>
+	<li>On the&nbsp;<strong>Monitoring</strong>&nbsp;page, click the entity for which you want to create the check.</li>
+	<li>In the&nbsp;<strong>Monitoring Checks</strong>&nbsp;section of the entity details page, click&nbsp;<strong>Create Check</strong>.<br />
+	<img alt="" border="2" height="127" src="/knowledge_center/sites/default/files/field/image/intelligence-checks-create-check.png" width="655" /></li>
+	<li>In the popup dialog box, click the <strong>Check Type</strong> box and select the appropriate check type from the list.</li>
+	<li>In the&nbsp;<strong>Check Name</strong>&nbsp;box, type a name for the check.</li>
+	<li>Specify any other values for the type of check that you are creating, and then click&nbsp;<strong>Create Check</strong>.<br />
+	After successfully creating the check, Rackspace Intelligence displays a details page with the name of your check. This page provides relevant information about your check.</li>
+</ol>
+
+<h2><a name="editcheck"></a>Edit a check</h2>
+
+<p>To edit your check, click the&nbsp;<strong>Actions</strong>&nbsp;menu on the check details page.</p>
+
+<p>You can perform the following editing actions for checks:</p>
+
+<ul>
+	<li><a href="#renaming">Rename a check</a></li>
+	<li><a href="#addingalarm">Add an alarm</a></li>
+	<li><a href="#modify">Modify the status of your check</a></li>
+	<li><a href="#modifyparams">Modify the parameters of your check</a></li>
+	<li><a href="#deleting">Delete the check</a></li>
+</ul>
+
+<h3><a id="renaming" name="renaming"></a>Rename a check</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the check details page, select&nbsp;<strong>Rename Check</strong>.</li>
+	<li>In the&nbsp;Rename Check&nbsp;dialog box, type the new name and then click&nbsp;<strong>Rename</strong>.</li>
+</ol>
+
+<h3><a id="addingalarm" name="addingalarm"></a>Add an alarm</h3>
+
+<p>For instructions on adding an alarm for a check, see the “Create an alarm” section of <a href="/knowledge_center/article/working-with-alarms">Working with Alarms in Rackspace Intelligence</a>.</p>
+
+<h3><a id="modify" name="modify"></a>Modify the status of a check</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the check details page, select&nbsp;<strong>Modify Status</strong>.</li>
+	<li value="2">To enable the check, select <strong>Enabled</strong>. To disable the check, select <strong>Disabled</strong>.</li>
+	<li>Click&nbsp;<strong>Save Status</strong>.</li>
+</ol>
+
+<h3><a id="modifyparams" name="modifyparams"></a>Modify the parameters of a check</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the check details page, select&nbsp;<strong>Modify Parameters</strong>.</li>
+	<li>In the dialog box, type the new parameter values, and then click&nbsp;<strong>Save Parameters</strong>.</li>
+</ol>
+
+<h3><a id="deleting" name="deleting"></a>Delete a check</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the check details page, select&nbsp;<strong>Delete Check</strong>.</li>
+	<li>To permanently delete the check, click&nbsp;<strong>Delete Check</strong>.</li>
+</ol>

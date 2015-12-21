@@ -1,0 +1,201 @@
+---
+node_id: 4244
+title: Rackspace Private Cloud Spheres of Support
+permalink: article/rackspace-private-cloud-spheres-of-support
+type: article
+created_date: '2014-09-19 15:34:12'
+created_by: Karin Levenstein
+last_modified_date: '2015-07-15 18:2944'
+last_modified_by: rose.contreras
+products: Rackspace Private Cloud - OpenStack
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>Rackspace Private Cloud is Rackspace’s architecture for and support of a production-ready, scalable, OpenStack based private cloud. To ensure fanatical support, Rackspace provides support for specific server configurations and OpenStack projects in Rackspace Private Cloud v9 and v10.</p>
+
+<p>This document describes what is and is not supported in Rackspace Private Cloud v9 and v10.</p>
+
+<h2>Operating systems</h2>
+
+<p>Rackspace Private Cloud v9 and v10 support Ubuntu 14.04 LTS (Trusty Tahr) 64-bit server edition, with with Linux kernel version 3.13.0-34-generic or later. Only OpenStack API clients are supported.</p>
+
+<p>Rackspace does not support the contents of user VMs and will not manage the VMs once they are running. We do not support clients on Windows.</p>
+
+<h2>Web and database servers</h2>
+
+<p>Rackspace Private Cloud uses Apache for its web server, and MariaDB + Galera for its database server. No other web and database servers are supported</p>
+
+<h2>Intended capabilities of Rackspace Private Cloud</h2>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<th>Feature</th>
+			<th>Description</th>
+			<th>Rackspace DC</th>
+			<th>Customer DC</th>
+		</tr>
+		<tr>
+			<td><strong>Monitoring</strong></td>
+			<td>Hardware, Compute/Disk/Memory, OpenStack Services</td>
+			<td>Yes</td>
+			<td>
+			<ul>
+				<li>OpenStack services</li>
+				<li>CPU/Disk/Memory Utilization only</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Manual Patching Processes</strong></td>
+			<td>Host OS</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Multi-Region Support</strong></td>
+			<td>Hosting components over multiple data centers</td>
+			<td>Yes</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>OpenStack Endpoint SSL (Ingress)</strong></td>
+			<td>Encryption of all API calls</td>
+			<td>Yes - With SSL termination at a physical load balancer.</td>
+			<td>Yes - With SSL termination at a physical load balancer.</td>
+		</tr>
+		<tr>
+			<td><strong>Encryption of all management traffic</strong></td>
+			<td>Encrypting management traffic in addition to the API call encryption</td>
+			<td>No</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>Disaster Recovery</strong></td>
+			<td>Recovery from Data Center failures or "Acts of God"</td>
+			<td>No</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>Deploy from mirror</strong></td>
+			<td>Deploy RPC from an off-line local repository</td>
+			<td>N/A</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>Customer images</strong></td>
+			<td>Reference glance images provided</td>
+			<td>
+			<ul>
+				<li>CentOS 6 and 7</li>
+				<li>Ubuntu 12.04 LTS, 14.04 LTS, 14.10</li>
+				<li>Windows 2012R2 Datacenter</li>
+				<li>Red Hat Enterprise Linux: Contact Red Hat for availability of images and licensing</li>
+			</ul>
+			</td>
+			<td>
+			<ul>
+				<li>CentOS 6 and 7</li>
+				<li>Ubuntu 12.04 LTS, 14.04 LTS, 14.10</li>
+				<li>Red Hat Enterprise Linux: Contact Red Hat for availability of images and licensing</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>OpenStack Features</h2>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<th>&nbsp;</th>
+			<th><strong>Installation</strong></th>
+			<th>Configuration</th>
+			<th>Troubleshooting</th>
+			<th>Monitoring</th>
+			<th>Patching</th>
+		</tr>
+		<tr>
+			<td><strong>Nova Compute</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Glance Image Service</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Keystone Identity Service</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Swift Object Store</strong></td>
+			<td>v10 only</td>
+			<td>v10 only</td>
+			<td>v10 only</td>
+			<td>v10 only</td>
+			<td>v10 only</td>
+		</tr>
+		<tr>
+			<td><strong>Cinder Block Storage</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Neutron Networking</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>nova-network</strong></td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>Horizon Dashboard</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><strong>Ceilometer Telemetry</strong></td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><strong>Heat Orchestration</strong></td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+	</tbody>
+</table>

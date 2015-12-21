@@ -1,0 +1,155 @@
+---
+node_id: 270
+title: Basic Network Troubleshooting
+permalink: article/basic-network-troubleshooting
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-08-20 16:3931'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: Linux Tools
+body_format: tinymce
+---
+
+<p>Networking issues can be problematic when working on a remote server. If you accidentally break your Cloud Server's networking capabilities, you may find yourself locked out of any remote connection. However, many networking problems can be solved by logging into the web console (through your The Rackspace Cloud Control Panel) and running a few simple commands.</p>
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<div id="toctitle">
+			<h2>Contents</h2>
+			</div>
+
+			<ul>
+				<li class="toclevel-1"><a href="#ifconfig"><span class="tocnumber">1</span> <span class="toctext">ifconfig</span></a>
+
+				<ul>
+					<li class="toclevel-2"><a href="#Common_Problems"><span class="tocnumber">1.1</span> <span class="toctext">Common Problems</span></a></li>
+				</ul>
+				</li>
+				<li class="toclevel-1"><a href="#iptables"><span class="tocnumber">2</span> <span class="toctext">iptables</span></a>
+				<ul>
+					<li class="toclevel-2"><a href="#Common_Problems_2"><span class="tocnumber">2.1</span> <span class="toctext">Common Problems</span></a></li>
+				</ul>
+				</li>
+				<li class="toclevel-1"><a href="#route"><span class="tocnumber">3</span> <span class="toctext">route</span></a>
+				<ul>
+					<li class="toclevel-2"><a href="#Common_Problems_3"><span class="tocnumber">3.1</span> <span class="toctext">Common Problems</span></a></li>
+				</ul>
+				</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="ifconfig" name="ifconfig"></a></p>
+
+<h2>ip addr show<span class="mw-headline"> </span></h2>
+
+<p>ip addr show is a basic network information and configuration tool. On a working Cloud Server, its output may look something like this:</p>
+
+<pre>
+# ip addr show
+eth0      Link encap:Ethernet  HWaddr 40:40:d9:xx:xx:xx
+          inet addr:67.23.13.xx  Bcast:67.23.13.255  Mask:255.255.255.0
+          inet6 addr: fe80::4240:d9ff:fe05:xxxx/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:36564 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:11490 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:48350683 (46.1 MiB)  TX bytes:1456436 (1.3 MiB)
+ 
+eth1      Link encap:Ethernet  HWaddr 40:40:a5:xx:xx:xx
+          inet addr:10.176.44.xx  Bcast:10.176.63.255  Mask:255.255.224.0
+          inet6 addr: fe80::4240:a5ff:fe5f:xxxx/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:3 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:53 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:230 (230.0 B)  TX bytes:7764 (7.5 KiB)
+ 
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr:&nbsp;::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+</pre>
+
+<p><a id="Common_Problems" name="Common_Problems"></a></p>
+
+<h3><span class="mw-headline">Common Problems </span></h3>
+
+<p>If, upon running ifconfig, you do not see an IP address under eth0, try</p>
+
+<pre>
+ip addr show eth0 1.2.3.4 netmask 255.255.255.0 up</pre>
+
+<p>where "1.2.3.4" is the static IP for your Cloud Server as given to you when the server was created. If you do not see an eth0 interface <em>at all</em>, run</p>
+
+<pre>
+ifup eth0</pre>
+
+<p>This will bring up the interface under its default configuration. Similar steps may be followed to fix the internal connection by using 'eth1' and your assigned private (10.xx.xx.xx) IP.</p>
+
+<p><a id="iptables" name="iptables"></a></p>
+
+<h2><span class="mw-headline">iptables </span></h2>
+
+<p>iptables is a commonly-used firewall in Linux. By default, your Cloud Server should have iptables already installed, but it will not be configured. To list the firewall rules, run</p>
+
+<pre>
+iptables -L</pre>
+
+<p>. A newly-built server will show the following:</p>
+
+<pre>
+# iptables -L                                                                                                    
+Chain INPUT (policy ACCEPT)                                                                                             
+target     prot opt source               destination                                                                    
+                                                                                                                        
+Chain FORWARD (policy ACCEPT)                                                                                           
+target     prot opt source               destination                                                                    
+                                                                                                                        
+Chain OUTPUT (policy ACCEPT)                                                                                            
+target     prot opt source               destination</pre>
+
+<p><a id="Common_Problems_2" name="Common_Problems_2"></a></p>
+
+<h3><span class="mw-headline">Common Problems </span></h3>
+
+<p>If your iptables output differs from the above, the firewall may be causing your issue. Please see <a href="/knowledge_center/index.php/Introduction_to_iptables" title="Introduction to iptables">Introduction to iptables</a> for more information on troubleshooting this.</p>
+
+<p><a id="route" name="route"></a></p>
+
+<h2><span class="mw-headline">route </span></h2>
+
+<p>route is used to view and edit the routing table. The output of route may display several lines, but the most important (or the most commonly broken) is one called the default gateway. (<strong>Note:</strong> Various Linux distros may configure their routes slightly differently. The output shown below is from a Debian server.)</p>
+
+<pre>
+# route                                                                                                          
+Kernel IP routing table                                                                                                 
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface                                           
+67.23.13.0      *               255.255.255.0   U     0      0        0 eth0                                            
+10.176.32.0     *               255.255.224.0   U     0      0        0 eth1                                            
+10.191.192.0    10.176.32.1     255.255.192.0   UG    0      0        0 eth1                                            
+10.176.0.0      10.176.32.1     255.248.0.0     UG    0      0        0 eth1                                            
+default         67.23.13.1      0.0.0.0         UG    0      0        0 eth0</pre>
+
+<p>In this example, the first line is a "catch-all" for the 67.23.13.xx network, while the next three lines are specific to the internal network. The last line is the default gateway, and should point to xx.xx.xx.1 (where the first three octets match those of the top line).</p>
+
+<p><a id="Common_Problems_3" name="Common_Problems_3"></a></p>
+
+<h3><span class="mw-headline">Common Problems </span></h3>
+
+<p>To change the default route, run</p>
+
+<pre>
+route add default gw xx.xx.xx.1</pre>
+
+<p>replacing "xx.xx.xx" as described above. For more information on the route tool, please see <a class="external autonumber" href="http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html#ROUTE" rel="nofollow" title="http://www.yolinux.com/TUTORIALS/LinuxTutorialNetworking.html#ROUTE">[1]</a>.</p>

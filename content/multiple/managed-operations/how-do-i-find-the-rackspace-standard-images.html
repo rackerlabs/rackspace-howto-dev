@@ -1,0 +1,15 @@
+---
+node_id: 3853
+title: Identifying Rackspace Standard Images
+permalink: article/how-do-i-find-the-rackspace-standard-images
+type: article
+created_date: '2014-01-14 23:48:03'
+created_by: cloud.images
+last_modified_date: '2014-07-15 13:2233'
+last_modified_by: kyle.laffoon
+products: 'Cloud Servers,Managed Operations,Cloud Images,RackConnect'
+categories: Managed Operations
+body_format: tinymce
+---
+
+<p>Standard images are images supplied by Rackspace and supported for your Rackspace Cloud account's type and service level. &nbsp;The distinction between standard and non-standard images is described in detail in the Knowledge Center article&nbsp;<a style="line-height: 1.538em;" title="Rackspace Standard and Non-Standard Images" href="/knowledge_center/article/rackspace-standard-and-non-standard-images">Rackspace Standard and Non-Standard Images</a>.</p><p>The set of standard images is not the same for all Rackspace Cloud accounts. &nbsp;The standard images for an account differ based on the account's support level (Managed Infrastructure or Managed Cloud Service Level) and whether or not the account uses RackConnect.</p><h2>How can I see my standard images?</h2><p>The following filters in the Cloud Control Panel, Cloud Servers API, and Cloud Images API enable you to see which images are standard images for your account.</p><h3>Cloud Control Panel</h3><p>When you are building a server in the <a href="https://mycloud.rackspace.com" target="_blank">Cloud Control Panel</a>, select the Rackspace tab when choosing the base image to list only standard images.</p><h3>Cloud Servers API</h3><p>You can identify standard images when using the <a title="Rackspace Cloud Servers API documentation" href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/index.html" target="_blank">Cloud Servers API v2</a> by making a <a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/List_Images-d1e4435.html" target="_blank">List Images request</a>&nbsp;and filtering it to list images that have their <code>type</code> value set to <code>BASE</code>.</p><h3>Cloud Images API</h3><p>You can identify standard images when using the <a title="Rackspace Cloud Images API documentation" href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html" target="_blank">Cloud Images API v2</a> by making a List Images request and filtering it to list images that have their <code>visibility</code> value set to <code>public</code>.</p><h2>Support Implications</h2><p>Please see this Knowledge Center article:&nbsp;<a style="line-height: 1.538em;" title="Rackspace Standard and Non-Standard Images" href="/knowledge_center/article/rackspace-standard-and-non-standard-images">Rackspace Standard and Non-Standard Images</a>.</p>

@@ -1,0 +1,61 @@
+---
+node_id: 1393
+title: Migrating MySQL 5.0 to 5.1
+permalink: article/migrating-mysql-50-to-51
+type: article
+created_date: '2012-05-15 16:51:38'
+created_by: RackKCAdmin
+last_modified_date: '2014-11-07 21:4726'
+last_modified_by: ross.diaz
+products: Cloud Sites
+categories: 'Linux and PHP,Linux MySQL,FTP'
+body_format: tinymce
+---
+
+<h3 class="p1">Now available in Cloud Sites - MySQL 5.1! &nbsp;</h3>
+
+<p class="p1">Read on to learn the process of migrating your current Cloud Sites running MySQL 5.0 to begin running on a MySQL 5.1 database. &nbsp;</p>
+
+<p>Migrating your sites to a newer version of MySQL will require a maintenance period during which your sites will be unavailable. &nbsp;To minimize the impact of the migration, you just need to plan ahead and control the timing and presentation of your site during the process.Here is an easy-to-follow, five-step process for migrating a MySQL 5.0 database to a MySQL 5.1 database:</p>
+
+<h3>&nbsp;</h3>
+
+<h3>Step 1 - Close the Blinds and Lock the Doors</h3>
+
+<ul>
+	<li>Begin by putting up a splash page on your site stating that you are currently migrating and then revoke all user access to the database to be migrated.&nbsp; You can successfully revoke access to the database by using your administrative priveleges to rename the configuration file containing your database link information to a filename with the <em>.</em><code>mig</code> extension.&nbsp; An example would be naming the config.php file to config.php.mig.&nbsp; Once the filename is changed wait for user transactions to be completed or kill them.&nbsp; Threads can be killed with the <code>KILL</code> statement. &nbsp;To learn more, consult the MySQL documentation from their website and see the section&nbsp;<a href="http://dev.mysql.com/doc/refman/5.0/en/kill.html">KILL Syntax</a><span class="s2">.&nbsp;</span>&nbsp;To determine if all user connections have been completed or successfully killed, use the command <code>SHOW FULL PROCESSLIST. </code>To learn more about this command, please consult the MySQL documentation from their website and look for the section&nbsp;<a href="http://dev.mysql.com/doc/refman/5.0/en/show-processlist.html">SHOW PROCESSLIST Syntax</a>.&nbsp;</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Step 2 - Back it Up!</h3>
+
+<ul>
+	<li>Proceed to backing up your current MySQL 5.0 database.&nbsp; You may wish to use the the process we describe in the Knowledge Center article: <a href="http://www.rackspace.com/knowledge_center/index.php/How_to_backup_your_MySQL_database_with_phpMyAdmin">How to backup your MySQL database with phpMyAdmin</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Step 3 - Create Your New Database</h3>
+
+<ul>
+	<li>You will next need to provision a new MySQL 5.1 database to contain the newly migrated database. &nbsp;Do this by following the instructions in our Knowledge Center article: <a href="http://www.rackspace.com/knowledge_center/create_a_mysql_database">Adding a MySQL Database</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Step 4 - Import Your Saved DB Backup</h3>
+
+<ul>
+	<li>The next step is to import your saved database backup into your newly provisioned MySQL 5.1 database. You should be able to use the <a href="http://www.rackspace.com/knowledge_center/content/rackspace-cloud-sites-first-48-5-2-phpmyadmin-database-management-interface">PHPmyAdmin Database Management Interface</a>&nbsp;to handle imports for databases which are less than 16MB in size without issue. &nbsp;There may be times where you need to import more than 16MB of data, in which case you should follow the directions in the Knowledge Center article&nbsp;<a href="http://www.rackspace.com/knowledge_center/index.php/How_do_I_import_a_large_Mysql_Database">How to Import a Large MySQL Database</a>.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Step 5 - Update Your References</h3>
+
+<ul>
+	<li>Finally, you will need to modify all references in your code/configuration files from the old database server host name, IP address, username, and password to the respective new locations and values on the newly provisioned and migrated database server.&nbsp; Rename the config file back to its original name without the <em>.mig</em> extension.&nbsp; Assuming your new user information is valid, the site should begin processing against the new database in the same manner as before.</li>
+</ul>
+
+<p>&nbsp;</p>

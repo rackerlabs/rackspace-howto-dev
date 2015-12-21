@@ -1,0 +1,105 @@
+---
+node_id: 418
+title: Preparing the Cloud Server to be a Mail Server
+permalink: article/preparing-the-cloud-server-to-be-a-mail-server
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2013-08-14 01:3617'
+last_modified_by: rose.contreras
+products: Cloud Servers
+categories: 'DNS,Other Mail Servers'
+body_format: tinymce
+---
+
+<p><strong>Warning:</strong> Email in the Cloud (Rackspace or otherwise), even with today's vast standards, is considered to be "best effort" without any guarantees for reliability or deliverability. Follow the steps below to have a better email sending reputation. As an additional precaution, it is helpful to research and consider using the following:</p>
+
+<ul>
+   <li><a href="http://www.rackspace.com/knowledge_center/article/setting-a-sender-policy-framework-spf-record">Sender Policy Framework (SPF)</a></li>
+   <li><a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-dns-additional-resources">DomainKeys Identified Mail (DKIM)</a></li>
+   <li><a href="http://www.dmarc.org/index.html">Domain-based Message Authentication, Reporting & Conformance (DMARC) DNS records</a></li>
+</ul>
+
+<p>It is vital that the Cloud Server has the basics such as the hostname and Reverse DNS correctly set before we configure any sort of mail service. This article looks at the hostname and reverse DNS (RDNS) settings on the Cloud Server.</p>
+
+<table id="toc" class="toc" summary="Contents">
+   <tbody>
+      <tr>
+         <td><div id="toctitle"><h2>Contents</h2></div>
+         <ul>
+            <li class="toclevel-1"><a href="#Assumptions"><span class="tocnumber">1</span> <span class="toctext">Assumptions</span></a></li>
+            <li class="toclevel-1"><a href="#Hostname"><span class="tocnumber">2</span> <span class="toctext">Hostname</span></a></li>
+            <li class="toclevel-1"><a href="#Reboot"><span class="tocnumber">3</span> <span class="toctext">Reboot</span></a></li>
+            <li class="toclevel-1"><a href="#Reverse_DNS"><span class="tocnumber">4</span> <span class="toctext">Reverse DNS</span></a>
+            <ul>
+               <li class="toclevel-2"><a href="#Change_Reverse_DNS_in_the_Control_Panel"><span class="tocnumber">4.1</span> <span class="toctext">Change Reverse DNS in the Control Panel</span></a></li>
+               <li class="toclevel-2"><a href="#Check_the_Reverse_DNS"><span class="tocnumber">4.2</span> <span class="toctext">Check the Reverse DNS</span></a></li>
+               </ul>
+               </li>
+               <li class="toclevel-1"><a href="#Summary"><span class="tocnumber">5</span> <span class="toctext">Summary</span></a></li>
+               </ul>
+               </td>
+               </tr></tbody></table>
+
+<p><a id="Assumptions" name="Assumptions"></a>
+</p>
+<h2><span class="mw-headline">Assumptions </span></h2>
+<p>The only assumptions made for these email articles are:</p>
+<p>1: You are running Ubuntu Hardy (The instructions may work on other distros but it has not been tested and is not guaranteed)</p>
+<p>2: You have followed the setup article: <a title="Ubuntu Hardy - Setup" href="/knowledge_center/index.php/Ubuntu_Hardy_-_Setup">Ubuntu Hardy - Setup</a></p><p><a id="Hostname" name="Hostname"></a></p>
+<h2><span class="mw-headline">Hostname </span></h2>
+<p>The first thing to look at is the Cloud Server hostname.</p>
+<p>This is simply the 'name' of the Cloud Server and is used in the headers of the email (the headers can be thought of as the address and sender label on the email).</p>
+<p>Setting the hostname via the command line involves the very simple adjustment of a couple of files.</p>
+<p>We can start by checking what the current hostname is:</p>
+<pre>hostname -f</pre>
+<p>On my Cloud Server, the output is:</p>
+<pre>cloudserver1</pre>
+<p>For these basic articles I am going to use the domain 'mail.democloud.com' - I am setting up a mail server so that makes sense.</p>
+<p>I need to change the hostname to match the domain:</p>
+<pre>sudo nano /etc/hostname</pre>
+<p>Replace the current hostname (cloudserver1) with the one you need (in this case mail.democloud.com).</p>
+<p>The second file to edit is:</p>
+<pre>sudo nano /etc/hosts</pre>
+<p>The default looks like this on my Cloudserver:</p>
+<pre>127.0.0.1       localhost localhost.localdomain
+127.0.0.1       cloudserver1</pre>
+<p>Following on from what we are doing, replace 'cloudserver1' with 'mail.democloud.com'.</p>
+<p>Of course, replace mail.democloud.com with your domain.</p>
+<p><a id="Reboot" name="Reboot"></a></p>
+<h2><span class="mw-headline">Reboot </span></h2>
+<p>Conduct a quick reboot:</p>
+<pre>sudo shutdown -r now</pre>
+<p>and check the hostname:</p>
+<pre>hostname -f</pre>
+<p>The output is now:</p>
+<pre>mail.democloud.com</pre>
+<p>Good start!</p>
+<p><a id="Reverse_DNS" name="Reverse_DNS"></a></p>
+<h2><span class="mw-headline">Reverse DNS </span></h2>
+<p>Now, we need to properly set the reverse DNS for the server.</p>
+<p><a id="Change_Reverse_DNS_in_the_Control_Panel" name="Change_Reverse_DNS_in_the_Control_Panel"></a></p>
+<h3><span class="mw-headline">Change Reverse DNS in the Control Panel </span></h3>
+<p>Navigate to your Server's DNS tab and scroll down to the Reverse DNS section. Change the relevant field to the domain name which you'd like in the rDNS record. (See <a title="DNS - Creating a Reverse DNS Record" href="/knowledge_center/index.php/DNS_-_Creating_a_Reverse_DNS_Record">DNS - Creating a Reverse DNS Record</a>)</p>
+<p><a id="Check_the_Reverse_DNS" name="Check_the_Reverse_DNS"></a></p>
+<h3><span class="mw-headline">Check the Reverse DNS </span></h3>
+<p>The RDNS may take a while to propagate and you really need to wait until it has done so before you can fully configure and test any mail setup.</p>
+<p>To check the RDNS, you need to input the IP address if the Cloud Server into the 'dig' command.</p>
+<p>Note that 'dig' is not installed on a base Ubuntu Hardy Cloud Server:</p>
+<pre>sudo aptitude install dnsutils</pre>
+<p>So, to check the RDNS:</p>
+<pre>dig -x 208.75.84.20</pre>
+<p>In this case, the output includes the correct answer:</p>
+<pre>dig -x 208.75.84.20
+...
+...
+;; QUESTION SECTION:
+;20.84.75.208.in-addr.arpa.     IN      PTR
+
+;; ANSWER SECTION:
+20.84.75.208.in-addr.arpa. 3477 IN      PTR     mail.democloud.com.</pre>
+
+<p><a id="Summary" name="Summary"></a></p>
+<h2><span class="mw-headline">Summary </span></h2>
+<p>Preparing the Cloud Server is a vital step in any mail setup - even if 'only' sending mail from your application to an administrator, it is very important to get the basics right.</p>
+<p>To continue your setup, please go to <a title="Setting a Sender Policy Framework (SPF) record" href="/knowledge_center/index.php/Setting_a_Sender_Policy_Framework_(SPF)_record">Setting a Sender Policy Framework (SPF) record</a>.</p>

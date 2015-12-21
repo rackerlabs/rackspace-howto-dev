@@ -1,0 +1,44 @@
+---
+node_id: 605
+title: Create a domain or subdomain that points to a folder on an existing Cloud Sites website
+permalink: article/how-do-i-create-a-domainsubdomain-that-points-to-a-folder-on-an-existing-website
+type: article
+created_date: '2011-03-23 11:34:45'
+created_by: RackKCAdmin
+last_modified_date: '2015-09-18 16:4326'
+last_modified_by: kyle.laffoon
+products: Cloud Sites
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p><strong>Note:</strong> This article refers to the <a href="https://manage.rackspacecloud.com">Cloud Sites Control Panel</a>. You can access this interface from the <a href="https://mycloud.rackspace.com">Cloud Control Panel</a> by clicking the <strong>Cloud Control Panel</strong> menu at the top of the window and selecting <strong>Cloud Sites</strong>.</p>
+
+<p>The Cloud Sites Control Panel does not provide the ability to create an alias that points to a folder other than <a href="/knowledge_center/node/78">the website's web root</a>. To point to a folder other than the website's web root, you must use a redirect script. Perform the&nbsp;following steps.</p>
+
+<ol>
+	<li>Log in to the <a class="external free" href="http://manage.rackspacecloud.com" rel="nofollow" title="http://manage.rackspacecloud.com">Cloud Sites Control Panel</a>.</li>
+	<li>Create the new domain or subdomain under the correct account. If you have any questions about how to do this, see <a href="/knowledge_center/node/1132">Getting Started With Cloud Sites: How To Add A New Website</a>.</li>
+	<li>After the domain or subdomain is set up in your account, add a PHP redirect to the <strong>web/content</strong> folder by using FTP. For information about how to do this, including using FTP, see <a href="/knowledge_center/node/580">Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients</a>.</li>
+	<li>Using a text editing program (like Notepad or Wordpad), create a file with the following PHP redirect on your computer. After <code>Location:</code>, enter the URL that you want to redirect the website to (for example, <code>http://www.example.com/subdirectory</code>).
+	<pre>
+&lt;?php
+header("Location: URL");
+?&gt;
+</pre>
+
+	<p>Using the example link, the full script would look as follows:</p>
+
+	<pre>
+&lt;?php
+header("Location: http://www.example.com/subdirectory");
+?&gt;
+</pre>
+	</li>
+	<li>Save this file as <strong>index.php</strong>.</li>
+	<li><a href="/knowledge_center/node/738">Log in to your FTP client</a>.</li>
+	<li>Select the website from the list of websites associated with your ftp user name and password.</li>
+	<li>Select the <strong>web</strong> folder.</li>
+	<li>Select the <strong>content</strong> folder.</li>
+	<li>Upload the <strong>index.php</strong> file from your computer to the <strong>content</strong> folder.</li>
+</ol>

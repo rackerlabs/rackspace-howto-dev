@@ -1,0 +1,185 @@
+---
+node_id: 4031
+title: Use Swiftly to upload an image
+permalink: article/using-swiftly-to-upload-an-image-to-be-imported
+type: article
+created_date: '2014-04-21 20:10:23'
+created_by: cloud.images
+last_modified_date: '2015-09-01 16:1448'
+last_modified_by: catherine.richardson
+products: 'Cloud Files,Cloud Images'
+categories: Server Images
+body_format: tinymce
+---
+
+<p>In order to provide high availability and data resiliency, the size of any file in Cloud Files is limited to 5 GB, which is smaller than most VM images and many other files that people might want to store. To get around this limit, a <em>Large Object</em> (any file larger than 5 GB) must be split into segments that are bound together by a manifest. There are two types of manifest objects in Cloud Files: <em>Dynamic Large Objects</em> and <em>Static Large Objects</em>. For image uploads, we recommend that you use a Static Large Object, so that is the focus of this article.</p>
+
+<p>With a Static Large Object, the manifest is an explicit listing of the size, MD5 checksum, and location of each segment that makes up the Large Object. The Swiftly tool divides your local file into segments, uploads the segments in parallel, and creates a manifest for you automatically. This article describes how to use Swiftly to upload a file larger than 5 GB to Cloud Files as a Static Large Object.</p>
+
+<p>For more information about Cloud Files Large Objects, see the <a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Cloud Files documentation</a>.</p>
+
+<h2>Prerequisites</h2>
+
+<p>The steps in this article assume that you have already properly prepared an image for import into the public cloud and that you have already installed the Swiftly client. If you need help with either of these prerequisites, see the following articles:</p>
+
+<p>· <a href="http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud">Preparing an image for import into the Rackspace open cloud</a><br />
+· <a href="http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files">Install the Swiftly client for Cloud Files</a></p>
+
+<h2>Set environment variables</h2>
+
+<p>In a bash shell, set the following environment variables:</p>
+
+<pre>
+CF_USERNAME=       # your Rackspace cloud username
+CF_API_KEY=        # your Rackspace cloud API key
+CF_REGION=         # 3 char region code for where you're uploading (e.g., ORD)
+SOURCEFILE=        # the local file you are uploading
+CONTAINER=         # the container in Cloud Files where the image will go
+IMAGEFILENAME=     # the name you want the image to be called in Cloud Files
+SWFLY_SEG_BYTES=134217728    
+SWFLY_CONCURRENCY=20
+</pre>
+
+<p>To information about viewing your Rackspace API key, see <a href="http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key">View and reset your API key.</a></p>
+
+<p>Ensure that the container into which you want to uploads your object already exists in the appropriate region in Cloud Files. (You can create it in the Cloud Control Panel, if necessary.)</p>
+
+<p>As mentioned earlier, Swiftly automatically segments your image file and upload the segments in parallel. The two SWFLY environment variables listed in the preceding example are used to control this.</p>
+
+<ul>
+	<li>SWFLY_SEG_BYTES specifies the size, in bytes, that Swiftly will use for each segment (except for the last segment, which could be smaller). The value shown in the preceding example is 128 MB, expressed in bytes. We recommend that you use this value. You can experiment with different values to see if you get better performance, but avoid using a smaller value (certainly no smaller than 100 MB), and avoid a value larger than 1 GB.</li>
+	<li>SWFLY_CONCURRENCY specifies the maximum number of parallel threads that Swiftly will use to upload the object. Te value shown in the example is the value suggested by the author of Swiftly. You can experiment with the value, but consider that if you set it too high, your parallel uploads might saturate your network card and actually slow down the overall file transfer.</li>
+</ul>
+
+<h2>Invoke Swiftly</h2>
+
+<p>After you set the environment variables, invoke Swiftly from the command line to perform the upload, as follows.</p>
+
+<p><strong>Note</strong>: Consider using a screen session to perform this task. If you're not familiar with the GNU Screen program, you can find an introduction in <a href="http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files">Install the Swiftly client for Cloud Files</a>.</p>
+
+<pre>
+swiftly \
+  --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
+  --auth-user=$CF_USERNAME \
+  --auth-key=$CF_API_KEY \
+  --region=$CF_REGION \
+  --concurrency=$SWFLY_CONCURRENCY \
+  put \
+    --segment-size=s${SWFLY_SEG_BYTES} \
+    --input=$SOURCEFILE \
+  ${CONTAINER}/${IMAGEFILENAME}
+</pre>
+
+<p>If you are importing a file a cloud server that's already in the Rackspace open cloud, add the <code>--snet</code> option to the command so that the file will be transferred over the internal cloud network. Additionally, if you want Swiftly to notify you about what it's doing as it uploads your image file, you can add the <code>--verbose</code> option. If you add these options, your invocation will look as follows:</p>
+
+<pre>
+swiftly \
+  --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
+  --auth-user=$CF_USERNAME \
+  --auth-key=$CF_API_KEY \
+  --region=$CF_REGION \
+  --snet \
+  --verbose \
+  --concurrency=$SWFLY_CONCURRENCY \
+  put \
+    --segment-size=s${SWFLY_SEG_BYTES} \
+    --input=$SOURCEFILE \
+  ${CONTAINER}/${IMAGEFILENAME}
+</pre>
+
+<p>Note that the Swiftly invocation contains the following line:</p>
+
+<pre>
+--segment-size=s${SWFLY_SEG_BYTES}</pre>
+
+<p>The <code>s</code> after the equals sign tells Swiftly to create a Static Large Object. As mentioned earlier, we highly recommend that you upload your image as a Static Large Object.</p>
+
+<h2>Checking your upload</h2>
+
+<p>Suppose that you used the following the environment variable settings you used for your upload:</p>
+
+<pre>
+CF_REGION="DFW"
+SOURCEFILE="my-awesome-image.vhd"
+CONTAINER="uploaded-images"
+IMAGEFILENAME="my-custom-image.vhd"</pre>
+
+<p>And this was the image you uploaded:</p>
+
+<pre>
+$ ls -l
+total 2524008
+-rw-rw-r-- 1 joeuser joeuser 2584576512 Apr 24 03:01 my-awesome-image.vhd
+</pre>
+
+<p>To check your upload, view the manifest for the Static Large Object that was created in Cloud Files.</p>
+
+<pre>
+# get the manifest
+swiftly \
+ --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
+ --auth-user=$CF_USERNAME \
+ --auth-key=$CF_API_KEY \
+ --region=$CF_REGION \
+ get \
+ --query=multipart-manifest=get \
+ --output=my-manifest.json \
+ ${CONTAINER}/${IMAGEFILENAME}
+
+# look at the manifest
+$ cat my-manifest.json | python -m json.tool
+[
+    {
+        "bytes": 134217728,
+        "content_type": "application/octet-stream",
+        "hash": "bc5dc9c7f93b214e648e3ce2b9ee4bd1",
+        "last_modified": "2014-04-24T03:46:16.000000",
+        "name": "/uploaded-images_segments/my-custom-image.vhd/1398308466.19/2584576512/00000000"
+    },
+    {
+        "bytes": 134217728,
+        "content_type": "application/octet-stream",
+        "hash": "c4a2dbe171bd60a3a23198baa916879c",
+        "last_modified": "2014-04-24T03:46:23.000000",
+        "name": "/uploaded-images_segments/my-custom-image.vhd/1398308466.19/2584576512/00000001"
+    },
+/* etc. */
+    {
+        "bytes": 134217728,
+        "content_type": "application/octet-stream",
+        "hash": "9acffa882c4bf8beb3025e856f6e9d01",
+        "last_modified": "2014-04-24T03:47:52.000000",
+        "name": "/uploaded-images_segments/my-custom-image.vhd/1398308466.19/2584576512/00000018"
+    },
+    {
+        "bytes": 34439680,
+        "content_type": "application/octet-stream",
+        "hash": "dd594916413c2e1ef05875606b813528",
+        "last_modified": "2014-04-24T03:47:55.000000",
+        "name": "/uploaded-images_segments/my-custom-image.vhd/1398308466.19/2584576512/00000019"
+    }
+]
+</pre>
+
+<p>Alternatively, you can look at your Cloud Files account in the Cloud Control Panel. The following example shows the Containers page in the Control Panel, which displays the containers in the DFW region.</p>
+
+<p><img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/swiftly-containers-list.png" width="700" /></p>
+
+<p>The <code>uploaded-images</code> container existed before the upload, and was indicated in the invocation to Swiftly as the container to hold the manifest. The size of this container is small because it contains only the Static Large Object manifest file, which is a text file in JSON format. (The content of this file is shown in the preceding example.) The <code>uploaded-images_segments</code> container, which Swiftly created, contains the actual image data divided into segment files. The size of this container is 2.41 GB, which is the size of the image that was uploaded.</p>
+
+<p>The <code>uploaded-images</code> container holds the manifest file, and the <code>uploaded-images_segments</code> container holds the parts that would be merged to make the&nbsp;image file. Each segment file ends with a number sequence identifying the segment&nbsp;(like <code>00000000</code>, <code>00000001</code>, <code>00000002</code>, etc.).</p>
+
+<p>Note that while the manifest in <code>uploaded-images</code> depends on the image segments in <code>uploaded-images_segments</code>, Cloud Files won't prevent you from deleting segments. If any of those segments are deleted, you'll get an error when you attempt to download the Static Large Object that comprises the image file.</p>
+
+<p>If you look inside the <code>uploaded-images</code> container, the image file that the manifest describes will be displayed rather than the manifest itself - in this example, <code>my-custom-image.vhd</code>. The file size Cloud Files displays in the container view&nbsp;will reflect the overall size of the Large Static Object, because that's the size of the object you'd get if you downloaded the file. The actual storage used in that container is the&nbsp;few kilobytes used by the manifest file, because the actual image data is being stored in the <code>uploaded-images_segments</code> container.</p>
+
+<h2>Summary</h2>
+
+<p>Hopefully you haven't skipped directly to this section! &nbsp;We really encourage you to read through the entire article.</p>
+
+<ul>
+	<li>To download the image from the example above, you'll request the object named "my-custom-image.vhd" from the "uploaded-images" container in the DFW region of your Cloud Files account.</li>
+	<li>To import the example image using Cloud Images, you'll create an import task, specifying the value for <strong>import_from</strong> as <strong>uploaded-images/my-custom-image.vhd</strong></li>
+	<li>Do <em>not</em> delete any of the segments in the "uploaded-images_segments" container or you will corrupt your image!</li>
+	<li>Swiftly takes care of dividing your image file into segments, uploading the segments to their own container, and creating the Static Large Object manifest in the container you requested automatically. &nbsp;But it's important to know what it's doing and how your data is stored so that you don't corrupt your image by mistake.</li>
+</ul>

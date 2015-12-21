@@ -1,0 +1,200 @@
+---
+node_id: 1181
+title: 'Common Windows Issues: Key Management Server Activation'
+permalink: article/common-windows-issues-key-management-server-activation
+type: article
+created_date: '2011-08-15 18:08:46'
+created_by: RackKCAdmin
+last_modified_date: '2015-01-27 22:0339'
+last_modified_by: jered.heeschen
+products: Cloud Servers
+categories: 'Windows Server 2008,Windows Server 2003,Windows Firewall,Windows Tools'
+body_format: tinymce
+---
+
+<p><strong>Problem:</strong>&nbsp; Periodic activation requests to the KMS are rejected and the operating system is seen as unlicensed.</p>
+
+<p><strong>Cause: &nbsp;</strong>Windows cannot locate the Key Management Server (KMS) after changing the time zone of the Cloud Server. &nbsp;Now your Cloud Server's system clock does not sync with the KMS.</p>
+
+<p><strong>Resolution:</strong>&nbsp; You will need to resynch your Cloud Server with the KMS server:</p>
+
+<p>1. &nbsp;Log in to your Cloud Server as Administrator (Start, All Programs, Accessories, right-click Command Prompt and select Run as Administrator).</p>
+
+<p>2.&nbsp; Choose the data center in the following table that corresponds to the location of your server and run the applicable command from the command prompt.</p>
+
+<table border="1" width="769">
+	<tbody>
+		<tr>
+			<th>Data Center</th>
+			<th>Command</th>
+		</tr>
+		<tr>
+			<td valign="center">ORD<br />
+			(Chicago)</td>
+			<td valign="center"><code>ping winactivate.ord1.servers.rackspacecloud.com</code></td>
+		</tr>
+		<tr>
+			<td valign="center">DFW<br />
+			(Dallas)</td>
+			<td valign="center"><code>ping winactivate.dfw1.servers.rackspacecloud.com</code></td>
+		</tr>
+		<tr>
+			<td valign="center">IAD<br />
+			(Ashburn)</td>
+			<td valign="center"><code>ping winactivate.iad3.servers.rackspacecloud.com</code></td>
+		</tr>
+		<tr>
+			<td valign="center">LON<br />
+			(London)</td>
+			<td valign="center"><code>ping winactivate.lon3.servers.rackspacecloud.com</code></td>
+		</tr>
+		<tr>
+			<td valign="center">HKG<br />
+			(Hong Kong)</td>
+			<td valign="center"><code>ping winactivate.hkg1.servers.rackspacecloud.com</code></td>
+		</tr>
+		<tr>
+			<td valign="center">SYD<br />
+			(Sydney)</td>
+			<td valign="center"><code>ping winactivate.syd2.servers.rackspacecloud.com</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>**if there is a reply, move on to step 3. &nbsp;No reply means that there is an interface, hardware, or routing issue**</p>
+
+<p>3. &nbsp;Set the KMS manually within the registry.</p>
+
+<table border="1" width="751">
+	<tbody>
+		<tr>
+			<th>Data Center</th>
+			<th>Command</th>
+		</tr>
+		<tr>
+			<td valign="center">ORD<br />
+			(Chicago)</td>
+			<td valign="center"><code>slmgr.vbs /skms winactivate.ord1.servers.rackspacecloud.com:1688</code></td>
+		</tr>
+		<tr>
+			<td valign="center">DFW<br />
+			(Dallas)</td>
+			<td valign="center">
+			<div><code>slmgr.vbs /skms winactivate.dfw1.servers.rackspacecloud.com:1688</code></div>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">IAD<br />
+			(Ashburn)</td>
+			<td valign="center"><code>slmgr.vbs /skms winactivate.iad3.servers.rackspacecloud.com:1688</code></td>
+		</tr>
+		<tr>
+			<td valign="center">LON<br />
+			(London)</td>
+			<td valign="center"><code>slmgr.vbs /skms winactivate.lon3.servers.rackspacecloud.com:1688</code></td>
+		</tr>
+		<tr>
+			<td valign="center">HKG<br />
+			(Hong Kong)</td>
+			<td valign="center"><code>slmgr.vbs /skms winactivate.hkg1.servers.rackspacecloud.com:1688</code></td>
+		</tr>
+		<tr>
+			<td valign="center">SYD<br />
+			(Sydney)</td>
+			<td valign="center"><code>slmgr.vbs /skms winactivate.syd2.servers.rackspacecloud.com:1688</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>4. &nbsp; &nbsp; Request activation from the KMS :</p>
+
+<pre>
+slmgr.vbs /ato</pre>
+
+<p>5. &nbsp; &nbsp; If step 4 returns an error reading EXACTLY “0xC004F074 The Key Management Server (KMS) is unavailable”, run the following:</p>
+
+<pre>
+w32tm /resync</pre>
+
+<p>6. &nbsp; &nbsp; If the time on the Cloud Server is drastically different than what is on the KMS the resync will fail. &nbsp;At this point you will need to either set the time manually or configure the server to use an NTP instance over the internet.  </p>
+
+<table border="1" width="751">
+	<tbody>
+		<tr>
+			<th>Data Center</th>
+			<th>Command</th>
+		</tr>
+		<tr>
+			<td valign="center">ORD<br />
+			(Chicago)</td>
+			<td valign="center">
+			<pre>
+net stop w32time 
+w32tm /config /manualpeerlist:time.ord1.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">DFW<br />
+			(Dallas)</td>
+			<td valign="center">
+			<div>
+			<pre>
+net stop w32time&nbsp;
+w32tm /config /manualpeerlist:time.dfw1.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">IAD<br />
+			(Ashburn)</td>
+			<td valign="center">
+			<pre>
+net stop w32time&nbsp;
+w32tm /config /manualpeerlist:time.iad3.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">LON<br />
+			(London)</td>
+			<td valign="center">
+			<pre>
+net stop w32time&nbsp;
+w32tm /config /manualpeerlist:time.lon3.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">HKG<br />
+			(Hong Kong)</td>
+			<td valign="center">
+			<pre>
+net stop w32time&nbsp;
+w32tm /config /manualpeerlist:time.hkg1.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</td>
+		</tr>
+		<tr>
+			<td valign="center">SYD<br />
+			(Sydney)</td>
+			<td valign="center">
+			<pre>
+net stop w32time&nbsp;
+w32tm /config /manualpeerlist:time.syd2.rackspace.com /syncfromflags:MANUAL
+net start w32time</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>7. &nbsp;Once the time is synced up, attempt the following:</p>
+
+<pre>
+w32tm /resync 
+slmgr.vbs /ato</pre>
+
+<p> 8. &nbsp;You will also need to open UDP port 123 to allow the sync. &nbsp;Read this article to learn how to<a href="http://www.rackspace.com/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29"> Create an Inbound Port Allow Rule</a>.</p>
+
+<p>9. &nbsp;Make sure your firewall allows&nbsp;outbound connections to&nbsp;TCP port 1688. &nbsp;For more information, see&nbsp;<a href="/knowledge_center/node/323">Creating an Outbound Port Allow Rule for Windows Firewall</a>.</p>

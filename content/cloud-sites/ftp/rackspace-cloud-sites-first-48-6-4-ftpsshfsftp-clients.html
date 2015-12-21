@@ -1,0 +1,193 @@
+---
+node_id: 580
+title: 'Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients'
+permalink: article/rackspace-cloud-sites-first-48-6-4-ftpsshfsftp-clients
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-01-13 22:3851'
+last_modified_by: jered.heeschen
+products: Cloud Sites
+categories: FTP
+body_format: tinymce
+---
+
+<p><strong>Note</strong>: This article is written for our <a href="https://manage.rackspacecloud.com/" target="_self">Cloud Sites Control Panel</a>. You can get to it from the Cloud Control Panel by clicking your name in the upper-right corner and selecting <a href="https://manage.rackspacecloud.com/" target="_self">Cloud Sites Control Panel</a>.</p>
+
+<p><strong>In this article, we will take a look at <a href="#ftp">FTP</a>, <a href="#sshfs">SSHFS</a> and some of the popular <a href="#ftp_clients">FTP Clients</a>.&nbsp;</strong>Because Cloud Sites does not offer full SSH access to the web servers, the other recommendations would be to use FTP, or you could use SSHFS (SSH Filesystem).</p>
+
+<p><a name="ftp"></a></p>
+
+<p><strong>File Transfer Protocol (FTP)</strong> is a method for adding content to your website. As its name indicates, FTP is a means for transferring files from one computer to another, or from a local computer to a remote server.</p>
+
+<p>For any website you set up, we will automatically create an FTP address (i.e. ftp.yourdomain.com). However, due to the nature of DNS propagation, your custom ftp address may not work during the initial 48 hour period after DNS for the site has been set up. If you experience any issues using your custom ftp address (ftp.yourdomain.com) during this time, you should use the universal ftp address, "ftp1.ftptoyoursite.com." This universal ftp address will allow you to add content to your site before DNS has fully propagated to The Rackspace Cloud.</p>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/ftpserver2.png" width="387" /></p>
+
+<p>Let's take a look at how to accomplish some of the most frequently needed tasks with FTP.&nbsp;</p>
+
+<p><strong>What is my FTP password?</strong></p>
+
+<p>You can find your FTP password in the Rackspace Cloud Control Panel</p>
+
+<ul>
+	<li>Log into the <a href="http://manage.rackspacecloud.com">Rackspace Cloud Control Panel</a></li>
+	<li>Navigate to <strong>Hosting-&gt;Cloud Sites</strong></li>
+	<li><strong>Select a website</strong> from the list of active domains</li>
+	<li>Your FTP information can be found in the <strong>Viewing and Editing</strong> section of the initial page</li>
+</ul>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/ftpsettings.png" width="548" /></p>
+
+<p>&nbsp;</p>
+
+<p><strong>How can I add additional FTP users?</strong></p>
+
+<div>
+<p>You can create multiple FTP user accounts through your control panel. You can the option to restrict that user to a specified directory in a site and create several users.</p>
+
+<p>To create FTP users:</p>
+
+<ul>
+	<li>Log into the <a href="http://manage.rackspacecloud.com">Rackspace Cloud Control Panel</a></li>
+	<li>Navigate to <strong>Hosting-&gt;Cloud Sites</strong></li>
+	<li>Click on the <strong>domain</strong> you want to add another FTP user to</li>
+	<li>Click on the <strong>Security</strong> tab</li>
+</ul>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/securitytab.png" width="578" /></p>
+
+<ul>
+	<li>In the <strong>Permissions For Editing Your Website</strong> section, click on <strong>Add A User</strong></li>
+</ul>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/addauser.png" width="600" /></p>
+
+<ul>
+	<li>Next, <strong>create</strong> the new FTP user's username and password</li>
+</ul>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/ftpnewuserpass.png" width="485" /></p>
+
+<ul>
+	<li>Last, choose the directory level the new FTP user will have access to</li>
+</ul>
+
+<p><img alt="" border="1" src="http://c806394.r94.cf2.rackcdn.com/ftppermissions.png" width="600" /></p>
+
+<ul>
+	<li>Click <strong>Save</strong> to finish adding the new FTP user</li>
+</ul>
+
+<p><a name="sshfs"></a></p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>SSHFS</strong></p>
+
+<p>According to <a href="http://en.wikipedia.org/wiki/SSHFS">Wikipedia</a>:</p>
+
+<p><strong>"SSHFS</strong>&nbsp;(<strong>SSH Filesystem</strong>) is a&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/Filesystem" title="Filesystem">filesystem</a>&nbsp;client to&nbsp;<a href="http://en.wikipedia.org/wiki/Mount_(computing)" title="Mount (computing)">mount</a>&nbsp;and interact with&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/Directory_(file_systems)" title="Directory (file systems)">directories</a>&nbsp;and&nbsp;<a href="http://en.wikipedia.org/wiki/Computer_file" title="Computer file">files</a>&nbsp;located on a remote&nbsp;<a href="http://en.wikipedia.org/wiki/Server_(computing)" title="Server (computing)">server</a>&nbsp;or&nbsp;<a href="http://en.wikipedia.org/wiki/Workstation" title="Workstation">workstation</a>.&nbsp;The client interacts with the remote file system via the&nbsp;<a href="http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" title="SSH File Transfer Protocol">SSH File Transfer Protocol</a>&nbsp;(SFTP),&nbsp;a&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/Network_protocol" title="Network protocol">network protocol</a>&nbsp;providing&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/File_access" title="File access">file access</a>,&nbsp;<a href="http://en.wikipedia.org/wiki/File_transfer" title="File transfer">file transfer</a>, and&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/File_management" title="File management">file management</a>&nbsp;functionality over any reliable&nbsp;<a href="http://en.wikipedia.org/wiki/Data_stream" title="Data stream">data stream</a>&nbsp;that was designed as an extension of the&nbsp;<a href="http://en.wikipedia.org/wiki/Secure_Shell" title="Secure Shell">Secure Shell</a>&nbsp;protocol (SSH) version 2.0."</p>
+
+<p><strong>NOTE:</strong> <em>In order to use SSHFS, you will need to install it on a Mac or a Linux machine. SSHFS cannot be used on a Windows machine.</em></p>
+
+<p>&nbsp;</p>
+
+<div>
+<p>Although full ssh access is not available you can mount your ftp location in Linux using SSHFS.&nbsp;*Windows/Mac users see footnote</p>
+
+<p>Here are the common methods for installing SSHFS:</p>
+
+<p>* For Debian:</p>
+
+<pre>
+apt-get install fuse-utils sshfs</pre>
+
+<p>* For Ubuntu:</p>
+
+<pre>
+sudo apt-get install fuse-utils sshfs</pre>
+
+<p>* For Fedora and Centos:</p>
+
+<pre>
+yum install fuse-utils sshfs</pre>
+
+<p>(Note: &nbsp;To install on CentOS you will need to set your machine up to <a href="/knowledge_center/article/installing-rhel-epel-repo-on-centos-5x-or-6x" target="_blank">include the EPEL repository</a> first.)</p>
+
+<p>* For Mandriva: urpmi:</p>
+
+<pre>
+urpmi fuse-utils sshfs</pre>
+
+<p>You will then need to choose and make a directory to mount the ftp storage location to. We'll use /mnt/remote for our example:</p>
+
+<pre>
+sudo mkdir /mnt/remote
+sudo chown [system-user]:[your-group] /mnt/remote/</pre>
+
+<p>Next you will add yourself to the fuse group:</p>
+
+<pre>
+sudo adduser [system-user] fuse</pre>
+
+<p>Now you will connect and mount the ftp storage location:</p>
+
+<pre>
+sshfs ftp-user@ftp.domain.com: /mnt/remote/</pre>
+
+<p>Note: ftp.domain.com will be either ftp1.ftptoyoursite.com, ftp2.ftptoyoursite.com or ftp.domain.com depending on how you connect to ftp.</p>
+
+<p>Additionally you can specify a remote path to mount such as www.domain.com/web/content.</p>
+
+<pre>
+sshfs ftp-user@ftp.domain.com:www.domain.com/web/content/ /mnt/remote/</pre>
+
+<p>You will now be asked to accept the key from our system and then for your ftp user password.</p>
+
+<p>Once mounted you can cd to your mounted directory and perform many basic commands that do not require root access including but not limited to:</p>
+
+<pre>
+tar     gzip     gunzip     zip     unzip     chmod</pre>
+
+<p>You may also want to update the /etc/fuse.conf file to include a line such as below to ensure you do not lose connection while working:</p>
+
+<pre>
+ServerAliveInterval = 300</pre>
+
+<p><strong>NOTE:</strong> <em>For Windows and Mac users you can also use&nbsp;<a href="http://www.expandrive.com/" rel="nofollow" title="http://www.expandrive.com">ExpanDrive</a>&nbsp;to map your FTP storage location as a local drive.&nbsp;</em></p>
+
+<p><a name="ftp_clients"></a></p>
+
+<p><strong>FTP Clients</strong></p>
+
+<div>
+<p>We don't have a recommended File Transfer Protocol (FTP) client, but here is a list of the more popular FTP clients.</p>
+
+<p><span>Commercial</span></p>
+
+<ul>
+	<li><a href="http://www.expandrive.com/" title="http://www.expandrive.com">ExpanDrive</a>&nbsp;(Mac/Windows)</li>
+	<li><a href="http://www.ipswitch.com/" title="http://www.ipswitch.com/">IP Switch</a>&nbsp;(Windows)</li>
+	<li><a href="http://www.panic.com/" title="http://www.panic.com/">Transmit</a>&nbsp;(Mac)</li>
+	<li><a href="http://www.cuteftp.com/" title="http://www.cuteftp.com">CuteFTP</a>&nbsp;(Mac/Windows)</li>
+</ul>
+
+<p><span>Free</span></p>
+
+<ul>
+	<li><a href="http://www.smartftp.com/" title="http://www.smartftp.com/">SmartFTP</a>&nbsp;(Windows)</li>
+	<li><a href="http://www.fetchsoftworks.com/" title="http://www.fetchsoftworks.com/">Fetch</a>&nbsp;(Mac)</li>
+	<li><a href="http://cyberduck.ch/" title="http://cyberduck.ch/">Cyberduck</a>&nbsp;(Mac)</li>
+	<li><a href="http://filezilla-project.org/" title="http://filezilla-project.org/">FileZilla</a>&nbsp;(Mac/Windows/Linux)</li>
+	<li><a href="http://fireftp.mozdev.org/" title="http://fireftp.mozdev.org/">FireFTP</a>&nbsp;(Firefox Extension - Mac/Windows/Linux)</li>
+	<li><a href="http://winscp.net/" title="http://winscp.net/">WinSCP</a>&nbsp;(Windows)</li>
+	<li><a href="http://www.net2ftp.com/" title="http://www.net2ftp.com">Net2FTP</a>&nbsp;(Web Based)</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><a href="http://www.rackspace.com/knowledge_center/Cloud_Sites_First_48">Back to the First 48 Guide</a></p>
+</div>
+</div>

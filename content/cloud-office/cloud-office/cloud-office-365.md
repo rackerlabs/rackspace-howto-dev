@@ -3,14 +3,13 @@ node_id: 4950
 title: Getting Started with Microsoft Office 365
 permalink: cloud-office-365
 type: article
-created_date: '2015-11-19 16:20:58'
+created_date: '2015-11-19 22:20:58'
 created_by: zach.corleissen
-last_modified: '2015-11-20 16:2328'
+last_modified_date: '2015-11-20 22:2328'
 last_modified_by: zach.corleissen
 products: Cloud Office
 categories: Cloud Office
 body_format: markdown_w_tinymce
-body_summary: "<p>How to enable Microsoft Office 365 for Rackspace Cloud Office.</p>\r\n"
 ---
 
 This article helps you set up Office 365 for Rackspace Cloud Office.

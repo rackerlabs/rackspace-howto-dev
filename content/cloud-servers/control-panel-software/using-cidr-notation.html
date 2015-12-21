@@ -1,0 +1,101 @@
+---
+node_id: 2164
+title: Using CIDR notation in Cloud Networks
+permalink: article/using-cidr-notation
+type: article
+created_date: '2012-09-17 19:41:41'
+created_by: David Hendler
+last_modified_date: '2014-11-13 17:2349'
+last_modified_by: David Hendler
+products: Cloud Servers
+categories: Control Panel Software
+body_format: tinymce
+---
+
+<h2>What is CIDR?</h2>
+
+<p>Classless Inter-Domain Routing (CIDR), is a range of IP addresses used by a network. A CIDR address looks like a normal IP address except that it ends with a slash followed by a number. The number after the slash represents the number of addresses in the range.</p>
+
+<p>Here's an example CIDR IP address in IPv4:</p>
+
+<pre>
+192.0.2.0/24&nbsp;</pre>
+
+<p>Since IPv4 has a 32-bit address space the 24-bit prefix above means that the address range is the 8 bits (256 addresses) after 192.0.2.0.</p>
+
+<p>And here's an example in IPv6:</p>
+
+<pre>
+2001:db8::/32</pre>
+
+<p>IPv6 has a 128-bit address range so the 32-bit network prefix means it refers to 96 bits' worth of addresses following 2001:db8::, about 76 octillion addresses.&nbsp;</p>
+
+<h3>CIDR Notation in the Cloud Control Panel</h3>
+
+<p>If you're using the <a href="http://mycloud.rackspace.com">Cloud Control Panel</a> to create a Cloud Network you won't need to worry about calculating the IP address. The CIDR field is automatically populated with an IP block on the Rackspace Network. You only need to supply a name for the network and click <strong>Create Network</strong>.</p>
+
+<p>Here's an example of the Create Network popover in the Cloud Control Panel. Note the CIDR field is pre-populated with an IP address range:</p>
+
+<p><img alt="CIDR" height="312" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/CreateNetworkCIDRExample2.png" title="" width="493" /></p>
+
+<p>For complete instructions on how to create a Cloud Network using the Cloud Control Panel see <a href="http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network" target="_self" title="Create an Isolated Cloud Network">Create an Isolated Cloud Network</a>.</p>
+
+<h2>&nbsp;</h2>
+
+<h2>CIDR Notation in the Cloud Neworks API</h2>
+
+<p>If you're using the Cloud Networks API to create a network you must specify the CIDR and a name for the new network.</p>
+
+<p>The nova client command looks like this:</p>
+
+<pre>
+nova network-create &lt;network_label&gt; &lt;cidr&gt;
+</pre>
+
+<p>Where network_label is the name of the network, such as my_new_network, and cidr is the IP block to allocate from, such as 172.16.0.0/24 or 2001:DB8::/64.</p>
+
+<p>The following example shows a cURL command that creates the network:</p>
+
+<pre>
+curl -s https://dfw.servers.api.rackspacecloud.com/v2/010101/os-networksv2 \
+         -X POST -H "X-Auth-Project-Id: 010101" -H "Content-Type: application/json" \
+         -H "Accept: application/json" \
+         -H "X-Auth-Token: 574c5763-86ab-431e-8b6c-5f7cf84c30ca" \
+         -d '{"network": {"cidr": "192.168.0.0/24", "label": "superprivate"}}' | python -m json.tool
+</pre>
+
+<p>The JSON-format response would look similar to this:</p>
+
+<pre>
+{
+ "network": {
+ "cidr": "192.168.0.0/24", 
+ "id": "aaa77608-bae2-4eed-840e-896a7dd345d4", 
+ "label": "superprivate"
+ }
+}
+</pre>
+
+<p><strong>Note</strong>: To help calculate a subnet, you might use a tool like this:</p>
+
+<p><a href="http://www.subnet-calculator.com/cidr.php">http://www.subnet-calculator.com/cidr.php</a></p>
+
+<p>For more information on using the Cloud Networks API see the Rackspace Cloud Networks API Developers Guide.</p>
+
+<h3>Related Information</h3>
+
+<p><a href="http://www.rackspace.com/knowledge_center/article/ipv6-primer" target="_self" title="IPv6 Primer">IPv6 Primer</a></p>
+
+<p>&nbsp;</p>
+
+<h3>More Information on Cloud Networks</h3>
+
+<p><a href="http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network" target="_self" title="Attach an Isolated Network to a New Cloud Server">Attach an Isolated Network to a New Cloud Server</a></p>
+
+<p><a href="http://www.rackspace.com/knowledge_center/article/attach-an-existing-cloud-server-to-a-cloud-network" target="_self" title="Attach an Isolated Network to an Existing Cloud Server">Attach an Isolated Network to an Existing Cloud Server</a></p>
+
+<p><a href="http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server" target="_self" title="Removing Networks from a Cloud Server">Removing Networks from a Cloud Server</a></p>
+
+<p><a href="http://docs.rackspace.com/servers/api/v2/cn-devguide/content/ch_overview.html" target="_self" title="Cloud Networks Developer Guide">Cloud Networks Developer Guide</a></p>
+
+<p>&nbsp;</p>

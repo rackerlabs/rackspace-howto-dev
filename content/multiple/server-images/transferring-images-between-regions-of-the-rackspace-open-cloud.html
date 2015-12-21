@@ -1,0 +1,208 @@
+---
+node_id: 3915
+title: Transferring images between regions of the Rackspace open cloud
+permalink: article/transferring-images-between-regions-of-the-rackspace-open-cloud
+type: article
+created_date: '2014-02-27 22:17:44'
+created_by: cloud.images
+last_modified_date: '2015-04-23 20:4549'
+last_modified_by: kyle.laffoon
+products: 'Cloud Servers,Cloud Files,Cloud Images'
+categories: Server Images
+body_format: tinymce
+---
+
+<p>A common request we receive is, "Dear Rackspace, I've got a server in your DFW region and I want one exactly like it in SYD. &nbsp;How can I make that happen?"</p>
+
+<p>You can make it happen by using Cloud Images.&nbsp; This article explains how to do it.</p>
+
+<h2>Setting expectations</h2>
+
+<p>Before we get into the details, consider the following information:</p>
+
+<ul>
+	<li>You can't really copy a server.&nbsp; Instead, you create an image of the server that you want to copy (by using either the Cloud Servers API or the Cloud Control Panel), export the image out of the source region (DFW in the example in this article), import it into the target region (SYD in this article), and then boot a server from the imported image.
+	<ul>
+		<li>The <em>source region</em> is the region where the server you want to copy is located.</li>
+		<li>The <em>target region</em> is the region where you want to build a new server just like the one you have in the source region.</li>
+	</ul>
+	</li>
+	<li>Because not all images are exportable, not all images can be transferred. See <a href="http://www.rackspace.com/knowledge_center/article/cloud-images-frequently-asked-questions#how-can-i-tell-if-an-image-is-exportable" target="_self">How can I tell if an image can exported?</a> in the Cloud Images FAQ for details.</li>
+	<li>Cloud Images is currently accessible only through the <a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/ch_image_preface.html" target="_blank">Cloud Images v2 API</a>; it's not available in the Cloud Control Panel yet.</li>
+	<li>Cloud Images uses only JSON; it does not use XML.</li>
+</ul>
+
+<h2 id="export">&nbsp;Working in the source region</h2>
+
+<ol>
+	<li>Create an image of the source server.
+	<p>This example uses a server named Slave Database 3 in the source region. &nbsp;You can use either the Cloud Servers API or the Cloud Control Panel to create the image.</p>
+	</li>
+	<li>Optionally, use the metadata function of the API to assign an identifying property to the image. &nbsp;If you want to transfer several images, we recommend that you perform this step to help organize your images and track them across regions.
+	<p>Use either the Cloud Images API or the Cloud Servers API (you cannot use the Control Panel) to put a "coordinating metadatum" on the new image.&nbsp; This example uses an image ID of&nbsp;<code>a6da1504-e1c0-4f40-8461-1ed9a9990e90</code>. &nbsp;You could create an image property named <code>com.mycompany.image-of</code> and give it the value <code>db-slave-3</code>. &nbsp; You can add the metadatum by using the Images API, as in the following example:</p>
+
+	<pre>
+OS_AUTH_TOKEN="&lt;your auth token&gt;"
+OS_IMAGE_URL="&lt;cloud images baseurl in source region&gt;"
+MY_IMG="a6da1504-e1c0-4f40-8461-1ed9a9990e90"
+curl -X PATCH \
+&nbsp;&nbsp;-H "X-Auth-Token: $OS_AUTH_TOKEN" \
+&nbsp;&nbsp;-H "Content-type: application/openstack-images-v2.1-json-patch" \
+&nbsp;&nbsp;-d '[{ "op": "add", "path": "/com.mycompany.image-of", "value": "db-slave-3"}]' \
+&nbsp;&nbsp;"$OS_IMAGE_URL/v2/images/$MY_IMG"</pre>
+	</li>
+	<li>You need a container in your Cloud Files account to put the exported image in. If you don't already have one, you can create a container by using the Cloud Control Panel, as follows:<br />
+	A. In the top navigation bar, click <strong>Storage &gt; Files</strong>.<br />
+	B. Click <strong>Create Container</strong>.<br />
+	C. Specify a name, the source region, and the container type.<br />
+	D. Click&nbsp;<strong>Create Container</strong>.</li>
+	<li>Create a Cloud Images <code>export</code> task in the source region. When this task is executed, it copies the image in Cloud Images and puts the copy into the container named <code>exported-images</code> in your Cloud Files account (also in the source region).</li>
+	<li>
+	<pre>
+curl -X POST \
+  -H "X-Auth-Token: $OS_AUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" \
+  "$OS_IMAGE_URL/v2/tasks"
+</pre>
+	Cloud Images returns a 201 (Created) response. The body of the response contains an <code>id</code> element whose value is the UUID of your export task. The response looks similar to the following one:
+
+	<pre>
+{
+    "created_at": "2014-02-26T02:01:13Z", 
+    "id": "7bdc8ede-9098-4d79-9477-697f586cb333", 
+    "input": {
+        "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90", 
+        "receiving_swift_container": "exported-images"
+    }, 
+    "message": "None", 
+    "owner": "10000001", 
+    "schema": "/v2/schemas/task", 
+    "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333", 
+    "status": "pending", 
+    "type": "export", 
+    "updated_at": "2014-02-26T02:01:13Z"
+}
+</pre>
+	Note that the ID of the task in the above example is <code>7bdc8ede-9098-4d79-9477-697f586cb333</code>.</li>
+	<li>Poll your task to monitor its status, by using the task ID. If your image is large, it might take some time to be processed and transferred to your Cloud Files account. Do not poll more frequently than every 30 seconds. Following is an example Cloud Images API call to check on your task:
+	<pre>
+TASK="7bdc8ede-9098-4d79-9477-697f586cb333"
+curl -X GET \
+  -H "X-Auth-Token: $OS_AUTH_TOKEN" \
+  "$OS_IMAGE_URL/v2/tasks/$TASK"
+</pre>
+	The response has a <code>status</code> field that starts out as <code>pending</code>, changes to <code>processing</code> when the task is being worked on, and then reaches a final status of either <code>success</code> or <code>failure</code>. Following is an example of a successful task response:
+
+	<pre>
+{
+    "created_at": "2014-02-26T02:01:13Z", 
+    "expires_at": "2014-02-28T02:16:50Z", 
+    "id": "7bdc8ede-9098-4d79-9477-697f586cb333", 
+    "input": {
+        "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90", 
+        "receiving_swift_container": "exported-images"
+    }, 
+    "message": "None", 
+    "owner": "10000001", 
+    "result": {
+        "export_location": "exported-images/a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd"
+    }, 
+    "schema": "/v2/schemas/task", 
+    "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333", 
+    "status": "success", 
+    "type": "export", 
+    "updated_at": "2014-02-26T02:16:50Z"
+}
+</pre>
+	Note the <code>result</code> element in this response. It contains the location of the exported image in your Cloud Files account. The image is in the container that you specified and its file name follows the convention <code>{original_image_UUID}.vhd. </code>If you forget which image <code>a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd</code> is, you can look it up using either the Cloud Images or Cloud Servers API.</li>
+</ol>
+
+<h2>Working between the regions</h2>
+
+<p>At this point, you need to download the image from your Cloud Files account in the source region to a neutral location (you could use your laptop or you could use a cloud server) and then upload the image from the neutral location to your Cloud Files account in the target region. How exactly you accomplish this is up to you. Here are some suggestions:</p>
+
+<ul>
+	<li>Use the <a href="https://pypi.python.org/pypi/python-swiftclient" target="_blank">python-swiftclient</a>.&nbsp;</li>
+	<li>Use <a href="https://github.com/cloudnull/turbolift" target="_blank">turbolift</a>.</li>
+	<li>Use&nbsp;<a href="https://github.com/gholt/swiftly" target="_blank">swiftly</a>:
+	<ul>
+		<li><a href="/knowledge_center/article/using-swiftly-to-download-an-exported-image">Using Swiftly to download an exported image</a></li>
+		<li><a href="/knowledge_center/article/using-swiftly-to-upload-an-image-to-be-imported">Using Swiftly to upload an image to be imported</a></li>
+	</ul>
+	</li>
+</ul>
+
+<p>We don't recommend using the Cloud Control Panel for this operation. &nbsp;Most images are large enough you would likely have a poor user experience. &nbsp;Feel free to record your experience with any of these tools in the comments section of this article so other users can benefit from your experience.</p>
+
+<h2 id="import">Working in the target region</h2>
+
+<p>This example assumes that the object named&nbsp;&nbsp;<code>a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd</code> is in a container named <code>imported-files</code> in your Cloud Files account in the target region.</p>
+
+<p>After you upload the image copy to Cloud Files in the target region, you can import it for use with Cloud Servers.</p>
+
+<ol>
+	<li>Create an <code>import</code> task in the target region by using the Cloud Images API.
+
+	<pre>
+OS_AUTH_TOKEN="&lt;your auth token&gt;"
+OS_IMAGE_URL="&lt;cloud images baseurl in target region&gt;"
+IMAGE_CONTAINER="imported-files"
+IMAGE_FILE="a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd"
+IMAGE_NAME="Slave Database 3"
+curl -i -X POST \
+  -H "X-Auth-Token: $OS_AUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d "{\"type\": \"import\", \"input\": {\"import_from\": \"$IMAGE_CONTAINER/$IMAGE_FILE\", \"import_from_format\": \"vhd\", \"image_properties\" : {\"name\": \"$IMAGE_NAME\"} } }" \
+  "$OS_IMAGE_URL/v2/tasks"
+</pre>
+	Cloud Images returns a 201 (Created) response. The body of the response contains an <code>id</code> element whose value is the UUID of your import task. Suppose that the value of the <code>id</code> element is <code>d8dd8c24-2534-473c-881f-9097bc784068.</code></li>
+	<li>Poll your task to monitor its status, by using the task ID. As mentioned earlier, don't poll more frequently than every 30 seconds. Your task eventually goes to a status of success, and the body of the task detail response is similar to the following one:
+	<pre>
+{
+    "created_at": "2014-02-26T03:02:23Z", 
+    "expires_at": "2014-02-28T03:28:18Z", 
+    "id": "d8dd8c24-2534-473c-881f-9097bc784068", 
+    "input": {
+        "image_properties": {
+            "name": "Slave Database 3"
+        }, 
+        "import_from": "exported-images/a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd", 
+        "import_from_format": "vhd"
+    }, 
+    "message": "None", 
+    "owner": "10000001", 
+    "result": {
+        "image_id": "1d944ab7-6748-4f3c-b7e2-3553bf006677"
+    }, 
+    "schema": "/v2/schemas/task", 
+    "self": "/v2/tasks/d8dd8c24-2534-473c-881f-9097bc784068", 
+    "status": "success", 
+    "type": "import", 
+    "updated_at": "2014-02-26T03:28:18Z"
+}
+</pre>
+	Note the <code>result</code> element, which contains the <code>image_id</code> of the imported image.</li>
+	<li>
+	<p>If you put a coordinating metadatum on the original image in the source region, now put the same coordinating metadatum on the image you just imported, namely, <code>1d944ab7-6748-4f3c-b7e2-3553bf006677</code>. You can use the same Cloud Images API call as you used in the source region, just ensure that you set <code>MY_IMG</code>&nbsp;to the new image ID and that you set <code>OS_AUTH_TOKEN</code> and <code>OS_IMAGE_URL</code> are set properly for the target region.</p>
+
+	<p>What's the purpose of this coordinating metadatum? Images are stored differently inside the cloud—they're not in the same VHD format used for image interchange. Thus, you can't use the checksum on your image in the source region to determine which of your images in the target region corresponds to it—there won't be an image with that checksum. You can't use the source image's UUID either, because the image in the target region has a different UUID. But if you put the same coordinating metadatum on each image, you can use the advanced list filtering features of the Cloud Images API to locate the image in each region:</p>
+
+	<pre>
+OS_AUTH_TOKEN="&lt;your auth token&gt;"
+OS_IMAGE_URL="&lt;cloud images baseurl&gt;"
+curl -X GET -H "X-Auth-Token: $OS_AUTH_TOKEN" "$OS_IMAGE_URL/v2/images?com.mycompany.image-of=db-slave-3
+</pre>
+
+	<p>As long as you use different values for each set of images that are related, the response to this call will be a list of images that contain just one image.</p>
+	</li>
+	<li>You can now create a server in the target region with the imported image. You can use the Cloud Servers API or the Cloud Control Panel for this task.</li>
+	<li>To find your imported image in the image selector on the Create Server page of the Control Panel, click <strong>Saved</strong> under <strong>Image</strong>, and among the saved images, look for the images of <strong>Deleted Server</strong>. Because the imported image is not an image of any server in the target region, the Control Panel shows the server as deleted.</li>
+</ol>
+
+<h2>Related information</h2>
+
+<ul>
+	<li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Rackspace Cloud Images Developer Guide</a></li>
+	<li><a href="/knowledge_center/article/frequently-asked-questions-about-using-glance-and-the-images-api">Cloud Images FAQ</a></li>
+</ul>

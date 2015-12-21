@@ -1,0 +1,89 @@
+---
+node_id: 4566
+title: First Generation end-of-life migrations
+permalink: article/first-generation-end-of-life-migrations
+type: article
+created_date: '2015-02-16 17:36:16'
+created_by: reese.mcjunkin
+last_modified_date: '2015-12-14 14:3857'
+last_modified_by: Nate.Archer
+products: Cloud Servers
+categories: Server Migration
+body_format: tinymce
+---
+
+<p>On January 5, 2015, we announced plans to retire our First Generation infrastructure and migrate all First Generation instances to our Next Generation environment, backed by OpenStack<sup>®</sup>. We are making every effort to ensure that this transition is as painless and seamless as possible. This article is intended to answer any questions that you might have about the process.</p>
+
+<h2>How does this migration affect me?</h2>
+
+<p>With the transition to our Next Generation architecture, you will be transitioned to a newer generation of physical hardware, with a control panel backed by the open-source OpenStack&nbsp;rather than our legacy control panel.</p>
+
+<h3>Expanded product access</h3>
+
+<p>After you are migrated to our OpenStack infrastructure, you will have access to OpenStack enabled products such as Cloud Block Storage and Isolated Cloud Networks.</p>
+
+<h3>OpenStack API</h3>
+
+<p>The OpenStack API allows for more fine-grained programmatic control of your servers and has SDKs available for a variety of platforms. This API allows a variety of common configuration changes, such as the addition of IP addresses and admin password changes to be made on-the-fly without the need for a reboot.</p>
+
+<h3>Reliability</h3>
+
+<p>Because of the improved monitoring available on our Next Generation hosts, we are able to provide higher uptime&nbsp;and greater service reliability.</p>
+
+<h2>Timeline</h2>
+
+<p>The First Generation to Next Generation migration path is currently in the final stages of testing, and although the timeline has not yet been finalized, we plan to begin releasing the migration path to small groups this quarter, continuing through the end of the year.<br />
+<br />
+After the migration path has been made available to your server, we will send a&nbsp;communication to your account with an Assisted Migration date. Prior to this date, there will be a window of at least 30 days in which you will be eligible for Self-Service Migration.</p>
+
+<h3>Self-Service Migration</h3>
+
+<p>When your migration window is open, you will have an option via your control panel to commence a Self-Service Migration.&nbsp;This option allows you to schedule your migration at your convenience.</p>
+
+<h3>Assisted Migration</h3>
+
+<p>If you want Rackspace to migrate your server for you, you can simply take no action. On your specified Assisted Migration date, you will be migrated automatically.</p>
+
+<p>For more information about Self-Service and Assisted Migrations, see the <a href="https://community.rackspace.com/products/f/25/t/4787">Migration thread in our community forums</a>.</p>
+
+<h2>The migration process</h2>
+
+<p>The First Generation to Next Generation migration process will be similar to the current resize process. In most cases, your server will remain active for the majority of the migration process, and memory contents will be maintained to prevent your server from rebooting. As a result, most servers will experience little to no downtime.</p>
+
+<p><strong>Note:</strong> For Windows flavors&nbsp;and the oldest iteration of Linux flavors, we will be unable to retain the contents of memory. This means that the server will be halted before the final stage of migration.</p>
+
+<h3>IP addresses</h3>
+
+<p>All PublicNet and ServiceNet IP addresses will be retained during the migration, including shared IP addresses.</p>
+
+<h3>MAC addresses</h3>
+
+<p>Some of our customers use software that is licensed by MAC address. These MAC addresses will not change during the migration process.</p>
+
+<h3>Server flavor</h3>
+
+<p>Linux servers will retain the RAM and vCPU allocation available to them in our First Generation environment, including 256 MB servers, with no change in billing. Windows servers will be migrated to the closest available Next Generation flavor.</p>
+
+<h2>Preparing for your migration</h2>
+
+<p>The migration process is intended to be a direct one-to-one transfer of your server to the Next Generation environment. For the majority of customers, this means that no action need be taken on your part. To ensure a smooth transition, however, we have created articles with recommendations for your OS.</p>
+
+<ul>
+	<li><a href="https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-linux-server">Preparing for Migration – Linux</a></li>
+	<li><a href="https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-windows-server">Preparing for Migration – Windows</a></li>
+</ul>
+
+<h2>Migrating prior to your designated window</h2>
+
+<p>The First Generation to Next Generation migration process is being released slowly over the next year to allow us to provide support to any customer who needs it during the transition. As such, we will be unable to provide this process early.</p>
+
+<p>If you want to make the transition early, you can do so via the traditional <a href="https://admin.rackspace.com/knowledge_center/article/next-generation-cloud-servers-migration-considerations-and-options#image">Image-Based migration method</a>, with the caveats that accompany it. Be aware that image-based migration does not allow for IP address retention across platforms. If this retention is a necessity, you might want to wait until your designated migration window.</p>
+
+<h2>Finding more information</h2>
+
+<p>For more information, contact your support team&nbsp;or refer to the following resources:</p>
+
+<ul>
+	<li><a href="https://www.rackspace.com/knowledge_center/article/first-generation-to-next-generation-cloud-server-migration-faq">First Generation to Next Generation Migration FAQ</a></li>
+	<li><a href="https://community.rackspace.com/products/f/25/t/4787">Community Migration Thread</a></li>
+</ul>

@@ -1,0 +1,133 @@
+---
+node_id: 640
+title: 'How do I remove files older than a certain date, like logs and sessions?'
+permalink: article/how-do-i-remove-files-older-than-a-certain-date-like-logs-and-sessions
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-06-23 21:0137'
+last_modified_by: kelly.holcomb
+products: Cloud Sites
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>The UNIX find utility is disabled for performance reasons. In order to find older files and delete them, one must create a script that performs similar logic.</p>
+
+<p>Below is a way to do this using a PHP script and a HTML form as a cron job alternative.</p>
+
+<table id="toc" class="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+				<h2>Contents</h2>
+				<ol>
+					<li><a href="#Notes">Notes</a>
+						<ul>
+							<li><a href="#This_is_not_a_cron_job.21">This is not a cron job!</a></li>
+							<li><a href="#Security_--_BE_SURE_TO_READ.21">Security</a></li>
+						</ul>
+					</li>
+					<li><a href="#The_HTML_form">The HTML form</a></li>
+					<li><a href="#The_PHP_script">The PHP script</a></li>
+				</ol>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="Notes" name="Notes"></a></p>
+
+<h2>Prerequisites</h2>
+
+<p>Before implementing your script for deletion of older files,know the following:</p>
+
+<p><a id="This_is_not_a_cron_job.21" name="This_is_not_a_cron_job.21"></a></p>
+
+<p>This is not designed to be used as a cron job. If you want to use as a cron job, do one of the following:</p>
+
+<ul>
+	<li>Hard code the arguments passed over HTML GET</li>
+<h4>OR</h4>
+	<li>Pass the arguments on the CLI and use argv[0] and argv[1].</li>
+</ul>
+
+<p><a id="Example_1" name="Example_1"></a></p>
+
+<h4>Example 1</h4>
+
+<pre>ex1 $dir = opendir("/mnt/stor1-wc1-dfw1/111111/www.testform.com/web/content/logs") or die("Could not open directory");</pre>
+
+<p><a id="Example_2" name="Example_2"></a></p>
+
+<h4><span class="mw-headline">Example 2 </span></h4>
+
+<pre>ex2 $dir  = opendir($argv[0)) or die("Could not open directory");</pre>
+
+<p><a id="Security_--_BE_SURE_TO_READ.21" name="Security_--_BE_SURE_TO_READ.21"></a></p>
+
+<h3><Security</h3>
+
+<p>This form will allow anyone that can access it to delete your content. You'll want to secure it with an <a href="http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-5-tips-and-tricks-for-htaccess-and-webconfig"> <code>.htaccess</code></a> file. You can also delete the form when you're done with it.</p>
+
+<p><a id="The_HTML_form" name="The_HTML_form"></a></p>
+
+<h2>The HTML form</h2>
+
+<p>The HTML form that sends the directory and age to the PHP script is as follows:</p>
+
+<pre>&lt;html&gt;
+     &lt;head&gt;&lt;/head&gt;
+     &lt;body&gt;
+         &lt;form action="del_old.php" method="get"&gt;
+
+             Directory: &lt;input type="text" name="dir"&gt;&lt;br&gt;
+             Days Old: &lt;input type="text" name="days"&gt;&lt;br&gt;
+
+             &lt;input type="submit"&gt;
+         &lt;/form&gt;
+     &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p><a id="The_PHP_script" name="The_PHP_script"></a></p>
+
+<h2><span class="mw-headline">The PHP script </span></h2>
+
+<p>The PHP script that takes args from <code>HTML GET</code> query string can be constructed as follows:</p>
+
+<pre>?php
+/*
+  * DISCLAIMER: Use at your own risk. Rackspace claims no responsibility for any loss of data that occurs when using this script.
+  * Pass from a HTML form the directory to be searched eg. /mnt/stor1-wc1-dfw1/111111/www.testform.com/web/content/log/
+  * Pass from a HTML form the age of files to be deleted in days. eg. "10" is any files that have not been modifed in 10 days
+  *
+*/
+
+$dir = opendir($_GET["dir"]) or die("Could not open directory");
+chdir($_GET["dir"]);
+
+$old = mktime(0,0,0,date("m"),date("d")-$_GET["days"],date("Y"));
+echo "Working in &lt;tt&gt;".$_GET["dir"]."&lt;/tt&gt;&lt;br&gt;";
+echo "Deleting files created before &lt;tt&gt;".date("F d Y", $old)."&lt;/tt&gt;&lt;br&gt;&lt;br&gt;";
+
+while(($dirent = readdir($dir))&nbsp;!= false)
+{
+     if(is_file($dirent))
+     {
+         $cur = filemtime($dirent);
+         if($cur &lt; $old)
+         {
+             if(unlink($dirent))
+                 echo "&lt;del&gt;&lt;b&gt;&lt;tt&gt;$dirent&lt;/tt&gt;&lt;/b&gt;&lt;/del&gt; modified &lt;b&gt;&lt;tt&gt;".date("F d Y H:i:s",$cur)."&lt;/tt&gt;&lt;/b&gt;&lt;br&gt;";
+             else
+                 echo "Error deleting file &lt;tt&gt;&lt;b&gt;$dirent&lt;/b&gt;&lt;/tt&gt;&lt;br&gt;";
+         }
+         else
+             echo "&lt;b&gt;&lt;tt&gt;$dirent&lt;/tt&gt;&lt;/b&gt; modified &lt;b&gt;&lt;tt&gt;".date("F d Y H:i:s",$cur)."&lt;/tt&gt;&lt;/b&gt;&lt;br&gt;";
+     }
+}
+closedir($dir);
+
+?&gt;</pre>
+
+<p>&nbsp;</p>

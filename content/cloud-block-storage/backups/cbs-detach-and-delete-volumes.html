@@ -1,0 +1,102 @@
+---
+node_id: 3139
+title: Detach and Delete Cloud Block Storage Volumes
+permalink: article/cbs-detach-and-delete-volumes
+type: article
+created_date: '2012-10-22 19:25:19'
+created_by: David Hendler
+last_modified_date: '2015-06-05 14:2229'
+last_modified_by: kyle.laffoon
+products: Cloud Block Storage
+categories: Backups
+body_format: tinymce
+---
+
+<p>Detaching a Cloud Block Storage volume will prevent you from writing to it when you want to take a snapshot. It is also useful when you want to take a volume offline for archival purposes, or to move a volume to another server. A Cloud Block Storage volume must be detached before resizing the server to which it is mounted. You should also detach a volume before you delete it. In all cases, you must unmount the volume before you detach it through the Control Panel. The instructions are below.</p>
+
+<p>On this Page:</p>
+
+<ul>
+	<li><a href="#unmount_a_volume">Unmount a Volume</a></li>
+	<li><a href="#detach-a-volume">Detach a Volume</a></li>
+	<li><a href="#delete-a-volume">Delete a Volume</a></li>
+</ul>
+
+<h3><a name="unmount_a_volume"></a>Unmount a Volume</h3>
+
+<p>There are a few reasons to detach a volume:</p>
+
+<ul>
+	<li>To prevent writes when you take a snapshot</li>
+	<li>To prevent issues when resizing the server to which it is attached</li>
+	<li>To move it to another Server</li>
+	<li>To delete it</li>
+</ul>
+
+<p>Before you detach a Volume from a Server, you should unmount it to prevent errors.</p>
+
+<p><strong>Unmount Volume from a Linux Server.</strong></p>
+
+<p>Confirm in the Control Panel how the volume is presented to the cloud server.</p>
+
+<p><img alt="" height="490" src="/knowledge_center/sites/default/files/field/image/cbs_location3_0.png" width="764" /></p>
+
+<p>At your server, use the df -h command to see how it is mounted.</p>
+
+<p><img alt="" height="122" src="/knowledge_center/sites/default/files/field/image/mount_point.png" width="571" /></p>
+
+<p>Use the value under <strong>Mounted On</strong> in the unmount command.</p>
+
+<p><img alt="" height="328" src="/knowledge_center/sites/default/files/field/image/fstab2_0.png" width="883" /></p>
+
+<p>Also, comment out second line (highlighted above) in /etc/fstab to prevent the volume from trying to mount on the next boot.</p>
+
+<p>Input:</p>
+
+<pre>
+# umount /dev/xvdb1/</pre>
+
+<p>Output:</p>
+
+<p>The output is the prompt ready for the next command.</p>
+
+<pre>
+#</pre>
+
+<p><strong>Unmount a Volume from a Windows Server.</strong></p>
+
+<ol>
+	<li>In the Server Manager, Select File and Storage Services &gt; Disks.</li>
+	<li>Under the <strong>Disks</strong> window, right-click the Cloud Block Storage Volume. Select <strong>Take Offline</strong> from the pop-up menu. If the <strong>Take Disk Offline</strong> warning window displays, click Yes.
+	<p><img alt="" height="318" src="/knowledge_center/sites/default/files/field/image/win_bringoffline_0.jpeg" width="644" /></p>
+	</li>
+</ol>
+
+<p>The Cloud Block Storage Volume no longer displays as a drive under <strong>Computer</strong>.</p>
+
+<h3><a name="detach-a-volume"></a>Detach a Volume</h3>
+
+<p>In the Rackspace Cloud Control Panel, click <strong>Block Storage</strong> in the Servers sub-navigation to display the <strong>Block Storage Volumes</strong> screen.</p>
+
+<p><img alt="" height="185" src="/knowledge_center/sites/default/files/field/image/cbs_detachvolume_0.jpeg" width="681" /></p>
+
+<p>Click the Actions button (the cog) next to the Volume name. Click the <strong>Detach Volume</strong> link.</p>
+
+<p><img alt="" height="248" src="/knowledge_center/sites/default/files/field/image/cbs_detachvolume2_0.jpeg" width="407" /></p>
+
+<p>Click the <strong>Detach Volume</strong> button.</p>
+
+<p>The Volume detaches.<br />
+Note: It may take several minutes for your Volume to detach.</p>
+
+<p>&nbsp;</p>
+
+<h3><a name="delete-a-volume"></a>Delete a Volume</h3>
+
+<p>&nbsp;In the Rackspace Cloud Control Panel, click <strong>Block Storage</strong> in the Servers sub-navigation to display the <strong>Block Storage Volumes</strong> screen.</p>
+
+<p><img alt="" height="185" src="/knowledge_center/sites/default/files/field/image/cbs_detachvolume3.jpeg" width="681" /></p>
+
+<p>Click the Actions button (the cog) next to the Volume name. Click the <strong>Delete Volume</strong> link.<br />
+<br />
+<strong>Note:</strong> If a snapshot of the volume exists, you cannot delete the volume until you delete the snapshot.</p>

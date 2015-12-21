@@ -1,0 +1,84 @@
+---
+node_id: 4799
+title: Cloud Load Balancers ORD region migration FAQ
+permalink: article/cloud-load-balancers-ord-migration-faq
+type: article
+created_date: '2015-08-18 15:02:18'
+created_by: rose.contreras
+last_modified_date: '2015-08-20 21:4827'
+last_modified_by: rose.contreras
+products: Cloud Load Balancers
+categories: Migrations
+body_format: full_html
+---
+
+<! ---- Cloud Load Balancers ORD region migration FAQ ---- />
+
+<p>This article provides answers to frequently asked questions about the Cloud Load Balancers migration in the ORD region.</p>
+
+<a name="top"> </a>
+<h3>Contents</h3>
+      <ul>
+        <li><a href="#why">Why is there a migration?</a></li>
+        <li><a href="#how">How will the migration work?</a></li>
+        <li><a href="#imp">What will be the expected impact to my load balancer?</a></li>
+        <li><a href="#work">What options are available to avoid disruption due to the migration?</a></li>
+        <li><a href="#self">Can I self-migrate my load balancer?</a></li>
+      </ul></p>
+
+<a name="why"> </a>
+<h3>Why is there a migration?</h3>
+
+<p>We are migrating Cloud Load Balancers onto newer hardware to provide you with an enhanced experience. Specifically, you will benefit in the following ways:</p>
+  <ul>
+    <li>An improved Cloud Load Balancer provisioning experience</li>
+    <li>Enhancements to mitigate resource oversubscription</li>
+    <li>Architectural improvements that allow for better fault tolerance</li>
+  </ul>
+
+<a href="#top">back to top</a>
+
+<a name="how"> </a>
+<h3>How will the migration work?</h3>
+
+<p>The migration is simple. During your planned migration window we will perform the following tasks:</p>
+  <ol>
+    <li>Set your load balancer into a <code><strong>PENDING_UPDATE</strong></code> status</li>
+    <li>Duplicate the load balancer configuration onto the new hardware</li>
+    <li>Pass traffic to the load balancer</li>
+  </ol>
+
+<p>After those steps are we will set your load balancer status back to <code><strong>ACTIVE<strong></code>.</p>
+
+<a href="#top">back to top</a>
+
+<a name="imp"> </a>
+<h3>What is the expected impact to my load balancer?</h3>
+
+<p>You can expect up to 15 seconds of downtime per migrated load balancer, although 1 to 2 seconds of downtime is more realistic. Downtime for this maintenance specifically means that all connections are dropped and session persistence, if enabled, is reset until the migration is completed. You might also see up to 1 minute of degradation (for example, sporadic timeouts or some dropped connections).</p>
+
+<a href="#top">back to top</a>
+
+<a name="work"> </a>
+
+<h3>What options are available to avoid disruption due to the migration?</h3>
+
+<p>The following options are available:
+
+  <ul>
+    <li>Temporarily create a load balancer in another region and leverage the public endpoints of your cloud servers. <strong>Note:</strong> This is not recommended for SSL terminated load balancers.</li>
+    <li>Move the load balancer and applicable nodes to a different region.</li>
+    <li>Temporarily leverage DNS load balancing to your cloud servers.</li>
+  </ul>
+
+<a href="#top">back to top</a>
+
+<a name="self"> </a>
+
+<h3>Can I self-migrate my load balancer?</h3>
+
+<p>We do not recommend self-migrating your load balancer because you will lose the static IP address that is currently assigned to your instance. We have planned the migration to ensure a smooth transition of your existing IP addresses.</p>
+
+<a href="#top">back to top</a>
+
+<p>&nbsp;</p>
