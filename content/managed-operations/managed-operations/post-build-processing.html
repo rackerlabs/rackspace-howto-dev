@@ -1,0 +1,133 @@
+---
+node_id: 4449
+title: Cloud Server Configuration options
+permalink: article/post-build-processing
+type: article
+created_date: '2014-12-01 18:46:29'
+created_by: rose.contreras
+last_modified_date: '2015-07-09 22:1012'
+last_modified_by: rose.contreras
+products: Managed Operations
+categories: Managed Operations
+body_format: full_html
+---
+
+<!    ---- NEW TITLE: Cloud Server Configuration options ---- </!>
+
+<p>To deliver a Managed Cloud experience, Rackspace runs support automation on every cloud server that we build. We have extended this capability by creating a <code>build_config</code> metadata key that you can use to specify the Rackspace-provided common tools you want installed on your Rackspace cloud servers and configured with Rackspace recommended best practices.</p>
+
+<p>Many of the <code>build_config</code> metadata key options are available only when you use the Cloud Servers API to build your servers. Building your servers through the API gives you increased flexibility to select that a server is configured how you want it and ensure that it does not conflict with any automation that you have running. If you build servers through the Cloud Control Panel, you will have the ability to select only from the most common of these options.</p>
+
+<p>To take advantage of this feature when using the API, you use any of the defined <code>build_config</code> metadata key options that are available for your specific service level (Managed Infrastructure or Managed Operations) and pass your specified values to the scripts.</p>
+
+<p><strong>Note:</strong> This functionality is available only when you create a server. If you want any of the tools installed after the server is created, you must download the tools and configure them individually on the servers. If you have the Managed Operations: SysOps service level, ask a Cloud Engineer to install the tools on your behalf.</p>
+
+<h2>Build configuration options</h2>
+
+<p>The following table lists the current options for the <code>build_config</code> metadata key:</p>
+
+<table border="1">
+  <tr>
+    <th>Option</th>
+    <th>Managed Infrastructure</th>
+    <th>Managed Operations</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>rack_user_only</code></td>
+    <td align="center">N</td>
+    <td align="center">Y</td>
+    <td>For Managed Operations customers only.
+    <p>Creates a Rackspace user name and password for Rackspace Support to deliver System Administrator Level Support. This option does not add or configure any additional components.<p></td>
+  </tr>
+  <tr>
+    <td><code>base_mgdops_config</code></td>
+    <td align="center">N</td>
+    <td align="center">Y</td>
+    <td>For Managed Operations customers only.
+      <p>Builds a regular Managed Operations server from a base image with a Rackspace user name and password, installs and configures the Cloud Monitoring agent to the Rackspace defaults, installs and configures Cloud Backup to the Rackspace defaults, installs all the support packages, configures Mailgun as the default mail relay service, and enables automatic updates. This is the standard Managed Operations kick.</p></td>
+  </tr>
+  <tr>
+    <td><code>mailgun</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Creates a Mailgun account if one doesn't already exist, and then configures Postfix to relay to smtp.mailgun.com.</td>
+  </tr>
+  <tr>
+    <td><code>backup_agent_only</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Installs the Cloud Backup agent.</td>
+  </tr>
+  <tr>
+    <td><code>backup_defaults</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Installs the Cloud Backup agent, and configures a default backup set and schedule.
+        <p><strong>Note:</strong> The following default “on” directories are backed up:</p>
+        <p><strong>For Linux Managed Cloud servers:</strong></p>
+        <p><code>/etc<br /><br />
+          /home<br /><br />
+          /var/www<br /><br />
+          /var/lib/mysqlbackup</p>
+        <p><strong>For Windows Managed Cloud servers:</p>
+          c:\ users<br /><br />
+          c:\ InetPub<br /><br /></td>
+  </tr>
+  <tr>
+    <td><code>monitoring_agent_only</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Installs the Cloud Monitoring agent.</td>
+  </tr>
+  <tr>
+    <td><code>monitoring_defaults</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Installs the Cloud Monitoring agent and configures default Monitoring, Disk, and CPU checks.
+        <p>For Managed Operations service level customers, this option also configures default file system alerts that are sent to Rackspace.</p></td>
+  </tr>
+  <tr>
+    <td><code>auto_updates</code></td>
+    <td align="center">Y</td>
+    <td align="center">Y</td>
+    <td>Enables automatic updates of server software.</td>
+  </tr>
+</table>
+<br />
+<p>You can combine the <code>build_config</code> options. For example:</p>
+
+<ul>
+  <li><strong><code>monitoring_defaults</code> + <code>auto_updates</code> - </strong>installs the monitoring agent configured with Rackspace best practices, and turns on automatic updates.<br /><br /></li>
+  <li><strong><code>backup_agent_only</code></strong> installs the Rackspace Cloud Backup agent but does not configure Rackspace backups. You must separately identify the directories that you want backed up after the agent is installed.</li>
+</ul>
+
+<h2>Build options for configuration management software (Chef, Puppet, Ansible, and Salt)</h2>
+
+<p>Using the API to build a server with a core option passed does not conflict with configuration management software. Such builds have a Rackspace account and nothing more. If you want additional components, you must pass them with the <code>build_config</code> metadata key.</p>
+
+<p>The following example shows the build option for a Chef server management.</p>
+
+<pre>nova boot --flavor 2 --image [image] --meta build_config=core www.example.com</pre>
+
+<p>The following example shows the build option for building a file server with a Rackspace user name and password only and backup ability.</p>
+
+<pre>nova boot --flavor 2 --image [image] --meta build_config=core,driveclient fileserver.example.com</pre>
+
+<p>This following example shows a good option for a customer who wants a database server that has monitoring and backups available, but no updates or additional packages.</p>
+
+<pre>nova boot --flavor 2 --image [image] --meta build_config=core,driveclient,monitoring db.example.com</pre>
+
+<p>If you use configuration management software, wait for the post-build configuration to complete before performing your configuration management. For standard and workload-optimized cloud servers only, you can obtain the Managed Operations post-build automation status via the Cloud Servers API. Look for the metadata key value <code>informationrax_service_level_automation</code>. Depending on the current status of the Managed Cloud post-build automation process, the metadata key will have one of the following values:</p>
+
+<ul>
+  <li>Pending</li>
+  <li>In Progress</li>
+  <li>Complete</li>
+  <li>Build Error</li>
+  <li>Authentication Error</li>
+</ul>
+
+<p>When the metadata key is set to <strong>Complete</strong>, you can begin your configuration management.</p>
+
+<p>&nbsp;</p>

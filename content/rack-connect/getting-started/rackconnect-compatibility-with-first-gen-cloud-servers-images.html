@@ -1,0 +1,30 @@
+---
+node_id: 2030
+title: Cloud Server images for use with RackConnect v2.0
+permalink: article/rackconnect-compatibility-with-first-gen-cloud-servers-images
+type: article
+created_date: '2012-08-21 20:03:02'
+created_by: David Hendler
+last_modified_date: '2015-07-23 21:4125'
+last_modified_by: kelly.holcomb
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>APPLIES TO</strong>: RackConnect v2.0</p>
+<p>To create new servers, you can use Cloud Server images that are available in the MyRackspace Portal, the Cloud Control Panel, or the Cloud Servers API. To ensure that you are using a Cloud Server image that is compatible with RackConnect, we recommend that you use the MyRackspace Portal when creating your servers. This article provides details about Cloud Server images compatible with RackConnect.</p>
+<p><strong style="line-height: 1.538em;">MyRackspace Portal:</strong><a style="line-height: 1.538em;" href="https://my.rackspace.com/">https://my.rackspace.com/</a></p>
+<p><strong>Cloud Control Panel:</strong> <a href="https://mycloud.rackspace.com/">https://mycloud.rackspace.com/</a><br /><strong>&nbsp;</strong></p>
+<p>&nbsp;</p>
+<h2><strong>Managed Infrastructure Images</strong></h2>
+<p>Some Cloud Server images are incompatible with RackConnect at the Managed Infrastructure level.&nbsp; Do <em>not</em> use the following base images with RackConnect:</p>
+<p><img src="/knowledge_center/sites/default/files/field/image/Core.SL_.Incompatible.Images_0.png" alt="" width="570" height="248" />&nbsp; &nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+<h2><strong>Windows Managed Infrastructure Images</strong></h2>
+<p><em>Note: You cannot use the <a href="https://mycloud.rackspace.com/">Cloud Control Panel </a>to create Managed Infrastructure Windows Cloud Servers for use with RackConnect. &nbsp;Use the <a href="https://my.rackspace.com/">MyRackspace </a>Portal or the Cloud Servers API instead.</em><br /><br />Some Managed Infrastructure Windows Cloud Server images available via the Cloud Servers API cannot be used with RackConnect.&nbsp; If you are interacting directly with the API, you need to use the Image IDs to look up the recommended images because they do not appear in the image list via the API.&nbsp; They are available only as <strong>hidden</strong> images.&nbsp; If you are use the Managed Infrastructure, you should use the equivalent image listed in the following table.&nbsp; The suggested images allow the RackConnect automation to run properly.</p>
+<p><img src="/knowledge_center/sites/default/files/field/image/Core.SL_.Compatible.Windows.Images_0.png" alt="" width="772" height="241" /><br /><br />The difference between the RackConnect and non-RackConnect images is a slight change in the Windows Firewall, which allows access for the automation systems. <br /><br />If you are using the <a href="https://my.rackspace.com/">MyRackspace </a>Portal to create Cloud Servers on a Cloud Account with RackConnect, you will automatically see the correct Windows images, and no additional action is required.&nbsp; You might not see the Image IDs through the <a href="https://my.rackspace.com/">MyRackspace </a>Portal.<br /><br /></p>
+<p>&nbsp;</p>
+<h2><strong>Managed Operations Images</strong></h2>
+<p>All standard base images available via the API and <a href="https://my.rackspace.com/">MyRackspace </a>Portal are compatible with RackConnect at the Managed Operations level.</p>
+<p><a href="http://www.rackspace.com/knowledge_center/article/using-cloud-load-balancers-with-rackconnect">Using Cloud Load Balancers with RackConnect</a> &lt;---Previous | Next ---&gt; <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-compatibility-with-cloud-server-images">RackConnect Compatibility with Cloud Server Images</a></p>

@@ -1,0 +1,15 @@
+---
+node_id: 3855
+title: Disabling TCP Offloading in Windows Server 2012
+permalink: article/disabling-tcp-offloading-in-windows-server-2012
+type: article
+created_date: '2014-01-16 14:43:38'
+created_by: kyle.laffoon
+last_modified_date: '2014-07-18 19:5224'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: Windows Server 2012
+body_format: tinymce
+---
+
+<p>TCP offload engine is a function used in network interface cards (NIC) to offload processing of the entire TCP/IP stack to the network controller. By moving some or all of the processing to dedicated hardware, a TCP offload engine frees the system's main CPU for other tasks. However, TCP offloading has been known to cause some issues, and disabling it can help avoid these issues.</p><p><strong>NOTE:</strong>&nbsp;We recommend <strong>keeping TCP offloading enabled&nbsp;</strong>in any source images that you use to build new servers, and then disabling TCP offloading in the source image after the new server is built. If TCP offloading is disabled on an image, a server build from that image might fail. We are working on a solution for this issue. However, as this is a multiple vendor issue the resolution will depend on the vendors' cooperative efforts.</p><h3>Disable TCP Offloading</h3><ol><li>In the Windows server, open the Control Panel and select <strong>Network Settings&nbsp;</strong>&gt; <strong>Change Adapter Settings</strong>.<p><img src="/knowledge_center/sites/default/files/field/image/TCPOffloading8.png" alt="" width="413" height="458" border="2" /></p></li><li>Right-click on each of the adapters (<strong>private&nbsp;</strong>and <strong>public</strong>), select <strong>Configure&nbsp;</strong>from the <strong>Networking&nbsp;</strong>menu, and then click the <strong>Advanced&nbsp;</strong>tab. The TCP offload settings are listed for the Citrix adapter.<p><img src="/knowledge_center/sites/default/files/field/image/TCPOffloading9.png" alt="" width="410" height="459" border="2" /></p></li><li>Disable each of the following TCP offload options, and then click <strong>OK</strong>:<ul><li>IPv4 Checksum Offload</li><li>Large Receive Offload</li><li>Large Send Offload</li><li>TCP Checksum Offload</li></ul></li></ol>

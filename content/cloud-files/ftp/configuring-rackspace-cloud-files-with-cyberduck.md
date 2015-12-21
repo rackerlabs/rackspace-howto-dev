@@ -3,13 +3,12 @@ node_id: 3203
 title: Configuring Rackspace Cloud Files with Cyberduck
 permalink: article/configuring-rackspace-cloud-files-with-cyberduck
 type: article
-created_date: '2012-11-15 15:59:34'
+created_date: '2012-11-15 21:59:34'
 created_by: Rae D. Cabello
-last_modified: '2015-11-04 10:3900'
+last_modified_date: '2015-11-04 16:3900'
 last_modified_by: Nate.Archer
 products: Cloud Files
 categories: FTP
-tags: 'Cloud Files,cyberduck,ftp client'
 body_format: markdown_w_tinymce
 ---
 

@@ -1,0 +1,265 @@
+---
+node_id: 3752
+title: Configuring a Software RAID on a Linux General Purpose Cloud Server
+permalink: article/performance-servers-and-raid-0-with-multiple-data-disks-on-linux
+type: article
+created_date: '2013-11-03 23:27:50'
+created_by: tim.pownall
+last_modified_date: '2014-12-11 19:4232'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: Performance
+body_format: tinymce
+---
+
+<p>This article will demonstrate how to put multiple data disks on a General Purpose&nbsp;server into a RAID level 0.&nbsp; We will mount a single data disk and perform read and write tests, then continue by putting two data disks into a RAID 0.</p>
+
+<p>A RAID 0 stripes (combines) two disks to look like one drive to the system, usually increasing performance (particularly read access). &nbsp;While a RAID level of 0 only stripes the disks and offers no data redundancy, the hypervisor (host server) is backed by a RAID 10. &nbsp;This RAID 10 provides redundancy for your data on the backend.</p>
+
+<h3>Prerequisites</h3>
+
+<p>Creating a RAID level 0 requires a General Purpose&nbsp;server with at least two data disks.</p>
+
+<p>To configure the RAID we will use the mdadm software RAID utility, which may need to be installed.</p>
+
+<h4>Redhat/Centos/Fedora/Scientific Linux mdadm installation</h4>
+
+<pre>
+sudo yum install mdadm</pre>
+
+<h4>Ubuntu/Debian mdadm installation</h4>
+
+<pre>
+sudo apt-get update
+sudo apt-get install mdadm</pre>
+
+<h3>Identifying available data disks</h3>
+
+<p>Disks on Linux are referenced using their device name. &nbsp;The/dev/xvda device is your system disk and contains your operating system. &nbsp;We will use the fdisk utility to identify your data disk devices (usually /dev/xvde and /dev/xvdf).</p>
+
+<pre>
+sudo fdisk -l</pre>
+
+<p>The output will list full details about the disks attached to the system. &nbsp;One disk entry would look like this:</p>
+
+<pre>
+Disk /dev/xvde: 322.1 GB, 322122547200 bytes
+255 heads, 63 sectors/track, 39162 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x000ea711
+
+    Device Boot      Start         End      Blocks   Id  System
+    /dev/xvde1             1       37349   300000000   83  Linux</pre>
+
+<p>The first line shows the device name and size. &nbsp;The last line of the block shows any partitions currently configured on the drive, with their device names (like /dev/xvde1).</p>
+
+<h3>Creating the RAID 0</h3>
+
+<p>Now that we have the device names of our data disks we can start to provision the RAID 0 with the following commands.</p>
+
+<pre>
+sudo mdadm --create /dev/md0 --level=0 --raid-devices=2 /dev/xvde /dev/xvdf</pre>
+
+<p>You will get a warning if any partitions exist on the disks being provisioned. &nbsp;Confirm that the partitions can be overwritten and mdadm will create the RAID.</p>
+
+<p>Verify the RAID 0 by checking the /proc/mdstat system file.</p>
+
+<pre>
+cat /proc/mdstat</pre>
+
+<p>The file's contents should look something like this:</p>
+
+<pre>
+Personalities : [raid0]
+    md0 : active raid0 xvdf[1] xvde[0]
+          629144576 blocks super 1.2 512k chunks
+
+     unused devices: &lt;none&gt;</pre>
+
+<p>The beginning of the second line in the example shows the device name (md0), which means we can reference the array as /dev/md0.</p>
+
+<h3>Partitioning the RAID 0</h3>
+
+<p>Once the array is created we can partition it to make a file system. &nbsp;We'll use the fdisk utility to create a single partition on the RAID 0.</p>
+
+<pre>
+sudo fdisk /dev/md0</pre>
+
+<p>After displaying some information about the device we're editing (the array), you'll see a command prompt.</p>
+
+<p>We'll need to create a new partition using all available disk space, then write the changes to the array's partition table.</p>
+
+<p>Start by entering "n" for new partition, then "p" for a primary partition, and "1" for the partition number. &nbsp;Just hit enter when asked for the starting and ending cylinders so fdisk will use the defaults, filling the disk with the single partition. &nbsp;Once the partition is created enter "w" to write the changes to the disk.</p>
+
+<p>The process will look something like this:</p>
+
+<pre>
+Command (m for help): n
+
+Command action
+   e   extended
+   p   primary partition (1-4)
+p
+Partition number (1-4): 1
+First cylinder (1-157286144, default 257): 
+Using default value 257
+Last cylinder, +cylinders or +size{K,M,G} (257-157286144, default 157286144): 
+Using default value 157286144
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.</pre>
+
+<p>After writing the partition table, fdisk should exit. &nbsp;Running fdisk again should let you see the array and its new partition (along with the partition's device name).</p>
+
+<pre>
+sudo fdisk -l</pre>
+
+<h3>Creating the file system on the RAID 0</h3>
+
+<p>For the purposes of this article we'll use ext4 for our demonstration and performance testing.</p>
+
+<p><strong>Note:</strong> &nbsp;If you use ext4 on your array, make sure your system supports it. &nbsp;Recent distributions support ext4 by default, but if you're using an older base operating system (like CentOS 5.3) the included kernel and disk formatting utility may not support ext4. &nbsp;In this case, it's safer to use ext3 (with the mkfs.ext3 command).</p>
+
+<p>Creating the file system will be easy and seamless.&nbsp; Run the appropriate mkfs command for the file system (mkfs.ext4 to format as ext4, for example) on the array's partition, usually /dev/md0p1.</p>
+
+<pre>
+sudo mkfs.ext4 /dev/md0p1</pre>
+
+<p>With the new file system created you are free to mount the array to any mount point that you would like. &nbsp;Edit your /etc/fstab file to add a line for the new disk. &nbsp;If we wanted to mount the disk on our example system on /var/lib/mysql, we would add the following line:</p>
+
+<pre>
+/dev/md0p1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;/var/lib/mysql &nbsp;ext4 &nbsp; &nbsp;defaults,noatime &nbsp; &nbsp; &nbsp;0 &nbsp; &nbsp; &nbsp;2</pre>
+
+<p>To mount the RAID 0 after saving the fstab file, run:</p>
+
+<pre>
+sudo mount -a</pre>
+
+<h3>Performance testing</h3>
+
+<p>For the performance testing on our example RAID 0 we ran several read and write tests, with the following results (including commands and output):</p>
+
+<pre>
+RAID level 0 with data disk 60 GB performance server 
+
+[READ] /dev/md0
+
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.166875 s, 307 MB/s
+
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.16641 s, 308 MB/s
+
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.166675 s, 307 MB/s
+
+[Write] /dev/md0
+
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.343796 s, 149 MB/s
+
+[root@performance-60GB ~]# rm -fv /mnt/speed.file 
+removed `/mnt/speed.file'
+
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.343648 s, 149 MB/s
+
+[root@performance-60GB ~]# rm -fv /mnt/speed.file 
+removed `/mnt/speed.file'
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.345652 s, 148 MB/s
+
+[root@performance-60GB ~]# cat /proc/mdstat
+Personalities : [raid0] 
+md0 : active raid0 xvde[1] xvdf[0]
+      629144576 blocks super 1.2 512k chunks
+      
+unused devices: &lt;none&gt;
+
+
+No RAID level 0 
+
+
+[READ] 
+
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.195058 s, 262 MB/s
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.198602 s, 258 MB/s
+
+[root@performance-60GB ~]# echo 3 &gt; /proc/sys/vm/drop_caches 
+
+[root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.199001 s, 257 MB/s
+
+
+[WRITE]
+
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.337723 s, 152 MB/s
+
+[root@performance-60GB ~]# rm -fv /mnt/speed.file 
+removed `/mnt/speed.file'
+
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.34109 s, 150 MB/s
+
+[root@performance-60GB ~]# rm -fv /mnt/speed.file 
+removed `/mnt/speed.file'
+
+[root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
+50000+0 records in
+50000+0 records out
+51200000 bytes (51 MB) copied, 0.33958 s, 151 MB/s
+
+Data Results :
+
+RAID 0 -
+
+Read Avg : 307 MB/s
+Write Avg : 148 MB/s
+
+No RAID -
+
+Read Avg : 259 MB/s
+Write Avg : 151 MB/s
+</pre>
+
+<p>Our results from the testing showed a 16% increase in reads while utilizing (2) SSDs in a RAID 0, with a 2% decrease in write performance. The performance gains from the reads is substantial enough to warrant utilizing the RAID 0 for most purposes, but if you're running an application that performs more writes than reads you may benefit more from using the data disks stand-alone instead of going with the RAID 0 option.</p>

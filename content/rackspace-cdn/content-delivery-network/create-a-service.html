@@ -1,0 +1,92 @@
+---
+node_id: 4651
+title: Create a Rackspace CDN service
+permalink: article/create-a-service
+type: article
+created_date: '2015-05-08 17:57:57'
+created_by: Rackspace Support
+last_modified_date: '2015-12-16 19:4316'
+last_modified_by: catherine.richardson
+products: Rackspace CDN
+categories: Content Delivery Network
+body_format: tinymce
+---
+
+<p>When you access Rackspace CDN through the Cloud Control Panel (as described in <a href="https://www.rackspace.com/knowledge_center/article/access-rackspace-cdn">Access Rackspace CDN</a>), the <strong>Content Delivery Network (CDN) </strong>page is displayed. If you have already created any services, they are listed. To create a new service, perform the following steps.</p>
+
+<p>A box opens letting you know that your service is being deployed. Another box opens showing that your set up is complete along with the URL you need to use to create your CNAME record.</p>
+
+<ol>
+	<li>Click <strong>Create Service</strong>. A popup dialog box is displayed. (Pricing information is displayed under the drop down menu in the following figure. To get pricing information, click the dollar sign ($) icon.)<br />
+	<br />
+	<img alt="" border="2" height="192" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-15%20at%201.29.00%20PM.png" width="391" />&nbsp;&nbsp;<br />
+	&nbsp;</li>
+	<li>Enter the following information to create your service:
+	<ul>
+		<li><strong>Service Name</strong>: A human-readable name for your service.</li>
+		<li><strong>Choose Traffic Type</strong>: Choose HTTP or HTTPS.<br />
+		<br />
+		When you choose HTTPS, <strong>Choose Certificate Type</strong> displays to enable you to select the kind of certificate your service will use. After June 10, 2015, any new domains that are enabled for HTTPS deliver both HTTPS and HTTP traffic. Domains that existed before June 10, 2015 also support this; to turn this support on, you edit and save the TTL (edit without changing the value). Note that your origin must have a secure certificate before traffic can be routed to your origin with HTTPS. For more information on serving secure traffic, see <a href="https://admin.rackspace.com/knowledge_center/article/rackspace-cdn-secure-delivery-options">Rackspace CDN secure delivery options</a>.<br />
+		<br />
+		<strong>Shared SAN Certificate</strong> enables you to use your own domain name with Rackspace CDN and serve traffic securely. (Note that pricing information displays below under the type of certficate chosen.) When you create a service using a shared SAN certificate, when you click <strong>Create Service</strong>, you are also creating your SAN certificate. The following steps are involved when you create a service using a shared SAN certificate:<br />
+		&nbsp;</li>
+	</ul>
+
+	<ol>
+		<li>Rackspace CDN sends the domain details to Akamai.</li>
+		<li>Akamai send the request to GeoTrust for verification.</li>
+		<li>GeoTrust contacts the administrator for the domain based on WHOIS information.</li>
+		<li>The administrator verifies the domain rights.</li>
+		<li>GeoTrust issues the certificate to Akamai.</li>
+		<li>Akamai deploys the certificate and sends a response to Rackspace CDN.</li>
+		<li>Rackspace CDN shows the completed status in the Control Panel.<br />
+		<br />
+		<img alt="" border="2" height="210" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%201.34.40%20PM.png" width="553" /><br />
+		&nbsp;</li>
+	</ol>
+
+	<ul>
+		<li><strong>Domain Name</strong>: This is the domain name through which visitors receive content. The domain name must have a subdomain in it, for example, www.example.com. You can add additional domains to the service after the service is created. You will be provided with a Canonical Name (CNAME) to use as an alias for your domain name. When you create a secure shared domain, the name must be a single word with any periods (.) but it can contain hyphens (-).<br />
+		&nbsp;</li>
+		<li><strong>Origin</strong>: The origin is the domain (or IP address for HTTP) where your content resides. The HTTP or HTTPS server that will respond to origin pull requests from the CDN edge servers. The origin for your site can be the IP address of the server or load balancer for your site. Additionally, it is a good practice to use a domain name for your origin. To do this, simply create a DNS A record for your origin — for example, <strong>origin.example.com = 12.345.6.789</strong>. You can add additional origins to the service after the service is created.<br />
+		&nbsp;</li>
+	</ul>
+	</li>
+	<li>Click <strong>Create Service</strong>. A box opens showing the progress of the creating of the service. When the setup of the service is complete, a box opens that provides the URL to use to create your CNAME record and a link to update DNS to complete the setup. (For instructions to update DNS, see <a href="http://www.rackspace.com/knowledge_center/article/change-dns-to-enable-rackspace-cdn">Change DNS to enable Rackspace CDN</a>.)<br />
+	<br />
+	<strong>Note:</strong> Before you update DNS, you must make sure that your web servers are configured to accept the domain name that you chose because the domain that is generated for https will produce an error.&nbsp;<br />
+	<br />
+	For example, if the CDN domain is <code>cdn.customer.com.cdn306.raxcdn.com</code>, to update the website configuration (Origin) for Apache, you need to include the CDN domain <code>cdn.customer.com.cdn306.raxcdn.com </code>as <code>ServerAlias </code>for Apache or as <code>Server_Name</code> for Nginx.</li>
+</ol>
+
+<ul>
+	<li>
+	<p>After you have configured the website and before you update your DNS records, test that the web server is responding by using a cURL statement similar to the following one:</p>
+
+	<pre>
+curl -I&nbsp;-k&nbsp;–H "Host:cdn.customer.com.cdn306.raxcdn.com"&nbsp;https://SERVER_IP/</pre>
+	The response should be&nbsp;<code>HTTP/1.1 200 OK</code>.<br />
+	&nbsp;
+	<p><img alt="" border="2" height="528" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-14%20at%203.54.30%20PM.png" width="552" />&nbsp;&nbsp;&nbsp;</p>
+	</li>
+	<li>Click <strong>Close</strong> to close this box and open a page with all the details about the new service.<br />
+	<br />
+	<img alt="" border="2" height="845" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%201.43.03%20PM.png" width="667" /><br />
+	<br />
+	&nbsp;</li>
+	<li>
+	<p>On this page, <a href="https://www.rackspace.com/knowledge_center/article/add-and-manage-domains-in-rackspace-cdn">add and manage your domains</a> and define the following optional rules:</p>
+
+	<p><strong>Note</strong>: The <strong>Actions</strong> menu on the top right side of the page enables the actions for managing your service, which are described in <a href="https://www.rackspace.com/knowledge_center/article/rackspace-cdn-user-guide">Section 3. Manage a CDN Service</a>.<br />
+	<br />
+	<a href="https://www.rackspace.com/knowledge_center/article/access-rackspace-cdn">&lt; Access Rackspace CDN</a>&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp; <a href="https://www.rackspace.com/knowledge_center/article/add-and-manage-domains-in-rackspace-cdn">Add and manage domains in Rackspace CDN &gt;</a></p>
+
+	<ul>
+		<li><a href="https://www.rackspace.com/knowledge_center/article/work-with-origins-and-origin-rules-in-rackspace-cdn">Origin rules</a></li>
+		<li><a href="https://www.rackspace.com/knowledge_center/article/create-and-manage-caching-rules-in-rackspace-cdn">Caching rules</a></li>
+		<li><a href="https://www.rackspace.com/knowledge_center/article/create-and-manage-restrictions-in-rackspace-cdn">Restrictions</a></li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>

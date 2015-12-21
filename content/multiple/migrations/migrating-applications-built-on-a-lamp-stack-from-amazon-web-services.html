@@ -1,0 +1,163 @@
+---
+node_id: 3586
+title: Migrating an Application Built on a LAMP Stack from Amazon Web Services
+permalink: article/migrating-applications-built-on-a-lamp-stack-from-amazon-web-services
+type: article
+created_date: '2013-07-02 17:57:09'
+created_by: RackKCAdmin
+last_modified_date: '2015-09-22 20:1517'
+last_modified_by: Mike Asthalter
+products: 'Cloud Hosting,Cloud Servers'
+categories: Migrations
+body_format: tinymce
+---
+
+<p>This article describes the migration of WordPress or other LAMP stack (Linux, Apache, MySQL, PHP) applications from Amazon Web Services (AWS) to the Rackspace Cloud. It takes an estimated 15 minutes to complete, if you follow the instructions step by step.</p>
+
+<p>These steps assume you have <a href="/knowledge_center/article/provisioning-cloud-resources-to-migrate-from-amazon-web-services" target="_blank">provisioned the Rackspace Cloud services</a> your application will require.</p>
+
+<p>The topology of the application in this scenario is presented in the following figure:</p>
+
+<p><img alt="" src="/knowledge_center/sites/default/files/field/image/4.1-1a.jpg" width="650" /></p>
+
+<h3>Prerequisites</h3>
+
+<ul>
+	<li>LAMP stack on AWS with root access or appropriate privileges</li>
+	<li>Valid and enabled account on Rackspace Cloud</li>
+</ul>
+
+<h3>Preparation</h3>
+
+<ul>
+	<li>Identify the resources to migrate, including application and database resources.</li>
+	<li>Create a list of all the necessary software packages that are installed on your EC2 instance other than the LAMP stack.</li>
+	<li>Create a list of all additional Amazon services that are being used in the application—for example, Simple Email Service (SES) for email or Relational Database Service (RDS) for database.</li>
+	<li>If you have not already, <a href="/knowledge_center/article/provisioning-cloud-services-to-migrate-from-amazon-web-services">create a Cloud Server instance</a> and any supporting Rackspace Cloud services.</li>
+</ul>
+
+<h3>Install software packages</h3>
+
+<p>After your <a href="/knowledge_center/article/provisioning-cloud-services-to-migrate-from-amazon-web-services">Cloud Server is set up</a>, install your LAMP stack and application. In this scenario, WordPress is the target application.</p>
+
+<ol>
+	<li>Log on to your server.</li>
+	<li>In a terminal, enter the following command:
+	<pre>
+sudo tasksel
+</pre>
+	</li>
+	<li>To install the application stack, select <strong>LAMP server</strong>.
+	<p><img alt="" src="/knowledge_center/sites/default/files/field/image/4.1-5.png" width="650" /></p>
+	</li>
+	<li>After the LAMP stack is installed, download and configure WordPress.
+	<pre>
+sudo apt-get update
+sudo apt-get install wordpress
+sudo ln -s /usr/share/wordpress /var/www/wordpress
+sudo bash /usr/share/doc/wordpress/examples/setup-mysql -n wordpress localhost
+sudo chown -R www-data /usr/share/wordpress
+</pre>
+	</li>
+	<li>(Optional) Install OpenStack Swift. If you will use Cloud Files to transfer your data, install the swift client to enable access from your server.
+	<pre>
+sudo apt-get install python-novaclient glance-client swift
+</pre>
+
+	<ol type="A">
+		<li>Set the necessary environment variables by running the following commands, substituting your Rackspace Cloud account username and API key:
+		<pre>
+export ST_USER=&lt;your-login-username&gt;
+export ST_KEY=&lt;your-API-key&gt;
+export ST_AUTH=https://identity.api.rackspacecloud.com/v1.0/
+</pre>
+
+		<p>You might want to define these variables in <strong>.bashrc</strong> or <strong>.bash_profile</strong>, then reload the file with the "source" command.</p>
+
+		<pre>
+source .bashrc
+</pre>
+		</li>
+		<li>Type <strong>swift list</strong> and ensure that you can see the container you've created to hold your data.</li>
+	</ol>
+	</li>
+</ol>
+
+<h3>Back up data from AWS to Rackspace Cloud Files</h3>
+
+<p>Retrieve your data from EC2. You can transfer the data directly via <a href="/knowledge_center/article/migrating-a-linux-server-from-the-command-line-stage-1" target="_blank">rsync</a> or sftp, or you can use the OpenStack Swift client to transfer your data to Cloud Files, and from there transfer to the Cloud Server.</p>
+
+<p>To use Cloud Files, follow these preparatory steps (for this example we'll use an existing container named "WordPress"):</p>
+
+<ol>
+	<li>Using SSH, connect to your EC2 instance.
+	<pre>
+ssh -i <em>your_private_key</em>.pem <em>user</em>@ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com
+</pre>
+	</li>
+	<li>Perform a database dump and back up your application and any other resources needed by the application (including logs and other directories of interest).
+	<pre>
+mysqldump -u&lt;dbusername&gt; -p --triggers --routines --databases wordpress | gzip &gt; ~/staging/db/wordpress.sql.gz
+sudo tar cvzf ~/staging/app/wordpress.tar.gz /usr/share/wordpress/*
+sudo tar cvzf ~/staging/app/apachelogs.tar.gz /var/log/apache2/*
+</pre>
+	</li>
+	<li>If you are using Cloud Files to transfer your files, use one of the following methods to perform the transfer. If you will transfer directly via rsync or sftp, skip to the final section of this article after the transfer.
+	<ul>
+		<li>Upload your archives to the Cloud Files container via the swift client.
+		<pre>
+swift upload WordPress wordpress.sql.gz
+swift upload WordPress wordpress.tar.gz
+swift upload WordPress apachelogs.tar.gz
+</pre>
+		</li>
+		<li>Upload your data into Cloud Files through the Cloud Control Panel.
+		<ol type="A">
+			<li>Open your container (<strong>Cloud Control Panel &gt; Files &gt; <em>containerName</em></strong>).</li>
+			<li>Click <strong>Upload Files</strong>.</li>
+			<li>Click <strong>Browse</strong>and select the files to upload.
+			<p><strong>Note:</strong> When you click the <strong>Browse</strong> button, you can select multiple files.</p>
+			</li>
+			<li>After you have selected the file or files, click <strong>Open</strong> or <strong>Select</strong> (depending on the browser and system).</li>
+			<li>Click <strong>Upload File</strong>.</li>
+		</ol>
+		</li>
+	</ul>
+	</li>
+</ol>
+
+<h3>Restore data from Cloud Files to Cloud Servers</h3>
+
+<p>If you uploaded your data to Cloud Files, transfer it to your Cloud Server with the following steps.</p>
+
+<ol>
+	<li>Using SSH, connect to the Cloud Servers instance by using the PublicNet URL and the root password.</li>
+	<li>Install and configure the Swift CLI as described in the "Install software packages" section.</li>
+	<li>Ensure that you can execute swift list and see the new container that you created in the results.</li>
+	<li>Download the database dump from the backup that you took in the "Back up data from AWS to Rackspace Cloud Files" section and restore it locally.
+	<pre>
+swift download WordPress wordpress.sql.gz
+gunzip &lt; wordpress.sql.gz | mysql -u &lt;dbusername&gt; -p
+</pre>
+	</li>
+	<li>Download the applications and data, and restore them.
+	<pre>
+sudo service apache2 stop #stop apache server
+swift download WordPress wordpress.tar.gz
+# make a backup of your existing wordpress directory
+sudo tar cvzf wordpress-bak.tar.gz /usr/share/wordpress/*
+# restore downloaded WordPress archive
+sudo tar xvzf wordpress.tar.gz /usr/share/wordpress
+</pre>
+	</li>
+</ol>
+
+<h3>Test your application</h3>
+
+<p>Access your newly migrated WordPress instance by opening a browser and typing:</p>
+
+<pre>
+http://<em>cloudServerIPAddress</em>/wp-admin
+</pre>
+
+<p>Before making your migrated application available to the public, we recommend <a href="/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services">weighing some post-migration considerations</a> like the security of your setup, monitoring its availability, and ensuring your data is regularly backed up.</p>

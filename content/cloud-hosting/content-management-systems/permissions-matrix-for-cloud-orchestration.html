@@ -1,0 +1,328 @@
+---
+node_id: 3888
+title: Permissions Matrix for Cloud Orchestration
+permalink: article/permissions-matrix-for-cloud-orchestration
+type: article
+created_date: '2014-02-05 18:21:44'
+created_by: renee.rendon
+last_modified_date: '2015-05-26 13:0822'
+last_modified_by: kyle.laffoon
+products: Cloud Hosting
+categories: Content Management Systems
+body_format: tinymce
+---
+
+<p>The&nbsp;following&nbsp;permissions matrix displays specific permissions for the roles in Cloud Orchestration. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported. &nbsp;</p>
+
+<p><strong><a href="http://docs.rackspace.com/">API Documentation</a></strong></p>
+
+<p><strong><a href="http://www.rackspace.com/knowledge_center/product-faq/cloud-deployments">Related Knowledge Center Articles</a></strong></p>
+
+<p><strong><a href="#orchestration">Cloud Orchestration Terminology</a></strong></p>
+
+<h3><strong>As of May, 2015&nbsp; &nbsp; &nbsp;</strong></h3>
+
+<table border="1" class="tftable" id="tfhover">
+	<tbody>
+		<tr>
+			<th colspan="2">CAPABILITY</th>
+			<th colspan="3">ROLE</th>
+			<th colspan="1">DESCRIPTION</th>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th>Method Name</th>
+			<th>API Action</th>
+			<th>Observer</th>
+			<th>Creator</th>
+			<th>Admin</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>STACK OPERATIONS</h3>
+
+			<p class="p1">Note:<span class="s1"> Orchestration users will need access to any products used in their templates</span>.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Create Stack</td>
+			<td>POST /stacks</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>Creates a stack.</td>
+		</tr>
+		<tr>
+			<td>List Stack Data&nbsp;</td>
+			<td>GET&nbsp;/stacks</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Lists active stacks.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Find Stack&nbsp;</td>
+			<td>GET&nbsp;/stacks/{stack_name}</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Finds the canonical URL for a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Get Stack Data</td>
+			<td>GET&nbsp;/stacks/{stack_name}/{stack_id}</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets data about a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Update Stack&nbsp;</td>
+			<td>PUT&nbsp;/stacks/{stack_name}/{stack_id}</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Updates a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Delete Stack&nbsp;</td>
+			<td>DELETE&nbsp;/stacks/{stack_name}/{stack_id}</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Deletes a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Abandon Stack</td>
+			<td>
+			<p class="p1">DELETE /stacks/{stack_name}/{stack_id}/abandon &nbsp;</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Deletes a given stack (from orchestration system database) but leaves the stack resources intact.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Adopt Stack</td>
+			<td>
+			<p class="p1">POST /stacks&nbsp;</p>
+			</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">This operation is similar to the Create Stack operation.&nbsp;Along with stack create parameters, an additional body parameter 'adopt_stack_data' must be provided (adopt_stack_data type is String). Data returned by Abandon Stack could be provided as adopt_stack_data.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p class="p1">Preview Stack</p>
+			</td>
+			<td>
+			<p class="p1">POST /stacks/preview</p>
+			</td>
+			<td>&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Previews a stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>STACK RESOURCES</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>Find Stack Resources&nbsp;</td>
+			<td>GET&nbsp;/stacks/{stack_name}/resources</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Finds the canonical URL for the resource list of a specified&nbsp;stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>List Resources&nbsp;</td>
+			<td>GET&nbsp;/stacks/{stack_name}/{stack_id}/resources&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Lists resources in a stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Get Resource Data</td>
+			<td>
+			<p class="p1">GET /stacks/{stack_name}/{stack_id}/resources/{resource_name}</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets data for a specified resource.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>List Resource Types</td>
+			<td>GET&nbsp;/resource_types</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Lists the supported template resource types.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Get Resource Schema</td>
+			<td>
+			<p class="p1">GET /resource_types/{type_name}</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets the interface schema for a specified resource type.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Get Resource Template&nbsp;</td>
+			<td>
+			<p class="p1">GET /resource_types/{type_name}/template</p>
+
+			<p class="p1">&nbsp;</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets a template representation for a specified resource&nbsp;type.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>STACK EVENTS</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>Find Stack Events&nbsp;</td>
+			<td>
+			<p class="p1">GET /stacks/{stack_name}/events</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Finds the canonical URL for the event list of a specified&nbsp;stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>List Stack Events&nbsp;</td>
+			<td>
+			<p class="p1">GET /stacks/{stack_name}/{stack_id}/events</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Lists events for a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>List Resource Events&nbsp;</td>
+			<td>
+			<p class="p1">GET /stacks/{stack_name}/{stack_id}/resources/{resource_name}/events</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Lists events for a specified stack resource.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>Show Event&nbsp;</td>
+			<td>
+			<p class="p1">GET /stacks/{stack_name}/{stack_id}/resources/events/{event_id}</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets data about a specified event.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3>TEMPLATES</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>Get Stack Template&nbsp;</td>
+			<td>GET&nbsp;/stacks/{stack_name}/{stack_id}/template&nbsp;</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">Gets a template for a specified stack.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+			<h3 class="p1">BUILD INFORMATION</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p class="p1">Get Build Info</p>
+			</td>
+			<td>
+			<p class="p1">GET /build_info</p>
+			</td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td><img alt="" height="39" src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" /></td>
+			<td>
+			<p class="p1">&nbsp;</p>
+
+			<p class="p1">Gets information about the current heat build.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>&nbsp;</h2>
+
+<h2><a id="orchestration" name="orchestration"></a>Cloud Orchestration Terminology</h2>
+
+<p><strong>Template</strong></p>
+
+<p class="p1">A Cloud Orchestration template is a portable file, written in a user-readable language, that&nbsp;describes how a set of resources should be assembled and what software should be installed in&nbsp;order to produce a working deployment. The template specifies what resources should be used,&nbsp;what attributes can be set, and other parameters that are critical to the successful, repeatable&nbsp;automation of a specific application deployment.</p>
+
+<p><strong>Resource</strong></p>
+
+<p class="p1">A resource is a template artifact that represents some component of your desired architecture (a&nbsp;Nova server, a group of scaled servers, a Cinder volume, some configuration management system,&nbsp;and so forth).</p>
+
+<p><strong>Stack</strong></p>
+
+<p class="p1">A stack is a group of resources (servers, load balancers, databases, and so forth) combined to&nbsp;fulfill a useful purpose. Based on a template, Heat orchestration engine creates an instantiated set&nbsp;of resources (a stack) to run the application framework or component specified (in the template).&nbsp;A stack is a running instance of a template. The result of creating a stack is a deployment of the&nbsp;application framework or component.</p>
+
+<h2><a href="http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac">&lt; Permission Matrices for RBAC</a></h2>
+
+<p>&nbsp;</p>

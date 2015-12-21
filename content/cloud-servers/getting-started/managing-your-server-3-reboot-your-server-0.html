@@ -1,0 +1,87 @@
+---
+node_id: 1474
+title: Managing Your Server - Reboot Your Server
+permalink: article/managing-your-server-3-reboot-your-server-0
+type: article
+created_date: '2012-07-19 06:21:12'
+created_by: ari.liberman
+last_modified_date: '2015-09-29 15:4533'
+last_modified_by: catherine.richardson
+products: Cloud Servers
+categories: Getting Started
+body_format: tinymce
+---
+
+<p>You can reboot a server&nbsp;in one of two ways. A&nbsp;<em>soft reboot</em>&nbsp;uses the operating system's reboot process so that applications are shut down gracefully. A&nbsp;<em>hard reboot</em>&nbsp;halts the instance&nbsp;and&nbsp;then restarts it, similar to turning a computer off and then&nbsp;on.</p>
+
+<p>We recommend attempting a soft reboot of a server whenever possible, using a hard reboot only when the server is unresponsive.</p>
+
+<p>Note: You should ensure that critical services will start at reboot and that there are no tasks pending that could slow the reboot process. &nbsp;For more information for Linux servers, see&nbsp;<a href="/knowledge_center/node/4490">Prevent issues with Linux server reboots</a>.</p>
+
+<h2>Perform a soft reboot</h2>
+
+<p>To perform a soft reboot of a server, you must be logged in to the server&nbsp;using an account with superuser or administrator permissions.&nbsp;For information about logging in to a cloud server, see&nbsp;<a href="/knowledge_center/node/1513">Connect to a cloud server</a>.</p>
+
+<p><strong>Note</strong>: OS reboots, such as the <code> sudo reboot </code>shown below,&nbsp; do not trigger the FG2NG migration.</p>
+
+<p>For the command you should use to soft reboot your server, see the appropriate section for your server operating system:</p>
+
+<h3>Linux</h3>
+
+<pre>
+sudo reboot
+</pre>
+
+<h3>Windows</h3>
+
+<p>Issue a restart request by clicking <strong>Start</strong> &gt; <strong>Shut down</strong>.</p>
+
+<p>Alternatively, you can initiate a soft reboot from the command line by entering the following command:</p>
+
+<pre>
+shutdown /r</pre>
+
+<h2>Perform a hard reboot</h2>
+
+<p>If your server is not responding or&nbsp;was shut down manually,&nbsp;perform&nbsp;a hard reboot via the Cloud Control Panel&nbsp;to simulate power cycling the server.</p>
+
+<p><strong>Warning:</strong> A&nbsp;hard reboot does not shut down applications gracefully and&nbsp;can result in data loss.</p>
+
+<ol>
+	<li>Log in to the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>.</li>
+	<li>On the Servers page, click the gear icon next to the server that you want&nbsp;to reboot.</li>
+	<li>Select<strong>&nbsp;Reboot</strong>.
+	<p><img alt="" border="1" height="228" src="/knowledge_center/sites/default/files/field/image/rebootmenu_0.png" width="227" /></p>
+	</li>
+	<li>In the pop-up dialog box, click <strong>Reboot Server</strong>.
+	<p><img alt="" border="1" height="187" src="/knowledge_center/sites/default/files/field/image/Hard%20Reboot_0.png" width="478" /></p>
+	</li>
+</ol>
+
+<p>The server status on the Servers page updates while&nbsp;the server is rebooting. When the reboot is complete, check your server to confirm that&nbsp;everything is functioning as expected.</p>
+
+<h2>Halt&nbsp;a server</h2>
+
+<p>You can also shut down a server to put it in a <em>halted </em>state, in which&nbsp;no<span>&nbsp;operating systems or&nbsp;</span>applications&nbsp;are running. Restoring a halted server to operation requires you to perform a hard reboot using the Cloud Control Panel.</p>
+
+<p><span>To halt a server, you need remote access to the server using an account with su</span><span>peruser or administrator permissions.&nbsp;</span><span>For information about logging in to a cloud server, see&nbsp;</span><a href="/knowledge_center/node/1513">Connect to a cloud server</a><span>.</span></p>
+
+<p><strong>Note:</strong> Shutting down a server does <em>not</em>&nbsp;stop billing for the server, because resources are still allocated to the server instance. Billing for a server stops only when&nbsp;the server is deleted.</p>
+
+<h3>Linux</h3>
+
+<p>Log in as a sudo-enabled user via SSH and enter the following command:</p>
+
+<pre>
+sudo shutdown -h now</pre>
+
+<p>The command&nbsp;shuts&nbsp;down the serverm and you must perform a hard reboot to restart the server.</p>
+
+<h3>Windows</h3>
+
+<p>Log in to your server and issue a shutdown&nbsp;request by clicking&nbsp;<strong>Start</strong>&nbsp;&gt;&nbsp;<strong>Shut down</strong>.</p>
+
+<p>Alternatively, you can issue a shutdown from the command line by entering the following command:</p>
+
+<pre>
+shutdown /s</pre>

@@ -1,0 +1,378 @@
+---
+node_id: 268
+title: Basic Cloud Server Security
+permalink: article/rackspace-cloud-essentials-3-basic-cloud-server-security
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-05-22 16:0154'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: '- Getting Started -,Ubuntu/Debian Linux,CentOS/Fedora/Red Hat Enterprise Linux,SSH,Linux IPTables,Uncategorized'
+body_format: tinymce
+---
+
+<p><strong>Note</strong>: These are the basics of connecting to a Linux Cloud Server and setting up security. &nbsp;In the next articles we will show you how to complete these steps for a <a href="http://www.rackspace.com/knowledge_center/index.php/Logging_into_your_Server_via_RDP"> Windows Cloud Server</a>.</p>
+
+<p>Although Rackspace Cloud has taken steps to make your default Cloud Server image as secure as possible, the first line of defense lies in the hands of you, our customer. &nbsp;Follow these steps immediately after creating your Cloud Server to help protect the integrity of your data. (<strong>Note:</strong> The commands in this article are meant for Ubuntu. &nbsp;Small modifications may be required for other distributions.)</p>
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<h2>Contents</h2>
+
+			<ul>
+				<li class="toclevel-1"><a href="#Log_in">1 Log in</a></li>
+				<li class="toclevel-1"><a href="#User_administration">2 User administration</a></li>
+				<li class="toclevel-1"><a href="#SSH_keygen">3 SSH keygen</a></li>
+				<li class="toclevel-1"><a href="#SSH_copy">4 SSH copy</a></li>
+				<li class="toclevel-1"><a href="#SSH_Permissions">5 SSH Permissions</a></li>
+				<li class="toclevel-1"><a href="#SSH_config">6 SSH config</a></li>
+				<li class="toclevel-1"><a href="#iptables">7 iptables&nbsp;in Ubuntu</a></li>
+				<li class="toclevel-1"><a href="#iptablesRH">8 iptables in RedHat</a></li>
+				<li class="toclevel-1"><a href="#If_you.27re_locked_out...">9&nbsp;If you're locked out...</a></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="Log_in" name="Log_in"></a></p>
+
+<h2>Log in</h2>
+
+<p>As soon as you have your IP address and password for your Cloud Server, login via SSH:</p>
+
+<pre>
+ssh root@123.45.67.890
+</pre>
+
+<p>If you rebuilt your Cloud Server, you may get a message informing you that the "remote host identification has changed".</p>
+
+<p>When logging into a Cloud Server via SSH, we learned about the security features of <a href="http://www.rackspace.com/knowledge_center/checking-ssh-host-fingerprint-with-the-web-console"> matching the remote host with known keys</a>. &nbsp;When you rebuild a Cloud Server, the remote host key changes. &nbsp;As such, your computer thinks there is something dodgy going on.</p>
+
+<p>All you need to do is remove the older entry for the Cloud Server IP:</p>
+
+<p>On your <em>local</em> computer, edit the SSH known_hosts file and remove any entries that point to your Cloud Server IP address.</p>
+
+<pre>
+nano ~/.ssh/known_hosts
+</pre>
+
+<p>If you are not using Linux or a Mac on your local computer, the location of the known_hosts file will differ. &nbsp;Please refer to your own OS for details of where this file is kept.</p>
+
+<p><a id="User_administration" name="User_administration"></a></p>
+
+<h2>User administration</h2>
+
+<p>Once logged in to the Cloud Server, immediately change your root password to one of your choosing.</p>
+
+<pre>
+passwd
+</pre>
+
+<p>Add an admin user (we've used the name demo here but any name will do).</p>
+
+<pre>
+adduser demo
+</pre>
+
+<p>Best security practices for system administration state that you should not operate on your system as the root user (this initial setup is the only time you would need to log in as root). &nbsp;As such, the main administration user (demo) needs to have <code>sudo</code> (Super User) privileges so they can, with a password, complete administrative tasks.</p>
+
+<p>To configure this, use the <code>visudo</code> command, which invokes the 'nano' editor by default in Ubuntu:</p>
+
+<pre>
+visudo
+</pre>
+
+<p>At the end of the file add:</p>
+
+<pre>
+demo   ALL=(ALL) ALL
+</pre>
+
+<p>When you are finished, press the key combination <code>Ctrl-X</code> to exit, press '<code>y</code>' to confirm your saving the changes, and press the Enter key to save as the indicated file, '<code>/etc/sudoers.tmp</code>' .</p>
+
+<p>NOTE: You may find that while working in the nano editor, the backspace/delete key works backwards, deleting characters in front of the cursor rather than behind it. &nbsp;This can be resolved by editing the '/etc/nanorc' file (with nano, for example) and either uncommenting or adding the line:</p>
+
+<pre>
+set rebinddelete
+</pre>
+
+<p>The corrected behavior will take effect after the file has been saved and nano has been opened again.</p>
+
+<p><a id="SSH_keygen" name="SSH_keygen"></a></p>
+
+<h2>SSH keygen</h2>
+
+<p>One effective way of securing SSH access to your cloud server is to use a <strong>public/private</strong> key. &nbsp;This means that a 'public' key is placed on the server and the 'private' key is on your local workstation. This makes it impossible for someone to log in using just a password - they must have the private key. &nbsp;This consists of 3 basic steps:&nbsp;create the key on your local workstation, copy the public key to the Cloud Server, and set the correct permissions for the key.</p>
+
+<p>The first step is to create a folder to hold your keys. On your LOCAL workstation:</p>
+
+<pre>
+mkdir ~/.ssh
+</pre>
+
+<p>That's assuming you use Linux or a Mac and the folder does not exist. &nbsp;Follow the link to read a detailed article for <a href="http://www.rackspace.com/knowledge_center/index.php/SSH_-_PuTTYgen"> key generation using Putty for Windows</a>.</p>
+
+<p>To create the ssh keys, on your <em>local</em> workstation enter:</p>
+
+<pre>
+ssh-keygen -t rsa
+</pre>
+
+<p>If you do not want a passphrase then just press enter when prompted.</p>
+
+<p>That created two files in the .ssh directory: id_rsa and id_rsa.pub. The pub file holds the public key. This is the file that is placed on the Cloud Server.</p>
+
+<p>The other file is your private key. Never show, give away or keep this file on a public computer.</p>
+
+<p><a id="SSH_copy" name="SSH_copy"></a></p>
+
+<h2>SSH copy</h2>
+
+<p>Now we need to get the public key file onto the Cloud Server.</p>
+
+<p>We'll use the '<code>scp</code>' (secure copy) command for this as it is an easy and secure means of transferring files.</p>
+
+<p>Still on your <em>local</em> workstation enter this command:</p>
+
+<pre>
+scp ~/.ssh/id_rsa.pub demo@123.45.67.890:/home/demo/
+</pre>
+
+<p>When prompted, enter the demo user password.</p>
+
+<p>Change the IP address to your cloud server and the location to your admin user's home directory (remember the admin user in this example is called demo).</p>
+
+<p><a id="SSH_Permissions" name="SSH_Permissions"></a></p>
+
+<h2>SSH Permissions</h2>
+
+<p>OK, so now we've created the public/private keys and we've copied the public key onto the Cloud Server.</p>
+
+<p>Now we need to sort out a few permissions for the ssh key.</p>
+
+<p>On your Cloud Server, create a directory called .ssh in the 'demo' user's home folder and move the pub key into it.</p>
+
+<pre>
+mkdir /home/demo/.ssh
+mv /home/demo/id_rsa.pub /home/demo/.ssh/authorized_keys
+</pre>
+
+<p>Now we can set the correct permissions on the key:</p>
+
+<pre>
+chown -R demo:demo /home/demo/.ssh
+chmod 700 /home/demo/.ssh
+chmod 600 /home/demo/.ssh/authorized_keys
+</pre>
+
+<p>Again, change the 'demo' user and group to your admin user and group.</p>
+
+<p>It may seem a long set of steps but once you have done it once you can see the order of things: create the key on your local workstation, copy the public key to the Cloud Server, and set the correct permissions for the key.</p>
+
+<p><a id="SSH_config" name="SSH_config"></a></p>
+
+<h2>SSH config</h2>
+
+<p><strong>Note:&nbsp;</strong><em>If you have Cloud Servers with a Managed Operations, do not change the default SSH configuration by disabling port 22 because our automation uses this port for access to your server. &nbsp;If your server does not have Managed Operations, you can choose to implement the following optional security safeguard.</em></p>
+
+<p>Because keeping the SSH service on the default port of 22 makes it an easier target, we'll change the default SSH configuration to make it more secure:</p>
+
+<pre>
+nano /etc/ssh/sshd_config
+</pre>
+
+<p>The main things to change, check, and add are:</p>
+
+<pre>
+Port 22                           &lt;--- <strong>optionally change to a port of your choosing</strong>
+Protocol 2
+PermitRootLogin no
+PasswordAuthentication no
+UseDNS no
+AllowUsers demo
+</pre>
+
+<p>Note that you should not change the ssh port number if your server has a Managed Operations or if you're using RackConnect. &nbsp;Turning off root logins for ssh is recommended for most servers, but for RackConnect don't disable root logins right after server creation (as it will be used by RackConnect for the initial server setup).</p>
+
+<p>PasswordAuthentication has been turned off as we setup the public/private key earlier. &nbsp;If you intend to access your Cloud Server from different computers, you may want leave PasswordAuthentication set to yes. Only use the private key if the local computer is secure (i.e. don't put the private key on a work computer).</p>
+
+<p>Note that we haven't enabled the new settings yet - we need to create a simple firewall using <code>iptables</code>&nbsp;before it's safe to restart ssh using the new port.</p>
+
+<p>That's worth emphasizing: &nbsp;<strong>Do not restart ssh yet.</strong></p>
+
+<p><a id="iptables" name="iptables"></a></p>
+
+<h2>iptables in Ubuntu</h2>
+
+<p>The utility called iptables is the default firewall for Linux systems. &nbsp;It works by refusing to allow connections to ports or services that you specify.</p>
+
+<p>The next thing is to set up iptables so that you have a more secure installation while allowing the server to run the services that it needs to run. &nbsp;</p>
+
+<p>To start with, we're going to have three ports open: <strong>ssh</strong>, <strong>http</strong>, and <strong>https</strong>.</p>
+
+<p>We're going to create two files, <code>/etc/iptables.test.rules</code> and <code>/etc/iptables.up.rules</code>. The first is a temporary (test) set of rules and the second the 'permanent' set of rules (this is the one iptables will use when starting up after a reboot for example).</p>
+
+<p>Note that we are logged in as the root user. &nbsp;This is the only time we will log in as the root user. &nbsp;If you are completing this step at a later date using the admin user, you will need to use 'sudo' in front of the commands.</p>
+
+<p>Now let's see what's running at the moment:</p>
+
+<pre>
+iptables -L
+</pre>
+
+<p>You will see something similar to this:</p>
+
+<pre>
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+</pre>
+
+<p>What this tells us is that we are accepting anything from anyone on any port and allowing anything to happen.</p>
+
+<p>Some think that this is not dangerous if there are no services running on the server, and it doesn't matter that all ports are open. &nbsp;We disagree. &nbsp;If connections to unused (and popular) ports are blocked or dropped, then the vast majority of malicious intruders will move on to another machine where ports are accepting connections. &nbsp;It only takes a few minutes to set up a firewall - is it really worth not doing?</p>
+
+<p>To build the firewall, create the file <code>/etc/iptables.test.rules</code> and add some rules. &nbsp;If you, or another admin user for this Cloud Server, have worked through these steps previously, this file may not be empty:</p>
+
+<pre>
+nano /etc/iptables.test.rules
+</pre>
+
+<p>You can change and add ports as you see fit (see <a href="/knowledge_center/article/introduction-to-iptables">Introduction to iptables</a> for additional information on this).</p>
+
+<p>Defined your rules? &nbsp;Good. &nbsp;Then lets apply those rules to our server:</p>
+
+<pre>
+iptables-restore &lt; /etc/iptables.test.rules
+</pre>
+
+<p>Let's see if there is any difference:</p>
+
+<pre>
+iptables -L
+</pre>
+
+<p>Notice the change? (If there is no change in the output, you did something wrong and should try again from the start).</p>
+
+<p>Have a look at the rules and see exactly what is being accepted, rejected and dropped. Once you are happy with the rules, it's time to save your rules permanently:</p>
+
+<pre>
+iptables-save &gt; /etc/iptables.up.rules
+</pre>
+
+<h4>Add a networking script</h4>
+
+<p>Now we need to ensure that the iptables rules are applied when we reboot the server. &nbsp;If the server was rebooted before this step the changes would be lost and the server would revert to allowing everything from everywhere.</p>
+
+<p>We'll add a small script that the system will run when your network interfaces are started. Create the file by running:</p>
+
+<pre>
+nano /etc/network/if-pre-up.d/iptables</pre>
+
+<p>Add the following lines to the new file:</p>
+
+<pre>
+    #!/bin/sh
+    /sbin/iptables-restore &lt; /etc/iptables.up.rules
+</pre>
+
+<p>Save your changes, and then make the new script executable:</p>
+
+<pre>
+chmod +x /etc/network/if-pre-up.d/iptables</pre>
+
+<p>That should ensure that whenever your network interfaces are brought up (usually just at boot time), the firewall will be too.</p>
+
+<h2><a id="iptablesRH" name="iptablesRH"></a>iptables in Red Hat</h2>
+
+<p>If you are using a Red Hat distribution, iptables works a little differently. &nbsp;Using the commands below, you can change your iptables ruleset directly from the command line.</p>
+
+<h4>HTTP - Port 80</h4>
+
+<p>Use the following command to open port 80 for HTTP (web) traffic in your iptables firewall:</p>
+
+<pre>
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport http -j ACCEPT
+</pre>
+
+<h4>HTTPS/SSL - Port 443</h4>
+
+<p>Use the following command to open port 443 for Secure HTTP traffic:</p>
+
+<pre>
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport https -j ACCEPT
+</pre>
+
+<h4>SSH - Port 22</h4>
+
+<p>Though port 22 is open by default to allow you to SSH to your server after it is built, this command shows you how you would open port 22:</p>
+
+<pre>
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport ssh -j ACCEPT
+</pre>
+
+<h4>FTP - Port 21</h4>
+
+<p>FTP is a common service for file transfer, but it is largely obsolete due to the fact that it is not a secure protocol and we strongly recommend using a secure file transfer protocol like vsftpd. &nbsp;If you absolutely have to use FTP, use these commands to open the default port of 21.</p>
+
+<pre>
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport ftp -j ACCEPT
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport ftp-data -j ACCEPT
+</pre>
+
+<h4>MySQL - Port 3306</h4>
+
+<p>If you need to make a remote connection to your MySQL database from another server, you will need to open port 3306 in iptables.</p>
+
+<pre>
+    # sudo /sbin/iptables -I RH-Firewall-1-INPUT 1 -p tcp --dport mysql -j ACCEPT
+</pre>
+
+<h4>Saving Your Rules</h4>
+
+<p>Use the following command to save all the rules you’ve created. &nbsp;If not saved before your server is rebooted, the iptables ruleset will revert to the default ruleset blocking all traffic except on port 22!</p>
+
+<pre>
+    # sudo /sbin/service iptables save
+</pre>
+
+<h4>Restarting iptables</h4>
+
+<p>Your changes to iptables will not take effect until you save your rules, and then restart the iptables service. &nbsp;Remember, if you restart iptables before saving your rules, iptables will revert to the default ruleset!</p>
+
+<pre>
+    # sudo /sbin/service iptables restart
+</pre>
+
+<p><a id="If_you.27re_locked_out..." name="If_you.27re_locked_out..."></a></p>
+
+<h2>Restarting ssh</h2>
+
+<p>Now we'll restart the ssh service. &nbsp;<strong>Make sure you stay logged in while you restart ssh and test it with a new connection.</strong> &nbsp;That way if something goes wrong you can troubleshoot it more easily.</p>
+
+<p>On most distributions the service is "sshd", and you restart it with the command:</p>
+
+<pre>
+    # sudo service sshd restart
+</pre>
+
+<p>On Ubuntu and some other distributions it's called "ssh", and is restarted with a similar command:</p>
+
+<pre>
+    # sudo service ssh restart
+</pre>
+
+<p>If you have trouble making a new connection after restarting ssh, check the symptoms to see what may be wrong. &nbsp;If the connection times out, there may be a problem with the iptables config. &nbsp;If you get a warning about a private key, your key may not be installed on the server properly (check for extra linebreaks or characters that were missed in a copy and paste operation). &nbsp;If you've been rebuilding the server then you may need to <a href="http://www.rackspace.com/knowledge_center/checking-ssh-host-fingerprint-with-the-web-console"> remove the host key from your known hosts file</a> before you can make a connection.</p>
+
+<h2>If you're locked out...</h2>
+
+<p>The incorrect configuration of SSH, sudo and/or iptables could cause you to be locked out of your system. &nbsp;If this occurs, please log into the The Rackspace Cloud Control Panel and use the Web Console or Rescue Mode to repair the configurations.</p>

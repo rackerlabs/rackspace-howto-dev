@@ -1,0 +1,264 @@
+---
+node_id: 4769
+title: Working with alarms
+permalink: article/working-with-alarms
+type: article
+created_date: '2015-07-31 18:23:21'
+created_by: constanze.kratel
+last_modified_date: '2015-08-27 22:0425'
+last_modified_by: constanze.kratel
+products: Rackspace Intelligence
+categories: General
+body_format: tinymce
+---
+
+<p>Rackspace Intelligence provides a wizard that guides you through the process of creating an alarm for a check on an entity. Rackspace Intelligence supports the following alarm types:</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col">Alarm type</th>
+			<th scope="col">Alarm name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>remote.http</td>
+			<td>Body match - string found</td>
+		</tr>
+		<tr>
+			<td>remote.http</td>
+			<td>Body match - string not found</td>
+		</tr>
+		<tr>
+			<td>remote.http</td>
+			<td>Connection time</td>
+		</tr>
+		<tr>
+			<td>remote.http</td>
+			<td>Status code</td>
+		</tr>
+		<tr>
+			<td>remote.http</td>
+			<td>SSL certificate expiration time</td>
+		</tr>
+		<tr>
+			<td>remote.dns</td>
+			<td>DNS record address match</td>
+		</tr>
+		<tr>
+			<td>remote.ssh</td>
+			<td>SSH fingerprint match</td>
+		</tr>
+		<tr>
+			<td>remote.ping</td>
+			<td>Ping packet loss</td>
+		</tr>
+		<tr>
+			<td>remote.tcp</td>
+			<td>Connection time</td>
+		</tr>
+		<tr>
+			<td>remote.dns</td>
+			<td>SPF TXT record</td>
+		</tr>
+		<tr>
+			<td>agent.cpu</td>
+			<td>CPU usage</td>
+		</tr>
+		<tr>
+			<td>agent.memory</td>
+			<td>Memory usage</td>
+		</tr>
+		<tr>
+			<td>agent.filesystem</td>
+			<td>Filesystem usage</td>
+		</tr>
+		<tr>
+			<td>agent.load_average</td>
+			<td>High Load Average</td>
+		</tr>
+		<tr>
+			<td>agent.network</td>
+			<td>Network transmit rate</td>
+		</tr>
+		<tr>
+			<td>agent.network</td>
+			<td>Network receive rate</td>
+		</tr>
+		<tr>
+			<td>agent.mysql</td>
+			<td>Connected threads</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Before you can create an alarm, you must have <a href="/knowledge_center/article/working-with-checks">created a check</a>.</p>
+
+<h2><a id="create-alarm" name="create-alarm"></a>Create an alarm</h2>
+
+<p>To create a new alarm, complete the following steps:</p>
+
+<ol>
+	<li>Log in to the <a href="http://intelligence.rackspace.com">Rackspace Intelligence interface</a>.</li>
+	<li>In the <strong>Monitoring</strong> section, click the entity for which you want to define an alarm.
+	<p><img alt="" border="2" height="506" src="/knowledge_center/sites/default/files/field/image/intelligence-alarms-entities-list.png" width="871" /></p>
+
+	<p>On the entity overview page, in the <strong>Monitoring Checks</strong> section, select the check for which you want to create the alarm and click on it.</p>
+
+	<p><img alt="" border="2" height="522" src="/knowledge_center/sites/default/files/field/image/intelligence-alarms-select-check.png" width="893" /></p>
+	</li>
+	<li>In the&nbsp;<strong>Monitoring Checks</strong>&nbsp;section of the entity details page, click the check for which you want to create the alarm.</li>
+	<li>On the&nbsp;check details&nbsp;page, scroll down to the&nbsp;<strong>Monitoring Alarms</strong>&nbsp;section, and click <strong>Create Alarm</strong>.<br />
+	Rackspace Intelligence automatically suggests the appropriate alarm for the check type that you select. For example, if you want to create an alarm for the CPU check type, Rackspace Intelligence automatically guides you through the steps for creating a CPU alarm.<br />
+	<strong>Note:</strong> If you want to create an alarm for an <a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html">agent check type</a>, you must install the Rackspace monitoring agent on the server. Rackspace Intelligence creates an alarm without the agent installed, but you cannot view any metrics for this alarm. See <a href="#createagenttypealarmwithoutagent">Creating an alarm for an agent check type without an agent installed.</a></li>
+	<li>In the&nbsp;<strong>Choose Alarm Type</strong>&nbsp;section, select&nbsp;the type of alarm, and then click&nbsp;<strong>Next Step</strong>.<br />
+	The wizard continues to guide you through the steps of setting up the alarm. If you selected&nbsp;<strong>Write your own alarm criteria (Advanced) </strong>instead, you are presented with an interface that lets you define a custom alarm script.</li>
+	<li>In the&nbsp;<strong>Alarm Details</strong>&nbsp;section of the next page, type a name for the alarm, and then select a notification plan from the <strong>Notification Plan</strong>&nbsp;list.</li>
+	<li>In the&nbsp;<strong>Alarm Settings</strong>&nbsp;section, define the criteria for your alarm. You must define a threshold for when a Warning is issued and a threshold for when the situation becomes Critical. For a CPU alarm, for example, the following settings are recommended:<br />
+	&nbsp;
+	<table border="1" cellpadding="1" cellspacing="1">
+		<thead>
+			<tr>
+				<th scope="col">Item</th>
+				<th scope="col">Recommended value</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Warning Threshold</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<td>Critical Threshold</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td>Consecutive Count</td>
+				<td>1</td>
+			</tr>
+		</tbody>
+	</table>
+	&nbsp;</li>
+	<li>Click <strong>Test Alarm</strong>.<br />
+	If you set the <strong>Warning Threshold</strong> and <strong>Critical Threshold</strong> values to a value that is greater than the <strong>Current value</strong> that is listed on the left side of the Alarm Settings section, the test alarm returns an <strong>OK</strong> result.<br />
+	If you set the <strong>Warning Threshold</strong> and <strong>Critical Threshold</strong> values to a value that is less than the <strong>Current value</strong>, clicking <strong>Test Alarm</strong> returns either a <strong>Warning</strong> or <strong>Critical</strong> result.<br />
+	<br />
+	<img alt="" border="2" height="533" src="/knowledge_center/sites/default/files/field/image/intelligence-alarms-test-critical.png" width="757" /></li>
+	<li>After you have tested your alarm, click <strong>Create Alarm</strong>.</li>
+</ol>
+
+<p>After the alarm is successfully created, a new alarm details page displays the alarm and shows that the alarm has been created.</p>
+
+<h2><a id="editalarm" name="editalarm"></a>Edit an alarm</h2>
+
+<p>To edit an alarm, click the&nbsp;<strong>Actions</strong>&nbsp;menu on the alarm details page.</p>
+
+<p>You can perform the following editing actions for alarms:</p>
+
+<ul>
+	<li><a href="#renamealarm">Rename an alarm</a></li>
+	<li><a href="#editnotificationplan">Edit a notification plan</a></li>
+	<li><a href="#editalarmcriteria">Edit the alarm criteria</a></li>
+	<li><a href="#deletealarm">Delete an alarm</a></li>
+</ul>
+
+<h3><a id="renamealarm" name="renamealarm"></a>Rename an alarm</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the alarm details page, select&nbsp;<strong>Rename Alarm</strong>.</li>
+	<li>In the Rename Alarm dialog box, type a new name in the&nbsp;<strong>Alarm Name</strong>&nbsp;box, and click&nbsp;<strong>Save</strong>.</li>
+</ol>
+
+<h3><a id="editnotificationplan" name="editnotificationplan"></a>Edit a notification plan</h3>
+
+<ol>
+	<li>From the <strong>Actions</strong> menu on the alarm details page, select <strong>Edit Notification Plan</strong>.</li>
+	<li>in the Edit Notification Plan dialog box, select a different notification plan from the <strong>Notification Plan</strong> list, and click <strong>Save</strong>.</li>
+</ol>
+
+<h3><a id="editalarmcriteria" name="editalarmcriteria"></a>Edit the alarm criteria</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the alarm details page, select&nbsp;<strong>Edit Criteria</strong>.<br />
+	The&nbsp;Edit Alarm Criteria dialog box opens in basic mode. If you want to edit the criteria in advanced mode, see the note at the end of this procedure.</li>
+	<li>Update any of the values for <strong>Warning Threshold</strong>, <strong>Critical Threshold</strong> and <strong>Consecutive Count</strong>.</li>
+	<li>Click <strong>Test Alarm</strong> to test the alarm, and then click <strong>Save</strong> to save the alarm.</li>
+</ol>
+
+<p><strong>Note: </strong>If you want to edit the script that was generated for the alarm, click the&nbsp;<strong>Edit in Advanced Mode</strong>&nbsp;link. On the&nbsp;<strong>Advanced Mode</strong>&nbsp;page, the alarm script that Rackspace Intelligence automatically generated is displayed. You can update the script by changing the values for your alarm criteria, or by adding new conditions. To view example criteria, click the arrow next to&nbsp;<strong>Help Guide and Example Criteria</strong>.</p>
+
+<p><strong>Important:</strong> If you update an alarm in advanced mode, you can no longer view the alarm criteria in basic mode.</p>
+
+<h3><a id="deletealarm" name="deletealarm"></a>Delete an alarm</h3>
+
+<ol>
+	<li>From the&nbsp;<strong>Actions</strong>&nbsp;menu on the alarm details page, select&nbsp;<strong>Delete</strong>.</li>
+	<li>In the <strong>Delete Alarm</strong> dialog box, click <strong>Delete</strong>.</li>
+</ol>
+
+<p>The alarm is deleted.</p>
+
+<h2>Create alarms for different check types</h2>
+
+<p>This section provides examples of how to use Rackspace Intelligence to create alarms for different check types.</p>
+
+<ul>
+	<li><a href="#createalarmforremotecheck">Create an alarm for a remote check type</a></li>
+	<li><a href="#createagenttypealarmwithagent">Create an alarm for an agent check type with an agent installed</a></li>
+	<li><a href="#createagenttypealarmwithoutagent">Create an alarm for an agent check type without an agent installed</a></li>
+</ul>
+
+<h3><a id="createalarmforremotecheck" name="createalarmforremotecheck"></a>Create an alarm for a remote check type</h3>
+
+<p>This example provides steps for creating an alarm for an HTTP check. This alarm is remote and does not require a monitoring agent to be installed. These steps assume that you already created an HTTP check.</p>
+
+<ol>
+	<li>On the&nbsp;<strong>Monitoring</strong>&nbsp;page, click on the entity for which you want to define an alarm.</li>
+	<li>In the&nbsp;<strong>Monitoring Checks</strong>&nbsp;section of the entity details page, click an HTTP check for which you want to create an alarm.</li>
+	<li>On the check details page, click&nbsp;<strong>Create Alarm</strong>.</li>
+	<li>In the&nbsp;<strong>Choose Alarm Type</strong>&nbsp;section of the&nbsp;Create HTTP&nbsp;Alarm page, select&nbsp;<strong>Connection time</strong>, and then click <strong>Next Step</strong>.</li>
+	<li>On the next page, in the&nbsp;<strong>Alarm Details</strong>&nbsp;section, type a name for the alarm and select a notification plan from the list.</li>
+	<li>In the&nbsp;Alarm Settings&nbsp;section, specify values for <strong>Warning Threshold</strong> and&nbsp;<strong>Critical Threshold</strong>. Use the value that is displayed for&nbsp;<strong>Current value</strong>&nbsp;on the left side of the section for guidance. To obtain a test result of&nbsp;OK, you must specify values that are greater than the current values for&nbsp;<strong>Warning Threshold</strong>&nbsp;and&nbsp;<strong>Critical Threshold</strong>.</li>
+	<li>Click&nbsp;<strong>Test Alarm</strong>&nbsp;to test the alarm.<br />
+	<strong>Note:&nbsp;</strong>If your warning threshold is less than the value that is displayed for the current value, you receive a<strong> Warning</strong>&nbsp;result when you test the alarm. If you click&nbsp;<strong>Create Alarm</strong>&nbsp;after&nbsp;receiving a test result of type&nbsp;<strong>Warning</strong>&nbsp;or<strong> Critical</strong>, a warning message appears. You can still create the alarm, but creating the alarm will trigger an alert that is associated with your selected notification plan. If the current value is less than the values that you have specified for&nbsp;<strong>Warning Threshold</strong> and&nbsp;<strong>Critical Threshold</strong>, you receive an&nbsp;<strong>OK</strong>&nbsp;result when you click&nbsp;<strong>Test Alarm</strong>.</li>
+	<li>After you have tested your alarm, click&nbsp;<strong>Create Alarm</strong>.</li>
+</ol>
+
+<p>The new alarm is displayed on the alarm details page.</p>
+
+<h3><a id="createagenttypealarmwithagent" name="createagenttypealarmwithagent"></a>Create an alarm for an agent check type with an agent installed</h3>
+
+<p>This example provides steps for creating an alarm for a file system check. This alarm is an agent-type alarm and requires a monitoring agent to be installed. These steps assume that you already created a file system check.</p>
+
+<ol>
+	<li>On the&nbsp;<strong>Monitoring</strong>&nbsp;page, click on the entity for which you want to define an alarm.</li>
+	<li>In the&nbsp;<strong>Monitoring Checks</strong>&nbsp;section of the entity details page, click a file system check for which you want to create an alarm.</li>
+	<li>On the check details page, click&nbsp;<strong>Create Alarm</strong>.</li>
+	<li>In the&nbsp;<strong>Choose Alarm Type</strong>&nbsp;section, select&nbsp;<strong>Filesystem usage</strong>, and then click&nbsp;<strong>Next Step</strong>.</li>
+	<li>On the next page, in the&nbsp;<strong>Alarm Details</strong>&nbsp;section, type a name for the alarm and select the appropriate notification plan.</li>
+	<li>In the&nbsp;<strong>Alarm Settings&nbsp;</strong>section, enter the appropriate values for&nbsp;<strong>Warning Threshold</strong>&nbsp;and&nbsp;<strong>Critical Threshold</strong>, and then click&nbsp;<strong>Test Alarm</strong>. To obtain a test result of OK, enter values that are greater than the&nbsp;<strong>Current value</strong>&nbsp;that is displayed on the left side of the section.</li>
+	<li>After you have successfully tested your alarm, click&nbsp;<strong>Create Alarm</strong>.<br />
+	<img alt="" border="2" height="581" src="/knowledge_center/sites/default/files/field/image/intelligence-alarms-filesystem-alarm-settings.png" width="850" /><br />
+	The new alarm is displayed on the alarm details page.</li>
+</ol>
+
+<h3><a id="createagenttypealarmwithoutagent" name="createagenttypealarmwithoutagent"></a>Create an alarm for an agent check type without an agent installed</h3>
+
+<p>This example provides steps for creating an alarm for a CPU check. This alarm is an agent-type alarm and requires a monitoring agent to be installed to generate metrics. In this example, however, the agent is not yet installed. The steps assume that you already created a CPU check.</p>
+
+<ol>
+	<li>On the&nbsp;<strong>Monitoring</strong>&nbsp;page, click on the entity for which you want to define an alarm.</li>
+	<li>In the&nbsp;<strong>Monitoring Checks</strong>&nbsp;section of the entity details page, click a CPU check for which you want to create an alarm.<br />
+	The check details page displays a warning that you need to have a monitoring agent installed to generate metrics.</li>
+	<li value="3">Click&nbsp;<strong>Create Alarm</strong>.</li>
+	<li>In the&nbsp;<strong>Choose Alarm Type</strong>&nbsp;section, select&nbsp;<strong>CPU usage</strong>, and then click&nbsp;<strong>Next Step</strong>.</li>
+	<li>On the next page, in the&nbsp;<strong>Alarm Details</strong>&nbsp;section, type a name for the alarm and select the appropriate notification plan.</li>
+	<li>In the&nbsp;<strong>Alarm Settings&nbsp;</strong>section, enter appropriate values for&nbsp;<strong>Warning Threshold</strong>&nbsp;and&nbsp;<strong>Critical Threshold</strong>.<br />
+	<strong>Note:</strong>&nbsp;No current value is displayed to use as a basis for defining your threshold. Rackspace Intelligence does not display a current value because no monitoring agent is installed. A warning message also appears explaining that Rackspace Intelligence cannot generate any metrics until a monitoring agent has been installed on the server. You can still create the alarm, but you must install an agent before you can use the alarm.</li>
+	<li>Click&nbsp;<strong>Create Alarm</strong>.<br />
+	A warning is displayed that you do not have a monitoring agent installed.</li>
+	<li>Click&nbsp;<strong>Create Alarm Anyway</strong>.</li>
+</ol>
+
+<p>The newly created alarm is displayed in the alarm details page. Because no monitoring agent is installed, no monitoring metrics are displayed.</p>

@@ -1,0 +1,142 @@
+---
+node_id: 2005
+title: Rackspace Monitoring Automation - Integrate Monitoring with Chef
+permalink: article/cloud-monitoring-automation-integrate-monitoring-with-chef
+type: article
+created_date: '2012-08-14 21:42:02'
+created_by: Rae D. Cabello
+last_modified_date: '2015-12-18 01:3617'
+last_modified_by: constanze.kratel
+products: Cloud Monitoring
+categories: Getting Started
+body_format: tinymce
+---
+
+<p>Do you leverage data center automation to build products faster? Do you want a seamless way to define thresholds? Do you want to leverage some of the easiest, most reliable technology to make monitoring a breeze?&nbsp;Learn how to leverage the power of a full featured/hosted monitoring system with Rackspace Monitoring!</p>
+
+<h3>How?</h3>
+
+<ul>
+	<li>Leverage all the primitives built as a lightweight resource in Chef. &nbsp;This means you have complete control</li>
+	<li>You’re in total control - We run the monitoring system; however, it’s a platform and this code bootstraps the integration. It’s up to you to define what you want to monitor and how you want to be alerted.</li>
+	<li>We dog food this internally - we’ll continue to improve this as we continue to find new and interesting ways to use it.</li>
+	<li>This is only the beginning - We’ll continue to improve this cookbook as Rackspace Monitoring grows in functionality.</li>
+</ul>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>What do I need to get started?</strong></p>
+
+<ul>
+	<li>Chef knowledge</li>
+	<li>Ruby knowledge</li>
+	<li>Desire to reduce the time to monitor your infrastructure</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3>Pre-requisites</h3>
+
+<p>Getting started requires downloading the cookbook. Right now the Rackspace Monitoring git repo is hosted on github, but it will be an official cookbook soon. Get the cookbook here: <a href="https://github.com/racker/cookbook-cloudmonitoring">https://github.com/racker/cookbook-cloudmonitoring.</a></p>
+
+<p>Install it into a chef repo and then you’re ready to get started.</p>
+
+<p><em>Note: If you are unfamiliar with chef I recommend reading the <a href="http://docs.opscode.com/#getting-started%20">Opscode Getting Started Guide</a>. &nbsp;This particular recipe uses data bags, read more about them here, that assumes a chef version greater than 0.8. &nbsp;Also make sure and brush up on knife and how it works.</em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Step 1: Create the initial encrypted data bag</strong></p>
+
+<p>In order to manage the Rackspace Monitoring API, authentication credentials need to be added to the node. There are various ways to handle this, this recipe uses the encrypted data bag approach.&nbsp;Create the following data bag with following initial values:</p>
+
+<pre>
+$ knife data bag create --secret-file &lt;secret-file&gt; rackspace cloud
+{ "id": "cloud", "username": "", "apikey": "", "region": "" }</pre>
+
+<p>Once created this will make it painless to use the recipes without having to include API key and Rackspace Cloud account username for every call. For information about how to find your API key, see <a href="http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key">View and reset your API key</a>.</p>
+
+<p><strong>Step 2: Add default recipe to the runlist</strong></p>
+
+<p>Next step is to add the cloud_monitoring::default recipe to the run list for the servers that will need monitoring. This identifies the servers that will interact with the Rackspace Monitoring API. It will also install all the gem dependencies needed to make calls with the Rackspace Monitoring Gem. Use the knife command to add the default recipe to the runlist:</p>
+
+<pre>
+$ knife node run_list add &lt;NODE&gt; cloud_monitoring::default</pre>
+
+<p>Chef’s runlist inheritance will also serve the same purpose. &nbsp;If for instance the cloud_monitoring::default recipe is applied to the production environment, then all production nodes will inherit the recipe.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Step 3: Configure the initial node setup</strong></p>
+
+<p>The approach on this cookbook focuses on flexibility for the user to use it as they please. These particular instructions will use the recipe in an opinionated way. As an example, the label of the entity will be the hostname. This is a recommendation on how to leverage this recipe, but not the only way.&nbsp;Creating an “Entity” is the first step of actually using the API from Chef.&nbsp;The Entity maps to the target of what you're monitoring.</p>
+
+<p>Entity in most cases represents a server, loadbalancer or website. However, there is some advanced flexibility but that is only used in rare cases. This use-case will highlight populating your chef nodes in Rackspace Monitoring.&nbsp;Learn more about all these concepts in the docs and specifically the Concepts section of the developer guide:</p>
+
+<pre>
+cloud_monitoring_entity "#{node.hostname}" do
+  ip_addresses        'default' =&gt; node[:ipaddress]
+  metadata            'environment' =&gt; 'dev', :more =&gt; 'meta data'
+  action :create
+end</pre>
+
+<p>Woohoo, upon a chef run, an entity with that label will be created, or if it exists it will be updated. &nbsp;Another important point, if the chef server ever goes away, the label of the entity will be matched up with hostname (in this case).</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Step 4: Create the first check</strong></p>
+
+<p>After creating an entity, this describes one or more checks for that target entity. It prescribes how often to poll a website, or which piece of HTML to perform a regular expression match against.&nbsp;The documentation goes into more depth in the Concepts section.&nbsp;Ping is the first check created in this guide, it is simple to configure and really straight forward:</p>
+
+<p>After performing a chef run, the Rackspace Monitoring API should begin pinging the specified entity. Since this snippet is using the target_alias feature, it points at the IP specified node[:ipaddress]. If that ever changes the check will automatically be updated. This is an important feature of the Rackspace Monitoring API:</p>
+
+<pre>
+cloud_monitoring_check  "ping" do
+  target_alias          'default'
+  type                  'remote.ping'
+  period                30
+  timeout               10
+  monitoring_zones_poll ['mzord']
+  action :create
+end</pre>
+
+<p><strong>&nbsp;</strong></p>
+
+<p><strong>Step 5: Create an alarm</strong></p>
+
+<p>An alarm describes how a user gets an alert based on a check. &nbsp;It matches the criteria to alert with a destination to send the notifications. The alarm leverages our Javascript-like language to create criteria based on metrics for a particular check. You can read in depth about the alarm language <"https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language">here</a>.&nbsp;</p>
+
+<p>We are going to create an Alarm for a ping either not returning (which would happen by default) or is below 80% or 95% on the number of returned pings.By default the remote.ping check sends out 5 pings and if 3 came back, it would be marked as CRITICAL, if 4 came back it would be WARNING, if 5 came back it would be marked as OK:</p>
+
+<pre>
+cloud_monitoring_alarm  "ping alarm" do
+  check_name            'ping'
+  example_id            'remote.ping_packet_loss'
+  notification_plan_id  'npTechnicalContactsEmail'
+  action :create
+end</pre>
+
+<p>Three important things are happening in this example.</p>
+
+<p>1.&nbsp;Since the entity recipe was placed before this stanza, it implicitly selects the entityId for this or any check in scope.</p>
+
+<p>2.&nbsp;npTechnicalContactsEmail is a default notification plan that sends to the technical contacts on the account, if there is none it sends to the primary contact on the account. If there is no one on the account, it sends the Rackspace Monitoring team an email, which will in turn file a ticket.</p>
+
+<p>3. This uses the alarm example API detailed here. This particular example uses the snippet below:</p>
+
+<pre>
+...
+    {
+        "id": "remote.ping_packet_loss",
+        "label": "Ping packet loss",
+        "description": "Alarm which returns WARNING if the packet loss is greater than 5% and CRITICAL if it's greater than 20%",
+        "check_type": "remote.ping",
+        "criteria": "if (metric['available'] &lt; 80) {\n  return CRITICAL, \"Packet loss is greater than 20%\"\n}\n\nif (metric['available'] &lt; 95) {\n  return WARNING, \"Packet loss is greater than 5%\"\n}\n\nreturn OK, \"Packet loss is normal\"\n",
+        "fields": []
+    }
+...</pre>
+
+<h3>&nbsp;</h3>
+
+<h3>Done!</h3>
+
+<p>That’s it. We now have monitoring for each server in your infrastructure with at least ping checking. As you add servers Rackspace Monitoring will automatically scale with you. As homework, work on adding more complex checks like SSH and HTTP. We also support CPU, Disk and other host-based metrics.</p>

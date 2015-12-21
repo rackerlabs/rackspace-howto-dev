@@ -1,0 +1,50 @@
+---
+node_id: 3286
+title: RackConnect Image Validation Scripts
+permalink: article/rackconnect-image-validation-scripts
+type: article
+created_date: '2013-02-01 19:50:38'
+created_by: russell.lambert
+last_modified_date: '2013-02-08 00:0711'
+last_modified_by: jered.heeschen
+products: RackConnect
+categories: 'Linux Tools,Windows Tools'
+body_format: tinymce
+---
+
+<p>You've built your base server and are about to take an image of it.&nbsp; If only there were some way to know whether the RackConnect portion of the build process would succeed before you spent the time necessary to create the image...</p><p>Don't worry; we've got you covered. Use the RackConnect Image Validation Scripts.</p><p>&nbsp;</p><h2>What are the RackConnect Image Validation Scripts?</h2><p>The RackConnect Image Validation Scripts are a pair of scripts - one for Windows Servers, one for Linux Servers - that look for signs of the most common issues that cause RackConnect automation to fail.&nbsp; They are designed to be run on a Cloud Server that will be used as a template for creating other servers.&nbsp; They won't necessarily find all possible issues with an image - you may still need a Racker to investigate - but they will find the issues we've identified as the most common causes of RackConnect build failures.</p><p>&nbsp;</p><h2>When should I use the scripts?</h2><p>The best time to run the scripts is after you have finished building your base server, at the last possible moment before you take a snapshot image of it.&nbsp; While you <em>can</em> use them as a diagnostic tool after a failure (assuming the failed server has network access or the appropriate script is pre-installed), their primary purpose is to detect possible issues with a server <em>before</em> it is used to build a template image.</p><p>&nbsp;</p><h2>Where can I find the scripts?</h2><p>The latest versions of the RackConnect Image Validation Scripts can be found at the following URLs:</p><table><tbody><tr><td><strong>Linux</strong></td><td><a href="http://scripts.rackconnect.rackspace.com/preflight.sh" target="_blank">http://scripts.rackconnect.rackspace.com/preflight.sh</a></td></tr><tr><td><strong>Windows</strong></td><td><a href="http://scripts.rackconnect.rackspace.com/preflight.hta" target="_blank">http://scripts.rackconnect.rackspace.com/preflight.hta</a></td></tr></tbody></table><p>&nbsp;</p><h2>How do I use the scripts?</h2><h3>Linux</h3><ol><li><p>Download the Linux validation script onto the target server.</p><pre>wget http://scripts.rackconnect.rackspace.com/preflight.sh
+</pre></li><li><p>Run the script.&nbsp; The script requires superuser privileges to run, so use sudo or run as root:</p><pre>sudo bash preflight.sh
+</pre><p>The output will vary slightly from server to server, depending on the OS and configuration. &nbsp;For example, if no DenyUsers SSH configuration directive is found, a single PASS line will be printed and no further DenyUser tests will be done.</p><p>If any of the tests result in failure, a brief synopsis of the problem will be given:</p><pre># sudo bash preflight.sh 
+02/01/13 01:23:45 PM UTC: BEGIN [LINUX] Rackspace RackConnect Image Validation Script Version 2.1.112
+
+### OS Detection ###
+  Detected OS type: Ubuntu
+
+### Root Permissions ###
+  [PASS] User is root: OK
+
+...snip...
+
+### SSH Daemon Config ###
+  [PASS] SSH listening on all IPv4 IPs: OK
+  [PASS] SSH listening on port 22: OK
+  [PASS] Protocol set to version 2: OK
+  [FAIL] Password or ChallengeResponse Authentication enabled: FAIL (One of these must be enabled)
+  [PASS] PermitRootLogin enabled: OK
+  [PASS] No DenyUsers configuration directive found.
+  [PASS] No AllowUsers configuration directive found.
+  [PASS] No DenyGroups configuration directive found.
+  [PASS] No AllowGroups configuration directive found.
+  [WARNING] WARNING: sshd_config file is newer than sshd process.  We recommend restarting sshd to ensure running config matches disk file.
+
+### Public HTTPS Connectivity ###
+  [PASS] Fetch test URL: OK
+02/01/13 01:23:47 PM UTC: END [LINUX] Rackspace RackConnect Image Validation Script Version 2.1.112
+</pre></li><li><p>Once you have identified any issues and corrected them, re-run the script.&nbsp; Once all tests pass you can safely create an image of the server.&nbsp; If you make changes to the server and need to re-image, re-run the validation script.&nbsp; Because the script makes no changes to the file system, it is safe to run as many times as you need.</p></li><li><strong>For advanced Linux users:&nbsp;</strong>To ease scripting, all warnings and failures are printed to stderr instead of stdout. This makes it easy to ignore the output of successful tests and just see those items that need attention by redirecting stdout to /dev/null. Note however that section headers are still printed to stdout, so you may still want the full script output if the context of a test is not immediately obvious:<pre># sudo bash preflight.sh 1&gt;/dev/null
+  [FAIL] Password or ChallengeResponse Authentication enabled: FAIL (One of these must be enabled)
+  [WARNING] WARNING: sshd_config file is newer than sshd process.  We recommend restarting sshd to ensure running config matches disk file.
+</pre><p>Additionally, the script will exit with a non-zero exit status if any tests fail.&nbsp; This makes it easy to call the validation script from another script and react to the results appropriately. &nbsp;Note that only failures will cause a non-zero exit; if a warning is issued without any test failures the script will still exit with a zero (successful) exit status.</p><pre># sudo bash preflight.sh 1&gt;/dev/null 2&gt;/dev/null &amp;&amp; echo "Success" || echo "A test failed."
+A test failed.
+</pre><p>Or, if there are no issues:</p><pre># sudo bash preflight.sh 1&gt;/dev/null 2&gt;/dev/null &amp;&amp; echo "Success" || echo "A test failed."
+Success
+</pre></li></ol><p>&nbsp;</p><h3>Windows</h3><ol><li><p>Download the Windows validation script onto the target server from the link provided at the beginning of this article.&nbsp; You do not have to do this as a user with Administrator rights, but it may be easier since you will need to run the script as a user with Administrator rights.</p></li><li>If you are using Internet Explorer to download the script and Enhanced Security is configured (the default for all Windows Server base images), you may be prompted that scripts.rackconnect.rackspace.com is not part of your Trusted Sites.&nbsp; If so, add the domain to your Trusted Sites and retry step 1.<p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-download2-1.png" alt="URL not in Trusted Sites dialog box; Clicking Add" width="550" /></p><p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-download2-2.png" alt="Add URL to Trusted Sites dialog box; Clicking Add" width="550" /></p></li><li><p>Save the script to disk.</p></li><li><p>Browse to where you saved the file (for Internet Explorer, this is probably your user's "Downloads" folder) and run the downloaded script.</p></li><li>When you are ready to run the pre-flight, click "Run Preflight".&nbsp; You may see a command prompt window pop up briefly and then disappear.&nbsp; This is normal behavior.<p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-start.png" alt="Preflight script start screen; Clicking Run Preflight" width="354" height="179" /></p></li><li>When the script has finished gathering data it will display a results report:<p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-fail.png" alt="Preflight results report, one error - Firewall ON: True" width="354" height="233" /></p><p>If there are any issues you can click the + icon to expand the item and display more detail:</p><p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-fail-expanded.png" alt="Preflight results report, Firewall error expanded" width="354" height="255" /></p></li><li>Once all of the issues have been resolved, repeat steps 4-5 until the script reports that all tests have passed:<p><img src="/knowledge_center/sites/default/files/field/image/winpreflight-success.png" alt="Preflight results report, all tests successful" width="354" height="233" /></p></li></ol><p>&nbsp;</p><h4>I went into Control Panel and disabled Windows Firewall for both Private and Public networks, but the script still says it's enabled!</h4><p>There are three Windows Firewall profiles (Domain, Private, and Public), but the Windows Firewall configuration utility available via Control Panel is only able to disable two of these (Public and Private).&nbsp; You can disable the third by performing the following steps:</p><ol><li><p>Open the "Windows Firewall with Advanced Security" utility under Start &gt; Administrative Tools &gt; Windows Firewall with Advanced Security.</p></li><li>The overview page that is displayed will show what Profiles Windows Firewall is still enabled for.&nbsp; Click the "Windows Firewall Properties" link.<p><img src="/knowledge_center/sites/default/files/field/image/winfirewall-overview.png" alt="Windows Firewall overview page; Clicking Windows Firewall Properties" width="550" /></p></li><li>From the Windows Firewall Properties page you can disable Windows Firewall for all three profiles.&nbsp; Choose "Off" for the "Firewall State" setting on the Domain Profile tab.&nbsp; Do the same for the Public and Private profiles if Windows Firewall is still enabled for either profile.<p><img src="/knowledge_center/sites/default/files/field/image/winfirewall-domainoff.png" alt="Windows Firewall properties; Domain Profile tab; Clicking Firewall state Off" width="408" height="452" /></p></li></ol>

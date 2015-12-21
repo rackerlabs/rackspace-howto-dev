@@ -1,0 +1,91 @@
+---
+node_id: 4215
+title: RackConnect v3.0 requirements
+permalink: article/rackconnect-v30-requirements
+type: article
+created_date: '2014-08-28 13:48:31'
+created_by: juan.perez
+last_modified_date: '2014-10-17 21:1548'
+last_modified_by: kyle.laffoon
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>Applies to</strong>: RackConnect v3.0</p>
+
+<p>The following table provides a detailed list of the requirements that must be met to implement RackConnect v3.0.</p>
+
+<table align="center" border="0">
+	<tbody>
+		<tr align="center">
+			<td colspan="2">
+			<h2>RackConnect v3.0 Requirements</h2>
+			</td>
+		</tr>
+		<tr align="center">
+			<td>
+			<h3><strong>Requirement</strong></h3>
+			</td>
+			<td>
+			<h3><strong>Details</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Cloud account</strong></td>
+			<td>
+			<ul>
+				<li>The cloud account that you want to use with RackConnect must be&nbsp;<em>linked</em>&nbsp;to your dedicated account. You can accomplish this in the <a href="https://my.rackspace.com/" target="_blank">MyRackspace Portal</a>.</li>
+				<li>This cloud account must also be&nbsp;<em>associated</em>&nbsp;with your RackConnect v3.0 configuration. You can accomplish this in the <a href="https://my.rackspace.com/" target="_blank">MyRackspace Portal</a>.</li>
+				<li>You can associate a single cloud account with multiple RackConnect v3.0 configurations, if each configuration is located in a different region.</li>
+				<li>You can have multiple cloud accounts associated with a RackConnect configuration.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Dedicated account</strong></td>
+			<td>
+			<ul>
+				<li>To use RackConnect v3.0, you must have a dedicated account with Rackspace.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Supported network device</strong></td>
+			<td>
+			<ul>
+				<li>You must have a supported network device in your dedicated account.</li>
+				<li>For a detailed list of the network devices currently supported by RackConnect v3.0 and their capabilities, see the article <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison" target="_blank">RackConnect Network Device Comparison</a>.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Supported region</strong></td>
+			<td>
+			<ul>
+				<li>Your devices must be deployed in a region supported by RackConnect v3.0. The regions supported, as of October 2014, are DFW, IAD, ORD, LON, HKG, and SYD.</li>
+				<li>You can have multiple RackConnect v3.0 configurations in multiple regions, but each configuration is an independent entity and cross-communication between configurations in different regions is not possible with RackConnect v3.0 (although, cross-communication between regions might be possible with a VPN solution).</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><strong>Cloud network</strong></td>
+			<td>
+			<p><strong>Important</strong>: You cannot create the cloud network for use with RackConnect v3.0 yourself, and any existing cloud networks will not work with RackConnect v3.0.&nbsp; Only cloud networks created by Rackspace during the RackConnect v3.0 implementation process work with RackConnect v3.0.</p>
+
+			<ul>
+				<li>Your cloud networks will be set up, configured, and associated with your configuration by Rackspace during the RackConnect v3.0 implementation process. RackConnect v3.0 supports up to 10 cloud networks. For details about Cloud Networks limitations, see the article, <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-limitations" target="_blank">RackConnect v3.0 Limitations</a>.</li>
+				<li>During the implementation process, you must provide the subnet (CIDR) and network segment name that you want to use with your cloud networks.</li>
+				<li>With RackConnect v3.0, &nbsp;multiple cloud networks can be associated with a single cloud account. However, to have RackConnect connectivity, the networks must be created by Rackspace. Please <a href="http://www.rackspace.com/knowledge_center/support" target="_blank">contact us</a> if you want to add additional cloud networks to your RackConnect v3.0 configuration.</li>
+				<li>Additionally, to have RackConnect v3.0 connectivity, any cloud servers that you build must be built with a RackConnect v3.0 associated cloud network.</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>If you have any questions, please reach out to us. Contact information is available on the <a href="http://www.rackspace.com/knowledge_center/support" target="_blank">Contact Us</a> page.</p>
+
+<p>&nbsp;</p>

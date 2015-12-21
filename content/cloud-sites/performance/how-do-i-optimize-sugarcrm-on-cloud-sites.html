@@ -1,0 +1,129 @@
+---
+node_id: 632
+title: How do I optimize SugarCRM on Cloud Sites?
+permalink: article/how-do-i-optimize-sugarcrm-on-cloud-sites
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-06-23 17:2415'
+last_modified_by: kelly.holcomb
+products: Cloud Sites
+categories: Performance
+body_format: tinymce
+---
+
+<p>
+	<strong>This guide is intended for advanced users.</strong>
+</p>
+<p>
+	For optimization techniques of any web application, The Rackspace Cloud highly recommends consulting the vendors of the application. However, SugarCRM does have detailed documentation on their <a href="http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki" title="http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki" class="external text">Support Wiki</a>, some of which we have made available here.
+</p>
+<table id="toc" class="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+				<div id="toctitle">
+					<h2>
+						Contents
+					</h2>
+				</div>
+				<ul>
+					<li class="toclevel-1">
+						<a href="#Quick_Guide"><span class="tocnumber">1</span> <span class="toctext">Quick Guide</span></a>
+						<ul>
+							<li class="toclevel-2">
+								<a href="#htaccess"><span class="tocnumber">1.1</span> <span class="toctext">.htaccess</span></a>
+							</li>
+							<li class="toclevel-2">
+								<a href="#config_overridephp"><span class="tocnumber">1.2</span> <span class="toctext">config_override.php</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="toclevel-1">
+						<a href="#Developer_Tools"><span class="tocnumber">2</span> <span class="toctext">Developer Tools</span></a>
+					</li>
+					<li class="toclevel-1">
+						<a href="#External_Links"><span class="tocnumber">3</span> <span class="toctext">External Links</span></a>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+	<a name="Quick_Guide" id="Quick_Guide"></a>
+<h2>
+	<span class="mw-headline">Quick Guide</span>
+</h2>
+<p>
+	Below is the quick guide to modifying your SugarCRM configuration for improved performance in the cloud.
+</p>
+	<a name="htaccess" id="htaccess"></a>
+<h3>
+	<span class="mw-headline">.htaccess</span>
+</h3>
+<p>
+	Add the following PHP configuration directives to your <em>.htaccess</em> file:
+</p>
+<pre>php_value memory_limit 80M
+php_value post_max_size 75M
+php_value upload_max_filesize 75M
+php_value max_execution_time 601
+php_value timeout 601
+</pre>
+<p>
+	The PHP5 section of your <em>.htaccess</em> should look something like the following example when done:
+</p>
+<pre># PHP 5, Apache 1 and 2.
+&lt;IfModule mod_php5.c&gt;
+php_value magic_quotes_gpc 0
+php_value register_globals 0
+php_value session.auto_start 0
+php_value mbstring.http_input pass
+php_value mbstring.http_output pass
+php_value mbstring.encoding_translation 0
+php_value memory_limit 80M
+php_value post_max_size 75M
+php_value upload_max_filesize 75M
+php_value max_execution_time 601
+php_value timeout 601
+&lt;/IfModule&gt;
+</pre>
+	<a name="config_overridephp" id="config_overridephp"></a>
+<h3>
+	<span class="mw-headline">config_override.php</span>
+</h3>
+<p>
+	<strong>The below configuration options should improve the performance of your SugarCRM installation, but may change the way some of the front-end looks.</strong> For a detailed explanation of the below configuration options, please see <a href="http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems" title="http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems" class="external text">SugarCRM's Performance Tweaks page</a>.
+</p>
+<p>
+	Add the following SugarCRM configuration options to your <em>config_override.php</em> file:
+</p>
+<pre>$sugar_config['disable_count_query'] = true;
+$sugar_config['disable_vcr'] = true;
+$sugar_config['hide_subpanels'] = true;
+$sugar_config['hide_subpanels_on_login'] = true;
+$sugar_config['save_query'] = 'populate_only';
+$sugar_config['verify_client_ip'] = false;
+</pre>
+	<a name="Developer_Tools" id="Developer_Tools"></a>
+<h2>
+	<span class="mw-headline">Developer Tools</span>
+</h2>
+<p>
+	The <a href="http://www.sugarforge.org/projects/sugardevtools/" title="http://www.sugarforge.org/projects/sugardevtools/" class="external text">SugarDev.net Developer Tools</a> also provide some performance options you may find useful.
+</p>
+	<a name="External_Links" id="External_Links"></a>
+<h2>
+	<span class="mw-headline">External Links</span>
+</h2>
+<ul>
+	<li>
+		<a href="http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki" title="http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki" class="external text">SugarCRM Support Wiki</a>
+	</li>
+	<li>
+		<a href="http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems" title="http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems" class="external text">SugarCRM Support Wiki: Performance Tweaks for Large Systems</a>
+	</li>
+	<li>
+		<a href="http://www.sugarforge.org/projects/sugardevtools/" title="http://www.sugarforge.org/projects/sugardevtools/" class="external text">SugarDev.net Developer Tools</a>
+	</li>
+</ul>

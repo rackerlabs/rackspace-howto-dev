@@ -1,0 +1,207 @@
+---
+node_id: 1975
+title: Rackspace Private Cloud Backup and Recovery
+permalink: article/rackspace-private-cloud-backup-and-recovery
+type: article
+created_date: '2012-08-13 19:19:12'
+created_by: Karin Levenstein
+last_modified_date: '2015-09-04 17:0701'
+last_modified_by: constanze.kratel
+products: Rackspace Private Cloud - OpenStack
+categories: Backups
+body_format: tinymce
+---
+
+<!--
+
+<p>This guide provides guidance for backup and recovery of a Rackspace Private Cloud installation.</p><dl><dt><span class="chapter"><a href="#introduction">1. Introduction</a></span></dt><dd><dl><dt><a href="#audience">Intended Audience</a></dt><dt><a href="#doc-history">Document Change History</a></dt><dt><a href="#resources">Additional Resources</a></dt><dt><a href="#contact-rackspace">Contact Rackspace</a></dt></dl></dd><dt><span class="chapter"><a href="#backup-manager">2. Backup and Recovery with backup-manager</a></span></dt><dd><dl><dt><a href="#backup-and-recover-with-backup-manager">Ubuntu's backup-manager</a></dt><dt><a href="#backup-controller">Backing Up the Controller Node</a></dt><dt><a href="#backup-compute">Backing Up the Compute Node</a></dt><dt><a href="#recovery">Recovery</a></dt><dd><dl><dt><a href="#recovery-controller">Recovering the Controller Node</a></dt><dt><a href="#recovery-compute">Recovering the Compute Node</a></dt></dl></dd></dl></dd><dt><span class="chapter"><a href="#advanced-recovery">3. Advanced Controller Node Backup and Recovery</a></span></dt><dd><dl><dt><a href="#advanced-standby-node">Configure the Standby Node</a></dt><dt><a href="#advanced-chef">Capturing Chef State</a></dt><dt><a href="#advanced-rsync">Synchronizing the Image State</a></dt><dt><a href="#advanced-rsync-mysql">Synchronizing the MySQL State</a></dt><dt><a href="#advanced-failover">Failover</a></dt></dl></dd></dl>
+
+<h2><a name="introduction"></a>Chapter&nbsp;1.&nbsp;Introduction</h2>
+
+<p><strong>Table of Contents</strong></p>
+
+<dl>
+	<dt><a href="#audience">Intended Audience</a></dt>
+	<dt><a href="#doc-history">Document Change History</a></dt>
+	<dt><a href="#resources">Additional Resources</a></dt>
+	<dt><a href="#contact-rackspace">Contact Rackspace</a></dt>
+</dl>
+
+<p>Rackspace has developed Rackspace Private Cloud Software, a fast, free, and easy way to download and install a Rackspace Private Cloud powered by OpenStack in any data center. Rackspace Private Cloud Software is suitable for anyone who wants to install a stable, tested, and supportable OpenStack private cloud, and can be used for all scenarios from initial evaluations to production deployments.</p>
+
+<p>Rackspace Private Cloud Software v 2.0 supports the Folsom release of OpenStack.</p>
+
+<h2><a name="audience"></a>Intended Audience</h2>
+
+<p>This document provides guidance for backing up the OpenStack cloud that is created with Rackspace Private Cloud Software, and for recovering the controller and compute nodes in the event of failure.</p>
+
+<p>To use this document, you should have prior knowledge of OpenStack and cloud computing, basic Linux administration skills, Opscode's chef tool, and Rackspace Private Cloud Software.</p>
+
+<h2><a name="doc-history"></a>Document Change History</h2>
+
+<p>This version of Rackspace Private Cloud Backup and Recovery replaces and obsoletes all previous versions. The most recent changes are described in the table below:</p><table id="d5e38" rules="all"><thead><tr><td align="center">Revision Date</td><td colspan="4" align="center">Summary of Changes</td></tr></thead><tbody><tr><td>August 15, 2012</td><td colspan="4"><div class="itemizedlist"><ul class="itemizedlist" type="disc" compact="compact"><li>Rackspace Private Cloud Software v 1.0</li></ul></div></td></tr><tr><td>November 15, 2012</td><td colspan="4"><div class="itemizedlist"><ul><li>Rackspace Private Cloud Software v 2.0</li><li>Added "Advanced Controller Node Backup and Recovery".</li></ul></div></td></tr></tbody></table>
+
+<h2><a name="resources"></a>Additional Resources</h2>
+
+<div class="itemizedlist"><ul class="itemizedlist" type="disc" compact="compact">
+	<li><a href="http://www.rackspace.com/cloud/private/openstack_software/" class="link" target="_top">Rackspace Private Cloud Software</a></li>
+	<li><a href="https://community.rackspace.com/products/f/45" class="link" target="_top">Rackspace Private Cloud Software User Forum</a></li>
+	<li><a href="http://docs.rackspace.com/rpc/v4/installation-guide/content/rpc-common-front.html" class="link" target="_top">Rackspace Private Cloud Software Documentation</a></li>
+	<li><a class="link" href="http://manpages.ubuntu.com/manpages/jaunty/man8/backup-manager.8.html" target="_top">Ubuntu <code>backup-manager</code> man page</a></li>
+	<li><a class="link" href="https://github.com/sukria/Backup-Manager/tree/master/doc" target="_top">Ubuntu <code>backup-manager</code> user guide</a></li>
+</ul>
+
+<h2><a name="contact-rackspace"></a>Contact Rackspace</h2><p>For more information about sales and support, contact us at <a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:opencloudinfo@rackspace.com">opencloudinfo@rackspace.com</a><a class="link" href="mailto:opencloudinfo@rackspace.com" target="_top"><code class="email">&gt;</code></a>. For feedback on the documentation, contact us at <a class="link" href="RPCFeedback@rackspace.com" target="_top"><code class="email">&lt;</code></a><a class="email" href="mailto:RPCFeedback@rackspace.com">RPCFeedback@rackspace.com</a><a class="link" href="RPCFeedback@rackspace.com" target="_top"><code class="email">&gt;</code></a>, or leave a comment at the Knowledge Center.</p><h2><a name="backup-manager"></a>Chapter&nbsp;2.&nbsp;Backup and Recovery with backup-manager</h2><p><strong>Table of Contents</strong></p><dl><dt><a href="#backup-and-recover-with-backup-manager">Ubuntu's backup-manager</a></dt><dt><a href="#backup-controller">Backing Up the Controller Node</a></dt><dt><a href="#backup-compute">Backing Up the Compute Node</a></dt><dt><a href="#recovery">Recovery</a></dt><dd><dl><dt><a href="#recovery-controller">Recovering the Controller Node</a></dt><dt><a href="#recovery-compute">Recovering the Compute Node</a></dt></dl></dd></dl><p>After you have installed Rackspace Private Cloud Software, there are no backups configured for your cluster. If you want to back up your cluster, this document provides guidance on performing a backup.</p><p>Note that this document does not attempt to cover broader problems of instance failure and recovery, and it does not address backup policy questions, such as appropriate retention policies and rotations.</p><p>The following directories contain crucial components for backup:</p><div class="itemizedlist"><ul><li><code>/var/lib/glance/images</code></li><li><code>/var/lib/chef/backups</code></li><li><code>/etc/mysql</code></li></ul><p>You must also back up the following MySQL databases:</p><div class="itemizedlist"><ul><li>mysql</li><li>nova</li><li>glance</li><li>dash</li><li>keystone</li></ul><h2><a name="backup-and-recover-with-backup-manager"></a>Ubuntu's backup-manager</h2><p>Ubuntu includes a simple tool called backup-manager. Any backup tool compatible with Ubuntu 12.04 can be used, but <code>backup-manager</code> is relatively simple to use for users already familiar with UNIX and bash scripts.</p><p>The following procedure will configure <code>backup-manager</code> to use the script that you will create to back up the controller node.</p><ol><li>Log into the controller node and switch to root access with <code>sudo -i</code>. You will need root access for all of the procedures in this chapter.</li><li>Install and launch <code>backup-manager</code>:<pre>$ apt-get install -y backup-manager
+</pre></li><li>You will be prompted to provide a directory in which to store the <code>backup-manager</code> archives. You may accept the default of <code>/var/archives</code>.</li><li>Choose <code>root</code> as the owner user of the repository.</li><li>Choose <code>root</code> as the owner group of the repository.</li><li>Designate the following directories for backup:<div class="itemizedlist"><ul><li><code>/var/lib/chef/backups</code></li><li><code>/var/lib/glance/images</code></li><li><code>/etc/mysql</code></li></ul></div></li><li>In the <code>/etc/backup-manager.conf</code>file, edit the following variables to match these settings:<pre>export BM_PRE_BACKUP_COMMAND="/usr/local/bin/chef-backup.sh"
+export BM_MYSQL_DATABASES="nova glance keystone dash mysql"
+export BM_MYSQL_ADMINPASS=[root password defined in /root/.my.cnf]
+export BM_ARCHIVE_METHOD="tarball mysql"
+</pre></li></ol><p>You can now configure the <code>backup-manager</code> configuration file to suit your retention policy and upload requirements. For example, you can create a simple data redundancy plan by uploading the backup to a secondary server that is accessible via SSH. Refer to the <code>backup-manager</code> documentation for more information about configuring the backup.</p><p>By default, <code>backup-manager</code> automatically executes nightly. You can also generate a backup manually.</p><p><strong>Note:</strong> Because all image files are backed up, these backups can be quite large. Ensure that you have enough space.</p><div class="section" title="Backing Up the Controller Node"><h2><a name="backup-controller"></a>Backing Up the Controller Node</h2><p>In a Rackspace Private Cloud installation, the controller node houses all the configuration information for the cluster, all OpenStack databases, and all images. To back up the configuration data, follow this procedure.</p><ol><li>Create a script file in <code>/usr/local/bin/chef-backup.sh</code>and include the following:<pre> #!/bin/bash
+    BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+    set -e
+    
+    topics="node environment" # "client role cookbook"
+    declare -A flags
+    flags=([default]=-Fj [node]=-lFj)
+    
+    for topic in $topics; do
+        OUT_DIR=${BACKUP_DIR}/${topic}
+        flag=${flags[${topic}]:-${flags[default]}}
+        rm -rf ${OUT_DIR}
+        mkdir -p ${OUT_DIR}
+
+        echo "Dumping $topic data"
+        for item in $(knife ${topic} list | awk '{print $1; }'); do
+            if [ "$topic" != "cookbook" ]; then
+                knife ${topic} show $flag $item &gt; ${OUT_DIR}/${item}.js
+            else
+                knife cookbook download $item -N --force -d $OUT_DIR
+            fi
+        done
+    done
+</pre><p>This script will place the configuration data for your cluster in the directory that you specify in the <code>BACKUP_DIR</code> environment variable. By default, it will choose <code>/var/lib/chef/backups</code>.</p></li><li>Ensure that this script has executed by checking the backup directory.</li><li>If it has done so successfully, you may now run backup-manager to back up your controller node to your desired backup destination or wait for <code>backup-manager</code> to execute automatically.</li></ol><p>You can also set up a cron job to schedule <code>backup-manager</code>. Run the command <code>crontab -u root -e</code> and enter a cron job specifier. The following sample specifier would run backup-manager every night at midnight.</p><pre>@midnight /usr/bin/backup-manager                    
+</pre><div class="section" title="Backing Up the Compute Node"><h2><a name="backup-compute"></a>Backing Up the Compute Node</h2><p>The only information unique to the compute nodes is the disks for running instances. The instances can be backed up with the OpenStack snapshot tools in the Horizon dashboard and in the nova-compute API. You can also install backup tools inside the instances themselves.</p><div class="section" title="Recovery"><h2><a name="recovery"></a>Recovery</h2><p>For the recovery process, you will reinstall the components with the Rackspace Private Cloud Software ISO. Before you begin, ensure that you have the correct networking information:</p><div class="itemizedlist"><ul><li>The IP addresses that you want to assign to each controller and compute node. This can be an IPv4 address in the format <code><em><code>xxx</code></em>.<em><code>xxx</code></em>.<em><code>xxx</code></em>.<em><code>xxx</code></em></code> or a CIDR range, and it must be able to access the internet.</li><li>Network subnet mask.</li><li>Network default gateway. This address is usually a <code><em><code>xxx</code></em>.<em><code>xxx</code></em>.<em><code>xxx</code></em>.1</code> address.</li><li>The server host name. You may be able to define this yourself, or you may need to contact your network administrator for the name.</li><li>Fully-qualified domain name for the host.</li><li>The address for the nova fixed network, in CIDR format. Instances created in the OpenStack cluster will have IP addresses in this range.</li><li>Optional DMZ network address. This address is also in CIDR format. Specifying a DMZ enables network traffic between instances and resources outside of the nova fixed network without network address translation. For example, if the nova fixed network is <code>10.1.0.0/16</code> and you specify a DMZ of <code>10.2.0.0/16</code>, any devices or hosts in that range will be able to communicate with the instances on the nova fixed network.</li><li>A password for an admin OpenStack user.</li><li>A password for a non-admin OpenStack user, as well as a username if you do not want to use the default of <code>demo</code>.</li><li>A full real name, username, and password for an operating system user.</li></ul><div class="section" title="Recovering the Controller Node"><h3 class="title"><a name="recovery-controller"></a>Recovering the Controller Node</h3><ol><li>Use the ISO to re-install the controller node.</li><li>Log into the controller node and switch to root access with <code>sudo -i</code>.</li><li>Restore all backed up files to their appropriate locations.</li><li>Use the following script to restore the chef server contents after <code>/var/lib/chef/backups</code>is restored:<pre>#!/bin/bash                                                                                    
+BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+#restore chef node attributes and environment overrides
+for n in $(ls ${BACKUP_DIR}/{node,environment}/*.js | 
+    grep -v '_default.js$'); do
+    knife $(basename $(dirname "${n}")) from file "${n}"
+done
+</pre></li><li>Restore all databases. If you are using backup-manager, use the following script to restore the MySQL databases. The script will restore all databases with no user intervention.<pre>#!/bin/bash
+BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+cd "$BACKUP_DIR"
+for sql in $(ls *.sql.bz2 | perl -ne '{ if (m/-mysql\./) 
+    { $line = $_} else {print;}} END {print $line}'); do
+    db=$(echo $sql | cut -d- -f2 | cut -d. -f1)
+    bzcat "$sql" | mysql "$db"
+done
+cd -
+</pre></li><li>Restart MySQL. Do NOT run chef-client before MySQL has been restarted. Doing so could cause data loss.</li><li>Run chef-client on the controller node.</li><li>Delete the client certificate on all compute nodes (located in <code>/etc/chef/client.pem</code>).</li><li>Rerun chef-client on all compute nodes.</li></ol><div class="section" title="Recovering the Compute Node"><h3 class="title"><a name="recovery-compute"></a>Recovering the Compute Node</h3><p>Before restoring compute nodes, you must remove existing compute node data from the controller node.</p><ol><li>Log into the controller node and switch to root access with <code>sudo -i</code>.</li><li>Execute the following command to remove compute node data:<pre>$ knife client delete <em><code>name_of_compute_node</code></em>
+</pre></li><li>Use the ISO to re-install the compute node.</li></ol><p>You can now re-create the instances. Note that when a compute node fails, all instance data is lost, so you must the instance data from configuration management, other backup recovery methods, or deployment of snapshots. IP addresses on instances will not be stable, so some reconfiguration may be necessary.</p><div class="chapter" title="Chapter&nbsp;3.&nbsp;Advanced Controller Node Backup and Recovery"><h2><a name="advanced-recovery"></a>Chapter&nbsp;3.&nbsp;Advanced Controller Node Backup and Recovery</h2><p><strong>Table of Contents</strong></p><dl><dt><a href="#advanced-standby-node">Configure the Standby Node</a></dt><dt><a href="#advanced-chef">Capturing Chef State</a></dt><dt><a href="#advanced-rsync">Synchronizing the Image State</a></dt><dt><a href="#advanced-rsync-mysql">Synchronizing the MySQL State</a></dt><dt><a href="#advanced-failover">Failover</a></dt></dl><p>Rackspace Private Cloud Software installs all "control plane" services on the controller node, including and not limited to:</p><div class="itemizedlist"><ul><li>All API services</li><li>The MySQL database that OpenStack uses to maintain information about the state of the clusters</li><li>All images uploaded to Glance</li></ul><p>You can reduce recovery times and potential data loss windows by configuring a standby server for the controller node. This does not constitute a true "high-availability" solution, but increases application layer resilience.</p><p>In this chapter, the main controller node will be referred to as the "active node", and the backup controller node as the "standby node". The configuration process includes the following stages:</p><div class="itemizedlist"><ul><li><a class="link" title="Configure the Standby Node" href="#advanced-standby-node">Configure the standby node.</a></li><li><a class="link" title="Capturing Chef State" href="#advanced-chef">Capture Chef state.</a></li><li><a class="link" title="Synchronizing the Image State" href="#advanced-rsync">Synchronize the image state.</a></li><li><a class="link" title="Synchronizing the MySQL State" href="#advanced-rsync-mysql">Synchronize the MySQL state.</a></li></ul><p>In the event of failure, follow the steps in the <a class="link" title="Failover" href="#advanced-failover">Failover procedure</a> to switch to the standby node.</p><div class="section" title="Configure the Standby Node"><h2><a name="advanced-standby-node"></a>Configure the Standby Node</h2><p>Install Rackspace Private Cloud software on the device that you want to use as a standby node.</p><ol><li>Boot the ISO on the standby node.</li><li>After the ISO has launched and loaded, accept the EULA statement.</li><li>Select <code class="option">Controller</code>.</li><li>Enter the NIC address. If you have more than one, you must designate one as public and one as private.</li><li>When prompted, enter the node IP address, subnet mask, gateway, name server, and host name. Use the same host name as that of the active controller node.</li><li>Enter the address for the nova fixed network.</li><li>If you want to configure a DMZ network, enter the DMZ address and the DMZ gateway address. Be sure that you have at least two NICs on the server.</li><li>Enter a password for the <code class="literal">admin</code> user. You will use this admin username and password to access the API and the dashboard.</li><li>For the additional non-admin user, accept the default <code>demo</code> or enter your own and provide a password at the prompt. This user will not have admin privileges, but will be able to perform basic OpenStack functions, such as creating instances from images. Creating the user will also automatically create a project (also known as a tentant) for this user.</li><li>Enter the real name, user name, and password for the operating system user account. For example, the user Jane Doe would enter the following information:<div class="itemizedlist"><ul class="itemizedlist" type="disc" compact="compact"><li>Full name for the new user: <code>Jane Doe</code></li><li>Username for your account: <code>jdoe</code></li><li>Password: <code>mysecurepassword</code></li></ul><p>At this point, it will take approximately 5-10 minutes for the Ubuntu operating system installation to complete.</p></div></li><li>If you have a proxy, enter the proxy URL at the prompt in the format <code>http://<em><code>proxy_ip_address</code></em>:<em><code>proxy_ip_port</code></em></code>. If you do not have a proxy, press enter to skip this step and leave the proxy information blank.</li></ol><p>At this point, the installation process will run for approximately 30 minutes without the need for user intervention. The device will reboot during the installation process. You will see a screen with the Rackspace Private Cloud logo, followed by a screen that displays a progress bar; you can use Ctrl+Alt+F2 to toggle between the progress bar screen and a Linux TTY screen (Ctrl+Alt+Fn+F2 on a Mac). You can follow the log during installation by switching to the correct TTY screen and viewing the log in <code>/var/log/post-install.log</code>.</p><p>After the installation is complete, you can view the install log by logging into the operating system with the username and password that you configured in Step 9. The log is stored in <code>/var/log/post-install.log</code>.</p><div class="section" title="Capturing Chef State"><h2><a name="advanced-chef"></a>Capturing Chef State</h2><p>Whenever a node is added to your cloud, you should back up the configuration data.</p><p>Create a script file in <code>/usr/local/bin/chef-backup.sh</code> and include the following:</p><pre> #!/bin/bash
+    BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+    set -e
+    
+    topics="node environment" # "client role cookbook"
+    declare -A flags
+    flags=([default]=-Fj [node]=-lFj)
+    
+    for topic in $topics; do
+        OUT_DIR=${BACKUP_DIR}/${topic}
+        flag=${flags[${topic}]:-${flags[default]}}
+        rm -rf ${OUT_DIR}
+        mkdir -p ${OUT_DIR}
+
+        echo "Dumping $topic data"
+        for item in $(knife ${topic} list | awk '{print $1; }'); do
+            if [ "$topic" != "cookbook" ]; then
+                knife ${topic} show $flag $item &gt; ${OUT_DIR}/${item}.js
+            else
+                knife cookbook download $item -N --force -d $OUT_DIR
+            fi
+        done
+    done
+</pre><p>This script will place the configuration data for your cluster in the directory that you specify in the <code>BACKUP_DIR</code> environment variable. By default, it will choose <code>/var/lib/chef/backups</code>. Ensure that this script has executed. If it has done so successfully, you may now run <code>backup-manager</code> to back up your controller node to your desired backup destination.</p><h2><a name="advanced-rsync"></a>Synchronizing the Image State</h2><p>The most robust mechanism for ensuring the security of your images is to configure an OpenStack Storage (Swift) cluster and configure Glance to store images in the cluster. If this is not a viable option, you can use rsync to save the image to your standby node.</p><p>This section describes the rsync method in detail. For information about using OpenStack Storage, refer to <em>Rackspace Private Cloud Software OpenStack Storage Installation</em>.</p><ol><li>Connect to the active node via ssh and use <code>sudo -i</code> to switch to root access.</li><li>Verify that rsync is installed. If it is not, install it with <code>apt-get install rsync</code>.</li><li>Use <code>cat </code>to obtain the contents of the public key.<pre>$ cat /root/.ssh/id_rsa.pub               </pre><p>The command will output the public key in a string similar to the following:</p><pre><code class="computeroutput">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJUXnQwaTpw5Gj072PHF
+jxD6Av3gSdDYx1blyNB/L3CA52tvRGWwwwFzbrbqHWE+VpYgeoiL6ePul5H
+W4ENG1QYxkc6xTpWNHfM4lZNHOXEguxRDhM5W0MAAlO9tr62NETe4AvpUtI
+NskwdCWkthyt0c+jG0pW4FxuHFfdrF2S55pL4Sfh1SkDGEicCbpPtcvFXc0
+/aIRgB9/coDE2SEsCiMQDcCfKZR/tWmezDmTY0dAE2qsSPIw75QzCySujbs
+4t+rP8/mrjYqo0urYbYlhV7zvcoZNrgbaxciZJ2NXzh253Yy2NN9Wp9QAix
+lCOLAqChPoTZah9iwYHchwy+Q4d root@controller01</code>
+</pre><p>Save this output by whatever means you prefer (copy-pasting it to a text editor, etc.).</p></li><li>Connect to the standby node via ssh and use <code>sudo -i</code> to switch to root access.</li><li>Verify that rsync is installed. If it is not, install it with <code>apt-get install rsync</code>.</li><li>Open the standby node's <code>/root/.ssh/authorized_keys</code> file in your preferred editor and paste in the active node's <code>id_rsa.pub</code> key as a single line, with no line breaks.</li><li>Connect to the active node again and use the following command to verify that rsync is working correctly. Replace <code><em><code>standby_node_IP</code></em></code>with the IP address of the standby node.<pre>$ rsync -av /var/lib/glance/images root@<em><code>standby_node_IP</code></em>:/var/lib/glance/images
+</pre><p>The command should produce output similar to the following:</p><pre><code class="computeroutput">sending incremental file list
+./
+4ba6e796-a69d-4c61-b9f3-e8c398b1aa5b
+58ee77f9-6028-47d3-8f3c-5ee1deec128b
+929e52b3-d37f-4cfa-9578-73dab283bafd </code>                               
+</pre></li></ol><p>This output shows that the synchronization between the active node and the standby node is successful. You will now need to create a cron job to automate the synchronization. Because rsync only copies new or changed images, the initial transfer may be slow. However, subsequent synchronization runs will run more quickly.</p><p>In the following procedure, rsync is configured to copy chef backup information in addition to the Glance images, and to run every five minutes.</p><ol><li>On the standby node, create a chef backups directory.<pre>$ mkdir -p /var/lib/chef/backups
+</pre></li><li>On the active node, create a script file in /usr/local/bin/rsync_job.sh and include the following, replacing <code><em><code>standby_node_IP</code></em></code>with the standby node's IP address.<pre> #!/bin/bash
+ if ! pgrep '^rsync_job.sh$' &amp;&gt;/dev/null; then
+     rsync -av /var/lib/glance/images/ root@<em><code>standby_node_IP</code></em>:/var/lib/glance/images
+     rsync -av --delete /var/lib/chef/backups/ root@<em><code>standby_node_IP</code></em>:/var/lib/chef/backups
+ fi
+</pre></li><li>On the active node, edit the access permissions to ensure that the script is executable.<pre>$ chmod +rx /usr/local/bin/rsync_job.sh
+</pre></li><li>On the active node, set up the cron job with the command <code>crontab -u root -e</code>. Enter the following cron job specifier to make the rsync job run every five minutes:<pre><code>*/5 * * * * /usr/local/bin/rsync_job.sh</code>
+</pre></li></ol><p>In this configuration, images deleted on the active node are <strong>not</strong> deleted on the standby node. This means that you can retrieve an image from the standby node if it is accidentally deleted from the active node, but if you are frequently adding and deleting images, the undeleted images can take up a lot of disk space. To automatically remove images from the standby node when they are deleted from the active node, add a <code>--delete</code> flag to the rsync images command in the script file:</p><pre> #!/bin/bash
+ if ! pgrep '^rsync_job.sh$' &amp;&gt;/dev/null; then
+     rsync -av --delete /var/lib/glance/images/ root@<em><code>standby_node_IP</code></em>:/var/lib/glance/images
+     rsync -av --delete /var/lib/chef/backups/ root@<em><code>standby_node_IP</code></em>:/var/lib/chef/backups
+ fi
+</pre><p>To ensure that the latest chef state is backed up as well, add a chef backup script to <code>rsync_job.sh</code>.</p><pre>#!/bin/bash
+    BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+    set -e
+    
+    topics="node environment" # "client role cookbook"
+    declare -A flags
+    flags=([default]=-Fj [node]=-lFj)
+    
+    for topic in $topics; do
+        OUT_DIR=${BACKUP_DIR}/${topic}
+        flag=${flags[${topic}]:-${flags[default]}}
+        rm -rf ${OUT_DIR}
+        mkdir -p ${OUT_DIR}
+
+        echo "Dumping $topic data"
+        for item in $(knife ${topic} list | awk '{print $1; }'); do
+            if [ "$topic" != "cookbook" ]; then
+                knife ${topic} show $flag $item &gt; ${OUT_DIR}/${item}.js
+            else
+                knife cookbook download $item -N --force -d $OUT_DIR
+            fi
+        done
+    done
+ if ! pgrep '^rsync_job.sh$' &amp;&gt;/dev/null; then
+     rsync -av --delete /var/lib/glance/images/ root@<em><code>standby_node_IP</code></em>:/var/lib/glance/images
+     rsync -av --delete /var/lib/chef/backups/ root@<em><code>standby_node_IP</code></em>:/var/lib/chef/backups
+ fi
+</pre><h2><a name="advanced-rsync-mysql"></a>Synchronizing the MySQL State</h2><p>In addition to Glance and chef information, you must also ensure that your MySQL state is also in sync between the active node and the standby node.</p><p><strong>Note:</strong> Running the <code>FLUSH TABLES</code> command will be disruptive. The control plane of OpenStack will be inoperable until that step is complete.</p><ol><li>Perform a backup on the active node as described in <a class="link" title="Backing Up the Controller Node" href="#backup-controller">Backing Up the Controller Node</a>.</li><li>Using that backup, run steps 2-4 of <a class="link" title="Recovering the Controller Node" href="#recovery-controller">Recovering the Controller Node</a> on the standby node. The recovery of <code>/etc/mysql</code> is the most important element.</li><li>On the active node, create a configuration file at <code>/etc/mysql/conf.d/replication.cnf</code>and include the following content:<pre>[mysqld]
+log-bin=mysql-bin
+server-id=1
+</pre></li><li>Run the command <code>restart mysql</code> on the active node.</li><li>Run <code>mysql</code> on the active node and enter the following at the prompts, replacing <code><em><code>standby_password</code></em></code> and <code><em><code>standby_node_IP</code></em></code>with the password and IP address for the standby node.<pre>mysql&gt; CREATE USER 'repl'@'<em><code>standby_node_IP</code></em>' IDENTIFIED BY '<em><code>standby_password</code></em>';
+mysql&gt; GRANT REPLICATION SLAVE ON *.* TO 'repl'@'<em><code>standby_node_IP</code></em>';
+</pre></li><li>On the standby node, create a configuration file at <code>/etc/mysql/conf.d/replication.cnf</code>and include the following content:<pre>[mysqld]
+log-bin=mysql-bin
+server-id=2
+</pre></li><li>Run <code>restart mysql</code> on the standby node. Leave the ssh session to the standby node open.</li><li>Create two new ssh sessions to the active node.</li><li>In the first ssh session on the active node, run <code>mysql</code>. At the prompt, enter the command <code>FLUSH TABLES WITH READ LOCK;</code>. Leave the session open on the <code class="prompt">mysql</code>prompt.<pre>mysql&gt; FLUSH TABLES WITH READ LOCK;
+mysql&gt; 
+</pre></li><li>In the second ssh session on the active node, run the following command:<pre>$ mysqldump --all-databases --master-data &gt;dbdump.db
+</pre></li><li>When this command is completed, switch back to the first ssh session and enter <code>UNLOCK TABLES;</code> at the <code class="prompt">mysql</code>prompt. Exit mysql.<pre>mysql&gt; UNLOCK TABLES;
+mysql&gt; exit
+</pre></li><li>Return to the second ssh session and issue the following command to transfer the <code>dbdump.db</code> file to the standby node, replacing <em><code>standby_node_IP</code></em>with the standby node's IP address.<pre>$ scp dbdump.db root@$<em><code>standby_node_IP</code></em>:
+</pre></li><li>On the standby node, run the following commands.<pre>$ grep 'CHANGE MASTER TO MASTER_LOG' dbdump.db
+</pre><p>This command will return a statement that includes the filename of the master log file and a master log position.</p></li><li>Run the following set of commands to initiate the replication process. The <code><em><code>standby_password</code></em></code> is the one used for the user repl in step 5, and the <code><em><code>grep_log_file</code></em></code> and <code><em><code>grep_position</code></em></code>variables are the filename and position returned by the grep command in step 13.<pre>$ mysql &lt; /root/dbdump.db<br />$ mysql -e "CHANGE MASTER TO MASTER_HOST='<em><code>active_node_IP</code></em>",  \
+  MASTER_USER='repl', MASTER_PASSWORD='<em><code>standby_password</code></em>', \
+  MASTER_LOG_FILE='<em><code>grep_log_file</code></em>', MASTER_LOG_POS=<em><code>grep_position</code></em>'"
+$ knife node edit `hostname -f`
+$ vim /root/.my.cnf # Replace password
+$ mysql -e 'start slave;'
+</pre></li></ol><p>The MySQL replication is now configured on the active and standby nodes. For more information about MySQL replication, refer to <a class="link" href="http://dev.mysql.com/doc/refman/5.5/en/replication-howto.html" target="_top">"How to Set Up Replication" in the MySQL documentation</a>.</p><div class="section" title="Failover"><h2><a name="advanced-failover"></a>Failover</h2><p>In the event that the active node fails and you need to switch to the standby node, follow this procedure.</p><ol><li>Power down the active node.</li><li>Use the following script to restore the chef server contents on the standby node:<pre>#!/bin/bash
+BACKUP_DIR=${BACKUP_DIR:-/var/lib/chef/backups}
+
+#restore chef node attributes and environment overrides
+for n in ${BACKUP_DIR}/{node,environment}/*.js; do
+  knife $(basename $(dirname "${n}")) from file "${n}"
+done
+</pre></li><li>Assign the IP address of the formerly active node to the standby node. At this point, all services should begin working.</li><li>Open the /etc/hosts file in a text editor and comment out the line that binds the hostname to the standby node IP address. For example, in a configuration where the standby node's IP address is <code>172.16.137.10</code> and the hostname is <code>standby.myhost.com</code>, the line would look like this:<pre># 172.16.137.10 standby.myhost.com
+</pre></li><li>Run chef-client on the node.</li><li>Delete the <code>client.pem</code> file from all the nodes in the cluster and run chef-client on all compute nodes.</li></ol><p>&nbsp;</p></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+<p>&nbsp;</p>

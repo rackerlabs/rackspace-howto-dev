@@ -1,0 +1,74 @@
+---
+node_id: 1468
+title: Rackspace Cloud Essentials - Creating A Cloud Server
+permalink: article/creating-a-cloud-server
+type: article
+created_date: '2012-07-17 00:27:22'
+created_by: RackKCAdmin
+last_modified_date: '2015-01-14 21:3922'
+last_modified_by: rose.contreras
+products: Cloud Servers
+categories: Server Management
+body_format: full_html
+---
+
+<p><br />
+Use the following steps to set up a Cloud Server through the Cloud Control Panel interface.</p>
+
+<ol>
+	<li>Log in to the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>.&nbsp;The Cloud Servers list opens by default.</li>
+	<br />
+	<li>Click the <strong>Create Server</strong> button.</li>
+	<br />
+	<li>In the<strong>&nbsp;Identity&nbsp;</strong>section enter a name for your server in the&nbsp;<strong>Server Name</strong> field.
+	<p><img alt="" width="259" height="163" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.12.15%20AM.png" /></p>
+	</li>
+	<br />
+	<li value="4">From the Region list, select the region in which you want to create the server.<br />
+	<br />
+	<img alt="" width="261" height="142" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.13.25%20AM.png" /><br />
+	&nbsp;</li>
+	<li value="5">In the <strong>Image</strong>&nbsp;section, select which operating system you want to use.<br />
+	<br />
+	<img alt="" width="472" height="241" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.15.30%20AM.png" /><br />
+	&nbsp;</li>
+	<li value="6">In the <strong>Flavor </strong>section, choose the appropriate&nbsp;configuration for the server.<br />
+	<br />
+	<img alt="" width="473" height="372" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.16.55%20AM.png" /></li>
+	<br />
+	<li value="7"><em>(Optional)</em> Assign a public key to the server by selecting an existing key.<br />
+	&nbsp;
+	<ul>
+		<li>To assign an existing public key, under Advanced Options, select a public key from the drop down list.<br />
+		<br />
+		<img alt="" width="379" height="87" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.18.41%20AM.png" /><br />
+		&nbsp;</li>
+		<li>Select the&nbsp;public key from the list and continue with the next step.<br />
+		&nbsp;</li>
+	</ul>
+	</li>
+	<br />
+	<li value="8">To add a new public key, click&nbsp;<strong>Manage SSH Keys</strong> and:<br />
+	​​
+	<ul>
+		<li>On the SSH Keys page, click <strong>Add Public Key</strong></li>
+		<li>If you are adding a public key, give your new public key a name</li>
+		<li>In the Region field, confirm or select the region in which your key will be used</li>
+		<li>Paste your public key into the Public Key field.<br />
+		<strong>Note:</strong> If you do not have a public key yet, click <a href="http://www.rackspace.com/knowledge_center/article/connecting-to-a-server-using-ssh-on-linux-or-mac-os">How to get a public key</a> and follow the instructions in that article.<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;For more&nbsp;information on how to generate a public and private key pairs, see<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient" target="_self">Manage SSH Keypairs for Cloud Servers with-python-novaclient</a>.</li>
+		<li>Once you have your entered your Key Name, Region, and the Public Key, click <strong>Add Public Key</strong>.</li>
+	</ul>
+	<br />
+	<strong>​<em>​</em></strong><img alt="" width="655" height="299" border="1" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.30.59%20AM.png" /><br />
+	&nbsp;</li>
+	<li value="9">Confirm that your key is listed in the SSH Key list for your new server.<br />
+	&nbsp;</li>
+	<li value="10">As needed, create a new network and select the PublicNet and ServiceNet options.<br />
+	&nbsp;</li>
+	<li value="11">Click <strong>Create Server</strong>.</li>
+</ol>
+
+<p><br />
+Your server is built. After it is done being provisioned, your server displays the status <strong>Running</strong> and is now available for remote connection. Specific remote connection instructions for your server are&nbsp; displayed in the side bar on the right of the Cloud Control Panel.</p>

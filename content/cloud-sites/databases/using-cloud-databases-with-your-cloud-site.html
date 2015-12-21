@@ -1,0 +1,69 @@
+---
+node_id: 1869
+title: Using Cloud Databases with your Cloud Site
+permalink: article/using-cloud-databases-with-your-cloud-site
+type: article
+created_date: '2012-08-01 19:30:50'
+created_by: chris.farmer
+last_modified_date: '2014-11-13 16:5513'
+last_modified_by: David Hendler
+products: Cloud Sites
+categories: Databases
+body_format: tinymce
+---
+
+<p class="MsoNormal">Cloud Databases is part of the Cloud Control Panel. One of the advantages of Cloud Databases is that it makes it easier to provision your MySQL instance, add databases, and effectively manage your users. This also includes the security and performance benefits of having your own dedicated database instance. Another big plus is how easy it is to connect to your Cloud Database from Cloud Sites.</p>
+
+<h3>Creating A Cloud Database</h3>
+
+<p class="MsoNormal">1. First thing we'll do is login to the Cloud Control <a href="http://mycloud.rackspace.com">http://mycloud.rackspace.com</a>&nbsp;and&nbsp;once you're logged in, select <strong>Databases</strong> at the top.</p>
+
+<p class="MsoNormal"><img alt="" height="57" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/6.png" title="" width="496" /></p>
+
+<p class="MsoNormal">2. Next, select&nbsp;the <strong>Create MySQL Instance</strong> option and you'll then be taken to the <strong>Create MySQL Instance</strong> screen. Fill out the fields with your desired specifications to creating your Database and then select <strong>Create Instance</strong> when finished.</p>
+
+<p class="MsoNormal"><img alt="" height="744" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/2_0.png" title="" width="549" />&nbsp; &nbsp;</p>
+
+<p class="MsoNormal"><em>Note: We recommend creating your Database in the same region as your Cloud Site. You can find out the location of your Cloud Site by looking for <strong>ORD</strong> or <strong>DFW</strong> in the testing link for your Cloud Site.</em></p>
+
+<p class="MsoNormal">3. Your database will then begin the process of building. Once complete, you'll see your status go from an Orange color to a green which indicates it's active. Selecting your Instance will display all information relating to that particular Instance.</p>
+
+<h3><img alt="" height="74" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/4_0.png" title="" width="532" /></h3>
+
+<p><img alt="" height="221" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/15.png" title="" width="639" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+
+<h3>&nbsp;</h3>
+
+<h3>Working with your MySQL instance</h3>
+
+<p class="MsoNormal">There are a different ways on how you can work with and manage your MySQL instance. If you happen to have a Cloud Server in the same region as your Cloud Database, you can connect to it using an SSH session on a Linux box, installing your favorite database management software, or by installing a phpMyAdmin on your Cloud Site and use that to connect and manage your database instance. The steps below will focus on using a database management interface on your local machine (MySQL Workbench). Let's get started!</p>
+
+<p class="MsoNormal">1. In order to access your instance from your local workstation, let's create a Load Balancer. This will allow you to have a public IP address against your instance. First thing you'll do is login to the <a href="https://mycloud.rackspace.com">Cloud Control Panel</a> and select <strong>Load Balancers</strong> at the top.</p>
+
+<p class="MsoNormal"><img alt="" height="55" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/13.png" title="" width="493" /></p>
+
+<p class="MsoNormal">2. Next, select <strong>Create A Load Balancer</strong>&nbsp;and fill out the fields with your desired specifications. When you approach the <strong>Add Nodes</strong> section, select <strong>Add External Node </strong>and in the<strong>&nbsp;IP or Hostname</strong>&nbsp;field, enter in the Hostname of the Cloud Database Instance we just created and then select <strong>Create Load Balancer</strong>.</p>
+
+<p class="MsoNormal"><em>Note: You can grab the hostname of your Instance by selecting the Instance name in the Databases section.</em>&nbsp;&nbsp;</p>
+
+<p class="MsoNormal"><img alt="" height="87" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/9.png" title="" width="341" /></p>
+
+<p class="MsoNormal"><img alt="" height="421" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/16.png" title="" width="746" />&nbsp;</p>
+
+<p class="MsoNormal">3. Once your Load Balancer is created (Active), select the Load Balancer and you may then grab the public IP address to create a new connection. Plug the IP address into the Hostname field in MySQL Workbench, your database credentials, and also the standard port (<strong>3306</strong>) in the port field.</p>
+
+<p class="MsoNormal"><img alt="" height="449" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/14.png" title="" width="673" /></p>
+
+<p>4. Connect your MySQL workbench by selecting OK and you can then import your database, edit user permissions, etc.</p>
+
+<h3>&nbsp;</h3>
+
+<h3>Using your MySQL instance on your Cloud Site</h3>
+
+<p>In this last section, we're going to use Wordpress as an example; however, the same concept applies to any CMS or application on your website. All you need to do is plug in your database name, user name, and your database host (this will be your MySQL instance hostname, not your load balancer IP address, you do not need a load balancer to connect to your database from your website) and you're good to go!</p>
+
+<p><img alt="" height="534" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/8.png" title="" width="736" /></p>
+
+<p>There you have it! You've created a MySQL instance and database using Cloud Databases, a Load Balancer to connect and manage your database, and have connected that dedicated database to your Cloud Sites application.</p>
+
+<p><em>Note: Cloud Sites will continue to offer the current shared MySQL databases for you to consume, so you are not required to use Cloud Databases. However, should you find that you need more dedicated performance, security, and database management features, we highly recommend using Cloud Databases to meet your DB needs. You can feel free to consume both shared Cloud Sites databases as well as Cloud databases as your hosting needs change. Please remember that all management and updates to your Cloud Datbases must be done via the Cloud Control Panel, and will not be integrated into the Cloud Sites Control Panel. This is intentional, so you have access to the latest features when they go live in the Cloud Control Panel.</em></p>

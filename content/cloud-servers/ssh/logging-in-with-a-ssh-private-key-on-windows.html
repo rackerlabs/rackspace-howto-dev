@@ -1,0 +1,100 @@
+---
+node_id: 3707
+title: Logging in with an SSH Private Key on Windows
+permalink: article/logging-in-with-a-ssh-private-key-on-windows
+type: article
+created_date: '2013-09-25 15:20:06'
+created_by: brint.ohearn
+last_modified_date: '2015-07-23 16:1059'
+last_modified_by: margaret.eker
+products: Cloud Servers
+categories: SSH
+body_format: tinymce
+---
+
+<h4>Introduction</h4>
+
+<p>In this example, we’re going to demonstrate how to load a private key into PuTTY. You’ll need two pieces of software to complete this task:</p>
+
+<ol>
+	<li>PuTTY – Client to for managing SSH sessions</li>
+	<li>PuTTYgen – Tool for managing and creating SSH key pairs</li>
+</ol>
+
+<p>Both tools can be downloaded here:</p>
+
+<p><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html.</a></p>
+
+<p><strong>Note:&nbsp;</strong> These instructions apply to the Windows operating system.&nbsp; For information about using SSH private keys on Linux and OS X operating systems, see <a href="http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-linuxmac">Logging in with a SSH Private Key on Linux and OS X</a>.</p>
+
+<p>&nbsp;</p>
+
+<h4>PuTTYgen: Loading the Key</h4>
+
+<p>As a part of a Rackspace Deployment, you may be provided a SSH Private Key to be used for authentication against your newly deployed Linux servers. The first thing to do is save this private key into a file. Here’s an example key:</p>
+
+<p><img alt="" border="2/" height="478" src="/knowledge_center/sites/default/files/field/image/Windows1.png" width="626" /></p>
+
+<p>You will need everything you see in the example above to be included in your key file.</p>
+
+<p>Now launch PuTTYgen:</p>
+
+<p><img alt="" border="2/" height="595" src="/knowledge_center/sites/default/files/field/image/Windows2.png" width="624" /></p>
+
+<p>Click <strong>load</strong> and change the file type to search for to <strong>All Files:</strong></p>
+
+<p><img alt="" border="2/" height="477" src="/knowledge_center/sites/default/files/field/image/Windows3.png" width="626" /></p>
+
+<p>Select the key you saved to a text file earlier and click <strong>Open</strong>:</p>
+
+<p><img alt="" border="2/" height="477" src="/knowledge_center/sites/default/files/field/image/Windows4.png" width="626" /></p>
+
+<p>Now PuTTYgen will confirm that your key has been loaded:</p>
+
+<p><img alt="" border="2/" height="599" src="/knowledge_center/sites/default/files/field/image/Windows5.png" width="628" /></p>
+
+<p>Enter a unique key passphrase in the <strong>Key passphrase</strong> and <strong>Confirm passphrase</strong> fields. You will be prompted for that passphrase whenever you login to a server with this key.</p>
+
+<p><img alt="" border="2/" height="597" src="/knowledge_center/sites/default/files/field/image/Windows6.png" width="627" /></p>
+
+<p>&nbsp;</p>
+
+<p>We strongly suggest keeping the default settings as they are, so when you're prompted to "Enter a file in which to save the key", just press <strong>Enter</strong> to continue.<br />
+<br />
+<img alt="" border="2/" height="478" src="/knowledge_center/sites/default/files/field/image/Windows8.png" width="624" /></p>
+
+<p>&nbsp;</p>
+
+<h4>PuTTY: Logging in with the Private Key</h4>
+
+<p>Setup your session in PuTTy. You can name the session anything you would like. In this case, we are naming the session based on the IP of the server we are connecting to, and click <strong>Save</strong>:</p>
+
+<p><img alt="" height="604" src="/knowledge_center/sites/default/files/field/image/Windows9.png" width="635" /></p>
+
+<p>Now click on <strong>Connection &gt;Data</strong> and set the Auto-login username to root:</p>
+
+<p><img alt="" border="2/" height="605" src="/knowledge_center/sites/default/files/field/image/win9.png" width="632" /></p>
+
+<p>Click on <strong>Auth</strong> and configure the Private Key to use by clicking Browse under Private key file for authentication:</p>
+
+<p><img alt="" border="2/" height="595" src="/knowledge_center/sites/default/files/field/image/Windows10.png" width="631" /></p>
+
+<p>Navigate to the location where you saved your private key earlier, select the file, and click <strong>Open</strong>:</p>
+
+<p><img alt="" border="2/" height="481" src="/knowledge_center/sites/default/files/field/image/Windows11.png" width="629" /></p>
+
+<p>Now you’ll see the private key path listed:</p>
+
+<p><img alt="" border="2/" height="603" src="/knowledge_center/sites/default/files/field/image/Windows12.png" width="631" /></p>
+
+<p>Navigate back to <strong>Session</strong> and save this session information one more time.</p>
+
+<p><img alt="" border="2/" height="596" src="/knowledge_center/sites/default/files/field/image/Windows13.png" width="629" /></p>
+
+<p>Now click <strong>Open</strong> to begin your session with the server. If you saved you key with a passphrase, you will be prompted to enter that passphrase. You will be given an alert that the server’s host is not cached. Click <strong>Yes </strong>at this point to continue the connection.</p>
+
+<p><img alt="" border="2/" height="388" src="/knowledge_center/sites/default/files/field/image/Windows14.png" width="629" /></p>
+
+<p>Now you will be in logged into your server:</p>
+
+<p><img alt="" border="2/" height="389" src="/knowledge_center/sites/default/files/field/image/Windows15.png" width="632" /></p>

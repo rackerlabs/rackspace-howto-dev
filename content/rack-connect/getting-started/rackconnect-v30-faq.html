@@ -1,0 +1,130 @@
+---
+node_id: 4271
+title: RackConnect v3.0 FAQ
+permalink: article/rackconnect-v30-faq
+type: article
+created_date: '2014-09-26 15:10:50'
+created_by: juan.perez
+last_modified_date: '2015-11-12 19:1739'
+last_modified_by: catherine.richardson
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>Applies to:</strong> RackConnect v3.0. For questions on RackConnect v2.0, see <a href="http://www.rackspace.com/knowledge_center/product-faq/rackconnect">RackConnect FAQ</a>.</p>
+
+<p>Get quick answers to common questions about RackConnect v3.0.</p>
+
+<ul>
+	<li><a href="#1">Can I allocate multiple cloud networks to a single RackConnect v3.0 cloud server?</a></li>
+	<li><a href="#2">Can I assign more than one cloud network IP address to my RackConnect v3.0 cloud servers?</a></li>
+	<li><a href="#3">Can I upgrade my RackConnect v2.0 environment to RackConnect v3.0?</a></li>
+	<li><a href="#4">Can I use a Brocade ADX 1000 as my RackConnect v3.0 edge device?</a></li>
+	<li><a href="#5">Does RackConnect v3.0 support IPv6?</a></li>
+	<li><a href="#6">Does RackConnect v3.0 support Managed Colocation environments?</a></li>
+	<li><a href="#7">How do I get RackConnect v3.0?</a></li>
+	<li><a href="#isitpossible">Is it possible to attach a RackConnect v3.0 cloud network to pre-existing cloud servers?</a></li>
+	<li><a href="#8">What network subnet (CIDR) should I assign to my RackConnect v3.0 cloud network?</a></li>
+	<li><a href="#9">What requirements must be met to implement RackConnect v3.0 in my environment?</a></li>
+	<li><a href="#10">Whom do I contact for help with RackConnect v3.0?</a></li>
+	<li><a href="#11">Why do I receive 403 Forbidden HTTP status code responses when I try to build RackConnect v3.0 cloud servers by using the Cloud Servers API or the Nova client?</a></li>
+</ul>
+
+<h3><a id="1" name="1"></a>Can I allocate multiple cloud networks to a single RackConnect v3.0 cloud server?</h3>
+
+<p>No. We currently support only one cloud network per cloud server.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="2" name="2"></a>Can I assign more than one cloud network IP address to my RackConnect v3.0 cloud servers?</h3>
+
+<p>No. For each cloud server, we currently only support:</p>
+
+<ul>
+	<li>One cloud network</li>
+	<li>One IP address per cloud network</li>
+	<li>One public IP address network address translation (NAT) per cloud server</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a id="3" name="3"></a>Can I upgrade my RackConnect v2.0 environment to RackConnect v3.0?</h3>
+
+<p>Not yet, but we are working on a migration path. Initially, we plan to offer you the ability to associate a&nbsp;<em>new&nbsp;</em>cloud account with your existing RackConnect v2.0 configuration, which will enable you to experience RackConnect v3.0 without deactivating your existing RackConnect v2.0 environment. Note that only&nbsp;<em>next generation cloud servers</em>&nbsp;will be compatible with the migration process to RackConnect v3.0. We will provide more details about this process as they become available.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="4" name="4"></a>Can I use a Brocade ADX 1000 as my RackConnect v3.0 edge device?</h3>
+
+<p>No. Because of access list limitations, we currently support the Brocade ADX 1000 devices only in the connected device role. For a full list of network devices that are compatible with RackConnect v3.0, see <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison" target="_blank">RackConnect Network Device Comparison</a>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="5" name="5"></a>Does RackConnect v3.0 support IPv6?</h3>
+
+<p>Not yet — but support for IPv6 is anticipated for early 2016.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="6" name="6"></a>Does RackConnect v3.0 support Managed Colocation environments?</h3>
+
+<p>Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Rackspace Network Security team. Customer-managed network devices are not supported. For more details about RackConnect v3.0 compatibility with other Rackspace offerings, see <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility-matrix" target="_blank">RackConnect v3.0 Compatibility Matrix</a>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="7" name="7"></a>How do I get RackConnect v3.0?</h3>
+
+<p>&nbsp;</p>
+
+<p>The answer varies based on whether you are an existing Rackspace customer:</p>
+
+<ul>
+	<li>If you are new to Rackspace, contact a member of our Sales team for help. For details about how to contact our Sales teams, go to <a href="http://www.rackspace.com/information/contactus/" target="_blank">Contact Rackspace</a>.</li>
+	<li>If you are an existing Rackspace cloud-only customer, contact a member of our Sales team for help. For details about how to contact our Sales team, go to&nbsp;<a href="http://www.rackspace.com/information/contactus/" target="_blank">Contact Rackspace</a>.</li>
+	<li>If you are an existing Rackspace dedicated-only customer, contact your&nbsp;account manager&nbsp;for help in getting RackConnect v3.0 set up in your environment.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a id="isitpossible" name="isitpossible"></a>Is it possible to attach a RackConnect v3.0 cloud network to pre-existing cloud servers?</h3>
+
+<p>Yes, but with the following caveats:</p>
+
+<p>Note that <em>pre-existing cloud servers</em> refers to cloud servers that were built before RackConnect v3.0 was associated with the cloud account.</p>
+
+<ul>
+	<li>For the best possible experience, we recommend using&nbsp;a clean cloud account (meaning a cloud account with no pre-existing cloud servers) with RackConnect v3.0.</li>
+	<li>If the pre-existing cloud servers are using&nbsp;PublicNet, you must&nbsp;remove PublicNet&nbsp;before attempting to add a RackConnect v3.0 cloud network to the cloud server.</li>
+	<li>If you are a Managed Operations customer and need help detaching PublicNet,&nbsp;contact your Rackspace support team for assistance.</li>
+	<li>If the pre-existing cloud servers are using&nbsp;ServiceNet, the ServiceNet IP address will change because ServiceNet will be&nbsp;detached and then re-attached&nbsp;to apply the appropriate security policies. Note that ServiceNet in RackConnect v3.0 is highly restricted and cannot be used for communication between&nbsp;cloud servers.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3><a id="8" name="8"></a>What network subnet (CIDR) should I assign to my RackConnect v3.0 cloud network?</h3>
+
+<p>See the&nbsp;<a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-limitations#cloudnetworks">Cloud Networks</a>&nbsp;section of <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-limitations" target="_blank">RackConnect v3.0 limitations</a>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="9" name="9"></a>What requirements must be met to implement RackConnect v3.0 in my environment?</h3>
+
+<p>For the full list of requirements, see <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-requirements" target="_blank">RackConnect v3.0 requirements</a>.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="10" name="10"></a>Whom do I contact for help with RackConnect v3.0?</h3>
+
+<p>Because RackConnect spans both your cloud and dedicated environments, you can contact your cloud or dedicated hosting support teams for help with RackConnect. If you are certain that the issue you are experiencing is directly related to your cloud servers, we recommend contacting your cloud hosting team first. However, if you are certain that the issue is related to your network device, we recommend contacting your dedicated hosting team first. For details about how to contact your support teams, visit the <a href="http://www.rackspace.com/knowledge_center/support" target="_blank">Contact Us</a> page.</p>
+
+<p>&nbsp;</p>
+
+<h3><a id="11" name="11"></a>Why do I receive 403 Forbidden HTTP status code responses when I try to build RackConnect v3.0 cloud servers by using the Cloud Servers API or the nova client?</h3>
+
+<p>By default, when you use the Cloud Servers API or nova client to build cloud servers, the servers are built with a PublicNet network. However, RackConnect v3.0 does not support PublicNet and restricts you from building cloud servers with PublicNet attached on RackConnect v3.0 linked cloud accounts. This restriction is likely the reason that you are receiving <code>403 Forbidden</code> responses. Following are details for resolving this error:</p>
+
+<ul>
+	<li>When building a cloud server using the nova client <code>boot</code> command, include the <code>--no-public</code> option to prevent the PublicNet network from being attached to the server. Note that you can also&nbsp;use the <code>--no-service-net</code> option with the nova client <code>boot</code> command to keep the ServiceNet network from being attached to a cloud server. However, consider that ServiceNet is required for cloud servers created in cloud accounts with a <a href="http://www.rackspace.com/managed-cloud/" target="_blank">Managed Operations</a> service level.</li>
+	<li>With the Cloud Servers API, specify the cloud network that you want to attach to the cloud server. If you specify one or more networks, your server is attached to only those networks. See the <a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/CreateServers.html">Create Server</a> section of the&nbsp;<em>Next-Generation Cloud Servers Developer Guide</em>&nbsp;for more information.</li>
+</ul>

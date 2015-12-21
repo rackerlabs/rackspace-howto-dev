@@ -1,0 +1,31 @@
+---
+node_id: 1397
+title: Content Caching for Cloud Load Balancers
+permalink: article/content-caching-for-cloud-load-balancers
+type: article
+created_date: '2012-05-21 18:23:04'
+created_by: RackKCAdmin
+last_modified_date: '2013-12-11 17:5532'
+last_modified_by: jered.heeschen
+products: Cloud Load Balancers
+categories: Load Balancing
+body_format: tinymce
+---
+
+<p>The Cloud Load Balancers product has a Content Caching feature that stores recently-accessed files on the load balancer for easy retrieval by web clients.</p><h4 id="gettingstarted">Getting started</h4><ul><li><a href="#howenable">How do I enable content caching?</a></li><li><a href="#benefits">What are the benefits of content caching?</a></li><li><a href="#workwell">What kind of files work well with content caching?</a></li></ul><h4 id="cachingdetails">Caching details</h4><ul><li><a href="#maxsize">Is there a maximum file size that can be cached?</a></li><li><a href="#ttl">How long is content cached?</a></li><li><a href="#purge">Can I choose how long files will be cached?</a></li><li><a href="#share">Do nodes share a cache?</a></li><li><a href="#failover">Does cache carry over in a failover situation?</a></li></ul><h4 id="filetypes">File types</h4><ul><li><a href="#filetypes">What file types are supported for content caching?</a></li><li><a href="#nocache">Can I exclude specific file types?</a></li></ul><hr /><h3 id="gettingstarted">Getting started</h3><p><a id="howenable" name="howenable"></a></p><h4 id="howdoienablecontentcaching">How do I enable content caching?</h4><p>Content caching can be enabled through our <a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/index.html">Cloud Load Balancers API</a>&nbsp;or the <a href="https://mycloud.rackspace.com" target="_blank">Cloud Control Panel</a>.</p><p>Content caching can be enabled or disabled for a load balancer in the Cloud Control Panel by going to its details screen, scrolling down to the Optional Features section, and clicking the pencil icon next to Content Caching.</p><p><img src="/knowledge_center/sites/default/files/field/image/lbcontentcache.png" alt="" width="360" border="2" /></p><p><a id="benefits" name="benefits"></a></p><h4 id="whatarethebenefitsofcontentcaching">What are the benefits of content caching?</h4><p>Content caching improves the performance of a web site by temporarily storing data that was recently accessed. While it’s cached, requests for that data will be served by the load balancer instead of making another query to a web server behind it.</p><p>The result is improved response times for those requests and less load on the web server.</p><p><a id="workwell" name="workwell"></a></p><h4 id="whatkindoffilesworkwellwithcontentcaching">What kind of files work well with content caching?</h4><p>Content caching works well for files that don’t change or that rarely change. Most images and static content are good candidates for content caching.</p><p>You don’t want to cache files that would change regularly or would be dynamically generated for different site visitors.</p><h3 id="cachingdetails">Caching details</h3><p><a id="maxsize" name="maxsize"></a></p><h4 id="isthereamaximumfilesizethatcanbecached">Is there a maximum file size that can be cached?</h4><p>The maximum file size per cached item is 2 MB.</p><p><a id="ttl" name="ttl"></a></p><h4 id="howlongiscontentcached">How long is content cached?</h4><p>Up to 10 minutes, depending on the load and amount of traffic being handled by the load balancer host.</p><p>If a cached file is requested shortly before it will expire, the load balancer will retrieve a new copy of the file early to prevent the file from being uncached during a period of heavy traffic.</p><p><a id="purge" name="purge"></a></p><h4 id="canichoosehowlongfileswillbecached">Can I choose how long files will be cached?</h4><p>No, not at this time. You cannot purge a file from the cache manually, but it will be automatically removed when its cache time expires.</p><p><a id="share" name="share"></a></p><h4 id="donodesshareacache">Do nodes share a cache?</h4><p>No. Each node has its own cache, separate from other load-balanced nodes.</p><p><a id="failover" name="failover"></a></p><h4 id="doescachecarryoverinafailoversituation">Does cache carry over in a failover situation?</h4><p>No. If a failover occurs the load balancer will retrieve a fresh copy of a file from the failover host.</p><h3 id="filetypes">File types</h3><p><a id="filetypes" name="filetypes"></a></p><h4 id="whatfiletypesaresupportedforcontentcaching">What file types are supported for content caching?</h4><p>At this time the following file extensions are cached:</p><pre><code>.png
+.gif
+.jpg
+.jpeg
+.ico
+.wav
+.mp3
+.flv
+.mpeg
+.js
+.css
+.mp4
+.swf
+</code></pre><p><a id="nocache" name="nocache"></a></p><h4 id="caniexcludespecificfiletypes">Can I exclude specific file types?</h4><p>Yes. Have your web server set the <strong>Cache-Control</strong> header to <strong>no-cache</strong> for requests for the file types you don’t want cached.</p><p>You can set this header in apache by adding a config block similar to the following to your apache config:</p><pre><code>&lt;FilesMatch "\.(ico|flv|jpg|jpeg)$"&gt;
+    Header set Cache-Control "no-cache"
+&lt;/FilesMatch&gt;
+</code></pre><p>Replace the extensions in the “ico|flv|jpg|jpeg” section with the extensions for which you want to bypass caching, making sure to put a “|” character between each extension.</p>

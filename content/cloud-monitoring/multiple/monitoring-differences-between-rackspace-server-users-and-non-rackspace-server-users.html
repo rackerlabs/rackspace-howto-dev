@@ -1,0 +1,108 @@
+---
+node_id: 4104
+title: 'Monitoring: Differences Between Rackspace Server Users and Non-Rackspace Server Users'
+permalink: article/monitoring-differences-between-rackspace-server-users-and-non-rackspace-server-users
+type: article
+created_date: '2014-06-16 21:02:46'
+created_by: maria.abrahms
+last_modified_date: '2014-10-10 21:5110'
+last_modified_by: jered.heeschen
+products: Cloud Monitoring
+categories: 'Control Panel Software,Monitoring and Troubleshooting,Account Services'
+body_format: tinymce
+---
+
+<p>Rackspace Cloud Monitoring can be used on Rackspace servers and non-Rackspace servers. When using a Rackspace server, you can be a managed or an unmanaged user. There are some differences between what you can do in any one of these circumstances. This page describes those differences.</p>
+
+<p>Please Note: The <strong>Rackspace Managed </strong><strong style="line-height: 20.7999992370605px;">Infrastructure</strong><strong>&nbsp;Servers</strong>&nbsp;column (in the middle) overlaps at times with both the <strong><span style="line-height: 20.7999992370605px;">Rackspace&nbsp;</span>Managed </strong><strong>Operations Servers</strong>&nbsp;and <strong>Unmanaged&nbsp;Non-Rackspace Servers</strong> as the table indicates. There are no managed non-Rackspace servers.</p>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<th><span style="font-weight: bold; line-height: 20.7999992370605px; text-align: center;">Rackspace&nbsp;</span>Managed Operations Servers</th>
+			<th><span style="font-weight: bold; line-height: 20.7999992370605px; text-align: center;">Rackspace&nbsp;</span>Managed Infrastructure Servers</th>
+			<th>Unmanaged Non-Rackspace Servers</th>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<p>Entities for Rackspace servers and databases are managed automatically, this means:</p>
+
+			<ul>
+				<li>Monitoring entities are created automatically for new Cloud Servers or new Cloud Database.</li>
+				<li>When a Cloud Server or Cloud Database is deleted, the associated entity is deleted in monitoring.</li>
+				<li>When the Cloud Server name is changed, the name is changed in monitoring automatically. (You cannot change the instance name for Cloud Database)</li>
+			</ul>
+			</td>
+			<td>
+			<p>Entities for non-Rackspace servers and databases must be managed manually, this means:</p>
+
+			<ul>
+				<li><span>Monitoring entities need to be created manually for new servers</span> <span style="color: #000000;">.</span> When configuring the default monitoring agent, you either select an entity you already created for it,or let the setup process create one for you.</li>
+				<li>When a server is deleted, you must delete the associated monitoring entity through the API or CLI.</li>
+				<li>When the server name is changed, you must manually change the name in monitoring.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<p class="p1">The label for Rackspace Cloud Servers can only be changed on the Cloud Server directly. The change will be propagated to monitoring system quickly.</p>
+
+			<p class="p1">The instance name for Cloud Database cannot be changed.</p>
+			</td>
+			<td>CAN delete monitoring entities or change the label for servers.</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Have the default notification plan: <strong>npTechnicalContactsEmail</strong> and have an additional notification entry: <strong>npManaged</strong></p>
+			</td>
+			<td colspan="2">Have the default notification plan,&nbsp;<strong>npTechnicalContactsEmail</strong>, only.</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<p>The agent only needs the agent token to authenticate with the monitoring server. This value is stored as <strong>monitoring_token</strong> in the agent configuration file.</p>
+
+			<p>The agent is able to identify the server it is installed on to the server.</p>
+			</td>
+			<td>
+			<p>The agent needs the agent token to authenticate with the monitoring server. This value is stored as <strong>monitoring_token</strong> in the agent configuration file.</p>
+
+			<p>In addition, the agent needs to know which entity it is installed on. This value is the <strong>agent_id</strong> associated with the entity on the monitoring server. This is also a field in the agent configuration file</p>
+
+			<p>If you are going to create an image out of a non-Rackspace server to be used to spin up more servers, you need to remove the <strong>agent_id</strong> field (<em>before you generate the image</em>) in the agent configuration file that is generated when you run agent setup. Otherwise, the agent will be associated with the same entity that the image was created from and the checks won't work properly.</p>
+
+			<p>Agent configuration file location:</p>
+
+			<ul>
+				<li>Ubuntu, CentOS: /etc/rackspace-monitoring-agent.cfg</li>
+				<li>Windows: c:\ProgramData\Rackspace Monitoring\config\rackspace-monitoring-agent.cfg</li>
+			</ul>
+
+			<p>Learn more about agent configuration with the <a href="http://www.rackspace.com/knowledge_center/article/install-the-cloud-monitoring-agent">Install the Cloud Monitoring Agent</a> article.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>By default, the monitoring agent is installed and turned ON and the monitoring is configured automatically. For details, see Managed accounts Hosting (<a href="http://rackspace.com/managed-hosting/" style="background-color: transparent;">rackspace.com/managed-hosting/</a>).</p>
+			</td>
+			<td colspan="2">
+			<p>&nbsp;</p>
+
+			<p>By default, the monitoring agent must be manually installed. For details, see&nbsp;<a href="http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/install-configure.html#agent-config-manual">Manually Configure the Agent</a> in the <em>Cloud Monitoring Getting Started Guide</em>.</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">For Cloud Database customers, the monitoring agent is installed with monitoring configured automatically, by default. For details, see Cloud Database documentation (<a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html">http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html</a>).</td>
+			<td colspan="1">N/A</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+			<p>You can access some monitoring features through the Control Panel and all the features through API. You can see more monitoring features, as well as&nbsp;metrics, through the <a href="https://intelligence.rackspace.com">Cloud Intelligence&nbsp;interface</a>.&nbsp;</p>
+			</td>
+			<td>
+			<p><span style="line-height: 20.7999992370605px;">You can see monitoring features, as well as</span><span style="line-height: 20.7999992370605px;">&nbsp;metrics, through the&nbsp;</span><a href="https://intelligence.rackspace.com" style="line-height: 20.7999992370605px;">Cloud Intelligence&nbsp;interface</a><span style="line-height: 20.7999992370605px;">.&nbsp;</span></p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>

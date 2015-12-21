@@ -1,0 +1,77 @@
+---
+node_id: 1177
+title: Rackspace Cloud Essentials - Cloud Server Image Limitations
+permalink: article/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations
+type: article
+created_date: '2011-08-05 21:56:07'
+created_by: RackKCAdmin
+last_modified_date: '2014-12-05 00:2511'
+last_modified_by: jered.heeschen
+products: Cloud Servers
+categories: 'Resizing,Server Images'
+body_format: tinymce
+---
+
+<p>You have just learned how to <a href="http://www.rackspace.com/knowledge_center/index.php/Restoring_a_server_from_a_Snapshot">restore servers from an image</a>. These images are ideal for use as templates or "gold images", so that you can easily restore to a known configuration or rapidly deploy additional Cloud Servers. This system was designed primarily to speed deployment of new servers and not as a robust backup solution. As such, there are a number of practical limitations in place:</p>
+
+<h3>All</h3>
+
+<ul>
+	<li>
+	<p>Cloud Server images are good for storing configuration and static data but <strong>are not a reliable way to back up a dynamic database!</strong> We recommend using standard backup tools such as mysqldump or the SQL Server Management Studio for this task. Backing up your database is recommended before creating an image of your Cloud Server. If you do want to create an image of a server that contains a database, you must take the database down, initiate the image creation, and restart the database when the server reaches the appropriate task state. For details on the task monitoring process, see <a href="http://www.rackspace.com/knowledge_center/article/using-task-states-with-server-imaging" target="_self">Using Task States With Server Imaging</a>. For instructions on using Cloud Backup to back up a database, see&nbsp;<a href="/knowledge_center/article/rackspace-cloud-backup-backing-up-databases" target="_blank">Rackspace Cloud Backup - Backing up Databases</a>.</p>
+	</li>
+	<li>
+	<p>Cloud Server images do not include Cloud Block Storage volumes in their data, even if the volume is used as the boot volume. &nbsp;For information on making snapshots of Cloud Block Storage volumes, see&nbsp;<a href="/knowledge_center/article/create-and-use-cloud-block-storage-snapshots" target="_blank">Create and Use Cloud Block Storage Snapshots</a>.</p>
+	</li>
+	<li>
+	<p>I/O-optimized&nbsp;Cloud Servers images only capture the system disk,&nbsp;<strong>not any attached data disks</strong>. Our Cloud Backup service can back up data disks to Cloud Files; see <a href="/knowledge_center/getting-started/cloud-backup" target="_blank">Getting Started with Rackspace Cloud Backup</a> for details and instructions.</p>
+	</li>
+	<li>
+	<p>While you can import images into the Rackspace open cloud using Cloud Images, you'll only be able to boot a server from such an image if it's been properly prepared for use in the Rackspace open cloud.&nbsp; See the Knowledge Center article <a href="/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-open-cloud">Preparing an image for import into the Rackspace open cloud</a>&nbsp;for details.</p>
+
+	<p><strong>Note</strong>: Image import is not available for the First-Generation Cloud servers. All servers based on the OpenStack architecture can have images exported and imported between accounts. For more information, see the&nbsp;<a href="http://www.rackspace.com/knowledge_center/article/cloud-images-frequently-asked-questions" target="_self">Cloud Images FAQ</a>.</p>
+	</li>
+	<li>
+	<p>While you can download First-Generation cloud images and images exported from the Rackspace open cloud,&nbsp;whether those images will work in another cloud or in your local virtualization solution depends upon the target cloud or local solution.&nbsp; Consult your vendor for details.</p>
+
+	<p><strong>Note</strong>: Not all images may be exported from the Rackspace open cloud.&nbsp; For more information, see the <a href="http://www.rackspace.com/knowledge_center/article/cloud-images-frequently-asked-questions" target="_self">Cloud Images FAQ</a>.</p>
+	</li>
+	<li>
+	<p>Images go through several stages, from preparing the server data for the imaging and the actual copy of the image to Cloud Files. The imaging process can take several hours, and can fail if you're very close to the maximum disk size for images or if you have an extremely large number of files.</p>
+
+	<p>You can monitor the tasks involved in this process. For information on the task monitoring process, see <a href="http://www.rackspace.com/knowledge_center/article/using-task-states-with-server-imaging" target="_self">Using Task States With Server Imaging</a>.</p>
+	</li>
+	<li>
+	<p>Imaging processes can have their start delayed if there are a large number of image requests at one time for a group of servers. The number of concurrent images are limited in order to keep the disk activity of multiple images from affecting performance on a host. If the image takes longer than 24 hours to complete, contact Rackspace Cloud support.</p>
+	</li>
+	<li>
+	<p>If your image fails more than once and you're sure you aren't exceeding the image limits, contact Rackspace Cloud support. Our admins may be able to succeed where our automated processes do not.</p>
+	</li>
+</ul>
+
+<h3>Linux</h3>
+
+<ul>
+	<li>
+	<p>On a First-Generation Linux Cloud Server current volume size cannot be more than <strong>250GB</strong> and current inode usage should not be more than 3 million. Exceeding those limits will cause an image&nbsp;request to fail (though in most cases we can help you work around the inode limit). You can check how much disk space you are currently using by running the command "<strong>df -h</strong>", and your inode usage can be viewed with "<strong>df -i</strong>". There are no limits on image disk size or inode usage for Standard&nbsp;Cloud Servers at this time.&nbsp;General Purpose and I/O servers cannot be built from images with system volumes larger than 40GB.</p>
+	</li>
+	<li>
+	<p>If you reduce your disk usage below the limits an image&nbsp;still may not succeed. The total size of your instance's virtual disk includes space allocated behind the scenes to track changes between images as well as space that used to be allocated to deleted files. As a result, having several images or having grown the disk in the past can cause the virtual disk size to exceed the limit even if the current filesystem inside of an instance is below the limit.</p>
+	</li>
+	<li>
+	<p>When an image&nbsp;is attempted the system runs a process that tries to reclaim space that has been freed by deleting files and images. That process continues even if the image is aborted because of disk limits at the time the image begins. That means that in some cases, trying an image&nbsp;again about a half hour after it fails could result in a successful image thanks to that cleanup operation.</p>
+	</li>
+</ul>
+
+<h3>Windows</h3>
+
+<ul>
+	<li>
+	<p>On a First-Generation&nbsp;<strong>Windows</strong> Cloud Server, current <em><strong>or previous</strong></em> disk usage cannot exceed <strong>250GB</strong>. Due to limitations with the Windows filesystem, the underlying virtual hard disk cannot shrink once it has expanded. Therefore, if you have resized your server larger than 250GB, our Imaging system will not be able to take an image of the server. We recommend taking an On-Demand image of your configuration before you reach 250GB of data on a first-generation Windows machine for this reason. &nbsp;There are no limits on image disk size for Standard Windows Cloud Servers at this time.&nbsp;General Purpose and I/O servers cannot be built from images with system volumes larger than 40GB.</p>
+	</li>
+	<li>
+	<p>If you take an image&nbsp;of a Windows Cloud Server that is configured to be a Domain Controller (DC), you will be unable to restore from that image. Our build system relies on the local Administrator account to perform configuration tasks, and that account becomes disabled once a server is promoted to be a DC. If you wish to create an image&nbsp;of a server that is also a Domain Controller, you must first demote it from being a DC before performing the image.</p>
+	</li>
+</ul>
+
+<p>As we continue developing our services some of these potential issues will go away. Right now, however, this represents the practical experience of our Fanatical Support staff, and we feel it is important to share it with you and set correct expectations. Now that you know how to create and connect to a server, configure security, and save your work - the next step is to upload your content to the server for use with your web applications.</p>

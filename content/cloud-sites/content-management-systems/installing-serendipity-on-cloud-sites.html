@@ -1,0 +1,30 @@
+---
+node_id: 693
+title: Installing Serendipity on Cloud Sites
+permalink: article/installing-serendipity-on-cloud-sites
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2014-08-25 03:3313'
+last_modified_by: rose.contreras
+products: Cloud Sites
+categories: Content Management Systems
+body_format: tinymce
+---
+
+<p><strong>NOTE:</strong> This article refers to the <a href="https://manage.rackspacecloud.com/" target="_blank">Cloud Sites Control Panel</a>. You can access this interface from the <a href="https://mycloud.rackspace.com/" target="_blank">Cloud Control Panel</a> by clicking your username in the upper-right corner of the control panel and selecting Cloud Sites Control Panel.<em><br /></em></p>
+<ol>
+<li>If you have not already done so, go to <a class="external free" title="http://www.s9y.org/12.html" href="http://www.s9y.org/12.html" rel="nofollow">http://www.s9y.org/12.html</a> and download the latest full release of Serendipity.</li>
+<li>Create your new domain from the Cloud Sites Control Panel. If you need assistance, please see <a class="new" title="How do I add a website? (page does not exist)" href="/knowledge_center/index.php?title=How_do_I_add_a_website%3F&amp;action=edit&amp;redlink=1">How do I add a website?</a></li>
+<li>Once the domain has finished creating, create your database. To do this, click Hosting --&gt; Cloud Sites from the left sidebar, then select your website from the menu. Scroll down to the Website Features section and choose "Add New" next to Databases. Type in whatever name you would like to call the DB and select MySQL 5. Type in a username and password of your choice, then click Finish. (You may want to write down the information provided -- the hostname, database name, database username and database password.)</li>
+<li>Extract the content of the Serendipity file you downloaded earlier to your local computer.</li>
+<li>Open up your FTP client software and login to your new domain. If you are not familiar with uploading content, check out <a title="What FTP software should I use?" href="/knowledge_center/index.php/What_FTP_software_should_I_use%3F">What FTP software should I use?</a> and use the information to connect provided in <a href="http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients">Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients</a>. Your best bet will be to upload (to your web/content folder) everything inside the ‘serendipity’ folder contained within the .zip or tar.gz file you downloaded.</li>
+<li>Once the files have finished uploading, you are ready to get started with the installation of Serendipity and its settings.</li>
+<li>Now visit your URL, www.yourdomain.com. You will see the installation page.</li>
+<li>Click Simple Installation on the install screen.</li>
+<li>Fill in the required information for your database that you wrote down when you set it up earlier.</li>
+<li>Customize your General Settings information.</li>
+<li>Review to make sure all information is correct.</li>
+<li>Click the Complete Installation button.</li>
+<li>Congratulations, you have successfully installed your Serendipity site.</li>
+</ol>

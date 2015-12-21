@@ -1,0 +1,228 @@
+---
+node_id: 3809
+title: Swift Filesystem for Hadoop
+permalink: article/swift-filesystem-for-hadoop
+type: article
+created_date: '2013-12-13 15:52:48'
+created_by: david.dobbins
+last_modified_date: '2015-09-01 16:2544'
+last_modified_by: catherine.richardson
+products: Cloud Servers
+categories: Apache
+body_format: tinymce
+---
+
+<div>
+<p>The Swift filesystem for Hadoop (swiftfs, for short) is a Hadoop file system implementation that allows applications such as MapReduce, Pig, and Hive to read and write directly to containers in an OpenStack Swift object store such as Rackspace Cloud Files. A collaborative effort between Rackspace, Hortonworks, and Mirantis, this work was done as a part of <a href="https://issues.apache.org/jira/browse/HADOOP-8545">HADOOP-8545</a> and merged into Hadoop as a part of version 2.3.0.</p>
+
+<h3>Why is swiftfs important?</h3>
+
+<p>swiftfs separates the compute resources of the cluster from a storage resources, allowing each to have different life spans. This separation is beneficial if you need long-term data storage but only periodically need compute resources to process that data.</p>
+
+<p>Also, if you are already using Rackspace Cloud Files to store your data, you can process it in place without copying it into your cluster's Hadoop Distributed File System (HDFS).</p>
+
+<h3>How do I use swiftfs?</h3>
+
+<p>File system URLs for Swift take the following form:</p>
+
+<pre>
+swift://acontainer.aservice/path/to/files</pre>
+
+<p>The different parts of the URL are explained in the following table:</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="top" width="258">
+			<p>swift://</p>
+			</td>
+			<td valign="top" width="258">
+			<p>UThe prefix that passes file system requests to the Swift file system.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>acontainer</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The name of the container in Swift that contain the objects to be accessed.</p>
+
+			<p>Container names must conform to <a href="http://tools.ietf.org/html/rfc952">RFC952</a> restrictions for hostnames, that is, the characters A-Z, numbers 0-9, and the hyphen (-).</p>
+
+			<p>Nonconforming container names are inaccessible by swiftfs.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>aservice</p>
+			</td>
+			<td valign="top" width="258">
+			<p>A user-friendly "service" name. A service name maps to a collection of configuration entries in the Hadoop core-site.xml file that specify where the container is located (for example, rackspace-dfw).</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>/path/to/files</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The name of the object or objects in Swift to be referenced. Although Swift doesn't support paths, swiftfs attempts to interpret names that look like paths and behave appropriately. For example, an input path named <code>/path/to/*</code> would qualify all objects with names prefixed by <code>/path/to/</code>. Similarly, an output path of <code>/path/to/</code> would prefix the names of all newly created objects with <code>/path/to/</code>.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Example 1</strong></p>
+
+<p>Using Pig to read data from Swift:</p>
+
+<pre>
+A = LOAD 'swift://logdata.rack-dfw/2013/10/logfile-2013-10-01.txt' AS (a, b, c); 
+B = FOREACH A GENERATE a, null;</pre>
+
+<p><strong>Example 2</strong></p>
+</div>
+
+<div>
+<p>Copying from HDFS to a Swift container named <code>myfiles</code> in the Chicago (ORD) region:</p>
+
+<pre>
+hadoop fs -cp /user/joesmith/files/* swift://myfiles.rack-ord/</pre>
+
+<p>If your cluster is in a different region than your container, Hadoop generates traffic over the public (billable) network. To minimize cost and maximize performance, keep your Hadoop cluster and Cloud Files containers in the same region.</p>
+
+<h3>How do I configure swiftfs?</h3>
+
+<p>By default, Cloud Big Data clusters are preconfigured with service names for all of the Cloud Files regions. Currently these service names are as follows:</p>
+
+<ul>
+	<li>rack-dfw</li>
+	<li>rack-ord</li>
+	<li>rack-iad</li>
+	<li>rack-lon</li>
+	<li>rack-syd</li>
+	<li>rack-hkg</li>
+</ul>
+
+<p>Each of these services is seeded with the cloud credentials (Rackspace user name and API key) from your Cloud Big Data profile, if you supplied them. (For information about viewing your Rackspace API key, see <a href="http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key">View and reset your API key</a>.) Also, each service is configured appropriately to use the public or private network, depending on the Swift region and the location of your cluster.</p>
+
+<h3>How do I add services?</h3>
+
+<p>You might find that you need additional service names, perhaps to use different credentials or a different Swift endpoint. If so, you need to add the following entries for your new service to the Hadoop <code>/etc/hadoop/conf/core-site.xml</code> file on each node in your cluster. You also need to restart your cluster services after updating the configuration.</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="top" width="258">
+			<p><strong>Setting</strong></p>
+			</td>
+			<td valign="top" width="258">
+			<p><strong>Meaning</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.auth.url</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The keystone endpoint to authenticate against.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.tenant</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The tenant ID to use during authentication.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.username</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The username to authenticate with.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.password</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The password to authenticate with. Alternatively, you can use an API key for authentication.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.apikey</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The API key to authenticate with. Using an API key is an alternative to using a password; you must supply one or the other.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.useApikey</p>
+			</td>
+			<td valign="top" width="258">
+			<p>True or false value that indicates whether&nbsp; to authenticate with the API key rather than the password.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.region</p>
+			</td>
+			<td valign="top" width="258">
+			<p>The Swift region to use. This value is used to select the appropriate Swift endpoint from the service catalog.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.public</p>
+			</td>
+			<td valign="top" width="258">
+			<p>True or false value that indicates whether traffic goes over the public or private (ServiceNet) network. ServiceNet access works only for Swift containers in the same region as the cluster.</p>
+
+			<p>Traffic over the public network is subject to bandwidth charge.</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="258">
+			<p>fs.swift.service.aservice.location-aware</p>
+			</td>
+			<td valign="top" width="258">
+			<p>True or false value that indicates whether to enable location awareness for data within Swift. This setting is not currently supported for Rackspace Cloud Files.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>Example</strong></p>
+
+<pre>
+    &lt;property&gt;
+    &nbsp; &lt;name&gt;fs.swift.service.rack-dfw.auth.url&lt;/name&gt;
+    &nbsp; &lt;value&gt;https://auth.api.rackspacecloud.com/v2.0/tokens&lt;/value&gt;	
+    &lt;/property&gt;
+    &lt;property&gt;
+    &nbsp; &lt;name&gt;fs.swift.service.rack-dfw.username&lt;/name&gt;
+    &nbsp; &lt;value&gt;joesmith&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+    &nbsp; &lt;name&gt;fs.swift.service.rack-dfw.region&lt;/name&gt;
+    &nbsp; &lt;value&gt;DFW&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+    &nbsp; &lt;name&gt;fs.swift.service.rack-dfw.apikey&lt;/name&gt;
+    &nbsp; &lt;value&gt;74796C657264757264656E&lt;/value&gt;
+    &lt;/property&gt;
+    &lt;property&gt;
+    &nbsp; &lt;name&gt;fs.swift.service.rack-dfw.public&lt;/name&gt;
+    &nbsp; &lt;value&gt;false&lt;/value&gt;
+    &lt;/property&gt;</pre>
+
+<h3>Where can I find more information?</h3>
+
+<p>For additional information about Hortonworks Data Platform (HDP) in the Rackspace Cloud environment, see the Hortonworks blog post, <a href="http://hortonworks.com/blog/openstack-why-its-so-great-to-see-hdp-in-rackspace-cloud/"> OpenStack: why it’s so great to see HDP in Rackspace cloud.</a></p>
+</div>
+
+<p>&nbsp;</p>

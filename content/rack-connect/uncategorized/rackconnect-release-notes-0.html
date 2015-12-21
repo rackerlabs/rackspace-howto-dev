@@ -1,0 +1,104 @@
+---
+node_id: 2160
+title: RackConnect Release Notes
+permalink: article/rackconnect-release-notes-0
+type: article
+created_date: '2012-09-14 16:20:52'
+created_by: jonathan.hogue
+last_modified_date: '2015-09-04 20:0133'
+last_modified_by: constanze.kratel
+products: RackConnect
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>Below is a summary of features, updates, and changes in regards to RackConnect. Keep this page bookmarked for updates made periodically to RackConnect.</p>
+<h3>July 15, 2014</h3>
+<ul>
+<li>Added support for OnMetal servers</li>
+<li>RackConnect user passwords are now periodicaly changed</li>
+</ul>
+<h3>March 25, 2014</h3>
+<ul>
+<li>Added support for metadata value updates to move servers between load balancer pools</li>
+</ul>
+<h3>October 7, 2013</h3>
+<ul>
+<li>Support for HKG region</li>
+</ul>
+<h3>August 20, 2013</h3>
+<ul>
+<li>Support for F5 version 11</li>
+</ul>
+<h3><span style="font-size: medium;" data-mce-mark="1">July 30, 2013</span></h3>
+<ul>
+<li>Support for IAD region</li>
+</ul>
+<p>&nbsp;</p>
+<h3>April 9, 2013</h3>
+<ul>
+<li>Support for ASA software versions greater than 8.3</li>
+<li>Support for ASA X series firewalls</li>
+</ul>
+<p>&nbsp;</p>
+<h3>January 15, 2013</h3>
+<ul>
+<li>Support for Cloud Networks</li>
+<li>Automated quality control for each new RackConnect customer configuration. RackConnect will automatically create two cloud servers (via a test account which the customer will NOT be billed for)&nbsp;and perform several quality assurance checks before removing the servers and marking the configuration complete.</li>
+<li>The <a href="http://www.rackspace.com/knowledge_center/article/rackconnect-auto-nat-feature">AutoNAT</a> feature is now available</li>
+</ul>
+<p>&nbsp;</p>
+<h3>November 19, 2012</h3>
+<ul>
+<li>Support for Windows Server 2012</li>
+</ul>
+<h3>November 13, 2012</h3>
+<ul>
+<li>Changed the order of operations for cloud server builds for customers at the Managed Operations level so that the server builds, RackConnect automation runs, and then managed cloud automation runs. Managed cloud customers who run their own post-build automation should trigger their automation to start based on the completion of the managed cloud automation rather than RackConnect. For more information, consult <a href="http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers">How to Programmatically Determine the RackConnect Automation Status of Your Cloud Servers</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<h3>October 9, 2012</h3>
+<ul>
+<li>Network device configuration save and sync performance improvements</li>
+</ul>
+<p>&nbsp;</p>
+<h3>October 3, 2012</h3>
+<ul>
+<li>
+<p>Customers will be notified when a cloud server is unprocessable due to being built in a region that does not match the region in which their dedicated environment is deployed.</p>
+</li>
+<li>You may now use the Cloud Servers API to query the RackConnect Automation Status of your Cloud Servers.&nbsp;Instructions are posted <a href="http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers">here</a>.</li>
+</ul>
+<p>&nbsp;</p>
+<h3>August 13, 2012</h3>
+<ul>
+<li>Performance improvements for F5 packet filter changes&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<h3>August 1, 2012</h3>
+<ul>
+<li>Support for next generation Cloud Servers</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<h3>July 02, 2012</h3>
+<ul>
+<li>Customer API call to retrieve automation status&nbsp;</li>
+</ul>
+<ul>
+<li>Customer API call to retrieve automation status details&nbsp;</li>
+</ul>
+<ul>
+<li>Customer API call to retrieve gateway IP&nbsp;</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<h3>May 08, 2012</h3>
+<ul>
+<li>Add Network Policies which allow communication between Cloud accounts belonging to the same RackConnect Configuration&nbsp;</li>
+</ul>
+<ul>
+<li>Improve overall automation performance</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Known Issues</h3>
+<p><strong>Pre-9/6 Windows Managed Operations Cloud Server Snapshots Failing RackConnect</strong><br /><br />Description: Windows Managed Operations Cloud Server Snapshots fail RackConnect automation</p>
+<p>Cause: The agent is not able to correctly set the private IP when IPv6 is disabled, leading to an instance that does not have proper connectivity and thus fails RackConnect automation.<br /><br />Affects: Snapshots created from next generation Managed Operations Windows Servers where the Cloud Server from which the image is based was spun up before 9/6/12<br /><br />Workaround: Re-enable IPv6 on the base image before creating snapshots. See http://support.microsoft.com/kb/929852 for instructions.</p>

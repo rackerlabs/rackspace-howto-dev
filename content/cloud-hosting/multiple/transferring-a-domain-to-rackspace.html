@@ -1,0 +1,15 @@
+---
+node_id: 1517
+title: Serving Your Domain From a Rackspace Cloud Server
+permalink: article/transferring-a-domain-to-rackspace
+type: article
+created_date: '2012-07-24 00:44:41'
+created_by: RackKCAdmin
+last_modified_date: '2014-02-24 22:5637'
+last_modified_by: ross.diaz
+products: Cloud Hosting
+categories: 'Server Management,Server Migration,FAQ'
+body_format: tinymce
+---
+
+<p>Rackspace Cloud is not a domain registrar like GoDaddy, Tucows, or NameCheap. In order to serve your domain from a Rackspace Cloud Server, you will need to have already registered your domain with a valid registrar. In order to serve that domain from your Rackspace Cloud Server, it will be necessary to change the nameservers associated with the domain, so that traffic can be routed to your domain being served from your Cloud Server.</p><p>You can change the name servers for an existing domain to the Rackspace name servers by following these steps:</p><ol><li><p>Use the Rackspace Cloud Control Panel to create corresponding DNS records for your domain.</p></li><li><p>Log into your domain registrar's account and locate the section that specifies the name servers.</p></li><li>Change the name servers to the Rackspace Cloud name servers:</li></ol><ul style="margin-left: 40px;"><li><strong>dns1.stabletransit.com</strong></li><li><strong>dns2.stabletransit.com</strong></li></ul><p>The following name servers are associated with our dedicated hosting service, and will work as well:</p><ul style="margin-left: 40px;"><li><strong>ns.rackspace.com</strong></li><li><strong>ns2.rackspace.com</strong></li></ul><p>Changing the name servers at your registrar initiates the change that will direct DNS queries for your domain to the Rackspace name servers. You will still need to manage and renew your domain subscription through the original domain registrar.</p><p><strong>Notes</strong>:</p><ul><li><span style="line-height: 1.538em;">For most domains, DNS propagation can take up to 48 hours.</span></li><li><span style="line-height: 1.538em;">The only product the Rackspace Cloud offers where we&nbsp;<span style="line-height: 1.538em;"><em>can</em> act as domain registrar is for <a href="http://www.rackspace.com/cloud/sites/" target="_blank">Cloud Sites</a>.</span></span></li></ul><p>&nbsp;</p><h3>Related Information</h3><p><a title="Learn More About DNS" href="http://www.rackspace.com/knowledge_center/2315">Learn More About DNS</a></p>

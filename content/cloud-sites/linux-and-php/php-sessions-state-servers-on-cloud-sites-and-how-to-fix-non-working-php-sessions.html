@@ -1,0 +1,19 @@
+---
+node_id: 89
+title: PHP Sessions State Servers on Cloud Sites And How To Fix Non Working PHP Sessions
+permalink: article/php-sessions-state-servers-on-cloud-sites-and-how-to-fix-non-working-php-sessions
+type: article
+created_date: '2011-03-09 16:12:00'
+created_by: RackKCAdmin
+last_modified_date: '2013-05-16 19:4650'
+last_modified_by: jered.heeschen
+products: Cloud Sites
+categories: Linux and PHP
+body_format: tinymce
+---
+
+<p>Session state servers are being implemented for PHP applications. This will improve the performance of most sites by setting the default session handler to the state servers. Session data will be accessible from all PHP web nodes from a purpose built server pool instead of the local or network file system. This avoids common problems with performance, garbage collection, and sessions not following users to other servers.</p><p>Special care has been taken to ensure functionality is compatible with the default 'files' handler. Session save paths are still honored to emulate sharing of a file system directory. If you set the same save path between multiple sites on a single account it has the same effect as using a shared file system folder. If for some reason the session handler does not work, the original behavior can be restored in .htaccess with the following:</p><pre>php_value session.save_handler files
+</pre><p>&nbsp;</p><p>If you are experiencing a problem with the standard way sessions are stored, you can change how your PHP sessions are handled by using a .htaccess file. If your application currently explicitly sets the use of the 'files' handler, we suggest disabling it&nbsp; or explicitly setting it to 'redisr' to benefit from the performance of the state servers.</p><p><a id="How_do_I_make_the_changes.3F" name="How_do_I_make_the_changes.3F"></a></p><h2><span class="mw-headline">How do I make the changes?</span></h2><p>You can change how your PHP sessions are handled by using a .htaccess file containing the following directives:</p><pre>php_value session.save_path /mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions
+php_value session.save_handler files
+</pre><p>This changes the life time of the session and sets your application to save the session in a place of your choosing.</p><p>You will want to change the path of the last line in the example above to use your website's absolute path. <a title="How do I find my website's Linux path?" href="/knowledge_center/index.php/How_do_I_find_my_website%27s_Linux_path">Please see this article</a> to locate your website's absolute path.</p><p>Your website's absolute path should resemble this:<br /> <strong>/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content</strong></p><p><a id="Where_should_I_store_my_sessions.3F" name="Where_should_I_store_my_sessions.3F"></a></p><h2><span class="mw-headline">Where should I store my sessions?</span></h2><p>We recommend storing your sessions in a directory above the public-facing <strong>content</strong> directory, such as the <strong>web</strong> directory. The recommended practice is to login to your FTP and create a <strong>sessions</strong> directory within your <strong>web</strong> directory. At this point your session save path should be:<br /> <strong>/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions</strong></p><p>So the last line in your .htaccess file would resemble the following:</p><pre>php_value session.save_path /mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions
+</pre><p>&nbsp;</p>

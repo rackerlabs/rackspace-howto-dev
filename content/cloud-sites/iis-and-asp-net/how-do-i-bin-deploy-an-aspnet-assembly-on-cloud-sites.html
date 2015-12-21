@@ -1,0 +1,101 @@
+---
+node_id: 586
+title: Bin-deploy an ASP.NET assembly on Cloud Sites
+permalink: article/how-do-i-bin-deploy-an-aspnet-assembly-on-cloud-sites
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-06-12 19:1346'
+last_modified_by: kelly.holcomb
+products: Cloud Sites
+categories: IIS and ASP.NET
+body_format: tinymce
+---
+
+<p>On the ASP.NET platform, it's common to use a third-party assembly to provide access to features from your code that you find useful but that might not be available from the .NET framework. To do this, you deploy the assembly to the <strong>Bin</strong> directory, which is the reserved location in your application directory for assemblies. Then, you update your <strong>web.config</strong> file to load this assembly for use on your website. This process is commonly known as <em>bin-deploying</em> an assembly, or <em>binary deployment</em>.</p>
+
+<p>Read the following sections to learn how to bin-deploy an assembly:</p>
+
+<ul>
+	<li><a href="#Prerequisites">Prerequisites</a></li>
+	<li><a href="#Getting_Started">Get started</a></li>
+	<li><a href="#Obtaining_UrlRewriterNET">Obtain the assembly</a></li>
+	<li><a href="#Uploading_the_Assembly">Upload the assembly</a></li>
+	<li><a href="#Loading_the_Assembly_in_the_Webconfig">Load the assembly in the web.config file</a></li>
+	<li><a href="#Using_the_Assembly">Use the assembly</a></li>
+</ul>
+
+<h2 id="Prerequisites">Prerequisites</h2>
+
+<ul>
+	<li>You must have an existing Cloud Sites website. If you do not have one, see <a href="/knowledge_center/node/1132">Adding a new website</a>.</li>
+	<li>IIS and ASP.NET should be the default technology on the site or should, at a minimum, be enabled on this site.</li>
+	<li>The Rackspace cloud uses <a href="/knowledge_center/node/130">a modified medium trust configuration</a>. To function correctly, the assembly must allow partially trusted callers. If you do not know whether the assembly will work in medium trust, contact the vendor.
+	<ul>
+		<li>After confirming that the assembly does work in medium trust, continue to <a href="#Getting_Started">Get started</a>.</li>
+		<li>If you have a list of requirements for the assembly, contact Support to confirm whether the requirements are met.</li>
+		<li>Any assembly requiring full trust is not supported at this time.</li>
+	</ul>
+	</li>
+</ul>
+
+<h2 id="Getting_Started">Get started</h2>
+
+<p>To get started, you must obtain the assembly that you want to bin deploy. As an example, the instructions in this article bin-deploy <a class="external text" href="http://www.urlrewriter.net/" title="http://www.urlrewriter.net/">UrlRewriter.NET</a>, a URL rewriter for ASP.NET applications that do not have the URL Rewrite Module installed.</p>
+
+<h2 id="Obtaining_UrlRewriterNET">Obtain the assembly</h2>
+
+<p>The following steps use UrlRewriter.NET. Substitute with the assembly that you want to deploy.</p>
+
+<ol>
+	<li>Go to <a class="external free" href="http://www.urlrewriter.net/" title="http://www.urlrewriter.net/">http://www.urlrewriter.net/</a>.</li>
+	<li>Click the <strong>Download</strong> tab, and then click the <strong>source code</strong> link to download the binaries and source code.</li>
+	<li>Select one of the binary files, which is typically the first link under <strong>Newest Files</strong>.<br />
+	The most recent binary file at the time this article was written was <strong>UrlRewriterNet-1_8.zip</strong>.</li>
+	<li>If the download doesn't start within a few seconds, click the direct link.</li>
+	<li>Save the file to your computer.</li>
+	<li>Extract the <strong>Intelligencia.UrlRewriter.dll</strong> file.</li>
+</ol>
+
+<h2 id="Uploading_the_Assembly">Upload the assembly</h2>
+
+<p>To use the assembly from your website code, the module must be located in the <strong>Bin</strong> directory on your FTP server, which is the standard location for bin-deploying assemblies. Following the example, to bin-deploy <strong>Intelligencia.UrlRewriter.dll</strong>, <a href="/knowledge_center/node/738">connect to your website's FTP server and upload the DLL file</a> to the following directory (<strong>www.example.com</strong> is your website name):</p>
+
+<pre>
+/www.example.com/web/content/Bin
+</pre>
+
+<h2 id="Loading_the_Assembly_in_the_Webconfig">Load the assembly in the web.config file</h2>
+
+<p>Some assemblies require different definitions in the <strong>web.config</strong> file to work correctly. The best way to learn how to load an assembly is to consult the vendor's website. In this example, we are bin-deploying <strong>Intelligencia.UrlRewriter.dll</strong>, so we consulted the vendor's website and found <a class="external text" href="http://urlrewriter.net/index.php/support/configuration" title="http://urlrewriter.net/index.php/support/configuration">a help document that explains the configuration</a>. Using this information, you could load UrlRewriter.NET by using the following example <strong>web.config</strong> configuration:</p>
+
+<pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;configuration&gt;
+  &lt;configSections&gt;
+    &lt;section name="rewriter" 
+             requirePermission="false" 
+             type="Intelligencia.UrlRewriter.Configuration.RewriterConfigurationSectionHandler, Intelligencia.UrlRewriter" /&gt;
+
+  &lt;/configSections&gt;
+
+  &lt;system.web&gt;
+    &lt;httpModules&gt;
+      &lt;add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" /&gt;
+
+    &lt;/httpModules&gt;
+  &lt;/system.web&gt;
+
+  &lt;system.webServer&gt;
+    &lt;modules runAllManagedModulesForAllRequests="true"&gt;
+      &lt;add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule" /&gt;
+
+    &lt;/modules&gt;
+    &lt;validation validateIntegratedModeConfiguration="false" /&gt;
+  &lt;/system.webServer&gt;
+&lt;/configuration&gt;
+</pre>
+
+<h2 id="Using_the_Assembly">Use the assembly</h2>
+
+<p>Because of the vast amount of assemblies that can be bin-deployed, it's impossible to cover usage of them in this article. As with <a href="#Loading_the_Assembly_in_the_Webconfig">loading the assembly</a>, the best way to learn how to use an assembly is to consult the vendor's website. To learn how to use the <strong>Intelligencia.UrlRewriter.dll</strong> used in this example, <a href="/knowledge_center/node/642#Using_UrlRewriterNET">see the article on URL rewriting in ASP.NET</a>.</p>

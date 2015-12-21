@@ -1,0 +1,107 @@
+---
+node_id: 1462
+title: Creating DNS Records with Cloud DNS
+permalink: article/cloud-essentials-creating-a-dns-records-for-cloud-servers
+type: article
+created_date: '2012-07-15 05:02:31'
+created_by: RackKCAdmin
+last_modified_date: '2014-11-11 16:2016'
+last_modified_by: David Hendler
+products: Cloud Servers
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>Creating DNS records for your domain is easy to do within the <a href="https://mycloud.rackspace.com" target="_blank">Cloud Control Panel</a>. In this article, we will look at creating a DNS zone for your domain and adding basic A, MX, and CNAME records using the Cloud Control Panel.</p>
+
+<h4>Contents</h4>
+
+<ul>
+	<li><a href="#A">Adding a Domain</a></li>
+	<li><a href="#B">Adding an A Record</a></li>
+	<li><a href="#C">Adding a CNAME Record</a></li>
+	<li><a href="#D">Adding an MX Record</a></li>
+	<li><a href="#E">Deleting a Record</a></li>
+	<li><a href="#F">Deleting a Domain</a></li>
+	<li><a href="#G">What are the canonical DNS servers for Cloud Servers?</a></li>
+</ul>
+
+<h3 id="A">Adding a Domain</h3>
+
+<ol>
+	<li>Log into the <a href="https://mycloud.rackspace.com">Cloud Control Panel</a> and select <strong>DNS&nbsp;</strong>at the top.&nbsp;
+
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/1.png" /></p>
+	</li>
+	<li>Select <strong>Create Domain</strong> under <strong>Cloud DNS</strong> and enter in the domain name, email address, Time To Live (TTL), and then select <strong>Create Domain&nbsp;</strong>once more.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/2.png" /></p>
+
+	<p><em>Note: Time To Live indicates how log a DNS record is cached before it's updated.</em></p>
+	</li>
+	<li>You will see your domain listed in the domain section as well options to create other DNS records as well.</li>
+</ol>
+
+<h3 id="B">Adding an A Record</h3>
+
+<p>Next, let's go through the process of adding an A Record for your domain.</p>
+
+<ol>
+	<li>Log into the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>&nbsp;and select&nbsp;<strong>DNS</strong>&nbsp;at the top.</li>
+	<li>Select your Domain in the list and then select <strong>Add Record</strong> under Records. Select <strong>A/AAAA Record&nbsp;</strong>for the type and fill out the following fields accordingly.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/3.png" /></p>
+	</li>
+	<li>After you have entered everything, select <strong>Add Record</strong> and you are finished!</li>
+</ol>
+
+<h3 id="C">Adding a CName Record</h3>
+
+<p>Next, we will go through the process of setting up CNAME Records for your domain.</p>
+
+<ol>
+	<li>Log into the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>&nbsp;and select&nbsp;<strong>DNS</strong>&nbsp;at the top.</li>
+	<li>Select your Domain in the list and then select&nbsp;<strong>Add Record</strong>&nbsp;under Records. Select <strong>CNAME Record</strong>&nbsp;for the type and fill out the following fields accordingly.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/4.png" />&nbsp;</p>
+	</li>
+	<li>After you have entered everything, select&nbsp;<strong>Add Record</strong>&nbsp;and you are finished!</li>
+</ol>
+
+<h3 id="D">Adding an MX Record</h3>
+
+<p>Next, we'll go through the process of setting up MX Records for your domain.</p>
+
+<ol>
+	<li>Log into the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>&nbsp;and select&nbsp;<strong>DNS</strong>&nbsp;at the top.</li>
+	<li>Select your Domain in the list and then select&nbsp;<strong>Add Record</strong>&nbsp;under Records. Select&nbsp;<strong>MX Record</strong>&nbsp;for the type and fill out the following fields accordingly.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/5.png" /></p>
+	</li>
+</ol>
+
+<h3 id="E">Deleting a Record</h3>
+
+<p>Next, we'll go through the process of Deleting a DNS Record for your domain.</p>
+
+<ol>
+	<li>Log into the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>&nbsp;and select&nbsp;<strong>DNS</strong>&nbsp;at the top.</li>
+	<li>Click the gear icon next to the desired domain and then select <strong>Delete Record</strong>.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/6.png" /></p>
+	</li>
+</ol>
+
+<h3 id="F">Deleting a Domain</h3>
+
+<p>Next, we'll go through the process of Deleting a Domain.</p>
+
+<ol>
+	<li>Log into the&nbsp;<a href="https://mycloud.rackspace.com">Cloud Control Panel</a>&nbsp;and select&nbsp;<strong>DNS</strong>&nbsp;at the top.</li>
+	<li>Click the gear icon next to the desired domain and then select&nbsp;<strong>Delete Domain</strong>.
+	<p><img alt="" src="http://c15154024.r24.cf2.rackcdn.com/7.png" /></p>
+	</li>
+</ol>
+
+<h3 id="G">What are the canonical DNS servers for Cloud Servers?</h3>
+
+<p>If you're setting the canonical name servers for your domain with your domain registrar (the NS records), use the following addresses:</p>
+
+<pre>
+dns1.stabletransit.com
+dns2.stabletransit.com</pre>

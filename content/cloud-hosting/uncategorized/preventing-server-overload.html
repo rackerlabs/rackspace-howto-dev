@@ -1,0 +1,35 @@
+---
+node_id: 1496
+title: Prevent server overload with Cloud Load Balancers
+permalink: article/preventing-server-overload
+type: article
+created_date: '2012-07-24 00:13:47'
+created_by: RackKCAdmin
+last_modified_date: '2014-10-30 16:4110'
+last_modified_by: rose.contreras
+products: Cloud Hosting
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>One way that you can prevent a server from becoming overloaded is to use the Connection Throttling feature of Cloud Load Balancers. Connection throttling limits the number of simultaneous connections that are allowed from each IP address. This feature helps prevent malicious or abusive traffic to your server and its installed applications.</p>
+
+<h2>Before you begin</h2>
+
+<p>This procedure for configuring connection throttling assumes that you're working with an existing load balancer. If you don't have a load balancer yet, create one now by using the following instructions: Configuring a Load Balancer.</p>
+
+<h3>To configure connection throttling</h3>
+
+<ol>
+	<li>Log in to the Control Panel.</li>
+	<li>At the top of the Control Panel, click <strong>Load Balancers</strong></li>
+	<li>Click onthe <strong>Actions</strong> cog next to your load balancer, and select<strong>Edit Connection Throttling</strong> from the menu.<br />
+	The following pop-up window appears:<br />
+	<br />
+	<img alt="" height="210" src="/knowledge_center/sites/default/files/field/image/827-1496.png" width="529" /></li>
+	<li>Enter a value for <strong>Max. Connections</strong>, and then click<strong>Save Connection Throttling</strong>. You can specify a value between 1 and 100000.</li>
+	<li>Enter a value for <strong>Max. Connections. You can specify a value between 1 and 100000.</strong></li>
+	<li><strong>Click <strong>Save Connection Throttling</strong>.</strong></li>
+</ol>
+
+<p><strong>&nbsp;</strong></p>

@@ -1,0 +1,50 @@
+---
+node_id: 2025
+title: Accessing RackConnect Cloud Servers
+permalink: article/accessing-rackconnected-cloud-servers
+type: article
+created_date: '2012-08-21 19:24:07'
+created_by: juan.perez
+last_modified_date: '2015-07-14 18:1031'
+last_modified_by: kelly.holcomb
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>APPLIES TO:</strong> RackConnect v3.0, RackConnect v2.0</p>
+
+<p>There are several methods available for accessing your RackConnected cloud servers; this article provides an overview of some of these methods.</p>
+
+<h3>Direct access to RackConnected cloud servers via their public IP address</h3>
+
+<p>With RackConnect v2.0, if the automation feature <em>provision public IP address </em>is enabled on your RackConnected cloud account, then the RackConnect automation systems will automatically assign new public IP addresses to your newly built cloud servers. With RackConnect v3.0, automation features are no longer available, but you can still provision public IP addresses to your cloud servers by using the RackConnect v3.0 API. In either case, the public IP addresses assigned to your cloud servers are allocated out of one of your dedicated public IP blocks. A NAT (network address translation) entry is then configured on your RackConnect edge network device, which is a one-to-one association from the allocated dedicated public IP address to the cloud server’s ServiceNet IP address—in the case of RackConnect v2.0—or to its cloud network IP address—in the case of RackConnect v3.0.</p>
+
+<p>These dedicated public IP addresses may then be used to SSH or RDP directly to your cloud servers, as long as access is allowed. Access may be allowed via network policies with RackConnect v2.0. With RackConnect v3.0, access may be allowed via firewall access list entries created by the Network Security Team or via the Firewall Manager feature available within the <a href="https://my.rackspace.com/" target="_self">MyRackspace Portal</a>.</p>
+
+<p>You may view the IP addresses assigned to your cloud servers by querying the Cloud Servers API or by looking up the cloud server’s details in the <a href="https://my.rackspace.com/" target="_self">MyRackspace Portal</a> or the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>. For example, the following image shows the dedicated IP address—named RackConnect—for a fully deployed RackConnect cloud server in the <a href="https://my.rackspace.com/" target="_self">MyRackspace Portal</a>.</p>
+
+<p><img alt="" border="2" height="659" src="/knowledge_center/sites/default/files/field/image/2025.1.png" width="537" /><br />
+<em>Dedicated public IP address assigned to a fully deployed RackConnect cloud server</em></p>
+
+<p><strong>Note</strong>: Please disregard the initial public IP address assigned to your cloud servers when they are built; with RackConnect v2.0, the automation processes will deactivate the initial public IP address.</p>
+
+<h3>Alternative Methods of Connecting to Your RackConnect Cloud Servers</h3>
+
+<p>In the event that you have not provisioned dedicated public IP addresses to your RackConnect cloud servers, you may be able to use one of these alternative methods for connecting to these cloud servers:</p>
+
+<ul>
+	<li>
+	<p>You can connect to one of your dedicated servers, and then from that dedicated server, you can connect to one of your RackConnect cloud servers by utilizing its ServiceNet IP address—with RackConnect v2.0 cloud servers—or by using their cloud network’s IP address—with RackConnect v3.0 cloud servers. With RackConnect v2.0, this method requires that you have an appropriate “Dedicated to Cloud Server(s)” network policy deployed. With RackConnect v3.0, this method requires that you have an appropriate access list entry that allows this access.</p>
+	</li>
+	<li>
+	<p>Another option available is to connect directly to the console of the cloud server using the console option available within the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>.</p>
+	</li>
+	<li>
+	<p>Alternatively, if you are using a Cisco ASA as your RackConnect edge network device, it may be feasible to use a site-to-site VPN or client VPN solution to allow direct access to your cloud servers. With RackConnect v2.0, this option will also require that you have an appropriate “Dedicated to Cloud Server(s)” network policy deployed to allow your VPN network to access your cloud servers. With RackConnect v3.0, this option will require access list entries be created to allow your VPN network to access your cloud servers. Please contact us if you are interested in setting up a VPN solution with your RackConnect environment.</p>
+	</li>
+</ul>
+
+<p><strong>IMPORTANT NOTE</strong>: When connecting between your cloud and dedicated environments with RackConnect, you should always use the private IP addresses of your dedicated and cloud servers to avoid bandwidth charges.</p>
+
+<p>We hope that you have found this article helpful, but if you have any further questions, we are always here to help, so please reach out to us; contact information is available on the <a href="http://www.rackspace.com/knowledge_center/support" target="_blank">Contact Us</a> page.</p>

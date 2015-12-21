@@ -1,0 +1,15 @@
+---
+node_id: 661
+title: How to backup your MySQL database with phpMyAdmin
+permalink: article/how-to-backup-your-mysql-database-with-phpmyadmin
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2012-02-16 17:0620'
+last_modified_by: matt.wheeler
+products: Cloud Sites
+categories: Linux MySQL
+body_format: tinymce
+---
+
+<p><a name="Backing_Up_Your_MySQL_Database" id="Backing_Up_Your_MySQL_Database"></a></p><h2><span class="mw-headline">Backing Up Your MySQL Database</span></h2><ol><li>To manage your MySQL database, you'll first need to <a href="http://www.rackspace.com/knowledge_center/content/rackspace-cloud-sites-first-48-5-2-phpmyadmin-database-management-interface">login to the online manager (phpMyAdmin)</a>.</li><li>After you are logged into the online manager, click on a database or table in the left frame as shown in this example:<br /> <br /> <img src="http://c5018549.r49.cf2.rackcdn.com/phpmyadmin-dbs.png" alt="phpMyAdmin Databases" width="312" height="147" /><br /> <br /> The properties for this database or table will be displayed.<br /> &nbsp;</li><li>Then on the menu, click <strong>Export</strong>:<br /> <br /> <img src="http://c5018549.r49.cf2.rackcdn.com/phpmyadmin-export.png" alt="phpMyAdmin Export tab" /><br /> <br /> This interface will generate a backup file that can be used to recreate your database or table (it's actually just a file containing standard SQL statements).<br /> &nbsp;</li><li>To save the backup, you will need to check the box marked <strong>Save as file</strong>, so that phpMyAdmin will prompt you to download the resulting backup file. You can also change the name of the backup file and the compression--though the defaults are both fine if you would rather not change anything. If you do choose to use compression this will allow you to have a smaller backup file on your desktop if you are planning to keep it as a personal archive. The recommended setting is "<strong>gzipped</strong>":<br /> <br /> <img src="http://c5018549.r49.cf2.rackcdn.com/phpmyadmin-saveasfile.png" alt="phpMyAdmin Save As File" width="572" height="231" /><br /> &nbsp;</li><li>Finish by pressing the <strong>Go</strong> button; this may take a few moments to complete. You will then be prompted to save the file to your desktop.</li></ol><p><a name="Finish_Line" id="Finish_Line"></a></p><h2><span class="mw-headline">Finish Line</span></h2><p>Congratulations! You have just created a backup of your MySQL database!</p><p>If you experience a problem or you have further questions or concerns, please do not hesitate to contact our technical support 24x7 via phone, chat or by submitting a ticket through your control panel.</p>

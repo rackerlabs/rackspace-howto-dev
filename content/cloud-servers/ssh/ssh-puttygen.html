@@ -1,0 +1,145 @@
+---
+node_id: 426
+title: Generating RSA Keys With SSH - PuTTYgen
+permalink: article/ssh-puttygen
+type: article
+created_date: '2011-03-16 21:57:40'
+created_by: RackKCAdmin
+last_modified_date: '2015-06-18 17:3011'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+categories: SSH
+body_format: tinymce
+---
+
+<p>This article provides steps for generating RSA keys by using PuTTYgen on Windows for secure SSH authentication with OpenSSH.</p>
+
+<p>&nbsp;</p>
+
+<table class="toc" id="toc" summary="Contents">
+	<tbody>
+		<tr>
+			<td>
+			<div id="toctitle">
+			<h2>Contents</h2>
+			</div>
+
+			<ul>
+				<li class="toclevel-1"><a href="#Introduction">1 Introduction</a></li>
+				<li class="toclevel-1"><a href="#Generate_Keys">2 Generate Keys</a>
+				<ul>
+					<li class="toclevel-2"><a href="#Usethekeypair" target="_self">2.1 Use the Key Pair</a></li>
+					<li class="toclevel-2"><a href="#SpecifySSHonNew" target="_self">2.2 Specify Your SSH Key When Creating a New Cloud Server</a></li>
+				</ul>
+				</li>
+				<li class="toclevel-1"><a href="#Summary">3 Summary</a></li>
+				<li class="toclevel-1"><a href="#RelatedArticles" target="_self">4 Related Articles</a></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a id="Introduction" name="Introduction"></a></p>
+
+<h2>Introduction</h2>
+
+<p>One effective way of securing SSH access to your Cloud Server is to use a public/private key pair. This means that a <em>public</em> key is placed on the server and a <em>private</em> key is placed on your local workstation. Using a key pair makes it impossible for someone to log in by using just a password, as long as you set up SSH to deny password-based authentication.&nbsp;</p>
+
+<p><a id="Generate_Keys" name="Generate_Keys"></a></p>
+
+<h2>Generate Keys</h2>
+
+<p><a id="PuTTYgen" name="PuTTYgen"></a></p>
+
+<p>In Windows, use PuTTYgen to generate our public and private keys.</p>
+
+<ol>
+	<li>If needed, download PuTTYgen from the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY download page</a>.(PuTTYgen might have been installed previously with PuTTY or WinSCP.)</li>
+	<li>Launch the program, and then click the <strong>Generate</strong> button.<br />
+	The program generates the keys for you.</li>
+	<li>Enter a unique key passphrase in the <strong>Key passphrase</strong> and <strong>Confirm passphrase</strong> fields.<br />
+	For additional information on using passphrases, see <a href="http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows">Logging in with a SSH Private Key on Windows</a>.</li>
+	<li>Save the public and private keys by clicking the <strong>Save public key</strong> and <strong>Save private key</strong> buttons.</li>
+	<li>
+	<p>From the <strong>Public key for pasting into OpenSSH authorized_keys file field</strong> at the top of the window, copy all the text (starting with ssh-rsa) to your clipboard by pressing <strong>Ctrl-C</strong>.<br />
+	You need the this key available on your clipboard to paste either into the public key tool in the Control Panel or directly into the authorized keys on your cloud server.</p>
+	</li>
+</ol>
+
+<h3><a id="Usage" name="Usethekeypair"></a>Use the Key Pair</h3>
+
+<p class="MsoNormal">&nbsp;<span>You can use the RSA key pair in the following ways: </span></p>
+
+<ul>
+	<li><span><a href="#SpecifySSHonNew" target="_self">Specify your SSH key when creating a new Cloud Server.</a></span></li>
+	<li><span><a href="#Assigntoexisting" target="_self">Assign your SSH key to your existing Cloud Server through PuTTY</a>.</span></li>
+</ul>
+
+<h4><a name="SpecifySSHonNew"></a>Specify Your SSH Key When Creating a New Cloud Server</h4>
+
+<p>When you create a cloud server, you can add a new public key or assign an existing public key.</p>
+
+<p>Add a new public key when creating a cloud server</p>
+
+<ol>
+	<li>Under Advanced Options in&nbsp;the Create Server page, select a public key from the SSH key drop-down menu.</li>
+	<li>Click <strong>Create Server</strong>.</li>
+</ol>
+
+<p>Add an existing public key when creating a cloud server</p>
+
+<ol>
+	<li>Under Advanced Options in the Create Server page, click <strong>Manage SSH Keys</strong>.</li>
+	<li>Select a public key for your new cloud server from the SSH Keys list and click <strong>Add Public Key</strong>.</li>
+	<li>Enter the key name, select the region, and paste your entire public key into the <strong>Public Key</strong> field and click <strong>Add Public Key</strong>.</li>
+	<li>Confirm that your key is listed in the <strong>SSH Key</strong> list for your new server.</li>
+</ol>
+
+<h4><a name="Assigntoexisting"></a>Assign Your SSH Key to Your Existing Cloud Server</h4>
+
+<p>To make use of your newly generated RSA key pair, you must tell PuTTY to use it when connecting to your Cloud Server.</p>
+
+<ol>
+	<li>To edit the file (and if necessary, create it), run the following command:</li>
+</ol>
+
+<pre>
+nano ~/.ssh/authorized_keys</pre>
+
+<p>The key and its associated text (the ssh-rsa identified at the start and the comment at the end) should all be on one line in the file. &nbsp;If the text is word-wrapped onto multiple lines an error might occur when connecting.</p>
+
+<ol>
+	<li value="2">Edit the ~/.ssh/authorized_keys file on your Cloud Server and paste the text onto its own line in the file.<br />
+	<strong>Note</strong>: You must have the key available on your clipboard to paste it.</li>
+	<li>If you created the authorized_keys file, change its permissions after you're done editing it by running the following command:</li>
+</ol>
+
+<pre>
+chmod 600 ~/.ssh/authorized_keys</pre>
+
+<ol>
+	<li value="5">Open PuTTY and go to the <strong>SSH &gt; Auth</strong> section.</li>
+	<li value="5">Browse to the location of the key file and load the private key.
+	<p><img alt="" border="2" height="439" src="/knowledge_center/sites/default/files/field/image/PuTTY_Configuration3.png" width="463" /></p>
+	</li>
+	<li>
+	<p>To make PuTTY use the key every time that you connect to your Cloud Server, save the configuration by going to the Session page and saving the session.</p>
+
+	<p><img alt="" border="2" height="439" src="/knowledge_center/sites/default/files/field/image/PuTTY_Configuration4.png" width="463" /></p>
+	</li>
+</ol>
+
+<p>After you save your session, your key is loaded automatically whe you connect to your Cloud Server.</p>
+
+<p><a id="Summary" name="Summary"></a></p>
+
+<h2>Summary</h2>
+
+<p>Opting for a key-based authentication to your SSH server is beneficial in many ways. By eliminating the possibility of SSH brute-force attacks targeted towards your Cloud Server, the chances of it being compromised are decreased by an order of magnitude.</p>
+
+<h2><a name="RelatedArticles"></a>Related Articles</h2>
+
+<ul>
+	<li><a href="/knowledge_center/article/secure-shell-ssh" target="_self">Secure Shell - SSH</a></li>
+</ul>

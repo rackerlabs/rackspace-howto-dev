@@ -1,0 +1,204 @@
+---
+node_id: 3545
+title: Rackspace Private Cloud v. 4.0 Release Notes
+permalink: article/rackspace-private-cloud-v-40-release-notes
+type: article
+created_date: '2013-06-20 15:24:28'
+created_by: Karin Levenstein
+last_modified_date: '2015-06-10 18:4956'
+last_modified_by: kyle.laffoon
+products: Rackspace Private Cloud - OpenStack
+categories: Uncategorized
+body_format: tinymce
+---
+
+<p>Rackspace has developed a fast, free, and easy way to install a Rackspace Private Cloud powered by OpenStack in any data center. This method is suitable for anyone who wants to install a stable, tested, and supportable OpenStack-powered private cloud, and can be used for all scenarios from initial evaluations to production deployments.</p>
+
+<p>Rackspace Private Cloud v 4.0 supports the <a class="link" href="http://www.openstack.org/software/grizzly/" target="_top">Grizzly release of OpenStack</a>.</p>
+
+<p><strong>Note</strong>: Rackspace Private Cloud has been updated to v 4.1.2. <a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-v-412-release-notes-0">Refer to the v 4.1.2 release notes for information about the changes made in that release</a>.</p>
+
+<h2><a name="overview-audience"></a>Intended Audience</h2>
+
+<p>This document describes the updates in Rackspace Private Cloud v 4.0 and any known issues in the product. You should already be familiar with Rackspace Private Cloud Software and have prior knowledge of OpenStack and cloud computing, basic Linux administration skills, and a side of bacon. :)</p>
+
+<h2><a name="overview-dochistory"></a>Document Change History</h2>
+
+<p>This version of the Rackspace Private Cloud Release Notes replaces and obsoletes all previous versions. The most recent changes are described in the table below:</p>
+
+<table id="d5e47" rules="all">
+	<thead>
+		<tr>
+			<td align="center">Revision Date</td>
+			<td align="center" colspan="4">Summary of Changes</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>June 25, 2013</td>
+			<td colspan="4">
+			<ul>
+				<li>Rackspace Private Cloud Software v 4.0 release.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>July 1, 2013</td>
+			<td colspan="4">
+			<ul>
+				<li>Added information about a known issue related to Knife.</li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>September 4, 2013</td>
+			<td colspan="4">
+			<ul>
+				<li>Added information about a known issue related to CentOS.</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2><a name="overview-resources"></a>Additional Resources</h2>
+
+<ul>
+	<li><a class="link" href="http://www.rackspace.com/cloud/private/" target="_top">Rackspace Private Cloud Software Home Page</a></li>
+	<li><a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">Rackspace Private Cloud Knowledge Center</a></li>
+	<li><a class="link" href="http://privatecloudforums.rackspace.com/" target="_top">Rackspace Private Cloud Forums</a></li>
+</ul>
+
+<h2><a name="contact-rackspace"></a>Contact Rackspace</h2>
+
+<p>For more information about sales and support, contact us at <a class="email" href="mailto:opencloudinfo@rackspace.com">opencloudinfo@rackspace.com</a>. For feedback on the product and the documentation, contact us at <a class="email" href="mailto:RPCFeedback@rackspace.com">RPCFeedback@rackspace.com</a>. For the documentation, you can also leave a comment at <a class="link" href="http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud" target="_top">the Knowledge Center</a>.</p>
+
+<h2><a name="newfeatures"></a>What's New in Rackspace Private Cloud v 4.0</h2>
+
+<p>Rackspace Private Cloud v 4.0 has the following new features.</p>
+
+<ul>
+	<li><a class="link" href="#installing" title="Installing Rackspace Private Cloud">Installing Rackspace Private Cloud</a></li>
+	<li><a class="link" href="#grizzly" title="OpenStack Grizzly">OpenStack Grizzly</a></li>
+	<li><a class="link" href="#quantum" title="OpenStack Networking">OpenStack Networking</a></li>
+	<li><a class="link" href="#keystone-ldap-ad" title="OpenStack Identity v2 with Active Directory and LDAP">OpenStack Identity v2 with Active Directory and LDAP</a></li>
+	<li><a class="link" href="#cinder" title="OpenStack Block Storage Third-Party Vendors">OpenStack Block Storage Third-Party Vendors</a></li>
+	<li><a class="link" href="#vmware-vmdk" title="VMWare VMDK Conversion and Amazon AMI Image Import">VMWare VMDK Image Import</a></li>
+	<li><a class="link" href="#glance-cloud-files" title="Cloud Files with OpenStack Image Storage">Cloud Files with OpenStack Image Storage</a></li>
+	<li><a class="link" href="#ceilometer" title="OpenStack Ceilometer">OpenStack Ceilometer</a></li>
+</ul>
+
+<h3><a name="installing"></a>Installing Rackspace Private Cloud</h3>
+
+<p>Rackspace Private Cloud v 4.0 is deployed through a series of bash scripts in the following stages:</p>
+
+<ol>
+	<li>Install Chef server on a node in the environment.</li>
+	<li>Download the latest cookbooks to the Chef server.</li>
+	<li>Install chef-client on each node that will be managed by Chef in your OpenStack cluster.</li>
+	<li>Use Chef to create Controller nodes, Compute nodes, and more.</li>
+</ol>
+
+<p>For a detailed description of the prerequisites and process, refer to <a href="http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-installation/content/rpc-getstarted-prereqs.html">Installation Prerequisites and Concepts</a> and the <a href="http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-installation/content/rpc-common-front.html">Rackspace Private Cloud Installation Guide</a>.</p>
+
+<p>The OpenCenter installer scripts are still available; however, OpenCenter only supports the Folsom release. An environment installed with OpenCenter can be upgraded to Grizzly, but the results have not been tested. For more information, refer to <a href="http://www.rackspace.com/knowledge_center/article/upgrading-your-private-cloud">Upgrading Your Private Cloud</a>.</p>
+
+<h3><a name="grizzly"></a>OpenStack Grizzly</h3>
+
+<p>Rackspace Private Cloud Software now installs and supports the OpenStack Grizzly release. Existing Folsom environments installed with the Rackspace Private Cloud cookbooks can also be updated to Grizzly with the procedure documented in <a href="http://www.rackspace.com/knowledge_center/article/upgrading-your-private-cloud">Upgrading Your Private Cloud</a>.</p>
+
+<p>For detailed information about what is included in Grizzly, refer to the <a class="link" href="https://wiki.openstack.org/wiki/ReleaseNotes/Grizzly" target="_top">Grizzly release notes</a>.</p>
+
+<h3><a name="quantum"></a>OpenStack Networking</h3>
+
+<p>Rackspace Private Cloud Software now supports OpenStack Networking (Neutron, formerly Quantum). The Networking configuration provided by the Rackspace Private Cloud cookbooks allows you to choose between VLAN or GRE isolated networks, both provider- and tenant-specific. From the provider side, an administrator can also create a flat network. Concepts and configuration are described in <a href="http://www.rackspace.com/knowledge_center/article/configuring-openstack-networking">Configuring OpenStack Networking</a>.</p>
+
+<p>Currently, you cannot use Neutron routers, and the quantum-server service is not HA.</p>
+
+<h3><a name="keystone-ldap-ad"></a>OpenStack Identity v2 with Active Directory and LDAP</h3>
+
+<p>Rackspace Private Cloud Software now supports using Active Directory and LDAP as a backend for OpenStack Identity (Keystone). For instructions about configuring your environment for Active Directory and LDAP, refer to <a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-active-directory-and-ldap-integration">Active Directory and LDAP Integration</a>.</p>
+
+<h3><a name="cinder"></a>OpenStack Block Storage Third-Party Vendors</h3>
+
+<p>Rackspace Private Cloud Software supports using OpenStack Block Storage (Cinder) with the following third-party storage vendors:</p>
+
+<ul>
+	<li>EMC</li>
+	<li>NetApp</li>
+	<li>Solidfire</li>
+</ul>
+
+<p>For instructions about configuring your environment for these vendors, refer to <a href="http://www.rackspace.com/knowledge_center/article/configuring-openstack-block-storage">Configuring OpenStack Block Storage</a>.</p>
+
+<h3><a name="vmware-vmdk"></a>VMWare VMDK Conversion and Amazon AMI Image Import</h3>
+
+<p>Rackspace has developed a tool to convert single-disk Linux VMDK images to OpenStack-compatible qcow2 images. The conversion is accomplished by means of a Python script available at <a class="link" href="https://github.com/rcbops/support-tools/tree/master/vmdk-conversion" target="_top"><code class="uri">https://github.com/rcbops/support-tools/tree/master/vmdk-conversion</code></a>. For instructions about using the tool, refer to <a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-software-creating-an-instance-in-the-cloud#vmdk-image">Converting VMDK Linux Images</a>.</p>
+
+<p>Multi-disk and Windows image conversions are not available at this time.</p>
+
+<p>Amazon AMI images can also be imported into Glance. For instructions about importing AMI images, refer to <a href="http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-software-creating-an-instance-in-the-cloud#ami-image">Uploading AMI Images</a>.</p>
+
+<h3><a name="glance-cloud-files"></a>Cloud Files with OpenStack Image Storage</h3>
+
+<p>You can configure Rackspace Cloud Files as a backend for OpenStack Image Storage (Glance). For instructions about configuring your environment for Cloud Files, refer to <a href="http://www.rackspace.com/knowledge_center/article/configuring-openstack-image-storage">Configuring OpenStack Image Storage</a>.</p>
+
+<h3><a name="ceilometer"></a>OpenStack Ceilometer</h3>
+
+<p>The Rackspace Private Cloud installation includes OpenStack Ceilometer for the OpenStack cluster. In this installation, Ceilometer is only accessible through the API. For information about the Ceilometer API, refer to the <a class="link" href="http://docs.openstack.org/developer/ceilometer/" target="_top">Ceilometer Developer Documentation</a>. Ceilometer is automatically included when you create your Controller and Compute nodes, and no additional configuration is required.</p>
+
+<p><strong>NOTE</strong>: The Ceilometer API cannot co-exist on a node with haproxy.</p>
+
+<h2><a name="known-issues"></a>Known Issues</h2>
+
+<p>The following issues have been identified in Rackspace Private Cloud v. 4.0 and v 4.1.2.</p>
+
+<h3>Updating Cookbooks with knife cookbook upload -a -o</h3>
+
+<p>When updating to the v 4.0.0 cookbooks, Chef Server might fail to upload the cookbooks on the first attempt. If this happens, run <code>knife cookbook upload -a -o again</code>. This is related to <a href="http://tickets.opscode.com/browse/CHEF-4330">known Chef issue CHEF-4330</a>.</p>
+
+<h3 class="title">RHEL and CentOS Challenges With Advanced OpenStack Networking</h3>
+
+<p>When using OpenStack Networking (Neutron), Controller nodes with Networking features and standalone Networking nodes require namespace kernel features that are not available in the default kernel shipped with RHEL 6.4, CentOS 6.4, and older versions of these operating systems. More information about Neutron limitations is available in the <a class="link" href="http://docs.openstack.org/grizzly/openstack-network/admin/content/ch_limitations.html" target="_top">OpenStack documentation</a>, and more information about RedHat-derivative kernel limitations is provided in the <a class="link" href="http://openstack.redhat.com/Frequently_Asked_Questions#For_which_distributions_does_RDO_provide_packages.3F" target="_top">RDO FAQ</a>.</p>
+
+<p>If you require OpenStack Networking using these features, Rackspace recommends that you consider the RHEL and CentOS patches, or use Ubuntu 12.04 for the Controller and Networking nodes.</p>
+
+<h3><a name="known-cinder-centOS"></a>Snapshot Deletion on CentOS</h3>
+
+<p>Setting <strong>volume_clear</strong> in <code>cinder_conf</code> to <strong>shred</strong> or <strong>zero</strong> will cause snapshot deletion to fail in OpenStack Grizzly installations on CentOS. Rackspace recommends you set <strong>volume_clear</strong> to none until this issue is resolved in OpenStack.</p>
+
+<h3>OpenStack Service Timeouts</h3>
+
+<p>OpenStack service timeouts cannot be configured, which makes it possible for an OpenStack client to remain connected to a failed service for a longer period than is desirable. If you cannot wait for the connection to close, you can restart the service that is holding the connection. For example, if the nova compute service has failed, restart it with <strong>service nova-compute restart</strong> on Ubuntu or <strong>service openstack-nova-compute restart</strong> on CentOS.</p>
+
+<h2><a name="resolved-issues"></a>Resolved Issues</h2>
+
+<p>The following issues have been resolved in Rackspace Private Cloud v 4.0 and v 4.1.2.</p>
+
+<h3><a name="resolved-ha-mysql"></a>HA MySQL Replication Issues</h3>
+
+<p>An issue with MySQL replication that was caused by logging has been resolved. (Issue #327)</p>
+
+<h3><a name="resolved-2"></a>HA Glance Replication Issues</h3>
+
+<p>An issue that prevented successful HA Glance replication has been resolved. (Issue #328)</p>
+
+<h3><a name="knownissue-cookie"></a>Horizon Dashboard Admin Cookie Issues</h3>
+
+<p>Cookie issues associated with the admin user were resolved in the Grizzly release of OpenStack.</p>
+
+<h3><a name="knownissue-mysql"></a>Intermittent collectd Issues</h3>
+
+<p>Issues with intermittent collectd failures with monitoring processes or after performing a failover have been resolved, that these failures should no longer occur.</p>
+
+<h3><a name="resolved-3"></a>Keystone Connection Issues for Nova, Cinder, and Glance APIs</h3>
+
+<p>An issue that caused Nova, Cinder, and Glance APIs to attempt to connect to Keystone on an invalid IP has been resolved. (Issue #368 and #369)</p>
+
+<h3><a name="knownissue-ubuntu-kernel"></a>Ubuntu and Kernel Version Compatibility With KVM</h3>
+
+<p>Issues with OpenStack Ubuntu and KVM where a kernel version of 3.2.n was required for Ubuntu 12.04 and 12.04.1 have been resolved. This issue was related to <a href="https://bugs.launchpad.net/ubuntu/+source/libvirt/+bug/1029430">Ubuntu bug #1029430</a>.</p>
+
+<h3><a name="knownissue-havnc"></a>VNC and HA Infrastructure</h3>
+
+<p>Instance VNC in the Horizon dashboard now works correctly in environments with HA Infrastructure nodes.</p>

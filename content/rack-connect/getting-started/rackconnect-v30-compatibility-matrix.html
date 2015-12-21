@@ -1,0 +1,268 @@
+---
+node_id: 4227
+title: RackConnect v3.0 compatibility
+permalink: article/rackconnect-v30-compatibility-matrix
+type: article
+created_date: '2014-09-08 17:37:56'
+created_by: juan.perez
+last_modified_date: '2015-10-30 15:4257'
+last_modified_by: rose.coste
+products: RackConnect
+categories: Getting Started
+body_format: tinymce
+---
+
+<p><strong>Applies to</strong>: RackConnect v3.0</p>
+
+<p>This article outlines RackConnect v3.0's compatibility with other Rackspace products and offerings. The following tables are provided:</p>
+
+<ul>
+	<li><a href="#table1">Table 1: RackConnect v3.0 compatibility with Rackspace public cloud offerings</a></li>
+	<li><a href="#table2">Table 2: RackConnect v3.0 compatibility with Rackspace dedicated network device offerings</a></li>
+	<li><a href="#table3">Table 3: RackConnect v3.0 compatibility with Rackspace dedicated offerings</a></li>
+</ul>
+
+<p>Table 1 lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. &nbsp;The <strong>Requirements</strong> column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.</p>
+
+<p><strong>Note:</strong> Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.</p>
+
+<p>&nbsp;</p>
+
+<p><a name="table1"></a>&nbsp;[<strong>Table 1 — RackConnect v3.0 compatibility with Rackspace public cloud offerings</strong>]</p>
+
+<table align="left" border="0" height="1284" width="1066">
+	<tbody>
+		<tr align="center">
+			<td colspan="4">
+			<h2>RackConnect v3.0 compatibility matrix</h2>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<h3>&nbsp;Product</h3>
+			</td>
+			<td>
+			<h3>Requirements</h3>
+			</td>
+			<td>
+			<h3>Details</h3>
+			</td>
+			<td>
+			<h3>Product support&nbsp;</h3>
+			</td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Auto Scale</strong></td>
+			<td>None</td>
+			<td>
+			<p>Auto Scale is an API-based tool that automatically scales resources in response to an increase or decrease in overall workload based on user-defined thresholds. Auto Scale enables you to automatically scale your RackConnect cloud servers resources to adjust to customer demand.</p>
+
+			<p>See the <a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/RCv3.html">Cloud Bursting with RackConnectV3</a> section of the <a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html" rel="nofollow" target="_blank">Rackspace Auto Scale Developer Guide</a> for details on using Auto Scale with RackConnect v3.0.</p>
+			</td>
+			<td>
+			<p><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-gettingstarted/content/Overview.html" rel="nofollow" target="_blank">Auto Scale Getting Started Guide</a></p>
+
+			<p><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html" rel="nofollow" target="_blank">Auto Scale Developer Guide</a></p>
+
+			<p><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/RCv3.html">Cloud Bursting with RackConnectV3</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Cloud Backup</strong></td>
+			<td>ServiceNet</td>
+			<td>Cloud Backup is a file-based backup application that enables you to choose which files and folders to back up from your cloud servers. You can choose to restore your whole system with all of its folders and files, or individual files or folders from a given date, to restore to an entirely different server.&nbsp;</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-backup" target="_blank">Getting Started with Rackspace Cloud Backup</a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Cloud Block Storage</strong></td>
+			<td>None</td>
+			<td>&nbsp;Cloud Block Storage is a block-level storage solution that enables you to expand the storage capacity of your Rackspace Next Generation Cloud Servers.</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-block-storage" target="_blank">Getting Started with Cloud Block Storage </a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Cloud Databases</strong></td>
+			<td>ServiceNet</td>
+			<td>
+			<p>Cloud Databases is a stand-alone, API-based relational database service built on the OpenStack® cloud that enables you to easily provision and manage multiple MySQL database instances. Instances are provisioned in a single-tenant, container-based environment per account.</p>
+
+			<ul>
+				<li>RackConnect v3.0 is <strong>compatible</strong> with MySQL Cloud Databases instances.</li>
+				<li><strong>Note:</strong> Cloud Databases is compatible with cloud servers only and cannot be used directly with dedicated servers.</li>
+			</ul>
+			</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-databases" target="_blank">Getting Started with Cloud Databases </a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Cloud Files</strong></td>
+			<td>ServiceNet&nbsp;</td>
+			<td>Cloud Files, powered by&nbsp;<a class="cloudfiles" href="http://www.rackspace.com/cloudbuilders/openstack/">OpenStack</a>, provides an easy-to-use online storage for files and media that can be delivered globally at fast speeds over the Akamai content delivery network (CDN).&nbsp;</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-files" target="_blank">Getting Started with Cloud Files </a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong><strong>Cloud Monitoring</strong></strong></td>
+			<td>Provisioned public IP address</td>
+			<td>Cloud Monitoring provides you with timely and accurate information about how your resources are performing. You can quickly create multiple monitors that use predefined checks such as PING, HTTPS and SMTP to track your cloud resources and receive instant notification when a resource needs your attention.</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/getting-started/cloud-monitoring" target="_blank">Getting Started with Cloud Monitoring </a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong><strong>Cloud Networks</strong></strong></td>
+			<td>None</td>
+			<td>RackConnect v3.0 depends on and leverages Cloud Networks to connect from your RackConnect cloud servers to your dedicated environment. You use Cloud Networks to create and manage secure, isolated networks in the cloud. &nbsp;These networks are fully single tenant and you have complete control over the network topology, IP addressing, and which cloud servers are attached. Cloud networks are regional in scope and can be attached to any of your cloud servers in a given region.&nbsp;</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-networks" target="_blank">Getting Started with Cloud Networks </a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Cloud Orchestration</strong></td>
+			<td>None</td>
+			<td>Rackspace Cloud Orchestration helps you set up projects and servers with just a few clicks instead of lengthy installations. You can usually be up and running in less than five minutes, depending on the template that you choose and other factors. Cloud Orchestration provides templates for a LAMP stack to get your web server up and running quickly, a Minecraft server, and a WordPress blog, just to name a few.</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/article/quick-set-up-with-rackspace-cloud-orchestration">Quick set up with Rackspace Cloud Orchestration</a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>Hadoop</strong></td>
+			<td>Provisioned public IP address &amp; ServiceNet</td>
+			<td>Hadoop is an open source project that provides a platform to store and process massive amounts of data. Hadoop uses the Map Reduce paradigm to split large tasks into many smaller chunks and executes them in parallel. Each of these tasks are executed close to the data in the Hadoop Distributed File System.</td>
+			<td><a href="http://www.rackspace.com/knowledge_center/article/getting-started-with-apache-hadoop-on-rackspace-cloud">Getting Started with Apache Hadoop on Rackspace Cloud</a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong><strong>Managed Operations support level</strong></strong></td>
+			<td>&nbsp;ServiceNet</td>
+			<td>Managed Operations provides support beyond Managed Infrastructure, including direct assistance with resizes, snapshots, host machine issues, adding and removing servers, and managing IP addresses. To ensure <em><strong>Fanatical Support®</strong></em>, Rackspace provides support for specific software and server configurations on Cloud Servers with Managed Operations support.&nbsp;</td>
+			<td>&nbsp;<a href="http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux" target="_blank">Cloud Servers with Managed Operations support for Linux</a></td>
+		</tr>
+		<tr>
+			<td align="left"><strong>ObjectRocket</strong></td>
+			<td>ServiceNet</td>
+			<td>
+			<p>The ObjectRocket platform is built for scalability, speed, and safety. It provides fully managed instances of MongoDB and Redis in data centers across the globe.</p>
+
+			<p>Fast, scalable, reliable, and automated MongoDB &amp; Redis</p>
+
+			<ul>
+				<li>RackConnect v3.0 is <strong>compatible</strong> with <strong>ObjectRocket Redis </strong>instances that have a ServiceNet IP address in the 10.188.0.0/15 range. If an instance has a ServiceNet IP address that is not in this range, contact ObjectRocket support .</li>
+				<li>RackConnect v3.0 is <strong>compatible</strong> with <strong>MonogoDB</strong>.</li>
+			</ul>
+			</td>
+			<td><a href="https://docs.objectrocket.com/getting_started.html">ObjectRocket Getting Started Guide</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>Table 2 lists the dedicated network device offerings that are compatible with RackConnect v3.</p>
+
+<p><a name="table2"></a>&nbsp;[<strong>Table 2 </strong>— <strong>RackConnect v3.0 compatibility with Rackspace dedicated network device offerings</strong>]</p>
+
+<table border="1" cellpadding="0" cellspacing="0" height="331" width="567">
+	<tbody>
+		<tr>
+			<td valign="top" width="208">
+			<h3><strong>Network device</strong></h3>
+			</td>
+			<td valign="top" width="209">
+			<h3><strong>More information</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Cisco ASA Firewalls</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison" target="_blank">RackConnect Network Device Comparison</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Cisco ASA X Series Firewalls</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison" target="_blank">RackConnect Network Device Comparison</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>BIG-IP F5 Load Balancers</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="http://www.rackspace.com/knowledge_center/article/using-dedicated-load-balancers-with-rackconnect" target="_blank">Using Dedicated Load Balancers with RackConnect</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Brocade Load Balancers</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="http://www.rackspace.com/knowledge_center/article/using-dedicated-load-balancers-with-rackconnect" target="_blank">Using Dedicated Load Balancers with RackConnect</a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>&nbsp;</strong>Table 3 lists the dedicated offerings that are compatible with RackConnect v3.0. Compatibility with dedicated offerings is based on network connectivity from these offerings to and from your RackConnect v3.0 cloud networks. The correct routes to allow this traffic can be set up by your Network Security team.&nbsp;</p>
+
+<p><a name="table3"></a>&nbsp;[<strong>Table 3 </strong>— <strong>RackConnect v3.0 compatibility with Rackspace dedicated offerings</strong>]</p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td valign="top" width="208">
+			<h3><strong>Network offering</strong></h3>
+			</td>
+			<td valign="top" width="209">
+			<h3><strong>Compatible</strong></h3>
+			</td>
+			<td valign="top" width="209">
+			<h3><strong>Further details</strong></h3>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Managed Colocation</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p>Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Network Security team. Customer-managed network devices are not supported.</p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="https://www.rackspace.com/managed_hosting/managed_colocation/" target="_blank">Managed Colocation</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Managed Storage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p>The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment.&nbsp; The Managed Storage offering cannot be used directly with cloud servers.&nbsp;</p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="https://www.rackspace.com/managed_hosting/services/storage/" target="_blank">Managed Storage</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Managed Virtualization</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p>Yes</p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="https://www.rackspace.com/cloud/private/managed_virtualization/" target="_blank">Managed Virtualization</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="208">
+			<p><strong>Private Cloud</strong></p>
+			</td>
+			<td valign="top" width="209">
+			<p>Yes</p>
+			</td>
+			<td valign="top" width="209">
+			<p><a href="https://www.rackspace.com/cloud/private/" target="_blank">Private Cloud</a>.&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>If you have questions, reach out to us. Contact information is available on the <a href="http://www.rackspace.com/knowledge_center/support" target="_blank">Contact Us</a> page.</p>
+
+<p>&nbsp;</p>
