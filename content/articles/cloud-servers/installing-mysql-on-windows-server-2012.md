@@ -1,0 +1,54 @@
+---
+node_id: 3626
+title: Install MySQL on Windows Server 2008 R2 and 2012
+permalink: article/installing-mysql-on-windows-server-2012
+type: article
+created_date: '2013-07-22 19:21:00'
+created_by: Rackspace Support
+last_modified_date: '2014-08-04 16:4818'
+last_modified_by: kyle.laffoon
+products: Cloud Servers
+body_format: tinymce
+---
+
+This article provides instructions for installing MySQL on Windows
+Server 2008 R2 or Windows Server 2012 by using the Microsoft Web
+Platform Installer (Web PI). Web PI makes it simple to install a variety
+of applications to your Windows Server 2008 R2 or 2012 server. 
+
+**Download Web PI**
+-------------------
+
+Download  the most recent version of Web PI on your Windows Server from
+[http://www.microsoft.com/web/downloads/platform.aspx](http://www.microsoft.com/web/downloads/platform.aspx.).
+
+![](/knowledge_center/sites/default/files/field/image/pi_download.png)
+
+**Install MySQL **
+------------------
+
+1.  Launch the Web PI application by running the **wpilauncher.exe**
+    file that you downloaded in the preceding  section.
+2.  In the Web Platform Installer window, search for **MySQL** in the
+    search box.
+3.  Select **MySQL Windows 5.1**(or currrent version), click **Add**,
+    and then click **Install** to start the installation. \
+
+    ![](/knowledge_center/sites/default/files/field/image/install.png)
+
+4.  Provide a password for the **root**** **account of the MySQL server.
+
+    ![](/knowledge_center/sites/default/files/field/image/password.png)
+
+5.  Review the licensing agreement and click **I Accept**.
+
+    ![](/knowledge_center/sites/default/files/field/image/license.png)\
+    The MySQL Windows 5.1 application is downloaded and installed on
+    your Windows Server 2008R2 and 2012 server.
+
+6.  After the installation is completed, click **Finish**.
+
+**Note**: You can launch MySQL by running the `mysqld.exe` command from
+the installation directory. By default this is set to **C:\\Program
+Files\\MySQL\\MySQL Server 5.1\\bin**.
+

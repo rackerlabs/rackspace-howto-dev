@@ -1,0 +1,99 @@
+---
+node_id: 4687
+title: Import and export archived data
+permalink: article/archiving-data-imports-and-exports
+type: article
+created_date: '2015-05-18 20:18:15'
+created_by: beau.bailey
+last_modified_date: '2015-08-14 13:5326'
+last_modified_by: stephanie.fillmon
+products: Email Archiving
+body_format: tinymce
+---
+
+You can import data into and export data from your archive in Cloud
+Office.
+
+Importing Data
+--------------
+
+If you want to import data, create a request ticket in your control
+panel and include your domain name in the request. Rackspace will gather
+the necessary information and provide you with the best import method. 
+
+The fee for data imports is \$6 per GB of data. For information about
+import completion times, see the section at the end of this article.
+
+Exporting data
+--------------
+
+You can use the following methods to export your data from your
+Rackspace Archiving account:
+
+-   Export your data from the Archive Manager by creating searches and
+    exporting the results of the searches. For information about how to
+    export the results of a search, see [Export archive search results
+    in Cloud
+    Office](https://www.rackspace.com/knowledge_center/article/export-archive-search-results-in-cloud-office).
+
+**           Note:** You can export searches with a maximum of 15,000
+results and the total size of 3.5 GB 
+
+-   If you want to get a bulk export of your archived data, we can
+    perform the export and provide you with links from which you can
+    download your data directly. If you have access to an FTP site,
+    provide your credentials and we can export your data to the FTP
+    site.
+
+           The pricing for a bulk export is a one-time fee of \$6 per GB
+for EML format and \$9 per GB for PST format.
+
+When determining which export method to use, consider the following
+questions:
+
+### **Is an external third party requesting these exports?**
+
+Providing a temporary login for third parties to review search results
+is much faster than requesting a bulk export.
+
+### **To which format do you need to export?**
+
+We offer bulk exports in either PST or EML format. Although PST is a
+more well-known format, exporting in EML tends to be easier to search,
+faster for us to produce, and much cheaper. We recommend that you first
+determine whether there is a preferred format. If there is no preferred
+format, then we recommend using EML.
+
+### **Do you need to export all data or only data that meets certain criteria?**
+
+In most cases, more data means a longer and more expensive export. We
+can export data that meets certain criteria, such as search, date,
+range, or mailbox users.
+
+You can also provide search names based on the following criteria:
+
+-   Date
+-   Search term
+-   Subject
+-   Sender
+-   Recipient
+-   Words or attachments in the body
+
+Time frames for importing and exporting data
+--------------------------------------------
+
+Following are the completion times for both importing and exporting:
+
+  Size of data    Time to import or export
+  --------------- --------------------------
+  5-25 GB         Maximum of 3 weeks
+  26-50 GB        Maximum of 4 weeks
+  51-100 GB       Maximum of 5 weeks
+  101 GB - 1 TB   Maximum of 5 weeks
+
+ 
+
+ 
+
+ 
+
