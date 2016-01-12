@@ -5,8 +5,8 @@ permalink: article/comprehensive-detailed-permissions-matrix
 type: article
 created_date: '2013-06-17 03:38:55'
 created_by: renee.rendon
-last_modified_date: '2016-01-03 16:1152'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-06 19:2355'
+last_modified_by: kelly.holcomb
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -65,7 +65,7 @@ Read-only within\
  specified product
 
 **[Next Gen
-Servers](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-next-generation-cloud-servers)**
+Servers](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-next-generation-cloud-servers)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -78,7 +78,7 @@ Servers](http://www.rackspace.com/knowledge_center/article/detailed-permissions-
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[First Generation
-Servers](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-first-generation-cloud-servers)**
+Servers](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-first-generation-cloud-servers)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -91,7 +91,7 @@ Servers](http://www.rackspace.com/knowledge_center/article/detailed-permissions-
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud
-Files](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-files%20)**
+Files](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-files)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -117,7 +117,7 @@ CDN](https://www.rackspace.com/knowledge_center/article/permission-matrix-for-ra
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud
-Databases](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-databases)**
+Databases](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-databases)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -130,7 +130,7 @@ Databases](http://www.rackspace.com/knowledge_center/article/detailed-permission
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud Load
-Balancers](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-load-balancers-as-a-service-lbaas%20)**
+Balancers](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-load-balancers)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -221,7 +221,7 @@ Images](http://www.rackspace.com/knowledge_center/article/detailed-permissions-m
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud Big Data
-v1](http://rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data)**
+v1](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -234,7 +234,7 @@ v1](http://rackspace.com/knowledge_center/article/detailed-permissions-matrix-fo
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud Big Data
-v2](http://rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data-v2)**
+v2](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data-v2)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -247,7 +247,7 @@ v2](http://rackspace.com/knowledge_center/article/detailed-permissions-matrix-fo
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 [**Cloud
-Backup**](/knowledge_center/article/detailed-permissions-matrix-for-backup)
+Backup**](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-backup)
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -273,7 +273,7 @@ Orchestration**](http://www.rackspace.com/knowledge_center/article/permissions-m
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 **[Cloud
-DNS](/knowledge_center/article/detailed-permissions-matrix-for-dns)**
+DNS](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-dns)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -285,7 +285,8 @@ DNS](/knowledge_center/article/detailed-permissions-matrix-for-dns)**
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
-[**Cloud Feeds**](/knowledge_center/article/detailed-permissions-matrix-for-cloud-feeds)
+[**Cloud
+Feeds**](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-feeds)
 
 ![](/knowledge_center/sites/default/files/field/image/red%20X.png)
 
@@ -320,14 +321,14 @@ Read-only\
  SPECIFIED PRODUCT
 
 [**Billing
-Services**](/knowledge_center/article/detailed-permissions-matrix-for-billing-services)
+Services**](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-billing-services)
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
 [**Payment
-Services**](/knowledge_center/article/detailed-permissions-matrix-for-billing-services)
+Services**](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-billing-services)
 
 ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_4.png)
 
@@ -342,6 +343,6 @@ The following products will not be RBAC enabled:
 
  
 
-[\< Managing RBAC](http://www.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac)    -    [FAQs for RBAC \>](http://www.rackspace.com/knowledge_center/article/faq-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[\< Managing RBAC](http://www.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac)    -    [FAQ for RBAC \>](http://www.rackspace.com/knowledge_center/article/faq-role-based-access-control-rbac)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

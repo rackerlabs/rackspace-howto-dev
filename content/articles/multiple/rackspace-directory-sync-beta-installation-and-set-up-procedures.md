@@ -5,8 +5,8 @@ permalink: article/rackspace-directory-sync-beta-installation-and-set-up-procedu
 type: article
 created_date: '2013-04-25 17:00:25'
 created_by: kevin.richey
-last_modified_date: '2015-01-28 13:4925'
-last_modified_by: aaron.medrano
+last_modified_date: '2016-01-07 16:4246'
+last_modified_by: constanze.kratel
 products: 'Rackspace Email,Exchange'
 body_format: tinymce
 ---
@@ -29,7 +29,11 @@ Functional level of domain controller and Active Directory
     Active Directory. Passwords **must be reset** after installation to
     ensure password synchronization.
 -   Directory Sync is compatible with Hosted Exchange 2010, Hosted
-    Exchange 2013, and Rackspace Email only.
+    Exchange 2013, Hosted Exchange 2016, and Rackspace Email only.
+-   If you have mulitple domain controllers, be sure to install the
+    password handler on all other DCs for password synchronization -
+    [**Install Password Synchronization for multiple domain controllers
+    (optional)**](#Multiple%20DC%20Sync)
 
 ### Software prerequisites
 
@@ -56,11 +60,15 @@ Enable the following ports on the Directory Sync server:
 
 ### Network encryption
 
-Communication between Directory Sync and Rackspace is secured through
-HTTPS. Communications between the Active Directory password hook and
-Directory Sync is secured with Microsoft Windows Communication
-Foundation (WCF) transport security which uses Windows authentication
-and encryption.
+-   Communication between Directory Sync and Rackspace is secured
+    through HTTPS. 
+-   Communications between the Active Directory and Directory
+    Sync Password Handler is secured with Microsoft Windows
+    Communication Foundation (WCF) which uses Windows authentication
+    and Transport Layer Security (TLS) encryption over TCP.
+-   The WCF server is configured to only accept requests from Domain
+    Controllers on the network or from a configurable whitelist of IP
+    addresses.
 
 ### Installation files
 
@@ -111,8 +119,9 @@ service is a Windows service that automatically synchronizes user
 information and requires a local service account under which to run. The
 Password service automatically synchronizes user password changes.
 
-**Note: The Directory Sync service runs as the Local System account on
-the domain controller.**
+**Note: The Directory Sync service needs to be run locally (installer
+saved on the desktop and ran from the desktop) and a user with Domain
+Admin level permissions**
 
 Copy the appropriate platform-specific Directory Sync service
 **.msi** file to the domain controller. Then, open the file and follow
@@ -197,16 +206,16 @@ Directory Sync service must be configured. Perform the following steps:
 **Note:** The Directory Sync services never makes changes to the
 directory. All access is read-only.
 
-**Synchronize users and groups**
---------------------------------
+Synchronize users and groups
+----------------------------
 
 For information about how to start synchronizing your Active Directory
 objects to your mailboxes and distribution lists, see the [Directory
 Sync Operations
 Guide](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-operation-guide "Directory Sync Operations Guide").
 
-Install Password Synchronization for multiple domain controllers (optional)
----------------------------------------------------------------------------
+**Install Password Synchronization for multiple domain controllers (optional)**
+-------------------------------------------------------------------------------
 
 The main installer for Directory Sync is installed on one domain
 controller (DC) that will communicate directly to Rackspace. The DC
@@ -233,15 +242,15 @@ The following figure illustrates this communication process.
 
 ![](/knowledge_center/sites/default/files/field/image/Multiple%20DC%20sync.PNG)
 
-### Install Password Handler on secondary DCs
+### **Install Password Handler on Multiple DCs**
 
 During the Installation of the Directory Sync service on the primary DC,
 the **Directory Sync Password Handler Install** folder was created on
 the desktop. Use the installer in this folder to synchronize your users&rsquo;
 passwords across multiple domain controllers.
 
-**Note:** the **.msi** file within the folder should be installed on the
-secondary domain controllers only.
+**Note:** the **.msi** file within the folder should be installed
+locally on the secondary domain controllers only.
 
 ![](/knowledge_center/sites/default/files/field/image/Installer8_0.png)
 
@@ -260,7 +269,7 @@ process. Consider performing these steps during off hours
     After restart the installer will start up to finish the
     installation.
 
-4.  Click **InstallFinish**.
+4.  Click **Install**and **Finish**.
 
 The Password Handler of Directory Sync is installed.
 

@@ -5,8 +5,8 @@ permalink: article/about-images
 type: article
 created_date: '2012-07-24 00:50:09'
 created_by: RackKCAdmin
-last_modified_date: '2014-11-13 16:1537'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-06 20:1815'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -40,9 +40,7 @@ images:
 
 -   **Cloud Server images cannot be transferred between accounts**, and
     you cannot build a server using an image from another account - even
-    if you own both accounts. The sole exception to this rule is if you
-    are [migrating from a US to a UK Cloud Server
-    account](http://www.rackspace.com/knowledge_center/index.php/US_to_UK_Migration_FAQ).
+    if you own both accounts.
 
 -   ISOs and images from non-Rackspace servers cannot be uploaded to
     Cloud Files and used to build a new Cloud Server. 

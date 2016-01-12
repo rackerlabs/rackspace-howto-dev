@@ -5,8 +5,8 @@ permalink: article/adding-a-managed-service-level-to-your-cloud-server-account
 type: article
 created_date: '2011-10-11 16:00:31'
 created_by: RackKCAdmin
-last_modified_date: '2015-09-03 20:2706'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-05 19:4428'
+last_modified_by: catherine.richardson
 products: 'Cloud Servers,Managed Operations,Cloud Databases'
 body_format: tinymce
 ---
@@ -38,23 +38,27 @@ of ping, port, or URL.
 ### What operating systems and applications are supported for Cloud Servers with Managed Operations?
 
 You can view the list of supported operating system versions and
-applications for Linux and Windows Managed Operations servers in the
-following article: [Cloud Servers With Managed Operations - Spheres of
-Support](/knowledge_center/article/cloud-servers-with-managed-service-level-spheres-of-support)
+applications for Linux in the following article: [Cloud Servers with
+Managed Operations support for
+Linux.](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux)
+
+**Note:** Information on Windows support can be found in [Cloud Servers
+with Managed Operations support for
+Windows](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-windows).
 
 ### Will my server's IP address or hostname change when I upgrade?
 
-No.  Upgrading to a Managed Operations account does not change server IP
+No. Upgrading to a Managed Operations account does not change server IP
 address or hostname.  Further, there are no changes to the server
-instance IDs, nor is there a change to your account number and
-username/password combination.  All of these remain the same with the
-upgrade process.
+instance IDs, nor is there a change to your Rackspace Cloud account
+number and username/password combination.  All of these remain the same
+with the upgrade process.
 
 ### What if my current Cloud Server operating system is not on the list?
 
 At this time, the only operating systems we support for a Rackspace
-Managed Operations account are listed in the [article referenced
-above](/knowledge_center/article/cloud-servers-with-managed-service-level-spheres-of-support).
+Managed Operations account are listed in the [articles referenced
+above](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux).
 If you choose to upgrade to a Managed Operations account, you must
 either delete any active Cloud Servers and images with unsupported
 operating systems or transfer those unsupported images to a separate

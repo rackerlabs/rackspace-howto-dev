@@ -5,8 +5,8 @@ permalink: article/gettng-data-into-your-cluster
 type: article
 created_date: '2013-12-14 19:07:32'
 created_by: david.dobbins
-last_modified_date: '2014-06-30 21:4710'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-07 14:5218'
+last_modified_by: rose.contreras
 products: Cloud Big Data
 body_format: tinymce
 ---
@@ -56,7 +56,7 @@ cluster, as follows:
 
 Alternatively, your MapReduce jobs and Hadoop tools like Pig and Hive
 can read and write directly to Cloud Files by using the [Swift for
-Hadoop](/knowledge_center/article/swift-filesystem-for-hadoop).
+Hadoop](http://www.rackspace.com/knowledge_center/article/swift-filesystem-for-hadoop).
 
 ### Data resides on an HTTP or FTP server
 

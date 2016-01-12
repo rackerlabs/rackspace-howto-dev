@@ -5,8 +5,8 @@ permalink: article/windows-server-security-best-practices
 type: article
 created_date: '2014-07-15 21:41:54'
 created_by: Rackspace Support
-last_modified_date: '2014-11-07 20:4115'
-last_modified_by: ross.diaz
+last_modified_date: '2016-01-06 14:5054'
+last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: tinymce
 ---

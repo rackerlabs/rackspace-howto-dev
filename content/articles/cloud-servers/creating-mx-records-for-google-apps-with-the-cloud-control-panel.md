@@ -5,8 +5,8 @@ permalink: article/creating-mx-records-for-google-apps-with-the-cloud-control-pa
 type: article
 created_date: '2012-09-19 20:59:16'
 created_by: lee.jelley
-last_modified_date: '2014-11-12 23:1318'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-05 16:5322'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -62,27 +62,7 @@ other four MX records.
 
 Now that the MX records have been stored within the DNS settings for
 your domain, the changes should propagate after the time specified in
-the TTL has passed.  You can test your changes with a DNS checker or
-using a Terminal to run the `dig` command.
-
-You can install and use dig by following the instructions [in this
-article](/knowledge_center/article/rackspace-cloud-essentials-6-using-dig-for-dns-troubleshooting).
- To use dig to just check the MX records for the domain you can run the
-command:
-
-    dig -t MX greprest.com
-
-The results should look something like:
-
-    ;; QUESTION SECTION:
-    ;greprest.com.INMX
-
-    ;; ANSWER SECTION:
-    greprest.com.300INMX5 alt2.aspmx.l.google.com.
-    greprest.com.300INMX10 aspmx2.googlemail.com.
-    greprest.com.300INMX10 aspmx3.googlemail.com.
-    greprest.com.300INMX1 aspmx.l.google.com.
-    greprest.com.300INMX5 alt1.aspmx.l.google.com.
+the TTL has passed.  You can test your changes with a DNS checker.
 
 Now that we can see the MX records have propagated correctly we can run
 an email test.

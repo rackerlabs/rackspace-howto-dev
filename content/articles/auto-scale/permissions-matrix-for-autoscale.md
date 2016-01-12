@@ -5,8 +5,8 @@ permalink: article/permissions-matrix-for-autoscale
 type: article
 created_date: '2013-09-04 16:58:35'
 created_by: renee.rendon
-last_modified_date: '2014-08-23 19:5105'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-05 15:2327'
+last_modified_by: Mike Asthalter
 products: Auto Scale
 body_format: tinymce
 ---
@@ -15,14 +15,14 @@ The following permissions matrix displays specific permissions for the
 roles in Auto Scale. The matrix displays the method names, their
 corresponding RESTful API commands, and the roles that are supported.
 
-**[API Documentation](http://docs.rackspace.com/)**
+**[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
-Articles](/knowledge_center/article/rackspace-auto-scale-overview)**
+Articles](http://www.rackspace.com/knowledge_center/article/rackspace-auto-scale-overview)**
 
 **Auto Scale Terminology**
 
-### **As of November 11, 2013** {style="margin-bottom: 0in; text-align: left;"}
+### **As of November 11, 2013**
 
 CAPABILITY
 

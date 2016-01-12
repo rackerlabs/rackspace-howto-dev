@@ -5,8 +5,8 @@ permalink: article/managing-rackspace-intelligence-notification-plans
 type: article
 created_date: '2015-07-16 19:08:15'
 created_by: rose.coste
-last_modified_date: '2015-08-27 18:4937'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-08 14:3035'
+last_modified_by: stephanie.fillmon
 products: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -73,11 +73,11 @@ You can perform the following modifications on notification plans:
     plan](#addnotificationstonotificationplan)
 -   [Delete a notification plan](#deletenotificationplan)
 
-1.  ### Rename a notification plan
+### Rename a notification plan
 
-2.  From the **Actions** menu on the notification plan details page,
+1.  From the **Actions** menu on the notification plan details page,
     select **Rename Plan**.
-3.  In the **Rename Notification Plan** box, type the new name, and then
+2.  In the **Rename Notification Plan** box, type the new name, and then
     click **Rename**.
 
 ### Change the notifications in a notification plan

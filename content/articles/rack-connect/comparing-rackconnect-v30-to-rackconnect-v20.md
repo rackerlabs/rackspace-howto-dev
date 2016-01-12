@@ -5,7 +5,7 @@ permalink: article/comparing-rackconnect-v30-to-rackconnect-v20
 type: article
 created_date: '2014-08-26 14:10:29'
 created_by: juan.perez
-last_modified_date: '2014-10-24 14:2806'
+last_modified_date: '2016-01-06 17:5735'
 last_modified_by: kyle.laffoon
 products: RackConnect
 body_format: markdown_w_tinymce
@@ -45,11 +45,11 @@ Now that RackConnect v3.0 is released for unlimited availability (UA), RackConne
 
 Cloud Networks is a requirement for and is an inherent part of how RackConnect v3.0 works. With RackConnect v3.0, your cloud network connects directly to your dedicated environment. With RackConnect v2.0, connectivity between a cloud server and a dedicated environment is possible only via ServiceNet.
 
-More information about how Cloud Networks works with RackConnect v2.0 is in the [RackConnect v2.0 with Cloud Networks FAQ](/knowledge_center/article/rackconnect-v20-with-cloud-networks-faq).
+More information about how Cloud Networks works with RackConnect v2.0 is in the [RackConnect v2.0 with Cloud Networks FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-with-cloud-networks-faq).
 
 ## <a name="c"></a>QoS policies
 
-Traffic across a RackConnect v3.0 link between cloud and dedicated environments has its bandwidth limited by quality of service (QoS) policies. By default, these QoS policies are set to limit bandwidth throughput to 100 Mbps (megabits per second), but this limit may be increased on a case-by-case basis. If you need this value increased, [contact us](/knowledge_center/support).
+Traffic across a RackConnect v3.0 link between cloud and dedicated environments has its bandwidth limited by quality of service (QoS) policies. By default, these QoS policies are set to limit bandwidth throughput to 100 Mbps (megabits per second), but this limit may be increased on a case-by-case basis. If you need this value increased, [contact us](http://www.rackspace.com/knowledge_center/support).
 
 As with RackConnect v2.0, RackConnect v3.0 bandwidth might be limited by the capabilities or QoS settings of the Cloud Servers flavors that you are running, your network device's capabilities, and your dedicated server's capabilities.
 
@@ -57,7 +57,7 @@ As with RackConnect v2.0, RackConnect v3.0 bandwidth might be limited by the cap
 
 The API for RackConnect v3.0 has been enhanced and rewritten so that it no longer uses the Cloud Servers API metadata options that are needed to accomplish certain tasks with RackConnect v2.0. The RackConnect v3.0 API is a public-facing API that enables you to seamlessly add and remove cloud servers from your load balancer pools, add and remove public IP addresses from your cloud servers, and list the cloud networks associated with your RackConnect configuration.
 
-For details, see [RackConnect v3.0 API](/knowledge_center/article/rackconnect-v30-api).
+For details, see [RackConnect v3.0 API](http://www.rackspace.com/knowledge_center/article/getting-started-with-the-rackconnect-v30-api).
 
 ## <a name="e"></a>Automation access for Cloud Servers
 
@@ -67,7 +67,7 @@ Because of these changes, RackConnect network policies are not available with Ra
 
 Modifying local software firewall rules to allow automation access is not required in v3.0, as it is with v2.0. One major benefit of this change is no more restrictions on cloud server images. Any custom cloud server images that are built after your RackConnect v3.0 implementation is online should work seamlessly.
 
-For details, see [RackConnect v3.0 Cloud Server Image Compatibility](/knowledge_center/article/rackconnect-v30-cloud-server-image-compatibility).
+For details, see [RackConnect v3.0 Cloud Server Image Compatibility](http://www.rackspace.com/knowledge_center/article/rackconnect-v30-cloud-server-image-compatibility).
 
 ## <a name="f"></a>PublicNet and ServiceNet access for cloud servers
 
@@ -87,7 +87,7 @@ ServiceNet connectivity on RackConnect v3.0 cloud servers is highly restricted t
 
 These restrictions are set at the hypervisor level and are immutable, which means that ServiceNet on RackConnect v3.0 cloud servers cannot be used to connect to or from any other cloud servers. This restriction frees you from having to use a software firewall to restrict ServiceNet access to your RackConnect v3.0 cloud servers.
 
-Even with ServiceNet added, not all Rackspace cloud products are compatible with RackConnect v3.0 cloud servers. For a list of supported cloud products, see the [RackConnect v3.0 Compatibility Matrix](/knowledge_center/article/rackconnect-v30-compatibility-matrix).
+Even with ServiceNet added, not all Rackspace cloud products are compatible with RackConnect v3.0 cloud servers. For a list of supported cloud products, see the [RackConnect v3.0 Compatibility Matrix](http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility).
 
 ## <a name="h"></a>Comparison matrix
 
@@ -140,8 +140,8 @@ The following comparison matrix is an overview of the features that are supporte
 </tr>
 <tr align="center">
 <td align="left"><strong>Compatible with Public Cloud Product Offerings</strong></td>
-<td><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility-matrix" target="_blank">Yes w/caveats</a></td>
-<td><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-compatibility" target="_blank">Yes w/caveats</a></td>
+<td><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility" target="_blank">Yes w/caveats</a></td>
+<td><a href="http://www.rackspace.com/knowledge_center/article/rackconnect-v20-compatibility" target="_blank">Yes w/caveats</a></td>
 </tr>
 <tr align="center">
 <td align="left"><strong>RackConnect QoS Bandwidth Limits</strong></td>
@@ -227,4 +227,4 @@ The following diagrams show high-level views of network traffic flow for RackCon
 <img src="/knowledge_center/sites/default/files/field/image/RCv3Example.png" alt="" width="692" height="456" border="2" id="rcv3" />
         [Figure 2 — (Above) RackConnect v3.0 network traffic flow over Cloud Networks]
 
-We hope that you have found this article helpful, but if you have any questions, we are always here to help. Contact information is available on the [Contact Us page](/knowledge_center/support).
+We hope that you have found this article helpful, but if you have any questions, we are always here to help. Contact information is available on the [Contact Us page](http://www.rackspace.com/knowledge_center/support).

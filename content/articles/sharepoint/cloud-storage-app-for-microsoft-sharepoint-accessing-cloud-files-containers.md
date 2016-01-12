@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-fi
 type: article
 created_date: '2013-06-04 22:16:14'
 created_by: rose.contreras
-last_modified_date: '2016-01-04 18:0427'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-06 18:3403'
+last_modified_by: kelly.holcomb
 products: Sharepoint
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 ### Previous section
 
 [Cloud Storage App for Microsoft SharePoint:
-Overview](https://admin.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
+Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
 
 Rackspace Cloud Files enables you to log in to your Cloud Control Panel
 and create containers inside your Cloud Files account. When you create a

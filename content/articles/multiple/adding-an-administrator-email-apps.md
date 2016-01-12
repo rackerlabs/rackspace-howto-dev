@@ -5,8 +5,8 @@ permalink: article/adding-an-administrator-email-apps
 type: article
 created_date: '2012-09-17 21:01:34'
 created_by: Rae D. Cabello
-last_modified_date: '2015-11-03 19:1007'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-05 16:4145'
+last_modified_by: rose.contreras
 products: 'Rackspace Email,Exchange'
 body_format: tinymce
 ---
@@ -52,9 +52,9 @@ Add an administrator
         restricts the administrator from certain areas of the **My
         Account** section of the control panel. Specifically, standard
         administrators cannot access the [General
-        Information](/knowledge_center/article/general-information-email-apps-control-panel), [Contacts](/knowledge_center/article/company-contacts-email-apps-control-panel "Company Contacts"),
+        Information](/knowledge_center/article/general-information-cloud-office-control-panel), [Contacts](http://www.rackspace.com/knowledge_center/article/manage-company-contacts-in-the-cloud-office-control-panel "Company Contacts"),
         [Invoice
-        History,](/knowledge_center/article/invoice-history-email-apps-control-panel "Invoice History")
+        History,](http://www.rackspace.com/knowledge_center/article/view-invoice-history-cloud-office-control-panel "Invoice History")
         Current Admins, or Add Administrator*areas.*They can, however,
         access Administrator Activity and all Support resources.
     -   **Limited** - Allows access to only the control panel areas you

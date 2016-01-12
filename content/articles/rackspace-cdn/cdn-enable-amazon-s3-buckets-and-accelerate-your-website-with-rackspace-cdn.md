@@ -5,7 +5,7 @@ permalink: article/cdn-enable-amazon-s3-buckets-and-accelerate-your-website-with
 type: article
 created_date: '2015-09-08 16:41:30'
 created_by: catherine.richardson
-last_modified_date: '2015-09-08 17:4507'
+last_modified_date: '2016-01-08 18:0123'
 last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
@@ -22,46 +22,54 @@ Amazon S3 buckets. Also, you cannot CDN-enable Cloud Files containers
 with Rackspace CDN.  For information about setting up a static website
 in Cloud Files, see [Point and click your way to a Cloud Files static
 website with the Control
-Panel](http://www.rackspace.com/blog/point-and-click-your-way-to-a-cloud-files-static-website-with-the-control-panel/).\
-  
+Panel](http://www.rackspace.com/blog/point-and-click-your-way-to-a-cloud-files-static-website-with-the-control-panel/).
 
 Set up the origin server in AWS
 -------------------------------
 
 1.   Create an Amazon Web Servers (AWS) account if you don&rsquo;t already
-have one.\
- 2.   Log in to your AWS account.\
- 3.   Create an Amazon S3 bucket.\
- 3.   Edit permissions.\
- \
- By default, S3 locks the permissions on your bucket so that
+have one.
+
+2.   Log in to your AWS account.
+
+3.   Create an Amazon S3 bucket.
+
+4.   Edit permissions.
+
+By default, S3 locks the permissions on your bucket so that
 authenticated users cannot access anything in the bucket. Because you
 are hosting your entire static site here, must give everyone read
 access. To edit permissions, perform the following steps:
 
-         a.  Click **Permissions**.\
-          b.  Click **Add more permissions**.\
-          c.  For **Grantee**, select **everyone**.\
-          d.  Select the **View permissions** checkbox.  \
-          e.  Click **Save**.
+         a.   Click **Permissions**.
 
-**Note:**Do not grant any other permissions for this grantee. Doing so
+         b.   Click **Add more permissions**.
+
+         c.   For **Grantee**, select **everyone**.
+
+         d.   Select the **View permissions** checkbox.
+
+         e.   Click **Save**.
+
+**Note:** Do not grant any other permissions for this grantee. Doing so
 might create a security issue.
 
-4.   In the settings for your bucket, enable static website hosting.\
- \
- When you enable this setting, Amazon S3 serves the file `/index.html`
+5.   In the settings for your bucket, enable static website hosting.
+
+When you enable this setting, Amazon S3 serves the file `/index.html`
 for a request for `/`. With static website hosting enabled, your users
 see the same homepage whether they request `website.com/` or
-`website.com/index.html`.\
- \
-          a.   For the index document, enter `index.html`.\
-          b.   Enter the file to use for the error document. This file
-is your 404 page.\
-                If you don&rsquo;t have a 404 page created, you can enter
+`website.com/index.html`.
+
+         a.   For the index document, enter `index.html`.
+
+         b.   Enter the file to use for the error document. This file is
+your 404 page.
+
+               If you don&rsquo;t have a 404 page created, you can enter
 `index.html`.
 
-5.   Go to **Actions \> Upload**to upload your static HTML files.
+6.   Go to **Actions \> Upload**to upload your static HTML files.
 
 If you have a large number of files to upload, you can use a file
 transfer client to transfer many files at once. Many transfer clients
@@ -77,7 +85,7 @@ has to get your website data from the same Amazon S3 data center. You
 can accelerate your static website by using Rackspace CDN.\
   
 
-Accelerate your site to edge nodes by using Rackspace CDN {.MsoSubtitle}
+Accelerate your site to edge nodes by using Rackspace CDN
 ---------------------------------------------------------
 
 Rackspace CDN increases performance by distributing your website across
@@ -97,9 +105,9 @@ as your origin domain.  \
 
 3.   Set the **Host Header** type to **Origin**.
 
-4.   Configure your DNS.\
- \
- Update your DNS settings to add a CNAME record for the raxcdn.com URL
+4.   Configure your DNS.
+
+Update your DNS settings to add a CNAME record for the raxcdn.com URL
 returned by Rackspace CDN For more information about changing DNS
 settings, see [Change DNS to enable Rackspace
 CDN](http://www.rackspace.com/knowledge_center/article/change-dns-to-enable-rackspace-cdn).

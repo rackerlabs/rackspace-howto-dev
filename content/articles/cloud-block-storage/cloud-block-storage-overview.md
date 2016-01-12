@@ -5,8 +5,8 @@ permalink: article/cloud-block-storage-overview
 type: article
 created_date: '2012-10-22 07:05:56'
 created_by: Rackspace Support
-last_modified_date: '2015-08-25 21:2917'
-last_modified_by: catherine.richardson
+last_modified_date: '2016-01-05 19:0754'
+last_modified_by: rose.contreras
 products: Cloud Block Storage
 body_format: tinymce
 ---
@@ -119,17 +119,17 @@ Storage.
 In this Getting Started Guide, you will learn how to:
 
 -   [Create and Attach a
-    Volume](/knowledge_center/article/cbs-create-and-attach-a-volume)
+    Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
 -   [Prepare Your Volume for Use with a Server (Linux or
-    Windows)](/knowledge_center/article/prepare-your-volume)
+    Windows)](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
 -   [Take Snapshots of Your
-    Volume](/knowledge_center/article/cbs-create-and-use-snapshots)
+    Volume](http://www.rackspace.com/knowledge_center/article/create-and-use-cloud-block-storage-snapshots)
 -   [Detach and Delete a
-    Volume](/knowledge_center/article/cbs-detach-and-delete-volumes)
+    Volume](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes)
 -   [Attach a Cloud Block Storage Volume to an OnMetal
-    Server](/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
+    Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 
 \
  Let's get started and [Create your first
-volume](/knowledge_center/article/cbs-create-and-attach-a-volume).
+volume](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 

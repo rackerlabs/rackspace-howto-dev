@@ -5,8 +5,8 @@ permalink: article/permissions-matrix-for-cloud-queues
 type: article
 created_date: '2013-08-19 20:46:52'
 created_by: renee.rendon
-last_modified_date: '2014-08-21 17:2910'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-05 21:1907'
+last_modified_by: Mike Asthalter
 products: Cloud Queues
 body_format: tinymce
 ---
@@ -15,7 +15,7 @@ The following permissions matrix displays specific permissions for the
 roles in Cloud Queues. The matrix displays the method names, their
 corresponding RESTful API commands, and the roles that are supported.  
 
-**[API Documentation](http://docs.rackspace.com/)**
+**[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
 Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**

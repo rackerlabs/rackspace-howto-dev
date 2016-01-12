@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-cred
 type: article
 created_date: '2013-06-04 22:13:48'
 created_by: rose.contreras
-last_modified_date: '2016-01-04 17:5435'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-06 18:3032'
+last_modified_by: kelly.holcomb
 products: Sharepoint
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 ### Previous section
 
 [Cloud Storage App for Microsoft SharePoint:
-Overview](https://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
+Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
 
 The first time that you access Rackspace Cloud Storage App for
 *Microsoft SharePoint*, and every time that you want to log back in
@@ -27,10 +27,10 @@ metadata key in one of the following ways:
 
 -   If you have not previously used other applications to access Cloud
     Files, [create a new account](#createnew).
--   If you already use other applications to access Cloud Files, [use an
-    existing account](#specify).
+-   If you already use other applications to access Cloud Files,
+    [specify an existing user](#specify).
 
-Create a new account
+Create a new account {#createnew}
 --------------------
 
 In the Create New Account form (shown in the following figure), provide
@@ -49,7 +49,7 @@ Control Panel](https://mycloud.rackspace.com).
 
 ![](/knowledge_center/sites/default/files/field/image/Fig%20--%20Create%20New%20Account_0.jpg)
 
-Specify an existing user
+Specify an existing user {#specify}
 ------------------------
 
 If you already use other applications to connect to your Cloud Files

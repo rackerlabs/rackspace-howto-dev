@@ -5,8 +5,8 @@ permalink: article/creating-cloud-queues
 type: article
 created_date: '2013-09-16 16:57:35'
 created_by: megan.meza
-last_modified_date: '2014-06-30 21:2254'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 21:0320'
+last_modified_by: Mike Asthalter
 products: Cloud Queues
 body_format: tinymce
 ---
@@ -15,11 +15,10 @@ Creating a Cloud Queue can be accomplished through the Control Panel or
 through your terminal.  After creating the Queue, you can use the
 Control Panel for viewing Queue details or deleting the Queue as
 needed.  All other Queue commands will be completed through the
-terminal.**\
-**
+terminal.
 
 **Note**: Be sure to [set up your authentication
-token](/knowledge_center/article/cloud-queues-curl-cookbook#getauthtoken)
+token](http://www.rackspace.com/knowledge_center/article/cloud-queues-curl-cookbook#getauthtoken)
 before completing the terminal steps for creating your cloud queue.
 
 #### In the Control Panel
@@ -32,8 +31,8 @@ before completing the terminal steps for creating your cloud queue.
 When the queue is finished building, you will see the details for your
 queue listed in the Control Panel. You will then need to complete the
 steps under [Testing Your
-Queue](/knowledge_center/article/creating-cloud-queues#testingyourqueue)
-in your terminal to begin postig messages to your Queue.
+Queue](http://www.rackspace.com/knowledge_center/article/cloud-queues-curl-cookbook#testingyourqueue)
+in your terminal to begin posting messages to your Queue.
 
 #### Or, In Your Terminal
 
@@ -50,7 +49,7 @@ in your terminal to begin postig messages to your Queue.
     HTTP/1.1 200 OK Content-Length: 140 Content-Type: application/json; charset=utf-8 Content-Location: /v1/queues {"queues": [{"href": "/v1/queues/samplequeue", "name": "samplequeue"}], "links": [{"href": "/v1/queues?marker=samplequeue", "rel": "next"}]}
 
 #### \
-Testing Your Queue
+ Testing Your Queue
 
 -   You can test your queue by posting a message to it:
 

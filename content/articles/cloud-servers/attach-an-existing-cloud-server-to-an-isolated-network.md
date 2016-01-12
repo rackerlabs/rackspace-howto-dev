@@ -5,8 +5,8 @@ permalink: article/attach-an-existing-cloud-server-to-an-isolated-network
 type: article
 created_date: '2012-09-21 16:27:51'
 created_by: Susan Million
-last_modified_date: '2015-01-12 20:1542'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-05 17:1131'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -60,7 +60,7 @@ in the Cloud Control Panel, perform the following steps:
     network) networks. If you are considering removing these networks
     from the server, we strongly recommend that you read [Removing
     Networks from a Cloud
-    Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Remove Networks from a Cloud Server")
+    Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Remove Networks from a Cloud Server")
     to fully understand the limitations that will be placed on this
     server if you remove these networks.
 
@@ -74,13 +74,13 @@ attached to the networks that you selected.
 ### More information about Cloud Networks
 
 [Create an Isolated Cloud
-Network](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Attach an Isolated Network to a New Cloud Server")
+Network](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network-and-attach-it-to-a-server "Attach an Isolated Network to a New Cloud Server")
 
 [Removing Networks from a Cloud
-Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
+Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation "CIDR Notation")
+Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer
 Guide](http://docs.rackspace.com/networks/api/v2/cn-devguide/ "Cloud Networks Developer Guide")

@@ -5,8 +5,8 @@ permalink: article/vyatta-vrouter-allowing-ip-to-access-the-vrouter-via-ssh
 type: article
 created_date: '2014-09-09 20:34:04'
 created_by: sameer.satyam
-last_modified_date: '2015-02-18 20:3452'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-07 15:5121'
+last_modified_by: renee.rendon
 products: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -14,8 +14,6 @@ body_format: markdown_w_tinymce
 This article demonstrates how to configure an IP address to connect to a Brocade Vyatta vRouter through SSH, for administration purposes.
 
 ## Connect to the vRouter
-
-Access the vRouter remotely or through the console. For instructions, see [Managing access to the Vyatta vRouter](https://www.rackspace.com/knowledge_center/article/managing-access-to-the-vyetta-router).
 
 **Note:** After you've accessed the vRouter, you should add a local user. Follow the procedure described in [Vyatta vRouter: Adding a local administrative user](https://www.rackspace.com/knowledge_center/article/vyatta-vrouter-adding-a-local-administrative-user). If you are not logged in via SSH as the user *Vyatta* or as an administrative user, then access the vRouter remotely or through the console, then add a local user. Follow the procedure at [Vyatta vRouter: Add a local administrative user}()
 

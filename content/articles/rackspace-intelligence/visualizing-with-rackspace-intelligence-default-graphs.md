@@ -1,22 +1,65 @@
 ---
 node_id: 4742
-title: Viewing default graphs of activity in Rackspace Intelligence
+title: Viewing basic graphs of activity in Rackspace Intelligence
 permalink: article/visualizing-with-rackspace-intelligence-default-graphs
 type: article
 created_date: '2015-07-16 18:34:51'
 created_by: rose.coste
-last_modified_date: '2015-08-27 18:5339'
+last_modified_date: '2016-01-08 01:4419'
 last_modified_by: constanze.kratel
 products: Rackspace Intelligence
 body_format: tinymce
 ---
 
-Rackspace Intelligence provides predefined graphs that represent the
-activity of any entity that you choose during any time range that you
-choose. To see these graphs, click **Visualize** at the top of the
-interface, and then click **Default Graphs**.
+Rackspace Intelligence provides a set of predefined graphs that
+represent the activity of any metrics and checks that have been defined
+for your monitoring entities. Rackspace Intelligence now displays
+out-of-the-box graphs for all of your checks.
 
-![](/knowledge_center/sites/default/files/field/image/4742.1.png)
+If you want to explore a metric across multiple entities, consider using
+custom graphs. For more information, read [Creating custom graphs of
+activity in Rackspace
+Intelligence](https://www.rackspace.com/knowledge_center/article/creating-custom-graphs-of-activity-in-rackspace-intelligence).
+
+View default graphs
+-------------------
+
+To view the default graphs that are available for you, click
+**Visualize** at the top of the interface, and then click **Basic
+Graphs**.
+
+To view any of the default graphs for your entities**,** click
+**Rackspace Default** under **Graph Collections**.
+
+![](/knowledge_center/sites/default/files/field/image/BG_Default.1.png)
+
+To view a graph for a specific check, in the **Graphs by Check**
+section, click the name of the check for which you want to see the
+graphs, such as **CPU**.
+
+A list of graphs are displayed that are available for your check.
+
+![](/knowledge_center/sites/default/files/field/image/BG_Check.2.png)
+
+Work with favorites
+-------------------
+
+Rackspace Intelligence lets you specify one or more favorite graphs and
+filter for your favorites.
+
+To mark a graph as favorite, click the favorite icon to the left of the
+title of the graph.
+
+To filter for your favorite graphs, click **Favorites** under **Graph
+Collections.**
+
+![](/knowledge_center/sites/default/files/field/image/BG_Fav.1.png)I
+
+Specify a time range
+--------------------
+
+Rackspace Intelligence lets you use preset or custom time ranges for the
+data that is collected and displayed in graphs.
 
 If you choose a preset time range, Rackspace Intelligence shows data
 collected for the entity during the most recent period of that range:
@@ -31,5 +74,23 @@ If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
 last time stamp.
 
-![](/knowledge_center/sites/default/files/field/image/4742.2.png)
+![](/knowledge_center/sites/default/files/field/image/preset1.png)
+
+Adjust the layout of your graph page
+------------------------------------
+
+You can adjust the way your graphs are displayed on the page by
+selecting the appropriate display icon on the top right corner of the
+page.
+
+You can choose from one of the two display options:
+
+-   grid layout - displays two graphs side by side
+-   linear layout - displays your graphs in linear sequence
+
+The following example shows a grid layout:
+
+![](/knowledge_center/sites/default/files/field/image/gridlayout.png)
+
+ 
 

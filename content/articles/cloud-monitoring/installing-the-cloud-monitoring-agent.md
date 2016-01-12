@@ -5,8 +5,8 @@ permalink: article/installing-the-cloud-monitoring-agent
 type: article
 created_date: '2012-11-13 03:31:42'
 created_by: Susan Million
-last_modified_date: '2015-12-17 21:4934'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 19:1409'
+last_modified_by: rose.contreras
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -167,7 +167,7 @@ and *alarms* that trigger a notification at certain thresholds. You also
 need to create a notification and notification plan. For details about
 performing these steps in the Cloud Control Panel, see [Rackspace
 Monitoring Checks and
-Alarms](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
+Alarms](http://www.rackspace.com/knowledge_center/article/rackspace-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
 [Creating a monitoring check using the Control
 Panel](http://www.rackspace.com/knowledge_center/article/creating-a-monitoring-check-using-the-cloud-control-panel "Creating a Monitoring Check Using the Control Panel").
 
@@ -175,8 +175,8 @@ Related information
 -------------------
 
 -   [About the Rackspace Monitoring
-    Agent](/knowledge_center/article/about-the-cloud-monitoring-agent "About the Monitoring Agent")
+    Agent](http://www.rackspace.com/knowledge_center/article/about-the-cloud-monitoring-agent "About the Monitoring Agent")
 -   [Troubleshooting the Monitoring
-    Agent](/knowledge_center/article/troubleshooting-the-monitoring-agent "Troubleshoot the Monitoring Agent")
+    Agent](http://www.rackspace.com/knowledge_center/article/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
 
 

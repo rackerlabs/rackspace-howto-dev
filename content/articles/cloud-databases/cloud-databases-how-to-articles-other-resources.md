@@ -5,8 +5,8 @@ permalink: article/cloud-databases-how-to-articles-other-resources
 type: article
 created_date: '2012-07-24 22:18:31'
 created_by: Jerry Schwartz
-last_modified_date: '2014-05-28 18:2555'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06 19:3241'
+last_modified_by: catherine.richardson
 products: Cloud Databases
 body_format: tinymce
 ---
@@ -20,32 +20,30 @@ Databases.
 ### Documentation and bindings
 
 -   [API Developer
-    Guide](http://docs.rackspace.com/cdb/api/cdb-devguide-latest/index.html)
+    Guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/)
 -   [Getting Started
-    Guide](http://docs.rackspace.com/cdb/api/cdb-getting-started-latest/index.html)
+    Guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#getting-started)
 -   [Release
-    Notes](http://docs.rackspace.com/cdb/api/cdb-releasenotes-latest/index.html)
+    Notes](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-release-notes)
 -   [Fog Binding](https://github.com/rackspace/fog) (replaces Ruby
     Binding, which is now deprecated)
 
 ### Popular how-to articles
 
 -   [Rackspace Cloud Databases
-    FAQs](http://www.rackspace.com/knowledge_center/content/rackspace-cloud-databases-faq)
+    FAQs](http://www.rackspace.com/knowledge_center/product-faq/cloud-databases)
 -   [Rackspace Cloud Databases Introduction
-    Video](http://www.rackspace.com/knowledge_center/content/open-cloud-databases)
+    Video](http://www.rackspace.com/knowledge_center/video/open-cloud-databases)
 -   [Rackspace Cloud Databases: Public Vs. Private
-    Access](http://www.rackspace.com/knowledge_center/node/2411)
+    Access](http://www.rackspace.com/knowledge_center/article/public-and-private-access-for-cloud-databases)
 -   [Rackspace Cloud Databases: Connecting to Your
-    Database](http://www.rackspace.com/knowledge_center/node/2429)
+    Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance)
 -   [Rackspace Cloud Databases: Importing
-    Data](http://www.rackspace.com/knowledge_center/node/2413)
--   [Rackspace Cloud Databases: Exporting
-    Data](http://www.rackspace.com/knowledge_center/node/2414)
+    Data](http://www.rackspace.com/knowledge_center/article/importing-data-into-cloud-databases)
 -   [Rackspace Cloud Databases: Managing
-    Users](http://www.rackspace.com/knowledge_center/node/2410)
+    Users](http://www.rackspace.com/knowledge_center/article/managing-users-for-cloud-databases)
 -   [Rackspace Cloud Databases: Creating an
-    Instance](http://www.rackspace.com/knowledge_center/node/2443)
+    Instance](http://www.rackspace.com/knowledge_center/article/cloud-database-instance-parameters)
 
 ### Popular technical articles and other resources
 
@@ -83,19 +81,6 @@ deployment, configuration, patching, backups, restores, and monitoring.
 -   Test and Deployment Images:
     -   [http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86\_64-openvz.tar.gz](http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86_64-openvz.tar.gz)
     -   [http://c629296.r96.cf2.rackcdn.com/lucid\_ext3\_openvz.box](http://c629296.r96.cf2.rackcdn.com/lucid_ext3_openvz.box)
-
-### Videos
-
--   [Cloud Databases: Avoiding Lock-In With The Open
-    Cloud](http://www.rackspace.com/knowledge_center/video/cloud-databases-avoiding-lock-video)
--   [Cloud Databases: Addressing The Multi-Tenant
-    Problem](http://www.rackspace.com/knowledge_center/video/cloud-databases-addressing-the-multi-tenant-problem-video)
--   [Cloud Databases: Intro To Container Based
-    Virtualization](http://www.rackspace.com/knowledge_center/video/cloud-databases-intro-container-based-virtualization-video)
--   [Cloud Databases:
-    Reliability](http://www.rackspace.com/knowledge_center/video/cloud-databases-reliability-video)
--   [Cloud Databases: Fanatical
-    Support](http://www.rackspace.com/knowledge_center/video/cloud-databases-fanatical-support)
 
  
 

@@ -1,12 +1,12 @@
 ---
 node_id: 3426
-title: Best Practices for Cloud Backup
+title: Best practices for Cloud Backup
 permalink: article/best-practices-for-cloud-backup
 type: article
 created_date: '2013-04-22 19:23:55'
 created_by: David Hendler
-last_modified_date: '2015-06-23 19:4808'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-07 16:3653'
+last_modified_by: constanze.kratel
 products: Cloud Backup
 body_format: tinymce
 ---
@@ -16,21 +16,15 @@ Best Practices for Cloud Backup
 
 ### Contents
 
-[Purpose of this Guide](#purpose)
-
-[Document Conventions](#conventions)
-
-[Key Concepts](#concepts)
-
-[Choosing What to Backup](#choosing)
-
-[Backup and Restore Best Practices](#best_practices)
-
--        [Backup Frequency](#frequency)
--        [Effective Restores](#restores)
--        [Encryption: Costs and Benefits](#encryption)
-
-[Frequently Encountered Issues](#issues)
+-   [Purpose of this Guide](#purpose)
+-   [Document Conventions](#conventions)
+-   [Key Concepts](#concepts)
+-   [Choosing What to Backup](#choosing)
+-   [Backup and Restore Best Practices](#best_practices)
+    -        [Backup Frequency](#frequency)
+    -        [Effective Restores](#restores)
+    -        [Encryption: Costs and Benefits](#encryption)
+-   [Frequently Encountered Issues](#issues)
 
  
 
@@ -61,7 +55,7 @@ Key Concepts
 
 Knowing the language of backup goes a long way towards helping you make
 informed decisions about your backup operations.\
-\
+  
 
 -   **Backup**&mdash;a spare copy of data to be used in the event of a failure
     or loss of the original.
@@ -89,13 +83,23 @@ informed decisions about your backup operations.\
 Choosing What to Backup
 -----------------------
 
-Our best guidance is not what to backup, but what not to backup. The
-three items that **should not be** backed up through the Cloud Backup
-Agent:
+Our best guidance is not what to backup, but what not to backup:
 
--   Databases
--   Caches and session files
--   Frequently changing files, such as logs
+-   Do not back up running databases -- to backup a database, see the
+    topic on [backing up
+    databases](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backing-up-databases).
+-   Do not back up caches and session files
+-   Do not back up frequently changing files, such as logs
+-   Do not back up root -- to save all data and the server, [make an
+    image of the
+    server](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+    instead.
+
+Lastly, do not compress your data before backup, as this defeats the
+purpose of deduplication. Deduplication saves only the updated
+information and saves you storage space and money during the backup
+process. For more on technology, see the [topic on
+deduplication](http://www.rackspace.com/knowledge_center/frequently-asked-question/what-is-de-duplication).
 
 The Cloud Backup Agent tries to be helpful, and skips the below types of
 files automatically. You may, however, manually add them to your backup.
@@ -107,12 +111,12 @@ files automatically. You may, however, manually add them to your backup.
 -   desktop.ini and thumbs.db (Windows)
 
 \
-These file types either change too rapidly (databases, logs, caches) or
+ These file types either change too rapidly (databases, logs, caches) or
 don't exist long enough to be backed up (session files). Session files
 should be avoided entirely. And if the information is valuable to your
 business, log files should track it. Caches should also be avoided, as
-their data is meant to be discarded. \
-    If you do need to back up these files, our suggested workarounds
+their data is meant to be discarded.\
+     If you do need to back up these files, our suggested workarounds
 are:
 
 -   Databases&mdash;Take a snapshot of the database (e.g., a database dump)
@@ -164,17 +168,17 @@ variables to consider:
 3.  Data Churn&mdash;How often does the file change?
 
 \
-    Criticality is the most important factor to consider when making
+     Criticality is the most important factor to consider when making
 backup decisions. The more critical the file is to your business
-operations, the more often you'll want to back this file up. \
-    Size is an important consideration if the speed of backups/restores
+operations, the more often you'll want to back this file up.\
+     Size is an important consideration if the speed of backups/restores
 is important to you. Large files take longer to backup and to restore.
-It may be wise to backup large files less frequently. \
-    Data churn is the last variable to consider, and perhaps the
+It may be wise to backup large files less frequently.\
+     Data churn is the last variable to consider, and perhaps the
 trickiest to handle. Files that change often invalidate blocks that have
 been stored previously. Depending on criticality, it may still be wise
-to snapshot files with high data churn and backup those snapshots. \
-\
+to snapshot files with high data churn and backup those snapshots.\
+  
 
 Back up less often files that have...
 
@@ -258,13 +262,13 @@ already exists.
 
 **Solution**&mdash;Ensure the agent on the cloned backup server is
 re-registered before any backups are run.\
-\
+  
 
 **Issue**&mdash;My backup is experiencing network errors.\
-**Solution**&mdash;Make sure that your backup server has a connection to both
+ **Solution**&mdash;Make sure that your backup server has a connection to both
 Service Net and public net. If it is on an isolated network, the backup
 agent will not be able to function properly.\
-\
+  
 
 **Issue**&mdash;Sometimes, my backups fail.
 
@@ -281,7 +285,7 @@ agent will not be able to function properly.\
 attempt to determine the cause of the error. Try the backup/restore
 again if it is an intermittent error. We're always working on making
 Cloud Backup more robust.\
-\
+  
 
 **Issue**&mdash;My backup/restore is slow. What can I do?
 

@@ -5,8 +5,8 @@ permalink: article/migrate-email-and-data-using-migrationwiz
 type: article
 created_date: '2013-03-18 13:16:33'
 created_by: mawutor.amesawu
-last_modified_date: '2015-12-22 19:1457'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-07 05:0441'
+last_modified_by: constanze.kratel
 products: Rackspace Email
 body_format: tinymce
 ---
@@ -45,8 +45,8 @@ this information.\
 update the MX records for your domain.  The following article provides
 you with the appropriate DNS records:
 
-[Updating your MX
-Records ](http://www.rackspace.com/knowledge_center/article/updating-your-mx-records-rackspace-email)
+[Set up DNS records for Cloud Office email and Skype for
+Business](https://www.rackspace.com/knowledge_center/article/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 To configure your email clients and mobile devices, you can use our
 Email Setup Assistant: 

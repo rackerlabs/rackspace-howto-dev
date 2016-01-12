@@ -5,7 +5,7 @@ permalink: article/using-cloud-networks
 type: article
 created_date: '2012-09-17 19:30:03'
 created_by: Susan Million
-last_modified_date: '2015-01-14 21:4031'
+last_modified_date: '2016-01-05 16:2004'
 last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
@@ -51,7 +51,7 @@ Attach an isolated network to a cloud server
 
     **Warning:** Before you remove ServiceNet or PublicNet from your
     Cloud Server, read [Removing Networks from a Cloud
-    Server](http://www.rackspace.com/knowledge_center/article/disabling-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
+    Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
     for a complete description of the limitations that will be placed on
     your new server.
 
@@ -79,7 +79,7 @@ Server](http://www.rackspace.com/knowledge_center/article/attach-an-existing-clo
 Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [CIDR
-Notation](http://www.rackspace.com/knowledge_center/article/using-cidr-notation "CIDR Notation")
+Notation](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer
 Guide](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/ch_overview.html "Cloud Networks Developer Guide")

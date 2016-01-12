@@ -5,8 +5,8 @@ permalink: article/article-title-accessing-slow-query-logs-and-general-logs
 type: article
 created_date: '2014-07-17 03:20:03'
 created_by: rose.contreras
-last_modified_date: '2015-08-11 15:4223'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-07 16:0550'
+last_modified_by: Nate.Archer
 products: Cloud Databases
 body_format: markdown_w_tinymce
 ---
@@ -57,7 +57,7 @@ To enable the logging of slow queries:
 
 	For example, to create a new configuration group with trove that enables slow query logging, run:
 			
-        trove configuration-create EnableSlowQueryLog '{"log_output":"'TABLE'","slow_query_log":1}' --datastore MySQL
+        trove configuration-create EnableSlowQueryLog '{"log_output":"'TABLE'"}' --datastore MySQL
 
 3.  Optionally, set the configuration parameters that define the conditions under which queries are written to the slow query log:
 				
@@ -153,7 +153,19 @@ For more information about the MySQL general query log, see the [MySQL documenta
 4.  If necessary, attach the configuration group with these parameters to the instance for which you want to enable general query logging. To attach the configuration using trove, run:
 
     <pre>trove configuration-attach <em>instanceID</em> <em>configID</em></pre>
-		
-5.  After the configuration is applied to your server, you can retrieve the general query log from the database with a query. For example:
+
+5. After the configuration group is attached, you can now enable general logging by running this command:
+
+    <pre>mysql -e "set global general_log = 1"</pre>
+
+    At the moment, the above variable can only be set dynamically on a running instance due to the overwhelming amount of data this change may generate. 
+
+    You can also disable general log with this command:
+
+    <pre>mysql -e "set global general_log = 0"</pre>
+
+**Note:** General logging will be disable when you restart a MySQL instance.
+     		
+6.  After the configuration is applied to your server, you can retrieve the general query log from the database with a query. For example:
 
         mysql -e "select * from mysql.general_log order by event_time desc limit 1\G"

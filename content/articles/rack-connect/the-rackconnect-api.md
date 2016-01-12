@@ -5,8 +5,8 @@ permalink: article/the-rackconnect-api
 type: article
 created_date: '2012-08-21 23:23:40'
 created_by: juan.perez
-last_modified_date: '2014-10-15 16:3550'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 21:0653'
+last_modified_by: catherine.richardson
 products: RackConnect
 body_format: tinymce
 ---
@@ -46,9 +46,9 @@ Server you want the status of. The limitations of this method are that
 only the RackConnect automation status is available, and this method is
 compatible only with next-generation Cloud Servers. If you are
 interested in this method, see the following article: [How to
-programmatically determine the RackConnect Automation Status of your
-Cloud
-Servers.](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers)
+programmatically determine the RackConnect v2.0 Automation Status of
+your Cloud
+Servers.](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud)
 
 API Basics
 ----------

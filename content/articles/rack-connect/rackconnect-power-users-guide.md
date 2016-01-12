@@ -5,8 +5,8 @@ permalink: article/rackconnect-power-users-guide
 type: article
 created_date: '2012-11-09 00:32:53'
 created_by: jonathan.hogue
-last_modified_date: '2014-09-25 19:2520'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 15:2803'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -42,7 +42,7 @@ last server is fully deployed. More information on how to
 programatically determine the RackConnect automation status for cloud
 servers can be found here: [How to programmatically determine the
 RackConnect Automation Status of your Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers)
+Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud)
 
 Vet the image - Once the basic cloud server build has completed,
 RackConnect logs onto the newly created server and performs some
@@ -58,7 +58,7 @@ disabled, have SSH configured for a non-standard port, or prevent root
 login via SSH will all fail to build correctly. Please refer to
 RackConnect Best Practices for more information about image
 configuration: [RackConnect Best
-Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-best-practices)
+Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-best-practices)
 
 Allow Rackspace automation to complete - If you are running your own
 automation scripts after the cloud server build is complete, be sure to
@@ -72,7 +72,7 @@ for the RackConnect automation to complete before running your own. To
 programmatically determine when Rackspace automation is complete refer
 to this guide: [How to programmatically determine the RackConnect
 Automation Status of your Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers)
+Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud)
 
 Build cloud servers in the correct region - Make sure that you create
 your cloud servers in the same region as your RackConnect configuration.

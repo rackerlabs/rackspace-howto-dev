@@ -5,8 +5,8 @@ permalink: article/rackconnect-10-post-upgrade-faq
 type: article
 created_date: '2012-08-23 19:25:32'
 created_by: juan.perez
-last_modified_date: '2014-10-03 20:5543'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 15:1034'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -36,7 +36,7 @@ has been upgraded?**
     Servers, which provides basic details such as RackConnect automation
     status and Gateway IP.  Documentation of this API is available in
     the [RackConnect
-    API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-api)article.
+    API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-v20-api)article.
 -   Improved automation responsiveness to cloud server events. This
     means that changes in your Cloud environment are picked up by
     RackConnect much faster, providing improved performance.
@@ -46,7 +46,7 @@ has been upgraded?**
 2.0 feature set?**
 
 There are 3 [Automation
-Features](http://www.rackspace.com/knowledge_center/article/rackconnect-automation-features-faq)that
+Features](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-automation-features-faq)that
 were not included in this original 1.0 upgrade that will complete the
 RackConnect 2.0 feature-set:
 
@@ -69,7 +69,7 @@ only be able to create the following types of Network Policies:
 
 These Automation Features are now available to all RackConnect
 customers.  Please view the [RackConnect Automation Features
-FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-automation-features-faq)
+FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-automation-features-faq)
 for details on getting Automation Features enabled on your Cloud
 Account(s).
 
@@ -147,7 +147,7 @@ following information:
 
 Full documenation about the RackConnect API can be found in the
 [RackConnect
-API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-api)article.
+API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-v20-api)article.
 
 **Who can I contact if I have additional questions?**
 

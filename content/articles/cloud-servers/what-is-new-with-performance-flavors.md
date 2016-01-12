@@ -5,8 +5,8 @@ permalink: article/what-is-new-with-performance-flavors
 type: article
 created_date: '2013-09-30 22:52:24'
 created_by: Rackspace Support
-last_modified_date: '2015-11-17 19:0616'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-05 18:5019'
+last_modified_by: Mike Asthalter
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -30,14 +30,14 @@ resources increase. For more information about data disk imaging
 limitations, see [Images capture the system disk only](#ImageCapture)
 (later in this article) or, for the full procedure, see the
 article [Create an image of a server and restore a server from a saved
-image](/knowledge_center/article/create-an-image-or-restore-a-cloud-server-from-an-image).
+image](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 You can back up the data on your data disk or disks by leveraging either
 Rackspace Cloud Backup or Rackspace Cloud Block Storage (an option that
 can also be used to increase the storage capacity of your server, if
 needed). For a comparison of the two data disk backup options, see [Best
 Practices for Backing Up Your Data: Cloud Block Storage versus Cloud
-Backup](/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 Faster server provisioning
 --------------------------
@@ -123,7 +123,7 @@ balancer ) to manage your available resources to suit your needs.
 For information about reducing the size of your General Purpose server
 or changing the size of your work-optimized server, see [Upgrading
 resources for General Purpose or I/O optimized Cloud
-Servers](/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Servers](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 Images capture the system disk only
 -----------------------------------

@@ -5,8 +5,8 @@ permalink: article/rackconnect-release-notes-0
 type: article
 created_date: '2012-09-14 16:20:52'
 created_by: jonathan.hogue
-last_modified_date: '2015-09-04 20:0133'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-05 16:0602'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -74,7 +74,7 @@ RackConnect.
     the managed cloud automation rather than RackConnect. For more
     information, consult [How to Programmatically Determine the
     RackConnect Automation Status of Your Cloud
-    Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers).
+    Servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud-servers).
 
  
 
@@ -92,7 +92,7 @@ RackConnect.
 
 -   You may now use the Cloud Servers API to query the RackConnect
     Automation Status of your Cloud Servers. Instructions are posted
-    [here](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers).
+    [here](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud-servers).
 
  
 
@@ -131,18 +131,18 @@ RackConnect.
 
 **Pre-9/6 Windows Managed Operations Cloud Server Snapshots Failing
 RackConnect**\
-\
-Description: Windows Managed Operations Cloud Server Snapshots fail
+ \
+ Description: Windows Managed Operations Cloud Server Snapshots fail
 RackConnect automation
 
 Cause: The agent is not able to correctly set the private IP when IPv6
 is disabled, leading to an instance that does not have proper
 connectivity and thus fails RackConnect automation.\
-\
-Affects: Snapshots created from next generation Managed Operations
+ \
+ Affects: Snapshots created from next generation Managed Operations
 Windows Servers where the Cloud Server from which the image is based was
 spun up before 9/6/12\
-\
-Workaround: Re-enable IPv6 on the base image before creating snapshots.
+ \
+ Workaround: Re-enable IPv6 on the base image before creating snapshots.
 See http://support.microsoft.com/kb/929852 for instructions.
 

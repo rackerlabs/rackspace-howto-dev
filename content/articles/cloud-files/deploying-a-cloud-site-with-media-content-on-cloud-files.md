@@ -5,8 +5,8 @@ permalink: article/deploying-a-cloud-site-with-media-content-on-cloud-files
 type: article
 created_date: '2011-04-04 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-09-01 18:0441'
-last_modified_by: catherine.richardson
+last_modified_date: '2016-01-05 16:0236'
+last_modified_by: stephanie.fillmon
 products: Cloud Files
 body_format: tinymce
 ---
@@ -25,8 +25,7 @@ upper-right corner of the Cloud Sites Control Panel and selecting
 | -   [Overview](#overview)                                                |
 | -   [Prerequisites](#prereq)                                             |
 | -   [Upload the image to Cloud Files](#upload)                           |
-|     -   [Example: Using FireUploader (less technical)](#exampleone)      |
-|     -   [Example: Using Python SDK (more technical)](#exampletwo)        |
+|     -   [Example: Using Python SDK](#exampletwo)                         |
 | -   [Set up a Cloud Site](#setup)                                        |
 |     -   [Create a sample HTML page](#createsample)                       |
 |     -   [Redirect the image](#redirect)                                  |
@@ -61,64 +60,13 @@ Upload the image to Cloud Files
 -------------------------------
 
 The first step in this process is to upload your image to a CDN-enabled
-container in Cloud Files. This section describes two ways to upload the
-image. The first example describes using a web browser extension called
-FireUploader, a Mozilla Firefox extension. The next example describes a
-programmatic approach: uploading files using the Python SDK.
+container in Cloud Files. This section describes uploading files using
+the Python SDK, however you can also use third party tools, such as
+CyberDuck to upload content.
 
-### Example: Using FireUploader (less technical)
+###  
 
-FireUploader is a simple Firefox extension that you can use to upload
-files directly from your machine to Cloud Files in seconds.
-
-#### Install FireUploader
-
-1.  Open the Firefox browser and go to the [FireUploader
-    website](http://www.fireuploader.com/).
-2.  On the Home page, click **Download**.
-3.  Follow the installation instructions on the site.
-4.  When you are prompted to restart Firefox, do so.
-
-#### Upload your image file
-
-1.  Log in to [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com/pages/Login.jsp).
-2.  In the left navigation pane, click **Your Account \> API Access**.
-3.  Copy your username and API key from the information shown when you
-    perform step 2 above.
-4.  In Firefox, select **Tools \> FireUploader**.
-5.  In the drop-down menu on the right, select **Mosso** (which is the
-    Rackspace Cloud).
-6.  Click **Manage Accounts**.
-7.  For **User Name**, enter the username you copied in step 3, and for
-    **Password**, and enter the API key that you also copied.
-
-    **Note:** Do not use your **manage.mosso.com** password.
-
-8.  Select the remember you password (optional), and then click **Add**
-    and then **Ok**.
-9.  Create a container called **media** in the right-hand Rackspace
-    Cloud (Mosso) pane, as follows:
-    1.  In the upper-right corner of the pane, click the blue **Create
-        Directory** icon, name the container **media**, and then click
-        **Ok**.
-    2.  Double-click on the newly created **media** container.
-    3.  Drag a video or image into the container pane, and wait for the
-        content to upload.
-
-#### Enable the container on CDN
-
-1.  Log in to [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com/pages/Login.jsp).
-2.  In the left navigation pane, click **Hosting**, then **Cloud
-    Files**.
-3.  Click the gear icon next to **media** and select **Make Public
-    (Enable CDN)**.
-4.  In the pop-up box, click **Publish to CDN**.
-5.  Click the gear icon next to **media** and select **View All Links**.
-6.  Copy the CDN URL for later.
-
-### Example: Using Python SDK (more technical)
+### Example: Using Python SDK 
 
 This example assumes that you have pyrax, the Python SDK installed. For
 more information about setting up the SDK for Python, see pyrax

@@ -5,8 +5,8 @@ permalink: article/learn-more-about-cloud-databases
 type: article
 created_date: '2012-07-24 00:33:38'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-15 20:4439'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 17:2036'
+last_modified_by: cat.lookabaugh
 products: 'Cloud Hosting,Cloud Databases'
 body_format: tinymce
 ---
@@ -15,16 +15,16 @@ The Basics
 ----------
 
 [Public Vs. Private
-Access](http://www.rackspace.com/knowledge_center/node/2411)
+Access](http://www.rackspace.com/knowledge_center/article/public-and-private-access-for-cloud-databases)
 
 [Connecting to Your
-Database](http://www.rackspace.com/knowledge_center/node/2429)
+Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance)
 
-[Importing Data](http://www.rackspace.com/knowledge_center/node/2413)
+[Importing
+Data](http://www.rackspace.com/knowledge_center/article/importing-data-into-cloud-databases)
 
-[Exporting Data](http://www.rackspace.com/knowledge_center/node/2414)
-
-[Managing Users](http://www.rackspace.com/knowledge_center/node/2410)
+[Managing
+Users](http://www.rackspace.com/knowledge_center/article/managing-users-for-cloud-databases)
 
 [Managing
 Backups](http://www.rackspace.com/knowledge_center/article/managing-backups-for-cloud-databases)

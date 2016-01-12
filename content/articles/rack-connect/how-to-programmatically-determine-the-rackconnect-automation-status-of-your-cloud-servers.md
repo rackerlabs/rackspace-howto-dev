@@ -5,8 +5,8 @@ permalink: article/how-to-programmatically-determine-the-rackconnect-automation-
 type: article
 created_date: '2012-10-02 13:19:37'
 created_by: juan.perez
-last_modified_date: '2015-09-04 20:2523'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-05 18:2519'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -29,7 +29,7 @@ RackConnect Gateway IP, Automation Status, Automation Status Details,
 and the Automation Features. If you would like to utilize the
 RackConnect API, please view the following article for further
 details: [The RackConnect
-API](//www.rackspace.com/knowledge_center/article/the-rackconnect-api)
+API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-api)
 
 ** **
 
@@ -72,8 +72,9 @@ Configuration region.
 
 You will first need to Authenticate and obtain an Auth Token. The
 following curl command is one way of accomplishing this. You will need
-to enter the command with your Cloud Account's password and username
-credentials in the \<Cloud UserName\> and \<Cloud Password\> fields:
+to enter the command with your Rackspace Cloud account's password and
+username credentials in the \<Cloud UserName\> and \<Cloud Password\>
+fields:
 
     curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' -d '{"auth":{"passwordCredentials":{"username":"<Cloud UserName>", "password":"<Cloud Password>"}}}' -H "Content-Type: application/json" | python -m json.tool
 
@@ -146,9 +147,9 @@ RackConnect:
 
 You will first need to Authenticate and obtain a X-Auth-Token. The
 following curl command is one way of accomplishing this. You will need
-to enter the command with your Cloud Account's API Key and Username
-credentials in the \<Cloud Account's API Key\> and \<Cloud Account
-Username\> fields:
+to enter the command with your Rackspace Cloud account's API Key and
+Username credentials in the \<Cloud Account's API Key\> and \<Cloud
+Account Username\> fields:
 
     curl -D - -k -H "X-Auth-Key: <Cloud Account's API Key>" -H "X-Auth-User: <Cloud Account Username>" https://auth.api.rackspacecloud.com/v1.0
 
@@ -157,6 +158,10 @@ entry, and you will need to copy the value associated with this entry.
 The "X-Auth-Token:" entry will look similar to the following:
 
     X-Auth-Token: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+For information about how to find your API key, see [View and reset your
+API
+key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
 
 **Show details for a Cloud Server to view the "metadata" values:**
 

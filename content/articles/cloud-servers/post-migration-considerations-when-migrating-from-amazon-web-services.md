@@ -5,8 +5,8 @@ permalink: article/post-migration-considerations-when-migrating-from-amazon-web-
 type: article
 created_date: '2013-07-02 15:33:00'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31 14:4037'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-07 16:4649'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -65,11 +65,11 @@ and using a nonstandard (other than port 22) port for SSH.
 #### Monitoring
 
 To create a robust and scalable monitoring system, consider using
-Rackspace Cloud Monitoring. See information about [installing,
-configuring, and
-running](http://www.rackspace.com/knowledge_center/article/install-the-cloud-monitoring-agent)
-an agent and enabling monitoring checks by using the Cloud Control
-Panel.
+Rackspace Cloud Monitoring. Read [Install and Configure the Rackspace
+Monitoring
+Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent) for
+information about installing, configuring, and running an agent and
+enabling monitoring checks by using the Cloud Control Panel.
 
 After you have installed the agent, based on your requirements, you can
 configure one or more of the following checks and alerts:
@@ -90,10 +90,10 @@ configure one or more of the following checks and alerts:
 Backups are an integral part of any production-level deployment and an
 essential component of a disaster recovery (DR) strategy. Rackspace
 provides a file-based backup system to help you meet your backup and
-restore needs. You can install the [Rackspace Cloud
-Backup](http://www.rackspace.com/cloud/backup/) agent by following
-[these
-steps](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+restore needs. You can install the [Rackspace Cloud Backup
+agent](http://www.rackspace.com/cloud/backup/) by following the steps in
+the article [Rackspace Cloud Backup -
+Overview](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
 
 Following are the key features of Cloud Backup:
 

@@ -5,15 +5,15 @@ permalink: article/getting-started-with-the-rackspace-mobile-application-and-man
 type: article
 created_date: '2013-07-12 23:08:43'
 created_by: jamie.rosenfield
-last_modified_date: '2014-10-30 20:3525'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-07 17:1909'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
 
 Now that you are familiar with the Control Panel and know [how to get
 Fanatical
-Support](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-getting-fanatical-support) through
+Support](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-getting-fanatical-support) through
 all of our available channels, let's introduce you to an alternative
 method to using the Cloud Control Panel. The Rackspace mobile
 applications provide a seamless way for customers to access, create, and
@@ -93,7 +93,7 @@ your Server Details page you will be able to Rebuild, Reboot, and Rename
 your server.\
  **Note**: If you need to changed the size of your server, see [Changing
 the size of your General Purpose Cloud
-Server](http://rackspace.com/knowledge_center/article/changing-the-size-of-your-performance-flavor-server).
+Server](http://www.rackspace.com/knowledge_center/article/overview-role-based-access-control-rbac).
 
 -   #### Rebuild
 

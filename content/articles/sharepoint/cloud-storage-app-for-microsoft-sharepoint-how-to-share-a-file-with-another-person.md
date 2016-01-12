@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-fil
 type: article
 created_date: '2013-06-04 22:35:57'
 created_by: rose.contreras
-last_modified_date: '2016-01-04 18:1130'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 20:0922'
+last_modified_by: stephanie.fillmon
 products: Sharepoint
 body_format: tinymce
 ---
@@ -14,12 +14,12 @@ body_format: tinymce
 ### Previous section
 
 [Cloud Storage App for Microsoft SharePoint:
-Overview](https://admin.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
+Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
 
 The Rackspace Cloud Files platform enables you to generate temporary
 URLs that you can use to grant others access to objects within your
 Cloud Files account for the amount of time that you specify. The
-Rackspace Cloud Storage App *for Microsoft SharePoint* implements this
+Rackspace Cloud Storage App for Microsoft SharePoint implements this
 functionality.
 
 Generating a temporary URL

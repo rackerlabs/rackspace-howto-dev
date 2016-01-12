@@ -5,8 +5,8 @@ permalink: article/rackconnect-with-cloud-networks-faq
 type: article
 created_date: '2012-12-19 17:46:15'
 created_by: juan.perez
-last_modified_date: '2014-10-03 19:3603'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 19:4828'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -31,8 +31,8 @@ Support team prior to making the change.
 
 1.  You must be a RackConnect 2.0 with Automation Features enabled
     customer.  For further details on RackConnect Automation Features,
-    please view the [RackConnect Automation Features
-    FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-automation-features-faq).
+    please view the [RackConnect v2.0 Automation Features
+    FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-automation-features-faq).
 2.  You must make sure to create cloud servers with the PublicNet and
     ServiceNet networks enabled, in addition to your Cloud Network. 
     These PublicNet and ServiceNet networks are selected by default, and

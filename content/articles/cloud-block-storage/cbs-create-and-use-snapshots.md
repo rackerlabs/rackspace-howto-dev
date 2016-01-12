@@ -5,8 +5,8 @@ permalink: article/cbs-create-and-use-snapshots
 type: article
 created_date: '2012-10-22 18:02:32'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31 14:3234'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-05 19:2112'
+last_modified_by: rose.contreras
 products: Cloud Block Storage
 body_format: tinymce
 ---
@@ -36,9 +36,9 @@ On this page:
 -   [Create a new Volume from Snapshot](#create-vol-from-snap)
 -   [Delete Snapshot](#delete-snapshot)
 
- Or, click
-[here](https://www.rackspace.com/knowledge_center/whitepaper/allowing-snapshots-without-detaching-the-volumes)
-for additional information on allowing snapshots without detaching the
+ Read [Allowing Snapshots Without Detaching the
+Volumes](http://www.rackspace.com/knowledge_center/whitepaper/allowing-snapshots-without-detaching-the-volumes) for
+additional information on allowing snapshots without detaching the
 volumes.
 
 ### Create a Snapshot
@@ -47,12 +47,12 @@ It is a good idea to detach your volume from your server before you take
 a snapshot. This is the safest method to prevent your server from
 writing information while you are backing it up. That could get your
 data out of sync and could create a problem. To detach your volume, see
-the instructions on "[Detach and Delete
-Volumes](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes)".
-You can always re-attach the volume by following the "[Attach Volume to
-a
-Server](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)"
-steps on the Create/Attach Volume page.
+the instructions on how to [Detach and Delete
+Volumes](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes).
+You can always re-attach the volume by following the steps in [Allowing
+snapshots without detaching the
+volumes](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume) steps
+on the Create/Attach Volume page.
 
 More advanced users may sync the file system in order ensure the
 integrity of the data on your snapshots. Performing a sync will flush

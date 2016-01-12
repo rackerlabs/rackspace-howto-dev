@@ -5,8 +5,8 @@ permalink: article/private-cloud-tech-resources
 type: article
 created_date: '2013-01-24 22:11:44'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-04 16:2220'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 04:5522'
+last_modified_by: constanze.kratel
 products: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
@@ -16,35 +16,24 @@ body_format: tinymce
 [Getting Started with Rackspace Private Cloud -
 OpenStack](https://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud-openstack)
 
-Private Cloud Tech Center 
---------------------------
+Private Cloud Tech Center
+-------------------------
 
-### [Syncing Private Cloud Swift Containers to Rackspace Cloud Files](/knowledge_center/article/syncing-private-cloud-swift-containers-to-rackspace-cloud-files)
-
-Replicate data between private Swift environments and Rackspace Cloud
-Files. This can facilitate backup, aggregated online content, and data
-migrations in your cloud applications.
-
-### [Object Storage (Swift) in a Box](/knowledge_center/article/object-storage-swift-in-a-rack-with-amds-seamicro-sm15000)
-
-Deploy one petabyte of object storage in a single rack with Rackspace
-Private Cloud Software.
-
-### [**Apache Hadoop on Rackspace Private Cloud**](/knowledge_center/article/apache-hadoop-on-rackspace-private-cloud)
+### [**Apache Hadoop on Rackspace Private Cloud**](http://www.rackspace.com/knowledge_center/article/apache-hadoop-on-rackspace-private-cloud)
 
 Implementing an enterprise-ready Hadoop platform using Hortonworks Data
 Platform (HDP) on top of Rackspace Private Cloud for processing
 big-data.
 
-### [**Compute Cloud (Nova) using SeaMicro SM15000**](/knowledge_center/article/compute-cloud-nova-using-seamicro-sm15000)
+### [**Compute Cloud (Nova) using SeaMicro SM15000**](http://www.rackspace.com//knowledge_center/article/compute-cloud-nova-using-seamicro-sm15000)
 
 Deploying RackSpace Private Cloud Cluster on an AMD SM15000.
 
-### [**Bare Metal to Rackspace Private Cloud**](/knowledge_center/article/bare-metal-to-rackspace-private-cloud)
+### [**Bare Metal to Rackspace Private Cloud**](http://www.rackspace.com//knowledge_center/article/bare-metal-to-rackspace-private-cloud)
 
 Deploy large Rackspace Private Clouds with Razor and Chef.
 
-### [**Building a Rackspace Private Cloud with Linux iSCSI Volumes**](/knowledge_center/article/building-a-rackspace-private-cloud-with-linux-iscsi-volumes)
+### [**Building a Rackspace Private Cloud with Linux iSCSI Volumes**](http://www.rackspace.com//knowledge_center/article/building-a-rackspace-private-cloud-with-linux-iscsi-volumes)
 
 An implementation guide to building a Rackspace Private Cloud with
 external storage that targets Enterprise IT applications. Volumes are

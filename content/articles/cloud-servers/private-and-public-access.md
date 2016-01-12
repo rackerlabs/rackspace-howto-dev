@@ -5,8 +5,8 @@ permalink: article/private-and-public-access
 type: article
 created_date: '2012-08-22 03:20:20'
 created_by: Susan Million
-last_modified_date: '2014-10-29 14:5442'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-06 21:1442'
+last_modified_by: catherine.richardson
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -39,7 +39,4 @@ Table](http://www.rackspace.com/knowledge_center/sites/default/files/field/image
 
 [Learn More About Cloud
 Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers)
-
-[IP6
-Primer](http://www.rackspace.com/knowledge_center/article/ipv6-primer "IP6 Primer")
 

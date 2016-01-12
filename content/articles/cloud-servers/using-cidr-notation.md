@@ -5,8 +5,8 @@ permalink: article/using-cidr-notation
 type: article
 created_date: '2012-09-17 19:41:41'
 created_by: David Hendler
-last_modified_date: '2014-11-13 17:2349'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-05 16:4438'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -48,8 +48,9 @@ Panel. Note the CIDR field is pre-populated with an IP address range:
 ![CIDR](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/CreateNetworkCIDRExample2.png)
 
 For complete instructions on how to create a Cloud Network using the
-Cloud Control Panel see [Create an Isolated Cloud
-Network](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Create an Isolated Cloud Network").
+Cloud Control Panel see [Create an Isolated Cloud Network and attach it
+to a
+server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network and attach it to a server").
 
  
 -
@@ -93,20 +94,13 @@ The JSON-format response would look similar to this:
 For more information on using the Cloud Networks API see the Rackspace
 Cloud Networks API Developers Guide.
 
-### Related Information
-
-[IPv6
-Primer](http://www.rackspace.com/knowledge_center/article/ipv6-primer "IPv6 Primer")
-
- 
-
 ### More Information on Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
 Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Attach an Isolated Network to a New Cloud Server")
 
 [Attach an Isolated Network to an Existing Cloud
-Server](http://www.rackspace.com/knowledge_center/article/attach-an-existing-cloud-server-to-a-cloud-network "Attach an Isolated Network to an Existing Cloud Server")
+Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
 [Removing Networks from a Cloud
 Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Removing Networks from a Cloud Server")

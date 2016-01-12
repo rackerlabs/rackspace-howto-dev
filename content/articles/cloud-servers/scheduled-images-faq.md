@@ -5,8 +5,8 @@ permalink: article/scheduled-images-faq
 type: article
 created_date: '2013-05-22 19:50:21'
 created_by: brian.rosmaita
-last_modified_date: '2014-10-28 15:3546'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-06 16:5000'
+last_modified_by: kelly.holcomb
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -61,27 +61,25 @@ retains up to the number of images specified by the user.
 #### Why would I use Scheduled Images? {#why-would-i-use}
 
 By having images automatically captured, versus manually triggering them
-each time, you create an image history.  That history can be used to
+each time, you create an image history. That history can be used to
 recover your server to the point the image was taken in the case of
 emergency or server failure.
 
-Some issues to be aware of:
+Consider the following issues:
 
 -   Images are useful for recovery in many scenarios, but should never
-    be used as your sole source of recovery. We highly recommend Cloud
-    Backup or your preferred backup method be used in conjunction with
-    server images.
+    be used as your sole source of recovery. We recommend Cloud Backup
+    or your preferred backup method be used in conjunction with server
+    images.
 -   Some application servers are not good candidates for scheduled
-    images.  In particular, some database management systems need to be
+    images. In particular, some database management systems need to be
     in a particular state when an image is taken if you want a working
-    DBMS when you boot a server from the image (and of course you do!).
-     Please consult your DBMS vendor for more information.  If you have
-    such a DBMS and you want to create an image of the server, you may
-    wish to read the following Knowledge Center article: [Using Task
-    States With Server
-    Imaging](/knowledge_center/article/using-task-states-with-server-imaging).
+    DBMS when you boot a server from the image. Consult your DBMS vendor
+    for more information. If you have such a DBMS and you want to create
+    an image of the server, read [Using task states with server
+    imaging](http://www.rackspace.com/knowledge_center/article/using-task-states-with-server-imaging).
 -   As is the case with a manual image, a scheduled image is an image of
-    the system disk only. 
+    the system disk only.
 
 #### How do I use Scheduled Images? {#how-do-i-use}
 
@@ -127,8 +125,8 @@ it:
     org.openstack__1__created_by: scheduled_images_service
 
 For information about using the novaclient tool for scheduled images,
-see the article: [Using python-novaclient to manage scheduled
-images](/knowledge_center/article/using-the-python-novaclient-to-manage-scheduled-images).
+see [Using python-novaclient to manage scheduled
+images](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images).
 
 #### Is there a minimum or maximum time between scheduled images? {#time-between-images}
 
@@ -225,12 +223,11 @@ the scheduled image you wish to save, the snapshot will not be subject
 to retention culling.
 
 At the current time, you cannot modify image metadata via the cloud
-control panel. If you don't want to make API calls directly, a handy
-command line tool called the "novaclient" is available. For more
-information on using the novaclient tool to manage your scheduled
-images, see the Knowledge Center article: [Using python-novaclient to
-manage scheduled
-images](/knowledge_center/article/using-the-python-novaclient-to-manage-scheduled-images).
+control panel. If you don't want to make API calls directly, a
+command-line tool called novaclient is available. For more information
+about using the novaclient tool to manage your scheduled images, see
+[Using python-novaclient to manage scheduled
+images](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images).
 
 #### How can I change the retention value on my server? {#change-retention}
 
@@ -285,12 +282,9 @@ options will remain the same as they are now.
 
 #### Where can I get more information about Scheduled Images? {#more-info}
 
-Here's a list:
-
 -   [Scheduled Images API Extension
     Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images)
 -   [Using python-novaclient to manage scheduled
-    images](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images)
+    images](https://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images)
 
- 
 

@@ -5,8 +5,8 @@ permalink: article/creating-a-dkim-txt-record
 type: article
 created_date: '2012-07-24 00:27:13'
 created_by: RackKCAdmin
-last_modified_date: '2015-07-28 14:1907'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-05 18:5432'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -81,10 +81,10 @@ For instructions on attaching the token to your outgoing email, go to
 ### Related
 
 [Setting up SPF DNS TXT
-Records](http://rackspace.com/knowledge_center/node/2407)
+Records](http://www.rackspace.com/knowledge_center/article/create-an-spf-txt-record)
 
 [Learn More about
-DNS](http://www.rackspace.com/knowledge_center/node/2315)
+DNS](http://www.rackspace.com/knowledge_center/article/learn-more-about-dns)
 
 ### External Links
 

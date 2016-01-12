@@ -5,8 +5,8 @@ permalink: article/cloud-feeds-overview
 type: article
 created_date: '2014-07-30 13:12:14'
 created_by: ross.diaz
-last_modified_date: '2015-09-01 18:5201'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 15:1236'
+last_modified_by: kyle.laffoon
 products: 'Cloud Hosting,Managed Operations'
 body_format: tinymce
 ---
@@ -73,7 +73,7 @@ following steps:
 
 **Note:** For more information about role-based access control, see
 [Overview: Role Based Access Control
-(RBAC)](/knowledge_center/node/3403).
+(RBAC)](http://www.rackspace.com/knowledge_center/article/overview-role-based-access-control-rbac).
 
 How to access Cloud Feeds {#howtoaccess}
 -------------------------
@@ -118,7 +118,7 @@ Getting help and providing feedback {#help}
 -----------------------------------
 
 If you have questions about Cloud Feeds, see the [Cloud Feeds
-FAQ](/knowledge_center/node/4166).
+FAQ](http://www.rackspace.com/knowledge_center/article/cloud-feeds-faq).
 
 You may also post questions and other discussions in the Rackspace
 Community [API/SDK Developer

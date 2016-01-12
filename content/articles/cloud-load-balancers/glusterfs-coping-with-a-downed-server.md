@@ -5,8 +5,8 @@ permalink: article/glusterfs-coping-with-a-downed-server
 type: article
 created_date: '2014-06-03 14:48:29'
 created_by: matt.sherborne
-last_modified_date: '2015-08-17 20:5859'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-01-05 18:3926'
+last_modified_by: kyle.laffoon
 products: Cloud Load Balancers
 body_format: markdown_w_tinymce
 ---

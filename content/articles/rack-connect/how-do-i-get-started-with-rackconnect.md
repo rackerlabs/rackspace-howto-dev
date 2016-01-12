@@ -5,8 +5,8 @@ permalink: article/how-do-i-get-started-with-rackconnect
 type: article
 created_date: '2012-08-21 17:15:57'
 created_by: juan.perez
-last_modified_date: '2015-12-31 14:2425'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 20:2629'
+last_modified_by: catherine.richardson
 products: RackConnect
 body_format: tinymce
 ---
@@ -88,7 +88,7 @@ MyRackspace portal](http://my.rackspace.com/csx/community/rackconnect).
 
 For a collection of recommendations for using RackConnect, see
 [RackConnect Best
-Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-best-practices).
+Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-best-practices).
 
 Associating your Cloud account with your RackConnect configuration
 ------------------------------------------------------------------
@@ -100,14 +100,14 @@ Associating your Cloud account with your RackConnect configuration
     Accounts**. From that screen, you can either link an existing
     account or sign up for a new account.
 
-    [![](/knowledge_center/sites/default/files/field/image/MyRack_Link_Cloud_Account.png)](/knowledge_center/sites/default/files/field/image/MyRack_Link_Cloud_Account.png)
+    [![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/MyRack_Link_Cloud_Account.png)](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/MyRack_Link_Cloud_Account.png)
 
 2.  After you have linked a cloud account, you can click the plus sign
     (+) at the right of the cloud account's row to associate the cloud
     account with one of your RackConnect configurations. In most cases,
     you have only one RackConnect configuration.
 
-    [![](/knowledge_center/sites/default/files/field/image/MyRack_Associate_with_RC.png)](/knowledge_center/sites/default/files/field/image/MyRack_Associate_with_RC.png)
+    [![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/MyRack_Associate_with_RC.png)](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/MyRack_Associate_with_RC.png)
 
 3.  After establishing the association, Rackspace begins the process of
     validating the provisioning region for both Cloud Servers and Cloud

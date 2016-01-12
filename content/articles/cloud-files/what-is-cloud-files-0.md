@@ -5,8 +5,8 @@ permalink: article/what-is-cloud-files-0
 type: article
 created_date: '2012-07-23 16:46:33'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-04 20:1346'
-last_modified_by: cat.lookabaugh
+last_modified_date: '2016-01-05 15:5647'
+last_modified_by: stephanie.fillmon
 products: Cloud Files
 body_format: tinymce
 ---
@@ -67,7 +67,7 @@ Using Cloud Files {#Using}
 You can access Cloud Files by using the following interfaces:
 
 -   Graphical user interfaces, such as the Rackspace Cloud Control
-    Panel, Cyberduck, and FireUploader
+    Panel and Cyberduck
 -   Programming interfaces via REST, Python, PHP, Ruby, Java, and C\#
     .NET
 

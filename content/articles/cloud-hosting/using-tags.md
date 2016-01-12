@@ -5,8 +5,8 @@ permalink: article/using-tags
 type: article
 created_date: '2012-07-24 00:48:25'
 created_by: RackKCAdmin
-last_modified_date: '2015-04-02 18:2251'
-last_modified_by: kelly.holcomb
+last_modified_date: '2016-01-06 20:1358'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: full_html
 ---
@@ -86,5 +86,6 @@ your servers from one another.
 Related information {#relatedinformation}
 -------------------
 
-[Learn more about Cloud Servers](/knowledge_center/node/2289)
+[Learn more about Cloud
+Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers)
 

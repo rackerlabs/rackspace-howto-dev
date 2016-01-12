@@ -5,7 +5,7 @@ permalink: article/accessing-the-gull-version-of-migrationwiz
 type: article
 created_date: '2013-10-24 14:03:32'
 created_by: milton.prado
-last_modified_date: '2015-07-14 13:3128'
+last_modified_date: '2016-01-08 19:3923'
 last_modified_by: kyle.laffoon
 products: Exchange
 body_format: tinymce
@@ -30,7 +30,7 @@ for the standard steps.
 -   Able to customize migrations
 -   Able to schedule migrations to auto-start
 
-**Items to Note **
+**Items to Note**
 
 -   When migrating to Rackspace Email and Apps users will receive the
     discounted rate of \$4.99/per mailbox only when purchased via the
@@ -48,9 +48,9 @@ for the standard steps.
 
 Complete the following steps to access the Full Version of MigrationWiz.
 
-1. Go to [http://MigrationWiz.com](http://MigrationWiz.com).
+Go to [http://MigrationWiz.com](http://MigrationWiz.com).
 
-2. Click on the forgot password link:
+Click on the forgot password link:
 [https://www.bittitan.com/account/reset/bt](https://www.bittitan.com/account/reset/bt).
 
 **Note**: Upon resetting the password, MigrationWiz automatically logs
@@ -59,13 +59,15 @@ only need to go to migrationwiz.com and log in.
 
 ![](/knowledge_center/sites/default/files/field/image/FullMigrationWiz1.png)
 
-3. Enter the email address that you used to sign up for MigrationWiz.\
+Enter the email address that you used to sign up for MigrationWiz.\
      (A password reset email will be sent to that address.)\
- 4. Upon receipt of the password reset email, click the **Forgot
+
+Upon receipt of the password reset email, click the **Forgot
 password**link and create a password for your account.\
      (You will then be auto-logged into
 [http://MigrationWiz.com](http://MigrationWiz.com) )\
- 5. Click **Manage Connectors** to access your migration.
+
+Click **Manage Connectors** to access your migration.
 
 ![](/knowledge_center/sites/default/files/field/image/FullMigrationWiz2.png)
 

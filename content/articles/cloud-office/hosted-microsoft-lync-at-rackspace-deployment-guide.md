@@ -5,8 +5,8 @@ permalink: article/hosted-microsoft-lync-at-rackspace-deployment-guide
 type: article
 created_date: '2014-10-20 13:31:40'
 created_by: aaron.medrano
-last_modified_date: '2015-12-22 18:3840'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-08 14:5140'
+last_modified_by: kyle.laffoon
 products: Cloud Office
 body_format: tinymce
 ---
@@ -22,7 +22,7 @@ vary. The overall deployment plan has three basic steps, and this
 article is designed to help you decide the best rollout method for your
 environment.
 
-### **Set up DNS records for **Lync****
+### **Set up DNS records for Lync**
 
 As the first step, you must create Auto-discover entries on your DNS
 server.  If you have an internal DNS you must also set up these records

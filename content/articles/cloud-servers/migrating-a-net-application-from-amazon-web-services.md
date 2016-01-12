@@ -5,8 +5,8 @@ permalink: article/migrating-a-net-application-from-amazon-web-services
 type: article
 created_date: '2013-07-02 17:59:15'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 14:3718'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-07 17:0330'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -18,7 +18,7 @@ minutes to complete, if you follow the instructions step by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](https://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The topology of the application in this scenario is represented in the
 following figure:
@@ -49,7 +49,7 @@ following figure:
           
     2.  After you are connected, install a client that you will use to
         back up data to Rackspace Cloud Files (for example,
-        [Cyberduck](/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck),
+        [Cyberduck](http://www.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck),
         available at [http://cyberduck.ch/](http://cyberduck.ch/)).\
          You can use any browser to download the client.
     3.  Create a connection to Rackspace Cloud Files by using your
@@ -68,10 +68,11 @@ following figure:
 
 Using the client that you installed in the preceding section (for
 example,
-[Cyberduck](/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck)),
+[Cyberduck](http://www.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck)),
 upload the .NET project folder to the Rackspace Cloud Files container
-that you created in [the article on provisioning your cloud
-services](/knowledge_center/article/provisioning-cloud-resources-to-migrate-from-amazon-web-services).
+that you created in the article [Provisioning cloud resources when
+migrating from Amazon Web
+Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-to-migrate-from-amazon-web-services).
 
 ### Restore data from Cloud Files to Cloud Servers
 
@@ -97,7 +98,7 @@ Click on **Browse \*:80 (http)** to see the application in the browser.
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](https://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](http://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 

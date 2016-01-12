@@ -5,7 +5,7 @@ permalink: article/rackspace-cdn-and-cloud-sites
 type: article
 created_date: '2015-04-27 02:08:38'
 created_by: megan.meza
-last_modified_date: '2015-12-17 15:3930'
+last_modified_date: '2016-01-08 21:4733'
 last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
@@ -37,16 +37,16 @@ your site (your domain). For complete instructions for creating a CDN
 service, see [Create a CDN service with Rackspace
 CDN](https://www.rackspace.com/knowledge_center/article/create-a-cdn-service-with-rackspace-cdn).
 
-1.  Log in to the Rackspace [Cloud Control
+1. Log in to the Rackspace [Cloud Control
 Panel](https://mycloud.rackspace.com).
 
-2.  From the **Storage** or **Networking** menu, select  **CDN**.
+2. From the **Storage** or **Networking** menu, select  **CDN**.
 
-3.  Click **Create Service**.
+3. Click **Create Service**.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%209.42.19%20AM.png)
 
-4.  In the**Domain Name** field, enter the **www** address for your
+4. In the **Domain Name** field, enter the **www** address for your
 site. You can find this address in the Cloud Sites Control Panel, as
 shown in the following figure.
 
@@ -66,7 +66,7 @@ Control Panel, as shown in the following figure.
 
 After the service is created, the service details page is displayed.
 
-7.  In the Service Details section, hover over the **Domain Name** value
+7. In the Service Details section, hover over the **Domain Name** value
 and copy the **CDN Domain** URL that is displayed in the pop-up menu.
 You need this URL in the next section, to update your DNS records.
 
@@ -93,19 +93,18 @@ Selected**, and confirming the deletion.
 
 3. In the DNS Management section, click **Add Record**.
 
-4.  Create a new CNAME record. For **Record Name**, enter **www**
+4. Create a new CNAME record. For **Record Name**, enter **www**
 domain. For Content, enter the CDN domain URL that you copied at the end
 of "Create a CDN service."
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-09-16%20at%204.37.58%20PM.png)\
-  
+![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-09-16%20at%204.37.58%20PM.png)
+ 
 
-**Note:**
-
-After you have updated the CNAME and verified that the change has been
-propagated, you can then access any files stored within the origin via
-the specified domain name. In the example for this article, anything
-stored on **www.brandedexample.com** is now available via the CDN.
+**Note:** After you have updated the CNAME and verified that the change
+has been propagated, you can then access any files stored within the
+origin via the specified domain name. In the example for this article,
+anything stored on **www.brandedexample.com** is now available via the
+CDN.
 
  
 

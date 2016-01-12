@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-how-to-install
 type: article
 created_date: '2013-06-04 22:09:14'
 created_by: rose.contreras
-last_modified_date: '2016-01-04 17:5148'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-06 18:2739'
+last_modified_by: kelly.holcomb
 products: Sharepoint
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 ### Previous section
 
 [Cloud Storage App for Microsoft SharePoint:
-Overview](https://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
+Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
 
 Follow the steps below to add the Rackspace Cloud Storage App from the
 SharePoint Store:

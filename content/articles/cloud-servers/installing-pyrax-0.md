@@ -5,8 +5,8 @@ permalink: article/installing-pyrax-0
 type: article
 created_date: '2014-06-02 19:06:42'
 created_by: chris.mendoza
-last_modified_date: '2015-09-08 20:3313'
-last_modified_by: kelly.holcomb
+last_modified_date: '2016-01-05 18:1824'
+last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -41,7 +41,8 @@ Install pyrax on an Ubuntu server
 
 6.  Create the credential file. Use your Rackspace Cloud account
     username and API key. For information about how to find your API
-    key, see [View and reset your API key](/knowledge_center/node/3288).
+    key, see [View and reset your API
+    key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
 
     **Note:** This file can be located anywhere on the server, but it is
     usually safest in the home directory of the user who is using the
@@ -81,7 +82,8 @@ Install pyrax on a CentOS server
 
 6.  Create the credential file. Use your Rackspace Cloud account
     username and API key. For information about how to find your API
-    key, see [View and reset your API key](/knowledge_center/node/3288).
+    key, see [View and reset your API
+    key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
 
     **Note:**This file can be located anywhere on the server, but it is
     usually safest in the home directory of the user who is using the

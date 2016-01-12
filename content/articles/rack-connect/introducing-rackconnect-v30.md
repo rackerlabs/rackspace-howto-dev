@@ -5,8 +5,8 @@ permalink: article/introducing-rackconnect-v30
 type: article
 created_date: '2014-08-22 17:11:28'
 created_by: juan.perez
-last_modified_date: '2014-11-25 22:1510'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 17:4124'
+last_modified_by: kyle.laffoon
 products: RackConnect
 body_format: tinymce
 ---
@@ -38,12 +38,12 @@ region. To accomplish this, RackConnect relies on Rackspace Cloud
 Networks on the cloud side and dedicated network devices on the
 dedicated side of your environment. For a basic introduction into Cloud
 Networks, see [Getting Started with Cloud
-Networks](/knowledge_center/article/getting-started-with-cloud-networks).
+Networks](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-networks).
 For a complete list of dedicated network devices currently supported by
 RackConnect, see [RackConnect Network Device
-Comparison](/knowledge_center/article/rackconnect-network-device-comparison).
+Comparison](http://www.rackspace.com/knowledge_center/article/rackconnect-network-device-comparison).
 
 If you have any questions, please reach out to us. Our contact
 information is available on the [Contact
-Us](/knowledge_center/support) page.
+Us](http://www.rackspace.com/knowledge_center/support) page.
 

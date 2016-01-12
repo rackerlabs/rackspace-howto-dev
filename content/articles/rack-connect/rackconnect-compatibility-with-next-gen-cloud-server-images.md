@@ -5,8 +5,8 @@ permalink: article/rackconnect-compatibility-with-next-gen-cloud-server-images
 type: article
 created_date: '2012-08-21 20:50:43'
 created_by: juan.perez
-last_modified_date: '2015-08-11 17:4713'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-06 20:5937'
+last_modified_by: catherine.richardson
 products: RackConnect
 body_format: tinymce
 ---
@@ -56,7 +56,7 @@ API, it is possible (although not recommended) for you to modify the
 values.
 
 [Cloud Server images for use with RackConnect
-v2.0](http://www.rackspace.com/knowledge_center/article/rackconnect-compatibility-with-first-gen-cloud-server-images)
+v2.0](http://www.rackspace.com/knowledge_center/article/cloud-server-images-for-use-with-rackconnect-v20)
 \< Previous | Next \> [The RackConnect
-API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-api)
+API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-v20-api)
 

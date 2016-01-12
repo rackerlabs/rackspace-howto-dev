@@ -5,8 +5,8 @@ permalink: article/design-and-build-for-stability
 type: article
 created_date: '2013-12-17 19:58:48'
 created_by: joseph.palumbo
-last_modified_date: '2013-12-23 21:5059'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 14:5659'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -25,7 +25,7 @@ the Rackspace Cloud can help you monitor, report, and restore your data
 in the cloud. 
 
 -   Learn more about [Cloud
-    Monitoring](http://www.rackspace.com/knowledge_center/article/control-panel-monitoring-what-do-the-options-do)
+    Monitoring](http://www.rackspace.com/knowledge_center/article/available-checks-for-rackspace-monitoring)
     and read an [Introduction to Cloud
     Monitoring](https://community.rackspace.com/products/f/25/t/1892.aspx).
 -   Learn more about [Cloud
@@ -102,10 +102,10 @@ is solid stability under the heaviest of traffic. Learn more about how
 RackConnect can help you build for and maintain the highest availability
 possible. 
 
-For more information, read [How do I get started with
-RackConnect](http://www.rackspace.com/knowledge_center/article/how-do-i-get-started-with-rackconnect) and
-[RackConnect Best
-Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-best-practices). 
+For more information, read [How do I get started with RackConnect
+v2.0](http://www.rackspace.com/knowledge_center/article/how-do-i-get-started-with-rackconnect-v20) and
+[RackConnect v2.0 Best
+Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-best-practices). 
 
  
 

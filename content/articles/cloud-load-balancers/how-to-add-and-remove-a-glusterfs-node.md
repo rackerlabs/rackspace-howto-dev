@@ -5,7 +5,7 @@ permalink: article/how-to-add-and-remove-a-glusterfs-node
 type: article
 created_date: '2014-06-03 14:43:50'
 created_by: matt.sherborne
-last_modified_date: '2015-08-20 16:0901'
+last_modified_date: '2016-01-05 18:3614'
 last_modified_by: kyle.laffoon
 products: Cloud Load Balancers
 body_format: markdown_w_tinymce
@@ -197,4 +197,4 @@ Now that you have a clean location in which to store the brick, adding the brick
 
 ## Where to go from here
 
-The next article in this GlusterFS series describes [How to recover from a failed server](https://admin.rackspace.com/knowledge_center/article/recover-from-a-failed-server-in-a-glusterfs-array) in a GlusterFS array.
+The next article in this GlusterFS series describes [How to recover from a failed server](https://www.rackspace.com/knowledge_center/article/recover-from-a-failed-server-in-a-glusterfs-array) in a GlusterFS array.

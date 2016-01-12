@@ -5,8 +5,8 @@ permalink: article/detailed-permissions-matrix-for-first-generation-cloud-server
 type: article
 created_date: '2013-06-17 15:25:13'
 created_by: renee.rendon
-last_modified_date: '2015-12-14 14:3753'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-06 19:4348'
+last_modified_by: kelly.holcomb
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -19,12 +19,11 @@ supported.
 **[API Documentation](http://docs.rackspace.com/)**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](http://www.rackspace.com/knowledge_center/)**
 
-**[First Generation Servers
-Terminology](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+**[First Generation Servers terminology](#terminology)**
 
-### **As of September 26, 2013** {style="margin-bottom: 0in; text-align: left;"}
+### **As of September 26, 2013**
 
 CAPABILITY
 
@@ -383,7 +382,7 @@ Lists current API limits.
 Get a URL for a Web Browser-mediated Console Session for a Specified
 Server
 
-GET /servers/{`id}`{style="color: #333333; font-size: 13.63636302947998px; line-height: 18.18181800842285px;"}/console
+GET /servers/{`id}`/console
 
  
 
@@ -396,7 +395,7 @@ server.
 
 Rescue/Unrescue a Server
 
-POST /servers/{`id}`{style="color: #333333; font-size: 13.63636302947998px; line-height: 18.18181800842285px;"}/rescue
+POST /servers/{`id}`/rescue
 
  
 
@@ -420,18 +419,18 @@ Generation Cloud Server that is specified in the request body.
 
  
 
-  {style="color: #514c4c; font-size: 18px; margin-top: 0px; margin-bottom: 0px; font-family: arial; line-height: normal;"}
+ 
 -
 
-First Generation Cloud Servers Terminology {style="color: #514c4c; font-size: 18px; margin-top: 0px; margin-bottom: 0px; font-family: arial; line-height: normal;"}
+First Generation Cloud Servers terminology
 ------------------------------------------
 
-### Flavor {style="color: #333333; font-family: arial; line-height: normal;"}
+### Flavor
 
 A resource configuration for a server. Each flavor is a unique
 combination of disk, memory, vCPUs, and network bandwidth.
 
-### Image {style="color: #333333; font-family: arial; line-height: normal;"}
+### Image
 
 A collection of files for a specific operating system (OS) that you use
 to create or rebuild a server. Rackspace provides pre-built images. You
@@ -439,7 +438,7 @@ can also create custom images from servers that you have launched.
 Custom images can be used for data backups or as "gold" images for
 additional servers.
 
-### Server {style="color: #333333; font-family: arial; line-height: normal;"}
+### Server
 
 A virtual machine (VM) instance in the Cloud Servers environment. To
 create a server, you must specify a name, flavor reference, and image

@@ -5,8 +5,8 @@ permalink: article/rackspace-open-cloud-migration-considerations
 type: article
 created_date: '2012-08-09 18:22:29'
 created_by: jered.heeschen
-last_modified_date: '2015-08-10 18:0857'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06 19:5115'
+last_modified_by: catherine.richardson
 products: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -108,7 +108,7 @@ A Linux server migrated to Next Generation Cloud Servers will use the same serve
 
 In many cases a migration can be performed while preserving application and server states.  Availability of this feature depends on the server's operating system.  Some operating systems and distributions will need to be halted for the migration.
 
-See the [First Generation to Next Generation cloud server migration FAQ](/knowledge_center/node/4473) and the [migration thread in our community forums][community] for more answers about self-service and assisted migrations.
+See the [First Generation to Next Generation cloud server migration FAQ](https://www.rackspace.com/knowledge_center/article/first-generation-to-next-generation-cloud-server-migration-faq) and the [migration thread in our community forums][community] for more answers about self-service and assisted migrations.
 
 ### Self-service migration {#selfservice}
 
@@ -140,7 +140,7 @@ Manual migration is available as an alternative for unsupported instances and is
 
     If the server is compatible with the conversion process, you are given a choice between making a First Generation or Next Generation image.
 
-    ![Image migration](/knowledge_center/sites/default/files/field/image/nextgen-snapshot.png)
+    ![Image migration](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/nextgen-snapshot.png)
 
     **Note:** If you don't see an option to create a Next Generation image, your instance is not supported by the conversion process. In that case, use one of the manual migration approaches described later in this section.
 
@@ -156,13 +156,7 @@ If you have trouble creating the image, [contact Support](http://www.rackspace.c
 
 [migratepcs]:/knowledge_center/node/3720 "Migrating to a General Purpose or I/O Server"
 
-For instructions on migrating your data via rsync, either with a manual process or with the assistance of a Python script, see the [article series on migrating a Linux server](/knowledge_center/article/migrating-a-linux-server-from-the-command-line-1).
-
 For advice on taking the system disks and data disks on General Purpose and I/O optimized servers into account when migrating, see [Migrating to a General Purpose or I/O Server][migratepcs].
-
-### Manually migrating Windows 2008 servers {#win2008}
-
-To migrate IIS and Microsoft SQL Server data on Windows 2008, you can [use the Microsoft Web Farm Framework](/knowledge_center/article/windows-2008-iis-and-database-migration-using-the-web-farm-framework).
 
 ### Manually migrating Windows 2012 servers {#win2012}
 

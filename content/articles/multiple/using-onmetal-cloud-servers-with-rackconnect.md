@@ -5,8 +5,8 @@ permalink: article/using-onmetal-cloud-servers-with-rackconnect
 type: article
 created_date: '2014-08-20 17:26:19'
 created_by: juan.perez
-last_modified_date: '2014-09-30 20:5926'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 16:1733'
+last_modified_by: kyle.laffoon
 products: 'Cloud Servers,RackConnect'
 body_format: tinymce
 ---
@@ -33,7 +33,7 @@ more about them, you can find further details about these offerings at:
 -   [Knowledge Center: What is new with OnMetal Cloud
     Servers](http://www.rackspace.com/knowledge_center/article/what-is-new-with-onmetal-cloud-servers)
 -   [Knowledge Center: Using OnMetal Cloud
-    Servers](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers)
+    Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers)
 -   [Knowledge Center: Using OnMetal Cloud Servers through
     API](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers-through-api)
 
@@ -68,8 +68,9 @@ infrastructure with these offerings:
     using one of your cloud accounts associated with RackConnect, begin
     the process of creating a new Cloud Server, select the OnMetal&trade;
     Server tab, and then select the Image's drop-down selection field.\
+
     ![](/knowledge_center/sites/default/files/field/image/OnMetal_Build_0.png)\
-      [Example of OnMetal Images available on a RackConnect associated
+       [Example of OnMetal Images available on a RackConnect associated
     cloud account.]
 
 -   OnMetal servers may not be available in all regions. To view the
@@ -95,7 +96,7 @@ infrastructure with these offerings:
     create and utilize a 'rackconnect' user account for administering
     the OnMetal servers, so please do not disable, modify, or remove
     this user account. Additionally, the other [RackConnect Best
-    Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-best-practices)
+    Practices](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-best-practices)
     still apply to OnMetal servers.
 
 We hope that you have found this article helpful in getting your OnMetal

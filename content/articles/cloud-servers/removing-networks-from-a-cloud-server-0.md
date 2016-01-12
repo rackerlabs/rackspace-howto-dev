@@ -5,8 +5,8 @@ permalink: article/removing-networks-from-a-cloud-server-0
 type: article
 created_date: '2012-10-30 12:34:45'
 created_by: Susan Million
-last_modified_date: '2014-11-13 17:4801'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-05 22:0642'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -56,11 +56,11 @@ Server](http://www.rackspace.com/knowledge_center/sites/default/files/field/imag
 [Attach an Isolated Network to a New Cloud
 Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Attach an Isolated Network to a New Cloud Server")
 
-[Attach an Isolated Network to an Existing Cloud
-Server](http://www.rackspace.com/knowledge_center/article/attach-an-existing-cloud-server-to-a-cloud-network "Attach an Isolated Network to an Existing Cloud Server")
+[Attach a Cloud Network to an Existing Cloud
+Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
-[CIDR
-Notation](http://www.rackspace.com/knowledge_center/article/using-cidr-notation "CIDR Notation")
+[Using CIDR notation in Cloud
+Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer
 Guide](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/ch_overview.html "Cloud Networks Developer Guide")

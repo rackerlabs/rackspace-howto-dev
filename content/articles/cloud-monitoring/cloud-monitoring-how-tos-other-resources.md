@@ -5,8 +5,8 @@ permalink: article/cloud-monitoring-how-tos-other-resources
 type: article
 created_date: '2012-08-14 21:47:05'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-04 18:4438'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 19:5837'
+last_modified_by: catherine.richardson
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -14,9 +14,9 @@ body_format: tinymce
 ### Getting Started
 
 -   Rackspace Monitoring Getting Started Guide:
-    [https://developer.rackspace.com/docs/cloud-monitoring/getting-started/](https://developer.rackspace.com/docs/cloud-monitoring/getting-started/)
+    [https://developer.rackspace.com/docs/cloud-monitoring/getting-started](https://developer.rackspace.com/docs/cloud-monitoring/getting-started/)
 -   Getting started with the Cloud Monitoring CLI
-    (Raxmon): [http://www.rackspace.com/knowledge\_center/article/getting-started-with-cloud-monitoring](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-monitoring)
+    (Raxmon): [http://www.rackspace.com/knowledge\_center/article/getting-started-with-rackspace-monitoring-cli](http://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-monitoring-cli)
 
  
 

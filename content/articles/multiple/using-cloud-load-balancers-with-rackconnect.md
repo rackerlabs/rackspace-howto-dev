@@ -5,8 +5,8 @@ permalink: article/using-cloud-load-balancers-with-rackconnect
 type: article
 created_date: '2012-08-21 19:44:14'
 created_by: juan.perez
-last_modified_date: '2015-12-21 14:3739'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 20:4524'
+last_modified_by: catherine.richardson
 products: 'Cloud Load Balancers,RackConnect'
 body_format: tinymce
 ---
@@ -20,7 +20,7 @@ are support by RackConnect v3.0 and the differences between RackConnect
 v3.0 and v2.0, see the following articles:
 
 -   [RackConnect v3.0
-    compatibility](http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility-matrix)
+    compatibility](http://www.rackspace.com/knowledge_center/article/rackconnect-v30-compatibility)
 
 -   [Comparing RackConnect v3.0 to RackConnect
     v2.0](http://www.rackspace.com/knowledge_center/article/comparing-rackconnect-v30-to-rackconnect-v20)

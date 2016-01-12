@@ -5,8 +5,8 @@ permalink: article/public-vs-private-access
 type: article
 created_date: '2012-07-24 00:36:50'
 created_by: RackKCAdmin
-last_modified_date: '2013-12-16 21:5849'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 17:3916'
+last_modified_by: cat.lookabaugh
 products: Cloud Databases
 body_format: tinymce
 ---
@@ -53,5 +53,5 @@ Database](http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustratio
 ### Related Information {#relatedinformation}
 
 [Connecting to Your Cloud
-Database](http://www.rackspace.com/knowledge_center/article/connecting-to-your-cloud-database "Connecting to Your Cloud Database")
+Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance "Connecting to Your Cloud Database")
 

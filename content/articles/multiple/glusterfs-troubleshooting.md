@@ -5,8 +5,8 @@ permalink: article/glusterfs-troubleshooting
 type: article
 created_date: '2014-08-14 10:14:29'
 created_by: marcin.stangel
-last_modified_date: '2015-04-17 17:2517'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06 15:5034'
+last_modified_by: kyle.laffoon
 products: 'Cloud Servers,Cloud Block Storage'
 body_format: markdown_w_tinymce
 ---
@@ -135,4 +135,4 @@ On one of the nodes, the file itself, as well as the associated GFID file (in th
      This is version 1 of the file
 <br />
 
-Previous article: [GlusterFS build steps](http://ord.admin.kc.rakr.net/knowledge_center/article/glusterfs-build-steps)          Next article: [GlusterFS HA and load balancing](http://ord.admin.kc.rakr.net/knowledge_center/article/glusterfs-ha-and-lb)
+Previous article: [GlusterFS build steps](http://www.rackspace.com/knowledge_center/article/glusterfs-build-steps)          Next article: [GlusterFS HA and load balancing](http://www.rackspace.com/knowledge_center/article/glusterfs-ha-and-lb)

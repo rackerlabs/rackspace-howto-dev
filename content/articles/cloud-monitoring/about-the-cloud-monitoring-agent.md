@@ -5,8 +5,8 @@ permalink: article/about-the-cloud-monitoring-agent
 type: article
 created_date: '2012-11-13 03:27:52'
 created_by: Susan Million
-last_modified_date: '2016-01-04 17:0659'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 18:3041'
+last_modified_by: rose.contreras
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -39,7 +39,7 @@ Cloud Server. If you are a Rackspace Managed Cloud customer the agent is
 automatically installed on all Cloud Servers. All other Rackspace
 customers can learn about installing the agent on a Cloud Server by
 reading [Installing the Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/installing-the-cloud-monitoring-agent "Install the Monitoring Agent").
+Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent").
 Once the agent is installed on your Cloud Server, it immediately
 provides CPU, Filesystem, and Memory metrics. You can manage the agent
 using either the Cloud Control panel or the Monitoring API, which you
@@ -60,8 +60,8 @@ on the Server Details page of the Cloud Control Panel:
 #### Related Information
 
 [Install the Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/installing-the-cloud-monitoring-agent "Install the Monitoring Agent Manually")
+Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent Manually")
 
 [Troubleshoot the Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/troubleshooting-the-monitoring-agent "Troubleshoot the Monitoring Agent")
+Agent](http://www.rackspace.com/knowledge_center/article/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
 

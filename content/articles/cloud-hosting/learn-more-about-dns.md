@@ -5,8 +5,8 @@ permalink: article/learn-more-about-dns
 type: article
 created_date: '2012-07-24 00:14:56'
 created_by: RackKCAdmin
-last_modified_date: '2012-08-13 21:0425'
-last_modified_by: Rae D. Cabello
+last_modified_date: '2016-01-05 14:4855'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -15,30 +15,26 @@ The Basics
 ----------
 
 [Rackspace Name
-Servers](http://www.rackspace.com/knowledge_center/node/2342 "Rackspace Name Servers")
+Servers](http://www.rackspace.com/knowledge_center/article/rackspace-name-servers "Rackspace Name Servers")
 
 [Choosing Record
-Types](http://www.rackspace.com/knowledge_center/node/2341 "Choosing Record Types")
+Types](http://www.rackspace.com/knowledge_center/article/choosing-record-types "Choosing Record Types")
 
 [Creating a Reverse DNS
-Record](http://www.rackspace.com/knowledge_center/node/2343)
+Record](http://www.rackspace.com/knowledge_center/article/create-a-reverse-dns-record-0)
 
  
 
 Best Practices
 --------------
 
-[TTL Best
-Practices](http://www.rackspace.com/knowledge_center/node/2340)
-
 [Setting Up SPF and DKIM
-Records](http://www.rackspace.com/knowledge_center/node/2346)
+Records](http://www.rackspace.com/knowledge_center/article/set-up-spf-and-dkim-records)
 
 [Transferring Your Domain to
-Rackspace](http://www.rackspace.com/knowledge_center/node/2345)
+Rackspace](http://www.rackspace.com/knowledge_center/article/serving-your-domain-from-a-rackspace-cloud-server)
 
-[Troubleshooting DNS with
-Dig](http://www.rackspace.com/knowledge_center/node/2347)
+ 
 
  
 
@@ -49,5 +45,5 @@ Additional Resources
 
 [Product](http://www.rackspace.com/cloud/cloud_hosting_products/servers/)[ ](http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers/ "Cloud Load Balancers Product Page")[Page](http://www.rackspace.com/cloud/cloud_hosting_products/servers/)
 
-[API](http://docs.rackspace.com/api/)[ ](http://docs.rackspace.com/api/ "Rackspace Cloud API Documentation")[Documentation](http://docs.rackspace.com/api/)
+[API](http://docs.rackspace.com/api/)[ ](http://docs.rackspace.com/api/ "Rackspace Cloud API Documentation")[Documentation](http://developer.rackspace.com/docs/)
 

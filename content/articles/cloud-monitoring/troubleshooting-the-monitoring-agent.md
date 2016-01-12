@@ -5,8 +5,8 @@ permalink: article/troubleshooting-the-monitoring-agent
 type: article
 created_date: '2012-11-13 03:30:06'
 created_by: Susan Million
-last_modified_date: '2015-12-17 18:3358'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 18:3947'
+last_modified_by: rose.contreras
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -28,7 +28,8 @@ This issue might have one of the following causes:
     install the agent, log in to your cloud server (as root on Linux or
     as an Administrator on Windows) and install the agent. For
     installation instructions, see [Install and configure the Rackspace
-    Monitoring Agent](/knowledge_center/node/3194).
+    Monitoring
+    Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent).
 -   The agent is installed but is not connected to your server. For the
     agent to work correctly, it must be associated with your server by
     using a Rackspace Monitoring entity. The entity is a representation
@@ -211,5 +212,6 @@ file](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#
 
 Related information
 
-[About the Rackspace Monitoring Agent](/knowledge_center/node/3192).
+[About the Rackspace Monitoring
+Agent](http://www.rackspace.com/knowledge_center/article/about-the-cloud-monitoring-agent).
 

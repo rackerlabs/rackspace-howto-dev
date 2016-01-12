@@ -5,8 +5,8 @@ permalink: article/cloud-feeds-faq
 type: article
 created_date: '2014-07-31 18:08:17'
 created_by: David Hendler
-last_modified_date: '2015-09-02 22:1339'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 15:4338'
+last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -39,7 +39,8 @@ Cloud Feeds is available at no charge.
 ### How do I grant access to Cloud Feeds?
 
 For information about how to add Cloud Feeds to individual users on your
-Cloud account, see [Cloud Feeds overview](/knowledge_center/node/4164).
+Cloud account, see [Cloud Feeds
+overview](http://www.rackspace.com/knowledge_center/article/cloud-feeds-overview).
 
 ^[back\\ to\\ top](#top)^
 
@@ -193,7 +194,7 @@ to the standard Cloud Terms of Service.
 
 ^[back\\ to\\ top](#top)^
 
-w.rackspace.com/information/legal/testterms).
+).
 When the Early Access Program is over, the Terms of Service will revert
 to the standard Cloud Terms of Service.
 

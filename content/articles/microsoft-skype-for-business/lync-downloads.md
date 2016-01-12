@@ -5,7 +5,7 @@ permalink: article/lync-downloads
 type: article
 created_date: '2014-04-16 17:12:42'
 created_by: kevin.richey
-last_modified_date: '2015-09-15 16:4259'
+last_modified_date: '2016-01-08 21:2023'
 last_modified_by: kyle.laffoon
 products: Microsoft Skype for Business
 body_format: markdown_w_tinymce
@@ -29,7 +29,7 @@ If you are using Microsoft Office Professional Plus 2013, you already have a Sky
 
 ### Mac OS X
 
-To get the Skype for Business client for Mac OS X, go to [Update for Lync for Mac 2011](http://www.microsoft.com/en-us/download/details.aspx?id=36517)
+To get the Skype for Business client for Mac OS X, go to [Update for Lync for Mac 2011](http://www.microsoft.com/en-us/download/details.aspx?id=36517).
 
 ## Mobile clients
 

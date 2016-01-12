@@ -5,8 +5,8 @@ permalink: article/rackspace-directory-sync-beta-additional-information
 type: article
 created_date: '2013-04-25 16:19:20'
 created_by: kevin.richey
-last_modified_date: '2015-07-27 18:0305'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-07 16:4036'
+last_modified_by: constanze.kratel
 products: Cloud Office
 body_format: tinymce
 ---
@@ -52,6 +52,7 @@ Directory Sync supports the following Rackspace Email platforms:
 
 -   Hosted Exchange 2010
 -   Hosted Exchange 2013
+-   Hosted Exchange 2016
 -   Hosted Exchange Hybrid
 -   Rackspace Email
 
@@ -81,7 +82,7 @@ Installation and configuration
 ------------------------------
 
 See the [Rackspace Directory Sync: Install and
-configure](/knowledge_center/article/rackspace-directory-sync-installation-and-set-up-procedures)
+configure](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-installation-and-set-up-procedures)
 article to get started.
 
 **Note:** You *must* restart the domain controller during installation
@@ -89,6 +90,15 @@ in order for the password synchronization to work.
 
 How Directory Sync works
 ------------------------
+
+-   [Domain Names](#domain%20names)
+-   [Security Groups](#security%20groups)
+-   [User Mailboxes](#user%20mailboxes)
+-   [Password Synchronization](#password%20sync)
+-   [Distribution List Membership Synchronization](#dl%20member%20sync)
+-   [Exchange Contacts (external email addresses)](#exchange%20contacts)
+-   [Alternate Email Addresses (Optional
+    Synchronization)](#alternate%20address%20sync)
 
 Directory Sync runs automatically. It synchronizes changes from your
 local directory to your email accounts every five minutes. You can also
@@ -213,6 +223,9 @@ environment as an alias to that email address.
     work with Distribution Lists or Contacts. Those must be done
     manually in the Cloud Office Control Panel.
 
+ 
+-
+
 Security
 --------
 
@@ -222,26 +235,14 @@ Directory Sync will not set an email password that does not meet minimum
 password requirements. We recommend that you change your domain password
 rules to meet or exceed these requirements.
 
-#### **Hosted Exchange passwords**
+#### **Racksapce Email and Hosted Exchange Password Requirement**
 
 -   At least eight characters long.
--   No more than two consecutive characters of Full Name, Display Name,
-    or User Name
--   Must contain three of the following:
-    -   Uppercase characters
-    -   Lowercase characters
-    -   Numerals 0-9
-    -   Nonalphabetic characters (such as !, \$, \#, %)
-
-#### **Rackspace Email passwords:**
-
--   Passwords must contain at least six characters
--   Passwords cannot contain:
-    -   Three or more consecutive numerals (For example: 567, 1234,
-        98765)
-    -   The word \*\*password\*\*
-    -   The mailbox user name
-    -   The mailbox domain name
+-   At least 3 of the following:
+    -   At least one lowercase character
+    -   At least one uppercase character
+    -   At least one number
+    -   At least one non-alphanumeric (!, \$, \#, %, space, etc.)
 
 ### Network ports
 
@@ -264,6 +265,9 @@ Communications between Directory Sync and Rackspace is secured through
 HTTPS. Communications between the Active Directory password hook and
 Directory Sync is secured with Microsoft WCF Transport Security which
 uses Windows Authentication and encryption.
+
+ 
+-
 
 Synchronized user attributes
 ----------------------------

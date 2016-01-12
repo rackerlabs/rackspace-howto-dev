@@ -1,12 +1,12 @@
 ---
 node_id: 3570
-title: High Level Steps for Migrating From Amazon Web Services
+title: High-level steps for migrating from Amazon Web Services
 permalink: article/amazon-web-services-to-rackspace-cloud-infrastructure-migration-guide-high-level-migration
 type: article
 created_date: '2013-07-01 15:29:17'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 14:3517'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-08 19:5924'
+last_modified_by: kelly.holcomb
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -47,32 +47,31 @@ following methods to transfer your data from AWS to your cloud server.
 You can do this a number of ways:
 
 -   **(Preferred) Use OpenStack Swift, a command-line interface, to
-    transfer your data from AWS to Cloud Files:**
+    transfer your data from AWS to Cloud Files**
 
     This is the recommended method for migrating your data to your cloud
     server. Using this method, you install Swift on your AWS instance
     and directly copy your data from AWS to Cloud Files, without
     downloading it locally.
 
--   **rsync:**
+-   **rsync**
 
     You can use
-    [rsync](/knowledge_center/article/backing-up-your-files-with-rsync)
-    to tunnel between your two instances and [transfer your
-    data](/knowledge_center/article/migrating-a-linux-server-from-the-command-line-stage-1).
-    The other methods listed here, however, have you create backups in
-    Cloud Files so that you can always return to them.
+    [rsync](http://www.rackspace.com/knowledge_center/article/backing-up-your-files-with-rsync)
+    to tunnel between your two instances and transfer your data. The
+    other methods listed here, however, have you create backups in Cloud
+    Files so that you can always return to them.
 
--   **Install a GUI tool on your local computer:**
+-   **Install a GUI tool on your local computer**
 
     In certain cases (for example, if your cloud server is Windows
     based), you need to install a GUI tool (such as
-    [Cyberduck](/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck))
+    [Cyberduck](http://www.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck))
     to upload the data on Cloud Files. Several open source and free
     tools exist, and they are described in detail within each migration
     scenario in this document.
 
--   **Use the Cloud Control Panel to upload files:**
+-   **Use the Cloud Control Panel to upload files**
 
     The Cloud Control Panel enables you to upload data from your local
     computer to the server instance. This method is useful for
@@ -94,7 +93,7 @@ database.
     security.
 -   Thoroughly test the applications deployed on your cloud server.
 
-### Next steps
+### Next step
 
 [Provisioning cloud resources when migrating from Amazon Web
 Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)

@@ -5,10 +5,10 @@ permalink: article/introduction-to-mailgun-email-automation
 type: article
 created_date: '2012-12-06 22:43:42'
 created_by: evan.nabors
-last_modified_date: '2015-12-21 14:1739'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-05 17:0251'
+last_modified_by: rose.contreras
 products: Cloud Hosting
-body_format: full_html
+body_format: tinymce
 ---
 
 Mailgun is an email automation service provided by Rackspace. It offers
@@ -47,91 +47,13 @@ resources available in the [Further reading](#further-reading)section.
 
 **On this Page**:
 
--   [Relaying with Postfix](#using-mailgun-with-postfix)
-
 -   [Sending Emails via SMTP](#sending-emails-via-smtp)
-
 -   [Sending Emails via HTTP](#sending-emails-via-http)
-
 -   [Receiving Messages via HTTP](#receiving-messages-via-http)
-
 -   [Further Reading](#further-reading)
 
-### **Relaying with Postfix** {.p3}
-
-Configuring Mailgun as a mail relay will allow Postfix to forward emails
-destined for remote delivery. Before we begin, ensure Postfix is
-installed and running on the server.
-
-Note: Our knowledge center contains an article that details the Postfix
-installation process
-[here](http://www.rackspace.com/knowledge_center/article/postfix-installation).
-
-To configure Mailgun we need to modify Postfix configuration options.
-Postfix configuration options are detailed in the `main.cf` file.
-
-Open the file with the text editor of your choice. In this example we
-use `vim` .
-
-~~~~ {.p3}
-vim /etc/postfix/main.cf
-~~~~
-
-The `relayhost` parameter specifies the default host to send mail for
-remote delivery. Here we modify the value to include the Mailgun smtp
-server hostname and port as shown below.
-
-    relayhost = [smtp.mailgun.org]:587
-
-Postfix will now forward external email requests to the Mailgun server.
-
-Next, we configure smtp authentication for the requests. A simple access
-and security layer (SASL) module handles this in the Postfix config.
-Modify the following SASL settings.
-
-~~~~ {.p3}
-smtp_sasl_auth_enable = yes
-smtp_sasl_password_maps = static:username:password
-smtp_sasl_security_options = noanonymous
-~~~~
-
-Note: You will use the username and password from the [Mailgun control
-panel](https://mailgun.com/sessions/new).
-
-#### SSL/TLS support (Optional) {.p3}
-
-Modify the following configuration options to include SSL/TLS support.
-
-~~~~ {.p3}
-smtp_tls_security_level = may
-smtpd_tls_security_level = may
-smtp_tls_note_starttls_offer = yes
-~~~~
-
-When using TLS encryption, make sure Postfix knows where to locate the
-Certificate Authority (CA) database for your linux distribution:
-
-~~~~ {.p3}
-smtpd_tls_key_file = /etc/ssl/private/smtpd.key
-smtpd_tls_cert_file = /etc/ssl/certs/smtpd.crt
-smtpd_tls_CApath = /etc/ssl/certs
-~~~~
-
-Revisit the `relayhost` parameter and configure the SSL/TLS port.
-
-    relayhost = [smtp.mailgun.org]:465
-
-#### Cleanup  {.p3}
-
-Reload the Postfix service to load the modifications made in `main.cf`.
-
-~~~~ {.p3}
-sudo /etc/init.d/postfix restart
-~~~~
-
-Postfix will now relay outbound emails to Mailgun.
-
-### **Sending emails via SMTP** {.p3}
+### \
+ **Sending emails via SMTP** {.p3}
 
 Integration with Mailgun programatically is available from languages
 with an SMTP library. Let's take a look at a trivial Python script that

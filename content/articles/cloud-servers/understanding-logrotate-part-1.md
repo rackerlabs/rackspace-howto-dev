@@ -5,7 +5,7 @@ permalink: article/understanding-logrotate-part-1
 type: article
 created_date: '2011-11-23 19:36:47'
 created_by: jered.heeschen
-last_modified_date: '2015-12-31 17:0342'
+last_modified_date: '2016-01-06 19:4245'
 last_modified_by: stephanie.fillmon
 products: Cloud Servers
 body_format: tinymce
@@ -310,5 +310,5 @@ poking around in the existing configs and adapt them to your needs. To
 learn how to put an example config together (to rotate the logs for
 custom virtual hosts),and also cover some handy troubleshooting
 approaches, see [Sample logrotate configurations and
-troubleshooting](https://www.rackspace.com/knowledge_center/article/sample-logrotate-configuration-and-troubleshooting).
+troubleshooting](http://www.rackspace.com/knowledge_center/article/sample-logrotate-configuration-and-troubleshooting).
 

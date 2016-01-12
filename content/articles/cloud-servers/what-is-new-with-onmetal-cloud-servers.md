@@ -5,7 +5,7 @@ permalink: article/what-is-new-with-onmetal-cloud-servers
 type: article
 created_date: '2014-06-19 19:36:34'
 created_by: kyle.laffoon
-last_modified_date: '2015-12-10 21:3649'
+last_modified_date: '2016-01-05 22:0242'
 last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: tinymce
@@ -102,11 +102,11 @@ software RAID. OnMetal Compute and Memory flavors only use the 32 GB
 system disk and are considered &ldquo;diskless,&rdquo; with no data disks. Cloud
 Block Storage can be attached to any OnMetal server instance (see
 [Attach a Cloud Block Storage volume to an OnMetal
-server](http://rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
+server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 ). However, configuring the available flash drives as data drives
 provides a much faster configuration. See [Configure flash drives in
 High I/O instances as Data
-drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives%20)
+drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives)
 for more information on this option.
 
 What Is Different with OnMetal Cloud Servers from other cloud servers?

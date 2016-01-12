@@ -5,8 +5,8 @@ permalink: article/how-long-does-it-take-to-do-an-email-migration-to-racksapce
 type: article
 created_date: '2013-12-03 13:46:42'
 created_by: milton.prado
-last_modified_date: '2014-10-16 21:4828'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-08 16:4018'
+last_modified_by: kyle.laffoon
 products: Cloud Office
 body_format: tinymce
 ---
@@ -74,5 +74,5 @@ that can automatically manage errors for you in most cases.
 
 If the source or destination system throttles the amount of data that
 can be read or written, the migration might not be able to use all the
-available network bandwidth..
+available network bandwidth.
 

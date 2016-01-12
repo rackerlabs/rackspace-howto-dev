@@ -5,8 +5,8 @@ permalink: article/two-factor-authentication-from-the-cloud-control-panel
 type: article
 created_date: '2014-07-17 01:59:40'
 created_by: margaret.eker
-last_modified_date: '2015-10-07 20:4409'
-last_modified_by: margaret.eker
+last_modified_date: '2016-01-06 14:5727'
+last_modified_by: kyle.laffoon
 products: 'Cloud Servers,Cloud Backup,Cloud Monitoring,Cloud Files,Cloud Load Balancers,Cloud Databases,Cloud Block Storage,Cloud Big Data,Cloud Orchestration,Auto Scale'
 body_format: tinymce
 ---
@@ -79,7 +79,7 @@ For more information, see the following sections:
     not implemented through the Rackspace Cloud Identity 2.0 API. For
     information about using multi-factor authentication with
     MyRackspace, see  *[MyRackspace Two-Factor
-    Authentication](/knowledge_center/article/myrackspace-two-factor-authentication "MyRackspace Two-Factor Authentication")*.
+    Authentication](http://www.rackspace.com/knowledge_center/article/myrackspace-two-factor-authentication "MyRackspace Two-Factor Authentication")*.
 
 -   You cannot configure multi-factor authentication from the Cloud
     Sites Control Panel. However, if you set up multi-factor

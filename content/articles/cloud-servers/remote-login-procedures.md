@@ -5,8 +5,8 @@ permalink: article/remote-login-procedures
 type: article
 created_date: '2012-07-24 00:40:51'
 created_by: RackKCAdmin
-last_modified_date: '2015-02-26 18:2208'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 19:4700'
+last_modified_by: cat.lookabaugh
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -23,13 +23,13 @@ instructions, see the appropriate article for your desktop operating
 system:
 
 -   [Connecting to Linux from Mac OS X by using
-    Terminal](/knowledge_center/node/1225)
+    Terminal](http://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-mac-os-x-by-using-terminal)
 -   [Connecting to Linux from Windows by using
-    PuTTY](/knowledge_center/node/68)
+    PuTTY](http://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-windows-by-using-putty)
 
 If you can't use SSH to access a Linux server remotely, you can
 access its command line by using the [console in the Cloud Control
-Panel](/knowledge_center/node/1356).
+Panel](http://www.rackspace.com/knowledge_center/article/managing-your-server-start-a-console-session).
 
 Windows server
 --------------
@@ -39,12 +39,12 @@ connection instructions, see the appropriate article for your desktop
 operating system:
 
 -   [Logging in to Your Server via RDP
-    (Windows)](/knowledge_center/node/368)
--   [Log in to your server with RDP (Mac)](/knowledge_center/node/371)
+    (Windows)](http://www.rackspace.com/knowledge_center/article/log-in-to-your-server-via-rdp-windows)
 
 More information
 ----------------
 
 For more information about working with Cloud Servers, see [Learn more
-about Cloud Servers](/knowledge_center/node/1511).
+about Cloud
+Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers).
 

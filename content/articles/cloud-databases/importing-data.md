@@ -5,8 +5,8 @@ permalink: article/importing-data
 type: article
 created_date: '2012-07-24 00:29:31'
 created_by: RackKCAdmin
-last_modified_date: '2015-09-03 20:1633'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 17:1240'
+last_modified_by: cat.lookabaugh
 products: Cloud Databases
 body_format: tinymce
 ---
@@ -65,11 +65,6 @@ On Fedora and CentOS, install the client with this command:
     mysql -h 31blah2d.rackspaceclouddb.com -u username -p database_name < database_name.sql
 
 The database is imported and ready to accept new data.
-
-### Related Information
-
-[How Do I Import a Large MYSQL
-Database](http://www.rackspace.com/knowledge_center/index.php/How_do_I_import_a_large_Mysql_Database)
 
 ### External Links
 

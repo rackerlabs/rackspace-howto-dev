@@ -5,8 +5,8 @@ permalink: article/email-client
 type: article
 created_date: '2013-12-04 23:30:53'
 created_by: milton.prado
-last_modified_date: '2014-01-30 20:0613'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 14:3752'
+last_modified_by: rose.contreras
 products: Cloud Office
 body_format: tinymce
 ---
@@ -28,8 +28,7 @@ To help you and your end users have the best experience when switching
 over, Rackspace provides the following options for setting up user
 access before a migration is complete.
 
-### Webmail Access**\
-**
+### Webmail Access
 
 **Note**: Webmail is immediately available to all users once the mailbox
 is created. It provides them with the ability to send and receive email
@@ -45,8 +44,7 @@ live&rdquo; date.
 End users requiring a desktop email client connection can get setup
 instructions after the migration is complete by going to the Rackspace
 Auto-Config
-Tool, [https://emailhelp.rackspace.com](https://emailhelp.rackspace.com).[\
-](https://emailhelp.rackspace.com)
+Tool, [https://emailhelp.rackspace.com](https://emailhelp.rackspace.com).
 
 #### Benefits
 
@@ -89,7 +87,7 @@ through the Windows Control Panel.  IMAP and POP for Rackspace Email can
 simply be added into the same profile. For instructions on creating a
 new profile for Exchange, see the following article: [Manually Setting
 up a new profile with
-Outlook](http://www.rackspace.com/knowledge_center/article/manually-setting-up-outlook-2007-with-microsoft-exchange-2010).
+Outlook](http://www.rackspace.com/knowledge_center/article/manually-configure-outlook-2007-for-email-hosted-on-exchange-2010).
 
 **Outlook 2010+** - Both Exchange and Rackspace Email accounts can be
 added to the same profile.  Creating a new profile is not necessary with
@@ -107,8 +105,8 @@ Exchange](https://apps.rackspace.com)
 client setups)
 
 [Setup Exchange Email Clients and Mobile
-Devices](http://www.rackspace.com/knowledge_center/article/setting-up-microsoft-exchange-email-clients-mobile-devices)
+Devices](http://www.rackspace.com/knowledge_center/article/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange)
 
 [Setup Rackspace Email Clients and Mobile
-Devices ](http://www.rackspace.com/knowledge_center/article/setting-up-rackspace-email-clients-mobile-devices)
+Devices ](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)
 

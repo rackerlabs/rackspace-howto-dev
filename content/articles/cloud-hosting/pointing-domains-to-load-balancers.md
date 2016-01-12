@@ -5,8 +5,8 @@ permalink: article/pointing-domains-to-load-balancers
 type: article
 created_date: '2012-07-24 00:07:58'
 created_by: RackKCAdmin
-last_modified_date: '2012-10-03 17:4135'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 14:3700'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -24,7 +24,8 @@ point to the load balancer.
 
 This article describes how to point an existing domain to a Cloud Load
 Balancer. For instructions on creating a new Load Balancer,
-see [Configuring a Load Balancer](/knowledge_center/node/2297).
+see [Configuring a Load
+Balancer](http://www.rackspace.com/knowledge_center/article/configure-a-load-balancer).
 
 ### Pointing an Existing Domain to a Load Balancer {.p1}
 

@@ -5,7 +5,7 @@ permalink: article/setting-up-imap-or-pop-windows-mail
 type: article
 created_date: '2011-03-09 15:55:57'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 16:4203'
+last_modified_date: '2016-01-07 15:3937'
 last_modified_by: stephanie.fillmon
 products: Simple Email Setup
 body_format: tinymce
@@ -42,24 +42,21 @@ in the **From** field of messages you send.
 
 7.    Click **Next**.
 
-8.    Enter the following information:\
-  
+8.    Enter the following information:
 
-&middot;       **Incoming e-mail server type**&mdash;Select **IMAP** from the list.
+-   **Incoming e-mail server type**&mdash;Select **IMAP** from the list.
+-   **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
+    name:
 
-&middot;       **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
-name:\
-  \
- **secure.emailsrvr.com**
+    **secure.emailsrvr.com**
 
-&middot;       **Outgoing e-mail server (SMTP) name**&mdash;Enter the secure server
-name:\
-  \
- **secure.emailsrvr.com**
+-   **Outgoing e-mail server (SMTP) name**&mdash;Enter the secure server name:
 
-&middot;       Select the **Outgoing server requires authentication** check
-box.\
-  \
+    **secure.emailsrvr.com**
+
+-   Select the **Outgoing server requires authentication** check box.
+
+ \
  ![ Server addresses
 form](http://c458714.r14.cf2.rackcdn.com/EA_ServerSettings_01.png)
 
@@ -116,24 +113,21 @@ in the **From** field of messages you send.
 
 7.    Click **Next**.
 
-8.    Enter the following information:\
-  
+8.    Enter the following information:
 
-&middot;       **Incoming e-mail server type**&mdash;Ensure that **POP3** is
-selected.
+-   **Incoming e-mail server type**&mdash;Ensure that **POP3** is selected.
+-   **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
+    name:
 
-&middot;       **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
-name:\
-  \
- **secure.emailsrvr.com**
+    **secure.emailsrvr.com**
 
-&middot;       **Outgoing e-mail server (SMTP)**&mdash;Enter the secure server name:\
-  \
- **secure.emailsrvr.com**
+-   **Outgoing e-mail server (SMTP)**&mdash;Enter the secure server name:
 
-&middot;       Select the **Outgoing server requires authentication** check
-box.\
-  \
+    **secure.emailsrvr.com**
+
+-   Select the **Outgoing server requires authentication** check box.
+
+ \
  ![ Server address
 form](http://c458716.r16.cf2.rackcdn.com/EA_SetupServers_01.png)
 

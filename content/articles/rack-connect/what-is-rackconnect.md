@@ -5,8 +5,8 @@ permalink: article/what-is-rackconnect
 type: article
 created_date: '2012-08-21 16:37:48'
 created_by: juan.perez
-last_modified_date: '2015-12-30 20:1734'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 20:1751'
+last_modified_by: catherine.richardson
 products: RackConnect
 body_format: tinymce
 ---
@@ -15,7 +15,8 @@ body_format: tinymce
 
 **Note:** This article is a high-level overview of RackConnect v2.0. For
 more technical information about RackConnect, see [Requirements for
-implementing RackConnect v2.0](/knowledge_center/node/2021).
+implementing RackConnect
+v2.0](http://www.rackspace.com/knowledge_center/article/what-are-the-requirements-for-implementing-rackconnect-v20).
 
 RackConnect gives you the freedom to choose the best platform for your
 applications by unifying the breadth of the Rackspace portfolio into a

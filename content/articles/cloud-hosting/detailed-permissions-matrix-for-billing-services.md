@@ -5,8 +5,8 @@ permalink: article/detailed-permissions-matrix-for-billing-services
 type: article
 created_date: '2013-09-19 16:51:13'
 created_by: renee.rendon
-last_modified_date: '2014-04-08 14:2818'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-05 17:0722'
+last_modified_by: Mike Asthalter
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -14,9 +14,9 @@ body_format: tinymce
 The following permissions matrix displays specific capabilities for the
 roles in Billing and Payment Services. 
 
-### **[Related Knowledge Center Articles](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-billing-services-overview)**
+### **[Related Knowledge Center Articles](http://www.rackspace.com/knowledge_center/article/billing-services-overview)**
 
-### **As of April 8, 2014** {style="margin-bottom: 0in; text-align: left;"}
+### **As of April 8, 2014**
 
 CAPABILITY
 

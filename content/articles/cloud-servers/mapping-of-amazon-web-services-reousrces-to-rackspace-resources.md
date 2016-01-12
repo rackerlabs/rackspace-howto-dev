@@ -5,8 +5,8 @@ permalink: article/mapping-of-amazon-web-services-reousrces-to-rackspace-resourc
 type: article
 created_date: '2013-07-01 15:38:44'
 created_by: David Hendler
-last_modified_date: '2015-12-31 14:3431'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-08 20:0538'
+last_modified_by: kelly.holcomb
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -50,7 +50,7 @@ Services](https://www.rackspace.com/knowledge_center/article/migrating-to-the-ra
                            [Cloud Databases API](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html)
                            [Cloud Databases pricing](http://www.rackspace.com/cloud/databases/pricing)
   Amazon DynamoDB          Object Rocket (MongoDB - open)
-  Amazon SES, SNS          MailGun
+  Amazon SES, SNS          Mailgun
   Elastic Transcoder       Partner solutions - encoding.com
   IAM & Mgmt Console       Cloud Control Panel
   AWS CloudWawtch          **Cloud Monitoring** [[product link](http://www.rackspace.com/cloud/monitoring)]
@@ -139,6 +139,6 @@ Standard: 30 GB RAM, 1200 GB HDD, 8 vCPUs\
 
 ### Next steps
 
-[High Level Steps for Migrating from Amazon Web
+[High-level steps for migrating from Amazon Web
 Services](http://www.rackspace.com/knowledge_center/article/high-level-steps-for-migrating-from-amazon-web-services)
 

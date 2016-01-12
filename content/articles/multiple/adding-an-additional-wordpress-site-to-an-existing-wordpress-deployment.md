@@ -5,8 +5,8 @@ permalink: article/adding-an-additional-wordpress-site-to-an-existing-wordpress-
 type: article
 created_date: '2013-12-13 16:46:48'
 created_by: jered.heeschen
-last_modified_date: '2015-08-12 15:4640'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-07 14:4901'
+last_modified_by: rose.contreras
 products: 'Cloud Servers,Cloud Orchestration'
 body_format: markdown_w_tinymce
 ---
@@ -37,7 +37,7 @@ Adding a site to an existing stack requires changes to the configurations for mu
 
         ssh user@<ip_address_of_backend_server> -i /path/to/key
 
-If you do not have the private key, you can reset the backend server's root password. For help connecting to your server via SSH, see the articles on using SSH with a private key in our Knowledge Center for [Mac and Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-linuxmac) or [Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
+If you do not have the private key, you can reset the backend server's root password. For help connecting to your server via SSH, see the articles on using SSH with a private key in our Knowledge Center for [Mac and Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows).
 
 ### Database Setup
 

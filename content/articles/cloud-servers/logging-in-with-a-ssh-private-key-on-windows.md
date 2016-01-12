@@ -5,8 +5,8 @@ permalink: article/logging-in-with-a-ssh-private-key-on-windows
 type: article
 created_date: '2013-09-25 15:20:06'
 created_by: brint.ohearn
-last_modified_date: '2015-07-23 16:1059'
-last_modified_by: margaret.eker
+last_modified_date: '2016-01-05 17:1303'
+last_modified_by: Mike Asthalter
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -26,7 +26,7 @@ Both tools can be downloaded here:
 **Note: ** These instructions apply to the Windows operating system. 
 For information about using SSH private keys on Linux and OS X operating
 systems, see [Logging in with a SSH Private Key on Linux and OS
-X](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-linuxmac).
+X](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-linuxmac).
 
  
 

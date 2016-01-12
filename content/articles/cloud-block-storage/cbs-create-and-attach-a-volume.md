@@ -5,8 +5,8 @@ permalink: article/cbs-create-and-attach-a-volume
 type: article
 created_date: '2012-10-22 05:36:43'
 created_by: Rackspace Support
-last_modified_date: '2015-12-30 19:5756'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-08 04:0221'
+last_modified_by: catherine.richardson
 products: Cloud Block Storage
 body_format: tinymce
 ---
@@ -79,7 +79,7 @@ Block Storage Volumes list.\
  \
  To detach and delete the volume, see [Detach and Delete Cloud Block
 Storage
-Volumes](/knowledge_center/article/cbs-detach-and-delete-volumes).
+Volumes](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes).
 
 ### View Volume Details
 
@@ -118,7 +118,7 @@ volume. Possible statuses are:
         detach it.\
          Note: you should make sure the volume is unmounted before you
         detach it. See [Detach and Delete Cloud Block Storage
-        Volumes](/knowledge_center/article/cbs-detach-and-delete-volumes)
+        Volumes](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes)
         for details.
 -   \<path\> -- If your volume is attached to a Linux server, its path
     (/dev/XXXX) displays here.
@@ -145,7 +145,7 @@ Performance (an SSD drive)\
  **Snapshots:** This section displays how many snapshots you have of the
 volume. There is also a link which allows you to Create a Snapshot.
 Snapshots are described [later in this Getting Started
-Guide](/knowledge_center/article/create-and-use-cloud-block-storage-snapshots).
+Guide](http://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 ### Attach the Volume to a Server
 
@@ -157,7 +157,7 @@ format, and mount it, which we cover on the next page.
 
 If you'd like to know more about the differences between attaching and
 mounting a volume, read the article on [Attaching vs.
-Mounting](/knowledge_center/article/cloud-block-storage-attaching-vs-mounting).
+Mounting](http://www.rackspace.com/knowledge_center/article/cloud-block-storage-attaching-vs-mounting).
 
 You may only attach a volume to a server in the same region.
 
@@ -181,5 +181,5 @@ displays under the heading **Attached to**.
 ### Next steps
 
 [Prepare your Cloud Block Storage
-volume](https://www.rackspace.com/knowledge_center/article/prepare-your-cloud-block-storage-volume)
+volume](http://www.rackspace.com/knowledge_center/article/prepare-your-cloud-block-storage-volume)
 

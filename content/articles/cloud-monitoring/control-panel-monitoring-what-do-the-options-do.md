@@ -5,7 +5,7 @@ permalink: article/control-panel-monitoring-what-do-the-options-do
 type: article
 created_date: '2013-08-19 19:40:45'
 created_by: Jim Culbreath
-last_modified_date: '2016-01-04 21:5159'
+last_modified_date: '2016-01-05 21:2255'
 last_modified_by: Mike Asthalter
 products: Cloud Monitoring
 body_format: tinymce
@@ -16,7 +16,7 @@ your servers. This article explains each check and the options that you
 can set for them. For information about setting up one of these
 monitoring checks, see [Create a monitoring check using the Cloud
 Control
-Panel](https://www.rackspace.com/knowledge_center/article/rackspace-monitoring-checks-and-alarms).
+Panel](https://www.rackspace.com/knowledge_center/article/creating-a-monitoring-check-using-the-cloud-control-panel).
 
 For API check definitions, see the Rackspace Monitoring Developer's
 guide [Available Check Types and

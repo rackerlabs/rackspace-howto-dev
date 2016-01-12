@@ -5,8 +5,8 @@ permalink: article/rackconnect-operational-limits
 type: article
 created_date: '2012-10-30 12:59:30'
 created_by: juan.perez
-last_modified_date: '2014-09-30 15:2223'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 22:1721'
+last_modified_by: rose.contreras
 products: RackConnect
 body_format: tinymce
 ---
@@ -146,13 +146,13 @@ Summary of findings
 For more information about using the available APIs, see the following
 documentation:
 
--   [Next gen Cloud Servers API
-    documentation](http://docs.rackspace.com/api/)
--   [The RackConnect
-    API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-api)
--   [How to programmatically determine the RackConnect automation status
-    of your cloud
-    servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-automation-status-of-your-cloud-servers)
+-   -   [Next gen Cloud Servers API
+        documentation](http://docs.rackspace.com/api/)
+    -   [The RackConnect v2.0
+        API](http://www.rackspace.com/knowledge_center/article/the-rackconnect-v20-api)
+    -   [How to programmatically determine the RackConnect v2.0
+        automation status of your cloud
+        servers](http://www.rackspace.com/knowledge_center/article/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud)
 
  
 

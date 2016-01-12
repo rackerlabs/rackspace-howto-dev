@@ -5,8 +5,8 @@ permalink: article/handling-traffic-spikes-on-cloud-sites
 type: article
 created_date: '2012-10-10 20:01:02'
 created_by: Tarun Bhatti
-last_modified_date: '2012-10-11 16:2202'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 18:3302'
+last_modified_by: rose.contreras
 products: Cloud Sites
 body_format: tinymce
 ---
@@ -50,7 +50,7 @@ If applicable, please plan to disable comments/chat and traceback
 functionality during your event to reduce load.
 
 *Lastly, we recommend reviewing best practices for optimizing your web
-site on Rackspace Cloud Sites. [Check this Knowledge Center
-article](http://www.rackspace.com/knowledge_center/article/how-do-i-optimize-my-website-on-cloud-sites "Check out this Knowledge Center article") for
+site on Rackspace Cloud Sites. Read* *[Optimize your website on Cloud
+Sites](http://www.rackspace.com/knowledge_center/article/optimize-your-website-on-cloud-sites "Check out this Knowledge Center article") for
 more information and details.*
 

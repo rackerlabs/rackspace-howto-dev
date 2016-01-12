@@ -5,8 +5,8 @@ permalink: article/what-is-a-cdn
 type: article
 created_date: '2011-03-10 19:09:46'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:1210'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-08 22:2148'
+last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
 ---
@@ -60,9 +60,7 @@ in the following figures.
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content through multiple servers.
 
-\
-
- ![](/knowledge_center/sites/default/files/field/image/CDN-BEFORE_0.png)
+![](/knowledge_center/sites/default/files/field/image/CDN-BEFORE_0.png)
 
  
 

@@ -5,7 +5,7 @@ permalink: article/rackspace-cdn-edge-rules
 type: article
 created_date: '2015-02-11 23:11:37'
 created_by: megan.meza
-last_modified_date: '2015-10-06 16:0603'
+last_modified_date: '2016-01-08 22:0600'
 last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
@@ -27,8 +27,7 @@ rule types is covered in more detail below.
 -   [Caching rules](#order)
 -   [Origin rules](#examples)
 -   [Restrictions](#restrictions)
--   [Rule set up](#Rule%20set%20up)\
-      
+-   [Rule set up](#Rule%20set%20up)
 
 Caching rules
 -------------
@@ -81,8 +80,7 @@ To setup a new origin, begin by clicking on the **Add Origin** link on
 the Details page for your CDN service.  Get started with your origin
 rule for your new origin by giving an IP or domain for that origin.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%201.43.49%20PM.png)\
-  
+![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%201.43.49%20PM.png)
 
 **Tip**:  Rackspace recommends that customers use domains to identify
 their origins when possible, as IP addresses can change over time.  When
@@ -99,9 +97,9 @@ origin if it can't be found on the edge.
 
 **Tip**: When using a path to set rules, a wildcard is necessary.  For
 example, **/images/** is not a valid path, but **/images/\*** is a valid
-path.  \
- \
- **Warning**:  When adding origins to a service, you should always check
+path.  
+
+**Warning**:  When adding origins to a service, you should always check
 that your origin can accept traffic from the domain listed in your CDN
 Service. For example, if your CDN service has a domain of
 cdn.customer1.com, you may need to alter your server's .htaccess file to
@@ -200,8 +198,7 @@ Rackspace CDN allows you to restrict content based on geographical
 regions. See [Rackspace CDN geography
 mapping](http://www.rackspace.com/knowledge_center/article/rackspace-cdn-geography-mapping)
 for a list of the Rackspace CDN geographical regions and the countries
-and territories within them.\
-  
+and territories within them.  
 
 ### IP address restrictions
 
@@ -214,8 +211,7 @@ Rule set up
 -----------
 
 No matter what type of edge rule you create, the concepts in the
-following sections apply.\
-  
+following sections apply.  
 
 ### Path information
 
@@ -232,8 +228,7 @@ path. Using the path **/logos/****\***tells the network to apply your
 rule to anything with **/logos** in the path. If your path is set to
 **/logos/\***, the rule applies to all files in that directory,
 including files in different subdirectories, such as
-**/logos/partnerA/image.jpg** and **/logos/partnerB/image.png**. \
-  
+**/logos/partnerA/image.jpg** and **/logos/partnerB/image.png**.   
 
 ### Rule Ordering
 

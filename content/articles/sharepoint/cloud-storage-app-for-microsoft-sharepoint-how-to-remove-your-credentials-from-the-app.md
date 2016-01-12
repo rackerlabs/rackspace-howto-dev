@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your
 type: article
 created_date: '2013-06-04 22:38:31'
 created_by: rose.contreras
-last_modified_date: '2016-01-04 18:0028'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-06 18:1524'
+last_modified_by: kelly.holcomb
 products: Sharepoint
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 ### Previous section
 
 [Cloud Storage App for Microsoft SharePoint:
-Overview](https://admin.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
+Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
 
 When you are working in Rackspace Cloud Storage App *for Microsoft
 SharePoint*, you can choose to remove the stored credentials by clicking
@@ -32,12 +32,6 @@ will be returned to the configuration screen each time you access the
 app.
 
 The last topic in the **Cloud Storage App for Microsoft SharePoint**
-series describes [Cloud Storage App for Microsoft SharePoint: FAQs and
-Compatibility
-Matrix](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-faqs-and-compatibility-matrix).
-
-### Next section
-
-[How to Install the Rackspace Cloud Storage App for Microsoft
-SharePoint](https://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers)
+series describes the [Browser Compatibility
+Matrix](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix).
 

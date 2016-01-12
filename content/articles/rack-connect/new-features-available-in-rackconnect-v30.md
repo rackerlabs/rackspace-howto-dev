@@ -5,8 +5,8 @@ permalink: article/new-features-available-in-rackconnect-v30
 type: article
 created_date: '2014-08-25 22:21:46'
 created_by: juan.perez
-last_modified_date: '2014-11-11 21:5010'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 17:4430'
+last_modified_by: kyle.laffoon
 products: RackConnect
 body_format: tinymce
 ---

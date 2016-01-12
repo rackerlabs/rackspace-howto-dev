@@ -5,8 +5,8 @@ permalink: article/logging-in-with-a-ssh-private-key-on-linuxmac
 type: article
 created_date: '2013-09-25 14:34:37'
 created_by: brint.ohearn
-last_modified_date: '2015-07-23 16:0952'
-last_modified_by: margaret.eker
+last_modified_date: '2016-01-05 17:1010'
+last_modified_by: Mike Asthalter
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -29,7 +29,7 @@ In this example, we use the vim text editor.
 **Note: ** These instructions apply to the Linux and OS X operating
 systems.  For information about using SSH private keys on Windows
 operating systems, see [Logging in with an SSH Private Key on
-Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
+Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows).
 
 #### Logging in with a private key
 

@@ -5,8 +5,8 @@ permalink: article/first-generation-to-next-generation-cloud-server-migration-fa
 type: article
 created_date: '2015-01-08 21:47:49'
 created_by: trey.hoehne
-last_modified_date: '2015-12-21 17:4108'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 16:3955'
+last_modified_by: renee.rendon
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -231,8 +231,9 @@ environments.
 
 Yes. The Next Generation platform has a different API. Information about
 getting starting with the Next Generation API is located at
-[http://docs.rackspace.com](http://docs.rackspace.com/). Any third-party
-tools or SDKs that you are currently using will need to be updated.
+[https://developer.rackspace.com/docs](https://developer.rackspace.com/docs/).
+Any third-party tools or SDKs that you are currently using will need to
+be updated.
 
 [\<back to top\>](#top)
 

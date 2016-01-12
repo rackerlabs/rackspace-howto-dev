@@ -5,8 +5,8 @@ permalink: article/changing-the-size-of-your-performance-flavor-server
 type: article
 created_date: '2013-09-25 21:08:13'
 created_by: kyle.laffoon
-last_modified_date: '2015-07-17 14:5727'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-05 20:5714'
+last_modified_by: Mike Asthalter
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -16,9 +16,9 @@ servers, you may change the size of your local system storage space in
 one of two ways:
 
 -   [Increase Available Storage with Cloud Block
-    Storage](/knowledge_center/node/3708#increasestorage)
+    Storage](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers#increasestorage)
 -   [Create a new server with more
-    resources](/knowledge_center/node/3708#changeflavor) 
+    resources](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers#changeflavor) 
 
 Note that these instructions apply to General Purpose and I/O optimized
 servers with local system disks only. Resource allocation for servers
@@ -33,7 +33,7 @@ Cloud Block Storage volumes. Cloud Block Storage volumes come in two
 types: SATA for standard performance and SSD for high performance. For
 more information about Cloud Block Storage, see [Create and Attach a
 Cloud Block Storage
-Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume%20).
+Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume).
 
 Creating a new server with more resources
 -----------------------------------------
@@ -48,17 +48,17 @@ steps:
 
 1.  Create an image of your system disk. (See [Create an image or
     restore a Cloud Server from an
-    image](/knowledge_center/article/create-an-image-or-restore-a-cloud-server-from-an-image) for
+    image](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) for
     more information.)
 2.  Back up your data disk, either to a [Cloud Block Storage
-    volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume%20)
+    volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
     or with [Cloud
     Backup](http://www.rackspace.com/knowledge_center/getting-started/cloud-backup).\
      **Notes**:
     -   To decide between these options, consider your needs. For
         information about the advantages of each, see [Best Practices
         for Backing Up Your Data: Cloud Block Storage versus Cloud
-        Backup](http://www.rackspace.com/knowledge_center/article/best-practices-%E2%80%93-cloud-block-storage-versus-cloud-backup).
+        Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
     -    If you have rsync (Linux) or xcopy/robocopy (Microsoft Windows)
         installed on your server, you can use it to migrate data from
         your data disks after you have created the new server in step 3.

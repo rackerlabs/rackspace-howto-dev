@@ -5,8 +5,8 @@ permalink: article/rackspace-email-exchange-setup
 type: article
 created_date: '2014-08-27 21:23:59'
 created_by: cody.jobson
-last_modified_date: '2015-01-20 21:2713'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 18:0245'
+last_modified_by: kyle.laffoon
 products: 'Rackspace Email,Exchange'
 body_format: tinymce
 ---
@@ -39,12 +39,12 @@ following tables.
 set up the connection as IMAP or POP, you can find additional
 information for specific clients and devices in [Configure email clients
 and mobile devices for email hosted on
-Exchange](/knowledge_center/node/1416).
+Exchange](http://www.rackspace.com/knowledge_center/article/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange).
 
 To learn more about the differences between IMAP and POP, see the
 article [IMAP and POP mail protocol
-comparison](/knowledge_center/node/1425). We recommend using IMAP for
-the incoming mail connection.
+comparison](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protocol-comparison). We
+recommend using IMAP for the incoming mail connection.
 
 The following settings provide a secure connection (SSL).
 

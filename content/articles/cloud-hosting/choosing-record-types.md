@@ -5,8 +5,8 @@ permalink: article/choosing-record-types
 type: article
 created_date: '2012-07-24 00:28:36'
 created_by: RackKCAdmin
-last_modified_date: '2014-05-30 18:4223'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 17:1024'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -62,7 +62,7 @@ records.
 ### Related Information
 
 [Learn More About
-DNS](http://www.rackspace.com/knowledge_center/node/2315)
+DNS](http://www.rackspace.com/knowledge_center/article/learn-more-about-dns)
 
 ### External Links
 

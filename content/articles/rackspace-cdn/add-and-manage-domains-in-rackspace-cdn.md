@@ -5,7 +5,7 @@ permalink: article/add-and-manage-domains-in-rackspace-cdn
 type: article
 created_date: '2015-05-08 21:51:01'
 created_by: Rackspace Support
-last_modified_date: '2015-12-16 21:5935'
+last_modified_date: '2016-01-08 17:4008'
 last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
@@ -20,20 +20,25 @@ information for these steps.
 To add an additional domain to your service, following these steps:
 
 1. On the **CDN Service** page in the **Domains**section, click **Add a
-Domain**.\
- 2. Select HTTP or HTTPS from **Choose Traffic Type**.\
- 3. For HTTP traffic, enter the **Domain Name**.\
- 4. For HTTPS traffic, select **Shared SAN Certificate** or **Shared
+Domain**.
+
+2. Select HTTP or HTTPS from **Choose Traffic Type**.
+
+3. For HTTP traffic, enter the **Domain Name**.
+
+4. For HTTPS traffic, select **Shared SAN Certificate** or **Shared
 Rackspace Domain Certificate** from **Choose Certificate Type**. Then
 enter the **Domain Name** of the domain that you want to add. For secure
 domains, the name must be a single word and cannot contain periods (.),
 but can contain hyphens (-).
 
+ 
+
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.28.18%20PM.png)
 
  
 
-3. Click**Add Domain**.  In the **Domains** section, you can see the
+5. Click **Add Domain**.  In the **Domains** section, you can see the
 Domain Name, along with the **Certificate Type**, and the **Status** of
 the domain. Status will not show as **Active** until the SSL certificate
 has been provisioned and you have set the CNAME record for the domain.
@@ -44,7 +49,7 @@ that you need for the CNAME record creation.
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.39.21%20PM.png)
 
 The instructions that see see when you click on **Domain Not
-Configured**are similar to those in the following figure:
+Configured** are similar to those in the following figure:
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.57.27%20PM.png)
 

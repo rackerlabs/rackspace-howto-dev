@@ -5,8 +5,8 @@ permalink: article/rackspace-cdn-geography-mapping
 type: article
 created_date: '2015-09-11 15:30:52'
 created_by: megan.meza
-last_modified_date: '2015-09-16 11:3937'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-08 22:1006'
+last_modified_by: catherine.richardson
 products: Rackspace CDN
 body_format: tinymce
 ---
@@ -57,8 +57,7 @@ the countries and territories within them.
 -   USA
 -   Virgin Islands
 
-###  \
- South America delivery geography
+### South America delivery geography
 
 -   Argentina
 -   Bolivia
@@ -203,23 +202,19 @@ the countries and territories within them.
 -   Yemen
 -   Yugoslavia
 -   Zambia
--   Zimbabwe\
-      
+-   Zimbabwe
 
 ### Japan delivery geography
 
--   Japan\
-      
+-   Japan
 
 ### India delivery geography
 
--   India\
-      
+-   India
 
 ### Australia delivery geography
 
--   Australia and New Zealand\
-      
+-   Australia and New Zealand
 
 ### Rest of Asia Pacific (APAC) delivery geography
 

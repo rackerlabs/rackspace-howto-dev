@@ -5,8 +5,8 @@ permalink: article/rackspace-auto-scale-getting-started-guide-creating-a-scaling
 type: article
 created_date: '2013-11-18 19:44:59'
 created_by: Rackspace Support
-last_modified_date: '2015-10-22 01:5224'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 21:4005'
+last_modified_by: Nate.Archer
 products: Auto Scale
 body_format: tinymce
 ---
@@ -22,7 +22,7 @@ policies operate.
 -   [Create a scaling group](#CreateScalingGroup)
 -   [About the Auto Scale control panel](#AboutControlPanel)
 
-Create a scaling group\
+### Create a scaling group\
   
 
 1.  Log in to the Cloud Control Panel.
@@ -104,7 +104,7 @@ Create a scaling group\
     turning green by each server as it completes. When the scaling group
     has been created, the status is **Active**.
 
-#### About the Auto Scale control panel
+### About the Auto Scale control panel
 
 Following are a few things you should know about the pages in the Auto
 Scale control panel:

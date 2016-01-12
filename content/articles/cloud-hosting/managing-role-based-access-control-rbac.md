@@ -5,8 +5,8 @@ permalink: article/managing-role-based-access-control-rbac
 type: article
 created_date: '2013-06-28 20:57:29'
 created_by: renee.rendon
-last_modified_date: '2014-10-28 15:5737'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-08 19:3924'
+last_modified_by: kelly.holcomb
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -74,7 +74,7 @@ Configurations.](#configuration)
 cannot be changed to a multi-product role through the Cloud Control
 Panel. For more information about changing a custom role to a full
 access or read-only access role see[ custom
-role](http://www.rackspace.com/knowledge_center/article/known-issues-and-suggested-workarounds-role-based-access-control).
+role](http://www.rackspace.com/knowledge_center/article/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
 
 7. In the **Contact Information** section, select the contact type.
 
@@ -147,7 +147,7 @@ A user wants to create a backup in Cloud Databases
 
 In Cloud Files, give the user the Admin role
 
-### **Adding a User Login and Custom Role to an Existing Contact** {.MsoNormal style="color: #333333; font-family: arial; line-height: normal;"}
+### **Adding a User Login and Custom Role to an Existing Contact** {.MsoNormal}
 
 1. In the **User Management** box, click the actions cog next to the
 contact's name.

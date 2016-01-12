@@ -5,8 +5,8 @@ permalink: article/cloud-storage-app-for-microsoft-sharepoint-overview
 type: article
 created_date: '2013-06-04 22:05:58'
 created_by: rose.contreras
-last_modified_date: '2015-12-16 18:1221'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-06 17:4807'
+last_modified_by: kelly.holcomb
 products: Sharepoint
 body_format: tinymce
 ---
@@ -52,20 +52,20 @@ Getting started
 For instructions on installing and using Cloud Storage App, see the
 following series of articles:
 
--   [How to Install the Rackspace Cloud Storage App for Microsoft
+-   [Install the Rackspace Cloud Storage App for Microsoft
     SharePoint](http://www.rackspace.com/knowledge_center/article/how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint)
--   [How to Set Up Credentials to Access Cloud
+-   [Set Up Credentials to Access Cloud
     Files](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-set-up-credentials-to-access-cloud-files)
--   [How to Navigate the
-    App](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-navigate-the-app)
--   [How to Add and Delete Files in a
+-   [Access Cloud Files
+    Containers](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers)
+-   [Add and Delete Files in a
     Container](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container)
--   [How to Share a File with another
+-   [Share a File with Another
     Person](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person)
--   [How to Remove your Credentials from the
+-   [Remove Your Credentials from the
     App](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app)
--   [FAQs and Browser Compatibility
-    Matrix](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-faqs-and-compatibility-matrix)
+-   [Browser Compatibility
+    Matrix](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix)
 
 Where to go from here
 ---------------------
@@ -82,5 +82,5 @@ install the app on your SharePoint website if the environment has been
 configured to support the SharePoint 2013 app model. For details about
 installing an app in Microsoft SharePoint 2013, see [How to Install the
 Rackspace Cloud Storage App for Microsoft
-SharePoint](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-for-microsoft-sharepoint-how-to-install).
+SharePoint](http://www.rackspace.com/knowledge_center/article/how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint).
 

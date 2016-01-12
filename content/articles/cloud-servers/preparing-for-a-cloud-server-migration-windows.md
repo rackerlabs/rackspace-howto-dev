@@ -5,8 +5,8 @@ permalink: article/preparing-for-a-cloud-server-migration-windows
 type: article
 created_date: '2015-01-22 21:51:03'
 created_by: hounsou.dansou
-last_modified_date: '2015-07-15 12:3739'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 16:4415'
+last_modified_by: renee.rendon
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -43,9 +43,8 @@ agent
 (Windows)](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-windows).
 
 **Note**: Cloud Backup does not back up live databases. The first step
-for [backing up a Microsoft SQL Server
-database](http://www.rackspace.com/knowledge_center/article/backing-up-an-ms-sql-server-2008-database)
-is through Microsoft SQL Server Management Studio. 
+for backing up a Microsoft SQL Server database is through Microsoft SQL
+Server Management Studio. 
 
 To set up your backup directory and a schedule for exporting your backup
 to Cloud Files, see the instructions at [Rackspace Cloud Backup - Create

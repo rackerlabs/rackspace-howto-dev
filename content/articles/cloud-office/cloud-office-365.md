@@ -5,15 +5,15 @@ permalink: cloud-office-365
 type: article
 created_date: '2015-11-19 22:20:58'
 created_by: zach.corleissen
-last_modified_date: '2015-12-28 21:0324'
-last_modified_by: zach.corleissen
+last_modified_date: '2016-01-08 13:2345'
+last_modified_by: kyle.laffoon
 products: Cloud Office
 body_format: markdown_w_tinymce
 ---
 
 This article helps you set up Office 365 for Rackspace Cloud Office.
 
-To get started, make sure you're logged in to [Cloud Office](https://cp.rackspace.com). Then, on the Cloud Portal home page, click *Manage Office 365*.
+To get started, make sure you're logged in to [Cloud Office](https://cp.rackspace.com). Then, on the Cloud Portal home page, click **Manage Office 365**.
 
 ## Create your tenant ID
 
@@ -46,11 +46,11 @@ Enter the following when you log in to the Office 365 Portal:
 
     All fields are required. You can change your information later on the Microsoft Office 365 Portal.
 
-5. Click *Create Tenant*.
+5. Click **Create Tenant**.
 
 ## Add a subscription
 
-From the [Cloud Portal Office 365 manager](https://cp.rackspace.com/Office365#/Manage), click *Add Subscription*.
+From the [Cloud Portal Office 365 manager](https://cp.rackspace.com/Office365#/Manage), click **Add Subscription**.
 
 1. Select a plan.
 
@@ -58,7 +58,7 @@ From the [Cloud Portal Office 365 manager](https://cp.rackspace.com/Office365#/M
 
 2. Enter the number of licenses you need.
 
-3. Click *Add Subscription*.
+3. Click **Add Subscription**.
 
 Pending subscriptions display yellow in the subscription list. Active subscriptions display green.
 
@@ -74,15 +74,15 @@ Click an add-on to see a description and confirm its addition to your service. N
 
 Click the gear icon for your subscription to manage its features.
 
-To change the number of licenses for your subscription, click *Edit License Quantity...* to select a different number, then click *Save*.
+To change the number of licenses for your subscription, click **Edit License Quantity...** to select a different number, then click **Save**.
 
-To delete your subscription, click *Suspend/Delete* and click *Suspend Subscription* to confirm.
+To delete your subscription, click **Suspend/Delete** and click **Suspend Subscription** to confirm.
 
 **Note**: Suspended subscriptions retain your data for 60 days before being permanently deleted. You will not be billed while a subscription is suspended.
 
 ## Log in to the Office 365 portal
 
-From the [Cloud Portal Office 365 manager](https://cp.rackspace.com/Office365#/Manage), click *Log in to Office 365 Control Panel*.
+From the [Cloud Portal Office 365 manager](https://cp.rackspace.com/Office365#/Manage), click **Log in to Office 365 Control Panel**.
 
 1. Enter your email and password.
 
@@ -96,3 +96,9 @@ When you first log in, the Office 365 Portal requires you to enter and confirm a
 ## Success!
 
 You're ready to put Office 365 to work with Rackspace Cloud Office.
+
+## Support Resources
+
+[Microsoft Office 365 frequently asked questions](https://products.office.com/en-us/business/microsoft-office-365-frequently-asked-questions)
+
+[Rackspace Office 365 plans](http://www.rackspace.com/office-365)

@@ -5,7 +5,7 @@ permalink: article/draining-a-cloud-load-balancer
 type: article
 created_date: '2013-06-26 20:43:07'
 created_by: kyle.laffoon
-last_modified_date: '2013-07-12 20:2837'
+last_modified_date: '2016-01-08 18:3445'
 last_modified_by: kyle.laffoon
 products: Cloud Load Balancers
 body_format: tinymce
@@ -35,10 +35,8 @@ active load balancer.
 
     ![](/knowledge_center/sites/default/files/field/image/Drainingconnections_0.jpg)
 
-6.  Monitor the [applicable
-    port](http://www.rackspace.com/knowledge_center/article/configuring-a-cloud-load-balancer-0#Protocol_and_Port_Number)
-    of the currently draining node for continued activity (for a Linux
-    server check
+6.  Monitor the applicable port of the currently draining node for
+    continued activity (for a Linux server check
     [netstat](http://www.rackspace.com/knowledge_center/article/checking-listening-ports-with-netstat)
     for new connections).
 7.  When activity has ceased, repeat the first 5 steps above (as needed)

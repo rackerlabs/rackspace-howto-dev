@@ -5,7 +5,7 @@ permalink: article/how-to-manage-public-folders-in-the-control-panel-for-exchang
 type: article
 created_date: '2014-12-14 16:48:14'
 created_by: theresa.kinney
-last_modified_date: '2015-04-20 20:0128'
+last_modified_date: '2016-01-08 17:4328'
 last_modified_by: kyle.laffoon
 products: Cloud Office
 body_format: tinymce
@@ -59,8 +59,8 @@ folders that you have created:
 
 ![](/knowledge_center/sites/default/files/field/image/Basic_0.png)
 
-****Manage your public folders
-------------------------------
+Manage your public folders
+--------------------------
 
 You click the gear icons on the Public Folders page to manage your
 folders.  Clicking the gear icon displays a menu from which you can
@@ -71,7 +71,7 @@ folder.
 
 ![](/knowledge_center/sites/default/files/field/image/Manage_0.png)
 
-### ****Create a new folder
+### Create a new folder
 
 As an admin, you can create a new folder by performing the following
 steps:
@@ -87,7 +87,7 @@ steps:
 7.  Select or edit the reply-to address.
 8.  Click **Save**to create the folder
 
-### ****Delete a folder
+### Delete a folder
 
 1.  In the list on the Folders page, click the gear icon next to the
     folder that you want to delete.
@@ -95,7 +95,7 @@ steps:
 3.  In the confirmation popup box, click**Delete Folder** to permanently
     delete the folder.
 
-### ****Bulk-delete folders
+### Bulk-delete folders
 
 From the list of public folders, you can delete multiple folders at once
 (bulk delete).  
@@ -111,7 +111,7 @@ From the list of public folders, you can delete multiple folders at once
 3.  In the confirmation popup box, click **Delete Folders** to
     permanently delete the selected folders.
 
-### ****Rename a folder
+### Rename a folder
 
 1.  In the list of folders on the Folders page, click the gear icon next
     to the folder that you want to rename.
@@ -136,7 +136,7 @@ You can create a subfolder in the following ways:
 -   By clicking the parent&rsquo;s folder and creating the subfolder from the
     subfolder list page.
 
-### ****Create a subfolder from the parent Folders page
+### Create a subfolder from the parent Folders page
 
 1.  Click the gear icon next to the folder for which you want to create
     subfolders.
@@ -149,7 +149,7 @@ You can create a subfolder in the following ways:
 8.  Select or edit the reply-to address.
 9.  Click **Save**to create the subfolder.
 
-#### ****Create a subfolder from the subfolder list page
+#### Create a subfolder from the subfolder list page
 
 1.  In the folder list, click the name of the folder for which you want
     to create a subfolder.\
@@ -163,8 +163,8 @@ You can create a subfolder in the following ways:
 8.  Select or edit the reply-to address.
 9.  Click **Save**to create the folder.
 
-****Search for a specific folder or subfolder
----------------------------------------------
+Search for a specific folder or subfolder
+-----------------------------------------
 
 You can find a specific folder in the following ways:
 
@@ -202,7 +202,7 @@ Public folders for Hosted Exchange 2013 are managed exclusively through
 the administrator control panel. Any users who need to manage public
 folders must have administrator access.
 
-### ****Authorization  to add, delete, or modify content
+### Authorization  to add, delete, or modify content
 
 Unlike Exchange 2007 and 2010, individual permissions are no longer
 managed through Outlook for Exchange 2013.  We are working on a release

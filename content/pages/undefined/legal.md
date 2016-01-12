@@ -5,8 +5,8 @@ permalink: legal
 type: page
 created_date: '2012-08-24 15:59:23'
 created_by: RackKCAdmin
-last_modified_date: '2012-08-24 16:4446'
-last_modified_by: RackKCAdmin
+last_modified_date: '2016-01-06 20:1013'
+last_modified_by: renee.rendon
 body_format: tinymce
 ---
 
@@ -40,9 +40,8 @@ the license terms included with the code in the file named &ldquo;README&rdquo;,
 
  
 
-**RACKSPACE KNOWLEDGE CENTER DISCLAIMER****\
-**
---------------------------------------------
+**RACKSPACE KNOWLEDGE CENTER DISCLAIMER**
+-----------------------------------------
 
 The Rackspace Knowledge Center articles are for informational purposes
 only and are provided &ldquo;AS IS.&rdquo;  The information set forth in these
@@ -96,11 +95,13 @@ other companies.
 
  
 
-**The Use of the word PARTNER** {.MsoNormal style="margin-bottom: 10.0pt;"}
+ 
+
+**The Use of the word PARTNER** {.MsoNormal}
 -------------------------------
 
 The use of the word &lsquo;partner&rsquo; or &lsquo;channel partner&rsquo; does not imply a
 partnership relationship between Rackspace and any other company.
 
-
+ 
 

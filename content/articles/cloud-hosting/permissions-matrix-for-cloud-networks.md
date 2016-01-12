@@ -5,8 +5,8 @@ permalink: article/permissions-matrix-for-cloud-networks
 type: article
 created_date: '2013-08-20 20:40:08'
 created_by: renee.rendon
-last_modified_date: '2014-11-20 17:5400'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 21:1210'
+last_modified_by: Mike Asthalter
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -15,7 +15,7 @@ The following permissions matrix displays specific permissions for the
 roles in Cloud Networks. The matrix displays the method names, their
 corresponding RESTful API commands, and the roles that are supported.  
 
-**[API Documentation](http://docs.rackspace.com/)**
+**[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
 Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**

@@ -5,8 +5,8 @@ permalink: article/first-generation-cloud-servers-how-to-articles-other-resource
 type: article
 created_date: '2012-07-24 22:16:35'
 created_by: Jerry Schwartz
-last_modified_date: '2014-11-13 16:3950'
-last_modified_by: David Hendler
+last_modified_date: '2016-01-05 21:5532'
+last_modified_by: catherine.richardson
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -18,23 +18,14 @@ Other Resources**
 
 **Documentation**
 
-&middot;         [Next Generation Cloud Servers API Developer
-Guide](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html)
+&middot;         [Rackspace Cloud Servers API 2.0 Developer
+Guide](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/)
 
-&middot;         [Next Generation Cloud Servers Getting Started
-Guide](http://docs.rackspace.com/servers/api/v2/cs-gettingstarted/content/overview.html)
+&middot;         [Rackspace Cloud Servers API 2.0 Getting Started
+Guide](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#getting-started)
 
-&middot;         [Next Generation Cloud Servers Release
-Notes](http://docs.rackspace.com/servers/api/v2/cs-releasenotes/content/doc_change_history.html)
-
-&middot;         [First Generation API v1.0 and Next Generation API v2
-Differences](http://docs.rackspace.com/servers/api/v2/cs-releasenotes/content/api_differences.html)
-
-&middot;         [First Generation Cloud Servers API Developer
-Guide](http://docs.rackspace.com/servers/api/cs-devguide-latest/index.html)
-
-&middot;         [First Generation Cloud Servers API Schema
-Types](http://docs.rackspace.com/servers/api/v1.0/)
+&middot;         [Rackspace Cloud Servers API 2.0 Release
+Notes](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-release-notes)
 
  
 
@@ -46,29 +37,29 @@ articles, getting started guides, code samples, security best practices
 and hundreds of tips for getting the most out of your Cloud Servers. 
 Check out these popular articles:
 
-&middot;         [Cloud Servers: Frequently Asked
-Questions](http://www.rackspace.com/knowledge_center/Frequently_Asked_Questions)
+&middot;         [Cloud Servers:
+FAQs](http://www.rackspace.com/knowledge_center/product-faq/cloud-servers)
 
-&middot;         [Cloud Servers: The First 48
-Hours](http://www.rackspace.com/knowledge_center/content/first-48-cloud-servers-0)
+&middot;         [Getting Started with Cloud
+Servers](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers)
 
-&middot;         [Cloud Servers: Basic Cloud Server
-Security](http://www.rackspace.com/knowledge_center/content/rackspace-cloud-essentials-3-basic-cloud-server-security)
+&middot;         [Basic Cloud Server
+Security](http://www.rackspace.com/knowledge_center/article/basic-cloud-server-security)
 
-&middot;         [Cloud Servers: Configuring Image
-Backups](http://www.rackspace.com/knowledge_center/index.php/Configuring_Snapshots)
+&middot;         [Create an image of a server and restore a server from a saved
+image](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 
-&middot;         [Cloud Servers: Creating a DNS
-Record](http://www.rackspace.com/knowledge_center/DNS_-_Creating_a_DNS_Record)
+&middot;         [Create DNS Records for cloud servers with the Control
+Panel](http://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel)
 
-&middot;         [Cloud Servers: CentOS - Apache and PHP
-Install](http://www.rackspace.com/knowledge_center/content/centos-apache-and-php-install)
+&middot;         [CentOS 6 - Apache and PHP
+Install](http://www.rackspace.com/knowledge_center/article/centos-6-apache-and-php-install)
 
-&middot;         [Cloud Servers: MySQL - Connect to your database
-remotely](http://www.rackspace.com/knowledge_center/index.php/MySQL_-_Connect_to_your_database_remotely)
+&middot;         [MySQL - Connect to your database
+remotely](http://www.rackspace.com/knowledge_center/article/mysql-connect-to-your-database-remotely)
 
-&middot;         [Cloud Servers: Installing RHEL EPEL Repo on Centos 5.x or
-6.x](http://www.rackspace.com/knowledge_center/content/installing-rhel-epel-repo-centos-5x-or-6x)
+&middot;         [Install EPEL and additional repositories on CentOS and Red
+Hat](http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-repositories-on-centos-and-red-hat)
 
  
 

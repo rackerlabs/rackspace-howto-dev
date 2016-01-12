@@ -5,8 +5,8 @@ permalink: article/cloud-monitoring-automation-integrate-monitoring-with-chef
 type: article
 created_date: '2012-08-14 21:42:02'
 created_by: Rae D. Cabello
-last_modified_date: '2015-12-18 01:3617'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-08 19:3014'
+last_modified_by: kyle.laffoon
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -152,8 +152,8 @@ An alarm describes how a user gets an alert based on a check.  It
 matches the criteria to alert with a destination to send the
 notifications. The alarm leverages our Javascript-like language to
 create criteria based on metrics for a particular check. You can read in
-depth about the alarm language
-\<"https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/\#alarm-language"\>here. 
+depth about the alarm language here:
+[https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/\#alarm-language](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language). 
 
 We are going to create an Alarm for a ping either not returning (which
 would happen by default) or is below 80% or 95% on the number of

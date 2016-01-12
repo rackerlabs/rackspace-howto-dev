@@ -5,8 +5,8 @@ permalink: article/onmetal-quick-start-guide
 type: article
 created_date: '2014-06-19 04:26:13'
 created_by: russell.haering
-last_modified_date: '2015-09-14 16:0436'
-last_modified_by: kelly.holcomb
+last_modified_date: '2016-01-05 21:4619'
+last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: tinymce
 ---

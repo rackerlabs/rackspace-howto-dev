@@ -5,8 +5,8 @@ permalink: article/transferring-a-domain-to-rackspace
 type: article
 created_date: '2012-07-24 00:44:41'
 created_by: RackKCAdmin
-last_modified_date: '2014-02-24 22:5637'
-last_modified_by: ross.diaz
+last_modified_date: '2016-01-06 20:1032'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -56,5 +56,5 @@ the original domain registrar.
 ### Related Information
 
 [Learn More About
-DNS](http://www.rackspace.com/knowledge_center/2315 "Learn More About DNS")
+DNS](http://www.rackspace.com/knowledge_center/article/learn-more-about-dns "Learn More About DNS")
 

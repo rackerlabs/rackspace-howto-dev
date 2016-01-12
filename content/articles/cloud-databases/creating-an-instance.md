@@ -5,8 +5,8 @@ permalink: article/creating-an-instance
 type: article
 created_date: '2012-07-24 00:34:47'
 created_by: RackKCAdmin
-last_modified_date: '2013-12-16 18:1949'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 17:2528'
+last_modified_by: cat.lookabaugh
 products: Cloud Databases
 body_format: tinymce
 ---
@@ -31,7 +31,8 @@ For enhanced security, database instances are directly accessible on the
 internal Rackspace Network and by using a Cloud resource within the same
 regional data center. For example, a database instance in DFW can only
 be accessed by a Cloud Server in DFW. For more information, see [Public
-Vs. Private Access](http://www.rackspace.com/knowledge_center/node/2411)
+Vs. Private
+Access](http://www.rackspace.com/knowledge_center/article/public-and-private-access-for-cloud-databases)
 and [Connecting to Your
-Database](http://www.rackspace.com/knowledge_center/node/2429).
+Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance).
 

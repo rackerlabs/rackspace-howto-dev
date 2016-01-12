@@ -5,8 +5,8 @@ permalink: article/cloud-files-how-to-articles-other-resources
 type: article
 created_date: '2012-08-01 02:33:15'
 created_by: Rae D. Cabello
-last_modified_date: '2015-01-27 20:4614'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 19:2101'
+last_modified_by: catherine.richardson
 products: Cloud Files
 body_format: tinymce
 ---
@@ -15,13 +15,13 @@ Documentation
 -------------
 
 -   [API Developer
-    Guide](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html)
+    Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/)
+-   [API Getting Started
+    Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#getting-started)
 -   [Release
-    Notes](http://docs.rackspace.com/files/api/v1/cf-releasenotes/content/preface.html)
--   [Cloud Files API Getting Started
-    Guide](http://docs.rackspace.com/files/api/v1/cf-getting-started/content/Overview-d1e01.html)
+    Notes](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-release-notes)
 -   [General Getting Started
-    Guide](/knowledge_center/getting-started/cloud-files)
+    Guide](https://www.rackspace.com/knowledge_center/getting-started/cloud-files)
 
 SDKs
 ----
@@ -40,19 +40,20 @@ major bindings listed below:
 Popular How To Articles from the Rackspace Knowledge Center
 -----------------------------------------------------------
 
-The Rackspace [Knowledge Center](/knowledge_center) houses "how-to"
+The Rackspace [Knowledge
+Center](http://www.rackspace.com/knowledge_center/) houses "how-to"
 articles, getting started guides, code samples, security best practices
 and hundreds of tips for getting the most out of your Cloud Files. 
 Check out these popular articles:
 
 -   [Rackspace Cloud Files
-    FAQs](/knowledge_center/product-faq/cloud-files)
--   [Best Practices Using Cloud Files](/knowledge_center/node/1269)
--   [Using Cloud Files with the Cloud Control
-    Panel](/knowledge_center/frequently-asked-question/how-do-i-use-the-cloud-files-cdn-manager)
+    FAQs](http://www.rackspace.com/knowledge_center/product-faq/cloud-files)
+-   [Best Practices Using Cloud
+    Files](https://www.rackspace.com/knowledge_center/article/best-practices-for-using-cloud-files)
 -   [Mounting Rackspace Cloud Files to Linux Using
-    CloudFuse](/knowledge_center/node/1121)
--   [Viewing Your API Key](/knowledge_center/node/3288)
+    CloudFuse](http://www.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+-   [Viewing Your API
+    Key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
 
 Popular Technical Articles from the Rackspace Blog
 --------------------------------------------------

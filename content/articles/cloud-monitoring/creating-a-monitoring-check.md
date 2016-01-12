@@ -5,8 +5,8 @@ permalink: article/creating-a-monitoring-check
 type: article
 created_date: '2012-08-15 20:31:46'
 created_by: Susan Million
-last_modified_date: '2015-12-22 19:0853'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-06 20:0826'
+last_modified_by: catherine.richardson
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -21,8 +21,8 @@ Monitoring Developer
 Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-example-operations).
 
 You can also use
-[raxmon](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-monitoring)
-, command-line interface, to perform these and other actions on a
+[raxmon](http://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-monitoring-cli),
+a command-line interface, to perform these and other actions on a
 monitoring check.
 
 For the latest information about Rackspace Monitoring pricing and other

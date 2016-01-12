@@ -5,8 +5,8 @@ permalink: article/monitoring-differences-between-rackspace-server-users-and-non
 type: article
 created_date: '2014-06-16 21:02:46'
 created_by: maria.abrahms
-last_modified_date: '2014-10-10 21:5110'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 18:5706'
+last_modified_by: kyle.laffoon
 products: Cloud Monitoring
 body_format: tinymce
 ---
@@ -95,7 +95,7 @@ Agent configuration file location:
 
 Learn more about agent configuration with the [Install the Cloud
 Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/install-the-cloud-monitoring-agent)
+Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent)
 article.
 
 By default, the monitoring agent is installed and turned ON and the

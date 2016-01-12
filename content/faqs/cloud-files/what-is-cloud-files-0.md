@@ -5,8 +5,8 @@ permalink: frequently-asked-question/what-is-cloud-files-0
 type: frequently_asked_question
 created_date: '2012-09-20 18:38:38'
 created_by: tom.hopkins
-last_modified_date: '2015-07-23 18:3610'
-last_modified_by: catherine.richardson
+last_modified_date: '2016-01-05 17:1525'
+last_modified_by: rose.contreras
 products: Cloud Files
 body_format: full_html
 ---
@@ -52,7 +52,8 @@ Cloud Files&trade; is not a &ldquo;file system&rdquo; in the traditional sense. 
 not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments
-to [review the concepts](/knowledge_center/index.php/Key_Concepts).
+to [review the
+concepts](http://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
 
 #### Using Cloud Files {#usingcloudfiles}
 

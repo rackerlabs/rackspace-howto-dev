@@ -5,8 +5,8 @@ permalink: article/compute-cloud-nova-using-seamicro-sm15000
 type: article
 created_date: '2013-01-24 21:50:28'
 created_by: alyssah
-last_modified_date: '2013-06-26 16:3753'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-06 19:5121'
+last_modified_by: constanze.kratel
 products: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
@@ -121,9 +121,10 @@ on the system availability and operation.
 Installation
 ------------
 
-Installation of RPCS is well documented by the following article:
+Installation of RPCS is well documented in the following article:
 
-[http://www.rackspace.com/knowledge\_center/getting-started/rackspace-private-cloud](http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud "http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud")
+[Getting Started with Rackspace Private Cloud -
+OpenStack](http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud "http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud")
 
 Conclusion
 ----------

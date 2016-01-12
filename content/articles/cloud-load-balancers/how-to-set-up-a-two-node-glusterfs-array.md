@@ -5,7 +5,7 @@ permalink: article/how-to-set-up-a-two-node-glusterfs-array
 type: article
 created_date: '2014-06-03 14:29:47'
 created_by: matt.sherborne
-last_modified_date: '2015-08-20 18:3147'
+last_modified_date: '2016-01-05 18:2418'
 last_modified_by: kyle.laffoon
 products: Cloud Load Balancers
 body_format: markdown_w_tinymce

@@ -5,8 +5,8 @@ permalink: article/configuring-basic-security-0
 type: article
 created_date: '2012-07-24 00:23:38'
 created_by: RackKCAdmin
-last_modified_date: '2015-09-03 20:1215'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-05 17:1912'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: full_html
 ---
@@ -71,11 +71,9 @@ Add an Admin User {#AddAnAdminUser}
 -----------------
 
 **Note**: If you are setting up additional SSH users for an OnMetal
-server, see [Uploading an SSH
-key](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers#uploadKey)
-in the [Using OnMetal Cloud
+server, see [Using OnMetal
 Servers](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers)
-article for applicable OnMetal steps.
+for applicable OnMetal steps.
 
 1.  To add an admin user, issue the following command and replace
     **demo** with the user name of your choice:
@@ -127,7 +125,7 @@ server, and set the correct permissions for the key.
 
 The following instructions assume that you use Linux or Mac OS X. For
 Windows instructions, see [Key generation using Putty for
-Windows](http://www.rackspace.com/knowledge_center/index.php/SSH_-_PuTTYgen).
+Windows](http://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen).
 
 ### Step 1. Create the public and private keys
 
@@ -443,7 +441,7 @@ the symptoms to determine what might be wrong.
     characters that were missed in a copy-and-paste operation).
 -   If you've been rebuilding the server, you might need to [remove the
     host key from your known\_hosts
-    file](http://www.rackspace.com/knowledge_center/checking-ssh-host-fingerprint-with-the-web-console) before
+    file](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-checking-a-server%E2%80%99s-ssh-host-fingerprint-with-the-web-console) before
     you can make a connection.
 
 If you're locked out
@@ -456,6 +454,6 @@ repair the configurations.
 
 These are the basics of connecting to a Linux Cloud Server and setting
 up security.  See [Windows Cloud
-Server](http://www.rackspace.com/knowledge_center/index.php/Logging_into_your_Server_via_RDP) to
+Server](http://www.rackspace.com/knowledge_center/article/log-in-to-your-server-via-rdp-windows) to
 be perform these steps on a Windows server.
 

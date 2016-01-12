@@ -5,7 +5,7 @@ permalink: article/detailed-permissions-matrix-for-cloud-feeds
 type: article
 created_date: '2014-08-27 17:14:21'
 created_by: renee.rendon
-last_modified_date: '2015-01-22 22:0436'
+last_modified_date: '2016-01-06 18:0003'
 last_modified_by: kyle.laffoon
 products: Cloud Hosting
 body_format: tinymce
@@ -18,7 +18,7 @@ corresponding RESTful API commands, and the roles that are supported.
 [**API Documentation**](http://docs.rackspace.com/)
 
 [**Related Knowledge Center
-Articles**](/knowledge_center/article/cloud-feeds-faq)
+Articles**](http://www.rackspace.com/knowledge_center/article/cloud-feeds-faq)
 
 **As of January 20, 2015**
 

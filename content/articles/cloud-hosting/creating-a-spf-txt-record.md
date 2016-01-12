@@ -5,8 +5,8 @@ permalink: article/creating-a-spf-txt-record
 type: article
 created_date: '2012-07-24 00:19:16'
 created_by: RackKCAdmin
-last_modified_date: '2015-08-31 16:2402'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-01-05 16:5401'
+last_modified_by: cat.lookabaugh
 products: Cloud Hosting
 body_format: tinymce
 ---
@@ -107,5 +107,5 @@ Record](http://c691244.r44.cf2.rackcdn.com/SPF%20Record%20DNS.png)
 **Related information**
 
 [Creating a DKIM TXT
-Record](http://www.rackspace.com/knowledge_center/node/2407)
+Record](http://www.rackspace.com/knowledge_center/article/create-a-dkim-txt-record)
 

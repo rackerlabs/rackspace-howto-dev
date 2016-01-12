@@ -5,8 +5,8 @@ permalink: article/migrating-a-java-web-application-from-amazon-web-services
 type: article
 created_date: '2013-07-02 19:06:14'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 14:3735'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-07 17:1014'
+last_modified_by: rose.contreras
 products: Cloud Servers
 body_format: tinymce
 ---
@@ -19,7 +19,7 @@ by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](https://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The web application used here is the Spring Framework Petclinic sample
 available at
@@ -204,7 +204,7 @@ following figure:
 ### Back up data from AWS to Rackspace Cloud Files
 
 Retrieve your data from EC2. You can transfer the data directly via
-[rsync](/knowledge_center/article/migrating-a-linux-server-from-the-command-line-stage-1)
+[rsync](http://www.rackspace.com/knowledge_center/article/migrating-a-linux-server-from-the-command-line-1)
 or sftp, or you can use the OpenStack Swift client to transfer your data
 to Cloud Files, and from there transfer to the Cloud Server.
 
@@ -295,7 +295,7 @@ Access the web application at
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](https://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](http://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 

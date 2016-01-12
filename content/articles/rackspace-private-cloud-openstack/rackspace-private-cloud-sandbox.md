@@ -5,8 +5,8 @@ permalink: article/rackspace-private-cloud-sandbox
 type: article
 created_date: '2013-12-09 22:41:07'
 created_by: Karin Levenstein
-last_modified_date: '2015-08-20 16:5341'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-07 14:4148'
+last_modified_by: rose.contreras
 products: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
@@ -267,9 +267,9 @@ If the VM fails on first boot:
 Using the private cloud {.title}
 -----------------------
 
-For general information about using the private cloud, refer to the
-Rackspace article "[Creating an Instance in the
-Cloud](http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-software-creating-an-instance-in-the-cloud)".
+For general information about using the private cloud, refer to
+the [Rackspace Private Cloud
+API](http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrade/content/rpc-common-front.html).
 
 ### Logging into the cloud {.title}
 

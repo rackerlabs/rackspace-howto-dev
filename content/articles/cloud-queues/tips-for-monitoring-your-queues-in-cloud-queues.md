@@ -5,13 +5,13 @@ permalink: article/tips-for-monitoring-your-queues-in-cloud-queues
 type: article
 created_date: '2013-08-21 04:02:32'
 created_by: megan.meza
-last_modified_date: '2015-01-14 21:3459'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-05 21:1509'
+last_modified_by: Mike Asthalter
 products: Cloud Queues
 body_format: markdown_w_tinymce
 ---
 
-**Note:** Be sure to set up your <a href="/knowledge_center/article/cloud-queues-curl-cookbook#getauthtoken">authentication token</a> before completing the terminal steps for creating your cloud queue.</p>
+**Note:** Be sure to set up your <a href="http://www.rackspace.com/knowledge_center/article/cloud-queues-curl-cookbook#getauthtoken">authentication token</a> before completing the terminal steps for creating your cloud queue.</p>
 
 The steps in this process will return queue statistics, including the number of messages that exist in the queue. These are broken out by status.
 

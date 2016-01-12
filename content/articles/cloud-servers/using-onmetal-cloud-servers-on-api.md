@@ -5,8 +5,8 @@ permalink: article/using-onmetal-cloud-servers-on-api
 type: article
 created_date: '2014-07-24 04:53:40'
 created_by: russell.haering
-last_modified_date: '2014-11-10 17:5559'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06 15:0938'
+last_modified_by: kyle.laffoon
 products: Cloud Servers
 body_format: full_html
 ---
@@ -23,7 +23,7 @@ OnMetal server through the API:
 
 **Note:** For the parallel steps in the Cloud Control Panel, see [Using
 OnMetal Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers).
+Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers).
 
 Set up the API client
 ---------------------
@@ -67,7 +67,7 @@ Thus, you should ignore the administrator password returned by a create
 server operation because it does not allow access to the OnMetal server.
 For information about generating SSH Keys, see [Manage SSH Key Pairs for
 Cloud Servers with
-python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient%20target=).
 
 Upload an SSH key pair
 ----------------------
@@ -235,5 +235,5 @@ Using OnMetal
 The flash cards included with the OnMetal I/O flavor are unformatted.
 You can format them however you like. For more information, see
 [Configure flash drives in High I/O instances as Data
-drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives).
+drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives%20target=).
 

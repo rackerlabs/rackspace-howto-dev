@@ -5,8 +5,8 @@ permalink: article/how-do-i-deny-certain-ip-addresses-from-accessing-my-site-on-
 type: article
 created_date: '2011-03-10 17:13:30'
 created_by: RackKCAdmin
-last_modified_date: '2014-07-25 18:3124'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-05 16:5645'
+last_modified_by: thomas.hester
 products: Cloud Sites
 body_format: tinymce
 ---

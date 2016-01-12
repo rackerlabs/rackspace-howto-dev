@@ -5,8 +5,8 @@ permalink: article/getting-started-with-role-based-access-control-rbac
 type: article
 created_date: '2013-04-14 21:20:30'
 created_by: renee.rendon
-last_modified_date: '2016-01-03 16:0733'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-07 16:3203'
+last_modified_by: constanze.kratel
 products: 'Cloud Hosting,Cloud Servers,Cloud Files,Cloud Load Balancers,Cloud Databases'
 body_format: tinymce
 ---
@@ -191,17 +191,17 @@ Adding users to the account activates RBAC. Account owners can add users
 through the Cloud Control Panel or through API.
 
 For more information about specific RBAC-related APIs, see the Rackspace
-API documentation
-at [http://docs.rackspace.com](http://docs.rackspace.com/).
+API documentation at
+[https://developer.rackspace.com/docs/](https://developer.rackspace.com/docs/).
 
  
 
 ### Which products are currently RBAC enabled? {#GettingStartedwithRBACRoughDraft-WhichservicesincludeRBACasofnow .field-items}
 
 -   [Next Generation
-    Servers](http://www.rackspace.com/knowledge_center/getting-started/cloud-servers)
--   [First Generation
     Servers](http://www.rackspace.com/knowledge_center/video/upgrade-to-next-gen-cloud-servers)
+-   [First Generation
+    Servers](http://www.rackspace.com/knowledge_center/getting-started/cloud-servers)
 -   [Cloud
     Files](http://www.rackspace.com/knowledge_center/getting-started/cloud-files-0)
 -   [Cloud
@@ -210,32 +210,34 @@ at [http://docs.rackspace.com](http://docs.rackspace.com/).
     Balancers](http://www.rackspace.com/knowledge_center/getting-started/cloud-load-balancers)
 -   [Cloud
     Queues](http://www.rackspace.com/knowledge_center/article/creating-cloud-queues)
--   [Cloud
+-   [Rackspace
     Monitoring](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-monitoring-0) 
+-   [Rackspace
+    Metrics](https://www.rackspace.com/knowledge_center/article/rackspace-metrics-overview)
 -   [Cloud
     Backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview)
 -   [Cloud
-    Networks](http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_overview.html)
+    Networks](https://developer.rackspace.com/docs/cloud-networks/getting-started/)
 -   [Cloud Block
     Storage](http://www.rackspace.com/knowledge_center/article/cloud-block-storage-overview)
 -   [Auto
     Scale](http://www.rackspace.com/knowledge_center/article/getting-started-with-auto-scale-introduction)
 -   [Cloud
-    Images](http://docs.rackspace.com/images/api/v2/ci-devguide/content/ch_image-service-dev-overview.html)
+    Images](https://developer.rackspace.com/docs/cloud-images/getting-started/)
 -   [Cloud Big Data
-    v1](/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data) 
+    v1](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data) 
 -   [Cloud Big Data
-    v2](/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data-v2) 
+    v2](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data-v2) 
 -   [Cloud
     Orchestration](http://www.rackspace.com/knowledge_center/product-faq/cloud-orchestration)
 -   [Cloud
-    DNS](http://docs.rackspace.com/cdns/api/v1.0/cdns-getting-started/content/DB_Overview.html) 
+    DNS](http://developer.rackspace.com/docs/cloud-dns/getting-started/) 
 -   [Cloud
-    Feeds](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-getting-started/content/Feeds_Overview.html)
+    Feeds](http://www.rackspace.com/knowledge_center/article/cloud-feeds-overview)
 -   [Rackspace
     CDN](http://www.rackspace.com/knowledge_center/getting-started/rackspace-cdn) 
 -   [Billing and Payment
-    Services](/knowledge_center/article/rackspace-cloud-billing-faq%20)
+    Services](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-billing-faq%20)
 
  
 
