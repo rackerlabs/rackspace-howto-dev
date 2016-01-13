@@ -1,7 +1,6 @@
 ---
 node_id: 738
 title: 'Getting Started With Cloud Sites: Uploading Your Content'
-permalink: article/cloud-sites-first-48-2-3-uploading-your-content
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

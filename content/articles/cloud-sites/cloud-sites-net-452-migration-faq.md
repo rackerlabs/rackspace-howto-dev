@@ -1,7 +1,6 @@
 ---
 node_id: 4529
 title: Cloud Sites migration to ASP.NET 3.5.1 SP1 and 4.5.2 FAQ
-permalink: article/cloud-sites-net-452-migration-faq
 type: article
 created_date: '2015-01-30 21:41:04'
 created_by: thomas.hester
@@ -11,14 +10,7 @@ products: Cloud Sites
 body_format: tinymce
 ---
 
-What is changing?
------------------
-
-Cloud Sites is upgrading ASP.NET 4.0 IIS clusters to ASP.NET 4.5.2 and
-ASP.NET 3.x clusters to 3.5.1 SP1. We are upgrading because some
-installed versions of ASP.NET are reaching their support end-of-life
-(EOL), and because the new versions provide new, beneficial features for
-web applications. Although we don&rsquo;t expect any downtime for your site,
+undefined&rsquo;t expect any downtime for your site,
 we will provide a test link in advance to help identify potential site
 break changes that might occur.
 

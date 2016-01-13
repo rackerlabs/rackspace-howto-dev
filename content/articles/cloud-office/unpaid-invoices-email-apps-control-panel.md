@@ -1,7 +1,6 @@
 ---
 node_id: 3988
 title: 'View and pay unpaid invoices: Cloud Office Control Panel'
-permalink: article/unpaid-invoices-email-apps-control-panel
 type: article
 created_date: '2014-03-31 17:01:07'
 created_by: mawutor.amesawu

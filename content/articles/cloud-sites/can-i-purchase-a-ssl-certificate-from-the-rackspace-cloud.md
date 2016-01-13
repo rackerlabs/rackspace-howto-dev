@@ -1,7 +1,6 @@
 ---
 node_id: 527
 title: Can I Purchase a SSL Certificate From The Rackspace Cloud?
-permalink: article/can-i-purchase-a-ssl-certificate-from-the-rackspace-cloud
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

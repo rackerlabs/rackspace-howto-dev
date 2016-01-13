@@ -1,7 +1,6 @@
 ---
 node_id: 532
 title: Creating a PHP Site for a Cloud Sites main account
-permalink: article/creating-a-php-site-for-a-cloud-sites-main-account
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

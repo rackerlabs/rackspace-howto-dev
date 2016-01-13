@@ -1,7 +1,6 @@
 ---
 node_id: 649
 title: Test CDOSYS SMTP functionality
-permalink: article/how-do-i-test-cdosys-smtp-functionality
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

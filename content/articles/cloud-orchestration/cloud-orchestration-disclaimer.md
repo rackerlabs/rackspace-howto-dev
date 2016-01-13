@@ -1,7 +1,6 @@
 ---
 node_id: 4293
 title: Cloud Orchestration disclaimer
-permalink: article/cloud-orchestration-disclaimer
 type: article
 created_date: '2014-10-03 06:54:16'
 created_by: Rackspace Support

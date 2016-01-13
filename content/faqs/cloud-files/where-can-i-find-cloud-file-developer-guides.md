@@ -1,7 +1,6 @@
 ---
 node_id: 2216
 title: Where can I find Cloud File Developer Guides?
-permalink: frequently-asked-question/where-can-i-find-cloud-file-developer-guides
 type: frequently_asked_question
 created_date: '2012-09-24 14:36:05'
 created_by: tom.hopkins

@@ -1,7 +1,6 @@
 ---
 node_id: 588
 title: Change your Cloud Sites FTP password
-permalink: article/how-do-i-change-my-ftp-password
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

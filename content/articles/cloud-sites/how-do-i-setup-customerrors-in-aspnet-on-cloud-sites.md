@@ -1,7 +1,6 @@
 ---
 node_id: 614
 title: Set up custom error messages in ASP.NET on Cloud Sites
-permalink: article/how-do-i-setup-customerrors-in-aspnet-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

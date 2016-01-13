@@ -1,7 +1,6 @@
 ---
 node_id: 4254
 title: Quick set up with Rackspace Cloud Orchestration
-permalink: article/quick-set-up-with-rackspace-deployments-0
 type: article
 created_date: '2014-09-23 18:16:35'
 created_by: nico4001

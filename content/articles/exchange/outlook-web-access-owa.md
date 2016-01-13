@@ -1,7 +1,6 @@
 ---
 node_id: 1409
 title: Outlook Web Access (OWA) for Exchange
-permalink: article/outlook-web-access-owa
 type: article
 created_date: '2012-05-25 04:31:49'
 created_by: RackKCAdmin

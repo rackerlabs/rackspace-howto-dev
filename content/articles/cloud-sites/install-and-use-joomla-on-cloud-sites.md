@@ -1,7 +1,6 @@
 ---
 node_id: 671
 title: Install and use Joomla on Cloud Sites
-permalink: article/install-and-use-joomla-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

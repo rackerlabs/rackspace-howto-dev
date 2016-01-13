@@ -1,7 +1,6 @@
 ---
 node_id: 4450
 title: Public folders availability for Hosted Exchange 2013
-permalink: article/public-folders-available-for-hosted-exchange-2013
 type: article
 created_date: '2014-12-03 16:05:57'
 created_by: kevin.richey

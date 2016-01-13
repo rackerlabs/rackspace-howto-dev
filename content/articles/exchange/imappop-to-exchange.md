@@ -1,7 +1,6 @@
 ---
 node_id: 1408
 title: IMAP/POP To Exchange
-permalink: article/imappop-to-exchange
 type: article
 created_date: '2012-05-24 23:33:03'
 created_by: RackKCAdmin

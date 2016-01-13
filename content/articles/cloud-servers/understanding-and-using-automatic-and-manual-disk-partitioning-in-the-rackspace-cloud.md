@@ -1,7 +1,6 @@
 ---
 node_id: 3610
 title: Using Automatic and Manual Disk Partitioning on Cloud Servers
-permalink: article/understanding-and-using-automatic-and-manual-disk-partitioning-in-the-rackspace-cloud
 type: article
 created_date: '2013-07-09 18:18:18'
 created_by: trey.hoehne

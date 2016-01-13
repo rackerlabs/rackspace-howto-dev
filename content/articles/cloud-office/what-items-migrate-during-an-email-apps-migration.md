@@ -1,7 +1,6 @@
 ---
 node_id: 3776
 title: Items migrated during an Cloud Office migration
-permalink: article/what-items-migrate-during-an-email-apps-migration
 type: article
 created_date: '2013-11-13 22:56:13'
 created_by: milton.prado

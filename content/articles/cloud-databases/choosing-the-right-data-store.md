@@ -1,7 +1,6 @@
 ---
 node_id: 4132
 title: Choosing the right database with Rackspace Cloud Databases
-permalink: article/choosing-the-right-data-store
 type: article
 created_date: '2014-07-16 17:32:05'
 created_by: ross.diaz

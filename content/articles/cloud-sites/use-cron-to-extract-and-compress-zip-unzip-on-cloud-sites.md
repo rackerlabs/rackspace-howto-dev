@@ -1,7 +1,6 @@
 ---
 node_id: 699
 title: 'Use cron to extract and compress (zip & unzip) on Cloud Sites'
-permalink: article/use-cron-to-extract-and-compress-zip-unzip-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

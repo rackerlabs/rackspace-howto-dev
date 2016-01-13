@@ -1,7 +1,6 @@
 ---
 node_id: 1913
 title: Why does the node IP address need to have Internet access?
-permalink: frequently-asked-question/why-does-the-node-ip-address-need-to-have-internet-access
 type: frequently_asked_question
 created_date: '2012-08-07 18:39:00'
 created_by: Karin Levenstein

@@ -1,7 +1,6 @@
 ---
 node_id: 1080
 title: Using CNAMEs with Cloud Files containers
-permalink: article/how-can-i-use-cnames-with-a-cloud-files-container
 type: article
 created_date: '2011-04-27 14:19:49'
 created_by: RackKCAdmin

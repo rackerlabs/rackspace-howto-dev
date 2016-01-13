@@ -1,7 +1,6 @@
 ---
 node_id: 4011
 title: 'Email domain tools: Cloud Office control panel'
-permalink: article/domain-tools-email-apps-control-panel
 type: article
 created_date: '2014-04-10 22:50:00'
 created_by: mawutor.amesawu

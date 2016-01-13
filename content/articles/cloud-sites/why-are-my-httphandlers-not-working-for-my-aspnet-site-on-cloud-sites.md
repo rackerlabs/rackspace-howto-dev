@@ -1,7 +1,6 @@
 ---
 node_id: 118
 title: HttpHandlers not working in integrated mode for ASP.NET sites on Cloud Sites
-permalink: article/why-are-my-httphandlers-not-working-for-my-aspnet-site-on-cloud-sites
 type: article
 created_date: '2011-03-10 17:26:54'
 created_by: RackKCAdmin

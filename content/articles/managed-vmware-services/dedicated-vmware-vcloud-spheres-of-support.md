@@ -1,7 +1,6 @@
 ---
 node_id: 4511
 title: Dedicated VMware vCloud support coverage
-permalink: article/dedicated-vmware-vcloud-spheres-of-support
 type: article
 created_date: '2015-01-29 15:51:27'
 created_by: Karin Levenstein

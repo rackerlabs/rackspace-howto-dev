@@ -1,7 +1,6 @@
 ---
 node_id: 1462
 title: Creating DNS Records with Cloud DNS
-permalink: article/cloud-essentials-creating-a-dns-records-for-cloud-servers
 type: article
 created_date: '2012-07-15 05:02:31'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 1446
 title: Nslookup - Checking DNS Records on Windows
-permalink: article/nslookup-checking-dns-records-on-windows
 type: article
 created_date: '2012-06-27 08:56:04'
 created_by: RackKCAdmin

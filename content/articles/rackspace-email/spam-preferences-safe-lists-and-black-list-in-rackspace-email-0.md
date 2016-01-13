@@ -1,7 +1,6 @@
 ---
 node_id: 1411
 title: 'Spam Preferences, Safe Lists, and Black List In Rackspace Email'
-permalink: article/spam-preferences-safe-lists-and-black-list-in-rackspace-email-0
 type: article
 created_date: '2012-05-25 05:36:44'
 created_by: RackKCAdmin
@@ -11,74 +10,7 @@ products: Rackspace Email
 body_format: tinymce
 ---
 
-Rackspace gives our users the flexibility to set their own Spam
-preferences to their liking. This includes editing and managing
-domain-wide spam settings, Safe list, Black List and the ability to
-override the spam filtering for the entire domain. Let's take a look at
-how to manage this: 
-
--   [Managing Domain Spam Settings](#DomainSpam)
--   [Managing Individual User Spam Settings](#IndividualSpam)
--   [Managing Spam Filter Settings](#FilterSettings)
--   [Rackspace Email Handling](#Handling)
--   [Managing Safe Lists](#Safelist)
--   [Managing Black Lists](#Blacklist)
-
-**Manage Domain Spam Settings**
--------------------------------
-
-To manage your domain level spam settings, go to **Domains** section and
-select **Filter Settings, Blacklists, or Safelists** (please reference
-the below steps for each specific option)
-
- ![](/knowledge_center/sites/default/files/field/image/DomainsSpam_1.JPG)
-
-*Note: If you have multiple domains, you may be prompted to select the
-domain you intend to make changes to first.*
-
- 
-
-**Managing Individual User Spam Settings**
-------------------------------------------
-
-To manage **indiviual**user's spam settings, go to **Rackspace Email**
-section and select **Filter Settings, Blacklists, or Safelists** (please
-reference the below steps for each specific option) 
-
-![](/knowledge_center/sites/default/files/field/image/RSSpam.JPG)
-
-Select the desired **User** to update Spam Settings
-
-![](/knowledge_center/sites/default/files/field/image/RSEUsers_0.JPG)
-
- 
-
-**Spam Filtering Setting Options\
-**
----------------------------------
-
-Select **Filter Settings**to edit the Spam Filter Settings.
-
-*Note: For Indivudal Mailboxes, select **Filter Settings** in the
-**Rackspace Email** section. For the domain, select **Filter Settings**
-in the **Domains** Section.*
-
-![](/knowledge_center/sites/default/files/field/image/DomainsSpam_0.JPG)
-
-In the Settings section select whether you'd like to turn the spam
-filtering on or off.\
-You may also select the **Exclusive** button to receive email **ONLY**
-from senders on your domain&rsquo;s safelist if you desire.\
-Next, select the preferred settings for your domain. Below is an
-overview of each of the options:
-
- ![](/knowledge_center/sites/default/files/field/image/Afterdomain1_1.JPG)
-
- 
-
-### **Rackspace Email Handling**
-
--   Deliver to Spam folder: Spam messages are sent to the user&rsquo;s Spam
+undefined&rsquo;s Spam
     folder. 
 
 -   If you would like to automatically delete messages from this folder,

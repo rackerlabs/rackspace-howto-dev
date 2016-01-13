@@ -1,7 +1,6 @@
 ---
 node_id: 360
 title: Installing an SSL certificate on Apache
-permalink: article/installing-an-ssl-certificate-on-apache
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

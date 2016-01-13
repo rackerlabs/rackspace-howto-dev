@@ -1,7 +1,6 @@
 ---
 node_id: 68
 title: Connecting to Linux from Windows by using PuTTY
-permalink: article/rackspace-cloud-essentials-3-going-from-windows-to-linux-using-putty
 type: article
 created_date: '2011-03-08 18:11:06'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 1313
 title: Add an Activesync or BES license
-permalink: article/adding-an-activesyncbes-license
 type: article
 created_date: '2012-03-11 23:41:14'
 created_by: Rae D. Cabello

@@ -1,7 +1,6 @@
 ---
 node_id: 639
 title: How do I rectify an invalid view state error with an ASP.NET application?
-permalink: article/how-do-i-rectify-an-invalid-view-state-error-with-an-aspnet-application
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

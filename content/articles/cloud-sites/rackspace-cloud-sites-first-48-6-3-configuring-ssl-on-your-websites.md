@@ -1,12 +1,11 @@
 ---
 node_id: 127
 title: 'Getting started with Cloud Sites: Configuring SSL on your websites'
-permalink: article/rackspace-cloud-sites-first-48-6-3-configuring-ssl-on-your-websites
 type: article
 created_date: '2011-03-14 20:26:42'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 16:5804'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-11 00:0206'
+last_modified_by: renee.rendon
 products: Cloud Sites
 body_format: tinymce
 ---
@@ -14,7 +13,7 @@ body_format: tinymce
 **Note**: This article is written for our [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com/). You can get to it from the
 Cloud Control Panel by clicking the Rackspace Cloud menu at the top of
-the screen adn selecting **Cloud Sites**.
+the screen and selecting **Cloud Sites**.
 
 ### Previous section
 
@@ -73,7 +72,7 @@ certificates.
 Complete the following steps to generate a certificate signing request
 (CSR), which you will need to have when you purchase an SSL certificate.
 
-1.  Log in to the [Cloud Site Control
+1.  Log in to the [Cloud Sites Control
     Panel](http://manage.rackspacecloud.com).
 2.  Click **Hosting \> Cloud Sites**.
 3.  Click the domain you want to add SSL to, and then click the

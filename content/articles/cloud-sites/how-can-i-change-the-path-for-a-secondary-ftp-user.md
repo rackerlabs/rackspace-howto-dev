@@ -1,7 +1,6 @@
 ---
 node_id: 555
 title: Change the path for a secondary FTP user on Cloud Sites
-permalink: article/how-can-i-change-the-path-for-a-secondary-ftp-user
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

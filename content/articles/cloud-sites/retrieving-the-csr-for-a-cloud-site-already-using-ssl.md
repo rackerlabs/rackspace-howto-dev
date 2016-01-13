@@ -1,7 +1,6 @@
 ---
 node_id: 4402
 title: Retrieve the CSR for a site already using SSL
-permalink: article/retrieving-the-csr-for-a-cloud-site-already-using-ssl
 type: article
 created_date: '2014-11-10 15:29:20'
 created_by: thomas.hester

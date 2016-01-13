@@ -1,7 +1,6 @@
 ---
 node_id: 533
 title: Creating a Simple ASP.NET site for the main Cloud Sites account
-permalink: article/creating-a-simple-aspnet-site-for-the-main-cloud-sites-account
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 405
 title: MySQL - Resetting a lost MySQL root password
-permalink: article/mysql-resetting-a-lost-mysql-root-password
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

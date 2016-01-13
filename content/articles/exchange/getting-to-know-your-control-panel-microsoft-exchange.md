@@ -1,7 +1,6 @@
 ---
 node_id: 1404
 title: 'Microsoft Exchange: Cloud Office Control Panel overview'
-permalink: article/getting-to-know-your-control-panel-microsoft-exchange
 type: article
 created_date: '2012-05-23 05:20:09'
 created_by: Rae D. Cabello

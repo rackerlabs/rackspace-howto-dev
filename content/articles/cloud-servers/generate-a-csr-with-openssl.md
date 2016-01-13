@@ -1,7 +1,6 @@
 ---
 node_id: 345
 title: Generate a CSR with OpenSSL
-permalink: article/generate-a-csr-with-openssl
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

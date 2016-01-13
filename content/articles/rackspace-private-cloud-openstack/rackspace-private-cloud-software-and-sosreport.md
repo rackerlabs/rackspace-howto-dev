@@ -1,7 +1,6 @@
 ---
 node_id: 3190
 title: Rackspace Private Cloud Software and sosreport
-permalink: article/rackspace-private-cloud-software-and-sosreport
 type: article
 created_date: '2012-11-09 19:36:09'
 created_by: Karin Levenstein

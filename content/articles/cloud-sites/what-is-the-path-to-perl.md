@@ -1,7 +1,6 @@
 ---
 node_id: 728
 title: What is the path to Perl?
-permalink: article/what-is-the-path-to-perl
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

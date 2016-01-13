@@ -1,7 +1,6 @@
 ---
 node_id: 675
 title: Is my domain name set to auto renew?
-permalink: article/is-my-domain-name-set-to-auto-renew
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

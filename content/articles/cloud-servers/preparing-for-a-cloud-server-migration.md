@@ -1,7 +1,6 @@
 ---
 node_id: 1325
 title: Prepare to migrate a Linux server
-permalink: article/preparing-for-a-cloud-server-migration
 type: article
 created_date: '2012-03-13 20:14:19'
 created_by: jered.heeschen

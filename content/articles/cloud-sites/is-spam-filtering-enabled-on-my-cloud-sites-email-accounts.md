@@ -1,7 +1,6 @@
 ---
 node_id: 677
 title: Manage spam filtering for your Cloud Sites email accounts
-permalink: article/is-spam-filtering-enabled-on-my-cloud-sites-email-accounts
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 267
 title: Checking Bandwidth Usage for Cloud Sites
-permalink: article/bandwidth-usage
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

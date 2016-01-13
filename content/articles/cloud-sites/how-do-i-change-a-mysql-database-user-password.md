@@ -1,7 +1,6 @@
 ---
 node_id: 70
 title: Change the password for a MySQL database user on Cloud Sites
-permalink: article/how-do-i-change-a-mysql-database-user-password
 type: article
 created_date: '2011-03-08 18:21:34'
 created_by: RackKCAdmin

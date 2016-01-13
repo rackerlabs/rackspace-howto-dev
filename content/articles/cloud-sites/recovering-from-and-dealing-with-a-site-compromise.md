@@ -1,7 +1,6 @@
 ---
 node_id: 691
 title: Recovering from and dealing with a site compromise
-permalink: article/recovering-from-and-dealing-with-a-site-compromise
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

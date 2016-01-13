@@ -1,7 +1,6 @@
 ---
 node_id: 658
 title: How often do Cloud Sites backup information?
-permalink: article/how-often-does-the-rackspace-cloud-backup-information
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

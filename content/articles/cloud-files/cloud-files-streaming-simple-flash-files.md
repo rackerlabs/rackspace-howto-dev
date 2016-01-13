@@ -1,7 +1,6 @@
 ---
 node_id: 77
 title: Cloud Files - Streaming Simple Flash Files
-permalink: article/cloud-files-streaming-simple-flash-files
 type: article
 created_date: '2011-03-08 19:30:04'
 created_by: RackKCAdmin

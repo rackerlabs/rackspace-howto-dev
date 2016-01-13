@@ -1,7 +1,6 @@
 ---
 node_id: 3516
 title: ObjectRocket Documentation
-permalink: article/objectrocket-documentation
 type: article
 created_date: '2013-06-06 23:24:19'
 created_by: jered.heeschen

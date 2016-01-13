@@ -1,7 +1,6 @@
 ---
 node_id: 207
 title: Cancel your Cloud Sites account
-permalink: article/how-can-i-cancel-my-rackspace-cloud-account
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 1430
 title: Cloud Sites Technology Option Changes
-permalink: article/cloud-sites-technology-option-changes
 type: article
 created_date: '2012-06-12 17:02:36'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 3991
 title: View administrator activity in the Cloud Office control panel
-permalink: article/administrator-activity-email-apps-control-panel
 type: article
 created_date: '2014-04-02 17:32:03'
 created_by: mawutor.amesawu

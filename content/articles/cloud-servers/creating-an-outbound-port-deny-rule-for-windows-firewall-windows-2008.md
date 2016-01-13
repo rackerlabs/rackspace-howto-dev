@@ -1,7 +1,6 @@
 ---
 node_id: 324
 title: Creating an Outbound Port Deny Rule for Windows Firewall (Windows 2008)
-permalink: article/creating-an-outbound-port-deny-rule-for-windows-firewall-windows-2008
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
@@ -11,10 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-Creating an Outbound Port Deny Rule
------------------------------------
-
-1. Launch Windows Firewall with Advanced Security by clicking on Start
+undefined1. Launch Windows Firewall with Advanced Security by clicking on Start
 \> Administrative Tools \> Windows Firewall with Advanced Security.
 
 ![firewalllaunch.png](http://c0625232.cdn.cloudfiles.rackspacecloud.com/firewalllaunch.png)

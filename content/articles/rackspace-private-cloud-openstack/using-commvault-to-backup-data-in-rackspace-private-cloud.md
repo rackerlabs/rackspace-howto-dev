@@ -1,7 +1,6 @@
 ---
 node_id: 3299
 title: Using CommVault to Backup Data in Rackspace Private Cloud
-permalink: article/using-commvault-to-backup-data-in-rackspace-private-cloud
 type: article
 created_date: '2013-02-19 17:46:28'
 created_by: alyssah
@@ -11,53 +10,7 @@ products: Rackspace Private Cloud - OpenStack
 body_format: full_html
 ---
 
-Overview
---------
-
-Rackspace Private Cloud powered by OpenStack lets you create virtual
-instances that you can use to run any kind of applications. However,
-these virtual machines do not come with a backup and recovery solution
-by default. CommVault Simpana&reg; software has been tested and validated to
-work with Rackspace Private Cloud to do file-level backup and recovery
-of data inside individual instances. This document gives a brief
-overview of architecture and the components involved and the process to
-configure your instances for backup.
-
- 
-=
-
-Prerequisites
-=============
-
-This document assumes the following:
-
--   A Rackspace Private Cloud Software cluster (at least one controller,
-    and one compute node, or an all-in-one and additional compute node)
-
--   CommVault Simpana&reg; Software version 9 or later
-
-** **
------
-
-**Backup Infrastructure**
--------------------------
-
-CommVault Simpana&reg; software is built from the ground up on a single
-platform for integrated data protection and management. IT organizations
-can reduce costs and simplify data management across its lifecycle with
-integrated modules for backup & recovery, archive, replication, search,
-and reporting.
-
-An introduction to CommVault terminology for backup and recovery:
-
-**CommCell&reg;:**Collectively all Simpana components deployed for data
-protection and recovery including the CommCell Console, CommServe, Media
-Agents, and iDataAgents.
-
-**CommCell Console:**The graphical user interface that allows you to
-control and manage all CommVault Simpana components.
-
-**CommServe&reg;:**The coordinator and administrator of the CommCell
+undefined&reg;:**The coordinator and administrator of the CommCell
 components. The CommServe server communicates with all agents in the
 CommCell to initiate data protection, management, and recovery
 operations.  The CommServe does some resource intensive processing and

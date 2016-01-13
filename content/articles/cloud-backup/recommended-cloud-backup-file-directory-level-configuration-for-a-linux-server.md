@@ -1,7 +1,6 @@
 ---
 node_id: 4169
 title: Recommended Cloud Backup file/directory level configuration for a Linux server
-permalink: article/recommended-cloud-backup-file-directory-level-configuration-for-a-linux-server
 type: article
 created_date: '2014-08-05 20:18:28'
 created_by: chris.goldsmith

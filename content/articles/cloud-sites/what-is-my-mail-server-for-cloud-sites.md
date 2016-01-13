@@ -1,7 +1,6 @@
 ---
 node_id: 724
 title: Mail servers for Cloud Sites
-permalink: article/what-is-my-mail-server-for-cloud-sites
 type: article
 created_date: '2011-03-23 21:56:41'
 created_by: RackKCAdmin

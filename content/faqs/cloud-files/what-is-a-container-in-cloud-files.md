@@ -1,7 +1,6 @@
 ---
 node_id: 1550
 title: What is a Container in Cloud Files?
-permalink: frequently-asked-question/what-is-a-container-in-cloud-files
 type: frequently_asked_question
 created_date: '2012-07-24 20:59:16'
 created_by: test_editor
@@ -11,12 +10,7 @@ products: Cloud Files
 body_format: tinymce
 ---
 
-A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way
-for you to organize that data. You can think of a Container as analogous
-to a folder in Windows&reg; or a directory in UNIX&reg;. The primary difference
-between a Container and these other &ldquo;file system&rdquo; constructs is that
-Containers cannot be nested. You can have up to 500,000 Containers in
-your account, but they only exist at the &ldquo;top level&rdquo; of your account and
+undefined&rdquo; of your account and
 Containers cannot reside within other Containers.
 
 ![](http://c15156697.r97.cf2.rackcdn.com/1.png)

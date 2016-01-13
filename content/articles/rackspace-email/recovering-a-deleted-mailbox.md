@@ -1,7 +1,6 @@
 ---
 node_id: 4488
 title: Recover a deleted Rackspace Email mailbox
-permalink: article/recovering-a-deleted-mailbox
 type: article
 created_date: '2015-01-21 20:52:55'
 created_by: ian.avery

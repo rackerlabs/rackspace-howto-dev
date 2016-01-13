@@ -1,7 +1,6 @@
 ---
 node_id: 1048
 title: 'Private Cloud is RAD: How to Leverage Private Cloud for Rapid Application Development'
-permalink: article/private-cloud-is-rad-how-to-leverage-private-cloud-for-rapid-application-development
 type: article
 created_date: '2011-03-27 21:35:33'
 created_by: RackKCAdmin

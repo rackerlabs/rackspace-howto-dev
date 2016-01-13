@@ -1,7 +1,6 @@
 ---
 node_id: 1393
 title: Migrating MySQL 5.0 to 5.1
-permalink: article/migrating-mysql-50-to-51
 type: article
 created_date: '2012-05-15 16:51:38'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 3697
 title: Manually configure Android devices for email hosted on Exchange 2010
-permalink: article/configure-android-with-microsoft-exchange-2010
 type: article
 created_date: '2013-09-20 20:17:58'
 created_by: Marco Salazar

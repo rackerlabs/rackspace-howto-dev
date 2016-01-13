@@ -1,7 +1,6 @@
 ---
 node_id: 3752
 title: Configuring a Software RAID on a Linux General Purpose Cloud Server
-permalink: article/performance-servers-and-raid-0-with-multiple-data-disks-on-linux
 type: article
 created_date: '2013-11-03 23:27:50'
 created_by: tim.pownall

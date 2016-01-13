@@ -1,7 +1,6 @@
 ---
 node_id: 716
 title: Rackspace Cloud Sites IPS Tag for .uk Domain Transfers
-permalink: article/what-is-the-rackspace-clouds-ips-tag-for-uk-domain-names
 type: article
 created_date: '2011-03-23 20:18:10'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 811
 title: Add entries to your webmail blacklist
-permalink: article/add-to-blacklist
 type: article
 created_date: '2011-03-18 01:09:51'
 created_by: RackKCAdmin

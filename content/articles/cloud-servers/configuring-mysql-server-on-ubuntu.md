@@ -1,22 +1,14 @@
 ---
 node_id: 1169
 title: Configuring MySQL server on Ubuntu
-permalink: article/configuring-mysql-server-on-ubuntu
 type: article
 created_date: '2011-07-29 15:07:37'
 created_by: jered.heeschen
-last_modified_date: '2015-12-31 14:5353'
+last_modified_date: '2016-01-11 16:0205'
 last_modified_by: stephanie.fillmon
 products: Cloud Servers
 body_format: tinymce
 ---
-
-### Overview
-
-[Installing MySQL Server on
-Linux](https://www.rackspace.com/knowledge_center/article/installing-mysql-server-on-linux)
-
-### Beyond the defaults
 
 In the [previous
 article](http://www.rackspace.com/knowledge_center/article/installing-mysql-server-on-ubuntu)
@@ -333,18 +325,4 @@ experiment with incremental changes over time.
 
 Now you should have MySQL configured for your environment, and might
 even have accounted for the database engine being used by your tables.
-
-In the [next
-article](/knowledge_center/installing_mysql_server_on_linux/basic_mysql_tasks)
-we'll look at some basic tasks you can run in the mysql shell to
-manipulate and observe your database at a high level.
-
- 
-
-### Next steps
-
-[Basic MySQL server
-tasks](https://admin.rackspace.com/knowledge_center/article/basic-mysql-server-tasks)
-
- 
 

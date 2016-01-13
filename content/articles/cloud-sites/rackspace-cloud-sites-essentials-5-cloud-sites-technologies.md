@@ -1,7 +1,6 @@
 ---
 node_id: 1251
 title: 'Rackspace Cloud Sites Essentials: Cloud Sites Technologies'
-permalink: article/rackspace-cloud-sites-essentials-5-cloud-sites-technologies
 type: article
 created_date: '2011-11-11 16:15:08'
 created_by: RackKCAdmin

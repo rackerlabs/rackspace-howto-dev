@@ -1,7 +1,6 @@
 ---
 node_id: 125
 title: Installing CakePHP on Cloud Sites
-permalink: article/installing-cakephp-on-cloud-sites
 type: article
 created_date: '2011-03-14 20:17:11'
 created_by: RackKCAdmin

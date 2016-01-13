@@ -1,7 +1,6 @@
 ---
 node_id: 3626
 title: Install MySQL on Windows Server 2008 R2 and 2012
-permalink: article/installing-mysql-on-windows-server-2012
 type: article
 created_date: '2013-07-22 19:21:00'
 created_by: Rackspace Support

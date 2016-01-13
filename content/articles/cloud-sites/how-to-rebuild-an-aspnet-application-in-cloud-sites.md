@@ -1,7 +1,6 @@
 ---
 node_id: 659
 title: Rebuild an ASP.NET application in Cloud Sites
-permalink: article/how-to-rebuild-an-aspnet-application-in-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

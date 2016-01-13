@@ -1,7 +1,6 @@
 ---
 node_id: 4212
 title: Boot a server from a Cloud Block Storage volume
-permalink: article/how-to-boot-a-server-from-a-cloud-block-storage-volume
 type: article
 created_date: '2014-08-26 16:27:25'
 created_by: trey.hoehne

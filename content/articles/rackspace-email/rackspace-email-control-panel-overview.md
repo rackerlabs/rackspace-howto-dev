@@ -1,7 +1,6 @@
 ---
 node_id: 1403
 title: Rackspace Email control panel overview
-permalink: article/rackspace-email-control-panel-overview
 type: article
 created_date: '2012-05-23 05:18:04'
 created_by: Nicholas Fleisig

@@ -1,7 +1,6 @@
 ---
 node_id: 1395
 title: Common Administrative Tasks in MSSQL Server
-permalink: article/common-administrative-tasks-in-mssql-server
 type: article
 created_date: '2012-05-16 22:33:57'
 created_by: RackKCAdmin

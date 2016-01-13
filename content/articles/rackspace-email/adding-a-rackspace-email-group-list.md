@@ -1,7 +1,6 @@
 ---
 node_id: 1402
 title: Adding A Rackspace Email Group List
-permalink: article/adding-a-rackspace-email-group-list
 type: article
 created_date: '2012-05-23 05:00:04'
 created_by: RackKCAdmin

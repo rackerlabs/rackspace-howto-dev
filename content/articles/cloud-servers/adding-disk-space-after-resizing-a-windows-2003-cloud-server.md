@@ -1,7 +1,6 @@
 ---
 node_id: 1296
 title: Adding Disk Space After Resizing a Windows 2003 Cloud Server
-permalink: article/adding-disk-space-after-resizing-a-windows-2003-cloud-server
 type: article
 created_date: '2012-03-01 20:06:59'
 created_by: RackKCAdmin

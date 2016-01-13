@@ -1,7 +1,6 @@
 ---
 node_id: 541
 title: Does The Rackspace Cloud support secure email?
-permalink: article/does-the-rackspace-cloud-support-secure-email
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

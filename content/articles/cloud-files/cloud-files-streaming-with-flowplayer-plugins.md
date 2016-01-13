@@ -1,7 +1,6 @@
 ---
 node_id: 1207
 title: Cloud Files Streaming with FlowPlayer Plugins
-permalink: article/cloud-files-streaming-with-flowplayer-plugins
 type: article
 created_date: '2011-09-13 01:01:01'
 created_by: RackKCAdmin

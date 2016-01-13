@@ -1,7 +1,6 @@
 ---
 node_id: 3883
 title: Manually configure Android devices for email hosted on Exchange 2013
-permalink: article/configure-android-with-microsoft-exchange-2013
 type: article
 created_date: '2014-01-31 16:58:52'
 created_by: mawutor.amesawu

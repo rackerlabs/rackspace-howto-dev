@@ -1,7 +1,6 @@
 ---
 node_id: 4650
 title: Rackspace CDN overview
-permalink: article/rackspace-cdn-overview
 type: article
 created_date: '2015-05-08 17:33:46'
 created_by: catherine.richardson
@@ -11,12 +10,7 @@ products: Rackspace CDN
 body_format: tinymce
 ---
 
-Rackspace CDN [[product
-page](http://www.rackspace.com/cloud/cdn-content-delivery-network)] is a
-content delivery network (CDN) service that you can use to CDN-enable
-your website. It offers features such as pulling content from your
-website&rsquo;s origin servers, rules for caching, access restrictions, and
-purging content from the CDN&rsquo;s edge nodes.
+undefined&rsquo;s edge nodes.
 
 Rackspace CDN is designed to improve the performance of publicly
 distributed assets. Assets can be anything from website content, to web

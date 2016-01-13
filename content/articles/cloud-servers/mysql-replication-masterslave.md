@@ -1,7 +1,6 @@
 ---
 node_id: 406
 title: 'MySQL replication: Master/Slave'
-permalink: article/mysql-replication-masterslave
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: Rackspace Support

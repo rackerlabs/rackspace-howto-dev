@@ -1,7 +1,6 @@
 ---
 node_id: 3728
 title: Cloud Queues Overview
-permalink: article/cloud-queues-overview
 type: article
 created_date: '2013-10-16 19:57:39'
 created_by: megan.meza

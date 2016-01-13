@@ -1,7 +1,6 @@
 ---
 node_id: 4120
 title: Managed Cloud Service Level Pricing
-permalink: article/how-you-could-save-money-by-upgrading-your-service-level
 type: article
 created_date: '2014-07-01 19:23:09'
 created_by: nico4001

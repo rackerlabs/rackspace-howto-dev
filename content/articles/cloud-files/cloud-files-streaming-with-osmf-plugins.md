@@ -1,7 +1,6 @@
 ---
 node_id: 1209
 title: Cloud Files Streaming with OSMF Plugins
-permalink: article/cloud-files-streaming-with-osmf-plugins
 type: article
 created_date: '2011-09-12 05:00:00'
 created_by: RackKCAdmin

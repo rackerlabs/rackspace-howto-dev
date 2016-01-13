@@ -1,7 +1,6 @@
 ---
 node_id: 479
 title: Ubuntu - Mongrel and mongrel cluster installation
-permalink: article/ubuntu-hardy-mongrel-and-mongrel-cluster-installation
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

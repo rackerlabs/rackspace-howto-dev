@@ -1,7 +1,6 @@
 ---
 node_id: 1236
 title: 'Rackspace Cloud DNS:'
-permalink: article/rackspace-cloud-dns
 type: article
 created_date: '2011-10-19 21:24:07'
 created_by: RackKCAdmin

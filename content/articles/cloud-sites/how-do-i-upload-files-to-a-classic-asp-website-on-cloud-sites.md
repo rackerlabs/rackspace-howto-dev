@@ -1,7 +1,6 @@
 ---
 node_id: 654
 title: Upload files to a classic ASP website on Cloud Sites
-permalink: article/how-do-i-upload-files-to-a-classic-asp-website-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

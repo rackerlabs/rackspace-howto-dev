@@ -1,7 +1,6 @@
 ---
 node_id: 433
 title: Connecting to a server using SSH on Linux or Mac OS
-permalink: article/secure-shell-ssh
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

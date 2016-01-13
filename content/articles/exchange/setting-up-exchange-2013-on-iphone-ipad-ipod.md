@@ -1,7 +1,6 @@
 ---
 node_id: 3856
 title: Manually configure iOS devices for email hosted on Exchange 2013
-permalink: article/setting-up-exchange-2013-on-iphone-ipad-ipod
 type: article
 created_date: '2014-01-16 15:09:13'
 created_by: mawutor.amesawu

@@ -1,7 +1,6 @@
 ---
 node_id: 1232
 title: Rackspace Cloud DNS - Available Features
-permalink: article/rackspace-cloud-dns-available-features
 type: article
 created_date: '2011-10-19 21:06:09'
 created_by: RackKCAdmin

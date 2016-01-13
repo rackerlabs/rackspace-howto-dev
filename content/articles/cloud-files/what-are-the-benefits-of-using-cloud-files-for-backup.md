@@ -1,7 +1,6 @@
 ---
 node_id: 254
 title: Benefits of using Cloud Files for backups
-permalink: article/what-are-the-benefits-of-using-cloud-files-for-backup
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

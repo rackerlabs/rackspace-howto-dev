@@ -1,7 +1,6 @@
 ---
 node_id: 621
 title: Force SSL on your ASP or ASP.NET site on Cloud Sites
-permalink: article/how-do-i-force-ssl-on-my-aspnet-site-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

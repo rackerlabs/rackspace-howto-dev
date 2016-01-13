@@ -1,7 +1,6 @@
 ---
 node_id: 1328
 title: Checking Cloud Status
-permalink: article/getting-fanatical-support-3-cloud-status
 type: article
 created_date: '2012-03-20 18:20:07'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 3837
 title: Displaying SVG Images In Cloud Sites PHP Deployments
-permalink: article/displaying-svg-images-in-cloud-sites-php-deployments
 type: article
 created_date: '2013-12-18 19:09:32'
 created_by: bryon.farris

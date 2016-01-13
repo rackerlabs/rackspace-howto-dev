@@ -1,7 +1,6 @@
 ---
 node_id: 589
 title: "Change your site's default technology"
-permalink: article/how-do-i-change-my-sites-default-technology
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

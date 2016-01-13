@@ -1,7 +1,6 @@
 ---
 node_id: 4208
 title: Rackspace Email Mailbox Features
-permalink: article/rackspace-email-mailbox-features
 type: article
 created_date: '2014-08-25 19:43:30'
 created_by: Marco Salazar

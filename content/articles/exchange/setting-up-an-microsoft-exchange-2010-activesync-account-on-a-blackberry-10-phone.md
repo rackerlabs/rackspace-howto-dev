@@ -1,7 +1,6 @@
 ---
 node_id: 3360
 title: Manually configure Blackberry 10 devices for email hosted on Exchange 2010
-permalink: article/setting-up-an-microsoft-exchange-2010-activesync-account-on-a-blackberry-10-phone
 type: article
 created_date: '2013-03-22 15:46:22'
 created_by: mawutor.amesawu
@@ -11,26 +10,7 @@ products: Exchange
 body_format: tinymce
 ---
 
-The following steps are required to configure Microsoft Exchange 2010
-ActiveSync on a Blackberry 10 Phone:\
- \
- 1.  After your administrator has purchased an Activesync License and
-assigned it to your email address, locate the **Settings** options from
-within your home menu.\
- \
- ![](/knowledge_center/sites/default/files/field/image/1_25.png)\
- \
- 2. Select **Accounts**.\
- \
- ![](/knowledge_center/sites/default/files/field/image/2_22.png)\
- \
- 3. Select **Advanced** from the bottom of the screen, or you may need
-to select the **Add Account** first if you already have an account
-setup.\
- \
- ![](/knowledge_center/sites/default/files/field/image/3_20.png)\
- \
- 4. Select **Microsoft&reg; Exchange ActiveSync**.\
+undefined&reg; Exchange ActiveSync**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/4_13.png)\
  \

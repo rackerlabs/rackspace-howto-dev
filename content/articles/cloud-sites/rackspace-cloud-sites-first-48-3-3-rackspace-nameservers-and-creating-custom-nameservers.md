@@ -1,7 +1,6 @@
 ---
 node_id: 100
 title: Getting Started With Cloud Sites - Rackspace Nameservers and Creating Custom Nameservers
-permalink: article/rackspace-cloud-sites-first-48-3-3-rackspace-nameservers-and-creating-custom-nameservers
 type: article
 created_date: '2011-03-09 18:53:26'
 created_by: RackKCAdmin

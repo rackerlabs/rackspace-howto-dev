@@ -1,11 +1,10 @@
 ---
 node_id: 667
-title: How to use Cron to Backup CloudSites to CloudFiles
-permalink: article/how-to-use-cron-to-backup-cloudsites-to-cloudfiles
+title: Use cron jobs to backup Cloud Sites to Cloud Files
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 16:3842'
+last_modified_date: '2016-01-12 20:2338'
 last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce

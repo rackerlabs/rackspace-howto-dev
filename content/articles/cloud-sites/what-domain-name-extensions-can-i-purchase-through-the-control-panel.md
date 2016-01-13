@@ -1,7 +1,6 @@
 ---
 node_id: 708
 title: What top level domain extensions (TLDs) can I purchase through the control panel?
-permalink: article/what-domain-name-extensions-can-i-purchase-through-the-control-panel
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

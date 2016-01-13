@@ -1,7 +1,6 @@
 ---
 node_id: 580
 title: 'Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients'
-permalink: article/rackspace-cloud-sites-first-48-6-4-ftpsshfsftp-clients
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 3838
 title: Sending HTML Mail via PHP in Cloud Sites
-permalink: article/sending-html-mail-via-php-in-cloud-sites
 type: article
 created_date: '2013-12-18 19:41:02'
 created_by: bryon.farris

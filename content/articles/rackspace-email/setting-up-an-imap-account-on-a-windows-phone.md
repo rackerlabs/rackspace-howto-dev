@@ -1,7 +1,6 @@
 ---
 node_id: 3353
 title: Setting up an IMAP account on a Windows Phone
-permalink: article/setting-up-an-imap-account-on-a-windows-phone
 type: article
 created_date: '2013-03-18 16:58:59'
 created_by: mawutor.amesawu
@@ -11,10 +10,7 @@ products: Rackspace Email
 body_format: tinymce
 ---
 
-The following steps are required to setup an IMAP account on a Windows
-Mobile phone.
-
-1. Locate the **Settings** options from within your application menu\
+undefined1. Locate the **Settings** options from within your application menu\
 \
 ![](/knowledge_center/sites/default/files/field/image/1.jpg)\
 \

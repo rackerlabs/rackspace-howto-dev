@@ -1,7 +1,6 @@
 ---
 node_id: 4062
 title: Use a later version of MySQL with .NET applications on Cloud Sites
-permalink: article/bin-load-different-mysql-version
 type: article
 created_date: '2014-05-07 02:57:15'
 created_by: matt.costello

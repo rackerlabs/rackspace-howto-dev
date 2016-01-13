@@ -1,7 +1,6 @@
 ---
 node_id: 3754
 title: Before you move to General Purpose or I/O Cloud Server (checklist)
-permalink: article/before-you-move-to-performance-cloud-servers-checklist
 type: article
 created_date: '2013-11-04 21:30:30'
 created_by: David Hendler

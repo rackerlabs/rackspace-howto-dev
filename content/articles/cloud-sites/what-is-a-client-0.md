@@ -1,7 +1,6 @@
 ---
 node_id: 1129
 title: Cloud Sites subaccounts
-permalink: article/what-is-a-client-0
 type: article
 created_date: '2011-06-15 14:47:22'
 created_by: RackKCAdmin

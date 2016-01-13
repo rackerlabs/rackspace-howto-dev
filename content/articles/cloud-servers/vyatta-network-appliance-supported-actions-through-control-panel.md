@@ -1,7 +1,6 @@
 ---
 node_id: 3480
 title: 'Brocade Vyatta vRouter: Supported actions through the Cloud Control Panel'
-permalink: article/vyatta-network-appliance-supported-actions-through-control-panel
 type: article
 created_date: '2013-05-24 20:57:16'
 created_by: sameer.satyam

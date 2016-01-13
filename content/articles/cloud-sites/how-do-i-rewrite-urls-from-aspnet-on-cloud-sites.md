@@ -1,7 +1,6 @@
 ---
 node_id: 642
 title: Rewrite URLs from ASP.NET on Cloud Sites
-permalink: article/how-do-i-rewrite-urls-from-aspnet-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

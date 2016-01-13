@@ -1,7 +1,6 @@
 ---
 node_id: 1247
 title: Getting Started With Cloud Sites - Managing DNS Records
-permalink: article/rackspace-cloud-first-48-3-2-managing-dns-records
 type: article
 created_date: '2011-11-09 19:55:05'
 created_by: RackKCAdmin

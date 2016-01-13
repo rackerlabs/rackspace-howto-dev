@@ -1,7 +1,6 @@
 ---
 node_id: 722
 title: What Is An ASP.NET Application Pool?
-permalink: article/what-is-an-aspnet-application-pool
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

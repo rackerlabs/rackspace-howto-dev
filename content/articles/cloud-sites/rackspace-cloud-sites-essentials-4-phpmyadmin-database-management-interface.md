@@ -1,7 +1,6 @@
 ---
 node_id: 134
 title: Rackspace Cloud Sites Essentials - PHPmyAdmin Database Management Interface
-permalink: article/rackspace-cloud-sites-essentials-4-phpmyadmin-database-management-interface
 type: article
 created_date: '2011-03-15 16:20:39'
 created_by: RackKCAdmin

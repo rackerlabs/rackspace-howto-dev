@@ -1,7 +1,6 @@
 ---
 node_id: 638
 title: Getting Started With Cloud Sites - Registering and/or Transferring Domain Names
-permalink: article/rackspace-cloud-sites-first-48-3-1-registering-andor-transferring-domain-names
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

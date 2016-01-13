@@ -1,7 +1,6 @@
 ---
 node_id: 4574
 title: Architecture requirements for Rackspace Private Cloud powered by Microsoft
-permalink: article/cloud-platform-powered-by-rackspace-product-line-architecture-requirements
 type: article
 created_date: '2015-03-02 14:51:37'
 created_by: gerry.lecanu
@@ -11,34 +10,7 @@ products: Rackspace Private Cloud - Microsoft Cloud Platform
 body_format: tinymce
 ---
 
-To compete in the global economy and keep up with the pace of
-innovation, organizations must improve their ability to quickly and
-flexibly respond to changing business needs, improve efficiency, and
-better manage costs.  Some ways to accomplish this include automation of
-repeatable tasks, cross-platform interoperability, and the creation and
-deployment of modern, self-service, and highly available applications
-that can span data centers. The Microsoft Cloud Platform powered by
-Rackspace helps you realize your data center transformation goals by
-delivering enterprise-class capabilities including best-in-class
-management of your Windows Server infrastructure and first-party
-Microsoft workloads.
-
-Rackspace has worked directly with Microsoft to design a product line
-architecture (PLA) compliant cloud to help our customers develop and
-implement private cloud infrastructures quickly while reducing
-complexity and risk. The Microsoft Cloud Platform powered by Rackspace
-provides a solution that combines Microsoft software, consolidated
-guidance, and best-practice architecture with Rackspace&rsquo;s vast
-experience providing Fanatical Support^&reg;^ hosting and supporting
-solutions for compute, network, and storage architectures.
-
-The Microsoft Private Cloud PLA uses the core capabilities of the
-Microsoft Windows Server operating system, Hyper-V, and System Center to
-deliver a private cloud infrastructure as a service offering. Following
-are the key software features and components used for every
-implementation hosted at Rackspace.
-
-Cloud Platform Base Cloud {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-CloudPlatform&ldquo;BaseCloud&rdquo;}
+undefined&rdquo;}
 -------------------------
 
 Base Cloud is a basic System Center 2012 R2 plus Windows Azure Pack that

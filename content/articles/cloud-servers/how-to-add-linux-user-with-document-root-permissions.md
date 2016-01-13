@@ -1,7 +1,6 @@
 ---
 node_id: 1259
 title: How to Add Linux User With Document Root Permissions
-permalink: article/how-to-add-linux-user-with-document-root-permissions
 type: article
 created_date: '2011-11-23 19:13:47'
 created_by: RackKCAdmin

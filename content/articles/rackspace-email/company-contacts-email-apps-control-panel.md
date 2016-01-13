@@ -1,7 +1,6 @@
 ---
 node_id: 3986
 title: Manage company contacts in the Cloud Office control panel
-permalink: article/company-contacts-email-apps-control-panel
 type: article
 created_date: '2014-03-31 16:54:17'
 created_by: mawutor.amesawu
@@ -11,41 +10,7 @@ products: Rackspace Email
 body_format: tinymce
 ---
 
-A company contact is different from an account administrator. A company
-contact might or might not have administrative access to the control
-panel. Unlike an account administrator, a secondary contact might
-receive billing and renewal notices yet not be able to make changes to
-the account. Use the following steps to add, edit, or delete a company
-contact from your account.
-
-[Add a company contact](#add)\
- [Edit a company contact](#edit)\
- [Delete a company contact](delete)
-
-**Add a company contact**
--------------------------
-
-1.  Log in to the [Cloud Office control
-    panel](http://apps.rackspace.com/?cp).
-2.  At the top of the page, click **My Account**.
-3.  In the **Company Information** section, click **Contacts**.
-4.  Click **Add Company Contact**.
-5.  Enter the required information:
-    -   **Contact Type** &ndash; Select **Primary**or **Secondary**. Only a
-        primary contact on an account can request administrative
-        changes.
-
-    -   **Name** &ndash; Enter the name of the contact.
-
-    -   **Phone Number** &ndash; Enter a phone number for the contact.
-
-    -   **Email Address** &ndash; Support tickets and invoices will be sent to
-        this address.
-
-    -   **Security Question** &ndash; The security question and answer should
-        be unique and known only to the administrator and the contact.
-
-    -   **Security Answer** &ndash; Enter an answer for the security question.
+undefined&ndash; Enter an answer for the security question.
 
 6.  In the **Notifications**section, select the check boxes for
     notifications that should be sent to this contact.\

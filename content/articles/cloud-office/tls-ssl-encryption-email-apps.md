@@ -1,7 +1,6 @@
 ---
 node_id: 3694
 title: TLS / SSL Encryption (Cloud Office)
-permalink: article/tls-ssl-encryption-email-apps
 type: article
 created_date: '2013-09-19 21:22:00'
 created_by: mawutor.amesawu

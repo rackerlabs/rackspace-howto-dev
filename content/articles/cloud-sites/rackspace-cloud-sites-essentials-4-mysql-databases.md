@@ -1,7 +1,6 @@
 ---
 node_id: 58
 title: Rackspace Cloud Sites Essentials - MySQL Databases
-permalink: article/rackspace-cloud-sites-essentials-4-mysql-databases
 type: article
 created_date: '2011-02-28 19:35:58'
 created_by: RackKCAdmin

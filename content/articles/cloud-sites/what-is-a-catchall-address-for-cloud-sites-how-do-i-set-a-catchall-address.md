@@ -1,58 +1,49 @@
 ---
 node_id: 717
-title: What is a catchall address for Cloud Sites? How do I set a catchall address?
-permalink: article/what-is-a-catchall-address-for-cloud-sites-how-do-i-set-a-catchall-address
+title: Set a catchall email address for Cloud Sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-06-30 16:4750'
-last_modified_by: kelly.holcomb
+last_modified_date: '2016-01-13 15:2155'
+last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce
 ---
 
-##### NOTE: *This documentation refers to a feature that is no longer available for Cloud Sites.  This article is here for the purpose of legacy support only.* {.p1}
+**Notes:** This article refers to a feature that is no longer available
+for Cloud Sites. It is provided for legacy support only.
 
- 
-
-A catchall address is a designated mailbox where any email sent to a
-non-existent email address will be delivered. To better help explain
-catchalls, review the example below:
-
-You have the following mailboxes setup on your account:
+A catchall address is a designated mailbox to which email sent to a
+non-existent email address on your domain is delivered. For example,
+assume that you have the following mailboxes set up on your account:
 
 -   john@yourdomain.com
 -   bill@yourdomain.com
--   catchall@yourdomain.com (**Which is set as the catch-all**)
+-   catchall@yourdomain.com (the catchall address)
 
-Now in this example, any email sent to john@yourdomain.com would be
-delivered to that corresponding mailbox.
+Any email sent to john@yourdomain.com is delivered to that corresponding
+mailbox. The same is true for email sent to bill@yourdomain.com.
+However, what happens to email sent to frank@yourdomain.com, which does
+not have a corresponding mailbox set up in the system?
 
-The same would hold true for any email sent to bill@yourdomain.com.
-However, what would happen if an email was sent to
-"frank@yourdomain.com"?
+Normally the email would be rejected with a `user unknown` message and
+returned to the sender. However, if you have a catchall address set up,
+like catchall@yourdomain.com, the email is delivered to the catchall
+mailbox. This is true for email sent to any other addresses that have
+not been set up as mailboxes on the system.
 
-Because the mailbox frank@yourdomain.com has not been setup in the
-system, normally the email would be rejected with a "user unknown"
-message and would be returned to the sender. However, if you have a
-catchall setup, like in the example above, the email would be delivered
-to the catch-all mailbox. This would hold true for email sent to any
-other addresses which have not been setup as mailboxes on the system.
+To set up a catchall email account for a particular domain
+----------------------------------------------------------
 
-To set up a catchall email account for a particular domain:
-
-1.  Log in to your [control
-    panel.](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com")
-2.  Select the "**Hosting**" link in the left navigation bar. Then
-    select "**Cloud Sites**"
-3.  Select the domain for which you wish to add a catch-all account from
-    the "Websites" list.
-4.  Click the "**Email Accounts**" tab in the bar at the top of the
-    page.
-5.  Add the email account that you want to use for the catch-all (i.e.
-    catchall@yourdomain.com).
-6.  Under "**Mail Preferences**" at the bottom of the page, select "Send
-    them to this account (catchall)" and select the account you want to
-    use from the pull-down menu.
+1.  Log in to the [Cloud Sites Control
+    Panel.](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com")
+2.  In the left navigation pane, select **Hosting \> Cloud Sites**.
+3.  Select the domain for which you want to add a catchall account.
+4.  Click the **Email Accounts** tab.
+5.  Add the email account that you want to use for the catchall address
+    (for example, catchall@yourdomain.com).
+6.  Under **Mail Preferences** at the bottom of the page, select **Send
+    them to this account (catchall)** and select the account that you
+    want to use from the menu.
 
 

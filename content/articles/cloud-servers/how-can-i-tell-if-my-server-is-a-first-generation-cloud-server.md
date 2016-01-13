@@ -1,7 +1,6 @@
 ---
 node_id: 4571
 title: Determine if your server is a First Generation cloud server
-permalink: article/how-can-i-tell-if-my-server-is-a-first-generation-cloud-server
 type: article
 created_date: '2015-02-27 22:19:26'
 created_by: kyle.laffoon

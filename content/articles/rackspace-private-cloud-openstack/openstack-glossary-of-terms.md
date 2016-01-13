@@ -1,7 +1,6 @@
 ---
 node_id: 1943
 title: OpenStack Glossary of Terms
-permalink: article/openstack-glossary-of-terms
 type: article
 created_date: '2012-08-09 19:34:51'
 created_by: Karin Levenstein

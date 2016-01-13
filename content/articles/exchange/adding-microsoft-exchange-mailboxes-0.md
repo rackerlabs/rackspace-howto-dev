@@ -1,7 +1,6 @@
 ---
 node_id: 1401
 title: Adding Microsoft Exchange Mailboxes
-permalink: article/adding-microsoft-exchange-mailboxes-0
 type: article
 created_date: '2012-05-23 03:52:21'
 created_by: Rae D. Cabello

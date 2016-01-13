@@ -1,7 +1,6 @@
 ---
 node_id: 4251
 title: "Transfer a domain's email services to another account"
-permalink: article/domain-transfer-tool
 type: article
 created_date: '2014-09-23 15:05:23'
 created_by: cody.jobson

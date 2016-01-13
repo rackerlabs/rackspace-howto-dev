@@ -1,7 +1,6 @@
 ---
 node_id: 408
 title: Other Cloud Server use Scenarios
-permalink: article/other-cloud-server-use-scenarios
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

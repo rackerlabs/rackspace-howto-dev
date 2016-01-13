@@ -1,7 +1,6 @@
 ---
 node_id: 569
 title: Test PHP mail functionality
-permalink: article/how-can-i-test-php-mail-functionality
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

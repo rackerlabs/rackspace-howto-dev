@@ -1,7 +1,6 @@
 ---
 node_id: 3814
 title: Cloud Servers - Attaching and Detaching Networks
-permalink: article/how-to-attach-and-detach-a-network-to-a-cloud-server
 type: article
 created_date: '2013-12-17 01:47:32'
 created_by: rose.contreras

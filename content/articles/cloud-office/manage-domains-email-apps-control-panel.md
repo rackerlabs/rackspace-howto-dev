@@ -1,7 +1,6 @@
 ---
 node_id: 4010
 title: 'Manage domains: Cloud Office Control Panel'
-permalink: article/manage-domains-email-apps-control-panel
 type: article
 created_date: '2014-04-10 22:29:52'
 created_by: mawutor.amesawu

@@ -1,7 +1,6 @@
 ---
 node_id: 4168
 title: 'How to Install a LAMP stack on CentOS, Fedora, or Red Hat'
-permalink: article/how-to-install-the-lamp-stack-on-centos-fedora-rhel-and-ubuntu
 type: article
 created_date: '2014-08-04 20:49:39'
 created_by: Rackspace Support

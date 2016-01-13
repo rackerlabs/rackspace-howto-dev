@@ -1,7 +1,6 @@
 ---
 node_id: 397
 title: MySQL - Connect to your database remotely
-permalink: article/mysql-connect-to-your-database-remotely
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

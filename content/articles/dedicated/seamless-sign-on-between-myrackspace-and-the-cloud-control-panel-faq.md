@@ -1,7 +1,6 @@
 ---
 node_id: 4368
 title: FAQ for Seamless sign-on between MyRackspace and the Cloud Control Panel
-permalink: article/seamless-sign-on-between-myrackspace-and-the-cloud-control-panel-faq
 type: article
 created_date: '2014-10-15 23:30:45'
 created_by: David Hendler

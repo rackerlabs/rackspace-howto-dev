@@ -1,7 +1,6 @@
 ---
 node_id: 3282
 title: Private Cloud Certified Devices - Compute
-permalink: article/private-cloud-ready-compute
 type: article
 created_date: '2013-01-24 22:35:56'
 created_by: alyssah

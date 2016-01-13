@@ -1,7 +1,6 @@
 ---
 node_id: 225
 title: Notifications for unprocessed payments or declined credit cards
-permalink: article/will-i-be-notified-through-the-system-that-a-bill-wasnt-collected-or-that-a-payment-didnt-go
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

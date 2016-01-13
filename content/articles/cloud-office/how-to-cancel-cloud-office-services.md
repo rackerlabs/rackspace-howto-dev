@@ -1,7 +1,6 @@
 ---
 node_id: 4749
 title: Cancel Cloud Office services
-permalink: article/how-to-cancel-cloud-office-services
 type: article
 created_date: '2015-07-16 21:06:12'
 created_by: beau.bailey

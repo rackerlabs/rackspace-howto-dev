@@ -1,7 +1,6 @@
 ---
 node_id: 368
 title: Log in to your server via RDP (Windows)
-permalink: article/logging-in-to-your-server-via-rdp-windows
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 754
 title: Windows System Updates for Cloud Sites
-permalink: article/windows-system-updates-for-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

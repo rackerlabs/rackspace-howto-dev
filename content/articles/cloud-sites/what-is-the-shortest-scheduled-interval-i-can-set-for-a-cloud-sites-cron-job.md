@@ -1,7 +1,6 @@
 ---
 node_id: 729
 title: What is the shortest scheduled interval I can set for a Cloud Sites cron job?
-permalink: article/what-is-the-shortest-scheduled-interval-i-can-set-for-a-cloud-sites-cron-job
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

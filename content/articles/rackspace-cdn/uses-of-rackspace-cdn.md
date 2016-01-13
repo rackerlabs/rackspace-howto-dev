@@ -1,7 +1,6 @@
 ---
 node_id: 4653
 title: Uses of Rackspace CDN
-permalink: article/uses-of-rackspace-cdn
 type: article
 created_date: '2015-05-08 19:22:57'
 created_by: catherine.richardson

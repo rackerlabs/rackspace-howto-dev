@@ -1,7 +1,6 @@
 ---
 node_id: 1385
 title: Set up Mobile Sync for Webmail on iOS devices
-permalink: article/setting-up-mobile-sync-for-webmail-iphone-ipad
 type: article
 created_date: '2012-04-27 00:04:06'
 created_by: RackKCAdmin

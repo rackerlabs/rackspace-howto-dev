@@ -1,7 +1,6 @@
 ---
 node_id: 213
 title: Is there a Rackspace Cloud SLA?
-permalink: article/is-there-a-rackspace-cloud-sla
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

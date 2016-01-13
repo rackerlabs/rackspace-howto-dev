@@ -1,7 +1,6 @@
 ---
 node_id: 4437
 title: Managing Company Directories
-permalink: article/managing-company-directories
 type: article
 created_date: '2014-11-14 22:34:58'
 created_by: joanna.salazar
@@ -11,38 +10,7 @@ products: Rackspace Email
 body_format: tinymce
 ---
 
-When you create a company directory, users in the directory have access
-to up-to-date contact information for all users in the directory. Users
-can access the company directory information through Webmail, via the
-Contacts tab.
-
-To view a company directory list, log into the control panel and perform
-the following steps:\
-  
-
-1.  Click on the **Go to section** drop-down menu and select **Rackspace
-    Email**.\
-      
-2.  In the **Collaboration** section, click the **Company
-    Directory** link.\
-      
-
-From here, you can add, edit, or delete an alias. See the instructions
-below specific to the action you would like to take.
-
- 
-
-Adding/Editing a Company Directory:\
-  
-------------------------------------
-
-1.  While viewing the **Company Directory** list, click on the name of
-    the directory you want to edit. If creating a new directory, click
-    **Add Directory**.\
-      
-2.  Make changes as desired.\
-      
-    -   Use the**Name** box to change or create the directory&rsquo;s name.\
+undefined&rsquo;s name.\
           
     -   To allow users to edit their personal contact information, check
         the **Allow users to edit their profile** box.\

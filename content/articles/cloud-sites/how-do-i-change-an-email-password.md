@@ -1,7 +1,6 @@
 ---
 node_id: 587
 title: Change your email password
-permalink: article/how-do-i-change-an-email-password
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

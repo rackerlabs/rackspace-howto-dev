@@ -1,7 +1,6 @@
 ---
 node_id: 1225
 title: Connecting to Linux from Mac OS X by using Terminal
-permalink: article/rackspace-cloud-essentials-3-going-from-mac-to-linux-using-iterm
 type: article
 created_date: '2011-10-06 05:54:02'
 created_by: rose.contreras
@@ -11,20 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-If you use Mac OS X, you don&rsquo;t need to install a third-party client like
-PuTTY to connect to your cloud server via Secure Shell (SSH). Terminal
-is a terminal emulation program included with Mac OS X that you can use
-to run SSH.
-
-**Note**: For an OnMetal Server, see [Create OnMetal Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers) for
-applicable OnMetal steps.
-
-Connect to the server
----------------------
-
-These instructions are for users who are connecting to a new cloud
-server for the first time.  If you&rsquo;re connecting as a non-root user,
+undefined&rsquo;re connecting as a non-root user,
 replace *root* in the instructions with your username.
 
 1.  Go to **Applications** \> **Utilities**, and open **Terminal**.

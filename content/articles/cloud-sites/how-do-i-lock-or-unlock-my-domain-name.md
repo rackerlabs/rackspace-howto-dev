@@ -1,7 +1,6 @@
 ---
 node_id: 627
 title: Lock or unlock your domain name
-permalink: article/how-do-i-lock-or-unlock-my-domain-name
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 4009
 title: Add domains with the Cloud Office control panel
-permalink: article/add-domain-email-apps-control-panel
 type: article
 created_date: '2014-04-10 22:27:50'
 created_by: mawutor.amesawu

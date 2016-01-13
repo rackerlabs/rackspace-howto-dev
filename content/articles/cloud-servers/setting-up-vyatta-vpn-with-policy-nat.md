@@ -1,7 +1,6 @@
 ---
 node_id: 3671
 title: Setting Up Vyatta VPN with Policy NAT
-permalink: article/setting-up-vyatta-vpn-with-policy-nat
 type: article
 created_date: '2013-09-03 17:12:36'
 created_by: sameer.satyam
@@ -11,25 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-The following information will direct you in setting up your traffic
-sourced from 2 of your cloud servers to appear as the public IP of your
-cloud servers across the VPN tunnel only (Policy Nat).
-
--   **Cloud Server 1** Cloud Networks IP: 172.26.26.2
--   **Cloud Server 2** Cloud Networks IP: 172.26.26.3
-
-In this scenario, the 2 IP addresses appear to come from the
-10.255.255.x. We will present two alternative solutions for this. One
-solution, we will map only the specific /32 addresses in our policy NAT.
-In the second solution, we will policy NAT the entire /24 subnet to the
-other /24 subnet.
-
-#### Scenario Notes
-
-Note: This assumes that the cloud servers have their default gateways
-pointed at the Vyatta (much in the same way a cloud server gets "rack
-connected" to an ASA or an F5). If you wish to continue to your cloud
-servers&rsquo; public interface for Internet access and the cloud networks
+undefined&rsquo; public interface for Internet access and the cloud networks
 interface for VPN only traffic, your server admin will need to create a
 static route on the cloud server for the remote VPN encryption domain
 that points at the Vyatta's cloud network IP address.

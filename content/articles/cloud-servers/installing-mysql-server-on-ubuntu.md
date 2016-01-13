@@ -1,22 +1,16 @@
 ---
 node_id: 1162
 title: Installing MySQL Server on Ubuntu
-permalink: article/installing-mysql-server-on-ubuntu
 type: article
 created_date: '2011-07-29 14:51:26'
 created_by: jered.heeschen
-last_modified_date: '2015-12-31 14:4651'
+last_modified_date: '2016-01-11 16:0342'
 last_modified_by: stephanie.fillmon
 products: Cloud Servers
 body_format: tinymce
 ---
 
 ### Overview
-
-[Installing MySQL Server on
-Linux](https://admin.rackspace.com/knowledge_center/article/installing-mysql-server-on-linux)
-
-### Meet MySQL
 
 MySQL is an open-source relational database. In a nutshell, for those
 unfamiliar with it: A database is where an application keeps its stuff.
@@ -313,15 +307,10 @@ And that's all you need if you're just creating a database and a user.
 We were a bit long on concepts there but that should give you a solid
 grounding from which to learn more. Good work.
 
-In the [next
-article](http://www.rackspace.com/knowledge_center/article/configuring-mysql-server-on-ubuntu)
-we'll do some basic security and stability checks by looking at the
-MySQL server's configuration files and a few key tools.
-
 ### Next steps
 
-[Basic MySQL server
-tasks](https://admin.rackspace.com/knowledge_center/article/basic-mysql-server-tasks)
+[Configuring MySQL server on
+Ubuntu](https://www.rackspace.com/knowledge_center/article/configuring-mysql-server-on-ubuntu)
 
  
 

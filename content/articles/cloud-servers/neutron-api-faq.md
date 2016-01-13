@@ -1,7 +1,6 @@
 ---
 node_id: 3914
 title: Rackspace Neutron-based Networking API FAQ
-permalink: article/neutron-api-faq
 type: article
 created_date: '2014-02-26 23:04:55'
 created_by: sameer.satyam

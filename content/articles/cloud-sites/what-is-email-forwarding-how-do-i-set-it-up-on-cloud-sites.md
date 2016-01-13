@@ -1,7 +1,6 @@
 ---
 node_id: 116
 title: Set up email forwarding on Cloud Sites
-permalink: article/what-is-email-forwarding-how-do-i-set-it-up-on-cloud-sites
 type: article
 created_date: '2011-03-10 17:22:52'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 1460
 title: Create an image of a server and restore a server from a saved image
-permalink: article/cloud-essentials-4-creating-an-image-backup-cloning-and-restoring-a-server-from-a-saved
 type: article
 created_date: '2012-07-15 04:12:14'
 created_by: RackKCAdmin

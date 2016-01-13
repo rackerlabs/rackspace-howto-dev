@@ -1,7 +1,6 @@
 ---
 node_id: 515
 title: Windows overview
-permalink: article/windows-template
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

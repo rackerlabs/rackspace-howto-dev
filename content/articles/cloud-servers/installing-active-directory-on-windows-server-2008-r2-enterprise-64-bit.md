@@ -1,7 +1,6 @@
 ---
 node_id: 356
 title: Installing Active Directory Domain Services on Windows Server 2008 R2 Enterprise 64-bit
-permalink: article/installing-active-directory-on-windows-server-2008-r2-enterprise-64-bit
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
@@ -11,78 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-This article provides prerequisites and steps for installing Active
-Directory Domain Services (AD DS) on Microsoft Windows Server 2008 R2
-Enterprise 64-bit (W2K8).\
- This article does *not* provide instructions for adding a Domain
-Controller (DC) to an already existing Active Directory Forest
-Infrastructure.
-
-+--------------------------------------------------------------------------+
-| **Contents**                                                             |
-| ------------                                                             |
-|                                                                          |
-| 1.  [Prepare for Active Directory Domain Services                        |
-|     Installation](#Preparation_for_Active_Directory)                     |
-| 2.  [Install Active Directory Domain Services                            |
-|     (DCPROMO)](#Installation_of_Active_Directory_Domain_Services_.28DCPR |
-| OMO.29)                                                                  |
-+--------------------------------------------------------------------------+
-
-Prepare for Active Directory
-----------------------------
-
-Before you install AD DS on a Rackspace Cloud Server running Windows
-Server 2008 R2 Enterprise 64-bit (W2K8), you must perform the following
-prerequisite tasks.
-
-### Select Domain Name and Password
-
-Select your domain name and know the domain administrator password that
-you want to use.
-
-**Note**: Your domain name should be reliably unique.  Do not use the
-same domain as your website, for example, and avoid extensions like
-&ldquo;.local&rdquo; unless you have registered that domain name in DNS.  We suggest
-a domain name that is not used for anything else, like
-"internal.example.com"..
-
-### Specify the Preferred DNS Server
-
-Windows Server 2008 can properly install and configure DNS during the AD
-DS installation if it knows that the DNS is local. You can accomplish
-this by having the private network adapter&rsquo;s preferred DNS server
-address point to the already assigned IP address of the same private
-network adapter, as follows:
-
-1.  From the Windows **Start** menu, open **Administrative Tools \>
-    Server Manager**.
-2.  In the **Server Summary**section of the Server Manager window, click
-    **View Network Connections**.
-
-    ![2K8\_64R2\_ADDS.jpg](http://c0625232.cdn.cloudfiles.rackspacecloud.com/2K8_64R2_ADDS.jpg)
-
-3.  In the Network Connections window, right-click the private adapter
-    and select **Properties**.
-
-    ![2K8\_64R2\_ADDS(1).jpg](http://c0625232.cdn.cloudfiles.rackspacecloud.com/2K8_64R2_ADDS(1).jpg)
-
-4.  Select **Internet Protocol Version 4**, and then
-    click **Properties**.
-
-    ![2K8\_64R2\_ADDS(7).jpg](http://c0625232.cdn.cloudfiles.rackspacecloud.com/2K8_64R2_ADDS(7).jpg)\
-      
-
-5.   Copy the IP address that is displayed in the **IP address** box and
-    paste it into the **Preferred DNS server** box. Then, click **OK**.
-
-    ![2K8\_64R2\_ADDS(2).jpg](http://c0625232.cdn.cloudfiles.rackspacecloud.com/2K8_64R2_ADDS(2).jpg)
-
-6.  Click **OK** in the Properties dialog box, and close the Network
-    Connections window.
-
-**Note**: The last step for prepping W2K8 for AD is adding the proper
-Server Role. The &ldquo;Active Directory Domain Services&rdquo; Role will be added.
+undefined&rdquo; Role will be added.
 This only installs the framework for W2K8 to become a DC and run AD. It
 does not promote the server to DC or install AD.
 

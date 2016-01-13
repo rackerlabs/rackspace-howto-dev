@@ -1,7 +1,6 @@
 ---
 node_id: 702
 title: Using WP-SuperCache to optimize Wordpress on Cloud Sites
-permalink: article/using-wp-supercache-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: thomas.hester
@@ -11,48 +10,7 @@ products: Cloud Sites
 body_format: tinymce
 ---
 
-WP Super Cache is an available plugin for [Wordpress
-installations](%20http://www.rackspace.com/cloud/sites/web-hosting/wordpress/)
-to store cached versions of your dynamic PHP pages. Installing WP Super
-Cache can also reduce the number of compute cycles used by a site since
-it reduces the load on the cluster as well.
-
-WP Super Cache is available at
-[http://wordpress.org/extend/plugins/wp-super-cache](http://wordpress.org/extend/plugins/wp-super-cache "http://wordpress.org/extend/plugins/wp-super-cache")
-and is included by default with the Wordpress One Click Install in the
-control panel.
-
-### Before You Begin
-
--   Have your Rackspace Cloud Control Panel login credentials ready.
-
-### Install WP Super Cache
-
-To install WP Super Cache, follow the instructions provided for the
-plugin located here:
-[http://wordpress.org/extend/plugins/wp-super-cache/installation/](http://wordpress.org/extend/plugins/wp-super-cache/installation/ "http://wordpress.org/extend/plugins/wp-super-cache/installation/").
-If you have installed Wordpress via the Wordpress One Click Installer
-you already have Super Cache installed.
-
-### Recommended configuration
-
-In addition to the instructions included with the manual, the following
-additional changes are recommend and have been tested and shown to
-increase the efficiency of WP Supercache in Cloud Sites.
-
-#### Advanced settings
-
-Go to settings for SuperCache and click on the **Advanced** tab.
-
-![](/knowledge_center/sites/default/files/field/image/Tabs.png)
-
-Mark the following items:
-
--   Cache hits to this website for quick access. (Recommended)
--   Use mod\_rewrite to serve cache files. (Recommended)
--   Compress pages so they&rsquo;re served more quickly to visitors.
-    (Recommended)
--   Don&rsquo;t cache pages for known users. (Recommended)
+undefined&rsquo;t cache pages for known users. (Recommended)
 -   Cache rebuild. Serve a supercache file to anonymous users while a
     new file is being generated. (Recommended)
 -   Mobile device support. (External plugin or theme required. See the

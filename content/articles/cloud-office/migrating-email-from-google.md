@@ -1,7 +1,6 @@
 ---
 node_id: 3801
 title: Email Migration from Google
-permalink: article/migrating-email-from-google
 type: article
 created_date: '2013-12-04 19:18:59'
 created_by: milton.prado

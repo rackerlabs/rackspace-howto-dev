@@ -1,7 +1,6 @@
 ---
 node_id: 3261
 title: RackConnect Auto NAT Feature
-permalink: article/rackconnect-auto-nat-feature
 type: article
 created_date: '2013-01-16 15:15:04'
 created_by: juan.perez

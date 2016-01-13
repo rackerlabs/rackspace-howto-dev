@@ -1,7 +1,6 @@
 ---
 node_id: 4590
 title: Security for Rackspace Private Cloud powered by OpenStack
-permalink: article/rackspace-private-cloud-security
 type: article
 created_date: '2015-03-04 21:53:36'
 created_by: kenny.johnston
@@ -11,17 +10,7 @@ products: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
 
-Security is a very complex topic for every organization. Challenges can
-include legislative requirements and internal procedures spanning across
-both the physical, logical, and virtual layers. It is often because of
-these challenges that customers are drawn to private clouds. Rackspace
-Private Cloud powered by OpenStack is designed with the security posture
-and flexibility to meet these varied needs.
-
-The key to having a well-secured environment is not just identifying the
-risks, but ensuring the appropriate controls are in place and that they
-are being actively monitored. While our OpenStack private cloud provides
-the flexibility, **Fanatical Support&reg;** brings best-practices and
+undefined&reg;** brings best-practices and
 expertise to achieve customer's control objectives.
 
 This document will provide an introductory understanding of:

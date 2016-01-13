@@ -1,12 +1,11 @@
 ---
 node_id: 1488
 title: Working With Images
-permalink: article/working-with-images
 type: article
 created_date: '2012-07-24 00:05:42'
 created_by: RackKCAdmin
-last_modified_date: '2014-09-12 20:0425'
-last_modified_by: jered.heeschen
+last_modified_date: '2016-01-11 20:2642'
+last_modified_by: rose.contreras
 products: Cloud Hosting
 body_format: tinymce
 ---

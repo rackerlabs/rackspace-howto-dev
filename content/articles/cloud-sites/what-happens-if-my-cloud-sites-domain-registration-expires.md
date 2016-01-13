@@ -1,7 +1,6 @@
 ---
 node_id: 709
 title: What happens if my Cloud Sites domain registration expires?
-permalink: article/what-happens-if-my-cloud-sites-domain-registration-expires
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

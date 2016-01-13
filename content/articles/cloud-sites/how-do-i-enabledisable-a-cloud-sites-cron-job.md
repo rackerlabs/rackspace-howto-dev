@@ -1,7 +1,6 @@
 ---
 node_id: 610
 title: Enable or disable a Cloud Sites scheduled task (cron job)
-permalink: article/how-do-i-enabledisable-a-cloud-sites-cron-job
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

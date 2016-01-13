@@ -1,7 +1,6 @@
 ---
 node_id: 605
 title: Create a domain or subdomain that points to a folder on an existing Cloud Sites website
-permalink: article/how-do-i-create-a-domainsubdomain-that-points-to-a-folder-on-an-existing-website
 type: article
 created_date: '2011-03-23 11:34:45'
 created_by: RackKCAdmin
