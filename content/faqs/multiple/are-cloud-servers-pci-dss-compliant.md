@@ -1,7 +1,6 @@
 ---
 node_id: 4470
 title: Are cloud servers PCI-DSS compliant?
-permalink: frequently-asked-question/are-cloud-servers-pci-dss-compliant
 type: frequently_asked_question
 created_date: '2014-12-24 17:21:48'
 created_by: jered.heeschen

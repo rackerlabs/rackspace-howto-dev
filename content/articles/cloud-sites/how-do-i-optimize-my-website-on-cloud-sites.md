@@ -1,7 +1,6 @@
 ---
 node_id: 633
 title: Optimize your website on Cloud Sites
-permalink: article/how-do-i-optimize-my-website-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

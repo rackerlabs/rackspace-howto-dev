@@ -1,7 +1,6 @@
 ---
 node_id: 4655
 title: Limits for Rackspace CDN
-permalink: article/limits-for-rackspace-cdn
 type: article
 created_date: '2015-05-08 19:31:49'
 created_by: catherine.richardson

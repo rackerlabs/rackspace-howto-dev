@@ -1,7 +1,6 @@
 ---
 node_id: 1282
 title: Microsoft Exchange public folders
-permalink: article/microsoft-exchange-public-folders
 type: article
 created_date: '2012-02-06 18:08:12'
 created_by: RackKCAdmin

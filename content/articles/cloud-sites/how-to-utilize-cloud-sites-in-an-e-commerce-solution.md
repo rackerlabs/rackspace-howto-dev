@@ -1,12 +1,11 @@
 ---
 node_id: 1180
-title: How to Utilize Cloud Sites in an E-commerce Solution
-permalink: article/how-to-utilize-cloud-sites-in-an-e-commerce-solution
+title: Utilize Cloud Sites in an E-commerce Solution
 type: article
 created_date: '2011-08-10 21:34:36'
 created_by: RackKCAdmin
-last_modified_date: '2011-11-27 18:3025'
-last_modified_by: richard.valadez
+last_modified_date: '2016-01-12 20:2653'
+last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce
 ---

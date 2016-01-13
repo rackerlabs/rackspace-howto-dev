@@ -1,7 +1,6 @@
 ---
 node_id: 3663
 title: Using task states with server imaging
-permalink: article/using-task-states-with-server-imaging
 type: article
 created_date: '2013-08-28 16:31:37'
 created_by: brian.rosmaita

@@ -1,7 +1,6 @@
 ---
 node_id: 4245
 title: RackConnect v3.0 cloud server image compatibility
-permalink: article/rackconnect-v30-cloud-server-image-compatibility
 type: article
 created_date: '2014-09-19 17:15:29'
 created_by: juan.perez

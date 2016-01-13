@@ -1,7 +1,6 @@
 ---
 node_id: 4440
 title: Manage distribution lists in Exchange
-permalink: article/managing-distribution-lists
 type: article
 created_date: '2014-11-18 18:05:06'
 created_by: joanna.salazar

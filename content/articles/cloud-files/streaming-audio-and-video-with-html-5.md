@@ -1,7 +1,6 @@
 ---
 node_id: 3285
 title: Streaming Audio and Video with HTML 5
-permalink: article/streaming-audio-and-video-with-html-5
 type: article
 created_date: '2013-02-01 18:40:37'
 created_by: David Hendler

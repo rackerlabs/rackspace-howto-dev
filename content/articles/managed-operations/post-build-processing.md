@@ -1,7 +1,6 @@
 ---
 node_id: 4449
 title: Cloud Server Configuration options
-permalink: article/post-build-processing
 type: article
 created_date: '2014-12-01 18:46:29'
 created_by: rose.contreras
@@ -11,108 +10,7 @@ products: Managed Operations
 body_format: full_html
 ---
 
-To deliver a Managed Cloud experience, Rackspace runs support automation
-on every cloud server that we build. We have extended this capability by
-creating a `build_config` metadata key that you can use to specify the
-Rackspace-provided common tools you want installed on your Rackspace
-cloud servers and configured with Rackspace recommended best practices.
-
-Many of the `build_config` metadata key options are available only when
-you use the Cloud Servers API to build your servers. Building your
-servers through the API gives you increased flexibility to select that a
-server is configured how you want it and ensure that it does not
-conflict with any automation that you have running. If you build servers
-through the Cloud Control Panel, you will have the ability to select
-only from the most common of these options.
-
-To take advantage of this feature when using the API, you use any of the
-defined `build_config` metadata key options that are available for your
-specific service level (Managed Infrastructure or Managed Operations)
-and pass your specified values to the scripts.
-
-**Note:** This functionality is available only when you create a server.
-If you want any of the tools installed after the server is created, you
-must download the tools and configure them individually on the servers.
-If you have the Managed Operations: SysOps service level, ask a Cloud
-Engineer to install the tools on your behalf.
-
-Build configuration options
----------------------------
-
-The following table lists the current options for the `build_config`
-metadata key:
-
-+--------------------+--------------------+--------------------+--------------------+
-| Option             | Managed            | Managed Operations | Description        |
-|                    | Infrastructure     |                    |                    |
-+====================+====================+====================+====================+
-| `rack_user_only`   | N                  | Y                  | For Managed        |
-|                    |                    |                    | Operations         |
-|                    |                    |                    | customers only.    |
-|                    |                    |                    | Creates a          |
-|                    |                    |                    | Rackspace user     |
-|                    |                    |                    | name and password  |
-|                    |                    |                    | for Rackspace      |
-|                    |                    |                    | Support to deliver |
-|                    |                    |                    | System             |
-|                    |                    |                    | Administrator      |
-|                    |                    |                    | Level Support.     |
-|                    |                    |                    | This option does   |
-|                    |                    |                    | not add or         |
-|                    |                    |                    | configure any      |
-|                    |                    |                    | additional         |
-|                    |                    |                    | components.        |
-+--------------------+--------------------+--------------------+--------------------+
-| `base_mgdops_confi | N                  | Y                  | For Managed        |
-| g`                 |                    |                    | Operations         |
-|                    |                    |                    | customers only.    |
-|                    |                    |                    | Builds a regular   |
-|                    |                    |                    | Managed Operations |
-|                    |                    |                    | server from a base |
-|                    |                    |                    | image with a       |
-|                    |                    |                    | Rackspace user     |
-|                    |                    |                    | name and password, |
-|                    |                    |                    | installs and       |
-|                    |                    |                    | configures the     |
-|                    |                    |                    | Cloud Monitoring   |
-|                    |                    |                    | agent to the       |
-|                    |                    |                    | Rackspace          |
-|                    |                    |                    | defaults, installs |
-|                    |                    |                    | and configures     |
-|                    |                    |                    | Cloud Backup to    |
-|                    |                    |                    | the Rackspace      |
-|                    |                    |                    | defaults, installs |
-|                    |                    |                    | all the support    |
-|                    |                    |                    | packages,          |
-|                    |                    |                    | configures Mailgun |
-|                    |                    |                    | as the default     |
-|                    |                    |                    | mail relay         |
-|                    |                    |                    | service, and       |
-|                    |                    |                    | enables automatic  |
-|                    |                    |                    | updates. This is   |
-|                    |                    |                    | the standard       |
-|                    |                    |                    | Managed Operations |
-|                    |                    |                    | kick.              |
-+--------------------+--------------------+--------------------+--------------------+
-| `mailgun`          | Y                  | Y                  | Creates a Mailgun  |
-|                    |                    |                    | account if one     |
-|                    |                    |                    | doesn't already    |
-|                    |                    |                    | exist, and then    |
-|                    |                    |                    | configures Postfix |
-|                    |                    |                    | to relay to        |
-|                    |                    |                    | smtp.mailgun.com.  |
-+--------------------+--------------------+--------------------+--------------------+
-| `backup_agent_only | Y                  | Y                  | Installs the Cloud |
-| `                  |                    |                    | Backup agent.      |
-+--------------------+--------------------+--------------------+--------------------+
-| `backup_defaults`  | Y                  | Y                  | Installs the Cloud |
-|                    |                    |                    | Backup agent, and  |
-|                    |                    |                    | configures a       |
-|                    |                    |                    | default backup set |
-|                    |                    |                    | and schedule.      |
-|                    |                    |                    | **Note:** The      |
-|                    |                    |                    | following default  |
-|                    |                    |                    | &ldquo;on&rdquo; directories   |
+undefined&rdquo; directories   |
 |                    |                    |                    | are backed up:     |
 |                    |                    |                    |                    |
 |                    |                    |                    | **For Linux        |

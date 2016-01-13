@@ -1,7 +1,6 @@
 ---
 node_id: 3854
 title: Managing Backups for Cloud Databases
-permalink: article/cloud-database-backups
 type: article
 created_date: '2014-01-15 18:54:37'
 created_by: Rackspace Support

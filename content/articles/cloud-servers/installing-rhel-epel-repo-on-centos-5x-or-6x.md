@@ -1,7 +1,6 @@
 ---
 node_id: 1272
 title: Install EPEL and additional repositories on CentOS and Red Hat
-permalink: article/installing-rhel-epel-repo-on-centos-5x-or-6x
 type: article
 created_date: '2012-01-11 19:46:34'
 created_by: RackKCAdmin
@@ -11,22 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-This article describes how to configure a CentOS or Red Hat Enterprise
-Linux system to use the [Fedora Extra Packages for Enterprise Linux
-(EPEL) repository](https://fedoraproject.org/wiki/EPEL). The EPEL
-repository provides useful software packages that are not included in
-the official CentOS or Red Hat Enterprise Linux repositories.
-
-Instructions are also included for installing other third-party
-repositories, the [IUS Community Project](https://ius.io/) and the [Remi
-RPM Repository](http://rpms.famillecollet.com/). Whereas EPEL provides
-only software that is *not* in the CentOS and Red Hat Enterprise Linux
-official repositories, IUS and Remi provide newer versions of software
-(like MySQL and PHP) that exists in the official repositories.
-
-**Note:** Exercise caution when using any third-party repository. If you
-have a managed support agreement, contact your provider before following
-the instructions in this article to ensure that you don&rsquo;t create an
+undefined&rsquo;t create an
 unsupported server configuration.
 
 Install the EPEL repository

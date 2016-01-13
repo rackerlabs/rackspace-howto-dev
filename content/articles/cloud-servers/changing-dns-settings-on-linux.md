@@ -1,7 +1,6 @@
 ---
 node_id: 1157
 title: Changing DNS Settings on Linux
-permalink: article/changing-dns-settings-on-linux
 type: article
 created_date: '2011-07-20 18:02:14'
 created_by: jered.heeschen

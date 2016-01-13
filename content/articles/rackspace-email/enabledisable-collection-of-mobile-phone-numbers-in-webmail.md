@@ -1,7 +1,6 @@
 ---
 node_id: 4385
 title: Enable and disable collection of mobile phone numbers in Rackspace Webmail
-permalink: article/enabledisable-collection-of-mobile-phone-numbers-in-webmail
 type: article
 created_date: '2014-10-24 18:51:41'
 created_by: beau.bailey

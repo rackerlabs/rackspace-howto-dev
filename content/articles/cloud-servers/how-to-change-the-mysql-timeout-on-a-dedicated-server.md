@@ -1,7 +1,6 @@
 ---
 node_id: 3630
 title: How to Change the MySQL Timeout on a Server
-permalink: article/how-to-change-the-mysql-timeout-on-a-dedicated-server
 type: article
 created_date: '2013-07-24 14:30:15'
 created_by: rose.contreras

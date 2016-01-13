@@ -1,7 +1,6 @@
 ---
 node_id: 731
 title: Rackspace Cloud Essentials - What Are Your Name Servers?
-permalink: article/rackspace-cloud-essentials-6-what-are-your-name-servers
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

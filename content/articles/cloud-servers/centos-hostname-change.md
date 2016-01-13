@@ -1,7 +1,6 @@
 ---
 node_id: 90
 title: CentOS - Hostname Change
-permalink: article/centos-hostname-change
 type: article
 created_date: '2011-03-09 17:19:45'
 created_by: RackKCAdmin

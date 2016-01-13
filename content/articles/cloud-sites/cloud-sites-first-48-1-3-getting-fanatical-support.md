@@ -1,7 +1,6 @@
 ---
 node_id: 1244
 title: 'Getting Started With Cloud Sites: Getting Fanatical Support'
-permalink: article/cloud-sites-first-48-1-3-getting-fanatical-support
 type: article
 created_date: '2011-11-08 18:32:50'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 4003
 title: 'Upgrade SharePoint site storage: Cloud Office Control Panel'
-permalink: article/upgrade-sharepoint-site-storage-email-apps-control-panel
 type: article
 created_date: '2014-04-10 20:48:30'
 created_by: mawutor.amesawu

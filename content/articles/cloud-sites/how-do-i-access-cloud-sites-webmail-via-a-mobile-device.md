@@ -1,7 +1,6 @@
 ---
 node_id: 577
 title: Access Cloud Sites webmail on a mobile device
-permalink: article/how-do-i-access-cloud-sites-webmail-via-a-mobile-device
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

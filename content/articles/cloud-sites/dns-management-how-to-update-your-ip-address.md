@@ -1,7 +1,6 @@
 ---
 node_id: 1216
 title: 'DNS management: How to update your IP address'
-permalink: article/dns-management-how-to-update-your-ip-address
 type: article
 created_date: '2011-09-27 15:41:06'
 created_by: RackKCAdmin

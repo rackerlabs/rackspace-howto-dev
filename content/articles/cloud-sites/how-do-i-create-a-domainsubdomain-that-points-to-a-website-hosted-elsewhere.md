@@ -1,7 +1,6 @@
 ---
 node_id: 606
 title: Create a domain or subdomain that points to a website not hosted on Cloud Sites
-permalink: article/how-do-i-create-a-domainsubdomain-that-points-to-a-website-hosted-elsewhere
 type: article
 created_date: '2011-03-23 11:48:25'
 created_by: RackKCAdmin

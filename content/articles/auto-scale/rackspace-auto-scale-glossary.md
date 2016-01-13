@@ -1,7 +1,6 @@
 ---
 node_id: 3757
 title: Rackspace Auto Scale Glossary
-permalink: article/rackspace-auto-scale-glossary
 type: article
 created_date: '2013-11-05 20:13:33'
 created_by: maria.abrahms

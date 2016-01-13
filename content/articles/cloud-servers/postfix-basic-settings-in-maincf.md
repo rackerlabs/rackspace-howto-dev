@@ -1,7 +1,6 @@
 ---
 node_id: 412
 title: Basic settings in the Postfix main.cf file
-permalink: article/postfix-basic-settings-in-maincf
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

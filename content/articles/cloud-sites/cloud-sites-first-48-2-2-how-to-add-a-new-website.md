@@ -1,7 +1,6 @@
 ---
 node_id: 1132
 title: 'Getting Started With Cloud Sites: How To Add A New Website'
-permalink: article/cloud-sites-first-48-2-2-how-to-add-a-new-website
 type: article
 created_date: '2011-06-15 14:58:41'
 created_by: RackKCAdmin

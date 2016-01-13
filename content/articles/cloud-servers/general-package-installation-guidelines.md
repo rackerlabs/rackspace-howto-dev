@@ -1,7 +1,6 @@
 ---
 node_id: 344
 title: General Package Installation Guidelines
-permalink: article/general-package-installation-guidelines
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

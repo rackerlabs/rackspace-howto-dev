@@ -1,7 +1,6 @@
 ---
 node_id: 3295
 title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
-permalink: article/rackspace-cloud-essentials-3-rescue-mode-on-linux-cloud-servers-1
 type: article
 created_date: '2013-02-11 14:51:05'
 created_by: renee.rendon

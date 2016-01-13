@@ -1,7 +1,6 @@
 ---
 node_id: 4070
 title: Set up Rackspace Email with Thunderbird
-permalink: article/setting-up-rackspace-email-with-thunderbird
 type: article
 created_date: '2014-05-20 21:44:22'
 created_by: ian.avery

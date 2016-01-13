@@ -1,7 +1,6 @@
 ---
 node_id: 622
 title: Force SSL on your PHP site
-permalink: article/how-do-i-force-ssl-on-my-php-site
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

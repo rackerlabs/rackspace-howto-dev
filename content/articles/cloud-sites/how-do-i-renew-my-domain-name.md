@@ -1,53 +1,53 @@
 ---
 node_id: 641
-title: How do I renew my Domain name for Cloud Sites?
-permalink: article/how-do-i-renew-my-domain-name
+title: Renew a Cloud Sites domain name
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-06-24 16:1536'
-last_modified_by: kelly.holcomb
+last_modified_date: '2016-01-12 20:0502'
+last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce
 ---
 
-*Note: This article is written for our [Cloud Sites Control
+**Note:** This article refers to the [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com). You can access this interface
 from the [Cloud Control Panel](https://mycloud.rackspace.com) by
-clicking your username in the upper-right of the control panel and
-selecting "Cloud Sites Control Panel".*
+clicking the **Cloud Control Panel** menu at the top of the window and
+selecting **Cloud Sites**.
 
-1.  Login to your Cloud Sites Control Panel at
-    [http://manage.rackspacecloud.com](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
-2.  Click on the **Hosting** button on the left navigation menu. Then
-    select **Cloud Sites**.
-3.  Click on the domain name you would like to renew.
-4.  Click on the **DNS** tab and then click on the **Renew** button
-    (please see the note below if the **Renew** button is not visible).
-5.  Select the term (in years) you would like to renew for and click
-    **next**.
-6.  Click on the **Finish** button on the following screen to confirm
-    the charges and complete the renewal.
+To renew the domain name for your Cloud Sites domain that you purchased
+from Rackspace, use the following steps:
 
-**IMPORTANT NOTE:**
+1.  Log in to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
+2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
+3.  Click on the domain name that you want to renew.
+4.  On the **DNS** tab, click on the **Renew** button.\
+     If the **Renew** button is not visible, see the note that follows
+    these steps.
+5.  Select the term (in years) that you want to renew for, and then
+    click **Next**.
+6.  Click **Finish** to confirm the charges and complete the renewal.
 
-It's important to note that the following may not work if you have
-changed your main account password or client's account password at any
-point since you created either account.
+**Notes:**
 
-You can always try the steps above and if you find that the "renew"
-button is not visible when viewing the "Domain" tab for a Cloud Site
-domain you know you purchased with us (must show **Click and Name** as
-the Registrar when you perform a whois lookup), you may want to login to
+If the **Renew**button is not visible for a Cloud Site domain that you
+know you purchased from Rackspace (**Click and Name** is shown as the
+registrar when you perform a WHOIS lookup), you can log in to
 [http://manage.opensrs.net](http://manage.opensrs.net "http://manage.opensrs.net")
 with your original password and update the password in this control
-panel to reflect your current password to re-establish this
-functionality.
+panel to reflect your current password. Updating the password should
+re-establish the renew functionality.
 
-Clients do not have the ability to renew their domain names from the
-Control Panel if it has already expired. If their domain has already
-expired, they would need to contact Support. 
+Note that if you changed your main account password or client's account
+password since you created either account, the preceding step might not
+work.
 
-If you require clarification on this process, please contact support via
-phone, chat or ticket.
+Clients do not have the ability to renew their domain name from the
+control panel if the domain name has already expired. Instead, they must
+contact Support.
+
+If you require clarification on this process, contact Support through
+phone, chat, or ticket.
 

@@ -1,7 +1,6 @@
 ---
 node_id: 1508
 title: Connect to a Cloud Databases instance
-permalink: article/connecting-to-your-cloud-database
 type: article
 created_date: '2012-07-24 00:35:53'
 created_by: RackKCAdmin

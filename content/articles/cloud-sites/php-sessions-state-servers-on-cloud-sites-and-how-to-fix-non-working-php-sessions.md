@@ -1,7 +1,6 @@
 ---
 node_id: 89
 title: PHP Sessions State Servers on Cloud Sites And How To Fix Non Working PHP Sessions
-permalink: article/php-sessions-state-servers-on-cloud-sites-and-how-to-fix-non-working-php-sessions
 type: article
 created_date: '2011-03-09 16:12:00'
 created_by: RackKCAdmin

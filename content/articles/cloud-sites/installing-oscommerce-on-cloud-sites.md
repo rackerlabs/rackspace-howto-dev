@@ -1,7 +1,6 @@
 ---
 node_id: 685
 title: Installing OSCommerce on Cloud Sites
-permalink: article/installing-oscommerce-on-cloud-sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

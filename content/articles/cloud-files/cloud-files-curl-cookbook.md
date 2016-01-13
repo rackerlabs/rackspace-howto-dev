@@ -1,7 +1,6 @@
 ---
 node_id: 1445
 title: Cloud Files cURL Cookbook
-permalink: article/cloud-files-curl-cookbook
 type: article
 created_date: '2012-06-25 19:44:15'
 created_by: RackKCAdmin

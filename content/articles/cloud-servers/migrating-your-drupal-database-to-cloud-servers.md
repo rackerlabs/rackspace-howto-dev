@@ -1,7 +1,6 @@
 ---
 node_id: 390
 title: Migrating your Drupal database to Cloud Servers
-permalink: article/migrating-your-drupal-database-to-cloud-servers
 type: article
 created_date: '2011-04-04 16:57:40'
 created_by: RackKCAdmin

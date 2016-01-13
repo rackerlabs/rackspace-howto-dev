@@ -1,7 +1,6 @@
 ---
 node_id: 1892
 title: Connect to a cloud database with a FQDN Address via MySQL Workbench
-permalink: article/dbaas-connection-over-fqdn-address-via-mysql-workbench
 type: article
 created_date: '2012-08-02 20:35:08'
 created_by: Rae D. Cabello

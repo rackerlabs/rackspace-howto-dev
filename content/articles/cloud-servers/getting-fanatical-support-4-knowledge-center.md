@@ -1,7 +1,6 @@
 ---
 node_id: 1329
 title: Getting Fanatical Support - Knowledge Center
-permalink: article/getting-fanatical-support-4-knowledge-center
 type: article
 created_date: '2012-03-20 18:26:51'
 created_by: kyle.laffoon

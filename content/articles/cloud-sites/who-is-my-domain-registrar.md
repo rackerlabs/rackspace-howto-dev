@@ -1,7 +1,6 @@
 ---
 node_id: 740
 title: Who is my domain registrar?
-permalink: article/who-is-my-domain-registrar
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

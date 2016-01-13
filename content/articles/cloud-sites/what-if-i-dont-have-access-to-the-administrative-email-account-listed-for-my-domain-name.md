@@ -1,7 +1,6 @@
 ---
 node_id: 711
 title: "What if I don't have access to the administrative email account listed for my domain name?"
-permalink: article/what-if-i-dont-have-access-to-the-administrative-email-account-listed-for-my-domain-name
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

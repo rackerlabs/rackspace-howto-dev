@@ -1,7 +1,6 @@
 ---
 node_id: 542
 title: Does the Cloud Sites FTP service support restarts/continuations?
-permalink: article/does-the-cloud-sites-ftp-service-support-restartscontinuations
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

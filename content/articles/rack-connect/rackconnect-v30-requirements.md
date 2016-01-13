@@ -1,7 +1,6 @@
 ---
 node_id: 4215
 title: RackConnect v3.0 requirements
-permalink: article/rackconnect-v30-requirements
 type: article
 created_date: '2014-08-28 13:48:31'
 created_by: juan.perez

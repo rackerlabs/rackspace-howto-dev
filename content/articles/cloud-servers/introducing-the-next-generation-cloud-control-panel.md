@@ -1,7 +1,6 @@
 ---
 node_id: 1355
 title: Introducing the Rackspace Cloud Control Panel
-permalink: article/introducing-the-next-generation-cloud-control-panel
 type: article
 created_date: '2012-03-27 17:44:33'
 created_by: RackKCAdmin
@@ -11,66 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-### Previous section
-
-[Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/getting-started/cloud-servers)
-
- 
-
-The[Cloud Control Panel](https://mycloud.rackspace.com) lets you manage
-your Rackspace Cloud infrastructure through a simple and intuitive
-interface. This article introduces you to some of the features of the
-control panel that will make your daily administration tasks seem
-effortless.
-
-Control panel navigation
-------------------------
-
-With a few clicks, you'll be in the product workspace where you can
-begin managing your cloud resources.
-
-**Navigation**
-
-Product area headings (Servers, Networking, Storage, Databases,
-Orchestration, and Backups) run across the top of the screen. To access
-individual products, click the heading to view a drop-down menu of all
-the products in that area. For example, the following image shows the
-menu for Servers.\
- \
-
-![](/knowledge_center/sites/default/files/field/image/Node1355-SCEdit.png)
-
-Rackspace Cloud products are categorized under the following headings:
-
-**Servers**
-
--   Cloud Servers
--   Saved Images
--   Auto Scale
--   SSH Keys
--   Message Queueing
--   Rackspace Intelligence
-
-**Networking**
-
--   Load Balancers
--   Networking
--   Cloud DNS
-
-**Storage**
-
--   Block Storage Volumes
--   Snapshots
--   Files
-
-**Databases**
-
--   Database Instances
--   Database Backups
--   Configurations
--   Object Rocket
--   Big Data Powered by Apache&trade; Hadoop&reg;
+undefined&reg;
 
 **Orchestration**
 

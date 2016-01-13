@@ -1,7 +1,6 @@
 ---
 node_id: 557
 title: Create a cron job to back up a Cloud Sites SQL Server database
-permalink: article/how-can-i-create-a-cron-job-to-backup-my-mssql-database
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: matt.costello

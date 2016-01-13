@@ -1,7 +1,6 @@
 ---
 node_id: 3191
 title: Rackspace Product Release Phases
-permalink: article/rackspace-product-release-phases
 type: article
 created_date: '2012-11-09 23:03:59'
 created_by: Tarun Bhatti

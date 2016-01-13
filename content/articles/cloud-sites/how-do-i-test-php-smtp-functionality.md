@@ -1,7 +1,6 @@
 ---
 node_id: 650
 title: Test PHP SMTP functionality
-permalink: article/how-do-i-test-php-smtp-functionality
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

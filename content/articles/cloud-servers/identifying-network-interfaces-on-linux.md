@@ -1,7 +1,6 @@
 ---
 node_id: 3348
 title: Identifying Network Interfaces on Linux
-permalink: article/identifying-network-interfaces-on-linux
 type: article
 created_date: '2013-03-15 16:12:59'
 created_by: jered.heeschen

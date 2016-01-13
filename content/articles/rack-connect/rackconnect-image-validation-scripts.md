@@ -1,7 +1,6 @@
 ---
 node_id: 3286
 title: RackConnect Image Validation Scripts
-permalink: article/rackconnect-image-validation-scripts
 type: article
 created_date: '2013-02-01 19:50:38'
 created_by: russell.lambert

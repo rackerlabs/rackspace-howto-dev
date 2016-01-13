@@ -1,7 +1,6 @@
 ---
 node_id: 545
 title: Enabling raw logging for a Cloud Sites website
-permalink: article/enabling-raw-logging-for-a-website
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

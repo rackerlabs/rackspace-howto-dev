@@ -1,7 +1,6 @@
 ---
 node_id: 92
 title: CentOS 6 - Apache and PHP Install
-permalink: article/centos-apache-and-php-install
 type: article
 created_date: '2011-03-09 18:24:07'
 created_by: RackKCAdmin
@@ -11,69 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-This article demonstrates how to install Apache and PHP on CentOS 6.
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 CentOS - Installing Apache and                                    |
-|     PHP5](#CentOS_-_Installing_Apache_and_PHP5)                          |
-| -   [2 Apache Install](#Apache_Install)                                  |
-| -   [3 ServerName](#ServerName)                                          |
-| -   [4 Firewall](#Firewall)                                              |
-| -   [5 Default Page](#Default_Page)                                      |
-| -   [6 Chkconfig](#Chkconfig)                                            |
-| -   [7 PHP5 Install](#PHP5_Install)                                      |
-+--------------------------------------------------------------------------+
-
-CentOS - Installing Apache and PHP5
------------------------------------
-
-CentOS comes with Apache v.2.2.3 and PHP v.5.1.6 and they are easily
-installed via the default CentOS Package Manager, yum.
-
-The advantage of using yum (as opposed to installing via source code) is
-that you will get any security updates (if and when distributed) and
-dependencies are automatically taken care of.
-
-Apache Install
---------------
-
-A basic Apache install is very easy:
-
-    sudo yum install httpd mod_ssl
-
-Oddly, the server does not start automatically when you install it so
-you have to do this by hand:
-
-    sudo /usr/sbin/apachectl start
-
-The first thing you will see is this error:
-
-    Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name,
-    using 127.0.0.1 for ServerName
-
-As you can see, the address 127.0.0.1 (or whatever address you see
-there, usually your main IP address) is used as the server name by
-default. It's a good idea to set the ServerName for the next time the
-server is started.
-
-Open the main Apache &ldquo;config&rdquo;:
-
-    sudo nano /etc/httpd/conf/httpd.conf
-
-Towards the end of the file you'll find a section that starts with
-ServerName and gives the example:
-
-    #ServerName www.example.com:80
-
-All you need to do is enter your Cloud Server host name or a
-fully-qualified domain name:
-
-    ServerName demo
-
-Note that my Cloud Server host name is &ldquo;demo&rdquo;.
+undefined&rdquo;.
 
 Now just reload Apache:
 

@@ -1,7 +1,6 @@
 ---
 node_id: 1491
 title: Cloud Load Balancer scheduling algorithms
-permalink: article/which-algorithm-should-i-use
 type: article
 created_date: '2012-07-24 00:09:00'
 created_by: RackKCAdmin

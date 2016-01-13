@@ -1,7 +1,6 @@
 ---
 node_id: 502
 title: VNC Install
-permalink: article/vnc-install
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 1331
 title: Getting Fanatical Support 7 - Live Chat
-permalink: article/getting-fanatical-support-7-live-chat
 type: article
 created_date: '2012-03-20 18:31:13'
 created_by: RackKCAdmin

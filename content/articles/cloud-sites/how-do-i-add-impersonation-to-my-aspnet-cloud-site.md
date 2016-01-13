@@ -1,7 +1,6 @@
 ---
 node_id: 69
 title: Add impersonation to your ASP.NET cloud site
-permalink: article/how-do-i-add-impersonation-to-my-aspnet-cloud-site
 type: article
 created_date: '2011-03-08 18:18:58'
 created_by: RackKCAdmin

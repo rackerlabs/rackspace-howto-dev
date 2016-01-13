@@ -1,7 +1,6 @@
 ---
 node_id: 3533
 title: How to contact Rackspace support
-permalink: support
 type: page
 created_date: '2013-06-17 16:42:57'
 created_by: Rackspace Support

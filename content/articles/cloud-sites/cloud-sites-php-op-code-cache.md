@@ -1,7 +1,6 @@
 ---
 node_id: 688
 title: Cloud Sites PHP Op-code Cache
-permalink: article/cloud-sites-php-op-code-cache
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

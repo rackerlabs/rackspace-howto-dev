@@ -1,7 +1,6 @@
 ---
 node_id: 3978
 title: Limits for Cloud Big Data
-permalink: article/what-are-the-limits-for-cloud-big-data
 type: article
 created_date: '2014-03-28 17:07:42'
 created_by: rose.contreras

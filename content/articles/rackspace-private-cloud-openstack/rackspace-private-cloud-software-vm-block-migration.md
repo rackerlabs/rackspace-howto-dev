@@ -1,7 +1,6 @@
 ---
 node_id: 3173
 title: Rackspace Private Cloud Software - VM Block Migration
-permalink: article/rackspace-private-cloud-software-vm-block-migration
 type: article
 created_date: '2012-11-05 18:03:20'
 created_by: Karin Levenstein

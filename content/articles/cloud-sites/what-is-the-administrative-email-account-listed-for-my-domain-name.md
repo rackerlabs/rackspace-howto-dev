@@ -1,7 +1,6 @@
 ---
 node_id: 726
 title: What is the administrative email account listed for my domain name?
-permalink: article/what-is-the-administrative-email-account-listed-for-my-domain-name
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

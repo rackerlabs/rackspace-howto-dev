@@ -1,7 +1,6 @@
 ---
 node_id: 1049
 title: 'Securing the Cloud: Addressing Cloud Computing Security Concerns with Private Cloud'
-permalink: article/securing-the-cloud-addressing-cloud-computing-security-concerns-with-private-cloud
 type: article
 created_date: '2011-03-27 21:39:41'
 created_by: RackKCAdmin

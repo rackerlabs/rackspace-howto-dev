@@ -1,7 +1,6 @@
 ---
 node_id: 270
 title: Basic Network Troubleshooting
-permalink: article/basic-network-troubleshooting
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

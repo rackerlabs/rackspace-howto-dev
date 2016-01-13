@@ -1,7 +1,6 @@
 ---
 node_id: 735
 title: Where can I view usage information for my account?
-permalink: article/where-can-i-view-usage-information-for-my-account
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

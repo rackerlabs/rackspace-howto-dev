@@ -1,7 +1,6 @@
 ---
 node_id: 1292
 title: Comparison of dedicated and cloud hosting
-permalink: article/dedicated-hosting-vs-cloud-hosting-comparison
 type: article
 created_date: '2012-02-21 18:12:14'
 created_by: RackKCAdmin
@@ -11,7 +10,7 @@ products: Cloud Servers
 body_format: full_html
 ---
 
-Rackspace&reg; offers both dedicated and cloud hosting solutions. Deciding
+undefined&reg; offers both dedicated and cloud hosting solutions. Deciding
 which is best for your particular scenario can be difficult. Following
 are important features to consider when choosing a hosting solution for
 your business.

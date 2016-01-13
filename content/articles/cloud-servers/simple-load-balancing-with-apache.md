@@ -1,7 +1,6 @@
 ---
 node_id: 105
 title: Simple Load Balancing with Apache
-permalink: article/simple-load-balancing-with-apache
 type: article
 created_date: '2011-03-09 19:22:30'
 created_by: RackKCAdmin

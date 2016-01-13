@@ -1,15 +1,64 @@
 ---
 node_id: 113
 title: Controlling access to Linux Cloud Sites based on the client IP address
-permalink: article/how-do-i-deny-certain-ip-addresses-from-accessing-my-site-on-cloud-sites
 type: article
 created_date: '2011-03-10 17:13:30'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-05 16:5645'
-last_modified_by: thomas.hester
+last_modified_date: '2016-01-12 19:1446'
+last_modified_by: kyle.laffoon
 products: Cloud Sites
 body_format: tinymce
 ---
+
+With updates being made to the Cloud Sites infrastucture, some users
+will need to update their rules to comply with Apache 2.4 .htaccess
+rules for blocking and/or allowing IP addresses to specific sites. The
+changes made from Apache 2.2 to Apache 2.4 allow a much simpler method
+of blocking IPs, and the previous method required for Cloud Sites is no
+longer necessary. Please keep in mind that these rules are only for the
+PHP 5.6 offering, as the PHP 5.3/5.4 offering still uses the legacy
+rules, archived at the bottom of this article, and will be phased out
+entirely as PHP 5.3/5.4 is removed from use.
+
+***\*The mod\_access\_compat Apache module is loaded in the Cloud Sites
+environment to allow the previously standard Allow/Deny directives
+without requiring SetEnvIf. This method, however, is deprecated and is
+discouraged as any future Apache updates could make the rules
+unusable.***
+
+To block a specific IP on a given site, the .htaccess file needs to use
+Require not IP \<IP or range\>, within a RequireAll directive, so that
+the rules can verify. Failure to use a Require directive will results in
+an Internal Server Error.
+
+    <RequireAll>
+    Require all granted
+    Require not ip 46.148.22.18
+    Require not ip 46.148.18.162
+    Require not ip 46.119.121.146
+    Require not ip 195.154.183.108
+    </RequireAll>
+
+To allow only a specific IP on a given site, the .htaccess file needs to
+use Require IP \<IP or range\>, but does not require a directive. You
+can also place a simple 403 error message for visitors not meeting the
+requirements.
+
+    Require ip 127.0.0.1
+    Require ip 10.5.55.123
+    ErrorDocument 403 "This site can only be accessed within the company network" 
+
+ 
+
+For further reading on more specific rules for blocking or allowing
+access by IP or host, please view the Apache 2.4 documentation for
+Access Control rules:
+
+[https://httpd.apache.org/docs/2.4/howto/access.html](https://httpd.apache.org/docs/2.4/howto/access.html)
+
+ 
+
+### ***The information below is deprecated as of Apache 2.4 and kept for archival purposes while the ORD datacenter is still able to use PHP 5.3/5.4. Users are encouraged to use PHP 5.6 and update their rules according to the above information.***
 
 On Cloud Sites, due to our unique hosting environment, we require an
 addition to the **Allow/Deny** instruction in the .htaccess file when
@@ -32,10 +81,11 @@ from the list below based on your requirements.
 
 #### Allowing only a certain IP/IP Addresses when your site is using SSL:
 
-    order deny,allow
-    deny from all
-    allow from env=allowclient
-    SetEnvIf X-FORWARDED-FOR ^000.000.000.000$ allowclient
+order deny,allow\
+ deny from all\
+ allow from 000.000.000.000
+
+ 
 
 Replace **000.000.000.000** with your IP address. This will only allow
 your IP address to access your site, and is a great way to develop your

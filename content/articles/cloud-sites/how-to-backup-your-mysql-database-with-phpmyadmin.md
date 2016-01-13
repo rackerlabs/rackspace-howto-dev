@@ -1,11 +1,10 @@
 ---
 node_id: 661
-title: How to backup your MySQL database with phpMyAdmin
-permalink: article/how-to-backup-your-mysql-database-with-phpmyadmin
+title: Backup your MySQL database with phpMyAdmin
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:3555'
+last_modified_date: '2016-01-12 20:1657'
 last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce

@@ -1,7 +1,6 @@
 ---
 node_id: 2133
 title: Set up your Outlook email client on Exchange 2010 via the Outlook Web App
-permalink: article/simple-email-setup-outlook-for-windows
 type: article
 created_date: '2012-09-07 20:27:06'
 created_by: Rae D. Cabello

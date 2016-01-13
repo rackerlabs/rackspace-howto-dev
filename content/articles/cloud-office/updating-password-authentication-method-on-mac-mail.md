@@ -1,7 +1,6 @@
 ---
 node_id: 3490
 title: Updating Password Authentication Method on Mac Mail
-permalink: article/updating-password-authentication-method-on-mac-mail
 type: article
 created_date: '2013-05-29 16:27:02'
 created_by: mawutor.amesawu
@@ -11,12 +10,7 @@ products: Cloud Office
 body_format: tinymce
 ---
 
-**Updating Password Authentication Method on Mac Mail\
-**
-
-To ensure Mac Mails's settings are properly configured:
-
-1. In Mac Mail, go to "**Mail**" \> "**Preferences**..."
+undefined1. In Mac Mail, go to "**Mail**" \> "**Preferences**..."
 
 ![](/knowledge_center/sites/default/files/field/image/1_49.png)\
 \

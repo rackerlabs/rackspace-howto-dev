@@ -1,7 +1,6 @@
 ---
 node_id: 2182
 title: Unsupported commands via CRON on Cloud Sites
-permalink: article/unsupported-commands-via-cron
 type: article
 created_date: '2012-09-20 16:19:15'
 created_by: Jason Swindle

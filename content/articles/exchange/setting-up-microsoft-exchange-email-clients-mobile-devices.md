@@ -1,7 +1,6 @@
 ---
 node_id: 1416
 title: Configure email clients and mobile devices for email hosted on Exchange
-permalink: article/setting-up-microsoft-exchange-email-clients-mobile-devices
 type: article
 created_date: '2012-05-27 07:14:17'
 created_by: Rae D. Cabello

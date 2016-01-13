@@ -1,7 +1,6 @@
 ---
 node_id: 707
 title: 'What does it mean when my domain name is "locked"?'
-permalink: article/what-does-it-mean-when-my-domain-name-is-locked
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

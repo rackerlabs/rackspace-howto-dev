@@ -1,11 +1,10 @@
 ---
 node_id: 660
-title: How to backup your MSSQL database with myLittleAdmin on Cloud Sites
-permalink: article/how-to-backup-your-mssql-database-with-mylittleadmin-on-cloud-sites
+title: Backup your MSSQL database with myLittleAdmin on Cloud Sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:3222'
+last_modified_date: '2016-01-12 20:1517'
 last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce
@@ -13,12 +12,12 @@ body_format: tinymce
 
 Follow the instructions below to backup your MSSQL database.
 
--   **Note: The Rackspace Cloud recommends using Internet Explorer when
-    managing your MSSQL databases via myLittleAdmin.**
--   ****Note: Our system will only allow one backup file to be stored at
-    one time. It may be necessary to go to "Manage Backup Files" and
-    delete any existing backup file before you can create a new
-    one. ****
+**Note:**The Rackspace Cloud recommends using Internet Explorer when
+managing your MSSQL databases via myLittleAdmin.
+
+****Note:****Our system will only allow one backup file to be stored at
+one time. It may be necessary to go to "Manage Backup Files" and delete
+any existing backup file before you can create a new one. 
 
 Backing Up Your MSSQL Database
 ------------------------------

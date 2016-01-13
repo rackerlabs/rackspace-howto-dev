@@ -1,7 +1,6 @@
 ---
 node_id: 1422
 title: Rackspace Webmail
-permalink: article/rackspace-webmail
 type: article
 created_date: '2012-05-27 16:35:25'
 created_by: RackKCAdmin

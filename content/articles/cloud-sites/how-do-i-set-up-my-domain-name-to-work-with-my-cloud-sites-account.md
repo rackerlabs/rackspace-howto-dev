@@ -1,7 +1,6 @@
 ---
 node_id: 646
 title: Set up your domain name to work with your Cloud Sites account
-permalink: article/how-do-i-set-up-my-domain-name-to-work-with-my-cloud-sites-account
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

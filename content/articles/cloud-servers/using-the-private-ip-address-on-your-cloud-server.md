@@ -1,7 +1,6 @@
 ---
 node_id: 149
 title: Using the Private IP Address on your Cloud Server
-permalink: article/using-the-private-ip-address-on-your-cloud-server
 type: article
 created_date: '2011-03-15 23:37:32'
 created_by: RackKCAdmin
@@ -11,8 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-Each Cloud Server comes with two addresses that are available for your
-use. One address is an external &rdquo;real-world&rdquo; IP address that is
+undefined&rdquo; IP address that is
 accessible from the Internet and the other is an internal or "private"
 IP address.  This internal IP address is on a network commonly called
 ServiceNet and is used within the Cloud.

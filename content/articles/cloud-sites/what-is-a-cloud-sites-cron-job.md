@@ -1,7 +1,6 @@
 ---
 node_id: 719
 title: What is a Cloud Sites cron job?
-permalink: article/what-is-a-cloud-sites-cron-job
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
@@ -11,7 +10,7 @@ products: Cloud Sites
 body_format: tinymce
 ---
 
-&ldquo;Cron&rdquo; is a scheduling service that enables you to execute a command or
+undefined&rdquo; is a scheduling service that enables you to execute a command or
 a script automatically, at a specified date and time. You can create a
 con job (also called a scheduled task) directly through your Rackspace
 Cloud control panel.

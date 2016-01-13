@@ -1,7 +1,6 @@
 ---
 node_id: 3174
 title: Cloud Sites FTP Connection Limits
-permalink: article/cloud-sites-ftp-connect-limits
 type: article
 created_date: '2012-11-05 18:41:02'
 created_by: Jason Swindle

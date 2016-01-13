@@ -1,7 +1,6 @@
 ---
 node_id: 1075
 title: Enable file downloads in Internet Explorer
-permalink: article/why-cant-i-download-files-in-internet-explorer
 type: article
 created_date: '2011-04-19 15:21:14'
 created_by: RackKCAdmin

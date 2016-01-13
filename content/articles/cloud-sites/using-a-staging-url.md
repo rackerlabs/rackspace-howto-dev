@@ -1,7 +1,6 @@
 ---
 node_id: 700
 title: Using a staging URL
-permalink: article/using-a-staging-url
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

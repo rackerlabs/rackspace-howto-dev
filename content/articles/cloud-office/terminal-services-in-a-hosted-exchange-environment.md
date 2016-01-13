@@ -1,7 +1,6 @@
 ---
 node_id: 3772
 title: Terminal Services in a Hosted Exchange Environment
-permalink: article/terminal-services-in-a-hosted-exchange-environment
 type: article
 created_date: '2013-11-12 23:14:00'
 created_by: milton.prado

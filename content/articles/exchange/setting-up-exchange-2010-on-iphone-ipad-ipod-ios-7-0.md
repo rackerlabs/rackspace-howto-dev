@@ -1,7 +1,6 @@
 ---
 node_id: 3790
 title: Manually configure iOS devices for email hosted on Exchange 2010
-permalink: article/setting-up-exchange-2010-on-iphone-ipad-ipod-ios-7-0
 type: article
 created_date: '2013-11-20 13:52:45'
 created_by: mawutor.amesawu

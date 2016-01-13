@@ -1,7 +1,6 @@
 ---
 node_id: 4446
 title: Add self-service password recovery to your Rackspace Email Webmail site
-permalink: article/add-self-service-password-recovery-to-your-rackspace-email-webmail-site
 type: article
 created_date: '2014-11-26 14:27:54'
 created_by: brian.hazzard

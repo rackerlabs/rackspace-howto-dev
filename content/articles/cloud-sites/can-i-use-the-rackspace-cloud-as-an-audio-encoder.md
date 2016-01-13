@@ -1,7 +1,6 @@
 ---
 node_id: 528
 title: Can I use The Rackspace Cloud as an audio encoder?
-permalink: article/can-i-use-the-rackspace-cloud-as-an-audio-encoder
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 3350
 title: Manually configure Windows Phone devices for email hosted on Exchange 2010
-permalink: article/setting-up-an-microsoft-exchange-activesync-account-on-a-windows-phone
 type: article
 created_date: '2013-03-18 13:43:49'
 created_by: mawutor.amesawu
@@ -11,10 +10,7 @@ products: Exchange
 body_format: tinymce
 ---
 
-The following steps are required to configure Microsoft Exchange
-Activesync on a Windows Phone:
-
-1. Locate the **Settings** options from within your application menu.\
+undefined1. Locate the **Settings** options from within your application menu.\
  \
  ![](/knowledge_center/sites/default/files/field/image/0000.png)\
  \

@@ -1,11 +1,10 @@
 ---
 node_id: 1183
-title: How Do I Update My Existing SSL Certificate
-permalink: article/how-do-i-update-my-existing-ssl-certificate
+title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16 17:01:03'
 created_by: chris.farmer
-last_modified_date: '2015-12-31 15:0204'
+last_modified_date: '2016-01-12 20:1015'
 last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce

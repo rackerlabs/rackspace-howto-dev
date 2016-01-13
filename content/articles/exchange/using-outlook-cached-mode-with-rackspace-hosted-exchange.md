@@ -1,7 +1,6 @@
 ---
 node_id: 4480
 title: Using Outlook Cached Mode with Rackspace Hosted Exchange
-permalink: article/using-outlook-cached-mode-with-rackspace-hosted-exchange
 type: article
 created_date: '2015-01-15 19:19:38'
 created_by: kevin.richey

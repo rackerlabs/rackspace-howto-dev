@@ -1,7 +1,6 @@
 ---
 node_id: 1146
 title: Domain Name Renewal
-permalink: article/domain-name-renewal
 type: article
 created_date: '2011-11-01 18:57:57'
 created_by: RackKCAdmin

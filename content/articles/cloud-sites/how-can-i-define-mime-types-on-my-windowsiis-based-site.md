@@ -1,7 +1,6 @@
 ---
 node_id: 558
 title: Define mime types on your Windows/IIS based site
-permalink: article/how-can-i-define-mime-types-on-my-windowsiis-based-site
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

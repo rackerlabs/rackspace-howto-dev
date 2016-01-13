@@ -1,7 +1,6 @@
 ---
 node_id: 3704
 title: Rackspace Reseller Program
-permalink: article/rackspace-reseller-program
 type: article
 created_date: '2013-09-23 20:20:34'
 created_by: Rackspace Support

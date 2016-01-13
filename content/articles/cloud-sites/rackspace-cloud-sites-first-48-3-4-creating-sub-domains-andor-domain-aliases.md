@@ -1,7 +1,6 @@
 ---
 node_id: 721
 title: Getting Started With Cloud Sites - Creating Sub-domains and/or Domain Aliases
-permalink: article/rackspace-cloud-sites-first-48-3-4-creating-sub-domains-andor-domain-aliases
 type: article
 created_date: '2011-03-23 19:28:09'
 created_by: RackKCAdmin

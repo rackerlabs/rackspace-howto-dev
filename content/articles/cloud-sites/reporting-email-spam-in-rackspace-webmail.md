@@ -1,7 +1,6 @@
 ---
 node_id: 180
 title: Report email spam in Rackspace webmail
-permalink: article/reporting-email-spam-in-rackspace-webmail
 type: article
 created_date: '2011-03-16 06:20:31'
 created_by: RackKCAdmin

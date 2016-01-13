@@ -1,7 +1,6 @@
 ---
 node_id: 1911
 title: Can I install Rackspace Private Cloud on virtual machines?
-permalink: frequently-asked-question/can-i-install-rackspace-private-cloud-software-on-a-virtual-machine
 type: frequently_asked_question
 created_date: '2012-08-07 18:37:44'
 created_by: Karin Levenstein

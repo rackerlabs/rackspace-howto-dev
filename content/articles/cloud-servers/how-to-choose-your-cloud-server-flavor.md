@@ -1,7 +1,6 @@
 ---
 node_id: 4383
 title: How to choose your cloud server flavor
-permalink: article/how-to-choose-your-cloud-server-flavor
 type: article
 created_date: '2014-10-24 13:12:56'
 created_by: TFDuesing

@@ -1,7 +1,6 @@
 ---
 node_id: 4512
 title: Dedicated VMware vCloud FAQ
-permalink: article/dedicated-vmware-vcloud-faq
 type: article
 created_date: '2015-01-29 16:10:32'
 created_by: Karin Levenstein

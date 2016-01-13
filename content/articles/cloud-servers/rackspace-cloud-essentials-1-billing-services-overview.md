@@ -1,7 +1,6 @@
 ---
 node_id: 1196
 title: Billing Services Overview
-permalink: article/rackspace-cloud-essentials-1-billing-services-overview
 type: article
 created_date: '2011-08-24 15:51:30'
 created_by: RackKCAdmin

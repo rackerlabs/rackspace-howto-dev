@@ -1,7 +1,6 @@
 ---
 node_id: 640
 title: Remove files older than a certain date in Cloud Sites
-permalink: article/how-do-i-remove-files-older-than-a-certain-date-like-logs-and-sessions
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

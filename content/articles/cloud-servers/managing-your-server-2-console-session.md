@@ -1,7 +1,6 @@
 ---
 node_id: 1356
 title: Start a Console session
-permalink: article/managing-your-server-2-console-session
 type: article
 created_date: '2012-03-27 18:24:50'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 227
 title: Tools that simplify the use of Cloud Files
-permalink: article/are-there-any-tools-to-simplify-the-use-of-cloud-files
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

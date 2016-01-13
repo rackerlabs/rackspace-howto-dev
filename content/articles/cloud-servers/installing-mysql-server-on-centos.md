@@ -1,11 +1,10 @@
 ---
 node_id: 1164
 title: Installing MySQL Server on CentOS
-permalink: article/installing-mysql-server-on-centos
 type: article
 created_date: '2011-07-29 14:59:03'
 created_by: jered.heeschen
-last_modified_date: '2015-12-31 14:5009'
+last_modified_date: '2016-01-11 16:0030'
 last_modified_by: stephanie.fillmon
 products: Cloud Servers
 body_format: full_html
@@ -396,8 +395,8 @@ learn more.
 
 ### Next steps
 
-[Basic MySQL server
-tasks](https://admin.rackspace.com/knowledge_center/article/basic-mysql-server-tasks)
+[Configuring MySQL server on
+CentOS](https://www.rackspace.com/knowledge_center/article/configuring-mysql-server-on-centos)
 
  
 

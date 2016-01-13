@@ -1,7 +1,6 @@
 ---
 node_id: 1060
 title: Cloud Sites Website Security
-permalink: article/cloud-sites-website-security
 type: article
 created_date: '2011-04-01 17:18:30'
 created_by: RackKCAdmin

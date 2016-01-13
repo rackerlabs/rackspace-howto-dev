@@ -1,7 +1,6 @@
 ---
 node_id: 1042
 title: What is Managed Colocation from Rackspace?
-permalink: article/what-is-managed-colocation-from-rackspace
 type: article
 created_date: '2011-03-25 14:24:51'
 created_by: RackKCAdmin
@@ -11,29 +10,7 @@ products: Dedicated
 body_format: tinymce
 ---
 
-[Managed
-Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)
-from Rackspace&reg; Hosting is all the things you want from traditional
-colocation, such as freedom and control, and none of the things you
-don't&mdash;like the hassles of infrastructure management. This means you no
-longer have to worry about:  
-
--   Physical data center (procurement of facility, maintenance,
-    security, cooling and power redundancy)
--   Network infrastructure (routing, switching)
--   Hardware procurement
--   Hardware setup (racking, cabling, routing, switching)
--   Hardware maintenance and break/fix (failed hardware replacement,
-    available spare inventory)
--   Vendor relations
-
-  **The Rackspace Difference**   When Rackspace takes care of these
-tasks, you can focus on higher value activities such as market
-differentiation and business innovation. Think of Managed Colocation as
-a Dedicated-Plus hosting solution. We set up a dedicated hardware
-environment, tailored to your company's needs, in one of our nine world
-class data centers around the globe. The "plus" part is that you also
-gain access to Rackspace&reg; optional services such as [Managed
+undefined&reg; optional services such as [Managed
 Backup](http://www.rackspace.com/managed_hosting/services/storage/managedbackup.php),
 Managed [Private
 Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)

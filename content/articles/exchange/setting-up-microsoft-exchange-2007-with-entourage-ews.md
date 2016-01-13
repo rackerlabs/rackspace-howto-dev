@@ -1,7 +1,6 @@
 ---
 node_id: 995
 title: Manually configure Entourage (EWS) for email hosted on Exchange 2007
-permalink: article/setting-up-microsoft-exchange-2007-with-entourage-ews
 type: article
 created_date: '2011-12-01 01:09:51'
 created_by: RackKCAdmin

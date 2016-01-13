@@ -1,7 +1,6 @@
 ---
 node_id: 3684
 title: Listing Cloud Queues
-permalink: article/listing-cloud-queues
 type: article
 created_date: '2013-09-16 20:27:05'
 created_by: megan.meza

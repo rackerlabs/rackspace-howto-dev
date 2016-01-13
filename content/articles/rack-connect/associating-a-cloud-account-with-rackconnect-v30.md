@@ -1,7 +1,6 @@
 ---
 node_id: 4679
 title: Associating a Cloud Account with RackConnect v3.0
-permalink: article/associating-a-cloud-account-with-rackconnect-v30
 type: article
 created_date: '2015-05-14 13:14:02'
 created_by: juan.perez

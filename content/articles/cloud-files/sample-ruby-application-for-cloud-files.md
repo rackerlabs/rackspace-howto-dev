@@ -1,7 +1,6 @@
 ---
 node_id: 249
 title: Sample Ruby Application for Cloud Files
-permalink: article/sample-ruby-application-for-cloud-files
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

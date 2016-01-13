@@ -1,7 +1,6 @@
 ---
 node_id: 1975
 title: Rackspace Private Cloud Backup and Recovery
-permalink: article/rackspace-private-cloud-backup-and-recovery
 type: article
 created_date: '2012-08-13 19:19:12'
 created_by: Karin Levenstein

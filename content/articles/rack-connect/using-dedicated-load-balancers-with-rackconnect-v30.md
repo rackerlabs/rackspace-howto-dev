@@ -1,7 +1,6 @@
 ---
 node_id: 4414
 title: Using dedicated load balancers with RackConnect v3.0
-permalink: article/using-dedicated-load-balancers-with-rackconnect-v30
 type: article
 created_date: '2014-11-11 17:43:04'
 created_by: juan.perez
@@ -11,63 +10,7 @@ products: RackConnect
 body_format: tinymce
 ---
 
-**Applies to**: RackConnect v3.0
-
-Load balancers distribute workloads across two or more servers, network
-links or other resources. This distribution maximizes throughput,
-minimizes response time and helps avoid overload. This article discusses
-the options that are available when you use dedicated load balancers
-with RackConnect v3.0.\
- \
-
-![](/knowledge_center/sites/default/files/field/image/Fig1-Ded.-LB-and-RCv3-Figure-Traffic-Flow-PNG-.5xhalf-border.png)
-
-### **Supported load balancers**
-
-With RackConnect v3.0, the dedicated F5 BIG-IP Local Traffic Manager
-(LTM) and Brocade ADX Series load balancers are now supported for use
-with the RackConnect automated pool membership management capabilities. 
-When your cloud servers host an application that scales up and down (for
-example, the web tier of an application), it is important to have a
-method for adding and removing cloud servers from their associated load
-balancer pools. If you use a dedicated load balancer with RackConnect,
-you can specify the load balancer pool that a cloud server should be
-placed in when it is created. When you delete the cloud server, it will
-automatically be removed from the pool.\
-  \
- RackConnect provides the following ways for you to associate your cloud
-servers with one or more load balancer pools:
-
--   [Use the Cloud Control Panel](#option1)
--   [Use the RackConnect v3.0 API](#Option2)
-
-### \
- **Use the Cloud Control Panel**
-
-After you initially create your cloud server by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/), the management page for the
-newly created cloud server is displayed. On this page, you can see
-details regarding your server.
-
-In the RackConnect Details section (located directly below the Server
-Details section), you have the option to manage (add or remove) the
-cloud server from a list of automation-compatible load balancer pools.
-
-![](/knowledge_center/sites/default/files/field/image/Fig2_REACH_RC_Detail_PNG_B.png)
-
-**To add a server to a load balancer pool**
-
-1.  In the RackConnect Details section of the cloud server&rsquo;s management
-    page, click **Select Pools**.\
-
-    ![](/knowledge_center/sites/default/files/field/image/Fig3_REACH_LB_Pool_Modal_PNG_smaller-border.png)
-2.  In the popup dialog box, select the check box for each load balancer
-    pool to which you want to add the cloud server.
-3.  Click **Save Selected Load Balancer Pool(s)** to save your changes.
-
-**To remove a server from a  load balancer pool**
-
-1.  In the RackConnect Details section of the cloud server&rsquo;s management
+undefined&rsquo;s management
     page, click **Select Pools**.
 2.  Clear the check box for each load balancer pool from which you want
     to remove the cloud server.

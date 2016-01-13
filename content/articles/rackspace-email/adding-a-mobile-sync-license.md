@@ -1,7 +1,6 @@
 ---
 node_id: 1387
 title: Adding a mobile sync license
-permalink: article/adding-a-mobile-sync-license
 type: article
 created_date: '2012-04-27 03:23:47'
 created_by: RackKCAdmin

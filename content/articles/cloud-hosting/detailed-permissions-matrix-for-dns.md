@@ -1,7 +1,6 @@
 ---
 node_id: 3393
 title: Detailed Permissions Matrix for DNS
-permalink: article/detailed-permissions-matrix-for-dns
 type: article
 created_date: '2013-04-10 16:16:15'
 created_by: renee.rendon

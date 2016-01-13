@@ -1,7 +1,6 @@
 ---
 node_id: 540
 title: Does Rackspace Cloud Sites provide raw log files for stats?
-permalink: article/does-the-rackspace-cloud-provide-raw-log-files-for-stats
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

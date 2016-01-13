@@ -1,7 +1,6 @@
 ---
 node_id: 1105
 title: Cloud Servers with Managed Operations support for Linux
-permalink: article/cloud-servers-with-managed-service-level-spheres-of-support
 type: article
 created_date: '2011-05-26 21:23:21'
 created_by: David Hendler

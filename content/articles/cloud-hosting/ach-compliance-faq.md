@@ -1,7 +1,6 @@
 ---
 node_id: 4637
 title: ACH compliance FAQ
-permalink: article/ach-compliance-faq
 type: article
 created_date: '2015-04-09 14:20:48'
 created_by: andrea.gillespie

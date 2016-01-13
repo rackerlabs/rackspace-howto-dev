@@ -1,7 +1,6 @@
 ---
 node_id: 3648
 title: 'Known Issues and Suggested Workarounds: Role-Based Access Control (RBAC)'
-permalink: article/known-issues-and-suggested-workarounds-role-based-access-control
 type: article
 created_date: '2013-08-16 21:20:33'
 created_by: renee.rendon

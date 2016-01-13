@@ -1,7 +1,6 @@
 ---
 node_id: 4124
 title: Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL 5.6
-permalink: article/upgrade-rackspace-cloud-database-to-mysql-56
 type: article
 created_date: '2014-07-03 18:40:09'
 created_by: rose.contreras

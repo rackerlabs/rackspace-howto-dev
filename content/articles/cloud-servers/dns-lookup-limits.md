@@ -1,7 +1,6 @@
 ---
 node_id: 4721
 title: Limits on DNS lookups
-permalink: article/dns-lookup-limits
 type: article
 created_date: '2015-06-16 16:57:01'
 created_by: David Hendler

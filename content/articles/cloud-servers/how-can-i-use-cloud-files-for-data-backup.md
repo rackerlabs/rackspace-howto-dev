@@ -1,7 +1,6 @@
 ---
 node_id: 236
 title: Back up data with Cloud Files
-permalink: article/how-can-i-use-cloud-files-for-data-backup
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

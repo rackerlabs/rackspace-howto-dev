@@ -1,7 +1,6 @@
 ---
 node_id: 538
 title: Rackspace Cloud Sites Essentials - MyLittleAdmin Database Management Interface
-permalink: article/rackspace-cloud-sites-essentials-4-mylittleadmin-database-management-interface
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

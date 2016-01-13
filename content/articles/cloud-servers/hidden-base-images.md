@@ -1,7 +1,6 @@
 ---
 node_id: 3753
 title: Hidden Base Images
-permalink: article/hidden-base-images
 type: article
 created_date: '2013-11-04 20:43:34'
 created_by: aclark
@@ -11,19 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-### What Happens to Old Images?
-
-In order to provide the best experience possible for our customers we
-carefully maintain the list of images displayed when building a new
-cloud server. This means that from time to time older versions of an
-operating system may be removed from the default list, usually shortly
-after a newer version is released. In general, we try to keep the most
-current and at least one previous release of each operating system we
-support.
-
-Images that have been publicly released are never actually deleted, so
-you can still access these older images by referencing the image ID
-directly through the Cloud Servers API.  If you&rsquo;re looking for an older
+undefined&rsquo;re looking for an older
 version of your favorite Linux distro you can probably locate it in the
 list below. Please be aware that these older images are no longer
 maintained and may not contain the most up-to-date patches and package

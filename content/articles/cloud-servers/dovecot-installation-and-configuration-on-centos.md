@@ -1,7 +1,6 @@
 ---
 node_id: 2009
 title: Dovecot installation and configuration on CentOS
-permalink: article/dovecot-installation-and-configuration-on-centos
 type: article
 created_date: '2012-08-15 19:17:35'
 created_by: lee.jelley

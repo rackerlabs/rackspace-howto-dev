@@ -1,7 +1,6 @@
 ---
 node_id: 3992
 title: 'Set up an API key: Cloud Office Control Panel'
-permalink: article/set-up-api-key-email-apps-control-panel
 type: article
 created_date: '2014-04-02 18:36:34'
 created_by: mawutor.amesawu

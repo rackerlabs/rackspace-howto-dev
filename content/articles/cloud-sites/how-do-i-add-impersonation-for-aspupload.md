@@ -1,12 +1,11 @@
 ---
 node_id: 581
-title: How do I add impersonation for ASPUpload
-permalink: article/how-do-i-add-impersonation-for-aspupload
+title: Add impersonation for ASPUpload on Cloud Sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2012-02-13 20:5302'
-last_modified_by: matt.wheeler
+last_modified_date: '2016-01-12 19:5632'
+last_modified_by: stephanie.fillmon
 products: Cloud Sites
 body_format: tinymce
 ---
@@ -36,10 +35,12 @@ it.
     </BODY>
     </HTML>
 
-\
+ 
 
 Create another file called UploadScript1.asp and save the following text
 below in it.
+
+ 
 
 -   Please note that **domain** is the data center your website is
     located at. It will either be **DFW**, or **ORD**.

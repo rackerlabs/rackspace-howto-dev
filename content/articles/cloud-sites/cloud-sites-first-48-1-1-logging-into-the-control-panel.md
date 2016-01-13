@@ -1,7 +1,6 @@
 ---
 node_id: 1242
 title: 'Getting Started With Cloud Sites, Logging into the Control Panel'
-permalink: article/cloud-sites-first-48-1-1-logging-into-the-control-panel
 type: article
 created_date: '2011-11-08 17:50:05'
 created_by: RackKCAdmin

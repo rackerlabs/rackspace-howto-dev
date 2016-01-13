@@ -1,7 +1,6 @@
 ---
 node_id: 4452
 title: RackConnect RegionLink FAQ
-permalink: article/rackconnect-regionlink-faq
 type: article
 created_date: '2014-12-04 07:01:34'
 created_by: sameer.satyam

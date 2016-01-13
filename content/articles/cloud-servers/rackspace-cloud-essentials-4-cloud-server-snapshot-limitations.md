@@ -1,7 +1,6 @@
 ---
 node_id: 1177
 title: Rackspace Cloud Essentials - Cloud Server Image Limitations
-permalink: article/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations
 type: article
 created_date: '2011-08-05 21:56:07'
 created_by: RackKCAdmin

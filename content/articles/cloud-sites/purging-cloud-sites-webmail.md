@@ -1,7 +1,6 @@
 ---
 node_id: 3669
 title: Purging Cloud Sites Webmail
-permalink: article/purging-cloud-sites-webmail
 type: article
 created_date: '2013-09-02 14:30:57'
 created_by: courtney.dunaway

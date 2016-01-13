@@ -1,7 +1,6 @@
 ---
 node_id: 117
 title: Supported SSL certificates on Cloud Sites
-permalink: article/what-kinds-of-ssl-certificates-can-be-installed-on-cloud-sites
 type: article
 created_date: '2011-03-10 17:24:46'
 created_by: RackKCAdmin

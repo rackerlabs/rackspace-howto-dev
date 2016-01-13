@@ -1,7 +1,6 @@
 ---
 node_id: 575
 title: View your SQL Server database in Management Studio 2008
-permalink: article/how-come-i-cannot-view-my-sql-server-database-in-management-studio-2008
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

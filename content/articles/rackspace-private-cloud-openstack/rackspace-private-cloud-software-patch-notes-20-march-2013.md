@@ -1,7 +1,6 @@
 ---
 node_id: 3354
 title: Rackspace Private Cloud Software Package Update - 20 March 2013
-permalink: article/rackspace-private-cloud-software-patch-notes-20-march-2013
 type: article
 created_date: '2013-03-19 14:07:50'
 created_by: Karin Levenstein

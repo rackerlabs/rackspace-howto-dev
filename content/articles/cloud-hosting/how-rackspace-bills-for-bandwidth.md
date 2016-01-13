@@ -1,7 +1,6 @@
 ---
 node_id: 3911
 title: How Rackspace Bills for Bandwidth
-permalink: article/how-rackspace-bills-for-bandwidth
 type: article
 created_date: '2014-02-19 21:23:43'
 created_by: rose.contreras

@@ -1,7 +1,6 @@
 ---
 node_id: 1373
 title: Getting Started With Rackspace Monitoring CLI
-permalink: article/getting-started-with-cloud-monitoring
 type: article
 created_date: '2012-04-04 17:00:22'
 created_by: RackKCAdmin

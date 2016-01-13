@@ -1,7 +1,6 @@
 ---
 node_id: 602
 title: Connect to Cloud Sites via SQL Server Management Studio Express
-permalink: article/how-do-i-connect-to-cloud-sites-via-mssql-management-studio
 type: article
 created_date: '2011-03-23 11:43:22'
 created_by: RackKCAdmin

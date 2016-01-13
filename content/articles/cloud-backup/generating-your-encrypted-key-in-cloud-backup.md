@@ -1,7 +1,6 @@
 ---
 node_id: 1291
 title: Generating Your Encrypted Key in Cloud Backup
-permalink: article/generating-your-encrypted-key-in-cloud-backup
 type: article
 created_date: '2012-02-20 23:39:42'
 created_by: RackKCAdmin

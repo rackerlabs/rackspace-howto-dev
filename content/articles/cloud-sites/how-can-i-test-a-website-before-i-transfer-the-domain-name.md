@@ -1,7 +1,6 @@
 ---
 node_id: 570
 title: Test your website before transferring the domain name to Cloud Sites
-permalink: article/how-can-i-test-a-website-before-i-transfer-the-domain-name
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 752
 title: Why was my request to change registrars rejected?
-permalink: article/why-was-my-request-to-change-registrars-rejected
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

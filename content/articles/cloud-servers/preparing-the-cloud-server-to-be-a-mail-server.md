@@ -1,7 +1,6 @@
 ---
 node_id: 418
 title: Preparing the Cloud Server to be a Mail Server
-permalink: article/preparing-the-cloud-server-to-be-a-mail-server
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

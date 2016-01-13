@@ -1,7 +1,6 @@
 ---
 node_id: 3985
 title: General information - Cloud Office control panel
-permalink: article/general-information-email-apps-control-panel
 type: article
 created_date: '2014-03-31 16:44:26'
 created_by: mawutor.amesawu

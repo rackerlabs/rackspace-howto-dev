@@ -1,7 +1,6 @@
 ---
 node_id: 269
 title: Basic Cloud Server use Scenarios
-permalink: article/basic-cloud-server-use-scenarios
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

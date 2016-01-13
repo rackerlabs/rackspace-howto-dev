@@ -1,7 +1,6 @@
 ---
 node_id: 829
 title: Add Rackspace Email Mailboxes
-permalink: article/adding-rackspace-email-mailboxes
 type: article
 created_date: '2011-12-18 01:09:51'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 932
 title: Add Multiple Contacts to Exchange
-permalink: article/add-multiple-contacts
 type: article
 created_date: '2011-03-18 01:09:51'
 created_by: RackKCAdmin

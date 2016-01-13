@@ -1,7 +1,6 @@
 ---
 node_id: 439
 title: Setting up a Mail Relay
-permalink: article/setting-up-a-mail-relay
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
@@ -11,53 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-Since IP addresses are dynamically assigned in cloud servers, the IP
-space has been declared unfit for email use. This means that major
-blacklist providers have stated that email coming from cloud servers
-should not be accepted. For this reason, email from Cloud Servers may
-not reliably get through to your intended recipients.
-
-To be able to send email reliably from your server, we recommend you
-sign up for a Rackspace Email account
-([http://www.rackspace.com/apps/email\_hosting/](http://www.rackspace.com/apps/email_hosting/ "http://www.rackspace.com/apps/email_hosting/")),
-use a relay service like
-[Mailgun](http://www.rackspace.com/knowledge_center/article/introduction-to-mailgun-email-automation),
-or use any email account that allows you to send email via secure SMTP
-authentication. You can then configure your server to send email through
-that account. This way, you are still able to send mail and avoid these
-issues.
-
-This article is here to help with that setup. For our example, we will
-show how to set up this relay with Rackspace Email and using the a
-smarthost, but the basic steps are the same for most email providers.
-This is specifically intended for system generated emails, like sign-up
-scripts, password conformation pages, etc. that you cannot otherwise
-easily route through an outside mail provider. Depending on your email
-needs, you may need to configure an account with a third party like
-Mailgun, Mailchimp, or SendGrid.
-
-For Managed Support customers, you can request support to do this for
-you. All we will need are the email server, the username and the
-password for the account you are going to send the mail to. For our
-other Cloud Servers customer, this article is intended to help you with
-the basic setup.
-
-Step by Step
-------------
-
-1. Install postfix and SASL tools
-:    
-
-For RHEL or CentOS:
-
-    yum install postfix cyrus-sasl-plain cyrus-sasl-md5
-
-For Ubuntu:
-
-    aptitude update
-    apt-get install postfix libsasl2-modules
-
-2. Configure Postfix
+undefined2. Configure Postfix
 
 Add the following to /etc/postfix/main.cf:
 

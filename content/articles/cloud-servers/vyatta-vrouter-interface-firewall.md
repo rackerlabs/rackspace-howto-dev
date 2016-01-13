@@ -1,7 +1,6 @@
 ---
 node_id: 4234
 title: 'Vyatta vRouter: Configure an interface firewall'
-permalink: article/vyatta-vrouter-interface-firewall
 type: article
 created_date: '2014-09-11 16:20:49'
 created_by: sameer.satyam
@@ -11,49 +10,7 @@ products: Cloud Servers
 body_format: tinymce
 ---
 
-Brocade Vyatta vRouter can be configured for two methods of firewall
-operations: interface-based firewalls and zone-based firewalls. Because
-it is the standard method of firewall deployment, this article describes
-how to configure an interface-based firewall.
-
-Use the following parameters for the configuration examples in this
-article:
-
-  -------- ------- ------------------
-  INSIDE   eth1    10.0.0.0/24
-  APP      eth2    172.16.10.0/24
-  DMZ      eth3    192.168.100.0/24
-  PUBLIC   eth0     
-  Local    local    
-  -------- ------- ------------------
-
- 
-
-Log in to the router
---------------------
-
-First, log in to the vRouter and put it into configuration mode.
-
-    configure
-
-Allow established and related traffic
--------------------------------------
-
-You need to configure a rule that allows all established (session) or
-related (ALG, FTP) traffic through the firewall. Otherwise, return
-traffic for established or related sessions cannot traverse the firewall
-policies. You can add these globally with a Global State Policy with the
-following statement:
-
-    set firewall state-policy established action accept set firewall state-policy related action accept
-
-Configure the firewall rule base
---------------------------------
-
-You need to configure the rule base that defines all the parameters of
-the firewall policy, and then you need to apply your rule base to the
-interface and the direction of the traffic. As with all other firewall
-rules, this rule base uses a &ldquo;first match&rdquo; policy, which means that you
+undefined&rdquo; policy, which means that you
 must add the most specific rules at the top of the list. The number of
 the rule dictates its position in the rule base.
 

@@ -1,7 +1,6 @@
 ---
 node_id: 1310
 title: Cloud Files - Uploading Large Files
-permalink: article/cloud-files-uploading-large-files
 type: article
 created_date: '2012-03-06 21:00:49'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 2097
 title: Troubleshooting Alarms
-permalink: article/troubleshooting-alarms
 type: article
 created_date: '2012-09-04 22:17:04'
 created_by: Susan Million

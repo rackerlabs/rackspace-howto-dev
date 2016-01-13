@@ -1,7 +1,6 @@
 ---
 node_id: 3970
 title: What is an SOA record?
-permalink: frequently-asked-question/what-is-a-soa-record
 type: frequently_asked_question
 created_date: '2014-03-25 19:34:21'
 created_by: nico4001

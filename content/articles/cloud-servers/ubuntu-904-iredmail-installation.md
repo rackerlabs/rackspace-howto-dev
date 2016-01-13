@@ -1,7 +1,6 @@
 ---
 node_id: 145
 title: Ubuntu 9.04 - iRedMail Installation
-permalink: article/ubuntu-904-iredmail-installation
 type: article
 created_date: '2011-03-15 19:17:01'
 created_by: RackKCAdmin

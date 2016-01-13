@@ -1,7 +1,6 @@
 ---
 node_id: 2056
 title: Multiple SSL Certificates on a Single RackConnected Cloud Server (PAT)
-permalink: article/multiple-ssl-certificates-on-a-single-rackconnected-cloud-server-pat
 type: article
 created_date: '2012-08-23 18:52:21'
 created_by: juan.perez

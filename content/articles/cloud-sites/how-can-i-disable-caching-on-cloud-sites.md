@@ -1,7 +1,6 @@
 ---
 node_id: 99
 title: Disable caching on Cloud Sites
-permalink: article/how-can-i-disable-caching-on-cloud-sites
 type: article
 created_date: '2011-03-09 18:49:15'
 created_by: RackKCAdmin

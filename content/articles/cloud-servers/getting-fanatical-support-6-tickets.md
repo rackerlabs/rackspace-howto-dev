@@ -1,7 +1,6 @@
 ---
 node_id: 1335
 title: Getting Fanatical Support 6 - Tickets
-permalink: article/getting-fanatical-support-6-tickets
 type: article
 created_date: '2012-03-23 23:35:44'
 created_by: RackKCAdmin

@@ -1,7 +1,6 @@
 ---
 node_id: 4387
 title: Cloud server name transitions
-permalink: article/cloud-server-name-transitions
 type: article
 created_date: '2014-10-28 18:10:40'
 created_by: TFDuesing

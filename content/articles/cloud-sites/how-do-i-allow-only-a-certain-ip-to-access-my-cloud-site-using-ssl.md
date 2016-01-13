@@ -1,7 +1,6 @@
 ---
 node_id: 585
 title: Allow a specific IP address to access your Cloud Sites site by using SSL
-permalink: article/how-do-i-allow-only-a-certain-ip-to-access-my-cloud-site-using-ssl
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin

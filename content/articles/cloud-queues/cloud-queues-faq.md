@@ -1,7 +1,6 @@
 ---
 node_id: 3690
 title: Cloud Queues FAQ
-permalink: article/cloud-queues-faq
 type: article
 created_date: '2013-09-18 16:28:37'
 created_by: megan.meza

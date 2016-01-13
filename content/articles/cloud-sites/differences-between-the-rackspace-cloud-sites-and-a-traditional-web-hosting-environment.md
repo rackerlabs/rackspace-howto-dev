@@ -1,7 +1,6 @@
 ---
 node_id: 535
 title: Differences between Rackspace Cloud Sites and a traditional web hosting environment
-permalink: article/differences-between-the-rackspace-cloud-sites-and-a-traditional-web-hosting-environment
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
