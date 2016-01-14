@@ -6,7 +6,7 @@ created_date: '2012-09-20 20:50:16'
 created_by: tom.hopkins
 last_modified_date: '2015-09-04 20:1359'
 last_modified_by: constanze.kratel
-products: Cloud Files
+product: Cloud Files
 body_format: full_html
 ---
 

@@ -4,9 +4,9 @@ title: Preparing the Cloud Server to be a Mail Server
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:4404'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
+last_modified_date: '2016-01-13 20:2157'
+last_modified_by: Nate.Archer
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -26,19 +26,17 @@ and Reverse DNS correctly set before we configure any sort of mail
 service. This article looks at the hostname and reverse DNS (RDNS)
 settings on the Cloud Server.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Assumptions](#Assumptions)                                        |
-| -   [2 Hostname](#Hostname)                                              |
-| -   [3 Reboot](#Reboot)                                                  |
-| -   [4 Reverse DNS](#Reverse_DNS)                                        |
-|     -   [4.1 Change Reverse DNS in the Control                           |
-|         Panel](#Change_Reverse_DNS_in_the_Control_Panel)                 |
-|     -   [4.2 Check the Reverse DNS](#Check_the_Reverse_DNS)              |
-| -   [5 Summary](#Summary)                                                |
-+--------------------------------------------------------------------------+
+Contents
+--------
+
+-   [1 Assumptions](#Assumptions)
+-   [2 Hostname](#Hostname)
+-   [3 Reboot](#Reboot)
+-   [4 Reverse DNS](#Reverse_DNS)
+    -   [4.1 Change Reverse DNS in the Control
+        Panel](#Change_Reverse_DNS_in_the_Control_Panel)
+    -   [4.2 Check the Reverse DNS](#Check_the_Reverse_DNS)
+-   [5 Summary](#Summary)
 
 Assumptions
 -----------

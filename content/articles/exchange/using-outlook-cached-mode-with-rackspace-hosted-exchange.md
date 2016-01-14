@@ -6,7 +6,7 @@ created_date: '2015-01-15 19:19:38'
 created_by: kevin.richey
 last_modified_date: '2015-01-20 15:0931'
 last_modified_by: David Hendler
-products: Exchange
+product: Exchange
 body_format: markdown_w_tinymce
 ---
 

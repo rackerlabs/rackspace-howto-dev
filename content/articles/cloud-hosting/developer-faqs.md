@@ -6,7 +6,7 @@ created_date: '2014-07-14 07:56:54'
 created_by: David Hendler
 last_modified_date: '2014-11-10 21:0941'
 last_modified_by: rose.contreras
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: full_html
 ---
 

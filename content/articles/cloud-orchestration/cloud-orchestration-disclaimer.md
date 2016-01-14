@@ -6,7 +6,7 @@ created_date: '2014-10-03 06:54:16'
 created_by: Rackspace Support
 last_modified_date: '2014-10-03 07:0943'
 last_modified_by: jered.heeschen
-products: Cloud Orchestration
+product: Cloud Orchestration
 body_format: tinymce
 ---
 

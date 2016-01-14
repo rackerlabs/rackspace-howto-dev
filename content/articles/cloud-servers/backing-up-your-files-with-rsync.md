@@ -4,10 +4,10 @@ title: Backing up your files with rsync
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:3946'
-last_modified_by: Nate.Archer
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-13 17:1634'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
+body_format: full_html
 ---
 
 undefined(a) is archive mode which basically keep the permission settings for
@@ -44,7 +44,6 @@ Output
 So from the command above, my storage server would start to output
 something like this:
 
-     
     receiving file list ...
     31345 files to consider
     ./

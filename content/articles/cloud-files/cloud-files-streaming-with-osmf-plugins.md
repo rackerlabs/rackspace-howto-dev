@@ -6,7 +6,7 @@ created_date: '2011-09-12 05:00:00'
 created_by: RackKCAdmin
 last_modified_date: '2014-10-14 14:2234'
 last_modified_by: kyle.laffoon
-products: Cloud Files
+product: Cloud Files
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2013-03-18 16:58:59'
 created_by: mawutor.amesawu
 last_modified_date: '2013-03-20 21:4338'
 last_modified_by: Rae D. Cabello
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

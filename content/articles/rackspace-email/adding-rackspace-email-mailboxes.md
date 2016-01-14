@@ -6,7 +6,7 @@ created_date: '2011-12-18 01:09:51'
 created_by: RackKCAdmin
 last_modified_date: '2015-09-23 16:0549'
 last_modified_by: Nate.Archer
-products: Rackspace Email
+product: Rackspace Email
 body_format: markdown_w_tinymce
 ---
 

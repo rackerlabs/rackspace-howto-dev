@@ -6,7 +6,7 @@ created_date: '2012-08-10 19:05:26'
 created_by: daniel.dispaltro
 last_modified_date: '2014-05-15 19:1614'
 last_modified_by: rose.contreras
-products: Cloud Monitoring
+product: Cloud Monitoring
 body_format: tinymce
 ---
 

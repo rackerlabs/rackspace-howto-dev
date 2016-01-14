@@ -6,7 +6,7 @@ created_date: '2012-05-23 05:20:09'
 created_by: Rae D. Cabello
 last_modified_date: '2014-12-29 21:5620'
 last_modified_by: jered.heeschen
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

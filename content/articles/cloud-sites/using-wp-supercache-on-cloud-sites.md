@@ -6,7 +6,7 @@ created_date: '2011-03-16 21:57:40'
 created_by: thomas.hester
 last_modified_date: '2014-10-15 21:2202'
 last_modified_by: jered.heeschen
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

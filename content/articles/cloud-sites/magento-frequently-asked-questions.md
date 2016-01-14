@@ -6,7 +6,7 @@ created_date: '2014-05-07 16:01:13'
 created_by: mike.hicklen
 last_modified_date: '2014-12-17 16:0924'
 last_modified_by: kyle.laffoon
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

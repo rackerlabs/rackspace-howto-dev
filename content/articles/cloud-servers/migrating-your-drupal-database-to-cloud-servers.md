@@ -4,14 +4,30 @@ title: Migrating your Drupal database to Cloud Servers
 type: article
 created_date: '2011-04-04 16:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 15:0957'
-last_modified_by: Nate.Archer
-products: Cloud Servers
+last_modified_date: '2016-01-13 18:4830'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
 This article will walk you through migrating your Drupal database from
 Cloud Sites to Cloud Servers.
+
+-   [Creating Your Cloud Server](#Creating_Your_Cloud_Server)
+-   [Connecting to the server](#Connecting_to_the_server)
+-   [Change Root Password](#Change_Root_Password)
+-   [Performing System Updates](#Performing_System_Updates)
+-   [Configure Time Zone](#Configure_Time_Zone)
+-   [Configure Firewall (iptables)](#Configure_Firewall_.28iptables.29)
+-   [Installing Apache](#Installing_Apache)
+-   [Install MySQL](#Install_MySQL)
+-   [Install phpMyAdmin](#Install_phpMyAdmin)
+-   [Download Your Drupal Database](#Download_Your_Drupal_Database)
+-   [Import Your Drupal Database](#Import_Your_Drupal_Database)
+-   [Setup Drupal User](#Setup_Drupal_User)
+-   [Modifying settings.php](#Modifying_settings.php)
+-   [Modify MySQL Configuration](#Modify_MySQL_Configuration)
+-   [Test Your Installation](#Test_Your_Installation)
 
 A few pieces of advice that should be noted before beginning:
 
@@ -26,30 +42,6 @@ A few pieces of advice that should be noted before beginning:
 -   This tutorial was built on a Cloud Server running Ubuntu 9.10
     (Karmic) with 512MB RAM. While this will work as a minimal setup it
     is recommended that you run a larger server (1GB or higher).
-
- 
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Creating Your Cloud Server](#Creating_Your_Cloud_Server)          |
-| -   [2 Connecting to the server](#Connecting_to_the_server)              |
-| -   [3 Change Root Password](#Change_Root_Password)                      |
-| -   [4 Performing System Updates](#Performing_System_Updates)            |
-| -   [5 Configure Time Zone](#Configure_Time_Zone)                        |
-| -   [6 Configure Firewall                                                |
-|     (iptables)](#Configure_Firewall_.28iptables.29)                      |
-| -   [7 Installing Apache](#Installing_Apache)                            |
-| -   [8 Install MySQL](#Install_MySQL)                                    |
-| -   [9 Install phpMyAdmin](#Install_phpMyAdmin)                          |
-| -   [10 Download Your Drupal Database](#Download_Your_Drupal_Database)   |
-| -   [11 Import Your Drupal Database](#Import_Your_Drupal_Database)       |
-| -   [12 Setup Drupal User](#Setup_Drupal_User)                           |
-| -   [13 Modifying settings.php](#Modifying_settings.php)                 |
-| -   [14 Modify MySQL Configuration](#Modify_MySQL_Configuration)         |
-| -   [15 Test Your Installation](#Test_Your_Installation)                 |
-+--------------------------------------------------------------------------+
 
 Creating Your Cloud Server
 --------------------------

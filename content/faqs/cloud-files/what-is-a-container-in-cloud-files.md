@@ -6,7 +6,7 @@ created_date: '2012-07-24 20:59:16'
 created_by: test_editor
 last_modified_date: '2014-05-22 16:3245'
 last_modified_by: rose.contreras
-products: Cloud Files
+product: Cloud Files
 body_format: tinymce
 ---
 

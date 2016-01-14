@@ -4,24 +4,11 @@ title: Other Cloud Server use Scenarios
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 15:1153'
-last_modified_by: Nate.Archer
-products: Cloud Servers
+last_modified_date: '2016-01-13 19:0304'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Host multiple websites](#Host_multiple_websites)                  |
-| -   [2 Cloud burst](#Cloud_burst)                                        |
-| -   [3 High Performance computing](#High_Performance_computing)          |
-| -   [4 Delivering Software as a Service                                  |
-|     solutions](#Delivering_Software_as_a_Service_solutions)              |
-+--------------------------------------------------------------------------+
-
- 
 
 ### Host multiple websites
 

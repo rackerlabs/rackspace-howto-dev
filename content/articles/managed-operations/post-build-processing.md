@@ -6,7 +6,7 @@ created_date: '2014-12-01 18:46:29'
 created_by: rose.contreras
 last_modified_date: '2015-07-09 22:1012'
 last_modified_by: rose.contreras
-products: Managed Operations
+product: Managed Operations
 body_format: full_html
 ---
 

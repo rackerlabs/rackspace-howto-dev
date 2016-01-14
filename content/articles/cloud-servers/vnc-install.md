@@ -4,9 +4,9 @@ title: VNC Install
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:0701'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
+last_modified_date: '2016-01-13 20:2824'
+last_modified_by: Nate.Archer
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -25,30 +25,28 @@ If you would like information about tunnelling VNC over SSH please visit
 
 * * * * *
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Install the Necessary Packages](#Install_the_Necessary_Packages)  |
-|     -   [1.1 Install Perl](#Install_Perl)                                |
-|     -   [1.2 Install X Windows](#Install_X_Windows)                      |
-|     -   [1.3 Install a Window Manager](#Install_a_Window_Manager)        |
-|         -   [1.3.1 KDE](#KDE)                                            |
-|         -   [1.3.2 GNOME](#GNOME)                                        |
-|         -   [1.3.3 TWM](#TWM)                                            |
-|     -   [1.4 Install VNC Server](#Install_VNC_Server)                    |
-| -   [2 Configuration](#Configuration)                                    |
-|     -   [2.1 Configure VNC](#Configure_VNC)                              |
-|     -   [2.2 Firewall](#Firewall)                                        |
-|     -   [2.3 Test the Server](#Test_the_Server)                          |
-|         -   [2.3.1 Switch to your User](#Switch_to_your_User)            |
-|         -   [2.3.2 Create a .vnc directory](#Create_a_.vnc_directory)    |
-|         -   [2.3.3 Create the xstartup file](#Create_the_xstartup_file)  |
-|         -   [2.3.4 Setup your VNC user](#Setup_your_VNC_user)            |
-|         -   [2.3.5 Start the VNC server](#Start_the_VNC_server)          |
-|         -   [2.3.6 Connect to your VNC](#Connect_to_your_VNC)            |
-|         -   [2.3.7 Stopping the VNC Server](#Stopping_the_VNC_Server)    |
-+--------------------------------------------------------------------------+
+Contents
+--------
+
+-   [1 Install the Necessary Packages](#Install_the_Necessary_Packages)
+    -   [1.1 Install Perl](#Install_Perl)
+    -   [1.2 Install X Windows](#Install_X_Windows)
+    -   [1.3 Install a Window Manager](#Install_a_Window_Manager)
+        -   [1.3.1 KDE](#KDE)
+        -   [1.3.2 GNOME](#GNOME)
+        -   [1.3.3 TWM](#TWM)
+    -   [1.4 Install VNC Server](#Install_VNC_Server)
+-   [2 Configuration](#Configuration)
+    -   [2.1 Configure VNC](#Configure_VNC)
+    -   [2.2 Firewall](#Firewall)
+    -   [2.3 Test the Server](#Test_the_Server)
+        -   [2.3.1 Switch to your User](#Switch_to_your_User)
+        -   [2.3.2 Create a .vnc directory](#Create_a_.vnc_directory)
+        -   [2.3.3 Create the xstartup file](#Create_the_xstartup_file)
+        -   [2.3.4 Setup your VNC user](#Setup_your_VNC_user)
+        -   [2.3.5 Start the VNC server](#Start_the_VNC_server)
+        -   [2.3.6 Connect to your VNC](#Connect_to_your_VNC)
+        -   [2.3.7 Stopping the VNC Server](#Stopping_the_VNC_Server)
 
 Install the Necessary Packages
 ------------------------------

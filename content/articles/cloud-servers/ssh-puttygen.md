@@ -4,27 +4,25 @@ title: Generating RSA Keys With SSH - PuTTYgen
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:4904'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-13 20:2335'
+last_modified_by: Nate.Archer
+product: Cloud Servers
+body_format: full_html
 ---
 
 This article provides steps for generating RSA keys by using PuTTYgen on
 Windows for secure SSH authentication with OpenSSH.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Introduction](#Introduction)                                      |
-| -   [2 Generate Keys](#Generate_Keys)                                    |
-|     -   [2.1 Use the Key Pair](#Usethekeypair)                           |
-|     -   [2.2 Specify Your SSH Key When Creating a New Cloud              |
-|         Server](#SpecifySSHonNew)                                        |
-| -   [3 Summary](#Summary)                                                |
-| -   [4 Related Articles](#RelatedArticles)                               |
-+--------------------------------------------------------------------------+
+Contents
+--------
+
+-   [1 Introduction](#Introduction)
+-   [2 Generate Keys](#Generate_Keys)
+    -   [2.1 Use the Key Pair](#Usethekeypair)
+    -   [2.2 Specify Your SSH Key When Creating a New Cloud
+        Server](#SpecifySSHonNew)
+-   [3 Summary](#Summary)
+-   [4 Related Articles](#RelatedArticles)
 
 Introduction
 ------------

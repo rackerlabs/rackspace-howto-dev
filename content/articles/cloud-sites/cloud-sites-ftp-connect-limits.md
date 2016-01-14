@@ -6,7 +6,7 @@ created_date: '2012-11-05 18:41:02'
 created_by: Jason Swindle
 last_modified_date: '2012-11-09 15:5753'
 last_modified_by: jered.heeschen
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

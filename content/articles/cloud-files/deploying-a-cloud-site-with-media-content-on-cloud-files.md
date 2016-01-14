@@ -4,9 +4,9 @@ title: Deploying a Cloud Site with media content on Cloud Files
 type: article
 created_date: '2011-04-04 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-05 16:0236'
+last_modified_date: '2016-01-13 16:4533'
 last_modified_by: stephanie.fillmon
-products: Cloud Files
+product: Cloud Files
 body_format: tinymce
 ---
 

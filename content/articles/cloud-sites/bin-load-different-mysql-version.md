@@ -6,7 +6,7 @@ created_date: '2014-05-07 02:57:15'
 created_by: matt.costello
 last_modified_date: '2014-06-23 22:3150'
 last_modified_by: rose.contreras
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

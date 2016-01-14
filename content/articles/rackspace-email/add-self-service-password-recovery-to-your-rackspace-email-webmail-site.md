@@ -6,7 +6,7 @@ created_date: '2014-11-26 14:27:54'
 created_by: brian.hazzard
 last_modified_date: '2015-09-14 21:2711'
 last_modified_by: kelly.holcomb
-products: Rackspace Email
+product: Rackspace Email
 body_format: full_html
 ---
 

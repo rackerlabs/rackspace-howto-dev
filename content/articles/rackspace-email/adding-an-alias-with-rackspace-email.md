@@ -6,7 +6,7 @@ created_date: '2012-01-18 01:09:51'
 created_by: Rae D. Cabello
 last_modified_date: '2015-12-29 19:4824'
 last_modified_by: Nate.Archer
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

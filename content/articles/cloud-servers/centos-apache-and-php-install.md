@@ -4,79 +4,94 @@ title: CentOS 6 - Apache and PHP Install
 type: article
 created_date: '2011-03-09 18:24:07'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:0049'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-14 03:2749'
+last_modified_by: kelly.holcomb
+product: Cloud Servers
+body_format: markdown_w_tinymce
 ---
 
-undefined&rdquo;.
+This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 comes with Apache 2.2.3 and PHP 5.1.6, and you can install them by using the default CentOS Package Manager, `yum`. The advantages of using `yum` (as opposed to installing by using source code) are that you get any security updates (if and when they are distributed) and dependencies are automatically taken care of.
 
-Now just reload Apache:
+- [Install Apache](#install-apache)
+- [Open the port to run Apache](#open-port)
+- [Test the Apache installation](#test-apache)
+- [Run chkconfig](#chkconfig)
+- [Install PHP](#install-php)
 
-    sudo /usr/sbin/apachectl restart
+## <a name="install-apache"></a>Install Apache
 
-And the warning has gone.
+1. Run the following command.
 
-Firewall
---------
+    `sudo yum install httpd mod_ssl`
 
-Notice that in some versions of CentOS, a firewall is installed by
-default which will block access to port 80, on which Apache runs. The
-following command will open this port:
+2. Because the server does not start automatically when you install Apache, you have to start it manually.
 
-    sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+    `sudo /usr/sbin/apachectl start`
 
-Remember to save your firewall rules after adding that instruction so
-your web server will be accessible the next time you reboot:
+  The following message is displayed:
 
-    sudo service iptables save
+    `Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName`
 
-Default Page
-------------
+ The IP address (shown in this example as 127.0.0.1) is used as the server name by default. In the following steps, set the server name for the next time the server is started.
 
-If you navigate to your Cloud Server IP address:
+3. Open the main Apache configuration file.
 
-    http://123.45.67.89
+    `sudo nano /etc/httpd/conf/httpd.conf`
 
-You will see the default CentOS Apache welcome screen:
+4. Toward the end of the file, locate the section that starts with `ServerName` and gives an example.
 
-![
-centos\_apache\_welcome.jpg](http://c458924.r24.cf2.rackcdn.com/Cent0SWelcome01.png)
+    `#ServerName www.example.com:80`
 
-This means the Apache install is a success.
+5. Enter your cloud server host name or a fully qualified domain name. In the following example, the host name is `demo`.
 
-Chkconfig
----------
+    `ServerName demo`
 
-Now that we have Apache installed and working properly, we need to make
-sure that it's set to start automatically when the Cloud Server is
-rebooted.
+6. Reload Apache.
 
-    sudo /sbin/chkconfig httpd on
+    `sudo /usr/sbin/apachectl restart`
 
-Let's check our work to confirm:
+## <a name="open-port"></a>Open the port to run Apache
 
+In some versions of CentOS, a firewall is installed by default that blocks access to port 80, on which Apache runs. 
+
+1. To open the port, run the following command.
+
+    `sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT`
+
+2. After adding that instruction, save your firewall rules so your web server will be accessible the next time you reboot.
+
+    `sudo service iptables save`
+
+## <a name="test-apache"></a>Test the Apache installation
+
+Navigate to your Cloud Server IP address (for example, `http://123.45.67.89`).
+
+If the default CentOS Apache welcome screen is displayed, the installation was successful.
+
+<img alt=" centos_apache_welcome.jpg" height="342" src="http://c458924.r24.cf2.rackcdn.com/Cent0SWelcome01.png" width="490" />
+
+## <a name="chkconfig"></a>Run chkconfig
+Now that Apache is installed and working, ensure that it is set to start automatically when the server is rebooted.
+
+1. Run the following command.
+
+    `sudo /sbin/chkconfig httpd on`
+
+2. Test to confirm that the setting works.
+
+    ```
     sudo /sbin/chkconfig --list httpd
     httpd           0:off        1:off  2:on    3:on    4:on    5:on    6:off
+    ```
 
-The setting works.
+## <a name="install-php"></a>Install PHP
 
-PHP5 Install
-------------
+1. Run the following command.
 
-Let's move on to the PHP5 install. I'm not going to install all the
-modules available, just a few common ones so you get the idea.
+    `sudo yum install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml`
 
-As before, due to using yum to install PHP5, any dependencies are taken
-care of:
+  The preceding command does not install all the modules available, just a few common ones.
 
-    sudo yum install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+2. Reload Apache.
 
-Once done, reload Apache:
-
-    sudo /usr/sbin/apachectl restart
-
- 
--
-
+    `sudo /usr/sbin/apachectl restart`

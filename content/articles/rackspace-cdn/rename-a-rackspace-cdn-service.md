@@ -6,7 +6,7 @@ created_date: '2015-05-11 16:01:54'
 created_by: catherine.richardson
 last_modified_date: '2015-05-18 16:4417'
 last_modified_by: kyle.laffoon
-products: Rackspace CDN
+product: Rackspace CDN
 body_format: tinymce
 ---
 

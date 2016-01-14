@@ -6,7 +6,7 @@ created_date: '2015-05-19 14:44:33'
 created_by: beau.bailey
 last_modified_date: '2015-07-27 14:4358'
 last_modified_by: kyle.laffoon
-products: Email Archiving
+product: Email Archiving
 body_format: tinymce
 ---
 

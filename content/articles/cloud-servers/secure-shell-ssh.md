@@ -4,29 +4,25 @@ title: Connecting to a server using SSH on Linux or Mac OS
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:5740'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-13 20:2445'
+last_modified_by: Nate.Archer
+product: Cloud Servers
+body_format: full_html
 ---
 
 This article provides the steps for connecting to your cloud server from
 a computer running Linux or Mac OS X by using SSH. It also discusses
 generating an SSH key and adding a public key to your server.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| 1.  [Introduction](#intro)                                               |
-| 2.  [Log in](#Log_in)                                                    |
-| 3.  [Generate a new SSH key pair](#SSH_keygen)                           |
-| 4.  [Add the public key to your cloud account](#pubkey)                  |
-| 5.  [Shortcut Configuration](#shortcut)                                  |
-| 6.  [Troubleshooting](#trouble)                                          |
-+--------------------------------------------------------------------------+
+Contents
+--------
 
- 
+1.  [Introduction](#intro)
+2.  [Log in](#Log_in)
+3.  [Generate a new SSH key pair](#SSH_keygen)
+4.  [Add the public key to your cloud account](#pubkey)
+5.  [Shortcut Configuration](#shortcut)
+6.  [Troubleshooting](#trouble)
 
 Introduction
 ------------

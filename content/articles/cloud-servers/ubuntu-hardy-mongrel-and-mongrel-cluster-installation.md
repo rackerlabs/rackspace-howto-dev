@@ -4,10 +4,10 @@ title: Ubuntu - Mongrel and mongrel cluster installation
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:0236'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-13 20:2555'
+last_modified_by: Nate.Archer
+product: Cloud Servers
+body_format: full_html
 ---
 
 There are variety of options open to the sysadmin when serving Ruby
@@ -27,22 +27,20 @@ mongrel\_cluster gem.
 Take each section at a time as each one builds on the previous
 explanation.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Prerequisites](#Prerequisites)                                    |
-| -   [2 Installation](#Installation)                                      |
-| -   [3 Mongrel basics](#Mongrel_basics)                                  |
-| -   [4 Mongrel Clusters](#Mongrel_Clusters)                              |
-|     -   [4.1 Installation](#Installation_2)                              |
-|     -   [4.2 Configuration](#Configuration)                              |
-| -   [5 YAML](#YAML)                                                      |
-| -   [6 Mongrel\_cluster basics](#Mongrel_cluster_basics)                 |
-| -   [7 init scripts](#init_scripts)                                      |
-| -   [8 Cluster control](#Cluster_control)                                |
-| -   [9 Summary](#Summary)                                                |
-+--------------------------------------------------------------------------+
+Contents
+--------
+
+-   [1 Prerequisites](#Prerequisites)
+-   [2 Installation](#Installation)
+-   [3 Mongrel basics](#Mongrel_basics)
+-   [4 Mongrel Clusters](#Mongrel_Clusters)
+    -   [4.1 Installation](#Installation_2)
+    -   [4.2 Configuration](#Configuration)
+-   [5 YAML](#YAML)
+-   [6 Mongrel\_cluster basics](#Mongrel_cluster_basics)
+-   [7 init scripts](#init_scripts)
+-   [8 Cluster control](#Cluster_control)
+-   [9 Summary](#Summary)
 
 Prerequisites
 -------------

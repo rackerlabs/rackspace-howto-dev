@@ -6,7 +6,7 @@ created_date: '2012-08-02 20:35:08'
 created_by: Rae D. Cabello
 last_modified_date: '2015-09-04 02:0911'
 last_modified_by: constanze.kratel
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 

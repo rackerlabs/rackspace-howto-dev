@@ -6,7 +6,7 @@ created_date: '2012-08-21 19:41:31'
 created_by: juan.perez
 last_modified_date: '2015-07-15 20:1948'
 last_modified_by: kelly.holcomb
-products: RackConnect
+product: RackConnect
 body_format: tinymce
 ---
 

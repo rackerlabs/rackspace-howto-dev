@@ -4,9 +4,9 @@ title: Ubuntu 9.04 - iRedMail Installation
 type: article
 created_date: '2011-03-15 19:17:01'
 created_by: RackKCAdmin
-last_modified_date: '2013-08-05 19:2304'
-last_modified_by: jered.heeschen
-products: Cloud Servers
+last_modified_date: '2016-01-13 16:4126'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -22,8 +22,7 @@ This tutorial assumes a few things:
 -   The current version of iRedMail at the time of writing is 0.6.0 and
     it is in **beta**.
 
-\
- **Read this before continuing:**
+**Read this before continuing:**
 
 Mail servers are complex pieces of software and can be difficult to
 setup and maintain. An improperly configured mail server could cause
@@ -35,61 +34,33 @@ Framework, and how mail servers/mail flow works. If you are not sure
 about any of these topics please read up before continuing otherwise you
 may run into problems and become frustrated very quickly.
 
- 
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Reverse DNS](#Reverse_DNS)                                        |
-| -   [2 Perl Locale Fix](#Perl_Locale_Fix)                                |
-| -   [3 Aptitude Update](#Aptitude_Update)                                |
-| -   [4 Setting the Host Name](#Setting_the_Host_Name)                    |
-| -   [5 Modify your Host File](#Modify_your_Host_File)                    |
-| -   [6 Reboot](#Reboot)                                                  |
-| -   [7 Enable Aptitude Sources](#Enable_Aptitude_Sources)                |
-| -   [8 Install Pre-requisite Packages](#Install_Pre-requisite_Packages)  |
-| -   [9 Enable ACL](#Enable_ACL)                                          |
-| -   [10 Remount the File System](#Remount_the_File_System)               |
-| -   [11 Switch to Root User](#Switch_to_Root_User)                       |
-| -   [12 Download iRedMail](#Download_iRedMail)                           |
-| -   [13 Uncompress iRedMail](#Uncompress_iRedMail)                       |
-| -   [14 Download Installation-Related                                    |
-|     Packages](#Download_Installation-Related_Packages)                   |
-| -   [15 Start the iRedMail Installer](#Start_the_iRedMail_Installer)     |
-|     -   [15.1 Welcome Screen](#Welcome_Screen)                           |
-|     -   [15.2 vmail User](#vmail_User)                                   |
-|     -   [15.3 Preferred Backend](#Preferred_Backend)                     |
-|     -   [15.4 MySQL Password](#MySQL_Password)                           |
-|     -   [15.5 vmail User Password](#vmail_User_Password)                 |
-|     -   [15.6 Virtual Domain](#Virtual_Domain)                           |
-|     -   [15.7 Domain Administrator](#Domain_Administrator)               |
-|     -   [15.8 Domain Administrator                                       |
-|         Password](#Domain_Administrator_Password)                        |
-|     -   [15.9 Add User for Domain](#Add_User_for_Domain)                 |
-|     -   [15.10 User Password for Domain](#User_Password_for_Domain)      |
-|     -   [15.11 SPF and DKIM](#SPF_and_DKIM)                              |
-|     -   [15.12 MySQL Options](#MySQL_Options)                            |
-|     -   [15.13 Default Language for                                      |
-|         WebMail](#Default_Language_for_WebMail)                          |
-|     -   [15.14 PostfixAdmin E-mail](#PostfixAdmin_E-mail)                |
-|     -   [15.15 Mail Alias for root](#Mail_Alias_for_root)                |
-|     -   [15.16 Begin Configuration](#Begin_Configuration)                |
-|     -   [15.17 iptables Configuration](#iptables_Configuration)          |
-|     -   [15.18 Start Postfix](#Start_Postfix)                            |
-| -   [16 Delete Setup Files](#Delete_Setup_Files)                         |
-| -   [17 Reboot](#Reboot_2)                                               |
-| -   [18 Setup SPF Record](#Setup_SPF_Record)                             |
-| -   [19 OPTIONAL: Create DKIM                                            |
-|     (DomainKey)](#OPTIONAL:_Create_DKIM_.28DomainKey.29)                 |
-| -   [20 OPTIONAL: Test DKIM](#OPTIONAL:_Test_DKIM)                       |
-| -   [21 Reboot](#Reboot_3)                                               |
-| -   [22 Access WebMail](#Access_WebMail)                                 |
-| -   [23 Information About Your Install](#Information_About_Your_Install) |
-| -   [24 Common Links](#Common_Links)                                     |
-| -   [25 Troubleshooting: View Mail                                       |
-|     Logs](#Troubleshooting:_View_Mail_Logs)                              |
-+--------------------------------------------------------------------------+
+-   [Reverse DNS](#Reverse_DNS)
+-   [Perl Locale Fix](#Perl_Locale_Fix)
+-   [Aptitude Update](#Aptitude_Update)
+-   [Setting the Host Name](#Setting_the_Host_Name)
+-   [Modify your Host File](#Modify_your_Host_File)
+-   [Reboot](#Reboot)
+-   [Enable Aptitude Sources](#Enable_Aptitude_Sources)
+-   [Install Pre-requisite Packages](#Install_Pre-requisite_Packages)
+-   [Enable ACL](#Enable_ACL)
+-   [Remount the File System](#Remount_the_File_System)
+-   [Switch to Root User](#Switch_to_Root_User)
+-   [Download iRedMail](#Download_iRedMail)
+-   [Uncompress iRedMail](#Uncompress_iRedMail)
+-   [Download Installation-Related
+    Packages](#Download_Installation-Related_Packages)
+-   [Start the iRedMail Installer](#Start_the_iRedMail_Installer)
+-   [Delete Setup Files](#Delete_Setup_Files)
+-   [Reboot](#Reboot_2)
+-   [Setup SPF Record](#Setup_SPF_Record)
+-   [OPTIONAL: Create DKIM
+    (DomainKey)](#OPTIONAL:_Create_DKIM_.28DomainKey.29)
+-   [OPTIONAL: Test DKIM](#OPTIONAL:_Test_DKIM)
+-   [Reboot](#Reboot_3)
+-   [Access WebMail](#Access_WebMail)
+-   [Information About Your Install](#Information_About_Your_Install)
+-   [Common Links](#Common_Links)
+-   [Troubleshooting: View Mail Logs](#Troubleshooting:_View_Mail_Logs)
 
 Reverse DNS
 -----------
@@ -111,7 +82,7 @@ Perl Locale Fix
 Our servers ship with no locale information so they are world-friendly.
 To install the locale information type the following:
 
-    # sudo aptitude install language-pack-en-base
+    # sudo aptitude install language-pack-en-base 
 
 Aptitude Update
 ---------------
@@ -120,7 +91,7 @@ Next we will make sure that our server is update to date software-wise.
 To do this we will run an Aptitude update:
 
     # sudo aptitude update
-    # sudo aptitude upgrade
+    # sudo aptitude upgrade 
 
 Setting the Host Name
 ---------------------
@@ -208,7 +179,7 @@ To save the file simply press **CTRL-X** followed by **Y** and **Enter**
 Now we need to test our source list changes. To do this type the
 following:
 
-    # sudo aptitude update
+    # sudo aptitude update 
 
 Install Pre-requisite Packages
 ------------------------------
@@ -222,7 +193,7 @@ package needs to be installed:
 
 <!-- -->
 
-    # sudo aptitude install acl
+    # sudo aptitude install acl 
 
 Enable ACL
 ----------
@@ -245,18 +216,12 @@ put a **\#** comment mark in front of it.
 If that line started with */dev/sda1* go to the bottom of the file and
 type or copy in the following line:
 
-~~~~ {style="border-style: initial; border-color: initial;"}
-/dev/sda1    /    ext3    errors=remount-ro,noatime,acl     0     1
-~~~~
+    /dev/sda1    /    ext3    errors=remount-ro,noatime,acl     0     1
 
 If the line started with */dev/xvda1* go to the bottom of the file and
 type or copy in the following line instead:
 
- 
-
-~~~~ {style="border-style: initial; border-color: initial;"}
-/dev/xvda1    /    ext3    errors=remount-ro,noatime,acl     0     1
-~~~~
+    /dev/xvda1    /    ext3    errors=remount-ro,noatime,acl     0     1
 
 Save the file with CTRL-X, then Y and Enter.
 
@@ -295,6 +260,7 @@ downloading this to the home directory of the current user.
 
     # cd ~
     # wget http://iredmail.googlecode.com/files/iRedMail-0.6.0.tar.bz2
+     
 
 Uncompress iRedMail
 -------------------
@@ -327,122 +293,95 @@ The moment has come! To start the installation type the following:
     # cd ~/iRedMail-0.6.0     (Note that the directory name may differ between versions)
     # bash iRedMail.sh
 
-### Welcome Screen
+1.  On the welcome screen, click **Yes **to continue.
+2.  You will be prompted for the home directory location for the *vmail*
+    user.
 
-You will see a welcome screen, press **Yes**.
+    The default value, /home/vmail, will be listed -- this is okay.
+    Simply press **Next** for the default option.
 
-### vmail User
+3.  You will be then asked which backend you would like to use: *MySQL*
+    or *OpenLDAP*.
 
-You will be prompted for the home directory location for the *vmail*
-user. The default value, /home/vmail, will be listed -- this is okay.
-Simply press **Next** for the default option.
+    For our example we will use MySQL as the backend, so highlight MySQL
+    and press the space-bar to select, then click **Next** to continue.
 
-### Preferred Backend
+4.  Enter your MySQL password and click **Next**.
+5.  Enter your *vmail* user password This will be a system user that
+    holds all of your mail. Type it and click **Next**.
+6.  You will be asked to enter your first virtual domain.
 
-You will be asked which backend you would like to use: *MySQL* or
-*OpenLDAP*. For our example we will use MySQL as the backend so
-highlight MySQL and press the space-bar to select, then press **Next**
-to continue.
+    This is the domain that you will be hosting mail for. Type in your
+    domain name (such as *mydomain.com*) and click **Next**.
 
-### MySQL Password
+7.  Enter the administrator name of your virtual domain.
 
-You will be prompted for your MySQL password. Enter it here and press
-**Next**.
+    The default value of *postmaster* is an industry standard and should
+    be used. This address will be *postmaster@mydomain.com* when the
+    installation is completed. click **Next**.
 
-### vmail User Password
+8.  Set a password for the above *postmaster* e-mail address.
+    Click **Next** after you have entered it.
+9.  Add the first user for your domain.
 
-You will be prompted for the *vmail* user password as well. This will be
-a system user that holds all of your mail. Type it and press **Next**.
+    This will be your first e-mail account such as *john.doe*. The full
+    e-mail address would be *john.doe@mydomain.com*. Enter the user name
+    here and click **Next**.
 
-### Virtual Domain
+10. Set a password for the user we just added.
 
-You will be asked to enter your first virtual domain. This is the domain
-that you will be hosting mail for. Type in your domain name (such as
-*mydomain.com*) and press **Next**.
+    You will see the full e-mail address at the top of the window. Type
+    in the password and click **Next**.
 
-### Domain Administrator
+11. You will be prompted if you would like to setup SPF (Sender Policy
+    Framework) and DKIM (DomainKeys Identified Mail).
 
-You will be prompted to enter the administrator name of your virtual
-domain. The default value of *postmaster* is an industry standard and
-should be used. This address will be *postmaster@mydomain.com* when the
-installation is completed. Press **Next**.
+    **SPF is highly recommended, but DKIM is optional and should only be
+    installed by more experienced users.** Uncheck DKIM if you are
+    unfamiliar with it. Keep in mind that these will require additional
+    DNS entries to be made. If you would like to use these simply
+    click **Next**. *We will walk you through setting up the SPF and
+    DKIM records later.*
 
-### Domain Administrator Password
+12. Because we are choosing MySQL as our backend we have a number of
+    administrative tools we can install. Those tools include
+    *phpMyAdmin*, *PostfixAdmin* and *AWstats*. We also have the ability
+    to select which WebMail client we would like to install.
 
-You will be prompted to enter a password for the above *postmaster*
-e-mail address. Press **Next** after you have entered it.
+    Our installation will choose the default options (Roundcubemail,
+    phpMyAdmin, PostfixAdmin and Awstats) so just click **Next**.
 
-### Add User for Domain
+13. Select a default language for WebMail and click **Next**.
+14. Set and e-mail address as the PostfixAdmin administrative e-mail.
 
-You will be asked to add your first user for your domain. This will be
-your first e-mail account such as *john.doe*. The full e-mail address
-would be *john.doe@mydomain.com*. Enter the user name here and press
-**Next**.
+    You can use the default *postmaster@mydomain.com* e-mail or use a
+    different address. Click **Next**.
 
-### User Password for Domain
+15. Set an e-mail address to use for the *root* user.
 
-Next you will be asked what password you would like to use for the user
-we just setup. You will see the full e-mail address at the top of the
-window. Type in the password and press **Next**.
+    This is where all system e-mail will be sent pertaining to the
+    system and the root user. Put in your e-mail address and
+    click **Next**. It is advised to use an e-mail address *NOT* hosted
+    on your mail server.
 
-### SPF and DKIM
+16. When you are prompted to continue with the installation, enter **Y**
+    and press **Enter**.
+17. You will be prompted at the end of the installation if you would
+    like to use the default iptables firewall configuration.
 
-You will be prompted if you would like to setup SPF (Sender Policy
-Framework) and DKIM (DomainKeys Identified Mail). **SPF is highly
-recommended, but DKIM is optional and should only be installed by more
-experienced users.** Uncheck DKIM if you are unfamiliar with it. Keep in
-mind that these will require additional DNS entries to be made. If you
-would like to use these simply press **Next**. *We will walk you through
-setting up the SPF and DKIM records later.*
+    If you have a brand new server simply press **Y** and then
+    **Enter**. *Do not do this if you have previously made modifications
+    to your iptables configuration.*
 
-### MySQL Options
+18. You will then be prompted if you would like to restart iptables.
 
-Because we are choosing MySQL as our backend we have a number of
-administrative tools we can install. Those tools include *phpMyAdmin*,
-*PostfixAdmin* and *AWstats*. We also have the ability to select which
-WebMail client we would like to install. Our installation will choose
-the default options (Roundcubemail, phpMyAdmin, PostfixAdmin and
-Awstats) so just click **Next**.
+    For now press **N** and press **Enter**.
 
-### Default Language for WebMail
+19. You will be asked if you would like to start Postfix now.
 
-You will be asked for your default language for WebMail. Select your
-language and press **Next**.
+    Press **N** and press **Enter**.
 
-### PostfixAdmin E-mail
-
-You will be asked what e-mail address to use for the PostfixAdmin
-administrative e-mail. You can use the default *postmaster@mydomain.com*
-e-mail or use a different address. Click **Next**.
-
-### Mail Alias for *root*
-
-You will be asked to put an e-mail address to use for the *root* user.
-This is where all system e-mail will be sent pertaining to the system
-and the root user. Put in your e-mail address and press **Next**. It is
-advised to use an e-mail address *NOT* hosted on your mail server.
-
-### Begin Configuration
-
-You will be prompted to continue with the installation. Press **Y** and
-then **Enter**.
-
-### iptables Configuration
-
-You will be prompted at the end of the installation if you would like to
-use the default iptables firewall configuration. If you have a brand new
-server simply press **Y** and then **Enter**. *Do not do this if you
-have previously made modifications to your iptables configuration.*
-
-You will then be prompted if you would like to restart iptables. For now
-press **N** and press **Enter**.
-
-### Start Postfix
-
-You will be asked if you would like to start Postfix now. Press **N**
-and press **Enter**.
-
-You installation should now be finished and you will be returned to a
+Your installation should now be finished and you will be returned to a
 shell prompt.
 
 Delete Setup Files
@@ -452,7 +391,7 @@ Before this server is ready to be used in a production environment it
 must be safely locked down and the setup files should be removed. This
 is easily accomplished with one *rm* statement.
 
-    # rm -f ~/iRedMail-0.6.0/config
+    # rm -f ~/iRedMail-0.6.0/config 
 
 Reboot
 ------
@@ -579,6 +518,6 @@ they are added in real-time. Your output may look like the output below:
     Jul  8 23:25:53 mail postfix/qmgr[4298]: 87F93D49DA: removed
 
 --[Kelly
-Koehn](/knowledge_center/index.php?title=User:Kkoehn&action=edit&redlink=1 "User:Kkoehn (page does not exist)")
+Koehn](/knowledge_center/index.php?title=User:Kkoehn&action=edit&redlink=1 "Kkoehn (page does not exist)")
 14:26, 9 July 2009 (CDT)
 

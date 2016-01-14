@@ -6,7 +6,7 @@ created_date: '2013-01-17 23:26:19'
 created_by: Rae D. Cabello
 last_modified_date: '2013-01-23 18:2223'
 last_modified_by: Rae D. Cabello
-products: Cloud Sites
+product: Cloud Sites
 body_format: full_html
 ---
 

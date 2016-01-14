@@ -6,7 +6,7 @@ created_date: '2012-05-23 05:18:04'
 created_by: Nicholas Fleisig
 last_modified_date: '2015-09-03 15:3622'
 last_modified_by: kyle.laffoon
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

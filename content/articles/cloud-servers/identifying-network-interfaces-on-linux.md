@@ -6,7 +6,7 @@ created_date: '2013-03-15 16:12:59'
 created_by: jered.heeschen
 last_modified_date: '2013-03-15 16:1346'
 last_modified_by: jered.heeschen
-products: Cloud Servers
+product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 

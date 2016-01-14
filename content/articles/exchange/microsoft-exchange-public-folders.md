@@ -6,7 +6,7 @@ created_date: '2012-02-06 18:08:12'
 created_by: RackKCAdmin
 last_modified_date: '2014-12-24 21:5046'
 last_modified_by: theresa.kinney
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

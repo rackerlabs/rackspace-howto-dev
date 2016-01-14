@@ -6,7 +6,7 @@ created_date: '2013-09-02 14:30:57'
 created_by: courtney.dunaway
 last_modified_date: '2014-11-13 18:1934'
 last_modified_by: David Hendler
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

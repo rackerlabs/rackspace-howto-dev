@@ -6,7 +6,7 @@ created_date: '2015-03-02 14:51:37'
 created_by: gerry.lecanu
 last_modified_date: '2015-06-02 16:2244'
 last_modified_by: David Hendler
-products: Rackspace Private Cloud - Microsoft Cloud Platform
+product: Rackspace Private Cloud - Microsoft Cloud Platform
 body_format: tinymce
 ---
 

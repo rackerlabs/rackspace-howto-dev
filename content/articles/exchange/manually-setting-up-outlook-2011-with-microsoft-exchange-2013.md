@@ -6,7 +6,7 @@ created_date: '2014-01-16 20:35:30'
 created_by: mawutor.amesawu
 last_modified_date: '2015-01-09 17:3544'
 last_modified_by: jered.heeschen
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

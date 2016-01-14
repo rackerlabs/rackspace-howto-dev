@@ -6,7 +6,7 @@ created_date: '2012-03-01 20:06:59'
 created_by: RackKCAdmin
 last_modified_date: '2012-03-01 20:4938'
 last_modified_by: test_stakeholder
-products: Cloud Servers
+product: Cloud Servers
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2012-07-24 22:15:44'
 created_by: Jerry Schwartz
 last_modified_date: '2015-09-03 20:2848'
 last_modified_by: constanze.kratel
-products: Cloud Servers
+product: Cloud Servers
 body_format: tinymce
 ---
 

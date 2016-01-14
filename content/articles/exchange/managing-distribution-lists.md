@@ -6,7 +6,7 @@ created_date: '2014-11-18 18:05:06'
 created_by: joanna.salazar
 last_modified_date: '2015-02-19 22:0833'
 last_modified_by: rose.contreras
-products: Exchange
+product: Exchange
 body_format: markdown_w_tinymce
 ---
 

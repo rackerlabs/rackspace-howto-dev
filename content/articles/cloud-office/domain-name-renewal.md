@@ -6,7 +6,7 @@ created_date: '2011-11-01 18:57:57'
 created_by: RackKCAdmin
 last_modified_date: '2016-01-08 13:3120'
 last_modified_by: kyle.laffoon
-products: Cloud Office
+product: Cloud Office
 body_format: tinymce
 ---
 

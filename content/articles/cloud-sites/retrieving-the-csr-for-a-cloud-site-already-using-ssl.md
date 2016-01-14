@@ -6,7 +6,7 @@ created_date: '2014-11-10 15:29:20'
 created_by: thomas.hester
 last_modified_date: '2015-03-05 14:5922'
 last_modified_by: rose.contreras
-products: Cloud Sites
+product: Cloud Sites
 body_format: markdown_w_tinymce
 ---
 

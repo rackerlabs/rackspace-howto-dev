@@ -4,9 +4,9 @@ title: Comparison of dedicated and cloud hosting
 type: article
 created_date: '2012-02-21 18:12:14'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 17:1414'
+last_modified_date: '2016-01-13 15:3211'
 last_modified_by: stephanie.fillmon
-products: Cloud Servers
+product: Cloud Hosting
 body_format: full_html
 ---
 

@@ -6,7 +6,7 @@ created_date: '2014-10-02 16:01:44'
 created_by: neha.verma
 last_modified_date: '2014-10-17 20:5948'
 last_modified_by: jered.heeschen
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 

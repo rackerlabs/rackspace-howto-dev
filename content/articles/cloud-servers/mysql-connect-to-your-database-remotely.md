@@ -4,28 +4,23 @@ title: MySQL - Connect to your database remotely
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2013-01-11 22:4322'
-last_modified_by: jered.heeschen
-products: Cloud Servers
+last_modified_date: '2016-01-13 18:5142'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
 This tutorial will walk you through setting up a user on your MySQL
 server to connect remotely.
 
+-   [Getting your IP address](#Getting_your_IP_address)
+-   [Granting Access](#Granting_Access)
+-   [Testing Remotely](#Testing_Remotely)
+-   [Notes](#Notes)
+
 The following items are assumed:
 
 -   You have access to login as the 'root' MySQL user
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Getting your IP address](#Getting_your_IP_address)                |
-| -   [2 Granting Access](#Granting_Access)                                |
-| -   [3 Testing Remotely](#Testing_Remotely)                              |
-| -   [4 Notes](#Notes)                                                    |
-+--------------------------------------------------------------------------+
 
 Getting your IP address
 -----------------------

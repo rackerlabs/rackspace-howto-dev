@@ -4,9 +4,9 @@ title: MySQL - Resetting a lost MySQL root password
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-09-10 15:4553'
-last_modified_by: constanze.kratel
-products: Cloud Servers
+last_modified_date: '2016-01-13 18:5313'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -17,18 +17,13 @@ new databases, setting access rules and so on.
 Losing one can be a difficult issue to encounter. Luckily, resetting the
 root password is easy as long as you have sudo access to the Server.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Not the Server root user](#Not_the_Server_root_user)              |
-| -   [2 Stop MySQL](#Stop_MySQL)                                          |
-| -   [3 Safe mode](#Safe_mode)                                            |
-| -   [4 Login](#Login)                                                    |
-| -   [5 Reset Password](#Reset_Password)                                  |
-| -   [6 Restart](#Restart)                                                |
-| -   [7 Login](#Login_2)                                                  |
-+--------------------------------------------------------------------------+
+-   [Not the Server root user](#Not_the_Server_root_user)
+-   [Stop MySQL](#Stop_MySQL)
+-   [Safe mode](#Safe_mode)
+-   [Login](#Login)
+-   [Reset Password](#Reset_Password)
+-   [Restart](#Restart)
+-   [Login](#Login_2)
 
 Not the Server root user
 ------------------------

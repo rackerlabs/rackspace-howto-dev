@@ -4,22 +4,11 @@ title: Basic Cloud Server use Scenarios
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2013-01-11 21:5417'
-last_modified_by: jered.heeschen
-products: Cloud Servers
+last_modified_date: '2016-01-13 18:2811'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Setting Up Websites](#Setting_Up_Websites)                        |
-| -   [2 Maintaining Databases](#Maintaining_Databases)                    |
-| -   [3 Sending And Receiving Mail](#Sending_And_Receiving_Mail)          |
-| -   [4 Developing and testing                                            |
-|     Applications](#Developing_and_testing_Applications)                  |
-+--------------------------------------------------------------------------+
 
 ### Setting Up Websites
 

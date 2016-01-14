@@ -6,7 +6,7 @@ created_date: '2011-03-25 14:24:51'
 created_by: RackKCAdmin
 last_modified_date: '2015-01-05 21:3115'
 last_modified_by: jered.heeschen
-products: Dedicated
+product: Dedicated
 body_format: tinymce
 ---
 

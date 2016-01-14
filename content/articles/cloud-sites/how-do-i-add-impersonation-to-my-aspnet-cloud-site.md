@@ -6,7 +6,7 @@ created_date: '2011-03-08 18:18:58'
 created_by: RackKCAdmin
 last_modified_date: '2015-12-29 16:0129'
 last_modified_by: stephanie.fillmon
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

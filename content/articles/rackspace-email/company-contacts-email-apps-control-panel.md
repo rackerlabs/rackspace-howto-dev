@@ -6,7 +6,7 @@ created_date: '2014-03-31 16:54:17'
 created_by: mawutor.amesawu
 last_modified_date: '2015-06-15 17:4841'
 last_modified_by: David Hendler
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

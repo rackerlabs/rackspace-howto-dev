@@ -6,7 +6,7 @@ created_date: '2012-07-24 00:35:53'
 created_by: RackKCAdmin
 last_modified_date: '2015-09-03 20:1820'
 last_modified_by: constanze.kratel
-products: Cloud Databases
+product: Cloud Databases
 body_format: full_html
 ---
 

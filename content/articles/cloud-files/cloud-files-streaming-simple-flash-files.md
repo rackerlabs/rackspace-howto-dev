@@ -1,138 +1,74 @@
 ---
 node_id: 77
-title: Cloud Files - Streaming Simple Flash Files
+title: Cloud Files - Streaming simple Flash files
 type: article
 created_date: '2011-03-08 19:30:04'
 created_by: RackKCAdmin
-last_modified_date: '2014-09-30 15:5124'
-last_modified_by: kyle.laffoon
-products: Cloud Files
-body_format: tinymce
+last_modified_date: '2016-01-13 19:4044'
+last_modified_by: kelly.holcomb
+product: Cloud Files
+body_format: markdown_w_tinymce
 ---
 
-***Note:** We've had some reports of problems getting the current
-version of FlowPlayer (3.2.14) working with Cloud Files and are
-investigating. We'll update this article when we have more information.*
+This tutorial describes how to stream media files from Cloud Files to a website. This tutorial assumes that you have a video file uploaded to Cloud Files and that the container it is in is public. This tutorial uses [FlowPlayer](http://flowplayer.org), which is an open source Flash video player registered under the GPL.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Overview](#Overview)                                              |
-| -   [2 What we need](#What_we_need)                                      |
-| -   [3 FlowPlayer](#FlowPlayer)                                          |
-| -   [4 The Cross Domain XML file](#The_Cross_Domain_XML_file)            |
-| -   [5 The xhtml](#The_xhtml)                                            |
-| -   [6 Lets test it out](#Lets_test_it_out)                              |
-+--------------------------------------------------------------------------+
+**Note:** We've had some reports of problems getting the current version of FlowPlayer (3.2.14) working with Cloud Files and are investigating. We'll update this article when we have more information.
 
-### Overview
+-   [Streaming](#streaming)                                              
+-   [Prerequisites](#prereqs)                                      
+-   [FlowPlayer](#flowplayer)                                          
+-   [The cross-domain XML file](#cross-domain-xml)            
+-   [The XHTML](#xhtml)                                            
+-   [Test it](#test-it)      
 
-In this tutorial we will cover how to stream media files from Cloud
-Files to a Web Site. This tutorial assumes you have a Video file
-uploaded to Cloud Files and the container it is in is public. We will be
-using [FlowPlayer](http://flowplayer.org "http://flowplayer.org"); it is
-an open source Flash Video Player registered under the GPL.
+## <a name="streaming"></a>Streaming
 
-### Streaming
+Cloud Files containers that are published and marked <strong>public</strong> are delivered over the [Akamai Technologies, Inc](http://www.akamai.com/) global content delivery network (CDN). For streaming flash files from your Cloud Files, Akamai provides pseudo streaming. You can find additionl information online, but a good explanation (in Flash) is provided at [http://www.longtailvideo.com/support/jw-player/28855/pseudo-streaming-in-flash/](http://www.longtailvideo.com/support/jw-player/28855/pseudo-streaming-in-flash/).
 
-Cloud Files containers published and marked **public** are delivered
-over [Akamai Technologies,
-Inc](http://www.akamai.com/ "http://www.akamai.com/").'s global Content
-Delivery Network (CDN). For streaming flash files from your Cloud Files,
-Akamai provides pseudo streaming. You can find additionl information
-online, but a great explanation (in Flash) is provided at:
-[http://www.longtailvideo.com/support/jw-player/28855/pseudo-streaming-in-flash/](http://www.longtailvideo.com/support/jw-player/28855/pseudo-streaming-in-flash/).
-\
-*"Pseudo-streaming works as follows: When the video is initially loaded,
-the player reads and stores a list of seek points as part of the video's
-metadata.  These seek points are offsets in the video (both in seconds
-and in bytes) at which a new keyframe starts)."*\
-\
-To accomplish this, Akamai's streaming supports the HTTP Range Header to
-identify those seek points. More information on the Range header is
-available: 
-[http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html\#sec14.35](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35).
-RTMP (Real Time Messaging Protocol) Streaming is not supported. \
-\
-There is a difference in the pseudo streaming and what Akamai offers
-with their iOS streaming. iOS Streaming is a form of adaptive streaming.
-\
-\
-"The encoder (or a separate segmented process) will produce H.264/AAC
-content in a sequent of small content segments, in MPEG-2 TS format
-(.ts).  There is also a m3u8 index file that references these segments;
-in the case of live content the M3U8 is continuously updated to reflect
-the latest content. \
-\
-More information is available at:
+> Pseudo-streaming works as follows: When the video is initially loaded, the player reads and stores a list of seek points as part of the video's metadata. These seek points are offsets in the video (both in seconds and in bytes) at which a new keyframe starts.
+
+To accomplish this, Akamai's streaming supports the HTTP Range header to identify those seek points. More information about the Range header is available at http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35. Real Time Messaging Protocol (RTMP) Streaming is not supported.
+
+There is a difference in the pseudo streaming and what Akamai offers with their iOS streaming. iOS Streaming is a form of adaptive streaming.
+
+> The encoder (or a separate segmented process) will produce H.264/AAC content in a sequent of small content segments, in MPEG-2 TS format (.ts). There is also a m3u8 index file that references these segments; in the case of live content the M3U8 is continuously updated to reflect the latest content.
+
+More information is available at the following links:
 
 -   [http://developer.apple.com/library/ios/\#technotes/tn2224/\_index.html](http://developer.apple.com/library/ios/#technotes/tn2224/_index.html)
 -   [http://www.akamai.com/dl/akamai/iphone\_wp.pdf](http://www.akamai.com/dl/akamai/iphone_wp.pdf)
 
- 
-
-#### Supported Formats/Codecs
+### Supported formats/codecs
 
 The following formats are supported by Akamai streaming.
 
-+--------------------+--------------------+--------------------+--------------------+
-| **Container**      | **Video Codec**    | **Audio Codec**    | **Comments**       |
-+--------------------+--------------------+--------------------+--------------------+
-| FLV                | H.263              | MP4                | Video only works   |
-|                    |                    |                    | as well.           |
-|                    | H.264              | AAC                |                    |
-|                    |                    |                    | For Nellymoser,    |
-|                    | VP6                | PCM                | only the           |
-|                    |                    |                    |                    |
-|                    |                    | Nellymoser         | 8khz and 16khz     |
-|                    |                    |                    | mono               |
-|                    |                    |                    |                    |
-|                    |                    |                    | sound formats are  |
-|                    |                    |                    | supported.         |
-+--------------------+--------------------+--------------------+--------------------+
-| F4V                | H.264              | AAC                |  N/A               |
-+--------------------+--------------------+--------------------+--------------------+
-| MP4                | H.264              | AAC                | Can be audio-only  |
-|                    |                    |                    | (AAC) or           |
-|                    |                    | MP3                | video-only.        |
-+--------------------+--------------------+--------------------+--------------------+
-| F4F/F4M            | H.264              | AAC                |  N/A               |
-|                    |                    |                    |                    |
-|                    | VP6                | MP3                |                    |
-+--------------------+--------------------+--------------------+--------------------+
+Container  | Video Codec  | Audio Codec  | Comments 
+--- | --- | --- | ---
+FLV  | H.263 </br> H.264 </br> VP6 | MP4 </br> AAC </br> PCM </br> Nellymoser | Video-only works as well. For Nellymoser, only the 8khz and 16khz mono sound formats are supported.
+F4V  | H.264  | AAC |  None 
+MP4 | H.264  | AAC </br> MP3 | Can be audio-only (AAC) or video-only.
+F4F/F4M  | H.264 </br> VP6  | AAC </br> MP3 |  None
 
-### What we need
+## <a name="prereqs"></a>Prerequisites
 
--   FlowPlayer found at
-    [http://mediapm.edgesuite.net/flow/](http://mediapm.edgesuite.net/flow/).
--   A .flv video.
--   A text editor.
+-   FlowPlayer found at [http://mediapm.edgesuite.net/flow/](http://mediapm.edgesuite.net/flow/)
+-   A **.flv** video
+-   A text editor
 
-### FlowPlayer
+## <a name="flowplayer"></a>FlowPlayer
 
--   Head to the [Akamai
-    FlowPlayer](http://mediapm.edgesuite.net/flow/ "http://flowplayer.org")
-    website.
--   Download the Free Version of FlowPlayer
--   Save the File to your Desktop
--   Unpack the Zip File to your Desktop
+1. Go to the [Akamai FlowPlayer](http://mediapm.edgesuite.net/flow/ "http://flowplayer.org") website.
+2. Download the free version of FlowPlayer.
+3. Save the file to your desktop.
+4. Unpack the zip file to your desktop.
+5. Upload the following files to Cloud Files by using the Cloud Control Panel:
+  -   **flowplayer-*version*.swf**
+  -   **flowplayer-*version*.min.js**
+  -   **flowplayer.controls-*version*.swf**
 
-The Files we need are as follows. (this was written using FlowPlayer
-3.5)
+## <a name="cross-domain-xml"></a>The cross-domain XML file
 
--   flowplayer-(version).swf
--   flowplayer-(version).min.js
--   flowplayer.controls-(version).swf
-
-Go Ahead and upload these to Cloud Files using the control panel.
-
-### The Cross Domain XML file
-
-The Cross domain XML file allows you to specify what domains are allowed
-to Grab Data from the CDN. This is so people cannot hotlink your content
-unless you let them. Here is an example of a simple cross domain XML
-file that allows ALL domains to call these flash files
+The cross-domain XML file enables you to specify what domains are allowed to get data from the CDN, so that people cannot hotlink your content unless you let them. Following is an example of a simple cross-domain XML file that allows all domains to call these Flash files:
 
     <?xml version="1.0"?>
      <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"> 
@@ -142,16 +78,13 @@ file that allows ALL domains to call these flash files
        <allow-http-request-headers-from domain="*" headers="SOAPAction"/>
       </cross-domain-policy>
 
-For more info on Cross domain XML files take a look at [Adobe's
-Website](http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html "http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html")
+For more information about cross-domain XML files, see [Adobe's website](http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html "http://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html")
 
-Go ahead and save this file in your text editor as crossdomain.xml and
-upload it to the same Cloud Files Container.
+Save this file in your text editor as **crossdomain.xml** and upload it to the same Cloud Files container as the previous files.
 
-### The xhtml
+## <a name="xhtml"></a>The XHTML 
 
-Now we will make a simple xhtml file that will call this flash player
-and embeds it onto the page here is the code.
+Now you can create a simple XHTML file that calls this Flash player and embeds it onto the page here. Following is the code:
 
     <html>
      <head>
@@ -169,22 +102,10 @@ and embeds it onto the page here is the code.
      </body>
     </html>
 
--   On line 3 please replace
-    http://c022320192.cdn.cloudfiles.rackspacecloud.com/flowplayer-3.5.min.js
-    with your version of this file.
--   On line 7 please replace
-    http://c022320192.cdn.cloudfiles.rackspacecloud.com/video.flv to the
-    location of your video file.
--   Finally on line 12 replace
-    http://c022320192.cdn.cloudfiles.rackspacecloud.com/flowplayer-3.5.swf
-    with your version of this file.
--   Go grab a party hat its time to celebrate we are almost done =)
+- On line 3, replace `http://c022320192.cdn.cloudfiles.rackspacecloud.com/flowplayer-3.5.min.js` with your version of this file.
+- On line 7, replace `http://c022320192.cdn.cloudfiles.rackspacecloud.com/video.flv` with the location of your video file.
+- On line 12, replace `http://c022320192.cdn.cloudfiles.rackspacecloud.com/flowplayer-3.5.swf` with your version of this file.
 
-### Let's test it out
+## <a name="test-it"></a>Test it
 
-Go ahead and save this xhtml file and run it from your local machine. If
-all is well you should see the flash video load up quickly and stream
-away. If not double check your code. If you are still having problems
-after that give our support a call or submit a ticket via the Cloud
-Control Panel.  We would love to help!
-
+Save this XHTML file and run it from your local machine. If it is working correctly, you should see the Flash video load quickly and stream. If not, check your code. If you are still having problems after that, call our Support team or submit a ticket via the Cloud Control Panel.

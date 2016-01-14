@@ -6,7 +6,7 @@ created_date: '2013-04-10 16:05:06'
 created_by: renee.rendon
 last_modified_date: '2015-05-26 13:1148'
 last_modified_by: kyle.laffoon
-products: Cloud Load Balancers
+product: Cloud Load Balancers
 body_format: tinymce
 ---
 

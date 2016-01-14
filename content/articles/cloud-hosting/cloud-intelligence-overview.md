@@ -6,7 +6,7 @@ created_date: '2015-05-14 19:41:25'
 created_by: constanze.kratel
 last_modified_date: '2015-07-13 13:0912'
 last_modified_by: rose.coste
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

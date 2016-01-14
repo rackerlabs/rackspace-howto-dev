@@ -6,7 +6,7 @@ created_date: '2014-02-14 19:52:54'
 created_by: trenton.guthrie
 last_modified_date: '2014-10-30 20:2756'
 last_modified_by: kyle.laffoon
-products: Cloud Block Storage
+product: Cloud Block Storage
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2013-09-20 20:17:58'
 created_by: Marco Salazar
 last_modified_date: '2015-05-01 16:2437'
 last_modified_by: kelly.holcomb
-products: Exchange
+product: Exchange
 body_format: full_html
 ---
 

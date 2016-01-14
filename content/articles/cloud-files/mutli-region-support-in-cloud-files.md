@@ -6,7 +6,7 @@ created_date: '2012-09-12 18:31:38'
 created_by: David Hendler
 last_modified_date: '2014-12-23 19:0132'
 last_modified_by: rose.contreras
-products: Cloud Files
+product: Cloud Files
 body_format: tinymce
 ---
 

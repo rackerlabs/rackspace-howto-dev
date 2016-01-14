@@ -4,9 +4,9 @@ title: Connecting to Linux from Windows by using PuTTY
 type: article
 created_date: '2011-03-08 18:11:06'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 19:5815'
-last_modified_by: kyle.laffoon
-products: Cloud Servers
+last_modified_date: '2016-01-14 15:4002'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -14,8 +14,6 @@ body_format: tinymce
 
 [Getting Started with Cloud
 Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
-
- 
 
 After you have [created a new cloud
 server](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-a-cloud-server)
@@ -27,8 +25,8 @@ server.
 
 **Notes**:
 
--   For an OnMetal Server, see the [Using OnMetal Cloud
-    Servers](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers)
+-   For an OnMetal Server, see the [Create OnMetal Cloud
+    Servers](https://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers)
     article for applicable OnMetal steps.
 -   This procedure requires you to install PuTTY or another SSH client
     which you do at your own risk.  PuTTY is not affiliated with

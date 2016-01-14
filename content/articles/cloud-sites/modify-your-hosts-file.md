@@ -6,13 +6,20 @@ created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
 last_modified_date: '2015-09-18 21:0739'
 last_modified_by: kyle.laffoon
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined&ndash; local host). Add your new mappings after the default mappings.
-5.  Save the hosts file by pressing **Control+x** and answering **y**.
-6.  Make your changes take effect by flushing the DNS cache with the
+undefined&otilde;es tenham efeito, esvaziar o cache DNS com o
+    seguinte comando:\
+     \
+     dscacheutil -flushcache\
+     \
+     6. Agora, aplique o novo mapeamento.
+
+
+
+ake effect by flushing the DNS cache with the
     following command:
 
         dscacheutil -flushcache

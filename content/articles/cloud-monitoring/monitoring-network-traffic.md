@@ -6,7 +6,7 @@ created_date: '2012-04-04 20:18:26'
 created_by: RackKCAdmin
 last_modified_date: '2016-01-11 22:2452'
 last_modified_by: rose.contreras
-products: Cloud Monitoring
+product: Cloud Monitoring
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2012-07-25 20:37:22'
 created_by: test_editor
 last_modified_date: '2012-09-19 18:5230'
 last_modified_by: tom.hopkins
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

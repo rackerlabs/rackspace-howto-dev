@@ -6,7 +6,7 @@ created_date: '2012-05-27 16:35:25'
 created_by: RackKCAdmin
 last_modified_date: '2015-12-31 20:1810'
 last_modified_by: stephanie.fillmon
-products: Rackspace Email
+product: Rackspace Email
 body_format: full_html
 ---
 

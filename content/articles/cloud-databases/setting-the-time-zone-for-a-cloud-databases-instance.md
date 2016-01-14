@@ -6,7 +6,7 @@ created_date: '2014-04-23 18:30:17'
 created_by: jered.heeschen
 last_modified_date: '2014-11-21 22:0354'
 last_modified_by: jered.heeschen
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 

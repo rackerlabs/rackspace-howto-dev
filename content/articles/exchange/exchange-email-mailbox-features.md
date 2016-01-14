@@ -6,7 +6,7 @@ created_date: '2014-08-25 23:26:22'
 created_by: Marco Salazar
 last_modified_date: '2014-08-29 20:3748'
 last_modified_by: kyle.laffoon
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

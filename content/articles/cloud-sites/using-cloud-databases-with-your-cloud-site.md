@@ -6,7 +6,7 @@ created_date: '2012-08-01 19:30:50'
 created_by: chris.farmer
 last_modified_date: '2014-11-13 16:5513'
 last_modified_by: David Hendler
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

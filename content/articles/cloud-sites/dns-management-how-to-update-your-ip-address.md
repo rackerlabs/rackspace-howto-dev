@@ -6,7 +6,7 @@ created_date: '2011-09-27 15:41:06'
 created_by: RackKCAdmin
 last_modified_date: '2014-11-12 23:2100'
 last_modified_by: David Hendler
-products: Cloud Sites
+product: Cloud Sites
 body_format: markdown_w_tinymce
 ---
 

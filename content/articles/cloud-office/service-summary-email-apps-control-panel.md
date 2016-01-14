@@ -6,7 +6,7 @@ created_date: '2014-03-31 17:42:53'
 created_by: mawutor.amesawu
 last_modified_date: '2014-11-12 19:2029'
 last_modified_by: rose.contreras
-products: Cloud Office
+product: Cloud Office
 body_format: full_html
 ---
 

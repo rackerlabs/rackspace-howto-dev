@@ -6,7 +6,7 @@ created_date: '2013-04-22 18:06:14'
 created_by: Rackspace Support
 last_modified_date: '2013-04-30 18:4834'
 last_modified_by: evan.nabors
-products: Cloud Servers
+product: Cloud Servers
 body_format: tinymce
 ---
 

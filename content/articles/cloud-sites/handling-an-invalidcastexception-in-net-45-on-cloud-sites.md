@@ -6,7 +6,7 @@ created_date: '2012-12-14 20:40:26'
 created_by: jered.heeschen
 last_modified_date: '2013-02-04 20:0246'
 last_modified_by: jered.heeschen
-products: Cloud Sites
+product: Cloud Sites
 body_format: markdown_w_tinymce
 ---
 

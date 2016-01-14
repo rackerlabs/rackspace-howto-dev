@@ -6,7 +6,7 @@ created_date: '2015-04-09 14:20:48'
 created_by: andrea.gillespie
 last_modified_date: '2015-05-01 15:4842'
 last_modified_by: kyle.laffoon
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2012-09-04 22:17:04'
 created_by: Susan Million
 last_modified_date: '2013-12-11 19:1454'
 last_modified_by: kyle.laffoon
-products: Cloud Monitoring
+product: Cloud Monitoring
 body_format: tinymce
 ---
 

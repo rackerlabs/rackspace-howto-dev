@@ -6,7 +6,7 @@ created_date: '2012-08-07 18:39:00'
 created_by: Karin Levenstein
 last_modified_date: '2012-08-15 03:4414'
 last_modified_by: Rae D. Cabello
-products: Rackspace Private Cloud - OpenStack
+product: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
 

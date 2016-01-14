@@ -6,7 +6,7 @@ created_date: '2012-09-11 19:19:57'
 created_by: megan.meza
 last_modified_date: '2015-09-04 19:5520'
 last_modified_by: constanze.kratel
-products: RackConnect
+product: RackConnect
 body_format: tinymce
 ---
 

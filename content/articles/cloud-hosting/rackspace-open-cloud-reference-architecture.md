@@ -6,7 +6,7 @@ created_date: '2012-08-10 16:21:31'
 created_by: Rae D. Cabello
 last_modified_date: '2015-04-24 15:0227'
 last_modified_by: David Hendler
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

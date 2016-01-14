@@ -6,7 +6,7 @@ created_date: '2013-09-23 20:20:34'
 created_by: Rackspace Support
 last_modified_date: '2013-09-24 12:5135'
 last_modified_by: Liz Staplefoote
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

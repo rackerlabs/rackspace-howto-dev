@@ -6,7 +6,7 @@ created_date: '2012-02-28 01:09:51'
 created_by: aaron.medrano
 last_modified_date: '2015-01-09 21:5545'
 last_modified_by: jered.heeschen
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

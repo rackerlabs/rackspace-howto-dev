@@ -6,7 +6,7 @@ created_date: '2011-04-04 21:57:40'
 created_by: David Hendler
 last_modified_date: '2014-11-12 14:1600'
 last_modified_by: rose.contreras
-products: Cloud Files
+product: Cloud Files
 body_format: full_html
 ---
 

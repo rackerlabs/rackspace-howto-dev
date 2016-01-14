@@ -4,9 +4,9 @@ title: Basic Network Troubleshooting
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:5709'
-last_modified_by: Nate.Archer
-products: Cloud Servers
+last_modified_date: '2016-01-13 18:3533'
+last_modified_by: stephanie.fillmon
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -17,17 +17,9 @@ networking problems can be solved by logging into the web console
 (through your The Rackspace Cloud Control Panel) and running a few
 simple commands.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 ifconfig](#ifconfig)                                              |
-|     -   [1.1 Common Problems](#Common_Problems)                          |
-| -   [2 iptables](#iptables)                                              |
-|     -   [2.1 Common Problems](#Common_Problems_2)                        |
-| -   [3 route](#route)                                                    |
-|     -   [3.1 Common Problems](#Common_Problems_3)                        |
-+--------------------------------------------------------------------------+
+-   [ifconfig](#ifconfig)
+-   [iptables](#iptables)
+-   [route](#route)
 
 ip addr show
 ------------

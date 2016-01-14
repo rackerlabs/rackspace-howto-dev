@@ -6,7 +6,7 @@ created_date: '2011-03-27 21:35:33'
 created_by: RackKCAdmin
 last_modified_date: '2013-11-01 19:0135'
 last_modified_by: jered.heeschen
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

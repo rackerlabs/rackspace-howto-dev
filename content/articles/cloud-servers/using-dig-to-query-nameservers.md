@@ -6,7 +6,7 @@ created_date: '2013-05-28 16:55:15'
 created_by: jered.heeschen
 last_modified_date: '2013-06-18 13:1025'
 last_modified_by: kyle.laffoon
-products: Cloud Servers
+product: Cloud Servers
 body_format: tinymce
 ---
 

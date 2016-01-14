@@ -6,7 +6,7 @@ created_date: '2014-01-15 18:54:37'
 created_by: Rackspace Support
 last_modified_date: '2014-01-21 00:5534'
 last_modified_by: ross.diaz
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 

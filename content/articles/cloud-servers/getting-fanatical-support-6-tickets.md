@@ -6,7 +6,7 @@ created_date: '2012-03-23 23:35:44'
 created_by: RackKCAdmin
 last_modified_date: '2015-08-13 14:1101'
 last_modified_by: stephanie.fillmon
-products: Cloud Servers
+product: Cloud Servers
 body_format: full_html
 ---
 

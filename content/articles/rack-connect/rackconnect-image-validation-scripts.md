@@ -6,7 +6,7 @@ created_date: '2013-02-01 19:50:38'
 created_by: russell.lambert
 last_modified_date: '2013-02-08 00:0711'
 last_modified_by: jered.heeschen
-products: RackConnect
+product: RackConnect
 body_format: tinymce
 ---
 

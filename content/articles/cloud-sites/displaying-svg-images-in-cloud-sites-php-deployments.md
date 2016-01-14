@@ -6,7 +6,7 @@ created_date: '2013-12-18 19:09:32'
 created_by: bryon.farris
 last_modified_date: '2013-12-19 21:1322'
 last_modified_by: ross.diaz
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

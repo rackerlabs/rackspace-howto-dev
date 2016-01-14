@@ -6,7 +6,7 @@ created_date: '2011-03-09 18:56:15'
 created_by: RackKCAdmin
 last_modified_date: '2011-08-17 14:5654'
 last_modified_by: matt.wheeler
-products: 'Cloud Servers,Cloud Sites'
+product: Multiple
 body_format: tinymce
 ---
 

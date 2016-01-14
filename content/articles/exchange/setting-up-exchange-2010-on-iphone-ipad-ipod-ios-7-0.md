@@ -6,7 +6,7 @@ created_date: '2013-11-20 13:52:45'
 created_by: mawutor.amesawu
 last_modified_date: '2015-03-05 18:1840'
 last_modified_by: rose.contreras
-products: Exchange
+product: Exchange
 body_format: markdown_w_tinymce
 ---
 

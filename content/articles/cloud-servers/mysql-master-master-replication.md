@@ -4,9 +4,9 @@ title: MySQL Master-Master Replication
 type: article
 created_date: '2011-06-07 19:06:14'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 18:5411'
-last_modified_by: stephanie.fillmon
-products: Cloud Servers
+last_modified_date: '2016-01-14 15:4615'
+last_modified_by: kyle.laffoon
+product: Cloud Servers
 body_format: tinymce
 ---
 

@@ -6,7 +6,7 @@ created_date: '2012-11-09 23:03:59'
 created_by: Tarun Bhatti
 last_modified_date: '2012-11-10 00:4320'
 last_modified_by: jered.heeschen
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

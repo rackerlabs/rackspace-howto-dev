@@ -6,7 +6,7 @@ created_date: '2013-04-10 16:16:15'
 created_by: renee.rendon
 last_modified_date: '2014-10-30 20:3417'
 last_modified_by: David Hendler
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

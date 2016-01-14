@@ -9,246 +9,252 @@ last_modified_by: max8147
 body_format: tinymce
 ---
 
-<p>Authors:<br />
-Mahesh Gande, Senior Solutions Manager<br />
-Francis Ofungwu, Product Manager for Rackspace Security Solutions<br />
-Jarret Raim, Rackspace Cloud Security Product Manager<br />
-Lizetta Staplefoote, Online Content Strategist</p>
+<p>Autores:<br />
+Mahesh Gande, gerente sênior de soluções<br />
+Francis Ofungwu, gerente de produto das soluções de segurança Rackspace<br />
+Jarret Raim, gerente de produtos de segurança da nuvem Rackspace<br />
+Lizetta Staplefoote, estrategista de conteúdo on-line</p>
 
-<p><strong>1. INTRODUCTION</strong></p>
+<p><strong>1. INTRODUÇÃO</strong></p>
 
-<p>Meeting Payment Card Industry – Data Security Standards (PCI-DSS) can be a complex and costly exercise for the average e-commerce merchant. This may explain why 96% of 2011 breach victims were not compliant as of their last assessment or had never been validated.<sup>1</sup></p>
+<p>Atender à norma de segurança do setor de cartões de pagamento (PCI-DSS, na sigla em inglês) pode ser um exercício caro e complexo para uma empresa média de comércio eletrônico. Isso pode explicar por que 96% das vítimas de violação em 2011 não estavam em conformidade desde sua última avaliação ou nunca foram validadas.<sup>1</sup></p>
 
-<p>There is no one-size-fits-all approach to achieving and maintaining compliance. Merchants without the expertise to execute an effective compliance program should seek guidance from external partners to supplement their knowledge gaps and infrastructure deficiencies.</p>
+<p>Não há uma abordagem universal para que a conformidade seja obtida e mantida. Comerciantes sem a expertise necessária para executar um programa de conformidade eficaz devem procurar a orientação de parceiros externos para complementar suas lacunas de conhecimento e deficiências de infraestrutura.</p>
 
-<p><strong>2. THE 12 REQUIREMENTS OF PCI-DSS COMPLIANCE</strong></p>
+<p><strong>2. OS 12 REQUISITOS DE CONFORMIDADE COM A PCI-DSS</strong></p>
 
-<p>PCI-DSS is a set of comprehensive requirements for enhancing payment account data security. The standard was developed by the PCI Security Standards Council, which includes American Express, Discover Financial Services, JCB International, MasterCard Worldwide and Visa to help facilitate the broad adoption of consistent data security measures on a global basis.<br />
+<p>A PCI-DSS é um conjunto de requisitos abrangentes para melhorar a segurança dos dados em contas de pagamento. A norma foi desenvolvida pelo PCI Security Standards Council, que inclui American Express, Discover Financial Services, JCB International, MasterCard Worldwide e Visa, a fim de facilitar a adoção ampla e global de medidas consistentes na segurança de dados.<br />
 <br />
-<strong><em>82% of breached operations weren’t compliant with PCI-DSS standards for protection of stored data</em></strong><sup><strong><em>2</em></strong></sup></p>
+<strong><em>82% das operações violadas não estavam em conformidade com as normas PCI-DSS para proteção de dados armazenados</em></strong><sup><strong><em>2</em></strong></sup></p>
 
-<p>PCI compliance is broken down into 12 steps across six categories of protection:</p>
+<p>A conformidade com o PCI está dividida em 12 etapas, distribuídas em seis categorias de proteção:</p>
 
-<p><strong>1. Build And Maintain A Secure Network</strong><br />
+<p><strong>1. Construir e manter uma rede segura</strong><br />
 <br />
-<strong>• Requirement 1:</strong> Install and maintain a firewall configuration to protect cardholder data.<br />
-Establishes firewall and router configuration standards that mandate testing, testing procedures, and a review of configuration rule sets every six months.</p>
+<strong>• Requisito 1:</strong> Instalação e manutenção de configuração de firewall para proteger os dados do titular do cartão.<br />
+Estabelece normas de configuração de roteador e firewall que exigem teste, procedimentos de teste e revisão dos conjuntos de regras de configuração a cada seis meses.</p>
 
-<p><strong>• Requirement 2:</strong> Do not use vendor-supplied defaults for system passwords and other security parameters.<br />
-Addresses password hygiene with respect to vendor-supplied passwords that if combined with hacker tools able to show all of your networked devices can make you a sitting duck for unauthorized entry.</p>
+<p><strong>• Requisito 2:</strong> Não utilize modelos do fornecedor para senhas de sistema e outros parâmetros de segurança.<br />
+Aborda a higiene de senhas em relação às senhas disponibilizadas pelos fornecedores, que, se combinadas com ferramentas maliciosas capazes de mostrar todos os seus dispositivos em rede, podem tornar você um alvo fácil para entradas não autorizadas.</p>
 
-<p><strong>2. Protect Cardholder Data</strong><br />
+<p><strong>2. Proteger os dados do titular do cartão</strong><br />
 <br />
-<strong>• Requirement 3:</strong> Protect stored cardholder data<br />
-Defines storage, encryption, and retention of cardholder data and authentication data for required business uses. Also covers the documentation and protection of the keys used to encrypt cardholder data.</p>
+<strong>• Requisito 3:</strong> Proteger dados armazenados do titular do cartão<br />
+Define o armazenamento, a criptografia e a retenção de dados do titular do cartão e de autenticação para os usos comerciais exigidos. Também cobre a documentação e a proteção das chaves usadas para criptografar os dados do titular do cartão.</p>
 
 <p><img alt="" height="211" src="http://www.rackspace.com/knowledge_center/sites/default/files/new1.png" width="434" /></p>
 
-<p><strong>• Requirement 4:</strong> Encrypt transmission of cardholder data across open, public networks<br />
-Refers to the implementation of strong cryptography and security protocols such as SSL/TLS, SSH or IPSec to safeguard sensitive cardholder data during transmission over open, public networks (Internet and mobile). Additionally, wireless networks transmitting cardholder data or connected to the cardholder data environment must use industry best practices to implement strong encryption for authentication and transmission.</p>
+<p><strong>• Requisito 4:</strong> Criptografar a transmissão de dados do titular do cartão em redes públicas e abertas<br />
+Refere-se à implementação de protocolos robustos de segurança e criptografia, como SSL/TLS, SSH ou IPSec, para a proteção de dados confidenciais do titular do cartão durante a transmissão em redes públicas abertas (internet e dispositivos móveis). Além disso, as redes sem fio que transmitam dados do titular do cartão ou estejam ligadas ao ambiente de dados do titular do cartão devem usar as melhores práticas do setor para implementar uma criptografia robusta nos processos de autenticação e transmissão.</p>
 
-<p><strong>3. Maintain A Vulnerability Management Program</strong><br />
+<p><strong>3. Manter um programa de gestão de vulnerabilidades</strong><br />
 <br />
-<strong>• Requirement 5:</strong> Use and regularly update anti-virus software or programs<br />
-Any system potentially affected by malware must be protected by anti-virus software that is current, actively running, and generating audit logs.</p>
+<strong>• Requisito 5:</strong> Usar e atualizar com frequência software e programas antivírus<br />
+Qualquer sistema potencialmente afetado por malware deve ser protegido por um software antivírus que esteja atualizado, funcionando ativamente e gerando registros de auditoria.</p>
 
-<p><strong>• Requirement 6:</strong> Develop and maintain secure systems and applications<br />
-Application code must adhere to secure coding guidelines including reviewing custom application and third-party code to identify vulnerabilities.</p>
+<p><strong>• Requisito 6:</strong> Desenvolver e manter seguros os sistemas e aplicações<br />
+O código do aplicativo deve respeitar as diretrizes de codificação segura, que incluem a revisão de códigos de terceiros e da aplicação principal para a identificação de vulnerabilidades.</p>
 
-<p><strong>4. Implement Strong Access Control Measures </strong></p>
+<p><strong>4. Implementar medidas robustas de controle de acesso </strong></p>
 
-<p><strong><strong>• </strong>Requirement 7: </strong>Limit access to system component and cardholder data to only those individuals whose job requires such access<br />
-To protect critical data from access by unauthorized personnel inside and outside of the business, systems and documented processes must exist to restrict access to cardholder data using role-based access controls (RBAC) set to “deny all” unless access to cardholder data and systems is specifically granted.</p>
+<p><strong><strong>• </strong>Requisito 7:</strong>&nbsp;limitar o acesso a componentes do sistema e a dados do titular do cartão apenas àquelas pessoas cujo trabalho exija tal acesso<br />
+Para evitar que dados críticos sejam acessados por pessoal não autorizado de dentro e fora da empresa, devem existir processos documentados e sistemas para restringir o acesso aos dados do titular do cartão, por meio de controles de acesso baseados em função (RBAC) configurados como "negar a todos", exceto se o acesso ao sistema e aos dados do titular do cartão for especialmente autorizado.</p>
 
-<p><strong>• Requirement 8:</strong> Assign a unique ID<br />
-Any user granted access to cardholder data must have a unique identification so that actions taken on critical data and systems are performed by, and can be traced to, known and authorized users. This requirement also includes provisions around using two-factor authentication via token and storage of user passwords.</p>
+<p><strong>• Requisito 8:</strong> atribuir um ID exclusivo<br />
+Qualquer usuário com acesso autorizado aos dados do titular do cartão deve ter uma identificação exclusiva para que as ações executadas em dados e sistemas críticos sejam realizadas por usuários conhecidos e autorizados, e sua origem possa ser rastreada. Este requisito também inclui disposições acerca do uso de autenticação de dois fatores via token e do armazenamento de senhas de usuário.</p>
 
-<p><strong>• Requirement 9:</strong> Restrict physical access to cardholder data<br />
-To safeguard against physical media containing cardholder data being removed or compromised, areas where devices, data, systems, or hardcopies of cardholder data must be restricted from general access. This applies to both electronic systems for all online merchants and paper receipts and POS systems for brick and mortal establishments.</p>
+<p><strong>• Requisito 9:</strong> Restringir o acesso físico aos dados do titular do cartão<br />
+Para impedir que as mídias físicas contendo os dados do titular do cartão sejam removidas ou comprometidas, as áreas onde ficam dispositivos, dados, sistemas ou cópias impressas dos dados do titular do cartão devem ter acesso restrito. Isso se aplica tanto a sistemas eletrônicos de comerciantes on-line quanto a recibos de papel e sistemas POS de estabelecimentos físicos.</p>
 
-<p><strong>5. Regularly Monitor And Test Network</strong><br />
+<p><strong>5. Monitorar e testar a rede regularmente</strong><br />
 <br />
-<strong>• Requirement 10:</strong> Track and monitor all access to network resources and cardholder data<br />
-Logging mechanisms and the ability to track user activities are critical for effective forensics and vulnerability management. Logs should record specific actions and create an audit trail including, at a minimum: user identification, type of event, date and time, success or failure indication, origination of event, and identity or name of affected data, system component or resource. These logs should be reviewed daily and audit trails retained for at least a year.</p>
+<strong>• Requisito 10:</strong> Rastrear e monitorar todo acesso aos recursos da rede e dados do titular do cartão<br />
+Mecanismos de registro e capacidade de rastrear a atividade dos usuários são fundamentais para a eficácia da gestão de vulnerabilidades e de futuras investigações. Os logs devem registrar ações específicas e criar uma trilha de auditoria, contendo, no mínimo: identificação do usuário, tipo do evento, data e hora, indicação de falha ou sucesso, origem do evento e identidade ou nome do recurso, do componente do sistema ou dos dados afetados. Esses registros devem ser analisados diariamente, e as trilhas de auditoria, mantidas por pelo menos um ano.</p>
 
-<p><strong>• Requirement 11:</strong> Regularly test security systems and processes<br />
-Run internal and external network vulnerability scans at least quarterly and after any significant change in the network or infrastructure, application upgrade or modification. After passing the initial compliance scan, merchants must pass four more consecutive quarterly scans by an Approved Scanning Vendor (ASV) as a requirement for compliance. This provision also includes the use of up-to-date network intrusion detection systems (IDS) and file integrity monitoring tools to check for and alert to system compromise or unauthorized modification of critical files.</p>
+<p><strong>• Requisito 11:</strong> Testar regularmente os sistemas e processos de segurança<br />
+Executar uma verificação de vulnerabilidades em redes externas e internas pelo menos trimestralmente e após modificações e atualizações de aplicativo ou qualquer alteração significativa na rede ou na infraestrutura. Depois de passarem pela verificação de conformidade inicial, os comerciantes devem passar por mais quatro verificações trimestrais consecutivas feitas por um Fornecedor de Verificações Aprovado (ASV) como requisito para a conformidade. Esta disposição também inclui o uso de sistemas de detecção de intrusão (IDS) atualizados e de ferramentas para o monitoramento da integridade dos arquivos, a fim de verificar o comprometimento do sistema ou a ocorrência de modificações não autorizadas em arquivos importantes, bem como gerar os alertas pertinentes.</p>
 
-<p><em><strong>Only 6% of breached organizations report having regular security systems testing and processes.<sup>3</sup></strong></em></p>
+<p><em><strong>Apenas 6% das organizações violadas relatam ter processos e testes regulares para os sistemas de segurança.<sup>3</sup></strong></em></p>
 
-<p><strong>6. Maintain An Information Security Policy </strong></p>
+<p><strong>6. Manter uma política de segurança de informações </strong></p>
 
-<p><strong><strong>• </strong>Requirement 12:</strong> Maintain a policy that addresses information security for all personnel</p>
+<p><strong><strong>• </strong>Requisito 12:</strong> Manter uma política que aborde a segurança de informações para todo o pessoal</p>
 
-<p>Establish, publish, update, and disseminate a security policy that addresses compliance requirements. This policy should include an annual review process for identifying vulnerabilities and formally assessing risks. Defined usage policies for employee screening, remote access, wireless, removable electronic media, laptops, tablets, handheld devices, email and internet are also required.</p>
+<p>Estabelecer, publicar, atualizar e disseminar uma política de segurança que atenda aos requisitos de conformidade. Essa política deve incluir um processo de revisão anual para a identificação de vulnerabilidades e avaliação formal de riscos. Também são exigidas políticas de uso definidas para seleção de funcionários, acesso remoto, conexões sem fio, mídias eletrônicas removíveis, laptops, tablets, dispositivos portáteis, e-mail e internet.</p>
 
-<p><strong>3. WHO NEEDS PCI-DSS COMPLIANCE?</strong></p>
+<p><strong>3. QUEM PRECISA ESTAR EM CONFORMIDADE COM A PCI-DSS?</strong></p>
 
-<p>If your business meets either of these criteria, you should have a PCI-DSS strategy in place:<br />
+<p>Se o seu negócio se encaixa em algum destes critérios, você precisa ter uma estratégia PCI-DSS em vigor:<br />
 <br />
-• Do you store, process, or transmit Cardholder data*?<br />
-• Do you provide services to merchants who process, store, or transmit Cardholder data*?<br />
-<sub>*Refers to PAN (Primary Account Number) plus cardholder name, expiration date, service code</sub></p>
+• Você armazena, processa ou transmite dados* de titulares de cartão?<br />
+• Você fornece serviços a comerciantes que processam, armazenam ou transmitem dados* de titulares de cartão?<br />
+*Referem-se ao número da conta principal (PAN) mais nome do titular, data de validade, código de serviço</p>
 
-<p><strong>Understanding PCI-DSS Merchant Levels And Validation Types</strong></p>
+<p><strong>Tipos de validação e níveis de comerciante da PCI-DSS</strong></p>
 
-<p>The process and frequency of validating compliance with these 12 steps is determined by your merchant level and security assessment types below:</p>
+<p>O processo e a frequência de validação da conformidade com estas 12 etapas é determinado pelo seu nível de comerciante e pelos tipos de avaliação de segurança abaixo:</p>
 
 <p><img alt="" height="195" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci2a.png" width="499" /></p>
 
-<p>Your validation type determines which SAQ you need to complete.</p>
+<p>Seu tipo de validação determina qual SAQ você precisa preencher.</p>
 
 <p><img alt="" height="220" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci3a.png" width="502" /><br />
 <br />
-*This is an example of VISA card brand classifications. Other industry standards exist.&nbsp;</p>
+*Exemplo de classificações da marca de cartões VISA. Existem outros padrões no setor.&nbsp;</p>
 
-<p><strong>Why Is Compliance Important?</strong></p>
+<p><strong>Por que a conformidade é importante?</strong></p>
 
-<p>Non-compliance to PCI-DSS could lead to:<br />
-• Loss of reputation<br />
-• Increased costs for accepting credit card transactions<br />
-• Substantial fines associated with security breaches and non-compliance</p>
+<p>A não conformidade com a PCI-DSS pode acarretar:<br />
+• Perda de reputação<br />
+• Custos maiores na aceitação de transações com cartão de crédito<br />
+• Multas substanciais associadas a falhas de segurança e à não conformidade</p>
 
-<p>Should a breach occur as a result of non-compliance, there are discovery and containment costs for investigating the incident, remediation expenses, and attorney and legal fees in addition to:</p>
+<p>No caso de uma violação ocorrer como resultado de não conformidade, há custos de detecção e contenção para investigar o incidente, despesas de reparação, taxas jurídicas e honorários advocatícios, além de:</p>
 
-<p>• Loss of customer confidence<br />
-• Lost sales and revenue<br />
-• Brand degradation or drop in public stock value<br />
-• Fines and penalties for non-compliance with PCI-DSS<br />
-• Termination of the ability to accept payment cards<br />
-• Fraud losses<br />
-• Cost of reissuing new payment cards<br />
-• Dispute resolution costs<br />
-• Cost of legal settlements or judgments</p>
+<p>• Perda de confiança do cliente<br />
+• Perda de vendas e receita<br />
+• Degradação da marca ou queda no valor das ações<br />
+• Multas e penalidades pela não conformidade com a PCI-DSS<br />
+• Cessação da capacidade de aceitar cartões de pagamento<br />
+• Perdas por fraude<br />
+• Custo de reemissão de novos cartões de pagamento<br />
+• Custos de resolução de litígios<br />
+• Custo de julgamentos ou acordos judiciais</p>
 
 <p><img alt="" height="369" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci4a.png" width="551" /></p>
 
-<p><strong>Partnering For PCI-DSS Compliance</strong></p>
+<p><strong>Formação de parcerias para obtenção de conformidade com a PCI-DSS</strong></p>
 
-<p>Because of the complexity and necessity of maintaining PCI-DSS, many merchants opt to enlist solutions partners to provide the tools needed to build compliant infrastructure elements.</p>
+<p>Devido à complexidade e à necessidade de manter a PCI-DSS, muitos comerciantes optam por recrutar parceiros que forneçam as ferramentas necessárias para a criação de elementos de infraestrutura compatíveis com as exigências.</p>
 
-<p>Even with partners involved, PCI-DSS compliance is a dual responsibility shared by you and your provider. Hosting with a provider that offers PCI-DSS compliant infrastructure doesn’t automatically make you compliant. For example, a simple coding mistake can still leave a business open to an exploit even with strong hosting and security partners. As you can see below, each entity bears responsibility:</p>
+<p>Mesmo com parceiros envolvidos, a conformidade com a PCI-DSS é uma responsabilidade conjunta, compartilhada por você e seu provedor. Fazer a hospedagem em um provedor que ofereça infraestrutura compatível com a PCI-DSS não coloca você em conformidade automaticamente. Por exemplo, um simples erro de código pode deixar a empresa vulnerável a um exploit, mesmo com parceiros robustos de hospedagem e segurança. Como pode ser visto abaixo, cada parte tem sua responsabilidade:</p>
 
 <p><img alt="" height="276" src="http://www.rackspace.com/knowledge_center/sites/default/files/PCI23.png" width="502" /></p>
 
-<p><strong>4. ACHIEVING PCI-DSS COMPLIANCE</strong></p>
+<p><strong>4. COMO FICAR EM CONFORMIDADE COM A PCI-DSS</strong></p>
 
-<p><strong>Questions To ask:</strong></p>
+<p><strong>Perguntas a serem feitas:</strong></p>
 
-<p>1. Has your bank contacted you about PCI-DSS or stipulated a date when they require compliance? Why this is important: May determine how aggressive your compliance timeline needs to be.</p>
+<p>1. Seu banco já falou com você a respeito da PCI-DSS ou estipulou uma data para que a conformidade seja cumprida? Por que é importante: pode determinar o quão agressivo precisa ser o seu cronograma de conformidade.</p>
 
-<p>2. Have you contacted your Acquirer about PCI-DSS compliance? Why this is important: The Acquirer is typically responsible for merchant compliance</p>
+<p>2. Você falou com seu adquirente sobre a conformidade com a PCI-DSS? Por que é importante: normalmente, o adquirente é responsável pela conformidade do comerciante</p>
 
-<p>3. What payment brand compliance program (AMeX, Discover, JCB, Master- Card, Visa) will you subscribe to? Why this is important: Each payment brand has it’s own validation requirements</p>
+<p>3. Você vai se inscrever no programa de conformidade de qual marca de pagamento (AMeX, Discover, JCB, MasterCard, Visa)? Por que é importante: cada marca de pagamento tem seus próprios requisitos de validação.</p>
 
-<p>4. What Self-Assessment Questionnaire will you complete? Why this is important: Seek assistance from a Qualified Security Advisor (QSA) to determine which <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">PCI Data Security Standard Self-Assessment</a> questionnaire fits your business processes.</p>
+<p>4. Qual questionário de autoavaliação você vai preencher? Por que é importante: procure a ajuda de um Consultor de Segurança Qualificado (QSA) para determinar qual questionário de <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">Autoavaliação da Norma de Segurança de Dados PCI</a> se ajusta a seus processos comerciais.</p>
 
-<p>5. Are you a Service Provider, Merchant, or both? Why this is important: To determine which validation requirements apply to your business.</p>
+<p>5. Você é um provedor de serviços, comerciante ou ambos? Por que é importante: para determinar quais requisitos de validação aplicam-se ao seu negócio.</p>
 
-<p>6. Do you have the in-house resources to drive compliance? Why this is important: To identify gaps and assess where partnerships bring the most value.</p>
+<p>6. Você possui recursos internos para gerar conformidade? Por que é importante: para identificar lacunas e avaliar onde as parcerias podem ser mais valiosas.</p>
 
-<p><strong>Options Available:</strong></p>
+<p><strong>Opções disponíveis:</strong></p>
 
-<p>The cornerstone of PCI-DSS is data protection. Your company policies and credit card transaction volume, along with other business factors not discussed here, should guide where you decide to store this data and how you protect it. Options to explore:</p>
+<p>O pilar fundamental da PCI-DSS é a proteção de dados. As políticas da sua empresa e o volume de transações de cartão de crédito, junto a outros fatores comerciais que não serão discutidos aqui, devem balizar a decisão de onde os dados serão armazenados e como serão protegidos. Opções a serem exploradas:</p>
 
-<p><strong>• Store credit card data at a provider offering PCI-DSS compliant infrastructure.</strong></p>
+<p><strong>• Armazenar os dados de cartão de crédito em um provedor que ofereça infraestrutura em conformidade com a PCI-DSS.</strong></p>
 
-<p><strong>• Store credit card information using a third-party payment gateway transmitting data server side using APIs. They collect the data and send it encrypted to your servers.</strong></p>
+<p><strong>• Armazenar informações de cartão de crédito usando um gateway de pagamento de terceiros e transmissão de dados no lado do servidor com o uso de APIs. Os dados são coletados, criptografados e enviados aos seus servidores.</strong></p>
 
 <p><img alt="" height="103" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci5a.png" width="499" /></p>
 
-<p>How it Works:</p>
+<p>Como funciona:</p>
 
-<p>1. Upon the customer’s request to checkout, a form is displayed to your customer to collect the required payment information. When the customer submits the form, the data is encrypted and then sent to your servers.</p>
+<p>1. Mediante a solicitação de fechamento de compra feita por um cliente, um formulário é exibido para coletar as informações de pagamento exigidas. Quando o cliente envia o formulário, os dados são criptografados e enviados aos seus servidores.</p>
 
-<p>2. Using a client library, a server-to-server (S2S) call to payment gateway is made to complete the processing of the transaction.</p>
+<p>2. Com o uso de uma biblioteca-cliente, faz-se uma chamada S2S (servidor para servidor) para o gateway de pagamento para concluir o processamento da transação.</p>
 
-<p>3. The payment gateway processes the transaction and returns a response to your server.</p>
+<p>3. O gateway de pagamento processa a transação e devolve uma resposta ao seu servidor.</p>
 
-<p>4. This response can be used to display relevant data to the customer in the browser, such as the status of the transaction.</p>
+<p>4. Essa resposta pode ser usada para exibir dados relevantes (como o status da transação) no navegador do cliente.</p>
 
-<p><strong>• Store credit card information using a third-party payment gateway transmitting data from the client browser before reaching your server.</strong></p>
+<p><strong>• Armazenar informações de cartão de crédito usando um gateway de pagamento de terceiros e transmissão de dados a partir do navegador-cliente antes da conexão com o seu servidor.</strong></p>
 
 <p><img alt="" height="287" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci6a.png" width="311" /></p>
 
-<p>How it Works:</p>
+<p>Como funciona:</p>
 
-<p>1. Upon the customer’s request to checkout, a form is displayed to your customer to collect the required payment information. When the customer submits the form, the data is posted directly to the payment gateway over an SSL connection.</p>
+<p>1. Mediante a solicitação de fechamento de compra feita por um cliente, um formulário é exibido para coletar as informações de pagamento exigidas. Quando o cliente envia o formulário, os dados são lançados diretamente no gateway de pagamento por meio de uma conexão SSL.</p>
 
-<p>2. The payment gateway then stores the data. Because the payment gateway redirects the customer back to your site without displaying any content, the customer never knows that they’ve even left your site.</p>
+<p>2. O gateway de pagamento armazena os dados. Como o gateway de pagamento redireciona o cliente de volta ao seu site sem exibir qualquer conteúdo, o cliente sequer fica sabendo que deixou o site.</p>
 
-<p>3. The customer’s browser requests the redirected URL from your site. The query string for the request URL contains a token that identifies the stored data from Step 1.</p>
+<p>3. O navegador do cliente solicita o URL redirecionado a partir do seu site. A string de consulta para o URL de solicitação contém um token que identifica os dados armazenados na Etapa 1.</p>
 
-<p>4. Using the client library, you make a server-to-server (S2S) call to payment gateway is made to complete the processing of the request. This step confirms that if the customer doesn’t complete the redirect back to your site, the payment gateway will not complete the transaction.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>4. Usando-se a biblioteca-cliente, uma chamada S2S (servidor para servidor) é feita ao gateway de pagamento para concluir o processamento da solicitação. Esta etapa confirma que se o cliente não concluir o redirecionamento para o seu site, o gateway de pagamento não concluirá a transação.</p>
 
-<p>5. After receiving the confirmation request, the payment gateway will run the transaction and send a response.</p>
+<p>5. Após receber a solicitação de confirmação, o gateway de pagamento executará a transação e enviará uma resposta.</p>
 
-<p><strong>Deciding Between Storing Data In-House Or Using Payment Gateway</strong></p>
+<p><strong>Decidir entre armazenar os dados internamente ou usar um gateway de pagamento</strong></p>
 
-<p>Compare the cost of using a third-party payment gateway with the cost of storing credit card information in your data center or a provider’s data center. Compare these calculations to guide your decision:</p>
+<p>Compare o custo de usar um gateway de pagamento de terceiros com o custo de armazenar as informações de cartão de crédito em seu centro de dados ou no centro de dados de um provedor. Compare estes cálculos para balizar sua decisão:</p>
 
-<p>• Calculate the cost of additional products/services required to store credit card data in-house per month. Rackspace can help you create sample configurations and provide estimates about cost.</p>
+<p>• Calcule o custo mensal dos produtos/serviços adicionais exigidos para o armazenamento interno dos dados de cartão de crédito. A Rackspace pode ajudar você a criar configurações de exemplo para fornecer estimativas de custo.</p>
 
-<p>• Calculate the cost of using a third-party payment gateway per month = number of transactions * cost of transaction charged by payment gateway + online revenue * % of revenue to be paid to payment gateway vendor.</p>
+<p>• Calcule o custo mensal para usar um gateway de pagamento de terceiros = número de transações * custo de transação cobrado pelo gateway de pagamento + receita on-line * % da receita a ser paga ao fornecedor do gateway de pagamento.</p>
 
-<p>If you find storing data on-site is more expensive than the gateway, consider moving to a gateway. If using the payment gateway is more expensive or a third party gateway is incompatible with other company policies, consider storing data in a PCI-DSS compliant data center on dedicated servers.</p>
+<p>Se armazenar os dados localmente ficar mais caro do que usar um gateway, pense em migrar para um gateway. Se usar um gateway de pagamento for mais caro ou incompatível com outras políticas da empresa, considere armazenar os dados em servidores dedicados de um centro de dados compatível com a PCI-DSS.</p>
 
-<p><strong>Deciding Between Transmitting Data From The Server Or Browser</strong></p>
+<p><strong>Decidir entre transmitir dados a partir do servidor ou do navegador</strong></p>
 
-<p>Using APIs from client browsers excludes your server infrastructure from the scope of PCI-DSS compliance as all sensitive data is transmitted between the user and the payment gateway.</p>
+<p>Usar as APIs dos navegadores-cliente exclui sua infraestrutura de servidores do escopo de conformidade com a PCI-DSS, pois todos os dados confidenciais são transmitidos entre o usuário e o gateway de pagamento.</p>
 
-<p>When you choose to transmit credit card information from the server side using third party payment gateway APIs, your server infrastructure becomes part of PCI-DSS compliance since sensitive data crosses your infrastructure.</p>
+<p>Quando você escolhe transmitir informações de cartão de crédito do lado servidor usando as APIs de um gateway de pagamento de terceiros, sua infraestrutura de servidores torna-se parte da conformidade com a PCI-DSS, pois há dados confidenciais passando por ela.</p>
 
-<p><strong>PCI-DSS Compliant Solution For Rackspace Dedicated Hosting</strong></p>
+<p><strong>Solução compatível com a PCI-DSS para hospedagem dedicada na Rackspace</strong></p>
 
-<p>Example of PCI-DSS compliant reference architecture without a payment gateway:</p>
+<p>Exemplo de arquitetura de referência compatível com a PCI-DSS e sem gateway de pagamento:</p>
 
 <p><img alt="" height="319" src="http://f494fe00a131971608ff-3fb62eaa3f125e9bde603735b3681623.r27.cf1.rackcdn.com/security/security-sample-architecture.png" width="406" /></p>
 
 <p>&nbsp;</p>
 
-<p>Use this table to align your PCI-DSS compliance needs with Rackspace services:</p>
+<p>Use esta tabela para alinhar suas necessidades de conformidade da PCI-DSS com os serviços da Rackspace:</p>
 
 <p><img alt="" height="817" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci7a-chart1b.png" width="551" /></p>
 
 <p><strong>&nbsp;</strong></p>
 
-<p><strong>PCI-Compliant Solutions For Rackspace Cloud Hosting</strong><img align="right" alt="" height="153" src="http://images.cdn.rackspace.com/solutions/ecommerce/pci-compliance.gif" width="324" /><br />
+<p><strong>Soluções compatíveis com o PCI para hospedagem em nuvem na Rackspace</strong><img align="right" alt="" height="153" src="http://images.cdn.rackspace.com/solutions/ecommerce/pci-compliance.gif" width="324" /><br />
 <br />
-When you host your environment with Rackspace, you may also sign up with a separate payment processor to provide tokenization—replacing credit card data with meaningless numbers or “tokens.” When you accept a payment, non-PCI-DSS data routes to your Rackspace-hosted environment, while the tokenized credit card data routes to your payment processor.</p>
+Ao hospedar seu ambiente na Rackspace, você também poderá utilizar um processador de pagamento separado para fornecer "tokenização" – substituição dos dados do cartão de crédito por números sem significado, os "tokens". Quando você aceita um pagamento, os dados não relacionados à PCI-DSS são encaminhados ao seu ambiente hospedado na Rackspace, ao passo que dados de cartão de crédito convertidos em tokens são encaminhados ao seu processador de pagamentos.</p>
 
-<p>Since your customers’ credit card data does not route to your Rackspace hosted infrastructure—only the payment processor—your Rackspace environment stays out of the scope of your PCI-DSS requirements.</p>
+<p>Considerando que os dados do cartão de crédito de seus clientes não são enviados para a infraestrutura hospedada na Rackspace (somente para o processador de pagamentos), seu ambiente Rackspace permanece fora do escopo das exigências da PCI-DSS.</p>
 
-<p>Check out <a href="https://cloudtools.rackspace.com/home">Rackspace Cloud Tools partners</a> for Rackspace-recommended payment gateway services:</p>
+<p>Confira os <a href="https://cloudtools.rackspace.com/home">parceiros que oferecem ferramentas para a nuvem da Rackspace</a> para encontrar serviços de gateway de pagamento recomendados pela Rackspace:</p>
 
-<p><a href="https://cloudtools.rackspace.com/apps/757?1197262527"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/757/thumbs_112/img1875829224899302087.png" /></a><a href="https://cloudtools.rackspace.com/apps/757?1197262527">Stripe</a> is a simple, developer-friendly way to accept payments online. Stripe handles custom payment forms, storing cards, subscriptions, and direct payouts.</p>
+<p><a href="https://cloudtools.rackspace.com/apps/757?1197262527"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/757/thumbs_112/img1875829224899302087.png" /></a>O <a href="https://cloudtools.rackspace.com/apps/757?1197262527">Stripe</a> é uma maneira simples e amigável de aceitar pagamentos on-line. O Stripe lida com formulários de pagamento personalizados, armazenamento de cartões, assinaturas e pagamentos diretos.</p>
 
-<p>• Best fit for: Developers building payment applications using APIs<br />
-• Pricing: 2.9% + 30¢ per successful charge*<br />
-<a href="https://cloudtools.rackspace.com/apps/757?1478916637">Learn More</a></p>
+<p>• Mais adequado para: desenvolvedores que estejam construindo aplicações de pagamento com o uso de APIs<br />
+• Preço: 2,9% + 30¢ por cobrança bem-sucedida*<br />
+<a href="https://cloudtools.rackspace.com/apps/757?1478916637">&nbsp;Saiba mais</a></p>
+
+<p>&nbsp;</p>
 
 <p><br />
-<a href="https://cloudtools.rackspace.com/apps/621?230940707"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/621/thumbs_112/img2786457282233237070.png" /></a><a href="https://cloudtools.rackspace.com/apps/621?230940707">Braintree</a> is a full-stack payments platform for mobile apps and websites. The service provides merchant account, payment gateway, recurring billing and credit card storage including one-touch payments to mobile SDKs and foreign currency acceptance.</p>
+<a href="https://cloudtools.rackspace.com/apps/621?230940707"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/621/thumbs_112/img2786457282233237070.png" /></a>O <a href="https://cloudtools.rackspace.com/apps/621?230940707">Braintree</a> é uma plataforma de pagamentos com pilha completa para sites e apps móveis. O serviço fornece conta de comerciante, gateway de pagamento, faturamento recorrente e armazenamento de cartão de crédito, incluindo pagamento com um toque para SDKs móveis e aceitação de moedas estrangeiras.</p>
 
-<p>• Best fit for: Developers building payment applications using APIs<br />
-• Pricing: 2.9% + 30¢ per successful charge*<br />
-<a href="https://cloudtools.rackspace.com/apps/621?230940707">Learn More</a></p>
+<p>• Mais adequado para: desenvolvedores que estejam construindo aplicações de pagamento com o uso de APIs<br />
+• Preço: 2,9% + 30¢ por cobrança bem-sucedida*<br />
+<a href="https://cloudtools.rackspace.com/apps/621?230940707">&nbsp;Saiba mais</a></p>
 
-<p><a href="https://cloudtools.rackspace.com/apps/791?163191746"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/791/thumbs_112/img6350419810339149849.png" /></a>With more than 123 million active accounts in 190 markets and 25 currencies around the world, <a href="https://cloudtools.rackspace.com/apps/791?163191746">PayPal</a> enables global commerce via mobile devices and in store. Service features automatic fraud screening, Seller Protection Policy, and the BillMeLater® financing option.</p>
+<p>&nbsp;</p>
 
-<p>• Best fit for: Handling international currencies<br />
-• Pricing: 2.9% + 30¢ per successful charge*<br />
-<a href="https://cloudtools.rackspace.com/apps/791?163191746">Learn More</a></p>
+<p><a href="https://cloudtools.rackspace.com/apps/791?163191746"><img alt="" src="http://c386932.r32.cf1.rackcdn.com/app_resources/791/thumbs_112/img6350419810339149849.png" /></a>Com mais de 123 milhões de contas ativas em 190 mercados e 25 moedas ao redor do mundo, o <a href="https://cloudtools.rackspace.com/apps/791?163191746">PayPal</a> permite comércio global na própria loja e via dispositivos móveis. O serviço dispõe de triagem automática de fraudes, política de proteção ao vendedor e oferece a opção de financiamento BillMeLater®.</p>
 
-<address>*pricing and features noted as of writing of this paper</address>
+<p>• Mais adequado para: lidar com moedas internacionais<br />
+• Preço: 2,9% + 30¢ por cobrança bem-sucedida*<br />
+<a href="https://cloudtools.rackspace.com/apps/791?163191746">&nbsp;Saiba mais</a></p>
 
-<p><strong>CONCLUSION</strong></p>
+<address>*preços e características observadas na data de redação deste artigo</address>
 
-<p>A key step to a successful compliance program is the establishment of continuous management of the people, processes and technology. It is a common misconception for many small and large organizations that investing solely in technologies will solve their security and compliance requirements. Technologies like firewalls, Intrusion Detection Systems (IDS) and log management appliances are only as effective as the people and processes in place to install and manage them.</p>
+<p><strong>CONCLUSÃO</strong></p>
 
-<p>This is a lesson that Transport for London (TFL), responsible for managing transport services across England’s capital city, learned while trying to achieve PCI-DSS compliance for its travel payment system. Their system was handling up to 40,000 visits per day with over 2.5 million registered users. Being a 24-hour business, 365 days of the year, they couldn’t risk a breach or other outage disrupting operations. They turned to Rackspace for the pieces of the puzzle they needed <a href="http://www.rackspace.com/security/domains/#pci">to become fully compliant.</a> “It is probably true to say that without the considerable amount of help from Rackspace we could not have passed the exceptionally stringent PCI-DSS audit. Rackspace certainly went above and beyond their remit to ensure that everything was perfect for us,” says Aingaran Somaskandarajah, Technical Lead, Oyster Card.</p>
+<p>Uma etapa fundamental para um programa de conformidade bem-sucedido é estabelecer a gestão contínua de pessoas, processos e tecnologia. Muitas organizações grandes e pequenas acham, equivocadamente, que investir apenas em tecnologias resolverá suas necessidades de segurança e conformidade. Tecnologias como firewalls, Sistemas de Detecção de Intrusão (IDS) e mecanismos de gestão de registros são apenas tão eficazes quanto as pessoas e processos que fazem a instalação e o gerenciamento deles.</p>
 
-<p>Let Rackspace be your trusted partner in the PCI-DSS journey. We can help you navigate the maze with infrastructure and solution requirements to help reduce the scope and complexity of your compliance efforts. <a href="http://www.rackspace.com/ecommerce-hosting/pci/">Contact us today to discuss your needs or explore PCI-DSS Compliance services now.</a></p>
+<p>Essa é uma lição que a TFL (Transport for London), responsável pela gestão dos serviços de transporte na capital inglesa, aprendeu enquanto tentava colocar seu sistema de pagamento de viagens em conformidade com a PCI-DSS. O sistema recebia 40.000 acessos por dia, com mais de 2,5 milhões de usuários registrados. Sendo um negócio que funciona 24 horas por dia, 365 dias por ano, eles não podiam correr o risco de ter uma violação ou falha interrompendo as operações Assim, a empresa recorreu à Rackspace para obter os elementos necessários à <a href="http://www.rackspace.com/pt/security/domains/#pci">conformidade total.</a> "Eu poderia dizer que, sem a considerável ajuda da Rackspace, nós não teríamos passado na rigorosíssima auditoria da PCI-DSS. A Rackspace certamente foi além de suas atribuições para garantir que tudo ficasse perfeito para nós", diz Aingaran Somaskandarajah, líder técnico da Oyster Card.</p>
+
+<p>Deixe a Rackspace ser o seu parceiro confiável na jornada rumo à PCI-DSS. Nós podemos ajudá-lo a navegar pelo labirinto com infraestrutura e requisitos de solução para auxiliar a reduzir o escopo e a complexidade de seus esforços de conformidade. <a href="http://www.rackspace.com/pt/ecommerce-hosting/pci/">Fale conosco hoje mesmo para discutir suas necessidades ou explorar os serviços para conformidade com a PCI-DSS</a></p>
+
+<p>&nbsp;</p>
 
 <p><a href="http://www.rackspace.com/ecommerce-hosting/"><img alt="" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci8a.png" /></a></p>
 
@@ -260,25 +266,6 @@ When you host your environment with Rackspace, you may also sign up with a separ
 <sup>4</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
 <sup>5</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
 <sup>6</sup> <a href="http://www.verizonenterprise.com/DBIR/2013/">http://www.verizonenterprise.com/DBIR/2013/</a></p>
-
-
-<p><strong>CONCLUSIÓN</strong></p>
-
-<p>Un paso clave para un programa exitoso de cumplimiento de normas es el establecimiento de una gestión continua de personas, procesos y tecnología. Es un error muy común para muchas organizaciones pequeñas y grandes creer que invertir exclusivamente en tecnologías resolverá sus requisitos de seguridad y cumplimiento de normas. Las tecnologías como firewalls, sistemas de detección de intrusiones (IDS) y dispositivos de administración de registros tienen un nivel de efectividad que depende de las personas que las instalan y administran y los procesos utilizados para hacerlo.</p>
-
-<p>Esta es una lección que Transport for London (TFL), responsable de la gestión de los servicios de transporte en la capital de Inglaterra, aprendió al tratar de lograr el cumplimiento de normas PCI-DSS para su sistema de pago de viajes. El sistema procesaba hasta 40,000 visitas por día con más de 2.5 millones de usuarios registrados. Siendo una empresa que trabaja las 24 horas, los 365 días al año, no podían arriesgarse al incumplimiento u otras operaciones de interrupción. Optaron por Rackspace para obtener las piezas del rompecabezas que necesitaban para lograr el <a href="http://www.rackspace.com/es/security/domains/#pci">cumplimiento completo de normas.</a> "Probablemente sea cierto que sin la ayuda considerable de Rackspace no podríamos haber aprobado la auditoría extremadamente estricta de PCI-DSS. Rackspace sin duda fue más allá de sus funciones para garantizar que todo sea perfecto para nosotros", afirmó Aingaran Somaskandarajah, líder técnico de Oyster Card.</p>
-
-<p>Permita que Rackspace sea su socio de confianza en el trayecto de PCI-DSS. Podemos ayudarle a navegar el laberinto con requisitos de infraestructura y soluciones que pueden ayudar a reducir el alcance y la complejidad de sus esfuerzos de cumplimiento. <a href="http://www.rackspace.com/es/ecommerce-hosting/pci/">Contáctenos hoy para hablar sobre sus necesidades o explorar ahora los servicios de cumplimiento de normas PCI-DSS.</a></p>
-
-<p>&nbsp;</p>
-
-<p><a href="http://www.rackspace.com/ecommerce-hosting/"><img alt="" src="http://www.rackspace.com/knowledge_center/sites/default/files/pci8a.png" /></a></p>
-
-<p><strong>References:</strong></p>
-
-<p><sup>1</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
-<sup>2</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
-<sup>3</sup> <a href="http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf%20">http://www.verizonenterprise.com/resources/reports/rp_data-breach-investigations-report-2012_en_xg.pdf </a><br />
-<sup>4</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
+ecuritystandards.org/merchants/self_assessment_form.php</a><br />
 <sup>5</sup> <a href="https://www.pcisecuritystandards.org/merchants/self_assessment_form.php">https://www.pcisecuritystandards.org/merchants/self_assessment_form.php</a><br />
 <sup>6</sup> <a href="http://www.verizonenterprise.com/DBIR/2013/">http://www.verizonenterprise.com/DBIR/2013/</a></p>

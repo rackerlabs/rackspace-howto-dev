@@ -6,7 +6,7 @@ created_date: '2014-07-02 20:25:28'
 created_by: aaron.medrano
 last_modified_date: '2014-12-30 03:1232'
 last_modified_by: jered.heeschen
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

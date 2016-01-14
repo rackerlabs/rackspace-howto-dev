@@ -4,9 +4,9 @@ title: Windows Patches for Cloud Servers with a Managed Operations Service Level
 type: article
 created_date: '2011-04-04 16:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-12 16:4345'
-last_modified_by: stephanie.fillmon
-products: Managed Operations
+last_modified_date: '2016-01-13 20:3532'
+last_modified_by: Nate.Archer
+product: Managed Operations
 body_format: markdown_w_tinymce
 ---
 
@@ -20,93 +20,21 @@ WSUS servers are located in each region where you can connect Windows Servers to
 
 The WSUS endpoints are as follows:
 
-<table>
-	<tr>
-		<th>Region</th>
-		<th>Data center</th>
-		<th>WSUS endpoint</th>
-	</tr>
-	<tr>
-		<td>Dallas</td>
-		<td>DFW</td>
-		<td>http://microsoftupdate.dfw1.rackspace.com</td>
-	</tr>
-	<tr>
-		<td>Chicago</td>
-		<td>ORD</td>
-		<td>http://microsoftupdate.ord1.rackspace.com</td>
-	</tr>
-	<tr>
-		<td>North Virginia</td>
-		<td>IAD</td>
-		<td>http://microsoftupdate.iad1.rackspace.com</td>
-	</tr>
-	<tr>
-		<td>Hong Kong</td>
-		<td>HKG</td>
-		<td>http://microsoftupdate.hkg1.rackspace.com</td>
-	</tr>
-	<tr>
-		<td>Sydney</td>
-		<td>SYD</td>
-		<td>http://microsoftupdate.syd1.rackspace.com</td>
-	</tr>
-	<tr>
-		<td>London</td>
-		<td>LON</td>
-		<td>http://microsoftupdate.lon1.rackspace.com</td>
-	</tr>
-</table>
-<p>&nbsp;</p>
-<table>
-	<tr>
-		<th>Distribution</th>
-		<th>Patching</th>
-		<th>Mechanism</th>
-		<th>Patching servers</th>
-		<th>Frequency</th>
-	</tr>
-	<tr>
-		<td>Windows Server 2008 R2</td>
-		<td>WSUS</td>
-		<td>microsoftupdate.[dc].rackspace.com</td>
-		<td>Nightly between 1 a.m. and 5 a.m. in your server region's time zone:
-			
-			* IAD – EST
-			* DFW – CST
-			* SYD – AET
-			* HKG – HKT
-			* ORD – CST</td>
-		<td>Windows Patching Portal</td>
-	</tr>
-	<tr>
-		<td>Windows Server 2012	WSUS</td>
-		<td>microsoftupdate.[dc].rackspace.com</td>
-		<td>Nightly between 1 a.m. and 5 a.m. in your server region's time zone:
-			
-			* IAD – EST
-			* DFW – CST
-			* SYD – AET
-			* HKG – HKT
-			* ORD – CST</td>
-		<td>Windows Patching Portal</td>
-	</tr>
-	<tr>
-		<td>Windows Server 2012 R2</td>
-		<td>WSUS</td>
-		<td>microsoftupdate.[dc].rackspace.com</td>
-		<td>Nightly between 1 a.m. and 5 a.m. in your server region's time zone:
-			
-			•	IAD – EST
-			•	DFW – CST
-			•	SYD – AET
-			•	HKG – HKT
-			•	ORD – CST</td>
-		<td>Windows Patching Portal</td>
-	</tr>
-</table>
+| Region | Data Center | WSUS endpoint |
+| ------ | ----------- | ------------- |
+| Dallas | DFW	 | http://microsoftupdate.dfw1.rackspace.com |
+| Chicago	 | ORD | http://microsoftupdate.ord1.rackspace.com |
+| North Virginia | IAD | http://microsoftupdate.iad1.rackspace.com |
+| Hong Kong | HKG | http://microsoftupdate.hkg1.rackspace.com |
+| Sydney | SYD | http://microsoftupdate.syd1.rackspace.com |
+| London | LON | http://microsoftupdate.lon1.rackspace.com |
 
-<p>&nbsp;</p>
+
+| Distibution | Patching | Mechanism | Patching servers | Frequency |
+| ----------- | -------- | --------- | ---------------- | --------- |
+| Windows Server 2008 R2 | WSUS	 | microsoftupdate.[dc].rackspace.com | Nightly between 1 a.m. and 5 a.m. in your server region's time zone: * IAD – EST * DFW – CST * SYD – AET * HKG – HKT * ORD – CST | Windows Patching Portal |
+| Windows Server 2012 WSUS	 | microsoftupdate.[dc].rackspace.com | Nightly between 1 a.m. and 5 a.m. in your server region's time zone: * IAD – EST * DFW – CST * SYD – AET * HKG – HKT * ORD – CST | Windows Patching Portal |  |
+| Windows Server 2012 R2 | WSUS | microsoftupdate.[dc].rackspace.com | Nightly between 1 a.m. and 5 a.m. in your server region's time zone: • IAD – EST • DFW – CST • SYD – AET • HKG – HKT • ORD – CST | Windows Patching Portal |
 
 ## WSUS settings
 

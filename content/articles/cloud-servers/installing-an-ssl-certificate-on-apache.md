@@ -4,9 +4,9 @@ title: Installing an SSL certificate on Apache
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2013-08-14 21:0325'
-last_modified_by: rose.contreras
-products: Cloud Servers
+last_modified_date: '2016-01-13 20:1320'
+last_modified_by: Nate.Archer
+product: Cloud Servers
 body_format: tinymce
 ---
 
@@ -20,21 +20,14 @@ is a great place to buy a certificate if you haven't already chosen:
 
 [http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache\_2x.htm](http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm "http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm")
 
-* * * * *
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Prerequisites](#Prerequisites)                                    |
-| -   [2 Installing your SSL                                               |
-|     Certificate](#Installing_your_SSL_Certificate)                       |
-|     -   [2.1 Copy the files in into the default                          |
-|         locale](#Copy_the_files_in_into_the_default_locale)              |
-|     -   [2.2 Edit the httpd.conf](#Edit_the_httpd.conf)                  |
-| -   [3 iptables](#iptables)                                              |
-| -   [4 Restart Apache](#Restart_Apache)                                  |
-+--------------------------------------------------------------------------+
+-   [1 Prerequisites](#Prerequisites)
+-   [2 Installing your SSL
+    Certificate](#Installing_your_SSL_Certificate)
+    -   [2.1 Copy the files in into the default
+        locale](#Copy_the_files_in_into_the_default_locale)
+    -   [2.2 Edit the httpd.conf](#Edit_the_httpd.conf)
+-   [3 iptables](#iptables)
+-   [4 Restart Apache](#Restart_Apache)
 
 Prerequisites
 -------------

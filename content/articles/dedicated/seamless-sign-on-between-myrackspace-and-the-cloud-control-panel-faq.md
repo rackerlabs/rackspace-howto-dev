@@ -6,7 +6,7 @@ created_date: '2014-10-15 23:30:45'
 created_by: David Hendler
 last_modified_date: '2014-10-21 22:3507'
 last_modified_by: David Hendler
-products: Dedicated
+product: Dedicated
 body_format: tinymce
 ---
 

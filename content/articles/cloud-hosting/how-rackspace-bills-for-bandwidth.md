@@ -6,7 +6,7 @@ created_date: '2014-02-19 21:23:43'
 created_by: rose.contreras
 last_modified_date: '2014-03-31 17:4155'
 last_modified_by: rose.contreras
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 

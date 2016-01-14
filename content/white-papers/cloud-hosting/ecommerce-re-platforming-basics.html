@@ -6,116 +6,139 @@ created_date: '2014-01-06 15:48:32'
 created_by: Rackspace Support
 last_modified_date: '2015-07-21 13:4624'
 last_modified_by: max8147
-products: Cloud Hosting
+product: Cloud Hosting
 body_format: tinymce
 ---
 
 <p><img align="right" alt="" height="195" src="http://www.rackspace.com/knowledge_center/sites/default/files/Ecommreplatforming-2_0.png" width="194" /></p>
 
-<p>Durante la última década, los patrones de compra y avances tecnológicos han alterado de forma radical los objetivos comerciales y las realidades competitivas. Los clientes necesitan experiencias de compra más rápidas y atractivas a través de múltiples canales en las tiendas, por supuesto, pero también cada vez más en dispositivos móviles y en línea. Y el impacto de una experiencia negativa para un cliente es importante: una encuesta de Google revela que más de la mitad (52%) de los consumidores no se sentirá atraído por un negocio después una mala experiencia móvil<sup>1</sup>. Si el cliente tiene que esperar más de un segundo para que cargue una página o el sitio no ofrece una experiencia superior, de múltiples canales, ese cliente se puede perder para siempre. De hecho, muchos vendedores se están dando cuenta de que sus plataformas actuales ya no satisfacen las exigentes necesidades de los clientes digitales, sin mencionar las propias.</p>
+<p>Ao longo da última década, padrões de compra e avanços tecnológicos alteraram radicalmente as metas das empresas e as realidades competitivas. Os consumidores exigem experiências de compra mais rápidas e mais atraentes através de múltiplos canais na loja, é claro, mas também cada vez mais por meio de dispositivos móveis e on-line. E o impacto de uma experiência negativa do cliente é significativo: uma pesquisa do Google revela que mais da metade (52%) dos consumidores tornam-se menos propensos a se envolver com um negócio depois de uma única experiência móvel ruim<sup>1</sup>. Se um cliente tem que esperar mais de uma fração de segundo até uma página carregar, ou se o site não pode proporcionar uma rica experiência multicanal, esse cliente pode ser perdido para sempre. Muitos varejistas já percebem que suas plataformas atuais não são mais adequadas às necessidades dos clientes digitais mais exigentes, sem falar nas suas próprias.</p>
 
-<p>Dada la extensión del proyecto y las consecuencias potenciales, volver a crear una nueva plataforma puede parecer desalentador. Esta guía ofrece explicaciones valiosas para volver a crear una nueva plataforma, incluyendo cómo determinar cuándo es tiempo de actuar, qué factores se deben tener en cuenta para garantizar el éxito y qué arquitecturas comunes satisfacen las necesidades de la mayoría de las empresas.</p>
+<p>Dado o escopo do projeto e as potenciais consequências, a replataformação pode parecer assustadora. Este guia oferece informações valiosas sobre replataformação, inclusive como determinar se é hora de agir, quais os fatores que precisam ser considerados para garantir o sucesso e quais as arquiteturas comuns que atendem às necessidades da maioria das empresas.</p>
 
-<h3>SABER CUÁNDO ES EL MOMENTO ADECUADO</h3>
+<h3>COMO RECONHECER O MOMENTO OPORTUNO</h3>
 
-<p>Según una encuesta reciente de Forrester Research, más de la mitad de los ejecutivos del comercio electrónico (54%) afirman que volver a crear una plataforma es su principal prioridad dentro de los siguientes 12 meses<sup>2</sup>. Y no es sorprendente, según otra encuesta de Forrester<sup>3</sup> que indica que 81% de los vendedores en línea utilizan una solución autocreada o licenciada en el centro de datos, y a 74% les preocupa que sus soluciones existentes no estén a la altura de sus planes de crecimiento. Y casi la mitad (46%) de los vendedores informan dificultades para contratar el personal que necesitan para manejar su plataforma licenciada o modificar de forma continua su plataforma de comercio electrónico construida internamente. En último término, esto significa que las organizaciones están dedicando mucho tiempo y esfuerzo para estar al día con las demandas del mercado y mantener la infraestructura subyacente.</p>
+<p>De acordo com uma pesquisa recente da Forrester Research, mais da metade dos executivos de comércio eletrônico (54%) afirmam que a replataformação é a sua prioridade nos próximos 12 meses<sup>2</sup>. Isso não é surpresa, uma vez que outra pesquisa da Forrester<sup>3</sup> indica que 81% dos varejistas de comércio eletrônico está usando uma solução local de criação própria ou licenciada, ainda que 74% tema que suas soluções existentes não acompanhem seus planos de crescimento. Quase metade (46%) dos varejistas relata dificuldade na contratação do pessoal necessário para gerir plataformas licenciadas ou ajustar continuamente plataformas de comércio eletrônico criadas internamente. Em última análise, isso significa que as empresas estão dispendendo tempo e esforço significativos para acompanhar as exigências do mercado e administrar a infraestrutura subjacente.</p>
 
-<p>La evolución de los vendedores tradicionales en los canales digitales resalta la necesidad de rendimiento. La infraestructura necesaria para ofrecer una experiencia digital se está volviendo cada vez más compleja, con demanda de una facilidad de uso mejorada, reacción oportuna y agilidad. Esto sucede en un momento cuando los recursos están distribuidos a lo largo de la organización, conducidos por las demandas de grandes volúmenes de datos, las necesidades internas del usuario y la recuperación ante desastres. Ejercer presión para ingresar a la nueva realidad digital con sistemas viejos provoca un rendimiento lento e ineficiencia general.</p>
+<p>A evolução do varejo tradicional em canais digitais destaca a necessidade de desempenho. A infraestrutura necessária para proporcionar a experiência digital está se tornando cada vez mais complexa, com demandas para mais facilidade de utilização, responsividade e agilidade. Isto está ocorrendo num momento em que os recursos estão espalhado por toda a organização, devido a exigências como big data, necessidades de usuários internos e recuperação de desastres. Tentar avançar rumo à nova realidade digital com sistemas antigos resulta em desempenho lento e ineficiência generalizada.</p>
 
-<p>Muchas tiendas de comercio electrónico vuelven a crear plataformas cada dos o tres años<sup>4</sup>. Sin embargo, los plazos para volver a crear una plataforma variará según la experiencia del cliente única de cada vendedor y los objetivos de rendimiento. Volver a crear una plataforma para comercio electrónico es un proyecto enorme, que abarca los dos componentes de una tienda de comercio electrónico:</p>
+<p>A maior parte das lojas de comércio eletrônico promove replataformações a cada dois ou três anos<sup>4</sup>. No entanto, o cronograma da replataformação varia com base em experiência única de cliente e objetivos de desempenho do varejista. Proceder à replataformação de uma operação de comércio eletrônico é um grande empreendimento, abrangendo os componentes da loja de comércio eletrônico:</p>
 
 <ul>
-	<li>Evaluación de la plataforma de comercio electrónico: ¿puede la plataforma actual admitir las futuras iniciativas o está obstaculizando los planes existentes?</li>
-	<li>Evaluación del hospedaje: ¿debería la organización mantener una plataforma interna, mudar todo a un proveedor de servicio o emplear una solución híbrida?</li>
+	<li>Avaliar a plataforma de comércio eletrônico: a plataforma atual é capaz de suportar iniciativas futuras, ou está prejudicando os planos existentes?</li>
+	<li>Avaliar a solução de hospedagem: a organização deve manter uma plataforma interna, passar tudo para um provedor de serviços ou empregar uma solução híbrida?</li>
 </ul>
 
-<p>Ambos elementos son igual de importantes para el éxito de la tienda de comercio electrónico. Colocar una plataforma de comercio electrónico con muchos recursos en una infraestructura de baja calidad puede ser tan desastroso como tener una plataforma de comercio electrónico restrictiva dedicada a nivel empresa.</p>
+<p>Ambos os elementos são igualmente importantes para o sucesso da loja de comércio eletrônico. Colocar uma plataforma de comércio eletrônico de recursos pesados em uma infraestrutura abaixo do padrão pode ser tão desastroso quanto uma plataforma de comércio eletrônico restritiva em servidores de nível empresarial.</p>
 
-<p><strong>5 MOTIVOS PRINCIPALES MENCIONADOS PARA CAMBIAR LA PLATAFORMA DE COMERCIO ELECTRÓNICO<sup>5</sup>:</strong></p>
+<p><strong>5 PRINCIPAIS MOTIVOS CITADOS PARA A SUBSTITUIÇÃO DA PLATAFORMA DE COMÉRCIO ELETRÔNICO<sup>5</sup>:</strong></p>
 
 <ul>
-	<li>58%: para mejorar la agilidad del negocio</li>
-	<li>56%: para bajar los costos operativos y de propiedad generales</li>
-	<li>51%: para alinear los costos de propiedad con los ingresos en línea</li>
-	<li>51%: para apoyar nuestras iniciativas de canales múltiples</li>
-	<li>51%: para acelerar la implementación de nuevas opciones y funcionalidad<br />
+	<li>58%: melhorar a agilidade do negócio</li>
+	<li>56%: reduzir os custos operacionais e de propriedade em geral</li>
+	<li>51%: alinhar o custo de propriedade em relação às receitas do comércio eletrônico</li>
+	<li>51%: prestar suporte a iniciativas multicanal</li>
+	<li>51%: acelerar a implementação de novas características e funcionalidades<br />
 	&nbsp;</li>
 </ul>
 
-<h3>EL MOMENTO DE LA ACCIÓN</h3>
+<h3>HORA DE ENTRAR EM AÇÃO</h3>
 
-<p>En vista de los cambios en los comportamientos de los compradores, los sitios de comercio electrónico existentes pueden mostrar señales de que sus días de gloria han quedado en el pasado. Las señales para buscar incluyen:</p>
-
-<ul>
-	<li>Tiempos de respuesta inaceptables e interrupciones del servicio frecuentes</li>
-	<li>Incapacidad de mantenerse a la altura de la funcionalidad de la competencia</li>
-	<li>Estrategias de ventas omnicanales estancadas como resultado de una integración inadecuada entre canales</li>
-	<li>Dificultad para cumplir con los mandatos de la industria y el gobierno</li>
-	<li>Mejoras con costos prohibitivos para solucionar brechas en el sistema actual</li>
-</ul>
-
-<p>Las organizaciones pueden enfrentar nuevos requisitos que no existían o que cambiaron considerablemente desde que se creó la <a href="http://www.rackspace.com/es/ecommerce-hosting/">plataforma de comercio electrónico</a>. A medida que crece el catálogo de productos, los requisitos de base de datos pueden cambiar. El aumento de los usuarios concurrentes influencia el tamaño y la configuración del servidor web. Operar en un ambiente global puede requerir la habilidad de <a href="http://www.rackspace.com/es/cloud/files/technology/?page=cdn">localizar contenido</a>, mostrar y administrar transacciones en la moneda del país donde se encuentra el comprador y cumplir los requisitos de cumplimiento de las normas locales.</p>
-
-<p>Las ofertas de operaciones de comercio electrónico que lidian con los productos físicos y digitales o de software como servicio tendrán diferentes consideraciones que un vendedor puro de productos en línea. Asimismo, pueden necesitar múltiples métodos de pago, que varían desde modelos por vez única a aquellos que se basan en suscripción. Tan importante como los métodos de pago son los requerimientos para lidiar con renovaciones, tarjetas vencidas, reembolsos y problemas de canales tales como las comisiones por mercadotecnia para afiliados.</p>
-
-<p>Por supuesto, cada organización que considere la decisión de cambio de plataforma de comercio electrónico debe considerar los cambios significativos en las tecnologías de los medios sociales y móviles que se produjeron desde que se implementó la plataforma anterior. Para 2017, eMarketer predice que casi el 80% de los compradores digitales estarán comprando desde un dispositivo móvil, donde las ventas desde tablets representan casi el 70% de las compras<sup>6</sup>. Hace poco, los índice de pulsación de los avisos de Facebook subieron un 275% mientras que el costo por hacer clic descendió un 40%, convirtiendo a las ventas a través de medios sociales en un aspecto importante para tener en cuenta durante el proceso de crear una nueva plataforma<sup>7</sup>.</p>
-
-<p>Una vez que se identifica la necesidad de volver a crear la plataforma, es necesario establecer objetivos para el proyecto. Pero para desarrollar estos objetivos, el equipo participante debe desarrollar una estrategia adecuada de acuerdo con las necesidades propias del negocio y considerar las demandas de las múltiples partes interesadas. Los líderes comerciales pueden estar centrados en cuestiones como las tasas de conversión y la retención de clientes, mientras que los especialistas en tecnología están más preocupados por la seguridad, el cumplimiento y el rendimiento. Y claro, está el cliente, que quiere acceso rápido a contenido de calidad y facilidad para completar las transacciones.</p>
-
-<p>Un proyecto exitoso equilibra esos objetivos. "En última instancia, la cuestión de cambiar de plataforma con un sistema de comercio electrónico existente se reduce a determinar la inversión necesaria para cumplir los objetivos de la organización. El aspecto económico de la nube implica mucho más que la tan reclamada opción de 'convertir CAPEX a OPEX'", explica <a href="http://www.rackspace.com/blog/author/mahesh-gandhe/">Mahesh Gandhe, gerente sénior de mercadotecnia de soluciones de Rackspace</a>.</p>
-
-<p>Chris Vitale, director de comercio electrónico en <a href="http://stories.rackspace.com/customers/pep-boys">Pep Boys</a>, describe el tangible estado futuro que la mayoría de los vendedores buscan pero que solo pueden conseguir al recrear las plataformas de sus sistemas: "Tendremos una experiencia de canales múltiples donde una persona puede interactuar con nosotros y establecer sus expectativas, luego continuar en la tienda y tener una experiencia completa, casi tradicional en la tienda con nosotros".</p>
-
-<h3>SELECCIÓN DE PLATAFORMA DE COMERCIO ELECTRÓNICO</h3>
-
-<p>La plataforma de comercio electrónico consiste en el software que se utiliza para manejar la apariencia y funcionalidad del sitio, el inventario, los procesos de pago, etc. La selección de la plataforma es un elemento esencial para la elección de hospedaje que tendrá que considerar eventualmente. Esta lista brinda una base para los requisitos de la plataforma, aunque pueden surgir, sin dudas, preocupaciones adicionales para el negocio que aparecerán durante el proceso de selección.</p>
+<p>Em face da mudança de comportamento dos compradores, os sites de comércio eletrônico existentes podem estar apresentando sinais de que seus dias de glória ficaram para trás. Os sinais indicadores incluem:</p>
 
 <ul>
-	<li><strong>MERCADOTECNIA DEL PRODUCTO</strong>: controlar cómo se muestran los productos y la información, cómo se presentan los descuentos a los clientes y cómo se procesan en un sistema de pago, mediante la presentación de requisitos de personalización de productos y la muestra del contenido global de estos.</li>
-	<li><strong>COMPATIBILIDAD DE DATOS:</strong> análisis sintáctico de múltiples puntos de datos de manera simultánea para redireccionar en fracción de segundo a páginas dinámicas o mostrar contenido al cliente, permitiendo que tipos de datos incompatibles o datos almacenados en silos "hablen" entre sí, lo que no permite iniciativas de experiencias para el cliente.</li>
-	<li><strong>SISTEMA DE PAGO:</strong> permitir pruebas con capacidad de inclusión/exclusión, compra física de productos, gestión de acceso a productos SaaS, servicio para pagos globales, compatibilidad del carro de compras</li>
-	<li><strong>ADMINISTRACIÓN DE CANALES:</strong> funciones para diferenciar los segmentos de los clientes, oferta de contenido dinámico en base al perfil del cliente, administración de la lista de precios para ofrecer precios alternativos a determinados clientes, cumplimiento de normas globales</li>
-	<li><strong>FUNCIONALIDAD MÓVIL:</strong> creación de interfaces móviles de alto impacto para smartphones y tablets, procesamiento en tiempo real, optimización del carro de compras móvil</li>
-	<li><strong>MERCADOTECNIA:</strong> herramientas para la evaluación de contacto de clientes, capacidades de prueba múltiples, mercadotecnia de adquisición/retención (campañas de pago por clic, optimización de motores de búsqueda, listado de correos electrónicos), servicio técnicos para programas de afilados</li>
-	<li><strong>CONTACTO CON EL CLIENTE:</strong> habilidad de personalizar y enviar correos electrónicos transaccionales para la creación de cuentas, contactos relacionados por orden, contenido localizado, nuevas versiones de productos.</li>
-	<li><strong>ADMINISTRACIÓN DE HOSPEDAJE:</strong> acceso a componentes dedicados y escalables, implementación de expansibilidad de la nube para su expansión, cumplimiento de las normas PCI, redundancia para la recuperación ante desastres.</li>
+	<li>Tempos de resposta inaceitáveis ou interrupções frequentes</li>
+	<li>Incapacidade de acompanhar a funcionalidade dos concorrentes</li>
+	<li>Estratégias de vendas onicanal estagnadas pela deficiente integração entre os canais</li>
+	<li>Dificuldade em cumprir com regulações de conformidade do setor e do governo</li>
+	<li>Melhorias de custo proibitivo necessárias para corrigir falhas no sistema</li>
 </ul>
 
-<h3>SELECCIÓN DE HOSPEDAJE</h3>
+<p>As organizações podem enfrentar novas exigências que não existiam ou que mudaram acentuadamente desde a criação da <a href="http://www.rackspace.com/pt/ecommerce-hosting/">plataforma de comércio eletrônico</a>. Na medida em que o catálogo de produtos cresce, os requisitos de banco de dados podem mudar. Um aumento de usuários simultâneos influencia o tamanho e configuração do servidor web. Operar em um ambiente global pode exigir a capacidade de <a href="http://www.rackspace.com/pt/cloud/files/technology/?page=cdn">localizar conteúdos</a>, apresentar e lidar com transações em moeda local do comprador e gerenciar os requisitos de conformidade locais.</p>
 
-<p>Cada compañía tiene un negocio y requisitos de TI únicos, y hay muchas soluciones que pueden ser adecuadas. A veces, la mejor configuración para un negocio incluye más de una opción. Al evaluar las opciones de hospedaje, es importante considerar si la potencial integración y los problemas de implementación están alineados con los recursos de TI y la experiencia de la organización. Hay una gran diferencia entre un proveedor general de la nube que solo ofrece infraestructura básica, dejando a las organizaciones para que vean cómo implementan y conectan la plataforma de comercio electrónico, y especialistas en hospedaje que proporcionan experticia en cargas de trabajo únicas. Elegir un socio de hospedaje con experiencia especializada en plataformas de comercio electrónico e infraestructura ayuda a la organización a sortear las dificultades de crear una solución óptima.</p>
+<p>Operações de comércio eletrônico que lidam com produtos físicos e digitais ou ofertas de software como serviço têm considerações diferentes de um simples varejista de produtos on-line. Além disso, podem precisar de vários tipos de formas de pagamento, que variam de modelos e requisitos de uma única vez a modelos baseados em assinaturas. Tão importante quanto os métodos de faturamento são os requisitos para lidar com renovações, cartões vencidos, reembolsos e questões de canal, como as comissões de marketing das filiais.</p>
 
-<p>Las organizaciones deberían revisar sus opciones considerando su estrategia, para elegir la combinación adecuada. Las opciones incluyen:</p>
+<p>É claro que todas as organizações que pensam na replataformação do comércio eletrônico devem levar em conta mudanças significativas nas tecnologias de mídia móvel e social ocorridas desde a implementação da plataforma anterior. Até 2017, segundo o eMarketer, cerca de 80% dos compradores digitais farão compras em um dispositivo móvel, com as vendas a partir de tablets representando quase 70% das compras<sup>6</sup>. Recentemente, as taxas de click-through de anúncios do Facebook subiram 275%, enquanto o custo por clique caiu 40%, tornando a venda social outro imperativo vital a se considerar no processo de replataformação<sup>7</sup>.</p>
+
+<p>Uma vez que a necessidade de replataformação for reconhecida, será fundamental estabelecer os objetivos do projeto. A fim de desenvolver esses objetivos, no entanto, a equipe deve criar uma estratégia adequada para as necessidades únicas de negócio da empresa e considerar as demandas das várias partes interessadas. Os líderes de negócios podem estar concentrados em questões como taxas de conversão e retenção de clientes, enquanto os tecnólogos podem se preocupar mais com segurança, conformidade e desempenho. E também, é claro, há o cliente, que deseja acesso rápido a conteúdo de qualidade e facilidade para concluir transações.</p>
+
+<p>Um projeto bem sucedido equilibra essas metas. "Em última análise, a questão de replataformação de um sistema de comércio eletrônico existente se resume a determinar os investimentos necessários para atingir as metas da organização. A questão da economia de nuvem envolve mais do que a batida 'conversão de CAPEX para OPEX'", explica <a href="http://www.rackspace.com/blog/author/mahesh-gandhe/">Mahesh Gandhe, gerente sênior de marketing de soluções da Rackspace</a>.</p>
+
+<p>Chris Vitale, diretor de comércio eletrônico da <a href="http://stories.rackspace.com/customers/pep-boys">Pep Boys</a>, descreve o estado futuro e tangível que a maioria dos varejistas procura, mas só pode alcançar por meio da replataformação de seus sistemas: "Teremos uma experiência multicanal em que alguém interage conosco on-line, uma expectativa é definida e as pessoas continuam até a loja, tendo uma experiência completa, quase tradicional, na loja com a gente".</p>
+
+<h3>SELEÇÃO DA PLATAFORMA DE COMÉRCIO ELETRÔNICO</h3>
+
+<p>A plataforma de comércio eletrônico consiste no software usado para gerenciar a aparência do seu site, inventário, processos de pagamento etc. A seleção da plataforma é um fator decisivo da escolha de hospedagem, por isso há muito o que considerar. A lista oferece uma base dos requisitos de plataforma, embora as questões adicionais únicas para o negócio serão descobertas durante o processo de seleção.</p>
 
 <ul>
-	<li><strong>NUBE:</strong> aprovecha la infraestructura totalmente escalable y preconfigurada o ambientes altamente personalizados, para reducir las cargas de la administración y el hardware. Eleja una <a href="http://www.rackspace.com/es/cloud/">nube pública</a> a un menor costo o una <a href="http://www.rackspace.com/es/cloud/private/">nube privada</a> para cargas de trabajo sujetas a seguridad estricta o el cumplimiento de normas.</li>
-	<li><strong>LOCAL:</strong> la carga del hardware, la seguridad, el rendimiento y la expansión se apoyan sobre el equipo de TI y el presupuesto. Esta opción ofrece control total con todos los dolores de cabeza causados por el hecho de que la compañía sea responsable de toda la infraestructura de comercio electrónico.</li>
-	<li><strong>HÍBRIDO:</strong> combina hardware local o dedicado con los recursos para lograr eficiencias en la nube y satisface ciertas necesidades de seguridad y cumplimientos de normas. En un <a href="http://www.rackspace.com/es/cloud/hybrid/">ambiente de nube híbrida</a>, un vendedor puede trasladar ciertas cargas de trabajo, como correos electrónicos o entrega de contenido, a la nube, mientras que mantiene el control sobre otros sistemas críticos que se ejecutan mejor en equipos dedicados locales.</li>
+	<li><strong>MERCHANDISING DE PRODUTOS:</strong> Controlar a forma como os produtos e as informações são exibidos E como os descontos são mostrados ao cliente e processados ​​em um sistema de pagamento; apresentar requisitos de personalização de produtos; exibir conteúdos globais de produtos.</li>
+	<li><strong>COMPATIBILIDADE DE DADOS:</strong> Analisar vários pontos de dados simultaneamente para um redirecionamento instantâneo para páginas dinâmicas ou para fornecer conteúdo personalizado, permitindo que tipos de dados incompatíveis ou dados armazenados em silos "conversem" entre sim, sem prejudicar as iniciativas de experiência do cliente.</li>
+	<li><strong>SISTEMA DE PAGAMENTO:</strong> Dar suporte a testes com recursos de adesão ou cancelamento, compra de produtos físicos, gerenciamento de acesso a produtos SaaS, suporte para pagamentos globais e compatibilidade do carrinho de compras.</li>
+	<li><strong>GERENCIAMENTO DE CANAL:</strong> Características que diferenciam os segmentos de clientes, fornecimento de conteúdo dinâmico com base no perfil do cliente, gestão de lista de preços para oferecer preços alternativos para clientes selecionados e gestão de conformidade global.</li>
+	<li><strong>FUNCIONALIDADE DE DISPOSITIVOS MÓVEIS:</strong> Criação de interfaces de dispositivos móveis de alto impacto em todos os smartphones e tablets, processamento em tempo real e otimização de carrinho de compras de dispositivos móveis.</li>
+	<li><strong>MARKETING:</strong> Ferramentas para teste de contato com o cliente, capacidades de teste multivariável, marketing de aquisição/fidelização (campanhas de PPC, SEO, gerenciamento de lista de e-mail) e suporte a programas de afiliados.</li>
+	<li><strong>CONTATOS COM CLIENTES:</strong> Capacidade de personalizar e enviar e-mails transacionais para a criação da conta, contatos relacionados com pedidos, conteúdo localizado e novas versões do produto.</li>
+	<li><strong>GERENCIAMENTO DE HOSPEDAGEM:</strong> Acesso a componentes de servidor dedicados e escaláveis, implantação de expansão da nuvem para extensão, cumprimento de conformidade com o PCI e criação de redundância para recuperação de desastres.</li>
 </ul>
 
-<p>"No puedo pensar en un escenario donde sea óptima una solución "solamente local", dice Gandhe. "Con esa opción, es necesario aprovisionarse para los períodos pico, lo que significa que se está invirtiendo de más en capacidades para los otros períodos, o el servicio para el tráfico diario normal no podrá con los aumentos de tráfico."</p>
+<h3>SELEÇÃO DE HOSPEDAGEM</h3>
 
-<p>Steve Vitale, director de comercio electrónico en Spencer Gifts, repite la afirmación de Gandhe: "nuestro tráfico y negocio puede aumentar de 100 a 1,000 veces de lo que era durante la temporada baja. Tenemos que expandirnos o contraernos, pero también tenemos que evitar no consumir mucha infraestructura durante la temporada baja. Por eso elegimos la nube híbrida de Rackspace basada en RackConnect. Dividimos nuestra aplicación entre infraestructura privada dedicada para los procesos de facturación y usamos la nube pública para las descripciones de productos, precios y otra información".</p>
+<p>Todas as empresas têm necessidades de negócios e de TI únicas e existem diversas soluções que podem ser adequadas. Às vezes, a melhor configuração para uma empresa inclui mais de uma opção. Ao avaliar as opções de hospedagem, é importante considerar se possíveis questões de integração e implementação potenciais estão alinhadas com os recursos e experiência de TI da organização. Há uma enorme diferença entre um provedor de nuvem comum que oferece apenas infraestrutura bruta – deixando que as empresas imaginem como implementar e conectar a plataforma de comércio eletrônico – e especialistas de hospedagem capazes de oferecer conhecimentos para cargas de trabalho únicas. Escolher um parceiro de hospedagem com experiência especializada em plataformas e infraestrutura de comércio eletrônico ajuda a organização a resolver as complexidades para arquitetar uma solução ideal.</p>
 
-<h3>HACER LA JUGADA</h3>
+<p>As organizações devem rever as suas opções em relação à própria estratégia para escolher a combinação certa. As opções incluem:</p>
 
-<p>En base al conocimiento y la experiencia adquiridos trabajando para algunos de los principales vendedores de los Estados Unidos, <a href="http://www.rackspace.com/es/digital">Rackspace Digital</a>, una práctica especializada en <a href="http://go.rackspace.com/digital#content-target">administración de contenido</a>, <a href="http://go.rackspace.com/digital#mobile-target">móvil</a> y <a href="http://go.racy high, though, it may be more cost-effective to store credit card information in the data center of a service provider that can meet <a href="http://www.rackspace.com/ecommerce-hosting/pci/">PCI compliance requirements</a>.</p>
+<ul>
+	<li><strong>NUVEM:</strong> aproveita a infraestrutura altamente escalável e ambientes pré-configurados ou altamente personalizáveis para reduzir encargos de hardware e de gestão. Escolha uma <a href="http://www.rackspace.com/pt/cloud/">nuvem pública</a> de baixo custo ou uma <a href="http://www.rackspace.com/pt/cloud/private/">nuvem privada</a> para cargas de trabalho sujeitas a regulações rigorosas de segurança ou de conformidade.</li>
+	<li><strong>AMBIENTE LOCAL:</strong> passe o fardo de hardware, segurança, desempenho e escalabilidade para a equipe e o orçamento de TI. Esta opção oferece controle total e todas as dores de cabeça que acompanham a responsabilidade por toda a infraestrutura de comércio eletrônico.</li>
+	<li><strong>HÍBRIDO:</strong> combina hardware no local ou dedicado com recursos de nuvem para atingir eficiências de nuvem e atender a determinadas necessidades de segurança ou de conformidade. Em um <a href="http://www.rackspace.com/pt/cloud/hybrid/">ambiente de nuvem híbrida</a>, um varejista pode transferir determinadas cargas de trabalho, como e-mail ou fornecimento de conteúdo, para a nuvem, mantendo o controle sobre outros sistemas críticos que são mais bem executados em equipamento dedicado ou no local.</li>
+</ul>
 
-<p>Catalog display logic and shopping cart logic may both reside on the same server, in a two-tier architecture: The first tier is composed of a combined Web and application tier; the second, a database layer. Another approach is a three-tier architecture. In this case, the Web layer is the first tier, the app layer is the second, and the database layer is the third.</p>
+<p>"Não consigo pensar em um cenário em que a solução "totalmente local" seria a ideal", diz Gandhe. "Com essa opção, você tem provisão para períodos de pico – ou seja, você está investindo excessivamente em capacidade para outros períodos – ou para o tráfego normal diário, correndo o risco de não atender aos picos de demanda".</p>
 
-<p>“We generally find that ecommerce operations start with a two-tier architecture, then, as the business grows, they start separating two layers so that each tier can scale independently,” explains Gandhe. “Deciding between a two-tier and a three-tier reference architecture really depends on scalability needs for the catalog display and shop- ping cart.”</p>
+<p>Steve Vitale, diretor de comércio eletrônico da Spencer Gifts, reafirma a declaração de Gandhe: "Nosso tráfico e negócios podem aumentar de 100 a 1.000 vezes de seu tamanho no período de entressafra. Temos de expandir e diminuir, mas também temos de tentar não dispor de muita infraestrutura no período de entressafra. É por isso que escolhemos a nuvem híbrida Rackspace baseada em RackConnect. Dividimos nossa aplicação entre uma infraestrutura dedicada privada para o nosso processo de compra e usamos a nuvem pública para descrições de produtos, preços e outras informações".</p>
 
-<p>Display logic and shopping cart logic can either run on <a href="http://www.rackspace.com/cloud/servers/">cloud servers</a> or <a href="http://www.rackspace.com/managed_hosting/dedicated_servers/">dedicated servers</a>. Cloud is both persistent and highly elastic, with speedy provisioning to scale on demand. Dedicated servers, on the other hand, provide a single-tenant environment for exclusive usage.</p>
+<h3>A MUDANÇA</h3>
 
-<p>The type of database and volume of I/O transactions will dictate which database technology is right for an ecommerce operation. “Cloud databases are the best option if you want to use a MySQL database and want Rackspace to manage it for you,” says Gandhe. “If you want to use a database that supports virtual environments, then you can run your own database on cloud servers. If your database of choice doesn’t support virtualization, or for the highest I/O performance, we recommend running your database on a dedicated server.”</p>
+<p>Com base no conhecimento e experiência adquiridos no atendimento a alguns dos maiores varejistas dos EUA, a <a href="http://www.rackspace.com/pt/digital">Rackspace Digital</a>, uma tecnologia especializada em <a href="http://go.rackspace.com/digital#content-target">gerenciamento de conteúdo</a>, <a href="http://go.rackspace.com/digital#mobile-target">dispositivos móveis</a> e <a href="http://go.rackspace.com/digital#commerce-target">hospedagem de comércio eletrônico</a>, desenvolveu quatro arquiteturas de referência para soluções de comércio eletrônico construídas em <a href="http://ptrackspace.convertlanguage.com/pt/ecommerce-hosting/magento/">Magento </a>ou <a href="http://ptrackspace.convertlanguage.com/pt/oracle-retail">Oracle Retail</a>:</p>
 
-<h3><strong>CONCLUSION</strong></h3>
+<ul>
+	<li><strong>BÁSICA:</strong> uma configuração de nuvem pura com servidor web e banco de dados que residem na nuvem, com a capacidade de adicionar servidores web e banco de dados para proporcionar escalabilidade.</li>
+	<li><strong>INTERMEDIÁRIO:</strong> arquitetura baseada em nuvem de três camadas utilizando servidores dedicados tanto para servidores web e de base de dados. Servidores web e de banco de dados únicos ficam segmentado por trás do firewall físico, e as informações do cartão de crédito do cliente são armazenadas em um gateway de pagamento de terceiros.</li>
+	<li><strong>AVANÇADA:</strong> uma arquitetura de três camadas híbrida (dedicado + em nuvem) que se baseia em dados transacionais armazenados em servidores dedicados por trás de um firewall físico, com a capacidade de passar para Cloud Servers em picos de feriados ou aumentos repentinos na carga.</li>
+	<li><strong>PREMIER:</strong> arquitetura de três camadas autossuficiente híbrida (dedicado + em nuvem) e compatível com PCI, projetada para suportar o maior número de transações on-line através de uma infraestrutura resistente e altamente disponível com recursos de failover em todas as camadas da solução.</li>
+</ul>
 
-<p>Ultimately, re-platforming an ecommerce system comes down to determining the investment required to meet the business goals. Factors such as the pattern of demand, t<a href="http://www.rackspace.com/enterprise-cloud-solutions/advisory-services/#tco-workshop">otal cost of ownership</a>, and transformation costs need to be considered in any financial analysis of a potential solution. Choosing the ecommerce platform software balances the cost of licensing and management against the benefit of instant access to the tools needed to build and grow a competitive site. Sufficient variability in demand is required to realize cost savings using a public cloud hosting model; flat workloads are cheaper on dedicated infrastructure over a fixed contract term.</p>
+<h3>O QUE É A RACKSPACE DIGITAL?</h3>
 
-<p>Transforming infrastructure can be costly and time-consuming, and relying on internal skills may not be ideal. “In almost all cases, I’d strongly recommend that a company approaching the re-platforming stage look into working with a partner that is able to apply skills and resources that are likely in short supply internally,” says Gandhe.</p>
+<p>Melhores práticas, orientação de arquitetura e suporte proativo às principais plataformas digitais para:</p>
 
-<h3>LEARN MORE ABOUT RACKSPACE DIGITAL SOLUTIONS AT <a href="http://www.rackspace.com/digital">GO.RACKSPACE.COM/DIGITAL</a></h3>
+<ul>
+	<li><strong>SISTEMAS DE GESTÃO DE CONTEÚDO WEB:</strong> experiência de hospedagem de aplicação e infraestrutura para as principais plataformas WCMS, incluindo WordPress, Drupal, Sitecore, Adobe e Ektron.</li>
+	<li><strong>SOLUÇÕES DE COMÉRCIO ELETRÔNICO:</strong> infraestrutura e serviços abertos e híbridos para a criação de lojas de comércio eletrônico seguras, escaláveis ​​e altamente disponíveis criadas em Magento, Oracle Commerce, hybris e Intershop.</li>
+	<li><strong>SERVIÇOS DE DISPOSITIVOS MÓVEIS:</strong> infraestrutura flexível para dispositivo móvel e experiência em hospedagem de plataforma em Node.js, FeedHenry, e Mutual Mobile para experiências com dispositivos móveis altamente escaláveis e confiáveis.</li>
+</ul>
+
+<h3><strong>REUNINDO TUDO</strong></h3>
+
+<p>Uma loja on-line é a janela de uma empresa para o mundo. Ela precisa enfrentar o tráfego diário e picos inesperados, além de oferecer aos clientes um local seguro para fazer compras. Um componente fundamental, obviamente, é permitir que os clientes façam compras usando cartões de crédito. Se o número de transações de cartão de crédito é relativamente pequeno, um gateway de pagamento de terceiros é econômico e pode ser a melhor opção. Se, no entanto, o volume de transações de cartão de crédito for muito alto, pode ser mais econômico armazenar informações de cartão de crédito no centro de dados de um provedor de serviços capaz de atender aos <a href="www.rackspace.com/pt/ecommerce-hosting/pci/">requisitos de conformidade com o PCI</a>.</p>
+
+<p>A lógica de exibição de catálogo e a lógica do carrinho de compras podem residir no mesmo servidor, em uma arquitetura de duas camadas: a primeira camada é composta por uma camada web e de aplicação combinadas; a segunda, de uma camada de base de dados. Outra opção é uma arquitetura de três camadas. Nesse caso, a camada web é a primeira camada, a camada de app é a segunda, e a camada de banco de dados é a terceira.</p>
+
+<p>"Geralmente consideramos que as operações de comércio eletrônico começam com uma arquitetura de duas camadas. Depois, à medida que o negócio cresce, começa a separação das duas camadas, de modo que cada camada possa ser dimensionada de forma independente", explica Gandhe. "Decidir entre uma arquitetura de referência de duas ou três camadas realmente depende das necessidades de escalabilidade para exibição de catálogo e carrinho de compras".</p>
+
+<p>As lógicas de exibição e de carrinho de compras podem rodar em <a href="http://www.rackspace.com/pt/cloud/servers/">Cloud Servers</a> ou <a href="http://www.rackspace.com/pt/managed_hosting/dedicated_servers/">servidores dedicados</a>. A nuvem é persistente e altamente elástica, com provisionamento rápido para expansão sob demanda. Servidores dedicados, por outro lado, proporcionam um ambiente de único inquilino para uso exclusivo.</p>
+
+<p>O tipo de banco de dados e volume de operações de E/S ditarão qual a tecnologia de banco de dados é adequada para as operações de comércio eletrônico. "Os Cloud Databases são a melhor opção, se você quiser usar um banco de dados MySQL e que a Rackspace o gerencie para você ", diz Gandhe. "Se você quiser usar um banco de dados que suporta ambientes virtuais, então você pode administrar o seu próprio banco de dados nos Cloud Servers. Se o banco de dados de sua escolha não suporta virtualização, ou, se desejar o melhor desempenho de E/S, recomendamos a execução do banco de dados em um servidor dedicado".</p>
+
+<h3><strong>CONCLUSÃO</strong></h3>
+
+<p>Em última análise, a replataformação de um sistema de comércio eletrônico se resume a determinar os investimentos necessários para atingir as metas da organização. Fatores como o padrão de demanda, <a href="http://www.rackspace.com/pt/enterprise-cloud-solutions/advisory-services/#tco-workshop">custo total de propriedade</a> e custos de transformação precisam ser considerados em qualquer análise financeira de uma solução em potencial. Escolher o software da plataforma de comércio eletrônico equilibra o custo de licenciamento e gestão em relação ao benefício de acesso imediato às ferramentas necessárias para criar e expandir um site competitivo. A variabilidade suficiente na demanda é necessária para obtenção de economia de custo através de um modelo de hospedagem em nuvem pública. Cargas de trabalho simples são mais baratas em infraestrutura dedicada ao longo de um prazo de contato fixo.</p>
+
+<p>A transformação da infraestrutura pode ser cara e demorada, e contar com competências internas pode não ser o ideal. "Em quase todos os casos, eu recomendo fortemente que a empresa que considera a replataformação examine a possibilidade de trabalhar com um parceiro capaz de aplicar habilidades e recursos que, provavelmente, faltem internamente", diz Gande.</p>
+
+<h3>SAIBA MAIS SOBRE AS SOLUÇÕES DA RACKSPACE DIGITAL EM <a href="http://www.rackspace.com/pt/digital">IR.RACKSPACE.COM/DIGITAL</a></h3>
+
+<h3>&nbsp;</h3>
 
 <p><strong>Sources:</strong></p>
 
@@ -132,29 +155,7 @@ body_format: tinymce
 <p><sup>6</sup> <a href="http://www.emarketer.com/Article/Smartphones-Tablets-Drive-Faster-Growth-Ecommerce-%20Sales/1009835">http://www.emarketer.com/Article/Smartphones-Tablets-Drive-Faster-Growth-Ecommerce- Sales/1009835</a></p>
 
 <p><sup>7</sup> <a href="http://success.adobe.com/assets/en/downloads/whitepaper/13926_di_social_sentiment_%20v10.pdf">http://success.adobe.com/assets/en/downloads/whitepaper/13926_di_social_sentiment_ v10.pdf</a></p>
-ciones de entrada/salida determinarán qué tecnología de base de datos es la adecuada para una operación de comercio electrónico. "Las bases de datos en la nube son la mejor opción si se quiere usar una base de datos MySQL y que Rackspace la administre", dice Gandhe. "Si desea utilizar una base de datos que sea compatible con ambientes virtuales, puede ejecutar su propia base de datos en Cloud Servers. Si la base de datos de su elección no permite la virtualización, o desea un rendimiento de entrada/salida más alto, recomendamos ejecutar su base de datos en un servidor dedicado".</p>
-
-<h3><strong>CONCLUSIÓN</strong></h3>
-
-<p>En última instancia, volver a crear una plataforma para sistema de comercio electrónico se reduce a determinar la inversión necesaria para cumplir con los objetivos de negocios. Factores tales como el patrón de la demanda <a href="http://www.rackspace.com/es/enterprise-cloud-solutions/advisory-services/#tco-workshop">costo total de propiedad</a> y los costos de transformación deben tenerse en cuenta en cualquier análisis financiero para encontrar una solución potencial. Al elegir el software de la plataforma de comercio electrónico, se equilibra el costo de licencia y administración con el beneficio de acceso instantáneo a las herramientas necesarias para construir y mantener un sitio competitivo. Se necesita suficiente variabilidad en la demanda para ahorrar en los costos utilizando un modelo de hospedaje de nube pública; las cargas de trabajo fijas son más económicas en la infraestructura dedicada a lo largo de un período de contrato fijo.</p>
-
-<p>Trasformar la infraestructura puede ser costoso y llevar mucho tiempo, y confiar en habilidades internas puede no ser ideal. "En la mayoría de los casos, aconsejo que las compañías asuman la etapa de cambio de plataforma trabajando con un socio que sea capaz de aplicar las habilidades y recursos que faltan a nivel interno", dice Gandhe.</p>
-
-<h3>OBTENGA MÁS INFORMACIÓN SOBRE LAS SOLUCIONES DIGITALES DE RACKSPACE EN <a href="http://www.rackspace.com/es/digital">GO.RACKSPACE.COM/DIGITAL</a></h3>
-
-<h3>&nbsp;</h3>
-
-<p><strong>Sources:</strong></p>
-
-<p><sup>1</sup> <a href="http://googlemobileads.blogspot.com/2012/09/mobile-friendly-sites-turn-visitors.html%20">http://googlemobileads.blogspot.com/2012/09/mobile-friendly-sites-turn-visitors.html </a></p>
-
-<p><sup>2</sup> <a href="http://blogs.forrester.com/peter_sheldon/13-08-01-commerce_technology_continues_its_%20bull_run">http://blogs.forrester.com/peter_sheldon/13-08-01-commerce_technology_continues_its_ bull_run</a></p>
-
-<p><sup>3</sup> <a href="http://www.slideshare.net/Carnage3604/forrester-tco-comparison">Understanding TCO When Evaluating Ecommerce Platforms, 2012, Forrester Research.</a></p>
-
-<p><sup>4</sup> <a href="http://www.slideshare.net/Carnage3604/forrester-tco-comparison">Understanding TCO When Evaluating Ecommerce Platforms, 2012, Forrester Research.</a></p>
-
-<p><sup>5</sup> <a href="http://www.slideshare.net/Carnage3604/forrester-tco-comparison">Understanding TCO When Evaluating Ecommerce Platforms, 2012, Forrester Research.</a></p>
+ter-tco-comparison">Understanding TCO When Evaluating Ecommerce Platforms, 2012, Forrester Research.</a></p>
 
 <p><sup>6</sup> <a href="http://www.emarketer.com/Article/Smartphones-Tablets-Drive-Faster-Growth-Ecommerce-%20Sales/1009835">http://www.emarketer.com/Article/Smartphones-Tablets-Drive-Faster-Growth-Ecommerce- Sales/1009835</a></p>
 

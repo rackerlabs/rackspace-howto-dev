@@ -6,7 +6,7 @@ created_date: '2012-07-24 22:22:22'
 created_by: Jerry Schwartz
 last_modified_date: '2015-09-03 20:3141'
 last_modified_by: constanze.kratel
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 

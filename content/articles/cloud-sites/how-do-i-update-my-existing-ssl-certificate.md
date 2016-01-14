@@ -6,7 +6,7 @@ created_date: '2011-08-16 17:01:03'
 created_by: chris.farmer
 last_modified_date: '2016-01-12 20:1015'
 last_modified_by: stephanie.fillmon
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

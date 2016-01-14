@@ -6,7 +6,7 @@ created_date: '2013-11-05 20:13:33'
 created_by: maria.abrahms
 last_modified_date: '2014-03-19 02:2429'
 last_modified_by: ross.diaz
-products: Auto Scale
+product: Auto Scale
 body_format: tinymce
 ---
 

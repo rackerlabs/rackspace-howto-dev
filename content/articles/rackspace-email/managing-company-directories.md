@@ -6,7 +6,7 @@ created_date: '2014-11-14 22:34:58'
 created_by: joanna.salazar
 last_modified_date: '2015-01-23 19:3437'
 last_modified_by: kyle.laffoon
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

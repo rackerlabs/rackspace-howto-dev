@@ -6,7 +6,7 @@ created_date: '2014-03-28 15:07:46'
 created_by: rose.contreras
 last_modified_date: '2014-06-30 21:4648'
 last_modified_by: jered.heeschen
-products: Cloud Big Data
+product: Cloud Big Data
 body_format: tinymce
 ---
 

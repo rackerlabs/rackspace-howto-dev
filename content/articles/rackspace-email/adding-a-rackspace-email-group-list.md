@@ -6,7 +6,7 @@ created_date: '2012-05-23 05:00:04'
 created_by: RackKCAdmin
 last_modified_date: '2012-07-24 15:3124'
 last_modified_by: RackKCAdmin
-products: Rackspace Email
+product: Rackspace Email
 body_format: tinymce
 ---
 

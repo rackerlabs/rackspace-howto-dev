@@ -6,7 +6,7 @@ created_date: '2014-09-23 15:05:23'
 created_by: cody.jobson
 last_modified_date: '2014-10-27 15:5008'
 last_modified_by: ross.diaz
-products: Exchange
+product: Exchange
 body_format: tinymce
 ---
 

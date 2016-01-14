@@ -6,7 +6,7 @@ created_date: '2014-11-13 23:35:46'
 created_by: rose.contreras
 last_modified_date: '2015-04-03 20:5609'
 last_modified_by: kelly.holcomb
-products: Cloud Databases
+product: Cloud Databases
 body_format: markdown_w_tinymce
 ---
 

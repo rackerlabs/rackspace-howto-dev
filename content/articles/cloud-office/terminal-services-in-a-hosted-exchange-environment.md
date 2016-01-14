@@ -6,7 +6,7 @@ created_date: '2013-11-12 23:14:00'
 created_by: milton.prado
 last_modified_date: '2013-11-13 08:5820'
 last_modified_by: jered.heeschen
-products: Cloud Office
+product: Cloud Office
 body_format: tinymce
 ---
 

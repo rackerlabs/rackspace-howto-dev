@@ -4,10 +4,10 @@ title: Generate a CSR with OpenSSL
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2014-12-07 18:0850'
-last_modified_by: jered.heeschen
-products: Cloud Servers
-body_format: tinymce
+last_modified_date: '2016-01-13 19:4537'
+last_modified_by: Nate.Archer
+product: Cloud Servers
+body_format: markdown_w_tinymce
 ---
 
 This article will go through the first step of creating and eventually
@@ -26,16 +26,14 @@ the Cloud Control Panel](https://csrgenerator.rackspace.com/). For more
 information, see [Create an SSL CSR in the Rackspace Cloud Control
 Panel](/knowledge_center/article/create-an-ssl-csr-in-the-rackspace-cloud-control-panel).
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Prerequisites](#Prerequisites)                                    |
-| -   [2 Generate the RSA key](#Generate_the_RSA_key)                      |
-| -   [3 Create a CSR](#Create_a_CSR)                                      |
-| -   [4 Verify your CSR](#Verify_your_CSR)                                |
-| -   [5 Submit your CSR](#Submit_your_CSR)                                |
-+--------------------------------------------------------------------------+
+Contents
+-----------
+
+-   [1 Prerequisites](#Prerequisites) 
+-   [2 Generate the RSA key](#Generate_the_RSA_key)
+-   [3 Create a CSR](#Create_a_CSR)
+-   [4 Verify your CSR](#Verify_your_CSR)
+-   [5 Submit your CSR](#Submit_your_CSR)
 
 Prerequisites
 -------------
@@ -50,14 +48,14 @@ installed in a "Yum" style system:
 The above command should return the following packages, or something
 similar:
 
-openssl-0.9.8e-7.el5 openssl-0.9.8e-7.el5 openssl-devel-0.9.8e-7.el5
+        # openssl-0.9.8e-7.el5 openssl-0.9.8e-7.el5 openssl-devel-0.9.8e-7.el5
 
 If it didn't you'll want to run the following:
 
         # yum install openssl openssl-devel
 
 Generate the RSA key
---------------------
+--------------------------
 
 Create a RSA key for your Apache server, since every distro is different
 in where to place the certificates, we are just going to place it in an
@@ -83,17 +81,14 @@ information to be displayed in the certificate. The following characters
 can not be used for the Organization Name or the Organizational Unit: \<
 \> \~ ! @ \# \$ % \^ \* / \\ ( ) ?.,&
 
-  ------------------- ------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  DN Field            Explanation                                                                                 Example
-  Common Name         The fully qualified domain name for your web server. This must be an exact match.           If you intend to secure the URL `https://www.yourdomain.com`, then your CSR's common name must be `www.yourdomain.com`. If you plan on getting a wildcard certificate make sure to prefix your domain with an asterisk, example: ` *.domain.com`.
-  Organization        The exact legal name of your organization. Do not abbreviate your organization name.        domain.com
-  Organization Unit   Section of the organization                                                                 IT
-  City or Locality    The city where your organization is legally located.                                        Wellesley Hills
-  State or Province   The state or province where your organization is legally located. Can not be abbreviated.   Massachusetts
-  Country             The two-letter ISO abbreviation for your country.                                           US
-  ------------------- ------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Do not enter extra attributes at the prompt.
+| DN Field | Explanation | Example |
+| -------- | ----------- | ------- |
+| Common Name | The fully qualified domain  name for your web  server. This must be an  exact match. | If you intend to secure the URL `https://www.yourdomain.com`, then  your CSR's common name must be `www.yourdomain.com`. If you plan on  getting a wildcard certificate make sure to prefix your domain with an  asterisk, example: `*.domain.com.` |
+| Organization | The exact legal name of your organization. Do not abbreviate your organization name. | domain.com |
+| Organization Unit | Section of the organization. | IT |
+| City or Locality | The city where your organization is legally  located. | Wellesley Hills |
+| State or Province | The state or province where your organization  is legally located. Can not be abbreviated. | Massachusetts |
+| Country | The two-letter ISO abbreviation for your  country. | US |
 
 -   Warning: Leave the challenge password blank (press enter)
 
@@ -114,4 +109,3 @@ certificate authorities out there, shop around.
 
 Check out the next article in this line [Installing an SSL
 certificate](/knowledge_center/index.php/Installing_an_SSL_certificate "Installing an SSL certificate").
-

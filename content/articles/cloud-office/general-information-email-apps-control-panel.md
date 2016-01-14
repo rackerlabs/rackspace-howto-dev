@@ -6,7 +6,7 @@ created_date: '2014-03-31 16:44:26'
 created_by: mawutor.amesawu
 last_modified_date: '2015-06-15 14:3124'
 last_modified_by: David Hendler
-products: Cloud Office
+product: Cloud Office
 body_format: tinymce
 ---
 

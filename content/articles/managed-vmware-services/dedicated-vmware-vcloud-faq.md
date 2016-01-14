@@ -6,7 +6,7 @@ created_date: '2015-01-29 16:10:32'
 created_by: Karin Levenstein
 last_modified_date: '2015-02-12 17:5954'
 last_modified_by: jered.heeschen
-products: Managed VMware Services
+product: Managed VMware Services
 body_format: markdown_w_tinymce
 ---
 

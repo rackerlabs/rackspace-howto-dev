@@ -6,7 +6,7 @@ created_date: '2011-03-10 17:13:30'
 created_by: RackKCAdmin
 last_modified_date: '2016-01-12 19:1446'
 last_modified_by: kyle.laffoon
-products: Cloud Sites
+product: Cloud Sites
 body_format: tinymce
 ---
 

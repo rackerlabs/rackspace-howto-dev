@@ -4,9 +4,9 @@ title: Modified Medium Trust on Cloud Sites
 type: article
 created_date: '2011-03-15 15:49:06'
 created_by: RackKCAdmin
-last_modified_date: '2015-10-02 19:4107'
-last_modified_by: kyle.laffoon
-products: Cloud Sites
+last_modified_date: '2016-01-13 16:0851'
+last_modified_by: stephanie.fillmon
+product: Cloud Sites
 body_format: tinymce
 ---
 
@@ -35,10 +35,12 @@ AspJpeg component is fully functional under Classic ASP.
 
 To facilitate your ability to test your applications on your local
 development machine, we have made our modified Medium Trust
-configuration available:\
- [Click here to download modified Medium Trust configuration file for
-.NET 3.5](http://c4959820.r20.cf2.rackcdn.com/web_customtrust.config)
+configuration available:
 
-[Click here to download modified Medium Trust configuration file for
-.NET 4.0](http://c4959820.r20.cf2.rackcdn.com/web_custom40.config)
+-   [Click here to download modified Medium Trust configuration file for
+    .NET
+    3.5](http://c4959820.r20.cf2.rackcdn.com/web_customtrust.config)
+-   [Click here to download modified Medium Trust configuration file for
+    .NET 4.0](http://c4959820.r20.cf2.rackcdn.com/web_custom40.config)
+
 

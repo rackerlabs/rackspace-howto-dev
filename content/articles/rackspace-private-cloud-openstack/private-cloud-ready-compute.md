@@ -6,7 +6,7 @@ created_date: '2013-01-24 22:35:56'
 created_by: alyssah
 last_modified_date: '2014-02-07 23:4156'
 last_modified_by: rose.contreras
-products: Rackspace Private Cloud - OpenStack
+product: Rackspace Private Cloud - OpenStack
 body_format: tinymce
 ---
 

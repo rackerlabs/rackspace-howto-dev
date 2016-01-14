@@ -6,7 +6,7 @@ created_date: '2014-07-16 17:32:05'
 created_by: ross.diaz
 last_modified_date: '2014-07-25 03:3513'
 last_modified_by: rose.contreras
-products: Cloud Databases
+product: Cloud Databases
 body_format: tinymce
 ---
 
