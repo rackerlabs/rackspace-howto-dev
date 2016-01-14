@@ -4,23 +4,15 @@ title: RackConnect v3.0 requirements
 type: article
 created_date: '2014-08-28 13:48:31'
 created_by: juan.perez
-last_modified_date: '2014-10-17 21:1548'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-14 21:2442'
+last_modified_by: rose.coste
 product: RackConnect
 body_format: tinymce
 ---
 
 **Applies to**: RackConnect v3.0
 
-The following table provides a detailed list of the requirements that
-must be met to implement RackConnect v3.0.
-
-RackConnect v3.0 Requirements
------------------------------
-
-### **Requirement**
-
-### **Details**
+These requirements must be met to implement RackConnect v3.0:
 
 **Cloud account**
 
@@ -62,11 +54,11 @@ RackConnect v3.0 Requirements
 
 **Cloud network**
 
-**Important**: You cannot create the cloud network for use with
-RackConnect v3.0 yourself, and any existing cloud networks will not work
-with RackConnect v3.0.  Only cloud networks created by Rackspace during
-the RackConnect v3.0 implementation process work with RackConnect v3.0.
-
+-   **Important**: You cannot create the cloud network for use with
+    RackConnect v3.0 yourself, and any existing cloud networks will not
+    work with RackConnect v3.0.  Only cloud networks created by
+    Rackspace during the RackConnect v3.0 implementation process work
+    with RackConnect v3.0.
 -   Your cloud networks will be set up, configured, and associated with
     your configuration by Rackspace during the RackConnect v3.0
     implementation process. RackConnect v3.0 supports up to 10 cloud
@@ -91,6 +83,4 @@ the RackConnect v3.0 implementation process work with RackConnect v3.0.
 If you have any questions, please reach out to us. Contact information
 is available on the [Contact
 Us](http://www.rackspace.com/knowledge_center/support) page.
-
- 
 

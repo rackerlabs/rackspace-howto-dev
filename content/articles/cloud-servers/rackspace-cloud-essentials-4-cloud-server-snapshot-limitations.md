@@ -4,7 +4,7 @@ title: Rackspace Cloud Essentials - Cloud Server Image Limitations
 type: article
 created_date: '2011-08-05 21:56:07'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 14:5749'
+last_modified_date: '2016-01-14 16:3556'
 last_modified_by: stephanie.fillmon
 product: Cloud Servers
 body_format: tinymce
@@ -14,8 +14,6 @@ body_format: tinymce
 
 [Getting Started with Cloud
 Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
-
- 
 
 In the preceding article in this series you learned how to [restore
 servers from an
@@ -59,10 +57,7 @@ there are a number of practical limitations in place:
 -   While you can import images into the Rackspace open cloud using
     Cloud Images, you'll only be able to boot a server from such an
     image if it's been properly prepared for use in the Rackspace open
-    cloud.  See the Knowledge Center article [Preparing an image for
-    import into the Rackspace open
-    cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud) for
-    details.
+    cloud.  
 
     **Note**: Image import is not available for the First-Generation
     Cloud servers. All servers based on the OpenStack architecture can

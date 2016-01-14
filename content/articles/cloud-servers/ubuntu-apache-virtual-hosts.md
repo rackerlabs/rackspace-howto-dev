@@ -4,13 +4,117 @@ title: Set up Apache virtual hosts on Ubuntu
 type: article
 created_date: '2011-03-09 19:54:25'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:0916'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-14 21:1012'
+last_modified_by: kelly.holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined&mdash; Apache will apply named based virtual host logic and settings
+Now that Apache is installed and running, you can configure it to serve
+multiple domains by using *virtual hosts*.
+
+-   [Create the layout](#Create_the_layout)
+-   [Create index.html](#index.html)
+-   [Define virtual Hosts](#Virtual_Hosts)
+-   [Enable the site](#a2ensite)
+-   [Navigate to the site](#Navigate)
+-   [Use the ServerAlias](#ServerAlias)
+-   [Repeat the process for the other domain](#Repeat_as_necessary)
+-   [View log files](#Log_Files)
+-   [Default vhost file](#Default)
+-   [Set the admin email address](#Email)
+-   [Set the domain name](#Domain_Name)
+-   [Define the index file](#Index_Files)
+-   [Define the documents path](#Documents)
+-   [Set the log files](#Log_Files_2)
+-   [Define error documents](#Error_Documents)
+-   [Define Apache footers](#Apache_Footers)
+-   [Enable cgi-bin](#cgi-bin)
+-   [Set directory options](#Directory)
+-   [Summary](#Summary)
+
+Create the layout
+-----------------
+
+This example uses two domains: domain1.com and domain2.com.
+
+1.  In your home directory, create a public\_html folder:
+
+        cd ~
+        mkdir public_html
+
+2.  For each domain that you want to host, create a folder with a
+    standard set of subfolders. The following commands create the
+    folders public, private, log, cgi-bin, and backup for domain1.com
+    and domain2.com:
+
+        mkdir -p public_html/domain1.com/{public,private,log,cgi-bin,backup}
+        mkdir -p public_html/domain2.com/{public,private,log,cgi-bin,backup}
+
+Create index.html
+-----------------
+
+The content of the public folder is up to you, but this example uses a
+very simple HTML file so that you can check the virtual host's work.
+
+1.  For each domain, create an index.html file:
+
+        nano public_html/domain1.com/public/index.html
+
+2.  Add the following code to the index.html file:
+
+        <html>
+          <head>
+            <title>domain1.com</title>
+          </head>
+          <body>
+
+            <h1>domain1.com</h1>
+          </body>
+        </html>
+
+3.  Repeat the process so that you have a similar file for domain2.com.
+    Replace all instances of `domain1.com` with `domain2.com`.
+
+Define virtual hosts
+--------------------
+
+Now you have a basic structure for your two domains, you can define two
+virtual hosts.
+
+### Review NameVirtualHost
+
+With virtual hosts, the NameVirtualHost setting often causes confusion.
+
+Each interface and port on which Apache is set to listen needs a
+NameVirtualHost directive. You can define the directive only once per
+port.
+
+In the Apache layout for Ubuntu there is a default NameVirtualHost
+directive in the `ports.conf` file.
+
+Run the following command to look at the contents of `ports.conf`:
+
+    cat /etc/apache2/ports.conf
+
+You should get the following output (unless you've previously modified
+the file):
+
+    # If you just change the port or add more ports here, you will likely also
+    # have to change the VirtualHost statement in
+    # /etc/apache2/sites-enabled/000-default
+
+    NameVirtualHost *:80
+    Listen 80
+
+    <IfModule mod_ssl.c>
+        # SSL name based virtual hosts are not yet supported, therefore no
+        # NameVirtualHost statement here
+        Listen 443
+    </IfModule>
+
+The default NameVirtualHost setting satisfies the requirements at
+present&mdash; Apache will apply named based virtual host logic and settings
 for HTTP requests made on any available interface (\*) at port 80.
 
 **Note**: The placement of the default NameVirtualHost directive in
@@ -52,8 +156,6 @@ The contents looks as follows:
       ErrorLog /var/log/apache2/error-mydomainname.com.log
       CustomLog /var/log/apache2/access-mydomainname.com.log combined
 
- 
-
 Enable the site
 ---------------
 
@@ -61,21 +163,13 @@ Enable the site as follows:
 
     sudo a2ensite domain1.com
 
- 
-
- 
-
 The output of the command is as follows:
 
     Site domain1.com installed; run /etc/init.d/apache2 reload to enable.
 
- 
-
 Run the recommended command:
 
     sudo /etc/init.d/apache2 reload
-
- 
 
 Navigate to the site
 --------------------
@@ -95,10 +189,6 @@ address:
     123.45.67.890   domain2.com
     ...
 
- 
-
- 
-
 The location of the 'hosts' file varies depending on what OS is loaded
 on your local computer.
 
@@ -112,10 +202,6 @@ site in a web browser on your local computer:
 
 ![apache-vhostworking-domain1.jpg](http://articles.slicehost.com/assets/2008/12/5/apache-vhostworking-domain1.jpg)
 
- 
-
- 
-
 The contents of public/index.html file is shown.
 
 Use the ServerAlias
@@ -125,8 +211,6 @@ Note that in the vhost file, you set a ServerAlias. If you have the DNS
 set up correctly, you can also use that address:
 
 ![apache-vhostworking-wwwdomain1.jpg](http://articles.slicehost.com/assets/2008/12/5/apache-vhostworking-wwwdomain1.jpg)
-
- 
 
 We'll talk about forcing one address or the other in a later article
 about rewrite rules.
@@ -165,13 +249,9 @@ List the logs for your domains:
 
     ls /var/log/apache2/error-mydomainname.com.log
 
- 
-
 The output is exactly as expected:
 
     access.log  error.log
-
- 
 
 Default vhost file
 ------------------
@@ -207,10 +287,6 @@ section, [Define Apache footers](#Apache_Footers).)
 
     ServerAdmin webmaster@domain.com
 
- 
-
- 
-
 Set the domain name
 -------------------
 
@@ -220,8 +296,6 @@ domain.com and domain.net point to the same content.
 
     ServerName domain.com
     ServerAlias www.domain.com
-
- 
 
 **Note**: This is not a rewrite rule, but the the domains defined here
 will serve the same content (assuming you have set the DNS to point to
@@ -236,8 +310,6 @@ directed to an alternate page or to a nonstandard home page.
 
     DirectoryIndex index.html
 
- 
-
 **Note**: This is not a good method for redirecting users because they
 might go directly to a nonspecified page, such as domain.com/index.php,
 while the DirectoryIndex value works only for those entering domain.com.
@@ -250,10 +322,6 @@ name.
 
     DocumentRoot /home/demo/public_html/domain.com/public
 
- 
-
- 
-
 Set the log files
 -----------------
 
@@ -263,10 +331,6 @@ Set the log levels and the location for the virtual hosts' log files.
     ErrorLog  /var/log/apache2/error-mydomainname.com.log
     CustomLog /var/log/apache2/access-mydomainname.com.log combined
 
- 
-
- 
-
 Define error documents
 ----------------------
 
@@ -275,10 +339,6 @@ messages.
 
     ErrorDocument 404 /errors/404.html
     ErrorDocument 403 /errors/403.html
-
- 
-
- 
 
 In this example, there is an 'errors' folder in the public directory.
 Each error document was created and placed in the errors folder. The
@@ -296,10 +356,6 @@ displayed in any server-generated error pages or index lists. Options
 are On, Off, and Email.
 
     ServerSignature On
-
- 
-
- 
 
 The level of detail in the signature is configured via ServerTokens,
 which cannot be set in the Virtual Hosts file. For Ubuntu's Apache
@@ -321,10 +377,6 @@ want.
       Options +ExecCGI
     </Location>
 
- 
-
- 
-
 Set directory options
 ---------------------
 
@@ -333,10 +385,6 @@ enables the FollowSymLinks option for the public directory of
 domain.com.
 
       Options FollowSymLinks
-
- 
-
- 
 
 Following are other options that you can set:
 
@@ -347,20 +395,12 @@ browsing, use +Indexes.
 
     Options -Indexes
 
- 
-
- 
-
 ### SSI option
 
 Enable or disable Server Side Includes. The following example disables
 it.
 
     Options -Includes
-
- 
-
- 
 
 ### Symlinks option
 
@@ -369,10 +409,6 @@ option because it can lead to security risks (inadvertently linking to
 configuration folders).
 
     Options -FollowSymLinks
-
- 
-
- 
 
 You can consider using the SymLinksIfOwnerMatch directive instead of
 FollowSymLinks. The SymLinksIfOwnerMatch directive allows symbolic links
@@ -388,17 +424,9 @@ allow support.
 
     AllowOverride None
 
- 
-
- 
-
 You can also specify which .htaccess features to enable, such as:
 
     AllowOverride AuthConfig Indexes
-
- 
-
- 
 
 The Apache
 [htaccess](http://httpd.apache.org/docs/2.2/howto/htaccess.html "http://httpd.apache.org/docs/2.2/howto/htaccess.html")
@@ -417,8 +445,6 @@ from external sources:
         </SatisfyAll>
     </Files>
 
- 
-
 **Note**: The preceding example is formatted for Apache 2.4. If using
 2.2, replace **\<SatisfyAll\> Require all denied  \</SatisfyAll\> **
 with**Order Allow,Deny | Deny from all | Satisfy all**.
@@ -429,10 +455,6 @@ Specify None to turn off all the available options.
 
     Options None
 
- 
-
- 
-
 ### Options hierarchy
 
 The options directives can be set per directory, as shown in the
@@ -442,10 +464,6 @@ following example:
       Options None
       
     AllowOverride All
-
- 
-
- 
 
 The first directory setting would turn off all options and disable
 .htaccess support for all directories.

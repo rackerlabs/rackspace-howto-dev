@@ -4,8 +4,8 @@ title: Log in to your server via RDP (Windows)
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-30 20:1211'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-14 16:1640'
+last_modified_by: stephanie.fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -14,8 +14,6 @@ body_format: tinymce
 
 [Getting Started with Cloud
 Servers](https://www.rackspace.com/knowledge_center/getting-started/cloud-servers)
-
- 
 
 This article addresses how to connect and log in to your Windows Server
 using Microsoft Remote Desktop Protocol.
@@ -89,11 +87,4 @@ when your server build was completed).
 \
  Congratulations you have successfully connected and logged in to your
 new server!.
-
- 
-
-### Next section
-
-[Creating an Inbound Predefined Allow Rule for Windows Firewall
-2008](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-an-inbound-predefined-allow-rule-for-windows-firewall)
 

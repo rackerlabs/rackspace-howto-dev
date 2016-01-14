@@ -10,7 +10,55 @@ product: RackConnect
 body_format: tinymce
 ---
 
-undefined&mdash; Name Match:**Before you create your cloud servers, provide
+**Applies to**: RackConnect v2.0
+
+Load balancers distribute workloads across 2 or more servers, network
+links or other resources. This distribution maximizes throughput,
+minimizes response time and helps avoid overload. The following
+information discusses several available options with dedicated load
+balancers.
+
+F5 Load Balancers
+-----------------
+
+When you use your cloud servers to host an application that scales up
+and down (for example, the web tier of an application), it is important
+to have a method for adding and removing cloud servers from their
+associated load balancer pool(s). If you use an F5 BIG-IP Local Traffic
+Manager (LTM) with RackConnect, you can specify the load balancer pool
+name that a cloud server should be placed in when it is created. When
+you delete the cloud server, it will automatically be removed from the
+pool.\
+ \
+ With RackConnect, there are two ways that you can automatically
+associate your cloud servers with one or more load balancer pools on
+your BIG-IP LTM:\
+ \
+ **Option 1&mdash; Metadata:**When creating a cloud server, use the metadata
+option to specify the pool or pools.\
+ \
+ **Metadata Key**: RackConnectLBPool\
+ **Metadata Value**: The exact name of the pool as defined on the load
+balancer. Use a semicolon separated list for more than one pool.
+
+You can specify the metadata values when you use the Cloud Servers API
+to create new cloud servers. View the API documentation for more details
+about how to use the API to enter metadata information for a cloud
+server: [API Developer Guide: Set
+Metadata.](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/Create_or_Replace_Metadata-d1e5358.html)
+
+This is the method to use if you want Auto Scale to use RackConnect with
+F5 load balancers. Read more about this on the [Auto Scale Tips and How
+To's](http://www.rackspace.com/knowledge_center/article/rackspace-auto-scale-tips-and-how-tos#cloudBurst)
+page about cloud bursting.
+
+**NOTE:**  If you are using next generation Cloud Servers, you can now
+update a cloud server's metadata at any time to add/remove cloud servers
+from load balancer pools. These metadata updates can be made via the
+Cloud Server's API.
+
+\
+ **Option 2&mdash; Name Match:**Before you create your cloud servers, provide
 Rackspace with the preferred names and the pool(s) to associate with
 your cloud servers. Currently, you must configure this through a ticket
 request to your Support team.\

@@ -10,7 +10,71 @@ product: Cloud Servers
 body_format: full_html
 ---
 
-undefined(a) is archive mode which basically keep the permission settings for
+Backing up files on a regular basis is an integral part of administering
+your server.
+
+One way is to download each and every file when you want to save them.
+However, rsync makes the task a lot easier as it only downloads files
+that have changed - saving time and bandwidth.
+
+-   [Installation](#Installation)
+-   [Preparation](#Preparation)
+-   [Security](#Security)
+-   [Command](#Command)
+-   [Output](#Output)
+-   [Summary](#Summary)
+
+Installation
+------------
+
+Installing rsync is as simple as implementing your OS's package manager
+such as:
+
+    sudo aptitude install rsync ... sudo emerge rsync ... sudo yum install rsync
+
+Do remember that if you are downloading files to another system, both
+will require rsync to be installed.
+
+Preparation
+-----------
+
+Very little to do here expect to establish where the saved files will be
+located.
+
+In this example, I am going to backup my main Cloud Server home
+directory to another server.
+
+Security
+--------
+
+As a rule (and one I stick to very closely), we don't upload and
+download anything without some encryption in place. As such we will be
+using the SSH protocol with rsync to ensure no one else can sniff out
+the data being transferred.
+
+What does this mean? Well, if you want to automate your backups, you
+will need to ensure the destination server (where the backup directory
+is) has access to the originating server.
+
+In my case, I have setup ssh keys so I don't need to enter a password
+each time I attempt to rsync my home folder. It's perfectly fine not to
+do it that way, but you will need to enter the password each time you
+rsync.
+
+Command
+-------
+
+So on the destination server, the command I would give is as follows:
+
+    rsync -e 'ssh -p 30000' -avl --delete --stats --progress demo@123.45.67.890:/home/demo /backup
+
+Let's go through the command in order:
+
+-e 'ssh -p 30000': this ensures rsync uses the SSH protocol and sets the
+port.
+
+-avl: This contains three options;
+(a) is archive mode which basically keep the permission settings for
 the files. (v) is verbose mode. You can leave it out or increase it by
 appending two v's (-vv). (l) preserves any links you may have created.
 

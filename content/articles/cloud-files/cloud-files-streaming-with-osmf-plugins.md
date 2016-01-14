@@ -4,8 +4,8 @@ title: Cloud Files Streaming with OSMF Plugins
 type: article
 created_date: '2011-09-12 05:00:00'
 created_by: RackKCAdmin
-last_modified_date: '2014-10-14 14:2234'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-14 16:5016'
+last_modified_by: stephanie.fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -29,7 +29,6 @@ CDN](/knowledge_center/article/cloud-files-streaming-with-flowplayer-plugins).
 For more resources on OSMF, visit
 [http://mediapm.edgesuite.net/akamai-osmf-plugins/samples/](http://mediapm.edgesuite.net/akamai-osmf-plugins/samples/). 
 
-For more information on streaming, please visit the [Streaming for Cloud
-Files
-FAQ](http://www.rackspace.com/knowledge_center/frequently-asked-question/getting-started-with-cloud-files-streaming#faqs).
+For more information on streaming, please visit the [Cloud Files
+FAQ](https://www.rackspace.com/knowledge_center/article/cloud-files-faqs).
 

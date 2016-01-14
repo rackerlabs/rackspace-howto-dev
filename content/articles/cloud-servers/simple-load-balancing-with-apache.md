@@ -1,146 +1,122 @@
 ---
 node_id: 105
-title: Simple Load Balancing with Apache
+title: Simple load balancing with Apache
 type: article
 created_date: '2011-03-09 19:22:30'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:0500'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-14 20:5947'
+last_modified_by: kelly.holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
 
-**Note: **This article was written before the introduction of [Cloud
+**Note:** This article was written before the introduction of [Cloud
 Load
 Balancers](http://www.rackspace.com/knowledge_center/getting-started/cloud-load-balancers),
-which is our recommended solution for Load balancing, but customers may
-still wish to try this procedure so we have left it available for legacy
+which is our recommended solution for load balancing. Because customers
+might still want to try this procedure, it is available for legacy
 support purposes.
 
-This article will go through creating a simple software [Load
-Balancer](http://www.rackspace.com/cloud/load-balancing/) using a [Cloud
-Server](http://www.rackspace.com/cloud/servers/).
+This article describes how to create a simple software [load
+balancer](http://www.rackspace.com/cloud/load-balancing/) by using a
+[cloud server](http://www.rackspace.com/cloud/servers/).
 
-We'll take this as an entry level job using simple readily available
-packages from any of the Distributions repositories. We'll be using
-Apache as our Load Balancer (yes, apache can be used for so many things,
-and yes it is a Load Balancer) in conjunction with the apache module
-mod\_proxy and mod\_proxy\_balancer. Both are available through CentOS
-and I'll be using this as my base install.
+This article uses Apache as the load balancer in conjunction with the
+Apache module `mod_proxy` and `mod_proxy_balancer`. Both are available
+through CentOS, and this article uses that as the base installation.
 
-The main thing that I want you to take out of this is that you can use
-Cloud Servers to scale horizontally. This is when you need horizontal
-expansion, add drone servers behind a smart host each working a piece of
-workload.
+The main point of this articles is that you can use cloud servers to
+scale horizontally. This is when you need horizontal expansion, adding
+drone servers behind a smart host each working a piece of workload.
 
-* * * * *
-
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Prerequisites](#Prerequisites)                                    |
-|     -   [1.1 Hardware](#Hardware)                                        |
-|     -   [1.2 Software](#Software)                                        |
-| -   [2 Server Configuration](#Server_Configuration)                      |
-|     -   [2.1 Web Servers](#Web_Servers)                                  |
-|     -   [2.2 Load Balancer](#Load_Balancer)                              |
-|         -   [2.2.1 Unwanted Requests](#Unwanted_Requests)                |
-|         -   [2.2.2 The Balance](#The_Balance)                            |
-|         -   [2.2.3 Balance Manager](#Balance_Manager)                    |
-|         -   [2.2.4 ProxyPass](#ProxyPass)                                |
-| -   [3 Summary](#Summary)                                                |
-+--------------------------------------------------------------------------+
+-   [Prerequisites](#Prerequisites)
+    -   [Hardware](#Hardware)
+    -   [Software](#Software)
+-   [Server configuration](#Server_Configuration)
+    -   [Web servers](#Web_Servers)
+    -   [Load balancer](#Load_Balancer)
+-   [Summary](#Summary)
 
 Prerequisites
 -------------
 
+You need to have the following hardware and software in place before you
+begin.
+
 ### Hardware
 
-We are going to use a total of 3 boxes to start out with, but you can
-use this as a model to scale horizontally.
+You are going to use a total of three servers to start, but you can use
+this as a model to scale horizontally.
 
--   One Cloud Server to be used as the load balancer
--   Two Cloud Servers to be used as dumb web heads
+-   One cloud server to be used as the load balancer
+-   Two cloud servers to be used as dumb webheads
 
 ### Software
 
-The software for all three servers will be the same, technically they
-will be running the same packages. We'll through in only two software
-groups:
+The software for all three servers will be the same; they will be
+running the same packages. You need to add only two software groups.
+Perform the following steps.
 
--   Update your system to all the newest goodies:
+1.  Update your system.
 
-<!-- -->
+        # yum update
 
-    # yum update
+2.  Install Apache by using the CentOS `groupinstall` command.
 
--   Apache and all its goodies, CentOS makes this ultra simple with the
-    groupinstall feature:
+        # yum groupinstall "Web Server"
 
-<!-- -->
+3.  Optionally, install a text-based web browser in case you ever need
+    to check that a particular webhead is displaying the page it is
+    supposed to behind the load balancer.
 
-    # yum groupinstall "Web Server"
+        # yum groupinstall "Text-based Internet"
 
--   Also, we are going to install links a text based web browser in case
-    we ever need to check that a particular web head is displaying the
-    page it is supposed to behind the load balancer. This is optional.
-
-<!-- -->
-
-    # yum groupinstall "Text-based Internet"
-
-Server Configuration
+Server configuration
 --------------------
 
-### Web Servers
+Configure the servers as two webheads and one load balancer.
 
-This is going to be the easiest part of the whole configurations. Since
-the webheads are really just drones, they're only going to be doing
-grunt work, so you need no special configurations. Thats right, don't
-even open the httpd.conf file, just put a file called index.html in
-/var/www/html/index.html. In this file you can put any distinguishing
-characteristics you want. I put "It works you looking at WebHead \#"
-where \# is the numerical identifier of that particular webhead.
+### Web servers
 
-### Load Balancer
+Because the webheads are really just drones, they don't need any special
+configurations. Just create a file called **index.html** in
+**/var/www/html/index.html**. In this file, you can put any
+distinguishing characteristics you want. For example, you could put "It
+works you looking at WebHead \#" where \# is the numerical identifier of
+that particular webhead.
 
-This is the tricky part of the operation, I'll walk through each step
-and then bring it together at the end for you, so you know what the end
-product should be. All of the configurations that we are going to go
-through should be placed at the bottom of /etc/httpd/conf/httpd.conf in
-a standard Virtual Host to work.
+### Load balancer
 
-#### Unwanted Requests
+This sections walks through each step and then brings it together at the
+end, so you know what the end product should be. Place all of the
+configurations that you define at the bottom of the
+**/etc/httpd/conf/httpd.conf** file in a standard virtual host.
 
-We are not working as a Forwarding Proxy (better known as an Open Proxy,
-and this is bad news as it lets people mask their identity by using your
-server to view web pages for them, it has its uses but not in this
-scenario), turning off ProxyRequests will help avoid any unwanted
-traffic.
+#### Unwanted requests
+
+Turn off ProxyRequests to avoid any unwanted traffic.
 
     ProxyRequests off
 
-#### The Balance
+#### The balance
 
-In this part of the Virtual Host we will be naming our web heads and
-declaring how we will be balancing. The BalanceMember directive is how
-you declare the webheads, of course you can add as many as you would
-like, using these as templates. The ProxySet directive declares how you
-would like to balance, we're going to use a "byrequest" balancing
-algorithm which is the same as a Round Robin, so for each new request
-you will get a new webhead. The order is sequential, there are better
-and smarter algorithms out there, but this is the easiest to configure
-and you need no knowledge of networking theory. All of this will be
-wrapped in \<Proxy\> tags which is how apache knows to send it to
-mod\_proxy, the "balancer://mycluster" identifier is only an identifier,
-you could technically call it what you want as long as you put the
-"balancer://" prefix.
+In this part of the virtual host, name the webheads and declare how you
+will be balancing. The `BalanceMember` directive is how you declare the
+webheads. You can add as many as you like, using these as templates. The
+`ProxySet` directive declares how you want to balance. This example uses
+a "byrequest" balancing algorithm, which is the same as a round robin,
+so for each new request you get a new webhead. The order is sequential.
+(Although better and smarter algorithms exist, this one is easy to
+configure and you don't need to know networking theory.) All of this is
+wrapped in `<Proxy>` tags, which is how Apache knows to send it to
+`mod_proxy`. The `balancer://mycluster` identifier is only an
+identifier; you could call it what you want as long as you use the
+`balancer://` prefix.
 
-**Keep in mind you will want to contact your webheads from the load
-balancer with their private IPs, this will keep your bandwidth charges
-down to a minimum by keeping all communication between servers on the
-Service Net, where bandwidth is free.**
+**Note:** You will want to contact your webheads from the load balancer
+by using their private IP addresses. Doing so minimizes your bandwidth
+charges by keeping all communication between servers on the ServiceNet
+network, where bandwidth is free.
 
     <Proxy balancer://mycluster>
         # WebHead1
@@ -153,16 +129,14 @@ Service Net, where bandwidth is free.**
 
     </Proxy>
 
-#### Balance Manager
+#### Balance-manager (optional)
 
-**Optional Step**
-
-This is a tool packaged with the mod\_proxy\_balancer tool, and allows
-you to make configurations from a gui tool through the web browser.
-Viewable at
-"[http://domain.com/balancer-manager](http://domain.com/balancer-manager "http://domain.com/balancer-manager")",
-keep in mind that these changes die after you restart apache. I won't go
-over how to use this tool, but it is available to you.
+The `balance-manager` is a tool packaged with the `mod_proxy_balancer`
+tool, and it enables you to make configurations from a GUI tool through
+the web browser. You can view it at
+[http://domain.com/balancer-manager](http://domain.com/balancer-manager "http://domain.com/balancer-manager").
+Consider that any changes made by this tool end after you restart
+Apache.
 
     <Location /balancer-manager>
 
@@ -173,9 +147,9 @@ over how to use this tool, but it is available to you.
 
 #### ProxyPass
 
-This is the last part of the configuration, and just adds the situations
-that will need to be proxied. We don't want to proxy the
-balancer-manager, but we do want to proxy everything else.
+This is the last part of the configuration, and adds the situations that
+will need to be proxied. You don't want to proxy the `balancer-manager`,
+but you do want to proxy everything else.
 
        ProxyPass /balancer-manager !
        ProxyPass / balancer://mycluster/
@@ -183,19 +157,25 @@ balancer-manager, but we do want to proxy everything else.
 Summary
 -------
 
-Ok, so now if you've got all this in your httpd.conf on your load
-balancer CloudServer, and start up apache you should be able to view
+If you have all this configured in your **httpd.conf** file on your load
+balancer cloud server, and you start Apache, you should be able to view
 your domain name that is properly pointed to your load balancer. When
-you hit refresh it should hop between your two webheads, saying "It
-works you looking at WebHead 1" or "It works you looking at WebHead 2".
-Congratulations you are now balancing.
+you refresh, it should hop between your two webheads, saying "It works
+you looking at WebHead 1" or "It works you looking at WebHead 2". You
+are now balancing.
 
-So what I've done for you is combine all the things that we've learned
-into a helpful packaged VirtualHost, just trade out all the necesary
-values that are specific to your configuration like the domain name and
-the IP addresses to your webheads. Also, there are some security
-additions that are explained in the comments, everything is commented so
-you don't have to refer back to this article to make changes later.
+The following code combines all the things that you've learned into a
+helpful packaged VirtualHost. Just substitute all the necessary values
+that are specific to your configuration, like the domain name and the IP
+addresses to your webheads. Also, some security additions are explained
+in the comments. Everything is commented so you don't have to refer back
+to this article to make changes later.
+
+**Note:** The preceding example is formatted for Apache 2.4. If you are
+using 2.2, replace `Require all granted` with
+`Order Deny,Allow | Deny from none | Allow from all`, and then replace
+`Require host example.org` with
+`Order deny,allow | Deny from all | Allow from example.org`.
 
     <VirtualHost *:80>
             ProxyRequests off
@@ -247,8 +227,4 @@ you don't have to refer back to this article to make changes later.
 
     </VirtualHost>
 
-**Note**: The preceding example is formatted for Apache 2.4. If using
-2.2, replace **Require all granted** with**Order Deny,Allow | Deny from
-none | Allow from all** and then replace **Require host example.org**
-with **Order deny,allow | Deny from all | Allow from example.org**.
 

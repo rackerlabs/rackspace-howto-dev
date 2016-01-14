@@ -4,8 +4,8 @@ title: Troubleshooting DNS issues
 type: article
 created_date: '2012-06-27 11:57:28'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-11 20:3702'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-14 19:4047'
+last_modified_by: stephanie.fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -146,12 +146,10 @@ To confirm that a domain name resolves to the correct IP address, Linux
 and Windows provide commandline tools. For Linux, dig is commonly used
 and for Windows, nslookup is the built-in command.
 
-The following articles show you how to check for a record, see if it's
+The following article shows you how to check for a record, see if it's
 cached, confirm whether it matched the authoritative name server's copy,
 and understand the output of the tools:
 
--   [dig
-    guide](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-using-dig-for-dns-verification-and-troubleshooting)
 -   [nslookup
     guide](http://www.rackspace.com/knowledge_center/article/nslookup-checking-dns-records-on-windows)
 

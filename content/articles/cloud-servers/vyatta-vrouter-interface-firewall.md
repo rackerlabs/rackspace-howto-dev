@@ -4,13 +4,50 @@ title: 'Vyatta vRouter: Configure an interface firewall'
 type: article
 created_date: '2014-09-11 16:20:49'
 created_by: sameer.satyam
-last_modified_date: '2015-02-18 20:5323'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-14 20:5105'
+last_modified_by: rose.coste
 product: Cloud Servers
-body_format: tinymce
+body_format: full_html
 ---
 
-undefined&rdquo; policy, which means that you
+Brocade Vyatta vRouter can be configured for two methods of firewall
+operations: interface-based firewalls and zone-based firewalls. Because
+it is the standard method of firewall deployment, this article describes
+how to configure an interface-based firewall.
+
+The configuration examples in this article use parameters as follows:
+
+-   `INSIDE` is `eth1` at 10.0.0.0/24
+-   `APP` is `eth2` at 172.16.10.0/24
+-   `DMZ` is `eth3` at 192.168.100.0/24
+-   `PUBLIC` is `eth0`
+-   `Local` is `local`
+
+Log in to the router
+--------------------
+
+First, log in to the vRouter and put it into configuration mode.
+
+    configure
+
+Allow established and related traffic
+-------------------------------------
+
+You need to configure a rule that allows all established (session) or
+related (ALG, FTP) traffic through the firewall. Otherwise, return
+traffic for established or related sessions cannot traverse the firewall
+policies. You can add these globally with a Global State Policy with the
+following statement:
+
+    set firewall state-policy established action accept set firewall state-policy related action accept
+
+Configure the firewall rule base
+--------------------------------
+
+You need to configure the rule base that defines all the parameters of
+the firewall policy, and then you need to apply your rule base to the
+interface and the direction of the traffic. As with all other firewall
+rules, this rule base uses a&ldquo;first matc&rdquo; policy, which means that you
 must add the most specific rules at the top of the list. The number of
 the rule dictates its position in the rule base.
 

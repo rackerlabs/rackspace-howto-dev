@@ -10,7 +10,32 @@ product: Cloud Backup
 body_format: tinymce
 ---
 
-undefined&rdquo; of the previous backup, which makes for faster
+Some users are used to taking snapshots of their Cloud Server ([product
+page](http://www.rackspace.com/cloud/servers)) as a backup. If you have
+a solution where you want to save the serve&rsquo;s state or configuration,
+or want to keep gold copies of your system, then you can create an image
+backup of the server. Because it is an image of the whole server, there
+is really no control over the individual files. You cannot, say, recover
+a single file from that image, or update a single file. But, on the
+other hand, having a single file to manage (the image) allows you to
+easily recreate a new server with that identical configuration and
+state.\
+ **Note:** You can learn more about scheduling images from the
+[Scheduled Images
+FAQ](http://www.rackspace.com/knowledge_center/article/scheduled-images-faq).
+
+Rackspace Cloud Backup, on the other hand, is a **FILE-BASED backup**.
+This means that you can specify what folders or files to backup or
+restore. As usual, you can choose to backup or restore the whole system
+with all its folders, but the distinction with image backups is that the
+granularity of Rackspace Cloud Backup is at the file level, as opposed
+to it being at the whole server image level.
+
+Moreover, Rackspace Cloud Backup is also an **INCREMENTAL backup** tool
+in that it only copies the portion of the files that changed for those
+files that actually changed. This gives you some flexibility because,
+with the exception of your first complete backup, every subsequent
+backup is just a&ldquo;delt&rdquo; of the previous backup, which makes for faster
 backup and restores operations and also reduces the storage required. As
 you probably know, image backups are not incremental: they copy the
 whole system every time.

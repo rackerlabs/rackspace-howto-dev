@@ -10,7 +10,20 @@ product: Cloud Hosting
 body_format: tinymce
 ---
 
-undefined2. Next, you will then need to contact your Domain Registrar and ask
+Rackspace allows you to manage your DNS through our control panel while
+allowing you to keep your domain registered with your current hosting
+provider. Let's take a look at the following steps:
+
+*Note: There is an annual fee of \$5 for the service.*
+
+Transferring Your DNS Hosting To Rackspace
+------------------------------------------
+1. First thing you'll want to do is contact our support team and
+request the **DNS Hosting** service for your domain. At this time, we
+will automatically set up your DNS according to your current DNS
+settings, so that you will not experience any interruption of service
+once the name servers transfer to point to Rackspace.
+2. Next, you will then need to contact your Domain Registrar and ask
 them to change your **Name Servers** and point them to the following: If
 you're unsure of who your domain registrar is, you can check your
 domain's registration info at the website: who.is

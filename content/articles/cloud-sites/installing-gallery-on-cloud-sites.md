@@ -10,7 +10,68 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined&rsquo;
+**NOTE:** This article refers to the [Cloud Sites Control
+Panel](https://manage.rackspacecloud.com/). You can access this
+interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
+by clicking your username in the upper-right corner of the control panel
+and selecting Cloud Sites Control Panel.
+
+This article will lead you through prepping your Cloud Sites domain to
+host a php based photo gallery using "Gallery", an open source and
+readily available site application.
+
++--------------------------------------------------------------------------+
+| Contents                                                                 |
+| --------                                                                 |
+|                                                                          |
+| -   [1 Getting Started](#Getting_Started)                                |
+| -   [2 Setting up the Sites](#Setting_up_the_Sites)                      |
+| -   [3 Prepare your data](#Prepare_your_data)                            |
+| -   [4 Configure the Site](#Configure_the_Site)                          |
+| -   [5 Success](#Success)                                                |
++--------------------------------------------------------------------------+
+
+Getting Started
+---------------
+
+If you have not already done so, goto
+[http://gallery.menalto.com/](http://gallery.menalto.com/ "http://gallery.menalto.com/")
+and download the latest stable release of Gallery.
+
+Here is the link that was current at the time of this article:
+
+    http://sourceforge.net/project/downloading.php?group_id=7130&filename=gallery-2.3-typical-en.zip
+
+    or 
+
+    http://codex.gallery2.org/Downloads
+
+Setting up the Sites
+--------------------
+
+1.  Create your new domain from the Cloud Sites Control Panel with
+    minimum requirements being PHP 4, and MySQL 4 or 5. 
+2.  Once the domain has finished creating, create your database. To do
+    this, click on the&lsquo;Feature&rsquo; tab from the top menu. Click&lsquo;Ad&rsquo;,
+    and then select&lsquo;MySQL 4 or &rsquo;. Type in whatever name you would like
+    to call the DB, type in a username and password of your choice.
+    Follow prompts to finish creation. (You may want to write down the
+    information provided, the hostname, database name, database username
+    and, database password.)
+
+Prepare your data
+-----------------
+
+1.  Extract the content of the Gallery file you downloaded earlier to
+    your local computer.
+2.  Open up your FTP client software and login to your new domain. If
+    you are not familiar with uploading content, go here: [What FTP
+    software should I
+    use?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
+    and use the information to connect provided here: [Getting Started
+    With Cloud Sites, FTP/SSHFS/FTP
+    Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients)
+    . Your best bet will be to upload everything inside the&lsquo;galler&rsquo;
     folder contained within the .zip file you downloaded to your
     web/content folder.
 3.  Once the files have finished uploading, you are ready to get started

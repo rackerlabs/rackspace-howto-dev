@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined&rdquo; is a scheduling service that enables you to execute a command or
+&ldquo;Cro&rdquo; is a scheduling service that enables you to execute a command or
 a script automatically, at a specified date and time. You can create a
 con job (also called a scheduled task) directly through your Rackspace
 Cloud control panel.

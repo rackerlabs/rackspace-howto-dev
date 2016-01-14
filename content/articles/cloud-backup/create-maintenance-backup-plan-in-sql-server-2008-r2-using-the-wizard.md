@@ -10,7 +10,147 @@ product: Cloud Backup
 body_format: tinymce
 ---
 
-undefined&ldquo;Set up the transaction log cleanup task."
+When you create a maintenance backup plan in SQL Server 2008 R2, you
+must identify how you want the plan to be set up. In this example, the
+maintenance plan is set up with full backups, differentials, and
+transactions logs.
+
+This process has the following steps:
+
+-   [Check the SQL Server Agent service](#checksqlserveragentservice)
+-   [Create the maintenance plan](#createmaintenanceplan)
+-   [Full backup settings](#fullbackupsettings)
+-   [Define differential backup Settings](#differentialbackupsettings)
+-   [Define transaction log backup
+    settings](#transactionlogbackupsettings)
+-   [Set up the transaction log cleanup task](#transactionlogcleanup)
+-   [Test your setup](#testsetup)
+-   [Troubleshoot errors by viewing the job history](#errors)
+
+Check SQL Server Agent service
+------------------------------
+
+Verify that the SQL Server Agent service is running and set to
+automatic. The maintenance plan depends on this service to run.
+
+1.  On the server, open the **Run** dialog box, type in **services.msc**
+    and press **Enter**. \
+     \
+
+    ![](/knowledge_center/sites/default/files/field/image/CheckSQLServerAgent1.png)
+2.  Find the SQL Server Agent service in the list and double-click it. \
+     \
+
+    ![](/knowledge_center/sites/default/files/field/image/CheckSQLServerAgent2.png)
+3.  Cick the **Recovery** tab, and set the failure value to **Restart
+    the Service**.
+4.  On the **General** tab, select **Automatic** as the startup type,
+    and then start the service. \
+     \
+
+    ![](/knowledge_center/sites/default/files/field/image/CheckSQLServerAgent3.png)
+
+Create the maintenance plan
+---------------------------
+
+1.  Launch the SQL Management Studio and log in.
+2.  In the Object Explorer pane, go to **Management** \> **Maintenance
+    Plans**, right-click **Maintenance Plans**, and select **Maintenance
+    Plan Wizard**. \
+     \
+
+    ![](/knowledge_center/sites/default/files/field/image/CreatingtheMaintenancePlan1_0.png)\
+    \
+3.  On the welcome page of the wizard, click  **Next**.
+4.  On the Select Plan Properties page, specify a name for the plan,
+    select  **Separate schedules for each task**, and then click
+    **Next**.
+5.  On the Select Maintenance Tasks page, select the **Back Up Database
+    (Full)**,  **Back Up Database (Differential)**, and **Back Up
+    Database (Transaction Log)** check boxes, and then click **Next**.\
+    \
+    ![](/knowledge_center/sites/default/files/field/image/Creatingthemaintenanceplan4.png)\
+    \
+6.  On the Select Maintenance Task Order page, leave the order as shown,
+    and then click **Next**.
+
+Define full backup settings
+---------------------------
+
+On the Define Back Up Database (Full) Task page, set up the full backup 
+according to the following instructions.
+
+1.  Select the databases that you want to back up (typically **All user
+    databases**).
+2.  Specify when you want the backups to expire. In the following
+    example, 14 days is specified. \
+    **Note**: This setting overwrites the oldest backup file for
+    rotation.
+3.  Select your backup media (typically **Disk**).
+4.  Specify a location (either Default or as assigned by you) for your
+    backup files.
+5.  Select the **Verify backup integrity** check box.
+6.  To configure the scheduling options for this task, click **Change**
+    near the bottom of the page.\
+    \
+    ![](/knowledge_center/sites/default/files/field/image/fullbackupsetttings1.png)\
+    \
+7.  In the Job Schedule Properties dialog box, select **Recurring** for
+    the Schedule type.
+8.  Specify the frequency of the backup. The following example shows
+    full backups running on Monday, Wednesday, and Friday. Alter this to
+    fit your backup plan.
+9.  Adjust the daily frequency according to when your backup needs to
+    run.
+10. Under **Duration**, adjust the **Start** and **End** dates. In the
+    example **No end date** is selected.\
+    \
+
+    ![](/knowledge_center/sites/default/files/field/image/fullbackupsetttings2.png)\
+    \
+11. Click **OK**.
+12. On the Define Back Up Database (Full) Task page of the Maintenance
+    Plan Wizard, click **Next**.
+
+Define differential Backup Settings
+-----------------------------------
+
+On the Define Back Up Database (Differential) Task page, set up the
+differential backup according to the following instructions. The
+settings are similar to the settings for the full backup.
+
+1.  Select the databases that you want to back up (typically **All user
+    databases**).
+2.  Specify when you want the backups to expire.
+3.  Select your backup media (typically **Disk**).
+4.  Specify a location (either Default or as assigned by you) for your
+    backup files.
+5.  Select the **Verify backup integrity** check box.
+6.  To configure the scheduling options for this task, click **Change**
+    near the bottom of the page.
+7.  In the Job Schedule Properties dialog box, select **Recurring** for
+    the schedule type.
+8.  Specify the frequency of the backup. For example, you could choose
+    to run differential backups on Tuesday, Thursday, Saturday, and
+    Sunday.
+9.  Under **Duration**, adjust the daily frequency according to when
+    your backup needs to run.
+10. Adjust the **Start** and **End** dates.
+11. Click **OK**.
+12. On the Define Back Up Database (Differential) Task page of the
+    Maintenance Plan Wizard, click **Next**.
+
+Define transaction log backup settings
+--------------------------------------
+
+On the Define Back Up Database (Transaction Log) Task page, set up the
+transaction log backup according to the following instructions.
+
+1.  Select the databases that you want to back up (typically **All user
+    databases**).
+2.  Do *not* select the **Backup set will expire** check box. \
+    Expiration of transaction log backups is configured in the next
+    section,&ldquo;Set up the transaction log cleanup task."
 3.  Select your backup media (typically **Disk**).
 4.  Specify a location (either Default or as assigned by you) for your
     backup files.

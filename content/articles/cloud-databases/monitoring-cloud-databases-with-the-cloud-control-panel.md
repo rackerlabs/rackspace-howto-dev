@@ -10,7 +10,85 @@ product: Cloud Databases
 body_format: tinymce
 ---
 
-undefined&rsquo;s memory use
+Monitoring is included with Cloud Databases to help you manage the
+health of your instances. Monitoring checks and alarms can be configured
+using the [Cloud Control Panel](https://mycloud.rackspace.com/) or the
+[Cloud Monitoring
+API](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html).
+
+*Monitoring checks* describe the metrics being monitored, and monitoring
+alarms are actions that can be triggered when a check meets specified
+criteria. For example, a check for memory utilization records memory use
+on an instance. An alarm could be configured to trigger and send an
+email when the memory check shows free memory has dropped below a
+specified level.
+
+The checks and alarms that are set up by default on a Cloud Databases
+instance are described in the following sections:
+
+-   [Checks](#checks)
+-   [Alarms](#alarms)
+-   [Alarm criteria examples](#alarm-criteria-examples)
+
+ 
+-
+
+Checks
+------
+
+Monitoring checks are listed on the details page of a Cloud Databases
+instance in the Cloud Control Panel.
+
+![](/knowledge_center/sites/default/files/field/image/dbmonitoringchecks.png)
+
+Click the name of a check to view a graph of the check's results over
+time and any alarms configured for that check.
+
+The following monitoring checks are preconfigured for Cloud Databases
+instances:
+
+-   [CPU check](#cpu-check)
+-   [File system](#file-system)
+-   [Load average](#load-average)
+-   [Memory check](#memory-check)
+-   [Network check](#network-check)
+-   [MySQL check](#mysql-check)
+
+ 
+
+### CPU check
+
+The graph for the CPU check displays how much of its available
+processing power the instance uses. It also displays minimum, maximum,
+and average CPU usage for that period.
+
+![](/knowledge_center/sites/default/files/field/image/dbcpugraph.png)
+
+ 
+
+### File system check
+
+The graph for the File system check displays disk usage for the Cloud
+Databases instance. The **Total** value represents the total disk space
+available to the instance, and this value can change if the instance is
+resized.
+
+![](/knowledge_center/sites/default/files/field/image/dbfilesystemgraph.png)
+
+### Load average check
+
+The graph for the load average check displays your instanc&rsquo;s load
+average on a per-minute basis. Whereas the CPU usage graph displays
+moment-to-moment fluctuations in CPU use, the load average graph
+reflects overall CPU usage.
+
+![](/knowledge_center/sites/default/files/field/image/dbloadgraph.png)
+
+ 
+
+### Memory check
+
+The graph for the memory check displays your instanc&rsquo;s memory use
 (RAM). The **Total** value represents the total memory available to the
 instance, and the **Actual Used** value represents the amount of memory
 in use.

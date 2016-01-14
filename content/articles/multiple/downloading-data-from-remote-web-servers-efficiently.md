@@ -10,7 +10,31 @@ product: Multiple
 body_format: tinymce
 ---
 
-undefined&copy;2009 Adrian Otto
+Some web sites dynamically download and display data from a remote site
+by using an fopen() call with a URL specified. This is **highly
+inefficient** and leads to large consumption of Compute Cycles. To
+resolve this, set up a simple file based cache to hold the data for a
+reasonable period of time. The included example below serves data that's
+automatically refreshed once every 10 minutes as needed, and if the
+connection to the remote site fails or times out, the old version is
+returned instead. This approach is highly recommended to **replace all
+fopen() calls that use URL's as arguments.**
+
+Why? If you don't, when your website starts getting a ton of traffic you
+will probably swamp the remote site.  All of your connections to that
+site will hang, clogging up back at your server. This will run up your
+bill for Compute Cycles (\$\$\$) and your site response will be very
+poor. With the solution below you can handle as much traffic as your
+want without swamping the remote site, and your site response will be
+terrific.
+
+Feel free to tailor this to suit your needs. It's offered for your free
+use under the GNU LGPL open source software license.
+
+    <?php
+
+    // Copyright&copy;2009 Rackspace US, Inc.
+    // Copyright&copy;2009 Adrian Otto
     //
     // This program is free software: you can redistribute it and/or modify
     // it under the terms of the GNU LESSER GENERAL PUBLIC LICENSE as published by

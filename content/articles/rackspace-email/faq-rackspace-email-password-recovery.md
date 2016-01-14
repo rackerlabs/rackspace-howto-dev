@@ -10,7 +10,18 @@ product: Rackspace Email
 body_format: tinymce
 ---
 
-undefined&rsquo;ve forgotten it?
+You can recover the password for your Rackspace Email account by having
+our system send your phone a text message verifying your identity. This
+feature must be enabled by your site administrator, and you'll need to
+enter a mobile phone number for your account before it will work.
+
+Rackspace will only use your phone number for security verification
+purposes. We will never sell or share it.
+
+Below are some frequently asked questions and answers about this
+feature.
+
+How do I change my Rackspace Email password if &rsquo;ve forgotten it?
 -----------------------------------------------------------------
 
 On your Webmail login page, click the **Forgot Password** link to change

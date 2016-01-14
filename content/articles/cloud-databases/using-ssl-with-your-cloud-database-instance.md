@@ -10,7 +10,43 @@ product: Cloud Databases
 body_format: tinymce
 ---
 
-undefined&mdash;ssl-ca=/path/to/ca-cert.pem
+SSL (Secure Sockets Layer) is a security protocol that uses encryption
+technology to ensure that sensitive information sent over the Internet
+is protected. Users on your site might need to divulge personal
+information to you such as credit card numbers, Social Security numbers,
+user names, and passwords. By making an SSL connection to your database,
+your customers can trust that their data will be encrypted when it's
+sent to and from your web application.
+
+**Note:** Using SSL encryption is resource-intensive and might impact
+the latency of your database connection.
+
+Download the CA certificate
+---------------------------
+
+Cloud Databases configures your database instance to support the use of
+SSL when the instance is provisioned. To encrypt data in transit using
+SSL, your database connections will need to use an SSL certificate
+associated with Cloud Databases.
+
+**Note:** All database instances created before October 20, 2014, should
+be restarted before accepting SSL connections.
+
+[Download the SSL
+certificate](http://ssl.rackspaceclouddb.com/ca-cert.pem) from the
+following URL:
+
+    http://ssl.rackspaceclouddb.com/ca-cert.pem
+
+Your applications should use the downloaded certificate as the CA
+certificate for SSL connections to your database.
+
+### Use the certificate with the mysql client
+
+To make SSL connections using the `mysql` command line client, specify
+the location of the certificate when you start the client:
+
+    mysql&mdash;ssl-ca=/path/to/ca-cert.pem
 
 More information about using SSL with MySQL can be found in the [MySQL
 5.6

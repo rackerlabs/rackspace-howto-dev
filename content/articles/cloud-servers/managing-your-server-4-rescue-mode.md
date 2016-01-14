@@ -10,7 +10,47 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined&rsquo;s filesystem. You can use it to modify problems in configuration
+### Previous section
+
+[Getting Started with Cloud
+Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+
+ 
+
+If your Linux system has become non-bootable or is suffering from
+critical system errors, you can use **Rescue Mode** to recover your
+system data. These problems may be caused by file system corruption,
+boot file corruption, or other configuration errors. Normally, if your
+system encounters any problem during the boot process, you would boot in
+to a maintenance mode environment known as Single User Mode that would
+allow you to login with your root password and check for any errors.
+Unfortunately, using Single User Mode has its share of problems:
+
+-   **Your system is read-only and you cannot make corrective changes.**
+-   Most services such as networking are disabled. This would prevent
+    you from copying your data to another server.
+-   You would have to access your server using the Console, which is
+    slower than using a traditional SSH login.
+
+To avoid having to use Single User Mode, you can bring your server up
+in **Rescue Mode** through the Rackspace Cloud Control Panel.
+
+Contents
+--------
+
+-   [What is Rescue mode?](#What_is_Rescue_mode)
+-   [Getting your server into Rescue
+    mode](#Getting_your_server_into_Rescue_mode)
+-   [Connecting to your server in Rescue
+    Mode](#Connecting_to_your_server_in_Rescue_Mode)
+-   [Troubleshooting your server in Rescue
+    Mode](#Troubleshooting_your_server_in_Rescue_Mode)
+-   [Exiting Rescue Mode](#Exiting_Rescue_Mode)
+
+#### **What is Rescue mode?**
+
+Rescue mode grants the root user full access to your non-bootable
+serve&rsquo;s filesystem. You can use it to modify problems in configuration
 files or to copy data from your Cloud Server to a remote location.
 Rescue Mode through the Rackspace Cloud Control Panel is similar to
 booting into single-user mode with networking enabled.

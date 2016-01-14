@@ -4,13 +4,13 @@ title: Optimize SugarCRM on Cloud Sites
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-12 20:0154'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-14 21:2451'
+last_modified_by: kelly.holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
 
-**Note: **This article is intended for advanced users.
+**Note:** This article is intended for advanced users.
 
 To learn about optimization techniques for any web application,
 Rackspace recommends consulting the vendors of the application. However,
@@ -65,8 +65,8 @@ of the front-end looks. For a detailed explanation of the configuration
 options, see [SugarCRM's Performance Tweaks
 page](http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems").
 
-Add the following SugarCRM configuration options to
-your****config\_override.php** file:
+Add the following SugarCRM configuration options to your
+**config\_override.php** file:
 
     $sugar_config['disable_count_query'] = true;
     $sugar_config['disable_vcr'] = true;

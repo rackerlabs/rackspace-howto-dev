@@ -10,7 +10,53 @@ product: Rackspace Private Cloud - OpenStack
 body_format: full_html
 ---
 
-undefined&reg;:**The coordinator and administrator of the CommCell
+Overview
+--------
+
+Rackspace Private Cloud powered by OpenStack lets you create virtual
+instances that you can use to run any kind of applications. However,
+these virtual machines do not come with a backup and recovery solution
+by default. CommVault Simpan&reg; software has been tested and validated to
+work with Rackspace Private Cloud to do file-level backup and recovery
+of data inside individual instances. This document gives a brief
+overview of architecture and the components involved and the process to
+configure your instances for backup.
+
+ 
+=
+
+Prerequisites
+=============
+
+This document assumes the following:
+
+-   A Rackspace Private Cloud Software cluster (at least one controller,
+    and one compute node, or an all-in-one and additional compute node)
+
+-   CommVault Simpan&reg; Software version 9 or later
+
+** **
+-----
+
+**Backup Infrastructure**
+-------------------------
+
+CommVault Simpan&reg; software is built from the ground up on a single
+platform for integrated data protection and management. IT organizations
+can reduce costs and simplify data management across its lifecycle with
+integrated modules for backup & recovery, archive, replication, search,
+and reporting.
+
+An introduction to CommVault terminology for backup and recovery:
+
+**CommCel&reg;:**Collectively all Simpana components deployed for data
+protection and recovery including the CommCell Console, CommServe, Media
+Agents, and iDataAgents.
+
+**CommCell Console:**The graphical user interface that allows you to
+control and manage all CommVault Simpana components.
+
+**CommServ&reg;:**The coordinator and administrator of the CommCell
 components. The CommServe server communicates with all agents in the
 CommCell to initiate data protection, management, and recovery
 operations.  The CommServe does some resource intensive processing and

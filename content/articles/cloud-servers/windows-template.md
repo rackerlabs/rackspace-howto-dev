@@ -4,7 +4,7 @@ title: Windows overview
 type: article
 created_date: '2011-03-16 21:57:40'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:1719'
+last_modified_date: '2016-01-14 16:3022'
 last_modified_by: stephanie.fillmon
 product: Cloud Servers
 body_format: tinymce
@@ -29,8 +29,6 @@ Microsoft SQL Server
 
 -   [Creating and configuring a user in
     MSSQL](http://www.rackspace.com/knowledge_center/article/creating-and-configuring-a-user-in-mssql "Creating and Configuring a User in MSSQL")
--   [Configuring SSMS to connect to SQL
-    Server](https://www.rackspace.com/knowledge_center/article/configuring-remote-ssms-on-windows-server-2008-or-2012-r2 "Configuring SSMS to connect to SQL Server")
 
 Domain Services
 ---------------

@@ -10,7 +10,8 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined&rdquo; IP address that is
+Each Cloud Server comes with two addresses that are available for your
+use. One address is an external&rdquo;real-worl&rdquo; IP address that is
 accessible from the Internet and the other is an internal or "private"
 IP address.  This internal IP address is on a network commonly called
 ServiceNet and is used within the Cloud.

@@ -4,74 +4,125 @@ title: Why choose Cloud FIles?
 type: article
 created_date: '2011-03-28 20:10:43'
 created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:2102'
+last_modified_date: '2016-01-14 16:5052'
 last_modified_by: kyle.laffoon
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
 
-<p>There are a number of reasons to choose the Cloud Files service over similar services available in the market:</p>
+There are a number of reasons to choose the Cloud Files service over similar services available in the market:
 
-<ul>
-	<li>Simplicity of content delivery network (CDN) functionality</li>
-	<li>Utility pricing—paying only for what you use, after you use it</li>
-	<li>Multiple APIs for developers to choose from</li>
-	<li>Fast and reliable performance</li>
-	<li>World-class support</li>
-</ul>
+- Simplicity of content delivery network (CDN) functionality
+- Utility pricing—paying only for what you use, after you use it
+- Multiple APIs for developers to choose from
+- Fast and reliable performance
+- World-class support
 
-<p>This article provides details about the following reasons why you should use Cloud Files:</p>
+This article provides details about the following reasons why you should use Cloud Files:
 
-<ul>
-	<li><a href="#Simplicity">Simplicity</a></li>
-	<li><a href="#Affordability">Affordability</a></li>
-	<li><a href="#Flexibility">Flexibility</a></li>
-	<li><a href="#Superior_performance">Superior performance</a></li>
-	<li><a href="#World_Class_support">World-class support</a></li>
-	<li><a href="#Data_Redundancy">Data redundancy</a></li>
-	<li><a href="#Security">Security</a></li>
-</ul>
+- [Simplicity](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Simplicity)
+- [Affordability](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Affordability)
+- [Flexibility](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Flexibility)
+- [Superior performance](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Superior_performance)
+- [World-class support](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#World_Class_support)
+- [Data redundancy](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Data_Redundancy)
+- [Security](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Security)
 
-<h2 id="Simplicity">Simplicity</h2>
+## Simplicity
 
-<p>Cloud Files is simple to use for developers and non-developers alike. Users can get started in as little as five minutes. Users do not have to know how to code to use Cloud Files or a CDN. Users can, within minutes, sign up for Cloud Files, create a container, upload a file, and publish that container’s content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based Cloud Control Panel lets users easily upload files and distribute on a CDN without writing any code.</p>
+Cloud Files is simple to use for developers and non-developers alike. Users can get started in as little as five minutes. Users do not have to know how to code to use Cloud Files or a CDN. Users can, within minutes, sign up for Cloud Files, create a container, upload a file, and publish that container's content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based Cloud Control Panel lets users easily upload files and distribute on a CDN without writing any code.
 
-<p>All the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, users might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, users must ensure the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see <a href="/knowledge_center/node/2192">How do I use Cloud Files and CDN?</a>.</p>
+All the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, users might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, users must ensure the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see [How do I use Cloud Files and CDN?](https://admin.rackspace.com/knowledge_center/frequently-asked-question/how-do-i-use-cloud-files-and-cdn).
 
-<p>Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more detail in the <a href="#Security">Security</a> section are simple to use. Third-party tools that further simplify use of the storage service are available. Developers can use a language-specific application programming interfaces (APIs) to develop utilities or applications. The APIs are easy to use and are documented with examples to get started quickly.</p>
+Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more detail in the [Security](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Security) section are simple to use. Third-party tools that further simplify use of the storage service are available. Developers can use a language-specific application programming interfaces (APIs) to develop utilities or applications. The APIs are easy to use and are documented with examples to get started quickly.
 
-<h2 id="Affordability">Affordability</h2>
+## Affordability
 
-<p>Pricing for Cloud Files with CDN comprises the amount of total data that you have stored (per GB) and the amount of bandwidth used to serve the data (outbound bandwidth only, charged per GB to any edge location on the CDN around the globe). There are no "per request" fees for CDN. The <a href="http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/">current pricing for Cloud Files</a> is located on our website.</p>
+Pricing for Cloud Files with CDN comprises the amount of total data that you have stored (per GB) and the amount of bandwidth used to serve the data (outbound bandwidth only, charged per GB to any edge location on the CDN around the globe). There are no "per request" fees for CDN. The [current pricing for Cloud Files](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/) is located on our website.
 
-<h2 id="Flexibility">Flexibility</h2>
+## Flexibility
 
-<p>Cloud Files is a dynamically expanding storage system and is built on the pay-for-use principle. Customers can use as much or little storage as necessary, while paying only for storage space used. There is no limit on total space use, and individual files can range in size from a few bytes to extremely large. The GUI control panel enables users to check storage space and bandwidth used. There are no upfront fees or contracts, and users pay only for storage space and outgoing bandwidth used.</p>
+Cloud Files is a dynamically expanding storage system and is built on the pay-for-use principle. Customers can use as much or little storage as necessary, while paying only for storage space used. There is no limit on total space use, and individual files can range in size from a few bytes to extremely large. The GUI control panel enables users to check storage space and bandwidth used. There are no upfront fees or contracts, and users pay only for storage space and outgoing bandwidth used.
 
-<p>No API is required to share files. Non-developers have a simple web interface that they can use to quickly and easily upload data and enable CDN access. There are multiple third-party tools that make it even more flexible for users of specific environments, such as the Mac OS.</p>
+No API is required to share files. Non-developers have a simple web interface that they can use to quickly and easily upload data and enable CDN access. There are multiple third-party tools that make it even more flexible for users of specific environments, such as the Mac OS.
 
-<p>Developers can use the REST web service and language-specific APIs in PHP, Python, Java, Ruby, and C# .NET. The APIs provide full support for managing content in Cloud Files and publishing content over the CDN. The APIs enable developers to work in the language they feel most comfortable.</p>
+Developers can use the REST web service and language-specific APIs in PHP, Python, Java, Ruby, and C# .NET. The APIs provide full support for managing content in Cloud Files and publishing content over the CDN. The APIs enable developers to work in the language they feel most comfortable.
 
-<h2 id="Superior_performance">Superior performance</h2>
+## Superior performance
 
-<p>Rackspace has built networks with superior performance for years. The Akamai CDN capability improves the performance further for distribution of digital content. In short, Akamai can bring data closer to end users and serve popular content faster.</p>
+Rackspace has built networks with superior performance for years. The Akamai CDN capability improves the performance further for distribution of digital content. In short, Akamai can bring data closer to end users and serve popular content faster.
 
-<h2 id="World_Class_support">World-class support</h2>
+## World-class support
 
-<p>With Cloud Files, world-class technical support is only a click away. Live support, with real people, is available 24x7x365.</p>
+With Cloud Files, world-class technical support is only a click away. Live support, with real people, is available 24x7x365.
 
-<h2 id="Data_Redundancy">Data redundancy</h2>
+## Data redundancy
 
-<p>The Cloud Files storage system is designed to be highly available and fault tolerant. Cloud Files achieves client data redundancy by replicating three full copies on different storage nodes. Storage nodes are grouped in logical Zones within Rackspace datacenters. Zones are connected to redundant Internet backbone providers and reside on redundant power supplies and generators. The system has been engineered in such a way as to continue to by fully functional even in the event of a major service disruption within a Datacenter. Content on the CDN provides an additional layer of data redundancy.</p>
+The Cloud Files storage system is designed to be highly available and fault tolerant. Cloud Files achieves client data redundancy by replicating three full copies on different storage nodes. Storage nodes are grouped in logical Zones within Rackspace datacenters. Zones are connected to redundant Internet backbone providers and reside on redundant power supplies and generators. The system has been engineered in such a way as to continue to by fully functional even in the event of a major service disruption within a Datacenter. Content on the CDN provides an additional layer of data redundancy.
 
-<h2 id="Security">Security</h2>
+## Security
 
-<p>Cloud Files uses a number of different measures to ensure that your data is kept safe. First and foremost, all traffic between clients and the Cloud Files system uses SSL to establish a secure, encrypted communication channel. This ensures that any data (usernames, passwords, and content) cannot be intercepted and read by a third-party. Users authenticate with a valid Rackspace Cloud account username and API Access Key and are granted a session authentication token. These authentication tokens are used to validate all operations against Cloud Files. There is no way to terminate a valid session by the user, but the session tokens will automatically expire after 24 hours, forcing clients to resend their credentials.</p>
+Cloud Files uses a number of different measures to ensure that your data is kept safe. First and foremost, all traffic between clients and the Cloud Files system uses SSL to establish a secure, encrypted communication channel. This ensures that any data (usernames, passwords, and content) cannot be intercepted and read by a third-party. Users authenticate with a valid Rackspace Cloud account username and API Access Key and are granted a session authentication token. These authentication tokens are used to validate all operations against Cloud Files. There is no way to terminate a valid session by the user, but the session tokens will automatically expire after 24 hours, forcing clients to resend their credentials.
 
-<p>The API Access Key is only available from within the Rackspace Cloud’s control panel. Users must enter their valid Rackspace Cloud account username and password to gain access to view the API Access Key or to generate a new key. For information about how to find your API key, see <a href="http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)">View and reset your API key</a>.</p>
+The API Access Key is only available from within the Rackspace Cloud's control panel. Users must enter their valid Rackspace Cloud account username and password to gain access to view the API Access Key or to generate a new key. For information about how to find your API key, see [View and reset your API key](https://admin.rackspace.com/knowledge_center/article/view-and-reset-your-api-key%29).
 
-<p>It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files *will not* store data in encrypted form unless the client encrypts it prior to transmission. This allows users to select the type and level of encryption best suited for their application.</p>
+It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files \*will not\* store data in encrypted form unless the client encrypts it prior to transmission. This allows users to select the type and level of encryption best suited for their application.
 
-<p>When deleting storage Objects from the Cloud Files system, all copies of data are permanently removed within a matter of minutes. Furthermore, the physical blocks making up the customer’s data is zeroed over before that space is re-used for other customer data. In other words, after a delete request, the data will be unrecoverable.</p>
+When deleting storage Objects from the Cloud Files system, all copies of data are permanently removed within a matter of minutes. Furthermore, the physical blocks making up the customer's data is zeroed over before that space is re-used for other customer data. In other words, after a delete request, the data will be unrecoverable.
 
-<div class="printfooter">&nbsp;</div>
+Rendered
+Why choose Cloud FIles?
+
+There are a number of reasons to choose the Cloud Files service over similar services available in the market:
+
+    Simplicity of content delivery network (CDN) functionality
+    Utility pricing—paying only for what you use, after you use it
+    Multiple APIs for developers to choose from
+    Fast and reliable performance
+    World-class support
+
+This article provides details about the following reasons why you should use Cloud Files:
+
+     Simplicity
+     Affordability
+     Flexibility
+     Superior performance
+     World-class support
+     Data redundancy
+     Security
+
+Simplicity
+
+Cloud Files is simple to use for developers and non-developers alike. Users can get started in as little as five minutes. Users do not have to know how to code to use Cloud Files or a CDN. Users can, within minutes, sign up for Cloud Files, create a container, upload a file, and publish that container's content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based Cloud Control Panel lets users easily upload files and distribute on a CDN without writing any code.
+
+All the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, users might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, users must ensure the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see How do I use Cloud Files and CDN?.
+
+Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more detail in the Security section are simple to use. Third-party tools that further simplify use of the storage service are available. Developers can use a language-specific application programming interfaces (APIs) to develop utilities or applications. The APIs are easy to use and are documented with examples to get started quickly.
+Affordability
+
+Pricing for Cloud Files with CDN comprises the amount of total data that you have stored (per GB) and the amount of bandwidth used to serve the data (outbound bandwidth only, charged per GB to any edge location on the CDN around the globe). There are no "per request" fees for CDN. The current pricing for Cloud Files is located on our website.
+Flexibility
+
+Cloud Files is a dynamically expanding storage system and is built on the pay-for-use principle. Customers can use as much or little storage as necessary, while paying only for storage space used. There is no limit on total space use, and individual files can range in size from a few bytes to extremely large. The GUI control panel enables users to check storage space and bandwidth used. There are no upfront fees or contracts, and users pay only for storage space and outgoing bandwidth used.
+
+No API is required to share files. Non-developers have a simple web interface that they can use to quickly and easily upload data and enable CDN access. There are multiple third-party tools that make it even more flexible for users of specific environments, such as the Mac OS.
+
+Developers can use the REST web service and language-specific APIs in PHP, Python, Java, Ruby, and C# .NET. The APIs provide full support for managing content in Cloud Files and publishing content over the CDN. The APIs enable developers to work in the language they feel most comfortable.
+Superior performance
+
+Rackspace has built networks with superior performance for years. The Akamai CDN capability improves the performance further for distribution of digital content. In short, Akamai can bring data closer to end users and serve popular content faster.
+World-class support
+
+With Cloud Files, world-class technical support is only a click away. Live support, with real people, is available 24x7x365.
+Data redundancy
+
+The Cloud Files storage system is designed to be highly available and fault tolerant. Cloud Files achieves client data redundancy by replicating three full copies on different storage nodes. Storage nodes are grouped in logical Zones within Rackspace datacenters. Zones are connected to redundant Internet backbone providers and reside on redundant power supplies and generators. The system has been engineered in such a way as to continue to by fully functional even in the event of a major service disruption within a Datacenter. Content on the CDN provides an additional layer of data redundancy.
+Security
+
+Cloud Files uses a number of different measures to ensure that your data is kept safe. First and foremost, all traffic between clients and the Cloud Files system uses SSL to establish a secure, encrypted communication channel. This ensures that any data (usernames, passwords, and content) cannot be intercepted and read by a third-party. Users authenticate with a valid Rackspace Cloud account username and API Access Key and are granted a session authentication token. These authentication tokens are used to validate all operations against Cloud Files. There is no way to terminate a valid session by the user, but the session tokens will automatically expire after 24 hours, forcing clients to resend their credentials.
+
+The API Access Key is only available from within the Rackspace Cloud's control panel. Users must enter their valid Rackspace Cloud account username and password to gain access to view the API Access Key or to generate a new key. For information about how to find your API key, see View and reset your API key.
+
+It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files *will not* store data in encrypted form unless the client encrypts it prior to transmission. This allows users to select the type and level of encryption best suited for their application.
+
+When deleting storage Objects from the Cloud Files system, all copies of data are permanently removed within a matter of minutes. Furthermore, the physical blocks making up the customer's data is zeroed over before that space is re-used for other customer data. In other words, after a delete request, the data will be unrecoverable.

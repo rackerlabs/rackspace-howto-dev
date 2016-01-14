@@ -10,7 +10,45 @@ product: RackConnect
 body_format: tinymce
 ---
 
-undefined&ndash;192.168.255.255 for your
+**Applies to:** RackConnect v3.0
+
+The following table describes the limitations of RackConnect v3.0. 
+
+ 
+
+Limitation
+
+Details
+
+**Cloud account**
+
+-   A single cloud account cannot be associated with both a RackConnect
+    v3.0 configuration and a RackConnect v2.0 configuration.
+
+****Cloud Networks****
+
+-   Cloud Networks limitations also apply to cloud networks that are
+    associated with RackConnect v3.0. For example, Cloud Networks is
+    currently limited to 10 isolated networks and up to 250 cloud
+    servers per network; these limitations also apply to cloud networks
+    that are associated with RackConnect v3.0. For a list of current
+    Cloud Networks limitations, see the articles [Create an Isolated
+    Cloud
+    Network](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network) and
+    [Cloud Networks
+    FAQ](http://www.rackspace.com/knowledge_center/article/cloud-networks-faq).
+
+-   Currently, only cloud servers configured with a single cloud network
+    are supported.
+
+-   Avoid using network ranges for your cloud networks that overlap with
+    the Rackspace public cloud ServiceNet IP address ranges of
+    10.176.0.0/12 and 10.208.0.0/12. Also avoid using network ranges
+    that are already in use on the dedicated-side of your network or
+    that consist of public IP adresses. Other than the preceding caveats
+    we recommend that you use network ranges from within the standard
+    private IPv4 address spaces of 10.0.0.&ndash;10.255.255.255,
+    172.16.0.&ndash;172.31.255.255, or 192.168.0.&ndash;192.168.255.255 for your
     cloud networks. We also recommend that you select a /24 CIDR subnet
     mask to simplify management, because a /24 CIDR is large enough to
     support 250 cloud servers (the cloud servers limit per network). If

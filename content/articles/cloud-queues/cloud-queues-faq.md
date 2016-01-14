@@ -4,8 +4,8 @@ title: Cloud Queues FAQ
 type: article
 created_date: '2013-09-18 16:28:37'
 created_by: megan.meza
-last_modified_date: '2014-05-27 21:1357'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-14 21:4755'
+last_modified_by: kyle.laffoon
 product: Cloud Queues
 body_format: tinymce
 ---

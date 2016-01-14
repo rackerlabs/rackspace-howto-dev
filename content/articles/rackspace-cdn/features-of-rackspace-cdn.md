@@ -10,7 +10,43 @@ product: Rackspace CDN
 body_format: tinymce
 ---
 
-undefined&rsquo;t get the brunt force traffic associated with a DDOS attack.
+Following are some of the top features of Rackspace CDN:
+
+**Powered by the Akamai content delivery network**
+
+Using the Akamai network, Rackspace employs a custom map of over 200
+edge nodes across six continents. This map includes 77 North American
+locations; 36 European locations; 73 Asian, Middle Eastern and Oceania
+locations; and 15 South America locations.
+
+**Instant provisioning**
+
+The Rackspace CDN service can be turned on in seconds through the
+Rackspace Cloud Control Panel or via the REST API and language bindings.
+No professional services, ticket requests, or phone calls are needed to
+get your site up and running.
+
+**Multiple interface options**
+
+Rackspace CDN is fully supported via the Rackspace Cloud Control Panel.
+You can also interact with Rackspace CDN via our REST API or one of our
+software development kits (SDK) in Ruby, PHP, Java, node.js, Python, or
+.NET.
+
+**Whole site delivery and acceleration**
+
+Rackspace CDN does more than just accelerate individual objects in
+storage. Using origin-pull technology and DNS, you can identify your
+website and content origin, and the entire site, everything from images
+to style sheets, will be accelerated.
+
+**Origin protection**
+
+Keeping your origin safe during a malicious attack is vital to the
+health of your website or application. Rackspace CDN helps keep your
+website and applications safe by absorbing all edge requests, harmful or
+not. Because all requests are first served by the edge nodes, your
+origin wo&rsquo;t get the brunt force traffic associated with a DDOS attack.
 This means that your website can still serve good traffic while an
 attack is occurring, keeping your visitors engaged at all times.
 

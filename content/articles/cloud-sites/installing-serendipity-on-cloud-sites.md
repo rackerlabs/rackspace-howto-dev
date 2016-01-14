@@ -10,7 +10,37 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined&rsquo; folder contained within the .zip
+**NOTE:** This article refers to the [Cloud Sites Control
+Panel](https://manage.rackspacecloud.com/). You can access this
+interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
+by clicking your username in the upper-right corner of the control panel
+and selecting Cloud Sites Control Panel.
+
+1.  If you have not already done so, go to
+    [http://www.s9y.org/12.html](http://www.s9y.org/12.html "http://www.s9y.org/12.html")
+    and download the latest full release of Serendipity.
+2.  Create your new domain from the Cloud Sites Control Panel. If you
+    need assistance, please see [How do I add a
+    website?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website)
+3.  Once the domain has finished creating, create your database. To do
+    this, click Hosting --\> Cloud Sites from the left sidebar, then
+    select your website from the menu. Scroll down to the Website
+    Features section and choose "Add New" next to Databases. Type in
+    whatever name you would like to call the DB and select MySQL 5. Type
+    in a username and password of your choice, then click Finish. (You
+    may want to write down the information provided -- the hostname,
+    database name, database username and database password.)
+4.  Extract the content of the Serendipity file you downloaded earlier
+    to your local computer.
+5.  Open up your FTP client software and login to your new domain. If
+    you are not familiar with uploading content, check out [What FTP
+    software should I
+    use?](/knowledge_center/index.php/What_FTP_software_should_I_use%3F "What FTP software should I use?")
+    and use the information to connect provided in [Getting Started With
+    Cloud Sites, FTP/SSHFS/FTP
+    Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+    Your best bet will be to upload (to your web/content folder)
+    everything inside the&lsquo;serendipit&rsquo; folder contained within the .zip
     or tar.gz file you downloaded.
 6.  Once the files have finished uploading, you are ready to get started
     with the installation of Serendipity and its settings.

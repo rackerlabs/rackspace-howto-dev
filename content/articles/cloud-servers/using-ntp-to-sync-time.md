@@ -10,7 +10,76 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined&ndash;s /etc/init.d/ntpd /etc/runlevels/default
+Keeping your syste&rsquo;s date and time accurate is easy to do using NTP.
+
+Having an accurate clock on your server ensures that time stamps in
+emails sent from your machine are correct. An accurate clock is
+especially helpful when you need to look at the logs from a particular
+time of day.
+
+If you don't occasionally set the system clock yourself, the time will
+slowly drift away from a perfectly accurate setting. That's when the
+network time protocol (NTP) is useful.
+
+### What is NTP?
+
+NTP lets you automatically sync your system time with a remote server.
+The NTP can be used to update the clock on a machine with a remote
+server. This keeps your machine's time accurate by syncing with servers
+that are known to have accurate times. NTP also keeps the clocks on
+several machines in sync, thus making it easier to match log entries for
+an event across multiple servers.
+
+It's easy to set up an NTP server to regularly adjust your machine's
+clock. It's also possible to make it a bit more complicated if you need
+your clock accurate down to the millisecond instead of just to the
+second.
+
+### Install
+
+The first thing to do is install the NTP server. Grab the package by
+running:
+
+#### Ubuntu / Debian:
+
+    sudo aptitude updatesudo aptitude install ntp
+
+#### CentOS:
+
+    sudo yum install ntp
+
+Once installed, you can ensure the service will run at boot time by
+running:
+
+    sudo /sbin/chkconfig ntpd on
+
+#### Fedora / RHEL:
+
+    sudo yum install ntp
+
+Once installed, you can ensure the service will run at boot time by
+running:
+
+    sudo chkconfig ntpd on
+
+#### Arch:
+
+    sudo pacman&ndash;Sy ntp
+
+Once installed, you can ensure the service will run at boot time by
+adding&ldquo;ntp&rdquo; to the&ldquo;DAEMON&rdquo; value in the rc.conf file here:
+
+    /etc/rc.conf
+
+#### Gentoo:
+
+    sudo emerge&ndash;sync
+    sudo emerge ntp
+
+Once installed, you can ensure the service will run at boot time by
+running:
+
+    sudo ln&ndash;s /etc/init.d/ntpd /etc/runlevels/default
 
 ### Start the service
 

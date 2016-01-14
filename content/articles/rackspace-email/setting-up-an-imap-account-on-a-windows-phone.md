@@ -10,7 +10,9 @@ product: Rackspace Email
 body_format: tinymce
 ---
 
-undefined1. Locate the **Settings** options from within your application menu\
+The following steps are required to setup an IMAP account on a Windows
+Mobile phone.
+1. Locate the **Settings** options from within your application menu\
 \
 ![](/knowledge_center/sites/default/files/field/image/1.jpg)\
 \

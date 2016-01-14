@@ -23,7 +23,7 @@ license; let's take a look:
     in, select M**obile Sync** under Other Options in the Rackspace
     Email box.
 
-    ![](http://c14989208.r8.cf2.rackcdn.com/webmail1.png)
+![](http://c14989208.r8.cf2.rackcdn.com/webmail1.png)
 
  
 

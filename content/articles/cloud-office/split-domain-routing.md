@@ -10,7 +10,65 @@ product: Cloud Office
 body_format: tinymce
 ---
 
-undefined3. Check the **Enable Split Domain Routing** box & in the **External
+### **What is Split Domain Routing?**
+
+Split Domain Routing (SDR) allows you to have a single domain's
+mailboxes distributed between our system and an external system, working
+together as if they were in one environment. This is primarily used when
+migrating a large number of mailboxes over to our system from another
+server over an extended period of time.
+
+Mailboxes can be moved in batches to make the move more manageable for
+administrators and to make the transition almost seamless for the users.
+Though it is not common, SDR can also be used when you need to maintain
+some mailboxes on an existing system for an extended period of time or
+permanently.  
+
+If SDR will be a permanent feature of your set up they can point to
+either your external mail server or us. You may want to point your MX
+records to Rackspace because then all your messages get the benefit of
+our spam/anti-virus filtering instead of just the Rackspace-hosted
+mailboxes.
+
+### **Setting up Split Domain Routing:**
+
+There are two parts to setting up SDR and they relate to enabling our
+system and the external system to have two-way communication. If you are
+using SDR as part of a migration, you will want to keep your MX records
+for the domain pointing to your existing server (described as your
+external mail server in this documentation). Once the migration is
+complete you can switch them to the Rackspace MX records listed here:
+[Set up DNS records for Cloud Office email and Skype for
+Business](http://www.rackspace.com/knowledge_center/article/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+
+![](http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting.png)  
+
+### **Enabling Split Domain Routing through the Cloud Office control panel:** 
+
+When SDR is enabled, our environment will forward to your external
+server any messages addressed to recipients on your domain that do not
+exist in our system. To enable it requires the hostname of your external
+mail server (usually one of the MX Records that point to your external
+system) and a valid email address within the designated domain hosted on
+that external mail server. We will use this address only to validate the
+server. You must also open port 25 on the external mail server so that
+our system can connect to it. 
+
+![](http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting2.png)  
+
+###  
+
+### **To enable Split Domain Routing perform the following steps:** 
+1. First log in to the control panel
+([cp.rackspace.com](http://cp.rackspace.com)) & mouse over the **Go To
+Section** drop-down menu and select **Domains**.
+
+![](/knowledge_center/sites/default/files/field/image/a.png)
+2. In the **Tools** section, select the **Split Domain** link & select
+the domain you want to set up Split Domain Routing for.
+
+![](/knowledge_center/sites/default/files/field/image/b.png)
+3. Check the **Enable Split Domain Routing** box & in the **External
 Mail Server** box, enter the name of your external mail server. In
 the **Verification Address box**, enter in a valid email address that is
 hosted on your external mail server and then select the **Save** button.

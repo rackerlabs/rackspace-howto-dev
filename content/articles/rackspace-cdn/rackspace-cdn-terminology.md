@@ -10,7 +10,55 @@ product: Rackspace CDN
 body_format: tinymce
 ---
 
-undefined&rdquo; method, which prepopulates the
+**Caching rule**
+
+A rule you create for your edge nodes that defines how long your content
+remains cached at the edge. This is the time to live (TTL) for the
+object.
+
+**Content delivery network (CDN**)
+
+A system of computers that contains multiple copies of data. A CDN is
+designed to improve the performance of delivering your content to your
+audience across the world. Your content can be anything--website files,
+applications, audio and video files, ads, or interactive experiences.
+
+When your audience or customers request your content, they get it from
+their nearest edge nodes, instead of where you originally uploaded it.
+This means that the travel time for your content to your customers is
+much quicker than with other content systems.
+
+**Edge node**
+
+The local servers distributed around the world. They serve your content
+directly to your audience, which reduces its transmission time. They can
+also be called "points of presence" (or PoPs), or edge servers. The edge
+nodes cache your content for a time frame that you set; see Time to live
+(TTL) for more about the time frame.
+
+**Edge rule**
+
+Instructions that you give to the edge nodes that explain how to handle
+the content. Caching rules and restrictions are two types of edge rules.
+For more informaiton about how to set up edge rules, see [Rackspace CDN
+edge rules](https://www.rackspace.com/knowledge_center/node/4560).
+
+**Edge server**
+
+The same thing as an edge node.
+
+**Origin**
+
+Server that holds the content from which the edge nodes pull content.
+The origin might be your cloud server, a cloud files container, or a
+dedicated server. A CDN service can have multiple origins.
+
+**Origin pull**
+
+How the edge node gets the content from the origin(s). The content is
+pulled when it is requested by the end users--for example, when they
+visit your website or use an application that uses content on your CDN.
+Rackspace CDN does not support the&ldquo;pus&rdquo; method, which prepopulates the
 cache with content before a request is made. 
 
 **Purge**

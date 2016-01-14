@@ -10,7 +10,20 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined&ndash; please try again` error message is displayed
+When content is being served from your Cloud Sites websites, you might
+occasionally receive the `Connection timed out - please try again` error
+message. This article explains the causes of the error, provides steps
+that you can take to improve the experience, and tells you about the
+steps we have taken to mitigate the problem.\
+  
+
+![](/knowledge_center/sites/default/files/field/image/Capture1.JPG)
+
+ 
+
+### What doe the error message mean? 
+
+The `Connection timed out&ndash; please try again` error message is displayed
 when a script exceeds the maximum timeout value of 30 seconds. If the
 load balancer that is serving the content does not receive data from the
 server processing the data, the load balancer closes the connection and

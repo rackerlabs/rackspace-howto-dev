@@ -10,7 +10,9 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined1. Launch Windows Firewall with Advanced Security by clicking on Start
+Creating an Outbound Port Deny Rule
+-----------------------------------
+1. Launch Windows Firewall with Advanced Security by clicking on Start
 \> Administrative Tools \> Windows Firewall with Advanced Security.
 
 ![firewalllaunch.png](http://c0625232.cdn.cloudfiles.rackspacecloud.com/firewalllaunch.png)

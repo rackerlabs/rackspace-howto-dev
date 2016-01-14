@@ -10,7 +10,79 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-undefined4. Connect your MySQL workbench by selecting OK and you can then import
+Cloud Databases is part of the Cloud Control Panel. One of the
+advantages of Cloud Databases is that it makes it easier to provision
+your MySQL instance, add databases, and effectively manage your users.
+This also includes the security and performance benefits of having your
+own dedicated database instance. Another big plus is how easy it is to
+connect to your Cloud Database from Cloud Sites.
+
+### Creating A Cloud Database
+1. First thing we'll do is login to the Cloud Control
+[http://mycloud.rackspace.com](http://mycloud.rackspace.com) and once
+you're logged in, select **Databases** at the top.
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/6.png)
+2. Next, select the **Create MySQL Instance** option and you'll then be
+taken to the **Create MySQL Instance** screen. Fill out the fields with
+your desired specifications to creating your Database and then select
+**Create Instance** when finished.
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/2_0.png) 
+ 
+
+*Note: We recommend creating your Database in the same region as your
+Cloud Site. You can find out the location of your Cloud Site by looking
+for **ORD** or **DFW** in the testing link for your Cloud Site.*
+3. Your database will then begin the process of building. Once
+complete, you'll see your status go from an Orange color to a green
+which indicates it's active. Selecting your Instance will display all
+information relating to that particular Instance.
+
+### ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/4_0.png)
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/15.png) 
+        
+
+###  
+
+### Working with your MySQL instance
+
+There are a different ways on how you can work with and manage your
+MySQL instance. If you happen to have a Cloud Server in the same region
+as your Cloud Database, you can connect to it using an SSH session on a
+Linux box, installing your favorite database management software, or by
+installing a phpMyAdmin on your Cloud Site and use that to connect and
+manage your database instance. The steps below will focus on using a
+database management interface on your local machine (MySQL Workbench).
+Let's get started!
+1. In order to access your instance from your local workstation, let's
+create a Load Balancer. This will allow you to have a public IP address
+against your instance. First thing you'll do is login to the [Cloud
+Control Panel](https://mycloud.rackspace.com) and select **Load
+Balancers** at the top.
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/13.png)
+2. Next, select **Create A Load Balancer** and fill out the fields with
+your desired specifications. When you approach the **Add Nodes**
+section, select **Add External Node**and in the** IP or
+Hostname** field, enter in the Hostname of the Cloud Database Instance
+we just created and then select **Create Load Balancer**.
+
+*Note: You can grab the hostname of your Instance by selecting the
+Instance name in the Databases section.*  
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/9.png)
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/16.png) 
+3. Once your Load Balancer is created (Active), select the Load
+Balancer and you may then grab the public IP address to create a new
+connection. Plug the IP address into the Hostname field in MySQL
+Workbench, your database credentials, and also the standard port
+(**3306**) in the port field.
+
+![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/14.png)
+4. Connect your MySQL workbench by selecting OK and you can then import
 your database, edit user permissions, etc.
 
 ###  

@@ -4,7 +4,7 @@ title: 'Getting Started With Cloud Sites: Getting Fanatical Support'
 type: article
 created_date: '2011-11-08 18:32:50'
 created_by: RackKCAdmin
-last_modified_date: '2015-12-31 16:4928'
+last_modified_date: '2016-01-14 19:2504'
 last_modified_by: stephanie.fillmon
 product: Cloud Sites
 body_format: tinymce
@@ -92,9 +92,6 @@ support channels.
 
 With all the support resources and support staff made available to you,
 it's no wonder why Rackspace is known as the home of Fanatical Support!
- This completes our tour of the Control Panel.
-
-### Next section
-
-### [Building Your First Website](http://www.rackspace.com/knowledge_center/article/building-your-first-website)
+ This completes our tour of the Control
+Panel.[](http://www.rackspace.com/knowledge_center/article/building-your-first-website)
 

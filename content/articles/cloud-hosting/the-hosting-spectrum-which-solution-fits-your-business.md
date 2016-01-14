@@ -10,7 +10,38 @@ product: Cloud Hosting
 body_format: tinymce
 ---
 
-undefined&mdash;day
+Choosing the right [hosting
+solution](http://www.rackspace.com/hosting_solutions.php) is a very
+critical piece to your business. According to many hosting providers,
+the standard way of choosing hosting is to look at the market and try to
+fit your company into the model that has already been established.
+However, Rackspace encourages you to look at the needs of your business
+and staff and decide which hosting solution best supports what you want
+to do.   The diagram below is a good guide with which to start your
+decision-making process. It essentially outlines the provider's
+responsibility versus the customer's responsibility. We encourage you to
+look at this diagram as an introductory piece to help you understand how
+much of your company's time and efforts will be focused on managing
+servers or on driving innovators for your business.  
+
+ 
+
+**In-House (Do-it-yourself)**
+
+The customer has complete ownership of the IT management stack. Along
+with this high degree of management, the customer undertakes a high
+degree of responsibility for maintaining the config 24x7x365.  
+
+ 
+
+**Traditional Colocation**
+
+The provider offers physical space for a server on a rack. The customer
+is responsible for purchasing, configuring and maintaining the physical
+hardware (servers, firewalls, etc.), software and the operating system.
+The responsibility is lessened due to the provider maintaining the
+physical space, power, and networking, but any issues that arise outside
+of the provider's responsibilities must be resolved by the custome&mdash;day
 or night. A
 [colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)
 strategy requires that the customer select a vendor with a data center

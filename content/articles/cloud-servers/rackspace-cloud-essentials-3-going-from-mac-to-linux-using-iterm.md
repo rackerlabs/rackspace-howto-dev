@@ -10,7 +10,20 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-undefined&rsquo;re connecting as a non-root user,
+If you use Mac OS X, you do&rsquo;t need to install a third-party client like
+PuTTY to connect to your cloud server via Secure Shell (SSH). Terminal
+is a terminal emulation program included with Mac OS X that you can use
+to run SSH.
+
+**Note**: For an OnMetal Server, see [Create OnMetal Cloud
+Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers) for
+applicable OnMetal steps.
+
+Connect to the server
+---------------------
+
+These instructions are for users who are connecting to a new cloud
+server for the first time.  If yo&rsquo;re connecting as a non-root user,
 replace *root* in the instructions with your username.
 
 1.  Go to **Applications** \> **Utilities**, and open **Terminal**.

@@ -4,8 +4,8 @@ title: Cloud server name transitions
 type: article
 created_date: '2014-10-28 18:10:40'
 created_by: TFDuesing
-last_modified_date: '2014-11-05 16:1700'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-14 20:2459'
+last_modified_by: rose.coste
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -17,28 +17,29 @@ workloads. The old flavor names are officially deprecated but will still
 be recognized in API commands for a time. The new names are the only
 flavor names visible in the Cloud Control Panel.
 
-The following table maps the old flavor names to the new ones. 
+The current flavor names relate to deprecated flavor names as follows:
 
-  ---------------------------------------------------------
-  Previous flavor\   Current virtual\     OnMetal flavor\
-   class name         flavor class name    class name
-  ------------------ -------------------- -----------------
-  Standard           Standard              
+-   S**tandard** flavor class for *virtual* cloud servers was previously
+    known as Standard (no change).
+-   **General Purpose** flavor class for *virtual* cloud servers was
+    previously known as Performance 1.
+-   **I/O Optimized** flavor class for *virtual* cloud servers was
+    previously known as Performance 2.
+-   **OnMetal I/O** flavor class for *OnMetal*cloud servers was
+    previously known as Performance 2.
+-   **Compute Optimized** flavor class for *virtual* cloud servers had
+    no previous name.
+-   **OnMetal Compute** flavor class for *OnMetal* cloud servers had no
+    previous name.
+-   **Memory Optimized** flavor class for *virtual* cloud servers had no
+    previous name.
+-   **OnMetal Memory** flavor class for *virtual* cloud servers had no
+    previous name.
 
-  Performance 1      General Pupose        
-
-  Performance 2      I/O Optimized        OnMetal I/O
-
-                     Compute Optimized    OnMetal Compute
-
-                     Memory Optimized     OnMetal Memory
-  ---------------------------------------------------------
-
-The new flavor names also reflect new functional differences. We now
-offer servers that are optimized for memory, compute, and I/O.
-Additionally, the General Purpose servers (which were previously
-Performance 1) can have a larger system disk instead of using split
-system and data disks.
+The new flavor names eflect new functional differences. We now offer
+servers that are optimized for memory, compute, and I/O. Additionally,
+the General Purpose servers (which were previously Performance 1) can
+have a larger system disk instead of using split system and data disks.
 
 The different types of servers are part of the expected growth life
 cycle of using cloud servers. That life cycle goes from general purpose

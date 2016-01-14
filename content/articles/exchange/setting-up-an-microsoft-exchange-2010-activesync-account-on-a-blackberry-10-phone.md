@@ -10,7 +10,26 @@ product: Exchange
 body_format: tinymce
 ---
 
-undefined&reg; Exchange ActiveSync**.\
+The following steps are required to configure Microsoft Exchange 2010
+ActiveSync on a Blackberry 10 Phone:\
+ \
+ 1.  After your administrator has purchased an Activesync License and
+assigned it to your email address, locate the **Settings** options from
+within your home menu.\
+ \
+ ![](/knowledge_center/sites/default/files/field/image/1_25.png)\
+ \
+ 2. Select **Accounts**.\
+ \
+ ![](/knowledge_center/sites/default/files/field/image/2_22.png)\
+ \
+ 3. Select **Advanced** from the bottom of the screen, or you may need
+to select the **Add Account** first if you already have an account
+setup.\
+ \
+ ![](/knowledge_center/sites/default/files/field/image/3_20.png)\
+ \
+ 4. Select **Microsof&reg; Exchange ActiveSync**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/4_13.png)\
  \
