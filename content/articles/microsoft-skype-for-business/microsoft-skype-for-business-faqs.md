@@ -17,17 +17,17 @@ Account Services
 
 ### Why am I having audio problems?
 
-If ther&rsquo;s a problem, a notification is displayed in the conversation
+If there&rsquo;s a problem, a notification is displayed in the conversation
 window or the Skype for Business main window. You can click the
 notification for more information or suggested solutions.
 
-If yo&rsquo;re not getting sound, check that:
+If you&rsquo;re not getting sound, check that:
 
 -   Your speakers are turned on, both in Skype for Business and your
     computer, and the speaker volume is high.
--   Your telephone handset is on the cradle (if yo&rsquo;re getting audio
+-   Your telephone handset is on the cradle (if you&rsquo;re getting audio
     through a phone).
--   The device yo&rsquo;re using is selected on the **Devices** tab, (pause
+-   The device you&rsquo;re using is selected on the **Devices** tab, (pause
     on the phone/mic icon and click the **Devices** tab).
 
  
@@ -45,7 +45,7 @@ General
     Personal.**
 2.  Uncheck the box labeled **Automatically start Skype for Business
     when I log on to Windows**. The next time you log on, if you want to
-    use Skype for Business yo&rsquo;ll need to select it from the Start menu.
+    use Skype for Business you&rsquo;ll need to select it from the Start menu.
 
 ^[back\\ to\\ top](#top)^
 
@@ -55,7 +55,7 @@ General
 2.  Uncheck the box labeled **Show Skype for Business in the foreground
     when it starts**.\
      The next time you log on, the Skype for Business icon will appear
-    on the task bar at bottom of your screen. Yo&rsquo;ll need to select it
+    on the task bar at bottom of your screen. You&rsquo;ll need to select it
     to open the Skype for Business main window.
 
 ^[back\\ to\\ top](#top)^
@@ -83,14 +83,14 @@ turned on the Out of Office reply in Outlook.
 
 Every contact you interact with via Microsoft Office, whether in your
 Skype for Business contacts list or not, has a "default" relationship
-with you. Your&ldquo;unliste&rdquo; contacts (that is, those who are not included
-in your Skype for Business contacts list) do&rsquo;t get displayed in either
+with you. Your &ldquo;unlisted&rdquo; contacts (that is, those who are not included
+in your Skype for Business contacts list) don&rsquo;t get displayed in either
 the Groups view or the Status view. But the Relationships view shows all
 the contacts on your Skype for Business contacts list *plus* any
-unlisted contacts whom yo&rsquo;ve assigned a non-default privacy
+unlisted contacts whom you&rsquo;ve assigned a non-default privacy
 relationship.
 
-To remove any of these&ldquo;unliste&rdquo; contacts from your Relationships view,
+To remove any of these &ldquo;unlisted&rdquo; contacts from your Relationships view,
 right-click on the contact, click **Change Privacy Relationship**, and
 select **Auto-assign Relationship**.
 
@@ -111,7 +111,7 @@ Business as well.
 
 The default maximum number of contacts that can be added is 1000. But
 your actual limit is set by your support team, so contact them if it
-seems yo&rsquo;ve hit your limit or if yo&rsquo;re not sure what it is in your
+seems you&rsquo;ve hit your limit or if you&rsquo;re not sure what it is in your
 organization.
 
 ^[back\\ to\\ top](#top)^
@@ -130,7 +130,7 @@ organization.
 ### How do I organize my contacts by location, department, or other criteria?
 
 Create a new group based on the category you need. For instance, you
-might create a group called&ldquo;Headquarters staf&rdquo; and add contacts to
+might create a group called &ldquo;Headquarters staff&rdquo; and add contacts to
 that group.\
  \
  See [How do I create a
@@ -166,8 +166,8 @@ Contacts List**.
 
 ### How do I display only those contacts who are online?
 
-Although you ca&rsquo;t completely remove offline contacts from your contacts
-list, you can send them to a separate group so they do&rsquo;t clutter it up.
+Although you can&rsquo;t completely remove offline contacts from your contacts
+list, you can send them to a separate group so they don&rsquo;t clutter it up.
 
 Click **Options-\>Contacts List** and then select the checkbox labeled
 **Show contacts with away, offline and unknown presences in a separate
@@ -179,7 +179,7 @@ display, in a group called Away and Offline Contacts.
 ### How do I block contacts from reaching me via Skype for Business?
 
 **Note**: Although your name and email address are displayed to blocked
-contacts, they ca&rsquo;t reach you through Skype for Business.
+contacts, they can&rsquo;t reach you through Skype for Business.
 
 To block a contact in Skype for Business:
 
@@ -203,12 +203,12 @@ looking.
 
 1.  In the Skype for Business main window, click **Add a Contact**.
 2.  From the dropdown menu, select **Add a Contact in my Organization**.
-3.  In the search box, type the perso&rsquo;s name, email alias, or phone
+3.  In the search box, type the person&rsquo;s name, email alias, or phone
     number.\
      As you type, a list of people who match the search terms is
     displayed.
 4.  Scroll through the search returns list until you come to the person
-    you want to add to your Contacts list. Right-click the perso&rsquo;s
+    you want to add to your Contacts list. Right-click the person&rsquo;s
     search listing, and then click **Add to Contacts List**.
 5.  Select a group from the list to which to add your new contact.
 
@@ -248,7 +248,7 @@ Instant Messages
 
 ### Can I recall (block the delivery of) an IM?
 
-No, an instant message ca&rsquo;t be recalled once you hit the Enter key to
+No, an instant message can&rsquo;t be recalled once you hit the Enter key to
 send it.
 
 ^[back\\ to\\ top](#top)^
@@ -315,7 +315,7 @@ settings to incoming messages**checkbox, and then click **OK**.
 
 ### Can I add customized emoticons to my Skype for Business IMs?
 
-No, you ca&rsquo;t. But, there are 80 emoticons in the Skype for Business
+No, you can&rsquo;t. But, there are 80 emoticons in the Skype for Business
 assortment. To see them, click the emoticon icon to the right of the
 text input area on the conversation window.
 
@@ -324,7 +324,7 @@ text input area on the conversation window.
 ### Can I use spell checking in my Skype for Business IMs?
 
 Yes, Skype for Business checks your spelling automatically. Skype for
-Business wo&rsquo;t mark as misspelled any word that yo&rsquo;ve added to your
+Business won&rsquo;t mark as misspelled any word that you&rsquo;ve added to your
 Office custom dictionary. To turn off spellchecking in Skype for
 Business, click the Options button, then click **General** and clear the
 **Check spelling as I type** check box.
@@ -379,7 +379,7 @@ History folder.
 
 ^[back\\ to\\ top](#top)^
 
-### How can I make the IM alerts more prominent so I do&rsquo;t miss incoming IM requests?
+### How can I make the IM alerts more prominent so I don&rsquo;t miss incoming IM requests?
 
 Unless you have set notifications so alerts will not display when you
 are in Do not Disturb mode, Skype for Business will by default always
@@ -436,7 +436,7 @@ User Status
 
 ### What do the various presence states mean, which ones are set automatically, and which ones can I set myself?
 
-Her&rsquo;s a table that describes the contact presence states that people
+Here&rsquo;s a table that describes the contact presence states that people
 can see, what each state means, and how it gets set.
 
 **Presence/Status**
@@ -445,27 +445,27 @@ can see, what each state means, and how it gets set.
 
 Available
 
-Yo&rsquo;re online and available to contact. Automatic or user-selected
+You&rsquo;re online and available to contact. Automatic or user-selected
 setting.
 
 Busy
 
-Yo&rsquo;re occupied and should&rsquo;t be interrupted. Automatic (if user is in
+You&rsquo;re occupied and shouldn&rsquo;t be interrupted. Automatic (if user is in
 an Outlook-scheduled conference) or user-selected setting.
 
 In a call
 
-Yo&rsquo;re in a Skype for Business call (two-party call) and should&rsquo;t be
+You&rsquo;re in a Skype for Business call (two-party call) and shouldn&rsquo;t be
 interrupted. (*Automatic*)
 
 In a conference call
 
-Yo&rsquo;re in a Skype for Business conference call (Skype for Business
-meeting with audio) and should&rsquo;t be interrupted. (*Automatic*)
+You&rsquo;re in a Skype for Business conference call (Skype for Business
+meeting with audio) and shouldn&rsquo;t be interrupted. (*Automatic*)
 
 Do not disturb
 
-You do&rsquo;t want to be disturbed and will see conversation notifications
+You don&rsquo;t want to be disturbed and will see conversation notifications
 only if they are sent by someone in your Workgroup. ( *User-selected*)
 
 Presenting
@@ -476,7 +476,7 @@ disturbed. (*Automatic*)
 
 Be Right Back
 
-Yo&rsquo;re stepping away from the computer for a few moments.
+You&rsquo;re stepping away from the computer for a few moments.
 (*User-selected*)
 
 Away
@@ -486,12 +486,12 @@ default; value can be adjusted.) (*Automatic*)
 
 Off Work
 
-Yo&rsquo;re not working and not available to contact. (*User-selected*)
+You&rsquo;re not working and not available to contact. (*User-selected*)
 
 Offline
 
-Yo&rsquo;re not signed in. If you have blocked individuals from seeing your
-presence, yo&rsquo;ll appear offline to them. (*Automatic*)
+You&rsquo;re not signed in. If you have blocked individuals from seeing your
+presence, you&rsquo;ll appear offline to them. (*Automatic*)
 
 Unknown
 
@@ -505,8 +505,8 @@ unknown to them. (*Automatic*)
 
 Although the presence states in Skype for Business are pre-set, you can
 always write a personal note at the top of the Skype for Business main
-window to provide more details about where you are and what yo&rsquo;re
-doing. Just click the note display area and type over the note tha&rsquo;s
+window to provide more details about where you are and what you&rsquo;re
+doing. Just click the note display area and type over the note that&rsquo;s
 currently displayed.
 
 ^[back\\ to\\ top](#top)^
@@ -515,7 +515,7 @@ currently displayed.
 
 On the Status options window you can change the number of minutes that
 elapse before your presence status changes to **Inactive**and **Away**,
-if you do&rsquo;t want to use the default settings. You can also have Skype
+if you don&rsquo;t want to use the default settings. You can also have Skype
 for Business automatically detect when you are sharing information from
 this computer. Skype for Business will set your status as Presenting and
 block others from sending messages to you during that time.
@@ -541,13 +541,13 @@ for Business-enabled computer.
 
 ^[back\\ to\\ top](#top)^
 
-### Why ca&rsquo;t I set my presence status to "Appear Away"?
+### Why can&rsquo;t I set my presence status to "Appear Away"?
 
 Your organization may have turned off the Appear Away status option, on
 the grounds that it can interfere with the reliability of the presence
 indicator. If a lot of people use this status constantly, presence in
-general wo&rsquo;t mean much. Keep in mind that you can also use privacy
-relationships to avoid interruptions. For example, if you do&rsquo;t want to
+general won&rsquo;t mean much. Keep in mind that you can also use privacy
+relationships to avoid interruptions. For example, if you don&rsquo;t want to
 be disturbed by most people, you can set your status as Do Not Disturb
 and then grant certain people permission to interrupt you by adding them
 to your Workgroup.
@@ -629,20 +629,20 @@ The following guidelines will improve device audio quality.
     for Microsoft Skype for
     Business](http://office.microsoft.com/en-us/lync-help/redir/XT102324544.aspx?CTT=5&origin=HA102847523)
     .
--   I&rsquo;s important that a noise-canceling microphone is positioned close
+-   It&rsquo;s important that a noise-canceling microphone is positioned close
     to the mouth, approximately less than 1 inch away from the mouth, to
     filter out unwanted background noise.
 -   Most headsets have a button to adjust the volume depending on which
     audio device the headset is connected to. If you or other callers
     hear a buzzing noise, make a test call and then adjust the settings
     on the headset until the buzzing noise is gone.
--   If yo&rsquo;re using the speaker on your phone and callers complain about
+-   If you&rsquo;re using the speaker on your phone and callers complain about
     background noise, make sure that the phone is on a flat surface, and
     you are close to the phone.
--   If yo&rsquo;re using two separate devices for audio (such as desktop
+-   If you&rsquo;re using two separate devices for audio (such as desktop
     speakers and camera), try to place them at an appropriate distance
     from each other to minimize echo.
--   We recommend that you do&rsquo;t make calls over a wireless connection,
+-   We recommend that you don&rsquo;t make calls over a wireless connection,
     virtual private network (VPN), or remote access service (RAS)
     connections.
 
@@ -659,7 +659,7 @@ Yes, there are two ways to call others with Skype for Business:
  
 
 A **Skype for Business call** is made from your computer to someone
-els&rsquo;s computer who is also using Skype for Business (computer audio).
+else&rsquo;s computer who is also using Skype for Business (computer audio).
 
 -   A Skype for Business call placed to a contact rings all their
     devices that are enabled for Skype for Business, such as desktop and

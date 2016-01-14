@@ -25,7 +25,7 @@ Videos](http://www.rackspace.co.uk/cloud-office/email-demo-videos).
 4.  [Add an alias](#alias)
 5.  [Set up autodiscover records](#auto)
 6.  [Migrating your existing mail account](#migrate)
-7.  [Set up payments]&ldquo;#pa&rdquo;)
+7.  [Set up payments](&ldquo;#pay&rdquo;)
 8.  [View and download invoices](#invo)
 9.  [Downgrade or cancel services](#down)
 10. [Mail terms, conditions, and acceptable use policy](#tocaus)
@@ -194,17 +194,17 @@ Migrating your existing mail account
 You can migrate your email data to your Rackspace mail account in the
 following ways:
 
--   **Do it yourself*&mdash;If you are currently using a POP mailbox, this is
+-   **Do it yourself**&mdash;If you are currently using a POP mailbox, this is
     your only option. If you are not certain or have any questions,
     contact our Support team at 0800 954 1007 or 020 8734 4029. You can
     also create a support ticket in the MyRackspace portal.\
     \
--   **Sel&ndash;service tool*&mdash;Run your migration at any time of the day or
+-   **Self&ndash;service tool**&mdash;Run your migration at any time of the day or
     night with our easy-to-use version of MigrationWiz. To start this
     process, create a support ticket in the MyRackspace portal. For more
     information, see Migrate your email by using the Self-Service tool.\
     \
--   **Assisted migration&mdash;**This option is for companies that need help
+-   **Assisted migrations&mdash;**This option is for companies that need help
     with consulting, planning, and scheduling a migration project.
     Contact our Assisted Migrations team by creating a support ticket in
     the MyRackspace portal. They will provide you with all the necessary

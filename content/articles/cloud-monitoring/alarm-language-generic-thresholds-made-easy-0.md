@@ -54,13 +54,13 @@ Key Takeaways
 -   Reduce false alerts on network hiccups.
 -   Monitor your website from up to [5 different
     locations.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
-    Set the policy yo&rsquo;d like to execute on mixed results.
+    Set the policy you&rsquo;d like to execute on mixed results.
 -   Send an alert to different [notification addresses depending on
     severity](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html).
 -   Supports dual stacks, both IPv4 and IPv6.
 -   Our [flexible alerting
     language](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html)
-    puts you in control, do&rsquo;t bother with an awkward JSON API for
+    puts you in control, don&rsquo;t bother with an awkward JSON API for
     defining thresholds.
 
  

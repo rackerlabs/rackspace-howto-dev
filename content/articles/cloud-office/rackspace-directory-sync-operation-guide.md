@@ -26,7 +26,7 @@ security group. Nested groups are seen by Directory Sync to create a
 distribution group and not create mailboxes for users in the nested
 group.
 
-1.  Set the Active Directory use&rsquo;s email address property (`mail`
+1.  Set the Active Directory user&rsquo;s email address property (`mail`
     attribute) to the email address.
 2.  Add the new user to the email security group.
 
@@ -45,7 +45,7 @@ security group. Nested groups are seen by Directory Sync to create a
 distribution group and not create mailboxes for users in the nested
 group.
 
-1.  Ensure that the Active Directory use&rsquo;s email address property
+1.  Ensure that the Active Directory user&rsquo;s email address property
     (`mail`{style="line-height: 20.8px;"} attribute) matches the email
     address.
 2.  Add the User object to the email security group.
@@ -58,7 +58,7 @@ Remove a user mailbox
 ---------------------
 
 1.  Remove the user from the email security group.\
-     **Note**: Directory Sync disables the use&rsquo;s mailbox.
+     **Note**: Directory Sync disables the user&rsquo;s mailbox.
 2.  Go to the administration Control Panel.
 3.  Confirm that the mailbox is disabled.
 4.  Delete the mailbox.
@@ -73,7 +73,7 @@ Create a distribution list
     existing group). This Active Directory group can be either a
     security group or a distribution list.
 2.  Set the group email address property
-    (`mail`{style="line-height: 20.8px;"}attribute).
+    (`mail`{style="line-height: 20.8px;"} attribute).
     -   For new distribution lists, provide an email address before
         subscribing to the Hosted Exchange security group.
     -   For existing distribution lists, add an email address if it

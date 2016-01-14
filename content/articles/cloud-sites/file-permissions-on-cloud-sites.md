@@ -29,8 +29,8 @@ other.
     inherits the same group membership as the default group of the
     creator.
 -   Other, abbreviated as *O*, is everyone else and is often referred to
-    as&lsquo;worl&rsquo;, because i&rsquo;s the rest of the world. User, group, and
-    other are collectively referred to as&lsquo;UG&rsquo;.
+    as &lsquo;world&rsquo;, because it&rsquo;s the rest of the world. User, group, and
+    other are collectively referred to as &lsquo;UGO&rsquo;.
 
 ### What can they access?
 
@@ -70,7 +70,7 @@ The three access levels are assigned to a single to bit in the following
 order, from high to low: read write execute. Three bits (binary digits)
 can represent any eight values from 0-7. A range from 0-7 is called
 octal, as opposed to dealing with 0-9, which is called decimal. Read is
-in the &rsquo;s column. Write is in the &rsquo;s column. Execute is in the &rsquo;s
+in the 4&rsquo;s column. Write is in the 2&rsquo;s column. Execute is in the 1&rsquo;s
 column. The following table provides a reference:
 
 Octal
@@ -153,7 +153,7 @@ for it. The following graphic provides an illustration:
 ![](/knowledge_center/sites/default/files/field/image/fileperms3.png)
 
 A single octal digit represents the RWX ON and OFF values. Three of
-these octal values represent all three of the&lsquo;wh&rsquo;. So, the number 777,
+these octal values represent all three of the &lsquo;who&rsquo;. So, the number 777,
 is not literally seven hundred-seventy-seven, it is actually 7, 7, and
 7, where each octal digit indicates that all three bits have been set ON
 (4+2+1 = 7), thus giving full permissions to User, Group and Other.

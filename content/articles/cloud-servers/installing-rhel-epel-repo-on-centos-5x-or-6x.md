@@ -25,7 +25,7 @@ official repositories, IUS and Remi provide newer versions of software
 
 **Note:** Exercise caution when using any third-party repository. If you
 have a managed support agreement, contact your provider before following
-the instructions in this article to ensure that you do&rsquo;t create an
+the instructions in this article to ensure that you don&rsquo;t create an
 unsupported server configuration.
 
 Install the EPEL repository

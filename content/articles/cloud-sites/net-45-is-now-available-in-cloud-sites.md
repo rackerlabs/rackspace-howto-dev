@@ -55,14 +55,14 @@ cluster.  Repeat this process for each site that you host that is
 running .NET 4.0.
 
 **Please Note**: changing the default technology from .NET 4.0 to .NET
-4.5 will change the sit&rsquo;s IP address. If you are managing your DNS with
+4.5 will change the site&rsquo;s IP address. If you are managing your DNS with
 Rackspace Cloud (your site is pointing to our nameservers:
 dns1.stabletransit.com or dns2.stabletransit.com) your IP address will
 be automatically updated. If you are managing your own DNS (your site is
 not pointing to our nameservers) you will need to update your DNS to
 point the site to the new IP address. 
 
-Tha&rsquo;s it, you are now migrated to .NET 4.5 !
+That&rsquo;s it, you are now migrated to .NET 4.5 !
 
  
 

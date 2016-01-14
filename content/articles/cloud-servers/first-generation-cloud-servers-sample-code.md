@@ -217,7 +217,7 @@ body_format: tinymce
 This information is intended for software developers who want to develop
 applications by using the first generation Rackspace Cloud Servers
 application programming interface (API). The information is for
-informational purposes only and is provided&ldquo;as is&rdquo;
+informational purposes only and is provided &ldquo;as is.&rdquo;
 
 Rackspace makes no representations or warranties of any kind, express or
 implied, as to the accuracy or completeness of the contents of this

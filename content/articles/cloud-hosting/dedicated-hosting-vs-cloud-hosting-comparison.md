@@ -10,7 +10,7 @@ product: Cloud Hosting
 body_format: full_html
 ---
 
-Rackspac&reg; offers both dedicated and cloud hosting solutions. Deciding
+Rackspace&reg; offers both dedicated and cloud hosting solutions. Deciding
 which is best for your particular scenario can be difficult. Following
 are important features to consider when choosing a hosting solution for
 your business.

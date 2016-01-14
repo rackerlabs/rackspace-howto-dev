@@ -25,6 +25,7 @@ Acess](http://www.rackspace.com/knowledge_center/article/outlook-web-access-owa)
 or setup your account using IMAP: [Help tool for hosted email and Skype
 for
 Business](http://www.rackspace.com/knowledge_center/article/help-tool-for-hosted-email-and-skype-for-business)*
+
 1. Open up Entourage and select **Tools**, **Accounts**, **New** and
 then **Exchange**.
 
@@ -33,6 +34,7 @@ Manually and select New and then Exchange*.
 
 ![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange.png) 
  ![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange2.png) 
+
 2. In the pop up window, enter in the following information into the
 fields below: 
 
@@ -53,6 +55,7 @@ fields below:
     you're setting up. 
 
  ![](http://c8607259.r59.cf2.rackcdn.com/Exchange2010Entourage.png) 
+
 3. Next, you'll click the **Advanced** tab and in the **Exchange
 Server** box, enter in **connect.emailsrvr.com** and then select **OK**.
 Your account will then connect and mail data will begin to populate into

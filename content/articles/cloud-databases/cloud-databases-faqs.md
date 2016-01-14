@@ -51,7 +51,7 @@ access to your data.
 ### What is Cloud Databases?
 
 Cloud Databases is a stand-alone, API-based, relational database service
-built on OpenStac&reg; cloud that allows Rackspace customers to easily
+built on OpenStack&reg; cloud that allows Rackspace customers to easily
 provision and manage multiple MySQL database instances. Instances are
 provisioned in a single-tenant, container-based environment per account
 and are accessible via the Rackspace internal ServiceNet network. Each

@@ -20,12 +20,12 @@ perform the following steps:
     Or, to change domains at any time, click the **change domain** link.
 4.  Click **Email Everyone**.
 5.  Enter the following information:
-    -   **Sende&rsquo;s Name*&mdash;Enter the first and last name of the person
+    -   **Sender&rsquo;s Name**&mdash;Enter the first and last name of the person
         sending the email.
-    -   **Sende&rsquo;s Email Address*&mdash;Enter the email address of the person
+    -   **Sender&rsquo;s Email Address**&mdash;Enter the email address of the person
         sending the email.
-    -   **Subject*&mdash;Enter a subject line for the email.
-    -   **Message Body*&mdash;Enter email message.
+    -   **Subject**&mdash;Enter a subject line for the email.
+    -   **Message Body**&mdash;Enter email message.
 
 6.  Click **Send**.
 

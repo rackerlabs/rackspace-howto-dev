@@ -16,7 +16,7 @@ Introduction
 Follow this quick-start guide to spin up a Brocade Vyatta vRouter
 (formerly known as Vyatta network appliance). Keep in mind that the
 username for logging into the appliance once the appliance is up and
-running is&ldquo;vyatt&rdquo; and NOT&ldquo;root&rdquo; The minimum server size that you
+running is &ldquo;vyatta&rdquo; and NOT &ldquo;root.&rdquo; The minimum server size that you
 will be able to choose is one with a 1GB RAM. 
 
 The configuration basics for this appliance can be found in Chapter 4 of
@@ -26,20 +26,26 @@ the quick start guide at
 
 Launching the appliance
 -----------------------
-1. Click on the&ldquo;Create Serve&rdquo; button. The Vyatta image should be
-listed in the list of images. Look for an image called&ldquo;Vyatta Network
-OS 6.5R&rdquo; and select it.
+
+1. Click on the &ldquo;Create Server&rdquo; button. The Vyatta image should be
+listed in the list of images. Look for an image called &ldquo;Vyatta Network
+OS 6.5R2&rdquo; and select it.
+
 2. Choose the server size (The minimum size for the server is 1GB).
+
 3. If you have cloud networks enabled, you can create a new network or
 choose from an existing network to attach to a server (This is in
 addition to PublicNet and ServiceNet).  Do not disable PublicNet or
 ServiceNet.
-4. Click on&ldquo;Create Server&rdquo; At this point you should see the
+
+4. Click on &ldquo;Create Server.&rdquo; At this point you should see the
 root-password for the appliance. Make note of this password. **Keep in
-mind that you will be able to&lsquo;ss&rsquo; into the appliance using a username&ldquo;vyatt&rdquo; and NOT&ldquo;root&rdquo;**
+mind that you will be able to &lsquo;ssh&rsquo; into the appliance using a username
+&ldquo;vyatta&rdquo; and NOT &ldquo;root.&rdquo;**
+
 5. Configure the appliance. The appliance can only be configured via
-the command-line-interface. You must&lsquo;ss&rsquo; into the device on the Public
-interface with username&ldquo;vyatt&rdquo; and the password from the previous step
+the command-line-interface. You must &lsquo;ssh&rsquo; into the device on the Public
+interface with username &ldquo;vyatta&rdquo; and the password from the previous step
 (or anything you changed it to).
 
     $ ssh vyatta@X.X.X.X
@@ -106,7 +112,7 @@ following:
     }
 
 \
- You can go into configuration mode by typing the command&lsquo;configur&rsquo;
+ You can go into configuration mode by typing the command &lsquo;configure&rsquo;
 
     $ configure
     [edit]

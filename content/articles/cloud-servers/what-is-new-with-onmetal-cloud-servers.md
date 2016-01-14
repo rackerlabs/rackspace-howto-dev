@@ -28,8 +28,8 @@ thinking about moving from colo to cloud, or vice versa:
     much simpler and more powerful than VMs.
 
 -   They are built on OpenStack software and Open Compute hardware. The
-    API for OnMetal is the OpenStack Nova API. I&rsquo;s familiar to users of
-    any OpenStack public cloud. Users do&rsquo;t have to worry about vendor
+    API for OnMetal is the OpenStack Nova API. It&rsquo;s familiar to users of
+    any OpenStack public cloud. Users don&rsquo;t have to worry about vendor
     lock-in.
 
 -   OnMetal servers are customized for specific workloads.
@@ -44,16 +44,16 @@ Disk structure
 OnMetal combines the simplicity of consistent performance and the
 economy of colocation with the elasticity of the cloud. Running your
 high-traffic production environment on consistently performing bare
-metal machines means less over-engineering, more simplicity and&ndash;
-ultimately&ndash; lower costs. Because OnMetal is a part of the Rackspace
-Managed Cloud portfolio, you wo&rsquo;t spend as much managing your servers.
+metal machines means less over-engineering, more simplicity and &ndash;
+ultimately &ndash; lower costs. Because OnMetal is a part of the Rackspace
+Managed Cloud portfolio, you won&rsquo;t spend as much managing your servers.
 
 The chassis is all solid-state. We removed cooling fans from the boxes
 and do not using any spinning media. This reduces heat and vibration,
 and helps increase MTBF. In order to deliver the economy of colocation
 that customers require, we optimized the configuration based on specific
-workload requirements like&ldquo;database transactions per second per dolla&rdquo;
-or&ldquo;total RAM per dollar per hour&rdquo; This led to the following
+workload requirements like &ldquo;database transactions per second per dollar&rdquo;
+or &ldquo;total RAM per dollar per hour.&rdquo; This led to the following
 configurations:
 
 Instance name
@@ -98,7 +98,7 @@ server flavors have a 32 GB system disk. The OnMetal High I/O flavor
 also has two 1.6 TB PCIe flash drives, which are mounted directly into
 **/dev** as regular disks. Rackspace recommends using Linux built-in
 software RAID. OnMetal Compute and Memory flavors only use the 32 GB
-system disk and are considered&ldquo;diskless&rdquo; with no data disks. Cloud
+system disk and are considered &ldquo;diskless,&rdquo; with no data disks. Cloud
 Block Storage can be attached to any OnMetal server instance (see
 [Attach a Cloud Block Storage volume to an OnMetal
 server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)

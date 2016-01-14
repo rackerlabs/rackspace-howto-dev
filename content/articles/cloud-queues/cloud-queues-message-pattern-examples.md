@@ -79,7 +79,7 @@ more consumers or subscribers of an event, as follows:\
  ***Step 2 in the process can have the following variations::***\
  \
  2a. The subscriber has already listed messages in a previous round. The
-subscriber submits a&ldquo;nex&rdquo; marker to tell the server what messages it
+subscriber submits a &ldquo;next&rdquo; marker to tell the server what messages it
 has already seen, so that the server returns only new\
  messages to the subscriber.
 
@@ -90,7 +90,7 @@ messages, the subscriber should poll more often, or both.
 
 \
  2c. All messages have been listed. The subscriber gets an empty
-response, and continues to periodically list messages using the queu&rsquo;s
+response, and continues to periodically list messages using the queue&rsquo;s
 last known marker, until it gets a non-empty response.
 
 \
@@ -102,7 +102,7 @@ period set by the publisher.\
 
 ### Point-to-point
 
-In this pattern, each agent gets its own queue. A&ldquo;queu&rdquo; resource is
+In this pattern, each agent gets its own queue. A &ldquo;queue&rdquo; resource is
 extremely lightweight in Cloud Queues, so users can create hundreds of
 thousands of them without problem.\
  \
@@ -118,7 +118,7 @@ message.\
  ***A couple steps in the process can have the following variations***:\
  \
  2a. The agent could claim messages, but it is slower than simply
-listing messages, and claiming is&rsquo;t necessary when only one client will
+listing messages, and claiming isn&rsquo;t necessary when only one client will
 ever read from the queue.
 
 \
@@ -138,7 +138,8 @@ from its request.
  Auditing
 
 In auditing, users add an additional observer that is constantly listing
-and recording messages in a queue. This observer could be a CLI&ldquo;tai&rdquo;-like script, or a passive server process logging everything as it
+and recording messages in a queue. This observer could be a CLI
+&ldquo;tail&rdquo;-like script, or a passive server process logging everything as it
 comes through.\
  \
  Auditing helps in diagnosing problems or bugs in the message producers.

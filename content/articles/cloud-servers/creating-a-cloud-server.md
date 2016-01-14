@@ -11,7 +11,7 @@ body_format: tinymce
 ---
 
 This Getting Started Guide covers everything you'll need to know as a
-new Rackspace custome&mdash;including how to manage your account, create
+new Rackspace customer&mdash;including how to manage your account, create
 servers, set up security, and schedule server imaging.\
  Use the following steps to set up a Cloud Server through the Cloud
 Control Panel interface.
@@ -55,7 +55,7 @@ Control Panel interface.
         step.
 
 8.  To add a new public key, click **Manage SSH Keys** and:\
-   
+     
     -   On the SSH Keys page, click **Add Public Key**
     -   If you are adding a public key, give your new public key a name
     -   In the Region field, confirm or select the region in which your
@@ -74,7 +74,7 @@ Control Panel interface.
 
     \
 
-    ****![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.30.59%20AM.png)\
+    ******![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-14%20at%209.30.59%20AM.png)\
       
 9.  Confirm that your key is listed in the SSH Key list for your new
     server.\

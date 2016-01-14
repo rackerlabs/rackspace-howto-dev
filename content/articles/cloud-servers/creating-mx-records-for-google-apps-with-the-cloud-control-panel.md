@@ -20,7 +20,7 @@ If you haven't already, be sure you verify your domain with Google Apps
 through their administrative interface.
 
 Once Google has successfully verified the domain the next step will be
-to add Googl&rsquo;s MX records to the domain's information in the DNS
+to add Google&rsquo;s MX records to the domain's information in the DNS
 section of the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
 ### MX
@@ -37,7 +37,7 @@ If you need help finding the screen to add a record to a domain we have
 an article with more details for our [Cloud Control
 Panel](/knowledge_center/article/creating-a-dns-records-for-cloud-servers-next-generation-control-panel).
 
-Once we're on the&ldquo;Add DNS Recor&rdquo; screen we should be able to fill in
+Once we're on the &ldquo;Add DNS Record&rdquo; screen we should be able to fill in
 the necessary information for each record.  Let's have a look at the
 interface in the control panel:
 
@@ -79,5 +79,5 @@ hosting provider or run your own email environment.
 
 This process is relatively simple to follow and can take up to around 10
 minutes to complete, making it an easy way to get email up and running
-when yo&rsquo;re in a hurry.
+when you&rsquo;re in a hurry.
 

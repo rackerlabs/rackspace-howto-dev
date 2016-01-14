@@ -68,16 +68,16 @@ option button.\
 11. Click the **Next** button.\
 \
 12. Click the **I can access my email account using a Web Browser
-(Outloo&reg; Web Access)** option button.\
+(Outlook&reg; Web Access)** option button.\
 \
 13. Enter the following information in the fields provided: \
  
 
--   Outlook Web Access UR&mdash;From the **Setting Up Entourage 2008**
+-   Outlook Web Access URL&mdash;From the **Setting Up Entourage 2008**
     window, enter the **EWS Server** without "/ews/exchange.asmx."\
     \
     \
--   User nam&mdash;Enter the **Domain Name** followed by a backslash and the
+-   User name&mdash;Enter the **Domain Name** followed by a backslash and the
     **Account ID** (e.g., mex03b.mlsrvr.com\\myname\_mydomain.com).\
     \
     \
@@ -85,17 +85,18 @@ option button.\
     \
     \
     *
--   Passwor&mdash;Enter the password associated with your email account.\
+-   Password&mdash;Enter the password associated with your email account.\
     \
     \
--   Email Addres&mdash;Enter your entire email address, using all lowercase
+-   Email Address&mdash;Enter your entire email address, using all lowercase
     letters (e.g., myname@mydomain.com).\
     \
     \
--   Mailbox nam&mdash;Enter your entire email address, using all lowercase
+-   Mailbox name&mdash;Enter your entire email address, using all lowercase
     letters (e.g., myname@mydomain.com).
 
  
+
 14. Click the **Next** button.\
 \
 Once complete, you will see your email address on the main screen. You

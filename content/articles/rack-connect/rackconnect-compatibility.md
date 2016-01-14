@@ -76,7 +76,7 @@ further details and caveats.
 |                    |                    | relational         | duct-page/cloud-da |
 |                    |                    | database service   | tabases)           |
 |                    |                    | built on           |                    |
-|                    |                    | OpenStac&reg; cloud   |                    |
+|                    |                    | OpenStack&reg; cloud   |                    |
 |                    |                    | that allows        |                    |
 |                    |                    | Rackspace          |                    |
 |                    |                    | customers to       |                    |
@@ -88,7 +88,7 @@ further details and caveats.
 |                    |                    |  \                 |                    |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
-| Cloud Files        | Yes                | Cloud File&trade; is an | [Cloud Files       |
+| Cloud Files        | Yes                | Cloud Files&trade; is an | [Cloud Files       |
 |                    |                    | affordable,        | support](http://ww |
 |                    |                    | redundant,         | w.rackspace.com/kn |
 |                    |                    | scalable, and      | owledge_center/pro |
@@ -142,7 +142,7 @@ further details and caveats.
 |                    |                    | allow you to       |                    |
 |                    |                    | quickly load       |                    |
 |                    |                    | balance multiple   |                    |
-|                    |                    | Cloud Server&trade; for |                    |
+|                    |                    | Cloud Servers&trade; for |                    |
 |                    |                    | optimal resource   |                    |
 |                    |                    | utilization.\      |                    |
 |                    |                    |  \                 |                    |
@@ -174,8 +174,8 @@ further details and caveats.
 |                    |                    | ith-cloud-networks |                    |
 |                    |                    | -faq)              |                    |
 +--------------------+--------------------+--------------------+--------------------+
-| Managed Operation  | Yes                | Rackspac&reg; Cloud   | [Cloud Servers     |
-|                    |                    | Server&trade; with      | support](http://ww |
+| Managed Operation  | Yes                | Rackspace&reg; Cloud   | [Cloud Servers     |
+|                    |                    | Servers&trade; with      | support](http://ww |
 |                    |                    | Managed Operations | w.rackspace.com/kn |
 |                    |                    | extends our        | owledge_center/pro |
 |                    |                    | world-class        | duct-page/cloud-se |
@@ -195,7 +195,7 @@ further details and caveats.
 |                    |                    | infrastructure     |                    |
 |                    |                    | layer support.     |                    |
 +--------------------+--------------------+--------------------+--------------------+
-| OnMetal Cloud      | Yes                | OnMeta&trade; Cloud     | [Using OnMetal     |
+| OnMetal Cloud      | Yes                | OnMetal&trade; Cloud     | [Using OnMetal     |
 | Servers            |                    | Servers combine    | Cloud Servers with |
 |                    |                    | the consistent     | RackConnect](http: |
 |                    |                    | performance and    | //www.rackspace.co |

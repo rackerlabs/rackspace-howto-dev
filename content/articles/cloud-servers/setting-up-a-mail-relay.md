@@ -55,6 +55,7 @@ For Ubuntu:
 
     aptitude update
     apt-get install postfix libsasl2-modules
+
 2. Configure Postfix
 
 Add the following to /etc/postfix/main.cf:

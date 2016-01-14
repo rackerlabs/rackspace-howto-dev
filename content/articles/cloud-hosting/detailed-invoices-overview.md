@@ -52,7 +52,7 @@ To expand the list, click the arrow next to the service.\
          
   ![](/knowledge_center/sites/default/files/field/image/detailedinvoiceexpand.png)
 
-When a servic&rsquo;s list is expanded, each item contains at least two
+When a service&rsquo;s list is expanded, each item contains at least two
 lines. The first line indicates the total charges for the device. Any
 line under the first indicates an itemized price based on how the device
 was used.
@@ -64,7 +64,7 @@ under it.\
           
  ![](/knowledge_center/sites/default/files/field/image/linuxtest.png) 
 
-If you want details about how a devic&rsquo;s use charge was calculated,
+If you want details about how a device&rsquo;s use charge was calculated,
 place your cursor over the charge. A pop-up box appears next to the
 cursor with the equation used to calculate the charge.\
           

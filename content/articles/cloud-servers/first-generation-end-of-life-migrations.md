@@ -12,7 +12,7 @@ body_format: tinymce
 
 On January 5, 2015, we announced plans to retire our First Generation
 infrastructure and migrate all First Generation instances to our Next
-Generation environment, backed by OpenStack&reg;^. We are making every
+Generation environment, backed by OpenStack^&reg;^. We are making every
 effort to ensure that this transition is as painless and seamless as
 possible. This article is intended to answer any questions that you
 might have about the process.
@@ -113,9 +113,9 @@ customers, this means that no action need be taken on your part. To
 ensure a smooth transition, however, we have created articles with
 recommendations for your OS.
 
--   [Preparing for Migration&ndash;
+-   [Preparing for Migration &ndash;
     Linux](https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-linux-server)
--   [Preparing for Migration&ndash;
+-   [Preparing for Migration &ndash;
     Windows](https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-windows-server)
 
 Migrating prior to your designated window

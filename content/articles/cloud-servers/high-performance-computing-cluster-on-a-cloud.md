@@ -34,7 +34,7 @@ the dependency on physical infrastructure.
 To achieve high performance clustering in the Cloud, we will use Open
 MPI, which is a Message Passing Interface project. It provides parallel
 processing, thread safety and concurrency, dynamic process spawning, and
-network and fault tolerance. This library is used by the worl&rsquo;s fastest
+network and fault tolerance. This library is used by the world&rsquo;s fastest
 super computers and is instrumental in powering many petaflops. To find
 out more about Open MPI library, visit their site:
 [http://www.open-mpi.org/](http://www.open-mpi.org/).
@@ -113,7 +113,7 @@ it and log in using the IP address and password you recorded earlier.
 After logging in, execute the following commands:
 
     apt-get update
-    apt-get install build-essential&ndash;y
+    apt-get install build-essential &ndash;y
     apt-get install openmpi-bin openmpi-checkpoint openmpi-common openmpi-doc libopenmpi-dev -y
 
 #### 3. Enable Clustering
@@ -235,7 +235,7 @@ the following exception; when prompted for image, click the Saved tab.
 Again, you will need to provide a meaningful name. Additionally, record
 the password and IP address. 
 
-Le&rsquo;s say that the IP of your new server is 10.20.30.40, and the
+Let&rsquo;s say that the IP of your new server is 10.20.30.40, and the
 IP/hostname of your first server is \<Your Server IP\>.  To add the new
 node to the cluster, do the following:
 
@@ -255,7 +255,7 @@ command:
 
     mpirun -v -np 2 --hostfile ~/mpi_hosts /root/samples/connectivity
 
-If you do&rsquo;t get any errors, you have just successfully created and
+If you don&rsquo;t get any errors, you have just successfully created and
 tested your own tiny cloud cluster! To increase the size of the cluster,
 add two more nodes using the same procedure. 
 
@@ -266,7 +266,7 @@ following command:
 
 #### 6. Install and Run a Sample Open MPI enabled Application
 
-Now that we have an Open MPI cluster, le&rsquo;s see how it performs. We will
+Now that we have an Open MPI cluster, let&rsquo;s see how it performs. We will
 use a simple ray tracing application that can run on a single node or on
 an Open MPI cluster and compare the performance. 
 
@@ -312,7 +312,7 @@ You should see the following output:
         Image I/O Time:     0.0182 seconds
 
 Our cluster consisted of four nodes and one CPU each, therefore, the
-performance improvement was almost four times greater. Even if you do&rsquo;t
+performance improvement was almost four times greater. Even if you don&rsquo;t
 have multiple nodes and run your application on one node, but tell
 OpenMPI to use both CPUs, you will still have significant improvements.
  

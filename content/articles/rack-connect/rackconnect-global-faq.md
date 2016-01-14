@@ -70,9 +70,12 @@ date.
 ### What are the connectivity options for users to establish a connection via RCGlobal ? {#RackConnectGlobal-WhataretheconnectivityoptionsforcustomersestablishaconnectionviaRCGlobal?}
 
 Users can connect via three means:
+
 (a) Dedicated cross-connect if they are colocated at the Equinix
 facilities in the US , i,e, DFW, ORD, IAD
+
 (b) They can be a buyer on the Equinix cloud exchange
+
 (c) They can be a Microsoft Azure customer using ExpressRoute (this is
 a Microsoft Equivalent of RCGlobal)
 

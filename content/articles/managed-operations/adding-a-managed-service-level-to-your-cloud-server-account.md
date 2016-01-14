@@ -133,7 +133,7 @@ solutions.
 
 ### Will Rackspace troubleshoot programming code for customers?
 
-N&mdash;your Rackspace account team will not troubleshoot your program code.
+No&mdash;your Rackspace account team will not troubleshoot your program code.
 
 ### What backups are performed?
 

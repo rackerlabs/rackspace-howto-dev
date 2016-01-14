@@ -90,12 +90,12 @@ roles can be changed only per product.
 Assign Account roles to users who manage your Rackspace customer
 account. 
 
--   **Billing:admin&ndash;** The *account* role of billing admin has
+-   **Billing:admin &ndash;** The *account* role of billing admin has
     permissions to create, read, update, and delete given billing and
     payment resources within the designated product where access is
     granted.
 
--   **Billing:observer&ndash;** The *account* role billing observer has
+-   **Billing:observer &ndash;** The *account* role billing observer has
     permission to read given billing and payment resources within the
     designated product where access is granted. This role is read-only.
 
@@ -136,20 +136,20 @@ Only the account owner role can perform the following actions:
 The following types of contacts are shown in the Control Panel. Contact
 types are similar to tags that can assist with user management. 
 
--   **Primary&ndash;** This contact type is automatically assigned to the
+-   **Primary &ndash;** This contact type is automatically assigned to the
     owner of the account. Only one Primary contact is allowed per
     account.
 -   **Billing -** This contact type is automatically assigned to the
     account. Only one Billing contact is allowed per account. It is not
     necessary to assign a username to the Billing contact. This contact
     holds the address that Rackspace uses as the billing address.
--   **Administrative&ndash;** This contact type can be assigned to users that
+-   **Administrative &ndash;** This contact type can be assigned to users that
     primarily perform administrative duties such as billing and
     payments. Administrative contacts do not receive technical alerts
     from our automated systems. No specific account implications come
     with this role. For example, if administrative users change their
     address, the change does not affect the billing address. 
--   **Technical&ndash;** This contact type can be assigned to users that
+-   **Technical &ndash;** This contact type can be assigned to users that
     primarily perform technical tasks. These users receive monitoring
     alerts by default unless the notification plan is changed. 
 
@@ -163,7 +163,7 @@ Implement RBAC in the following situations:
     cloud resources, the account owner would like to restrict access to
     the accounts to only a few people.
 -   In an effort to synchronize cloud product access to the functions of
-    an employe&rsquo;s job, the account owner would like to grant access to
+    an employee&rsquo;s job, the account owner would like to grant access to
     employees based on the nature of their position.
 -   In an effort to help prevent unauthorized access to cloud products
     through the sharing of admin credentials, the account owner would

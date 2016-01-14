@@ -33,7 +33,7 @@ Get quick answers to common questions about Rackspace billing.
         it?](#why-am-i-still-being-billed-i-never-used-the-services.)
     -   [How do I delete or cancel my
         services?](#i-am-still-getting-billed.-how-do-i-delete-or-cancel-my-services)
-    -   [I do&rsquo;t agree with my bill.  How can I dispute a
+    -   [I don&rsquo;t agree with my bill.  How can I dispute a
         charge?](#i-dont-agree-with-my-bill.-how-can-i-get-a-credit)
 
 * * * * *
@@ -68,7 +68,7 @@ Calculator](http://www.rackspace.com/calculator/) to estimate pricing.
 You can prepay a commitment pricing contract for your account if you
 meet the minimum requirements for our Commitment Pricing Program.  Any
 usage beyond the minimum commitment amount will be invoiced at the
-utility rate on your monthly date of you accoun&rsquo;s anniversary.  If your
+utility rate on your monthly date of you account&rsquo;s anniversary.  If your
 account was created on the 25th of the month, you will be billed monthly
 on the 25th. You can find more information about the Commitment Pricing
 Program on the [Cloud Servers Discount
@@ -106,6 +106,7 @@ can perform the following steps:
 2.  Click**Account: yourUserName** in the upper-right corner of the
     page.
 3.  From the menu, select **Usage Overview**.
+
 The Current Usage page updates daily as usage is accumulated.
 
 ^[back\\ to\\ top](#top)^
@@ -148,7 +149,7 @@ show what you are paying for when you partner with us.
 -   The raw infrastructure price can be contrasted with what other
     hosting companies charge for a cloud server.  It covers the
     infrastructure of the hosted server.
--   The managed service price applies to the ***Fanatical Support**&reg;
+-   The managed service price applies to the ***Fanatical Support***&reg;
     that we offer on top of our infrastructure. This *Service Level
     Rate* varies based on the service level that you choose for your
     cloud account.
@@ -182,7 +183,7 @@ or Rackspace support for Azure, create a ticket for our billing team.
 
 Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and
 review all services to ensure that all your data is backed up outside of
-Rackspac&rsquo;s environment. You can then submit a cancellation request by
+Rackspace&rsquo;s environment. You can then submit a cancellation request by
 following these steps:
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
@@ -208,7 +209,7 @@ the need to register a new account.
 
 ^[back\\ to\\ top](#top)^
 
-### I do&rsquo;t agree with my bill.  How can I dispute a charge? {#i-dont-agree-with-my-bill.-how-can-i-get-a-credit}
+### I don&rsquo;t agree with my bill.  How can I dispute a charge? {#i-dont-agree-with-my-bill.-how-can-i-get-a-credit}
 
 You can create a ticket via the [Cloud Control
 Panel](https://mycloud.rackspace.com/) with the details of your dispute

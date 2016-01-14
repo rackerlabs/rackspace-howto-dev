@@ -52,8 +52,8 @@ Setting up the Sites
 1.  Create your new domain from the Cloud Sites Control Panel with
     minimum requirements being PHP 4, and MySQL 4 or 5. 
 2.  Once the domain has finished creating, create your database. To do
-    this, click on the&lsquo;Feature&rsquo; tab from the top menu. Click&lsquo;Ad&rsquo;,
-    and then select&lsquo;MySQL 4 or &rsquo;. Type in whatever name you would like
+    this, click on the &lsquo;Features&rsquo; tab from the top menu. Click &lsquo;Add&rsquo;,
+    and then select &lsquo;MySQL 4 or 5&rsquo;. Type in whatever name you would like
     to call the DB, type in a username and password of your choice.
     Follow prompts to finish creation. (You may want to write down the
     information provided, the hostname, database name, database username
@@ -71,7 +71,7 @@ Prepare your data
     and use the information to connect provided here: [Getting Started
     With Cloud Sites, FTP/SSHFS/FTP
     Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients)
-    . Your best bet will be to upload everything inside the&lsquo;galler&rsquo;
+    . Your best bet will be to upload everything inside the &lsquo;gallery&rsquo;
     folder contained within the .zip file you downloaded to your
     web/content folder.
 3.  Once the files have finished uploading, you are ready to get started

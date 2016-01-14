@@ -17,10 +17,10 @@ Requirements](https://www.rackspace.com/knowledge_center/article/rackconnect-v20
 
 **Applies to:** RackConnect v3.0 and RackConnect v2.0
 
-RackConnec&reg; is compatible with our dedicated Managed, dedicated
+RackConnect&reg; is compatible with our dedicated Managed, dedicated
 Intensive, cloud Managed Operations, and cloud Managed Infrastructure
-service level offering&mdash;giving you the ability to select the level of
-*Fanatical Support&reg; you need to properly manage your hybrid
+service level offerings&mdash;giving you the ability to select the level of
+*Fanatical Support*&reg; you need to properly manage your hybrid
 environment. Your dedicated and cloud support teams are your first
 points of contact for any RackConnect issues that you encounter.
 

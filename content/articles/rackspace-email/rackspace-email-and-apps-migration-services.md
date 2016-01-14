@@ -23,7 +23,7 @@ you have any questions or concerns.
 ### **External migration services**
 
 Are you a new customer and require email data to be migrated from
-another provider? Well yo&rsquo;re in luck! We've partnered with a 3^rd^
+another provider? Well you&rsquo;re in luck! We've partnered with a 3^rd^
 party company called MigrationWiz in order to provide 2 migration
 support options to make your transition as easy as possible.
 

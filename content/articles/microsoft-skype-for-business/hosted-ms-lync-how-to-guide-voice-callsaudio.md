@@ -21,7 +21,7 @@ Set up your audio device {#RackerLyncHowtoGuide-Checkyouraudiodevice}
 ------------------------
 
 Before you use Skype for Business to make or join an audio call, set up
-your audio device and check the quality. You can use your compute&rsquo;s
+your audio device and check the quality. You can use your computer&rsquo;s
 microphone and speakers, or you can use a headset or earphones.
 
 1.  In the lower-left corner of the Skype for Business main window,

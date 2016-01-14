@@ -73,7 +73,7 @@ migration](http://www.rackspace.com/knowledge_center/article/items-migrated-duri
 Can I change from Rackspace Email to Exchange or vice versa?
 ------------------------------------------------------------
 
-Yes, this process is referred to as a&ldquo;Platform Chang&rdquo; which our
+Yes, this process is referred to as a &ldquo;Platform Change&rdquo; which our
 Internal Migration team will perform for you at no cost. You may place a
 request by contacting our support team through one of the following
 methods:

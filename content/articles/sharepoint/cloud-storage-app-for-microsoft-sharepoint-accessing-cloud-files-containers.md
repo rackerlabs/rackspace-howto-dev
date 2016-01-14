@@ -18,7 +18,7 @@ Overview](http://www.rackspace.com/knowledge_center/article/cloud-storage-app-fo
 Rackspace Cloud Files enables you to log in to your Cloud Control Panel
 and create containers inside your Cloud Files account. When you create a
 container, you must choose a Rackspace data center to host your
-container&mdash; currently available datacenters are: Dallas-Fort Worth
+container &mdash; currently available datacenters are: Dallas-Fort Worth
 (DFW), Chicago (ORD), Sydney (SYD), Northern Virginia (IAD), or Hing
 Kong (HKG). 
 

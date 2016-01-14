@@ -76,9 +76,12 @@ Install the monitoring agent by using meta packages
 
 The meta packages installation obviates the need to install the
 certificate or create a repository manually.
+
 1. Log in to the server that you want to monitor.
+
 2. Open a browser to the [Rackspace Monitoring Meta
 Packages](http://meta.packages.cloudmonitoring.rackspace.com/) page.
+
 3. Find your operating system and enter the commands provided.
 
 Configure the monitoring agent by using the agent setup program

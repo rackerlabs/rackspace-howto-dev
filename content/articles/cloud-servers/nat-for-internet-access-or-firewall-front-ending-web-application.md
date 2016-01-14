@@ -125,7 +125,7 @@ Outbound Source rule.
 In configuration mode, use the following the command:
 
     vyatta@vyatta# show nat source rule 10 
-     outboun&dash;interface eth0 
+     outbound&dash;interface eth0 
      source { 
     address 192.x.x.0/24 
      } 

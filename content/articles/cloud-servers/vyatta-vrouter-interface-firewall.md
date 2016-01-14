@@ -47,7 +47,7 @@ Configure the firewall rule base
 You need to configure the rule base that defines all the parameters of
 the firewall policy, and then you need to apply your rule base to the
 interface and the direction of the traffic. As with all other firewall
-rules, this rule base uses a&ldquo;first matc&rdquo; policy, which means that you
+rules, this rule base uses a &ldquo;first match&rdquo; policy, which means that you
 must add the most specific rules at the top of the list. The number of
 the rule dictates its position in the rule base.
 

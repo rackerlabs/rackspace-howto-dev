@@ -24,7 +24,7 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     Essentials - Creating A Cloud
     Server](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-a-cloud-server).
 3.  List the server's details by selecting **Servers \> Cloud Servers**
-    and then clicking the serve&rsquo;s name.\
+    and then clicking the server&rsquo;s name.\
       \
 
     ![](/knowledge_center/sites/default/files/field/image/servers-list-details-.png)\

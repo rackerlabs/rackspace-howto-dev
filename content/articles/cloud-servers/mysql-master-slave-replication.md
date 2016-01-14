@@ -148,7 +148,7 @@ replication.
 
          
         # mysql -u root -p
-        mysql> grant replication slave on *.* TO [replication_username]&rsquo;[private IP of db02&rsquo; identified by '[some password]';
+        mysql> grant replication slave on *.* TO [replication_username]@&rsquo;[private IP of db02]&rsquo; identified by '[some password]';
         mysql> flush privileges;
         mysql> quit
 
@@ -158,7 +158,7 @@ replication.
         bind-address = 0.0.0.0
         server-id = 1
         log-bin = mysql-bin
-        binlog-ignore-db =&ldquo;mysq&rdquo;
+        binlog-ignore-db = &ldquo;mysql&rdquo;
 
 3.  After you have finished updating the **/etc/my.cnf** file, restart
     the MySQL service.
@@ -177,7 +177,7 @@ replication.
     complete the replication configuration on db02.
 
          
-        # mysql -u root&ndash;p
+        # mysql -u root &ndash;p
         mysql> FLUSH TABLES WITH READ LOCK;
         mysql> SHOW MASTER STATUS;
          
@@ -198,7 +198,7 @@ replication.
     master (db01):
 
          
-        # mysql -u root&ndash;p
+        # mysql -u root &ndash;p
         mysql> UNLOCK TABLES;
 
 7.  Copy the database dump file to the slave server so that it can be
@@ -222,19 +222,19 @@ replication.
     MySQL service.
 
          
-        # mysql&ndash;u root&ndash;p < /root/db_dump.sql
+        # mysql &ndash;u root &ndash;p < /root/db_dump.sql
         # service mysqld restart
 
 10. Complete the slave replication steps:
 
          
-        # mysql -u root&ndash;p
+        # mysql -u root &ndash;p
         mysql> SLAVE STOP;
         mysql> CHANGE MASTER TO MASTER_HOST='[private-IP-of-db01]',
         MASTER_USER='[replication-username]',
         MASTER_PASSWORD='[replication-password]',
         MASTER_LOG_FILE='[file-listed-on-master-status]',
-        MASTER_LOG_POS=[log-position-liste&ndash;on-master-status];
+        MASTER_LOG_POS=[log-position-listed&ndash;on-master-status];
         mysql> START SLAVE;
         mysql> SHOW SLAVE STATUS\G
 

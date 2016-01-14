@@ -79,7 +79,7 @@ POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protoco
 10. A POP connection normally removes email messages from the server
     when they are downloaded. If you would like to leave copies on the
     server, select the **Leave a copy of messages on server** check box.
-    To avoid exceeding your accoun&rsquo;s storage limits, indicate whether
+    To avoid exceeding your account&rsquo;s storage limits, indicate whether
     the server should delete messages after a certain number of days
     and/or delete messages when you manually delete them from the
     Deleted Items folder.

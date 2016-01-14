@@ -19,10 +19,13 @@ without FTP support this article will walk you through setting it up.
 
 Installing FTP on Windows Server 2012 (R2)
 ------------------------------------------
+
 1. Open the **Server Manager** from the task bar. 
+
 2. From the Server Manager Daskboard click **Add Roles and Features**.
 
 ![](/knowledge_center/sites/default/files/field/image/server_manager_iis1.png)
+
 3. From the Installation Type section select **Role-based or
 feature-based installation **and click **Next**.
 
@@ -30,15 +33,18 @@ feature-based installation **and click **Next**.
 features provide additional functionality for a given role.* 
 
 ![](/knowledge_center/sites/default/files/field/image/role_based_0.png)
+
 4. The current server will be selected by default. Click **Next** to
 move to the Server Roles selection tab.
 
 ![](/knowledge_center/sites/default/files/field/image/server_selection_0.png)
+
 5. From the Server Roles tab expand the **Web Server (IIS)** dropdown
 and place a check in the box for **FTP Server**. Click **Next** to move
 to the Features selection tab.
 
 ![](/knowledge_center/sites/default/files/field/image/server_roles_ftp.png)
+
 6. Select any additional features desired for your IIS deployment and
 click **Next.** 
 
@@ -49,9 +55,11 @@ description. See official microsoft documentation to learn more about
 each feature*
 
 *![](/knowledge_center/sites/default/files/field/image/features_ftp.png)*
+
 7. Review your installation and click **Install**.
 
 ![](/knowledge_center/sites/default/files/field/image/install_ftp.png)
+
 8. A progress bar will show you the status of the installion. Once the
 installation is complete the Wizard will present a notification.
 

@@ -41,7 +41,7 @@ monitor for you, you define your objectives in the following terms:
      For example, a RAM usage graph shows growth leading up to the
     triggered alarm.
 
-&ldquo;Single Pane of Glas&rdquo; for Your IT
+[&ldquo;Single Pane of Glass&rdquo; for Your IT
 Ops](http://www.rackspace.com/blog/cloud-monitoring/) discusses these
 concepts in the context of Cloud Monitoring. Rackspace Intelligence acts
 as a dashboard to help you interact with data collected by Cloud

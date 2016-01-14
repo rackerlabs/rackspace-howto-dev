@@ -33,6 +33,7 @@ Contents
 
 Installing PHP with Web PI
 --------------------------
+
 1. Open the Web PI application from the following location on your
 filesystem. 
 
@@ -41,17 +42,21 @@ filesystem.
 *Note: If the Web PI application is not currently installed it can be
 downloaded via the following link: [Web
 PI](http://www.microsoft.com/web/downloads/platform.aspx)*
+
 2. Search for PHP.
+
 3. Select **Add** next to the version of PHP you wish to install and
 click **Install**.
 
 *Note: At the time of writing this is 5.3.19 and 5.4.9*
 
 ![](/knowledge_center/sites/default/files/field/image/php_webpi.png)
+
 4. When prompted to Accept the License terms, review and click **I
 Accept**.
 
 ![](/knowledge_center/sites/default/files/field/image/php_dependecies.png)
+
 5. Click **Finish** once the installation is finalized. The PHP runtime
 environment will be stored on your local file system at the following
 location:
@@ -63,6 +68,7 @@ Testing PHP
 
 Once you have successfully installed PHP you can test its functionality
 with a few simple steps. 
+
 1. Create a file using a texteditor and insert the following code
 snippit. 
 
@@ -73,6 +79,7 @@ PHP configuration of the local system. Save the file as 'info.php' in
 the IIS root directory.
 
 *Note: The default directory is C:\\inetpub\\wwwroot*
+
 3. Open a Web browser and go to the following URL:
 
     http://localhost/info.php
@@ -90,17 +97,21 @@ Customizing PHP
 
 Configuration parameters for PHP are stored in the php.ini file, which
 resides in the root of the local installation.
+
 1. Open File Explorer and path to the PHP configuration (php.ini) file.
 
 *Note: The currently loaded configuration file can be found by
 leveraging the phpinfo(); script in the [Testing PHP](#testphp)section*
+
 2. Open the file with text editor and perform any necessary
 modifications.
 
 Note: Explaining the php directives that can be modified is beyond the
 scope of this article. Those seeking additional assistance should
 consult the official [PHP Manual](http://php.net/manual/en).
+
 3. Save the file once you have completed modifications.
+
 4. Next, r**estart the IIS service** to load any configuration changes.
 To do so, open the **Server Manager** from the task bar.
 
@@ -117,21 +128,27 @@ To ensure php content is served as the first option the default document
 setting within the IIS Manager needs to be modified. This section will
 detail how to modify the Default Document setting within the IIS Manager
 to perform just this.
+
 1. Open the **Server Manager** from the task bar. 
+
 2. From the **Tools** menu click **Internet Information Services (IIS)
 Manager**.
 
 ![](/knowledge_center/sites/default/files/field/image/tools_iis.png)
+
 3. In the Internet Information Services (IIS) Manager select the server
 homepage. 
 
 ![](/knowledge_center/sites/default/files/field/image/home_page.png)
+
 4. Double-click the **Default Document **option.
 
 ![](/knowledge_center/sites/default/files/field/image/default_doc.png)
+
 5. Select the **index.php** option and move it to the top of the list.
 
 ![](/knowledge_center/sites/default/files/field/image/php_top.png)
+
 6. IIS will now serve index.php files from the wwwroot folder before
 all other document types.
 

@@ -53,11 +53,11 @@ authentication.
     Administration**.\
     \
 4.  On the Two-Factor Login page, select one of the following options:
-5.  **Required for all users on this account*&mdash;Makes two-factor
+5.  **Required for all users on this account**&mdash;Makes two-factor
     authentication a requirement for all users on your account. Setup
     must take place on each user's next login.\
     \
-6.  **Optional per user*&mdash;Makes two-factor authentication optional for
+6.  **Optional per user**&mdash;Makes two-factor authentication optional for
     all users on your account. Users who want to use two-factor
     authentication are prompted to register a paired SMS-capable device
     on their next login.\
@@ -168,7 +168,7 @@ Follow these steps to unlock a user account:
     \
 2.  Select **Account \> User List**.\
     \
-3.  Locate the locked user and open the use&rsquo;s account record.\
+3.  Locate the locked user and open the user&rsquo;s account record.\
     \
 4.  From the **Actions** menu, select **Unlock User**.
 
@@ -186,7 +186,7 @@ the **Actions** menu.
     \
 2.  Select **Account \> User List**.\
     \
-3.  Locate the user and open the use&rsquo;s account record.\
+3.  Locate the user and open the user&rsquo;s account record.\
     \
 4.  From the **Actions** menu, select **Send Temporary Code**.
 

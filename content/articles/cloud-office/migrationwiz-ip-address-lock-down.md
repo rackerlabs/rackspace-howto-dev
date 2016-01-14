@@ -35,8 +35,10 @@ Now that you have the range of IP addresses, you need to lock down your
 migration profile.  If your migration is assisted, your migration
 specialist performs these actions.  If you are performing the migration
 yourself, complete the following steps.
+
 1. Log in to the [Full Version of
 MigrationWiz](http://www.rackspace.com/knowledge_center/article/accessing-the-full-version-of-migrationwiz).
+
 2. If you have already created a migration, click **Manage
 Connectors**. If you are creating a new migration, click **Create a
  Connector**.
@@ -44,28 +46,33 @@ Connectors**. If you are creating a new migration, click **Create a
 ![](/knowledge_center/sites/default/files/field/image/Step_1.png)
 
  
+
 3. In the top-right corner of the window that opens, click **Advanced
 Options**.
 
 ![](/knowledge_center/sites/default/files/field/image/advanced.png)
 
  
+
 4. Click the **Performance** tab.
 
 ![](/knowledge_center/sites/default/files/field/image/Step_3.png)
 
  
+
 5. Set the **Preferred Data Center** value to **North America**.
 
 ![](/knowledge_center/sites/default/files/field/image/Step_4.png)
 
  
+
 6. Click on the **Support** tab and type the following in the blank
 field:  **ProcessingRequirement=Local**
 
 ![](/knowledge_center/sites/default/files/field/image/Step_5.png)
 
  
+
 7. **Save** all changes
 
 All connections through your migration will now only come from the IP

@@ -43,7 +43,7 @@ not be acted upon and do not iterate.
 
 This feature is mostly used to ensure that servers being added in a
 scale-up have enough time to fully deploy. The required minimum cooldown
-is not about how many servers you may add at onc&mdash;all servers are added
+is not about how many servers you may add at once&mdash;all servers are added
 at the same time. It is about the complexity of the servers that you are
 adding. If the servers that you add are very complex, they need a longer
 minimum cooldown period in order to fully deploy. You should set the
@@ -54,7 +54,7 @@ server to fully deploy.
 
 When you set a policy **Cooldown**, you are restricting the
 executability of the policy by requiring a period of time to pass before
-the policy can be executed agai&ndash;even if it is triggered by an event. A
+the policy can be executed again&ndash;even if it is triggered by an event. A
 policy cooldown controls how often a single, specific, policy can be
 executed. For example, a scale-up policy cooldown restricts how often
 the scale-up is executed despite being triggered by an event, which

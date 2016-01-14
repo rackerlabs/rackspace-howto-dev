@@ -378,7 +378,7 @@ For older OS versions, use the following command:
 
 #### Save your rules
 
-Use the following command to save all the rules that yo&rsquo;ve created.  If
+Use the following command to save all the rules that you&rsquo;ve created.  If
 not saved before your server is rebooted, the iptables ruleset will
 revert to the default ruleset, blocking all traffic except on port 22.
 If you are using RHEL 7 or CentOS 7, this step is not necessary.

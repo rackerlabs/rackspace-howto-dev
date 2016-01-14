@@ -10,7 +10,7 @@ product: RackConnect
 body_format: tinymce
 ---
 
-**Applies to**: RackConnect v3.0](#overview)
+**Applies to**: RackConnect v3.0[](#overview)
 
 RackConnect v3.0 includes a new enhanced API that enables you to
 seamlessly add and remove cloud servers from your load balancer pools,
@@ -42,7 +42,7 @@ addresses from them at any time.
 
 **Note:** This walkthrough uses cURL commands to make the API calls.
 cURL is installed by default on many Linux distributions. If it is not
-already installed on your computer, you can download and install it&mdash;
+already installed on your computer, you can download and install it &mdash;
 versions are available for most operating systems.
 
 [Use Cloud Identity to obtain an authentication
@@ -209,7 +209,7 @@ Note the following important points:
 -   You can obtain the UUID (universally unique identifier) of your
     cloud server from within its server details page in the [Cloud
     Control Panel](https://mycloud.rackspace.com) or via the [Cloud
-    Servers AP&mdash;Get Server
+    Servers API&mdash;Get Server
     Details](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/Get_Server_Details-d1e2623.html)
     operation. The UUID is a 32-character entry with four hyphens in the
     **ID** or **id** section of the server details page.
@@ -328,7 +328,7 @@ above the public\_ip\_v4 entry in the operations to *list* and *add*
 public IP addresses. This UUID is a 32 character entry with four
 hyphens, and in the preceding example operations it was listed as
 NaNaNNNaa-NaNa-aNaN-aNaN-NaNaNNaaaaNa. This call does not return any
-JSON dat&mdash;only an HTTP response cod&mdash;so you use the *--include* option
+JSON data&mdash;only an HTTP response code&mdash;so you use the *--include* option
 with the request. A 204 response code signifies that the public IP
 address was successfully removed from the cloud server.
 

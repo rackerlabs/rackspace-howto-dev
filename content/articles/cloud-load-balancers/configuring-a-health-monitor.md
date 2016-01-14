@@ -33,7 +33,7 @@ traffic only to nodes that are functioning properly.
 
 1.  Log in to the Cloud Control Panel.
 2.  In the top navigation bar, click **Networking \> Load
-    Balancers.**** All existing load balancers for your account are
+    Balancers.****** All existing load balancers for your account are
     displayed.
 3.  Click the gear icon next to the name of the load balancer for which
     you want to create a health monitor, and select **Edit Health

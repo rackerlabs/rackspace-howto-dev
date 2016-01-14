@@ -65,7 +65,7 @@ FAQ
 Rackspace sends ALL used compute/storage/network/drives (e-waste) to a
 certified electronics refurbisher that is under contract with Rackspace.
 This insures that all assets are securely and responsibly processed. We
-are working on an&ldquo;Employee Purchase Progra&rdquo; with the refurbishing
+are working on an &ldquo;Employee Purchase Program&rdquo; with the refurbishing
 company to offer Rackers discounts on purchasing used/lower cost gear
 that has been cleaned, tested and carries a limited warranty. Stay tuned
 for more on this.

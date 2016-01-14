@@ -31,7 +31,7 @@ verifying registered addresses.
 4.  Specify which domains are allowed to access the archive and which
     domains are denied access:\
       
-    -   **Allow List*&mdash;Specify the email domains that can access the
+    -   **Allow List**&mdash;Specify the email domains that can access the
         archive. For example,  if you want to allow access only to users
         with your company domain, **@acme.com**, type **\*@acme.com**
         under **Allow rules**. Only users with this domain can access
@@ -45,7 +45,7 @@ verifying registered addresses.
         to step 4.  Otherwise, proceed to the following **Deny
         List** option to deny specific email domains.\
           
-    -   **Deny List*&mdash;You might prefer that your users not register into
+    -   **Deny List**&mdash;You might prefer that your users not register into
         their login with certain domain names. For example, consumer
         domains such as **@hotmail.com** and **@yahoo.com** tend to be
         unpopular with IT administrators. To create a deny list for

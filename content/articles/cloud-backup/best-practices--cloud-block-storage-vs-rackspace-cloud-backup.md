@@ -48,7 +48,7 @@ After the initial setup, including installation of the Cloud Backup
 Agent and capture of all the initial files, Cloud Backup uses
 deduplicaiton to only capture only data that has actually changed. With
 the exception of your first complete backup, every subsequent backup is
-just a&ldquo;delt&rdquo; of the previous backup, which enables faster backup and
+just a &ldquo;delta&rdquo; of the previous backup, which enables faster backup and
 restore operations and reduces the storage amount required. If ever
 needed, you can revert your data to an earlier date's backup.\
  \

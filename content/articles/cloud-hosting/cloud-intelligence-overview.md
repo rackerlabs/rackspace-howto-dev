@@ -85,7 +85,7 @@ Getting help and providing feedback
 If you have questions about Rackspace Intelligence, see the Rackspace
 Intelligence FAQ.
 
-Your feedback is a key ingredient of Rackspac&rsquo;s success. If you have
+Your feedback is a key ingredient of Rackspace&rsquo;s success. If you have
 suggestions for enhancements to Rackspace Intelligence, post your idea
 on the [Rackspace Product Feedback](https://feedback.rackspace.com/)
 site.

@@ -27,7 +27,7 @@ could potentially serve your business or personal project(s).
 
 ### Basic Cloud Architecture
 
-This is a basic cloud architecture&ndash; a starting point to build on for
+This is a basic cloud architecture &ndash; a starting point to build on for
 future applications. Every journey starts with a single step. Typically,
 this is the first step our customers take when moving an application to
 the cloud, yet already uses platform services like Cloud Databases and
@@ -59,6 +59,7 @@ working efficiently and properly.
 Files](http://www.rackspace.com/cloud/public/files/) **- Static content
 can be served through Rackspace Cloud Files and the Akamai CDN for
 global content delivery.
+
 6. [**Rackspace Cloud
 Databases**](http://www.rackspace.com/cloud/public/databases/) -
  Rackspace Cloud Databases will host MySQL is a optimized, redundant
@@ -89,6 +90,7 @@ Cloud Servers can be a modular for secure sites.
 
 3. **MySQL** - **MySQL** replication is important for redundancy and
 failover.
+
 4. [**Rackspace Cloud
 Files**](http://www.rackspace.com/cloud/public/databases/) - Static
 content can be served through Rackspace Cloud Files and the Akamai
@@ -105,6 +107,7 @@ multiple levels of the application, balancing not only web workloads but
 application workloads as well.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/10_0.png)
+
 1.  [**Rackspace** **Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
 Cloud Monitoring watches the infrastructure to make sure everything is
@@ -122,6 +125,7 @@ application.
 
 4. **Rackspace Cloud Load Balancers **- Rackspace Cloud Balancers can
 also balance on Service Networks for back end connections.
+
 5. [Rackspace **Cloud
 Databases**](http://www.rackspace.com/cloud/public/databases/) -
  Rackspace Cloud Databases will host MySQL is a optimized, redundant
@@ -139,6 +143,7 @@ caching. This configuration also allows you to scale horizontally
 quickly for events or high traffic.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/two_0.png) 
+
 1. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - **Rackspace
 Cloud Monitoring** watches the infrastructure to make sure everything is
@@ -153,10 +158,12 @@ termination for secure sites.
 Storage**](http://www.rackspace.com/cloud/block-storage/) - Rackspace
 Cloud Servers utilizing Cloud Block Storage serve web content for this
 application.
+
 4. [Rackspace **Cloud
 Databases**](http://www.rackspace.com/cloud/public/databases/) -
  Rackspace Cloud Databases will host MySQL is a optimized, redundant
 platform.
+
 5.
 **[Rackspace ](http://www.rackspace.com/cloud/public/files/)****[Cloud
 Files](http://www.rackspace.com/cloud/public/files/) **- Static content
@@ -171,6 +178,7 @@ Below is an example of the way our Managed Cloud Servers team could
 potentially configure the Open Cloud for WordPress.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/7.png)
+
 1. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
 Cloud Monitoring watches the infrastructure to make sure everything is
@@ -185,10 +193,12 @@ termination for secure sites.
 Storage**](http://www.rackspace.com/cloud/block-storage/) - Rackspace
 Cloud Servers utilizing Cloud Block Storage serve web content for this
 application.
+
 4. [**Rackspace Cloud
 Databases**](http://www.rackspace.com/cloud/public/databases/) -
  Rackspace Cloud Databases will host MySQL is a optimized, redundant
 platform.
+
 5. [**Rackspace Cloud
 Files**](http://www.rackspace.com/cloud/public/files/) - Static content
 can be served through Rackspace Cloud Files and the Akamai CDN for
@@ -244,6 +254,7 @@ configurations are also utilized for customers that  require higher
 levels of PCI compliance.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/five.png)
+
 1. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
 Cloud Monitoring watches the infrastructure to make sure everything is
@@ -260,6 +271,7 @@ application.
 
 4. **Dedicated Servers** - This configuration uses Dedicated Servers for
 high performance custom MySQL.
+
 5. [**Rackspace Cloud
 Files**](http://www.rackspace.com/cloud/public/files/) - Static content
 can be served through Rackspace Cloud Files and the Akamai CDN for
@@ -273,7 +285,7 @@ This is a high level overview of the possibilities of mixing private
 clouds and public cloud. This configuration is for customers that want
 to take advantage of cloud technology but may still need to maintain an
 in-house solution. Customers also use private clouds so they have
-dedicated host machines - eliminating the so-called&ldquo;noisy neighbo&rdquo;
+dedicated host machines - eliminating the so-called &ldquo;noisy neighbor&rdquo;
 problem present with every multi-tenant public cloud hosting provider.
 The power of OpenStack allows customers to move workloads between their
 in-house private cloud and the Rackspace Open Cloud without having to
@@ -282,17 +294,21 @@ customers can link their in-house private cloud to a Rackspace hosted
 private cloud for the same purpose.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/four.png)
+
 1. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
 Cloud Monitoring watches the infrastructure to make sure everything is
 working efficiently and properly.
+
 2. **RackConnect** - RackConnect allows Rackspace to connect from a
 customer datacenter to a Rackspace datacenter through a Site-to-Site
 IPSec VPN.
+
 3. [**Rackspace Cloud: Private
 Edition**](http://www.rackspace.com/cloud/private/) - The Rackspace
 Cloud Private Edition team can provide Fanatical Support in a customer
 or partner datacenter.
+
 4. [**OpenStack Private
 Cloud**](http://www.rackspace.com/cloud/private/) - Customers can also
 use RackConnect. This will connect a Rackspace Hosted Open Stack Private
@@ -310,19 +326,24 @@ takes advantage of a bare metal database server for PCI compliance
 standards and to take full advantage of computing resources.
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/mailgun.png)
+
 1. [**Rackspace Cloud
 Servers**](http://www.rackspace.com/cloud/public/servers/) - When a
 visitor loads a webpage, Rackspace Cloud Server**s** are used as web and
 application servers. A Firewall and Load Balancer are utilized are
 here. 
+
 2. **Rackspace Cloud Networks** - The Rackspace Cloud Servers can
 segmented from each other using Rackspace Cloud Networks.
+
 3. **RackConnect** - Using RackConnect, cloud resources can be
 connected seamlessly to dedicated hardware, in this case for use as a
 database server.
+
 4. **Mailgun **-** **Customer email can be sent through **Mailgun**,
 Rackspace subsidiary. Customers can also use a payment gateway to meet
 PCI requirments.
+
 5. [**Rackspace Cloud
 Files**](http://www.rackspace.com/cloud/public/files/) - Static content
 can be served through Rackspace Cloud Files and the Akamai CDN for

@@ -99,7 +99,7 @@ user.
 
 ^[back\\ to\\ top](#top)^
 
-### Can I use Cloud Load Balancers in conjunction with RackConnec&reg;?
+### Can I use Cloud Load Balancers in conjunction with RackConnect&reg;?
 
 You can use the
 [RackConnect](http://www.rackspace.com/cloud/hybrid/rackconnect/) Cisco
@@ -215,8 +215,8 @@ SSL-enabled load balancer, that unencrypted data is sent over the public
 IInternet to those nodes. Therefore we recommend that you use an
 SSL-enabled load balancer **only with nodes that reside in the same data
 center as the load balancer.** The proximity allows the load balancer to
-use the node&rsquo; private IP addresses (the ServiceNet) to limit
-unencrypted traffic to within the data cente&rsquo;s network, as illustrated
+use the nodes&rsquo; private IP addresses (the ServiceNet) to limit
+unencrypted traffic to within the data center&rsquo;s network, as illustrated
 in the following diagram.
 
 (sslterminationsFAQpic.png)

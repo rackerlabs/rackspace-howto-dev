@@ -12,6 +12,7 @@ body_format: tinymce
 
 The following steps are required to configure Microsoft Exchange
 Activesync on a Windows Phone:
+
 1. Locate the **Settings** options from within your application menu.\
  \
  ![](/knowledge_center/sites/default/files/field/image/0000.png)\

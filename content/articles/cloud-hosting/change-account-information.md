@@ -117,7 +117,7 @@ The Billing team has strict requirements when processing the
 following information to have the submission processed quickly and
 efficiently.
 
-**Page 1&ndash; Account details**
+**Page 1 &ndash; Account details**
 
 -   **Transferring Customer / Assignor** - In this section, provide the
     current account information.
@@ -145,7 +145,7 @@ information](/knowledge_center/sites/default/files/field/image/change-account-2.
 Do not fill out the **RACKSPACE US, INC.** section. A Rackspace
 representative will complete this section.
 
-**Last Page&ndash; Cloud Instances (Exhibit A)**
+**Last Page &ndash; Cloud Instances (Exhibit A)**
 
 -   In the List of Instances transferring section, provide the following
     information:

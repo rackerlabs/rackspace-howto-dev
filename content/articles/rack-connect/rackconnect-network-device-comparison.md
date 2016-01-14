@@ -91,7 +91,7 @@ Maximum Concurrent Connections
 
 1 Million
 
- &ndash;8 Million
+ 4&ndash;8 Million
 
 1 Million
 
@@ -99,39 +99,48 @@ Maximum Concurrent Connections
 
 Maximum SSL TPS \*
 
-  &mdash; 
+   &mdash; 
 
-  &mdash; 
+   &mdash; 
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
-&mdash;
+ &mdash;
 
- 7,25&ndash;14,500
+ 7,250&ndash;14,500
 
 5,000
 
 10,000
 
 Maximum Concurrent SSL Connections
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
+
 &mdash;
 
  64,000
@@ -357,7 +366,7 @@ No (not in RackConnect edge or connected device roles)
 
 Yes
 
- &ndash;9 Gbps
+ 2&ndash;9 Gbps
 
 **F5 1600**
 
@@ -388,7 +397,7 @@ In: 1 Gbps \
 **\* License upgrade may be required to reach Maximum SSL TPS**\
  **\*\* We recommend utilizing a Cisco ASA as the RackConnect Edge
 Device Type**\
- **\*\*\* Maximum Cloud Server&rsquo; Guidelines based on internal testing.
+ **\*\*\* Maximum Cloud Servers&rsquo; Guidelines based on internal testing.
 Actual results may vary by production load and Edge Device Type.**\
  **\*\*\*\*  RackConnect Throughput limited by RackConnect Switching
 Infrastructure connectivity: Maximum of 1 Gbps Theoretical**

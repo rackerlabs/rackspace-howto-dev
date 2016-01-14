@@ -71,7 +71,7 @@ URL.
     pages and pictures, use the HTTP link to access your static website.
     If you want to be securely connected to your site, use the HTTPS
     link.\
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic6.png)
+     ![](/knowledge_center/sites/default/files/field/image/kcstatic6.png)
 
 ### Next Steps
 

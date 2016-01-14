@@ -47,7 +47,7 @@ export it to a file from Outlook 2011.
 
 2.  Select **Outlook for Mac Data File (.olm)** for the file type.
 
-3.  Select the items yo&rsquo;d like to export.
+3.  Select the items you&rsquo;d like to export.
 
 4.  Press the **purple arrow** in the bottom-right-hand corner of the
     window to move to the next page.  *Note: Only mail data will sync
@@ -61,7 +61,7 @@ export it to a file from Outlook 2011.
 
     ![](/knowledge_center/sites/default/files/field/image/Delete.png)
 
-6.  A new window will appear asking where yo&rsquo;d like to save the file.
+6.  A new window will appear asking where you&rsquo;d like to save the file.
      Choose a location that is easy to remember such as the **Desktop**.
 
     ![](/knowledge_center/sites/default/files/field/image/Location_file%20copy.jpg)

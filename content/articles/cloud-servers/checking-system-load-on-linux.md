@@ -66,7 +66,7 @@ The amount of memory a system has is one of the most common restraining
 factors. The swap is an area of the hard drive where data is moved to
 free up physical memory (RAM) for a process to use (not all servers have
 swap space configured). A system using its swap area does not
-necessarily mean it is low on memory, but if most of your syste&rsquo;s swap
+necessarily mean it is low on memory, but if most of your system&rsquo;s swap
 is being consumed it could indicate that your server is trying to do
 more than its available memory permits.
 
@@ -74,7 +74,7 @@ If swap space is configured and you suspect your server is running out
 of standard memory, you can use vmstat to show how much swapping is
 occurring.
 
-The following example displays a syste&rsquo;s virtual memory statistics 10
+The following example displays a system&rsquo;s virtual memory statistics 10
 times at 5 second intervals.
 
 ~~~~ {.pre .codeblock}
@@ -97,7 +97,7 @@ In the example the `free` column shows that the amount of free memory is
 only around 4MB.
 
 The `si` and `so` columns show the amount of data being transferred
-between the syste&rsquo;s swap and its memory. In this example you can see
+between the system&rsquo;s swap and its memory. In this example you can see
 there is lots of data being moved. `so` is the amount of data being
 moved to the swap to free up memory. `si` is the amount of data being
 pulled from the swap back in to memory. This happens when the data is
@@ -111,13 +111,13 @@ processes that are consuming the most resources.
 ### Summary {.title .topictitle1}
 
 If top and vmstat indicate that the server is using all its resources
-you need to look at optimising your current set up&ndash; this can include
+you need to look at optimising your current set up &ndash; this can include
 running any processing jobs outside peak hours, killing any processes no
 longer required and reconfiguring processes so they require less
 resources. You may also want to consider increasing the size of your
 server to better match your requirements.
 
-Assuming your application is running and looks healthy, le&rsquo;s now check
+Assuming your application is running and looks healthy, let&rsquo;s now check
 that it is listening for network connections. We can see if the service
 is listening on the correct socket using the netstat command, which
 we'll cover in [Checking Listening Ports with

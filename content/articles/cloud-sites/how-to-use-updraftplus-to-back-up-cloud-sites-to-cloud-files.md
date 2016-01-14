@@ -22,10 +22,10 @@ system issue or security incident.
 
 1.  Log in to your WordPress site.
 2.  In the WordPress sidebar, click **Plugins** and select **Add New**.
-3.  In the search box, type&ldquo;UpdraftPlus backu&rdquo; and select **Install
+3.  In the search box, type &ldquo;UpdraftPlus backup&rdquo; and select **Install
     Now**.
 4.  Click **Activate Plugin**.
-5.  From the Plugin section, scroll down to **UpdraftPlus&ndash;
+5.  From the Plugin section, scroll down to **UpdraftPlus &ndash;
     Backup/Restore** and select **Settings**.
 6.  Scroll down to Copying Your Backup To Remote Storage and from the
     drop-down menu select **Rackspace Cloud Files**.

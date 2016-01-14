@@ -19,6 +19,7 @@ system clock does not sync with the KMS.
 
 **Resolution:**  You will need to resynch your Cloud Server with the KMS
 server:
+
 1.  Log in to your Cloud Server as Administrator (Start, All Programs,
 Accessories, right-click Command Prompt and select Run as
 Administrator).
@@ -63,6 +64,7 @@ SYD\
 
 \*\*if there is a reply, move on to step 3.  No reply means that there
 is an interface, hardware, or routing issue\*\*
+
 3.  Set the KMS manually within the registry.
 
 Data Center
@@ -98,17 +100,20 @@ SYD\
  (Sydney)
 
 `slmgr.vbs /skms winactivate.syd2.servers.rackspacecloud.com:1688`
-4.     Request activation from the KM:
+
+4.     Request activation from the KMS:
 
     slmgr.vbs /ato
-5.     If step 4 returns an error reading EXACTLY&ldquo;0xC004F074 The Key
-Management Server (KMS) is unavailabl&rdquo;, run the following:
+
+5.     If step 4 returns an error reading EXACTLY &ldquo;0xC004F074 The Key
+Management Server (KMS) is unavailable&rdquo;, run the following:
 
     w32tm /resync
+
 6.     If the time on the Cloud Server is drastically different than
 what is on the KMS the resync will fail.  At this point you will need to
 either set the time manually or configure the server to use an NTP
-instance over the internet.
+instance over the internet. 
 
 Data Center
 
@@ -155,11 +160,14 @@ SYD\
     net stop w32time 
     w32tm /config /manualpeerlist:time.syd2.rackspace.com /syncfromflags:MANUAL
     net start w32time
+
 7.  Once the time is synced up, attempt the following:
 
-    w32tm /resyn
+    w32tm /resync
     slmgr.vbs /ato
+
 8.  You will also need to open UDP port 123 to allow the sync.  
+
 9.  Make sure your firewall allows outbound connections to TCP port
 1688. 
 

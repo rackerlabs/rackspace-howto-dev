@@ -23,11 +23,11 @@ single solution.
 
 RackConnect is a unique solution designed for customers who require the
 flexibility and elasticity of the cloud, and the enhanced security and
-performance characteristics of traditional hosting&ndash; the best of both
+performance characteristics of traditional hosting &ndash; the best of both
 worlds. In essence, RackConnect enables customers to realize the power
 of hybrid hosting.
 
--   Choose an F&reg; BIG-I&reg; Local Traffic Manager or a Cisc&reg; ASA firewall
+-   Choose an F5&reg; BIG-IP&reg; Local Traffic Manager or a Cisco&reg; ASA firewall
     to connect your traditional hosted infrastructure to the Rackspace
     Cloud.
 

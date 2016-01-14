@@ -28,7 +28,7 @@ storage servers to maintain resiliency and availability. This design
 focuses on the business needs of enterprise applications, in which
 availability and performance are critical. Using this design will help
 IT organizations provide a flexible, self-service platform to numerous
-business applications and departments, improving I&rsquo;s response and
+business applications and departments, improving IT&rsquo;s response and
 agility with supporting their business units. This design is also easy
 to scale, which allows organizations to start small and grow as cloud
 adoption increases within their company.
@@ -89,7 +89,7 @@ addition, to provide 10 Gbit connectivity for the storage network, we
 used Intel x520 10 Gbit network interface cards with Twinax connectivity
 to an Arista switching infrastructure. If additional storage is
 required, a popular solution is to attach a DAS device (such as a Dell
-MD1220) to each storage nod&ndash;then you can add the block devices into the
+MD1220) to each storage node&ndash;then you can add the block devices into the
 volume group.
 
 For the compute deployment, we chose the Dell C6220 because it provides

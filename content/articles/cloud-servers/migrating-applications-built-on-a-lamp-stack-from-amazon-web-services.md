@@ -37,7 +37,7 @@ following figure:
 -   Create a list of all the necessary software packages that are
     installed on your EC2 instance other than the LAMP stack.
 -   Create a list of all additional Amazon services that are being used
-    in the applicatio&mdash;for example, Simple Email Service (SES) for email
+    in the application&mdash;for example, Simple Email Service (SES) for email
     or Relational Database Service (RDS) for database.
 -   If you have not already, [create a Cloud Server
     instance](/knowledge_center/article/provisioning-cloud-services-to-migrate-from-amazon-web-services)

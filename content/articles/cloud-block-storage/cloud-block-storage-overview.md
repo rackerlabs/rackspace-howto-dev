@@ -12,7 +12,7 @@ body_format: tinymce
 
 Rackspace Cloud Block Storage is a block-level storage solution that
 allows you to expand the storage capacity of your Rackspace Next
-Generation Cloud Server&trade; and OnMeta&trade; Cloud Servers. This means you can
+Generation Cloud Servers&trade; and OnMetal&trade; Cloud Servers. This means you can
 increase your storage without increasing the size or capacity of your
 server or by provisioning new ones. Once you mount and format your
 drive, you can use it just like a regular hard drive attached to your

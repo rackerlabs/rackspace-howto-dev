@@ -27,10 +27,10 @@ To adjust access rights for an entire domain:
     restrict or disable access to. Each service is a different way of
     accessing email that is stored on the email server.\
      **Note:** **SSL** and **TLS** indicate that the services
-    incorporate security technology to protect the use&rsquo;s data
+    incorporate security technology to protect the user&rsquo;s data
 
 -   **POP3 and POP3 (SSL)**\
-     Email is downloaded to the use&rsquo;s computer and is then deleted from
+     Email is downloaded to the user&rsquo;s computer and is then deleted from
     the email server. This option is best for users who consistently use
     the same computer.
 
@@ -40,19 +40,19 @@ To adjust access rights for an entire domain:
      Email is stored on the email server only. The user manages email
     directly from the server, rather than downloading the email to a
     computer. This option is best for users who need to manage email and
-    email folders from multiple location&mdash;such as at the office, on the
+    email folders from multiple locations&mdash;such as at the office, on the
     road, and from a mobile device. Users also benefit from having their
     email automatically backed up every evening; if a user accidentally
-    deletes email, it can be easily retrieve&mdash;even up to 14 days later.
+    deletes email, it can be easily retrieved&mdash;even up to 14 days later.
 
  
 
 -   **Webmail and Webmail (SSL)**\
      Webmail provides anytime, anywhere access to email stored on the
     email server. With Webmail, a user can read, send, and manage
-    emai&mdash;just like using desktop email software. This option is best
+    email&mdash;just like using desktop email software. This option is best
     for users who need to access and manage email (and email folders)
-    from multiple location&mdash;such as at the office, on the road, or from
+    from multiple locations&mdash;such as at the office, on the road, or from
     a mobile device.
 
  

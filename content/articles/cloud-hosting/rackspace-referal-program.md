@@ -32,31 +32,31 @@ our products and services. Our dedicated sales and support teams are
 here to help you learn, grow, troubleshoot, and better both of our
 businesses for a rewarding relationship.
 
-### W&rsquo;re Here to Help You Grow with Us
+### We&rsquo;re Here to Help You Grow with Us
 
-Your relationship with Rackspace is&rsquo;t a one-way street&mdash; w&rsquo;ll succeed
-together. Tha&rsquo;s why w&rsquo;ve made the referral program as easy and
+Your relationship with Rackspace isn&rsquo;t a one-way street &mdash; we&rsquo;ll succeed
+together. That&rsquo;s why we&rsquo;ve made the referral program as easy and
 transparent as possible. In the referral portal, you can see the status
 of all of your leads and compensation and contact us for help. Unlike
 most programs that have lengthy and complicated contracts, there are no
-fees or commitments in this program. I&rsquo;s just companies working
+fees or commitments in this program. It&rsquo;s just companies working
 together to build a strong offering in the marketplace. At Rackspace,
-i&rsquo;s simple&mdash; you are rewarded for referring leads.
+it&rsquo;s simple &mdash; you are rewarded for referring leads.
 
 ### Rewarding Your Commitment
 
 With the Rackspace referral program you will be paid in one simple
 single payment reflecting the average monthly recurring revenue of the
-lead you passed us. I&rsquo;s hassle free and totally transparent.
+lead you passed us. It&rsquo;s hassle free and totally transparent.
 
 ![](/knowledge_center/sites/default/files/field/image/Referral_Prog_Collateral_Update-2.png)
 
-### Fanatical Support&reg;^ for You and Your Customers
+### Fanatical Support^&reg;^ for You and Your Customers
 
 Our dedication to our customers is legendary. As part of the referral
 program, we will extend The [Fanatical Support
 Promise^TM^](http://www.rackspace.com/whyrackspace/support/) to you and
-your customers. I&rsquo;s what differentiates us from other companies in our
+your customers. It&rsquo;s what differentiates us from other companies in our
 field, and we encourage you to use it as a selling point in your
 conversations. Fanatical Support means that whether you need assistance
 warming up a lead or assistance strategizing how you can pitch combined

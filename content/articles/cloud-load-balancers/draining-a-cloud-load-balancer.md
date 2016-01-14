@@ -10,7 +10,7 @@ product: Cloud Load Balancers
 body_format: tinymce
 ---
 
-Server&ldquo;drainin&rdquo; is the redirection of incoming calls and new
+Server &ldquo;draining&rdquo; is the redirection of incoming calls and new
 connections from the specified server to other servers connected to the
 same load balancer.  This is used to minimize service interruption when
 taking a server offline for needed maintenance.  Sessions started before

@@ -60,7 +60,7 @@ as email addresses and passwords, and to add new users.
     applicable fields in the resulting popup dialog box and save the
     changess.
 -   To add a new user, click **Create User**. On the **Create
-    User** page, enter information for the new use&rsquo;s login, access
+    User** page, enter information for the new user&rsquo;s login, access
     levels, and contact information. For information about access
     controls for your new users, see [Overview: Role Based Access
     Control

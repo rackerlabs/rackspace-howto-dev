@@ -41,7 +41,7 @@ Adding/Editing a Company Directory:\
       
 2.  Make changes as desired.\
       
-    -   Use the**Name** box to change or create the director&rsquo;s name.\
+    -   Use the**Name** box to change or create the directory&rsquo;s name.\
           
     -   To allow users to edit their personal contact information, check
         the **Allow users to edit their profile** box.\

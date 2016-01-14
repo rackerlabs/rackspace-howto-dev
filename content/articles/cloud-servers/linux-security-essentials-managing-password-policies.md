@@ -86,6 +86,6 @@ The possible options are as follows:
     the account is inaccessible.
 -   `-E` - Account expiration date. You can specify the date in many
     formats, including epoch. However, user-friendly formats like
-   &ldquo;December 31, 201&rdquo; work
+    &ldquo;December 31, 2014&rdquo; work
 
 

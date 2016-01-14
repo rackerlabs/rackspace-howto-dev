@@ -52,7 +52,7 @@ tcp        0      0 :::22                       :::*                        LIST
 
 If the list of listening daemons is long you can use grep to filter it.
 For example, to filter out everything except the default web server port
-- number 80&ndash; run:
+- number 80 &ndash; run:
 
 ~~~~ {.pre .codeblock}
 $ sudo netstat -plnt | grep ':80'     
@@ -88,7 +88,7 @@ port you need to address its configuration before you go any further.
 
 ### Outcome {.title .topictitle1}
 
-If you make changes at this point make sure to test your setup&ndash; you may
+If you make changes at this point make sure to test your setup &ndash; you may
 have resolved your issue.
 
 If not, let's continue to test connections to the service by using [the

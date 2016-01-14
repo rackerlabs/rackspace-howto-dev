@@ -47,8 +47,8 @@ Details
     that are already in use on the dedicated-side of your network or
     that consist of public IP adresses. Other than the preceding caveats
     we recommend that you use network ranges from within the standard
-    private IPv4 address spaces of 10.0.0.&ndash;10.255.255.255,
-    172.16.0.&ndash;172.31.255.255, or 192.168.0.&ndash;192.168.255.255 for your
+    private IPv4 address spaces of 10.0.0.0&ndash;10.255.255.255,
+    172.16.0.0&ndash;172.31.255.255, or 192.168.0.0&ndash;192.168.255.255 for your
     cloud networks. We also recommend that you select a /24 CIDR subnet
     mask to simplify management, because a /24 CIDR is large enough to
     support 250 cloud servers (the cloud servers limit per network). If

@@ -35,7 +35,7 @@ standard and workload-optimized flavors. When creating new cloud
 servers, always be sure to select the *region* where your RackConnect
 configuration is located.
 
-Cloud Servers API&ldquo;access I&rdquo;
+Cloud Servers API &ldquo;access IP&rdquo;
 -----------------------------
 
 The *access IP* is the IP address used by RackConnect automation to

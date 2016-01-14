@@ -18,7 +18,7 @@ domain and adding basic A, MX, and CNAME records by using the Cloud
 Control Panel.
 
 To learn more about A, MX, and CNAME records for Cloud Sites, see
-[Getting started with Cloud Sites&ndash; Managing DNS
+[Getting started with Cloud Sites &ndash; Managing DNS
 records](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-managing-dns-records).
 
 -   [DNS servers for cloud servers](#H)

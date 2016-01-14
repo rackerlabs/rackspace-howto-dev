@@ -32,11 +32,14 @@ that runs on Windows Server 2012 and is turned on by default. Firewall
 settings within Windows Server 2012 are managed from within the Windows
 Firewall MMC (Microsoft Management Console). To review and set Firewall
 settings perform the following:
+
 1. Open the **Server Manager** from the task bar.
+
 2. Click the **Tools menu** and select **Windows Firewall with Advanced
 Security**.
 
 ![](/knowledge_center/sites/default/files/field/image/firewall.png)
+
 3. First review the current configuration settings by selecting
 **Windows Firewall Properties** from the MMC landing page. This **allows
 access to modify the settings** for each of the three firewall profiles,
@@ -49,9 +52,11 @@ Applying Custom Rules {style="line-height: 20px;"}
 
 Custom Rules allow the finest level of control over inbound and outbound
 traffic to your Windows Server 2012.
+
 1. If you have not done so already load the Windows Firewall MMC by
 opening the **Server Manager** from the task bar, clicking the **Tools
 menu**, and selecting **Windows Firewall with Advanced Security**.
+
 2. Select either **Inbound Rules** or **Outbound Rules** under
 **Windows Firewall with Advanced Security** on the left side of the
 management console. 
@@ -64,18 +69,22 @@ Rightclicking a rule will allow you toggle enable/disable.\
 *
 
 *![](/knowledge_center/sites/default/files/field/image/enable_disable.png)*
+
 3. From the right side of either the **Inbound Rules** or **Outbound
 Rules **tab click**New Rule**.
 
 ![](/knowledge_center/sites/default/files/field/image/new_rule.png)
+
 4. Select **Custom** from the Rule Type radial button and click
 **Next**.
 
 ![](/knowledge_center/sites/default/files/field/image/rule_type.png)
+
 5. **Select the Program association** for the Custom Firewall Rule
 either All programs or the path to a program and click **Next**.
 
 ![](/knowledge_center/sites/default/files/field/image/rule_program.png)
+
 6. From the Protocol type field **select the protocol type** and click
 **Next**.
 
@@ -83,17 +92,21 @@ either All programs or the path to a program and click **Next**.
 purposes.*
 
 ![](/knowledge_center/sites/default/files/field/image/rule_protocol.png)
+
 7. **Select an IP address association** for both local and remote
 addresses and click **Next**.
 
 ![](/knowledge_center/sites/default/files/field/image/rule_scope.png)
+
 8. Select an action to take on matching traffic and click **Next**.
 
 ![](/knowledge_center/sites/default/files/field/image/rule_action.png)
+
 9. Select the profiles associated with the custom rule and click
 **Next**.
 
 ![](/knowledge_center/sites/default/files/field/image/rule_profile.png)
+
 10. Provide a name for your Firewall rule and an optional description
 and click **Finish**.
 

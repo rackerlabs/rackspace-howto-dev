@@ -20,7 +20,7 @@ and flexibility to meet these varied needs.
 The key to having a well-secured environment is not just identifying the
 risks, but ensuring the appropriate controls are in place and that they
 are being actively monitored. While our OpenStack private cloud provides
-the flexibility, **Fanatical Suppor&reg;** brings best-practices and
+the flexibility, **Fanatical Support&reg;** brings best-practices and
 expertise to achieve customer's control objectives.
 
 This document will provide an introductory understanding of:

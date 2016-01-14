@@ -46,7 +46,7 @@ address.\
  *Note: Outlook 2013 offers the option to limit the amount of data that
 is downloaded to your local machine.  This can be adjusted, using the
 "Mail to keep offline slider."***You can select caching for 1 month, 3
-months, 6 months, 1 year, 2 years, and&ldquo;all&rdquo;*By default, Outlook 2013
+months, 6 months, 1 year, 2 years, and &ldquo;all.&rdquo;*By default, Outlook 2013
 only synchronizes twelve (12) months of email to your Offline Outlook
 Data (.ost) file from the Exchange server. In this example, if you have
 email items older than 12 months in your Exchange mailbox, they reside
@@ -74,6 +74,7 @@ Authentication**.\
  \
  8. In the Microsoft Exchange dialog box, click **Apply** and then click
 **OK**.
+
 9. On the Server Settings page, click **Check Name**, type your
 password, and then click **OK**.
 
@@ -92,10 +93,12 @@ Your name will then be highlighted and a line will appear under the
 *Note: The server name resolves to a unique string that is different
 with every mailbox. Do not attempt to replicate this information with
 other accounts.*
+
 10. Click **Next**, and on the next page, click **Finish**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/Step7_0.png)
 
 ![](/knowledge_center/sites/default/files/field/image/Step8_0.png)
+
 11. Open Outlook to select your new Exchange profile.
 

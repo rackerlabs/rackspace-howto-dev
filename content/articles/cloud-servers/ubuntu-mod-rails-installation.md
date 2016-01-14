@@ -54,7 +54,7 @@ As suggested, press 'Enter/Return':
 I deliberately left the Apache headers off the installation until this
 point as I want to demonstrate how easy the installation is.
 
-The passenger (mod\_rails) install has found a missing dependency&mdash;
+The passenger (mod\_rails) install has found a missing dependency &mdash;
 let's press 'Enter/Return':
 
 How cool is that? It tells us what to do.
@@ -84,7 +84,7 @@ Rather than copy and paste the following output, please ensure you copy
 and paste the output from the install itself.
 
 At the time of writing the article (well, updating it actually) I
-installed passenger v2.0.6&mdash; you may have installed a later version.
+installed passenger v2.0.6 &mdash; you may have installed a later version.
 
 So, for my v2.0.6 install, I added the following lines to my
 apache2.conf:
@@ -107,5 +107,5 @@ Done
 That's all we need to do to install mod\_rails onto our Cloud Server.
 
 The next article will show how to create a Ruby on Rails application and
-serve it using passenger&mdash; an incredibly easy process.
+serve it using passenger &mdash; an incredibly easy process.
 

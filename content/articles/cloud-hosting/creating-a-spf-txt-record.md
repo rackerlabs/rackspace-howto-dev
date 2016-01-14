@@ -69,14 +69,14 @@ Each part of the record is defined as follows:
 The **all** setting is an important aspect of the record and has the
 following basic markers:
 
--   -**all**&ndash; Any server not previously listed is not authorized to
+-   -**all** &ndash; Any server not previously listed is not authorized to
     send email, no questions asked.
 
--   **\~all**&ndash; If mail is received from a server that is not previously
+-   **\~all** &ndash; If mail is received from a server that is not previously
     listed, it is marked as a soft fail, which allows the email to be
     scrutinized further.
 
--   **+all *&ndash; Allow any server to send email from your domain.
+-   **+all **&ndash; Allow any server to send email from your domain.
     Naturally, you should never use this option.
 
  
@@ -93,7 +93,7 @@ steps:
     to modify, and select **Add DNS Record**.
 4.  Select **TXT Record** for the record type.
 5.  Enter the rule in the **Text** area. For example, enter
-    `v=spf1 mx&ndash;all` to indicate that all email is sent from this server
+    `v=spf1 mx &ndash;all` to indicate that all email is sent from this server
     and no other mail servers are authorized.
 6.  Specify the Time To Live (TTL).
 7.  Click **Add Record**.

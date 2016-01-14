@@ -32,10 +32,10 @@ ServiceNet to connect, you are still charged for requests and storage.
 
 You can locate your Cloud Server data center in the following ways:
 
--   [Cloud Control Panel](https://mycloud.rackspace.com/)&mdash;On the main
+-   [Cloud Control Panel](https://mycloud.rackspace.com/) &mdash;On the main
     Cloud Files page in the Control Panel, locate your Cloud Files data
     center in the **Region** column.
--   Through the AP&mdash; Your Cloud Files data center is located in the
+-   Through the API&mdash; Your Cloud Files data center is located in the
     storage URL that is returned when you authenticate to Cloud Files.
     For more information, see [Retrieving the Authentication
     Token](http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Retrieving_Auth_Token.html).

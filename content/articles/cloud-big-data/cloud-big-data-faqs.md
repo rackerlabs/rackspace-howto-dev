@@ -53,7 +53,7 @@ You can use Big Data to perform the following tasks:
 -   Seamlessly access data in Cloud Files containers
 -   Gain interoperability with any third-party software tool that
     supports HDP
--   Access Fanatical Suppor&reg; on a 24x7x365 basis via chat, ticket, or
+-   Access Fanatical Support&reg; on a 24x7x365 basis via chat, ticket, or
     phone at 1-800-961-4454 (US toll free) and 1-210-312-4000
     (international)
 
@@ -105,7 +105,7 @@ at [https://developer.rackspace.com/docs/](https://developer.rackspace.com/docs/
 
 ### Who do I contact if I need help or have problems with my Cloud Big Data service?
 
-You can access Rackspace Fanatical Suppor&reg; on a 24x7x365 basis by using
+You can access Rackspace Fanatical Support&reg; on a 24x7x365 basis by using
 the following methods:
 
  

@@ -42,7 +42,7 @@ Browser service.
     built the server from one of our server images with MSSQL
     pre-installed, the password will be in a text file on the root of
     the C partition.
-3.  Use **netstat&ndash;an** from the command prompt to verify that the
+3.  Use **netstat &ndash;an** from the command prompt to verify that the
     server is listening for SQL traffic on the correct ports.
 4.  If the server is not listening for SQL traffic on the correct ports,
     use SQL Server Configuration Manager to change the ports.
@@ -66,9 +66,9 @@ Browser service.
 5.  If you are using named instances when installing SQL,  giving you
     the ability to host multiple SQL versions or service types, you will
     have to specify the name of the SQL instance when connecting rather
-    than just using the serve&rsquo;s name or IP.  If you have created a
+    than just using the server&rsquo;s name or IP.  If you have created a
     named instance, you will need to access it by appending the name to
-    the serve&rsquo;s name or IP, following a backslash (e.g.
+    the server&rsquo;s name or IP, following a backslash (e.g.
     12.34.56.78\\SQLINSTANCENAME or SQLSERVERNAME\\SQLINSTANCENAME).
 
 

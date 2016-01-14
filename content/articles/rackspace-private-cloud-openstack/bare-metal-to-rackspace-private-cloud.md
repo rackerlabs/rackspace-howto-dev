@@ -59,7 +59,7 @@ Razor uses a Microkernel, or the MK, that boots from the network and
 lives in memory until a real target operating system can be installed.
 The MK is a Tiny-Core Linux based, and is used on first boot and as the
 default boot image for any nodes. Doing this allows Razor to collect
-data on the node (similar to Che&rsquo;s ohai) which is then used in tagging
+data on the node (similar to Chef&rsquo;s ohai) which is then used in tagging
 and policies.
 
 Add an MK as your first image to Razor so that it knows how to boot a
@@ -83,17 +83,17 @@ distributions of Linux (and soon Windows) to Razor. These in turn can be
 applied to nodes using different policies.*
 
 Each OS requires its own model setup in Razor. Models manage OS related
-data, we are going to create&ldquo;ubuntu\_precis&rdquo; model. While creating the
+data, we are going to create &ldquo;ubuntu\_precise&rdquo; model. While creating the
 model, use the UUID from previous command here:
 
     $ razor model add -t ubuntu_precise -l install_precise -i  
 
 Create a policy for servers with two CPUs and 8 GB of memory:
 
-    $ razor policy add&ndash;t linux_deploy -l precise -m  -t cpus_2,memsize_8GiB -e true 
+    $ razor policy add &ndash;t linux_deploy -l precise -m  -t cpus_2,memsize_8GiB -e true 
 
 *Note: You can find additional tags for your nodes that razor has
-discovered by using the&lsquo;razor nod&rsquo; command.*
+discovered by using the &lsquo;razor node&rsquo; command.*
 
 At this point, you are ready to do automated installs, but not yet ready
 for the automated hand off to Chef. To fix this, create a Chef broker
@@ -109,10 +109,15 @@ like Chef or Puppet. Since we are using Chef, we need a Chef broker. In
 Razor, the broker takes over at the end of the OS installation, and
 executes predefined additional steps. The Chef broker will do the
 following:
+
 1. Install chef-client on the node.
+
 2. Create /etc/chef/validation.pem file.
+
 3. Create basic /etc/chef/client.rb file with client settings.
+
 4. Inject custom Razor metadata into the new node.
+
 5. Execute initial run list.
 
 The following command displays available brokers in Razor:
@@ -180,14 +185,14 @@ and execute the following:
 This will install an all-in-one OpenStack. Individual nodes can be
 installed the same way, by using different roles. For example:
 
-Install a controller node by adding&ldquo;single-controlle&rdquo; role to its
+Install a controller node by adding &ldquo;single-controller&rdquo; role to its
 run\_list:
 
-    $ knife node run_list add <controller_node_name>&lsquo;role[single-controller&rsquo;
+    $ knife node run_list add <controller_node_name> &lsquo;role[single-controller]&rsquo;
 
-Install a compute node by adding&ldquo;single-comput&rdquo; role to its run\_list:
+Install a compute node by adding &ldquo;single-compute&rdquo; role to its run\_list:
 
-    $ knife node run_list add <compute_node_name>&lsquo;role[single-compute&rsquo;
+    $ knife node run_list add <compute_node_name> &lsquo;role[single-compute]&rsquo;
     $ chef-client
 
 As soon as we run the chef-client on compute node, cookbooks use Chef
@@ -200,7 +205,7 @@ Cluster.
 
 Some of the important roles and recipes:
 
-Role[single-controller]&ndash; executes the below mentioned roles one by one:
+Role[single-controller] &ndash; executes the below mentioned roles one by one:
 
     run_list(
       "role[base]",
@@ -219,12 +224,12 @@ Role[single-controller]&ndash; executes the below mentioned roles one by one:
       "role[horizon-server]"
     ) 
 
-Role[single-compute]&ndash; executes the below listed roles one by one:
+Role[single-compute] &ndash; executes the below listed roles one by one:
 
     run_list(
       "role[base]",
       "recipe[nova::compute]"
-     &ldquo;recipe[nova::nova-network&rdquo;
+      &ldquo;recipe[nova::nova-network]&rdquo;
     )
 
 Users can update the run\_list and design the private cloud cluster in
@@ -294,7 +299,7 @@ node. If you create a Cinder policy for a server that has 16 GB ram and
 as Cinder nodes anytime they come online.
 
 Create Cinder specific tags for this example. Add the tag, followed by
-tag&ldquo;matcher&rdquo;. Each matcher is based on server specific metadata that
+tag &ldquo;matchers&rdquo;. Each matcher is based on server specific metadata that
 Razor Microkernel collects. 
 
     $ razor tag add -n cinderTags -t cinderName =>  cinderTagsTags =>  cinderUUID =>  2u7LG7s8JFBNl3cVdTsjwpMatcher =>  

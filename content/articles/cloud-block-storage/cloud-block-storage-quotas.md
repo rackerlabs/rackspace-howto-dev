@@ -35,7 +35,7 @@ The result of this request follows:
     {
         "quota_set": {
             "gigabytes": 10240,
-            "id":&ldquo;<Customer Number>",
+            "id": &ldquo;<Customer Number>",
             "snapshots": -1,
             "volumes": 50
         }

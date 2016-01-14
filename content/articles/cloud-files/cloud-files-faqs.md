@@ -46,7 +46,7 @@ services, thereby allowing businesses to more easily and affordably
 distribute content to millions of end users around the world. Together
 with Akamai, Rackspace has democratized content delivery.
 
-With Akama&rsquo;s service, Cloud Files brings a powerful and easy way to
+With Akamai&rsquo;s service, Cloud Files brings a powerful and easy way to
 publish content over a world-class, industry leading CDN. A Cloud Files
 user automatically gets access to this network. Users have to mark
 containers for publishing to CDN, and then they are instantly accessible
@@ -58,15 +58,15 @@ customers.
 
 In the Rackspace Cloud control panel, it is a matter of creating a
 Container (the storage compartment for data), uploading Objects (the
-files to serve over CDN), and marking the Container as&ldquo;publi&rdquo;. The
+files to serve over CDN), and marking the Container as &ldquo;public&rdquo;. The
 Container is then assigned a unique URL which can be combined with
 Object names to embed in web pages, email messages, blog posts, etc. For
-example, a user could upload a photo to a Container called&ldquo;image&rdquo;.
+example, a user could upload a photo to a Container called &ldquo;images&rdquo;.
 When this Container is published, it will be assigned a unique URL like
 http://c0000532.cdn.cloudfiles.rackspace.com. The user could then share
 a link to the photo with link like
 http://c0000532.cdn.cloudfiles.rackspace.com/IMG\_3432.jpg. When that
-link is accessed, the photo is served from the CDN; i&rsquo;s that simple!
+link is accessed, the photo is served from the CDN; it&rsquo;s that simple!
 
 ### What can I do with Cloud Files tools?
 
@@ -94,26 +94,26 @@ pseudo-folder structures. Link:
 **Django-Cloudfiles** is an extension to the management system of
 Django, the popular website framework. Django-Cloudfiles lets you
 synchronize the static content directory of your Django-powered website
-to your Cloudfiles account effortlessly. Django-Cloudfiles i&mldr;Cool! 1.
+to your Cloudfiles account effortlessly. Django-Cloudfiles is&mldr;Cool! 1.
 it only uploads files that have been modified (but can force upload-all)
 2. it can create a new container for you 3. it preserves your file
 hierarchy by naming your remote files such that they emulate nested
 directories: no need to flatten your existing structure! 4. it lets you
-store credentials in your sit&rsquo;s configuration file (for easy use) or
+store credentials in your site&rsquo;s configuration file (for easy use) or
 specify them on the command line (for greater security) 5. it ignores
-files you probably do&rsquo;t want to upload, like .DS\_Store, .git,
+files you probably don&rsquo;t want to upload, like .DS\_Store, .git,
 Thumbs.db, etc. Original! 6. plug-ins for the Django management system
 do exist (e.g. django-extensions), but none integrate with Cloudfiles
 yet (or any CDN to my knowledge) Easy! 7. a dead simple drop-in (no
 coding necessary) 8. no external dependancies required Going to be
 Popular! 9. Django is all about reusability; Django developers always
 look for an existing solution first (like this one)! 10. Django is
-gaining steam: i&rsquo;s supported by Google App Engine, and it is gaining
+gaining steam: it&rsquo;s supported by Google App Engine, and it is gaining
 traction. Link:
 [http://github.com/rossdakin/django-cloudfiles/](http://github.com/rossdakin/django-cloudfiles/ "http://github.com/rossdakin/django-cloudfiles/")
 
 **Media manager** plug-in will mirror your media library to your Cloud
-Files CDN. All UR&rsquo;s to this content will use the Cloud Files path when
+Files CDN. All URL&rsquo;s to this content will use the Cloud Files path when
 you insert them via the media manager. You can import all of your media
 to the CDN.
 
@@ -122,7 +122,7 @@ Tools](https://cloudtools.rackspace.com/home "https://cloudtools.rackspace.com/h
 
 ### Cloud Files Key Concepts
 
-Cloud File&trade; is not a&ldquo;file syste&rdquo; in the traditional sense. You will
+Cloud Files&trade; is not a &ldquo;file system&rdquo; in the traditional sense. You will
 not be able to *map* or *mount* virtual disk drives like you can with
 other forms of storage such as a SAN or NAS. Since Cloud Files is a
 different way of thinking when it comes to storage, following is a
@@ -138,21 +138,22 @@ Objects (files) stored under that user account.
 
 **Containers**
 
-A Container is a&ldquo;storage compartmen&rdquo; for your data and provides a way
+A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way
 for you to organize that data. You can think of a Container as a folder
 in Windows(R) or a directory in UNIX(R). The primary difference between
-a Container and these other&ldquo;file syste&rdquo; concepts is that Containers
+a Container and these other &ldquo;file system&rdquo; concepts is that Containers
 cannot be nested. You can, however, create up to 500,000 Containers
 under your account.
 
 **Objects**
 
-An&ldquo;Objec&rdquo; is the basic storage entity and its metadata that represents
-the&ldquo;file&rdquo; you store in Cloud Files. When you upload data to Cloud
+An &ldquo;Object&rdquo; is the basic storage entity and its metadata that represents
+the &ldquo;files&rdquo; you store in Cloud Files. When you upload data to Cloud
 Files the data is stored as-is (no compression or encryption) and
 consists of a location (Container), its name, and optional metadata
 consisting of key/value pairs. For instance, you may chose to store a
-backup of your digital photos and add a metadata key/value pair of&ldquo;PhotoAlbum-CaribbeanCruis&rdquo;. Objects are grouped into Containers and
+backup of your digital photos and add a metadata key/value pair of
+&ldquo;PhotoAlbum-CaribbeanCruise&rdquo;. Objects are grouped into Containers and
 you can have any number of Objects within a Container.
 
 **Operations**
@@ -177,7 +178,7 @@ accessible.
 **CDN-enabled Containers**
 
 To publish your data so that it can be served by Akamai's Content
-Distribution Network (CDN), you need to&ldquo;publish to CD&rdquo; the Container
+Distribution Network (CDN), you need to &ldquo;publish to CDN&rdquo; the Container
 that houses that data. When a Container is published any files will be
 publicly accessible and not require an authentication token for read
 access. Uploading content into a CDN-enabled Container is a secure
@@ -186,10 +187,11 @@ operation and will require a valid authentication token.
 Each published Container has a unique Uniform Resource Locator (URL)
 that can be combined with its Object names and openly distributed in web
 pages, emails, or other applications. For example, a published Container
-named&ldquo;photo&rdquo; can be referenced as&ldquo;
-http://c0344252.cdn.cloudfiles.rackspace.com&rdquo;. If that Container houses
-an image called&ldquo;cute\_kids.jp&rdquo;, then that image can be served by
-Akamai's CDN with the full URL of&ldquo;http://c0344252.cdn.cloudfiles.rackspace.com/cute\_kids.jp&rdquo;. This URL
+named &ldquo;photos&rdquo; can be referenced as &ldquo;
+http://c0344252.cdn.cloudfiles.rackspace.com &rdquo;. If that Container houses
+an image called &ldquo;cute\_kids.jpg&rdquo;, then that image can be served by
+Akamai's CDN with the full URL of
+&ldquo;http://c0344252.cdn.cloudfiles.rackspace.com/cute\_kids.jpg&rdquo;. This URL
 can be embedded in HTML pages, email messages, blog posts, etc. When
 that URL is accessed, a copy of that image is fetched from the Cloud
 Files storage system and cached in Akamai's CDN and served from there
@@ -211,13 +213,13 @@ and some third-party tools are also available.
 
 The basics of Cloud Files include:
 
--   Cloud Files is a&ldquo;clou&rdquo; storage system and not a traditional file
+-   Cloud Files is a &ldquo;cloud&rdquo; storage system and not a traditional file
     system.
--   Customers need to create&ldquo;Container&rdquo; in the storage system to store
+-   Customers need to create &ldquo;Containers&rdquo; in the storage system to store
     data.
 -   You cannot create Containers within other Containers.
 -   Customers can have any number of top level Containers.
--   Your data is stored in&ldquo;Object&rdquo; within those Containers.
+-   Your data is stored in &ldquo;Objects&rdquo; within those Containers.
 -   You can have any number of Objects within a Container.
 -   Objects can vary in size from a few bytes to very large.
 -   Customers can interact with Cloud Files through the Rackspace Cloud
@@ -297,8 +299,8 @@ Cloud Files is simple to use for developers and non-developers alike.
 Users can get started in as little as five minutes. Users do not have to
 know how to code to use Cloud Files and CDN. Users can, within minutes,
 sign up for Cloud Files, create a Container, upload a file and publish
-that Containe&rsquo;s content through the CDN (Refer to&ldquo;Cloud Files with CDN
-QuickStart guid&rdquo;. The Cloud Files GUI is easy to navigate and use.
+that Container&rsquo;s content through the CDN (Refer to &ldquo;Cloud Files with CDN
+QuickStart guide&rdquo;. The Cloud Files GUI is easy to navigate and use.
 Rackspace browser based control panel let users easily upload files and
 distribute on a CDN without writing any code.
 
@@ -316,7 +318,7 @@ mechanisms described in more detail in the Security section are simple
 to use. Third party tools which further simplify use of the storage
 service are available. Developers can use a language specific
 application programming interfaces to develop utilities or applications.
-The AP&rsquo;s are easy to use and are documented with examples to get
+The API&rsquo;s are easy to use and are documented with examples to get
 started quickly.
 
 **Affordability**
@@ -348,7 +350,7 @@ access. There are multiple third party tools (refer to Tools and
 Applications section) which make it even more flexible for users of
 specific environments such as the Mac OS.
 
-Developers can use the ReST web service and language-speicifc AP&rsquo;s in
+Developers can use the ReST web service and language-speicifc API&rsquo;s in
 PHP, Python, Java, Ruby, and C\#/.NET. The API's provide full support
 for managing content in Cloud Files and publishing content over the CDN.
 The API allow developers to work in the language they feel most
@@ -366,7 +368,7 @@ and serve popular content faster.
 With Cloud Files world-class free technical support is only a click
 away. Live support, with real people is available 24/7. Fanatical
 Support is built into the price. Users can get peace of mind knowing
-that technical support is just a phone call or online chat away&ndash; at any
+that technical support is just a phone call or online chat away &ndash; at any
 time of the day.
 
 **Data Redundancy**
@@ -395,7 +397,7 @@ terminate a valid session by the user, but the session tokens will
 automatically expire after 24 hours, forcing clients to resend their
 credentials.
 
-The API Access Key is only available from within the Rackspace Clou&rsquo;s
+The API Access Key is only available from within the Rackspace Cloud&rsquo;s
 control panel. Users must enter their valid username and password to
 gain access to view the API Access Key or to generate a new key.
 
@@ -407,7 +409,7 @@ encryption best suited for their application.
 
 When deleting storage Objects from the Cloud Files system, all copies of
 data are permanently removed within a matter of minutes. Furthermore,
-the physical blocks making up the custome&rsquo;s data is zeroed over before
+the physical blocks making up the customer&rsquo;s data is zeroed over before
 that space is re-used for other customer data. In other words, after a
 delete request, the data will be unrecoverable.
 
@@ -415,7 +417,7 @@ delete request, the data will be unrecoverable.
 
 **Introduction**
 
-Cloud File&trade; is an affordable, redundant, scalable, and dynamic storage
+Cloud Files&trade; is an affordable, redundant, scalable, and dynamic storage
 service offering. The core storage system is designed to provide a safe,
 secure, automatically re-sizing and network accessible way to store
 data.
@@ -430,7 +432,7 @@ network that is affordable and easy to use.
 
 Cloud Files also allows users to store/retrieve files and CDN-enable
 content with a simple Web Service (ReST: Representational State
-Transfer) interface. There are also language-specific AP&rsquo;s that utilize
+Transfer) interface. There are also language-specific API&rsquo;s that utilize
 the ReST API but make it much easier for developers to integrate into
 their applications.
 
@@ -441,7 +443,7 @@ an excellent storage solution for a number of scenarios and is well
 suited for a number of applications such as:
 
 -   Backing up or archiving data
--   Serving images/videos (streaming data to the use&rsquo;s browser)
+-   Serving images/videos (streaming data to the user&rsquo;s browser)
 -   Serving content with a world-class CDN (Akamai)
 -   Storing secondary/tertiary, static web-accessible data
 -   Developing new applications with data storage integration
@@ -450,7 +452,7 @@ suited for a number of applications such as:
 
 **Key Concepts**
 
-Cloud File&trade; is not a&ldquo;file syste&rdquo; in the traditional sense. You will
+Cloud Files&trade; is not a &ldquo;file system&rdquo; in the traditional sense. You will
 not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments to
@@ -471,16 +473,16 @@ There are two ways to use Cloud Files:
 The Control Panel provides an browser based, intuitive, easy to use
 graphical user interface. The interface allows you to manage your
 Containers and Objects without any programming knowledge. From there,
-users can CDN-enable the Container by marking it&ldquo;publi&rdquo;. Any Objects
+users can CDN-enable the Container by marking it &ldquo;public&rdquo;. Any Objects
 stored in a public, CDN-enabled Container are directly accessible over
-the Akama&rsquo;s CDN.
+the Akamai&rsquo;s CDN.
 
 **Programming Interfaces**
 
 There are several programming interfaces for Cloud Files that will allow
 you to integrate the storage solution into your applications, or provide
 automated ways of accessing the system. Currently, we support a ReST
-web-services API and several programming language AP&rsquo;s (Python, PHP,
+web-services API and several programming language API&rsquo;s (Python, PHP,
 Java, Ruby, and C\#/.NET).
 
 Please refer to the Developer Guide for more details about using these
@@ -489,12 +491,12 @@ site](http://docs.rackspace.com/api/).
 
 ### What is a Container in Cloud Files?
 
-A Container is a&ldquo;storage compartmen&rdquo; for your data and provides a way
+A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way
 for you to organize that data. You can think of a Container as analogous
-to a folder in Window&reg; or a directory in UNI&reg;. The primary difference
-between a Container and these other&ldquo;file syste&rdquo; constructs is that
+to a folder in Windows&reg; or a directory in UNIX&reg;. The primary difference
+between a Container and these other &ldquo;file system&rdquo; constructs is that
 Containers cannot be nested. You can have up to 500,000 Containers in
-your account, but they only exist at the&ldquo;top leve&rdquo; of your account and
+your account, but they only exist at the &ldquo;top level&rdquo; of your account and
 Containers cannot reside within other Containers.
 ![](/knowledge_center/sites/default/files/field/image/createContainer1.png)
 
@@ -702,7 +704,7 @@ content that changes more often. If you require a longer TTL, see the
 following blog post about using the API to set TTL: Extending TTL for
 Cloud Files CDN Users.
 
-Use the following steps to modify a containe&rsquo;s TTL within the Cloud
+Use the following steps to modify a container&rsquo;s TTL within the Cloud
 Control Panel:
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
@@ -788,7 +790,7 @@ nearly 1,000 networks.
 ### What will I experience when Akamai is implemented as my new CDN provider?
 
 Rackspace expects no customer impact during your transition to Akamai.
-Once we flip the switch to have a custome&rsquo;s content served by Akamai,
+Once we flip the switch to have a customer&rsquo;s content served by Akamai,
 Akamai will begin supporting both new URLs and all other existing CDN
 provider URLs.
 
@@ -847,7 +849,7 @@ What Are The Benefits Of Using a CDN?
     automatic server availability sensing with instant user redirection.
     CDNs can thus offer 100% availability, even with large power,
     network or hardware outages.
--   Better Usage analytics&ndash; CDNs can give more control of asset
+-   Better Usage analytics &ndash; CDNs can give more control of asset
     delivery and network load. They can optimize capacity per customer,
     provide views of real-time load and statistics, reveal which assets
     are popular, show active regions and report exact viewing details to

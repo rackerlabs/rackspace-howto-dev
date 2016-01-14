@@ -25,7 +25,7 @@ before completing the terminal steps for creating your cloud queue.
 -   In the Queues tab of the Control Panel, click **Create Queue**.
 -   In the pop out box, enter a name for your queue, select your
     preferred region and click **Create Queue**. (We are using
-   &ldquo;samplequeu&rdquo; for our example queue name throughout these steps.)
+    &ldquo;samplequeue&rdquo; for our example queue name throughout these steps.)
 
 When the queue is finished building, you will see the details for your
 queue listed in the Control Panel. You will then need to complete the

@@ -68,7 +68,7 @@ functionality?](#whatarethelimitations)\
 
 #### Performance
 
-[What are the default TT&rsquo;s for domains and
+[What are the default TTL&rsquo;s for domains and
 records?](#whataredefaultttl)\
  [How long does it take for DNS changes to be propagated
 globally?](#howlongpropagate)\
@@ -238,7 +238,7 @@ functionality does not allow you to search for records.
 
 No. 
 
-#### What are the default TT&rsquo;s for domains and records?
+#### What are the default TTL&rsquo;s for domains and records?
 
 When a domain and/or record is created, and no TTL (Time To Live) is
 specified, a default value of 3600 seconds is used. When the domain

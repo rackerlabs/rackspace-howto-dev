@@ -53,7 +53,7 @@ Content Caching.
 #### What are the benefits of content caching? {#whatarethebenefitsofcontentcaching}
 
 Content caching improves the performance of a web site by temporarily
-storing data that was recently accessed. While i&rsquo;s cached, requests for
+storing data that was recently accessed. While it&rsquo;s cached, requests for
 that data will be served by the load balancer instead of making another
 query to a web server behind it.
 
@@ -62,11 +62,11 @@ on the web server.
 
 #### What kind of files work well with content caching? {#whatkindoffilesworkwellwithcontentcaching}
 
-Content caching works well for files that do&rsquo;t change or that rarely
+Content caching works well for files that don&rsquo;t change or that rarely
 change. Most images and static content are good candidates for content
 caching.
 
-You do&rsquo;t want to cache files that would change regularly or would be
+You don&rsquo;t want to cache files that would change regularly or would be
 dynamically generated for different site visitors.
 
 ### Caching details {#cachingdetails}
@@ -122,7 +122,7 @@ At this time the following file extensions are cached:
 #### Can I exclude specific file types? {#caniexcludespecificfiletypes}
 
 Yes. Have your web server set the **Cache-Control** header to
-**no-cache** for requests for the file types you do&rsquo;t want cached.
+**no-cache** for requests for the file types you don&rsquo;t want cached.
 
 You can set this header in apache by adding a config block similar to
 the following to your apache config:
@@ -131,6 +131,7 @@ the following to your apache config:
         Header set Cache-Control "no-cache"
     </FilesMatch>
 
-Replace the extensions in the&ldquo;ico|flv|jpg|jpe&rdquo; section with the
-extensions for which you want to bypass caching, making sure to put a&ldquo;&rdquo; character between each extension.
+Replace the extensions in the &ldquo;ico|flv|jpg|jpeg&rdquo; section with the
+extensions for which you want to bypass caching, making sure to put a
+&ldquo;|&rdquo; character between each extension.
 

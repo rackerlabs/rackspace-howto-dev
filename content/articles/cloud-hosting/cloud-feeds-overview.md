@@ -39,7 +39,7 @@ infrastructure-level event data might not be available to you. However,
 your ability to access, manage, and react to this information can have a
 major impact on your mission-critical processes and applications.
 
-Tha&rsquo;s where Cloud Feeds comes in.
+That&rsquo;s where Cloud Feeds comes in.
 
 The Cloud Feeds service accepts event notifications from other Rackspace
 Cloud services, validates them, and makes the information available to
@@ -123,7 +123,7 @@ You may also post questions and other discussions in the Rackspace
 Community [API/SDK Developer
 Forum](https://community.rackspace.com/developers/f/7.aspx).
 
-Your feedback is a key ingredient of Rackspac&rsquo;s success. If you have
+Your feedback is a key ingredient of Rackspace&rsquo;s success. If you have
 suggestions for enhancements to Cloud Feeds, post your idea on the
 [Rackspace Product Feedback](https://feedback.rackspace.com/) site.
 

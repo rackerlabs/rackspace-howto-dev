@@ -82,7 +82,7 @@ policies you created.
 4.  Create a new **Notification Plan**called **AutoScale**.
 5.  Select the notification plan from the list and Select **Add
     Notifications \> Create a new notification.**
-6.  In the popup dialog box, specify the following values:***
+6.  In the popup dialog box, specify the following values:****
     -   **Name**: This name should match the webhook name that you chose
         earlier, for example, **ScaleUp**.
     -   **Type:**Select **Webhook**.

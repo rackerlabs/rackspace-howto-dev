@@ -19,16 +19,16 @@ CDN usage.
 
 When you use the CDN, all your assets are assigned a CDN URL. Your
 website then has that CDN URL in its source code and displays it when a
-user requests to see it. Some companies and individuals target website&rsquo;
-asset URLs and serve them without the site owne&rsquo;s permission. This is
-known as&ldquo;hot linkin&rdquo; and can result in a massive increase to your CDN
+user requests to see it. Some companies and individuals target websites&rsquo;
+asset URLs and serve them without the site owner&rsquo;s permission. This is
+known as &ldquo;hot linking&rdquo; and can result in a massive increase to your CDN
 bill if the problem goes unnoticed. 
 
 You can protect yourself, your content, and your invoice from hot
 linking in the following ways:\
  \
  -- Constant monitoring and alerts for abnormal CDN bandwidth usage\
- -- Proactive measures to make it more difficult to access your sit&rsquo;s
+ -- Proactive measures to make it more difficult to access your site&rsquo;s
 source code\
  \
  The following sections discuss  these options.
@@ -61,6 +61,7 @@ can use your CDN logs to find which URLs are compromised and take action
 immediately. You can also enable these logs via the Cloud Files API or
 from your [Cloud Control Panel](http://mycloud.rackspace.com/) by
 performing the following steps:
+
 1. In the top navigation bar, click **Storage \> Files**.\
  2. Click the gear icon next to the container for which you want to
 enable CDN logs, and select **Enable Logs**.
@@ -110,7 +111,7 @@ enough for them to give up.
 **No right-click scripts**
 
 There are scripts that will prevent visitors from using the right-click
-menu to copy your conten&rsquo;s link or view your sit&rsquo;s source code.
+menu to copy your content&rsquo;s link or view your site&rsquo;s source code.
 Although there are other ways to find this information, preventing
 right-click access can be an easy first step to protecting your site. 
 If you attempt this method, be sure to check its functionality in a

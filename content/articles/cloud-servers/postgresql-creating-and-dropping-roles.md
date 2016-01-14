@@ -171,7 +171,7 @@ we're connected as the postgres role (or another existing superuser):
      
     postgres=#CREATE ROLE mysuperuser2 WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'mysuperpass2';
 
-We've set the LOGIN attribute and a non-empty password&mdash; important if
+We've set the LOGIN attribute and a non-empty password &mdash; important if
 this superuser role will be specified for local and remote connections
 to the database. We've also set the CREATEDB and CREATEROLE attributes.
 With those attributes specified, our SQL statement will match the action

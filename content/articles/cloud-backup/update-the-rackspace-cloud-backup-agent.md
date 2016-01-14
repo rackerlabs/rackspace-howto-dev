@@ -47,11 +47,11 @@ restarts the driveclient service as part of the update process.
 Driveclient versions 1.28 and later install the service called the Cloud
 Backup Updater that keeps the agent up to date on the system.****
 
-**Step 1&ndash; Update the repository data:**
+**Step 1 &ndash; Update the repository data:**
 
     apt-get update
 
-**Step 2&ndash; Install the Cloud Backup Updater:**
+**Step 2 &ndash; Install the Cloud Backup Updater:**
 
     apt-get install --reinstall --assume-yes driveclient
 
@@ -70,7 +70,7 @@ as part of the update process. Driveclient versions 1.28 and later
 install a service called the Cloud Backup Updater that keeps the agent
 up to date on the system.
 
-**Step 1&ndash; Update the driveclient:**
+**Step 1 &ndash; Update the driveclient:**
 
     yum upgrade --assume-yes driveclient
 
@@ -94,7 +94,7 @@ follow the tarball instructions.
 
     pkill driveclient
 
-**Step 2&ndash; Delete (or rename) the previously downloaded tarball:**
+**Step 2 &ndash; Delete (or rename) the previously downloaded tarball:**
 
     rm driveclient-latest.tar
 

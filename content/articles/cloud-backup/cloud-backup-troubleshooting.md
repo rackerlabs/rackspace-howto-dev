@@ -58,7 +58,7 @@ Descriptions for each of the backup statues follow along with tips for
 why you might receive each status and what action you might take.
 
 ### \
- Backup status&ldquo;Skippe&rdquo;
+ Backup status &ldquo;Skipped&rdquo;
 
 The backup job was skipped because a backup job was already queued. A
 single backup job can be queued only once.
@@ -84,7 +84,7 @@ service through Window's Service Manager, or through the `sc` command
 line Windows utility.\
   
 
-### Backup status&ldquo;Misse&rdquo;
+### Backup status &ldquo;Missed&rdquo;
 
 A status of Missed indicates that the backup job was missed. The
 DriveClient service was likely not running at the time of the scheduled
@@ -99,7 +99,7 @@ respond, then the agent could not reach one of the API endpoints, the
 agent was not running, or the agent was manually stopped or terminated.\
   
 
-### Backup status&ldquo;Completed with Error&rdquo;
+### Backup status &ldquo;Completed with Errors&rdquo;
 
 A backup status of Completed with Errors indicates that the backup
 completed, but one or more files could not be backed up. The most common
@@ -122,7 +122,7 @@ issues that cause this type of status are as follows:
     current version of Cloud Backup supports only UTF-8 characters.\
       
 
-### Backup status&ldquo;Erro&rdquo;
+### Backup status &ldquo;Error&rdquo;
 
 Many issues might cause a backup status of Error to occur, such as Cloud
 account permissions for the user who configured that agent or the
@@ -195,7 +195,7 @@ Following are some of the issues and some possible fixes:
      Then, try to connect again.\
       
 
-### Backup status&ldquo;Faile&rdquo;
+### Backup status &ldquo;Failed&rdquo;
 
 The Failed status indicates that a serious problem occurred, and the
 backup job did not run. As with the Error status, check the logs on the
@@ -388,11 +388,11 @@ reports that have not been rotated because of retention policies, this
 information is generated on that cloud server.
 
 When you attempt to restore, the file list is generated on the target
-cloud server&ndash; the server to which you have selected to restore the
+cloud server &ndash; the server to which you have selected to restore the
 files.
 
 #### \
- **Cleanup stuck in&ldquo;preparin&rdquo; mode**
+ **Cleanup stuck in &ldquo;preparing&rdquo; mode**
 
 The cleanup process requires a large number of calculations before it
 can start cleaning up for the file rotation. As a result, the cleanup

@@ -106,15 +106,15 @@ Note: SSL is unavailable because the test links do not support HTTPS.
 -   The version of Apache has been updated to 2.4 along with all of its
     relevant CVE updates.
 
-**After the maintenance, my websit&rsquo;s php\_errors.log is showing&ldquo;PHP
-Warning Deprecate&rdquo; alerts. What happened?**
+**After the maintenance, my website&rsquo;s php\_errors.log is showing &ldquo;PHP
+Warning Deprecated&rdquo; alerts. What happened?**
 
 -   The PHP application should continue to run as normal, but it might
     not be supported by newer versions of PHP.
 -   We recommend that you update the application to use the newer
     functions for PHP 5.6.
 
-**My site keeps saying&ldquo;connection refuse&rdquo; when trying to test HTTPS
+**My site keeps saying &ldquo;connection refused&rdquo; when trying to test HTTPS
 when utilizing the updated test links. What happened?**
 
 -   Cloud Sites test links do not support SSL, so any requests made to

@@ -43,22 +43,28 @@ question) as soon as possible. See \<Insert Name\> for your temporary
 access information.**
 
 ### Creating New Users  {#GettingStartedwithRBACRoughDraft-CreatingnewusersthroughtheNewCloudControlPanel}
+
 1. In the upper-right corner of the [Cloud Control
 Panel](https://mycloud.rackspace.com/), click userName (accountNumber).
+
 2. From the menu, select **User Management.**
 
 ![](/knowledge_center/sites/default/files/field/image/UserManagement_1.png)
+
 3. In the **User Management** box, click **Create User**.
+
 4. Complete the **Username**, **Password**, **Security Question**, and
 **Security Answer** fields.  
 
      **Note:** Username must be unique. You cannot recover the username
 of a deleted user.
+
 5. Select a role to assign to the user.
 
 -   If the **Custom** role is chosen, go to step 6.
 -   If the **Full Access** or **Read-only Access** role is chosen, skip
     to step 7.
+
 6. In the **Product Access** section, select a role for each user. For
 optimal product interaction see [Suggested Role
 Configurations.](#configuration) 
@@ -68,11 +74,15 @@ cannot be changed to a multi-product role through the Cloud Control
 Panel. For more information about changing a custom role to a full
 access or read-only access role see[ custom
 role](http://www.rackspace.com/knowledge_center/article/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+
 7. In the **Contact Information** section, select the contact type.
-8. Specify the contac&rsquo;s name and email address.
-9. If the primary contac&rsquo;s details will be used for the user, slect
+
+8. Specify the contact&rsquo;s name and email address.
+
+9. If the primary contact&rsquo;s details will be used for the user, slect
 the **Use Primary Contact Details check box**. Otherwise, specify the
 user's contact details.
+
 10. Click **Create User**.
 
 **     Note:** The Control Panel view is different for each user
@@ -137,12 +147,17 @@ A user wants to create a backup in Cloud Databases
 In Cloud Files, give the user the Admin role
 
 ### **Adding a User Login and Custom Role to an Existing Contact** {.MsoNormal}
+
 1. In the **User Management** box, click the actions cog next to the
 contact's name.
+
 2. Click **Add Login...**
+
 3. Complete the **Username**, **Password**, **Security Question**, and
 **Security Answer** fields.
+
 4. Click **Save User Information** after choosing the custom role.
+
 5. Click the actions cog next to that user's name and configure the
 custom role.
 

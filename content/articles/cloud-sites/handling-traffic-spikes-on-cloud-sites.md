@@ -24,7 +24,7 @@ website (ie. hundreds of thousands of visitors in a few hours) we
 recommend reaching out to Support so we can monitor the event. Please
 call or chat with us and we can create a ticket for you.
 
-You may also submit a ticket with the subject line:&ldquo;Expected High
+You may also submit a ticket with the subject line: &ldquo;Expected High
 Traffic Event for 'website name' on 'date'". We ask that you submit your
 ticket at least 7 days before the expected high traffic date.
 

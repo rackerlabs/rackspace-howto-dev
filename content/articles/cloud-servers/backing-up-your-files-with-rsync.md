@@ -74,6 +74,7 @@ Let's go through the command in order:
 port.
 
 -avl: This contains three options;
+
 (a) is archive mode which basically keep the permission settings for
 the files. (v) is verbose mode. You can leave it out or increase it by
 appending two v's (-vv). (l) preserves any links you may have created.

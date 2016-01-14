@@ -43,7 +43,7 @@ Get quick answers to common questions about Magento.
     -   [What, and where, is the Magento Connect
         Manager?](#connectmanager)
     -   [How do I clear the cache on a Magento store?](#clearcache)
-    -   [Why rename the cache folder? Should&rsquo;t I just delete it because
+    -   [Why rename the cache folder? Shouldn&rsquo;t I just delete it because
         it's an old cache?](#whyrenamecachefldr)
     -   [What is reindexing and how can I do it via the command
         line?](#reindexingviacmdline)
@@ -142,7 +142,7 @@ minifying).
 To purge the cache forcefully, go to the document root and *rename* the
 **var/cache** folder (**cache.old** should suffice).
 
-### Why rename the cache folder? Should&rsquo;t I just delete it because it's an old cache?
+### Why rename the cache folder? Shouldn&rsquo;t I just delete it because it's an old cache?
 
 Clearing the cache refreshes the site and shows what it looks like
 underneath as caches build up. Cache buildup causes a site to stop
@@ -191,8 +191,8 @@ You can use the index names to re-index:
     /usr/bin/php /var/www/vhosts/domain.tld/shell/indexer.php --reindex catalog_product_flat
 
 You can use this entire command in a cron job, so if, for example, you
-need the catalog's stock status updated quickl&mdash;perhaps for a big
-sal&mdash;you can set up a cron job to re-index the cataloginventory\_stock
+need the catalog's stock status updated quickly&mdash;perhaps for a big
+sale&mdash;you can set up a cron job to re-index the cataloginventory\_stock
 index every minute, 5 minutes, 10 minutes, or another frequency. Be sure
 to set the frequency to something reasonable; you do not want cron jobs
 running on top of each other, using too much CPU, and causing stress on

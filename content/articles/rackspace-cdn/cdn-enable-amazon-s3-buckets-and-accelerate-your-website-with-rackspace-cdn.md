@@ -25,9 +25,12 @@ Panel](http://www.rackspace.com/blog/point-and-click-your-way-to-a-cloud-files-s
 
 Set up the origin server in AWS
 -------------------------------
-1.   Create an Amazon Web Servers (AWS) account if you do&rsquo;t already
+
+1.   Create an Amazon Web Servers (AWS) account if you don&rsquo;t already
 have one.
+
 2.   Log in to your AWS account.
+
 3.   Create an Amazon S3 bucket.
 
 4.   Edit permissions.
@@ -49,6 +52,7 @@ access. To edit permissions, perform the following steps:
 
 **Note:** Do not grant any other permissions for this grantee. Doing so
 might create a security issue.
+
 5.   In the settings for your bucket, enable static website hosting.
 
 When you enable this setting, Amazon S3 serves the file `/index.html`
@@ -61,7 +65,7 @@ see the same homepage whether they request `website.com/` or
          b.   Enter the file to use for the error document. This file is
 your 404 page.
 
-               If you do&rsquo;t have a 404 page created, you can enter
+               If you don&rsquo;t have a 404 page created, you can enter
 `index.html`.
 
 6.   Go to **Actions \> Upload**to upload your static HTML files.

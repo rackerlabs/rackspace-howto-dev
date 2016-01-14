@@ -40,7 +40,7 @@ and selecting Cloud Sites Control Panel.
     Cloud Sites, FTP/SSHFS/FTP
     Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients).
     Your best bet will be to upload (to your web/content folder)
-    everything inside the&lsquo;serendipit&rsquo; folder contained within the .zip
+    everything inside the &lsquo;serendipity&rsquo; folder contained within the .zip
     or tar.gz file you downloaded.
 6.  Once the files have finished uploading, you are ready to get started
     with the installation of Serendipity and its settings.

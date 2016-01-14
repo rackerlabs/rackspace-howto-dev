@@ -74,7 +74,7 @@ Upload an SSH key pair
 OnMetal servers do not support password-based login, so you must upload
 an SSH key pair.
 
-    supernova iad keypair-add&ndash;pub-key <path to your public key> <public key name>
+    supernova iad keypair-add &ndash;pub-key <path to your public key> <public key name>
 
 For example:
 

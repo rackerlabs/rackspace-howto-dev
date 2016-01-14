@@ -51,7 +51,7 @@ Backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup
 in this guide.
 
 -   Note: You cannot back up restore a system that is offline. If the
-    system status displays&ldquo;offlin&rdquo; and your server is active, contact
+    system status displays &ldquo;offline&rdquo; and your server is active, contact
     support.
 
  
@@ -65,7 +65,7 @@ Backup*](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backu
 in this guide.
 
 -   Note: You cannot back up or restore to a system with an offline
-    status. If the system status displays&ldquo;offlin&rdquo; and your server is
+    status. If the system status displays &ldquo;offline&rdquo; and your server is
     active, please contact support.
 
  

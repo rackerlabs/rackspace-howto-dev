@@ -21,7 +21,7 @@ To build a hybrid hosting solution that leverages the security of
 dedicated servers with the flexibility and service offerings of the
 Rackspace Cloud, you need to use RackConnect to allow the two types of
 resources to communicate and work together. Contact your Dedicated
-Account Team to get your RackConnect&reg;^ deployment set up. If you are
+Account Team to get your RackConnect^&reg;^ deployment set up. If you are
 new to Rackspace,call us at 800 961 2888 to open a new dedicated hosting
 account and learn more about the capabilities of a hybrid
 implementation.
@@ -34,7 +34,7 @@ Setting up a RackConnect configuration
     They will start the process by having network engineers assess your
     configuration for RackConnect compatibility and readiness.
 
-    -   If you do&rsquo;t have a device that is compatible with RackConnect,
+    -   If you don&rsquo;t have a device that is compatible with RackConnect,
         our sales and account teams will work with you to upgrade your
         environment.
 

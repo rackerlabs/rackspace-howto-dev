@@ -88,7 +88,7 @@ Check the pending reboot status
 A migration can require a server reboot if you're performing a full
 server migration. Verify whether your server is already pending a reboot
 because of updates, and if it is, perform the reboot before the
-migration&rdquo;
+migration.&rdquo;
 
 To ensure your server comes online after the migration, confirm that
 there are no pending Windows Updates that require a reboot. Pending
@@ -176,8 +176,8 @@ service.
 
 1.  Move the cursor  to the bottom right corner of the screen and
     activate the Charms bar.
-2.  Click on the search icon, and type&ldquo;SQL Server Configuration
-    Manage&rdquo;.
+2.  Click on the search icon, and type &ldquo;SQL Server Configuration
+    Manager&rdquo;.
 3.  On the ribbon under the search field, click **SQL Server
     Configuration Manager**.
 4.  In the SQL**Server Configuration Manager**, expand SQL Server
@@ -204,7 +204,7 @@ are set to start automatically.
 
 1.  Move the cursor to the bottom right corner of the screen and
     activate the Charms bar.
-2.  Click the search icon and type&ldquo;services.ms&rdquo;. On the ribbon under
+2.  Click the search icon and type &ldquo;services.msc&rdquo;. On the ribbon under
     the search field, click **services.msc**.
 3.  When the **Services Management** window opens, double click on a
     service that you want to configure to auto start and set the startup
@@ -214,7 +214,7 @@ After the migration
 -------------------
 
 -   Ensure that the server is online. You can ping the IP address by
-    running the ping command followed by your serve&rsquo;s IP address.
+    running the ping command followed by your server&rsquo;s IP address.
 -   Ensure that the remote connection to the server works by initiating
     an RDP session to the server.
 -   Ensure that all sites or applications load.

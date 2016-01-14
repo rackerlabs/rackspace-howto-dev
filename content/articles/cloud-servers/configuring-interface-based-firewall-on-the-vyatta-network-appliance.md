@@ -43,7 +43,7 @@ the rule. Vyatta system firewall functionality provides the following:
 -   Ability to set the firewall globally for stateful or stateless
     operation
 
-Vyatt&rsquo;s advanced firewall capabilities include stateful failover,
+Vyatta&rsquo;s advanced firewall capabilities include stateful failover,
 zone-based firewalling and time-based firewalling.
 
 Firewall definition
@@ -77,14 +77,14 @@ Firewall rules
 --------------
 
 Rules are executed in sequence according to the rule number. If the
-traffic matches the characteristics specified by the rule, the rul&rsquo;s
-action is executed; if not, the system&ldquo;falls throug&rdquo; to the next rule.
+traffic matches the characteristics specified by the rule, the rule&rsquo;s
+action is executed; if not, the system &ldquo;falls through&rdquo; to the next rule.
 
 The action can be one of the following:
 
 -   Accept. Traffic is allowed and forwarded.
 -   Drop. Traffic is silently discarded.
--   Reject. Traffic is discarded with an ICMP&ldquo;Port Unreachabl&rdquo;
+-   Reject. Traffic is discarded with an ICMP &ldquo;Port Unreachable&rdquo;
     message.
 
 Applying firewall rules to interfaces (interface-based firewall)
@@ -125,6 +125,7 @@ interface of the Vyatta. This rule set does the following:
 -   Allows SSH and ICMP traffic
 
  
+
 1. Log onto the Vyatta Appliance using ssh:
 
     ssh vyatta@X.X.X.X
@@ -134,6 +135,7 @@ Vyatta message and a prompt to enter your Vyatta password.
 
 Once you're logged onto the appliance, you can enter a ? or press the
 Tab key for help.
+
 2. Enter configuration mode:
 
     vyatta@vyatta: configure
@@ -143,10 +145,12 @@ Tab key for help.
 The \# symbol indicates you're in configuration mode.
 
  
+
 3. Make the firewall stateful (global configuration)
 
     set firewall state-policy established action 'accept'
     set firewall state-policy related action 'accept'
+
 4. Set the recommended global rules which will apply to all firewall
 protected interfaces. Anything global can be changed within the
 interface specific firewall rule
@@ -161,6 +165,7 @@ interface specific firewall rule
     set firewall send-redirects 'enable'
     set firewall source-validation 'disable'
     set firewall syn-cookies 'enable'
+
 5. Start configuring firewall configuration for Public interface
 
     edit firewall name protect-vyatta
@@ -211,15 +216,18 @@ Allow icmp
     set rule 900 description 'allow icmp'
     set rule 900 protocol 'icmp' 
     exit
+
 6. Apply locally on Public interface (eth0)
 
     set interfaces ethernet eth0 firewall local name 'protect-vyatta'
+
 7. Create and apply firewall ruleset 'in' (for traffic destined for
 cloud servers) on Public interface (eth0)
 
     set firewall name untrusted default-action 'drop'
     set firewall name untrusted description 'deny traffic from internet'
     set interfaces ethernet eth0 firewall in name 'untrusted'
+
 8. Commit and save the changes.
 
     commit

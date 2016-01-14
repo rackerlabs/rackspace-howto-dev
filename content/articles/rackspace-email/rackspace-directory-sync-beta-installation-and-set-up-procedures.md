@@ -44,12 +44,12 @@ domain controllers.
 
 Enable the following ports on the Directory Sync server:
 
--   **443**&ndash;Outbound HTTPS connections from the Directory Sync service
+-   **443** &ndash;Outbound HTTPS connections from the Directory Sync service
     to the Rackspace API.
--   **8732**&ndash; Open for connections from other domain controllers to the
+-   **8732** &ndash; Open for connections from other domain controllers to the
     Directory Sync server not used for any connections outside your
     network. This port is used by domain controller password hooks. 
--   **8080**&ndash; Used only locally on the Directory Sync service server
+-   **8080** &ndash; Used only locally on the Directory Sync service server
     for a web browser user interface. You can block this port for any
     external connections.
 
@@ -95,7 +95,7 @@ platforms.
 -   **Directory Sync Service x64.msi**
 -   **Directory Sync Service x86.msi**
 
-### Administrato&rsquo;s guide
+### Administrator&rsquo;s guide
 
 To learn more about the features of the Directory Sync and how to use it
 after installation, see the [Rackspace Directory Sync Administrator's
@@ -236,7 +236,7 @@ The following figure illustrates this communication process.
 
 During the Installation of the Directory Sync service on the primary DC,
 the **Directory Sync Password Handler Install** folder was created on
-the desktop. Use the installer in this folder to synchronize your user&rsquo;
+the desktop. Use the installer in this folder to synchronize your users&rsquo;
 passwords across multiple domain controllers.
 
 **Note:** the **.msi** file within the folder should be installed on the

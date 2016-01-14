@@ -22,7 +22,7 @@ volume or 75 GB for an SATA volume. The maximum volume size is 1 TB.
 
 ### What's the maximum number of Cloud Block Storage volumes I can attach to a single server instance?
 
-Depending on your Cloud Serve&rsquo;s operating system, you can have up to a
+Depending on your Cloud Server&rsquo;s operating system, you can have up to a
 maximum of 14 Cloud Block Storage volumes attached to a single server.
 
 ^[back\\ to\\ top](#top)^
@@ -80,7 +80,7 @@ Cloud Block Storage is an excellent option for you if you:
 
 Cloud Block Storage (CBS) is not meant as a direct replacement of any
 existing Rackspace products (shared or dedicated). CBS allows Rackspace
-Cloud customers to add&ldquo;a la cart&rdquo; storage to their existing next
+Cloud customers to add &ldquo;a la carte&rdquo; storage to their existing next
 generation Cloud Servers and should be considered a complementary
 cloud-based storage offering that rounds out our entire storage
 portfolio.
@@ -144,10 +144,10 @@ platforms, but not first-generation Cloud Servers.
 
 ### When I am using a volume, how can I know how much space I have left?
 
-You can verify a volum&rsquo;s capacity and available space using basic
+You can verify a volume&rsquo;s capacity and available space using basic
 system commands available via their Cloud Server operating system:
 
--   In Linux CLI: From a terminal window, run the&ldquo;df -&rdquo; command and
+-   In Linux CLI: From a terminal window, run the &ldquo;df -h&rdquo; command and
     note the Size, Used, Avail, and Capacity of the storage volume
 -   Windows Explorer: Right-click on drive icon and select "Properties,"
     and note Capacity, Free space, and Used space
@@ -249,7 +249,7 @@ snapshot. You first create snapshot from your existing volume, which
 gets stored in Cloud Files. Second, you create a new volume using your
 snapshot as the source. This process requires writing snapshot data in
 and out of Cloud Files so it can take longer than the Cloning Method.
-This method is recommended if you do&rsquo;t require quick access to your
+This method is recommended if you don&rsquo;t require quick access to your
 copied volumes and want the added durability, and lower price, of having
 your volume snapshot stored in Cloud Files.
 

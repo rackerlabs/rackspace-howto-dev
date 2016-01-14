@@ -109,7 +109,9 @@ configuration file, these values are set:
     </log4j:configuration>
 
 The maximum values for these parameters are as follows:
+
 &middot;  MaxBackupIndex: 12
+
 &middot;  MaxFileSize: unlimited (500 MB recommended)
 
 After the problem is diagnosed, we recommend that you return these

@@ -12,13 +12,13 @@ body_format: full_html
 
 ### Other scenarios {#otherscenarios}
 
-I&rsquo;s not always practical to perform a live sync the way we outlined it,
+It&rsquo;s not always practical to perform a live sync the way we outlined it,
 or you may want to migrate just a couple applications instead of the
-entire system. Le&rsquo;s look at your options in those cases.
+entire system. Let&rsquo;s look at your options in those cases.
 
 Remember that this process requires that rsync be installed on both the
-origin and destination servers. The package name is usually&ldquo;rsyn&rdquo;. Use
-your package manager to install it if you get a&ldquo;not foun&rdquo; response
+origin and destination servers. The package name is usually &ldquo;rsync&rdquo;. Use
+your package manager to install it if you get a &ldquo;not found&rdquo; response
 from running:
 
     which rsync
@@ -31,11 +31,11 @@ have a lot of files that change frequently. After a pass or two with
 rsync on a live server it can be practical to perform the final sync
 while your origin server is not running at all.
 
-I&rsquo;s also possible that you may be unable to boot the source system for
-reasons unrelated to the installed software. In that case yo&rsquo;d also
+It&rsquo;s also possible that you may be unable to boot the source system for
+reasons unrelated to the installed software. In that case you&rsquo;d also
 need to be able to access your files while the server is dormant.
 
-For real (non-virtual) servers yo&rsquo;d copy files while keeping the server
+For real (non-virtual) servers you&rsquo;d copy files while keeping the server
 down by booting the machine from a rescue disk (usually a live CD
 distribution), mounting the file system, then performing the final sync
 from there. Fortunately there are ways to simulate that for virtual
@@ -43,8 +43,9 @@ servers.
 
 An approach many virtual server providers take is to provide an option
 to boot your server using a temporary server instance. It acts as a
-virtual rescue disk, allowing you to mount your serve&rsquo;s file system
-while the system is&rsquo;t running. For Rackspace Cloud Servers i&rsquo;s called&ldquo;rescue mod&rdquo;.
+virtual rescue disk, allowing you to mount your server&rsquo;s file system
+while the system isn&rsquo;t running. For Rackspace Cloud Servers it&rsquo;s called
+&ldquo;rescue mode&rdquo;.
 
 #### Rescue mode {#rescuemode}
 
@@ -55,20 +56,20 @@ For more information on rescue mode see [this
 article](/knowledge_center/node/3295 "How to use rescue mode").
 
 Once the server is in rescue mode remember that the SSH key for the host
-will have changed, so yo&rsquo;ll probably need to delete the serve&rsquo;s key
-from your&ldquo;\~/.ssh/known\_host&rdquo; file or equivalent.
+will have changed, so you&rsquo;ll probably need to delete the server&rsquo;s key
+from your &ldquo;\~/.ssh/known\_hosts&rdquo; file or equivalent.
 
-Once yo&rsquo;re logged into the instance in rescue mode you should be able
-to mount your serve&rsquo;s file system and then proceed with the sync.
+Once you&rsquo;re logged into the instance in rescue mode you should be able
+to mount your server&rsquo;s file system and then proceed with the sync.
 
-Determine your file syste&rsquo;s device by running:
+Determine your file system&rsquo;s device by running:
 
     fdisk -l
 
 Look for the device that matches the size of your disk. It should be the
-second disk listed, either&ldquo;/dev/sda&rdquo;,&ldquo;/dev/sdb&rdquo;, or&ldquo;/dev/xvdb&rdquo;.
+second disk listed, either &ldquo;/dev/sda1&rdquo;, &ldquo;/dev/sdb1&rdquo;, or &ldquo;/dev/xvdb1&rdquo;.
 
-W&rsquo;ll use /dev/xvdb1 for our example. To mount that filesystem onto the
+We&rsquo;ll use /dev/xvdb1 for our example. To mount that filesystem onto the
 /mnt/origin directory, run:
 
     mkdir /mnt/origin
@@ -83,8 +84,8 @@ assist you.
 
 ### Rsyncing from a mount point {#rsyncingfromamountpoint}
 
-After booting your server into a rescue mode and mounting your serve&rsquo;s
-file system to a mount point like&ldquo;/mnt/origi&rdquo; you will need to adjust
+After booting your server into a rescue mode and mounting your server&rsquo;s
+file system to a mount point like &ldquo;/mnt/origin&rdquo; you will need to adjust
 your rsync command accordingly.
 
 First make sure you create an exclude file and make any changes
@@ -123,28 +124,28 @@ migration:
     /usr/sbin/nova-agent*
     /etc/init.d/nova-agent*
 
-Next w&rsquo;ll set up our rsync command so it takes the mount points of the
+Next we&rsquo;ll set up our rsync command so it takes the mount points of the
 file systems on both servers into account. The rsync command with the
 origin server in a rescue mode would be:
 
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after --exclude-from="/mnt/origin/home/demo/exclude.txt" /mnt/origin/ root@1.2.3.4:/
 
-Note the trailing&ldquo;&rdquo; on the origin directory. Including the slash at
+Note the trailing &ldquo;/&rdquo; on the origin directory. Including the slash at
 the end makes sure rsync treats the origin and destination directories
-as the same relative locations, so do&rsquo;t leave that part out. Otherwise
+as the same relative locations, so don&rsquo;t leave that part out. Otherwise
 you might end up with your files getting copied into a new subdirectory
 on the destination instead of sending the files to their proper
 locations.
 
 As a bonus, with that trailing slash on the directories rsync will treat
-the exclude file list as relative to the source directory. Tha&rsquo;s why we
-do&rsquo;t need to change the exclude file to account for the mount point.
+the exclude file list as relative to the source directory. That&rsquo;s why we
+don&rsquo;t need to change the exclude file to account for the mount point.
 
 #### Both servers in rescue mode {#bothserversinrescuemode}
 
-If yo&rsquo;re being extra careful and have both the origin and the
+If you&rsquo;re being extra careful and have both the origin and the
 destination in a rescue mode you would change the destination directory
-too. With the destination server mounted at&ldquo;/mnt/destinatio&rdquo; the rsync
+too. With the destination server mounted at &ldquo;/mnt/destination&rdquo; the rsync
 command would look like:
 
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after --exclude-from="/mnt/origin/home/demo/exclude.txt" /mnt/origin/ root@1.2.3.4:/mnt/destination/
@@ -162,12 +163,12 @@ work than running a full sync but it could be faster overall.
 In general this approach would require installing the requisite package
 on the destination server then copying its configuration and data files
 from the origin server to the appropriate place on the destination. Once
-yo&rsquo;re done start or restart the service on the destination and test to
+you&rsquo;re done start or restart the service on the destination and test to
 make sure everything is in its place.
 
 You may need to tweak any aspects of the system you had changed on the
-origin server once yo&rsquo;ve completed the copies. If you created a
-logrotate config for the service (or changed it) yo&rsquo;ll need to copy
+origin server once you&rsquo;ve completed the copies. If you created a
+logrotate config for the service (or changed it) you&rsquo;ll need to copy
 that over. If you had a cron job set up for the service that would also
 need to be migrated.
 
@@ -175,30 +176,32 @@ A couple examples follow to illustrate the approach.
 
 #### Web servers {#webservers}
 
-If yo&rsquo;re migrating a web server yo&rsquo;ll need to make sure you bring over
+If you&rsquo;re migrating a web server you&rsquo;ll need to make sure you bring over
 your configuration files (including virtual host definitions) as well as
 the files used by your website.
 
-If yo&rsquo;ve been keeping your web files in a use&rsquo;s home directory make
+If you&rsquo;ve been keeping your web files in a user&rsquo;s home directory make
 sure you have that user created on the destination server. If the user
-name is&ldquo;dem&rdquo; and the web files are all in the directory&ldquo;public\_htm&rdquo;
+name is &ldquo;demo&rdquo; and the web files are all in the directory &ldquo;public\_html&rdquo;
 you can run an rsync command similar to the following:
 
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after ~demo/public_html root@1.2.3.4:/~demo/public_html
 
-We left out the&ldquo;exclude-fro&rdquo; flag because we would&rsquo;t usually need to
+We left out the &ldquo;exclude-from&rdquo; flag because we wouldn&rsquo;t usually need to
 exclude any files from this sync.
 
 The configuration directory for your web server may vary by
-distribution, particularly for apache. Ubuntu and Debian use&ldquo;/etc/apache&rdquo;, CentOS and other Red Hat-based distributions use&ldquo;/etc/http&rdquo;, and so on. So first, find your config directory.
+distribution, particularly for apache. Ubuntu and Debian use
+&ldquo;/etc/apache2&rdquo;, CentOS and other Red Hat-based distributions use
+&ldquo;/etc/httpd&rdquo;, and so on. So first, find your config directory.
 
 Once you have the configuration directory identified run an rsync
 command similar to the above but copying the configuration directory
-instead. If yo&rsquo;re running nginx this might look like:
+instead. If you&rsquo;re running nginx this might look like:
 
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after /etc/nginx root@1.2.3.4:/etc/nginx
 
-If yo&rsquo;re using PHP you may also need to bring over any changes you made
+If you&rsquo;re using PHP you may also need to bring over any changes you made
 to your php.ini.
 
 After that restart your web server and run it through some tests.
@@ -213,14 +216,14 @@ Bring the database service down and identify where its configuration and
 data files are kept. For mysql the configuration files are usually in
 /etc/mysql and the databases themselves are in /var/lib/mysql.
 
-I&rsquo;s easier to do this with two rsync commands, one for the config and
+It&rsquo;s easier to do this with two rsync commands, one for the config and
 one for the databases. For a mysql installation the commands might look
 like this:
 
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after /etc/mysql root@1.2.3.4:/etc/mysql
     sudo rsync -e 'ssh -p 30000' -azPx --delete-after /var/lib/mysql root@1.2.3.4:/var/lib/mysql
 
-Next check to make sure there are&rsquo;t other changes you made on the
+Next check to make sure there aren&rsquo;t other changes you made on the
 origin server related to the database (like cron jobs or logrotate
 configuration). Then start or restart the database service on the
 destination and get to testing.

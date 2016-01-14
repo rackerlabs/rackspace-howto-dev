@@ -124,8 +124,8 @@ The following graph illustrates how cooldowns affect policy execution.
         Values](#minmax)
     -   [Delete Servers Policy](#DeleteServers)
 
-The *scaling policy* determines what kind of scaling occur&mdash;up or
-dow&mdash;and when scaling occurs. You must define separate polices for
+The *scaling policy* determines what kind of scaling occurs&mdash;up or
+down&mdash;and when scaling occurs. You must define separate polices for
 scaling up and scaling down. You can have multiple scaling policies per
 scaling group.
 

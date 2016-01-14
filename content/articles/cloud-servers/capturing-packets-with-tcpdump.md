@@ -44,7 +44,7 @@ Use this command to capture packets for a specific port:
 Our command is returning all packets which have port 80 as their
 destination or source port.
 
-Now le&rsquo;s be more specific and capture only packets with destination
+Now let&rsquo;s be more specific and capture only packets with destination
 port 80. If you have a web server on your cloud, then you can use the
 command below to see incoming packets.
 
@@ -55,7 +55,7 @@ catch packets coming only from IP 1.2.3.4:
 
     sudo tcpdump src host 1.2.3.4
 
-Tcpdump can take logical arguments such as&lsquo;and&rsquo; as well as&lsquo;or&rsquo; You
+Tcpdump can take logical arguments such as &lsquo;and,&rsquo; as well as &lsquo;or.&rsquo; You
 can use logical statements in a tcpdump command. For example, to catch
 all the SSH packets going from an SSH server to a client with IP
 1.2.3.4:

@@ -12,7 +12,7 @@ body_format: full_html
 
 #### Introduction
 
-Cloud File&trade; is an affordable, redundant, scalable, and dynamic storage
+Cloud Files&trade; is an affordable, redundant, scalable, and dynamic storage
 service offering. The core storage system is designed to provide a safe,
 secure, automatically re-sizing and network accessible way to store
 data.
@@ -27,7 +27,7 @@ network that is affordable and easy to use.
 
 Cloud Files also allows users to store/retrieve files and CDN-enable
 content with a simple Web Service (ReST: Representational State
-Transfer) interface. There are also language-specific AP&rsquo;s that utilize
+Transfer) interface. There are also language-specific API&rsquo;s that utilize
 the ReST API but make it much easier for developers to integrate into
 their applications.
 
@@ -38,7 +38,7 @@ an excellent storage solution for a number of scenarios and is well
 suited for a number of applications such as:
 
 -   Backing up or archiving data
--   Serving images/videos (streaming data to the use&rsquo;s browser)
+-   Serving images/videos (streaming data to the user&rsquo;s browser)
 -   Serving content with a world-class CDN (Akamai)
 -   Storing secondary/tertiary, static web-accessible data
 -   Developing new applications with data storage integration
@@ -47,7 +47,7 @@ suited for a number of applications such as:
 
 #### Key Concepts {#keyconcepts}
 
-Cloud File&trade; is not a&ldquo;file syste&rdquo; in the traditional sense. You will
+Cloud Files&trade; is not a &ldquo;file system&rdquo; in the traditional sense. You will
 not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments
@@ -68,16 +68,16 @@ There are two ways to use Cloud Files:
 The Control Panel provides an browser based, intuitive, easy to use
 graphical user interface. The interface allows you to manage your
 Containers and Objects without any programming knowledge. From there,
-users can CDN-enable the Container by marking it&ldquo;publi&rdquo;. Any Objects
+users can CDN-enable the Container by marking it &ldquo;public&rdquo;. Any Objects
 stored in a public, CDN-enabled Container are directly accessible over
-the Akama&rsquo;s CDN.
+the Akamai&rsquo;s CDN.
 
 #### Programming Interfaces {#programminginterfaces}
 
 There are several programming interfaces for Cloud Files that will allow
 you to integrate the storage solution into your applications, or provide
 automated ways of accessing the system. Currently, we support a ReST
-web-services API and several programming language AP&rsquo;s (Python, PHP,
+web-services API and several programming language API&rsquo;s (Python, PHP,
 Java, Ruby, and C\#/.NET).
 
 Please refer to the Developer Guide for more details about using these

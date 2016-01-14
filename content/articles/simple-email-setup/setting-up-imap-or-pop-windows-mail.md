@@ -43,13 +43,13 @@ in the **From** field of messages you send.
 
 8.    Enter the following information:
 
--   **Incoming e-mail server type*&mdash;Select **IMAP** from the list.
--   **Incoming mail (POP3 or IMAP) server*&mdash;Enter the secure server
+-   **Incoming e-mail server type**&mdash;Select **IMAP** from the list.
+-   **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
     name:
 
     **secure.emailsrvr.com**
 
--   **Outgoing e-mail server (SMTP) name*&mdash;Enter the secure server name:
+-   **Outgoing e-mail server (SMTP) name**&mdash;Enter the secure server name:
 
     **secure.emailsrvr.com**
 
@@ -60,27 +60,38 @@ in the **From** field of messages you send.
 form](http://c458714.r14.cf2.rackcdn.com/EA_ServerSettings_01.png)
 
 9.    Click **Next**.
+
 10. Enter your entire email address (for example,
 *myname@mydomain.com*).
+
 11. Enter the password for your email account.
+
 12. Leave the **Remember password** check box selected, if desired.
+
 13. Click **Next**.
-14. In the Congratulations window, if you do&rsquo;t want to download all
+
+14. In the Congratulations window, if you don&rsquo;t want to download all
 your messages, select the check box **Do not download my e-mail at this
 time**. Otherwise, you can leave this setting unselected.
+
 15. Click **Finish**.
+
 16. The account you just created will be selected. Click the
 **Properties** button.
+
 17. Click the **Advanced** tab.
 
 18.  Select both **This server requires a secure connection (SSL)**
 check boxes.
+
 19. In the **Outgoing mail (SMTP)** field, enter the secure outgoing
 port: **465**\
   \
  ![ Port addresses
 form](http://c458714.r14.cf2.rackcdn.com/EA_AdvancedSettings_02.png)
+
 20. Click **OK**.
+
 21. Click **Close**.
 
 To set up Windows Mail for POP, perform the following steps:
@@ -103,13 +114,13 @@ in the **From** field of messages you send.
 
 8.    Enter the following information:
 
--   **Incoming e-mail server type*&mdash;Ensure that **POP3** is selected.
--   **Incoming mail (POP3 or IMAP) server*&mdash;Enter the secure server
+-   **Incoming e-mail server type**&mdash;Ensure that **POP3** is selected.
+-   **Incoming mail (POP3 or IMAP) server**&mdash;Enter the secure server
     name:
 
     **secure.emailsrvr.com**
 
--   **Outgoing e-mail server (SMTP)*&mdash;Enter the secure server name:
+-   **Outgoing e-mail server (SMTP)**&mdash;Enter the secure server name:
 
     **secure.emailsrvr.com**
 
@@ -120,32 +131,45 @@ in the **From** field of messages you send.
 form](http://c458716.r16.cf2.rackcdn.com/EA_SetupServers_01.png)
 
 9.    Click **Next**.
+
 10. Enter your entire email address (for example,
 *myname@mydomain.com*).
+
 11. Enter the password for your email account.
+
 12. Leave the **Remember password** check box selected , if desired. 
+
 13. Click **Next**.
-14. In the Congratulations window, if you do&rsquo;t want to download all
+
+14. In the Congratulations window, if you don&rsquo;t want to download all
 your messages, select the check box labeled **Do not download my e-mail
 at this time**. Otherwise, you can leave this setting unchecked.
+
 15. Click **Finish**.
+
 16. The account you just created will be selected. Click
 **Properties**.
+
 17. Click the **Advanced** tab.
+
 18. Select both **This server requires a secure connection (SSL)**
 check boxes.
+
 19. In the **Outgoing mail (SMTP)** field, enter the secure outgoing
 port: **465**\
   \
  ![ Port numbers
 form](http://c458716.r16.cf2.rackcdn.com/EA_AdvancedSettings_02.png)
+
 20. A POP connection typically removes the email messages from the
 email server after you have downloaded new messages to your computer. 
 If you would like to leave copies on the server, select the **Leave a
 copy of messages on server** check box. To avoid exceeding your
-accoun&rsquo;s storage limits, indicate whether the server should delete
+account&rsquo;s storage limits, indicate whether the server should delete
 messages after a certain number of days and/or delete messages when you
 manually delete them from the Deleted Items folder.
+
 21. Click **OK**.
+
 22. Click **Close**.
 

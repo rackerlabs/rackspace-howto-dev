@@ -12,11 +12,11 @@ body_format: tinymce
 
 #### Introduction
 
-In this example, w&rsquo;re going to demonstrate how to load a private key
-into PuTTY. Yo&rsquo;ll need two pieces of software to complete this task:
+In this example, we&rsquo;re going to demonstrate how to load a private key
+into PuTTY. You&rsquo;ll need two pieces of software to complete this task:
 
-1.  PuTTY&ndash; Client to for managing SSH sessions
-2.  PuTTYgen&ndash; Tool for managing and creating SSH key pairs
+1.  PuTTY &ndash; Client to for managing SSH sessions
+2.  PuTTYgen &ndash; Tool for managing and creating SSH key pairs
 
 Both tools can be downloaded here:
 
@@ -34,7 +34,7 @@ X](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-priv
 As a part of a Rackspace Deployment, you may be provided a SSH Private
 Key to be used for authentication against your newly deployed Linux
 servers. The first thing to do is save this private key into a file.
-Her&rsquo;s an example key:
+Here&rsquo;s an example key:
 
 ![](/knowledge_center/sites/default/files/field/image/Windows1.png)
 
@@ -96,7 +96,7 @@ select the file, and click **Open**:
 
 ![](/knowledge_center/sites/default/files/field/image/Windows11.png)
 
-Now yo&rsquo;ll see the private key path listed:
+Now you&rsquo;ll see the private key path listed:
 
 ![](/knowledge_center/sites/default/files/field/image/Windows12.png)
 
@@ -107,7 +107,7 @@ time.
 
 Now click **Open** to begin your session with the server. If you saved
 you key with a passphrase, you will be prompted to enter that
-passphrase. You will be given an alert that the serve&rsquo;s host is not
+passphrase. You will be given an alert that the server&rsquo;s host is not
 cached. Click **Yes**at this point to continue the connection.
 
 ![](/knowledge_center/sites/default/files/field/image/Windows14.png)

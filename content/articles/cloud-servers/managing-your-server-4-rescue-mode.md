@@ -50,7 +50,7 @@ Contents
 #### **What is Rescue mode?**
 
 Rescue mode grants the root user full access to your non-bootable
-serve&rsquo;s filesystem. You can use it to modify problems in configuration
+server&rsquo;s filesystem. You can use it to modify problems in configuration
 files or to copy data from your Cloud Server to a remote location.
 Rescue Mode through the Rackspace Cloud Control Panel is similar to
 booting into single-user mode with networking enabled.

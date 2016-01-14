@@ -34,9 +34,11 @@ After you create your service, you enter restriction rules in the
 
 After you have created your service, follow these steps to create a
 restriction:
+
 1. Click **Add Rule**. A popup dialog box displays.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.54.43%20AM.png)
+
 2. Enter the following information to define the rule:
 
 -   **Name**: A name for the rule.
@@ -56,6 +58,7 @@ restriction:
 following example.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2012.07.19%20PM.png)
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 new restriction is deployed. After the restriction is deployed, it
 displays in the **Restrictions**list.
@@ -67,12 +70,15 @@ displays in the **Restrictions**list.
 ### To edit a restriction
 
 To edit a restriction, follow these steps:
+
 1. Click the gear icon beside the rule that you want to edit, and
 select **Edit Rule**.
+
 2. Edit the **Name**, **Type**, **Access**, **Referrer**, or the
 **Path** for the rule.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2012.09.39%20PM.png)
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 edited restriction is deployed. After the edited restriction is
 deployed, it displays in the **Restrictions**list.
@@ -82,8 +88,10 @@ deployed, it displays in the **Restrictions**list.
 ### To delete a restriction
 
 To delete a restriction, follow these steps:
+
 1. Click the gear icon beside the rule that you want to delete, and
 select **Delete Rule**.
+
 2. In the popup dialog box, click **Delete Rule**.
 
 ![](/knowledge_center/sites/default/files/field/image/DeleteOriginRule_1.png)

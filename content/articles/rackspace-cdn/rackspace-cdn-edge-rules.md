@@ -140,7 +140,7 @@ requests.
 
 ### Referrer restrictions
 
-Referrer restrictions allow customers to limit access to their sit&rsquo;s
+Referrer restrictions allow customers to limit access to their site&rsquo;s
 content by checking the *referrer header* of the incoming request. Users
 typically implement this type of access control to prevent their images,
 videos, and other content from being linked to from other sites. For
@@ -234,7 +234,7 @@ including files in different subdirectories, such as
 Users commonly create multiple rules with the same rule type. For
 example, when setting up caching rules, you may want one TTL for static
 content, and another TTL for dynamic content. When creating multiple
-rules within the same rule&ldquo;typ&rdquo;, the order of your rules matters. 
+rules within the same rule &ldquo;type&rdquo;, the order of your rules matters. 
 
 To properly enforce your rules, they must be ordered from least specific
 to most specific. For example, your least specific caching rule is the

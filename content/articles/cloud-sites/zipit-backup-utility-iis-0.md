@@ -92,12 +92,12 @@ ASPX ZipIt Installer
 
 *\
 *If you use the tool described in this article, you agree that the tool
-is an&ldquo;Unsupported Servic&rdquo;. Rackspace makes no representation or
+is an &ldquo;Unsupported Service&rdquo;. Rackspace makes no representation or
 warranty whatsoever regarding any Unsupported Service, and you agree
 that Rackspace will not be liable to you for any loss or damage arising
 from the provision of the Unsupported Service.  The Service Level
 Guaranties will not apply to the Unsupported Service, or any other
 aspect of your services that are adversely affected by the Unsupported
 Service.  You acknowledge that Unsupported Services may not interoperate
-with Rackspac&rsquo;s other services or other third party services you use. 
+with Rackspace&rsquo;s other services or other third party services you use. 
 

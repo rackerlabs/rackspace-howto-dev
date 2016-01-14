@@ -76,7 +76,7 @@ From the Actions button:
     snapshot).
 4.  Click the "Create Snapshot" button.
 5.  After you click the  "Create Snapshot" button and the "Creating
-    snapshot for volum&mldr;" popup no longer displays, you can safely
+    snapshot for volume&mldr;" popup no longer displays, you can safely
     reattach your volume.\
      \
      **Note**: The data in the snapshot is instant at the point in time
@@ -97,7 +97,7 @@ From the Storage Snapshots screen:
     snapshot).
 4.  Click the "Create Snapshot" button.
 5.  After you click the  "Create Snapshot" button and the "Creating
-    snapshot for volum&mldr;" popup no longer displays, you can safely
+    snapshot for volume&mldr;" popup no longer displays, you can safely
     reattach your volume.\
      \
      The note above after the preceding Actions button procedure also

@@ -30,7 +30,7 @@ Sharepoint
 ### Do I need to make the site a trusted site in Internet Explorer?
 
 Yes, several SharePoint features will not function properly until your
-sit&rsquo;s URL has been added to your "trusted sites" in Internet Explorer.
+site&rsquo;s URL has been added to your "trusted sites" in Internet Explorer.
 
 ^[back\\ to\\ top](#top)^
 
@@ -47,13 +47,13 @@ environment](http://sharepoint.rackspace.com/dedicated).
 ### Can I use Office Web Apps?
 
 Office Web Applications (OWA) functionality is not available. This
-functionality was removed to comply with Microsof&rsquo;s licensing terms.
+functionality was removed to comply with Microsoft&rsquo;s licensing terms.
 
 We are exploring possible options to be able to add OWA back to this
 environment but there is no time table for a resolution. It should be
 noted that OWA is still available for other hosted SharePoint solutions
 at Rackspace. If you agree with us in thinking this is an
-anti-competitive move on Microsof&rsquo;s part, we encourage you to speak to
+anti-competitive move on Microsoft&rsquo;s part, we encourage you to speak to
 your Microsoft account representatives and let them know.
 
 ^[back\\ to\\ top](#top)^

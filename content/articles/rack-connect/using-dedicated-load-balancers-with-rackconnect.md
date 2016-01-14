@@ -34,7 +34,7 @@ pool.\
 associate your cloud servers with one or more load balancer pools on
 your BIG-IP LTM:\
  \
- **Option 1&mdash; Metadata:**When creating a cloud server, use the metadata
+ **Option 1 &mdash; Metadata:**When creating a cloud server, use the metadata
 option to specify the pool or pools.\
  \
  **Metadata Key**: RackConnectLBPool\
@@ -58,7 +58,7 @@ from load balancer pools. These metadata updates can be made via the
 Cloud Server's API.
 
 \
- **Option 2&mdash; Name Match:**Before you create your cloud servers, provide
+ **Option 2 &mdash; Name Match:**Before you create your cloud servers, provide
 Rackspace with the preferred names and the pool(s) to associate with
 your cloud servers. Currently, you must configure this through a ticket
 request to your Support team.\

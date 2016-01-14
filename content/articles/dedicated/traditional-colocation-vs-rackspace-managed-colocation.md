@@ -88,7 +88,7 @@ Managed Colocation from Rackspace supplies:
     datacenters
 
 Optional services include management options for storage, Managed
-Backup, Managed Private Cloud, Dedicated Microsof&reg; Sharepoint and
+Backup, Managed Private Cloud, Dedicated Microsoft&reg; Sharepoint and
 Microsoft Exchange Server - Dedicated solutions. Rackspace also offers
 on-demand Managed and Professional Services for customers with unique
 requirements. In a Managed Colocation solution, customer

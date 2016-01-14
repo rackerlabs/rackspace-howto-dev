@@ -45,13 +45,13 @@ Mac**.
     settings in the next step.
 7.  Go back to the Exchange configuration page in Mail, enter the
     following information, and then click **Continue**:
-    -   **Description**&ndash; Enter a descriptive name for your mail account
+    -   **Description** &ndash; Enter a descriptive name for your mail account
         (for example, Work Mail).
-    -   **User Name**&ndash; Enter your entire email address (for example,
+    -   **User Name** &ndash; Enter your entire email address (for example,
         **user@example.com**).
-    -   **Password**&ndash; Enter the password associated with the email
+    -   **Password** &ndash; Enter the password associated with the email
         account you are setting up.
-    -   **Server Address**&ndash; From the Setting Up Mac Mail window (from
+    -   **Server Address** &ndash; From the Setting Up Mac Mail window (from
         step 6), remove **https:**// and /**ews/exchange.asmx** .
 
     \

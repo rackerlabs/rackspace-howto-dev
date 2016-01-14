@@ -49,14 +49,17 @@ charge. Following are some additional details about migrations passes:
     Rackspace mailbox.  
 
 ### How to Run Additional Passes When Migrating via MigrationWiz:
+
 1. Log in to the migration portal via the link that was sent to you
 when you signed up for MigrationWiz. \
  The link looks similar to the following one:
 https://rackspace.selfmigration.com/Public/Default.aspx?t=MjEyMTRiMGYtOW...\
  After you log in, you are directed to the page that you were previously
 on.  
+
 2. To view all migration projects, click the **My migrations** link in
 the upper-right corner of the page.
+
 3. In the **Actions** column of the **Migrations Projects** table,
 click the **Migrate New Items** icon .  The **Status** will then change
 to Processing, indicating that the pass has begun.    

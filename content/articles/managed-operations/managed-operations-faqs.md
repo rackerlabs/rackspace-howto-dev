@@ -101,14 +101,14 @@ best for you.
 
 For additional information, see the following Knowledge Center articles:
 
--   Cloud Server images&mdash; Create and restore images via our[Cloud
+-   Cloud Server images &mdash; Create and restore images via our[Cloud
     Control
     Panel](http://www.rackspace.com/knowledge_center/index.php/Configuring_Snapshots)
     or
     [API](http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Create_Image-d1e4206.html).
--   Rackspace Cloud Backup&mdash; Create and schedule [file-based
+-   Rackspace Cloud Backup &mdash; Create and schedule [file-based
     backups](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
--   [Holland Backup Manager](http://hollandbackup.org/&mdash; An open-source
+-   [Holland Backup Manager](http://hollandbackup.org/)&mdash; An open-source
     backup framework originally developed at Rackspace and written in
     Python.
 
@@ -190,14 +190,14 @@ Servers.
     Guide](http://www.rackspace.com/knowledge_center/getting_started_with_rackspace_cloud_backup)
 -   [Rackspace Cloud Backup (File-Level) vs. Cloud Server
     Images](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-vs-cloud-server-image-backups)
-    -   Cloud Server images&mdash; Create and restore images via our[Cloud
+    -   Cloud Server images &mdash; Create and restore images via our[Cloud
         Control
         Panel](http://www.rackspace.com/knowledge_center/index.php/Configuring_Snapshots)
         or
         [API](http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Create_Image-d1e4206.html).
-    -   Rackspace Cloud Backup&mdash; Create and schedule [file-based
+    -   Rackspace Cloud Backup &mdash; Create and schedule [file-based
         backups](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
-    -   [Holland Backup Manager](http://hollandbackup.org/&mdash; An
+    -   [Holland Backup Manager](http://hollandbackup.org/)&mdash; An
         open-source backup framework originally developed at Rackspace
         and written in Python.
 

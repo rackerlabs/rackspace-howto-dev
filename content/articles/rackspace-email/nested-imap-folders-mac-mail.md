@@ -40,7 +40,7 @@ mailbox, as follows:
 4.  Try one or both of the following possible fixes:
 
 -   Change the case of the prefix. For example, change INBOX to Inbox.
--   Add a slash (/) at the end of the prefi&mdash;for example, INBOX/ or
+-   Add a slash (/) at the end of the prefix&mdash;for example, INBOX/ or
     Inbox/. A slash helps Apple Mail recognize that the path ends in a
     folder.
 
@@ -73,9 +73,13 @@ directory: **username**/**Library**/**Containers**/**com.apple.mail**/**Data**/*
 
 Note.  By default the Library folder (underneath your username folder)
 is hidden.  In order to access it:
+
 1. Open a new Finder window
+
 2. Click on **Go** from the Menu Bar
+
 3. Hold down the**Alt/Option** key on your keyboard
+
 4. Click on **Library** from the list of folders
 
 You can now navigate to the path where your com.apple.mail.plist file is

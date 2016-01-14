@@ -32,11 +32,11 @@ in Cloud Office.
       
 5.  Click the tab for the type of search and choose from four different
     search types:
-    -   **Simple*&mdash;Search for text in messages or attachments.
-    -   **Wizard*&mdash;Add conditions to the search query and inspect all
+    -   **Simple**&mdash;Search for text in messages or attachments.
+    -   **Wizard**&mdash;Add conditions to the search query and inspect all
         parts of the message, including sender, recipient, subject,
         body, and attachment.
-    -   **Advanced*&mdash;Search by sender, recipient, subject, body, and
+    -   **Advanced**&mdash;Search by sender, recipient, subject, body, and
         attachment with greater fine-tuning control. For more
         information, see [Advanced Search](#advancedSearch) after these
         steps.\
@@ -63,7 +63,7 @@ in Cloud Office.
     -   *Note*****allows you to describe the search\
           
 
-10.Click **Permissions** and designate which users can access, change
+10. Click **Permissions** and designate which users can access, change
     the scope of, or export the search.\
       
 11. To search and display results immediately, click **Save and display

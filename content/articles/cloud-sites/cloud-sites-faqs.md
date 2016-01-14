@@ -916,7 +916,7 @@ Following is an example to help you set up this script:
 1.  Create a new text file, add the preceding code to it, and save it as
     restore.sh. In the preceding script, replace the placeholders with
     your actual information, as follows:
-    -   *pathToFile&mdash;This is the absolute path to your files. You can
+    -   *pathToFile*&mdash;This is the absolute path to your files. You can
         find this path by clicking on Hosting \> Cloud Sites \> Features
         in the Cloud Sites Control Panel and scrolling down the page.
         This path is the Linux Path listed there. An example is

@@ -218,23 +218,23 @@ If you turned spam filtering on, you will need to specify how you want
 spam to be handled. In the **Spam Handling** section, select from the
 following:
 
-1.  Deliver to the Spam folde&mdash;Spam email will be delivered to your Spam
+1.  Deliver to the Spam folder&mdash;Spam email will be delivered to your Spam
     folder. To specify Spam folder cleanup options, click the **Cleanup
     Options** link:
 
--   **Delete after [    ] days or [    ] total emails*&mdash;Indicate whether
+-   **Delete after [    ] days or [    ] total emails**&mdash;Indicate whether
     email messages in the Spam folder should be deleted after a certain
     number of days or a certain number of email messages, whichever
     occurs first.
--   **Never automatically delete spam*&mdash;Select this if you want your
+-   **Never automatically delete spam**&mdash;Select this if you want your
     spam messages delivered to the Spam folder, but you do not want spam
     messages automatically deleted.
 
-2.  Delete the email immediatel&mdash;Spam email will be deleted
+2.  Delete the email immediately&mdash;Spam email will be deleted
     automatically.
-3.  Deliver to the email addres&mdash;Spam email will be forwarded to the
+3.  Deliver to the email address&mdash;Spam email will be forwarded to the
     email address you indicate.
-4.  Include [SPAM] at the beginning of the subject lin&mdash;Spam email will
+4.  Include [SPAM] at the beginning of the subject line&mdash;Spam email will
     be delivered to your Inbox, but will include the text "[SPAM]" in
     the Subject line.
 5.  Click the **Save** button

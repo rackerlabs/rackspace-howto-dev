@@ -35,12 +35,16 @@ IP address of your site (your origin) and and the **www** address of
 your site (your domain). For complete instructions for creating a CDN
 service, see [Create a CDN service with Rackspace
 CDN](https://www.rackspace.com/knowledge_center/article/create-a-cdn-service-with-rackspace-cdn).
+
 1. Log in to the Rackspace [Cloud Control
 Panel](https://mycloud.rackspace.com).
+
 2. From the **Storage** or **Networking** menu, select  **CDN**.
+
 3. Click **Create Service**.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%209.42.19%20AM.png)
+
 4. In the **Domain Name** field, enter the **www** address for your
 site. You can find this address in the Cloud Sites Control Panel, as
 shown in the following figure.
@@ -48,6 +52,7 @@ shown in the following figure.
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-09-16%20at%204.05.52%20PM.png)
 
  
+
 5. In the **Origin** field, enter the IP address for your site. You can
 find the IP address on the **General Settings** tab in the Cloud Sites
 Control Panel, as shown in the following figure.
@@ -55,9 +60,11 @@ Control Panel, as shown in the following figure.
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-09-16%20at%204.14.51%20PM.png)
 
  
+
 6. Click **Create Service**.
 
 After the service is created, the service details page is displayed.
+
 7. In the Service Details section, hover over the **Domain Name** value
 and copy the **CDN Domain** URL that is displayed in the pop-up menu.
 You need this URL in the next section, to update your DNS records.
@@ -72,15 +79,19 @@ Update DNS
 After you have created your Rackspace CDN service, use the Cloud Sites
 DNS management tool to update the DNS for your **www** domain by
 performing the following steps.
+
 1. In the Cloud Sites Control Panel, click the **DNS** tab for your
 site.
+
 2. Delete the existing A record by selecting it, clicking on **Delete
 Selected**, and confirming the deletion.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-09-17%20at%202.31.45%20PM.png)
 
  
+
 3. In the DNS Management section, click **Add Record**.
+
 4. Create a new CNAME record. For **Record Name**, enter **www**
 domain. For Content, enter the CDN domain URL that you copied at the end
 of "Create a CDN service."
@@ -103,7 +114,7 @@ Caching rules determine how long your content lives on the edge servers
 (or nodes) before checking the origin server for an update. If your
 content changes frequently, then set up a time to live (TTL) rule that
 pulls content from the origin server every few minutes. If your content
-does not change frequently, then set a longer TTL of 1&ndash;24 hours. If you
+does not change frequently, then set a longer TTL of 12&ndash;24 hours. If you
 create multiple caching rules, order them from the least specific to the
 most specific.
 

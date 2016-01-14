@@ -13,6 +13,7 @@ body_format: tinymce
 The following article will help set up your signature which can include
 your title, phone number, or any other content you want to display.
 Let's take a look at the instructions below:  
+
 1. First thing you'll want to do is login to your webmail account by
 going to [apps.rackspace.com](http://apps.rackspace.com) and in the
 upper right hand side next to your username click the drop-down to
@@ -23,11 +24,13 @@ access the **Settings** menu.
  
 
 ![](/knowledge_center/sites/default/files/field/image/WebmailSettings.png)
+
 2. Select **Composing Email**, located in the left pane and then select
 the **Signatures** tab located in the window. Next, select the **Add New
 Signature** button.
 
 ![](/knowledge_center/sites/default/files/field/image/AddNewSig.png) 
+
 3. In the **Add New Signature** window, enter a descriptive name for
 your signature. In the **Edit Signature** area, enter the text for your
 signature as desired. You can use Plain Text, HTML, or rich text with
@@ -38,6 +41,7 @@ italics, colored text).
 
 *Note:* *If you switch to Plain Text, you will lose any HTML formatting
 you have applied.* 
+
 4. Select the **OK** button to return to the **Settings** window. Click
 the name of your signature file from the **Current Signatures **list in
 order to select it and choose any of the additional options below.
@@ -59,6 +63,7 @@ order to select it and choose any of the additional options below.
     appear above or below the body of the message.
 
  
+
 5. After you've selected your signature options, select
 **Identities,** double-click on your email address and enter the
 following information in the spaces provided. When you're finished,
@@ -79,6 +84,7 @@ select **OK**.
 
 -   Default Signature - Select a signature that should be used with this
     identity.
+
 6. To change your default identity selection, click once on the
 identity as it appears in the **Current Identities** box, select
 the **Set as Default** button, and then select the **Save** button when

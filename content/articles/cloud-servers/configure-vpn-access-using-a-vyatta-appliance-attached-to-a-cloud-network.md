@@ -42,7 +42,7 @@ The VPN access using L2TP/IPsec with pre-shared key works as follows:
 In the following illustration, traffic from remote access clients enters
 on the Public interface on the Vyatta appliance. 192.168.100.0/24, is
 the subnet assigned to the clients when the VPN session is established.
-The outside-address X.X.X.X address is the Vyatt&rsquo;s Public IP address.
+The outside-address X.X.X.X address is the Vyatta&rsquo;s Public IP address.
 
 ![](/knowledge_center/sites/default/files/field/image/VPN%20with%20Vyatta.png)
 
@@ -106,7 +106,7 @@ The pre-shared secret is "SUPERSECRET".
         interface eth0
         }
         nat-networks {
-        allowednetwork 0.0.0.0/0 {
+        allowed-network 0.0.0.0/0 {
         }
         }
         nat-traversal enable
@@ -144,14 +144,14 @@ The pre-shared secret is "SUPERSECRET".
 
 3.  Set the L2TP remote access authentication mode to local:
 
-        set vpn l2tp remoteaccess authentication mode local
+        set vpn l2tp remote-access authentication mode local
 
     This indicates that user authentication occurs locally on the Vyatta
     Appliance.
 
 4.  Set theL2TP remote access username and password:
 
-        set vpn l2tp remote-access authentication localusers username test password test
+        set vpn l2tp remote-access authentication local-users username test password test
 
     **test** and **test** represent the client username and password.
 
@@ -168,21 +168,21 @@ The pre-shared secret is "SUPERSECRET".
 
         vyatta@vyatta# show vpn l2tp remote-access
         authentication {
-        localusers {
+        local-users {
         username test {
         password test
         }
         }
         mode local
         }
-        client-ippool {
+        client-ip-pool {
         start 192.168.100.1
         stop 192.168.100.100
         }
-        ipsecsettings {
+        ipsec-settings {
         authentication {
-        mode presharedsecret
-        pre-sharedsecret SUPERSECRET
+        mode pre-shared-secret
+        pre-shared-secret SUPERSECRET
         }
         }
         outside-address X.X.X.X
@@ -229,7 +229,7 @@ Select the Vyatta VPN (LT2P) network and update the following options:
 
 If you want the VPN connection to be used only to access your cloud
 servers, and all other traffic (internet traffic) will not use the IPsec
-tunnel , ensure that&ldquo;Send all traffic over VPN connectio&rdquo; is unchecked
+tunnel , ensure that &ldquo;Send all traffic over VPN connection&rdquo; is unchecked
 under Options.  
 
 ![](/knowledge_center/sites/default/files/field/image/MAC%20Split%20Tunnell.png)

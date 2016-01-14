@@ -49,9 +49,9 @@ Mark the following items:
 
 -   Cache hits to this website for quick access. (Recommended)
 -   Use mod\_rewrite to serve cache files. (Recommended)
--   Compress pages so the&rsquo;re served more quickly to visitors.
+-   Compress pages so they&rsquo;re served more quickly to visitors.
     (Recommended)
--   Do&rsquo;t cache pages for known users. (Recommended)
+-   Don&rsquo;t cache pages for known users. (Recommended)
 -   Cache rebuild. Serve a supercache file to anonymous users while a
     new file is being generated. (Recommended)
 -   Mobile device support. (External plugin or theme required. See the

@@ -36,19 +36,19 @@ All available server configurations are displayed.
 
 The server list contains the following information:
 
--   ID&ndash; The configuration ID
--   Name&ndash; The configuration name, labeled by RAM size and performance
+-   ID &ndash; The configuration ID
+-   Name &ndash; The configuration name, labeled by RAM size and performance
     type
--   Memory\_MB&ndash; The amount of RAM that the configuration has
--   Disk&ndash; The size of the disk in GB (for General Purpose Cloud
+-   Memory\_MB &ndash; The amount of RAM that the configuration has
+-   Disk &ndash; The size of the disk in GB (for General Purpose Cloud
     Servers, the size of the system disk)
--   Ephemeral&ndash; The size of the data disk
--   Swap&ndash; The size of the swap space
--   VCPUs&ndash; The number of virtual CPUs associated with the configuration
--   RXTX\_Factor&ndash; The amount of bandwidth, in Mbps, allocated to the
+-   Ephemeral &ndash; The size of the data disk
+-   Swap &ndash; The size of the swap space
+-   VCPUs &ndash; The number of virtual CPUs associated with the configuration
+-   RXTX\_Factor &ndash; The amount of bandwidth, in Mbps, allocated to the
     PublicNet ports, ServiceNet ports, and isolated networks (Cloud
     Networks) attached to a server
--   Is\_Public&ndash; Not used
+-   Is\_Public &ndash; Not used
 
 You will see one of the following possible result sets, depending on
 whether the region you selected supports General Purpose Cloud Servers:
@@ -96,7 +96,7 @@ RAM, CPU, and disk space.
         GB)
     -   Network - The network throughput
     -   Disk I/O - A comparison of the I/O speed of this configuration
-        with the I/O speed of other configurations&mdash; Good, Better, or
+        with the I/O speed of other configurations &mdash; Good, Better, or
         Best
 
 A description of the selected configuration can help you decide if the

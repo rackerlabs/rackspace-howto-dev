@@ -30,21 +30,21 @@ contact from your account.
 3.  In the **Company Information** section, click **Contacts**.
 4.  Click **Add Company Contact**.
 5.  Enter the required information:
-    -   **Contact Type**&ndash; Select **Primary**or **Secondary**. Only a
+    -   **Contact Type** &ndash; Select **Primary**or **Secondary**. Only a
         primary contact on an account can request administrative
         changes.
 
-    -   **Name**&ndash; Enter the name of the contact.
+    -   **Name** &ndash; Enter the name of the contact.
 
-    -   **Phone Number**&ndash; Enter a phone number for the contact.
+    -   **Phone Number** &ndash; Enter a phone number for the contact.
 
-    -   **Email Address**&ndash; Support tickets and invoices will be sent to
+    -   **Email Address** &ndash; Support tickets and invoices will be sent to
         this address.
 
-    -   **Security Question**&ndash; The security question and answer should
+    -   **Security Question** &ndash; The security question and answer should
         be unique and known only to the administrator and the contact.
 
-    -   **Security Answer**&ndash; Enter an answer for the security question.
+    -   **Security Answer** &ndash; Enter an answer for the security question.
 
 6.  In the **Notifications**section, select the check boxes for
     notifications that should be sent to this contact.\

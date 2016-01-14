@@ -182,7 +182,7 @@ Delete the server
 If needed, you can also delete or cancel the server.
 
 1.  Run the following command, replacing the example ID with your
-    serve&rsquo;s ID:
+    server&rsquo;s ID:
 
         supernova iad delete a8ea2366-9e50-4604-b6ce-e3edb8750451
 

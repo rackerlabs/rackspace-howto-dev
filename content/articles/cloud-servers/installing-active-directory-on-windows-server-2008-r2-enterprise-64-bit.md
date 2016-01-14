@@ -41,7 +41,8 @@ Select your domain name and know the domain administrator password that
 you want to use.
 
 **Note**: Your domain name should be reliably unique.  Do not use the
-same domain as your website, for example, and avoid extensions like&ldquo;.loca&rdquo; unless you have registered that domain name in DNS.  We suggest
+same domain as your website, for example, and avoid extensions like
+&ldquo;.local&rdquo; unless you have registered that domain name in DNS.  We suggest
 a domain name that is not used for anything else, like
 "internal.example.com"..
 
@@ -49,7 +50,7 @@ a domain name that is not used for anything else, like
 
 Windows Server 2008 can properly install and configure DNS during the AD
 DS installation if it knows that the DNS is local. You can accomplish
-this by having the private network adapte&rsquo;s preferred DNS server
+this by having the private network adapter&rsquo;s preferred DNS server
 address point to the already assigned IP address of the same private
 network adapter, as follows:
 
@@ -80,7 +81,7 @@ network adapter, as follows:
     Connections window.
 
 **Note**: The last step for prepping W2K8 for AD is adding the proper
-Server Role. The&ldquo;Active Directory Domain Service&rdquo; Role will be added.
+Server Role. The &ldquo;Active Directory Domain Services&rdquo; Role will be added.
 This only installs the framework for W2K8 to become a DC and run AD. It
 does not promote the server to DC or install AD.
 

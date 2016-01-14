@@ -19,15 +19,15 @@ article is designed to help you monitor and protect your CDN usage.
 When using the CDN, all your assets are assigned a CDN URL.  As you
 probably know, your website will then have that CDN URL in its source
 code and display it when a user requests to see it.  There are companies
-and individuals that target website&rsquo; asset URLs and serve them without
-the site owne&rsquo;s permission.  This is known as&ldquo;hot linkin&rdquo; and can
+and individuals that target websites&rsquo; asset URLs and serve them without
+the site owner&rsquo;s permission.  This is known as &ldquo;hot linking&rdquo; and can
 result in a massive increase to your CDN bill if the problem goes
 unnoticed. 
 
  There are two basic ways to protect yourself, your content, and your
 invoice from hot linking:  (1) constant monitoring and alerts for
 abnormal CDN bandwidth usage, and (2) proactive measures to make it more
-difficult to access your sit&rsquo;s source code.  &rsquo;ll review some options
+difficult to access your site&rsquo;s source code.  I&rsquo;ll review some options
 of both below.
 
  
@@ -40,12 +40,12 @@ Monitoring/Alerting: {style="margin-left: -27.0pt;"}
 Customers can always see their current usage in the Cloud Control
 Panel.  You can find this information by going to
 [http://mycloud.rackspace.com](http://mycloud.rackspace.com).  Under
-your username, click on the option for&ldquo;First Generation Control Pane&rdquo;
+your username, click on the option for &ldquo;First Generation Control Panel&rdquo;
 
  ![Link to First Gen Control
 Panel](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cfoncp_0.jpg)
 
- Once yo&rsquo;re in the First Generation Control Panel, you will see usage
+ Once you&rsquo;re in the First Generation Control Panel, you will see usage
 for all your products.  These usage numbers will reflect all usage on
 your current billing period.  If you are using multiple Rackspace cloud
 products, you may need to scroll down to Find your Cloud Files usage. 
@@ -68,7 +68,7 @@ a container for you and deliver logs to that container.  The frequency
 of log delivery can vary by how heavy traffic is on the CDN, but logs
 are usually delivered every four hours. 
 
- The log files inside of the container, named&ldquo;.CDN\_ACCESS\_LOG&rdquo; will
+ The log files inside of the container, named &ldquo;.CDN\_ACCESS\_LOGS&rdquo; will
 be prefixed with the container they are logging, followed by the date
 and time stamp.   This makes it easy to find logs for a specific time
 period. 
@@ -115,7 +115,7 @@ up.
 **No Right Click Scripts**
 
 There are scripts that will prevent visitors from using the right-click
-menu to copy your conten&rsquo;s link or view your sit&rsquo;s source code.  There
+menu to copy your content&rsquo;s link or view your site&rsquo;s source code.  There
 are other ways to find this information, like using the toolbar at the
 top of the browser, but preventing right click can be an easy first step
 to protecting yourself.  If you attempt this method, be sure to check
@@ -133,10 +133,13 @@ encrypt your source code.  Here are some links and examples that might
 be helpful. 
 
  
+
 &middot;      [Encrypting Source
 Code](http://www.blackbeltcoder.com/Articles/mfc/encrypting-source-code)
+
 &middot;      [Simple Encrypting
 Tool](http://www.webtoolhub.com/tn561359-html-encrypter.aspx) 
+
 &middot;      [Article discussing options for
 Encryption](http://www.htmlguard.com/articles/about-html-source-code-encryption/)
 

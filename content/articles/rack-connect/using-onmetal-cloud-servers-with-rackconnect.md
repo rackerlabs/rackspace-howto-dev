@@ -14,9 +14,9 @@ body_format: tinymce
 
 Rackspace now supports OnMetal Cloud Servers with RackConnect. This
 means you can now enjoy the benefits of OnMetal Cloud
-Server&mdash;single-tenant, bare-metal, API-drive&mdash;combined with the features
-of RackConnec&mdash;public IP address provisioning, network stack
-configuration, software firewall update&mdash;to create your own custom
+Servers&mdash;single-tenant, bare-metal, API-driven&mdash;combined with the features
+of RackConnect&mdash;public IP address provisioning, network stack
+configuration, software firewall updates&mdash;to create your own custom
 hybrid solution that spans your dedicated, cloud, and OnMetal server
 environments.
 
@@ -65,7 +65,7 @@ infrastructure with these offerings:
     RackConnect. To view the current set of OnMetal images available,
     connect to the [Cloud Control Panel](https://mycloud.rackspace.com/)
     using one of your cloud accounts associated with RackConnect, begin
-    the process of creating a new Cloud Server, select the OnMeta&trade;
+    the process of creating a new Cloud Server, select the OnMetal&trade;
     Server tab, and then select the Image's drop-down selection field.\
 
     ![](/knowledge_center/sites/default/files/field/image/OnMetal_Build_0.png)\

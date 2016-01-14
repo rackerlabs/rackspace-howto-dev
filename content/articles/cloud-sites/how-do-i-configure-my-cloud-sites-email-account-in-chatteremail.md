@@ -20,7 +20,7 @@ If you have not loaded ChatterEmail on your Treo device, perform the
 following steps to load the software on your Treo for a free 30 day
 trial.
 
-1.  Go to your Treo devic&rsquo;s built-in browser.
+1.  Go to your Treo device&rsquo;s built-in browser.
 2.  Type **get.chatteremail.com** in the **URL** section.
 3.  Accept the Palm installer application into applications.
 4.  Select **Save** and **Open**, and do not change the location of the

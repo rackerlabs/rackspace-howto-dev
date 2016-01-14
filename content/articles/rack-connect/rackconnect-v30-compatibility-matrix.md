@@ -34,7 +34,7 @@ with RackConnect v3.0.
 
  
 
- [**Table 1&mdash; RackConnect v3.0 compatibility with Rackspace public cloud
+ [**Table 1 &mdash; RackConnect v3.0 compatibility with Rackspace public cloud
 offerings**]
 
 RackConnect v3.0 compatibility matrix
@@ -101,7 +101,7 @@ Storage](http://www.rackspace.com/knowledge_center/getting-started/cloud-block-s
 ServiceNet
 
 Cloud Databases is a stand-alone, API-based relational database service
-built on the OpenStac&reg; cloud that enables you to easily provision and
+built on the OpenStack&reg; cloud that enables you to easily provision and
 manage multiple MySQL database instances. Instances are provisioned in a
 single-tenant, container-based environment per account.
 
@@ -188,7 +188,7 @@ Cloud](http://www.rackspace.com/knowledge_center/article/getting-started-with-ap
 Managed Operations provides support beyond Managed Infrastructure,
 including direct assistance with resizes, snapshots, host machine
 issues, adding and removing servers, and managing IP addresses. To
-ensure ***Fanatical Suppor&reg;***, Rackspace provides support for specific
+ensure ***Fanatical Support&reg;***, Rackspace provides support for specific
 software and server configurations on Cloud Servers with Managed
 Operations support. 
 
@@ -219,7 +219,7 @@ Guide](https://docs.objectrocket.com/getting_started.html)
 Table 2 lists the dedicated network device offerings that are compatible
 with RackConnect v3.
 
- [**Table 2*&mdash; **RackConnect v3.0 compatibility with Rackspace dedicated
+ [**Table 2**&mdash; **RackConnect v3.0 compatibility with Rackspace dedicated
 network device offerings**]
 
 +--------------------------------------+--------------------------------------+
@@ -254,7 +254,7 @@ network connectivity from these offerings to and from your RackConnect
 v3.0 cloud networks. The correct routes to allow this traffic can be set
 up by your Network Security team. 
 
- [**Table 3*&mdash; **RackConnect v3.0 compatibility with Rackspace dedicated
+ [**Table 3**&mdash; **RackConnect v3.0 compatibility with Rackspace dedicated
 offerings**]
 
 +--------------------------+--------------------------+--------------------------+

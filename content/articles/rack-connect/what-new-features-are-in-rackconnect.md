@@ -21,7 +21,7 @@ The 2.0 version of RackConnect added the following automation and
 security features:
 
 **Support for next generation Rackspace Cloud Servers**, powered by
-OpenStack&reg;^
+OpenStack^&reg;^
 
 **RackConnect API**, which gives you a way to programmatically access
 certain read-only information about your cloud servers and their
@@ -31,7 +31,7 @@ RackConnect configuration from within your cloud servers
 events**, which means that RackConnect picks up changes in your Cloud
 environment much faster
 
-**A RackConnect Management Interface in the MyRackspac&reg; Portal**, where
+**A RackConnect Management Interface in the MyRackspace&reg; Portal**, where
 you can perform the following tasks:
 
 -   Set RackConnect network policies
@@ -54,7 +54,7 @@ you can perform the following tasks:
 
 -   *(Optional)* Provision public IP addresses: Cloud servers are
     automatically provisioned with a public IP address from your
-    Dedicated networ&rsquo;s public IP block.
+    Dedicated network&rsquo;s public IP block.
 
 -   *(Optional)* Configure network stack: Cloud servers are
     automatically configured with network connectivity to your Dedicated

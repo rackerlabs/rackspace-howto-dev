@@ -39,11 +39,12 @@ You may also use the Cloud Servers API to query the RackConnect
 Automation Status of your Cloud Servers. The benefits of using this
 method are that you do not need to query the status from within the same
 Cloud Server you would like the status of. To utilize this method, query
-the Cloud Servers API and look for the metadata key named&ldquo;**rackconnect\_automation\_status*&rdquo; on any of your Cloud Servers. The
-value of the&ldquo;rackconnect\_automation\_statu&rdquo; metadata key will be the
+the Cloud Servers API and look for the metadata key named
+&ldquo;**rackconnect\_automation\_status**&rdquo; on any of your Cloud Servers. The
+value of the &ldquo;rackconnect\_automation\_status&rdquo; metadata key will be the
 current automation status of your Cloud Server in RackConnect (accurate
 within a few seconds after each change). The automation status is in the
-form of&ldquo;DEPLOYING, DEPLOYED, FAILED, or UNPROCESSABLE&rdquo;  The "metadata"
+form of &ldquo;DEPLOYING, DEPLOYED, FAILED, or UNPROCESSABLE.&rdquo;  The "metadata"
 entries will now also show what RackConnect Automation Features are
 currently enabled on your account and consist of the following keys:
 "**rackconnect\_automation\_feature\_configure\_network\_stack**",
@@ -121,10 +122,12 @@ RackConnect Automation Status of First Generation Cloud Servers. The
 benefits of using this method are that you do not need to query the
 status from within the same Cloud Server you would like the status of.
 To utilize this method, query the First Generation Cloud Servers API and
-look for the metadata key named&ldquo;**rackconnect\_automation\_status*&rdquo; on
-any of your First Generation Cloud Servers. The value of the&ldquo;rackconnect\_automation\_statu&rdquo; metadata key will be the current
+look for the metadata key named &ldquo;**rackconnect\_automation\_status**&rdquo; on
+any of your First Generation Cloud Servers. The value of the
+&ldquo;rackconnect\_automation\_status&rdquo; metadata key will be the current
 automation status of your Cloud Server in RackConnect (accurate within a
-few seconds after each change). The automation status is in the form of&ldquo;DEPLOYING, DEPLOYED, or FAILED&rdquo;  The "metadata" entries will now also
+few seconds after each change). The automation status is in the form of
+&ldquo;DEPLOYING, DEPLOYED, or FAILED.&rdquo;  The "metadata" entries will now also
 show what RackConnect Automation Features are currently enabled on your
 account and consist of the following keys:
 "**rackconnect\_automation\_feature\_configure\_network\_stack**",

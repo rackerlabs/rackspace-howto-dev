@@ -17,7 +17,7 @@ beforehand within the control panel of that database.
 
 1.  Log in to MyLittleAdmin by using the credentials for the database.\
      For more information about logging in and the credentials that you
-    need, see [Rackspace Cloud Essentials&ndash; MyLittleAdmin Database
+    need, see [Rackspace Cloud Essentials &ndash; MyLittleAdmin Database
     Management
     Interface](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface).
 2.  In the Databases section of the left navigation pane, expand **User

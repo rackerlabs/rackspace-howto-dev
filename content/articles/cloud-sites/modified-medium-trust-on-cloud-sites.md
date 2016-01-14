@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-The Rackspace Clou&rsquo;s Windows environment operates in modified Medium
+The Rackspace Cloud&rsquo;s Windows environment operates in modified Medium
 Trust.
 
 -   [Overview](#Overview)
@@ -90,7 +90,7 @@ Trust environment.
 
 BlogEngine works in our modified Medium Trust environment. If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit BlogEngin&rsquo;s
+issue to our support team, post in our forums, or [visit BlogEngine&rsquo;s
 community
 forums](http://www.codeplex.com/blogengine/Thread/List.aspx "http://www.codeplex.com/blogengine/Thread/List.aspx").
 
@@ -107,7 +107,7 @@ Partially Trusted Callers
 
 If you do experience trust-related issues, it may relate to assemblies
 that do not allow *Partially Trusted Callers*. For additional
-information on this, please review Microsof&rsquo;s documentation regarding
+information on this, please review Microsoft&rsquo;s documentation regarding
 Partially Trusted Callers
 [here](http://msdn.microsoft.com/en-us/library/wyts434y.aspx "http://msdn.microsoft.com/en-us/library/wyts434y.aspx")
 and

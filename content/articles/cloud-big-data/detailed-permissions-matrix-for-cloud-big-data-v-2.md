@@ -415,7 +415,7 @@ are virtual.
 
 ### Node
 
-In a network, a node (or server) is a connection poin&mdash;either a
+In a network, a node (or server) is a connection point&mdash;either a
 redistribution point or an end point for data transmissions. In general,
 a node has programmed or engineered capability to recognize and process
 or forward transmissions to other nodes. A node is a member of a

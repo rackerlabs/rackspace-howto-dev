@@ -110,7 +110,7 @@ Connecting Auto Scale to a single Cloud Monitoring alarm
 This tip shows you how to use a webhook to trigger an Auto Scale policy.
 It does not explain how to create a check or an Auto Scale group.  For
 information about creating checks and alarms, see the *[Cloud Monitoring
-Develope&rsquo;s
+Developer&rsquo;s
 Guide](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html)*
 or the [Cloud Monitoring Checks and
 Alarms](http://www.rackspace.com/knowledge_center/article/rackspace-monitoring-checks-and-alarms)
@@ -250,7 +250,7 @@ examples show how to create and update a launch configuration setting.
 Creating uses a POST operation, updating uses a PUT operation.
 
 **Note**: Each user can have multiple SSH key pairs (name and key). The
-launch configuration uses the admin use&rsquo;s SSH key pair name, usually
+launch configuration uses the admin user&rsquo;s SSH key pair name, usually
 the first admin user found in the tenant. If there are multiple admin
 accounts in the tenant, there is no guarantee as to which one is used.
 So it is best for there to be one admin user in the tenant. This
@@ -441,7 +441,7 @@ and have it happen dynamically in response to load. You pay for the
 higher-flavor servers (for example, General Purpose and
 work-optimized) only when you need them, and when you don't need them,
 you can scale back down to lower-flavor servers (for example,
-first-generation and Standard&mdash;or keep the higher-flavor servers and
+first-generation and Standard)&mdash;or keep the higher-flavor servers and
 just scale back how many servers are in your group.
 
 When you're ready to set up your scaling system to resize servers
@@ -454,9 +454,9 @@ dynamically, use the following guidelines.
 
 2.  Create two policies for each scaling group: 
 
-   &#x25e6   One policy with **desiredCapacity**=0
+    &#x25e6   One policy with **desiredCapacity**=0
 
-   &#x25e6   One with **desiredCapacity**=2 or 3  (that is, scale up by 2 or
+    &#x25e6   One with **desiredCapacity**=2 or 3  (that is, scale up by 2 or
     3)
 
 When you want a higher-flavor server, execute the scale-up policy on

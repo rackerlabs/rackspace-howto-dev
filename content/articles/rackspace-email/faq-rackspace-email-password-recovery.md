@@ -21,7 +21,7 @@ purposes. We will never sell or share it.
 Below are some frequently asked questions and answers about this
 feature.
 
-How do I change my Rackspace Email password if &rsquo;ve forgotten it?
+How do I change my Rackspace Email password if I&rsquo;ve forgotten it?
 -----------------------------------------------------------------
 
 On your Webmail login page, click the **Forgot Password** link to change

@@ -10,12 +10,13 @@ product: Exchange
 body_format: tinymce
 ---
 
-Service books determine which services are available on your BlackBerr&reg;
+Service books determine which services are available on your BlackBerry&reg;
 device.  At times, the service books become corrupt and will cause the
 Blackberry Enterprise Server (BES) to fail upon synchronizing updates of
 PIM data such as Calendar or Address Book entries. These issues are
 frequently resolved by deleting and resending the service books to the
-device.  Please have the user delete all service books starting with the&ldquo;Deskto&rdquo; from their Blackberry device. Once completed, resend the
+device.  Please have the user delete all service books starting with the
+&ldquo;Desktop&rdquo; from their Blackberry device. Once completed, resend the
 service books from your Cloud Office control panel.
 
 To delete the service books from the Blackberry take the following
@@ -57,7 +58,7 @@ be resent to the device via the control panel following:**
 3.  If you have multiple domains, select the appropriate domain name.
     Or, to change domains at any time, click the change domain link.
 4.  Under BlackBerry, click the View Users link.
-5.  Click the use&rsquo;s Display Name.
+5.  Click the user&rsquo;s Display Name.
 6.  Under Resend Service Books, click the Send to Device button.
 
 ![](http://c616663.r63.cf2.rackcdn.com/eaDeleting&ResendingBBServiceBooks3.png)

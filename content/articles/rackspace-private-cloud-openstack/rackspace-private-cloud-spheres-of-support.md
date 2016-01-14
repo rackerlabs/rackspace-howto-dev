@@ -17,7 +17,7 @@ OpenStack](https://www.rackspace.com/knowledge_center/getting-started/rackspace-
 
  
 
-Rackspace Private Cloud is Rackspac&rsquo;s architecture for and support of a
+Rackspace Private Cloud is Rackspace&rsquo;s architecture for and support of a
 production-ready, scalable, OpenStack based private cloud. To ensure
 fanatical support, Rackspace provides support for specific server
 configurations and OpenStack projects in Rackspace Private Cloud v9 and

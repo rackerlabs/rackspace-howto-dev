@@ -14,6 +14,7 @@ body_format: tinymce
 **
 
 To ensure Mac Mails's settings are properly configured:
+
 1. In Mac Mail, go to "**Mail**" \> "**Preferences**..."
 
 ![](/knowledge_center/sites/default/files/field/image/1_49.png)\

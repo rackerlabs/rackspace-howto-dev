@@ -72,7 +72,7 @@ FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-v20-automatio
 for details on getting Automation Features enabled on your Cloud
 Account(s).
 
-**How do I modify a cloud serve&rsquo;s network configuration for use with
+**How do I modify a cloud server&rsquo;s network configuration for use with
 RackConnect?**
 
 For RackConnect 1.0 Post-Upgrade configurations with Automation Features
@@ -138,7 +138,7 @@ following information:
     Cloud Server (when the "Configure Network Stack" automation feature
     is disabled on your Cloud account) the API will return the Gateway
     IP address to be used as the default gateway on your Cloud Server,
-    which you can then use to correctly configure the Cloud Serve&rsquo;s
+    which you can then use to correctly configure the Cloud Server&rsquo;s
     network stack.
 3.  When you wish to determine the specific actions the automation will
     take against one of your Cloud Servers you can view the status of

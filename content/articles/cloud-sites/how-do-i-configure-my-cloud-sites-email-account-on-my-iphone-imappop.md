@@ -24,12 +24,12 @@ To set up your iPhone for IMAP, perform the following steps:
 4.  Tap **Other**.
 5.  Tap **Add Mail Account**.
 6.  Enter the following information:
-    -   **Name*&mdash;Enter your first and last name. This is the name that
+    -   **Name**&mdash;Enter your first and last name. This is the name that
         will appear in the **From** field of messages that you send.
-    -   **Address*&mdash;Enter your entire email address (for example,
+    -   **Address**&mdash;Enter your entire email address (for example,
         myname@mydomain.com).
-    -   **Password*&mdash;Enter the password for your email account.
-    -   **Description*&mdash;Enter a descriptive name for the account (for
+    -   **Password**&mdash;Enter the password for your email account.
+    -   **Description**&mdash;Enter a descriptive name for the account (for
         example, Work Account). This description will be visible only to
         you.
 
@@ -38,11 +38,11 @@ To set up your iPhone for IMAP, perform the following steps:
 9.  In both the **Incoming Mail Server** and **Outgoing Mail Server**
     sections, enter the following information:
 
-    -   **Host Name*&mdash;Enter the secure server name:
+    -   **Host Name**&mdash;Enter the secure server name:
         **secure.emailsrvr.com**
-    -   **User Name*&mdash;Enter your entire email address (for example,
+    -   **User Name**&mdash;Enter your entire email address (for example,
         myname@mydomain.com).
-    -   **Password*&mdash;Enter the password for your email account.
+    -   **Password**&mdash;Enter the password for your email account.
 
     ![mc\_re\_iphoneimap\_002.GIF](http://www.rackspace.com/apps/support/media/mc_re_iphoneimap_002.GIF)
 
@@ -61,12 +61,12 @@ To set up your iPhone for POP access, perform the following steps:
 4.  Tap **Other**.
 5.  Tap **Add Mail Account**.
 6.  Enter the following information:
-    -   **Name*&mdash;Enter your first and last name. This is the name that
+    -   **Name**&mdash;Enter your first and last name. This is the name that
         will appear in the **From** field of messages that you send.
-    -   **Address*&mdash;Enter your entire email address (for example,
+    -   **Address**&mdash;Enter your entire email address (for example,
         myname@mydomain.com).
-    -   **Password*&mdash;Enter the password for your email account.
-    -   **Description*&mdash;Enter a descriptive name for the account (for
+    -   **Password**&mdash;Enter the password for your email account.
+    -   **Description**&mdash;Enter a descriptive name for the account (for
         example, Work Account). This description will be visible only to
         you.
 
@@ -75,11 +75,11 @@ To set up your iPhone for POP access, perform the following steps:
 9.  In both the **Incoming Mail Server** and **Outgoing Mail Server**
     sections, enter the following information:
 
-    -   **Host Name*&mdash;Enter the secure server name:
+    -   **Host Name**&mdash;Enter the secure server name:
         **secure.emailsrvr.com**
-    -   **User Name*&mdash;Enter your entire email address (for example,
+    -   **User Name**&mdash;Enter your entire email address (for example,
         myname@mydomain.com).
-    -   **Password*&mdash;Enter the password for your email account.
+    -   **Password**&mdash;Enter the password for your email account.
 
     ![mc\_re\_iphonepop\_002.gif](http://www.rackspace.com/apps/support/media/mc_re_iphonepop_002.gif)
 

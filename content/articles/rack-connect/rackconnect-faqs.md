@@ -107,12 +107,14 @@ service net with your Cloud Servers in the same region. If you wish to
 provision Cloud Servers that are ***not** *linked to your dedicated
 Rackspace Hosting account, there are a couple of ways you can work
 around this condition.
+
 1) You can provision Cloud Servers in a region other than the one where
 your dedicated servers are located. For example, if your dedicated
 servers are in the DFW region, and your linked Cloud Servers are also in
 the the DFW region, any Cloud Servers you provision in ORD or IAD will
 not be linked to your dedicated servers and should function
 independently.
+
 2) You can also sign up for a second Cloud account. The drawback of
 doing this is that you will not be able to access any custom server
 images between accounts.
@@ -225,7 +227,7 @@ for question and answer items specific to this new version.
 
 ### Does RackConnect enhance my ability to connect to my Cloud Files?
 
-Most areas of our data centers have access to our&ldquo;ServiceNe&rdquo; in which
+Most areas of our data centers have access to our &ldquo;ServiceNet&rdquo; in which
 a customer can connect privately to our Cloud Files infrastructure
 without traversing the public network (provided the cloud files are in
 the same DC as the dedicated server making the connection). The older
@@ -254,9 +256,10 @@ Dedicated environment or in your Cloud environment.
 If you are planning to deploy Domain Controllers in the Cloud, and you
 promote a Cloud Server to a Domain Controller, please make sure to
 create a ticket and inform the RackConnect team about this change. You
-will need to manually create a&ldquo;rackconnec&rdquo; user account on the Domain
-and add this account to the&ldquo;Domain Admin&rdquo; Global Group. We will add
-the&ldquo;DOMAIN\\rackconnec&rdquo; account to the RackConnect system instead of&ldquo;rackconnec&rdquo; in order to get RackConnect to work with your Domain
+will need to manually create a &ldquo;rackconnect&rdquo; user account on the Domain
+and add this account to the &ldquo;Domain Admins&rdquo; Global Group. We will add
+the &ldquo;DOMAIN\\rackconnect&rdquo; account to the RackConnect system instead of
+&ldquo;rackconnect&rdquo; in order to get RackConnect to work with your Domain
 Controller cloud server(s).
 
 Additionally, Active Directory requires a large number of open ports to
@@ -300,7 +303,7 @@ customers dedicated servers.
 Also note that when using CLB with RackConnect, all internet traffic
 comes and goes through the Cloud, and the customer will pay for all
 outbound bandwidth at the standard CLB rate. This bandwidth is not
-included in the&ldquo;include&rdquo; bandwidth that comes with each dedicated
+included in the &ldquo;included&rdquo; bandwidth that comes with each dedicated
 server.
 
 For further details, please view the article: [Using Cloud Load

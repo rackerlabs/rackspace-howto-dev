@@ -103,7 +103,7 @@ to the edge nodes only when it is requested.
 
 Rackspace CDN seamlessly and automatically fetches content from an
 origin server and caches it at the edge location if the edge location
-does&rsquo;t already have it.
+doesn&rsquo;t already have it.
 
 ^[back\\ to\\ top](#top)^
 

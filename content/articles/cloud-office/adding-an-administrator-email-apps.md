@@ -65,8 +65,8 @@ Add an administrator
 
 5.  Enter the following information for **Additional Information:\
      **![](/knowledge_center/sites/default/files/field/image/5_4.png)****
-    -   **First Name** - Enter the administrato&rsquo;s first name.
-    -   **Last Name** - Enter the administrato&rsquo;s last name.
+    -   **First Name** - Enter the administrator&rsquo;s first name.
+    -   **Last Name** - Enter the administrator&rsquo;s last name.
     -   **Email** - Enter the administrator's email address.\
           
 

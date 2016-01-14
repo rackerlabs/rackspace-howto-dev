@@ -12,14 +12,14 @@ body_format: tinymce
 
 The [Wikipedia
 entry](http://en.wikipedia.org/wiki/Content_delivery_network) for CDN
-states:&ldquo;A content delivery network or content distribution network
+states: &ldquo;A content delivery network or content distribution network
 (CDN) is a large distributed system of servers deployed in multiple data
 centers across the Internet. The goal of a CDN is to serve content to
 end-users with high availability and high performance. CDNs serve a
 large fraction of the Internet content today, including web objects
 (text, graphics and scripts), downloadable objects (media files,
 software, documents), applications (e-commerce, portals), live streaming
-media, on-demand streaming media, and social networks&rdquo;
+media, on-demand streaming media, and social networks.&rdquo;
 
 The Internet is a network of networks. To get content from a server on
 the other side of the planet, IP packets have to travel through a series
@@ -47,7 +47,7 @@ to Yahoo.com.
      Trace complete.
 
 Additional hops mean more time to render data from a request on the
-use&rsquo;s browser. The speed of delivery is also constrained by the slowest
+user&rsquo;s browser. The speed of delivery is also constrained by the slowest
 network in the chain. The solution is a CDN that places servers around
 the world and, depending on where the end user is located, serves the
 user with data from the closest or most appropriate server. CDNs reduce

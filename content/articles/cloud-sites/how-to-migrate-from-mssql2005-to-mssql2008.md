@@ -67,10 +67,10 @@ Cloud Site migration steps
 3.  Next use the web based admin tool, MyLittleAdmin, to back up your
     MSSQL 2005 database. The link for the online tool can be found in
     your Cloud Sites Control Panel by clicking on the database under the
-   &ldquo;Feature&rdquo; tab. For this backup please add "mlb" to the end of the
+    &ldquo;Features&rdquo; tab. For this backup please add "mlb" to the end of the
     URL. It is important to add this to the URL and not to go through
     the standard MyLittleAdmin link found in your Cloud Sites Control
-    Panel. Using the links instead of adding the&ldquo;ml&rdquo; may cause session
+    Panel. Using the links instead of adding the &ldquo;mlb&rdquo; may cause session
     issues between the two MyLittleAdmin versions. For example:
     `https://mssqladmin.websitesettings.com/mlb`![mlb1.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mlb1.JPG)
 4.  Login to your original MSSQL 2005 source

@@ -107,9 +107,10 @@ authentication, be sure to still allow password authentication for the
 *Windows users:* The user needs to be in the Administrators group.  If
 you update your server to be a domain controller, be sure to create a
 ticket and inform the RackConnect team about this change.  You must
-manually create a&ldquo;rackconnec&rdquo; user account on the domain and add the
-account to the&ldquo;Domain Admin&rdquo; global group.  The RackConnect team will
-add&ldquo;DOMAIN\\rackconnec&rdquo; account to the RackConnect system instead of&ldquo;rackconnec&rdquo; to get RackConnect to work with your server.
+manually create a &ldquo;rackconnect&rdquo; user account on the domain and add the
+account to the &ldquo;Domain Admins&rdquo; global group.  The RackConnect team will
+add &ldquo;DOMAIN\\rackconnect&rdquo; account to the RackConnect system instead of
+&ldquo;rackconnect&rdquo; to get RackConnect to work with your server.
 
 #### Do not prevent the root user from logging in using Password Authentication via SSH before the completion of the initial RackConnect process
 

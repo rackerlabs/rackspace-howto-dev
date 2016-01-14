@@ -23,7 +23,7 @@ steps we have taken to mitigate the problem.\
 
 ### What doe the error message mean? 
 
-The `Connection timed out&ndash; please try again` error message is displayed
+The `Connection timed out &ndash; please try again` error message is displayed
 when a script exceeds the maximum timeout value of 30 seconds. If the
 load balancer that is serving the content does not receive data from the
 server processing the data, the load balancer closes the connection and

@@ -11,7 +11,7 @@ body_format: tinymce
 ---
 
 Sending person-to-person email is an integral part of our daily
-activities, but i&rsquo;s getting harder to ensure that the mail you send
+activities, but it&rsquo;s getting harder to ensure that the mail you send
 gets to the Inbox of the people you intended. Stricter and more
 sophisticated spam filters flag more email than ever as spam. To ensure
 your person-to-person emails reach their destination, Rackspace and the
@@ -31,16 +31,16 @@ Message format
     constructed and formatted email headers, and adherence to
     specifications for sending email (SMTP) are fundamental to sending
     good mail.
--   Make your messag&rsquo;s layout as simple as possible. Avoid complex
+-   Make your message&rsquo;s layout as simple as possible. Avoid complex
     formatting, overly elaborate layouts, and multiple images. This
     recommendation is especially important if you use HTML content
     programs like Microsoft Publisher to create your content. These
     programs create complex HTML and styles.
--   If yo&rsquo;re sending HTML email, ensure that i&rsquo;s properly constructed.
+-   If you&rsquo;re sending HTML email, ensure that it&rsquo;s properly constructed.
     Items like missing or empty tags, poor formatting, and non-standard
     conventions are spam indicators.
 -   Also, do not use invisible web-based tracking tools in your emails.
--   Do&rsquo;t insert active components (such as JavaScript, ActiveX, and
+-   Don&rsquo;t insert active components (such as JavaScript, ActiveX, and
     plug-ins) in your message. If you need rich media content, link to a
     media-rich page on your website.
 
@@ -50,7 +50,7 @@ Links
 -   Do not use links that contain IP addresses. All reputable sites on
     the Internet use domain names to identify themselves. Using IP
     addresses is a trigger for spam filters.
--   If you link to other companie&rsquo; sites in your message content,
+-   If you link to other companies&rsquo; sites in your message content,
     ensure that they are reputable sites. If you provide links to
     disreputable sites in your message content, your email will likely
     be marked as spam.
@@ -72,7 +72,7 @@ Word choice
     Bob* instead of *Hey* or *To Whom It May Concern*. Generic
     salutations make your content more likely to appear as unsolicited
     mail to spam filters.
--   Do&rsquo;t include a disclaimer that your email is&rsquo;t spam, and do&rsquo;t
+-   Don&rsquo;t include a disclaimer that your email isn&rsquo;t spam, and don&rsquo;t
     claim compliance with some legal criteria. Good mail does not need
     to advertise compliance because it *is* compliant.
 -   Use normal conversational language. Message content that is rigid or

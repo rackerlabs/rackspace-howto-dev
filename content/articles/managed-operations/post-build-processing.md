@@ -79,7 +79,7 @@ Depending upon your service level, these options are available for the
 -   Installs the Cloud Backup agent, and configures a default backup set
     and schedule.
 
-    **Note:** The following default&ldquo;o&rdquo; directories are backed up:
+    **Note:** The following default &ldquo;on&rdquo; directories are backed up:
 
     **For Linux Managed Cloud servers:**
 

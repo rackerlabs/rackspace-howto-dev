@@ -42,7 +42,7 @@ httpd is stopped
 
 #### Service control {.title .topictitle2}
 
-If a service is&rsquo;t running you can use service to start it.
+If a service isn&rsquo;t running you can use service to start it.
 
 ~~~~ {.pre .codeblock}
 $ sudo service httpd start
@@ -86,13 +86,13 @@ The output from netstat shows that nc (listed in the 'Program name'
 column) is listening on port 80 (in the 'Local Address' column) and so
 stopping it should allow httpd to be started.
 
-Remember that if the service is&rsquo;t running it may be that a
+Remember that if the service isn&rsquo;t running it may be that a
 super-server, such as xinetd, is being used to launch the program when a
 connection is received.
 
 ### Checking again {.title .topictitle1}
 
-If the service was&rsquo;t running, starting it may have resolved the issue.
+If the service wasn&rsquo;t running, starting it may have resolved the issue.
 Let's give it a test to find out.
 
 If the program is running you should see something similar to the

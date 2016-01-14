@@ -55,7 +55,7 @@ To create a Grafana dashboard complete the following steps:
 8.  From the **Actions** menu, choose **Create Stack from Template**.
 9.  On the **Create Stack** page, enter a name for the stack and then
     enter values for the following fields under **Server Settings**. Use
-    the values for your Rackspace account, and overwrite the&ldquo;not vali&rdquo;
+    the values for your Rackspace account, and overwrite the &ldquo;not valid&rdquo;
     values that are populated by default.
     -   **API key**
     -   **username**
@@ -101,7 +101,7 @@ To access the Grafana dashboard, perform the following steps:
 Note that all of the metrics submitted by Rackspace Cloud Monitoring are
 displayed in the following format:
 
-&ldquo;rackspace.monitoring.entities.<entityid>.checks.<checktype>.<checkid>.<metricname&rdquo;.`
+`&ldquo;rackspace.monitoring.entities.<entityid>.checks.<checktype>.<checkid>.<metricname>&rdquo;.`
 
 ### Locate your entity and check Ids
 

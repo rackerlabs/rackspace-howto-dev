@@ -19,7 +19,7 @@ ls command {#checkingpermissions}
 
 You use the `ls` command (the first letter is a lowercase L) to see what
 files are in a directory. When run by itself, `ls` returns a list of the
-current working directory (essentially, the directory you are&ldquo;i&rdquo;). You
+current working directory (essentially, the directory you are &ldquo;in&rdquo;). You
 can also specify a directory to list. For example, a list of the first
 few files in the /etc directory on a Gentoo system might look as
 follows:
@@ -130,8 +130,8 @@ file permissions.
 In the preceding examples, the first character in each list was either a
 dash (-) or the letter `d`.
 
--   A dash (-) indicates that the file is a regular file. Tha&rsquo;s the
-    sort of file that yo&rsquo;ll usually work with when yo&rsquo;re saving some
+-   A dash (-) indicates that the file is a regular file. That&rsquo;s the
+    sort of file that you&rsquo;ll usually work with when you&rsquo;re saving some
     text or running a command.
 -   The letter d indicates that the file is a directory, which are
     basically a special kind of file. Knowing that makes it easier to
@@ -151,7 +151,7 @@ example, `sh -> bash` indicates that the link is named `sh` and it
 points to a file named bash. This means that if you call `/bin/sh` (in a
 script, for example), you will actually run `/bin/bash`.
 
-A symlink does&rsquo;t have to point to something in the same directory, as
+A symlink doesn&rsquo;t have to point to something in the same directory, as
 shown in the following example:
 
     lrwxrwxrwx 1 root root     20 Jun 30 03:29 pgawk -> /usr/bin/pgawk-3.1.6
@@ -162,7 +162,7 @@ its target, and the second one uses a relative path.
 
 ### The next three characters: user permissions
 
-The next three letters in a file list cover the&ldquo;use&rdquo; category of
+The next three letters in a file list cover the &ldquo;user&rdquo; category of
 permissions. Consider the following example:
 
     drwxrwxr-x 2 root mail 4096 Dec  3  2009 mail
@@ -171,25 +171,26 @@ After the letter `d`, which tells us that the file is a directory, are
 the letters `rwx`. These letters are abbreviations of the types of
 permissions that can be set:
 
--   `r` refers to the&ldquo;rea&rdquo; permission.
--   `w` refers to the&ldquo;writ&rdquo; permission.
--   `x` refers to the&ldquo;execut&rdquo; permission.
+-   `r` refers to the &ldquo;read&rdquo; permission.
+-   `w` refers to the &ldquo;write&rdquo; permission.
+-   `x` refers to the &ldquo;execute&rdquo; permission.
 
 ### The second trio of characters: group permissions
 
-The next trio of characters (also `rwx`) shows the permissions for the&ldquo;grou&rdquo; category, and the letters mean the same thing as they did for
+The next trio of characters (also `rwx`) shows the permissions for the
+&ldquo;group&rdquo; category, and the letters mean the same thing as they did for
 the user. For this directory, the group has as many permissions as the
 owner (`rwx`).
 
 ### The third trio of characters: other permissions
 
 The last trio of characters (`r-x`) shows the permissions for the final
-category,&ldquo;other&rdquo; In this example,&ldquo;othe&rdquo; does not have write
+category, &ldquo;other.&rdquo; In this example, &ldquo;other&rdquo; does not have write
 permission for the directory, which is indicated by the dash (-).
 
 Notice the specific order to the permissions in a triplet: read, write,
 execute. A dash in place of a letter for a permission means that
-category does&rsquo;t have that permission.
+category doesn&rsquo;t have that permission.
 
 To summarize:
 
@@ -208,11 +209,11 @@ permissions, so you can ignore it.
 After the number, two names are listed. In the preceding example, the
 names are root and mail.
 
-The first name is the name of the owner of the file. The&ldquo;use&rdquo;
+The first name is the name of the owner of the file. The &ldquo;user&rdquo;
 permissions apply to that user when it attempts to access the directory.
 In this case, the user root.
 
-The second name is the fil&rsquo;s group. The&ldquo;grou&rdquo; permissions apply to
+The second name is the file&rsquo;s group. The &ldquo;group&rdquo; permissions apply to
 any user (that is not the file owner) in the same group as the file. In
 this case, those permissions apply to anyone in the mail group.
 
@@ -220,7 +221,7 @@ Summary
 -------
 
 Being able to check the permissions on a file is useful. It is where
-troubleshooting can start&mdash; ensuring that a user can read a particular
+troubleshooting can start &mdash; ensuring that a user can read a particular
 file, for example, or examining a directory structure to ensure that
 users can follow the hierarchy to the files that they need.
 

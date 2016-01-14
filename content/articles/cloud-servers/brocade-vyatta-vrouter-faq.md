@@ -48,7 +48,7 @@ Can the Vyatta be configured in a redundant mode (active/backup Highly available
 
 The Vyatta appliance supports VRRP for High-availability. However,
 Rackspace cannot support High Availability of Vyatta over the Public Net
-interface because&ldquo;Shared IP addres&rdquo; is not available over PublicNet at
+interface because &ldquo;Shared IP address&rdquo; is not available over PublicNet at
 this time. You can, however, setup Vyatta to be Highly Available on the
 Cloud Networks interface since Shared IP addresses are supported on
 Cloud Networks.
@@ -60,10 +60,10 @@ No. Do not add/disconnect networks . This will cause serious issues with
 networking on the Vyatta and the only recourse will be to rebuild the
 Vyatta.
 
-I cannot log into the Vyatta using username&lsquo;roo&rsquo; and the password that was set when the Vyatta was created. What is wrong?
+I cannot log into the Vyatta using username &lsquo;root&rsquo; and the password that was set when the Vyatta was created. What is wrong?
 ----------------------------------------------------------------------------------------------------------------------------
 
-Please log in with username&lsquo;vyatt&rsquo; to login to the appliance.
+Please log in with username &lsquo;vyatta&rsquo; to login to the appliance.
 
 What actions are supported on Vyatta through the control panel?
 ---------------------------------------------------------------

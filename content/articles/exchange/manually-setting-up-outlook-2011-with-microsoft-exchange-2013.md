@@ -14,9 +14,11 @@ Use the following steps to set up your Microsoft Exchange 2013 Mailbox
 with your Outlook 2011 email client.\
  \
  1. Open Outlook.
+
 2. In the Outlook drop-down menu, select **Preferences**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/1_53.png)
+
 3. In the Outlook Preferences menu, select **Accounts**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/2_50.png)\
@@ -40,6 +42,7 @@ with your Outlook 2011 email client.\
 
 \
  6. Click **Add Account**.
+
 7. Confirm that Amber dot next to the account name turns from an amber
 color to a solid green.\
  \
@@ -49,6 +52,7 @@ color to a solid green.\
  *Note: The dot might take a minute or two to change from amber to
 green. If the dot doesn't change, check the account settings and
 password and ensure that you're using the correct EWS server address.*
+
 8. Close all windows.
 
 If you already have email on the server, your email will slowly begin

@@ -32,14 +32,14 @@ Preparation reference material
 
 In order to prepare for upcoming system and feature enhancements, we ask
 that you review our migration guide hosted in our Rackspace Knowledge
-Center, which includes FA&rsquo;s for individual technologies. Updated
+Center, which includes FAQ&rsquo;s for individual technologies. Updated
 testlink information will be provided as a courtesy to review your site
 functionality prior to the migration.
 
 Please review the links below which include FAQs & helpful information
 on common break changes for your specific technology during to prepare
 for the upcoming DFW
-migrations. ](https://www.rackspace.com/knowledge_center/node/4725)
+migrations. [](https://www.rackspace.com/knowledge_center/node/4725)
 
 1.  [Information for Customer IPs &
     DNS](https://www.rackspace.com/knowledge_center/node/4727)

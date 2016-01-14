@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-If you use Mac OS X, you do&rsquo;t need to install a third-party client like
+If you use Mac OS X, you don&rsquo;t need to install a third-party client like
 PuTTY to connect to your cloud server via Secure Shell (SSH). Terminal
 is a terminal emulation program included with Mac OS X that you can use
 to run SSH.
@@ -23,7 +23,7 @@ Connect to the server
 ---------------------
 
 These instructions are for users who are connecting to a new cloud
-server for the first time.  If yo&rsquo;re connecting as a non-root user,
+server for the first time.  If you&rsquo;re connecting as a non-root user,
 replace *root* in the instructions with your username.
 
 1.  Go to **Applications** \> **Utilities**, and open **Terminal**.

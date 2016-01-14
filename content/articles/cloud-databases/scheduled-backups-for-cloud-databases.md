@@ -53,7 +53,7 @@ The following information needs to be provided:
   minute                    The minute of the hour.                                                                     Yes
   instance\_id              The database instanceId to back up.                                                         Yes
   source\_id                The database instanceId or haId to back up.                                                 No
-  source\_type              The type of backup for the given source\_id &lsquo;instanc&rsquo; or&lsquo;h&rsquo;, defaults to&lsquo;instanc&rsquo;).   No
+  source\_type              The type of backup for the given source\_id (&lsquo;instance&rsquo; or &lsquo;ha&rsquo;, defaults to &lsquo;instance&rsquo;).   No
   full\_backup\_retention   The number of full automated backups to keep.                                               No
 
 The `day_of_week` attribute specifies the day on which a full backup
@@ -69,7 +69,8 @@ service is UTC.
 
 Currently only one schedule can be active per instance. If an instance
 already has a schedule enabled, a subsequent API call to create a
-schedule for that instance will cause an error with the message&ldquo;your\_instance\_id already has an active schedule."
+schedule for that instance will cause an error with the message
+&ldquo;your\_instance\_id already has an active schedule."
 
 Backup retention policy
 -----------------------
@@ -126,7 +127,7 @@ Notes:
 -   The `instance_id` field is deprecated. It can still be used when
     providing a single instance id when creating a schedule. HA instance
     schedules should provide `source_id` with the `source_type` set to
-   &ldquo;h&rdquo;.
+    &ldquo;ha&rdquo;.
 
 ### Limitations
 

@@ -20,13 +20,13 @@ monitoring system with Rackspace Monitoring!
 
 -   Leverage all the primitives built as a lightweight resource in Chef.
      This means you have complete control
--   Yo&rsquo;re in total control - We run the monitoring system; however,
-    i&rsquo;s a platform and this code bootstraps the integration. I&rsquo;s up to
+-   You&rsquo;re in total control - We run the monitoring system; however,
+    it&rsquo;s a platform and this code bootstraps the integration. It&rsquo;s up to
     you to define what you want to monitor and how you want to be
     alerted.
--   We dog food this internally - w&rsquo;ll continue to improve this as we
+-   We dog food this internally - we&rsquo;ll continue to improve this as we
     continue to find new and interesting ways to use it.
--   This is only the beginning - W&rsquo;ll continue to improve this cookbook
+-   This is only the beginning - We&rsquo;ll continue to improve this cookbook
     as Rackspace Monitoring grows in functionality.
 
 ** **
@@ -46,7 +46,7 @@ Rackspace Monitoring git repo is hosted on github, but it will be an
 official cookbook soon. Get the cookbook here:
 [https://github.com/racker/cookbook-cloudmonitoring.](https://github.com/racker/cookbook-cloudmonitoring)
 
-Install it into a chef repo and then yo&rsquo;re ready to get started.
+Install it into a chef repo and then you&rsquo;re ready to get started.
 
 *Note: If you are unfamiliar with chef I recommend reading the [Opscode
 Getting Started Guide](http://docs.opscode.com/#getting-started%20).
@@ -83,7 +83,7 @@ recipe to the runlist:
 
     $ knife node run_list add <NODE> cloud_monitoring::default
 
-Che&rsquo;s runlist inheritance will also serve the same purpose.  If for
+Chef&rsquo;s runlist inheritance will also serve the same purpose.  If for
 instance the cloud\_monitoring::default recipe is applied to the
 production environment, then all production nodes will inherit the
 recipe.
@@ -96,7 +96,7 @@ The approach on this cookbook focuses on flexibility for the user to use
 it as they please. These particular instructions will use the recipe in
 an opinionated way. As an example, the label of the entity will be the
 hostname. This is a recommendation on how to leverage this recipe, but
-not the only way. Creating an&ldquo;Entit&rdquo; is the first step of actually
+not the only way. Creating an &ldquo;Entity&rdquo; is the first step of actually
 using the API from Chef. The Entity maps to the target of what you're
 monitoring.
 
@@ -177,6 +177,7 @@ the technical contacts on the account, if there is none it sends to the
 primary contact on the account. If there is no one on the account, it
 sends the Rackspace Monitoring team an email, which will in turn file a
 ticket.
+
 3. This uses the alarm example API detailed here. This particular
 example uses the snippet below:
 
@@ -195,7 +196,7 @@ example uses the snippet below:
 
 ### Done!
 
-Tha&rsquo;s it. We now have monitoring for each server in your infrastructure
+That&rsquo;s it. We now have monitoring for each server in your infrastructure
 with at least ping checking. As you add servers Rackspace Monitoring
 will automatically scale with you. As homework, work on adding more
 complex checks like SSH and HTTP. We also support CPU, Disk and other

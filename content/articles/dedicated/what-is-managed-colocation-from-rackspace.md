@@ -12,9 +12,9 @@ body_format: tinymce
 
 [Managed
 Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)
-from Rackspac&reg; Hosting is all the things you want from traditional
+from Rackspace&reg; Hosting is all the things you want from traditional
 colocation, such as freedom and control, and none of the things you
-don'&mdash;like the hassles of infrastructure management. This means you no
+don't&mdash;like the hassles of infrastructure management. This means you no
 longer have to worry about:  
 
 -   Physical data center (procurement of facility, maintenance,
@@ -32,7 +32,7 @@ differentiation and business innovation. Think of Managed Colocation as
 a Dedicated-Plus hosting solution. We set up a dedicated hardware
 environment, tailored to your company's needs, in one of our nine world
 class data centers around the globe. The "plus" part is that you also
-gain access to Rackspac&reg; optional services such as [Managed
+gain access to Rackspace&reg; optional services such as [Managed
 Backup](http://www.rackspace.com/managed_hosting/services/storage/managedbackup.php),
 Managed [Private
 Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)

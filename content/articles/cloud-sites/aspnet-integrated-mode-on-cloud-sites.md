@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-The Rackspace Cloud provisions IIS sites in&ldquo;Integrated Mode&rdquo; Running
+The Rackspace Cloud provisions IIS sites in &ldquo;Integrated Mode.&rdquo; Running
 sites in Integrated Mode enhances application performance. However, if
 you encounter an issue with your ASP.NET site, please review the
 following potential errors.
@@ -35,7 +35,7 @@ You can migrate by moving the custom entries in the
 configuration manually to the \<system.webServer\>/\<handlers\> and
 \<system.webServer\>/\<modules\> configuration sections, and either
 removing the \<httpHandlers\> and \<httpModules\> configuration OR
-adding the following to your applicatio&rsquo;s web.config:
+adding the following to your application&rsquo;s web.config:
 
 \<system.webServer\>
 
@@ -44,10 +44,10 @@ adding the following to your applicatio&rsquo;s web.config:
 \</system.webServer\>
 
 \
- Request URLs containing unencoded&ldquo;&rdquo; characters in the path (not
+ Request URLs containing unencoded &ldquo;+&rdquo; characters in the path (not
 querystring) is rejected by default.
 
-You will receive HTTP Error 404.11&ndash; Not Found: The request filtering
+You will receive HTTP Error 404.11 &ndash; Not Found: The request filtering
 module is configured to deny a request that contains a double escape
 sequence.
 
@@ -55,10 +55,10 @@ This error occurs because IIS is by default configured to reject
 attempts to doubly-encode a URL, which commonly represent an attempt to
 execute a canonicalization attack.
 
-Applications that require the use of the&ldquo;&rdquo; character in the URL path
+Applications that require the use of the &ldquo;+&rdquo; character in the URL path
 can disable this validation by setting the allowDoubleEscaping attribute
 in the system.webServer/security/requestFiltering configuration section
-in the applicatio&rsquo;s web.config. However, this may make your application
+in the application&rsquo;s web.config. However, this may make your application
 more vulnerable to malicious URLs:
 
 \<system.webServer\>
@@ -73,7 +73,7 @@ more vulnerable to malicious URLs:
  Requests with querystrings larger then 2048 bytes will be rejected by
 default.
 
-You will receive an HTTP Error 404.15&ndash; Not Found: The request filtering
+You will receive an HTTP Error 404.15 &ndash; Not Found: The request filtering
 module is configured to deny a request where the query string is too
 long.
 
@@ -87,7 +87,7 @@ NOTE: This breaking change applies to both Classic and Integrated modes.
 Increase the maximum querystring size by setting the maxQueryString
 attribute on the requestLimits element in the
 system.webServer/security/requestFiltering configuration section in your
-applicatio&rsquo;s web.config:
+application&rsquo;s web.config:
 
 \<system.webServer\>
 

@@ -37,15 +37,15 @@ account and billing information.
 The bottom portion of the first page of your invoice includes the
 following information:
 
--   **Previous Balance**&ndash; The amount billed before current invoice
--   **Payments**&ndash; The total of payments received during your last bill
+-   **Previous Balance** &ndash; The amount billed before current invoice
+-   **Payments** &ndash; The total of payments received during your last bill
     cycle
--   **Adjustments**&ndash; The total of any debits or credits from your last
+-   **Adjustments** &ndash; The total of any debits or credits from your last
     billing cycle
--   **Balance Forward**&ndash; The unpaid charges from your last bill cycle
--   **Current Invoice Charges**&ndash; The sum of all charges incurred since
+-   **Balance Forward** &ndash; The unpaid charges from your last bill cycle
+-   **Current Invoice Charges** &ndash; The sum of all charges incurred since
     the prior bill
--   **Current Invoice Taxes**&ndash; Taxes applied based on net charges
+-   **Current Invoice Taxes** &ndash; Taxes applied based on net charges
     (Current Invoice Charges) based on the type of service and customer
     location
 -   **Total Amount Due **- The total of your Current Invoice Charges
@@ -69,15 +69,15 @@ and other charges, and is organized as follows:
     directly below the page number
 -   **Service** - Support, product, or other charges applied on your
     current bill, including a descriptive name of the product or charge
--   **Gross Charge**&ndash; The total charge accumulated by product or other
+-   **Gross Charge** &ndash; The total charge accumulated by product or other
     charge categories before promotions and discounts
--   **Promotion & Discount**&ndash; The promotions and discounts associated
+-   **Promotion & Discount** &ndash; The promotions and discounts associated
     with a product charge
--   **Net Charge**&ndash; The difference between Gross Charge and Promotion &
+-   **Net Charge** &ndash; The difference between Gross Charge and Promotion &
     Discount for a product charge; the pretax amount for a product
     charge; the pretax amount for a product charge
--   **Taxes**&ndash; The taxes calculated based on the net charge
--   **Total Charges**&ndash; The sum of the net product charge and the taxes
+-   **Taxes** &ndash; The taxes calculated based on the net charge
+-   **Total Charges** &ndash; The sum of the net product charge and the taxes
     for a product
 
 ![](/knowledge_center/sites/default/files/field/image/832-3.png)
@@ -100,15 +100,15 @@ occurred during the billing period.
 
 -   **Type** - The reason for the adjustment (debit or credit) on your
     bill
--   **Reference ID**&ndash; The Rackspace generated unique ID for the
+-   **Reference ID** &ndash; The Rackspace generated unique ID for the
     adjustment
 -   **Adjustment Date** - The date that the adjustment was processed by
     Rackspace
--   **Description**&ndash; Any details of the adjustment
+-   **Description** &ndash; Any details of the adjustment
 -   **Net Amount** - The pre-tax amount of the adjustment
--   **Taxes**&ndash; The calculated tax amount based on the net amount of the
+-   **Taxes** &ndash; The calculated tax amount based on the net amount of the
     adjustment
--   **Total Amount**&ndash; The sum of Net Amount and Taxes for an individual
+-   **Total Amount** &ndash; The sum of Net Amount and Taxes for an individual
     adjustment
 
 ![](/knowledge_center/sites/default/files/field/image/832-3a.png) 

@@ -12,6 +12,7 @@ body_format: tinymce
 
 The following steps are required to setup an IMAP account on a Windows
 Mobile phone.
+
 1. Locate the **Settings** options from within your application menu\
 \
 ![](/knowledge_center/sites/default/files/field/image/1.jpg)\

@@ -49,7 +49,7 @@ Upload and connect to your content
 7.  In the container in Cloud Files, click **Upload Files** and select
     the site layout file that you just created.
 8.  Click the action gear next to the HTML file, select **View All
-    Links** and record the **HTTP**path. This is your sit&rsquo;s public URL.
+    Links** and record the **HTTP**path. This is your site&rsquo;s public URL.
 9.  Point the browser to the URL of the site layout page that you just
     created (for example,
     `http://www.example.com.websitetestlink.com/index.html)`  and verify

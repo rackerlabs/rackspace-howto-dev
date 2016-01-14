@@ -10,11 +10,11 @@ product: Auto Scale
 body_format: tinymce
 ---
 
-You can use Auto Scale and RackConnect for&ldquo;cloud burstin&rdquo;: adding
+You can use Auto Scale and RackConnect for &ldquo;cloud bursting&rdquo;: adding
 cloud servers dynamically in response to demand, and removing them after
 they are no longer needed. This article provides information about
 configuring Auto Scale to use RackConnect to perform cloud bursting with
-an F&reg; BIG-I&reg; Local Traffic Manager (LTM) load balancer. Using these
+an F5&reg; BIG-IP&reg; Local Traffic Manager (LTM) load balancer. Using these
 technologies together, you can automatically scale your dedicated
 infrastructure to the Rackspace cloud by using scaling policies. In this
 way, RackConnect and Auto Scale enable you to realize the power of

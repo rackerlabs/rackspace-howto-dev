@@ -19,7 +19,7 @@ terminal software on Linux.
 
 You need two software applications to complete this process:
 
-1.  ssh&ndash; SSH client software is installed on your Linux or OS X
+1.  ssh &ndash; SSH client software is installed on your Linux or OS X
     operating system by default
 2.  Your favorite text editor
 
@@ -45,7 +45,7 @@ the private key into the file.\
 the private key.\
  ![](/knowledge_center/sites/default/files/field/image/Linux2.png)
 
-To save your changes, press Escape. Then, type&lsquo;:w&rsquo; to write the file
+To save your changes, press Escape. Then, type &lsquo;:wq&rsquo; to write the file
 and return to the command line.\
  After saving the file, run the following command to change the file
 permissions to 600 to secure the key. You can also set them to 400.

@@ -149,7 +149,7 @@ body_format: tinymce
         Service?](#where-can-i-find-the-rackspace-cloud-terms-of-service)
     -   [What kind of support can I expect for imported and shared
         images?](#what-kind-of-support-can-i-expect-for-imported-and-shared-images)
-    -   [I'm a managed cloud custome&mdash;do I still only get infrastructure
+    -   [I'm a managed cloud customer&mdash;do I still only get infrastructure
         level support for servers built from non-standard
         images?](#managed-support-for-non-standard)
     -   [I've got a question that's not listed here. How can I get an
@@ -288,7 +288,7 @@ sharing with doesn't have cloud services in ORD, of course, they will
 not see the image and won't be able to boot from it. (If you don't have
 service in ORD, this question won't even come up, because you won't have
 any images in ORD to share!) A customer can tell if they don't have
-access to the ORD region by looking in the Control Panel&mdash; it won't show
+access to the ORD region by looking in the Control Panel &mdash; it won't show
 up as an option in the Region dropdown on either the Server List or
 Create Server pages. API users can look directly in their service
 catalog. To learn more about regions in the Rackspace cloud, please see
@@ -748,7 +748,7 @@ ensure host servers are functioning properly and that the API
 availability meets the SLA. We will also provide advice on sharing,
 importing, and exporting images.
 
-#### I'm a managed cloud custome&mdash;do I still only get infrastructure level support for servers built from non-standard images? {#managed-support-for-non-standard}
+#### I'm a managed cloud customer&mdash;do I still only get infrastructure level support for servers built from non-standard images? {#managed-support-for-non-standard}
 
 Our managed cloud support team wants to create amazing customer
 outcomes, so when you build a server from a non-standard image, your

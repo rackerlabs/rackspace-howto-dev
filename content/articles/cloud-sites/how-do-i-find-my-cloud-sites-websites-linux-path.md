@@ -28,7 +28,7 @@ support for a recommendation.
 the Windows path for your Cloud Sites
 website](http://www.rackspace.com/knowledge_center/article/locate-the-windows-path-for-your-cloud-sites-website).
 
-To find the websit&rsquo;s Linux path
+To find the website&rsquo;s Linux path
 --------------------------------
 
 1.  Log in to the [Cloud Sites Control

@@ -29,7 +29,7 @@ setup.\
  \
  ![](/knowledge_center/sites/default/files/field/image/3_20.png)\
  \
- 4. Select **Microsof&reg; Exchange ActiveSync**.\
+ 4. Select **Microsoft&reg; Exchange ActiveSync**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/4_13.png)\
  \

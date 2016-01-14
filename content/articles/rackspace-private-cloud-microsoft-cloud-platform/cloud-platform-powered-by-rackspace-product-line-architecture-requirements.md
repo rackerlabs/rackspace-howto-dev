@@ -27,8 +27,8 @@ architecture (PLA) compliant cloud to help our customers develop and
 implement private cloud infrastructures quickly while reducing
 complexity and risk. The Microsoft Cloud Platform powered by Rackspace
 provides a solution that combines Microsoft software, consolidated
-guidance, and best-practice architecture with Rackspac&rsquo;s vast
-experience providing Fanatical Support&reg;^ hosting and supporting
+guidance, and best-practice architecture with Rackspace&rsquo;s vast
+experience providing Fanatical Support^&reg;^ hosting and supporting
 solutions for compute, network, and storage architectures.
 
 The Microsoft Private Cloud PLA uses the core capabilities of the
@@ -37,7 +37,7 @@ deliver a private cloud infrastructure as a service offering. Following
 are the key software features and components used for every
 implementation hosted at Rackspace.
 
-Cloud Platform Base Cloud {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-CloudPlatfor&ldquo;BaseClou&rdquo;}
+Cloud Platform Base Cloud {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-CloudPlatform&ldquo;BaseCloud&rdquo;}
 -------------------------
 
 Base Cloud is a basic System Center 2012 R2 plus Windows Azure Pack that

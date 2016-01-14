@@ -47,9 +47,11 @@ is accessible by the local Administrator account. The Windows Firewall
 has been configured to prevent external access to both TCP ports 80 and
 443. If you would like to allow external access to those ports, please
 follow these steps:
+
 1. First thing you'll do is login as
 the **Admini****strator**, select **Start**, and then open up
 your **Command Prompt**.
+
 2. Next, enter the following string:
 
     netsh advfirewall firewall add rule name="Open Port 80" dir=in action=allow protocol=TCP localport=80
@@ -61,6 +63,7 @@ the task bar and enter the following string:\
 
     New-NetFirewallRule -DisplayName "Open Port 443" -Action Allow -Direction Inbound -Enabled True -LocalPort 443 -Protocol TCP
     New-NetFirewallRule -DisplayName "Open Port 80" -Action Allow -Direction Inbound -Enabled True -LocalPort 80 -Protocol TCP
+
 3. Next, open your preferred browser and head directly to your server's
 URL (e.g. http://example.com). Enter your Administrator credentials to
 access the default web application.

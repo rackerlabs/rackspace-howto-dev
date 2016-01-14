@@ -19,12 +19,12 @@ That means:
 
 -   **Attribution:**  Rackspace Knowledge Center documents are intended
     for use by Rackspace customers. Please credit Rackspace for the
-    documentation and do&rsquo;t pass around old versions that may not
+    documentation and don&rsquo;t pass around old versions that may not
     reflect the latest changes. 
--   **Non-Commercial Use:** Rackspace defines&ldquo;commercial us&rdquo; of the
+-   **Non-Commercial Use:** Rackspace defines &ldquo;commercial use&rdquo; of the
     Rackspace Knowledge Center documentation as republication for
     profit. Using the documentation within a commercial enterprise, or
-    using the guide to develop for-profit applications using Rackspac&rsquo;s
+    using the guide to develop for-profit applications using Rackspace&rsquo;s
     Cloud Servers API is allowed and encouraged.
 -   **No Derivative Works:** Please do not alter, edit, or modify this
     documentation. Rackspace tries to make sure that this document is
@@ -34,7 +34,8 @@ That means:
 
 Your use of any API you download from the Rackspace website, as well as
 the code examples contained within the documentation, are governed by
-the license terms included with the code in the file named&ldquo;READM&rdquo;,&ldquo;COPYIN&rdquo; or&ldquo;LICENS&rdquo; or like caption.
+the license terms included with the code in the file named &ldquo;README&rdquo;,
+&ldquo;COPYING&rdquo; or &ldquo;LICENSE&rdquo; or like caption.
 
  
 
@@ -42,7 +43,7 @@ the license terms included with the code in the file named&ldquo;READM&rdquo;,&l
 -----------------------------------------
 
 The Rackspace Knowledge Center articles are for informational purposes
-only and are provided&ldquo;AS IS&rdquo;  The information set forth in these
+only and are provided &ldquo;AS IS.&rdquo;  The information set forth in these
 articles is intended as a guide and not as a step-by-step process, and
 does not represent an assessment of any specific compliance with laws or
 regulations or constitute advice. We strongly recommend that you engage
@@ -78,16 +79,16 @@ Except as expressly provided in any written license agreement from
 Rackspace, the furnishing of this document does not give you any license
 to patents, trademarks, copyrights, or other intellectual property.
 
-Rackspac&reg;, Rackspace logo, Fanatical Suppor&reg;, RackConnec&trade;, Racke&trade;
+Rackspace&reg;, Rackspace logo, Fanatical Support&reg;, RackConnect&trade;, Racker&trade;
 are service marks or registered service marks of Rackspace US, Inc. in
-the United States and/or other countries. OpenStac&trade; and OpenStack logo
+the United States and/or other countries. OpenStack&trade; and OpenStack logo
 are trademarks of OpenStack, LLC.  
 
 All other product names and trademarks used in the Rackspace Knowledge
 Center documentation are for identification purposes only to refer to
 either the entities claiming the marks and names or their products, and
 are property of their respective owners.  We do not intend our use or
-display of other companie&rsquo; tradenames, trademarks, or service marks to
+display of other companies&rsquo; tradenames, trademarks, or service marks to
 imply a relationship with, or endorsement or sponsorship of us by, these
 other companies.
 
@@ -98,7 +99,7 @@ other companies.
 **The Use of the word PARTNER** {.MsoNormal}
 -------------------------------
 
-The use of the word&lsquo;partne&rsquo; or&lsquo;channel partne&rsquo; does not imply a
+The use of the word &lsquo;partner&rsquo; or &lsquo;channel partner&rsquo; does not imply a
 partnership relationship between Rackspace and any other company.
 
  

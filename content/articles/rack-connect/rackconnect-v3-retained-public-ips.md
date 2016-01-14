@@ -53,18 +53,18 @@ related to public IP records.
     destination server must not have an existing public IP address at
     the time of assignment).
 
-The old serve&rsquo;s existing static NAT configuration (which is used to
-link the public IP address to the serve&rsquo;s private IP address) on the
+The old server&rsquo;s existing static NAT configuration (which is used to
+link the public IP address to the server&rsquo;s private IP address) on the
 edge network device is removed and replaced with a new static NAT
 configuration that translates the retained public IP address to the new
-serve&rsquo;s private IP address.
+server&rsquo;s private IP address.
 
 -   **Unassign a public IP address from a cloud server** without
     deleting the RackConnect public IP record (if the public IP record
     has its **retain** flag set to true).
 
 Doing so completely removes the static NAT configuration (used to link
-the public IP address to its assigned serve&rsquo;s private IP address) on
+the public IP address to its assigned server&rsquo;s private IP address) on
 the edge network device.
 
 You can find detailed RackConnect v3 API documentation for the Retained

@@ -32,7 +32,7 @@ transfers.
 
 ### How do I set up Multi Region?
 
-You do&rsquo;t need to do anything to set up multi region capabilities for
+You don&rsquo;t need to do anything to set up multi region capabilities for
 your account. All U.S. accounts have access to multiple regions.  If you
 use the Auth 1.1 or 2.0 API, you may choose which endpoint to interact
 with; once you've authenticated against the regional endpoint, your
@@ -70,7 +70,7 @@ Cloud Control Panel - List Containers
 ![](/knowledge_center/sites/default/files/field/image/ContainerList_0.png)
 
 Our API users will also see changes in their Service Catalog, which now
-shows multiple endpoints for&ldquo;object stor&rdquo;:
+shows multiple endpoints for &ldquo;object store&rdquo;:
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cf%20-%20api%20access%20points.png)
 
@@ -82,13 +82,13 @@ PUTs are done to both endpoints and they will be charged for data stored
 in both locations along with related bandwidth charges.\
  \
  All customers existing previous to September 1, 2012 had their current
-region set as their&ldquo;default", which orders it first in the list of
+region set as their &ldquo;default", which orders it first in the list of
 endpoints when authenticating against Cloud Files using our Auth 1.1 or
 2.0 APIs. Customers using Auth 1.0 will still only have a single
 endpoint returned.\
  \
- If you have customers around the world, do&rsquo;t forget that you can
-deliver your content rapidly with Akama&rsquo;s Content Delivery Network
+ If you have customers around the world, don&rsquo;t forget that you can
+deliver your content rapidly with Akamai&rsquo;s Content Delivery Network
 (CDN), which caches content at global edge locations and saves users
 time because the requested content is received from within the region
 instead of coming from the origin data center.

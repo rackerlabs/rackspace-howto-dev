@@ -10,10 +10,10 @@ product: Cloud Hosting
 body_format: full_html
 ---
 
--   [What is the developer&trade; program?](#what_is)
+-   [What is the developer+&trade; program?](#what_is)
 -   [What is the difference between the developer+ program and the
     Startup Program?](#difference)
--   [How is developer&trade; identified in the different Service
+-   [How is developer+&trade; identified in the different Service
     Levels?](#identified)
 -   [What if developers want to add another server? Test a website or
     database?](#add_service)
@@ -24,10 +24,10 @@ body_format: full_html
 
  
 
-### What is the developer&trade; program?
+### What is the developer+&trade; program?
 
 developer+ is an introductory program for developers that enables them
-to experience Fanatical Suppor&reg; and grow with Rackspace toward adoption
+to experience Fanatical Support&reg; and grow with Rackspace toward adoption
 of the managed cloud.
 
 The Service Level Rate and Service Level minimums are removed for
@@ -35,7 +35,7 @@ customers participating in the program. They are provided with an
 infrastructure credit of \$50 a month for 12 months that covers a base
 set of services. As with all Rackspace customers, participants in
 developer+ are provided the following services at no charge: Cloud DNS,
-Cloud Orchestration, Cloud Monitoring, Mailgu&trade; (first 50,000 emails
+Cloud Orchestration, Cloud Monitoring, Mailgun&trade; (first 50,000 emails
 free), and Cloud Networking. Some support options in the customer portal
 have been removed for developer+ customers, such as one-to-one chat,
 support tickets, and the phone number. Tickets have been replaced with
@@ -53,17 +53,17 @@ examine our offerings, documentation, user experience, and more.
 
  
 
-### What is the difference between developer&trade; and the Startup Program?
+### What is the difference between developer+&trade; and the Startup Program?
 
 developer+ offers a way for developers who are comfortable writing and
 deploying their code and require minimal assistance to use the Rackspace
 Cloud
 
 The Rackspace Startup Program offers discounted infrastructure as a
-service and leverages Rackspac&rsquo;s knowledge and experience in the
+service and leverages Rackspace&rsquo;s knowledge and experience in the
 business and technology communities to offer developing companies advice
 on how to best architect their product. The Startup Program also
-connects entrepreneurs to tools like ObjectRocke&trade; and Mailgu&trade;, and
+connects entrepreneurs to tools like ObjectRocket&trade; and Mailgun&trade;, and
 gives them access to guidance on their startup through our extensive
 network of startup and technology business professionals.
 
@@ -73,7 +73,7 @@ network of startup and technology business professionals.
 
 ### How is developer+ identified in the different Service Levels?
 
-Customers in the developer&trade; program are a part of the Managed
+Customers in the developer+&trade; program are a part of the Managed
 Infrastructure service level, but have limited access to support Rackers
 and have a customized self-service view.
 
@@ -102,7 +102,7 @@ The following features are part of developer+:
 
 developer+ customers can consume cloud at a "pay for what you consume"
 price for all services in any region at our adjusted infrastructure
-prices. They can consume ObjectRocke&trade;, OnMeta&trade;--everything currently
+prices. They can consume ObjectRocket&trade;, OnMetal&trade;--everything currently
 available to our other customers.\
  \
  [back to top](#top)
@@ -119,7 +119,7 @@ however, switch to developer+.\
 
  
 
-### How are developer&trade; customers billed?
+### How are developer+&trade; customers billed?
 
 Customers in developer+ pay only for infrastructure they consume over
 \$50 per month.

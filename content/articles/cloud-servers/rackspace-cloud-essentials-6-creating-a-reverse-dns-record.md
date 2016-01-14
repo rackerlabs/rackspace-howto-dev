@@ -26,9 +26,10 @@ many recipient servers reject, or mark as spam, all email that
 originates from an "unauthenticated" server.
 
 This means that after the sending IP address is checked, if the reverse
-DNS does not match the sending domain, then it is classed as&ldquo;unauthenticate&rdquo;.
+DNS does not match the sending domain, then it is classed as
+&ldquo;unauthenticated&rdquo;.
 
-We put&rdquo;unauthenticate&rdquo; in quotes because having a Reverse DNS record
+We put &rdquo;unauthenticated&rdquo; in quotes because having a Reverse DNS record
 attached to your domain does not automatically guarantee acceptance of
 email originating from your domain by the recipient's email server. It's
 just that non-matching or generic reverse DNS lookup settings are often
@@ -66,7 +67,7 @@ perform these steps:
     Details](/knowledge_center/sites/default/files/field/image/reverse%20DNS_add.png)
 
 4.  In the Add Record pop-up window:
-    -   Enter you domain name (for example&ldquo;mail.example.co&rdquo;) in the
+    -   Enter you domain name (for example &ldquo;mail.example.com&rdquo;) in the
         **Hostname** field.
     -   Set the Time to Live (TTL) for the record.
     -   Click **Save Record**.

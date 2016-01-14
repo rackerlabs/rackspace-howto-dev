@@ -34,16 +34,19 @@ meantime, please feel free to continue using ActiveSync.*
 
 BlackBerry OS5: 
 ----------------
+
 1. From the Home screen on your Blackberry select **Messaging**, and
 then select **Options**.
 
 ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES.png) 
  ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES2.png) 
+
 2. Next, select **Advanced Options** and then select **Enterprise
 Activation**.
 
 ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES3.png) 
  ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES4.png) 
+
 3. Enter in your full **email address** and the
 **Activation****Password** provided by your administrator, press the
 **Menu** button, and select **Activate**. Your device will then state
@@ -60,11 +63,13 @@ your connection and how much data you have*.
 
 **BlackBerry OS6**:
 -------------------
+
 1. From the BlackBerry Home screen, select the **Setup **icon and then
 select the **Email Accounts** icon.
 
 ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES7.png) 
  ![](http://c4233688.r88.cf2.rackcdn.com/(E%26A)BlackBerryBES8.png) 
+
 2. Select **Enterprise Activation**, fill in your **Email Address** and
 **Activation Password** and then select **Activate**. Your device will
 then state "**Acquiring service connection**" and your device will go
@@ -85,11 +90,14 @@ To set up your sub-folders, you will first need to set up folder
 redirection. The settings will only apply to new messages received after
 the folder redirection changes have been saved. Your BlackBerry software
 must be version 4.0 or higher. 
+
 1. On the Home screen, go to **Messages**, select the **Menu** key (on
 older models), and select **Options**, then **Email Settings**.
+
 2. Select the **Menu**key and select **Folder Redirection**and in the
 Folder Redirection menu, highlight your Mailbox, press the Menu key and
 select **Expand**.
+
 3. Highlight the folder you want to enable redirection on, press the
 **Menu** key and select **Change Option**. Press the **Menu** key and
 select **Save**.

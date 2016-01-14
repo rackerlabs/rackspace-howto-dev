@@ -20,7 +20,7 @@ following steps:\
 \
 1. Right click on the **Trash** folder\
 \
-2. In the context menu, click **Recover Deleted Emai&mldr;**\
+2. In the context menu, click **Recover Deleted Email&mldr;**\
 \
 ![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_1.png)\
 \
@@ -34,9 +34,9 @@ following steps:\
 \
 ![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_3.png)\
 \
-6. When you see the confirmation&ldquo;Message(s) Recovere&rdquo;, you are done.\
+6. When you see the confirmation &ldquo;Message(s) Recovered&rdquo;, you are done.\
 \
-*NOTE: Admins can do this on behalf of their use&rsquo;s by utilizing the
+*NOTE: Admins can do this on behalf of their user&rsquo;s by utilizing the
 Webmail **LoginAs***\
 *functionality available in the Control Panel.*\
 \

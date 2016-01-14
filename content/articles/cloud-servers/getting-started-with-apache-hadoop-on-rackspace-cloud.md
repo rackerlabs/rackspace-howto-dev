@@ -155,7 +155,7 @@ required to make it a Hadoop Master node.
 
     knife rackspace server create --server-name $ENV_NAME-hadoopmaster --image $IMAGE_ID --flavor $FLAVOR_ID --environment $ENV_NAME --run-list 'role[hadoop-master]'
 
-Now, copy the hadoopmaste&rsquo;s public IP and password from the output. We
+Now, copy the hadoopmaster&rsquo;s public IP and password from the output. We
 will save the IP address in an environment variable to use later.
 
     HADOOP_M_IP=<Hadoop Master IP>
@@ -163,7 +163,7 @@ will save the IP address in an environment variable to use later.
 
 Run the following commands:
 
-**Note:**Ideally, you should&rsquo;t have to run the code below, but there is
+**Note:**Ideally, you shouldn&rsquo;t have to run the code below, but there is
 currently a bug in the hdp-cookbooks where the hostname is not
 propagated properly. So you have to run this extra step.
 
@@ -180,7 +180,7 @@ Hadoop worker node:
 
     knife rackspace server create --server-name $ENV_NAME-hadoopworker1 --image $IMAGE_ID --flavor $FLAVOR_ID --environment $ENV_NAME --run-list 'role[hadoop-worker]'
 
-Similarly, copy the hadoopworker&rsquo;s public IP and password at the end.
+Similarly, copy the hadoopworker1&rsquo;s public IP and password at the end.
 We will save the hadoop worker IP address in an environment variable to
 use later.
 
@@ -208,7 +208,7 @@ sampling.
 
     curl -L "https://raw.github.com/sacharya/random-scripts/master/knife-rackspace-hadoop/wordcount.sh" | bash
 
-This script will download all of Shakespear&rsquo;s books from project,
+This script will download all of Shakespeare&rsquo;s books from project,
 Gutenberg, upload them to HDFS and run a Map Reduce operation run a word
 count against the text. 
 

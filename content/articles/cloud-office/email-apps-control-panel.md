@@ -38,7 +38,7 @@ Cloud Office Control Panel features
  ![Fanatical
 Support](/knowledge_center/sites/default/files/field/image/icon_fanatical-support.png)
 
-### *Fanatical Support&reg;^*
+### *Fanatical Support^&reg;^*
 
 Administrators can access live chat and ticket support 24x7x365. Easily
 access the support site for step-by-step guides.
@@ -71,7 +71,7 @@ temporarily disable administrators and users.
 
 ### *Centralized*
 
-Access everything in one plac&mdash;all of your apps, domain and account
+Access everything in one place&mdash;all of your apps, domain and account
 settings, and support options.
 
  ![Information

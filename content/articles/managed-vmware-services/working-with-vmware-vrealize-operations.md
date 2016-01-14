@@ -10,7 +10,7 @@ product: Managed VMware Services
 body_format: tinymce
 ---
 
-To get the new functionality from VMwar&reg; vRealiz&reg; Operation&reg; (vROps)
+To get the new functionality from VMware&reg; vRealize&reg; Operations&reg; (vROps)
 6.1 with End Point Operations (EP Ops) Management, you will need to
 install EP Ops agents on the VMs that you want to monitor. All VMs in
 your cluster are currently monitored by vROps; however, by installing
@@ -44,7 +44,7 @@ Locate EP Ops Agent files
 
 The EP Ops agent files will be located in the *vROps End Point
 Agents*folder the local VMFS datastore on the first ESXi host in your
-inventory. There will be zip or tar files for Microsof&reg; Window&reg; or
+inventory. There will be zip or tar files for Microsoft&reg; Windows&reg; or
 Linux in both x32 and x64 formats. From the vSphere Client or vSphere
 Web Client, you can select the first ESXi host in the inventory, browse
 its local datastore, and download the files to your desktop or a central
@@ -182,7 +182,7 @@ installation of the EP Ops agent to successfully re-register.
 
         c:\epops-agent>del "C:\ProgramData\VMware\EP Ops Agent\epops-token"
 
-*Note:** Enable **Show hidden files, folder, and drives**in **Folder
+**Note:** Enable **Show hidden files, folder, and drives**in **Folder
 Options** if using Windows Explorer.
 
 Verify that EP Ops Agent is collecting data
@@ -200,7 +200,7 @@ data properly.
 4.  Under **Adapter Instances** click **EP Ops Adapter Instance.**\
       
 5.  Under **EP Ops Adapter Instance**, click **EP Ops Adapter**.\
-     You will see your reporting VMs in the format of **EP Ops Agent&ndash;
+     You will see your reporting VMs in the format of **EP Ops Agent &ndash;
     {*VM Name*}.**\
       
 6.  Select an EPO Ops adapter to see the status of the agents. \
@@ -209,7 +209,7 @@ data properly.
      \
      ![](/knowledge_center/sites/default/files/field/image/twoVMs.png)\
      \
-     In the following figure, **EP Ops Agent&ndash; Lab-Win12** is receiving
+     In the following figure, **EP Ops Agent &ndash; Lab-Win12** is receiving
     (green) for both **Collection State** and **Collection Status**.\
      \
      ![](/knowledge_center/sites/default/files/field/image/collections.png)

@@ -62,7 +62,7 @@ You can create a cluster through the Cloud Control Panel as follows:
         credentials for Cloud Files.
 
 5.  After the status changes to Active, use SSH to log in to your
-    Gateway nod&rsquo;s PublicNet IP address, using the username and ssh key
+    Gateway node&rsquo;s PublicNet IP address, using the username and ssh key
     that you provided at cluster creation.
 
     ![](/knowledge_center/sites/default/files/field/image/logintoYourCluster_0.png)
@@ -72,7 +72,8 @@ Choosing a Stack
 
 The various predefined stacks comprise of different services. It is best
 to choose a stack that meets the requirement for all the services that
-you need. If you are unsure and want to try out, we recommend using the&ldquo;HDP 2.3 with all service&rdquo; stack.
+you need. If you are unsure and want to try out, we recommend using the
+&ldquo;HDP 2.3 with all services&rdquo; stack.
 
 Choosing a data node size
 -------------------------

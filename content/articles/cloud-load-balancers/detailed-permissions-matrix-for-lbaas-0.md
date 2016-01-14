@@ -837,7 +837,7 @@ Adds a metadata item to a specified node and load balancer.
 
 Bulk-delete Load Balancer Node Metadata Items
 
-DELETE loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadat{?metaId}
+DELETE loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata{?metaId}
 
  
 

@@ -41,13 +41,13 @@ To set up Exchange 2010
         set up the account manually. Continue to step 5.
 
 5.  Enter the following information and then click **Continue**:
-    -   **Description**&ndash; Enter a descriptive name for your mail account
+    -   **Description** &ndash; Enter a descriptive name for your mail account
         (for example, Work Mail).
-    -   **User Name**&ndash; Enter your entire email address (for example,
+    -   **User Name** &ndash; Enter your entire email address (for example,
         **user@example.com**).
-    -   **Password**&ndash; Enter the password associated with the email
+    -   **Password** &ndash; Enter the password associated with the email
         account you are setting up.
-    -   **Server Address**&ndash; Enter **connect.emailsrvr.com**.\
+    -   **Server Address** &ndash; Enter **connect.emailsrvr.com**.\
           
 
     ![](/knowledge_center/sites/default/files/field/image/MM104_0.png)

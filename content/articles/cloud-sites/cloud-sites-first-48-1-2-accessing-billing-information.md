@@ -98,7 +98,7 @@ being used for payments on the account.
 
 The resources described in this article are always available to you
 through our website and through the Control Panel, and we hope you find
-them useful in managing the billing for your account. If you ca&rsquo;t find
+them useful in managing the billing for your account. If you can&rsquo;t find
 the information that you need by using these resources, or if you need a
 detailed billing inquiry, you can contact our Billing Support team. We
 are available Monday through Friday from 8:00 a.m. to 5:00 p.m. central
@@ -106,7 +106,7 @@ standard time (CST), toll-free at 1 877 934 0410, or internationally at
 1 210 581 0410.
 
 The next article provides more information about how to get access to
-Rackspace ***Fanatical Support**&reg;.
+Rackspace ***Fanatical Support***&reg;.
 
 ### Next section
 

@@ -59,15 +59,18 @@ our system can connect to it.
 ###  
 
 ### **To enable Split Domain Routing perform the following steps:** 
+
 1. First log in to the control panel
 ([cp.rackspace.com](http://cp.rackspace.com)) & mouse over the **Go To
 Section** drop-down menu and select **Domains**.
 
 ![](/knowledge_center/sites/default/files/field/image/a.png)
+
 2. In the **Tools** section, select the **Split Domain** link & select
 the domain you want to set up Split Domain Routing for.
 
 ![](/knowledge_center/sites/default/files/field/image/b.png)
+
 3. Check the **Enable Split Domain Routing** box & in the **External
 Mail Server** box, enter the name of your external mail server. In
 the **Verification Address box**, enter in a valid email address that is

@@ -80,7 +80,7 @@ Comparison](http://www.rackspace.com/knowledge_center/article/rackconnect-networ
 
 ### Does RackConnect v3.0 support IPv6?
 
-Not yet&mdash; but support for IPv6 is anticipated for early 2016.
+Not yet &mdash; but support for IPv6 is anticipated for early 2016.
 
  
 

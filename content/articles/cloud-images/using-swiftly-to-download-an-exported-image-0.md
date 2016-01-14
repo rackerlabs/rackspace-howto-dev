@@ -152,12 +152,13 @@ download method outlined in the preceding section might repeatedly fail.
 This section describes an alternative method: instead of downloading the
 entire object at once, you download the individual segments that make it
 up. This method has the following advantages:
+
 &middot;  You have smaller, more manageable pieces to work with.\
-&middot;  You can verify the checksum for each of the pieces to ensure that no
+ &middot;  You can verify the checksum for each of the pieces to ensure that no
 part is corrupted.\
-&middot;  If a segment is faulty, you can download only that faulty segment
+ &middot;  If a segment is faulty, you can download only that faulty segment
 again.\
-&middot;  After you have all the pieces, you can stream them locally into a
+ &middot;  After you have all the pieces, you can stream them locally into a
 single VHD file.
 
 This section assumes that you have set all the environment variables
@@ -385,7 +386,7 @@ have nothing to compare it to. Because a Dynamic Large Object isn't a
 content is streamed out in a particular order), Cloud Files doesn't
 store an MD5 checksum for the object. Further, you don't need the
 checksum because the VHD file is made up of three segments, each one of
-has the correct content, and the&rsquo;ve been put together in the correct
+has the correct content, and they&rsquo;ve been put together in the correct
 order. So the VHD file must be identical to the file that was exported
 from Cloud Images into Cloud Files.
 

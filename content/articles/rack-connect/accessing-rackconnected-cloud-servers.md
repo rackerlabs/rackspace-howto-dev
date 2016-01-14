@@ -33,9 +33,9 @@ API. In either case, the public IP addresses assigned to your cloud
 servers are allocated out of one of your dedicated public IP address
 blocks. A NAT (network address translation) entry is then configured on
 your RackConnect edge network device, which is a one-to-one association
-from the allocated dedicated public IP address to the cloud serve&rsquo;s
-ServiceNet IP addres&mdash;in the case of RackConnect v2.&mdash;or to its cloud
-network IP addres&mdash;in the case of RackConnect v3.0.
+from the allocated dedicated public IP address to the cloud server&rsquo;s
+ServiceNet IP address&mdash;in the case of RackConnect v2.0&mdash;or to its cloud
+network IP address&mdash;in the case of RackConnect v3.0.
 
 You can use these dedicated public IP addresses to use SSH or RDP to
 directly access your cloud servers, as long as access is allowed. Access
@@ -46,10 +46,10 @@ feature available within the [MyRackspace
 portal](https://my.rackspace.com/).
 
 You can view the IP addresses assigned to your cloud servers by querying
-the Cloud Servers API or by looking up the cloud serve&rsquo;s details in the
+the Cloud Servers API or by looking up the cloud server&rsquo;s details in the
 MyRackspace portal or the [Cloud Control
 Panel](https://mycloud.rackspace.com/). For example, the following image
-shows the dedicated IP addres&mdash;named RackConnec&mdash;for a fully deployed
+shows the dedicated IP address&mdash;named RackConnect&mdash;for a fully deployed
 RackConnect cloud server in the MyRackspace portal.
 
 ![](/knowledge_center/sites/default/files/field/image/2025.1.png)\
@@ -67,8 +67,8 @@ alternative methods for connecting to these cloud servers:
 
 -   You can connect to one of your dedicated servers, and then from that
     dedicated server, you can connect to one of your RackConnect cloud
-    servers by using its ServiceNet IP addres&mdash;with RackConnect v2.0
-    cloud server&mdash;or by using its cloud networ&rsquo;s IP addres&mdash;with
+    servers by using its ServiceNet IP address&mdash;with RackConnect v2.0
+    cloud servers&mdash;or by using its cloud network&rsquo;s IP address&mdash;with
     RackConnect v3.0 cloud servers. With RackConnect v2.0, this method
     requires that you have an appropriate Dedicated to Cloud Servers
     network policy deployed. With RackConnect v3.0, this method requires

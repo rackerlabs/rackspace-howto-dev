@@ -20,12 +20,14 @@ perform the following steps.
 A box opens letting you know that your service is being deployed.
 Another box opens showing that your set up is complete along with the
 URL you need to use to create your CNAME record.
+
 1. Click Create Service. A popup dialog box is displayed. (Pricing
 information is displayed under the drop down menu in the following
 figure. To get pricing information, click the dollar sign (\\\$) icon.)
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-15%20at%201.29.00%20PM.png)  
  
+
 2. Enter the following information to create your service:
 
 -   **Service Name**: A human-readable name for your service.
@@ -76,9 +78,10 @@ certificate:
     site can be the IP address of the server or load balancer for your
     site. Additionally, it is a good practice to use a domain name for
     your origin. To do this, simply create a DNS A record for your
-    origin&mdash; for example, **origin.example.com = 12.345.6.789**. You can
+    origin &mdash; for example, **origin.example.com = 12.345.6.789**. You can
     add additional origins to the service after the service is created.
      
+
 3.  Click **Create Service**. A box opens showing the progress of the
 creating of the service. When the setup of the service is complete, a
 box opens that provides the URL to use to create your CNAME record and a
@@ -99,11 +102,12 @@ After you have configured the website and before you update your DNS
 records, test that the web server is responding by using a cURL
 statement similar to the following one:
 
-    curl -I -k&ndash;H "Host:cdn.customer.com.cdn306.raxcdn.com" https://SERVER_IP/
+    curl -I -k &ndash;H "Host:cdn.customer.com.cdn306.raxcdn.com" https://SERVER_IP/
 
 The response should be `HTTP/1.1 200 OK`.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-14%20at%203.54.30%20PM.png)   
+
 4.  Click **Close** to close this box and open a page with all the
 details about the new service.
 

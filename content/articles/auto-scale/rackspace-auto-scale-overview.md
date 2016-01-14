@@ -29,7 +29,7 @@ consists of the following items:
 -   Scaling policy: Defines the action of the policy (for example, scale
     up by 5 servers)
 -   Webhook (capability-based URL): Triggers a scaling policy (for
-    example,&ldquo;When this URL is hit, execute this scaling policy&rdquo;)
+    example, &ldquo;When this URL is hit, execute this scaling policy.&rdquo;)
 
 ### Use Cases
 

@@ -19,11 +19,13 @@ saved image, you must still use the same base OS version.
 **Note:****The first part of the procedure takes you through creating a
 snapshot image; if your snapshot image has already been created, you can
 skip to [Restoring A Server From A Saved Image](#A).
+
 1. Log into the Cloud Control Panel.
 
 ![](http://c15149618.r18.cf2.rackcdn.com/1.png)
 
  
+
 2. Select the server that you want to clone by clicking the actions cog
 to the left of the server name.\
  \
@@ -36,6 +38,7 @@ to the left of the server name.\
 -   A pop-up window will appear that allows you to name the image.
 
  
+
 4. After naming the image, click the **Create Image** button.
 
 ![](/knowledge_center/sites/default/files/field/image/Feb%2012%20-%20Create%20image_2.png)

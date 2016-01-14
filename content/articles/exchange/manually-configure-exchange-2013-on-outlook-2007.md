@@ -66,6 +66,7 @@ Authentication**.\
  \
  8. In the Microsoft Exchange dialog box, click **Apply** and then click
 **OK**.
+
 9. On the Server Settings page, click Check Name, type your password,
 and then click **OK**.
 
@@ -78,9 +79,11 @@ Your name will then be highlighted and a line will appear under the
 *Note: The server name resolves to a unique string that is different
 with every mailbox. Do not attempt to replicate this information with
 other accounts.*
+
 10. Click **Next**, and on the next page, click **Finish**.\
  \
  ![](/knowledge_center/sites/default/files/field/image/Step7.png)\
  ![](/knowledge_center/sites/default/files/field/image/Step8.png)
+
 11. Open Outlook to select your new Exchange profile.
 

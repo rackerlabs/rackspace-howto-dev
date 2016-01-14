@@ -17,7 +17,7 @@ Cloud Sites is upgrading ASP.NET 4.0 IIS clusters to ASP.NET 4.5.2 and
 ASP.NET 3.x clusters to 3.5.1 SP1. We are upgrading because some
 installed versions of ASP.NET are reaching their support end-of-life
 (EOL), and because the new versions provide new, beneficial features for
-web applications. Although we do&rsquo;t expect any downtime for your site,
+web applications. Although we don&rsquo;t expect any downtime for your site,
 we will provide a test link in advance to help identify potential site
 break changes that might occur.
 

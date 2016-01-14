@@ -37,8 +37,8 @@ This option is primarily for users who access their email from a
 web-based interface.  If you use this option, you can communicate with
 your users ahead of time and inform them that they must access their
 email from a new URL,
-[https://apps.rackspace.com](https://apps.rackspace.com), by your&ldquo;go
-liv&rdquo; date.
+[https://apps.rackspace.com](https://apps.rackspace.com), by your &ldquo;go
+live&rdquo; date.
 
 End users requiring a desktop email client connection can get setup
 instructions after the migration is complete by going to the Rackspace

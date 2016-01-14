@@ -33,9 +33,11 @@ Rules** section of the CDN service page.
 
 After you have created your service, follow these steps to create a
 caching rule:
+
 1. Click **Add Rule**. A popup dialog box appears.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.22.58%20AM.png)
+
 2. Enter the following information to define the rule:
 
 -   **Name**: Name for the rule.
@@ -43,6 +45,7 @@ caching rule:
     Enter a value, and then select seconds, minutes, hours, or days as
     the unit for the TTL.
 -   **Path**: Path for the rule.
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 new rule is deployed. After the rule is deployed, it is displayed in the
 **Caching Rules** list.
@@ -54,11 +57,14 @@ new rule is deployed. After the rule is deployed, it is displayed in the
 ### To edit a caching rule
 
 To edit a caching rule, follow these steps:
+
 1. Click the gear icon beside the rule that you want to edit, and
 select **Edit Rule**.
+
 2. Edit the name, the TTL, or the path for the rule.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2011.39.23%20AM.png)
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 updated rule is deployed. After the rule is deployed, it is displayed in
 the **Caching Rules** list.
@@ -68,8 +74,10 @@ the **Caching Rules** list.
 ### To delete a caching rule
 
 To delete a caching rule, follow these steps:
+
 1. Click the gear icon beside the rule that you want to delete, and
 select **Delete Rule**.
+
 2. In the popup dialog box, click **Delete Rule**.
 
 ![](/knowledge_center/sites/default/files/field/image/DeleteOriginRule_0.png)

@@ -98,7 +98,7 @@ support earlier versions of Internet Explorer.
 How long are chat logs retained?
 --------------------------------
 
-We do&rsquo;t store chat logs on our system, but users are able to see any
+We don&rsquo;t store chat logs on our system, but users are able to see any
 messages sent or received during their current Webmail session. We plan
 to add message archiving in the future. Please [submit your
 feedback](http://feedback.rackspace.com/ "submit your feedback").

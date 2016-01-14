@@ -13,14 +13,14 @@ body_format: tinymce
 Get quick answers to common questions about Rackspace Managed Cloud
 service levels.
 
--  [What are the Rackspace service levels?](#service_levels)
+-   [What are the Rackspace service levels?](#service_levels)
 -   [What is the DevOps Automation Service?](#devops)
 -   [Can new public-cloud customers choose other service levels besides
     Managed Cloud?](#choose)
 -   [What happens with customers who are on the old Infrastructure
     service level?](#old_infra)
 -   [Are we improving the support experience?](#improving)
--   [What do I get with Fanatical Suppor&reg;?](#pillars)
+-   [What do I get with Fanatical Support&reg;?](#pillars)
 -   [Do Managed Operations customers get additional
     services?](#add_service)
 -   [What support guarantees do customers receive with Managed
@@ -85,7 +85,7 @@ Infrastructure or Managed Operations service levesl.
 Customers who have the Infrastructure Service Level will be
 grandfathered into their current pricing plan and will continue to
 receive the same support as always, along with the enhancements that
-w&rsquo;re announcing.
+we&rsquo;re announcing.
 
 [back to top](#top)
 
@@ -94,7 +94,7 @@ w&rsquo;re announcing.
 ### Is Rackspace improving the support experience?
 
 Yes, we are always looking at ways to improve our support. We expect
-that our pricing changes will cause some new customers who do&rsquo;t value
+that our pricing changes will cause some new customers who don&rsquo;t value
 support to choose other providers. As a result, we will be able to shift
 more resources to serve customers who do value support and are willing
 to pay for it.
@@ -103,7 +103,7 @@ to pay for it.
 
  
 
-### What do I get with *Fanatical Suppor&reg;*?
+### What do I get with *Fanatical Support&reg;*?
 
 There are five foundational components to Fanatical Support:
 
@@ -114,7 +114,7 @@ There are five foundational components to Fanatical Support:
     workload to help identify potential vulnerabilities and enable more
     secure deployments.
 -   **Code development assistance**: Standard developer guides alone
-    are&rsquo;t enough. Use our experts for your code, leveraging our
+    aren&rsquo;t enough. Use our experts for your code, leveraging our
     interfaces (for example. APIs and SDKs) to the fullest.
 -   **Launch assistance**: Use our specialists to help understand your
     unique needs and get up and running fast.

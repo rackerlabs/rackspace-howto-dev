@@ -11,8 +11,11 @@ body_format: tinymce
 ---
 
 If your PHP script is not working, check the following:
+
 1. Did you save it as a file with the ".php" extension?
+
 2. Did you upload it to the correct folder on the server?
+
 3. Did you upload it in ASCII?
 
 If you've tried all of the above and your sript still isn't working, you

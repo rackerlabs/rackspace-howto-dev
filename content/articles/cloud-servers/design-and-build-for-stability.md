@@ -78,7 +78,7 @@ is available as a stand-alone service or as an integrated solution.
 ### Load Testing
 
 Enough cannot be said about the value of testing (and then re-testing)
-your applicatio&rsquo;s infrastructure before putting it into production.
+your application&rsquo;s infrastructure before putting it into production.
 Load testing reveals potential failure points in the design of your
 infrastructure and opportunities to optimize your code, which can also
 help overall stability. 

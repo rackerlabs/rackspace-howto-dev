@@ -37,19 +37,19 @@ five RackConnect traffic scenarios. Following are the available network
 policies, with their effect on network device access lists and software
 firewalls (iptables or Windows Firewall):
 
--   Cloud Server(s) to Dedicated&ndash; Updates connected network device
+-   Cloud Server(s) to Dedicated &ndash; Updates connected network device
     access lists
 
--   Cloud Server(s) to Internet&ndash; Updates connected network device
+-   Cloud Server(s) to Internet &ndash; Updates connected network device
     access lists
 
--   Cloud Server(s) to Cloud Server(s)&ndash; Updates inbound software
+-   Cloud Server(s) to Cloud Server(s) &ndash; Updates inbound software
     firewalls on cloud servers
 
--   Dedicated to Cloud Server(s)&ndash; Updates inbound software firewalls on
+-   Dedicated to Cloud Server(s) &ndash; Updates inbound software firewalls on
     cloud servers
 
--   Internet to Cloud Server(s)&ndash; Updates edge network device access
+-   Internet to Cloud Server(s) &ndash; Updates edge network device access
     lists and inbound software firewalls on cloud servers
 
 **Note:** Software firewalls are configured to allow unrestricted

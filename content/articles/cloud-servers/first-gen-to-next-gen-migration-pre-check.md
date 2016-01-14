@@ -36,7 +36,7 @@ SELinux check
 The SELinux check indicates whether SELinux is currently enabled on your
 server. SELinux interferes with several OS-level changes that are made
 by the Next Gen migration process. If the check fails (that is, if
-SELinux is detected), you do&rsquo;t need to take any action. However, note
+SELinux is detected), you don&rsquo;t need to take any action. However, note
 that SELinux will not be automatically re-enabled after the migration.
 You must enable it manually.
 
@@ -137,7 +137,7 @@ install these drivers manually.
 Nova agent check
 ----------------
 
-In the XenServer infrastructure, the OpenStac&reg; guest agent is the same
+In the XenServer infrastructure, the OpenStack&reg; guest agent is the same
 as that used in the Next Gen Cloud Servers infrastructure. This nova
 agent allows us to perform actions such as password resets and
 networking configuration changes without requiring a reboot of your

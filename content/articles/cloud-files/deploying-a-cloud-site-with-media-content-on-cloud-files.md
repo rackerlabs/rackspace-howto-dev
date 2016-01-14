@@ -179,7 +179,7 @@ Conclusion
 
 Now navigate to the sample page that you created. The image is being
 called from Cloud Files, but if a user looks at your source code, it
-looks as if the image is being called locally. This redirect does&rsquo;t
+looks as if the image is being called locally. This redirect doesn&rsquo;t
 change the actual HTTP request, but it does obfuscate the URL in the
 source code.
 

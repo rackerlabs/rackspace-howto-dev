@@ -31,7 +31,7 @@ support for the binding listed below:
 
 ** **
 
-**Code Samples&ndash; JSON**
+**Code Samples &ndash; JSON**
 
 -   [Create Database Instance Request](#a9)
 -   [Create Database Instance Response](#a10)
@@ -50,7 +50,7 @@ support for the binding listed below:
 
  
 
-**Code Samples&ndash; SDKs**
+**Code Samples &ndash; SDKs**
 
 -   [Rackspace Cloud SDKs Software Developement Kit
     Guide](http://docs.rackspace.com/sdks/guide/content/intro.html)
@@ -62,34 +62,53 @@ support for the binding listed below:
 **List of API Operations**
 
 o    API Versions
+
 &sect;  List Versions
+
 &sect;  List Version Details
 
 o   Database Instances
+
 &sect;  Create Database Instance
+
 &sect;  List All Database Instances
+
 &sect;  List Database Instance Status and Details
+
 &sect;  Delete Database Instance
+
 &sect;  Enable Root User
+
 &sect;  List Root-Enabled Status
 
 o   Database Instance Actions
+
 &sect;  Restart Instance
+
 &sect;  Resize the Instance
+
 &sect;  Resize the Instance Volume
 
 o   Databases
+
 &sect;  Create Database
+
 &sect;  List Databases for Instance
+
 &sect;  Delete Database
 
 o   Users
+
 &sect;  Create User
+
 &sect;  List Users in Database Instance
+
 &sect;  Delete User
 
 o   Flavors
+
 &sect;  List Flavors
+
 &sect;  List Flavor By ID\
 \
 
@@ -444,7 +463,7 @@ Date: Wed, 27 Jun 2012 23:11:18 GMT
 This information is intended for software developers who want to develop
 applications by using Rackspace Cloud Databases application programming
 interface (API). The information is for informational purposes only and
-is provided&ldquo;as is&rdquo;
+is provided &ldquo;as is.&rdquo;
 
 Rackspace makes no representations or warranties of any kind, express or
 implied, as to the accuracy or completeness of the contents of this

@@ -24,18 +24,18 @@ some Rackspace content discusses PII.
 PII includes the following information:
 
 **(i)** a combination of any information that identifies an individual
-with that individua&rsquo;s sensitive and non-public financial, health or
-other data or attribute, such as a combination of the individua&rsquo;s name,
-address, or phone number with the individua&rsquo;s social security number or
+with that individual&rsquo;s sensitive and non-public financial, health or
+other data or attribute, such as a combination of the individual&rsquo;s name,
+address, or phone number with the individual&rsquo;s social security number or
 other government issued number, financial account number, date of birth,
-address, biometric data, mothe&rsquo;s maiden name, or other personally
+address, biometric data, mother&rsquo;s maiden name, or other personally
 identifiable information;
 
-**(ii)** any&ldquo;non-public personal informatio&rdquo; as that term is defined
-in the Gramm-Leach-Bliley Act found at 15 USC Subchapter 1,&sect; 6809(4),
+**(ii)** any &ldquo;non-public personal information&rdquo; as that term is defined
+in the Gramm-Leach-Bliley Act found at 15 USC Subchapter 1, &sect; 6809(4),
 
-and **(iii)** &ldquo;protected health informatio&rdquo; as defined in the Health
-Insurance Portability and Accountability Act found at 45 CFR&sect;160.103.
+and **(iii)**  &ldquo;protected health information&rdquo; as defined in the Health
+Insurance Portability and Accountability Act found at 45 CFR &sect;160.103.
 
 ### Rackspace Knowledge Center Articles That Reference PII
 

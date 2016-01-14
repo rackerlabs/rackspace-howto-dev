@@ -69,7 +69,7 @@ Rackspace Cloud products are categorized under the following headings:
 -   Database Backups
 -   Configurations
 -   Object Rocket
--   Big Data Powered by Apach&trade; Hadoo&reg;
+-   Big Data Powered by Apache&trade; Hadoop&reg;
 
 **Orchestration**
 

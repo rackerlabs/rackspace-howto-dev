@@ -125,8 +125,8 @@ You can perform the following editing actions for checks:
 
 ### Add an alarm
 
-For instructions on adding an alarm for a check, see the&ldquo;Create an
-alar&rdquo; section of [Working with Alarms in Rackspace
+For instructions on adding an alarm for a check, see the &ldquo;Create an
+alarm&rdquo; section of [Working with Alarms in Rackspace
 Intelligence](/knowledge_center/article/working-with-alarms).
 
 ### Modify the status of a check

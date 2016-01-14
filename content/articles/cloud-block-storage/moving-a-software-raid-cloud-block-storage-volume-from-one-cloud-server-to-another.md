@@ -25,6 +25,7 @@ Server](/knowledge_center/article/configuring-a-software-raid-on-a-linux-perform
 
 You must detach the volume from the source server before you can move it
 to the destination server.
+
 1. Run cat mdstat to see the name of the md device, as seen in the
 following example:
 
@@ -34,6 +35,7 @@ following example:
         157155200 blocks super 1.2 [2/2] [UU]
 
 \*\*In this example, the md device is md0.
+
 2. Run the mount command to find the mount point.
 
         mount
@@ -42,14 +44,17 @@ following example:
 In this example, the volume mounted is /raid.
 
 ### Unmount the RAID Volume
+
 3. Unmount the volume, as shown in the following example:
 
         umount /raid
+
 4. Use mdadm to deactivate the md device, as shown in the following
 example:
 
         mdadm --stop /dev/md0
         mdadm: stopped /dev/md0
+
 5. In the Cloud Control Panel
 ([mycloud.rackspace.com](http://mycloud.rackspace.com)), navigate to the
 details page for the server from which you want to detach the Cloud
@@ -66,12 +71,14 @@ Actions gear next to each volume that you want to detach, and select
 ![](/knowledge_center/sites/default/files/field/image/RAIDImage2.png)
 
 ### Attach the RAID Volume
+
 8. Attach raid volume to Destination server.
 
 ![](/knowledge_center/sites/default/files/field/image/RAIDImage3.png)
 
 ![](/knowledge_center/sites/default/files/field/image/RAIDImage4.png)
-9. Run fdisk&ndash;l to see the device IDs of the newly attached Cloud Block
+
+9. Run fdisk &ndash;l to see the device IDs of the newly attached Cloud Block
 Storage volumes.
 
         Disk /dev/xvdb: 161.1 GB, 161061273600 bytes
@@ -88,6 +95,7 @@ Storage volumes.
         Disk identifier: 0x00000000
 
 ### Re-Create the RAID Volume
+
 10. Install mdadm on destination server if it is not already installed.
 
 For Redhat, CentOS, Fedora, and Scientific Linux (SL):
@@ -99,10 +107,12 @@ For Ubuntu or Debian:
 
         sudo apt-get update 
         sudo apt-get install mdadm
+
 11. Reassemble the volumes in the RAID.
 
         mdadm --assemble --scan
         mdadm: /dev/md/0 has been started with 2 drives.
+
 12. Remount the RAID.
 
         mkdir /newraid

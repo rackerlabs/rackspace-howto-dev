@@ -36,12 +36,16 @@ rules](https://www.rackspace.com/knowledge_center/article/rackspace-cdn-edge-rul
 ### To add an origin
 
 To add an additional origin to your service, follow these steps:
+
 1. In the **Service Details** section, click **Add Origin**.
+
 2. Enter the IP address or domain name of the origin where your content
 resides.
+
 3. Enter the path for the origin. You can use a wildcard for the path.
 
 ![](/knowledge_center/sites/default/files/field/image/AddOrigin.png)
+
 4. Click **Save Origin**. The **Service Status** is **Pending** until
 the new origin is deployed. After the origin is deployed, it is
 displayed in the **Origin** list under **Service Details.**
@@ -52,11 +56,13 @@ displayed in the **Origin** list under **Service Details.**
 
 To change the **Host Header** for any origin that you create, follow
 these steps to create an origin rule:
+
 1. Click the pencil icon
 (![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.44.26%20PM.png))
 beside the origin name.   A popup dialog box appears.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.45.32%20PM.png)
+
 2. Select the type of Host Header from the dropdown. The following
 types are available:
 
@@ -105,10 +111,12 @@ service.
 
 After you have created your service and added an additional origin,
 follow these steps to create an origin rule:
+
 1. Click **Add Rule**. The **Add Rule** button appears only if you have
 multiple origins for the service. A popup dialog box appears.
 
 ![](/knowledge_center/sites/default/files/field/image/createOriginRule.png)
+
 2. Enter the following information to define the rule:
 
 -   **Name**: Name for the rule.
@@ -116,6 +124,7 @@ multiple origins for the service. A popup dialog box appears.
     from the menu, which shows the origins that are defined for the
     service.
 -   **Path**: Path for the rule.
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 new rule is deployed. After the rule is deployed, it is displayed in the
 **Origin Rules** list.
@@ -127,12 +136,15 @@ new rule is deployed. After the rule is deployed, it is displayed in the
 ### To edit an origin rule
 
 To edit an origin rule, follow these steps:
+
 1. Click the gear icon beside the rule that you want to edit, and
 select **Edit Rule**.
+
 2. In the popup dialog box, edit the name of the rule or the path for
 the rule.
 
 ![](/knowledge_center/sites/default/files/field/image/EditOriginRule.png)
+
 3. Click **Save Rule**. The **Service Status** is **Pending** until the
 updated rule is deployed. After the rule is deployed, it is displayed in
 the **Origin Rules** list.
@@ -142,8 +154,10 @@ the **Origin Rules** list.
 ### To delete an origin rule
 
 To delete an origin rule, follow these steps:
+
 1. Click the gear icon beside the rule that you want to delete, and
 select **Delete Rule**.
+
 2. In the popup dialog box, click **Delete Rule**.
 
 ![](/knowledge_center/sites/default/files/field/image/DeleteOriginRule.png)

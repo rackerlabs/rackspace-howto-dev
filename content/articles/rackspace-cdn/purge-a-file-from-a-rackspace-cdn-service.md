@@ -11,10 +11,13 @@ body_format: tinymce
 ---
 
 To refresh the content in a Rackspace CDN service, follow these steps:
+
 1. Access CDN as described in [Access Rackspace
 CDN](https://www.rackspace.com/knowledge_center/article/access-rackspace-cdn).
+
 2. In the list of CDN services, click the gear icon beside the service
 and select **Refresh Content**.
+
 3. In the popup dialog box, indicate if you want to **Refresh All
 Files** or **Refresh Files By Path**. To **Refresh Files By Path**,
 enter the path to the file that you want to refresh.\
@@ -23,6 +26,7 @@ enter the path to the file that you want to refresh.\
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2012.39.54%20PM.png)
 
  
+
 4. Click **Refresh Content** to activate the refresh action.
 
 For information about handling a content refresh via the API, see the

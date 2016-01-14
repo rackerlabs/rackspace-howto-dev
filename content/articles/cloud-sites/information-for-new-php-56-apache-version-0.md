@@ -23,9 +23,9 @@ potential site break changes that may occur on your sites.
 
 -   PHP 5.6 will be released on Apache 2.4 (Updating from Apache 2.2)
 -   PHP5.6 test links will be available after Aug 1st
--   **Early Q3 2015**&ndash; PHP 5.6 test links will be available for all
+-   **Early Q3 2015** &ndash; PHP 5.6 test links will be available for all
     customers to begin testing. See below.
--   **Late Q3 2015**&ndash; PHP 5.6 will be available for provisioning.
+-   **Late Q3 2015** &ndash; PHP 5.6 will be available for provisioning.
 -   **Late Q3 2015**- PHP 5.3/5.4 clusters will be updated to PHP 5.6
 
 #### **Access Control (.htaccess) Updates**
@@ -106,15 +106,15 @@ support HTTPS.*
 -   The version of Apache has been updated to 2.4 along with all of its
     relevant CVE updates.
 
-**After the maintenance, my websit&rsquo;s php\_errors.log is showing&ldquo;PHP
-Warning Deprecate&rdquo; alerts. What may have occurred?**
+**After the maintenance, my website&rsquo;s php\_errors.log is showing &ldquo;PHP
+Warning Deprecated&rdquo; alerts. What may have occurred?**
 
 -   The PHP application should continue to run as normal, but may not be
     supported by newer versions of PHP.
 -   It's highly recommended to update the application to use the newer
     functions for PHP 5.6.
 
-**My site keeps saying&ldquo;connection refuse&rdquo; when trying to test HTTPS
+**My site keeps saying &ldquo;connection refused&rdquo; when trying to test HTTPS
 when utilizing the updated test links. What may have occurred?**
 
 -   Cloud Sites test links do not support SSL, so any requests made to

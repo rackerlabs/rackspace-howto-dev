@@ -13,7 +13,7 @@ body_format: tinymce
 Get quick answers to common questions about Rackspace Email.
 
 -   **Getting started**
-    -   [***What is the maximum amount of mailbox
+    -   [****What is the maximum amount of mailbox
         storage?](#Maximum%20mailbox)
     -   [What is the maximum size for an attachment?](#Max%20attach)
     -   [How do I add a signature to my email?](#Email%20sig)

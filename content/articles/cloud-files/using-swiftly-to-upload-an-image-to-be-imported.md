@@ -37,9 +37,10 @@ The steps in this article assume that you have already properly prepared
 an image for import into the public cloud and that you have already
 installed the Swiftly client. If you need help with either of these
 prerequisites, see the following articles:
+
 &middot; [Preparing an image for import into the Rackspace open
 cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud)\
-&middot; [Install the Swiftly client for Cloud
+ &middot; [Install the Swiftly client for Cloud
 Files](http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files)
 
 Set environment variables

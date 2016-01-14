@@ -44,7 +44,7 @@ independent process and can be monitored individually. As a result, the
 size of the data collected by infrastructure-monitoring tools, such as
 Cloud Monitoring and Nagios, has grown exponentially.
 
-Tha&rsquo;s where Rackspace Metrics comes in.
+That&rsquo;s where Rackspace Metrics comes in.
 
 Rackspace Metrics focuses on changing the cost-structure of metrics
 collection by replacing the storage component. Metrics storage is
@@ -145,7 +145,7 @@ available via email only during regular business hours. If you have
 further questions or a suggestion, contact us at
 [cloudmetrics-earlyaccess@rackspace.com](mailto:cloudmetrics-earlyaccess@rackspace.com).
 
-Your feedback is a key ingredient of Rackspac&rsquo;s success. If you have
+Your feedback is a key ingredient of Rackspace&rsquo;s success. If you have
 suggestions for enhancements to Rackspace Metrics, contact us at
 [cloudmetrics-earlyaccess@rackspace.com](mailto:cloudmetrics-earlyaccess@rackspace.com).
 

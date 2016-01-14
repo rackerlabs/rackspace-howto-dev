@@ -32,7 +32,7 @@ latter method is subject to brute-force attacks, poor choice or strength
 of passwords, and a higher risk of being stolen remotely. For these
 reasons, we recommend that you enable key-based SSH or OpenSSH
 authentication on your newly provisioned cloud server. Depending on your
-serve&rsquo;s OS distribution, see the following references for instructions:
+server&rsquo;s OS distribution, see the following references for instructions:
 
 -   Ubuntu:
     [https://help.ubuntu.com/community/SSH/OpenSSH/Keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
