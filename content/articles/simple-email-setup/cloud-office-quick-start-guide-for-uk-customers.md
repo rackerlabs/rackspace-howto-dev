@@ -41,19 +41,19 @@ your MX records.
 ### Add mailboxes
 
 1.  Log in to the [MyRackspace Customer
-    Portal](https://my.rackspace.com/).\
-    \
-2.  From the **Products** menu, click **Email & Apps**.\
-    \
-3.  In the Email & Apps window, click **Open Mail Control Panel**.\
-    \
+    Portal](https://my.rackspace.com/).<br>
+    <br>
+2.  From the **Products** menu, click **Email & Apps**.<br>
+    <br>
+3.  In the Email & Apps window, click **Open Mail Control Panel**.<br>
+    <br>
 4.  In the Email Hosting section of the Cloud Office Control Panel,
-    click **Mailboxes**.\
-    \
-5.  Click the domain to which you want to add mailboxes.\
-    \
-6.  Click **Add Mailbox**.\
-    \
+    click **Mailboxes**.<br>
+    <br>
+5.  Click the domain to which you want to add mailboxes.<br>
+    <br>
+6.  Click **Add Mailbox**.<br>
+    <br>
 7.  On the **General** tab, enter values in the User Details section.
 
     **Note:** **User Name** is the email address for the new mailbox.
@@ -62,8 +62,8 @@ your MX records.
     **User Name** field.
 
 8.  On the **Contact Info** tab, enter values in the Basic Info, Phone
-    Numbers, and Other User Data sections.\
-    \
+    Numbers, and Other User Data sections.<br>
+    <br>
 9.  Click **Save**.
 
 **Note:** If you want to move your existing email account to your
@@ -100,8 +100,8 @@ View your mail
 Choose one of the following options to view your new mailboxes:
 
 -   Go to the Rackspace webmail site at
-    [https://apps.rackspace.com](https://apps.rackspace.com/).\
-    \
+    [https://apps.rackspace.com](https://apps.rackspace.com/).<br>
+    <br>
 -   Use Outlook, Exchange, Thunderbird, or another email client of your
     preference. Use the [Rackspace Cloud Office interactive
     guide](https://emailhelp.rackspace.com/) to help you set up your
@@ -119,24 +119,24 @@ Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
 Add a new domain
 ----------------
 
-1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com/).\
-    \
-2.  From the **Products** menu, click **Email & Apps**.\
-    \
-3.  In the Email & Apps window, click **Open Mail Control Panel**.\
-    \
+1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com/).<br>
+    <br>
+2.  From the **Products** menu, click **Email & Apps**.<br>
+    <br>
+3.  In the Email & Apps window, click **Open Mail Control Panel**.<br>
+    <br>
 4.  From the **Go to** section menu or the Domains section, click
-    **Domains**.\
-    \
-5.  Click **Add Domain**.\
-    \
-6.  Enter the new domain into the **Domain Name** field.\
-    \
+    **Domains**.<br>
+    <br>
+5.  Click **Add Domain**.<br>
+    <br>
+6.  Enter the new domain into the **Domain Name** field.<br>
+    <br>
 7.  Select the product options that you want to add to your domain:
     -   Rackspace Email
     -   Microsoft Exchange with ActiveSync and BlackBerry options.
-    -   Rackspace Archiving\
-        \
+    -   Rackspace Archiving<br>
+        <br>
 
 8.  Click **Save**.
 
@@ -148,14 +148,14 @@ Add an alias
 Follow these steps to set up a mailbox alias.
 
 1.  Log in to the [Cloud Office Control
-    Panel](https://cp.rackspace.com/).\
-    \
+    Panel](https://cp.rackspace.com/).<br>
+    <br>
 2.  In the Rackspace Email section, click **Aliases**.
 
     ![](/knowledge_center/sites/default/files/field/image/2233-4723-1_0.png)
 
-3.  Select the domain for which you want to add an alias.\
-    \
+3.  Select the domain for which you want to add an alias.<br>
+    <br>
 4.  Click **Add Alias**.
 
     ![](/knowledge_center/sites/default/files/field/image/2233-4723-2_0.png)
@@ -165,11 +165,11 @@ Follow these steps to set up a mailbox alias.
     ![](/knowledge_center/sites/default/files/field/image/2233-4723-3_0.png)
 
 6.  Optionally, select members of your domain and move them to the
-    **Members of this Alias** field, and click **Add**.\
-    \
+    **Members of this Alias** field, and click **Add**.<br>
+    <br>
 7.  Optionally, add email addresses for members outside of your domain
-    into the **Email Address** field and **click Add**.\
-    \
+    into the **Email Address** field and **click Add**.<br>
+    <br>
 8.  Click **Save**.
 
 **Note:** To add a *domain alias*, create a support ticket in the
@@ -197,13 +197,13 @@ following ways:
 -   **Do it yourself**&mdash;If you are currently using a POP mailbox, this is
     your only option. If you are not certain or have any questions,
     contact our Support team at 0800 954 1007 or 020 8734 4029. You can
-    also create a support ticket in the MyRackspace portal.\
-    \
+    also create a support ticket in the MyRackspace portal.<br>
+    <br>
 -   **Self&ndash;service tool**&mdash;Run your migration at any time of the day or
     night with our easy-to-use version of MigrationWiz. To start this
     process, create a support ticket in the MyRackspace portal. For more
-    information, see Migrate your email by using the Self-Service tool.\
-    \
+    information, see Migrate your email by using the Self-Service tool.<br>
+    <br>
 -   **Assisted migrations&mdash;**This option is for companies that need help
     with consulting, planning, and scheduling a migration project.
     Contact our Assisted Migrations team by creating a support ticket in
@@ -219,10 +219,10 @@ The initial credit card payment that you made online was a one-time
 payment. Follow these steps to set up your preferred payment method:
 
 1.  Log in to the [MyRackspace Customer
-    Portal](https://my.rackspace.com/).\
-    \
-2.  Select **Account \> Payments** from the drop-down menu.\
-    \
+    Portal](https://my.rackspace.com/).<br>
+    <br>
+2.  Select **Account \> Payments** from the drop-down menu.<br>
+    <br>
 
 [back to top](#top)
 
@@ -231,9 +231,9 @@ View and download invoices
 
 To view and download your invoices follow these steps:
 
-1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com).\
-    \
-2.  Click **Account** and select **Transactions**.\
+1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com).<br>
+    <br>
+2.  Click **Account** and select **Transactions**.<br>
 
     You can view an invoice by clicking on its number.
 

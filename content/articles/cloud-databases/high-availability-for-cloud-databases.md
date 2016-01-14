@@ -34,7 +34,7 @@ Use cases
     application downtime can result in huge revenue losses. Users can
     use Cloud Databases HA instances to ensure that their database is
     always available and will only experience a small amount of downtime
-    in case of failover.\
+    in case of failover.<br>
       
 -   For read-heavy workloads, to improve performance Cloud Databases
     users can redirect writes and reads to source and replica instances
@@ -74,7 +74,7 @@ the latest replica and applies them to the other replicas. MHA also
 triggers a script that switches the new source out of the read-only pool
 and updates the write pool. Total downtime is around 10-30 seconds.
 
-**Figure 1. Cloud Databases HA setup**\
+**Figure 1. Cloud Databases HA setup**<br>
 
 ![](/knowledge_center/sites/default/files/field/image/HighAvailabilityforCloudDatabases1b.png)
 

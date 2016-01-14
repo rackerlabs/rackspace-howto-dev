@@ -35,8 +35,8 @@ Product area headings (Servers, Networking, Storage, Databases,
 Orchestration, and Backups) run across the top of the screen. To access
 individual products, click the heading to view a drop-down menu of all
 the products in that area. For example, the following image shows the
-menu for Servers.\
- \
+menu for Servers.<br>
+ <br>
 
 ![](/knowledge_center/sites/default/files/field/image/Node1355-SCEdit.png)
 

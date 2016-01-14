@@ -27,11 +27,11 @@ steps:
 1.  Sign in to the [Cloud Control
     Panel](https://mycloud.rackspace.com/).
 2.  In the upper-right corner of the window, click **Account****:
-    *userName* \>** **Billing and Payments**. \
-     The Billing & Payments page appears.\
+    *userName* \>** **Billing and Payments**. <br>
+     The Billing & Payments page appears.<br>
      **Note:** Clicking **Your Account** \> **Billing **in the Cloud
     Sites Control Panel also opens this page in the Cloud Control Panel.
-3.  Review any balances listed under **Current Balance**.\
+3.  Review any balances listed under **Current Balance**.<br>
      A total is displayed if any balance is due.
 4.  Contact the Cloud AR team (not the Cloud Billing team) at US toll
     free 800-480-2716 and international 1-210-312-4000 to discuss any

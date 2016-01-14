@@ -35,9 +35,9 @@ Create a server backup
 ----------------------
 
 1.  Log in to the [Cloud Control
-    Panel](https://mycloud.rackspace.com/).\
-    \
-2.  In the top navigation bar, select **Backups \> Systems**.\
+    Panel](https://mycloud.rackspace.com/).<br>
+    <br>
+2.  In the top navigation bar, select **Backups \> Systems**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/2038-1_0.png)
 
@@ -52,24 +52,24 @@ Create a server backup
     Agent](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent).
 
 4.  On the Configure Backup page, configure the following items and then
-    click **Next Step:**\
-    \
-    -   Enter a name for the backup.\
-        \
+    click **Next Step:**<br>
+    <br>
+    -   Enter a name for the backup.<br>
+        <br>
     -   In the **Schedule** section, specify a schedule for the backup
-        and select how many prior backup versions to retain.\
-        \
+        and select how many prior backup versions to retain.<br>
+        <br>
     -   In the **Notifications** section, specify the email address for
         notifications and select whether you want to receive
-        notifications of successful backups.\
-        \
+        notifications of successful backups.<br>
+        <br>
 
 5.  On the Select Items to Backup page, select the files and folder to
-    back up, and then click **Next Step**.\
-    \
+    back up, and then click **Next Step**.<br>
+    <br>
 6.  Confirm that the backup agent is set up correctly, and then click
-    **Save**.\
-    \
+    **Save**.<br>
+    <br>
 
 ### Next steps
 

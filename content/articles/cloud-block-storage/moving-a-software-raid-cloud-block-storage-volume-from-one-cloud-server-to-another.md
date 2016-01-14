@@ -58,12 +58,12 @@ example:
 5. In the Cloud Control Panel
 ([mycloud.rackspace.com](http://mycloud.rackspace.com)), navigate to the
 details page for the server from which you want to detach the Cloud
-Block Storage volumes that composed the RAID.\
- \
+Block Storage volumes that composed the RAID.<br>
+ <br>
  6. In the Storage Volumes section of the server details page, click the
 Actions gear next to each volume that you want to detach, and select
-**Detach Volume**.\
- \
+**Detach Volume**.<br>
+ <br>
  7. In the warning pop-up box, click **Detach Volume**.
 
 ![](/knowledge_center/sites/default/files/field/image/RAIDImage1.png)

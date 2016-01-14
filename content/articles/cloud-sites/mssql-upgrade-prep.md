@@ -57,7 +57,7 @@ Recommended Steps:
 under the "Features" tab of the domain your MSSQL2005 database is on.
 ![createdb1.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/createdb1.JPG)
 
-\
+<br>
  2) After the database has been created, please view its properties (as
 shown below) and note the change in the hostname. The information for
 you database will vary from the image depending on what data center your
@@ -65,7 +65,7 @@ account is hosted in. Please use this new MSSQL 2008 hostname to update
 your connection strings.
 ![dbinfo.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/dbinfo.JPG)
 
-\
+<br>
  3) Next use the web based admin tool, MyLittleAdmin, to back up your
 MSSQL 2005 database. The link for the online tool can be found in your
 Cloud Sites Control Panel by clicking on the database under the
@@ -77,7 +77,7 @@ between the two MyLittleAdmin versions. For example:
 `https://mssqladmin.websitesettings.com/mlb`
 ![mlb1.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mlb1.JPG)
 
-\
+<br>
  4) Login to your original MSSQL 2005 source database.
 ![mlb2.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mlb2.JPG)
 
@@ -85,7 +85,7 @@ between the two MyLittleAdmin versions. For example:
 When the backup has completed click on the file link to save the backup
 file to your local machine.
 
-\
+<br>
  6) Log in to the MyLittleAdmin link again using your MSSQL 2008
 database and login. Remember the login you use to restore will become
 the new owner of the database. Choose restore and upload the backup file

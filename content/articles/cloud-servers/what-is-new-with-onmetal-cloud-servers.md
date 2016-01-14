@@ -62,8 +62,8 @@ CPU/RAM/disk/network
 
 Description
 
-\
- **Compute**\
+<br>
+ **Compute**<br>
  (High CPU)
 
 **10 Cores**, 32 GB RAM, no disk, 10 gigabit
@@ -73,8 +73,8 @@ requests and doing background processing. Optimized for high CPU
 activity like network requests, application logic, web servers, and load
 balancers.
 
-\
- **High I/O**\
+<br>
+ **High I/O**<br>
  (High RAM)
 
 **20 cores, 128 GB RAM, **3.2 TB of PCIe Flash**, 10 gigabit**
@@ -83,7 +83,7 @@ Optimized for the best performance per dollar for the most common open
 source databases. Optimized for high I/O activity like NoSQL and SQL
 databases
 
-\
+<br>
  **Memory**
 
 **12 cores, **512 GB RAM**, no disk, 10 gigabit**

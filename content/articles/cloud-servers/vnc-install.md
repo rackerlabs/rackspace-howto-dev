@@ -212,7 +212,7 @@ Example: 64.25.25.25:1
 -   Type in the password you chose with vncpasswd and you will be
     connected.
 
-\
+<br>
  To close the connection simple close the window.
 
 #### Stopping the VNC Server

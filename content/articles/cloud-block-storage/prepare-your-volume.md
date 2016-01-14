@@ -55,7 +55,7 @@ Example Output:
      * Documentation:  http://www.ubuntu.com/server/doc
     Last login: Thu Oct 18 02:26:38 2012 from 70.114.215.201
 
-1.  After you are logged in, list the disks on your server.\
+1.  After you are logged in, list the disks on your server.<br>
      Your volume is typically listed as the last drive in this list. In
     the following example, the 100 GB volume that was created in the
     [Create and Attach a Cloud Block Storage
@@ -196,7 +196,7 @@ Example Output:
     Calling ioctl() to re-read partition table.
     Syncing disks.
 
-1.  List the disks on your server again.\
+1.  List the disks on your server again.<br>
      Your Cloud Block Storage volume is ready as a disk. It was attached
     at /dev/xvdb and you created one partition on it, so now your
     available disk appears at /dev/xvdb1.
@@ -266,8 +266,8 @@ Example Output:
 ### Step 4. Mount the volume.
 
 After partitioning and formatting the volume, you must mount it on the
-server. After the volume is mounted, it is available for use.\
- \
+server. After the volume is mounted, it is available for use.<br>
+ <br>
  Run the **mnt** command and assign the volume a name for use on your
 server. In the following example, the volume is named cbsvolume1.
 

@@ -39,10 +39,10 @@ Confirm the name and region of the server you will attach the volume to.
 Volumes can only be attached to servers in the same region.
 
 1.  Click **Servers** in the main navigation.
-2.  Click **Block Storage** in the Servers sub-navigation.\
+2.  Click **Block Storage** in the Servers sub-navigation.<br>
 
     ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20no%20volumes.png)
-3.  Click the **Create Volume** button.\
+3.  Click the **Create Volume** button.<br>
 
     ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/create%20volume.png)
 4.  Give your volume a name.
@@ -59,7 +59,7 @@ Volumes can only be attached to servers in the same region.
         datacenter for best performance.
 
 7.  Select the size of the volume, from 50 GB (SSD) or 75 GB (SATA) to
-    1024 GB (1 TB).\
+    1024 GB (1 TB).<br>
      **Volume maximums:**
     -   1024 GB (1 TB) / volume
     -   14 volumes / server
@@ -129,16 +129,16 @@ volume. Possible statuses are:
     volumes. Your Cloud Block Storage volumes appear as available
     devices once you have attached them to your cloud server.
 
-\
- **ID:** This is the ID of the volume\
- \
- **Size:** The size of the volume\
- \
- **Region:** Where the volume is located\
- \
+<br>
+ **ID:** This is the ID of the volume<br>
+ <br>
+ **Size:** The size of the volume<br>
+ <br>
+ **Region:** Where the volume is located<br>
+ <br>
  **Type:** The type of volume, either Standard (a SATA drive) or High
-Performance (an SSD drive)\
- \
+Performance (an SSD drive)<br>
+ <br>
  **Snapshots:** This section displays how many snapshots you have of the
 volume. There is also a link which allows you to Create a Snapshot.
 Snapshots are described [later in this Getting Started

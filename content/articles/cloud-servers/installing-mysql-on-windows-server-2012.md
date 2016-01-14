@@ -31,7 +31,7 @@ Download  the most recent version of Web PI on your Windows Server from
 2.  In the Web Platform Installer window, search for **MySQL** in the
     search box.
 3.  Select **MySQL Windows 5.1**(or currrent version), click **Add**,
-    and then click **Install** to start the installation. \
+    and then click **Install** to start the installation. <br>
 
     ![](/knowledge_center/sites/default/files/field/image/install.png)
 
@@ -41,7 +41,7 @@ Download  the most recent version of Web PI on your Windows Server from
 
 5.  Review the licensing agreement and click **I Accept**.
 
-    ![](/knowledge_center/sites/default/files/field/image/license.png)\
+    ![](/knowledge_center/sites/default/files/field/image/license.png)<br>
     The MySQL Windows 5.1 application is downloaded and installed on
     your Windows Server 2008R2 and 2012 server.
 

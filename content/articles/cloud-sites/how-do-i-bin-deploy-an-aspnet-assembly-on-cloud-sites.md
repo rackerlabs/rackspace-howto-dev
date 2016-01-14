@@ -68,7 +68,7 @@ that you want to deploy.
 2.  Click the **Download** tab, and then click the **source code** link
     to download the binaries and source code.
 3.  Select one of the binary files, which is typically the first link
-    under **Newest Files**.\
+    under **Newest Files**.<br>
      The most recent binary file at the time this article was written
     was **UrlRewriterNet-1\_8.zip**.
 4.  If the download doesn't start within a few seconds, click the direct

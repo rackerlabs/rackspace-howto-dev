@@ -13,8 +13,8 @@ body_format: tinymce
 Updating your existing SSL Certificate is a quick and simple process.
 Whether your SSL Certificate is expiring or you are simply needing to
 change to a new SSL Certificate, you can follow these instructions to
-get your SSL updated and installed quickly. \
- \
+get your SSL updated and installed quickly. <br>
+ <br>
  **Attention MyRack users:** To update the SSL certificates for your
 environment, follow the instructions in the [Reissuing your Rackspace
 SSL Certificates](https://community.rackspace.com/products/f/43/t/4478)

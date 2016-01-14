@@ -276,6 +276,6 @@ further details and caveats.
 
 *\* NOTE: The Managed Storage offering is only compatible with dedicated
 servers in a RackConnect configured dedicated environment.  The Managed
-Storage offering cannot be used directly with Cloud Servers.*\
+Storage offering cannot be used directly with Cloud Servers.*<br>
   
 

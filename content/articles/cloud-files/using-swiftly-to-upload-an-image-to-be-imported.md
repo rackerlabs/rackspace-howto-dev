@@ -39,7 +39,7 @@ installed the Swiftly client. If you need help with either of these
 prerequisites, see the following articles:
 
 &middot; [Preparing an image for import into the Rackspace open
-cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud)\
+cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud)<br>
  &middot; [Install the Swiftly client for Cloud
 Files](http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files)
 
@@ -94,15 +94,15 @@ you're not familiar with the GNU Screen program, you can find an
 introduction in [Install the Swiftly client for Cloud
 Files](http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files).
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      --concurrency=$SWFLY_CONCURRENCY \
-      put \
-        --segment-size=s${SWFLY_SEG_BYTES} \
-        --input=$SOURCEFILE \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      --concurrency=$SWFLY_CONCURRENCY <br>
+      put <br>
+        --segment-size=s${SWFLY_SEG_BYTES} <br>
+        --input=$SOURCEFILE <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 If you are importing a file a cloud server that's already in the
@@ -112,17 +112,17 @@ if you want Swiftly to notify you about what it's doing as it uploads
 your image file, you can add the `--verbose` option. If you add these
 options, your invocation will look as follows:
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      --snet \
-      --verbose \
-      --concurrency=$SWFLY_CONCURRENCY \
-      put \
-        --segment-size=s${SWFLY_SEG_BYTES} \
-        --input=$SOURCEFILE \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      --snet <br>
+      --verbose <br>
+      --concurrency=$SWFLY_CONCURRENCY <br>
+      put <br>
+        --segment-size=s${SWFLY_SEG_BYTES} <br>
+        --input=$SOURCEFILE <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 Note that the Swiftly invocation contains the following line:
@@ -154,14 +154,14 @@ To check your upload, view the manifest for the Static Large Object that
 was created in Cloud Files.
 
     # get the manifest
-    swiftly \
-     --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-     --auth-user=$CF_USERNAME \
-     --auth-key=$CF_API_KEY \
-     --region=$CF_REGION \
-     get \
-     --query=multipart-manifest=get \
-     --output=my-manifest.json \
+    swiftly <br>
+     --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+     --auth-user=$CF_USERNAME <br>
+     --auth-key=$CF_API_KEY <br>
+     --region=$CF_REGION <br>
+     get <br>
+     --query=multipart-manifest=get <br>
+     --output=my-manifest.json <br>
      ${CONTAINER}/${IMAGEFILENAME}
 
     # look at the manifest

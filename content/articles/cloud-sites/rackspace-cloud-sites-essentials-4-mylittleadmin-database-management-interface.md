@@ -74,8 +74,8 @@ well.*
 To start working with this database, you will need the **Hostname**,
 **username** and **password**. The details can be viewed by clicking on
 the hyperlink for the database, which results in a page that should be
-similar to this:\
- \
+similar to this:<br>
+ <br>
 
 ![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/dbinfo_0.png)
 
@@ -133,20 +133,20 @@ Backing Up Your MSSQL Database
 ------------------------------
 
 1.  After you are logged into the online manager, click on **Tools** in
-    the bottom of the left frame.\
+    the bottom of the left frame.<br>
       
-2.  Then on the **Tools** menu, click **Database Backup and Restore.**\
-     \
-     This will open the myLittleBackup interface in a new window:\
+2.  Then on the **Tools** menu, click **Database Backup and Restore.**<br>
+     <br>
+     This will open the myLittleBackup interface in a new window:<br>
       
 3.  From myLittleBackup, click on **Backup databases** from the left
-    menu.\
-     \
-     The database backup form will load in the window's right frame.\
+    menu.<br>
+     <br>
+     The database backup form will load in the window's right frame.<br>
       
 4.  In step 1, choose the database you would like to backup from the
     drop-down menu (which should be the only one listed) and click OK to
-    continue.\
+    continue.<br>
       
 5.  Step 2 is just for information and verification; you will find
     generic information about your database in this step. Keep in mind
@@ -158,19 +158,19 @@ Backing Up Your MSSQL Database
         have a backup file saved in myLittleBackup.
 
 6.  Step 3 is **optional**, but feel free to choose a backup set name
-    and description.\
-     \
+    and description.<br>
+     <br>
      If you don't want choose a backup set name and description or
     you're not sure what to use, just leave it blank or use the database
-    name as both!\
+    name as both!<br>
       
 7.  If everything above looks correct, you're ready to click
-    the **Backup** button in Step 4.\
-     \
+    the **Backup** button in Step 4.<br>
+     <br>
      During this time you will see a loading message on the screen.
     Please take heed of the warning myLittleBackup gives: **You're now
     ready to backup your database. The process can take several minutes.
-    Be patient and do not click the stop button until done.**\
+    Be patient and do not click the stop button until done.**<br>
       
 
 Finish Line

@@ -135,18 +135,18 @@ from chef-1 to controller-1 without any authentication prompts.
 Also be sure to setup all of your other basic services and settings.
 Some of your considerations may include:
 
-1.  Configuring (or disabling) iptables\
+1.  Configuring (or disabling) iptables<br>
      -If leaving iptables enabled you&rsquo;ll need to open several ports for
     RPC to function properly.  You can find most of these ports listed
     in the &ldquo;api settings&rdquo; tab for the &ldquo;security and access&rdquo; menu on the
     project tab.  They are also listed in the /root/openrc file
-    automatically created during the installation process.\
+    automatically created during the installation process.<br>
      *TIP: I recommend installing with iptables off to ensure you have a
     good working deployment and then going back afterwards to lock the
     ports down.*
 2.  Ensure name resolution works correctly for both long (FQDN) and
-    short name (hostname -s) references\
-     -/etc/hosts file tends to be the fastest / easiest\
+    short name (hostname -s) references<br>
+     -/etc/hosts file tends to be the fastest / easiest<br>
      -Place the long host names first then any aliases, for example
     10.0.20.51 chef-1.yourdomain.local chef-1
 3.  Ensure time zones are set correctly and NTP is synchronized on both
@@ -161,14 +161,14 @@ Environment Preparation &ndash; cinder-volumes
 The following configuration tasks are to be completed on controller-1.
 
 1.  We&rsquo;ll be using the native Linux Volume Manager to provide block
-    storage backing for our environment.\
+    storage backing for our environment.<br>
       
 2.  Likewise the cinder LVM driver will be used to connect to this
-    storage.\
+    storage.<br>
       
 3.  By design, and due to the custom storage configuration nature &ndash; the
     &ldquo;cinder-volumes&rdquo; volume group is not setup by the chef cinder-volume
-    role and must be completed beforehand.\
+    role and must be completed beforehand.<br>
       
 4.  Here are a couple of convenient tips I&rsquo;ve found for setting up this
     volume group.

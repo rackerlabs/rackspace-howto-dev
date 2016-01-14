@@ -15,7 +15,7 @@ to create additional database users that have limited access. You can
 specify a read-only user this way. You must create an additional user
 beforehand within the control panel of that database.
 
-1.  Log in to MyLittleAdmin by using the credentials for the database.\
+1.  Log in to MyLittleAdmin by using the credentials for the database.<br>
      For more information about logging in and the credentials that you
     need, see [Rackspace Cloud Essentials &ndash; MyLittleAdmin Database
     Management

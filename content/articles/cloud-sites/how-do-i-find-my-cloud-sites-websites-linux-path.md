@@ -38,7 +38,7 @@ To find the website&rsquo;s Linux path
     Linux path.
 4.  Click the **Features** tab.
 5.  Scroll to the bottom of the page to the **Server-side Paths**
-    section.\
+    section.<br>
      Under **Linux Info**, the absolute path to your Linux PHP site is
     the one labeled **Web directory**. The path should resemble the
     following format:

@@ -15,14 +15,14 @@ in the following ways:
 
 -   On the Cloud Servers page of the Cloud Control Panel, you can filter
     your server list in the left pane to list only First Generation
-    servers.\
-     \
+    servers.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/ServersListTypes_0.png)\
+    ![](/knowledge_center/sites/default/files/field/image/ServersListTypes_0.png)<br>
       
 -   In the list of servers on the Cloud Servers page, all First
-    Generation servers are marked with a blue asterisk.\
-     \
+    Generation servers are marked with a blue asterisk.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/1stvs2ndgenserversa.png)
 

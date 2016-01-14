@@ -79,8 +79,8 @@ responses are limited to information only about the specific Cloud
 Server from which you are querying. It is important to note that
 hypervisor-level protections are in place that prevent these IP
 addresses from being spoofed, ensuring that the instance making the
-request to the API endpoint is, in fact, your Cloud Server.\
- \
+request to the API endpoint is, in fact, your Cloud Server.<br>
+ <br>
  *Note: You cannot query the RackConnect API from outside of your Cloud
 Server.*
 

@@ -20,8 +20,8 @@ It contains the full directory structure of the volume. Snapshots can be
 used as incremental backups of your volumes, as restore points for your
 data, as long-term storage for your data, or as starting points for new
 Cloud Block Storage (CBS) volumes. Snapshots are stored in Rackspace
-Cloud Files.\
- \
+Cloud Files.<br>
+ <br>
  Snapshots only take up as much storage space as the data that fills
 them. So if you have a 1 TB volume, but only 500 GB of data on it, your
 snapshot is only 500 GB. When you create new volumes from a snapshot,
@@ -65,7 +65,7 @@ or from the Storage Snapshots screen.
 From the Actions button:
 
 1.  From the Actions button on the list of Cloud Block Storage Volumes
-    -   Click the "Actions" button on the Volume Details screen.\
+    -   Click the "Actions" button on the Volume Details screen.<br>
          or
     -   Click the Action cog next to the volume name in the Block
         Storage Volumes screen.
@@ -77,8 +77,8 @@ From the Actions button:
 4.  Click the "Create Snapshot" button.
 5.  After you click the  "Create Snapshot" button and the "Creating
     snapshot for volume&mldr;" popup no longer displays, you can safely
-    reattach your volume.\
-     \
+    reattach your volume.<br>
+     <br>
      **Note**: The data in the snapshot is instant at the point in time
     starting when you click the "Create Snapshot" button. While the
     "Creating" status shows, the snapshot already exists at the point in
@@ -89,7 +89,7 @@ From the Actions button:
 From the Storage Snapshots screen:
 
 1.  From the Storage Snapshots screen, click the "Create Snapshot"
-    button.\
+    button.<br>
      The "Volume to Snapshot" menu displays.
 2.  Click the circle next to the volume to take a snapshot.
 3.  Give the snapshot a name. The default is the volume's name with the
@@ -98,11 +98,11 @@ From the Storage Snapshots screen:
 4.  Click the "Create Snapshot" button.
 5.  After you click the  "Create Snapshot" button and the "Creating
     snapshot for volume&mldr;" popup no longer displays, you can safely
-    reattach your volume.\
-     \
+    reattach your volume.<br>
+     <br>
      The note above after the preceding Actions button procedure also
-    applies to this Storage Snapshots screen procedure.\
-     \
+    applies to this Storage Snapshots screen procedure.<br>
+     <br>
      **Note**: If a snapshot of a volume exists, you cannot delete the
     volume until you delete the snapshot.
 

@@ -19,24 +19,24 @@ To adjust access rights for an entire domain:
     panel](https://apps.rackspace.com/?cp).
 2.  From the **Go to section** menu, select **Rackspace Email**.
 3.  In the **Email Accounts** section, click **Settings**. 
-4.  If you have multiple domains, select the appropriate domain name.\
+4.  If you have multiple domains, select the appropriate domain name.<br>
      **Note**: To change domains, click **Change domain**.
 5.  Click **Global Access Rights**.
 6.  Select the check box for each service that you want to grant access
     to, or clear the check box for each service that you want to
     restrict or disable access to. Each service is a different way of
-    accessing email that is stored on the email server.\
+    accessing email that is stored on the email server.<br>
      **Note:** **SSL** and **TLS** indicate that the services
     incorporate security technology to protect the user&rsquo;s data
 
--   **POP3 and POP3 (SSL)**\
+-   **POP3 and POP3 (SSL)**<br>
      Email is downloaded to the user&rsquo;s computer and is then deleted from
     the email server. This option is best for users who consistently use
     the same computer.
 
  
 
--   **IMAP and IMAP (SSL)**\
+-   **IMAP and IMAP (SSL)**<br>
      Email is stored on the email server only. The user manages email
     directly from the server, rather than downloading the email to a
     computer. This option is best for users who need to manage email and
@@ -47,7 +47,7 @@ To adjust access rights for an entire domain:
 
  
 
--   **Webmail and Webmail (SSL)**\
+-   **Webmail and Webmail (SSL)**<br>
      Webmail provides anytime, anywhere access to email stored on the
     email server. With Webmail, a user can read, send, and manage
     email&mdash;just like using desktop email software. This option is best
@@ -57,7 +57,7 @@ To adjust access rights for an entire domain:
 
  
 
--   **SMTP and SMTP (SSL)**\
+-   **SMTP and SMTP (SSL)**<br>
      The SMTP service allows the user to send email. If you disable
     SMTP, the user wicannot send email using the SMTP server. (SMTP is
     an always-secure service.)

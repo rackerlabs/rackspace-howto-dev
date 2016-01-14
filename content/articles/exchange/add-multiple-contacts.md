@@ -16,33 +16,33 @@ functions, it must be set up as a contact. A contact is simply an
 Exchange alias that points to a real mailbox outside of your domain. To
 add multiple contacts, [log into the control
 panel](https://apps.rackspace.com/?cp), and perform the following
-steps:\
+steps:<br>
   
 
 1.  Mouse over the **Go to section** drop-down menu and select
-    **Microsoft Exchange**.\
-      \
+    **Microsoft Exchange**.<br>
+      <br>
      ![](http://www.rackspace.com/apps/support/media/cpnavme.gif)
-2.  In the **Email Accounts** section, click the **Contacts** link.\
-      \
+2.  In the **Email Accounts** section, click the **Contacts** link.<br>
+      <br>
      ![Contacts link
     highlighted.](http://www.rackspace.com/apps/support/media/cp_me_editcontact_002.GIF)
 3.  If you have multiple domains, select the appropriate domain name.
     Or, to change domains, click the **change domain** link.
 4.  Click the **Add Multiple Contacts** button.
 5.  Create a CSV or Excel file, containing the information detailed in
-    the **Data Format** section:\
-      \
-     Use the following column headers (\* Required):\
-      \
+    the **Data Format** section:<br>
+      <br>
+     Use the following column headers (\* Required):<br>
+      <br>
      \*Username, \*DisplayName, \*ExternalEmail, \*VisibleToGAL
     (1=Visible, 0=Hidden), Last Name, First Name, Title, Company,
     Department, Phone Number, Street, City, State, Postal Code, Country,
-    Notes\
-      \
+    Notes<br>
+      <br>
      The username will be used for the email address,
-    username@mydomain.com.\
-      \
+    username@mydomain.com.<br>
+      <br>
      Or, to download a template, click the **CSV template** or **Excel
     template** link.
 6.  In the **Import File** section, click the **Browse** button.

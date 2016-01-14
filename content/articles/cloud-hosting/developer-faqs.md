@@ -91,11 +91,11 @@ The following features are part of developer+:
     our experts for your code leveraging our interfaces (APIs and SDKs)
 -   IRC (join us in \#rackspace on irc.freenode.net)
 -   StackOverflow Community Forums, email, Hacker News, and other online
-    communities\
+    communities<br>
      **Note:** Tickets filed are limited to billing only
 
- \
- [back to top](#top)\
+ <br>
+ [back to top](#top)<br>
   
 
 ### What if developers want to add another server? Test a website or database?
@@ -103,8 +103,8 @@ The following features are part of developer+:
 developer+ customers can consume cloud at a "pay for what you consume"
 price for all services in any region at our adjusted infrastructure
 prices. They can consume ObjectRocket&trade;, OnMetal&trade;--everything currently
-available to our other customers.\
- \
+available to our other customers.<br>
+ <br>
  [back to top](#top)
 
 ###  
@@ -113,8 +113,8 @@ available to our other customers.\
 
 At any time, participants in the program may log into the Control Panel
 and upgrade to our Managed Cloud service levels. Customers may not,
-however, switch to developer+.\
- \
+however, switch to developer+.<br>
+ <br>
  [back to top](#top)
 
  

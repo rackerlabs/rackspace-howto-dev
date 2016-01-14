@@ -32,32 +32,32 @@ Data Center
 
 Command
 
-ORD\
+ORD<br>
  (Chicago)
 
 `ping winactivate.ord1.servers.rackspacecloud.com`
 
-DFW\
+DFW<br>
  (Dallas)
 
 `ping winactivate.dfw1.servers.rackspacecloud.com`
 
-IAD\
+IAD<br>
  (Ashburn)
 
 `ping winactivate.iad3.servers.rackspacecloud.com`
 
-LON\
+LON<br>
  (London)
 
 `ping winactivate.lon3.servers.rackspacecloud.com`
 
-HKG\
+HKG<br>
  (Hong Kong)
 
 `ping winactivate.hkg1.servers.rackspacecloud.com`
 
-SYD\
+SYD<br>
  (Sydney)
 
 `ping winactivate.syd2.servers.rackspacecloud.com`
@@ -71,32 +71,32 @@ Data Center
 
 Command
 
-ORD\
+ORD<br>
  (Chicago)
 
 `slmgr.vbs /skms winactivate.ord1.servers.rackspacecloud.com:1688`
 
-DFW\
+DFW<br>
  (Dallas)
 
 `slmgr.vbs /skms winactivate.dfw1.servers.rackspacecloud.com:1688`
 
-IAD\
+IAD<br>
  (Ashburn)
 
 `slmgr.vbs /skms winactivate.iad3.servers.rackspacecloud.com:1688`
 
-LON\
+LON<br>
  (London)
 
 `slmgr.vbs /skms winactivate.lon3.servers.rackspacecloud.com:1688`
 
-HKG\
+HKG<br>
  (Hong Kong)
 
 `slmgr.vbs /skms winactivate.hkg1.servers.rackspacecloud.com:1688`
 
-SYD\
+SYD<br>
  (Sydney)
 
 `slmgr.vbs /skms winactivate.syd2.servers.rackspacecloud.com:1688`
@@ -119,42 +119,42 @@ Data Center
 
 Command
 
-ORD\
+ORD<br>
  (Chicago)
 
     net stop w32time 
     w32tm /config /manualpeerlist:time.ord1.rackspace.com /syncfromflags:MANUAL
     net start w32time
 
-DFW\
+DFW<br>
  (Dallas)
 
     net stop w32time 
     w32tm /config /manualpeerlist:time.dfw1.rackspace.com /syncfromflags:MANUAL
     net start w32time
 
-IAD\
+IAD<br>
  (Ashburn)
 
     net stop w32time 
     w32tm /config /manualpeerlist:time.iad3.rackspace.com /syncfromflags:MANUAL
     net start w32time
 
-LON\
+LON<br>
  (London)
 
     net stop w32time 
     w32tm /config /manualpeerlist:time.lon3.rackspace.com /syncfromflags:MANUAL
     net start w32time
 
-HKG\
+HKG<br>
  (Hong Kong)
 
     net stop w32time 
     w32tm /config /manualpeerlist:time.hkg1.rackspace.com /syncfromflags:MANUAL
     net start w32time
 
-SYD\
+SYD<br>
  (Sydney)
 
     net stop w32time 

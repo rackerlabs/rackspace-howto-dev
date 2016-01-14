@@ -15,7 +15,7 @@ body_format: tinymce
     you have already added an account and need to enable/disable client
     billing for it, follow these directions to do so:
 
-\
+<br>
  1. Log into your control panel at
 [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com")
 
@@ -38,7 +38,7 @@ section.
 
 10. Click "Next Step."
 
-\
+<br>
  If you have any trouble or questions about this process, please feel
 free to contact our support team through Live Chat or calling us at
 1.800.961.4454 (US toll free) and 1-210-312-4000 (international).

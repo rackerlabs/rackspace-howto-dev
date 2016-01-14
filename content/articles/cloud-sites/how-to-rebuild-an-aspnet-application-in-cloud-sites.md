@@ -23,7 +23,7 @@ application in IIS.
     Cloud Sites Control Panel. To access this link, go to **Hosting \>
     Cloud Sites**, click on the name of the website, and then scroll
     down the **General Settings** tab until you see the **Rebuild App**
-    link on the right.\
+    link on the right.<br>
       
 -   Delete and reupload your **web.config** file. The file must be
     deleted and then reuploaded; if you simply overwrite the file, the

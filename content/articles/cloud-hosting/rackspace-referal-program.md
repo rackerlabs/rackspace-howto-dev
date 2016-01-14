@@ -60,8 +60,8 @@ your customers. It&rsquo;s what differentiates us from other companies in our
 field, and we encourage you to use it as a selling point in your
 conversations. Fanatical Support means that whether you need assistance
 warming up a lead or assistance strategizing how you can pitch combined
-services, we can and will help you.\
-\
+services, we can and will help you.<br>
+<br>
 For more information about the Referral Program, or to apply, please
 visit
 [https://www.rackspace.com/partners/](https://www.rackspace.com/partners/)

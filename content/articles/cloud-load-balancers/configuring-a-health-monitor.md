@@ -37,7 +37,7 @@ traffic only to nodes that are functioning properly.
     displayed.
 3.  Click the gear icon next to the name of the load balancer for which
     you want to create a health monitor, and select **Edit Health
-    Monitoring**.\
+    Monitoring**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/1492-confighealthmon-2_0.png)
 4.  In the popup dialog box, select a **Monitor Type:**
@@ -46,10 +46,10 @@ traffic only to nodes that are functioning properly.
         its defined port to ensure that the service is listening
         correctly. The Connect monitor is the most basic type of health
         check and does no postprocessing or protocol-specific health
-        checks. Provide the required information for this monitor.\
-         \
+        checks. Provide the required information for this monitor.<br>
+         <br>
 
-        ![](/knowledge_center/sites/default/files/field/image/1492-confighealthmon-3.png)\
+        ![](/knowledge_center/sites/default/files/field/image/1492-confighealthmon-3.png)<br>
           
         -   **Interval**: Minimum number of seconds to wait before
             executing the health monitor; must be a number between 1 and
@@ -63,10 +63,10 @@ traffic only to nodes that are functioning properly.
     -   **HTTP**: The HTTP health monitor is more intelligent than the
         Connect monitor. It can process an HTTP response to determine
         the actual condition of a node. Provide the required information
-        for this monitor.\
-         \
+        for this monitor.<br>
+         <br>
 
-        ![](/knowledge_center/sites/default/files/field/image/1492-confighealthmon-4.png)\
+        ![](/knowledge_center/sites/default/files/field/image/1492-confighealthmon-4.png)<br>
           
         -   **Interval**: Minimum number of seconds to wait before
             executing the health monitor; must be a number between 1 and
@@ -109,7 +109,7 @@ traffic only to nodes that are functioning properly.
 
 5.  Click **Save Monitoring Settings**
 
-\
+<br>
  You have now configured a health monitor for your load balancer. To
 disable the health monitor, follow steps 1 through 3, and then
 click **Disable **in the pop up dialog box. In the confirmation dialog

@@ -27,8 +27,8 @@ skip to [Restoring A Server From A Saved Image](#A).
  
 
 2. Select the server that you want to clone by clicking the actions cog
-to the left of the server name.\
- \
+to the left of the server name.<br>
+ <br>
  3. From the drop-down menu, click **Create Image**.
 
  

@@ -47,7 +47,7 @@ in your terminal to begin posting messages to your Queue.
 
     HTTP/1.1 200 OK Content-Length: 140 Content-Type: application/json; charset=utf-8 Content-Location: /v1/queues {"queues": [{"href": "/v1/queues/samplequeue", "name": "samplequeue"}], "links": [{"href": "/v1/queues?marker=samplequeue", "rel": "next"}]}
 
-#### \
+#### <br>
  Testing Your Queue
 
 -   You can test your queue by posting a message to it:

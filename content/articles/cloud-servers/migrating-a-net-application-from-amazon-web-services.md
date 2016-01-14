@@ -42,21 +42,21 @@ following figure:
 ### Install software packages
 
 1.  Install the Rackspace Cloud Files client as follows:
-    1.  Connect to the AWS instance by using Remote Desktop Connection.\
-         \
-         ![](/knowledge_center/sites/default/files/field/image/4-2-6.png)\
+    1.  Connect to the AWS instance by using Remote Desktop Connection.<br>
+         <br>
+         ![](/knowledge_center/sites/default/files/field/image/4-2-6.png)<br>
           
     2.  After you are connected, install a client that you will use to
         back up data to Rackspace Cloud Files (for example,
         [Cyberduck](http://www.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck),
-        available at [http://cyberduck.ch/](http://cyberduck.ch/)).\
+        available at [http://cyberduck.ch/](http://cyberduck.ch/)).<br>
          You can use any browser to download the client.
     3.  Create a connection to Rackspace Cloud Files by using your
-        Rackspace account user name and API key.\
+        Rackspace account user name and API key.<br>
          You will use this connection to back up data during the
-        migration steps.\
-         \
-         ![](/knowledge_center/sites/default/files/field/image/4-2-7.png)\
+        migration steps.<br>
+         <br>
+         ![](/knowledge_center/sites/default/files/field/image/4-2-7.png)<br>
           
 
 2.  Install IIS 8 by using the instructions located at
@@ -83,9 +83,9 @@ Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-r
         C:\inetpub\wwwroot
 
 3.  Open IIS Manager, click **Add Website**, and enter details: site
-    name, physical path, and host name.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/4-2-8.png)\
+    name, physical path, and host name.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/4-2-8.png)<br>
       
 4.  After the website is created, stop the Default Web Site
     pre-installed application and start your web application.

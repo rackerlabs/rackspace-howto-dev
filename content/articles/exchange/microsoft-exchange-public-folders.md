@@ -103,7 +103,7 @@ Add folders to your public folders and assign permissions
       None                You have no permission. You cannot open the folder.
       ------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\
+<br>
  **Note**: You might see a few groups on the **Permissions** tab, and
 that is normal. It is important to leave these groups intact so that we
 can help you if you need help. There are also two special groups called

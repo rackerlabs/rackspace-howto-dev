@@ -18,11 +18,11 @@ into the control panel](https://apps.rackspace.com/?cp), and perform the
 following steps:
 
 1.  Mouse over the **Go to section** drop-down menu and select
-    **Domains**.\
-      \
+    **Domains**.<br>
+      <br>
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-20%20at%2010.19.12%20AM.png)
-2.  In the **Spam Filtering** section, click the **Blacklists** link.\
-      \
+2.  In the **Spam Filtering** section, click the **Blacklists** link.<br>
+      <br>
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-20%20at%208.41.19%20AM_0.png)
 3.  If you have multiple domains, you may be prompted to select a domain
     name. Or, to change domains at any time, click the **change domain**

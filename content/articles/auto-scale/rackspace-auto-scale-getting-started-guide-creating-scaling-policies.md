@@ -66,7 +66,7 @@ There are two steps to create a scaling policy:
         or setting it to 0 (zero). This option is available for
         **Scheduled (cron)** and **Webhook URL** triggers only.
 
-3.  Click **Create Policy**.\
+3.  Click **Create Policy**.<br>
      The dialog box closes and the scaling policy that you created is
     added to the list of scaling policies on the page.
 
@@ -87,7 +87,7 @@ next steps that you might take:
     Scale
     Glossary](/knowledge_center/article/rackspace-auto-scale-glossary),
     and [Rackspace Auto Scale
-    Overview](/knowledge_center/article/rackspace-auto-scale-overview).\
+    Overview](/knowledge_center/article/rackspace-auto-scale-overview).<br>
       
 -   To learn about the Auto Scale API, see the [Rackspace Auto Scale
     Developer

@@ -34,23 +34,23 @@ connection with Rackspace, please see below.
 
 1.  You can order RackConnect Global service using the dedicated
     connection method via our sales account team or appropriate
-    Rackspace representative.\
+    Rackspace representative.<br>
       
 2.  You are repsonsible for the physical cross-connection to Rackspace's
     RCG Edge devices. Rackspace generates and provides a Letter of
     Authority (LOA) which identifies the physical port and cage location
-    for the RackConnect Global edge device.  \
+    for the RackConnect Global edge device.  <br>
       
 3.  Customer submits the LOA and orders the cross connect via the
     colocation provider's portal. Currently, the only supported
-    colocation provider is Equinix.\
+    colocation provider is Equinix.<br>
       
 4.  The colocation provider makes the physical connection between
-    customer and RackConnect Global edge device(s).\
+    customer and RackConnect Global edge device(s).<br>
       
 5.  Rackspace configures the RackConnect Global edge device(s)  while
     customer configures their side to establish the Virtual Connection.
-    The virtual circuit is established.\
+    The virtual circuit is established.<br>
       
 
 ### Establishing a RackConnect Global connection via Equinix Cloud Exchange
@@ -64,18 +64,18 @@ please see the section above/below
 
 1.  You can order RackConnect Global (RCG) service using a cloud
     exchange connection method via your sales account team or
-    appropriate Rackspace representative.\
+    appropriate Rackspace representative.<br>
       
 2.  Rackspace generates a Service Key and provides it to the customer.
-    The service key will be used when requesting a new VC. \
+    The service key will be used when requesting a new VC. <br>
       
 3.  Customer orders a VC via the Equinix Cloud Exchange portal and
-    initiates the virtual circuit using the service key.\
+    initiates the virtual circuit using the service key.<br>
       
-4.  Rackspace completes the RackConnect Global Edge configuration.\
+4.  Rackspace completes the RackConnect Global Edge configuration.<br>
       
 5.  Rackspace accepts the virtual circuit request from the customer
-    within the Cloud Exchange. \
+    within the Cloud Exchange. <br>
       
 
 ### Establishing a RackConnect Global connection if you use Microsoft Azure (via Microsoft ExpressRoute) {#magicdomid46}
@@ -91,18 +91,18 @@ Exchange, please see the relevant sections above
 1.  You can order RackConnect Global service to connect to Microsoft
     Azure via your sales account team or appropriate Rackspace
     representative. If you are a fanatical Azure customer please contact
-    your appropriate Rackspace support representative.\
+    your appropriate Rackspace support representative.<br>
       
 2.  Customer configures Azure's dedicated virtual circuit and and
     provides the Azure Service Key to Rackspace for provisioning the
-    Virtual Connection. \
+    Virtual Connection. <br>
       
 3.  Rackspace orders a VC on behalf of the customer via the Equinix
     Cloud Exchange portal and initiates the virtual circuit provisioning
-    using the service key.\
+    using the service key.<br>
       
 4.  Customer completes the configuration on the cloud to establish the
-    VC and BGP connection.\
+    VC and BGP connection.<br>
       
 5.  Rackspace completes the configuration on the RCG Edges and backbone
     devices to establish the VC connection.

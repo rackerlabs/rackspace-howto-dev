@@ -188,7 +188,7 @@ are denied access.
 referrer restrictions are enabled, requests without a referrer header
 are denied by the CDN. Rackspace recommends using a test domain (for
 example, **test.yoursite.com**) to test all rules before implementing
-them on your production domain. \
+them on your production domain. <br>
   
 
 ### Geography restrictions

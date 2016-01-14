@@ -70,7 +70,7 @@ certificate:
     service after the service is created. You will be provided with a
     Canonical Name (CNAME) to use as an alias for your domain name. When
     you create a secure shared domain, the name must be a single word
-    with any periods (.) but it can contain hyphens (-).\
+    with any periods (.) but it can contain hyphens (-).<br>
       
 -   **Origin**: The origin is the domain (or IP address for HTTP) where
     your content resides. The HTTP or HTTPS server that will respond to

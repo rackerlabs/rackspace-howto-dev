@@ -13,31 +13,31 @@ body_format: tinymce
 To tell Rackspace Intelligence which aspects of your configuration to
 monitor for you, you define your objectives in the following terms:
 
--   *Entities* to be monitored\
-     For example, you can define a cloud server as an entity.\
+-   *Entities* to be monitored<br>
+     For example, you can define a cloud server as an entity.<br>
       
--   *Checks* that focus on a particular aspect of an entity's behavior\
-     For example, a check can monitor a cloud server's RAM usage.\
+-   *Checks* that focus on a particular aspect of an entity's behavior<br>
+     For example, a check can monitor a cloud server's RAM usage.<br>
       
--   *Alarms* that define the limits of the entity's behavior\
+-   *Alarms* that define the limits of the entity's behavior<br>
      For example, alarm criteria identify whether RAM usage is in one of
-    the following states: OK, WARNING, or CRITICAL.\
+    the following states: OK, WARNING, or CRITICAL.<br>
       
 -   *Alerts* that announce when a monitored entity has triggered an
-    alarm\
+    alarm<br>
      For example, an alert reports that RAM usage has reached the
-    CRITICAL level.\
+    CRITICAL level.<br>
       
--   *Notification plans* that define how to communicate alerts\
+-   *Notification plans* that define how to communicate alerts<br>
      For example, a notification plan requests notification of the help
-    desk and the on-call system administrator. \
+    desk and the on-call system administrator. <br>
       
 -   *Notifications* that define the contact information used in
-    notification plans\
+    notification plans<br>
      For example, notifications to the on-call system administrator are
-    sent as text messages to a specific telephone number. \
+    sent as text messages to a specific telephone number. <br>
       
--   *Visualizations* that present data meaningfully\
+-   *Visualizations* that present data meaningfully<br>
      For example, a RAM usage graph shows growth leading up to the
     triggered alarm.
 

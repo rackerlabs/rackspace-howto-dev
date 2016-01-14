@@ -39,18 +39,18 @@ To create a Grafana dashboard complete the following steps:
 6.  On the **Create Custom Template** page, perform the following steps:
     -   Enter a name for the template.
     -   Paste the template content that you just copied
-    -   Click **Validate Syntax**at the bottom of the page.\
+    -   Click **Validate Syntax**at the bottom of the page.<br>
          After the template has been successfully validated, an It
         works! message is displayed beside the button.
 
-7.  Click **Create Template**.\
+7.  Click **Create Template**.<br>
      Your template is now being created. This may take a few minutes.
     After the template is complete, you will see a page that displays
-    information about your custom template, including a description.\
-     \
+    information about your custom template, including a description.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/grafana-customized-template1.png)\
-     \
+    ![](/knowledge_center/sites/default/files/field/image/grafana-customized-template1.png)<br>
+     <br>
       
 8.  From the **Actions** menu, choose **Create Stack from Template**.
 9.  On the **Create Stack** page, enter a name for the stack and then
@@ -61,13 +61,13 @@ To create a Grafana dashboard complete the following steps:
     -   **username**
     -   **tenant ID**(which is also referred to as your account number)
 
-10. Click **Create Stack**.\
-     The stack details page is displayed.\
+10. Click **Create Stack**.<br>
+     The stack details page is displayed.<br>
      While the stack is being built, you can see a "Building" message in
-    the **Status** field.\
-     \
+    the **Status** field.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/grafana-create-stack-building.png)\
+    ![](/knowledge_center/sites/default/files/field/image/grafana-create-stack-building.png)<br>
       
 
 When the stack has finished building, the **Status** field changes to
@@ -87,14 +87,14 @@ To access the Grafana dashboard, perform the following steps:
 
 1.  Open a web browser.
 2.  Type the IP address in the address bar. You are prompted with an
-    authentication page\
+    authentication page<br>
      Type the username and password that were displayed after you
-    created the stack and click **OK**.\
-     Your Grafana dashboard is displayed.\
+    created the stack and click **OK**.<br>
+     Your Grafana dashboard is displayed.<br>
      Type the username and password you were presented with after
-    creating the stack and click **OK**.\
-     You should now be able to see your grafana dashboard.\
-     \
+    creating the stack and click **OK**.<br>
+     You should now be able to see your grafana dashboard.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/grafana-home-page_0.png)
 
@@ -148,19 +148,19 @@ complete the following steps:
     [http://bit.ly/mysql-grafana](http://bit.ly/mysql-grafana).
 2.  Modify the JSON to match your instance by replacing all the
     instances of \_rax\_entity\_id\_ in the file with the entity ID of
-    your database instance.\
-     \
+    your database instance.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/grafana-replace-entty-id1.png)
 3.  On the Grafana dashboard, click **Import** on the top-right corner,
-    click **Browse**, and then upload the file to Grafana.\
-     \
+    click **Browse**, and then upload the file to Grafana.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/grafana-JSON-file-upload.png)\
-     \
+    ![](/knowledge_center/sites/default/files/field/image/grafana-JSON-file-upload.png)<br>
+     <br>
      The dashboard automatically appears and displays your MySQL
-    database instances.\
-     \
+    database instances.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/grafana-mysql-data.png)
 

@@ -39,7 +39,7 @@ Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-clo
 Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")\
+Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")<br>
   
 
 ### Using the Cloud Networks API

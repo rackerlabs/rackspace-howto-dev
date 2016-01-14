@@ -46,7 +46,7 @@ To set up your iPhone for IMAP, perform the following steps:
 
     ![mc\_re\_iphoneimap\_002.GIF](http://www.rackspace.com/apps/support/media/mc_re_iphoneimap_002.GIF)
 
-10. Tap the **Save** button.\
+10. Tap the **Save** button.<br>
      The iPhone verifies the settings and returns to the **Mail,
     Contacts, Calendars** page.
 
@@ -83,7 +83,7 @@ To set up your iPhone for POP access, perform the following steps:
 
     ![mc\_re\_iphonepop\_002.gif](http://www.rackspace.com/apps/support/media/mc_re_iphonepop_002.gif)
 
-10. Tap the **Save** button.\
+10. Tap the **Save** button.<br>
      The iPhone verifies the settings and returns to the **Mail,
     Contacts, Calendars** page.
 

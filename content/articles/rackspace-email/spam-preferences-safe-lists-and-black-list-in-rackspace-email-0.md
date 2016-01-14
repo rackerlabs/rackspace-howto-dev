@@ -52,7 +52,7 @@ Select the desired **User** to update Spam Settings
 
  
 
-**Spam Filtering Setting Options\
+**Spam Filtering Setting Options<br>
 **
 ---------------------------------
 
@@ -65,9 +65,9 @@ in the **Domains** Section.*
 ![](/knowledge_center/sites/default/files/field/image/DomainsSpam_0.JPG)
 
 In the Settings section select whether you'd like to turn the spam
-filtering on or off.\
+filtering on or off.<br>
 You may also select the **Exclusive** button to receive email **ONLY**
-from senders on your domain&rsquo;s safelist if you desire.\
+from senders on your domain&rsquo;s safelist if you desire.<br>
 Next, select the preferred settings for your domain. Below is an
 overview of each of the options:
 

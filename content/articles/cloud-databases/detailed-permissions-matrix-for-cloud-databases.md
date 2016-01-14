@@ -531,7 +531,7 @@ Deletes the specified schedule for running a backup.
 Create a replica
 
 **Note**: Because the process of creating a replica creates a
-backup, the\
+backup, the<br>
  user calling the Create replica operation must have access to Cloud
 Files.
 

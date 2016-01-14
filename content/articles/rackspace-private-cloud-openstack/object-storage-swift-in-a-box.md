@@ -65,7 +65,7 @@ integration of compute, networking and storage in the SM15000.
 
 **Figure 1: ****Front of Rack View and Wiring Diagram**
 
-**\
+**<br>
 **Standard equipment requires upwards of 20 racks to create an
 environment this size.
 

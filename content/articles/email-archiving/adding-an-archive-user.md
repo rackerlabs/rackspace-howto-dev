@@ -20,17 +20,17 @@ following user types:
 
 -   **Account Admin (AA)** &mdash; A role likely filled by an individual or
     group of individuals within the IT organization. Users with this
-    role can create and manage users and their permissions.\
+    role can create and manage users and their permissions.<br>
       
 -   **Search Admin (SA)** &mdash; Responsible for creating and managing
     searches. Users with this role can create new searches, edit
     existing searches, export search details, and assign search access
-    to Search Users.\
+    to Search Users.<br>
       
 -   **Search User (SU)** &mdash; Responsible for reviewing the search results
     created by the Search Administrator. Users with this role cannot
     create a new search and can change the scope of a search only if
-    that right has been assigned to them by the Search Administrator.\
+    that right has been assigned to them by the Search Administrator.<br>
       
 -   **End User (EU)** &mdash; Permits access to an individual user&rsquo;s mailbox
     archive. Users with this can review, search, or recover any of their
@@ -60,36 +60,36 @@ Add an archive user
 
 Use the following steps to add individual users to the Archive Manager.
 
-1.  In the upper-right corner of the screen, click**Admin**.\
-     \
+1.  In the upper-right corner of the screen, click**Admin**.<br>
+     <br>
      **Note**: There are three dashboards for top-level
     administrators: Search, Admin, and Admin User. If you do not see
-    the **Admin** link, you are already on the Admin dashboard.\
+    the **Admin** link, you are already on the Admin dashboard.<br>
       
-2.  In the Admin dashboard, click the **Users** tab.\
+2.  In the Admin dashboard, click the **Users** tab.<br>
       
-3.  Click the **Add User** button.\
+3.  Click the **Add User** button.<br>
       
 4.  Enter the following information for the user:
     -   User name
     -   First and last name
     -   Email address
-    -   Temporary password\
-         \
+    -   Temporary password<br>
+         <br>
          **Note**: The user will be asked to create a new password when
-        logging in.\
+        logging in.<br>
           
 
 5.  Under **Additional email addresses (any email address from which you
     receive mail, or to which you send mail)**, add email aliases or
     other addresses that the user monitors to the list. Type the email
-    address in the blank and click **Add Email Address**.\
+    address in the blank and click **Add Email Address**.<br>
       
-6.  Under **Permissions,** select the user type for the new user.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/4683.1.png)\
+6.  Under **Permissions,** select the user type for the new user.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/4683.1.png)<br>
       
-7.  Enter additional contact information.\
+7.  Enter additional contact information.<br>
       
 8.  Under **Account Options**, specify the following user settings:
     -   **Expire Date**: Accounts for users can be set up with permanent
@@ -102,12 +102,12 @@ Use the following steps to add individual users to the Archive Manager.
         users to reset their password on the login screen.
     -   **Disable Outlook Integration**: Selected by default, an
         administrator can clear this check box to enable Outlook
-        integration for a user.\
+        integration for a user.<br>
           
 
 9.  In the **Custom text** box, enter any additional verbiage that you
     want to include in the welcome message that will be sent to the
-    user. You can edit the welcome message or opt not to send one.\
+    user. You can edit the welcome message or opt not to send one.<br>
       
 10. Click **Add user and send welcome message**.
 
@@ -117,30 +117,30 @@ Add multiple archive users
 Use the following steps to add multiple users to the Archive Manager.
 
 1.  Under the **Users **tab in the admin dashboard, click **Bulk Create
-    End Users**.\
+    End Users**.<br>
       
 2.  Click **Download CSV file template** and save the compressed
-    folder.\
+    folder.<br>
      The zipped folder contains an Excel XLS file with detailed
-    instructions on column rules and the required fields.\
+    instructions on column rules and the required fields.<br>
       
 3.  When you have entered the users, save the **Archive Users**
-    worksheet as a CSV file.\
+    worksheet as a CSV file.<br>
       
-4.  Return to the **Create Users in Bulk** page in the Archive Manager.\
+4.  Return to the **Create Users in Bulk** page in the Archive Manager.<br>
       
-5.  Click **Chose File **and locate the CSV file.\
+5.  Click **Chose File **and locate the CSV file.<br>
       
-6.  Click **Open** to specify the CSV file.\
+6.  Click **Open** to specify the CSV file.<br>
       
 7.  If you will be sending separate email notifications of the archive
-    access, select the **Do not send welcome message** check box.\
-     \
+    access, select the **Do not send welcome message** check box.<br>
+     <br>
      **Note**: When users are added, a welcome message that contains
     their username and password is sent to their email address. You can
-    edit the welcome message or opt not to send one.\
+    edit the welcome message or opt not to send one.<br>
       
-8.  Click **Process list and send welcome message**.\
+8.  Click **Process list and send welcome message**.<br>
       
 
 Edit archive user settings

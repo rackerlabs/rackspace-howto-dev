@@ -17,7 +17,7 @@ To access billing information from the [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com):
 
 1.  In the left navigation menu, click **Your Account**.
-2.  Click **Billing**.\
+2.  Click **Billing**.<br>
      You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  To edit your credit card, click **Edit Credit Card** under Payment

@@ -39,7 +39,7 @@ Upload JW Player 6
 1. Download the JW Player from
 [www.longtailvideo.com/jw-player/](http://www.longtailvideo.com/jw-player/ "Get the JW Player").
 
-2. Unzip the file and upload it to a Cloud Files container.\
+2. Unzip the file and upload it to a Cloud Files container.<br>
  **Note:** You may choose to upload the player in the container that
 holds your media or in another container.
 
@@ -72,7 +72,7 @@ JW Player work: a SCRIPT element that points to the player, a DIV that
 positions the player, and a SCRIPT that calls the player and the media.
 
 1. Add a SCRIPT element to the HEAD of your HTML that points to
-jwplayer.js file.\
+jwplayer.js file.<br>
  For this step, you need the link to the jwplayer.js file you uploaded
 in the above instructions. To get the link from *New Cloud Control
 Panel*:
@@ -99,7 +99,7 @@ text you would like to display while the player loads.
     <div id="player">Loading the player...</div>
 
 3. Add a SCRIPT element right below the DIV you created in Step 2. This
-adds the JW Player and your media to your page.\
+adds the JW Player and your media to your page.<br>
  This SCRIPT uses the following options:
 
 -   file - The link for the media. Locate your media in a Cloud Filed

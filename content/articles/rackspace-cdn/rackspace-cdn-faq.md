@@ -82,7 +82,7 @@ content that changes for every visitor.
 
 Many web browser plugins and tools are available. For example:
 
--   In Firefox, click **Tools** \> **Web Developer** \> **Network**.\
+-   In Firefox, click **Tools** \> **Web Developer** \> **Network**.<br>
      If you don't see the **Tools** menu, press the **F10** key on your
     keyboard.
 -   In Chrome, you can use the [Page load time

@@ -47,16 +47,16 @@ To set up Exchange 2010
         **user@example.com**).
     -   **Password** &ndash; Enter the password associated with the email
         account you are setting up.
-    -   **Server Address** &ndash; Enter **connect.emailsrvr.com**.\
+    -   **Server Address** &ndash; Enter **connect.emailsrvr.com**.<br>
           
 
     ![](/knowledge_center/sites/default/files/field/image/MM104_0.png)
-6.  Confirm the settings and then click **Continue**.\
-     \
+6.  Confirm the settings and then click **Continue**.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/MM103.png)
 7.  Choose any other options that you want to enable, and then click
-    **Done**.\
-     \
+    **Done**.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/MM105_0.png)
 
 Your Microsoft Exchange 2010 email account is now set up with Mac Mail.

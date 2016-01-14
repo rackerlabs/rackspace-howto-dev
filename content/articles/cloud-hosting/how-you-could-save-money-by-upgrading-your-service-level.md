@@ -88,13 +88,13 @@ The Service Level Rate covers maintenance and support of all your cloud
 compute products (such as servers). It is based upon your service level.
 The Managed Infrastructure rate is \$0.005 per gigabyte hour; the
 Managed Operations rate is \$0.02 per gigabyte hour. OnMetal servers
-have a flat hourly rate indpendent of RAM.\
- \
+have a flat hourly rate indpendent of RAM.<br>
+ <br>
 The minimum Service Level Rates for Managed Infrastructure and Managed
 Operations are \$50 and \$500, respectively. If you do not meet the
 minimum during your billing cycle, the difference is assessed to your
-account. \
- \
+account. <br>
+ <br>
 Your service level and support cover all products, but the Service Level
 Rate is only assessed against compute products. Storage services such as
 Cloud Files and Cloud Block Storage have no Service Level Rates

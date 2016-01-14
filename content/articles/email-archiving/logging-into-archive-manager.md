@@ -18,21 +18,21 @@ performing the following steps:
 
 1.  Log in to the [Cloud Office Control
     Panel](https://cp.rackspace.com).
-2.  Open the **Go to section** menu and select **Domains**.  \
-     \
+2.  Open the **Go to section** menu and select **Domains**.  <br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/Logging%20in%20to%20Archiving%20Manager%201a.png)\
+    ![](/knowledge_center/sites/default/files/field/image/Logging%20in%20to%20Archiving%20Manager%201a.png)<br>
       
-3.  In the **Manage** section, click **Email Archiving**.\
-     \
+3.  In the **Manage** section, click **Email Archiving**.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/Logging%20in%20to%20Archiving%20Manager%202a.png)\
+    ![](/knowledge_center/sites/default/files/field/image/Logging%20in%20to%20Archiving%20Manager%202a.png)<br>
      **Note**:  If you have multiple domains, select the appropriate
     domain name. To change domains at any time, click the **Change
-    domain** option at the top of the page. \
+    domain** option at the top of the page. <br>
       
-4.  Click **Manage My Archive**.\
-     \
+4.  Click **Manage My Archive**.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-08-25%20at%2012.30.34%20PM.png)
 

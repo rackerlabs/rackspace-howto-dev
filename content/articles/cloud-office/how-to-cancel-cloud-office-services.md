@@ -15,8 +15,8 @@ Cloud Office Control Panel and perform the following steps:
 
 1.  In the top-right corner of the window, click the down arrow next to
     your account number.
-2.  From the menu, select **Upgrades & Services**.\
-     \
+2.  From the menu, select **Upgrades & Services**.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Cancel%20Services%201_1a.png)
 
@@ -26,10 +26,10 @@ Cloud Office Control Panel and perform the following steps:
     need to submit a ticket with your cancellation request.  
 
 3.  In the options listed at the top of the tab, click **Service
-    Summary**.\
-     \
+    Summary**.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/Cancel%20Services%202_0a.png)\
+    ![](/knowledge_center/sites/default/files/field/image/Cancel%20Services%202_0a.png)<br>
       
 4.  In the **Action** column of the service that you want to cancel,
     click **Cancel Service**.
@@ -37,10 +37,10 @@ Cloud Office Control Panel and perform the following steps:
     ![](/knowledge_center/sites/default/files/field/image/Cancel%20Services%203a.png)
 
 5.  For **Cancellation Date**, enter the date that you want the services
-    to end.\
-     **Note**: Date selected must be the following day's date or later.\
+    to end.<br>
+     **Note**: Date selected must be the following day's date or later.<br>
       
-6.  Click **Submit Request**.\
+6.  Click **Submit Request**.<br>
      A **Pending Cancellation** status is displayed next to the services
     to be canceled.
 

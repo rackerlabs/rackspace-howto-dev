@@ -99,7 +99,7 @@ Row level locking
     it here:
     [http://en.wikipedia.org/wiki/ACID](http://en.wikipedia.org/wiki/ACID "http://en.wikipedia.org/wiki/ACID"))
 
-\
+<br>
  If you need to see further details on each of the two engine types,
 please refer to the following MySQL documentations:
 

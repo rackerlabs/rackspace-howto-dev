@@ -21,7 +21,7 @@ policies operate.
 -   [Create a scaling group](#CreateScalingGroup)
 -   [About the Auto Scale control panel](#AboutControlPanel)
 
-### Create a scaling group\
+### Create a scaling group<br>
   
 
 1.  Log in to the Cloud Control Panel.
@@ -94,8 +94,8 @@ policies operate.
     haven't configured any scaling policies yet, see [Create a scaling
     policy](/knowledge_center/article/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy).
 
-15. When you are done, click **Create Scaling Group**.\
-     \
+15. When you are done, click **Create Scaling Group**.<br>
+     <br>
      A progress bar shows that the group is being created. The page
     changes to display your selections for the scaling group, with a
     status of **Scaling**. An animated orange bar at the bottom of the

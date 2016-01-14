@@ -31,7 +31,7 @@ Visit the following links to learn how to:
 -   [Update the agent for yum-based systems](#installrpm) - like CentOS,
     Fedora, and Red Hat
 -   [Update the agent for Arch, Gentoo, and Suse systems](#installarch)
--   [Update the agent for Windows systems](#installwindows)\
+-   [Update the agent for Windows systems](#installwindows)<br>
       
 
 ### Update the agent for apt-based Sytems, like Ubuntu, Debian, and Vyatta
@@ -75,7 +75,7 @@ up to date on the system.
     yum upgrade --assume-yes driveclient
 
 **Note:** Fedora 22 and later uses a new package manager called DNF
-(Dandified Yum).\
+(Dandified Yum).<br>
   
 
 ### Update the agent for Arch, Gentoo, and Suse systems
@@ -123,7 +123,7 @@ command includes an example of the directory created from Step 4.**
 
     driveclient --daemon
 
-Example init/startup scripts are included in the tarball.\
+Example init/startup scripts are included in the tarball.<br>
   
 
 ### Update the agent on a Windows systems

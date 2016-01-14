@@ -62,7 +62,7 @@ Cloud Block Storage is an excellent option for you if you:
 
  
 
-\
+<br>
  You might not be a good fit for the Cloud Block Storage service if you:
 
 -   Are leveraging First Generation Cloud Servers
@@ -265,7 +265,7 @@ rename command to update the display-name of the volume.
 ### My snapshot seems to be taking a long time. Is it possible to check the status of a snapshot?
 
 Yes. Using the API, you can query the progress of a snapshot creation
-using the snapshot-show command.\
+using the snapshot-show command.<br>
  The percentage complete value will show up under the
 os-extended-snapshot-attributes:progress property.
 

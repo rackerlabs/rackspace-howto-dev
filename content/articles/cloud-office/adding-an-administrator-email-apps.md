@@ -31,13 +31,13 @@ Add an administrator
 1.  Log into the [Cloud Office control
     panel](https://cp.rackspace.com/ "Email & Apps Control Panel").
 2.  In the **My Account** section of the right side of the screen, click
-    **Manage Administrators**.\
+    **Manage Administrators**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/Manage%20email%20administrators%20with%20the%20Cloud%20Office%20control%20panel.jpg)
-3.  Click **Add Administrator**.\
-     ![](/knowledge_center/sites/default/files/field/image/2_5.png)\
+3.  Click **Add Administrator**.<br>
+     ![](/knowledge_center/sites/default/files/field/image/2_5.png)<br>
       
-4.  Enter the following information for **Admin Settings**:\
+4.  Enter the following information for **Admin Settings**:<br>
      ![](/knowledge_center/sites/default/files/field/image/3_5.png)
 
 -   **Admin ID** - Enter a unique name for the account. If the ID that
@@ -63,21 +63,21 @@ Add an administrator
             account.
         -   **Confirm**- Retype the password.
 
-5.  Enter the following information for **Additional Information:\
+5.  Enter the following information for **Additional Information:<br>
      **![](/knowledge_center/sites/default/files/field/image/5_4.png)****
     -   **First Name** - Enter the administrator&rsquo;s first name.
     -   **Last Name** - Enter the administrator&rsquo;s last name.
-    -   **Email** - Enter the administrator's email address.\
+    -   **Email** - Enter the administrator's email address.<br>
           
 
 6.  Enter in the following information for **Security:**
     -   **Security Question** - Select a security question from the list
         provided
     -   **Security Answer** - Enter the answer to the security
-        question.\
+        question.<br>
           
 
-7.  Enter in the following information for** **Options:****\
+7.  Enter in the following information for** **Options:****<br>
      ![](/knowledge_center/sites/default/files/field/image/7_0.png)
     -   Specify whether the password never expires or expires in a
         specified number of days.
@@ -86,7 +86,7 @@ Add an administrator
         same account.
     -   Selecting **Login restricted to IP address(es)** allows access
         only from certain IP addresses, such as the office or home
-        network.\
+        network.<br>
           
 
 8.  If you selected **Limited**as the type for your newly created
@@ -107,7 +107,7 @@ Add an administrator
     5.  To select multiple domains, hold the **Ctrl** key as you click
         each domain.
     6.  To remove a domain from the **Access - Allowed** box, click the
-        domain and then click **Remove**.\
+        domain and then click **Remove**.<br>
           
 
 9.  Click Save.
@@ -152,7 +152,7 @@ panel](https://cp.rackspace.com/), and perform the following steps:
     panel](https://cp.rackspace.com/),
 2.  At the top of the page, click **My Account.**
 3.  In the **Administrators** section, click **Administrators**.
-4.  In the **Action** column for the administrator, click **Disable**. \
+4.  In the **Action** column for the administrator, click **Disable**. <br>
      **Note**: You can reverse this action by clicking **Enable.**
 5.  In the confirmation pop-up box, click **Delete \# Administrator**.
     (The **\#** corresponds to the number of administrators that you

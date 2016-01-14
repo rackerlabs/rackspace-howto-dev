@@ -158,7 +158,7 @@ Posts the message or messages for the specified queue.
 Get Messages
 
 GET/
-{version}/queues/{queue\_name}/messages?marker=*string*&limit=*integer*\
+{version}/queues/{queue\_name}/messages?marker=*string*&limit=*integer*<br>
  &echo+*=boolean*&include\_claimed=*boolean*
 
  ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)

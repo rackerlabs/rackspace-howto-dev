@@ -70,10 +70,10 @@ my\_new\_network, and cidr is the IP block to allocate from, such as
 
 The following example shows a cURL command that creates the network:
 
-    curl -s https://dfw.servers.api.rackspacecloud.com/v2/010101/os-networksv2 \
-             -X POST -H "X-Auth-Project-Id: 010101" -H "Content-Type: application/json" \
-             -H "Accept: application/json" \
-             -H "X-Auth-Token: 574c5763-86ab-431e-8b6c-5f7cf84c30ca" \
+    curl -s https://dfw.servers.api.rackspacecloud.com/v2/010101/os-networksv2 <br>
+             -X POST -H "X-Auth-Project-Id: 010101" -H "Content-Type: application/json" <br>
+             -H "Accept: application/json" <br>
+             -H "X-Auth-Token: 574c5763-86ab-431e-8b6c-5f7cf84c30ca" <br>
              -d '{"network": {"cidr": "192.168.0.0/24", "label": "superprivate"}}' | python -m json.tool
 
 The JSON-format response would look similar to this:

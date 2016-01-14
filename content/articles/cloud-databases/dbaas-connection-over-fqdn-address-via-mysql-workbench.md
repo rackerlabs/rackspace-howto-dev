@@ -18,21 +18,21 @@ Workbench.
 
 1.  Go
     to [http://www.mysql.com/products/workbench/](http://www.mysql.com/products/workbench/)
-    and install MySQL WorkBench.\
+    and install MySQL WorkBench.<br>
     The following platforms are supported: Windows, Fedora, Ubuntu,
     Oracle and Redhat, and Mac OS X. Registration is required before you
     download.
 2.  Launch MySQL Workbench, and select the **New Server Instance**
-    option under **Server Administration**.\
-    \
-    ![](/knowledge_center/sites/default/files/field/image/1.png)\
-    \
+    option under **Server Administration**.<br>
+    <br>
+    ![](/knowledge_center/sites/default/files/field/image/1.png)<br>
+    <br>
 3.  In the next screen, select the **Remote Host** option and enter the
     URL that was returned to you when you created the database instance
-    and click **Continue**.\
-    \
-    ![](/knowledge_center/sites/default/files/field/image/2.png)\
-    \
+    and click **Continue**.<br>
+    <br>
+    ![](/knowledge_center/sites/default/files/field/image/2.png)<br>
+    <br>
 4.  On the next screen, from the **Connection Method** menu, select
     **Standard TCP/IP over SSH**.
 5.  Change the value for **SSH HostName** to the name or ip address of a
@@ -45,22 +45,22 @@ Workbench.
 7.  For **MySQL Hostname**, enter the host name that was returned when
     you created the database instance via the API.
 8.  For **Username**, enter the username that was created when you
-    created  the database instance.\
-    \
-    ![](/knowledge_center/sites/default/files/field/image/3.png)\
-    \
-9.  Click **Continue**. \
+    created  the database instance.<br>
+    <br>
+    ![](/knowledge_center/sites/default/files/field/image/3.png)<br>
+    <br>
+9.  Click **Continue**. <br>
     You are prompted for the database instance password. If everything
-    is correct, the following information is displayed:\
-    \
-    ![](/knowledge_center/sites/default/files/field/image/4.png)\
-    \
+    is correct, the following information is displayed:<br>
+    <br>
+    ![](/knowledge_center/sites/default/files/field/image/4.png)<br>
+    <br>
 
 After the database connection is tested, the following screen is
-displayed. You can now work with your database instance.\
-\
-![](/knowledge_center/sites/default/files/field/image/5.png)\
-\
+displayed. You can now work with your database instance.<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/5.png)<br>
+<br>
 
 *Note: If you did not save your password, when you perform any actions,
 you will be prompted for the password to either the instance or the

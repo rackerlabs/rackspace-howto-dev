@@ -30,7 +30,7 @@ space, you'll need to make the following changes:
 3.  In the General Settings tab you will go to the Email Options section
 and deselect the following options:
 
--Move deleted email to the Trash folder\
+-Move deleted email to the Trash folder<br>
  -Move purged email to the Trash folder
 
 ![](/knowledge_center/sites/default/files/field/image/CourtneyPic1.png)

@@ -64,8 +64,8 @@ management console.
 *Note: This will provide a listing on each of the currently configured
 firewall rules. Rules that are currently enabled are denoted by green
 checkbox icon, while disabled rules display a grey checkbox icon.
-Rightclicking a rule will allow you toggle enable/disable.\
-\
+Rightclicking a rule will allow you toggle enable/disable.<br>
+<br>
 *
 
 *![](/knowledge_center/sites/default/files/field/image/enable_disable.png)*

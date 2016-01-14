@@ -63,8 +63,8 @@ Cloud Backup
 
 /backup/events
 
-Bandwidth Usage\
- License Usage\
+Bandwidth Usage<br>
+ License Usage<br>
  Storage Usage
 
 Cloud Big Data
@@ -95,7 +95,7 @@ Cloud Files
 
 /files/events
 
-Bandwidth Usage\
+Bandwidth Usage<br>
  Storage Usage
 
 Cloud Identity
@@ -108,7 +108,7 @@ Cloud Load Balancers
 
 /lbaas/events
 
-Load Balancer Usage\
+Load Balancer Usage<br>
  System Status Events
 
 Cloud Monitoring
@@ -121,15 +121,15 @@ Cloud Queues
 
 /queues/events
 
-Bandwidth Usage\
+Bandwidth Usage<br>
  System Usage
 
 First Generation Cloud Servers
 
 /servers/events
 
-Bandwidth Usage\
- Server Usage\
+Bandwidth Usage<br>
+ Server Usage<br>
  System Status Events
 
 Event notifications are stored for up to three days so they can be

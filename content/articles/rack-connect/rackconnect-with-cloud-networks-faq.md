@@ -47,7 +47,7 @@ Support team prior to making the change.
     servers via Network Policies, you will also need to create a
     RackConnect Network Policy to allow communication between the cloud
     servers across the Cloud Network.  The Network Policy should be
-    configured as follows:\
+    configured as follows:<br>
       
 
 -   The**Access Scenario** should be set to "Dedicated to Cloud

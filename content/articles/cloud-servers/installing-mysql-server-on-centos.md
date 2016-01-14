@@ -185,8 +185,8 @@ named "user".
 
 The list below lists the descriptions for the parts of that command:
 
--   **SELECT** - tells MySQL that you are asking for data.\
-    \
+-   **SELECT** - tells MySQL that you are asking for data.<br>
+    <br>
 -   **User, Host, Password** - tells MySQL what fields you want it to
     look in. Fields are categories for the data in a table. In this
     case, you are looking for the username, the host associated with the

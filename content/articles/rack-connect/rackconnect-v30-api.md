@@ -116,22 +116,22 @@ sure to retain the quotation marks).
 
 ### ****Cloud Identity Service request for an auth token ID using your cloud account's API key
 
-    $ curl \
-    --request POST \
-    --header "Content-Type: application/json" \
-    --data '{ "auth": { "RAX-KSKEY:apiKeyCredentials": { "username":"<yourUserName>", "apiKey":"<yourAPIKey>" } } }' \
-    https://identity.api.rackspacecloud.com/v2.0/tokens \
+    $ curl <br>
+    --request POST <br>
+    --header "Content-Type: application/json" <br>
+    --data '{ "auth": { "RAX-KSKEY:apiKeyCredentials": { "username":"<yourUserName>", "apiKey":"<yourAPIKey>" } } }' <br>
+    https://identity.api.rackspacecloud.com/v2.0/tokens <br>
     | python -m json.tool
 
  
 
 ### ****Cloud Identity Service request for an authentication token ID using your cloud account's password
 
-    $ curl \
-    --request POST \
-    --header "Content-Type: application/json" \
-    --data '{ "auth": { "passwordCredentials": { "username":"<yourUserName>", "password":"<yourPassword>" } } }' \
-    https://identity.api.rackspacecloud.com/v2.0/tokens \
+    $ curl <br>
+    --request POST <br>
+    --header "Content-Type: application/json" <br>
+    --data '{ "auth": { "passwordCredentials": { "username":"<yourUserName>", "password":"<yourPassword>" } } }' <br>
+    https://identity.api.rackspacecloud.com/v2.0/tokens <br>
     | python -m json.tool
 
 Note the following important points about the preceding API requests:
@@ -199,9 +199,9 @@ v3.0 cloud server with the following request:
 ### ****List public IP address for a cloud server API request
 
     curl --include \ 
-    --request GET \
-    --header "X-Auth-Token: authTokenId" \
-    --header "Content-Type: application/json" \
+    --request GET <br>
+    --header "X-Auth-Token: authTokenId" <br>
+    --header "Content-Type: application/json" <br>
     https://region.rackconnect.api.rackspacecloud.com/v3/tenantId/public_ips?cloud_server_id=serverUuid
 
 Note the following important points:
@@ -266,12 +266,12 @@ RackConnect v3.0 cloud server.
 
 ### ****Add or provision a public IP address to a cloud server API request
 
-    curl \
-    --request POST \
-    --header "X-Auth-Token: authTokenId" \
-    --header "Content-Type: application/json" \
-    --data '{ "cloud_server": { "id": "serverUuid" } }' \
-    https://region.rackconnect.api.rackspacecloud.com/v3/tenantId/public_ips \
+    curl <br>
+    --request POST <br>
+    --header "X-Auth-Token: authTokenId" <br>
+    --header "Content-Type: application/json" <br>
+    --data '{ "cloud_server": { "id": "serverUuid" } }' <br>
+    https://region.rackconnect.api.rackspacecloud.com/v3/tenantId/public_ips <br>
     | python -m json.tool
 
 Following is an example of the type of response expected after
@@ -316,10 +316,10 @@ server.
 
 ### ****Remove a public IP address from a cloud server API request
 
-    curl --include \
-    --request DELETE \
-    --header "X-Auth-Token: authTokenId" \
-    --header "Content-Type: application/json" \
+    curl --include <br>
+    --request DELETE <br>
+    --header "X-Auth-Token: authTokenId" <br>
+    --header "Content-Type: application/json" <br>
     https://region.rackconnect.api.rackspacecloud.com/v3/tenantId/public_ips/serverPublicIPv4Uuid
 
 When removing a public IP address, you have to provide the cloud
@@ -354,9 +354,9 @@ public IP address* operation.
 ### ****List public IP address for a cloud server API request with sample data
 
     curl --include \ 
-    --request GET \
-    --header "X-Auth-Token: NNNaaNNaNNaaaaNNaNaNNNNaaNaNaaaa" \
-    --header "Content-Type: application/json" \
+    --request GET <br>
+    --header "X-Auth-Token: NNNaaNNaNNaaaaNNaNaNNNNaaNaNaaaa" <br>
+    --header "Content-Type: application/json" <br>
     https://iad.rackconnect.api.rackspacecloud.com/v3/NNNNNNN/public_ips?cloud_server_id=aaaNNNNNa-aaaa-NNNN-aNaN-aNNaaNaNaNaa
 
 ### ****Sample data entries for this example are as follows:

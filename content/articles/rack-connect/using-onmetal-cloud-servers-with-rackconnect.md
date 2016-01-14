@@ -66,9 +66,9 @@ infrastructure with these offerings:
     connect to the [Cloud Control Panel](https://mycloud.rackspace.com/)
     using one of your cloud accounts associated with RackConnect, begin
     the process of creating a new Cloud Server, select the OnMetal&trade;
-    Server tab, and then select the Image's drop-down selection field.\
+    Server tab, and then select the Image's drop-down selection field.<br>
 
-    ![](/knowledge_center/sites/default/files/field/image/OnMetal_Build_0.png)\
+    ![](/knowledge_center/sites/default/files/field/image/OnMetal_Build_0.png)<br>
        [Example of OnMetal Images available on a RackConnect associated
     cloud account.]
 

@@ -53,7 +53,7 @@ to use your website's absolute path. [Please see this
 article](http://www.rackspace.com/knowledge_center/article/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
 to locate your website's absolute path.
 
-Your website's absolute path should resemble this:\
+Your website's absolute path should resemble this:<br>
  **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
 
 Where should I store my sessions?
@@ -63,7 +63,7 @@ We recommend storing your sessions in a directory above the
 public-facing **content** directory, such as the **web** directory. The
 recommended practice is to login to your FTP and create a **sessions**
 directory within your **web** directory. At this point your session save
-path should be:\
+path should be:<br>
  **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions**
 
 So the last line in your .htaccess file would resemble the following:

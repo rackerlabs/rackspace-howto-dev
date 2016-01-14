@@ -71,14 +71,14 @@ click **Open**:
 Accept the key
 --------------
 
-\
+<br>
  If this is the first time that you have used PuTTY to log in to your
 server with SSH, a warning similar to the following one is displayed:
 
 ![](http://c768825.r25.cf2.rackcdn.com/2_AcceptKey.png)
 
 If you are sure that you have entered the correct information, click
-**Yes**.  \
+**Yes**.  <br>
  Subsequent connections will not show this warning because the host key
 is now cached in the registry of your local computer.  You can expect to
 see that warning, however, if you connect to your server from a

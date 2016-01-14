@@ -17,8 +17,8 @@ locations through our multi region support. This means you can have your
 Cloud Servers or Dedicated Servers in one location and your data in
 another. Or, you can keep them in the same data center to reduce latency
 and take advantage of free bandwidth using our internal data center
-network, ServiceNet.\
- \
+network, ServiceNet.<br>
+ <br>
  Customers who only serve certain geographic regions may also find it
 helpful to locate the Cloud Files objects as close to that region as
 possible.  Note that not all third-party libraries that communicate with
@@ -40,12 +40,12 @@ Cloud Files operations will only affect that region's content. So, if
 you have content in two locations and you want to make edits, you will
 have to make those edits in both locations.
 
-\
+<br>
  MyRackspace and [Cloud Control Panel](http://mycloud.rackspace.com)
 users can also take advantage of the multi region feature. When you
 create a container, choose the data center where you would like it. Your
-control panel will reflect the location of your container.\
- \
+control panel will reflect the location of your container.<br>
+ <br>
  The following screenshots illustrate this new capability:
 
 MyRackspace Portal - Create New Container:
@@ -79,14 +79,14 @@ shows multiple endpoints for &ldquo;object store&rdquo;:
 Cloud Files does NOT automatically replicate data across regions.
 Customers who would like to have their data in both places should ensure
 PUTs are done to both endpoints and they will be charged for data stored
-in both locations along with related bandwidth charges.\
- \
+in both locations along with related bandwidth charges.<br>
+ <br>
  All customers existing previous to September 1, 2012 had their current
 region set as their &ldquo;default", which orders it first in the list of
 endpoints when authenticating against Cloud Files using our Auth 1.1 or
 2.0 APIs. Customers using Auth 1.0 will still only have a single
-endpoint returned.\
- \
+endpoint returned.<br>
+ <br>
  If you have customers around the world, don&rsquo;t forget that you can
 deliver your content rapidly with Akamai&rsquo;s Content Delivery Network
 (CDN), which caches content at global edge locations and saves users

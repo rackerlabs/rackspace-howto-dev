@@ -51,8 +51,8 @@ Timeline
 The First Generation to Next Generation migration path is currently in
 the final stages of testing, and although the timeline has not yet been
 finalized, we plan to begin releasing the migration path to small groups
-this quarter, continuing through the end of the year.\
- \
+this quarter, continuing through the end of the year.<br>
+ <br>
  After the migration path has been made available to your server, we
 will send a communication to your account with an Assisted Migration
 date. Prior to this date, there will be a window of at least 30 days in

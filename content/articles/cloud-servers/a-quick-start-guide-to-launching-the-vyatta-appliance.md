@@ -111,7 +111,7 @@ following:
     <edited>
     }
 
-\
+<br>
  You can go into configuration mode by typing the command &lsquo;configure&rsquo;
 
     $ configure

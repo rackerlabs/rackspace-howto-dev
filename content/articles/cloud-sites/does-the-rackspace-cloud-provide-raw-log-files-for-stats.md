@@ -14,12 +14,12 @@ body_format: tinymce
 Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.*\
+and selecting Cloud Sites Control Panel.*<br>
 *
 
 Yes, you can activate raw logs for stats within the Cloud Sites Control
-Panel.\
- \
+Panel.<br>
+ <br>
  **Pre-requisites**
 
 -   Administrative access to the Rackspace Cloud

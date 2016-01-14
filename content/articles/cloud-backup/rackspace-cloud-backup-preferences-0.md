@@ -21,7 +21,7 @@ Preferences
 On the Preferences screen, you can determine how Cloud Backup notifies
 you about Backup activity on your Account.
 
-**Wait, didn't I do this already?**\
+**Wait, didn't I do this already?**<br>
  When you created your Backups, you determined how Cloud Backup would
 inform you about that Single Backup's activity. On the Preferences page,
 you determine how you get emailed about all the activity on your

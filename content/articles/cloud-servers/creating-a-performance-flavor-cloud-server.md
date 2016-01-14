@@ -16,47 +16,47 @@ General Purpose servers, see [New Features in General Purpose and
 Work-Optimized Cloud
 Servers](http://rackspace.com/knowledge_center/article/new-features-in-general-purpose-and-work-optimized-cloud-servers).
 
-1.  Log in to the [Cloud Control Panel.](https://mycloud.rackspace.com)\
+1.  Log in to the [Cloud Control Panel.](https://mycloud.rackspace.com)<br>
       
 2.  [Create a server from a saved image](#fromsavedimage), or [create a
     new server](#createnew).
     -   To create a server from a previously saved image,
         select **Servers \> Saved Images**. Click the gear icon next to
         the image that you want to use to create the server, and select
-        **Create Server with Image**. Skip to step 3.\
-         \
-         ![](/knowledge_center/sites/default/files/field/image/SavedImages.png)\
+        **Create Server with Image**. Skip to step 3.<br>
+         <br>
+         ![](/knowledge_center/sites/default/files/field/image/SavedImages.png)<br>
           
     -   To create a new server, select **Cloud Servers \> Create
-        Servers**, and then click **Create Server**.\
+        Servers**, and then click **Create Server**.<br>
           
 
 3.  In the **Server Details** section of the Create Servers page, enter
-    a name for your server in the **Server Name** field.\
+    a name for your server in the **Server Name** field.<br>
       
 4.  From the **Region** menu, select the region where you want the
-    server to reside.\
-     \
+    server to reside.<br>
+     <br>
      For example, select **Chicago (ORD)** to house the server in a data
     center in Chicago, Illinois, USA, or select **Sydney (SYD)** for a
-    data center in Sydney, Australia.\
+    data center in Sydney, Australia.<br>
       
 5.  Under **Image**select which OS you want to uset. If you are creating
-    the server from a saved image, the image is already selected.\
+    the server from a saved image, the image is already selected.<br>
       
 6.  In the **Flavor** section, select the flavor class and specific
-    flavor for your server.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/FlavorImg.png)\
+    flavor for your server.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/FlavorImg.png)<br>
       
 7.  In the **Advanced Options** section, click **Select Networks** and
     choose the networks to which your server will be connected.
-    Click **Select Networks**.\
+    Click **Select Networks**.<br>
       
-8.  Click **Create Server**.\
+8.  Click **Create Server**.<br>
       
 9.  When your root admin password is displayed, copy the password to a
-    secure location, and then click **Dismiss Password**.\
+    secure location, and then click **Dismiss Password**.<br>
       
 10. After your server is created, its status is displayed as Active. You
     can then log in to it by using Remote Desktop Protocol (RDP) or SSH,

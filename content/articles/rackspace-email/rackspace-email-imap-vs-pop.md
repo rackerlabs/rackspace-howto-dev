@@ -93,18 +93,18 @@ ActiveSync technology. Following are some features of Mobile Sync:
 
 -   **Access**: Because emails are stored on the email server, you can
     access and manage your email and email folders from multiple
-    computers or mobile devices.\
+    computers or mobile devices.<br>
       
 -   **New Items:** Mobile Sync utilizes "push" technology. When a new
-    email arrives, the email is pushed to your device instantly.\
+    email arrives, the email is pushed to your device instantly.<br>
       
 -   **Storage**: If you have limited online storage space, you might
     need to delete some emails periodically to avoid exceeding your
-    storage capacity.\
+    storage capacity.<br>
       
 -   **Backup**: Email is automatically backed up every evening. If you
     accidentally delete an email, your email administrator can retrieve
-    it, even up to 14 days later.\
+    it, even up to 14 days later.<br>
       
 -   **Internet** **Connection**: You must have an internet connection to
     access your email. 

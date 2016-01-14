@@ -28,14 +28,14 @@ Cloud Feeds provides the following options for storing the archive data:
 -   Store all data at a default location, which is specified as one
     default container URL. With this option, feeds from all worldwide
     regions are stored in a single Cloud Files container in a single
-    region.\
+    region.<br>
       
 -   Store the data dependent on a specified region. For example, an
     event originating from the LON region is stored in a Cloud Files
     container in LON, and an event originating from the SYD region is
     stored in a Cloud Files container in SYD. This option requires you
     to specify an archive container URL for each region. Events can also
-    be configured to be stored in any arbitrary region.\
+    be configured to be stored in any arbitrary region.<br>
       
 -   Store some of the data at the default location, and some of the data
     at a specific, region-based container URL.
@@ -44,32 +44,32 @@ To configure archiving for Cloud Feeds
 --------------------------------------
 
 1.  Log in to the Rackspace [Cloud Control
-    Panel](https://mycloud.rackspace.com/).\
+    Panel](https://mycloud.rackspace.com/).<br>
       
 2.  On the top-right corner, click the **Account**menu, and then
-    select **Account Settings**.\
+    select **Account Settings**.<br>
       
 3.  In the **Cloud Feeds Archiving **section, click **Enable
-    Archiving**.\
+    Archiving**.<br>
       
 4.  In the Cloud Feeds Archiving dialog box, select one or more check
-    boxes for your preferred **Event Format**(XML, JSON, or both).\
+    boxes for your preferred **Event Format**(XML, JSON, or both).<br>
       
 5.  Under **Storage Configuration**, select **Basic**  if you want to
     store your Cloud Feeds events in a default Cloud Files container in
     a single region. If no container exists, it will be created
     automatically. Select the appropriate region from the list and
-    specify a container name.\
-     \
+    specify a container name.<br>
+     <br>
      **Note:**If you want to specify different Cloud Files containers or
     regions for archiving your Cloud Feeds events, you can
     select**Advanced**. If you select **Advanced**, you must work with
     Rackspace support to configure your advanced archiving settings or
     use the [Cloud Feeds Archiving Configuration
-    API](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/Preferences_API.html).\
+    API](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/Preferences_API.html).<br>
       
-6.  Click **Save Configuration**.\
-     \
+6.  Click **Save Configuration**.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Cloud%20Feeds%20archiving.png)
 

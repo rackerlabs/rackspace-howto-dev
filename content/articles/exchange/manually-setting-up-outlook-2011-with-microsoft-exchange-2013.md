@@ -11,22 +11,22 @@ body_format: tinymce
 ---
 
 Use the following steps to set up your Microsoft Exchange 2013 Mailbox
-with your Outlook 2011 email client.\
- \
+with your Outlook 2011 email client.<br>
+ <br>
  1. Open Outlook.
 
-2. In the Outlook drop-down menu, select **Preferences**.\
- \
+2. In the Outlook drop-down menu, select **Preferences**.<br>
+ <br>
  ![](/knowledge_center/sites/default/files/field/image/1_53.png)
 
-3. In the Outlook Preferences menu, select **Accounts**.\
- \
- ![](/knowledge_center/sites/default/files/field/image/2_50.png)\
- \
- 4. On the Add an Account page, click **Exchange Account**.\
- \
- ![](/knowledge_center/sites/default/files/field/image/01_0.png)\
- \
+3. In the Outlook Preferences menu, select **Accounts**.<br>
+ <br>
+ ![](/knowledge_center/sites/default/files/field/image/2_50.png)<br>
+ <br>
+ 4. On the Add an Account page, click **Exchange Account**.<br>
+ <br>
+ ![](/knowledge_center/sites/default/files/field/image/01_0.png)<br>
+ <br>
  5. Enter in the following information:
 
 -       **E-mail address** - Enter in your entire email address (for
@@ -40,15 +40,15 @@ with your Outlook 2011 email client.\
 
 ![](/knowledge_center/sites/default/files/field/image/3_47.png)
 
-\
+<br>
  6. Click **Add Account**.
 
 7. Confirm that Amber dot next to the account name turns from an amber
-color to a solid green.\
- \
+color to a solid green.<br>
+ <br>
 
-![](/knowledge_center/sites/default/files/field/image/amber.png)![](/knowledge_center/sites/default/files/field/image/green.png)\
- \
+![](/knowledge_center/sites/default/files/field/image/amber.png)![](/knowledge_center/sites/default/files/field/image/green.png)<br>
+ <br>
  *Note: The dot might take a minute or two to change from amber to
 green. If the dot doesn't change, check the account settings and
 password and ensure that you're using the correct EWS server address.*

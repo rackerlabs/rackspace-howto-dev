@@ -53,7 +53,7 @@ General
 
 1.  From the Skype for Business main window, select Options \> Personal.
 2.  Uncheck the box labeled **Show Skype for Business in the foreground
-    when it starts**.\
+    when it starts**.<br>
      The next time you log on, the Skype for Business icon will appear
     on the task bar at bottom of your screen. You&rsquo;ll need to select it
     to open the Skype for Business main window.
@@ -99,7 +99,7 @@ select **Auto-assign Relationship**.
 ### How do I turn off all pictures in Skype for Business, including my own?
 
 Select **Options \> Personal**, then clear the check box labeled **Show
-pictures of contacts**.\
+pictures of contacts**.<br>
  This will remove pictures from your contacts list. It will also
 eliminate pictures of sender and receiver from IM and group
 conversations, and it will remove your own picture from Skype for
@@ -120,7 +120,7 @@ organization.
 
 1.  In the Skype for Business main window, on your Contacts list,
     right-click any group name (for example, **Other Contacts**), then
-    click **Create New Group**.\
+    click **Create New Group**.<br>
      Or, click **Add a Contact** and then select **Create a New Group**.
 2.  In the space that now opens up at bottom of the window, type over
     the phrase *New Group* to give your group a descriptive name.
@@ -131,8 +131,8 @@ organization.
 
 Create a new group based on the category you need. For instance, you
 might create a group called &ldquo;Headquarters staff&rdquo; and add contacts to
-that group.\
- \
+that group.<br>
+ <br>
  See [How do I create a
 group?](https://admin.rackspace.com/knowledge_center/frequently-asked-question/how-do-i-create-a-group)
 for additional information on creating a group.
@@ -204,7 +204,7 @@ looking.
 1.  In the Skype for Business main window, click **Add a Contact**.
 2.  From the dropdown menu, select **Add a Contact in my Organization**.
 3.  In the search box, type the person&rsquo;s name, email alias, or phone
-    number.\
+    number.<br>
      As you type, a list of people who match the search terms is
     displayed.
 4.  Scroll through the search returns list until you come to the person
@@ -419,7 +419,7 @@ To help ensure that your IM alerts are noticeable, try the following:
     also record your own .wav file for this purpose, and then browse to
     that file to select it as your IM alert.
 5.  Select the sound you want to use for incoming IM alerts, and then
-    click **Apply**.\
+    click **Apply**.<br>
      The Program Events display panel should now read **Incoming Instant
     Message** and the Sounds panel should display the name of the .wav
     file you selected.

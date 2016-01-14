@@ -23,7 +23,7 @@ Server.  For many of our customers, that is all the information they
 will need to get going.  For those of you who have never been through
 this process before we will go into more detail on how DNS works, and
 how to transfer and test your domain.  Here are the answers to some
-basic questions about transferring your domain to Rackspace.\
+basic questions about transferring your domain to Rackspace.<br>
   
 
 -   [We are not a Domain Registrar](#wearenotaregistrar_1)

@@ -52,7 +52,7 @@ steps:
 2.  Back up your data disk, either to a [Cloud Block Storage
     volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
     or with [Cloud
-    Backup](http://www.rackspace.com/knowledge_center/getting-started/cloud-backup).\
+    Backup](http://www.rackspace.com/knowledge_center/getting-started/cloud-backup).<br>
      **Notes**:
     -   To decide between these options, consider your needs. For
         information about the advantages of each, see [Best Practices
@@ -64,7 +64,7 @@ steps:
 
 3.  Use the image of your system disk to create a new server with the
     configuration that you prefer.  From the control panel select
-    **Servers** then select **Create Server**.\
+    **Servers** then select **Create Server**.<br>
      **Note**: Create the server as normal, however, from the **Image**
     section you will need to select the image from the **Saved** tab
     rather than the stock Rackspace images.

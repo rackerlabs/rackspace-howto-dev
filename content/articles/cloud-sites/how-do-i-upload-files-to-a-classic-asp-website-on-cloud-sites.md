@@ -16,7 +16,7 @@ following information:
 -   The data center location of the website, ORD or DFW. If the website
     test link contains **dfw**, then the site is assigned to DFW;
     otherwise, it is ORD. You can view the test link on the **General
-    Settings** tab for the website in the Cloud Sites Control Panel.\
+    Settings** tab for the website in the Cloud Sites Control Panel.<br>
       
 -   The web directory into which the files are uploaded. You can view
     the web directory on the **Features** tab for the website in the

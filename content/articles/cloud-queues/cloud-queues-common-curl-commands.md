@@ -80,8 +80,8 @@ Use curl to populate TOKEN variable.
 
 ***Request***
 
-        $ TOKEN=`curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' -d '{"auth":{"RAX-\
-        KSKEY:apiKeyCredentials":{"username":"$USERNAME", "apiKey":"$APIKEY"}}}' -H "Content-Type: application/json" \
+        $ TOKEN=`curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' -d '{"auth":{"RAX-<br>
+        KSKEY:apiKeyCredentials":{"username":"$USERNAME", "apiKey":"$APIKEY"}}}' -H "Content-Type: application/json" <br>
         | python -c "import sys,json;print json.loads(sys.stdin.readlines()[0])['access']['token']['id']"`
 
 ***Check if TOKEN value is set***

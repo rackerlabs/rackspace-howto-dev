@@ -23,7 +23,7 @@ steps:
 3.  Make changes to your company information and mailing address as
     needed.
 4.  To make changes to payment information, click the **Edit Credit
-    Card** link, located next to the **Payment Information** heading.\
+    Card** link, located next to the **Payment Information** heading.<br>
      **Note:**You will be taken to an external page to edit payment
     information. After you enter your changes, you are taken back to the
     control panel.

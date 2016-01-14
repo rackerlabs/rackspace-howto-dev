@@ -57,14 +57,14 @@ Create an OnMetal server in the Cloud Control Panel
     key or adding a new one:
     -   To assign an existing public key, select the key name in the
         **SSH Keys** list, and skip to step 13.
-    -   To add a new public key, continue with the next step.\
+    -   To add a new public key, continue with the next step.<br>
          **IMPORTANT:** OnMetal servers *must* be created using an SSH
         key pair. For information about generating a public and private
         key pair, see [Manage SSH Key Pairs for Cloud Servers with
         python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
     [](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient)
-8.  To add a new public key, click **Add Public Key**.\
+8.  To add a new public key, click **Add Public Key**.<br>
      **Note:** If you have previously added your public key, this option
     is labeled **Manage SSH Keys**.
 9.  Specify a name for the public key.
@@ -76,7 +76,7 @@ Create an OnMetal server in the Cloud Control Panel
     new server and select it.
 13. As needed, create a new network and select the PublicNet and
     ServiceNet options.
-14. Click **Create Server**. \
+14. Click **Create Server**. <br>
      Your server is built.
 
 Boot the server

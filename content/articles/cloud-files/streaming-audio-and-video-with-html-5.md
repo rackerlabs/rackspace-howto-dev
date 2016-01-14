@@ -61,8 +61,8 @@ into ogg files.
 5.  Save audiotest.html and upload it to the CDN-enabled container.
 6.  Click the audiotest.html link to view it.
 
-**Sample code:** \
-\
+**Sample code:** <br>
+<br>
 
     <audio controls>
     <source src="full/link/to/http/mp3/audio/file.mp3" type="audio/mpeg" />

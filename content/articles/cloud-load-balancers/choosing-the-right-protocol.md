@@ -79,7 +79,7 @@ use this protocol. See UDP.
 
 **TCP (Client First) **- This protocol is similiar to TCP, but is more
 efficient when a client is required to write the data to the server
-before receiving the server's respone.\
+before receiving the server's respone.<br>
  *Note: TCP\_CLIENT\_FIRST cannot be placed on a VIP that already
 dispatches HTTP.*
 

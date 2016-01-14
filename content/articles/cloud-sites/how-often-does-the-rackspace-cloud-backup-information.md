@@ -13,7 +13,7 @@ body_format: tinymce
 Cloud Sites creates backups of your data on a nightly basis. However,
 its purpose is for disaster recovery on the server side. If for any
 reason a storage node on our side were to crash, our backups will be
-there to replace any lost data.\
+there to replace any lost data.<br>
   
 
 With that said, we recommend that you make periodic backups of you site

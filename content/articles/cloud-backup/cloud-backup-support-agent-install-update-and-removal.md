@@ -46,7 +46,7 @@ backup migration in order to re-associate the backup data from a
 disconnected registration. However, the old registration with its backup
 data remains attached to the customer account until it is deleted.
 
-**Note:** The Rackspace Cloud Backup agent requires .NET 4.0 or higher.\
+**Note:** The Rackspace Cloud Backup agent requires .NET 4.0 or higher.<br>
   
 
 Download the installer
@@ -60,7 +60,7 @@ from [http://agentrepo.drivesrvr.com/](http://agentrepo.drivesrvr.com/).
     .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win32/driveclient-latest.msi) 
 -   [64-bit Windows
     .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win64/driveclient-latest.msi) (This
-    will almost always be the correct one for your server.)\
+    will almost always be the correct one for your server.)<br>
       
 
 Installation
@@ -70,7 +70,7 @@ You can choose one of the following methods of installation:
 
 -   [Interactive](#interactiveinstall)
 -   [Silent](#silentinstall)
--   [Update](#update)\
+-   [Update](#update)<br>
       
 
 ### Interactive installation
@@ -125,7 +125,7 @@ installation and configuration.
 5.  Click **Finish** to complete the interactive installation.
 
 See [Test Windows installation or update](#testsetup) for the
-verification steps to test the installation.\
+verification steps to test the installation.<br>
   
 
 ### Silent installation
@@ -136,7 +136,7 @@ installation](https://www.rackspace.com/knowledge_center/article/rackspace-cloud
 to learn how to perform a silent installation.
 
 **Note:** The silent installation works only when you run it from the
-administrator account of the server.\
+administrator account of the server.<br>
   
 
 ### Update Cloud Backup agent on Windows
@@ -156,7 +156,7 @@ update.
 
 Verify that installation performed the following actions:
 
-1.  Created the `%programfiles%\driveclient` path.\
+1.  Created the `%programfiles%\driveclient` path.<br>
       
 2.  Placed files in the `Program Files\driveclient` directory:
 
@@ -171,7 +171,7 @@ Verify that installation performed the following actions:
         10/05/2011 01:37 PM 58,384 uninst.exe
         5 File(s) 9,438,686 bytes
 
-3.  Created the `%programdata%\driveclient` path.\
+3.  Created the `%programdata%\driveclient` path.<br>
       
 4.  Placed `bootstrap.json` in the `%programdata?%\driveclient` path,
     which looks as follows.
@@ -188,7 +188,7 @@ Verify that installation performed the following actions:
 
     Replace values in brackets with values that match your installation.
     The parameter provided with `/type=install` should be visible in the
-    `bootstrap.json` file.\
+    `bootstrap.json` file.<br>
       
 
 5.  Created a DriveClientSvc service:
@@ -203,14 +203,14 @@ Verify that installation performed the following actions:
         WAIT_HINT : 0x0
 
 6.  Created the entry driveclient.exe in Control Panel \> Programs \>
-    Programs and Features.\
+    Programs and Features.<br>
       
 
 Test the Windows update
 -----------------------
 
 Run `driveclient-setup-latest.exe` to show any updated files in
-`program files\driveclient`.\
+`program files\driveclient`.<br>
  This is the same as running the setup with no parameters.
 
     c:\>dir "%programfiles%\driveclient\driveclient.exe"
@@ -248,7 +248,7 @@ most effective log setting is to directly edit the `log4cxx.xml` file .
 
 A Cloud Backup connection error indicates that the agent is not running
 on your server. In this case, verify that your firewall isn't blocking
-outgoing connections on port 443.\
+outgoing connections on port 443.<br>
   
 
 ### Backup statuses - skipped, missed, errored, and failed
@@ -298,8 +298,8 @@ msiexec from the command line.
     msiexec /x driveclient-1.18.007148-en-us.msi /qn /l*v %tmp%\uninstall-1.18.007148.log
                     
 
-Run `%programfiles%\driveclient\uninst.exe`.\
- \
+Run `%programfiles%\driveclient\uninst.exe`.<br>
+ <br>
  The following changes should occur:
 
 -   The path %programfiles%\\driveclient contains a single file:

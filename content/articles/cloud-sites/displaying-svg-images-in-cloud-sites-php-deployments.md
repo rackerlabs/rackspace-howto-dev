@@ -24,9 +24,9 @@ This will tell the Apache instance the proper MIME type to use when
 serving requests for SVG style image files.
 
 For a very extensive list of what MIME Type Apache supports, please
-review:\
-[http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)\
-\
+review:<br>
+[http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)<br>
+<br>
 *Note: The following link may not be fully formatted correctly for the
 .htaccess*
 

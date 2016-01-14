@@ -27,7 +27,7 @@ Cloud Network limitations
 Attach an isolated network to a cloud server
 --------------------------------------------
 
-1.  In the [Cloud Control Panel](https://mycloud.rackspace.com).\
+1.  In the [Cloud Control Panel](https://mycloud.rackspace.com).<br>
      The Cloud Servers page is displayed by default.
 
 2.  Click **Create Server**.

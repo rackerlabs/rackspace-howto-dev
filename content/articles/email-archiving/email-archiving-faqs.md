@@ -35,7 +35,7 @@ No. The fee for archiving imports is \$6 per GB, regardless of the
 method used:
 
 -   If the messages already exist in Rackspace Email mailboxes, the
-    Cloud Office team will upload the information for the user.\
+    Cloud Office team will upload the information for the user.<br>
       
 -   If users have messages that do not exist in their mailboxes hosted
     with us, they must export their data to PST, EML, MSG, or MBOX files

@@ -19,9 +19,9 @@ Resources**](https://admin.rackspace.com/knowledge_center/cloud_dns_additional_r
 
 #### General
 
-[What is a domain name system (DNS)?](#whatisdns)\
+[What is a domain name system (DNS)?](#whatisdns)<br>
  [What types of customers/accounts have access to Cloud
-DNS?](#whattypesofaccounts)\
+DNS?](#whattypesofaccounts)<br>
  [Where can I find the Cloud DNS API documentation?](#wherecanifindapi)
 
 ####  
@@ -35,8 +35,8 @@ DNS?](#whattypesofaccounts)\
 #### Existing Product Compatibility
 
 [Can this service be used for Dedicated
-Servers?](#canbeusedfordedicated)\
- [Does Cloud DNS work with Cloud Sites?](#doesthisworkforcloudsites)\
+Servers?](#canbeusedfordedicated)<br>
+ [Does Cloud DNS work with Cloud Sites?](#doesthisworkforcloudsites)<br>
  [How does this work for Hybrid customers?](#howdoesthisworkforhybrid)
 
 ####  
@@ -44,9 +44,9 @@ Servers?](#canbeusedfordedicated)\
 #### Accessing Cloud DNS
 
 [When authenticating, do I use the same API user & key that I use when
-connect to other Cloud APIs?](#howdoiauthenticate)\
+connect to other Cloud APIs?](#howdoiauthenticate)<br>
  [What account number do I use to access the
-service?](#whataccountnumber)\
+service?](#whataccountnumber)<br>
  [What is the difference between US and UK Cloud
 DNS?](#whatisthedifference)
 
@@ -55,13 +55,13 @@ DNS?](#whatisthedifference)
 #### Features and Functionality
 
 [What DNS management operations does the Cloud DNS API
-support?](#whatdnsmanagement)\
- [What record types does Cloud DNS support?](#whatrecordtypes)\
- [Can I import and export domains?](#caniimportandexport)\
- [What are the Rackspace DNS servers?](#dnsservers)\
- [What type of DNS network does Rackspace use?](#whattypeofdnsnetwork)\
+support?](#whatdnsmanagement)<br>
+ [What record types does Cloud DNS support?](#whatrecordtypes)<br>
+ [Can I import and export domains?](#caniimportandexport)<br>
+ [What are the Rackspace DNS servers?](#dnsservers)<br>
+ [What type of DNS network does Rackspace use?](#whattypeofdnsnetwork)<br>
  [What are the limitations of the search
-functionality?](#whatarethelimitations)\
+functionality?](#whatarethelimitations)<br>
  [Do my TTL settings expire?](#domyttlsettingsexpire)
 
 ####  
@@ -69,9 +69,9 @@ functionality?](#whatarethelimitations)\
 #### Performance
 
 [What are the default TTL&rsquo;s for domains and
-records?](#whataredefaultttl)\
+records?](#whataredefaultttl)<br>
  [How long does it take for DNS changes to be propagated
-globally?](#howlongpropagate)\
+globally?](#howlongpropagate)<br>
  [Are there API rate limits?](#arethereapiratelimits)
 
 ####  
@@ -79,7 +79,7 @@ globally?](#howlongpropagate)\
 #### Support
 
 [How many Cloud DNS domains and records can I
-have?](#howcaniraiseapilimit)\
+have?](#howcaniraiseapilimit)<br>
  [How can I create a Cloud DNS ticket?](#howcanicreateticket)
 
  
@@ -146,7 +146,7 @@ To authenticate, you must supply your username and API access key in
 x-headers.
 
 -   Use your Rackspace Cloud username as the username for the API. Place
-    it in the XAuth-\
+    it in the XAuth-<br>
      User x-header.
 -   [Obtain your API access
     key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
@@ -165,7 +165,7 @@ Customers should use their existing Cloud account number.
 The functionality is the same.  The only difference is US and UK each
 have their own separate API endpoint:
 
-US = `https://dns.api.rackspacecloud.com/v1.0/1234/`\
+US = `https://dns.api.rackspacecloud.com/v1.0/1234/`<br>
  UK = `https://lon.dns.api.rackspacecloud.com/v1.0/1234/`
 
 #### What DNS management operations does the Cloud DNS API support?

@@ -30,7 +30,7 @@ steps to prepare your data:
 2.  Collect all the critical resources (backup data) in a secure local
     location or directory with any needed subdirectories.
 3.  *(Optional)* Compress the content of the backup directory with
-    security and encryption.\
+    security and encryption.<br>
      This optional step saves storage and bandwidth costs and increases
     security.
 
@@ -44,7 +44,7 @@ Back up your data
 
 3.  On the Cloud Files page, click **Create Container**.
 4.  In the popup dialog box, name the new container, select the region
-    and type, and then click **Create Container**.\
+    and type, and then click **Create Container**.<br>
      For more information about selecting a region for your backup
     files, see [Multi-region support in Cloud
     Files](http://www.rackspace.com/knowledge_center/node/2157).
@@ -62,7 +62,7 @@ Back up your data
 
         ![](/knowledge_center/sites/default/files/field/image/263.4.png)
 
-    2.  Select the files and then click **Open**.\
+    2.  Select the files and then click **Open**.<br>
          Your files are uploaded to the container.
 
 Next steps

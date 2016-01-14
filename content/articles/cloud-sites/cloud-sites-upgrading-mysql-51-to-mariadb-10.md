@@ -21,7 +21,7 @@ MariaDB database. This article provides the steps for such a migration.
 **Notes:**
 
 -   MySQL 5.1 can still be provisioned, and no databases will be forced
-    to migrate.\
+    to migrate.<br>
       
 -   Currently, customers cannot perform backups that call
     **mysqldump**because the version on the servers is incompatible with
@@ -51,21 +51,21 @@ MySQL 5.6. See the following links for more information:
 
 ### **Step 1: Create your MariaDB database in the Cloud Sites control panel**
 
-1.  Log in to the Cloud SItes Control Panel.\
+1.  Log in to the Cloud SItes Control Panel.<br>
       
-2.  Navigate to the site for which you want to add the database.\
+2.  Navigate to the site for which you want to add the database.<br>
       
-3.  Click the **Features**tab.\
+3.  Click the **Features**tab.<br>
       
-4.  Under Databases, click **Add**.\
+4.  Under Databases, click **Add**.<br>
       
 5.  Enter a unique name for the database, select **MariaDB**from the
-    **Database Type** menu, and then click **Continue**. \
+    **Database Type** menu, and then click **Continue**. <br>
       
 6.  Enter the username and password to use for the database, and then
-    click **Finish**.\
-     \
-     The **Features**tab is displayed again.\
+    click **Finish**.<br>
+     <br>
+     The **Features**tab is displayed again.<br>
       
 7.  Click on the newly created database to display the hostname
     information, whcih you will need in Step 3.

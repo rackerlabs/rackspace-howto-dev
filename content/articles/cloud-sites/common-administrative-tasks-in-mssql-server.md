@@ -44,9 +44,9 @@ modified.*
 
 -   #### HOW TO ENABLE CONTAINMENT ON A DATABASE {.p1}
 
-USE [master]\
- GO\
- ALTER DATABASE [myDbHere] SET CONTAINMENT = PARTIAL WITH NO\_WAIT\
+USE [master]<br>
+ GO<br>
+ ALTER DATABASE [myDbHere] SET CONTAINMENT = PARTIAL WITH NO\_WAIT<br>
  GO
 
 ####   {.p1}
@@ -55,22 +55,22 @@ USE [master]\
 
 -   #### HOW TO DISABLE CONTAINMENT ON A DATABASE {.p1}
 
-USE [master]\
- GO\
- ALTER DATABASE [myDbHere] SET CONTAINMENT = NONE WITH NO\_WAIT\
- GO\
+USE [master]<br>
+ GO<br>
+ ALTER DATABASE [myDbHere] SET CONTAINMENT = NONE WITH NO\_WAIT<br>
+ GO<br>
  
 
 -   #### HOW TO CREATE A SQL USER WITH PASSWORD WHEN USING PARTIAL CONTAINMENT AND ADD TO DB OWNER ROLE {.p1}
 
-USE [myDbHere]\
- GO\
- CREATE USER [sqlUserName] WITH PASSWORD=N'ComplexPassHere'\
- GO\
+USE [myDbHere]<br>
+ GO<br>
+ CREATE USER [sqlUserName] WITH PASSWORD=N'ComplexPassHere'<br>
+ GO<br>
  USE [myDbHere]
 
-GO\
- ALTER ROLE [db\_owner] ADD MEMBER [sqlUserName]\
+GO<br>
+ ALTER ROLE [db\_owner] ADD MEMBER [sqlUserName]<br>
  GO
 
 ####   {.p1}
@@ -83,7 +83,7 @@ control panel to delete them.*
 
 USE [myDbHere]
 
-GO\
- DROP USER [sqlUserName]\
+GO<br>
+ DROP USER [sqlUserName]<br>
  GO
 

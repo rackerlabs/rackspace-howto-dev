@@ -35,21 +35,21 @@ If you are running Windows Server 2008 R2, verify that Service Pack 1 is
 installed on the server. This service pack is not pushed through the
 Windows Update Service.
 
-1.  Open the Control Panel and select **System**.\
-    \
+1.  Open the Control Panel and select **System**.<br>
+    <br>
 2.  In the Windows Edition section, you should see Service Pack 1
-    listed.\
-    \
+    listed.<br>
+    <br>
 
 ### Windows Server 2008 and 2008 R2
 
-1.  Log in to your Windows server.\
-    \
-2.  Click **Start \> Control Panel**.\
-    \
+1.  Log in to your Windows server.<br>
+    <br>
+2.  Click **Start \> Control Panel**.<br>
+    <br>
 3.  Click **Windows Update** to view the information about the updates
-    that are ready to be installed.\
-    \
+    that are ready to be installed.<br>
+    <br>
 
 If there is a green shield on the Windows Update page, then the server
 has all patches applied. Otherwise, proceed with the installation of any
@@ -59,20 +59,20 @@ pending updates.
 
 1.  Move the cursor to the bottom-right corner of the screen and
     activate the **Charms** menu.
-2.  Click **Search**.\
-    \
-3.  Type **Control Panel** for the search term.\
-    \
-4.  On the ribbon under the search field, click **Control Panel**.\
-    \
-5.  Click **System and Security**.\
-    \
+2.  Click **Search**.<br>
+    <br>
+3.  Type **Control Panel** for the search term.<br>
+    <br>
+4.  On the ribbon under the search field, click **Control Panel**.<br>
+    <br>
+5.  Click **System and Security**.<br>
+    <br>
 6.  Click **Windows Update** to see if there are pending updates to
-    install. If so, install the updates at a convenient time.\
-    \
+    install. If so, install the updates at a convenient time.<br>
+    <br>
 
-[back to top](#top)\
-\
+[back to top](#top)<br>
+<br>
 
 Automatically start all critical services
 -----------------------------------------
@@ -85,35 +85,35 @@ grab all services that have an automatic startup:
 
 ### Windows Server 2008 and 2008 R2
 
-1.  Click the **Start** menu.\
-    \
-2.  In the search field, type `services.msc` in the search field.\
-    \
-3.  Press **Enter**.\
-    \
+1.  Click the **Start** menu.<br>
+    <br>
+2.  In the search field, type `services.msc` in the search field.<br>
+    <br>
+3.  Press **Enter**.<br>
+    <br>
 4.  In the Services Management window, double-click a service that you
-    want to configure for automatic startup.\
-    \
+    want to configure for automatic startup.<br>
+    <br>
 5.  Set the startup type to **Automatic**.
 
 ### Windows Server 2012 and 2012 R2
 
 1.  Move the cursor to the bottom right corner of the screen and
-    activate the **Charms** menu.\
-    \
-2.  Click **Search**.\
-    \
-3.  Type `services.msc`.\
-    \
-4.  On the ribbon under the search field, click `services.msc`.\
-    \
+    activate the **Charms** menu.<br>
+    <br>
+2.  Click **Search**.<br>
+    <br>
+3.  Type `services.msc`.<br>
+    <br>
+4.  On the ribbon under the search field, click `services.msc`.<br>
+    <br>
 5.  In the Services Management window opens, double-click a service that
-    you want to configure for automatic startup.\
-    \
+    you want to configure for automatic startup.<br>
+    <br>
 6.  Set the startup type to **Automatic**.
 
-[back to top](#top)\
-\
+[back to top](#top)<br>
+<br>
 
 Perform a test reboot
 ---------------------

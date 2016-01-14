@@ -37,7 +37,7 @@ different ways.
         and Google Sheets
         ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_new_excel_pivot_tables.xlsx))
     -   Open Office
-        ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_open_office_pivot_tables.ods))\
+        ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_open_office_pivot_tables.ods))<br>
           
 
 2.  Visit the [Cloud Control Panel](https://mycloud.rackspace.com) and
@@ -46,7 +46,7 @@ different ways.
 4.  Under **Billing History**, click the ID number for the invoice you
     would like to view
 5.  On the Account Invoice page, download the CSV file
-6.  Open the CSV in your spreadsheet program\
+6.  Open the CSV in your spreadsheet program<br>
      If prompted, separate values on **comma**
 
            ![Select 'comma'

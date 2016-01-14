@@ -89,10 +89,10 @@ configuration script, which now includes functionality to contact the
 API and retrieve your Gateway IP.  Please select the version that
 matches your Cloud account's service level:
 
--   **Managed Cloud Service Level:**\
+-   **Managed Cloud Service Level:**<br>
 
     [rshybridnetworkconfig-managed-v2.sh](http://scripts.rackconnect.rackspace.com/rshybridnetworkconfig-managed-v2.sh)
--   **Managed Infrastructure:**\
+-   **Managed Infrastructure:**<br>
 
     [rshybridnetworkconfig-v2.sh](http://scripts.rackconnect.rackspace.com/rshybridnetworkconfig-v2.sh)
 

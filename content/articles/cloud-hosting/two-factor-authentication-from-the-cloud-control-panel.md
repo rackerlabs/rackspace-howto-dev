@@ -20,7 +20,7 @@ account:
 
 -   an SMS device is a mobile phone, notebook, or other digital device
     with an associated phone number that is capable of recieving SMS
-    text messages.\
+    text messages.<br>
       
 -   an OTP device is created in an OTP client application installed on
     your phone, notebook, or other digital device.
@@ -31,12 +31,12 @@ Panel](https://mycloud.rackspace.com).  After you pair a device with
 your account, authentication becomes a two-step process:
 
 1.  Each time you log in, the Rackspace authentication service generates
-    a passcode and sends it to the associated device.\
+    a passcode and sends it to the associated device.<br>
       
 2.  After the passcode is sent, the system prompts you to type the
     passcode and submit it to the Identity service to complete the
-    authentication process. \
-     \
+    authentication process. <br>
+     <br>
      **Note:** Standard text message rates and data fees apply based on
     your contract with your mobile device provider.
 
@@ -92,7 +92,7 @@ For more information, see the following sections:
 
 -   When multi-factor authentication is enabled for an account, it is
     enabled only for authentication via username and password
-    credentials.\
+    credentials.<br>
      If a client a user supplies a valid username and API key
     credentials, the client receives the authentication token
     immediately. This behavior allows automated processes or agents to
@@ -112,7 +112,7 @@ For more information, see the following sections:
         use cURL to get the authentication token. Export the token value
         to the token environment variable for the client--for example,
         OS\_TOKEN or OS\_AUTH\_TOKEN. Then, use the CLI to submit API
-        requests to the Rackspace Cloud. \
+        requests to the Rackspace Cloud. <br>
           
 -   You can also manage multi-factor authentication from the [Rackspace
     Identity service
@@ -141,25 +141,25 @@ device. The device must be enabled to receive SMS text messages.
 
 4.  On the Register SMS Device form, select the country code for the
     device, and then type the device phone number. Click **Add SMS
-    Device.**\
-     \
+    Device.**<br>
+     <br>
      ![Add an SMS device to your account so you can set up multi-factor
-    authentication](/knowledge_center/sites/default/files/field/image/add-sms-device.png)\
-     \
+    authentication](/knowledge_center/sites/default/files/field/image/add-sms-device.png)<br>
+     <br>
      When you click **Add SMS Device**, the Identity service sends an
-    SMS text message with a four-digit PIN to the specified phone.\
-     \
+    SMS text message with a four-digit PIN to the specified phone.<br>
+     <br>
         
     ![](/knowledge_center/sites/default/files/field/image/verify_code.png)
 
 5.  On the Verify Code form in the control panel, type the PIN code sent
     to your mobile device in the verification code field. Then, click
-    **Verify Device**.\
-     \
+    **Verify Device**.<br>
+     <br>
      ![Enter the verification code to pair the SMS device with your
     Rackspace Cloud
-    account](/knowledge_center/sites/default/files/field/image/verify-sms-device.png)\
-     \
+    account](/knowledge_center/sites/default/files/field/image/verify-sms-device.png)<br>
+     <br>
      After you submit the verification code, the Cloud Control Panel
     login page is displayed so that you can re-authenticate by using the
     multi-factor authentication process.
@@ -170,7 +170,7 @@ Configure your account to authenticate by using an OTP device
 To configure your account to use an OTP device for multi-factor
 authentication, you must have one of the following OTP client
 applications installed on your device:  [Authy](https://www.authy.com/),
-[Duo](https://www.duosecurity.com/),\
+[Duo](https://www.duosecurity.com/),<br>
  [Google
 Authenticator](https://support.google.com/accounts/answer/1066447?hl=en),
 or [SecureAuth
@@ -189,45 +189,45 @@ OTP](https://www.secureauth.com/Support/Downloads/Client-Applications.aspx)
     **Add**.
 
 4.  On the Name of your Device form, type a **Device nickname** for the
-    OTP device. Then, click **Add Device.**\
-     \
+    OTP device. Then, click **Add Device.**<br>
+     <br>
      ![Add an OTP device to your Rackspace Cloud
-    account](/knowledge_center/sites/default/files/field/image/name-your-otp-device.png)\
-     \
+    account](/knowledge_center/sites/default/files/field/image/name-your-otp-device.png)<br>
+     <br>
      After you click **Add Device**, the Identity service generates a
     barcode that you can use to link your Rackspace Cloud account with
     an OTP device.
 
 5.  To pair your Rackspace Cloud account with your device, use the OTP
     client application on your device to scan the barcode on the Verify
-    Code form.\
-     \
+    Code form.<br>
+     <br>
      ![Scan barcode by using the OTP application on your device to pair
     your Rackspace Cloud account with your
-    device.](/knowledge_center/sites/default/files/field/image/scan-barcode.png)\
-     \
+    device.](/knowledge_center/sites/default/files/field/image/scan-barcode.png)<br>
+     <br>
      After you scan the code, the OTP application on your device creates
     the OTP device using the device name you specified. It also
-    generates a passcode.\
-     \
+    generates a passcode.<br>
+     <br>
      ![OTP device with generated passcode for use with one-time password
-    authentication.](/knowledge_center/sites/default/files/field/image/OTP-device.png)\
+    authentication.](/knowledge_center/sites/default/files/field/image/OTP-device.png)<br>
       
 
 6.  To verify the new device, enter the passcode on the Verify Code
-    form. Then, click **Verify Mobile Passcode**.\
-     \
+    form. Then, click **Verify Mobile Passcode**.<br>
+     <br>
      **Note: **As soon as you submit the verification code, you will be
-    logged out.\
-     \
+    logged out.<br>
+     <br>
      ![Verify new OTP device for multi-factor
-    authentication](/knowledge_center/sites/default/files/field/image/otp-verify-device-code.png)\
-     \
+    authentication](/knowledge_center/sites/default/files/field/image/otp-verify-device-code.png)<br>
+     <br>
      **Note: ** By default, the new OTP device will be the default
-    method for authentication. If you do not want it\
+    method for authentication. If you do not want it<br>
      to be the default or if you do not want to be logged out of your
     account, remove the selection from**Make this my default
-    authentication method**.\
+    authentication method**.<br>
      You can update the default authentication method on the Account
     settings page.
 
@@ -251,8 +251,8 @@ Account Settings page.
     then select **Account Settings**from the menu**.**
 
 3.  In the Multi-Factor Authentication section, review the default
-    authentication method setting.  Click **Edit** to change it.\
-     \
+    authentication method setting.  Click **Edit** to change it.<br>
+     <br>
      ![Change default authentication
     method.](/knowledge_center/sites/default/files/field/image/default-authentication-method.png)
 
@@ -272,7 +272,7 @@ accounts until they add and verify a device on their account.
     authentication](#configure2Factor).
 -   To prevent service interruptions, ask account users to configure
     multi-factor authentication before you add the account-wide
-    requirement.\
+    requirement.<br>
      If multi-factor authentication is already enabled, users do not
     lose account access when the required setting is applied.
 
@@ -293,18 +293,18 @@ authentication****
     Setting** to apply the change.
 
     ![Update the account-wide multi-factor authentication enforcement
-    setting.](/knowledge_center/sites/default/files/field/image/mfa-required-setting_0.png)\
-     \
+    setting.](/knowledge_center/sites/default/files/field/image/mfa-required-setting_0.png)<br>
+     <br>
      If you update the setting to required, users who do not have
     multi-factor authentication configured must add it the next time
     they log in. Current users who have not set up multi-factor
     authentication are logged out after seeing an error message like the
-    following one:\
-     \
+    following one:<br>
+     <br>
      ![Force user to log out when mulit-factor authentication
     requirement is not
-    met.](/knowledge_center/sites/default/files/field/image/mfa-force-logout.png)\
-     \
+    met.](/knowledge_center/sites/default/files/field/image/mfa-force-logout.png)<br>
+     <br>
      When these users log back in, they are guided through the
     multi-factor authentication set up.
 
@@ -317,7 +317,7 @@ authentication****
 it is required, you are notified about the increase in security
 requirements and prompted to set up authentication.**
 
-\
+<br>
  **![Updated account with two-factor authentication
 requirement](/knowledge_center/sites/default/files/field/image/mfa-setup-required.png)**
 
@@ -345,35 +345,35 @@ To log in to the Rackspace Cloud with multi-factor authentication
 
 1.  Log in to the [Rackspace Cloud Control
     Panel](https://mycloud.rackspace.com/ "Cloud Control Panel") with
-    your user name and password.\
-     \
+    your user name and password.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/control_panel_login.png)\
-     \
+    ![](/knowledge_center/sites/default/files/field/image/control_panel_login.png)<br>
+     <br>
      If you account is configured to use multi-factor authentication
     with an SMS device, the Rackspace Cloud Identity service sends an
     SMS text message with a 7-digit passcode to the device registered to
-    your account.\
-     \
+    your account.<br>
+     <br>
      ![SMS text message with Rackspace passcode for two-factor
-    authentication](/knowledge_center/sites/default/files/field/image/mfa_passcode.png)\
-     \
+    authentication](/knowledge_center/sites/default/files/field/image/mfa_passcode.png)<br>
+     <br>
      If your device is configured to use multi-factor authentication by
     OTP device, open the OTP client application and get the passcode
-    from the OTP device associated with your Rackpspace Cloud account.\
-     \
+    from the OTP device associated with your Rackpspace Cloud account.<br>
+     <br>
      ![OTP device with generated passcode for use with one-time password
-    authentication.](/knowledge_center/sites/default/files/field/image/OTP-device.png)\
+    authentication.](/knowledge_center/sites/default/files/field/image/OTP-device.png)<br>
       
 
 2.  When prompted, type the passcode in the **Passcode** field on the
     control panel. Then, click **Verify Code** to log in to your
-    account:\
-     \
+    account:<br>
+     <br>
      ![Form to supply the two-factor authentication passcode sent to
     mobile device registered to Rackspace Cloud
-    account.](/knowledge_center/sites/default/files/field/image/enter_mfa_passcode.png)\
-     \
+    account.](/knowledge_center/sites/default/files/field/image/enter_mfa_passcode.png)<br>
+     <br>
      If the passcode is expired or invalid, refresh the page to return
     to the Rackspace Cloud Control Panel login page. Then, log in again
     and click the Resend code option on the Account Settings page to get
@@ -401,15 +401,15 @@ settings](/knowledge_center/sites/default/files/field/image/account-settings-mfa
 2.  In the Login Details section, review the information in the
     **Multi-Factor Authentication** field.
 
-#### ******To verify your device******\
- \
+#### ******To verify your device******<br>
+ <br>
  You can verify your SMS or OTP device from the Account Settings page.
 
 -   #### If you have an SMS device on your account that has not been verified, use the Verify option to complete the verification process.
 
 -   If you have an OTP device that has not been verified, use the Manage
-    option to complete the verification process.\
-     \
+    option to complete the verification process.<br>
+     <br>
      ![Verify multi-factor authentication device
     options](/knowledge_center/sites/default/files/field/image/verify-device-options.png)
 
@@ -426,8 +426,8 @@ the bypass codes as soon as you enable multi-factor authentication.
     *yourUsername* \> Account Settings** to open the Account Settings
     page.
 
-2.  In the Login Details section, click **Generate Recovery Codes**.\
-     \
+2.  In the Login Details section, click **Generate Recovery Codes**.<br>
+     <br>
      ![Generate recovery
     codes.](/knowledge_center/sites/default/files/field/image/generate-recovery-codes.png)
 
@@ -455,11 +455,11 @@ associated with your account.
 To change the mobile phone number paired with your account, use the
 Remove option to remove the existing phone number (for instructions, see
 the preceding task).  Then, update the account settings with the new
-phone number and verify the device.\
- \
+phone number and verify the device.<br>
+ <br>
  **To remove an SMS or OTP device**
 
-To remove an SMS device, use the **Remove all devices**.\
+To remove an SMS device, use the **Remove all devices**.<br>
  To remove an OTP device, use the Manage option to delete the device
 from your account.
 

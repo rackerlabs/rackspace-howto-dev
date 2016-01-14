@@ -61,10 +61,10 @@ Tool](http://www.rackspace.com/knowledge_center/article/migrate-your-email-by-us
 
     ![](/knowledge_center/sites/default/files/field/image/FullMigrationWiz1.png)
 
-3.  Enter the email address that you used to sign up for MigrationWiz.\
+3.  Enter the email address that you used to sign up for MigrationWiz.<br>
          (A password reset email will be sent to that address.)
 4.  Upon receipt of the password reset email, click the **Forgot
-    password**link and create a password for your account.\
+    password**link and create a password for your account.<br>
          (You will then be auto-logged into
     [http://MigrationWiz.com](http://MigrationWiz.com) )
 5.  Click **Manage Connectors** to access your migration.

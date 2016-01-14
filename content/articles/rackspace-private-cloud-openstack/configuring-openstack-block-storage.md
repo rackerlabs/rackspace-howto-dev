@@ -225,7 +225,7 @@ $ cinder list
 | 845514f9[id truncated] | available |myvolume |  1   | None   |         |
 +------------------------+-----------+---------+------+--------+---------+
 
-$ nova volume-attach f947896e-600a-4600-a27a-3f372146b6e9 \
+$ nova volume-attach f947896e-600a-4600-a27a-3f372146b6e9 <br>
   845514f9-8fff-44bb-b82a-27d4e32b9939 auto
 +----------+--------------------------------------+
 | Property | Value                                |

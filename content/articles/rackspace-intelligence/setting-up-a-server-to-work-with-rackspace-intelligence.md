@@ -24,27 +24,27 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     Essentials - Creating A Cloud
     Server](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-a-cloud-server).
 3.  List the server's details by selecting **Servers \> Cloud Servers**
-    and then clicking the server&rsquo;s name.\
-      \
+    and then clicking the server&rsquo;s name.<br>
+      <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/servers-list-details-.png)\
+    ![](/knowledge_center/sites/default/files/field/image/servers-list-details-.png)<br>
       
 4.  On the server details page, scroll down to the **Monitoring
     Data** section and click the **View Server's Metrics in Rackspace
     Intelligence** link.
 5.  Install the monitoring agent on the server by clicking **Get
-    Started**.\
+    Started**.<br>
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-notset.png)\
+    ![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-notset.png)<br>
       
 6.  On the **Monitoring Agent Installation** page, choose the platform
     installed on your server and choose the type of installation
     instructions that you prefer. The following example shows the **Step
     By Step** instructions for a Linux platform. Follow the instructions
-    to install, configure, and start the agent.\
-     \
+    to install, configure, and start the agent.<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-install-agent-linux_0.png)\
+    ![](/knowledge_center/sites/default/files/field/image/intelligence-install-agent-linux_0.png)<br>
      The instructions require you to send commands to the server. The
     commands you must send to the server vary depending on what kind of
     server you want to monitor. Similarly, detailed procedures for
@@ -55,8 +55,8 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     how to install and use the Terminal utility on a Mac OS X
     workstation communicating with a Linux server; if you are working in
     a different configuration, adapt these instructions to match your
-    environment\
-     \
+    environment<br>
+     <br>
      **Note: **No matter what kind of server you want to monitor, you
     must know the server's IP address and password before you can log in
     and begin installing the monitoring agent there. The server's IP
@@ -65,27 +65,27 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     but you are able to log in to the Cloud Control Panel for your
     account, you can change the server's password as described at [How
     to change your server root/admin password from your
-    account](https://admin.rackspace.com/knowledge_center/video/how-to-change-your-server-rootadmin-password-from-your-account).\
-     \
+    account](https://admin.rackspace.com/knowledge_center/video/how-to-change-your-server-rootadmin-password-from-your-account).<br>
+     <br>
      In the terminal session where you entered the installation
     commands, you can confirm that the installation succeeded if you see
     the message Your Agent configuration is now complete. After this,
     with the agent running, if you look again at the **Monitoring Agent
     Installation** page you can see that the agent connection status
-    is **Connected**.\
-     \
+    is **Connected**.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/intelligence-agent-connected.png)
 7.  Click **Setup Checks** to configure at least one check. In the
     following example, two CPU-related checks are configured, monitoring
-    CPU usage and average CPU load.\
-     \
+    CPU usage and average CPU load.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/intelligence-check-selection.png)
 8.  Click **Apply Checks** to activate the checks that you defined. When
     the checks are activated, their status is reported on the entities
-    details page for the server, in the **Monitoring Checks** section.\
-     \
+    details page for the server, in the **Monitoring Checks** section.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-checks-2set.png)
 9.  To make the checks useful, define alarms that identify boundaries

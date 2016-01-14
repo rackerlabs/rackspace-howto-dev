@@ -60,7 +60,7 @@ Details on Creating a New Cloud Account or Linking an Existing Cloud Account
     [MyRackspace](https://my.rackspace.com/portal/cloudAccount/list) portal
     navigate to **Products** \> **Rackspace Cloud**.
 2.  Near the top of the screen, there are "Link Cloud Account" or
-    "Create Cloud Account" options:\
+    "Create Cloud Account" options:<br>
 
     ![](/knowledge_center/sites/default/files/field/image/RCv3-link-create-cloud-account_2.png)
 3.  Select the appropriate option, and follow the guide to complete the
@@ -81,7 +81,7 @@ Details on Associating a Cloud Account with your RackConnect v3.0 Configuration
 2.  After you have linked a cloud account, you can click the plus sign
     (+) under the RackConnect column to associate a cloud account with
     one of your RackConnect configurations. In most cases, you have only
-    one RackConnect configuration:\
+    one RackConnect configuration:<br>
 
     ![](/knowledge_center/sites/default/files/field/image/RCv3-associate-to-RCv3-config_1.png)
 

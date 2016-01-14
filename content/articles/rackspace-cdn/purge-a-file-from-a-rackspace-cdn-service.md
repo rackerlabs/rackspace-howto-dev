@@ -20,8 +20,8 @@ and select **Refresh Content**.
 
 3. In the popup dialog box, indicate if you want to **Refresh All
 Files** or **Refresh Files By Path**. To **Refresh Files By Path**,
-enter the path to the file that you want to refresh.\
- \
+enter the path to the file that you want to refresh.<br>
+ <br>
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-02%20at%2012.39.54%20PM.png)
 

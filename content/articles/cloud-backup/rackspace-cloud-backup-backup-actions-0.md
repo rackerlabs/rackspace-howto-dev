@@ -47,7 +47,7 @@ Perform Backup
 
 When you select **Perform Backup**, you trigger a manual backup on your
 system, based on the configurations that are currently set for that
-configured backup.\
+configured backup.<br>
  If you are looking at the**Configuration Details** page, the backup
 progress bar is displayed until the backup is completed.
 
@@ -58,7 +58,7 @@ Restore Backup
 
 Use the **Restore Backup** action to restore a backup.
 
-1.  From the **Backup Actions** menu, select the **Restore Backup.**\
+1.  From the **Backup Actions** menu, select the **Restore Backup.**<br>
       
 2.  On the first page of the Restore a Backup wizard, select the**Backup
     Date** to restore from, and then click **Next Step**.
@@ -77,11 +77,11 @@ Use the **Restore Backup** action to restore a backup.
 4.  On the next page, select the folders and files to restore.
 
 -   On the **Browse Files & Folders** tab, select the check boxes of the
-    files and folders that you want to restore.\
+    files and folders that you want to restore.<br>
      You can move through your folders by clicking **Up** or an
     individual folder name at top of the file or folder list.
 -   After you have selected your files, you can confirm your selection
-    by clicking the **Selected & Excluded Items** tab.\
+    by clicking the **Selected & Excluded Items** tab.<br>
      The files included in the restore and specifically excluded are
     listed.
 -   When you are satisfied with your selection, click **Next Step**.
@@ -91,7 +91,7 @@ Use the **Restore Backup** action to restore a backup.
 5.  On the next page, select the destination folder.
 
            You can choose to restore the files to their original folder
-or to restore to a selected restore destination.\
+or to restore to a selected restore destination.<br>
             You can also select whether to overwrite files with the same
 name. Then, click **Next** **Step**.
 
@@ -109,13 +109,13 @@ Configure Backup
 ----------------
 
 You can change the name, recurrence, and notifications for your backup
-job. Select **Configure Backup** from the\
+job. Select **Configure Backup** from the<br>
  **Backup Actions** menu to view these settings.
 
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-16%20at%201.23.19%20PM.png)
 
 1.  Enter a new name for your backup job, and under **Schedule**, select
-    how often you want to run the backup. All times are Central Time.\
+    how often you want to run the backup. All times are Central Time.<br>
       
 
 **Note**: You can schedule your backups for as often as you expect your
@@ -138,20 +138,20 @@ this guide.
 
 For advanced Linux users, if you create tarballs with gzip that will get
 backed up, be sure to use gzip's ` --rsyncable` option, which this Cloud
-Backup to deduplication those files as well.\
+Backup to deduplication those files as well.<br>
   
 
 2.  Select how long you want to keep your backups: 30 days, 60 days, or
-    indefinitely.\
+    indefinitely.<br>
       
 3.  Under **Notifications**, enter the email address where you want to
     receive notifications of failed backups. You can also elect to have
-    emails sent for successful backups.\
+    emails sent for successful backups.<br>
       
-4.  When you are satisfied with your settings, click **Next Step**.\
+4.  When you are satisfied with your settings, click **Next Step**.<br>
       
 5.  On the next page, select the folders and files for the backup, along
-    with any files you want\
+    with any files you want<br>
      to exclude. Then click **Next Step**.
 
            ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-16%20at%201.37.49%20PM.png)
@@ -172,11 +172,11 @@ settings.
 1.  On the **Browse Files & Folders** tab, select the the folders and
     files by clicking the folder name to view which files are inside.
     Select the check boxes of the files and folders that you want to
-    back up.\
+    back up.<br>
       
 2.  Confirm your selection by clicking the **Selected & Excluded Items**
     tab. The files included, as well as those specifically excluded, are
-    listed.\
+    listed.<br>
       
 3.  Click **Next Step**.
 

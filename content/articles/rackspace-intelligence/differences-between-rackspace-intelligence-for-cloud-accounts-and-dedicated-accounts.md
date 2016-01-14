@@ -24,6 +24,6 @@ Rackspace Intelligence for dedicated and cloud accounts.
   Customers can only use only the following remote-type checks: tcp, ping, and http. They can view the configuration of these checks in the Rackspace Intelligence UI.                            Customers can use the Rackspace Intelligence UI to configure remote-type and agent-type checks. For more information, see [Working with checks](https://admin.rackspace.com/knowledge_center/article/working-with-checks).
   Customers *cannot* install or use any monitoring agents.                                                                                                                                        Customers can configure, install, and use monitoring agents.
 
-\
+<br>
   
 

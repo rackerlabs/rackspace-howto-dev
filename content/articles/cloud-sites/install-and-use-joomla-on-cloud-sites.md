@@ -104,7 +104,7 @@ the domain **General Settings** tab.
         visit: http://www.example.com.php5-7.dfw1-1.websitetestlink.com/Joomla
 -   Sign in as "admin" and customize site as needed
 
-\
+<br>
  **Additional Resources**
 
 -   A video tutorial is available at

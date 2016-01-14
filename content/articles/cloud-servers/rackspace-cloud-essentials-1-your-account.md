@@ -34,7 +34,7 @@ preferences.
     account has only one username, and there are no subaccounts. If you
     have multiple team members who need to access the Rackspace Cloud
     account, you must add each one as a member on the [**User
-    Management** page](#usermanagement).\
+    Management** page](#usermanagement).<br>
      Your API key is a unique alphanumeric identifier associated with
     your account. You can use the API key to manage your assets through
     a scripting interface. You can view , copy, or reset your API key in

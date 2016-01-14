@@ -31,7 +31,7 @@ body_format: tinymce
     Fog: [https://github.com/racker/rackspace-monitoring-rb](https://github.com/racker/rackspace-monitoring-rb)
 
 -   Chef cookbook, using the Fog
-    bindings: [https://github.com/racker/cookbook-cloudmonitoring](https://github.com/racker/cookbook-cloudmonitoring)\
+    bindings: [https://github.com/racker/cookbook-cloudmonitoring](https://github.com/racker/cookbook-cloudmonitoring)<br>
       
 -   Contributed Rackspace Monitoring Agent plugins:
     [https://github.com/racker/rackspace-monitoring-agent-plugins-contrib](https://github.com/racker/rackspace-monitoring-agent-plugins-contrib)

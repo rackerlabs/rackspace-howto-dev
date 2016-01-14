@@ -81,7 +81,7 @@ Choosing a data node size
 Cloud Big Data offers four flavors: Small (1.25 TB), Medium (2.5T),
 Large (5T), and XLarge (10 TB). In the IAD region we additionally offer
 the OnMetal IO flavor. For complete specifications and pricing, see
-[http://www.rackspace.com/cloud/big-data/pricing/](http://www.rackspace.com/cloud/big-data/pricing/).\
+[http://www.rackspace.com/cloud/big-data/pricing/](http://www.rackspace.com/cloud/big-data/pricing/).<br>
 
 ![](/knowledge_center/sites/default/files/field/image/CBDexampleBuilds.1.png)
 

@@ -19,7 +19,7 @@ is really no control over the individual files. You cannot, say, recover
 a single file from that image, or update a single file. But, on the
 other hand, having a single file to manage (the image) allows you to
 easily recreate a new server with that identical configuration and
-state.\
+state.<br>
  **Note:** You can learn more about scheduling images from the
 [Scheduled Images
 FAQ](http://www.rackspace.com/knowledge_center/article/scheduled-images-faq).

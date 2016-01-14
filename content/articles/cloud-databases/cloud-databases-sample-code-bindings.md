@@ -109,8 +109,8 @@ o   Flavors
 
 &sect;  List Flavors
 
-&sect;  List Flavor By ID\
-\
+&sect;  List Flavor By ID<br>
+<br>
 
  
 

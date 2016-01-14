@@ -36,7 +36,7 @@ You can display the chat link or prevent the chat link from being
 displayed in your private label Webmail Site by performing the following
 steps in hte Cloud Office Control Panel.
 
-\
+<br>
  *For direct customers:*
 
 1.  Log in to

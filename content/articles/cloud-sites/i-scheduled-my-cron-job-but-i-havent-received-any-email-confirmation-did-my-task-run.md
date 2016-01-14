@@ -35,7 +35,7 @@ appended to the path.
 access your task log which will list any errors, or confirmation that
 the cron job did run.
 
-\
+<br>
  If you have any other questions on scheduling a task, please do not
 hesitate to contact our support team.
 

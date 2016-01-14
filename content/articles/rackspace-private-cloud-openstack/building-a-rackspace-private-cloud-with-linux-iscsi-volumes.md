@@ -112,7 +112,7 @@ After the Rackspace Private Cloud Software is installed on the
 infrastructure, the cinder chef roles must be added to the controller
 and storage nodes. For details on this step, review the following
 article: [Configuring OpenStack Block
-Storage](http://www.rackspace.com/knowledge_center/article/configuring-openstack-block-storage)[\
+Storage](http://www.rackspace.com/knowledge_center/article/configuring-openstack-block-storage)[<br>
 ](http://www.rackspace.com/knowledge_center/article/configuring-openstack-block-storage)
 
 *Note: the storage requirements in the document. All drive devices on

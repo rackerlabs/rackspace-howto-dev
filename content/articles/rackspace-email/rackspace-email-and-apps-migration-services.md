@@ -46,7 +46,7 @@ Begin!](https://cp.rackspace.com/Domains/Tools/Migrations)
 -   Can be accessed from any Internet browser
 -   24/7 Fanatical Support provided by a team of email experts
 
-#### \
+#### <br>
  **Option 2: Assisted migration**
 
 Assisted Migrations are ideal for companies in need of consulting,

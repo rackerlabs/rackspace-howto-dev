@@ -24,32 +24,32 @@ your cloud server while networking is reset on the server.
 ### To Attach (Add) a Network:
 
 1.  Log in to the Cloud Control Panel at
-    [mycloud.rackspace.com](http://mycloud.rackspace.com).\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/attach-2.png)\
+    [mycloud.rackspace.com](http://mycloud.rackspace.com).<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/attach-2.png)<br>
       
 2.  On the Cloud Servers page, click the server to which  you want to
-    attach a network. The details page for that server is displayed.\
-     \
+    attach a network. The details page for that server is displayed.<br>
+     <br>
       
-3.  Scroll to the Networks section and click Add Network.\
-     \
+3.  Scroll to the Networks section and click Add Network.<br>
+     <br>
      A pop-up box lists the networks that you can attach to this
-    server.\
-     \
+    server.<br>
+     <br>
       
-4.  Select a network and click Add Network.    \
-     \
+4.  Select a network and click Add Network.    <br>
+     <br>
      You can also create a new cloud network and attach it to the
-    server..\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/attach-3.png)\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/attach-4.png)\
-     \
+    server..<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/attach-3.png)<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/attach-4.png)<br>
+     <br>
      After the network is attached, it is displayed in the list of
-    networks for that server.\
-     \
+    networks for that server.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/attach-5.png)
 
 ### To Detach (Disconnect) a Network:
@@ -60,20 +60,20 @@ Public or ServiceNet interfaces from cloud servers.
 [http://docs.rackspace.com/servers/api/v2/cn-devguide/content/networks.html](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/networks.html)
 
 1.  Log in to the Cloud Control Panel at
-    [mycloud.rackspace.com](http://mycloud.rackspace.com).\
-     ![](/knowledge_center/sites/default/files/field/image/attach-6.png)\
-     \
-     \
-     ![](/knowledge_center/sites/default/files/field/image/attach-7.png)\
+    [mycloud.rackspace.com](http://mycloud.rackspace.com).<br>
+     ![](/knowledge_center/sites/default/files/field/image/attach-6.png)<br>
+     <br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/attach-7.png)<br>
       
 2.  On the Cloud Servers page, click the server from which you want to
-    detach a network.\
-     \
-     The details page for that server is displayed.\
+    detach a network.<br>
+     <br>
+     The details page for that server is displayed.<br>
       
 3.  In the Networks section, click the gear icon next to the network
-    that you want to detach.\
-     \
+    that you want to detach.<br>
+     <br>
       
 4.  In the pop-up box, click Disconnect Network.
 

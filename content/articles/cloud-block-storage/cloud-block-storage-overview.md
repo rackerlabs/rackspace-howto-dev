@@ -24,8 +24,8 @@ Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage and Cloud Backup
 options on General Purpose servers, see [Best Practices for Backing Up
 Your Data: Cloud Block Storage versus Cloud
-Backup](/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).\
- \
+Backup](/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).<br>
+ <br>
  There are two types of volumes you can attach to your server:
 
 -   A standard speed option for customers who just need additional
@@ -45,7 +45,7 @@ On This Page:
 -   [Cloud Block Storage Terminology](#cbs-terminology)
 -   [Cloud Block Storage Getting Started Table of Contents](#cbs-gs-toc)
 
-### \
+### <br>
  Some Uses of Cloud Block Storage
 
 -   Mount a drive to a server to scale storage without paying for more
@@ -70,7 +70,7 @@ Started Guide walks you through Control Panel access. If you prefer to
 interact with Cloud Block Storage programmatically, you may view the
 [Developer
 Guide](http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html),
-located in [docs.rackspace.com](http://docs.rackspace.com/api/).\
+located in [docs.rackspace.com](http://docs.rackspace.com/api/).<br>
   
 
 ### Limits of Cloud Block Storage
@@ -128,7 +128,7 @@ In this Getting Started Guide, you will learn how to:
 -   [Attach a Cloud Block Storage Volume to an OnMetal
     Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 
-\
+<br>
  Let's get started and [Create your first
 volume](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 

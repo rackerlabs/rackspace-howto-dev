@@ -38,10 +38,10 @@ environment. This is intended to allow customers proper time to test
 functional with existing code and make any adjustments necessary to
 function under the new updates.
 
-\
+<br>
  **Critical Updates**
 
-\
+<br>
  From time to time Microsoft determines that an update is too critical
 to wait for the regular update release (for example zero days exploit
 vulnerabilities). These updates are handled by Rackspace on a case by

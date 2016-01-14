@@ -71,22 +71,22 @@ folder.
 As an admin, you can create a new folder by performing the following
 steps:
 
-1.  Click **Create Folder**.\
+1.  Click **Create Folder**.<br>
      A popup dialog box is displayed.
-2.  Name the folder.\
+2.  Name the folder.<br>
      This is the name that will appear in the list of folders.
 3.  Select the type of folder.
 4.  To mail-enable the folder, select the **Enabled** check box.
 5.  Specify or edit the display name.
 6.  Specifiy or edit the email address for the folder.
 7.  Specify or edit the reply-to address.
-8.  Click **Save**to create the folder.\
+8.  Click **Save**to create the folder.<br>
      ![](/knowledge_center/sites/default/files/field/image/Create_a.png)
 
 ### **Delete a Folder**
 
 1.  In the list on the Folders page, click the gear icon next to the
-    folder that you want to delete.\
+    folder that you want to delete.<br>
      ![](/knowledge_center/sites/default/files/field/image/delete_a.png)
 2.  From the menu, select **Delete**.
 3.  In the confirmation pop up box, click **Delete Folder**, to
@@ -102,9 +102,9 @@ From the list of public folders, you can delete multiple folders at once
     the check box next to the **Folder Name** label at the top of the
     list.
 2.  Click the gear icon next to the **Folder Name** label at the top of
-    the list and select **Delete**.\
+    the list and select **Delete**.<br>
      The delete dialog pops up to confirm that you are about to delete
-    the selected folders.\
+    the selected folders.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/bulk%20delete2.png)
 3.  In the confirmation popup box, click **Delete Folders** to
@@ -115,7 +115,7 @@ From the list of public folders, you can delete multiple folders at once
 1.  In the list of folders on the Folders page, click the gear icon next
     to the folder that you want to rename.
 2.  Select **Rename**, and then enter a new name for the folder.
-3.  Click **Rename**.\
+3.  Click **Rename**.<br>
      ![](/knowledge_center/sites/default/files/field/image/rename_a.png)
 
 ### **View and create subfolders (child folders)**
@@ -161,7 +161,7 @@ You can crat a subfolder in the following ways:
 #### **Create a subfolder from the subfolder list page**
 
 1.  In the folder list, click the name of the folder for which you want
-    to create a subfolder.\
+    to create a subfolder.<br>
      The subfolder view is displayed
 2.  Click **Create Subfolder**.
 3.  In the **Folder Name** field, specify a name for the subfolder.

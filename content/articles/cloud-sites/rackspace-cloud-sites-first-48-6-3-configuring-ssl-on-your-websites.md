@@ -132,13 +132,13 @@ certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/273
     click the **Security** tab. 
 4.  In the **Permissions for Viewing Your Website** section, click
     **Enter Certificate File**.
-5.  Enter the certificate information in the **Certificate** field.\
-     \
+5.  Enter the certificate information in the **Certificate** field.<br>
+     <br>
      **Note**: Some vendors provide certificates in text format in an
     email or on their website, which makes copy and pasting the
     certificate easy. Other vendors may provide certificates as a
     **.crt** file. You can open this file in a plain text editor and
-    retrieve the text for the certificate there.\
+    retrieve the text for the certificate there.<br>
       
 6.  If you have any SSL intermediate certificates, copy and paste them
     into the **Intermediate Certificate** field.

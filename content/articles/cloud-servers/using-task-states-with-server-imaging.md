@@ -171,13 +171,13 @@ fragment is pretty primitive, you have to control-C to stop the script.
     DETAIL_FIL=
 
     # verify that the server exists
-    API_RESP_CODE=$(curl -X GET \
-     -k -s \
-     -H "X-Auth-User: $API_USER" \
-     -H "X-Auth-Token: $API_AUTH_TOKEN" \
-     -H "Accept: application/json" \
-     -w "%{http_code}" \
-     -o $DETAIL_FIL \
+    API_RESP_CODE=$(curl -X GET <br>
+     -k -s <br>
+     -H "X-Auth-User: $API_USER" <br>
+     -H "X-Auth-Token: $API_AUTH_TOKEN" <br>
+     -H "Accept: application/json" <br>
+     -w "%{http_code}" <br>
+     -o $DETAIL_FIL <br>
      "$API_ENDPOINT/servers/$API_SERVER")
     if [ "$API_RESP_CODE" != "200" ] ; then
       echo "[error] can't find server $API_SERVER"
@@ -185,12 +185,12 @@ fragment is pretty primitive, you have to control-C to stop the script.
     fi
 
     while [ 0 ] ; do
-       API_RESP_CODE=$(curl -s -k -X GET \
-        -H "X-Auth-User: $API_USER" \
-        -H "X-Auth-Token: $API_AUTH_TOKEN" \
-        -H "Accept: application/json" \
-        -w "%{http_code}" \
-        -o $DETAIL_FIL \
+       API_RESP_CODE=$(curl -s -k -X GET <br>
+        -H "X-Auth-User: $API_USER" <br>
+        -H "X-Auth-Token: $API_AUTH_TOKEN" <br>
+        -H "Accept: application/json" <br>
+        -w "%{http_code}" <br>
+        -o $DETAIL_FIL <br>
       "$API_ENDPOINT/servers/$API_SERVER")
       if [ "$API_RESP_CODE" == "404" ] ; then
         echo "[info] server $API_SERVER has disappeared!"

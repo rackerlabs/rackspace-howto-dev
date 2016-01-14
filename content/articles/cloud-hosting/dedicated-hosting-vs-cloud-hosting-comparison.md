@@ -168,8 +168,8 @@ Red Hat Enterprise Linux
 
 Scientific Linux
 
-Ubuntu\
-\
+Ubuntu<br>
+<br>
 
 Other operating systems
 

@@ -170,7 +170,7 @@ service](https://www.rackspace.com/knowledge_center/article/create-a-rackspace-c
 ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.28.59%20AM.png)
 
 When you click **Create Service**, the process is started to create the
-SAN certificate. You can follow the process on the CDN Service\
+SAN certificate. You can follow the process on the CDN Service<br>
  page in the **Domains** section. Below you see the **Status** is
 **Certificate Pending**.
 

@@ -30,7 +30,7 @@ panel](https://apps.rackspace.com/?cp), and perform the following steps:
 
 1.  At the top of the page, click **My Account**
 2.  In the **Administrators** section, click **API Keys**.
-3.  Click **Generate New Keys** to create new API keys.\
+3.  Click **Generate New Keys** to create new API keys.<br>
      **Warning:**Existing keys previously being used, generating new
     keys will break applications that are using the existing keys.
 

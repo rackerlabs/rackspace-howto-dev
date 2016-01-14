@@ -16,35 +16,35 @@ account administrators only.
 Account administrators have the ability to create a login message for
 their users to see when they log in to their Archive
 at **https://domaincom.archivesrvr.com**. Use the following steps to
-create a login message for Archive Manager users.\
+create a login message for Archive Manager users.<br>
  **Note**: Only one active message can be shown on the login screen at a
 time.
 
 1.  Log in to the [Archive
-    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).\
+    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).<br>
      For more information, see [Log in to the Archive
-    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).\
+    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).<br>
       
 2.  In the upper-right corner of the window, click **Admin User**to
-    access the Admin User dashboard.\
+    access the Admin User dashboard.<br>
      **Note**: There are three dashboards for top-level administrators:
-    **Search,** **Admin **and **Admin User.**\
+    **Search,** **Admin **and **Admin User.**<br>
       
-3.  On the **Settings** tab, click **Login Messages**.\
+3.  On the **Settings** tab, click **Login Messages**.<br>
       
-4.  On the right side of the window, click **New Message**.\
+4.  On the right side of the window, click **New Message**.<br>
       
-5.  Enter the body of the message in the blank box next to **Message**.\
+5.  Enter the body of the message in the blank box next to **Message**.<br>
       
 6.  Click the calendar icon next to **Starts on** and select a start
-    date. \
+    date. <br>
      **Note**: The dates are in military time format by default. This
-    format can be modified.\
+    format can be modified.<br>
       
 7.  Click the calendar icon next to **Expires On**and select an end
-    date**.**\
+    date**.**<br>
       
-8.  Click **Create**.\
+8.  Click **Create**.<br>
       
 
  

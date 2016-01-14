@@ -244,8 +244,8 @@ Yes
 
 ****Compatible****
 
-**Maximum Throughput\*\*\*\* \
- (Cloud\<-\>Dedicated)\
+**Maximum Throughput\*\*\*\* <br>
+ (Cloud\<-\>Dedicated)<br>
  (Cloud\<-\>Internet)**
 
 **ASA 5505 Sec+**
@@ -378,7 +378,7 @@ Yes
 
 Yes
 
-In: 500 Mbps \
+In: 500 Mbps <br>
  Out: 500 Mbps
 
 **F5 3600**
@@ -391,14 +391,14 @@ Yes
 
 Yes
 
-In: 1 Gbps \
+In: 1 Gbps <br>
  Out: 1 Gbps
 
-**\* License upgrade may be required to reach Maximum SSL TPS**\
+**\* License upgrade may be required to reach Maximum SSL TPS**<br>
  **\*\* We recommend utilizing a Cisco ASA as the RackConnect Edge
-Device Type**\
+Device Type**<br>
  **\*\*\* Maximum Cloud Servers&rsquo; Guidelines based on internal testing.
-Actual results may vary by production load and Edge Device Type.**\
+Actual results may vary by production load and Edge Device Type.**<br>
  **\*\*\*\*  RackConnect Throughput limited by RackConnect Switching
 Infrastructure connectivity: Maximum of 1 Gbps Theoretical**
 

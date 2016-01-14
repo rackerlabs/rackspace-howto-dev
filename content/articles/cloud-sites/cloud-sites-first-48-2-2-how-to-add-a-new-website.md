@@ -62,7 +62,7 @@ Cloud Control Panel.
     without registering it
     -   **NOTE:** *If you choose not to register your domain name, it
         will not be accessible for pubic viewing on the Internet.*
--   Once you have made your selection, click **Next Step** to proceed\
+-   Once you have made your selection, click **Next Step** to proceed<br>
       
 
 **Domain Name Already Exists**
@@ -95,7 +95,7 @@ default technology and any additional features you may need such as a
 database. 
 
 -   The next page will offer you 3 different options. The first option
-    will allow you to add Microsoft SQL Server Storage space. \
+    will allow you to add Microsoft SQL Server Storage space. <br>
       
 
 [![Click here to view full size

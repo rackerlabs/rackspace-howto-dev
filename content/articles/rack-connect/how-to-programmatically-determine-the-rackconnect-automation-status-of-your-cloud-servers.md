@@ -113,7 +113,7 @@ the following articles:
  
 -
 
-\
+<br>
  Utilizing the First Generation Cloud Servers API to query your Cloud Servers' MetaData
 ---------------------------------------------------------------------------------------
 
@@ -139,7 +139,7 @@ RackConnect:
 
     "metadata":{"rackconnect_automation_feature_configure_network_stack":"ENABLED","rackconnect_automation_status":"DEPLOYED","rackconnect_automation_feature_provison_public_ip":"ENABLED","rackconnect_automation_feature_manage_software_firewall":"ENABLED"
 
-### \
+### <br>
  Obtaining the metadata information via the First Generation Cloud Servers API (Examples)
 
 **Authenticate and obtain an X-Auth-Token:**
@@ -200,25 +200,25 @@ the Cloud Control Panel to provision servers -- but may require changes
 for any customers who performed automated processes or configuration on
 their servers immediately after the RackConnect automation completed.
 
-**When is this change going to take place?**\
+**When is this change going to take place?**<br>
  This change has already been implemented.
 
-**What was changed?**\
+**What was changed?**<br>
  For RackConnect customers with the Managed Operations service level,
 there are two distinct automation routines that run after a Cloud Server
 is built. Previously, automation for Managed Operations ran first,
 followed by RackConnect automation. We reversed the order of automation
 so that RackConnect runs first.
 
-**Why was this change made?**\
+**Why was this change made?**<br>
  We determined that we can reduce post-build automation failures and
 improve your RackConnect experience by making this change. By allowing
 RackConnect automation to run first, we can more quickly and more
 reliably deliver a RackConnect Cloud Server to you.
 
-**Who does this affect?**\
+**Who does this affect?**<br>
  This change affected all RackConnect customers with the Managed
-Operations service level.\
+Operations service level.<br>
  For the limited set of customers who leverage their own configuration
 management scripts, please note that RackConnect automation runs first,
 followed by Managed Operations automation. We highly recommend that you
@@ -229,12 +229,12 @@ any post-build configuration tasks you wish to run.
 **How can I tell when Managed Operations post-build automation is
 complete?**
 
-For Windows Cloud Servers:\
+For Windows Cloud Servers:<br>
  Upon successful completion, the following file will be created:
 
     C:\windows\temp\rs_managed_cloud_automation_complete.txt
 
-For Linux Cloud Servers:\
+For Linux Cloud Servers:<br>
  Upon successful completion, the following file will be created:
 
     /tmp/rs_managed_cloud_automation_complete
@@ -253,7 +253,7 @@ the metadata key value "**rax\_service\_level\_automation**".  The
 Error", depending on the current status of the Managed Cloud post-build
 automation process.
 
-**Who can I contact if I have any questions?**\
+**Who can I contact if I have any questions?**<br>
  Should you have any questions about RackConnect, Managed Operations, or
 this change, please don't hesitate to contact your Rackspace Support
 team.

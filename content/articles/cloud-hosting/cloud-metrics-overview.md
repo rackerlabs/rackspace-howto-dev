@@ -67,11 +67,11 @@ Rackspace Metrics consists of two components: **metrics ingestion** and
     Metrics can start using Rackspace Metrics by changing only a few
     lines of configuration in their existing metrics collection systems.
     You can also choose to leave your existing metrics storage engine
-    running for a while to compare against Rackspace Metrics.\
-     \
+    running for a while to compare against Rackspace Metrics.<br>
+     <br>
      The Metrics Ingestion API is currently in the [Early Access
     Program](http://docs.rackspace.com/cmet/api/v1.0/cmet-gettingstarted/content/Early_Access_Program.html)
-    (EAP).\
+    (EAP).<br>
       
 -   **Metrics query**: Rackspace Metrics enables users to retrieve
     metrics data via a public API. Through its Query API, Rackspace
@@ -79,8 +79,8 @@ Rackspace Metrics consists of two components: **metrics ingestion** and
     Control Panel and Cloud Intelligence for data collected through
     Cloud Monitoring. In addition, Rackspace Metrics can also integrate
     with Graphite and Grafana. See the following blog post for details:
-    [http://www.rackspace.com/blog/use-grafana-for-all-of-your-monitoring-data-rackspace-or-otherwise/](http://www.rackspace.com/blog/use-grafana-for-all-of-your-monitoring-data-rackspace-or-otherwise/)\
-     \
+    [http://www.rackspace.com/blog/use-grafana-for-all-of-your-monitoring-data-rackspace-or-otherwise/](http://www.rackspace.com/blog/use-grafana-for-all-of-your-monitoring-data-rackspace-or-otherwise/)<br>
+     <br>
      The Rackspace Metrics Query API is currently in Limited
     Availability.
 

@@ -23,7 +23,7 @@ from Rackspace, use the following steps:
     Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
 2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
 3.  Click on the domain name that you want to renew.
-4.  On the **DNS** tab, click on the **Renew** button.\
+4.  On the **DNS** tab, click on the **Renew** button.<br>
      If the **Renew** button is not visible, see the note that follows
     these steps.
 5.  Select the term (in years) that you want to renew for, and then

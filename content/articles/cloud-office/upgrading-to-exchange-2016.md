@@ -56,7 +56,7 @@ links:
 -   Rackspace unified login -
     [https://apps.rackspace.com](https://apps.rackspace.com)
 -   Direct login -
-    [https://mex09.emailsrvr.com](https://mex08.emailsrvr.com)\
+    [https://mex09.emailsrvr.com](https://mex08.emailsrvr.com)<br>
       
 
 ### Public folders
@@ -149,7 +149,7 @@ The reconfiguration prompt will occur in the following situations:
 -   The user is using Outlook 2010 or 2013.
 -   The user's profile was set up using Autodiscover.
 -   The Autodiscover CNAME points to **autodiscover.emailsrvr.com** and
-    the profile was configured using Autodiscover. \
+    the profile was configured using Autodiscover. <br>
       
 
 **Is there any downtime?**

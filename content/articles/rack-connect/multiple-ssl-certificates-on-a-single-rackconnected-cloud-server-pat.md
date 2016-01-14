@@ -24,8 +24,8 @@ this is when you are hosting multiple SSL sites on a single Cloud Server
 and are not able to use a wildcard certificate.  Since only one private
 (10.x) address is allowed on each Cloud Server, this setup can be
 accomplished leveraging PAT (Port Address Translation) on your network
-device versus NAT.\
- \
+device versus NAT.<br>
+ <br>
  For example, if you have a single Cloud Server that you want to use to
 host https:// www.\<example-domain\>.com and https://
 www.\<example-domain-2\>.com, we could setup your network device as
@@ -44,7 +44,7 @@ Apache or IIS) to listen on ports 8443 and 8444 (they would be able to
 distinguish which site the encrypted traffic was destined for based on
 the unique port number).
 
-\
+<br>
  Please contact your Dedicated Support team for assistance with setting
 up PAT on your network device.
 

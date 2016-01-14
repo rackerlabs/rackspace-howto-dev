@@ -14,16 +14,16 @@ You can create a folder in Microsoft Outlook that connects to your
 archived mail.
 
 1.  Copy the URL of your archive login, for example
-    [**https://domainnamecom.archivesrvr.com/login/new**](https://domainnamecom.archivesrvr.com/login/new).\
+    [**https://domainnamecom.archivesrvr.com/login/new**](https://domainnamecom.archivesrvr.com/login/new).<br>
      **Note: **You need to log out of the **Archive Manager** first,
-    then copy the URL from your web browser.\
+    then copy the URL from your web browser.<br>
       
-2.  Replace **/login/new **with **/outlook/user**.\
+2.  Replace **/login/new **with **/outlook/user**.<br>
       
-3.  Log in to Microsoft Outlook.\
+3.  Log in to Microsoft Outlook.<br>
       
 4.  In Outlook, create a new folder by right-clicking **Inbox** and
-    selecting **Create New Folder**.\
+    selecting **Create New Folder**.<br>
       
 5.  Edit the name of your new folder by right-clicking **New Folder**
     and selecting **Properties**and name the folder to your choice).
@@ -37,7 +37,7 @@ archived mail.
 
     ![](/knowledge_center/sites/default/files/field/image/Integrate%20Archiving%20with%20Outlook%201A.png)
 
-7.  Open your newly integrated Microsoft Outlook folder. \
+7.  Open your newly integrated Microsoft Outlook folder. <br>
      You should now be directly connected to your personal archive. 
 
  

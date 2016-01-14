@@ -29,7 +29,7 @@ Upload and connect to your content
 
 1.  Log in to the Cloud Control Panel.
 2.  In the Cloud Files section, create a new container and select
-    **Public (Enabled CDN)**for the type.\
+    **Public (Enabled CDN)**for the type.<br>
      **Tip**: Creating separate containers for your image and HTML files
     can be helpful.
 3.  Click **Upload Files** and select any images or additional content
@@ -37,7 +37,7 @@ Upload and connect to your content
 4.  Click the action gear next to each of the uploaded items, select
     **View All Links** and record  the URLs for each item.
 5.  In a text editor, create a sample HTML page that lays out the basic
-    form of your website. Following is an example:\
+    form of your website. Following is an example:<br>
 
     ![](/knowledge_center/sites/default/files/field/image/sitelayoutpage_0.png)
 6.  Incorporate the public URLs of your images and additional content
@@ -53,7 +53,7 @@ Upload and connect to your content
 9.  Point the browser to the URL of the site layout page that you just
     created (for example,
     `http://www.example.com.websitetestlink.com/index.html)`  and verify
-    that the image is served.\
+    that the image is served.<br>
      The image is being served from Cloud Files through the Akamai CDN.
 
 

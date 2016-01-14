@@ -41,7 +41,7 @@ Edit spam filtering for an email account
 1.  Log in to [webmail](http://mail.emailsrvr.com) for the email
     account.
 2.  Click the **Settings** link in the top-right corner.
-3.  Click the **Manage spam options** link in the left menu.\
+3.  Click the **Manage spam options** link in the left menu.<br>
      You can also manage your white/black list there.
 
 For more information about spam filters, see [Spam Settings for

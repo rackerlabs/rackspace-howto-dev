@@ -75,9 +75,9 @@ folder.
 As an admin, you can create a new folder by performing the following
 steps:
 
-1.  Click**Create Folder**.\
+1.  Click**Create Folder**.<br>
      A popup dialog box is displayed.
-2.  Name the folder.\
+2.  Name the folder.<br>
      This is the name that will appear in the list of folders.
 3.  Select the type of folder.
 4.  To mail-enable the folder, select the **Enabled**check box.
@@ -104,7 +104,7 @@ From the list of public folders, you can delete multiple folders at once
     the check box next to the **Folder Name** label at the top of the
     list.
 2.  Click the gear icon next to the **Folder Name** label at the top of
-    the list and select **Delete**.\
+    the list and select **Delete**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/bulk%2520delete2.png)
 3.  In the confirmation popup box, click **Delete Folders** to
@@ -151,7 +151,7 @@ You can create a subfolder in the following ways:
 #### Create a subfolder from the subfolder list page
 
 1.  In the folder list, click the name of the folder for which you want
-    to create a subfolder.\
+    to create a subfolder.<br>
      The subfolder view is displayed.
 2.  Click **Create Folder**.
 3.  In the **Folder Name** field specify a name for the subfolder.
@@ -174,7 +174,7 @@ You can find a specific folder in the following ways:
     subfolder caller **Sales Force** but you can recall only that it has
     the word *sales* in it, you can search the term *sales*. The
     application returns all folders with the word *sales* in their
-    name.\
+    name.<br>
      ![](/knowledge_center/sites/default/files/field/image/search_0.png)
 
 Edit mail settings
@@ -190,7 +190,7 @@ steps.
 4.  Specify or edit the display name.
 5.  Specify or edit the email address for the folder.
 6.  Select or edit the reply-to address.
-7.  Click **Save**.\
+7.  Click **Save**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/cupcakesandkittens_a.png)
 

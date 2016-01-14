@@ -40,13 +40,13 @@ To edit the file in vim, type the following command
        vim deployment_key.txt
 
 After the editor starts, press 'i' to turn on insert mode. Then, paste
-the private key into the file.\
+the private key into the file.<br>
  Note that you need to include the **BEGIN** and **END** lines to use
-the private key.\
+the private key.<br>
  ![](/knowledge_center/sites/default/files/field/image/Linux2.png)
 
 To save your changes, press Escape. Then, type &lsquo;:wq&rsquo; to write the file
-and return to the command line.\
+and return to the command line.<br>
  After saving the file, run the following command to change the file
 permissions to 600 to secure the key. You can also set them to 400.
 ***This step is required***:

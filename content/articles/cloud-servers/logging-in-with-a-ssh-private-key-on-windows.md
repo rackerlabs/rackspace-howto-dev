@@ -67,8 +67,8 @@ you login to a server with this key.
 
 We strongly suggest keeping the default settings as they are, so when
 you're prompted to "Enter a file in which to save the key", just press
-**Enter** to continue.\
- \
+**Enter** to continue.<br>
+ <br>
  ![](/knowledge_center/sites/default/files/field/image/Windows8.png)
 
  

@@ -29,13 +29,13 @@ GB.
 
 The process is divided into the following steps:
 
-1.  [Set up a Cloud Databases instance and install WordPress](#I_setup)\
+1.  [Set up a Cloud Databases instance and install WordPress](#I_setup)<br>
       
     -   [Set up a Cloud Database](#I_clouddb)
-    -   [Install WordPress](#I_installwp)\
+    -   [Install WordPress](#I_installwp)<br>
           
 
-2.  [Configure WordPress](#II_WPconfig)\
+2.  [Configure WordPress](#II_WPconfig)<br>
       
     -   [Adjust the WordPress address URL](#II_adjURL)
 
@@ -97,7 +97,7 @@ the one-click installer.
 In the WordPress Administration console, go to **Settings** and change
 the **WordPress Address** (**URL**) value to use
 **http://*yourDomain***. Remove the **www** from the URL if it's not
-already set this way. For example: **http://example.com**e.\
+already set this way. For example: **http://example.com**e.<br>
   
 
  ![](/knowledge_center/sites/default/files/field/image/WP_url_configuration.PNG)
@@ -118,7 +118,7 @@ already set this way. For example: **http://example.com**e.\
 1.  In WordPress, go to the admin area, click the **Tools** menu, and
     then click**Network Setup**. 
 
-    ![](/knowledge_center/sites/default/files/field/image/WP_networksetup_menu.PNG)\
+    ![](/knowledge_center/sites/default/files/field/image/WP_networksetup_menu.PNG)<br>
      **Note:** If you are unable to see the Network Setup option, ensure
     that the **wp-config.php** file has been set to allow WordPress
     Multisite, as described in the previous step.
@@ -232,7 +232,7 @@ the WordPress MU Domain Mapping plug-in, as follows:
 3.  In the WordPress Administration console, click **Settings \> Domain
     Mapping**.
 4.  Set the **Server IP Address**value to the current site's IP
-    address.\
+    address.<br>
      **Note:**You can find the site's IP address in the Cloud Sites
     Control Panel, on the **General Settings** tab or the **DNS** tab
     (for SSL-enabled sites).
@@ -272,7 +272,7 @@ similar to
 6.  From the list, click the site you just added.
 
 7.  Note the number that follows after **?id=**. This is the site's
-    **ID**number, and you will need it in the next steps.\
+    **ID**number, and you will need it in the next steps.<br>
      ![](/knowledge_center/sites/default/files/field/image/WP_siteidURL.PNG)
 
 8.  In the navigation pane, click on **Settings \> Domains**.
@@ -284,7 +284,7 @@ similar to
 
     ![](/knowledge_center/sites/default/files/field/image/WP_NewDomainID.PNG)
 
-11. Click **Save**.\
+11. Click **Save**.<br>
      **Note***:* It is necessary to use the domain without the **www**.
     If you are using a subdomain, use only the subdomain (for example,
     **subdomain.domain.com**).

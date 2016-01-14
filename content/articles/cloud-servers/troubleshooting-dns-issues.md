@@ -16,8 +16,8 @@ system of servers that host the resource records that are used to find
 where a website is hosted or where to deliver an e-mail. To update these
 records, you need to know who is hosting them and how to access them. To
 determine why you are being directed to the wrong server, you need to
-know how to do a lookup.\
- \
+know how to do a lookup.<br>
+ <br>
  Your registrar controls where a lookup is directed when someone tries
 to check a record related to your domain. If you want to change where
 your records are hosted, you must update the location with your
@@ -38,7 +38,7 @@ Linux and Windows. The output is essentially identical on both systems.
     extract it, open the command prompt and navigate to the folder where
     it is located before running it.
 
-\
+<br>
  The formatting of the output from whois databases is not standardized
 because the information is distributed across a number of sources.
 However, the responses should contain similar information, such as
@@ -99,8 +99,8 @@ shows the whois information for rackspace.co.uk:
     limits. The data is provided on an 'as-is' basis and may lag behind the
     register. Access may be withdrawn or restricted at any time. 
 
-\
- \
+<br>
+ <br>
  Important sections of the output for troubleshooting are as follows:
 
 -   **Registrant:** The owner of the domain (if this is your domain,
@@ -119,8 +119,8 @@ shows the whois information for rackspace.co.uk:
     which you registered the domain provides this hosting. However, you
     can update this location with them to point to another location. For
     example, you can use Rackspace Cloud DNS to host your records. If
-    lookups aren't going where you expect, this may be the cause.\
-     \
+    lookups aren't going where you expect, this may be the cause.<br>
+     <br>
      After you have checked your domain with whois, you should be able
     to confirm that the domain is registered to you, that it has not
     expired, and that the name server records point where you expect. If
@@ -171,8 +171,8 @@ contains a list of hostnames and IP addresses that your computer checks,
 generally before doing a DNS lookup. nslookup and dig do not check this
 list of hostnames. So, if the IP address your application (for examplet,
 ping) is using does not match what is listed in the look up response,
-this mismatch may be the cause.\
- \
+this mismatch may be the cause.<br>
+ <br>
  The locations of the files are as follows:
 
 -   On Linux, host file is **/etc/hosts**.

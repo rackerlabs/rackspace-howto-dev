@@ -16,11 +16,11 @@ Outlook 2010 complete the following steps:
 1.  In the bottom left corner of the Outlook Navigation Pane, click
     **Calendar** . 
 
-    ![](/knowledge_center/sites/default/files/field/image/4094.1a.png)\
+    ![](/knowledge_center/sites/default/files/field/image/4094.1a.png)<br>
      The calendar appears in the Outlook window.
 
 2.  In the left-hand navigation pane, right-click the calendar that you
-    want to share.\
+    want to share.<br>
       
 3.  In the menu, click **Share** \> **Share Calendar**.
 
@@ -33,7 +33,7 @@ Outlook 2010 complete the following steps:
 
     ![](/knowledge_center/sites/default/files/field/image/4094.3b.png)
 
-5.  Click **Send**.\
+5.  Click **Send**.<br>
      The recipient will receive a sharing invitation with a link that
     they can click to add the shared calendar to Outlook. 
 

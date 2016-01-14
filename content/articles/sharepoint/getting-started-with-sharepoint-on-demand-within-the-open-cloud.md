@@ -58,7 +58,7 @@ your **Command Prompt**.
     netsh advfirewall firewall add rule name="Open Port 443" dir=in action=allow protocol=TCP localport=443
 
 Optionally on Windows 2012 you can launch the Windows PowerShell from
-the task bar and enter the following string:\
+the task bar and enter the following string:<br>
   
 
     New-NetFirewallRule -DisplayName "Open Port 443" -Action Allow -Direction Inbound -Enabled True -LocalPort 443 -Protocol TCP

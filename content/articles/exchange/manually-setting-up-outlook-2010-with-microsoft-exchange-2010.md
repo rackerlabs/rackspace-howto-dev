@@ -65,7 +65,7 @@ Authentication**.  Click **OK** to close the proxy settings window. Then
 ![](http://c4413634.r34.cf2.rackcdn.com/(E%26A)Outlook2010WithExchange20102.png) 
 
 8. Select the Check Name box in the Connect window, enter the password
-that your administrator assigned to\
+that your administrator assigned to<br>
  your email account and select the OK button.
 
 *Note: You may receive a pop-up asking you to select your mailbox from a

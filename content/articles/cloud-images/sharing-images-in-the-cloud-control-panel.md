@@ -150,7 +150,7 @@ Before you share an image, consider the following questions:
 ### Share an image {#sharing-process}
 
 1.  When your image is ready to share, use one of the following methods
-    in the Control Panel to share it:\
+    in the Control Panel to share it:<br>
      In the Saved Images list (**Servers \> Saved Images**), click the
     gear icon to the left of the image name and then select **Share
     Image**.

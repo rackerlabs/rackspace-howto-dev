@@ -25,9 +25,9 @@ You can use the OpenStack Cinder API to see your current block storage
 quota. The following is an example of the cURL request to use:
 
     curl https://dfw.blockstorage.api.rackspacecloud.com/v1/<Customer Number>/os-quota-sets/<
-                -H "X-Auth-Project-Id: <Customer Number>" \
-                -H "User-Agent: python-cinderclient" \
-                -H "Accept: application/json" \
+                -H "X-Auth-Project-Id: <Customer Number>" <br>
+                -H "User-Agent: python-cinderclient" <br>
+                -H "Accept: application/json" <br>
                 -H "X-Auth-Token: <My Auth Token>"
 
 The result of this request follows:

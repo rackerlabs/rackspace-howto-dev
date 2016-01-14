@@ -42,8 +42,8 @@ The Outlook Web Access (OWA) tool will be available via two links:
 -   Rackspace Unified Login -
     [https://apps.rackspace.com](https://apps.rackspace.com)
 -   Direct Login -
-    [https://mex08.emailsrvr.com](https://mex08.emailsrvr.com)\
-     \
+    [https://mex08.emailsrvr.com](https://mex08.emailsrvr.com)<br>
+     <br>
      Note: Exchange 2013 Upgrades completed prior to January 27, 2015
     still use Direct Login -
     [https://mex06.emailsrvr.com](https://mex06.emailsrvr.com)
@@ -61,7 +61,7 @@ folders on Exchange 2013 will have the following limitations:
     in Outlook for 2013 customers
 
 -   User permissions (such as granting read/edit/delete access) is not
-    available\
+    available<br>
      Note: For a complete list of public folder limitations, please
     review the migration plan provided.
 
@@ -140,7 +140,7 @@ Frequently Asked Questions
     -   *The user is using Outlook 2007, 2010 or 2013.*
     -   *The user set up their profile using Autodiscover*
     -   *The Autodiscover CNAME points to autodiscover.emailsrvr.com and
-        the profile was configured using Autodiscover. *\
+        the profile was configured using Autodiscover. *<br>
           
 
 4.  **Is there any downtime?**

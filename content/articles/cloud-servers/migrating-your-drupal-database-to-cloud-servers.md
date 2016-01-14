@@ -61,7 +61,7 @@ because it gives you a better, more reliable connection. The Console
 uses your web browser and may not always be compatible with your current
 environment -- it is considered a last resort method of connecting.
 
-\
+<br>
  For our tutorial we will assume that you are using SSH to connect to
 your server. Each operating system has it's own way to connecting either
 native or with a helper application. If you are using Windows you can
@@ -69,11 +69,11 @@ use an application called *PuTTY* which can be freely downloaded on the
 Internet. If you are on a Macintosh or Linux-based computer you can use
 the *ssh* application that comes pre-installed with the computer.
 
-\
+<br>
  (You can access the *ssh* application on your Macintosh through
 Terminal (Macintosh HD -\> Utilities -\> Terminal)
 
-\
+<br>
  To connect from your Windows computer with PuTTY please use the
 following article to help you: [Connecting with
 PuTTY](/knowledge_center/index.php/Logging_in_via_Putty "Logging in via Putty")
@@ -147,7 +147,7 @@ the Internet. The firewall that is built into your server is called
 *iptables* and works very well. By default Ubuntu does not have any
 firewall rules configured so we will need to configure them.
 
-\
+<br>
  We will configure our rules based on the following assumptions:
 
 -   We will accept all traffic that is established
@@ -156,7 +156,7 @@ firewall rules configured so we will need to configure them.
 -   We will accept incoming HTTP traffic (port 80/tcp)
 -   We will drop everything else sent to us
 
-\
+<br>
  Let's begin adding rules to our firewall and get secured! Keep in mind
 that when you enter these rules they are added real-time and **can lock
 you out of your server!** If you do this you must use the console as the
@@ -164,42 +164,42 @@ you out of your server!** If you do this you must use the console as the
 Please note that these are basic rules and may not cover all situations
 or server configurations.
 
-\
+<br>
  For more information about iptables rules with Ubuntu, check out the
 following link:
 [https://help.ubuntu.com/community/IptablesHowTo](https://help.ubuntu.com/community/IptablesHowTo "https://help.ubuntu.com/community/IptablesHowTo")
 
-\
+<br>
  Let's start by adding a rule to allow established traffic to our
 server:
 
     # iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-\
+<br>
  Next we need to add a line to allow incoming SSH traffic. Type the
 following line to do this:
 
     # iptables -A INPUT -p tcp --dport ssh -j ACCEPT
 
-\
+<br>
  Now we need to add a line to allow incoming MySQL traffic. Type the
 following line to do this:
 
     # iptables -A INPUT -p tcp --dport mysql -j ACCEPT
 
-\
+<br>
  Next we need to add a line to allow incoming HTTP traffic. Type the
 following line to do this:
 
     # iptables -A INPUT -p tcp --dport www -j ACCEPT
 
-\
+<br>
  Finally we need to set all other traffic to block. Type the following
 to to do this:
 
     # iptables -A INPUT -j DROP
 
-\
+<br>
  If you look at your resulting rule set (by typing **iptables -L**) it
 should look like this:
 
@@ -217,13 +217,13 @@ should look like this:
     Chain OUTPUT (policy ACCEPT)
     target     prot opt source               destination  
 
-\
+<br>
  If all looks well we are ready to save our rules. To save our rules
 simply type the following:
 
     # iptables-save > /etc/iptables.rules
 
-\
+<br>
  The next step is making sure that our rules are loaded when the server
 reboots. This involves creating a script that is executed when the
 server boots up. Type the following to create the file:
@@ -263,7 +263,7 @@ following:
 
     # apt-get install apache2
 
-\
+<br>
  Once you have the server installed you can go to your server's IP
 address in a web-browser and you should see something like this:
 
@@ -300,13 +300,13 @@ screenshot is below:
 
 ![sites\_mysql\_phpmyadmin\_webserver\_config.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_phpmyadmin_webserver_config.png)
 
-\
+<br>
  You will be prompted to configure a database required for phpMyAdmin to
 function. Select **Yes** and press **Enter**.
 
 ![sites\_mysql\_config\_phpmyadmin\_db.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_config_phpmyadmin_db.png)
 
-\
+<br>
  You will be asked for the *root* password for the database to create
 the associated database and tables. Type this in and press **Enter**.
 
@@ -318,7 +318,7 @@ allow it to generate a random password. Press **Enter** to allow this.
 
 ![sites\_mysql\_phpmyadmin\_pw.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_phpmyadmin_pw.png)
 
-\
+<br>
  Once the install finishes we need to test our phpMyAdmin installation.
 Point your web browser to
 **[http://12.34.56.78/phpmyadmin](http://12.34.56.78/phpmyadmin "http://12.34.56.78/phpmyadmin")**
@@ -347,7 +347,7 @@ your site is hosted in.
 For the sake of demonstration we will assume you are using the DFW data
 center.
 
-\
+<br>
  When you click on the link you will have a phpMyAdmin login screen
 appear. You will need to type in your database user name and password
 associated with your Drupal website. You will also need to select the
@@ -356,14 +356,14 @@ the Control Panel on your site's *Features* tab.
 
 ![sites\_mysql\_dfw\_pma\_login.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_dfw_pma_login.png)
 
-\
+<br>
  Once you are logged in we need to begin pulling a copy of the database.
 To do this scroll down on the right window pane and find the **Export**
 link; click this.
 
 ![sites\_mysql\_pma\_export.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_pma_export.png)
 
-\
+<br>
  You will be presented with an export screen. On the left side under
 *Export* select your Drupal database (eg: 388488\_drupal). Scroll down
 to the bottom and check the checkbox labeled **Save as file** -- this
@@ -398,7 +398,7 @@ the top.
 
 ![sites\_mysql\_cs\_pma\_importlink.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_importlink.png)
 
-\
+<br>
  You will be presented with an import screen asking for some variables.
 Click on the **Choose File** button and choose your backup file that we
 downloaded earlier. Scroll down and then click the **Go** button to
@@ -408,17 +408,17 @@ begin the import.
 size. If your database is larger than this it will have to be executed
 from the command line or through the SQL window.
 
-![sites\_mysql\_cs\_pma\_import1.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_import1.png)\
+![sites\_mysql\_cs\_pma\_import1.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_import1.png)<br>
 
 ![sites\_mysql\_cs\_pma\_import2.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_import2.png)
 
-\
+<br>
  If your import worked successfully you will see something like the
 picture below. You may close the window.
 
 ![sites\_mysql\_cs\_pma\_import3.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_import3.png)
 
-\
+<br>
  **Importing databases over 2MB:**
 
 If your database is larger than 2MB in size you will have to copy your
@@ -458,11 +458,11 @@ user in Cloud Sites. Type it again in the box that follows. Once you
 have this filled in scroll down to the bottom and click **Go**. Refer to
 the examples below:
 
-![sites\_mysql\_cs\_pma\_adduser\_details.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_adduser_details.png)\
+![sites\_mysql\_cs\_pma\_adduser\_details.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_adduser_details.png)<br>
 
 ![sites\_mysql\_cs\_pma\_adduser\_gobutton.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_cs_pma_adduser_gobutton.png)
 
-\
+<br>
  Once the user is created you will be asked what permissions to grant
 this user. Scroll down to **Database-specific Privileges' and type your
 Drupal database name in the text box. Once you have done this click

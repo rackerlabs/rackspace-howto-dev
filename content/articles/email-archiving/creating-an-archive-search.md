@@ -17,18 +17,18 @@ Manager. This article describes the steps for creating an archive search
 in Cloud Office.
 
 1.  Log in to the [Archive
-    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).\
+    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).<br>
      For more information, see [Log in to the Archive
-    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).\
+    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).<br>
       
 2.  In the upper-right corner of the window, click **Search** to access
-    the Search dashboard.\
+    the Search dashboard.<br>
      **Note**: There are thre dashboards for top level administrators:
-    **Search**, **Admin,**and**Admin User**.\
+    **Search**, **Admin,**and**Admin User**.<br>
       
-3.  Click the **Search** tab.\
+3.  Click the **Search** tab.<br>
       
-4.  Click **Start new search**.\
+4.  Click **Start new search**.<br>
       
 5.  Click the tab for the type of search and choose from four different
     search types:
@@ -39,19 +39,19 @@ in Cloud Office.
     -   **Advanced**&mdash;Search by sender, recipient, subject, body, and
         attachment with greater fine-tuning control. For more
         information, see [Advanced Search](#advancedSearch) after these
-        steps.\
+        steps.<br>
           
 
-6.  Enter a name for the search.\
+6.  Enter a name for the search.<br>
       
 7.  Enter any terms you wish to search for under**Search Terms**, as
-    appropriate. \
+    appropriate. <br>
       
 8.  If you wish to send alerts whenever a search is conducted, click
     **Enable Search Alerting on this search**. You can select which
     users receive the alert by their permission level (ie. if you
     select, "Search User" any user with Admin User access will receive
-    an alert).\
+    an alert).<br>
       
 9.  You now can chose any optional parameters for the search. 
     -   *Dates* allows you to select when dates you want the search to
@@ -60,11 +60,11 @@ in Cloud Office.
         under the **Settings** tab. To access predefined tags, click
         **Tags** on the **New Search** page.
     -   *Legal hold* allows you to sort out results on legal hold.
-    -   *Note*****allows you to describe the search\
+    -   *Note*****allows you to describe the search<br>
           
 
 10. Click **Permissions** and designate which users can access, change
-    the scope of, or export the search.\
+    the scope of, or export the search.<br>
       
 11. To search and display results immediately, click **Save and display
     results**. To save the search and return to the list of searches,

@@ -241,7 +241,7 @@ be updated.
 -   Official External Thread on the Rackspace Community:
     [https://community.rackspace.com/products/f/25/t/4787 ](https://community.rackspace.com/products/f/25/t/4787)
 -   Google Hangout customer Q&A sessions
-    -   Date/Time: Wednesday 2014-01-14 at 10am CST.\
+    -   Date/Time: Wednesday 2014-01-14 at 10am CST.<br>
 
         Link: [https://plus.google.com/events/cdnijo5alfbic3r06phjm0qltro](https://plus.google.com/events/cdnijo5alfbic3r06phjm0qltro)
 

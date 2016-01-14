@@ -135,7 +135,7 @@ information](/knowledge_center/sites/default/files/field/image/change-account-1.
 -   **Transferring Customer / Assignor** - Provide the signature of the
     current primary contact on the account.
 -   **Accepting Customer / Assignee** - Provide the signature of the new
-    contact or the existing contact if that is not changing.\
+    contact or the existing contact if that is not changing.<br>
       
 
 ![Signature section details, including Transferring customer (Assignor)

@@ -96,7 +96,7 @@ Click the Actions button (the cog) next to the Volume name. Click the
 
 Click the **Detach Volume** button.
 
-The Volume detaches.\
+The Volume detaches.<br>
  Note: It may take several minutes for your Volume to detach.
 
  
@@ -109,8 +109,8 @@ Servers sub-navigation to display the **Block Storage Volumes** screen.
 ![](/knowledge_center/sites/default/files/field/image/cbs_detachvolume3.jpeg)
 
 Click the Actions button (the cog) next to the Volume name. Click the
-**Delete Volume** link.\
- \
+**Delete Volume** link.<br>
+ <br>
  **Note:** If a snapshot of the volume exists, you cannot delete the
 volume until you delete the snapshot.
 

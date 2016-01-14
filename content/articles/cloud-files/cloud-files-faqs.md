@@ -622,7 +622,7 @@ Files. Click a link below to find out more for each approach.
     Streaming](http://docs.rackspace.com/files/api/v1/cf-devguide/content/iOS-Streaming-d1f3725.html)
     (link goes to API Developer Guide)
 
-\
+<br>
  Cloud Files Streaming FAQs
 ---------------------------
 
@@ -871,10 +871,10 @@ of computers that deliver the content from origin to end user. CDNs
 place servers around the world and, depending on where the end user is
 located, serves them with the closest or most appropriate server. CDNs
 cut down on the amount of travel your content must make. This is shown
-in the following figures.\
- ![](/knowledge_center/sites/default/files/field/image/whatisaCDN1.png)\
- \
- ![](/knowledge_center/sites/default/files/field/image/whatisaCDN2.png)\
+in the following figures.<br>
+ ![](/knowledge_center/sites/default/files/field/image/whatisaCDN1.png)<br>
+ <br>
+ ![](/knowledge_center/sites/default/files/field/image/whatisaCDN2.png)<br>
   
 
 ### Technology
@@ -910,7 +910,7 @@ the switch is then directed to one of the real web servers attached to
 the switch. This has the advantages of balancing load, increasing total
 capacity, improving scalability, and providing increased reliability by
 redistributing the load of a failed web server and providing server
-health checks.\
+health checks.<br>
  ![](/knowledge_center/sites/default/files/field/image/Technology1.png)
 
 Request routing directs client requests to the content source best able

@@ -90,7 +90,7 @@ using the Out-of-Office Assistant.
 2016, or Mac Mail when setting up an email account as POP or IMAP.
 
 To enable Autodiscover, set up the following Canonical Name (CNAME)
-record.\
+record.<br>
  Replace *example.com* with your own domain name.
 
 **Hostname**

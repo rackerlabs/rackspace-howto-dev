@@ -14,8 +14,8 @@ When you transfer your .uk domain into a new registrar, you must ensure
 that the Internet Provider Security (IPS) tag points to the correct
 place before you begin the transfer process. If you are transferring
 your domain registration to Rackspace, the IPS tag must point to
-TUCOWS-CA.\
- \
+TUCOWS-CA.<br>
+ <br>
 To change the IPS tag, contact your current Domain Registrar and request
 the change (some providers might  charge an administration fee).
 

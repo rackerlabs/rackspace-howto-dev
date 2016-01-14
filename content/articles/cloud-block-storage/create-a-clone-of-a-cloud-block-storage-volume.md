@@ -71,7 +71,7 @@ Steps to create a volume clone:
 
 1.  Navigate to the Clone Volume popup by either
 
--   Clicking the "Actions" button on the Volume Details screen.\
+-   Clicking the "Actions" button on the Volume Details screen.<br>
      or
 -   Click the Action cog next to the Volume name in the Block Storage
     Volumes screen.

@@ -22,7 +22,7 @@ types](http://ttp://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-c
 Checks types are divided into two categories:
 
 -   *Agent* checks monitor an entity's resource utilization. Agent
-    checks are performed by the monitoring agent running on a server.\
+    checks are performed by the monitoring agent running on a server.<br>
      For example, a Memory check can trigger an alarm if it detects
     memory usage above a specified percentage. Agent checks require the
     monitoring agent to be installed on the server. For a list of
@@ -30,7 +30,7 @@ Checks types are divided into two categories:
     types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html).
     For information on how to install the monitoring agent, see [Install
     and
-    configure](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/install-configure.html).\
+    configure](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/install-configure.html).<br>
      Rackspace Intelligence supports the following types of agent
     checks:
     -   Apache
@@ -51,11 +51,11 @@ Checks types are divided into two categories:
     -   Windows PerfOS
 -   *Remote* checks monitor an entity's internet connectivity. Remote
     checks are performed by attempting to contact the entity from
-    outside the entity.\
+    outside the entity.<br>
      For example, Ping check can trigger an alarm if it detects packet
     loss above a specified percentage. For a list of available remote
     check types, see [Remote check
-    types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-remote.html).\
+    types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-remote.html).<br>
      Rackspace Intelligence supports the following types of remote
     checks:
     -   DNS
@@ -90,14 +90,14 @@ To create a new check, complete the following steps:
 2.  On the **Monitoring** page, click the entity for which you want to
     create the check.
 3.  In the **Monitoring Checks** section of the entity details page,
-    click **Create Check**.\
+    click **Create Check**.<br>
 
     ![](/knowledge_center/sites/default/files/field/image/intelligence-checks-create-check.png)
 4.  In the popup dialog box, click the **Check Type** box and select the
     appropriate check type from the list.
 5.  In the **Check Name** box, type a name for the check.
 6.  Specify any other values for the type of check that you are
-    creating, and then click **Create Check**.\
+    creating, and then click **Create Check**.<br>
      After successfully creating the check, Rackspace Intelligence
     displays a details page with the name of your check. This page
     provides relevant information about your check.

@@ -143,12 +143,12 @@ for my cloud account(s)?**
 1.  Login to your account in the
     [my.rackspace.com](https://my.rackspace.com/) portal
 2.  Select "Network" -\> "RackConnect" to enter the RackConnect
-    Management Interface:\
+    Management Interface:<br>
 
     ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.RC_.Management.Interface.Navigation.png)
 3.  Select your RackConnect Configuration from the left-hand pane, then
     select your cloud account.  The cloud account's overview page will
-    list your current Automation Features settings:\
+    list your current Automation Features settings:<br>
 
     ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.MyRack.Automation.Features.status.png)
 
@@ -158,13 +158,13 @@ for my cloud server(s)?**
 1.  Login to your account in the
     [my.rackspace.com](https://my.rackspace.com/) portal
 2.  Select "Network" -\> "RackConnect" to enter the RackConnect
-    Management Interface:\
+    Management Interface:<br>
 
     ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.RC_.Management.Interface.Navigation.png)
 3.  Select your RackConnect Configuration from the left-hand pane -\>
     select your cloud account -\> select one of your cloud servers. The
     cloud server's overview page will list your current Automation
-    Features settings:\
+    Features settings:<br>
 
     ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.MyRack.CS_.Automation.Features.status.png)
 
@@ -236,7 +236,7 @@ some warnings to the my.rackspace.com portal when you attempt to create
 Network Policies that are not actually valid, as in the above
 scenario.**
 
-\
+<br>
  **What Network Policies are available if Automation Features are
 enabled at the cloud account level?**
 
@@ -262,7 +262,7 @@ warnings to the my.rackspace.com portal when you attempt to create
 Network Policies that are not actually valid, as in the above
 scenario.**
 
-\
+<br>
  **Can I disable Automation Features on my cloud account associated with
 RackConnect?**
 

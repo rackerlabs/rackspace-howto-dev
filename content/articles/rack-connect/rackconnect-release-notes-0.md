@@ -105,19 +105,19 @@ RackConnect.
 ### Known Issues
 
 **Pre-9/6 Windows Managed Operations Cloud Server Snapshots Failing
-RackConnect**\
- \
+RackConnect**<br>
+ <br>
  Description: Windows Managed Operations Cloud Server Snapshots fail
 RackConnect automation
 
 Cause: The agent is not able to correctly set the private IP when IPv6
 is disabled, leading to an instance that does not have proper
-connectivity and thus fails RackConnect automation.\
- \
+connectivity and thus fails RackConnect automation.<br>
+ <br>
  Affects: Snapshots created from next generation Managed Operations
 Windows Servers where the Cloud Server from which the image is based was
-spun up before 9/6/12\
- \
+spun up before 9/6/12<br>
+ <br>
  Workaround: Re-enable IPv6 on the base image before creating snapshots.
 See http://support.microsoft.com/kb/929852 for instructions.
 

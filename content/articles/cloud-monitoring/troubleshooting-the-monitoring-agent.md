@@ -59,7 +59,7 @@ performing the following steps:
 
 1.  Verify that the Rackspace monitoring agent is installed under
     **C:\\Program Files\\Rackspace
-    Monitoring\\rackspace-monitoring-agent.exe**.\
+    Monitoring\\rackspace-monitoring-agent.exe**.<br>
      If you use a 32-bit version on a 64-bit Windows computer, the
     monitoring agent is installed under **C:\\Program Files
     (x86)\\Rackspace Monitoring\\rackspace-monitoring-agent.exe**.
@@ -135,8 +135,8 @@ To check for duplicate entities by using cURL, do the following:
 1.  Authenticate against the Rackspace Cloud API by issuing the
     following command at a command-line interface:
 
-        curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-            -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"yourUserName", "apiKey":"yourApiKey"}}}' \
+        curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' <br>
+            -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"yourUserName", "apiKey":"yourApiKey"}}}' <br>
             -H "Content-Type: application/json" | python -m json.tool
 
     After a successful authentication, make sure to write down the
@@ -144,10 +144,10 @@ To check for duplicate entities by using cURL, do the following:
 
 2.  Issue the following command to obtain a list of entities:
 
-        curl -i -X GET \
-           -H 'X-Auth-Token: '$token''\
-           -H 'Content-Type: application/json' \
-           -H 'Accept: application/json' \
+        curl -i -X GET <br>
+           -H 'X-Auth-Token: '$token''<br>
+           -H 'Content-Type: application/json' <br>
+           -H 'Accept: application/json' <br>
            'https://monitoring.api.rackspacecloud.com/v1.0/$accountid/entities'
 
     Make sure to replace the *\$token* placeholder with the

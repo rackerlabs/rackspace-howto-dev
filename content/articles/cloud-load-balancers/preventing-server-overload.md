@@ -29,9 +29,9 @@ Configuring a Load Balancer.
 1.  Log in to the Control Panel.
 2.  At the top of the Control Panel, click **Load Balancers**
 3.  Click onthe **Actions** cog next to your load balancer, and
-    select**Edit Connection Throttling** from the menu.\
-     The following pop-up window appears:\
-     \
+    select**Edit Connection Throttling** from the menu.<br>
+     The following pop-up window appears:<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/827-1496.png)
 4.  Enter a value for **Max. Connections**, and then click**Save
     Connection Throttling**. You can specify a value between 1 and

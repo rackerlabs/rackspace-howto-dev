@@ -44,24 +44,24 @@ whether to make two-factor authentication a requirement for all users or
 allow users to choose whether or not they want to use two-factor
 authentication.
 
-1.  Log in to the [MyRackspace portal](https://my.rackspace.com/).\
-    \
+1.  Log in to the [MyRackspace portal](https://my.rackspace.com/).<br>
+    <br>
 2.  In the top menu bar, click **Account** and then select **User
-    List**.\
-    \
+    List**.<br>
+    <br>
 3.  At the top of the User List page, click **Two-Factor Login
-    Administration**.\
-    \
+    Administration**.<br>
+    <br>
 4.  On the Two-Factor Login page, select one of the following options:
 5.  **Required for all users on this account**&mdash;Makes two-factor
     authentication a requirement for all users on your account. Setup
-    must take place on each user's next login.\
-    \
+    must take place on each user's next login.<br>
+    <br>
 6.  **Optional per user**&mdash;Makes two-factor authentication optional for
     all users on your account. Users who want to use two-factor
     authentication are prompted to register a paired SMS-capable device
-    on their next login.\
-    \
+    on their next login.<br>
+    <br>
 7.  Click **Save Two-Factor Login**.
 
 [](#top)
@@ -73,14 +73,14 @@ If two-factor authentication is enabled for your user account, you must
 register a new SMS-capable device to pair with your account by using
 these steps:
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com).\
-    \
+1.  Log in to the [MyRackspace portal](https://myrackspace.com).<br>
+    <br>
 2.  Enter the phone number of your SMS-capable device to begin the
     device registration process.
 
     You will receive an SMS or text message with a 4-digit PIN code.
 
-    \
+    <br>
 
 3.  To complete verification of your device, enter the 4-digit PIN code.
 
@@ -109,13 +109,13 @@ Manage your two-factor devices
 You can manage the devices that you use for two-factor authentication.
 Users are allowed multiple devices for two-factor authentication.
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com).\
-    \
+1.  Log in to the [MyRackspace portal](https://myrackspace.com).<br>
+    <br>
 2.  In the top menu bar, click **Account** and then select **User
-    List**.\
-    \
-3.  At the top of the User List page, click **My Two-Factor Devices**.\
-    \
+    List**.<br>
+    <br>
+3.  At the top of the User List page, click **My Two-Factor Devices**.<br>
+    <br>
 4.  On the **My Two-Factor Devices** page, click the **Actions** menu
     and choose one of the following options:
     -   Select **Add New Device** to add a new device to your two-factor
@@ -164,12 +164,12 @@ account. See the following section for instructions.
 Follow these steps to unlock a user account:
 
 1.  Log in to the [MyRackspace portal](https://myrackspace.com) as an
-    administrator.\
-    \
-2.  Select **Account \> User List**.\
-    \
-3.  Locate the locked user and open the user&rsquo;s account record.\
-    \
+    administrator.<br>
+    <br>
+2.  Select **Account \> User List**.<br>
+    <br>
+3.  Locate the locked user and open the user&rsquo;s account record.<br>
+    <br>
 4.  From the **Actions** menu, select **Unlock User**.
 
     A green banner is displayed, stating that the user account was
@@ -182,12 +182,12 @@ Follow these steps to generate a temporary passcode for a user.
 **Note:** An account must be unlocked for this item to be displayed in
 the **Actions** menu.
 
-1.  Log in to the MyRackspace portal as an administrator.\
-    \
-2.  Select **Account \> User List**.\
-    \
-3.  Locate the user and open the user&rsquo;s account record.\
-    \
+1.  Log in to the MyRackspace portal as an administrator.<br>
+    <br>
+2.  Select **Account \> User List**.<br>
+    <br>
+3.  Locate the user and open the user&rsquo;s account record.<br>
+    <br>
 4.  From the **Actions** menu, select **Send Temporary Code**.
 
     A green banner is displayed, stating that the temporary code has

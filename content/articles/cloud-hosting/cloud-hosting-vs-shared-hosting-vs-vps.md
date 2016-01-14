@@ -14,13 +14,13 @@ COMPARISON OF HOSTING TYPES
 
  
 
-Cloud Hosting\
+Cloud Hosting<br>
 Shared
 
-Traditional\
+Traditional<br>
 VPS
 
-Traditional\
+Traditional<br>
 Cloud
 
  

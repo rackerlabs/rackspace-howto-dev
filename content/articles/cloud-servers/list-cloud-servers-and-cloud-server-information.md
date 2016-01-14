@@ -85,7 +85,7 @@ RAM, CPU, and disk space.
 4.  Select the operating system for your server.
 5.  Select the configuration (flavor) by choosing the class of server:
     General Purpose, Compute, I/O, or Memory.
-6.  Use the slider bar to select the configuration of your server.\
+6.  Use the slider bar to select the configuration of your server.<br>
      The following information is listed for each configuration:
     -   CPU - The number of vCPUs
     -   RAM - The amount of RAM

@@ -51,7 +51,7 @@ resources available in the [Further reading](#further-reading)section.
 -   [Receiving Messages via HTTP](#receiving-messages-via-http)
 -   [Further Reading](#further-reading)
 
-### \
+### <br>
  **Sending emails via SMTP** {.p3}
 
 Integration with Mailgun programatically is available from languages
@@ -92,7 +92,7 @@ a normal email: &ldquo;From&rdquo;, &ldquo;To&rdquo;, &ldquo;Cc&rdquo;, &ldquo;B
 Let's take a look at a trivial cURL example. 
 
 ~~~~ {.p3}
-curl -s -k --user api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0 \
+curl -s -k --user api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0 <br>
 https://api.mailgun.com/v2/samples.mailgun.org/messages \    
 -F from='Excited User <me@samples.mailgun.org>'\    
 -F to=tom@example.com\    

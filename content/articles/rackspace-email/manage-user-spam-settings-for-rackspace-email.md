@@ -22,8 +22,8 @@ over the **Go to section** drop-down menu and select **Domains**.
 highlighted.](http://www.rackspace.com/apps/support/media/cpnavdm.gif)
 
 2. In the **Spam Filtering** section, click the **Set Preferences**
-link.\
-  \
+link.<br>
+  <br>
 ![Set preferences link
 highlighted.](http://www.rackspace.com/apps/support/media/cp_re_userspamsettings_002.GIF)
 
@@ -42,7 +42,7 @@ spam filtering on or off. Or, click the **Exclusive** button to receive
 email only from senders on the safelist.
 
 7. If you turned spam filtering on, indicate how messages should be
-handled:\
+handled:<br>
   
 
 Rackspace Email Handling

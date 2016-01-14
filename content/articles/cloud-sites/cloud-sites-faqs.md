@@ -719,7 +719,7 @@ for this request.
 
 1.  Log in to the [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com/).
-2.  At the top of the window, click **Tickets**.\
+2.  At the top of the window, click **Tickets**.<br>
      You are redirected to the Support Tickets page in the Cloud Control
     Panel.
 3.  Click **Create Ticket**.
@@ -817,7 +817,7 @@ information from the **Cloud Sites Control Panel**.
 
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
-2.  In the left navigation menu, click **Your Account** \> **Billing**.\
+2.  In the left navigation menu, click **Your Account** \> **Billing**.<br>
      You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  To edit your credit card, click **Edit Credit Card** under Payment
@@ -828,7 +828,7 @@ information from the **Cloud Sites Control Panel**.
 
 1.  Log in to your control panel at
     [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com/).
-2.  In the left navigation menu, click **Your Account** \>**Billing**.\
+2.  In the left navigation menu, click **Your Account** \>**Billing**.<br>
      You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  Click the pencil icon next to **Billing Address.**
@@ -842,7 +842,7 @@ information from the **Cloud Control Panel**.
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
 2.  Open the **Account:**menu in the top right corner of the screen, and
-    click **Billing & Payments**.\
+    click **Billing & Payments**.<br>
      The Billing & Payments section is displayed.
 3.  To edit your credit card, click **Edit Credit Card** under Payment
     Information
@@ -853,7 +853,7 @@ information from the **Cloud Control Panel**.
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
 2.  Open the **Account:**menu in the top right corner of the screen, and
-    click **Billing & Payments**.\
+    click **Billing & Payments**.<br>
      The Billing & Payments section is displayed.
 3.  Click the pencil icon next to **Billing Address.**
 4.  When done making changes, click **Save Contact**.
@@ -937,14 +937,14 @@ Following is an example to help you set up this script:
     recommend keep this file outside your webroot) and create a "perl"
     cron job to schedule the task (the perl option runs shell scripts as
     well). For instructions on how to create a cron job, see
-    [How\_do\_I\_enable/disable\_a\_cron\_job?](/knowledge_center/index.php/How_do_I_enable/disable_a_cron_job%3F "How do I enable/disable a cron job?").\
+    [How\_do\_I\_enable/disable\_a\_cron\_job?](/knowledge_center/index.php/How_do_I_enable/disable_a_cron_job%3F "How do I enable/disable a cron job?").<br>
      **Note**: For security purposes, we recommend that you keep this
     file outside your webroot directory.
 3.  Put the name of the file, which in this example is import.sh, in the
     "Command To Run" field.
 4.  Select **Perl** as the Command Language and then select the minimum
     interval at which you want to run that script (5 minutes is
-    recommended).\
+    recommended).<br>
      Logs are available in your `/logs/` folder each time a cron job is
     performed and you receive an email confirmation informing you if the
     job was successful or not.

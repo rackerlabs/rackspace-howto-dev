@@ -24,7 +24,7 @@ logins and actions.
 The following articles provide instructions for managing your
 administrators:.
 
-[List and manage administrators](node/2165)\
- [Administrator activity](node/3991)\
+[List and manage administrators](node/2165)<br>
+ [Administrator activity](node/3991)<br>
  [API key management](node/3992)
 

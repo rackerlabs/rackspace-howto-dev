@@ -56,13 +56,13 @@ you're not familiar with the GNU Screen program, you can find an
 introduction in [Installing the Swiftly Cloud Files
 Client](/knowledge_center/article/installing-the-swiftly-cloud-files-client).
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      get \
-        --output=${LOCALFILENAME} \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      get <br>
+        --output=${LOCALFILENAME} <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 If you are downloading to a cloud server that's already in the Rackspace
@@ -72,15 +72,15 @@ you want Swiftly to notify you about what it's doing as it downloads
 your image file, you can add the **--verbose** option. If you add these
 options, your invocation will look as follows:
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      --snet \
-      --verbose \
-      get \
-        --output=${LOCALFILENAME} \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      --snet <br>
+      --verbose <br>
+      get <br>
+        --output=${LOCALFILENAME} <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 Following is a sample verbose response for the precding call. (This
@@ -114,12 +114,12 @@ system:
 You can use Swiftly to determine the size of the file as it exists in
 Cloud Files:
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      head \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      head <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 Your response will look something like the following one. You're
@@ -153,11 +153,11 @@ This section describes an alternative method: instead of downloading the
 entire object at once, you download the individual segments that make it
 up. This method has the following advantages:
 
-&middot;  You have smaller, more manageable pieces to work with.\
+&middot;  You have smaller, more manageable pieces to work with.<br>
  &middot;  You can verify the checksum for each of the pieces to ensure that no
-part is corrupted.\
+part is corrupted.<br>
  &middot;  If a segment is faulty, you can download only that faulty segment
-again.\
+again.<br>
  &middot;  After you have all the pieces, you can stream them locally into a
 single VHD file.
 
@@ -168,12 +168,12 @@ described in the preceding section.
 
 Use the following command to get the Dynamic Large Object manifest:
 
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      head \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      head <br>
       ${CONTAINER}/${IMAGEFILENAME}
 
 The response will look something like the following one:
@@ -210,14 +210,14 @@ use Swiftly to get a detailed list of the segments:
 
     CONTAINER="exports"
     PATTERN="9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-"
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      get \
-        --prefix=${PATTERN} \
-        --full \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      get <br>
+        --prefix=${PATTERN} <br>
+        --full <br>
       ${CONTAINER}
 
 Following is a sample response:
@@ -240,16 +240,16 @@ directory, as follows. Ensure that this directory already exists in your
 file system before attempting the download.
 
     LOCAL_DIR="my-images"
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      --verbose \
-      get \
-        --prefix=${PATTERN} \
-        --all-objects \
-        --output=${LOCAL_DIR}/ \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      --verbose <br>
+      get <br>
+        --prefix=${PATTERN} <br>
+        --all-objects <br>
+        --output=${LOCAL_DIR}/ <br>
       ${CONTAINER}
 
 Following is some sample output with the Swiftly verbose option enabled:
@@ -302,14 +302,14 @@ segment-00003 matches that value.
 Use the following commands to get a fresh copy of the bad segment:
 
     SEGMENT_NAME="9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002"
-    swiftly \
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 \
-      --auth-user=$CF_USERNAME \
-      --auth-key=$CF_API_KEY \
-      --region=$CF_REGION \
-      --verbose \
-      get \
-        --output=${LOCAL_DIR}/${SEGMENT_NAME} \
+    swiftly <br>
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
+      --auth-user=$CF_USERNAME <br>
+      --auth-key=$CF_API_KEY <br>
+      --region=$CF_REGION <br>
+      --verbose <br>
+      get <br>
+        --output=${LOCAL_DIR}/${SEGMENT_NAME} <br>
       ${CONTAINER}/${SEGMENT_NAME}
 
 Following is some sample verbose output:

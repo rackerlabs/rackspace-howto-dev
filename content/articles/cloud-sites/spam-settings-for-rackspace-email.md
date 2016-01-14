@@ -134,7 +134,7 @@ do the following:
 **Note:** Domains and email addresses that are safelisted will appear in
 the **Safelisted Domains & Email Addresses** box. 
 
-\
+<br>
  **To add an IP to the list:**
 
 1.  Click the **Add** button.

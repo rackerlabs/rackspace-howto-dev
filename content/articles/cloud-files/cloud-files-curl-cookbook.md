@@ -282,7 +282,7 @@ depends on whether you have a US-based or UK-based Cloud account:
 -   US customers: https://auth.api.rackspacecloud.com/v1.1/auth
 -   UK customers: https://lon.auth.api.rackspacecloud.com/v1.1/auth
 
-\
+<br>
  The request will look like the following one for the user johndoe who
 is a US-based customer:
 

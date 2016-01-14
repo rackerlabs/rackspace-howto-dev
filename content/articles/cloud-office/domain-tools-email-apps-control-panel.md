@@ -21,8 +21,8 @@ settings and tools.
 The article below provide instructions for using these settings and
 tools:
 
-[Split Domain Routing](/knowledge_center/node/1268)\
- [Email Everyone](/knowledge_center/node/4012)\
- [Set an email catch-all address](/knowledge_center/node/4014)\
+[Split Domain Routing](/knowledge_center/node/1268)<br>
+ [Email Everyone](/knowledge_center/node/4012)<br>
+ [Set an email catch-all address](/knowledge_center/node/4014)<br>
  [Migrations FAQ](/knowledge_center/node/3777)
 

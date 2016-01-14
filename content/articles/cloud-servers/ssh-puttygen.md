@@ -42,10 +42,10 @@ In Windows, use PuTTYgen to generate our public and private keys.
 1.  If needed, download PuTTYgen from the [PuTTY download
     page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).(PuTTYgen
     might have been installed previously with PuTTY or WinSCP.)
-2.  Launch the program, and then click the **Generate** button.\
+2.  Launch the program, and then click the **Generate** button.<br>
      The program generates the keys for you.
 3.  Enter a unique key passphrase in the **Key passphrase** and
-    **Confirm passphrase** fields.\
+    **Confirm passphrase** fields.<br>
      For additional information on using passphrases, see [Logging in
     with a SSH Private Key on
     Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
@@ -53,7 +53,7 @@ In Windows, use PuTTYgen to generate our public and private keys.
     and **Save private key** buttons.
 5.  From the **Public key for pasting into OpenSSH authorized\_keys file
     field** at the top of the window, copy all the text (starting with
-    ssh-rsa) to your clipboard by pressing **Ctrl-C**.\
+    ssh-rsa) to your clipboard by pressing **Ctrl-C**.<br>
      You need the this key available on your clipboard to paste either
     into the public key tool in the Control Panel or directly into the
     authorized keys on your cloud server.
@@ -107,7 +107,7 @@ text is word-wrapped onto multiple lines an error might occur when
 connecting.
 
 1.  Edit the \~/.ssh/authorized\_keys file on your Cloud Server and
-    paste the text onto its own line in the file.\
+    paste the text onto its own line in the file.<br>
      **Note**: You must have the key available on your clipboard to
     paste it.
 2.  If you created the authorized\_keys file, change its permissions

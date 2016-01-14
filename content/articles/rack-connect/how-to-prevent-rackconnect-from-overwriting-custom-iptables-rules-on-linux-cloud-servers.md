@@ -94,7 +94,7 @@ the "merge method" on a particular server, simply do the following:
     ![Network Policy Delete Screenshot; Check TempPolicy, Click Delete
     Policy](/knowledge_center/sites/default/files/field/image/framed-netpolicy-delete_0.jpg)
 
-    \
+    <br>
       
 
 3.  You can verify that RackConnect Automation is using the "merge

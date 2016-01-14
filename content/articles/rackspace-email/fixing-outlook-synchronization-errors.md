@@ -19,24 +19,24 @@ Customize the search folders
 ----------------------------
 
 1.  In the navigation pane of your Outlook email view, expand
-    the **Search Folders**folder.\
-     \
+    the **Search Folders**folder.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/1_55.png)
 2.  Right-click the **Unread Mail** folder and select **Customize This
-    Search Folder**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2_52.png)\
+    Search Folder**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2_52.png)<br>
       
-3.  Click **Browse**.\
+3.  Click **Browse**.<br>
       
 4.  Clear the **Search subfolders**check box at the bottom of the dialog
-    box.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/3a.png)\
+    box.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/3a.png)<br>
       
 5.  In the Select Folder(s) window, uncheck all folders except for the
     Inbox. If there are any rules that move new emails into any other
-    folder, you will want to include those also.\
+    folder, you will want to include those also.<br>
       
 6.  Click **OK** and then click **OK** again to confirm.
 

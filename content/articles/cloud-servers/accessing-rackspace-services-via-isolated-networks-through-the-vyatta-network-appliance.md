@@ -104,7 +104,7 @@ Login to the Vyatta appliance and enter configuration mode
 
     $ ssh vyatta@x.x.x.xWelcome to Vyattavyatta@x.x.x.x's password: Welcome to VyattaVersion:      VSE6.5R2Description:  Vyatta Subscription Edition 6.5 R2Copyright:    2006-2012 Vyatta, Inc.Last login: Thu May  2 04:48:29 2013 from x.x.x.xvyatta@vyatta-thefinal:~$ vyatta@vyatta-thefinal:~$ configure[edit]vyatta@vyatta-thefinal# 
 
-\
+<br>
 Configure Source NAT for ServiceNet traffic. eth1 is the SNET interface
 on the Vyatta. Any traffic going out via SNET will now use a source IP
 of the SNET interface on the Vyatta.
@@ -113,7 +113,7 @@ of the SNET interface on the Vyatta.
 set nat source rule 10 outbound-interface 'eth1'set nat source rule 10 protocol 'all'set nat source rule 10 source address '192.168.1.0/24'set nat source rule 10 translation address 'masquerade'
 ~~~~
 
-\
+<br>
 Configure Source NAT for PublicNet traffic. eth0 is the Public interface
 on the Vyatta. Any traffic going out via PublicNet will now use a source
 IP of the Public interface on the Vyatta.
@@ -122,12 +122,12 @@ IP of the Public interface on the Vyatta.
 set nat source rule 20 outbound-interface 'eth0'set nat source rule 20 protocol 'all'set nat source rule 20 source address '192.168.1.0/24'set nat source rule 20 translation address 'masquerade'
 ~~~~
 
-\
+<br>
 This simple configuration should allow you to access the services listed
 in the table. You may also want to configure firewall policies on the
 Vyatta appliance. For configuration assistance of firewall policies on
 Vyatta please visit the URL below:
 
-[http://www.rackspace.com/knowledge\_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance\
+[http://www.rackspace.com/knowledge\_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance<br>
 ](http://www.rackspace.com/knowledge_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance)
 

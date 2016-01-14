@@ -40,7 +40,7 @@ To set up an email forward for one of your email accounts
 6.  At the bottom of the page, enter the email address you want to
     forward to in the **Forwarding Address** field (multiple entries
     *must* be separated by commas).
-7.  Click **Save**.\
+7.  Click **Save**.<br>
      It might take up to 15 minutes for the changes to the mail account
     to become effective.
 
@@ -59,7 +59,7 @@ To have the mail server retain a copy of the message
 3.  On the left menu, click the **Incoming Email** link.
 4.  Under the **Forwarding** tab, check the **Save a copy of forwarded
     email** check box.
-5.  Click **Save**.\
+5.  Click **Save**.<br>
      Again, allow up to 15 minutes for these changes to take effect.
 
 

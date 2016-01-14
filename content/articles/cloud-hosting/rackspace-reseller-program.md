@@ -38,8 +38,8 @@ benefits include:
 Joining offers you access to the benefits you need to begin building and
 selling Rackspace solutions to your prospects and customers. Our program
 offers market competitive reseller discounts that lead to higher margins
-and greater competitive advantages.\
-\
+and greater competitive advantages.<br>
+<br>
 ![](/knowledge_center/sites/default/files/field/image/Reseller_Prog_Collateral_Update-2a.png)
 
 ### Program Requirements

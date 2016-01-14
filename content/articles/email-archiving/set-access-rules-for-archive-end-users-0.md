@@ -14,43 +14,43 @@ Use this procedure to limit who can access the email archive by
 verifying registered addresses.
 
 1.  Log in to the [Archive
-    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).\
+    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).<br>
      For more information, see [Log in to the Archive
-    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).\
+    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).<br>
       
 2.  In the upper-right corner of the window, click **Admin User** to
-    access the Admin User dashboard. \
+    access the Admin User dashboard. <br>
      **Note**: There are three dashboards for top-level
-    administrators:  **Search, Admin,** and **Admin User**.\
+    administrators:  **Search, Admin,** and **Admin User**.<br>
       
-3.  Select the tab, **End User Access Rules.**\
-     \
+3.  Select the tab, **End User Access Rules.**<br>
+     <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png)\
+    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png)<br>
       
 4.  Specify which domains are allowed to access the archive and which
-    domains are denied access:\
+    domains are denied access:<br>
       
     -   **Allow List**&mdash;Specify the email domains that can access the
         archive. For example,  if you want to allow access only to users
         with your company domain, **@acme.com**, type **\*@acme.com**
         under **Allow rules**. Only users with this domain can access
-        the archive in future logins. \
-         \
+        the archive in future logins. <br>
+         <br>
          To add more domains to this list, move down to the next row and
         continue to follow this process until you have added all the
-        appropriate domains to the allow list. \
-         \
+        appropriate domains to the allow list. <br>
+         <br>
          **Note**:  If you are updating only the allow list, skip
         to step 4.  Otherwise, proceed to the following **Deny
-        List** option to deny specific email domains.\
+        List** option to deny specific email domains.<br>
           
     -   **Deny List**&mdash;You might prefer that your users not register into
         their login with certain domain names. For example, consumer
         domains such as **@hotmail.com** and **@yahoo.com** tend to be
         unpopular with IT administrators. To create a deny list for
         these domains, for example, type **\*@hotmail.com**, and **add
-        \*@yahoo.com** to the next row.\
+        \*@yahoo.com** to the next row.<br>
           
 
 5.  Click **Update**.

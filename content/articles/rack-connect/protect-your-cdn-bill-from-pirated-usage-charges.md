@@ -74,7 +74,7 @@ and time stamp.   This makes it easy to find logs for a specific time
 period. 
 
 ![Sample CDN Log
-Container](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cfaccesslogs_0.jpg)\
+Container](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cfaccesslogs_0.jpg)<br>
  
 
 If you find that your content has been hot linked, you can use your CDN

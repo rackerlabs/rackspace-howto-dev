@@ -14,7 +14,7 @@ body_format: tinymce
 Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.*\
+and selecting Cloud Sites Control Panel.*<br>
 *
 
 **Before scheduling a task, take a minute to review the five necessary
@@ -53,11 +53,11 @@ Once a month? Once a month on a certain day of the month? What time of
 day do you want the specified task to run? All of these variations are
 possible through the Classic Cloud Control Panel.
 
-\
+<br>
  Here&rsquo;s an example of setting up a new scheduled task in the Cloud Sites
 Control Panel.
 
-\
+<br>
  1. Log into the Cloud Sites Control Panel at
 [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
 
@@ -95,7 +95,7 @@ field. &ldquo;/mnt/Target01/123456/www.wakeupcall.com/&rdquo; will automatically
 appended. Please also note that the trailing slash is automatically
 added.
 
-\
+<br>
  11. The next section involves scheduling the time when the job needs to
 be run. In our case, we want the script to run every day at 7:00AM. So
 we would change the selection under &ldquo;Repeat by the: \_\_&rdquo; drop down menu
@@ -104,7 +104,7 @@ to &ldquo;Day.&rdquo; In the &ldquo;Time&rdquo; field, we would enter &ldquo;7:0
 12. Click the &ldquo;Add Task&rdquo; button at the bottom and the cron job will be
 enabled.
 
-\
+<br>
  **NOTE**: When you add a website through the Cloud Sites Control Panel,
 a log directory is also created as a part of the website directory
 structure. In order for the cron tool to run properly, this directory

@@ -140,8 +140,8 @@ Copy the following PHP script and paste it into a text editor:
         $THE_HOST = "5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com";
 
 2.  Paste the hostname string inside the double quotation marks,
-    replacing the following value:\
-     \
+    replacing the following value:<br>
+     <br>
 
         5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com
                 
@@ -161,7 +161,7 @@ Copy the following PHP script and paste it into a text editor:
                 
 
 4.  Replace the `fmdb_readonly` value with the password for the user.
-5.  Locate the following line of the script in the text editor:\
+5.  Locate the following line of the script in the text editor:<br>
 
         $THE_DB = "FEATUREMANIA";
                 

@@ -19,9 +19,9 @@ To access Rackspace Intelligence
 --------------------------------
 
 1.  Go to the Rackspace Intelligence user interface
-    at [https://intelligence.rackspace.com](https://intelligence.rackspace.com/).\
+    at [https://intelligence.rackspace.com](https://intelligence.rackspace.com/).<br>
      If you're not already logged in, you are redirected to the Cloud
-    Control Panel login page at https://mycloud.rackspace.com.\
+    Control Panel login page at https://mycloud.rackspace.com.<br>
       
 2.  At the Cloud Control Panel login page, log in as usual. If your
     account is configured to require it, you might need to perform

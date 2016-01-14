@@ -81,7 +81,7 @@ origin server, so you need to set up another server.
 At this point, your site is generated and served by Amazon S3. But with
 only Amazon S3 serving your site, every user in any part of the world
 has to get your website data from the same Amazon S3 data center. You
-can accelerate your static website by using Rackspace CDN.\
+can accelerate your static website by using Rackspace CDN.<br>
   
 
 Accelerate your site to edge nodes by using Rackspace CDN
@@ -93,13 +93,13 @@ closest to them. To set up Rackspace CDN for your static website,
 perform the following actions:
 
 1.   After your site is serving from Amazon S3, configure a new
-Rackspace CDN service.\
+Rackspace CDN service.<br>
        For information about creating a new Rackspace CDN service, see
 [Create a Rackspace CDN
 service](http://www.rackspace.com/knowledge_center/article/create-a-rackspace-cdn-service).
 
 2.   When you specify the origin, enter the URL of your Amazon S3 bucket
-as your origin domain.  \
+as your origin domain.  <br>
        For example, `yourBucket.s3.amazonaws.com`.
 
 3.   Set the **Host Header** type to **Origin**.

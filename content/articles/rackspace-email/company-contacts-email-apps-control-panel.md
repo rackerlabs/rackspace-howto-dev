@@ -17,8 +17,8 @@ receive billing and renewal notices yet not be able to make changes to
 the account. Use the following steps to add, edit, or delete a company
 contact from your account.
 
-[Add a company contact](#add)\
- [Edit a company contact](#edit)\
+[Add a company contact](#add)<br>
+ [Edit a company contact](#edit)<br>
  [Delete a company contact](delete)
 
 **Add a company contact**
@@ -47,14 +47,14 @@ contact from your account.
     -   **Security Answer** &ndash; Enter an answer for the security question.
 
 6.  In the **Notifications**section, select the check boxes for
-    notifications that should be sent to this contact.\
+    notifications that should be sent to this contact.<br>
      **Note**: Your account must have at least one contact who receives
     **Billing Information** notifications.
 7.  Click **Save**.
 
  
 
-**Edit a company contact**\
+**Edit a company contact**<br>
   
 ---------------------------
 
@@ -65,14 +65,14 @@ contact from your account.
 4.  Click the name of the contact that you want to edit.
 5.  Edit the information as needed.
 6.  In the **Notifications**section, select the check boxes for
-    notifications that should be sent to this contact.\
+    notifications that should be sent to this contact.<br>
      **Note**: Your account must have at least one contact who receives
     **Billing Information** notifications.
 7.  Click **Save**.
 
  
 
-**Delete a company contact**\
+**Delete a company contact**<br>
   
 -----------------------------
 

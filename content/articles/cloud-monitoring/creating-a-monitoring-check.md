@@ -54,7 +54,7 @@ Create a Monitoring Check
 4.  From the **Check Type** list, select the service that you want to
     monitor.
 
-    ![](/knowledge_center/sites/default/files/field/image/CreateCheck.png)\
+    ![](/knowledge_center/sites/default/files/field/image/CreateCheck.png)<br>
       
 
 5.  Enter a descriptive name for the check in the Check Name box.

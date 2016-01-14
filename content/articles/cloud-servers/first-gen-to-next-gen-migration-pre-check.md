@@ -126,7 +126,7 @@ If this check fails, the drivers must be reinstalled before your
 migration window. For Linux distributions, run the following script to
 install or update these drivers:
 
-    wget http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh; \
+    wget http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh; <br>
     chmod u+x xen_tools_installer.sh; bash xen_tools_installer.sh; rm -rf xen_tools_installer.sh
 
 For Gentoo, Arch, and FreeBSD, or if this installer fails, you must
@@ -157,10 +157,10 @@ If your Windows server fails this check, follow these instructions:
 
         http://c4f6d65e7c9c0356f5c6-f834e6ac12bf8372533a9a3497063644.r92.cf2.rackcdn.com/AgentService.zip
 
-2.  Unzip the archive.\
+2.  Unzip the archive.<br>
       
 3.  In the folder that is created, run the **`installagentservice.bat`**
-    script from an administrator command prompt.\
+    script from an administrator command prompt.<br>
       
 
  

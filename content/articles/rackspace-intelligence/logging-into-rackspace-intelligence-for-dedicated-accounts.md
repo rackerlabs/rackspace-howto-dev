@@ -20,17 +20,17 @@ To access Rackspace Intelligence
 
 1.  Go to [https://my.rackspace.com](https://my.rackspace.com) and log
     in to the portal by providing your **Rackspace Account Number**,
-    **Username** and **Password**.\
+    **Username** and **Password**.<br>
       
 2.  On the MyRackspace Customer Portal, click **Services** and then
-    select **Availability Monitoring** from the list.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/Myrack1.png)\
-     \
+    select **Availability Monitoring** from the list.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/Myrack1.png)<br>
+     <br>
      This takes you to the **Entities** page, which lists all of your
     available entities. From this page, you can explore all the details
-    for the entities that have been configured for you.\
-     \
+    for the entities that have been configured for you.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Entity%20List1.png)
 
@@ -43,8 +43,8 @@ and [Understanding the Rackspace Intelligence user interface for
 dedicated
 accounts](http://www.rackspace.com/knowledge_center/article/understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts).
 
-\
- \
+<br>
+ <br>
   
 
  

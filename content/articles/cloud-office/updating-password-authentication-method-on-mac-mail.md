@@ -10,28 +10,28 @@ product: Cloud Office
 body_format: tinymce
 ---
 
-**Updating Password Authentication Method on Mac Mail\
+**Updating Password Authentication Method on Mac Mail<br>
 **
 
 To ensure Mac Mails's settings are properly configured:
 
 1. In Mac Mail, go to "**Mail**" \> "**Preferences**..."
 
-![](/knowledge_center/sites/default/files/field/image/1_49.png)\
-\
+![](/knowledge_center/sites/default/files/field/image/1_49.png)<br>
+<br>
 2. Select the **Accounts** tab.  Under Account Information, click the
 drop-down next to Outgoing Mail Server and select "**Edit SMTP Server
-List...**"\
-\
-![](/knowledge_center/sites/default/files/field/image/2_46.png)\
-\
-3. Select the **Advanced** tab.\
-\
+List...**"<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/2_46.png)<br>
+<br>
+3. Select the **Advanced** tab.<br>
+<br>
 4. Under the Authentication drop-down, ensure **Password** is selected
-rather than*MD5 Challenge-Respons*e.\
-\
-![](/knowledge_center/sites/default/files/field/image/3_44.png)\
-\
+rather than*MD5 Challenge-Respons*e.<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/3_44.png)<br>
+<br>
 5. Click **OK** to close the SMTP window, then **OK** again to close
 Preferences.
 

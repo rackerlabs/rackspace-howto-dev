@@ -68,13 +68,13 @@ default configuration details.
 
 -   Once you return to the Select Options page, you will be able to
     select your Operating System type and version
--   Select the flavor class you want for your server\
-     \
+-   Select the flavor class you want for your server<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/3SelectFlavorClassScreen.png)
 -   Select the flavor (includes CPU, RAM and disk) on the resulting
-    screen\
-     \
+    screen<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/4SelectFlavorScreen.png)
 -   Once you return to the Select Options page, tap **Create Server**.
@@ -89,7 +89,7 @@ green.
 
 On your server list, select the cloud server you want to manage. Once on
 your Server Details page you will be able to Rebuild, Reboot, and Rename
-your server.\
+your server.<br>
  **Note**: If you need to changed the size of your server, see [Changing
 the size of your General Purpose Cloud
 Server](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
@@ -97,7 +97,7 @@ Server](http://www.rackspace.com/knowledge_center/article/upgrading-resources-fo
 -   #### Rebuild
 
     -   Tap the Image button
-    -   You will be prompted to confirm the Rebuild\
+    -   You will be prompted to confirm the Rebuild<br>
          **NOTE**: Rebuilding your server will require a restart of your
         system    
 -   #### Reboot
@@ -140,7 +140,7 @@ to update the password you use to access your server
     Rackspace application you can select "Remove Account". 
 
 ![](/knowledge_center/sites/default/files/field/image/Screenshot_2013-06-27-14-14-01_1.png)    
-![](/knowledge_center/sites/default/files/field/image/Screenshot_2013-06-27-13-50-20_1.png)\
+![](/knowledge_center/sites/default/files/field/image/Screenshot_2013-06-27-13-50-20_1.png)<br>
        
 
 -   To delete an account from your **iOS** Rackspace mobile application,

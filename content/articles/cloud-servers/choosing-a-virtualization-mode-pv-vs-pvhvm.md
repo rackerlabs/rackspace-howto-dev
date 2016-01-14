@@ -53,7 +53,7 @@ use, consider the following factors when choosing between them.
 **Disk configuration:**
 
 Automatic disk configuration can be used with PV images but fails with
-PVHVM images. The error message looks as follows:\
+PVHVM images. The error message looks as follows:<br>
 
 `ERROR: Requested image $UUID has automatic disk resize disabled. (HTTP 400)`
 

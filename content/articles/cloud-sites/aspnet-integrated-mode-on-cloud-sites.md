@@ -43,7 +43,7 @@ adding the following to your application&rsquo;s web.config:
 
 \</system.webServer\>
 
-\
+<br>
  Request URLs containing unencoded &ldquo;+&rdquo; characters in the path (not
 querystring) is rejected by default.
 
@@ -69,7 +69,7 @@ more vulnerable to malicious URLs:
 
 \</system.webServer\>
 
-\
+<br>
  Requests with querystrings larger then 2048 bytes will be rejected by
 default.
 
@@ -99,7 +99,7 @@ application&rsquo;s web.config:
 
 \</system.webServer\>
 
-\
+<br>
  DefaultHttpHandler is not supported. Applications relying on
 sub-classes of DefaultHttpHandler will not be able to serve requests.
 

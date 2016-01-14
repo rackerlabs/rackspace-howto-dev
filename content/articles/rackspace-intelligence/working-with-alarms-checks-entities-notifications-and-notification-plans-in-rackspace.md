@@ -35,7 +35,7 @@ perform the following steps:
     ![](/knowledge_center/sites/default/files/field/image/Entity%20List1_0.png)
 
 2.  To view details about a specific entity, click the link for the
-    entity.\
+    entity.<br>
      The top of the details page shows information about the  entity.
 
     ![](/knowledge_center/sites/default/files/field/image/Entity%20Details1.png)
@@ -70,7 +70,7 @@ steps:
 1.  Click **Monitor** and then click the **Entities** tab.
 2.  Click the entity for which you want to view check details.
 3.  On the entity details page, scroll to the Monitoring Checks section
-    and click the link for the check that you want to view.\
+    and click the link for the check that you want to view.<br>
      A page that lists the check details is displayed.
 
     ![](/knowledge_center/sites/default/files/field/image/Check%20Details1.png)
@@ -93,7 +93,7 @@ To view an alarm, perform the following steps:
 1.  Click on the details page for an entity, click the check for which
     you want to view the alarm
 2.  Scroll to the **Monitoring Alarms******section and click the alarm
-    for which you want to view details.\
+    for which you want to view details.<br>
      The alarm detail are displayed.
 
     ![](/knowledge_center/sites/default/files/field/image/Alarm%20Details1.png)

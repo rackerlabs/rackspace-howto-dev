@@ -22,20 +22,20 @@ body_format: full_html
     -   *72.32.10.144 - 72.32.10.159 (WC1.DFW3)*
     -   *72.32.47.176 - 72.32.47.191 (WC2.DFW3)*
 
-    \
-    \
+    <br>
+    <br>
 -   Outbound IP addresses for access to ServiceNet resources will
     change. If you have any ServiceNet resources such as Cloud Servers,
     Cloud Databases, etc., restricting access by IP address, please add
-    **10.187.240.0/20** to your whitelists.\
-    \
+    **10.187.240.0/20** to your whitelists.<br>
+    <br>
 -   Database management IP addresses will change. Based on your
     technology, please reference
     [MSSQL](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes)
     or
     [MySQL](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0)
-    for more information.\
-    \
+    for more information.<br>
+    <br>
 -   Test links for websites will be changing to reflect their new
     location. Test links should only be used for testing purposes and
     can change at any time. These URLs for site management are available
@@ -51,11 +51,11 @@ body_format: full_html
 -------------------------
 
 -   Customers will not need to update their DNS entries for their
-    websites. We will be migrating SSL and cluster IPs over\*.\
-    \
+    websites. We will be migrating SSL and cluster IPs over\*.<br>
+    <br>
 -   Customers using 3rd party DDoS mitigation services (such as
-    CloudFlare) will not need to update anything on their end.\
-    \
+    CloudFlare) will not need to update anything on their end.<br>
+    <br>
 -   FTP records and IPs will also remain the same\*.
 
     **Note:** Old DNS entries (i.e., test links) will be retired by end

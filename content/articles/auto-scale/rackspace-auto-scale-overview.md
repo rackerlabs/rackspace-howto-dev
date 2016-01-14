@@ -33,7 +33,7 @@ consists of the following items:
 
 ### Use Cases
 
--   **eCommerce sale**\
+-   **eCommerce sale**<br>
      Customer W has a one-day sale on its site on Monday, that is,
     beginning at 12:01 a.m. Monday and ending at 12:00 a.m. Tuesday. The
     customer predicts substantially increased traffic because of this
@@ -43,7 +43,7 @@ consists of the following items:
     the load balancer. The customer can create a second schedule to
     decrease the number of servers by 10 starting at 12:00 a.m. Tuesday
     morning, after the sale has ended.
--   **Marketing campaign**\
+-   **Marketing campaign**<br>
      Similar to the preceding use case, Customer X is running a
     week-long marketing campaign and expects 20 percent more traffic to
     their website. The campaign begins at 7:00 a.m. EST on Monday and
@@ -55,7 +55,7 @@ consists of the following items:
     policy to decrease the number of servers by 20 percent at 7:00 p.m.
     EST on Friday evening.
 
--   **Known traffic fluctuations**\
+-   **Known traffic fluctuations**<br>
      Customer Y notices that, traffic to their website decreases by 15
     percent every weekend. That is, traffic decreases every Friday night
     and returns to normal on Monday morning. The customer can create a
@@ -63,7 +63,7 @@ consists of the following items:
     15 percent starting at 6:00 p.m. every Friday. The customer can also
     create a second schedule-based policy to increase the number of
     servers by 15 percent every Monday morning at 6:00 a.m.
--   **Integration with Monitoring**\
+-   **Integration with Monitoring**<br>
      Customer Z has unpredictable traffic when publishing blog posts.
     The customer already monitors the environment with Nagios. The
     customer creates a scaling policy to add 10 percent more servers

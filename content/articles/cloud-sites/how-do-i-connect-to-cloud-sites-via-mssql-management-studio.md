@@ -60,7 +60,7 @@ need this address in the next section.
 Connect by using the external IP address {#connect}
 ----------------------------------------
 
-1.  Open Microsoft SQL Server Management Studio Express.\
+1.  Open Microsoft SQL Server Management Studio Express.<br>
      If the connection dialog box does not open, click the **File** menu
     and then select **Connect Object Explorer**.
 2.  From the **Server type** menu, select **Database Engine**.
@@ -68,7 +68,7 @@ Connect by using the external IP address {#connect}
     database.
 4.  From the **Authentication** menu, select **SQL Server
     Authentication**.
-5.  In the **Login**box, enter the primary user name for the database.\
+5.  In the **Login**box, enter the primary user name for the database.<br>
      The user name must be prefixed by an account ID, so you must use
     the full user name; for example, **123456\_user** and not just
     **user***.*
@@ -76,7 +76,7 @@ Connect by using the external IP address {#connect}
 7.  Enter the port number. To successfully connect, you must use port
     **4120**.
 8.  To ensure that your queries run properly, click the **Connection
-    Properties** tab at the top of the dialog box.\
+    Properties** tab at the top of the dialog box.<br>
      If you cannot see the **Connection Properties** tab, click the
     **Options** button at the bottom right of the dialog box.
 9.  On the **Connection Properties** tab, enter your database name in

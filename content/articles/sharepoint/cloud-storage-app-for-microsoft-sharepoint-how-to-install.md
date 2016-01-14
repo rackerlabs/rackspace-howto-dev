@@ -23,7 +23,7 @@ SharePoint Store:
 1.  Verify that the user account performing this procedure is a member
     of the site Owners group.
 2.  On the home page, under **Get started with your site**, click **Add
-    lists, libraries, and other apps**.\
+    lists, libraries, and other apps**.<br>
      If the **Get started with your site** control does not appear on
     the home page:
     -   click the **Settings** icon

@@ -55,7 +55,7 @@ in the **From** field of messages you send.
 
 -   Select the **Outgoing server requires authentication** check box.
 
- \
+ <br>
  ![ Server addresses
 form](http://c458714.r14.cf2.rackcdn.com/EA_ServerSettings_01.png)
 
@@ -85,8 +85,8 @@ time**. Otherwise, you can leave this setting unselected.
 check boxes.
 
 19. In the **Outgoing mail (SMTP)** field, enter the secure outgoing
-port: **465**\
-  \
+port: **465**<br>
+  <br>
  ![ Port addresses
 form](http://c458714.r14.cf2.rackcdn.com/EA_AdvancedSettings_02.png)
 
@@ -126,7 +126,7 @@ in the **From** field of messages you send.
 
 -   Select the **Outgoing server requires authentication** check box.
 
- \
+ <br>
  ![ Server address
 form](http://c458716.r16.cf2.rackcdn.com/EA_SetupServers_01.png)
 
@@ -156,8 +156,8 @@ at this time**. Otherwise, you can leave this setting unchecked.
 check boxes.
 
 19. In the **Outgoing mail (SMTP)** field, enter the secure outgoing
-port: **465**\
-  \
+port: **465**<br>
+  <br>
  ![ Port numbers
 form](http://c458716.r16.cf2.rackcdn.com/EA_AdvancedSettings_02.png)
 

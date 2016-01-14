@@ -44,23 +44,23 @@ OBSERVER
 
  
 
-(CRUD)\
- across all RBAC\
+(CRUD)<br>
+ across all RBAC<br>
  enabled products
 
-Read-only\
- across all RBAC\
+Read-only<br>
+ across all RBAC<br>
  enabled products
 
-(CRUD)\
- within specified\
+(CRUD)<br>
+ within specified<br>
  product
 
-(CRU)\
- within\
+(CRU)<br>
+ within<br>
  specified product
 
-Read-only within\
+Read-only within<br>
  specified product
 
 **[Next Gen
@@ -311,12 +311,12 @@ OBSERVER
 
  
 
-(CRUD)\
- WITHIN\
+(CRUD)<br>
+ WITHIN<br>
  SPECIFIED PRODUCT
 
-Read-only\
- WITHIN\
+Read-only<br>
+ WITHIN<br>
  SPECIFIED PRODUCT
 
 [**Billing

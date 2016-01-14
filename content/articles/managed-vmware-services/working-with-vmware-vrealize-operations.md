@@ -64,7 +64,7 @@ Install EP Ops Agent on Linux
 
 1.  Locate the Linux (tar) EP Ops agent installation files in both the
     x32 and x64-bit formats, as described in the [Locate EP Ops Agent
-    files](#Locating%20EP%20Ops%20Agent's%20files) section.\
+    files](#Locating%20EP%20Ops%20Agent's%20files) section.<br>
       
 2.  Copy the installation file to the VM where you want to install the
     agent:
@@ -96,13 +96,13 @@ Install EP Ops Agent on Windows
 
 1.  Locate the Windows (zip) EP Ops agent installation files in both the
     x32 and x64-bit formats, as described in the [Locate EP Ops Agent
-    files](#Locating%20EP%20Ops%20Agent's%20files) section.\
+    files](#Locating%20EP%20Ops%20Agent's%20files) section.<br>
       
 2.  Copy the installation file to the VM where you want to install the
-    agent.\
+    agent.<br>
       
 3.  Extract the EP Ops agent zip file located on the VM to the
-    **C:\\epops-agent** directory locally.\
+    **C:\\epops-agent** directory locally.<br>
       
 4.  Open the command prompt and change directory to the EP Ops agent bin
     directory:
@@ -191,27 +191,27 @@ Verify that EP Ops Agent is collecting data
 After installing the agent on a VM, verify that the agent is collecting
 data properly.
 
-1.  Log in to vROps and click **Administration.**\
+1.  Log in to vROps and click **Administration.**<br>
       
-2.  Click **Inventory Explorer** on the left navigation bar.\
+2.  Click **Inventory Explorer** on the left navigation bar.<br>
       
-3.  In the **Inventory Explorer** window, click **Adapter Instances.**\
+3.  In the **Inventory Explorer** window, click **Adapter Instances.**<br>
       
-4.  Under **Adapter Instances** click **EP Ops Adapter Instance.**\
+4.  Under **Adapter Instances** click **EP Ops Adapter Instance.**<br>
       
-5.  Under **EP Ops Adapter Instance**, click **EP Ops Adapter**.\
+5.  Under **EP Ops Adapter Instance**, click **EP Ops Adapter**.<br>
      You will see your reporting VMs in the format of **EP Ops Agent &ndash;
-    {*VM Name*}.**\
+    {*VM Name*}.**<br>
       
-6.  Select an EPO Ops adapter to see the status of the agents. \
+6.  Select an EPO Ops adapter to see the status of the agents. <br>
      In the following image, two VMs are listed as **Lab-Win12** and
-    **LabUbuntu**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/twoVMs.png)\
-     \
+    **LabUbuntu**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/twoVMs.png)<br>
+     <br>
      In the following figure, **EP Ops Agent &ndash; Lab-Win12** is receiving
-    (green) for both **Collection State** and **Collection Status**.\
-     \
+    (green) for both **Collection State** and **Collection Status**.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/collections.png)
 
  
@@ -223,23 +223,23 @@ vROps 6.1 with End Point Operations Management adds specific OS metrics
 to get a granular view of what is happening inside your VMs. To view a
 list of these metrics complete the following steps:
 
-1.  Log in to vROps and click **Environment.**\
+1.  Log in to vROps and click **Environment.**<br>
       
-2.  Click **Operating Systems** in the right pane.\
+2.  Click **Operating Systems** in the right pane.<br>
       
 3.  Under **Operating Systems World**, expand the folders and select a
-    VM.\
+    VM.<br>
       
-4.  Click the **Troubleshooting** tab in the right pane.\
+4.  Click the **Troubleshooting** tab in the right pane.<br>
       
 5.  In the **Troubleshooting** tab, click the **All Metrics** tab to
-    list the EP Ops specific metrics.\
+    list the EP Ops specific metrics.<br>
       
 6.  Double-click a metric to see a bar graph representation of the
-    data. \
-     \
-     ![](/knowledge_center/sites/default/files/field/image/bargraph.png)\
-     \
+    data. <br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/bargraph.png)<br>
+     <br>
      You can double click on the images in the map view to see specific
     info on those objects.
 
@@ -250,16 +250,16 @@ vROps 6.1 with End Point Operations Management adds alerts specific to
 operating systems to get a broader view of what is happening inside your
 VMs. To view a list of these alerts complete the following steps:
 
-1.  Log in to vROps and click **Content**.\
+1.  Log in to vROps and click **Content**.<br>
       
-2.  Click **Alert Definitions**.\
+2.  Click **Alert Definitions**.<br>
       
 3.  In the right pane, filter the list by clicking **All Filters** and
-    choosing **Adapter Type**.\
+    choosing **Adapter Type**.<br>
       
 4.  In the pop-up box, enter **EP Ops** and press **OK**to see all the
-    active alerts related to EP Ops.\
-     \
+    active alerts related to EP Ops.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/adaptertypes.png)
 
 

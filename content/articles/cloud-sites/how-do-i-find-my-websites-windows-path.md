@@ -38,7 +38,7 @@ To find the website&rsquo;s Windows path
     Windows path.
 4.  Click the **Features** tab.
 5.  Scroll to the bottom of the page to the **Server-side Paths**
-    section.\
+    section.<br>
      Under **Windows Info**, the absolute path to your ASP Windows site
     is the one labeled **Web directory**. The path should resemble the
     following format:

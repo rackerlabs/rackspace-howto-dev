@@ -32,18 +32,18 @@ archiving account admin user name.
 To create an archive audit report, perform the following steps:
 
 1.  Log in to the [Archive
-    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f). \
+    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f). <br>
      For more information, see [Log in to the Archive
-    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).\
+    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).<br>
       
 2.  In the upper-right corner of the window, click **Admin** to access
-    the Admin dashboard.\
+    the Admin dashboard.<br>
      **Note**: There are three dashboards for top-level
     administrators:  **Search**, **Admin**, and **Admin User**. If you
     do not see the **Admin** link in the upper-right, you are already on
-    the Admin dashboard.\
+    the Admin dashboard.<br>
       
-3.  Click the **Reports** tab.\
+3.  Click the **Reports** tab.<br>
       
 4.  From the **Choose report** dropdown menu, select one of the
     following report types:
@@ -66,24 +66,24 @@ To create an archive audit report, perform the following steps:
         and makes it searchable. This occurs automatically nightly. This
         report lists the dates of collections, the number of email
         messages collected, the data size, and the mailbox collection
-        point.\
+        point.<br>
           
 
 5.  For **Format option**, select whether you want the report in **PDF**
     or **CSV** format. The PDF format is ideal for read-only reports.
     The CSV format is ideal if you want to sort or repurpose the report
-    data.\
+    data.<br>
       
 6.  For **Date Range**, specify a date range for the report. To select a
-    specific date range, click the calendar icons.\
+    specific date range, click the calendar icons.<br>
       
 7.  In the **Sort options** section, indicate how you want the data to
     be sorted in the **Order by **dropdown menu. You can sort data by
     user name (*User*), date created (*Date*), or by user actions
-    (*Activity*).\
+    (*Activity*).<br>
       
 8.  For **Sort order,**choose you want your report in ascending or
-    descending order.\
+    descending order.<br>
       
 9.  Click **Create Report**. The report is sent to the email address
     associated with your account admin user name.

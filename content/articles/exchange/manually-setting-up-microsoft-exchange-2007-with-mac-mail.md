@@ -54,15 +54,15 @@ Mac**.
     -   **Server Address** &ndash; From the Setting Up Mac Mail window (from
         step 6), remove **https:**// and /**ews/exchange.asmx** .
 
-    \
-     \
+    <br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/MM073.png)
-8.  Confirm the settings and then click **Continue**.\
-     \
+8.  Confirm the settings and then click **Continue**.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/MM074.png)
 9.  Choose any other options that you want to enable, and then click
-    **Done**.\
-     \
+    **Done**.<br>
+     <br>
      ![](/knowledge_center/sites/default/files/field/image/MM075.png)
 
 Your Microsoft Exchange 2007 email account is now set up with Mac Mail.

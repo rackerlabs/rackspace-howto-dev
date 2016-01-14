@@ -38,7 +38,7 @@ Create a notification plan
 2.  In the dialog box, type a name for the notification plan and
     click **Create Notification Plan**.
 3.  On the **Notifications** page for the plan, click **Add
-    Notifications**.\
+    Notifications**.<br>
      To create a notification plan, you need to add one or more
     notifications. You can add existing ones, or create new ones.
 4.  To add an existing notification, click the **Select** button next to
@@ -94,7 +94,7 @@ You can perform the following modifications on notification plans:
 
 1.  From the **Actions** menu on the notification plan details page,
     select **Delete Plan**.
-2.  Click **Delete** to permanently delete the plan.\
+2.  Click **Delete** to permanently delete the plan.<br>
      Rackspace Intelligence permanently deletes the notification plan
     from the database.
 

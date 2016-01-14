@@ -69,7 +69,7 @@ You can perform the following modifications to notifications:
 
 1.  Click the settings icon to the left of the notification, and
     select **Delete**.
-2.  Click **Delete** to confirm the deletion of your notification.\
+2.  Click **Delete** to confirm the deletion of your notification.<br>
      The notification is permanently deleted.
 
 

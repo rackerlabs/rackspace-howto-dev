@@ -31,8 +31,8 @@ These options include:
 **Find in results**
 
 To narrow search results, click **Filter My Results** at the top of the
-window.\
-  \
+window.<br>
+  <br>
 
 ![](/knowledge_center/sites/default/files/field/image/Manage%20Archive%20Search%20Results%201.png)
 

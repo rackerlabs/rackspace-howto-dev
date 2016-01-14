@@ -50,14 +50,14 @@ On this page:
     -   [Files modified during backup are missing or
         corrupted](Files%20modified%20during%20backup%20are%20missing%20or%20corrupted)
 
-\
+<br>
  Backup statuses
 ----------------
 
 Descriptions for each of the backup statues follow along with tips for
 why you might receive each status and what action you might take.
 
-### \
+### <br>
  Backup status &ldquo;Skipped&rdquo;
 
 The backup job was skipped because a backup job was already queued. A
@@ -81,7 +81,7 @@ DriveClient and restart the running agent.
 
 For Windows, a  possible fix is to restart the DriveClient Windows
 service through Window's Service Manager, or through the `sc` command
-line Windows utility.\
+line Windows utility.<br>
   
 
 ### Backup status &ldquo;Missed&rdquo;
@@ -96,7 +96,7 @@ backup job failed.
 
 An agent should never go offline by itself. If the agent did not
 respond, then the agent could not reach one of the API endpoints, the
-agent was not running, or the agent was manually stopped or terminated.\
+agent was not running, or the agent was manually stopped or terminated.<br>
   
 
 ### Backup status &ldquo;Completed with Errors&rdquo;
@@ -119,7 +119,7 @@ issues that cause this type of status are as follows:
     file just to restore a single database.
 -   You will see a `Path Not Found` message when non-UTF-8 characters
     are used in the path of the file in the operating system. The
-    current version of Cloud Backup supports only UTF-8 characters.\
+    current version of Cloud Backup supports only UTF-8 characters.<br>
       
 
 ### Backup status &ldquo;Error&rdquo;
@@ -134,72 +134,72 @@ a ticket so that Support can review it.
 
 Following are some of the issues and some possible fixes:
 
--   `Missing Password for encrypted volume`\
-     \
+-   `Missing Password for encrypted volume`<br>
+     <br>
      Possible cause: If you use the API to change an account from
     ServiceNet to PublicNet, the volume URI is changed. However, the
-    **bootstrap.json** file doesn't reflect that change.\
+    **bootstrap.json** file doesn't reflect that change.<br>
      Workaround: Edit the **bootstrap.json** file and change the volume
     URI.
     -   If the account was changed *from* ServiceNet to PublicNet,
         remove the snet- prefix from the volume URI.
     -   If the account was changed *to* ServiceNet from PublicNet, add
-        an snet- prefix to the volume URI.\
+        an snet- prefix to the volume URI.<br>
           
--   `Out of Disk Space`\
-     \
+-   `Out of Disk Space`<br>
+     <br>
      If the local system has less than 100 MB of free disk space, the
     backup cannot properly decompress the local backup vault database to
-    execute a backup or restore.\
+    execute a backup or restore.<br>
       
--   `Container does not exist`\
-     \
+-   `Container does not exist`<br>
+     <br>
      The container that is used to store backup data has been deleted.
     You can check this by getting the agent details via the Cloud Backup
     API. The `VolumeURI` field in the displayed JSON indicates the Cloud
     Files container that Cloud Backup is attempting to access. If that
     Cloud Files container does not exist, it must be recreated. It also
     means that any previous backups were deleted and cannot be used to
-    restore.\
+    restore.<br>
       
--   `CurlEasyPerformWrapper : Could not perform an HTTP request. Connection timed out while waiting for https://snet-storage101`\
-     \
+-   `CurlEasyPerformWrapper : Could not perform an HTTP request. Connection timed out while waiting for https://snet-storage101`<br>
+     <br>
      This message indicates that a networking error is causing
     DriveClient to be unable to connect to the Cloud Files API to upload
-    backups.\
+    backups.<br>
       
--   `locale::facet::_S_create_c_locale name not valid`\
-     \
+-   `locale::facet::_S_create_c_locale name not valid`<br>
+     <br>
      This message is caused by the locale not being properly set on the
-    target system, which happens mostly in older operating systems.\
-     \
+    target system, which happens mostly in older operating systems.<br>
+     <br>
      Receiving this message is also common when you use SSH to connect
     from a MacOS desktop to a Linux server, and run the
     `sudo service DriveClient status command`.  The MacOS client does
-    not properly provide the locale information in the SSH session.\
-     \
+    not properly provide the locale information in the SSH session.<br>
+     <br>
      If you don't have a Linux computer available for use, you can
     access the web console for your server via the Cloud Control Panel.
     When you're in to the web console for your server, perform the
-    following actions:\
-     \
-     1. Open the **/etc/ssh/sshd\_config** file for editing.\
+    following actions:<br>
+     <br>
+     1. Open the **/etc/ssh/sshd\_config** file for editing.<br>
      2. Find the lines that start with `AcceptEnv`, and insert a `#`
     character in front of each line. The issue seems to be related to
     one of the localization variables that is being passed. Disabling
-    acceptance of those variables is a workaround.\
+    acceptance of those variables is a workaround.<br>
      3. After you make the change and save the file, restart the SSH
     service (depending on the Linux distribution), run
-    either` service ssh restart` or `service sshd restart`.\
-     \
-     Then, try to connect again.\
+    either` service ssh restart` or `service sshd restart`.<br>
+     <br>
+     Then, try to connect again.<br>
       
 
 ### Backup status &ldquo;Failed&rdquo;
 
 The Failed status indicates that a serious problem occurred, and the
 backup job did not run. As with the Error status, check the logs on the
-server.\
+server.<br>
   
 
 Connection errors: DriveClient fails to start, or DriveClient does not stay running
@@ -232,25 +232,25 @@ The agent might be unable to communicate with one or more the following
 required API endpoints:
 
 -   Cloud Backup API: **api.drivesrvr.com** (for US accounts) or
-    **api.drivesrvr.co.uk** (for UK accounts)\
+    **api.drivesrvr.co.uk** (for UK accounts)<br>
      You can test this communication with an HTTP GET (or Open Standard
     Web Browser) to the
-    URL [https://api.drivesrvr.com/v1.0/help/apihealth](https://api.drivesrvr.com/v1.0/help/apihealth).\
+    URL [https://api.drivesrvr.com/v1.0/help/apihealth](https://api.drivesrvr.com/v1.0/help/apihealth).<br>
       
 -   Cloud Backup RSE API: **rse.drivesrvr.com** (for US accounts) or
-    **rse.drivesrvr.co.uk** (for UK accounts)\
+    **rse.drivesrvr.co.uk** (for UK accounts)<br>
      You can test this communication with an HTTP GET (or Open Standard
     Web Browser) to the URL
-    [https://rse.drivesrvr.com/health](https://rse.drivesrvr.com/health).\
+    [https://rse.drivesrvr.com/health](https://rse.drivesrvr.com/health).<br>
       
 -   Cloud Files API endpoints: These are regional endpoints, but all
     have the same /healthcheck command that allows for network
-    connection testing.\
+    connection testing.<br>
      You can test this communication with an HTTP GET:
     [https://\<endpoint\>/healthcheck](https://<endpoint>/healthcheck)
     using regional public and ServiceNet endpoints, which are shown
     below. For example,
-    [https://storage101.ord1.clouddrive.com/healthcheck](https://storage101.ord1.clouddrive.com/healthcheck).\
+    [https://storage101.ord1.clouddrive.com/healthcheck](https://storage101.ord1.clouddrive.com/healthcheck).<br>
       
 
   Region   Public API                       ServiceNet API
@@ -262,15 +262,15 @@ required API endpoints:
   SYD      storage101.syd2.clouddrive.com   snet-storage101.syd2.clouddrive.com
   HKG      storage101.hkg1.clouddrive.com   snet-storage101.hkg1.clouddrive.com
 
-\
+<br>
  Backup agent logs: Where they are located, and how to read them
 ----------------------------------------------------------------
 
 The agent logs are stored, by default, in the following directories:
 
--   (Windows) **C:\\ProgramData\\DriveClient\\logs\\DriveClient.log**\
+-   (Windows) **C:\\ProgramData\\DriveClient\\logs\\DriveClient.log**<br>
      The **C:\\ProgramData\\DriveClient** directory can be changed,
-    based on the installer or through the AgentConfig.exe executable.\
+    based on the installer or through the AgentConfig.exe executable.<br>
       
 -   (Linux) **/var/log/DriveClient.log**
 
@@ -279,46 +279,46 @@ The only thing that can be manually edited in the **log4cxx.xml** file
 (`MaxFileSize`) and how many previous versions (`MaxBackupIndex`) will
 be saved before they are deleted. For more information about how to
 configure this file, see [Cloud Backup agent logging
-basics](http://www.rackspace.com/knowledge_center/article/cloud-backup-agent-logging-basics).\
- \
+basics](http://www.rackspace.com/knowledge_center/article/cloud-backup-agent-logging-basics).<br>
+ <br>
  The following common items are included in the **DriveClient.log**
 file:
 
--   `rax::LoggingPolicy::PerformSetup(134)`\
+-   `rax::LoggingPolicy::PerformSetup(134)`<br>
      Indicates the start of the DriveClient service.
 
--   `rax::AgentPolicy::TearDown(38)] Tearing down logging...`\
-     Indicates that the DriveClient service was properly shut down.\
+-   `rax::AgentPolicy::TearDown(38)] Tearing down logging...`<br>
+     Indicates that the DriveClient service was properly shut down.<br>
       
--   Format of log lines\
-     `[DATE TIME | THREADID | LOGLEVEL | USER | CONTEXT] LOG INFORMATION`\
-     `DATE TIME`: Timestamp indicating when the log line was written\
+-   Format of log lines<br>
+     `[DATE TIME | THREADID | LOGLEVEL | USER | CONTEXT] LOG INFORMATION`<br>
+     `DATE TIME`: Timestamp indicating when the log line was written<br>
      `THREADID`: Because DriveClient is a threaded service, this ID is
     an indicator to separate the thread from all of the other threads
-    writing to the same log file.\
+    writing to the same log file.<br>
      `LOGLEVEL`: The depth of the logging. The default is INFO, but
     Support might increase this level to TRACE or DEBUG. The log levels
-    are common log levels, such as INFO, WARN, and ERROR.\
+    are common log levels, such as INFO, WARN, and ERROR.<br>
      `USER`: The user that is running the service. On Linux,  this value
-    is root, and on Windows, it is Administrator.\
+    is root, and on Windows, it is Administrator.<br>
      `CONTEXT`: This is internal information about where the log was
-    generated.\
+    generated.<br>
      `LOG INFORMATION`: The context of the log.
 
 Common errors received in the log include 401 and 403 errors when
 accessing **rse.drivesrvr.com**, **api.drivesrvr.com**,
-**rse.drivesrvr.co.uk**, or **api.drivesrvr.co.uk**.\
- \
+**rse.drivesrvr.co.uk**, or **api.drivesrvr.co.uk**.<br>
+ <br>
  When you first start the DriveClient service, there is a possibility
 that the RSA key pair for authentication does not properly synchonize
 immediately, causing a brief time of 401 and 403 errors in the
 **DriveClient.log** file. This is normal for the Cloud Backup internal
 APIs. The DriveClient service handles these errors and will retry the
 appropriate number of times before canceling the startup of that
-service.\
- \
+service.<br>
+ <br>
  If the errors continue for more than 5 - 10 seconds, contact Rackspace
-Support.\
+Support.<br>
   
 
 Recovery of your encrypted vault password
@@ -327,7 +327,7 @@ Recovery of your encrypted vault password
 You cannot recover your encrypted vault password. The vault password is
 stored only on the cloud server that is linked to that encrypted vault.
 If that password is forgotten, and the **bootstrap.json** file was
-overwritten or lost, there is no way to recover the password.\
+overwritten or lost, there is no way to recover the password.<br>
   
 
 Unable to backup or restore files (Windows only)
@@ -337,15 +337,15 @@ Windows has the ability to *exclusively lock* a file, so that no other
 process can read or write to it. This locking is common in database
 binary files, but many other programs use this locking protocol. If this
 locking occurs, the only workarounds are to close the program that has
-the exclusive lock, or restore the file into a different location.\
- \
+the exclusive lock, or restore the file into a different location.<br>
+ <br>
  If you are backing up a file that you know will be exclusively locked,
 you should think about using VSS snapshots (if your version of Windows
 supports it), and back up the contents of the VSS snapshot. Using VSS
-snapshots enables you to get a proper backup of the file.\
- \
+snapshots enables you to get a proper backup of the file.<br>
+ <br>
  The latest version of Cloud Backup for Windows automatically takes a
-VSS snapshot of the drive and attempts to back up files from it.\
+VSS snapshot of the drive and attempts to back up files from it.<br>
   
 
 System resource utilization
@@ -356,8 +356,8 @@ is directly related to how many files are being backed up in each backup
 configuration. An increased number of files (or the size of files) can
 cause the agent to consume more resources. For suggestions for best
 practices, see [Best practices for Cloud
-Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-cloud-backup).\
- \
+Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-cloud-backup).<br>
+ <br>
   
 
 Other errors and problems
@@ -365,7 +365,7 @@ Other errors and problems
 
 Following are other errors and problems that you might encounter:
 
-#### \
+#### <br>
  **Backup failed with a 403 error from Cloud Files when account has sub-users**
 
 A registered sub-user is authorized for Cloud Backup but not for Cloud
@@ -379,7 +379,7 @@ account administrator for Full access to your account or Administrative
 access to Cloud Files for your sub-user account. Cloud Backup does not
 support Dedicated Users with Cloud access Federated users.
 
-#### \
+#### <br>
  **Unable to browse a previous backup or browse a backup to select files to restore**
 
 The list of files in a backup in the Cloud Control Panel is generated by
@@ -391,7 +391,7 @@ When you attempt to restore, the file list is generated on the target
 cloud server &ndash; the server to which you have selected to restore the
 files.
 
-#### \
+#### <br>
  **Cleanup stuck in &ldquo;preparing&rdquo; mode**
 
 The cleanup process requires a large number of calculations before it
@@ -400,7 +400,7 @@ process could be shown as *preparing* for some time before the files
 start being rotated. There is no way to track the percentage complete at
 this time.
 
-#### \
+#### <br>
  **Unexpected "Skipped" notifications for a backup**
 
 You might get this notification if you have reregistered servers (the
@@ -421,7 +421,7 @@ to migrate the previous backup vault from a previous agent to a new
 fresh agent (with no backup configurations or previous backups run
 against it).
 
-#### \
+#### <br>
  **Files modified during backup are missing or corrupted**
 
 **Note**: This issue relates to the data that is backed up, and not to

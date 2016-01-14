@@ -66,9 +66,9 @@ version.
 
 1.  Click **Start** \> **Control Panel**.
 2.  Click **Windows Update** to view the information related to updates
-    ready to be installed.\
+    ready to be installed.<br>
      If there is a green shield on the Windows Update page, the server
-    has all patches applied.\
+    has all patches applied.<br>
      Otherwise, proceed with the installation of any pending updates.
 
 ### Windows Server 2012 and 2012 R2
@@ -99,7 +99,7 @@ imaging or migrating a server.
 #### For Windows Server 2008 and 2008 R2
 
 1.  Click **Start \>****Control Panel**.
-2.  Click **Windows Update**.\
+2.  Click **Windows Update**.<br>
      If there is a pending reboot, the page will display a message to
     restart the server. Reboot the server and apply the updates on
     reboot.
@@ -112,7 +112,7 @@ imaging or migrating a server.
     term.
 3.  On the ribbon under the search field, click **Control Panel**.
 4.  Click **System and Security** and then **Windows Update** to see if
-    Windows is pending a reboot or restart.\
+    Windows is pending a reboot or restart.<br>
      If any pending updates are present, reboot the server and apply the
     updates on reboot.
 
@@ -169,7 +169,7 @@ service.
 2.  In the **SQL Server Configuration Manager**, expand SQL
     Server **Services**.
 3.  In the right pane, right-click **SQL Server (*instanceName*)** and
-    stop the service.\
+    stop the service.<br>
      *instanceName* is the instance name of the database server.
 
 #### Windows Server 2012 and 2012 R2
@@ -183,7 +183,7 @@ service.
 4.  In the SQL**Server Configuration Manager**, expand SQL Server
     **Services**.
 5.  In the right pane, right click **SQL Server (*instanceName*)** and
-    stop the service.\
+    stop the service.<br>
      *instanceName*is the instance name of the database server.
 
 Ensure that all critical services are set to start automatically

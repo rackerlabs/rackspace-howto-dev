@@ -81,15 +81,15 @@ from the list below based on your requirements.
 
 #### Allowing only a certain IP/IP Addresses when your site is using SSL:
 
-order deny,allow\
- deny from all\
+order deny,allow<br>
+ deny from all<br>
  allow from 000.000.000.000
 
  
 
 Replace **000.000.000.000** with your IP address. This will only allow
 your IP address to access your site, and is a great way to develop your
-site without the risk of someone reaching it before it's ready.\
+site without the risk of someone reaching it before it's ready.<br>
  **You can repeat line 1 to allow multiple IPs.**
 
 #### Denying an IP/Multiple IP addresses:
@@ -108,7 +108,7 @@ site without the risk of someone reaching it before it's ready.\
 
 Replace **000\\.000\\.000\\.000** with the IP address you want to deny.
 This will deny the IP address specified/multiple IP addresses (If you
-use multiple lines, as specified below).\
+use multiple lines, as specified below).<br>
  **You can repeat line 1 to deny multiple IP addresses.**
 
 **Important note:** Implementing this code may prevent images from

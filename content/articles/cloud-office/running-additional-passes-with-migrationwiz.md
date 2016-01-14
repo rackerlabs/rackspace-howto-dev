@@ -51,9 +51,9 @@ charge. Following are some additional details about migrations passes:
 ### How to Run Additional Passes When Migrating via MigrationWiz:
 
 1. Log in to the migration portal via the link that was sent to you
-when you signed up for MigrationWiz. \
+when you signed up for MigrationWiz. <br>
  The link looks similar to the following one:
-https://rackspace.selfmigration.com/Public/Default.aspx?t=MjEyMTRiMGYtOW...\
+https://rackspace.selfmigration.com/Public/Default.aspx?t=MjEyMTRiMGYtOW...<br>
  After you log in, you are directed to the page that you were previously
 on.  
 

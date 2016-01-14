@@ -73,7 +73,7 @@ Hosting customers at this time.
 #### Is a dedicated aggregation (customer edge) device needed to use this service? {#Inter-regionconnectivityFAQ-IsaDedicatedAggregationdeviceneededtousethisservice?}
 
 Yes, a dedicated aggregation, or customer edge (CE) device is needed at
-this time.\
+this time.<br>
  We recommend one of the following devices:
 
 -   Cisco 4948E

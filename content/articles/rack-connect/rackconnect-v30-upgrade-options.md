@@ -53,8 +53,8 @@ RackConnect v3.0 provides the following benefits:
     dedicated server's public IP address. Unlike the v2.0, RackConnect
     v3.0 does not provision a public IP address by default. If you
     decide you need a public IP address, you can choose to assign one to
-    your cloud server at any time.  \
-     \
+    your cloud server at any time.  <br>
+     <br>
      **An example of where this feature provides value**: Cloud servers
     that receive load-balanced traffic from a dedicated load balancer
     usually do not require a public IP address*.*
@@ -129,7 +129,7 @@ this upgrade path:
     configuration**: This requirement means that any other cloud
     services being used (including your cloud account's Role Based
     Access Control settings) must be re-created on the new cloud account
-    used for RackConnect v3.0.\
+    used for RackConnect v3.0.<br>
       
 -   **RackConnect v3.0 and v2.0 run in parallel at the same time**:
     RackConnect v3.0 is set up on the same dedicated network devices
@@ -137,13 +137,13 @@ this upgrade path:
     RackConnect v2.0 configuration. Both v2.0 and v3.0 run in parallel
     without interfering with each other. As a result, you can migrate as
     slowly as necessary while maintaining the ability to communicate
-    between RackConnect v3.0 and v2.0 cloud servers.\
+    between RackConnect v3.0 and v2.0 cloud servers.<br>
       
 -   **Each cloud server to be migrated must have a snapshot image taken
     and shared with the new cloud account used for RackConnect v3.0**:
     The snapshot image is saved on the cloud account used for
     RackConnect v2.0 and is shared with the new cloud account used for
-    RackConnect v3.0. A data migration must occur for Windows devices.\
+    RackConnect v3.0. A data migration must occur for Windows devices.<br>
       
 -   **You will lose the existing public and private IP addresses of your
     cloud servers**: Because the server itself isn't being moved, the IP
@@ -152,12 +152,12 @@ this upgrade path:
     v3.0 server replacement can&rsquo;t receive the old IP addresses used by
     the RackConnect v2.0 server. Any necessary changes to your
     applications or environment must take into account the IP address
-    changes that will be occurring.\
+    changes that will be occurring.<br>
       
 -   **You can test RackConnect v3.0 before fully committing to the
     migration**: You can test v3.0 before you migrate your
     existing infrastructure. You can also migrate devices as quickly
-    or as slowly as you like.\
+    or as slowly as you like.<br>
       
 -   All RackConnect v2.0-supported images are currently fully compatible
     with this upgrade path.
@@ -168,7 +168,7 @@ Most customers prefer upgrade path B.  Following are the requirements
 and caveats for this upgrade path:
 
 -   **The same cloud accounts are used for both RackConnect v2.0 and
-    RackConnect v3.0**: No additional account is necessary.\
+    RackConnect v3.0**: No additional account is necessary.<br>
       
 -   **Your cloud servers keep their original public IP address and
     ServiceNet IP** address: Your server's assigned public IP address is
@@ -180,7 +180,7 @@ and caveats for this upgrade path:
     v3.0 cloud servers will be unable to use their ServiceNet IP address
     to communicate with your other cloud servers or dedicated servers;
     the cloud network IP address is used to accomplish this in
-    RackConnect v3.0. \
+    RackConnect v3.0. <br>
       
 -   **A configuration freeze is necessary for RackConnect v2.0**: After
     migration has started, RackConnect v2.0 still exists (and allows
@@ -189,11 +189,11 @@ and caveats for this upgrade path:
     devices or cloud servers. During this time you *cannot* create or
     delete RackConnect v2.0 cloud servers, cannot make changes to your
     RackConnect v2.0 Network Policy rules during the migration, though
-    you can create new RackConnect v3.0 cloud servers.\
+    you can create new RackConnect v3.0 cloud servers.<br>
       
 -   **Downtime will be on a per Cloud-server basis** &mdash; it is anticipated
     to be a few seconds as we add and move to the RackConnect Cloud
-    Network.\
+    Network.<br>
       
 -   **After the upgrade maintenance process starts, it should be
     completed in one batch**: The upgrade *can* occur in multiple

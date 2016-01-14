@@ -32,7 +32,7 @@ billingupdates@domain.com.
 **Setting up a List**
 
 To setup a List, log into the Admin Control Panel
-[here](https://cp.rackspace.com/Exchange/Mail/Lists/ "here").[\
+[here](https://cp.rackspace.com/Exchange/Mail/Lists/ "here").[<br>
 ](https://cp.rackspace.com/EmailHosting/Mail/GroupLists "here")
 
  

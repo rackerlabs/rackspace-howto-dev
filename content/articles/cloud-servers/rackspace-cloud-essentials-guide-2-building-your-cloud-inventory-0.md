@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-#### \
+#### <br>
  This Second Guide will show you how to add new Cloud Servers and Cloud Load Balancers to your account. {.first .leaf}
 
 **Cloud Servers**

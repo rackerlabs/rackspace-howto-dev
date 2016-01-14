@@ -18,7 +18,7 @@ your email throught their Administrative Control Panel*
 
 1.  Tap on the system **Settings**.
 
-    ![](/knowledge_center/sites/default/files/field/image/1.%20Settings_2.png)\
+    ![](/knowledge_center/sites/default/files/field/image/1.%20Settings_2.png)<br>
       
 
 2.  Tap **Accounts and Sync** (**Accounts**on some devices).
@@ -29,7 +29,7 @@ your email throught their Administrative Control Panel*
 
 3.  Tap on **Add**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3.%20Add_2.png)\
+    ![](/knowledge_center/sites/default/files/field/image/3.%20Add_2.png)<br>
       
 
 4.  Select **Exchange ActiveSync **(**Microsoft Exchange ActiveSync** on
@@ -39,7 +39,7 @@ your email throught their Administrative Control Panel*
 
 5.  Fill in your email address and password and tap **Manual Setup**.
 
-    ![](/knowledge_center/sites/default/files/field/image/5.%20Manual%20Setup_2.png)\
+    ![](/knowledge_center/sites/default/files/field/image/5.%20Manual%20Setup_2.png)<br>
       
 
 6.  On the next page, add in the rest of the necessary information:

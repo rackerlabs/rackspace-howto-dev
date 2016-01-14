@@ -67,27 +67,27 @@ Before we get into the details, consider the following information:
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl in source region>"
         MY_IMG="a6da1504-e1c0-4f40-8461-1ed9a9990e90"
-        curl -X PATCH \
-          -H "X-Auth-Token: $OS_AUTH_TOKEN" \
-          -H "Content-type: application/openstack-images-v2.1-json-patch" \
-          -d '[{ "op": "add", "path": "/com.mycompany.image-of", "value": "db-slave-3"}]' \
+        curl -X PATCH <br>
+          -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
+          -H "Content-type: application/openstack-images-v2.1-json-patch" <br>
+          -d '[{ "op": "add", "path": "/com.mycompany.image-of", "value": "db-slave-3"}]' <br>
           "$OS_IMAGE_URL/v2/images/$MY_IMG"
 
 3.  You need a container in your Cloud Files account to put the exported
     image in. If you don't already have one, you can create a container
-    by using the Cloud Control Panel, as follows:\
-     A. In the top navigation bar, click **Storage \> Files**.\
-     B. Click **Create Container**.\
-     C. Specify a name, the source region, and the container type.\
+    by using the Cloud Control Panel, as follows:<br>
+     A. In the top navigation bar, click **Storage \> Files**.<br>
+     B. Click **Create Container**.<br>
+     C. Specify a name, the source region, and the container type.<br>
      D. Click **Create Container**.
 4.  Create a Cloud Images `export` task in the source region. When this
     task is executed, it copies the image in Cloud Images and puts the
     copy into the container named `exported-images` in your Cloud Files
     account (also in the source region).
-5.  curl -X POST \
-          -H "X-Auth-Token: $OS_AUTH_TOKEN" \
-          -H "Content-Type: application/json" \
-          -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" \
+5.  curl -X POST <br>
+          -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
+          -H "Content-Type: application/json" <br>
+          -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" <br>
           "$OS_IMAGE_URL/v2/tasks"
 
     Cloud Images returns a 201 (Created) response. The body of the
@@ -120,8 +120,8 @@ Before we get into the details, consider the following information:
     to check on your task:
 
         TASK="7bdc8ede-9098-4d79-9477-697f586cb333"
-        curl -X GET \
-          -H "X-Auth-Token: $OS_AUTH_TOKEN" \
+        curl -X GET <br>
+          -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
           "$OS_IMAGE_URL/v2/tasks/$TASK"
 
     The response has a `status` field that starts out as `pending`,
@@ -198,10 +198,10 @@ can import it for use with Cloud Servers.
         IMAGE_CONTAINER="imported-files"
         IMAGE_FILE="a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd"
         IMAGE_NAME="Slave Database 3"
-        curl -i -X POST \
-          -H "X-Auth-Token: $OS_AUTH_TOKEN" \
-          -H "Content-Type: application/json" \
-          -d "{\"type\": \"import\", \"input\": {\"import_from\": \"$IMAGE_CONTAINER/$IMAGE_FILE\", \"import_from_format\": \"vhd\", \"image_properties\" : {\"name\": \"$IMAGE_NAME\"} } }" \
+        curl -i -X POST <br>
+          -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
+          -H "Content-Type: application/json" <br>
+          -d "{\"type\": \"import\", \"input\": {\"import_from\": \"$IMAGE_CONTAINER/$IMAGE_FILE\", \"import_from_format\": \"vhd\", \"image_properties\" : {\"name\": \"$IMAGE_NAME\"} } }" <br>
           "$OS_IMAGE_URL/v2/tasks"
 
     Cloud Images returns a 201 (Created) response. The body of the

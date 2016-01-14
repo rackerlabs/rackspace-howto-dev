@@ -36,13 +36,13 @@ SysOps**, **Managed Ops: DevOps**.
     calculate an estimate of your services with the selected service
     level.
 5.  To upgrade your service level to Managed Ops: SysOps or Managed Ops:
-    DevOps, click **Select** at the bottom of the appropriate column.\
+    DevOps, click **Select** at the bottom of the appropriate column.<br>
      **Note:** If you upgrade your service level, you cannot revert back
     to the previous level.
 6.  In the popup window, click **Request Upgrade**.
 7.  Read the Managed Operations Terms of Service, select the **I agree
     to the Cloud Terms of Service** check box, and then click **Request
-    Upgrade**.\
+    Upgrade**.<br>
      A confirmation of your upgrade is displayed on the screen.
 
 **Note:** You will see the changes in effect the next time you log in.

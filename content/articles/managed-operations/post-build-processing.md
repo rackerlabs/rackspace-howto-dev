@@ -119,8 +119,8 @@ You can combine the `build_config` options. For example:
 
 -   **`monitoring_defaults` + `auto_updates` -**installs the monitoring
     agent configured with Rackspace best practices, and turns on
-    automatic updates.\
-    \
+    automatic updates.<br>
+    <br>
 -   **`backup_agent_only`** installs the Rackspace Cloud Backup agent
     but does not configure Rackspace backups. You must separately
     identify the directories that you want backed up after the agent is

@@ -64,8 +64,8 @@ replication which we set based on the size of the provisioned cluster.
 
 Considering a Cloud Big Data deployment with 3x replication, you must
 first take your raw data set and multiply that volume by 3. This value
-indicates how much Cloud Big Data Platform resources you need.\
- \
+indicates how much Cloud Big Data Platform resources you need.<br>
+ <br>
  One additional thing to note is that a 10 TB instance actually occupies
 an entire physical machine, so users do not have to worry about sharing
 resources.

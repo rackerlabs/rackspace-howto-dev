@@ -90,8 +90,8 @@ maintenance?**
 -   Former hostnames will automatically be aliased to the new database
     hosts
 
-\
- \
+<br>
+ <br>
  **Related **Topics****
 
 -   [Important scheduled maintenance: DFW environment

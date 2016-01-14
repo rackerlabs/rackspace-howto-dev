@@ -67,7 +67,7 @@ permissions the user may have).
 
 ![ssmsnewlogin3.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsnewlogin3.PNG)
 
-\
+<br>
  9. Click on status to grant or deny permission to the Database Engine,
 enable or disable the login and to unlock the account should it get
 locked out. When all this is done click on OK to create the user.

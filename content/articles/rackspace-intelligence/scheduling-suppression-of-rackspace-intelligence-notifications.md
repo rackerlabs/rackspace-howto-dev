@@ -86,8 +86,8 @@ suppression details page.
     details page by clicking **Monitor \> Entities** and then clicking
     the name of the entity.
 2.  Scroll to the **Suppressions** section of the entity details page,
-    and then click **Create Suppression.**\
-     ![](/knowledge_center/sites/default/files/field/image/4747.5a_0.png)\
+    and then click **Create Suppression.**<br>
+     ![](/knowledge_center/sites/default/files/field/image/4747.5a_0.png)<br>
      Rackspace Intelligence has automatically selected all thw alarms
     that are associated with this entity.
 3.  Set the start and end dates and, optionally, add additional
@@ -114,7 +114,7 @@ You can perform the following editing actions for suppressions:
 1.  From the **Actions** menu on the suppression details page,
     select **Edit Timeframe**.
 2.  Update the start date, end date, or both, and then click **Update
-    Timeframe**.\
+    Timeframe**.<br>
      **Note:** If your suppression has already started, you cannot
     update the start date.
 3.  Alternatively, you can end the suppression immediately by

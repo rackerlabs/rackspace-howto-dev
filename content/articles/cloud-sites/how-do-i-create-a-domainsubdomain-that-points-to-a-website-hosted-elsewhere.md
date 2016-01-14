@@ -47,7 +47,7 @@ is *not*hosted on Cloud Sites.
 5.  Save this file as **index.php**.
 6.  Log in to your new subdomain's FTP server.
 7.  Navigate to the **/www.yourdomain.com/web/content** directory.
-8.  Upload the **index.php** into this folder.\
+8.  Upload the **index.php** into this folder.<br>
      The redirect should be fully functional.
 
 

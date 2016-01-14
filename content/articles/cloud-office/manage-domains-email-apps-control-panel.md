@@ -20,9 +20,9 @@ Panel.
 
 The following articles provide instructions for performing these tasks:
 
-[Add domain](add-domain-email-apps-control-panel)\
- [Domain aliases](manage-domain-aliases-email-apps-control-panel)\
- [DNS settings](dns-settings-email-apps-control-panel)\
- [Email archiving](enable-email-archiving-email-apps-control-panel)\
+[Add domain](add-domain-email-apps-control-panel)<br>
+ [Domain aliases](manage-domain-aliases-email-apps-control-panel)<br>
+ [DNS settings](dns-settings-email-apps-control-panel)<br>
+ [Email archiving](enable-email-archiving-email-apps-control-panel)<br>
  [Global access rights](global-access-rights-email-apps-control-panel)
 

@@ -41,7 +41,7 @@ own custom image for the Rackspace cloud.
     automatically delete old VMs and templates that were created in
     previous runs.**
 -   Ensure that whatever kickstart file you use installs the XenServer
-    and nova agents together, or the cloud-init agent.\
+    and nova agents together, or the cloud-init agent.<br>
      **Note**: cloud-init currently isn't working because of a bug with
     config-drive in OpenStack.
     -   The XenServer 6.2.0 tools ISO can be downloaded from:
@@ -76,14 +76,14 @@ own custom image for the Rackspace cloud.
 ### Quick instructions {#CreatingCentOS6.5ImageforRackspaceCloud-Instructions}
 
 1.  Use the following one-liner to kickstart the VM and generate the VHD
-    file.\
-     It performs the following actions:\
-     a. Sets variables.\
-     b. Deletes any old VMs or templates with the same name.\
-     c. Creates a new template based on the CentOS 6.0 64-bit template.\
-     d. Creates the VIM and VIF.\
-     e. Sets the install-repository parameter and PV-args parameter.\
-     f. Starts the VM, which automatically installs itself and halts.\
+    file.<br>
+     It performs the following actions:<br>
+     a. Sets variables.<br>
+     b. Deletes any old VMs or templates with the same name.<br>
+     c. Creates a new template based on the CentOS 6.0 64-bit template.<br>
+     d. Creates the VIM and VIF.<br>
+     e. Sets the install-repository parameter and PV-args parameter.<br>
+     f. Starts the VM, which automatically installs itself and halts.<br>
      **NOTE:** This one-liner assumes that the kickstart file handles
     the installation of the necessary XenServer, nova, or cloud-init
     agents in post-installation. Ensure that your kickstart file does
@@ -162,7 +162,7 @@ own custom image for the Rackspace cloud.
 
         xe vm-start uuid=$VMUUID
 
-10. Wait for installation to finish.\
+10. Wait for installation to finish.<br>
      **Tip**: You can connect to the console by using VNC; for example:
 
         # Establish ssh port forwarding to the appropriate VNC port on the XenServer
@@ -177,21 +177,21 @@ own custom image for the Rackspace cloud.
         xe vm-shutdown uuid=$VMUUID
 
 12. Use the echo command to remind yourself where the image file that
-    you prepared is located.\
+    you prepared is located.<br>
       
 
          echo "Your prepared image is named '$VMVHD' and is located in the directory '$SR' "
 
-    \
-     \
+    <br>
+     <br>
      **Note**: You can move the image file anywhere you like. You can
     also rename it. We recommend that you give the file a name that
     describes what's on the image. The image file is a binary file with
     no extractable metadata, so you cannot use the file to see what is
     in it.
 
-13.  Import the image to the Rackspace cloud.\
-     \
+13.  Import the image to the Rackspace cloud.<br>
+     <br>
      Following is a quick summary of how to do this by using the Cloud
     Images API. This summary assumes that you have already uploaded the
     image to a container called **images** in the region where you want

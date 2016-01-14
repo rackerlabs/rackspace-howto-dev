@@ -26,7 +26,7 @@ Folder that you will be migrating.
 **Outlook 2010**
 ----------------
 
-### **Export Public Folder Data to .pst\
+### **Export Public Folder Data to .pst<br>
 **
 
 1.Open Outlook 2010 while connected to your previous email environment.
@@ -38,7 +38,7 @@ Folder that you will be migrating.
  
 
 3. The first dialog of the Import and Export wizard will appear.
- Select **Export to a file \> Next**.**\
+ Select **Export to a file \> Next**.**<br>
 **
 
 ![](/knowledge_center/sites/default/files/field/image/Outlook_2010_-_export_pic2.png)

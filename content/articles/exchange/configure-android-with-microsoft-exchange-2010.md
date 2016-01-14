@@ -38,7 +38,7 @@ email through their Administrative Control Panel.
         example,**test@emailcomany.org**).
     -   **Server address**: Enter **connect.emailsrvr.com**.
     -   **Domain**: Leave this field blank.
-    -   **Username**: Enter your email address again.\
+    -   **Username**: Enter your email address again.<br>
          Some devices might have the settings as domain\\username. On
         those devices, the field should have a backslash (**\\**) before
         your email address (for example, **\\test@emailcompany.org**).
@@ -48,7 +48,7 @@ email through their Administrative Control Panel.
     ![](/knowledge_center/sites/default/files/field/image/6.%20Server%20Settings%20Exchange.png)
 
 5.  If you are prompted to enable remote security administration, tap
-    **Ok** or **Allow**.\
+    **Ok** or **Allow**.<br>
      This allows you to remotely perform a factory reset (delete all
     data) on the device from Outlook Web App if the phone is lost or
     stolen and there is sensitive company information on the device.

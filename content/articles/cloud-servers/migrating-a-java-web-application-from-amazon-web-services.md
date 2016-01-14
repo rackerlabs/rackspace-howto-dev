@@ -106,7 +106,7 @@ following figure:
             cd /etc/init.d
             sudo vi tomcat
 
-    10. Add the following information to the file.\
+    10. Add the following information to the file.<br>
          Ensure that JAVA\_HOME, TOMCAT\_HOME, START\_TOMCAT, and
         STOP\_TOMCAT refer to the correct directories.
 
@@ -166,7 +166,7 @@ following figure:
         interfere with connectivity.
     14. Test Tomcat by looking up the cloud server IP in the Rackspace
         Cloud Control Panel and opening the URL in a browser (for
-        example, **http://\<*ipAddress*\>:8080/**).\
+        example, **http://\<*ipAddress*\>:8080/**).<br>
          The Apache Tomcat landing page should appear.
 
         **Note:** You can stop and start Tomcat with the following

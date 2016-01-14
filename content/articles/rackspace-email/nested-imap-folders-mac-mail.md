@@ -30,7 +30,7 @@ recommend contacting the vendor for full support with Apple Mail.
 Apple Mail enables users to isolate a folder that is used to sort mail
 data on the email server through what is known as an IMAP path prefix.
 By adjusting this prefix, some users have been able to resolve the
-issue.\
+issue.<br>
  You can change the IMAP prefix in the advanced settings of the IMAP
 mailbox, as follows:
 

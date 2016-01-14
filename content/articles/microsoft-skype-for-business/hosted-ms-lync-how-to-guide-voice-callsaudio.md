@@ -26,12 +26,12 @@ microphone and speakers, or you can use a headset or earphones.
 
 1.  In the lower-left corner of the Skype for Business main window,
     click the **Select Your Primary Device**icon, and select **Audio
-    Device Settings** from the menu.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/4372.1.png)\
+    Device Settings** from the menu.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/4372.1.png)<br>
       
 2.  Click the **Select the device you want to use for audio**calls menu,
-    and select the device that you want to use.\
+    and select the device that you want to use.<br>
       
 3.  In the **Customize your device**section, drag the sliders to adjust
     the volumes of the speakers and microphone.
@@ -39,23 +39,23 @@ microphone and speakers, or you can use a headset or earphones.
     -   Adjust and test your microphone, using the blue indicator to
         help you choose the appropriate level. If you are using a
         handset, speak into the receiver. If you are using a headset,
-        speak into the microphone.\
-         \
+        speak into the microphone.<br>
+         <br>
          ![](/knowledge_center/sites/default/files/field/image/4372.2.png)
 
 Make an audio call {#RackerLyncHowtoGuide-Makeacall}
 ------------------
 
 In your contact list, hover your mouse pointer over the picture of the
-person you want to call, and then click the **Phone** icon. \
- \
+person you want to call, and then click the **Phone** icon. <br>
+ <br>
  ![](/knowledge_center/sites/default/files/field/image/audio1a.jpg)
 
 Answer an audio call {#RackerLyncHowtoGuide-Answeracall}
 --------------------
 
-When someone calls you, a notification appears on your screen.\
- \
+When someone calls you, a notification appears on your screen.<br>
+ <br>
  ![](/knowledge_center/sites/default/files/field/image/Audio2.JPG)
 
 You can perform any of the following actions:

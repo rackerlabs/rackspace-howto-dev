@@ -74,7 +74,7 @@ forums](http://www.dotnetnuke.com/tabid/795/default.aspx "http://www.dotnetnuke.
 ### ASPDotNetStoreFront
 
 Per [this article at ASPDotNetStoreFront's
-website](https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105 "https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105"):\
+website](https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105 "https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105"):<br>
  "Beginning with version 7.0.2.5, the software will run in Medium Trust
 natively. Customers on earlier versions than that will need to contact
 [ASPDotNetStoreFront's

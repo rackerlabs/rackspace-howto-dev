@@ -93,7 +93,7 @@ flavor (server size).
 ### Supported Images
 
 -   OnMetal - CentOS 7
--   OnMetal - CentOS 6.5\
+-   OnMetal - CentOS 6.5<br>
      **Note**: Run the CentOS 6.5 image only on a Linux Kernel release
     of 3.10 or higher, to avoid performance degradation.
 -   OnMetal - Debian 7 (Wheezy)

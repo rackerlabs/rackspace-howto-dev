@@ -141,19 +141,19 @@ consecutively as a user with sudo or superuser privileges.
 
     In the example above, \<*flavor*\> is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.\
-     \
+    `raxcloudserver`.<br>
+     <br>
      **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.\
-     \
+    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
+     <br>
      If you use any flavor other than `raxcloudserver`, the Backup Agent
     is shown as not installed in the **Backups** section at the bottom
     of the**Cloud Servers Details** page in the Cloud Control Panel, as
     shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.\
-     \
+    **Backup** tab in the Cloud Control Panel.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
 
@@ -199,19 +199,19 @@ consecutively as a user with sudo or superuser privileges.
 
     In the example above, \<*flavor*\> is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.\
-     \
+    `raxcloudserver`.<br>
+     <br>
      **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.\
-     \
+    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
+     <br>
      If you use any flavor other than `raxcloudserver`, the Backup Agent
     is shown as not installed in the **Backups** section at the bottom
     of the**Cloud Servers Details** page in the Cloud Control Panel, as
     shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.\
-     \
+    **Backup** tab in the Cloud Control Panel.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
 
@@ -272,19 +272,19 @@ tarball instructions.
 
     In the example above, \<*flavor*\> is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.\
-     \
+    `raxcloudserver`.<br>
+     <br>
      **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.\
-     \
+    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
+     <br>
      If you use any flavor other than `raxcloudserver`, the Backup Agent
     is shown as not installed in the **Backups** section at the bottom
     of the**Cloud Servers Details** page in the Cloud Control Panel, as
     shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.\
-     \
+    **Backup** tab in the Cloud Control Panel.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
 

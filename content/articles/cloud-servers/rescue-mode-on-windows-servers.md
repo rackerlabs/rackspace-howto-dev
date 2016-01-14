@@ -54,10 +54,10 @@ similar to booting into safe mode with networking enabled.
 1.  Log in to the Cloud Control Panel, and click **Servers**.
 2.  From your list of servers, click the Actions cog next to the server
     that you want to bring up in Rescue Mode and select **Enter Rescue
-    Mode **from the drop-down menu.\
+    Mode **from the drop-down menu.<br>
      ![](/knowledge_center/sites/default/files/field/image/Windowsenter.png)
 3.  Read the text in the Rescue Mode pop-over and then click **Enter
-    Rescue Mode**.\
+    Rescue Mode**.<br>
      ![](/knowledge_center/sites/default/files/field/image/rescuepopup.png)
 4.  The temporary password is displayed. Copy the password to a safe
     location since you won't be able to see it again after closing this

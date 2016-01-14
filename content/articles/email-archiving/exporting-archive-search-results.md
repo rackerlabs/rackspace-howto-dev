@@ -21,36 +21,36 @@ Complete the following steps to export the results of a search in
 the Archive Manager.
 
 1.  Log in to the [Archive
-    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).\
+    Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).<br>
      For more information, see [Log in to the Archive
-    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).\
+    Manager](http://rackspace.com/knowledge_center/article/log-in-to-the-archive-manager).<br>
       
 2.  In the upper-right corner of the window, click **Search** to access
-    the Search dashboard.\
+    the Search dashboard.<br>
      **Note**: There are three dashboards for top level administrators:
-    **Search,** **Admin,**and**Admin User**.\
+    **Search,** **Admin,**and**Admin User**.<br>
       
-3.  Click the **Search** tab.\
+3.  Click the **Search** tab.<br>
       
 4.  Locate the search name that you want to export, and click the
-    **View** option.\
+    **View** option.<br>
       
 5.  Select the type of export: PST, File (.eml format), Text, PDF, or
-    HTML.\
+    HTML.<br>
       
 6.  (*Optional*) Add a note that will be displayed next to the export
-    file in the search list*.*\
+    file in the search list*.*<br>
       
 7.  (*Optional*) Select to be notified by email when the file is ready
-    for download.\
+    for download.<br>
       
-8.  Click **Export**.\
+8.  Click **Export**.<br>
       
-9.  To begin the download process, click the **Search** tab.\
+9.  To begin the download process, click the **Search** tab.<br>
       
 10. Locate the search that you exported, and click the number in the
-    **Exp** column.\
-     All export files for this search are displayed.\
+    **Exp** column.<br>
+     All export files for this search are displayed.<br>
       
 11. Click the file name to save the file.
 

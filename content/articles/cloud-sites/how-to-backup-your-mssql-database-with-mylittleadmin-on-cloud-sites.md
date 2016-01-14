@@ -26,20 +26,20 @@ Backing Up Your MSSQL Database
     online manager
     (myLittleAdmin)](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database").
 2.  After you are logged into the online manager, click on **Tools** in
-    the bottom of the left frame.\
+    the bottom of the left frame.<br>
       
-3.  Then on the **Tools** menu, click **Database Backup and Restore.**\
-     \
-     This will open the myLittleBackup interface in a new window:\
+3.  Then on the **Tools** menu, click **Database Backup and Restore.**<br>
+     <br>
+     This will open the myLittleBackup interface in a new window:<br>
       
 4.  From myLittleBackup, click on **Backup databases** from the left
-    menu.\
-     \
-     The database backup form will load in the window's right frame.\
+    menu.<br>
+     <br>
+     The database backup form will load in the window's right frame.<br>
       
 5.  In step 1, choose the database you would like to backup from the
     drop-down menu (which should be the only one listed) and click OK to
-    continue.\
+    continue.<br>
       
 6.  Step 2 is just for information and verification; you will find
     generic information about your database in this step. Keep in mind
@@ -51,19 +51,19 @@ Backing Up Your MSSQL Database
         have a backup file saved in myLittleBackup.
 
 7.  Step 3 is **optional**, but feel free to choose a backup set name
-    and description.\
-     \
+    and description.<br>
+     <br>
      If you don't want choose a backup set name and description or
     you're not sure what to use, just leave it blank or use the database
-    name as both!\
+    name as both!<br>
       
 8.  If everything above looks correct, you're ready to click the
-    **Backup** button in Step 4.\
-     \
+    **Backup** button in Step 4.<br>
+     <br>
      During this time you will see a loading message on the screen.
     Please take heed of the warning myLittleBackup gives: **You're now
     ready to backup your database. The process can take several minutes.
-    Be patient and do not click the stop button until done.**\
+    Be patient and do not click the stop button until done.**<br>
       
 
 Finish Line

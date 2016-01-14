@@ -62,7 +62,7 @@ Server, please read the following description of the process.
 
 Traffic flow between Dedicated and Cloud Servers: RackConnect Firewall
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.png)\
+![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.png)<br>
   
 
  
@@ -70,7 +70,7 @@ Traffic flow between Dedicated and Cloud Servers: RackConnect Firewall
  Traffic Flow between Dedicated and Cloud Servers: RackConnect Load
 Balancer
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.LB_.png)\
+![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.LB_.png)<br>
   
 
 * * * * *
@@ -116,8 +116,8 @@ add &ldquo;DOMAIN\\rackconnect&rdquo; account to the RackConnect system instead 
 
 RackConnect does not support key-based authentication, so password
 authentication must be allowed for the root user during the RackConnect
-automation process.\
- \
+automation process.<br>
+ <br>
  The PermitRootLogin entry must be set to YES in the sshd config file
 during the initial process of connecting your Linux Cloud Servers
 through RackConnect. After the "rackconnect" user has been added to the

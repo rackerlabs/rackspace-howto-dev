@@ -24,8 +24,8 @@ have implemented the new token format on the Identity system back
 end. The change has minimal impact to Rackspace customers. The main
 difference that you will notice is that the authentication token value
 returned by the Identity service has a different pattern and length than
-the UUID token values issued previously. \
- \
+the UUID token values issued previously. <br>
+ <br>
  **Note:**  Make sure that you follow [Best practices for handling
 authentication
 tokens](#Best%20practices%20for%20handling%20authentication%20tokens),
@@ -132,8 +132,8 @@ Best practices for handling authentication tokens
 Following are some best practices for handling authentication tokens.  
 
 -   When you authenticate to the Rackspace Cloud Identity service be
-    sure to cache the token value that is returned. \
-     \
+    sure to cache the token value that is returned. <br>
+     <br>
      The Rackspace Cloud Identity service validates the authentication
     token in every API request before attempting to complete the
     operation. To optimize your API operations and reduce system load,
@@ -141,17 +141,17 @@ Following are some best practices for handling authentication tokens.
     applications can use the stored value instead of requiring the
     application to issue an authentication request before each API
     operation. You can reuse the cached token value as long as it
-    remains valid.\
-     \
+    remains valid.<br>
+     <br>
      **Note:** For an example of how to cache credentials with an SDK,
     see [Caching
     credentials](http://php-opencloud.readthedocs.org/en/latest/caching-creds.html) in
-    the php-opencloud documentation.\
+    the php-opencloud documentation.<br>
       
 -   Design applications to reauthenticate after receiving
     a `401 Unauthorized`{.code} response from a service endpoint, or to
     check the token expiration and reauthenticate before the token
-    expires.\
+    expires.<br>
       
 -   To simplify authentication, credential, and token management, use
     an [OpenStack command-line client

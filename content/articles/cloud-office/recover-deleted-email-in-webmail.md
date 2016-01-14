@@ -10,35 +10,35 @@ product: Cloud Office
 body_format: tinymce
 ---
 
-**Recover Deleted Email in Webmail**\
-\
+**Recover Deleted Email in Webmail**<br>
+<br>
 For up to 14 days, it is possible for users to recover email messages
-even after they have been\
+even after they have been<br>
 purged from the Trash folder. To do so, login to
 [Webmail](https://apps.rackspace.com "Webmail Login"), and perform the
-following steps:\
-\
-1. Right click on the **Trash** folder\
-\
-2. In the context menu, click **Recover Deleted Email&mldr;**\
-\
-![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_1.png)\
-\
-3. Select the message(s) that you want to recover\
-\
-![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_2.png)\
-\
-4. Click **Recover to Folder**.\
-\
-5. Select the folder you want to move the messages to\
-\
-![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_3.png)\
-\
-6. When you see the confirmation &ldquo;Message(s) Recovered&rdquo;, you are done.\
-\
+following steps:<br>
+<br>
+1. Right click on the **Trash** folder<br>
+<br>
+2. In the context menu, click **Recover Deleted Email&mldr;**<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_1.png)<br>
+<br>
+3. Select the message(s) that you want to recover<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_2.png)<br>
+<br>
+4. Click **Recover to Folder**.<br>
+<br>
+5. Select the folder you want to move the messages to<br>
+<br>
+![](/knowledge_center/sites/default/files/field/image/RecoverDeleted_3.png)<br>
+<br>
+6. When you see the confirmation &ldquo;Message(s) Recovered&rdquo;, you are done.<br>
+<br>
 *NOTE: Admins can do this on behalf of their user&rsquo;s by utilizing the
-Webmail **LoginAs***\
-*functionality available in the Control Panel.*\
-\
+Webmail **LoginAs***<br>
+*functionality available in the Control Panel.*<br>
+<br>
 ![](/knowledge_center/sites/default/files/field/image/recoverdeleted_4.png)
 

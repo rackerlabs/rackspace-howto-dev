@@ -21,13 +21,13 @@ Prerequisites
 
 To receive a credit, the SLA incident must meet the following criteria:
 
--   The SLA incident must have occurred within the last 30 days\
-    \
+-   The SLA incident must have occurred within the last 30 days<br>
+    <br>
 -   For specific concerns not mentioned in the SLA, the issue must have
-    occurred within the last 60 days\
-    \
--   Account balances must be current\
-    \
+    occurred within the last 60 days<br>
+    <br>
+-   Account balances must be current<br>
+    <br>
 -   You must meet SLA requirements and obligations within the agreed
     upon Terms of Service
 
@@ -38,30 +38,30 @@ Request an SLA credit
 
 Follow these steps to request your SLA credit:
 
-Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).\
-\
+Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).<br>
+<br>
 
 Create a support ticket and enter **Credit Request** in the subject
-field.\
-\
+field.<br>
+<br>
 
-In the **Message** field, provide the following information:\
-\
+In the **Message** field, provide the following information:<br>
+<br>
 
--   Services affected\
-    \
--   Summary of the incident\
-    \
--   Date and time that the issue began\
-    \
--   Date and time that the issue ended\
-    \
+-   Services affected<br>
+    <br>
+-   Summary of the incident<br>
+    <br>
+-   Date and time that the issue began<br>
+    <br>
+-   Date and time that the issue ended<br>
+    <br>
 -   Any associated correspondence relevant to the issue for which you
     want to receive credit such as logs, another ticket number, emails,
-    or chats\
-    \
--   Add any other details relevant to credit consideration\
-    \
+    or chats<br>
+    <br>
+-   Add any other details relevant to credit consideration<br>
+    <br>
 
 Click **Submit Ticket**.
 

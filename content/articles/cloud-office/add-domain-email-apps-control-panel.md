@@ -16,16 +16,16 @@ panel](https://apps.rackspace.com/?cp), and perform the following steps:
 1.  From the **Go to section** menu, select **Domains**.
 2.  In the **Manage** section, click **Add Domain**.
 3.  If you have already purchased the domain, enter it in the **Option
-    1** text box, and then click Continue.\
+    1** text box, and then click Continue.<br>
      Skip to step 5.
 4.  To register a new domain, enter the domain name in the box and
     select the top-level domain that you want (for example, .com or
-    .net).\
-     Click **Continue** and confirm your domain purchase.\
+    .net).<br>
+     Click **Continue** and confirm your domain purchase.<br>
      **Note:** When you purchase a new domain, a verification email is
     sent to the email address on record. You must click the verification
     link in the email within 15 days to avoid any disruption to your
-    domains.\
+    domains.<br>
      See [Additional information about Registrant Benefits and
     Responsibilities](http://www.rackspace.com/information/legal/RAAInfo),
     if needed.

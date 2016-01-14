@@ -54,7 +54,7 @@ agent: Quick Install, Step By Step, and Source.
     name of the server that you want to monitor, and then
     clicking **Create Entity**.
 3.  In the Monitoring Details section of the entity details page, click
-    **Install Agent** next to the **Monitoring Agent** option.\
+    **Install Agent** next to the **Monitoring Agent** option.<br>
      The Monitoring Agent Installation page opens.
 4.  Choose the platform of your server and then click one of the
     following tabs:

@@ -45,7 +45,7 @@ setup** option.
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/4_9.png)
 
 *Note: Depending on what OS of Android you're running, if you have just
-the "Domain" as an option, you may leave this field blank*.\
+the "Domain" as an option, you may leave this field blank*.<br>
   
 
 6. Next, enter the Domain address exactly as it appears from

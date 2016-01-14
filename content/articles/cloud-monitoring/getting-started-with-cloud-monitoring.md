@@ -27,7 +27,7 @@ API, we have created ***Raxmon***, a Command Line Interface (CLI) tool.
 Step One: Setup 
 ----------------
 
-#### \
+#### <br>
  Install RaxmonCLI
 
 To avoid repeating the raxmon installation on each new Cloud Server,
@@ -100,12 +100,12 @@ raxmon.
 You will need to update multiple items in one go, so let's review how to
 input lists and dictionaries in the terminal:
 
-> **List**\
->  Use a comma delimited string. For example:\
+> **List**<br>
+>  Use a comma delimited string. For example:<br>
 >  raxmon-checks-create --monitoring-zones=mzA,mzB,mzC
 >
-> **Dictionary**\
->  Use a comma delimited string of key=value pairs. For example\
+> **Dictionary**<br>
+>  Use a comma delimited string of key=value pairs. For example<br>
 >  raxmon-entities-create --metadata="location=server room,tag=foobar"
 
 * * * * *

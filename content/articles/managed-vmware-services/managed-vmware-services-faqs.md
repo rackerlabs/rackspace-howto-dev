@@ -145,8 +145,8 @@ In the
 portal, go to **Products \> Managed Virtualization** and click on the
 gear icon next to the name of the VM. Select **Resize VM**. The current
 RAM and CPU are selected. Change the values as necessary and then click
-**Resize Virtual Machine**.\
- \
+**Resize Virtual Machine**.<br>
+ <br>
  **Warning:** Selecting **Resize VM** will cause your VM to power off
 immediately. This process will take approximately 5 minutes plus the
 required boot time.

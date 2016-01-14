@@ -41,34 +41,34 @@ Running the Remote Desktop Connection Client
 To find Remote Desktop, click Start - **All Programs** - **Accessories**
 - Communications - **Remote Desktop Connection**.
 
-\
+<br>
 
 ![rdp01.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/rdp01.PNG)
 
-\
+<br>
  Enter the IP address of the server and click **Connect**.
 
-\
+<br>
 
 ![rdp02.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/rdp02.PNG)
 
-\
+<br>
  If you would like to set up file transfer or enable your clipboard for
 copy/paste, click **Options...**.
 
-\
+<br>
 
 ![rdp03.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/rdp03.PNG)
 
-\
+<br>
  Click the **Local Resources** tab, select the Clipboard option, click
 **More**, and then click **Drives**.
 
-\
+<br>
 
 ![rdp05.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/rdp05.PNG)
 
-\
+<br>
  Save your session by clicking the General tab, then clicking **Save
 As...**.
 
@@ -80,11 +80,11 @@ in for the first time, enter the Computer Name\\Administrator and the
 corresponding password (this is the password that was emailed to you
 when your server build was completed).
 
-\
+<br>
 
 ![rdp04.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/rdp04.PNG)
 
-\
+<br>
  Congratulations you have successfully connected and logged in to your
 new server!.
 

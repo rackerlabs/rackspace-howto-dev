@@ -57,7 +57,7 @@ changed to ensure that the password is synchronized.
 Remove a user mailbox
 ---------------------
 
-1.  Remove the user from the email security group.\
+1.  Remove the user from the email security group.<br>
      **Note**: Directory Sync disables the user&rsquo;s mailbox.
 2.  Go to the administration Control Panel.
 3.  Confirm that the mailbox is disabled.
@@ -105,7 +105,7 @@ deleted from the Cloud Office Control Panel.
 Create a contact (Exchange)
 ---------------------------
 
-1.  Create a Contact object within the Active Directory.\
+1.  Create a Contact object within the Active Directory.<br>
      **Note**: When you are creating the contact, the Display Name
     within the object will create the Display Name within the Cloud
     Office Control Panel for the contact.

@@ -34,7 +34,7 @@ panel](https://cp.rackspace.com), and perform the following steps:
 3.  Click **Review Order**.
 4.  Review the upgrade details and billing information. To update
     billing information click **Edit**.
-5.  Click **Complete Order**.\
+5.  Click **Complete Order**.<br>
      **Note**: Prorated charges will appear on your next bill.
 
 

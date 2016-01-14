@@ -32,15 +32,15 @@ Initiate a domain transfer
 3.  In the domain list, locate the domain that you want to move to
     another account.  
 4.  Within the **Transfer** column on the right, click **Start**. The
-    **Start Transfer** page is displayed.\
+    **Start Transfer** page is displayed.<br>
      **Note**: The **Transfer** column can be hidden or displayed for
     limited administrators. You set the visibility via the
     **Permissions** tab on the **Add/Edit Admins** page.
 5.  Review the steps to transfer the domain and then click **Start
-    Transfer**.\
+    Transfer**.<br>
      The **Start Transfer** page is updated to show a URL (available for
     24 hours) that you can email to the administrator of the destination
-    account.\
+    account.<br>
      **Note**: You can click the **Cancel Transfer**button at any time
     to cancel the transfer.
 

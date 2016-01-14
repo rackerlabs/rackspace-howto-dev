@@ -15,8 +15,8 @@ back up data on Cloud Sites, including files and mysql databases. All
 backups are stored on your Rackspace Cloud Files account. The backups
 are done on a site-by-site basis and are initiated manually. There is
 also an option for setting up automated backups utilizing a Cloud
-Site's Scheduled Task (cronjob).\
- \
+Site's Scheduled Task (cronjob).<br>
+ <br>
  The Zipit Backup Utility is run from your account and does not
 externally store any of your personal information such as your database
 credentials or Cloud Files API key.
@@ -79,7 +79,7 @@ Unsupported Service (as defined herein) and you also agree to the terms
 of the GPL License! See: [GPL
 v3](http://www.gnu.org/licenses/gpl-3.0.en.html)*
 
-\
+<br>
  If you use the tool described in this article, you agree that the tool
 is an &ldquo;Unsupported Service&rdquo;. Rackspace makes no representation or
 warranty whatsoever regarding any Unsupported Service, and you agree

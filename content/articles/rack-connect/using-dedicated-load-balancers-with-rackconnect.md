@@ -28,16 +28,16 @@ associated load balancer pool(s). If you use an F5 BIG-IP Local Traffic
 Manager (LTM) with RackConnect, you can specify the load balancer pool
 name that a cloud server should be placed in when it is created. When
 you delete the cloud server, it will automatically be removed from the
-pool.\
- \
+pool.<br>
+ <br>
  With RackConnect, there are two ways that you can automatically
 associate your cloud servers with one or more load balancer pools on
-your BIG-IP LTM:\
- \
+your BIG-IP LTM:<br>
+ <br>
  **Option 1 &mdash; Metadata:**When creating a cloud server, use the metadata
-option to specify the pool or pools.\
- \
- **Metadata Key**: RackConnectLBPool\
+option to specify the pool or pools.<br>
+ <br>
+ **Metadata Key**: RackConnectLBPool<br>
  **Metadata Value**: The exact name of the pool as defined on the load
 balancer. Use a semicolon separated list for more than one pool.
 
@@ -57,12 +57,12 @@ update a cloud server's metadata at any time to add/remove cloud servers
 from load balancer pools. These metadata updates can be made via the
 Cloud Server's API.
 
-\
+<br>
  **Option 2 &mdash; Name Match:**Before you create your cloud servers, provide
 Rackspace with the preferred names and the pool(s) to associate with
 your cloud servers. Currently, you must configure this through a ticket
-request to your Support team.\
- \
+request to your Support team.<br>
+ <br>
  Regardless of which option you select, consider the following
 requirements:
 
@@ -94,11 +94,11 @@ removed if the respective name match rule is deleted.
 
 The following diagram shows the path that inbound (and return) load
 balancer pool traffic follows to your cloud servers when you use an F5
-BIG-IP load balancer with RackConnect:\
+BIG-IP load balancer with RackConnect:<br>
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RackConnect.F5.TrafficFlow.png)
 
-\
+<br>
  Brocade Load Balancers
 -----------------------
 
@@ -139,7 +139,7 @@ as follows:**
 
 The following diagram shows the path that inbound and return load
 balancer pool traffic follows to your cloud servers when you use a
-Brocade ADX load balancer with RackConnect:\
+Brocade ADX load balancer with RackConnect:<br>
 
 ![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RackConnect.Brocade.TrafficFlow.png)
 

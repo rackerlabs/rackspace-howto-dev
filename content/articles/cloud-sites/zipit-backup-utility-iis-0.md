@@ -22,7 +22,7 @@ externally store any of your personal information such as your database
 credentials or Cloud Files API key.
 
 If you are looking for the Linux/PHP version of Zipit click here: [Zipit
-Backup Utility for Cloud Sites - Linux\
+Backup Utility for Cloud Sites - Linux<br>
 ](http://zipitbackup.com)
 
 **How it works:**
@@ -71,7 +71,7 @@ Key.](http://www.rackspace.com/knowledge_center/index.php/Generating_your_API_ke
 IIS/ASPX*
 
 *\*\*\* Linux sites can use the original Zipit Backup Utilty
-[here](http://zipitbackup.com).\
+[here](http://zipitbackup.com).<br>
 *
 
 *By installing ASPX Zipit Backup Utility you agree that this feature is
@@ -82,15 +82,15 @@ v3](http://www.gnu.org/licenses/gpl-3.0.en.html)*
 GitHub Access can be found :
 
 ASPX ZipIt Installer
-: [http://onesandzeros415.github.io/ASPXZipIt-Installer/\
+: [http://onesandzeros415.github.io/ASPXZipIt-Installer/<br>
 ](http://onesandzeros415.github.io/ASPXZipIt-Installer/)ASP.NET 3.5
-: [http://onesandzeros415.github.com/ASPXZipIt-NET35/\
+: [http://onesandzeros415.github.com/ASPXZipIt-NET35/<br>
 ](http://onesandzeros415.github.com/ASPXZipIt-NET35/)ASP.NET 4.0
-: [http://onesandzeros415.github.com/ASPXZipIt-NET40/\
+: [http://onesandzeros415.github.com/ASPXZipIt-NET40/<br>
 ](http://onesandzeros415.github.com/ASPXZipIt-NET40/)ASP.NET 4.5
 : [http://onesandzeros415.github.com/ASPXZipIt-NET45/](http://onesandzeros415.github.com/ASPXZipIt-NET45/)
 
-*\
+*<br>
 *If you use the tool described in this article, you agree that the tool
 is an &ldquo;Unsupported Service&rdquo;. Rackspace makes no representation or
 warranty whatsoever regarding any Unsupported Service, and you agree

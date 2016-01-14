@@ -23,18 +23,18 @@ per-device overview of your billing charges.
 2.  In the upper-right corner of the page, click **Account: *your
     Username* \> Billing and Payments.**
 3.  Under Billing History, click the ID number of the invoice that you
-    want to view.\
+    want to view.<br>
 
-    ![](/knowledge_center/sites/default/files/field/image/billinghistory.png) \
+    ![](/knowledge_center/sites/default/files/field/image/billinghistory.png) <br>
       
-4.  Under Invoice Summary, click **Detailed View of Charges**. \
+4.  Under Invoice Summary, click **Detailed View of Charges**. <br>
 
-    ![](/knowledge_center/sites/default/files/field/image/invoicesummary.png)\
-     \
+    ![](/knowledge_center/sites/default/files/field/image/invoicesummary.png)<br>
+     <br>
      A separate window opens and displays your detailed invoices. The
-    invoice can take up to 1 minute to load.\
-     \
-     Once loaded, the invoice should look as follows:\
+    invoice can take up to 1 minute to load.<br>
+     <br>
+     Once loaded, the invoice should look as follows:<br>
 
     ![](/knowledge_center/sites/default/files/field/image/detailedinvoice.png)
 
@@ -48,7 +48,7 @@ collapsible list of detailed line items. Detailed line items show the
 devices that use the service, indicated by the name given to the device
 when it was created.
 
-To expand the list, click the arrow next to the service.\
+To expand the list, click the arrow next to the service.<br>
          
   ![](/knowledge_center/sites/default/files/field/image/detailedinvoiceexpand.png)
 
@@ -60,13 +60,13 @@ was used.
 For example, in the Cloud Servers list, the cost for the server named
 LinuxTEST is calculated from two items:  Legacy Server Uptime and Legacy
 Server IP. The number in the first line is the sum of the two items
-under it.\
+under it.<br>
           
  ![](/knowledge_center/sites/default/files/field/image/linuxtest.png) 
 
 If you want details about how a device&rsquo;s use charge was calculated,
 place your cursor over the charge. A pop-up box appears next to the
-cursor with the equation used to calculate the charge.\
+cursor with the equation used to calculate the charge.<br>
           
  ![](/knowledge_center/sites/default/files/field/image/linuxequation.png)
 
@@ -84,7 +84,7 @@ associated with a service that was listed in the CSV format, look under
 
         
 
-\
+<br>
    
 
  

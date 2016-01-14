@@ -90,12 +90,12 @@ To create a new alarm, complete the following steps:
 3.  In the **Monitoring Checks** section of the entity details page,
     click the check for which you want to create the alarm.
 4.  On the check details page, scroll down to the **Monitoring
-    Alarms** section, and click **Create Alarm**.\
+    Alarms** section, and click **Create Alarm**.<br>
      Rackspace Intelligence automatically suggests the appropriate alarm
     for the check type that you select. For example, if you want to
     create an alarm for the CPU check type, Rackspace Intelligence
     automatically guides you through the steps for creating a CPU
-    alarm.\
+    alarm.<br>
      **Note:** If you want to create an alarm for an [agent check
     type](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html),
     you must install the Rackspace monitoring agent on the server.
@@ -104,7 +104,7 @@ To create a new alarm, complete the following steps:
     alarm for an agent check type without an agent
     installed.](#createagenttypealarmwithoutagent)
 5.  In the **Choose Alarm Type** section, select the type of alarm, and
-    then click **Next Step**.\
+    then click **Next Step**.<br>
      The wizard continues to guide you through the steps of setting up
     the alarm. If you selected **Write your own alarm criteria
     (Advanced)**instead, you are presented with an interface that lets
@@ -120,15 +120,15 @@ To create a new alarm, complete the following steps:
     -   Critical Threshold = 80
     -   Consecutive Count = 1
 
-8.  Click **Test Alarm**.\
+8.  Click **Test Alarm**.<br>
      If you set the **Warning Threshold** and **Critical Threshold**
     values to a value that is greater than the **Current value** that is
     listed on the left side of the Alarm Settings section, the test
-    alarm returns an **OK** result.\
+    alarm returns an **OK** result.<br>
      If you set the **Warning Threshold** and **Critical Threshold**
     values to a value that is less than the **Current value**, clicking
-    **Test Alarm** returns either a **Warning** or **Critical** result.\
-     \
+    **Test Alarm** returns either a **Warning** or **Critical** result.<br>
+     <br>
 
     ![](/knowledge_center/sites/default/files/field/image/intelligence-alarms-test-critical.png)
 9.  After you have tested your alarm, click **Create Alarm**.
@@ -166,7 +166,7 @@ You can perform the following editing actions for alarms:
 ### Edit the alarm criteria
 
 1.  From the **Actions** menu on the alarm details page, select **Edit
-    Criteria**.\
+    Criteria**.<br>
      The Edit Alarm Criteria dialog box opens in basic mode. If you want
     to edit the criteria in advanced mode, see the note at the end of
     this procedure.
@@ -227,7 +227,7 @@ installed. These steps assume that you already created an HTTP check.
     guidance. To obtain a test result of OK, you must specify values
     that are greater than the current values for **Warning
     Threshold** and **Critical Threshold**.
-7.  Click **Test Alarm** to test the alarm.\
+7.  Click **Test Alarm** to test the alarm.<br>
      **Note: **If your warning threshold is less than the value that is
     displayed for the current value, you receive a**Warning** result
     when you test the alarm. If you click **Create
@@ -264,9 +264,9 @@ system check.
     that are greater than the **Current value** that is displayed on the
     left side of the section.
 7.  After you have successfully tested your alarm, click **Create
-    Alarm**.\
+    Alarm**.<br>
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-alarms-filesystem-alarm-settings.png)\
+    ![](/knowledge_center/sites/default/files/field/image/intelligence-alarms-filesystem-alarm-settings.png)<br>
      The new alarm is displayed on the alarm details page.
 
 ### Create an alarm for an agent check type without an agent installed
@@ -280,7 +280,7 @@ check.
 1.  On the **Monitoring** page, click on the entity for which you want
     to define an alarm.
 2.  In the **Monitoring Checks** section of the entity details page,
-    click a CPU check for which you want to create an alarm.\
+    click a CPU check for which you want to create an alarm.<br>
      The check details page displays a warning that you need to have a
     monitoring agent installed to generate metrics.
 3.  Click **Create Alarm**.
@@ -289,7 +289,7 @@ check.
 5.  On the next page, in the **Alarm Details** section, type a name for
     the alarm and select the appropriate notification plan.
 6.  In the **Alarm Settings **section, enter appropriate values
-    for **Warning Threshold** and **Critical Threshold**.\
+    for **Warning Threshold** and **Critical Threshold**.<br>
      **Note:** No current value is displayed to use as a basis for
     defining your threshold. Rackspace Intelligence does not display a
     current value because no monitoring agent is installed. A warning
@@ -297,7 +297,7 @@ check.
     generate any metrics until a monitoring agent has been installed on
     the server. You can still create the alarm, but you must install an
     agent before you can use the alarm.
-7.  Click **Create Alarm**.\
+7.  Click **Create Alarm**.<br>
      A warning is displayed that you do not have a monitoring agent
     installed.
 8.  Click **Create Alarm Anyway**.

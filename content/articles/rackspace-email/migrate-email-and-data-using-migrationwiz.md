@@ -38,8 +38,8 @@ Use the following resources to help you create your mailboxes:
 
 You need the usernames and passwords for both your previous service and
 the Rackspace environment. The migration tool requires that you enter
-this information.\
-  \
+this information.<br>
+  <br>
  To ensure that mail is routed properly to your new mailboxes, you must
 update the MX records for your domain.  The following article provides
 you with the appropriate DNS records:

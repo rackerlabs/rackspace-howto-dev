@@ -61,8 +61,8 @@ policies you created.
 3.  In the popup dialog box, enter a name for the webhook, and then
     click **Save Webhook**.
 4.  Copy the address created for the webhook. You will need it during
-    the next set of steps.\
-     \
+    the next set of steps.<br>
+     <br>
      You can now execute a POST request against this URL in order to use
     your webhook manually via CURL. For more information, see the [Auto
     Scale Developer
@@ -98,7 +98,7 @@ policies you created.
     alarm of Critical or Warning occurs, and that ScaleDown is triggered
     if the monitoring is set to OK.
 9.  Click Save **Notification Plan**.
-10. At the top of the Rackspace Intelligence window, click **Monitor**.\
+10. At the top of the Rackspace Intelligence window, click **Monitor**.<br>
      The cloud server is listed.
 11. Click the cloud server name, and on the details page, click **Create
     Check** under Monitoring Checks.
@@ -108,8 +108,8 @@ policies you created.
         check that is appropriate for your environment.
     -   **Check Name:** Enter a name to easily identify the check.
 
-13. Click**Create Check**.\
-     The details page for the check is displayed.\
+13. Click**Create Check**.<br>
+     The details page for the check is displayed.<br>
       
 14. To set up the alarm criteria that will trigger the monitoring check
     that you just created, click **Create Alarm**.

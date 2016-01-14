@@ -18,14 +18,14 @@ mailboxes on a domain. Let's take a look at how to set this up:
 mouse over the **Go to** section drop-down menu and select **Rackspace
 Email**.
 
-\
+<br>
 
  ![](http://c4162713.r13.cf2.rackcdn.com/(E%26A)RackspaceEmailAlias.png) 
 
 2. In the Email Accounts section select the **Aliases** link and select
 the **Add Alias** button.
 
-![](http://c4162713.r13.cf2.rackcdn.com/(E%26A)RackspaceEmailAlias2.png) \
+![](http://c4162713.r13.cf2.rackcdn.com/(E%26A)RackspaceEmailAlias2.png) <br>
  *Note*: *If you have multiple domains, select the appropriate domain
 name. To change domains select the change domain link.* 
 

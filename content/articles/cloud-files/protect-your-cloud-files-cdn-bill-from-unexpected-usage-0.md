@@ -25,12 +25,12 @@ known as &ldquo;hot linking&rdquo; and can result in a massive increase to your 
 bill if the problem goes unnoticed. 
 
 You can protect yourself, your content, and your invoice from hot
-linking in the following ways:\
- \
- -- Constant monitoring and alerts for abnormal CDN bandwidth usage\
+linking in the following ways:<br>
+ <br>
+ -- Constant monitoring and alerts for abnormal CDN bandwidth usage<br>
  -- Proactive measures to make it more difficult to access your site&rsquo;s
-source code\
- \
+source code<br>
+ <br>
  The following sections discuss  these options.
 
  
@@ -44,7 +44,7 @@ Panel.
 1.  Log in
     to [http://mycloud.rackspace.com](http://mycloud.rackspace.com/). 
 2.  In the upper-right corner of the panel, click the **Account:
-    *yourCloudAccountUsername*** menu and select **Usage Overview**.\
+    *yourCloudAccountUsername*** menu and select **Usage Overview**.<br>
      On the Current Usage page, you can see the service usage for all of
     your Rackspace products and services.
 3.  Next to any service, click the down arrow for more information about
@@ -62,7 +62,7 @@ immediately. You can also enable these logs via the Cloud Files API or
 from your [Cloud Control Panel](http://mycloud.rackspace.com/) by
 performing the following steps:
 
-1. In the top navigation bar, click **Storage \> Files**.\
+1. In the top navigation bar, click **Storage \> Files**.<br>
  2. Click the gear icon next to the container for which you want to
 enable CDN logs, and select **Enable Logs**.
 

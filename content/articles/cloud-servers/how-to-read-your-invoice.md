@@ -13,7 +13,7 @@ body_format: tinymce
 Your monthly Rackspace account invoice includes account and billing
 information, payment information, tax information, and summaries of your
 service, promotions, and discounts. This article provides a detailed
-description of each page and field in your PDF or CSV invoice.\
+description of each page and field in your PDF or CSV invoice.<br>
   
 
 Recent changes
@@ -21,7 +21,7 @@ Recent changes
 
 The invoice format has been improved. The information on your invoice is
 now better summarized to eliminate an excessively long invoice. Your
-invoice now also provides a **Service Summary**.\
+invoice now also provides a **Service Summary**.<br>
   
 
 Billing and account information
@@ -145,7 +145,7 @@ The following pages apply only if you are assessed a Goods and Services
 Tax (GST). They show the aggregate product charges broken down into
 taxable (T) and non-taxable charges for the given billing period.
 
-![](/knowledge_center/sites/default/files/field/image/832-6a.png)\
+![](/knowledge_center/sites/default/files/field/image/832-6a.png)<br>
   
 
 ![](/knowledge_center/sites/default/files/field/image/832-8.png)

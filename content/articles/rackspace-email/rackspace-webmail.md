@@ -15,8 +15,8 @@ through a Webmail interface. Webmail provides a full functional Calendar
 with the ability to manage Contacts as well as syncing them to your
 mobile device. Webmail also allows users to reset passwords, create
 filters, add signatures and much much more. Let's take a look at the
-Webmail features below:\
-\
+Webmail features below:<br>
+<br>
 
 -   [Logging Into Webmail](#LogginIntoWebmail)
 -   [Contacts](#Contacts)
@@ -25,14 +25,14 @@ Webmail features below:\
 -   [Notes](#Notes)
 -   [Settings](#Settings)
 
-\
-\
+<br>
+<br>
  **Logging Into Webmail** To login into Webmail visit the following URL:
-[https://apps.rackspace.com/](https://apps.rackspace.com/)\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/WebmailLogin.png)\
-\
- Upon logging in, Rackspace allows several options:\
+[https://apps.rackspace.com/](https://apps.rackspace.com/)<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/WebmailLogin.png)<br>
+<br>
+ Upon logging in, Rackspace allows several options:<br>
 
 -   Remember this info - The ability for Rackspace to interact with your
     browser to remember your login information
@@ -40,8 +40,8 @@ Webmail features below:\
     logging in, your data is encrypted
 -   Hide browser toolbars
 
-\
-\
+<br>
+<br>
  **Contacts** Rackspace email allows users the ability to manage their
 contacts through our Webmail interface. Users have the ability add new
 contacts, import/export old contacts using a .csv file, export to
@@ -50,8 +50,8 @@ alphabetically.  Rackspace also allows you to sync your contacts with
 your mobile device as well with Rackspace Mobile Sync. For more
 information on how to do this, please see the following article -
 [Rackspace Email and Hosted Exchange
-settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)\
-\
+settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)<br>
+<br>
  **Calendar** Rackspace email allows users the ability to manage their
 appointments and meetings through our Wembail interface. Users have the
 ability to share their calendar, creat personal calendars, import events
@@ -59,26 +59,26 @@ and add shared calendars within your domain. Rackspace also allows you
 to sync your calender events with your mobile device as well with
 Rackspace Mobile Sync. For more information on how to do this, please
 see the following article - [Rackspace Email and Hosted Exchange
-settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)\
-\
+settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)<br>
+<br>
  **Tasks** Rackspace email allows users the ability to manage their
 tasks through our Webmail interface. Users have the ability to create
-new tasks, manage their tasks and create task list.\
-\
+new tasks, manage their tasks and create task list.<br>
+<br>
  **Notes** Rackspace email allows users the ability to create notes for
 new ideas, meeting summarys or just some quick thoughts.  Rackspace also
 allows you to sync your Notes with your mobile device as well with
 Rackspace Mobile Sync. For more information on how to do this, please
 see the following article - [Rackspace Email and Hosted Exchange
-settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)\
-\
+settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings)<br>
+<br>
  **Settings** Rackspace Email provides various options for users to
 manage their email account. While in the Webmail interface, select
 Settings in the top right hand corner to see a list of features and
-options available for users:\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail.png)\
-\
+options available for users:<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail.png)<br>
+<br>
  **General Settings: Email options**
 
 -   Display Preferences - several options for users to display HTML
@@ -90,23 +90,23 @@ options available for users:\
 -   Trash Options - the option to move deleted email to the trash or
     immediately purge upon deletion
 
-\
-\
+<br>
+<br>
  **General Settings: Calendar**
 
 -   Invitations - the option to delete invitations after responding
 
-\
-\
+<br>
+<br>
  **General Settings: Language & Date/Time**
 
 -   Language - The option to choose between 11 different languages.
 -   Date and Time - set your date, time and current time zone.
 
-\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail2.png)\
-\
+<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail2.png)<br>
+<br>
  **Composing Email: Composing**
 
 -   Composing - various options to choose from such as auto-completing
@@ -117,8 +117,8 @@ options available for users:\
     reply and to set a user defined start text and end text of your
     choice.
 
-\
-\
+<br>
+<br>
  **Composing Email: Identities**
 
 -   Add New Identity - The ability to create a new identities which
@@ -129,10 +129,10 @@ options available for users:\
     more, please see the following article: [Adding A Rackspace Email
     Signature](http://www.rackspace.com/knowledge_center/article/adding-a-signature-to-rackspace-email)
 
-\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail3.png)\
-\
+<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail3.png)<br>
+<br>
  **Incoming Email: Auto-reply**
 
 -   Auto-Reply - activate your auto-reply feature for times when your
@@ -142,10 +142,10 @@ options available for users:\
 -   Filtering - The ability to create filters for specific incoming
     email and to route them to a specified folder.
 
-\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail4.png)\
-\
+<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail4.png)<br>
+<br>
  **Spam Settings: Preferences**
 
 -   Spam Filtering - the ability to turn your spam filtering on and off,
@@ -153,8 +153,8 @@ options available for users:\
 -   Spam Handling - Specify how you would like your spam email to be
     handled.
 
-\
-\
+<br>
+<br>
  **Spam Settings: Safelists**
 
 -   Safelists - Specify what email should be by passed through filters
@@ -162,24 +162,24 @@ options available for users:\
 -   Blacklists - Specify what email should be blocked through either the
     sent users IP Address, Email Address or Domain.
 
-\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail5.png)\
-\
+<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail5.png)<br>
+<br>
  **External Accounts**
 
 -   Add An External Account - the option to add an external email
     account like Gmail Or Yahoo and download your email into your
     Rackspace Account.
 
-\
-\
- ![](http://c15043262.r62.cf2.rackcdn.com/Webmail6.png)\
-\
+<br>
+<br>
+ ![](http://c15043262.r62.cf2.rackcdn.com/Webmail6.png)<br>
+<br>
  **Change Password: **
 
 -   Change Your Password - the option to update your password.
 
-\
+<br>
 
 

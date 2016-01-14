@@ -15,44 +15,44 @@ the Outlook Web App to set up your Outlook email client with Exchange
 2010.
 
 1.  Log in to [connect.emailsrvr.com](http://connect.emailsrvr.com) with
-    your email address and password.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.1b.png) \
+    your email address and password.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.1b.png) <br>
       
 2.  In the top right corner of the screen, click **Options** and then
-    select **See All Options**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.2a_1.png) \
+    select **See All Options**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.2a_1.png) <br>
       
 3.  In the screen that opens, select **Setup Outlook** under **Shortcuts
-    to things you can do**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.3a.png)\
-     \
+    to things you can do**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.3a.png)<br>
+     <br>
      After you've selected **Setup Outlook** your configuration file
-    begins to download.\
+    begins to download.<br>
       
 4.  After the download is complete, locate the configuration file and
-    double-click the file to run the configuration.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.4a.png)\
-     \
+    double-click the file to run the configuration.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.4a.png)<br>
+     <br>
      As soon as the configuation finishes, a pop screen will appear
-    asking you for your credentials.\
+    asking you for your credentials.<br>
       
 5.  Enter in email address and password for the email account your
-    creating, and then click **Create**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.5b.png)\
-     \
+    creating, and then click **Create**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.5b.png)<br>
+     <br>
      The verification process begins. After your credentials are
     verified, Outlook opens and presents another screen asking for your
-    credentials.\
+    credentials.<br>
       
-6.  Enter your email address and password, and then click **OK**.\
-     \
-     ![](/knowledge_center/sites/default/files/field/image/2133.6a.png)\
-     \
+6.  Enter your email address and password, and then click **OK**.<br>
+     <br>
+     ![](/knowledge_center/sites/default/files/field/image/2133.6a.png)<br>
+     <br>
      If everything is correct, your profile is created and mail starts
     to sync to your inbox.
 

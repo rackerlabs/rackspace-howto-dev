@@ -32,47 +32,47 @@ This article shows how to manually install WordPress on Cloud Sites.
 1.  Login to the [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com). If you are new the
     Rackspace Cloud, please refer to the article [Adding a new
-    website](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website).\
+    website](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website).<br>
       
 2.  Navigate the Hosting-\>Cloud Sites menu to the website hyperlink on
-    which WordPress is to be installed\
-     \
+    which WordPress is to be installed<br>
+     <br>
      **NOTE:** The domain must have database feature selected. The
     database feature can be added by using the CHANGE PLAN hyperlink on
-    the domain **General Settings** tab.\
+    the domain **General Settings** tab.<br>
       
 3.  Upload WordPress software files to the desired location on the
     website using FTP - Refer to [Upload content to a website using
-    FTP](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP")\
+    FTP](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP")<br>
       
 4.  To integrate WordPress to the root of domain (e.g.
     http://example.com/), place all contents of the uncompressed
     wordpress directory (excluding the directory itself) into the
-    /web/content/ directory which is the root directory of the site.\
+    /web/content/ directory which is the root directory of the site.<br>
       
 5.  To have the WordPress installation in its own subdirectory on the
     website (e.g. http://example.com/blog/), rename the uncompressed
     wordpress directory to the name of choice and place it on the web
     server. For e.g. to create a WordPress installation in a directory
     called "blog", rename the directory called "wordpress" to "blog" and
-    upload it to the root directory of the web site.\
+    upload it to the root directory of the web site.<br>
       
 6.  Next create a new Mysql database (e.g. *prefix*\_wp20) with user
     (e.g. *prefix*\_wp20 ).  To create the database within the Cloud
     Sites infrastructure please refer to our article on [Adding a MySQL
     database to a website or
     domain](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain").
-     \
-     \
+     <br>
+     <br>
      If you prefer to use our Cloud Databases service you can follow the
     instructions in this article on [using Cloud Databases with Cloud
-    Sites](http://www.rackspace.com/knowledge_center/article/using-cloud-databases-with-your-cloud-site).\
+    Sites](http://www.rackspace.com/knowledge_center/article/using-cloud-databases-with-your-cloud-site).<br>
       
 7.  Note the database information *database name*,** ***user name*,
     *password,*  and *hostname* (not localhost) for use during the
     WordPress installation. This can be found by clicking on the
     hyperlink for the new database just created in the
-    **Databases** section of the website **Features **tab.\
+    **Databases** section of the website **Features **tab.<br>
       
 8.  Run the WordPress installation script by accessing WordPress for the
     first time in your favorite web browser.
@@ -107,7 +107,7 @@ install location
     provided in the Classic Cloud Control Panel under the General
     Settings tab.
 
-\
+<br>
  **Additional Resources**
 
 -   [More about Word
