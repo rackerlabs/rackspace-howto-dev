@@ -10,6 +10,7 @@ Cloud Hosting,Cloud Block Storage,cloud-block-storage
 Cloud Hosting,Cloud Monitoring,cloud-monitoring
 Cloud Hosting,Cloud Big Data,cloud-big-data
 Cloud Hosting,Cloud Orchestration,cloud-orchestration
+Cloud Hosting,Cloud Queues,cloud-queues
 Cloud Hosting,Rackspace Auto Scale,auto-scale
 Cloud Hosting,Rackspace RackConnect,rack-connect
 Cloud Hosting,Managed VMWare Services,managed-vmware-services
@@ -20,14 +21,11 @@ Cloud Office,Rackspace Email,rackspace-email
 Cloud Office,Microsoft Skype for Business,microsoft-skype-for-business
 Cloud Office,Microsoft Exchange,exchange
 Cloud Office,Microsoft Sharepoint,sharepoint
+Cloud Office,Cloud Office,cloud-office
+Cloud Office,Email Archiving,email-archiving
+Cloud Hosting,Managed Operations,managed-operations
+Cloud Hosting,Cloud Hosting,cloud-hosting
+Cloud Hosting,Dedicated,dedicated
 Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rackspace-private-cloud-microsoft-cloud-platform
 Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rackspace-private-cloud-openstack
-,,cloud-drive
-,,cloud-hosting
-,,cloud-queues
-,,cloud-office
-,,dedicated
-,,email-archiving
-,,managed-operations
-,,multiple
-,,simple-email-setup
+
