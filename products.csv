@@ -11,6 +11,8 @@ Cloud Hosting,Cloud Monitoring,cloud-monitoring
 Cloud Hosting,Cloud Big Data,cloud-big-data
 Cloud Hosting,Cloud Orchestration,cloud-orchestration
 Cloud Hosting,Cloud Queues,cloud-queues
+Cloud Hosting,Cloud Networks,cloud-networks
+Cloud Hosting,Cloud DNS,cloud-dns
 Cloud Hosting,Rackspace Auto Scale,auto-scale
 Cloud Hosting,Rackspace RackConnect,rack-connect
 Cloud Hosting,Managed VMWare Services,managed-vmware-services
