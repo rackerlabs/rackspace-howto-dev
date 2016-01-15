@@ -22,5 +22,4 @@ install:
     - echo $TRAVIS_COMMIT
 
 script:
-    - git diff-tree --no-commit-id --name-status -r HEAD
     - kc-preparer
