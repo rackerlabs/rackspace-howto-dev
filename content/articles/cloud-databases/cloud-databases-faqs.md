@@ -2,10 +2,10 @@
 node_id: 5026
 title: Cloud Databases - FAQ
 type: article
-created_date: '2015-12-10 17:55:28'
+created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 22:5022'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -19,7 +19,7 @@ Yes, but instances are provisioned only with network interfaces on their
 data center's internal service network (ServiceNet). Connecting to a
 Cloud Database instance remotely requires either a Cloud Server or Cloud
 Load Balancer to [proxy the
-connection](https://admin.rackspace.com/knowledge_center/article/connecting-to-your-cloud-database).
+connection](/howto/connect-to-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
@@ -107,15 +107,15 @@ product resources.
 
 ### Is Cloud Databases available in the Control Panel?
 
-Yes. Click **Databases**in the [Cloud Control
+Yes. Click **Databases** in the [Cloud Control
 Panel](http://mycloud.rackspace.com/). Connecting to a Cloud Database
 instance remotely requires either a Cloud Server or Cloud Load Balancer
 to [proxy the
-connection](https://admin.rackspace.com/knowledge_center/article/connecting-to-your-cloud-database).
+connection](/howto/connect-to-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Account Services
 ----------------
@@ -130,7 +130,7 @@ instance and application is encrypted.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Backups
 -------
@@ -176,7 +176,7 @@ directly to your Cloud Files account for storage.
 Manual backup and restore operations are currently supported from within
 the Control Panel. For more information, please read the article
 [Managing Backups for Cloud
-Databases](https://admin.rackspace.com/knowledge_center/article/managing-backups-for-cloud-databases).
+Databases](/howto/managing-backups-for-cloud-databases).
 Alternately you can manage backup operations[via the Cloud Databases
 API](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/backups.html),
 or by using the [Trove command line tool
@@ -227,7 +227,7 @@ instance is deleted, the mount point is destroyed.
 Backups are not deleted when an instance is deleted. You must manually
 remove any stored backups.
 
-* * * * *
+------------------------------------------------------------------------
 
 Monitoring and Troubleshooting
 ------------------------------
@@ -254,11 +254,11 @@ Monitoring is available for all Cloud Databases instances through
 pre-configured Cloud Monitoring checks, including load average, CPU,
 memory, disk storage, network, and a number of MySQL metrics. You can
 monitor your Cloud Databases instances using the[Cloud Control
-Panel](https://admin.rackspace.com/knowledge_center/article/monitoring-cloud-databases-with-the-cloud-control-panel),
+Panel](/howto/monitoring-cloud-databases-in-the-cloud-control-panel),
 the[Cloud Monitoring
 API](http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html),
 or the [Cloud Monitoring command-line
-tool](https://admin.rackspace.com/knowledge_center/article/getting-started-with-rackspace-monitoring-cli).
+tool](/howto/getting-started-with-rackspace-monitoring-cli).
 
 You can also set up alarms to send you email alerts based on thresholds
 you define. An alert for disk space is set up by default for every
@@ -275,7 +275,7 @@ Yes. A Cloud Databases support ticket category is available in the
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Databases
 ---------
@@ -303,7 +303,7 @@ documentation:
 -   [MyISAM Storage Engine
     documentation](http://dev.mysql.com/doc/refman/5.1/en/myisam-storage-engine.html)
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -312,25 +312,60 @@ documentation:
 Details about maximum connections and access to my.cnf file settings per
 database size are listed in the following table:
 
-+--------------------------+--------------------------+--------------------------+
-| **Size**                 | **Max connections**      | **Max User Connections** |
-+--------------------------+--------------------------+--------------------------+
-| 512 MB                   | 50                       | 40                       |
-+--------------------------+--------------------------+--------------------------+
-| 1 GB                     | 110                      | 100                      |
-+--------------------------+--------------------------+--------------------------+
-| 2 GB                     | 210                      | 200                      |
-+--------------------------+--------------------------+--------------------------+
-| 4 GB                     | 410                      | 400                      |
-+--------------------------+--------------------------+--------------------------+
-| 8 GB                     | 810                      | 800                      |
-+--------------------------+--------------------------+--------------------------+
-| 16 GB                    | 1610                     | 1600                     |
-+--------------------------+--------------------------+--------------------------+
-| 32 GB                    | 3210                     | 3200                     |
-+--------------------------+--------------------------+--------------------------+
-| 64 GB                    | 6410                     | 6400                     |
-+--------------------------+--------------------------+--------------------------+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Size</strong></p></td>
+<td align="left"><p><strong>Max connections</strong></p></td>
+<td align="left"><p><strong>Max User Connections</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>512 MB</p></td>
+<td align="left"><p>50</p></td>
+<td align="left"><p>40</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>1 GB</p></td>
+<td align="left"><p>110</p></td>
+<td align="left"><p>100</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>2 GB</p></td>
+<td align="left"><p>210</p></td>
+<td align="left"><p>200</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>4 GB</p></td>
+<td align="left"><p>410</p></td>
+<td align="left"><p>400</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>8 GB</p></td>
+<td align="left"><p>810</p></td>
+<td align="left"><p>800</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>16 GB</p></td>
+<td align="left"><p>1610</p></td>
+<td align="left"><p>1600</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>32 GB</p></td>
+<td align="left"><p>3210</p></td>
+<td align="left"><p>3200</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>64 GB</p></td>
+<td align="left"><p>6410</p></td>
+<td align="left"><p>6400</p></td>
+</tr>
+</tbody>
+</table>
 
 ^[back\\ to\\ top](#top)^
 
@@ -373,7 +408,7 @@ recommend our customers use the latest version of MySQL, Percona, or
 MariaDB because they offer significant performance improvements and
 newer features. For more information to help you choose the right
 database version for your application, see [Choosing the right data
-store](https://admin.rackspace.com/knowledge_center/article/choosing-the-right-data-store).
+store](/howto/choosing-the-right-database-with-rackspace-cloud-databases).
 
 ^[back\\ to\\ top](#top)^
 
@@ -457,10 +492,10 @@ Rackspace private network by default. However, you can connect to your
 database by using several methods described at the following links:
 
 [Public Vs. Private
-Access](https://admin.rackspace.com/knowledge_center/node/2411)
+Access](/howto/public-and-private-access-for-cloud-databases)
 
 [Connecting to Your
-Database](https://admin.rackspace.com/knowledge_center/node/2429)
+Database](/howto/connect-to-a-cloud-databases-instance)
 
 Additionally, you can use the Cloud Control Panel, API, or command line
 interface (CLI) to manage your database instance. Some of the features
@@ -479,7 +514,7 @@ default\_time\_zone parameter to the offset from UTC (for example,
 "-6:00" for CST).
 
 For more information, see [Setting the time zone for a Cloud Databases
-instance](https://admin.rackspace.com/knowledge_center/article/setting-the-time-zone-for-a-cloud-databases-instance).
+instance](/howto/setting-the-time-zone-for-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
@@ -488,9 +523,9 @@ instance](https://admin.rackspace.com/knowledge_center/article/setting-the-time-
 You can use standard MySQL client tools to import data into and export
 data from your instance. Knowledge Center articles that detail the
 processes
-of[importing](https://admin.rackspace.com/knowledge_center/article/importing-data-to-cloud-databases)
+of [importing](/howto/importing-data-into-cloud-databases)
 or
-[exporting](https://admin.rackspace.com/knowledge_center/article/exporting-data)
+[exporting](/howto/exporting-data-from-mysql)
 data are available.
 
 ^[back\\ to\\ top](#top)^
@@ -523,7 +558,7 @@ with MySQL 5.1, such as MyISAM, also work for certain use cases.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 High Availability
 -----------------
@@ -567,7 +602,7 @@ a future release.
 
 Technical architecture details are provided in the [High Availability
 for Cloud
-Databases](https://admin.rackspace.com/knowledge_center/article/high-availability-for-cloud-databases)
+Databases](/howto/high-availability-for-cloud-databases)
 article.
 
 ^[back\\ to\\ top](#top)^
@@ -607,11 +642,11 @@ of replicas that can be added to the HA group.
 ### Where can I find more technical details about High Availability (HA)?
 
 See the article [High Availability for Cloud
-Databases](https://admin.rackspace.com/knowledge_center/article/high-availability-for-cloud-databases).
+Databases](/howto/high-availability-for-cloud-databases).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Replication
 -----------
@@ -671,7 +706,7 @@ do not support replication for MySQL 5.1 as this is an older version of
 MySQL and there have been significant improvements for replication
 support in newer versions of MySQL. We highly recommend all users to
 [upgrade from MySQL 5.1 to MySQL
-5.6](https://admin.rackspace.com/knowledge_center/article/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
+5.6](/howto/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
 
 ^[back\\ to\\ top](#top)^
 
@@ -685,7 +720,7 @@ replication](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Replica
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Billing
 -------

@@ -2,10 +2,10 @@
 node_id: 3239
 title: Handling an InvalidCastException using SQL CLR Data Types on Cloud Sites
 type: article
-created_date: '2012-12-14 20:40:26'
-created_by: jered.heeschen
-last_modified_date: '2013-02-04 20:0246'
-last_modified_by: jered.heeschen
+created_date: '2012-12-14'
+created_by: Jered Heeschen
+last_modified_date: '2013-02-04'
+last_modified_by: Jered Heeschen
 product: Cloud Sites
 body_format: markdown_w_tinymce
 ---

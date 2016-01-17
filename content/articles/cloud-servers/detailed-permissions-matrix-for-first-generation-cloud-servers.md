@@ -2,35 +2,35 @@
 node_id: 3532
 title: Permissions Matrix for First Generation Cloud Servers
 type: article
-created_date: '2013-06-17 15:25:13'
-created_by: renee.rendon
-last_modified_date: '2016-01-11 20:4748'
-last_modified_by: stephanie.fillmon
+created_date: '2013-06-17'
+created_by: Renee Rendon
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-The following permissions matrix displays specific permissions for the
-roles in First Generation Cloud Servers. The matrix displays the method
-names, their corresponding RESTful API commands, and the roles that are
-supported.
+<span>The following permissions matrix displays specific permissions for
+the roles in First Generation Cloud Servers. The matrix displays the
+method names, their corresponding RESTful API commands, and the roles
+that are supported.</span>
 
-**[API Documentation](http://docs.rackspace.com/)**
+**<span>[API Documentation](http://docs.rackspace.com/)</span>**
 
-**[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/)**
+**<span>[Related Knowledge Center
+Articles](/howto/)</span>**
 
-**[First Generation Servers terminology](#terminology)**
+**<span>[First Generation Servers terminology](#terminology)</span>**
 
-### **As of September 26, 2013**
+### <span>**As of September 26, 2013**</span>
 
 CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
-Method Name 
+Method Name
 
 API Action
 
@@ -38,391 +38,554 @@ Observer
 
 Admin
 
- 
 
-List All Servers
 
-GET /servers
+<span>List All Servers</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)
+<span>GET /servers</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}
 
-Lists all servers (IDs and names only).
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-List All Details for All Servers
+<span>Lists all servers (IDs and names only).</span>
 
-GET /servers/detail
+<span>List All Details for All Servers</span>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>GET /servers/detail</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-Lists all details for all servers.
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+</div>
 
-Create a Server
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-POST /servers
+<span>Lists all details for all servers.</span>
 
- 
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Creates a server.
+<div>
 
- 
+<span>Create a Server</span>
 
-List Details for a Specified Server
+</div>
 
-GET /servers/{id}
+<span>POST /servers</span>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists details for a specified server.
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+<span>Creates a server.</span>
 
-Update the Editable Attributes for a Specified Server (Server Name and
-Password)
 
-PUT /servers/{id}
 
- 
+<span>List Details for a Specified Server</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png) 
+<span>GET /servers/{id}</span>
 
-Updates one or more editable attributes for a specified server. 
+<div>
 
- 
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Delete a Specified Server
+</div>
 
-DELETE /servers/{id}
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+<span>Lists details for a specified server.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
- 
 
-Deletes a specified server.
+<span>Update the Editable Attributes for a Specified Server
+(</span><span>Server Name and Password)</span>
 
- 
+<span>PUT /servers/{id}</span>
 
-List All Server Addresses Associated with a Specified Server
+<div>
 
-GET /servers/{id}/ips
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+</div>
 
-Lists all server addresses associated with a specified server.
+<div>
 
- 
+![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}
 
-List All Public Server Addresses
+</div>
 
-GET /servers/{id}/ips/public
+<span>Updates one or more editable attributes for a specified
+server.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png) 
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists all public server addresses.
+<span>Delete a Specified Server</span>
 
- 
+<span>DELETE /servers/{id}</span>
 
-List All Private Server Addresses
 
-GET /servers/{id}/ips/private
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Lists all private server addresses.
+</div>
 
- 
+<div>
 
-Share Server Address
 
-PUT /servers/{id}/ips/public/{address}
 
- 
+</div>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>Deletes a specified server.</span>
 
-Shares an IP address to the specified server.
 
- 
 
-Un-share Server Address
+<span>List All Server Addresses Associated with a Specified
+Server</span>
 
-PUT /servers/{id}/ips/public/{address}
+<span>GET /servers/{id}/ips</span>
 
- 
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Removes a shared IP address from the specified server.
+<span>Lists all server addresses associated with a specified
+server.</span>
 
- 
 
-Server Actions: Reboot Server (soft), Reboot Server (hard), Rebuild
-Server, Resize Server, Confirm Resized Server, Revert Resized Server
 
-POST /servers/{id}/action
+<span>List All Public Server Addresses</span>
 
- 
+<span>GET /servers/{id}/ips/public</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-Performs the requested action.
+![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}
 
- 
+</div>
 
-List IDs, Names, and Links for All Available Flavors
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-GET /flavors
+<span>Lists all public server addresses.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists IDs, names, and links for all available flavors.
+<span>List All Private Server Addresses</span>
 
- 
+<span>GET /servers/{id}/ips/private</span>
 
-Lists All Details for All Available Flavors
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-GET /flavors/detail
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>Lists all private server addresses.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists all details for all available flavors.
 
- 
+<span>Share Server Address</span>
 
-Lists Details of a Specified Flavor
+<span>PUT /servers/{id}/ips/public/{address}</span>
 
-GET /flavors/{id}
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Lists details of the specified flavor.
+<span>Shares an IP address to the specified server.</span>
 
- 
 
-Lists IDs, Names, and Links for All Available Images
 
-GET /images
+<span>Un-share Server Address</span>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>PUT /servers/{id}/ips/public/{address}</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-Lists IDs, names, and links for all available images.
 
- 
 
-List All Details for All Available Images
+</div>
 
-GET /images/detail
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>Removes a shared IP address from the specified server.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-List all details for all available images.
 
- 
+<span>Server Actions: Reboot Server (soft), Reboot Server (hard),
+Rebuild Server, Resize Server, Confirm Resized Server, Revert Resized
+Server</span>
 
-List Details of a Specified Image
+<span>POST /servers/{id}/action</span>
 
-GET /images/{id}
+<div>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists details of the specified image.
+</div>
 
- 
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Create a New Image
+<span>Performs the requested action.</span>
 
-POST /images
 
- 
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>List IDs, Names, and Links for All Available Flavors</span>
+
+<span>GET /flavors</span>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists IDs, names, and links for all available flavors.</span>
+
+
+
+<span>Lists All Details for All Available Flavors</span>
+
+<span>GET /flavors/detail</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists all details for all available flavors.</span>
+
+
+
+<span>Lists Details of a Specified Flavor</span>
+
+<span>GET /flavors/{id}</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists details of the specified flavor.</span>
+
+
+
+<span>Lists IDs, Names, and Links for All Available Images</span>
+
+<span>GET /images</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists IDs, names, and links for all available images.</span>
+
+
+
+<span>List All Details for All Available Images</span>
+
+<span>GET /images/detail</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>List all details for all available images.</span>
+
+
+
+<span>List Details of a Specified Image</span>
+
+<span>GET /images/{id}</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists details of the specified image.</span>
+
+
+
+<span>Create a New Image</span>
+
+<span>POST /images</span>
+
+<div>
+
+
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
 Creates a new image.
 
- 
 
-Delete a Specified Image
 
-DELETE /images/{id}
+<span>Delete a Specified Image</span>
 
- 
+<span>DELETE /images/{id}</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
+
+
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
 Delets a specified image.
 
- 
 
-List the Backup Schedule for a Specified Server
 
-GET /servers/{id}/backup\_schedule
+<span>List the Backup Schedule for a Specified Server</span>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>GET /servers/{id}/backup\_schedule</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
 Lists the backup schedule for a specified server.
 
- 
 
-Create/Update Backup Schedule for a Specified Server
 
-POST /servers/{id}/backup\_schedule
+<span>Create/Update Backup Schedule for a Specified Server</span>
 
- 
+<span>POST /servers/{id}/backup\_schedule</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
+
+
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
 Creates or updates the backup schedule for a specified server.
 
- 
 
-Disable Backup Schedule
 
-DELETE /servers/{id}/backup\_schedule
+<span>Disable Backup Schedule</span>
 
- 
+<span>DELETE /servers/{id}/backup\_schedule</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-Disables the backup schedule for a specified server.
 
- 
 
-List ID's and Names for Shared Address Groups
+</div>
 
-GET /shared\_ip\_groups
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>Disables the backup schedule for a specified server.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists IDs and names for shared IP groups.
 
- 
+<span>List ID's and Names for Shared Address Groups</span>
 
-Lists All Details for Shared Address Groups
+<span>GET /shared\_ip\_groups</span>
 
-GET /shared\_ip\_groups/detail
+<div>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+</div>
 
-Lists all details for shared IP groups.
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+<span>Lists IDs and names for shared IP groups.</span>
 
-Create a Shared Address Group
 
-POST /shared\_ip\_groups
 
- 
+<span>Lists All Details for Shared Address Groups</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<span>GET /shared\_ip\_groups/detail</span>
 
-Creates a shared IP group.
+<div>
 
- 
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
-Delete a Specified Shared Address Group
+</div>
 
-DELETE /shared\_ip\_groups/{id}
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+<span>Lists all details for shared IP groups.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Lists details for the specified shared IP group.
 
- 
+<span>Create a Shared Address Group</span>
 
-Get Current API Limits
+<span>POST /shared\_ip\_groups</span>
 
-GET /limits
+<div>
 
- **![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Creates a shared IP group.</span>
+
+
+
+<span>Delete a Specified Shared Address Group</span>
+
+<span>DELETE /shared\_ip\_groups/{id}</span>
+
+<div>
+
+
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Lists details for the specified shared IP group.</span>
+
+
+
+<span>Get Current API Limits</span>
+
+<span>GET /limits</span>
+
+<div>
+
+ **<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
 Lists current API limits.
 
- 
 
-Get a URL for a Web Browser-mediated Console Session for a Specified
-Server
 
-GET /servers/{`id}`/console
+<span>Get a URL for a Web Browser-mediated Console Session for a
+Specified Server</span>
 
- 
+<span>GET </span><span>/servers/{</span>`id}`<span>/console</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
+<div>
 
-Gets a URL for a web browser-mediated console session for the specified
-server.
 
- 
 
-Rescue/Unrescue a Server
+</div>
 
-POST /servers/{`id}`/rescue
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+<span>Gets a URL for a web browser-mediated console session for the
+specified server.</span>
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
- 
 
-Rescue or unrescue a server. 
+<span>Rescue/Unrescue a Server</span>
 
-Create a Next Generation Cloud Servers Image from a First Generation
-Cloud Server that is Specified in the Request Body
+<span>POST </span><span>/servers/{</span>`id}`<span>/rescue</span>
 
-POST /next\_gen\_image\_requests
+<div>
 
- 
 
-**![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png)**
 
-Creates a Next Generation Cloud Servers image from a First
-Generation Cloud Server that is specified in the request body.
+</div>
 
- 
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
 
- 
+
+
+Rescue or unrescue a server.
+
+<span>Create a Next Generation Cloud Servers Image from a First
+Generation Cloud Server that is Specified in the Request Body</span>
+
+<span>POST </span><span>/next\_gen\_image\_requests</span>
+
+<div>
+
+
+
+</div>
+
+**<span>![](/knowledge_center/sites/default/files/field/image/green%20checkmark_0.png){width="41"
+height="39"}</span>**
+
+<span>Creates a Next Generation Cloud Servers image from a First
+Generation Cloud Server that is specified in the request body.</span>
+
+
+
+
 -
 
-First Generation Cloud Servers terminology
-------------------------------------------
+[](){#terminology}First Generation Cloud Servers terminology
+------------------------------------------------------------
 
 ### Flavor
 
@@ -443,10 +606,10 @@ A virtual machine (VM) instance in the Cloud Servers environment. To
 create a server, you must specify a name, flavor reference, and image
 reference.
 
- 
 
-[\< Permission Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+[&lt; Permission Matrices for RBAC](/howto/article/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 

@@ -2,16 +2,17 @@
 node_id: 3351
 title: Getting Started with Apache Hadoop on Rackspace Cloud
 type: article
-created_date: '2013-03-18 14:53:58'
-created_by: alyssah
-last_modified_date: '2016-01-12 15:1409'
-last_modified_by: stephanie.fillmon
+created_date: '2013-03-18'
+created_by: Alyssa Hurtgen
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-**DISCLAIMER**: This document details a process intended for educational
-purposes only. This will not deploy a production environment.
+<span>**DISCLAIMER**: This document details a process intended for
+educational purposes only. This will not deploy a production
+environment.</span>
 
 Hadoop
 ------
@@ -53,10 +54,9 @@ Prerequisites
 
 The following prerequisites are expected for successful completion:
 
--   Rackspace Cloud account
-    ([https://cart.rackspace.com/cloud/](https://cart.rackspace.com/cloud/)).
+-   Rackspace Cloud account (<https://cart.rackspace.com/cloud/>).
 -   SSH client (Windows users can download PUTTY:
-    [http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)).
+    <http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html>).
 -   Basic knowledge of Linux.
 -   Basic knowledge of Hadoop.
 
@@ -68,9 +68,9 @@ so we will use a few tools to make the installation easier. In
 particular, we are going to use the following two projects:
 
 -   Chef recipes for Hadoop
-    ([https://github.rackspace.com/CloudBigData/cookbook-hadoop-conf](https://github.rackspace.com/CloudBigData/cookbook-hadoop-conf "https://github.rackspace.com/CloudBigData/cookbook-hadoop-conf"))
+    (<https://github.rackspace.com/CloudBigData/cookbook-hadoop-conf>)
 -   Knife plugin for Rackspace API
-    ([https://github.com/opscode/knife-rackspace](https://github.com/opscode/knife-rackspace))
+    (<https://github.com/opscode/knife-rackspace>)
 
 Using the tools, we will create a Hadoop installation using the
 following:
@@ -106,7 +106,7 @@ run the following commands:
 
 Note: for information about how to find your API key, see [View and
 reset your API
-key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+key](/howto/view-and-reset-your-api-key).
 
 This will install the Chef server, knife-rackspace plugin and upload the
 chef hdp-cookbooks, and configure it to talk to Rackspace Cloud using
@@ -116,14 +116,14 @@ Cloud and configure our Hadoop cluster.
 #### Choosing the Image
 
 You need a CentOS 6.2 image as the base image for the server to install
-Hadoop.  
+Hadoop.
 
     IMAGE_ID=`knife rackspace image list | grep 'CentOS 6.2' | awk '{print $1}'`
     echo $IMAGE_ID
 
 #### Choosing the Flavor
 
-We will use a flavor with 4096 MB of RAM for the server. 
+We will use a flavor with 4096 MB of RAM for the server.
 
     FLAVOR_ID=`knife rackspace flavor list | grep '4096' | awk '{print $1}'`
     echo $FLAVOR_ID
@@ -147,7 +147,7 @@ Now run the following commands to setup the environment within Chef.
 #### Creating a Hadoop Master
 
 This command will create a cloud server with the name,
-yourname-hadoopmaster with CentOS 6.2 and 4 GB RAM. 
+yourname-hadoopmaster with CentOS 6.2 and 4 GB RAM.
 
 It will create it in the example environment and give it a role of
 hadoop-master. Chef will then install and configure all the components
@@ -163,8 +163,8 @@ will save the IP address in an environment variable to use later.
 
 Run the following commands:
 
-**Note:**Ideally, you shouldn&rsquo;t have to run the code below, but there is
-currently a bug in the hdp-cookbooks where the hostname is not
+**Note:** Ideally, you shouldn&rsquo;t have to run the code below, but there
+is currently a bug in the hdp-cookbooks where the hostname is not
 propagated properly. So you have to run this extra step.
 
     ssh root@$HADOOP_M_IP "chef-client && /etc/init.d/hadoop-namenode restart && /etc/init.d/hadoop-jobtracker restart"
@@ -176,7 +176,7 @@ Verify that the master is up by going to the jobtracker at:
 #### Creating a Hadoop Worker
 
 From your server workstation, execute the following command to create a
-Hadoop worker node: 
+Hadoop worker node:
 
     knife rackspace server create --server-name $ENV_NAME-hadoopworker1 --image $IMAGE_ID --flavor $FLAVOR_ID --environment $ENV_NAME --run-list 'role[hadoop-worker]'
 
@@ -187,7 +187,7 @@ use later.
     HADOOP_W1_IP=<Hadoop Worker 1 IP Address>
     echo $HADOOP_W1_IP
 
-Run the following command: 
+Run the following command:
 
     ssh root@$HADOOP_W1_IP "chef-client && /etc/init.d/hadoop-datanode restart && /etc/init.d/hadoop-tasktracker restart"
 
@@ -210,14 +210,14 @@ sampling.
 
 This script will download all of Shakespeare&rsquo;s books from project,
 Gutenberg, upload them to HDFS and run a Map Reduce operation run a word
-count against the text. 
+count against the text.
 
 #### Adding More Nodes
 
 So far, you have created only **hadoopworker1**. Keep adding more
 HadoopWorker nodes following the same process. Make sure to increment
 the hadoopworker number each time. Run and benchmark your application
-and see how it performs when the size of the cluster grows. 
+and see how it performs when the size of the cluster grows.
 
 Once you feel comfortable, you can also play with different flavor sizes
 and see what works best for your application.
@@ -226,7 +226,7 @@ and see what works best for your application.
 
 If you are done with your computation, you may want to delete the
 cluster and free up the resources. To do this, you need the server id of
-the server you want to delete.  
+the server you want to delete.
 
     knife rackspace server list
     knife rackspace server delete `knife rackspace server list | grep $HADOOP_M_IP | awk '{print $1}'`
@@ -240,5 +240,5 @@ Summary
 
 In this document, we showed you how to interact with the cloud using
 tools and scripts. We also demonstrated how to get started with Apache
-Hadoop on a couple of cloud servers and scale it up with your needs. 
+Hadoop on a couple of cloud servers and scale it up with your needs.
 

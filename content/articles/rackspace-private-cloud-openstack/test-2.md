@@ -2,11 +2,11 @@
 node_id: 4041
 title: Installing And Testing Cinder In Your Rackspace Private Cloud Lab Environment
 type: article
-created_date: '2014-04-24 21:02:47'
-created_by: jason.grimm
-last_modified_date: '2016-01-11 16:1122'
-last_modified_by: Nate.Archer
-product: Rackspace Private Cloud - OpenStack
+created_date: '2014-04-24'
+created_by: Jason Grimm
+last_modified_date: '2016-01-11'
+last_modified_by: Nate Archer
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
@@ -25,8 +25,8 @@ Contents
 -   [Conclusion](#conclusion.3F)
 -   [Reference Materials](#reference.3F)
 
-Synopsis
---------
+[]()Synopsis
+------------
 
 This article provides instructions for setting up the OpenStack Cinder
 Service in your Rackspace Private Cloud (RPC) lab environment using the
@@ -40,8 +40,8 @@ This is specifically for sandbox and testing / development environments
 the controller, using a loopback device for cinder-volumes and so on are
 not supported and should not be used in production.
 
-Environment Overview
---------------------
+[]()Environment Overview
+------------------------
 
 While this post does not cover RPC installation in detail there are some
 high level configuration notes provided here to describe the test
@@ -65,18 +65,23 @@ cinder-volume). In my case I want to also run cinder-volume on this node
 and I am specifying neutron, heat and other components as well just for
 demonstration purposes.
 
-![](/knowledge_center/sites/default/files/field/image/blog%20visios.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/blog%20visios.png){width="564"
+height="241"}
 
 Running this command in your environment should look similar to this:
 
+<div>
+
     knife bootstrap controller-1.<your domain> -E <your environment> -r 'role[single-controller],role[single-compute],role[heat-all],role[ceilometer-all],role[cinder-all],role[neutron-network-manager]'
+
+</div>
 
 It&rsquo;s not quite time to run this command yet however; let&rsquo;s continue on
 to complete all of the necessary tasks to prepare for the node
 deployment.
 
-Environment Preparation &ndash; Operating System
-------------------------------------------
+[]()Environment Preparation &ndash; Operating System
+----------------------------------------------
 
 The following configuration tasks in this section are to be completed on
 both chef-1 and controller-1 unless otherwise indicated.
@@ -92,10 +97,14 @@ initial cookbook and package downloads) should be the only additional
 package that needs to be installed by hand; the remaining dependencies
 are installed automatically by the deployment process.
 
+<div>
+
     apt-get update
     apt-get upgrade
     apt-get -y install git
     reboot
+
+</div>
 
 ### SSH keys
 
@@ -106,12 +115,15 @@ chef-1 to have ssh pass-thru authentication to controller-1 but there is
 no harm in having bi-directional pass-thru authentication if that&rsquo;s
 preferable.
 
-1.  The commands (from the chef server) to accomplish this are:
+1.  The commands (<span>from the chef server</span>) to accomplish this
+    are:
 
-<!-- -->
+<div>
 
     ssh-keygen
     ssh-copy-id -i ~/.ssh/id_rsa.pub root@controller-1
+
+</div>
 
 *TIP: Accept the defaults unless you want to specify different key types
 or key strength, e.g. ssh-keygen -t rsa or dsa, -b 1024 or 4096, etc.).*
@@ -121,11 +133,15 @@ ssh-copy-id command. In this case it&rsquo;s likely faster and easier to copy
 the keys by hand vs. installing a modified or recompiled version of
 openssh.  To accomplish this manually you can use these example steps:
 
+<div>
+
     ssh-keygen
     cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
     chmod 400 ~/.ssh/authorized_keys
     ssh root@controller-1 &ldquo;mkdir /root/.ssh; chmod &ndash;R 400 /root/.ssh&rdquo;
     scp ~/.ssh/authorized_keys root@controller-1:/root/.ssh/
+
+</div>
 
 If everything worked correctly you should now be able to ssh, as root,
 from chef-1 to controller-1 without any authentication prompts.
@@ -135,19 +151,19 @@ from chef-1 to controller-1 without any authentication prompts.
 Also be sure to setup all of your other basic services and settings.
 Some of your considerations may include:
 
-1.  Configuring (or disabling) iptables<br>
-     -If leaving iptables enabled you&rsquo;ll need to open several ports for
+1.  Configuring (or disabling) iptables
+    -If leaving iptables enabled you&rsquo;ll need to open several ports for
     RPC to function properly.  You can find most of these ports listed
     in the &ldquo;api settings&rdquo; tab for the &ldquo;security and access&rdquo; menu on the
     project tab.  They are also listed in the /root/openrc file
-    automatically created during the installation process.<br>
-     *TIP: I recommend installing with iptables off to ensure you have a
+    automatically created during the installation process.
+    *TIP: I recommend installing with iptables off to ensure you have a
     good working deployment and then going back afterwards to lock the
     ports down.*
 2.  Ensure name resolution works correctly for both long (FQDN) and
-    short name (hostname -s) references<br>
-     -/etc/hosts file tends to be the fastest / easiest<br>
-     -Place the long host names first then any aliases, for example
+    short name (hostname -s) references
+    -/etc/hosts file tends to be the fastest / easiest
+    -Place the long host names first then any aliases, for example
     10.0.20.51 chef-1.yourdomain.local chef-1
 3.  Ensure time zones are set correctly and NTP is synchronized on both
     hosts (particularly important when deploying on top of virtual
@@ -155,21 +171,21 @@ Some of your considerations may include:
 4.  Ensure Internet connectivity and necessary repository access is
     present
 
-Environment Preparation &ndash; cinder-volumes
-----------------------------------------
+[]()Environment Preparation &ndash; cinder-volumes
+--------------------------------------------
 
 The following configuration tasks are to be completed on controller-1.
 
 1.  We&rsquo;ll be using the native Linux Volume Manager to provide block
-    storage backing for our environment.<br>
-      
+    storage backing for our environment.
+
 2.  Likewise the cinder LVM driver will be used to connect to this
-    storage.<br>
-      
+    storage.
+
 3.  By design, and due to the custom storage configuration nature &ndash; the
     &ldquo;cinder-volumes&rdquo; volume group is not setup by the chef cinder-volume
-    role and must be completed beforehand.<br>
-      
+    role and must be completed beforehand.
+
 4.  Here are a couple of convenient tips I&rsquo;ve found for setting up this
     volume group.
 
@@ -179,6 +195,8 @@ The following configuration tasks are to be completed on controller-1.
     group and also consumes all space on the device.
 -   You can still create the cinder-volumes volume group but you&rsquo;ll need
     to either:
+
+<!-- -->
 
 -   Add another disk (which may not be readily available) to be used by
     cinder-volumes, or:
@@ -203,6 +221,8 @@ following commands which creates a 5 GB cinder-volumes volume group
 running this command; accidentally filling up the /root mount will
 certainly cause issues.*
 
+<div>
+
     # Create image
     dd if=/dev/zero of=/root/pv1.img bs=2M count=2500
 
@@ -225,6 +245,8 @@ certainly cause issues.*
     # Display results
     vgs
 
+</div>
+
 *TIP: If creating larger volumes you may want to use the seek option
 with dd or the fallocate command vs. waiting for each block of data to
 write out.  The cinder service zeros out all blocks regardless when it
@@ -233,16 +255,20 @@ initializes so there should be no security or stale data concerns.*
 If everything executed correctly your final output should look similar
 to this:
 
+<div>
+
     root@controller-1:~# vgs
       VG             #PV #LV #SN Attr   VSize  VFree
       cinder-volumes   1   0   0 wz--n-  4.88g  4.88g
       rackspace1       1   2   0 wz--n- 19.76g 20.00m
 
+</div>
+
 This concludes the operating system and storage configuration tasks,
 move on to the chef and environment installation processes.
 
-Environment Creation &ndash; Installing Chef, Cookbooks, and Creating the Environment File
-------------------------------------------------------------------------------------
+[]()Environment Creation &ndash; Installing Chef, Cookbooks, and Creating the Environment File
+----------------------------------------------------------------------------------------
 
 In this section we will cover installing chef and configuring your
 environment file.
@@ -253,6 +279,8 @@ the high level steps are outlined below.
 ### Install Chef
 
 The basic commands to install chef-server on chef-1 are as follows:
+
+<div>
 
     # Download the installation script
     curl -s -O https://raw.github.com/rcbops/support-tools/master/chef-install/install-chef-server.sh
@@ -266,12 +294,18 @@ The basic commands to install chef-server on chef-1 are as follows:
     # Test the knife command
     knife client list
 
+</div>
+
 ### Install Cookbooks
 
 In this section we&rsquo;ll download and install the RPC cookbooks.  To
 download the installation script run the following command.
 
+<div>
+
     curl -s -O https://raw.github.com/rcbops/support-tools/master/chef-install/install-cookbooks.sh
+
+</div>
 
 Before running the shell script to install the cookbooks, use an editor
 to check and or edit the install-cookbooks.sh script and set the branch
@@ -280,6 +314,8 @@ parameter according to your needs.
 In this exercise we&rsquo;ll be using 4.2.2rc; the current default stable
 branch is 4.2.1.
 
+<div>
+
     # Check the current RPC version declared in the script
     grep &ndash;m1 BRANCH /root/install-cookbooks.sh
     COOKBOOK_BRANCH=${COOKBOOK_BRANCH:-v4.2.1}
@@ -287,7 +323,7 @@ branch is 4.2.1.
     # Modify the script to set your desired branch
     vi install-cookbooks.sh
 
-Or:
+<span>Or:</span>
 
     # Use an in-line sed
     sed -i -e 's/v4.2.1/v4.2.2rc/g' install-cookbooks.sh
@@ -298,6 +334,8 @@ Or:
 
     # Execute the install script
     bash /root/install-cookbooks.sh
+
+</div>
 
 Now that our ssh keys are in place, chef server is installed and our
 cookbooks are downloaded and installed it is time to create an
@@ -311,17 +349,19 @@ pieces below for your reference; the relevant sections are highlighted.
 
 1.  Create / edit the environment file.
 
-<!-- -->
+<div>
 
     # Open / create the environment file in a text editor, for example
     vi rpc422rc.json
 
+</div>
+
 2.  Change the header to match what you want the name of the environment
     to be, for convenience I match the environment name and the file
-    name to the version number.  Basic glance settings are also shown
-    here.
+    name to the version number.  Basic glance settings are also
+    shown here.
 
-<!-- -->
+<div>
 
     {
       "name": "rpcv422rc",
@@ -344,12 +384,16 @@ pieces below for your reference; the relevant sections are highlighted.
                 "image_upload": true
             },
 
+</div>
+
 Since I&rsquo;m installing OpenStack on top of a hypervisor that doesn&rsquo;t
 support VT acceleration I have to set my virtualization type to qemu;
-also not suitable for production but sufficient for functional testing. 
+also not suitable for production but sufficient for functional testing.
 If you have a hypervisor that supports VT acceleration you can leave
 this stanza out altogether as the cookbook defaults to kvm or you can
 manually specify it if you like.
+
+<div>
 
         "nova": {
             "libvirt": {
@@ -357,12 +401,16 @@ manually specify it if you like.
             "virt_type": "qemu"
             },
 
-Additionally, you may opt to specify your cinder configuration options. 
+</div>
+
+Additionally, you may opt to specify your cinder configuration options.
 The parameters listed here are actually the default settings in the
 cookbook which works well for this environment; however, I generally
 specify them regardless in case the defaults change.  It is also handy
 as a placeholder if I reuse the environment file or need to make
 modifications to the settings later on.
+
+<div>
 
            "cinder" : {
                   "storage" : {
@@ -381,9 +429,13 @@ modifications to the settings later on.
                   }
            },
 
+</div>
+
 Lastly, if you&rsquo;re not accustom to running a single NIC / single subnet
-environment then you may want to review the network settings as well. 
+environment then you may want to review the network settings as well.
 Also shown here are basic neutron configuration directives.
+
+<div>
 
           "network": {
             "provider": "neutron"
@@ -413,9 +465,15 @@ Also shown here are basic neutron configuration directives.
         }
     }
 
+</div>
+
 Once complete you are ready to create your environment.
 
+<div>
+
     knife environment from file rpcv422rc.json
+
+</div>
 
 *TIP: JSON is very sensitive to white space in formatting so I would
 recommend pasting this into a text editor first and removing any special
@@ -430,16 +488,20 @@ there are issues with syntax or definitions.  Instead your edits are
 lost each time it fails and there is no debug information displayed
 either.*
 
-Environment Deployment
-----------------------
+[]()Environment Deployment
+--------------------------
 
 All the tedious work is over, now we push our roles to our controller /
 compute node with the following command.
 
+<div>
+
     knife bootstrap controller-1.<your domain> -E <your environment> -r 'role[single-controller],role[single-compute],role[heat-all],role[ceilometer-all],role[cinder-all],role[neutron-network-manager]'
 
-Environment Testing
--------------------
+</div>
+
+[]()Environment Testing
+-----------------------
 
 If everything went according to plan you should be able to login to your
 newly deployed node and check to make sure everything is running okay.
@@ -447,9 +509,9 @@ newly deployed node and check to make sure everything is running okay.
 ### Check Cinder services
 
 1.  SSH into the controller / compute node
-2.  Check the cinder services from the operating system
+2.  <span>Check the cinder services from the operating system</span>
 
-<!-- -->
+<div>
 
     root@controller-1:~# service cinder-volume status
     cinder-volume start/running, process 27061
@@ -460,16 +522,20 @@ newly deployed node and check to make sure everything is running okay.
     root@controller-1:~# service cinder-scheduler status
     cinder-scheduler start/running, process 27019
 
+</div>
+
 3.  Source the credentials file
 
-<!-- -->
+<div>
 
     cd /root
     . openrc
 
+</div>
+
 4.  Check the cinder services from the cinder CLI
 
-<!-- -->
+<div>
 
     root@controller-1:~# cinder service-list
     +------------------+----------------------+------+---------+-------+--------------------+
@@ -479,6 +545,8 @@ newly deployed node and check to make sure everything is running okay.
     | cinder-volume    | controller-1.lab.net | nova | enabled |   up  | 2014-02-17T13:29:45|
     +------------------+----------------------+------+---------+-------+--------------------+
 
+</div>
+
 ### Post installation setup
 
 Before we get to work on verifying cinder, let&rsquo;s setup a few other
@@ -486,10 +554,10 @@ components for our instances.
 
 1.  Create a keypair.
 
--   If you haven&rsquo;t already created ssh keys on this controller node, do
-    so now
+-   <span>If you haven&rsquo;t already created ssh keys on this controller
+    node, do so now</span>
 
-<!-- -->
+<div>
 
     cd /root
     ssh-keygen
@@ -503,9 +571,11 @@ components for our instances.
     | mykey | xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx |
     +-------+-------------------------------------------------+
 
+</div>
+
 2.  Create a security group to allow ping and ssh , verify results.
 
-<!-- -->
+<div>
 
     nova secgroup-create mysecuritygroup "My Security Group"
     +--------------------------------------+-----------------+-------------------+
@@ -544,12 +614,16 @@ components for our instances.
     | tcp         | 22        | 22      | 0.0.0.0/0 |              |
     +-------------+-----------+---------+-----------+--------------+
 
+</div>
+
 3.  Create a new router and verify.
 
 *TIP: Neutron uses net namespaces, if this is not preferred you can
 remove neutron and put in nova-network.  Everything in this article
 works the same except for the sections on setting up networking and
 SSH&rsquo;ing to your instances .*
+
+<div>
 
     neutron router-create router-1
     Created a new router:
@@ -571,9 +645,11 @@ SSH&rsquo;ing to your instances .*
     | 3488e9b9-d03f-4e07-85ee-268d688d6a92 | router-1 | null                  |
     +--------------------------------------+----------+-----------------------+
 
+</div>
+
 4.  Create the public network and verify.
 
-<!-- -->
+<div>
 
     neutron net-create publicnet-1 --provider:network_type flat --provider:physical_network ph-eth0 --router:external=True
     Created a new network:
@@ -600,9 +676,11 @@ SSH&rsquo;ing to your instances .*
     | 82a7ac1e-ac91-4b70-9d74-3c1e2a71a5f8 | publicnet-1 |         |
     +--------------------------------------+-------------+---------+
 
+</div>
+
 5.  Create a subnet and verify.
 
-<!-- -->
+<div>
 
     neutron subnet-create --name publicnet-1_subnet-1 --gateway 10.0.20.1 publicnet-1 10.0.20.0/24 --disable-dhcp
     Created a new subnet:
@@ -629,9 +707,11 @@ SSH&rsquo;ing to your instances .*
     | bc172bcf-5b53-4b54e6aa1... | publicnet-1_subnet-1 | 10.0.20.0/24 | {"start": "10.... |
     +----------------------------+----------------------+--------------+-------------------+
 
+</div>
+
 6.  Set the router gateway.
 
-<!-- -->
+<div>
 
     neutron router-gateway-set router-1 publicnet-1
     Set gateway for router router-1
@@ -643,9 +723,11 @@ SSH&rsquo;ing to your instances .*
     | 17d817db-cd56-4e9f-9b39-7a83f72e950e |      | fa:16:3e:00:23:d0 | {"subnet_id":....  |
     +--------------------------------------+------+-------------------+--------------------+
 
+</div>
+
 7.  Create a private VM network, subnet and router interface.
 
-<!-- -->
+<div>
 
     neutron net-create privatenet-1
     Created a new network:
@@ -685,6 +767,8 @@ SSH&rsquo;ing to your instances .*
     root@controller-1:~/.ssh# neutron router-interface-add router-1 privatenet-1_subnet-1
     Added interface 63391343-81f0-4338-8466-e178f837c1bb to router router-1.
 
+</div>
+
 Assuming all of this looks good we can move on to testing cinder.
 
 ### Testing cinder
@@ -693,7 +777,7 @@ Finally we&rsquo;re ready to test our cinder service and configuration.
 
 1.  First let&rsquo;s test the creation of a basic volume and verify.
 
-<!-- -->
+<div>
 
     cinder create --display-name 1gb-basicvol-1 1
     +---------------------+--------------------------------------+
@@ -721,10 +805,12 @@ Finally we&rsquo;re ready to test our cinder service and configuration.
     | c164f8ea-e228-4c2b-9f71... | available | 1gb-basicvol-1 |  1   |     None    | false  |
     +----------------------------+-----------+----------------+------+-------------+--------+
 
-2.  Optionally you can view the volume from the operating system as
-    well.
+</div>
 
-<!-- -->
+2.  Optionally you can view the volume from the operating system
+    as well.
+
+<div>
 
     lvs
       LV                                          VG             Attr   LSize  Origin Snap%  Move Log Copy%  Convert
@@ -748,11 +834,13 @@ Finally we&rsquo;re ready to test our cinder service and configuration.
       - currently set to     256
       Block device           252:2
 
+</div>
+
 3.  Next let&rsquo;s test creating a volume from a bootable image.
 
--   First, let&rsquo;s make sure we have an image present
+-   <span>First, let&rsquo;s make sure we have an image present</span>
 
-<!-- -->
+<div>
 
     glance image-list
     +-----------------------------------+------------------------------------+-------------+
@@ -782,11 +870,15 @@ Finally we&rsquo;re ready to test our cinder service and configuration.
     | updated_at       | 2014-02-16T05:12:45                  |
     +------------------+--------------------------------------+
 
--   Now let&rsquo;s create a bootable volume using this image and verify that
-    it is set to bootable.
+-   <span>Now let&rsquo;s create a bootable volume using this image and verify
+    that it is set to bootable.</span>
+
+</div>
 
 *TIP: It will show bootable &ldquo;false&rdquo; at first, but after creation it will
 show as &ldquo;true&rdquo;.*
+
+<div>
 
     cinder create --image-id 9f8aa2db-6984-4dec-8a36-95a7188a5308 --display-name 1gb-bootvol-1 1
     +---------------------+--------------------------------------+
@@ -816,10 +908,12 @@ show as &ldquo;true&rdquo;.*
     | c164f8ea-e228-4c2b-9f71... | available | 1gb-basicvol-1 |  1   |     None    |  false |
     +----------------------------+-----------+----------------+------+-------------+--------+
 
--   Once created let&rsquo;s boot an instance using this newly created
-    bootable volume.
+-   <span>Once created let&rsquo;s boot an instance using this newly created
+    bootable volume.</span>
 
-<!-- -->
+</div>
+
+<div>
 
     # List flavors
     nova flavor-list
@@ -877,9 +971,11 @@ show as &ldquo;true&rdquo;.*
     | 6d96a99f-dd... | vm-1 | ACTIVE | None       | Running     | privatenet-1=192.168.20.2 |
     +----------------+------+--------+------------+-------------+---------------------------+
 
--   Check again to verify that the build is complete
+-   <span>Check again to verify that the build is complete</span>
 
-<!-- -->
+</div>
+
+<div>
 
     nova show 6d96a99f-dd44-41f5-96d7-35a7e830c174
     +----------------------------+----------------------------------------------------------+
@@ -916,9 +1012,12 @@ show as &ldquo;true&rdquo;.*
     | config_drive               |                                                          |
     +----------------------------+----------------------------------------------------------+
 
--   SSH to the instance to verify that it is up and running.
+-   <span>SSH to the instance to verify that it is up
+    and running.</span>
 
-<!-- -->
+</div>
+
+<div>
 
     ip netns list
     qdhcp-4ed006c3-fade-429b-ab3f-f156f17c2a9c
@@ -948,6 +1047,8 @@ show as &ldquo;true&rdquo;.*
     // ]]>
     .2's password: < The cirros image's default password is cubswin:) > $ ip addr show eth0 eth0 Link encap:Ethernet HWaddr FA:16:3E:85:16:59 inet addr:192.168.20.2 Bcast:192.168.20.255 Mask:255.255.255.0 inet6 addr: fe80::f816:3eff:fe85:1659/64 Scope:Link UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1 RX packets:293 errors:0 dropped:0 overruns:0 frame:0 TX packets:403 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:1000 RX bytes:40193 (39.2 KiB) TX bytes:40421 (39.4 KiB) Interrupt:11 Base address:0xc000
 
+</div>
+
 ### Create an image-based volume at boot time
 
 You can reduce this process to a single command by combining volume
@@ -955,7 +1056,7 @@ creation with the instance boot as follows.
 
 1.  Boot instance with volume and image paramaters.
 
-<!-- -->
+<div>
 
     nova boot --flavor m1.tiny --key-name mykey --security-groups mysecuritygroup --nic net-id=4ed006c3-fade-429b-ab3f-f156f17c2a9c --block-device source=image,id=9f8aa2db-6984-4dec-8a36-95a7188a5308,dest=volume,device=vda,size=1,shutdown=preserve,bootindex=0 vm-2
     +-------------------------------------+-------------------------------------------------+
@@ -992,9 +1093,11 @@ creation with the instance boot as follows.
     | metadata                            | {}                                              |
     +-------------------------------------+-------------------------------------------------+
 
+</div>
+
 2.  Check again to verify that the build is complete
 
-<!-- -->
+<div>
 
     nova list
     +---------------+------+---------+------------+-------------+---------------------------+
@@ -1042,9 +1145,11 @@ creation with the instance boot as follows.
     # Rename the newly created volume (not able to be set from boot command)
     cinder rename 8dd33269-1ef4-4cd0-8c75-1f0749219981 1gb-bootvol-2
 
-3.  SSH to the instance to verify that it is up and running
+3.  <span>SSH to the instance to verify that it is up and running</span>
 
-<!-- -->
+</div>
+
+<div>
 
     ip netns exec qrouter-3488e9b9-d03f-4e07-85ee-268d688d6a92 ssh
     // ');
@@ -1070,11 +1175,13 @@ creation with the instance boot as follows.
     // ]]>
     .4's password: $ ip addr show eth0 Link encap:Ethernet HWaddr FA:16:3E:94:A0:CF inet addr:192.168.20.4 Bcast:192.168.20.255 Mask:255.255.255.0 inet6 addr: fe80::f816:3eff:fe94:a0cf/64 Scope:Link UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1 RX packets:302 errors:0 dropped:0 overruns:0 frame:0 TX packets:411 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:1000 RX bytes:40757 (39.8 KiB) TX bytes:41015 (40.0 KiB) Interrupt:11 Base address:0xc000
 
-4.  Lastly check cinder and nova list to make sure both volumes are
-    created and match the attachment shown in nova list for your new
-    instances.
+</div>
 
-<!-- -->
+4.  Lastly check cinder and nova list to make sure both volumes are
+    created and match the attachment shown in nova list for your
+    new instances.
+
+<div>
 
     cinder list
     +---------------+-----------+----------------+------+-------------+----------+----------+
@@ -1093,8 +1200,10 @@ creation with the instance boot as follows.
     | 7d10a2db-9... | vm-2 | SHUTOFF | None       | Shutdown    | privatenet-1=192.168.20.4 |
     +---------------+------+---------+------------+-------------+---------------------------+
 
-Conclusion
-----------
+</div>
+
+[]()Conclusion
+--------------
 
 In this article we covered the basics of a cinder-enabled environment
 creation and deployment from prerequisites all the way through
@@ -1108,12 +1217,12 @@ using NetApp, EMC or SolidFire cinder drivers, providing Cinder HA to
 your instances and using multiple cinder devices to provide workload
 separation and performance tiering for your instances.
 
-Reference Material
-------------------
+[]()Reference Material
+----------------------
 
 You may also find the following references helpful as you explore cinder
 functionality further.
 
-RPC block storage configuration &ndash;
-[http://www.rackspace.com/knowledge\_center/article/configuring-openstack-block-storage](http://www.rackspace.com/knowledge_center/article/configuring-openstack-block-storage)
+<span style="line-height: 1.6;">RPC block storage configuration &ndash;
+</span></howto/configuring-openstack-block-storage>
 

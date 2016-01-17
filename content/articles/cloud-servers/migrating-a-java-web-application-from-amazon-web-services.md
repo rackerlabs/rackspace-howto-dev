@@ -2,10 +2,10 @@
 node_id: 3588
 title: Migrating a Java Web Application from Amazon Web Services
 type: article
-created_date: '2013-07-02 19:06:14'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 22:0930'
-last_modified_by: stephanie.fillmon
+created_date: '2013-07-02'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -18,7 +18,7 @@ by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The web application used here is the Spring Framework Petclinic sample
 available at
@@ -27,7 +27,8 @@ available at
 The topology of the application in this scenario is represented in the
 following figure:
 
-![](/knowledge_center/sites/default/files/field/image/3588-1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3588-1.png){width="607"
+height="171"}
 
 ### Prerequisites
 
@@ -45,53 +46,53 @@ following figure:
     in the application-for example, Simple Email Server (SES) for email
     or Relational Database Service (RDS) for database.
 -   If you have not already, [create a Cloud Server
-    instance](/knowledge_center/article/provisioning-cloud-resources-to-migrate-from-amazon-web-services)
+    instance](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
     and any supporting Rackspace Cloud services.
 
 ### Install software packages
 
 1.  Install OpenJDK on the cloud:
-    1.  Using SSH, connect to the Cloud Servers instance by using the
+    A.  Using SSH, connect to the Cloud Servers instance by using the
         PublicNet URL and the root password.
-    2.  Enter the root password to log on.
-    3.  Install OpenJDK 7.
+    B.  Enter the root password to log on.
+    C.  Install OpenJDK 7.
 
             sudo yum install java-1.7.0-openjdk-devel
 
-    4.  Determine JAVA\_HOME.
+    D.  Determine JAVA\_HOME.
 
             ll /etc/alternatives/java
 
-        Following is example output in which JAVA\_HOME is
-        /usr/lib/jvm/jre-1.7.0-openjdk.x86\_64.
+        Following is example output in which JAVA\_HOME
+        is /usr/lib/jvm/jre-1.7.0-openjdk.x86\_64.
 
             /etc/alternatives/java -> /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/bin/java
 
 2.  Install Tomcat on the cloud server:
-    1.  Download Tomcat, selecting the version from the following list:
-        [http://tomcat.apache.org/download-70.cgi](http://tomcat.apache.org/download-70.cgi)
-    2.  Copy the URL of the **tar.gz** file (for example,
+    A.  Download Tomcat, selecting the version from the following list:
+        <http://tomcat.apache.org/download-70.cgi>
+    B.  Copy the URL of the **tar.gz** file (for example,
         **http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz**).
-    3.  Change directory to **/usr/share**(or your directory of choice)
+    C.  Change directory to **/usr/share**(or your directory of choice)
         and download the binary.
 
             cd /usr/share
             sudo wget http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz
 
-    4.  Change permissions.
+    D.  Change permissions.
 
             sudo chmod 775 apache-tomcat-7.0.39.tar.gz
 
-    5.  Extract file contents.
+    E.  Extract file contents.
 
             sudo tar zxvf apache-tomcat-7.0.39.tar.gz
 
-    6.  After Tomcat is extracted, remove the **tar.gz**files to save
-        space.
+    F.  After Tomcat is extracted, remove the **tar.gz** files to
+        save space.
 
             sudo rm apache-tomcat-7.0.39.tar.gz
 
-    7.  Set environment variables in **catalina.sh**.
+    G.  Set environment variables in **catalina.sh**.
 
             cd /usr/share/apache-tomcat-7.0.39/bin
             sudo vi catalina.sh
@@ -100,14 +101,14 @@ following figure:
 
             JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
 
-    8.  Save and exit.
-    9.  Automate the startup of Tomcat.
+    H.  Save and exit.
+    I.  Automate the startup of Tomcat.
 
             cd /etc/init.d
             sudo vi tomcat
 
-    10. Add the following information to the file.<br>
-         Ensure that JAVA\_HOME, TOMCAT\_HOME, START\_TOMCAT, and
+    J.  Add the following information to the file.
+        Ensure that JAVA\_HOME, TOMCAT\_HOME, START\_TOMCAT, and
         STOP\_TOMCAT refer to the correct directories.
 
             #!/bin/bash
@@ -149,8 +150,8 @@ following figure:
             esac
             exit 0
 
-    11. Save and exit.
-    12. Set file permissions, set up Tomcat as a system service, and
+    K.  Save and exit.
+    L.  Set file permissions, set up Tomcat as a system service, and
         test the setup.
 
             sudo chmod 755 tomcat
@@ -162,12 +163,12 @@ following figure:
 
             tomcat 0:off 1:off 2:on 3:on 4:on 5:off 6:off
 
-    13. Because Tomcat is running on port 8080, ensure iptables will not
+    M.  Because Tomcat is running on port 8080, ensure iptables will not
         interfere with connectivity.
-    14. Test Tomcat by looking up the cloud server IP in the Rackspace
+    N.  Test Tomcat by looking up the cloud server IP in the Rackspace
         Cloud Control Panel and opening the URL in a browser (for
-        example, **http://\<*ipAddress*\>:8080/**).<br>
-         The Apache Tomcat landing page should appear.
+        example, **http://&lt;*ipAddress*&gt;:8080/**).
+        The Apache Tomcat landing page should appear.
 
         **Note:** You can stop and start Tomcat with the following
         commands:
@@ -181,7 +182,7 @@ following figure:
 
         sudo yum install python-novaclient python-glanceclient swift
 
-    1.  Set the necessary environment variables by running the following
+    A.  Set the necessary environment variables by running the following
         commands, substituting your Rackspace Cloud account username and
         API key:
 
@@ -190,12 +191,12 @@ following figure:
             export ST_AUTH=https://identity.api.rackspacecloud.com/v1.0/
 
         You might want to define these variables in **.bashrc** or
-        **.bash\_profile**, then reload the file with the "source"
-        command.
+        **.bash\_profile**, then reload the file with the
+        "source" command.
 
             source .bashrc
 
-    2.  Type **swift list** and ensure that you can see the container
+    B.  Type **swift list** and ensure that you can see the container
         you've created to hold your data.
 
 ### Back up data from AWS to Rackspace Cloud Files
@@ -225,25 +226,25 @@ we'll use an existing container named "Tomcat"):
     following methods to perform the transfer. If you will transfer
     directly via rsync or sftp, skip to the final section of this
     article after the transfer.
-    -   Upload your archives to the Cloud Files container via the swift
-        client.
+    -   Upload your archives to the Cloud Files container via the
+        swift client.
 
             swift upload Tomcat petclinic.sql.gz
             swift upload Tomcat tomcat.tar.gz
 
-    -   Upload your data into Cloud Files through the Cloud Control
-        Panel.
-        1.  Open your container (**Cloud Control Panel \> Files \>
+    -   Upload your data into Cloud Files through the Cloud
+        Control Panel.
+        A.  Open your container (**Cloud Control Panel &gt; Files &gt;
             *containerName***).
-        2.  Click **Upload Files**.
-        3.  Click **Browse**and select the files to upload.
+        B.  Click **Upload Files**.
+        C.  Click **Browse**and select the files to upload.
 
             **Note:** When you click the **Browse** button, you can
             select multiple files.
 
-        4.  After you have selected the file or files, click **Open** or
+        D.  After you have selected the file or files, click **Open** or
             **Select** (depending on the browser and system).
-        5.  Click **Upload File**.
+        E.  Click **Upload File**.
 
 ### Restore data from Cloud Files to Cloud Servers
 
@@ -286,21 +287,21 @@ Server with the following steps.
 ### Test your application
 
 Access the web application at
-**http://\<*cloudServerIPAddress*\>:8080/petclinic**.
+**http://&lt;*cloudServerIPAddress*&gt;:8080/petclinic**.
 
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](http://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](/howto/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 
 -   [Migrating an application built on a LAMP stack from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+    Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrating a .NET application from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-a-net-application-from-amazon-web-services)
+    Services](/howto/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating an application based on Backbone.js, Node.js, and MongoDB
     from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+    Services](/howto/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
 
 

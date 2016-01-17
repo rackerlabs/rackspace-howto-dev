@@ -2,10 +2,10 @@
 node_id: 3255
 title: Update the Rackspace Cloud Backup Agent
 type: article
-created_date: '2013-01-08 17:00:57'
+created_date: '2013-01-08'
 created_by: Rackspace Support
-last_modified_date: '2015-08-12 18:1942'
-last_modified_by: catherine.richardson
+last_modified_date: '2015-08-12'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -31,21 +31,25 @@ Visit the following links to learn how to:
 -   [Update the agent for yum-based systems](#installrpm) - like CentOS,
     Fedora, and Red Hat
 -   [Update the agent for Arch, Gentoo, and Suse systems](#installarch)
--   [Update the agent for Windows systems](#installwindows)<br>
-      
+-   [Update the agent for Windows systems](#installwindows)
 
-### Update the agent for apt-based Sytems, like Ubuntu, Debian, and Vyatta
+
+<div>
+
+### []()Update the agent for apt-based Sytems, like Ubuntu, Debian, and Vyatta
+
+</div>
 
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
 **Note:** The Advanced Packaging Tool (APT) automatically stops and
 restarts the driveclient service as part of the update process.
 Driveclient versions 1.28 and later install the service called the Cloud
-Backup Updater that keeps the agent up to date on the system.****
+Backup Updater that keeps the agent up to date on the system. ****
 
 **Step 1 &ndash; Update the repository data:**
 
@@ -55,14 +59,18 @@ Backup Updater that keeps the agent up to date on the system.****
 
     apt-get install --reinstall --assume-yes driveclient
 
- 
 
-### Update the agent for yum-based Systems, like CentOS, Fedora, and Red Hat
+
+<div>
+
+### []()Update the agent for yum-based Systems, like CentOS, Fedora, and Red Hat
+
+</div>
 
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
 **Note:** Yum automatically stops and restarts the driveclient service
@@ -75,18 +83,18 @@ up to date on the system.
     yum upgrade --assume-yes driveclient
 
 **Note:** Fedora 22 and later uses a new package manager called DNF
-(Dandified Yum).<br>
-  
+(Dandified Yum).
 
-### Update the agent for Arch, Gentoo, and Suse systems
+
+### []()Update the agent for Arch, Gentoo, and Suse systems
 
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
-**Note:**The tarball you download in Step 3 has the most up-to-date
+**Note:** The tarball you download in Step 3 has the most up-to-date
 instructions. So if the tarball instructions differ from those below,
 follow the tarball instructions.
 
@@ -123,15 +131,17 @@ command includes an example of the directory created from Step 4.**
 
     driveclient --daemon
 
-Example init/startup scripts are included in the tarball.<br>
-  
+Example init/startup scripts are included in the tarball.
 
-### Update the agent on a Windows systems
+
+<div>
+
+### []()Update the agent on a Windows systems
 
 The steps shown in this section should be run as Administrator or as a
 user with Administrator privileges. You might wish to review [Rackspace
 Cloud Backup - Install the agent on
-Windows](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-windows)
+Windows](/howto/rackspace-cloud-backup-install-the-agent-on-windows)
 before performing the steps shown below.
 
 Because the Windows agent inlcudes an automated updater, there should
@@ -141,6 +151,8 @@ options that might be useful.
 
 The preferred way to do a manual update is to download the latest agent
 from the deployment server and simply run it.
+
+</div>
 
 **Step 1 - Download the updated agent:**
 
@@ -175,7 +187,7 @@ without APIUSER and APIKEY.
 Otherwise, updating the agent using the MSI is the same as a fresh
 install. You have all the same MSI options available. For the
 verification steps to test the update, see [Test Windows installation or
-update](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-windows#testsetup).
+update](/howto/rackspace-cloud-backup-install-the-agent-on-windows#testsetup).
 
- 
+
 

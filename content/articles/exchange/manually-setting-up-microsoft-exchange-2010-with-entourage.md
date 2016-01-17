@@ -2,61 +2,72 @@
 node_id: 1295
 title: Manually configure Entourage for email hosted on Exchange 2010
 type: article
-created_date: '2012-02-28 21:48:19'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 17:1602'
-last_modified_by: stephanie.fillmon
-product: Exchange
+created_date: '2012-02-28'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
 The following article will help you setup your Microsoft Exchange 2010
 email account with Microsoft Entourage. Let's take a look at the steps
-below to get you going: 
+below to get you going:
 
-*Note:**Microsoft Exchange 2010 requires Entourage 2008 Web Services
-Edition for full Exchange functionality. Entourage 2008 Web Services
-Edition is a free add-on to Entourage 2008 provided by Microsoft. You
-can find more information at the following
-link:* [http://www.microsoft.com/en-us/download/details.aspx?id=10419](http://www.microsoft.com/en-us/download/details.aspx?id=10419)
+*Note:* <span>*Microsoft Exchange 2010 requires Entourage 2008 Web
+Services Edition for full Exchange functionality. Entourage 2008 Web
+Services Edition is a free add-on to Entourage 2008 provided by
+Microsoft. You can find more information at the following
+link:* </span><http://www.microsoft.com/en-us/download/details.aspx?id=10419>
 
-*If you cannot install the add-on, please consider using [Outlook Web
-Acess](http://www.rackspace.com/knowledge_center/article/outlook-web-access-owa)
+<span>*If you cannot install the add-on, please consider using [Outlook
+Web
+Acess](/howto/outlook-web-access-owa-for-exchange)
 or setup your account using IMAP: [Help tool for hosted email and Skype
 for
-Business](http://www.rackspace.com/knowledge_center/article/help-tool-for-hosted-email-and-skype-for-business)*
+Business](/howto/help-tool-for-hosted-email-and-skype-for-business)*</span>
 
-1. Open up Entourage and select **Tools**, **Accounts**, **New** and
+1\. Open up Entourage and select **Tools**, **Accounts**, **New** and
 then **Exchange**.
 
 *Note*: *If the setup assistant window appears select Configure Account
-Manually and select New and then Exchange*. 
+Manually and select New and then Exchange*.
 
-![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange.png) 
- ![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange2.png) 
+![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange.png)
+ ![](http://c939102.r2.cf2.rackcdn.com/(E%26A)Entourage2008EWSExchange2.png)
 
-2. In the pop up window, enter in the following information into the
-fields below: 
+2\. In the pop up window, enter in the following information into the
+fields below:
 
 -   Account Name - Enter a descriptive name of your choice for your
-    account (e.g., Work Account). 
+    account (e.g., Work Account).
+
+<!-- -->
 
 -   Name - This is the name that will be displayed when you send an
     email message.
 
+<!-- -->
+
 -   E-mail address - Enter in your entire email address using all
     lowercase letters (e.g., myname@mydomain.com).
 
+<!-- -->
+
 -   Account ID - Enter in your full email address.
+
+<!-- -->
 
 -   Domain - leave this field blank.
 
+<!-- -->
+
 -   Password - Enter in the password associated with the email address
-    you're setting up. 
+    you're setting up.
 
- ![](http://c8607259.r59.cf2.rackcdn.com/Exchange2010Entourage.png) 
+ ![](http://c8607259.r59.cf2.rackcdn.com/Exchange2010Entourage.png)
 
-3. Next, you'll click the **Advanced** tab and in the **Exchange
+3\. Next, you'll click the **Advanced** tab and in the **Exchange
 Server** box, enter in **connect.emailsrvr.com** and then select **OK**.
 Your account will then connect and mail data will begin to populate into
 your inbox.

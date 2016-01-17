@@ -2,15 +2,15 @@
 node_id: 4121
 title: Configure flash drives in High I/O instances as Data drives
 type: article
-created_date: '2014-07-02 19:42:22'
-created_by: paul.querna
-last_modified_date: '2014-08-15 11:1723'
-last_modified_by: kyle.laffoon
+created_date: '2014-07-02'
+created_by: Paul Querna
+last_modified_date: '2014-08-15'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-The two 1.6 TB PCIe flash cards included with the OnMetal I/O flavor come unformatted. Use the following steps to configure your flash cards for use as a data disk.  
+The two 1.6 TB PCIe flash cards included with the OnMetal I/O flavor come unformatted. Use the following steps to configure your flash cards for use as a data disk.
 
 1. Set the Linux I/O scheduler to <code>noop</code>.
 
@@ -37,5 +37,5 @@ The two 1.6 TB PCIe flash cards included with the OnMetal I/O flavor come unform
 4. Add /data mount point entry to fstab:
 
         mkdir /data
-        echo "UUID=`blkid -s UUID -o value /dev/md0`  /data ext4  noatime 0  0" >> /etc/fstab 
+        echo "UUID=`blkid -s UUID -o value /dev/md0`  /data ext4  noatime 0  0" >> /etc/fstab
         mount /data

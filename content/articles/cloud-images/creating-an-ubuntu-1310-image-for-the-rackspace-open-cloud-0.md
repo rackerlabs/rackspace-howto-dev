@@ -2,10 +2,10 @@
 node_id: 3907
 title: Creating an Ubuntu 13.10 image for the Rackspace open cloud
 type: article
-created_date: '2014-02-17 15:40:19'
-created_by: cloud.images
-last_modified_date: '2016-01-12 15:0043'
-last_modified_by: stephanie.fillmon
+created_date: '2014-02-17'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 body_format: tinymce
 ---
@@ -32,21 +32,21 @@ own custom image for the Rackspace cloud.
     of how to prepare an image.  Read through them carefully before
     using them.  They are provided "as is" without warranty of any kind,
     either expressed or implied, including, but not limited to, the
-    implied warranties of merchantability and fitness for a particular
-    purpose.
+    implied warranties of merchantability and fitness for a
+    particular purpose.
 -   The instructions are written so you can create and re-create the
     same VM repeatedly as you perfect your image. **The scripts will
     automatically delete old VMs and templates that were created in
     previous runs.**
 -   Ensure that whatever kickstart file you use installs the XenServer
-    and nova agents together, or the cloud-init agent.<br>
-     **Note**: Cloud-init currently isn't working because of a bug with
+    and nova agents together, or the cloud-init agent.
+    **Note**: Cloud-init currently isn't working because of a bug with
     config-drive in OpenStack.
     -   The XenServer 6.2.0 tools ISO can be downloaded
-        from: [http://boot.rackspace.com/files/xentools/xs-tools-6.2.0.iso](http://boot.rackspace.com/files/xentools/xs-tools-6.2.0.iso),
+        from: <http://boot.rackspace.com/files/xentools/xs-tools-6.2.0.iso>,
         and installed with the following command:
 
-            mkdir -p tmp; mount -o loop xs-tools-6.2.0.iso tmp; cd tmp/Linux; ./install.sh; cd ../..; umount tmp 
+            mkdir -p tmp; mount -o loop xs-tools-6.2.0.iso tmp; cd tmp/Linux; ./install.sh; cd ../..; umount tmp
 
     -   Nova agent installation instructions are at:
         [https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux.](https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux)
@@ -59,7 +59,7 @@ own custom image for the Rackspace cloud.
     `PV-args`.  These instructions assume that you have such a file.  If
     you don't, you can remove `ks=$KICKFILE` from the `PV-args`
     parameter, or you can [create a new kickstart
-    file](http://www.centos.org/docs/4/html/rhel-sag-en-4/s1-kickstart2-file.html). 
+    file](http://www.centos.org/docs/4/html/rhel-sag-en-4/s1-kickstart2-file.html).
     If you remove ks=\$KICKFILE from the PV-args parameter, you will
     have to answer several questions in the Linux installer.
 -   If your VM network requires static IPs, you must perform the
@@ -74,18 +74,18 @@ own custom image for the Rackspace cloud.
 ### Quick instructions {#CreatingUbuntu13.10ImageforRackspaceCloud-Instructions}
 
 1.  Use the following one-liner to kickstart the VM and generate the VHD
-    file.<br>
-     It performs the following actions:<br>
-     a. Sets variables.<br>
-     b. Deletes any old VMs or templates with the same name.<br>
-     c. Creates a new template based on the CentOS 6.0 64-bit template.<br>
-     d. Creates the VIM and VIF.<br>
-     e. Sets the install-repository parameter and PV-args parameter.<br>
-     f. Starts the VM, which automatically installs itself and halts.<br>
-     **NOTE:** This one-liner assumes that the kickstart file handles
-    the installation of the necessary XenServer, nova, or cloud-init
-    agents in post-installation. Ensure that your kickstart file does
-    the same. Details about the agent installations are in the &ldquo;Tips and
+    file.
+    It performs the following actions:
+    a. Sets variables.
+    b. Deletes any old VMs or templates with the same name.
+    c. Creates a new template based on the CentOS 6.0 64-bit template.
+    d. Creates the VIM and VIF.
+    e. Sets the install-repository parameter and PV-args parameter.
+    f. Starts the VM, which automatically installs itself and halts.
+    **NOTE:** This one-liner assumes that the kickstart file handles the
+    installation of the necessary XenServer, nova, or cloud-init agents
+    in post-installation. Ensure that your kickstart file does the same.
+    Details about the agent installations are in the &ldquo;Tips and
     Warnings&rdquo; section.
 
         VMNAME=ubuntutestvm1; TEMPLATENAME=Ubuntu13.10; NETNAME=publicnet; MIRROR="http://mirror.rackspace.com/ubuntu/"; KICKFILE="http://host.com/kickstart.cfg"; VMUUID=`xe vm-list name-label=$VMNAME params=uuid --minimal`; NETUUID=`xe network-list name-label=$NETNAME params=uuid --minimal`; TEMPLATEUUID=`xe template-list name-label=$TEMPLATENAME params=uuid --minimal`; TEMPLATESOURCE=`xe template-list name-label=Ubuntu\ Lucid\ Lynx\ 10.04\ \(64-bit\) params=uuid --minimal`; SR=`mount |grep sr-mount |cut -d' ' -f3`; if [ "$VMUUID" != "" ]; then xe vm-uninstall uuid=$VMUUID --force; fi; if [ "$TEMPLATEUUID" != "" ]; then xe template-uninstall template-uuid=$TEMPLATEUUID --force; fi; TEMPLATEUUID=`xe vm-clone uuid="$TEMPLATESOURCE" new-name-label="$TEMPLATENAME"`; xe template-param-set uuid=$TEMPLATEUUID other-config:debian-release=saucy; VMUUID=`xe vm-install template=$TEMPLATENAME new-name-label=$VMNAME`; VMVHD=`xe vbd-list vm-name-label=$VMNAME params=vdi-uuid --minimal`.vhd; xe vif-create vm-uuid=$VMUUID network-uuid=$NETUUID mac=random device=0; xe vm-param-set uuid=$VMUUID other-config:install-repository=$MIRROR; xe vm-param-set uuid=$VMUUID PV-args="console=hvc0 ks=$KICKFILE netcfg/disable_autoconfig=true netcfg/get_nameservers=173.203.4.9 netcfg/get_ipaddress=10.23.207.242 netcfg/get_netmask=255.255.248.0 netcfg/get_gateway=10.23.200.1 netcfg/confirm_static=true netcfg/get_hostname=localhost netcfg/get_domain=domain"; xe vm-start uuid=$VMUUID
@@ -146,8 +146,8 @@ own custom image for the Rackspace cloud.
 
         xe vif-create vm-uuid=$VMUUID network-uuid=$NETUUID mac=random device=0
 
-8.  Set the other-config:install-repository parameter to Rackspace
-    mirror.
+8.  Set the other-config:install-repository parameter to
+    Rackspace mirror.
 
         xe vm-param-set uuid=$VMUUID other-config:install-repository=$MIRROR
 
@@ -156,8 +156,8 @@ own custom image for the Rackspace cloud.
     This instruction assumes that the kickstart file handles the
     installation of the necessary XenServer, nova, or cloud-init agents
     in post-installation. Ensure that your kickstart file does the same.
-    Details about the agent installations are in the &ldquo;Tips and Warnings&rdquo;
-    section.
+    Details about the agent installations are in the &ldquo;Tips and
+    Warnings&rdquo; section.
 
         xe vm-param-set uuid=$VMUUID PV-args="console=hvc0 ks=$KICKFILE netcfg/disable_autoconfig=true netcfg/get_nameservers=173.203.4.9 netcfg/get_ipaddress=10.23.207.242 netcfg/get_netmask=255.255.248.0 netcfg/get_gateway=10.23.200.1 netcfg/confirm_static=true netcfg/get_hostname=localhost netcfg/get_domain=domain"
 
@@ -165,12 +165,12 @@ own custom image for the Rackspace cloud.
 
         xe vm-start uuid=$VMUUID
 
-11. Wait for installation to finish.<br>
-     **Tip**: You can connect to the console by using VNC; for example:
+11. Wait for installation to finish.
+    **Tip**: You can connect to the console by using VNC; for example:
 
         # Establish ssh port forwarding to the appropriate VNC port on the XenServer
         ssh -L 5902:localhost:5902 root@10.1.2.3
-         
+
         # Now from your desktop you can connect to the console to watch the installation progress
         xvnc4viewer 127.0.0.1:5902
 
@@ -190,19 +190,19 @@ own custom image for the Rackspace cloud.
     no extractable metadata, so you cannot use the file to see what is
     in it.
 
-14. Import the image to the Rackspace cloud.<br>
-     <br>
-     Following is a quick summary of how to do this by using the Cloud
-    Images API.<br>
-     *NOTE: *This summary assumes that:
+14. Import the image to the Rackspace cloud.
+
+    Following is a quick summary of how to do this by using the Cloud
+    Images API.
+    *NOTE: *This summary assumes that:
 
     -   you have already uploaded the image to a container called
         **images** in the region where you want to import the image
         -   if you don't know how to do this, please consult the article
             [Using Swiftly to upload an image to be
-            imported](/knowledge_center/article/using-swiftly-to-upload-an-image-to-be-imported)
+            imported](/howto/use-swiftly-to-upload-an-image)
             in the Rackspace Knowledge Center.
-    -   you have named your image**ubuntu1310v1.vhd**.
+    -   you have named your image **ubuntu1310v1.vhd**.
 
     <!-- -->
 
@@ -210,9 +210,9 @@ own custom image for the Rackspace cloud.
         TOKEN="YOURTOKENHERE"
         TENANTID="YOURTENANTIDHERE"
         IMAGESURL="https://iad.images.api.rackspacecloud.com/v2"
-         
+
         # Create the import image task
-        curl -s $IMAGESURL/tasks -X POST -H "X-Auth-Project-Id: $TENANTID" -H "Accept: application/json"  -H "Content-Type: application/json" -H "X-Tenant-Id: $TENANTID" -H "X-User-Id: $TENANTID" -H "X-Auth-Token: $TOKEN" -d '{"type": "import", "input": {"import_from": "images/ubuntu1310v1.vhd", "image_properties" : {"name": "Custom Ubuntu 13.10 v1"}}}' 
+        curl -s $IMAGESURL/tasks -X POST -H "X-Auth-Project-Id: $TENANTID" -H "Accept: application/json"  -H "Content-Type: application/json" -H "X-Tenant-Id: $TENANTID" -H "X-User-Id: $TENANTID" -H "X-Auth-Token: $TOKEN" -d '{"type": "import", "input": {"import_from": "images/ubuntu1310v1.vhd", "image_properties" : {"name": "Custom Ubuntu 13.10 v1"}}}'
 
     The output of the above command (piped through python -m json.tool)
     is:
@@ -294,7 +294,7 @@ own custom image for the Rackspace cloud.
         | OS-EXT-IMG-SIZE:size                           | 589204485                            |
         | id                                             | 7a3515d4-ddd9-4297-bd36-06d2140bf11b |
         +------------------------------------------------+--------------------------------------+
-         
+
         # Boot your new image
         supernova personal-iad boot --image 7a3515d4-ddd9-4297-bd36-06d2140bf11b --flavor 3 --key-name rax ubuntu1310v1-vm1
         +------------------------+--------------------------------------+
@@ -322,9 +322,9 @@ own custom image for the Rackspace cloud.
         | config_drive           |                                      |
         | metadata               | {}                                   |
         +------------------------+--------------------------------------+
-         
+
         # Login to your new instance
-         
+
         ssh root@162.209.96.39
         Warning: Permanently added '162.209.96.39' (ECDSA) to the list of known hosts.
         The programs included with the Ubuntu system are free software;
@@ -336,8 +336,8 @@ own custom image for the Rackspace cloud.
 
 ### Related information {#CreatingUbuntu13.10ImageforRackspaceCloud-Related}
 
--   [https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux](https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux)
--   [https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Cloud-Init-for-Linux](https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Cloud-Init-for-Linux)
+-   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux>
+-   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Cloud-Init-for-Linux>
 
 ### Contributors
 

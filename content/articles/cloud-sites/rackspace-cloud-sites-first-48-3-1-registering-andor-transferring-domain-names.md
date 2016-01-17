@@ -2,10 +2,10 @@
 node_id: 638
 title: Getting Started With Cloud Sites - Registering and/or Transferring Domain Names
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:3411'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -15,32 +15,37 @@ Panel](https://manage.rackspacecloud.com/). You can get to it from the
 Cloud Control Panel by clicking your name in the upper-right corner and
 selecting [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com/) or by navigating to
-[http://manage.rackspacecloud.com](http://manage.rackspacecloud.com).
+<http://manage.rackspacecloud.com>.
 
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
 **Cloud Sites makes it easy for you to purchase a domain name directly
 through the Rackspace Cloud Control Panel.** Below, we will go through
 the process for [Registering a New Domain Name](#register_new_domain)
 and [Transferring Your Existing Domain](#transfer_domain).
 
+[](){#register_new_domain}
+
 **Registering a New Domain Name**
 
 **NOTE:** *If you are registering a new domain name through the Control
 Panel, the DNS will automatically be setup for you to point to the
-Rackspace Cloud.* *Please see the "[What Top Level Domain extensions can
-I purchase through the control
-panel?"](http://www.rackspace.com/knowledge_center/article/what-top-level-domain-extensions-can-i-purchase-through-the-control-panel)
-article for a list of domain extensions available for purchase.*
+Rackspace Cloud.*<span> *Please see the "[What Top Level Domain
+extensions can I purchase through the control
+panel?"](/howto/what-top-level-domain-extensions-tlds-can-i-purchase-through-the-control-panel)
+article for a list of domain extensions available for purchase.*</span>
 
 -   First, Log in to the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 
-    ![](/knowledge_center/sites/default/files/field/image/capture_1_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/capture_1_0.png){width="179"
+    height="287"}
+
+<!-- -->
 
 -   Click **Add a Site**
 -   Select the correct **Site Owner** (usually "You")
@@ -49,14 +54,18 @@ article for a list of domain extensions available for purchase.*
 
     ![](http://c806394.r94.cf2.rackcdn.com/namesite.png)
 
+<!-- -->
+
 -   Choose the length of time for which you want to purchase the domain
     name
 
     [![Click here to view full size
-    image](http://c806394.r94.cf2.rackcdn.com/registerdomain.png "Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/registerdomain.png)
+    image](http://c806394.r94.cf2.rackcdn.com/registerdomain.png "Click here to view full size image"){width="550"}](http://c806394.r94.cf2.rackcdn.com/registerdomain.png)
 
--   The next screen will allow you to review your new domain purchase
-    order. If you are ready to purchase, then click **Finish**
+-   The next screen will allow you to review your new domain
+    purchase order. If you are ready to purchase, then click **Finish**
+
+[](){#transfer_domain}
 
 **Transferring Your Existing Domain**
 
@@ -77,21 +86,30 @@ Follow these steps to transfer your existing domain name to Cloud Sites:
 
 -   Log in to the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 
-    ![](/knowledge_center/sites/default/files/field/image/capture_1_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/capture_1_0.png){width="179"
+    height="287"}
+
+<!-- -->
 
 -   Click Add A Site and then enter the domain name in the **Domain
     Name** text box
 
     ![](http://c806394.r94.cf2.rackcdn.com/namesite.png)
 
+<!-- -->
+
 -   Check the **I already own/manage this domain name** check box
 -   Select **Transfer the domain name** from the pull-down menu
 
     ![](http://c806394.r94.cf2.rackcdn.com/transferdomain.png)
 
+<!-- -->
+
 -   Click **Next Step**
+
+<!-- -->
 
 -   Last, you will review your order and click **Finish** once you are
     ready to process the order
@@ -113,21 +131,22 @@ current registrar for the domain.*
 
 **NOTE:** *All DNS changes take up to 48 hours to take effect. During
 this time you can check your website by [using the test
-URL](https://www.rackspace.com/knowledge_center/article/test-your-website-before-transferring-the-domain-name-to-cloud-sites)
+URL](/howto/test-your-website-before-transferring-the-domain-name-to-cloud-sites)
 (i.e. www.yourdomain.com.websitetestlink.com).*
 
 ###### For a Site Already in Your Control Panel
 
 -   Log in to the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 -   Click the domain you wish to transfer
 -   Click the DNS Tab
 
-**![](/knowledge_center/sites/default/files/field/image/renewal.png)**
+**![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/renewal.png){width="600"
+height="248"}**
 
--   Click **Transfer Domain**
--   Review the Order Screen and Click **Finish**
+-   <span>Click </span>**Transfer Domain**
+-   <span>Review the Order Screen and Click </span>**Finish**
 
 This concludes How to Register Your Domain and Domain Transfers. If at
 any point you need additional assistance, please contact Support and a
@@ -139,5 +158,5 @@ Rackspace Cloud Sites.
 ### Next section
 
 [Managing DNS
-records](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-managing-dns-records)
+records](/howto/getting-started-with-cloud-sites-managing-dns-records)
 

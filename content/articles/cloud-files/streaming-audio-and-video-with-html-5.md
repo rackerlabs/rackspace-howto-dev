@@ -2,10 +2,10 @@
 node_id: 3285
 title: Streaming Audio and Video with HTML 5
 type: article
-created_date: '2013-02-01 18:40:37'
+created_date: '2013-02-01'
 created_by: David Hendler
-last_modified_date: '2014-10-14 15:1426'
-last_modified_by: kyle.laffoon
+last_modified_date: '2014-10-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Files
 body_format: full_html
 ---
@@ -35,6 +35,8 @@ Now you are ready to learn about streaming audio and video with HTML5.
 -   [Streaming Audio with HTML 5](#audio)
 -   [Streaming Video with HTML 5](#video)
 
+[]()
+
 Streaming Audio
 ---------------
 
@@ -61,18 +63,24 @@ into ogg files.
 5.  Save audiotest.html and upload it to the CDN-enabled container.
 6.  Click the audiotest.html link to view it.
 
-**Sample code:** <br>
-<br>
+**Sample code:**
+
 
     <audio controls>
+
     <source src="full/link/to/http/mp3/audio/file.mp3" type="audio/mpeg" />
+
     <source src="full/link/to/http/ogg/audio/file.ogg" type="audio/ogg" />
+
     <em>Sorry, your browser doesn't support HTML5 audio.</em>
+
     </audio>
 
 Here is what you should see when it's working:
 
 *Sorry, your browser doesn't support HTML5 audio.*
+
+[]()
 
 Streaming Video
 ---------------
@@ -111,17 +119,22 @@ store](https://itunes.apple.com/us/app/miro-video-converter-mvc/id412699210?mt=1
 8.  Save videotest.html and upload it to the CDN-enabled container.
 9.  Click the videotest.html link to view it.
 
- 
+
 
 **Sample code:**
 
- 
+
 
     <video width="356" height="200" controls poster="full/http/link/to/image/file.png"  >
+
     <source src="full/link/to/http/mp4/video/file.mp4" type="video/mp4" />
+
     <source src="full/link/to/http/ogv/video/file.ogv" type="video/ogg" />
+
     <source src="full/link/to/http/webm/video/file.wbem" type="video/webm" />
+
     <em>Sorry, your browser doesn't support HTML5 video.</em>
+
     </video>
 
 Here is what you should see when it's working:

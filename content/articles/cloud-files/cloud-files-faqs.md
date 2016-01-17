@@ -2,15 +2,15 @@
 node_id: 4980
 title: Cloud Files - FAQs
 type: article
-created_date: '2015-12-03 00:32:27'
+created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 22:0652'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
 
-* * * * *
+------------------------------------------------------------------------
 
 - Getting Started -
 -------------------
@@ -88,8 +88,7 @@ with the Akamai's Content Distribution Network through using the Info
 panel of the browser that displays the CDN URL. Distribution can be
 toggled on or off at any time. Supporting the latest and greatest
 version of the Cloud Files protocol, you can also browse hierarchical
-pseudo-folder structures. Link:
-[http://cyberduck.ch/](http://cyberduck.ch/ "http://cyberduck.ch/")
+pseudo-folder structures. Link: <http://cyberduck.ch/>
 
 **Django-Cloudfiles** is an extension to the management system of
 Django, the popular website framework. Django-Cloudfiles lets you
@@ -109,8 +108,7 @@ coding necessary) 8. no external dependancies required Going to be
 Popular! 9. Django is all about reusability; Django developers always
 look for an existing solution first (like this one)! 10. Django is
 gaining steam: it&rsquo;s supported by Google App Engine, and it is gaining
-traction. Link:
-[http://github.com/rossdakin/django-cloudfiles/](http://github.com/rossdakin/django-cloudfiles/ "http://github.com/rossdakin/django-cloudfiles/")
+traction. Link: <http://github.com/rossdakin/django-cloudfiles/>
 
 **Media manager** plug-in will mirror your media library to your Cloud
 Files CDN. All URL&rsquo;s to this content will use the Cloud Files path when
@@ -128,7 +126,7 @@ other forms of storage such as a SAN or NAS. Since Cloud Files is a
 different way of thinking when it comes to storage, following is a
 review of key concepts.
 
-**Accounts**
+[]() **Accounts**
 
 The Cloud Files system is designed to be used by many different
 customers. Your user account is your slice of the Cloud Files system. A
@@ -136,7 +134,7 @@ user must identify themselves with a valid Username and their API Access
 Key. Once authenticated, that user has full read/write access to the
 Objects (files) stored under that user account.
 
-**Containers**
+[]() **Containers**
 
 A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way
 for you to organize that data. You can think of a Container as a folder
@@ -145,7 +143,7 @@ a Container and these other &ldquo;file system&rdquo; concepts is that Container
 cannot be nested. You can, however, create up to 500,000 Containers
 under your account.
 
-**Objects**
+[]() **Objects**
 
 An &ldquo;Object&rdquo; is the basic storage entity and its metadata that represents
 the &ldquo;files&rdquo; you store in Cloud Files. When you upload data to Cloud
@@ -156,7 +154,7 @@ backup of your digital photos and add a metadata key/value pair of
 &ldquo;PhotoAlbum-CaribbeanCruise&rdquo;. Objects are grouped into Containers and
 you can have any number of Objects within a Container.
 
-**Operations**
+[]() **Operations**
 
 Operations are the actions you perform against your account in Cloud
 Files. Creating or deleting Containers, uploading or downloading
@@ -165,7 +163,7 @@ API section of the Developer Guide. Operations are performed via the
 ReST web service API or a language-specific API (currently we support
 Python, PHP, Java, and C\#/.NET).
 
-**Permissions**
+[]() **Permissions**
 
 There are no permissions or access-controls around Containers or Objects
 other than being split into separate accounts. Users must authenticate
@@ -175,7 +173,7 @@ create/delete Containers and Objects only within that Account.
 At this time, there is no way to make a storage object publicly
 accessible.
 
-**CDN-enabled Containers**
+[]() **CDN-enabled Containers**
 
 To publish your data so that it can be served by Akamai's Content
 Distribution Network (CDN), you need to &ldquo;publish to CDN&rdquo; the Container
@@ -213,10 +211,10 @@ and some third-party tools are also available.
 
 The basics of Cloud Files include:
 
--   Cloud Files is a &ldquo;cloud&rdquo; storage system and not a traditional file
-    system.
--   Customers need to create &ldquo;Containers&rdquo; in the storage system to store
-    data.
+-   Cloud Files is a &ldquo;cloud&rdquo; storage system and not a traditional
+    file system.
+-   Customers need to create &ldquo;Containers&rdquo; in the storage system to
+    store data.
 -   You cannot create Containers within other Containers.
 -   Customers can have any number of top level Containers.
 -   Your data is stored in &ldquo;Objects&rdquo; within those Containers.
@@ -226,57 +224,77 @@ The basics of Cloud Files include:
     Control Panel or language-specific programming interfaces.
 
 More detail can be found in [Cloud Files Key
-Concepts](https://admin.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
+Concepts](/howto/cloud-files-key-concepts).
 
-**Cloud Files Usage Scenarios**
+[]() **Cloud Files Usage Scenarios**
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 There are a number of basic usage scenarios for Cloud Files. We have
 classified them based on user objectives.
 
-**For Application Developers**
+[]() **For Application Developers**
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 -   A development guide is available at [Cloud Files Dev
     Guide](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html "http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html")
--   Cloud Files has several [Software Development Kits
-    (SDKs)](https://admin.rackspace.com/knowledge_center/article/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet)
+-   Cloud Files has several [Software Development
+    Kits (SDKs)](/howto/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet)
     for popular programming languages
 -   An [API Getting Started
     Guide](http://docs.rackspace.com/files/api/v1/cf-getting-started/content/Overview-d1e01.html)
     is available for the Cloud Files API
 
-**For Content Providers and Website Designers**
+[]() **For Content Providers and Website Designers**
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 -   [Use Cloud Files to serve static content for
-    websites](https://admin.rackspace.com/knowledge_center/index.php/Use_Cloud_Files_to_serve_static_content_for_websites "Use Cloud Files to serve static content for websites")
+    websites](/howto/serve-static-content-for-websites-by-using-cloud-files "Use Cloud Files to serve static content for websites")
 -   Check out some [Cloud Files
-    tools](https://admin.rackspace.com/knowledge_center/frequently-asked-question/what-can-i-do-with-cloud-files-tools "What can I do with Cloud files tools ?")
+    tools](/howto/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
     which can improve website performance and scalability.
 
-**For IT Managers**
+[]() **For IT Managers**
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 -   Check out some [Cloud Files
-    tools](https://admin.rackspace.com/knowledge_center/frequently-asked-question/what-can-i-do-with-cloud-files-tools "What can I do with Cloud files tools ?")
-    which can ease day to day operations such as data backup and
-    archival.
+    tools](/howto/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
+    which can ease day to day operations such as data backup
+    and archival.
 
-**For all users**
+[]() **For all users**
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 -   [Getting your API key for Cloud
-    Files](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-viewing-and-regenerating-your-api-key "Getting the key to use Cloud Files")
+    Files](/howto/view-and-reset-your-api-key "Getting the key to use Cloud Files")
 -   [Uploading to Cloud Files with
-    Cyberduck](https://admin.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck)
+    Cyberduck](/howto/configuring-rackspace-cloud-files-with-cyberduck)
 
-**Additional Cloud Files Resources**
+[]() **Additional Cloud Files Resources**
 
 -   [Rackspace Official SDKs and
     Tools](https://developer.rackspace.com/sdks/ "Rackspace Official SDKs")
@@ -293,7 +311,7 @@ similar services available in the market.
 -   Fast and reliable performance.
 -   World class support
 
-**Simplicity**
+[]() **Simplicity**
 
 Cloud Files is simple to use for developers and non-developers alike.
 Users can get started in as little as five minutes. Users do not have to
@@ -321,7 +339,7 @@ application programming interfaces to develop utilities or applications.
 The API&rsquo;s are easy to use and are documented with examples to get
 started quickly.
 
-**Affordability**
+[]() **Affordability**
 
 Pricing for Cloud Files with CDN is comprised of the amount of total
 data you have stored (per GB), and the amount of bandwidth used to serve
@@ -331,7 +349,7 @@ The [current pricing for Cloud
 Files](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/)
 can always be found on our website.
 
-**Flexibility**
+[]() **Flexibility**
 
 Cloud Files is a dynamically expanding storage system very flexible and
 is built on the pay for use principle. Customers can use as much or
@@ -356,14 +374,14 @@ for managing content in Cloud Files and publishing content over the CDN.
 The API allow developers to work in the language they feel most
 comfortable
 
-**Superior performance**
+[]() **Superior performance**
 
 Rackspace has built networks with superior performance for years. The
 Akamai CDN capability improves the performance further for distribution
 of digital content. In short, Akamai can bring data closer to end users
 and serve popular content faster.
 
-**World Class support**
+[]() **World Class support**
 
 With Cloud Files world-class free technical support is only a click
 away. Live support, with real people is available 24/7. Fanatical
@@ -371,7 +389,7 @@ Support is built into the price. Users can get peace of mind knowing
 that technical support is just a phone call or online chat away &ndash; at any
 time of the day.
 
-**Data Redundancy**
+[]() **Data Redundancy**
 
 The Cloud Files storage system is designed to be highly available and
 fault tolerant. Cloud Files achieves client data redundancy by
@@ -383,7 +401,7 @@ in such a way as to continue to by fully functional even in the event of
 a major service disruption within a Datacenter. Content on the CDN
 provides an additional layer of data redundancy.
 
-**Security**
+[]() **Security**
 
 Cloud Files uses a number of different measures to ensure that your data
 is kept safe. First and foremost, all traffic between clients and the
@@ -457,16 +475,16 @@ not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments to
 [review the
-concepts](https://admin.rackspace.com/knowledge_center/index.php/Key_Concepts).
+concepts](/howto/cloud-files-key-concepts).
 
 **Using Cloud Files**
 
 There are two ways to use Cloud Files:
 
-1.  GUI interface such as the Rackspace Cloud Control Panel or
-    Cyberduck.
-2.  Programming interfaces via ReST, Python, PHP, Ruby, Java, or
-    C\#/.NET.
+1.  GUI interface such as the Rackspace Cloud Control Panel
+    or Cyberduck.
+2.  Programming interfaces via ReST, Python, PHP, Ruby, Java,
+    or C\#/.NET.
 
 **Control Panel Interface**
 
@@ -498,7 +516,7 @@ between a Container and these other &ldquo;file system&rdquo; constructs is that
 Containers cannot be nested. You can have up to 500,000 Containers in
 your account, but they only exist at the &ldquo;top level&rdquo; of your account and
 Containers cannot reside within other Containers.
-![](/knowledge_center/sites/default/files/field/image/createContainer1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createContainer1.png){width="400"}
 
 **Note**: Containers scale to about one million objects before
 peformance degrades. Containers can only be removed from Cloud Files if
@@ -512,19 +530,21 @@ you can use either the Cloud Files user interface in the Rackspace Cloud
 Control Panel or one of our programming interfaces.
 
 Please see the [How do I use Cloud Files and
-CDN?](https://admin.rackspace.com/knowledge_center/frequently-asked-question/how-do-i-use-cloud-files-and-cdn)
+CDN?](/howto/getting-started-with-cloud-files-and-cdn-0)
 Knowledge Center article for more details.
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 **Account Services**
 
-Can Cloud Files be used for my Cross-domain policy file?
-
-[Edit](https://admin.rackspace.com/knowledge_center/node/4624/edit)
+### Can Cloud Files be used for my Cross-domain policy file?
 
 No. The Cloud Files CDN does not support exposing a custom
 crossdomain.xml file, as this is a required file by the Openstack Swift
@@ -532,24 +552,23 @@ project. OpenStack Swift uses this as a global configuration file for
 the installation, and can not be modified for multiple tenants, such as
 our Public Cloud.
 
-Is there a Cloud Files specific SLA?
-
-[Edit](https://admin.rackspace.com/knowledge_center/node/2191/edit)
+### Is there a Cloud Files specific SLA?
 
 Please click here to view [The Rackspace Cloud Terms of
 Service](http://www.rackspace.com/cloud/legal/).
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 **Security**
 
-Why does uploading a file in the Control Panel set the Allow-Origin
-header on my container?
-
-[Edit](https://admin.rackspace.com/knowledge_center/node/3969/edit)
+### Why does uploading a file in the Control Panel set the Allow-Origin header on my container?
 
 When you upload a file in the Cloud Control Panel, an Allow-Origin
 header is set on the container to support cross-origin resource sharing
@@ -562,8 +581,7 @@ By allowing the browser to upload directly to the Cloud Files API,
 maximum upload performance can be achieved.
 
 Read more about CORS at
-[http://en.wikipedia.org/wiki/Cross-origin\_resource\_sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
-.
+<http://en.wikipedia.org/wiki/Cross-origin_resource_sharing> .
 
 ### Cloud Files - How do Permissions Work?
 
@@ -578,9 +596,13 @@ Cloud Files must include a valid "storage token" in an HTTP header
 transmitted over a HTTPS connection.
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 Web Technologies
 ----------------
@@ -613,18 +635,18 @@ There are several different ways to stream your content with Cloud
 Files. Click a link below to find out more for each approach.
 
 -   [JW
-    Player](https://admin.rackspace.com/knowledge_center/article/streaming-cloud-files-with-jw-player)
--   [FlowPlayer](https://admin.rackspace.com/knowledge_center/article/cloud-files-streaming-with-flowplayer-plugins)
--   [OSMF (Open Source Media
-    Framework)](https://admin.rackspace.com/knowledge_center/article/cloud-files-streaming-with-osmf-plugins)
+    Player](/howto/streaming-cloud-files-with-jw-player)
+-   [FlowPlayer](/howto/cloud-files-streaming-with-flowplayer-plugins)
+-   [OSMF (Open Source
+    Media Framework)](/howto/cloud-files-streaming-with-osmf-plugins)
     , which allows you to build your own player
 -   [iOS Device
     Streaming](http://docs.rackspace.com/files/api/v1/cf-devguide/content/iOS-Streaming-d1f3725.html)
     (link goes to API Developer Guide)
 
-<br>
- Cloud Files Streaming FAQs
----------------------------
+
+[]() Cloud Files Streaming FAQs
+-------------------------------
 
 ### Why have we chosen to support specific players?
 
@@ -638,31 +660,33 @@ will have access to them.
 ### Why are we not using RTMP?
 
 -   RTMP is probably the most popular delivery format today, but the
-    market is quickly moving towards HTTP delivery for Streaming
-    content. Here are just a few reasons the market is moving towards
-    HTTP.
+    market is quickly moving towards HTTP delivery for
+    Streaming content. Here are just a few reasons the market is moving
+    towards HTTP.
 -   Accessibility- Many firewalls block RTMP and RTSP streaming
-    protocols because corporations don't want users watching video at
-    work. HTTP appears to be normal web traffic, meaning that videos
+    protocols because corporations don't want users watching video
+    at work. HTTP appears to be normal web traffic, meaning that videos
     served over HTTP are usually left open.
 -   Startup times- Akamai sees a significant reduction in stream startup
     times on average for traffic served via HTTP.
 -   Throughput (image quality)- With the HTTP network being larger than
     many other networks, Akamai is closer to the end user on their HTTP
     network meaning they get better throughput of data. that means
-    customers will experience higher bit rates uninterupted (and without
-    buffering) and increase the end user's over all experience.
-
- 
+    customers will experience higher bit rates uninterupted (and
+    without buffering) and increase the end user's over all experience.
 
 ### Is this available internationally?
 
 Yes, this is available to both US and UK Cloud customers.
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 Content Delivery Network
 ------------------------
@@ -708,7 +732,7 @@ Use the following steps to modify a container&rsquo;s TTL within the Cloud
 Control Panel:
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-2.  In the top navigation bar, select **Storage \> Files**.
+2.  In the top navigation bar, select **Storage &gt; Files**.
 3.  If the container is not already public, click the gear icon next to
     the container and select **Make Public (Enable CDN)**. In the popup
     box, click **Publish to CDN**.
@@ -717,9 +741,7 @@ Control Panel:
 5.  Enter the TTL for the container in seconds, and then click **Save
     TTL**.
 
-How Do I Use the Cloud Files CDN Manager?
-
-[Edit](https://admin.rackspace.com/knowledge_center/node/2198/edit)
+### How Do I Use the Cloud Files CDN Manager?
 
 This article describes how to create a container within Cloud Files and
 manage files in it through the Cloud Files interface.
@@ -749,7 +771,7 @@ the container name.
 **Create a container**
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
-2.  In the top navigation bar, select **Storage \> Files**.
+2.  In the top navigation bar, select **Storage &gt; Files**.
 3.  Click **Create Container**.
 4.  Name the container, and then click **Create Container**.
 5.  Click the gear icon next to the container to be made public and
@@ -760,8 +782,8 @@ You can now share the files within the container.
 
 **Upload files to the container**
 
-1.  Click on the name of the container to which you want to upload
-    files.
+1.  Click on the name of the container to which you want to
+    upload files.
 2.  Click **Upload Files** and select the files to upload.
 3.  Click **Open**.
 4.  After the file is uploaded, click **Close Window**.
@@ -773,14 +795,14 @@ The file appears the list of available files within the container.
 Options for sharing your file are displayed.
 
 To learn more about how to operate with Cloud Files through the API,
-read the article[Connecting to Cloud
-Files](https://www.rackspace.com/knowledge_center/article/connecting-to-cloudfiles)
+read the article [Connecting to Cloud
+Files](/howto/connecting-to-cloudfiles)
 and read the [API Developer Guides](http://docs.rackspace.com/).
 
 Akamai Frequently Asked Questions
 ---------------------------------
 
-### Who is Akamai?
+### []() Who is Akamai?
 
 Akamai Technologies, Inc. is publicly traded: (NASDAQ: AKAM) company
 founded in 1998. Akamai has a pervasive, highly-distributed cloud
@@ -823,11 +845,7 @@ platform.
 
 No, all customers facing API calls will remain the same.
 
-What Are The Benefits Of Using a CDN?
-
-[Edit](https://admin.rackspace.com/knowledge_center/node/2188/edit)
-
-### Benefits of a CDN
+### What Are The Benefits Of Using a CDN?
 
 -   Higher capacity and scale- Strategically placed servers increase the
     network backbone capacity and number of concurrent users handled.
@@ -871,11 +889,13 @@ of computers that deliver the content from origin to end user. CDNs
 place servers around the world and, depending on where the end user is
 located, serves them with the closest or most appropriate server. CDNs
 cut down on the amount of travel your content must make. This is shown
-in the following figures.<br>
- ![](/knowledge_center/sites/default/files/field/image/whatisaCDN1.png)<br>
- <br>
- ![](/knowledge_center/sites/default/files/field/image/whatisaCDN2.png)<br>
-  
+in the following figures.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN1.png){width="457"
+height="514"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN2.png){width="453"
+height="474"}
+
 
 ### Technology
 
@@ -910,8 +930,9 @@ the switch is then directed to one of the real web servers attached to
 the switch. This has the advantages of balancing load, increasing total
 capacity, improving scalability, and providing increased reliability by
 redistributing the load of a failed web server and providing server
-health checks.<br>
- ![](/knowledge_center/sites/default/files/field/image/Technology1.png)
+health checks.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Technology1.png){width="529"
+height="324"}
 
 Request routing directs client requests to the content source best able
 to serve the request. This may involve directing a client request to the
@@ -921,33 +942,37 @@ capacity. A variety of algorithms for Global Server Load Balancing
 service node is done using a variety of techniques including proactive
 probing and connection monitoring.
 
-For more information, see [What are the benefits of using a
-CDN?](https://admin.rackspace.com/knowledge_center/index.php/What_are_the_benefits_of_using_a_CDN%3F "What are the benefits of using a CDN?")
-
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
 
-### General
+------------------------------------------------------------------------
 
-What are the naming requirements for Cloud Files objects and containers?
+</div>
 
-[Edit](https://admin.rackspace.com/knowledge_center/node/3465/edit)
+General
+-------
+
+### What are the naming requirements for Cloud Files objects and containers?
 
 The naming requirements for Cloud Files objects and containers (such as
 illegal characters and name length limits) include:
 
--   Container names may not exceed 256 bytes and cannot contain a slash
-    (/) character.
--   Object names may not exceed 1024 bytes, but they have no character
-    restrictions.
+-   Container names may not exceed 256 bytes and cannot contain a
+    slash (/) character.
+-   Object names may not exceed 1024 bytes, but they have no
+    character restrictions.
 -   Object and container names must be URL-encoded and UTF-8 encoded.
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+<div align="center">
+
+------------------------------------------------------------------------
+
+</div>
 
 File Transfers and File Sharing
 -------------------------------
@@ -994,27 +1019,27 @@ directly with the Cloud Files API. Use the following steps:
 
 1.  Upload the segments:
 
-    curl -X PUT -H 'X-Auth-Token: \<token\>' \\
-    http://\<storage\_url\>/container/myobject/1 --data-binary '1'
+    curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \\
+    http://&lt;storage\_url&gt;/container/myobject/1 --data-binary '1'
 
-    curl -X PUT -H 'X-Auth-Token: \<token\>' \\
-    http://\<storage\_url\>/container/myobject/2 --data-binary '2'
+    curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \\
+    http://&lt;storage\_url&gt;/container/myobject/2 --data-binary '2'
 
-    curl -X PUT -H 'X-Auth-Token: \<token\>' \\
-    http://\<storage\_url\>/container/myobject/3 --data-binary '3'
+    curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \\
+    http://&lt;storage\_url&gt;/container/myobject/3 --data-binary '3'
 
 2.  Create the manifest file:
 
-    curl -X PUT -H 'X-Auth-Token: \<token\>' \\
+    curl -X PUT -H 'X-Auth-Token: &lt;token&gt;' \\
 
     -H 'X-Object-Manifest: container/myobject/' \\
-    http://\<storage\_url\>/container/myobject --data-binary ''
+    http://&lt;storage\_url&gt;/container/myobject --data-binary ''
 
 3.  Download the segments as a single object:
 
-    curl -H 'X-Auth-Token: \<token\>' \\
+    curl -H 'X-Auth-Token: &lt;token&gt;' \\
 
-    http://\<storage\_url\>/container/myobject
+    http://&lt;storage\_url&gt;/container/myobject
 
 ### When should I use the Swift tool instead of the API, and what is the process?
 
@@ -1028,7 +1053,7 @@ The following code uploads **large\_file** to **test\_container** in 10
 MB segments and then creates the manifest file so the segments can be
 downloaded as one.
 
-    swift upload test_container -S 10485760 large_file 
+    swift upload test_container -S 10485760 large_file
 
 You can change the size of the segments are by changing the value
 following the -S option.
@@ -1040,7 +1065,8 @@ The following code downloads the large file as a single object:
 In the above example, Swift will upload all the segments into a second
 container named **test\_container\_segments**. These segments will have
 names using the format of
-**\<name\>/\<timestamp\>/\<size\>/\<segment\>**. For example:
+**&lt;name&gt;/&lt;timestamp&gt;/&lt;size&gt;/&lt;segment&gt;**. For
+example:
 
     large_file/1290206778.25/21474836480/00000000
     large_file/1290206778.25/21474836480/00000001
@@ -1060,12 +1086,12 @@ After files are segmented and uploaded with a manifest file, your large
 file will be served as a single file, so the experience will mimic the
 download or service of any other object retrieval.
 
-### Do I have access to my file segments?
+### []() []() Do I have access to my file segments?
 
 Yes, you can edit your file segments just like any other object within
 Cloud Files.
 
-### How do I ensure that my files are linked correctly?
+### []() []() How do I ensure that my files are linked correctly?
 
 Include your manifest file in your upload. You can change your file name
 by editing this manifest file as well. We recommend using prefixing in
@@ -1075,7 +1101,7 @@ your large file. For example, you could name your segments as follows:
         Myfavoritemovie-01
         Myfavoritemovie-02
         Myfavoritemovie-03
-        ..etc.. 
+        ..etc..
 
 In this case, you would point your manifest file to the prefix:
 `Myfavoritemovie `.
@@ -1086,9 +1112,9 @@ At this time, Rackspace has not implemented this functionality into the
 Rackspace Cloud Control Panel.
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+------------------------------------------------------------------------
 
 Application Development
 -----------------------
@@ -1107,9 +1133,9 @@ SDKs.
     Kits](http://docs.rackspace.com/sdks/guide/content/intro.html)
 
 [**Back to
-Top**](https://admin.rackspace.com/knowledge_center/product-faq/cloud-files#top)
+Top**](/howto/cloud-files-faqs)
 
-* * * * *
+------------------------------------------------------------------------
 
 API
 ---

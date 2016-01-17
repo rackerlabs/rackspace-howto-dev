@@ -2,10 +2,10 @@
 node_id: 267
 title: Checking Bandwidth Usage for Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-09-04 21:1420'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-09-04'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -24,10 +24,12 @@ Cloud Sites usage reports via the control panel.
 2.  Click on Your Account.
 3.  Click on Reports.
 
-    ![](/knowledge_center/sites/default/files/field/image/classiccpreports.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/classiccpreports.png){width="178"
+    height="361"}
 
-4.  Under Usage Data you will see information about bandwidth used as
-    well as the total amount of disk space you are using. Also available
-    on that screen is a chart showing resource use over time.
+4.  <span>Under Usage Data you will see information about bandwidth used
+    as well as the total amount of disk space you are using. Also
+    available on that screen is a chart showing resource use
+    over time.</span>
 
 

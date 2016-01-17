@@ -2,10 +2,10 @@
 node_id: 180
 title: Report email spam in Rackspace webmail
 type: article
-created_date: '2011-03-16 06:20:31'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-12 19:2500'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-12'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -36,8 +36,8 @@ from the popup menu.
 To report and remove more than one unfiltered spam email
 --------------------------------------------------------
 
-1.  To report several emails, select the check box next to each unwanted
-    email.
+1.  To report several emails, select the check box next to each
+    unwanted email.
 2.  Click the **Spam** button, or right-click in the email listing and
     then select **Report Spam** from the popup menu.
 

@@ -2,10 +2,10 @@
 node_id: 134
 title: Rackspace Cloud Sites Essentials - PHPmyAdmin Database Management Interface
 type: article
-created_date: '2011-03-15 16:20:39'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-28 22:3031'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-15'
+created_by: Rackspace Support
+last_modified_date: '2015-12-28'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,13 +19,17 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
 
-**Now that you've successfully created your first MySQL database,**lets
+
+<div>
+
+**Now that you've successfully created your first MySQL database,** lets
 take a look at the database management tool The Rackspace Cloud offers
-for Cloud Sites MySQL databases. 
+for Cloud Sites MySQL databases.
+
+<div>
 
 Its very easy to manage your MySQL databases with a server wide install
 of PHPmyAdmin. You can reach this interface at one of the following
@@ -53,41 +57,47 @@ well.*
 
 **How do I login to PHPmyAdmin?**
 
+</div>
+
+</div>
+
 -   First, log into the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-****\>Cloud Sites**.
+-   Navigate to **Hosting-&gt;Cloud Sites**.
 
 ![](http://c806394.r94.cf2.rackcdn.com/cloudsites.png)
 
 -   Click the **domain name** that the database exists under
 
+<!-- -->
+
 -   Click the **Features** tab
 
-![](http://c806394.r94.cf2.rackcdn.com/featurestab.png)
+![](http://c806394.r94.cf2.rackcdn.com/featurestab.png){width="598"}
 
 -   Confirm that the database is active by scrolling to the
     **Databases** section. If the database is active. it will have a
     green check mark in the Status column:
 
- 
+
 
 ![](http://c806394.r94.cf2.rackcdn.com/databaseready.png)
 
 -   To view the details, click the hyperlink for the database, which
     should return a page like this:
 
-![](http://c806394.r94.cf2.rackcdn.com/databaseinformation.png)
+![](http://c806394.r94.cf2.rackcdn.com/databaseinformation.png){width="600"}
 
--   The *server name* is listed as **Hostname** under the **Database
+-   []()The *server name* is listed as **Hostname** under the **Database
     Information** section
 
-![](http://c806394.r94.cf2.rackcdn.com/hostname.png)
+![](http://c806394.r94.cf2.rackcdn.com/hostname.png){width="600"}
 
--   The *user names* are listed under the **Database Users** section. By
-    default, there is only one user and this would be the user name you
-    would use to log in to phpMyAdmin.
+-   []()The *user names* are listed under the **Database
+    Users** section. By default, there is only one user and this would
+    be the user name you would use to log in to phpMyAdmin.
 
-![](http://c806394.r94.cf2.rackcdn.com/databaseusers.png)
+![](http://c806394.r94.cf2.rackcdn.com/databaseusers.png){width="331"}
 
 **NOTE:** *If there are multiple users listed, you may log in with any
 of them. The number that prefixes the user name is the account number
@@ -106,19 +116,19 @@ this page.*
     database user could cause database connection errors on your
     website!** If you are working with a live website and cannot risk
     this password reset, contact a [web
-    developer](/knowledge_center/index.php/Working_with_a_MSSQL_database)
+    developer](/howto/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface)
     for assistance.
 
- 
+
 
 **With the information described above,** you're ready to start working
-with the database. To do so, click the **Online Manager** link. 
+with the database. To do so, click the **Online Manager** link.
 
-![](http://c806394.r94.cf2.rackcdn.com/onlinemanagerlink.png)
+![](http://c806394.r94.cf2.rackcdn.com/onlinemanagerlink.png){width="600"}
 
 -   A phpMyAdmin interface will display in the browser
 
-![](http://c806394.r94.cf2.rackcdn.com/phpmyadminlogin.png)
+![](http://c806394.r94.cf2.rackcdn.com/phpmyadminlogin.png){width="440"}
 
 -   Enter the [**user name**](#username) (including the numbered prefix
     as shown below) and password.
@@ -126,7 +136,7 @@ with the database. To do so, click the **Online Manager** link.
     drop-down list. If you do not know what Hostname to select, please
     click [here](#hostname) to locate your database Hostname
 
-![](http://c806394.r94.cf2.rackcdn.com/phpmyadminserverchoices.png)
+![](http://c806394.r94.cf2.rackcdn.com/phpmyadminserverchoices.png){width="440"}
 
 **NOTE:** *The first part of the host name identifies the server
 choice.*
@@ -137,9 +147,13 @@ different than what is shown in the screen shot above.*
 -   Now that you're logged into phpMyAdmin, you can manage your MySQL
     database as necessary.
 
-![](http://c806394.r94.cf2.rackcdn.com/loggedintophpmyadmin.png)
+![](http://c806394.r94.cf2.rackcdn.com/loggedintophpmyadmin.png){width="600"}
+
+<div>
 
 **What do I do if my log in fails?**
+
+</div>
 
 Make sure to double-check the credentials you have entered for accuracy.
 
@@ -161,5 +175,5 @@ new ticket.
 ### Next section
 
 [MSSQL
-databases](ttp://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mssql-databases)
+databases](/howto/rackspace-cloud-sites-essentials-mssql-databases)
 

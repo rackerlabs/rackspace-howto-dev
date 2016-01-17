@@ -2,10 +2,10 @@
 node_id: 3174
 title: Cloud Sites FTP Connection Limits
 type: article
-created_date: '2012-11-05 18:41:02'
+created_date: '2012-11-05'
 created_by: Jason Swindle
-last_modified_date: '2012-11-09 15:5753'
-last_modified_by: jered.heeschen
+last_modified_date: '2012-11-09'
+last_modified_by: Jered Heeschen
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -27,7 +27,7 @@ connection limit:
 -   Restrict the number of users who have access to your FTP username
     and password.
 -   Coordinate with other people using your FTP username so they're
-    aware of the connection cap and account for it in their FTP client
-    settings.
+    aware of the connection cap and account for it in their FTP
+    client settings.
 
 

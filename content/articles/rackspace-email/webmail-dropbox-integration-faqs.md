@@ -2,10 +2,10 @@
 node_id: 4122
 title: Webmail Dropbox Integration FAQs
 type: article
-created_date: '2014-07-02 20:25:28'
-created_by: aaron.medrano
-last_modified_date: '2014-12-30 03:1232'
-last_modified_by: jered.heeschen
+created_date: '2014-07-02'
+created_by: Aaron Medrano
+last_modified_date: '2014-12-30'
+last_modified_by: Jered Heeschen
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -28,14 +28,14 @@ How do I hide the Dropbox feature?
 There are two ways that you can disable Dropbox integration:
 
 -   Disable Dropbox for an entire domain
--   Disable Dropbox for all users of a private label Rackspace Email
-    site.
+-   Disable Dropbox for all users of a private label Rackspace
+    Email site.
 
 ### How do I disable Dropbox for an entire domain?
 
 -   Login to the [Cloud Office Control
     Panel](https://cp.rackspace.com "Email & Apps Control Panel")
--   Navigate to Rackspace Email \> Settings \> Webmail Settings
+-   Navigate to Rackspace Email &gt; Settings &gt; Webmail Settings
 -   Choose **Hide Dropbox button**
 -   Click **Save**
 
@@ -43,7 +43,7 @@ There are two ways that you can disable Dropbox integration:
 
 -   Login to the [Email & Apps Control
     Panel](https://cp.rackspace.com "Email & Apps Control Panel")
--   Navigate to Rackspace Email \> Webmail Sites \> Show/Hide Links
+-   Navigate to Rackspace Email &gt; Webmail Sites &gt; Show/Hide Links
 -   Choose **Hide Dropbox button**
 -   Click **Save**
 

@@ -2,10 +2,10 @@
 node_id: 580
 title: 'Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients'
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:5730'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,13 +19,15 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
 **In this article, we will take a look at [FTP](#ftp), [SSHFS](#sshfs)
 and some of the popular [FTP Clients](#ftp_clients). **Because Cloud
 Sites does not offer full SSH access to the web servers, the other
 recommendations would be to use FTP, or you could use SSHFS (SSH
 Filesystem).
+
+[]()
 
 **File Transfer Protocol (FTP)** is a method for adding content to your
 website. As its name indicates, FTP is a means for transferring files
@@ -42,10 +44,10 @@ this time, you should use the universal ftp address,
 add content to your site before DNS has fully propagated to The
 Rackspace Cloud.
 
-![](http://c806394.r94.cf2.rackcdn.com/ftpserver2.png)
+![](http://c806394.r94.cf2.rackcdn.com/ftpserver2.png){width="387"}
 
 Let's take a look at how to accomplish some of the most frequently
-needed tasks with FTP. 
+needed tasks with FTP.
 
 **What is my FTP password?**
 
@@ -53,16 +55,18 @@ You can find your FTP password in the Rackspace Cloud Control Panel
 
 -   Log into the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 -   **Select a website** from the list of active domains
 -   Your FTP information can be found in the **Viewing and Editing**
     section of the initial page
 
-![](http://c806394.r94.cf2.rackcdn.com/ftpsettings.png)
+![](http://c806394.r94.cf2.rackcdn.com/ftpsettings.png){width="548"}
 
- 
+
 
 **How can I add additional FTP users?**
+
+<div>
 
 You can create multiple FTP user accounts through your control panel.
 You can the option to restrict that user to a specified directory in a
@@ -72,48 +76,52 @@ To create FTP users:
 
 -   Log into the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 -   Click on the **domain** you want to add another FTP user to
 -   Click on the **Security** tab
 
-![](http://c806394.r94.cf2.rackcdn.com/securitytab.png)
+![](http://c806394.r94.cf2.rackcdn.com/securitytab.png){width="578"}
 
 -   In the **Permissions For Editing Your Website** section, click on
     **Add A User**
 
-![](http://c806394.r94.cf2.rackcdn.com/addauser.png)
+![](http://c806394.r94.cf2.rackcdn.com/addauser.png){width="600"}
 
 -   Next, **create** the new FTP user's username and password
 
-![](http://c806394.r94.cf2.rackcdn.com/ftpnewuserpass.png)
+![](http://c806394.r94.cf2.rackcdn.com/ftpnewuserpass.png){width="485"}
 
 -   Last, choose the directory level the new FTP user will have access
     to
 
-![](http://c806394.r94.cf2.rackcdn.com/ftppermissions.png)
+![](http://c806394.r94.cf2.rackcdn.com/ftppermissions.png){width="600"}
 
 -   Click **Save** to finish adding the new FTP user
 
- 
+[]()
+
+</div>
+
+
 
 **SSHFS**
 
 According to [Wikipedia](http://en.wikipedia.org/wiki/SSHFS):
 
 **"SSHFS** (**SSH Filesystem**) is
-a [filesystem](http://en.wikipedia.org/wiki/Filesystem "Filesystem") client
+a [filesystem](http://en.wikipedia.org/wiki/Filesystem "Filesystem"){.mw-redirect} client
 to [mount](http://en.wikipedia.org/wiki/Mount_(computing) "Mount (computing)") and
 interact
-with [directories](http://en.wikipedia.org/wiki/Directory_(file_systems) "Directory (file systems)") and [files](http://en.wikipedia.org/wiki/Computer_file "Computer file") located
+with [directories](http://en.wikipedia.org/wiki/Directory_(file_systems) "Directory (file systems)"){.mw-redirect} and [files](http://en.wikipedia.org/wiki/Computer_file "Computer file") located
 on a
 remote [server](http://en.wikipedia.org/wiki/Server_(computing) "Server (computing)") or [workstation](http://en.wikipedia.org/wiki/Workstation "Workstation"). The
 client interacts with the remote file system via the [SSH File Transfer
 Protocol](http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol "SSH File Transfer Protocol") (SFTP), a [network
-protocol](http://en.wikipedia.org/wiki/Network_protocol "Network protocol") providing [file
-access](http://en.wikipedia.org/wiki/File_access "File access"), [file
+protocol](http://en.wikipedia.org/wiki/Network_protocol "Network protocol"){.mw-redirect} providing [file
+access](http://en.wikipedia.org/wiki/File_access "File access"){.mw-redirect}, [file
 transfer](http://en.wikipedia.org/wiki/File_transfer "File transfer"),
 and [file
-management](http://en.wikipedia.org/wiki/File_management "File management") functionality
+management](http://en.wikipedia.org/wiki/File_management "File management"){.mw-redirect} functionality
 over any reliable [data
 stream](http://en.wikipedia.org/wiki/Data_stream "Data stream") that was
 designed as an extension of the [Secure
@@ -123,7 +131,9 @@ Shell](http://en.wikipedia.org/wiki/Secure_Shell "Secure Shell") protocol
 **NOTE:** *In order to use SSHFS, you will need to install it on a Mac
 or a Linux machine. SSHFS cannot be used on a Windows machine.*
 
- 
+
+
+<div>
 
 Although full ssh access is not available you can mount your ftp
 location in Linux using SSHFS. \*Windows/Mac users see footnote
@@ -144,7 +154,7 @@ Here are the common methods for installing SSHFS:
 
 (Note:  To install on CentOS you will need to set your machine up to
 [include the EPEL
-repository](http://www.rackspace.com/knowledge_center/article/install-epel-and-additional-repositories-on-centos-and-red-hat)
+repository](/howto/install-epel-and-additional-repositories-on-centos-and-red-hat)
 first.)
 
 \* For Mandriva: urpmi:
@@ -191,12 +201,16 @@ such as below to ensure you do not lose connection while working:
 use [ExpanDrive](http://www.expandrive.com/ "http://www.expandrive.com") to
 map your FTP storage location as a local drive. *
 
+[]()
+
 **FTP Clients**
+
+<div>
 
 We don't have a recommended File Transfer Protocol (FTP) client, but
 here is a list of the more popular FTP clients.
 
-Commercial
+<span>Commercial</span>
 
 -   [ExpanDrive](http://www.expandrive.com/ "http://www.expandrive.com") (Mac/Windows)
 -   [IP
@@ -204,7 +218,7 @@ Commercial
 -   [Transmit](http://www.panic.com/ "http://www.panic.com/") (Mac)
 -   [CuteFTP](http://www.cuteftp.com/ "http://www.cuteftp.com") (Mac/Windows)
 
-Free
+<span>Free</span>
 
 -   [SmartFTP](http://www.smartftp.com/ "http://www.smartftp.com/") (Windows)
 -   [Fetch](http://www.fetchsoftworks.com/ "http://www.fetchsoftworks.com/") (Mac)
@@ -213,12 +227,15 @@ Free
 -   [FireFTP](http://fireftp.mozdev.org/ "http://fireftp.mozdev.org/") (Firefox
     Extension - Mac/Windows/Linux)
 -   [WinSCP](http://winscp.net/ "http://winscp.net/") (Windows)
--   [Net2FTP](http://www.net2ftp.com/ "http://www.net2ftp.com") (Web
-    Based)
+-   [Net2FTP](http://www.net2ftp.com/ "http://www.net2ftp.com") (Web Based)
 
- 
 
-[Back](http://www.rackspace.com/knowledge_center/getting-started/cloud-sites)[](http://www.rackspace.com/knowledge_center/Cloud_Sites_First_48)[to](http://www.rackspace.com/knowledge_center/getting-started/cloud-sites)[ ](http://www.rackspace.com/knowledge_center/Cloud_Sites_First_48)[Getting
+
+[Back](/howto/cloud-sites)[](/howto/cloud-sites)[to](/howto/cloud-sites)[ ](/howto/cloud-sites)[Getting
 Started with Cloud
-Sites](http://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
+
+</div>
+
+</div>
 

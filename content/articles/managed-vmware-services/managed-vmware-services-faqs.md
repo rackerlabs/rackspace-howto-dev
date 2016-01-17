@@ -2,10 +2,10 @@
 node_id: 5046
 title: Managed VMware Services - FAQ
 type: article
-created_date: '2015-12-10 20:28:36'
+created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 23:0424'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Managed VMware Services
 body_format: tinymce
 ---
@@ -23,7 +23,7 @@ selection should depend on your RPO/RTO.
     configuration and based on testing.
 -   VM Replication (vRanger): Manual failover. Provides no RTO/RPO.
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -44,7 +44,7 @@ log in to your hypervisor(s).
 
 No. Rackspace does not provide API access.
 
-* * * * *
+------------------------------------------------------------------------
 
 Features
 --------
@@ -110,7 +110,7 @@ utilization, network, disk utilization)
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Implementation
 --------------
@@ -133,7 +133,7 @@ cloning/snapshotting/vMotion. 15% is non-negotiable.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Maintenance
 -----------
@@ -142,20 +142,20 @@ Maintenance
 
 In the
 [my.rackspace.com](https://my.rackspace.com/portal/auth/login?targetUri=%2Fhome)
-portal, go to **Products \> Managed Virtualization** and click on the
+portal, go to **Products &gt; Managed Virtualization** and click on the
 gear icon next to the name of the VM. Select **Resize VM**. The current
 RAM and CPU are selected. Change the values as necessary and then click
-**Resize Virtual Machine**.<br>
- <br>
- **Warning:** Selecting **Resize VM** will cause your VM to power off
+**Resize Virtual Machine**.
+
+**Warning:** Selecting **Resize VM** will cause your VM to power off
 immediately. This process will take approximately 5 minutes plus the
 required boot time.
 
 ### Where is data stored if I create a snapshot, clone, or template?
 
--   Snapshots are stored with the VM and consume your allocated storage
-    infrastructure. Snapshots must be carefully managed to ensure they
-    don't consume all the disk space.
+-   Snapshots are stored with the VM and consume your allocated
+    storage infrastructure. Snapshots must be carefully managed to
+    ensure they don't consume all the disk space.
 -   Clones are stored on the Rackspace infrastructure, so they don&rsquo;t use
     allocated disk resources. You can create one clone per VM.
 -   Templates are stored on the Rackspace infrastructure. You can create
@@ -175,21 +175,21 @@ required boot time.
     remerged (deleted), the delta disk is merged into the parent disk
     and the ability to jump back to the snapshot is no longer present.
     Snapshots are best used in situations such as patching, where a
-    snapshot is reverted or remerged (deleted) depending on patch
-    success. Snapshots are stored with the VM and therefore use your
-    storage allocation. We therefore recommend that you keep snapshots
-    only for 2-3 days to prevent overuse of the disk.
+    snapshot is reverted or remerged (deleted) depending on
+    patch success. Snapshots are stored with the VM and therefore use
+    your storage allocation. We therefore recommend that you keep
+    snapshots only for 2-3 days to prevent overuse of the disk.
 -   **Clone** : A clone is a one-to-one image copy of an existing VM. It
     acts independently from a parent VM, but it is an exact copy of the
     parent VM when it is initially created. You can create new VMs from
-    the clones. You can create one clone per VM on the Rackspace
-    infrastructure. The clone is also stored on the Rackspace
+    the clones. You can create one clone per VM on the
+    Rackspace infrastructure. The clone is also stored on the Rackspace
     infrastructure, so it doesn't use up your storage allocation. While
-    clones can act and operate independently of the parent; snapshots
-    cannot.
+    clones can act and operate independently of the parent;
+    snapshots cannot.
 -   **Template**: A template is a clone that is designed for deployment
-    of future VMs. It is also stored on the Rackspace storage
-    infrastructure. You can create one template per VM.
+    of future VMs. It is also stored on the Rackspace
+    storage infrastructure. You can create one template per VM.
 
 ^[back\\ to\\ top](#top)^
 
@@ -220,14 +220,14 @@ Use the [portal](https://my.rackspace.com/)to see which resources
 (storage - local or otherwise) are reserved or available to provision
 VMs in your environment**.**
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
 **Note**: This only applies for the Server Virtualization product, not
 Dedicated vCenter or Dedicated vCloud.
 
- 
+
 
 ### How do I create and delete clones or templates?
 

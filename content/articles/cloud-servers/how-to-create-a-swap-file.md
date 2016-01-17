@@ -2,10 +2,10 @@
 node_id: 3747
 title: Create a Linux Swap File
 type: article
-created_date: '2013-10-29 21:22:49'
-created_by: trey.hoehne
-last_modified_date: '2015-08-19 13:1546'
-last_modified_by: stephanie.fillmon
+created_date: '2013-10-29'
+created_by: Trey Hoehne
+last_modified_date: '2015-08-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: full_html
 ---
@@ -60,8 +60,8 @@ To add 1GB of swap to your server, for example, follow these steps:
 
     How much swappiness affects performance depends on how your memory
     is being used, so experiment to find an optimal value. At 0 the swap
-    file will only be used when the system runs completely out of
-    memory. Higher values let the system swap idle processes out to
+    file will only be used when the system runs completely out
+    of memory. Higher values let the system swap idle processes out to
     allow the system to free memory for disk caching, potentially
     improving overall system performance.
 

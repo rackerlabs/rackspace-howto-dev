@@ -2,10 +2,10 @@
 node_id: 3915
 title: Transferring images between regions of the Rackspace open cloud
 type: article
-created_date: '2014-02-27 22:17:44'
-created_by: cloud.images
-last_modified_date: '2016-01-12 16:1324'
-last_modified_by: stephanie.fillmon
+created_date: '2014-02-27'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 body_format: tinymce
 ---
@@ -32,9 +32,9 @@ Before we get into the details, consider the following information:
         copy is located.
     -   The *target region* is the region where you want to build a new
         server just like the one you have in the source region.
--   Because not all images are exportable, not all images can be
-    transferred. See [How can I tell if an image can
-    exported?](http://www.rackspace.com/knowledge_center/article/cloud-images-frequently-asked-questions#how-can-i-tell-if-an-image-is-exportable)
+-   Because not all images are exportable, not all images can
+    be transferred. See [How can I tell if an image can
+    exported?](/howto/cloud-images-faq)
     in the Cloud Images FAQ for details.
 -   Cloud Images is currently accessible only through the [Cloud Images
     v2
@@ -47,9 +47,9 @@ Before we get into the details, consider the following information:
 
 1.  Create an image of the source server.
 
-    This example uses a server named Slave Database 3 in the source
-    region.  You can use either the Cloud Servers API or the Cloud
-    Control Panel to create the image.
+    This example uses a server named Slave Database 3 in the
+    source region.  You can use either the Cloud Servers API or the
+    Cloud Control Panel to create the image.
 
 2.  Optionally, use the metadata function of the API to assign an
     identifying property to the image.  If you want to transfer several
@@ -75,11 +75,11 @@ Before we get into the details, consider the following information:
 
 3.  You need a container in your Cloud Files account to put the exported
     image in. If you don't already have one, you can create a container
-    by using the Cloud Control Panel, as follows:<br>
-     A. In the top navigation bar, click **Storage \> Files**.<br>
-     B. Click **Create Container**.<br>
-     C. Specify a name, the source region, and the container type.<br>
-     D. Click **Create Container**.
+    by using the Cloud Control Panel, as follows:
+    A. In the top navigation bar, click **Storage &gt; Files**.
+    B. Click **Create Container**.
+    C. Specify a name, the source region, and the container type.
+    D. Click **Create Container**.
 4.  Create a Cloud Images `export` task in the source region. When this
     task is executed, it copies the image in Cloud Images and puts the
     copy into the container named `exported-images` in your Cloud Files
@@ -95,18 +95,18 @@ Before we get into the details, consider the following information:
     export task. The response looks similar to the following one:
 
         {
-            "created_at": "2014-02-26T02:01:13Z", 
-            "id": "7bdc8ede-9098-4d79-9477-697f586cb333", 
+            "created_at": "2014-02-26T02:01:13Z",
+            "id": "7bdc8ede-9098-4d79-9477-697f586cb333",
             "input": {
-                "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90", 
+                "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90",
                 "receiving_swift_container": "exported-images"
-            }, 
-            "message": "None", 
-            "owner": "10000001", 
-            "schema": "/v2/schemas/task", 
-            "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333", 
-            "status": "pending", 
-            "type": "export", 
+            },
+            "message": "None",
+            "owner": "10000001",
+            "schema": "/v2/schemas/task",
+            "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333",
+            "status": "pending",
+            "type": "export",
             "updated_at": "2014-02-26T02:01:13Z"
         }
 
@@ -130,22 +130,22 @@ Before we get into the details, consider the following information:
     is an example of a successful task response:
 
         {
-            "created_at": "2014-02-26T02:01:13Z", 
-            "expires_at": "2014-02-28T02:16:50Z", 
-            "id": "7bdc8ede-9098-4d79-9477-697f586cb333", 
+            "created_at": "2014-02-26T02:01:13Z",
+            "expires_at": "2014-02-28T02:16:50Z",
+            "id": "7bdc8ede-9098-4d79-9477-697f586cb333",
             "input": {
-                "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90", 
+                "image_uuid": "a6da1504-e1c0-4f40-8461-1ed9a9990e90",
                 "receiving_swift_container": "exported-images"
-            }, 
-            "message": "None", 
-            "owner": "10000001", 
+            },
+            "message": "None",
+            "owner": "10000001",
             "result": {
                 "export_location": "exported-images/a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd"
-            }, 
-            "schema": "/v2/schemas/task", 
-            "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333", 
-            "status": "success", 
-            "type": "export", 
+            },
+            "schema": "/v2/schemas/task",
+            "self": "/v2/tasks/7bdc8ede-9098-4d79-9477-697f586cb333",
+            "status": "success",
+            "type": "export",
             "updated_at": "2014-02-26T02:16:50Z"
         }
 
@@ -166,13 +166,13 @@ the neutral location to your Cloud Files account in the target region.
 How exactly you accomplish this is up to you. Here are some suggestions:
 
 -   Use the
-    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient). 
+    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient).
 -   Use [turbolift](https://github.com/cloudnull/turbolift).
 -   Use [swiftly](https://github.com/gholt/swiftly):
     -   [Using Swiftly to download an exported
-        image](https://www.rackspace.com/knowledge_center/article/use-swiftly-to-download-an-exported-image)
+        image](/howto/use-swiftly-to-download-an-exported-image)
     -   [Using Swiftly to upload an image to be
-        imported](/knowledge_center/article/using-swiftly-to-upload-an-image-to-be-imported)
+        imported](/howto/use-swiftly-to-upload-an-image)
 
 We don't recommend using the Cloud Control Panel for this operation.
  Most images are large enough you would likely have a poor user
@@ -215,25 +215,25 @@ can import it for use with Cloud Servers.
     the task detail response is similar to the following one:
 
         {
-            "created_at": "2014-02-26T03:02:23Z", 
-            "expires_at": "2014-02-28T03:28:18Z", 
-            "id": "d8dd8c24-2534-473c-881f-9097bc784068", 
+            "created_at": "2014-02-26T03:02:23Z",
+            "expires_at": "2014-02-28T03:28:18Z",
+            "id": "d8dd8c24-2534-473c-881f-9097bc784068",
             "input": {
                 "image_properties": {
                     "name": "Slave Database 3"
-                }, 
-                "import_from": "exported-images/a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd", 
+                },
+                "import_from": "exported-images/a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd",
                 "import_from_format": "vhd"
-            }, 
-            "message": "None", 
-            "owner": "10000001", 
+            },
+            "message": "None",
+            "owner": "10000001",
             "result": {
                 "image_id": "1d944ab7-6748-4f3c-b7e2-3553bf006677"
-            }, 
-            "schema": "/v2/schemas/task", 
-            "self": "/v2/tasks/d8dd8c24-2534-473c-881f-9097bc784068", 
-            "status": "success", 
-            "type": "import", 
+            },
+            "schema": "/v2/schemas/task",
+            "self": "/v2/tasks/d8dd8c24-2534-473c-881f-9097bc784068",
+            "status": "success",
+            "type": "import",
             "updated_at": "2014-02-26T03:28:18Z"
         }
 
@@ -252,12 +252,12 @@ can import it for use with Cloud Servers.
     differently inside the cloud&mdash;they're not in the same VHD format used
     for image interchange. Thus, you can't use the checksum on your
     image in the source region to determine which of your images in the
-    target region corresponds to it&mdash;there won't be an image with that
-    checksum. You can't use the source image's UUID either, because the
-    image in the target region has a different UUID. But if you put the
-    same coordinating metadatum on each image, you can use the advanced
-    list filtering features of the Cloud Images API to locate the image
-    in each region:
+    target region corresponds to it&mdash;there won't be an image with
+    that checksum. You can't use the source image's UUID either, because
+    the image in the target region has a different UUID. But if you put
+    the same coordinating metadatum on each image, you can use the
+    advanced list filtering features of the Cloud Images API to locate
+    the image in each region:
 
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl>"
@@ -267,9 +267,9 @@ can import it for use with Cloud Servers.
     related, the response to this call will be a list of images that
     contain just one image.
 
-4.  You can now create a server in the target region with the imported
-    image. You can use the Cloud Servers API or the Cloud Control Panel
-    for this task.
+4.  You can now create a server in the target region with the
+    imported image. You can use the Cloud Servers API or the Cloud
+    Control Panel for this task.
 5.  To find your imported image in the image selector on the Create
     Server page of the Control Panel, click **Saved** under **Image**,
     and among the saved images, look for the images of **Deleted
@@ -282,6 +282,6 @@ Related information
 -   [Rackspace Cloud Images Developer
     Guide](http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html)
 -   [Cloud Images
-    FAQ](/knowledge_center/article/frequently-asked-questions-about-using-glance-and-the-images-api)
+    FAQ](/howto/cloud-images-faq)
 
 

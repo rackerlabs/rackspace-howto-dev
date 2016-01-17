@@ -2,17 +2,17 @@
 node_id: 1401
 title: Adding Microsoft Exchange Mailboxes
 type: article
-created_date: '2012-05-23 03:52:21'
+created_date: '2012-05-23'
 created_by: Rae D. Cabello
-last_modified_date: '2013-06-21 15:0855'
-last_modified_by: rose.contreras
-product: Exchange
+last_modified_date: '2013-06-21'
+last_modified_by: Rose Contreras
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
 The following article will show you how to add a single Microsoft
 Exchange mailbox, or multiple Exchange boxes using a .CSV file. Let's
-take a look at the steps to get you going:  
+take a look at the steps to get you going:
 
 1.  Log in to the control panel at
     [cp.rackspace.com](https://cp.rackspace.com).  In the **Microsoft
@@ -28,8 +28,8 @@ take a look at the steps to get you going:
 
     -   First and Last Name: Enter first and last name information for
         the mailbox owner in the spaces provided (this is optional).
-    -   Display Name: Enter the name that should be associated with the
-        mailbox. This name will be displayed when the user sends
+    -   Display Name: Enter the name that should be associated with
+        the mailbox. This name will be displayed when the user sends
         email (this is optional).
     -   User Name: This will be the email address: E.g.
         myname@mydomain.com.
@@ -44,19 +44,19 @@ take a look at the steps to get you going:
     -   Confirm the password by retyping the password you entered in the
         Password box.
     -   Microsoft Outlook license: This will allow the user to download
-        Outlook from the user control panel
-        (http://cp.rackspace.com/usercp).
+        Outlook from the user control
+        panel (http://cp.rackspace.com/usercp).
     -   Public Folder Admin: This will give the user permission to
         create new and administer public folders they create.
-    -   Select the **Save** button and the mailbox will appear in the
-        list. To manage additional features for the mailbox, such as
+    -   Select the **Save** button and the mailbox will appear in
+        the list. To manage additional features for the mailbox, such as
         Forwarding / Auto-Reply, Aliases, or Settings, click the mailbox
         name and then click the corresponding tab.
 
 Adding Multiple Mailboxes
 -------------------------
 
-To add multiple mailboxes at once; please see the instructions below: 
+To add multiple mailboxes at once; please see the instructions below:
 
 1.  Log in to the control panel at
     [cp.rackspace.com](https://cp.rackspace.com) and in the **Email

@@ -2,25 +2,25 @@
 node_id: 408
 title: Other Cloud Server use Scenarios
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 19:0304'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-### Host multiple websites
+### <span class="mw-headline">Host multiple websites</span>
 
 Customers can manage multiple domains and websites on individual Cloud
 Servers by utilizing name-based virtual hosting.
 
-### Cloud burst
+### <span class="mw-headline">Cloud burst</span>
 
 Users can also provision infrastructure for average demand and use Cloud
 Servers for overflow demand.
 
-### High Performance computing
+### <span class="mw-headline">High Performance computing</span>
 
 High performance computing (HPC) requires enormous compute power.
 However the compute tasks may not keep the computers busy all the time
@@ -29,7 +29,7 @@ HPC customers can reduce expenses by obtaining compute power only when
 they need it and returning it back to the Cloud Server general pool when
 it is not required.
 
-### Delivering Software as a Service solutions
+### <span class="mw-headline">Delivering Software as a Service solutions</span>
 
 Users can reduce datacenter expenses of hosting applications and
 delivering it in the ASP (Application Service Provider) or SaaS

@@ -2,10 +2,10 @@
 node_id: 557
 title: Create a cron job to back up a Cloud Sites SQL Server database
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: matt.costello
-last_modified_date: '2015-03-30 19:3316'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Matt Costello
+last_modified_date: '2015-03-30'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -46,8 +46,8 @@ application.
     created and set its permissions to **766**. Be aware that you are
     allowing all users write permissions for the folder). If your FTP
     client doesn't allow this, we recommend that you use a client that
-    does, such as FileZilla, CoffeeCup FTP, or FireFTP (a Firefox
-    plugin).
+    does, such as FileZilla, CoffeeCup FTP, or FireFTP (a
+    Firefox plugin).
 
 **IMPORTANT:** For this specific example to work, the permissions on the
 **/www.domain.com** and **/web** folders must be set to **751**.
@@ -163,8 +163,8 @@ Schedule a cron job to call the web page.
 2.  Click on the site with the database, and go to the **Features** tab.
 3.  Under **Scheduled Tasks (Cron Jobs)**, click **Add New Task**.
 4.  Specify a name for the job.
-5.  Select the **Send me an email** check box and enter your email
-    address.
+5.  Select the **Send me an email** check box and enter your
+    email address.
 6.  Select **http** as the script language.
 7.  Enter the URL to the ASP script.
 8.  Schedule the job to run daily at an off hour. Usually this is a

@@ -2,17 +2,18 @@
 node_id: 3135
 title: Cloud Block Storage - Overview
 type: article
-created_date: '2012-10-22 07:05:56'
+created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-05 19:0754'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-05'
+last_modified_by: Rose Contreras
 product: Cloud Block Storage
 body_format: tinymce
 ---
 
 Rackspace Cloud Block Storage is a block-level storage solution that
 allows you to expand the storage capacity of your Rackspace Next
-Generation Cloud Servers&trade; and OnMetal&trade; Cloud Servers. This means you can
+Generation Cloud Servers<span class="trademark">&trade; and OnMetal<span
+class="trademark">&trade; Cloud Servers</span></span>. This means you can
 increase your storage without increasing the size or capacity of your
 server or by provisioning new ones. Once you mount and format your
 drive, you can use it just like a regular hard drive attached to your
@@ -24,9 +25,9 @@ Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage and Cloud Backup
 options on General Purpose servers, see [Best Practices for Backing Up
 Your Data: Cloud Block Storage versus Cloud
-Backup](/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).<br>
- <br>
- There are two types of volumes you can attach to your server:
+Backup](/howto/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+
+There are two types of volumes you can attach to your server:
 
 -   A standard speed option for customers who just need additional
     storage on their Cloud server
@@ -45,8 +46,8 @@ On This Page:
 -   [Cloud Block Storage Terminology](#cbs-terminology)
 -   [Cloud Block Storage Getting Started Table of Contents](#cbs-gs-toc)
 
-### <br>
- Some Uses of Cloud Block Storage
+###
+[]()Some Uses of Cloud Block Storage
 
 -   Mount a drive to a server to scale storage without paying for more
     compute capability
@@ -59,9 +60,9 @@ On This Page:
 -   Re-attach your block storage volume and move data from one server to
     another
 
- 
 
-### Access Cloud Block Storage
+
+### []()Access Cloud Block Storage
 
 Access Cloud Block Storage the way you like: you can use it through the
 GUI interface of the [Cloud Control
@@ -70,10 +71,10 @@ Started Guide walks you through Control Panel access. If you prefer to
 interact with Cloud Block Storage programmatically, you may view the
 [Developer
 Guide](http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html),
-located in [docs.rackspace.com](http://docs.rackspace.com/api/).<br>
-  
+located in [docs.rackspace.com](http://docs.rackspace.com/api/).
 
-### Limits of Cloud Block Storage
+
+### []()Limits of Cloud Block Storage
 
 -   50 GB to 1 TB for SSD volumes
 -   75 GB to 1 TB for SATA volumes
@@ -84,7 +85,7 @@ located in [docs.rackspace.com](http://docs.rackspace.com/api/).<br>
     Support, your Account Manager, or your Service Delivery Manager for
     more information.
 
- 
+
 
 ### Cloud Block Storage Terminology
 
@@ -92,8 +93,10 @@ You may run across some unfamiliar terms in this Getting Started Guide.
 Here are some common terms and definitions we use in Cloud Block
 Storage.
 
--   Instance -- An instance is a virtual machine that runs inside the
-    cloud.
+-   Instance -- An instance is a virtual machine that runs inside
+    the cloud.
+
+<!-- -->
 
 -   Instance type -- An instance type describes the compute, memory and
     storage capacity of Nova computing instances. In layman's terms,
@@ -107,28 +110,28 @@ Storage.
 -   Volume -- A volume is a detachable block storage device. You can
     think of it like a USB hard drive. It can only be attached to one
     instance at a time.
--   Volume type -- The volume type is the type of a block storage
-    volume. There are two types: SATA for standard performance and SSD
-    for high performance.
+-   Volume type -- The volume type is the type of a block
+    storage volume. There are two types: SATA for standard performance
+    and SSD for high performance.
 
- 
+
 
 ### Cloud Block Storage Getting Started Table of Contents
 
 In this Getting Started Guide, you will learn how to:
 
 -   [Create and Attach a
-    Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
--   [Prepare Your Volume for Use with a Server (Linux or
-    Windows)](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
+    Volume](/howto/create-and-attach-a-cloud-block-storage-volume)
+-   [Prepare Your Volume for Use with a Server (Linux
+    or Windows)](/howto/create-and-attach-a-cloud-block-storage-volume)
 -   [Take Snapshots of Your
-    Volume](http://www.rackspace.com/knowledge_center/article/create-and-use-cloud-block-storage-snapshots)
+    Volume](/howto/create-and-use-cloud-block-storage-snapshots)
 -   [Detach and Delete a
-    Volume](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes)
+    Volume](/howto/detach-and-delete-cloud-block-storage-volumes)
 -   [Attach a Cloud Block Storage Volume to an OnMetal
-    Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
+    Server](/howto/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 
-<br>
- Let's get started and [Create your first
-volume](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
+
+Let's get started and [Create your first
+volume](/howto/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 

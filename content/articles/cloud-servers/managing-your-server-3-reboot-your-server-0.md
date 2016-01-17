@@ -2,10 +2,10 @@
 node_id: 1474
 title: Reboot Your Server
 type: article
-created_date: '2012-07-19 06:21:12'
-created_by: ari.liberman
-last_modified_date: '2016-01-04 19:3917'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-19'
+created_by: Ari Liberman
+last_modified_date: '2016-01-04'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,9 +13,9 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
+
 
 You can reboot a server in one of two ways. A *soft reboot* uses the
 operating system's reboot process so that applications are shut down
@@ -34,7 +34,7 @@ Perform a soft reboot
 To perform a soft reboot of a server, you must be logged in to the
 server using an account with superuser or administrator permissions. For
 information about logging in to a cloud server, see [Connect to a cloud
-server](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-server).
+server](/howto/connect-to-a-cloud-server).
 
 **Note**: OS reboots, such as the ` sudo reboot `shown below,  do not
 trigger the FG2NG migration.
@@ -48,7 +48,7 @@ appropriate section for your server operating system:
 
 ### Windows
 
-Issue a restart request by clicking **Start** \> **Shut down**.
+Issue a restart request by clicking **Start** &gt; **Shut down**.
 
 Alternatively, you can initiate a soft reboot from the command line by
 entering the following command:
@@ -70,11 +70,13 @@ and can result in data loss.
     want to reboot.
 3.  Select** Reboot**.
 
-    ![](/knowledge_center/sites/default/files/field/image/rebootmenu_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rebootmenu_0.png){width="227"
+    height="228"}
 
 4.  In the pop-up dialog box, click **Reboot Server**.
 
-    ![](/knowledge_center/sites/default/files/field/image/Hard%20Reboot_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Hard%20Reboot_0.png){width="478"
+    height="187"}
 
 The server status on the Servers page updates while the server is
 rebooting. When the reboot is complete, check your server to confirm
@@ -83,15 +85,16 @@ that everything is functioning as expected.
 Halt a server
 -------------
 
-You can also shut down a server to put it in a *halted*state, in
-which no operating systems or applications are running. Restoring a
-halted server to operation requires you to perform a hard reboot using
-the Cloud Control Panel.
+You can also shut down a server to put it in a *halted* state, in
+which no<span> operating systems or </span>applications are running.
+Restoring a halted server to operation requires you to perform a hard
+reboot using the Cloud Control Panel.
 
-To halt a server, you need remote access to the server using an account
-with superuser or administrator permissions. For information about
-logging in to a cloud server, see [Connect to a cloud
-server](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-server).
+<span>To halt a server, you need remote access to the server using an
+account with su</span><span>peruser or administrator
+permissions. </span><span>For information about logging in to a cloud
+server, see </span>[Connect to a cloud
+server](/howto/connect-to-a-cloud-server)<span>.</span>
 
 **Note:** Shutting down a server does *not* stop billing for the server,
 because resources are still allocated to the server instance. Billing
@@ -109,17 +112,17 @@ restart the server.
 ### Windows
 
 Log in to your server and issue a shutdown request by
-clicking **Start** \> **Shut down**.
+clicking **Start** &gt; **Shut down**.
 
 Alternatively, you can issue a shutdown from the command line by
 entering the following command:
 
     shutdown /s
 
- 
+
 
 ### Next section
 
 [Recue
-mode](http://www.rackspace.com/knowledge_center/article/managing-your-server-rescue-mode)
+mode](/howto/rescue-mode)
 

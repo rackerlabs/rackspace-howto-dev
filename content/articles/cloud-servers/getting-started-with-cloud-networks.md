@@ -2,10 +2,10 @@
 node_id: 3146
 title: Getting Started with Cloud Networks
 type: article
-created_date: '2012-10-29 17:00:27'
+created_date: '2012-10-29'
 created_by: Susan Million
-last_modified_date: '2016-01-10 22:3015'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-10'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -20,9 +20,10 @@ Networks can be combined with [Brocade Vyatta
 vRouters](http://www.rackspace.com/cloud/servers/vrouter/) to create
 more complex topologies to route traffic between Cloud Networks or to
 external data centers over VPN.  Cloud Networks can be created and
-managed via API or using the Rackspace Cloud Control Panel.  
+managed via API or using the Rackspace Cloud Control
+Panel. <span> </span>
 
-Using Cloud Networks 
+Using Cloud Networks
 ---------------------
 
 You can use the Cloud Control Panel or the [Cloud Servers
@@ -33,14 +34,14 @@ articles and API developer resources.
 ### Using the Control Panel with Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Create an Isolated Cloud Network")
+Server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network")
 
 [Removing Networks From a Cloud
-Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
+Server](/howto/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")<br>
-  
+Networks](/howto/using-cidr-notation-in-cloud-networks "CIDR Notation")
+
 
 ### Using the Cloud Networks API
 

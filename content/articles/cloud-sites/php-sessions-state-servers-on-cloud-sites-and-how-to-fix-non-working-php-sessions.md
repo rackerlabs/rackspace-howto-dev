@@ -2,10 +2,10 @@
 node_id: 89
 title: PHP Sessions State Servers on Cloud Sites And How To Fix Non Working PHP Sessions
 type: article
-created_date: '2011-03-09 16:12:00'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 16:5708'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -28,7 +28,7 @@ handler does not work, the original behavior can be restored in
 
     php_value session.save_handler files
 
- 
+
 
 If you are experiencing a problem with the standard way sessions are
 stored, you can change how your PHP sessions are handled by using a
@@ -36,8 +36,10 @@ stored, you can change how your PHP sessions are handled by using a
 the 'files' handler, we suggest disabling it  or explicitly setting it
 to 'redisr' to benefit from the performance of the state servers.
 
-How do I make the changes?
---------------------------
+[](){#How_do_I_make_the_changes.3F}
+
+<span class="mw-headline">How do I make the changes?</span>
+-----------------------------------------------------------
 
 You can change how your PHP sessions are handled by using a .htaccess
 file containing the following directives:
@@ -50,25 +52,27 @@ save the session in a place of your choosing.
 
 You will want to change the path of the last line in the example above
 to use your website's absolute path. [Please see this
-article](http://www.rackspace.com/knowledge_center/article/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
+article](/howto/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
 to locate your website's absolute path.
 
-Your website's absolute path should resemble this:<br>
- **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
+Your website's absolute path should resemble this:
+**/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
 
-Where should I store my sessions?
----------------------------------
+[](){#Where_should_I_store_my_sessions.3F}
+
+<span class="mw-headline">Where should I store my sessions?</span>
+------------------------------------------------------------------
 
 We recommend storing your sessions in a directory above the
 public-facing **content** directory, such as the **web** directory. The
 recommended practice is to login to your FTP and create a **sessions**
 directory within your **web** directory. At this point your session save
-path should be:<br>
- **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions**
+path should be:
+**/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions**
 
 So the last line in your .htaccess file would resemble the following:
 
     php_value session.save_path /mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions
 
- 
+
 

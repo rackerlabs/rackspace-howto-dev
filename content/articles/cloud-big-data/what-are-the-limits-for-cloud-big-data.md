@@ -2,10 +2,10 @@
 node_id: 3978
 title: Limits for Cloud Big Data
 type: article
-created_date: '2014-03-28 17:07:42'
-created_by: rose.contreras
-last_modified_date: '2015-05-08 20:1447'
-last_modified_by: kelly.holcomb
+created_date: '2014-03-28'
+created_by: Rose Contreras
+last_modified_date: '2015-05-08'
+last_modified_by: Kelly Holcomb
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -29,13 +29,13 @@ following URL:
 The following table specifies the default rate limits for all GET, POST,
 PUT, and DELETE API operations for clusters.
 
-  Verb                URI              Regular expression      Default
-  ------------------- ---------------- ----------------------- --------------
-  GET changes-since   \*/clusters/\*   \^/vd+.d+/clusters.\*   3 per minute
-  POST                \*/clusters/\*   \^/vd+.d+/clusters.\*   2 per minute
-  POST clusters       \*/clusters/\*   \^/vd+.d+/clusters.\*   50 per day
-  PUT                 \*/clusters/\*   \^/vd+.d+/clusters.\*   2 per minute
-  DELETE              \*/clusters/\*   \^/vd+.d+/clusters.\*   5 per minute
+| Verb              | URI            | Regular expression    | Default      |
+|-------------------|----------------|-----------------------|--------------|
+| GET changes-since | \*/clusters/\* | \^/vd+.d+/clusters.\* | 3 per minute |
+| POST              | \*/clusters/\* | \^/vd+.d+/clusters.\* | 2 per minute |
+| POST clusters     | \*/clusters/\* | \^/vd+.d+/clusters.\* | 50 per day   |
+| PUT               | \*/clusters/\* | \^/vd+.d+/clusters.\* | 2 per minute |
+| DELETE            | \*/clusters/\* | \^/vd+.d+/clusters.\* | 5 per minute |
 
 Rate limits are applied in order relative to the verb, going from least
 to most specific. For example, although the threshold for issuing a POST
@@ -51,12 +51,12 @@ Absolute limits
 
 The following table describes the absolute limits that are set.
 
-  Name         Description                                                      Limit
-  ------------ ---------------------------------------------------------------- -------
-  Node Count   Maximum number of allowed data notes                             5
-  Disk         Maximum disk capacity across all data nodes, in gigabytes (GB)   5120
-  RAM          Maximum RAM across all data notes, in gigabytes (GB)             40960
-  VCPUs        Maximum virtual CPUs across all data nodes                       10
+| Name       | Description                                                    | Limit |
+|------------|----------------------------------------------------------------|-------|
+| Node Count | Maximum number of allowed data notes                           | 5     |
+| Disk       | Maximum disk capacity across all data nodes, in gigabytes (GB) | 5120  |
+| RAM        | Maximum RAM across all data notes, in gigabytes (GB)           | 40960 |
+| VCPUs      | Maximum virtual CPUs across all data nodes                     | 10    |
 
- 
+
 

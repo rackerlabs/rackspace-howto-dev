@@ -2,10 +2,10 @@
 node_id: 622
 title: Force SSL on your PHP site
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-23 17:0449'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-23'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,7 +19,7 @@ To force SSL on your PHP site, you can use the following code in a
     RewriteCond %{ENV:HTTPS} !on [NC]
     RewriteRule ^(.*)$ https://(YOURDOMAIN)/$1 [R,L]
 
-    #Force SSL on a specific directory 
+    #Force SSL on a specific directory
     RewriteEngine On
     RewriteBase /
     RewriteCond %{ENV:HTTPS} !on [NC]

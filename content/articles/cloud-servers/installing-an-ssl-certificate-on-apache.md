@@ -2,45 +2,56 @@
 node_id: 360
 title: Installing an SSL certificate on Apache
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:1320'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
 
 This article is a continuation of [Generate a
-CSR](/knowledge_center/index.php/Generate_a_CSR "Generate a CSR") and
+CSR](/howto/generate-a-csr-with-openssl "Generate a CSR") and
 will take you from creating and receiving your SSL cert from your
 authority of choice to installing it in apache. I've chosen to Apache
 since it is the most common web server on Linux and the Internet. Again,
 I'm pulling the majority of this documentation from RapidSSL.com which
 is a great place to buy a certificate if you haven't already chosen:
 
-[http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache\_2x.htm](http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm "http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm")
+<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>
 
--   [1 Prerequisites](#Prerequisites)
--   [2 Installing your SSL
-    Certificate](#Installing_your_SSL_Certificate)
-    -   [2.1 Copy the files in into the default
-        locale](#Copy_the_files_in_into_the_default_locale)
-    -   [2.2 Edit the httpd.conf](#Edit_the_httpd.conf)
--   [3 iptables](#iptables)
--   [4 Restart Apache](#Restart_Apache)
+-   [<span class="tocnumber">1</span> <span
+    class="toctext">Prerequisites</span>](#Prerequisites)
+-   [<span class="tocnumber">2</span> <span class="toctext">Installing
+    your SSL Certificate</span>](#Installing_your_SSL_Certificate)
+    -   [<span class="tocnumber">2.1</span> <span class="toctext">Copy
+        the files in into the default
+        locale</span>](#Copy_the_files_in_into_the_default_locale)
+    -   [<span class="tocnumber">2.2</span> <span class="toctext">Edit
+        the httpd.conf</span>](#Edit_the_httpd.conf)
+-   [<span class="tocnumber">3</span> <span
+    class="toctext">iptables</span>](#iptables)
+-   [<span class="tocnumber">4</span> <span class="toctext">Restart
+    Apache</span>](#Restart_Apache)
 
-Prerequisites
--------------
+[](){#Prerequisites}
+
+<span class="mw-headline">Prerequisites</span>
+----------------------------------------------
 
 Keep in mind besides having apache and mod\_ssl installed, you will need
 to have an IP address for this SSL cert and a unique IP address for each
 SSL that you want to host. Certificate authorities and browsers require
 that all SSL certs be on their own IP address.
 
-Installing your SSL Certificate
--------------------------------
+[](){#Installing_your_SSL_Certificate}
 
-### Copy the files in into the default locale
+<span class="mw-headline">Installing your SSL Certificate</span>
+----------------------------------------------------------------
+
+[](){#Copy_the_files_in_into_the_default_locale}
+
+### <span class="mw-headline">Copy the files in into the default locale</span>
 
 When you receive your SSL certificate from your authority, upload it to
 your server and place it in \~/domain.com.ssl/domain.com.crt
@@ -52,7 +63,9 @@ your server and place it in \~/domain.com.ssl/domain.com.crt
 **Note: Copy the entire contents of the certificate from (and including)
 the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines.**
 
-### Edit the httpd.conf
+[](){#Edit_the_httpd.conf}
+
+### <span class="mw-headline">Edit the httpd.conf</span>
 
 Open the Apache httpd.conf file in a text editor(I prefer VIM, the true
 editor).
@@ -78,8 +91,10 @@ Save the changes and exit the editor.
 
 Save the changes and exit the editor.
 
-iptables
---------
+[](){#iptables}
+
+<span class="mw-headline">iptables</span>
+-----------------------------------------
 
 You may need to open a port in your firewall to allow SSL connections to
 port 443.  To check, get a list of your firewall rules:
@@ -97,8 +112,10 @@ Hat-based distributions, run:
 
     sudo /sbin/service iptables save
 
-Restart Apache
---------------
+[](){#Restart_Apache}
+
+<span class="mw-headline">Restart Apache</span>
+-----------------------------------------------
 
 Restart your apache web server:
 

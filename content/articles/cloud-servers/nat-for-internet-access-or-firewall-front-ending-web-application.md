@@ -2,10 +2,10 @@
 node_id: 3256
 title: Enable Internet Access on Cloud Servers Using SNAT on a Vyatta Network Appliance
 type: article
-created_date: '2013-01-08 22:42:42'
-created_by: sameer.satyam
-last_modified_date: '2015-09-29 17:3119'
-last_modified_by: kyle.laffoon
+created_date: '2013-01-08'
+created_by: Sameer Satyam
+last_modified_date: '2015-09-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -41,9 +41,10 @@ NAT.
 
 For a comprehensive guide to configuring NAT on the Vyatta appliance,
 click
-[here](https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-NAT_6.5R1_v01.pdf). 
+[here](https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-NAT_6.5R1_v01.pdf).<span> </span>
 
-![](/knowledge_center/sites/default/files/field/image/FirewallFrontendingWebApp.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/FirewallFrontendingWebApp.png){width="563"
+height="283"}
 
 Configure an Outbound NAT Rule
 ------------------------------
@@ -84,8 +85,8 @@ you use to complete this configuration.
         vyatta@vyatta#
 
     The rule number is arbitrary. As a best practice, leave room between
-    rule numbers so that you can add new rules at a later time if
-    necessary. NAT rules are executed sequentially, starting with the
+    rule numbers so that you can add new rules at a later time
+    if necessary. NAT rules are executed sequentially, starting with the
     lowest number first.
 
 4.  Apply this rule to packets coming from any host on network
@@ -124,13 +125,13 @@ Outbound Source rule.
 
 In configuration mode, use the following the command:
 
-    vyatta@vyatta# show nat source rule 10 
-     outbound&dash;interface eth0 
-     source { 
-    address 192.x.x.0/24 
-     } 
-     translation { 
-     address masquerade 
+    vyatta@vyatta# show nat source rule 10
+     outbound&dash;interface eth0
+     source {
+    address 192.x.x.0/24
+     }
+     translation {
+     address masquerade
     }
 
 In operational mode, use the following command:
@@ -138,11 +139,11 @@ In operational mode, use the following command:
     vyatta@vyatta-ord-6:~$ show nat source rules
      Disabled rules are not shown
     Codes: X - exclude rule, M - masquerade rule
-    rule    intf              translation                                               
-    M10     eth0             saddr 192.168.2.128/25 to X.X.X.X                  
-            proto-all         sport ANY                                                     
+    rule    intf              translation
+    M10     eth0             saddr 192.168.2.128/25 to X.X.X.X
+            proto-all         sport ANY
 
-###  
+###
 
 ### Adding a Static Route on the Sever
 

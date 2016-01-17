@@ -2,11 +2,11 @@
 node_id: 4590
 title: Security for Rackspace Private Cloud powered by OpenStack
 type: article
-created_date: '2015-03-04 21:53:36'
-created_by: kenny.johnston
-last_modified_date: '2016-01-14 00:5913'
-last_modified_by: rose.coste
-product: Rackspace Private Cloud - OpenStack
+created_date: '2015-03-04'
+created_by: Kenny Johnston
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
@@ -31,7 +31,7 @@ This document will provide an introductory understanding of:
     Rackspace
 3.  Security of customer's OpenStack private cloud if hosted within a
     customer's datacenter
-4.  Security and *Fanatical Support*service
+4.  Security and *Fanatical Support* service
     -   For an OpenStack private cloud hosted at Rackspace
     -   For an OpenStack private cloud hosted with a customer's
         datacenter
@@ -127,7 +127,7 @@ Rackspace Private Cloud powered by OpenStack separates management and
 internal service traffic onto separate networks. Management networks are
 secured via VPN access and hardware firewalls. OpenStack internal
 communications are performed as RESTful API calls that can be secured
-via the use of SSL/TLS certificates. 
+via the use of SSL/TLS certificates.
 
 Looking forward, OpenStack's security groups are actively advancing
 Firewall-as-a-Service and other OpenStack networking features enabling
@@ -256,8 +256,8 @@ Rackspace Private Cloud powered by OpenStack is available in Rackspace
 datacenters globally. Rackspace data centers physical security
 capabilities include:
 
--   Two-factor authentication required to access all data center
-    facilities.
+-   Two-factor authentication required to access all data
+    center facilities.
 -   Electromechanical locks controlled by biometric authentication (hand
     geometry or fingerprint scanner) and key-card/badge.
 -   Access to secure sub-areas allocation on a role-specific basis
@@ -267,8 +267,8 @@ capabilities include:
     any physical or logical access rights are removed in a timely manner
     when access is no longer necessary or appropriate
 -   Closed circuit video surveillance is installed at all entrance
-    points on the interior and exterior of the buildings that house data
-    centers. Cameras are monitored 24x7x365 by on-site security
+    points on the interior and exterior of the buildings that house
+    data centers. Cameras are monitored 24x7x365 by on-site security
     personnel and support data retention for 90 days.
 -   Sensitive equipment such as information processing facilities,
     including customer servers, is housed in secure sub-areas within
@@ -301,8 +301,8 @@ rules:
     Rackspace employees not assigned to the data center.
 -   Visitors, including Rackspace customers, are strictly forbidden from
     accessing the data halls themselves and other secure sub areas.
--   Visitors must be escorted at all times while at any Rackspace
-    Facility.
+-   Visitors must be escorted at all times while at any
+    Rackspace Facility.
 -   Data center management performs a monthly audit of security and
     visitor access logs
 

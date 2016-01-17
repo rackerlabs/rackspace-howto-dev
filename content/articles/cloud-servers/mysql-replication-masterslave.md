@@ -2,9 +2,9 @@
 node_id: 406
 title: 'MySQL replication: Master/Slave'
 type: article
-created_date: '2011-03-16 21:57:40'
+created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-05-06 17:2356'
+last_modified_date: '2015-05-06'
 last_modified_by: David Hendler
 product: Cloud Servers
 body_format: markdown_w_tinymce
@@ -58,32 +58,32 @@ The MySQL configuration in this article replicates over the private IPs of your 
 
 You will see the following output:
 
-     
-     eth0      Link encap:Ethernet  HWaddr 40:40:51:B7:A4:2E  
+
+     eth0      Link encap:Ethernet  HWaddr 40:40:51:B7:A4:2E
                inet addr:67.23.9.185  Bcast:67.23.9.255  Mask:255.255.255.0
                inet6 addr: fe80::4240:51ff:feb7:a42e/64 Scope:Link
                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
                RX packets:28878 errors:0 dropped:0 overruns:0 frame:0
                TX packets:15147 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:1000 
+               collisions:0 txqueuelen:1000
                RX bytes:37708534 (35.9 MiB)  TX bytes:1129533 (1.0 MiB)
 
-     eth1      Link encap:Ethernet  HWaddr 40:40:1A:AF:35:F2  
+     eth1      Link encap:Ethernet  HWaddr 40:40:1A:AF:35:F2
                inet addr:10.176.41.72  Bcast:10.176.63.255 Mask:255.255.224.0
                inet6 addr: fe80::4240:1aff:feaf:35f2/64 Scope:Link
                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
                RX packets:3 errors:0 dropped:0 overruns:0 frame:0
                TX packets:13 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:1000 
+               collisions:0 txqueuelen:1000
                RX bytes:230 (230.0 b)  TX bytes:762 (762.0 b)
 
-     lo        Link encap:Local Loopback  
+     lo        Link encap:Local Loopback
                inet addr:127.0.0.1  Mask:255.0.0.0
                inet6 addr: ::1/128 Scope:Host
                UP LOOPBACK RUNNING  MTU:16436  Metric:1
                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:0 
+               collisions:0 txqueuelen:0
                RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
 
 You want to note the IP that is shown for <code>eth1</code>. The IP address is listed right after <code>inet addr:</code>. In this example, our master server's private IP is 10.176.41.72. Repeat this on the slave server and note the private IP.
@@ -91,31 +91,31 @@ You want to note the IP that is shown for <code>eth1</code>. The IP address is l
 **Slave:**
 
      [user@mysql-slave ~]$ /sbin/ifconfig
-     eth0      Link encap:Ethernet  HWaddr 40:40:BE:90:EB:1E  
+     eth0      Link encap:Ethernet  HWaddr 40:40:BE:90:EB:1E
                inet addr:67.23.10.69  Bcast:67.23.10.255  Mask:255.255.255.0
                inet6 addr: fe80::4240:beff:fe90:eb1e/64 Scope:Link
                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
                RX packets:29047 errors:0 dropped:0 overruns:0 frame:0
                TX packets:13527 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:1000 
+               collisions:0 txqueuelen:1000
                RX bytes:37743828 (35.9 MiB)  TX bytes:1473375 (1.4 MiB)
 
-     eth1      Link encap:Ethernet  HWaddr 40:40:AE:5B:35:3A  
+     eth1      Link encap:Ethernet  HWaddr 40:40:AE:5B:35:3A
                inet addr:10.176.41.207  Bcast:10.176.63.255 Mask:255.255.224.0
                inet6 addr: fe80::4240:aeff:fe5b:353a/64 Scope:Link
                UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
                RX packets:3 errors:0 dropped:0 overruns:0 frame:0
                TX packets:13 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:1000 
+               collisions:0 txqueuelen:1000
                RX bytes:230 (230.0 b)  TX bytes:762 (762.0 b)
 
-     lo        Link encap:Local Loopback  
+     lo        Link encap:Local Loopback
                inet addr:127.0.0.1  Mask:255.0.0.0
                inet6 addr: ::1/128 Scope:Host
                UP LOOPBACK RUNNING  MTU:16436  Metric:1
                RX packets:0 errors:0 dropped:0 overruns:0 frame:0
                TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-               collisions:0 txqueuelen:0 
+               collisions:0 txqueuelen:0
                RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
 
 The IP address for our slave server in this example is 10.176.41.207. When you have both private IPs noted somewhere, you're good to start configuring.

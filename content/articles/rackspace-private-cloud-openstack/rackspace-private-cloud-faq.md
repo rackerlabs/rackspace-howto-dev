@@ -2,16 +2,16 @@
 node_id: 4228
 title: Rackspace Private Cloud FAQ
 type: article
-created_date: '2014-09-09 17:28:07'
+created_date: '2014-09-09'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-04 16:0926'
-last_modified_by: kyle.laffoon
-product: Rackspace Private Cloud - OpenStack
+last_modified_date: '2016-01-04'
+last_modified_by: Kyle Laffoon
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: markdown_w_tinymce
 ---
 
-### Previous section 
-[Getting Started with Rackspace Private Cloud - OpenStack ](https://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud-openstack)
+### Previous section
+[Getting Started with Rackspace Private Cloud - OpenStack ](/howto/rackspace-private-cloud-openstack)
 
 Rackspace Private Cloud is powered by OpenStack and delivers the agility and efficiency of a public cloud combined with the enhanced security, control and performance of a dedicated environment.  It can be deployed in your data center or ours, is managed by our OpenStack experts and backed by Fanatical Support®.  Rackspace Private Cloud gives you all the power of the cloud without the pain of running it, so you can focus on your core business.
 
@@ -45,14 +45,14 @@ Rackspace Private Cloud (RPC) consists of the Rackspace Private Cloud Software p
 -   [Does Rackspace plan to offer additional templates in the future?](#solutions8)
 
 ## How does Rackspace Private Cloud support Rackspace's position as the #1 managed cloud company? {#a}
-Rackspace Private Cloud supports our position as the #1 managed cloud company by offering customers managed private cloud solutions in their data center or ours.  Our team of OpenStack engineers operate our customers’ private clouds so they can focus on their core business and applications. 
+Rackspace Private Cloud supports our position as the #1 managed cloud company by offering customers managed private cloud solutions in their data center or ours.  Our team of OpenStack engineers operate our customers’ private clouds so they can focus on their core business and applications.
 
 ## What new enhancements were delivered with the July 23 launch of Rackspace Private Cloud Version 11.0? {#b}
-Rackspace Private Cloud Version 11.0.0 Release Highlights: 
+Rackspace Private Cloud Version 11.0.0 Release Highlights:
 
-*   Moved to the Kilo release of OpenStack (over 7,200 bugs fixed with Kilo) 
+*   Moved to the Kilo release of OpenStack (over 7,200 bugs fixed with Kilo)
 *   Fully tested in-place upgrades from RPC 10+ environments
-*   Refined workflow between rpc-openstack repository and OpenStack Ansible Deploy project 
+*   Refined workflow between rpc-openstack repository and OpenStack Ansible Deploy project
 
 The following enhancements were delivered with the February 26 launch of Rackspace Private Cloud Version 10.
 
@@ -63,7 +63,7 @@ The following enhancements were delivered with the February 26 launch of Rackspa
 
 ## What support services are available for Rackspace Private Cloud? {#2}
 
-Rackspace offers the following support service, which we define as "**Core Support**". Our support engineers will proactively monitor and maintain the health of your cloud providing installation, configuration, patching, updating, troubleshooting and resizing services.                                                                               
+Rackspace offers the following support service, which we define as "**Core Support**". Our support engineers will proactively monitor and maintain the health of your cloud providing installation, configuration, patching, updating, troubleshooting and resizing services.
 
 More information is available at the [Rackspace Private Cloud web page](http://www.rackspace.com/cloud/private/).
 
@@ -72,15 +72,15 @@ More information is available at the [Rackspace Private Cloud web page](http://w
 Yes, Rackspace offers several additional services for RPC customers.  Customers have the option to have a Dedicated OpenStack Engineer for their account, DevOps automation services to help you unlock the full power of your cloud through automation and professional services to help you get started with and optimize your private cloud.
 
 ## What are Rackspace Private Cloud's main differentiators? {#3a}
-<img src="/knowledge_center/sites/default/files/field/image/rpc-differentiators.png" width="700" alt="What differentiates Rackspace Private Cloud"  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rpc-differentiators.png" width="700" alt="What differentiates Rackspace Private Cloud"  />
 
->### Stable & Scalable 
+>### Stable & Scalable
 
 >We offer an industry leading 99.99% OpenStack API uptime guarantee, a reference architecture that utilizes Linux containers to provide in-place upgrades and independent scaling of each OpenStack service, and a cloud that is designed to scale to hundreds of nodes.
 
 >### Automation
 
->RPC is deployed using Ansible software, supports OpenStack Orchestration (Heat), can be combined with our DevOps Automation Service to help automate a customer’s process for deploying and scaling applications, and provides solution templates that enable customers to deploy production-ready application stacks in minutes.  
+>RPC is deployed using Ansible software, supports OpenStack Orchestration (Heat), can be combined with our DevOps Automation Service to help automate a customer’s process for deploying and scaling applications, and provides solution templates that enable customers to deploy production-ready application stacks in minutes.
 
 >### Fanatical Support
 
@@ -143,7 +143,7 @@ Customers need to deploy applications on top of their cloud as quickly as possib
 
 ## What makes these solution templates production-ready? {#solutions3}
 
-The templates are built and tested by Rackspace’s OpenStack experts.  They are built using industry standards and best practices and they include software plug-ins for enhanced functionality, network isolation and firewalls for robust security, are designed for high availability (e.g. database failure, redundant caching) and are optimized via extensive performance testing. 
+The templates are built and tested by Rackspace’s OpenStack experts.  They are built using industry standards and best practices and they include software plug-ins for enhanced functionality, network isolation and firewalls for robust security, are designed for high availability (e.g. database failure, redundant caching) and are optimized via extensive performance testing.
 
 ## What solution templates are available from RPC? {#solutions4}
 
@@ -158,11 +158,11 @@ The solution templates are not supported by RPC.
 
 ## Where are the solutions templates located? {#solutions7}
 The general public can download our solution templates at the following GitHub site: [http://rcbops.github.io/templates/](http://rcbops.github.io/templates/). As part of our v10 release, Rackspace Private Cloud customers can now discover and deploy RPC solution templates using the RPC “Solutions” tab in the Horizon dashboard.  Following is a snapshot of the RPC “Solutions” tab in Horizon:
-<img src="/knowledge_center/sites/default/files/field/image/rpc-solutions-tab.png" width="700" alt="Rackspace Private Cloud Solutions tab screen shot"  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rpc-solutions-tab.png" width="700" alt="Rackspace Private Cloud Solutions tab screen shot"  />
 
 ## Does Rackspace plan to offer additional templates in the future? {#solutions8}
 
 Yes, Rackspace plans to continue adding new solution templates to the RPC “Solutions” tab.
 
-### Next section 
-[Spheres of Support](https://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-spheres-of-support)
+### Next section
+[Spheres of Support](/howto/rackspace-private-cloud-spheres-of-support)

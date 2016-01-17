@@ -2,10 +2,10 @@
 node_id: 3426
 title: Best practices for Cloud Backup
 type: article
-created_date: '2013-04-22 19:23:55'
+created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2016-01-14 22:2849'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Contreras
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---
@@ -50,12 +50,12 @@ Knowing the language of backup goes a long way towards helping you make informed
 
 Our best guidance is not what to backup, but what not to backup:
 
-- Do not back up running databases -- to backup a database, see the topic on [backing up databases](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backing-up-databases).
+- Do not back up running databases -- to backup a database, see the topic on [backing up databases](/howto/rackspace-cloud-backup-backing-up-databases).
 - Do not back up caches and session files
 - Do not back up frequently changing files, such as logs
-- Do not back up root -- to save all data and the server, [make an image of the server](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) instead.
+- Do not back up root -- to save all data and the server, [make an image of the server](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) instead.
 
-Lastly, do not compress your data before backup, as this defeats the purpose of deduplication. Deduplication saves only the updated information and saves you storage space and money during the backup process. For more on technology, see the [topic on deduplication](http://www.rackspace.com/knowledge_center/frequently-asked-question/what-is-de-duplication).
+Lastly, do not compress your data before backup, as this defeats the purpose of deduplication. Deduplication saves only the updated information and saves you storage space and money during the backup process. For more on technology, see the [topic on deduplication](/howto/what-is-de-duplication).
 
 The Cloud Backup Agent tries to be helpful, and skips the below types of files automatically. You may, however, manually add them to your backup.
 
@@ -81,7 +81,7 @@ These file types either change too rapidly (databases, logs, caches) or don't ex
 
 There are many ways to configure backups and restores. To make Cloud Backup work best for you, it helps to understand some of the tradeoffs you make when you configure the many options available to you.
 
-**NOTE:** With Performance Cloud Servers, Cloud Monitoring will only monitor the system disk. The data disk is not monitored. For data disk backup, [Rackspace Cloud Backup](http://rackspace.com/knowledge_center/frequently-asked-question/what-is-rackspace-cloud-backup-rcbu) or  [Cloud Block Storage](http://rackspace.com/knowledge_center/article/cloud-block-storage-overview) should be used.
+**NOTE:** With Performance Cloud Servers, Cloud Monitoring will only monitor the system disk. The data disk is not monitored. For data disk backup, [Rackspace Cloud Backup](/howto/what-is-rackspace-cloud-backup-0) or  [Cloud Block Storage](/howto/cloud-block-storage-overview) should be used.
 
 &nbsp; ||
 --- | ---

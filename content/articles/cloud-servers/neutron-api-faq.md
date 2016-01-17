@@ -2,15 +2,15 @@
 node_id: 3914
 title: Rackspace Neutron-based Networking API FAQ
 type: article
-created_date: '2014-02-26 23:04:55'
-created_by: sameer.satyam
-last_modified_date: '2015-03-17 16:2233'
-last_modified_by: kyle.laffoon
+created_date: '2014-02-26'
+created_by: Sameer Satyam
+last_modified_date: '2015-03-17'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-### What is Neutron? 
+### What is Neutron?
 
 Neutron is an OpenStack project that will be the basis for all upcoming
 networking services in the Rackspace Public Cloud. If you deploy
@@ -21,7 +21,7 @@ Networking operations.
 
 ### Where are the docs ?
 
- 
+
 
 ### Why are you introducing Rackspace Networking based on the OpenStack Neutron API?
 
@@ -34,9 +34,9 @@ the existing API, the Neutron OpenStack project has become the primary
 Networking service in OpenStack. Moving forward, Rackspace Networking
 API will be based on OpenStack Neutron API that is more granular than
 the nova-network API and offers richer functionality and flexibility to
-consume networking services. 
+consume networking services.
 
-### What new capabilities are being introduced with the new API? 
+### What new capabilities are being introduced with the new API?
 
 The API provides three primary top level resources (networks , ports and
 subnets). Users can now:
@@ -60,7 +60,7 @@ API to take advantage of some of the new capabilities.
 ### Can I attach and detach networks from servers using the new API ?
 
 Currently, you still have to use the Cloud Networks virtual interfaces
-extension to attach and detach networks from a Cloud Server. 
+extension to attach and detach networks from a Cloud Server.
 
 ### Is this API available to RackConnect customers ?
 
@@ -97,7 +97,7 @@ networks.
 ### Can I modify allocation pools on the subnet ?
 
 You can specify allocation pools for the subnet when you create a subnet
-but you cannot modify it. 
+but you cannot modify it.
 
 When I change attributes on subnets will they take effect on ports that
 are using it ?
@@ -114,5 +114,5 @@ No , ports can be created only on Isolated Networks (cloud networks).
 Yes, you can provision both an IPv4 address and an IPv6 address on the
 same port using the fixed\_ips attribute.
 
- 
+
 

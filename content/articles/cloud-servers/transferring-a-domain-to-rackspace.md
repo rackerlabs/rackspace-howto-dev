@@ -2,10 +2,10 @@
 node_id: 1517
 title: Serving Your Domain From a Rackspace Cloud Server
 type: article
-created_date: '2012-07-24 00:44:41'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 20:3911'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -45,15 +45,16 @@ the original domain registrar.
 
 **Notes**:
 
--   For most domains, DNS propagation can take up to 48 hours.
--   The only product the Rackspace Cloud offers where we *can* act as
-    domain registrar is for [Cloud
-    Sites](http://www.rackspace.com/cloud/sites/).
+-   <span>For most domains, DNS propagation can take up to
+    48 hours.</span>
+-   <span>The only product the Rackspace Cloud offers where
+    we <span>*can* act as domain registrar is for [Cloud
+    Sites](http://www.rackspace.com/cloud/sites/).</span></span>
 
- 
+
 
 ### Related Information
 
 [Learn More About
-DNS](http://www.rackspace.com/knowledge_center/article/learn-more-about-dns "Learn More About DNS")
+DNS](/howto/learn-more-about-dns "Learn More About DNS")
 

@@ -2,10 +2,10 @@
 node_id: 274
 title: Rackspace Cloud Essentials - CentOS - Configuring a user in vsftpd
 type: article
-created_date: '2011-04-04 16:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 21:2336'
-last_modified_by: kyle.laffoon
+created_date: '2011-04-04'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,27 +13,37 @@ body_format: tinymce
 This article shows you how to create a system user in vstfpd and
 chrooting (jail - isolation to their home directory) them if necessary.
 
-* * * * *
+------------------------------------------------------------------------
 
 ### Previous section
 
 [Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Add your system User](#Add_your_system_User)                      |
-| -   [2 Disable SSH access for FTP                                        |
-|     users](#Disable_SSH_access_for_FTP_users)                            |
-| -   [3 Chroot a user](#Chroot_a_user)                                    |
-+--------------------------------------------------------------------------+
 
-Add your system User
---------------------
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><div id="toctitle">
+<h2 id="contents">Contents</h2>
+</div>
+<ul>
+<li><a href="#Add_your_system_User"><span class="tocnumber">1</span> <span class="toctext">Add your system User</span></a></li>
+<li><a href="#Disable_SSH_access_for_FTP_users"><span class="tocnumber">2</span> <span class="toctext">Disable SSH access for FTP users</span></a></li>
+<li><a href="#Chroot_a_user"><span class="tocnumber">3</span> <span class="toctext">Chroot a user</span></a></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+[](){#Add_your_system_User}
+
+<span class="mw-headline">Add your system User </span>
+------------------------------------------------------
 
 Yes, it is this simple, creating a new user for ftp access in vsftpd is
 as easy as creating a new valid linux system user.
@@ -41,8 +51,10 @@ as easy as creating a new valid linux system user.
         # useradd test
         # passwd test
 
-Disable SSH access for FTP users
---------------------------------
+[](){#Disable_SSH_access_for_FTP_users}
+
+<span class="mw-headline">Disable SSH access for FTP users </span>
+------------------------------------------------------------------
 
 The default user creation script will give a user the /bin/bash shell,
 which can be a little too powerful.  If you don't want your users
@@ -53,8 +65,10 @@ modify your users:
 
     usermod -s /sbin/nologin test
 
-Chroot a user
--------------
+[](){#Chroot_a_user}
+
+<span class="mw-headline">Chroot a user </span>
+-----------------------------------------------
 
 Alright and probably the most important part of this article is the
 ability to lock a user down to their own home directory so they don't go
@@ -63,15 +77,15 @@ in they will be unable to move 'up' a level in the directory structure.
 
 That pretty much covers it for vsftpd, and at this point you should be
 able to create a new system user, set them up for vsftpd and do some
-basic tweaks to their access level.  
+basic tweaks to their access level.
 
- 
+
 
 ### Next steps
 
 Return to the Cloud Servers Getting Started Guide and chose the
 applicable option for [DNS & Domain
-Management](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0#dnsDomainMGMT).
+Management](/howto/getting-started-with-cloud-servers-0#dnsDomainMGMT).
 
- 
+
 

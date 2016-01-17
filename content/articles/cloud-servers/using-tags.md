@@ -2,10 +2,10 @@
 node_id: 1521
 title: Using Cloud Servers tags
 type: article
-created_date: '2012-07-24 00:48:25'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 20:3411'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: full_html
 ---
@@ -25,13 +25,13 @@ How to create a tag {#howto}
 1.  In the Cloud Servers list, click the gear icon next to the server
     name and select **Add Tag**.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-12%20at%207.19.50%20AM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-12%20at%207.19.50%20AM.png)
 
 2.  In the **Add or remove tags** popup box, type a tag label and then
     press **Enter**. You can enter as many tags as you want, pressing
     **Enter** after each one.
-3.  When you are done adding tags, click **Save Tags** to commit your
-    changes.
+3.  When you are done adding tags, click **Save Tags** to commit
+    your changes.
 
 To find tagged instances, select the check boxes next to the tags in the
 **Tag** on the left side of the server&rsquo;s list.
@@ -86,5 +86,5 @@ Related information {#relatedinformation}
 -------------------
 
 [Learn more about Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers)
+Servers](/howto/learn-more-about-cloud-servers)
 

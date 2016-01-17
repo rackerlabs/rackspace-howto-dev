@@ -2,10 +2,10 @@
 node_id: 3265
 title: Configure a Site-to-site VPN using the Vyatta Network Appliance
 type: article
-created_date: '2013-01-18 02:13:23'
-created_by: sameer.satyam
-last_modified_date: '2015-09-29 17:3537'
-last_modified_by: kyle.laffoon
+created_date: '2013-01-18'
+created_by: Sameer Satyam
+last_modified_date: '2015-09-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -16,13 +16,13 @@ Using a Vyatta Appliance, you can establish a secure site-to-site VPN connection
 
 This site-to-site VPN connection enables you to extend your IT infrastructure to the Rackspace Cloud and “burst” extra compute requirements into the Rackspace Cloud.
 
-Vyatta supports both policy-based and route-based VPNs. In this article we show you how to configure a policy-based VPN on the Vyatta. 
+Vyatta supports both policy-based and route-based VPNs. In this article we show you how to configure a policy-based VPN on the Vyatta.
 
 For a comprehensive guide to VPN configuration on the Vyatta, click <a href="https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-VPN_6.5R1_v01.pdf">here</a>
 
 For guidance on configuring the relevant firewall rules to allow VPN traffic on the Vyatta please refer to the following article:
 
-<a href="http://www.rackspace.com/knowledge_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance">http://www.rackspace.com/knowledge_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance</a>
+<a href="/howto/configuring-interface-based-firewall-on-the-vyatta-network-appliance">/howto/configuring-interface-based-firewall-on-the-vyatta-network-appliance</a>
 
 ## IPsec on Vyatta
 
@@ -36,7 +36,7 @@ Of these protocols, the Vyatta Appliance currently supports ESP, which encrypts 
 
 The following diagram shows a site-to-site VPN connection between two sites. For simplicity ,we show the configuration of Site-to-site VPN between two Rackspace sites (both using Vyatta).
 
-<img alt="" border="2" height="299" src="/knowledge_center/sites/default/files/field/image/Site%20to%20Site%20VPN_0.png" width="629" />
+<img alt="" border="2" height="299" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Site%20to%20Site%20VPN_0.png" width="629" />
 
 ## Site-to-Site VPN Configuration Checklist
 
@@ -80,18 +80,18 @@ To complete this configuration, you'll perform the following steps:
 	Where  64.x.x.101 is the IP address of the Vyatta appliance. You'll see a Welcome to Vyatta message and a prompt to enter your Vyatta password.
 
 	Once you're logged into the appliance, you can enter a ? or press the Tab key for help.
-	
+
 2. Enter configuration mode:
 
         vyatta@vyatta: configure
         vyatta@vyatta#
 
     The # symbol indicates you're in configuration mode.
-	
+
 3. Enable VPN on eth0 on Vyatta-DFW:
 
         set vpn ipsec ipsec-interfaces interface eth0
-	
+
 4. View the IPsec interface configuration:
 
         vyatta@vyatta# show vpn ipsec ipsec-interfaces
@@ -125,29 +125,29 @@ The lifetime of a proposal from this IKE group is set to 3600 seconds.
 2. Create the configuration node for proposal 1 of IKE group IKE‐ 1W:
 
         set vpn ipsec ike‐group IKE‐1W proposal 1
-	
+
 3. Set the encryption cipher for proposal 1:
 
         set vpn ipsec ike‐group IKE‐1W proposal 1 encryption aes256 </pre>
-	
+
 4. Set the hash algorithm for proposal 1:
 
         set vpn ipsec ike‐group IKE‐1W proposal 1 hash sha1
-	
+
 5. Set the lifetime for the whole IKE group:
 
         set vpn ipsec ike‐group IKE‐1W lifetime 3600
-	
+
 6. View the IKE group:
 
         show vpn ipsec ike‐group IKE‐1W
-    
+
 	    lifetime 3600
 	     proposal 1
 		     encryption aes256
 			 hash sha1
         }
-	    proposal 2 
+	    proposal 2
     	    encryption aes128
 			hash sha1
 		}
@@ -166,7 +166,7 @@ The lifetime of a proposal from this ESP group is set to 1800 seconds.
 1. Create the configuration node for proposal 1 of ESP group IKE‐ 1W:
 
 		set vpn ipsec esp‐group ESP‐1W proposal 1
-	
+
 2. Run the following command to check existing ESP parameters before proceeding further:
 
         show vpn ipsec esp-group
@@ -174,21 +174,21 @@ The lifetime of a proposal from this ESP group is set to 1800 seconds.
 3. Set the encryption cipher for proposal 1:
 
 		set vpn ipsec esp‐group ESP‐1W proposal 1 encryption aes256
-	
+
 4. Set the hash algorithm for proposal 1:
 
 		set vpn ipsec esp‐group ESP‐1W proposal 1 hash sha1
-	
+
 5. Set the lifetime for the whole ESP group:
 
 		set vpn ipsec esp‐group ESP‐1W lifetime 1800
-	
+
 6. View the ESP group:
 
 		show vpn ipsec esp‐group ESP‐1W
 
 		lifetime 1800{
-			proposal 1 
+			proposal 1
 			encryption aes256
 			hash sha1
 		}
@@ -274,13 +274,13 @@ Verify tunnel is up:
 
     vyatta@vyatta:~$ show vpn ipsec sa
 
-    Peer ID / IP                            Local ID / IP  
-             
+    Peer ID / IP                            Local ID / IP
+
     ------------                            -------------
 
-    198.x.x.101                          64.x.x.101 
-                         
-    
+    198.x.x.101                          64.x.x.101
+
+
         Tunnel  State  Bytes Out/In   Encrypt  Hash  NAT-T  A-Time  L-Time  Proto
         ------  -----  -------------  -------  ----  -----  ------  ------  -----
         1       up     0.0/0.0        aes256   sha1  no     906     1800    all
@@ -289,17 +289,17 @@ Verify the tunnel status:
 
     vyatta@vyatta:~$ show vpn ipsec status
     IPSec Process Running PID: 13088
-    
+
     1 Active IPsec Tunnels
-    
+
     IPsec Interfaces :
             eth0    (64.x.x.101)
 
 ### Step 7. Exclude site-to-site VPN traffic from NAT
 
-This configuration will be needed if you are using Vyatta to perform outbound NAT for internet access as shown <a href="http://www.rackspace.com/knowledge_center/article/enable-internet-access-on-cloud-servers-using-snat-on-a-vyatta-network-appliance" target="_blank">here</a>
+This configuration will be needed if you are using Vyatta to perform outbound NAT for internet access as shown <a href="/howto/enable-internet-access-on-cloud-servers-using-snat-on-a-vyatta-network-appliance" target="_blank">here</a>
 
-In case Source NAT has been configured already or needs to be configured, the following configuration needs to be applied so that the VPN traffic doesn't get translated on the Vyatta. 
+In case Source NAT has been configured already or needs to be configured, the following configuration needs to be applied so that the VPN traffic doesn't get translated on the Vyatta.
 
 The below configuration assumes Source NAT rule 10 was configured already. Rule 10 translates all traffic going out eth0 to use the IP address of the Public interface on the Vyatta as the Source IP for traffic sourced from 192.168.1.0/24. Since this NAT rule would break traffic that needs to go across the VPN , we need to add Rule 5 (since NAT rules are read sequentially) so that this traffic is excluded from NAT. (See "exclude" keyword" below). Here 192.168.3.0/24 is the remote prefix and 192.168.1.0/24 is the local prefix.
 

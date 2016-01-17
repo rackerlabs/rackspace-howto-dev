@@ -2,10 +2,10 @@
 node_id: 1479
 title: Cloud Files overview
 type: article
-created_date: '2012-07-23 16:46:33'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-05 15:5647'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-23'
+created_by: Rackspace Support
+last_modified_date: '2016-01-05'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -58,7 +58,7 @@ Cloud Files is not a file system in the traditional sense. You can't map
 or mount virtual disk drives like you can with other forms of storage
 such as a SAN or NAS. Because Cloud Files is a different kind of storage
 solution, take a few moments to [review some key
-concepts](http://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
+concepts](/howto/cloud-files-key-concepts).
 
 Using Cloud Files {#Using}
 -----------------

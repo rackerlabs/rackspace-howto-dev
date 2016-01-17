@@ -2,10 +2,10 @@
 node_id: 3133
 title: Cloud Block Storage - Attaching vs. Mounting
 type: article
-created_date: '2012-10-22 05:21:42'
+created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2016-01-05 18:3725'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-05'
+last_modified_by: Rose Contreras
 product: Cloud Block Storage
 body_format: tinymce
 ---
@@ -30,7 +30,7 @@ mount a volume through the computer's operating system.
 
  For more information on how to mount your volume, see Knowledge Center
 article [Prepare Your
-Volume](http://www.rackspace.com/knowledge_center/article/prepare-your-volume).
+Volume](/howto/prepare-your-cloud-block-storage-volume).
 
- 
+
 

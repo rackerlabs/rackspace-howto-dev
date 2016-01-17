@@ -2,10 +2,10 @@
 node_id: 650
 title: Test PHP SMTP functionality
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:2915'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -42,16 +42,16 @@ server information in the Mailgun control panel.
 
     <?php
     require_once "Mail.php";
-     
+
     $from = "Web Master <webmaster@example.com>";
     $to = "Nobody <nobody@example.com>";
     $subject = "Test email using PHP SMTP\r\n\r\n";
     $body = "This is a test email message";
-     
+
     $host = "mail.emailsrvr.com";
     $username = "webmaster@example.com";
     $password = "yourPassword";
-     
+
     $headers = array ('From' => $from,
       'To' => $to,
       'Subject' => $subject);
@@ -60,9 +60,9 @@ server information in the Mailgun control panel.
         'auth' => true,
         'username' => $username,
         'password' => $password));
-     
+
     $mail = $smtp->send($to, $headers, $body);
-     
+
     if (PEAR::isError($mail)) {
       echo("<p>" . $mail->getMessage() . "</p>");
     } else {
@@ -86,20 +86,20 @@ appropriate values for your system:
 
 <!-- -->
 
-     
+
     <?php
     require_once "Mail.php";
-     
+
     $from = "Web Master <webmaster@example.com>";
     $to = "Nobody <nobody@example.com>";
     $subject = "Test email using PHP SMTP with SSL\r\n\r\n";
     $body = "This is a test email message";
-     
+
     $host = "ssl://secure.emailsrvr.com";
     $port = "465";
     $username = "webmaster@example.com";
     $password = "yourPassword";
-     
+
     $headers = array ('From' => $from,
       'To' => $to,
       'Subject' => $subject);
@@ -109,9 +109,9 @@ appropriate values for your system:
         'auth' => true,
         'username' => $username,
         'password' => $password));
-     
+
     $mail = $smtp->send($to, $headers, $body);
-     
+
     if (PEAR::isError($mail)) {
       echo("<p>" . $mail->getMessage() . "</p>");
     } else {
@@ -120,17 +120,18 @@ appropriate values for your system:
     ?>
 
 **Note**:
-[Mail.php](http://pear.php.net/package/Mail "http://pear.php.net/package/Mail")
-is a [PEAR](http://pear.php.net/ "http://pear.php.net/") module and is
-installed on the server. It is included in the default
-[include\_path](http://www.php.net/manual/en/ini.core.php "http://www.php.net/manual/en/ini.core.php#ini.include-path")
-for PHP, so
-[requiring](http://php.net/manual/en/function.require.php "http://php.net/manual/en/function.require.php")
-it here works by default.
+[Mail.php](http://pear.php.net/package/Mail "http://pear.php.net/package/Mail"){.external
+.text} is a
+[PEAR](http://pear.php.net/ "http://pear.php.net/"){.external .text}
+module and is installed on the server. It is included in the default
+[include\_path](http://www.php.net/manual/en/ini.core.php "http://www.php.net/manual/en/ini.core.php#ini.include-path"){.external
+.text} for PHP, so
+[requiring](http://php.net/manual/en/function.require.php "http://php.net/manual/en/function.require.php"){.external
+.text} it here works by default.
 
 Related article
 ---------------
 
 [Test CDOSYS SMTP
-functionality](http://www.rackspace.com/knowledge_center/article/test-cdosys-smtp-functionality)
+functionality](/howto/test-cdosys-smtp-functionality)
 

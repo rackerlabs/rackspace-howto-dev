@@ -2,10 +2,10 @@
 node_id: 3295
 title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
 type: article
-created_date: '2013-02-11 14:51:05'
-created_by: renee.rendon
-last_modified_date: '2015-07-16 14:0536'
-last_modified_by: rose.contreras
+created_date: '2013-02-11'
+created_by: Renee Rendon
+last_modified_date: '2015-07-16'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -27,11 +27,11 @@ To avoid having to use single user mode, start your server up in rescue mode in 
 			<h3>Contents</h3>
 
 			<ul>
-				<li class="toclevel-1"><span class="toctext"><a href="http://www.rackspace.com/knowledge_center/#What_is_Rescue_mode.3F">Rescue mode</a></li>
-				<li class="toclevel-1"><a href="http://www.rackspace.com/knowledge_center/#Getting_your_server_into_Rescue_mode"><span class="toctext">Put your server into rescue mode</a></li>
-				<li class="toclevel-1"><a href="http://www.rackspace.com/knowledge_center/#Connecting_to_your_server_in_Rescue_Mode"><span class="toctext">Connect to your server in rescue mode</a></li>
-				<li class="toclevel-1"><a href="http://www.rackspace.com/knowledge_center/#Troubleshooting_your_server_in_Rescue_Mode"><span class="toctext">Troubleshoot your server in rescue mode</a></li>
-				<li class="toclevel-1"><a href="http://www.rackspace.com/knowledge_center/#Exiting_Rescue_Mode"><span class="toctext">Exitrescue mode</a></li>
+				<li class="toclevel-1"><span class="toctext"><a href="/howto/">Rescue mode</a></li>
+				<li class="toclevel-1"><a href="/howto/"><span class="toctext">Put your server into rescue mode</a></li>
+				<li class="toclevel-1"><a href="/howto/"><span class="toctext">Connect to your server in rescue mode</a></li>
+				<li class="toclevel-1"><a href="/howto/"><span class="toctext">Troubleshoot your server in rescue mode</a></li>
+				<li class="toclevel-1"><a href="/howto/"><span class="toctext">Exitrescue mode</a></li>
 			</ul>
 			</td>
 		</tr>
@@ -52,12 +52,12 @@ Rescue mode grants the root user full access to your non-bootable server’s fil
 
 4. Copy the temporary password and click **Dismiss Password**.
 
-    <img alt="" border="1" height="263" src="/knowledge_center/sites/default/files/field/image/Feb%2011%20-%20Rescue%20Mode%20Activated.png" width="440" />
+    <img alt="" border="1" height="263" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Feb%2011%20-%20Rescue%20Mode%20Activated.png" width="440" />
 
     **NOTE:** The green bar to the left of the server name will turn yellow during the process of building into Rescue Mode and then red when the process has completed. This may take several minutes.
 
-    <img alt="" border="1" height="82" src="/knowledge_center/sites/default/files/field/image/Feb%2011%20-%20Yellow%20Bar.png" width="192" />
-	<img alt="" border="1" height="87" src="/knowledge_center/sites/default/files/field/image/Feb%2011%20-%20Red%20Box.png" width="172" />
+    <img alt="" border="1" height="82" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Feb%2011%20-%20Yellow%20Bar.png" width="192" />
+	<img alt="" border="1" height="87" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Feb%2011%20-%20Red%20Box.png" width="172" />
 
 5. Once your server is in rescue mode, use an SSH client to connect to your server using the public IP address and the temporary root password to log in to rescue mode.
 
@@ -73,7 +73,7 @@ Before you can access the files on your server, you must mount the server's file
 
     You will get the following output:
 
-    <img alt="" border="1" height="537" src="/knowledge_center/sites/default/files/field/image/fdisknew.png" width="750" />
+    <img alt="" border="1" height="537" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/fdisknew.png" width="750" />
 
     Note the different disk names. The disk entry will display the device and size of the disk. For example: Disk /dev/xvdb1: 20 GiB
 

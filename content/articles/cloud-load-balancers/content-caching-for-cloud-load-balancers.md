@@ -2,10 +2,10 @@
 node_id: 1397
 title: Content Caching for Cloud Load Balancers
 type: article
-created_date: '2012-05-21 18:23:04'
-created_by: RackKCAdmin
-last_modified_date: '2013-12-11 17:5532'
-last_modified_by: jered.heeschen
+created_date: '2012-05-21'
+created_by: Rackspace Support
+last_modified_date: '2013-12-11'
+last_modified_by: Jered Heeschen
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -33,9 +33,11 @@ by web clients.
 -   [What file types are supported for content caching?](#filetypes)
 -   [Can I exclude specific file types?](#nocache)
 
-* * * * *
+------------------------------------------------------------------------
 
 ### Getting started {#gettingstarted}
+
+[](){#howenable}
 
 #### How do I enable content caching? {#howdoienablecontentcaching}
 
@@ -48,7 +50,9 @@ Cloud Control Panel by going to its details screen, scrolling down to
 the Optional Features section, and clicking the pencil icon next to
 Content Caching.
 
-![](/knowledge_center/sites/default/files/field/image/lbcontentcache.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/lbcontentcache.png){width="360"}
+
+[](){#benefits}
 
 #### What are the benefits of content caching? {#whatarethebenefitsofcontentcaching}
 
@@ -59,6 +63,8 @@ query to a web server behind it.
 
 The result is improved response times for those requests and less load
 on the web server.
+
+[](){#workwell}
 
 #### What kind of files work well with content caching? {#whatkindoffilesworkwellwithcontentcaching}
 
@@ -71,9 +77,13 @@ dynamically generated for different site visitors.
 
 ### Caching details {#cachingdetails}
 
+[](){#maxsize}
+
 #### Is there a maximum file size that can be cached? {#isthereamaximumfilesizethatcanbecached}
 
 The maximum file size per cached item is 2 MB.
+
+[](){#ttl}
 
 #### How long is content cached? {#howlongiscontentcached}
 
@@ -84,15 +94,21 @@ If a cached file is requested shortly before it will expire, the load
 balancer will retrieve a new copy of the file early to prevent the file
 from being uncached during a period of heavy traffic.
 
+[](){#purge}
+
 #### Can I choose how long files will be cached? {#canichoosehowlongfileswillbecached}
 
 No, not at this time. You cannot purge a file from the cache manually,
 but it will be automatically removed when its cache time expires.
 
+[](){#share}
+
 #### Do nodes share a cache? {#donodesshareacache}
 
 No. Each node has its own cache, separate from other load-balanced
 nodes.
+
+[](){#failover}
 
 #### Does cache carry over in a failover situation? {#doescachecarryoverinafailoversituation}
 
@@ -100,6 +116,8 @@ No. If a failover occurs the load balancer will retrieve a fresh copy of
 a file from the failover host.
 
 ### File types {#filetypes}
+
+[](){#filetypes}
 
 #### What file types are supported for content caching? {#whatfiletypesaresupportedforcontentcaching}
 
@@ -118,6 +136,8 @@ At this time the following file extensions are cached:
     .css
     .mp4
     .swf
+
+[](){#nocache}
 
 #### Can I exclude specific file types? {#caniexcludespecificfiletypes}
 

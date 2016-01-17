@@ -2,10 +2,10 @@
 node_id: 4030
 title: Install the Swiftly client for Cloud Files
 type: article
-created_date: '2014-04-21 19:50:00'
-created_by: cloud.images
-last_modified_date: '2016-01-12 15:4402'
-last_modified_by: stephanie.fillmon
+created_date: '2014-04-21'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -19,11 +19,9 @@ smaller segments and then creates the large object manifest for you.
 For more information about Swiftly, see the following sites:
 
 -   The python package index page:
-    [https://pypi.python.org/pypi/swiftly/2.02](https://pypi.python.org/pypi/swiftly/2.02 "swiftly package page at PyPI")
--   Swiftly documentation:
-    [http://gholt.github.io/swiftly/](http://gholt.github.io/swiftly/ "swiftly documentation")
--   Swiftly source code:
-    [https://github.com/gholt/swiftly](https://github.com/gholt/swiftly "swiftly source code")
+    <https://pypi.python.org/pypi/swiftly/2.02>
+-   Swiftly documentation: <http://gholt.github.io/swiftly/>
+-   Swiftly source code: <https://github.com/gholt/swiftly>
 
 Install Swiftly on Ubuntu
 -------------------------
@@ -60,7 +58,7 @@ Invoke the following instructions from a bash shell on your server.
     If you get an error saying the package can't be found, the EPEL
     repository needs to be enabled. For information on setting up the
     EPEL repository on your system, see [Install EPEL and additional
-    repositories on CentOS and Red Hat](/knowledge_center/node/1272).
+    repositories on CentOS and Red Hat](/howto/install-epel-and-additional-repositories-on-centos-and-red-hat).
     When EPEL is enabled, run the install command for pip again.
 
 2.  Install swiftly using pip.
@@ -130,7 +128,7 @@ To exit screen, just type **Control-d** (without prefacing it with
 **Control-a**).
 
 You can learn more about screen by visiting
-[http://www.gnu.org/software/screen/manual/screen.html](http://www.gnu.org/software/screen/manual/screen.html).
+<http://www.gnu.org/software/screen/manual/screen.html>.
 
 ### Reattach to a running screen session
 

@@ -2,10 +2,10 @@
 node_id: 4554
 title: Migrate a MySQL 5.1 database to MariaDB 10 on Cloud Sites
 type: article
-created_date: '2015-02-09 16:42:56'
-created_by: thomas.hester
-last_modified_date: '2015-09-15 00:1707'
-last_modified_by: kelly.holcomb
+created_date: '2015-02-09'
+created_by: Thomas Hester
+last_modified_date: '2015-09-15'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -21,14 +21,14 @@ MariaDB database. This article provides the steps for such a migration.
 **Notes:**
 
 -   MySQL 5.1 can still be provisioned, and no databases will be forced
-    to migrate.<br>
-      
--   Currently, customers cannot perform backups that call
-    **mysqldump**because the version on the servers is incompatible with
-    MariaDB 10. However, Support can perform these backups.
+    to migrate.
 
-**Availability of MariaDB**
----------------------------
+-   Currently, customers cannot perform backups that call **mysqldump**
+    because the version on the servers is incompatible with MariaDB 10.
+    However, Support can perform these backups.
+
+**<span>Availability of MariaDB</span>**
+----------------------------------------
 
 MariaDB is now available in the ORD data center and will be available in
 the DFW data center in the future. We do not currently have a timeline
@@ -40,38 +40,39 @@ for deployment in DFW.
 MariaDB has several features available on top of what is available for
 MySQL 5.6. See the following links for more information:
 
--   [https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/)
+-   [<span>https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/</span>](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/)
 
--   [https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/](https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/)
+-   [<span><span>https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/</span></span>](https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/)
 
--   [https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/)
+-   [<span><span><span><span>https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/</span></span></span></span>](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/)
 
 **Migrate your database from MySQL to MariaDB**
 -----------------------------------------------
 
 ### **Step 1: Create your MariaDB database in the Cloud Sites control panel**
 
-1.  Log in to the Cloud SItes Control Panel.<br>
-      
-2.  Navigate to the site for which you want to add the database.<br>
-      
-3.  Click the **Features**tab.<br>
-      
-4.  Under Databases, click **Add**.<br>
-      
-5.  Enter a unique name for the database, select **MariaDB**from the
-    **Database Type** menu, and then click **Continue**. <br>
-      
+1.  Log in to the Cloud SItes Control Panel.
+
+2.  Navigate to the site for which you want to add the database.
+
+3.  Click the **Features** tab.
+
+4.  Under<span> Databases, click **Add**.</span>
+
+5.  Enter a unique name for the database, select **MariaDB** from the
+    **Database Type** menu, and then click **Continue**.
+
 6.  Enter the username and password to use for the database, and then
-    click **Finish**.<br>
-     <br>
-     The **Features**tab is displayed again.<br>
-      
+    click **Finish**.
+
+    The **Features** tab is displayed again.
+
 7.  Click on the newly created database to display the hostname
     information, whcih you will need in Step 3.
 
     ![Database connection
-    information](/knowledge_center/sites/default/files/field/image/db_info.png)
+    information](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/db_info.png){width="600"
+    height="312"}
 
 ### **Step 2: Put your site into maintenance mode and export your current database**
 
@@ -83,8 +84,8 @@ content folder in an FTP client and create a new content folder with an
 database migration is completed, you reverse this action.
 
 Export your current MySQL database either by [using
-phpMyAdmin](/knowledge_center/node/661) or by [using a cron
-task](/knowledge_center/node/644).
+phpMyAdmin](/howto/backup-your-mysql-database-with-phpmyadmin) or by [using a cron
+task](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites).
 
 After it is exported, you will import the database backup to MariaDB by
 using the same method that you used to export the file.

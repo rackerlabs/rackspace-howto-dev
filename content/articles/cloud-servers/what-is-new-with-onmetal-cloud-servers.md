@@ -2,10 +2,10 @@
 node_id: 4106
 title: What is new with OnMetal Cloud Servers
 type: article
-created_date: '2014-06-19 19:36:34'
-created_by: kyle.laffoon
-last_modified_date: '2016-01-05 22:0242'
-last_modified_by: kyle.laffoon
+created_date: '2014-06-19'
+created_by: Kyle Laffoon
+last_modified_date: '2016-01-05'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -27,14 +27,22 @@ thinking about moving from colo to cloud, or vice versa:
 -   You pay by the minute, just like with VMs. But OnMetal servers are
     much simpler and more powerful than VMs.
 
+<!-- -->
+
 -   They are built on OpenStack software and Open Compute hardware. The
     API for OnMetal is the OpenStack Nova API. It&rsquo;s familiar to users of
-    any OpenStack public cloud. Users don&rsquo;t have to worry about vendor
-    lock-in.
+    any OpenStack public cloud. Users don&rsquo;t have to worry about
+    vendor lock-in.
+
+<!-- -->
 
 -   OnMetal servers are customized for specific workloads.
 
+<!-- -->
+
 -   There is no hypervisor, and no virtualization tax.
+
+<!-- -->
 
 -   There is no sharing of metal with any other user.
 
@@ -56,41 +64,16 @@ workload requirements like &ldquo;database transactions per second per dollar&rd
 or &ldquo;total RAM per dollar per hour.&rdquo; This led to the following
 configurations:
 
-Instance name
-
-CPU/RAM/disk/network
-
-Description
-
-<br>
- **Compute**<br>
- (High CPU)
-
-**10 Cores**, 32 GB RAM, no disk, 10 gigabit
-
-Latest Xeons optimized for CPU per dollar, perfect for handling web
-requests and doing background processing. Optimized for high CPU
-activity like network requests, application logic, web servers, and load
-balancers.
-
-<br>
- **High I/O**<br>
- (High RAM)
-
-**20 cores, 128 GB RAM, **3.2 TB of PCIe Flash**, 10 gigabit**
-
-Optimized for the best performance per dollar for the most common open
-source databases. Optimized for high I/O activity like NoSQL and SQL
-databases
-
-<br>
- **Memory**
-
-**12 cores, **512 GB RAM**, no disk, 10 gigabit**
-
-Optimized for the best RAM per dollar ratio or memory-heavy workloads.
-Especially useful for high RAM activity like in-memory SQL
-configurations, caching, and searching indexes.
+| Instance name  | CPU/RAM/disk/network                                           | Description                                                                                                                                                                                                              |
+|----------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|
+ **Compute**
+ (High CPU)      | **10 Cores**, 32 GB RAM, no disk, 10 gigabit                   | Latest Xeons optimized for CPU per dollar, perfect for handling web requests and doing background processing. Optimized for high CPU activity like network requests, application logic, web servers, and load balancers. |
+|
+ **High I/O**
+ (High RAM)      | **20 cores, 128 GB RAM, **3.2 TB of PCIe Flash**, 10 gigabit** | Optimized for the best performance per dollar for the most common open source databases. Optimized for high I/O activity like NoSQL and SQL databases                                                                    |
+|
+ **Memory**      | **12 cores, **512 GB RAM**, no disk, 10 gigabit**              | Optimized for the best RAM per dollar ratio or memory-heavy workloads. Especially useful for high RAM activity like in-memory SQL configurations, caching, and searching indexes.                                        |
 
 The fast 10-gigabit network is used for all instance types, because
 network performance is becoming increasingly important. All OnMetal
@@ -101,22 +84,22 @@ software RAID. OnMetal Compute and Memory flavors only use the 32 GB
 system disk and are considered &ldquo;diskless,&rdquo; with no data disks. Cloud
 Block Storage can be attached to any OnMetal server instance (see
 [Attach a Cloud Block Storage volume to an OnMetal
-server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
+server](/howto/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 ). However, configuring the available flash drives as data drives
 provides a much faster configuration. See [Configure flash drives in
 High I/O instances as Data
-drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives)
+drives](/howto/configure-flash-drives-in-high-io-instances-as-data-drives)
 for more information on this option.
 
-What Is Different with OnMetal Cloud Servers from other cloud servers?
-----------------------------------------------------------------------
+[]() What Is Different with OnMetal Cloud Servers from other cloud servers?
+---------------------------------------------------------------------------
 
 API-driven instant provisioning of OnMetal Cloud Servers brings the
 agility and elasticity of the cloud without the problems of multi-tenant
 environments. All OnMetal flavors include dual 10-gigabit Ethernet (10
 GigE) 10G NICs in a high-availability bonded configuration, and use VLAN
 tagging to access ServiceNet (for traffic within a Rackspace data
-center) and PublicNet (the Internet). 
+center) and PublicNet (the Internet).
 
 OnMetal servers are not offered as single-tenant VMs for the following
 reasons:
@@ -142,10 +125,10 @@ be created using SSH key pairs. You should neither use nor modify the
 administrator password generated by the server build operation. For
 information on generating SSH keys, see [Manage SSH Key Pairs for Cloud
 Servers with
-python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+python-novaclient](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-Limitations
------------
+[]() Limitations
+----------------
 
 After an OnMetal server is built, there is a slight delay in network
 availability. Even after the status reads ACTIVE, a few additional

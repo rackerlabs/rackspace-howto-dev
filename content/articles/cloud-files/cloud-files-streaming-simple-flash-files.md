@@ -2,10 +2,10 @@
 node_id: 77
 title: Cloud Files - Streaming simple Flash files
 type: article
-created_date: '2011-03-08 19:30:04'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 19:4044'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-08'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Kelly Holcomb
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -14,12 +14,12 @@ This tutorial describes how to stream media files from Cloud Files to a website.
 
 **Note:** We've had some reports of problems getting the current version of FlowPlayer (3.2.14) working with Cloud Files and are investigating. We'll update this article when we have more information.
 
--   [Streaming](#streaming)                                              
--   [Prerequisites](#prereqs)                                      
--   [FlowPlayer](#flowplayer)                                          
--   [The cross-domain XML file](#cross-domain-xml)            
--   [The XHTML](#xhtml)                                            
--   [Test it](#test-it)      
+-   [Streaming](#streaming)
+-   [Prerequisites](#prereqs)
+-   [FlowPlayer](#flowplayer)
+-   [The cross-domain XML file](#cross-domain-xml)
+-   [The XHTML](#xhtml)
+-   [Test it](#test-it)
 
 ## <a name="streaming"></a>Streaming
 
@@ -42,10 +42,10 @@ More information is available at the following links:
 
 The following formats are supported by Akamai streaming.
 
-Container  | Video Codec  | Audio Codec  | Comments 
+Container  | Video Codec  | Audio Codec  | Comments
 --- | --- | --- | ---
 FLV  | H.263 </br> H.264 </br> VP6 | MP4 </br> AAC </br> PCM </br> Nellymoser | Video-only works as well. For Nellymoser, only the 8khz and 16khz mono sound formats are supported.
-F4V  | H.264  | AAC |  None 
+F4V  | H.264  | AAC |  None
 MP4 | H.264  | AAC </br> MP3 | Can be audio-only (AAC) or video-only.
 F4F/F4M  | H.264 </br> VP6  | AAC </br> MP3 |  None
 
@@ -71,7 +71,7 @@ F4F/F4M  | H.264 </br> VP6  | AAC </br> MP3 |  None
 The cross-domain XML file enables you to specify what domains are allowed to get data from the CDN, so that people cannot hotlink your content unless you let them. Following is an example of a simple cross-domain XML file that allows all domains to call these Flash files:
 
     <?xml version="1.0"?>
-     <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd"> 
+     <!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
       <cross-domain-policy>
        <site-control permitted-cross-domain-policies="master-only"/>
        <allow-access-from domain="*"/>
@@ -82,7 +82,7 @@ For more information about cross-domain XML files, see [Adobe's website](http://
 
 Save this file in your text editor as **crossdomain.xml** and upload it to the same Cloud Files container as the previous files.
 
-## <a name="xhtml"></a>The XHTML 
+## <a name="xhtml"></a>The XHTML
 
 Now you can create a simple XHTML file that calls this Flash player and embeds it onto the page here. Following is the code:
 

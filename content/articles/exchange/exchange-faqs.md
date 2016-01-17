@@ -2,15 +2,15 @@
 node_id: 4994
 title: 'Exchange: FAQs'
 type: article
-created_date: '2015-12-03 16:30:40'
+created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 21:4629'
-last_modified_by: kyle.laffoon
-product: Exchange
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
+product: Microsoft Exchange
 body_format: full_html
 ---
 
-* * * * *
+------------------------------------------------------------------------
 
 Getting Started
 ---------------
@@ -27,51 +27,54 @@ storage is 50GB's.
 
 ### What is the maximum size for an attachment?
 
-The maximum size for an attachment in the Exchange environment is 50mb.
+<span>The maximum size for an attachment in the Exchange environment is
+50mb.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### What is Outlook Web Access (OWA)?
+### <span>What is Outlook Web Access (OWA)?</span>
 
-Outlook Web Access or OWA is a way to access your email online from any
-computer. This can be useful if you're not at home or in the office
-where email is usually checked through an email client. To access your
-email online head
-to [https://apps.rackspace.com](https://apps.rackspace.com/index.php).
+<span>Outlook Web Access or OWA is a way to access your email online
+from any computer. This can be useful if you're not at home or in the
+office where email is usually checked through an email client. To access
+your email online head
+to </span>[https://apps.rackspace.com](https://apps.rackspace.com/index.php).
 
 ^[back\\ to\\ top](#top)^
 
 ### What are public folders?
 
-Public folders are a feature of Microsoft Exchange that you can use to
-share information with others within your organization. Public Folder
-administrators can set privileges for users to access a folder, or the
-folder can be made available to everyone within your organization.
-Public folders contain contacts, calendar items, messages, journal
-entries, or notes. For more information, see [Microsoft Exchange public
-folders](http://www.rackspace.com/knowledge_center/article/microsoft-exchange-public-folders).
+<span>Public folders are a feature of Microsoft Exchange that you can
+use to share information with others within your organization. Public
+Folder administrators can set privileges for users to access a folder,
+or the folder can be made available to everyone within your
+organization. Public folders contain contacts, calendar items, messages,
+journal entries, or notes. For more information, see [Microsoft Exchange
+public
+folders](http://www.rackspace.com/knowledge_center/article/microsoft-exchange-public-folders).</span>
 
 ^[back\\ to\\ top](#top)^
 
-### Where do I add an Activesync/Blackberry BES liscense? 
+### Where do I add an Activesync/Blackberry BES liscense?
 
-Adding a Blackberry or Activesync license will be done by your
+<span>Adding a Blackberry or Activesync license will be done by your
 administrator through the Cloud Office control panel. To learn more
-about adding the license please read the following article - [Adding An
-Activesync/BES
-license](http://www.rackspace.com/knowledge_center/article/adding-an-activesyncbes-license).
+about adding the license please read the following article
+- </span>[Adding An Activesync/BES
+license](/howto/add-an-activesync-or-bes-license).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Account Services
 ----------------
 
 ### How can I determine the Cloud Office system status?
 
-For Cloud Office system status verification, use the following
-link: [Cloud Office system status](http://status.apps.rackspace.com/).
+<span>For Cloud Office system status verification, use the following
+link: </span>[Cloud Office system
+status](http://status.apps.rackspace.com/)<span>.</span>
 
 ^[back\\ to\\ top](#top)^
 

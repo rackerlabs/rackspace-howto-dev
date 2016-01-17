@@ -2,17 +2,17 @@
 node_id: 105
 title: Simple load balancing with Apache
 type: article
-created_date: '2011-03-09 19:22:30'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 20:5947'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
 
 **Note:** This article was written before the introduction of [Cloud
 Load
-Balancers](http://www.rackspace.com/knowledge_center/getting-started/cloud-load-balancers),
+Balancers](/howto/cloud-load-balancers),
 which is our recommended solution for load balancing. Because customers
 might still want to try this procedure, it is available for legacy
 support purposes.
@@ -37,11 +37,15 @@ drone servers behind a smart host each working a piece of workload.
     -   [Load balancer](#Load_Balancer)
 -   [Summary](#Summary)
 
+[](){#Prerequisites}
+
 Prerequisites
 -------------
 
 You need to have the following hardware and software in place before you
 begin.
+
+[](){#Hardware}
 
 ### Hardware
 
@@ -50,6 +54,8 @@ this as a model to scale horizontally.
 
 -   One cloud server to be used as the load balancer
 -   Two cloud servers to be used as dumb webheads
+
+[](){#Software}
 
 ### Software
 
@@ -71,10 +77,14 @@ Perform the following steps.
 
         # yum groupinstall "Text-based Internet"
 
+[](){#Server_Configuration}
+
 Server configuration
 --------------------
 
 Configure the servers as two webheads and one load balancer.
+
+[](){#Web_Servers}
 
 ### Web servers
 
@@ -85,6 +95,8 @@ distinguishing characteristics you want. For example, you could put "It
 works you looking at WebHead \#" where \# is the numerical identifier of
 that particular webhead.
 
+[](){#Load_Balancer}
+
 ### Load balancer
 
 This sections walks through each step and then brings it together at the
@@ -92,11 +104,15 @@ end, so you know what the end product should be. Place all of the
 configurations that you define at the bottom of the
 **/etc/httpd/conf/httpd.conf** file in a standard virtual host.
 
+[](){#Unwanted_Requests}
+
 #### Unwanted requests
 
 Turn off ProxyRequests to avoid any unwanted traffic.
 
     ProxyRequests off
+
+[](){#The_Balance}
 
 #### The balance
 
@@ -121,29 +137,32 @@ network, where bandwidth is free.
     <Proxy balancer://mycluster>
         # WebHead1
         BalancerMember http://10.x.x.x:80
-        
+
         # WebHead2
         BalancerMember http://10.x.x.x:80
-        
+
         ProxySet lbmethod=byrequests
 
     </Proxy>
+
+[](){#Balance_Manager}
 
 #### Balance-manager (optional)
 
 The `balance-manager` is a tool packaged with the `mod_proxy_balancer`
 tool, and it enables you to make configurations from a GUI tool through
 the web browser. You can view it at
-[http://domain.com/balancer-manager](http://domain.com/balancer-manager "http://domain.com/balancer-manager").
-Consider that any changes made by this tool end after you restart
-Apache.
+<http://domain.com/balancer-manager>. Consider that any changes made by
+this tool end after you restart Apache.
 
     <Location /balancer-manager>
 
        SetHandler balancer-manager
     </Location>
 
- 
+
+
+[](){#ProxyPass}
 
 #### ProxyPass
 
@@ -153,6 +172,8 @@ but you do want to proxy everything else.
 
        ProxyPass /balancer-manager !
        ProxyPass / balancer://mycluster/
+
+[](){#Summary}
 
 Summary
 -------
@@ -179,7 +200,7 @@ using 2.2, replace `Require all granted` with
 
     <VirtualHost *:80>
             ProxyRequests off
-            
+
             ServerName domain.com
 
             <Proxy balancer://mycluster>
@@ -189,8 +210,8 @@ using 2.2, replace `Require all granted` with
                     BalancerMember http://10.176.42.148:80
 
                     # Security "technically we aren't blocking
-                    # anyone but this is the place to make 
-                    # those changes. 
+                    # anyone but this is the place to make
+                    # those changes.
                     Require all granted
                     # In this example all requests are allowed.
 

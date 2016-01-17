@@ -2,10 +2,10 @@
 node_id: 4558
 title: Best practices for sending emails to many recipients
 type: article
-created_date: '2015-02-11 16:04:41'
-created_by: beau.bailey
-last_modified_date: '2015-12-22 19:3127'
-last_modified_by: stephanie.fillmon
+created_date: '2015-02-11'
+created_by: Beau Bailey
+last_modified_date: '2015-12-22'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -61,10 +61,10 @@ Reputation
 ----------
 
 -   Maintain a safe and reputable business website. It should include
-    easy access to any privacy policies and contact information for your
-    business. Spam filter providers often audit high-volume senders by
-    visiting your website, which can be a factor in determining whether
-    you are a spammer.
+    easy access to any privacy policies and contact information for
+    your business. Spam filter providers often audit high-volume senders
+    by visiting your website, which can be a factor in determining
+    whether you are a spammer.
 -   Ensure that other companies that you allow to include references to
     your business are reputable. If they send out spam and your company
     information is referenced in those emails, your domain could be
@@ -74,7 +74,7 @@ Message content
 ---------------
 
 We recommend that you follow our [person-to-person best
-practices](https://admin.rackspace.com/knowledge_center/article/best-practices-sending-person-to-person-email) 
+practices](/howto/best-practices-for-sending-person-to-person-email)
 when creating the content for your message.
 
 Rackspace strives to maintain the best possible reputation with other
@@ -83,5 +83,9 @@ teams work diligently to protect our users from abusive email. An
 important part of helping us maintain our reputation is helping you send
 good email.
 
-* * * * *
+<div>
+
+------------------------------------------------------------------------
+
+</div>
 

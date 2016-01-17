@@ -2,10 +2,10 @@
 node_id: 4131
 title: Windows Server security best practices
 type: article
-created_date: '2014-07-15 21:41:54'
+created_date: '2014-07-15'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06 14:5054'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -22,7 +22,7 @@ blocked in the Windows firewall. If you insist on changing these values,
 please speak with an administrator at Rackspace to do so in a way that
 does not impact our ability to provide you with Fanatical Support.
 
-* * * * *
+------------------------------------------------------------------------
 
 This article provides some very general security tips to remember when
 you are setting up a Microsoft Windows server that will be interacting
@@ -42,8 +42,8 @@ Servers running Windows.
 -   [Code](#code)
 -   [Conclusion](#conclusion)
 
-Use local firewall rules
-------------------------
+[]()Use local firewall rules
+----------------------------
 
 For those servers that will be interacting with the public Internet with
 no firewall device (by default, the Rackspace Public Cloud Servers do
@@ -68,42 +68,70 @@ need access to the server have it, and those who don't will be blocked
 from those open ports. The most typical ports that need to be open in
 the Windows firewall for web hosting on a cloud server are as follows:
 
-+--------------------------------------+--------------------------------------+
-| **Port**                             | **Service**                          |
-+--------------------------------------+--------------------------------------+
-| 80                                   | HTTP - IIS sites or web applications |
-+--------------------------------------+--------------------------------------+
-| 443 HTTPS                            | Secure IIS sites or web applications |
-|                                      | with SSL                             |
-+--------------------------------------+--------------------------------------+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Port</strong></p></td>
+<td align="left"><p><strong>Service</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>80</p></td>
+<td align="left"><p>HTTP - IIS sites or web applications</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>443 HTTPS</p></td>
+<td align="left"><p>Secure IIS sites or web applications with SSL</p></td>
+</tr>
+</tbody>
+</table>
 
 We recommend locking down the following ports via IP address
 whitelisting on the public interface to limit brute-force attacks or
 exploitation attempts against commonly named accounts or services on the
 server:
 
-+--------------------------------------+--------------------------------------+
-| **Port**                             | **Description**                      |
-+--------------------------------------+--------------------------------------+
-| 3389                                 | Remote Desktop connectivity, for     |
-|                                      | logging in remotely to the server.   |
-+--------------------------------------+--------------------------------------+
-| 21 FTP                               | For the secure transfer of data      |
-|                                      | between local geographic locations   |
-|                                      | and the cloud server                 |
-+--------------------------------------+--------------------------------------+
-| 990 FTPS (on Windows)                | For the secure transfer of data      |
-|                                      | transfer between local geographic    |
-|                                      | locations and the cloud server       |
-|                                      | incorporating an SSL certificate.    |
-+--------------------------------------+--------------------------------------+
-| 5000-5050 FTP                        | Passive ports for FTP communication  |
-+--------------------------------------+--------------------------------------+
-| 1433 SQL                             | Default port used for SQL            |
-|                                      | communication                        |
-+--------------------------------------+--------------------------------------+
-| 53 DNS                               | Default port used for DNS requests   |
-+--------------------------------------+--------------------------------------+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Port</strong></p></td>
+<td align="left"><p><strong>Description</strong></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>3389</p></td>
+<td align="left"><p>Remote Desktop connectivity, for logging in remotely to the server.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>21 FTP</p></td>
+<td align="left"><p>For the secure transfer of data between local geographic locations and the cloud server</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>990 FTPS (on Windows)</p></td>
+<td align="left"><p>For the secure transfer of data transfer between local geographic locations and the cloud server incorporating an SSL certificate.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>5000-5050 FTP</p></td>
+<td align="left"><p>Passive ports for FTP communication</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>1433 SQL</p></td>
+<td align="left"><p>Default port used for SQL communication</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>53 DNS</p></td>
+<td align="left"><p>Default port used for DNS requests</p></td>
+</tr>
+</tbody>
+</table>
+
+[]()
 
 Be careful what you share
 -------------------------
@@ -126,8 +154,8 @@ Additionally, be careful of the software that you allow your users to
 download and install on your server. Every software package installed
 increases the exposure of your server to attack.
 
-Password policy
----------------
+[]()Password policy
+-------------------
 
 Whether you have provisioned a cloud server with or without a hardware
 firewall, as previously stated, you are only as secure as your weakest
@@ -157,8 +185,8 @@ that they are logging off the server to free up any used resources
 instead of simply closing their RDC windows, which leaves the session
 open on the server.
 
-Active Directory
-----------------
+[]()Active Directory
+--------------------
 
 We typically discourage running Active Directory on a cloud server
 because the only protection from intrusion is the Windows firewall and
@@ -174,18 +202,15 @@ servers is automated during our build process. Physical firewalls are
 not provisioned as quickly as cloud servers and must be requested
 through our Hybrid teams. More information on physical firewalls and
 RackConnect can be found at
-[http://www.rackspace.com/cloud/hybrid/rackconnect/](http://www.rackspace.com/cloud/hybrid/rackconnect/).
+<http://www.rackspace.com/cloud/hybrid/rackconnect/>.
 
 If you do install Active Directory on a cloud server, we recommend that
 you run two Domain Controllers in case one fails (imaging is currently
 unavailable for Domain Controllers). We also recommend locking down DNS
-to prevent DNS amplification attacks. You can find more about this
-subject
-at[http://www.rackspace.com/knowledge\_center/article/preventing-dns-amplification-attacks-via-the-windows-firewall-in-windows-2008-r2-or-windows](http://www.rackspace.com/knowledge_center/article/preventing-dns-amplification-attacks-via-the-windows-firewall-in-windows-2008-r2-or-windows)
-.
+to prevent DNS amplification attacks.
 
-SQL Server instances
---------------------
+[]()SQL Server instances
+------------------------
 
 For those servers running Microsoft SQL Server, it is important to
 remember to lock down the SQL port 1433 to listen over the internal
@@ -206,8 +231,8 @@ the data from the live database files into flat files that can be backed
 up off the server as well as a cleanup task so the backups do not fill
 your hard drive.
 
-Windows updates
----------------
+[]()Windows updates
+-------------------
 
 Don't disable Windows updates, and be mindful of the state of your
 server -- ensure that your Windows OS is patched. Patch Tuesday, which
@@ -217,8 +242,8 @@ must decide how best to implement a patching strategy that will keep
 their server up to date. By default, Rackspace Cloud Servers are set up
 to check for updates between 2 a.m. and 4 a.m. every day.
 
-Server backups
---------------
+[]()Server backups
+------------------
 
 You should have some type of disaster recovery plan in place. We offer
 the option for cloud server images to be created nightly and written
@@ -245,8 +270,8 @@ instance from a Cloud Image is always a good idea to ensure that the
 image is good, and restoring a file from Cloud Backups helps to verify
 that the data being backed up can be restored.
 
-Code
-----
+[]()Code
+--------
 
 The last attack surface exposed to the Internet is the code. You and
 your developer must ensure that the code is enforcing proper
@@ -257,12 +282,12 @@ have the best validation possible to prevent hackers from exploiting the
 web application and gaining control of the server. A good starting point
 for improving the ASP .Net security can be found at the following sites:
 
--   [http://www.asp.net/web-forms/tutorials/security](http://www.asp.net/web-forms/tutorials/security)
--   [http://www.iis.net/configreference/system.webserver/security/requestfiltering](http://www.iis.net/configreference/system.webserver/security/requestfiltering)
--   [http://blogs.iis.net/wadeh/archive/2008/12/18/filtering-for-sql-injection-on-iis-7-and-later.aspx](http://blogs.iis.net/wadeh/archive/2008/12/18/filtering-for-sql-injection-on-iis-7-and-later.aspx)
+-   <http://www.asp.net/web-forms/tutorials/security>
+-   <http://www.iis.net/configreference/system.webserver/security/requestfiltering>
+-   <http://blogs.iis.net/wadeh/archive/2008/12/18/filtering-for-sql-injection-on-iis-7-and-later.aspx>
 
-Conclusion
-----------
+[]()Conclusion
+--------------
 
 Depending on the use case, each customer might have other more specific
 needs to address when leveraging our Cloud Servers product to meet their

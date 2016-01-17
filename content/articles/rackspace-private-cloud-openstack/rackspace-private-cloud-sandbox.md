@@ -2,13 +2,15 @@
 node_id: 3807
 title: Rackspace Private Cloud Sandbox
 type: article
-created_date: '2013-12-09 22:41:07'
+created_date: '2013-12-09'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-07 14:4148'
-last_modified_by: rose.contreras
-product: Rackspace Private Cloud - OpenStack
+last_modified_date: '2016-01-07'
+last_modified_by: Rose Contreras
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
+
+<div class="chapter" title="Chapter 1. Overview">
 
 Rackspace Private Cloud Sandbox is a fast, free, and easy way to install
 a Rackspace Private Cloud powered by OpenStack on a single physical
@@ -17,28 +19,41 @@ OpenStack-powered private cloud for testing or demonstration purposes.
 
 Rackspace Private Cloud Sandbox v1.0 runs Rackspace Private Cloud v4.2.1
 powered by the [Havana release of
-OpenStack](http://www.openstack.org/software/havana/).
+OpenStack](http://www.openstack.org/software/havana/){.link}.
+
+</div>
+
+<div class="toc">
 
 **Table of Contents**
 
-[Requirements](#Requirements)
+<span class="section">[Requirements](#Requirements)</span>
+<span class="section">[Setup](#Setup)</span>
+<span class="section">[VMWare](#Setup_VMWare-Fusion-Workstation)</span>
+<span class="section">[VirtualBox](#Setup_VirtualBox)</span>
+<span class="section">[Using the private cloud](#About)</span>
+<span class="section">[Logging into the cloud](#about-login)</span>
+<span class="section">[Cloud features](#about-stack-features)</span>
+<span class="section">[Cloud performance](#about-performance)</span>
 
-[Setup](#Setup)
+</div>
 
-[VMWare](#Setup_VMWare-Fusion-Workstation)
+<div class="chapter" title="Chapter 2. Rackspace Private Cloud Sandbox">
 
-[VirtualBox](#Setup_VirtualBox)
+<div class="titlepage">
 
-[Using the private cloud](#About)
+<div>
 
-[Logging into the cloud](#about-login)
+<div>
 
-[Cloud features](#about-stack-features)
+[]()Rackspace Private Cloud Sandbox {#rackspace-private-cloud-sandbox .title}
+-----------------------------------
 
-[Cloud performance](#about-performance)
+</div>
 
-Rackspace Private Cloud Sandbox {.title}
--------------------------------
+</div>
+
+</div>
 
 The Rackspace Private Cloud Sandbox system creates a Rackspace Private
 Cloud, including all of the APIs and services available in OpenStack
@@ -60,12 +75,26 @@ plugin, the Horizon cookbook template file for
 
 More information for this project can be seen at the [RCBOPS Virtual
 Appliance Builder Github
-page](https://github.com/cloudnull/rcbops_virt_builder). Specific
+page](https://github.com/cloudnull/rcbops_virt_builder){.link}. Specific
 changes are listed in the [setup notes on that
-page](https://github.com/cloudnull/rcbops_virt_builder/blob/master/setup_notes.rst).
+page](https://github.com/cloudnull/rcbops_virt_builder/blob/master/setup_notes.rst){.link}.
 
-Requirements {.title}
-------------
+<div class="section" title="Requirements">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+[]()Requirements {#requirements .title}
+----------------
+
+</div>
+
+</div>
+
+</div>
 
 To set up the Rackspace Private Cloud Sandbox, you will require a
 physical machine with these specifications:
@@ -78,74 +107,133 @@ physical machine with these specifications:
     size to grow, and plan accordingly.
 -   Three local-only network devices for the virtual machine. These can
     be run from a single physical access point, which should be set up
-    for you automatically during the installation of the desktop
-    hypervisor.
+    for you automatically during the installation of the
+    desktop hypervisor.
 -   An active internet connection. If you do not have an active internet
-    connection, you will receive an error message when you launch the
-    OVA. If this happens, ensure that your internet connection is active
-    and then reboot the OVA.
+    connection, you will receive an error message when you launch
+    the OVA. If this happens, ensure that your internet connection is
+    active and then reboot the OVA.
 
-Setup {.title}
------
+</div>
+
+<div class="section" title="Setup">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+[]()Setup {#setup .title}
+---------
+
+</div>
+
+</div>
+
+</div>
 
 The Rackspace Private Cloud Sandbox system has two different OVAs. One
 is designed for VMWare Player, Fusion, and Workstation, and the other is
 designed for VirtualBox.
 
-Note
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>There is a known issue with the Chrome browser on Apple Mac computers. If you have the <span class="guibutton">Hide Extensions</span> option selected, Chrome will change the file extension from <code class="filename">.ova</code> to <code class="filename">.ovf</code>, which will cause a failure when VMWare or VirtualBox tries to import the file. To work around this issue, de-select <span class="guibutton">Hide Extensions</span> in the file download dialog box, or manually change the extension of the downloaded file to <code class="filename">.ova</code>.</p></td>
+</tr>
+</tbody>
+</table>
 
-There is a known issue with the Chrome browser on Apple Mac computers.
-If you have the Hide Extensions option selected, Chrome will change the
-file extension from `.ova`{.filename} to `.ovf`{.filename}, which will
-cause a failure when VMWare or VirtualBox tries to import the file. To
-work around this issue, de-select Hide Extensions in the file download
-dialog box, or manually change the extension of the downloaded file to
-`.ova`{.filename}.
+<div class="titlepage">
 
-### VMWare {.title}
+<div>
+
+<div>
+
+### []()VMWare {#vmware .title}
+
+</div>
+
+</div>
+
+</div>
 
 This section explains how to import the appliance and start the VM on
 VMWare Player 6, Fusion 6, and Workstation 7 and later.
 
 It is strongly recommended that you use this system on VMWare. You can
 download VMWare Player 6 for Windows or Linux from the [VMWare
-site](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0).
+site](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0){.link}.
 
-**Procedure 2.1. To set up Rackspace Private Cloud Sandbox on VMWare**
+<div class="procedure"
+title="Procedure 2.1. To set up Rackspace Private Cloud Sandbox on VMWare">
 
+[]()**Procedure 2.1. To set up Rackspace Private Cloud Sandbox on
+VMWare**
 1.  [Download the OVA
-    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VMWARE.ova)
+    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VMWARE.ova){.link}
     and save it to your local device.
 
-2.  In VMWare, import the OVA file. Navigate to
-    **File**-**Import**-**Choose File** .
+2.  In VMWare, import the OVA file. Navigate to <span
+    class="keycap">**File**</span>-<span
+    class="keycap">**Import**</span>-<span class="keycap">**Choose
+    File**</span> .
 
-3.  Select the OVA file, and click Continue to import the virtual
-    machine.
+3.  Select the OVA file, and click <span
+    class="guibutton">Continue</span> to import the virtual machine.
 
-4.  Click Start the VM to start the virtual machine.
+4.  Click <span class="guibutton">Start the VM</span> to start the
+    virtual machine.
 
 5.  When the VM is active, you will be able to use the OpenStack image
     without the need for bridged networking.
+
+</div>
 
 During the import process, you may experience the following messages:
 
 -   During the OVA import, you may be asked if you would like to upgrade
     the hardware compatibility profile. This message appears when you
     are using a new version of VMWare than the version on which the OVA
-    was built. You can upgrade the profile without any negative
-    consequences.
+    was built. You can upgrade the profile without any
+    negative consequences.
 -   You may receive an error message indicating that the OVA cannot be
     imported due to OVA specifications. If you receive this message,
-    click Retry, This will relax the OVA import requirements and enable
-    the OVA to be imported without issues.
+    click <span class="guibutton">Retry</span>, This will relax the OVA
+    import requirements and enable the OVA to be imported
+    without issues.
 
-### VirtualBox {.title}
+</div>
+
+<div class="section" title="VirtualBox">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+### []()VirtualBox {#virtualbox .title}
+
+</div>
+
+</div>
+
+</div>
 
 This section explains how to set up Rackspace Private Cloud Sandbox
 using VirtualBox 4.3.x. Rackspace strongly recommends that you work on a
 clean installation of VirtualBox. You can download VirtualBox from the
-[VirtualBox site](https://www.virtualbox.org/).
+[VirtualBox site](https://www.virtualbox.org/){.link}.
 
 VirtualBox provides many network options. While any network setup that
 functions in your environment will work, the recommended setup is:
@@ -159,70 +247,88 @@ to configure is the host-only network. The internal network is
 configured from within the VM, and the bridged network is configured by
 the public network to which you are attached.
 
-Note
+<div class="note" title="Note">
 
-When the VM is imported, Adapter 1 is set up as a bridged network by
-default. The bridged device that is set up is an ethernet device, and
-needs to be the device that you use to connect to the internet. For
-example, a laptop may have a setting of en1 "wi-fi", whereas a desktop
-device may use en0 "Ethernet".
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>When the VM is imported, Adapter 1 is set up as a bridged network by default. The bridged device that is set up is an ethernet device, and needs to be the device that you use to connect to the internet. For example, a laptop may have a setting of en1 &quot;wi-fi&quot;, whereas a desktop device may use en0 &quot;Ethernet&quot;.</p>
+<p>If you are not able to use a bridged network for any reason, you can change the network type for Adapter 1 to a NAT network. This will make instances inaccessible, but will still enable you to use all of the OpenStack APIs, including the OpenStack Dashboard.</p></td>
+</tr>
+</tbody>
+</table>
 
-If you are not able to use a bridged network for any reason, you can
-change the network type for Adapter 1 to a NAT network. This will make
-instances inaccessible, but will still enable you to use all of the
-OpenStack APIs, including the OpenStack Dashboard.
+</div>
 
 The settings in the following procedure are a guide only, and might need
 to be adjusted to suit your environment.
 
-**Procedure 2.2. To set up Rackspace Private Cloud Sandbox on VirtualBox
-4.3.x**
+<div class="procedure"
+title="Procedure 2.2. To set up Rackspace Private Cloud Sandbox on VirtualBox 4.3.x">
 
+[]()**Procedure 2.2. To set up Rackspace Private Cloud Sandbox on
+VirtualBox 4.3.x**
 1.  [Download the OVA
-    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VBOX.ova)
+    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VBOX.ova){.link}
     and save it to your local device.
 
-2.  In VirtualBox, navigate to **Preferences**-**Network**-**Host-Only
-    Networks**.
+2.  In VirtualBox, navigate to <span
+    class="keycap">**Preferences**</span>-<span
+    class="keycap">**Network**</span>-<span class="keycap">**Host-Only
+    Networks**</span>.
 
-3.  Click on the icon to add a new host-only network and assign it a
-    name.
+3.  Click on the icon to add a new host-only network and assign it
+    a name.
 
 4.  Configure the host network settings:
 
-    ~~~~ {.programlisting}
+    ``` {.programlisting}
     IPv4 Address: 192.168.56.1
     IPv4 Network Mask: 255.255.255.0
     IPv6 Address: <Leave this field blank>
     IPv6 Network Mask Length: 0
-    ~~~~
+    ```
 
 5.  Configure the DHCP Server settings:
 
-    ~~~~ {.programlisting}
+    ``` {.programlisting}
     Server Address: 192.168.56.100
     Server Mask: 255.255.255.0
     Lower Address Bond: 192.168.56.200
     Upper Address Bond: 192.168.56.254
-    ~~~~
+    ```
 
     After configuring these settings, click OK to create the network.
 
-6.  Navigate to **File** **Import** **Choose File** .
+6.  Navigate to <span class="keycap">**File**</span> <span
+    class="keycap">**Import**</span> <span class="keycap">**Choose
+    File**</span> .
 
-    Select the OVA file, and click Import to import the virtual machine.
+    Select the OVA file, and click <span class="guibutton">Import</span>
+    to import the virtual machine.
 
 7.  After the import process is complete, enable acceleration. Select
-    the new virtual machine and navigate to
-    **Settings**+**System**+**Acceleration** Select the following check
+    the new virtual machine and navigate to <span
+    class="keycap">**Settings**</span>+<span
+    class="keycap">**System**</span>+<span
+    class="keycap">**Acceleration**</span> Select the following check
     boxes:
 
-    -   Enable VT-x/AMD-V
-    -   Enable Nested Paging
+    -   <span class="guilabel">Enable VT-x/AMD-V</span>
+    -   <span class="guilabel">Enable Nested Paging</span>
 
 8.  Configure the adapter settings as follows:
 
-    -   **Adapter 1**: Attach to the internet connection.
+    -   <span class="bold">**Adapter 1**</span>: Attach to the
+        internet connection.
 
         This defaults to the bridged adapter on the ethernet port, but
         can be set to NAT if you cannot use a bridged network due to
@@ -231,30 +337,37 @@ to be adjusted to suit your environment.
         still be able to use Horizon and connect to the built instances
         via the Horizon console.
 
-    -   **Adapter 2**: Attach to Internal Network (Internal Only).
-        Accept the default name.
-    -   **Adapter 3**: Attach to Host Only Adapter. The network name
-        should match the one created in Step 3.
-    -   **Adapter 4**: Attach to Internal Network (Internal Only).
+    -   <span class="bold">**Adapter 2**</span>: Attach to Internal
+        Network (Internal Only). Accept the default name.
+    -   <span class="bold">**Adapter 3**</span>: Attach to Host
+        Only Adapter. The network name should match the one created in
+        Step 3.
+    -   <span class="bold">**Adapter 4**</span>: Attach to Internal
+        Network (Internal Only).
 
-9.  Click OK to accept the settings and then click Start the VM to start
-    the virtual machine. This could take a long time; however it will
-    get faster once the image has been saved in the cache.
+9.  Click <span class="guibutton">OK</span> to accept the settings and
+    then click <span class="guibutton">Start the VM</span> to start the
+    virtual machine. This could take a long time; however it will get
+    faster once the image has been saved in the cache.
 
-**Procedure 2.3. To troubleshoot the VM**
+</div>
 
+<div class="procedure" title="Procedure 2.3. To troubleshoot the VM">
+
+[]()**Procedure 2.3. To troubleshoot the VM**
 If the VM fails on first boot:
 
 1.  Log in to the virtual machine from a command prompt, and run these
     commands to prime the system for the first boot, and to display a
     list of devices and their corresponding hardware MAC addresses:
 
-    ~~~~ {.screen}
+    ``` {.screen}
     $ touch /opt/first.boot
     $ /sbin/ip addr show | grep -E ^eth
-    ~~~~
+    ```
 
-2.  Return to **Settings** **Network** in the virtual machine and adjust
+2.  Return to <span class="keycap">**Settings**</span> <span
+    class="keycap">**Network**</span> in the virtual machine and adjust
     the MAC addresses until they match those returned by the command.
 
 3.  Shut down the instance and restart it. If the set up has been
@@ -263,14 +376,48 @@ If the VM fails on first boot:
     time; however it will get faster once the image has been saved in
     the cache.
 
-Using the private cloud {.title}
------------------------
+</div>
+
+</div>
+
+</div>
+
+<div class="section" title="Using the private cloud">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+[]()Using the private cloud {#using-the-private-cloud .title}
+---------------------------
+
+</div>
+
+</div>
+
+</div>
 
 For general information about using the private cloud, refer to
 the [Rackspace Private Cloud
-API](http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrade/content/rpc-common-front.html).
+API](http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrade/content/rpc-common-front.html){.link}.
 
-### Logging into the cloud {.title}
+<div class="section" title="Logging into the cloud">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+### []()Logging into the cloud {#logging-into-the-cloud .title}
+
+</div>
+
+</div>
+
+</div>
 
 To access the system, you can use the command line interface or the
 graphical Horizon dashboard. Both interfaces use the following default
@@ -287,7 +434,23 @@ access to the environment variables needed to access the OpenStack APIs
 using the command line interface, look in the root user's
 `.openrc`{.filename} file.
 
-### Cloud features {.title}
+</div>
+
+<div class="section" title="Cloud features">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+### []()Cloud features {#cloud-features .title}
+
+</div>
+
+</div>
+
+</div>
 
 There is only one flavor available to the virtual machine in this
 system, which is the `512MB Standard Instance`{.filename} flavor. This
@@ -304,7 +467,23 @@ default Cinder volume type is also created, called
 An SSH key is automatically created, called `adminKey`{.filename}, which
 can be used to boot instances.
 
-### Cloud performance {.title}
+</div>
+
+<div class="section" title="Cloud performance">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+
+### []()Cloud performance {#cloud-performance .title}
+
+</div>
+
+</div>
+
+</div>
 
 When you build an instance, the first boot may take some time to
 complete. After the first boot, the image will be cached, and subsequent
@@ -322,4 +501,8 @@ host virtual machine. Although networking will function correctly, it is
 recommended that you do not put a lot of load on the built instances.
 Performance will decline quickly as more load is placed on the host
 machine.
+
+</div>
+
+</div>
 

@@ -2,10 +2,10 @@
 node_id: 4721
 title: Limits on DNS lookups
 type: article
-created_date: '2015-06-16 16:57:01'
+created_date: '2015-06-16'
 created_by: David Hendler
-last_modified_date: '2015-07-10 15:1346'
-last_modified_by: renee.rendon
+last_modified_date: '2015-07-10'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -41,8 +41,8 @@ excess of the stated limits, consider the following options:
 -   Install a server-side caching mechanism such as nscd (Linux). This
     will continue to query our name servers but will store results in a
     cache on the server. This option might also improve performance
-    because your server will not need to make a DNS request for every
-    lookup.
+    because your server will not need to make a DNS request for
+    every lookup.
 -   Install a stand-alone caching name server such as BIND.  All queries
     will then stay on the local network or server. This name server can
     be installed on an existing server or a dedicated system.
@@ -51,5 +51,5 @@ excess of the stated limits, consider the following options:
     a **hosts** file to create static local entries.  This option works
     well if a local service uses DNS to resolve another local service.
 
- 
+
 

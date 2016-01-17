@@ -2,10 +2,10 @@
 node_id: 581
 title: Add impersonation for ASPUpload on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 19:5632'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -35,12 +35,12 @@ it.
     </BODY>
     </HTML>
 
- 
+
 
 Create another file called UploadScript1.asp and save the following text
 below in it.
 
- 
+
 
 -   Please note that **domain** is the data center your website is
     located at. It will either be **DFW**, or **ORD**.
@@ -68,7 +68,6 @@ ready to upload files.
 
 Here's a working example of the above scripts, hosted on Cloud Sites.
 
-For more information, please visit
-[http://www.aspupload.com/](http://www.aspupload.com/ "http://www.aspupload.com/")
-for more examples and the manual.
+For more information, please visit <http://www.aspupload.com/> for more
+examples and the manual.
 

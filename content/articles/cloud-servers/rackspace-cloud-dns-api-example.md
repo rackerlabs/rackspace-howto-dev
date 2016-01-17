@@ -2,10 +2,10 @@
 node_id: 1234
 title: Rackspace Cloud DNS - API Example
 type: article
-created_date: '2011-10-19 21:07:22'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-23 16:4024'
-last_modified_by: kyle.laffoon
+created_date: '2011-10-19'
+created_by: Rackspace Support
+last_modified_date: '2015-12-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prior section
 
 **[Rackspace Cloud DNS - Technical
-Details](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-dns-technical-details)**
+Details](/howto/rackspace-cloud-dns-technical-details)**
 
 ### API Example
 
@@ -25,25 +25,25 @@ You can obtain this token by first using the Rackspace Cloud
 Authentication Service and supplying a valid Rackspace Cloud account
 username and API access key.
 
- 
+
 
 #### Authentication Request
 
- 
+
 
     - curl -D - -H "X-Auth-Key: a86850deb2742ec3cb41518e26aa2d89" -H "X-Auth-User: jdoe" https://auth.api.rackspacecloud.com/v1.0
 
-####  
+####
 
 #### Authentication Response
 
- 
+
 
     - HTTP/1.1 204 No Content
     - (... more ...)
     - X-Auth-Token: eaaafd18-0fed-4b3a-81b4-663c99ec1cbb
 
- 
+
 
 Once authenticated, you can send requests to an available API endpoint.
 Our DNS service is a regionalized service and DNS is therefore
@@ -63,11 +63,11 @@ we'll show a List Domain details request. In this request, we are
 calling the US endpoint at dns.api.rackspacecloud.com, and requesting
 the domains for account number 1234, and the domain ID 2725511.
 
- 
+
 
     - curl -X GET -H "X-Auth-Token:eaaafd18-0fed-4b3a-81b4-663c99ec1cbb" -H "Accept:application/xml" https://dns.api.rackspacecloud.com/v1.0/1234/domains/2725511
 
-####  
+####
 
 #### Real Response
 
@@ -80,7 +80,7 @@ will be used by default. If conflicting formats are specified using both
 an Accept Header and a query extension, the query extension takes
 precedence.
 
- 
+
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <domain xmlns="http://docs.rackspacecloud.com/dns/api/v1.0&rdquo;
@@ -101,5 +101,5 @@ precedence.
 ### Next steps
 
 [**Rackspace Cloud DNS - Additional
-Resources**](https://admin.rackspace.com/knowledge_center/cloud_dns_additional_resources)
+Resources**](/howto/rackspace-cloud-dns-additional-resources)
 

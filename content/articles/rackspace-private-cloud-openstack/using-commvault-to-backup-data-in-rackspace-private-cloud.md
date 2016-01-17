@@ -2,11 +2,11 @@
 node_id: 3299
 title: Using CommVault to Backup Data in Rackspace Private Cloud
 type: article
-created_date: '2013-02-19 17:46:28'
-created_by: alyssah
-last_modified_date: '2013-06-26 16:2328'
-last_modified_by: kyle.laffoon
-product: Rackspace Private Cloud - OpenStack
+created_date: '2013-02-19'
+created_by: Alyssa Hurtgen
+last_modified_date: '2013-06-26'
+last_modified_by: Kyle Laffoon
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: full_html
 ---
 
@@ -18,11 +18,12 @@ instances that you can use to run any kind of applications. However,
 these virtual machines do not come with a backup and recovery solution
 by default. CommVault Simpana&reg; software has been tested and validated to
 work with Rackspace Private Cloud to do file-level backup and recovery
-of data inside individual instances. This document gives a brief
-overview of architecture and the components involved and the process to
-configure your instances for backup.
+of data inside individual instances. <span
+style="line-height: 1.538em;">This document gives a brief overview of
+architecture and the components involved and the process to configure
+your instances for backup.</span>
 
- 
+
 =
 
 Prerequisites
@@ -30,10 +31,14 @@ Prerequisites
 
 This document assumes the following:
 
--   A Rackspace Private Cloud Software cluster (at least one controller,
-    and one compute node, or an all-in-one and additional compute node)
+-   <span style="line-height: 1.538em;">A Rackspace Private Cloud
+    Software cluster (at least one controller, and one compute node, or
+    an all-in-one and additional compute node)</span>
 
--   CommVault Simpana&reg; Software version 9 or later
+<!-- -->
+
+-   <span style="line-height: 1.538em;">CommVault Simpana&reg; Software
+    version 9 or later</span>
 
 ** **
 -----
@@ -49,14 +54,14 @@ and reporting.
 
 An introduction to CommVault terminology for backup and recovery:
 
-**CommCell&reg;:**Collectively all Simpana components deployed for data
+**CommCell&reg;:** Collectively all Simpana components deployed for data
 protection and recovery including the CommCell Console, CommServe, Media
 Agents, and iDataAgents.
 
-**CommCell Console:**The graphical user interface that allows you to
+**CommCell Console:** The graphical user interface that allows you to
 control and manage all CommVault Simpana components.
 
-**CommServe&reg;:**The coordinator and administrator of the CommCell
+**CommServe&reg;:** The coordinator and administrator of the CommCell
 components. The CommServe server communicates with all agents in the
 CommCell to initiate data protection, management, and recovery
 operations.  The CommServe does some resource intensive processing and
@@ -81,17 +86,18 @@ software and how they work with Rackspace Private Cloud. Typically, you
 run the CommServe and Media Agents outside the private cloud, so your
 back infrastructure can stay up independent of the cloud.
 
-Using the CommCell GUI, source-side de-duplicated backups can be
-configured and automated to identify what data needs to be protected,
-how long to retain the protected data, and where to store a copy of the
-data.
+<span style="line-height: 1.538em;">Using the CommCell GUI, source-side
+de-duplicated backups can be configured and automated to identify what
+data needs to be protected, how long to retain the protected data, and
+where to store a copy of the data.</span>
 
 The specifics of your layout will depend on several factors, like your
 storage requirements, policies, and existing infrastructure, if any. For
 specific architectural recommendations and all configuration
-considerations, you can to talk to a CommVault Systems Engineer. 
+considerations, you can to talk to a CommVault Systems Engineer.
 
-![](/knowledge_center/sites/default/files/styles/half_width/public/field/image/commvault_rackspace_openstack_layout.png)
+![](/knowledge_center/sites/default/files/styles/half_width/public/field/image/commvault_rackspace_openstack_layout.png){.image-half_width
+width="375" height="271"}
 
 Agent Installation
 ------------------
@@ -101,7 +107,7 @@ an OpenStack VM. The configuration of the iDataAgent can be automated by
 booting new VMs off of VM images with the iDataAgent preinstalled and
 preconfigured for your environment.
 
- 
+
 
 Conclusion
 ----------
@@ -112,5 +118,5 @@ data inside individual instances. OpenStack virtual machines can easily
 be protected in an existing CommVault infrastructure or a new
 deployment.
 
- 
+
 

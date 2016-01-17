@@ -2,15 +2,15 @@
 node_id: 269
 title: Basic Cloud Server use Scenarios
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 18:2811'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-### Setting Up Websites
+### <span class="mw-headline">Setting Up Websites</span>
 
 Users can get root access to a Cloud server and install the Apache
 webserver on it and then install PHP if needed. Users can optionally add
@@ -18,18 +18,18 @@ Load Balancing and Failover capabilities to the website. Users can
 reduce cost of marketing and customer facing infrastructure by using
 Cloud Servers.
 
-### Maintaining Databases
+### <span class="mw-headline">Maintaining Databases</span>
 
 A Cloud Server could be used as a database server. A user could install
 MySQL,PostgreSQL, MSSQL or for that matter any database which runs on
 the supported operating systems. The Cloud server can now serve as the
 primary or secondary database.
 
-### Sending And Receiving Mail
+### <span class="mw-headline">Sending And Receiving Mail</span>
 
 A Cloud Server can be used as an email server or email client.
 
-### Developing and testing Applications
+### <span class="mw-headline">Developing and testing Applications</span>
 
 A Cloud server can cut down cost of development and test of new
 applications. Development servers can be provisioned in minutes and used

@@ -2,10 +2,10 @@
 node_id: 3789
 title: Migrating from a POP server to Rackspace Email IMAP using Outlook 2010 - Drag and Drop Method
 type: article
-created_date: '2013-11-19 14:33:05'
-created_by: milton.prado
-last_modified_date: '2016-01-12 19:2709'
-last_modified_by: stephanie.fillmon
+created_date: '2013-11-19'
+created_by: Milton Prado
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -24,7 +24,7 @@ new Rackspace Email account.
 
 If you would like to learn more about the differences between POP and
 IMAP, please see the help topic, [IMAP vs.
-POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protocol-comparison).
+POP](/howto/imap-and-pop-mail-protocol-comparison).
 
 ### Prerequisites
 
@@ -33,9 +33,9 @@ been created on the Rackspace environment and that the MX records have
 been updated so that email is routing correctly to Rackspace.
 
 -   [How to create
-    mailboxes](http://www.rackspace.com/knowledge_center/article/add-rackspace-email-mailboxes)
+    mailboxes](/howto/add-rackspace-email-mailboxes)
 -   [How to change MX
-    records](http://www.rackspace.com/knowledge_center/article/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+    records](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 ### Changing Settings
 
@@ -43,9 +43,9 @@ For increased security, we recommend that you use our secure (SSL)
 servers, as detailed below. If your internal system configurations
 require non-SSL ports, those settings are available in the article
 referenced previously,  [IMAP vs.
-POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protocol-comparison).
+POP](/howto/imap-and-pop-mail-protocol-comparison).
 
-1.  In Outlook 2010 select **File** \> **Account Settings**.
+1.  In Outlook 2010 select **File** &gt; **Account Settings**.
 
 2.  To add your IMAP account, click the **New** button.
 
@@ -53,7 +53,8 @@ POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protoco
     "secure.emailsrvr.com" for the Incoming and Outgoing mail servers,
     and your User Name and Password.
 
-    ![](/knowledge_center/sites/default/files/field/image/settings_screenIMAP%20copy_0.jpg)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/settings_screenIMAP%20copy_0.jpg){width="339"
+    height="312"}
 
 4.  Check th  **Remember Password** box if you don't want to type your
     password each time you launch Outlook.
@@ -72,14 +73,16 @@ POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protoco
 10. Set the Incoming port to 993 and the Outgoing port to
     465, and **Enable SSL Encryption**.
 
-    ![](/knowledge_center/sites/default/files/field/image/portsimap%20copy.jpg)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/portsimap%20copy.jpg){width="369"
+    height="258"}
 
 11. Once the settings have been updated, navigate to your Inbox and note
     that your new IMAP account is listed in the left-hand folder pane.
      Click on the account to expand the folders.  You should see mail
     items for that account start to appear.
 
-    ![](/knowledge_center/sites/default/files/field/image/IMAPaccount.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/IMAPaccount.png){width="173"
+    height="277"}
 
 12. Now that you have added your Rackspace account via IMAP, you can
     drag and drop emails from your POP Inbox to your IMAP Inbox.  As
@@ -91,10 +94,11 @@ POP](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protoco
     this process can take a while.  You may also consider moving emails
     over in batches by selecting groups of email messages.  Once you've
     confirmed that all emails have moved to the new account, you may
-    remove the configuration for the POP account as it will no longer be
-    needed.
+    remove the configuration for the POP account as it will no longer
+    be needed.
 
 After the change, your email will look similar to the screenshot below.
 
-![](/knowledge_center/sites/default/files/field/image/2013-11-27_1204.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2013-11-27_1204.png){width="437"
+height="600"}
 

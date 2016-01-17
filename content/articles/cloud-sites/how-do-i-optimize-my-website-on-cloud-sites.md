@@ -2,10 +2,10 @@
 node_id: 633
 title: Optimize your website on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:2747'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -30,10 +30,10 @@ a visual cue that they are on a secure site.
 
 For information about setting up a subdomain, see [Creating subdomains
 or domain
-aliases](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases).
+aliases](/howto/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases).
 
 For details on adding SSL to a site, see [Configuring SSL on your
-websites](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
+websites](/howto/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
 
 Serving static content
 ----------------------
@@ -47,7 +47,7 @@ This process gives your customers decreased latency when accessing media
 because the content is cached and served by servers closest to their
 physical location. For more information about using Cloud Files, see the
 [Cloud Files Knowledge
-Base](http://www.rackspace.com/knowledge_center/product-page/cloud-files).
+Base](/howto/cloud-files).
 
 Optimizing the database
 -----------------------
@@ -88,8 +88,8 @@ providing the following details:
 -   Date and time of the event, with the time zone
 -   Duration of the event
 -   Expected traffic volume (in requests per second)
--   Type of application (for example, proprietary, commercial, open
-    source)
+-   Type of application (for example, proprietary, commercial,
+    open source)
 -   CMS (for example, WordPress, Drupal, Joomla) if applicable
 -   Whether the application or site makes any third-party calls to
     domains outside of Cloud Sites (for example, RSS feeds, APIs, cURL)
@@ -106,12 +106,12 @@ Additional resources for website optimization
 See the following optimization articles that apply to your websites:
 
 -   [Optimize
-    SugarCRM](http://www.rackspace.com/knowledge_center/article/how-do-i-optimize-sugarcrm-on-cloud-sites)
+    SugarCRM](/howto/optimize-sugarcrm-on-cloud-sites)
 -   [Optimizing your Drupal
     site](http://www.rackspace.com/blog/optimizing-your-drupal-site/)
 -   [Accelerating WordPress with Cloud Files and the W3 Total Cache
-    Plugin](http://www.rackspace.com/knowledge_center/article/accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin)
+    Plugin](/howto/accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin)
 -   [Using WP-SuperCache to optimize Wordpress on Cloud
-    Sites](http://www.rackspace.com/knowledge_center/article/using-wp-supercache-to-optimize-wordpress-on-cloud-sites)
+    Sites](/howto/using-wp-supercache-to-optimize-wordpress-on-cloud-sites)
 
 

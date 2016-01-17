@@ -2,10 +2,10 @@
 node_id: 3193
 title: Troubleshooting the Rackspace Monitoring Agent
 type: article
-created_date: '2012-11-13 03:30:06'
+created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-06 18:3947'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06'
+last_modified_by: Rose Contreras
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -28,7 +28,7 @@ This issue might have one of the following causes:
     as an Administrator on Windows) and install the agent. For
     installation instructions, see [Install and configure the Rackspace
     Monitoring
-    Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent).
+    Agent](/howto/install-and-configure-the-rackspace-monitoring-agent).
 -   The agent is installed but is not connected to your server. For the
     agent to work correctly, it must be associated with your server by
     using a Rackspace Monitoring entity. The entity is a representation
@@ -44,10 +44,10 @@ performing the following steps:
 
 ### Linux
 
-1.  Verify that the Rackspace monitoring agent is installed
-    under**/usr/bin/rackspace-monitoring-agent**.
-2.  Verify that the **/etc/****rackspace-monitoring-agent.cfg** file
-    exists and contains a valid agent token.
+1.  Verify that the[Rackspace monitoring agent]()is installed under
+    **/usr/bin/rackspace-monitoring-agent**.
+2.  Verify that the **/etc/rackspace-monitoring-agent.cfg** file exists
+    and contains a valid agent token.
 3.  Check for errors and status information in the
     **/var/log/rackspace-monitoring-agent.log** file.
 4.  Verify that port 443 is open (added as a public firewall rule).
@@ -57,10 +57,10 @@ performing the following steps:
 
 ### Windows
 
-1.  Verify that the Rackspace monitoring agent is installed under
+1.  Verify that the [Rackspace monitoring agent]() is installed under
     **C:\\Program Files\\Rackspace
-    Monitoring\\rackspace-monitoring-agent.exe**.<br>
-     If you use a 32-bit version on a 64-bit Windows computer, the
+    Monitoring\\rackspace-monitoring-agent.exe**.
+    If you use a 32-bit version on a 64-bit Windows computer, the
     monitoring agent is installed under **C:\\Program Files
     (x86)\\Rackspace Monitoring\\rackspace-monitoring-agent.exe**.
 2.  Verify that the **C:\\ProgramData\\Rackspace
@@ -69,10 +69,10 @@ performing the following steps:
 3.  Check for errors and status information in the
     **C:\\ProgramData\\Rackspace Monitoring\\log.txt** file.
 4.  In the Windows Control Panel, open the settings for Windows Firewall
-    and verify that port 443 is open (added as an inbound firewall
-    rule).
+    and verify that port 443 is open (added as an inbound
+    firewall rule).
 5.  Verify that the monitoring agent is running by opening the Task
-    Manager, clicking the **Services**tab and locating the **Rackspace
+    Manager, clicking the **Services** tab and locating the **Rackspace
     Monitoring** agent service.
 
 ### Check for duplicate entities
@@ -82,12 +82,16 @@ performing the following steps:
 You can use the Rackspace Monitoring Command Line Interface (Raxmon) to
 troubleshoot your monitoring agent. To install the Raxmon tool, read
 [Getting Started with Rackspace Monitoring
-CLI](http://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-monitoring-cli).
+CLI](/howto/getting-started-with-rackspace-monitoring-cli).
 
 To troubleshoot a monitoring agent by using Raxmon, complete the
 following steps:
 
-1.  Create a config file in the following location: `~/.raxrc`
+1.  <div>
+
+    </div>
+
+    Create a config file in the following location: `~/.raxrc`
 2.  Populate the config file with the following content:
 
         [credentials]
@@ -106,7 +110,7 @@ following steps:
 
         [ssl]
 
-        verify=true 
+        verify=true
 
     **Note**: `ACCOUNT_USERNAME` and `ACCOUNT_APIKEY` are the Rackspace
     Cloud account username and your API key.
@@ -195,7 +199,7 @@ To check for duplicate entities by using cURL, do the following:
     with varying label cases. If duplicate entities exist, open a ticket
     with Support.
 
-### Manually configure the Rackspace Monitoring agent to function behind an HTTPS proxy {#ManuallyconfiguretheCloudMonitoringagenttofunctionbehindanHTTPSproxy}
+### M<span>anually configure the Rackspace Monitoring agent to function behind an HTTPS proxy</span> {#ManuallyconfiguretheCloudMonitoringagenttofunctionbehindanHTTPSproxy}
 
 If you need to connect the agent through an HTTP proxy, you can manually
 configure the Rackspace Monitoring agent to function behind an HTTPs
@@ -212,5 +216,5 @@ file](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#
 Related information
 
 [About the Rackspace Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/about-the-cloud-monitoring-agent).
+Agent](/howto/about-the-rackspace-monitoring-agent).
 

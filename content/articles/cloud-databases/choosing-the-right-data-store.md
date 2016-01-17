@@ -2,10 +2,10 @@
 node_id: 4132
 title: Choosing the right database with Rackspace Cloud Databases
 type: article
-created_date: '2014-07-16 17:32:05'
-created_by: ross.diaz
-last_modified_date: '2014-07-25 03:3513'
-last_modified_by: rose.contreras
+created_date: '2014-07-16'
+created_by: Ross Diaz
+last_modified_date: '2014-07-25'
+last_modified_by: Rose Contreras
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -53,70 +53,58 @@ selection of storage engines by default. For more information, see the
 The following table displays the major features and differences among
 MySQL, Percona Server, and MariaDB 10.
 
- 
-
-MySQL 5.6
-
-Percona Server 5.6
-
-MariaDB 10
-
-**Pros**
-
-Upstream controlled by Oracle
-
--   Drop-in replacement for MySQL
-
--   Remerges with upstream source code after each new MySQL release, to
-    maintain compatibility
-
--   Includes community patching
-
--   Improved performance on multiprocessor systems
-
--   Improved query optimizer
-
--   Increased log verbosity options, status and performance counters,
-    and increased `INFORMATION_SCHEMA` content
-
--   Thread pool option without the need for Enterprise MySQL
-
--   Drop-in replacement for MySQL
-
--   Re-implements features as they are released by Oracle
-
--   Fork of MySQL with many new features and a long-term goal to
-    maintain binary compatibility
-
--   Includes community patching
-
--   Improved performance on multiprocessor systems
-
--   Improved query optimizer
-
--   Increased log verbosity options, status and performance counters,
-    and increased `INFORMATION_SCHEMA` content
-
--   Thread pool option without the need of Enterprise MySQL
-
--   Increased Quantity of Storage Engines by default
-
-**Cons**
-
-Bug fixes are delayed behind forks that might have already been resolved
-by community patches
-
-After using features specific to Percona, you might not be able to
-directly roll back the database
-
--   After using features specific to MariaDB, you might not be able to
-    directly roll back the database
-
--   Started from MySQL upstream, but much of the MySQL source code has
-    been directly modified
-
--   Inmany cases, upstream bugs are already resolved, but not in all
-    cases and you might need to await re-implementation of the patch
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"> </th>
+<th align="left">MySQL 5.6</th>
+<th align="left">Percona Server 5.6</th>
+<th align="left">MariaDB 10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><strong>Pros</strong></p></td>
+<td align="left"><p>Upstream controlled by Oracle</p></td>
+<td align="left"><ul>
+<li><p>Drop-in replacement for MySQL</p></li>
+<li><p>Remerges with upstream source code after each new MySQL release, to maintain compatibility</p></li>
+<li><p>Includes community patching</p></li>
+<li><p>Improved performance on multiprocessor systems</p></li>
+<li><p>Improved query optimizer</p></li>
+<li><p>Increased log verbosity options, status and performance counters, and increased <code>INFORMATION_SCHEMA</code> content</p></li>
+<li><p>Thread pool option without the need for Enterprise MySQL</p></li>
+</ul></td>
+<td align="left"><ul>
+<li><p>Drop-in replacement for MySQL</p></li>
+<li><p>Re-implements features as they are released by Oracle</p></li>
+<li><p>Fork of MySQL with many new features and a long-term goal to maintain binary compatibility</p></li>
+<li><p>Includes community patching</p></li>
+<li><p>Improved performance on multiprocessor systems</p></li>
+<li><p>Improved query optimizer</p></li>
+<li><p>Increased log verbosity options, status and performance counters, and increased <code>INFORMATION_SCHEMA</code> content</p></li>
+<li><p>Thread pool option without the need of Enterprise MySQL</p></li>
+<li><p>Increased Quantity of Storage Engines by default</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left"><p><strong>Cons</strong></p></td>
+<td align="left"><p>Bug fixes are delayed behind forks that might have already been resolved by community patches</p></td>
+<td align="left"><p>After using features specific to Percona, you might not be able to directly roll back the database</p></td>
+<td align="left"><ul>
+<li><p>After using features specific to MariaDB, you might not be able to directly roll back the database</p></li>
+<li><p>Started from MySQL upstream, but much of the MySQL source code has been directly modified</p></li>
+<li><p>Inmany cases, upstream bugs are already resolved, but not in all cases and you might need to await re-implementation of the patch</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
 
 

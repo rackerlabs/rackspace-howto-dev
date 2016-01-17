@@ -2,10 +2,10 @@
 node_id: 3837
 title: Displaying SVG Images In Cloud Sites PHP Deployments
 type: article
-created_date: '2013-12-18 19:09:32'
-created_by: bryon.farris
-last_modified_date: '2013-12-19 21:1322'
-last_modified_by: ross.diaz
+created_date: '2013-12-18'
+created_by: Bryon Farris
+last_modified_date: '2013-12-19'
+last_modified_by: Ross Diaz
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -24,11 +24,11 @@ This will tell the Apache instance the proper MIME type to use when
 serving requests for SVG style image files.
 
 For a very extensive list of what MIME Type Apache supports, please
-review:<br>
-[http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)<br>
-<br>
+review:
+<http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types>
+
 *Note: The following link may not be fully formatted correctly for the
 .htaccess*
 
- 
+
 

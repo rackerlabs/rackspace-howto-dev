@@ -2,10 +2,10 @@
 node_id: 621
 title: Force SSL on your ASP or ASP.NET site on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-23 17:0157'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-23'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -53,10 +53,10 @@ site, contact Support.
 You could modify the example to force SSL on one page or specific pages.
 For more information about the IIS Rewrite Module, see [Creating Rewrite
 Rules for the URL Rewrite
-Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/")
-and [URL Rewrite Module Configuration
-Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
-on the Microsoft IIS site.
+Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/"){.external
+.text} and [URL Rewrite Module Configuration
+Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/"){.external
+.text} on the Microsoft IIS site.
 
 ASP.NET (not MVC 3) {#ASP.NET}
 -------------------
@@ -107,7 +107,7 @@ ASP.NET (MVC 3) {#aspnetmvc3}
 You can use the following code when using the `RequireHttps` attribute
 to decorate actions within your MVC application:
 
-~~~~ {.p1}
+``` {.p1}
 protected void Application_BeginRequest(Object sender, EventArgs e)
 {
             if (HttpContext.Current.Request.IsSecureConnection() == false)
@@ -138,7 +138,7 @@ public static class Extensions
                         return (request.IsSecureConnection || (request.ServerVariables[rsSSLvar] != null || request.ServerVariables[rsSSLvar] == "on"));
             }
 }
-~~~~
+```
 
 Classic ASP {#classicASP}
 -----------

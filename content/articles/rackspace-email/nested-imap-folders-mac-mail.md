@@ -2,10 +2,10 @@
 node_id: 3804
 title: Nested IMAP Folders in Apple Mail
 type: article
-created_date: '2013-12-05 19:19:17'
-created_by: milton.prado
-last_modified_date: '2014-12-30 03:2214'
-last_modified_by: jered.heeschen
+created_date: '2013-12-05'
+created_by: Milton Prado
+last_modified_date: '2014-12-30'
+last_modified_by: Jered Heeschen
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -23,28 +23,30 @@ recommend contacting the vendor for full support with Apple Mail.
 
 **Figure 1**
 
-![](/knowledge_center/sites/default/files/field/image/Nested%20copy.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Nested%20copy.jpg){width="296"
+height="316"}
 
 ###  Change the IMAP Prefix
 
 Apple Mail enables users to isolate a folder that is used to sort mail
 data on the email server through what is known as an IMAP path prefix.
 By adjusting this prefix, some users have been able to resolve the
-issue.<br>
- You can change the IMAP prefix in the advanced settings of the IMAP
+issue.
+You can change the IMAP prefix in the advanced settings of the IMAP
 mailbox, as follows:
 
-1.  Select **Mail** \> **Preferences** \> **Accounts**.
+1.  Select **Mail** &gt; **Preferences** &gt; **Accounts**.
 2.  Select the IMAP account.
 3.  Click on the **Advanced** tab.
 4.  Try one or both of the following possible fixes:
 
 -   Change the case of the prefix. For example, change INBOX to Inbox.
--   Add a slash (/) at the end of the prefix&mdash;for example, INBOX/ or
-    Inbox/. A slash helps Apple Mail recognize that the path ends in a
-    folder.
+-   Add a slash (/) at the end of the prefix&mdash;for example, INBOX/
+    or Inbox/. A slash helps Apple Mail recognize that the path ends in
+    a folder.
 
-![](/knowledge_center/sites/default/files/field/image/2_1.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2_1.jpg){width="542"
+height="560"}
 
 ###  Change Mailbox Behaviors
 
@@ -53,7 +55,8 @@ example, the Trash folder is causing an issue. Try enabling and
 disabling the **Move deleted messages to the Trash mailbox** option and
 the **Store deleted messages on the server** option.
 
-![](/knowledge_center/sites/default/files/field/image/3_2.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3_2.jpg){width="547"
+height="562"}
 
 ### Reset Apple Mail Preferences
 
@@ -62,28 +65,30 @@ settings are located in the account settings file for Apple Mail.
  Sometimes a corruption of this file can cause these issues.  Try
 removing this file.  Note that removing this file might result in you
 having to enter your account credentials again, however, your IMAP
-configuration and all mail will stay in Apple Mail. 
+configuration and all mail will stay in Apple Mail.
 
 You can find the file in the following
 directory: **username**/**Library**/**Containers**/**com.apple.mail**/**Data**/**Library**/**Preferences**
 
-![](/knowledge_center/sites/default/files/field/image/4_39.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4_39.png){width="335"
+height="164"}
 
- 
+
 
 Note.  By default the Library folder (underneath your username folder)
 is hidden.  In order to access it:
 
-1. Open a new Finder window
+1\. Open a new Finder window
 
-2. Click on **Go** from the Menu Bar
+2\. Click on **Go** from the Menu Bar
 
-3. Hold down the**Alt/Option** key on your keyboard
+3\. Hold down the **Alt/Option** key on your keyboard
 
-4. Click on **Library** from the list of folders
+4\. Click on **Library** from the list of folders
 
 You can now navigate to the path where your com.apple.mail.plist file is
-located. 
+located.
 
-![](/knowledge_center/sites/default/files/field/image/Library.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Library.jpg){width="511"
+height="321"}
 

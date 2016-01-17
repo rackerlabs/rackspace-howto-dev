@@ -2,10 +2,10 @@
 node_id: 270
 title: Basic Network Troubleshooting
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 18:3533'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -17,12 +17,12 @@ networking problems can be solved by logging into the web console
 (through your The Rackspace Cloud Control Panel) and running a few
 simple commands.
 
--   [ifconfig](#ifconfig)
--   [iptables](#iptables)
--   [route](#route)
+-   [<span class="toctext">ifconfig</span>](#ifconfig)
+-   [<span class="toctext">iptables</span>](#iptables)
+-   [<span class="toctext">route</span>](#route)
 
-ip addr show
-------------
+[](){#ifconfig}ip addr show<span class="mw-headline"> </span>
+-------------------------------------------------------------
 
 ip addr show is a basic network information and configuration tool. On a
 working Cloud Server, its output may look something like this:
@@ -36,7 +36,7 @@ working Cloud Server, its output may look something like this:
               TX packets:11490 errors:0 dropped:0 overruns:0 carrier:0
               collisions:0 txqueuelen:1000
               RX bytes:48350683 (46.1 MiB)  TX bytes:1456436 (1.3 MiB)
-     
+
     eth1      Link encap:Ethernet  HWaddr 40:40:a5:xx:xx:xx
               inet addr:10.176.44.xx  Bcast:10.176.63.255  Mask:255.255.224.0
               inet6 addr: fe80::4240:a5ff:fe5f:xxxx/64 Scope:Link
@@ -45,7 +45,7 @@ working Cloud Server, its output may look something like this:
               TX packets:53 errors:0 dropped:0 overruns:0 carrier:0
               collisions:0 txqueuelen:1000
               RX bytes:230 (230.0 B)  TX bytes:7764 (7.5 KiB)
-     
+
     lo        Link encap:Local Loopback
               inet addr:127.0.0.1  Mask:255.0.0.0
               inet6 addr: ::1/128 Scope:Host
@@ -55,7 +55,7 @@ working Cloud Server, its output may look something like this:
               collisions:0 txqueuelen:0
               RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
-### Common Problems
+### <span class="mw-headline">Common Problems </span>
 
 If, upon running ifconfig, you do not see an IP address under eth0, try
 
@@ -71,8 +71,8 @@ This will bring up the interface under its default configuration.
 Similar steps may be followed to fix the internal connection by using
 'eth1' and your assigned private (10.xx.xx.xx) IP.
 
-iptables
---------
+<span class="mw-headline">[](){#iptables}iptables </span>
+---------------------------------------------------------
 
 iptables is a commonly-used firewall in Linux. By default, your Cloud
 Server should have iptables already installed, but it will not be
@@ -82,23 +82,23 @@ configured. To list the firewall rules, run
 
 . A newly-built server will show the following:
 
-    # iptables -L                                                                                                    
-    Chain INPUT (policy ACCEPT)                                                                                             
-    target     prot opt source               destination                                                                    
-                                                                                                                            
-    Chain FORWARD (policy ACCEPT)                                                                                           
-    target     prot opt source               destination                                                                    
-                                                                                                                            
-    Chain OUTPUT (policy ACCEPT)                                                                                            
+    # iptables -L
+    Chain INPUT (policy ACCEPT)
     target     prot opt source               destination
 
-### Common Problems
+    Chain FORWARD (policy ACCEPT)
+    target     prot opt source               destination
+
+    Chain OUTPUT (policy ACCEPT)
+    target     prot opt source               destination
+
+### <span class="mw-headline">Common Problems </span>
 
 If your iptables output differs from the above, the firewall may be
 causing your issue.
 
-route
------
+<span class="mw-headline">[](){#route}route </span>
+---------------------------------------------------
 
 route is used to view and edit the routing table. The output of route
 may display several lines, but the most important (or the most commonly
@@ -106,13 +106,13 @@ broken) is one called the default gateway. (**Note:** Various Linux
 distros may configure their routes slightly differently. The output
 shown below is from a Debian server.)
 
-    # route                                                                                                          
-    Kernel IP routing table                                                                                                 
-    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface                                           
-    67.23.13.0      *               255.255.255.0   U     0      0        0 eth0                                            
-    10.176.32.0     *               255.255.224.0   U     0      0        0 eth1                                            
-    10.191.192.0    10.176.32.1     255.255.192.0   UG    0      0        0 eth1                                            
-    10.176.0.0      10.176.32.1     255.248.0.0     UG    0      0        0 eth1                                            
+    # route
+    Kernel IP routing table
+    Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+    67.23.13.0      *               255.255.255.0   U     0      0        0 eth0
+    10.176.32.0     *               255.255.224.0   U     0      0        0 eth1
+    10.191.192.0    10.176.32.1     255.255.192.0   UG    0      0        0 eth1
+    10.176.0.0      10.176.32.1     255.248.0.0     UG    0      0        0 eth1
     default         67.23.13.1      0.0.0.0         UG    0      0        0 eth0
 
 In this example, the first line is a "catch-all" for the 67.23.13.xx
@@ -120,11 +120,11 @@ network, while the next three lines are specific to the internal
 network. The last line is the default gateway, and should point to
 xx.xx.xx.1 (where the first three octets match those of the top line).
 
-### Common Problems
+### <span class="mw-headline">Common Problems </span>
 
 To change the default route, run
 
     route add default gw xx.xx.xx.1
 
-replacing "xx.xx.xx" as described above. 
+replacing "xx.xx.xx" as described above.
 

@@ -2,9 +2,9 @@
 node_id: 3353
 title: Setting up an IMAP account on a Windows Phone
 type: article
-created_date: '2013-03-18 16:58:59'
-created_by: mawutor.amesawu
-last_modified_date: '2013-03-20 21:4338'
+created_date: '2013-03-18'
+created_by: Mawutor Amesawu
+last_modified_date: '2013-03-20'
 last_modified_by: Rae D. Cabello
 product: Rackspace Email
 body_format: tinymce
@@ -13,57 +13,77 @@ body_format: tinymce
 The following steps are required to setup an IMAP account on a Windows
 Mobile phone.
 
-1. Locate the **Settings** options from within your application menu<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/1.jpg)<br>
-<br>
-2. Select **Email + Accounts**<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/2.jpg)<br>
-<br>
-3.  Select **Add an Account**<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/3.jpg)<br>
-<br>
-4. Select **Other Account**<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/4.jpg)<br>
-<br>
+1\. Locate the **Settings** options from within your application menu
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1.jpg){width="275"
+height="277"}
+
+2. Select **Email + Accounts**
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2.jpg){width="277"
+height="438"}
+
+3.  Select **Add an Account**
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3.jpg){width="281"
+height="151"}
+
+4. Select **Other Account**
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.jpg){width="275"
+height="399"}
+
 5. Enter your full email address and password for your account, then
-press the **sign in** button<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/5.jpg)<br>
-<br>
+press the **sign in** button
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/5.jpg){width="277"
+height="443"}
+
 6. The device may or may not be able to auto-detect your settings.  If
-it does not, press the **Advanced** option on this screen<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/6.jpg)<br>
-<br>
+it does not, press the **Advanced** option on this screen
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/6.jpg){width="279"
+height="439"}
+
 7. Add your desired Account name and fill in Your name.  Then, use the
-following server settings:<br>
+following server settings:
 (You will need to scroll down on this screen to see the additional
 fields)
 
 -   Incoming email server: **secure.emailsrvr.com**
 
+<!-- -->
+
 -   Account type: **IMAP4**
+
+<!-- -->
 
 -   Username: **Full Email address**
 
+<!-- -->
+
 -   Password: **Email address password**
+
+<!-- -->
 
 -   Outgoing (SMTP) email server: **secure.emailsrvr.com**
 
+<!-- -->
+
 -   Outgoing server requires authentication: **Enabled**
+
+<!-- -->
 
 -   Use the same user name and password for sending email: **Enabled**
 
-Then, select **sign in**<br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/8.jpg) <br>
-<br>
-![](/knowledge_center/sites/default/files/field/image/9.jpg)<br>
-<br>
+Then, select **sign in**
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/8.jpg){width="279"
+height="444"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/9.jpg){width="277"
+height="446"}
+
 8. This will complete your setup.  You will see a new icon within your
-settings menu with the name of your new email account. 
+settings menu with the name of your new email account.
 

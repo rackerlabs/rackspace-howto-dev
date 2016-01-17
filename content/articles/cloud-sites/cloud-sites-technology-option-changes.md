@@ -2,29 +2,35 @@
 node_id: 1430
 title: Cloud Sites Technology Option Changes
 type: article
-created_date: '2012-06-12 17:02:36'
-created_by: RackKCAdmin
-last_modified_date: '2014-01-02 19:0531'
-last_modified_by: jered.heeschen
+created_date: '2012-06-12'
+created_by: Rackspace Support
+last_modified_date: '2014-01-02'
+last_modified_by: Jered Heeschen
 product: Cloud Sites
 body_format: tinymce
 ---
 
-The Rackspace Cloud Sites product used to give customers the ability to
-set up a hosting environment in which customers serve Windows/IIS
-applications from a Linux/PHP based site and vice versa. Cloud Sites
-removed this ability to host disparate technologies due to changes in
-our technology options. The hybrid technology option removal allows us
-to release new changes more quickly.
+<span style="line-height: 1.538em;">The Rackspace Cloud Sites product
+used to give customers the ability to set up a hosting environment in
+which customers serve Windows/IIS applications from a Linux/PHP based
+site and vice versa. Cloud Sites removed this ability to host disparate
+technologies due to changes in our technology options. The hybrid
+technology option removal allows us to release new changes more
+quickly.</span>
 
-Please refer to the scenarios below for rewrite help for sites that need
-to be adapted to account for the single-technology requirement.
+<span style="line-height: 1.538em;">Please refer to the scenarios below
+for rewrite help for sites that need to be adapted to account for the
+single-technology requirement.</span>
 
-### SCENARIO 1 {.MsoNormal}
+### SCENARIO 1 {#scenario-1 .MsoNormal}
 
 Running a single CMS or application on your site, but this application
-is running on an inappropriate sites technology. (example: Wordpress,
-which is intended for Linux, running on a .NET site technology).
+is running on an inappropriate <span
+id="GRmark_40b6f724ba115af41edb32011701e57f760d86f3_sites:0"
+class="GRcorrect">sites</span> technology. (<span
+id="GRmark_93c9a7b50face9d578ba4e7ea9d0af2e6f8e232c_example:0"
+class="GRcorrect">example</span>: Wordpress, which is intended for
+Linux, running on a .NET site technology).
 
 **Solution.** Simply change your technology selection in the Classic
 Cloud Control panel.  On the website features tab, change your site to
@@ -34,7 +40,7 @@ Please ensure that you are only running a single application on this
 site and ensure that the application is running on the appropriate
 technology.
 
-### SCENARIO 2 {.MsoNormal}
+### SCENARIO 2 {#scenario-2 .MsoNormal}
 
 Running more than one, disparate CMS/Application on your site, and these
 applications have different default technologies, one that is an IIS and
@@ -42,30 +48,47 @@ one that is PHP/Perl/Python.
 
 **Solutions:**
 
-### IIS files running on PHP {.MsoNormal}
+### IIS files running on PHP {#iis-files-running-on-php .MsoNormal}
 
-If you are currently running IIS files (.asp, .aspx, etc) on your PHP
-site, you will need to create a new site (either a new domain or a
-subdomain) with Windows/IIS as the default technology. You will then
-need to move the IIS files over to this new domain or subdomain. Once
-this is finished, you will need to setup a rewrite on the main PHP site
-via an .htaccess file to redirect any IIS files to the new site. An
-example is given below:
+If you are currently running IIS files (<span
+id="GRmark_51fbe8c60526f0395c362513cf23c7ee059f0038_.:0"
+class="GRcorrect">.</span>asp, .<span
+id="GRmark_51fbe8c60526f0395c362513cf23c7ee059f0038_aspx:1"
+class="GRcorrect">aspx</span>, <span
+id="GRmark_51fbe8c60526f0395c362513cf23c7ee059f0038_etc:2"
+class="GRcorrect">etc</span>) on your PHP site, you will need to create
+a new site (either a new domain or a subdomain) with Windows/IIS as the
+default technology. You will then need to move the IIS files over to
+this new domain or subdomain. Once this is finished, you will need to
+<span id="GRmark_5ae7a0c33d51b8b612251db0fb77b47c14fec57f_setup:0"
+class="GRcorrect">setup</span> a rewrite on the main PHP site via an
+.<span id="GRmark_5ae7a0c33d51b8b612251db0fb77b47c14fec57f_htaccess:1"
+class="GRcorrect">htaccess</span> file to redirect any IIS files to the
+new site. An example is given below:
 
-~~~~ {.MsoNormal}
+``` {.MsoNormal}
 RewriteRule ^(.+)\.asp$ http://www.iisexample.com/$1.asp [R=301,NC]
-~~~~
+```
 
-### PHP files running on IIS {.MsoNormal}
+### PHP files running on IIS {#php-files-running-on-iis .MsoNormal}
 
-If you are currently running PHP files (.php, etc) on your IIS site, you
-will need to create a new site (either a new domain or a subdomain) with
-Linux/PHP as the default technology. You will then need to move the PHP
-files over to this new domain or subdomain. Once this is finished, you
-will need to setup a rewrite on the main IIS site via a web.config file
-to redirect any PHP files to the new site. An example is given below:
+If you are currently running PHP files (<span
+id="GRmark_d46f4a1fe06d41e83cf919bac3ba0877a59b6138_.:0"
+class="GRcorrect">.</span><span
+id="GRmark_d46f4a1fe06d41e83cf919bac3ba0877a59b6138_php:1"
+class="GRcorrect">php</span>, <span
+id="GRmark_d46f4a1fe06d41e83cf919bac3ba0877a59b6138_etc:2"
+class="GRcorrect">etc</span>) on your IIS site, you will need to create
+a new site (either a new domain or a subdomain) with Linux/PHP as the
+default technology. You will then need to move the PHP files over to
+this new domain or subdomain. Once this is finished, you will need to
+<span id="GRmark_9b5ca449a9945ffd818c8816473efddbf5032151_setup:0"
+class="GRcorrect">setup</span> a rewrite on the main IIS site via a
+web<span id="GRmark_9b5ca449a9945ffd818c8816473efddbf5032151_.:1"
+class="GRcorrect">.</span>config file to redirect any PHP files to the
+new site. An example is given below:
 
-~~~~ {.MsoNormal}
+``` {.MsoNormal}
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
@@ -79,16 +102,20 @@ to redirect any PHP files to the new site. An example is given below:
         </rewrite>
     </system.webServer>
 </configuration>
-~~~~
+```
 
-### PHP based blog running on IIS {.MsoNormal}
+### PHP based blog running on IIS {#php-based-blog-running-on-iis .MsoNormal}
 
 If you are currently running a PHP based blog on your IIS based website
-(Drupal, Magento, etc) within a blog directory, you can use the
+(Drupal, Magento, <span
+id="GRmark_4fa5c3491724484fe5cc5248262d67c51441bd4b_etc:0"
+class="GRcorrect">etc</span>) within a blog directory, you can use the
 following redirect to redirect any requests to
-www.domain.com/blog/\*.php to your new domain (ie blog.domain.com):
+www.domain.com/blog/\*.php to your new domain (<span
+id="GRmark_4fa5c3491724484fe5cc5248262d67c51441bd4b_ie:1"
+class="GRcorrect">ie</span> blog.domain.com):
 
-~~~~ {.MsoNormal}
+``` {.MsoNormal}
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <system.webServer>
@@ -102,5 +129,5 @@ www.domain.com/blog/\*.php to your new domain (ie blog.domain.com):
         </rewrite>
     </system.webServer>
 </configuration>
-~~~~
+```
 

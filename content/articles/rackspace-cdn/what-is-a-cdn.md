@@ -2,10 +2,10 @@
 node_id: 120
 title: What is a CDN?
 type: article
-created_date: '2011-03-10 19:09:46'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-08 22:2148'
-last_modified_by: catherine.richardson
+created_date: '2011-03-10'
+created_by: Rackspace Support
+last_modified_date: '2016-01-08'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: tinymce
 ---
@@ -25,8 +25,8 @@ The Internet is a network of networks. To get content from a server on
 the other side of the planet, IP packets have to travel through a series
 of backbone servers and public network cables.
 
-CDNs like the Rackspace CDN [[product
-link](http://www.rackspace.com/cloud/cdn-content-delivery-network)]
+CDNs like the Rackspace CDN \[[product
+link](http://www.rackspace.com/cloud/cdn-content-delivery-network)\]
 augment the transport network by employing various techniques to
 optimize content delivery. It is fairly easy to see how CDNs help by
 looking at how the Internet works. A trace route to an Internet address
@@ -59,18 +59,20 @@ in the following figures.
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content through multiple servers.
 
-![](/knowledge_center/sites/default/files/field/image/CDN-BEFORE_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-BEFORE_0.png){width="715"
+height="386"}
 
- 
+
 
 #### **After the Use of a CDN**
 
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content from the optimum servers.
 
-![](/knowledge_center/sites/default/files/field/image/CDN-AFTER_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-AFTER_0.png){width="723"
+height="363"}
 
-###  
+###
 
 CDNs focus on improving performance of web page delivery. CDNs like the
 Akamai CDN support progressive downloads, which optimizes delivery of
@@ -96,19 +98,20 @@ optimization goals.
     requirements, reduce server load, and improve the client response
     times for content stored in the cache.
 -   Server-load balancing uses a web switch, content switch, or
-    multilayer switch to share traffic among a number of servers or web
-    caches. In CDNs, the switch is assigned a single virtual IP address.
-    Traffic arriving at the switch is then directed to one of the real
-    web servers attached to the switch. This has the advantages of
-    balancing load, increasing total capacity, improving scalability,
-    and providing increased reliability by redistributing the load of a
-    failed web server and providing server health checks.
+    multilayer switch to share traffic among a number of servers or
+    web caches. In CDNs, the switch is assigned a single virtual
+    IP address. Traffic arriving at the switch is then directed to one
+    of the real web servers attached to the switch. This has the
+    advantages of balancing load, increasing total capacity, improving
+    scalability, and providing increased reliability by redistributing
+    the load of a failed web server and providing server health checks.
 
 ##### Global Server Load Balancing
 
- 
 
-[![](/knowledge_center/sites/default/files/field/image/CDN-thirdIMAGE.png)](#_msocom_4)
+
+[![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-thirdIMAGE.png){width="783"
+height="419"}](#_msocom_4){#_anchor_4 .msocomanchor}
 
 -   Request routing directs client requests to the content source best
     able to serve the request. This may involve directing a client
@@ -116,8 +119,8 @@ optimization goals.
     node with the most capacity. A variety of algorithms for Global
     Server Load Balancing (shown in preceding diagram) are used to route
     the request. Choosing the closest service node is done using a
-    variety of techniques including proactive probing and connection
-    monitoring.
+    variety of techniques including proactive probing and
+    connection monitoring.
 
- 
+
 

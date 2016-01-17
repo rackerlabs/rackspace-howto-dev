@@ -2,10 +2,10 @@
 node_id: 1120
 title: Setup Automatic MySQL Server Backups to Cloud Files from Windows
 type: article
-created_date: '2011-06-07 21:31:05'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 21:3022'
-last_modified_by: kyle.laffoon
+created_date: '2011-06-07'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -46,9 +46,9 @@ First you will need to download a small piece of C# software and compile it on W
 
 _Note: You need to replace the values in [] brackets with actual values for your system._
 
-        @echo off 
+        @echo off
         echo “Running dump... “
-        c:\<path-to-mysql>\bin\mysqldump -u[user] -p[password] --result-file="c:\<path>\backup.%DATE:~0,3%.sql" [database name] 
+        c:\<path-to-mysql>\bin\mysqldump -u[user] -p[password] --result-file="c:\<path>\backup.%DATE:~0,3%.sql" [database name]
         echo “MySQL dump done!”
         echo “Uploading to cloud files”
         upload-to-cf.exe [cloud username] [cloud api_key] [container name] “c:\<path>\backup.%DATE:~0,3%.sql”

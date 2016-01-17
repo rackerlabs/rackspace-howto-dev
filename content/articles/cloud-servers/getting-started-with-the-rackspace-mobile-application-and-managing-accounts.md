@@ -2,24 +2,22 @@
 node_id: 3617
 title: Getting Started with the Rackspace Mobile Application and Managing Accounts
 type: article
-created_date: '2013-07-12 23:08:43'
-created_by: jamie.rosenfield
-last_modified_date: '2016-01-11 16:4627'
-last_modified_by: rose.contreras
+created_date: '2013-07-12'
+created_by: Jamie Rosenfield
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-Now that you are familiar with the Control Panel and know [how to get
-Fanatical
-Support](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-getting-fanatical-support) through
-all of our available channels, let's introduce you to an alternative
-method to using the Cloud Control Panel. The Rackspace mobile
-applications provide a seamless way for customers to access, create, and
-manage Cloud Servers across the Rackspace Cloud. Specifically, you will
-be able to create, rename, reboot, and rebuild servers; check response
-times across multiple data centers; look up the Rackspace Cloud System
-Status; and contact Rackspace Fanatical Support across all regions.
+Now that you are familiar with the Control Panel, let's introduce you to
+an alternative method to using the Cloud Control Panel. The Rackspace
+mobile applications provide a seamless way for customers to access,
+create, and manage Cloud Servers across the Rackspace Cloud.
+Specifically, you will be able to create, rename, reboot, and rebuild
+servers; check response times across multiple data centers; look up the
+Rackspace Cloud System Status; and contact Rackspace Fanatical Support
+across all regions.
 
 ### Download the Application {#GettingStartedwiththeRackspaceMobileApplication-GettingStartedwiththeRackspaceiOSApplicationandManagingAccounts}
 
@@ -42,9 +40,9 @@ Once you have installed the Rackspace application on your mobile device,
 you are ready to get started with managing Cloud Servers on your
 account!
 
--   When you arrive at the log-in screen, enter in your user
-    credentials. These will be the same Username and Password you use to
-    access the Control Panel
+-   When you arrive at the log-in screen, enter in your
+    user credentials. These will be the same Username and Password you
+    use to access the Control Panel
 -   Tap "Log In" and you will be logged into your Rackspace account and
     taken to view the Server List page
 -   To add more Rackspace accounts to the application, tap on the menu
@@ -55,58 +53,58 @@ account!
     additional account. Again, this will match the Username and Password
     used to log into the account on the Cloud Control Panel.
 
-### Creating a Cloud Server on your mobile application     {#ManagingCloudServersonyourMobileApp-CreatingaCloudServeronyourmobileapplication.1}
+### []()Creating a Cloud Server on your mobile application     {#ManagingCloudServersonyourMobileApp-CreatingaCloudServeronyourmobileapplication.1}
 
 After tapping on the "+" icon in the top right of the Server List page,
 you will see the 4 primary setup options - Name, Region, Image, and Size
 - that you will want to configure. If you select **Create Server**
 without modifying any criteria, your server will be set up with the
-default configuration details. 
+default configuration details.
 
 -   Tap on the Name field and enter your server name
--   Tap on Region to select your Region 
+-   Tap on Region to select your Region
+
+<!-- -->
 
 -   Once you return to the Select Options page, you will be able to
     select your Operating System type and version
--   Select the flavor class you want for your server<br>
-     <br>
+-   Select the flavor class you want for your server
 
-    ![](/knowledge_center/sites/default/files/field/image/3SelectFlavorClassScreen.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3SelectFlavorClassScreen.png){width="300"}
 -   Select the flavor (includes CPU, RAM and disk) on the resulting
-    screen<br>
-     <br>
+    screen
 
-    ![](/knowledge_center/sites/default/files/field/image/4SelectFlavorScreen.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4SelectFlavorScreen.png){width="300"}
 -   Once you return to the Select Options page, tap **Create Server**.
 
 You will be returned to the Server List where you will see your new
 server in the process of being built. You will be able to look at your
 new server's details, but will not be able to make any changes until the
 server creation is complete and the status has changed from yellow to
-green.            
+green.
 
 ### Rebuild, Reboot, and Rename your server
 
 On your server list, select the cloud server you want to manage. Once on
 your Server Details page you will be able to Rebuild, Reboot, and Rename
-your server.<br>
- **Note**: If you need to changed the size of your server, see [Changing
+your server.
+**Note**: If you need to changed the size of your server, see [Changing
 the size of your General Purpose Cloud
-Server](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Server](/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 -   #### Rebuild
 
     -   Tap the Image button
-    -   You will be prompted to confirm the Rebuild<br>
-         **NOTE**: Rebuilding your server will require a restart of your
-        system    
+    -   You will be prompted to confirm the Rebuild
+        **NOTE**: Rebuilding your server will require a restart of your
+        system
 -   #### Reboot
 
     -   Tap the Reboot button
     -   You will be prompted to select Hard Reboot or Soft Reboot
 
         **NOTE**: Rebooting your server will require a restart of your
-        system          
+        system
 
 -   #### Rename
 
@@ -137,17 +135,17 @@ to update the password you use to access your server
     application, you will go to your device's Settings menu.  Under the
     Accounts section, select the Rackspace application and then tap on
     the account you want to remove. Once in the Sync Settings for the
-    Rackspace application you can select "Remove Account". 
+    Rackspace application you can select "Remove Account".
 
-![](/knowledge_center/sites/default/files/field/image/Screenshot_2013-06-27-14-14-01_1.png)    
-![](/knowledge_center/sites/default/files/field/image/Screenshot_2013-06-27-13-50-20_1.png)<br>
-       
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screenshot_2013-06-27-14-14-01_1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screenshot_2013-06-27-13-50-20_1.png)
+
 
 -   To delete an account from your **iOS** Rackspace mobile application,
     you will go to the Accounts page and swipe left-to-right on the
-    account you would like to remove. You will then see a "Remove"
-    button. Tap the "Remove" button and that account will not longer be
-    synced to that mobile device.
+    account you would like to remove. You will then see a
+    "Remove" button. Tap the "Remove" button and that account will not
+    longer be synced to that mobile device.
 
-![](/knowledge_center/sites/default/files/field/image/IMG_0037_1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/IMG_0037_1.png)
 

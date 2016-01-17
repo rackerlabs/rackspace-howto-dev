@@ -2,10 +2,10 @@
 node_id: 4451
 title: Best practices for firewall rules configuration
 type: article
-created_date: '2014-12-03 16:56:38'
-created_by: rose.contreras
-last_modified_date: '2016-01-11 20:2717'
-last_modified_by: stephanie.fillmon
+created_date: '2014-12-03'
+created_by: Rose Contreras
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---

@@ -2,35 +2,35 @@
 node_id: 3653
 title: Permissions Matrix for Cloud Networks
 type: article
-created_date: '2013-08-20 20:40:08'
-created_by: renee.rendon
-last_modified_date: '2016-01-11 22:3900'
-last_modified_by: rose.contreras
+created_date: '2013-08-20'
+created_by: Renee Rendon
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
 
 The following permissions matrix displays specific permissions for the
 roles in Cloud Networks. The matrix displays the method names, their
-corresponding RESTful API commands, and the roles that are supported.  
+corresponding RESTful API commands, and the roles that are supported.
 
 **[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](/howto/)**
 
 **[Cloud Networks Terminology](#Cloud%20Networks%20Terminology)**
 
-**As of October 30, 2014**
+<span>**As of October 30, 2014**</span>
 
 The following permissions matrix displays specific permissions for roles
-using the Neutron API. 
+using the Neutron API.
 
 CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
 Method Name
 
@@ -42,129 +42,153 @@ Creator
 
 Admin
 
- 
+
 
 ### **NETWORKS**
 
-List Networks
+<span>List Networks</span>
 
-GET /networks
+<div>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET /networks</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+</div>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Lists networks to which the specified tenant has access.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-List Details for a Network
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-GET /networks/{network-id}
+<span>Lists networks to which the specified tenant has access.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>List Details for a Network</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET /networks/{network-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Shows information for a specified network ID.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Create a Network
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-POST /networks
+<span>Shows information for a specified network ID.</span>
 
- 
+<span>Create a Network</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>POST /networks</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
 Creates a network.
 
-Update a Specified Network
+<span>Update a Specified Network</span>
 
-PUT /networks/{network-id}
+<span>PUT /networks/{network-id}</span>
 
- 
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Updates editable attributes for a specified network.
 
-Delete a Specified Network
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-DELETE /networks/{network-id}
+<span>Updates editable attributes for a specified network.</span>
 
- 
+<span>Delete a Specified Network</span>
 
- 
+<span>DELETE /networks/{network-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+
+
+
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
 Deletes the specified network and its associated resources.
 
 ### **SUBNETS**
 
-List Subnets
+<span>List Subnets</span>
 
-GET /subnets
+<span>GET /subnets</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Lists subnets to which the specified tenant has access.
+<span>Lists subnets to which the specified tenant has access.</span>
 
-List Details for a Subnet
+<span>List Details for a Subnet</span>
 
-GET /subnets/{subnet-id}
+<span>GET /subnets/{subnet-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Shows information for a specified subnet.
+<span>Shows information for a specified subnet.</span>
 
 Create a Subnet
 
-POST /subnets
+<span>POST /subnets</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Creates a subnet on a specified network.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Update a Specified Subnet
+<span>Creates a subnet on a specified network.</span>
 
-PUT /subnets/{subnet-id}
+<span>Update a Specified Subnet</span>
 
- 
+<span>PUT /</span><span>subnets/{subnet-id}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Updates editable attributes for a specified subnet.
+
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Updates editable attributes for a specified subnet.</span>
 
 Delete a Subnet
 
-DELETES /subnets/{subnet-id}
+<span>DELETES /subnets/{subnet-id}</span>
 
- 
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
 Deletes a specified subnet.
 
@@ -172,74 +196,84 @@ Deletes a specified subnet.
 
 List Ports
 
-GET /ports
+<span>GET /ports</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Lists ports to which the tenant has access.
+<span>Lists ports to which the tenant has access.</span>
 
 List Details for a Port
 
-GET /ports/{port-id}
+<span>GET /ports/{port-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Shows information for a specified port.
+<span>Shows information for a specified port.</span>
 
 Create a Port
 
-POST /ports
+<span>POST /ports</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Creates a port on a specified network.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Update Editable Attribute of a Port
+<span>Creates a port on a specified network.</span>
 
-PUT /ports/{port-id}
+<span>Update Editable Attribute of a Port</span>
 
- 
+<span>PUT /ports/{port-id}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Updates a editable attributes for a specified port.
 
-Delete Specified Port
 
-DELETE /ports/{port-id}
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- 
+<span>Updates a editable attributes for a specified port.</span>
 
- 
+<span>Delete Specified Port</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>DELETE /ports/{port-id}</span>
 
-Deletes a specified port.
 
- 
 
-The following permissions matrix displays specific permissions for the
-roles using the nova-network API. 
+
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Deletes a specified port.</span>
+
+
+
+<span>The following permissions matrix displays specific permissions for
+the roles using the nova-network</span><span> API. </span>
 
 CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
 Method Name
 
@@ -251,154 +285,174 @@ Creator
 
 Admin
 
- 
 
-**Networks**
 
- 
+**<span>Networks</span>**
 
- 
 
- 
 
- 
 
- 
 
-List Networks 
 
-GET/os-networksv2
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span> </span>
+
+List Networks
+
+<span>GET/os-networksv2</span>
+
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
 Lists the networks configured for a specified tenant ID.
 
-Create Network 
+Create Network
 
 POST/os-networksv2
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Creates a network for the specified tenant ID.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Creates a network for the specified tenant ID.</span>
 
 Provision Server and Attach Networks
 
 POST/servers
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Provisions a new server and attaches networks.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Provisions a new server and attaches networks.</span>
 
 Show Network
 
 GET/os-networkv2/id
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Shows information for a specified network ID. 
+<span>Shows information for a specified network ID. </span>
 
-Delete Network 
+Delete Network
 
-DELETE/GET/os-networkv2/id
+<span>DELETE/</span>GET/os-networkv2/id
 
- 
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
- Deletes the specified network.
 
-**Virtual Interfaces**
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- 
+<span> Deletes the specified network.</span>
 
- 
+**<span>Virtual Interfaces</span>**
 
- 
 
- 
 
- 
+
+
+
+
+
+
+<span> </span>
 
 List Virtual Interfaces
 
-GET/servers/instance\_id/os-virtual-interfacesv2
+<span>GET/servers/instance\_id/os-virtual-interfacesv2</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Lists the virtual interfaces configured for a server instance.
+<span>Lists the virtual interfaces configured for a server
+instance.</span>
 
 Create Virtual Interface
 
 POST/servers/instance\_id/os-virtual-interfacesv2
 
- 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Creates a virtual interface for a network and attaches the network to a
-server instances.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Creates a virtual interface for a network and attaches the network
+to a server instances.</span>
 
 Delete Virtual Interface
 
-DELETE/servers/instances\_id/os-virtual-interfacesv2/interface\_id
+<span>DELETE/servers/instances\_id/os-virtual-interfacesv2/interface\_id</span>
 
- 
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
- Deletes a virtual interface from a server instance.
 
- 
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span> Deletes a virtual interface from a server instance.</span>
+
+
 -
 
-Cloud Networks Terminology
---------------------------
+[]()Cloud Networks Terminology
+------------------------------
 
-**Network**
+**<span>Network</span>**
 
-A sequence of connection points that communicate with each other.
+<span><span>A sequence of connection points that communicate with each
+other.</span></span>
 
-**Server**
+**<span>Server</span>**
 
-A virtual machine (VM) instance in the Cloud Servers environment. To
-create a server, you must specify a name, flavor reference, and image
-reference.
+<span>A virtual machine (VM) instance in the Cloud Servers environment.
+To create a server, you must specify a name, flavor reference, and image
+reference.</span>
 
-**Virtual Interface**
+**<span>Virtual Interface</span>**
 
-An extension to the networking API that is specifically used for
-attaching and detaching networks.
+<span><span>An extension to the networking API that is specifically used
+for a</span></span><span><span>ttaching and detaching
+networks.</span></span>
 
-###  
+### <span> </span>
 
-[\< Permissions Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
--------------------------------------------------------------------------------------------------------------------------------------------
+[&lt; Permissions Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+---------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+
 

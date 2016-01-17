@@ -2,10 +2,10 @@
 node_id: 4751
 title: Monitoring entities with Rackspace Intelligence
 type: article
-created_date: '2015-07-17 10:27:17'
-created_by: rose.coste
-last_modified_date: '2015-08-17 21:4306'
-last_modified_by: kyle.laffoon
+created_date: '2015-07-17'
+created_by: Rose Coste
+last_modified_date: '2015-08-17'
+last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -29,32 +29,33 @@ To see a list of the entities known to Rackspace Intelligence,
 select **Monitor** at the top of the Rackspace Intelligence interface,
 and then click **Entities**.
 
-![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-create-entity-top-bar.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-create-entity-top-bar.png){width="729"
+height="283"}
 
 From the Monitor Entities section, you can perform the following actions
 on the list of entities:
 
 -   [Sort
-    entities](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#sort-entities)
+    entities](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [View the details of an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#see-details-entities)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Create an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#create-entities)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Update an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#update-entities)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Visualize an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#visualize-entity)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 
-Sort entities
--------------
+[](){#sort-entities}Sort entities
+---------------------------------
 
 You can sort the list of monitored entities by entity name, by the
 number of alarms reported for each entity in the Critical, Warning, and
 OK categories, and by the number of monitoring checks reported for each
 entity.
 
-View the details of an entity
------------------------------
+[](){#see-details-entities}View the details of an entity
+--------------------------------------------------------
 
 All the entity labels in Rackspace Intelligence are linked to an entity
 details page. To view the details page for an entity, click on the
@@ -70,13 +71,14 @@ If the entity is a cloud server, the details page provides the same
 information that you can get about the server by using the Cloud Control
 Panel or by logging in to the server itself.
 
-Create an entity
-----------------
+[](){#create-entities}Create an entity
+--------------------------------------
 
 1.  To create a new entity, on the Monitoring page, click **Create
     Entity**.
 
-![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-create-entity-button.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-create-entity-button.png){width="606"
+height="207"}
 
 2.  Type a name for your entity and click **Create Entity.**
 
@@ -84,8 +86,8 @@ Rackspace Intelligence creates the entity and displays the information
 on the entity details page. You can now update the entity by adding an
 IP address or a check. See the next section for instructions.
 
-Update an entity
-----------------
+[](){#update-entities}Update an entity
+--------------------------------------
 
 You can update an existing entity by clicking the **Actions** menu at
 the top of the entity details page.
@@ -93,31 +95,31 @@ the top of the entity details page.
 You can perform the following updates on an entity:
 
 -   [Rename an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#rename-entities)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Add an IP address to an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#adding-ip-address)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Delete an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#deleting-entity)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Create a check for an
-    entity](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#creating-check)
+    entity](/howto/monitoring-entities-with-rackspace-intelligence)
 -   [Create a
-    suppression](https://admin.rackspace.com/knowledge_center/article/monitoring-entities-with-rackspace-intelligence#create-suppression)
+    suppression](/howto/monitoring-entities-with-rackspace-intelligence)
 
-### Rename an entity
+### [](){#rename-entities}Rename an entity
 
-1.  To rename an entity, select **Rename Entity**from the **Actions**
-    menu.
-2.  Type a new name in the **Rename Entity**box, and then
+1.  To rename an entity, select **Rename Entity** from the
+    **Actions** menu.
+2.  Type a new name in the **Rename Entity** box, and then
     click **Rename**.
 
 The new name appears on the entity details page.
 
-### Add an IP address to an entity
+### [](){#adding-ip-address}Add an IP address to an entity
 
 You can add one or more IP addresses to an entity. You can reference
 these IP addresses by the checks on the entity.
 
-1.  To add one or more IP addresses, select **Add IP**from the
+1.  To add one or more IP addresses, select **Add IP** from the
     **Actions** menu..
 2.  On the **IP Addresses** page, specify a label for the IP address,
     type the numbers for the IP address, and then click **Add**.
@@ -126,65 +128,67 @@ these IP addresses by the checks on the entity.
 
 The IP addresses that you added appear on the entity details page.
 
-### Delete an entity
+### [](){#deleting-entity}Delete an entity
 
-1.  To delete an entity, select **Delete Entity**from the **Actions**
-    menu.
+1.  To delete an entity, select **Delete Entity** from the
+    **Actions** menu.
 2.  To confirm that you want to permanently delete the entity,
     click **Delete**.
 
 The entity is permanently deleted from the database and is no longer
 monitored by Rackspace.
 
-### Create a check for an entity
+### [](){#creating-check}Create a check for an entity
 
-1.  To create a check for an entity, select **Create Check**from the
+1.  To create a check for an entity, select **Create Check** from the
     **Actions** menu.
 2.  Select a check from the **Check Type** list, and then enter all the
     required information.
 
 **Note:** Different check types require different values of input. For
 more information, see [Working with
-checks.](/knowledge_center/article/working-with-checks)
+checks.](/howto/working-with-checks)
 
 1.  Click **Create Check**.
 
 Rackspace Intelligence creates the check and displays the details on the
 check details page. If your check requires a monitoring agent to be
 installed to collect metrics, a message is displayed in the **Check
-Details**section.
+Details** section.
 
-### Create a suppression
+### [](){#create-suppression}Create a suppression
 
-1.  To create a suppression, select **Create Suppression**from the
+1.  To create a suppression, select **Create Suppression** from the
     **Actions** menu.
 
 On the **Create a Suppression** page, your entity is displayed in
 the **Suppression Targets** section.
 
-1.  Type a name for your suppression, and specify the start and end
-    dates.
+1.  Type a name for your suppression, and specify the start and
+    end dates.
 2.  To add an additional entity to this supression, click **Add
     Entities **and select one or more entities.
 3.  Click **Create Suppression**.
 
-![](/knowledge_center/sites/default/files/field/image/intelligence-entities-create-suppression.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-entities-create-suppression.png){width="899"
+height="607"}
 
 5.  When asked to confirm that you want to create a suppression,
     click **Create Suppression Now**.
 
 For more information about suppressions, see [Working with notification
-suppressions](/knowledge_center/article/working-with-notification-suppressions).
+suppressions](/howto/working-with-notification-suppressions-in-rackspace-intelligence).
 
-Visualize an entity
--------------------
+[](){#visualize-entity}Visualize an entity
+------------------------------------------
 
 In the list of entities, click in the **Visualize** column of the row
 for an entity to launch a **Default Graphs** presentation for the
 entity. The page shows any graphs that are available for checks
 configured for the entity.
 
-![](/knowledge_center/sites/default/files/field/image/intelligence-visualize-defaultgraphs-1on1off.png)
+![](/knowledge_center/sites/default/files/field/image/intelligence-visualize-defaultgraphs-1on1off.png){width="743"
+height="280"}
 
 For checks that are defined but not configured, a link to begin the
 process of configuring the check is provided.

@@ -2,10 +2,10 @@
 node_id: 2176
 title: Creating MX Records for Google Apps through the Cloud Control Panel
 type: article
-created_date: '2012-09-19 20:59:16'
-created_by: lee.jelley
-last_modified_date: '2016-01-05 16:5322'
-last_modified_by: rose.contreras
+created_date: '2012-09-19'
+created_by: Lee Jelley
+last_modified_date: '2016-01-05'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -35,13 +35,14 @@ the Cloud Control Panel.
 
 If you need help finding the screen to add a record to a domain we have
 an article with more details for our [Cloud Control
-Panel](/knowledge_center/article/creating-a-dns-records-for-cloud-servers-next-generation-control-panel).
+Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 Once we're on the &ldquo;Add DNS Record&rdquo; screen we should be able to fill in
 the necessary information for each record.  Let's have a look at the
 interface in the control panel:
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/addrecord.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/addrecord.png){width="570"
+height="382"}
 
 As in the example above, you'll need to select "MX Record" as the record
 type to create a Mail Exchanger record for inbound email. Start with the

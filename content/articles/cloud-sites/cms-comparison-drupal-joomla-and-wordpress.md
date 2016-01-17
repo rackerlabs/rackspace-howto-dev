@@ -2,10 +2,10 @@
 node_id: 1052
 title: 'CMS Comparison: Drupal, Joomla, and WordPress'
 type: article
-created_date: '2011-03-27 22:02:55'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 16:3926'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-27'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: markdown_w_tinymce
 ---

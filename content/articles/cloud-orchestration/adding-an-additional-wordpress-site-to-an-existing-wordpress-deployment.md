@@ -2,10 +2,10 @@
 node_id: 3810
 title: Add another WordPress site to an existing Cloud Orchestration stack
 type: article
-created_date: '2013-12-13 16:46:48'
-created_by: jered.heeschen
-last_modified_date: '2016-01-12 14:5109'
-last_modified_by: stephanie.fillmon
+created_date: '2013-12-13'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
 body_format: markdown_w_tinymce
 ---
@@ -22,7 +22,7 @@ Adding a site to an existing stack requires changes to the configurations for mu
 
 2. In the top navigation bar, click **Orchestration > Stacks** to view the list of existing stacks.
 
-     <img src="/knowledge_center/sites/default/files/field/image/orchestration-nav.png" width="479" height="131" border="2" alt=""  />
+     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/orchestration-nav.png" width="479" height="131" border="2" alt=""  />
 
 3. From the Stacks list, click on the name of the stack to which you want to add a WordPress site.
 
@@ -36,7 +36,7 @@ Adding a site to an existing stack requires changes to the configurations for mu
 
         ssh user@<ip_address_of_backend_server> -i /path/to/key
 
-If you do not have the private key, you can reset the backend server's root password. For help connecting to your server via SSH, see the articles on using SSH with a private key in our Knowledge Center for [Mac and Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows).
+If you do not have the private key, you can reset the backend server's root password. For help connecting to your server via SSH, see the articles on using SSH with a private key in our Knowledge Center for [Mac and Linux](/howto/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](/howto/logging-in-with-an-ssh-private-key-on-windows).
 
 ### Database Setup
 
@@ -64,7 +64,7 @@ Now that the database is ready, we can begin installing WordPress on the master 
 
 1. From the stack's detail page, click the link for the "master" server.
 
-    <img src="/knowledge_center/sites/default/files/field/image/cpdeploymentsmasterlist.png" width="600" border="2" alt="List of stacks with the backend node highlighted"  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cpdeploymentsmasterlist.png" width="600" border="2" alt="List of stacks with the backend node highlighted"  />
 
     On the master server's detail page, you will find the PublicNet IP address in the Networks section.
 
@@ -105,7 +105,7 @@ Now that the database is ready, we can begin installing WordPress on the master 
         sudo tar --strip-components 1 -xvzf ~/latest.tar.gz -C http_docs/
 
 6. Change to the http_docs directory.
-    
+
         cd http_docs/
 
     The extracted WordPress files should be present, including the wp-config-sample.php file.
@@ -117,11 +117,11 @@ Now that the database is ready, we can begin installing WordPress on the master 
 8. Edit the new configuration file and add some extras to help with file permissions and load balancing.
 
     For HTTP-only sites, you can easily make the necessary changes by running, all on one line:
-    
+
         sudo bash -c "echo -e "define('FS_METHOD', \"direct\");\ndefine('FS_CHMOD_DIR', (02775 & ~umask()));\ndefine('FS_CHMOD_FILE', (0664 & ~ umask()));\ndefine('FORCE_SSL_ADMIN', false);\nif ( isset(\$_SERVER['HTTP_X_PROXY_PROTO']) && \$_SERVER['HTTP_X_PROXY_PROTO'] == 'HTTPS' ) { \$_SERVER['HTTPS'] = 1; }" >> wp-config.php"
-    
+
     If you are running an HTTPS site, run this command instead:
-    
+
         sudo bash -c "echo -e "define('FS_METHOD', \"direct\");\ndefine('FS_CHMOD_DIR', (02775 & ~umask()));\ndefine('FS_CHMOD_FILE', (0664 & ~ umask()));\ndefine('FORCE_SSL_ADMIN', true);\nif ( isset($_SERVER['HTTP_X_PROXY_PROTO']) && \$_SERVER['HTTP_X_PROXY_PROTO'] == 'HTTPS' ) { \$_SERVER['HTTPS'] = 1; }" >> wp-config.php"
 
 9. Generate new secure keys using the WordPress API.
@@ -152,16 +152,16 @@ Now that the database is ready, we can begin installing WordPress on the master 
         // ** MySQL settings - You can get this info from your web host ** //
         /** The name of the database for WordPress */
         define('DB_NAME', 'database_name_here');
-        
+
         /** MySQL database username */
         define('DB_USER', 'username_here');
-        
+
         /** MySQL database password */
         define('DB_PASSWORD', 'password_here');
-        
+
         /** MySQL hostname */
         define('DB_HOST', 'localhost');
-    
+
     For the `DB_HOST` value, replace `localhost` with the ServiceNet IP address of the backend server.
 
 13. Run `wordpress-cli-installer`, passing it arguments for the site's base URL, title, admin email address, and WordPress location.
@@ -325,9 +325,9 @@ Next, we need to create the new user on each slave node in order to prepare for 
 5. Run an `id` command through `pssh` to verify the user creation on each slave node, again adding `-H` flags for each additional slave node.
 
         parallel-ssh -P -H <ip_address_of_slave_node> -x "-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o GlobalKnownHostsFile=/dev/null" id wp_user2
-    
+
     You should see something similar to the following from each slave node:
-    
+
         uid=1001(wp_user2) gid=1001(wp_user2) groups=1001(wp_user2),33(www-data)
 
 6. Copy the new site's content from the master server to each slave server using `rsync`.

@@ -2,10 +2,10 @@
 node_id: 1497
 title: Learn More About DNS
 type: article
-created_date: '2012-07-24 00:14:56'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:3520'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -14,28 +14,32 @@ The Basics
 ----------
 
 [Rackspace Name
-Servers](http://www.rackspace.com/knowledge_center/article/rackspace-name-servers "Rackspace Name Servers")
+Servers](/howto/rackspace-name-servers "Rackspace Name Servers")
 
 [Choosing Record
-Types](http://www.rackspace.com/knowledge_center/article/choosing-record-types "Choosing Record Types")
+Types](/howto/choosing-dns-record-types "Choosing Record Types")
+
+<div>
 
 [Creating a Reverse DNS
-Record](http://www.rackspace.com/knowledge_center/article/create-a-reverse-dns-record-0)
+Record](/howto/create-a-reverse-dns-record-0)
 
- 
+
+
+</div>
 
 Best Practices
 --------------
 
 [Setting Up SPF and DKIM
-Records](http://www.rackspace.com/knowledge_center/article/set-up-spf-and-dkim-records)
+Records](/howto/set-up-spf-and-dkim-records)
 
 [Transferring Your Domain to
-Rackspace](http://www.rackspace.com/knowledge_center/article/serving-your-domain-from-a-rackspace-cloud-server)
+Rackspace](/howto/serving-your-domain-from-a-rackspace-cloud-server)
 
- 
 
- 
+
+
 
 Additional Resources
 --------------------

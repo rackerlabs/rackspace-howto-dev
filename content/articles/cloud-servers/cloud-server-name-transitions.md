@@ -2,10 +2,10 @@
 node_id: 4387
 title: Cloud server name transitions
 type: article
-created_date: '2014-10-28 18:10:40'
-created_by: TFDuesing
-last_modified_date: '2016-01-14 20:2459'
-last_modified_by: rose.coste
+created_date: '2014-10-28'
+created_by: Thomas Duesing
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -25,7 +25,7 @@ The current flavor names relate to deprecated flavor names as follows:
     previously known as Performance 1.
 -   **I/O Optimized** flavor class for *virtual* cloud servers was
     previously known as Performance 2.
--   **OnMetal I/O** flavor class for *OnMetal*cloud servers was
+-   **OnMetal I/O** flavor class for *OnMetal* cloud servers was
     previously known as Performance 2.
 -   **Compute Optimized** flavor class for *virtual* cloud servers had
     no previous name.

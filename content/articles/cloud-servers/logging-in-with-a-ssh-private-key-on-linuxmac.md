@@ -2,9 +2,9 @@
 node_id: 3706
 title: Logging in with an SSH Private Key on Linux/Mac
 type: article
-created_date: '2013-09-25 14:34:37'
-created_by: brint.ohearn
-last_modified_date: '2016-01-05 17:1010'
+created_date: '2013-09-25'
+created_by: Brint Ohearn
+last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Servers
 body_format: tinymce
@@ -28,7 +28,7 @@ In this example, we use the vim text editor.
 **Note: ** These instructions apply to the Linux and OS X operating
 systems.  For information about using SSH private keys on Windows
 operating systems, see [Logging in with an SSH Private Key on
-Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows).
+Windows](/howto/logging-in-with-an-ssh-private-key-on-windows).
 
 #### Logging in with a private key
 
@@ -40,14 +40,15 @@ To edit the file in vim, type the following command
        vim deployment_key.txt
 
 After the editor starts, press 'i' to turn on insert mode. Then, paste
-the private key into the file.<br>
- Note that you need to include the **BEGIN** and **END** lines to use
-the private key.<br>
- ![](/knowledge_center/sites/default/files/field/image/Linux2.png)
+the private key into the file.
+Note that you need to include the **BEGIN** and **END** lines to use the
+private key.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Linux2.png){width="764"
+height="660"}
 
 To save your changes, press Escape. Then, type &lsquo;:wq&rsquo; to write the file
-and return to the command line.<br>
- After saving the file, run the following command to change the file
+and return to the command line.
+After saving the file, run the following command to change the file
 permissions to 600 to secure the key. You can also set them to 400.
 ***This step is required***:
 

@@ -2,10 +2,10 @@
 node_id: 614
 title: Set up custom error messages in ASP.NET on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-23 16:4232'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-23'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---

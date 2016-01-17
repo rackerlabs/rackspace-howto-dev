@@ -2,10 +2,10 @@
 node_id: 4293
 title: Cloud Orchestration disclaimer
 type: article
-created_date: '2014-10-03 06:54:16'
+created_date: '2014-10-03'
 created_by: Rackspace Support
-last_modified_date: '2014-10-03 07:0943'
-last_modified_by: jered.heeschen
+last_modified_date: '2014-10-03'
+last_modified_by: Jered Heeschen
 product: Cloud Orchestration
 body_format: tinymce
 ---

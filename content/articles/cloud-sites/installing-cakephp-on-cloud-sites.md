@@ -2,10 +2,10 @@
 node_id: 125
 title: Installing CakePHP on Cloud Sites
 type: article
-created_date: '2011-03-14 20:17:11'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:1904'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-14'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -32,11 +32,11 @@ This article assumes you have already done the following:
 For information on how to do this, see the following articles:
 
 -   [How do I change my site's default
-    technology?](http://www.rackspace.com/knowledge_center/article/change-your-sites-default-technology "How do I change my site's default technology?")
+    technology?](/howto/change-your-sites-default-technology "How do I change my site's default technology?")
 -   [How do I add a MySQL database to my
-    site?](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
+    site?](/howto/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
 -   [How do I add content to my
-    website?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content "How do I add content to my website?")
+    website?](/howto/getting-started-with-cloud-sites-uploading-your-content "How do I add content to my website?")
 
 CakePHP installation
 --------------------
@@ -52,7 +52,7 @@ CakePHP installation
 
     **Notice (1024):** Please change the value of Security.salt in
     app/config/core.php to a salt value specific to your application
-    [CORE/cake/libs/debugger.php, line 556].
+    \[CORE/cake/libs/debugger.php, line 556\].
 
 3.  Open the `app/config/core.php` file and search for `Security.salt`.
     Change its value to the characters or string you prefer, then save
@@ -68,7 +68,7 @@ CakePHP installation
 
 If you have problems getting CakePHP to work in a subdirectory, read the
 information in the following article:
-[http://cookingwithcakephp.blogspot.com/2008/04/installing-cakephp-into-subdirectory.html](http://cookingwithcakephp.blogspot.com/2008/04/installing-cakephp-into-subdirectory.html "http://cookingwithcakephp.blogspot.com/2008/04/installing-cakephp-into-subdirectory.html")
+<http://cookingwithcakephp.blogspot.com/2008/04/installing-cakephp-into-subdirectory.html>
 
- 
+
 

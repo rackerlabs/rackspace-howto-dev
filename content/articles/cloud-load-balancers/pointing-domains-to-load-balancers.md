@@ -2,10 +2,10 @@
 node_id: 1490
 title: Pointing Domains to Load Balancers
 type: article
-created_date: '2012-07-24 00:07:58'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:2005'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -19,14 +19,14 @@ servers behind a new load balancer. Intead of pointing your domain
 directly to the old server, you can now point it to the new load
 balancer, which will distribute the traffic evenly and prevent server
 overload. Additionally, you could also create several new domains that
-point to the load balancer.  
+point to the load balancer.
 
 This article describes how to point an existing domain to a Cloud Load
 Balancer. For instructions on creating a new Load Balancer,
 see [Configuring a Load
-Balancer](http://www.rackspace.com/knowledge_center/article/configure-a-load-balancer).
+Balancer](/howto/configure-a-load-balancer).
 
-### Pointing an Existing Domain to a Load Balancer {.p1}
+### Pointing an Existing Domain to a Load Balancer {#pointing-an-existing-domain-to-a-load-balancer .p1}
 
 1.  Click **Load Balancers **at the top of the Control Panel.
 2.  Click on an existing load balancer to see the **Load Balancer

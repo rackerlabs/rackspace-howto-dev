@@ -2,10 +2,10 @@
 node_id: 92
 title: CentOS 6 - Apache and PHP Install
 type: article
-created_date: '2011-03-09 18:24:07'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 03:2749'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -52,7 +52,7 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 
 ## <a name="open-port"></a>Open the port to run Apache
 
-In some versions of CentOS, a firewall is installed by default that blocks access to port 80, on which Apache runs. 
+In some versions of CentOS, a firewall is installed by default that blocks access to port 80, on which Apache runs.
 
 1. To open the port, run the following command.
 

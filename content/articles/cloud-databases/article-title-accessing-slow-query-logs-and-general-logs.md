@@ -2,10 +2,10 @@
 node_id: 4141
 title: Access slow query and general logs for Cloud Databases
 type: article
-created_date: '2014-07-17 03:20:03'
-created_by: rose.contreras
-last_modified_date: '2016-01-07 16:0550'
-last_modified_by: Nate.Archer
+created_date: '2014-07-17'
+created_by: Rose Contreras
+last_modified_date: '2016-01-07'
+last_modified_by: Nate Archer
 product: Cloud Databases
 body_format: markdown_w_tinymce
 ---
@@ -14,9 +14,9 @@ Database logs can be useful tools when analyzing database performance or trouble
 
 ## Prerequisites
 
-The steps in this article require that you have an existing MySQL configuration group or create a new one. A MySQL configuration group holds the values for MySQL options used at startup. To learn more about MySQL configuration groups, see [Managing configuration groups for cloud databases with the Trove command line tool](http://www.rackspace.com/knowledge_center/article/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
+The steps in this article require that you have an existing MySQL configuration group or create a new one. A MySQL configuration group holds the values for MySQL options used at startup. To learn more about MySQL configuration groups, see [Managing configuration groups for cloud databases with the Trove command line tool](/howto/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
 
-The examples use trove to make changes to configuration groups. Instructions for installing and configuring trove can be found in [Managing configuration groups for cloud databases with the Trove command line tool](http://www.rackspace.com/knowledge_center/article/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
+The examples use trove to make changes to configuration groups. Instructions for installing and configuring trove can be found in [Managing configuration groups for cloud databases with the Trove command line tool](/howto/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool).
 
 To apply configuration groups you will need to enable root access to the database instance. This can be done through the [Cloud Databases API](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/POST_createRoot__version___accountId__instances__instanceId__root_Database_Instances.html) or with a trove command:
 
@@ -33,7 +33,7 @@ To enable the logging of slow queries:
 1.  Grant root access to the `mysql.slow_log` table.
 
 2.  Set the configuration parameters that enable logging slow queries to the `mysql.slow_log` table:
-	
+
 	<table border="1">
 		<tbody>
 			<tr>
@@ -55,11 +55,11 @@ To enable the logging of slow queries:
 	</table>
 
 	For example, to create a new configuration group with trove that enables slow query logging, run:
-			
+
         trove configuration-create EnableSlowQueryLog '{"log_output":"'TABLE'"}' --datastore MySQL
 
 3.  Optionally, set the configuration parameters that define the conditions under which queries are written to the slow query log:
-				
+
 	<table border="1">
 		<tbody>
 			<tr>
@@ -108,7 +108,7 @@ For more information about the MySQL general query log, see the [MySQL documenta
 1.  Grant root access to the `mysql.general_log` table.
 
 2.  Set the configuration parameters that enable logging server activity to the `mysql.general_log` table:
-		
+
 	<table border="1">
 			<tbody>
 				<tr>
@@ -125,9 +125,9 @@ For more information about the MySQL general query log, see the [MySQL documenta
 		</table>
 
 	For example, to create a new configuration group with trove that enables general query logging, run:
-	
+
 		trove configuration-create EnableGeneralLog '{"log_output":"'TABLE'","slow_query_log":1}' --datastore MySQL
-		
+
 3.  Optionally, set the configuration parameter that tells MySQL how long to keep logs.
 
 	<table border="1">
@@ -144,7 +144,7 @@ For more information about the MySQL general query log, see the [MySQL documenta
 					</tr>
 				</tbody>
 			</table>
-			
+
 	For example, to add a parameter to the configuration group created in the previous step that will cause logs to be deleted after one day, run:
 
     <pre>trove configuration-patch <em>configID</em> '{"expire_logs_days":1}'</pre>
@@ -157,14 +157,14 @@ For more information about the MySQL general query log, see the [MySQL documenta
 
     <pre>mysql -e "set global general_log = 1"</pre>
 
-    At the moment, the above variable can only be set dynamically on a running instance due to the overwhelming amount of data this change may generate. 
+    At the moment, the above variable can only be set dynamically on a running instance due to the overwhelming amount of data this change may generate.
 
     You can also disable general log with this command:
 
     <pre>mysql -e "set global general_log = 0"</pre>
 
 **Note:** General logging will be disable when you restart a MySQL instance.
-     		
+
 6.  After the configuration is applied to your server, you can retrieve the general query log from the database with a query. For example:
 
         mysql -e "select * from mysql.general_log order by event_time desc limit 1\G"

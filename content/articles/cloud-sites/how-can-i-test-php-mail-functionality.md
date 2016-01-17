@@ -2,10 +2,10 @@
 node_id: 569
 title: Test PHP mail functionality
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-12 19:0518'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-12'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---

@@ -2,10 +2,10 @@
 node_id: 397
 title: MySQL - Connect to your database remotely
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 18:5142'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,26 +13,31 @@ body_format: tinymce
 This tutorial will walk you through setting up a user on your MySQL
 server to connect remotely.
 
--   [Getting your IP address](#Getting_your_IP_address)
--   [Granting Access](#Granting_Access)
--   [Testing Remotely](#Testing_Remotely)
--   [Notes](#Notes)
+-   [<span class="toctext">Getting your IP
+    address</span>](#Getting_your_IP_address)
+-   [<span class="toctext">Granting Access</span>](#Granting_Access)
+-   [<span class="toctext">Testing Remotely</span>](#Testing_Remotely)
+-   [<span class="toctext">Notes</span>](#Notes)
 
 The following items are assumed:
 
 -   You have access to login as the 'root' MySQL user
 
-Getting your IP address
------------------------
+[](){#Getting_your_IP_address}
+
+<span class="mw-headline">Getting your IP address </span>
+---------------------------------------------------------
 
 You will need to know what the IP address you are connecting from. To
 find this you can go to one of the following sites:
 
--   [http://www.ipchicken.com](http://www.ipchicken.com "http://www.ipchicken.com")
--   [http://www.whatismyip.com](http://www.whatismyip.com "http://www.whatismyip.com")
+-   <http://www.ipchicken.com>
+-   <http://www.whatismyip.com>
 
-Granting Access
----------------
+[](){#Granting_Access}
+
+<span class="mw-headline">Granting Access </span>
+-------------------------------------------------
 
 Granting access to a user from a remote host is fairly simple and can be
 accomplished from just a few steps. First you will need to login to your
@@ -59,14 +64,16 @@ This statement will grant ALL permissions to the newly created user
 *fooUser* with a password of 'my\_password' when they connect from the
 IP address *1.2.3.4*.
 
-Testing Remotely
-----------------
+[](){#Testing_Remotely}
+
+<span class="mw-headline">Testing Remotely </span>
+--------------------------------------------------
 
 Now you can test your connection remotely. You can access your MySQL
 server from another Linux server:
 
     # mysql -u fooUser -p -h 44.55.66.77
-    Enter password: 
+    Enter password:
     Welcome to the MySQL monitor.  Commands end with ; or \g.
     Your MySQL connection id is 17
     Server version: 5.0.45 Source distribution
@@ -77,18 +84,20 @@ server from another Linux server:
 
 Note that the IP of our MySQL server is 44.55.66.77 in this example.
 
-Notes
------
+[](){#Notes}
+
+<span class="mw-headline">Notes </span>
+---------------------------------------
 
 There are a few things to note when setting up these remote users:
 
--   When setting up users a local user is not the same thing as a remote
-    user. For instance fooUser@localhost is not the same as
-    fooUser@1.2.3.4. You will have to duplicate permissions if you want
-    them to have the same permissions.
+-   When setting up users a local user is not the same thing as a
+    remote user. For instance fooUser@localhost is not the same
+    as fooUser@1.2.3.4. You will have to duplicate permissions if you
+    want them to have the same permissions.
 -   Granting ALL permissions is **not advised**. Using *GRANT
-    SELECT,INSERT,UPDATE,DELETE* is a wise alternative for a normal
-    user.
+    SELECT,INSERT,UPDATE,DELETE* is a wise alternative for a
+    normal user.
 -   If you would like to grant only to a specific table you can use
     *database.table* instead of *database.\**. In respect to our example
     above you could put *fooDatabase.fooTable*.
@@ -98,5 +107,5 @@ There are a few things to note when setting up these remote users:
     *iptables* and you will find a list of common rule sets which
     include an entry for MySQL.
 
- 
+
 

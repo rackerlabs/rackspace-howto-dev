@@ -2,16 +2,16 @@
 node_id: 1456
 title: Create DNS Records for cloud servers with the Control Panel
 type: article
-created_date: '2012-07-13 16:46:26'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 19:4603'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-13'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: full_html
 ---
 
 **Previous section:** [Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
 This article provides instructions for creating a DNS zone for your
 domain and adding basic A, MX, and CNAME records by using the Cloud
@@ -19,7 +19,7 @@ Control Panel.
 
 To learn more about A, MX, and CNAME records for Cloud Sites, see
 [Getting started with Cloud Sites &ndash; Managing DNS
-records](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-managing-dns-records).
+records](/howto/getting-started-with-cloud-sites-managing-dns-records).
 
 -   [DNS servers for cloud servers](#H)
 -   [Create a DNS zone for your domain](#A)
@@ -30,6 +30,8 @@ records](http://www.rackspace.com/knowledge_center/article/getting-started-with-
 -   [Delete a record](#F)
 -   [Delete a domain](#G)
 
+[](){#H}
+
 DNS servers for cloud servers
 -----------------------------
 
@@ -38,16 +40,21 @@ Following are the DNS servers for your cloud servers:
 -   dns1.stabletransit.com
 -   dns2.stabletransit.com
 
+[](){#A}
+
 Create a DNS zone for your domain
 ---------------------------------
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-2.  Select **Networking \> Cloud DNS**.
+2.  Select **Networking &gt; Cloud DNS**.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%201.12.55%20PM.png)
+    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%201.12.55%20PM.png){width="470"
+    height="174"}
 
 3.  Continue with the following procedures to create the records for
     your domain's DNS zone.
+
+[](){#B}
 
 ### Add a domain
 
@@ -60,6 +67,8 @@ Create a DNS zone for your domain
 
 3.  Click **Create Domain**.
 
+[](){#C}
+
 ### Add an A record
 
 An A record is an IPv4 address record that you use to point your domain
@@ -67,8 +76,8 @@ to an IP address. It is also known as an A name.
 
 1.  On the Cloud DNS page, click the gear icon next to your domain and
     select **Add DNS Record**.
-2.  In the popup dialog box, select **A/AAAA Record** for the record
-    type.
+2.  In the popup dialog box, select **A/AAAA Record** for the
+    record type.
 3.  Enter the following information:
     -   The hostname for your domain (optional).
     -   Target (IP address of the server).
@@ -77,6 +86,8 @@ to an IP address. It is also known as an A name.
         seconds of time.
 
 4.  Click **Add Record**.
+
+[](){#D}
 
 ### Add a CNAME record
 
@@ -98,6 +109,8 @@ Use the Common Name (CNAME) record to point to another record.
         seconds of time.
 
 4.  Click **Add Record**
+
+[](){#E}
 
 ### Add an MX record
 
@@ -125,6 +138,8 @@ record for your domain name, but you cannot receive emails without it.
 
 4.  Click **Add Record**.
 
+[](){#F}
+
 ### Delete a record from your domain
 
 1.  On the Cloud DNS page, click the name of the domain.
@@ -134,12 +149,16 @@ record for your domain name, but you cannot receive emails without it.
         click **Actions**, and select **Delete records**. You can use
         this method to delete multiple records at once.
 
-        ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%205.29.36%20PM.png)
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-16%20at%205.29.36%20PM.png){width="207"
+        height="141"}
 
     -   Click the gear icon next to the record and select **Delete
         Record**.
 
-        ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%203.27.52%20PM_0.png)
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-16%20at%203.27.52%20PM_0.png){width="217"
+        height="213"}
+
+[](){#G}
 
 ### Delete a domain
 
@@ -149,12 +168,14 @@ page.
 -   Click the gear icon next to the domain, and select **Delete
     Domain**.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%205.13.13%20PM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-16%20at%205.13.13%20PM.png){width="208"
+    height="133"}
 
 -   Select the check box next to the domain and click **Delete** at the
     top of the domain list.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-16%20at%205.12.52%20PM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-16%20at%205.12.52%20PM.png){width="189"
+    height="95"}
 
 
 

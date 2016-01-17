@@ -2,17 +2,17 @@
 node_id: 4483
 title: Rackspace Cloud Backup - Install the agent on Windows by using silent installation
 type: article
-created_date: '2015-01-20 21:17:40'
-created_by: rose.contreras
-last_modified_date: '2015-09-01 16:0539'
-last_modified_by: catherine.richardson
+created_date: '2015-01-20'
+created_by: Rose Contreras
+last_modified_date: '2015-09-01'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---
 
-This article describes how to perform a fresh installation or update of the Rackspace Cloud Backup agent on your Windows server by using the silent installation method. If you are using a Linux server, see [Rackspace Cloud Backup - Install the Agent on Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-linux) for the parallel instructions.
+This article describes how to perform a fresh installation or update of the Rackspace Cloud Backup agent on your Windows server by using the silent installation method. If you are using a Linux server, see [Rackspace Cloud Backup - Install the Agent on Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
 
-**WARNING:** The silent installation procedure described in this article is for advanced users and should only be run from an administrator account. Whenever possible, you should install the Rackspace Cloud Backup agent using the interactive installation described in the article [Rackspace Cloud Backup - Install the agent on Windows](https://admin.rackspace.com/knowledge_center/node/4055/#install).
+**WARNING:** The silent installation procedure described in this article is for advanced users and should only be run from an administrator account. Whenever possible, you should install the Rackspace Cloud Backup agent using the interactive installation described in the article [Rackspace Cloud Backup - Install the agent on Windows](/howto/rackspace-cloud-backup-install-the-agent-on-windows).
 
 ## Before you install
 
@@ -48,7 +48,7 @@ During a fresh installation, the following options are used:
 
 - APIUSER (required): The user name that you use to log in to Rackspace Cloud Control Panel.
 
-- APIKEY (required): Your Rackspace Cloud API key. For information about viewing your API key, see [View and reset your API key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+- APIKEY (required): Your Rackspace Cloud API key. For information about viewing your API key, see [View and reset your API key](/howto/view-and-reset-your-api-key).
 
 - APIHOSTNAME is optional. The host address where the Cloud Backup API endpoints reside. Host addresses for various data centers are listed in the [Service Access Endpoints](http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/Service_Access_Endpoints-d1e753.html). The Service Access Endpoints should only be passing in the domain name of the endpoint and not the full URL.
 
@@ -85,6 +85,6 @@ Following are optional, less-frequently used (expert) installation options that 
 
 For more options for installing MSI packages, see [msiexec command line options](http://technet.microsoft.com/en-us/library/cc759262%28v=ws.10%29.aspx).
 
-A successful installation results in two running services, the Driveclient and the Updater. You can see these via **services.msc**. For the verification steps to test the installation, see [Test Windows installation or update](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-windows-using-silent-installation).
+A successful installation results in two running services, the Driveclient and the Updater. You can see these via **services.msc**. For the verification steps to test the installation, see [Test Windows installation or update](/howto/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation).
 
 <p>&nbsp;</p>

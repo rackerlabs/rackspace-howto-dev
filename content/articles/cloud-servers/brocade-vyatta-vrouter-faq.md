@@ -2,10 +2,10 @@
 node_id: 3781
 title: Brocade Vyatta vRouter FAQ
 type: article
-created_date: '2013-11-18 18:51:25'
-created_by: sameer.satyam
-last_modified_date: '2016-01-11 14:1812'
-last_modified_by: rose.coste
+created_date: '2013-11-18'
+created_by: Sameer Satyam
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -31,7 +31,7 @@ Each Vyatta appliance comes with one public IPv4 address assigned. Up to
 four additional public IPv4 addresses can be allocated (for a total of
 5) . Please see this article for more details: [Requesting Additional
 IPv4 Addresses for Cloud
-Servers](/knowledge_center/article/requesting-additional-ipv4-addresses-for-cloud-servers)
+Servers](/howto/requesting-additional-ipv4-addresses-for-cloud-servers)
 
 Can Vyatta be used along with RackConnect?
 ------------------------------------------
@@ -70,5 +70,5 @@ What actions are supported on Vyatta through the control panel?
 
 Control panel actions and limitations are described at the following
 link: [Vyatta Network Appliance: Supported Actions Through Cloud Control
-Panel](/knowledge_center/article/brocade-vyatta-vrouter-supported-actions-through-the-cloud-control-panel)
+Panel](/howto/brocade-vyatta-vrouter-supported-actions-through-the-cloud-control-panel)
 

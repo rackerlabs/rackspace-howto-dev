@@ -2,10 +2,10 @@
 node_id: 632
 title: Optimize SugarCRM on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 21:2451'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -15,20 +15,24 @@ body_format: tinymce
 To learn about optimization techniques for any web application,
 Rackspace recommends consulting the vendors of the application. However,
 SugarCRM does have detailed documentation on their [Support
-Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki"),
-some of which we have made available here.
+Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki"){.external
+.text}, some of which we have made available here.
 
 -   [Quick guide](#Quick_Guide)
 -   [Developer tools](#Developer_Tools)
 -   [External links](#External_Links)
 
-Quick guide
------------
+[](){#Quick_Guide}
+
+<span class="mw-headline">Quick guide</span>
+--------------------------------------------
 
 Following is the quick guide to modifying your SugarCRM configuration
 for improved performance in the cloud.
 
-### .htaccess
+[](){#htaccess}
+
+### <span class="mw-headline">.htaccess</span>
 
 Add the following PHP configuration directives to your **.htaccess**
 file:
@@ -57,13 +61,16 @@ following example when done:
     php_value timeout 601
     </IfModule>
 
-### config\_override.php
+[](){#config_overridephp}
+
+### <span class="mw-headline">config\_override.php</span>
 
 **Note:** The following configuration options should improve the
 performance of your SugarCRM installation, but might change the way some
 of the front-end looks. For a detailed explanation of the configuration
 options, see [SugarCRM's Performance Tweaks
-page](http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems").
+page](http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems"){.external
+.text}.
 
 Add the following SugarCRM configuration options to your
 **config\_override.php** file:
@@ -75,21 +82,28 @@ Add the following SugarCRM configuration options to your
     $sugar_config['save_query'] = 'populate_only';
     $sugar_config['verify_client_ip'] = false;
 
-Developer tools
----------------
+[](){#Developer_Tools}
+
+<span class="mw-headline">Developer tools</span>
+------------------------------------------------
 
 The [SugarDev.net Developer
-Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/")
-also provide some performance options that you might find useful.
+Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/"){.external
+.text} also provide some performance options that you might find useful.
 
-External links
---------------
+[](){#External_Links}
+
+<span class="mw-headline">External links</span>
+-----------------------------------------------
 
 -   [SugarCRM Support
-    Wiki](http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki")
+    Wiki](http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki"){.external
+    .text}
 -   [SugarCRM Support Wiki: Performance Tweaks for Large
-    Systems](http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems")
+    Systems](http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems"){.external
+    .text}
 -   [SugarDev.net Developer
-    Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/")
+    Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/"){.external
+    .text}
 
 

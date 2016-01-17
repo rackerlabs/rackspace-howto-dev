@@ -2,10 +2,10 @@
 node_id: 4956
 title: Use Swiftly to download an exported image
 type: article
-created_date: '2015-11-30 16:42:22'
-created_by: cloud.images
-last_modified_date: '2015-11-30 16:5758'
-last_modified_by: catherine.richardson
+created_date: '2015-11-30'
+created_by: Cloud Images
+last_modified_date: '2015-11-30'
+last_modified_by: Catherine Richardson
 product: Cloud Images
 body_format: tinymce
 ---
@@ -22,9 +22,9 @@ sources:
 -   Cloud Images API Documentation: [Task to Export an
     Image](http://docs.rackspace.com/images/api/v2/ci-devguide/content/POST_exportImage_tasks_Image_Task_Calls.html)
 -   [How Exported Images are Stored as Dynamic Large
-    Objects](/knowledge_center/article/cloud-images-frequently-asked-questions#where-is-my-exported-image)
+    Objects](/howto/cloud-images-faq)
 -   [Installing the Swiftly Cloud Files
-    Client](http://www.rackspace.com/knowledge_center/article/installing-the-swiftly-cloud-files-client)
+    Client](/howto/install-the-swiftly-client-for-cloud-files)
 
 Downloading your entire image at once
 -------------------------------------
@@ -44,7 +44,7 @@ In a bash shell, set the following environment variables:
 
 For information about viewing your Rackspace API key, see [View and
 reset your API
-key.](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+key.](/howto/view-and-reset-your-api-key)
 
 ### Invoke Swiftly
 
@@ -54,7 +54,7 @@ line to perform the download, as follows.
 **Note**: Consider using a screen session to perform this task. If
 you're not familiar with the GNU Screen program, you can find an
 introduction in [Installing the Swiftly Cloud Files
-Client](/knowledge_center/article/installing-the-swiftly-cloud-files-client).
+Client](/howto/install-the-swiftly-client-for-cloud-files).
 
     swiftly <br>
       --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
@@ -153,12 +153,12 @@ This section describes an alternative method: instead of downloading the
 entire object at once, you download the individual segments that make it
 up. This method has the following advantages:
 
-&middot;  You have smaller, more manageable pieces to work with.<br>
- &middot;  You can verify the checksum for each of the pieces to ensure that no
-part is corrupted.<br>
- &middot;  If a segment is faulty, you can download only that faulty segment
-again.<br>
- &middot;  After you have all the pieces, you can stream them locally into a
+&middot;  You have smaller, more manageable pieces to work with.
+&middot;  You can verify the checksum for each of the pieces to ensure that no
+part is corrupted.
+&middot;  If a segment is faulty, you can download only that faulty segment
+again.
+&middot;  After you have all the pieces, you can stream them locally into a
 single VHD file.
 
 This section assumes that you have set all the environment variables
@@ -200,7 +200,7 @@ streams them out to you in alphabetical order.
 
 **Note**: Before reading this section, you might want to review [How
 Exported Images are Stored as Dynamic Large
-Objects](/knowledge_center/article/cloud-images-frequently-asked-questions#where-is-my-exported-image) for
+Objects](/howto/cloud-images-faq) for
 a reminder of the naming conventions used by the Cloud Images export
 task.
 
@@ -284,13 +284,13 @@ In this example, the following segments were downloaded:
 
 Do you see a problem? Recall from [How Exported Images are Stored as
 Dynamic Large
-Objects](/knowledge_center/article/cloud-images-frequently-asked-questions#where-is-my-exported-image) that
+Objects](/howto/cloud-images-faq) that
 each segment should be the same size except for the final segment (which
 can be smaller). Thus, segment-00002 should be the same size as
 segment-00001, and it is not. So segment-00002 is corrupted.
 
 How do you know that the final segment is the correct size? Recall that
-earlier you invoked Swiftly with the**--full** option to get the full
+earlier you invoked Swiftly with the **--full** option to get the full
 details on all the segments in the  **exports** container that match the
 pattern **9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**. From [that sample
 output](#container-detail-listing "Swiftly container detail (full) listing example"),
@@ -440,5 +440,5 @@ Cloud Files an image that you've exported from Cloud Images. If you'd
 like to use Swiftly to upload a VHD to Cloud Files so that you can
 import it into the Rackspace open cloud, see [Using Swiftly to upload an
 image to be
-imported](/knowledge_center/article/using-swiftly-to-upload-an-image-to-be-imported).
+imported](/howto/use-swiftly-to-upload-an-image).
 

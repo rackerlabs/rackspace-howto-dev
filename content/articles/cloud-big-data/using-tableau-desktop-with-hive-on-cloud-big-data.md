@@ -2,10 +2,10 @@
 node_id: 4767
 title: Use Tableau Desktop with Hive on Cloud Big Data
 type: article
-created_date: '2015-07-29 14:12:28'
-created_by: scott.kruger
-last_modified_date: '2015-10-05 20:5422'
-last_modified_by: kyle.laffoon
+created_date: '2015-07-29'
+created_by: Scott Kruger
+last_modified_date: '2015-10-05'
+last_modified_by: Kyle Laffoon
 product: Cloud Big Data
 body_format: markdown_w_tinymce
 ---
@@ -58,7 +58,7 @@ On Linux or Mac OS X, you have two choices:
 Python client for the Cloud Big Data API, makes it simple to set up the SSH
 tunnel to your Hive server.
 
-First, open your terminal application (on Mac OS X, the app is located in **Utilities -> Terminal**) 
+First, open your terminal application (on Mac OS X, the app is located in **Utilities -> Terminal**)
 and install the client using **pip**, the Python package manager.  Note that
 you may have to first install **pip** using your system's package manager, e.g.
 **apt** on Debian/Ubuntu or [Homebrew](http://brew.sh) on Mac OS X.

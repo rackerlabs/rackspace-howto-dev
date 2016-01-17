@@ -2,10 +2,10 @@
 node_id: 3477
 title: Scheduled Images FAQ
 type: article
-created_date: '2013-05-22 19:50:21'
-created_by: brian.rosmaita
-last_modified_date: '2016-01-06 16:5000'
-last_modified_by: kelly.holcomb
+created_date: '2013-05-22'
+created_by: Brian Rosmaita
+last_modified_date: '2016-01-06'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -55,7 +55,7 @@ Cloud Servers users can create two different kinds of images from their
 running servers: *manual* or *scheduled*. A *manual image* is initiated
 by the user, and runs only one time. A *scheduled image* is an
 automatically captured image that is taken either daily or weekly, and
-retains up to the number of images specified by the user. 
+retains up to the number of images specified by the user.
 
 #### Why would I use Scheduled Images? {#why-would-i-use}
 
@@ -68,15 +68,16 @@ Consider the following issues:
 
 -   Images are useful for recovery in many scenarios, but should never
     be used as your sole source of recovery. We recommend Cloud Backup
-    or your preferred backup method be used in conjunction with server
-    images.
--   Some application servers are not good candidates for scheduled
-    images. In particular, some database management systems need to be
-    in a particular state when an image is taken if you want a working
-    DBMS when you boot a server from the image. Consult your DBMS vendor
-    for more information. If you have such a DBMS and you want to create
-    an image of the server, read [Using task states with server
-    imaging](http://www.rackspace.com/knowledge_center/article/using-task-states-with-server-imaging).
+    or your preferred backup method be used in conjunction with
+    server images.
+-   Some application servers are not good candidates for
+    scheduled images. In particular, some database management systems
+    need to be in a particular state when an image is taken if you want
+    a working DBMS when you boot a server from the image. Consult your
+    DBMS vendor for more information. If you have such a DBMS and you
+    want to create an image of the server, read [Using task states with
+    server
+    imaging](/howto/using-task-states-with-server-imaging).
 -   As is the case with a manual image, a scheduled image is an image of
     the system disk only.
 
@@ -90,7 +91,7 @@ and API users:
     you want to create an image every **Day** or **Week**.  If you
     select **Week**, you can also specify on which **Day of Week** you'd
     like the image created.  Finally, specify the number of images you
-    want to retain and then click **Create Schedule**. 
+    want to retain and then click **Create Schedule**.
 -   API users: See the Cloud Servers [API documentation for the
     Scheduled Images
     extension](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images).
@@ -108,10 +109,10 @@ Scheduling
 Scheduled images will originally be created with a name based on this
 scheme:
 
--   **daily-{server-name}-{10-digit-number}** (for daily scheduled
-    images)
--   **weekly-{server-name}-{10-digit-number}** (for weekly scheduled
-    images)
+-   **daily-{server-name}-{10-digit-number}** (for daily
+    scheduled images)
+-   **weekly-{server-name}-{10-digit-number}** (for weekly
+    scheduled images)
 -   an image name is limited to 255 characters, so if you have a server
     name longer than 238 characters, it will be truncated to fit
 
@@ -125,12 +126,12 @@ it:
 
 For information about using the novaclient tool for scheduled images,
 see [Using python-novaclient to manage scheduled
-images](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images).
+images](/howto/using-python-novaclient-to-manage-scheduled-images).
 
 #### Is there a minimum or maximum time between scheduled images? {#time-between-images}
 
 No (see next answer), but daily scheduled images will be roughly 24
-hours apart and occur on different dates UTC.  
+hours apart and occur on different dates UTC.
 
 For weekly images, you specify the day of the week (determined by UTC)
 when you'd like your server image created. As some days of the week are
@@ -226,7 +227,7 @@ control panel. If you don't want to make API calls directly, a
 command-line tool called novaclient is available. For more information
 about using the novaclient tool to manage your scheduled images, see
 [Using python-novaclient to manage scheduled
-images](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images).
+images](/howto/using-python-novaclient-to-manage-scheduled-images).
 
 #### How can I change the retention value on my server? {#change-retention}
 
@@ -282,8 +283,8 @@ options will remain the same as they are now.
 #### Where can I get more information about Scheduled Images? {#more-info}
 
 -   [Scheduled Images API Extension
-    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images)
+    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images){.links}
 -   [Using python-novaclient to manage scheduled
-    images](https://www.rackspace.com/knowledge_center/article/using-python-novaclient-to-manage-scheduled-images)
+    images](/howto/using-python-novaclient-to-manage-scheduled-images){.links}
 
 

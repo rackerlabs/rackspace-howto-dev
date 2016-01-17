@@ -2,15 +2,15 @@
 node_id: 4254
 title: Quick set up with Rackspace Cloud Orchestration
 type: article
-created_date: '2014-09-23 18:16:35'
-created_by: nico4001
-last_modified_date: '2015-03-25 03:4310'
+created_date: '2014-09-23'
+created_by: Nicole Schwartz
+last_modified_date: '2015-03-25'
 last_modified_by: David Hendler
 product: Cloud Orchestration
 body_format: markdown_w_tinymce
 ---
 
-Rackspace Cloud Orchestration helps you set up projects and servers with just a few clicks instead of lengthy installations. You can usually be up and running in less than five minutes, depending on the template that you choose and other factors. Cloud Orchestration provides templates for a LAMP stack to get your web server up and running quickly, a Minecraft server, and a WordPress blog, just to name a few. For the complete list of options, see [Available Templates for Cloud Orchestration](http://rackspace.com/knowledge_center/article/available-templates-for-cloud-orchestration).
+Rackspace Cloud Orchestration helps you set up projects and servers with just a few clicks instead of lengthy installations. You can usually be up and running in less than five minutes, depending on the template that you choose and other factors. Cloud Orchestration provides templates for a LAMP stack to get your web server up and running quickly, a Minecraft server, and a WordPress blog, just to name a few. For the complete list of options, see [Available Templates for Cloud Orchestration](/howto/available-templates-for-cloud-orchestration).
 
 <a name="SettingUpRackspaceOrchestrationCreateStack"> </a>
 
@@ -20,11 +20,11 @@ Rackspace Cloud Orchestration helps you set up projects and servers with just a 
 
     To create a stack in the Create Resources menu, select **Stack**.
 
-	<img src="/knowledge_center/sites/default/files/field/image/1560-3549-newimage_0.png" width="481" height="134" border="1" alt=""  />
+	<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3549-newimage_0.png" width="481" height="134" border="1" alt=""  />
 
 	To create a stack in the Servers menu, click **Create Stack** from the Cloud Servers page where you would create a new server.
-	
-	<img src="/knowledge_center/sites/default/files/field/image/1560-3549-newimage2_0.png" width="771" height="204" border="1" alt=""  />
+
+	<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3549-newimage2_0.png" width="771" height="204" border="1" alt=""  />
 
 2. Enter a name and select the region for your stack.
 
@@ -72,11 +72,11 @@ If you are an advanced users, you can use the custom template section to modify 
 3. You can modify a template with one of the following options available on the Stack Details page:
 
     - **Paste or Upload a Template**
-	
+
 	   - **Paste template below or upload a file into the editor**.
-	   
+
 	   - **Not sure where to start? Try copying and editing a Rackspace Template**. Choose this option and select the template you want to modify, then click **Customize Template**. The template text will appear in the text editor where you can modify it.
-	
+
 	- **Link to a template** - Link a template in a Github or other repository in a YAML or JSON formats. Enter the link in the URL field.
 
 4. Click **Next Step**.

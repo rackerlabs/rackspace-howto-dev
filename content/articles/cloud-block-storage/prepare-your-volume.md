@@ -2,10 +2,10 @@
 node_id: 3132
 title: Prepare Your Cloud Block Storage Volume
 type: article
-created_date: '2012-10-21 07:37:18'
+created_date: '2012-10-21'
 created_by: David Hendler
-last_modified_date: '2015-12-31 14:3113'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 body_format: tinymce
 ---
@@ -13,10 +13,10 @@ body_format: tinymce
 ### Previous section
 
 [Create and Attach a Cloud Block Storage
-Volume](https://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
+Volume](/howto/create-and-attach-a-cloud-block-storage-volume)
 
 After you have [created and
-attached](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume "created and attached")
+attached](/howto/create-and-attach-a-cloud-block-storage-volume "created and attached")
 your Cloud Block Storage volume, you must prepare it for use on your
 server. To prepare your volume, you must partition, format, and mount
 it.  After you have successfully completed these steps, your volume is
@@ -26,8 +26,8 @@ usable like a drive on your server.
 -   [Prepare Your Volume for Use with a Windows
     Server](#prepare_windows)
 
-Prepare Your Volume for Use with a Linux Server
------------------------------------------------
+[]()Prepare Your Volume for Use with a Linux Server
+---------------------------------------------------
 
 ### Step 1. Use SSH to connect to your server.
 
@@ -44,7 +44,7 @@ to the server name, and select **Change Password**.
 Example Input:
 
     MHC03SDV7M:~ user4975$ ssh root@198.61.222.58
-    root@198.61.222.58's password: 
+    root@198.61.222.58's password:
 
 Example Output:
 
@@ -55,11 +55,11 @@ Example Output:
      * Documentation:  http://www.ubuntu.com/server/doc
     Last login: Thu Oct 18 02:26:38 2012 from 70.114.215.201
 
-1.  After you are logged in, list the disks on your server.<br>
-     Your volume is typically listed as the last drive in this list. In
+1.  After you are logged in, list the disks on your server.
+    Your volume is typically listed as the last drive in this list. In
     the following example, the 100 GB volume that was created in the
     [Create and Attach a Cloud Block Storage
-    Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
+    Volume](/howto/create-and-attach-a-cloud-block-storage-volume)
     article is attached to /dev/xvdb. (It is shown as 107.4 GB because
     of the way that megabytes are counted.)
 
@@ -132,7 +132,7 @@ Example Output:
        w   write table to disk and exit
        x   extra functionality (experts only)
 
-    Command (m for help): 
+    Command (m for help):
 
 1.  Enter **n** to create a new partition.
 
@@ -154,9 +154,9 @@ Example Input:
 
 Example Output:
 
-    Partition number (1-4): 
+    Partition number (1-4):
 
-1.  To create only one partition on this disk, enter**1**.
+1.  To create only one partition on this disk, enter **1**.
 
 Example Input:
 
@@ -164,7 +164,7 @@ Example Input:
 
 Example Output:
 
-    First cylinder (1-13054, default 1):   
+    First cylinder (1-13054, default 1):
 
 1.  To accept the default start cylinder, which is 1, press **Enter**.
 
@@ -181,7 +181,7 @@ Example Ouput:
 
     Using default value 13054
 
-    Command (m for help): 
+    Command (m for help):
 
 1.  Enter **w** to write the partition.
 
@@ -196,8 +196,8 @@ Example Output:
     Calling ioctl() to re-read partition table.
     Syncing disks.
 
-1.  List the disks on your server again.<br>
-     Your Cloud Block Storage volume is ready as a disk. It was attached
+1.  List the disks on your server again.
+    Your Cloud Block Storage volume is ready as a disk. It was attached
     at /dev/xvdb and you created one partition on it, so now your
     available disk appears at /dev/xvdb1.
 
@@ -252,11 +252,11 @@ Example Output:
     800 block groups
     32768 blocks per group, 32768 fragments per group
     8192 inodes per group
-    Superblock backups stored on blocks: 
-    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+    Superblock backups stored on blocks:
+    32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
     4096000, 7962624, 11239424, 20480000, 23887872
 
-    Writing inode tables: done                            
+    Writing inode tables: done
     Creating journal (32768 blocks): done
     Writing superblocks and filesystem accounting information: done
 
@@ -266,9 +266,9 @@ Example Output:
 ### Step 4. Mount the volume.
 
 After partitioning and formatting the volume, you must mount it on the
-server. After the volume is mounted, it is available for use.<br>
- <br>
- Run the **mnt** command and assign the volume a name for use on your
+server. After the volume is mounted, it is available for use.
+
+Run the **mnt** command and assign the volume a name for use on your
 server. In the following example, the volume is named cbsvolume1.
 
 Example Input:
@@ -306,15 +306,15 @@ remains persistent after a server reboot.
 This step is optional, but it keeps your volume attached to your server
 after restarts.
 
-1.  Add your volume to the static file system information in the fstab
-    file.
+1.  Add your volume to the static file system information in the
+    fstab file.
 
 **Note**: In your fstab options, add the \_netdev option. This option
 prevents attempts to mount the volume until all networking is running.
 
 Example Input:
 
-    root@nosnetdfw:~# nano /etc/fstab 
+    root@nosnetdfw:~# nano /etc/fstab
 
 Example Output:
 
@@ -334,8 +334,8 @@ the volume to the static file system:
 
 Now the volume persists on the server after server restarts.
 
-Prepare Your Volume for Use with a Windows Server
--------------------------------------------------
+[]()Prepare Your Volume for Use with a Windows Server
+-----------------------------------------------------
 
 **Note**: In the examples in the procedure, a 100 GB volume is added to
 a Windows Server 2012 server. The steps are similar for all
@@ -357,27 +357,32 @@ When you first log in and view the Computer window, you will not see the
 Cloud Block Storage Volume that is attached to the server. In the
 following example, only the server's C drive is displayed.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/win%20-%20no%20volume.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/win%20-%20no%20volume.png){width="550"
+height="412"}
 
 1.  Open the Server Manager window by right-clicking on the Computer
     icon and selecting Manage.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20manage%20-%20ord.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20manage%20-%20ord.png){width="441"
+height="340"}
 
 The Server Manager window is displayed:
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20server%20mgr.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20server%20mgr.png){width="547"
+height="270"}
 
 1.  In the left pane of the Server Manager window, click **File and
     Storage Services**.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20windows%20-%20file%20and%20storage.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20windows%20-%20file%20and%20storage.png){width="293"
+height="300"}
 
 1.  In the left pane, click **Disks**.  In the following example, a 100
     GB volume is attached to the server. It is listed as Offline, it has
     100 GB of unallocated space, and its partition size is Unknown.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20disks.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20disks.png){width="608"
+height="259"}
 
 ### Step 2. Partition and format the drive.
 
@@ -393,17 +398,20 @@ Windows terminology, is required before running this wizard.
 
 The New Volume Wizard opens.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20new%20volume%20wizard%200.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20new%20volume%20wizard%200.png){width="565"
+height="419"}
 
 1.  Click **Next**. In the Server and Disk page, the unformatted Cloud
     Block Storage volume is displayed.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20wizard%201.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20wizard%201.png){width="561"
+height="409"}
 
 1.  Select the disk and click **Next**.  If the Offline or Uninitialized
     Disk message appears, click **OK**.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/win%20-%20init%20-%20disk.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/win%20-%20init%20-%20disk.png){width="405"
+height="156"}
 
 1.  In the next three wizard pages, specify the drive size, the drive
     letter, and the format and name for the volume. Confirm your
@@ -411,21 +419,24 @@ The New Volume Wizard opens.
     100 GB is used, it is assigned the drive letter D, it is formatted
     as NTFS, and it is named My New CBS Volume.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20volume%20details.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20volume%20details.png){width="601"
+height="438"}
 
 1.  To complete the process, click **Create**.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/win%20-%20completion.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/win%20-%20completion.png){width="616"
+height="243"}
 
 When you open the Computer window now, the new Cloud Block Storage
 volume is displayed like a regular hard drive.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cbs%20-%20win%20-%20confirmation.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20confirmation.png){width="615"
+height="164"}
 
 Your volume is now ready for use.
 
 ### Next steps
 
 [Create and Use Cloud Block Storage
-Snapshots](https://www.rackspace.com/knowledge_center/article/create-and-use-cloud-block-storage-snapshots)
+Snapshots](/howto/create-and-use-cloud-block-storage-snapshots)
 

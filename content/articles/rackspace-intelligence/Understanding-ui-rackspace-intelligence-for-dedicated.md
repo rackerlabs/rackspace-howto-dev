@@ -2,10 +2,10 @@
 node_id: 4818
 title: Understanding the Rackspace Intelligence User Interface for dedicated accounts
 type: article
-created_date: '2015-10-01 18:00:18'
-created_by: constanze.kratel
-last_modified_date: '2015-10-16 01:4357'
-last_modified_by: constanze.kratel
+created_date: '2015-10-01'
+created_by: Constanze Kratel
+last_modified_date: '2015-10-16'
+last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -15,10 +15,11 @@ infrastructure and, when limits are exceeded, can respond by notifying
 someone.
 
 When you [log in to Rackspace
-Intelligence](https://admin.rackspace.com/knowledge_center/article/logging-into-rackspace-intelligence-for-dedicated-accounts)[,](https://admin.rackspace.com/knowledge_center/article/logging-into-rackspace-intelligence-for-dedicated-accounts)
+Intelligence](/howto/log-in-to-rackspace-intelligence-for-dedicated-accounts)[,](/howto/log-in-to-rackspace-intelligence-for-dedicated-accounts)
 you can view all your relevant information on the dashboard:
 
-![](/knowledge_center/sites/default/files/field/image/Dashboard.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Dashboard.png){width="896"
+height="524"}
 
 The dashboard provides a main overview of all of your monitoring
 activities.
@@ -46,7 +47,7 @@ to view information about the following items:
 
 You can also use the Rackspace Intelligence dashboard to [view and
 generate graphs to visualize infrastructure
-availability](https://admin.rackspace.com/knowledge_center/article/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts).
+availability](/howto/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts).
 
 **Note** Customers with dedicated accounts cannot use Rackspace
 Intelligence to create or edit entities, alarms, checks, notifications,

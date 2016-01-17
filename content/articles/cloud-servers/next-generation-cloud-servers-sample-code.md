@@ -2,15 +2,15 @@
 node_id: 1718
 title: 'Next Generation Cloud Servers: Sample Code'
 type: article
-created_date: '2012-07-24 22:15:44'
+created_date: '2012-07-24'
 created_by: Jerry Schwartz
-last_modified_date: '2015-09-03 20:2848'
-last_modified_by: constanze.kratel
+last_modified_date: '2015-09-03'
+last_modified_by: Constanze Kratel
 product: Cloud Servers
 body_format: tinymce
 ---
 
-### Next Generation Cloud Servers:  Sample Code**<br>
+### Next Generation Cloud Servers:  Sample Code**
 **
 
 **[List of API Operations](#aa1)**
@@ -35,9 +35,9 @@ body_format: tinymce
 
 **[Legal Disclaimer](#aa11)**
 
-* * * * *
+------------------------------------------------------------------------
 
-### API Operations
+### [](){#aa1}API Operations
 
 -   Servers
     -   List Servers
@@ -76,11 +76,11 @@ body_format: tinymce
                 -   Set Metadata Item
                 -   Delete Metadata Item
 
-* * * * *
+------------------------------------------------------------------------
 
 ### cURL
 
-#### Code Sample &ndash; Add User To Your Account Through API (cURL)
+#### [](){#aa2}Code Sample &ndash; Add User To Your Account Through API (cURL)
 
 To add a user to your account through the API, you can do the following:
 
@@ -118,11 +118,11 @@ You can also update or delete a user.
 
         curl -X DELETE https://identity.api.rackspacecloud.com/v2.0/users/{userID} -H "X-Auth-Token: "XXXXXXX"
 
-* * * * *
+------------------------------------------------------------------------
 
 ### XML
 
-#### Code Sample: Create Server Request (XML)
+#### [](){#aa3}Code Sample: Create Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns="http://docs.openstack.org/compute/api/v1.1" imageRef="5f68715f-201f-4600-b5a1-0b97e2b1cb31" flavorRef="2" diskConfig="auto" name="new-server-test" min_count="1" max_count="1">
@@ -144,7 +144,7 @@ You can also update or delete a user.
         </personality>
     </server>
 
-#### Code Sample: Create Server Response (XML)
+#### [](){#aa4}Code Sample: Create Server Response (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns:OS-DCF="http://docs.openstack.org/compute/ext/disk_config/api/v1.1" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://docs.openstack.org/compute/api/v1.1" id="827bf583-0b54-4526-b58b-8c3dca04ab28" adminPass="123456789abc" OS-DCF:diskConfig="AUTO">
@@ -153,7 +153,7 @@ You can also update or delete a user.
         <atom:link href="https://dfw.servers.api.rackspacecloud.com/123456/servers/827bf583-0b54-4526-b58b-8c3dca04ab28" rel="bookmark"/>
     </server>
 
-#### Code Sample:  Get Server Details Response (XML)
+#### [](){#aa5}Code Sample:  Get Server Details Response (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns:RAX-SERVER="http://docs.rackspace.com/servers/api/ext/server_bandwidth/" xmlns="http://docs.openstack.org/compute/api/v1.1" xmlns:atom="http://www.w3.org/2005/Atom" id="52415800-8b69-11e0-9b19-734f000004d2" tenant_id="1234" user_id="5678" name="sample-server" status="BUILD" updated="2010-10-10T12:00:00Z" created="2010-08-10T12:00:00Z" progress="60" hostId="e4d909c290d0fb1ca068ffaddf22cbd0" accessIPv4="67.23.10.132" accessIPv6="::babe:67.23.10.132">
@@ -188,16 +188,16 @@ You can also update or delete a user.
         </RAX-SERVER:bandwidth>
     </server>
 
-#### Code Sample:  Reboot Server Request (XML)
+#### [](){#aa6}Code Sample:  Reboot Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <reboot xmlns="http://docs.openstack.org/compute/api/v1.1" type="HARD"/>
 
-* * * * *
+------------------------------------------------------------------------
 
 ### JSON
 
-#### Code Sample:  Create Server Request (JSON)
+#### [](){#aa7}Code Sample:  Create Server Request (JSON)
 
     {
         "server": {
@@ -225,7 +225,7 @@ You can also update or delete a user.
         }
     }
 
-#### Code Sample: Create Server Response (JSON)
+#### [](){#aa8}Code Sample: Create Server Response (JSON)
 
     {
         "server": {
@@ -242,7 +242,7 @@ You can also update or delete a user.
         }
     }
 
-#### Code Sample:  Get Server Details Response (JSON)
+#### [](){#aa9}Code Sample:  Get Server Details Response (JSON)
 
     {
         "server": {
@@ -309,7 +309,7 @@ You can also update or delete a user.
         }
     }
 
-#### Code Sample:  Reboot Server Request (JSON)
+#### [](){#aa10}Code Sample:  Reboot Server Request (JSON)
 
     {
         "reboot": {
@@ -317,9 +317,9 @@ You can also update or delete a user.
         }
     }
 
-* * * * *
+------------------------------------------------------------------------
 
-**Legal Disclaimer**
+[](){#aa11}**Legal Disclaimer**
 
 This information is intended for software developers who want to develop
 applications by using the next generation Rackspace Cloud Servers

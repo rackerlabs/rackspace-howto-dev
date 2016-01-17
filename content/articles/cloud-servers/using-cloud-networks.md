@@ -2,10 +2,10 @@
 node_id: 2163
 title: Create an isolated Cloud Network and attach it to a server
 type: article
-created_date: '2012-09-17 19:30:03'
+created_date: '2012-09-17'
 created_by: Susan Million
-last_modified_date: '2016-01-10 22:4845'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-10'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -27,8 +27,8 @@ Cloud Network limitations
 Attach an isolated network to a cloud server
 --------------------------------------------
 
-1.  In the [Cloud Control Panel](https://mycloud.rackspace.com).<br>
-     The Cloud Servers page is displayed by default.
+1.  In the [Cloud Control Panel](https://mycloud.rackspace.com).
+    The Cloud Servers page is displayed by default.
 
 2.  Click **Create Server**.
 
@@ -50,7 +50,7 @@ Attach an isolated network to a cloud server
 
     **Warning:** Before you remove ServiceNet or PublicNet from your
     Cloud Server, read [Removing Networks from a Cloud
-    Server](http://www.rackspace.com/knowledge_center/article/removing-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
+    Server](/howto/removing-networks-from-a-cloud-server "Disabling Networks from a Cloud Server")
     for a complete description of the limitations that will be placed on
     your new server.
 
@@ -63,24 +63,25 @@ the Networks table. The table displays each network the server is
 attached to with the corresponding IP address. Following is an example
 Networks table for a server that is attached to PublicNet (Internet),
 ServiceNet (the Rackspace data center network), and an isolated Cloud
-Network named My Private Network: 
+Network named My Private Network:
 
 ![Cloud Networks
-List](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Cloud%20Networks%20List.png)
+List](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Cloud%20Networks%20List.png){width="743"
+height="224"}
 
 More information about Cloud Networks
 -------------------------------------
 
 [Attach an Isolated Network to an Existing Cloud
-Server](http://www.rackspace.com/knowledge_center/article/attach-an-existing-cloud-server-to-a-cloud-network "Attach an Isolated Network to an Existing Cloud Server")
+Server](/howto/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
 [Removing Networks from a Cloud
-Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
+Server](/howto/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
-[CIDR
-Notation](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")
+[<span class="s1">CIDR
+Notation</span>](/howto/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer Guide](https://developer.rackspace.com/docs/)
 
- 
+
 

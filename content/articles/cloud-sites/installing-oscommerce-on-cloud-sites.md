@@ -2,10 +2,10 @@
 node_id: 685
 title: Installing OSCommerce on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 17:0045'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,11 +20,11 @@ Please see the following articles on how you change your default
 technology, add a MySQL database, and connect to FTP:
 
 -   [How do I change my site's default
-    technology?](http://www.rackspace.com/knowledge_center/article/change-your-sites-default-technology "How do I change my site's default technology?")
+    technology?](/howto/change-your-sites-default-technology "How do I change my site's default technology?")
 -   [How do I add a MySQL database to my
-    site?](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
+    site?](/howto/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
 -   [How do I add content to my
-    website?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
+    website?](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
 
 1.  Open your browser and enter your domain's URL and include the
     "catalog" directory in the path if you left it as is
@@ -33,9 +33,9 @@ technology, add a MySQL database, and connect to FTP:
     any required permissions on the site's files. Once you have updated
     the permissions, click on the Retry button. If successful, a
     Continue button will then be available to proceed.
-3.  You will now be asked to enter your database configuration
-    information. Click Continue once finished. OSCommerce will then
-    import the database for you. Click Continue to proceed.
+3.  You will now be asked to enter your database
+    configuration information. Click Continue once finished. OSCommerce
+    will then import the database for you. Click Continue to proceed.
 4.  Verify that the paths listed are correct for your site. Click
     Continue to proceed.
 5.  You will now enter your store settings. Verify you have entered the

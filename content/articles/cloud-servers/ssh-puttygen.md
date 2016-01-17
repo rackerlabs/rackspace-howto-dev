@@ -2,10 +2,10 @@
 node_id: 426
 title: Generating RSA Keys With SSH - PuTTYgen
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:2335'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: full_html
 ---
@@ -24,6 +24,8 @@ Contents
 -   [3 Summary](#Summary)
 -   [4 Related Articles](#RelatedArticles)
 
+[](){#Introduction}
+
 Introduction
 ------------
 
@@ -32,42 +34,46 @@ a public/private key pair. This means that a *public* key is placed on
 the server and a *private* key is placed on your local workstation.
 Using a key pair makes it impossible for someone to log in by using just
 a password, as long as you set up SSH to deny password-based
-authentication. 
+authentication.
+
+[](){#Generate_Keys}
 
 Generate Keys
 -------------
+
+[](){#PuTTYgen}
 
 In Windows, use PuTTYgen to generate our public and private keys.
 
 1.  If needed, download PuTTYgen from the [PuTTY download
     page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).(PuTTYgen
     might have been installed previously with PuTTY or WinSCP.)
-2.  Launch the program, and then click the **Generate** button.<br>
-     The program generates the keys for you.
+2.  Launch the program, and then click the **Generate** button.
+    The program generates the keys for you.
 3.  Enter a unique key passphrase in the **Key passphrase** and
-    **Confirm passphrase** fields.<br>
-     For additional information on using passphrases, see [Logging in
+    **Confirm passphrase** fields.
+    For additional information on using passphrases, see [Logging in
     with a SSH Private Key on
-    Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-a-ssh-private-key-on-windows).
+    Windows](/howto/logging-in-with-an-ssh-private-key-on-windows).
 4.  Save the public and private keys by clicking the **Save public key**
     and **Save private key** buttons.
 5.  From the **Public key for pasting into OpenSSH authorized\_keys file
-    field** at the top of the window, copy all the text (starting with
-    ssh-rsa) to your clipboard by pressing **Ctrl-C**.<br>
-     You need the this key available on your clipboard to paste either
+    field** at the top of the window, copy all the text (starting
+    with ssh-rsa) to your clipboard by pressing **Ctrl-C**.
+    You need the this key available on your clipboard to paste either
     into the public key tool in the Control Panel or directly into the
     authorized keys on your cloud server.
 
-### Use the Key Pair
+### [](){#Usage}Use the Key Pair
 
- You can use the RSA key pair in the following ways:
+ <span>You can use the RSA key pair in the following ways: </span>
 
--   [Specify your SSH key when creating a new Cloud
-    Server.](#SpecifySSHonNew)
--   [Assign your SSH key to your existing Cloud Server through
-    PuTTY](#Assigntoexisting).
+-   <span>[Specify your SSH key when creating a new
+    Cloud Server.](#SpecifySSHonNew)</span>
+-   <span>[Assign your SSH key to your existing Cloud Server through
+    PuTTY](#Assigntoexisting).</span>
 
-#### Specify Your SSH Key When Creating a New Cloud Server
+#### []()Specify Your SSH Key When Creating a New Cloud Server
 
 When you create a cloud server, you can add a new public key or assign
 an existing public key.
@@ -86,10 +92,10 @@ Add an existing public key when creating a cloud server
     and click **Add Public Key**.
 3.  Enter the key name, select the region, and paste your entire public
     key into the **Public Key** field and click **Add Public Key**.
-4.  Confirm that your key is listed in the **SSH Key** list for your new
-    server.
+4.  Confirm that your key is listed in the **SSH Key** list for your
+    new server.
 
-#### Assign Your SSH Key to Your Existing Cloud Server
+#### []()Assign Your SSH Key to Your Existing Cloud Server
 
 To make use of your newly generated RSA key pair, you must tell PuTTY to
 use it when connecting to your Cloud Server.
@@ -107,8 +113,8 @@ text is word-wrapped onto multiple lines an error might occur when
 connecting.
 
 1.  Edit the \~/.ssh/authorized\_keys file on your Cloud Server and
-    paste the text onto its own line in the file.<br>
-     **Note**: You must have the key available on your clipboard to
+    paste the text onto its own line in the file.
+    **Note**: You must have the key available on your clipboard to
     paste it.
 2.  If you created the authorized\_keys file, change its permissions
     after you're done editing it by running the following command:
@@ -117,19 +123,23 @@ connecting.
 
     chmod 600 ~/.ssh/authorized_keys
 
-1.  Open PuTTY and go to the **SSH \> Auth** section.
+1.  Open PuTTY and go to the **SSH &gt; Auth** section.
 2.  Browse to the location of the key file and load the private key.
 
-    ![](/knowledge_center/sites/default/files/field/image/PuTTY_Configuration3.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/PuTTY_Configuration3.png){width="463"
+    height="439"}
 
 3.  To make PuTTY use the key every time that you connect to your Cloud
     Server, save the configuration by going to the Session page and
     saving the session.
 
-    ![](/knowledge_center/sites/default/files/field/image/PuTTY_Configuration4.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/PuTTY_Configuration4.png){width="463"
+    height="439"}
 
 After you save your session, your key is loaded automatically whe you
 connect to your Cloud Server.
+
+[](){#Summary}
 
 Summary
 -------
@@ -139,10 +149,10 @@ in many ways. By eliminating the possibility of SSH brute-force attacks
 targeted towards your Cloud Server, the chances of it being compromised
 are decreased by an order of magnitude.
 
-Related Articles
-----------------
+[]()Related Articles
+--------------------
 
 -   [Connecting to a server using SSH on Linux or Mac
-    OS](http://www.rackspace.com/knowledge_center/article/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
+    OS](/howto/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
 
 

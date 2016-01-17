@@ -2,10 +2,10 @@
 node_id: 4963
 title: Upgrading to PHP 5.6 and Apache 2.4 version in the ORD environment
 type: article
-created_date: '2015-11-30 20:23:48'
-created_by: justin.taylor
-last_modified_date: '2015-12-10 21:0751'
-last_modified_by: renee.rendon
+created_date: '2015-11-30'
+created_by: Justin Taylor
+last_modified_date: '2015-12-10'
+last_modified_by: Renee Rendon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -22,8 +22,8 @@ shared in customer ticket notification
 Following is a timeline for PHP 5.6 availibility:
 
 -   **Available now**: PHP 5.6 is currently available.
--   **Early Q1 2016**: PHP 5.3 and 5.4 clusters will be updated to PHP
-    5.6.
+-   **Early Q1 2016**: PHP 5.3 and 5.4 clusters will be updated to
+    PHP 5.6.
 -   **Mid Q1 2016**: Migrations to PHP 5.6 will begin for all ORD
     customer nodes.
 
@@ -45,7 +45,7 @@ module [mod\_access\_compat](http://httpd.apache.org/docs/2.4/mod/mod_access_com
 provided.
 
 For more information, see
-[http://httpd.apache.org/docs/2.4/upgrading.html\#run-time](http://httpd.apache.org/docs/2.4/upgrading.html#run-time)
+<http://httpd.apache.org/docs/2.4/upgrading.html#run-time>
 
 **Server Side Includes**
 
@@ -53,18 +53,18 @@ Sites that use legacy Server Side Includes (SSI) syntax will need to be
 updated to the new Apache syntax or SSILegacyExprParser must be enabled
 via .htaccess:
 
-     SSILegacyExprParser on 
+     SSILegacyExprParser on
 
 For more information, see:
 
--   [http://httpd.apache.org/docs/2.4/mod/mod\_include.html\#ssilegacyexprparser](http://httpd.apache.org/docs/2.4/mod/mod_include.html#ssilegacyexprparser)
--   [http://httpd.apache.org/docs/2.4/expr.html](http://httpd.apache.org/docs/2.4/expr.html)
+-   <http://httpd.apache.org/docs/2.4/mod/mod_include.html#ssilegacyexprparser>
+-   <http://httpd.apache.org/docs/2.4/expr.html>
 
 **What is not changing?**
 -------------------------
 
 -   No website DNS changes will be required.
--   FTP services will not change.  
+-   FTP services will not change.
 
 **How does this affect me?**
 ----------------------------
@@ -72,26 +72,39 @@ For more information, see:
 Given the changes from PHP 5.3 and 5.4 to 5.6 (to include the upgrade
 from Apache 2.2 to 2.4), we ask that customers view the provided links
 for common break changes. We ask that all customers use the following
-test links to verify application compatibility. 
+test links to verify application compatibility.
 
 **Example link for ORD1-1**
 
 If your site is [www.example.com](http://www.example.com/), the test
 link for your site on PHP 5.6 is
-[http://www.example.com.php56-\<cluster\>.ord1-1.websitetestlink.com](http://www.example.com.php56-testing.ord1-1.websitetestlink.com/)
+[http://www.example.com.php56-&lt;cluster&gt;.ord1-1.websitetestlink.com](http://www.example.com.php56-testing.ord1-1.websitetestlink.com/)
 
 Replace the 53 or 54 in your current test link with 56 tin the new test
 link, as shown in the following table.
 
-+--------------------------------------+--------------------------------------+
-| **Example current testl ink URL**    | **Example new test link URL**        |
-+======================================+======================================+
-| www.yoursite.com.php53-10*.*ord1-1.w | www.yoursite.com.php56-10*.*ord1-1.w |
-| ebsitetestlink.com                   | ebsitetestlink.com                   |
-+--------------------------------------+--------------------------------------+
-| www.yoursite.com.php54-1*.*ord1-1.we | www.yoursite.com.php56-1*.*ord1-1.we |
-| bsitetestlink.com                    | bsitetestlink.com                    |
-+--------------------------------------+--------------------------------------+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><p><strong>Example current testl ink URL</strong></p></th>
+<th align="left"><p><strong>Example new test link URL</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>www.yoursite.com.php53-10<em>.</em>ord1-1.websitetestlink.com</p></td>
+<td align="left"><p>www.yoursite.com.php56-10<em>.</em>ord1-1.websitetestlink.com</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>www.yoursite.com.php54-1<em>.</em>ord1-1.websitetestlink.com</p></td>
+<td align="left"><p>www.yoursite.com.php56-1<em>.</em>ord1-1.websitetestlink.com</p></td>
+</tr>
+</tbody>
+</table>
 
 The preceding test links will be used until the environment has been
 made fully available, at which point they will be updated.
@@ -101,7 +114,7 @@ Note: SSL is unavailable because the test links do not support HTTPS.
 **FAQ**
 -------
 
-**Is this Apache version fixing CVE \#\#\#?**
+[]()**Is this Apache version fixing CVE \#\#\#?**
 
 -   The version of Apache has been updated to 2.4 along with all of its
     relevant CVE updates.

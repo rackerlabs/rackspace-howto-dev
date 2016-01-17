@@ -2,32 +2,35 @@
 node_id: 3264
 title: Configure Remote Access VPN Service on a Vyatta Appliance
 type: article
-created_date: '2013-01-17 23:57:32'
-created_by: sameer.satyam
-last_modified_date: '2015-09-29 17:3556'
-last_modified_by: kyle.laffoon
+created_date: '2013-01-17'
+created_by: Sameer Satyam
+last_modified_date: '2015-09-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
 
 You can configure a Vyatta Appliance to act as a remote access VPN
 gateway so that clients can securely connect to their infrastructure in
-the Rackspace cloud. 
+the Rackspace cloud.
 
-Introduction
-------------
+<span>Introduction</span>
+-------------------------
 
-This article shows how to configure the Vyatta Appliance for Remote
-Access VPN using L2TP/IPsec with Pre-Shared Keys for authentication.
+<span>This article shows how to configure the Vyatta Appliance for
+Remote Access VPN using </span><span>L2TP/IPsec with Pre-Shared Keys for
+authentication.</span>
 
-For a comprehensive guide to VPN configuration on the Vyatta, click
-[here](https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-VPN_6.5R1_v01.pdf)
+<span>For a comprehensive guide to VPN configuration on the Vyatta,
+click
+[here](https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-VPN_6.5R1_v01.pdf)</span>
 
-For guidance on configuring the relevant firewall rules to allow
-remote-access VPN on the Vyatta please refer to the following article:
+<span>For guidance on configuring the relevant firewall rules to allow
+remote-access </span><span>VPN</span><span> on the Vyatta please refer
+to the following article:</span>
 
-[Configuring interface based firewall on the Vyatta network
-appliance](http://www.rackspace.com/knowledge_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance)
+[<span>Configuring interface based firewall on the Vyatta network
+appliance</span>](/howto/configuring-interface-based-firewall-on-the-vyatta-network-appliance)
 
 The VPN access using L2TP/IPsec with pre-shared key works as follows:
 
@@ -39,12 +42,14 @@ The VPN access using L2TP/IPsec with pre-shared key works as follows:
     i.e., the PPP packets are encapsulated and sent/received inside the
     L2TP tunnel.
 
-In the following illustration, traffic from remote access clients enters
-on the Public interface on the Vyatta appliance. 192.168.100.0/24, is
-the subnet assigned to the clients when the VPN session is established.
-The outside-address X.X.X.X address is the Vyatta&rsquo;s Public IP address.
+In the following illustration, t<span>raffic from remote access clients
+enters on the Public interface on the Vyatta appliance.
+192.168.100.0/24, is the subnet assigned to the clients when the VPN
+session is established. The outside-address X.X.X.X address is the
+Vyatta&rsquo;s Public IP address.</span>
 
-![](/knowledge_center/sites/default/files/field/image/VPN%20with%20Vyatta.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/VPN%20with%20Vyatta.png){width="600"
+height="334"}
 
 Configure the L2TP/IPsec VPN on the Vyatta Appliance
 ----------------------------------------------------
@@ -120,17 +125,17 @@ The pre-shared secret is "SUPERSECRET".
     Where X.X.X.X represents the Vyatta eth0 interface IP address.
 
 2.  Set up the pool of IP addresses that remote VPN clients will
-    assume. 
+    assume.
 
         set vpn l2tp remote-access client-ip-pool start 192.168.100.1
 
-    Where 192.168.100.10 represents the start IP address for the client
-    pool.
+    Where 192.168.100.10 represents the start IP address for the
+    client pool.
 
         set vpn l2tp remote-access client-ip-pool stop 192.168.100.100
 
-    Where 192.168.100.100 represents the end IP address for the client
-    pool.
+    Where 192.168.100.100 represents the end IP address for the
+    client pool.
 
 ### Step 3. Configure the IPsec pre-shared secret and user authentication
 
@@ -146,8 +151,8 @@ The pre-shared secret is "SUPERSECRET".
 
         set vpn l2tp remote-access authentication mode local
 
-    This indicates that user authentication occurs locally on the Vyatta
-    Appliance.
+    This indicates that user authentication occurs locally on the
+    Vyatta Appliance.
 
 4.  Set theL2TP remote access username and password:
 
@@ -161,7 +166,7 @@ The pre-shared secret is "SUPERSECRET".
 
 6.  Save the change:
 
-        vyatta@vyatta# save 
+        vyatta@vyatta# save
         Saving configuration to /config/config.boot
 
 7.  View the LT2P configuration:
@@ -191,9 +196,9 @@ The pre-shared secret is "SUPERSECRET".
 later want to edit the L2TP remote access configuration, enter
 `remote-access` while in the `edit` mode on the Vyatta Appliance.
 
-    vyatta@vyatta# edit vpn l2tp remote-access 
+    vyatta@vyatta# edit vpn l2tp remote-access
     [edit vpn l2tp remote-access]
-    vyatta@vyatta# 
+    vyatta@vyatta#
 
 The following section describes how to configure client VPN settings on
 the Mac and Windows clients.
@@ -213,26 +218,30 @@ Select System Preferences from the Apple menu, then click Network.
 
 Select the Vyatta VPN (LT2P) network and update the following options:
 
-![](/knowledge_center/sites/default/files/field/image/MAC%20Network%20Prefs.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MAC%20Network%20Prefs.png){width="623"
+height="414"}
 
 #### Mac Client Connection Details
 
-![](/knowledge_center/sites/default/files/field/image/MAC%20Connection%20Details.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MAC%20Connection%20Details.png){width="627"
+height="419"}
 
 #### Mac Client Authentication Settings
 
-![](/knowledge_center/sites/default/files/field/image/MAC%20Authentication%20Settings.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MAC%20Authentication%20Settings.png){width="631"
+height="419"}
 
-####  
+####
 
 #### Configure Split Tunnel on the Mac Native IPsec Client
 
 If you want the VPN connection to be used only to access your cloud
 servers, and all other traffic (internet traffic) will not use the IPsec
 tunnel , ensure that &ldquo;Send all traffic over VPN connection&rdquo; is unchecked
-under Options.  
+under Options.<span>  </span>
 
-![](/knowledge_center/sites/default/files/field/image/MAC%20Split%20Tunnell.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MAC%20Split%20Tunnell.png){width="539"
+height="465"}
 
 After enabling split tunnel on a MAC client, you may need to add a
 static route to force all traffic destined to the VPN network over the
@@ -240,13 +249,14 @@ PPP interface. For example:
 
     sudo /sbin/route add -net 192.168.x.0/24 -interface ppp0
 
-Where 192.168.x.0/24 is the CIDR of your Cloud Network.
+<span>Where 192.168.x.0/24 is the CIDR of your Cloud Network.</span>
 
- 
+<span> </span>
 
 The following screenshot shows a successful connection:
 
-![](/knowledge_center/sites/default/files/field/image/MAC%20Successful%20Connection.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MAC%20Successful%20Connection.png){width="630"
+height="535"}
 
 Windows Client Configuration
 ----------------------------
@@ -255,35 +265,42 @@ To configure Windows clients, update the following network options.
 
 #### Set up a virtual private network (VPN) connection
 
-![](/knowledge_center/sites/default/files/field/image/Windows%20Set%20Up%20VPN.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Windows%20Set%20Up%20VPN.png){width="523"
+height="527"}
 
 #### Type the Internet Address to Connect To
 
-![](/knowledge_center/sites/default/files/field/image/Win%20Type%20the%20internet%20address%20to%20connect%20to.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Type%20the%20internet%20address%20to%20connect%20to.png){width="581"
+height="387"}
 
 #### Enter Login Credentials
 
-![](/knowledge_center/sites/default/files/field/image/Win%20Username%20and%20Password.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Username%20and%20Password.png){width="531"
+height="363"}
 
 #### Connect to the VPN
 
-![](/knowledge_center/sites/default/files/field/image/Win%20The%20connection%20is%20ready.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20The%20connection%20is%20ready.png){width="548"
+height="364"}
 
 #### Configure Vyatta VPN Properities
 
-![](/knowledge_center/sites/default/files/field/image/Win%20Connect%20to%20a%20Network_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Connect%20to%20a%20Network_0.png){width="712"
+height="452"}
 
 #### Configure VPN Properities General Configuration Tab
 
-![](/knowledge_center/sites/default/files/field/image/Win%20Vyatta%20VPN%20Properties.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Vyatta%20VPN%20Properties.png){width="461"
+height="554"}
 
 #### Configure VPN Security Settings Tab
 
-![](/knowledge_center/sites/default/files/field/image/Win%20Vyatta%20VPN%20Security%20Tab.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Vyatta%20VPN%20Security%20Tab.png){width="467"
+height="562"}
 
 #### Configure Advanced Properties
 
-#### ![](/knowledge_center/sites/default/files/field/image/Win%20Vyatta%20Advanced%20Properites.png)
+#### ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Vyatta%20Advanced%20Properites.png){width="566" height="347"}
 
 #### Configure Split Tunnel on the Windows Native IPsec Client
 
@@ -296,11 +313,11 @@ client VPN configuration as follows:
 1.  Select, Start, Control Panel, Network Connections.
 2.  Right-click the icon for the VPN connection (Vyatta-L2TP), then
     click Properties.
-3.  Click Advanced. Uncheck the "Use default gateway on remove network"
-    checkbox.
+3.  Click Advanced. Uncheck the "Use default gateway on remove
+    network" checkbox.
 4.  Click OK three times.
 
-####  ![](/knowledge_center/sites/default/files/field/image/Win%20Split%20Tunneling.png)
+####  ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Win%20Split%20Tunneling.png){width="490" height="586"}
 
 #### View Client Connection
 
@@ -309,14 +326,15 @@ Do the following to check the client's connection:
 View the Network and Sharing Center to see client logged into Vyatta
 VPN.
 
-Run ipconfig in a Command Prompt window to see the client's IP address.
+Run ipconfig i<span>n a Command Prompt window to see the client's IP
+address.</span>
 
 Show the configuration on the Vyatta Appliance:
 
-    vyatta@vyatta:~$ show vpn remote-access 
+    vyatta@vyatta:~$ show vpn remote-access
     Active remote access VPN sessions:
-    User            Proto Iface     Tunnel IP       TX byte RX byte  Time 
-    ----            ----- -----     ---------       ------- -------  ---- 
-    test            L2TP  l2tp0     192.168.100.1      1.0K    6.1K  00h01m26s 
-     
+    User            Proto Iface     Tunnel IP       TX byte RX byte  Time
+    ----            ----- -----     ---------       ------- -------  ----
+    test            L2TP  l2tp0     192.168.100.1      1.0K    6.1K  00h01m26s
+
 

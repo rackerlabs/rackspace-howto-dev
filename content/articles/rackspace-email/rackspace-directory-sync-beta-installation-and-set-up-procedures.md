@@ -2,10 +2,10 @@
 node_id: 3435
 title: 'Rackspace Directory Sync: Install and configure'
 type: article
-created_date: '2013-04-25 17:00:25'
-created_by: kevin.richey
-last_modified_date: '2016-01-12 15:5343'
-last_modified_by: stephanie.fillmon
+created_date: '2013-04-25'
+created_by: Kevin Richey
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -47,8 +47,9 @@ Enable the following ports on the Directory Sync server:
 -   **443** &ndash;Outbound HTTPS connections from the Directory Sync service
     to the Rackspace API.
 -   **8732** &ndash; Open for connections from other domain controllers to the
-    Directory Sync server not used for any connections outside your
-    network. This port is used by domain controller password hooks. 
+    Directory Sync server not used for any connections outside
+    your network. This port is used by domain controller password
+    hooks.
 -   **8080** &ndash; Used only locally on the Directory Sync service server
     for a web browser user interface. You can block this port for any
     external connections.
@@ -71,8 +72,8 @@ in.
 Administrators who log in to [my.rackspace.com](my.rackspace.com), as
 the primary contact can follow these steps:
 
-1.  Click the **Products** tab and select **Email and Apps** from the
-    menu.
+1.  Click the **Products** tab and select **Email and Apps** from
+    the menu.
 2.  Click on your domain.
 
        The Directory Sync installers are located in the right hand
@@ -99,7 +100,7 @@ platforms.
 
 To learn more about the features of the Directory Sync and how to use it
 after installation, see the [Rackspace Directory Sync Administrator's
-Guide](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-administrators-guide).
+Guide](/howto/rackspace-directory-sync-administrators-guide).
 
 Install the Directory Sync service
 ----------------------------------
@@ -122,14 +123,14 @@ the prompts for installing the Directory Sync service.
 2.  On the Ready install Directory Sync Service page, click **Install**.
 3.  When prompted, click **Yes** to restart your system now, or
     click **No** to manually restart it later. You must restart for the
-    changes to take effect. After you restart, the installation wizard
-    continues.
+    changes to take effect. After you restart, the installation
+    wizard continues.
 4.  On the Resuming the Directory Sync Service Setup Wizard page, click
     **Install**.
 5.  To complete the install process, click **Finish**.
 6.  When installation is complete, the web user interface (UI) for
     validation and synchronization automatically opens. A shortcut to
-    the web UI is created on both the Start menu and on the desktop. 
+    the web UI is created on both the Start menu and on the desktop.
 
 ### Configure the Directory Sync service and synchronize
 
@@ -150,17 +151,18 @@ Directory Sync service must be configured. Perform the following steps:
 1.  Open the Directory Sync service administrative web application, if
     it is not already open:
 
-    ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/Installer6.png)
+    ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/Installer6.png){.image-full_width
+    width="700" height="322"}
 
-2.  On the**Sync Registration Page**, enter the admin ID and password
+2.  On the **Sync Registration Page**, enter the admin ID and password
     associated with your Rackspace Cloud Office account, and then click
     **Register**.
     -   Customers who logged in to [my.rackspace.com](my.rackspace.com)
         will automatically create an admin ID through the MyRackspace
         Customer Portal before download
     -   Customers who logged in to [cp.rackspace.com](cp.rackspace.com)
-        are advised to create a new admin ID dedicated to the sync
-        service.
+        are advised to create a new admin ID dedicated to the
+        sync service.
 
 3.  On the **Settings** tab, provide the following information:
 
@@ -177,7 +179,8 @@ Directory Sync service must be configured. Perform the following steps:
         be sent to the Administrator email address.  By default, this
         value is set to 08:00.
 
-    ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/Installer7.png)
+    ![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/Installer7.png){.image-full_width
+    width="700" height="537"}
 
 4.  Click **Save & Start Sync** to begin a full synchronization.
 
@@ -187,11 +190,12 @@ Directory Sync service must be configured. Perform the following steps:
         synchronization in the entire directory. This synchronization
         type initiates only on the first synchronization process.
     -   **Delta synchronization**finds changes available for
-        synchronization in Active Directory that occurred since the last
-        synchronization. This synchronization type runs automatically
-        every 5 minutes by default but can also be performed manually.
-        To manually run a delta synchronization, click on the **Sync
-        History** tab and then click the **Sync Now** button.
+        synchronization in Active Directory that occurred since the
+        last synchronization. This synchronization type runs
+        automatically every 5 minutes by default but can also be
+        performed manually. To manually run a delta synchronization,
+        click on the **Sync History** tab and then click the **Sync
+        Now** button.
 
 **Note:** The Directory Sync services never makes changes to the
 directory. All access is read-only.
@@ -202,7 +206,7 @@ directory. All access is read-only.
 For information about how to start synchronizing your Active Directory
 objects to your mailboxes and distribution lists, see the [Directory
 Sync Operations
-Guide](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-operation-guide "Directory Sync Operations Guide").
+Guide](/howto/rackspace-directory-sync-operation-guide "Directory Sync Operations Guide").
 
 Install Password Synchronization for multiple domain controllers (optional)
 ---------------------------------------------------------------------------
@@ -230,7 +234,8 @@ synchronized to Rackspace.
 
 The following figure illustrates this communication process.
 
-![](/knowledge_center/sites/default/files/field/image/Multiple%20DC%20sync.PNG)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Multiple%20DC%20sync.PNG){width="1048"
+height="499"}
 
 ### Install Password Handler on secondary DCs
 
@@ -242,7 +247,8 @@ passwords across multiple domain controllers.
 **Note:** the **.msi** file within the folder should be installed on the
 secondary domain controllers only.
 
-![](/knowledge_center/sites/default/files/field/image/Installer8_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Installer8_0.png){width="563"
+height="393"}
 
 This process applies to multiple domain controllers (two or more).
 Repeat the following steps for each additional domain controller in the
@@ -256,8 +262,8 @@ process. Consider performing these steps during off hours
     page of the wizard.
 3.  On the next page, click **Install**.
 
-    After restart the installer will start up to finish the
-    installation.
+    After restart the installer will start up to finish
+    the installation.
 
 4.  Click **InstallFinish**.
 
@@ -268,8 +274,8 @@ configure any settings. Settings are taken from the primary DC.
 
 Now that the installation is complete, see the [Rackspace Directory Sync
 Administrator's
-Guide](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-administrators-guide)
+Guide](/howto/rackspace-directory-sync-administrators-guide)
 and the [Directory Sync Operations
-Guide](http://www.rackspace.com/knowledge_center/article/rackspace-directory-sync-operation-guide "Directory Sync Operations Guide")
+Guide](/howto/rackspace-directory-sync-operation-guide "Directory Sync Operations Guide")
 to learn how to use Directory Sync and its features.
 

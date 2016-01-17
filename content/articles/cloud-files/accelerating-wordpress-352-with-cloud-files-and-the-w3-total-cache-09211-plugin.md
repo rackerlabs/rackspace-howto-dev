@@ -2,10 +2,10 @@
 node_id: 1464
 title: 'Accelerating WordPress with Cloud Files, CDN, and the W3 Total Cache Plugin'
 type: article
-created_date: '2012-07-16 01:51:38'
-created_by: RackKCAdmin
-last_modified_date: '2015-11-12 18:0900'
-last_modified_by: Nate.Archer
+created_date: '2012-07-16'
+created_by: Rackspace Support
+last_modified_date: '2015-11-12'
+last_modified_by: Nate Archer
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -14,11 +14,11 @@ You can enhance your WordPress blog by using Cloud Files with content delivery n
 
 The following steps are best practices and have been tested and verified to optimize performance on a default installation of WordPress with the default theme. This process was last tested using WordPress version 3.8 and W3 Total Cache plugin version 0.9.3.
 
-**Note:** This article assumes that you have already completed the installation of your WordPress website and database. If you have not completed this, go [to Installing WordPress on Cloud Sites](http://www.rackspace.com/knowledge_center/article/installing-wordpress-on-cloud-sites).
+**Note:** This article assumes that you have already completed the installation of your WordPress website and database. If you have not completed this, go [to Installing WordPress on Cloud Sites](/howto/installing-wordpress-on-cloud-sites).
 
 ### Step 1
 
-Download the W3 Total Cache WordPress plugin from the [W3 Total Cache website](http://wordpress.org/extend/plugins/w3-total-cache/). If you are using any other caching plugins, deactivate and uninstall them. Ensure that WordPress has write permissions to the **wp-content** directory.  You can do this from the server's command line by changing to the WordPress directory and running the following command: 
+Download the W3 Total Cache WordPress plugin from the [W3 Total Cache website](http://wordpress.org/extend/plugins/w3-total-cache/). If you are using any other caching plugins, deactivate and uninstall them. Ensure that WordPress has write permissions to the **wp-content** directory.  You can do this from the server's command line by changing to the WordPress directory and running the following command:
 
     sudo chmod go+w wp-content
 
@@ -66,7 +66,7 @@ If you are using Rackspace Cloud Files as your CDN, log in to the [Cloud Sites C
 
     To see your API key, click **Show Key**.
 
-    If you do not have Cloud Files configured, you must add it under your **Hosting** tab. If Cloud Files is not available, contact Rackspace Cloud Sales or Support. 
+    If you do not have Cloud Files configured, you must add it under your **Hosting** tab. If Cloud Files is not available, contact Rackspace Cloud Sales or Support.
 
 Find your Cloud Files host name by going to the main [Cloud Control Panel](https://mycloud.rackspace.com). You can access it by clicking the link at the bottom of the left-hand menu pane in the Cloud Sites Control Panel.
 
@@ -79,7 +79,7 @@ Find your Cloud Files host name by going to the main [Cloud Control Panel](https
 4. Click the **Publish to CDN**.
 
     After the container is published, you can click the gear icon next to the container again and select **View All Links** to view the container's host name.
-	
+
 5.	From the **Account: *yourUserName*** menu, select **Account Settings**.
 
 6.	Click **Show** next to **API Key**. Note your username and API key from the Cloud Sites Control Panel. You will need these, as well as your Cloud Files credentials, when configuring W3 Total Cache.

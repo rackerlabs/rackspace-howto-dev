@@ -2,10 +2,10 @@
 node_id: 740
 title: Who is my domain registrar?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 17:0412'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,5 +20,5 @@ information. If you purchased your domain name through us, we serve as
 your domain registrar. We also serve as your domain registrar if you
 elected to transfer your domain name to us. If don't know where you
 bought your domain name or who serves as your registrar, you can find
-out by doing a WHOIS search. 
+out by doing a WHOIS search.
 

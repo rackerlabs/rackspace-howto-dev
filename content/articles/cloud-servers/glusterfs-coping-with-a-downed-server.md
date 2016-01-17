@@ -2,10 +2,10 @@
 node_id: 4092
 title: Recover from a failed server in a GlusterFS array
 type: article
-created_date: '2014-06-03 14:48:29'
-created_by: matt.sherborne
-last_modified_date: '2016-01-12 18:4302'
-last_modified_by: stephanie.fillmon
+created_date: '2014-06-03'
+created_by: Matt Sherborne
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -16,7 +16,7 @@ This article shows the following ways to recover when a single server fails:
 
 *  Add a new server but keep the IP address of the failed server (a more work-intensive fix).
 
-After completing the [previous article](http://www.rackspace.com/knowledge_center/article/add-and-remove-glusterfs-servers) you should have a GlusterFS array with at least two nodes and know how to add and delete nodes.
+After completing the [previous article](/howto/add-and-remove-glusterfs-servers) you should have a GlusterFS array with at least two nodes and know how to add and delete nodes.
 
 ## Prerequisites
 
@@ -105,7 +105,7 @@ In this scenario, server web03, with the IP address 192.168.0.3, has crashed and
 
 To recover, you build a new server, with the *same IP address,* present it to GlusterFS as the failed server, and let it self-heal.
 
-You then re-balance the volume into the GlusterFS.  
+You then re-balance the volume into the GlusterFS.
 
 Refer to the previous articles for information about building and configuring the replacement server.
 
@@ -131,10 +131,10 @@ Refer to the previous articles for information about building and configuring th
 
           `root@web03:~# UUID=ba502dc2-447f-466a-a732-df989e71b551`
 
-          `root@web03:~# sed  -i "s/\(UUID\)=\(.*\)/\1=$UUID/g" /var/lib/glusterd/glusterd.info` 
+          `root@web03:~# sed  -i "s/\(UUID\)=\(.*\)/\1=$UUID/g" /var/lib/glusterd/glusterd.info`
 
           `root@web03:~# cat /var/lib/glusterd/glusterd.info`
- 
+
           `UUID=ba502dc2-447f-466a-a732-df989e71b551`
 
           `operating-version=2`
@@ -157,7 +157,7 @@ Refer to the previous articles for information about building and configuring th
 
 1.  If the peer servers are not visible, you must add them explicitly:
 
-    `root@web03:~# gluster peer probe 192.168.0.1` 
+    `root@web03:~# gluster peer probe 192.168.0.1`
 
     `peer probe: success`
 
@@ -169,7 +169,7 @@ Refer to the previous articles for information about building and configuring th
 
     p`eer probe: success`
 
-1.  Run the  `gluster peer status` command again on web03. The response should be: `State: Accepted peer request (Connected)` 
+1.  Run the  `gluster peer status` command again on web03. The response should be: `State: Accepted peer request (Connected)`
 
 1.  Restart the daemon one more time, and the peer servers should be visible:
 
@@ -235,7 +235,7 @@ Refer to the previous articles for information about building and configuring th
         root@web03:~# apt-get install attr -y
         ...
         root@web03:~# setfattr -n trusted.glusterfs.volume-id -v '0s42V5HW+LSuyzqotW1jgAhA==' /srv/.bricks/www
-    
+
 
 1.  Restart the server, and then heal the system:
 
@@ -250,16 +250,16 @@ Refer to the previous articles for information about building and configuring th
 
         root@matt:~# gluster volume heal www info
         Gathering Heal info on volume www has been successful
-    
+
         Brick 192.168.0.1:/srv/.bricks/www
         Number of entries: 0
-    
+
         Brick 192.168.0.2:/srv/.bricks/www
         Number of entries: 0
-    
+
         Brick 192.168.0.3:/srv/.bricks/www
         Number of entries: 0
-     
+
         Brick 192.168.0.4:/srv/.bricks/www
         Number of entries: 0
 

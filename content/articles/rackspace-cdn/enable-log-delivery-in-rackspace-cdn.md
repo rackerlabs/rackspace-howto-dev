@@ -2,10 +2,10 @@
 node_id: 4904
 title: Enable log delivery in Rackspace CDN
 type: article
-created_date: '2015-10-29 20:03:28'
-created_by: catherine.richardson
-last_modified_date: '2015-10-29 20:2428'
-last_modified_by: catherine.richardson
+created_date: '2015-10-29'
+created_by: Catherine Richardson
+last_modified_date: '2015-10-29'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: tinymce
 ---

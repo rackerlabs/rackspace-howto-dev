@@ -2,10 +2,10 @@
 node_id: 1469
 title: Configure a load balancer
 type: article
-created_date: '2012-07-17 04:24:39'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 20:2813'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-17'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Load Balancers
 body_format: markdown_w_tinymce
 ---
@@ -30,13 +30,13 @@ Mission-critical web-based applications and workloads require a high availabilit
 ## Set up a load balancer
 
 1. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
- 
+
 2. In the top navigation bar, click **Servers**.
 
-3. Under Create Resources, click **Load Balancers**. 
+3. Under Create Resources, click **Load Balancers**.
 
 4. Under **Identification**, enter the name of your new load balancer and select the region.
- 
+
 5. Under **Configuration**, select one of the following choices for **Virtual IP**.
 
     - **Accessible on the Public Internet:** Setting your virtual IP type to public allows any two servers with public IP addresses to be load balanced. These can be nodes outside of the Rackspace network, but be aware that standard bandwidth rates will apply.
@@ -44,13 +44,13 @@ Mission-critical web-based applications and workloads require a high availabilit
     - **On the Rackspace Service Network:** This is the best option for load balancing two cloud servers because it allows the load-balancing traffic to run on the Rackspace Cloud internal network, or ServiceNet. This option has two distinct advantages: the rate limit is double what the rate limit is on the public interface, and all traffic on ServiceNet between cloud servers is not charged for bandwidth.
 
     - **Shared VIP on Another Load Balancer:** Use this option if you want to load balance multiple services on different ports while using the same virtual IP address.
-	
-6. Choose the protocol and port that best suits your needs. The port adjusts to the protocol that you select, but you can also edit the port yourself. (See [Choosing the Right Protocol](http://www.rackspace.com/knowledge_center/article/choosing-the-right-protocol-0) for more information about the protocols that you can choose when configuring a load balancer.)
- 
+
+6. Choose the protocol and port that best suits your needs. The port adjusts to the protocol that you select, but you can also edit the port yourself. (See [Choosing the Right Protocol](/howto/available-protocols-when-configuring-a-cloud-load-balancer) for more information about the protocols that you can choose when configuring a load balancer.)
+
 7. Choose the appropriate algorithm for your load balancer.
 
     **Note:** This is a very important attribute to set, especially as your load balancer implementation gets more complex. In most cases, the Random, Round Robin, or Least Connections algorithm are sufficient when load balancing two identical servers for increased web traffic. If your servers are unequal in size or resources, consider using weighted algorithms to favor the servers that have more resources.
- 
+
 8.	Under **Add Nodes**, click **Add Cloud Servers** to set your load balancer to operate on one or more of your cloud servers.
 <a name="hostname"></a>
 9.	To add one or more external nodes, click **Add External Node**, and then enter the IP address and port (usually port 80 for HTTP traffic) of the service that you want load balanced. You can then enable or disable the load-balancing service on your external node directly through the control panel.
@@ -91,6 +91,6 @@ The cost for each load balancer (instance) is based on an hourly rate plus the n
 
 ## Where to go from here
 
-Learn how to use Cloud Files and the Content Delivery Network for website acceleration and mass object-storage at [Getting started with Cloud Files and CDN](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-files-and-cdn-0).
+Learn how to use Cloud Files and the Content Delivery Network for website acceleration and mass object-storage at [Getting started with Cloud Files and CDN](/howto/getting-started-with-cloud-files-and-cdn-0).
 
 <p>&nbsp;</p>

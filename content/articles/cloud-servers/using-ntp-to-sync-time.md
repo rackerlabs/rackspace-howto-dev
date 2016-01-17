@@ -2,10 +2,10 @@
 node_id: 3406
 title: Using NTP to Sync Time
 type: article
-created_date: '2013-04-15 21:50:43'
-created_by: jered.heeschen
-last_modified_date: '2013-04-18 20:3015'
-last_modified_by: jered.heeschen
+created_date: '2013-04-15'
+created_by: Jered Heeschen
+last_modified_date: '2013-04-18'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -17,9 +17,10 @@ emails sent from your machine are correct. An accurate clock is
 especially helpful when you need to look at the logs from a particular
 time of day.
 
-If you don't occasionally set the system clock yourself, the time will
-slowly drift away from a perfectly accurate setting. That's when the
-network time protocol (NTP) is useful.
+<span style="line-height: 1.538em;">If you don't occasionally set the
+system clock yourself, the time will slowly drift away from a perfectly
+accurate setting. That's when the network time protocol (NTP) is
+useful.</span>
 
 ### What is NTP?
 
@@ -42,7 +43,8 @@ running:
 
 #### Ubuntu / Debian:
 
-    sudo aptitude updatesudo aptitude install ntp
+    sudo aptitude update
+    sudo aptitude install ntp
 
 #### CentOS:
 
@@ -81,6 +83,8 @@ running:
 
     sudo ln &ndash;s /etc/init.d/ntpd /etc/runlevels/default
 
+<div>
+
 ### Start the service
 
 To make sure the NTP service starts after installing it, run:
@@ -107,6 +111,8 @@ or
     restart
 
 sent as the argument instead of start.
+
+</div>
 
 ### Quickstart
 
@@ -200,12 +206,13 @@ NTP site. At the site is a description of the servers available, and in
 the sidebar are links to three levels of NTP servers: Primary,
 secondary, and pool.
 
-![](/knowledge_center/sites/default/files/field/image/usingntp_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/usingntp_0.png){width="183"
+height="249"}
 
 Deciding what type of server to sync from will depend on how accurate
 you need your servers to be.
 
-#### NTP pool servers
+#### [](){#poolservers}NTP pool servers
 
 For most users, the pool servers are the best choice. Pool servers are
 machines that have volunteered to make their NTP server available to the
@@ -263,9 +270,9 @@ follows:
     preferences of that server's administrator regarding whether or not
     they be notified before you sync with their NTP server. Admins who
     want to be notified are usually trying to manage the traffic to
-    their server, so be sure and respect their wishes regarding
-    notification. Note that primary servers are always considered as
-    requesting notification before use.
+    their server, so be sure and respect their wishes
+    regarding notification. Note that primary servers are always
+    considered as requesting notification before use.
 -   **Service Area:** If you've selected a primary or secondary server
     you want to use, click its hostname in the list to view further
     details for that server. Among the details listed is the
@@ -345,5 +352,5 @@ For more details on setting up an NTP server and what options are
 available, visit the [NTP documentation
 site](http://support.ntp.org/bin/view/Support/WebHome). If you want to
 know more about how NTP works, go to the main [NTP web
-site]("http://www.ntp.org/) and all will be revealed.
+site](%22http://www.ntp.org/) and all will be revealed.
 

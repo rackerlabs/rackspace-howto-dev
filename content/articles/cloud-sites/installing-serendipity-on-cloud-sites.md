@@ -2,10 +2,10 @@
 node_id: 693
 title: Installing Serendipity on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 14:4220'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -16,14 +16,13 @@ interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
 and selecting Cloud Sites Control Panel.
 
-1.  If you have not already done so, go to
-    [http://www.s9y.org/12.html](http://www.s9y.org/12.html "http://www.s9y.org/12.html")
+1.  If you have not already done so, go to <http://www.s9y.org/12.html>
     and download the latest full release of Serendipity.
 2.  Create your new domain from the Cloud Sites Control Panel. If you
     need assistance, please see [How do I add a
-    website?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website)
+    website?](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website)
 3.  Once the domain has finished creating, create your database. To do
-    this, click Hosting --\> Cloud Sites from the left sidebar, then
+    this, click Hosting --&gt; Cloud Sites from the left sidebar, then
     select your website from the menu. Scroll down to the Website
     Features section and choose "Add New" next to Databases. Type in
     whatever name you would like to call the DB and select MySQL 5. Type
@@ -38,7 +37,7 @@ and selecting Cloud Sites Control Panel.
     use?](/knowledge_center/index.php/What_FTP_software_should_I_use%3F "What FTP software should I use?")
     and use the information to connect provided in [Getting Started With
     Cloud Sites, FTP/SSHFS/FTP
-    Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+    Clients](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients).
     Your best bet will be to upload (to your web/content folder)
     everything inside the &lsquo;serendipity&rsquo; folder contained within the .zip
     or tar.gz file you downloaded.
@@ -52,7 +51,7 @@ and selecting Cloud Sites Control Panel.
 10. Customize your General Settings information.
 11. Review to make sure all information is correct.
 12. Click the Complete Installation button.
-13. Congratulations, you have successfully installed your Serendipity
-    site.
+13. Congratulations, you have successfully installed your
+    Serendipity site.
 
 

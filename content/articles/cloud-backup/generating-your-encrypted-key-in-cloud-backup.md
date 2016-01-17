@@ -2,10 +2,10 @@
 node_id: 1291
 title: Generating Your Encrypted Key in Cloud Backup
 type: article
-created_date: '2012-02-20 23:39:42'
-created_by: RackKCAdmin
-last_modified_date: '2014-03-13 20:5837'
-last_modified_by: ross.diaz
+created_date: '2012-02-20'
+created_by: Rackspace Support
+last_modified_date: '2014-03-13'
+last_modified_by: Ross Diaz
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -27,8 +27,9 @@ library), by using the following method:
     #!/usr/bin/env python
     # rcbucrypt.py - Create hex encryption key for API call to set encryption password.
     #
-    # WARNING: This code might not work on some operating systems' flavors of python, 
-    # such as Mac OS-X#
+    # WARNING: This code might not work on some operating systems' flavors of python,
+    # such as Mac OS-X
+    #
     # Example: rcbucrypt.py thisismypassword public-key.pem
 
     import sys
@@ -60,5 +61,5 @@ library), by using the following method:
       pemfile = sys.argv[2]
       encrypt(secret, pemfile)
 
- 
+
 

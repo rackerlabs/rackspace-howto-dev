@@ -2,10 +2,10 @@
 node_id: 4169
 title: Recommended Cloud Backup file/directory level configuration for a Linux server
 type: article
-created_date: '2014-08-05 20:18:28'
-created_by: chris.goldsmith
-last_modified_date: '2014-08-07 17:1001'
-last_modified_by: chris.goldsmith
+created_date: '2014-08-05'
+created_by: Chris Goldsmith
+last_modified_date: '2014-08-07'
+last_modified_by: Chris Goldsmith
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---

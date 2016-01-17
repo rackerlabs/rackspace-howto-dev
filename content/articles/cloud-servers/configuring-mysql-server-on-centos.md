@@ -2,16 +2,16 @@
 node_id: 1171
 title: Configuring MySQL server on CentOS
 type: article
-created_date: '2011-07-29 15:09:35'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 15:5909'
-last_modified_by: stephanie.fillmon
+created_date: '2011-07-29'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
 In the [previous
-article](http://www.rackspace.com/knowledge_center/article/installing-mysql-server-on-centos)
+article](/howto/installing-mysql-server-on-centos)
 we covered a basic MySQL server setup on CentOS Linux. We set the root
 password, created a database, and created a user for the database. Now
 let's look at MySQL in a little more detail so we can tweak its
@@ -55,9 +55,9 @@ are kept.
 #### Config groups
 
 There are lines in the config file that just contain a word in square
-brackets, like "[client]" or "[mysqld]". Those are "config groups" and
-they tell the programs that read the configuration file which parts they
-should pay attention to.
+brackets, like "\[client\]" or "\[mysqld\]". Those are "config groups"
+and they tell the programs that read the configuration file which parts
+they should pay attention to.
 
 See, while we've been focusing on the server part of MySQL, it's
 technically a collection of tools. That includes the server (mysqld),
@@ -110,7 +110,7 @@ the lines in the appropriate categories:
 
     [client]
     port = 3306
-     
+
     [mysqld]
     port = 3306
 
@@ -316,7 +316,7 @@ megs of RAM are:
     innodb_thread_concurrency = 8
     innodb_file_per_table
 
-Add those to the [mysqld] section of the config file. Again, those are
+Add those to the \[mysqld\] section of the config file. Again, those are
 only rough guides - enough to get you running, but definitely not
 optimized. For that you'll probably want a DBA, or at least to
 experiment with incremental changes over time.

@@ -2,11 +2,11 @@
 node_id: 3279
 title: Compute Cloud (Nova) using SeaMicro SM15000
 type: article
-created_date: '2013-01-24 21:50:28'
-created_by: alyssah
-last_modified_date: '2016-01-06 19:5121'
-last_modified_by: constanze.kratel
-product: Rackspace Private Cloud - OpenStack
+created_date: '2013-01-24'
+created_by: Alyssa Hurtgen
+last_modified_date: '2016-01-06'
+last_modified_by: Constanze Kratel
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
@@ -17,7 +17,7 @@ Cloud computing is creating significant shifts in the way information
 technology is provisioned and consumed. This also kicks off a challenge
 to cloud service providers find innovative ways to adhere to the high
 demands of availability, performance, efficiency, and
-cost-effectiveness. 
+cost-effectiveness.
 
 AMD&rsquo;s SeaMicro SM15000&trade; brings together compute, storage, and networking
 very effectively to solve huge costs and space issues with hardware
@@ -34,20 +34,29 @@ may be configured with the following:
 
 -   64 compute cards (c-cards) with up to 8 cores per card
 
+<!-- -->
+
 -   64 internal SSD or HDD drives at 2.5&rdquo;
+
+<!-- -->
 
 -   8 storage cards (s-cards) with up to 1,344 external disks
     -   2 enclosures (Just a Bunch of Disks/JBODs) each
     -   84 3.5&rdquo; disks per JBOD
 
+<!-- -->
+
 -   4 Terabytes of DRAM
+
+<!-- -->
 
 -   16 x 10 Gigabit Ethernet (GbE) or 64 x 1 GbE uplinks
 
 A total raw capacity of 6,848 TB or 6.69 PB may be attached to the
 system, including both internal and external drives.
 
-![](/knowledge_center/sites/default/files/field/image/seamicro.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/seamicro.png){width="538"
+height="257"}
 
 An interesting and powerful aspect of the SM15000&trade; is the supercompute
 fabric, which is able to deliver 1.28 Terabits/second of bandwidth
@@ -72,6 +81,8 @@ categorized into two types of nodes:
 -   Controller Node &ndash; Controller node hosts RabbitMQ server, MySQL
     database, Keystone, API server, Horizon, and Glance.
 
+<!-- -->
+
 -   Compute Node &ndash; nova-compute and nova-network.
 
 The API service is responsible for receiving and responding to the user
@@ -85,7 +96,8 @@ You can interact with the APIs using OpenStack python-bindings or you
 can use Horizon, which is a graphical user interface to interact with
 the cloud.
 
-![](/knowledge_center/sites/default/files/field/image/masscompute_1-web.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/masscompute_1-web.jpg){width="600"
+height="398"}
 
 Recommended architecture
 ------------------------
@@ -101,8 +113,12 @@ services running in the SeaMicro fabric is as follows:
     Horizon dashboard, nova-scheduler, cinder-scheduler, Keystone
     Identity service, API services, and MySQL database.
 
+<!-- -->
+
 -   4 cinder-volume servers on 4 c-cards with 4\*2 TB of block storage.
 -   1 Chef-server on it's own c-card
+
+<!-- -->
 
 -   45 compute nodes on 45 c-cards running nova-compute. These nodes
     will host the virtual machines.
@@ -123,7 +139,7 @@ Installation
 Installation of RPCS is well documented in the following article:
 
 [Getting Started with Rackspace Private Cloud -
-OpenStack](http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud "http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud")
+OpenStack](/howto/rackspace-private-cloud-openstack "/howto/rackspace-private-cloud-openstack")
 
 Conclusion
 ----------
@@ -136,11 +152,11 @@ solutions, and is just one system to manage.
 References
 ----------
 
-[http://www.seamicro.com/products/SM15000](http://www.seamicro.com/products/SM15000)
+<http://www.seamicro.com/products/SM15000>
 
-[http://www.brightsideofnews.com/print/2012/9/11/amd-expands-seamicro-big-data-gets-a-high-performance-home.aspx](http://www.brightsideofnews.com/print/2012/9/11/amd-expands-seamicro-big-data-gets-a-high-performance-home.aspx)
+<http://www.brightsideofnews.com/print/2012/9/11/amd-expands-seamicro-big-data-gets-a-high-performance-home.aspx>
 
-[http://www.fallenbeck.net/publications/sfsf10.pdf](http://www.fallenbeck.net/publications/sfsf10.pdf) 
+<http://www.fallenbeck.net/publications/sfsf10.pdf>
 
-[http://github.com/rcbops/chef-cookbooks](http://github.com/rcbops/chef-cookbooks)
+<http://github.com/rcbops/chef-cookbooks>
 

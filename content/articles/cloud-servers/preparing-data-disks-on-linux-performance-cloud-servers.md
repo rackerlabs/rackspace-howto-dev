@@ -2,10 +2,10 @@
 node_id: 3749
 title: Preparing Data Disks on Linux Cloud Servers
 type: article
-created_date: '2013-10-31 16:21:27'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 16:3843'
-last_modified_by: rose.coste
+created_date: '2013-10-31'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -14,7 +14,7 @@ The data disks attached to some flavors of Cloud Servers are unformatted when cr
 
 **Note:** If your server has a data disk attached to it, the data disk will be listed in your server's Details page.
 
-The following is a guide to preparing data disks efficiently for standalone use.  To configure two data disks in a software RAID, see [Configuring a software RAID on a Linux General Purpose Cloud Server](/knowledge_center/article/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
+The following is a guide to preparing data disks efficiently for standalone use.  To configure two data disks in a software RAID, see [Configuring a software RAID on a Linux General Purpose Cloud Server](/howto/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
 
 1. List the volumes attached to your server by running the `fdisk` command.
 
@@ -72,7 +72,7 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
         Command action
            e   extended
-           p   primary partition (1-4)        
+           p   primary partition (1-4)
 
 4. Enter **p** to indicate a primary partition.
 
@@ -82,7 +82,7 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
     Example Output:
 
-        Partition number (1-4): 
+        Partition number (1-4):
 
 5. Because this is the first and only partition that you are creating on the volume, enter **1**.
 
@@ -92,14 +92,14 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
     Example Output:
 
-        First cylinder (1-13054, default 1):  
-        
+        First cylinder (1-13054, default 1):
+
 6. To accept the default start cylinder, which is `1`, press **Enter**.
 
     Example Output:
 
         Using default value 1
-        Last cylinder, +cylinders or +size{K,M,G} (1-13054, default 13054): 
+        Last cylinder, +cylinders or +size{K,M,G} (1-13054, default 13054):
 
 7. Press **Enter** to select the last cylinder of the disk for the partition to use up the entire disk. The last partition is the default.
 
@@ -120,7 +120,7 @@ The following is a guide to preparing data disks efficiently for standalone use.
         The partition table has been altered!
 
         Calling ioctl() to re-read partition table.
-        Syncing disks.  
+        Syncing disks.
 
 9. List the disks on your server again.
 
@@ -138,17 +138,17 @@ The following is a guide to preparing data disks efficiently for standalone use.
         Sector size (logical/physical): 512 bytes / 512 bytes
         I/O size (minimum/optimal): 512 bytes / 512 bytes
         Disk identifier: 0x000dc852
-        
+
             Device Boot      Start         End      Blocks   Id  System
         /dev/xvda1               1        5222    41942016   83  Linux
-        
+
         Disk /dev/xvde: 107.4 GB, 107374182400 bytes
         255 heads, 63 sectors/track, 13054 cylinders
         Units = cylinders of 16065 * 512 = 8225280 bytes
         Sector size (logical/physical): 512 bytes / 512 bytes
         I/O size (minimum/optimal): 512 bytes / 512 bytes
         Disk identifier: 0x59a4ec2c
-        
+
             Device Boot      Start         End      Blocks   Id  System
         /dev/xvde1               1       13054   104856223+  83  Linux
 
@@ -177,7 +177,7 @@ The following is a guide to preparing data disks efficiently for standalone use.
          /dev/xvde1   path/to/directory  ext3    defaults,noatime,nofail      0      0
 
 12. Mount any new drives by running the `mount` command.
- 
+
         sudo mount -a
 
 13. Confirm that the data disks are mounted by running a disk space check.

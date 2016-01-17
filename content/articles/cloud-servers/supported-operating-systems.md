@@ -2,10 +2,10 @@
 node_id: 4744
 title: Supported Operating Systems
 type: article
-created_date: '2015-07-16 19:05:11'
-created_by: Nate.Archer
-last_modified_date: '2015-08-05 19:4737'
-last_modified_by: Nate.Archer
+created_date: '2015-07-16'
+created_by: Nate Archer
+last_modified_date: '2015-08-05'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---

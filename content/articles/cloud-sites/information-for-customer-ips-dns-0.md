@@ -2,10 +2,10 @@
 node_id: 4727
 title: Information for customer IP addresses and DNS
 type: article
-created_date: '2015-06-25 20:47:40'
-created_by: alonzo.garza
-last_modified_date: '2016-01-14 00:0327'
-last_modified_by: rose.coste
+created_date: '2015-06-25'
+created_by: Alonzo Garza
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Cloud Sites
 body_format: full_html
 ---
@@ -22,24 +22,24 @@ body_format: full_html
     -   *72.32.10.144 - 72.32.10.159 (WC1.DFW3)*
     -   *72.32.47.176 - 72.32.47.191 (WC2.DFW3)*
 
-    <br>
-    <br>
--   Outbound IP addresses for access to ServiceNet resources will
-    change. If you have any ServiceNet resources such as Cloud Servers,
-    Cloud Databases, etc., restricting access by IP address, please add
-    **10.187.240.0/20** to your whitelists.<br>
-    <br>
+
+
+-   Outbound IP addresses for access to ServiceNet resources
+    will change. If you have any ServiceNet resources such as Cloud
+    Servers, Cloud Databases, etc., restricting access by IP address,
+    please add **10.187.240.0/20** to your whitelists.
+
 -   Database management IP addresses will change. Based on your
     technology, please reference
-    [MSSQL](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes)
+    [MSSQL](/howto/information-for-ms-sql-changes)
     or
-    [MySQL](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0)
-    for more information.<br>
-    <br>
--   Test links for websites will be changing to reflect their new
-    location. Test links should only be used for testing purposes and
-    can change at any time. These URLs for site management are available
-    after September 1, 2015:
+    [MySQL](/howto/information-for-mysql-users-mariadb-100-0)
+    for more information.
+
+-   Test links for websites will be changing to reflect their
+    new location. Test links should only be used for testing purposes
+    and can change at any time. These URLs for site management are
+    available after September 1, 2015:
     -   If your current testlink URL contains "DFW1-1", then your new
         testlink URL follows this pattern:
         www.yoursite.com.*cluster.***dfw3-1**.websitetestlink.com
@@ -50,12 +50,12 @@ body_format: full_html
 **What is not changing?**
 -------------------------
 
--   Customers will not need to update their DNS entries for their
-    websites. We will be migrating SSL and cluster IPs over\*.<br>
-    <br>
--   Customers using 3rd party DDoS mitigation services (such as
-    CloudFlare) will not need to update anything on their end.<br>
-    <br>
+-   Customers will not need to update their DNS entries for
+    their websites. We will be migrating SSL and cluster IPs over\*.
+
+-   Customers using 3rd party DDoS mitigation services (such
+    as CloudFlare) will not need to update anything on their end.
+
 -   FTP records and IPs will also remain the same\*.
 
     **Note:** Old DNS entries (i.e., test links) will be retired by end
@@ -101,29 +101,29 @@ occurred?**
 **MySQL Workbench/SQL Server Management Studio stopped connecting after
 the maintenance. What could have occurred?**
 
--   External database management IPs will be changing.Based on your
-    technology, please
-    reference [MSSQL](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes) or [MySQL](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0) for
-    more information
+-   External database management IPs will be changing.<span>Based on
+    your technology, please
+    reference </span>[MSSQL](/howto/information-for-ms-sql-changes)<span> or </span>[MySQL](/howto/information-for-mysql-users-mariadb-100-0)<span> for
+    more information</span>
 
 **My test links stopped working after the maintenance. What occurred?**
 
 -   After the maintenance, test links will be changing to a new format
     to reflect the new datacenter. Please see test link table above.
 
- 
+
 
 **Related Topics**
 
 -   [Important scheduled maintenance: DFW environment
-    migration](http://rackspace.com/knowledge_center/article/important-scheduled-maintenance-dfw-environment-migration)
+    migration](/howto/important-scheduled-maintenance-dfw-environment-migration)
 -   [Information for Customer IPs &
-    DNS](http://rackspace.com/knowledge_center/article/information-for-customer-ips-dns-0)
+    DNS](/howto/information-for-customer-ip-addresses-and-dns)
 -   [Information for MS SQL
-    changes](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes)
--   [Information for MySQL Users (MariaDB
-    10.0)](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0)
+    changes](/howto/information-for-ms-sql-changes)
+-   [Information for MySQL Users
+    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
 -   [Information for new PHP 5.6 & Apache
-    version](http://rackspace.com/knowledge_center/article/information-for-new-php-56-apache-version-0)
+    version](/howto/information-for-new-php-56-apache-version-0)
 
 

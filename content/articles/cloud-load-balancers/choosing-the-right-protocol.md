@@ -2,10 +2,10 @@
 node_id: 1773
 title: Available protocols when configuring a Cloud Load Balancer
 type: article
-created_date: '2012-07-31 04:31:03'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 20:3250'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-31'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -30,11 +30,11 @@ fetches the page and returns it your browser.
 
 **HTTPS** - The Hypertext Transfer Protocol over Secure Socket Layer
 (SSL) provides encrypted communication over the Internet. It securely
-verifies the authenticity of the web server you're communicating with. 
+verifies the authenticity of the web server you're communicating with.
 
-**IMAPS** - The Internet Message Application Protocol over Secure Socket
-Layer (SSL) defines how an email client, such as Microsoft Outlook,
-retrieves and transfers email messages with a mail server.
+**[]()IMAPS** - The Internet Message Application Protocol over Secure
+Socket Layer (SSL) defines how an email client, such as Microsoft
+Outlook, retrieves and transfers email messages with a mail server.
 
 **IMAPv2** - Version 2 of IMAPS.
 
@@ -70,17 +70,17 @@ servers to send and receive email messages. Email clients use this
 protocol to relay messages to another computer or web server, but use
 IMAP or POP to send and receive messages.
 
-**TCP** - The Transmission Control Protocol is a part of the Transport
-Layer protocol and is one of the core protocols of the Internet Protocol
-Suite. It provides a reliable, ordered delivery of a stream of bytes
-from one program on a computer to another program on another computer.
-Applications that require an ordered and reliable delivery of packets
-use this protocol. See UDP. 
+[]()**TCP** - The Transmission Control Protocol is a part of the
+Transport Layer protocol and is one of the core protocols of the
+Internet Protocol Suite. It provides a reliable, ordered delivery of a
+stream of bytes from one program on a computer to another program on
+another computer. Applications that require an ordered and reliable
+delivery of packets use this protocol. See UDP.
 
 **TCP (Client First) **- This protocol is similiar to TCP, but is more
 efficient when a client is required to write the data to the server
-before receiving the server's respone.<br>
- *Note: TCP\_CLIENT\_FIRST cannot be placed on a VIP that already
+before receiving the server's respone.
+*Note: TCP\_CLIENT\_FIRST cannot be placed on a VIP that already
 dispatches HTTP.*
 
 **TCP (Stream)** - TCP Streaming allows either the client or server to
@@ -89,11 +89,11 @@ for protocols where there is no request-response semantic. Either side
 of the connection can write the first message, with no response being
 necessarily required or expected.
 
-**UDP** - The User Datagram Protocol provides a datagram service
+[]()**UDP** - The User Datagram Protocol provides a datagram service
 that emphasizes speed over reliability, It works well with applications
-that provide security through other measures. 
+that provide security through other measures.
 
-**UDP (Stream)**- This protocol is designed to stream media over
+**UDP (Stream)** - This protocol is designed to stream media over
 networks and is built on top of UDP.
 
 ### Limitations for UDP Protocols

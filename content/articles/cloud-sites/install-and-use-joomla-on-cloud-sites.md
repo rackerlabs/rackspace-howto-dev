@@ -2,10 +2,10 @@
 node_id: 671
 title: Install and use Joomla on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 16:4612'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,8 +20,7 @@ and selecting Cloud Sites Control Panel.
 
 -   Administrative access to the Rackspace Cloud to create domains and
     add databases
--   Joomla software from
-    [http://www.joomla.org/download.html](http://www.joomla.org/download.html "http://www.joomla.org/download.html")
+-   Joomla software from <http://www.joomla.org/download.html>
     uncompressed in a local repository
 -   Ftp access to website, and a ftp client like ExpanDrive in order to
     use the ftp method of uploading files (optional)
@@ -29,11 +28,13 @@ and selecting Cloud Sites Control Panel.
 **Procedure**
 
 -   Login to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp| "http://manage.rackspacecloud.com/pages/Login.jsp|")
+    Panel](http://manage.rackspacecloud.com/pages/Login.jsp%7C "http://manage.rackspacecloud.com/pages/Login.jsp|"){.external
+    .text}
 -   If you are new to Rackspace Cloud, please refer to [Adding a new
-    website](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website "/knowledge_center/index.php/Adding_a_new_website").
--   Navigate the Hosting-\>Cloud Sites menu to the website hyperlink on
-    which Joomla needs to be installed
+    website](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website "/knowledge_center/index.php/Adding_a_new_website"){.external
+    .text}.
+-   Navigate the Hosting-&gt;Cloud Sites menu to the website hyperlink
+    on which Joomla needs to be installed
 
 NOTE: The domain must have php enabled, and database feature selected.
 The database feature can be added by using the CHANGE PLAN hyperlink on
@@ -41,7 +42,8 @@ the domain **General Settings** tab.
 
 -   Upload the Joomla files to the desired location on the website using
     FTP - Refer to [Upload content to a website using
-    FTP](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP")
+    FTP](/howto/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP"){.external
+    .text}
     -   To integrate Joomla to the root of domain (e.g.
         http://example.com/), place all contents of the unzipped Joomla
         directory (but excluding the directory itself) into the root
@@ -52,12 +54,17 @@ the domain **General Settings** tab.
         to use a subdirectory called "Joomla", rename the directory
         called "Joomlaxxx" to "Joomla" and upload it to /web/content/.
 
+<!-- -->
+
 -   Next create a new Mysql database (e.g. joomla15) with user (e.g.
     joomla15) (Refer to \* [Add a MySQL database to a website or
-    domain](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain")).
+    domain](/howto/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain"){.external
+    .text}).
 -   Note the database information a) database name b) user name c)
-    password d) hostname (not localhost) for use during the Joomla
-    installation.
+    password d) hostname (not localhost) for use during the
+    Joomla installation.
+
+<!-- -->
 
 -   With this, Cloud Sites specific steps are complete. Follow on screen
     prompts to continue the installation.
@@ -68,9 +75,11 @@ the domain **General Settings** tab.
     -   If Joomla is in its own sub-directory called "Joomla", e.g.
         visit: http://www.example.com/Joomla
     -   If DNS is not setup for the domain, use the Testing URL provided
-        in the Cloud Sites Control Panel under the General Settings
-        tab, e.g.
+        in the Cloud Sites Control Panel under the General
+        Settings tab, e.g.
         visit: http://www.example.com.php5-7.dfw1-1.websitetestlink.com/Joomla.
+
+<!-- -->
 
 -   Select a language and follow the on-screen prompts
 -   Proceed to next step and note warning that the configuration.php
@@ -78,13 +87,13 @@ the domain **General Settings** tab.
     uploads the files.)
 -   Proceed to the next step and accept license.
 -   Select "mysql" as the database type. Fill in the required
-    information for database which was noted down when it was setup
-    earlier.
+    information for database which was noted down when it was
+    setup earlier.
 
- 
 
--   Skip the FTP Configuration for now. Default is not to use the FTP
-    layer. Accept it and move to next step.
+
+-   Skip the FTP Configuration for now. Default is not to use the
+    FTP layer. Accept it and move to next step.
 -   In the Main configuration, customize the site name, specify an
     administrative password and Install sample data if needed.
 -   Follow instructions to create a **configuration.php** if prompted.
@@ -99,18 +108,18 @@ the domain **General Settings** tab.
     -   If Joomla is in its own sub-directory called "Joomla", e.g.
         visit: http://www.example.com/Joomla
     -   If DNS is not setup for the domain, use the Testing URL provided
-        in the Classic Cloud Control Panel under the General Settings
-        tab, e.g.
+        in the Classic Cloud Control Panel under the General
+        Settings tab, e.g.
         visit: http://www.example.com.php5-7.dfw1-1.websitetestlink.com/Joomla
 -   Sign in as "admin" and customize site as needed
 
-<br>
- **Additional Resources**
 
--   A video tutorial is available at
-    [http://www.rackspace.com/cloud/cloud\_hosting\_demos/](http://www.rackspace.com/cloud/cloud_hosting_demos/ "http://www.rackspace.com/cloud/cloud_hosting_demos/")
+**Additional Resources**
+
+-   <span>A video tutorial is available at
+    </span><http://www.rackspace.com/cloud/cloud_hosting_demos/>
 -   Add new articles using the Joomla documentation at
-    [http://docs.joomla.org/](http://docs.joomla.org/ "http://docs.joomla.org/")
+    <http://docs.joomla.org/>
 
 ---**RKN** - 12/6/2009
 

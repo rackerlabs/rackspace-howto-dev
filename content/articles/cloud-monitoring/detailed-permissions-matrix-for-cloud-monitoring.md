@@ -2,10 +2,10 @@
 node_id: 3395
 title: Detailed Permissions Matrix for Rackspace Monitoring
 type: article
-created_date: '2013-04-10 16:21:37'
-created_by: megan.meza
-last_modified_date: '2016-01-04 19:1409'
-last_modified_by: constanze.kratel
+created_date: '2013-04-10'
+created_by: Megan Meza
+last_modified_date: '2016-01-04'
+last_modified_by: Constanze Kratel
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -13,13 +13,13 @@ body_format: tinymce
 The following permissions matrix displays specific permissions for the
 roles in Rackspace Monitoring. The matrix displays the method names,
 their corresponding RESTful API commands, and the roles that are
-supported.  
+supported.
 
 **[Rackspace Monitoring Developer
 Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](/howto/)**
 
 **[Rackspace Monitoring Terminology](#monitoring)**
 
@@ -41,1088 +41,1296 @@ Creator
 
 Admin
 
- 
+
 
 ### ACCOUNT
 
-Get Account
+<span>Get Account</span>
 
-GET/v1.0/account
+<span>GET/v1.0/account</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Returns account information.
+<span>Returns account information.</span>
 
-Update Account
+<span>Update Account</span>
 
-PUT/v1.0/account
+<span>PUT/v1.0/account</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates properties on an account.
 
-List Audits
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-GET/v1.0/audits
+<span>Updates properties on an account.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>List Audits</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>GET/v1.0/audits</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists audits for this account.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Get Limits
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-GET/v1.0/limits
+<span>Lists audits for this account.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Get Limits</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>GET/v1.0/limits</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Returns account resource limits.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Get Usage
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-GET/v1.0/usage
+<span>Returns account resource limits.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Get Usage</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>GET/v1.0/usage</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Retrieves usage information for a given period of time. Defaults to last
-seven days.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Retrieves usage</span><span> information for a given period of
+time. Defaults to last seven days.</span>
 
 ### AGENTS
 
-List Agents
+<span>List Agents</span>
 
-GET/v1.0/agents
+<span>GET/v1.0/agents</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists all agents that have connected in the last 30 days.
+<span>Lists all agents that have connected in the last 30 days.</span>
 
-Fetch Agent
+<span>Fetch Agent</span>
 
-GET/v1.0/agents/:agentId
+<span>GET/v1.0/agents/:agentId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists a single agent.
+<span>Lists a single agent.</span>
 
-List Agent Connections
+<span>List Agent Connections</span>
 
-GET/v1.0/agents/:agentId/connections
+<span>GET/v1.0/agents/:agentId/connections</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the connections for a single agent.
+<span>Lists the connections for a single agent.</span>
 
-Fetch Agent Connection
+<span>Fetch Agent Connection</span>
 
-GET/v1.0/agents/:agentId/connections/:connId
+<span>GET/v1.0/agents/:agentId/connections/:connId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists a single connection.
+<span>Lists a single connection.</span>
 
 ### AGENT HOST INFORMATION
 
-Get Agent CPU Information
+<span>Get Agent CPU Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/cpus
+<span>GET/v1.0/agents/:agentId/host\_info/cpus</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's CPUs.
+<span>Gets information on the host's CPUs.</span>
 
-Get Agent Memory Information
+<span>Get Agent Memory Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/memory
+<span>GET/v1.0/agents/:agentId/host\_info/memory</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's memory.
+<span>Gets information on the host's memory.</span>
 
-Get Agent Disk Information
+<span>Get Agent Disk Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/disks
+<span>GET/v1.0/agents/:agentId/host\_info/disks</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's disks.
+<span>Gets information on the host's disks.</span>
 
-Get Agent Network Information
+<span>Get Agent Network Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/network\_interfaces
+<span>GET/v1.0/agents/:agentId/host\_info/network\_interfaces</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's network interfaces.
+<span>Gets information on the host's network interfaces.</span>
 
-Get Agent Filesystem Information
+<span>Get Agent Filesystem Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/filesystems
+<span>GET/v1.0/agents/:agentId/host\_info/filesystems</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's filesystems.
+<span>Gets information on the host's filesystems.</span>
 
-Get Agent Process Information
+<span>Get Agent Process Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/processes
+<span>GET/v1.0/agents/:agentId/host\_info/processes</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on the host's processes.
+<span>Gets information on the host's processes.</span>
 
-Get Agent System Information
+<span>Get Agent System Information</span>
 
-GET/v1.0/agents/:agentId/host\_info/system
+<span>GET/v1.0/agents/:agentId/host\_info/system</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets system information for the host.
+<span>Gets system information for the host.</span>
 
-Get Logged-in User Information
+<span>Get Logged-in User Information</span>
 
-GET/agents/agentId/host\_info/who
+<span>GET/agents/agentId/host\_info/who</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information on users who are logged into the host.
+<span>Gets information on users who are logged into the host.</span>
 
-Get Agent CPU Information by Entity
+<span>Get Agent CPU Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/cpus
+<span>GET/v1.0/entities/:entityId/agent/host\_info/cpus</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent CPU information by entity. 
+<span><span>Gets agent CPU information by entity.</span> </span>
 
-Get Agent Memory Information by Entity
+<span>Get Agent Memory Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/memory
+<span>GET/v1.0/entities/:entityId/agent/host\_info/memory</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent memory information by entity. 
+<span><span>Gets agent memory information by entity.</span> </span>
 
-Get Agent Disk Information by Entity
+<span>Get Agent Disk Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/disks
+<span>GET/v1.0/entities/:entityId/agent/host\_info/disks</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent disk information by entity.
+<span>Gets agent disk information by entity.</span>
 
-Get Agent Filesystem Information by Entity
+<span>Get Agent Filesystem Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/filesystems
+<span>GET/v1.0/entities/:entityId/agent/host\_info/filesystems</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent filesystem information by entity. 
+<span><span>Gets agent filesystem information by entity.</span> </span>
 
-Get Agent Network Information by Entity
+<span>Get Agent Network Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/network\_interfaces
+<span>GET/v1.0/entities/:entityId/agent/host\_info/network\_interfaces</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent network information by entity.
+<span><span>Gets agent network information by entity.</span></span>
 
-Get Agent Process Information by Entity
+<span>Get Agent Process Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/processes
+<span>GET/v1.0/entities/:entityId/agent/host\_info/processes</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent process information by entity.
+<span>Gets agent process information by entity.</span>
 
-Get Agent System Information by Entity
+<span>Get Agent System Information by Entity</span>
 
-GET/v1.0/entities/:entityId/agent/host\_info/system
+<span>GET/v1.0/entities/:entityId/agent/host\_info/system</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets agent system information by entity.
+<span>Gets agent system information by entity.</span>
 
 ### AGENT TARGETS
 
-List Agent Check Targets
+<span>List Agent Check Targets</span>
 
-GET/entities/entityId/agent/check\_types/*agentCheckType*/targets
+<span>GET/entities/entityId/agent/check\_types/*agentCheckType*/targets</span>
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Enumerates the devices allowed for the specified agent check type on the
-server where the agent is installed.
+<span>Enumerates the devices allowed for the specified agent check type
+on the server where the agent is installed.</span>
 
 ### AGENT TOKENS
 
-List Agent Tokens
+<span>List Agent Tokens</span>
 
-GET/v1.0/agent\_tokens
+<span>GET/v1.0/agent\_tokens</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Lists the agent tokens.
 
-Get Agent Token
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-GET/v1.0/agent\_tokens/:tokenId
+<span>Lists the agent tokens.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Get Agent Token</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>GET/v1.0/agent\_tokens/:tokenId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single agent token.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Update Agent Token
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-PUT/v1.0/agent\_tokens/:tokenId
+<span>Gets information for a single agent token.</span>
 
- 
+<span>Update Agent Token</span>
 
- 
+<span>PUT/v1.0/agent\_tokens/:tokenId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates a token with the specified tokenId (label).
 
-Delete Agent Token
 
-DELETE/v1.0/agent\_tokens/:tokenId
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
- 
+<span>Updates a token with the specified tokenId (label).</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Delete Agent Token</span>
 
-Deletes the specified agent token from your account.
+<span>DELETE/v1.0/agent\_tokens/:tokenId</span>
 
-Create Agent Token
 
-POST/v1.0/agent\_tokens
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Creates a new agent token.
+<span>Deletes the specified agent token from your account.</span>
+
+<span>Create Agent Token</span>
+
+<span>POST/v1.0/agent\_tokens</span>
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Creates a new agent token.</span>
 
 ### MONITORING ZONES
 
-List Monitoring Zones
+<span>List Monitoring Zones</span>
 
-GET/v1.0/monitoring\_zones
+<span>GET/v1.0/monitoring\_zones</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the monitoring zones.
+<span>Lists the monitoring zones.</span>
 
-Get Monitoring Zone
+<span>Get Monitoring Zone</span>
 
-GET/v1.0/monitoring\_zones/:monitoringZoneId
+<span>GET/v1.0/monitoring\_zones/:monitoringZoneId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single monitoring zone.
+<span>Gets information for a single monitoring zone.</span>
 
-Execute Traceroute
+<span>Execute Traceroute</span>
 
-POST/v1.0/monitoring\_zones/:monitoringZoneId/traceroute
+<span>POST/v1.0/monitoring\_zones/:monitoringZoneId/traceroute</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Performs a traceroute from a collector in the specified monitoring
-zones.
+<span>Performs a traceroute from a collector in the specified monitoring
+zones.</span>
 
 ### CHANGELOGS
 
-List Alarm Changelogs
+<span>List Alarm Changelogs</span>
 
-GET/v1.0/changelogs/alarms
+<span>GET/v1.0/changelogs/alarms</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists alarm changelogs for this account.
+<span>Lists alarm changelogs for this account.</span>
 
 ### ENTITIES
 
-List Entities
+<span>List Entities</span>
 
-GET/v1.0/entities
+<span>GET/v1.0/entities</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the entities for this particular account.
+<span>Lists the entities for this particular account.</span>
 
-Get Entity
+<span>Get Entity</span>
 
-GET/v1.0/entities/:entityId
+<span>GET/v1.0/entities/:entityId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Retrieves the current state of an entity.
+<span>Retrieves the current state of an entity.</span>
 
-Update Entity
+<span>Update Entity</span>
 
-PUT/v1.0/entities/:entityId
+<span>PUT/v1.0/entities/:entityId</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates an entity specified by the entityId.
 
-Delete Entity
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-DELETE/v1.0/entities/:entityId
+<span>Updates an entity specified by the entityId.</span>
 
- 
+<span>Delete Entity</span>
 
- 
+<span>DELETE/v1.0/entities/:entityId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Deletes an entity from your account. Also deletes any checks and alarms
-defined for that entity.
 
-Create Entity
 
-POST/v1.0/entities
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Deletes an entity from your account. Also deletes any checks and
+alarms defined for that entity.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Create Entity</span>
 
-Creates a new entity.
+<span>POST/v1.0/entities</span>
+
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Creates a new entity.</span>
 
 ### CHECKS
 
-List Checks
+<span>List Checks</span>
 
-GET/v1.0/entities/:entityId/checks
+<span>GET/v1.0/entities/:entityId/checks</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the checks associated with a given entityId.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Get Check
+<span>Lists the checks associated with a given entityId.</span>
 
-GET/v1.0/entities/:entityId/checks/:checkId
+<span>Get Check</span>
 
- 
+<span>GET/v1.0/entities/:entityId/checks/:checkId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Returns the specified check.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Update Check
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-PUT/v1.0/entities/:entityId/checks/:checkId
+<span>Returns the specified check.</span>
 
- 
+<span>Update Check</span>
 
- 
+<span>PUT/v1.0/entities/:entityId/checks/:checkId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates a check with the specified checkId.
 
-Delete Check
 
-DELETE/v1.0/entities/:entityId/checks/:checkId
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
- 
+<span>Updates a check with the specified checkId.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Delete Check</span>
 
-Deletes a check from your account.
+<span>DELETE/v1.0/entities/:entityId/checks/:checkId</span>
 
-Create Check
 
-POST/v1.0/entities/:entityId/checks
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Creates a new check and associates it with an entity using the
+<span>Deletes a check from your account.</span>
+
+<span>Create Check</span>
+
+<span>POST/v1.0/entities/:entityId/checks</span>
+
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Creates a new check and associates it with an entity using the
 parameters listed
-in [Attributes.](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes "Table 4.3. Attributes")
+in [Attributes.](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes "Table 4.3. Attributes"){.link}</span>
 
-Test Existing Check
+<span>Test Existing Check</span>
 
-POST/v1.0/entities/:entityId/checks/:checkId/test
+<span>POST/v1.0/entities/:entityId/checks/:checkId/test</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Tests a check inline.
+<span>Tests a check inline.</span>
 
-Test New Check
+<span>Test New Check</span>
 
-POST/v1.0/entities/:entityId/test-check
+<span>POST/v1.0/entities/:entityId/test-check</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Tests a check before creating it.
+<span>Tests a check before creating it.</span>
 
 ### ALARMS
 
-List Alarms
+<span>List Alarms</span>
 
-GET/v1.0/entities/:entityId/alarms
+<span>GET/v1.0/entities/:entityId/alarms</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the alarms on the specified entity.
+<span>Lists the alarms on the specified entity.</span>
 
-Get Alarm
+<span>Get Alarm</span>
 
-GET/v1.0/entities/:entityId/alarms/:alarmId
+<span>GET/v1.0/entities/:entityId/alarms/:alarmId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single alarm.
+<span>Gets information for a single alarm.</span>
 
-Update Alarm
+<span>Update Alarm</span>
 
-PUT/v1.0/entities/:entityId/alarms/:alarmId
+<span>PUT/v1.0/entities/:entityId/alarms/:alarmId</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates an alarm with the specified alarmId. Partial updates to an alarm
-are acceptable. You may specify only the parameters you would like to
-update.
 
-Delete Alarm
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-DELETE/v1.0/entities/:entityId/alarms/:alarmId
+<span>Updates an alarm with the specified alarmId. Partial updates to an
+alarm are acceptable. You may specify only the parameters you would like
+to update.</span>
 
- 
+<span>Delete Alarm</span>
 
- 
+<span>DELETE/v1.0/entities/:entityId/alarms/:alarmId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Deletes an alarm from your account.
 
-Create Alarm
 
-POST/v1.0/entities/:entityId/alarms
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Deletes an alarm from your account.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Create Alarm</span>
 
-Creates a new alarm for the specified entity. Specify the alarm's
+<span>POST/v1.0/entities/:entityId/alarms</span>
+
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Creates a new alarm for the specified entity. Specify the alarm's
 characteristics using a valid set of parameters from the table shown in
-the [Attributes](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarms "Table 4.10. Attributes").
+the [Attributes](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarms "Table 4.10. Attributes"){.link}.</span>
 
-Test New Alarm
+<span>Test New Alarm</span>
 
-POST/v1.0/entities/:entityId/test-alarm
+<span>POST/v1.0/entities/:entityId/test-alarm</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Tests runs an alarm. 
+<span>Tests runs an alarm. </span>
 
 ### ALARM NOTIFICATION HISTORY
 
-List Check IDs for Alarm
+<span>List Check IDs for Alarm</span>
 
-GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history
+<span>GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-List checks for which alarm notification history is available. 
+<span>List checks for which alarm notification history is
+available. </span>
 
-List Alarm Notification History
+<span>List Alarm Notification History</span>
 
-GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history/:checkId
+<span>GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history/:checkId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists alarm notification history for a given entity, alarm and check.
+<span>Lists alarm notification history for a given entity, alarm and
+check.</span>
 
-Get Alarm Notification History
+<span>Get Alarm Notification History</span>
 
-GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history/:checkId/:uuid
+<span>GET/v1.0/entities/:entityId/alarms/:alarmId/notification\_history/:checkId/:uuid</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Retrieves a single alarm notification history item. 
+<span>Retrieves a single alarm notification history item. </span>
 
 ### CHECK TYPES
 
-List Check Types
+<span>List Check Types</span>
 
-GET/v1.0/check\_types
+<span>GET/v1.0/check\_types</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists all the available check types.
+<span>Lists all the available check types.</span>
 
-Get Check Type
+<span>Get Check Type</span>
 
-GET/v1.0/check\_types/:checkTypeId
+<span>GET/v1.0/check\_types/:checkTypeId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Retrieves information for a single check type. 
+<span>Retrieves information for a single check type. </span>
 
 ### NOTIFICATION TYPES
 
-List Notification Types
+<span>List Notification Types</span>
 
-GET/v1.0/notification\_types
+<span>GET/v1.0/notification\_types</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists available notification types.
+<span>Lists available notification types.</span>
 
 ### NOTIFICATION
 
-Get Notification Type
+<span>Get Notification Type</span>
 
-GET/v1.0/notification\_types/:notificationTypeId
+<span>GET/v1.0/notification\_types/:notificationTypeId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single notification type.
+<span>Gets information for a single notification type.</span>
 
-List Notifications
+<span>List Notifications</span>
 
-GET/v1.0/notifications
+<span>GET/v1.0/notifications</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the notifications for this particular account.
+<span>Lists the notifications for this particular account.</span>
 
-Get Notification
+<span>Get Notification</span>
 
-GET/v1.0/notifications/:notificationId
+<span>GET/v1.0/notifications/:notificationId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single notification.
+<span>Gets information for a single notification.</span>
 
-Update Notification
+<span>Update Notification</span>
 
-PUT/v1.0/notifications/:notificationId
+<span>PUT/v1.0/notifications/:notificationId</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates a notification with the specified notificationId.
 
-Delete Notification
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-DELETE/v1.0/notifications/:notificationId
+<span>Updates a notification with the specified notificationId.</span>
 
- 
+<span>Delete Notification</span>
 
- 
+<span>DELETE/v1.0/notifications/:notificationId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Deletes a notification from your account.
 
-Create Notification
 
-POST/v1.0/notifications
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Deletes a notification from your account.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Create Notification</span>
 
-Creates a notification. 
+<span>POST/v1.0/notifications</span>
 
-Test Existing Notification
 
-POST/v1.0/notifications/:notificationId/test
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Creates a notification. </span>
 
-Tests an existing notification. 
+<span>Test Existing Notification</span>
 
-Test New Notification
+<span>POST/v1.0/notifications/:notificationId/test</span>
 
-POST/v1.0/test-notification
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Tests an existing notification. </span>
 
-Tests a notification. 
+<span>Test New Notification</span>
+
+<span>POST/v1.0/test-notification</span>
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Tests a notification. </span>
 
 ### NOTIFICATION PLANS
 
-List Notification Plan
+<span>List Notification Plan</span>
 
-GET/v1.0/notification\_plans
+<span>GET/v1.0/notification\_plans</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the notification plans for this particular account. 
+<span>Lists the notification plans for this particular account. </span>
 
-Get Notification Plan
+<span>Get Notification Plan</span>
 
-GET/v1.0/notification\_plans/:notificationPlanId
+<span>GET/v1.0/notification\_plans/:notificationPlanId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets information for a single notification plan.
+<span>Gets information for a single notification plan.</span>
 
-Update Notification Plans
+<span>Update Notification Plans</span>
 
-PUT/v1.0/notification\_plans/:notificationPlanId
+<span>PUT/v1.0/notification\_plans/:notificationPlanId</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates a notification plan with the specified notificationPlanId.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Updates a notification plan with the specified notificationPlanId.
 Partial updates to a notification plan are acceptable. You may specify
-only the parameters you would like to update. 
+only the parameters you would like to update. </span>
 
-Delete Notification Plan
+<span>Delete Notification Plan</span>
 
-DELETE/v1.0/notification\_plans/:notificationPlanId
+<span>DELETE/v1.0/notification\_plans/:notificationPlanId</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Deletes a notification plan. 
 
-Create Notification Plan
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-POST/v1.0/notification\_plans
+<span>Deletes a notification plan. </span>
 
- 
+<span>Create Notification Plan</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>POST/v1.0/notification\_plans</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Creates a notification plan. 
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Creates a notification plan. </span>
 
 ### METRICS
 
-List Metrics
+<span>List Metrics</span>
 
-GET/entities/entityId/checks/checkId/metrics
+<span>GET/entities/entityId/checks/checkId/metrics</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Lists the metrics associated with the specified check.
+<span>Lists the metrics associated with the specified check.</span>
 
-Get Data Points for Plot
+<span>Get Data Points for Plot</span>
 
-GET/v1.0/entities/:entityId/checks/:checkId/metrics/:metricName/plot
+<span>GET/v1.0/entities/:entityId/checks/:checkId/metrics/:metricName/plot</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Queries for all data points of *`metricName`* between two points in
-time.
+<span>Queries for all data points of </span>*`metricName`*<span> between
+two points in time.</span>
 
 ### ALARM EXAMPLES
 
-List Alarm Examples
+<span>List Alarm Examples</span>
 
-GET/v1.0/alarm\_examples
+<span>GET/v1.0/alarm\_examples</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Returns a list of alarm examples. 
+<span>Returns a list of alarm examples. </span>
 
-Get Alarm Example
+<span>Get Alarm Example</span>
 
-GET/v1.0/alarm\_examples/:alarmExampleId
+<span>GET/v1.0/alarm\_examples/:alarmExampleId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets a specific alarm example. 
+<span>Gets a specific alarm example. </span>
 
-Bind Alarm Example
+<span>Bind Alarm Example</span>
 
-POST/v1.0/alarm\_examples/:alarmExampleId
+<span>POST/v1.0/alarm\_examples/:alarmExampleId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Evaluates a specific alarm example. 
+<span>Evaluates a specific alarm example. </span>
 
 ### VIEWS
 
-List Overview
+<span>List Overview</span>
 
-GET/v1.0/views/overview
+<span>GET/v1.0/views/overview</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Returns the overview view for this account.
+<span>Returns the overview</span><span> view for this account.</span>
 
 ### SUPPRESSIONS
 
-Get Suppression
+<span>Get Suppression</span>
 
-GET/v1.0/suppressions/:suppressionId
+<span>GET/v1.0/suppressions/:suppressionId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Gets details for a specific suppression.
+<span>Gets details for a specific suppression.</span>
 
-List Suppressions
+<span>List Suppressions</span>
 
-GET/v1.0/suppressions
+<span>GET/v1.0/suppressions</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-Returns a list of suppressions.
+<span>Returns a list of suppressions.</span>
 
-Create Suppression
+<span>Create Suppression</span>
 
-POST/v1.0/suppressions
+<span>POST/v1.0/suppressions</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Creates a suppression.
 
-Update Suppression
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
-PUT/v1.0/suppressions/:suppressionId
+<span>Creates a suppression.</span>
 
- 
+<span>Update Suppression</span>
 
- 
+<span>PUT/v1.0/suppressions/:suppressionId</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
 
-Updates a specific suppression.
 
-Delete Suppression
 
-DELETE/v1.0/suppressions/:suppressionId
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
 
- 
+<span>Updates a specific suppression.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_6.png)
+<span>Delete Suppression</span>
 
-Deletes a specific suppression.
+<span>DELETE/v1.0/suppressions/:suppressionId</span>
 
- 
 
-Cloud Monitoring Terminology
-----------------------------
+
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_6.png){width="43"
+height="41"}
+
+<span>Deletes a specific suppression.</span>
+
+
+
+[](){#monitoring}Cloud Monitoring Terminology
+---------------------------------------------
 
 ### Agent
 
-A monitoring daemon that resides on the server being monitored. The
-agent gathers metrics based on agent checks and pushes them to Cloud
-Monitoring.
+<span>A monitoring daemon that resides on the server being monitored.
+The agent gathers metrics based on agent checks and pushes them to Cloud
+Monitoring.</span>
 
-### Agent Token
+### <span>Agent Token</span>
 
-An authentication token used to identify the agent when it communicates
-with Cloud Monitoring.
+<span>An authentication token used to identify the agent when it
+communicates with Cloud Monitoring.</span>
 
-### Alarm
+### <span>Alarm</span>
 
-An alarm contains a set of rules that determine when a notification is
-triggered.
+<span>An alarm contains a set of rules that determine when a
+notification is triggered.</span>
 
-### Check
+### <span>Check</span>
 
-Checks explicitly specify how you want to monitor an entity.
+<span>Checks explicitly specify how you want to monitor an
+entity.</span>
 
-### Entity
+### <span>Entity</span>
 
-An entity is a resource that you want to monitor. Some examples are a
-server, a website, or a service.
+<span>An entity is a resource that you want to monitor. Some examples
+are a server, a website, or a service.</span>
 
-### Notification
+### <span>Notification</span>
 
-A notification is an informational message sent to one or more addresses
-when an alarm is triggered.
+<span>A notification is an informational message sent to one or more
+addresses when an alarm is triggered.</span>
 
-### RESTful
+### <span>RESTful</span>
 
-A type of web service API that uses Representational State Transfer.
-REST is the architectural style for hypermedia systems used for the
-World Wide Web.
+<span>A type of web service API that uses Representational State
+Transfer. REST is the architectural style for hypermedia systems used
+for the World Wide Web.</span>
 
- 
 
-[\< Permission Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+<span> </span>
 

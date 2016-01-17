@@ -2,10 +2,10 @@
 node_id: 4104
 title: 'Monitoring: Differences Between Rackspace Server Users and Non-Rackspace Server Users'
 type: article
-created_date: '2014-06-16 21:02:46'
-created_by: maria.abrahms
-last_modified_date: '2016-01-05 18:5706'
-last_modified_by: kyle.laffoon
+created_date: '2014-06-16'
+created_by: Maria Abrahms
+last_modified_date: '2016-01-05'
+last_modified_by: Kyle Laffoon
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -16,15 +16,15 @@ managed or an unmanaged user. There are some differences between what
 you can do in any one of these circumstances. This page describes those
 differences.
 
-Please Note: The **Rackspace
-Managed****Infrastructure**** Servers** column (in the middle) overlaps
-at times with both the **Rackspace Managed****Operations Servers** and
+Please Note: The **Rackspace Managed** **Infrastructure Servers** column
+(in the middle) overlaps at times with both the
+**<span>Rackspace </span>Managed** **Operations Servers** and
 **Unmanaged Non-Rackspace Servers** as the table indicates. There are no
 managed non-Rackspace servers.
 
-Rackspace Managed Operations Servers
+<span>Rackspace </span>Managed Operations Servers
 
-Rackspace Managed Infrastructure Servers
+<span>Rackspace </span>Managed Infrastructure Servers
 
 Unmanaged Non-Rackspace Servers
 
@@ -42,10 +42,10 @@ this means:
 Entities for non-Rackspace servers and databases must be managed
 manually, this means:
 
--   Monitoring entities need to be created manually for new servers .
-    When configuring the default monitoring agent, you either select an
-    entity you already created for it,or let the setup process create
-    one for you.
+-   <span>Monitoring entities need to be created manually for new
+    servers</span> <span>.</span> When configuring the default
+    monitoring agent, you either select an entity you already created
+    for it,or let the setup process create one for you.
 -   When a server is deleted, you must delete the associated monitoring
     entity through the API or CLI.
 -   When the server name is changed, you must manually change the name
@@ -94,7 +94,7 @@ Agent configuration file location:
 
 Learn more about agent configuration with the [Install the Cloud
 Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent)
+Agent](/howto/install-and-configure-the-rackspace-monitoring-agent)
 article.
 
 By default, the monitoring agent is installed and turned ON and the
@@ -102,7 +102,7 @@ monitoring is configured automatically. For details, see Managed
 accounts Hosting
 ([rackspace.com/managed-hosting/](http://rackspace.com/managed-hosting/)).
 
- 
+
 
 By default, the monitoring agent must be manually installed. For
 details, see [Manually Configure the
@@ -112,17 +112,18 @@ in the *Cloud Monitoring Getting Started Guide*.
 For Cloud Database customers, the monitoring agent is installed with
 monitoring configured automatically, by default. For details, see Cloud
 Database documentation
-([http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring\_Cloud\_Databases-d1e4673.html](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html)).
+(<http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html>).
 
 N/A
 
 You can access some monitoring features through the Control Panel and
 all the features through API. You can see more monitoring features, as
 well as metrics, through the [Cloud
-Intelligence interface](https://intelligence.rackspace.com). 
+Intelligence interface](https://intelligence.rackspace.com).
 
-You can see monitoring features, as well as metrics, through the [Cloud
-Intelligence interface](https://intelligence.rackspace.com). 
+<span>You can see monitoring features, as well as</span><span> metrics,
+through the </span>[Cloud
+Intelligence interface](https://intelligence.rackspace.com)<span>. </span>
 
- 
+
 

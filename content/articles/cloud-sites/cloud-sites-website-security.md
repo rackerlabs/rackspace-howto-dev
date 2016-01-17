@@ -2,10 +2,10 @@
 node_id: 1060
 title: Cloud Sites Website Security
 type: article
-created_date: '2011-04-01 17:18:30'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 17:0829'
-last_modified_by: stephanie.fillmon
+created_date: '2011-04-01'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 
 We manage security for all servers including PHP, .NET, and the
 operating systems What do I manage? You are responsible for securing
-your website code. 
+your website code.
 
 ### What security do you specifically provide?
 

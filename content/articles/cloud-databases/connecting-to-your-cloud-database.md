@@ -2,10 +2,10 @@
 node_id: 1508
 title: Connect to a Cloud Databases instance
 type: article
-created_date: '2012-07-24 00:35:53'
-created_by: RackKCAdmin
-last_modified_date: '2015-09-03 20:1820'
-last_modified_by: constanze.kratel
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2015-09-03'
+last_modified_by: Constanze Kratel
 product: Cloud Databases
 body_format: full_html
 ---
@@ -21,7 +21,7 @@ Connect through a cloud server by using SSH and the hostname {#ssh}
 ------------------------------------------------------------
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases \> Database
+2.  In the top navigation bar, select **Databases &gt; Database
     Instances**.
 3.  Click the name of the instance to which you want to connect.
 4.  Copy the hostname string.
@@ -30,14 +30,14 @@ Connect through a cloud server by using SSH and the hostname {#ssh}
     Following is an example SSH command:
 
         ssh user@IPaddress
-                
+
 
 6.  On your server, use the MySQL client (or a similar tool) to access
     the database. For MySQL, use the following command and paste the
     hostname string following the `-h` option:
 
         mysql -h hostname_string -u database_instance_username -p
-                
+
 
 Connect to the database directly by using the hostname {#direct}
 ------------------------------------------------------
@@ -62,72 +62,72 @@ configured correctly.
 
 Copy the following PHP script and paste it into a text editor:
 
-    <html> 
-    <head><title>Connecting to Cloud Databases</title></head> 
-    <body><pre> 
-    <?php 
-        // phpinfo(); 
-        $THE_HOST = "5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com"; 
-        $THE_USER = "fmdb_readonly"; 
-        $THE_PWD = "fmdb_readonly"; 
-        $THE_DB = "FEATUREMANIA"; 
+    <html>
+    <head><title>Connecting to Cloud Databases</title></head>
+    <body><pre>
+    <?php
+        // phpinfo();
+        $THE_HOST = "5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com";
+        $THE_USER = "fmdb_readonly";
+        $THE_PWD = "fmdb_readonly";
+        $THE_DB = "FEATUREMANIA";
 
-        // 
-        // Get "e" 
-        // 
-        $arg_expr = trim($_POST["e"]); 
-        if($arg_expr == "") { 
-            $arg_expr = "PI()"; 
-        } 
-        else { 
-            if(get_magic_quotes_gpc()) { 
-             $arg_expr = stripslashes($arg_expr); 
-            } 
-            
-            // 
-            // Connect to the database 
-            // 
-            $connection = mysql_connect($THE_HOST, $THE_USER, $THE_PWD); 
-            if (!$connection) { 
-                 die('I could not connect to the database. The error is: ' . mysql_error()); 
-            } 
-            mysql_select_db($THE_DB, $connection); 
-            // 
-            // Calculation 
-            // 
-            $result = mysql_query("SELECT (" . $arg_expr . ");", $connection); 
-            $row = mysql_fetch_array($result, MYSQL_NUM); 
-            $eValue = $row[0]; 
+        //
+        // Get "e"
+        //
+        $arg_expr = trim($_POST["e"]);
+        if($arg_expr == "") {
+            $arg_expr = "PI()";
+        }
+        else {
+            if(get_magic_quotes_gpc()) {
+             $arg_expr = stripslashes($arg_expr);
+            }
+
+            //
+            // Connect to the database
+            //
+            $connection = mysql_connect($THE_HOST, $THE_USER, $THE_PWD);
+            if (!$connection) {
+                 die('I could not connect to the database. The error is: ' . mysql_error());
+            }
+            mysql_select_db($THE_DB, $connection);
+            //
+            // Calculation
+            //
+            $result = mysql_query("SELECT (" . $arg_expr . ");", $connection);
+            $row = mysql_fetch_array($result, MYSQL_NUM);
+            $eValue = $row[0];
             printf("The database connection worked, and MySQL says that %s = %s<BR>%s", $arg_expr, $eValue, mysql_error());
-            mysql_free_result($result); 
-            mysql_close($connection); 
-        } 
-    ?> 
-        <FORM ACTION='clouddatabases.php' METHOD='POST'> 
-            Enter a MySQL expression: 
-            <INPUT TYPE="TEXT" NAME="e" VALUE="<? echo $arg_expr; ?>"/> 
-            <INPUT TYPE="SUBMIT"> 
-        </FORM> 
-        This is a simple PHP example to test your connection to Rackspace Cloud Databases. 
-        It does not require your database to have any tables. 
-        It doubles as a handy way to calculate simple MySQL expressions from the browser. 
-        <BR> 
-        Because this sample uses string concatenation to compose SQL statements, only use this in your development environment in your password-protected site. 
-        <BR>  
-        EXAMPLES: 
-            PI()*3*3 
-            curdate() 
-            3=3 AND 4>4 
-            MID('Rackspace',1,4) 
-            SIN(PI()/2) 
-            SHA1('Rackspace Cloud Databases') 
-        </pre></body> 
+            mysql_free_result($result);
+            mysql_close($connection);
+        }
+    ?>
+        <FORM ACTION='clouddatabases.php' METHOD='POST'>
+            Enter a MySQL expression:
+            <INPUT TYPE="TEXT" NAME="e" VALUE="<? echo $arg_expr; ?>"/>
+            <INPUT TYPE="SUBMIT">
+        </FORM>
+        This is a simple PHP example to test your connection to Rackspace Cloud Databases.
+        It does not require your database to have any tables.
+        It doubles as a handy way to calculate simple MySQL expressions from the browser.
+        <BR>
+        Because this sample uses string concatenation to compose SQL statements, only use this in your development environment in your password-protected site.
+        <BR>
+        EXAMPLES:
+            PI()*3*3
+            curdate()
+            3=3 AND 4>4
+            MID('Rackspace',1,4)
+            SIN(PI()/2)
+            SHA1('Rackspace Cloud Databases')
+        </pre></body>
     </html>
 
 ### Copy the instance hostname
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases \> Database
+2.  In the top navigation bar, select **Databases &gt; Database
     Instances**.
 3.  Click the name for the instance to which you want to connect and
     view the details for the instance.
@@ -140,11 +140,11 @@ Copy the following PHP script and paste it into a text editor:
         $THE_HOST = "5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com";
 
 2.  Paste the hostname string inside the double quotation marks,
-    replacing the following value:<br>
-     <br>
+    replacing the following value:
+
 
         5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com
-                
+
 
 ### Modify the information in the script to specify your database user, password, and database instance name
 
@@ -158,13 +158,13 @@ Copy the following PHP script and paste it into a text editor:
 3.  Locate the following line of the script in the text editor:
 
         $THE_PWD = "fmdb_readonly";
-                
+
 
 4.  Replace the `fmdb_readonly` value with the password for the user.
-5.  Locate the following line of the script in the text editor:<br>
+5.  Locate the following line of the script in the text editor:
 
         $THE_DB = "FEATUREMANIA";
-                
+
 
 6.  Replace the `FEATUREMANIA` value with the name of your database.
 7.  Save the changes you made to the script in the editor to a file name
@@ -176,7 +176,7 @@ Copy the following PHP script and paste it into a text editor:
     chose for your script:
 
         <FORM ACTION='clouddatabases.php' METHOD='POST'>
-               
+
 
 ### Copy the modified script and execute it on your server
 
@@ -200,7 +200,7 @@ Databases instance. Do not add other nodes to the load balancer.
 ### Copy the instance hostname
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases \> Database
+2.  In the top navigation bar, select **Databases &gt; Database
     Instances**.
 3.  Click the name of the instance that you want to connect to the load
     balancer and view the details for the instance.

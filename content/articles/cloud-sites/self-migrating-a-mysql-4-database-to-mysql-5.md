@@ -2,10 +2,10 @@
 node_id: 1224
 title: Self-Migrating a MySQL 4 Database to MySQL 5
 type: article
-created_date: '2011-10-05 14:32:41'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 15:1426'
-last_modified_by: stephanie.fillmon
+created_date: '2011-10-05'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -50,35 +50,35 @@ MySQL 4 database to a MySQL 5 database.
 
     You can see more information about listing the processes in the
     MySQL manual [Section 12.4.5.27, "SHOW FULL
-    PROCESSLISTSyntax"](http://dev.mysql.com/doc/refman/5.0/en/show-processlist.html).
+    PROCESSLISTSyntax"](http://dev.mysql.com/doc/refman/5.0/en/show-processlist.html){.xref}.
 
     If you don't want to wait for active connections to conclude, those
     threads can be killed with the MySQLKILLstatement. For more details
     onKILL, see the MySQL Manual [Section 12.4.6.3,
-    "KILLSyntax"](http://dev.mysql.com/doc/refman/5.0/en/kill.html).
+    "KILLSyntax"](http://dev.mysql.com/doc/refman/5.0/en/kill.html){.xref}.
 
 4.  **Back up your current MySQL 4 database.**
 
     You may wish to use the method outlined in the Knowledge Center
     article [How to backup your MySQL Database with
-    phpMyAdmin](http://www.rackspace.com/knowledge_center/article/how-to-backup-your-mysql-database-with-phpmyadmin).
+    phpMyAdmin](/howto/backup-your-mysql-database-with-phpmyadmin){.xref}.
 
-5.  **Provision a new MySQL 5 database to contain the migrated
-    database.**
+5.  **Provision a new MySQL 5 database to contain the
+    migrated database.**
 
     For a guide to provisioning a new MySQL 5 database, see the
     Knowledge Center article [Adding a MySQL Database to a Website or
-    Domain](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases).
+    Domain](/howto/rackspace-cloud-sites-essentials-mysql-databases){.xref}.
 
-6.  **Import your database into the newly-provisioned MySQL 5
-    database.**
+6.  **Import your database into the newly-provisioned MySQL
+    5 database.**
 
     Databases that are less than 16 MB in size can be imported easily
     using the *Online Manager* (see [Working with a MySQL
-    database](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface)).
+    database](/howto/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface){.xref}).
 
     If the data to be imported exceeds 16 MB, see the [Cloud Sites
-    FAQ](http://www.rackspace.com/knowledge_center/product-faq/cloud-sites).
+    FAQ](/howto/cloud-sites-faq).
 
 7.  **Update all database references in your website code and
     configuration files.**

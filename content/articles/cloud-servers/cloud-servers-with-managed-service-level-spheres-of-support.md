@@ -2,10 +2,10 @@
 node_id: 1105
 title: Cloud Servers with Managed Operations support for Linux
 type: article
-created_date: '2011-05-26 21:23:21'
+created_date: '2011-05-26'
 created_by: David Hendler
-last_modified_date: '2016-01-14 20:1804'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -26,7 +26,7 @@ The Managed Operations spheres of support include the following operating system
 - Ubuntu 12.04 LTS (Precise Pangolin) (PVHVM)
 - Vyatta Network OS (6.7R9)
 
-**Note:**  Information on Windows support can be found in  [Cloud Servers with Managed Operations support for Windows](https://admin.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-windows).
+**Note:**  Information on Windows support can be found in  [Cloud Servers with Managed Operations support for Windows](/howto/cloud-servers-with-managed-operations-support-for-windows).
 
 <p></p>
 ## Web Servers

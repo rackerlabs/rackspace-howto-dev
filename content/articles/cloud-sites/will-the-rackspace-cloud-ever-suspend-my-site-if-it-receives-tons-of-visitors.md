@@ -2,9 +2,9 @@
 node_id: 753
 title: Will The Rackspace Cloud ever suspend my site if it receives tons of visitors?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2011-09-07 17:1612'
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2011-09-07'
 last_modified_by: Rae D. Cabello
 product: Cloud Sites
 body_format: tinymce

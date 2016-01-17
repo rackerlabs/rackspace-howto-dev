@@ -2,10 +2,10 @@
 node_id: 3392
 title: Permissions Matrix for Cloud Files
 type: article
-created_date: '2013-04-10 16:10:21'
-created_by: renee.rendon
-last_modified_date: '2016-01-14 21:2523'
-last_modified_by: rose.contreras
+created_date: '2013-04-10'
+created_by: Renee Rendon
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Contreras
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -13,8 +13,8 @@ body_format: markdown_w_tinymce
 The following matrix displays specific permissions for the roles in Cloud Files. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
 - [API Documentation](http://docs.rackspace.com/)
-- [Related Knowledge Center Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)
-- [Cloud Files Terminology](https://www.rackspace.com/knowledge_center/article/cloud-files-faqs)
+- [Related Knowledge Center Articles](/howto/)
+- [Cloud Files Terminology](/howto/cloud-files-faqs)
 
 ### As of September 26, 2013
 
@@ -36,4 +36,4 @@ Retrieve Object Metadata | HEAD /account/container/object | &#9989; | &#9989; | 
 Update Object Metadata |POST /account/container/object |  &nbsp; | &#9989; | Set your own custom object metadata.
 
 
-### Next: [Permission Matrix for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+### Next: [Permission Matrix for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)

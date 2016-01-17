@@ -2,10 +2,10 @@
 node_id: 3720
 title: Migrating to a General Purpose or I/O server
 type: article
-created_date: '2013-10-03 17:53:48'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 16:0445'
-last_modified_by: rose.coste
+created_date: '2013-10-03'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -18,7 +18,7 @@ Migrating your data to a General Purpose or I/O-optimized cloud server ([product
 
 For detailed advice on preparing a server for a smooth migration, see the recommendations in [Prepare to migrate a Linux server][prep]. In particular, you can reduce the amount of data to be migrated by deleting old installers, rotating logs, and removing old cache and session files.
 
-You can also find a good list of items to consider before migrating in the [Before you move to General Purpose or I/O server checklist](http://www.rackspace.com/knowledge_center/article/before-you-move-to-general-purpose-or-io-cloud-server-checklist).
+You can also find a good list of items to consider before migrating in the [Before you move to General Purpose or I/O server checklist](/howto/before-you-move-to-general-purpose-or-io-cloud-server-checklist).
 
 If you plan to remove files from your server to speed up your migration, we recommend that you create a backup first to ensure that no essential data is lost.
 
@@ -40,7 +40,7 @@ If you're unable to use image-based migration, read the following sections to pr
 
 ## Manual migration
 
-If you can't use image-based migration, use the information in this section to plan for a manual migration. 
+If you can't use image-based migration, use the information in this section to plan for a manual migration.
 
 ### Check the size of the original server
 
@@ -86,7 +86,7 @@ Alternatively, you might plan your environment to use horizontal scaling, where 
 
 Some example environments can be found in [our article on open cloud reference architectures][arch].
 
-**Note:** You can't take a snapshot of a General Purpose server data disk, so to back up data disks you must rely on Rackspace Cloud Backup or a similar file-based backup approach. If you want your additional storage to be more portable or need to be able to take data snapshots, consider [adding one or more Cloud Block Storage volumes](/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume) to the new server.
+**Note:** You can't take a snapshot of a General Purpose server data disk, so to back up data disks you must rely on Rackspace Cloud Backup or a similar file-based backup approach. If you want your additional storage to be more portable or need to be able to take data snapshots, consider [adding one or more Cloud Block Storage volumes](/howto/create-and-attach-a-cloud-block-storage-volume) to the new server.
 
 ### Format and configure any data disks
 
@@ -96,7 +96,7 @@ Some example environments can be found in [our article on open cloud reference a
 
 After you create your server, prepare any attached data disks or Cloud Block Storage volumes by formatting them and configuring the system to use them.
 
-If you've attached Cloud Block Storage volumes, see the [Prepare Your Cloud Block Storage Volume article](/knowledge_center/article/prepare-your-cloud-block-storage-volume) for more information.
+If you've attached Cloud Block Storage volumes, see the [Prepare Your Cloud Block Storage Volume article](/howto/prepare-your-cloud-block-storage-volume) for more information.
 
 For instructions on formatting and mounting data disks on General Purpose or I/O-optimized servers, see the following article that is appropriate for your server's operating system:
 
@@ -113,11 +113,11 @@ You have several options for a manual migration, including Rackspace Cloud Backu
 
 #### Cloud Backup
 
-To use [Cloud Backup](/knowledge_center/article/rackspace-cloud-backup-overview) to migrate particular directories, create a backup of your data from the origin server and then restore it to the destination server.
+To use [Cloud Backup](/howto/rackspace-cloud-backup-overview) to migrate particular directories, create a backup of your data from the origin server and then restore it to the destination server.
 
 #### Cloud Block Storage
 
-To migrate specific data using [Cloud Block Storage](/knowledge_center/article/cloud-block-storage-overview), attach the drive to your origin server and copy your data to it. Then detach the drive from the origin server, attach it to the destination server, and copy your data from the drive.
+To migrate specific data using [Cloud Block Storage](/howto/cloud-block-storage-overview), attach the drive to your origin server and copy your data to it. Then detach the drive from the origin server, attach it to the destination server, and copy your data from the drive.
 
 #### rsync on Linux for directory migration
 
@@ -125,15 +125,15 @@ On Linux you can use rsync to copy a directory over the network directly. For ex
 
     rsync -e 'ssh' -avl --stats --progress /var/lib/mysql username@123.45.67.89:/var/lib/mysql
 
-For more information about rsync, see [Backing up your files with rsync](/knowledge_center/article/backing-up-your-files-with-rsync).
+For more information about rsync, see [Backing up your files with rsync](/howto/backing-up-your-files-with-rsync).
 
 #### Full Linux migration with rsync
 
-If you want to migrate the entirety of a Linux server to a new General Purpose server, you can follow the directions in [Migrating a Linux Server From the Command Line](/knowledge_center/article/migrating-a-linux-server-from-the-command-line-1).
+If you want to migrate the entirety of a Linux server to a new General Purpose server, you use rsync to migrate your server from the command line.
 
 #### Web Farm Framework on Windows 2008
 
-To migrate IIS and SQL Server data on Windows 2008, you can use the Microsoft Web Farm Framework. See [Windows 2008 IIS and Database Migration using the Web Farm Framework](/knowledge_center/article/windows-2008-iis-and-database-migration-using-the-web-farm-framework).
+To migrate IIS and SQL Server data on Windows 2008, you can use the Microsoft Web Farm Framework.
 
 #### Web Deploy on Windows 2012
 

@@ -2,10 +2,10 @@
 node_id: 1964
 title: How is Rackspace Monitoring billed?
 type: frequently_asked_question
-created_date: '2012-08-12 23:01:36'
+created_date: '2012-08-12'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-04 17:0026'
-last_modified_by: constanze.kratel
+last_modified_date: '2016-01-04'
+last_modified_by: Constanze Kratel
 product: Cloud Monitoring
 body_format: tinymce
 ---

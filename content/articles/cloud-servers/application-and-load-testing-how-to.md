@@ -2,10 +2,10 @@
 node_id: 3147
 title: Application and load testing guidelines
 type: article
-created_date: '2012-10-29 19:55:51'
+created_date: '2012-10-29'
 created_by: Lee Kimber
-last_modified_date: '2015-11-23 13:5832'
-last_modified_by: kyle.laffoon
+last_modified_date: '2015-11-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -23,11 +23,11 @@ This article sets out Rackspace's position on application, load, and performance
 
 Rackspace monitors all of our Cloud host servers for activities that reduce the performance of customers' virtual servers. If we find a customer's virtual server being used in a way that affects other customers' virtual servers, we reserve the right to hard reboot, suspend, or switch off the impacting server. We further reserve the right to suspend or terminate the impacting customer's Rackspace Cloud account.
 
-Customers who want to perform application tests, load tests, and performance-benchmarking tests should observe the following guidelines before and during each test and stop the test immediately if the indicated thresholds are breached. 
+Customers who want to perform application tests, load tests, and performance-benchmarking tests should observe the following guidelines before and during each test and stop the test immediately if the indicated thresholds are breached.
 
 ## Load-testing guidelines
 
-Good testing practice requires that you continually monitor the effect of your test as you apply load. Before running such tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics provide the early-warning signs that a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds. 
+Good testing practice requires that you continually monitor the effect of your test as you apply load. Before running such tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics provide the early-warning signs that a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds.
  
 ### Linux virtual servers
 
@@ -35,7 +35,7 @@ Install and use the <code>screen</code> package for your Linux distribution in t
 
 **RAM:** Use the following command to view RAM use as you perform tests:
 
-     watch free -m 
+     watch free -m
 
 Don’t let the value in the Free column in the +/- buffers/cache line go lower than 1,000.
 
@@ -49,7 +49,7 @@ Watch the <code>%wa</code> number in the second line. It might occasionally rise
 
      sudo watch -n 10 -d /sbin/ip addr show eth0
 
-Watch the <code>RX bytes</code> number. Every 10 seconds, the <code>-d</code> argument highlights any changes in RX bytes numbers. The 10-second pause gives you time to note the RX bytes number before it changes. You can reduce the amount of math required to calculate exact changes if you remember that at least eight digits must change – per <code>watch -d</code> highlighting – between each 10-second update before you need to apply any arithmetic. For virtual machines with 2 GB RAM or more, at least nine digits must change before you need to calculate the exact change. The following table shows the maximum change in RX bytes per second by server size. 
+Watch the <code>RX bytes</code> number. Every 10 seconds, the <code>-d</code> argument highlights any changes in RX bytes numbers. The 10-second pause gives you time to note the RX bytes number before it changes. You can reduce the amount of math required to calculate exact changes if you remember that at least eight digits must change – per <code>watch -d</code> highlighting – between each 10-second update before you need to apply any arithmetic. For virtual machines with 2 GB RAM or more, at least nine digits must change before you need to calculate the exact change. The following table shows the maximum change in RX bytes per second by server size.
  
 <table>
 	<tr>
@@ -71,7 +71,7 @@ Watch the <code>RX bytes</code> number. Every 10 seconds, the <code>-d</code> ar
 		<td>4 GB</td>
 		<td>330,000,000</td>
 	</tr>
-	<tr>	
+	<tr>
 		<td>8 GB</td>
 		<td>495,000,000</td>
 	</tr>
@@ -85,7 +85,7 @@ Watch the <code>RX bytes</code> number. Every 10 seconds, the <code>-d</code> ar
 	</tr>
 </table>
 
-<p>&nbsp;</p> 
+<p>&nbsp;</p>
 
 ### Windows virtual servers
 
@@ -111,7 +111,7 @@ There are several memory-related counters to watch during load testing.
 
 - **Method 1**
 
-     Counter: **Process > Working Set > _Total** (or per specific process) 
+     Counter: **Process > Working Set > _Total** (or per specific process)
 
      Purpose: Shows the current allocated or used RAM by the machine or specific application or process
 
@@ -177,7 +177,7 @@ Threshold: Don't let link speed rise above the **Maximum PerfMon Link Speed (%)*
 	</tr>
 		<td>2 GB</td>
 		<td>3.00%</td>
-	<tr>	
+	<tr>
 		<td>4 GB</td>
 		<td>5.00%</td>
 	</tr>
@@ -185,11 +185,11 @@ Threshold: Don't let link speed rise above the **Maximum PerfMon Link Speed (%)*
 		<td>8 GB</td>
 		<td>7.50%</td>
 	</tr>
-	<tr>	
+	<tr>
 		<td>15 GB</td>
 	    <td>10.00%</td>
 	</tr>
-	<tr>	
+	<tr>
 		<td>30 GB</td>
 		<td>15.00%</td>
 	</tr>

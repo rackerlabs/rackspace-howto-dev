@@ -2,57 +2,78 @@
 node_id: 1436
 title: Checking System Load on Linux
 type: article
-created_date: '2012-06-21 14:49:22'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 20:4020'
-last_modified_by: stephanie.fillmon
+created_date: '2012-06-21'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-### Checking system load {.title .topictitle1}
+<div id="concept_mj5_zhv_ng" class="nested0">
+
+### Checking system load {#checking-system-load .title .topictitle1}
+
+<div class="body conbody">
 
 If the demands being placed on a [running
-program](http://www.rackspace.com/knowledge_center/article/checking-running-services-on-linux)
+program](/howto/checking-running-services-on-linux){.xref}
 cause it to request excessive resources from your server this can lead
 to poor performance and system instability.
 
-### Uptime {.title .topictitle1}
+</div>
+
+</div>
+
+<div id="concept_yy3_4hv_ng" class="topic concept nested0">
+
+### Uptime {#uptime .title .topictitle1}
+
+<div class="body conbody">
 
 First let's check the load on your server using the uptime command.
 
-~~~~ {.pre .codeblock}
+``` {.pre .codeblock}
 $ uptime
 15:16:45 up 41 days,  2:35,  2 users,  load average: 0.01, 3.01, 2.70
-~~~~
+```
 
 The example shows the output from uptime. When the command was run at
 15:16:45 the server had been up for 41 days 2 hours and 35 minutes,
 there were two users logged on and the load averages were 0.01, 3.01 and
 2.70.
 
-The load average represents the work being done by the system. The three
-numbers show the load averages for the last minute, 5 minutes and 15
-minutes, respectively. A load average of 1 reflects the full workload of
-a single processor on the system. A load of 2 on a system with two
-CPUs means that those CPUs were working at maximum. On a system with
-four CPUs, that 2 reflects a workload using about half of the available
-processing power.
+The load average represents the work being done by the system. <span>The
+three numbers show the load averages for the last minute, 5 minutes and
+15 minutes, respectively. </span><span>A load average of 1 reflects the
+full workload of a single processor on the system. A</span><span> load
+of 2 on a system with two CPUs</span><span> means that
+those</span><span> CPUs were working at maximum. On</span><span> a
+system with four CPUs, that 2 reflects a workload using about half of
+the available processing power.</span>
 
 Under normal circumstances you'll want the load average to be 70% of
 your total CPU usage or less. You can check the number of CPUs available
 to your instance by running the following command:
 
-~~~~ {.pre .codeblock}
+``` {.pre .codeblock}
 grep processor /proc/cpuinfo | wc -l
-~~~~
+```
 
 If the load averages show that the load is increasing and is above the
 number of CPUs, you should look into the cause of the high load. A load
 above the number of CPUs means that the system is having to queue up
 processor requests, which reduces performance.
 
-### top {.title .topictitle1}
+</div>
+
+</div>
+
+<div id="concept_cyr_phv_ng" class="topic concept nested0">
+
+### top {#top .title .topictitle1}
+
+<div class="body conbody">
 
 The `top` command displays real time information regarding the server's
 resource usage. The first few lines will give you a summary of the
@@ -60,7 +81,15 @@ resource utilisation on your system and you can sort the list of
 processes by CPU (P) or memory (M) use which allows you to quickly see
 where your server is receiving the biggest demands on its resources.
 
-### vmstat {.title .topictitle1}
+</div>
+
+</div>
+
+<div id="concept_1gm_qhv_ng" class="topic concept nested0">
+
+### vmstat {#vmstat .title .topictitle1}
+
+<div class="body conbody">
 
 The amount of memory a system has is one of the most common restraining
 factors. The swap is an area of the hard drive where data is moved to
@@ -77,7 +106,7 @@ occurring.
 The following example displays a system&rsquo;s virtual memory statistics 10
 times at 5 second intervals.
 
-~~~~ {.pre .codeblock}
+``` {.pre .codeblock}
 $ vmstat 5 10
 procs -----------memory-------------  ---swap---- -----io---- --system--  -----cpu------
 r  b    swpd    free   buff  cache       si    so    bi    bo   in    cs us sy  id wa st
@@ -91,7 +120,7 @@ r  b    swpd    free   buff  cache       si    so    bi    bo   in    cs us sy  
 2 14   264656   5740    120   1812    27685 19030 28029 19031 2194 5345  11  3  51 35  0
 6  3   338044   3764    132   1568    20087 31066 20470 31070 1798 9847  46  6  33 14  0
 2  4   325904   4048    108   1172    13251 7190  13812  7190 1193 8838  38  5  24 32  0
-~~~~
+```
 
 In the example the `free` column shows that the amount of free memory is
 only around 4MB.
@@ -108,7 +137,15 @@ indication that the load it is being placed under is too great for the
 resources it has available. top can be used to help identify the
 processes that are consuming the most resources.
 
-### Summary {.title .topictitle1}
+</div>
+
+</div>
+
+<div id="concept_wym_rhv_ng" class="topic concept nested0">
+
+### Summary {#summary .title .topictitle1}
+
+<div class="body conbody">
 
 If top and vmstat indicate that the server is using all its resources
 you need to look at optimising your current set up &ndash; this can include
@@ -121,5 +158,9 @@ Assuming your application is running and looks healthy, let&rsquo;s now check
 that it is listening for network connections. We can see if the service
 is listening on the correct socket using the netstat command, which
 we'll cover in [Checking Listening Ports with
-netstat](http://www.rackspace.com/knowledge_center/article/checking-listening-ports-with-netstat).
+netstat](/howto/checking-listening-ports-with-netstat).
+
+</div>
+
+</div>
 

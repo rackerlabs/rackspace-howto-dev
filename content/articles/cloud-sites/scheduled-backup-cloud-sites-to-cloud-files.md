@@ -2,10 +2,10 @@
 node_id: 3624
 title: Scheduled Backup -- Cloud Sites to Cloud Files
 type: article
-created_date: '2013-07-22 14:16:40'
-created_by: jereme hancock
-last_modified_date: '2016-01-11 10:0540'
-last_modified_by: margaret.eker
+created_date: '2013-07-22'
+created_by: Jereme Hancock
+last_modified_date: '2016-01-11'
+last_modified_by: Margaret Eker
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -23,7 +23,7 @@ the Cloud Files API for moving your backups to your Cloud Files storage.
 
 If you want a web-based tool to manage manual and scheduled backups
 instead, the [Zipit
-tool](https://www.rackspace.com/knowledge_center/article/zipit-backup-utility-for-cloud-sites-linux) can
+tool](/howto/zipit-backup-utility-for-cloud-sites-linux) can
 offer that additional functionality.
 
 **Limitations:**
@@ -31,23 +31,23 @@ offer that additional functionality.
 -   Cloud Sites has a 15 minute limit on anything run via cron task. If
     your site backup takes longer than the 15 minute limit your backups
     will not complete or may result in partial backups.
--   Backups are limited to a total of 4gb. 
+-   Backups are limited to a total of 4gb.
 -   For Linux sites only.
 
 **Installation/Setup:**
 
 -   Download [this
     file](https://raw.github.com/jeremehancock/cron-backup-script-setup/master/cron-backup-setup.php) and
-    save it to your local machine as "cron-backup-setup.php" without the
-    quotes.
+    save it to your local machine as "cron-backup-setup.php" without
+    the quotes.
 -   Upload the cron-backup-setup.php file to the content folder of the
     site you want to backup.
 -   Open your web browser and navigate to
-    http://*yourdomain.com*/cron-backup-setup.php to access the
-    installer.
+    http://*yourdomain.com*/cron-backup-setup.php to access
+    the installer.
 
-*Note: Replace "*http://*yourdomain.com"** with your actual domain
-name.*
+*Note: Replace "*<span>http://</span>*yourdomain.com" with your actual
+domain name.*
 
 -   Enter your database credentials. (Leave this section blank if your
     site does not have a database)
@@ -58,17 +58,18 @@ database.*
 -   Enter your Cloud Files username and API Key.
 
 [Click here for instructions on generating Cloud Files API
-Key](https://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+Key](/howto/view-and-reset-your-api-key)
 
-For more information regarding Cloud Files pricing visit:
+<span>For more information regarding Cloud Files pricing visit:</span>
 
-[http://www.rackspace.com/cloud/files/pricing/](http://www.rackspace.com/cloud/files/pricing/ "http://www.rackspace.com/cloud/files/pricing/")
+<http://www.rackspace.com/cloud/files/pricing/>
 
 -   Click "Install"
 
 Here is a screenshot of the Cron Backup Setup interface:
 
-![](/knowledge_center/sites/default/files/field/image/cron-backup-setup.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-backup-setup.png){width="419"
+height="755"}
 
 Once the installation is complete you will see one new directory that
 contains the Cloud Files API files and two files used to backup your
@@ -77,7 +78,7 @@ www.yoursite.com directory). Below is a list of the additions to your
 site.
 
 1.  cron-backup-api (directory containing API files)
-2.  cron-backup.php (main backup file) 
+2.  cron-backup.php (main backup file)
 3.  cron-backup-config.php (configuration file)
 
 Now that you have the backup script and all necessary files installed
@@ -85,13 +86,13 @@ you can setup your cron job to backup your site.
 
 For more information on setting up a cron task in Cloud Sites, see the
 article [*How do I schedule a cron job for Cloud
-Site*s?](https://www.rackspace.com/knowledge_center/article/how-do-i-schedule-a-cron-job-for-cloud-sites)
+Site*s?](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites)
 
 Here are the basics of what you will use for the cron task:
 
 -   Command Language: php
--   Command to Run: cron-backup.php (You do not need to include any path
-    information. Simply put cron-backup.php in this field)
+-   Command to Run: cron-backup.php (You do not need to include any
+    path information. Simply put cron-backup.php in this field)
 
 *Note: It is highly recommended that you choose the option to send the
 results via email. This will help ensure that you are aware if your
@@ -99,7 +100,8 @@ backups fail for any reason.*
 
 Here is a screenshot of the the cron setup in the Cloud Control Panel:
 
-![](/knowledge_center/sites/default/files/field/image/cron-setup.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-setup.png){width="624"
+height="598"}
 
 That's it! You should now have scheduled backups setup for your Cloud
 Site. Your backups can be found within your Cloud Files section of the
@@ -127,7 +129,7 @@ from the provision of the Unsupported Service.  The Service Level
 Guaranties will not apply to the Unsupported Service, or any other
 aspect of your services that are adversely affected by the Unsupported
 Service.  You acknowledge that Unsupported Services may not interoperate
-with Rackspace&rsquo;s other services or other third party services you use. 
+with Rackspace&rsquo;s other services or other third party services you use.
 
- 
+
 

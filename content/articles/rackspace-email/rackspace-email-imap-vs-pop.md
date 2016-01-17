@@ -2,10 +2,10 @@
 node_id: 1425
 title: IMAP and POP mail protocol comparison
 type: article
-created_date: '2012-06-04 06:10:58'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 20:2300'
-last_modified_by: stephanie.fillmon
+created_date: '2012-06-04'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -20,7 +20,7 @@ mail protocols.
 
 For Rackspace Email settings for both IMAP and POP, see [Rackspace Email
 and Hosted Exchange
-settings](http://www.rackspace.com/knowledge_center/article/rackspace-email-and-hosted-exchange-settings).
+settings](/howto/rackspace-email-and-hosted-exchange-settings).
 
 **Notes:**
 
@@ -40,8 +40,8 @@ some features of IMAP:
     computers or mobile devices.
 
 -   **New Items:** IMAP utilizes "fetch" technology. When a new email
-    arrives, your email client will fetch new messages at defined time
-    intervals.
+    arrives, your email client will fetch new messages at defined
+    time intervals.
 
 -   **Storage:** If you have limited online storage space, you might
     need to delete some emails periodically to avoid exceeding your
@@ -70,8 +70,8 @@ server. Following are some features of POP:
     be at your computer to access your email.
 
 -   **New Items:** POP utilizes "fetch" technology. When a new email
-    arrives, your email client will fetch new messages at defined time
-    intervals.
+    arrives, your email client will fetch new messages at defined
+    time intervals.
 
 -   **Storage:** You don&rsquo;t need to worry about running out of online
     storage space. Because emails are downloaded to your computer, you
@@ -93,23 +93,23 @@ ActiveSync technology. Following are some features of Mobile Sync:
 
 -   **Access**: Because emails are stored on the email server, you can
     access and manage your email and email folders from multiple
-    computers or mobile devices.<br>
-      
+    computers or mobile devices.
+
 -   **New Items:** Mobile Sync utilizes "push" technology. When a new
-    email arrives, the email is pushed to your device instantly.<br>
-      
+    email arrives, the email is pushed to your device instantly.
+
 -   **Storage**: If you have limited online storage space, you might
     need to delete some emails periodically to avoid exceeding your
-    storage capacity.<br>
-      
+    storage capacity.
+
 -   **Backup**: Email is automatically backed up every evening. If you
     accidentally delete an email, your email administrator can retrieve
-    it, even up to 14 days later.<br>
-      
+    it, even up to 14 days later.
+
 -   **Internet** **Connection**: You must have an internet connection to
-    access your email. 
+    access your email.
 
 **Note**: This service is an additional fee and enabled by your email
 administrator. For more information,
-see [http://www.rackspace.com/blog/mobile-sync-for-rackspace-webmail-take-your-webmail-with-you-anywhere](http://www.rackspace.com/blog/mobile-sync-for-rackspace-webmail-take-your-webmail-with-you-anywhere)/. 
+see <http://www.rackspace.com/blog/mobile-sync-for-rackspace-webmail-take-your-webmail-with-you-anywhere>/.
 

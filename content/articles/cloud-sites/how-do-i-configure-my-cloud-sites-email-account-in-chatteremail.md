@@ -2,10 +2,10 @@
 node_id: 112
 title: Configure your Cloud Sites email account in ChatterEmail
 type: article
-created_date: '2011-03-10 17:06:08'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-06 15:2008'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-10'
+created_by: Rackspace Support
+last_modified_date: '2015-05-06'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---

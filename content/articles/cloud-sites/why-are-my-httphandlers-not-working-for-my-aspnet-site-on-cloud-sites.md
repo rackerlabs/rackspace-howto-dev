@@ -2,19 +2,20 @@
 node_id: 118
 title: HttpHandlers not working in integrated mode for ASP.NET sites on Cloud Sites
 type: article
-created_date: '2011-03-10 17:26:54'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-06 16:5530'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-10'
+created_by: Rackspace Support
+last_modified_date: '2015-05-06'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
 
 If your website is running in [integrated
-mode](http://www.code-magazine.com/Article.aspx?quickid=060103 "http://www.code-magazine.com/Article.aspx?quickid=060103"),
-you might have noticed that your
-[HttpHandlers](http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx "http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx")
-no longer function even though they are set in your **web.config** file.
+mode](http://www.code-magazine.com/Article.aspx?quickid=060103 "http://www.code-magazine.com/Article.aspx?quickid=060103"){.external
+.text}, you might have noticed that your
+[HttpHandlers](http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx "http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx"){.external
+.text} no longer function even though they are set in your
+**web.config** file.
 
 Explanation
 -----------
@@ -32,12 +33,12 @@ Solutions
 
 -   Peter Kellner's article, [How to use HttpHandlers such as .ashx
     files with IIS7 Integrated
-    Mode](http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/ "http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/"),
-    briefly covers the differences between the *old way* to set up
-    handlers and the *new way*.
+    Mode](http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/ "http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/"){.external
+    .text}, briefly covers the differences between the *old way* to set
+    up handlers and the *new way*.
 -   The Microsoft Developer Network also explains [how to set up
     HttpHandlers for each of the above
-    situations](http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx "http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx").
-    This article covers the differences in detail.
+    situations](http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx "http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx"){.external
+    .text}. This article covers the differences in detail.
 
 

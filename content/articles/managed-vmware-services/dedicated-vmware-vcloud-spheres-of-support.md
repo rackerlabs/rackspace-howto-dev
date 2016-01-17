@@ -2,10 +2,10 @@
 node_id: 4511
 title: Dedicated VMware vCloud support coverage
 type: article
-created_date: '2015-01-29 15:51:27'
+created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-13 18:1317'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Contreras
 product: Managed VMware Services
 body_format: markdown_w_tinymce
 ---

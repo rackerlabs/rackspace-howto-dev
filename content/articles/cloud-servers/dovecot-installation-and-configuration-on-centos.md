@@ -2,10 +2,10 @@
 node_id: 2009
 title: Dovecot installation and configuration on CentOS
 type: article
-created_date: '2012-08-15 19:17:35'
-created_by: lee.jelley
-last_modified_date: '2014-04-14 20:2707'
-last_modified_by: jered.heeschen
+created_date: '2012-08-15'
+created_by: Lee Jelley
+last_modified_date: '2014-04-14'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -33,8 +33,8 @@ protocols.
 -   Postfix installed.
 -   Intended purpose for document: Basic installation and configuration
     of Dovecot.
--   Target Audience: System Administrators, Mail Administrators,
-    Postmasters.
+-   Target Audience: System Administrators, Mail
+    Administrators, Postmasters.
 
 ### Installation
 

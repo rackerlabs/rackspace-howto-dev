@@ -2,10 +2,10 @@
 node_id: 2185
 title: What is Cloud Files?
 type: frequently_asked_question
-created_date: '2012-09-20 18:38:38'
-created_by: tom.hopkins
-last_modified_date: '2016-01-05 17:1525'
-last_modified_by: rose.contreras
+created_date: '2012-09-20'
+created_by: Tom Hopkins
+last_modified_date: '2016-01-05'
+last_modified_by: Rose Contreras
 product: Cloud Files
 body_format: full_html
 ---
@@ -52,16 +52,16 @@ not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments
 to [review the
-concepts](http://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
+concepts](/howto/cloud-files-key-concepts).
 
 #### Using Cloud Files {#usingcloudfiles}
 
 There are two ways to use Cloud Files:
 
-1.  GUI interface such as the Rackspace Cloud Control Panel or
-    Cyberduck.
-2.  Programming interfaces via ReST, Python, PHP, Ruby, Java, or
-    C\#/.NET.
+1.  GUI interface such as the Rackspace Cloud Control Panel
+    or Cyberduck.
+2.  Programming interfaces via ReST, Python, PHP, Ruby, Java,
+    or C\#/.NET.
 
 #### Control Panel Interface
 

@@ -2,10 +2,10 @@
 node_id: 4449
 title: Cloud Server Configuration options
 type: article
-created_date: '2014-12-01 18:46:29'
-created_by: rose.contreras
-last_modified_date: '2016-01-14 20:0728'
-last_modified_by: rose.coste
+created_date: '2014-12-01'
+created_by: Rose Contreras
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Managed Operations
 body_format: full_html
 ---
@@ -56,8 +56,8 @@ Depending upon your service level, these options are available for the
     Monitoring agent to the Rackspace defaults, installs and configures
     Cloud Backup to the Rackspace defaults, installs all the support
     packages, configures Mailgun as the default mail relay service, and
-    enables automatic updates. This is the standard Managed Operations
-    kick.
+    enables automatic updates. This is the standard Managed
+    Operations kick.
 
 `mailgun`
 
@@ -117,14 +117,14 @@ Depending upon your service level, these options are available for the
 
 You can combine the `build_config` options. For example:
 
--   **`monitoring_defaults` + `auto_updates` -**installs the monitoring
+-   **`monitoring_defaults` + `auto_updates` -** installs the monitoring
     agent configured with Rackspace best practices, and turns on
-    automatic updates.<br>
-    <br>
+    automatic updates.
+
 -   **`backup_agent_only`** installs the Rackspace Cloud Backup agent
     but does not configure Rackspace backups. You must separately
-    identify the directories that you want backed up after the agent is
-    installed.
+    identify the directories that you want backed up after the agent
+    is installed.
 
 Build options for configuration management software (Chef, Puppet, Ansible, and Salt)
 -------------------------------------------------------------------------------------
@@ -168,5 +168,5 @@ key will have one of the following values:
 When the metadata key is set to **Complete**, you can begin your
 configuration management.
 
- 
+
 

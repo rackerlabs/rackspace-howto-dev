@@ -2,10 +2,10 @@
 node_id: 721
 title: Getting Started With Cloud Sites - Creating Sub-domains and/or Domain Aliases
 type: article
-created_date: '2011-03-23 19:28:09'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-28 21:5729'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-23'
+created_by: Rackspace Support
+last_modified_date: '2015-12-28'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,9 +19,9 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
+
 
 We've already discuss how to create a new domain, but what about
 creating a subdomain? Better yet, how do I create an alias? Let's
@@ -48,17 +48,23 @@ example: www.photos.example.com.
 
 **How Do I Create a Subdomain?**
 
+<div>
+
 -   Log into the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 
     ![](http://c806394.r94.cf2.rackcdn.com/cloudsites.png)
+
+<!-- -->
 
 -   Enter the subdomain and domain name into the **Domain Name** text
     box (i.e. subdomain.yourdomain.com)
 -   Click **Add New Site**
 
     ![](http://c806394.r94.cf2.rackcdn.com/addsubdomain.png)
+
+<!-- -->
 
 -   Choose the length of time for which you want to purchase the domain
     name (only if you haven't already registered the domain). Click
@@ -73,28 +79,34 @@ notices, but adding a subdomain follows the same exact steps you would
 take if you were adding a regular domain name. The process is the same
 with the only difference being that you entered a subdomain in the
 Domain Name text box to be created. Next, let's take a look at how you
-can create a domain alias. 
+can create a domain alias.
 
- 
+
 
 **How to Create a Domain Alias**
+
+<div>
 
 Pointing a domain or a subdomain to an existing website is made very
 easy on Cloud Sites when you follow these simple directions:
 
 -   Log into the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-\>Cloud Sites**
+-   Navigate to **Hosting-&gt;Cloud Sites**
 
     ![](http://c806394.r94.cf2.rackcdn.com/cloudsites.png)
 
--   Under **Add a New Website** select the Site Owner from the pull-down
-    menu. The Site Owner needs to be the same client account as the
-    domain you are going to alias to
+<!-- -->
+
+-   Under **Add a New Website** select the Site Owner from the
+    pull-down menu. The Site Owner needs to be the same client account
+    as the domain you are going to alias to
 -   Type the domain or subdomain in the **Domain Name** text box and
     click **Add New Site**
 
     ![](http://c806394.r94.cf2.rackcdn.com/namesite.png)
+
+<!-- -->
 
 -   On the next page choose to either register the domain, or if you
     already own it, simply indicate that you would like to "Set up the
@@ -104,19 +116,25 @@ easy on Cloud Sites when you follow these simple directions:
 
     ![](http://c806394.r94.cf2.rackcdn.com/choosealias.png)
 
+<!-- -->
+
 -   Select the website you want to point to from the list, and click
     **Next Step**
 
     ![](http://c806394.r94.cf2.rackcdn.com/selectalias.png)
 
 That's all there is to it! You've now added a domain alias. The domain
-alias will now direct traffic to the domain you selected. 
+alias will now direct traffic to the domain you selected.
+
+</div>
+
+</div>
 
 For additional information on Rackspace Cloud DNS, see [Using Cloud
-DNS](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-dns).
+DNS](/howto/rackspace-cloud-dns).
 
 ### Next section
 
 [Managing Cloud Sites Databases - MySQL
-Databases](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mysql-databases)
+Databases](/howto/rackspace-cloud-sites-essentials-mysql-databases)
 

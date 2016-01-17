@@ -2,10 +2,10 @@
 node_id: 709
 title: What happens if my Cloud Sites domain registration expires?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2011-09-07 16:5752'
-last_modified_by: matt.wheeler
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2011-09-07'
+last_modified_by: Matt Wheeler
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -22,5 +22,6 @@ stated expiration date, the domain name will be held in reserve for a
 redemption period of 45 days. During this redemption period, you may
 incur a registry-imposed redemption fee in order to reactivate your
 domain. To renew or redeem your domain name, please contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do").
+support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do"){.external
+.text}.
 

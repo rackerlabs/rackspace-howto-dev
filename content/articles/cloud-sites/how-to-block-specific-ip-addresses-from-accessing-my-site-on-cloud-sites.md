@@ -2,10 +2,10 @@
 node_id: 4153
 title: Allow or block specific IP addresses from accessing your Cloud Sites website
 type: article
-created_date: '2014-07-22 20:07:40'
+created_date: '2014-07-22'
 created_by: Rackspace Support
-last_modified_date: '2015-10-28 17:2740'
-last_modified_by: kyle.laffoon
+last_modified_date: '2015-10-28'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -63,8 +63,8 @@ restrictions. **You can repeat line 1 to allow multiple IP addresses.**
     SetEnvIf X-Cluster-Client-Ip "^000\.000\.000\.000" DenyAccess
 
 **Note**: The preceding example is formatted for Apache 2.4. If using
-2.2, replace **Require all granted | Deny from env=DenyAccess******with
-**Order Allow,Deny | Deny from env=DenyAccess | Allow from all**.
+2.2, replace **Require all granted | Deny from env=DenyAccess** ****
+with **Order Allow,Deny | Deny from env=DenyAccess | Allow from all**.
 
 #### Deny one or more IP addresses when your site is using SSL
 

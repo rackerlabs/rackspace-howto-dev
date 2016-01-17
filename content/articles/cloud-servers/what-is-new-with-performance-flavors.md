@@ -2,9 +2,9 @@
 node_id: 3712
 title: New features in General Purpose and work-optimized Cloud Servers
 type: article
-created_date: '2013-09-30 22:52:24'
+created_date: '2013-09-30'
 created_by: Rackspace Support
-last_modified_date: '2016-01-05 18:5019'
+last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Servers
 body_format: tinymce
@@ -29,14 +29,14 @@ resources increase. For more information about data disk imaging
 limitations, see [Images capture the system disk only](#ImageCapture)
 (later in this article) or, for the full procedure, see the
 article [Create an image of a server and restore a server from a saved
-image](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
+image](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 You can back up the data on your data disk or disks by leveraging either
 Rackspace Cloud Backup or Rackspace Cloud Block Storage (an option that
 can also be used to increase the storage capacity of your server, if
 needed). For a comparison of the two data disk backup options, see [Best
 Practices for Backing Up Your Data: Cloud Block Storage versus Cloud
-Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+Backup](/howto/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 Faster server provisioning
 --------------------------
@@ -87,8 +87,8 @@ and 1200 (or 4x300) GB data disks can perform about 80k IOPS. Compare
 this with the Standard server class for Cloud Servers, which can process
 approximately only 2k IOPS.
 
-Work-optimized server types
----------------------------
+[]()Work-optimized server types
+-------------------------------
 
 **I/O-optimized **servers are assigned networking resources and use
 local high-speed SSD drives for storage. I/O-optimized servers work best
@@ -122,27 +122,27 @@ balancer ) to manage your available resources to suit your needs.
 For information about reducing the size of your General Purpose server
 or changing the size of your work-optimized server, see [Upgrading
 resources for General Purpose or I/O optimized Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Servers](/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
-Images capture the system disk only
------------------------------------
+[]()Images capture the system disk only
+---------------------------------------
 
 Images of your system capture only your operating system's configuration
 (your system disk). This makes the imaging process run more quickly and
 reliably without placing undue strain on your server. To retain the
 information stored on attached data disks for General Purpose and I/O
 optimized flavors, you can use [Cloud Block
-Storage](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume)
+Storage](/howto/create-and-attach-a-cloud-block-storage-volume)
 or [Cloud
-Backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent)
+Backup](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 to save only the files and directories that you need. For a comparison
 of the two options, see [Best Practices for Backing Up Your Data: Cloud
 Block Storage versus Cloud
-Backup](http://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+Backup](/howto/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 To learn more about Cloud Block Storage snapshots, which are useful for
 diskless flavors like Compute and Memory, see [Create and Use Cloud
 Block Storage
-Snapshots](http://www.rackspace.com/knowledge_center/article/create-and-use-cloud-block-storage-snapshots).
+Snapshots](/howto/create-and-use-cloud-block-storage-snapshots).
 
 Preparing the data disk for use
 -------------------------------
@@ -153,9 +153,9 @@ mounting it to your server before you can use it. Follow the
 instructions in these articles to prepare your data disk for use:** **
 
 -   [Preparing Data Disks on Windows Cloud
-    Servers](/knowledge_center/article/preparing-data-disks-on-windows-cloud-servers)
+    Servers](/howto/preparing-data-disks-on-windows-cloud-servers)
 -   [Preparing Data Disks on Linux Cloud
-    Servers](/knowledge_center/article/preparing-data-disks-on-linux-cloud-servers)
+    Servers](/howto/preparing-data-disks-on-linux-cloud-servers)
 
 No 512 MB RAM servers
 ---------------------

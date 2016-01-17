@@ -2,10 +2,10 @@
 node_id: 1941
 title: Next Generation Cloud Servers migration considerations and options
 type: article
-created_date: '2012-08-09 18:22:29'
-created_by: jered.heeschen
-last_modified_date: '2016-01-06 19:5115'
-last_modified_by: catherine.richardson
+created_date: '2012-08-09'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-06'
+last_modified_by: Catherine Richardson
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -107,7 +107,7 @@ A Linux server migrated to Next Generation Cloud Servers will use the same serve
 
 In many cases a migration can be performed while preserving application and server states.  Availability of this feature depends on the server's operating system.  Some operating systems and distributions will need to be halted for the migration.
 
-See the [First Generation to Next Generation cloud server migration FAQ](https://www.rackspace.com/knowledge_center/article/first-generation-to-next-generation-cloud-server-migration-faq) and the [migration thread in our community forums][community] for more answers about self-service and assisted migrations.
+See the [First Generation to Next Generation cloud server migration FAQ](/howto/first-generation-to-next-generation-cloud-server-migration-faq) and the [migration thread in our community forums][community] for more answers about self-service and assisted migrations.
 
 ### Self-service migration {#selfservice}
 
@@ -139,7 +139,7 @@ Manual migration is available as an alternative for unsupported instances and is
 
     If the server is compatible with the conversion process, you are given a choice between making a First Generation or Next Generation image.
 
-    ![Image migration](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/nextgen-snapshot.png)
+    ![Image migration](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/nextgen-snapshot.png)
 
     **Note:** If you don't see an option to create a Next Generation image, your instance is not supported by the conversion process. In that case, use one of the manual migration approaches described later in this section.
 

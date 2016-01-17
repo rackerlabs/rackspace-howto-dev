@@ -2,10 +2,10 @@
 node_id: 1157
 title: Changing DNS Settings on Linux
 type: article
-created_date: '2011-07-20 18:02:14'
-created_by: jered.heeschen
-last_modified_date: '2013-10-23 03:4900'
-last_modified_by: ross.diaz
+created_date: '2011-07-20'
+created_by: Jered Heeschen
+last_modified_date: '2013-10-23'
+last_modified_by: Ross Diaz
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -45,10 +45,10 @@ Open resolv.conf with an editor like nano to make the necessary changes
 If your Cloud Server is in the Hong Kong (HKG) datacenter you should
 use:
 
-~~~~ {style="font-weight: normal;"}
+``` {style="font-weight: normal;"}
 nameserver 120.136.32.63
 nameserver 120.136.32.62
-~~~~
+```
 
 #### Rackspace Cloud UK
 
@@ -98,7 +98,7 @@ You should see a result like:
     64 bytes from 173.203.44.122: icmp_req=1 ttl=249 time=25.3 ms
     64 bytes from 173.203.44.122: icmp_req=2 ttl=249 time=25.2 ms
     64 bytes from 173.203.44.122: icmp_req=3 ttl=249 time=25.2 ms
-     
+
     --- rackspace.com ping statistics ---
     3 packets transmitted, 3 received, 0% packet loss, time 2002ms
     rtt min/avg/max/mdev = 25.236/25.292/25.392/0.147 ms

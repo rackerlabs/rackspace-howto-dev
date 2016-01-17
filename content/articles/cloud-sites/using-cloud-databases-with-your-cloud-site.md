@@ -2,9 +2,9 @@
 node_id: 1869
 title: Using Cloud Databases with your Cloud Site
 type: article
-created_date: '2012-08-01 19:30:50'
-created_by: chris.farmer
-last_modified_date: '2014-11-13 16:5513'
+created_date: '2012-08-01'
+created_by: Chris Farmer
+last_modified_date: '2014-11-13'
 last_modified_by: David Hendler
 product: Cloud Sites
 body_format: tinymce
@@ -19,35 +19,36 @@ connect to your Cloud Database from Cloud Sites.
 
 ### Creating A Cloud Database
 
-1. First thing we'll do is login to the Cloud Control
-[http://mycloud.rackspace.com](http://mycloud.rackspace.com) and once
-you're logged in, select **Databases** at the top.
+1\. First thing we'll do is login to the Cloud Control
+<http://mycloud.rackspace.com> and once you're logged in, select
+**Databases** at the top.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/6.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/6.png){width="496"
+height="57"}
 
-2. Next, select the **Create MySQL Instance** option and you'll then be
+2\. Next, select the **Create MySQL Instance** option and you'll then be
 taken to the **Create MySQL Instance** screen. Fill out the fields with
 your desired specifications to creating your Database and then select
 **Create Instance** when finished.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/2_0.png) 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2_0.png){width="549"
+height="744"}
 
 *Note: We recommend creating your Database in the same region as your
 Cloud Site. You can find out the location of your Cloud Site by looking
 for **ORD** or **DFW** in the testing link for your Cloud Site.*
 
-3. Your database will then begin the process of building. Once
-complete, you'll see your status go from an Orange color to a green
-which indicates it's active. Selecting your Instance will display all
+3\. Your database will then begin the process of building. Once complete,
+you'll see your status go from an Orange color to a green which
+indicates it's active. Selecting your Instance will display all
 information relating to that particular Instance.
 
-### ![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/4_0.png)
+### ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4_0.png){width="532" height="74"}
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/15.png) 
-        
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/15.png){width="639"
+height="221"}
 
-###  
+###
 
 ### Working with your MySQL instance
 
@@ -60,39 +61,43 @@ manage your database instance. The steps below will focus on using a
 database management interface on your local machine (MySQL Workbench).
 Let's get started!
 
-1. In order to access your instance from your local workstation, let's
+1\. In order to access your instance from your local workstation, let's
 create a Load Balancer. This will allow you to have a public IP address
 against your instance. First thing you'll do is login to the [Cloud
 Control Panel](https://mycloud.rackspace.com) and select **Load
 Balancers** at the top.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/13.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/13.png){width="493"
+height="55"}
 
-2. Next, select **Create A Load Balancer** and fill out the fields with
+2\. Next, select **Create A Load Balancer** and fill out the fields with
 your desired specifications. When you approach the **Add Nodes**
-section, select **Add External Node**and in the** IP or
+section, select **Add External Node** and in the** IP or
 Hostname** field, enter in the Hostname of the Cloud Database Instance
 we just created and then select **Create Load Balancer**.
 
 *Note: You can grab the hostname of your Instance by selecting the
-Instance name in the Databases section.*  
+Instance name in the Databases section.*
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/9.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/9.png){width="341"
+height="87"}
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/16.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/16.png){width="746"
+height="421"}
 
-3. Once your Load Balancer is created (Active), select the Load
-Balancer and you may then grab the public IP address to create a new
-connection. Plug the IP address into the Hostname field in MySQL
-Workbench, your database credentials, and also the standard port
-(**3306**) in the port field.
+3\. Once your Load Balancer is created (Active), select the Load Balancer
+and you may then grab the public IP address to create a new connection.
+Plug the IP address into the Hostname field in MySQL Workbench, your
+database credentials, and also the standard port (**3306**) in the port
+field.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/14.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/14.png){width="673"
+height="449"}
 
-4. Connect your MySQL workbench by selecting OK and you can then import
+4\. Connect your MySQL workbench by selecting OK and you can then import
 your database, edit user permissions, etc.
 
-###  
+###
 
 ### Using your MySQL instance on your Cloud Site
 
@@ -103,7 +108,8 @@ and your database host (this will be your MySQL instance hostname, not
 your load balancer IP address, you do not need a load balancer to
 connect to your database from your website) and you're good to go!
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/8.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/8.png){width="736"
+height="534"}
 
 There you have it! You've created a MySQL instance and database using
 Cloud Databases, a Load Balancer to connect and manage your database,

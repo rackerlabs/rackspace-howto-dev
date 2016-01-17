@@ -2,15 +2,15 @@
 node_id: 4177
 title: Getting started with GlusterFS - considerations and installation
 type: article
-created_date: '2014-08-14 09:49:26'
-created_by: marcin.stangel
-last_modified_date: '2016-01-12 15:2745'
-last_modified_by: stephanie.fillmon
+created_date: '2014-08-14'
+created_by: Marcin Stangel
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-Before you start to use GlusterFS, you have to make a fundamental decision: what type of volumes do you need for your environment. [Although six methods exist](http://www.rackspace.com/knowledge_center/article/glusterfs-introduction), the following ones are used most often to achieve different results:
+Before you start to use GlusterFS, you have to make a fundamental decision: what type of volumes do you need for your environment. The following methods are used most often to achieve different results:
 
 <table>
 	<tr>
@@ -22,7 +22,7 @@ Before you start to use GlusterFS, you have to make a fundamental decision: what
 		<td>This type of volume provides file replication across multiple bricks. It is the best choice for environments where high availability and high reliability are critical, and when you want to self-mount the volume on every node, such as with a web server document root (the GlusterFS nodes are their own clients).
 
 		Files are copied to each brick in the volume, similar to a RAID-1. However, you can have 3 or more bricks or an odd number of bricks; usable space is the size of one brick, and all files written to one brick are replicated to all others. This type works well if you are going to self-mount the GlusterFS volume, for example as the web server document root (<strong><code>/var/www</code></strong>) or similar where all files must reside on that node. The value passed to <strong>replica</strong> is the same number of nodes in the volume.
-		
+
 		In type of volume, files are distributed across replicated bricks in the volume. You can use this type of volume in environments where the requirement is to scale storage and have high availability. Volumes of this type also offer improved read performance in most environments, and are the most common type of volumes used when clients are external to the GlusterFS nodes themselves.</td>
 	</tr>
 	<tr>
@@ -65,22 +65,22 @@ Instead of using DNS, prepare **`/etc/hosts`** on every server and ensure that t
 	192.168.3.4  glus2
 	192.168.3.1  glus3
 	192.168.3.3  glus4
-	
+
 	# ping -c2 glus1; ping -c2 glus2;  ping -c2 glus3;  ping -c2 glus4
 
 ##### Red Hat:
 
     # vi /etc/sysconfig/iptables
     -A INPUT -s 192.168.3.0/24 -j ACCEPT
-  
+
     # service iptables restart
- 
+
 ##### Granular setup for iptables
 
 The preceding generic iptables rule opens all ports to the subnet. If a more granular setup is required, use the following values:
 
 - **111** – portmap/rpcbind
-- **24007** – GlusterFS Daemon 
+- **24007** – GlusterFS Daemon
 - **24008** – GlusterFS Management
 - **38465** to **38467** – Required for GlusterFS NFS service
 - **24009** to **+X** – GlusterFS versions earlier than 3.4
@@ -185,7 +185,7 @@ The daemon can also be restarted at run time:
 
     # service glusterd start
 	# chkconfig glusterd on
- 
+
 ### Build a peer group
 
 A peer group is known as a *trusted storage pool* in GlusterFS. [Insert a sentence that introduces the code blocks.]
@@ -221,9 +221,9 @@ A peer group is known as a *trusted storage pool* in GlusterFS. [Insert a senten
 
     [root@gluster1 ~]# gluster pool list
     UUID	                				Hostname	State
-    734aea4c-fc4f-4971-ba3d-37bd5d9c35b8	glus4   	Connected 
-    d5c9e064-c06f-44d9-bf60-bae5fc881e16	glus3   	Connected 
-    57027f23-bdf2-4a95-8eb6-ff9f936dc31e	glus2   	Connected 
+    734aea4c-fc4f-4971-ba3d-37bd5d9c35b8	glus4   	Connected
+    d5c9e064-c06f-44d9-bf60-bae5fc881e16	glus3   	Connected
+    57027f23-bdf2-4a95-8eb6-ff9f936dc31e	glus2   	Connected
     e64c5148-8942-4065-9654-169e20ed6f20	localhost	Connected
 
 <br />
@@ -317,7 +317,7 @@ After you ensure that no clients (either local or remote) are mounting the volum
 
 If bricks are used in a volume and they need to be removed, you can use the following methods.
 
-GlusterFS set an attribute on the brick subdirectories. Clear this attribute, and then the bricks can be reused.  
+GlusterFS set an attribute on the brick subdirectories. Clear this attribute, and then the bricks can be reused.
 
 #### glus1:
 
@@ -393,7 +393,7 @@ To view configured volume options, run the following command:
     # gluster volume info gvol0
 
 Following is example output:
- 
+
     Volume Name: gvol0
     Type: Replicate
     Volume ID: bcbfc645-ebf9-4f83-b9f0-2a36d0b1f6e3
@@ -429,7 +429,7 @@ To clear an option to a volume back to the default, use the **reset** keyword as
 
 <br />
 
-## Client mounts 
+## Client mounts
 
 From a client perspective, the GlusterFS volume can be mounted in the following ways:
 
@@ -500,8 +500,7 @@ The standard Linux NFSv3 client tools are used to mount one of the GlusterFS nod
 - http://kaivanov.blogspot.com/2012/07/deploying-glusterfs.html
 - http://joejulian.name/blog/glusterfs-path-or-a-prefix-of-it-is-already-part-of-a-volume/
 - http://www.jamescoyle.net/how-to/457-glusterfs-firewall-rules
- 
-Previous Article: [GlusterFS Introduction](https://www.rackspace.com/knowledge_center/article/glusterfs-introduction)
-Next Article: [GlusterFS Troubleshooting](https://www.rackspace.com/knowledge_center/article/glusterfs-troubleshooting)
+
+Next Article: [GlusterFS Troubleshooting](/howto/glusterfs-troubleshooting)
 
 <p>&nbsp;</p>

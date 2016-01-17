@@ -2,10 +2,10 @@
 node_id: 1312
 title: Rackspace Cloud Essentials - Transferring Your Domain to be Served from Rackspace Cloud
 type: article
-created_date: '2012-03-07 07:22:55'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 17:3452'
-last_modified_by: stephanie.fillmon
+created_date: '2012-03-07'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,18 +13,18 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](https://admin.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
 In the previous article you learned how to [identify the Rackspace Cloud
-Nameservers](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-what-are-your-name-servers),
+Nameservers](/howto/rackspace-cloud-essentials-what-are-your-name-servers),
 and that you will have to update them with your current domain registrar
 in order to transfer an existing domain to be served from your new Cloud
 Server.  For many of our customers, that is all the information they
 will need to get going.  For those of you who have never been through
 this process before we will go into more detail on how DNS works, and
 how to transfer and test your domain.  Here are the answers to some
-basic questions about transferring your domain to Rackspace.<br>
-  
+basic questions about transferring your domain to Rackspace.
+
 
 -   [We are not a Domain Registrar](#wearenotaregistrar_1)
 -   [What is a Name Server?](#whatisanameserver_2)
@@ -36,7 +36,9 @@ basic questions about transferring your domain to Rackspace.<br>
 -   [How Do I Know My Domain is Set Up
     Correctly?](#howdoiknowmydomainissetup_6)
 
-### We are not a Domain Registrar {.p1}
+[]()
+
+### We are not a Domain Registrar {#we-are-not-a-domain-registrar .p1}
 
 Rackspace IS a provider of world-class Cloud Hosting services on demand
 backed by our commitment to Fanatical Support.  What we are NOT is a
@@ -44,12 +46,12 @@ Domain Registrar like [Namecheap](http://www.namecheap.com/),
 [Dreamhost](http://dreamhost.com/domains/), or
 [GoDaddy](http://www.godaddy.com/).  The only time that Rackspace acts
 as a Domain Registrar is if you are using our [Cloud Sites
-service](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-registering-andor-transferring-domain-names).
+service](/howto/getting-started-with-cloud-sites-registering-andor-transferring-domain-names).
  So in order to host a domain from your Cloud Server, you will need to
 have already registered it at a domain registrar, and then transfer it
-to Rackspace.
+to Rackspace.[]()
 
-### What is a Name Server? {.p1}
+### What is a Name Server? {#what-is-a-name-server .p1}
 
 In the Domain Name (DNS) System, the nameserver is part of the process
 that translates a human readable domain (like rackspace.com) into the
@@ -62,9 +64,9 @@ that knows where to find the IP address matching the domain name you
 requested.  Now that you want your domain to be hosted on a Rackspace
 Cloud Server, you will need to update the nameservers so that the DNS
 system knows where to locate the new IP address that is serving your
-domain.
+domain.[]()
 
-### What are Rackspace's Name Servers? {.p1}
+### What are Rackspace's Name Servers? {#what-are-rackspaces-name-servers .p1}
 
 For Rackspace Cloud services, the nameservers you need to use are:
 
@@ -77,9 +79,9 @@ previously instructed to use the following nameservers:
 
 Please continue to use these Name Servers for your dedicated services,
 but you will use the 'stabletransit' Name Servers above for any domain
-hosted from a Rackspace Cloud Server.
+hosted from a Rackspace Cloud Server.[]()
 
-### How Do I Transfer the Domain? {.p1}
+### How Do I Transfer the Domain? {#how-do-i-transfer-the-domain .p1}
 
 When you first register a domain, you are usually assigned the
 nameservers belonging to the domain registrar, unless you specify
@@ -94,17 +96,17 @@ Your next step, if you haven't already done so, is to create
 corresponding DNS records for your domain in the Rackspace Cloud Control
 Panel.  You can follow the instructions in the next article to learn how
 to [create DNS records through the
-ControlPanel](http://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel).
+ControlPanel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).[]()
 
-### How Long Does DNS Propagation Take? {.p1}
+### How Long Does DNS Propagation Take? {#how-long-does-dns-propagation-take .p1}
 
 DNS propagation is the time it takes for the updated information that
 you provided to your registrar (the new name servers for your domain) to
 be communicated through the hierarchical DNS system.  In general, DNS
 propagation of new name server information should take no longer than 24
-- 48 hours.
+- 48 hours.[]()
 
-### How Do I Know My Domain is Set Up Correctly? {.p1}
+### How Do I Know My Domain is Set Up Correctly? {#how-do-i-know-my-domain-is-set-up-correctly .p1}
 
 There are a number of ways you can test your DNS.  You can use the 'dig'
 command from a Linux machine to view the DNS records associated with
@@ -119,7 +121,7 @@ site visitors.  If you are still unable to view your website, the most
 likely culprit would be a misconfiguration of your firewall settings or
 of your web applications.  You'll need to make sure that you have opened
 the ports on your Cloud Server to allow normal HTTP traffic on port
-80.  
+80.
 
 The level of support we provide for Managed Infrastructure Cloud Servers
 encompasses the server hardware, the datacenter environment, and the
@@ -130,10 +132,10 @@ correctly configured and your site is still inaccessible, you will need
 to take a closer look at the configuration of your web applications.
  Next, let's move on to the guide on [Creating DNS Records in the
 Control
-Panel](http://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel).
+Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
 
-### Next steps {.p1}
+### Next steps {#next-steps .p1}
 
 [Managing
-DNS](http://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel)
+DNS](/howto/create-dns-records-for-cloud-servers-with-the-control-panel)
 

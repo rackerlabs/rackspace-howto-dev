@@ -2,10 +2,10 @@
 node_id: 1507
 title: Cloud Database Instance Parameters
 type: article
-created_date: '2012-07-24 00:34:47'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-06 17:2528'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-06'
+last_modified_by: Cat Lookabaugh
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -20,8 +20,8 @@ Here are some important facts to consider when creating a new instance:
 -   You can create a database instance with one or more databases.
     Databases and users can be configured when you create the instance
     or at a later time.
--   Each database can have an unlimited number of users associated with
-    it.
+-   Each database can have an unlimited number of users associated
+    with it.
 -   The default binding for the MySQL instance is port 3306.
 
 ### Accessibility
@@ -31,7 +31,7 @@ internal Rackspace Network and by using a Cloud resource within the same
 regional data center. For example, a database instance in DFW can only
 be accessed by a Cloud Server in DFW. For more information, see [Public
 Vs. Private
-Access](http://www.rackspace.com/knowledge_center/article/public-and-private-access-for-cloud-databases)
+Access](/howto/public-and-private-access-for-cloud-databases)
 and [Connecting to Your
-Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance).
+Database](/howto/connect-to-a-cloud-databases-instance).
 

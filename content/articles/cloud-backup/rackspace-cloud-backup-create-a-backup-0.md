@@ -2,10 +2,10 @@
 node_id: 2038
 title: Rackspace Cloud Backup - Create a backup
 type: article
-created_date: '2012-08-22 19:00:02'
+created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2016-01-04 20:0828'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-04'
+last_modified_by: Rose Contreras
 product: Cloud Backup
 body_format: full_html
 ---
@@ -16,11 +16,11 @@ backup of the data on your cloud server.
 ### Previous sections
 
 -   [Rackspace Cloud Backup -
-    Overview](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview)
+    Overview](/howto/rackspace-cloud-backup-overview)
 -   [Rackspace Cloud Backup - Install the agent on
-    Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-linux)
+    Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 -   [Rackspace Cloud Backup - Install the agent on
-    Windows](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-windows)
+    Windows](/howto/rackspace-cloud-backup-install-the-agent-on-windows)
 
 **Note:** You can use the Cloud Backup tool to back up your data files
 but not to back up a full operating system. To restore your data, you
@@ -29,17 +29,18 @@ operating system files. To back up the operating system, create an image
 of your server. For more information about restoring a server from an
 image, see [Create an image of a server and restore a server from a
 saved
-image](http://www.rackspace.com/knowledge_center/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
+image](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 Create a server backup
 ----------------------
 
 1.  Log in to the [Cloud Control
-    Panel](https://mycloud.rackspace.com/).<br>
-    <br>
-2.  In the top navigation bar, select **Backups \> Systems**.<br>
+    Panel](https://mycloud.rackspace.com/).
 
-    ![](/knowledge_center/sites/default/files/field/image/2038-1_0.png)
+2.  In the top navigation bar, select **Backups &gt; Systems**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2038-1_0.png){width="138"
+    height="132"}
 
 3.  On the Cloud Backup Systems page, click the name of the server for
     which you want to create a backup.
@@ -49,30 +50,30 @@ Create a server backup
     with the Managed Operations service level, check with your account
     manager to install the agent. If your account has a different
     service level, follow the instructions in [How to Install the
-    Agent](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent).
+    Agent](/howto/rackspace-cloud-backup-install-the-agent-on-linux).
 
 4.  On the Configure Backup page, configure the following items and then
-    click **Next Step:**<br>
-    <br>
-    -   Enter a name for the backup.<br>
-        <br>
+    click **Next Step:**
+
+    -   Enter a name for the backup.
+
     -   In the **Schedule** section, specify a schedule for the backup
-        and select how many prior backup versions to retain.<br>
-        <br>
+        and select how many prior backup versions to retain.
+
     -   In the **Notifications** section, specify the email address for
         notifications and select whether you want to receive
-        notifications of successful backups.<br>
-        <br>
+        notifications of successful backups.
+
 
 5.  On the Select Items to Backup page, select the files and folder to
-    back up, and then click **Next Step**.<br>
-    <br>
+    back up, and then click **Next Step**.
+
 6.  Confirm that the backup agent is set up correctly, and then click
-    **Save**.<br>
-    <br>
+    **Save**.
+
 
 ### Next steps
 
 [Rackspace Cloud Backup - View backup
-information](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-view-backup-information)
+information](/howto/rackspace-cloud-backup-view-backup-information)
 

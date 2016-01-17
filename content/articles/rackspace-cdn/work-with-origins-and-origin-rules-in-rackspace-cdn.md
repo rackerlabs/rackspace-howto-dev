@@ -2,10 +2,10 @@
 node_id: 4660
 title: Work with origins and origin rules in Rackspace CDN
 type: article
-created_date: '2015-05-11 14:24:48'
+created_date: '2015-05-11'
 created_by: Rackspace Support
-last_modified_date: '2015-10-02 16:1132'
-last_modified_by: catherine.richardson
+last_modified_date: '2015-10-02'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: tinymce
 ---
@@ -20,7 +20,8 @@ After you create your service, you enter origin rules in the **Origin
 Rules** section of the CDN service page. A **Default Origin** rule is
 created for the origin that you defined when you created your service.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.06.36%20PM.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.06.36%20PM.png){width="726"
+height="256"}
 
 **Note**: If you have specified only one origin for a service, the **Add
 Rule** button does not display. You must have at least two origins
@@ -29,47 +30,49 @@ defined for the **Add Rule** button to be shown in the dialog.
 If you create multiple origin rules, you must order the rules from least
 specific to most specific. For more information about rules, see the
 following sections and [Rackspace CDN edge
-rules](https://www.rackspace.com/knowledge_center/article/rackspace-cdn-edge-rules).
+rules](/howto/rackspace-cdn-edge-rules).
 
- 
+
 
 ### To add an origin
 
 To add an additional origin to your service, follow these steps:
 
-1. In the **Service Details** section, click **Add Origin**.
+1\. In the **Service Details** section, click **Add Origin**.
 
-2. Enter the IP address or domain name of the origin where your content
+2\. Enter the IP address or domain name of the origin where your content
 resides.
 
-3. Enter the path for the origin. You can use a wildcard for the path.
+3\. Enter the path for the origin. You can use a wildcard for the path.
 
-![](/knowledge_center/sites/default/files/field/image/AddOrigin.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AddOrigin.png){width="376"
+height="166"}
 
-4. Click **Save Origin**. The **Service Status** is **Pending** until
+4\. Click **Save Origin**. The **Service Status** is **Pending** until
 the new origin is deployed. After the origin is deployed, it is
 displayed in the **Origin** list under **Service Details.**
 
- 
+
 
 ### To specify the Host Header
 
 To change the **Host Header** for any origin that you create, follow
 these steps to create an origin rule:
 
-1. Click the pencil icon
-(![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.44.26%20PM.png))
-beside the origin name.   A popup dialog box appears.
+1\. Click the pencil icon
+(![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.44.26%20PM.png){width="23"
+height="26"}) beside the origin name.   A popup dialog box appears.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.45.32%20PM.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.45.32%20PM.png){width="665"
+height="223"}
 
-2. Select the type of Host Header from the dropdown. The following
-types are available:
+2\. Select the type of Host Header from the dropdown. The following types
+are available:
 
 -   **Domain**: The default value. The Host Header takes a NULL value.
     Using Domain indicates that the Host Header in the queries from the
     CDN edge nodes to the origin will match the domain on which the
-    request comes in.   
+    request comes in.
 -   **Origin**: The Host Header takes the value of the origin domain.
     Using Origin indicates the Host Header in the queries from the CDN
     edge nodes to the origin will match the name of the origin server.
@@ -105,69 +108,73 @@ For this use case, you can create multiple services for each domain,
 allowing them to specify a different Host Header for the origin for each
 service.
 
- 
+
 
 ### To create an origin rule
 
 After you have created your service and added an additional origin,
 follow these steps to create an origin rule:
 
-1. Click **Add Rule**. The **Add Rule** button appears only if you have
+1\. Click **Add Rule**. The **Add Rule** button appears only if you have
 multiple origins for the service. A popup dialog box appears.
 
-![](/knowledge_center/sites/default/files/field/image/createOriginRule.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createOriginRule.png){width="370"
+height="176"}
 
-2. Enter the following information to define the rule:
+2\. Enter the following information to define the rule:
 
 -   **Name**: Name for the rule.
 -   **Origin**: The origin to which the rule applies. Select the origin
-    from the menu, which shows the origins that are defined for the
-    service.
+    from the menu, which shows the origins that are defined for
+    the service.
 -   **Path**: Path for the rule.
 
-3. Click **Save Rule**. The **Service Status** is **Pending** until the
+3\. Click **Save Rule**. The **Service Status** is **Pending** until the
 new rule is deployed. After the rule is deployed, it is displayed in the
 **Origin Rules** list.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-07-15%20at%202.27.59%20PM.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.27.59%20PM.png){width="743"
+height="284"}
 
- 
+
 
 ### To edit an origin rule
 
 To edit an origin rule, follow these steps:
 
-1. Click the gear icon beside the rule that you want to edit, and
-select **Edit Rule**.
+1\. Click the gear icon beside the rule that you want to edit, and select
+**Edit Rule**.
 
-2. In the popup dialog box, edit the name of the rule or the path for
+2\. In the popup dialog box, edit the name of the rule or the path for
 the rule.
 
-![](/knowledge_center/sites/default/files/field/image/EditOriginRule.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/EditOriginRule.png){width="397"
+height="160"}
 
-3. Click **Save Rule**. The **Service Status** is **Pending** until the
+3\. Click **Save Rule**. The **Service Status** is **Pending** until the
 updated rule is deployed. After the rule is deployed, it is displayed in
 the **Origin Rules** list.
 
- 
+
 
 ### To delete an origin rule
 
 To delete an origin rule, follow these steps:
 
-1. Click the gear icon beside the rule that you want to delete, and
+1\. Click the gear icon beside the rule that you want to delete, and
 select **Delete Rule**.
 
-2. In the popup dialog box, click **Delete Rule**.
+2\. In the popup dialog box, click **Delete Rule**.
 
-![](/knowledge_center/sites/default/files/field/image/DeleteOriginRule.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DeleteOriginRule.png){width="210"
+height="136"}
 
 The **Service Status** is **Pending** until the rule is deleted. After
 the rule is deleted, it is removed from the **Origin Rules** list.
 
- 
 
-#### [\< Add and manage domains with Rackspace CDN](https://www.rackspace.com/knowledge_center/article/add-and-manage-domains-in-rackspace-cdn)    -    [Create and manage caching rules in Rackspace CDN \>](https://www.rackspace.com/knowledge_center/article/create-and-manage-caching-rules-in-rackspace-cdn)
 
- 
+#### [&lt; Add and manage domains with Rackspace CDN](/howto/add-and-manage-domains-in-rackspace-cdn)    -    [Create and manage caching rules in Rackspace CDN &gt;](/howto/create-and-manage-caching-rules-in-rackspace-cdn)
+
+
 

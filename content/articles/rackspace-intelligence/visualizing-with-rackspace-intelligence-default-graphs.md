@@ -2,10 +2,10 @@
 node_id: 4742
 title: Viewing basic graphs of activity in Rackspace Intelligence
 type: article
-created_date: '2015-07-16 18:34:51'
-created_by: rose.coste
-last_modified_date: '2016-01-13 18:0046'
-last_modified_by: constanze.kratel
+created_date: '2015-07-16'
+created_by: Rose Coste
+last_modified_date: '2016-01-13'
+last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -18,7 +18,7 @@ out-of-the-box graphs for all of your checks.
 If you want to explore a metric across multiple entities, consider using
 custom graphs. For more information, read [Creating custom graphs of
 activity in Rackspace
-Intelligence](https://www.rackspace.com/knowledge_center/article/creating-custom-graphs-of-activity-in-rackspace-intelligence).
+Intelligence](/howto/creating-custom-graphs-of-activity-in-rackspace-intelligence).
 
 View default graphs
 -------------------
@@ -30,7 +30,8 @@ Graphs**.
 To view any of the default graphs for your entities**,** click
 **Rackspace Default** under **Graph Collections**.
 
-![](/knowledge_center/sites/default/files/field/image/BG_Default.1.png)
+![](/knowledge_center/sites/default/files/field/image/BG_Default.1.png){width="656"
+height="410"}
 
 To view a graph for a specific check, in the **Graphs by Check**
 section, click the name of the check for which you want to see the
@@ -38,7 +39,8 @@ graphs, such as **CPU**.
 
 A list of graphs are displayed that are available for your check.
 
-![](/knowledge_center/sites/default/files/field/image/BG_Check.2.png)
+![](/knowledge_center/sites/default/files/field/image/BG_Check.2.png){width="650"
+height="405"}
 
 Work with favorites
 -------------------
@@ -52,7 +54,8 @@ title of the graph.
 To filter for your favorite graphs, click **Favorites** under **Graph
 Collections.**
 
-![](/knowledge_center/sites/default/files/field/image/BG_Fav.1.png)I
+![](/knowledge_center/sites/default/files/field/image/BG_Fav.1.png){width="650"
+height="405"}I
 
 Specify a time range
 --------------------
@@ -73,7 +76,8 @@ If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
 last time stamp.
 
-![](/knowledge_center/sites/default/files/field/image/preset1.1.png)
+![](/knowledge_center/sites/default/files/field/image/preset1.1.png){width="584"
+height="41"}
 
 Adjust the layout of your graph page
 ------------------------------------
@@ -89,7 +93,8 @@ You can choose from one of the two display options:
 
 The following example shows a grid layout:
 
-![](/knowledge_center/sites/default/files/field/image/gridlayout.png)
+![](/knowledge_center/sites/default/files/field/image/gridlayout.png){width="765"
+height="594"}
 
- 
+
 

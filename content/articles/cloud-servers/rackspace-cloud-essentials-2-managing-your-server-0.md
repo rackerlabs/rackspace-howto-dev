@@ -2,10 +2,10 @@
 node_id: 1472
 title: Managing Your Server
 type: article
-created_date: '2012-07-19 05:08:45'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 19:3038'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-19'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,26 +13,26 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
+
 
 Once you have learned how to [Create a new Cloud
-Server](http://www.rackspace.com/knowledge_center/index.php/Creating_a_Cloud_Server),
+Server](/howto/getting-started-with-cloud-servers-0),
 you may use several of our tools that allow control over your server.
 
 -   [Reboot
-    Server](http://www.rackspace.com/knowledge_center/article/managing-your-server-3-reboot-your-server-0)
+    Server](/howto/reboot-your-server)
 -   [Rebuild
-    Server](http://www.rackspace.com/knowledge_center/article/managing-your-server-5-rebuild-a-cloud-server)
+    Server](/howto/rebuild-a-cloud-server)
 -   [Resize
-    Server](http://www.rackspace.com/knowledge_center/article/managing-your-server-6-resizing-your-server-0)
+    Server](/howto/managing-your-server-resizing-standard-and-general-purpose-servers)
     (resize Standard Cloud Servers up or down and General Purpose
     Servers only up)
 -   [Reset
-    Password](http://www.rackspace.com/knowledge_center/article/managing-your-server-7-reset-your-server-password-0)
+    Password](/howto/reset-your-server-password)
 -   [Delete
-    Server](http://www.rackspace.com/knowledge_center/article/managing-your-server-8-deleting-your-server-0)
+    Server](/howto/deleting-your-server)
 
 To access these tools, begin by clicking on the hyperlinked name of your
 server under the **Cloud Servers** section to take you to the **Cloud
@@ -42,10 +42,10 @@ screen.
 
 ![](http://c765420.r20.cf2.rackcdn.com/22_CloudServersnew.png)
 
- 
+
 
 ### Next section
 
 [Start a Console
-session](http://www.rackspace.com/knowledge_center/article/managing-your-server-start-a-console-session)
+session](/howto/start-a-console-session)
 

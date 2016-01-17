@@ -2,10 +2,10 @@
 node_id: 1512
 title: Managing My Server
 type: article
-created_date: '2012-07-24 00:39:48'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:2547'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -19,47 +19,47 @@ Two types of servers can be listed on the Cloud Servers page in the control pane
 - Next Generation Cloud Servers powered by OpenStack.
 - First Generation Cloud Servers, our legacy Cloud Server offering.
 
-For a comparison of the features of First and Next Generation Cloud Servers, see [Next-Generation Cloud Migration Considerations and Options](http://www.rackspace.com/knowledge_center/article/next-generation-cloud-servers-migration-considerations-and-options).
+For a comparison of the features of First and Next Generation Cloud Servers, see [Next-Generation Cloud Migration Considerations and Options](/howto/next-generation-cloud-servers-migration-considerations-and-options).
 
 You can identify First Generation Cloud Servers in the control panel by the blue asterisk that follows the server name.
 
-<img alt="First Generation Cloud Server" height="169" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/First_Generation_Server.png" title="" width="219" border="1" /> 
+<img alt="First Generation Cloud Server" height="169" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/First_Generation_Server.png" title="" width="219" border="1" />
 
-You can also filter your servers by type. 
+You can also filter your servers by type.
 
-<img alt="" height="408" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Server%20Type%20Filter.png" title="" width="177" border="1" /> 
+<img alt="" height="408" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Server%20Type%20Filter.png" title="" width="177" border="1" />
 
 ## Accessing server management tasks
 
-You can use the gear menu or the Actions menu to perform management operations on your server. 
+You can use the gear menu or the Actions menu to perform management operations on your server.
 
 ### Gear menu
 
 When you open the Cloud Control Panel or click **Servers** at the top of the page, you see a list of your servers. To the left of each server name is a gear icon. Click the icon to view a menu of the operations that you can perform on your server.
 
-<img alt="Actions Cog" height="371" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Actions%20Cog%20Expanded_0.png" title="" width="169" border="1" /> 
+<img alt="Actions Cog" height="371" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Actions%20Cog%20Expanded_0.png" title="" width="169" border="1" />
 
 ### Actions menu
 
-If you click on a server name, the Server Details page appears. The Actions menu is in the upper-right corner of the page. This menu contains the same operations that are available in the gear menu. 
+If you click on a server name, the Server Details page appears. The Actions menu is in the upper-right corner of the page. This menu contains the same operations that are available in the gear menu.
 
-<img alt="Actions Menu" height="253" src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Actions%20Menu.png" title="" width="585" border="1" /> 
+<img alt="Actions Menu" height="253" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Actions%20Menu.png" title="" width="585" border="1" />
 
 ## Performing server management tasks
 
-You can use the gear menu or the Actions menu to perform the following server management tasks. 
+You can use the gear menu or the Actions menu to perform the following server management tasks.
 
 ### Identify Your Server
 
-You can rename your server or add tags (descriptive labels) to it: 
+You can rename your server or add tags (descriptive labels) to it:
 
 - Click **Rename** to change the server name.
-- Click **Add Tag** to add new tags or remove existing tags.  For more information on tags, see [Using Tags](http://www.rackspace.com/knowledge_center/article/using-cloud-servers-tags).
-   
+- Click **Add Tag** to add new tags or remove existing tags.  For more information on tags, see [Using Tags](/howto/using-cloud-servers-tags).
+
 
 ### Image and recover your server
 
-You can create an image of a server or rebuild a server from a previously saved image: 
+You can create an image of a server or rebuild a server from a previously saved image:
 
 - Click **Create Image** to create a snapshot image of your server.
 - Click **Schedule Image** to create manual or scheduled images from your running servers.
@@ -68,7 +68,7 @@ You can create an image of a server or rebuild a server from a previously saved 
 
 ### Manage your server
 
-You can perform the following essential management tasks without logging directly into your server: 
+You can perform the following essential management tasks without logging directly into your server:
 
 - Click **Connect Via Console** to open Linux shell window or Windows command prompt window so that you can issue commands directly on your server.
 - Click **Reboot** to restart the server.
@@ -83,13 +83,13 @@ You can perform the following essential management tasks without logging directl
 On the Server Details page for a particular server, items that are instantly configurable have links to the right of them.
 
 <img src="/knowledge_center/sites/default/files/field/image/1512NewImage-1.png" width="369" height="275" alt="" border="1"  />
-  
+
 For example, next to the **System Image** field, you can click **Rebuild** to rebuild your server from a default Rackspace image or a previously saved image.  You specify the required information in the popup dialog box and then click **Rebuild Server**.
 
 <img src="/knowledge_center/sites/default/files/field/image/1512NewImage-2.png" width="465" height="268" alt="" border="1"  />
 
 ### Related Information
 
-[Learn More About Cloud Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers)
+[Learn More About Cloud Servers](/howto/learn-more-about-cloud-servers)
 
 <p>&nbsp;</p>

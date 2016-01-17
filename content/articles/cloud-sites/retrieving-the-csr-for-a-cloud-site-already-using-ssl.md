@@ -2,10 +2,10 @@
 node_id: 4402
 title: Retrieve the CSR for a site already using SSL
 type: article
-created_date: '2014-11-10 15:29:20'
-created_by: thomas.hester
-last_modified_date: '2015-03-05 14:5922'
-last_modified_by: rose.contreras
+created_date: '2014-11-10'
+created_by: Thomas Hester
+last_modified_date: '2015-03-05'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: markdown_w_tinymce
 ---
@@ -28,9 +28,9 @@ Follow the steps in this article to retrieve a previously generated certificate 
 
 **Note:** If you have not yet generated a CSR, the following articles will guide you in generating a new CSR through the Cloud Control Panel:
 
-- [Create a CSR in the Cloud Control Panel](http://www.rackspace.com/knowledge_center/article/create-a-csr-in-the-cloud-control-panel)
+- [Create a CSR in the Cloud Control Panel](/howto/create-a-csr-in-the-cloud-control-panel)
 
-- [Getting started with Cloud Sites: Configuring SSL on your website](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
+- [Getting started with Cloud Sites: Configuring SSL on your website](/howto/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
 
 
 <a id="requirements"> </a>
@@ -38,7 +38,7 @@ Follow the steps in this article to retrieve a previously generated certificate 
 
 Before you can retrieve your previously generated CSR, verify that you have accomplished the following tasks:
 
-- You have installed SSL on your site. 
+- You have installed SSL on your site.
 
 - You have generated your CSR through the [Cloud Control Panel](https://csrgenerator.rackspace.com/). Doing so ensures that your CSR is stored. If you did not generate your current CSR through the Cloud Control Panel and instead had one made directly through support, then you must create a new one by contacting Cloud Sites support at 1 855 348 9060 in the US and 1 210 581 0401 internationally.
 
@@ -59,7 +59,7 @@ When you have completed the required tasks, follow these steps to retrieve your 
 
 5.	You will see the **View CSR** link in the control panel.
 
-    <img alt="" height="167" src="/knowledge_center/sites/default/files/field/image/view_csr.png" width="600" border="1" />
+    <img alt="" height="167" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/view_csr.png" width="600" border="1" />
 
 <a id="RetrievingtheoldCSRforasiteusingSSL-TipsWarnings"></a>
 ## Tips

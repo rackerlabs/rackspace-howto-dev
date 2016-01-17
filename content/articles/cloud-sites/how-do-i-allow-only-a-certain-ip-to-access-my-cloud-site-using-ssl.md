@@ -2,10 +2,10 @@
 node_id: 585
 title: Allow a specific IP address to access your Cloud Sites site by using SSL
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-07-23 17:5910'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-07-23'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -17,7 +17,7 @@ In Cloud Sites, the requesting IP address coming into a server is the IP
 address of our load balancing server instead of the visitor's IP
 address. This means that limiting access by IP address through
 **.htaccess** file becomes problematic. To solve this problem, we
-provide an environment variable called **HTTP:X-Forwarded-For**that
+provide an environment variable called **HTTP:X-Forwarded-For** that
 includes the visitor's IP address.
 
 In the .htaccess file that contains your rules, insert the following

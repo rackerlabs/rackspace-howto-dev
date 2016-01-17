@@ -2,25 +2,25 @@
 node_id: 3726
 title: Transfer your registered domain from Click and Name to another registrar
 type: article
-created_date: '2013-10-11 14:28:08'
-created_by: luis.garcia
-last_modified_date: '2016-01-11 15:5537'
-last_modified_by: Nate.Archer
+created_date: '2013-10-11'
+created_by: Luis Garcia
+last_modified_date: '2016-01-11'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
 
 Because domain transfer processes can vary, the process outlined in this
 document is meant to serve as a general guideline. It applies only to
-customers who have either *registered*or *transferred*their domains
+customers who have either *registered* or *transferred* their domains
 through the Cloud Sites Control Panel.
 
 Terms and definitions
 ---------------------
 
--   **Losing registrar**: The registrar from which the domain is being
-    transferred. In this case, Click and Name (Cloud Sites Registrar) is
-    the losing registrar.
+-   **Losing registrar**: The registrar from which the domain is
+    being transferred. In this case, Click and Name (Cloud
+    Sites Registrar) is the losing registrar.
 -   **Winning registrar**: The registrar that is requesting the domain
     transfer (for example, Name.com, Network Solutions, or GoDaddy).
 
@@ -40,18 +40,19 @@ code). To obtain the code, follow these steps:
 
 1.  Log in to the [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com).
-2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
-3.  Click the domain for which you want to obtain the authorization
-    code.
-4.  Click the **DNS**tab.
+2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
+3.  Click the domain for which you want to obtain the
+    authorization code.
+4.  Click the **DNS** tab.
 5.  Under **Domain Registration**, click **Retrieve Domain Authcode**.
 
-![](/knowledge_center/sites/default/files/field/image/DNS_Tabblur.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DNS_Tabblur.png){width="854"
+height="356"}
 
 **Note:** If the domain is either an alias or has been removed from the
 control panel, contact Rackspace Support. Support can send an automated
 email with the authorization code, if the email address in the WHOIS
-record is valid. 
+record is valid.
 
 Provide the authorization code to the winning registrar
 -------------------------------------------------------

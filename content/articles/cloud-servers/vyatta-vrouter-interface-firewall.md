@@ -2,10 +2,10 @@
 node_id: 4234
 title: 'Vyatta vRouter: Configure an interface firewall'
 type: article
-created_date: '2014-09-11 16:20:49'
-created_by: sameer.satyam
-last_modified_date: '2016-01-14 20:5105'
-last_modified_by: rose.coste
+created_date: '2014-09-11'
+created_by: Sameer Satyam
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: full_html
 ---
@@ -129,7 +129,7 @@ local firewall to the interface.
 The following configuration examples will guide you in verifying the
 firewall configuration.
 
-    show firewall name 
+    show firewall name
     show firewall name  statistics
     show firewall name  counters
 

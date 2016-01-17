@@ -2,10 +2,10 @@
 node_id: 1550
 title: What is a Container in Cloud Files?
 type: frequently_asked_question
-created_date: '2012-07-24 20:59:16'
-created_by: test_editor
-last_modified_date: '2014-05-22 16:3245'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2014-05-22'
+last_modified_by: Rose Contreras
 product: Cloud Files
 body_format: tinymce
 ---

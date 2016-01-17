@@ -2,10 +2,10 @@
 node_id: 4218
 title: Rackspace account invoice
 type: article
-created_date: '2014-09-01 17:36:24'
-created_by: kenny.johnston
-last_modified_date: '2015-08-10 16:3604'
-last_modified_by: Nate.Archer
+created_date: '2014-09-01'
+created_by: Kenny Johnston
+last_modified_date: '2015-08-10'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,24 +13,25 @@ body_format: tinymce
 Your monthly Rackspace account invoice includes account and billing
 information, payment information, tax information, and summaries of your
 service, promotions, and discounts. This article provides a detailed
-description of each page and field in your PDF or CSV invoice.<br>
-  
+description of each page and field in your PDF or CSV invoice.
+
 
 Recent changes
 --------------
 
 The invoice format has been improved. The information on your invoice is
 now better summarized to eliminate an excessively long invoice. Your
-invoice now also provides a **Service Summary**.<br>
-  
+invoice now also provides a **Service Summary**.
+
 
 Billing and account information
 -------------------------------
 
 The first page of your invoice contains a detailed overview of your
-account and billing information. 
+account and billing information.
 
-![](/knowledge_center/sites/default/files/field/image/832-2.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-2.png){width="416"
+height="128"}
 
 ### Account summary
 
@@ -54,9 +55,10 @@ following information:
 -   **Remit Section** (if applicable) - Please detach and send with your
     payment
 
-![](/knowledge_center/sites/default/files/field/image/832-2a.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-2a.png){width="688"
+height="136"}
 
- 
+
 -
 
 Service summary
@@ -80,7 +82,8 @@ and other charges, and is organized as follows:
 -   **Total Charges** &ndash; The sum of the net product charge and the taxes
     for a product
 
-![](/knowledge_center/sites/default/files/field/image/832-3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-3.png){width="684"
+height="591"}
 
 Although most of the service summary items are self-explanatory, there
 are two services that warrant additional description:
@@ -91,7 +94,7 @@ are two services that warrant additional description:
 -   **Cloud Bandwidth** - The Cloud Bandwidth service line includes both
     Public and CDN Bandwidth
 
-###  
+###
 
 ### Adjustment summary
 
@@ -111,8 +114,8 @@ occurred during the billing period.
 -   **Total Amount** &ndash; The sum of Net Amount and Taxes for an individual
     adjustment
 
-![](/knowledge_center/sites/default/files/field/image/832-3a.png) 
-------------------------------------------------------------------
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-3a.png){width="757" height="154"}
+--------------------------------------------------------------------------------------------
 
 Promotion and discount summary
 ------------------------------
@@ -125,9 +128,10 @@ discounts for the billing period.
 -   **Net Discount** - The total of all the promotions and discounts
     applied to your bill
 
-![](/knowledge_center/sites/default/files/field/image/832-5.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-5.png){width="724"
+height="281"}
 
- 
+
 -
 
 Tax summary
@@ -136,7 +140,8 @@ Tax summary
 The **Tax Description** explains, in detail, the taxes being applied to
 your bill.
 
-![](/knowledge_center/sites/default/files/field/image/taxsummary.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/taxsummary.png){width="731"
+height="198"}
 
 Goods and services tax
 ----------------------
@@ -145,12 +150,14 @@ The following pages apply only if you are assessed a Goods and Services
 Tax (GST). They show the aggregate product charges broken down into
 taxable (T) and non-taxable charges for the given billing period.
 
-![](/knowledge_center/sites/default/files/field/image/832-6a.png)<br>
-  
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-6a.png){width="731"
+height="288"}
 
-![](/knowledge_center/sites/default/files/field/image/832-8.png)
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/832-8.png){width="730"
+height="343"}
+
+
 
 Invoice Details Document (CSV)
 ------------------------------
@@ -168,7 +175,7 @@ your charges in three different views. For example:
 -   To see charges summarized across the billing cycle related to a
     given data center, you can create a PivotTable on the DC\_ID column
 
-###  
+###
 
 ### CSV column description
 
@@ -176,8 +183,8 @@ your charges in three different views. For example:
 -   **BILL\_NO** - Invoice number
 -   **BILL\_START\_DATE** - Start date of the billing cycle
 -   **BILL\_END\_DATE** - End date of the billing cycle
--   **SERVICE\_TYPE** - Service or product name (for Tax it will display
-    ACCOUNT)
+-   **SERVICE\_TYPE** - Service or product name (for Tax it will
+    display ACCOUNT)
 -   **EVENT\_TYPE** - Sub-type for each service or product
 -   **EVENT\_START\_DATE** - Start date and time of the usage or
     activity
@@ -199,5 +206,5 @@ your charges in three different views. For example:
 -   **ATTRIBUTE 2** - Resource attribute; for Cloud Servers, this
     provides the Option Name
 
- 
+
 

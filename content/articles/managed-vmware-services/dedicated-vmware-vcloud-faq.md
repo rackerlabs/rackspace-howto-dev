@@ -2,10 +2,10 @@
 node_id: 4512
 title: Dedicated VMware vCloud FAQ
 type: article
-created_date: '2015-01-29 16:10:32'
+created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2015-02-12 17:5954'
-last_modified_by: jered.heeschen
+last_modified_date: '2015-02-12'
+last_modified_by: Jered Heeschen
 product: Managed VMware Services
 body_format: markdown_w_tinymce
 ---
@@ -177,7 +177,7 @@ Any supported vApps deployed from the Rackspace-provided catalog are monitored b
 
 #### Is monitoring provided for my unmanaged VMs? {#monitoring-unmanaged}
 
-No.  Rackspace does not provide monitoring for VMs designated as unmanaged.  For more information, see [Dedicated VMware vCloud support coverage](/knowledge_center/node/4511).
+No.  Rackspace does not provide monitoring for VMs designated as unmanaged.  For more information, see [Dedicated VMware vCloud support coverage](/howto/dedicated-vmware-vcloud-support-coverage).
 
 #### How do I know if Dedicated vCloud resources are low? {#monitoring-resources}
 

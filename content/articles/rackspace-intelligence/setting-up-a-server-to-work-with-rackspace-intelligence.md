@@ -2,10 +2,10 @@
 node_id: 4735
 title: Set up a server to work with Rackspace Intelligence
 type: article
-created_date: '2015-07-12 23:20:35'
-created_by: rose.coste
-last_modified_date: '2016-01-04 16:3019'
-last_modified_by: Nate.Archer
+created_date: '2015-07-12'
+created_by: Rose Coste
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -22,42 +22,41 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
 2.  Create a server as you normally would, or select an existing server.
     For instructions on creating a server, see [Rackspace Cloud
     Essentials - Creating A Cloud
-    Server](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-creating-a-cloud-server).
-3.  List the server's details by selecting **Servers \> Cloud Servers**
-    and then clicking the server&rsquo;s name.<br>
-      <br>
+    Server](/howto/getting-started-with-cloud-servers-0).
+3.  List the server's details by selecting **Servers &gt; Cloud
+    Servers** and then clicking the server&rsquo;s name.
 
-    ![](/knowledge_center/sites/default/files/field/image/servers-list-details-.png)<br>
-      
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/servers-list-details-.png)
+
 4.  On the server details page, scroll down to the **Monitoring
     Data** section and click the **View Server's Metrics in Rackspace
     Intelligence** link.
 5.  Install the monitoring agent on the server by clicking **Get
-    Started**.<br>
+    Started**.
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-notset.png){width="672"
+    height="409"}
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-notset.png)<br>
-      
 6.  On the **Monitoring Agent Installation** page, choose the platform
     installed on your server and choose the type of installation
     instructions that you prefer. The following example shows the **Step
     By Step** instructions for a Linux platform. Follow the instructions
-    to install, configure, and start the agent.<br>
-     <br>
+    to install, configure, and start the agent.
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-install-agent-linux_0.png)<br>
-     The instructions require you to send commands to the server. The
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-install-agent-linux_0.png){width="649"
+    height="527"}
+    The instructions require you to send commands to the server. The
     commands you must send to the server vary depending on what kind of
     server you want to monitor. Similarly, detailed procedures for
     sending commands to a server vary depending on what kind of
     workstation you use when you communicate with the server. For
     example, [Connecting to Linux from Mac OS X by using
-    Terminal](https://admin.rackspace.com/knowledge_center/article/connecting-to-linux-from-mac-os-x-by-using-terminal) shows
+    Terminal](/howto/connecting-to-linux-from-mac-os-x-by-using-terminal) shows
     how to install and use the Terminal utility on a Mac OS X
     workstation communicating with a Linux server; if you are working in
     a different configuration, adapt these instructions to match your
-    environment<br>
-     <br>
-     **Note: **No matter what kind of server you want to monitor, you
+    environment
+
+    **Note: **No matter what kind of server you want to monitor, you
     must know the server's IP address and password before you can log in
     and begin installing the monitoring agent there. The server's IP
     address is provided when you use the Cloud Control Panel to list
@@ -65,32 +64,32 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     but you are able to log in to the Cloud Control Panel for your
     account, you can change the server's password as described at [How
     to change your server root/admin password from your
-    account](https://admin.rackspace.com/knowledge_center/video/how-to-change-your-server-rootadmin-password-from-your-account).<br>
-     <br>
-     In the terminal session where you entered the installation
-    commands, you can confirm that the installation succeeded if you see
-    the message Your Agent configuration is now complete. After this,
-    with the agent running, if you look again at the **Monitoring Agent
-    Installation** page you can see that the agent connection status
-    is **Connected**.<br>
-     <br>
+    account](/howto/how-to-change-your-server-rootadmin-password-from-your-account).
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-agent-connected.png)
+    In the terminal session where you entered the installation commands,
+    you can confirm that the installation succeeded if you see the
+    message Your Agent configuration is now complete. After this, with
+    the agent running, if you look again at the **Monitoring Agent
+    Installation** page you can see that the agent connection status
+    is **Connected**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-agent-connected.png){width="359"
+    height="154"}
 7.  Click **Setup Checks** to configure at least one check. In the
     following example, two CPU-related checks are configured, monitoring
-    CPU usage and average CPU load.<br>
-     <br>
+    CPU usage and average CPU load.
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-check-selection.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-check-selection.png){width="637"
+    height="555"}
 8.  Click **Apply Checks** to activate the checks that you defined. When
     the checks are activated, their status is reported on the entities
-    details page for the server, in the **Monitoring Checks** section.<br>
-     <br>
+    details page for the server, in the **Monitoring Checks** section.
 
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-monitoring-checks-2set.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-checks-2set.png){width="779"
+    height="202"}
 9.  To make the checks useful, define alarms that identify boundaries
     between OK, Warning, and Critical statuses. For instructions,
     see [Working with alarms in Rackspace
-    Intelligence](https://www.rackspace.com/knowledge_center/article/working-with-alarms).
+    Intelligence](/howto/working-with-alarms).
 
 

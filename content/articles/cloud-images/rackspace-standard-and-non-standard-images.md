@@ -2,10 +2,10 @@
 node_id: 3852
 title: Rackspace Standard and Non-Standard Images
 type: article
-created_date: '2014-01-14 23:44:15'
-created_by: cloud.images
-last_modified_date: '2016-01-12 16:0550'
-last_modified_by: stephanie.fillmon
+created_date: '2014-01-14'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 body_format: markdown_w_tinymce
 ---
@@ -37,4 +37,4 @@ body_format: markdown_w_tinymce
 
 <h2>How Can I Determine if an Image is Standard or Non-Standard?</h2>
 
-<p>Please see <a href="https://www.rackspace.com/knowledge_center/article/identifying-rackspace-standard-images">Identifying Rackspace Standard Images</a>.</p>
+<p>Please see <a href="/howto/identifying-rackspace-standard-images">Identifying Rackspace Standard Images</a>.</p>

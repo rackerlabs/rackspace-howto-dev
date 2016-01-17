@@ -2,10 +2,10 @@
 node_id: 1821
 title: 'Cloud Files: How to articles & other resources'
 type: article
-created_date: '2012-08-01 02:33:15'
+created_date: '2012-08-01'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-06 19:2101'
-last_modified_by: catherine.richardson
+last_modified_date: '2016-01-06'
+last_modified_by: Catherine Richardson
 product: Cloud Files
 body_format: tinymce
 ---
@@ -20,7 +20,7 @@ Documentation
 -   [Release
     Notes](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-release-notes)
 -   [General Getting Started
-    Guide](https://www.rackspace.com/knowledge_center/getting-started/cloud-files)
+    Guide](/howto/cloud-files)
 
 SDKs
 ----
@@ -40,19 +40,19 @@ Popular How To Articles from the Rackspace Knowledge Center
 -----------------------------------------------------------
 
 The Rackspace [Knowledge
-Center](http://www.rackspace.com/knowledge_center/) houses "how-to"
+Center](/howto/) houses "how-to"
 articles, getting started guides, code samples, security best practices
-and hundreds of tips for getting the most out of your Cloud Files. 
+and hundreds of tips for getting the most out of your Cloud Files.
 Check out these popular articles:
 
 -   [Rackspace Cloud Files
-    FAQs](http://www.rackspace.com/knowledge_center/product-faq/cloud-files)
+    FAQs](/howto/product-faq/cloud-files)
 -   [Best Practices Using Cloud
-    Files](https://www.rackspace.com/knowledge_center/article/best-practices-for-using-cloud-files)
+    Files](/howto/best-practices-for-using-cloud-files)
 -   [Mounting Rackspace Cloud Files to Linux Using
-    CloudFuse](http://www.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+    CloudFuse](/howto/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
 -   [Viewing Your API
-    Key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+    Key](/howto/article/view-and-reset-your-api-key)
 
 Popular Technical Articles from the Rackspace Blog
 --------------------------------------------------
@@ -90,8 +90,8 @@ Cloud Files, check out:
 -   [Swift Developer Documentation](http://swift.openstack.org)
 -   [Install
     Instructions](http://wiki.openstack.org/InstallInstructions/Swift)
--   [Configuring Object Storage
-    (Swift)](http://wiki.openstack.org/ConfigureSwift)
+-   [Configuring Object
+    Storage (Swift)](http://wiki.openstack.org/ConfigureSwift)
 -   [How to Contribute Code](http://wiki.openstack.org/HowToContribute)
 
 

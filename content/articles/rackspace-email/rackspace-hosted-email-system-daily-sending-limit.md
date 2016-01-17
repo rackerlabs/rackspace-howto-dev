@@ -2,10 +2,10 @@
 node_id: 4556
 title: Rackspace hosted email system - daily sending limit
 type: article
-created_date: '2015-02-10 20:58:02'
-created_by: sterling.mcneill
-last_modified_date: '2016-01-12 16:0339'
-last_modified_by: stephanie.fillmon
+created_date: '2015-02-10'
+created_by: Sterling Mcneill
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---

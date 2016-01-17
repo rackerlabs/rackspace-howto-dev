@@ -2,33 +2,33 @@
 node_id: 1373
 title: Getting Started With Rackspace Monitoring CLI
 type: article
-created_date: '2012-04-04 17:00:22'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 18:2201'
-last_modified_by: stephanie.fillmon
+created_date: '2012-04-04'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Monitoring
 body_format: tinymce
 ---
 
 Cloud Monitoring is an API driven cloud service built for infrastructure
 monitoring.  It offers a simple yet powerful feature-set, allowing
-extreme flexibility in configuration and execution.  
+extreme flexibility in configuration and execution.
 
 This guide is intended to be a supplement to the [official technical
 documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/),
-not a replacement for it. 
+not a replacement for it.
 
 Getting started with an API-based monitoring system can be daunting when
 trying to rapidly scale infrastructure. To get your feet wet with the
 API, we have created ***Raxmon***, a Command Line Interface (CLI) tool.
 
-* * * * *
+------------------------------------------------------------------------
 
-Step One: Setup 
+Step One: Setup
 ----------------
 
-#### <br>
- Install RaxmonCLI
+####
+Install RaxmonCLI
 
 To avoid repeating the raxmon installation on each new Cloud Server,
 install it on your workstation and not your server.
@@ -37,7 +37,7 @@ install it on your workstation and not your server.
 installed before proceeding.
 
 The Rackspace-Monitoring CLI tool is available here as open source:
-[https://github.com/racker/rackspace-monitoring-cli](https://github.com/racker/rackspace-monitoring-cli)
+<https://github.com/racker/rackspace-monitoring-cli>
 
 The utility can be installed via
 [PIP](http://www.pip-installer.org/en/latest/installing.html):
@@ -47,19 +47,19 @@ The utility can be installed via
 #### Getting your API Key
 
 You will need to [get your API
-key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+key](/howto/view-and-reset-your-api-key)
 in order to be able to administer Cloud Monitoring.
 
 Once you've obtained your API key, go to your Home folder (you can use
 **cd \~/**) and create a file named **.raxrc**, and add the following
-text: 
+text:
 
     [credentials]
     username=MY_USERNAME
     api_key=MY_API_KEY
 
 An additional section is required in order to make use of the UK
-authentication endpoint (the default URL points to the US endpoint): 
+authentication endpoint (the default URL points to the US endpoint):
 
     [auth_api]
     url=https://lon.identity.api.rackspacecloud.com/v2.0/tokens
@@ -71,7 +71,7 @@ Now run raxmon to see that you can connect properly.
 If the output includes a Trackback of most recent calls,
 Congratulations! It works!
 
-* * * * *
+------------------------------------------------------------------------
 
 Step Two: Getting Familar
 -------------------------
@@ -100,17 +100,17 @@ raxmon.
 You will need to update multiple items in one go, so let's review how to
 input lists and dictionaries in the terminal:
 
-> **List**<br>
->  Use a comma delimited string. For example:<br>
->  raxmon-checks-create --monitoring-zones=mzA,mzB,mzC
+> **List**
+> Use a comma delimited string. For example:
+> raxmon-checks-create --monitoring-zones=mzA,mzB,mzC
 >
-> **Dictionary**<br>
->  Use a comma delimited string of key=value pairs. For example<br>
->  raxmon-entities-create --metadata="location=server room,tag=foobar"
+> **Dictionary**
+> Use a comma delimited string of key=value pairs. For example
+> raxmon-entities-create --metadata="location=server room,tag=foobar"
 
-* * * * *
+------------------------------------------------------------------------
 
-Step Three: Monitoring an HTTP Page 
+Step Three: Monitoring an HTTP Page
 ------------------------------------
 
 #### Create an Entity
@@ -118,9 +118,10 @@ Step Three: Monitoring an HTTP Page
 [Entities](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-entities.html)
 are Cloud Monitoring's name for server-like objects. Anything that has
 an IP address is defined as an entity. Currently Cloud Monitoring has no
-concept of our environment, so lets create an entity. The
-option  --ip-addresses="alias=10.10.10.10" specifies the IP address and
-an alias for the target. You can have multiple targets per node.
+concept of our environment, so lets create an entity. <span>The
+option </span><span> </span><span>--ip-addresses="alias=10.10.10.10"</span><span> </span><span>specifies
+the IP address and an alias for the target. You can have multiple
+targets per node.</span>
 
     $ raxmon-entities-create --label my_first_server --ip-addresses="alias=10.10.10.10"
 
@@ -131,13 +132,13 @@ Now we need to create a
 . To create a check we'll need a few things.
 
 -   Check Type - In this case,
-    [remote.HTTP](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-check-types.html#section-check-types-remote.http). 
+    [remote.HTTP](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-check-types.html#section-check-types-remote.http).
 -   A Label
 -   Entity ID - In this case 'entZ4JPIfA' as returned in the example
     above
 -   [Monitoring
-    Zone](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
-    - The data center we're going to monitor from
+    Zone](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html) -
+    The data center we're going to monitor from
 -   Target Alias - A key in the entity's 'ip\_addresses' hash used to
     resolve this check to an IP address.
 -   Any check specific details.
@@ -173,7 +174,7 @@ Lets create an e-mail address notification type now.
 You also need to create a [notification
 plan](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html).
 This allows cloud monitoring to emit different types of alerts on
-different states. 
+different states.
 
     $ raxmon-notification-plans-create --label notification_plan_1 --critical-state ntYgMnnipC --warning-state ntYgMnnipC --ok-state ntYgMnnipC
     Resource created. ID: npzwIZKV6o
@@ -198,7 +199,7 @@ look at the details:
     {'criteria': u'if (metric["code"] regex "^[23]..$") { return OK } return WARNING', 'driver': <rackspace_monitoring.drivers.rackspace.RackspaceMonitoringDriver object at 0x101d66710>, 'entity_id': u'entZ4JPIfA', 'id': u'albuOSvLjf', 'notification_plan_id': u'npzwIZKV6o','type': u'remote.http'}
 
 Now anything but a 2XX or 3XX will return an error and you will be
-notified via e-mail. 
+notified via e-mail.
 
 Conclusion
 ----------
@@ -209,5 +210,5 @@ your infrastructure.  For more information, be sure to consult the
 [Development Guide for Cloud
 Monitoring](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html)
 as well as the [Cloud Monitoring
-FAQ](http://www.rackspace.com/knowledge_center/product-faq/cloud-monitoring).
+FAQ](/howto/rackspace-monitoring-faq).
 

@@ -2,13 +2,29 @@
 node_id: 1251
 title: 'Rackspace Cloud Sites Essentials: Cloud Sites Technologies'
 type: article
-created_date: '2011-11-11 16:15:08'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 16:4209'
-last_modified_by: kyle.laffoon
+created_date: '2011-11-11'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
+
+<div
+class="field field-name-body field-type-text-with-summary field-label-hidden">
+
+<div class="field-items">
+
+<div class="field-item even">
+
+<div class="content">
+
+<div
+class="field field-name-body field-type-text-with-summary field-label-hidden">
+
+<div class="field-items">
+
+<div class="field-item even">
 
 **Note**: This article is written for our [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com/). You can get to it from the
@@ -19,17 +35,17 @@ selecting **Cloud Sites Control Panel** or by navigating to
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
+
 
 By now, we've learned that Cloud Sites is and easy to use, load-and-go
 web hosting platform that uses the computing power of the cloud to keep
 your websites online. In this article, we're going to take a look at the
 different technologies behind this computing power running your
-website(s). 
+website(s).
 
- 
+
 
 **Run Linux or Windows**
 
@@ -40,7 +56,7 @@ optmiized especially for Windows, and every Linux-based page is served
 from clusters built and optimized especially for Linux. We use advanced
 Load-Balancing technologies to automatically detect the type of
 technology you are running and route each request to the proper pool of
-servers. 
+servers.
 
 This is a great example of the power of cloud computing, since you no
 longer have to make a hosting choice between Linux and Windows. Both
@@ -50,30 +66,28 @@ need site by site.
 Let's take a look in the [Cloud Sites Control
 Panel](http://manage.rackspacecloud.com) to see where you can specify
 which technology you would like your website(s) to operate with and how
-to change this technology. 
+to change this technology.
 
 Once you've logged into the Cloud Sites Control Panel, navigate to
-**Hosting-\>Cloud Sites**
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/hosting.png)
+**Hosting-&gt;Cloud Sites**
+![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/hosting.png){width="187"
+height="246"}
 
 Click on the domain name you would like to make technology changes to
-
 Click on the Features Tab
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/featurestab.png)
+![](https://admin.rackspace.comhttps://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/featurestab.png){width="497"
+height="107"}
 
 Click on the **Change Technology** button in the **Technologies**
 section
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/technologies_1.png)
+![](https://admin.rackspace.comhttps://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/technologies_1.png){width="600"
+height="179"}
 
 Choose the **Site Technology** you would like your website to use.
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/change-technology_1.png)
+![](https://admin.rackspace.comhttps://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-technology_1.png){width="600"
+height="158"}
 
 Click **Change Technology** to complete your change.
-
 **NOTE: ***Please note that when changing your site's default
 technology, this changes the IP for the site. If we are managing your
 DNS, the changes will update automatically, but can take up to two hours
@@ -85,35 +99,47 @@ current Website features for your website. You can get to this once you
 have logged in to the Cloud Sites Cloud Control Panel fairly quickly for
 each of your domains.
 
-Navigate to **Hosting-\>Cloud Sites**
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/hosting.png)
+Navigate to **Hosting-&gt;Cloud Sites**
+![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/hosting.png){width="187"
+height="246"}
 
 Click on the **domain name** for which you would like to review its
 website features.
-
-Once it opens, you will be on  the **General Settings tab**by default.
-
+Once it opens, you will be on  the **General Settings tab** by default.
 Scroll down to **Website Features**.
-
-![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/web_features.png)
+![](https://admin.rackspace.com/knowledge_center/sites/default/files/field/image/web_features.png){width="600"
+height="181"}
 
 What you have here is a breakdown of your website's current features
 including its currently enabled technologies, its number of
 databases and whether the Raw Logs are enabled or disabled. (Raw Logs
-are disabled by default). 
+are disabled by default).
 
- 
+
 
 This concludes this article regarding Cloud Sites Web Technologies.
 We've learned how to change your websites default technology and how to
 view a summary of your websites features quickly. The next article will
 discuss two of the most commonly talked about features on the Rackspace
 Cloud Sites, managing your website through .htaccess (Linux) and/or
-web.config (IIS, ASP/.NET). 
+web.config (IIS, ASP/.NET).
 
 ### Next section
 
 [Tips and Tricks for .htaccess and
-web.config](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
+web.config](/howto/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 

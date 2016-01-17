@@ -2,10 +2,10 @@
 node_id: 4130
 title: Managed Cloud Service Levels FAQ
 type: article
-created_date: '2014-07-14 18:56:05'
+created_date: '2014-07-14'
 created_by: David Hendler
-last_modified_date: '2016-01-11 22:2701'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Managed Operations
 body_format: tinymce
 ---
@@ -13,7 +13,7 @@ body_format: tinymce
 Get quick answers to common questions about Rackspace Managed Cloud
 service levels.
 
--   [What are the Rackspace service levels?](#service_levels)
+-   []()[What are the Rackspace service levels?](#service_levels)
 -   [What is the DevOps Automation Service?](#devops)
 -   [Can new public-cloud customers choose other service levels besides
     Managed Cloud?](#choose)
@@ -26,24 +26,24 @@ service levels.
 -   [What support guarantees do customers receive with Managed
     Cloud?](#guarantees)
 
- 
 
-### What are the Rackspace service levels?
+
+### []()What are the Rackspace service levels?
 
 The Rackspace public cloud has two service levels in public cloud:
 Managed Infrastructure and Managed Operations.
 
 -   Managed Infrastructure: Rackspace manages the data center,
-    infrastructure, and the virtualization layers. 
+    infrastructure, and the virtualization layers.
 -   Managed Operations: Rackspace manages the data center,
     infrastructure, virtualization layers, operating system, database
     layer, and web server.
 
 [back to top](#top)
 
- 
 
-### What is the DevOps Automation service?
+
+### []()What is the DevOps Automation service?
 
 The DevOps Automation service provides [managed support for DevOps
 tools](http://www.rackspace.com/devops/automation-service/) that help
@@ -66,9 +66,9 @@ infrastructure in the future. Here are some cases for this service:
 
 [back to top](#top)
 
- 
 
-### Can new public-cloud customers choose other service levels?
+
+### []()Can new public-cloud customers choose other service levels?
 
 No, new customers can choose *only* between Managed Infrastructure or
 Managed Operations. Customers with the previous pricing model can stay
@@ -78,9 +78,9 @@ Infrastructure or Managed Operations service levesl.
 
 [back to top](#top)
 
- 
 
-### What happens with customers who are on the old Infrastructure service level?
+
+### []()What happens with customers who are on the old Infrastructure service level?
 
 Customers who have the Infrastructure Service Level will be
 grandfathered into their current pricing plan and will continue to
@@ -89,9 +89,9 @@ we&rsquo;re announcing.
 
 [back to top](#top)
 
- 
 
-### Is Rackspace improving the support experience?
+
+### []()Is Rackspace improving the support experience?
 
 Yes, we are always looking at ways to improve our support. We expect
 that our pricing changes will cause some new customers who don&rsquo;t value
@@ -101,15 +101,15 @@ to pay for it.
 
 [back to top](#top)
 
- 
 
-### What do I get with *Fanatical Support&reg;*?
+
+### []()What do I get with *Fanatical Support&reg;*?
 
 There are five foundational components to Fanatical Support:
 
--   **Architecture advisors**: Move beyond one-size-fits-all reference
-    architectures. Let our experts tailor your workload architecture to
-    your exact needs.
+-   **Architecture advisors**: Move beyond one-size-fits-all
+    reference architectures. Let our experts tailor your workload
+    architecture to your exact needs.
 -   **Security guidance**: Let us apply our cloud expertise to your
     workload to help identify potential vulnerabilities and enable more
     secure deployments.
@@ -123,9 +123,9 @@ There are five foundational components to Fanatical Support:
 
 [back to top](#top)
 
- 
 
-### Do Managed Operations customers get additional services?
+
+### []()Do Managed Operations customers get additional services?
 
 Yes. Customers at the Managed Operations service level can take
 advantage of the following additional services:
@@ -138,9 +138,9 @@ advantage of the following additional services:
 
 [back to top](#top)
 
- 
 
-### What support guarantees do customers receive with Managed Cloud?
+
+### []()What support guarantees do customers receive with Managed Cloud?
 
 **Support SLA**: A service level agreement (SLA) that covers support
 circumstances within our control.
@@ -148,7 +148,7 @@ circumstances within our control.
 -   Credit percentage: Standard rate is 5 percent per every 30 minutes
     of downtime, up to 100 percent of cloud monthly spend.
 
- 
+
 
 **2x SLA Accelerator Credit percentage**: For Managed Operations service
 level customers, we will double the credit percentage of all applicable
@@ -159,10 +159,10 @@ SLA violations.
     downtime, Managed Operations will be 10 percent per 30 minutes.
 -   This 2x accelerator also applies to Support SLA credit payouts.
 
- 
+
 
 **10x SLA Accelerator Credit Payout for Planned Events for Managed
-Operations.**Limited availability and subject to certain restrictions.
+Operations.** Limited availability and subject to certain restrictions.
 
 -   Managed Operations customers who, in preparation for a high traffic
     event, undergo a Rackspace led architecture review and meet the
@@ -172,10 +172,10 @@ Operations.**Limited availability and subject to certain restrictions.
     institutes, than the customer signs a program agreement.
 -   Credit payout: 10x up to 200 percent of monthly spend (up to one
     event per month). For example, if the standard payout is 5 percent
-    per 30 minutes, it will become 50 percent per 30 minutes up to 200
-    percent.       
+    per 30 minutes, it will become 50 percent per 30 minutes up to
+    200 percent.
 
 [back to top](#top)
 
- 
+
 

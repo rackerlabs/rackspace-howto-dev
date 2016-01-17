@@ -2,16 +2,16 @@
 node_id: 1494
 title: Products I Can Load Balance
 type: article
-created_date: '2012-07-24 00:11:58'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-05 14:4027'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-05'
+last_modified_by: Cat Lookabaugh
 product: Cloud Load Balancers
 body_format: tinymce
 ---
 
-What Can You Load Balance?
---------------------------
+<span>What Can You Load Balance?</span>
+---------------------------------------
 
 The answer is simple. Anything with an IP address that is accessible on
 the Internet. This means you're not only limited to load balancing your
@@ -25,10 +25,10 @@ The following illustrations shows a load balancer with both Rackspace
 Cloud Servers and an external node:
 
 ![Products I Can Load
-Balance](http://c691244.r44.cf2.rackcdn.com/What%20Can%20I%20Load%20Balance.png) 
+Balance](http://c691244.r44.cf2.rackcdn.com/What%20Can%20I%20Load%20Balance.png)
 
-Adding Nodes
-------------
+<span>Adding Nodes</span>
+-------------------------
 
 When you create a load balancer using the Control Panel you'll see that
 Add Nodes is part of the configuration process:
@@ -45,5 +45,5 @@ We recommend creating the load balancer in the region that is closest to
 your external nodes.
 
 For more information, see [Load Balancing Public Vs. Private
-IPs](http://www.rackspace.com/knowledge_center/article/load-balancing-internal-ips-in-the-same-region). 
+IPs](/howto/load-balancing-internal-ips-in-the-same-region).
 

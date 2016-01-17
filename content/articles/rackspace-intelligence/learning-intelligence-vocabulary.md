@@ -2,10 +2,10 @@
 node_id: 4764
 title: Learning the Rackspace Intelligence vocabulary
 type: article
-created_date: '2015-07-28 16:23:22'
-created_by: constanze.kratel
-last_modified_date: '2015-08-18 16:2554'
-last_modified_by: kyle.laffoon
+created_date: '2015-07-28'
+created_by: Constanze Kratel
+last_modified_date: '2015-08-18'
+last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -13,32 +13,32 @@ body_format: tinymce
 To tell Rackspace Intelligence which aspects of your configuration to
 monitor for you, you define your objectives in the following terms:
 
--   *Entities* to be monitored<br>
-     For example, you can define a cloud server as an entity.<br>
-      
--   *Checks* that focus on a particular aspect of an entity's behavior<br>
-     For example, a check can monitor a cloud server's RAM usage.<br>
-      
--   *Alarms* that define the limits of the entity's behavior<br>
-     For example, alarm criteria identify whether RAM usage is in one of
-    the following states: OK, WARNING, or CRITICAL.<br>
-      
+-   *Entities* to be monitored
+    For example, you can define a cloud server as an entity.
+
+-   *Checks* that focus on a particular aspect of an entity's behavior
+    For example, a check can monitor a cloud server's RAM usage.
+
+-   *Alarms* that define the limits of the entity's behavior
+    For example, alarm criteria identify whether RAM usage is in one of
+    the following states: OK, WARNING, or CRITICAL.
+
 -   *Alerts* that announce when a monitored entity has triggered an
-    alarm<br>
-     For example, an alert reports that RAM usage has reached the
-    CRITICAL level.<br>
-      
--   *Notification plans* that define how to communicate alerts<br>
-     For example, a notification plan requests notification of the help
-    desk and the on-call system administrator. <br>
-      
+    alarm
+    For example, an alert reports that RAM usage has reached the
+    CRITICAL level.
+
+-   *Notification plans* that define how to communicate alerts
+    For example, a notification plan requests notification of the help
+    desk and the on-call system administrator.
+
 -   *Notifications* that define the contact information used in
-    notification plans<br>
-     For example, notifications to the on-call system administrator are
-    sent as text messages to a specific telephone number. <br>
-      
--   *Visualizations* that present data meaningfully<br>
-     For example, a RAM usage graph shows growth leading up to the
+    notification plans
+    For example, notifications to the on-call system administrator are
+    sent as text messages to a specific telephone number.
+
+-   *Visualizations* that present data meaningfully
+    For example, a RAM usage graph shows growth leading up to the
     triggered alarm.
 
 [&ldquo;Single Pane of Glass&rdquo; for Your IT

@@ -2,9 +2,9 @@
 node_id: 4912
 title: Scheduled Backups for Cloud Databases
 type: article
-created_date: '2015-11-02 15:11:46'
+created_date: '2015-11-02'
 created_by: Rackspace Support
-last_modified_date: '2015-11-02 16:3408'
+last_modified_date: '2015-11-02'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
 body_format: tinymce
@@ -41,20 +41,20 @@ How to schedule backups
 Scheduled backups can be enabled through the API using the following API
 operation:
 
-[https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/\#create-scheduled-backup](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#create-scheduled-backup)
+<https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#create-scheduled-backup>
 
 The following information needs to be provided:
 
-  Name                      Description                                                                                 Required
-  ------------------------- ------------------------------------------------------------------------------------------- ----------
-  action                    The scheduled action: backup.                                                               Yes
-  day\_of\_week             The day of the week. Sunday is 0.                                                           Yes
-  hour                      The hour of the day. Midnight is 0.                                                         Yes
-  minute                    The minute of the hour.                                                                     Yes
-  instance\_id              The database instanceId to back up.                                                         Yes
-  source\_id                The database instanceId or haId to back up.                                                 No
-  source\_type              The type of backup for the given source\_id (&lsquo;instance&rsquo; or &lsquo;ha&rsquo;, defaults to &lsquo;instance&rsquo;).   No
-  full\_backup\_retention   The number of full automated backups to keep.                                               No
+| Name                    | Description                                                                               | Required |
+|-------------------------|-------------------------------------------------------------------------------------------|----------|
+| action                  | The scheduled action: backup.                                                             | Yes      |
+| day\_of\_week           | The day of the week. Sunday is 0.                                                         | Yes      |
+| hour                    | The hour of the day. Midnight is 0.                                                       | Yes      |
+| minute                  | The minute of the hour.                                                                   | Yes      |
+| instance\_id            | The database instanceId to back up.                                                       | Yes      |
+| source\_id              | The database instanceId or haId to back up.                                               | No       |
+| source\_type            | The type of backup for the given source\_id (&lsquo;instance&rsquo; or &lsquo;ha&rsquo;, defaults to &lsquo;instance&rsquo;). | No       |
+| full\_backup\_retention | The number of full automated backups to keep.                                             | No       |
 
 The `day_of_week` attribute specifies the day on which a full backup
 will be made. After that day, the schedule will automatically run daily
@@ -101,7 +101,7 @@ Scheduled backups can be managed and restored in the same manner as on
 demand backups. Details on how to manage backups can be found in the
 following Knowledge Center article:
 
-[http://www.rackspace.com/knowledge\_center/article/managing-backups-for-cloud-databases](http://www.rackspace.com/knowledge_center/article/managing-backups-for-cloud-databases)
+</howto/managing-backups-for-cloud-databases>
 
 Cloud Databases automated backups API
 -------------------------------------
@@ -109,25 +109,25 @@ Cloud Databases automated backups API
 For more details about the following API calls see the full API
 documentation at:
 
-[https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/\#create-scheduled-backup](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#create-scheduled-backup)
+[<span>https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/\#create-scheduled-backup</span>](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#create-scheduled-backup)
 
 The following table gives a brief overview of the automated backups API
 calls.
 
-  API                     Method   URI                                             Description
-  ----------------------- -------- ----------------------------------------------- ----------------------------------------------------------------------------------------
-  Create schedule         POST     /{version}/{accountId}/schedules                Creates a schedule for running a backup periodically for a single instance or HA group
-  Show schedule details   GET      /{version}/{accountId}/schedules/{scheduleId}   Shows details of the specified schedule.
-  List all schedules      GET      /{version}/{accountId}/schedules                Lists all the schedules for the specified account.
-  Update schedule         PUT      /{version}/{accountId}/schedules/{scheduleId}   Updates the specified schedule.
-  Delete schedule         DELETE   /{version}/{accountId}/schedules/{scheduleId}   Deletes the specified schedule.
+| API                   | Method | URI                                           | Description                                                                            |
+|-----------------------|--------|-----------------------------------------------|----------------------------------------------------------------------------------------|
+| Create schedule       | POST   | /{version}/{accountId}/schedules              | Creates a schedule for running a backup periodically for a single instance or HA group |
+| Show schedule details | GET    | /{version}/{accountId}/schedules/{scheduleId} | Shows details of the specified schedule.                                               |
+| List all schedules    | GET    | /{version}/{accountId}/schedules              | Lists all the schedules for the specified account.                                     |
+| Update schedule       | PUT    | /{version}/{accountId}/schedules/{scheduleId} | Updates the specified schedule.                                                        |
+| Delete schedule       | DELETE | /{version}/{accountId}/schedules/{scheduleId} | Deletes the specified schedule.                                                        |
 
 Notes:
 
 -   The `instance_id` field is deprecated. It can still be used when
     providing a single instance id when creating a schedule. HA instance
-    schedules should provide `source_id` with the `source_type` set to
-    &ldquo;ha&rdquo;.
+    schedules should provide `source_id` with the `source_type` set
+    to &ldquo;ha&rdquo;.
 
 ### Limitations
 
@@ -143,5 +143,5 @@ Notes:
 For more information on backups with Cloud Databases, please see the
 general backup Knowledge Center Article:
 
-[http://www.rackspace.com/knowledge\_center/article/managing-backups-for-cloud-databases](http://www.rackspace.com/knowledge_center/article/managing-backups-for-cloud-databases)
+</howto/managing-backups-for-cloud-databases>
 

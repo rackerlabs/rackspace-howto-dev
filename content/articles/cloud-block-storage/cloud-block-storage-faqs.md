@@ -2,10 +2,10 @@
 node_id: 5022
 title: Cloud Block Storage - FAQ
 type: article
-created_date: '2015-12-10 16:34:57'
+created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 22:4601'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Block Storage
 body_format: tinymce
 ---
@@ -60,10 +60,10 @@ Cloud Block Storage is an excellent option for you if you:
 -   Would like to add additional storage to your servers without paying
     for additional compute resources
 
- 
 
-<br>
- You might not be a good fit for the Cloud Block Storage service if you:
+
+
+You might not be a good fit for the Cloud Block Storage service if you:
 
 -   Are leveraging First Generation Cloud Servers
 -   Are not comfortable with low-level system administration tasks, such
@@ -72,7 +72,7 @@ Cloud Block Storage is an excellent option for you if you:
     device
 -   Are looking for a fully managed storage or database solution
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -124,7 +124,7 @@ by either of two methods:
 -   Cloning from a source volume to a new larger volume, or
 -   Creating a new larger volume from an existing volume snapshot.
 
- 
+
 
 Alternatively, in order to move to a larger or smaller volume size, you
 might need to create a new volume of the desired size and then copy your
@@ -152,7 +152,7 @@ system commands available via their Cloud Server operating system:
 -   Windows Explorer: Right-click on drive icon and select "Properties,"
     and note Capacity, Free space, and Used space
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -180,16 +180,16 @@ standard volumes, SSD volumes, and snapshots.
 
 Prices vary by region and are detailed on the following pages:
 
--   [USA Pricing for Cloud Block Storage (DFW, ORD, and IAD
-    regions)](http://www.rackspace.com/cloud/block-storage/pricing/)
--   [UK Pricing for Cloud Block Storage (LON
-    region)](http://www.rackspace.co.uk/cloud/block-storage/pricing)
--   [Australia Pricing for Cloud Block Storage (SYD
-    region)](http://www.rackspace.com.au/cloud/block-storage/pricing)
--   [Hong Kong Pricing for Cloud Block Storage (HKG
-    region)](http://www.rackspace.com.hk/cloud/block-storage/pricing)
+-   [USA Pricing for Cloud Block Storage (DFW, ORD, and
+    IAD regions)](http://www.rackspace.com/cloud/block-storage/pricing/)
+-   [UK Pricing for Cloud Block Storage
+    (LON region)](http://www.rackspace.co.uk/cloud/block-storage/pricing)
+-   [Australia Pricing for Cloud Block Storage
+    (SYD region)](http://www.rackspace.com.au/cloud/block-storage/pricing)
+-   [Hong Kong Pricing for Cloud Block Storage
+    (HKG region)](http://www.rackspace.com.hk/cloud/block-storage/pricing)
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -205,7 +205,7 @@ application is time sensitive, consider using volume cloning.
 
 For instructions on volume cloning, see [How to Create a Clone of a
 Cloud Block Storage
-Volume](https://admin.rackspace.com/knowledge_center/article/how-to-create-a-clone-of-a-cloud-block-storage-volume).
+Volume](/howto/create-a-clone-of-a-cloud-block-storage-volume).
 
 ^[back\\ to\\ top](#top)^
 
@@ -217,12 +217,11 @@ switch volume types by using the cloning or snapshot method outlined in
 the following articles:
 
 -   [How to Create a Clone of a Cloud Block Storage
-    Volume](https://admin.rackspace.com/knowledge_center/article/how-to-create-a-clone-of-a-cloud-block-storage-volume)
-    .
+    Volume](/howto/create-a-clone-of-a-cloud-block-storage-volume) .
 -   [Create and Use Cloud Block Storage
-    Snapshots](https://admin.rackspace.com/knowledge_center/article/create-and-use-cloud-block-storage-snapshots)
+    Snapshots](/howto/create-and-use-cloud-block-storage-snapshots)
 
- 
+
 
 ^[back\\ to\\ top](#top)^
 
@@ -232,7 +231,7 @@ You can create a copy of a Cloud Block Storage volume using two methods:
 
 -   **Cloning Method** (Volume-to-volume)
 
- 
+
 
 This is direct copy from your existing volume to a new blank volume on
 another storage node. Volume data is copied directly between CBS storage
@@ -242,7 +241,7 @@ them immediately after creation.
 
 -   **Snapshot Method** (Volume-to-Snapshot-to-Volume)
 
- 
+
 
 This method requires the intermediate step of creating a volume
 snapshot. You first create snapshot from your existing volume, which
@@ -265,8 +264,8 @@ rename command to update the display-name of the volume.
 ### My snapshot seems to be taking a long time. Is it possible to check the status of a snapshot?
 
 Yes. Using the API, you can query the progress of a snapshot creation
-using the snapshot-show command.<br>
- The percentage complete value will show up under the
+using the snapshot-show command.
+The percentage complete value will show up under the
 os-extended-snapshot-attributes:progress property.
 
 ^[back\\ to\\ top](#top)^
@@ -300,14 +299,14 @@ Cloud Servers is ephemeral and exists only as long as the Cloud Server
 exists. When the server is deleted, so is its local storage.
 
 We recommend that you [unmount and detach Cloud Block
-Storage](http://www.rackspace.com/knowledge_center/article/detach-and-delete-cloud-block-storage-volumes)
+Storage](/howto/detach-and-delete-cloud-block-storage-volumes)
 volumes before deleting the server.
 
 ^[back\\ to\\ top](#top)^
 
-###   {align="center"}
+###   {#section align="center"}
 
-* * * * *
+------------------------------------------------------------------------
 
 Security
 --------

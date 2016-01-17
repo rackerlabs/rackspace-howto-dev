@@ -2,10 +2,10 @@
 node_id: 4529
 title: Cloud Sites migration to ASP.NET 3.5.1 SP1 and 4.5.2 FAQ
 type: article
-created_date: '2015-01-30 21:41:04'
-created_by: thomas.hester
-last_modified_date: '2015-02-17 16:2001'
-last_modified_by: jered.heeschen
+created_date: '2015-01-30'
+created_by: Thomas Hester
+last_modified_date: '2015-02-17'
+last_modified_by: Jered Heeschen
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -27,7 +27,7 @@ What is not changing?
 Everything else is staying the same. No changes to DNS, site bindings,
 FTP, or CIFS are required. However, you should proactively test and
 upgrade applications for compatibility with the new versions of the .NET
-Framework. For more information, see the following question. 
+Framework. For more information, see the following question.
 
 How does this change affect me?
 -------------------------------
@@ -38,8 +38,8 @@ those changes in your application, if necessary.
 
 ### .NET 4.x documentation
 
--   [Migration Guide to the .NET Framework
-    4.](http://msdn.microsoft.com/en-us/library/ff657133(v=vs.110).aspx)
+-   [Migration Guide to the .NET
+    Framework 4.](http://msdn.microsoft.com/en-us/library/ff657133(v=vs.110).aspx)
 -   [Moving to the .NET Framework
     4.5.2](http://blogs.msdn.com/b/dotnet/archive/2014/08/07/moving-to-the-net-framework-4-5-2.aspx)
 -   [Application Compatibility in the .NET Framework

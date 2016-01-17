@@ -2,17 +2,17 @@
 node_id: 1180
 title: Utilize Cloud Sites in an E-commerce Solution
 type: article
-created_date: '2011-08-10 21:34:36'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 20:2653'
-last_modified_by: stephanie.fillmon
+created_date: '2011-08-10'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
 
 ### Building an e-commerce solution using Cloud Sites
 
-Cloud Sites is designed to provide an elastic web-hosting environment. 
+Cloud Sites is designed to provide an elastic web-hosting environment.
 This capability can allow an e-commerce merchant to properly handle the
 high-volume shopping season without carrying extra infrastructure
 throughout the remainder of the year.  Cloud Sites is not currently
@@ -21,7 +21,7 @@ information, all credit card information must be handled on the payment
 gateway.
 
 ![Cloud Sites
-Ecommerce](http://c691243.r43.cf2.rackcdn.com/sitesecommerce.png)
+Ecommerce](http://c691243.r43.cf2.rackcdn.com/sitesecommerce.png){.MsoNormal}
 
 In the Cloud Sites infrastructure you can have the entire e-commerce
 environment up until the point the customer provides credit card
@@ -51,7 +51,7 @@ transaction, return status of the payment request.
 between the e-commerce site and the payment gateway provider:**
 
 ![Cloud Sites Ecommerce Sample
-Configuration](http://c691243.r43.cf2.rackcdn.com/sampleconfig.png)
+Configuration](http://c691243.r43.cf2.rackcdn.com/sampleconfig.png){.MsoNormal}
 
 ### Cloud Sites vulnerability scan policy
 
@@ -59,5 +59,5 @@ Since Cloud Sites is designed to be a multi-tenant cloud hosting
 solution, scans for PCI compliance or vulnerability are not allowed per
 the Cloud Sites acceptable use policy.
 
-[http://www.rackspace.com/cloud/legal/aup/](http://www.rackspace.com/cloud/legal/aup/)
+<http://www.rackspace.com/cloud/legal/aup/>
 

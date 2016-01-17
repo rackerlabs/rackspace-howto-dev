@@ -2,10 +2,10 @@
 node_id: 4384
 title: Rackspace Email password recovery FAQ
 type: article
-created_date: '2014-10-24 18:14:12'
-created_by: beau.bailey
-last_modified_date: '2015-02-10 15:4042'
-last_modified_by: jered.heeschen
+created_date: '2014-10-24'
+created_by: Beau Bailey
+last_modified_date: '2015-02-10'
+last_modified_by: Jered Heeschen
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -26,10 +26,12 @@ How do I change my Rackspace Email password if I&rsquo;ve forgotten it?
 
 On your Webmail login page, click the **Forgot Password** link to change
 your password. A one-time passcode will be sent in a text message to the
-mobile phone number on file for your account.<br>
- ![](/knowledge_center/sites/default/files/field/image/1481.2b.png)<br>
- You use this passcode to change your password.<br>
- ![](/knowledge_center/sites/default/files/field/image/1481.1b.png)
+mobile phone number on file for your account.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1481.2b.png){width="303"
+height="199"}
+You use this passcode to change your password.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1481.1b.png){width="414"
+height="273"}
 
 Why is Webmail asking for my mobile phone number?
 -------------------------------------------------

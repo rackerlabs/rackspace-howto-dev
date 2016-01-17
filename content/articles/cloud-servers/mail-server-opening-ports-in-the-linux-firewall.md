@@ -2,10 +2,10 @@
 node_id: 71
 title: Open ports in the Linux firewall to access POP and IMAP mail servers
 type: article
-created_date: '2011-03-08 18:21:56'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 15:4534'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-08'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -34,13 +34,13 @@ Following from the Cloud Server setup, we need to edit the iptables.test.rules f
 
     <pre>
     # Allows SMTP access
-    -A INPUT -p tcp --dport 25 -j ACCEPT 
-    
-    # Allows pop and pops connections 
+    -A INPUT -p tcp --dport 25 -j ACCEPT
+
+    # Allows pop and pops connections
     -A INPUT -p tcp --dport 110 -j ACCEPT
     -A INPUT -p tcp --dport 995 -j ACCEPT
-    
-    # Allows imap and imaps connections 
+
+    # Allows imap and imaps connections
     -A INPUT -p tcp --dport 143 -j ACCEPT
     -A INPUT -p tcp --dport 993 -j ACCEPT
     </pre>
@@ -56,11 +56,11 @@ Following from the Cloud Server setup, we need to edit the iptables.test.rules f
     This information should be in the output from the command:
 
     <pre>
-    ACCEPT     all  --  anywhere             anywhere            state RELATED,ESTABLISHED 
-    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:smtp 
-    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3 
-    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3s 
-    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:imap2 
+    ACCEPT     all  --  anywhere             anywhere            state RELATED,ESTABLISHED
+    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:smtp
+    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3
+    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3s
+    ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:imap2
     ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:imaps
     </pre>
 

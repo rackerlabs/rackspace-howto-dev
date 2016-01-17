@@ -2,10 +2,10 @@
 node_id: 4165
 title: Brocade Vyatta vRouter configuration guide
 type: article
-created_date: '2014-07-30 22:49:50'
-created_by: sameer.satyam
-last_modified_date: '2016-01-06 15:1955'
-last_modified_by: kyle.laffoon
+created_date: '2014-07-30'
+created_by: Sameer Satyam
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -17,18 +17,18 @@ You read more about the Brocade Vyatta vRouter at the [Rackspace virtual cloud s
 The following articles provide detailed configurations for the Brocade Vyatta vrouter:
 
 [Brocade Vyatta vRouter configuration guide](https://www.rackspace.com/knowledge_center/node/4165/revisions/20104/view)
-			
-[Configuring a policy-based IPsec site-to-site VPN on a Vyatta vRouter](https://www.rackspace.com/knowledge_center/article/configuring-a-policy-based-ipsec-site-to-site-vpn-on-a-vyatta-vrouter)
 
-[Configure a Site-to-site VPN using the Vyatta Network Appliance](https://www.rackspace.com/knowledge_center/article/configure-a-site-to-site-vpn-using-the-vyatta-network-appliance)
+[Configuring a policy-based IPsec site-to-site VPN on a Vyatta vRouter](/howto/vyatta-ipsec-site-to-site-vpn)
 
-[Creating NAT rules for Vyatta vRouter](https://www.rackspace.com/knowledge_center/article/creating-nat-rules-for-vyatta-vrouter)
+[Configure a Site-to-site VPN using the Vyatta Network Appliance](/howto/configure-a-site-to-site-vpn-using-the-vyatta-network-appliance)
 
-[Vyatta vRouter: Allow an IP address to access the vRouter via SSH](https://www.rackspace.com/knowledge_center/article/vyatta-vrouter-allow-an-ip-address-to-access-the-vrouter-via-ssh)
+[Creating NAT rules for Vyatta vRouter](/howto/creating-nat-rules-for-vyatta-vrouter)
 
-[Vyatta vRouter: Adding a local administrative user](https://www.rackspace.com/knowledge_center/article/vyatta-vrouter-adding-a-local-administrative-user)
+[Vyatta vRouter: Allow an IP address to access the vRouter via SSH](/howto/vyatta-vrouter-allow-an-ip-address-to-access-the-vrouter-via-ssh)
 
-[Vyatta vRouter: Configure an interface firewall](https://www.rackspace.com/knowledge_center/article/vyatta-vrouter-configure-an-interface-firewall)
+[Vyatta vRouter: Adding a local administrative user](/howto/vyatta-vrouter-add-a-local-administrative-user)
+
+[Vyatta vRouter: Configure an interface firewall](/howto/vyatta-vrouter-configure-an-interface-firewall)
 
 The following table shows the list of Rackspace supported features on the Brocade Vyatta vRouter
 
@@ -203,7 +203,7 @@ The following table shows the list of Rackspace supported features on the Brocad
 		<td><strong>Supported</strong></td>
 	</tr>
 	<tr>
-		<td>Log shipping to log correlation device within customer's account</td>	
+		<td>Log shipping to log correlation device within customer's account</td>
 		<td><strong>Supported</strong></td>
 	</tr>
 	<tr>

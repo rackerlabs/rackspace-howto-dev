@@ -2,9 +2,9 @@
 node_id: 3649
 title: Available checks for Rackspace Monitoring
 type: article
-created_date: '2013-08-19 19:40:45'
+created_date: '2013-08-19'
 created_by: Jim Culbreath
-last_modified_date: '2016-01-05 21:2255'
+last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Monitoring
 body_format: tinymce
@@ -15,11 +15,11 @@ your servers. This article explains each check and the options that you
 can set for them. For information about setting up one of these
 monitoring checks, see [Create a monitoring check using the Cloud
 Control
-Panel](https://www.rackspace.com/knowledge_center/article/creating-a-monitoring-check-using-the-cloud-control-panel).
+Panel](/howto/creating-a-monitoring-check-using-the-cloud-control-panel).
 
-For API check definitions, see the Rackspace Monitoring Developer's
-guide [Available Check Types and
-Fields.](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/check-type-reference) 
+<span>For API check definitions, see the Rackspace Monitoring
+Developer's guide </span>[Available Check Types and
+Fields.](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/check-type-reference)<span> </span>
 
 Monitoring checks and alarms are located in the Cloud Servers section of
 the control panel.
@@ -37,134 +37,107 @@ The following table lists each check that you can create for your
 server, the options that you can set when you create the check, and the
 options that you can edit for an existing check.
 
-+--------------------------+--------------------------+--------------------------+
-| Check type               | Creation options         | Editing options          |
-+==========================+==========================+==========================+
-| HTTP                     | Set the URL and specific | -   **Target**: Specify  |
-|                          | body context with        |     the server IP        |
-|                          | regular expressions      |     address or a         |
-|                          | allowed.                 |     specified host name. |
-|                          |                          | -   **Details**: Specify |
-|                          | Click **Advanced         |     the exact URL and    |
-|                          | Options** to open a      |     body content to use. |
-|                          | **Body Match** text box  |     Regular expressions  |
-|                          | in which you can provide |     are allowed.         |
-|                          | more syntax.             | -   **Parameters**: Set  |
-|                          |                          |     how often the check  |
-|                          |                          |     runs and when it     |
-|                          |                          |     will time out, as    |
-|                          |                          |     well as which        |
-|                          |                          |     regions the check    |
-|                          |                          |     uses.                |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm                |
-+--------------------------+--------------------------+--------------------------+
-| TCP                      | Set the port that you    | -   **Target**: Specify  |
-|                          | want to monitor for      |     the server IP        |
-|                          | connectivity. Provide    |     address or a         |
-|                          | the following            |     specified host name. |
-|                          | information:             | -   **Details**: Specify |
-|                          |                          |     the port to be       |
-|                          | -   Port number          |     monitored.           |
-|                          | -   Target IP address or | -   **Parameters**: Set  |
-|                          |     target host name     |     ho often the check   |
-|                          |                          |     will run and when it |
-|                          |                          |     will time out.       |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Ala**rm to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| Ping                     | Select a name and select | -   **Details**: Set the |
-|                          | the target type as IP    |     packet count and the |
-|                          | address or host name.    |     number of packets    |
-|                          |                          |     that are sent at one |
-|                          |                          |     time.                |
-|                          |                          | -   **Parameters**: Set  |
-|                          |                          |     how often the check  |
-|                          |                          |     runs and when it     |
-|                          |                          |     will time out, as    |
-|                          |                          |     well as which        |
-|                          |                          |     regions the check    |
-|                          |                          |     will use.            |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| Memory                   | There are no special     | -   **Parameters**: Set  |
-|                          | settings when creating a |     how often the check  |
-|                          | memory check.            |     will run and whei it |
-|                          |                          |     will time out.       |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| CPU                      | There are no special     | -   **Parameters**: Set  |
-|                          | settings with creating a |     how often the check  |
-|                          | CPU check.               |     runs and when it     |
-|                          |                          |     will time out.       |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| Load Average             | There are no special     | -   **Parameters**: Set  |
-|                          | settings when creating a |     how often the check  |
-|                          | load balancer check.     |     runs and when it     |
-|                          |                          |     will time out.       |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| Filesystem               | Specify the disk for     | -   **Parameters**: Set  |
-|                          | which you want to        |     how often the check  |
-|                          | monitor space.           |     runs and when it     |
-|                          |                          |     will time out.       |
-|                          |                          | -   **Alarms**: Edit     |
-|                          |                          |     existing alarms or   |
-|                          |                          |     click **Create       |
-|                          |                          |     Alarm** to add an    |
-|                          |                          |     alarm.               |
-+--------------------------+--------------------------+--------------------------+
-| Network                  | -   Select which network | -   **Parameters**: Set  |
-|                          |     interface to use     |     how often the check  |
-|                          |     (typically eth0 or   |     runs and when it     |
-|                          |     eth1).               |     will time out.       |
-|                          | -   Set the receive rate | -   **Alarms**: Edit     |
-|                          |     alert for warning    |     existing alarms or   |
-|                          |     and critical states. |     click **Create       |
-|                          | -   Set the transmit     |     Alarm** to add an    |
-|                          |     rate alert for       |     alarm.               |
-|                          |     warning and critical |                          |
-|                          |     states. (For more    |                          |
-|                          |     information, see     |                          |
-|                          |     [Rackspace           |                          |
-|                          |     Monitoring Checks    |                          |
-|                          |     and                  |                          |
-|                          |     Alarms](https://www. |                          |
-|                          | rackspace.com/knowledge_ |                          |
-|                          | center/article/rackspace |                          |
-|                          | -cloud-monitoring-checks |                          |
-|                          | -and-alarms).)           |                          |
-+--------------------------+--------------------------+--------------------------+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Check type</th>
+<th align="left">Creation options</th>
+<th align="left">Editing options</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">HTTP</td>
+<td align="left"><p>Set the URL and specific body context with regular expressions allowed.</p>
+Click <strong>Advanced Options</strong> to open a <strong>Body Match</strong> text box in which you can provide more syntax.</td>
+<td align="left"><ul>
+<li><strong>Target</strong>: Specify the server IP address or a specified host name.</li>
+<li><strong>Details</strong>: Specify the exact URL and body content to use. Regular expressions are allowed.</li>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out, as well as which regions the check uses.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left">TCP</td>
+<td align="left"><p>Set the port that you want to monitor for connectivity. Provide the following information:</p>
+<ul>
+<li>Port number</li>
+<li>Target IP address or target host name</li>
+</ul></td>
+<td align="left"><ul>
+<li><strong>Target</strong>: Specify the server IP address or a specified host name.</li>
+<li><strong>Details</strong>: Specify the port to be monitored.</li>
+<li><strong>Parameters</strong>: Set ho often the check will run and when it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Ala</strong>rm to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left">Ping</td>
+<td align="left">Select a name and select the target type as IP address or host name.</td>
+<td align="left"><ul>
+<li><strong>Details</strong>: Set the packet count and the number of packets that are sent at one time.</li>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out, as well as which regions the check will use.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left">Memory</td>
+<td align="left">There are no special settings when creating a memory check.</td>
+<td align="left"><ul>
+<li><strong>Parameters</strong>: Set how often the check will run and whei it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left">CPU</td>
+<td align="left">There are no special settings with creating a CPU check.</td>
+<td align="left"><ul>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left">Load Average</td>
+<td align="left">There are no special settings when creating a load balancer check.</td>
+<td align="left"><ul>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left">Filesystem</td>
+<td align="left">Specify the disk for which you want to monitor space.</td>
+<td align="left"><ul>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td align="left">Network</td>
+<td align="left"><ul>
+<li>Select which network interface to use (typically eth0 or eth1).</li>
+<li>Set the receive rate alert for warning and critical states.</li>
+<li>Set the transmit rate alert for warning and critical states. (For more information, see <a href="/howto/rackspace-monitoring-checks-and-alarms">Rackspace Monitoring Checks and Alarms</a>.)</li>
+</ul></td>
+<td align="left"><ul>
+<li><strong>Parameters</strong>: Set how often the check runs and when it will time out.</li>
+<li><strong>Alarms</strong>: Edit existing alarms or click <strong>Create Alarm</strong> to add an alarm.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
- 
 
-Data graphs for monitoring********
-----------------------------------
 
- 
+Data graphs for monitoring ********
+-----------------------------------
+
+
 
 You can view graphical information about resource use on the server
 details page. In the **Monitoring Data** section of the page, you can
@@ -173,5 +146,6 @@ checks and does not require the monitoring agent to be installed. Use
 the drop-down menu under **Monitoring Data** to select the monitoring
 check you want to view.
 
-![](/knowledge_center/sites/default/files/field/image/Monitoring-Data.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Monitoring-Data.png){width="742"
+height="317"}
 

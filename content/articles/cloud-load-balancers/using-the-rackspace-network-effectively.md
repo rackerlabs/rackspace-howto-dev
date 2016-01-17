@@ -2,10 +2,10 @@
 node_id: 1528
 title: Using the Rackspace network effectively
 type: article
-created_date: '2012-07-24 00:55:31'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 20:3309'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -42,7 +42,7 @@ expecting external traffic to your Cloud Servers, you can create a
 firewall around them and reduce their exposure to outside threats. Note
 that Rackspace creates all new servers with basic security settings,
 however you should follow the instructions located in [Configuring Basic
-Security](http://www.rackspace.com/knowledge_center/article/configuring-basic-security-0)to
+Security](/howto/configuring-basic-security-0)to
 further protect your data.
 
 Finding the Rackspace IP Address
@@ -58,6 +58,6 @@ Here's an example of a Server Details page:
 
 ### Related Information
 
-[Learn More About Cloud Servers](http://www.rackspace.com/knowledge_center/article/learn-more-about-cloud-servers)
+[Learn More About Cloud Servers](/howto/learn-more-about-cloud-servers)
 ------------------------------------------------------------------------------------------------------------------
 

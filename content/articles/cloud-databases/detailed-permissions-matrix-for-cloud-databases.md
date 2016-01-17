@@ -2,10 +2,10 @@
 node_id: 3391
 title: Permissions matrix for Cloud Databases
 type: article
-created_date: '2013-04-10 16:06:40'
-created_by: renee.rendon
-last_modified_date: '2016-01-11 20:4513'
-last_modified_by: stephanie.fillmon
+created_date: '2013-04-10'
+created_by: Renee Rendon
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -17,17 +17,17 @@ corresponding RESTful API commands, and the roles that are supported.
 **[API Documentation](http://docs.rackspace.com/)**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](/howto/)**
 
 **[Cloud Databases Terminology](#Cloud%20Databases%20Terminology)**
 
-### **Updated July 1, 2015**
+### <span>**Updated July 1, 2015**</span>
 
 CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
 Method name
 
@@ -39,439 +39,520 @@ Creator
 
 Admin
 
- 
+
 
 ### VERSIONS
 
-List versions
+<span>List versions</span>
 
 GET /
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists information about all versions of the API.
+<span>Lists information about all versions of the API.</span>
 
-List version details
+<span>List version details</span>
 
 GET /{version}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Returns detailed information about the specified version of the API.
+<span>Returns detailed information about the specified version of the
+API.</span>
 
 ### DATABASE INSTANCES
 
-Create a database instance
+<span>Create a database instance</span>
 
-POST /instances
+<span>POST /instances</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new database instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List all database instances
+<span>Creates a new database instance.</span>
 
-GET /instances
+<span>List all database instances</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the status and information for all database instances.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Update a database instance
+<span>Lists the status and information for all database
+instances.</span>
 
-PUT /instances/{instanceId} 
+<span>Update a database instance</span>
 
- 
+PUT /instances/{instanceId}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Associates a specified database instance with the configuration group. 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List database instance status and details
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-GET /instances/{instanceId}
+Associates a specified database instance with the configuration group.
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>List database instance status and details</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances/{instanceId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists status and details for the specified database instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Delete a database instance
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-DELETE /instances/{instanceId}
+<span>Lists status and details for the specified database
+instance.</span>
 
- 
+<span>Delete a database instance</span>
 
- 
+<span>DELETE /instances/{instanceId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified database instance.
 
-Get the default configuration
 
-GET /instances/{instanceId}/configuration
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>Deletes the specified database instance.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>Get the default configuration</span>
+
+<span>GET /instances/{instanceId}/configuration</span>
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists the default MySQL configuration settings from the template that
 were applied to the specified instance.
 
-Enable the root user
+<span>Enable the root user</span>
 
-POST /instances/{instanceId}/root
+<span>POST /instances/{instanceId}/root</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Enables the root user for the specified database instance and returns
-the root password.
 
-List root-enabled status
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-GET /instances/{instanceId}/root
+<span>Enables the root user for the specified database instance and
+returns the root password.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>List root-enabled status</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances/{instanceId}/root</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Returns true if the root user is enabled for the specified database
-instance or false otherwise.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Returns true if the root user is enabled for the specified
+database instance or false otherwise.</span>
 
 ### DATABASE INSTANCE ACTIONS
 
-Restart an instance
+<span>Restart an instance</span>
 
-POST /instances/{instanceId}/action
+<span>POST /instances/{instanceId}/action</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Restarts the database service on the specified instance.
 
-Resize an instance
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-POST /instances/{instanceId}/action
+<span>Restarts the database service on the specified instance.</span>
 
- 
+<span>Resize an instance</span>
 
- 
+<span>POST /instances/{instanceId}/action</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Resizes the memory of the specified instance.
 
-Resize the instance volume
 
-POST /instances/{instanceId}/action
 
- 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
- 
+<span>Resizes the memory of the specified instance.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>Resize the instance volume</span>
 
-Resizes the volume attached to the instance.
+<span>POST /instances/{instanceId}/action</span>
+
+
+
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Resizes the volume attached to the instance.</span>
 
 ### DATABASES
 
-Create a database
+<span>Create a database</span>
 
-POST /instances/{instanceId}/databases
+<span>POST /instances/{instanceId}/databases</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new database within the specified instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List databases for an instance
+Creates a new database <span>within the specified instance.</span>
 
-GET /instances/{instanceId}/databases
+<span>List databases for an instance</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances/{instanceId}/databases</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists databases for the specified instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Delete a database
+<span>Lists databases for the specified instance.</span>
 
-DELETE /instances/{instanceId}/databases/{databaseName}
+<span>Delete a database</span>
 
- 
+<span>DELETE /instances/{instanceId}/databases/{databaseName}</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified database.
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes the specified database.</span>
 
 ### USERS
 
-Create  a user
+<span>Create  a user</span>
 
-POST /instances/{instanceId}/users
+<span>POST /instances/{instanceId}/users</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a user for the specified database instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List users a in database instance
+<span>Creates a user for the specified database instance.</span>
 
-GET /instances/{instanceId}/users
+<span>List users a in database instance</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances/{instanceId}/users</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the users in the specified database instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List a user
+<span>Lists the users in the specified database instance.</span>
 
-GET /instances/{instanceId}/users/{name}
+<span>List a user</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET /instances/{instanceId}/users/{name}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the specified user's name and a list of databases that the user
-can access.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Lists the specified user's name and a list of databases that the
+user can access.</span>
 
 List user access
 
-GET /instances/{instanceId}/users/{name}/databases
+<span>GET /instances/{instanceId}/users/{name}/databases</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists user access for the specified database instance.
 
 Grant user access
 
-PUT /instances/{instanceId}/users/{name}/databases
+<span>PUT /instances/{instanceId}/users/{name}/databases</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Grants access for the specified user to one or more databases for the
-specified instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Grants access for the specified user to one or more databases for
+the specified instance.</span>
 
 Delete user access
 
-DELETE /instances/{instanceId}/users/{name}/databases/{database}
+<span>DELETE
+/instances/{instanceId}/users/{name}/databases/{database}</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Removes access to the specified database for the specified user.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Removes access to the specified database for the specified
+user.</span>
 
 Delete a user
 
-DELETE /instances/{instanceId}/users/{name}
+<span>DELETE /instances/{instanceId}/users/{name}</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified user from the specified database instance.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes the specified user from the specified database
+instance.</span>
 
 Change user passwords
 
-PUT /instances/{instanceId}/users
+<span>PUT /instances/{instanceId}/users</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Changes the user passwords for the specified database instance.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Changes the user passwords for the specified database
+instance.</span>
 
 Modify user attributes
 
-PUT /instances/{instanceId}/users/{name}
+<span>PUT /instances/{instanceId}/users/{name}</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Modifies one or more of the following values for the specified user:
-name, password, or the host from which the user is allowed to connect to
-the database.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Modifies one or more of the following values for the specified
+user: name, password, or the host from which the user is allowed to
+connect to the database.</span>
 
 ### FLAVORS
 
 List flavors
 
-GET /flavors
+<span>GET /flavors</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists information for all available flavors.
+<span>Lists information for all available flavors.</span>
 
 List flavors by ID
 
-GET /flavors/{flavorId}
+<span>GET /flavors/{flavorId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists information about the specified flavor.
+<span>Lists information about the specified flavor.</span>
 
 List flavors for the datastore version
 
-GET /datastores/{datastoreType}/versions/{versionId}/flavors
+<span>GET
+/datastores/{datastoreType}/versions/{versionId}/flavors</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists flavors for a datastore version.
+<span>Lists flavors for a datastore version.</span>
 
 ### ON DEMAND BACKUPS
 
 **Note**: Any user calling the on demand backup operations for Cloud
 Databases must have access to Cloud Files.
 
-Create a backup
+<span>Create a backup</span>
 
-POST /backups
+<span>POST /backups</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new backup for a database instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Delete a backup
+<span>Creates a new backup for a database instance.</span>
 
-DELETE /backups/{backupId}
+<span>Delete a backup</span>
 
- 
+<span>DELETE </span><span>/backups/{backupId}</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified backup.
 
-List backups
 
-GET /backups
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>Deletes the specified backup.</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>List backups</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET </span><span>/backups</span>
 
-Lists all backups for all database instances.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List backup by ID
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-GET /backups/{backupId}
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>Lists all backups for all database instances.</span>
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>List backup by ID</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+<span>GET </span><span>/backups/{backupId}</span>
+
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists details about the specified backup.
 
-List backups for instance
+<span>List backups for instance</span>
 
-GET /instance/{instanceId}/backups
+<span>GET /instance/{instanceId}/backups</span>
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all backups for the specified instance.
+<span>Lists all backups for the specified instance.</span>
 
-Restore a backup
+<span>Restore a backup</span>
 
-POST /instances
+<span>POST /instances</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new database instance from a backup.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Creates a new database instance from a backup.</span>
 
 ### SCHEDULED BACKUPS
 
@@ -480,129 +561,156 @@ Databases must have access to Cloud Files.
 
 Create scheduled backup
 
-POST /{version}/{accountId}/schedules
+POST <span>/{version}/{accountId}/schedules</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a schedule for running a backup periodically.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List scheduled backups
+<span>Creates a schedule for running a backup periodically.</span>
 
-GET /{version}/{accountId}/schedules
+List <span>scheduled backups</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+GET <span>/{version}/{accountId}/schedules</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all scheduled backups for all database instances for an account.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-List the schedule for running a backup 
+<span>Lists all scheduled backups for all database instances for an
+account.</span>
 
-GET /{version}/{accountId}/schedules/{scheduleId}
+List the <span>schedule for running a backup </span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+GET <span>/{version}/{accountId}/schedules/{scheduleId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the specified schedule for running a backup.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Delete the schedule for running a backup
+<span>Lists the specified schedule for running a backup.</span>
 
-DELETE /{version}/{accountId}/schedules/{scheduleId}
+Delete the <span>schedule for running a backup</span>
 
- 
+DELETE <span>/{version}/{accountId}/schedules/{scheduleId}</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified schedule for running a backup.
+
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes the specified schedule for running a backup.</span>
 
 ### REPLICATION
 
 Create a replica
 
 **Note**: Because the process of creating a replica creates a
-backup, the<br>
- user calling the Create replica operation must have access to Cloud
+backup, the
+user calling the Create replica operation must have access to Cloud
 Files.
 
 POST /instances
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Creates a replica of the source instance.
 
 List all replicas and replica source database instances
 
-GET /instances
+<span>GET /</span><span>instances</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists the status and information for all replicas or replica sources.
 
 List a replica source
 
-GET /instances{instanceId}
+<span>GET /</span><span>instances{instanceId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists status and details for the specified replica source instance.
 
 List replica details
 
-GET /instances{instanceId}
+<span>GET /</span><span>instances{instanceId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists status and details for the specified replica.
 
 Detach a replica
 
-PATCH /instances{instanceId}
+<span>PATCH /</span><span>instances{instanceId}</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Detaches the specified replica instance from its replication source
 instance.
 
 List replicas for a source instance
 
-GET /{version}/{accountId}/instances/{instanceId}/replicas
+<span>GET
+/</span><span>{version}/{accountId}/instances/{instanceId}/replicas</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
 Lists replicas for the specified source instance.
 
@@ -610,311 +718,376 @@ Lists replicas for the specified source instance.
 
 Create an HA database instance
 
-POST /{version}/{accountId}/ha
+POST <span>/{version}/{accountId}/ha</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new HA instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Creates a new HA instance.</span>
 
 List all HA database instances
 
-GET /{version}/{accountId}/ha
+GET <span>/{version}/{accountId}/ha</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all the HA database instances.
+<span>Lists all the HA database instances.</span>
 
 List HA database instance details
 
-GET /{version}/{accountId}/ha/{haId}
+GET <span>/{version}/{accountId}/ha/{haId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists details for a specified HA instance.
+<span>Lists details for a specified HA instance.</span>
 
 Delete an HA database instance
 
-DELETE /{version}/{accountId}/ha/{haId}
+DELETE <span>/{version}/{accountId}/ha/{haId}</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes an HA database instance.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes an HA database instance.</span>
 
 Add HCLs to an HA database instance
 
-POST /{version}/{accountId}/ha/{haId}/acls
+POST <span>/{version}/{accountId}/ha/{haId}/acls</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Adds access control lists (ACLs) to an HA instance.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Adds access control lists (ACLs) to an HA instance.</span>
 
 List ACLs for an HA instance
 
-GET /{version}/{accountId}/ha/{haId}/acls
+GET <span>/{version}/{accountId}/ha/{haId}/acls</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists ACLs for an HA instance.
+<span>Lists ACLs for an HA instance.</span>
 
 Delete ACLs from an HA instance
 
-DELETE /{version}/{accountId}/ha/{haId}/acls/{address}
+DELETE <span>/{version}/{accountId}/ha/{haId}/acls/{address}</span>
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes ACLs from an HA instance.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes ACLs from an HA instance.</span>
 
 Add Replica to an HA instance
 
-POST /{version}/{accountId}/ha/{haId}/action
+POST <span>/{version}/{accountId}/ha/{haId}/action</span>
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Adds a replica node to the HA group specified by {ha\_id}.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Adds a replica node to the HA group specified by {ha\_id}.</span>
 
 ### CONFIGURATIONS
 
 List configurations
 
-GET /configurations
+<span>GET /configurations</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all defined configuration groups for the tenant.
+<span>Lists all defined configuration groups for the tenant.</span>
 
 Create a configuration
 
-POST /configurations
+<span>POST /co</span>nfigurations
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Creates a new configuration group.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Creates a new configuration group.</span>
 
 List configuration details
 
-GET / configurations/{configId}
+GET / <span>co</span>nfigurations/{configId}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists details for the specified configuration group*.*
+<span>Lists details for the specified </span>configuration group*.*
 
 Update some configuration parameters
 
-PATCH / configurations/{configId}
+PATCH / <span>co</span>nfigurations/{configId}
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Updates some of the configuration parameters associated with the
-specified configuration group.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Updates some of the configuration parameters associated with the
+specified </span>configuration group.
 
 Replace all configuration parameters
 
-PUT /configurations/{configId}
+PUT /<span>co</span>nfigurations/{configId}
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Replaces all the configuration parameters associated with the
-specified configuration group.
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Replaces all the configuration parameters associated with the
+specified </span>configuration group.
 
 Delete configuration group
 
-*DELETE /*configurations/{configId}
+*DELETE /*<span>co</span>nfigurations/{configId}
 
- 
 
- 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
 
-Deletes the specified configuration group.
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
+
+<span>Deletes the specified </span>configuration group.
 
 List instances for a configuration
 
-GET / configurations/{configId}/instances
+GET / <span>co</span>nfigurations/{configId}/instances
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists instances that are associated with the specified configuration
-group.
+<span>Lists instances that are associated with the
+specified </span>configuration group.
 
 ### CONFIGURATION PARAMETERS
 
 List configuration parameters
 
-GET /datastores/{datastoreId}/versions/{versionId}/parameters
+<span>GET
+/datastores/{datastoreId}/versions/{versionId}/parameters</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists configuration parameters that might be configured on the system.
+<span>Lists configuration parameters that might be configured on the
+system.</span>
 
-List configuration parameter details 
+List configuration parameter details
 
-GET
-/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}
+<span>GET
+/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the details of a specified configuration parameter that might be
-configured on the system.
+<span>Lists the details of a specified configuration parameter that
+might be configured on the system.</span>
 
 List configuration parameters without datastore
 
-GET /datastores/versions/{versionId}/parameters
+<span>GET /datastores/versions/{versionId}/parameters</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the configuration parameters that might be configured on the
-system without specifying a datastore.
+<span>Lists the configuration parameters that might be configured on the
+system without specifying a datastore.</span>
 
-List configuration parameter details without datastore 
+List configuration parameter details without datastore
 
-GET /datastores/versions/{versionId}/parameters/{parameterId}
+<span>GET
+/datastores/versions/{versionId}/parameters/</span><span>{parameterId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the details of a specified configuration parameter that might be
-configured on the system without specifying a datastore.
+<span>Lists the details of a specified configuration parameter that
+might be configured on the system </span><span>without specifying a
+datastore.</span>
 
 List verbose default configuration parameters
 
-GET /datastore/version/{versionId}/configuration/{flavorId}
+<span>GET /datastore/version/{versionId}/configuration/{flavorId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the default configuration parameters for a datastore version
-flavor without specifying a datastore.
+<span>Lists the default configuration parameters for a datastore version
+flavor </span><span>without specifying a datastore.</span>
 
 ### DATASTORE TYPES AND VERSIONS
 
-List all datastore types
+<span>List all datastore types</span>
 
-GET /datastores
+<span>GET /datastores</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all datastore types.
+<span>Lists all datastore types.</span>
 
-List all datastore types for a datastore
+<span>List all datastore types for a datastore</span>
 
-GET /datastores/{datastoreId}
+<span>GET /datastores/{datastoreId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all datastore types for the specified datastore.
+<span>Lists all datastore types for the specified datastore.</span>
 
-List all datastore versions for a datastore
+<span>List all datastore versions for a datastore</span>
 
-GET /datastores/{datastoreId}/versions
+<span>GET /datastores/{datastoreId}/versions</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists all versions for the specified datastore.
+<span>Lists all versions for the specified datastore.</span>
 
-List a version for a datastore.
+<span>List a version for a datastore.</span>
 
-GET /datastores/{datastoreId}/versions/{versionId}
+<span>GET /datastores/{datastoreId}/versions/{versionId}</span>
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png){width="41"
+height="39"}
 
-Lists the specified datastore version for the specified datastore.
+<span>Lists the specified datastore version for the specified
+datastore.</span>
 
- 
+
 -
 
-Cloud Databases terminology
----------------------------
+[]()Cloud Databases terminology
+-------------------------------
 
 The following terms are used to describe Cloud Databases.
 
@@ -925,7 +1098,7 @@ A MySQL database within a database instance.
 ### Database instance
 
 An isolated MySQL instance in a single-tenant environment on a shared
-host server. 
+host server.
 
 ### Flavor
 
@@ -937,12 +1110,12 @@ has a unique combination of memory capacity and priority for CPU time.
 User-specified storage that contains the MySQL data directory. Volumes
 are automatically provisioned on shared Internet Small Computers System
 Interface (iSCSI) storage area networks (SAN) that provide increased
-performance, scalability, availability, and manageability. 
+performance, scalability, availability, and manageability.
 
- 
 
-[\< Permission Matrixes for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+[&lt; Permission Matrixes for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 

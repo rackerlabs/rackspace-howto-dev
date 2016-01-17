@@ -2,10 +2,10 @@
 node_id: 1325
 title: Prepare to migrate a Linux server
 type: article
-created_date: '2012-03-13 20:14:19'
-created_by: jered.heeschen
-last_modified_date: '2015-12-31 18:1139'
-last_modified_by: stephanie.fillmon
+created_date: '2012-03-13'
+created_by: Jered Heeschen
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -18,7 +18,7 @@ mandatory. Some of these recommendations can cause significant downtime,
 so you should schedule them accordingly.
 
 For Windows migration preparation, see [Prepare to migrate a Windows
-server](http://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-windows-server).
+server](/howto/prepare-to-migrate-a-windows-server).
 
 -   [Back up your data](#backUpYourData)
 -   [Prepare for a system reboot](#prepareforSystemReboot)
@@ -26,8 +26,8 @@ server](http://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-w
 -   [Right before the migration](#rightBefore)
 -   [After a migration](#afterMigration)
 
-Back up your data
------------------
+[](){#backUpYourData}Back up your data
+--------------------------------------
 
 Before you perform any migration, create a file-level backup of
 important data. You can use Rackspace Cloud Backup to automate the
@@ -35,12 +35,12 @@ storing and retrieving of backup data from Cloud Files, or you can use
 rsync to copy your data to another server.
 
 -   [Rackspace Cloud Backup - Install the agent on
-    Linux](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-on-linux)
+    Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
 -   [Backing up your files with
-    rsync](http://www.rackspace.com/knowledge_center/article/backing-up-your-files-with-rsync)
+    rsync](/howto/backing-up-your-files-with-rsync)
 
-Prepare for a system reboot
----------------------------
+[](){#prepareforSystemReboot}Prepare for a system reboot
+--------------------------------------------------------
 
 It's good practice to shut down your server during the final stages of a
 migration to safely copy dynamic content to the new host. During a
@@ -50,8 +50,8 @@ purpose.
 Ensure that your server will reboot quickly and safely when the
 migration completes.
 
-General preparation
--------------------
+[](){#generalPrep}General preparation
+-------------------------------------
 
 The following tasks help to avoid issues with server time and the size
 of the disk space on the server.
@@ -65,10 +65,10 @@ the server date or file time stamps, set up and configure Network Time
 Protocol (NTP) on your server.
 
 For details on setting up NTP on your server, see [Using NTP to sync
-time](http://www.rackspace.com/knowledge_center/article/using-ntp-to-sync-time).
+time](/howto/using-ntp-to-sync-time).
 
-Right before the migration
---------------------------
+[](){#rightBefore}Right before the migration
+--------------------------------------------
 
 You can reduce the time required for a migration and improve the
 reliability of a resulting image by reducing the number and size of
@@ -87,8 +87,8 @@ To lock your tables in MySQL, run the following command:
 
     mysql -u root -p --execute="FLUSH TABLES WITH READ LOCK"
 
-After a migration
------------------
+[](){#afterMigration}After a migration
+--------------------------------------
 
 After a migration is complete and your new server starts, you should
 test your web sites and applications. Ensure that applications are

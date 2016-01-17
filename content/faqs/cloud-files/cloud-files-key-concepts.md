@@ -2,10 +2,10 @@
 node_id: 2193
 title: Cloud Files Key Concepts
 type: frequently_asked_question
-created_date: '2012-09-20 20:50:16'
-created_by: tom.hopkins
-last_modified_date: '2015-09-04 20:1359'
-last_modified_by: constanze.kratel
+created_date: '2012-09-20'
+created_by: Tom Hopkins
+last_modified_date: '2015-09-04'
+last_modified_by: Constanze Kratel
 product: Cloud Files
 body_format: full_html
 ---
@@ -16,7 +16,9 @@ other forms of storage such as a SAN or NAS. Since Cloud Files is a
 different way of thinking when it comes to storage, following is a
 review of key concepts.
 
-#### Accounts
+[](){#Accounts}
+
+#### <span class="mw-headline">Accounts </span>
 
 The Cloud Files system is designed to be used by many different
 customers. Your user account is your slice of the Cloud Files system. A
@@ -24,7 +26,9 @@ user must identify themselves with a valid Username and their API Access
 Key. Once authenticated, that user has full read/write access to the
 Objects (files) stored under that user account.
 
-#### Containers
+[](){#Containers}
+
+#### <span class="mw-headline">Containers </span>
 
 A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way
 for you to organize that data. You can think of a Container as a folder
@@ -33,7 +37,9 @@ a Container and these other &ldquo;file system&rdquo; concepts is that Container
 cannot be nested. You can, however, create up to 500,000 Containers
 under your account.
 
-#### Objects
+[](){#Objects}
+
+#### <span class="mw-headline">Objects </span>
 
 An &ldquo;Object&rdquo; is the basic storage entity and its metadata that represents
 the &ldquo;files&rdquo; you store in Cloud Files. When you upload data to Cloud
@@ -44,7 +50,9 @@ backup of your digital photos and add a metadata key/value pair of
 &ldquo;PhotoAlbum-CaribbeanCruise&rdquo;. Objects are grouped into Containers and
 you can have any number of Objects within a Container.
 
-#### Operations
+[](){#Operations}
+
+#### <span class="mw-headline">Operations </span>
 
 Operations are the actions you perform against your account in Cloud
 Files. Creating or deleting Containers, uploading or downloading
@@ -53,7 +61,9 @@ API section of the Developer Guide. Operations are performed via the
 ReST web service API or a language-specific API (currently we support
 Python, PHP, Java, and C\#/.NET).
 
-#### Permissions
+[](){#Permissions}
+
+#### <span class="mw-headline">Permissions </span>
 
 There are no permissions or access-controls around Containers or Objects
 other than being split into separate accounts. Users must authenticate
@@ -63,7 +73,9 @@ create/delete Containers and Objects only within that Account.
 At this time, there is no way to make a storage object publicly
 accessible.
 
-#### CDN-enabled Containers
+[](){#CDN-enabled_Containers}
+
+#### <span class="mw-headline">CDN-enabled Containers </span>
 
 To publish your data so that it can be served by Akamai's Content
 Distribution Network (CDN), you need to &ldquo;publish to CDN&rdquo; the Container

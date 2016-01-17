@@ -2,10 +2,10 @@
 node_id: 3579
 title: Post-Migration Considerations When Migrating from Amazon Web Services
 type: article
-created_date: '2013-07-02 15:33:00'
+created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-07 16:4649'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-07'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -15,14 +15,14 @@ body_format: tinymce
 Migrate an application from Amazon Web Services to Rackspace:
 
 -   [Migrating an application built on a LAMP stack from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+    Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrating a .NET application from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-a-net-application-from-amazon-web-services)
+    Services](/howto/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating a Java web application from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-a-java-web-application-from-amazon-web-services)
+    Services](/howto/migrating-a-java-web-application-from-amazon-web-services)
 -   [Migrating an application based on Backbone.js, Node.js, and MongoDB
     from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+    Services](/howto/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
 
 #### Security
 
@@ -34,12 +34,10 @@ reasons, we recommend that you enable key-based SSH or OpenSSH
 authentication on your newly provisioned cloud server. Depending on your
 server&rsquo;s OS distribution, see the following references for instructions:
 
--   Ubuntu:
-    [https://help.ubuntu.com/community/SSH/OpenSSH/Keys](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
--   CentOS:
-    [http://wiki.centos.org/HowTos/Network/SecuringSSH](http://wiki.centos.org/HowTos/Network/SecuringSSH)
+-   Ubuntu: <https://help.ubuntu.com/community/SSH/OpenSSH/Keys>
+-   CentOS: <http://wiki.centos.org/HowTos/Network/SecuringSSH>
 -   openSUSE:
-    [http://en.opensuse.org/SDB:OpenSSH\_public\_key\_authentication](http://en.opensuse.org/SDB:OpenSSH_public_key_authentication)
+    <http://en.opensuse.org/SDB:OpenSSH_public_key_authentication>
 
 Consider disabling password authentication altogether, or at least
 disabling root logon. Also consider limiting simultaneous user logons
@@ -50,10 +48,14 @@ and using a nonstandard (other than port 22) port for SSH.
 
             iptables -A INPUT -p tcp -s XXX.XXX.XXX.XXX --dport 22 -j ACCEPT #Replace XXX.XXX.XXX.XXX with your IP
 
+    <!-- -->
+
     -   Limit the number of connections to the SSH port.
 
             iptables -A INPUT -p tcp --dport 22 --syn -m limit --limit 1/m --limit-burst 3 -j ACCEPT
             iptables -A INPUT -p tcp --dport 22 --syn -j DROP
+
+    <!-- -->
 
     -   Prevent brute-force attacks by logging and blocking repeated
         attempts from the same IP address.
@@ -66,7 +68,7 @@ and using a nonstandard (other than port 22) port for SSH.
 To create a robust and scalable monitoring system, consider using
 Rackspace Cloud Monitoring. Read [Install and Configure the Rackspace
 Monitoring
-Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent) for
+Agent](/howto/install-and-configure-the-rackspace-monitoring-agent) for
 information about installing, configuring, and running an agent and
 enabling monitoring checks by using the Cloud Control Panel.
 
@@ -92,7 +94,7 @@ provides a file-based backup system to help you meet your backup and
 restore needs. You can install the [Rackspace Cloud Backup
 agent](http://www.rackspace.com/cloud/backup/) by following the steps in
 the article [Rackspace Cloud Backup -
-Overview](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+Overview](/howto/rackspace-cloud-backup-overview).
 
 Following are the key features of Cloud Backup:
 
@@ -100,8 +102,8 @@ Following are the key features of Cloud Backup:
     back up.
 -   Run your backups manually or on a customized schedule.
 -   See the activity from all your backups.
--   Use AES-256 encryption with a private encryption key known only to
-    you.
+-   Use AES-256 encryption with a private encryption key known only
+    to you.
 -   Restore individual files and folders from a particular date.
 -   Save space with incremental backups that save only the changed
     portions of files.

@@ -2,10 +2,10 @@
 node_id: 4193
 title: Managing password policies
 type: article
-created_date: '2014-08-18 17:45:41'
-created_by: marcin.stangel
-last_modified_date: '2015-03-05 17:2440'
-last_modified_by: jered.heeschen
+created_date: '2014-08-18'
+created_by: Marcin Stangel
+last_modified_date: '2015-03-05'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -24,8 +24,8 @@ stored in the **/etc/login.defs** configuration file. This file contains
 couple of very useful options:
 
 -   `PASS_MAX_DAYS`: Maximum number of days a password may be used.
--   `PASS_MIN_DAYS`: Minimum number of days allowed between password
-    changes.
+-   `PASS_MIN_DAYS`: Minimum number of days allowed between
+    password changes.
 -   `PASS_MIN_LEN`: Minimum acceptable password length.
 -   `PASS_WARN_AGE`: Number of days that warning is given before a
     password expires.
@@ -66,12 +66,12 @@ as an argument), and it will run in an interactive mode.
 The syntax for this command is as follows:
 
 -   `chage <username>` - Runs the command in an interactive mode.
--   `chage -l <username>` - Lists current expiration settings for the
-    account.
+-   `chage -l <username>` - Lists current expiration settings for
+    the account.
 -   `chage -d <username>` - Forces the user to change their password on
     next login.
--   `chage <options> <username>` - Sets the specified settings for the
-    account.
+-   `chage <options> <username>` - Sets the specified settings for
+    the account.
 
 The possible options are as follows:
 

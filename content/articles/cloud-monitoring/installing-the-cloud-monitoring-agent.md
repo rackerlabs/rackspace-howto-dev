@@ -2,10 +2,10 @@
 node_id: 3194
 title: Install and configure the Rackspace Monitoring Agent
 type: article
-created_date: '2012-11-13 03:31:42'
+created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-06 19:1409'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06'
+last_modified_by: Rose Contreras
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -15,11 +15,12 @@ configuring the Rackspace Monitoring Agent on a cloud server.  You
 install the Rackspace Monitoring Agent on the servers you want to
 monitor. The agent gathers data based on the checks that you configure,
 including checks for host information and host metrics, and
-custom-defined checks. 
+custom-defined checks.
 
-For a list of supported operating systems on which the monitoring agent
-can be installed, see [Cloud Servers with Managed Operations Support for
-Linux](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-cloud-service-level-spheres-of-support).
+<span>For a list of supported operating systems on which the monitoring
+agent can be installed, see </span>[Cloud Servers with Managed
+Operations Support for
+Linux](/howto/cloud-servers-with-managed-operations-support-for-linux)<span>.</span>
 
 This article describes the following tasks:
 
@@ -32,74 +33,79 @@ This article describes the following tasks:
 -   [Upgrade the monitoring agent](#UpgradeAgent)
 -   [Uninstall the monitoring agent](#UninstallAgent)
 
-Install the monitoring agent by using the Cloud Intelligence interface
-----------------------------------------------------------------------
+[](){#CI}Install the monitoring agent by using the Cloud Intelligence interface
+-------------------------------------------------------------------------------
 
 We recommend using the Cloud Intelligence web-based interface to install
-and configure the monitoring agent. The Cloud Intelligence interface
-provides easy installation and set up as well as graphs for visualizing
-Rackspace Monitoring.  The Cloud Intelligence interface has many more
-monitoring configuration and visualization options than the Cloud
-Control Panel, including three methods for installing the monitoring
-agent: Quick Install, Step By Step, and Source.
+and configure the monitoring agent. <span>The Cloud Intelligence
+interface provides easy installation </span><span>and set up as well as
+graphs for visualizing Rackspace Monitoring. </span><span> The Cloud
+Intelligence </span><span>interface has many more monitoring
+configuration and visualization options than the Cloud Control Panel,
+including three </span><span>methods for installing the monitoring
+agent: </span>Quick Install, Step By Step, and Source.
 
 ### To use the Cloud Intelligence interface to install the agent:
 
-1.  Log in
-    at [intelligence.rackspace.com](https://intelligence.rackspace.com/) with
-    your Cloud Control Panel login credentials.
-2.  Click the name of the entity (the object or resource that you want
-    to monitor) for your server. If your server is not a cloud server or
-    cloud database from Rackspace, create the entity by entering the
-    name of the server that you want to monitor, and then
-    clicking **Create Entity**.
+1.  <span>Log in
+    at </span>[intelligence.rackspace.com](https://intelligence.rackspace.com/)<span> with
+    your Cloud Control Panel login credentials.</span>
+2.  Click the name of the entity (<span>the object <span>or resource
+    that you want to monitor) </span></span>for your server. If your
+    server is not a cloud server or cloud database from Rackspace,
+    create the entity by entering the name of the server that you want
+    to monitor, and then clicking **Create Entity**.
 3.  In the Monitoring Details section of the entity details page, click
-    **Install Agent** next to the **Monitoring Agent** option.<br>
-     The Monitoring Agent Installation page opens.
+    **Install Agent** next to the **Monitoring Agent** option.
+    The Monitoring Agent Installation page opens.
 4.  Choose the platform of your server and then click one of the
     following tabs:
 
 -   **Quick Install**: This method provides a simple command that you
     can copy and then paste into a shell window after you are logged in
-    to the server that you want to monitor. 
+    to the server that you want to monitor.
 -   **Step By Step**: This method provides a series of commands that
-    give you insight into the agent installation process.  
+    give you insight into the agent installation process. <span> </span>
 -   **Source**: This method takes you directly to the open-source agent
-    pages where you can download the agent.  
+    pages where you can download the agent. <span> </span>
 
      3. Completing the steps for any method installs the agent
 immediately. You can then continue to create checks for the agent, which
 you can also do within the Cloud Intelligence interface.
 
-Install the monitoring agent by using meta packages
----------------------------------------------------
+[](){#metaPackage}Install the monitoring agent by using meta packages
+---------------------------------------------------------------------
 
 The meta packages installation obviates the need to install the
 certificate or create a repository manually.
 
-1. Log in to the server that you want to monitor.
+1\. Log in to the server that you want to monitor.
 
-2. Open a browser to the [Rackspace Monitoring Meta
-Packages](http://meta.packages.cloudmonitoring.rackspace.com/) page.
+<span class="s1">2. Open a browser to the </span>[Rackspace Monitoring
+Meta
+Packages](http://meta.packages.cloudmonitoring.rackspace.com/) page<span
+class="s1">.</span>
 
-3. Find your operating system and enter the commands provided.
+3\. Find your operating system and enter the commands provided.
 
-Configure the monitoring agent by using the agent setup program
----------------------------------------------------------------
+[](){#agent-setup}Configure the monitoring agent by using the agent setup program
+---------------------------------------------------------------------------------
 
 After you have installed the agent package on your server, you can
 configure the monitoring agent by running the [agent Setup
-program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup "4.3.1. Configure the agent with the Setup program").
+program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup "4.3.1. Configure the agent with the Setup program"){.link}.
 The agent setup program completes the following configuration tasks for
 you:
+
+<div class="itemizedlist">
 
 -   Configures an agent token that the agent uses to authenticate with
     Rackspace Monitoring.
 
 -   Creates an agent configuration file,
     `rackspace-monitoring-agent.cfg`{.filename}. **Note:** Rackspace
-    Monitoring now supports debug logging based on the configuration
-    file.
+    Monitoring now supports debug logging based on the
+    configuration file.
 
 -   Verifies connectivity to the Rackspace data centers.
 
@@ -109,18 +115,20 @@ For more information, see the [Configure the agent with the Setup
 program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup)
 section in the *Rackspace Monitoring Developer Guide*.
 
-Install the monitoring agent by using other methods
----------------------------------------------------
+</div>
+
+[](){#otherMethods}Install the monitoring agent by using other methods
+----------------------------------------------------------------------
 
 For more information about the monitoring agent and in-depth
 installation and configuration information, see the following sections
-in the *Rackspace Monitoring Developer Guide*, [Install the
-agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-the-agent) and [Configure
+in the *Rackspace Monitoring Developer Guide*,<span> </span>[Install the
+agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-the-agent)<span> and </span>[Configure
 the
-agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-the-agent) sections.
+agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-the-agent)<span> sections.</span>
 
-Upgrade the agent
------------------
+[](){#UpgradeAgent}Upgrade the agent
+------------------------------------
 
 The agent does not upgrade itself. However, if you've added the agent
 repository to a Linux system, the agent is upgraded when you run a
@@ -134,8 +142,8 @@ guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/
 If you upgrade manually, we recommend that you check for an upgrade
 to the agent every three to four weeks.
 
-Uninstall the agent
--------------------
+[](){#UninstallAgent}Uninstall the agent
+----------------------------------------
 
 Use the standard method for your operating system to uninstall the
 agent.
@@ -166,16 +174,16 @@ and *alarms* that trigger a notification at certain thresholds. You also
 need to create a notification and notification plan. For details about
 performing these steps in the Cloud Control Panel, see [Rackspace
 Monitoring Checks and
-Alarms](http://www.rackspace.com/knowledge_center/article/rackspace-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
+Alarms](/howto/rackspace-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
 [Creating a monitoring check using the Control
-Panel](http://www.rackspace.com/knowledge_center/article/creating-a-monitoring-check-using-the-cloud-control-panel "Creating a Monitoring Check Using the Control Panel").
+Panel](/howto/creating-a-monitoring-check-using-the-cloud-control-panel "Creating a Monitoring Check Using the Control Panel").
 
 Related information
 -------------------
 
 -   [About the Rackspace Monitoring
-    Agent](http://www.rackspace.com/knowledge_center/article/about-the-cloud-monitoring-agent "About the Monitoring Agent")
+    Agent](/howto/about-the-rackspace-monitoring-agent "About the Monitoring Agent")
 -   [Troubleshooting the Monitoring
-    Agent](http://www.rackspace.com/knowledge_center/article/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
+    Agent](/howto/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
 
 

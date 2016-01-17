@@ -2,10 +2,10 @@
 node_id: 4221
 title: Available templates for Cloud Orchestration
 type: article
-created_date: '2014-09-04 19:48:57'
-created_by: nico4001
-last_modified_date: '2016-01-14 21:1129'
-last_modified_by: rose.coste
+created_date: '2014-09-04'
+created_by: Nicole Schwartz
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Cloud Orchestration
 body_format: full_html
 ---

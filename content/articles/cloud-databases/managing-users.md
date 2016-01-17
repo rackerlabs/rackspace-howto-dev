@@ -2,10 +2,10 @@
 node_id: 1524
 title: Managing Users for Cloud Databases
 type: article
-created_date: '2012-07-24 00:51:07'
-created_by: RackKCAdmin
-last_modified_date: '2015-09-03 20:2300'
-last_modified_by: constanze.kratel
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2015-09-03'
+last_modified_by: Constanze Kratel
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -18,43 +18,44 @@ Databases:
 -   [Manage Database Access for Users](#manage)
 -   [Set Access-Level Permissions for Individual Users](#set)
 
- 
--
+[]()
+-----
 
 Create Users with Host Parameters
 ---------------------------------
 
  You can create a user in the Cloud Databases section of the Cloud
 Control Panel by clicking on an existing instance name and then clicking
-Create User in the Users section of the Instance Details page. 
+Create User in the Users section of the Instance Details page.
 
-![](/knowledge_center/sites/default/files/field/image/dbactionsmenu.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbactionsmenu.png){width="746"
+height="372"}
 
 #### Creating Users
 
 When you create a new user, consider the following requirements and
 limitations.
 
--   All users have full privileges on the databases to which they are
-    assigned.
+-   All users have full privileges on the databases to which they
+    are assigned.
 -   User names cannot contain more than 16 characters.
--   There is no restriction on the number of characters in a user's
-    password.
--   You can assign one or more databases to the user. 
+-   There is no restriction on the number of characters in a
+    user's password.
+-   You can assign one or more databases to the user.
 -   A database can be assigned to a user when created.
 
 #### Valid Characters for User Names and Passwords
 
 The following characters are valid for user names and passwords:
 
--   Letters, both uppercase and lowercase, are allowed. 
+-   Letters, both uppercase and lowercase, are allowed.
 -   Numbers, spaces, and the symbols @, ?,  and \# are allowed, but
-    spaces are not allowed at the beginning or end of the user name or
-    password.
+    spaces are not allowed at the beginning or end of the user name
+    or password.
 -   The underscore symbol (\_) is allowed anywhere in the database name,
     user name, or password.
 
-#### Limitations on User Names and Passwords 
+#### Limitations on User Names and Passwords
 
 The following characters are not allowed when you create user names or
 passwords:
@@ -79,46 +80,49 @@ value of %, which allows them to connect to the database from any host.
 -   Valid host name - 111.111.111.11
 -   Invalid host name - server1.test.com
 
-####  
+####  []()
 
 ### Modify User Accounts
 
 You can perform the following operations to modify a user by clicking
 the cog icon next to the user name:
 
-![](/knowledge_center/sites/default/files/field/image/dbmodifyusers.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbmodifyusers.png){width="397"
+height="245"}
 
 -   Edit the user name and host
 -   Change the user&rsquo;s password
 -   Delete the user
--   Manage database access (grant or revoke access to specific
-    databases)
+-   Manage database access (grant or revoke access to
+    specific databases)
 
- 
+[]()
 
 ### Manage Database Access for Users
 
- 
+
 
 Clicking the Manage Database Access command in the actions menu will let
 you control user access to each database. To revoke a user's access to a
 database, click the "-" button next to the database name in the list.
 
- ![](/knowledge_center/sites/default/files/field/image/dbmanageaccess.png)
+ ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbmanageaccess.png){width="866"
+height="421"}
 
 To grant a user access to a database, click the Add Access button. In
 the list of databases for which the user does not already have access,
 select the check boxes next to the appropriate database names and then
 submit the changes to put them into effect.
 
-![](/knowledge_center/sites/default/files/field/image/dbaddaccess.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbaddaccess.png){width="761"
+height="460"}
 
 **Note:** Through the Control Panel, users can only be granted or
 revoked full permissions on a database. To add more specific
 permissions, you must enable the root user as described in the following
 section.
 
-#### 
+#### []()
 
 #### Set Access-Level Permissions for Individual Users
 
@@ -146,15 +150,15 @@ Control Panel will be provided in the future.
 In order to use the CLI, first you must [install the trove
 client](http://docs.rackspace.com/cdb/api/v1.0/cdb-getting-started/content/Install_Trove_Client.html).
 After installing the trove client, you can enable the root user for the
-database instance by using the following command, where \<instance\> is
-the ID of the instance: 
+database instance by using the following command, where &lt;instance&gt;
+is the ID of the instance:
 
     $ trove root-enable <instance>
 
 This command generates a password for the root user. Store this password
 because  it is required to log in as a root user for the database
 instance. After the root user is enabled, you have full control for
-creating and managing user privileges. 
+creating and managing user privileges.
 
 *Example* &ndash; Database instance MySQLDBInstance01 has a database
 DBStaging1 and a user DevUser1. You would like to set up read-only

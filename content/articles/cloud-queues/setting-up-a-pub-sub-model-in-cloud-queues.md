@@ -2,10 +2,10 @@
 node_id: 3656
 title: Setting Up a Pub-Sub Model in Cloud Queues
 type: article
-created_date: '2013-08-21 04:00:14'
-created_by: megan.meza
-last_modified_date: '2016-01-11 20:4623'
-last_modified_by: rose.contreras
+created_date: '2013-08-21'
+created_by: Megan Meza
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Queues
 body_format: tinymce
 ---
@@ -56,7 +56,7 @@ terminal.
         HTTP/1.1 200 OK     Content-Length: 140     Content-Type: application/json; charset=utf-8     Content-Location: /v1/queues  {"queues": [{"href": "/v1/queues/samplequeue", "name": "samplequeue"}], "links": [{"href": "/v1/queues?marker=samplequeue", "rel": "next"}]}
 
 To avoid getting messages the subscriber has already read, use the
-marker semantics such as: /v1/queues/{queue\_name}/messages?marker=63 
+marker semantics such as: /v1/queues/{queue\_name}/messages?marker=63
 (these links can be retrieved with the marker by following the links
 section in the returned json for the next page).
 

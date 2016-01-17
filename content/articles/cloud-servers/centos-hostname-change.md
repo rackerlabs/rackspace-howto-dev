@@ -2,10 +2,10 @@
 node_id: 90
 title: CentOS - Hostname change
 type: article
-created_date: '2011-03-09 17:19:45'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:0916'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -32,8 +32,8 @@ Change a server hostname
 
 4.  Run the `hostname` command. This command lets you change the
     hostname on the server that the command line remembers, but it does
-    not actively update all programs that are running under the old
-    hostname.
+    not actively update all programs that are running under the
+    old hostname.
 
     ![hostname.png](http://cdn.cloudfiles.rackspacecloud.com/c42672/CentOS%20-hostname%20change/hostname.png)
 

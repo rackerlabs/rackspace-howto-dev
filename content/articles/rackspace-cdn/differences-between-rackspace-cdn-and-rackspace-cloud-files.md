@@ -2,10 +2,10 @@
 node_id: 4657
 title: Differences between Rackspace CDN and Rackspace Cloud Files
 type: article
-created_date: '2015-05-08 19:58:04'
+created_date: '2015-05-08'
 created_by: Rackspace Support
-last_modified_date: '2015-10-05 15:1258'
-last_modified_by: catherine.richardson
+last_modified_date: '2015-10-05'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: tinymce
 ---
@@ -31,15 +31,16 @@ Rackspace CDN and Cloud Files:
 
 These, and other differences, are summarized in the following table:
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-01%20at%2011.45.33%20AM.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-01%20at%2011.45.33%20AM.png){width="717"
+height="321"}
 
- 
 
-#### [\< Rackspace CDN terminology](https://www.rackspace.com/knowledge_center/article/rackspace-cdn-terminology)    -    [Access Rackspace CDN \>](https://www.rackspace.com/knowledge_center/article/access-rackspace-cdn)
 
- 
+#### [&lt; Rackspace CDN terminology](/howto/rackspace-cdn-terminology)    -    [Access Rackspace CDN &gt;](/howto/access-rackspace-cdn)
 
- 
 
- 
+
+
+
+
 

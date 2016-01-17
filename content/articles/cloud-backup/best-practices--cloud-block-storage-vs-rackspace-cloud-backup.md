@@ -2,10 +2,10 @@
 node_id: 3714
 title: 'Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup'
 type: article
-created_date: '2013-10-01 19:24:05'
-created_by: kyle.laffoon
-last_modified_date: '2014-10-30 20:3902'
-last_modified_by: jered.heeschen
+created_date: '2013-10-01'
+created_by: Kyle Laffoon
+last_modified_date: '2014-10-30'
+last_modified_by: Jered Heeschen
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -40,7 +40,7 @@ your server.
 
 To get started with Cloud Block Storage, see [Create and Attach a Block
 Storage
-Volume](http://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume).
+Volume](/howto/create-and-attach-a-cloud-block-storage-volume).
 
 ### Cloud Backup for Incremental Backups
 
@@ -50,10 +50,10 @@ deduplicaiton to only capture only data that has actually changed. With
 the exception of your first complete backup, every subsequent backup is
 just a &ldquo;delta&rdquo; of the previous backup, which enables faster backup and
 restore operations and reduces the storage amount required. If ever
-needed, you can revert your data to an earlier date's backup.<br>
- <br>
- The Cloud Backup Agent can complete the backup automatically following
-a schedule that you identify, so that you can avoid waiting for the
+needed, you can revert your data to an earlier date's backup.
+
+The Cloud Backup Agent can complete the backup automatically following a
+schedule that you identify, so that you can avoid waiting for the
 process to complete. Manual backup is also available on Cloud Backup.
 
 **Encryption**
@@ -79,6 +79,6 @@ control options with different storage types.
 **Getting Started with Cloud Backup**
 
 See [Getting Started with Cloud
-Backup](http://www.rackspace.com/knowledge_center/getting-started/cloud-backup)
+Backup](/howto/cloud-backup)
 to get started with Cloud Backup.
 

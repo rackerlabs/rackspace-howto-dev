@@ -2,15 +2,15 @@
 node_id: 4091
 title: Add and remove GlusterFS servers
 type: article
-created_date: '2014-06-03 14:43:50'
-created_by: matt.sherborne
-last_modified_date: '2016-01-12 18:4405'
-last_modified_by: stephanie.fillmon
+created_date: '2014-06-03'
+created_by: Matt Sherborne
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-In the [previous article](http://www.rackspace.com/knowledge_center/article/set-up-a-two-server-glusterfs-array), you created a two-server GlusterFS array.
+In the [previous article](/howto/set-up-a-two-server-glusterfs-array), you created a two-server GlusterFS array.
 
 This article describes how to add a new node, balance it into the array, and then remove it.
 
@@ -20,7 +20,7 @@ Use the `nova boot` command from the previous article to create a server called 
 
     nova boot --image bb02b1a3-bc77-4d17-ab5b-421d89850fca --flavor performance1-4 web3
 
-You could also use the [Rackspace Cloud Control Panel](http://www.rackspace.com/knowledge_center/article/introducing-the-new-cloud-control-panel) to create the new server.
+You could also use the [Rackspace Cloud Control Panel](/howto/introducing-the-rackspace-cloud-control-panel) to create the new server.
 
 ## Add the server to the Rackspace custom network
 
@@ -44,21 +44,21 @@ When you are done, the new server should have the IP address 192.168.0.3 on inte
 
 1.  Using the instructions from the previous article, install GlusterFS and format the `bricks` partition as follows:
 
- `apt-get update`  
+ `apt-get update`
 
- `apt-get install -y glusterfs-server glusterfs-client`  
+ `apt-get install -y glusterfs-server glusterfs-client`
 
- `apt-get install -y xfsprogs`  
+ `apt-get install -y xfsprogs`
 
- `mkfs.xfs /dev/xvde1`  
+ `mkfs.xfs /dev/xvde1`
 
- `mkdir /srv/.bricks`  
+ `mkdir /srv/.bricks`
 
- `echo /dev/xvde1 /srv/.bricks xfs rw 0 1 >> /etc/fstab`  
+ `echo /dev/xvde1 /srv/.bricks xfs rw 0 1 >> /etc/fstab`
 
- `mount /srv/.bricks`  
+ `mount /srv/.bricks`
 
- `ufw allow in on eth2`  
+ `ufw allow in on eth2`
 
 ## Incorporate the new brick into the Gluster volume
 
@@ -95,8 +95,8 @@ GlusterFS offers different types of volume storage strategies:
 
 You can also combine strategies, for example replicated-distributed, as illustrated in the following example:
 
-    gluster volume create www replica 2 transport tcp 
-    192.168.0.1:/srv/.bricks/www 192.168.0.2:/srv/.bricks/www 
+    gluster volume create www replica 2 transport tcp
+    192.168.0.1:/srv/.bricks/www 192.168.0.2:/srv/.bricks/www
     192.168.0.3:/srv/.bricks/www 192.168.0.4:/srv/.bricks/www
 
 The replica number is the number of bricks that make up a replica set, that is, hold a full copy of the files. In the preceding example 192.168.0.1 + 192.168.0.2 hold a full copy of the files, as do 192.168.0.3 + 192.168.0.4. The brick order is significant; if you ordered it 1,3,2,4 then 1+3 and 2+4 would hold the full files, so that if 1+2 went down, you would loose half your files and have two copies of the other half.
@@ -141,7 +141,7 @@ The following command is a helpful troubleshooting command. It gives information
     Self-heal Daemon on 192.168.0.2				N/A	Y	13907
     NFS Server on 192.168.0.1				2049	Y	10286
     Self-heal Daemon on 192.168.0.1				N/A	Y	10293
-     
+
     There are no active volume tasks
 
 ## Remove a brick
@@ -171,7 +171,7 @@ Re-adding a brick is not as straight forward as it could be, so this section exp
 Try adding web02 back into the volume, as follows:
 
     root@web01:~# gluster volume add-brick www replica 3 192.168.0.2:/srv/.bricks/www
-    volume add-brick: failed: 
+    volume add-brick: failed:
 
 It failed. Why?  Look at the logs on web02:
 
@@ -196,4 +196,4 @@ Now that you have a clean location in which to store the brick, adding the brick
 
 ## Where to go from here
 
-The next article in this GlusterFS series describes [How to recover from a failed server](https://www.rackspace.com/knowledge_center/article/recover-from-a-failed-server-in-a-glusterfs-array) in a GlusterFS array.
+The next article in this GlusterFS series describes [How to recover from a failed server](/howto/recover-from-a-failed-server-in-a-glusterfs-array) in a GlusterFS array.

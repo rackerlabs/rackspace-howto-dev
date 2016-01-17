@@ -2,10 +2,10 @@
 node_id: 236
 title: Back up data with Cloud Files
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-12 17:1336'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-05-12'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -15,9 +15,7 @@ the steps in this article to set up your own data backup to your Cloud
 Files service.
 
 **Note:** If you would like for us to provide Cloud Backup as a service,
-see
-[http://www.rackspace.com/cloud/backup](http://www.rackspace.com/cloud/backup)
-for information.
+see <http://www.rackspace.com/cloud/backup> for information.
 
 Prepare to back up {#prepare}
 ------------------
@@ -25,45 +23,47 @@ Prepare to back up {#prepare}
 Before you use Cloud files to back up your data, perform the following
 steps to prepare your data:
 
-1.  Create a backup plan, identifying critical resources and necessary
-    frequency.
+1.  Create a backup plan, identifying critical resources and
+    necessary frequency.
 2.  Collect all the critical resources (backup data) in a secure local
     location or directory with any needed subdirectories.
 3.  *(Optional)* Compress the content of the backup directory with
-    security and encryption.<br>
-     This optional step saves storage and bandwidth costs and increases
-    security.
+    security and encryption.
+    This optional step saves storage and bandwidth costs and
+    increases security.
 
 Back up your data
 -----------------
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2.  At the top of the window, click **Storage \> Files**.
+2.  At the top of the window, click **Storage &gt; Files**.
 
-    ![](/knowledge_center/sites/default/files/field/image/236.1.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/236.1.png){width="300"
+    height="140"}
 
 3.  On the Cloud Files page, click **Create Container**.
 4.  In the popup dialog box, name the new container, select the region
-    and type, and then click **Create Container**.<br>
-     For more information about selecting a region for your backup
-    files, see [Multi-region support in Cloud
-    Files](http://www.rackspace.com/knowledge_center/node/2157).
+    and type, and then click **Create Container**.
+    For more information about selecting a region for your backup files,
+    see [Multi-region support in Cloud
+    Files](/howto/multi-region-support-in-cloud-files).
 5.  *(Optional)* If you want to create a folder to group your uploaded
     files, perform the following steps:
-    1.  On the Containers page, click **Create Folder**.
-    2.  In the popup dialog box, name the folder and then click **Create
+    a.  On the Containers page, click **Create Folder**.
+    b.  In the popup dialog box, name the folder and then click **Create
         Folder**.
-    3.  To add files in the folder, click the folder name to open the
+    c.  To add files in the folder, click the folder name to open the
         folder before completing the following step.
 
 6.  Individually upload the backup data files that you created in step 2
     of [Prepare to back up](#prepare) to the container, as follows:
-    1.  On the Containers page, click **Upload Files**.
+    a.  On the Containers page, click **Upload Files**.
 
-        ![](/knowledge_center/sites/default/files/field/image/263.4.png)
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/263.4.png){width="221"
+        height="44"}
 
-    2.  Select the files and then click **Open**.<br>
-         Your files are uploaded to the container.
+    b.  Select the files and then click **Open**.
+        Your files are uploaded to the container.
 
 Next steps
 ----------

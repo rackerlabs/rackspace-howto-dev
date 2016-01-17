@@ -2,10 +2,10 @@
 node_id: 4706
 title: Getting started with Rackspace Intelligence
 type: article
-created_date: '2015-06-09 16:40:30'
-created_by: constanze.kratel
-last_modified_date: '2015-10-29 14:3115'
-last_modified_by: kyle.laffoon
+created_date: '2015-06-09'
+created_by: Constanze Kratel
+last_modified_date: '2015-10-29'
+last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -13,9 +13,9 @@ body_format: tinymce
 Which of the Rackspace Intelligence services would you like to use?
 
 -   [Rackspace Intelligence for cloud
-    accounts](https://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-intelligence-for-the-cloud)
+    accounts](/howto/getting-started-with-rackspace-intelligence-for-the-cloud)
 -   [Rackspace Intelligence for dedicated
-    accounts](https://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-intelligence-for-dedicated-accounts)
+    accounts](/howto/getting-started-with-rackspace-intelligence-for-dedicated-accounts)
 
 Differences between Rackspace Intelligence for cloud accounts and dedicated accounts
 ------------------------------------------------------------------------------------
@@ -27,37 +27,38 @@ features are supported.
 The following table shows the differences in feature support between
 Rackspace Intelligence for dedicated and cloud accounts.
 
-+--------------------------------------+--------------------------------------+
-| Rackspace Intelligence for dedicated | Rackspace Intelligence for cloud     |
-| accounts                             | accounts                             |
-+======================================+======================================+
-| Customers *cannot* create or edit    | Customers can use Rackspace          |
-| any entities, checks, alarms,        | Intelligence to create and edit      |
-| notifications, or notification       | entities, checks, alarms,            |
-| plans. They can use the Rackspace    | notifications, and notification      |
-| Intelligence UI to view the          | plans.                               |
-| configuration of these elements.     |                                      |
-+--------------------------------------+--------------------------------------+
-| Customers *cannot* configure any     | Customers can use the Rackspace      |
-| suppressions via the Rackspace       | Intelligence UI to configure         |
-| Intelligence UI. To set up a         | suppressions.                        |
-| suppression, customers must contact  |                                      |
-| Support.                             |                                      |
-+--------------------------------------+--------------------------------------+
-| Customers can use only the following | Customers can use the Rackspace      |
-| remote-type checks: *tcp*, *ping*,   | Intelligence UI to configure         |
-| and *http*. They can view the        | remote-type and agent-type checks.   |
-| configuration of these checks in the | For more information, see [Working   |
-| Rackspace Intelligence UI.           | with                                 |
-|                                      | checks](http://www.rackspace.com/kno |
-|                                      | wledge_center/article/working-with-c |
-|                                      | hecks).                              |
-+--------------------------------------+--------------------------------------+
-| Customers *cannot* install or use    | Customers can configure, install,    |
-| any monitoring agents.               | and use monitoring agents.           |
-+--------------------------------------+--------------------------------------+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Rackspace Intelligence for dedicated accounts</th>
+<th align="left">Rackspace Intelligence for cloud accounts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Customers <em>cannot</em> create or edit any entities, checks, alarms, notifications, or notification plans. They can use the Rackspace Intelligence UI to view the configuration of these elements.</td>
+<td align="left">Customers can use Rackspace Intelligence to create and edit entities, checks, alarms, notifications, and notification plans.</td>
+</tr>
+<tr class="even">
+<td align="left">Customers <em>cannot</em> configure any suppressions via the Rackspace Intelligence UI. To set up a suppression, customers must contact Support.</td>
+<td align="left">Customers can use the Rackspace Intelligence UI to configure suppressions.</td>
+</tr>
+<tr class="odd">
+<td align="left">Customers can use only the following remote-type checks: <em>tcp</em>, <em>ping</em>, and <em>http</em>. They can view the configuration of these checks in the Rackspace Intelligence UI.</td>
+<td align="left">Customers can use the Rackspace Intelligence UI to configure remote-type and agent-type checks. For more information, see <a href="/howto/working-with-checks">Working with checks</a>.</td>
+</tr>
+<tr class="even">
+<td align="left">Customers <em>cannot</em> install or use any monitoring agents.</td>
+<td align="left"><p>Customers can configure, install, and use monitoring agents.</p></td>
+</tr>
+</tbody>
+</table>
 
- 
 
- 
+
+
 

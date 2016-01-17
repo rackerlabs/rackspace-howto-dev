@@ -2,10 +2,10 @@
 node_id: 3663
 title: Using task states with server imaging
 type: article
-created_date: '2013-08-28 16:31:37'
-created_by: brian.rosmaita
-last_modified_date: '2015-06-03 17:4436'
-last_modified_by: kelly.holcomb
+created_date: '2013-08-28'
+created_by: Brian Rosmaita
+last_modified_date: '2015-06-03'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -100,9 +100,9 @@ line.  If you haven't used it before, here are some Knowledge Center
 articles to check out:
 
 -   [Installing python-novaclient on Linux and Mac
-    OS](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-linux-and-mac-os)
+    OS](/howto/installing-python-novaclient-on-linux-and-mac-os)
 -   [Installing python-novaclient on
-    Windows](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-windows)
+    Windows](/howto/installing-python-novaclient-on-windows)
 
 These articles will provide you with an overview of python-novaclient
 and complete instructions for installing it on your operating system of
@@ -132,28 +132,31 @@ Here's an abbreviated response:
 In this example, you can see that there's no task state for the server,
 so it could accept an image-create request.
 
- 
+<span> </span>
 
 ### Polling to Check Server Task State
 
-The use case for server task states we're discussing here is the ability
-to:
+<span>The use case for server task states we're discussing here is the
+ability to:</span>
 
-1.  Stop activities on the server that would affect the quality of the
-    disk image (e.g., stop a database management system).
-2.  Issue an image-create command (via API, novaclient, or control
-    panel) for the server.
-3.  Monitor the server to see when it exits the 'image\_snapshot' task
-    state.
-4.  Restart the activities stopped before you took the snapshot (e.g.,
-    bring your database management system back up).
+1.  <span><span>Stop activities on the server that would affect the
+    quality of the disk image (e.g., stop a database
+    management system).</span></span>
+2.  <span><span>Issue an image-create command (via API, novaclient, or
+    control panel) for the server.</span></span>
+3.  <span><span>Monitor the server to see when it exits the
+    'image\_snapshot' task state.</span></span>
+4.  <span><span>Restart the activities stopped before you took the
+    snapshot (e.g., bring your database management system
+    back up).</span></span>
 
-You can write a simple bash script to monitor your server.  How
-elaborate you want the script to be is up to you, here's a sample of the
-most relevant part.  (Please read through and make sure you know what
-it's doing before using it.)  It uses four programs (curl, egrep, sed,
-and date) that are installed by default on most linux systems.  This
-fragment is pretty primitive, you have to control-C to stop the script.
+<span><span>You can write a simple bash script to monitor your server.
+ How elaborate you want the script to be is up to you, here's a sample
+of the most relevant part.  (Please read through and make sure you know
+what it's doing before using it.)  It uses four programs (curl, egrep,
+sed, and date) that are installed by default on most linux systems.
+This fragment is pretty primitive, you have to control-C to stop the
+script.</span></span>
 
     # set these vars
     #

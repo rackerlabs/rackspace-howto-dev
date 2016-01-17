@@ -2,10 +2,10 @@
 node_id: 1121
 title: Mounting Rackspace Cloud Files to Linux Using CloudFuse
 type: article
-created_date: '2011-06-07 23:24:14'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 22:1456'
-last_modified_by: kyle.laffoon
+created_date: '2011-06-07'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -18,10 +18,10 @@ Please do not contact support for assistance with setting up CloudFuse.
 
 ## Contents
 
--  [1 Mounting Rackspace Cloud Files to Linux Using CloudFuse](https://admin.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse#Mounting_Rackspace_Cloud_Files_to_Linux_Using_CloudFuse)
--  [2 Compiling and installing CloudFuse](https://admin.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse#Compiling_and_installing_CloudFuse)
--  [3 Mounting Cloud Files:](https://admin.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse#Mounting_Cloud_Files:)
--  [4 Auth URLs:](https://admin.rackspace.com/knowledge_center/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse#Auth_URLs:)
+-  [1 Mounting Rackspace Cloud Files to Linux Using CloudFuse](/howto/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+-  [2 Compiling and installing CloudFuse](/howto/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+-  [3 Mounting Cloud Files:](/howto/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+-  [4 Auth URLs:](/howto/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
  |
 | --- |
 
@@ -122,12 +122,12 @@ If everything went fine, you should now have CloudFuse installed properly. Confi
         redbo-cloudfuse-0a51180# which cloudfuse
         /usr/local/bin/cloudfuse
         redbo-cloudfuse-0a51180#
-        
+
 ### Mounting Cloud Files:
 
 Now use CloudFuse to mount our Cloud Files.
 
-You'll have to create a configuration file for CloudFuse in your home directory and put your Rackspace Cloud Files username and API key in it, as shown below. (For information on viewing your Rackspace API key, see [View and reset your API key](https://admin.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).)
+You'll have to create a configuration file for CloudFuse in your home directory and put your Rackspace Cloud Files username and API key in it, as shown below. (For information on viewing your Rackspace API key, see [View and reset your API key](/howto/view-and-reset-your-api-key).)
 
         $HOME/.cloudfuse
         username=[username]

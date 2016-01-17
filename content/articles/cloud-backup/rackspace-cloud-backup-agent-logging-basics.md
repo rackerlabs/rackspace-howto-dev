@@ -2,10 +2,10 @@
 node_id: 4081
 title: Cloud Backup agent logging basics
 type: article
-created_date: '2014-05-29 22:49:17'
-created_by: ross.diaz
-last_modified_date: '2016-01-04 21:4743'
-last_modified_by: kyle.laffoon
+created_date: '2014-05-29'
+created_by: Ross Diaz
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -128,11 +128,6 @@ support ticket. In order to make your logs easily available to Rackspace
 Support, we recommend that you upload them to your Cloud Files account
 in a public container. From there, you copy the download or streaming
 links for the log files and paste the links into your support ticket.
-Read the following articles for more information about [uploading files
-to Cloud Files through the Control
-Panel](http://www.rackspace.com/knowledge_center/frequently-asked-question/how-do-i-use-the-cloud-files-cdn-manager) or
-[uploading files to Cloud Files using the
-API](http://docs.rackspace.com/files/api/v1/cf-getting-started/content/Using_the_API_Directly.html).
 
 Locations of Cloud Backup agent files
 -------------------------------------
@@ -150,7 +145,7 @@ on Linux systems:
 -   Startup script: /etc/init.d
 -   Application: /usr/local/bin
 -   PID file for running the agent: /var/run/driveclient.pid
--   Database: search for a \*.db file under /var/cache/driveclient 
+-   Database: search for a \*.db file under /var/cache/driveclient
 
 **Note: **If driveclient is installed as an individual user, most of
 these files are under \~/.driveclient.
@@ -159,21 +154,21 @@ these files are under \~/.driveclient.
 
 Finding the driveclient files under various flavors of Windows is a
 little more complicated. In general, you can find these files under the
-folder to which CSIDL\_COMMON\_APPDATA points. 
+folder to which CSIDL\_COMMON\_APPDATA points.
 
 -   For more information about this location on Windows versions
     starting with Vista, see
-    [KNOWNFOLDERID](http://msdn.microsoft.com/en-us/library/windows/desktop/dd378457(v=vs.85).aspx). 
+    [KNOWNFOLDERID](http://msdn.microsoft.com/en-us/library/windows/desktop/dd378457(v=vs.85).aspx).
 -   For more information about this location on earlier versions of
     Windows, see
     [CSIDL](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx).
-     
 
-In a typical installation, the files will be located in these folders: 
 
--   Configuration files: %ProgramData%\\Driveclient 
--   Logs: %ProgramData%\\Driveclient\\logs 
--   Application: %ProgramFiles%\\Driveclient 
+In a typical installation, the files will be located in these folders:
+
+-   Configuration files: %ProgramData%\\Driveclient
+-   Logs: %ProgramData%\\Driveclient\\logs
+-   Application: %ProgramFiles%\\Driveclient
 -   Database: search for a \*.db file under %ProgramData%\\Driveclient
 
 Disable logging
@@ -182,5 +177,5 @@ Disable logging
 To disable logging, remove the tag named `appender-ref` from
 `log4cxx.xml`.
 
- 
+
 

@@ -2,9 +2,9 @@
 node_id: 3650
 title: Permissions Matrix for Cloud Queues
 type: article
-created_date: '2013-08-19 20:46:52'
-created_by: renee.rendon
-last_modified_date: '2016-01-05 21:1907'
+created_date: '2013-08-19'
+created_by: Renee Rendon
+last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Queues
 body_format: tinymce
@@ -12,22 +12,22 @@ body_format: tinymce
 
 The following permissions matrix displays specific permissions for the
 roles in Cloud Queues. The matrix displays the method names, their
-corresponding RESTful API commands, and the roles that are supported.  
+corresponding RESTful API commands, and the roles that are supported.
 
 **[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](/howto/)**
 
 **[Cloud Queues Terminology](#queues)**
 
-**As of October 4, 2013**
+**<span>As of October 4, 2013</span>**
 
 CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
 Method Name
 
@@ -39,259 +39,312 @@ Creator
 
 Admin
 
- 
+
 
 ### HOME DOCUMENT
 
-Get Home Document
+<span>Get Home Document</span>
 
-GET {version}
+<span>GET {version}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Gets the home document.    
+<span>Gets the home document.    </span>
 
 ### QUEUES
 
-List Queues
+<span>List Queues</span>
 
-GET/ *{*version}/queues?marker*=string&*limit*=integer&*detailed*=boolean*
+<span>GET/ </span>*{*<span>version}/queues?marker</span>*=string&*<span>limit</span>*=integer&*<span>detailed</span>*=boolean*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Lists queues.     
+<span><span>Lists queues.    </span> </span>
 
-Create Queue
+<span>Create Queue</span>
 
-PUT/ {version}/queues/{queue\_name}
+<span>PUT/ {version}/queues/{queue\_name}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Creates a queue.     
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Delete Queue
+<span>Creates a queue.    </span>
 
-DELETE/ {version}/queues/{queue\_name}
+<span>Delete Queue</span>
 
- 
+<span>DELETE/ {version}/queues/{queue\_name}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Deletes the queue.     
 
-Check Queue Existence
 
-GET/ *{version}/queues/{queue\_name}*
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span><span>Deletes the queue.    </span> </span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>Check Queue Existence</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET/ </span>*{version}/queues/{queue\_name}*
 
-Verifies whether the specified queue exists.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Set Queue Metadata
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-PUT/ {version}/queues/{queue\_name}/metadata
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- 
+<span>Verifies whether the specified queue exists.</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>Set Queue Metadata</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>PUT/ {version}/queues/{queue\_name}/metadata</span>
 
-Sets queue metadata.     
 
-Show Queue Metadata
 
-GET/ {version}/queues/{queue\_name}/metadata
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span><span>Sets queue metadata.    </span> </span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>Show Queue Metadata</span>
 
-Returns queue metadata.     
+<span>GET/ {version}/queues/{queue\_name}/metadata</span>
 
-Show Queue Stats
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-GET/ {version}/queues/{queue\_name}/stats
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span><span>Returns queue metadata.    </span> </span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>Show Queue Stats</span>
 
-Returns queue statistics.     
+<span>GET/ {version}/queues/{queue\_name}/stats</span>
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span><span>Returns queue statistics.    </span> </span>
 
 ### MESSAGES
 
-Post Messages
+<span>Post Messages</span>
 
-POST/ {version}/queues/{queue\_name}/messages
+<span>POST/ {version}/queues/{queue\_name}/messages</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Posts the message or messages for the specified queue.    
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Get Messages
+<span>Posts the message or messages for the specified queue.    </span>
 
-GET/
-{version}/queues/{queue\_name}/messages?marker=*string*&limit=*integer*<br>
- &echo+*=boolean*&include\_claimed=*boolean*
+<span>Get Messages</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET/
+{version}/queues/{queue\_name}/messages?marker=</span>*string*<span>&limit=</span>*integer*
+<span>&echo+</span>*=boolean*<span>&include\_claimed=</span>*boolean*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Gets the message or messages in the specified queue.     
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Get Messages by ID
+<span><span>Gets the message or messages in the specified queue.
+ </span> </span>
 
-GET/
-{version}/queues/{queue\_name}/messages/{messageId}?claim\_id=*string*
+<span>Get Messages by ID</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET/
+{version}/queues/{queue\_name}/messages/{messageId}?claim\_id=</span>*string*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Gets the specified set of messages from the specified queue.      
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Bulk-delete Messages by ID
+<span><span><span>Gets the specified set of messages from the specified
+queue.</span>  </span><span>   </span> </span>
 
-DELETE /{version}/queues/{queue\_name}/messages ?ids=*string*
+<span>Bulk-delete Messages by ID</span>
 
- 
+<span>DELETE /{version}/queues/{queue\_name}/messages ?id</span><span
+class="s1">s</span><span>=</span>*string*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Bulk-deletes for messages.
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Show Message Details
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-GET/
-{version}/queues/{queue\_name}/messages?ids=*string*&claim\_id=*string*
+<span>Bulk-deletes for messages.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>Show Message Details</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET/
+{version}/queues/{queue\_name}/messages?ids=</span>*string*<span>&claim\_id=</span>*string*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Shows details for the specified message from the specified queue.
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Delete Message
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-DELETE/ {version}/queues/{queue\_name}/messages?claim\_id=*string*
+<span>Shows details for the specified message from the specified
+queue.</span>
 
- 
+<span>Delete Message</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>DELETE/
+{version}/queues/{queue\_name}/messages?claim\_id=</span>*string*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Deletes the specified message from the specified queue.
+
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span>Deletes the specified message from the specified queue.</span>
 
 ### CLAIMS
 
-Claim Messages
+<span>Claim Messages</span>
 
-POST/ {version}/queues/{queue\_name}/claim?limit=*integer*
+<span>POST/ {version}/queues/{queue\_name}/claim?limit=</span>*integer*
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Claims a set of messages from the specified queue.     
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Query Claim
+<span><span>Claims a set of messages from the specified queue.
+ </span> </span>
 
-GET/ {version}/queues/{queue\_name}/claims/{claimId}
+<span>Query Claim</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>GET/ {version}/queues/{queue\_name}/claims/{claimId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Queries the specified claim for the specified queue.     
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Update Claim
+<span>Queries the specified claim for the specified queue.    </span>
 
-PATCH/ {version}/queues/{queue\_name}/claims/{claimId}
+<span>Update Claim</span>
 
- 
+<span>PATCH/ {version}/queues/{queue\_name}/claims/{claimId}</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Updates the specified claim for the specified queue.     
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-Release Claim
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
 
-DELETE/ {version}/queues/{queue\_name}/claims/{claimId}
+<span><span>Updates the specified claim for the specified queue.
+ </span> </span>
 
- 
+<span>Release Claim</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
+<span>DELETE/ {version}/queues/{queue\_name}/claims/{claimId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png)
 
-Releases the specified claim for the specified queue.     
 
- 
+ ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
+height="39"}
+
+<span><span>Releases the specified claim for the specified queue.
+ </span> </span>
+
+
 -
 
-Cloud Queues Terminology
-------------------------
+[](){#queues}Cloud Queues Terminology
+-------------------------------------
 
 ### Message
 
-A message is a task, a notification, or any meaningful data that gets
-posted to the queue. A message exists until it is deleted by a recipient
-or automatically by the system based on a TTL (time-to-live) value.
+<span>A message is a task, a notification, or any meaningful data that
+gets posted to the queue. A message exists until it is deleted by a
+recipient or automatically by the system based on a TTL (time-to-live)
+value.</span>
 
-### Queue
+### <span>Queue</span>
 
-A queue holds messages. Ideally, a queue is created per work type. For
-example, if you want to compress files, you would create a queue
+<span>A queue holds messages. Ideally, a queue is created per work type.
+For example, if you want to compress files, you would create a queue
 dedicated to this job. Any application that reads from this queue would
-only compress files.
+only compress files.</span>
 
-###  
+### <span> </span>
 
-[\< Permission Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
+[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+
 

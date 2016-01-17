@@ -2,10 +2,10 @@
 node_id: 1355
 title: Introducing the Rackspace Cloud Control Panel
 type: article
-created_date: '2012-03-27 17:44:33'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 19:3108'
-last_modified_by: kyle.laffoon
+created_date: '2012-03-27'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,9 +13,9 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/getting-started/cloud-servers)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
+
 
 The[Cloud Control Panel](https://mycloud.rackspace.com) lets you manage
 your Rackspace Cloud infrastructure through a simple and intuitive
@@ -23,8 +23,8 @@ interface. This article introduces you to some of the features of the
 control panel that will make your daily administration tasks seem
 effortless.
 
-Control panel navigation
-------------------------
+[](){#nav}Control panel navigation
+----------------------------------
 
 With a few clicks, you'll be in the product workspace where you can
 begin managing your cloud resources.
@@ -35,10 +35,9 @@ Product area headings (Servers, Networking, Storage, Databases,
 Orchestration, and Backups) run across the top of the screen. To access
 individual products, click the heading to view a drop-down menu of all
 the products in that area. For example, the following image shows the
-menu for Servers.<br>
- <br>
+menu for Servers.
 
-![](/knowledge_center/sites/default/files/field/image/Node1355-SCEdit.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Node1355-SCEdit.png)
 
 Rackspace Cloud products are categorized under the following headings:
 
@@ -69,7 +68,9 @@ Rackspace Cloud products are categorized under the following headings:
 -   Database Backups
 -   Configurations
 -   Object Rocket
--   Big Data Powered by Apache&trade; Hadoop&reg;
+-   Big Data <span class="pilot-caption">Powered by Apache<span
+    class="super-script">&trade;</span> Hadoop<span
+    class="super-script">&reg;</span></span>
 
 **Orchestration**
 
@@ -77,8 +78,20 @@ Rackspace Cloud products are categorized under the following headings:
 
 **Backups**
 
+<div class="rs-popover-content">
+
+<div class="pilot-nav-popover">
+
+<div class="pilot-nav-menu">
+
 -   Cloud Server Backups
 -   Database Backups
+
+</div>
+
+</div>
+
+</div>
 
 Organization
 ------------
@@ -94,7 +107,8 @@ many as you'd like and assign them as needed. For example, you could
 distinguish your servers by their functional role, a certain website
 association, a specific technology, or even by geographical location.
 
-![](/knowledge_center/sites/default/files/field/image/NewCPTagging_1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/NewCPTagging_1.png){width="494"
+height="162"}
 
 ### Filters
 
@@ -107,28 +121,30 @@ the matching ones.
 
 An example of what the filters might look like for Cloud Servers:
 
-![](/knowledge_center/sites/default/files/field/image/1355.1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.1.png){width="178"
+height="534"}
 
 Tags are included in the list of filters, which gives you a powerful yet
 simple way to find only the specific resources that you want to work
 with. For example, you could filter your list of servers to show all 2
 GB servers that you've tagged as **Production**. Using the Status
 filter, you can drill down even further and find the servers that are
-currently running, offline, or have a different status. 
+currently running, offline, or have a different status.
 
 ### Search
 
 A convenient and fast search field in the upper-right corner of each
 asset listing gives you another method for locating any asset. Simply
-enter part of the asset name, tag, or IP address in the search field. 
+enter part of the asset name, tag, or IP address in the search field.
 
-![](/knowledge_center/sites/default/files/field/image/1355.2.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.2.png){width="281"
+height="149"}
 
 When you use tags, filters, and search, your cloud inventory can grow to
 any size and you'll still be able to promptly locate and manage any
 asset.
 
- 
+
 -
 
 Administrative actions
@@ -149,14 +165,16 @@ it's a list of servers, files, or load balancers. The following image
 shows the actions gear drop-down menu for a cloud server named
 1TestVyatta:
 
-![](/knowledge_center/sites/default/files/field/image/1355.3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.3.png){width="227"
+height="411"}
 
 ### Actions menu
 
 If you're looking at the details of a specific resource, you'll find the
-**Actions **drop-down menu in the upper-right corner of the screen. 
+**Actions **drop-down menu in the upper-right corner of the screen.
 
-![](/knowledge_center/sites/default/files/field/image/1355.4.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.4.png){width="157"
+height="366"}
 
 ### Edit pencils and options
 
@@ -165,20 +183,22 @@ edit pencil or option that appears next to the resource description. For
 example, you could rebuild the image or add a record by clicking the
 option that appears after the description for each setting.
 
-![](/knowledge_center/sites/default/files/field/image/1355.5.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.5.png){width="603"
+height="414"}
 
-###  
+###
 
 ### Popup boxes
 
 When you perform an administrative action on a resource, a popup dialog
 box lets you modify the settings or perform an action without taking you
 to another page. You can modify a resource much faster because you don't
-have to wait for the page to reload. 
+have to wait for the page to reload.
 
-![](/knowledge_center/sites/default/files/field/image/1355.6.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.6.png){width="391"
+height="233"}
 
- 
+
 -
 
 Accessing the Cloud Sites Control Panel
@@ -188,12 +208,13 @@ You can reach the Cloud Sites Control Panel by selecting the option from
 the **Cloud Control Panel** drop-down menu at the top left of the Cloud
 Control Panel.
 
-![](/knowledge_center/sites/default/files/field/image/1355.7.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1355.7.png){width="159"
+height="274"}
 
- 
+
 
 ### Next section
 
 [Generating Your API
-key](https://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+key](/howto/view-and-reset-your-api-key)
 

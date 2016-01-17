@@ -2,16 +2,16 @@
 node_id: 1721
 title: 'Cloud Databases: Developer resources and how-to articles'
 type: article
-created_date: '2012-07-24 22:18:31'
+created_date: '2012-07-24'
 created_by: Jerry Schwartz
-last_modified_date: '2016-01-14 20:3521'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 body_format: tinymce
 ---
 
 The Rackspace [Knowledge
-Center](http://www.rackspace.com/knowledge_center/) provides how-to
+Center](/howto/) provides how-to
 articles, getting started guides, code samples, security best practices
 and hundreds of tips for getting the most out of your Rackspace Cloud
 Databases.
@@ -30,17 +30,17 @@ Databases.
 ### Popular how-to articles
 
 -   [Rackspace Cloud Databases
-    FAQs](http://www.rackspace.com/knowledge_center/product-faq/cloud-databases)
+    FAQs](/howto/product-faq/cloud-databases)
 -   [Rackspace Cloud Databases: Public Vs. Private
-    Access](http://www.rackspace.com/knowledge_center/article/public-and-private-access-for-cloud-databases)
+    Access](/howto/article/public-and-private-access-for-cloud-databases)
 -   [Rackspace Cloud Databases: Connecting to Your
-    Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance)
+    Database](/howto/article/connect-to-a-cloud-databases-instance)
 -   [Rackspace Cloud Databases: Importing
-    Data](http://www.rackspace.com/knowledge_center/article/importing-data-into-cloud-databases)
+    Data](/howto/article/importing-data-into-cloud-databases)
 -   [Rackspace Cloud Databases: Managing
-    Users](http://www.rackspace.com/knowledge_center/article/managing-users-for-cloud-databases)
+    Users](/howto/article/managing-users-for-cloud-databases)
 -   [Rackspace Cloud Databases: Creating an
-    Instance](http://www.rackspace.com/knowledge_center/article/cloud-database-instance-parameters)
+    Instance](/howto/article/cloud-database-instance-parameters)
 
 ### Popular technical articles and other resources
 
@@ -65,19 +65,14 @@ needed. The service currently focuses on providing resource isolation at
 high performance while automating complex administrative tasks including
 deployment, configuration, patching, backups, restores, and monitoring.
 
--   Wiki:
-    [https://wiki.openstack.org/wiki/Trove](https://wiki.openstack.org/wiki/Trove)
--   Project Pages:
-    [https://launchpad.net/trove](https://launchpad.net/trove)
--   Drivers:
-    [https://launchpad.net/\~trove-drivers](https://launchpad.net/~trove-drivers)
--   Blueprint:
-    [https://blueprints.launchpad.net/trove](https://blueprints.launchpad.net/trove)
--   Code:
-    [https://github.com/openstack/trove](https://github.com/openstack/trove)
+-   Wiki: <https://wiki.openstack.org/wiki/Trove>
+-   Project Pages: <https://launchpad.net/trove>
+-   Drivers: <https://launchpad.net/~trove-drivers>
+-   Blueprint: <https://blueprints.launchpad.net/trove>
+-   Code: <https://github.com/openstack/trove>
 -   Test and Deployment Images:
-    -   [http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86\_64-openvz.tar.gz](http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86_64-openvz.tar.gz)
-    -   [http://c629296.r96.cf2.rackcdn.com/lucid\_ext3\_openvz.box](http://c629296.r96.cf2.rackcdn.com/lucid_ext3_openvz.box)
+    -   <http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86_64-openvz.tar.gz>
+    -   <http://c629296.r96.cf2.rackcdn.com/lucid_ext3_openvz.box>
 
- 
+
 

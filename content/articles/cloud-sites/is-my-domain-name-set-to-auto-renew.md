@@ -2,10 +2,10 @@
 node_id: 675
 title: Is my domain name set to auto renew?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 16:5241'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -16,5 +16,5 @@ Control Panel. Please see the following article on how to manually renew
 your domain:
 
 [How Do I Renew My
-Domain?](http://www.rackspace.com/knowledge_center/article/how-do-i-renew-my-domain-name-for-cloud-sites)
+Domain?](/howto/renew-a-cloud-sites-domain-name)
 

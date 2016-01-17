@@ -2,10 +2,10 @@
 node_id: 1529
 title: Rackspace Name Servers
 type: article
-created_date: '2012-07-24 00:56:30'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-05 17:2949'
-last_modified_by: catherine.richardson
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-05'
+last_modified_by: Catherine Richardson
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -61,14 +61,14 @@ Sites](http://www.rackspace.com/cloud/cloud_hosting_products/sites/ "http://www.
 service. To host a domain that you have registered on your Rackspace
 Cloud Server, go to your domain registrar and [set the nameservers to
 Rackspace's
-nameservers](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud).
+nameservers](/howto/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud).
 This will allow DNS to route to your domain hosted on your Cloud Server.
 
 ### Related Information
 
 [Serving Your Domain From a Rackspace Cloud
-Server](http://www.rackspace.com/knowledge_center/article/serving-your-domain-from-a-rackspace-cloud-server "Serving Your Domain From a Rackspace Cloud Server")
+Server](/howto/serving-your-domain-from-a-rackspace-cloud-server "Serving Your Domain From a Rackspace Cloud Server")
 
 [Create DNS Records for Cloud Servers with the Control
-Panel](http://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel "Create DNS Records for Cloud Servers with the Control Panel")
+Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel "Create DNS Records for Cloud Servers with the Control Panel")
 

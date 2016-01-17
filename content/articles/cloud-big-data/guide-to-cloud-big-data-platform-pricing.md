@@ -2,10 +2,10 @@
 node_id: 4063
 title: Cloud Big Data Platform provisioning and pricing
 type: article
-created_date: '2014-05-07 15:02:15'
-created_by: david.grier
-last_modified_date: '2016-01-04 20:5430'
-last_modified_by: kyle.laffoon
+created_date: '2014-05-07'
+created_by: David Grier
+last_modified_date: '2016-01-04'
+last_modified_by: Kyle Laffoon
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -34,39 +34,73 @@ Data node instances
 
 Cloud Big Data Platform offers four datanode sizes:
 
-+----------------+----------------+----------------+----------------+----------------+
-| ### **Flavor I | ### **Name**   | ### **vCPU**   | ### **RAM**    | ### **Disk**   |
-| D**            |                |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
-| hadoop1-7      | Small Hadoop   | 2              | 7.5G           | 1.25T          |
-|                | Instance       |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
-| hadoop1-15     | Medium Hadoop  | 4              | 15G            | 2.5T           |
-|                | Instance       |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
-| hadoop1-30     | Large Hadoop   | 8              | 30G            | 5T             |
-|                | Instance       |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
-| hadoop1-60     | XLarge Hadoop  | 16             | 60G            | 10T            |
-|                | Instance       |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
-| onmetal-io1    | OnMetal Hadoop | 40             | 128G           | 3.2T           |
-|                | instance       |                |                |                |
-+----------------+----------------+----------------+----------------+----------------+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><h3 id="flavor-id"><strong>Flavor ID</strong></h3></td>
+<td align="left"><h3 id="name"><strong>Name</strong></h3></td>
+<td align="left"><h3 id="vcpu"><strong>vCPU</strong></h3></td>
+<td align="left"><h3 id="ram"><strong>RAM</strong></h3></td>
+<td align="left"><h3 id="disk"><strong>Disk</strong></h3></td>
+</tr>
+<tr class="even">
+<td align="left"><p>hadoop1-7</p></td>
+<td align="left"><p>Small Hadoop Instance</p></td>
+<td align="left"><p>2</p></td>
+<td align="left"><p>7.5G</p></td>
+<td align="left"><p>1.25T</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>hadoop1-15</p></td>
+<td align="left"><p>Medium Hadoop Instance</p></td>
+<td align="left"><p>4</p></td>
+<td align="left"><p>15G</p></td>
+<td align="left"><p>2.5T</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>hadoop1-30</p></td>
+<td align="left"><p>Large Hadoop Instance</p></td>
+<td align="left"><p>8</p></td>
+<td align="left"><p>30G</p></td>
+<td align="left"><p>5T</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>hadoop1-60</p></td>
+<td align="left"><p>XLarge Hadoop Instance</p></td>
+<td align="left"><p>16</p></td>
+<td align="left"><p>60G</p></td>
+<td align="left"><p>10T</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>onmetal-io1</p></td>
+<td align="left">OnMetal Hadoop instance</td>
+<td align="left">40</td>
+<td align="left">128G</td>
+<td align="left">3.2T</td>
+</tr>
+</tbody>
+</table>
 
 When provisioning, you need to know how much data node (disk) space is
 needed to process your query or job. HDFS has a configurable level of
 replication which we set based on the size of the provisioned cluster.
 
--   Replication Factor 1: 1-2 Datanodes
--   Replication Factor 2: 3-4 Datanodes
--   Replication Factor 3: \>4 Datanodes
+-   <span>Replication Factor 1: 1-2 Datanodes</span>
+-   <span>Replication Factor 2: 3-4 Datanodes</span>
+-   <span>Replication Factor 3: &gt;4 Datanodes</span>
 
 Considering a Cloud Big Data deployment with 3x replication, you must
 first take your raw data set and multiply that volume by 3. This value
-indicates how much Cloud Big Data Platform resources you need.<br>
- <br>
- One additional thing to note is that a 10 TB instance actually occupies
+indicates how much Cloud Big Data Platform resources you need.
+
+One additional thing to note is that a 10 TB instance actually occupies
 an entire physical machine, so users do not have to worry about sharing
 resources.
 
@@ -109,7 +143,7 @@ Cloud Files integration
 One of the main features of Cloud Big Data Platform is its ability to
 process data that lives in Cloud Files. For detailed information about
 how to do this, see [Getting data into your Big Data Cluster
-guide](http://www.rackspace.com/knowledge_center/article/getting-data-into-your-big-data-cluster).
+guide](/howto/getting-data-into-your-big-data-cluster).
 It is important to note that any usage of Cloud Files is billed at the
 storage rate for Cloud Files as outlined on the [Cloud Files pricing
 page](http://www.rackspace.com/cloud/files/pricing/). Bandwidth and

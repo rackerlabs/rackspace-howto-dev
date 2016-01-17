@@ -2,11 +2,11 @@
 node_id: 951
 title: Manually configure Mac Mail for email hosted on Exchange 2007
 type: article
-created_date: '2012-02-28 01:09:51'
-created_by: aaron.medrano
-last_modified_date: '2015-01-09 21:5545'
-last_modified_by: jered.heeschen
-product: Exchange
+created_date: '2012-02-28'
+created_by: Aaron Medrano
+last_modified_date: '2015-01-09'
+last_modified_by: Jered Heeschen
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
@@ -18,18 +18,20 @@ you're unsure about which OS X version you're running, click the
 **Apple** icon located in the top-left corner and select **About This
 Mac**.
 
-1.  Open Mac Mail and select **Mail \>** **Preferences**.
-2.  In the new window that appears, click the **Accounts**tab in the top
-    menu bar and then click the plus (+) symbol in the lower-left
-    corner.
+1.  Open Mac Mail and select **Mail &gt;** **Preferences**.
+2.  In the new window that appears, click the **Accounts** tab in the
+    top menu bar and then click the plus (+) symbol in the
+    lower-left corner.
 3.  Select **Exchange** and then click **Continue.**
 
-    ![](/knowledge_center/sites/default/files/field/image/MM071.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM071.png){width="441"
+    height="451"}
 
 4.  On the next page, enter your full name and your entire Microsoft
     Exchange email address and password,and then click **Continue**.
 
-    ![](/knowledge_center/sites/default/files/field/image/MM072.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM072.png){width="434"
+    height="374"}
 
     -   If your Autodiscover CNAME record is set correctly, Mail
         automatically pulls the correct server settings for you. Skip to
@@ -39,7 +41,7 @@ Mac**.
         Control Panel. Continue with the next step.
 
 5.  Log in to the User Control Panel by going to the following link:
-    [https://cp.rackspace.com/usercp](https://cp.rackspace.com/usercp).
+    <https://cp.rackspace.com/usercp>.
 6.  Find the Mac Mail icon under the **Client Setup** section and click
     it to open the settings for your account. You will use these
     settings in the next step.
@@ -54,16 +56,19 @@ Mac**.
     -   **Server Address** &ndash; From the Setting Up Mac Mail window (from
         step 6), remove **https:**// and /**ews/exchange.asmx** .
 
-    <br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/MM073.png)
-8.  Confirm the settings and then click **Continue**.<br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/MM074.png)
+
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM073.png){width="412"
+    height="352"}
+8.  Confirm the settings and then click **Continue**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM074.png){width="422"
+    height="361"}
 9.  Choose any other options that you want to enable, and then click
-    **Done**.<br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/MM075.png)
+    **Done**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM075.png){width="407"
+    height="342"}
 
 Your Microsoft Exchange 2007 email account is now set up with Mac Mail.
 

@@ -2,10 +2,10 @@
 node_id: 207
 title: Cancel your Cloud Sites account
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-07 22:2327'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-05-07'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,12 +20,17 @@ Rackspace Cloud accepts cancellations via the cancellation form located
 in the control panel. Cancellations that are submitted via email, phone,
 or chat are not accepted.
 
-Before you submit a cancellation request, create a backup of your
-website, database, and email. If you are running a cloud server, you
-must delete the server to stop billing. All data is removed from our
-systems when we process the account closure. If you want your data
-removed immediately, complete the deletion process before submitting a
-cancellation request.
+<span style="line-height: 20.7999992370605px;">Before you submit
+a cancellation request, create a </span><span
+style="line-height: 20.7999992370605px;">back</span><span
+style="line-height: 20.7999992370605px;">up of your website, database,
+and e</span><span
+style="line-height: 20.7999992370605px;">mail</span><span
+style="line-height: 20.7999992370605px;">. If you are running a cloud
+server, you must delete the server to stop billing. All data is removed
+from our systems when we process the account closure. If you want your
+data removed immediately, complete the deletion process before
+submitting a cancellation request.</span>
 
 To cancel your account
 ----------------------

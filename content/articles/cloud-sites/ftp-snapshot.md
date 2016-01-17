@@ -2,10 +2,10 @@
 node_id: 547
 title: FTP Snapshot
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:4719'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -25,26 +25,26 @@ is not intended to be used for general backup purposes. We strongly
 recommend that you utilize your own backup process using a cron script.
 For more information on using cron scripts, see [Create a cron job to
 back up a Cloud Sites SQL Server
-database](http://www.rackspace.com/knowledge_center/article/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database).
+database](/howto/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database).
 
 ### How Do I Recover My FTP Snapshot Data?
 
 In order to view your FTP content snapshots you must first login to your
 site via FTP.  For help with this, please refer to our article
 on [Uploading content to a website using
-FTP](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content "Uploading content to a website using FTP")
+FTP](/howto/getting-started-with-cloud-sites-uploading-your-content "Uploading content to a website using FTP")
 
 Once you are logged in to your FTP site, please go to the path of the
-file(s) / folder(s) you want to attempt to recover. 
+file(s) / folder(s) you want to attempt to recover.
 
 Add "/.snapshot" (no quotes) to the end of the FTP path within your FTP
 application. This will allow you the opportunity to view the snapshots
-for the site. 
+for the site.
 
 **NOTE:** *You may need to execute a manual change directory command to
 .snapshot if you are not able to view and modify the current FTP path.*
 
-![](http://c15056451.r51.cf2.rackcdn.com/FTPSnapshot.png)
+![](http://c15056451.r51.cf2.rackcdn.com/FTPSnapshot.png){width="550"}
 
 You should see the following sub-directories if successful:
 

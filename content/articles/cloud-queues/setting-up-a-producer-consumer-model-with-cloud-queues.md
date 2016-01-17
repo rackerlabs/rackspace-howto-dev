@@ -2,17 +2,17 @@
 node_id: 3657
 title: Setting Up a Producer-Consumer Model with Cloud Queues
 type: article
-created_date: '2013-08-21 04:01:17'
-created_by: megan.meza
-last_modified_date: '2016-01-11 20:4736'
-last_modified_by: rose.contreras
+created_date: '2013-08-21'
+created_by: Megan Meza
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Queues
 body_format: tinymce
 ---
 
 Setting up a Producer-Consumer model in Cloud Queues consists of posting
 messages to your queue, consumers claiming messages from that queue, and
-then deleting the completed message. 
+then deleting the completed message.
 
 The producer-consumer mode has the following characteristics:
 
@@ -32,7 +32,7 @@ two within the same request.
 
         $ curl -i -X POST https://$ENDPOINT:443/v1/queues/samplequeue/messages -d '     [            {"ttl": 300, "body": {"event": "two"}},         {"ttl": 60, "body": {"event": "three"}}     ]     ' -H "Content-type: application/json" -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830" -H "X-Auth-Token: $TOKEN"
 
-**Note:**Use Claim TTLs to protect from agent/client failure while they
+**Note:** Use Claim TTLs to protect from agent/client failure while they
 have a message claimed.  In the event that a server goes offline and
 cannot complete the message it has claimed, the claim TTL will expire
 and that message will be returned to the queue for other consumers or
@@ -65,12 +65,12 @@ application/json" -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830"
 
 HTTP/1.1 200 OK Content-Length: 306 Content-Type: application/json;
 charset=utf-8 Location:
-/v1/queues/samplequeue/claims/51e852d01d10b2056dd5703c [{"body":
+/v1/queues/samplequeue/claims/51e852d01d10b2056dd5703c \[{"body":
 {"event": "two"}, "age": 5, "href":
 "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f10?claim\_id=51e852d01d10b2056dd5703c",
 "ttl": 300}, {"body": {"event": "three"}, "age": 5, "href":
 "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f11?claim\_id=51e852d01d10b2056dd5703c",
-"ttl": 120}]
+"ttl": 120}\]
 
 **Deleting Completed Messages**
 

@@ -2,10 +2,10 @@
 node_id: 230
 title: Deploying a Cloud Site with media content on Cloud Files
 type: article
-created_date: '2011-04-04 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 16:4533'
-last_modified_by: stephanie.fillmon
+created_date: '2011-04-04'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -23,40 +23,40 @@ upper-right corner of the Cloud Sites Control Panel and selecting
 -   [Set up a Cloud Site](#setup)
 -   [Conclusion](#conclusion)
 
-Overview
---------
+<span style="line-height: 1.2;">[](){#overview}Overview</span>
+--------------------------------------------------------------
 
 In this tutorial, you deploy a simple web page that retrieves an image
 from the Cloud Files platform. The tutorial uses some rewrite rules to
 obfuscate the origin URL to optimized searching.
 
-Prerequisites
--------------
+[](){#prereqs}Prerequisites
+---------------------------
 
--   *(If using the browser to upload)* FTP application. FileZilla is a
-    good choice.
--   *(If using program code to upload)* Python installed on the local
-    machine.
+-   *(If using the browser to upload)* FTP application.
+    <span>FileZilla</span> is a good choice.
+-   *(If using program code to upload)* <span>Python</span> installed on
+    the local machine.
 -   A plain text editor (*not* a word processing program like Microsoft
-    Word or OpenOffice). For Mac OS X or Linux, vim is a good choice.
-    For Windows, consider using NotePad++.
+    Word or OpenOffice). For Mac OS X or Linux, <span>vim</span> is a
+    good choice. For Windows, consider using <span>NotePad++</span>.
 -   A picture file. You can use any format, such as JPEG, GIF, or PNG.
 -   Mozilla Firefox or Python, depending on what method you use to
     upload to Cloud Files.
 
-Upload the image to Cloud Files
--------------------------------
+[](){#upload}Upload the image to Cloud Files
+--------------------------------------------
 
 The first step in this process is to upload your image to a CDN-enabled
 container in Cloud Files. This section describes uploading files using
 the Python SDK, however you can also use third party tools, such as
 CyberDuck to upload content.
 
-### Example: Using Python SDK 
+### Example: Using Python SDK
 
 This example assumes that you have pyrax, the Python SDK installed. For
-more information about setting up the SDK for Python, see pyrax
-installation for configuration steps.
+more information about setting up the SDK for Python, see <span>pyrax
+installation for configuration steps</span>.
 
 #### The code
 
@@ -107,8 +107,8 @@ CDN.
 When the upload is complete, the script prints out details about your
 newly-uploaded object.
 
-Set up a Cloud Site
--------------------
+[](){#setup}Set up a Cloud Site
+-------------------------------
 
 This section of the tutorial covers creating a simple page that calls
 the image by using the local server side path and creating a Cloud Site.
@@ -145,14 +145,14 @@ This rule rewrites anything called `image1.jpg`.
 
 The `{REQUEST_URI}` is a variable that holds the relative path to the
 file that is being requested, so it will always redirect to the correct
-place. If you have any questions about `mod_rewrite`, see the Apache
-documentation.
+place. If you have any questions about `mod_rewrite`, see the
+<span>Apache documentation</span>.
 
 If your application resides in a subdirectory of the main site, you
 might have trouble getting mod\_rewrite to work. Try replacing the slash
 (/) with the subdirectory of your application in the `RewriteBase`
-directive, as shown in the FAQ article Why is mod\_rewrite not working
-on my site?.
+directive, as shown in the FAQ article <span>Why is mod\_rewrite not
+working on my site?</span>.
 
 ### Create the demo Cloud Site
 
@@ -161,21 +161,21 @@ following steps:
 
 1.  Log in to [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com/pages/Login.jsp).
-2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
+2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Click **Add A Site**.
-4.  In the Add a New Website dialog box, name the domain whatever you
-    like. We recommend that you do not register a domain.
+4.  In the Add a New Website dialog box, name the domain whatever
+    you like. We recommend that you do not register a domain.
 5.  Follow the steps in the site creation process.
-6.  After the domain has been added, select the **General settings**
-    tab.
+6.  After the domain has been added, select the **General
+    settings** tab.
 7.  Copy the FTP URL.
 8.  Open your FTP application and log in using the user name and
     password for this domain.
 9.  Upload the `.htaccess` file and the simple HTML page that you
     created to the `/www.domain.com/web/content/` directory.
 
-Conclusion
-----------
+[](){#conclusion}Conclusion
+---------------------------
 
 Now navigate to the sample page that you created. The image is being
 called from Cloud Files, but if a user looks at your source code, it
@@ -184,9 +184,8 @@ change the actual HTTP request, but it does obfuscate the URL in the
 source code.
 
 If you have any questions or comments or if this tutorial is not working
-for you, send an email to
-[cloudfiles@rackspacecloud.com](mailto:cloudfiles@rackspacecloud.com)
-and we will answer any questions that you have.
+for you, send an email to <cloudfiles@rackspacecloud.com> and we will
+answer any questions that you have.
 
- 
+
 

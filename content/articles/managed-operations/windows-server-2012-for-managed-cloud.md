@@ -2,10 +2,10 @@
 node_id: 3106
 title: Windows Server 2012 R2 with Managed Operations support
 type: article
-created_date: '2012-10-09 21:44:28'
+created_date: '2012-10-09'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-12 16:4616'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 body_format: tinymce
 ---
@@ -32,129 +32,129 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 
 [Dedicated: Windows Server 2008 R2](#E)
 
-[Dedicated: Windows Server 2003 R2](#F) 
+[Dedicated: Windows Server 2003 R2](#F)
 
-### 
+### []()
 
-###  
+###
 
 ### Managed: Windows Server 2012 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Supported             Available
-  Shared-Nothing Live Migration                                   Supported             Unsupported
-  Hyper-V Network Virtualization                                  Supported             Unsupported
-  Hyper-V Replica                                                 Supported             Unsupported
-  Low Cost Highly Available Files Based Storage                   Supported             Unsupported
-  Windows Powershell 4.0                                          Supported             Supported
-  Hybrid Applications                                             Supported             Supported
-  Multi-tenant, High Density Websites                             Supported             Supported
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Supported             Unsupported
-  Dynamic Acces Control                                           Supported             Unsupported 
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Supported           | Available             |
+| Shared-Nothing Live Migration                                 | Supported           | Unsupported           |
+| Hyper-V Network Virtualization                                | Supported           | Unsupported           |
+| Hyper-V Replica                                               | Supported           | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Supported           | Unsupported           |
+| Windows Powershell 4.0                                        | Supported           | Supported             |
+| Hybrid Applications                                           | Supported           | Supported             |
+| Multi-tenant, High Density Websites                           | Supported           | Supported             |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Supported           | Unsupported           |
+| Dynamic Acces Control                                         | Supported           | Unsupported[ ]()      |
 
-### 
+### []()
 
-###  
+###
 
 ### Managed: Windows Server 2008 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Partially Supported   Supported
-  Shared-Nothing Live Migration                                   Unsupported           Unsupported
-  Hyper-V Network Virtualization                                  Unsupported           Unsupported
-  Hyper-V Replica                                                 Unsupported           Unsupported
-  Low Cost Highly Available Files Based Storage                   Unsupported           Unsupported
-  Windows Powershell 3.0                                          Partially Supported   Supported
-  Hybrid Applications                                             Partially Supported   Unsupported
-  Multi-tenant, High Density Websites                             Partially Supported   Supported
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Partially Supported   Unsupported
-  Dynamic Acces Control                                           Unsupported           Unsupported 
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Partially Supported | Supported             |
+| Shared-Nothing Live Migration                                 | Unsupported         | Unsupported           |
+| Hyper-V Network Virtualization                                | Unsupported         | Unsupported           |
+| Hyper-V Replica                                               | Unsupported         | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Unsupported         | Unsupported           |
+| Windows Powershell 3.0                                        | Partially Supported | Supported             |
+| Hybrid Applications                                           | Partially Supported | Unsupported           |
+| Multi-tenant, High Density Websites                           | Partially Supported | Supported             |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Partially Supported | Unsupported           |
+| Dynamic Acces Control                                         | Unsupported         | Unsupported[ ]()      |
 
-### 
+### []()
 
-###  
+###
 
 ### Managed: Windows Server 2003 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Partially Supported   Unsupported
-  Shared-Nothing Live Migration                                   Unsupported           Unsupported
-  Hyper-V Network Virtualization                                  Unsupported           Unsupported
-  Hyper-V Replica                                                 Unsupported           Unsupported
-  Low Cost Highly Available Files Based Storage                   Unsupported           Unsupported
-  Windows Powershell 3.0                                          Unsupported           Unsupported
-  Hybrid Applications                                             Unsupported           Unsupported
-  Multi-tenant, High Density Websites                             Unsupported           Unsupported
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Unsupported           Unsupported
-  Dynamic Acces Control                                           Unsupported           Unsupported 
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Partially Supported | Unsupported           |
+| Shared-Nothing Live Migration                                 | Unsupported         | Unsupported           |
+| Hyper-V Network Virtualization                                | Unsupported         | Unsupported           |
+| Hyper-V Replica                                               | Unsupported         | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Unsupported         | Unsupported           |
+| Windows Powershell 3.0                                        | Unsupported         | Unsupported           |
+| Hybrid Applications                                           | Unsupported         | Unsupported           |
+| Multi-tenant, High Density Websites                           | Unsupported         | Unsupported           |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Unsupported         | Unsupported           |
+| Dynamic Acces Control                                         | Unsupported         | Unsupported[ ]()      |
 
-### 
+### []()
 
-###  
+###
 
 ### Dedicated: Windows Server 2012 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Supported             Supported
-  Shared-Nothing Live Migration                                   Supported             Unsupported
-  Hyper-V Network Virtualization                                  Supported             Unsupported
-  Hyper-V Replica                                                 Supported             Unsupported
-  Low Cost Highly Available Files Based Storage                   Supported             Pending
-  Windows Powershell 4.0                                          Supported             Pending
-  Hybrid Applications                                             Supported             Pending
-  Multi-tenant, High Density Websites                             Supported             Pending
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Supported             Unsupported
-  Dynamic Acces Control                                           Supported             Pending
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Supported           | Supported             |
+| Shared-Nothing Live Migration                                 | Supported           | Unsupported           |
+| Hyper-V Network Virtualization                                | Supported           | Unsupported           |
+| Hyper-V Replica                                               | Supported           | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Supported           | Pending               |
+| Windows Powershell 4.0                                        | Supported           | Pending               |
+| Hybrid Applications                                           | Supported           | Pending               |
+| Multi-tenant, High Density Websites                           | Supported           | Pending               |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Supported           | Unsupported           |
+| Dynamic Acces Control                                         | Supported           | Pending               |
 
-### 
+### []()
 
-###  
+###
 
 ### Dedicated: Windows Server 2008 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Partially Supported   Supported
-  Shared-Nothing Live Migration                                   Unsupported           Unsupported
-  Hyper-V Network Virtualization                                  Unsupported           Unsupported
-  Hyper-V Replica                                                 Unsupported           Unsupported
-  Low Cost Highly Available Files Based Storage                   Unsupported           Unsupported
-  Windows Powershell 3.0                                          Partially Supported   Supported
-  Hybrid Applications                                             Partially Supported   Unsupported
-  Multi-tenant, High Density Websites                             Partially Supported   Supported
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Partially Supported   Unsupported
-  Dynamic Acces Control                                           Unsupported           Unsupported
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Partially Supported | Supported             |
+| Shared-Nothing Live Migration                                 | Unsupported         | Unsupported           |
+| Hyper-V Network Virtualization                                | Unsupported         | Unsupported           |
+| Hyper-V Replica                                               | Unsupported         | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Unsupported         | Unsupported           |
+| Windows Powershell 3.0                                        | Partially Supported | Supported             |
+| Hybrid Applications                                           | Partially Supported | Unsupported           |
+| Multi-tenant, High Density Websites                           | Partially Supported | Supported             |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Partially Supported | Unsupported           |
+| Dynamic Acces Control                                         | Unsupported         | Unsupported           |
 
-### 
+### []()
 
-###  
+###
 
 ### Dedicated: Windows Server 2003 R2
 
-  --------------------------------------------------------------- --------------------- -----------------------
-  **Feature**                                                     **Windows Support**   **Rackspace Support**
-  Scale & Performace                                              Partially Supported   Supported
-  Shared-Nothing Live Migration                                   Unsupported           Unsupported
-  Hyper-V Network Virtualization                                  Unsupported           Unsupported
-  Hyper-V Replica                                                 Unsupported           Unsupported
-  Low Cost Highly Available Files Based Storage                   Unsupported           Unsupported
-  Windows Powershell 3.0                                          Unsupported           Unsupported
-  Hybrid Applications                                             Unsupported           Unsupported
-  Multi-tenant, High Density Websites                             Unsupported           Unsupported
-  Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI)   Unsupported           Unsupported
-  Dynamic Acces Control                                           Unsupported           Unsupported
-  --------------------------------------------------------------- --------------------- -----------------------
+|                                                               |                     |                       |
+|---------------------------------------------------------------|---------------------|-----------------------|
+| **Feature**                                                   | **Windows Support** | **Rackspace Support** |
+| Scale & Performace                                            | Partially Supported | Supported             |
+| Shared-Nothing Live Migration                                 | Unsupported         | Unsupported           |
+| Hyper-V Network Virtualization                                | Unsupported         | Unsupported           |
+| Hyper-V Replica                                               | Unsupported         | Unsupported           |
+| Low Cost Highly Available Files Based Storage                 | Unsupported         | Unsupported           |
+| Windows Powershell 3.0                                        | Unsupported         | Unsupported           |
+| Hybrid Applications                                           | Unsupported         | Unsupported           |
+| Multi-tenant, High Density Websites                           | Unsupported         | Unsupported           |
+| Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Unsupported         | Unsupported           |
+| Dynamic Acces Control                                         | Unsupported         | Unsupported           |
 
- 
+
 
 Microsoft Windows Server 2012 R2 Licensing
 ------------------------------------------

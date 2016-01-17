@@ -2,10 +2,10 @@
 node_id: 3690
 title: Cloud Queues FAQ
 type: article
-created_date: '2013-09-18 16:28:37'
-created_by: megan.meza
-last_modified_date: '2016-01-14 21:4755'
-last_modified_by: kyle.laffoon
+created_date: '2013-09-18'
+created_by: Megan Meza
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Queues
 body_format: tinymce
 ---
@@ -44,7 +44,7 @@ aware of?**
 A.  Yes, messages cannot be larger than 256K (excluding white space),
 and a single request cannot contain more than 10 messages. If a single
 request has multiple messages, the sum of those messages (excluding
-white space) cannot exceed 256K. 
+white space) cannot exceed 256K.
 
 **Q.  What is the underlying message queuing system?**
 
@@ -66,7 +66,7 @@ even support persistent connections other than standard HTTP keep-alive,
 and so is more reliable when accessed through firewalls and across
 multiple network partitions (i.e., the Internet). The service is HA and
 durable, and requires absolutely no setup or maintenance on the part of
-the developer or system administrator. 
+the developer or system administrator.
 
 **Q.  Will we be able to enable some form of transaction logging that we
 can store to Cloud Files or other accessible storage?**
@@ -89,19 +89,19 @@ A.  Yes, you can find it documented on github:
 
 **Q.  What is the maximum amount of time a message can be stored?**
 
-A.  14 days.  The default message TTL will be set to 72 hours. 
+A.  14 days.  The default message TTL will be set to 72 hours.
 
 **Q.  Is there be a max queue length to prevent queues from growing out
 of control?**
 
 A.  There are no limits on the number of queues or the number of
-messages that a queue can contain. 
+messages that a queue can contain.
 
 **Q.  Is there a limit of max requests per second for these API
 operations?**
 
 A.  Yes, customers will be limited to 300 request per second per
-account.  Please contact support if you need to exceed this limit.  
+account.  Please contact support if you need to exceed this limit.
 
 **Q.  What do I need to enter for the "X-Project-ID" field?**
 

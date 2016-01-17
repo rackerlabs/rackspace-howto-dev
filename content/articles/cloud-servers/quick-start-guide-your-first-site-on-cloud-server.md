@@ -2,10 +2,10 @@
 node_id: 3768
 title: Quick start guide - Create your first website on Cloud Servers
 type: article
-created_date: '2013-11-11 19:59:20'
+created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2016-01-11 16:3347'
-last_modified_by: rose.coste
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -52,7 +52,7 @@ time you can use an HTML file created for this exercise. Download it
 [here](http://90df0b8db988dcfbf5da-c1875553a16f2a6d80002cac1a22fc37.r75.cf1.rackcdn.com/index.html)
 (right-click to save the file).
 
-### Build the infrastructure
+### []()Build the infrastructure
 
 In this section, you create your server, connect to it, and install the
 Apache web server package to turn the server into a web server.
@@ -63,15 +63,16 @@ Apache web server package to turn the server into a web server.
     To log in, use the user name and password that you entered when you
     created your account.
 
-     
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.1.png)
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.1.png){width="668"
+    height="384"}
 
     The control panel supports many Rackspace products and services.
     Each component of this interface, and all of our products and
     services, are explained in other articles and videos (for example,
     [Introducing the Cloud Control
-    Panel](http://www.rackspace.com/knowledge_center/article/introducing-the-rackspace-cloud-control-panel)).
+    Panel](/howto/introducing-the-rackspace-cloud-control-panel)).
     This guide focuses on deploying your first cloud server.
 
 2.  On the Cloud Servers page, which is displayed whenever you log in,
@@ -91,10 +92,11 @@ Apache web server package to turn the server into a web server.
 
 4.  Select an image.
 
-    The image that you select contains both the OS and preselected
-    software.
+    The image that you select contains both the OS and
+    preselected software.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.5.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.5.png){width="520"
+    height="320"}
 
 5.  Select a flavor
 
@@ -106,7 +108,8 @@ Apache web server package to turn the server into a web server.
 
     Use the slider to select the flavor.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.6.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.6.png){width="550"
+    height="442"}
 
 6.  Click **Create Server**.
 
@@ -120,17 +123,19 @@ Apache web server package to turn the server into a web server.
     image and flavor that you selected. The server is finished building
     and is ready for a connection when the Server Status is **Active**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.10.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.10.png){width="204"
+    height="39"}
 
 8.  Copy the public IP address.
 
-    Now that you have an active cloud server, you need to make it a web
-    server. You do this by connecting to it and installing the Apache
-    web server package. You use the server's IPv4 address (PublicNet),
-    which you can find in the **Networks** section of the server's
-    detail view. Copy the address for later use.
+    Now that you have an active cloud server, you need to make it a
+    web server. You do this by connecting to it and installing the
+    Apache web server package. You use the server's IPv4 address
+    (PublicNet), which you can find in the **Networks** section of the
+    server's detail view. Copy the address for later use.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.11.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.11.png){width="770"
+    height="176"}
 
 Connect to your server
 ----------------------
@@ -148,36 +153,41 @@ information to and from your server in a secure fashion.
         command to use SSH in the right-side bar of the server detail
         page of the Cloud Control Panel.
 
-        ![](/knowledge_center/sites/default/files/field/image/3768.12.png)
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.12.png){width="422"
+        height="209"}
 
         Copy this command and paste it into your terminal, or click it
         and Terminal.app opens for you.
 
-        ![](/knowledge_center/sites/default/files/field/image/3768.13.png)
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.13.png){width="760"
+        height="143"}
 
     -   **Connect from Windows**
 
         You can use the PuTTY SSH client to connect to your server from
         a Windows computer. For instructions, see [Connecting to Linux
         from Windows by using
-        PuTTY](http://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-windows-by-using-putty).
+        PuTTY](/howto/connecting-to-linux-from-windows-by-using-putty).
 
         The first time that you connect to a cloud server, your computer
         verifies that this is something you want to do.
 
 2.  Type **yes** and then press **Enter**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.14.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.14.png){width="732"
+    height="172"}
 
 3.  Type or paste the password that you copied in step 6 when you
     created the server.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.15.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.15.png){width="733"
+    height="189"}
 
     If the password is correct, you connect to your server. You will see
     a screen similar to the following one:
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.16.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.16.png){width="716"
+    height="456"}
 
 Install Apache
 --------------
@@ -186,7 +196,8 @@ To install Apache, enter the following command in the terminal window:
 
     apt-get install apache2 -y
 
-![](/knowledge_center/sites/default/files/field/image/3768.17.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.17.png){width="671"
+height="126"}
 
 Some information scrolls by in your terminal window. This is your server
 downloading and installing Apache and any software Apache might need to
@@ -199,10 +210,11 @@ and turned on. Put the (PublicNet) IPv4 address of your cloud server
 into a web browser. If you see the message It works!, you now have a web
 server installed on your cloud server.
 
-![](/knowledge_center/sites/default/files/field/image/3768.18.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.18.png){width="694"
+height="157"}
 
-Upload your code
-----------------
+[](){#Step2}Upload your code
+----------------------------
 
 The next step is to upload your site. You might be familiar with File
 Transfer Protocol (FTP) as a way to upload files to and download files
@@ -215,7 +227,8 @@ FTP clients do this.
 
 1.  In the Cyberduck interface, click **Open Connection**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.19.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.19.png){width="653"
+    height="233"}
 
 2.  Select **SFTP (SSH File Transfer Protocol)**.
 3.  For **Server**, type the IP address of the cloud server.
@@ -223,7 +236,8 @@ FTP clients do this.
 5.  For **Password**, enter the root user's password.
 6.  Click **Connect**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.20.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.20.png){width="653"
+    height="371"}
 
 ### Upload your site
 
@@ -241,41 +255,47 @@ Cyberduck by using the following steps:
 
 You're now in the DocumentRoot directory.
 
-![](/knowledge_center/sites/default/files/field/image/3768.24.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.24.png){width="658"
+height="195"}
 
 You should see an **index.html** file already in the directory. This is
 the "It works!" file that you saw when you tested Apache in your browser
 earlier.
 
-1.  Select the I directory by using the drop-down menu at the top of the
-    window.
+1.  Select the I directory by using the drop-down menu at the top of
+    the window.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.21.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.21.png){width="611"
+    height="160"}
 
 2.  Double-click the **var** directory.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.22.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.22.png){width="590"
+    height="526"}
 
 3.  Double-click the **www** directory.
 
-     
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.23.png)
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.23.png){width="668"
+    height="457"}
 
 4.  Replace the **index.html** file with your own file by dragging the
     new **index.html** file into Cyberduck.
 5.  When Cyberduck asks if you want to overwrite the existing file,
     click **Continue**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3768.25.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.25.png){width="654"
+    height="616"}
 
-Test your site
---------------
+[]() Test your site
+-------------------
 
 Now that the correct HTML file is uploaded to the correct directory, you
 should see your site when you refresh your browser.
 
-![](/knowledge_center/sites/default/files/field/image/3768.26.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.26.png){width="764"
+height="719"}
 
 Congratulations! In a short period of time, you deployed a cloud server,
 connected to it via SSH, installed the Apache web server, uploaded a new
@@ -288,7 +308,7 @@ What's next?
 Several resources are available to help you progress:
 
 -   [Rackspace Knowledge
-    Center](http://www.rackspace.com/knowledge_center/) - Information
+    Center](/howto/) - Information
     about all Rackspace products
 -   [Cloud Launch Guides](https://launch.rackspace.com/) - Step-by-step
     guides on how to build and deploy cloud services
@@ -296,5 +316,5 @@ Several resources are available to help you progress:
     Discuss ideas with Rackers and other customers
 -   [Fanatical Support](http://www.rackspace.com/support)
 
- 
+
 

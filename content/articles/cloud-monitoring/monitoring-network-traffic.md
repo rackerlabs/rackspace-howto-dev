@@ -2,10 +2,10 @@
 node_id: 1374
 title: Monitoring Network Traffic
 type: article
-created_date: '2012-04-04 20:18:26'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:2452'
-last_modified_by: rose.contreras
+created_date: '2012-04-04'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -22,10 +22,12 @@ body_format: tinymce
 -   [How to use VNstat](#usingtoolsv)
 -   [How to use IPtraf](#usingtoolsi)
 -   [How to use
-    Tcpdump](http://www.rackspace.com/knowledge_center/article/capturing-packets-with-tcpdump)
+    Tcpdump](/howto/capturing-packets-with-tcpdump)
 -   [Conclusion...](#conclusion)
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#preface}
 
 ### Preface
 
@@ -45,7 +47,9 @@ Rackspace offers its [Cloud
 Monitoring](http://www.rackspace.com/cloud/monitoring/) service at no
 cost for use with Cloud Servers. For more information about this
 flexible service, see [Getting Started with Cloud
-Monitoring](http://www.rackspace.com/knowledge_center/getting-started/cloud-monitoring).
+Monitoring](/howto/cloud-monitoring).
+
+[](){#monitoring}
 
 ### Monitoring in Linux
 
@@ -55,6 +59,8 @@ traffic. Most of these free and Open Source tools can work with minimal
 setup and achieve very high accuracy. Out of all the tools available I
 am partial to VNstat and IPtraf. Both of these can be found in most
 repositories, have minimal dependencies, and work on ALL Linux systems.
+
+[](){#aboutthetools}
 
 ### About The Tools
 
@@ -78,7 +84,9 @@ repositories, have minimal dependencies, and work on ALL Linux systems.
 
 ### How to install these tools
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#debin}
 
 #### Ubuntu / Debian
 
@@ -110,7 +118,9 @@ Lastly we setup VNstat to begin monitoring the interfaces.
     # Private Interface
     vnstat -u -i eth1
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#centin}
 
 #### CentOS / RHEL
 
@@ -172,7 +182,9 @@ To install here is the command :
 
     yum install iptraf.x86_64
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#fedin}
 
 #### Fedora (16+)
 
@@ -205,7 +217,9 @@ Lastly we create a symlink for legacy purposes
 
     ln -s /usr/sbin/iptraf-ng /usr/sbin/iptraf
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#susein}
 
 #### openSUSE
 
@@ -267,7 +281,9 @@ To install iptraf here is the command :
 
 ### How to use these tools
 
-* * * * *
+------------------------------------------------------------------------
+
+[](){#usingtoolsv}
 
 #### Using VNstat : [*Manual Page for VNstat*](http://linux.die.net/man/1/vnstat)
 
@@ -291,13 +307,13 @@ contain data and begin showing you metrics.
 
 <!-- -->
 
-     eth0                                                                     17:02 
-      |            t  t                    t  t  t  t              t  t  t          
-      |      t     t  t                    t  t  t  t     t     t  t  t  t          
-      |      t  t rt rt    rt  t  t        t  t  t  t  t  t  t  t  t  t  t  t       
-     -+---------------------------------------------------------------------------> 
-      |  18 19 20 21 22 23 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17    
-     h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB) 
+     eth0                                                                     17:02
+      |            t  t                    t  t  t  t              t  t  t
+      |      t     t  t                    t  t  t  t     t     t  t  t  t
+      |      t  t rt rt    rt  t  t        t  t  t  t  t  t  t  t  t  t  t  t
+     -+--------------------------------------------------------------------------->
+      |  18 19 20 21 22 23 00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17
+     h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB)      h  rx (KiB)   tx (KiB)
     18        157        607    02        143        888    10        150       1878
     19        266       1389    03        169        548    11        212       1229
     20        259        918    04         72        449    12        191       1904
@@ -342,13 +358,15 @@ contain data and begin showing you metrics.
         ------------------------+-------------+-------------+---------------
         estimated       165 MiB |    1.22 GiB |    1.38 GiB |
 
- 
 
-* * * * *
+
+------------------------------------------------------------------------
+
+[](){#usingtoolsi}
 
 #### Using IPtraf :
 
- 
+
 
 #### [*Manual Page for IPtraf*](http://linux.die.net/man/8/iptraf)
 
@@ -369,11 +387,13 @@ installed. IPtraf watches traffic in real time.
 
     ![](http://c691244.r44.cf2.rackcdn.com/IPtrafe-IMAGE3.jpg)
 
-     
+
+
+[](){#conclusion}
 
 ### Conclusion
 
-* * * * *
+------------------------------------------------------------------------
 
 Now that you have installed these packages you should have full network
 monitoring in place. VNstat will monitor the servers internal and

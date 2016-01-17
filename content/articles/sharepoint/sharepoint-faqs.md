@@ -2,15 +2,15 @@
 node_id: 4998
 title: 'Sharepoint: FAQs'
 type: article
-created_date: '2015-12-03 17:28:57'
+created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 21:5211'
-last_modified_by: kyle.laffoon
-product: Sharepoint
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
+product: Microsoft Sharepoint
 body_format: full_html
 ---
 
-* * * * *
+------------------------------------------------------------------------
 
 Account Services
 ----------------
@@ -22,7 +22,7 @@ link: [Cloud Office system status](http://status.apps.rackspace.com/).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Sharepoint
 ----------

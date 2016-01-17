@@ -2,10 +2,10 @@
 node_id: 225
 title: Notifications for unprocessed payments or declined credit cards
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-08-03 22:2427'
-last_modified_by: rose.contreras
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-08-03'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -24,17 +24,20 @@ international 1-210-312-4000. Do not contact the Cloud Billing team.
 To see any outstanding balances for your account, perform the follow
 steps:
 
+<div class="printfooter">
+
 1.  Sign in to the [Cloud Control
     Panel](https://mycloud.rackspace.com/).
-2.  In the upper-right corner of the window, click **Account****:
-    *userName* \>** **Billing and Payments**. <br>
-     The Billing & Payments page appears.<br>
-     **Note:** Clicking **Your Account** \> **Billing **in the Cloud
+2.  In the upper-right corner of the window, click **Account:
+    *userName* &gt;** **Billing and Payments**.
+    The Billing & Payments page appears.
+    **Note:** Clicking **Your Account** &gt; **Billing **in the Cloud
     Sites Control Panel also opens this page in the Cloud Control Panel.
-3.  Review any balances listed under **Current Balance**.<br>
-     A total is displayed if any balance is due.
+3.  Review any balances listed under **Current Balance**.
+    A total is displayed if any balance is due.
 4.  Contact the Cloud AR team (not the Cloud Billing team) at US toll
     free 800-480-2716 and international 1-210-312-4000 to discuss any
     balances that are due.
 
+</div>
 

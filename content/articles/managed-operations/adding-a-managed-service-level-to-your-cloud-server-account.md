@@ -2,10 +2,10 @@
 node_id: 1716
 title: Adding a Managed Operations Service Level to Your Cloud Account
 type: article
-created_date: '2011-10-11 16:00:31'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 14:4750'
-last_modified_by: stephanie.fillmon
+created_date: '2011-10-11'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 body_format: tinymce
 ---
@@ -39,11 +39,11 @@ of ping, port, or URL.
 You can view the list of supported operating system versions and
 applications for Linux in the following article: [Cloud Servers with
 Managed Operations support for
-Linux.](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux)
+Linux.](/howto/cloud-servers-with-managed-operations-support-for-linux)
 
 **Note:** Information on Windows support can be found in [Cloud Servers
 with Managed Operations support for
-Windows](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-windows).
+Windows](/howto/cloud-servers-with-managed-operations-support-for-windows).
 
 ### Will my server's IP address or hostname change when I upgrade?
 
@@ -57,12 +57,12 @@ with the upgrade process.
 
 At this time, the only operating systems we support for a Rackspace
 Managed Operations account are listed in the [articles referenced
-above](http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux).
+above](/howto/cloud-servers-with-managed-operations-support-for-linux).
 If you choose to upgrade to a Managed Operations account, you must
 either delete any active Cloud Servers and images with unsupported
 operating systems or transfer those unsupported images to a separate
 account. Once the servers and images have been transferred you will be
-eligible to upgrade.  
+eligible to upgrade.
 
 When needing a new Cloud Server or Cloud Database, you may choose to
 create the image on the server yourself, or one of the Managed
@@ -74,10 +74,10 @@ it updated, patched, and running for you.
 To upgrade to a Rackspace Managed Operations account, your account must
 meet the following conditions:
 
--   The account must be in active status and up to date on all billing
-    invoices.
--   No Cloud Servers on the account run on unsupported operating
-    systems.
+-   The account must be in active status and up to date on all
+    billing invoices.
+-   No Cloud Servers on the account run on unsupported
+    operating systems.
 -   No Cloud Server images on the account are built on unsupported
     operating systems.
 
@@ -92,12 +92,12 @@ Operations is the best fit for your needs.
 Upon the creation of a Cloud Server or a Cloud Database within a Managed
 Operations account, a flat monthly account fee will be assessed when at
 least one instance on the account is active or used during that month.
-For more pricing information, please see: 
+For more pricing information, please see:
 
 -   [Managed Operations product pricing
     page](http://www.rackspace.com/cloud/managed_cloud/pricing/) (USA)
 -   [Managed Operations product pricing
-    page](http://www.rackspace.co.uk/cloud/servers/pricing) (UK) 
+    page](http://www.rackspace.co.uk/cloud/servers/pricing) (UK)
 
 To get an overall picture of your costs you can also use our price
 calculator:
@@ -108,7 +108,8 @@ calculator:
 To get pricing information for Cloud Servers with Managed Operations,
 make sure to check the box in the lower-right corner of the screen:
 
-![](/knowledge_center/sites/default/files/field/image/ManagedCalc.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ManagedCalc.png){width="192"
+height="139"}
 
 ### Why is there an account fee as well as a per-instance service fee?
 
@@ -161,15 +162,15 @@ for the Cloud products without a Managed Operations.
 
 During the upgrade process, Rackspace will:
 
--   Reset the root password for each server to gain access to the
-    server.
+-   Reset the root password for each server to gain access to
+    the server.
 -   Make an image of each server.
 -   Create a Rackspace management account on each server.
--   Open TCP port 445 on Windows to allow Rackspace management server
-    access.
+-   Open TCP port 445 on Windows to allow Rackspace management
+    server access.
 -   Install the Rackspace Cloud Backup agent.
--   Install the vendor-provided kernel and prepare for updates (if
-    needed).
+-   Install the vendor-provided kernel and prepare for updates
+    (if needed).
 
 ### As a Rackspace customer, can I link my Managed Hosting configuration and account to a Cloud Server with Managed Operations configuration and account?
 

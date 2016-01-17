@@ -2,17 +2,17 @@
 node_id: 1196
 title: Billing Services Overview
 type: article
-created_date: '2011-08-24 15:51:30'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 15:1818'
-last_modified_by: kyle.laffoon
+created_date: '2011-08-24'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
 ## Previous section
 
-[Getting Started with Cloud Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+[Getting Started with Cloud Servers](/howto/getting-started-with-cloud-servers-0)
 
 <p>&nbsp;</p>
 This article provides an overview of the billing resources available to you through the Rackspace website and the Cloud Control Panel. The resources described in this article can help you manage and track the billing for your account.
@@ -33,7 +33,7 @@ Each product page on the main Rackspace website contains the most current pricin
 
     The menu gives you access to billing and payments, and a usage overview.
 
-    <img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/Untitled_0.png" border="1" />
+    <img alt="" border="2" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Untitled_0.png" border="1" />
 
 ## Current usage
 
@@ -41,19 +41,19 @@ From the **Account** menu, select **Usage Overview**.
 
 The balance-to-date is displayed for the Rackspace products that you are using. The message **No usage data** is displayed for the products that you are not using.
 
-<img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-01-12%20at%209.43.59%20PM_0.png" border="1" />
- 
+<img alt="" border="2" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-12%20at%209.43.59%20PM_0.png" border="1" />
+
 Click the arrow to the right of the dollar amount to see the details of your usage in type, unit price, quantity, and estimated total.
 
-<img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/currentusage.png" border="1"/>
- 
+<img alt="" border="2" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/currentusage.png" border="1"/>
+
 ## Billing overview
 
 From the **Account** menu, select **Billing and Payments**.
 
 The Billing & Payments page shows your recent billing activity, current balance, billing history, and payment information. You can also change your billing and payment information from this page.
 
-<img alt="" border="2" src="/knowledge_center/sites/default/files/field/image/billingpmts2.png" border="1" />
+<img alt="" border="2" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/billingpmts2.png" border="1" />
 
 
 ## Detailed invoices
@@ -66,4 +66,4 @@ The next article in this series reviews other resources available from the **Acc
 
 <p>&nbsp;</p>
 ## Next section
-[Viewing and editing user information for your account ](https://www.rackspace.com/knowledge_center/article/viewing-and-editing-user-information-for-your-account)
+[Viewing and editing user information for your account ](/howto/viewing-and-editing-user-information-for-your-account)

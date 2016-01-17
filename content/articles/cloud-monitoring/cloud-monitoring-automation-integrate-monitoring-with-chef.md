@@ -2,10 +2,10 @@
 node_id: 2005
 title: Rackspace Monitoring Automation - Integrate Monitoring with Chef
 type: article
-created_date: '2012-08-14 21:42:02'
+created_date: '2012-08-14'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-08 19:3014'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-08'
+last_modified_by: Kyle Laffoon
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -22,8 +22,8 @@ monitoring system with Rackspace Monitoring!
      This means you have complete control
 -   You&rsquo;re in total control - We run the monitoring system; however,
     it&rsquo;s a platform and this code bootstraps the integration. It&rsquo;s up to
-    you to define what you want to monitor and how you want to be
-    alerted.
+    you to define what you want to monitor and how you want to
+    be alerted.
 -   We dog food this internally - we&rsquo;ll continue to improve this as we
     continue to find new and interesting ways to use it.
 -   This is only the beginning - We&rsquo;ll continue to improve this cookbook
@@ -37,7 +37,7 @@ monitoring system with Rackspace Monitoring!
 -   Ruby knowledge
 -   Desire to reduce the time to monitor your infrastructure
 
- 
+
 
 ### Pre-requisites
 
@@ -54,7 +54,7 @@ Getting Started Guide](http://docs.opscode.com/#getting-started%20).
 assumes a chef version greater than 0.8.  Also make sure and brush up on
 knife and how it works.*
 
- 
+
 
 **Step 1: Create the initial encrypted data bag**
 
@@ -70,7 +70,7 @@ Once created this will make it painless to use the recipes without
 having to include API key and Rackspace Cloud account username for every
 call. For information about how to find your API key, see [View and
 reset your API
-key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+key](/howto/view-and-reset-your-api-key).
 
 **Step 2: Add default recipe to the runlist**
 
@@ -88,7 +88,7 @@ instance the cloud\_monitoring::default recipe is applied to the
 production environment, then all production nodes will inherit the
 recipe.
 
- 
+
 
 **Step 3: Configure the initial node setup**
 
@@ -117,7 +117,7 @@ if it exists it will be updated.  Another important point, if the chef
 server ever goes away, the label of the entity will be matched up with
 hostname (in this case).
 
- 
+
 
 **Step 4: Create the first check**
 
@@ -130,7 +130,7 @@ forward:
 
 After performing a chef run, the Rackspace Monitoring API should begin
 pinging the specified entity. Since this snippet is using the
-target\_alias feature, it points at the IP specified node[:ipaddress].
+target\_alias feature, it points at the IP specified node\[:ipaddress\].
 If that ever changes the check will automatically be updated. This is an
 important feature of the Rackspace Monitoring API:
 
@@ -152,7 +152,7 @@ matches the criteria to alert with a destination to send the
 notifications. The alarm leverages our Javascript-like language to
 create criteria based on metrics for a particular check. You can read in
 depth about the alarm language here:
-[https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/\#alarm-language](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language). 
+<https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>.
 
 We are going to create an Alarm for a ping either not returning (which
 would happen by default) or is below 80% or 95% on the number of
@@ -178,7 +178,7 @@ primary contact on the account. If there is no one on the account, it
 sends the Rackspace Monitoring team an email, which will in turn file a
 ticket.
 
-3. This uses the alarm example API detailed here. This particular
+3\. This uses the alarm example API detailed here. This particular
 example uses the snippet below:
 
     ...
@@ -192,7 +192,7 @@ example uses the snippet below:
         }
     ...
 
-###  
+###
 
 ### Done!
 

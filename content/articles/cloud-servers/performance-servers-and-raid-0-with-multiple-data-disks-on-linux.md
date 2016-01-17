@@ -2,10 +2,10 @@
 node_id: 3752
 title: Configuring a Software RAID on a Linux General Purpose Cloud Server
 type: article
-created_date: '2013-11-03 23:27:50'
-created_by: tim.pownall
-last_modified_date: '2014-12-11 19:4232'
-last_modified_by: kyle.laffoon
+created_date: '2013-11-03'
+created_by: Tim Pownall
+last_modified_date: '2014-12-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -118,9 +118,9 @@ The process will look something like this:
        p   primary partition (1-4)
     p
     Partition number (1-4): 1
-    First cylinder (1-157286144, default 257): 
+    First cylinder (1-157286144, default 257):
     Using default value 257
-    Last cylinder, +cylinders or +size{K,M,G} (257-157286144, default 157286144): 
+    Last cylinder, +cylinders or +size{K,M,G} (257-157286144, default 157286144):
     Using default value 157286144
 
     Command (m for help): w
@@ -169,25 +169,25 @@ For the performance testing on our example RAID 0 we ran several read
 and write tests, with the following results (including commands and
 output):
 
-    RAID level 0 with data disk 60 GB performance server 
+    RAID level 0 with data disk 60 GB performance server
 
     [READ] /dev/md0
 
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.166875 s, 307 MB/s
 
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.16641 s, 308 MB/s
 
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
@@ -201,7 +201,7 @@ output):
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.343796 s, 149 MB/s
 
-    [root@performance-60GB ~]# rm -fv /mnt/speed.file 
+    [root@performance-60GB ~]# rm -fv /mnt/speed.file
     removed `/mnt/speed.file'
 
     [root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
@@ -209,7 +209,7 @@ output):
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.343648 s, 149 MB/s
 
-    [root@performance-60GB ~]# rm -fv /mnt/speed.file 
+    [root@performance-60GB ~]# rm -fv /mnt/speed.file
     removed `/mnt/speed.file'
     [root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
     50000+0 records in
@@ -217,32 +217,32 @@ output):
     51200000 bytes (51 MB) copied, 0.345652 s, 148 MB/s
 
     [root@performance-60GB ~]# cat /proc/mdstat
-    Personalities : [raid0] 
+    Personalities : [raid0]
     md0 : active raid0 xvde[1] xvdf[0]
           629144576 blocks super 1.2 512k chunks
-          
+
     unused devices: <none>
 
 
-    No RAID level 0 
+    No RAID level 0
 
 
-    [READ] 
+    [READ]
 
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.195058 s, 262 MB/s
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.198602 s, 258 MB/s
 
-    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches 
+    [root@performance-60GB ~]# echo 3 > /proc/sys/vm/drop_caches
 
     [root@performance-60GB ~]# dd if=/mnt/speed.file of=/dev/null bs=1024 count=50000
     50000+0 records in
@@ -257,7 +257,7 @@ output):
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.337723 s, 152 MB/s
 
-    [root@performance-60GB ~]# rm -fv /mnt/speed.file 
+    [root@performance-60GB ~]# rm -fv /mnt/speed.file
     removed `/mnt/speed.file'
 
     [root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000
@@ -265,7 +265,7 @@ output):
     50000+0 records out
     51200000 bytes (51 MB) copied, 0.34109 s, 150 MB/s
 
-    [root@performance-60GB ~]# rm -fv /mnt/speed.file 
+    [root@performance-60GB ~]# rm -fv /mnt/speed.file
     removed `/mnt/speed.file'
 
     [root@performance-60GB ~]# dd if=/dev/zero of=/mnt/speed.file bs=1024 count=50000

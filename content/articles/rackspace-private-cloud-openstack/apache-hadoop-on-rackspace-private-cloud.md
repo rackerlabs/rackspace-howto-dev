@@ -2,11 +2,11 @@
 node_id: 3277
 title: Apache Hadoop on Rackspace Private Cloud
 type: article
-created_date: '2013-01-24 21:23:23'
-created_by: alyssah
-last_modified_date: '2013-04-12 06:2017'
-last_modified_by: jered.heeschen
-product: Rackspace Private Cloud - OpenStack
+created_date: '2013-01-24'
+created_by: Alyssa Hurtgen
+last_modified_date: '2013-04-12'
+last_modified_by: Jered Heeschen
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
@@ -26,7 +26,7 @@ However, this combination is not without some challenges. Big Data
 technologies such as Hadoop are taxing on servers, storage and network
 requirements, while the cloud promises elasticity and agility. How can
 Hadoop take advantage of this framework and how can the cloud meet the
-needs of a demanding Hadoop cluster? 
+needs of a demanding Hadoop cluster?
 
 This paper investigates the synergies and challenges presented by Apache
 Hadoop and its role in Rackspace Private Cloud powered by OpenStack.
@@ -52,8 +52,9 @@ Rackspace Private Cloud Software Powered by OpenStack
 [Rackspace Private Cloud
 Software](http://www.rackspace.com/cloud/private/) (RPCS) is a free and
 open source software that can be utilized to launch a cloud powered by
-OpenStack. RPCS provides the same cloud platform that powers Rackspace&rsquo;s
-public cloud, the largest open cloud deployment in the world.
+OpenStack<span style="line-height: 1.538em;">. RPCS provides the same
+cloud platform that powers Rackspace&rsquo;s public cloud, the largest open
+cloud deployment in the world.</span>
 
 Apache Hadoop
 -------------
@@ -85,7 +86,8 @@ are three main challenges with Hadoop in a virtualized environment:
 
 -   Virtual disks will add IO overhead.
 -   Virtual machines can be allocated on the same server, breaking
-    Hadoop&rsquo;s redundancy expectations.
+    Hadoop&rsquo;s redundancy expectations<span
+    style="font: 12.0px 'Times New Roman';">.</span>
 -   Hadoop assumes a static infrastructure &ndash; machines can reboot or go
     away but generally recover. The correct approach to deal with a bad
     virtual machine in cloud is to provision a new one.
@@ -102,7 +104,7 @@ cost-effective. With Hadoop as part of the private cloud powered by
 OpenStack, you can spin up a cluster in minutes in order to extend your
 current environment and there is no need to move data from internal
 resources to the cloud. While this may not be the case for every Hadoop
-project, it makes sense for many. 
+project, it makes sense for many.
 
 While performance of a Hadoop cluster may be superior with dedicated
 hardware, the agility of running it in the cloud on demand may trump
@@ -111,26 +113,26 @@ some of the limitations for some workloads.
 This is one benefit, but there are many positives of running Hadoop in
 the cloud.
 
-![](/knowledge_center/sites/default/files/field/image/masscompute-web.jpg) 
-                                                                       
-  
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/masscompute-web.jpg){width="600"
+height="398"}
+
 
 Additional benefits of Hadoop Openstack can be summarized as:
 
--   One-click setup and rapid deployment. You can go from bare-metal to
-    an open cloud with Hadoop running on it within a matter of a couple
-    of hours.
--   Ability to reuse physical infrastructure. 
+-   One<span style="font: 12.0px 'Times New Roman';">-</span>click setup
+    and rapid deployment. You can go from bare-metal to an open cloud
+    with Hadoop running on it within a matter of a couple of hours.
+-   Ability to reuse physical infrastructure.
 -   Multi-purpose cloud infrastructure, that you can use not just for
     Hadoop but for other services like hosting your web application, or
-    databases within the same environment. 
+    databases within the same environment.
 -   Shrink and expand cluster on demand, by adding/removing nodes from a
     cluster or resizing VMs.
 -   Ability to clone a VM and boot new VMs off of snapshots.
 -   OpenStack can provide persistent local disks for Hadoop to use as
     its permanent storage.
 -   When the Hadoop cluster is idle, some machines can be decommissioned
-    and reused for other purposes. 
+    and reused for other purposes.
 
 As Hadoop and the cloud grow together, the benefits of the combined
 offer will only grow stronger. For instance, there is ongoing work in
@@ -210,7 +212,8 @@ just do this:
 
 Login to your master node and launch a job:
 
-    $ cd /usr/lib/hadoop$ hadoop jar hadoop-*-examples.jar pi 10 1000000
+    $ cd /usr/lib/hadoop
+    $ hadoop jar hadoop-*-examples.jar pi 10 1000000
 
 Job progress can be tracked by using the JobTracker&rsquo;s web UI at
 http://master\_node:50030/
@@ -223,7 +226,7 @@ instances on the cluster:
     $ knife alamo server delete 51f0b7ff-0326-4092-8568-30699e34da87
 
 Resources have been released and can be instantly provisioned for other
-purposes. 
+purposes.
 
 Conclusion
 ----------
@@ -231,7 +234,7 @@ Conclusion
 In conclusion, Hadoop on OpenStack is a very compelling choice that
 brings benefits like agility, automation, ease of deployment, and
 multi-tenancy and security through isolation of resources. Combining the
-Rackspace Private Cloud and OpenStack with Hadoop and Hortonworks  
+Rackspace Private Cloud and OpenStack with Hadoop and Hortonworks
 creates an enterprise-ready Hadoop solution that can be deployed in
 minutes into the open cloud.
 

@@ -2,10 +2,10 @@
 node_id: 4778
 title: Working with checks
 type: article
-created_date: '2015-08-05 01:55:31'
-created_by: constanze.kratel
-last_modified_date: '2015-08-27 22:2341'
-last_modified_by: constanze.kratel
+created_date: '2015-08-05'
+created_by: Constanze Kratel
+last_modified_date: '2015-08-27'
+last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
 body_format: tinymce
 ---
@@ -22,17 +22,16 @@ types](http://ttp://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-c
 Checks types are divided into two categories:
 
 -   *Agent* checks monitor an entity's resource utilization. Agent
-    checks are performed by the monitoring agent running on a server.<br>
-     For example, a Memory check can trigger an alarm if it detects
+    checks are performed by the monitoring agent running on a server.
+    For example, a Memory check can trigger an alarm if it detects
     memory usage above a specified percentage. Agent checks require the
     monitoring agent to be installed on the server. For a list of
     available agent check types, see [Agent check
     types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html).
     For information on how to install the monitoring agent, see [Install
     and
-    configure](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/install-configure.html).<br>
-     Rackspace Intelligence supports the following types of agent
-    checks:
+    configure](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/install-configure.html).
+    Rackspace Intelligence supports the following types of agent checks:
     -   Apache
     -   CPU
     -   Custom Plugin
@@ -51,12 +50,12 @@ Checks types are divided into two categories:
     -   Windows PerfOS
 -   *Remote* checks monitor an entity's internet connectivity. Remote
     checks are performed by attempting to contact the entity from
-    outside the entity.<br>
-     For example, Ping check can trigger an alarm if it detects packet
+    outside the entity.
+    For example, Ping check can trigger an alarm if it detects packet
     loss above a specified percentage. For a list of available remote
     check types, see [Remote check
-    types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-remote.html).<br>
-     Rackspace Intelligence supports the following types of remote
+    types](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-remote.html).
+    Rackspace Intelligence supports the following types of remote
     checks:
     -   DNS
     -   FTP Banner
@@ -73,15 +72,15 @@ Checks types are divided into two categories:
 Some checks that cannot be created with the Rackspace Intelligence
 interface can be created by using the Cloud Monitoring CLI or API. These
 checks are listed at [Rackspace Cloud Monitoring Checks and
-Alarms](/knowledge_center/article/rackspace-cloud-monitoring-checks-and-alarms).
+Alarms](/howto/rackspace-monitoring-checks-and-alarms).
 
 Checks can generate alerts. You can observe open alerts within the
 Rackspace Intelligence dashboard. You can also choose to notify someone
 (for example, on-call technical support) or to suppress notification
 (for example, during scheduled maintenance).
 
-Create a check
---------------
+[](){#createcheck}Create a check
+--------------------------------
 
 To create a new check, complete the following steps:
 
@@ -90,20 +89,20 @@ To create a new check, complete the following steps:
 2.  On the **Monitoring** page, click the entity for which you want to
     create the check.
 3.  In the **Monitoring Checks** section of the entity details page,
-    click **Create Check**.<br>
-
-    ![](/knowledge_center/sites/default/files/field/image/intelligence-checks-create-check.png)
+    click **Create Check**.
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-checks-create-check.png){width="655"
+    height="127"}
 4.  In the popup dialog box, click the **Check Type** box and select the
     appropriate check type from the list.
 5.  In the **Check Name** box, type a name for the check.
 6.  Specify any other values for the type of check that you are
-    creating, and then click **Create Check**.<br>
-     After successfully creating the check, Rackspace Intelligence
+    creating, and then click **Create Check**.
+    After successfully creating the check, Rackspace Intelligence
     displays a details page with the name of your check. This page
     provides relevant information about your check.
 
-Edit a check
-------------
+[]()Edit a check
+----------------
 
 To edit your check, click the **Actions** menu on the check details
 page.
@@ -116,20 +115,20 @@ You can perform the following editing actions for checks:
 -   [Modify the parameters of your check](#modifyparams)
 -   [Delete the check](#deleting)
 
-### Rename a check
+### [](){#renaming}Rename a check
 
 1.  From the **Actions** menu on the check details page, select **Rename
     Check**.
 2.  In the Rename Check dialog box, type the new name and then
     click **Rename**.
 
-### Add an alarm
+### [](){#addingalarm}Add an alarm
 
 For instructions on adding an alarm for a check, see the &ldquo;Create an
 alarm&rdquo; section of [Working with Alarms in Rackspace
-Intelligence](/knowledge_center/article/working-with-alarms).
+Intelligence](/howto/working-with-alarms).
 
-### Modify the status of a check
+### [](){#modify}Modify the status of a check
 
 1.  From the **Actions** menu on the check details page, select **Modify
     Status**.
@@ -137,14 +136,14 @@ Intelligence](/knowledge_center/article/working-with-alarms).
     select **Disabled**.
 3.  Click **Save Status**.
 
-### Modify the parameters of a check
+### [](){#modifyparams}Modify the parameters of a check
 
 1.  From the **Actions** menu on the check details page, select **Modify
     Parameters**.
 2.  In the dialog box, type the new parameter values, and then
     click **Save Parameters**.
 
-### Delete a check
+### [](){#deleting}Delete a check
 
 1.  From the **Actions** menu on the check details page, select **Delete
     Check**.

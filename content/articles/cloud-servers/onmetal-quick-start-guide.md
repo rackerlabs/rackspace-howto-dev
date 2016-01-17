@@ -2,10 +2,10 @@
 node_id: 4105
 title: Create OnMetal Cloud Servers
 type: article
-created_date: '2014-06-19 04:26:13'
-created_by: russell.haering
-last_modified_date: '2016-01-14 15:3707'
-last_modified_by: stephanie.fillmon
+created_date: '2014-06-19'
+created_by: Russell Haering
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -21,10 +21,10 @@ up an OnMetal server through the Control Panel.
 
 **Note:** For the parallel steps in the API, see [Using OnMetal Cloud
 Servers through the
-API](http://www.rackspace.com/knowledge_center/article/using-onmetal-cloud-servers-through-api).
+API](/howto/using-onmetal-cloud-servers-through-api).
 
-Create an OnMetal server in the Cloud Control Panel
----------------------------------------------------
+[](){#create}Create an OnMetal server in the Cloud Control Panel
+----------------------------------------------------------------
 
 1.  Log in to the [Cloud Control Panel.](http://mycloud.rackspace.com)
 
@@ -32,8 +32,8 @@ Create an OnMetal server in the Cloud Control Panel
 
 2.  Click the **Create Server** button.
 3.  In the **Server Details** section of the Create Server page, enter a
-    name for the server and select the region in which the server will
-    reside.
+    name for the server and select the region in which the server
+    will reside.
 
     **Note:** OnMetal servers are currently available only in the
     Northern Virginia (IAD) region. This list will be expanded as other
@@ -50,22 +50,22 @@ Create an OnMetal server in the Cloud Control Panel
     -   All flavors have a 32 GB system disk.
     -   All flavors include dual 10 GigE NICs in a high-availability
         bonded configuration and use VLAN tagging to access ServiceNet
-        (for traffic within a Rackspace region) and PublicNet (the
-        Internet).
+        (for traffic within a Rackspace region) and PublicNet
+        (the Internet).
 
 7.  Assign a public key to the server by either selecting an existing
     key or adding a new one:
     -   To assign an existing public key, select the key name in the
         **SSH Keys** list, and skip to step 13.
-    -   To add a new public key, continue with the next step.<br>
-         **IMPORTANT:** OnMetal servers *must* be created using an SSH
+    -   To add a new public key, continue with the next step.
+        **IMPORTANT:** OnMetal servers *must* be created using an SSH
         key pair. For information about generating a public and private
         key pair, see [Manage SSH Key Pairs for Cloud Servers with
-        python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+        python-novaclient](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-    [](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient)
-8.  To add a new public key, click **Add Public Key**.<br>
-     **Note:** If you have previously added your public key, this option
+    [](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient)
+8.  To add a new public key, click **Add Public Key**.
+    **Note:** If you have previously added your public key, this option
     is labeled **Manage SSH Keys**.
 9.  Specify a name for the public key.
 10. In the **Region** field, confirm the region in which your key will
@@ -76,16 +76,16 @@ Create an OnMetal server in the Cloud Control Panel
     new server and select it.
 13. As needed, create a new network and select the PublicNet and
     ServiceNet options.
-14. Click **Create Server**. <br>
-     Your server is built.
+14. Click **Create Server**.
+    <span>Your server is built.</span>
 
-Boot the server
----------------
+[](){#boot}Boot the server
+--------------------------
 
 1.  On the details page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
     see [Connecting to a server using SSH on Linux or Mac OS for further
-    information](http://www.rackspace.com/knowledge_center/article/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
+    information](/howto/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
 2.  Use the following command to boot your OnMetal server.
 
         supernova iad boot --flavor flavorId --image imageId --key-name keyName serverName
@@ -162,12 +162,12 @@ Boot the server
 
     Within a few minutes, the server is assigned public and private IP
     addresses, which you can see in the output of the `show` command.
-    After the status becomes ACTIVE, the server boots for the first
-    time. The server is not reachable, however, until the network
+    After the status becomes ACTIVE, the server boots for the
+    first time. The server is not reachable, however, until the network
     configuration is complete, which might take another few minutes.
 
-Log in to the server
---------------------
+[](){#login}Log in to the server
+--------------------------------
 
 After the server has booted, use the SSH key pair that you specified to
 log in to the server.
@@ -176,8 +176,8 @@ log in to the server.
 
     ssh root@publicIpAddress
 
-Delete the server
------------------
+[](){#delete}Delete the server
+------------------------------
 
 If needed, you can also delete or cancel the server.
 
@@ -202,11 +202,11 @@ If needed, you can also delete or cancel the server.
     server deletions take longer than virtual server deletions, usually
     a few minutes.
 
-Using OnMetal
--------------
+[](){#usintOnmetal}Using OnMetal
+--------------------------------
 
 The flash cards included with the OnMetal I/O flavor are unformatted.
 You can RAID and format them however you like. For more information, see
 [Configure flash drives in High I/O instances as Data
-drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives).
+drives](/howto/configure-flash-drives-in-high-io-instances-as-data-drives).
 

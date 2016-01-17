@@ -2,10 +2,10 @@
 node_id: 662
 title: Remap database users in myLittleAdmin
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 21:5918'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -13,8 +13,8 @@ body_format: tinymce
 Microsoft SQL Server has two logical layers of security.
 
 -   The term *login* refers to the account at the server level.
--   The term *user* refers to the account that exists inside the
-    database.
+-   The term *user* refers to the account that exists inside
+    the database.
 
 When you restore a database from one server to another server, you
 effectively sever the mapping between the server-level login and the
@@ -39,9 +39,9 @@ owner account, you can use the following command:
 Remap database users to logins
 ------------------------------
 
-1.  To manage your SQL Server database, [log in to the online manager
-    (myLittleAdmin)](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database").
-2.  Click **Tools \> New Query**.
+1.  To manage your SQL Server database, [log in to the online
+    manager (myLittleAdmin)](/howto/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database").
+2.  Click **Tools &gt; New Query**.
 3.  Enter the following command to reassign ownership to the new login
     that you created in the control panel (the brackets are required).
     Replace your database name and login name.

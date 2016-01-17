@@ -2,10 +2,10 @@
 node_id: 3655
 title: Cloud Queues cURL Cookbook
 type: article
-created_date: '2013-08-21 03:58:41'
-created_by: megan.meza
-last_modified_date: '2015-09-01 16:4403'
-last_modified_by: catherine.richardson
+created_date: '2013-08-21'
+created_by: Megan Meza
+last_modified_date: '2015-09-01'
+last_modified_by: Catherine Richardson
 product: Cloud Queues
 body_format: tinymce
 ---
@@ -31,9 +31,9 @@ samples.
     you would create a queue dedicated for this job. Any application
     that reads from this queue would only compress files.
 -   Message, is stored in a queue and exists until it is deleted by a
-    recipient or automatically by the system based on a TTL
-    (time-to-live) value. Message stores meaningful data for the
-    application.
+    recipient or automatically by the system based on a
+    TTL (time-to-live) value. Message stores meaningful data for
+    the application.
 -   Worker, is an application that reads one or many messages from the
     queue
 -   Producer, is an application that creates messages in a queue.
@@ -50,12 +50,12 @@ samples.
 -   Message TTL, is time-to-live value and defines how long a message
     will be accessible.
 -   Claim TTL, is time-to-live value and defines how long a message will
-    be in claimed state. A message can be claimed by one worker at a
-    time.
+    be in claimed state. A message can be claimed by one worker at
+    a time.
 
 ### Queue cURL Commands
 
-#### **Get Authentication Token**
+#### **[]()Get Authentication Token**
 
 You will need to get an authentication token in order to use with the
 following calls.
@@ -64,7 +64,7 @@ First, assign your Rackspace Cloud username, Rackspace API key, and
 Rackspace endpoint to shell variables to make getting a token just a
 copy-paste. (For information about viewing your API key, see [View and
 reset your API
-key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).)
+key](/howto/view-and-reset-your-api-key).)
 
         $ USERNAME=my-username
         $ APIKEY=my-long-api-key
@@ -153,8 +153,8 @@ So far we have one queue, let's list our queues.
 
 #### **Post a Message**
 
-**Note**: Smaller payloads will keep your bandwidth low. If your json
-data will be large in your submitted messages (such as PDF files or
+**[]()Note**: Smaller payloads will keep your bandwidth low. If your
+json data will be large in your submitted messages (such as PDF files or
 video conversion requests) be sure to store the large files in another
 locations (like Cloud Files) and just refer to a link to the location in
 your message.
@@ -186,7 +186,7 @@ two within the same request.
 ***Request***
 
         $ curl -i -X POST https://$ENDPOINT:443/v1/queues/samplequeue/messages -d '
-        [   
+        [
             {"ttl": 300, "body": {"event": "two"}},
             {"ttl": 60, "body": {"event": "three"}}
         ]
@@ -222,8 +222,8 @@ We can get 10 messages with a call
         Content-Location: /v1/queues/samplequeue/messages?echo=true
 
         {"messages": [
-        {"body": {"event": "two"}, "age": 230, "href": "/v1/queues/samplequeue/messages/51e84e8b1d10b2055fd565fd", "ttl": 300}, 
-        {"body": {"event": "two"}, "age": 3, "href": "/v1/queues/samplequeue/messages/51e84f6e1d10b20571d56f0e", "ttl": 300}, 
+        {"body": {"event": "two"}, "age": 230, "href": "/v1/queues/samplequeue/messages/51e84e8b1d10b2055fd565fd", "ttl": 300},
+        {"body": {"event": "two"}, "age": 3, "href": "/v1/queues/samplequeue/messages/51e84f6e1d10b20571d56f0e", "ttl": 300},
         {"body": {"event": "three"}, "age": 3, "href": "/v1/queues/samplequeue/messages/51e84f6e1d10b20571d56f0f", "ttl": 60}], "links": [{"href": "/v1/queues/samplequeue/messages?marker=9&echo=true", "rel": "next"}
         ]}
 
@@ -263,9 +263,9 @@ messages claimed as we use pass 2 as limit.
 
 ***Response***
 
-    HTTP/1.1 200 OK 
-    Content-Length: 306 
-    Content-Type: application/json; charset=utf-8 
+    HTTP/1.1 200 OK
+    Content-Length: 306
+    Content-Type: application/json; charset=utf-8
     Location: /v1/queues/samplequeue/claims/51e852d01d10b2056dd5703c [{"body": {"event": "two"}, "age": 5, "href": "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f10?claim_id=51e852d01d10b2056dd5703c", "ttl": 300}, {"body": {"event": "three"}, "age": 5, "href": "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f11?claim_id=51e852d01d10b2056dd5703c", "ttl": 120}]
 
 #### **Delete a Message**
@@ -282,7 +282,7 @@ messages claimed as we use pass 2 as limit.
 the given message and claim id. It doesn't necessarily say that message
 is deleted, though.
 
-#### Determine Number of Workers Needed
+#### []()Determine Number of Workers Needed
 
 Determine the number of workers for an application based on how many
 message you expect to see.  If the number of new messages coming in is

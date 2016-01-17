@@ -2,13 +2,15 @@
 node_id: 4728
 title: Information for MS SQL changes
 type: article
-created_date: '2015-06-25 20:51:32'
-created_by: alonzo.garza
-last_modified_date: '2016-01-04 15:5154'
-last_modified_by: Nate.Archer
+created_date: '2015-06-25'
+created_by: Alonzo Garza
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
+
+<div class="table-wrap">
 
 **What is changing?**
 ---------------------
@@ -26,10 +28,36 @@ body_format: tinymce
 ***\*Note: Old entries (ie. admin links) will be retired by end of Q2
 2016***
 
-  Current Website Testlink   NEW My Little Admin URL
-  -------------------------- ----------------------------------------------------------------------------------------------
-  Contains "DFW1-1"          [https://mssql.dfw3-1.websitesettings.com/mla](https://mssql.dfw3-1.websitesettings.com/mla)
-  Contains "DFW1-2"          [https://mssql.dfw3-2.websitesettings.com/mla](https://mssql.dfw3-2.websitesettings.com/mla)
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><div class="tablesorter-header-inner">
+<div class="tablesorter-header-inner">
+Current Website Testlink
+</div>
+</div></th>
+<th align="left"><div class="tablesorter-header-inner">
+<div class="tablesorter-header-inner">
+NEW My Little Admin URL
+</div>
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Contains &quot;DFW1-1&quot;</td>
+<td align="left"><a href="https://mssql.dfw3-1.websitesettings.com/mla" class="uri" class="external-link">https://mssql.dfw3-1.websitesettings.com/mla</a></td>
+</tr>
+<tr class="even">
+<td align="left">Contains &quot;DFW1-2&quot;</td>
+<td align="left"><a href="https://mssql.dfw3-2.websitesettings.com/mla" class="uri" class="external-link">https://mssql.dfw3-2.websitesettings.com/mla</a></td>
+</tr>
+</tbody>
+</table>
 
  **What is not changing?**
 --------------------------
@@ -37,9 +65,9 @@ body_format: tinymce
 -   Your version of MSSQL will not be changing. During the maintenance,
     we will be migrating SQL Server 2012 and SQL Server 2014 over to the
     new environment.
--   We will create an alias from the old hostname to the new hostname
-    automatically. **Note:** *In the future we will deprecate the former
-    hostnames at end of Q2 2016.*
+-   We will create an alias from the old hostname to the new
+    hostname automatically. **Note:** *In the future we will deprecate
+    the former hostnames at end of Q2 2016.*
 -   Cloud Database instances are not subject to this migration.
 
 **How does this affect me?**
@@ -55,7 +83,7 @@ body_format: tinymce
 -   If you have pages bookmarked for web management of your database,
     please be sure to update these accordingly.
 
- 
+
 
 **FAQ**
 -------
@@ -66,16 +94,17 @@ What could have occurred?**
 -   External database Management IPs will be changing. These IPs will be
     visible in your control panel's page within the database section.
 
-**How do I reference my database IP information?** 
+**How do I reference my database IP information?**
 
 -   Log into your Cloud Sites control panel at
     [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
--   Click on 'Hosting' \>\> 'Cloud Sites' and select the domain under
-    which the database was created
+-   Click on 'Hosting' &gt;&gt; 'Cloud Sites' and select the domain
+    under which the database was created
 -   From the domain details page click on the 'Features' tab and select
     the active database you wish to reference:
 
-![](/knowledge_center/sites/default/files/field/image/MSSQL.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MSSQL.png){width="760"
+height="675"}
 
 **Will my database content be affected after the maintenance?**
 
@@ -90,19 +119,41 @@ maintenance?**
 -   Former hostnames will automatically be aliased to the new database
     hosts
 
-<br>
- <br>
- **Related **Topics****
+</div>
+
+<div class="content">
+
+<div
+class="field field-name-body field-type-text-with-summary field-label-hidden">
+
+<div class="field-items">
+
+<div class="field-item even" property="encoded">
+
+
+
+**Related **Topics****
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="logged_content" class="messages warning">
 
 -   [Important scheduled maintenance: DFW environment
-    migration](http://rackspace.com/knowledge_center/article/important-scheduled-maintenance-dfw-environment-migration)
+    migration](/howto/important-scheduled-maintenance-dfw-environment-migration)
 -   [Information for Customer IPs &
-    DNS](http://rackspace.com/knowledge_center/article/information-for-customer-ips-dns-0)
+    DNS](/howto/information-for-customer-ip-addresses-and-dns)
 -   [Information for MS SQL
-    changes](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes)
--   [Information for MySQL Users (MariaDB
-    10.0)](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0)
+    changes](/howto/information-for-ms-sql-changes)
+-   [Information for MySQL Users
+    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
 -   [Information for new PHP 5.6 & Apache
-    version](http://rackspace.com/knowledge_center/article/information-for-new-php-56-apache-version-0)
+    version](/howto/information-for-new-php-56-apache-version-0)
 
+</div>
 

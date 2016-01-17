@@ -2,11 +2,11 @@
 node_id: 3520
 title: Rackspace Private Cloud - Partner Devices
 type: article
-created_date: '2013-06-07 19:30:03'
-created_by: alyssah
-last_modified_date: '2016-01-13 15:2026'
-last_modified_by: rose.contreras
-product: Rackspace Private Cloud - OpenStack
+created_date: '2013-06-07'
+created_by: Alyssa Hurtgen
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Contreras
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: markdown_w_tinymce
 ---
 
@@ -14,7 +14,7 @@ body_format: markdown_w_tinymce
 
 **Private Cloud Deployed in Your Data Center** | **Private Cloud Deployed in Rackspace Data Center**
 --- | --- |
-- Rackspace provides Private Cloud Software support (up to device) (See note) | - Rackspace provides Private Cloud Software support<br />- Rackspace provides device support		
+- Rackspace provides Private Cloud Software support (up to device) (See note) | - Rackspace provides Private Cloud Software support<br />- Rackspace provides device support
 
 **Note:** Rackspace Private Cloud provides secure and auditable access.
 

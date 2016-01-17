@@ -2,10 +2,10 @@
 node_id: 738
 title: 'Getting Started With Cloud Sites: Uploading Your Content'
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 15:2051'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,9 +19,9 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
+
 
 **Now that you have successfully created your domain in Cloud Sites,**
 you will most likely want to begin uploading content to your website.
@@ -38,7 +38,7 @@ To find your domain's FTP settings follow these easy steps:
 
 1.  Log in to the [Rackspace Cloud Control
     Panel](http://manage.rackspacecloud.com)
-2.  Navigate to **Hosting-\>Cloud Sites**
+2.  Navigate to **Hosting-&gt;Cloud Sites**
 
     ![](http://c458676.r76.cf2.rackcdn.com/CSites_MainNav_09.png)
 
@@ -66,8 +66,9 @@ To find your domain's FTP settings follow these easy steps:
         Passive mode will allow for your computer to navigate through
         our firewalls.
     -   There are a variety of ports that could be utilized for FTP
-        traffic, however, we have chosen to stay with the standard port
-        21. Most FTP clients will have this port selected as default.
+        traffic, however, we have chosen to stay with the standard
+        port 21. Most FTP clients will have this port selected
+        as default.
 
 5.  Once you have logged into your FTP server a list of websites
     associated with your username and password will be displayed. Choose
@@ -100,7 +101,7 @@ Cloud Sites. At this point, you should be fairly comfortable with
 Hosting Plans, and what they are used for as well as how to create new
 Hosting Plans and modify existing ones.  You've also successfuly added
 your first domain and connected to the FTP servers to begin uploading
-your content. 
+your content.
 
-###  
+###
 

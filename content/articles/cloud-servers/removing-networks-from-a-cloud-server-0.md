@@ -2,10 +2,10 @@
 node_id: 3150
 title: Removing Networks from a Cloud Server
 type: article
-created_date: '2012-10-30 12:34:45'
+created_date: '2012-10-30'
 created_by: Susan Million
-last_modified_date: '2016-01-10 22:4106'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-10'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -32,8 +32,8 @@ data center.
 Provides a virtual Layer 2 network that keeps your server separate from
 PublicNet, ServiceNet, or both.
 
-Limitations
------------
+<span>Limitations</span>
+------------------------
 
 If you remove your Cloud Server from PublicNet, it no longer has access
 to the Internet and some Rackspace products and services. If you remove
@@ -42,20 +42,21 @@ products and services. The graphic below depicts the services that are
 not available when these networks are removed from a Cloud Server:
 
 ![Removing Networks from a Cloud
-Server](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cloud-networks-infographic-revised4.png)
+Server](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cloud-networks-infographic-revised4.png){width="438"
+height="722"}
 
 ### More Information on Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Attach an Isolated Network to a New Cloud Server")
+Server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Attach an Isolated Network to a New Cloud Server")
 
 [Attach a Cloud Network to an Existing Cloud
-Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
+Server](/howto/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](http://www.rackspace.com/knowledge_center/article/using-cidr-notation-in-cloud-networks "CIDR Notation")
+Networks](/howto/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer Guide](https://developer.rackspace.com/docs/)
 
- 
+
 

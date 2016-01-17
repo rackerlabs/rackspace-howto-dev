@@ -2,16 +2,16 @@
 node_id: 350
 title: Getting Started on a Windows Cloud Server
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:3535'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
 
 **NOTE:** This article is written for our [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com). 
+Panel](https://manage.rackspacecloud.com).
 
 **Prerequisites**
 
@@ -20,11 +20,12 @@ Panel](https://manage.rackspacecloud.com).
 **Procedure**
 
 -   Login to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp|")
--   Navigate to Hosting-\>Cloud Servers
+    Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp|"){.external
+    .text}
+-   Navigate to Hosting-&gt;Cloud Servers
 -   Click on **Add Server** button
--   Click on the **Windows** tab in order to see the options as shown
-    below.
+-   Click on the **Windows** tab in order to see the options as
+    shown below.
 
 ![Win1.jpg](http://c0349532.cdn.cloudfiles.rackspacecloud.com/Win1.jpg)
 
@@ -45,15 +46,16 @@ Panel](https://manage.rackspacecloud.com).
 
 ![win2.jpg](http://c0349532.cdn.cloudfiles.rackspacecloud.com/win2.jpg)
 
--   Watch the server build process in the Cloud Sites Control Panel if
-    interested. Upon completion an email is sent to the contact email
+-   Watch the server build process in the Cloud Sites Control Panel
+    if interested. Upon completion an email is sent to the contact email
     address for the account with the Administrator password for the new
     Cloud Server.
 
 **Additional Resources**
 
 -   A comprehensive set of articles can be found under [List of
-    Articles](http://www.rackspace.com/knowledge_center/product-articles/cloud-servers "http://www.rackspace.com/knowledge_center/product-articles/cloud-servers")
+    Articles](/howto/cloud-servers "/howto/cloud-servers"){.external
+    .text}
 
- 
+
 

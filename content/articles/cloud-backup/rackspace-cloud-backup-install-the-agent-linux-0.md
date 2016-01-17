@@ -2,26 +2,28 @@
 node_id: 4057
 title: Rackspace Cloud Backup - Install the agent on Linux
 type: article
-created_date: '2014-05-05 17:16:47'
-created_by: kyle.laffoon
-last_modified_date: '2016-01-04 22:0231'
-last_modified_by: kyle.laffoon
+created_date: '2014-05-05'
+created_by: Kyle Laffoon
+last_modified_date: '2016-01-04'
+last_modified_by: Kyle Laffoon
 product: Cloud Backup
 body_format: tinymce
 ---
 
+[](){#backtotop}
+
 ### Previous section
 
 [Rackspace Cloud Backup -
-Overview](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview)
+Overview](/howto/rackspace-cloud-backup-overview)
 
 The following instructions are for the installation of the Rackspace
 Cloud Backup agent on your Linux server. If you are using a Windows
 server, see [Rackspace Cloud Backup - Install the Agent
-(Windows)](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-install-the-agent-windows)
+(Windows)](/howto/rackspace-cloud-backup-install-the-agent-on-windows)
 for parallel instructions.  To schedule and configure backups after the
 agent is installed, see [Rackspace Cloud Backup - Create a
-Backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0).
+Backup](/howto/rackspace-cloud-backup-create-a-backup-0).
 
 **Note:** You can use Cloud Backup on almost any Linux server in the
 Rackspace Cloud. Exceptions are FreeBSD 9 (not supported) and Debian 5
@@ -29,28 +31,31 @@ Rackspace Cloud. Exceptions are FreeBSD 9 (not supported) and Debian 5
 use an alternate method to backup your data. Also note that 32-bit
 servers and agents on Linux are not supported.
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| [**1. Install the agent**](#installagent)                                |
-|                                                                          |
-| -   [Install the agent on APT-based systems, such as Ubuntu and          |
-|     Debian](#apt)                                                        |
-| -   [Install the agent on RPM-based systems, such as CentOS, Fedora, and |
-|     Red Hat](#rpm)                                                       |
-| -   [Install the agent on Arch, Gentoo, and SUSE systems](#arch)         |
-|                                                                          |
-| [**2. Troubleshooting**](#troubleshoot)                                  |
-|                                                                          |
-| -   [Connection error](#connection)                                      |
-| -   [Status codes](#status)                                              |
-| -   [Agent logs](#agent)                                                 |
-|                                                                          |
-| [**3. Uninstall the agent from Linux**](#uninstalllinux)                 |
-+--------------------------------------------------------------------------+
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><h2 id="contents">Contents</h2>
+<p><a href="#installagent"><strong>1. Install the agent</strong></a></p>
+<ul>
+<li><a href="#apt">Install the agent on APT-based systems, such as Ubuntu and Debian</a></li>
+<li><a href="#rpm">Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat</a></li>
+<li><a href="#arch">Install the agent on Arch, Gentoo, and SUSE systems</a></li>
+</ul>
+<p><a href="#troubleshoot"><strong>2. Troubleshooting</strong></a></p>
+<ul>
+<li><a href="#connection">Connection error</a></li>
+<li><a href="#status">Status codes</a></li>
+<li><a href="#agent">Agent logs</a></li>
+</ul>
+<p><a href="#uninstalllinux"><strong>3. Uninstall the agent from Linux</strong></a></p></td>
+</tr>
+</tbody>
+</table>
 
- 
+
 
 Install the agent
 -----------------
@@ -77,7 +82,7 @@ instructions for your Linux distribution:
 **Note**: None of the Linux backup agents can be installed without a
 reboot. However, an agent update does not require a reboot.
 
- 
+
 
 ### Install the agent on APT-based systems, such as Ubuntu and Debian {#apt}
 
@@ -112,8 +117,8 @@ consecutively as a user with sudo or superuser privileges.
 
 6.  Check the installation.
 
-    The updater might take a few minutes to download and install the
-    agent. To check the status of the agent installation, run the
+    The updater might take a few minutes to download and install
+    the agent. To check the status of the agent installation, run the
     following command:
 
         sudo cloudbackup-updater -v
@@ -129,33 +134,33 @@ consecutively as a user with sudo or superuser privileges.
 
     Run the agent with the `--configure` option to configure the agent.
     Use your Rackspace Cloud account username and API key, where
-    indicated by \<username\> and \<API key\> in the following command.
-    For information about how to find your API key, see [View and reset
-    your API
-    key.](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+    indicated by &lt;username&gt; and &lt;API key&gt; in the
+    following command. For information about how to find your API key,
+    see [View and reset your
+    API key.](/howto/view-and-reset-your-api-key)
 
     **Tip**: This step asks you to confirm that you want to overwrite
     your configuration file. Answer yes.
 
         sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apikey> --flavor <flavor> --datacenter <datacenter> --apihost api.drivesrvr.com
 
-    In the example above, \<*flavor*\> is one of `privatecloud`,
+    In the example above, &lt;*flavor*&gt; is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.<br>
-     <br>
-     **Note**: For installation on an OnMetal server, you *must* specify
+    `raxcloudserver`.
+
+    **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
-     <br>
-     If you use any flavor other than `raxcloudserver`, the Backup Agent
-    is shown as not installed in the **Backups** section at the bottom
-    of the**Cloud Servers Details** page in the Cloud Control Panel, as
-    shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.<br>
-     <br>
+    &lt;*flavor*&gt; to `privatecloud` with the `--snet` flag.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
+    If you use any flavor other than `raxcloudserver`, the Backup Agent
+    is shown as not installed in the **Backups** section at the bottom
+    of the **Cloud Servers Details** page in the Cloud Control Panel, as
+    shown below. However, items do show up as they should under the
+    **Backup** tab in the Cloud Control Panel.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png){width="567"
+    height="92"}
 
 8.  Start the agent.
 
@@ -163,7 +168,7 @@ consecutively as a user with sudo or superuser privileges.
 
 ^[Back\\ to\\ top](#backtotop)^
 
-###  
+###
 
 ### Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat {#rpm}
 
@@ -179,9 +184,9 @@ consecutively as a user with sudo or superuser privileges.
 
 2.  Check the installation.
 
-    The updater might take a few minutes to download and install the
-    agent. To check the status of the agent install, run the following
-    command:
+    The updater might take a few minutes to download and install
+    the agent. To check the status of the agent install, run the
+    following command:
 
         sudo cloudbackup-updater -v
 
@@ -192,28 +197,28 @@ consecutively as a user with sudo or superuser privileges.
 3.  Configure the bootstrap.
 
     Run the agent with the --configure option to configure the agent.
-    You will be asked for your Rackspace Cloud account username and
-    password.
+    You will be asked for your Rackspace Cloud account username
+    and password.
 
         sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apikey> --flavor <flavor> --datacenter <datacenter> --apihost api.drivesrvr.com
 
-    In the example above, \<*flavor*\> is one of `privatecloud`,
+    In the example above, &lt;*flavor*&gt; is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.<br>
-     <br>
-     **Note**: For installation on an OnMetal server, you *must* specify
+    `raxcloudserver`.
+
+    **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
-     <br>
-     If you use any flavor other than `raxcloudserver`, the Backup Agent
-    is shown as not installed in the **Backups** section at the bottom
-    of the**Cloud Servers Details** page in the Cloud Control Panel, as
-    shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.<br>
-     <br>
+    &lt;*flavor*&gt; to `privatecloud` with the `--snet` flag.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
+    If you use any flavor other than `raxcloudserver`, the Backup Agent
+    is shown as not installed in the **Backups** section at the bottom
+    of the **Cloud Servers Details** page in the Cloud Control Panel, as
+    shown below. However, items do show up as they should under the
+    **Backup** tab in the Cloud Control Panel.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png){width="567"
+    height="92"}
 
 4.  Start the agent.
 
@@ -221,7 +226,7 @@ consecutively as a user with sudo or superuser privileges.
 
 ^[Back\\ to\\ top](#backtotop)^
 
-###  
+###
 
 ### Install the agent on Arch, Gentoo, and SUSE systems {#arch}
 
@@ -262,31 +267,31 @@ tarball instructions.
 5.  Configure the agent.
 
     Run the agent with the --configure option to configure the agent.
-    You will be asked for your Rackspace Cloud account username and
-    password.
+    You will be asked for your Rackspace Cloud account username
+    and password.
 
     **Tip:** This step asks you to confirm that you want to overwrite
     your configuration file. Answer yes.
 
         sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apikey> --flavor <flavor> --datacenter <datacenter> --apihost api.drivesrvr.com
 
-    In the example above, \<*flavor*\> is one of `privatecloud`,
+    In the example above, &lt;*flavor*&gt; is one of `privatecloud`,
     `raxcloudserver`, or `dedicated`, and is typically
-    `raxcloudserver`.<br>
-     <br>
-     **Note**: For installation on an OnMetal server, you *must* specify
+    `raxcloudserver`.
+
+    **Note**: For installation on an OnMetal server, you *must* specify
     the region and host name for the datacenter in order to connect. For
     an OnMetal server, best results have been received by setting
-    \<*flavor*\> to `privatecloud` with the `--snet` flag.<br>
-     <br>
-     If you use any flavor other than `raxcloudserver`, the Backup Agent
-    is shown as not installed in the **Backups** section at the bottom
-    of the**Cloud Servers Details** page in the Cloud Control Panel, as
-    shown below. However, items do show up as they should under the
-    **Backup** tab in the Cloud Control Panel.<br>
-     <br>
+    &lt;*flavor*&gt; to `privatecloud` with the `--snet` flag.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png)
+    If you use any flavor other than `raxcloudserver`, the Backup Agent
+    is shown as not installed in the **Backups** section at the bottom
+    of the **Cloud Servers Details** page in the Cloud Control Panel, as
+    shown below. However, items do show up as they should under the
+    **Backup** tab in the Cloud Control Panel.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-15%20at%203.38.07%20PM.png){width="567"
+    height="92"}
 
 6.  Start the agent.
 
@@ -296,7 +301,7 @@ tarball instructions.
 
 ^[Back\\ to\\ top](#backtotop)^
 
- 
+
 -
 
 Troubleshooting {#troubleshoot}
@@ -315,8 +320,8 @@ ensure that your firewall isn't blocking outgoing connections on port
 
 #### What do the backup statuses Skipped, Missed, Errored, and Failed mean?
 
--   Skipped: The backup job was skipped because a backup job was already
-    queued. A single backup job can be queued only once.
+-   Skipped: The backup job was skipped because a backup job was
+    already queued. A single backup job can be queued only once.
 -   Missed: The backup job was missed because the agent did not respond.
     The agent was likely offline.
 -   Errored: An error occurred during the backup. The backup job did
@@ -337,8 +342,8 @@ ensure that your firewall isn't blocking outgoing connections on port
 -   Errored: Look in the logs on the server. The agent stores all the
     logs in one location (see the following section). Review the logs
     line by line. If you cannot determine the cause of the error, raise
-    a ticket with the SME group, and they can help you identify the
-    problem.
+    a ticket with the SME group, and they can help you identify
+    the problem.
 -   Failed: As with the Errored status, check the logs on the server. A
     failed status is severe.
 
@@ -349,7 +354,7 @@ If you need to read the logs of the agent, you can find them in
 
 ^[Back\\ to\\ top](#backtotop)^
 
- 
+
 
 Uninstall the agent from Linux {#uninstalllinux}
 ------------------------------
@@ -387,5 +392,5 @@ installation, remove that as well.
 ### Next steps
 
 [Rackspace Cloud Backup - Create a
-backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0)
+backup](/howto/rackspace-cloud-backup-create-a-backup-0)
 

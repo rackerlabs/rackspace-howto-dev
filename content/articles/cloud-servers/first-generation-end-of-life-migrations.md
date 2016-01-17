@@ -2,10 +2,10 @@
 node_id: 4566
 title: First Generation end-of-life migrations
 type: article
-created_date: '2015-02-16 17:36:16'
-created_by: reese.mcjunkin
-last_modified_date: '2015-12-14 14:3857'
-last_modified_by: Nate.Archer
+created_date: '2015-02-16'
+created_by: Reese Mcjunkin
+last_modified_date: '2015-12-14'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -51,12 +51,12 @@ Timeline
 The First Generation to Next Generation migration path is currently in
 the final stages of testing, and although the timeline has not yet been
 finalized, we plan to begin releasing the migration path to small groups
-this quarter, continuing through the end of the year.<br>
- <br>
- After the migration path has been made available to your server, we
-will send a communication to your account with an Assisted Migration
-date. Prior to this date, there will be a window of at least 30 days in
-which you will be eligible for Self-Service Migration.
+this quarter, continuing through the end of the year.
+
+After the migration path has been made available to your server, we will
+send a communication to your account with an Assisted Migration date.
+Prior to this date, there will be a window of at least 30 days in which
+you will be eligible for Self-Service Migration.
 
 ### Self-Service Migration
 
@@ -114,9 +114,9 @@ ensure a smooth transition, however, we have created articles with
 recommendations for your OS.
 
 -   [Preparing for Migration &ndash;
-    Linux](https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-linux-server)
+    Linux](/howto/prepare-to-migrate-a-linux-server)
 -   [Preparing for Migration &ndash;
-    Windows](https://www.rackspace.com/knowledge_center/article/prepare-to-migrate-a-windows-server)
+    Windows](/howto/prepare-to-migrate-a-windows-server)
 
 Migrating prior to your designated window
 -----------------------------------------
@@ -128,7 +128,7 @@ to provide this process early.
 
 If you want to make the transition early, you can do so via the
 traditional [Image-Based migration
-method](https://admin.rackspace.com/knowledge_center/article/next-generation-cloud-servers-migration-considerations-and-options#image),
+method](/howto/next-generation-cloud-servers-migration-considerations-and-options),
 with the caveats that accompany it. Be aware that image-based migration
 does not allow for IP address retention across platforms. If this
 retention is a necessity, you might want to wait until your designated
@@ -141,7 +141,7 @@ For more information, contact your support team or refer to the
 following resources:
 
 -   [First Generation to Next Generation Migration
-    FAQ](https://www.rackspace.com/knowledge_center/article/first-generation-to-next-generation-cloud-server-migration-faq)
+    FAQ](/howto/first-generation-to-next-generation-cloud-server-migration-faq)
 -   [Community Migration
     Thread](https://community.rackspace.com/products/f/25/t/4787)
 

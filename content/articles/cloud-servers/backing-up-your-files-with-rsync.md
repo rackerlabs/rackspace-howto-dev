@@ -2,10 +2,10 @@
 node_id: 266
 title: Backing up your files with rsync
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 17:1634'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: full_html
 ---
@@ -17,15 +17,15 @@ One way is to download each and every file when you want to save them.
 However, rsync makes the task a lot easier as it only downloads files
 that have changed - saving time and bandwidth.
 
--   [Installation](#Installation)
--   [Preparation](#Preparation)
--   [Security](#Security)
--   [Command](#Command)
--   [Output](#Output)
--   [Summary](#Summary)
+-   [<span class="toctext">Installation</span>](#Installation)
+-   [<span class="toctext">Preparation</span>](#Preparation)
+-   [<span class="toctext">Security</span>](#Security)
+-   [<span class="toctext">Command</span>](#Command)
+-   [<span class="toctext">Output</span>](#Output)
+-   [<span class="toctext">Summary</span>](#Summary)
 
-Installation
-------------
+[](){#Installation}<span>Installation</span>
+--------------------------------------------
 
 Installing rsync is as simple as implementing your OS's package manager
 such as:
@@ -35,8 +35,8 @@ such as:
 Do remember that if you are downloading files to another system, both
 will require rsync to be installed.
 
-Preparation
------------
+<span class="mw-headline">[](){#Preparation}Preparation </span>
+---------------------------------------------------------------
 
 Very little to do here expect to establish where the saved files will be
 located.
@@ -44,8 +44,8 @@ located.
 In this example, I am going to backup my main Cloud Server home
 directory to another server.
 
-Security
---------
+<span class="mw-headline">[](){#Security}Security </span>
+---------------------------------------------------------
 
 As a rule (and one I stick to very closely), we don't upload and
 download anything without some encryption in place. As such we will be
@@ -61,8 +61,8 @@ each time I attempt to rsync my home folder. It's perfectly fine not to
 do it that way, but you will need to enter the password each time you
 rsync.
 
-Command
--------
+<span class="mw-headline">[](){#Command}Command </span>
+-------------------------------------------------------
 
 So on the destination server, the command I would give is as follows:
 
@@ -75,8 +75,8 @@ port.
 
 -avl: This contains three options;
 
-(a) is archive mode which basically keep the permission settings for
-the files. (v) is verbose mode. You can leave it out or increase it by
+\(a) is archive mode which basically keep the permission settings for the
+files. (v) is verbose mode. You can leave it out or increase it by
 appending two v's (-vv). (l) preserves any links you may have created.
 
 --delete: deletes files from the destination folder that are no longer
@@ -103,8 +103,8 @@ called 'public\_html' or 'configs' or 'bin' and so on.
 
 /backup/: Identifies the folder on the backup server to place the files.
 
-Output
-------
+<span class="mw-headline">[](){#Output}Output </span>
+-----------------------------------------------------
 
 So from the command above, my storage server would start to output
 something like this:
@@ -133,8 +133,8 @@ Running rsync again will only download files that have changed so,
 depending on how busy your home directory is, a much smaller download
 will be conducted.
 
-Summary
--------
+<span class="mw-headline">[](){#Summary}Summary </span>
+-------------------------------------------------------
 
 This was a quick introduction to rsync. The command shown is a simple
 but effective and secure means of creating an incremental backup of your

@@ -2,10 +2,10 @@
 node_id: 1447
 title: Troubleshooting DNS issues
 type: article
-created_date: '2012-06-27 11:57:28'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 19:4047'
-last_modified_by: stephanie.fillmon
+created_date: '2012-06-27'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -16,30 +16,30 @@ system of servers that host the resource records that are used to find
 where a website is hosted or where to deliver an e-mail. To update these
 records, you need to know who is hosting them and how to access them. To
 determine why you are being directed to the wrong server, you need to
-know how to do a lookup.<br>
- <br>
- Your registrar controls where a lookup is directed when someone tries
-to check a record related to your domain. If you want to change where
-your records are hosted, you must update the location with your
-registrar. To check where your records are currently hosted, you can
-check your domain against the **whois** database system. With whois, you
-can find out information about the ownership of a domain.
+know how to do a lookup.
+
+Your registrar controls where a lookup is directed when someone tries to
+check a record related to your domain. If you want to change where your
+records are hosted, you must update the location with your registrar. To
+check where your records are currently hosted, you can check your domain
+against the **whois** database system. With whois, you can find out
+information about the ownership of a domain.
 
 #### Checking domain registration details
 
 To check a domain with whois, you can use the whois command on both
 Linux and Windows. The output is essentially identical on both systems.
 
--   **On Linux,**the whois command should be installed by default.
+-   **On Linux,** the whois command should be installed by default.
 -   **On Windows**, if the application is not already installed, you can
     [download
-    it](http://technet.microsoft.com/en-us/sysinternals/bb897435.aspx) from
-    Microsoft. The application does not have an installer, so after you
-    extract it, open the command prompt and navigate to the folder where
-    it is located before running it.
+    it](http://technet.microsoft.com/en-us/sysinternals/bb897435.aspx) from Microsoft.
+    The application does not have an installer, so after you extract it,
+    open the command prompt and navigate to the folder where it is
+    located before running it.
 
-<br>
- The formatting of the output from whois databases is not standardized
+
+The formatting of the output from whois databases is not standardized
 because the information is distributed across a number of sources.
 However, the responses should contain similar information, such as
 registrar, name servers, and date registered. The following example
@@ -85,7 +85,7 @@ shows the whois information for rackspace.co.uk:
 
         WHOIS lookup made at 09:05:23 25-Jun-2012
 
-    -- 
+    --
     This WHOIS information is provided for free by Nominet UK the central registry
     for .uk domain names. This information and the .uk WHOIS are:
 
@@ -97,16 +97,16 @@ shows the whois information for rackspace.co.uk:
     repackaging, recompilation, redistribution or reuse (B) obscuring, removing
     or hiding any or all of this notice and (C) exceeding query rate or volume
     limits. The data is provided on an 'as-is' basis and may lag behind the
-    register. Access may be withdrawn or restricted at any time. 
+    register. Access may be withdrawn or restricted at any time.
 
-<br>
- <br>
- Important sections of the output for troubleshooting are as follows:
+
+
+Important sections of the output for troubleshooting are as follows:
 
 -   **Registrant:** The owner of the domain (if this is your domain,
     this this should be you)
--   **Registrar:**The comapny through whish the domain is registered. If
-    there is a intermediary between you and the registrar, the
+-   **Registrar:** The comapny through whish the domain is registered.
+    If there is a intermediary between you and the registrar, the
     imtermediary should also be listed. In the example, the intermediary
     is represented by the **Registered through** field.
 -   **Registration status/expiry:** You can control the records for a
@@ -119,17 +119,17 @@ shows the whois information for rackspace.co.uk:
     which you registered the domain provides this hosting. However, you
     can update this location with them to point to another location. For
     example, you can use Rackspace Cloud DNS to host your records. If
-    lookups aren't going where you expect, this may be the cause.<br>
-     <br>
-     After you have checked your domain with whois, you should be able
-    to confirm that the domain is registered to you, that it has not
+    lookups aren't going where you expect, this may be the cause.
+
+    After you have checked your domain with whois, you should be able to
+    confirm that the domain is registered to you, that it has not
     expired, and that the name server records point where you expect. If
     this information is not correct, you must contact the company from
     which you purchased the domain to update the details; generally a
     web-based control panel is provided for self-service. If you want to
     host your DNS records with Rackspace, see [Rackspace Cloud
     Essentials - What Are Your Name
-    Servers?](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-what-are-your-name-servers)
+    Servers?](/howto/rackspace-cloud-essentials-what-are-your-name-servers)
     for details.
 
 To see all the records that are currently being hosted for your domain,
@@ -138,7 +138,7 @@ Most name servers won't allow someone who doesn't own the domain to
 request a list of all the records for it. If the domain is hosted on
 Rackspace Cloud, you can find instructions in [Create DNS Records for
 cloud servers with the Control
-Panel](http://www.rackspace.com/knowledge_center/article/creating-dns-records-for-cloud-servers-with-the-control-panel).
+Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 #### DNS lookups
 
@@ -151,11 +151,10 @@ cached, confirm whether it matched the authoritative name server's copy,
 and understand the output of the tools:
 
 -   [nslookup
-    guide](http://www.rackspace.com/knowledge_center/article/nslookup-checking-dns-records-on-windows)
+    guide](/howto/nslookup-checking-dns-records-on-windows)
 
 To get an indication of how a record is cached around the world, you can
-use the third-party website
-[http://www.whatsmydns.net/](http://www.whatsmydns.net/) . You specify
+use the third-party website <http://www.whatsmydns.net/> . You specify
 the record name and type, and then the site checks a number of DNS
 servers around the world for the records that they hold. If responses
 from the different servers do not match, the current records have not
@@ -166,14 +165,14 @@ the records are cached before checking for a new version.
 #### Hosts file
 
 If the DNS issue is specific to a single computer, one other thing to
-bear in mind is the **hosts**file stored on that machine. This file
+bear in mind is the **hosts** file stored on that machine. This file
 contains a list of hostnames and IP addresses that your computer checks,
 generally before doing a DNS lookup. nslookup and dig do not check this
 list of hostnames. So, if the IP address your application (for examplet,
 ping) is using does not match what is listed in the look up response,
-this mismatch may be the cause.<br>
- <br>
- The locations of the files are as follows:
+this mismatch may be the cause.
+
+The locations of the files are as follows:
 
 -   On Linux, host file is **/etc/hosts**.
 -   On Windows, host file is

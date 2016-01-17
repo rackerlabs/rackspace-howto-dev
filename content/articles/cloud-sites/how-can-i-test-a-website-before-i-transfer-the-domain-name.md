@@ -2,10 +2,10 @@
 node_id: 570
 title: Test your website before transferring the domain name to Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:3129'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -21,7 +21,7 @@ your website before you change the DNS of your domain. Access the URL as
 follows:
 
 1.  In the left navigation pane of the Cloud Sites Control Panel, click
-    **Hosting \> Cloud Sites**.
+    **Hosting &gt; Cloud Sites**.
 2.  Click the name of the site that you want to test.
 
 The test URL is located on the **General Settings** tab, under **Viewing
@@ -40,5 +40,5 @@ be different from the examples.
 
 For information about how to add content to your test website by using
 the test FTP, see [Getting Started With Cloud Sites, FTP/SSHFS/FTP
-Clients](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+Clients](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients).
 

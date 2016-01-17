@@ -2,10 +2,10 @@
 node_id: 70
 title: Change the password for a MySQL database user on Cloud Sites
 type: article
-created_date: '2011-03-08 18:21:34'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-05 20:0933'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-08'
+created_by: Rackspace Support
+last_modified_date: '2015-05-05'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -30,14 +30,14 @@ To change the password for a database user
 
 1.  Log in to the [Cloud Sites Control
     Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp").
-2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
+2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Click the name of the website that owns the database that you want
     to modify.
 4.  Click the **Features** tab.
 5.  In the **Databases** section, click the name of the database that
     you want to modify.
-6.  On the Database Information page, scroll to the **Database Users**
-    section.
+6.  On the Database Information page, scroll to the **Database
+    Users** section.
 7.  In the list of available users, click the hyperlink of the user
     whose password you want to change.
 8.  In the **Password** box, enter a password that is at least eight
@@ -57,7 +57,7 @@ To change the password for a database user
     If you mistyped the password in the **Confirm Password** box, you
     are informed that your passwords do not match. Repeat steps 8-10.
 
-11. Repeat these steps for each database user whose password you want to
-    change.
+11. Repeat these steps for each database user whose password you want
+    to change.
 
 

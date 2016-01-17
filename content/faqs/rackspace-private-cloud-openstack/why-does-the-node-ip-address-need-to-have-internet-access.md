@@ -2,11 +2,11 @@
 node_id: 1913
 title: Why does the node IP address need to have Internet access?
 type: frequently_asked_question
-created_date: '2012-08-07 18:39:00'
+created_date: '2012-08-07'
 created_by: Karin Levenstein
-last_modified_date: '2012-08-15 03:4414'
+last_modified_date: '2012-08-15'
 last_modified_by: Rae D. Cabello
-product: Rackspace Private Cloud - OpenStack
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 

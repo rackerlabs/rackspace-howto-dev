@@ -2,10 +2,10 @@
 node_id: 514
 title: Cloud Servers with Managed Operations support for Windows
 type: article
-created_date: '2011-03-16 21:57:40'
+created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2016-01-13 22:1111'
-last_modified_by: Nate.Archer
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Managed Operations
 body_format: markdown_w_tinymce
 ---
@@ -25,7 +25,7 @@ body_format: markdown_w_tinymce
 	</li>
 </ul>
 
-<p><strong>Note:</strong> Detailed information on Linux support can be found in <a href="http://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers with Managed Operations support for Linux</a>.</p>
+<p><strong>Note:</strong> Detailed information on Linux support can be found in <a href="/howto/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers with Managed Operations support for Linux</a>.</p>
 
 <h3>IIS 7.5</h3>
 

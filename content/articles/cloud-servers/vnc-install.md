@@ -2,10 +2,10 @@
 node_id: 502
 title: VNC Install
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:2824'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -21,43 +21,76 @@ Windows will not run.**
 of bandwidth. Please use wisely!**
 
 If you would like information about tunnelling VNC over SSH please visit
-[http://martybugs.net/smoothwall/puttyvnc.cgi](http://martybugs.net/smoothwall/puttyvnc.cgi "http://martybugs.net/smoothwall/puttyvnc.cgi")
+<http://martybugs.net/smoothwall/puttyvnc.cgi>
 
-* * * * *
+------------------------------------------------------------------------
 
 Contents
 --------
 
--   [1 Install the Necessary Packages](#Install_the_Necessary_Packages)
-    -   [1.1 Install Perl](#Install_Perl)
-    -   [1.2 Install X Windows](#Install_X_Windows)
-    -   [1.3 Install a Window Manager](#Install_a_Window_Manager)
-        -   [1.3.1 KDE](#KDE)
-        -   [1.3.2 GNOME](#GNOME)
-        -   [1.3.3 TWM](#TWM)
-    -   [1.4 Install VNC Server](#Install_VNC_Server)
--   [2 Configuration](#Configuration)
-    -   [2.1 Configure VNC](#Configure_VNC)
-    -   [2.2 Firewall](#Firewall)
-    -   [2.3 Test the Server](#Test_the_Server)
-        -   [2.3.1 Switch to your User](#Switch_to_your_User)
-        -   [2.3.2 Create a .vnc directory](#Create_a_.vnc_directory)
-        -   [2.3.3 Create the xstartup file](#Create_the_xstartup_file)
-        -   [2.3.4 Setup your VNC user](#Setup_your_VNC_user)
-        -   [2.3.5 Start the VNC server](#Start_the_VNC_server)
-        -   [2.3.6 Connect to your VNC](#Connect_to_your_VNC)
-        -   [2.3.7 Stopping the VNC Server](#Stopping_the_VNC_Server)
+-   [<span class="tocnumber">1</span> <span class="toctext">Install the
+    Necessary Packages</span>](#Install_the_Necessary_Packages)
+    -   [<span class="tocnumber">1.1</span> <span
+        class="toctext">Install Perl</span>](#Install_Perl)
+    -   [<span class="tocnumber">1.2</span> <span
+        class="toctext">Install X Windows</span>](#Install_X_Windows)
+    -   [<span class="tocnumber">1.3</span> <span
+        class="toctext">Install a Window
+        Manager</span>](#Install_a_Window_Manager)
+        -   [<span class="tocnumber">1.3.1</span> <span
+            class="toctext">KDE</span>](#KDE)
+        -   [<span class="tocnumber">1.3.2</span> <span
+            class="toctext">GNOME</span>](#GNOME)
+        -   [<span class="tocnumber">1.3.3</span> <span
+            class="toctext">TWM</span>](#TWM)
+    -   [<span class="tocnumber">1.4</span> <span
+        class="toctext">Install VNC Server</span>](#Install_VNC_Server)
+-   [<span class="tocnumber">2</span> <span
+    class="toctext">Configuration</span>](#Configuration)
+    -   [<span class="tocnumber">2.1</span> <span
+        class="toctext">Configure VNC</span>](#Configure_VNC)
+    -   [<span class="tocnumber">2.2</span> <span
+        class="toctext">Firewall</span>](#Firewall)
+    -   [<span class="tocnumber">2.3</span> <span class="toctext">Test
+        the Server</span>](#Test_the_Server)
+        -   [<span class="tocnumber">2.3.1</span> <span
+            class="toctext">Switch to your
+            User</span>](#Switch_to_your_User)
+        -   [<span class="tocnumber">2.3.2</span> <span
+            class="toctext">Create a .vnc
+            directory</span>](#Create_a_.vnc_directory)
+        -   [<span class="tocnumber">2.3.3</span> <span
+            class="toctext">Create the xstartup
+            file</span>](#Create_the_xstartup_file)
+        -   [<span class="tocnumber">2.3.4</span> <span
+            class="toctext">Setup your VNC
+            user</span>](#Setup_your_VNC_user)
+        -   [<span class="tocnumber">2.3.5</span> <span
+            class="toctext">Start the VNC
+            server</span>](#Start_the_VNC_server)
+        -   [<span class="tocnumber">2.3.6</span> <span
+            class="toctext">Connect to your
+            VNC</span>](#Connect_to_your_VNC)
+        -   [<span class="tocnumber">2.3.7</span> <span
+            class="toctext">Stopping the VNC
+            Server</span>](#Stopping_the_VNC_Server)
 
-Install the Necessary Packages
-------------------------------
+[](){#Install_the_Necessary_Packages}
+
+<span class="mw-headline">Install the Necessary Packages </span>
+----------------------------------------------------------------
 
 This article will assume you know how to use the YUM Update Manager.
 
-### Install Perl
+[](){#Install_Perl}
+
+### <span class="mw-headline">Install Perl </span>
 
     # yum install perl
 
-### Install X Windows
+[](){#Install_X_Windows}
+
+### <span class="mw-headline">Install X Windows </span>
 
 We will need to install the X-Windows platform to run the graphical
 portion of this project. X11 is a graphical display server, and will
@@ -67,16 +100,21 @@ To install run the following as root:
 
     # yum groupinstall "X Window System"
 
-### Install a Window Manager
+[](){#Install_a_Window_Manager}
 
-[KDE](http://www.kde.org/ "http://www.kde.org/"),
-[GNOME](http://www.gnome.org./ "http://www.gnome.org./") and
-[TWM](http://xwinman.org/vtwm.php "http://xwinman.org/vtwm.php") are all
-Window Managers and are the human usable layer that you are probably
-familiar with. This gives you the access to use a mouse and send calls
-to the X11 server.
+### <span class="mw-headline">Install a Window Manager </span>
 
-#### KDE
+[KDE](http://www.kde.org/ "http://www.kde.org/"){.external .text},
+[GNOME](http://www.gnome.org./ "http://www.gnome.org./"){.external
+.text} and
+[TWM](http://xwinman.org/vtwm.php "http://xwinman.org/vtwm.php"){.external
+.text} are all Window Managers and are the human usable layer that you
+are probably familiar with. This gives you the access to use a mouse and
+send calls to the X11 server.
+
+[](){#KDE}
+
+#### <span class="mw-headline">KDE </span>
 
     # yum groupinstall "KDE Desktop"
 
@@ -84,7 +122,9 @@ Also, this may be needed:
 
     # yum install kde-session
 
-#### GNOME
+[](){#GNOME}
+
+#### <span class="mw-headline">GNOME </span>
 
     # yum groupinstall "GNOME Desktop Environment"
 
@@ -92,23 +132,31 @@ Also, this may be needed:
 
     # yum install gnome-session
 
-#### TWM
+[](){#TWM}
+
+#### <span class="mw-headline">TWM </span>
 
 TWM is the default X-Window Manager and you don't have to install any
 additional packages, it is light and will run on almost anything, but is
 also not very user friendly and almost requires a power-user.
 
-### Install VNC Server
+[](){#Install_VNC_Server}
+
+### <span class="mw-headline">Install VNC Server </span>
 
 VNC is the service that display your X output to a tcp connection over
 the internet.
 
     # yum install vnc-server
 
-Configuration
--------------
+[](){#Configuration}
 
-### Configure VNC
+<span class="mw-headline">Configuration </span>
+-----------------------------------------------
+
+[](){#Configure_VNC}
+
+### <span class="mw-headline">Configure VNC </span>
 
 -   Modify the **/etc/sysconfig/vncservers** configuration file by
     performing the following commands:
@@ -129,9 +177,11 @@ add additional users to that line. For example...
     1:someguy 2:someperson 3:somegirl
 
 You will also need to add additional VNCSERVERARGS lines to correspond
-to each user. Change the [1] to match the session number.
+to each user. Change the \[1\] to match the session number.
 
-### Firewall
+[](){#Firewall}
+
+### <span class="mw-headline">Firewall </span>
 
 If you have a firewall running, you will need to open port 5901. For
 example, on CentOS, run:
@@ -145,21 +195,29 @@ Save the new iptables rule:
 
     # service iptables save
 
-### Test the Server
+[](){#Test_the_Server}
 
-#### Switch to your User
+### <span class="mw-headline">Test the Server </span>
+
+[](){#Switch_to_your_User}
+
+#### <span class="mw-headline">Switch to your User </span>
 
     # su username
     $ cd ~
 
-#### Create a .vnc directory
+[](){#Create_a_.vnc_directory}
+
+#### <span class="mw-headline">Create a .vnc directory </span>
 
 *take note of the '.' in front of the name*
 
     $ mkdir .vnc
     $ cd .vnc
 
-#### Create the xstartup file
+[](){#Create_the_xstartup_file}
+
+#### <span class="mw-headline">Create the xstartup file </span>
 
 Insert the configuration below (this is for a KDE-VNC session):
 
@@ -181,7 +239,9 @@ Make the file executable:
 
     $ chmod u+x xstartup
 
-#### Setup your VNC user
+[](){#Setup_your_VNC_user}
+
+#### <span class="mw-headline">Setup your VNC user </span>
 
 Set the user's private VNC connection password
 
@@ -189,7 +249,9 @@ Set the user's private VNC connection password
 
 -   You will be required to confirm your password.
 
-#### Start the VNC server
+[](){#Start_the_VNC_server}
+
+#### <span class="mw-headline">Start the VNC server </span>
 
 Make sure you exit out of your user session and go back to 'root'.
 
@@ -198,10 +260,12 @@ start the server:
     # service vncserver start
 
 -   You may see some error messages here stating 'unexpected EOF' or
-    syntax errors -- these are normal. If you see **[ OK ]** then the
+    syntax errors -- these are normal. If you see **\[ OK \]** then the
     service has started properly.
 
-#### Connect to your VNC
+[](){#Connect_to_your_VNC}
+
+#### <span class="mw-headline">Connect to your VNC </span>
 
 Open up your VNC client and type in your external IP address, colon,
 then your session ID configured in **/etc/sysconfig/vncservers**. The
@@ -209,13 +273,15 @@ session number must correspond to the user name or it will not connect.
 
 Example: 64.25.25.25:1
 
--   Type in the password you chose with vncpasswd and you will be
-    connected.
+-   Type in the password you chose with vncpasswd and you will
+    be connected.
 
-<br>
- To close the connection simple close the window.
 
-#### Stopping the VNC Server
+To close the connection simple close the window.
+
+[](){#Stopping_the_VNC_Server}
+
+#### <span class="mw-headline">Stopping the VNC Server </span>
 
 To stop the VNC server type the following:
 

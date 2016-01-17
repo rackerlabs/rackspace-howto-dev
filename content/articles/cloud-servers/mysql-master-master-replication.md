@@ -2,10 +2,10 @@
 node_id: 1119
 title: MySQL Master-Master Replication
 type: article
-created_date: '2011-06-07 19:06:14'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 17:1944'
-last_modified_by: kyle.laffoon
+created_date: '2011-06-07'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -14,18 +14,18 @@ Note: Rackspace Support cannot assist with master-master replication setups due 
 
 ## Contents
 
--  [1 MySQL Master-Master Replication](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#MySQL_Master-Master_Replication)
-  -  [1.1 Setup Outline](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#Setup_Outline)
-  -  [1.2 Creating the Cloud Servers](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#Creating_the_Cloud_Servers)
-  -  [1.3 Installing MySQL](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#Installing_MySQL)
-  -  [1.4 Configuring Replication](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#Configuring_Replication)
-  -  [1.5 Testing the scenarios](https://admin.rackspace.com/knowledge_center/article/mysql-master-master-replication#Testing_the_scenarios)
+-  [1 MySQL Master-Master Replication](/howto/mysql-master-master-replication)
+  -  [1.1 Setup Outline](/howto/mysql-master-master-replication)
+  -  [1.2 Creating the Cloud Servers](/howto/mysql-master-master-replication)
+  -  [1.3 Installing MySQL](/howto/mysql-master-master-replication)
+  -  [1.4 Configuring Replication](/howto/mysql-master-master-replication)
+  -  [1.5 Testing the scenarios](/howto/mysql-master-master-replication)
  |
 | --- |
 
 ## MySQL Master-Master Replication
 
-This article is about setting up [MySQL Master-Master database replication](http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication-multi-master.html) between two Cloud Servers. Master-Master data replication allows for replicated data, stored on multiple computers, to be updated by any authorized contributing member of the group. This allows for more open collaboration than [Master-Slave replication](https://admin.rackspace.com/knowledge_center/article/set-up-mysql-master-slave-replication) where any needed changes identified by a group member must to be submitted to the designated "master" of the node.
+This article is about setting up [MySQL Master-Master database replication](http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication-multi-master.html) between two Cloud Servers. Master-Master data replication allows for replicated data, stored on multiple computers, to be updated by any authorized contributing member of the group. This allows for more open collaboration than [Master-Slave replication](/howto/set-up-mysql-master-slave-replication) where any needed changes identified by a group member must to be submitted to the designated "master" of the node.
 
 The operating system we will use is Debian 5 (Lenny), built from the Rackspace Cloud base image.
 

@@ -2,10 +2,10 @@
 node_id: 4805
 title: Introduction to Agent Health Monitoring
 type: article
-created_date: '2015-08-30 20:41:09'
-created_by: constanze.kratel
-last_modified_date: '2015-12-21 20:0019'
-last_modified_by: constanze.kratel
+created_date: '2015-08-30'
+created_by: Constanze Kratel
+last_modified_date: '2015-12-21'
+last_modified_by: Constanze Kratel
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -21,11 +21,11 @@ a result, you can quickly alert the appropriate person or team when any
 one of the agents has an issue.
 
 For more information, see the [Working with
-alarms](http://www.rackspace.com/knowledge_center/article/working-with-alarms),
+alarms](/howto/working-with-alarms),
 [Working with
-checks](http://www.rackspace.com/knowledge_center/article/working-with-checks),
+checks](/howto/working-with-checks),
 and [Working with Rackspace Intelligence notification
-plans](http://www.rackspace.com/knowledge_center/article/working-with-rackspace-intelligence-notification-plans)
+plans](/howto/working-with-rackspace-intelligence-notification-plans)
 articles.
 
 How does agent health monitoring work?
@@ -62,7 +62,7 @@ heartbeat metrics that are periodically submitted by the agent. To
 investigate the cause of an alert, perform the following troubleshooting
 procedures:
 
-1.  Connect to the server to verify that the server is up and running. 
+1.  Connect to the server to verify that the server is up and running.
 2.  After you have successfully connected to the server, verify whether
     the server can connect to one of the monitoring agent endpoints. The
     SRV records of the endpoints are as follows:
@@ -74,13 +74,14 @@ procedures:
     connection is working, verify whether the agent has stopped running
     or is experiencing issues. For information about debugging the
     agent, see [Troubleshooting the Rackspace Monitoring
-    Agent](http://www.rackspace.com/knowledge_center/article/troubleshooting-the-cloud-monitoring-agent).
+    Agent](/howto/troubleshooting-the-rackspace-monitoring-agent).
 
 For a summary of the concepts mentioned in this article, read the
-[Single Pane of Glass for Your IT Ops](http://bit.ly/maas-intelligence)
-blog post or the [Getting Started with Rackspace
-Intelligence](http://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-intelligence)
-article.
+<span>[Single Pane of Glass for Your IT
+Ops](http://bit.ly/maas-intelligence) blog post or the [Getting Started
+with Rackspace
+Intelligence](/howto/getting-started-with-rackspace-intelligence)
+article.</span><span> </span>
 
 Start using agent health monitoring
 -----------------------------------

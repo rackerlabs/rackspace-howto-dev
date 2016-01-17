@@ -2,10 +2,10 @@
 node_id: 1075
 title: Enable file downloads in Internet Explorer
 type: article
-created_date: '2011-04-19 15:21:14'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-04 18:1153'
-last_modified_by: kelly.holcomb
+created_date: '2011-04-19'
+created_by: Rackspace Support
+last_modified_date: '2015-06-04'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -22,11 +22,11 @@ downloads in Internet Explorer, follow these steps.
 2.  From the **Tools** menu, select **Internet Options**.
 3.  In the Internet Options dialog box, click the **Security** tab.
 4.  Click **Custom Level**.
-5.  In the Security Settings dialog box, scroll to the **Downloads**
-    section.
+5.  In the Security Settings dialog box, scroll to the
+    **Downloads** section.
 6.  Under **File download**, select **Enable**, and then click **OK**.
 7.  In the confirmation dialog box, click **Yes**.
-8.  Click **OK \> Apply \> OK**.
+8.  Click **OK &gt; Apply &gt; OK**.
 
 Now you will be prompted for file downloads.
 

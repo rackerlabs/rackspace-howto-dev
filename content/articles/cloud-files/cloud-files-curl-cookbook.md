@@ -2,10 +2,10 @@
 node_id: 1445
 title: Cloud Files cURL Cookbook
 type: article
-created_date: '2012-06-25 19:44:15'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 20:4856'
-last_modified_by: stephanie.fillmon
+created_date: '2012-06-25'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -20,59 +20,59 @@ several protocols, including HTTP. This article describes how to install
 cURL, its basic functions, and how to use it with Cloud Files.
 
 -   [cURL
-    Installation](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#A)
+    Installation](/howto/cloud-files-curl-cookbook)
 -   [cURL
-    Basics](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#curlbasics)
+    Basics](/howto/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    Get](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#B)
+    Get](/howto/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    POST](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#C)
+    POST](/howto/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    PUT](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#D)
+    PUT](/howto/cloud-files-curl-cookbook)
 -   [Viewing the HTTP
-    headers](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#E)
+    headers](/howto/cloud-files-curl-cookbook)
 -   [Viewing more HTTP debug
-    information](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#F)
+    information](/howto/cloud-files-curl-cookbook)
 -   [Sending HTTP
-    headers](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#G)
+    headers](/howto/cloud-files-curl-cookbook)
 
 **Authenticating with the API**
 
 -   [Authenticating with the
-    API](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#H)
+    API](/howto/cloud-files-curl-cookbook)
 
 **Cloud Files cURL Recipes**
 
 -   [Storage
-    recipes](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#I)
+    recipes](/howto/cloud-files-curl-cookbook)
 -   [Listing
-    containers](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#J)
+    containers](/howto/cloud-files-curl-cookbook)
 -   [Creating a
-    container](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#K)
+    container](/howto/cloud-files-curl-cookbook)
     -   [Deleting a
-        Container](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#L)
+        Container](/howto/cloud-files-curl-cookbook)
     -   [Downloading an
-        object](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#M)
+        object](/howto/cloud-files-curl-cookbook)
     -   [Uploading an
-        object](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#N)
+        object](/howto/cloud-files-curl-cookbook)
     -   [Deleting an
-        object](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#O)
+        object](/howto/cloud-files-curl-cookbook)
     -   [Performing a server side
-        copy](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#P)
+        copy](/howto/cloud-files-curl-cookbook)
     -   [Updating object
-        headers](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#Q)
+        headers](/howto/cloud-files-curl-cookbook)
 -   [CDN
-    recipes](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#R)
+    recipes](/howto/cloud-files-curl-cookbook)
     -   [Listing CDN enabled
-        containers](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#S)
+        containers](/howto/cloud-files-curl-cookbook)
     -   [CDN enabling a
-        container](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#T)
+        container](/howto/cloud-files-curl-cookbook)
     -   [Viewing a container's CDN
-        details](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#U)
+        details](/howto/cloud-files-curl-cookbook)
     -   [Updating a CDN's container
-        attributes ](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#V)
+        attributes ](/howto/cloud-files-curl-cookbook)
     -   [Purging an
-        object](http://www.rackspace.com/knowledge_center/article/cloud-files-curl-cookbook#W)
+        object](/howto/cloud-files-curl-cookbook)
 
 **cURL installation**
 ---------------------
@@ -80,26 +80,26 @@ cURL, its basic functions, and how to use it with Cloud Files.
 All the major distributions have packages for installing cURL. Following
 is an example of how to install cURL on Debian and Ubuntu:
 
-~~~~ {#pre-0}
+``` {#pre-0}
 $ sudo apt-get install curl
-~~~~
+```
 
 Similarly, the following command installs cURL on Fedora, CentOS, and
 Red Hat Enterprise Linux:
 
-~~~~ {#pre-1}
+``` {#pre-1}
 $ yum install curl
-~~~~
+```
 
 After cURL is installed, use the following command to verify that it is
 ready to use:
 
-~~~~ {#pre-2}
+``` {#pre-2}
 $ curl --version
 curl 7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtsp smtp smtps telnet tftp
 Features: GSS-Negotiate IDN IPv6 Largefile NTLM SSL libz
-~~~~
+```
 
 You can also install cURL on Microsoft Windows. To do so, visit
 the [cURL homepage](http://www.curl.com/) and download the executable
@@ -107,8 +107,8 @@ from the[Downloads page](http://www.curl.com/download/). The Windows
 binary will require installation of some Microsoft Visual C++ libraries
 to work correctly.
 
-**cURL basics**
----------------
+**[](){#curlbasics}cURL basics**
+--------------------------------
 
 cURL is a command line tool that offers a means of communicating with
 various services at a protocol level. In particular, cURL supports
@@ -119,7 +119,7 @@ level of detail.
 This section provides some basic information about how to use cURL with
 HTTP.
 
-******Performing an HTTP GET**
+**[](){#B}Performing an HTTP GET**
 
 A HTTP GET operation is what browsers typically perform to download web
 pages and images whenever you go to a website. In the same manner, you
@@ -129,9 +129,9 @@ page data.
 Runing the following command with your favorite website URL returns the
 HTML markup.
 
-~~~~ {#pre-3}
+``` {#pre-3}
 $ curl http://www.example.com
-~~~~
+```
 
 By default, cURL sends the response body returned by the server directly
 to the terminal. You can also capture the output and send it directly to
@@ -140,12 +140,12 @@ this either by using the -o flag to specify an output file or by using
 the Linux redirection operator to capture the output, as shown in the
 following example:
 
-~~~~ {#pre-4}
+``` {#pre-4}
 $ curl -o index.html http://www.example.com
 $ curl http://www.example.com > index.html
-~~~~
+```
 
-****
+**[](){#C}**
 
 ### **Performing an HTTP POST**
 
@@ -158,15 +158,15 @@ XML documents. To post an XML or JSON file, you need to specify the
 Content-Type appropriately so that the receiving server knows what to
 expect, as shown in the following examples:
 
-~~~~ {#pre-5}
+``` {#pre-5}
 $ curl -X POST -d @mydocument.xml -H "Content-Type: application/xml" http://www.example.com/form
 $ curl -X POST -d @mydocument.json -H "Content-Type: application/json" http://www.example.com/form
-~~~~
+```
 
 You can also specify the data as a quoted string, but this can be
 unwieldy when done from the command line.
 
-****
+**[](){#D}**
 
 ### Performing an HTTP PUT
 
@@ -179,11 +179,11 @@ receiving server knows what kind of file it is. cURL automatically
 passes through the required Content-Length headers to ensure that the
 file is uploaded in a standard fashion. The syntax is as follows:
 
-~~~~ {#pre-6}
+``` {#pre-6}
 $ curl -X PUT -T myobject.jpg -H "Content-Type: image/jpeg" http://www.example.com/upload
-~~~~
+```
 
-****
+**[](){#E}**
 
 ### Viewing the HTTP headers
 
@@ -193,16 +193,16 @@ contain useful information such as the HTTP response code. To view the
 HTTP response headers, use the -I option, as shown in the following
 example. This option is the equivalent of an HTTP HEAD request (X HEAD):
 
-~~~~ {#pre-7}
+``` {#pre-7}
 $ curl -I http://www.example.com
 HTTP/1.0 302 Found
 Location: http://www.iana.org/domains/example/
 Server: BigIP
 Connection: Keep-Alive
 Content-Length: 0
-~~~~
+```
 
-****
+**[](){#F}**
 
 ### **Viewing More HTTP Debug Information**
 
@@ -211,16 +211,16 @@ transaction. You can do this by using the verbose flag, which prints out
 practically all the HTTP data that is sent back and forth, including the
 request headers. This flag is quite useful for debugging purposes.
 
-~~~~ {#pre-8}
+``` {#pre-8}
 $ curl -v http://www.example.com
 * About to connect() to www.example.com port 80 (#0)
 * Trying 192.0.43.10... connected
 * Connected to www.example.com (192.0.43.10) port 80 (#0)
 > GET / HTTP/1.1
 ...
-~~~~
+```
 
-****
+**[](){#G}**
 
 ### **Sending HTTP Headers**
 
@@ -229,18 +229,20 @@ additional headers to give the server more information about the request
 you are making. A useful header to specify is the Accept header to
 indicate the type of response that you want back, either JSON or XML.
 
-~~~~ {#pre-9}
+``` {#pre-9}
 $ curl -v -H "Accept: application/xml" www.example.com
 * About to connect() to www.example.com port 80 (#0)
 * Trying 192.0.43.10... connected
 * Connected to www.example.com (192.0.43.10) port 80 (#0)
-> GET / HTTP/1.1 
+> GET / HTTP/1.1
 > User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18
 > Host: www.example.com
 > Accept: application/xml
 >
 ...
-~~~~
+```
+
+[](){#H}
 
 Authenticating with the API
 ---------------------------
@@ -260,7 +262,7 @@ the Identity API sservice is used in the following example. To query the
 service, you need your Rackspace Cloud account username and API key.
 Instructions for locating these credentials are documented in [View and
 Reset your API
-Key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+Key](/howto/view-and-reset-your-api-key).
 
 Authenticating requires sending a POST request to the Identity service
 with a document that contains your Cloud credentials. You can submit XML
@@ -268,12 +270,12 @@ or JSON documents to the Rackspace Cloud APIs, but the remainder of the
 examples in this article will use XML documents because they are more
 descriptive. Following is an example XML document saved as auth.xml:
 
-~~~~ {#pre-10}
+``` {#pre-10}
 <?xml version="1.0" encoding="UTF-8"?>
 <credentials xmlns="http://docs.rackspacecloud.com/auth/api/v1.1"
 username="johndoe"
 key="4e229b2e0789d9070e8411c9beee1c13"/>
-~~~~
+```
 
 After the XML document is ready, you can use cURL to send a POST request
 with the document to the API endpoint. The service endpoint that you use
@@ -282,9 +284,9 @@ depends on whether you have a US-based or UK-based Cloud account:
 -   US customers: https://auth.api.rackspacecloud.com/v1.1/auth
 -   UK customers: https://lon.auth.api.rackspacecloud.com/v1.1/auth
 
-<br>
- The request will look like the following one for the user johndoe who
-is a US-based customer:
+
+The request will look like the following one for the user johndoe who is
+a US-based customer:
 
 US customers: https://auth.api.rackspacecloud.com/v1.1/auth
 
@@ -293,13 +295,13 @@ UK customers: https://lon.auth.api.rackspacecloud.com/v1.1/auth
 The curl based call will look like the following for johndoe who is a US
 based customer:
 
-~~~~ {#pre-11}
+``` {#pre-11}
 $ curl -X POST -d @auth.xml -H "Content-Type: application/xml" -H "Accept: application/xml" https://auth.api.rackspacecloud.com/v1.1/auth
-~~~~
+```
 
 The following examples shows the response to the authentication request:
 
-~~~~ {#pre-12}
+``` {#pre-12}
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <auth xmlns="http://docs.rackspacecloud.com/auth/api/v1.1">
 <token expires="2012-01-17T03:52:09.000-06:00" id="3c5c8187-2569-47e0-8a11-edadd384e12b"/>
@@ -315,7 +317,7 @@ The following examples shows the response to the authentication request:
 </service>
 </serviceCatalog>
 </auth>
-~~~~
+```
 
 In the preceding response, note the following information that you will
 need when using the Cloud Files API:
@@ -344,7 +346,7 @@ request. The following authentication token will be used in the below
 recipes: 3c5c8187-2569-47e0-8a11-edadd384e12b. We will also assume that
 we will be submitting and receiving only XML documents.
 
-****
+**[](){#I}**
 
 ### **Storage Recipes**
 
@@ -354,26 +356,26 @@ following recipes use the following example URL:
 https://storage101.ord1.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-****
+**[](){#J}**
 
 #### **Listing Containers**
 
 Querying the Cloud Files storage endpoint returns a simple list of
 available containers, each on a new line.
 
-~~~~ {#pre-13}
+``` {#pre-13}
 $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/
 backup
 cloudservers
 images
 static
-~~~~
+```
 
 You can also list the containers with more details, including
 information such as the container, size and the number of objects within
 the container by passing the format parameter:
 
-~~~~ {#pre-14}
+``` {#pre-14}
 $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/?format=xml
 <?xml version="1.0" encoding="UTF-8"?>
 <account name="MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b">
@@ -385,9 +387,9 @@ $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage10
 <container>
 <name>cloudservers</name>
 ...
-~~~~
+```
 
-****
+**[](){#K}**
 
 #### **Creating a Container**
 
@@ -395,14 +397,14 @@ Creating a container requires sending a PUT request to the storage URL
 and including a name for the container as part of the URL. The following
 example shows the request to create a new container called newcontainer:
 
-~~~~ {#pre-15}
+``` {#pre-15}
 $ curl -X PUT -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/newcontainer
 202 Accepted
-~~~~
+```
 
 The request is accepted for processing.
 
-****
+**[](){#L}**
 
 #### **Deleting a Container**
 
@@ -413,7 +415,7 @@ body is returned as part of this request, so it is useful to also
 include the verbose flag to determine if the deletion was successful by
 verifying that an HTTP 204 response is returned.
 
-~~~~ {#pre-16}
+``` {#pre-16}
 $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/newcontainer
 ...
 < HTTP/1.1 204 No Content
@@ -421,7 +423,7 @@ $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" http
 < Content-Type: text/html; charset=UTF-8
 < X-Trans-Id: tx6eeb58f3dfa44f2e892505b711e8aefa
 < Date: Wed, 01 Feb 2012 13:05:00 GMT
-~~~~
+```
 
 #### Listing Objects
 
@@ -429,17 +431,17 @@ Querying a container returns a simple list of objects within that
 container. By default only the first 10,000 objects are returned. The
 following example lists the objects of a container called images:
 
-~~~~ {#pre-17}
+``` {#pre-17}
 $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images
 banner.jpg
 cloud.png
 rackspace.jpg
-~~~~
+```
 
 You can also use the format parameter to get more detailed information
 about objects, such as size and content type.
 
-~~~~ {#pre-18}
+``` {#pre-18}
 $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images?format=xml
 <?xml version="1.0" encoding="UTF-8"?>
 <container name="images">
@@ -448,14 +450,14 @@ $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage10
 <hash>9ed61f72b1f3777ff01b7ce128a67244</hash>
 <bytes>26326</bytes>
 ...
-~~~~
+```
 
 You can list more than 10,000 objects or to filter by specific objects
 by passing some additional URL parameter options. For more detailed
 information about the available parameters and how they work, see the
 Cloud Files Developer Guide.
 
-****
+**[](){#M}**
 
 #### **Downloading an Object**
 
@@ -467,11 +469,11 @@ save the contents. The following example downloads the cloud.png object
 from the images container to a local file of the same name by using the
 curl -o option to save the HTTP response body to a file:
 
-~~~~ {#pre-19}
+``` {#pre-19}
 $ curl -o cloud.png -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/cloud.png
-~~~~
+```
 
-****
+**[](){#N}**
 
 #### **Uploading an Object**
 
@@ -486,7 +488,7 @@ the object will be used. In the case of CSS files, for example, having
 an improper content type could cause web browsers to not parse the CSS
 when it served from the CDN, resulting in an unstyled web page.*
 
-~~~~ {#pre-20}
+``` {#pre-20}
 $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/static/style.css
 <html>
 <head>
@@ -497,7 +499,7 @@ $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c818
 <br /><br />
 </body>
 </html>
-~~~~
+```
 
 You can also to upload an object to make it appear as if the object is
 part of a directory structure. You do this by naming the object with the
@@ -507,7 +509,7 @@ if it was part of a directory structure and is generally more organized.
 The following example repeats the preceding example but names the
 style.css object so that it becomes css/style.css:
 
-~~~~ {#pre-21}
+``` {#pre-21}
 $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/static/css/style.css
 <html>
 <head>
@@ -518,9 +520,9 @@ $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c818
 <br /><br />
 </body>
 </html>
-~~~~
+```
 
-****
+**[](){#O}**
 
 #### **Deleting an Object**
 
@@ -529,7 +531,7 @@ be deleted. It is useful to provide the verbose flag because the call
 does not return anything by default. An HTTP 204 No Content response
 code indicates a successful deletion.
 
-~~~~ {#pre-22}
+``` {#pre-22}
 $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/static/style.css ...
 < HTTP/1.1 204 No Content
 < Content-Length: 0
@@ -539,9 +541,9 @@ $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" http
 <
 * Connection #0 to host storage101.ord1.clouddrive.com left intact
 * Closing connection #0 * SSLv3, TLS alert, Client hello (1):
-~~~~
+```
 
-****
+**[](){#P}**
 
 #### **Performing a Server Side Copy**
 
@@ -554,7 +556,7 @@ a deletion of the original. Copying is not restricted to a single
 container. The following example copies the rackspace.jpg file to a new
 name of rackspace.jpeg as named in the Destination header:
 
-~~~~ {#pre-23}
+``` {#pre-23}
 $ curl -X COPY -H "Destination: images/rackspace.jpeg" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/rackspace.jpg
 <html>
 <head>
@@ -565,9 +567,9 @@ $ curl -X COPY -H "Destination: images/rackspace.jpeg" -H "X-Auth-Token: 3c5c818
 <br /><br />
 </body>
 </html>
-~~~~
+```
 
-****
+**[](){#Q}**
 
 #### **Updating Object Headers**
 
@@ -584,7 +586,7 @@ destination of the copy to be the same as the source.*
 Following is an example of how to update the Content-Type of an image to
 image/jpeg by using the POST operation:
 
-~~~~ {#pre-24}
+``` {#pre-24}
 $ curl -X POST -H "Content-Type: image/jpeg" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/rackspace.jpg
 <html>
 <head>
@@ -594,9 +596,9 @@ $ curl -X POST -H "Content-Type: image/jpeg" -H "X-Auth-Token: 3c5c8187-2569-47e
 <h1>202 Accepted</h1> The request is accepted for processing.<br /><br />
 </body>
 </html>
-~~~~
+```
 
-****
+**[](){#R}**
 
 ### **CDN Recipes**
 
@@ -607,7 +609,7 @@ URL:
 https://cdn2.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-****
+**[](){#S}**
 
 #### **Listing CDN Enabled Containers**
 
@@ -616,13 +618,13 @@ that have been CDN-enabled at some point. Containers that have never
 been CDN-enabled do not appear on this list. The following request lists
 all CDN-enabled containers:
 
-~~~~ {#pre-25}
+``` {#pre-25}
 $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12" https://cdn2.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b
 files
 static
-~~~~
+```
 
-****
+**[](){#T}**
 
 #### **CDN Enabling a Container**
 
@@ -641,7 +643,7 @@ publishes it.*
 
 The following request enables and publishes the images container:
 
-~~~~ {#pre-26}
+``` {#pre-26}
 $ curl -X PUT -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://cdn2.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images
 ...
 HTTP/1.1 204 No Content Date: Wed, 15 Feb 2012 20:28:29 GMT
@@ -653,9 +655,9 @@ X-TTL: 259200
 X-Log-Retention: False
 Connection: close
 Content-Type: text/plain; charset=UTF-8
-~~~~
+```
 
-****
+**[](){#U}**
 
 #### **Viewing a Container's CDN Details**
 
@@ -667,7 +669,7 @@ reference content within the container.
 
 The following request lists the CDN details of the images container:
 
-~~~~ {#pre-27}
+``` {#pre-27}
 $ curl -I -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12" https://cdn2.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images
 HTTP/1.1 204 No
 Content Date: Mon, 20 Feb 2012 19:39:41 GMT
@@ -680,9 +682,9 @@ X-TTL: 259200
 X-Log-Retention: False
 Connection: close
 Content-Type: text/plain; charset=UTF-8
-~~~~
+```
 
-****
+**[](){#V}**
 
 #### **Updating a Container's CDN Attributes**
 
@@ -705,13 +707,14 @@ Following is a list of CDN attributes that may be updated:
     controls how long the content is cached within the CDN. It is not
     possible to have per object TTL values. There is a minimum limit of
     15 minutes and a maximum limit of 50 years.
--   X-Log-Retention: indicates whether the container has CDN logging
-    enabled. These are W3C style HTTP logs for all CDN content requests
-    for the particular container. Accepts a value of True or False.
+-   X-Log-Retention: indicates whether the container has CDN
+    logging enabled. These are W3C style HTTP logs for all CDN content
+    requests for the particular container. Accepts a value of True
+    or False.
 
 The following example request unpublishes a container called images:
 
-~~~~ {#pre-29}
+``` {#pre-29}
 $ curl -v -X POST -H "X-CDN-Enabled: False" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12" https://cdn2.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images ...
 < HTTP/1.1 202 Accepted
 < Date: Mon, 20 Feb 2012 19:33:33 GMT
@@ -723,9 +726,9 @@ $ curl -v -X POST -H "X-CDN-Enabled: False" -H "X-Auth-Token: 3c5c8187-2569-47e0
 < Connection: close
 < Content-Type: text/plain; charset=UTF-8
 <
-~~~~
+```
 
-****
+**[](){#W}**
 
 #### **Purging an Object**
 
@@ -752,7 +755,7 @@ from the images container with a notification email set to
 user@example.com. (Use the verbose option because no response body is
 returned.)
 
-~~~~ {#pre-30}
+``` {#pre-30}
 $ curl -v -X DELETE -H "X-Purge-Email: user@example.com" -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12" https://cdn2.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/rackspace.png
 ...
 >
@@ -765,7 +768,7 @@ $ curl -v -X DELETE -H "X-Purge-Email: user@example.com" -H "X-Auth-Token: 3c5c8
 <
 * Closing connection #0
 * SSLv3, TLS alert, Client hello (1):
-~~~~
+```
 
 **Summary**
 -----------

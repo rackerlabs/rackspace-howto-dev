@@ -2,11 +2,11 @@
 node_id: 1313
 title: Add an Activesync or BES license
 type: article
-created_date: '2012-03-11 23:41:14'
+created_date: '2012-03-11'
 created_by: Rae D. Cabello
-last_modified_date: '2014-11-14 17:1055'
-last_modified_by: kyle.laffoon
-product: Exchange
+last_modified_date: '2014-11-14'
+last_modified_by: Kyle Laffoon
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
@@ -18,15 +18,18 @@ this article to add a ActiveSync or BES license.
 **Note**: The Cloud Office Control Panel that you access depends on the
 region in which the service was started.
 
--   US Cloud Office Customers, use
-    [https://cp.rackspace.com/](https://cp.rackspace.com/).
+-   US Cloud Office Customers, use <https://cp.rackspace.com/>.
+
+<!-- -->
 
 -   International and MyRackspace Cloud Office customers, use
-    [https://my.rackspace.com/](https://my.rackspace.com/) and navigate
-    to **Products**\> **Cloud Office** \> **Open Mail Control Panel**.
+    <https://my.rackspace.com/> and navigate to **Products** &gt;
+    **Cloud Office** &gt; **Open Mail Control Panel**.
+
+<!-- -->
 
 -   Or, all customers can
-    access [http://cp.rackspace.com/usercp](http://cp.rackspace.com/usercp) directly.
+    access <http://cp.rackspace.com/usercp> directly.
 
 1.  Log in to your control panel and select **Microsoft Exchange** from
     the **Go to section** menu.
@@ -38,7 +41,7 @@ region in which the service was started.
 
     ![](http://c10322051.r51.cf2.rackcdn.com/(E%26A)ActivesyncBes2.png)
 
-3.  Select **View Users** for either **Blackberry**or **Activesync
+3.  Select **View Users** for either **Blackberry** or **Activesync
     (iPhone, Android, Windows Mobile)**, depending on your device, and
     then click **Add**.
 

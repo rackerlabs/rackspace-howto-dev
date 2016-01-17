@@ -2,24 +2,25 @@
 node_id: 4654
 title: Access Rackspace CDN
 type: article
-created_date: '2015-05-08 19:29:11'
-created_by: catherine.richardson
-last_modified_date: '2016-01-08 15:2415'
-last_modified_by: catherine.richardson
+created_date: '2015-05-08'
+created_by: Catherine Richardson
+last_modified_date: '2016-01-08'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: tinymce
 ---
 
-You can access Rackspace CDN in the following ways:  
+You can access Rackspace CDN in the following ways:
 
- 
+
 
 -   You can access and use Rackspace CDN through the GUI interface of
     the [Cloud Control Panel](https://mycloud.rackspace.com/). Click
     **Storage** in the top navigation bar and select **CDN**, as shown
     in the following image.
 
-    ![](/knowledge_center/sites/default/files/field/image/AccessCDN_New_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AccessCDN_New_0.png){width="353"
+    height="342"}
 
 -   You can also access Rackspace CDN under **Networking** in the top
     navigation bar.
@@ -29,13 +30,13 @@ You can access Rackspace CDN in the following ways:
     Also, the SDKs developed for Rackspace CDN are at [Rackspace CDN
     SDKs](https://developer.rackspace.com/docs/cdn/getting-started/).
 
- 
 
-#### [\< Differences between Rackspace CDN and Rackspace Cloud Files](https://www.rackspace.com/knowledge_center/article/differences-between-rackspace-cdn-and-rackspace-cloud-files)    -    [Create a Rackspace CDN service \>](https://www.rackspace.com/knowledge_center/article/create-a-rackspace-cdn-service)
 
- 
+#### [&lt; Differences between Rackspace CDN and Rackspace Cloud Files](/howto/differences-between-rackspace-cdn-and-rackspace-cloud-files)    -    [Create a Rackspace CDN service &gt;](/howto/create-a-rackspace-cdn-service)
 
- 
 
- 
+
+
+
+
 

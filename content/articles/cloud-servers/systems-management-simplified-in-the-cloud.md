@@ -2,38 +2,39 @@
 node_id: 1729
 title: 'Systems Management, Simplified in the Cloud'
 type: article
-created_date: '2012-07-27 18:29:34'
-created_by: RackKCAdmin
-last_modified_date: '2012-08-01 13:2742'
-last_modified_by: RackKCAdmin
+created_date: '2012-07-27'
+created_by: Rackspace Support
+last_modified_date: '2012-08-01'
+last_modified_by: Rackspace Support
 product: Cloud Servers
 body_format: full_html
 ---
 
-[![scalextreme](http://c179631.r31.cf0.rackcdn.com/scalextreme.png)](http://www.scalextreme.com/)
+[![scalextreme](http://c179631.r31.cf0.rackcdn.com/scalextreme.png){#__mce_tmp
+width="395" height="129"}](http://www.scalextreme.com/)
 
 **ScaleXtreme seamlessly transitions to the open cloud with Rackspace.**
 
 **CUSTOMER'S BUSINESS:** ScaleXtreme offers systems monitoring and
 management software that allows customers to view all of their servers
-through a single unified interface.<br>
-<br>
+through a single unified interface.
+
 **CHALLENGES:** The company was seeking a simple solution for both
 enterprise customers and those new to the cloud; they also sought a
-stable and scalable platform for their own testing and development.<br>
-<br>
+stable and scalable platform for their own testing and development.
+
 **RACKSPACE SOLUTION:** [Rackspace^&reg;^ Cloud
 Servers](http://www.rackspace.com/cloud/cloud_hosting_products/servers/)
-powered by [OpenStack&reg;](http://www.openstack.org/)<br>
-<br>
+powered by [OpenStack&reg;](http://www.openstack.org/)
+
 **BUSINESS OUTCOME:** The company&rsquo;s transition to next generation Cloud
 Servers was completely seamless, involving no coding.
 
-[**CLICK HERE TO DOWNLOAD CASE
-STUDY.**](http://c179631.r31.cf0.rackcdn.com/ScaleXtreme.pdf)
+[**<span style="color: #b01b36;">CLICK HERE TO DOWNLOAD CASE
+STUDY.</span>**](http://c179631.r31.cf0.rackcdn.com/ScaleXtreme.pdf)
 
-<br>
-<br>
+
+
 
 [Video
 Platform](http://corp.kaltura.com/products/video-platform-features)
@@ -42,9 +43,14 @@ Management](http://corp.kaltura.com/Products/Features/Video-Management)
 [Video Solutions](http://corp.kaltura.com/Video-Solutions) [Video
 Player](http://corp.kaltura.com/Products/Features/Video-Player)
 [](http://cdnbakmi.kaltura.com/p/941731/sp/94173100/thumbnail/entry_id/1_nmle4kxo/width/120/height/90/bgcolor/000000/type/2)
+<span property="dc:description" content=""></span><span
+property="media:title" content="ScaleXtremeFinalWEB"></span> <span
+property="media:width" content="704"></span><span
+property="media:height" content="396"></span> <span
+property="media:type" content="application/x-shockwave-flash"></span>
 
-<br>
-<br>
+
+
 
 ### COMPANY OVERVIEW
 
@@ -53,8 +59,8 @@ management software that allows companies to view both internal and
 cloud-based servers and systems through a single pane of glass. In
 addition to this federated view, the application allows customers to
 monitor their servers, automate jobs across multiple systems, patch and
-update Windows and Linux systems, and control spending on servers.<br>
-<br>
+update Windows and Linux systems, and control spending on servers.
+
 A Rackspace Cloud Tools partner, the company was an early adopter of
 Rackspace next generation Cloud Servers powered by OpenStack^&reg;^. In
 upholding its motto, &ldquo;Simplicity, scalability, and sociability,&rdquo;
@@ -62,9 +68,9 @@ ScaleXtreme has found the next-generation servers to be a perfect
 complement to their own offerings, requiring no coding to adopt and
 offering a range of improvements.
 
-###  
+###
 
-### EARLY ADOPTION 
+### EARLY ADOPTION
 
 An early adopter of the next-gen servers, ScaleXtreme&rsquo;s developers and
 engineers were immediately impressed. CEO Nand Mulchandani says, &ldquo;We
@@ -80,8 +86,8 @@ a variety of cloud providers, its engineers generally have their hands
 full whenever a new provider or product comes along. &ldquo;For a new
 proprietary provider, who has proprietary APIs and interface, it
 literally takes us months of engineering time to have our two systems
-talk together,&rdquo; Mulchandani says.<br>
-<br>
+talk together,&rdquo; Mulchandani says.
+
 By contrast, Mulchandani says, &ldquo;Working with the new Rackspace system
 has been easy. Because the new Rackspace systems are all based on the
 OpenStack standard, and because ScaleXtreme was supporting OpenStack
@@ -90,7 +96,7 @@ matter of simply pointing at the new APIs and the new standard system
 and just testing it. Everything just worked, right out of the box. It
 was so easy to do that it was basically a non-event for us.&rdquo;
 
- 
+
 
 ### SIMPLICITY AND SPEED
 
@@ -107,20 +113,20 @@ customers is that, of all the cloud computing systems out there, we&rsquo;ve
 found that Rackspace is one of the easiest to use, and the most
 approachable one to get into,&rdquo; he says. &ldquo;The combination of Rackspace
 with ScaleXtreme is probably the easiest and simplest way to get into
-cloud computing.&rdquo;<br>
-<br>
+cloud computing.&rdquo;
+
 Though simple enough for newcomers to cloud computing, Rackspace is
 stable and scalable enough for the enterprises ScaleXtreme also serves,
 and the company itself relies on Rackspace. &ldquo;All of our test and
 development at ScaleXtreme runs on Rackspace, because of the scalability
 and the predictability of the platform,&rdquo; says Mulchandani. &ldquo;That&rsquo;s been
-a very big win for us.&rdquo;<br>
-<br>
+a very big win for us.&rdquo;
+
 Director of Engineering Karthik Ram echoes Mulchandani&rsquo;s praise. &ldquo;We&rsquo;re
 impressed with the speed and performance of Rackspace next-gen Cloud
 Servers,&rdquo; he says. &ldquo;The API is remarkably reliable and we can be
-comfortable with its stability thanks to its OpenStack heritage.&rdquo;<br>
-<br>
+comfortable with its stability thanks to its OpenStack heritage.&rdquo;
+
 The constant availability of support also puts the ScaleXtreme team at
 ease, though they&rsquo;ve rarely had to take advantage of it. &ldquo;[Fanatical
 Support^&reg;^](http://www.rackspace.com/whyrackspace/support/) is
@@ -128,7 +134,7 @@ definitely there,&rdquo; Mulchandani says. &ldquo;We actually haven&rsquo;t had 
 Rackspace support very often, as it&rsquo;s been an extremely stable platform,
 very open.&rdquo;
 
- 
+
 
 ### AN OPEN CLOUD
 
@@ -145,13 +151,13 @@ place.&rdquo;
 
 Ram agrees, saying, &ldquo;This may be one of the first
 infrastructure-as-a-service offerings to take full advantage of the
-power of open standards, and we&rsquo;re excited to be using it.&rdquo;<br>
-<br>
+power of open standards, and we&rsquo;re excited to be using it.&rdquo;
+
 ScaleXtreme&rsquo;s enthusiasm for Rackspace shows no signs of waning.
 &ldquo;Working with the team has been fantastic,&rdquo; Mulchandani says, &ldquo;from the
 marketing teams, to the system development teams, to the solution
-partner programs. It&rsquo;s been an absolutely great experience.&rdquo;<br>
-<br>
+partner programs. It&rsquo;s been an absolutely great experience.&rdquo;
+
 The company&rsquo;s relationship with Rackspace continues with a place in
 Rackspace&rsquo;s Marketplace, where ScaleXtreme offers a systems-management
 application that supports both generations of Rackspace servers.

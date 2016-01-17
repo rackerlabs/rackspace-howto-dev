@@ -2,10 +2,10 @@
 node_id: 1320
 title: Installing NGINX and PHP-FPM  - Setup for PHP-FPM
 type: article
-created_date: '2012-03-13 01:02:53'
+created_date: '2012-03-13'
 created_by: Kevin Carter
-last_modified_date: '2015-12-31 17:3614'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,11 +13,11 @@ body_format: tinymce
 ### Previous section
 
 [Installing NGINX and PHP-FPM - Setup for
-NGINX](http://www.rackspace.com/knowledge_center/article/installing-nginx-and-php-fpm-setup-for-nginx)
+NGINX](/howto/installing-nginx-and-php-fpm-setup-for-nginx)
 
 The steps in this article guide you through adding pool information to
 the PHP-FPM setup that you [previously
-completed](http://www.rackspace.com/knowledge_center/article/installing-nginx-and-php-fpm-setup-for-nginx).
+completed](/howto/installing-nginx-and-php-fpm-setup-for-nginx).
 
 When you entered the command to install PHP-FPM, the system created a
 default configuration for PHP-FPM. This default configuration might have
@@ -77,5 +77,5 @@ DOMAINNAME with your domain name.
 ### Next steps
 
 [Installing NGINX and PHP-FPM -
-Conclusion](http://www.rackspace.com/knowledge_center/article/installing-nginx-and-php-fpm-conclusion)
+Conclusion](/howto/installing-nginx-and-php-fpm-conclusion)
 

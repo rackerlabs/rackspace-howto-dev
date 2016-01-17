@@ -2,10 +2,10 @@
 node_id: 3902
 title: Cloud Block Storage Quotas
 type: article
-created_date: '2014-02-12 21:14:18'
-created_by: rose.contreras
-last_modified_date: '2014-10-16 17:3434'
-last_modified_by: kyle.laffoon
+created_date: '2014-02-12'
+created_by: Rose Contreras
+last_modified_date: '2014-10-16'
+last_modified_by: Kyle Laffoon
 product: Cloud Block Storage
 body_format: tinymce
 ---
@@ -52,5 +52,5 @@ For Cinder client users, the request looks like the following example:
     |  volumes  |   50  |
     +-----------+-------+
 
- 
+
 

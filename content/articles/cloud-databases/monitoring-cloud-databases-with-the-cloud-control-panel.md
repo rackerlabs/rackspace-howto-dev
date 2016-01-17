@@ -2,10 +2,10 @@
 node_id: 4019
 title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
-created_date: '2014-04-14 17:21:39'
-created_by: neha.verma
-last_modified_date: '2014-11-07 19:5142'
-last_modified_by: ross.diaz
+created_date: '2014-04-14'
+created_by: Neha Verma
+last_modified_date: '2014-11-07'
+last_modified_by: Ross Diaz
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -30,16 +30,17 @@ instance are described in the following sections:
 -   [Alarms](#alarms)
 -   [Alarm criteria examples](#alarm-criteria-examples)
 
- 
+
 -
 
-Checks
-------
+[](){#checks}Checks
+-------------------
 
 Monitoring checks are listed on the details page of a Cloud Databases
 instance in the Cloud Control Panel.
 
-![](/knowledge_center/sites/default/files/field/image/dbmonitoringchecks.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbmonitoringchecks.png){width="370"
+height="274"}
 
 Click the name of a check to view a graph of the check's results over
 time and any alarms configured for that check.
@@ -54,59 +55,64 @@ instances:
 -   [Network check](#network-check)
 -   [MySQL check](#mysql-check)
 
- 
 
-### CPU check
+
+### [](){#cpu-check}CPU check
 
 The graph for the CPU check displays how much of its available
 processing power the instance uses. It also displays minimum, maximum,
 and average CPU usage for that period.
 
-![](/knowledge_center/sites/default/files/field/image/dbcpugraph.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbcpugraph.png){width="571"
+height="231"}
 
- 
 
-### File system check
+
+### [](){#file-system}File system check
 
 The graph for the File system check displays disk usage for the Cloud
 Databases instance. The **Total** value represents the total disk space
 available to the instance, and this value can change if the instance is
 resized.
 
-![](/knowledge_center/sites/default/files/field/image/dbfilesystemgraph.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbfilesystemgraph.png){width="561"
+height="229"}
 
-### Load average check
+### [](){#load-average}Load average check
 
 The graph for the load average check displays your instance&rsquo;s load
 average on a per-minute basis. Whereas the CPU usage graph displays
 moment-to-moment fluctuations in CPU use, the load average graph
 reflects overall CPU usage.
 
-![](/knowledge_center/sites/default/files/field/image/dbloadgraph.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbloadgraph.png){width="567"
+height="221"}
 
- 
 
-### Memory check
+
+### [](){#memory-check}Memory check
 
 The graph for the memory check displays your instance&rsquo;s memory use
 (RAM). The **Total** value represents the total memory available to the
 instance, and the **Actual Used** value represents the amount of memory
 in use.
 
-![](/knowledge_center/sites/default/files/field/image/dbmemorygraph.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbmemorygraph.png){width="561"
+height="226"}
 
- 
 
-### Network check
+
+### [](){#network-check}Network check
 
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
 
-![](/knowledge_center/sites/default/files/field/image/dbnetworkgraph.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbnetworkgraph.png){width="473"
+height="185"}
 
- 
 
-### MySQL check
+
+### [](){#mysql-check}MySQL check
 
 Graphs that report metrics for the MySQL datastore running on your
 instance will be added to the Cloud Control Panel in the future. In the
@@ -114,10 +120,10 @@ meantime, graphs for MySQL metrics are available on our [Cloud
 Intelligence Site](https://intelligence.rackspace.com/), currently in
 beta.
 
- 
 
-Alarms
-------
+
+[](){#alarms}Alarms
+-------------------
 
 You can set up custom alarms that will trigger notifications when
 defined criteria are met for monitored metrics. By default Cloud
@@ -136,13 +142,14 @@ You can view and create alarms from a check's details page.
 2.  In the **Alarms** section at the bottom of the page, click the
     **Create Alarm button**.
 
-    ![](/knowledge_center/sites/default/files/field/image/dbfilesystemalarm.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbfilesystemalarm.png){width="470"
+    height="136"}
 
 3.  In the **Alarm Name** field, enter a name for the alarm.
 4.  Select the contact who will receive notifications from the alarm.
 
-    By default this value is set to the technical contact on your
-    account.
+    By default this value is set to the technical contact on
+    your account.
 
 5.  In the **Alarm Criteria** field, enter the criteria for the alarm.
     To view example criteria, click **Example Alarm**.
@@ -159,17 +166,18 @@ You can view and create alarms from a check's details page.
     Alarm under the criteria field will let you view example criteria
     for the check.
 
-    ![](/knowledge_center/sites/default/files/field/image/dbcpualarm.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbcpualarm.png){width="407"
+    height="546"}
 
 ### Editing alarms
 
 To change the alarm name, alert recipient, or alarm criteria, click the
 gear icon next to an existing alarm and select **Edit Criteria**.
 
- 
 
-Alarm criteria examples
------------------------
+
+[](){#alarm-criteria-examples}Alarm criteria examples
+-----------------------------------------------------
 
 The following sections provide example criteria for each of the Cloud
 Databases checks:
@@ -192,7 +200,7 @@ For all of the alarms, the available metrics are displayed in the alarm
 creation dialog box and are explained in the [Cloud Monitoring API
 documentation](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html#section-ct-agent.cpu).
 
- 
+
 
 CPU alarms
 ----------
@@ -200,18 +208,18 @@ CPU alarms
 The following criteria returns a Warning status when CPU usage is above
 90% and a Critical status when CPU usage is above 95%.
 
-    if (metric['usage_average'] > 95) 
+    if (metric['usage_average'] > 95)
            return new AlarmStatus(CRITICAL, 'CPU usage is #usage_average%, above your
-        critical threshold of 95%'); 
-        
-        if (metric['usage_average'] > 90) 
-           return new AlarmStatus(WARNING, 'CPU usage is #usage_average%, above your description of the example code 
-        warning threshold of 90%'); 
-        
+        critical threshold of 95%');
+
+        if (metric['usage_average'] > 90)
+           return new AlarmStatus(WARNING, 'CPU usage is #usage_average%, above your description of the example code
+        warning threshold of 90%');
+
         return new AlarmStatus(OK, 'CPU usage is #usage_average%, below your warning
            threshold of 90%');
 
- 
+
 
 File system alarms
 ------------------
@@ -223,17 +231,17 @@ disk usage exceeds 95% of total space available.
 
     if (percentage(metric['used'], metric['total']) > 90) {
            return new AlarmStatus(CRITICAL, "Disk usage is above your critical threshold of
-          90%"); 
+          90%");
          }
-         
+
          if (percentage(metric['used'], metric['total']) > 80) {
            return new AlarmStatus(WARNING, "Disk usage is above your warning threshold of
-        80%"); 
+        80%");
          }
-        
+
         return new AlarmStatus(OK, "Disk usage is below your warning threshold of 80%");
 
- 
+
 
 Load average alarms
 -------------------
@@ -245,16 +253,16 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
            return new AlarmStatus(CRITICAL, '5 minute load average is #5m, above your
           critical threshold of 1.5');
           }
-        
+
         if (metric['5m'] > 1) {
            return new AlarmStatus(WARNING, '5 minute load average is #5m, above your
         warning threshold of 1');
         }
-        
+
         return new AlarmStatus(OK, '5 minute load average is #5m, below your warning
         threshold of 1');
 
- 
+
 
 Memory alarms
 -------------
@@ -268,10 +276,10 @@ Memory alarms
            return new AlarmStatus(WARNING, "Memory usage is above your warning threshold of
         80%");
         }
-        
+
         return new AlarmStatus(OK, "Memory usage is below your warning threshold of 80%");
 
- 
+
 
 Network alarms
 --------------
@@ -280,16 +288,16 @@ Network alarms
            return new AlarmStatus(CRITICAL, "Network receive rate on eth0 is above your
          critical threshold of 24903680B/s");
          }
-        
+
         if (rate(metric['rx_bytes']) > 18350080) {
            return new AlarmStatus(WARNING, "Network receive rate on eth0 is above your
         warning threshold of 18350080B/s");
         }
-        
+
         return new AlarmStatus(OK, "Network receive rate on eth0 is below your warning
            threshold of 18350080B/s");
 
- 
+
 
 MySQL alarms
 ------------
@@ -302,19 +310,19 @@ of open connections is above 500.
            return new AlarmStatus(CRITICAL, 'Total number of threads connected are #
         { threads.connected}, above your critical threshold of 500');
         }
-        
+
         if (metric['threads.connected'] > 400) {
            return new AlarmStatus(WARNING, 'Total number of threads connected are #
         {threads.connected}, above your warning threshold of 400');
         }
-        
+
         return new AlarmStatus(OK, 'Total number of threads connected are #
         {threads.connected}, below your warning threshold of 400');
 
 Explanations of the available metrics are located in the MySQL
 documentation for the relevant server status variables.
 
- 
 
- 
+
+
 

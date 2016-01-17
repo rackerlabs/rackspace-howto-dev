@@ -2,10 +2,10 @@
 node_id: 3610
 title: Using Automatic and Manual Disk Partitioning on Cloud Servers
 type: article
-created_date: '2013-07-09 18:18:18'
-created_by: trey.hoehne
-last_modified_date: '2014-11-03 16:3836'
-last_modified_by: jered.heeschen
+created_date: '2013-07-09'
+created_by: Trey Hoehne
+last_modified_date: '2014-11-03'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -22,8 +22,8 @@ partitions on the local boot drive of a server after it is created.
 -   **Automatic**: Selecting this option increases the time it takes for
     the cloud server to build and become available for use. This creates
     just one partition that is expanded during the build process to take
-    advantage of all the allotted disk space a server has available to
-    it.
+    advantage of all the allotted disk space a server has available
+    to it.
 -   **Manual**: Selecting this option decreases the time it takes for
     your cloud server to build and become available for use. This option
     only creates a partition for the operating system (20 GB) and leaves
@@ -44,9 +44,10 @@ The disk partition option is located at the bottom of the Create Server
 page, under Advanced Options.
 
 **![Screen shot showing new disk
-options](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202013-07-30%20at%203.25.55%20PM.png)**
+options](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-07-30%20at%203.25.55%20PM.png){width="603"
+height="414"}**
 
- 
+
 
 You can view the current Disk Partition mode of a Cloud Server on the
 Server Details page.
@@ -98,8 +99,8 @@ interface.
     -   On Windows Server 2008, right-click the computer's icon and
         select Manage.
 
-    -   On Windows Server 2012, click the Server Manager button on the
-        taskbar.
+    -   On Windows Server 2012, click the Server Manager button on
+        the taskbar.
 
 2.  Navigate to the list of the system's attached storage volumes.
 
@@ -115,8 +116,8 @@ interface.
     -   On Windows Server 2008, right-click the disk's unallocated space
         in the lower pane and select "New Simple Volume".
 
-    -   On Windows Server 2012, right-click the disk and select "New
-        Volume".
+    -   On Windows Server 2012, right-click the disk and select
+        "New Volume".
 
 4.  To extend a partition, right-click the partition in the lower pane
     and select Extend from the menu.
@@ -273,7 +274,7 @@ we can hit '*w*' to write our changes.
 
 Now you'll notice from the error we're asked to either reboot for the
 changes we made to the partition table to go into effect or we can use
-*partprobe*or*partx*. In this example we'll use *partx*.
+*partprobe* or *partx*. In this example we'll use *partx*.
 
     root@server:~# partx
 

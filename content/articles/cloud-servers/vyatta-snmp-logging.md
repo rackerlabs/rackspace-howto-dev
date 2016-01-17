@@ -2,10 +2,10 @@
 node_id: 4804
 title: Vyatta SNMP and logging
 type: article
-created_date: '2015-08-26 18:33:12'
-created_by: rose.contreras
-last_modified_date: '2016-01-13 19:4536'
-last_modified_by: rose.coste
+created_date: '2015-08-26'
+created_by: Rose Contreras
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -72,11 +72,11 @@ view of how to execute this configuration.
 
 **Permit SNMP traffic to vRouter**
 
-    set firewall name protect-vyatta rule 400 action 'accept'         
-    set firewall name protect-vyatta rule 400 description 'allow snmp'         
-    set firewall name protect-vyatta rule 400 destination port '161'         
-    set firewall name protect-vyatta rule 400 ipsec 'match-ipsec'         
-    set firewall name protect-vyatta rule 400 protocol 'udp'        
+    set firewall name protect-vyatta rule 400 action 'accept'
+    set firewall name protect-vyatta rule 400 description 'allow snmp'
+    set firewall name protect-vyatta rule 400 destination port '161'
+    set firewall name protect-vyatta rule 400 ipsec 'match-ipsec'
+    set firewall name protect-vyatta rule 400 protocol 'udp'
     set interfaces ethernet eth0 firewall local name 'protect-vyatta'
 
 ### MIBs for managing and monitoring a vRouter
@@ -111,12 +111,12 @@ Use the `show log` command to view logs. Following are some
 examples of the show log command variables.
 
 **Viewing the active log file**
- 
-    show log       
-    show log | match <string>       
-    show log | more       
-    show log all       
-    show log tail       
+
+    show log
+    show log | match <string>
+    show log | more
+    show log all
+    show log tail
     show log vpn ipsec
 
 You can configure different custom logging scenarios, such as location,
@@ -124,7 +124,7 @@ file name, and user, by using a single command string with the
 destination variable, as shown in the following example:
 
 **Logging syntax**
- 
+
     set system syslog <destination> facility <facility_num> level <logging_level>
 
 **Send logs to a specific host**
@@ -133,13 +133,13 @@ destination variable, as shown in the following example:
 
 The preceding example uses
 
-- `host` as the logging destination 
+- `host` as the logging destination
 - `local3` as the facility
-- `info` as the logging level 
- 
+- `info` as the logging level
+
 ### Log options
 
-The following tables shows options for 
+The following tables shows options for
 destinations, logging levels, and facility numbers.
 
 **Logging destinations**

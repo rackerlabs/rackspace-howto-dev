@@ -2,10 +2,10 @@
 node_id: 588
 title: Change your Cloud Sites FTP password
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-12 19:2134'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-12'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -26,11 +26,10 @@ Use this recommended method if you are locked out of your account or to
 reset your password if you have forgotten it.
 
 1.  Go to the login page for the Cloud Sites Control Panel at
-    [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
-    If you are already logged in, click **Logout** in the left
-    navigation pane.
-2.  Click the **Lost your password?** link under the **Password** text
-    box.
+    <https://manage.rackspacecloud.com>. If you are already logged in,
+    click **Logout** in the left navigation pane.
+2.  Click the **Lost your password?** link under the **Password**
+    text box.
 3.  Enter your user name in the **Username** text box.
 
 An email with instructions for resetting your password is sent to the
@@ -46,8 +45,8 @@ regular security practice and have no trouble logging in to the Classic
 Cloud Control Panel.
 
 1.  Log in to the Cloud Sites Control Panel at
-    [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
-2.  In the left navigation pane, click **Your Account \> Username &
+    <https://manage.rackspacecloud.com>.
+2.  In the left navigation pane, click **Your Account &gt; Username &
     Contacts**.
 3.  In the **Your Username & Password** section, click **Change
     Password**.

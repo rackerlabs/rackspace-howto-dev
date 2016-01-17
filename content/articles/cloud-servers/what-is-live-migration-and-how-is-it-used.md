@@ -2,10 +2,10 @@
 node_id: 4955
 title: Live migration overview
 type: article
-created_date: '2015-11-24 15:11:50'
-created_by: ari.liberman
-last_modified_date: '2015-12-11 20:3953'
-last_modified_by: kyle.laffoon
+created_date: '2015-11-24'
+created_by: Ari Liberman
+last_modified_date: '2015-12-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---

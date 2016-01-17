@@ -2,10 +2,10 @@
 node_id: 4124
 title: Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL 5.6
 type: article
-created_date: '2014-07-03 18:40:09'
-created_by: rose.contreras
-last_modified_date: '2015-01-12 22:4512'
-last_modified_by: kyle.laffoon
+created_date: '2014-07-03'
+created_by: Rose Contreras
+last_modified_date: '2015-01-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 body_format: markdown_w_tinymce
 ---
@@ -88,7 +88,7 @@ The following steps export a list of databases from your source instance and red
 - <code>destination_password</code>: Password specified for the destination database user
 - <code>yyyyy.rackspaceclouddb.com</code>: Host name of destination instance
 
-        mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 | mysql 
+        mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 | mysql
 	    --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</pre>
 
 ### Export the list of databases to a file on the server before importing

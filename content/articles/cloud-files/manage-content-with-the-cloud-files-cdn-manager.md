@@ -2,10 +2,10 @@
 node_id: 5122
 title: Getting started with Cloud Files and CDN
 type: article
-created_date: '2016-01-14 20:14:31'
-created_by: stephanie.fillmon
-last_modified_date: '2016-01-14 20:2448'
-last_modified_by: stephanie.fillmon
+created_date: '2016-01-14'
+created_by: Stephanie Fillmon
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: full_html
 ---
@@ -35,7 +35,7 @@ The basics of Cloud Files include:
     Control Panel or language-specific programming interfaces
 
 For more details, see the [Cloud Files Key
-Concepts](https://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
+Concepts](/howto/cloud-files-key-concepts).
 
 What is the CDN?
 ----------------
@@ -63,7 +63,7 @@ the container name.
 ### Create a container
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
-2.  In the top navigation bar, select **Storage \> Files**.
+2.  In the top navigation bar, select **Storage &gt; Files**.
 3.  Click **Create Container**.
 4.  Name the container, and then click **Create Container**.
 5.  Click the gear icon next to the container to be made public and
@@ -74,8 +74,8 @@ You can now share the files within the container.
 
 ### Upload files to the container
 
-1.  Click on the name of the container to which you want to upload
-    files.
+1.  Click on the name of the container to which you want to
+    upload files.
 2.  Click **Upload Files** and select the files to upload.
 3.  Click **Open**.
 4.  After the file is uploaded, click **Close Window**.
@@ -88,7 +88,7 @@ You can now share the files within the container.
 
 To learn more about how to operate with Cloud Files through the API,
 read the article [Connecting to Cloud
-Files](https://www.rackspace.com/knowledge_center/article/connecting-to-cloudfiles)
+Files](/howto/connecting-to-cloudfiles)
 and read the [Cloud Files API Developer
 Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/).
 

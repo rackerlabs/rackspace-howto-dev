@@ -2,10 +2,10 @@
 node_id: 365
 title: Linux Patching for Cloud Servers Managed Operations Service Level
 type: article
-created_date: '2011-04-04 16:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:0628'
-last_modified_by: Nate.Archer
+created_date: '2011-04-04'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Managed Operations
 body_format: markdown_w_tinymce
 ---

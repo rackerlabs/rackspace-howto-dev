@@ -2,10 +2,10 @@
 node_id: 2164
 title: Using CIDR notation in Cloud Networks
 type: article
-created_date: '2012-09-17 19:41:41'
+created_date: '2012-09-17'
 created_by: David Hendler
-last_modified_date: '2016-01-10 22:5031'
-last_modified_by: renee.rendon
+last_modified_date: '2016-01-10'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -20,7 +20,7 @@ represents the number of addresses in the range.
 
 Here's an example CIDR IP address in IPv4:
 
-    192.0.2.0/24 
+    192.0.2.0/24
 
 Since IPv4 has a 32-bit address space the 24-bit prefix above means that
 the address range is the 8 bits (256 addresses) after 192.0.2.0.
@@ -31,7 +31,7 @@ And here's an example in IPv6:
 
 IPv6 has a 128-bit address range so the 32-bit network prefix means it
 refers to 96 bits' worth of addresses following 2001:db8::, about 76
-octillion addresses. 
+octillion addresses.
 
 ### CIDR Notation in the Cloud Control Panel
 
@@ -44,14 +44,15 @@ and click **Create Network**.
 Here's an example of the Create Network popover in the Cloud Control
 Panel. Note the CIDR field is pre-populated with an IP address range:
 
-![CIDR](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/CreateNetworkCIDRExample2.png)
+![CIDR](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CreateNetworkCIDRExample2.png){width="493"
+height="312"}
 
 For complete instructions on how to create a Cloud Network using the
 Cloud Control Panel see [Create an Isolated Cloud Network and attach it
 to a
-server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network and attach it to a server").
+server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network and attach it to a server").
 
- 
+
 -
 
 CIDR Notation in the Cloud Neworks API
@@ -80,15 +81,15 @@ The JSON-format response would look similar to this:
 
     {
      "network": {
-     "cidr": "192.168.0.0/24", 
-     "id": "aaa77608-bae2-4eed-840e-896a7dd345d4", 
+     "cidr": "192.168.0.0/24",
+     "id": "aaa77608-bae2-4eed-840e-896a7dd345d4",
      "label": "superprivate"
      }
     }
 
 **Note**: To help calculate a subnet, you might use a tool like this:
 
-[http://www.subnet-calculator.com/cidr.php](http://www.subnet-calculator.com/cidr.php)
+<http://www.subnet-calculator.com/cidr.php>
 
 For more information on using the Cloud Networks API see the Rackspace
 Cloud Networks API Developers Guide.
@@ -96,15 +97,15 @@ Cloud Networks API Developers Guide.
 ### More Information on Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](http://www.rackspace.com/knowledge_center/article/create-an-isolated-cloud-network "Attach an Isolated Network to a New Cloud Server")
+Server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Attach an Isolated Network to a New Cloud Server")
 
 [Attach an Isolated Network to an Existing Cloud
-Server](http://www.rackspace.com/knowledge_center/article/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
+Server](/howto/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
 [Removing Networks from a Cloud
-Server](http://www.rackspace.com/knowledge_center/article/rmoving-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
+Server](/howto/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [Cloud Networks Developer Guide](https://developer.rackspace.com/docs/)
 
- 
+
 

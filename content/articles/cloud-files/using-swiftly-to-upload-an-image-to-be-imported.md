@@ -2,10 +2,10 @@
 node_id: 4031
 title: Use Swiftly to upload an image
 type: article
-created_date: '2014-04-21 20:10:23'
-created_by: cloud.images
-last_modified_date: '2016-01-12 16:3228'
-last_modified_by: stephanie.fillmon
+created_date: '2014-04-21'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: tinymce
 ---
@@ -39,9 +39,9 @@ installed the Swiftly client. If you need help with either of these
 prerequisites, see the following articles:
 
 &middot; [Preparing an image for import into the Rackspace open
-cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud)<br>
- &middot; [Install the Swiftly client for Cloud
-Files](http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files)
+cloud](/howto/preparing-an-image-for-import-into-the-rackspace-opencloud)
+&middot; [Install the Swiftly client for Cloud
+Files](/howto/install-the-swiftly-client-for-cloud-files)
 
 Set environment variables
 -------------------------
@@ -54,12 +54,12 @@ In a bash shell, set the following environment variables:
     SOURCEFILE=        # the local file you are uploading
     CONTAINER=         # the container in Cloud Files where the image will go
     IMAGEFILENAME=     # the name you want the image to be called in Cloud Files
-    SWFLY_SEG_BYTES=134217728    
+    SWFLY_SEG_BYTES=134217728
     SWFLY_CONCURRENCY=20
 
 To information about viewing your Rackspace API key, see [View and reset
 your API
-key.](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key)
+key.](/howto/view-and-reset-your-api-key)
 
 Ensure that the container into which you want to uploads your object
 already exists in the appropriate region in Cloud Files. (You can create
@@ -70,8 +70,8 @@ upload the segments in parallel. The two SWFLY environment variables
 listed in the preceding example are used to control this.
 
 -   SWFLY\_SEG\_BYTES specifies the size, in bytes, that Swiftly will
-    use for each segment (except for the last segment, which could be
-    smaller). The value shown in the preceding example is 128 MB,
+    use for each segment (except for the last segment, which could
+    be smaller). The value shown in the preceding example is 128 MB,
     expressed in bytes. We recommend that you use this value. You can
     experiment with different values to see if you get better
     performance, but avoid using a smaller value (certainly no smaller
@@ -92,7 +92,7 @@ line to perform the upload, as follows.
 **Note**: Consider using a screen session to perform this task. If
 you're not familiar with the GNU Screen program, you can find an
 introduction in [Install the Swiftly client for Cloud
-Files](http://www.rackspace.com/knowledge_center/article/install-the-swiftly-client-for-cloud-files).
+Files](/howto/install-the-swiftly-client-for-cloud-files).
 
     swiftly <br>
       --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
@@ -202,7 +202,7 @@ Alternatively, you can look at your Cloud Files account in the Cloud
 Control Panel. The following example shows the Containers page in the
 Control Panel, which displays the containers in the DFW region.
 
-![](/knowledge_center/sites/default/files/field/image/swiftly-containers-list.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/swiftly-containers-list.png){width="700"}
 
 The `uploaded-images` container existed before the upload, and was
 indicated in the invocation to Swiftly as the container to hold the
@@ -252,8 +252,9 @@ encourage you to read through the entire article.
     image!
 -   Swiftly takes care of dividing your image file into segments,
     uploading the segments to their own container, and creating the
-    Static Large Object manifest in the container you requested
-    automatically.  But it's important to know what it's doing and how
-    your data is stored so that you don't corrupt your image by mistake.
+    Static Large Object manifest in the container you
+    requested automatically.  But it's important to know what it's doing
+    and how your data is stored so that you don't corrupt your image
+    by mistake.
 
 

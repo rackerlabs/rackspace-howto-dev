@@ -2,10 +2,10 @@
 node_id: 3630
 title: How to Change the MySQL Timeout on a Server
 type: article
-created_date: '2013-07-24 14:30:15'
-created_by: rose.contreras
-last_modified_date: '2014-03-10 17:5609'
-last_modified_by: kyle.laffoon
+created_date: '2013-07-24'
+created_by: Rose Contreras
+last_modified_date: '2014-03-10'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -35,16 +35,16 @@ Follow these steps to resolve the issue:
         wait_timeout = 28800
         interactive_timeout = 28800
 
-    -   The interactive timeout does not affect any web application
-        connections. A high `interactive_timeout` but a low
+    -   The interactive timeout does not affect any web
+        application connections. A high `interactive_timeout` but a low
         `wait_timeout` is normal and is the best practice.
 
     -   Choose a reasonable `wait_timeout` value. Stateless PHP
         environments do well with a 60 second timeout or less. Stateful
         applications that use a connection pool (Java, .NET, etc.) will
-        need to adjust `wait_timeout` to match their connection pool
-        settings. The default 8 hours (`wait_timeout = 28800`) works
-        well with properly configured connection pools.
+        need to adjust `wait_timeout` to match their connection
+        pool settings. The default 8 hours (`wait_timeout = 28800`)
+        works well with properly configured connection pools.
 
     -   Configure the `wait_timeout` to be slightly longer than the
         application connection pool's expected connection lifetime. This
@@ -56,11 +56,11 @@ Follow these steps to resolve the issue:
         issue `set global wait_timeout=60` and any new sessions created
         would inherit this value. Be sure to preserve the setting in
         `my.cnf`. Any existing connections will need to hit the old
-        value of `wait_timeout` if the application abandoned the
-        connection. If you do have reporting jobs that will do longer
-        local processing while in a transaction, you might consider
-        having such jobs issue `set session wait_timeout=3600` upon
-        connecting.
+        value of `wait_timeout` if the application abandoned
+        the connection. If you do have reporting jobs that will do
+        longer local processing while in a transaction, you might
+        consider having such jobs issue `set session wait_timeout=3600`
+        upon connecting.
 
 4.  Save the changes and exit the editor.
 

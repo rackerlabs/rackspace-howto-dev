@@ -2,10 +2,10 @@
 node_id: 100
 title: Getting Started With Cloud Sites - Rackspace Nameservers and Creating Custom Nameservers
 type: article
-created_date: '2011-03-09 18:53:26'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 20:0702'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -16,7 +16,7 @@ Cloud Control Panel by clicking the **Rackspace Cloud** menu at the top
 of the panel and selecting **Cloud Sites**.
 
 **Previous section:** [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
 To change your nameservers from your current registrar's to point to the
 Rackspace Cloud, follow these steps:
@@ -36,9 +36,9 @@ address you used when first registering the domain. Your current
 registrar will send an email to this account that will require a reply
 from you, confirming that the transfer is authorized. If you do not have
 access to this email address, contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do")
-for help. You can do a WHOIS search to find the administrative email and
-the current registrar for the domain. 
+support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do"){.external
+.text} for help. You can do a WHOIS search to find the administrative
+email and the current registrar for the domain.
 
 All DNS changes take up to 48 hours to take effect. During this time you
 can check your website by using the test URL (for
@@ -63,10 +63,14 @@ If you are hosting DNS at a provider that is not listed here, contact
 your DNS provider for steps showing you how to configure custom
 nameservers.
 
+[](){#GoDaddy}
+
 ### GoDaddy
 
 [Setting up Custom Nameservers in
 GoDaddy](http://help.godaddy.com/article/3952 "http://help.godaddy.com/article/3952")
+
+[](){#OpenSRS_Tucows_RackSpace_Cloud}
 
 ### OpenSRS/Tucows/RackSpace Cloud
 
@@ -92,6 +96,8 @@ follow these steps.
 4.  Repeat step 3 for your second DNS server (**ns2**).
 5.  You will now see your DNS servers listed on the page.
 
+[](){#Dotster}
+
 ### Dotster
 
 To register new or update current nameservers with Dotster, follow these
@@ -101,9 +107,11 @@ steps.
     Domains** tab.
 2.  Click the domain name for which you want to add the nameservers. (Do
     not select the check box.)
-3.  In the **Name Servers** section, click the **Register NameServer**
-    link.
+3.  In the **Name Servers** section, click the **Register
+    NameServer** link.
 4.  Fill in the form with your nameserver name and IP address.
+
+[](){#eNom}
 
 ### eNom
 
@@ -111,8 +119,8 @@ If your domain is registered with Enom, follow these steps to register
 new or update current DNS servers.
 
 1.  Log in to your account at enom.com.
-2.  From the site menu, select **Domains \> Advanced Tools \> Register a
-    Name Server**.
+2.  From the site menu, select **Domains &gt; Advanced Tools &gt;
+    Register a Name Server**.
 
     A page with forms for adding new nameservers and updating old
     nameservers is displayed.
@@ -123,22 +131,26 @@ new or update current DNS servers.
     complete email.
 4.  Click **Update**.
 
+[](){#Directi}
+
 ### Directi
 
 To register new nameservers or update existing nameservers with Directi,
 follow these steps.
 
 1.  Log in to your Domain Control Panel.
-2.  From **Domains \> Search \> Domain Registration Search**, search for
-    the domain name for which you want to manage child name servers.
-3.  Click the domain name under which you want to create child name
-    servers.
+2.  From **Domains &gt; Search &gt; Domain Registration Search**, search
+    for the domain name for which you want to manage child name servers.
+3.  Click the domain name under which you want to create child
+    name servers.
 4.  Click the **Manage Child Name Server** button.
 5.  In the **Add New Child Name Server** box, enter the hostname (for
     example, **ns1.youhost.com**) of the child name server that you want
     to create, and then enter its IP address in the second box.
 6.  To modify a DNS server, make the modifications in the **IP Address**
     text box and click **Modify IP Address**.
+
+[](){#Name.com}
 
 ### Name.com
 
@@ -160,5 +172,5 @@ Next section
 ------------
 
 [Creating Sub-domains and/or domain
-aliases](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)
+aliases](/howto/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)
 

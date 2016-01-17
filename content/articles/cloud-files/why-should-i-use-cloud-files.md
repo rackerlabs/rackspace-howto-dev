@@ -2,10 +2,10 @@
 node_id: 1056
 title: Why choose Cloud FIles?
 type: article
-created_date: '2011-03-28 20:10:43'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 16:5052'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-28'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -20,21 +20,21 @@ There are a number of reasons to choose the Cloud Files service over similar ser
 
 This article provides details about the following reasons why you should use Cloud Files:
 
-- [Simplicity](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Simplicity)
-- [Affordability](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Affordability)
-- [Flexibility](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Flexibility)
-- [Superior performance](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Superior_performance)
-- [World-class support](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#World_Class_support)
-- [Data redundancy](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Data_Redundancy)
-- [Security](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Security)
+- [Simplicity](/howto/why-choose-cloud-files)
+- [Affordability](/howto/why-choose-cloud-files)
+- [Flexibility](/howto/why-choose-cloud-files)
+- [Superior performance](/howto/why-choose-cloud-files)
+- [World-class support](/howto/why-choose-cloud-files)
+- [Data redundancy](/howto/why-choose-cloud-files)
+- [Security](/howto/why-choose-cloud-files)
 
 ## Simplicity
 
 Cloud Files is simple to use for developers and non-developers alike. Users can get started in as little as five minutes. Users do not have to know how to code to use Cloud Files or a CDN. Users can, within minutes, sign up for Cloud Files, create a container, upload a file, and publish that container's content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based Cloud Control Panel lets users easily upload files and distribute on a CDN without writing any code.
 
-All the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, users might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, users must ensure the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see [How do I use Cloud Files and CDN?](https://admin.rackspace.com/knowledge_center/frequently-asked-question/how-do-i-use-cloud-files-and-cdn).
+All the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, users might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, users must ensure the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see [How do I use Cloud Files and CDN?](/howto/getting-started-with-cloud-files-and-cdn-0).
 
-Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more detail in the [Security](https://admin.rackspace.com/knowledge_center/article/why-choose-cloud-files#Security) section are simple to use. Third-party tools that further simplify use of the storage service are available. Developers can use a language-specific application programming interfaces (APIs) to develop utilities or applications. The APIs are easy to use and are documented with examples to get started quickly.
+Cloud Files is a user- and developer-friendly service. Security mechanisms, described in more detail in the [Security](/howto/why-choose-cloud-files) section are simple to use. Third-party tools that further simplify use of the storage service are available. Developers can use a language-specific application programming interfaces (APIs) to develop utilities or applications. The APIs are easy to use and are documented with examples to get started quickly.
 
 ## Affordability
 

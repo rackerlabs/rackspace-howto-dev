@@ -2,11 +2,11 @@
 node_id: 1070
 title: Manually configure Outlook 2007 for email hosted on Exchange 2007
 type: article
-created_date: '2011-04-07 18:49:26'
-created_by: RackKCAdmin
-last_modified_date: '2015-01-09 21:5322'
-last_modified_by: jered.heeschen
-product: Exchange
+created_date: '2011-04-07'
+created_by: Rackspace Support
+last_modified_date: '2015-01-09'
+last_modified_by: Jered Heeschen
+product: Microsoft Exchange
 body_format: tinymce
 ---
 

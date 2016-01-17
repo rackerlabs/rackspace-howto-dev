@@ -2,11 +2,11 @@
 node_id: 1293
 title: Manually configure Mac Mail for email hosted on Exchange 2010
 type: article
-created_date: '2012-02-27 22:47:01'
-created_by: RackKCAdmin
-last_modified_date: '2015-01-09 18:5750'
-last_modified_by: jered.heeschen
-product: Exchange
+created_date: '2012-02-27'
+created_by: Rackspace Support
+last_modified_date: '2015-01-09'
+last_modified_by: Jered Heeschen
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
@@ -21,18 +21,20 @@ Mac**.
 To set up Exchange 2010
 -----------------------
 
-1.  Open Mac Mail and select **Mail \>** **Preferences**.
-2.  In the new window that appears, click the **Accounts**tab in the top
-    menu bar and then click the plus (+) symbol in the lower-left
-    corner.
+1.  Open Mac Mail and select **Mail &gt;** **Preferences**.
+2.  In the new window that appears, click the **Accounts** tab in the
+    top menu bar and then click the plus (+) symbol in the
+    lower-left corner.
 3.  Select **Exchange** and then click **Continue.**
 
-    ![](/knowledge_center/sites/default/files/field/image/MM101.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM101.png){width="470"
+    height="480"}
 
 4.  On the next page, enter your full name and your entire Microsoft
     Exchange email address and password,and then click **Continue**.
 
-    ![](/knowledge_center/sites/default/files/field/image/MM102.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM102.png){width="403"
+    height="347"}
 
     -   If your Autodiscover CNAME record is set correctly, Mail
         automatically pulls the correct server settings for you. Skip to
@@ -47,17 +49,20 @@ To set up Exchange 2010
         **user@example.com**).
     -   **Password** &ndash; Enter the password associated with the email
         account you are setting up.
-    -   **Server Address** &ndash; Enter **connect.emailsrvr.com**.<br>
-          
+    -   **Server Address** &ndash; Enter **connect.emailsrvr.com**.
 
-    ![](/knowledge_center/sites/default/files/field/image/MM104_0.png)
-6.  Confirm the settings and then click **Continue**.<br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/MM103.png)
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM104_0.png){width="377"
+    height="322"}
+6.  Confirm the settings and then click **Continue**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM103.png){width="396"
+    height="339"}
 7.  Choose any other options that you want to enable, and then click
-    **Done**.<br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/MM105_0.png)
+    **Done**.
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MM105_0.png){width="397"
+    height="333"}
 
 Your Microsoft Exchange 2010 email account is now set up with Mac Mail.
 

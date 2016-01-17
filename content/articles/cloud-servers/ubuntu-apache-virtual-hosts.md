@@ -2,10 +2,10 @@
 node_id: 108
 title: Set up Apache virtual hosts on Ubuntu
 type: article
-created_date: '2011-03-09 19:54:25'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 21:1012'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -33,6 +33,8 @@ multiple domains by using *virtual hosts*.
 -   [Set directory options](#Directory)
 -   [Summary](#Summary)
 
+[](){#Create_the_layout}
+
 Create the layout
 -----------------
 
@@ -50,6 +52,8 @@ This example uses two domains: domain1.com and domain2.com.
 
         mkdir -p public_html/domain1.com/{public,private,log,cgi-bin,backup}
         mkdir -p public_html/domain2.com/{public,private,log,cgi-bin,backup}
+
+[](){#index.html}
 
 Create index.html
 -----------------
@@ -76,11 +80,15 @@ very simple HTML file so that you can check the virtual host's work.
 3.  Repeat the process so that you have a similar file for domain2.com.
     Replace all instances of `domain1.com` with `domain2.com`.
 
+[](){#Virtual_Hosts}
+
 Define virtual hosts
 --------------------
 
 Now you have a basic structure for your two domains, you can define two
 virtual hosts.
+
+[](){#NameVirtualHost}
 
 ### Review NameVirtualHost
 
@@ -121,6 +129,8 @@ for HTTP requests made on any available interface (\*) at port 80.
 'ports.conf' is new to Ubuntu's Apache layout; prior Ubuntu releases
 placed a similar setting in the default vhost.
 
+[](){#Custom_Virtual_Hosts}
+
 ### Define custom virtual hosts
 
 Now you are ready to add your own virtual hosts so that you can start to
@@ -156,6 +166,8 @@ The contents looks as follows:
       ErrorLog /var/log/apache2/error-mydomainname.com.log
       CustomLog /var/log/apache2/access-mydomainname.com.log combined
 
+[](){#a2ensite}
+
 Enable the site
 ---------------
 
@@ -170,6 +182,8 @@ The output of the command is as follows:
 Run the recommended command:
 
     sudo /etc/init.d/apache2 reload
+
+[](){#Navigate}
 
 Navigate to the site
 --------------------
@@ -204,6 +218,8 @@ site in a web browser on your local computer:
 
 The contents of public/index.html file is shown.
 
+[](){#ServerAlias}
+
 Use the ServerAlias
 -------------------
 
@@ -214,6 +230,8 @@ set up correctly, you can also use that address:
 
 We'll talk about forcing one address or the other in a later article
 about rewrite rules.
+
+[](){#Repeat_as_necessary}
 
 Repeat the process for the other domain
 ---------------------------------------
@@ -240,6 +258,8 @@ To create and enable domain2.com, repeat the process as follows:
 
 You should see the 'domain2.com' index file.
 
+[](){#Log_Files}
+
 View log files
 --------------
 
@@ -252,6 +272,8 @@ List the logs for your domains:
 The output is exactly as expected:
 
     access.log  error.log
+
+[](){#Default}
 
 Default vhost file
 ------------------
@@ -277,6 +299,8 @@ This is something to consider when planning your websites. Do you want a
 particular domain to be the default? Do you want the IP address to have
 completely different content?
 
+[](){#Email}
+
 Set the admin email address
 ---------------------------
 
@@ -286,6 +310,8 @@ shown in the ServerSignature if its value is set to Email. (See the
 section, [Define Apache footers](#Apache_Footers).)
 
     ServerAdmin webmaster@domain.com
+
+[](){#Domain_Name}
 
 Set the domain name
 -------------------
@@ -301,6 +327,8 @@ domain.com and domain.net point to the same content.
 will serve the same content (assuming you have set the DNS to point to
 your Cloud Server IP).
 
+[](){#Index_Files}
+
 Define the index file
 ---------------------
 
@@ -314,6 +342,8 @@ directed to an alternate page or to a nonstandard home page.
 might go directly to a nonspecified page, such as domain.com/index.php,
 while the DirectoryIndex value works only for those entering domain.com.
 
+[](){#Documents}
+
 Define the documents path
 -------------------------
 
@@ -321,6 +351,8 @@ Define the location of the domain's public files. Use an absolute path
 name.
 
     DocumentRoot /home/demo/public_html/domain.com/public
+
+[](){#Log_Files_2}
 
 Set the log files
 -----------------
@@ -330,6 +362,8 @@ Set the log levels and the location for the virtual hosts' log files.
     LogLevel warn
     ErrorLog  /var/log/apache2/error-mydomainname.com.log
     CustomLog /var/log/apache2/access-mydomainname.com.log combined
+
+[](){#Error_Documents}
 
 Define error documents
 ----------------------
@@ -348,6 +382,8 @@ If error messages are not defined, Apache generates its own error pages.
 Custom error pages are more user friendly and can be customized as much,
 or as little, as you want.
 
+[](){#Apache_Footers}
+
 Define Apache footers
 ---------------------
 
@@ -365,6 +401,8 @@ Apache configuration \#2 NEED LINK article for more details.
 If ServerSignature is set to **Email**, the ServerAdmin email will be
 displayed.
 
+[](){#cgi-bin}
+
 Enable cgi-bin
 --------------
 
@@ -377,6 +415,8 @@ want.
       Options +ExecCGI
     </Location>
 
+[](){#Directory}
+
 Set directory options
 ---------------------
 
@@ -388,6 +428,8 @@ domain.com.
 
 Following are other options that you can set:
 
+[](){#Directory_Browsing}
+
 ### Directory browsing option
 
 To turn off directory browsing, use -Indexes. To turn on directory
@@ -395,12 +437,16 @@ browsing, use +Indexes.
 
     Options -Indexes
 
+[](){#SSI}
+
 ### SSI option
 
 Enable or disable Server Side Includes. The following example disables
 it.
 
     Options -Includes
+
+[](){#Symlinks}
 
 ### Symlinks option
 
@@ -416,6 +462,8 @@ to be followed only if the owner of the link is identical to the owner
 of the target file or directory (in terms of Linux filesystem
 ownership/permissions). This prevents many of the security risks that a
 simple FollowSymlinks directive can create.
+
+[](){#.htaccess}
 
 ### .htaccess option
 
@@ -446,14 +494,19 @@ from external sources:
     </Files>
 
 **Note**: The preceding example is formatted for Apache 2.4. If using
-2.2, replace **\<SatisfyAll\> Require all denied  \</SatisfyAll\> **
-with**Order Allow,Deny | Deny from all | Satisfy all**.
+2.2, replace **&lt;SatisfyAll&gt; Require all denied
+&lt;/SatisfyAll&gt; ** with **Order Allow,Deny | Deny from all | Satisfy
+all**.
+
+[](){#No_Options}
 
 ### No Options
 
 Specify None to turn off all the available options.
 
     Options None
+
+[](){#Hierarchy}
 
 ### Options hierarchy
 
@@ -462,7 +515,7 @@ following example:
 
       AllowOverride None
       Options None
-      
+
     AllowOverride All
 
 The first directory setting would turn off all options and disable
@@ -470,6 +523,8 @@ The first directory setting would turn off all options and disable
 
 However, the second directory setting would override the first and allow
 .htaccess support for the domain.com/public directory.
+
+[](){#Summary}
 
 Summary
 -------

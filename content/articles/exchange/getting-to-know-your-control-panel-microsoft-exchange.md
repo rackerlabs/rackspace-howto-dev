@@ -2,11 +2,11 @@
 node_id: 1404
 title: 'Microsoft Exchange: Cloud Office Control Panel overview'
 type: article
-created_date: '2012-05-23 05:20:09'
+created_date: '2012-05-23'
 created_by: Rae D. Cabello
-last_modified_date: '2014-12-29 21:5620'
-last_modified_by: jered.heeschen
-product: Exchange
+last_modified_date: '2014-12-29'
+last_modified_by: Jered Heeschen
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
@@ -14,9 +14,8 @@ Welcome to Rackspace Cloud Office Control Panel! After you sign up for
 Microsoft Exchanges services through Rackspace, the first thing you'll
 want to do is log in to your Cloud Office Control Panel. This article
 provides a brief overview of the control panel, which you can access at
-[https://cp.rackspace.com/](https://cp.rackspace.com/) for new Cloud
-Office customers or https://my.rackspace.com/ for UK and MyRackspace
-customers.
+<https://cp.rackspace.com/> for new Cloud Office customers or
+[https://my.rackspace.com/]() for UK and MyRackspace customers.
 
 -   [Control Panel Main](#controlpanelmain)
 -   [Microsoft Exchange](#RackspaceEmail)
@@ -36,7 +35,9 @@ sign up for additional products (Microsoft Sharepoint, Cloud Drive) each
 product will show up underneath to allow you to manage it directly from
 the landing page.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/exchange_cp_main.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/exchange_cp_main.png){width="600"
+height="563"}</span>
 
 ### Microsoft Exchange {#RackspaceEmail}
 
@@ -45,14 +46,18 @@ tools like spam filtering, creating distribution lists, and accessing
 contacts. For more options, you can click the **More** link in the
 lower-right corner.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP11.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP11.png){width="538"
+height="138"}</span>
 
 After you click **More**, new options appear, such as mobile messaging,
 public folders, and the ability to upgrade your services by adding more
 storage space to your mailboxes. We recommend getting familiar with all
 the features so you can use the product to its full potential.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP12.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP12.png){width="600"
+height="326"}</span>
 
 The following sections describe the options available for Microsoft
 Exchange on the control panel. Links to more information or instructions
@@ -65,8 +70,8 @@ about options are provided.
 -   **Distribution lists** - Add members of your domain (and contacts)
     to one exclusive email address so that emails are automatically sent
     out to all members of the list.
--   **Resources** - Set up or reserve an Exchange room for company
-    collaboration.
+-   **Resources** - Set up or reserve an Exchange room for
+    company collaboration.
 -   **Public Folders** - Enable and manage your domain's public folders
 -   **Mobile Messaging** - Add Active Sync and BlackBerry Enterprise
     Service licenses for users on your domain to enable them to
@@ -115,13 +120,17 @@ Manage Administrators and find General Information.Below is a News and
 Alerts banner that will display any scheduled maintenances occurring and
 a System Status Update.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP6.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP6.png){width="274"
+height="263"}</span>
 
 By selecting the **More** option, you'll be presented with more options
 to view **Company Contacts**, **API Access Keys**,**Administrative
 Activity**, **Service Summary**, etc.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/Cp10.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/Cp10.png){width="600"
+height="268"}</span>
 
 #### Company Information
 
@@ -154,13 +163,17 @@ Activity**, **Service Summary**, etc.
 The **Domains** service section allows users to access your domains DNS
 Settings, Add Disclaimers, View Domain Details and set Spam Filtering.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP4.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP4.png){width="538"
+height="136"}</span>
 
 By selecting the **More** option, you'll brought to another landing page
 that includes more options like Split Domain Routing, Migrations,
 Catch-All Adress and the Email Everyone feature.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP5.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP5.png){width="600"
+height="223"}</span>
 
 #### Manage
 
@@ -170,7 +183,7 @@ Catch-All Adress and the Email Everyone feature.
 -   **Email Archiving** -a service that will archive all incoming and
     outgoing email for your domain
 -   **Global Access Rights** - the ability to grant or disable access
-    for POP or IMAP connections
+    for POP or IMAP connection<span class="s5">s</span>
 
 #### Spam Filtering
 
@@ -203,17 +216,21 @@ Catch-All Adress and the Email Everyone feature.
 -   **Migrations** - set up new migrations for migrating company data
     from a previous hosting provider
 
-### Support
+### Support {#support-2}
 
 The **Support** section allows users to utilize the support documents
 for the most common questions as well the ability to **View / Create
 Tickets** if you ever need assistance.
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CPEight.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CPEight.png){width="538"
+height="139"}</span>
 
 After selecting the **View / Create Ticket **option, you'll brought to
 another landing page that includes the ability to create a new ticket,
 view past tickets, and sort through any past tickets:
 
-![Image](http://c15042926.r26.cf2.rackcdn.com/CP9.png)
+<span
+class="s4">![Image](http://c15042926.r26.cf2.rackcdn.com/CP9.png){width="600"
+height="179"}</span>
 

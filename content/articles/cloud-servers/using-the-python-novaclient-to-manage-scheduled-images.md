@@ -2,10 +2,10 @@
 node_id: 3473
 title: Using python-novaclient to manage scheduled images
 type: article
-created_date: '2013-05-16 21:23:07'
-created_by: brian.rosmaita
-last_modified_date: '2014-10-29 20:1135'
-last_modified_by: kyle.laffoon
+created_date: '2013-05-16'
+created_by: Brian Rosmaita
+last_modified_date: '2014-10-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -59,9 +59,9 @@ First, if you haven't used python-novaclient before, take a look at one
 of these Knowledge Center articles:
 
 -   [Installing python-novaclient on Linux and Mac
-    OS](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-linux-and-mac-os)
+    OS](/howto/installing-python-novaclient-on-linux-and-mac-os)
 -   [Installing python-novaclient on
-    Windows](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-windows)
+    Windows](/howto/installing-python-novaclient-on-windows)
 
 These articles will provide you with an overview of python-novaclient
 and complete instructions for installing it on your operating system of
@@ -69,7 +69,7 @@ choice. They also suggest that you install the special
 "rackspace-novaclient" package which will install python-novaclient plus
 all the extensions supported in the Rackspace Open Cloud. (In order to
 get the scheduled images extension, you need to make sure you install
-rackspace-novaclient version \>= 1.3) If you *already* have a
+rackspace-novaclient version &gt;= 1.3) If you *already* have a
 python-novaclient installed, you can use pip to install *only *the
 scheduled images extension:
 
@@ -198,7 +198,7 @@ an error message:
 
     ERROR (NotFound): Scheduled images not enabled for server 24ade2fe-60d9-4d3e-a02c-c9a6a1b588a6 (HTTP 404)
 
- 
+
 
 Managing Scheduled Images
 -------------------------
@@ -281,9 +281,9 @@ More Information
 ----------------
 
 -   [Scheduled Images
-    FAQ](http://www.rackspace.com/knowledge_center/article/scheduled-images-faq "Scheduled Images FAQ")
+    FAQ](/howto/scheduled-images-faq "Scheduled Images FAQ"){.links}
 -   [Scheduled Images API Extension
-    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images)
+    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images){.links}
 
- 
+
 

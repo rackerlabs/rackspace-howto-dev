@@ -2,9 +2,9 @@
 node_id: 3986
 title: Manage company contacts in the Cloud Office control panel
 type: article
-created_date: '2014-03-31 16:54:17'
-created_by: mawutor.amesawu
-last_modified_date: '2015-06-15 17:4841'
+created_date: '2014-03-31'
+created_by: Mawutor Amesawu
+last_modified_date: '2015-06-15'
 last_modified_by: David Hendler
 product: Rackspace Email
 body_format: tinymce
@@ -17,12 +17,12 @@ receive billing and renewal notices yet not be able to make changes to
 the account. Use the following steps to add, edit, or delete a company
 contact from your account.
 
-[Add a company contact](#add)<br>
- [Edit a company contact](#edit)<br>
- [Delete a company contact](delete)
+[Add a company contact](#add)
+[Edit a company contact](#edit)
+[Delete a company contact](delete)
 
-**Add a company contact**
--------------------------
+**[]()Add a company contact**
+-----------------------------
 
 1.  Log in to the [Cloud Office control
     panel](http://apps.rackspace.com/?cp).
@@ -30,9 +30,9 @@ contact from your account.
 3.  In the **Company Information** section, click **Contacts**.
 4.  Click **Add Company Contact**.
 5.  Enter the required information:
-    -   **Contact Type** &ndash; Select **Primary**or **Secondary**. Only a
-        primary contact on an account can request administrative
-        changes.
+    -   **Contact Type** &ndash; Select **Primary** or **Secondary**. Only a
+        primary contact on an account can request
+        administrative changes.
 
     -   **Name** &ndash; Enter the name of the contact.
 
@@ -46,17 +46,17 @@ contact from your account.
 
     -   **Security Answer** &ndash; Enter an answer for the security question.
 
-6.  In the **Notifications**section, select the check boxes for
-    notifications that should be sent to this contact.<br>
-     **Note**: Your account must have at least one contact who receives
+6.  In the **Notifications** section, select the check boxes for
+    notifications that should be sent to this contact.
+    **Note**: Your account must have at least one contact who receives
     **Billing Information** notifications.
 7.  Click **Save**.
 
- 
 
-**Edit a company contact**<br>
-  
----------------------------
+
+**[]()Edit a company contact**
+
+--------------------------------
 
 1.  Log in to the [Cloud Office control
     panel](http://apps.rackspace.com/?cp).
@@ -64,17 +64,17 @@ contact from your account.
 3.  In the **Company Information** section, click **Contacts**.
 4.  Click the name of the contact that you want to edit.
 5.  Edit the information as needed.
-6.  In the **Notifications**section, select the check boxes for
-    notifications that should be sent to this contact.<br>
-     **Note**: Your account must have at least one contact who receives
+6.  In the **Notifications** section, select the check boxes for
+    notifications that should be sent to this contact.
+    **Note**: Your account must have at least one contact who receives
     **Billing Information** notifications.
 7.  Click **Save**.
 
- 
 
-**Delete a company contact**<br>
-  
------------------------------
+
+**[]()Delete a company contact**
+
+----------------------------------
 
 1.  Log in to the [Cloud Office control
     panel](http://apps.rackspace.com/?cp).
@@ -85,5 +85,5 @@ contact from your account.
 5.  Click **Delete**.
 6.  In the confirmation box, click **OK**.
 
- 
+
 

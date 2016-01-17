@@ -2,9 +2,9 @@
 node_id: 3683
 title: Creating Cloud Queues
 type: article
-created_date: '2013-09-16 16:57:35'
-created_by: megan.meza
-last_modified_date: '2016-01-05 21:0320'
+created_date: '2013-09-16'
+created_by: Megan Meza
+last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Queues
 body_format: tinymce
@@ -17,7 +17,7 @@ needed.  All other Queue commands will be completed through the
 terminal.
 
 **Note**: Be sure to [set up your authentication
-token](http://www.rackspace.com/knowledge_center/article/cloud-queues-curl-cookbook#getauthtoken)
+token](/howto/cloud-queues-curl-cookbook)
 before completing the terminal steps for creating your cloud queue.
 
 #### In the Control Panel
@@ -30,7 +30,7 @@ before completing the terminal steps for creating your cloud queue.
 When the queue is finished building, you will see the details for your
 queue listed in the Control Panel. You will then need to complete the
 steps under [Testing Your
-Queue](http://www.rackspace.com/knowledge_center/article/cloud-queues-curl-cookbook#testingyourqueue)
+Queue](/howto/cloud-queues-curl-cookbook)
 in your terminal to begin posting messages to your Queue.
 
 #### Or, In Your Terminal
@@ -47,8 +47,8 @@ in your terminal to begin posting messages to your Queue.
 
     HTTP/1.1 200 OK Content-Length: 140 Content-Type: application/json; charset=utf-8 Content-Location: /v1/queues {"queues": [{"href": "/v1/queues/samplequeue", "name": "samplequeue"}], "links": [{"href": "/v1/queues?marker=samplequeue", "rel": "next"}]}
 
-#### <br>
- Testing Your Queue
+#### []()
+Testing Your Queue
 
 -   You can test your queue by posting a message to it:
 

@@ -2,17 +2,17 @@
 node_id: 4747
 title: Working with notification suppressions in Rackspace Intelligence
 type: article
-created_date: '2015-07-16 20:00:32'
-created_by: rose.coste
-last_modified_date: '2015-09-01 21:0204'
-last_modified_by: constanze.kratel
+created_date: '2015-07-16'
+created_by: Rose Coste
+last_modified_date: '2015-09-01'
+last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
 body_format: tinymce
 ---
 
 Rackspace Intelligence enables you to temporarily suspend [Rackspace
 Intelligence
-notifications](/knowledge_center/article/managing-rackspace-intelligence-notifications)
+notifications](/howto/working-with-notifications-in-rackspace-intelligence)
 during scheduled outages or maintenance periods.
 
 You access the **Suppressions** page by clicking the **Suppress** link
@@ -22,7 +22,8 @@ To [create a new suppression](#createsuppression), [edit an existing
 suppression](#editsuppression), or view a list of active, scheduled, or
 ended suppressions, click the **Suppressions** link.
 
-![](/knowledge_center/sites/default/files/field/image/4747.1a_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4747.1a_0.png){width="723"
+height="329"}
 
 On the Suppressions page, you can view two types of suppressions:
 
@@ -47,12 +48,13 @@ the **Suppressed Alerts** link. The Suppressed Alerts log page lists all
 the alerts that have been suppressed during the past 30 days, with their
 corresponding metrics, such as status, entities, and suppression time.
 
-![](/knowledge_center/sites/default/files/field/image/intelligence-suppressions-suppressed%20entities.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-suppressions-suppressed%20entities.png){width="904"
+height="560"}
 
- 
 
-Create a suppression
---------------------
+
+[](){#createsuppression}Create a suppression
+--------------------------------------------
 
 You can create a suppression in one of the following ways:
 
@@ -60,11 +62,12 @@ You can create a suppression in one of the following ways:
     page](#createsuppressionfromhome)
 -   [From within an entity](#createsuppressionfromentity)
 
-### Create a suppression from the Suppressions overview page
+### [](){#createsuppressionfromhome}Create a suppression from the Suppressions overview page
 
 1.  On the Suppressions overview page, click **Create Suppression**.
 
-![](/knowledge_center/sites/default/files/field/image/4747.4a_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4747.4a_0.png){width="581"
+height="201"}
 
 2.  On the **Create a Suppression** page, type a name for the
     suppression, and select the appropriate start and end dates.
@@ -80,26 +83,27 @@ Rackspace Intelligence creates the suppression and it goes into effect
 immediately. Details about your new suppression are available on the
 suppression details page.
 
-### Create a suppression from within an entity
+### [](){#createsuppressionfromentity}Create a suppression from within an entity
 
 1.  To create a suppression from within an entity, open the entity
-    details page by clicking **Monitor \> Entities** and then clicking
+    details page by clicking **Monitor &gt; Entities** and then clicking
     the name of the entity.
 2.  Scroll to the **Suppressions** section of the entity details page,
-    and then click **Create Suppression.**<br>
-     ![](/knowledge_center/sites/default/files/field/image/4747.5a_0.png)<br>
-     Rackspace Intelligence has automatically selected all thw alarms
+    and then click **Create Suppression.**
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4747.5a_0.png){width="686"
+    height="231"}
+    Rackspace Intelligence has automatically selected all thw alarms
     that are associated with this entity.
-3.  Set the start and end dates and, optionally, add additional
-    entities.
+3.  Set the start and end dates and, optionally, add
+    additional entities.
 4.  Click **Create Suppression**.
 
 After you have confirmed that you want to create the suppression,
 Rackspace Intelligence creates the suppression and it goes into effect
 immediately.
 
-Edit a suppression
-------------------
+[](){#editsuppression}Edit a suppression
+----------------------------------------
 
 You can edit an existing suppression by using the **Actions** menu on
 the suppression details page.
@@ -109,14 +113,14 @@ You can perform the following editing actions for suppressions:
 -   [Edit the timeframe for a suppression](#editsuppressiontimeframe)
 -   [Delete the suppression](#deletesuppression)
 
-### Edit the time frame of a suppression
+### [](){#editsuppressiontimeframe}Edit the time frame of a suppression
 
 1.  From the **Actions** menu on the suppression details page,
     select **Edit Timeframe**.
 2.  Update the start date, end date, or both, and then click **Update
-    Timeframe**.<br>
-     **Note:** If your suppression has already started, you cannot
-    update the start date.
+    Timeframe**.
+    **Note:** If your suppression has already started, you cannot update
+    the start date.
 3.  Alternatively, you can end the suppression immediately by
     clicking **End Suppression Now**.
 4.  Confirm that you want to end the suppression by clicking **End
@@ -124,7 +128,7 @@ You can perform the following editing actions for suppressions:
 
 **Note:** If you end a suppression, you cannot restart it.
 
-### Delete a suppression
+### [](){#deletesuppression}Delete a suppression
 
 1.  From the **Actions** menu on the suppression details page,
     select **Delete Suppression**.

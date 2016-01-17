@@ -2,10 +2,10 @@
 node_id: 3728
 title: Cloud Queues Overview
 type: article
-created_date: '2013-10-16 19:57:39'
-created_by: megan.meza
-last_modified_date: '2014-06-30 21:2323'
-last_modified_by: jered.heeschen
+created_date: '2013-10-16'
+created_by: Megan Meza
+last_modified_date: '2014-06-30'
+last_modified_by: Jered Heeschen
 product: Cloud Queues
 body_format: tinymce
 ---
@@ -16,7 +16,7 @@ Cloud Queues is an open-source messaging system, designed to help
 customers build and scale distributed applications in the cloud.  The
 Cloud Queues API is built to be flexible, supporting a variety of
 messaging patterns like producer-consumer, poll based
-publisher-subscriber, and point-to-point.  
+publisher-subscriber, and point-to-point.
 
 Queuing systems like Cloud Queues are meant to decouple resources in an
 application by serving as a communication layer between those resources.
@@ -31,7 +31,7 @@ needed, without caring if a server is available to do that work.
 For pricing and service information, please see [the Cloud Queues
 product page](http://www.rackspace.com/cloud/queues/) on our website.
 
- 
+
 
 ### Example Use Cases
 
@@ -51,9 +51,9 @@ message, ensuring no other servers attempt to do the same work, it will
 complete the tasks, and then delete the message, signifying the task is
 complete.  Many applications will use multiple queues for different
 types of tasks.  For example, another job called "update\_salesforce"
-may be triggered by this same event.  
+may be triggered by this same event.
 
- 
+
 
 ***Publisher-Subscriber***-  The publisher-subscriber pattern is often
 used as the underlying component of a notifications service.  One of the
@@ -65,11 +65,11 @@ a message will be posted to the queue that contains the article's
 information.  Servers responsible for alerting, the "subscribers" in
 this case, will poll the queue every 1-5 minutes to see if any new
 updates have been posted.  If so, they will email anyone who has signed
-up for updates.  
+up for updates.
 
- 
+
 
 Please see the [Cloud Queues
-FAQ](http://www.rackspace.com/knowledge_center/article/cloud-queues-faq)
-for more information on features, limits, support, and more.  
+FAQ](/howto/cloud-queues-faq)
+for more information on features, limits, support, and more.
 

@@ -2,10 +2,10 @@
 node_id: 1179
 title: Requesting additional IPv4 addresses for Cloud Servers
 type: article
-created_date: '2011-08-08 17:28:23'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 18:3511'
-last_modified_by: rose.contreras
+created_date: '2011-08-08'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---

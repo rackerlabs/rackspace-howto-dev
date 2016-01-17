@@ -2,10 +2,10 @@
 node_id: 4214
 title: Rackspace Email and Hosted Exchange settings
 type: article
-created_date: '2014-08-27 21:23:59'
-created_by: cody.jobson
-last_modified_date: '2016-01-14 21:4644'
-last_modified_by: rose.coste
+created_date: '2014-08-27'
+created_by: Cody Jobson
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -38,11 +38,11 @@ following tables.
 set up the connection as IMAP or POP, you can find additional
 information for specific clients and devices in [Configure email clients
 and mobile devices for email hosted on
-Exchange](http://www.rackspace.com/knowledge_center/article/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange).
+Exchange](/howto/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange).
 
 To learn more about the differences between IMAP and POP, see the
 article [IMAP and POP mail protocol
-comparison](http://www.rackspace.com/knowledge_center/article/imap-and-pop-mail-protocol-comparison). We
+comparison](/howto/imap-and-pop-mail-protocol-comparison). We
 recommend using IMAP for the incoming mail connection.
 
 ### Secure settings
@@ -59,7 +59,7 @@ connection:
 
 ### Alternative settings
 
-**Warning:**The following alternative server settings do *not*use SSL
+**Warning:** The following alternative server settings do *not* use SSL
 and therefore do not make a secure connection to the mail server:
 
 -   For protocol **POP3 (incoming)**, use non-SSL server name

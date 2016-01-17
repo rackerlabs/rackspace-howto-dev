@@ -2,10 +2,10 @@
 node_id: 5043
 title: Cloud Backup - FAQ
 type: article
-created_date: '2015-12-10 19:54:30'
+created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 23:0840'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -47,9 +47,9 @@ There are two causes for this error:
 
 1.  The user has deleted the Cloud Files container where their backups
     are stored.
-2.  Clicking the View Configuration link does not display the JSON
-    configuration. The common cause of this is that the customer has
-    backup configurations that are in a corrupted state.
+2.  Clicking the View Configuration link does not display the
+    JSON configuration. The common cause of this is that the customer
+    has backup configurations that are in a corrupted state.
 
 **Solution**
 
@@ -59,7 +59,7 @@ this container, contact Rackspace Support.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Backups
 -------
@@ -87,11 +87,11 @@ this ever occur.
 
 Rackspace does not store customer encryption keys. Only you will know
 and be able to access your encryption passphrase. If you forget your
-passphrase, you will not be able to restore data from your backups.<br>
- <br>
- For more information, see the section on [Setting up Encryption on your
+passphrase, you will not be able to restore data from your backups.
+
+For more information, see the section on [Setting up Encryption on your
 Cloud Backup
-System](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-system-actions#encryptsystem)
+System](/howto/rackspace-cloud-backup-system-actions)
 in the *Getting Started Guide.*
 
 ^[back\\ to\\ top](#top)^
@@ -101,17 +101,17 @@ in the *Getting Started Guide.*
 If you wish to create your own encrypted key and bypass the default
 client-side encryption, please refer to [this article on using OpenSSL
 to generate a
-key](https://admin.rackspace.com/knowledge_center/article/generating-your-encrypted-key-in-cloud-backup).
+key](/howto/generating-your-encrypted-key-in-cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
 ### Where are my Cloud Backups stored?
 
-All of your Cloud Backups are stored in your Cloud Files account.<br>
- <br>
- *But what if I never set up a Cloud Files account?*<br>
- <br>
- When you established your Cloud Account, a Cloud Files account was set
+All of your Cloud Backups are stored in your Cloud Files account.
+
+*But what if I never set up a Cloud Files account?*
+
+When you established your Cloud Account, a Cloud Files account was set
 up as well. You are not charged storage fees for your Cloud Files
 account until you begin storing things in it.
 
@@ -120,12 +120,12 @@ account until you begin storing things in it.
 ### How many backup jobs can I have at one time?
 
 You can create any number of backup jobs for each of your servers, and
-you can include a nearly unlimited number of files in each job.<br>
- <br>
- For more inoformation, see [Creating a
-Backup](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0)
+you can include a nearly unlimited number of files in each job.
+
+For more inoformation, see [Creating a
+Backup](/howto/rackspace-cloud-backup-create-a-backup-0)
 in the [*Rackspace Cloud Backup Getting Started
-Guide*](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+Guide*](/howto/rackspace-cloud-backup-overview).
 
 ^[back\\ to\\ top](#top)^
 
@@ -138,10 +138,10 @@ increases efficiency by reducing the amount of data that is transferred
 for each backup, and reduces your storage space by not storing duplicate
 data. An added benefit is that this capability enables you to retrieve
 previous versions of your files (up to the limits specified in your data
-retention settings).<br>
- <br>
- See our section on [Scheduling and
-De-duplication](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#configurebackup)
+retention settings).
+
+See our section on [Scheduling and
+De-duplication](/howto/rackspace-cloud-backup-backup-actions-0)
 in the RCBU *Getting Started Guide*.
 
 ^[back\\ to\\ top](#top)^
@@ -152,16 +152,16 @@ You can use Rackspace Cloud Backup on virtually any server in the
 Rackspace Cloud. The exceptions are FreeBSD 9, Debian 5 and Windows
 2003.
 
-**Note:***If you have servers that are not in the Rackspace Cloud, you
+**Note:** *If you have servers that are not in the Rackspace Cloud, you
 can use the [equivalent service offered by
-JungleDisk](https://jungledisk.com/) for those servers.*<br>
- <br>
- If you have a server with a Managed Operations Service Level, you may
+JungleDisk](https://jungledisk.com/) for those servers.*
+
+If you have a server with a Managed Operations Service Level, you may
 already have the Cloud Backup agent installed on your system. If not,
-contact your account representative to get started.<br>
- <br>
- For more informations, see the Rackspace Cloud Backup [*Getting Started
-Guide*](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+contact your account representative to get started.
+
+For more informations, see the Rackspace Cloud Backup [*Getting Started
+Guide*](/howto/rackspace-cloud-backup-overview).
 
 ^[back\\ to\\ top](#top)^
 
@@ -171,9 +171,9 @@ Rackspace Cloud Backup is a service that allows you to select and backup
 specific files and folders from your Cloud Server. You can schedule any
 number of Backup jobs, and restore to the same system or a different
 one, giving you the flexibility and power to work with your schedule and
-your data.<br>
- <br>
- Some key features are
+your data.
+
+Some key features are
 
 -   Select the files and folders from your Cloud Server you want to back
     up
@@ -188,39 +188,39 @@ your data.<br>
 
 For information on getting started with Cloud Backup, see our [Getting
 Started
-Guide](https://admin.rackspace.com/knowledge_center/getting-started/cloud-backup).
+Guide](/howto/cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
 ### How long are my Cloud Backups kept?
 
 You choose how long your backups are saved: 30 days, 60 days, or
-indefinitely.<br>
- <br>
- Read more about [Retaining your
-Backup](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#configurebackup)
+indefinitely.
+
+Read more about [Retaining your
+Backup](/howto/rackspace-cloud-backup-backup-actions-0)
 in the [Rackspace Cloud Back Up Getting Started
-Guide](https://admin.rackspace.com/knowledge_center/getting-started/cloud-backup).
+Guide](/howto/cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
 ### How do I configure my Rackspace Cloud Backups?
 
-You set up your backups in the Rackspace Cloud Backup Control Panel.<br>
- <br>
- If you need to create a new Backup, click the System you want to
-backup, and then the **Create Backup** button. If you already have a
-Backup and want to re-configure it, click the gear icon next to the
-Backup name and select **Configure Backup**. See our page on
-[Configuring a Backup through Backup
-Actions](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#configurebackup)
-for more information.<br>
- <br>
- Backups can be set to run hourly, daily, weekly, or on demand
-(manually).<br>
- <br>
- Read more about [Scheduling your
-Backup](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#configurebackup)
+You set up your backups in the Rackspace Cloud Backup Control Panel.
+
+If you need to create a new Backup, click the System you want to backup,
+and then the **Create Backup** button. If you already have a Backup and
+want to re-configure it, click the gear icon next to the Backup name and
+select **Configure Backup**. See our page on [Configuring a Backup
+through Backup
+Actions](/howto/rackspace-cloud-backup-backup-actions-0)
+for more information.
+
+Backups can be set to run hourly, daily, weekly, or on demand
+(manually).
+
+Read more about [Scheduling your
+Backup](/howto/rackspace-cloud-backup-backup-actions-0)
 in the Cloud Backup Getting Started Guide.
 
 ^[back\\ to\\ top](#top)^
@@ -292,13 +292,14 @@ their data is meant to be discarded.
 
 If you do need to back up these files, our suggested workarounds are:
 
--   For databases&mdash;Take a snapshot of the database (e.g., a database
-    dump) and back up the dump. See [Rackspace Cloud Backup - Backing up
-    Databases](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backing-up-databases)
+-   For databases&mdash;Take a snapshot of the database (e.g., a
+    database dump) and back up the dump. See [Rackspace Cloud Backup -
+    Backing up
+    Databases](/howto/rackspace-cloud-backup-backing-up-databases)
     for full instructions.
 -   For log files&mdash;Take snapshots of your log files and back them up.
-    -   To avoid running out of disk space, rotate your log files
-        periodically.
+    -   To avoid running out of disk space, rotate your log
+        files periodically.
 
 ^[back\\ to\\ top](#top)^
 

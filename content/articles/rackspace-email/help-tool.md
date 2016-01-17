@@ -2,17 +2,17 @@
 node_id: 4294
 title: Help tool for hosted email and Skype for Business
 type: article
-created_date: '2014-10-03 20:05:31'
-created_by: beau.bailey
-last_modified_date: '2016-01-12 15:3856'
-last_modified_by: stephanie.fillmon
+created_date: '2014-10-03'
+created_by: Beau Bailey
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: markdown_w_tinymce
 ---
 
 Rackspace provides a self-service help tool to assist you and your users with setting up mobile devices, email clients, and Skype for Business.  You can log in to the help tool at [emailhelp.rackspace.com](https://emailhelp.rackspace.com/) with your Rackspace email address and password, and the help tool will provide step-by-step instructions that work with your specific server configuration.
 
-**Note to administrators:** You can streamline the process of configuring a client or device for Exchange or Skype for Business by setting a DNS record for your domain that points to the Rackspace autodiscover server.  For more information about autodiscover, see [Set up DNS records for email and Skype for Business](/knowledge_center/article/dns-records-for-email-with-rackspace#Autodiscover).
+**Note to administrators:** You can streamline the process of configuring a client or device for Exchange or Skype for Business by setting a DNS record for your domain that points to the Rackspace autodiscover server.  For more information about autodiscover, see [Set up DNS records for email and Skype for Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
 
 The help tool provides setup instructions for the following services on specific clients and devices:
 
@@ -34,9 +34,9 @@ The help tool provides manual instructions for setting up IMAP access to email f
 - Windows Phone
 - BlackBerry Internet Service, BlackBerry Z10, and BlackBerry Q10 (using Mobile Sync)
 
-The help tool provides Mobile Sync instructions for domains that have it enabled.  For more information about Mobile Sync, see [Adding A Mobile Sync License](/knowledge_center/article/adding-a-mobile-sync-license).
+The help tool provides Mobile Sync instructions for domains that have it enabled.  For more information about Mobile Sync, see [Adding A Mobile Sync License](/howto/adding-a-mobile-sync-license).
 
-To set up a mail client manually, see [Rackspace Email and Exchange Settings](/knowledge_center/article/rackspace-email-exchange-settings).
+To set up a mail client manually, see [Rackspace Email and Exchange Settings](/howto/rackspace-email-and-hosted-exchange-settings).
 
 ## Hosted Exchange 2010 and Exchange 2013 {#exchange}
 
@@ -49,7 +49,7 @@ The help tool provides instructions for setting up access to email on Hosted Exc
 - Windows Phone
 - BlackBerry Enterprise Server, BlackBerry Z10, and BlackBerry Q10 (using ActiveSync)
 
-To set up a mail client manually, see [Rackspace Email and Exchange Settings](/knowledge_center/article/rackspace-email-exchange-settings).
+To set up a mail client manually, see [Rackspace Email and Exchange Settings](/howto/rackspace-email-and-hosted-exchange-settings).
 
 ## Skype for Business {#sfb}
 

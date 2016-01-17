@@ -2,15 +2,15 @@
 node_id: 4782
 title: Migrate a First Generation server to a Next Generation server with minimal downtime
 type: article
-created_date: '2015-08-10 16:29:18'
+created_date: '2015-08-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13 20:5206'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-This article describes the process of migrating an existing First Generation (First Gen) cloud server to a Next Generation (Next Gen) cloud server with little to no downtime by using Cloud Load Balancers and server imaging. To learn more about the Next Generation Cloud Servers platform and the migration process, see [Next-Generation Cloud Servers migration considerations and options](http://www.rackspace.com/knowledge_center/article/next-generation-cloud-servers-migration-considerations-and-options).
+This article describes the process of migrating an existing First Generation (First Gen) cloud server to a Next Generation (Next Gen) cloud server with little to no downtime by using Cloud Load Balancers and server imaging. To learn more about the Next Generation Cloud Servers platform and the migration process, see [Next-Generation Cloud Servers migration considerations and options](/howto/next-generation-cloud-servers-migration-considerations-and-options).
 
 **Note:** This article assumes that you host your Cloud Servers and DNS with Rackspace.  However, if you host DNS elsewhere, you will need to perform the steps in the  <a href="#rept">Repoint your DNS to the load balancer</a> section of this article via your DNS portal of where it is hosted.
 
@@ -51,7 +51,7 @@ After you create the load balancer, click on it to view the advanced configurati
 
 **Note:** If you have SSL termination on your server, you will need additional configuration. Enable SSL termination through the load balancer or have two load balancers sharing the same IP to direct HTTP and HTTPS traffic to your server.
 
-<img src="/knowledge_center/sites/default/files/field/image/4782-3_8.png" width="555" height="230" border="1" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-3_8.png" width="555" height="230" border="1" alt=""  />
 
 <a name="rept"> </a>
 
@@ -59,11 +59,11 @@ After you create the load balancer, click on it to view the advanced configurati
 
 1. Go to the Cloud DNS section of the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>.
 
-    <img src="/knowledge_center/sites/default/files/field/image/4782-DNS-1_1.png" width="506" height="157" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-DNS-1_1.png" width="506" height="157" border="1" alt=""  />
 
 2. Select the domain that is currently pointing to your First Gen server.
 
-    <img src="/knowledge_center/sites/default/files/field/image/4782-4-New_0.png" width="419" height="418" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-4-New_0.png" width="419" height="418" border="1" alt=""  />
 
 3. Click the gear next to your A record and select **Modify Record**.
 
@@ -75,17 +75,17 @@ After you create the load balancer, click on it to view the advanced configurati
 
 Follow the steps in this section to create an image of the First Gen server that you will then use to create a Next Gen server.
 
-**Note:** If you are on a Linux server with under 40 GB of disk in use, you can resize down to a 1 GB flavor before taking the image. This will allow you to boot to any Next Generation flavors that can take advantage of our <a href="http://www.rackspace.com/knowledge_center/article/boot-a-server-from-a-cloud-block-storage-volume">Boot From Volume Offering</a>.
+**Note:** If you are on a Linux server with under 40 GB of disk in use, you can resize down to a 1 GB flavor before taking the image. This will allow you to boot to any Next Generation flavors that can take advantage of our <a href="/howto/boot-a-server-from-a-cloud-block-storage-volume">Boot From Volume Offering</a>.
 
 1. On the Cloud Servers page, click the gear icon next to the First Gen server that you are imaging and select **Create Image**.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-5_0.png" width="230" height="329" border="1" alt=""  />
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-5_0.png" width="230" height="329" border="1" alt=""  />
 
 2. Enter a name for the image in the **Saved Image Name** field.
 
 3. Choose **Next Generation Cloud Server Image**.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-6_0.png" width="246" height="244" border="1" alt=""  /></li>
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-6_0.png" width="246" height="244" border="1" alt=""  /></li>
 
 4. Click **Create Image**.
 
@@ -97,15 +97,15 @@ Follow the steps below to create a Next Gen server.
 
 1. On the Cloud Servers page of the Cloud Control Panel, click **Saved Images**.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-7_0.png" border="1" alt=""  />
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-7_0.png" border="1" alt=""  />
 
 2. Look for the image you just created and select **Create Server with Image**.
 
-    <img src="/knowledge_center/sites/default/files/field/image/4782-8_0.png" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-8_0.png" border="1" alt=""  />
 
 3. Name your server and choose your preferred flavor.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-9_0.png" width="401" height="324" border="1" alt=""  /></li>
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-9_0.png" width="401" height="324" border="1" alt=""  /></li>
 
 4. Click **Create Server** at the bottom of the page.
 
@@ -119,11 +119,11 @@ After the server has been created, you attach it to your load balancer by perfor
 
 2. Select the server that you just created and click **Add Selected Servers**.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-11_0.png" width="388" height="287" border="1" alt=""  />
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-11_0.png" width="388" height="287" border="1" alt=""  />
 
 3. Click the gear icon next to the First Gen server and select **Remove from Load Balancer**. Click **Remove Node**.
 
-   <img src="/knowledge_center/sites/default/files/field/image/4782-13_0.png" width="315" height="157" border="1" alt=""  />
+   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-13_0.png" width="315" height="157" border="1" alt=""  />
 
    **Note:** You can remove the First Gen server by using the Edit Node Condition feature instead. With this option, anyone currently on the server will be unaffected by the transition but will not be allowed to start new connections.
 
@@ -131,7 +131,7 @@ After the server has been created, you attach it to your load balancer by perfor
 
    b. Select **Draining Connections**.
 
-      <img src="/knowledge_center/sites/default/files/field/image/4782-14_1.png" width="308" height="248" border="1" alt=""  /></li>
+      <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4782-14_1.png" width="308" height="248" border="1" alt=""  /></li>
 
    c. Click **Save Condition**.
 

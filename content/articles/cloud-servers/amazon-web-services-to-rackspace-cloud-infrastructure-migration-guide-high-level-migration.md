@@ -2,10 +2,10 @@
 node_id: 3570
 title: High-level steps for migrating from Amazon Web Services
 type: article
-created_date: '2013-07-01 15:29:17'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-08 19:5924'
-last_modified_by: kelly.holcomb
+created_date: '2013-07-01'
+created_by: Rackspace Support
+last_modified_date: '2016-01-08'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -17,7 +17,7 @@ migrate your applications to Rackspace Cloud from Amazon Web Services
 ### Previous section
 
 [Mapping of Amazon Web Services resources to Rackspace
-resources](https://www.rackspace.com/knowledge_center/article/mapping-of-amazon-web-services-resources-to-rackspace-resources)
+resources](/howto/mapping-of-amazon-web-services-resources-to-rackspace-resources)
 
 ### Preparation
 
@@ -32,14 +32,14 @@ Depending on the size of your existing AWS instance and OS, select an
 equivalent instance type and follow the steps to provision a new
 instance on Rackspace Cloud Servers. You can find a list of equivalent
 instances in the [equivalent instance types
-list.](http://www.rackspace.com/knowledge_center/article/mapping-of-amazon-web-services-resources-to-rackspace-resources#instancetypes)
+list.](/howto/mapping-of-amazon-web-services-resources-to-rackspace-resources)
 
 ### Install software packages
 
 Install the required applications on your newly provisioned Rackspace
 Cloud Servers instance.
 
-### Migrate data
+### <span>Migrate data</span>
 
 After you back up your data on your AWS instance, use one of the
 following methods to transfer your data from AWS to your cloud server.
@@ -48,15 +48,15 @@ You can do this a number of ways:
 -   **(Preferred) Use OpenStack Swift, a command-line interface, to
     transfer your data from AWS to Cloud Files**
 
-    This is the recommended method for migrating your data to your cloud
-    server. Using this method, you install Swift on your AWS instance
-    and directly copy your data from AWS to Cloud Files, without
-    downloading it locally.
+    This is the recommended method for migrating your data to your
+    cloud server. Using this method, you install Swift on your AWS
+    instance and directly copy your data from AWS to Cloud Files,
+    without downloading it locally.
 
 -   **rsync**
 
     You can use
-    [rsync](http://www.rackspace.com/knowledge_center/article/backing-up-your-files-with-rsync)
+    [rsync](/howto/backing-up-your-files-with-rsync)
     to tunnel between your two instances and transfer your data. The
     other methods listed here, however, have you create backups in Cloud
     Files so that you can always return to them.
@@ -65,7 +65,7 @@ You can do this a number of ways:
 
     In certain cases (for example, if your cloud server is Windows
     based), you need to install a GUI tool (such as
-    [Cyberduck](http://www.rackspace.com/knowledge_center/article/configuring-rackspace-cloud-files-with-cyberduck))
+    [Cyberduck](/howto/configuring-rackspace-cloud-files-with-cyberduck))
     to upload the data on Cloud Files. Several open source and free
     tools exist, and they are described in detail within each migration
     scenario in this document.
@@ -86,14 +86,14 @@ data on your cloud server.
 Make any necessary configuration changes for your application and
 database.
 
-### Test after migration
+### <span>Test after migration</span>
 
--   Implement monitoring and backup solutions, and focus on enhancing
-    security.
+-   Implement monitoring and backup solutions, and focus on
+    enhancing security.
 -   Thoroughly test the applications deployed on your cloud server.
 
 ### Next step
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 

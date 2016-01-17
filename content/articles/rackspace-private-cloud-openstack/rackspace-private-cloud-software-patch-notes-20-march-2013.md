@@ -2,19 +2,19 @@
 node_id: 3354
 title: Rackspace Private Cloud Software Package Update - 20 March 2013
 type: article
-created_date: '2013-03-19 14:07:50'
+created_date: '2013-03-19'
 created_by: Karin Levenstein
-last_modified_date: '2013-03-27 22:3715'
-last_modified_by: jered.heeschen
-product: Rackspace Private Cloud - OpenStack
+last_modified_date: '2013-03-27'
+last_modified_by: Jered Heeschen
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
 Rackspace has released a package update for Rackspace Private Cloud
 Software.
 
-Update Instructions
--------------------
+[]()Update Instructions
+-----------------------
 
 If you have an existing environment created with Rackspace Private Cloud
 Software v. 3.0, you can update your environment by performing update
@@ -37,7 +37,8 @@ updating the agents.
 
 2.  Restart the OpenCenter services.
 
-        $ service opencenter-server restart$ service opencenter-agent restart
+        $ service opencenter-server restart
+        $ service opencenter-agent restart
 
 ### Agent Update
 
@@ -57,13 +58,14 @@ After the server has been successfully updated, update each agent.
 
         $ service opencenter-agent restart
 
-Package Update Changes
-----------------------
+[]()Package Update Changes
+--------------------------
 
 The following list summarizes key changes included in this package
 update. Where relevant, it includes the issue number from the related
 Github repository. All issues addressed in this package update can be
-found at [the RCBOPS Github repository](https://github.com/rcbops).
+found at [the RCBOPS Github
+repository](https://github.com/rcbops){.link}.
 
 The Rackspace Private Cloud Software *Getting Started Guide*, the *CLI
 and API Guide*, and the Knowledge Center content have been updated to
@@ -74,24 +76,24 @@ reflect these changes.
 
     Server installation:
 
-    ~~~~ {.screen}
+    ``` {.screen}
     $ curl -s -L http://sh.opencenter.rackspace.com/install.sh | <br>
        sudo bash -s - --role=server
-    ~~~~
+    ```
 
     Agent installation:
 
-    ~~~~ {.screen}
+    ``` {.screen}
      $ curl -s -L http://sh.opencenter.rackspace.com/install.sh | <br>
        sudo bash -s - --role=agent --ip=<OpenCenter-server-IP>
-    ~~~~
+    ```
 
     GUI installation:
 
-    ~~~~ {.screen}
+    ``` {.screen}
     $ curl -s -L http://sh.opencenter.rackspace.com/install.sh | <br>
         sudo bash -s - --role=dashboard --ip=<OpenCenter-server-IP>
-    ~~~~
+    ```
 
 -   dnsmasq configuration has been updated so that instances can use a
     different DNS server. (nova issue \#255, chef issue \#12)
@@ -100,8 +102,8 @@ reflect these changes.
     fully-qualified domain name for compatibility with OpenStack Nova.
     (opencenter issue \#445, opencenter-agent issue \#221)
 
--   HTTP proxy is now supported correctly. (opencenter-agent issue
-    \#207)
+-   HTTP proxy is now supported correctly. (opencenter-agent
+    issue \#207)
 
 -   Logs on the OpenCenter agent have been improved, and you can now
     include a `--debug` flag for logs. (opencenter-client issues \#60
@@ -109,16 +111,16 @@ reflect these changes.
 
 -   When `OPENCENTER_ENDPOINT`{.filename} is not set, the error message
     now indicates the correct endpoint URL:
-    `https://user:pass@localhost:8443`{.uri}. (opencenter-client issue
-    \#48)
+    `https://user:pass@localhost:8443`{.uri}. (opencenter-client
+    issue \#48)
 
 -   The node move command is now used to move a node from one container
     to another (opencenter-client issue \#51). The syntax for moving a
     node is:
 
-    ~~~~ {.screen}
+    ``` {.screen}
     $ opencentercli node move node_id_or_name container_node_id_or_name
-    ~~~~
+    ```
 
 -   Issues where the OpenCenter server might not appear in the Service
     Nodes container have been resolved. (opencenter issue \#433)
@@ -139,11 +141,12 @@ reflect these changes.
 -   An issue where an installation on RHEL 6.4 could use the Ubuntu
     package has been resolved. (opencenter-install-scripts issue \#123)
 
--   The OHAI passwd plugin has been disabled to prevent performance
-    problems. (opencenter issue \#436, opencenter-agent issue \#208)
+-   The OHAI passwd plugin has been disabled to prevent
+    performance problems. (opencenter issue \#436, opencenter-agent
+    issue \#208)
 
--   Issues that could prevent a successful host evacuation have been
-    resolved. (opencenter-agent issues \#203, \#204)
+-   Issues that could prevent a successful host evacuation have
+    been resolved. (opencenter-agent issues \#203, \#204)
 
- 
+
 

@@ -2,10 +2,10 @@
 node_id: 1504
 title: Importing data into Cloud Databases
 type: article
-created_date: '2012-07-24 00:29:31'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-06 17:1240'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-06'
+last_modified_by: Cat Lookabaugh
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -25,7 +25,7 @@ The import process includes the following steps:
     something like this:
 
 ![Database
-Hostname](http://c691244.r44.cf2.rackcdn.com/Hostname%20of%20Database.png)
+Hostname](http://c691244.r44.cf2.rackcdn.com/Hostname%20of%20Database.png){width="600"}
 
 3.  On the machine where your existing database is currently located,
     run the following MySQL command to export your database:

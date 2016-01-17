@@ -2,10 +2,10 @@
 node_id: 4730
 title: 'Information for new PHP 5.6 & Apache version'
 type: article
-created_date: '2015-06-25 20:57:44'
-created_by: alonzo.garza
-last_modified_date: '2016-01-04 16:0502'
-last_modified_by: Nate.Archer
+created_date: '2015-06-25'
+created_by: Alonzo Garza
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -26,7 +26,7 @@ potential site break changes that may occur on your sites.
 -   **Early Q3 2015** &ndash; PHP 5.6 test links will be available for all
     customers to begin testing. See below.
 -   **Late Q3 2015** &ndash; PHP 5.6 will be available for provisioning.
--   **Late Q3 2015**- PHP 5.3/5.4 clusters will be updated to PHP 5.6
+-   **Late Q3 2015** - PHP 5.3/5.4 clusters will be updated to PHP 5.6
 
 #### **Access Control (.htaccess) Updates**
 
@@ -48,26 +48,25 @@ configurations, the new module
 [mod\_access\_compat](http://httpd.apache.org/docs/2.4/mod/mod_access_compat.html)
 is provided.
 
--   See
-    link [http://httpd.apache.org/docs/2.4/upgrading.html\#run-time](http://httpd.apache.org/docs/2.4/upgrading.html#run-time)
+-   See link <http://httpd.apache.org/docs/2.4/upgrading.html#run-time>
 
 **Server Side Includes**
 
 Sites implementing legacy SSI syntax will need to update to the new
 Apache syntax or enable SSILegacyExprParser via .htaccess:
 
-     SSILegacyExprParser on 
+     SSILegacyExprParser on
 
 See:
 
--   [http://httpd.apache.org/docs/2.4/mod/mod\_include.html\#ssilegacyexprparser](http://httpd.apache.org/docs/2.4/mod/mod_include.html#ssilegacyexprparser)
--   [http://httpd.apache.org/docs/2.4/expr.html](http://httpd.apache.org/docs/2.4/expr.html)
+-   <http://httpd.apache.org/docs/2.4/mod/mod_include.html#ssilegacyexprparser>
+-   <http://httpd.apache.org/docs/2.4/expr.html>
 
 **What is not changing?**
 -------------------------
 
 -   No website DNS changes will be required.
--   FTP services will not change.  
+-   FTP services will not change.
 
 **How does this affect me?**
 ----------------------------
@@ -75,22 +74,50 @@ See:
 Given the changes from PHP 5.3 / 5.4 to 5.6 (to include the upgrade from
 Apache 2.2 to 2.4), we ask that customers view the provided links for
 common break changes. We ask that all customers use the provided test
-links below to verify application compatibility. 
+links below to verify application compatibility.
 
 **Example link for DFW1-1:**
 
 If your site is [www.example.com](http://www.example.com), the test link
 for your site on PHP 5.6 will be
-[http://www.example.com.php56-\<cluster\>.dfw1-1.websitetestlink.com](http://www.example.com.php56-testing.ord1-1.websitetestlink.com)
+[http://www.example.com.php56-&lt;cluster&gt;.dfw1-1.websitetestlink.com](http://www.example.com.php56-testing.ord1-1.websitetestlink.com)
 
 Replace the 53 or 54 with 56 to use the new testlink.
 
-  Example Current Testlink URL                                 Example NEW Testlink URL
-  ------------------------------------------------------------ ------------------------------------------------------------
-  www.yoursite.com.php53-10*.***dfw1-1**.websitetestlink.com   www.yoursite.com.php56-10*.***dfw1-1**.websitetestlink.com
-  www.yoursite.com.php54-1*.***dfw1-1**.websitetestlink.com    www.yoursite.com.php56-1*.***dfw1-1**.websitetestlink.com
-  www.yoursite.com.php53-10*.***dfw1-2**.websitetestlink.com   www.yoursite.com.php56-10*.***dfw1-2**.websitetestlink.com
-  www.yoursite.com.php54-1*.***dfw1-2**.websitetestlink.com    www.yoursite.com.php56-1*.***dfw1-2**.websitetestlink.com
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><div class="tablesorter-header-inner">
+Example Current Testlink URL
+</div></th>
+<th align="left"><div class="tablesorter-header-inner">
+Example NEW Testlink URL
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span>www.yoursite.com.php53-10</span><em>.</em><strong>dfw1-1</strong><span>.websitetestlink.com</span></td>
+<td align="left">www.yoursite.com.php56-10<em>.</em><strong>dfw1-1</strong>.websitetestlink.com</td>
+</tr>
+<tr class="even">
+<td align="left"><span>www.yoursite.com.php54-1</span><em>.</em><strong>dfw1-1</strong><span>.websitetestlink.com</span></td>
+<td align="left"><span>www.yoursite.com.php56-1</span><em>.</em><strong>dfw1-1</strong><span>.websitetestlink.com</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span>www.yoursite.com.php53-10</span><em>.</em><strong>dfw1-2</strong><span>.websitetestlink.com</span></td>
+<td align="left">www.yoursite.com.php56-10<em>.</em><strong>dfw1-2</strong>.websitetestlink.com</td>
+</tr>
+<tr class="even">
+<td align="left"><span>www.yoursite.com.php54-1</span><em>.</em><strong>dfw1-2</strong><span>.websitetestlink.com</span></td>
+<td align="left"><span>www.yoursite.com.php56-1</span><em>.</em><strong>dfw1-2</strong><span>.websitetestlink.com</span></td>
+</tr>
+</tbody>
+</table>
 
 **\*\*\*The above test links will be used until the environment has been
 made fully available, at which point they will be updated.\*\*\***
@@ -101,7 +128,7 @@ support HTTPS.*
 **FAQ**
 -------
 
-**Is this Apache version fixing CVE \#\#\#?**
+[]()**Is this Apache version fixing CVE \#\#\#?**
 
 -   The version of Apache has been updated to 2.4 along with all of its
     relevant CVE updates.
@@ -123,14 +150,14 @@ when utilizing the updated test links. What may have occurred?**
 **Related Topics**
 
 -   [Important scheduled maintenance: DFW environment
-    migration](http://rackspace.com/knowledge_center/article/important-scheduled-maintenance-dfw-environment-migration)
+    migration](/howto/important-scheduled-maintenance-dfw-environment-migration)
 -   [Information for Customer IPs &
-    DNS](http://rackspace.com/knowledge_center/article/information-for-customer-ips-dns-0)
+    DNS](/howto/information-for-customer-ip-addresses-and-dns)
 -   [Information for MS SQL
-    changes](http://rackspace.com/knowledge_center/article/information-for-ms-sql-changes)
--   [Information for MySQL Users (MariaDB
-    10.0)](http://rackspace.com/knowledge_center/article/information-for-mysql-users-mariadb-100-0)
--   [Information for new PHP 5.6 & Apache
-    version****](http://rackspace.com/knowledge_center/article/information-for-new-php-56-apache-version-0)
+    changes](/howto/information-for-ms-sql-changes)
+-   [Information for MySQL Users
+    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
+-   [Information for new PHP 5.6 & Apache version
+    ****](/howto/information-for-new-php-56-apache-version-0)
 
 

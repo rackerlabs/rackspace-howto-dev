@@ -2,10 +2,10 @@
 node_id: 699
 title: 'Use cron to extract and compress (zip & unzip) on Cloud Sites'
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 14:4910'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -36,15 +36,15 @@ for the operation you wish to accomplish:
 -   Compressing: [zip](#zip) or [tar](#tar)
 -   Decompressing: [unzip](#unzip) or [tar](#untar)
 
-Once complete, save the file with the **.sh** extension. 
+Once complete, save the file with the **.sh** extension.
 
-### I. Compressing
+### <span>I. Compressing</span>
 
-**Suggested Filename:***compress.sh*
+**Suggested Filename:** *compress.sh*
 
-#### 
+#### []()
 
-**NOTE:**For these examples make sure to replace "/SOURCE/DIRECTORY/"
+**NOTE:** For these examples make sure to replace "/SOURCE/DIRECTORY/"
 and "/DESTINATION DIRECTORY" with the appropriate Web directories (like
 "/mnt/stor1-wc1-dfw1/123456/www.example.com/web/content/archives/").
 
@@ -53,25 +53,26 @@ and "/DESTINATION DIRECTORY" with the appropriate Web directories (like
 To compress a directory to zip format add these lines to the script:
 
     #!/bin/sh
-    zip -9pr /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/  
+    zip -9pr /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/
 
 Where "file.zip" is the name that you assign to the zip file.
 
 The final script should look similar to this:
 
-![](/knowledge_center/sites/default/files/field/image/Zip_script_visual.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png){width="709"
+height="142"}
 
-**Note:***If you're only compressing a single file the script would be
+**Note:** *If you're only compressing a single file the script would be
 similar, but would not require the "r" in the options.*
 
 *For example:*
 
     #!/bin/sh
-    zip -9p /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/targetfile.txt 
+    zip -9p /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/targetfile.txt
 
-#### 
+#### []()
 
-###  
+###
 
 ### Tar.gz compression
 
@@ -79,34 +80,36 @@ Put this in the script to archive and compress a directory into a
 gzipped tar format:
 
     #!/bin/sh
-    tar -cvzf /DESTINATION/DIRECTORY/file.tar.gz /SOURCE/DIRECTORY/   
+    tar -cvzf /DESTINATION/DIRECTORY/file.tar.gz /SOURCE/DIRECTORY/
 
 Where "file.tar.gz" is the name that you assign to the compressed file.
 
 The final script should look similar to this:
 
-![](/knowledge_center/sites/default/files/field/image/Zip_script_visual.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png){width="727"
+height="145"}
 
-### II. Extracting
+### <span>II. Extracting</span>
 
-#### 
+#### []()
 
-**Suggested Filename:***decompress.sh*
+**Suggested Filename:** *decompress.sh*
 
 #### Zip extraction
 
 Add these lines to decompress from zip format:
 
-    #!/bin/sh                                           
+    #!/bin/sh
     unzip -o /SOURCE/DIRECTORY/file.zip -d /DESTINATION/DIRECTORY/
 
 Where "file.zip" is the name of the zip file to be uncompressed.
 
 The final script should look similar to this:
 
-![](/knowledge_center/sites/default/files/field/image/Unzip_script_visual_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Unzip_script_visual_0.png){width="717"
+height="138"}
 
-#### 
+#### []()
 
 (**NOTE: the -o option will force unzip to overwrite existing files!**)
 
@@ -116,23 +119,27 @@ Where "file.tar" is the name that you assign to the compressed file.
 
 Put this in the script to extract from tar format:
 
-    #!/bin/sh  
+    #!/bin/sh
     tar -xvzf /SOURCE/DIRECTORY/file.tar.gz -C /DESTINATION/DIRECTORY/
 
 Where "file.tar.gz" is the name of the compressed file.
 
 The final script should look similar to this:
 
-![](/knowledge_center/sites/default/files/field/image/Untar_script_visual.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Untar_script_visual.png){width="712"
+height="136"}
 
 ### Cron FAQ's:
 
 [What is a cron
-job?](/knowledge_center/index.php/What_is_a_cron_job "What is a cron job?")
+job?](/howto/what-is-a-cloud-sites-cron-job "What is a cron job?"){.external
+.free}
 
 [How do I enable or disable
-cron?](/knowledge_center/index.php/How_do_I_enable/disable_a_cron_job "How do I enable or disable cron?")
+cron?](/howto/enable-or-disable-a-cloud-sites-scheduled-task-cron-job "How do I enable or disable cron?"){.external
+.free}
 
 [How do I schedule a cron
-job?](/knowledge_center/index.php/How_do_I_schedule_a_cron_job "How do I schedule a cron job?")
+job?](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites "How do I schedule a cron job?"){.external
+.free}
 

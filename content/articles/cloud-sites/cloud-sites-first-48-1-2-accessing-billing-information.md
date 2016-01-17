@@ -2,10 +2,10 @@
 node_id: 1243
 title: 'Getting Started with Cloud Sites: Accessing billing information'
 type: article
-created_date: '2011-11-08 18:27:48'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-24 19:1737'
-last_modified_by: kyle.laffoon
+created_date: '2011-11-08'
+created_by: Rackspace Support
+last_modified_date: '2015-12-24'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -18,9 +18,9 @@ of the window and selecting **Cloud Sites**.
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
+
 
 After logging in to the Control Panel, you might be wondering about how
 billing for our Cloud Services works.
@@ -30,18 +30,18 @@ when you first sign up for the account.  Your 30-day billing cycle
 begins on the day that you activate your account.  After 30 days have
 elapsed, you will then be billed for the next month of service. The
 exact amount may vary as it is based on recurring charges in addition to
-whatever one-time fees you have incurred during the previous month. 
+whatever one-time fees you have incurred during the previous month.
 
 This article will provide you with an overview of the billing resources
 available to you through our website and your Control Panel.  You can
 use the following resources to help you manage and track the billing for
-your account: 
+your account:
 
 ### Pricing pages and cost calculator
 
 Each of the product pages on our website contains the most current
 pricing list, and each also has a cost calculator to assist you in
-estimating your monthly charges.  
+estimating your monthly charges.
 
 -   [Cloud Servers](http://www.rackspace.com/cloud/servers/)
 -   [Cloud Load
@@ -52,12 +52,13 @@ estimating your monthly charges.
 ### Reports
 
 In the Cloud Sites Control Panel, you can access usage data by clicking
-**Your Account** **\> Reports** in the left navigation pane.
+**Your Account** **&gt; Reports** in the left navigation pane.
 The **Reports** section opens to the **Usage Data** tab, as shown in the
-following figure.<br>
-  
+following figure.
 
-![](/knowledge_center/sites/default/files/field/image/1243.1.png)
+
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1243.1.png){width="1149"
+height="704"}
 
 The **Usage Data** tab displays a usage summary for your account during
 the current billing period, up to 48 hours prior to the the current day.
@@ -72,27 +73,30 @@ the current billing period, up to 48 hours prior to the the current day.
     bandwidth, and compute cycles. Clicking on the column titles will
     sort the information below.
 
-![](/knowledge_center/sites/default/files/field/image/1243.1.1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1243.1.1.png){width="914"
+height="513"}
 
 ### Billing
 
 You can access billing information for Cloud Sites by clicking **Your
-Account** **\> Billing** in the Cloud Sites Control Panel. This action
+Account** **&gt; Billing** in the Cloud Sites Control Panel. This action
 opens the **Billing & Payments** section of the Cloud Control Panel.
 This section displays important information like your total outstanding
 balance, the date of your most recent invoice, and which credit card is
 being used for payments on the account.
 
-![](/knowledge_center/sites/default/files/field/image/1243.3.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1243.3.png){width="531"
+height="468"}
 
--   The **Recent Activity** section lists a summary of your most recent
-    invoice. This summary includes the date and amount of your most
-    recent invoice and your current balance.
--   In the **Payment Information**section, you can update your billing
+-   The **Recent Activity** section lists a summary of your most
+    recent invoice. This summary includes the date and amount of your
+    most recent invoice and your current balance.
+-   In the **Payment Information** section, you can update your billing
     information and change the credit card attached to the account.
--   The **Billing History** section displays a summary of your invoice
-    history. Click an ID number for an invoice to view additional
-    information or download the invoice in your preferred format.
+-   The **Billing History** section displays a summary of your
+    invoice history. Click an ID number for an invoice to view
+    additional information or download the invoice in your
+    preferred format.
 
 ### Support
 
@@ -111,5 +115,5 @@ Rackspace ***Fanatical Support***&reg;.
 ### Next section
 
 [Getting Fanatical
-Support](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-getting-fanatical-support)
+Support](/howto/getting-started-with-cloud-sites-getting-fanatical-support)
 

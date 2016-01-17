@@ -2,10 +2,10 @@
 node_id: 99
 title: Disable caching on Cloud Sites
 type: article
-created_date: '2011-03-09 18:49:15'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-06 14:5608'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-09'
+created_by: Rackspace Support
+last_modified_date: '2015-05-06'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -30,7 +30,7 @@ Disable caching by using .htaccess (Linux technology only)
                    </FilesMatch>
               </IfModule>
     </IfModule>
-     
+
 
 Disable caching by using web.config (Windows technology only)
 -------------------------------------------------------------

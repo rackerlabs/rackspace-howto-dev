@@ -2,18 +2,18 @@
 node_id: 1282
 title: Microsoft Exchange public folders
 type: article
-created_date: '2012-02-06 18:08:12'
-created_by: RackKCAdmin
-last_modified_date: '2014-12-24 21:5046'
-last_modified_by: theresa.kinney
-product: Exchange
+created_date: '2012-02-06'
+created_by: Rackspace Support
+last_modified_date: '2016-01-15'
+last_modified_by: Kyle Laffoon
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
 Public folders are a feature of Microsoft Exchange that are used to
 share information with others within your organization.  Public folder
 administrators can set privileges for users to access a folder, or the
-folder can be made available to everyone within your organization. 
+folder can be made available to everyone within your organization.
 Public folders contain contacts, calendar items, messages, journal
 entries, or notes.
 
@@ -28,12 +28,12 @@ environment:
 
 -   [Add folders to your public dolders and assign permissions](#d)
 
-Enable public folders from within the control panel
----------------------------------------------------
+[]()Enable public folders from within the control panel
+-------------------------------------------------------
 
 1.  Log in to your Cloud Office Control Panel and select **Microsoft
     Exchange** from the **Go To Section** menu.
-2.  Select the **Enable Public****Folde****r** link to Set up your
+2.  Select the **Enable Public** **Folder** link to Set up your
     public folder.
 3.  Select an administrator for your public folders by selecting any
     mailbox in your control panel and the **Public folder admin** option
@@ -43,8 +43,8 @@ Enable public folders from within the control panel
 minutes to complete. You must close and reopen Outlook to see your new
 public folder.
 
-Access your public folders within your email client
----------------------------------------------------
+[]()Access your public folders within your email client
+-------------------------------------------------------
 
 You can access public folders from email clients on both Windows and
 Mac. Following are instructions for  accessing public folders through
@@ -54,9 +54,13 @@ Outlook and Entourage.
 
 1.  Open Outlook and log in to your email account.
 
+<!-- -->
+
 2.  In the navigation pane, click the **Folder List** icon.
 
-3.  Expand **Public Folders** \> **All Public Folders**, the root
+<!-- -->
+
+3.  Expand **Public Folders** &gt; **All Public Folders**, the root
     folder, and your domain.
 
 **Entourage 2008**
@@ -71,8 +75,8 @@ Outlook and Entourage.
 2.  From the **Tools** menu, select **Public Folders** and within the
     Folder Browser select the root folder and your domain.
 
-Add folders to your public folders and assign permissions
----------------------------------------------------------
+[]()Add folders to your public folders and assign permissions
+-------------------------------------------------------------
 
 **Create a public folder**:
 
@@ -89,22 +93,22 @@ Add folders to your public folders and assign permissions
 3.  Click **Add**, select the member you want to grant permission, and
     then click **Add**  again.
 4.  Select the permission type that will work best for the user.
-      ------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      **Permission**      **Description**
-      Owner               Create, read, modify, and delete all items and files, and create subfolders. Folder owners can change the permission levels that other people have for the folder.
-      Publishing Editor   Create, read, modify, and delete all items and files, and create subfolders.
-      Editor              Create, read, modify, and delete all items and files.
-      Publishing Author   Create and read items and files, create subfolders, and modify and delete items and files that you create.
-      Author              Create and read items and files, and modify and delete items and files that you create.
-      Nonediting Author   Create and read items and files, and delete items and files that you create.
-      Contributor         Create items and files only.
-      Reviewer            Read items and files only.
-      Custom              Perform activities defined by the folder owner.
-      None                You have no permission. You cannot open the folder.
-      ------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    |                   |                                                                                                                                                                    |
+    |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | **Permission**    | **Description**                                                                                                                                                    |
+    | Owner             | Create, read, modify, and delete all items and files, and create subfolders. Folder owners can change the permission levels that other people have for the folder. |
+    | Publishing Editor | Create, read, modify, and delete all items and files, and create subfolders.                                                                                       |
+    | Editor            | Create, read, modify, and delete all items and files.                                                                                                              |
+    | Publishing Author | Create and read items and files, create subfolders, and modify and delete items and files that you create.                                                         |
+    | Author            | Create and read items and files, and modify and delete items and files that you create.                                                                            |
+    | Nonediting Author | Create and read items and files, and delete items and files that you create.                                                                                       |
+    | Contributor       | Create items and files only.                                                                                                                                       |
+    | Reviewer          | Read items and files only.                                                                                                                                         |
+    | Custom            | Perform activities defined by the folder owner.                                                                                                                    |
+    | None              | You have no permission. You cannot open the folder.                                                                                                                |
 
-<br>
- **Note**: You might see a few groups on the **Permissions** tab, and
+
+**Note**: You might see a few groups on the **Permissions** tab, and
 that is normal. It is important to leave these groups intact so that we
 can help you if you need help. There are also two special groups called
 FolderAdmins and FolderUsers. These groups allow you to set permissions

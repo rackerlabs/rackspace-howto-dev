@@ -2,10 +2,10 @@
 node_id: 1488
 title: Create an image of a General Purpose v1 Cloud Server
 type: article
-created_date: '2012-07-24 00:05:42'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 19:3922'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -15,7 +15,7 @@ Purpose v1 Cloud Server. You can also schedule a daily image for your
 Cloud Servers using the Cloud Control Panel. If you are interested in
 creating an image of a virtual cloud server, see [Creating an Image of
 Your Performance Flavor Server with the Control
-Panel](http://www.rackspace.com/knowledge_center/article/creating-an-image-of-your-performance-flavor-server-with-the-control-panel).
+Panel](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 **NOTE**: This is an optional service that incurs storage and bandwidth
 charges on Cloud Files, however the convenience of easily restoring a
@@ -31,7 +31,8 @@ scheduling the creation of server images.
 3.  Click the **Actions** cog to the left of the server name and
     select **Create Image**. A pop-up appears so you can name the image.
 
-    ![](/knowledge_center/sites/default/files/field/image/CreateImage.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CreateImage.png){width="175"
+    height="386"}
 
 4.  (Optional) Enter a new image name in the pop-up for the image. If
     you don't enter a name, the server name is used as the image name.
@@ -50,9 +51,10 @@ or to restore the server.
 Alternatively you can create an on-demand image using
 the **Actions** menu from the details page of a specific server:
 
-![](/knowledge_center/sites/default/files/field/image/ImageMenu2.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ImageMenu2.png){width="546"
+height="309"}
 
- 
+
 -
 
 Locate a Saved Image

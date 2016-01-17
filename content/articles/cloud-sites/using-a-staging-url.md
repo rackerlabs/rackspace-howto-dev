@@ -2,10 +2,10 @@
 node_id: 700
 title: Using a staging URL
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2014-08-25 03:3537'
-last_modified_by: rose.contreras
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2014-08-25'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ body_format: tinymce
 Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.*<br>
+and selecting Cloud Sites Control Panel.*
 *
 
 **Prerequisite**
@@ -23,13 +23,14 @@ and selecting Cloud Sites Control Panel.*<br>
 
 **Procedure**
 
--   Navigate to Hosting-\>Cloud Sites, from the list of domains click on
-    the hyperlink of the domain and select **General Settings** tab
+-   Navigate to Hosting-&gt;Cloud Sites, from the list of domains click
+    on the hyperlink of the domain and select **General Settings** tab
 -   Scroll down to the Viewing and Editing section and check the testing
     URL link, this identifies the technology, cluster and data center
     used for this website.
 
-![](/knowledge_center/sites/default/files/field/image/staging_url.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/staging_url.png){width="401"
+height="45"}
 
 -   All content and code uploaded to the site can now be accessed with
     the test or staging url

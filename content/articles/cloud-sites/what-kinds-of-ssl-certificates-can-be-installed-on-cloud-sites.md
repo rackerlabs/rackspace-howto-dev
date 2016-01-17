@@ -2,15 +2,17 @@
 node_id: 117
 title: Supported SSL certificates on Cloud Sites
 type: article
-created_date: '2011-03-10 17:24:46'
-created_by: RackKCAdmin
-last_modified_date: '2015-11-06 19:5432'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-10'
+created_by: Rackspace Support
+last_modified_date: '2015-11-06'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
 
 The following SSL certificates are supported on Cloud Sites:
+
+<div>
 
 -   Apache + OpenSSL (PEM format).
 -   Single Root Level certificates.Chained Root SSL certificates.
@@ -24,11 +26,12 @@ The following SSL certificates are supported on Cloud Sites:
     to be provided by the issuer. See the following section for
     installation information.
 
-**Note:** Cloud Sites does not support self-signed SSL certificates.
+**Note:**<span> Cloud Sites does not support self-signed SSL
+certificates.</span>
 
- 
 
-Installing EV, multi-domain or wildcard certificates {.Syntax}
+
+Installing EV, multi-domain or wildcard certificates {#installing-ev-multi-domain-or-wildcard-certificates .Syntax}
 ----------------------------------------------------
 
 When you install EV, multi-domain or wildcard certificates, the
@@ -38,7 +41,8 @@ visit https://www.sslshopper.com/certificate-decoder.html and enter the
 certificate. The information is displayed as shown in the following
 example:
 
-![](/knowledge_center/sites/default/files/field/image/cert_info.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cert_info.png){width="595"
+height="259"}
 
 After installation you must point the DNS records of any domains in the
 **Subject Alternative Names** field to the IP address provided for the
@@ -50,5 +54,7 @@ Support team to help complete the installation.
 For instruction on how to install an SSL certificate for your website on
 Cloud Sites, see [Getting started with Cloud Sites: Configuring SSL on
 your
-websites](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
+websites](/howto/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
+
+</div>
 

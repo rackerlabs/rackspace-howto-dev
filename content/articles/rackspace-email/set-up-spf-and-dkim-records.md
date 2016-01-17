@@ -2,10 +2,10 @@
 node_id: 1499
 title: Set Up SPF and DKIM Records
 type: article
-created_date: '2012-07-24 00:17:26'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 20:5102'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -23,8 +23,8 @@ For instructions on how to create DNS TXT Records for DKIM and SPF, see
 the following articles:
 
 [Creating a DKIM TXT
-Record](http://www.rackspace.com/knowledge_center/node/2407 "Creating a DKIM TXT Record")
+Record](/howto/create-a-dkim-txt-record "Creating a DKIM TXT Record")
 
 [Creating a SPF TXT
-Record](http://www.rackspace.com/knowledge_center/node/2408 "Creating a SPF TXT Record")
+Record](/howto/create-an-spf-txt-record "Creating a SPF TXT Record")
 

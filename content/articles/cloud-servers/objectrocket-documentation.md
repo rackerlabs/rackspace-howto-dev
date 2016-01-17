@@ -2,10 +2,10 @@
 node_id: 3516
 title: ObjectRocket Documentation
 type: article
-created_date: '2013-06-06 23:24:19'
-created_by: jered.heeschen
-last_modified_date: '2014-03-13 19:2952'
-last_modified_by: ross.diaz
+created_date: '2013-06-06'
+created_by: Jered Heeschen
+last_modified_date: '2014-03-13'
+last_modified_by: Ross Diaz
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -92,11 +92,11 @@ with the ObjectRocket service. The ObjectRocket API makes it very easy
 to query the service for data and metadata for various things like
 monitoring or performance tools.
 
--   **Rocketstat** - Rocketstat is a clone of the popular mongostat
-    utility. This utility show various performance metrics about the
-    ObjectRocket instance.
--   **Rockettop** - RocketTop is a real-time statistics viewer for
-    ObjectRocket.
+-   **Rocketstat** - Rocketstat is a clone of the popular
+    mongostat utility. This utility show various performance metrics
+    about the ObjectRocket instance.
+-   **Rockettop** - RocketTop is a real-time statistics viewer
+    for ObjectRocket.
 
 Learn more about the tools and get access to their Github repos on [the
 Tools page](http://docs.objectrocket.com/tools.html).
@@ -111,7 +111,7 @@ Support
 
 If you have an issue, you can [submit a
 ticket](https://objectrocket.zendesk.com/home) or send ObjectRocket an
-email at [support@objectrocket.com](mailto:support@objectrocket.com).
+email at <support@objectrocket.com>.
 
 Get Started - Get an Account!
 -----------------------------

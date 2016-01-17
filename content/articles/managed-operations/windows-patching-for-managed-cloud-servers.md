@@ -2,10 +2,10 @@
 node_id: 508
 title: Windows Patches for Cloud Servers with a Managed Operations Service Level
 type: article
-created_date: '2011-04-04 16:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:3532'
-last_modified_by: Nate.Archer
+created_date: '2011-04-04'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Managed Operations
 body_format: markdown_w_tinymce
 ---
@@ -44,7 +44,7 @@ While you are opted in to the Rackspace Managed Windows Patching service, the fo
 	 "AcceptTrustedPublisherCerts"=dword:00000001
 	 "WUServer"="http://microsoftupdate.dfw1.rackspace.com"
 	 "WUStatusServer"="http://microsoftupdate.dfw1.rackspace.com"
-	 
+
      [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\windows\WindowsUpdate\AU]
 	 "AUOptions"=dword:00000004 "AutoInstallMinorUpdates"=dword:00000000
 	 "DetectionFrequency"=dword:00000016 "DetectionFrequencyEnabled"=dword:00000001
@@ -56,10 +56,10 @@ While you are opted in to the Rackspace Managed Windows Patching service, the fo
 
 You must set the Windows Updates service to automatically start. To do so, perform the following steps:
 
-1.	Open a PowerShell command prompt and run the following commands: 
-		
+1.	Open a PowerShell command prompt and run the following commands:
+
 		Setting wuauserv Service to Auto
-		
+
 		Set-Service -Name wuauserv -StartupType Automatic
 
 2.	Ensure that the wuauserv service is running:

@@ -2,10 +2,10 @@
 node_id: 389
 title: Migrating a Linux Server From the Command Line
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: jered.heeschen
-last_modified_date: '2015-12-30 15:0830'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Jered Heeschen
+last_modified_date: '2015-12-30'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: full_html
 ---
@@ -53,7 +53,7 @@ For a Cloud Server you can put the instance into rescue mode via
 the [Cloud Control
 Panel](https://mycloud.rackspace.com "Next-Gen Cloud Control Panel").
 For more information on rescue mode see [this
-article](/knowledge_center/node/3295 "How to use rescue mode").
+article](/howto/rescue-mode "How to use rescue mode").
 
 Once the server is in rescue mode remember that the SSH key for the host
 will have changed, so you&rsquo;ll probably need to delete the server&rsquo;s key

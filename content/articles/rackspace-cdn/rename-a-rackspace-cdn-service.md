@@ -2,36 +2,37 @@
 node_id: 4664
 title: Rename a Rackspace CDN service
 type: article
-created_date: '2015-05-11 16:01:54'
-created_by: catherine.richardson
-last_modified_date: '2015-05-18 16:4417'
-last_modified_by: kyle.laffoon
+created_date: '2015-05-11'
+created_by: Catherine Richardson
+last_modified_date: '2015-05-18'
+last_modified_by: Kyle Laffoon
 product: Rackspace CDN
 body_format: tinymce
 ---
 
 To rename a service in Rackspace CDN, follow these steps:
 
-1. Access Rackspace CDN as described in [Access Rackspace
-CDN](https://www.rackspace.com/knowledge_center/article/access-rackspace-cdn).
+1\. Access Rackspace CDN as described in [Access Rackspace
+CDN](/howto/access-rackspace-cdn).
 
-2. In the list of CDN services, click the gear icon beside the service
+2\. In the list of CDN services, click the gear icon beside the service
 that you want to rename and select **Rename Service**.
 
-3. In the popup dialog box, enter the new name for the service and then
+3\. In the popup dialog box, enter the new name for the service and then
 click **Rename Service**.
 
-![](/knowledge_center/sites/default/files/field/image/RenameService.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RenameService.png){width="380"
+height="120"}
 
- 
 
-#### [\< Enable or disable logging in Rackspace CDN](https://www.rackspace.com/knowledge_center/article/enable-or-disable-logging-in-rackspace-cdn)    -    [Purge a file from a Rackspace CDN service \>](https://www.rackspace.com/knowledge_center/article/purge-a-file-from-a-rackspace-cdn-service)
 
- 
+#### [&lt; Enable or disable logging in Rackspace CDN](/howto/enable-or-disable-logging-in-rackspace-cdn)    -    [Purge a file from a Rackspace CDN service &gt;](/howto/refresh-content-in-a-rackspace-cdn-service)
 
- 
 
- 
 
- 
+
+
+
+
+
 

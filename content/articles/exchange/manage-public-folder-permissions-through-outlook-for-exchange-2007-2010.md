@@ -2,11 +2,11 @@
 node_id: 4462
 title: Working with public folders through Outlook for Exchange 2007 and 2010
 type: article
-created_date: '2014-12-12 15:58:38'
-created_by: theresa.kinney
-last_modified_date: '2016-01-14 01:2933'
-last_modified_by: rose.coste
-product: Exchange
+created_date: '2014-12-12'
+created_by: Theresa Kinney
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
+product: Microsoft Exchange
 body_format: tinymce
 ---
 
@@ -18,15 +18,19 @@ Outlook and Entourage.
 
 1.  Open Outlook and log in to your email account.
 
+<!-- -->
+
 2.  In the navigation pane, click **Folder List**.
 
-3.  Expand **Public Folders** \> **All Public Folders**, the root
+<!-- -->
+
+3.  Expand **Public Folders** &gt; **All Public Folders**, the root
     folder, and your domain.
 
 **Entourage 2008**
 
 1.  Open Entourage and log in to your email account.
-2.  In the navigation pane, expand **Public Folders** \> **All Public
+2.  In the navigation pane, expand **Public Folders** &gt; **All Public
     Folders**, the root folder, and finally your domain.
 
 **Outlook 2011 for Mac**
@@ -43,8 +47,8 @@ assigning permissions, as needed.
 
 **Create a public folder**:
 
-1.  Follow the steps in the preceding section to access your public
-    folders.
+1.  Follow the steps in the preceding section to access your
+    public folders.
 2.  Right-click on your domain and select **New Folder**.
 
 **Assign permissions to a public folder**
@@ -68,11 +72,11 @@ once.
         levels that other people have for the folder.
     -   **Publishing Editor**: Create, read, modify, and delete all
         items and files, and create subfolders.
-    -   **Editor**: Create, read, modify, and delete all items and
-        files.
+    -   **Editor**: Create, read, modify, and delete all items
+        and files.
     -   **Publishing Author**: Create and read items and files, create
-        subfolders, and modify and delete items and files that you
-        create.
+        subfolders, and modify and delete items and files that
+        you create.
     -   **Author**: Create and read items and files, and modify and
         delete items and files that you create.
     -   **Nonediting Author**: Create and read items and files, and
@@ -85,5 +89,5 @@ once.
 ### Where to go from here
 
 [Manage public folders in the control panel for Hosted Exchange 2007 and
-2010](https://www.rackspace.com/knowledge_center/article/manage-public-folders-in-the-control-panel-for-hosted-exchange-2007-and-2010)
+2010](/howto/manage-public-folders-in-the-control-panel-for-hosted-exchange-2007-and-2010)
 

@@ -2,23 +2,22 @@
 node_id: 3230
 title: Streaming Cloud Files with JW Player
 type: article
-created_date: '2012-12-05 18:09:48'
+created_date: '2012-12-05'
 created_by: David Hendler
-last_modified_date: '2016-01-06 19:4632'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-06'
+last_modified_by: Rose Contreras
 product: Cloud Files
 body_format: tinymce
 ---
 
 Cloud Files supports the JW Player for streaming video files. We also
 support
-[FlowPlayer](http://www.rackspace.com/knowledge_center/article/cloud-files-streaming-with-flowplayer-plugins)
+[FlowPlayer](/howto/cloud-files-streaming-with-flowplayer-plugins)
 and
-[OSMF](http://www.rackspace.com/knowledge_center/article/cloud-files-streaming-with-osmf-plugins).
+[OSMF](/howto/cloud-files-streaming-with-osmf-plugins).
 
 The JW Player has a commercial license, which means you must purchase it
-from Longtail video:
-[http://www.longtailvideo.com/order](http://www.longtailvideo.com/order).
+from Longtail video: <http://www.longtailvideo.com/order>.
 
 Supported media formats for JW Player:
 
@@ -31,25 +30,25 @@ Video:
 
 -   Streaming with ability to jump around: MP4, MOV, and FLV
 
- 
+
 
 Upload JW Player 6
 ------------------
 
-1. Download the JW Player from
+1\. Download the JW Player from
 [www.longtailvideo.com/jw-player/](http://www.longtailvideo.com/jw-player/ "Get the JW Player").
 
-2. Unzip the file and upload it to a Cloud Files container.<br>
- **Note:** You may choose to upload the player in the container that
+2\. Unzip the file and upload it to a Cloud Files container.
+**Note:** You may choose to upload the player in the container that
 holds your media or in another container.
 
-3. Download the [Akamai Advanced JW Player Provider plugin
+3\. Download the [Akamai Advanced JW Player Provider plugin
 files](http://mediapm.edgesuite.net/jw/) for JW Player 6.
 
-4. Unzip the plugin files and upload them to the same container as the
+4\. Unzip the plugin files and upload them to the same container as the
 JW Player.
 
-5. Confirm that the container that holds your player and plugin are
+5\. Confirm that the container that holds your player and plugin are
 CDN-Enabled. If it is not, you may enable it through the Cloud Control
 Panel or through the API.
 
@@ -62,7 +61,7 @@ From the *Cloud Control Panel*:
 From *the API*, see [the API Dev Guide section, "CDN-Enable a
 Container"](http://docs.rackspace.com/files/api/v1/cf-devguide/content/PUT_enableDisableCDNcontainer_v1__account___container__CDN_Container_Services-d1e2632.html).
 
- 
+
 
 Add JW Player 6 to Your Web Page
 --------------------------------
@@ -71,36 +70,35 @@ There are three elements you must add to your web page in order to make
 JW Player work: a SCRIPT element that points to the player, a DIV that
 positions the player, and a SCRIPT that calls the player and the media.
 
-1. Add a SCRIPT element to the HEAD of your HTML that points to
-jwplayer.js file.<br>
- For this step, you need the link to the jwplayer.js file you uploaded
-in the above instructions. To get the link from *New Cloud Control
-Panel*:
+1\. Add a SCRIPT element to the HEAD of your HTML that points to
+jwplayer.js file.
+For this step, you need the link to the jwplayer.js file you uploaded in
+the above instructions. To get the link from *New Cloud Control Panel*:
 
 1.  Open the container where you uploaded the plugin (Step 4 above).
 2.  Locate the jwplayer.js file in the Object List.
 3.  Click the gear icon next to the plugin file.
 4.  Click "View All Links".
 5.  Copy the link makred "HTTP".
-6.  Replace "/path/to/jwplayer.js" in the text below with the link you
-    copied.
+6.  Replace "/path/to/jwplayer.js" in the text below with the link
+    you copied.
 
  Enter this SCRIPT to the HEAD of your HTML page, substituting in the
 link to your jwplayerjs file:
 
-~~~~ {.MsoNormal}
+``` {.MsoNormal}
 <script type="text/javascript" src="/path/to/jwplayer.js"></script>
-~~~~
+```
 
-2. Add a DIV element to your HTML page with a unique ID attribute
-value, such as &ldquo;player&rdquo;. The "Loading the player..." text is whatever
-text you would like to display while the player loads.
+2\. Add a DIV element to your HTML page with a unique ID attribute value,
+such as &ldquo;player&rdquo;. The "Loading the player..." text is whatever text you
+would like to display while the player loads.
 
     <div id="player">Loading the player...</div>
 
-3. Add a SCRIPT element right below the DIV you created in Step 2. This
-adds the JW Player and your media to your page.<br>
- This SCRIPT uses the following options:
+3\. Add a SCRIPT element right below the DIV you created in Step 2. This
+adds the JW Player and your media to your page.
+This SCRIPT uses the following options:
 
 -   file - The link for the media. Locate your media in a Cloud Filed
     CDN-enabled container, click the gear icon, click "Show Links", and
@@ -108,8 +106,8 @@ adds the JW Player and your media to your page.<br>
     the Streaming link.
 -   image - The HTTP link for an image to display in the player. The
     image displays for videos while the file loads or for music, while
-    the file plays. Do the same steps for the image as you did for the
-    file.
+    the file plays. Do the same steps for the image as you did for
+    the file.
 -   provider - The HTTP link to the JW Player. This is the link to the
     container you used in Step 2 in the "Upload JW Player 6"
     instructions above.
@@ -129,5 +127,5 @@ adds the JW Player and your media to your page.<br>
         });
      </script>
 
- 
+
 

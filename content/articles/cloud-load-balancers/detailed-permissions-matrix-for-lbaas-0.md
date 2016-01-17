@@ -2,10 +2,10 @@
 node_id: 3390
 title: Permissions Matrix for Cloud Load Balancers
 type: article
-created_date: '2013-04-10 16:05:06'
-created_by: renee.rendon
-last_modified_date: '2015-05-26 13:1148'
-last_modified_by: kyle.laffoon
+created_date: '2013-04-10'
+created_by: Renee Rendon
+last_modified_date: '2015-05-26'
+last_modified_by: Kyle Laffoon
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -15,10 +15,10 @@ roles in Cloud Load Balancers. The matrix displays the method names,
 their corresponding RESTful API commands, and the roles that are
 supported.
 
-**[API Documentation](http://docs.rackspace.com/) **
+**[API Documentation](http://docs.rackspace.com/)<span> </span>**
 
 **[Related Knowledge Center
-Articles](http://www.rackspace.com/knowledge_center/cloud-hosting)**
+Articles](/howto/)**
 
 **[Cloud Load Balancer
 Terminology](#Cloud%20Load%20Balancer%20Terminology)**
@@ -29,7 +29,7 @@ CAPABILITY
 
 ROLE
 
-DESCRIPTION 
+DESCRIPTION
 
 Method Name
 
@@ -41,724 +41,873 @@ Creator
 
 Admin
 
- 
+
 
 ### LOAD BALANCER
 
-List Load Balancers
+<span>List Load Balancers</span>
 
-GET /loadbalancers
+<span>GET /loadbalancers</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Provide a list of all load balancers configured and associated with your
-account.
+<span>Provide a list of all load balancers configured and associated
+with your account.</span>
 
-List Load Balancer Details
+<span>List Load Balancer Details</span>
 
-GET /loadbalancers/{loadBalancerId}
+<span>GET /loadbalancers/</span><span>{loadBalancerId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Provide a list of all load balancers configured and associated with your
-account. \*
+<span>Provide a list of all load balancers configured and associated
+with your account. \*</span>
 
-Create Load Balancer
+<span>Create Load Balancer</span>
 
-POST /loadbalancers
+<span>POST /loadbalancers</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Create a new load balancer with the configuration defined by the
-request.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Update Load Balancer Attributes
+<span>Create a new load balancer with the configuration defined by the
+request.</span>
 
-PUT /loadbalancers/{loadBalancerId}
+<span>Update Load Balancer Attributes</span>
 
- 
+<span>PUT /loadbalancers/{loadBalancerId}</span>
 
- ![check](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Asynchronously update the attributes of the specified load balancer.
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Remove Load Balancer
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-DELETE /loadbalancers/{loadBalancerId}
+<span>Asynchronously update the attributes of the specified load
+balancer.</span>
 
- 
+<span>Remove Load Balancer</span>
 
- 
+<span>DELETE /loadbalancers/</span><span>{loadBalancerId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Remove the specified load balancer and its associated configuration from
-the account.
 
-Remove Load Balancer Batch Delete
 
-DELETE /loadbalancers{?id}
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Remove the specified load balancer and its associated
+configuration from the account.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Remove Load Balancer Batch Delete</span>
 
-Bulk-delete load balancers.
+<span>DELETE /loadbalancers{?id}</span>
+
+
+
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Bulk-delete load balancers.</span>
 
 ### ERROR PAGES
 
-List Error Page
+<span>List Error Page</span>
 
-GET /loadbalancers/{loadBalancerId}/errorpage
+<span>GET
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List error page configured for the specified load balancer.
+<span>List error page configured for the specified load balancer.</span>
 
-Update Error Page
+<span>Update Error Page</span>
 
-PUT /loadbalancers/{loadBalancerId}/errorpage
+<span>PUT
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span>
 
- 
 
- ![check](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Set custom error page for the specified load balancer.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Error Page
+<span>Set custom error page for the specified load balancer.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/errorpage
+<span>Delete Error Page</span>
 
- 
+<span>DELETE
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/errorpage</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete custom error page for the specified load balancer.
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete custom error page for the specified load balancer.</span>
 
 ### LOAD BALANCER STATISTICS
 
-List Load Balancer Stats
+<span>List Load Balancer Stats</span>
 
-GET /loadbalancers/{loadBalancerId}/stats
+<span>GET
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/stats</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Provide detailed stats output for a specific load balancer.
+<span>Provide detailed stats output for a specific load balancer.</span>
 
 ### NODES
 
-List Nodes
+<span>List Nodes</span>
 
-GET /loadbalancers/{loadBalancerId}/nodes
+<span>GET
+/loadbalancers/</span><span>{loadBalancerId}/</span><span>nodes</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List node(s) configured for the load balancer.
+<span>List node(s) configured for the load balancer.</span>
 
-List Details of Specific Node
+<span>List Details of Specific Node</span>
 
-GET /loadbalancers/{loadBalancerId}/nodes/{nodeId}
+<span>GET
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List details of a specific node.
+<span>List details of a specific node.</span>
 
-Add Nodes
+<span>Add Nodes</span>
 
-POST /loadbalancers/{loadBalancerId}/nodes
+<span>POST
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
 Add a new node to the load balancer.
 
-Modify Nodes
+<span>Modify Nodes</span>
 
-PUT /loadbalancers/{loadBalancerId}/nodes/{nodeId}
+<span>PUT
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span>
 
- 
 
- ![check](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Modify the configuration of a node on the load balancer.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Nodes
+<span>Modify the configuration of a node on the load balancer.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/nodes/{?nodeId}
+<span>Delete Nodes</span>
 
- 
+<span>DELETE
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{?nodeId}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete a node from a specified load balancer.
 
-Delete Nodes Batch
 
-DELETE /loadbalancers/{loadBalancerId}/nodes/{nodeId}
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Delete a node from a specified load balancer.</span>
 
- 
+<span>Delete Nodes Batch</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>DELETE
+/loadbalancers/</span><span>{loadBalancerId}</span><span>/nodes/{nodeId}</span>
 
-Bulk-delete the specified nodes from a specified load balancer.
 
-List Nodes
 
-GET /loadbalancers/{loadBalancerId}/nodes
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Bulk-delete the specified nodes from a specified load
+balancer.</span>
 
-List node(s) configured for the load balancer.
+<span>List Nodes</span>
+
+<span>GET
+/loadbalancers/</span><span>{loadBalancerId}/</span><span>nodes</span>
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>List node(s) configured for the load balancer.</span>
 
 ### VIRTUAL IPs
 
-List Virtual IPs
+<span>List Virtual IPs</span>
 
-GET /loadbalancers/loadBalancerId/virtualips
+<span>GET /loadbalancers/loadBalancerId/virtualips</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List virtual IPs that are associated with a specified load balancer.
+<span>List virtual IPs that are associated with a specified load
+balancer.</span>
 
-Add Virtual IPs
+<span>Add Virtual IPs</span>
 
-POST /loadbalancers/{loadBalancerId}/virtualips
+<span>POST /loadbalancers/{loadBalancerId}/virtualips</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Add virtual IP version 6.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Bulk-delete Virtual IPs
+<span>Add virtual IP version 6.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/virtualips/{?virtualIpId}
+<span>Bulk-delete Virtual IPs</span>
 
- 
+<span>DELETE
+/loadbalancers/{loadBalancerId}/virtualips/{?virtualIpId}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Bulk-delete specified virtual IPs.
 
-Delete Virtual IPs
 
-GET /loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Bulk-delete specified virtual IPs.</span>
 
- 
+<span>Delete Virtual IPs</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>GET
+/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}</span>
 
-Delete a specified virtual IP.
+
+
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete a specified virtual IP.</span>
 
 ### ALLOWED DOMAINS
 
-List Allowed Domains
+<span>List Allowed Domains</span>
 
-GET /loadbalancers/alloweddomains
+<span>GET /loadbalancers/alloweddomains</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-View a list of allowed domains. \*\*
+<span>View a list of allowed domains. \*\*</span>
 
 ### USAGE REPORTS
 
-List Billable Load Balancers
+<span>List Billable Load Balancers</span>
 
-GET /loadbalancers/billable{?startTime,endTime,offset, limit}
+<span>GET
+/loadbalancers/billable</span><span>{?startTime,endTime,offset,
+limit}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List billable load balancers for the given date range. The response is
-paginated with a default limit of 500 and a maximum limit of 1000.
+<span>List billable load balancers for the given date range. The
+response is paginated with a default limit of 500 and a maximum limit of
+1000.</span>
 
-Show Account-level Usage
+<span>Show Account-level Usage</span>
 
-GET /loadbalancers/usage{?startTime,endTime}
+<span>GET /loadbalancers/usage</span><span>{?startTime,endTime}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show account-level usage.
+<span>Show account-level usage.</span>
 
-Show Historical Usage
+<span>Show Historical Usage</span>
 
-GET /loadbalancers/{loadBalancerId}/usage{?startTime,endTime}
+<span>GET
+/loadbalancers/{loadBalancerId}/usage{?startTime,endTime}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show historical usage. \*\*\*
+<span>Show historical usage. \*\*\*</span>
 
-Show Current Usage
+<span>Show Current Usage</span>
 
-GET /loadbalancers/{loadBalancerId}/usage/current/{?startTime,endTime}
+<span>GET
+/loadbalancers/{loadBalancerId}/usage/current/</span><span>{?startTime,endTime}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show current usage.
+<span>Show current usage.</span>
 
 ### ACCESS LISTS
 
-Show Access List
+<span>Show Access List</span>
 
-GET /loadbalancers/{loadBalancerId}/accesslist
+<span>GET /loadbalancers/{loadBalancerId}/accesslist</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show the access list.
+<span>Show the access list.</span>
 
-Create or Update Access List
+<span>Create or Update Access List</span>
 
-POST /loadbalancers/{loadBalancerId}/accesslist
+<span>POST /loadbalancers/{loadBalancerId}/accesslist</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Create or append to an existing access list.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Access List
+<span>Create or append to an existing access list.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/accesslist
+<span>Delete Access List</span>
 
- 
+<span>DELETE /loadbalancers/{loadBalancerId}/accesslist</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete the entire access list.
 
-Bulk-delete Specified Networks
 
-DELETE /loadbalancers/{loadBalancerId}/accesslist/{?networkItemId}
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Delete the entire access list.</span>
 
- 
+<span>Bulk-delete Specified Networks</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>DELETE
+/loadbalancers/{loadBalancerId}/accesslist/{?networkItemId}</span>
 
-Bulk-delete the specified networks from an access list.
 
-Delete Network Item from Access List
 
-DELETE /loadbalancers/{loadBalancerId}/accesslist/ {networkItemId}
 
- 
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Bulk-delete the specified networks from an access list.</span>
 
-Delete a network item from a specified access list.
+<span>Delete Network Item from Access List</span>
+
+<span>DELETE /loadbalancers/{loadBalancerId}/accesslist/
+{networkItemId}</span>
+
+
+
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete a network item from a specified access list.</span>
 
 ### MONITOR HEALTH
 
-Show Health Monitor Configuration
+<span>Show Health Monitor Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/healthmonitor
+<span>GET /loadbalancers/{loadBalancerId}/healthmonitor</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show the health monitor configuration, if one exists.
+<span>Show the health monitor configuration, if one exists.</span>
 
-Update Health Monitor
+<span>Update Health Monitor</span>
 
-PUT /loadbalancers/loadBalancerId/healthmonitor
+<span>PUT /loadbalancers/loadBalancerId/healthmonitor</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Update the settings for a health monitor.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Health Monitor
+<span>Update the settings for a health monitor.</span>
 
-DELETE /loadbalancers/loadBalancerId/healthmonitor
+<span>Delete Health Monitor</span>
 
- 
+<span>DELETE /loadbalancers/loadBalancerId/healthmonitor</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete a health monitor.
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete a health monitor.</span>
 
 ### SESSION PERSISTENCE
 
-Show Session Persistence Configuration
+<span>Show Session Persistence Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/sessionpersistence
+<span>GET /loadbalancers/{loadBalancerId}/sessionpersistence</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List session persistence configuration.
+<span>List session persistence configuration.</span>
 
-Enable Session Persistence
+<span>Enable Session Persistence</span>
 
-PUT /loadbalancers/{loadBalancerId}/sessionpersistence
+<span>PUT /loadbalancers/{loadBalancerId}/sessionpersistence</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Enable session persistence.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Disable Session Persistence
+<span>Enable session persistence.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/sessionpersistence
+<span>Disable Session Persistence</span>
 
- 
+<span>DELETE /loadbalancers/{loadBalancerId}/sessionpersistence</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Disable session persistence.
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Disable session persistence.</span>
 
 ### LOG CONNECTIONS
 
-Show Connection Logging Configuration
+<span>Show Connection Logging Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/connectionlogging
+<span>GET /loadbalancers/{loadBalancerId}/connectionlogging</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show connection logging configuration.
+<span>Show connection logging configuration.</span>
 
-Enable or Disable Connection Logging
+<span>Enable or Disable Connection Logging</span>
 
-PUT /loadbalancers/{loadBalancerId}/connectionlogging
+<span>PUT /loadbalancers/{loadBalancerId}/connectionlogging</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Enable or disable connection logging.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Enable or disable connection logging.</span>
 
 Note: Enable connection logging requires that the user have access to
 Cloud Files, which is used for storing the logs.
 
 ### THROTTLE CONNECTIONS
 
-Show Connection Throttling Configuration
+<span>Show Connection Throttling Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/connectionthrottling
+<span>GET /loadbalancers/{loadBalancerId}/connectionthrottling</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show connection throttling configuration.
+<span>Show connection throttling configuration.</span>
 
-Create or Update Connection Throttling Configuration
+<span>Create or Update Connection Throttling Configuration</span>
 
-PUT /loadbalancers/{loadBalancerId}/connectionthrottling
+<span>PUT /loadbalancers/{loadBalancerId}/connectionthrottling</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Create or update throttling configuration.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Connection Throttling Configuration
+<span>Create or update throttling configuration.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/connectionthrottling
+<span>Delete Connection Throttling Configuration</span>
 
- 
+<span>DELETE /loadbalancers/{loadBalancerId}/connectionthrottling</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete connection throttling configurations.
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete connection throttling configurations.</span>
 
 ### CONTENT CACHING
 
-Show Content Caching Configuration
+<span>Show Content Caching Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/contentcaching
+<span>GET /loadbalancers/{loadBalancerId}/contentcaching</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show current configuration of content caching.
+<span>Show current configuration of content caching.</span>
 
-Enable or Disable Content Caching
+<span>Enable or Disable Content Caching</span>
 
-PUT /loadbalancers/{loadBalancerId}/contentcaching
+<span>PUT /loadbalancers/{loadBalancerId}/contentcaching</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Enable or disable content caching.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Enable or disable content caching.</span>
 
 ### PROTOCOLS
 
-List Load Balancer Protocols
+<span>List Load Balancer Protocols</span>
 
-GET /loadbalancers/protocol
+<span>GET /loadbalancers/protocol</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List supported load balancing protocols.
+<span>List supported load balancing protocols.</span>
 
 ### ALGORITHMS
 
-List Load Balancer Algorithms
+<span>List Load Balancer Algorithms</span>
 
-GET /loadbalancers/algorithms
+<span>GET /loadbalancers/algorithms</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-List all supported load balancing algorithms.
+<span>List all supported load balancing algorithms.</span>
 
 ### SSL TERMINATION / CERTIFICATE MAPPINGS
 
-Show SSL Termination Configuration
+<span>Show SSL Termination Configuration</span>
 
-GET /loadbalancers/{loadBalancerId}/ssltermination
+<span>GET /loadbalancers/{loadBalancerId}/ssltermination</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show the load balancer's SSL termination configuration.
+<span>Show the load balancer's SSL termination configuration.</span>
 
-Update SSL Termination
+<span>Update SSL Termination</span>
 
-PUT /loadbalancers/{loadBalancerId}/ssltermination
+<span>PUT /loadbalancers/{loadBalancerId}/ssltermination</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Update the SSL termination. \*\*\*\*\*
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete SSL Termination
+<span>Update the SSL termination. \*\*\*\*\*</span>
 
-DELETE /loadbalancers/{loadBalancerId}/ssltermination
+<span>Delete SSL Termination</span>
 
- 
+<span>DELETE /loadbalancers/{loadBalancerId}/ssltermination</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete SSL termination.
 
-List Certificate Mappings
 
-GET /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Delete SSL termination.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>List Certificate Mappings</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>GET
+/</span><span>loadbalancers/{loadBalancerId}/ssltermination/certificatemappings</span>
 
-List certificate mappings that are configured for a specified load
-balancer.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Add Certificate Mapping
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-POST /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>List certificate mappings that are configured for a specified load
+balancer.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Add </span><span>Certificate Mapping</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>POST
+/</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings</span>
 
-Add a certificate mapping to a specified load balancer.
 
-Show Certificate Mappings Details
 
-GET
-/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Add a certificate mapping to a specified load balancer.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Show </span><span>Certificate Mappings Details</span>
 
-Show details for a specified certificate mapping.
+<span>GET
+/</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span>
 
-Update Certificate Mapping
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-PUT
-/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Show details for a specified certificate mapping.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Update </span><span>Certificate Mapping</span>
 
-Update the configuration for a specified certificate mapping on a
-specified load balancer.
+<span>PUT
+/</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span>
 
-Delete Certificate Mapping
 
-DELETE
-/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Update the configuration for a specified certificate mapping on a
+specified load balancer.</span>
 
-Delete a certificate mapping from a specified load balancer.
+<span>Delete </span><span>Certificate Mapping</span>
+
+<span>DELETE
+/</span><span>loadbalancers/{loadBalancerId}/</span><span>ssltermination/certificatemappings/{certificateMappingId}</span>
+
+
+
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete a certificate mapping from a specified
+load </span>balancer.
 
 ### METADATA
 
-Add Load Balancer Metadata 
+<span>Add Load Balancer Metadata </span>
 
-POST /loadbalancers/{loadBalancerId}/metadata
+<span>POST /loadbalancers/{loadBalancerId}/metadata</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Add a new metadata item to the load balancer.
+<span>Add a new metadata item to the load balancer.</span>
 
 Show Load Balancer Metadata
 
 GET /loadbalancers/{loadBalancerId}/metadata
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
 Show all metadata associated with the specified load balancer.
 
@@ -766,172 +915,202 @@ Bulk-delete Load Balancer Metadata Items
 
 DELETE /loadbalancers/{loadBalancerId}/metadata{?metaId}
 
- 
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
 Bulk-delete the metadata items given specified id list.
 
 Show Load Balancer Metadata Item
 
-GET /loadbalancers/{loadBalancerId}/metadata/{metaId}
+<span>GET /loadbalancers/{loadBalancerId}/metadata/{metaId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show details for a specified metadata item for a specified load
-balancer.
+<span>Show details for a specified metadata item for a specified load
+balancer.</span>
 
-Update Load Balancer Metadata Item
+Update <span>Load Balancer Metadata Item</span>
 
-PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}
+<span>PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Update the configuration of a metadata item on the load balancer.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Load Balancer Metadata Item
+<span>Update the configuration of a metadata item on the load
+balancer.</span>
 
-DELETE /loadbalancers/{loadBalancerId}/metadata/{metaId}
+<span>Delete Load Balancer Metadata Item</span>
 
- 
+<span>DELETE /loadbalancers/{loadBalancerId}/metadata/{metaId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete a metadata item from the load balancer.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show Load Balancer Node Metadata
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata
+<span>Delete a metadata item from the load balancer.</span>
 
- 
+<span>Show Load Balancer Node Metadata</span>
 
- ![check](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+GET <span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Show all metadata associated with a specified node and load balancer.
 
-Add Load Balancer Node Metadata
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-POST loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Show all metadata associated with a specified node and load
+balancer.</span>
 
- ![check](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Add Load Balancer Node Metadata</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>POST </span><span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata</span>
 
-Adds a metadata item to a specified node and load balancer.
 
-Bulk-delete Load Balancer Node Metadata Items
 
-DELETE loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata{?metaId}
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- 
+<span>Adds a metadata item to a specified node and load balancer.</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+<span>Bulk-delete Load Balancer Node Metadata Items</span>
 
-Bulk-deletes the metadata items given specified id list.
+DELETE <span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata{?metaId}</span>
+
+
+
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Bulk-deletes the metadata items given specified id list.</span>
 
 Show Load Balancer Node Metadata Item
 
-GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}
+<span>GET
+loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Show details for a specified metadata item for a specified node and load
-balancer.
+<span>Show details for a specified metadata item for a specified node
+and load balancer.</span>
 
-Update Load Balancer Node Metadata Item
+<span>Update Load Balancer Node Metadata Item</span>
 
-PUT loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}
+PUT <span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Update the configuration of a metadata item on the node.
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
-Delete Load Balancer Node Metadata Item 
+<span>Update the configuration of a metadata item on the node.</span>
 
-loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}
+<span>Delete Load Balancer Node Metadata Item </span>
 
- 
+<span>loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}</span>
 
- 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
 
-Delete a metadata item from the node.
+
+
+![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
+
+<span>Delete a metadata item from the node.</span>
 
 ### LIMITS
 
 List Absolute Limits
 
- GET /loadbalancers/absolutelimits/
+ <span>GET /loadbalancers/absolutelimits/</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- Return the current absolute limits for the account.
+ <span>Return the current absolute limits for the account.</span>
 
 List Limits
 
- GET /loadbalancers/limits
+ <span>GET /loadbalancers/limits</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_2.png)
+ ![check](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_2.png){width="41"
+height="39"}
 
- Return the current limits for the account.
+ <span>Return the current limits for the account.</span>
 
 \* This operation is not capable of returning details for a load
 balancer which has been deleted.
 
-\*\* Currently only Rackspace-based domain names are supported.
+\*\* <span>Currently only Rackspace-based domain names are
+supported.</span>
 
-\*\*\* Historical usage data is available for up to 90 days of service
-activity.
+<span>\*\*\* </span><span>Historical usage data is available for up to
+90 days of service activity.</span>
 
-\*\*\*\*\* **Warning**: If SSL is enabled on a load balancer that is
-configured with nodes that are NOT in the same datacenter, then
-decrypted traffic will be sent in clear text over the public internet to
-the external node(s) and will no longer be secure.
+<span>\*\*\*\*\* </span>**<span>Warning</span>**<span>:</span>
+If<span> SSL is enabled on a load balancer that is configured with nodes
+that are NOT in the same datacenter, then decrypted traffic will be sent
+in clear text over the public internet to the external node(s) and will
+no longer be secure.</span>
 
- 
+<span> </span>
 
-Cloud Load Balancer Terminology
--------------------------------
+[]()Cloud Load Balancer Terminology
+-----------------------------------
 
 ### Algorithm
 
-A Process that defines how traffic should be directed between back-end
-nodes.
+A Process <span>that defines how traffic should be directed between
+back-end nodes.</span>
 
 ### **Connection Logging**
 
@@ -940,61 +1119,63 @@ every hour. For HTTP-based protocol traffic, these are Apache-style
 access logs. For all other traffic, this is connection and transfer
 logging.
 
-### [**Content Caching**](http://www.rackspace.com/knowledge_center/article/content-caching-for-cloud-load-balancers)
+### [**Content Caching**](/howto/content-caching-for-cloud-load-balancers)
 
-An operation that stores recently-accessed files on the load balancer
-for easy retrieval by web clients. 
+<span>An operation that stores </span><span>recently-accessed files on
+the load balancer for easy retrieval by web clients. </span>
 
-### **Error Page**
+### **<span>Error Page</span>**
 
-The HTML file that is shown to an end user who is attempting to access a
-load balancer.
+<span>The HTML file that is shown to an end user who is attempting to
+access a load balancer.</span>
 
-### **Health Monitor**
+### **<span>Health Monitor</span>**
 
-A configurable feature of each load balancer. It is used to determine
-whether or not a back-end node is usable for processing a request. The
-load balancing service currently supports active health monitoring.
+<span>A configurable feature of each load balancer. It is used to
+determine whether or not a back-end node is usable for processing a
+request. The load balancing service currently supports active health
+monitoring.</span>
 
-### [**Load Balancer**](http://www.rackspace.com/knowledge_center/article/configuring-a-cloud-load-balancer-0#Virtual_IP_Type)
+### [**Load Balancer**](/howto/configure-a-load-balancer)
 
-A logical device which belongs to a cloud account. It is used to
+<span>A logical device which belongs to a cloud account. It is used to
 distribute workloads between multiple back-end systems or services,
-based on the criteria defined as part of its configuration.
+based on the criteria defined as part of its configuration.</span>
 
-### Metadata
+### <span>Metadata</span>
 
-Metadata can be associated with each load balancer and each node for the
-client's personal use. It is defined using key-value pairs where the key
-and value consist of alphanumeric characters. A key is unique per load
-balancer.
+<span>Metadata can be associated with each load balancer and each node
+for the client's personal use. It is defined using key-value pairs where
+the key and value consist of alphanumeric characters. A key is unique
+per load balancer.</span>
 
-### **Node**
+### **<span>Node</span>**
 
-A back-end device providing a service on a specified IP and port.
+<span>A back-end device providing a service on a specified IP and
+port.</span>
 
 ### **Session Persistence**
 
-A feature of the load balancing service that forces multiple requests
-from clients to be directed to the same node.
+A<span> feature of the load balancing service that forces multiple
+requests from clients to be directed to the same node.</span>
 
-### **Usage Reports**
+### **<span>Usage Reports</span>**
 
-A report that provides a view of all transfer activity, average number
-of connections, and number of virtual IPs associated with the load
-balancing service. 
+<span>A report that provides a view of all transfer activity, average
+number of connections, and number of virtual IPs associated with the
+load balancing service. </span>
 
-### **Virtual IP**
+### **<span>Virtual IP</span>**
 
-An Internet Protocol (IP) configured on the load balancer for use by
-clients connecting to a service that is load balanced. Incoming
+<span>An Internet Protocol (IP) configured on the load balancer for use
+by clients connecting to a service that is load balanced. Incoming
 connections are distributed to back-end nodes based on the configuration
-of the load balancer.
+of the load balancer.</span>
 
- 
+<span> </span>
 
-[\< Permission Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
+[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+
 

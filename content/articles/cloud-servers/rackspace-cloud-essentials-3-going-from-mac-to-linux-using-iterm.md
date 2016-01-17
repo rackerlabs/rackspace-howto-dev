@@ -2,10 +2,10 @@
 node_id: 1225
 title: Connecting to Linux from Mac OS X by using Terminal
 type: article
-created_date: '2011-10-06 05:54:02'
-created_by: rose.contreras
-last_modified_date: '2015-12-31 15:2109'
-last_modified_by: stephanie.fillmon
+created_date: '2011-10-06'
+created_by: Rose Contreras
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -16,7 +16,7 @@ is a terminal emulation program included with Mac OS X that you can use
 to run SSH.
 
 **Note**: For an OnMetal Server, see [Create OnMetal Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers) for
+Servers](/howto/create-onmetal-cloud-servers) for
 applicable OnMetal steps.
 
 Connect to the server
@@ -26,9 +26,9 @@ These instructions are for users who are connecting to a new cloud
 server for the first time.  If you&rsquo;re connecting as a non-root user,
 replace *root* in the instructions with your username.
 
-1.  Go to **Applications** \> **Utilities**, and open **Terminal**.
+1.  Go to **Applications** &gt; **Utilities**, and open **Terminal**.
 
-    ![](/knowledge_center/sites/default/files/field/image/1-FindTerm_1_0.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1-FindTerm_1_0.png){width="550"}
 
     A terminal window interface is displayed:
 
@@ -75,8 +75,8 @@ After your first login, change the root password.
 
         passwd
 
-2.  Change your password, as follows. The password does not echo to the
-    screen.
+2.  Change your password, as follows. The password does not echo to
+    the screen.
 
         Enter new UNIX password:
         Retype new UNIX password:
@@ -92,7 +92,7 @@ Where to go from here
 ---------------------
 
 The next article shows you how to use [Rescue
-Mode](http://www.rackspace.com/knowledge_center/article/managing-your-server-rescue-mode)
+Mode](/howto/rescue-mode)
 to connect to your cloud server, which is useful when you are performing
 troubleshooting and when your server becomes unresponsive.
 

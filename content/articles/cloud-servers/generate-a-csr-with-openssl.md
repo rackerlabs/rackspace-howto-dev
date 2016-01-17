@@ -2,10 +2,10 @@
 node_id: 345
 title: Generate a CSR with OpenSSL
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 19:4537'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -24,12 +24,12 @@ using this certificate signing request (CSR).
 **Tip:** You can also generate a CSR and private key using a [feature in
 the Cloud Control Panel](https://csrgenerator.rackspace.com/). For more
 information, see [Create an SSL CSR in the Rackspace Cloud Control
-Panel](/knowledge_center/article/create-an-ssl-csr-in-the-rackspace-cloud-control-panel).
+Panel](/howto/create-a-csr-in-the-cloud-control-panel).
 
 Contents
 -----------
 
--   [1 Prerequisites](#Prerequisites) 
+-   [1 Prerequisites](#Prerequisites)
 -   [2 Generate the RSA key](#Generate_the_RSA_key)
 -   [3 Create a CSR](#Create_a_CSR)
 -   [4 Verify your CSR](#Verify_your_CSR)

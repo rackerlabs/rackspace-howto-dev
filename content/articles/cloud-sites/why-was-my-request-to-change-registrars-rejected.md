@@ -2,10 +2,10 @@
 node_id: 752
 title: Why was my request to change registrars rejected?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-30 17:0600'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -30,9 +30,9 @@ domain. Your current registrar will send an email to this account that
 will require a reply from you, confirming that the transfer is
 authorized. If you do not have access to this email address, contact
 [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do")
-for help.
+support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do"){.external
+.text} for help.
 
 You can do a WHOIS search to find the administrative email and the
-current registar for the domain. 
+current registar for the domain.
 

@@ -2,19 +2,19 @@
 node_id: 4212
 title: Boot a server from a Cloud Block Storage volume
 type: article
-created_date: '2014-08-26 16:27:25'
-created_by: trey.hoehne
-last_modified_date: '2015-07-20 18:4032'
-last_modified_by: Nate.Archer
+created_date: '2014-08-26'
+created_by: Trey Hoehne
+last_modified_date: '2015-07-20'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-**Note**: Large Snapshots will not work with boot from volume. Currently snapshots have a min_disk based on the flavor size for example 160GB. Nova expands the file system to fill that entire vhd, qemu-img cannot handle files that are 127GB and larger. This means that if the flavor from which a snapshot was taken has a disk size or the min_disk is >= 127GB, that snapshot will not work.  This will result in a HTTP 412 invalid image when done via the API.  
+**Note**: Large Snapshots will not work with boot from volume. Currently snapshots have a min_disk based on the flavor size for example 160GB. Nova expands the file system to fill that entire vhd, qemu-img cannot handle files that are 127GB and larger. This means that if the flavor from which a snapshot was taken has a disk size or the min_disk is >= 127GB, that snapshot will not work.  This will result in a HTTP 412 invalid image when done via the API.
 
 You can now boot most cloud servers from a network-attached [Cloud Block Storage](http://www.rackspace.com/cloud/block-storage/) volume. This feature enables you to boot a server from a remotely attached volume, which moves the system disk from local to remote. Separating the system disk from the server allows for future diskless flavors, features such as “shelving,” and improvements in managing and recovering from server outages.
 
-<img src="/knowledge_center/sites/default/files/field/image/1424-1.png" width="254" height="269" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-1.png" width="254" height="269" alt=""  />
 
 **Note:** You cannot boot first-generation or standard servers from a Cloud Block Storage volume. Standard servers support local boot systems only.
 
@@ -22,7 +22,7 @@ You can now boot most cloud servers from a network-attached [Cloud Block Storage
 *   Setup Options
 *   Booting from an existing volume
 *   Volume preparation
-*   Control Panel volume boot 
+*   Control Panel volume boot
 *   API volume boot options
 
 
@@ -40,11 +40,11 @@ You can get started through the [Control Panel](https://mycloud.rackspace.com) o
 
 Servers have a local system and can have one or more data disks depending on the flavor.
 
-<img src="/knowledge_center/sites/default/files/field/image/1424-2.png" width="650" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-2.png" width="650" alt=""  />
 
 Additional remote data volumes can be attached to a server; however, the local system and data are always present.
 
-<img src="/knowledge_center/sites/default/files/field/image/1424-3.png" width="650" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-3.png" width="650" alt=""  />
 
 Booting from a remote volume moves the system disk off the local server. The local data disk will still be present if the flavor has one.
 
@@ -54,7 +54,7 @@ Booting from a volume requires a Cloud Block Storage volume built from a valid i
 
 ## Volume preparation
 
-<img src="/knowledge_center/sites/default/files/field/image/1424-4.png" width="650" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-4.png" width="650" alt=""  />
 
 Server images are in a VHD file format, but Cloud Block Storage requires them to be in RAW format. When a user specifies the volume type, size, and image ID for a volume, the request is sent to Cloud Block Storage. Cloud Block Storage then sends the request to an available storage node that has capacity, and the node pulls down the image and begins the conversion process. Only one conversion process can be performed at a time on a storage node; this has been identified as a potential bottleneck in the process.
 
@@ -68,11 +68,11 @@ Use the following steps to boot a server from a Cloud Block Storage volume throu
 
 1. Create your server by choosing your image and flavor. In the Flavor Description area, click Edit next to Boot Source.
 
-     <img src="/knowledge_center/sites/default/files/field/image/1424-5.png" width="535" height="407" alt=""  />
+     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-5.png" width="535" height="407" alt=""  />
 
 2. In the pop-up window, select **Bootable Volume (Cloud Block Storage)** as the boot source and select the size of your volume. The volume name is based on your server's name, and the volume type is set to SSD.
 
-     <img src="/knowledge_center/sites/default/files/field/image/1424-6.png" width="478" height="376" alt=""  />
+     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-6.png" width="478" height="376" alt=""  />
 
 3.	Click **Select Boot Source**.
 
@@ -80,7 +80,7 @@ After you create the server, your volume is prepared from the selected image.
 
 If you delete your server, the volume persists and is available when you create a new server (only through the API or the nova client at this time).
 
-<img src="/knowledge_center/sites/default/files/field/image/1424-7.png" width="508" height="385" alt=""  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-7.png" width="508" height="385" alt=""  />
 
 You can also see the volume listed on the **Block Storage** tab.
 
@@ -119,17 +119,17 @@ The preceding example boots a General Purpose 1 GB server from the prepared volu
      REQUEST:
      curl -i 'https://iad.blockstorage.api.rackspacecloud.com/v1/596067/volumes' -X POST
      RESPONSE:
-     { 
+     {
           "volume":
-              { 
-                  "display\\_name":"BFB-test-SSD", 
-                  "imageRef":"255df5fb-e3d4-45a3-9a07-c976debf7c14", 
-                  "availability\\_zone":null, 
-                  "volume\\_type":"SSD", 
+              {
+                  "display\\_name":"BFB-test-SSD",
+                  "imageRef":"255df5fb-e3d4-45a3-9a07-c976debf7c14",
+                  "availability\\_zone":null,
+                  "volume\\_type":"SSD",
                   "display\\_description":null,
-                  "snapshot\\_id":null, 
-                  "size":100 
-              } 
+                  "snapshot\\_id":null,
+                  "size":100
+              }
      }
      REQUEST:
      curl -i 'https://preprod.ord.servers.api.rackspacecloud.com/v2/5892688/os-volumes\_boot' -X POST
@@ -138,27 +138,27 @@ The preceding example boots a General Purpose 1 GB server from the prepared volu
          "server":
              {
                  "name":"BFTest3",
-                 "imageRef":"", 
+                 "imageRef":"",
                  "block\\_device\\_mapping":
                      [
-                         { 
+                         {
                              "volume\\_id":"8dcf68f9-0321-42f3-a3dc-b861b9335a9b",
                              "delete\\_on\\_termination":"0",
                              "device\\_name":"vda"
-                         } 
-                     ], 
+                         }
+                     ],
                  "flavorRef":"general1-1",
-                 "max\\_count":1, 
-                 "min\\_count":1, 
+                 "max\\_count":1,
+                 "min\\_count":1,
                  "networks":
-                     [ 
-                         { 
-                             "uuid":"00000000-0000-0000-0000-000000000000" 
-                         }, 
-                         { 
-                             "uuid":"11111111-1111-1111-1111-111111111111" 
-                         } 
-                     ] 
+                     [
+                         {
+                             "uuid":"00000000-0000-0000-0000-000000000000"
+                         },
+                         {
+                             "uuid":"11111111-1111-1111-1111-111111111111"
+                         }
+                     ]
              }
      }
 
@@ -174,11 +174,11 @@ The Cloud Control Panel uses this option.
 
 ## Rebuild or resize the server
 
-If you have deleted the server that was attached to the Cloud Block Storage volume, you can rebuild the server from the volume. You can also resize the server while retaining the previously attached system disk. 
+If you have deleted the server that was attached to the Cloud Block Storage volume, you can rebuild the server from the volume. You can also resize the server while retaining the previously attached system disk.
 
 **Note:** If IP address persistence is an issue, use a load balancer to maintain a static IP address.
 
 1.	In the Cloud Control Panel, click **Create Server**.
-2.	Re-create your server by choosing your bootable volume image. In the **Image** area, click **Bootable Volume**. 
+2.	Re-create your server by choosing your bootable volume image. In the **Image** area, click **Bootable Volume**.
 3.	Select the applicable volume from the **Block Storage Volume** list.
 4.	Adjust the size of the server under **Flavor** and click.

@@ -2,13 +2,15 @@
 node_id: 4798
 title: Prevent issues with Windows Server reboots
 type: article
-created_date: '2015-08-18 13:28:19'
-created_by: rose.contreras
-last_modified_date: '2016-01-13 19:5703'
-last_modified_by: rose.coste
+created_date: '2015-08-18'
+created_by: Rose Contreras
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: full_html
 ---
+
+[](){#top}
 
 This article describes the procedures that are necessary to restore your
 Windows server to a working state automatically after a reboot. After
@@ -21,6 +23,8 @@ Windows server has rebooted.
 1.  [Verify that your server is fully patched](#verify)
 2.  [Automatically start all critical services](#crit)
 3.  [Perform a test reboot](#test)
+
+[](){#verify}
 
 Verify that your server is fully patched
 ----------------------------------------
@@ -35,21 +39,21 @@ If you are running Windows Server 2008 R2, verify that Service Pack 1 is
 installed on the server. This service pack is not pushed through the
 Windows Update Service.
 
-1.  Open the Control Panel and select **System**.<br>
-    <br>
+1.  Open the Control Panel and select **System**.
+
 2.  In the Windows Edition section, you should see Service Pack 1
-    listed.<br>
-    <br>
+    listed.
+
 
 ### Windows Server 2008 and 2008 R2
 
-1.  Log in to your Windows server.<br>
-    <br>
-2.  Click **Start \> Control Panel**.<br>
-    <br>
+1.  Log in to your Windows server.
+
+2.  Click **Start &gt; Control Panel**.
+
 3.  Click **Windows Update** to view the information about the updates
-    that are ready to be installed.<br>
-    <br>
+    that are ready to be installed.
+
 
 If there is a green shield on the Windows Update page, then the server
 has all patches applied. Otherwise, proceed with the installation of any
@@ -59,20 +63,22 @@ pending updates.
 
 1.  Move the cursor to the bottom-right corner of the screen and
     activate the **Charms** menu.
-2.  Click **Search**.<br>
-    <br>
-3.  Type **Control Panel** for the search term.<br>
-    <br>
-4.  On the ribbon under the search field, click **Control Panel**.<br>
-    <br>
-5.  Click **System and Security**.<br>
-    <br>
-6.  Click **Windows Update** to see if there are pending updates to
-    install. If so, install the updates at a convenient time.<br>
-    <br>
+2.  Click **Search**.
 
-[back to top](#top)<br>
-<br>
+3.  Type **Control Panel** for the search term.
+
+4.  On the ribbon under the search field, click **Control Panel**.
+
+5.  Click **System and Security**.
+
+6.  Click **Windows Update** to see if there are pending updates
+    to install. If so, install the updates at a convenient time.
+
+
+[back to top](#top)
+
+
+[](){#crit}
 
 Automatically start all critical services
 -----------------------------------------
@@ -85,35 +91,37 @@ grab all services that have an automatic startup:
 
 ### Windows Server 2008 and 2008 R2
 
-1.  Click the **Start** menu.<br>
-    <br>
-2.  In the search field, type `services.msc` in the search field.<br>
-    <br>
-3.  Press **Enter**.<br>
-    <br>
+1.  Click the **Start** menu.
+
+2.  In the search field, type `services.msc` in the search field.
+
+3.  Press **Enter**.
+
 4.  In the Services Management window, double-click a service that you
-    want to configure for automatic startup.<br>
-    <br>
+    want to configure for automatic startup.
+
 5.  Set the startup type to **Automatic**.
 
 ### Windows Server 2012 and 2012 R2
 
 1.  Move the cursor to the bottom right corner of the screen and
-    activate the **Charms** menu.<br>
-    <br>
-2.  Click **Search**.<br>
-    <br>
-3.  Type `services.msc`.<br>
-    <br>
-4.  On the ribbon under the search field, click `services.msc`.<br>
-    <br>
+    activate the **Charms** menu.
+
+2.  Click **Search**.
+
+3.  Type `services.msc`.
+
+4.  On the ribbon under the search field, click `services.msc`.
+
 5.  In the Services Management window opens, double-click a service that
-    you want to configure for automatic startup.<br>
-    <br>
+    you want to configure for automatic startup.
+
 6.  Set the startup type to **Automatic**.
 
-[back to top](#top)<br>
-<br>
+[back to top](#top)
+
+
+[](){#test}
 
 Perform a test reboot
 ---------------------
@@ -127,5 +135,5 @@ running the `reboot` command on the server.
 When you perform a test reboot, allocate sufficient time in your
 maintenance window to troubleshoot any issues that arise.
 
- 
+
 

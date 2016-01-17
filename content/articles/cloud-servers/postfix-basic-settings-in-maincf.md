@@ -2,10 +2,10 @@
 node_id: 412
 title: Basic settings in the Postfix main.cf file
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:2607'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -130,7 +130,7 @@ the contents, run the following command:
 
     cat /etc/mailname
 
-Example output for the **democloud**server is as follows:
+Example output for the **democloud** server is as follows:
 
     mail.democloud.com
 
@@ -226,5 +226,5 @@ Summary
 Configuring Postfix can be a daunting task. This introduction helps with
 the basics and shows how using variables instead of hard coding domain
 names can save time and effort in any future
-administration.[](/knowledge_center/node/413)
+administration.[](/howto/creating-dns-records-and-receiving-emails-via-postfix)
 

@@ -2,10 +2,10 @@
 node_id: 586
 title: Bin-deploy an ASP.NET assembly on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:1548'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -34,14 +34,14 @@ Prerequisites {#Prerequisites}
 
 -   You must have an existing Cloud Sites website. If you do not have
     one, see [Adding a new
-    website](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-how-to-add-a-new-website).
+    website](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website).
 -   IIS and ASP.NET should be the default technology on the site or
     should, at a minimum, be enabled on this site.
 -   The Rackspace cloud uses [a modified medium trust
-    configuration](http://www.rackspace.com/knowledge_center/article/modified-medium-trust-on-cloud-sites).
-    To function correctly, the assembly must allow partially trusted
-    callers. If you do not know whether the assembly will work in medium
-    trust, contact the vendor.
+    configuration](/howto/modified-medium-trust-on-cloud-sites).
+    To function correctly, the assembly must allow partially
+    trusted callers. If you do not know whether the assembly will work
+    in medium trust, contact the vendor.
     -   After confirming that the assembly does work in medium trust,
         continue to the Get started section.
     -   If you have a list of requirements for the assembly, contact
@@ -53,9 +53,9 @@ Get started {#Getting_Started}
 
 To get started, you must obtain the assembly that you want to bin
 deploy. As an example, the instructions in this article bin-deploy
-[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"),
-a URL rewriter for ASP.NET applications that do not have the URL Rewrite
-Module installed.
+[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"){.external
+.text}, a URL rewriter for ASP.NET applications that do not have the URL
+Rewrite Module installed.
 
 Obtain the assembly {#Obtaining_UrlRewriterNET}
 -------------------
@@ -63,16 +63,15 @@ Obtain the assembly {#Obtaining_UrlRewriterNET}
 The following steps use UrlRewriter.NET. Substitute with the assembly
 that you want to deploy.
 
-1.  Go to
-    [http://www.urlrewriter.net/](http://www.urlrewriter.net/ "http://www.urlrewriter.net/").
+1.  Go to <http://www.urlrewriter.net/>.
 2.  Click the **Download** tab, and then click the **source code** link
     to download the binaries and source code.
 3.  Select one of the binary files, which is typically the first link
-    under **Newest Files**.<br>
-     The most recent binary file at the time this article was written
-    was **UrlRewriterNet-1\_8.zip**.
-4.  If the download doesn't start within a few seconds, click the direct
-    link.
+    under **Newest Files**.
+    The most recent binary file at the time this article was written was
+    **UrlRewriterNet-1\_8.zip**.
+4.  If the download doesn't start within a few seconds, click the
+    direct link.
 5.  Save the file to your computer.
 6.  Extract the **Intelligencia.UrlRewriter.dll** file.
 
@@ -84,7 +83,7 @@ in the **Bin** directory on your FTP server, which is the standard
 location for bin-deploying assemblies. Following the example, to
 bin-deploy **Intelligencia.UrlRewriter.dll**, [connect to your website's
 FTP server and upload the DLL
-file](https://admin.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-uploading-your-content)
+file](/howto/getting-started-with-cloud-sites-uploading-your-content)
 to the following directory (**www.example.com** is your website name):
 
     /www.example.com/web/content/Bin
@@ -97,15 +96,15 @@ to work correctly. The best way to learn how to load an assembly is to
 consult the vendor's website. In this example, we are bin-deploying
 **Intelligencia.UrlRewriter.dll**, so we consulted the vendor's website
 and found [a help document that explains the
-configuration](http://urlrewriter.net/index.php/support/configuration "http://urlrewriter.net/index.php/support/configuration").
-Using this information, you could load UrlRewriter.NET by using the
-following example **web.config** configuration:
+configuration](http://urlrewriter.net/index.php/support/configuration "http://urlrewriter.net/index.php/support/configuration"){.external
+.text}. Using this information, you could load UrlRewriter.NET by using
+the following example **web.config** configuration:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
       <configSections>
-        <section name="rewriter" 
-                 requirePermission="false" 
+        <section name="rewriter"
+                 requirePermission="false"
                  type="Intelligencia.UrlRewriter.Configuration.RewriterConfigurationSectionHandler, Intelligencia.UrlRewriter" />
 
       </configSections>
@@ -135,5 +134,5 @@ assembly, the best way to learn how to use an assembly is to consult the
 vendor's website. To learn how to use the
 **Intelligencia.UrlRewriter.dll** used in this example, [see the article
 on URL rewriting in
-ASP.NET](http://www.rackspace.com/knowledge_center/article/how-do-i-rewrite-urls-from-aspnet-on-cloud-sites).
+ASP.NET](/howto/rewrite-urls-from-aspnet-on-cloud-sites).
 

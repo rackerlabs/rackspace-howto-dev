@@ -2,10 +2,10 @@
 node_id: 439
 title: Setting up a Mail Relay
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2013-04-17 20:4218'
-last_modified_by: jered.heeschen
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2013-04-17'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -18,9 +18,9 @@ not reliably get through to your intended recipients.
 
 To be able to send email reliably from your server, we recommend you
 sign up for a Rackspace Email account
-([http://www.rackspace.com/apps/email\_hosting/](http://www.rackspace.com/apps/email_hosting/ "http://www.rackspace.com/apps/email_hosting/")),
-use a relay service like
-[Mailgun](http://www.rackspace.com/knowledge_center/article/introduction-to-mailgun-email-automation),
+(<http://www.rackspace.com/apps/email_hosting/>), use a relay service
+like
+[Mailgun](/howto/introduction-to-mailgun-email-automation),
 or use any email account that allows you to send email via secure SMTP
 authentication. You can then configure your server to send email through
 that account. This way, you are still able to send mail and avoid these
@@ -41,11 +41,13 @@ password for the account you are going to send the mail to. For our
 other Cloud Servers customer, this article is intended to help you with
 the basic setup.
 
-Step by Step
-------------
+[](){#Step_by_Step}
+
+<span class="mw-headline">Step by Step </span>
+----------------------------------------------
 
 1. Install postfix and SASL tools
-:    
+:
 
 For RHEL or CentOS:
 
@@ -56,12 +58,12 @@ For Ubuntu:
     aptitude update
     apt-get install postfix libsasl2-modules
 
-2. Configure Postfix
+2\. Configure Postfix
 
 Add the following to /etc/postfix/main.cf:
 
-    relayhost = secure.emailsrvr.com 
-    smtp_sasl_auth_enable=yes 
+    relayhost = secure.emailsrvr.com
+    smtp_sasl_auth_enable=yes
     smtp_sasl_password_maps=hash:/etc/postfix/sasl_passwd
     smtp_sasl_mechanism_filter = AUTH LOGIN
     smtp_sasl_security_options =
@@ -70,7 +72,7 @@ Add the Rackspace Email username and password to
 /etc/postfix/sasl\_passwd by running these commands:
 
     echo 'secure.emailsrvr.com username@domain.com:secretpassword' > /etc/postfix/sasl_passwd
-    chmod 600 /etc/postfix/sasl_passwd 
+    chmod 600 /etc/postfix/sasl_passwd
     postmap /etc/postfix/sasl_passwd
 
 Restart Postfix and check the mail logs, you should see something like

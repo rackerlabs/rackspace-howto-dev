@@ -2,10 +2,10 @@
 node_id: 5029
 title: Cloud Big Data - FAQ
 type: article
-created_date: '2015-12-10 17:58:33'
+created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11 23:1550'
-last_modified_by: kyle.laffoon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -54,12 +54,12 @@ You can use Big Data to perform the following tasks:
 -   Gain interoperability with any third-party software tool that
     supports HDP
 -   Access Fanatical Support&reg; on a 24x7x365 basis via chat, ticket, or
-    phone at 1-800-961-4454 (US toll free) and 1-210-312-4000
-    (international)
+    phone at 1-800-961-4454 (US toll free) and
+    1-210-312-4000 (international)
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Billing
 -------
@@ -76,7 +76,7 @@ pricing](http://www.rackspace.com/cloud/servers#pricinganchor)
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 General
 -------
@@ -91,15 +91,14 @@ Cloud Control Panel and a RESTful API.
 ### Where can I find the Cloud Big Data SLA?
 
 The service level agreements (SLAs) for Cloud Big Data and Cloud Servers
-are available at
-[http://www.rackspace.com/cloud/legal/sla](http://www.rackspace.com/cloud/legal/sla).
+are available at <http://www.rackspace.com/cloud/legal/sla>.
 
 ^[back\\ to\\ top](#top)^
 
 ### Where can I access the Cloud Big Data API?
 
 You can access the Big Data API documentation
-at [https://developer.rackspace.com/docs/](https://developer.rackspace.com/docs/).
+at <https://developer.rackspace.com/docs/>.
 
 ^[back\\ to\\ top](#top)^
 
@@ -108,7 +107,7 @@ at [https://developer.rackspace.com/docs/](https://developer.rackspace.com/docs/
 You can access Rackspace Fanatical Support&reg; on a 24x7x365 basis by using
 the following methods:
 
- 
+
 
 -   Live Chat: Click LiveChat in the Cloud Control Panel
 -   Phone: US toll free 1-800-961-4454, international 1-210-312-4000
@@ -128,12 +127,12 @@ and overall maintenance of Cloud Big Data data across regional
 boundaries to other Cloud Servers. The endpoints to use for your Cloud
 Big Data API calls are summarized in the following table:
 
-  Region                   Endpoint
-  ------------------------ ------------------------------------------------------------------
-  Chicago (ORD)            `https://ord.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/`
-  Dallas/Fr. Worth (DFW)   `https://dfw.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/`
-  London (LON)             `https://lon.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/`
-  Northern Virginia        `https://iad.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/`
+| Region                 | Endpoint                                                         |
+|------------------------|------------------------------------------------------------------|
+| Chicago (ORD)          | `https://ord.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/` |
+| Dallas/Fr. Worth (DFW) | `https://dfw.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/` |
+| London (LON)           | `https://lon.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/` |
+| Northern Virginia      | `https://iad.bigdata.api.rackspacecloud.com/v1.0/yourAccountID/` |
 
 Replace the yourAccountID placeholder with your actual account number,
 which is returned as part of the authentication service response, after

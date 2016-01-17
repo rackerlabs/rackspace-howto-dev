@@ -2,10 +2,10 @@
 node_id: 654
 title: Upload files to a classic ASP website on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:3119'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -16,8 +16,8 @@ following information:
 -   The data center location of the website, ORD or DFW. If the website
     test link contains **dfw**, then the site is assigned to DFW;
     otherwise, it is ORD. You can view the test link on the **General
-    Settings** tab for the website in the Cloud Sites Control Panel.<br>
-      
+    Settings** tab for the website in the Cloud Sites Control Panel.
+
 -   The web directory into which the files are uploaded. You can view
     the web directory on the **Features** tab for the website in the
     Cloud Sites Control Panel.
@@ -26,7 +26,7 @@ After you have this information, use the following two ASP files as
 references to upload files. The `USERNAME` and `PASSWORD` in
 **UploadScript1.asp** are the same as those used for impersonation (see
 [Add impersonation to your ASP.NET
-site](http://www.rackspace.com/knowledge_center/article/add-impersonation-to-your-aspnet-cloud-site)).
+site](/howto/add-impersonation-to-your-aspnet-cloud-site)).
 
 ### test1.asp
 
@@ -42,7 +42,7 @@ site](http://www.rackspace.com/knowledge_center/article/add-impersonation-to-you
 
      </BODY>
      </HTML>
-     
+
 
 ### UploadScript1.asp
 
@@ -59,7 +59,7 @@ site](http://www.rackspace.com/knowledge_center/article/add-impersonation-to-you
 
      </BODY>
      </HTML>
-     
+
 
 If the website is located in the DFW data center, the `Upload.LogonUser`
 line needs to change as follows:

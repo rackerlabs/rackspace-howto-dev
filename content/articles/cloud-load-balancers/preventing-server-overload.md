@@ -2,10 +2,10 @@
 node_id: 1496
 title: Prevent server overload with Cloud Load Balancers
 type: article
-created_date: '2012-07-24 00:13:47'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:1720'
-last_modified_by: rose.contreras
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -29,13 +29,14 @@ Configuring a Load Balancer.
 1.  Log in to the Control Panel.
 2.  At the top of the Control Panel, click **Load Balancers**
 3.  Click onthe **Actions** cog next to your load balancer, and
-    select**Edit Connection Throttling** from the menu.<br>
-     The following pop-up window appears:<br>
-     <br>
-     ![](/knowledge_center/sites/default/files/field/image/827-1496.png)
+    select**Edit Connection Throttling** from the menu.
+    The following pop-up window appears:
+
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/827-1496.png){width="529"
+    height="210"}
 4.  Enter a value for **Max. Connections**, and then click**Save
-    Connection Throttling**. You can specify a value between 1 and
-    100000.
+    Connection Throttling**. You can specify a value between 1
+    and 100000.
 5.  Enter a value for **Max. Connections. You can specify a value
     between 1 and 100000.**
 6.  **Click **Save Connection Throttling**.**

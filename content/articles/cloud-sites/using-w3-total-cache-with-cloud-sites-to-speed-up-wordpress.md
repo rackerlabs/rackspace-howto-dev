@@ -2,10 +2,10 @@
 node_id: 4481
 title: Use W3 Total Cache with Cloud Sites to speed up WordPress
 type: article
-created_date: '2015-01-19 17:20:02'
-created_by: thomas.hester
-last_modified_date: '2015-11-12 18:2516'
-last_modified_by: Nate.Archer
+created_date: '2015-01-19'
+created_by: Thomas Hester
+last_modified_date: '2015-11-12'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: markdown_w_tinymce
 ---
@@ -28,15 +28,15 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
     The W3 Total Cache settings commands are expanded.
 
-    <img alt="" height="204" src="/knowledge_center/sites/default/files/field/image/w3tc_menu.png" width="159" border="1" />
+    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_menu.png" width="159" border="1" />
 
 2. Click **General Settings**.
 
-    <img alt="" height="204" src="/knowledge_center/sites/default/files/field/image/w3tc_general.png" width="166" border="1" />
+    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_general.png" width="166" border="1" />
 
 3. Set the following options and then click **Save all settings**:
 
-	- **Page cache**: Select **Enable**. 
+	- **Page cache**: Select **Enable**.
 	- **Page cache method**: Select **Disk: Basic**.
 	- **Minify**: Select **Enable**.
 	- **Minify mode**: Select **Manual**.
@@ -49,7 +49,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 4. In the menu, click **Page Cache**.
 
-    <img alt="" height="204" src="/knowledge_center/sites/default/files/field/image/w3tc_pagecache.png" width="160" border="1" />
+    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_pagecache.png" width="160" border="1" />
 
 5. Set the following options and then click **Save all settings**:
 
@@ -69,18 +69,18 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 7. Set the following options and then click **Save all settings**:
 
 	- Select **Rewrite URL structure**.
-	
+
 	- In the HTML and XML section, select the following check boxes:
 		- **Inline CSS minification**
 		- **Inline JS minification**
 		- **Don't minify feeds**
-		
+
 	- **JS minify settings**: Select **Enable**.
 	- **CSS minify settings**: Select **Enable**.
 
 8. In the menu, click **Browser Cache**.
 
-    <img alt="" height="216" src="/knowledge_center/sites/default/files/field/image/w3tc_browsercache.png" width="158" border="1" />
+    <img alt="" height="216" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_browsercache.png" width="158" border="1" />
 
 9. Set the following options and then click **Save all settings**:
 
@@ -91,7 +91,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 		-	**Set entity tag (eTag)**
 		-	**Set W3 Total Cache header**
 		-	**Enable HTTP (gzip) compression**
-		
+
 	-	In the CSS, JS, HTML, XML, Media, and other files sections, select the following options:
 		-	**Set Last-Modified header**
 		-	**Set expires header**
@@ -103,7 +103,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 10.	In the menu, click **General Settings**.
 
-11.	Export your settings to a file. 
+11.	Export your settings to a file.
 
     Exporting the settings enables you to import them to a different site for more rapid deployment of the plugin.
 
@@ -120,7 +120,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 5. In the menu, click **CDN**.
 
-    <img alt="" height="128" src="/knowledge_center/sites/default/files/field/image/w3tc_cdn.png" width="162" border="1" />
+    <img alt="" height="128" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_cdn.png" width="162" border="1" />
 
 6. In the **General** section, clear the following check boxes:
 
@@ -134,7 +134,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 	-	Enter your Rackspace Cloud account username.
 
-	-	Enter your API key. For information about your API key, see [View and Reset Your Private Key](https://admin.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).
+	-	Enter your API key. For information about your API key, see [View and Reset Your Private Key](/howto/view-and-reset-your-api-key).
 
 	-	Enter a name for the container. Use a simple name in case you need to make multiple containers for other sites that have W3 Total Cache enabled.
 
@@ -158,9 +158,9 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 ## Final steps
 
-After you've successfully set up W3 Total Cache, in the WordPress menu, click **Performance > Dashboard** and choose to empty all caches. 
+After you've successfully set up W3 Total Cache, in the WordPress menu, click **Performance > Dashboard** and choose to empty all caches.
 
-Visit the page once or twice to trigger the building of the cache by the WordPress cron. 
+Visit the page once or twice to trigger the building of the cache by the WordPress cron.
 
 After the cache is built, you should see a significant change in the speed of your site on both the front end and the back end.
 

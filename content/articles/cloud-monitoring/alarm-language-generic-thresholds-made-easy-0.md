@@ -2,10 +2,10 @@
 node_id: 1947
 title: Alarm Language - Generic Thresholds Made Easy
 type: article
-created_date: '2012-08-10 19:05:26'
-created_by: daniel.dispaltro
-last_modified_date: '2014-05-15 19:1614'
-last_modified_by: rose.contreras
+created_date: '2012-08-10'
+created_by: Daniel Dispaltro
+last_modified_date: '2014-05-15'
+last_modified_by: Rose Contreras
 product: Cloud Monitoring
 body_format: tinymce
 ---
@@ -15,12 +15,24 @@ Cloud Monitoring lets you:
 
 -   Set thresholds with an easy to use alarm language:
 
-        if (metrics['code'] != "200") {  return CRITICAL, "Bad HTTP Status: #{code}"}
+        if (metrics['code'] != "200") {
+          return CRITICAL, "Bad HTTP Status: #{code}"
+        }
 
 -   Create expressive alarms that validate multiple criteria while
     maintaining an easy to use javascript-like interface:
 
-        if (metric['duration'] > 2000) {  return CRITICAL, "HTTP request took more than 2 seconds, it took #{duration} milliseconds."} if (metric['duration'] > 1000) {   return WARNING, "HTTP request took more than 1 second, it took #{duration} milliseconds."} # Check for an empty body matchif (metric['body_match'] == "") {  return CRITICAL, "Body match missing" } return OK, "HTTP connection time is normal"
+        if (metric['duration'] > 2000) {
+          return CRITICAL, "HTTP request took more than 2 seconds, it took #{duration} milliseconds."
+        }
+        if (metric['duration'] > 1000) {
+          return WARNING, "HTTP request took more than 1 second, it took #{duration} milliseconds."
+        }
+        # Check for an empty body match
+        if (metric['body_match'] == "") {
+          return CRITICAL, "Body match missing"
+        }
+        return OK, "HTTP connection time is normal"
 
 -   See the solution patterns in our best practices documentation and
     then easily create your own complex alarms. Our API makes it simple
@@ -37,13 +49,14 @@ Cloud Monitoring lets you:
 -   Use multiple data center alert policies to seamlessly evaluate alarm
     criteria from multiple datacenters:
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/Alarm%20Visualization_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Alarm%20Visualization_0.png){width="717"
+height="262"}
 
 *The graph above shows a check running in 3 monitoring zones. The yellow
 and red areas represent when an alarm is in WARNING and CRITICAL
 respectively.*
 
-* * * * *
+------------------------------------------------------------------------
 
 Key Takeaways
 -------------
@@ -52,8 +65,8 @@ Key Takeaways
 -   Start monitoring faster and spend less sysadmin time on making sure
     that server stays up.
 -   Reduce false alerts on network hiccups.
--   Monitor your website from up to [5 different
-    locations.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
+-   Monitor your website from up to [5
+    different locations.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
     Set the policy you&rsquo;d like to execute on mixed results.
 -   Send an alert to different [notification addresses depending on
     severity](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html).
@@ -63,5 +76,5 @@ Key Takeaways
     puts you in control, don&rsquo;t bother with an awkward JSON API for
     defining thresholds.
 
- 
+
 

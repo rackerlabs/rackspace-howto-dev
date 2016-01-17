@@ -2,21 +2,21 @@
 node_id: 268
 title: Basic Cloud Server Security
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 16:1322'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
 **Note**: These are the basics of connecting to a Linux Cloud Server and
-setting up security. 
+setting up security.
 
 ### Previous section
 
 [Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
 Although Rackspace Cloud has taken steps to make your default Cloud
 Server image as secure as possible, the first line of defense lies in
@@ -35,6 +35,8 @@ modifications may be required for other distributions.)
 -   [iptables in RedHat](#iptablesRH)
 -   [If you're locked out...](#If_you.27re_locked_out...)
 
+[](){#Log_in}
+
 Log in
 ------
 
@@ -48,7 +50,7 @@ that the "remote host identification has changed".
 
 When logging into a Cloud Server via SSH, we learned about the security
 features of [matching the remote host with known
-keys](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console).
+keys](/howto/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console).
  When you rebuild a Cloud Server, the remote host key changes.  As such,
 your computer thinks there is something dodgy going on.
 
@@ -62,6 +64,8 @@ entries that point to your Cloud Server IP address.
 If you are not using Linux or a Mac on your local computer, the location
 of the known\_hosts file will differ.  Please refer to your own OS for
 details of where this file is kept.
+
+[](){#User_administration}
 
 User administration
 -------------------
@@ -105,6 +109,8 @@ adding the line:
 The corrected behavior will take effect after the file has been saved
 and nano has been opened again.
 
+[](){#SSH_keygen}
+
 SSH keygen
 ----------
 
@@ -124,7 +130,7 @@ workstation:
 That's assuming you use Linux or a Mac and the folder does not exist.
  Follow the link to read a detailed article for [key generation using
 Putty for
-Windows](https://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen).
+Windows](/howto/generating-rsa-keys-with-ssh-puttygen).
 
 To create the ssh keys, on your *local* workstation enter:
 
@@ -138,6 +144,8 @@ the Cloud Server.
 
 The other file is your private key. Never show, give away or keep this
 file on a public computer.
+
+[](){#SSH_copy}
 
 SSH copy
 --------
@@ -156,6 +164,8 @@ When prompted, enter the demo user password.
 Change the IP address to your cloud server and the location to your
 admin user's home directory (remember the admin user in this example is
 called demo).
+
+[](){#SSH_Permissions}
 
 SSH Permissions
 ---------------
@@ -183,6 +193,8 @@ It may seem a long set of steps but once you have done it once you can
 see the order of things: create the key on your local workstation, copy
 the public key to the Cloud Server, and set the correct permissions for
 the key.
+
+[](){#SSH_config}
 
 SSH config
 ----------
@@ -226,6 +238,8 @@ the new port.
 
 That's worth emphasizing:  **Do not restart ssh yet.**
 
+[](){#iptables}
+
 iptables in Ubuntu
 ------------------
 
@@ -235,7 +249,7 @@ specify.
 
 The next thing is to set up iptables so that you have a more secure
 installation while allowing the server to run the services that it needs
-to run.  
+to run.
 
 To start with, we're going to have three ports open: **ssh**, **http**,
 and **https**.
@@ -324,8 +338,8 @@ Save your changes, and then make the new script executable:
 That should ensure that whenever your network interfaces are brought up
 (usually just at boot time), the firewall will be too.
 
-iptables in Red Hat
--------------------
+[](){#iptablesRH}iptables in Red Hat
+------------------------------------
 
 If you are using a Red Hat distribution, iptables works a little
 differently.  Using the commands below, you can change your iptables
@@ -386,6 +400,8 @@ ruleset!
 
         # sudo /sbin/service iptables restart
 
+[](){#If_you.27re_locked_out...}
+
 Restarting ssh
 --------------
 
@@ -410,7 +426,7 @@ about a private key, your key may not be installed on the server
 properly (check for extra linebreaks or characters that were missed in a
 copy and paste operation).  If you've been rebuilding the server then
 you may need to [remove the host key from your known hosts
-file](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
+file](/howto/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
 before you can make a connection.
 
 If you're locked out...

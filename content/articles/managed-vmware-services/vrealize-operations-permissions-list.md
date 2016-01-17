@@ -2,10 +2,10 @@
 node_id: 4942
 title: VMware vRealize Operations 6.1 Permissions List
 type: article
-created_date: '2015-11-18 19:26:31'
-created_by: erik.wilson
-last_modified_date: '2016-01-13 15:3356'
-last_modified_by: rose.contreras
+created_date: '2015-11-18'
+created_by: Erik Wilson
+last_modified_date: '2016-01-13'
+last_modified_by: Rose Contreras
 product: Managed VMware Services
 body_format: markdown_w_tinymce
 ---

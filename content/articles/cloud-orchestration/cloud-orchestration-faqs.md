@@ -2,13 +2,15 @@
 node_id: 5008
 title: Cloud Orchestration - FAQ
 type: article
-created_date: '2015-12-09 18:09:37'
-created_by: stephanie.fillmon
-last_modified_date: '2016-01-11 23:1749'
-last_modified_by: kyle.laffoon
+created_date: '2015-12-09'
+created_by: Stephanie Fillmon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Orchestration
 body_format: tinymce
 ---
+
+[](){#top}
 
 General
 -------
@@ -84,7 +86,7 @@ PaaS solutions offer.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Billing and Account
 -------------------
@@ -109,7 +111,7 @@ Cloud Load Balancers used in a stack are billed at standard pricing.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Support
 -------
@@ -132,7 +134,7 @@ applications that use the credentials that you are resetting.
 After your stack has completed, you are provided with private keys and
 passwords for your cloud resources. To reset your server passwords, use
 the [Change
-Password](https://www.rackspace.com/knowledge_center/article/how-to-change-your-server-rootadmin-password-from-your-account)
+Password](/howto/how-to-change-your-server-rootadmin-password-from-your-account)
 function.
 
 ^[back\\ to\\ top](#top)^
@@ -215,7 +217,7 @@ Guide](http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduc
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Features
 --------
@@ -308,7 +310,7 @@ You can see the status of the stack and resources on the Stack page.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 OpenStack
 ---------
@@ -346,7 +348,7 @@ Yes, since Rackspace Cloud Orchestration is based off OpenStack Heat, in
 general, you will be able to easily deploy your existing Heat template
 on Rackspace Cloud. The only exception is that the template must use
 resources that are in the [supported resource
-list](http://orchestration.rackspace.com/raxdox/). 
+list](http://orchestration.rackspace.com/raxdox/).
 
 The latest list of resources can be obtained by listing them out via
 CLI.
@@ -380,8 +382,8 @@ Yes. There are two main differences to note:
 
 2.  Our Service&rsquo;s version of Heat is often ahead of the last official
     OpenStack version At Rackspace, we strive to provide our customers
-    with reliable community developed features of Heat as often as
-    possible. However, to ensure a positive customer experience, our
+    with reliable community developed features of Heat as often
+    as possible. However, to ensure a positive customer experience, our
     Cloud Orchestration service may at times run newer or older feature
     code from that developed in the open community. We do this because
     we employ Test Driven Development methodologies and automation,
@@ -395,7 +397,7 @@ Yes. There are two main differences to note:
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Software
 --------
@@ -429,13 +431,13 @@ the application provider or community.
 
 The stack is supported at the system level with the Managed Operations
 Service Level of support. Only the software in our [Spheres of
-Support](https://admin.rackspace.com/knowledge_center/article/cloud-servers-with-managed-operations-support-for-linux)
+Support](/howto/cloud-servers-with-managed-operations-support-for-linux)
 is supported. Software installed on top of a web server or database
 server (like WordPress or Drupal) is not directly supported, bu the
 underlying system, web server, and database server are supported.
 
 The underlying structure of the stack is supported at all service
-levels. 
+levels.
 
 ^[back\\ to\\ top](#top)^
 
@@ -446,7 +448,7 @@ installed. The location varies depending on the software.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Templates
 ---------
@@ -484,7 +486,7 @@ configuration management artifacts needed to install appropriate
 applications. Templates are written using the HOT (Heat Orchestration
 Template) syntax (currently written in YAML). Documentation on how to
 write templates can be found under the Orchestration topic at
-[http://docs.rackspace.com](http://docs.rackspace.com).
+<http://docs.rackspace.com>.
 
 ^[back\\ to\\ top](#top)^
 
@@ -516,16 +518,16 @@ to select the right type of stack:
 -   Single-server template: All-in-one orchestration in which the
     database, application, and all other resources are on the same
     compute instance. Single-server orchestration are useful for testing
-    or low-traffic situations where there is no intention of increasing
-    capacity. If you think you will need greater capacity, then deploy a
-    load-balanced multi-server template with a dedicated back-end
-    database instead. Not all applications are offered with the
+    or low-traffic situations where there is no intention of
+    increasing capacity. If you think you will need greater capacity,
+    then deploy a load-balanced multi-server template with a dedicated
+    back-end database instead. Not all applications are offered with the
     single-server template.
--   Multiple-server template: Orchestration based on a multiple-tier
-    architecture. Multiple-server templates generally include
-    load-balanced servers and a dedicated back-end database service.
-    Multiple-server templates are ready for production traffic and scale
-    more easily.
+-   Multiple-server template: Orchestration based on a
+    multiple-tier architecture. Multiple-server templates generally
+    include load-balanced servers and a dedicated back-end
+    database service. Multiple-server templates are ready for production
+    traffic and scale more easily.
 -   Rackspace Cloud Databases or Cloud Servers with MySQL: Back-end
     choice is based on your needs. Cloud Databases offers a high,
     consistent level of performance. However, Cloud Databases does not
@@ -534,5 +536,5 @@ to select the right type of stack:
 
 ^[back\\ to\\ top](#top)^
 
- 
+
 

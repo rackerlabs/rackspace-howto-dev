@@ -2,10 +2,10 @@
 node_id: 1319
 title: Installing NGINX and PHP-FPM - Setup for NGINX
 type: article
-created_date: '2012-03-13 00:40:51'
+created_date: '2012-03-13'
 created_by: Kevin Carter
-last_modified_date: '2015-12-23 18:4008'
-last_modified_by: kyle.laffoon
+last_modified_date: '2015-12-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prerequisites
 
 [Installing NGINX and
-PHP-FPM](https://www.rackspace.com/knowledge_center/article/installing-nginx-and-php-fpm)
+PHP-FPM](/howto/installing-nginx-and-php-fpm)
 
 After NGINX installed, you can set up NGINX and PHP-FPM to work on your
 system.
@@ -28,7 +28,7 @@ Set up NGINX configuration files
 --------------------------------
 
 To set up NGINX, you must change the following configuration files,
-which are contained in the directory **/etc/nginx/**. 
+which are contained in the directory **/etc/nginx/**.
 
 -   **nginx.conf**
 -   f**astcgi params**
@@ -51,11 +51,11 @@ file contains two include parameters in the **\# Virtual Host
 Configs** area, which allow you to have a separate configuration file
 directory and a separate virtual host file directory. Although these
 parameters are not necessary, they simplify the deployment of virtual
-hosts. 
+hosts.
 
- 
 
-~~~~ {.p6}
+
+``` {.p6}
 user nginx www-data;
 worker_processes 4;
 pid /var/run/nginx.pid;
@@ -104,19 +104,19 @@ log_format gzip '$remote_addr - $remote_user [$time_local]  '
     include /etc/nginx/sites-enabled/*;
 
 }
-~~~~
+```
 
 NGINX can accommodate a single long configuration file, similar to an
-Apache **httpd.conf**file. Although you can modify the file to fit the
+Apache **httpd.conf** file. Although you can modify the file to fit the
 needs of your particular environment, we recommend that you use the
 configuration shown in the example because this configuration will work
 for most production systems.
 
-### fastcgi params {.p7}
+### fastcgi params {#fastcgi-params .p7}
 
 Use the following parameters in your **fastcgi params** file:
 
-~~~~ {.p6}
+``` {.p6}
 fastcgi_param   QUERY_STRING        $query_string;
 fastcgi_param   REQUEST_METHOD      $request_method;
 fastcgi_param   CONTENT_TYPE        $content_type;
@@ -141,9 +141,9 @@ fastcgi_param   SERVER_NAME     $server_name;
 
 # PHP only, required if PHP was built with --enable-force-cgi-redirect
 fastcgi_param   REDIRECT_STATUS     200;
-~~~~
+```
 
-### security {.p1}
+### security {#security .p1}
 
 Although it is not required, adding a security file to
 your **/etc/nginx** directory will simplify the deployment of a virtual
@@ -151,10 +151,10 @@ host with NGINX.
 
 Use the following parameters in your security file:
 
- 
 
-~~~~ {.p6}
-## Only requests to our Host are allowed 
+
+``` {.p6}
+## Only requests to our Host are allowed
 #      if ($host !~ ^($server_name)$ ) {
 #         return 444;
 #      }
@@ -171,7 +171,7 @@ Use the following parameters in your security file:
          return 404;
          return 403;
      }
-~~~~
+```
 
 ### mail.conf
 
@@ -184,7 +184,7 @@ the file in the **/etc/nginx/conf.d/** directory.
 
 Use the following parameters in your **mail.conf** file:
 
-~~~~ {.p6}
+``` {.p6}
 #mail {
 #       # See sample authentication script at:
 #       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
@@ -205,13 +205,13 @@ Use the following parameters in your **mail.conf** file:
 #               proxy      on;
 #       }
 #}
-~~~~
+```
 
 Note how each directive is commented out. If you want to change your
 NGINX configuration for a high-performance mail proxy server, uncomment
 the preceding directives above by deleting every \#.
 
-Set up virtual hosts {.p8}
+Set up virtual hosts {#set-up-virtual-hosts .p8}
 --------------------
 
 After you have completed your NGINX configuration, you can set up your
@@ -230,9 +230,9 @@ the other.
 To symlink a virtual host config file from one directory to another,
 enter the follwoing command:
 
-~~~~ {.p6}
+``` {.p6}
 ln -s /etc/nginx/sites-available/THE.VIRTUAL.HOST.FILENAME /etc/nginx/sites-enabled/THE.VIRTUAL.HOST.FILENAME
-~~~~
+```
 
 After you have symlinked your virtual host config file, navigate to the
 **/etc/nginx/sites-available/** directory. You will build your virtual
@@ -242,7 +242,7 @@ Following is an example of a virtual host file set up for instances
 using PHP. Replace DOMAINNAME with the name of the domain for which you
 want to create a virtual host.
 
-~~~~ {.p6}
+``` {.p6}
 server {
     server_name  www.DOMAINNAME;
     rewrite ^(.*) http://DOMAINNAME$1 permanent;
@@ -264,7 +264,7 @@ error_log  /var/log/nginx/DOMAINNAME.error.log notice;
             access_log        off;
             expires           max;
         }
- 
+
         location ~ \.php$ {
         try_files $uri =404;
                 fastcgi_pass unix:/var/run/php5-fpm/DOMAINNAME.socket;
@@ -272,18 +272,18 @@ error_log  /var/log/nginx/DOMAINNAME.error.log notice;
                 include /etc/nginx/fastcgi_params;
         }
 }
-~~~~
+```
 
 **Note: **Please review the PHP section of this virtual host template.
 This is the first reference to using UNIX file sockets for processing
 PHP.
 
- 
+
 
 If you want to create a virtual host without PHP, remove the PHP portion
 of the previous configuration file:
 
-~~~~ {.p6}
+``` {.p6}
 server {
     server_name  www.DOMAINNAME;
     rewrite ^(.*) http://DOMAINNAME$1 permanent;
@@ -306,7 +306,7 @@ error_log  /var/log/nginx/DOMAINNAME.error.log notice;
             expires           max;
         }
 }
-~~~~
+```
 
 Both virtual host files you will see that there is a line for **root
 /var/www/DOMAINNAME/htdocs**. This line should point to the location
@@ -316,8 +316,8 @@ serve.
 Now that you have configured NGINX and created your virtual hosts, you
 are now ready to configure PHP-FPM.
 
-### Next steps {.p2}
+### Next steps {#next-steps .p2}
 
 [Installing NGINX and PHP-FPM - Setup for
-PHP-FPM](https://www.rackspace.com/knowledge_center/article/installing-nginx-and-php-fpm-setup-for-php-fpm)
+PHP-FPM](/howto/installing-nginx-and-php-fpm-setup-for-php-fpm)
 

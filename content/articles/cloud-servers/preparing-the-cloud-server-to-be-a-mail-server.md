@@ -2,10 +2,10 @@
 node_id: 418
 title: Preparing the Cloud Server to be a Mail Server
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:2157'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -16,10 +16,10 @@ guarantees for reliability or deliverability. Follow the steps below to
 have a better email sending reputation. As an additional precaution, it
 is helpful to research and consider using the following:
 
--   [DomainKeys Identified Mail
-    (DKIM)](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-dns-additional-resources)
--   [Domain-based Message Authentication, Reporting & Conformance
-    (DMARC) DNS records](http://www.dmarc.org/index.html)
+-   [DomainKeys Identified
+    Mail (DKIM)](/howto/rackspace-cloud-dns-additional-resources)
+-   [Domain-based Message Authentication, Reporting &
+    Conformance (DMARC) DNS records](http://www.dmarc.org/index.html)
 
 It is vital that the Cloud Server has the basics such as the hostname
 and Reverse DNS correctly set before we configure any sort of mail
@@ -29,25 +29,36 @@ settings on the Cloud Server.
 Contents
 --------
 
--   [1 Assumptions](#Assumptions)
--   [2 Hostname](#Hostname)
--   [3 Reboot](#Reboot)
--   [4 Reverse DNS](#Reverse_DNS)
-    -   [4.1 Change Reverse DNS in the Control
-        Panel](#Change_Reverse_DNS_in_the_Control_Panel)
-    -   [4.2 Check the Reverse DNS](#Check_the_Reverse_DNS)
--   [5 Summary](#Summary)
+-   [<span class="tocnumber">1</span> <span
+    class="toctext">Assumptions</span>](#Assumptions)
+-   [<span class="tocnumber">2</span> <span
+    class="toctext">Hostname</span>](#Hostname)
+-   [<span class="tocnumber">3</span> <span
+    class="toctext">Reboot</span>](#Reboot)
+-   [<span class="tocnumber">4</span> <span class="toctext">Reverse
+    DNS</span>](#Reverse_DNS)
+    -   [<span class="tocnumber">4.1</span> <span class="toctext">Change
+        Reverse DNS in the Control
+        Panel</span>](#Change_Reverse_DNS_in_the_Control_Panel)
+    -   [<span class="tocnumber">4.2</span> <span class="toctext">Check
+        the Reverse DNS</span>](#Check_the_Reverse_DNS)
+-   [<span class="tocnumber">5</span> <span
+    class="toctext">Summary</span>](#Summary)
 
-Assumptions
------------
+[](){#Assumptions}
+
+<span class="mw-headline">Assumptions </span>
+---------------------------------------------
 
 The only assumptions made for these email articles are:
 
 1: You are running and have set up Ubuntu Hardy (The instructions may
 work on other distros but it has not been tested and is not guaranteed)
 
-Hostname
---------
+[](){#Hostname}
+
+<span class="mw-headline">Hostname </span>
+------------------------------------------
 
 The first thing to look at is the Cloud Server hostname.
 
@@ -91,8 +102,10 @@ Following on from what we are doing, replace 'cloudserver1' with
 
 Of course, replace mail.democloud.com with your domain.
 
-Reboot
-------
+[](){#Reboot}
+
+<span class="mw-headline">Reboot </span>
+----------------------------------------
 
 Conduct a quick reboot:
 
@@ -108,19 +121,25 @@ The output is now:
 
 Good start!
 
-Reverse DNS
------------
+[](){#Reverse_DNS}
+
+<span class="mw-headline">Reverse DNS </span>
+---------------------------------------------
 
 Now, we need to properly set the reverse DNS for the server.
 
-### Change Reverse DNS in the Control Panel
+[](){#Change_Reverse_DNS_in_the_Control_Panel}
+
+### <span class="mw-headline">Change Reverse DNS in the Control Panel </span>
 
 Navigate to your Server's DNS tab and scroll down to the Reverse DNS
 section. Change the relevant field to the domain name which you'd like
 in the rDNS record. (See [DNS - Creating a Reverse DNS
-Record](http://www.rackspace.com/knowledge_center/article/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record"))
+Record](/howto/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record"))
 
-### Check the Reverse DNS
+[](){#Check_the_Reverse_DNS}
+
+### <span class="mw-headline">Check the Reverse DNS </span>
 
 The RDNS may take a while to propagate and you really need to wait until
 it has done so before you can fully configure and test any mail setup.
@@ -147,8 +166,10 @@ In this case, the output includes the correct answer:
     ;; ANSWER SECTION:
     20.84.75.208.in-addr.arpa. 3477 IN      PTR     mail.democloud.com.
 
-Summary
--------
+[](){#Summary}
+
+<span class="mw-headline">Summary </span>
+-----------------------------------------
 
 Preparing the Cloud Server is a vital step in any mail setup - even if
 'only' sending mail from your application to an administrator, it is

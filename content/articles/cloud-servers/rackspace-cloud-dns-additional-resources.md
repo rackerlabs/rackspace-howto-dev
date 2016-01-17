@@ -2,10 +2,10 @@
 node_id: 1235
 title: Rackspace Cloud DNS - Additional Resources
 type: article
-created_date: '2011-10-19 21:07:51'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 22:1339'
-last_modified_by: rose.contreras
+created_date: '2011-10-19'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,21 +13,21 @@ body_format: tinymce
 ### Prior section
 
 **[Rackspace Cloud DNS - API
-Example](https://admin.rackspace.com/knowledge_center/cloud_dns_api_example)**
+Example](/howto/rackspace-cloud-dns-api-example)**
 
 **Resources**
 
 - For more information regarding the API, we encourage you to review the
 ***Rackspace Cloud DNS API documentation*** which is
-located [here](http://docs.rackspace.com/api/%20). 
+located [here](http://docs.rackspace.com/api/%20).
 
 **Supported Record Types**
 
--   **A** - IPv4 address used to map hostnames to an IP address of the
-    host.
+-   **A** - IPv4 address used to map hostnames to an IP address of
+    the host.
 -   **CNAME (Canonical Name Record)** - Points to another hostname that
     already has an A record associated with it. The CNAME record works
-    like an alias. 
+    like an alias.
 -   **MX** - Used to specify a mail server that is responsible for
     accepting email messages on behalf of a recipient domain.
 -   **SOA** - Specifies authoritive information about a domain,
@@ -49,15 +49,15 @@ sanctioned by that domain's administrator.
 
 - DomainKeys (DKIM) is a method for associating a domain name to an
 e-mail, thereby allowing an organization to take responsibility for a
-message in a way that can be validated by a recipient. 
+message in a way that can be validated by a recipient.
 
 -   **SRV** - Used to define the location (hostname and port) of servers
-    used for a specific service. 
+    used for a specific service.
 
- 
+
 
 ### Next steps
 
 [**Rackspace Cloud DNS - Frequently Asked
-Questions**](https://admin.rackspace.com/knowledge_center/cloud_dns_faq)
+Questions**](/howto/rackspace-cloud-dns-faq)
 

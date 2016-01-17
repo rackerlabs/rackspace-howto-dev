@@ -2,10 +2,10 @@
 node_id: 558
 title: Define mime types on your Windows/IIS based site
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-12 18:5223'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-12'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -32,7 +32,7 @@ extension.
 
 The following example shows the described change:
 
-     
+
     <configuration>
     <system.webServer>
             <staticContent>
@@ -466,7 +466,7 @@ mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentat
 
 ".prm" mimeType="application/octet-stream"
 
-".prx" mimeType="application/octet-stream" p\>
+".prx" mimeType="application/octet-stream" p&gt;
 
 ".ps" mimeType="application/postscript"
 

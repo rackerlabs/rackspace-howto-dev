@@ -2,10 +2,10 @@
 node_id: 4557
 title: Best practices for sending person-to-person email
 type: article
-created_date: '2015-02-11 15:59:07'
-created_by: beau.bailey
-last_modified_date: '2015-12-22 19:5656'
-last_modified_by: stephanie.fillmon
+created_date: '2015-02-11'
+created_by: Beau Bailey
+last_modified_date: '2015-12-22'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -40,9 +40,9 @@ Message format
     Items like missing or empty tags, poor formatting, and non-standard
     conventions are spam indicators.
 -   Also, do not use invisible web-based tracking tools in your emails.
--   Don&rsquo;t insert active components (such as JavaScript, ActiveX, and
-    plug-ins) in your message. If you need rich media content, link to a
-    media-rich page on your website.
+-   Don&rsquo;t insert active components (such as JavaScript, ActiveX,
+    and plug-ins) in your message. If you need rich media content, link
+    to a media-rich page on your website.
 
 Links
 -----
@@ -80,13 +80,13 @@ Word choice
     computer-generated (or translated) content, which is often flagged
     as spam.
 -   Avoid using symbols for letters in words. Spellings like *str@nge*,
-    *|etters*, and *g00gle* in your emails often classify the emails as
-    spam.
+    *|etters*, and *g00gle* in your emails often classify the emails
+    as spam.
 -   Do not overtly reference topics that are highly recognized in spam.
     For example, Rolex watches, Viagra, sexual innuendo, drugs, and
-    financial schemes are easily recognizable as topics contained in
-    spam. An email that mentions topics typically considered spam will
-    most likely cause your email to be considered spam, even if the
+    financial schemes are easily recognizable as topics contained
+    in spam. An email that mentions topics typically considered spam
+    will most likely cause your email to be considered spam, even if the
     intent of the message is legitimate.
 
 Attachments

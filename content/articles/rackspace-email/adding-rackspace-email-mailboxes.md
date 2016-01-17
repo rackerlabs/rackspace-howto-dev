@@ -2,15 +2,15 @@
 node_id: 829
 title: Add Rackspace Email Mailboxes
 type: article
-created_date: '2011-12-18 01:09:51'
-created_by: RackKCAdmin
-last_modified_date: '2015-09-23 16:0549'
-last_modified_by: Nate.Archer
+created_date: '2011-12-18'
+created_by: Rackspace Support
+last_modified_date: '2015-09-23'
+last_modified_by: Nate Archer
 product: Rackspace Email
 body_format: markdown_w_tinymce
 ---
 
-You can add a single mailbox to your Rackspace Email account or add multiple mailboxes by using a CSV or Microsoft Excel file. 
+You can add a single mailbox to your Rackspace Email account or add multiple mailboxes by using a CSV or Microsoft Excel file.
 
 ## Add a single mailbox
 
@@ -41,7 +41,7 @@ You can add a single mailbox to your Rackspace Email account or add multiple mai
 
 	 * **First Name and Last Name** (optional): Enter first and last name information for the mailbox owner.
 
-	 * **Display Name** (optional): Enter the name that to be associated with the mailbox. This name is displayed when the user sends email. 
+	 * **Display Name** (optional): Enter the name that to be associated with the mailbox. This name is displayed when the user sends email.
 
 7.	Click **Save**.
 
@@ -61,9 +61,9 @@ To add multiple mailboxes at one time, you create a CSV or Excel file with the m
 
 5.	Click the  **Add/Edit Multiple Mailboxes** button.
 
-6.	Create a CSV or Excel file that contains the information detailed in the **Data Format** section of the **Import Mailboxes** page. You can download a template to help you create a file with the correct format. 
+6.	Create a CSV or Excel file that contains the information detailed in the **Data Format** section of the **Import Mailboxes** page. You can download a template to help you create a file with the correct format.
 
-    <img src="/knowledge_center/sites/default/files/field/image/829-img1.png" width="581" height="277" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/829-img1.png" width="581" height="277" alt=""  />
 
 	**Note:** The password must contain at least eight characters, including at least three of the following types of characters:
 

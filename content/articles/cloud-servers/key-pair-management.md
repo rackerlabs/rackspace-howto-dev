@@ -2,10 +2,10 @@
 node_id: 3875
 title: Manage SSH Key Pairs for Cloud Servers with python-novaclient
 type: article
-created_date: '2014-01-29 18:14:16'
-created_by: trey.hoehne
-last_modified_date: '2016-01-11 16:1410'
-last_modified_by: stephanie.fillmon
+created_date: '2014-01-29'
+created_by: Trey Hoehne
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -16,9 +16,9 @@ Key-pair authentication is more secure than password-based authentication.  If y
 
 For more information about using SSH to connect to servers, see the following articles:
 
- - For information on connecting and generating keys on the Linux command line or Mac OS X Terminal, see: [Connecting to a server using SSH on Linux or Mac OS](https://www.rackspace.com/knowledge_center/article/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
- - For information on using PuTTY on Windows to make SSH connections, see: [Connecting to Linux from Windows by using PuTTY](https://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-windows-by-using-putty)
- - For information on using PuTTYgen on Windows to generate key pairs, see: [Generating RSA Keys With SSH - PuTTYgen](https://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen)
+ - For information on connecting and generating keys on the Linux command line or Mac OS X Terminal, see: [Connecting to a server using SSH on Linux or Mac OS](/howto/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
+ - For information on using PuTTY on Windows to make SSH connections, see: [Connecting to Linux from Windows by using PuTTY](/howto/connecting-to-linux-from-windows-by-using-putty)
+ - For information on using PuTTYgen on Windows to generate key pairs, see: [Generating RSA Keys With SSH - PuTTYgen](/howto/generating-rsa-keys-with-ssh-puttygen)
 
 This article discusses using the python-novaclient command-line tool to generate a key pair and assign its public key to a Linux server when the server is created.
 
@@ -26,7 +26,7 @@ You can also manage key pairs directly by using the [Cloud Servers API](http://d
 
 ### Prepare python-novaclient
 
-The instructions in this article assume that the python-nova client is installed and configured for use with Cloud Servers.  You can find detailed instructions for setting up the client in [Using python-novaclient with the Rackspace Cloud](http://www.rackspace.com/knowledge_center/article/using-python-novaclient-with-the-rackspace-cloud).
+The instructions in this article assume that the python-nova client is installed and configured for use with Cloud Servers.  You can find detailed instructions for setting up the client in [Using python-novaclient with the Rackspace Cloud](/howto/using-python-novaclient-with-the-rackspace-cloud).
 
 ### Create a Key Pair
 
@@ -87,7 +87,7 @@ On Linux and Mac, you can add your private key to your user account's .ssh direc
     Host myservername
     User myuser
     HostName myServerDnsOrIp
-    IdentityFile /path/to/appropriate/ssh/rsa/private/key 
+    IdentityFile /path/to/appropriate/ssh/rsa/private/key
 
 Or, you can use the `-i` option for `ssh` to identify the private key for a connection.  For example:
 

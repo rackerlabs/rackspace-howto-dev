@@ -2,9 +2,9 @@
 node_id: 3647
 title: Rackspace Monitoring Checks and Alarms
 type: article
-created_date: '2013-08-16 19:36:32'
+created_date: '2013-08-16'
 created_by: Jim Culbreath
-last_modified_date: '2016-01-04 21:4048'
+last_modified_date: '2016-01-04'
 last_modified_by: Mike Asthalter
 product: Cloud Monitoring
 body_format: tinymce
@@ -23,7 +23,8 @@ clicking the Create Check button in a server's monitoring page.
 monitor the system disk. The data disk is not monitored.
 
 ![available
-checks](/knowledge_center/sites/default/files/field/image/checks.png)
+checks](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/checks.png){width="511"
+height="388"}
 
 The checks are listed in two separate groups:
 
@@ -33,7 +34,7 @@ The checks are listed in two separate groups:
 -   **Agent checks:**  These checks are performed by the monitoring
     agent running on your server. They monitor the resource utilization
     of the server. To learn more, read [Install the Rackspace Monitoring
-    Agent](http://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent "Install the Rackspace Monitoring Agent").
+    Agent](/howto/install-and-configure-the-rackspace-monitoring-agent "Install the Rackspace Monitoring Agent").
 
 Check and alarm settings
 ------------------------
@@ -47,7 +48,7 @@ The checks are defined below. For the official definitions, see the
 Rackspace Monitoring Developer guide [Available Check Types and
 Fields.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types.html "Check type documentation")
 Please note, only those checks listed below are available through the
-control panel. Checks not available in the control panel are noted. 
+control panel. Checks not available in the control panel are noted.
 
 ### Remote checks
 
@@ -99,14 +100,14 @@ server.
     -   **Memory alarm:**  This alarm notifies you when your server
         memory usage goes above the percentage you set in the criteria.
 
-2.  **CPU check:**  This check monitors and displays your server's CPU
-    usage. It also displays your server's historical usage.
+2.  **CPU check:**  This check monitors and displays your server's
+    CPU usage. It also displays your server's historical usage.
     -   **CPU alarm:**  This alarm sends a notification when your CPU
         usage average exceeds the set criteria.
 
 3.  **Load average check:**  This check monitors and displays your
-    system's load average. This option is most often used with Linux
-    machines.
+    system's load average. This option is most often used with
+    Linux machines.
     -   **Load average alarm:**  This alarm sends a notification when
         your system's load exceeds a number you specify for greater than
         **X** number of minutes. **X** is generally set for 5 minutes.
@@ -114,8 +115,8 @@ server.
 4.  **File system check:**  This check monitors and displays disk usage
     in a directory that you specify.
     -   **File aystem alarm:**  This alarm sends a notification when the
-        disk space in your specified directory exceeds the parameter you
-        set.
+        disk space in your specified directory exceeds the parameter
+        you set.
 
 5.  **Network check:**  This check monitors your network receiving and
     transmitting traffic. The unit of value for this alarm is megabits

@@ -2,10 +2,10 @@
 node_id: 3774
 title: How to scale multinode WordPress by using Rackspace Orchestration
 type: article
-created_date: '2013-11-12 23:30:07'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-11 14:3833'
-last_modified_by: rose.coste
+created_date: '2013-11-12'
+created_by: Rackspace Support
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Coste
 product: Cloud Orchestration
 body_format: markdown_w_tinymce
 ---
@@ -23,7 +23,7 @@ This guide provides the instructions for adding a new node to scale a multinode 
 1. Log in to [the Cloud Control Panel](https://mycloud.rackspace.com).
 
 2. In the top navigation bar, click **Orchestration > Stacks**.
-    <img src="/knowledge_center/sites/default/files/field/image/1563-3774IMG_0.png" width="619" height="87" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1563-3774IMG_0.png" width="619" height="87" border="1" alt=""  />
 
 3. On the Stacks page, click the name of the stack that you want to scale.
 
@@ -31,7 +31,7 @@ This guide provides the instructions for adding a new node to scale a multinode 
 
 5. In the server details page, go to the **Actions** menu and select **Create Image**.
 
-      <img src="/knowledge_center/sites/default/files/field/image/cpcreateimage.png" width="220" height="426" border="1" alt=""  />
+      <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cpcreateimage.png" width="220" height="426" border="1" alt=""  />
 
 6. When prompted, enter a name for the image and click **Create Image**.
 
@@ -41,7 +41,7 @@ This guide provides the instructions for adding a new node to scale a multinode 
 
 9. In the popup dialog box, click the gear icon next to the name of the new image and select **Create Server with Image** from the menu.
 
-    <img src="/knowledge_center/sites/default/files/field/image/cpviewimage.png" width="600" alt="" border="1"  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cpviewimage.png" width="600" alt="" border="1"  />
 
 10. On the server creation page, enter a name for the new server and select the region where it will be created.
 
@@ -57,17 +57,17 @@ After the server is created and active, you need to make a few adjustments befor
 
 1. From the server detail page, note the ServiceNet IP address of the new server. You will need this information in a later step.
 
-    <img src="/knowledge_center/sites/default/files/field/image/cpservicenet.png" width="600" border="2" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cpservicenet.png" width="600" border="2" alt=""  />
 
 2. Click the **Orchestration** link at the top of the page and return to the stack that you are scaling out.
- 
+
 3. In the Infrastructure section of the stack's page, click the link for the master server in the list of nodes.
 
 4. From the master server's detail page, find the PublicNet IP address in the Networks section and use it to log in to your server via SSH.
 
     If you do not have the stack's private key, you can reset the master server's root password.
 
-    For help using the SSH key with your server, see the Knowledge Center article on the subject for [Mac/Linux](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows).
+    For help using the SSH key with your server, see the Knowledge Center article on the subject for [Mac/Linux](/howto/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](/howto/logging-in-with-an-ssh-private-key-on-windows).
 
 4. After you have logged in to the master server, change the directory to `/etc/lsyncd` and open the `lsyncd.conf.lua` file with `nano`.
 
@@ -75,9 +75,9 @@ After the server is created and active, you need to make a few adjustments befor
     cd /etc/lsyncd
     sudo nano lsyncd.conf.lua
     ~~~
-    
+
     The file's contents should look something like the following (you might have more sections depending on how many servers you have):
-    
+
     ~~~
     settings = {
        logfile    = "/var/log/lsyncd/lsyncd.log",
@@ -154,11 +154,11 @@ After the server is created and active, you need to make a few adjustments befor
     wp-content/uploads/2013/11/ilovelamp-300x219.jpg
     wp-content/uploads/2013/11/ilovelamp-400x270.jpg
     wp-content/uploads/2013/11/ilovelamp.jpg
-    
+
     sent 27885 bytes  received 936 bytes  19214.00 bytes/sec
     total size is 12563838  speedup is 435.93
     Fri Nov  8 23:20:45 2013 Normal: Startup of '/var/www/vhosts/iloveblog.rackspace.com/http_docs/' finished.
-    
+
     sent 105017 bytes  received 261 bytes  70185.33 bytes/sec
     total size is 12563838  speedup is 119.34
     Fri Nov  8 23:20:45 2013 Normal: Startup of '/var/www/vhosts/iloveblog.rackspace.com/http_docs/' finished.

@@ -2,10 +2,10 @@
 node_id: 3788
 title: Forced MA Routing
 type: article
-created_date: '2013-11-19 04:03:13'
-created_by: milton.prado
-last_modified_date: '2015-12-17 20:5920'
-last_modified_by: Nate.Archer
+created_date: '2013-11-19'
+created_by: Milton Prado
+last_modified_date: '2015-12-17'
+last_modified_by: Nate Archer
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -19,17 +19,17 @@ environment while still being able to send and receieve mail on your old
 environment.  Enabling this feature will ensure that emails sent to your
 domain from current Rackspace users do not deliver to the mailboxes on
 our system.  Those emails will be routed to your live environment
-instead.  
+instead.
 
 Enabling Forced MX Routing is ideal for customers who wish to Pre-Stage
 their email migration to Rackspace.  This allows a company to completely
 mirror their current environment, migrate all data, and setup all users,
 without affecting the delivery of email until the date of the MX records
-change.  
+change.
 
 If Forced MX Routing has been enabled, it's important that it be
 immediately disabled after the switch-over to Rackspace. Not doing so
-may result in email delivery problems for the domain.  
+may result in email delivery problems for the domain.
 
 How to Enable/Disable Forced MX Routing
 ---------------------------------------

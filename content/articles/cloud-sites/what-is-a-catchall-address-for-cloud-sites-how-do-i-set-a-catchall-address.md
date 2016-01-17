@@ -2,10 +2,10 @@
 node_id: 717
 title: Set a catchall email address for Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 15:2155'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -35,9 +35,10 @@ not been set up as mailboxes on the system.
 To set up a catchall email account for a particular domain
 ----------------------------------------------------------
 
-1.  Log in to the [Cloud Sites Control
-    Panel.](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com")
-2.  In the left navigation pane, select **Hosting \> Cloud Sites**.
+1.  Log in to the [Cloud Sites
+    Control Panel.](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com"){.external
+    .text}
+2.  In the left navigation pane, select **Hosting &gt; Cloud Sites**.
 3.  Select the domain for which you want to add a catchall account.
 4.  Click the **Email Accounts** tab.
 5.  Add the email account that you want to use for the catchall address

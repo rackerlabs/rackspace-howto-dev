@@ -2,13 +2,15 @@
 node_id: 5012
 title: Cloud Sites - FAQ
 type: article
-created_date: '2015-12-10 14:41:21'
-created_by: stephanie.fillmon
-last_modified_date: '2016-01-11 23:1117'
-last_modified_by: kyle.laffoon
+created_date: '2015-12-10'
+created_by: Stephanie Fillmon
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: full_html
 ---
+
+[](){#top}
 
 Getting Started
 ---------------
@@ -16,7 +18,7 @@ Getting Started
 ### How do my sub-accounts access their control panel?
 
 The Rackspace Cloud sub-account log in page can be found at
-[https://www.websitesettings.com](https://www.websitesettings.com).
+<https://www.websitesettings.com>.
 
 ^[back\\ to\\ top](#top)^
 
@@ -44,7 +46,7 @@ environment.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Account Services
 ----------------
@@ -88,7 +90,7 @@ was featured on Oprah) please contact us via chat, phone, or ticket in
 advance and we will help you prepare for it. The information we will
 need can be found at the end of the article [Optimize your website on
 Cloud
-Sites](http://www.rackspace.com/knowledge_center/article/optimize-your-website-on-cloud-sites). 
+Sites](/howto/optimize-your-website-on-cloud-sites).
 
 ^[back\\ to\\ top](#top)^
 
@@ -127,7 +129,7 @@ functions typically accessed via shell are available on the Rackspace
 Cloud, including cron jobs, file permissions, and unzip. You can also do
 many SSH type functions by mounting your FTP location locally using
 SSHFS. More information can be found
-[here](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients). 
+[here](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients).
 
 ^[back\\ to\\ top](#top)^
 
@@ -154,8 +156,7 @@ really designed for audio processing, video processing, or streaming
 tasks. You can have some audio or video content on Cloud Sites, but the
 service was not designed to be a processing farm for audio conversion,
 video conversion, or a Shoutcast system to use for live audio streaming.
-See [FFMPeg on Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/ubuntu-intrepid-installing-ffmpeg).
+.
 
 ^[back\\ to\\ top](#top)^
 
@@ -167,7 +168,7 @@ can be hosted with us. You can find a copy of our
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Compromised Sites
 -----------------
@@ -237,7 +238,7 @@ recommend specific security plugins.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Security
 --------
@@ -253,11 +254,11 @@ rules.
 
 For instructions, see [Controlling access to Linux Cloud Sites based on
 the client IP
-address](https://www.rackspace.com/knowledge_center/article/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
+address](/howto/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Backups
 -------
@@ -265,7 +266,7 @@ Backups
 ### How often do Cloud Sites backup information?
 
 The entire Cloud Sites FTP structure is backed up in an [FTP
-Snapshot](https://www.rackspace.com/knowledge_center/article/ftp-snapshot)
+Snapshot](/howto/ftp-snapshot)
 at the top of every hour, going back 32 hours. Those backups are rolled
 into a nightly backup, which are retained for two days. However, these
 backups are for disaster recovery on the server side. If for any reason
@@ -297,7 +298,7 @@ system is automatically backed up on a repeating schedule.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Web Servers
 -----------
@@ -351,9 +352,7 @@ script:
 
 Replace "?" with the appropriate megabyte value. Our default size is set
 to 128 MB, and a successful modification of the memory limit will show
-in your PHP info file. For more information, see [How can I view server
-configuration information for
-PHP?](https://www.rackspace.com/knowledge_center/article/view-server-configuration-information-for-php)
+in your PHP info file.
 
 ^[back\\ to\\ top](#top)^
 
@@ -506,15 +505,15 @@ points to the file containing a list of authorized users.
 
     # The name of the area
     AuthName "Name of Password Protected Area"
-     
+
     # Type of authentication. Always basic
     AuthType Basic
-     
+
     # Path to .htpasswd file for the site.
     # It's preferable to not have this in any
     # of the site's content directories.
     AuthUserFile /mnt/Target01/[DDI_ID]/[CLIENT_ID]/[WEBSITE_NAME]/.htpasswd
-     
+
     # The requirements to view the site. This
     # requires that the browser provide
     # credentials matching on of the users in
@@ -590,7 +589,7 @@ website](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html).
 
 ### How do I enable SSI?
 
- 
+
 
 You can activate Server Side Includes (SSI) by using .htaccess with the
 following directives:
@@ -637,11 +636,11 @@ This will not work for IIS (ASP / ASP.NET).
 
 Please see this article for converting a site from Windows (IIS) to
 Linux (PHP) technology: [Change your site's default
-technology](https://www.rackspace.com/knowledge_center/article/change-your-sites-default-technology).
+technology](/howto/change-your-sites-default-technology).
 
 You can also view this article for assistance with rewriting from
 ASP.NET: [How do I rewrite URLs from
-ASP.NET?](https://www.rackspace.com/knowledge_center/article/how-do-i-rewrite-urls-from-aspnet-on-cloud-sites)
+ASP.NET?](/howto/rewrite-urls-from-aspnet-on-cloud-sites)
 
 ^[back\\ to\\ top](#top)^
 
@@ -662,7 +661,7 @@ example, you might add this to your .htaccess:
 
 You will want to change the path in the example above to use your
 website's absolute path. Please see [this
-article](http://www.rackspace.com/knowledge_center/article/locate-the-linux-path-for-your-cloud-sites-website)
+article](/howto/locate-the-linux-path-for-your-cloud-sites-website)
 to locate your website's absolute path.
 
 Your website's absolute path should resemble this:
@@ -683,7 +682,7 @@ them.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Web Technologies
 ----------------
@@ -694,11 +693,11 @@ While Cloud Sites is not designed for credit card storage and is not PCI
 compliant, it can be used as a flexible front-end to a payment gateway.
 For more information, see our article on [utilizing Cloud Sites in an
 e-commerce
-solution](https://www.rackspace.com/knowledge_center/article/how-to-utilize-cloud-sites-in-an-e-commerce-solution).
+solution](/howto/utilize-cloud-sites-in-an-e-commerce-solution).
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Billing
 -------
@@ -719,9 +718,9 @@ for this request.
 
 1.  Log in to the [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com/).
-2.  At the top of the window, click **Tickets**.<br>
-     You are redirected to the Support Tickets page in the Cloud Control
-    Panel.
+2.  At the top of the window, click **Tickets**.
+    You are redirected to the Support Tickets page in the Cloud
+    Control Panel.
 3.  Click **Create Ticket**.
 4.  Complete the form and then click **Submit Ticket**.
 
@@ -744,20 +743,21 @@ that we have to earn your business every month.
 ### How can I found out if a bill wasn't collected or a payment wasn't processed?
 
 You can access billing information for Cloud Sites by clicking **Your
-Account** \> **Billing**in the Cloud Sites Control Panel. This action
+Account** &gt; **Billing** in the Cloud Sites Control Panel. This action
 opens the Billing & Payments section of the Cloud Control Panel. This
 section displays important information like your total outstanding
 balance, the date of your most recent invoice, and which credit card is
 being used for payments on the account.
 
--   The Recent Activity section lists a summary of your most recent
-    invoice. This summary includes the date and amount of your most
-    recent invoice and your current balance.
+-   The Recent Activity section lists a summary of your most
+    recent invoice. This summary includes the date and amount of your
+    most recent invoice and your current balance.
 -   In the Payment Information section, you can update your billing
     information and change the credit card attached to the account.
--   The Billing History section displays a summary of your invoice
-    history. Click an ID number for an invoice to view additional
-    information or download the invoice in your preferred format.
+-   The Billing History section displays a summary of your
+    invoice history. Click an ID number for an invoice to view
+    additional information or download the invoice in your
+    preferred format.
 
 ^[back\\ to\\ top](#top)^
 
@@ -817,19 +817,21 @@ information from the **Cloud Sites Control Panel**.
 
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
-2.  In the left navigation menu, click **Your Account** \> **Billing**.<br>
-     You are redirected to the Billing & Payments section of the Cloud
+2.  In the left navigation menu, click **Your Account** &gt;
+    **Billing**.
+    You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
-3.  To edit your credit card, click **Edit Credit Card** under Payment
-    Information.
+3.  To edit your credit card, click **Edit Credit Card** under
+    Payment Information.
 4.  When you are done making changes, click **Save Credit Card.**
 
 **To edit billing information**
 
 1.  Log in to your control panel at
     [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com/).
-2.  In the left navigation menu, click **Your Account** \>**Billing**.<br>
-     You are redirected to the Billing & Payments section of the Cloud
+2.  In the left navigation menu, click **Your Account** &gt;
+    **Billing**.
+    You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  Click the pencil icon next to **Billing Address.**
 4.  When done making changes, click **Save Contact**.
@@ -841,9 +843,9 @@ information from the **Cloud Control Panel**.
 
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
-2.  Open the **Account:**menu in the top right corner of the screen, and
-    click **Billing & Payments**.<br>
-     The Billing & Payments section is displayed.
+2.  Open the **Account:** menu in the top right corner of the screen,
+    and click **Billing & Payments**.
+    The Billing & Payments section is displayed.
 3.  To edit your credit card, click **Edit Credit Card** under Payment
     Information
 4.  When you are done making changes, click **Save Credit Card.**
@@ -852,9 +854,9 @@ information from the **Cloud Control Panel**.
 
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
-2.  Open the **Account:**menu in the top right corner of the screen, and
-    click **Billing & Payments**.<br>
-     The Billing & Payments section is displayed.
+2.  Open the **Account:** menu in the top right corner of the screen,
+    and click **Billing & Payments**.
+    The Billing & Payments section is displayed.
 3.  Click the pencil icon next to **Billing Address.**
 4.  When done making changes, click **Save Contact**.
 
@@ -866,7 +868,7 @@ No, FTP bandwidth does not count against your monthly transfer.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Linux and PHP
 -------------
@@ -892,7 +894,7 @@ allows us to release new changes more quickly.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 MySQL
 -----
@@ -901,7 +903,7 @@ MySQL
 
 You should be able to use the *Online Manager* (see [PHPmyAdmin Database
 Management
-Interface](/knowledge_center/index.php/Working_with_a_MySQL_database "Working with a MySQL database"))
+Interface](/howto/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface "Working with a MySQL database"))
 to import databases that are less than 16 MB in size without issue.
 
 However, if you need to import database data that exceeds 16 MB into
@@ -913,39 +915,46 @@ Following is an example to help you set up this script:
     #!/bin/sh
     mysql -h DB_HOST -u DB_USER -p'DB_PASSWORD' DB_NAME < /path/to/file/db_import.sql
 
-1.  Create a new text file, add the preceding code to it, and save it as
-    restore.sh. In the preceding script, replace the placeholders with
-    your actual information, as follows:
+1.  Create a new text file, add the preceding code to it, and save it
+    as restore.sh. In the preceding script, replace the placeholders
+    with your actual information, as follows:
     -   *pathToFile*&mdash;This is the absolute path to your files. You can
-        find this path by clicking on Hosting \> Cloud Sites \> Features
-        in the Cloud Sites Control Panel and scrolling down the page.
-        This path is the Linux Path listed there. An example is
-        /mnt/target02/123456/www.domain.com. (Note that the file name is
-        not included in this path.)
+        find this path by clicking on Hosting &gt; Cloud Sites &gt;
+        Features in the Cloud Sites Control Panel and scrolling down
+        the page. This path is the Linux Path listed there. An example
+        is /mnt/target02/123456/www.domain.com. (Note that the file name
+        is not included in this path.)
 
-    -   *databaseHost* - The name of the database host. An example is
-        mysql5-9.wc1.
+    <!-- -->
+
+    -   *databaseHost* - The name of the database host. An example
+        is mysql5-9.wc1.
+
+    <!-- -->
 
     -   *database*User - The name of the database user.
 
+    <!-- -->
+
     -   databae\_Password - The password of the target database.
 
-    -   *databaseName* - The name of the database to which you are
-        restoring.
+    <!-- -->
+
+    -   *databaseName* - The name of the database to which you
+        are restoring.
 
 2.  Upload this file to your Cloud Site (for security purposes, we
     recommend keep this file outside your webroot) and create a "perl"
     cron job to schedule the task (the perl option runs shell scripts as
-    well). For instructions on how to create a cron job, see
-    [How\_do\_I\_enable/disable\_a\_cron\_job?](/knowledge_center/index.php/How_do_I_enable/disable_a_cron_job%3F "How do I enable/disable a cron job?").<br>
-     **Note**: For security purposes, we recommend that you keep this
+    well)..
+    **Note**: For security purposes, we recommend that you keep this
     file outside your webroot directory.
 3.  Put the name of the file, which in this example is import.sh, in the
     "Command To Run" field.
 4.  Select **Perl** as the Command Language and then select the minimum
     interval at which you want to run that script (5 minutes is
-    recommended).<br>
-     Logs are available in your `/logs/` folder each time a cron job is
+    recommended).
+    Logs are available in your `/logs/` folder each time a cron job is
     performed and you receive an email confirmation informing you if the
     job was successful or not.
 
@@ -970,7 +979,7 @@ following articles:
 
 ^[back\\ to\\ top](#top)^
 
- 
 
- 
+
+
 

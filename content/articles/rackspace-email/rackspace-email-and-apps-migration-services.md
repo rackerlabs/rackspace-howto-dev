@@ -2,10 +2,10 @@
 node_id: 3619
 title: Email migration services
 type: article
-created_date: '2013-07-15 19:00:26'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-22 19:2517'
-last_modified_by: stephanie.fillmon
+created_date: '2013-07-15'
+created_by: Rackspace Support
+last_modified_date: '2015-12-22'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -20,7 +20,7 @@ you have any questions or concerns.
 -   [Rackspace archive services](#Rackspacearchives)
 -   [Internal migration services](#Internalmirgrations)
 
-### **External migration services**
+### **[](){#Externalmigrations}External migration services**
 
 Are you a new customer and require email data to be migrated from
 another provider? Well you&rsquo;re in luck! We've partnered with a 3^rd^
@@ -46,8 +46,8 @@ Begin!](https://cp.rackspace.com/Domains/Tools/Migrations)
 -   Can be accessed from any Internet browser
 -   24/7 Fanatical Support provided by a team of email experts
 
-#### <br>
- **Option 2: Assisted migration**
+####
+**Option 2: Assisted migration**
 
 Assisted Migrations are ideal for companies in need of consulting,
 planning and scheduling a migration project. Our Assisted Migration
@@ -73,26 +73,28 @@ Migrations vary based on the type of mailboxes we are migrating to and
 from. Please see the chart below for a list of what will migrate using
 our services.
 
-  Current Service      Rackspace service   Mail inbox   Mail subfolders   Contacts   Calendar   Tasks   Notes
-  -------------------- ------------------- ------------ ----------------- ---------- ---------- ------- -------
-  POP                  X                                                                                 
-  IMAP                 X                   X            X                                                
-  Microsoft Exchange   X                   X            X                 X          X          X       X
+| Current Service    | Rackspace service | Mail inbox | Mail subfolders | Contacts | Calendar | Tasks | Notes |
+|--------------------|-------------------|------------|-----------------|----------|----------|-------|-------|
+| POP                | X                 |            |                 |          |          |       |       |
+| IMAP               | X                 | X          | X               |          |          |       |       |
+| Microsoft Exchange | X                 | X          | X               | X        | X        | X     | X     |
 
- 
 
- 
 
-### **Rackspace archive services**
+
+
+### **[](){#Rackspacearchives}Rackspace archive services**
 
 -   **Rackspace archive imports**
     -   \$6 per GB via FTP
+
+<!-- -->
 
 -   **Rackspace archive exports**
     -   \$6 per GB EML format
     -   \$9 per GB PST format
 
-### **Internal migration services**
+### **[](){#Internalmirgrations}Internal migration services**
 
 Do you have an employee who is going through a name change and needs an
 email account renamed? Does your company need a domain rename? Do you
@@ -100,35 +102,50 @@ want to switch to a new email platform or upgrade from an older one? Our
 internal migration services help you to perform these tasks. Simply
 submit a request via a ticket and we'll take care of the rest.
 
-+--------------------------+--------------------------+--------------------------+
-| Service                  | Cost                     | Notes                    |
-+==========================+==========================+==========================+
-| Upgrade from Exchange    | No charge                | None                     |
-| 2007 or 2010 to Exchange |                          |                          |
-| 2013                     |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| Platform changes         | No charge                | -   Convert from         |
-|                          |                          |     Rackspace Email to   |
-|                          |                          |     Microsoft Exchange   |
-|                          |                          |     and keep the same    |
-|                          |                          |     address.             |
-|                          |                          | -   Convert from         |
-|                          |                          |     Exchange to          |
-|                          |                          |     Rackspace Email and  |
-|                          |                          |     keep the same        |
-|                          |                          |     address.             |
-+--------------------------+--------------------------+--------------------------+
-| Domain rename            | No charge                | \$50 if Rackspace        |
-|                          |                          | archiving is enabled for |
-|                          |                          | the domain               |
-+--------------------------+--------------------------+--------------------------+
-| Mailbox rename           | No charge                | None                     |
-+--------------------------+--------------------------+--------------------------+
-| Mailbox data migrations  | No charge                | Migrate data from        |
-|                          |                          | OneUser@domain.com to    |
-|                          |                          | DifferentUser@domain.com |
-|                          |                          | .                        |
-+--------------------------+--------------------------+--------------------------+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Service</th>
+<th align="left">Cost</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Upgrade from Exchange 2007 or 2010 to Exchange 2013</td>
+<td align="left">No charge</td>
+<td align="left">None</td>
+</tr>
+<tr class="even">
+<td align="left">Platform changes</td>
+<td align="left">No charge</td>
+<td align="left"><ul>
+<li>Convert from Rackspace Email to Microsoft Exchange and keep the same address.</li>
+<li>Convert from Exchange to Rackspace Email and keep the same address.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td align="left">Domain rename</td>
+<td align="left">No charge</td>
+<td align="left">$50 if Rackspace archiving is enabled for the domain</td>
+</tr>
+<tr class="even">
+<td align="left">Mailbox rename</td>
+<td align="left">No charge</td>
+<td align="left">None</td>
+</tr>
+<tr class="odd">
+<td align="left">Mailbox data migrations</td>
+<td align="left">No charge</td>
+<td align="left">Migrate data from OneUser@domain.com to DifferentUser@domain.com.</td>
+</tr>
+</tbody>
+</table>
 
 **Note**: Charges for internal migration services are applied to the
 next month's statement.

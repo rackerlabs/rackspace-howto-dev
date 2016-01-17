@@ -2,21 +2,21 @@
 node_id: 4168
 title: 'How to Install a LAMP stack on CentOS, Fedora, or Red Hat'
 type: article
-created_date: '2014-08-04 20:49:39'
+created_date: '2014-08-04'
 created_by: Rackspace Support
-last_modified_date: '2014-08-19 14:3055'
-last_modified_by: kyle.laffoon
+last_modified_date: '2014-08-19'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-This article provides instructions for installing a LAMP (Linux, Apache,
-MySQL, PHP) stack on your server. Linux (CentOS, Fedora, or Red Hat
-Enterprise Linux) is your operating system, and Apache is your web
-daemon, which serves information that is stored in your MySQL database
-through PHP scripting for your users. By the end of this article, you
-will have a fully operational LAMP server, ready to serve out multiple
-virtual hosts.
+<span class="message_content">This article provides instructions for
+installing a LAMP (Linux, Apache, MySQL, PHP) stack on your server.
+Linux (CentOS, Fedora, or Red Hat Enterprise Linux) is your operating
+system, and Apache is your web daemon, which serves information that is
+stored in your MySQL database through PHP scripting for your users. By
+the end of this article, you will have a fully operational LAMP server,
+ready to serve out multiple virtual hosts</span>.
 
 Prerequisites
 -------------
@@ -37,7 +37,7 @@ server on your server operating system:
 
     sudo sh -c "yum install httpd httpd-devel mysql mysql-server mysql-devel php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml -y; service mysqld start && mysql_secure_installation && service mysqld restart && service httpd start && chkconfig httpd on && chkconfig mysqld on &&iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && /etc/init.d/iptables save"
 
-<br>
+
 **Individual commands method**
 
 The following steps break the preceding one-line command into individual
@@ -74,7 +74,7 @@ steps.
 The installation is complete. To test it, browse to
 ***http://serverIpAddress/***.
 
- 
 
- 
+
+
 

@@ -2,10 +2,10 @@
 node_id: 3990
 title: Cached media file name extensions on Cloud Sites
 type: article
-created_date: '2014-04-01 16:25:32'
-created_by: luis.garcia
-last_modified_date: '2016-01-13 15:0739'
-last_modified_by: stephanie.fillmon
+created_date: '2014-04-01'
+created_by: Luis Garcia
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -34,5 +34,5 @@ device's resource availability.
 
 For information about bypassing the cache, see: [Disable caching on
 Cloud
-Sites?](https://www.rackspace.com/knowledge_center/article/disable-caching-on-cloud-sites)
+Sites?](/howto/disable-caching-on-cloud-sites)
 

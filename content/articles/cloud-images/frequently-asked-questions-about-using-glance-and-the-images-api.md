@@ -2,10 +2,10 @@
 node_id: 3851
 title: Cloud Images FAQ
 type: article
-created_date: '2014-01-14 21:44:52'
-created_by: cloud.images
-last_modified_date: '2016-01-07 15:5419'
-last_modified_by: rose.contreras
+created_date: '2014-01-14'
+created_by: Cloud Images
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 body_format: tinymce
 ---
@@ -139,8 +139,8 @@ body_format: tinymce
         property?](#what-happens-if-i-try-to-modify-a-protected-property)
     -   [How do I know what properties are
         protected?](#how-do-i-know-what-properties-are-protected)
-    -   [I'm creating sub-users on my account and assigning them RBAC
-        roles. Which roles can modify image
+    -   [I'm creating sub-users on my account and assigning them
+        RBAC roles. Which roles can modify image
         properties?](#im-creating-sub-users-on-my-account-and-assigning-them-rbac-roles.-which-roles-can-modify-image-properties)
     -   [Which roles can create image
         properties?](#which-roles-can-create-image-properties)
@@ -210,7 +210,7 @@ functionality more quickly and transparently in the future.
 The Images API returns JSON exclusively. There is no option to receive
 responses in XML.
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Sharing
 -------------
@@ -220,7 +220,7 @@ Image Sharing
 Yes! Image sharing is now available in the Cloud Control Panel. Please
 see the following Knowledge Center article for details: [Sharing images
 in the Cloud Control
-Panel](http://www.rackspace.com/knowledge_center/article/sharing-images-in-the-cloud-control-panel).
+Panel](/howto/sharing-images-in-the-cloud-control-panel).
 
 #### Where can I read a quick summary of image sharing?
 
@@ -293,7 +293,7 @@ up as an option in the Region dropdown on either the Server List or
 Create Server pages. API users can look directly in their service
 catalog. To learn more about regions in the Rackspace cloud, please see
 the Knowledge Center article[Where are the Rackspace data centers
-located?](https://www.rackspace.com/knowledge_center/article/where-are-the-rackspace-data-centers-located).
+located?](/howto/rackspace-data-centers-and-regions).
 
 #### What if someone shares an image to me that I don't want, or if I don't know the person?
 
@@ -319,7 +319,7 @@ If you encounter fraudulent activities, please contact Support.
 #### What happens if an image with malware, etc. is shared to me? How can I report it?
 
 You can report suspicious activities to Rackspace Support and to
-[cloudimageshelp@rackspace.com](mailto:cloudimageshelp@rackspace.com).
+<cloudimageshelp@rackspace.com>.
 
 #### What happens if I build a server from a shared image and then have to rebuild the server?
 
@@ -357,7 +357,7 @@ a way that allows it to be used in the SYD region. If your image is in
 IAD, and you share it with someone else, they will only be able to build
 servers from the image in the IAD region.
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Tags
 ----------
@@ -381,7 +381,7 @@ Image tags make it easy to group images into functional units. You can
 retrieve a particular group of images by using the `tag=<tag_value>`
 filter on an `image-list` call.
 
-* * * * *
+------------------------------------------------------------------------
 
 RBAC
 ----
@@ -400,9 +400,9 @@ There are also three product-specific roles:
 
 For details on the Cloud Image roles, see the Knowledge Center article
 [Detailed Permission Matrix for Cloud
-Images](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-images).
+Images](/howto/detailed-permissions-matrix-for-cloud-images).
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Tasks
 -----------
@@ -415,12 +415,12 @@ all Glance installations. At the same time, since the infrastructures of
 OpenStack clouds can vary greatly, tasks can be customized for each
 particular cloud.
 
-#### What can I do with tasks? {#"what-can-i-do-with-tasks}
+#### [](){#what-can-I-do-with-tasks}What can I do with tasks? {#"what-can-i-do-with-tasks}
 
 You can import and export images. See [Image Import and
 Export](#image-import-and-export) elsewhere in this FAQ.
 
-#### What RBAC roles can create tasks? {#"what-roles-can-create-tasks}
+#### [](){#what-RBAC-roles-can-create-tasks}What RBAC roles can create tasks? {#"what-roles-can-create-tasks}
 
 You must have an **Admin** role to create tasks.
 
@@ -430,7 +430,7 @@ See the [Rackspace Cloud Images Developer
 Guide](http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html)
 for more details.
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Import and Export
 -----------------------
@@ -468,7 +468,7 @@ however, is not sufficient to guarantee a "bootable" image. The image
 must also follow Rackspace open cloud bootstrapping practices. For
 details on these practices, please see the Knowledge Center article
 [Preparing an Image for Import into the Rackspace Open
-Cloud](http://www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-opencloud).
+Cloud](/howto/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 #### Are there any limitations on the operating system installed on an image?
 
@@ -540,7 +540,7 @@ zero, you may export the image.
 You can find a detailed example of exporting an image in the first half
 of the article [Transferring images between regions of the Rackspace
 Open
-Cloud](http://www.rackspace.com/knowledge_center/article/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Cloud](/howto/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Where is my exported image?
 
@@ -555,7 +555,8 @@ Panel:
 
 ![Screenshot of the contents of a Cloud Files container illustrating a
 Dynamic Large Object and its
-segments](/knowledge_center/sites/default/files/field/image/file-listing_0.png)
+segments](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/file-listing_0.png){width="632"
+height="337"}
 
 In the screenshot, the "manifest objects" are contained in red boxes.
 Note that each one is zero bytes in size and has a filename of the form
@@ -575,8 +576,8 @@ a typical VM image through the Cloud Control Panel.)
 #### Can you recommend a way for me to download my exported image from Cloud Files? {#how-to-download}
 
 We recommend using the **Swiftly** Cloud Files client. Please
-read [Using Swiftly to Download an Exported
-Image](http://www.rackspace.com/knowledge_center/article/using-swiftly-to-download-an-exported-image).
+read [Use Swiftly to Download an Exported
+Image](/howto/use-swiftly-to-download-an-exported-image).
 
 #### If I have cloud servers in multiple regions, will an imported image be available in all regions?
 
@@ -595,14 +596,14 @@ each region.
 
 See the Knowledge Center article [Transferring Images Between Regions of
 the Rackspace Open
-Cloud](http://www.rackspace.com/knowledge_center/article/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Cloud](/howto/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Can I use image export and import to move between Infrastructure and Managed accounts? {#can-i-end-run-managed-service}
 
 Yes, it is possible to now move images between Infrastructure and
 Managed accounts by following the steps in the article [Transferring
 Images Between Regions of the Rackspace Open
-Cloud](http://www.rackspace.com/knowledge_center/article/transferring-images-between-regions-of-the-rackspace-open-cloud)
+Cloud](/howto/transferring-images-between-regions-of-the-rackspace-open-cloud)
 to export the required image, then import it into whatever account the
 customer requires. Any images that are shared, imported, or exported are
 deemed to be non-standard, therefore the *Infrastructure* service level
@@ -615,20 +616,20 @@ need to be recreated upon successful import or share.
 
 See the Knowledge Center article [Preparing an Image for Import into the
 Rackspace Open
-Cloud](www.rackspace.com/knowledge_center/article/preparing-an-image-for-import-into-the-rackspace-open-cloud).
+Cloud](/howto/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 #### Can you recommend a way to upload my image to Cloud Files so it can be imported? {#how-to-upload}
 
 We recommend using the **swiftly** Cloud Files client. Please see this
 Knowledge Center article: [Using Swiftly to upload an image to be
-imported](http://www.rackspace.com/knowledge_center/article/using-swiftly-to-upload-an-image-to-be-imported).
+imported](/howto/use-swiftly-to-upload-an-image).
 
 #### Can you give me step-by-step instructions for importing an image? {#import-step-by-step}
 
 You can find a detailed example of importing an image in the second half
 of the article [Transferring images between regions of the Rackspace
 Open
-Cloud](http://www.rackspace.com/knowledge_center/article/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Cloud](/howto/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### What's the deal with the checksum on my imported (or exported) image? {#whats-the-deal-with-checksums}
 
@@ -669,7 +670,7 @@ import, it's not a snapshot of any existing server in the Cloud. Thus,
 the Control Panel considers this is a snapshot of a deleted server. Your
 imported image is listed under the **Deleted Servers** category.
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Metadata and Property Protection {#image-metadata-andproperty-protection}
 --------------------------------------
@@ -722,7 +723,7 @@ privileges exceed the capabilities that should properly be assigned to a
 "creator" role, so we restrict image property creation to users with a
 customer-admin role.
 
-* * * * *
+------------------------------------------------------------------------
 
 Image Support
 -------------
@@ -730,9 +731,9 @@ Image Support
 #### Where can I find the Rackspace Cloud Terms of Service?
 
 -   For the UK cloud:
-    [http://www.rackspace.co.uk/legal/cloud-terms-of-service](http://www.rackspace.co.uk/legal/cloud-terms-of-service)
+    <http://www.rackspace.co.uk/legal/cloud-terms-of-service>
 -   For the US cloud:
-    [http://www.rackspace.com/information/legal/cloud/tos](http://www.rackspace.com/information/legal/cloud/tos)
+    <http://www.rackspace.com/information/legal/cloud/tos>
 
 The Terms of Service incorporate the Rackspace Acceptable Use Policy.
 You can find links to the appropriate AUP document for your region from
@@ -742,7 +743,7 @@ the TOS pages at the above URLs.
 
 Imported and shared images are considered to be non-standard images,
 read the article [Standard and Non-Standard
-Images](http://www.rackspace.com/knowledge_center/article/rackspace-standard-and-non-standard-images).
+Images](/howto/rackspace-standard-and-non-standard-images).
 For servers booted from non-standard images, you may expect that we will
 ensure host servers are functioning properly and that the API
 availability meets the SLA. We will also provide advice on sharing,
@@ -768,5 +769,5 @@ standard Cloud Servers SLA.
 #### I've got a question that's not listed here. How can I get an answer?
 
 For additional questions, either contact Support or send an email to
-[cloudimageshelp@rackspace.com](mailto:cloudimageshelp@rackspace.com).
+<cloudimageshelp@rackspace.com>.
 

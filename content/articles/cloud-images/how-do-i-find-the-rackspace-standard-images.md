@@ -2,10 +2,10 @@
 node_id: 3853
 title: Identifying Rackspace Standard Images
 type: article
-created_date: '2014-01-14 23:48:03'
-created_by: cloud.images
-last_modified_date: '2016-01-12 15:4249'
-last_modified_by: stephanie.fillmon
+created_date: '2014-01-14'
+created_by: Cloud Images
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 body_format: tinymce
 ---
@@ -14,7 +14,7 @@ Standard images are images supplied by Rackspace and supported for your
 Rackspace Cloud account's type and service level.  The distinction
 between standard and non-standard images is described in detail in the
 Knowledge Center article [Rackspace Standard and Non-Standard
-Images](https://www.rackspace.com/knowledge_center/article/rackspace-standard-and-non-standard-images "Rackspace Standard and Non-Standard Images").
+Images](/howto/rackspace-standard-and-non-standard-images "Rackspace Standard and Non-Standard Images").
 
 The set of standard images is not the same for all Rackspace Cloud
 accounts.  The standard images for an account differ based on the
@@ -54,5 +54,5 @@ Support Implications
 
 Please see this Knowledge Center article: [Rackspace Standard and
 Non-Standard
-Images](https://www.rackspace.com/knowledge_center/article/rackspace-standard-and-non-standard-images "Rackspace Standard and Non-Standard Images").
+Images](/howto/rackspace-standard-and-non-standard-images "Rackspace Standard and Non-Standard Images").
 

@@ -2,10 +2,10 @@
 node_id: 1242
 title: 'Getting Started With Cloud Sites, Logging into the Control Panel'
 type: article
-created_date: '2011-11-08 17:50:05'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 16:4722'
-last_modified_by: stephanie.fillmon
+created_date: '2011-11-08'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,9 +19,9 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
+
 
 ### Hello and welcome to the Rackspace Cloud!
 
@@ -36,28 +36,31 @@ Panel](http://manage.rackspacecloud.com/) to access your account.
 
 -   Log in with the username & password that you selected when you
     created the account.  Those credentials are only for accessing the
-    Control Panel. 
+    Control Panel.
 
 The Control Panel has 3 main sections
 
-1.  **The Left Navigation menu** (green box)
-2.  **Details Section** (blue box)
-3.  **Cloud News** (purple box)
+1.  **The Left Navigation menu** (<span>green box</span>)
+2.  **Details Section** (<span>blue box</span>)
+3.  **Cloud News** (<span>purple box</span>)
 
 [![Click here to view full size
-image](http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png "Click here to view full size image")](http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png)
+image](http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png "Click here to view full size image"){width="1463"
+height="780"}](http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png)
 
-Left Navigation Menu
---------------------
+[](){#Left_Navigation_Menu}
+
+<span class="mw-headline">Left Navigation Menu</span>
+-----------------------------------------------------
 
 Your "Go To" menu, where you access all your assets, support, and manage
 account information.
 
-Details Section
----------------
+<span class="mw-headline">Details Section</span>
+------------------------------------------------
 
 This dynamic section displays the specific data associated with your
-selections from the left navigation menu. 
+selections from the left navigation menu.
 
 Cloud News
 ----------
@@ -69,33 +72,37 @@ announcements.  Any news of service impacting events will still be
 reported from the [Cloud
 Status](http://status.rackspacecloud.com/) page.
 
-Left Navigation Menu
---------------------
+<span class="mw-headline">Left Navigation Menu</span>
+-----------------------------------------------------
 
 -   **Home** - Takes you to the Welcome page with Account Activity
-    Summary displayed. 
+    Summary displayed.
 
-![](http://c739518.r18.cf2.rackcdn.com/gettingstartedhighlight.png)
+![](http://c739518.r18.cf2.rackcdn.com/gettingstartedhighlight.png){width="450"
+height="398"}
 
 Click on the tab labeled 'Getting Started' from the Welcome screen.
  This will show you a brief overview of some key concepts for our
 products, and is a handy 'quick-reference' guide.
 
 [![Click here to view full size
-image](http://c806394.r94.cf2.rackcdn.com/gettingstarted.png "Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/gettingstarted.png)
+image](http://c806394.r94.cf2.rackcdn.com/gettingstarted.png "Click here to view full size image"){width="1248"
+height="533"}](http://c806394.r94.cf2.rackcdn.com/gettingstarted.png)
 
 -   **Hosting** - Create and manage your devices and services like Cloud
     Files, Cloud Servers, and Cloud Load Balancers.  The Client tab is
     for setting up clients, client plans, and messages for Cloud Sites
     resellers
 
-![](http://c806394.r94.cf2.rackcdn.com/hosting.png)
+![](http://c806394.r94.cf2.rackcdn.com/hosting.png){width="296"
+height="456"}
 
 -   **Your Account** - Manage
-    your [billing](http://www.rackspace.com/knowledge_center/article/billing-services-overview),
+    your [billing](/howto/billing-services-overview),
     account information, and API key.
 
-![](http://c739518.r18.cf2.rackcdn.com/YourAccount.png)
+![](http://c739518.r18.cf2.rackcdn.com/YourAccount.png){width="709"
+height="694"}
 
 -   **Support** - Access all of our support resources - Developer
     Guides, Cloud Status, Knowledge Center, Problem Ticketing System,
@@ -103,7 +110,8 @@ image](http://c806394.r94.cf2.rackcdn.com/gettingstarted.png "Click here to view
     the top of the page.
 
 [![Click here to view full size
-image](http://c739518.r18.cf2.rackcdn.com/Support.png "Click here to view full size image")](http://c739518.r18.cf2.rackcdn.com/Support.png)
+image](http://c739518.r18.cf2.rackcdn.com/Support.png "Click here to view full size image"){width="1340"
+height="610"}](http://c739518.r18.cf2.rackcdn.com/Support.png)
 
 -   **Logout** - Logout of the control panel.
 
@@ -114,5 +122,5 @@ details of the Billing portion of your Control Panel.
 ### Next section
 
 [Accessing billing
-information](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-accessing-billing-information)
+information](/howto/getting-started-with-cloud-sites-accessing-billing-information)
 

@@ -2,10 +2,10 @@
 node_id: 518
 title: ASP/.NET Integrated Mode on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2011-09-07 15:2109'
-last_modified_by: matt.wheeler
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2011-09-07'
+last_modified_by: Matt Wheeler
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,31 +20,32 @@ a member of our support team and they can assist in moving your site to
 a Classic App Pool.
 
 ASP.NET applications require migration when specifying configuration in
-\<httpModules\> or \<httpHandlers\>.
+&lt;httpModules&gt; or &lt;httpHandlers&gt;.
 
 You will receive a 500 - Internal Server Error. This can include HTTP
 Error 500.22, and HTTP Error 500.23: An ASP.NET setting has been
 detected that does not apply in Integrated managed pipeline mode.
 
 It occurs because ASP.NET modules and handlers should be specified in
-the IIS \<handlers\> and \<modules\> configuration sections in
+the IIS &lt;handlers&gt; and &lt;modules&gt; configuration sections in
 Integrated Mode.
 
 You can migrate by moving the custom entries in the
-\<system.web\>/\<httpModules\> and \<system.web\>/\<httpHandlers\>
-configuration manually to the \<system.webServer\>/\<handlers\> and
-\<system.webServer\>/\<modules\> configuration sections, and either
-removing the \<httpHandlers\> and \<httpModules\> configuration OR
-adding the following to your application&rsquo;s web.config:
+&lt;system.web&gt;/&lt;httpModules&gt; and
+&lt;system.web&gt;/&lt;httpHandlers&gt; configuration manually to the
+&lt;system.webServer&gt;/&lt;handlers&gt; and
+&lt;system.webServer&gt;/&lt;modules&gt; configuration sections, and
+either removing the &lt;httpHandlers&gt; and &lt;httpModules&gt;
+configuration OR adding the following to your application&rsquo;s web.config:
 
-\<system.webServer\>
+&lt;system.webServer&gt;
 
       <validation validateIntegratedModeConfiguration="false" />
 
-\</system.webServer\>
+&lt;/system.webServer&gt;
 
-<br>
- Request URLs containing unencoded &ldquo;+&rdquo; characters in the path (not
+
+Request URLs containing unencoded &ldquo;+&rdquo; characters in the path (not
 querystring) is rejected by default.
 
 You will receive HTTP Error 404.11 &ndash; Not Found: The request filtering
@@ -61,16 +62,16 @@ in the system.webServer/security/requestFiltering configuration section
 in the application&rsquo;s web.config. However, this may make your application
 more vulnerable to malicious URLs:
 
-\<system.webServer\>
+&lt;system.webServer&gt;
 
       <security>
               <requestFiltering allowDoubleEscaping="true" />
       </security>
 
-\</system.webServer\>
+&lt;/system.webServer&gt;
 
-<br>
- Requests with querystrings larger then 2048 bytes will be rejected by
+
+Requests with querystrings larger then 2048 bytes will be rejected by
 default.
 
 You will receive an HTTP Error 404.15 &ndash; Not Found: The request filtering
@@ -89,7 +90,7 @@ attribute on the requestLimits element in the
 system.webServer/security/requestFiltering configuration section in your
 application&rsquo;s web.config:
 
-\<system.webServer\>
+&lt;system.webServer&gt;
 
       <security>
           <requestFiltering>
@@ -97,11 +98,11 @@ application&rsquo;s web.config:
           </requestFiltering>
       </security>
 
-\</system.webServer\>
+&lt;/system.webServer&gt;
 
-<br>
- DefaultHttpHandler is not supported. Applications relying on
-sub-classes of DefaultHttpHandler will not be able to serve requests.
+
+DefaultHttpHandler is not supported. Applications relying on sub-classes
+of DefaultHttpHandler will not be able to serve requests.
 
 If your application uses DefaultHttpHandler or handlers that derive from
 DefaultHttpHandler, it will not function correctly. In Integrated mode,
@@ -116,5 +117,5 @@ requests and then using DefaultHttpHandler derived handlers to pass the
 request back to IIS.
 
 Source:
-[http://mvolo.com/blogs/serverside/archive/2007/12/08/IIS-7.0-Breaking-Changes-ASP.NET-2.0-applications-Integrated-mode.aspx](http://mvolo.com/blogs/serverside/archive/2007/12/08/IIS-7.0-Breaking-Changes-ASP.NET-2.0-applications-Integrated-mode.aspx "http://mvolo.com/blogs/serverside/archive/2007/12/08/IIS-7.0-Breaking-Changes-ASP.NET-2.0-applications-Integrated-mode.aspx")
+<http://mvolo.com/blogs/serverside/archive/2007/12/08/IIS-7.0-Breaking-Changes-ASP.NET-2.0-applications-Integrated-mode.aspx>
 

@@ -2,11 +2,11 @@
 node_id: 4450
 title: Public folders availability for Hosted Exchange 2013
 type: article
-created_date: '2014-12-03 16:05:57'
-created_by: kevin.richey
-last_modified_date: '2014-12-05 22:3211'
-last_modified_by: jered.heeschen
-product: Exchange
+created_date: '2014-12-03'
+created_by: Kevin Richey
+last_modified_date: '2014-12-05'
+last_modified_by: Jered Heeschen
+product: Microsoft Exchange
 body_format: markdown_w_tinymce
 ---
 
@@ -36,7 +36,7 @@ Hosted Exchange customers (2007, 2010, and 2013) will be able to use the improve
 
 - Use easier and faster navigation and search.
 
-- See the real-time status of your folders. 
+- See the real-time status of your folders.
 
 ### Public folder limits for Hosted Exchange 2013
 

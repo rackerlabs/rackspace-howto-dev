@@ -2,10 +2,10 @@
 node_id: 1164
 title: Installing MySQL Server on CentOS
 type: article
-created_date: '2011-07-29 14:59:03'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 16:0030'
-last_modified_by: stephanie.fillmon
+created_date: '2011-07-29'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-15'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: full_html
 ---
@@ -31,22 +31,22 @@ extensions for PHP. Check your application documentation for details.
 **Note:** CentOS 7 has replaced MySQL with MariaDB. To reflect this,
 instructions for MariaDB procedures are included in this article.
 
-+--------------------------------------------------------------------------+
-| ### Contents                                                             |
-|                                                                          |
-| -   [Install MySQL](install)                                             |
-| -   [Allow remote access](allow)                                         |
-| -   [Launch MySQL](launch)                                               |
-| -   [Launching at reboot](boot)                                          |
-| -   [The MySQL shell](shell)                                             |
-| -   [Set the root password](root)                                        |
-| -   [Find database users](users)                                         |
-| -   [Create a database](db)                                              |
-| -   [Add users and permissions](users)                                   |
-| -   [Summary](sum)                                                       |
-+--------------------------------------------------------------------------+
+### Contents
 
- 
+-   [Install MySQL](install)
+-   [Allow remote access](allow)
+-   [Launch MySQL](launch)
+-   [Launching at reboot](boot)
+-   [The MySQL shell](shell)
+-   [Set the root password](root)
+-   [Find database users](users)
+-   [Create a database](db)
+-   [Add users and permissions](users)
+-   [Summary](sum)
+
+
+
+[](){#install}
 
 Installing the database application
 -----------------------------------
@@ -77,6 +77,8 @@ then reload the privileges so that your changes will take effect.
 
     sudo yum install mariadb-server mariadb
 
+[](){#allow}
+
 Allow remote access
 -------------------
 
@@ -100,6 +102,8 @@ iptables options without the \`iptables\` command in front of them. For
 this reason, the instructions in this article represent a compromise. It
 is easy to paste the lines into a rules file, and they can be used with
 the \`iptables\` command instead.
+
+[](){#launch}
 
 Starting and stopping the database service
 ------------------------------------------
@@ -126,6 +130,8 @@ Use the following command to stop MariaDB:
 
     sudo systemctl stop mariadb.service
 
+[](){#boot}
+
 Launching at reboot
 
 To ensure that the database server launches after a reboot, you must
@@ -139,7 +145,9 @@ enable the chkconfig utility. Use the following commands to do this.
 
     sudo systemctl enable mariadb.service
 
- 
+
+
+[](){#shell}
 
 The MySQL shell
 ---------------
@@ -157,6 +165,8 @@ password. The following \`mysql\` shell prompt should appear:
 
     mysql>
 
+[](){#root}
+
 Set the root password
 ---------------------
 
@@ -172,6 +182,8 @@ also type them in lowercase. The commands are shown capitalized by
 convention, to make them stand out from field names and other data
 that's being manipulated.
 
+[](){#users}
+
 Viewing users
 -------------
 
@@ -185,8 +197,8 @@ named "user".
 
 The list below lists the descriptions for the parts of that command:
 
--   **SELECT** - tells MySQL that you are asking for data.<br>
-    <br>
+-   **SELECT** - tells MySQL that you are asking for data.
+
 -   **User, Host, Password** - tells MySQL what fields you want it to
     look in. Fields are categories for the data in a table. In this
     case, you are looking for the username, the host associated with the
@@ -208,7 +220,7 @@ you enter it on multiple lines in the \`mysql\` shell, as follows:
         -> FROM mysql.user;
 
 When you press enter after the Password part, you get a new line, so you
-can keep typing. The \`\>\` symbol indicates that you are still in the
+can keep typing. The \`&gt;\` symbol indicates that you are still in the
 middle of a statement. You can type a semicolon by itself to end a
 command if you forget to type it on the same line as the command.
 
@@ -258,6 +270,8 @@ user (refer to the username with empty quotes, like '') or set a
 password for it. Both tasks are covered later in this series of
 articles.
 
+[](){#db}
+
 Create a database
 -----------------
 
@@ -291,6 +305,8 @@ output:
     | mysql              |
     +--------------------+
     3 rows in set (0.00 sec)
+
+[](){#users}
 
 Adding users and permissions
 ----------------------------
@@ -386,6 +402,8 @@ as a very bad practice). You should also read official MySQL
 documentation regarding possible privilege choices, to grant only those
 privileges truly needed, rather than using `ALL`.
 
+[](){#sum}
+
 Summary
 -------
 
@@ -396,7 +414,7 @@ learn more.
 ### Next steps
 
 [Configuring MySQL server on
-CentOS](https://www.rackspace.com/knowledge_center/article/configuring-mysql-server-on-centos)
+CentOS](/howto/configuring-mysql-server-on-centos)
 
- 
+
 

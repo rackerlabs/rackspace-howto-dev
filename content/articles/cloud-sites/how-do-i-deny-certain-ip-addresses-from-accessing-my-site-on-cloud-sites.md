@@ -2,10 +2,10 @@
 node_id: 113
 title: Controlling access to Linux Cloud Sites based on the client IP address
 type: article
-created_date: '2011-03-10 17:13:30'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 19:1446'
-last_modified_by: kyle.laffoon
+created_date: '2011-03-10'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -27,9 +27,9 @@ discouraged as any future Apache updates could make the rules
 unusable.***
 
 To block a specific IP on a given site, the .htaccess file needs to use
-Require not IP \<IP or range\>, within a RequireAll directive, so that
-the rules can verify. Failure to use a Require directive will results in
-an Internal Server Error.
+Require not IP &lt;IP or range&gt;, within a RequireAll directive, so
+that the rules can verify. Failure to use a Require directive will
+results in an Internal Server Error.
 
     <RequireAll>
     Require all granted
@@ -40,23 +40,23 @@ an Internal Server Error.
     </RequireAll>
 
 To allow only a specific IP on a given site, the .htaccess file needs to
-use Require IP \<IP or range\>, but does not require a directive. You
-can also place a simple 403 error message for visitors not meeting the
-requirements.
+use Require IP &lt;IP or range&gt;, but does not require a directive.
+You can also place a simple 403 error message for visitors not meeting
+the requirements.
 
     Require ip 127.0.0.1
     Require ip 10.5.55.123
-    ErrorDocument 403 "This site can only be accessed within the company network" 
+    ErrorDocument 403 "This site can only be accessed within the company network"
 
- 
+
 
 For further reading on more specific rules for blocking or allowing
 access by IP or host, please view the Apache 2.4 documentation for
 Access Control rules:
 
-[https://httpd.apache.org/docs/2.4/howto/access.html](https://httpd.apache.org/docs/2.4/howto/access.html)
+<https://httpd.apache.org/docs/2.4/howto/access.html>
 
- 
+
 
 ### ***The information below is deprecated as of Apache 2.4 and kept for archival purposes while the ORD datacenter is still able to use PHP 5.3/5.4. Users are encouraged to use PHP 5.6 and update their rules according to the above information.***
 
@@ -72,34 +72,38 @@ called **X-Cluster-Client-Ip** that contains the visitor's IP address.
 In the .htaccess file containing your rules, make the appropriate change
 from the list below based on your requirements.
 
-#### Allowing only a certain IP/IP Addresses:
+#### <span class="mw-headline">Allowing only a certain IP/IP Addresses:</span>
 
     order deny,allow
     deny from all
     allow from env=allowclient
     SetEnvIf X-Cluster-Client-Ip 000.000.000.000 allowclient
 
-#### Allowing only a certain IP/IP Addresses when your site is using SSL:
+#### [](){#Allowing_only_a_certain_IP_IP_Addresses_when_your_site_is_using_SSL} <span class="mw-headline">Allowing only a certain IP/IP Addresses when your site is using SSL:</span>
 
-order deny,allow<br>
- deny from all<br>
- allow from 000.000.000.000
+order deny,allow
+deny from all
+allow from 000.000.000.000
 
- 
+
 
 Replace **000.000.000.000** with your IP address. This will only allow
 your IP address to access your site, and is a great way to develop your
-site without the risk of someone reaching it before it's ready.<br>
- **You can repeat line 1 to allow multiple IPs.**
+site without the risk of someone reaching it before it's ready.
+**You can repeat line 1 to allow multiple IPs.**
 
-#### Denying an IP/Multiple IP addresses:
+[](){#Denying_an_IPMultiple_IP_Addresses}
+
+#### <span class="mw-headline">Denying an IP/Multiple IP addresses:</span>
 
     Order Allow,Deny
     Deny from env=DenyAccess
     Allow from all
     SetEnvIf X-Cluster-Client-Ip "^000\.000\.000\.000" DenyAccess
 
-#### Denying an IP/Multiple IP addresses when your site is using SSL:
+[](){#Denying_an_IPMultiple_IP_addresses_when_your_site_is_using_SSL}
+
+#### <span class="mw-headline">Denying an IP/Multiple IP addresses when your site is using SSL:</span>
 
     Order Allow,Deny
     Deny from env=DenyAccess
@@ -108,8 +112,8 @@ site without the risk of someone reaching it before it's ready.<br>
 
 Replace **000\\.000\\.000\\.000** with the IP address you want to deny.
 This will deny the IP address specified/multiple IP addresses (If you
-use multiple lines, as specified below).<br>
- **You can repeat line 1 to deny multiple IP addresses.**
+use multiple lines, as specified below).
+**You can repeat line 1 to deny multiple IP addresses.**
 
 **Important note:** Implementing this code may prevent images from
 loading on your cloud site. To address this you can add the following

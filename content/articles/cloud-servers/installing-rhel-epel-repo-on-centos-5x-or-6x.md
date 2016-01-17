@@ -2,10 +2,10 @@
 node_id: 1272
 title: Install EPEL and additional repositories on CentOS and Red Hat
 type: article
-created_date: '2012-01-11 19:46:34'
-created_by: RackKCAdmin
-last_modified_date: '2015-11-03 19:5652'
-last_modified_by: kyle.laffoon
+created_date: '2012-01-11'
+created_by: Rackspace Support
+last_modified_date: '2015-11-03'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -105,7 +105,7 @@ instances.
 
 ### CentOS 7.x
 
-    wget https://centos7.iuscommunity.org/ius-release.rpm 
+    wget https://centos7.iuscommunity.org/ius-release.rpm
     sudo rpm -Uvh ius-release*.rpm
 
 ### Red Hat 5.x
@@ -177,12 +177,12 @@ use the 64-bit packages that work with Cloud Servers instances.
 
 ### CentOS and Red Hat Enterprise Linux 6.x
 
-    wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm 
+    wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
     sudo rpm -Uvh remi-release-6*.rpm
 
 ### CentOS and Red Hat Enterprise Linux 7.x
 
-    wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm 
+    wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
     sudo rpm -Uvh remi-release-7*.rpm
 
 If you get a File Not Found error message when trying to download the
@@ -230,5 +230,5 @@ repositories, run the following command:
 
     yum repolist disabled
 
- 
+
 

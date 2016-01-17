@@ -2,10 +2,10 @@
 node_id: 720
 title: Register a parked domain with Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 15:0136'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -25,14 +25,15 @@ To register a parked domain with Cloud Sites
 --------------------------------------------
 
 1.  Log in to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
-2.  In the left navigation pane, click **Hosting \> Cloud Sites**.
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com"){.external
+    .free}.
+2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Click **Add A Site**.
 4.  In the Add a New Website dialog box, select the site owner and enter
     the domain name, and then click **Add New Site**.
 5.  Select the term length for the purchase of the domain.
-6.  Under **Other Options**, select **Domain Registration Only (park
-    domain)** and click **Next**.
+6.  Under **Other Options**, select **Domain Registration Only
+    (park domain)** and click **Next**.
 
 You should receive confirmation that Cloud Sites has added your website
 to your account.

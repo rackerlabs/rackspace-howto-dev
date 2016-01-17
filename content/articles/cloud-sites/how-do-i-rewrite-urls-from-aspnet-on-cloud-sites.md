@@ -2,10 +2,10 @@
 node_id: 642
 title: Rewrite URLs from ASP.NET on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:2250'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -69,11 +69,12 @@ In this example, we match **example.asp**, **example.aspx**, and
 ### Example 2: Use regular expressions {#Example_232}
 
 The URL Rewrite Module also supports [regular
-expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
-You can match characters in the incoming URL and then use **{R:\#}**
-(for example, {R:1} and {R:2}) to reference them in the resulting URL.
-In this example, we want to match **article/*id*/*title*** and have it
-processed by **article.aspx** as a standard GET request:
+expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/"){.external
+.text}. You can match characters in the incoming URL and then use
+**{R:\#}** (for example, {R:1} and {R:2}) to reference them in the
+resulting URL. In this example, we want to match
+**article/*id*/*title*** and have it processed by **article.aspx** as a
+standard GET request:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
@@ -143,15 +144,18 @@ to a www.mydomain.com domain.
 ### References {#References}
 
 The following references are on
-[iis.net](http://www.iis.net/ "http://www.iis.net/"), the official
-Microsoft IIS site:
+[iis.net](http://www.iis.net/ "http://www.iis.net/"){.external .text},
+the official Microsoft IIS site:
 
 -   [Using the URL Rewrite
-    Module](http://learn.iis.net/page.aspx/460/using-url-rewrite-module/ "http://learn.iis.net/page.aspx/460/using-url-rewrite-module/")
+    Module](http://learn.iis.net/page.aspx/460/using-url-rewrite-module/ "http://learn.iis.net/page.aspx/460/using-url-rewrite-module/"){.external
+    .text}
 -   [Creating Rewrite Rules for the URL Rewrite
-    Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/")
+    Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/"){.external
+    .text}
 -   [URL Rewrite Module Configuration
-    Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
+    Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/"){.external
+    .text}
 
 Third-party solutions {#Third-party_Solutions}
 ---------------------
@@ -163,29 +167,32 @@ and created modules that could be deployed to add this functionality
 with little effort on the part of the web developer. Some of these
 third-party modules are as follows:
 
--   [UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/")
--   [UrlRewritingNet](http://www.urlrewriting.net/ "http://www.urlrewriting.net/")
+-   [UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"){.external
+    .text}
+-   [UrlRewritingNet](http://www.urlrewriting.net/ "http://www.urlrewriting.net/"){.external
+    .text}
 -   [Helicon Tech's
-    ISAPI\_Rewrite](http://www.isapirewrite.com/ "http://www.isapirewrite.com/")
+    ISAPI\_Rewrite](http://www.isapirewrite.com/ "http://www.isapirewrite.com/"){.external
+    .text}
 
 For older sites on the Cloud Sites platform, we recommend deploying an
 HttpModule to handle URL rewrites. This article describes using
-[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/") to
-do this.
+[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"){.external
+.text} to do this.
 
 ### Get started {#Getting_Started}
 
 To get started, [bin-deploy UrlRewriter.NET on Cloud
-Sites](http://www.rackspace.com/knowledge_center/article/bin-deploy-an-aspnet-assembly-on-cloud-sites).
+Sites](/howto/bin-deploy-an-aspnet-assembly-on-cloud-sites).
 
 ### Use UrlRewriter.NET {#Using_UrlRewriterNET}
 
 UrlRewriter.NET provides a [full reference
-guide](http://urlrewriter.net/index.php/support/reference "http://urlrewriter.net/index.php/support/reference")
-and examples of [common
-rules](http://urlrewriter.net/index.php/support/using "http://urlrewriter.net/index.php/support/using").
-When you [bin-deployed
-UrlRewriter.NET](http://www.rackspace.com/knowledge_center/article/bin-deploy-an-aspnet-assembly-on-cloud-sites "How do I bin deploy an ASP/.NET assembly?"),
+guide](http://urlrewriter.net/index.php/support/reference "http://urlrewriter.net/index.php/support/reference"){.external
+.text} and examples of [common
+rules](http://urlrewriter.net/index.php/support/using "http://urlrewriter.net/index.php/support/using"){.external
+.text}. When you [bin-deployed
+UrlRewriter.NET](/howto/bin-deploy-an-aspnet-assembly-on-cloud-sites "How do I bin deploy an ASP/.NET assembly?"),
 you added a `<configSections>` element, which causes the `rewriter`
 configuration section to be processed by UrlRewriter.NET. The following
 examples show rewrite rules that use this configuration element.
@@ -202,11 +209,11 @@ In this example, we match **info** and display the contents of
 ### Example 2: Use regular expressions {#Example_232_2}
 
 UrlRewriter.NET also supports [regular
-expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
-You can match characters in the incoming URL and then use **\$\#** (for
-example, \$1 and \$2) to reference them in the resulting URL. In this
-example, we want to match **products/*id*** and have it processed by
-**products.aspx** as a standard GET request:
+expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/"){.external
+.text}. You can match characters in the incoming URL and then use
+**\$\#** (for example, \$1 and \$2) to reference them in the resulting
+URL. In this example, we want to match **products/*id*** and have it
+processed by **products.aspx** as a standard GET request:
 
     <rewriter>
       <rewrite url="~/products/(.+)" to="~/products.aspx?category=$1" />
@@ -215,9 +222,10 @@ example, we want to match **products/*id*** and have it processed by
 ### References {#References_2}
 
 -   [Tip/Trick: Url Rewriting with
-    ASP.NET](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx "http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx")
-    from Scott Guthrie's blog, particularly approach 3
+    ASP.NET](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx "http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx"){.external
+    .text} from Scott Guthrie's blog, particularly approach 3
 -   [UrlRewrite.NET home
-    page](http://urlrewriter.net "http://urlrewriter.net")
+    page](http://urlrewriter.net "http://urlrewriter.net"){.external
+    .text}
 
 

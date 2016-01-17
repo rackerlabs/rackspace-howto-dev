@@ -2,10 +2,10 @@
 node_id: 3530
 title: Use UpdraftPlus to back up Cloud Sites to Cloud Files
 type: article
-created_date: '2013-06-14 21:05:21'
-created_by: kyle.laffoon
-last_modified_date: '2016-01-12 20:2418'
-last_modified_by: stephanie.fillmon
+created_date: '2013-06-14'
+created_by: Kyle Laffoon
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -32,12 +32,12 @@ system issue or security incident.
 7.  Enter your Rackspace user name, API key, and the name of the
     container in which you want to place your backups. (For information
     about finding your API key, see [View and reset your API
-    key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).)
+    key](/howto/view-and-reset-your-api-key).)
 8.  Select the blue button labeled **Test Cloud Files Settings**.
 9.  Confirm the following message is displayed:
 
-    Settings test result: Success: We accessed the container, and were
-    able to create files within it.
+    <span>Settings test result: Success: We accessed the container, and
+    were able to create files within it.</span>
 
 10. Scroll to the bottom of the page and click **Save Changes**.
 11. Begin backing up your website to your Cloud Files by clicking the

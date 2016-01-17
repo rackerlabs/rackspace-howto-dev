@@ -2,9 +2,9 @@
 node_id: 1462
 title: Creating DNS Records with Cloud DNS
 type: article
-created_date: '2012-07-15 05:02:31'
-created_by: RackKCAdmin
-last_modified_date: '2014-11-11 16:2016'
+created_date: '2012-07-15'
+created_by: Rackspace Support
+last_modified_date: '2014-11-11'
 last_modified_by: David Hendler
 product: Cloud Servers
 body_format: tinymce
@@ -28,7 +28,7 @@ CNAME records using the Cloud Control Panel.
 ### Adding a Domain {#A}
 
 1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
-    and select **DNS **at the top. 
+    and select **DNS **at the top.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/1.png)
 
@@ -51,9 +51,9 @@ domain.
 
 1.  Log into the [Cloud Control
     Panel](https://mycloud.rackspace.com) and select **DNS** at the top.
-2.  Select your Domain in the list and then select **Add Record** under
-    Records. Select **A/AAAA Record **for the type and fill out the
-    following fields accordingly.
+2.  Select your Domain in the list and then select **Add Record**
+    under Records. Select **A/AAAA Record **for the type and fill out
+    the following fields accordingly.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/3.png)
 
@@ -67,11 +67,11 @@ your domain.
 
 1.  Log into the [Cloud Control
     Panel](https://mycloud.rackspace.com) and select **DNS** at the top.
-2.  Select your Domain in the list and then select **Add Record** under
-    Records. Select **CNAME Record** for the type and fill out the
-    following fields accordingly.
+2.  Select your Domain in the list and then select **Add
+    Record** under Records. Select **CNAME Record** for the type and
+    fill out the following fields accordingly.
 
-    ![](http://c15154024.r24.cf2.rackcdn.com/4.png) 
+    ![](http://c15154024.r24.cf2.rackcdn.com/4.png)
 
 3.  After you have entered everything, select **Add Record** and you are
     finished!
@@ -83,9 +83,9 @@ domain.
 
 1.  Log into the [Cloud Control
     Panel](https://mycloud.rackspace.com) and select **DNS** at the top.
-2.  Select your Domain in the list and then select **Add Record** under
-    Records. Select **MX Record** for the type and fill out the
-    following fields accordingly.
+2.  Select your Domain in the list and then select **Add
+    Record** under Records. Select **MX Record** for the type and fill
+    out the following fields accordingly.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/5.png)
 

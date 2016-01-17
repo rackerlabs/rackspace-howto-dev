@@ -2,10 +2,10 @@
 node_id: 664
 title: Migrate a Cloud Site from MSSQL2005 to MSSQL2008
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 20:1812'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -31,19 +31,21 @@ Pre-Migration Tasks
     before making a backup of your 2005 database. While SQL 2008 does
     support full text catalogs, our current tools do not allow for them
     to be restored if they are in the backup file. Once you have
-    restored to the new MSSQL2008 location please add your full text
-    catalogs. The information at the following links will assist you in
-    completing this task:
+    restored to the new MSSQL2008 location please add your full
+    text catalogs. The information at the following links will assist
+    you in completing this task:
     -   [How to drop a full text
-        catalog](http://msdn.microsoft.com/en-us/library/ms188403.aspx "http://msdn.microsoft.com/en-us/library/ms188403.aspx")
+        catalog](http://msdn.microsoft.com/en-us/library/ms188403.aspx "http://msdn.microsoft.com/en-us/library/ms188403.aspx"){.external
+        .free}
     -   [How to create a fulltext
-        catalog](http://msdn.microsoft.com/en-us/library/ms189520.aspx "http://msdn.microsoft.com/en-us/library/ms189520.aspx")
+        catalog](http://msdn.microsoft.com/en-us/library/ms189520.aspx "http://msdn.microsoft.com/en-us/library/ms189520.aspx"){.external
+        .free}
 
 5.  You can set the database to `READ-ONLY` mode to ensure there are no
     updates done to the database while the migration is performed with
     the below query **(Only set the database to READ\_ONLY after making
-    the backup, otherwise you won't be able to log into the new
-    database)**:
+    the backup, otherwise you won't be able to log into the
+    new database)**:
 
                ALTER DATABASE [NumXYZ_OldDbName] SET READ_ONLY
 
@@ -67,11 +69,11 @@ Cloud Site migration steps
 3.  Next use the web based admin tool, MyLittleAdmin, to back up your
     MSSQL 2005 database. The link for the online tool can be found in
     your Cloud Sites Control Panel by clicking on the database under the
-    &ldquo;Features&rdquo; tab. For this backup please add "mlb" to the end of the
-    URL. It is important to add this to the URL and not to go through
-    the standard MyLittleAdmin link found in your Cloud Sites Control
-    Panel. Using the links instead of adding the &ldquo;mlb&rdquo; may cause session
-    issues between the two MyLittleAdmin versions. For example:
+    &ldquo;Features&rdquo; tab. For this backup please add "mlb" to the end of
+    the URL. It is important to add this to the URL and not to go
+    through the standard MyLittleAdmin link found in your Cloud Sites
+    Control Panel. Using the links instead of adding the &ldquo;mlb&rdquo; may cause
+    session issues between the two MyLittleAdmin versions. For example:
     `https://mssqladmin.websitesettings.com/mlb`![mlb1.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mlb1.JPG)
 4.  Login to your original MSSQL 2005 source
     database.![mlb2.JPG](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mlb2.JPG)
@@ -90,8 +92,8 @@ Cloud Site migration steps
     change the owner to another login you created in the control panel
     or remap users in your database to new logins please refer to the KB
     article [How to Change ownership and remap database users using the
-    web based admin tool for
-    MSSQL.](http://www.rackspace.com/knowledge_center/article/how-to-remap-database-users-in-mylittleadmin "How to Change ownership and remap database users using the web based admin tool for MSSQL.")
+    web based admin tool
+    for MSSQL.](/howto/remap-database-users-in-mylittleadmin "How to Change ownership and remap database users using the web based admin tool for MSSQL."){.mw-redirect}
 8.  Once the migration is complete, update all connection strings to
     point to the new database. After you verify that everything is
     working from the MSSQL2008 database, delete your MSSQL2005 database
@@ -101,5 +103,5 @@ Cloud Site migration steps
 
 -- C. Tannery
 
- 
+
 

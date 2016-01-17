@@ -2,37 +2,37 @@
 node_id: 329
 title: Creating and Configuring a User in MSSQL
 type: article
-created_date: '2011-04-04 16:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:0220'
-last_modified_by: Nate.Archer
+created_date: '2011-04-04'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: tinymce
 ---
 
 This article will show you how to create and configure a user in MSSQL
 
-1. Open SQL Server Management Studio (SSMS).
+1\. Open SQL Server Management Studio (SSMS).
 
-2. Connect to SQL Server using the proper credentials.
+2\. Connect to SQL Server using the proper credentials.
 
 ![ssmsconnect.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsconnect.PNG)
 
- 
 
-3. Expand Security and Logins.
+
+3\. Expand Security and Logins.
 
 ![ssmslogins.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmslogins.PNG)
 
- 
 
-4. Right click Logins and select New Login.
+
+4\. Right click Logins and select New Login.
 
 ![ssmsnewlogin.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsnewlogin.PNG)
 
- 
 
-5. On this page you assign a Login name and select the authentication
+
+5\. On this page you assign a Login name and select the authentication
 method and default database/language. (Note only Domains can use Windows
 Authentication) If you are using SQL authentication you will need to
 enter an initial password and choose the enforcement options for
@@ -41,25 +41,24 @@ need to change their password when they log in.
 
 ![ssmsnewlogin1.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsnewlogin1.PNG)
 
- 
 
-6. Click on Server Roles and you can assign any sever roles you want
+
+6\. Click on Server Roles and you can assign any sever roles you want
 this user to have.
 
 ![ssmsnewlogin2.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsnewlogin2.PNG)
 
- 
 
-7. Click on Securables and then click the Search button. This will
-bring up the Add Objects dialog box where you can choose specific
-objects, objects of a certain type or the server itself. Select one and
-click Ok.
+
+7\. Click on Securables and then click the Search button. This will bring
+up the Add Objects dialog box where you can choose specific objects,
+objects of a certain type or the server itself. Select one and click Ok.
 
 ![ssmsaddobjects.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsaddobjects.PNG)
 
- 
 
-8. Select Grant, With Grant or Deny as necessary for any/all of the
+
+8\. Select Grant, With Grant or Deny as necessary for any/all of the
 objects in the explicit box. (Grant will grant access to the securable,
 with grant will allow the user to grant access to the securable and deny
 will expressly deny permission to the securable no matter what roles or
@@ -67,8 +66,8 @@ permissions the user may have).
 
 ![ssmsnewlogin3.PNG](http://c0042672.cdn.cloudfiles.rackspacecloud.com/ssmsnewlogin3.PNG)
 
-<br>
- 9. Click on status to grant or deny permission to the Database Engine,
+
+9. Click on status to grant or deny permission to the Database Engine,
 enable or disable the login and to unlock the account should it get
 locked out. When all this is done click on OK to create the user.
 

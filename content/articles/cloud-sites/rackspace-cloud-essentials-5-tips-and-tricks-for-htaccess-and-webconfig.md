@@ -2,10 +2,10 @@
 node_id: 712
 title: 'Rackspace Cloud Essentials: Tips and Tricks for .htaccess and web.config'
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 15:1249'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Nate Archer
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,12 +19,12 @@ Panel](https://manage.rackspacecloud.com/).
 ### Previous section
 
 [Getting Started with Cloud
-Sites](https://www.rackspace.com/knowledge_center/getting-started/cloud-sites)
+Sites](/howto/cloud-sites)
 
- 
 
-**In this article we're going to take a look at the .htaccess file**and
-the**web.config file.** We'll discuss what they are, and how they're
+
+**In this article we're going to take a look at the .htaccess file** and
+the **web.config file.** We'll discuss what they are, and how they're
 used with Cloud Sites.
 
 If you are using Windowa IIS, ASP/.NET then please click the
@@ -37,10 +37,12 @@ reading below.
 -   [.htaccess](#htaccess)
 -   [web.config](#web_config)
 
+[]()
+
 **What is .htaccess and what is it used for?**
 
-[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess")
-explains the **.htaccess** file as follows:
+[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess"){.external
+.text} explains the **.htaccess** file as follows:
 
 "In several web servers (most commonly Apache), .htaccess (hypertext
 access) is the default name of a directory-level configuration file that
@@ -56,13 +58,16 @@ control."
 For more information, and several examples, the following links are
 highly recommended:
 
--   [.htaccess-Guide.com](http://www.htaccess-guide.com/ "http://www.htaccess-guide.com/")
+-   [.htaccess-Guide.com](http://www.htaccess-guide.com/ "http://www.htaccess-guide.com/"){.external
+    .text}
 -   [JavascriptKit.com's "Comprehensive guide to
-    .htaccess"](http://www.javascriptkit.com/howto/htaccess.shtml "http://www.javascriptkit.com/howto/htaccess.shtml")
+    .htaccess"](http://www.javascriptkit.com/howto/htaccess.shtml "http://www.javascriptkit.com/howto/htaccess.shtml"){.external
+    .text}
 
 For a more comprehensive technical overview, please see [the Apache
 documentation on .htaccess
-files](http://httpd.apache.org/docs/2.0/howto/htaccess.html "http://httpd.apache.org/docs/2.0/howto/htaccess.html").
+files](http://httpd.apache.org/docs/2.0/howto/htaccess.html "http://httpd.apache.org/docs/2.0/howto/htaccess.html"){.external
+.text}.
 
 On the Rackspace Cloud Sites platform, .htaccess can be used for
 handling certain points of website security, PHP configuration changes,
@@ -70,12 +75,14 @@ as well as website operations. Below is an example of how an .htaccess
 file is used for security.
 
 -   [Deny certain IP addresses access to web
-    site](http://www.rackspace.com/knowledge_center/index.php/How_do_I_deny_certain_IP_addresses_from_accessing_my_site "How do I deny certain IP addresses from accessing my site?")
+    site](/howto/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address "How do I deny certain IP addresses from accessing my site?")
+
+[]()
 
 **What is web.config and what is it used for?**
 
-[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess") explains
-the **web.config** file as follows:
+[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess"){.external
+.text} explains the **web.config** file as follows:
 
 Web.config is the main settings and configuration file for
 an [ASP.NET](http://en.wikipedia.org/wiki/ASP.NET "ASP.NET") web
@@ -101,27 +108,27 @@ Below are some of the most commonly used functions for the web.config
 file:
 
 1.  [How do I add impersonation to my ASP/.NET Cloud
-    Site](http://www.rackspace.com/knowledge_center/index.php/How_do_I_add_impersonation_to_my_ASP.NET_site)
+    Site](/howto/add-impersonation-to-your-aspnet-cloud-site)
 2.  [How do I enable detailed errors in Classic ASP and server side
     errors in Cloud
-    Sites](http://www.rackspace.com/knowledge_center/index.php/How_do_I_enable_detailed_errors_in_classic_ASP)
+    Sites](/howto/enable-detailed-errors-in-classic-asp-and-server-side-errors-on-cloud-sites)
 3.  [How do I setup customErrors in ASP/.NET on Cloud
-    Sites](http://www.rackspace.com/knowledge_center/index.php/How_do_I_enable_detailed_errors_in_ASP.NET)
-4.  [How to rebuild an ASP/.NET application in Cloud
-    Sites](http://www.rackspace.com/knowledge_center/index.php/How_to_Rebuild_the_Application_in_Cloud_Sites)
+    Sites](/howto/set-up-custom-error-messages-in-aspnet-on-cloud-sites)
+4.  [<span>H</span>ow to rebuild an ASP/.NET application in Cloud
+    Sites](/howto/rebuild-an-aspnet-application-in-cloud-sites)
 5.  [How do I bin deploy an ASP/.NET application on Cloud
-    Sites](http://www.rackspace.com/knowledge_center/index.php/How_do_I_bin_deploy_an_ASP/NET_assembly)
+    Sites](/howto/bin-deploy-an-aspnet-assembly-on-cloud-sites)
 6.  [Why are my HttpHandlers not working for my ASP/.NET site on Cloud
-    Sites](https://www.rackspace.com/knowledge_center/article/httphandlers-not-working-in-integrated-mode-for-aspnet-sites-on-cloud-sites)
+    Sites](/howto/httphandlers-not-working-in-integrated-mode-for-aspnet-sites-on-cloud-sites)
 7.  [How do I rectify an invalid view state error with an ASP/.NET
-    application](http://www.rackspace.com/knowledge_center/index.php/How_do_I_rectify_an_invalid_view_state_error_with_an_ASP.NET_application)
+    application](/howto/How_do_I_rectify_an_invalid_view_state_error_with_an_ASP.NET_application%20(Caused%20by%20%3Cclass%20'socket.error'%3E:%20%5BErrno%20101%5D%20Network%20is%20unreachable))
 8.  [ASP/.NET Integrated
-    Mode](http://www.rackspace.com/knowledge_center/article/aspnet-integrated-mode-on-cloud-sites)
+    Mode](/howto/aspnet-integrated-mode-on-cloud-sites)
 9.  [Overview of Cloud Sites modified Medium
-    Trust](http://www.rackspace.com/knowledge_center/index.php/Overview_of_modified_Medium_Trust)
+    Trust](/howto/modified-medium-trust-on-cloud-sites)
 
 ### Next section
 
 [Configuring SSL on your
-website(s)](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
+website(s)](/howto/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
 

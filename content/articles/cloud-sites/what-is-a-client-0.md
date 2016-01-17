@@ -2,10 +2,10 @@
 node_id: 1129
 title: Cloud Sites subaccounts
 type: article
-created_date: '2011-06-15 14:47:22'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 14:0743'
-last_modified_by: stephanie.fillmon
+created_date: '2011-06-15'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -55,39 +55,77 @@ user can create sites and FTP user accounts. The following table shows
 which sub-account features are available to main account and sub-account
 users.
 
-+--------------------------+--------------------------+--------------------------+
-| **Actions for            | **Main account**         | **Sub-account**          |
-| sub-account websites**   |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| Create site              | X                        |                          |
-+--------------------------+--------------------------+--------------------------+
-| Edit Rackspace DNS       | X                        |                          |
-| records                  |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| Create databases         | X                        | X                        |
-+--------------------------+--------------------------+--------------------------+
-| Create FTP users         | X                        |                          |
-+--------------------------+--------------------------+--------------------------+
-| Edit permissions for FTP | X                        | X                        |
-| users                    |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| Change password for FTP  | X                        | X                        |
-| users                    |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| Change site technology   | X                        | X                        |
-+--------------------------+--------------------------+--------------------------+
-| Change contact           | X                        | X                        |
-| information              |                          |                          |
-+--------------------------+--------------------------+--------------------------+
-| View usage reports       | X                        | X                        |
-+--------------------------+--------------------------+--------------------------+
-| Turn on raw logs         | X                        | X                        |
-+--------------------------+--------------------------+--------------------------+
-| Rebuild Windows or IIS   | X                        | X                        |
-| sites                    |                          |                          |
-+--------------------------+--------------------------+--------------------------+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Actions for sub-account websites</strong></td>
+<td align="left"><p><strong>Main account</strong></p></td>
+<td align="left"><strong>Sub-account</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Create site</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p> </p></td>
+</tr>
+<tr class="odd">
+<td align="left">Edit Rackspace DNS records</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p> </p></td>
+</tr>
+<tr class="even">
+<td align="left">Create databases</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="odd">
+<td align="left">Create FTP users</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p> </p></td>
+</tr>
+<tr class="even">
+<td align="left">Edit permissions for FTP users</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="odd">
+<td align="left">Change password for FTP users</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="even">
+<td align="left">Change site technology</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="odd">
+<td align="left">Change contact information</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="even">
+<td align="left">View usage reports</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="odd">
+<td align="left">Turn on raw logs</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+<tr class="even">
+<td align="left">Rebuild Windows or IIS sites</td>
+<td align="left"><p>X</p></td>
+<td align="left"><p>X</p></td>
+</tr>
+</tbody>
+</table>
 
- 
+
 
 ### Limitations
 
@@ -108,12 +146,13 @@ Sub-account actions from the main control panel
 Navigate to the subaccount actions from within the Cloud Sites Control
 Panel as follows
 
-1.  Click **Hosting \> Cloud Sites**.
+1.  Click **Hosting &gt; Cloud Sites**.
 2.  Click the **Subaccounts** tab.
 3.  Click a subaccount name to display the **General Settings** tab for
     the subaccount.
 
-![](/knowledge_center/sites/default/files/field/image/edit_subaccount.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/edit_subaccount.png){width="600"
+height="379"}
 
 On this tab you can complete the following actions:
 
@@ -132,5 +171,5 @@ Given the unique infrastructure configuration of IIS sites, the suspend
 function does not work for IIS sites in the Cloud Sites environment.
 Main account users must contact support to suspend IIS sites.
 
- 
+
 

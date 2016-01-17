@@ -2,18 +2,18 @@
 node_id: 3572
 title: Provisioning cloud resources when migrating from Amazon Web Services
 type: article
-created_date: '2013-07-02 13:40:58'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 21:5721'
-last_modified_by: stephanie.fillmon
+created_date: '2013-07-02'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
 
-This article describes how to provision your Rackspace Cloud services when migrating from Amazon Web Services (AWS). 
+This article describes how to provision your Rackspace Cloud services when migrating from Amazon Web Services (AWS).
 
 ### Previous section
-[High-level steps for migrating from Amazon Web Services](https://www.rackspace.com/knowledge_center/article/high-level-steps-for-migrating-from-amazon-web-services)
+[High-level steps for migrating from Amazon Web Services](/howto/high-level-steps-for-migrating-from-amazon-web-services)
 
 Perform the following procedures to provision and configure your cloud instances:
 
@@ -37,10 +37,10 @@ Perform the following procedures to provision and configure your cloud instances
 4. Select an OS that matches your OS from AWS.
 
     **Note:** If your Amazon Elastic Compute Cloud (EC2) instance is Amazon Linux, select CentOS 5.0 or later. Amazon Linux is based on Red Hat Enterprise Linux 5.
-   
+
 5. Select the size (flavor) that matches your EC2 instance (RAM and disk space), and click **Create Server**.
-    For information about instance size mapping, see [Mapping of Amazon Web Services resources to Rackspace resources](http://www.rackspace.com/knowledge_center/article/mapping-of-amazon-web-services-resources-to-rackspace-resources#instancetypes).
-	
+    For information about instance size mapping, see [Mapping of Amazon Web Services resources to Rackspace resources](/howto/mapping-of-amazon-web-services-resources-to-rackspace-resources).
+
 	**Note:** You can add more storage to your cloud server after it is created by adding a Cloud Block Storage volume. For instructions, see [Add Cloud Block Storage]("#addblock") (later in this article).
 6. When your root admin password is displayed, copy the password to a secure location, and then click **Dismiss Password**.
 
@@ -52,7 +52,7 @@ It is important that you copy and save your root admin password for future refer
 
 You can create a custom password for you server.
 
-1. On the Cloud Servers page in the Cloud Control Panel, click the gear icon next to the server in the server list and select **Change Password**. 
+1. On the Cloud Servers page in the Cloud Control Panel, click the gear icon next to the server in the server list and select **Change Password**.
 
 2. Enter a new password and click **Change Password**.
 
@@ -69,7 +69,7 @@ If you had additional Amazon Elastic Book Store (EBS) volumes attached to your s
 
 4. Click **Create Volume**.
 
-    <img alt="" height="349" src="/knowledge_center/sites/default/files/field/image/Step%201-3.png" width="543" />
+    <img alt="" height="349" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Step%201-3.png" width="543" />
 
 <a name="filecontainer"> </a>
 ### Create a Cloud Files container (optional)
@@ -94,15 +94,15 @@ If you will not be setting up your own database server, create a Cloud Databases
 
 1. At the top of the Cloud Control Panel window, click **Databases**.
 
-2. In the pop-up menu, select **Database Instances**. 
+2. In the pop-up menu, select **Database Instances**.
 
 3. On the Cloud Databases page, click **Create Instance**.
- 
+
 4. Name the instance and assign it to the same region as your server.
 
 5. Select the type of database instance (datastore), and specify its size (in RAM and disk space).
 
-6. *(Optional)* Add your first database by assigning it a name, user name, and password. 
+6. *(Optional)* Add your first database by assigning it a name, user name, and password.
     **Note:** You cannot name your user as root.
 
 7. Click **Create Instance**.
@@ -110,7 +110,7 @@ If you will not be setting up your own database server, create a Cloud Databases
 <a name="connectserver"> </a>
 ### Connect to the cloud server
 
-1. On the Cloud Servers page in the control panel, click the name of your server. 
+1. On the Cloud Servers page in the control panel, click the name of your server.
 
 2. Under **Networks**, note the <strong>PublicNet (Internet) IPv4</strong> address.
 
@@ -118,7 +118,7 @@ If you will not be setting up your own database server, create a Cloud Databases
 
         ssh root@<ipAddress>
 
-    If you're connecting from a Windows computer, [use PuTTY](http://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-windows-by-using-putty) or a similar SSH command to connect to your server's IP address.
+    If you're connecting from a Windows computer, [use PuTTY](/howto/connecting-to-linux-from-windows-by-using-putty) or a similar SSH command to connect to your server's IP address.
 
 4. Enter your root password to log on.
 
@@ -127,8 +127,8 @@ If you will not be setting up your own database server, create a Cloud Databases
 
 After your Rackspace Cloud services are provisioned, you can build your applications and transfer your data from AWS. The following articles provide detailed descriptions of migration scenarios:
 
-- Applications built on a LAMP stack - [Migrating an Application Built on a LAMP Stack from Amazon Web Services](http://www.rackspace.com/knowledge_center/article/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+- Applications built on a LAMP stack - [Migrating an Application Built on a LAMP Stack from Amazon Web Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 
-- .NET applications - [Migrating a .NET application from Amazon Web Services](http://www.rackspace.com/knowledge_center/article/migrating-a-net-application-from-amazon-web-services)
+- .NET applications - [Migrating a .NET application from Amazon Web Services](/howto/migrating-a-net-application-from-amazon-web-services)
 
-- Java web applications [Migrating a Java Web Application from Amazon Web Services](http://www.rackspace.com/knowledge_center/article/migrating-a-java-web-application-from-amazon-web-services)
+- Java web applications [Migrating a Java Web Application from Amazon Web Services](/howto/migrating-a-java-web-application-from-amazon-web-services)

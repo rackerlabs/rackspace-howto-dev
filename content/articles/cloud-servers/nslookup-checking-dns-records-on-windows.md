@@ -2,10 +2,10 @@
 node_id: 1446
 title: Nslookup - Checking DNS Records on Windows
 type: article
-created_date: '2012-06-27 08:56:04'
-created_by: RackKCAdmin
-last_modified_date: '2015-01-27 21:4407'
-last_modified_by: jered.heeschen
+created_date: '2012-06-27'
+created_by: Rackspace Support
+last_modified_date: '2015-01-27'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -21,8 +21,8 @@ troubleshoot issues accessing a particular service.
 -   [Summary](#5_Summary)
 
 To access the tool you need to open up a command prompt, you should be
-able to find this under Start \> All Programs \> Accessories \> Command
-Prompt
+able to find this under Start &gt; All Programs &gt; Accessories &gt;
+Command Prompt[]()
 
 ### Checking For a Record
 
@@ -45,7 +45,7 @@ name resolution. The second section, which specifies a non-authoritative
 answer, gives the name of the record and the corresponding IP address.
 The answer is non-authoritative because the answer comes from a server,
 cachens1.lon.rackspace.com in this case, that is not the root source for
-those records.
+those records.[]()
 
 ### Getting an Authoritative Answer
 
@@ -85,6 +85,8 @@ against that name server.
 
     Name:    rackspace.co.uk
     Address:  212.64.133.165
+
+[]()
 
 ### Checking When a Cached Record Will Expire
 
@@ -174,8 +176,8 @@ will be cached for requires the debug switch.
 -   The second "Got answer" section relates to your actual request.
 -   The header section contains details about the type of request and
     its success.
--   The questions section shows that the request was for A records for
-    rackspace.co.uk.
+-   The questions section shows that the request was for A records
+    for rackspace.co.uk.
 -   The answers section displays one record with an IP address of
     212.64.133.165 and a TTL of 279 seconds (4 minutes 39 seconds).
 -   The authority records section specifies the name servers that
@@ -187,7 +189,7 @@ So from this you can see that the name server being used by the client
 computer will keep reusing the same A record for rackspace.co.uk for the
 next 4 minutes and 39 seconds. If you were to run the same command on
 the authoritative name server you would see what the current maximum TTL
-for the record is.
+for the record is.[]()
 
 ### Summary
 

@@ -2,10 +2,10 @@
 node_id: 640
 title: Remove files older than a certain date in Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 19:3721'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -31,13 +31,13 @@ cron job, perform one of the following tasks:
 
     ex1 $dir = opendir("/mnt/stor1-wc1-dfw1/111111/www.testform.com/web/content/logs") or die("Could not open directory");
 
-#### Example 2
+#### <span class="mw-headline">Example 2 </span>
 
     ex2 $dir  = opendir($argv[0)) or die("Could not open directory");
 
 The HTML form will allow anyone who can access it to delete your
 content. Secure it with a
-[.htaccess](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
+[.htaccess](/howto/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
 file. You can also delete the form when you're done with it.
 
 The HTML form
@@ -100,5 +100,5 @@ be constructed as follows:
 
     ?>
 
- 
+
 

@@ -2,10 +2,10 @@
 node_id: 1476
 title: Managing your server - resizing standard and general purpose servers
 type: article
-created_date: '2012-07-19 07:45:31'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-04 19:4652'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-19'
+created_by: Rackspace Support
+last_modified_date: '2016-01-04'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,9 +13,9 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
+
 
 In this article, we dicuss the process for resizing your server -
 changing the RAM and disk space allocation. Note that at this time,
@@ -24,7 +24,7 @@ resized down to a lesser allocation.  Standard Cloud Servers can be
 resized up or down.  General Purpose Servers can only be resized up.
 
 -   To allow you to easily scale your server by increasing the amount of
-    Disk Space and RAM on your server, click the **Resize** button. 
+    Disk Space and RAM on your server, click the **Resize** button.
 
 ![](http://c765420.r20.cf2.rackcdn.com/8_Resizenew.png)
 
@@ -32,8 +32,8 @@ resized up or down.  General Purpose Servers can only be resized up.
     server size has a different hourly cost for uptime, and the new cost
     goes into effect when the server resize process is completed.  This
     could mean that you will pay different rates for the same server
-    within a given billing cycle.  Press the **Resize Server** button to
-    begin.
+    within a given billing cycle.  Press the **Resize Server** button
+    to begin.
 
 ![](http://c765420.r20.cf2.rackcdn.com/9_ResizeProcessnew.png)
 
@@ -42,16 +42,16 @@ resized up or down.  General Purpose Servers can only be resized up.
     effect when the server resize process is completed.  This could mean
     that you will pay different rates for the same server within a given
     billing cycle.  Note that Windows servers cannot be resized down, so
-    smaller sizes will be grayed out.  Press the **Resize** button to
-    begin.
+    smaller sizes will be grayed out.  Press the **Resize** button
+    to begin.
 
- 
+
 
 -   You will see the **Status** change on the server details screen
     throughout the Resize process, going through modes such
     as *Preparing* and *Queueing for Resize*.
 
- 
+
 
 -   **Verify the Resize.**  This is an important step because it is the
     last chance you will have to revert to the original size and cancel
@@ -75,7 +75,7 @@ resized up or down.  General Purpose Servers can only be resized up.
     to use the additional space after a resize.  Please follow the
     instructions from this article: [Adding Disk Space After Resizing a
     Windows Server 2012 Cloud
-    Server](http://www.rackspace.com/knowledge_center/article/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server)
+    Server](/howto/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server)
 
 ![](http://c765420.r20.cf2.rackcdn.com/15_VerifyResizeSSH.png)
 
@@ -85,13 +85,13 @@ resized up or down.  General Purpose Servers can only be resized up.
     will change the server status.  The process will be complete when
     the **Status** reads **Active**, the **Current Action** is **None**,
     and the server has come back up from a reboot.  Any web services
-    that you had running may require you to log in and manually restart
-    them.
+    that you had running may require you to log in and manually
+    restart them.
 
- 
+
 
 ### Next section
 
 [Reset your server
-password](http://www.rackspace.com/knowledge_center/article/managing-your-server-reset-your-server-password)
+password](/howto/reset-your-server-password)
 

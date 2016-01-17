@@ -2,10 +2,10 @@
 node_id: 615
 title: Enable detailed errors in classic ASP and server-side errors on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-06-23 16:4726'
-last_modified_by: kelly.holcomb
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-06-23'
+last_modified_by: Kelly Holcomb
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -23,7 +23,8 @@ security reasons should be turned off when the site is in production.
       </system.webServer>
     </configuration>
 
-For more information about the syntax and use of the \<`httpErrors>`
+For more information about the syntax and use of the &lt;`httpErrors>`
 element, see [the HTTP Errors article on
-www.iis.net](http://www.iis.net/ConfigReference/system.webServer/httpErrors "http://www.iis.net/ConfigReference/system.webServer/httpErrors").
+www.iis.net](http://www.iis.net/ConfigReference/system.webServer/httpErrors "http://www.iis.net/ConfigReference/system.webServer/httpErrors"){.external
+.text}.
 

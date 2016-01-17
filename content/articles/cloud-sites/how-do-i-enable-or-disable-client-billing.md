@@ -2,10 +2,10 @@
 node_id: 618
 title: How do I enable or disable client billing?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-08-03 23:3053'
-last_modified_by: rose.contreras
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-08-03'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -15,31 +15,30 @@ body_format: tinymce
     you have already added an account and need to enable/disable client
     billing for it, follow these directions to do so:
 
-<br>
- 1. Log into your control panel at
-[https://manage.rackspacecloud.com](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com")
 
-2. Click on "Hosting."
+1. Log into your control panel at <https://manage.rackspacecloud.com>
 
-3. Click on the domain you want to enable/disable client billing on.
+2\. Click on "Hosting."
 
-4. Click on the "Change Plan" link in the "Traffic and Disk Space"
+3\. Click on the domain you want to enable/disable client billing on.
+
+4\. Click on the "Change Plan" link in the "Traffic and Disk Space"
 section.
 
-5. Check/Uncheck the "Bill client for this site" option.
+5\. Check/Uncheck the "Bill client for this site" option.
 
-6. Review the hosting plan on the domain.
+6\. Review the hosting plan on the domain.
 
-7. Click "Next Step."
+7\. Click "Next Step."
 
-8. Review the additional features on the domain.
+8\. Review the additional features on the domain.
 
-9. Review and confirm the pricing on the "Adjust Prices" page.
+9\. Review and confirm the pricing on the "Adjust Prices" page.
 
-10. Click "Next Step."
+10\. Click "Next Step."
 
-<br>
- If you have any trouble or questions about this process, please feel
+
+If you have any trouble or questions about this process, please feel
 free to contact our support team through Live Chat or calling us at
 1.800.961.4454 (US toll free) and 1-210-312-4000 (international).
 

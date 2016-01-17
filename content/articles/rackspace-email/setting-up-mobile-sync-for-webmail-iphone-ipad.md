@@ -2,10 +2,10 @@
 node_id: 1385
 title: Set up Mobile Sync for Webmail on iOS devices
 type: article
-created_date: '2012-04-27 00:04:06'
-created_by: RackKCAdmin
-last_modified_date: '2015-02-02 21:1111'
-last_modified_by: jered.heeschen
+created_date: '2012-04-27'
+created_by: Rackspace Support
+last_modified_date: '2015-02-02'
+last_modified_by: Jered Heeschen
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -35,14 +35,14 @@ differ from the examples..
 
 1.  On the **Home** screen of your device, tap the **Settings** icon.
 
-    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone1.png)
+    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone1.png){width="213"}
 
-2.  In **Settings**, tap **Mail, Contacts, Calendars** \> **Add
-    Account** \> **Microsoft Exchange**.
+2.  In **Settings**, tap **Mail, Contacts, Calendars** &gt; **Add
+    Account** &gt; **Microsoft Exchange**.
 
-    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone2.png)
-    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone3.png)
-    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone4.png)
+    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone2.png){width="213"}
+    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone3.png){width="213"}
+    ![](http://c807163.r63.cf2.rackcdn.com/(E&A)SettingUpMicrosoftExchangeEmailIphone4.png){width="213"}
 
 3.  On the Exchange setup screen, enter the following information:
 
@@ -55,7 +55,7 @@ differ from the examples..
         example, My Work Account). This description will be visible only
         to you.
 
-    ![](http://c14989053.r53.cf2.rackcdn.com/1.png)
+    ![](http://c14989053.r53.cf2.rackcdn.com/1.png){width="213"}
 
     **Note:** The device will attempt to verify the account. You
     might receive an *Unable to Verify Certificate* message. If you
@@ -66,13 +66,13 @@ differ from the examples..
     are displayed next to every field. If any field indicates a problem,
     double-check that setting's value.
 
-    ![](http://c14989053.r53.cf2.rackcdn.com/2.png)
-    ![](http://c14989053.r53.cf2.rackcdn.com/3.png)
+    ![](http://c14989053.r53.cf2.rackcdn.com/2.png){width="213"}
+    ![](http://c14989053.r53.cf2.rackcdn.com/3.png){width="213"}
 
 5.  Slide the **ON/OFF** buttons to select which information to
     synchronize, and then tap **Save**.
 
-    ![](http://c14989053.r53.cf2.rackcdn.com/4.png)
+    ![](http://c14989053.r53.cf2.rackcdn.com/4.png){width="213"}
 
     Depending on how much data is on the server, your iPhone might take
     a few minutes to synchronize all of your information.

@@ -2,10 +2,10 @@
 node_id: 540
 title: Does Rackspace Cloud Sites provide raw log files for stats?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2014-08-25 02:0559'
-last_modified_by: rose.contreras
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2014-08-25'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -14,13 +14,13 @@ body_format: tinymce
 Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.*<br>
+and selecting Cloud Sites Control Panel.*
 *
 
 Yes, you can activate raw logs for stats within the Cloud Sites Control
-Panel.<br>
- <br>
- **Pre-requisites**
+Panel.
+
+**Pre-requisites**
 
 -   Administrative access to the Rackspace Cloud
 

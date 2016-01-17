@@ -2,10 +2,10 @@
 node_id: 4062
 title: Use a later version of MySQL with .NET applications on Cloud Sites
 type: article
-created_date: '2014-05-07 02:57:15'
-created_by: matt.costello
-last_modified_date: '2014-06-23 22:3150'
-last_modified_by: rose.contreras
+created_date: '2014-05-07'
+created_by: Matt Costello
+last_modified_date: '2014-06-23'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -26,15 +26,16 @@ of MySQL:
 MySQL versions 6.4.6 (MySQL) and 6.4.4 (MySQL NuGet) are known to work
 in Cloud Sites and are medium trust compliant.
 
-Perform a bin deploy with NuGet and Visual Studio 2013
-------------------------------------------------------
+[Perform a bin deploy with NuGet and Visual Studio 2013](){#visualstudio}
+-------------------------------------------------------------------------
 
 1.  Open Visual Studio and your .NET application.
 
-2.  In Visual Studio, select **Tools** \> **NuGet Package Manager** \>
-    **Package Manager Console**.
+2.  In Visual Studio, select **Tools** &gt; **NuGet Package
+    Manager** &gt; **Package Manager Console**.
 
-    ![](/knowledge_center/sites/default/files/field/image/packagemanger.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/packagemanger.png){width="474"
+    height="321"}
 
     The console should appear near the bottom of the Visual Studio
     window, depending on how you've set up your views.
@@ -45,15 +46,16 @@ Perform a bin deploy with NuGet and Visual Studio 2013
 
         Install-Package MySql.Data -Version 6.4.4
 
-    ![](/knowledge_center/sites/default/files/field/image/console.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/console.png){width="650"
+    height="300"}
 
 4.  Check your application's **bin** directory for the
     **MySql.Data.dll** to confirm the MySQL installation.
 
 5.  Publish your application and upload it to Cloud Sites.
 
-Perform a bin deploy with an MSI package from MySQL
----------------------------------------------------
+[Perform a bin deploy with an MSI package from MySQL](){#msi}
+-------------------------------------------------------------
 
 We recommend running an MSI installation on a development machine to
 avoid installing extra software on a production machine.
@@ -65,8 +67,8 @@ avoid installing extra software on a production machine.
 2.  Double-click the MSI file you downloaded (for example,
     **mysql-connector-net-6.4.6.msi**).
 
-3.  Click **Next** to acknowledge that you're about to install MySQL
-    Connectors.
+3.  Click **Next** to acknowledge that you're about to install
+    MySQL Connectors.
 
 4.  Choose **Typical Install**.
 

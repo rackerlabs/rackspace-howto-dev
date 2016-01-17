@@ -2,10 +2,10 @@
 node_id: 425
 title: 'SSH - "REMOTE HOST IDENTIFICATION HAS CHANGED"'
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:4631'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -16,14 +16,14 @@ may be greeted with a message similar to the following:
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-    IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!      
+    IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
     Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-    It is also possible that the RSA host key has just been changed.           
-    The fingerprint for the RSA key sent by the remote host is                 
-    xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx.                           
+    It is also possible that the RSA host key has just been changed.
+    The fingerprint for the RSA key sent by the remote host is
+    xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx.
     Please contact your system administrator.
     Add correct host key in /home/scott/.ssh/known_hosts to get rid of this message.
-    Offending key in /home/scott/.ssh/known_hosts:15                                
+    Offending key in /home/scott/.ssh/known_hosts:15
     RSA host key for 1.2.3.4 has changed and you have requested strict checking.
     Host key verification failed.
 
@@ -36,7 +36,7 @@ and should investigate further.**
 
 To reset the known host key, pay attention to these two lines:
 
-    Offending key in /home/scott/.ssh/known_hosts:15                                
+    Offending key in /home/scott/.ssh/known_hosts:15
     RSA host key for 1.2.3.4 has changed...
 
 The first line tells you the file name and the line number of the old

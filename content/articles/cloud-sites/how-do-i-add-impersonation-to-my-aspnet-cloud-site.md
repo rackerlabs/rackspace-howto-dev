@@ -2,10 +2,10 @@
 node_id: 69
 title: Add impersonation to your ASP.NET cloud site
 type: article
-created_date: '2011-03-08 18:18:58'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 16:0129'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-08'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -19,9 +19,9 @@ and execute permissions.
 The following steps work only on ASP.NET through a **web.config** file.
 If you are not sure what data center your site is deployed in, see
 [Rackspace data centers and
-regions](http://www.rackspace.com/knowledge_center/article/rackspace-data-centers-and-regions).
+regions](/howto/rackspace-data-centers-and-regions).
 Use your Rackspace Cloud account username and password, where indicated
-by \<username\> and \<password\> in the following command.
+by &lt;username&gt; and &lt;password&gt; in the following command.
 
 For customers whose sites are deployed in our DFW data center, add the
 following lines to your **web.config** file:
@@ -51,5 +51,5 @@ account.
 
 After you make this change, you need to rebuild the application. For
 instructions, see [Rebuild an ASP.NET application in Cloud
-Sites](http://www.rackspace.com/knowledge_center/article/rebuild-an-aspnet-application-in-cloud-sites).
+Sites](/howto/rebuild-an-aspnet-application-in-cloud-sites).
 

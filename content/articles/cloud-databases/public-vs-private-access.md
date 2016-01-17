@@ -2,10 +2,10 @@
 node_id: 1509
 title: Public and Private Access for Cloud Databases
 type: article
-created_date: '2012-07-24 00:36:50'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-06 17:3916'
-last_modified_by: cat.lookabaugh
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-06'
+last_modified_by: Cat Lookabaugh
 product: Cloud Databases
 body_format: tinymce
 ---
@@ -52,5 +52,5 @@ Database](http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustratio
 ### Related Information {#relatedinformation}
 
 [Connecting to Your Cloud
-Database](http://www.rackspace.com/knowledge_center/article/connect-to-a-cloud-databases-instance "Connecting to Your Cloud Database")
+Database](/howto/connect-to-a-cloud-databases-instance "Connecting to Your Cloud Database")
 

@@ -2,20 +2,20 @@
 node_id: 4681
 title: First Gen to Next Gen Cloud Servers migration pre-checks
 type: article
-created_date: '2015-05-15 15:43:36'
+created_date: '2015-05-15'
 created_by: David Hendler
-last_modified_date: '2016-01-14 00:2451'
-last_modified_by: rose.coste
+last_modified_date: '2016-01-14'
+last_modified_by: Rose Coste
 product: Cloud Servers
 body_format: tinymce
 ---
 
-Before you open the migration window for each of your cloud servers, you
-must perform a series of checks to rule out common issues that you might
-encounter with migrations. If your cloud server fails any of these
-checks, a ticket will be created in your account so that you can fix the
-issue before your self-migration window opens. This article will help
-you understand and fix the results of these checks.
+[](){#top}Before you open the migration window for each of your cloud
+servers, you must perform a series of checks to rule out common issues
+that you might encounter with migrations. If your cloud server fails any
+of these checks, a ticket will be created in your account so that you
+can fix the issue before your self-migration window opens. This article
+will help you understand and fix the results of these checks.
 
 **Note:** The checks will prevent your server from migrating correctly.
 If your server has not migrated correctly by the end of your window,
@@ -28,10 +28,12 @@ data loss will occur when your source server is decommissioned.
 3.  [Kernel overhead check](#kernel)
 4.  [Inode count check](#inode)
 5.  [PV drivers check](#pv)
-6.  [Nova agent check](#nova)
+6.  [Nova agent check](#nova)[](){#top}
 
-SELinux check
--------------
+[](){#selinux}
+
+SELinux check[](){#sellinux}
+----------------------------
 
 The SELinux check indicates whether SELinux is currently enabled on your
 server. SELinux interferes with several OS-level changes that are made
@@ -42,15 +44,17 @@ You must enable it manually.
 
 [^back\\ to\\ top^](#top)
 
-Disk used check
----------------
+[](){#diskused}
+
+Disk used check[](){#diskused}
+------------------------------
 
 The disk used check compares the amount of space used by your server
 with the total disk size available to determine percentage usage. The
 check thresholds are as follows:
 
--   Warning \> 80% usage
--   Critical \> 89% usage
+-   Warning &gt; 80% usage
+-   Critical &gt; 89% usage
 
 Failing this check does not necessarily indicate that your migration
 will fail. However, large amounts of data will cause your migration to
@@ -64,8 +68,10 @@ Linux cloud server, or by checking the properties of your disk from the
 
 [^back\\ to\\ top^](#top)
 
-Kernel overhead check
----------------------
+[](){#kernel}
+
+Kernel overhead check[](){#kernel}
+----------------------------------
 
 In a subset of the First Gen Linux infrastructure, the kernel and
 initial RAM disk are handled by the hypervisor instead of within your
@@ -81,14 +87,16 @@ ensure that you have at least 5 to 10 GB free on your root partition.
 
 [^back\\ to\\ top^](#top)
 
-Inode count check
------------------
+[](){#inode}
+
+Inode count check[](){#inode}
+-----------------------------
 
 This check counts the actual number of files on your root file system.
 The check thresholds are as follows:
 
--   Warning \> 2 million
--   Critical \> 3 million
+-   Warning &gt; 2 million
+-   Critical &gt; 3 million
 
 Like the disk usage check, failing this check does not necessarily
 indicate that your cloud server migration will fail, but an extremely
@@ -104,8 +112,10 @@ Backup is good for this purpose), and remove it from the server.
 
 [^back\\ to\\ top^](#top)
 
-PV drivers check
-----------------
+[](){#pv}
+
+PV drivers check[](){#pv}
+-------------------------
 
 The majority of the First Gen infrastructure and the entire Next Gen
 infrastructure use XenServer to power the host machines for your cloud
@@ -130,12 +140,14 @@ install or update these drivers:
     chmod u+x xen_tools_installer.sh; bash xen_tools_installer.sh; rm -rf xen_tools_installer.sh
 
 For Gentoo, Arch, and FreeBSD, or if this installer fails, you must
-install these drivers manually. 
+install these drivers manually.
 
 [^back\\ to\\ top^](#top)
 
-Nova agent check
-----------------
+[](){#nova}
+
+Nova agent check[](){#nova}
+---------------------------
 
 In the XenServer infrastructure, the OpenStack&reg; guest agent is the same
 as that used in the Next Gen Cloud Servers infrastructure. This nova
@@ -157,11 +169,11 @@ If your Windows server fails this check, follow these instructions:
 
         http://c4f6d65e7c9c0356f5c6-f834e6ac12bf8372533a9a3497063644.r92.cf2.rackcdn.com/AgentService.zip
 
-2.  Unzip the archive.<br>
-      
-3.  In the folder that is created, run the **`installagentservice.bat`**
-    script from an administrator command prompt.<br>
-      
+2.  Unzip the archive.
 
- 
+3.  In the folder that is created, run the **`installagentservice.bat`**
+    script from an administrator command prompt.
+
+
+
 

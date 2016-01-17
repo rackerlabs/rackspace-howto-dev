@@ -2,10 +2,10 @@
 node_id: 3975
 title: Rackspace Cloud Big Data Service Glossary
 type: article
-created_date: '2014-03-28 15:07:46'
-created_by: rose.contreras
-last_modified_date: '2014-06-30 21:4648'
-last_modified_by: jered.heeschen
+created_date: '2014-03-28'
+created_by: Rose Contreras
+last_modified_date: '2014-06-30'
+last_modified_by: Jered Heeschen
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -41,5 +41,5 @@ tenants, is provided if it is relevant to your access to this service.
 objects. Depending on the service operator, a tenant could map to a
 customer, account, organization, or project.
 
- 
+
 

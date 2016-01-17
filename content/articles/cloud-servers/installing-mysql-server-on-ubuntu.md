@@ -2,10 +2,10 @@
 node_id: 1162
 title: Installing MySQL Server on Ubuntu
 type: article
-created_date: '2011-07-29 14:51:26'
-created_by: jered.heeschen
-last_modified_date: '2016-01-11 16:0342'
-last_modified_by: stephanie.fillmon
+created_date: '2011-07-29'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -156,7 +156,7 @@ it in multiple lines in the mysql shell, as in:
         -> FROM mysql.user;
 
 When you hit "enter" after the "Password" part you'll get a new line so
-you can keep typing. The "-\>" indicates that the shell thinks you're
+you can keep typing. The "-&gt;" indicates that the shell thinks you're
 still in the middle of a statement. You can type a semicolon by itself
 to end the command if you simply forgot it on the first line.
 
@@ -310,7 +310,7 @@ grounding from which to learn more. Good work.
 ### Next steps
 
 [Configuring MySQL server on
-Ubuntu](https://www.rackspace.com/knowledge_center/article/configuring-mysql-server-on-ubuntu)
+Ubuntu](/howto/configuring-mysql-server-on-ubuntu)
 
- 
+
 

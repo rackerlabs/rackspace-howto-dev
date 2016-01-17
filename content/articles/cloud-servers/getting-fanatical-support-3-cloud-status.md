@@ -2,10 +2,10 @@
 node_id: 1328
 title: Checking Cloud Status
 type: article
-created_date: '2012-03-20 18:20:07'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-31 16:0507'
-last_modified_by: kyle.laffoon
+created_date: '2012-03-20'
+created_by: Rackspace Support
+last_modified_date: '2015-12-31'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,9 +13,9 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-servers-0)
+Servers](/howto/getting-started-with-cloud-servers-0)
 
- 
+
 
 If you are ever having a problem accessing the Control Panel, or any
 other Rackspace Cloud services, the first place you should check is the
@@ -28,27 +28,27 @@ status.  You can expand the view for each service to see its status on a
 per-datacenter basis.
 
 ![Current
-Status](/knowledge_center/sites/default/files/field/image/Google%20ChromeScreenSnapz043.png)
+Status](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Google%20ChromeScreenSnapz043.png){width="600"}
 
 The next section displays a recent history for each service.  If a
 service had an alert you can click that day's icon to view any related
 messages.
 
 ![Recent
-History](/knowledge_center/sites/default/files/field/image/Google%20ChromeScreenSnapz042.png)
+History](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Google%20ChromeScreenSnapz042.png){width="600"}
 
 The final section of the page lists any recent alerts or scheduled
 maintenance announcements.
 
 ![Alerts and
-Maintenance](/knowledge_center/sites/default/files/field/image/Google%20ChromeScreenSnapz044.png)
+Maintenance](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Google%20ChromeScreenSnapz044.png){width="600"}
 
- 
+
 
 ### Next section
 
 [Billing services
-overview](https://admin.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-billing-services-overview)
+overview](/howto/billing-services-overview)
 
- 
+
 

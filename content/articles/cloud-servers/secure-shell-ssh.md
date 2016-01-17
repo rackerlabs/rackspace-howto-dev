@@ -2,10 +2,10 @@
 node_id: 433
 title: Connecting to a server using SSH on Linux or Mac OS
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-13 20:2445'
-last_modified_by: Nate.Archer
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-13'
+last_modified_by: Nate Archer
 product: Cloud Servers
 body_format: full_html
 ---
@@ -39,9 +39,9 @@ communications to be intercepted and read.
 computer. The default commands listed are for the Linux command line or
 Mac OS X Terminal. To make SSH connections from Windows, you can use a
 free program called
-[PuTTY](http://www.rackspace.com/knowledge_center/article/connecting-to-linux-from-windows-by-using-putty).
+[PuTTY](/howto/connecting-to-linux-from-windows-by-using-putty).
 To generate keys, you can use a related program,
-[PuTTYGen](http://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen). 
+[PuTTYGen](/howto/generating-rsa-keys-with-ssh-puttygen).
 
 Log in {#Log_in}
 ------
@@ -91,19 +91,19 @@ password attacks by using a public/private key pair. This means that a
 public key is placed on the server and a matching private key is placed
 on your local computer. If you [configure SSH on your server to accept
 only connections using
-keys](http://www.rackspace.com/knowledge_center/article/basic-cloud-server-security),
+keys](/howto/basic-cloud-server-security),
 then no one else can log in using just a password.  Connecting clients
 are required to use a private key that has a public key registered on
 the server.
 
 1.  Run the following command using your email address as a label.
-    Substitute your email address for `your_email@example.com` in the
-    command.
+    Substitute your email address for `your_email@example.com` in
+    the command.
 
         ssh-keygen -t rsa -C "your_email@example.com"
 
-    A message indicates that your public/private RSA key pair is being
-    generated.
+    A message indicates that your public/private RSA key pair is
+    being generated.
 
     You are prompted to enter a file in which to save the key. Press
     **Enter** to use the default location.
@@ -140,8 +140,8 @@ upload the public key to your cloud account by following these steps:
 4.  Enter a key name to remind you which computer this key is for; for
     example, **Work Laptop**.
 5.  Select the region for which you want to store the public key. To
-    store your key in multiple regions, repeat these steps for each
-    region.
+    store your key in multiple regions, repeat these steps for
+    each region.
 6.  Paste the contents of the `id_rsa.pub` file that you created into
     the **Public Key** field. You can get the file contents by either
     opening the file in a text editor or by running the following
@@ -200,7 +200,7 @@ text editor.
     values to match your server information:
 
         Host shortcutName
-        HostName serverAddressOrIPAddress   
+        HostName serverAddressOrIPAddress
         User remoteUsername
         IdentityFile /path/to/appropriate/ssh/rsa/private/key
 
@@ -229,8 +229,8 @@ server, use the following steps to help you resolve the issue:
     server's iptables to ensure it isn't blocking the port used by SSH.
 -   If you get a `connection refused` error, you might be trying to use
     SSH with the wrong port. If you changed your server to listen to a
-    port other than 22, use the `-p` option with SSH to specify the
-    port.
+    port other than 22, use the `-p` option with SSH to specify
+    the port.
 -   If you are getting a rejected login, then you might have an issue
     with your key. Change the sshd configuration to allow password
     connections by setting `PasswordAuthentication` to `yes`. Restart

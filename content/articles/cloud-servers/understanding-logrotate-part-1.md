@@ -2,10 +2,10 @@
 node_id: 1260
 title: Understanding logrotate utility
 type: article
-created_date: '2011-11-23 19:36:47'
-created_by: jered.heeschen
-last_modified_date: '2016-01-06 19:4245'
-last_modified_by: stephanie.fillmon
+created_date: '2011-11-23'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -272,11 +272,11 @@ log.
         /usr/sbin/apachectl restart > /dev/null
     endscript
 
-That &ldquo;\> /dev/null&rdquo; bit at the end tells logrotate to pipe the command&rsquo;s
-output to, well, nowhere. Otherwise the output of that command will be
-sent off to the console or the log or email or whatever, and in this
-case, you don&rsquo;t really care about the output if everything restarted
-okay.
+That &ldquo;&gt; /dev/null&rdquo; bit at the end tells logrotate to pipe the
+command&rsquo;s output to, well, nowhere. Otherwise the output of that command
+will be sent off to the console or the log or email or whatever, and in
+this case, you don&rsquo;t really care about the output if everything
+restarted okay.
 
 The &ldquo;postrotate&rdquo; command tells logrotate that the script to run will
 start on the next line, and the &ldquo;endscript&rdquo; command says that the script
@@ -309,5 +309,5 @@ poking around in the existing configs and adapt them to your needs. To
 learn how to put an example config together (to rotate the logs for
 custom virtual hosts),and also cover some handy troubleshooting
 approaches, see [Sample logrotate configurations and
-troubleshooting](http://www.rackspace.com/knowledge_center/article/sample-logrotate-configuration-and-troubleshooting).
+troubleshooting](/howto/sample-logrotate-configuration-and-troubleshooting).
 

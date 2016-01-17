@@ -2,10 +2,10 @@
 node_id: 3586
 title: Migrating an Application Built on a LAMP Stack from Amazon Web Services
 type: article
-created_date: '2013-07-02 17:57:09'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 22:0259'
-last_modified_by: stephanie.fillmon
+created_date: '2013-07-02'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -18,12 +18,12 @@ you follow the instructions step by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](http://www.rackspace.com/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
-The topology of the application in this scenario is presented in the
-following figure:
+<span>The topology of the application in this scenario is presented in
+the following figure:</span>
 
-![](/knowledge_center/sites/default/files/field/image/4.1-1a.jpg)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.1-1a.jpg){width="650"}
 
 ### Prerequisites
 
@@ -40,13 +40,13 @@ following figure:
     in the application&mdash;for example, Simple Email Service (SES) for email
     or Relational Database Service (RDS) for database.
 -   If you have not already, [create a Cloud Server
-    instance](/knowledge_center/article/provisioning-cloud-services-to-migrate-from-amazon-web-services)
+    instance](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
     and any supporting Rackspace Cloud services.
 
 ### Install software packages
 
 After your [Cloud Server is set
-up](/knowledge_center/article/provisioning-cloud-services-to-migrate-from-amazon-web-services),
+up](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services),
 install your LAMP stack and application. In this scenario, WordPress is
 the target application.
 
@@ -57,7 +57,7 @@ the target application.
 
 3.  To install the application stack, select **LAMP server**.
 
-    ![](/knowledge_center/sites/default/files/field/image/4.1-5.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.1-5.png){width="650"}
 
 4.  After the LAMP stack is installed, download and configure WordPress.
 
@@ -73,7 +73,7 @@ the target application.
 
         sudo apt-get install python-novaclient glance-client swift
 
-    1.  Set the necessary environment variables by running the following
+    A.  Set the necessary environment variables by running the following
         commands, substituting your Rackspace Cloud account username and
         API key:
 
@@ -82,12 +82,12 @@ the target application.
             export ST_AUTH=https://identity.api.rackspacecloud.com/v1.0/
 
         You might want to define these variables in **.bashrc** or
-        **.bash\_profile**, then reload the file with the "source"
-        command.
+        **.bash\_profile**, then reload the file with the
+        "source" command.
 
             source .bashrc
 
-    2.  Type **swift list** and ensure that you can see the container
+    B.  Type **swift list** and ensure that you can see the container
         you've created to hold your data.
 
 ### Back up data from AWS to Rackspace Cloud Files
@@ -115,26 +115,26 @@ we'll use an existing container named "WordPress"):
     following methods to perform the transfer. If you will transfer
     directly via rsync or sftp, skip to the final section of this
     article after the transfer.
-    -   Upload your archives to the Cloud Files container via the swift
-        client.
+    -   Upload your archives to the Cloud Files container via the
+        swift client.
 
             swift upload WordPress wordpress.sql.gz
             swift upload WordPress wordpress.tar.gz
             swift upload WordPress apachelogs.tar.gz
 
-    -   Upload your data into Cloud Files through the Cloud Control
-        Panel.
-        1.  Open your container (**Cloud Control Panel \> Files \>
+    -   Upload your data into Cloud Files through the Cloud
+        Control Panel.
+        A.  Open your container (**Cloud Control Panel &gt; Files &gt;
             *containerName***).
-        2.  Click **Upload Files**.
-        3.  Click **Browse**and select the files to upload.
+        B.  Click **Upload Files**.
+        C.  Click **Browse**and select the files to upload.
 
             **Note:** When you click the **Browse** button, you can
             select multiple files.
 
-        4.  After you have selected the file or files, click **Open** or
+        D.  After you have selected the file or files, click **Open** or
             **Select** (depending on the browser and system).
-        5.  Click **Upload File**.
+        E.  Click **Upload File**.
 
 ### Restore data from Cloud Files to Cloud Servers
 
@@ -173,16 +173,16 @@ typing:
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](http://www.rackspace.com/knowledge_center/article/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](/howto/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 
 -   [Migrating a .NET application from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-a-net-application-from-amazon-web-services)
+    Services](/howto/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating a Java web application from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-a-java-web-application-from-amazon-web-services)
+    Services](/howto/migrating-a-java-web-application-from-amazon-web-services)
 -   [Migrating an application based on Backbone.js, Node.js, and MongoDB
     from Amazon Web
-    Services](https://www.rackspace.com/knowledge_center/article/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+    Services](/howto/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
 
 

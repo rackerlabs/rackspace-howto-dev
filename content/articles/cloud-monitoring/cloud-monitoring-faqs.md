@@ -2,13 +2,15 @@
 node_id: 5036
 title: Rackspace Monitoring - FAQ
 type: article
-created_date: '2015-12-10 19:41:13'
-created_by: stephanie.fillmon
-last_modified_date: '2016-01-11 22:5719'
-last_modified_by: kyle.laffoon
+created_date: '2015-12-10'
+created_by: Stephanie Fillmon
+last_modified_date: '2016-01-11'
+last_modified_by: Kyle Laffoon
 product: Cloud Monitoring
 body_format: full_html
 ---
+
+[](){#top}
 
 Getting Started
 ---------------
@@ -36,7 +38,7 @@ Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/
 ### What are the various terms I need to know when using Rackspace Monitoring?
 
 For more information, see the [back to
-top](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-concepts>Concepts</a>%20section%20in%20the%20Rackspace%20Monitoring%20Developer%20Guide.</p>%0A%0A<p><sup><a%20href=)
+top](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-concepts%3EConcepts%3C/a%3E%20section%20in%20the%20Rackspace%20Monitoring%20Developer%20Guide.%3C/p%3E%0A%0A%3Cp%3E%3Csup%3E%3Ca%20href=)
 
 ### How do I configure my monitoring system?
 
@@ -44,9 +46,9 @@ Rackspace Monitoring is an API-based system. You can access it using the
 following methods:
 
 -   [Cloud Control
-    Panel](http://www.rackspace.com/knowledge_center/article/control-panel-monitoring-what-do-the-options-do)
--   [raxmon command line inteface
-    (CLI)](http://www.rackspace.com/knowledge_center/article/getting-started-with-rackspace-monitoring-cli)
+    Panel](/howto/available-checks-for-rackspace-monitoring)
+-   [raxmon command line
+    inteface (CLI)](/howto/getting-started-with-rackspace-monitoring-cli)
 -   [Rackspace Monitoring
     API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
 
@@ -106,7 +108,7 @@ system to go down in the first place.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Account Services
 ----------------
@@ -148,7 +150,7 @@ Not yet, but we are planning on starting in the near future.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Notification Plans
 ------------------
@@ -211,7 +213,7 @@ in the Rackspace Monitoring Developer Guide.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 Monitoring and Troubleshooting
 ------------------------------
@@ -280,12 +282,12 @@ checks. This will require you to work with the following components:
     properties can be modified with the API.
 -   Entities - An entity is a resource that you want to monitor. Some
     examples are a server, a website, or a service.
--   Checks - Checks explicitly specify how you want to monitor an
-    entity.
+-   Checks - Checks explicitly specify how you want to monitor
+    an entity.
 -   Check Types - These are the available service monitoring checks that
     you can configure, such as PING, HTTPS, SMTP (and many more).
--   Monitoring Zones - A monitoring zone is the "launch point" of a
-    check. You can launch checks from multiple monitoring zones.
+-   Monitoring Zones - A monitoring zone is the "launch point" of
+    a check. You can launch checks from multiple monitoring zones.
 -   Alarms - An alarm contains a set of rules that determine when a
     notification is triggered.
 -   Notifications - A notification is an informational message sent to
@@ -295,7 +297,7 @@ checks. This will require you to work with the following components:
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 General
 -------
@@ -438,7 +440,7 @@ monitoring all of them.
 
 ### How does this compare to open source solutions like Nagios?
 
-### 
+###
 
 It is targeted at replacing these type of tools. Right now we don&rsquo;t
 offer all the features of Nagios; however, Rackspace Monitoring is
@@ -505,8 +507,7 @@ in the Rackspace Monitoring Developer Guide.
 
 ### What is the production URL?
 
-The production URL is
-[https://monitoring.api.rackspacecloud.com](https://monitoring.api.rackspacecloud.com).
+The production URL is <https://monitoring.api.rackspacecloud.com>.
 
 ^[back\\ to\\ top](#top)^
 
@@ -556,7 +557,7 @@ incredible.
 
 ^[back\\ to\\ top](#top)^
 
-* * * * *
+------------------------------------------------------------------------
 
 API
 ---

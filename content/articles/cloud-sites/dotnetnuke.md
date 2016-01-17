@@ -2,15 +2,15 @@
 node_id: 544
 title: Install DotNetNuke on Cloud Sites
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:4417'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
 
-**Note:**When adding the website, please ensure the website is created
+**Note:** When adding the website, please ensure the website is created
 under yourself or the company and not a client in your control panel;
 you should select *You (Account Name)* from the drop-down menu when
 creating new DotNetNuke site.
@@ -25,32 +25,36 @@ Please see the following articles on how you change your default
 technology, add a MSSQL database, and connect to FTP:
 
 -   [How do I change my site's default
-    technology?](http://www.rackspace.com/knowledge_center/article/change-your-sites-default-technology "How do I change my site's default technology?")
+    technology?](/howto/change-your-sites-default-technology "How do I change my site's default technology?")
 -   [How do I add a MSSQL database to my
-    site?](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mssql-databases "How do I add a MSSQL database to my site?")
+    site?](/howto/rackspace-cloud-sites-essentials-mssql-databases "How do I add a MSSQL database to my site?"){.mw-redirect}
 -   [How do I add content to my
-    website?](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
+    website?](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
 
-Before You Begin
-----------------
+[](){#Before_You_Begin}
+
+<span class="mw-headline">Before You Begin </span>
+--------------------------------------------------
 
 In your web.config file:
 
 -   Add impersonation: [How do I add impersonation to my ASP.NET
-    site?](http://www.rackspace.com/knowledge_center/article/add-impersonation-to-your-aspnet-cloud-site "How do I add impersonation to my ASP.NET site?")
+    site?](/howto/add-impersonation-to-your-aspnet-cloud-site "How do I add impersonation to my ASP.NET site?")
 -   Set customErrors to "Off", which is case-sensitive
 
-Installing DNN 5.0
-------------------
+[](){#Installing_DNN_5.0}
+
+<span class="mw-headline">Installing DNN 5.0 </span>
+----------------------------------------------------
 
 1.  Open your browser and visit your URL.
 2.  The DNN installation wizard will now load. Select your installation
     method and language type and click on the "Next" button. (This
     article will cover the "Typical" install in English.)
-3.  DNN will now automatically check to see if permissions are properly
-    set. All checks should complete successfully before proceeding.
-    Should any fail, please verify your permissions. Click on the "Next
-    Step" button.
+3.  DNN will now automatically check to see if permissions are
+    properly set. All checks should complete successfully
+    before proceeding. Should any fail, please verify your permissions.
+    Click on the "Next Step" button.
 4.  This page will now set up your database connection. For "Select
     Database," choose "SQL Server 2008 Database." Enter the hostname for
     your database for the "Server" field. Enter your database name in
@@ -63,11 +67,11 @@ Installing DNN 5.0
     "Next" button. Please see the note at the bottom of this article if
     you begin to receive an "undefined success" error.
 7.  You will now configure the Host user for DNN. Fill out the fields
-    with the appropiate information. Once finished, click on the "Next"
-    button.
-8.  You will now configure the Portal Administrator user and your site
-    properties. Enter the appropriate properties and click on the "Next"
-    button to complete the installation.
+    with the appropiate information. Once finished, click on the
+    "Next" button.
+8.  You will now configure the Portal Administrator user and your
+    site properties. Enter the appropriate properties and click on the
+    "Next" button to complete the installation.
 
 You have now completed the DNN installation. You may continue, using the
 "Finished (Go to Site)" button, or go back to a previous step using
@@ -82,12 +86,12 @@ suggestions:
     been added.
 -   Use your back button to return to the beginning of the installation
     and select "Automatic" installation. Because the database tables
-    already exist, the installer will skip this step and complete
-    successfully.
+    already exist, the installer will skip this step and
+    complete successfully.
 -   If all other attempts fail to correct error, you can wipe out your
     database and start again fresh to ensure no data was added. Follow
     this link for those instructions:
-    [http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html](http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html "http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html")
+    <http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html>
 
 If you have any questions concerning this article, please contact
 support.

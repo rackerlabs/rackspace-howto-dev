@@ -2,10 +2,10 @@
 node_id: 4258
 title: Create a CSR in the Cloud Control Panel
 type: article
-created_date: '2014-09-25 14:19:06'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 14:5917'
-last_modified_by: stephanie.fillmon
+created_date: '2014-09-25'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -14,13 +14,13 @@ Rackspace  provides a tool for generating a certificate signing request, or CSR.
 
 When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the terms in the top navigation or by going to [mycloud.rackspace.com](https://mycloud.rackspace.com).
 
-**Tip**: You can also generate a CSR and private key on your Linux Cloud Server using OpenSSL.  For more information, see [Generate a CSR with OpenSSL](http://www.rackspace.com/knowledge_center/article/generate-a-csr-with-openssl).
+**Tip**: You can also generate a CSR and private key on your Linux Cloud Server using OpenSSL.  For more information, see [Generate a CSR with OpenSSL](/howto/generate-a-csr-with-openssl).
 <a name="top"></a>
 
 *   [Access the CSR Generator](#access)
 *   [Generate the CSR](#create)
 *   [View CSR details](#view)
-*   [Submit your CSR to the Certificate Authority](#submit) 
+*   [Submit your CSR to the Certificate Authority](#submit)
 *   [Install the private key](#install)
 
 ## <a name="access"></a>Access the CSR Generator
@@ -29,7 +29,7 @@ Click the following link to access the [CSR Generator](https://csrgenerator.rack
 
 After you log in, the generator lists your existing CSRs (if any), organized by domain name.
 
-<img src="/knowledge_center/sites/default/files/field/image/CSR_gen_1.png" width="650" alt="Main page of CSR Generator, showing list of certificate requests for domains."  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CSR_gen_1.png" width="650" alt="Main page of CSR Generator, showing list of certificate requests for domains."  />
 
 [< top >](#top)
 
@@ -52,16 +52,16 @@ Step 2. Enter the following information, which will be associated with the CSR:
 | Country | Choose your country from the drop-down menu.  The two-letter ISO abbreviation for your country is included in the CSR. | United States |
 | Private Key Bit Length | Key sizes smaller than 2048 are considered insecure and may not be accepted by a Certificate Authority. | 1024,2048,4096 |
 | Hashing Algorithm | Both algorithms are currently trusted in mainstream browsers and offer industry recommended security.  SHA-512 requires additional CPU processing. | SHA-256, SHA-512 |
- 
+
 **NOTE:** You cannot use the following characters in the **Organization Name** or **Organizational Unit** fields:
 
     < > ~ ! @ # $ % ^ * / \ ( ) ? . , &
 
-<img src="/knowledge_center/sites/default/files/field/image/csr_gen_form.png" width="650" alt="Create CSR form"  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/csr_gen_form.png" width="650" alt="Create CSR form"  />
 
 
 Step 3. After you have entered all the required information, click **Create CSR**.
- 
+
 It can take between 5 and 60 seconds for the CSR to be generated.  You might need to refresh the page that displays your CSRs before the new CSR is listed.
 
 [< top >](#top)
@@ -70,7 +70,7 @@ It can take between 5 and 60 seconds for the CSR to be generated.  You might nee
 
 When CSR has been generated, you can click its UUID (unique identifier) in the CSR list to view its details screen.
 
-<img src="/knowledge_center/sites/default/files/field/image/csr_gen_complete.png" width="650" alt="CSR details"  />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/csr_gen_complete.png" width="650" alt="CSR details"  />
 
 This screen displays the information that you provided, the text of the CSR, and its associated private key.
 

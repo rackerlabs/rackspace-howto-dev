@@ -2,16 +2,16 @@
 node_id: 3173
 title: Rackspace Private Cloud Software - VM Block Migration
 type: article
-created_date: '2012-11-05 18:03:20'
+created_date: '2012-11-05'
 created_by: Karin Levenstein
-last_modified_date: '2012-11-15 06:5805'
-last_modified_by: jered.heeschen
-product: Rackspace Private Cloud - OpenStack
+last_modified_date: '2012-11-15'
+last_modified_by: Jered Heeschen
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
-Overview
---------
+[]()Overview
+------------
 
 Rackspace Private Cloud Software installs a collection of Chef cookbooks
 that deploy and manage the suite of OpenStack core projects: Compute
@@ -20,10 +20,10 @@ that deploy and manage the suite of OpenStack core projects: Compute
 is installed separately, as described in this document.
 
 Rackspace Private Cloud Software v 2.0 (Alamo) supports the [Folsom
-release of OpenStack](http://www.openstack.org/software/essex/) for
-these components.
+release of OpenStack](http://www.openstack.org/software/essex/){.link}
+for these components.
 
-### Intended Audience
+### []()Intended Audience
 
 This guide is intended for users who have used Rackspace Private Cloud
 Software to deploy an OpenStack-powered cloud that has been tested and
@@ -35,7 +35,7 @@ To use the product and this document, you should have prior knowledge of
 OpenStack and cloud computing, basic Linux administration skills, and a
 side of bacon.
 
-### Document Change History
+### []()Document Change History
 
 This version of the Rackspace Private Cloud Cookbook Update Guide
 replaces and obsoletes all previous versions. The most recent changes
@@ -49,16 +49,16 @@ November 15, 2012
 
 -   Rackspace Private Cloud Software v 2.0 release
 
-### Additional Resources
+### []()Additional Resources
 
 -   [Rackspace Private Cloud Knowledge
-    Center](http://www.rackspace.com/knowledge_center/product-page/rackspace-private-cloud)
--   [OpenStack Manuals](http://docs.openstack.org)
+    Center](/howto/rackspace-private-cloud){.link}
+-   [OpenStack Manuals](http://docs.openstack.org){.link}
 -   [OpenStack Documentation: Configuring Live
-    Migrations](http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html)
+    Migrations](http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html){.link}
 
-OpenStack Compute Migration Concepts
-------------------------------------
+[]()OpenStack Compute Migration Concepts
+----------------------------------------
 
 In virtual machine migration, a VM (also known as a guest) that is
 running on one OpenStack Compute (Nova) compute node is moved to another
@@ -66,20 +66,24 @@ compute node, with minimum downtime for the guest. In other words, the
 guest is migrated while still running. This can be useful when you need
 to apply patches or perform maintenance on the physical node or when you
 want to redistribute guest machine load across a cluster of nova compute
-nodes. 
+nodes.
 
 The guest components that are migrated include the current memory pages
 and disk state, and the host components include the network rules and IP
 addresses that allow access to and from the guest. There are two
 different modes of guest migration, [live
-migration](#migration-live "Live Migrations") and [block
-migration](#migration-block "Block Migrations").  Both types of
+migration](#migration-live "Live Migrations"){.link} and [block
+migration](#migration-block "Block Migrations"){.link}.  Both types of
 migration must be performed by an admin user.
 
-### Live Migrations
+<div class="section" title="Live Migrations">
+
+### []()Live Migrations
 
 For a live migration to be successful, your configuration must meet the
 following prerequisites:
+
+<div class="itemizedlist">
 
 -   The guest machine images are stored on shared storage that is
     accessible to all compute nodes in the compute cluster.
@@ -105,18 +109,18 @@ that were associated with the guest. Finally, the destination node adds
 the relevant network details, unpauses the guest, and updates the
 database to show that the migration is complete.
 
-### Block Migrations
+### []()Block Migrations
 
 Block migrations are useful when you don't have, and don't want the
-management overhead of, shared storage to place your guest images on. 
+management overhead of, shared storage to place your guest images on.
 The stages of the migration are similar to those of the live migration,
 with the additional step of copying the guest disk image over the
 network from the source node to the destination node.  This does mean
 that the migration takes a little longer, but achieves a similar result
 in that the guest is fully migrated from one node to another.
 
-Rackspace Private Cloud Block Migration
----------------------------------------
+[]()Rackspace Private Cloud Block Migration
+-------------------------------------------
 
 By default, shared storage is not configured in an Rackspace Private
 Cloud (Alamo) install, so your guest migration will use the block
@@ -125,7 +129,7 @@ migration. In this example, we have a 2-node nova compute cluster, with
 compute hosts called `compute1` and `compute2`. All actions are
 performed with `root` access.
 
-### Migration Example
+### []()Migration Example
 
 First, get a list of the VM guests:
 
@@ -273,7 +277,9 @@ or reboot the virtual machine: they simply freeze it in a running state
 while the necessary files are copied over the network, and then unfreeze
 it at the other end of the migration process.
 
-### Troubleshooting a Migration
+<div class="section" title="Troubleshooting a Migration">
+
+### []()Troubleshooting a Migration
 
 Sometimes when attempting a migration, you will encounter an error from
 the nova client, similar to the following :
@@ -322,8 +328,17 @@ the admin tenant:
 Generally, if you have any issues migrating your guests, the best places
 to check would be the following log files:
 
+<div class="itemizedlist">
+
 -   `/var/log/nova/nova-scheduler.log` on the Alamo controller node
 -   `/var/log/nova/nova-compute.log` on your source/destination compute
     hosts
 
+</div>
+
+</div>
+
+</div>
+
+</div>
 

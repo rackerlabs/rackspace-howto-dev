@@ -2,9 +2,9 @@
 node_id: 4759
 title: Using Swift Signal Resources to Determine Status for Cloud Orchestration User Data Scripts
 type: article
-created_date: '2015-07-24 17:38:22'
+created_date: '2015-07-24'
 created_by: Mike Asthalter
-last_modified_date: '2015-07-31 14:2833'
+last_modified_date: '2015-07-31'
 last_modified_by: Mike Asthalter
 product: Cloud Orchestration
 body_format: tinymce
@@ -22,7 +22,7 @@ internal to the stack. It is often used in conjunction with
 used by applications and scripts to send signals. `SwiftSignal` resource
 waits on this URL for a specified number of signals in a given time.
 
- 
+
 
 ### Example template
 
@@ -32,7 +32,7 @@ at a given URL.
 
 Start by adding the top-level template sections:
 
- 
+
 
     heat_template_version: 2014-10-16
 
@@ -43,7 +43,7 @@ Start by adding the top-level template sections:
 
     outputs:
 
- 
+
 
 ### Resources section
 
@@ -78,7 +78,7 @@ template output.
 Here `SwiftSignal` resource would wait for `600` seconds to receive 1
 signal on the `handle`.
 
-####  
+####
 
 #### Add a server resource
 
@@ -132,11 +132,11 @@ Add Swift signal URL to the `outputs` section.
       value:{ get_attr: [ linux_server, accessIPv4 ] }
       description: Linux server public IP
 
- 
+
 
 ### Full Example Template
 
- 
+
 
 
     heat_template_version: 2014-10-16
@@ -189,7 +189,7 @@ Add Swift signal URL to the `outputs` section.
         value: { get_attr: ['wait_on_server', 'data'] }
         description: Data describing script results
 
-      #Obtain IPv4 address of server  
+      #Obtain IPv4 address of server
       server_public_ip:
         value: { get_attr: [ linux_server, accessIPv4 ] }
         description: Linux server public IP

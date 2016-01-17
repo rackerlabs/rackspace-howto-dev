@@ -2,10 +2,10 @@
 node_id: 545
 title: Enabling raw logging for a Cloud Sites website
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 18:4534'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -31,7 +31,7 @@ Raw logs files can take up a lot of space. If you are not using them
 Once enabled the raw logs can be found in your domain's FTP directory,
 in the "logs" folder.  You can determine the path to the domain using
 [this article on finding your web
-root](http://www.rackspace.com/knowledge_center/article/locate-the-linux-path-for-your-cloud-sites-website).
+root](/howto/locate-the-linux-path-for-your-cloud-sites-website).
 
 ### Pre-requisites
 
@@ -43,8 +43,8 @@ root](http://www.rackspace.com/knowledge_center/article/locate-the-linux-path-fo
     **Cloud Sites**.
 -   From the list of domains click on the hyperlink of the domain for
     which logging needs to be enabled.
-    -   You should now be on the **General Settings** tab for that
-        website.
+    -   You should now be on the **General Settings** tab for
+        that website.
 -   Scroll down to **Website Features** section and click on the
     **Enable** hyperlink for Raw logs.
 

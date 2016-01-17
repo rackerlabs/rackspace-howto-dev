@@ -2,10 +2,10 @@
 node_id: 1259
 title: How to Add Linux User With Document Root Permissions
 type: article
-created_date: '2011-11-23 19:13:47'
-created_by: RackKCAdmin
-last_modified_date: '2012-10-09 17:4719'
-last_modified_by: jered.heeschen
+created_date: '2011-11-23'
+created_by: Rackspace Support
+last_modified_date: '2012-10-09'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---

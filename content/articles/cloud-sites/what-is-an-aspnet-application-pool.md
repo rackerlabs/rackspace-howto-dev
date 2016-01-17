@@ -2,10 +2,10 @@
 node_id: 722
 title: What Is An ASP.NET Application Pool?
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2011-09-07 17:0306'
-last_modified_by: matt.wheeler
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2011-09-07'
+last_modified_by: Matt Wheeler
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -22,5 +22,5 @@ contacting support, this can be processed for you.
 For in-depth information concerning application pools, please see the
 following article:
 
-[http://www.developer.com/net/asp/article.php/2245511](http://www.developer.com/net/asp/article.php/2245511 "http://www.developer.com/net/asp/article.php/2245511")
+<http://www.developer.com/net/asp/article.php/2245511>
 

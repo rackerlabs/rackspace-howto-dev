@@ -2,10 +2,10 @@
 node_id: 665
 title: Redirect a subdomain to a subdirectory with ASP
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 20:1936'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -20,13 +20,13 @@ redirect the requests to a specific file.
 
 **Examples:**
 
-http://subdomain1.YourHostedDomainName.com \>
+http://subdomain1.YourHostedDomainName.com &gt;
 http://subdomain1.YourHostedDomainName.com/subdomain1
 
-http://subdomain2.YourHostedDomainName.com \>
+http://subdomain2.YourHostedDomainName.com &gt;
 http://subdomain2.YourHostedDomainName.com/subdomain2
 
-http://subdomain3.YourHostedDomainName.com \>
+http://subdomain3.YourHostedDomainName.com &gt;
 http://subdomain3.YourHostedDomainName.com/subdomain3/home.asp
 
 You can use the following sample script to redirect a subdomain. You

@@ -2,9 +2,9 @@
 node_id: 4708
 title: High Availability for Cloud Databases
 type: article
-created_date: '2015-06-10 20:57:04'
-created_by: neha.verma
-last_modified_date: '2015-12-01 15:2420'
+created_date: '2015-06-10'
+created_by: Neha Verma
+last_modified_date: '2015-12-01'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
 body_format: tinymce
@@ -34,8 +34,8 @@ Use cases
     application downtime can result in huge revenue losses. Users can
     use Cloud Databases HA instances to ensure that their database is
     always available and will only experience a small amount of downtime
-    in case of failover.<br>
-      
+    in case of failover.
+
 -   For read-heavy workloads, to improve performance Cloud Databases
     users can redirect writes and reads to source and replica instances
     (within the HA setup) respectively.
@@ -74,11 +74,11 @@ the latest replica and applies them to the other replicas. MHA also
 triggers a script that switches the new source out of the read-only pool
 and updates the write pool. Total downtime is around 10-30 seconds.
 
-**Figure 1. Cloud Databases HA setup**<br>
+**Figure 1. Cloud Databases HA setup**
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/HighAvailabilityforCloudDatabases1b.png){width="818"
+height="605"}
 
-![](/knowledge_center/sites/default/files/field/image/HighAvailabilityforCloudDatabases1b.png)
 
- 
 
 Getting started with HA for Cloud Databases
 -------------------------------------------
@@ -88,7 +88,7 @@ Control Panel and API, but conversion of running instances to HA is
 still API only. The ability to convert instances to HA will be added to
 the Cloud Control Panel in an upcoming release. For more details about
 the HA-related API calls, see the API documentation at
-[http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/ha.html](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/ha.html).
+<http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/ha.html>.
 
 **Notes:**
 
@@ -99,8 +99,9 @@ the HA-related API calls, see the API documentation at
     listing the details of an HA instance) provides details about
     accessing the HA instance. The single access point (VIP) of the HA
     instance is specified as the `address`. All the reads and writes are
-    directed to this single access point and port 3306 (source
-    database). You can also point reads to replicas using port 3307.
+    directed to this single access point and port 3306
+    (source database). You can also point reads to replicas using
+    port 3307.
 -   The only allowed operations on instances that are part of the HA
     group are Create users and Create databases (on source only). All
     other operations are blocked on these instances.
@@ -111,8 +112,8 @@ the HA-related API calls, see the API documentation at
     group will be built and automatically added to this setup in order
     to maintain the HA node configuration. For the period when this
     replica is being added, the HA would be in `ADDING_REPLICA` state
-    and would switch to `ACTIVE` once the node has been successfully
-    added.
+    and would switch to `ACTIVE` once the node has been
+    successfully added.
 
            **Warning!** Automatically adding a new replica node would
 restart the MHA manager service (which monitors the source/replica
@@ -133,8 +134,8 @@ Limitations
 
 -   Currently, the maximum number of replicas allowed per source
     database instance is two.
--   An HA instance is available only for instance flavors 1 GB and
-    greater.
+-   An HA instance is available only for instance flavors 1 GB
+    and greater.
 -   The source and replicas should have the same size and flavor.
 -   The source and replicas are created in the same region.
 -   Currently backups, resizes, and custom configurations cannot be

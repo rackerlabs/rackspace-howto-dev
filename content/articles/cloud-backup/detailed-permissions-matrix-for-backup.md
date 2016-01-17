@@ -2,10 +2,10 @@
 node_id: 3722
 title: Detailed permissions matrix for Cloud Backup
 type: article
-created_date: '2013-10-07 19:11:42'
-created_by: renee.rendon
-last_modified_date: '2016-01-11 15:4124'
-last_modified_by: rose.coste
+created_date: '2013-10-07'
+created_by: Renee Rendon
+last_modified_date: '2016-01-11'
+last_modified_by: Rose Coste
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -19,10 +19,10 @@ Guide](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/).
 -   [Role permissions for Cloud Backup v1](#v1)
 -   [Role permissions for Cloud Backup v2](#v2)
 
- 
 
-Role permissions for Cloud Backup v1
-------------------------------------
+
+[](){#v1}Role permissions for Cloud Backup v1
+---------------------------------------------
 
 Capability
 
@@ -40,7 +40,7 @@ Creator
 
 Admin
 
- 
+
 
 Agents
 
@@ -54,41 +54,41 @@ GET /agent/{machineAgentId}
 
  x
 
-Gets details about the specified server and its agent.
+<span>Gets details about the specified server and its agent.</span>
 
 Enable or disable agent
 
 POST /agent/enable
 
- 
+
 
  x
 
 x
 
-Enables or disables an agent. Disabling an agent only stops it from
-making backups. The agent is not deleted and its data remains. Disabled
-agents can later be re-enabled.
+<span>Enables or disables an agent. Disabling an agent only stops it
+from making backups. The agent is not deleted and its data remains.
+Disabled agents can later be re-enabled.</span>
 
 Enable volume encryption
 
 POST /agent/encrypt
 
- 
+
 
  x
 
 x
 
-Enables volume encryption.
+<span>Enables volume encryption.</span>
 
 Delete agent
 
 POST /agent/delete
 
- 
 
- 
+
+
 
  x
 
@@ -98,29 +98,30 @@ Migrate a vault
 
 PUT /agent/migratevault
 
- 
 
- 
+
+
 
  x
 
-Migrates a backup vault from one agent to another. These two agents
-should be under the same user and their backups should not be encrypted.
+<span>Migrates a backup vault from one agent to another. These two
+agents should be under the same user and their backups should not be
+encrypted.</span>
 
 Update agent backup behavior
 
 POST agent/{machineAgentId}
 
- 
+
 
  x
 
 x
 
-Updates the backup data center or enables or disables ServiceNet for the
-Cloud Backup agent. If ServiceNet is enabled, the Cloud Backup agent
-connects with Cloud Files over ServiceNet and does not incur any
-bandwidth charges.
+<span>Updates the backup data center or enables or disables ServiceNet
+for the Cloud Backup agent. If ServiceNet is enabled, the Cloud Backup
+agent connects with Cloud Files over ServiceNet and does not incur any
+bandwidth charges.</span>
 
 Get agent details by host server ID
 
@@ -132,8 +133,8 @@ GET /agent/server/{hostServerId}
 
  x
 
-Gets details about the server and its agent by using the specified host
-server ID.
+<span>Gets details about the server and its agent by using the specified
+host server ID.</span>
 
 User
 
@@ -147,11 +148,11 @@ Creator
 
 Admin
 
- 
+
 
 Get all agents for this user
 
-GET /user/agents 
+GET /user/agents
 
 x
 
@@ -159,11 +160,12 @@ x
 
 x
 
-Retrieves information for all of the agents for the current user.
+<span>Retrieves information for all of the agents for the current
+user.</span>
 
 Wake up agents
 
-GET /user/wakeupagents 
+GET /user/wakeupagents
 
 x
 
@@ -171,7 +173,7 @@ x
 
 x
 
-Activates the agent before any tasks are performed. 
+<span>Activates the agent before any tasks are performed.</span>
 
 Backup configurations
 
@@ -185,13 +187,13 @@ Creator
 
 Admin
 
- 
 
-Create backup configuration 
 
-POST /backup-configuration 
+Create backup configuration
 
- 
+POST /backup-configuration
+
+
 
  x
 
@@ -202,9 +204,9 @@ the details of the configuration.
 
 Update backup configuration
 
-PUT /backup-configuration/{backupConfigurationId} 
+PUT /backup-configuration/{backupConfigurationId}
 
- 
+
 
  x
 
@@ -214,7 +216,7 @@ Updates a backup configuration that already exists.
 
 Get backup configuration details
 
-GET /backup-configuration/{backupConfigurationId}
+GET /backup-configuration/<span>{backupConfigurationId}</span>
 
  x
 
@@ -222,7 +224,8 @@ GET /backup-configuration/{backupConfigurationId}
 
  x
 
-Gets detailed information for the specified backup configuration.
+<span>Gets detailed information for the specified backup
+configuration.</span>
 
 Get all backup configurations for user
 
@@ -234,25 +237,25 @@ GET /backup-configuration
 
 x
 
-Gets a list of all the backup configurations for the current user. 
+Gets a list of all the backup configurations for the current user.
 
-Get all backup configurations for agent 
+Get all backup configurations for agent
 
-GET /backup-configuration/system/{machineAgentId} 
-
- x
+GET /backup-configuration/system/{machineAgentId}
 
  x
 
  x
 
-Gets a list of backup configurations for the specified agent. 
+ x
+
+Gets a list of backup configurations for the specified agent.
 
 Enable or disable a backup configuration
 
 POST /backup-configuration/enable/{backupConfigurationId}
 
- 
+
 
  x
 
@@ -264,11 +267,11 @@ configurations can later be re-enabled.
 
 Delete backup configuration
 
-DELETE /backup-configuration/{backupConfigurationId} 
+DELETE /backup-configuration/{backupConfigurationId}
 
- 
 
- 
+
+
 
  x
 
@@ -286,13 +289,13 @@ Creator
 
 Admin
 
- 
 
-Start or stop a backup manually 
+
+Start or stop a backup manually
 
 POST /backup/action-requested
 
- 
+
 
  x
 
@@ -301,9 +304,9 @@ POST /backup/action-requested
 Starts or stops a backup. and returns the  identifier of the instance of
 the backup.
 
-Get backup details 
+Get backup details
 
-GET /backup/{backupId} 
+GET /backup/{backupId}
 
  x
 
@@ -311,11 +314,11 @@ x
 
  x
 
-Gets details about the specified backup. 
+Gets details about the specified backup.
 
 Get completed backups
 
-GET /backup/completed/{backupConfigurationId} 
+GET /backup/completed/{backupConfigurationId}
 
  x
 
@@ -326,9 +329,9 @@ GET /backup/completed/{backupConfigurationId}
 Gets details for backups that can still be restored. Backups are
 returned only for the specified backup configuration.
 
-Get a backup report 
+Get a backup report
 
-GET/backup/report/{backupId} 
+GET/backup/report/{backupId}
 
  x
 
@@ -336,7 +339,7 @@ x
 
 x
 
-Gets details about the specified  completed backup. 
+Gets details about the specified  completed backup.
 
 Restore configuration operations
 
@@ -350,13 +353,13 @@ Creator
 
 Admin
 
- 
+
 
 Creates a restore configuration
 
-PUT /restore 
+PUT /restore
 
- 
+
 
 x
 
@@ -364,31 +367,31 @@ x
 
 Creates a new restore configuration.
 
-Update a restore configuration 
+Update a restore configuration
 
-POST /restore 
+POST /restore
 
- 
 
-x
 
 x
 
-Updates an existing restore configuration. 
+x
+
+Updates an existing restore configuration.
 
 Include or exclude a file to a restore configuration
 
-PUT /restore/files 
+PUT /restore/files
 
- 
 
-x
 
 x
 
-Creates a restore file associated with a restore configuration. 
+x
 
-List included or excluded restore configuration files 
+Creates a restore file associated with a restore configuration.
+
+List included or excluded restore configuration files
 
 GET /restore/files/{restoreId}
 
@@ -399,19 +402,19 @@ x
 x
 
 Lists the files that are included or excluded in a restore
-configuration. 
+configuration.
 
 Delete a restore configuration file
 
-DELETE /restore/files/{restoreFileID} 
+DELETE /restore/files/{restoreFileID}
 
- 
 
-x
 
 x
 
-Deletes a restore configuration file. 
+x
+
+Deletes a restore configuration file.
 
 Restore
 
@@ -425,7 +428,7 @@ Creator
 
 Admin
 
- 
+
 
 List available backups for restore
 
@@ -443,9 +446,9 @@ expired.
 
 Start or stop a restore manually
 
-POST /restore/action-requested 
+POST /restore/action-requested
 
- 
+
 
  x
 
@@ -453,9 +456,9 @@ POST /restore/action-requested
 
 Manually starts or stops a restore.
 
-Get detailed information about a restore 
+Get detailed information about a restore
 
-GET /restore/{restoreId} 
+GET /restore/{restoreId}
 
  x
 
@@ -463,7 +466,7 @@ x
 
 x
 
-Gets details about the specified restore. 
+Gets details about the specified restore.
 
 Get a restore report
 
@@ -475,7 +478,7 @@ GET /restore/report/{restoreId}
 
  x
 
-Gets a report for the specified completed restore. 
+Gets a report for the specified completed restore.
 
 Activity operations
 
@@ -489,7 +492,7 @@ Creator
 
 Admin
 
- 
+
 
 Get an activity feed for an agent
 
@@ -516,10 +519,10 @@ x
 
 Gets a listing of all activity completed or in progress for the user.
 
- 
 
-Role permissions for Cloud Backup v2
-------------------------------------
+
+[](){#v2}Role permissions for Cloud Backup v2
+---------------------------------------------
 
 Capability
 
@@ -541,7 +544,7 @@ Register an agent
 
 POST /v2/agents
 
- 
+
 
 x
 
@@ -571,7 +574,7 @@ Update agent
 
 PATCH /v2/agents/{agent\_id}
 
- 
+
 
 x
 
@@ -581,9 +584,9 @@ Delete agent
 
 DELETE /v2/agents/{agent\_id}
 
- 
 
- 
+
+
 
 x
 
@@ -602,7 +605,7 @@ Request to browse an agent's files
 
 POST /v2/agents/{agent\_id}/browse-requests
 
- 
+
 
 x
 
@@ -612,7 +615,7 @@ View results of agent browse request
 
 GET /v2/agents/{agent\_id}/browse-requests/{request\_id}
 
- 
+
 
 x
 
@@ -662,9 +665,9 @@ Request to download agent's log files
 
 POST /v2/agents/{agent\_id}/logfiles
 
- 
 
- 
+
+
 
 x
 
@@ -672,9 +675,9 @@ List log files for agent
 
 GET /v2/agents/{agent\_id}logfiles
 
- 
 
- 
+
+
 
 x
 
@@ -682,9 +685,9 @@ Get details about a log file
 
 GET /v2/agents/{agent\_id}/logfiles/{logfile\_id}
 
- 
 
- 
+
+
 
 x
 
@@ -692,7 +695,7 @@ Update a log file
 
 PATCH /v2/agents/{agent\_id}/logfiles/{logfile\_id}
 
- 
+
 
 x
 
@@ -702,9 +705,9 @@ Delete a log file
 
 DELETE /v2/agents/{agent\_id}/logfiles/{logfile\_id}
 
- 
 
- 
+
+
 
 x
 
@@ -722,9 +725,9 @@ Migrate a vault
 
 POST /v2/agents/{agent\_id}/vault
 
- 
 
- 
+
+
 
 x
 
@@ -732,7 +735,7 @@ Enable valut encryption
 
 POST /v2/agents/{agent\_id}/vault-encryption-requests
 
- 
+
 
 x
 
@@ -742,7 +745,7 @@ Report results of a vault encryption request
 
 POST /v2/agents/{agent\_id}/vault-encryption-requests/{request\_id}
 
- 
+
 
 x
 
@@ -752,7 +755,7 @@ View results of vault encryption request
 
 GET /v2/agents/{agent\_id}/vault-encryption-requests/{request\_id}
 
- 
+
 
 x
 
@@ -773,7 +776,7 @@ Report results of a vault password verification request
 POST
 /v2/agents/{agent\_id}/vault-password-verification-requests/{request\_id}
 
- 
+
 
 x
 
@@ -819,7 +822,7 @@ Start backup
 
 POST /v2/backups
 
- 
+
 
 x
 
@@ -849,7 +852,7 @@ Update a backup
 
 PATCH /v2/backups/{backup\_id}
 
- 
+
 
 x
 
@@ -911,7 +914,7 @@ Start a cleanup
 
 POST /v2/cleanups
 
- 
+
 
 x
 
@@ -941,7 +944,7 @@ Update a cleanup
 
 PATCH /v2/cleanups/{cleanup\_id}
 
- 
+
 
 x
 
@@ -983,7 +986,7 @@ Create a configuration
 
 POST /v2/configurations
 
- 
+
 
 x
 
@@ -1013,7 +1016,7 @@ Update a configuration
 
 PATCH /v2/configurations/{config\_id}
 
- 
+
 
 x
 
@@ -1023,9 +1026,9 @@ Delete a configuration
 
 DELETE /v2/configurations/{config\_id}
 
- 
 
- 
+
+
 
 x
 
@@ -1098,7 +1101,7 @@ Start a restore
 
 POST /v2/restores
 
- 
+
 
 x
 
@@ -1128,7 +1131,7 @@ Update a restore
 
 PATCH /v2/restores/{restore\_id}
 
- 
+
 
 x
 
@@ -1154,12 +1157,12 @@ x
 
 x
 
- 
 
- 
 
-[\< Permission Matrices for RBAC](http://www.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
-------------------------------------------------------------------------------------------------------------------------------------------
 
- 
+
+[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
 

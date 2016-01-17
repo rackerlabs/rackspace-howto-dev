@@ -2,11 +2,11 @@
 node_id: 3697
 title: Manually configure Android devices for email hosted on Exchange 2010
 type: article
-created_date: '2013-09-20 20:17:58'
+created_date: '2013-09-20'
 created_by: Marco Salazar
-last_modified_date: '2015-05-01 16:2437'
-last_modified_by: kelly.holcomb
-product: Exchange
+last_modified_date: '2015-05-01'
+last_modified_by: Kelly Holcomb
+product: Microsoft Exchange
 body_format: full_html
 ---
 
@@ -18,18 +18,23 @@ email through their Administrative Control Panel.
 
 1.  Tap the **Settings** icon, and then tap **Accounts and Sync**.
 
-    ![](/knowledge_center/sites/default/files/field/image/1.%20Settings.png) 
-    ![](/knowledge_center/sites/default/files/field/image/2.%20Accounts%20and%20Sync.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1.%20Settings.png){width="217"
+    height="386"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2.%20Accounts%20and%20Sync.png){width="217"
+    height="386"}
 
 2.  Tap the **Add** icon, and then tap **Exchange ActiveSync**.
 
-    ![](/knowledge_center/sites/default/files/field/image/3.%20Add.png) 
-    ![](/knowledge_center/sites/default/files/field/image/4.%20Exchange%20ActiveSync.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3.%20Add.png){width="217"
+    height="386"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.%20Exchange%20ActiveSync.png){width="217"
+    height="386"}
 
 3.  Enter your email address and password, and then tap **Manual
     setup**.
 
-    ![](/knowledge_center/sites/default/files/field/image/5.%20Manual%20Setup.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/5.%20Manual%20Setup.png){width="217"
+    height="386"}
 
 4.  On the next page, enter the rest of the necessary information and
     then tap **Next**:
@@ -38,29 +43,32 @@ email through their Administrative Control Panel.
         example,**test@emailcomany.org**).
     -   **Server address**: Enter **connect.emailsrvr.com**.
     -   **Domain**: Leave this field blank.
-    -   **Username**: Enter your email address again.<br>
-         Some devices might have the settings as domain\\username. On
+    -   **Username**: Enter your email address again.
+        Some devices might have the settings as domain\\username. On
         those devices, the field should have a backslash (**\\**) before
         your email address (for example, **\\test@emailcompany.org**).
     -   **Password**: Enter your password.
     -   Select **This server requires an encrypted SSL connection**.
 
-    ![](/knowledge_center/sites/default/files/field/image/6.%20Server%20Settings%20Exchange.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/6.%20Server%20Settings%20Exchange.png){width="217"
+    height="386"}
 
 5.  If you are prompted to enable remote security administration, tap
-    **Ok** or **Allow**.<br>
-     This allows you to remotely perform a factory reset (delete all
-    data) on the device from Outlook Web App if the phone is lost or
+    **Ok** or **Allow**.
+    This allows you to remotely perform a factory reset (delete
+    all data) on the device from Outlook Web App if the phone is lost or
     stolen and there is sensitive company information on the device.
 6.  Select the services that you want to synchronize with the Exchange
     server and when to synchronize. Then, tap **Next**.
 
-    ![](/knowledge_center/sites/default/files/field/image/7.%20Sync%20Options.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/7.%20Sync%20Options.png){width="217"
+    height="386"}
 
 7.  Enter a descriptive name for your account and then tap **Finish
     setup**.
 
-    ![](/knowledge_center/sites/default/files/field/image/8.%20Finalize.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/8.%20Finalize.png){width="217"
+    height="386"}
 
 Your Android phone and Microsoft Exchange account are now synchronized.
 

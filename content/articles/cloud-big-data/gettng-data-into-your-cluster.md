@@ -2,10 +2,10 @@
 node_id: 3813
 title: Getting data into your Big Data cluster
 type: article
-created_date: '2013-12-14 19:07:32'
-created_by: david.dobbins
-last_modified_date: '2016-01-07 14:5218'
-last_modified_by: rose.contreras
+created_date: '2013-12-14'
+created_by: David Dobbins
+last_modified_date: '2016-01-07'
+last_modified_by: Rose Contreras
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -38,11 +38,11 @@ cluster, as follows:
 
         lava ssh speedy
 
-2.  Set the following environment variables, giving your Cloud
-    credentials. **Tip:** You can find these credentials on the Account
-    Settings page of the Cloud Control Panel at mycloud.rackspace.com.
-    To access the Account Settings page, click your username in the
-    top-right corner of the panel.
+2.  Set the following environment variables, giving your
+    Cloud credentials. **Tip:** You can find these credentials on the
+    Account Settings page of the Cloud Control Panel
+    at mycloud.rackspace.com. To access the Account Settings page, click
+    your username in the top-right corner of the panel.
 
         export SWIFTLY_AUTH_URL=https://identity.api.rackspacecloud.com/v2.0
         export SWIFTLY_AUTH_USER=<myusername>
@@ -55,7 +55,7 @@ cluster, as follows:
 
 Alternatively, your MapReduce jobs and Hadoop tools like Pig and Hive
 can read and write directly to Cloud Files by using the [Swift for
-Hadoop](http://www.rackspace.com/knowledge_center/article/swift-filesystem-for-hadoop).
+Hadoop](/howto/swift-filesystem-for-hadoop).
 
 ### Data resides on an HTTP or FTP server
 

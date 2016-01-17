@@ -2,9 +2,9 @@
 node_id: 3669
 title: Purging Cloud Sites Webmail
 type: article
-created_date: '2013-09-02 14:30:57'
-created_by: courtney.dunaway
-last_modified_date: '2014-11-13 18:1934'
+created_date: '2013-09-02'
+created_by: Courtney Dunaway
+last_modified_date: '2014-11-13'
 last_modified_by: David Hendler
 product: Cloud Sites
 body_format: tinymce
@@ -30,18 +30,20 @@ space, you'll need to make the following changes:
 3.  In the General Settings tab you will go to the Email Options section
 and deselect the following options:
 
--Move deleted email to the Trash folder<br>
- -Move purged email to the Trash folder
+-Move deleted email to the Trash folder
+-Move purged email to the Trash folder
 
-![](/knowledge_center/sites/default/files/field/image/CourtneyPic1.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CourtneyPic1.png){width="539"
+height="315"}
 
-Once you have saved the changes you can then delete or purge messages. 
+Once you have saved the changes you can then delete or purge messages.
 If you would like to see which folders contain the most messages you can
-go to the "Folder Manager", which is the gold button next to the Inbox. 
+go to the "Folder Manager", which is the gold button next to the Inbox.
 This will provide you with the option to "Update Sizes" as well as purge
 folders.
 
-![](/knowledge_center/sites/default/files/field/image/CourtneyPic2.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CourtneyPic2.png){width="468"
+height="248"}
 
- 
+
 

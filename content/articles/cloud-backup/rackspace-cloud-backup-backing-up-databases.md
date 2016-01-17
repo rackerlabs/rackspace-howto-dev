@@ -2,10 +2,10 @@
 node_id: 2042
 title: Rackspace Cloud Backup - Backing up Databases
 type: article
-created_date: '2012-08-23 15:35:23'
+created_date: '2012-08-23'
 created_by: David Hendler
-last_modified_date: '2016-01-14 20:3748'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -49,7 +49,7 @@ Cloud Backup only saves the changed portions of the file.
 1.  Remove the live database folder and files from your backup job.
     1.  Log in to the [Cloud Control
         Panel](https://mycloud.rackspace.com).
-    2.  In the top navigation bar, click **Backups \> Systems**.
+    2.  In the top navigation bar, click **Backups &gt; Systems**.
     3.  Select your System from the List.
     4.  Click the gear icon next to your backup job in the backup list,
         and select **Configure Files**.
@@ -63,7 +63,7 @@ Cloud Backup only saves the changed portions of the file.
 
 3.  Add your SQL dump file to your backup.
     1.  In the top navigation bar of the Cloud Control Panel, click
-        **Backups \> Systems**.
+        **Backups &gt; Systems**.
     2.  Select your system from the list.
     3.  Click the gear icon next to your backup job in the backup list,
         and select **Configure Files**.

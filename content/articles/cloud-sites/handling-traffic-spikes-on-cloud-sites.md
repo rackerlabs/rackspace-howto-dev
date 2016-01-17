@@ -2,10 +2,10 @@
 node_id: 3108
 title: Handling High Traffic Events on Cloud Sites
 type: article
-created_date: '2012-10-10 20:01:02'
+created_date: '2012-10-10'
 created_by: Tarun Bhatti
-last_modified_date: '2016-01-05 18:3302'
-last_modified_by: rose.contreras
+last_modified_date: '2016-01-05'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -17,7 +17,8 @@ expect you can compare your anticipated activity with these [high
 traffic event
 incidents](http://www.rackspace.com/blog/tag/high-traffic-events-hte/ "high traffic events").
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/traffic-spike.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/traffic-spike.png){width="627"
+height="222"}
 
 If you are expecting an abnormally high increase in traffic to your
 website (ie. hundreds of thousands of visitors in a few hours) we
@@ -50,6 +51,6 @@ functionality during your event to reduce load.
 
 *Lastly, we recommend reviewing best practices for optimizing your web
 site on Rackspace Cloud Sites. Read* *[Optimize your website on Cloud
-Sites](http://www.rackspace.com/knowledge_center/article/optimize-your-website-on-cloud-sites "Check out this Knowledge Center article") for
+Sites](/howto/optimize-your-website-on-cloud-sites "Check out this Knowledge Center article") for
 more information and details.*
 

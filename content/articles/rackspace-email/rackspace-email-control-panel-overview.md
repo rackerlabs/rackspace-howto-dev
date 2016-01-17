@@ -2,10 +2,10 @@
 node_id: 1403
 title: Rackspace Email control panel overview
 type: article
-created_date: '2012-05-23 05:18:04'
+created_date: '2012-05-23'
 created_by: Nicholas Fleisig
-last_modified_date: '2015-09-03 15:3622'
-last_modified_by: kyle.laffoon
+last_modified_date: '2015-09-03'
+last_modified_by: Kyle Laffoon
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -13,9 +13,8 @@ body_format: tinymce
 Welcome to Rackspace Cloud Office! After you sign up for Rackspace Email
 services, the first thing you'll want to do is log in to your Cloud
 Office Control Panel. This article provides a brief overview of the
-control panel, which you can access at
-[https://cp.rackspace.com/](https://cp.rackspace.com/) (new Cloud Office
-customers) or
+control panel, which you can access at <https://cp.rackspace.com/> (new
+Cloud Office customers) or
 [https://my.rackspace.com/](https://my.rackspace.com/%20) (UK and
 MyRackspace customers).
 
@@ -25,7 +24,7 @@ MyRackspace customers).
 -   [Domains](#Domains)
 -   [Support](#Support)
 
- 
+[]()
 
 Control Panel Main page
 -----------------------
@@ -39,9 +38,10 @@ and **News & Alerts** sections. As you sign up for additional products
 (for example, Microsoft SharePoint), each product has its own section so
 that you can manage it directly from the landing page.
 
-![](/knowledge_center/sites/default/files/field/image/CP_Main.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CP_Main.png){width="761"
+height="624"}
 
- 
+[]()
 
 ### Rackspace Email section
 
@@ -49,19 +49,21 @@ The **Rackspace Email** section provides you with various options and
 tools like spam filtering, creating aliases, as well as, creating and
 managing Group Lists.
 
-![](/knowledge_center/sites/default/files/field/image/RSE_Section.png) 
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RSE_Section.png){width="553"
+height="154"}
 
 To view the available range of options for Rackspace Email, you can
 click on Rackspace Email in the Go To Section.
 
-![](/knowledge_center/sites/default/files/field/image/Go_To_Section.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Go_To_Section.png){width="452"
+height="198"}
 
 After you click **Rackspace Email**, new options appear, such as
 collaboration, and the ability to upgrade your services, like adding
 more mailboxes. We recommend getting familiar with all the features so
 you can use the product to its full potential.
 
-![](http://c15042926.r26.cf2.rackcdn.com/CP3.png) 
+![](http://c15042926.r26.cf2.rackcdn.com/CP3.png)
 
 The following sections describe the options available for Rackspace
 Email on the control panel. Links to more information or instructions
@@ -74,8 +76,8 @@ about options are provided.
 -   **Group Lists** - Create a group list for users in your domain.
 -   **Mobile Sync** - Synchronize your mail, contacts, and calendar to
     their mobile devices.
--   **Archiving** - Archive all incoming and outgoing email for your
-    domain.
+-   **Archiving** - Archive all incoming and outgoing email for
+    your domain.
 -   **Restores** - Restore an active or deleted mailbox to a specific
     date (30 days).
 -   **Settings** - Specify values for folder cleanup, storage, access
@@ -87,15 +89,15 @@ about options are provided.
     individual mailbox settings such as spam handling.
 -   **Edit Blacklists** - Control domain or individual mailbox
     blacklists settings.
--   **Edit Safelists** - Control domain or individual mailbox blacklists
-    settings.
--   **Blacklists / Safelists** - Search for users on blacklists or
-    safelists.
+-   **Edit Safelists** - Control domain or individual mailbox
+    blacklists settings.
+-   **Blacklists / Safelists** - Search for users on blacklists
+    or safelists.
 
 #### Reports
 
--   **Domain Details** - Get a summary of your domain services and
-    products.
+-   **Domain Details** - Get a summary of your domain services
+    and products.
 -   **Mailbox Details** - Get a summary of your domains mailboxes.
 -   **Mail Forwarding** -  See which mailboxes on your domains have
     forwarding enabled.
@@ -106,8 +108,8 @@ about options are provided.
 
 -   **Company Directory** - Manage your domain's company contacts.
 -   **Shared Calendar** - Manage users to share their calendars.
--   **Sync** - Synchronize your contacts and calendar to your mobile
-    device.
+-   **Sync** - Synchronize your contacts and calendar to your
+    mobile device.
 
 #### Upgrades
 
@@ -125,16 +127,16 @@ about options are provided.
 -   **Troubleshooting Tools** - Access helpful tools such as a DNS
     checker and header analyzer.
 
- 
+[]()
 
 ### My Account and News & Alerts sections
 
 You use the **My Account** section to manage your invoice history,
 manage administrators, and find general information. The **News &
 Alerts** section displays any current scheduled maintenance and a system
-status updater. 
+status updater.
 
-![](http://c15042926.r26.cf2.rackcdn.com/CP6.png) 
+![](http://c15042926.r26.cf2.rackcdn.com/CP6.png)
 
 If you click the **More** link in the **My Account** section, new
 options appear, such as options to view company contacts, API access
@@ -144,7 +146,7 @@ keys, administrative activity, a service summary, and more.
 
 The following sections describe the options available for My Account on
 the control panel. Links to more information or instructions about
-options are provided 
+options are provided
 
 #### Company Information
 
@@ -161,33 +163,33 @@ options are provided
 
 -   **View Current Admins** - View your current domains administrators.
 -   **Add Administrator** - Add a new domain administrator.
--   **Administrator Activity** - View your administrators' past
-    activity.
--   **Generate API Keys** - Generate your API access key for your
-    domain.
+-   **Administrator Activity** - View your administrators'
+    past activity.
+-   **Generate API Keys** - Generate your API access key for
+    your domain.
 
 #### **Support**
 
 -   **Documentation** - Access self-service support documentation for
     Cloud Office products.
--   **Support Tickets** - Manage and view your current and past support
-    tickets.
+-   **Support Tickets** - Manage and view your current and past
+    support tickets.
 -   **Feedback** - Provide feedback for Cloud Office services.
 
- 
+[]()
 
 ### Domains section
 
 You use the **Domains** section to access your domains' DNS settings,
 add disclaimers, view domain details, and set spam filtering.
 
-![](http://c15042926.r26.cf2.rackcdn.com/CP4.png) 
+![](http://c15042926.r26.cf2.rackcdn.com/CP4.png)
 
 Click the **More** link to access more options like split-domain
 routing, migrations, editing the catch-all address, and the Email
-Everyone feature. 
+Everyone feature.
 
-![](http://c15042926.r26.cf2.rackcdn.com/CP5.png) 
+![](http://c15042926.r26.cf2.rackcdn.com/CP5.png)
 
 The following sections describe the options available for Domains on the
 control panel. Links to more information or instructions about options
@@ -195,14 +197,14 @@ are provided.
 
 #### Manage
 
--   **Domain Details** - View  a summary of your domain services and
-    products.
--   **DNS Settings** - Manage and view the DNS settings for your
-    domains.
+-   **Domain Details** - View  a summary of your domain services
+    and products.
+-   **DNS Settings** - Manage and view the DNS settings for
+    your domains.
 -   **Email Archiving** - Archive all incoming and outgoing email for
     your domain.
--   **Global Access Rights** - Grant or disable access for POP or IMAP
-    connections.
+-   **Global Access Rights** - Grant or disable access for POP or
+    IMAP connections.
 
 #### Spam Filtering
 
@@ -210,17 +212,17 @@ are provided.
     individual mailbox settings such as spam handling.
 -   **Edit Blacklists** - Control domain or individual mailbox
     blacklists settings.
--   **Edit Safelists** - Control domain or individual mailbox blacklists
-    settings.
--   **Blacklists / Safelists** - Search for users on blacklists or
-    safelist.
+-   **Edit Safelists** - Control domain or individual mailbox
+    blacklists settings.
+-   **Blacklists / Safelists** - Search for users on blacklists
+    or safelist.
 
 #### Support
 
 -   **Documentation** - Access self-service support documentation for
     Cloud Offfice products.
--   **Support Tickets** - Manage and view your current and past support
-    tickets.
+-   **Support Tickets** - Manage and view your current and past
+    support tickets.
 -   **Feedback** - Provide feedback for Cloud Office services.
 
 #### Tools
@@ -233,14 +235,14 @@ are provided.
 -   **Migrations** - Set up new migrations for migrating company data
     from a previous hosting provider.
 
- 
+[]()
 
 ### Support section
 
 Use the **Support** section to access support documents for the most
 common questions, and to view or create tickets if you need assistance.
 
-![](http://c15042926.r26.cf2.rackcdn.com/CPEight.png) 
+![](http://c15042926.r26.cf2.rackcdn.com/CPEight.png)
 
 if you click  the **View / Create Ticket **link, you access a page that
 provides the ability to create a new ticket and view past tickets:

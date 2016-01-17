@@ -2,20 +2,20 @@
 node_id: 2039
 title: Rackspace Cloud Backup - View backup information
 type: article
-created_date: '2012-08-22 19:06:31'
+created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2015-12-31 14:1803'
-last_modified_by: stephanie.fillmon
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---
 
 ### Previous section
 
-[Rackspace Cloud Backup - Create a backup](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0). 
+[Rackspace Cloud Backup - Create a backup](/howto/rackspace-cloud-backup-create-a-backup-0).
 
 This article describes how to confirm your backup settings, ensure that a cleanup or restore action finished successfully, manually start a job before it's
-scheduled, and quickly view all of your backup activity at once. 
+scheduled, and quickly view all of your backup activity at once.
 
 ## View information for a single backup
 
@@ -23,7 +23,7 @@ In the [Cloud Control Panel](https://mycloud.rackspace.com), click **Backups &gt
 
 The list of all the backup processes that you currently have on your account is displayed.
 
-<p><img alt="" height="170" src="/knowledge_center/sites/default/files/field/image/1842-2039-IMG-1.png" width="476" border="1"
+<p><img alt="" height="170" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1842-2039-IMG-1.png" width="476" border="1"
 /></p>
 
 ### Find a backup
@@ -37,7 +37,7 @@ If you have a long list of backups, you can search for the one that you want in 
 
 To view the settings for a particular backup, click its name in the list of backups. The backup details page is displayed.
 
-<p><img alt="" height="379" src="/knowledge_center/sites/default/files/field/image/1842-2039-IMG-2.png" width="474" border="1"
+<p><img alt="" height="379" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1842-2039-IMG-2.png" width="474" border="1"
 /></p>
 
 The Configuration Details section displays the configuration details for the backup.
@@ -71,7 +71,7 @@ You can view the backup activity for all of your systems by selecting the Backup
 control panel. The Activity list displays all the actions that the backups have performed (such as Backup, Cleanup, and Restore)
 listed historically. The most recent actions are at the  top.
 
-<p><img alt="" height="323" src="/knowledge_center/sites/default/files/field/image/1842-2039-IMG-3.png" width="666" border="1"
+<p><img alt="" height="323" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1842-2039-IMG-3.png" width="666" border="1"
 /></p>
 
 If the list of activities is long, you can limit your list by performing a search. Enter your search term in the Search box. You can
@@ -96,4 +96,4 @@ clicking the backup's name in the activity entry.
 
 ### Next steps
 
-[Rackspace Cloud Backup - Backup actions](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0)
+[Rackspace Cloud Backup - Backup actions](/howto/rackspace-cloud-backup-backup-actions-0)

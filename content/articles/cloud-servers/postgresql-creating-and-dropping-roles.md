@@ -2,10 +2,10 @@
 node_id: 416
 title: PostgreSQL - Creating and Dropping Roles
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 17:3805'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -14,8 +14,10 @@ For testing and production use of our database server, we'll want to
 create additional roles, as it's not recommended to work regularly in
 our databases as the default superuser role.
 
-Login
------
+[](){#Login}
+
+<span class="mw-headline">Login </span>
+---------------------------------------
 
 However, to create additional roles we do need to run some commands as
 the postgres superuser role. This will require a login as the Linux user
@@ -23,36 +25,40 @@ named "postgres".
 
 First, we need to login to our slice as a normal Linux user, then:
 
-     
+
     # sudo su - postgres
 
-Connect with psql
------------------
+[](){#Connect_with_psql}
+
+<span class="mw-headline">Connect with psql </span>
+---------------------------------------------------
 
 Now connect to the database server using the
-[psql](http://www.postgresql.org/docs/8.3/static/app-psql.html "http://www.postgresql.org/docs/8.3/static/app-psql.html")
-client, as the postgres role:
+[psql](http://www.postgresql.org/docs/8.3/static/app-psql.html "http://www.postgresql.org/docs/8.3/static/app-psql.html"){.external
+.text} client, as the postgres role:
 
-     
+
     postgres@demo:~$ psql -U postgres
     ...
     Welcome to psql 8.3.6, the PostgreSQL interactive terminal.
-     
+
     Type:  \copyright for distribution terms
            \h for help with SQL commands
            \? for help with psql commands
            \g or terminate with semicolon to execute query
            \q to quit
-     
+
     postgres=#
 
-Creating a Role
----------------
+[](){#Creating_a_Role}
+
+<span class="mw-headline">Creating a Role </span>
+-------------------------------------------------
 
 Connected with the psql client, we'll create a role that has the LOGIN
 attribute and a non-empty MD5-encrypted password:
 
-     
+
     postgres=#CREATE ROLE demorole1 WITH LOGIN ENCRYPTED PASSWORD 'password1';
 
 Note the required trailing semicolon ( ; ) at the end of the SQL
@@ -61,64 +67,71 @@ must enclose it.
 
 Did it work? We can check using '\\du' command:
 
-     
+
     postgres=# \du
                                    List of roles
-     Role name | Superuser | Create role | Create DB | Connections | Member of 
+     Role name | Superuser | Create role | Create DB | Connections | Member of
     -----------+-----------+-------------+-----------+-------------+-----------
      demorole1 | no        | no          | no        | no limit    | {}
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-Dropping a Role
----------------
+[](){#Dropping_a_Role}
+
+<span class="mw-headline">Dropping a Role </span>
+-------------------------------------------------
 
 What if we want to drop (delete, remove) a role? Easy:
 
-     
+
     postgres=#DROP ROLE demorole1;
 
 If we check with the '\\du' command we'll see that 'demorole1' is no
 longer listed.
 
-Alternative: createuser and dropuser
-------------------------------------
+[](){#_createuser_and_dropuser}
+
+<span class="mw-headline">Alternative: createuser and dropuser </span>
+----------------------------------------------------------------------
 
 Alternatively, we can create and drop database roles using the
-[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html")
-and
-[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html")
-shell commands, which are basically "wrappers" for the CREATE and DROP
-SQL statements. They are included in a standard postgres installation.
+[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html"){.external
+.text} and
+[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html"){.external
+.text} shell commands, which are basically "wrappers" for the CREATE and
+DROP SQL statements. They are included in a standard postgres
+installation.
 
 With our present setup, we can only run these commands (successfully) as
 the postgres Linux user. We're still connected with the psql client, so
 let's exit with Ctrl-D or the '\\q' command:
 
-     
+
     postgres=# \q
     ...
     postgres@demo:~$
 
 Good, we have a shell prompt as the postgres Linux user.
 
-createuser
-----------
+[](){#createuser}
+
+<span class="mw-headline">createuser </span>
+--------------------------------------------
 
 With
-[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html")
-we'll create a non-superuser role that has the LOGIN attribute.
+[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html"){.external
+.text} we'll create a non-superuser role that has the LOGIN attribute.
 
-     
+
     postgres@demo:~$ createuser -PE demorole2
 
 With the '-P' flag we're prompted to set a password for the new role,
 and the '-E' flag indicates the password should be stored as an
 MD5-encrypted string.
 
-     
-    Enter password for new role: 
-    Enter it again: 
+
+    Enter password for new role:
+    Enter it again:
     ...
     postgres@demo:~$
 
@@ -126,23 +139,25 @@ Having supplied and confirmed the password, we're returned to a shell
 prompt. If we reconnect with psql and run the '\\du' command, we'll get
 this:
 
-     
+
     postgres=# \du
                                    List of roles
-     Role name | Superuser | Create role | Create DB | Connections | Member of 
+     Role name | Superuser | Create role | Create DB | Connections | Member of
     -----------+-----------+-------------+-----------+-------------+-----------
      demorole2 | no        | no          | no        | no limit    | {}
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-dropuser
---------
+[](){#dropuser}
+
+<span class="mw-headline">dropuser </span>
+------------------------------------------
 
 We can drop (delete, remove) a role with the
-[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html")
-shell command:
+[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html"){.external
+.text} shell command:
 
-     
+
     postgres@demo:~$ dropuser -i demorole2
     ...
     Role "demorole2" will be permanently removed.
@@ -153,8 +168,10 @@ shell command:
 The '-i' flag provides a confirmation prompt, which is a good safety
 measure when running a potentially destructive command.
 
-Creating a superuser
---------------------
+[](){#Creating_a_superuser}
+
+<span class="mw-headline">Creating a superuser </span>
+------------------------------------------------------
 
 On occasion, we'll want to create additional superuser roles, e.g. when
 we have a database programmer whom we trust to administer our postgres
@@ -162,13 +179,13 @@ server.
 
 We can do this with the 'createuser' shell command and the '-s' flag:
 
-     
+
     postgres@demo:~$ createuser -sPE mysuperuser
 
 Alternatively, we can do the same thing from within a psql session, when
 we're connected as the postgres role (or another existing superuser):
 
-     
+
     postgres=#CREATE ROLE mysuperuser2 WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'mysuperpass2';
 
 We've set the LOGIN attribute and a non-empty password &mdash; important if

@@ -2,17 +2,17 @@
 node_id: 4750
 title: Monitoring open alerts with Rackspace Intelligence
 type: article
-created_date: '2015-07-17 00:55:49'
-created_by: rose.coste
-last_modified_date: '2015-12-22 18:5209'
-last_modified_by: constanze.kratel
+created_date: '2015-07-17'
+created_by: Rose Coste
+last_modified_date: '2015-12-22'
+last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
 body_format: tinymce
 ---
 
 Open alerts report statuses that you have asked Rackspace Intelligence
 to monitor but not
-[suppress](/knowledge_center/article/scheduling-suppression-of-rackspace-intelligence-notifications).
+[suppress](/howto/working-with-notification-suppressions-in-rackspace-intelligence).
 
 You can view a list of all open alerts by clicking** Monitor** at the
 top of the Rackspace Intelligence interface and then clicking **Open

@@ -2,10 +2,10 @@
 node_id: 4070
 title: Set up Rackspace Email with Thunderbird
 type: article
-created_date: '2014-05-20 21:44:22'
-created_by: ian.avery
-last_modified_date: '2015-03-30 16:0454'
-last_modified_by: kelly.holcomb
+created_date: '2014-05-20'
+created_by: Ian Avery
+last_modified_date: '2015-03-30'
+last_modified_by: Kelly Holcomb
 product: Rackspace Email
 body_format: tinymce
 ---
@@ -17,7 +17,8 @@ your Thunderbird email client.
 2.  In the navigation pane, click **Local Folders** and under **Create a
     new account**, click **Email**.
 
-    ![](/knowledge_center/sites/default/files/field/image/thunderbird_create_acccount.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/thunderbird_create_acccount.png){width="336"
+    height="194"}
 
 3.  When prompted to create a new email address, click the **Skip this
     and use my existing email** button at the bottom of the dialog box.
@@ -31,18 +32,21 @@ your Thunderbird email client.
     -   **Password**: Enter the password for the email account that you
         are setting up.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.20.05%20AM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-21%20at%208.20.05%20AM.png){width="468"
+    height="424"}
 
 5.  Click **Continue**.
 6.  When Thunderbird attempts to automatically detect the server
-    settings, click **Manual config**. You must enter the settings
-    manually.
+    settings, click **Manual config**. You must enter the
+    settings manually.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.27.35%20AM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-21%20at%208.27.35%20AM.png){width="452"
+    height="204"}
 
     The dialog box expands to show new fields.
 
-    ![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202014-05-21%20at%208.35.41%20AM.png)
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-21%20at%208.35.41%20AM.png){width="702"
+    height="426"}
 
 7.  Enter the following values in the **Incoming** row:
     -   IMAP

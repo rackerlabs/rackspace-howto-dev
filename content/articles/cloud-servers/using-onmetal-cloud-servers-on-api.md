@@ -2,10 +2,10 @@
 node_id: 4156
 title: Using OnMetal Cloud Servers through API
 type: article
-created_date: '2014-07-24 04:53:40'
-created_by: russell.haering
-last_modified_date: '2016-01-06 15:0938'
-last_modified_by: kyle.laffoon
+created_date: '2014-07-24'
+created_by: Russell Haering
+last_modified_date: '2016-01-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: full_html
 ---
@@ -20,9 +20,12 @@ OnMetal server through the API:
 -   [Logging in or deleting a server](#loginDelete)
 -   [Using OnMetal](#usingOnMetal)
 
-**Note:** For the parallel steps in the Cloud Control Panel, see [Using
+    []()
+    ----
+
+**Note:** For the parallel steps in the Cloud Control Panel, see [Create
 OnMetal Cloud
-Servers](http://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers).
+Servers](/howto/create-onmetal-cloud-servers).
 
 Set up the API client
 ---------------------
@@ -34,20 +37,20 @@ yet have an OpenStack Nova API client set up, you must do so.
     rackspace-novaclient via [pip](https://pip.pypa.io/en/latest/):
 
             pip install supernova rackspace-novaclient
-            
+
 
 2.  After you have been granted access to OnMetal, configure supernova
     to work with the Rackspace IAD region by adding the following
     information to `~/.supernova`:
 
-         [iad] 
-         OS_AUTH_URL=https://identity.api.rackspacecloud.com/v2.0/ 
+         [iad]
+         OS_AUTH_URL=https://identity.api.rackspacecloud.com/v2.0/
          OS_USERNAME=< Your Rackspace Username >
-         OS_PASSWORD=< Your Rackspace API Key > 
-         OS_TENANT_NAME=< Your Rackspace Tenant ID> 
+         OS_PASSWORD=< Your Rackspace API Key >
+         OS_TENANT_NAME=< Your Rackspace Tenant ID>
          OS_AUTH_SYSTEM=rackspace OS_REGION_NAME=IAD
          NOVA_SERVICE_NAME=cloudServersOpenStack
-            
+
 
 **Note**: Be sure to set the appropriate values for the following
 parameters:
@@ -55,7 +58,7 @@ parameters:
 -   **OS\_USERNAME** Your Rackspace Cloud user name, which is the user
     name that you use to log in to the Cloud Control Panel.
 -   **OS\_PASSWORD** Your Rackspace Cloud API key, which you can access
-    in the Cloud Control Panel by clicking **Account: *userName* \>
+    in the Cloud Control Panel by clicking **Account: *userName* &gt;
     Account Settings**.
 -   **OS\_TENANT\_NAME** Your Rackspace Cloud tenant ID, which is
     displayed as your **Account \#** in the **Account: *username*** menu
@@ -66,7 +69,7 @@ Thus, you should ignore the administrator password returned by a create
 server operation because it does not allow access to the OnMetal server.
 For information about generating SSH Keys, see [Manage SSH Key Pairs for
 Cloud Servers with
-python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient%20target=).
+python-novaclient](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
 Upload an SSH key pair
 ----------------------
@@ -82,10 +85,10 @@ For example:
 
 For information on generating SSH Keys, see [Manage SSH Key Pairs for
 Cloud Servers with
-python-novaclient](http://www.rackspace.com/knowledge_center/article/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+python-novaclient](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-Boot your server
-----------------
+[]()Boot your server
+--------------------
 
 To boot your OnMetal server, choose an image (operating system) and a
 flavor (server size).
@@ -93,16 +96,17 @@ flavor (server size).
 ### Supported Images
 
 -   OnMetal - CentOS 7
--   OnMetal - CentOS 6.5<br>
-     **Note**: Run the CentOS 6.5 image only on a Linux Kernel release
-    of 3.10 or higher, to avoid performance degradation.
+-   OnMetal - CentOS 6.5
+    **Note**: Run the CentOS 6.5 image only on a Linux Kernel release of
+    3.10 or higher, to avoid performance degradation.
 -   OnMetal - Debian 7 (Wheezy)
 
 **Note**: Other images will be available soon.
 
 ### Supported Flavors
 
-![](/knowledge_center/sites/default/files/field/image/SupportedFlavors_0.png)
+![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SupportedFlavors_0.png){width="704"
+height="168"}
 
 -   All flavors have a 32 GB system disk.
 -   All flavors include dual 10 GigE NICs in a high availability bonded
@@ -192,8 +196,8 @@ becomes `ACTIVE`, the server boots for the first time. The server will
 not be reachable, however, until the network configuration is complete,
 which may take another few minutes.
 
-Log in to the server
---------------------
+[]()Log in to the server
+------------------------
 
 After the server has booted, use the SSH key pair that you specified to
 log in to the server:
@@ -228,11 +232,11 @@ If needed, you can also deleteor cancel the server.
 server deletions take longer than virtual server deletions, usually a
 few minutes.
 
-Using OnMetal
--------------
+[]()Using OnMetal
+-----------------
 
 The flash cards included with the OnMetal I/O flavor are unformatted.
 You can format them however you like. For more information, see
 [Configure flash drives in High I/O instances as Data
-drives](http://www.rackspace.com/knowledge_center/article/configure-flash-drives-in-high-io-instances-as-data-drives%20target=).
+drives](/howto/configure-flash-drives-in-high-io-instances-as-data-drives).
 

@@ -2,10 +2,10 @@
 node_id: 1261
 title: Sample logrotate configuration and troubleshooting
 type: article
-created_date: '2011-11-23 19:45:35'
-created_by: jered.heeschen
-last_modified_date: '2015-12-31 17:0617'
-last_modified_by: stephanie.fillmon
+created_date: '2011-11-23'
+created_by: Jered Heeschen
+last_modified_date: '2015-12-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -13,7 +13,7 @@ body_format: tinymce
 ### Applying knowledge {#applying_knowledge}
 
 In the [previous
-article](https://www.rackspace.com/knowledge_center/article/understanding-logrotate-utility "Understanding logrotate - part 1")
+article](/howto/understanding-logrotate-utility "Understanding logrotate - part 1")
 we talked about what logrotate does and how you can configure it. In
 this article we&rsquo;ll apply this new knowledge to putting together a log
 rotation solution for a custom virtual host or two (or three, or four,

@@ -2,10 +2,10 @@
 node_id: 4565
 title: Change DNS to enable Rackspace CDN
 type: article
-created_date: '2015-02-12 23:23:11'
-created_by: megan.meza
-last_modified_date: '2015-12-17 15:2412'
-last_modified_by: catherine.richardson
+created_date: '2015-02-12'
+created_by: Megan Meza
+last_modified_date: '2015-12-17'
+last_modified_by: Catherine Richardson
 product: Rackspace CDN
 body_format: markdown_w_tinymce
 ---
@@ -23,7 +23,7 @@ After you create your CDN service, you must activate it by pointing the DNS reco
 4. On the **CDN Service** page, look at the **Domains** section. Click on **Domain Not Configured** under **Status**.
 
 <img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%209.22.50%20AM.png" width="643" height="441" alt="" border="1"  />
-    
+
 Use the URL and the instructions in the box that opens, which is similar to the following figure, to configure your service.
 
 <img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%204.56.08%20PM.png" width="531" height="272" alt="" border="1"  />
@@ -31,13 +31,13 @@ Use the URL and the instructions in the box that opens, which is similar to the 
 
 ## Create a CNAME record with your DNS provider
 
-After you obtain your CDN domain URL, go to your DNS provider to change your records. 
+After you obtain your CDN domain URL, go to your DNS provider to change your records.
 
 Most DNS records for a domain already have an A record that maps your domain to the server that holds your website content. If no A record exists, follow your DNS provider's instructions for setting one up.
 
 If the A record is already created, you must change it to a CNAME that points to the CDN Domain Access domain. Create a CNAME record that points your domain to the CDN domain URL that you retrieved from the Cloud Control Panel. You can see these URLs by hovering over each individual domain name for your CDN service.
 
-If you host your domain with Rackspace, you can manage your DNS records by following the instructions at [Create DNS Records for cloud servers with the Control Panel](http://www.rackspace.com/knowledge_center/article/creating-dns-records-for-cloud-servers-with-the-control-panel).
+If you host your domain with Rackspace, you can manage your DNS records by following the instructions at [Create DNS Records for cloud servers with the Control Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 **Note:** Some DNS providers allow for a CNAME of the root of your domain. Do not use this because it breaks the geolocation of the CDN service. These types of DNS services do the DNS lookup and return the A record (IP address) to which to connect. The geolocation depends on the DNS lookup and locates the best possible CDN edge node based on that DNS lookup. If your DNS service does this lookup for you, it will provide the best possible CDN edge node based on the DNS service's geolocation and not your end-users' location. This causes slow network connections.
 

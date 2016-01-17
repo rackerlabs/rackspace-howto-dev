@@ -2,35 +2,43 @@
 node_id: 344
 title: General Package Installation Guidelines
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2013-01-11 23:1001'
-last_modified_by: jered.heeschen
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2013-01-11'
+last_modified_by: Jered Heeschen
 product: Cloud Servers
 body_format: tinymce
 ---
 
-+--------------------------------------------------------------------------+
-| Contents                                                                 |
-| --------                                                                 |
-|                                                                          |
-| -   [1 Introduction](#Introduction)                                      |
-| -   [2 Package Managers and                                              |
-|     Repositories](#Package_Managers_and_Repositories)                    |
-|     -   [2.1 APT/Dpkg (Debian,                                           |
-|         Ubuntu)](#APT.2FDpkg_.28Debian.2C_Ubuntu.29)                     |
-|     -   [2.2 Yum/RPM (CentOS, Fedora, Red                                |
-|         Hat)](#Yum.2FRPM_.28CentOS.2C_Fedora.2C_Red_Hat.29)              |
-|     -   [2.3 Pacman (Arch)](#Pacman_.28Arch.29)                          |
-|     -   [2.4 Emerge/Portage (Gentoo)](#Emerge.2FPortage_.28Gentoo.29)    |
-|     -   [2.5 But what if the software I'm looking for isn't in the       |
-|         repositories?](#But_what_if_the_software_I.27m_looking_for_isn.2 |
-| 7t_in_the_repositories.3F)                                               |
-| -   [3 Installing from Source](#Installing_from_Source)                  |
-+--------------------------------------------------------------------------+
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><div id="toctitle">
+<h2 id="contents">Contents</h2>
+</div>
+<ul>
+<li><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li><a href="#Package_Managers_and_Repositories"><span class="tocnumber">2</span> <span class="toctext">Package Managers and Repositories</span></a>
+<ul>
+<li><a href="#APT.2FDpkg_.28Debian.2C_Ubuntu.29"><span class="tocnumber">2.1</span> <span class="toctext">APT/Dpkg (Debian, Ubuntu)</span></a></li>
+<li><a href="#Yum.2FRPM_.28CentOS.2C_Fedora.2C_Red_Hat.29"><span class="tocnumber">2.2</span> <span class="toctext">Yum/RPM (CentOS, Fedora, Red Hat)</span></a></li>
+<li><a href="#Pacman_.28Arch.29"><span class="tocnumber">2.3</span> <span class="toctext">Pacman (Arch)</span></a></li>
+<li><a href="#Emerge.2FPortage_.28Gentoo.29"><span class="tocnumber">2.4</span> <span class="toctext">Emerge/Portage (Gentoo)</span></a></li>
+<li><a href="#But_what_if_the_software_I.27m_looking_for_isn.27t_in_the_repositories.3F"><span class="tocnumber">2.5</span> <span class="toctext">But what if the software I'm looking for isn't in the repositories?</span></a></li>
+</ul></li>
+<li><a href="#Installing_from_Source"><span class="tocnumber">3</span> <span class="toctext">Installing from Source</span></a></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
 
-Introduction
-------------
+[](){#Introduction}
+
+<span class="mw-headline">Introduction </span>
+----------------------------------------------
 
 Throughout this knowledge base, we present many articles detailing how
 to install and configure various Linux software packages and utilities.
@@ -42,8 +50,10 @@ each distribution. The purpose of this article is to aid you in making
 the adaptations needed to apply a given set of instructions to your
 Cloud Server.
 
-Package Managers and Repositories
----------------------------------
+[](){#Package_Managers_and_Repositories}
+
+<span class="mw-headline">Package Managers and Repositories </span>
+-------------------------------------------------------------------
 
 Package management is an important concept for a novice Linux user to
 understand. Unlike Windows-based operating systems, in which software
@@ -63,7 +73,9 @@ manager. We've included basic summaries of each of these; however, Linux
 novices would do well to become familiar with the details by reading the
 relevant documentation.
 
-### APT/Dpkg (Debian, Ubuntu)
+[](){#APT.2FDpkg_.28Debian.2C_Ubuntu.29}
+
+### <span class="mw-headline">APT/Dpkg (Debian, Ubuntu) </span>
 
 -   Install package:
 
@@ -103,11 +115,14 @@ relevant documentation.
 
 For more information on APT-based package management, please see the
 [Debian GNU/Linux
-FAQ](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html "http://www.debian.org/doc/FAQ/ch-pkgtools.en.html")
-and the [APT
-HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/manuals/apt-howto/").
+FAQ](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html "http://www.debian.org/doc/FAQ/ch-pkgtools.en.html"){.external
+.text} and the [APT
+HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/manuals/apt-howto/"){.external
+.text}.
 
-### Yum/RPM (CentOS, Fedora, Red Hat)
+[](){#Yum.2FRPM_.28CentOS.2C_Fedora.2C_Red_Hat.29}
+
+### <span class="mw-headline">Yum/RPM (CentOS, Fedora, Red Hat) </span>
 
 -   Install package:
 
@@ -159,11 +174,14 @@ HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/m
 
 For more information on RPM-based package management, please see the
 [Linux Home Server
-HOWTO](http://www.brennan.id.au/07-Package_Management.html "http://www.brennan.id.au/07-Package_Management.html")
-and [Maximum
-RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
+HOWTO](http://www.brennan.id.au/07-Package_Management.html "http://www.brennan.id.au/07-Package_Management.html"){.external
+.text} and [Maximum
+RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/"){.external
+.text}.
 
-### Pacman (Arch)
+[](){#Pacman_.28Arch.29}
+
+### <span class="mw-headline">Pacman (Arch) </span>
 
 -   Install package:
 
@@ -198,9 +216,12 @@ RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
         pacman -Ss SEARCHSTRING
 
 For more information on Pacman, please see the
-[ArchWiki](http://wiki.archlinux.org/index.php/Pacman "http://wiki.archlinux.org/index.php/Pacman").
+[ArchWiki](http://wiki.archlinux.org/index.php/Pacman "http://wiki.archlinux.org/index.php/Pacman"){.external
+.text}.
 
-### Emerge/Portage (Gentoo)
+[](){#Emerge.2FPortage_.28Gentoo.29}
+
+### <span class="mw-headline">Emerge/Portage (Gentoo) </span>
 
 -   Install package:
 
@@ -232,21 +253,27 @@ For more information on Pacman, please see the
 
 For more information on Portage and ebuilds, please see the [Gentoo
 Linux
-Documentation](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1 "http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1").
+Documentation](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1 "http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1"){.external
+.text}.
 
-### But what if the software I'm looking for isn't in the repositories?
+[](){#But_what_if_the_software_I.27m_looking_for_isn.27t_in_the_repositories.3F}
+
+### <span class="mw-headline">But what if the software I'm looking for isn't in the repositories? </span>
 
 There may come occasions when the software you're looking for simply
 isn't in your package manager's main repositories. There may be many
 reasons for this; usually, the software isn't considered well-known
 enough to be included. The best way to locate a single package like this
 is to search the Internet! The package's website is a good place to
-start. [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
-good source for RPM packages. Once you've located and downloaded the
-package, you can still use your distro's package manager to install it.
+start. [Rpmfind](http://rpmfind.net "http://rpmfind.net"){.external
+.text} is another good source for RPM packages. Once you've located and
+downloaded the package, you can still use your distro's package manager
+to install it.
 
-Installing from Source
-----------------------
+[](){#Installing_from_Source}
+
+<span class="mw-headline">Installing from Source </span>
+--------------------------------------------------------
 
 In some situations, you may have no choice but to compile and install a
 package manually. Maybe you need special customizations that weren't

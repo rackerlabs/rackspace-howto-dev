@@ -2,10 +2,10 @@
 node_id: 3266
 title: Synchronizing files to Cloud Files with Fileconveyor.
 type: article
-created_date: '2013-01-22 02:38:23'
-created_by: jered.heeschen
-last_modified_date: '2016-01-12 16:1132'
-last_modified_by: stephanie.fillmon
+created_date: '2013-01-22'
+created_by: Jered Heeschen
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 body_format: markdown_w_tinymce
 ---
@@ -30,9 +30,9 @@ Using File Conveyor to synchronize files to the content delivery network (CDN) e
 
   * You can download Git from the [project's website][githome]. Most Linux distributions also have Git in their main package repository, under the package name `git`.
 
-  * If you don't have [pip][piphome] installed, the easiest way to get it is to install the Python setuptools package. You can download the installer from [its website][sthome]. As an alternative you can use a Linux package manager to install setuptools. On most distributions the package name is `python-setuptools`. 
+  * If you don't have [pip][piphome] installed, the easiest way to get it is to install the Python setuptools package. You can download the installer from [its website][sthome]. As an alternative you can use a Linux package manager to install setuptools. On most distributions the package name is `python-setuptools`.
 
-      After you have installed setuptools, you can install pip by running the following command: 
+      After you have installed setuptools, you can install pip by running the following command:
 
 			sudo easy_install pip
 
@@ -62,7 +62,7 @@ Before running File Conveyor, you need to configure it by creating a file named 
 	      <sources ignoredDirs="">
 	        <source name="test" scanPath="/var/www/html/test" />
 	      </sources>
-	
+
 	      <!-- Servers -->
 	        <servers>
 	          <server name="Rackspace Cloud Files" transporter="cloudfiles">

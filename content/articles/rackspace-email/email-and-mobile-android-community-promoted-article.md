@@ -2,10 +2,10 @@
 node_id: 4631
 title: Outgoing email issue on Android phones
 type: article
-created_date: '2015-03-31 19:51:08'
-created_by: rose.contreras
-last_modified_date: '2015-09-15 19:5114'
-last_modified_by: kelly.holcomb
+created_date: '2015-03-31'
+created_by: Rose Contreras
+last_modified_date: '2015-09-15'
+last_modified_by: Kelly Holcomb
 product: Rackspace Email
 body_format: markdown_w_tinymce
 ---
@@ -14,11 +14,11 @@ If you are an Android mobile phone user, you might sometimes experience problems
 
 >`Unable to connect to email server to verify you account information. No response from server.`
 
-The procedure in this article was created by the Rackspace Technical Community team as a temporary solution to this issue. We are working to create a more permanent solution. 
+The procedure in this article was created by the Rackspace Technical Community team as a temporary solution to this issue. We are working to create a more permanent solution.
 
 **Note:** The procedure might be different for each Android mobile phone. The instructions in this article were created using a Galaxy Note 3.
 
-## Access Point Name 
+## Access Point Name
 
 The Access Point Name (APN) is a gateway between a GPRS, 3G, or 4G mobile network and another computer network that runs on many Android devices. The outgoing email problem on Android phones occurs because the APN, which for T-Mobile is `fast.t-mobile.com`, is set to use IPv6 only and does not allow the outbound email server to respond. This in turn keeps emails on Android phones in the outbox until it connects to a Wi-Fi network. The default APN doesn't roll back to IPv4, so the SMTP connection cannot be made. The way to fix this is to add a new APN that does roll back to IPv4.
 
@@ -44,28 +44,28 @@ Additionally, confirm that the email settings on your Android phone match the fo
 
 1. On your phone, navigate to **Settings > More Networks**.
 
-    <img src="/knowledge_center/sites/default/files/field/image/1710-4631_1_2.png" width="270" height="283" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1710-4631_1_2.png" width="270" height="283" border="1" alt=""  />
 
 2. Then go to **Mobile Networks > Access Point Names**.
 
-    <img src="/knowledge_center/sites/default/files/field/image/1710-4631_2_1.png" width="268" height="268" border="1" alt=""  />
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1710-4631_2_1.png" width="268" height="268" border="1" alt=""  />
 
     Only one APN should be listed.
-    
-    <img src="/knowledge_center/sites/default/files/field/image/1710-4631_3_1.png" width="270" height="114" border="1" alt=""  />
+
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1710-4631_3_1.png" width="270" height="114" border="1" alt=""  />
 
 3. To add another APN, tap the **&#43;** symbol and specify the following settings only:
 
     - **Name:** Fast
-	
+
     - **SPN:** fast.t-mobile.com
-	
+
     - **APN Protocol:** IPv4/IPv6
 
 4. Select the new APN.
 
-    <img src="/knowledge_center/sites/default/files/field/image/1710-4631_4_1.png" width="268" height="128" border="1" alt=""  />
-	
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1710-4631_4_1.png" width="268" height="128" border="1" alt=""  />
+
 5. Restart your phone.
 
 ## Additional suggestions

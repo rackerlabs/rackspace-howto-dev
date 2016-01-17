@@ -2,38 +2,38 @@
 node_id: 515
 title: Windows overview
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 16:3022'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: tinymce
 ---
 
-Getting Started
----------------
+<span class="mw-headline">Getting Started </span>
+-------------------------------------------------
 
 -   [Getting started with Cloud
-    Servers](http://www.rackspace.com/knowledge_center/getting-started/cloud-servers "Getting Started with Cloud Servers")
+    Servers](/howto/getting-started-with-cloud-servers-0 "Getting Started with Cloud Servers")
 -   [Getting started on a Windows Cloud
-    Server](http://www.rackspace.com/knowledge_center/article/getting-started-on-a-windows-cloud-server "Getting Started on a Windows Cloud Server")
+    Server](/howto/getting-started-on-a-windows-cloud-server "Getting Started on a Windows Cloud Server")
 -   [Frequently Asked
-    Questions](https://admin.rackspace.com/knowledge_center/article/cloud-servers-faqs "Frequently Asked Questions")
--   [Logging in to your server via RDP
-    (Windows)](http://www.rackspace.com/knowledge_center/article/log-in-to-your-server-via-rdp-windows "Logging in to Your Server via RDP (Windows)")
+    Questions](/howto/cloud-servers-faq "Frequently Asked Questions")
+-   [Logging in to your server via
+    RDP (Windows)](/howto/log-in-to-your-server-via-rdp-windows "Logging in to Your Server via RDP (Windows)")
 -   [Preparing data disks on Windows Cloud
-    Servers](http://www.rackspace.com/knowledge_center/article/preparing-data-disks-on-windows-cloud-servers)
+    Servers](/howto/preparing-data-disks-on-windows-cloud-servers)
 
-Microsoft SQL Server
---------------------
+<span class="mw-headline">Microsoft SQL Server</span>
+-----------------------------------------------------
 
 -   [Creating and configuring a user in
-    MSSQL](http://www.rackspace.com/knowledge_center/article/creating-and-configuring-a-user-in-mssql "Creating and Configuring a User in MSSQL")
+    MSSQL](/howto/creating-and-configuring-a-user-in-mssql "Creating and Configuring a User in MSSQL")
 
-Domain Services
----------------
+<span class="mw-headline">Domain Services </span>
+-------------------------------------------------
 
 -   [Installing Active Directory on Windows Server 2008 R2 Enterprise
-    64-bit](http://www.rackspace.com/knowledge_center/article/installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit "Installing Active Directory on Windows Server 2008 R2 Enterprise 64-bit")
+    64-bit](/howto/installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit "Installing Active Directory on Windows Server 2008 R2 Enterprise 64-bit")
 
 

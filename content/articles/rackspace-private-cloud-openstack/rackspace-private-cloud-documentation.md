@@ -2,11 +2,11 @@
 node_id: 4103
 title: Rackspace Private Cloud Documentation
 type: article
-created_date: '2014-06-16 17:58:48'
+created_date: '2014-06-16'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-05 18:5535'
-last_modified_by: kyle.laffoon
-product: Rackspace Private Cloud - OpenStack
+last_modified_date: '2016-01-05'
+last_modified_by: Kyle Laffoon
+product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
@@ -37,7 +37,7 @@ The current versions are
 
 Documentation for Rackspace Private Cloud is available
 [here](http://docs.rackspace.com) and
-[here](http://www.rackspace.com/knowledge_center/getting-started/rackspace-private-cloud-openstack).
+[here](/howto/rackspace-private-cloud-openstack).
 
 Developer documentation for the community
 [openstack-ansible](https://launchpad.net/openstack-ansible) project is

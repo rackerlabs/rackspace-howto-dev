@@ -2,10 +2,10 @@
 node_id: 667
 title: Use cron jobs to backup Cloud Sites to Cloud Files
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-12 20:2338'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -18,15 +18,15 @@ and selecting Cloud Sites Control Panel.
 
 **NOTE:** The library used by this script is **no longer supported**.
  We suggest Cloud Sites customers [use the Zipit
-tool](http://www.rackspace.com/knowledge_center/article/scheduled-backup-cloud-sites-to-cloud-files)
+tool](/howto/scheduled-backup-cloud-sites-to-cloud-files)
 to run scheduled backups through cron instead.
 
 Before using the scripts in this article, consider [this more
 comprehensive
-script](http://www.rackspace.com/knowledge_center/article/scheduled-backup-cloud-sites-to-cloud-files)
+script](/howto/scheduled-backup-cloud-sites-to-cloud-files)
 that can be installed for your site.  While the scripts in this article
 serve as a simple example, [the other
-script](http://www.rackspace.com/knowledge_center/article/scheduled-backup-cloud-sites-to-cloud-files)
+script](/howto/scheduled-backup-cloud-sites-to-cloud-files)
 offers more robust logging and error checking for long-term use.
 
 In order to backup Cloud Sites to Cloud Files using this example, you
@@ -99,11 +99,11 @@ Place this file in your web root.
 For this step, you will need to have access to Cloud Files. If you are
 not sure or have not set up Cloud Files on your account, please visit
 [Getting Started with Cloud
-Files](http://www.rackspace.com/knowledge_center/getting-started/cloud-files)
+Files](/howto/cloud-files)
 for more information on setting up your Cloud Files account. Also,
 please note that you may incur any charges associated with using Cloud
 Files. For more information regarding Cloud Files costs please visit ::
-[http://www.rackspacecloud.com/cloud\_hosting\_products/files/pricing/](http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/ "http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/")
+<http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/>
 
 Now obtain and set up the PHP API. To download the PHP API documentation
 and files, click [here](https://github.com/rackerlabs/php-cloudfiles).
@@ -135,7 +135,7 @@ Here are the contents of the script:
     // cloud info
     $username = "YOUR USERNAME"; // username
     $key = "YOUR API KEY"; // api key
-    $containername = "YOUR CONTAINER NAME";  // container name 
+    $containername = "YOUR CONTAINER NAME";  // container name
 
     // backup file name from command-line argument
     $backup = $argv[1];
@@ -182,7 +182,7 @@ step 1. The following screen shows a sample of the setup process in the
 Classic Cloud Control Panel for this task. Please note that the date,
 time and frequency can be modified to best suite your needs.
 
- 
+
 
 ![cronsetup.png](http://c0935082.cdn.cloudfiles.rackspacecloud.com/cronsetup.png)
 
@@ -197,16 +197,16 @@ often you would like to create and upload your backups.
 **Resources and Disclaimer**
 
 [What is a Cloud Sites cron
-job?](http://www.rackspace.com/knowledge_center/article/what-is-a-cloud-sites-cron-job)
+job?](/howto/what-is-a-cloud-sites-cron-job)
 
 [Enable or disable a Cloud Sites scheduled task (cron
-job)](http://www.rackspace.com/knowledge_center/article/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)
+job)](/howto/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)
 
 [How do I schedule a cron job for Cloud
-Sites?](http://www.rackspace.com/knowledge_center/article/how-do-i-schedule-a-cron-job-for-cloud-sites)
+Sites?](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites)
 
 [Cloud Files
-support](http://www.rackspace.com/knowledge_center/product-page/cloud-files)
+support](/howto/cloud-files)
 
 **The Rackspace Cloud is not able to provide code support for your Cloud
 Sites and web applications. This article is designed to offer a very

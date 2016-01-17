@@ -2,10 +2,10 @@
 node_id: 649
 title: Test CDOSYS SMTP functionality
 type: article
-created_date: '2011-03-16 21:57:40'
-created_by: RackKCAdmin
-last_modified_date: '2015-12-29 20:2959'
-last_modified_by: stephanie.fillmon
+created_date: '2011-03-16'
+created_by: Rackspace Support
+last_modified_date: '2015-12-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 body_format: tinymce
 ---
@@ -88,5 +88,5 @@ Related article
 ---------------
 
 [Test PHP SMTP
-functionality](https://www.rackspace.com/knowledge_center/article/test-php-smtp-functionality)
+functionality](/howto/test-php-smtp-functionality)
 

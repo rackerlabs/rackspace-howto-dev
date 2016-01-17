@@ -2,10 +2,10 @@
 node_id: 1071
 title: How Can I Contact The Cloud Sites Billing Team?
 type: article
-created_date: '2011-04-07 21:12:30'
-created_by: RackKCAdmin
-last_modified_date: '2015-05-12 16:0410'
-last_modified_by: kyle.laffoon
+created_date: '2011-04-07'
+created_by: Rackspace Support
+last_modified_date: '2015-05-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 body_format: tinymce
 ---

@@ -2,10 +2,10 @@
 node_id: 4090
 title: Set up a two-server GlusterFS array
 type: article
-created_date: '2014-06-03 14:29:47'
-created_by: matt.sherborne
-last_modified_date: '2016-01-12 18:4537'
-last_modified_by: stephanie.fillmon
+created_date: '2014-06-03'
+created_by: Matt Sherborne
+last_modified_date: '2016-01-12'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -16,7 +16,7 @@ Having two web servers behind a load balancer means that they have to synchroniz
 
 ## Disclaimers
 
-This example in this article uses new servers. You need to alter some of the commands if you already have servers set up, or to suit your usage. 
+This example in this article uses new servers. You need to alter some of the commands if you already have servers set up, or to suit your usage.
 
 Parts of this article involve formatting disks and removing files, which could erase data. It is your responsibility to ensure that the disks that you format and files that you erase don't contain important data *before* you run the commands.
 
@@ -59,7 +59,7 @@ In the example, the term `bricks` is used because each directory in the setup is
 
 ## Set up a Rackspace network
 
-Run GlusterFS on its own [Rackspace cloud network](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-networks), which allows you to manage the network and firewall settings more easily.
+Run GlusterFS on its own [Rackspace cloud network](/howto/getting-started-with-cloud-networks), which allows you to manage the network and firewall settings more easily.
 
 As an example, you can set up a network by using the Nova client on your laptop as follows:
 
@@ -71,7 +71,7 @@ The first command returns the UUID of the network, which you can copy and paste 
 
     nova network-associate-host 4dad2eb0-5ed7-4147-8196-bba7dc2bb45f 23.253.156.109
 
-You could also perform these steps by using [the web UI](http://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-networks) instead of using the Nova command line.
+You could also perform these steps by using [the web UI](/howto/getting-started-with-cloud-networks) instead of using the Nova command line.
 
 ### Open the firewall
 
@@ -94,7 +94,7 @@ If you added web01 to the network first, it has the IP address 192.168.0.1 and w
 
     `root@web02:~# gluster peer status
     Number of Peers: 1`
-    
+
     `Hostname: 192.168.0.1
     Port: 24007
     Uuid: d080d5cc-4181-4d3f-91bc-ef42bb4e8ec9
@@ -121,7 +121,7 @@ For more information about these options, you can run the `man gluster` command.
 
 ## Start and mount the volume
 
-The volume exists, but it is not being actively synchronized nor served. 
+The volume exists, but it is not being actively synchronized nor served.
 
 1.  Start the volume by running the following command on either server:
 
@@ -161,7 +161,7 @@ web01:
 
 In this example, `/var/www` must be on GlusterFS.  Ensure that web01 has the correct `/var/www`.
 
-If you are running this on an already live server, you must to shut down Apache on both servers. You could set up a custom `down for maintenance` page and health monitoring on the [load balancer](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-configuring-a-load-balancer) first if you like, but that's beyond the scope of this article.
+If you are running this on an already live server, you must to shut down Apache on both servers. You could set up a custom `down for maintenance` page and health monitoring on the [load balancer](/howto/configure-a-load-balancer) first if you like, but that's beyond the scope of this article.
 
 1.  On **web01**, move `/var/www/` to `/srv/www/`:
 
@@ -204,15 +204,15 @@ GlusterFS should show everything as healthy:
     unrecognized word: list (position 1)
     root@web01:~# gluster peer status
     Number of Peers: 1
-    
+
     Hostname: web02
     Port: 24007
     Uuid: 56e02356-d2c3-4787-ae25-6b46e867751a
     State: Peer in Cluster (Connected)
-    
+
     root@web01:~# gluster volume list
     www
-    
+
     root@web01:~# gluster volume info www
     Volume Name: www
     Type: Replicate
@@ -230,4 +230,4 @@ You have installed GlusterFS and configured your servers to share your web conte
 
 ## Where to go from here
 
-The next article in this GlusterFS series describes how to [Add and remove GlusterFS servers](http://www.rackspace.com/knowledge_center/article/add-and-remove-glusterfs-servers) in a GlusterFS array.
+The next article in this GlusterFS series describes how to [Add and remove GlusterFS servers](/howto/add-and-remove-glusterfs-servers) in a GlusterFS array.

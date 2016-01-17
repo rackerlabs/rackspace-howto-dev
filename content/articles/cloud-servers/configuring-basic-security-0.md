@@ -2,10 +2,10 @@
 node_id: 1501
 title: Configuring basic security
 type: article
-created_date: '2012-07-24 00:23:38'
-created_by: RackKCAdmin
-last_modified_date: '2016-01-14 20:3244'
-last_modified_by: stephanie.fillmon
+created_date: '2012-07-24'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 body_format: full_html
 ---
@@ -26,20 +26,21 @@ following tasks to enhance security of the server:
 3.  [Add an Admin User](#AddAnAdminUser)
 4.  [Set up public and private keys](#SetUpPublicAndPrivateKeys)
 5.  [Modify the SSH configuration](#ModifyTheSSHConfiguration)
-6.  [Set up a private firewall by using iptables in
-    Ubuntu](#SetUpAPrivateFirewall) or [Set up a private firewall using
-    iptables in RedHat](#SetUpAPrivateFirewallUsingIPtables)
+6.  <span class="mw-headline">[Set up a private firewall by using
+    iptables in Ubuntu](#SetUpAPrivateFirewall) or </span>[Set up a
+    private firewall using iptables in
+    RedHat](#SetUpAPrivateFirewallUsingIPtables)
 7.  [Restart SSH](#restartSSH)
 
 **Note:** Small modifications to the following commands might be
 necesssary if you're using a different distribution. If necessary, refer
 to your operating system documentation.
 
-Log in to the server {#LogIntoYourServer}
---------------------
+<span class="mw-headline">Log in to the server</span> {#LogIntoYourServer}
+-----------------------------------------------------
 
-As soon as you have your server's IP address and password, log in using
-the following SSH command:
+<span class="mw-headline">As soon as you have your server's IP address
+and password, log in using the following SSH command:</span>
 
     ssh root@123.45.67.890
 
@@ -58,8 +59,8 @@ If your local computer is running an operating system other than Linux
 or Mac OS X, the location of the `known_hosts` file will differ. Refer
 to your OS documention to learn the location of this file.
 
-Change the root password {#ChangeTheRootPassword}
-------------------------
+<span class="mw-headline">Change the root password</span> {#ChangeTheRootPassword}
+---------------------------------------------------------
 
 After logging in to your server, change the root password by issuing the
 following command:
@@ -71,7 +72,7 @@ Add an Admin User {#AddAnAdminUser}
 
 **Note**: If you are setting up additional SSH users for an OnMetal
 server, see [Create OnMetal Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/create-onmetal-cloud-servers)
+Servers](/howto/create-onmetal-cloud-servers)
 for applicable OnMetal steps.
 
 1.  To add an admin user, issue the following command and replace
@@ -81,8 +82,8 @@ for applicable OnMetal steps.
 
     **Note**: After this initial step, you should not log in as the root
     user to perform daily operations on your server. However, you'll
-    need Super User (sudo) privileges to complete these administrative
-    tasks.
+    need Super User (sudo) privileges to complete these
+    administrative tasks.
 
 2.  To assign the sudo privileges to the admin user, issue the following
     command, which invokes the nano editor by default on Ubuntu:
@@ -96,9 +97,9 @@ for applicable OnMetal steps.
 
 4.  When you are finished adding this line, exit, confirm, and save the
     file as follows:
-    1.  Press **Ctrl-X** to exit.
-    2.  Press **y** to confirm the changes.
-    3.  Press **Enter** to save the file as `/etc/sudoers.tmp`.
+    a.  Press **Ctrl-X** to exit.
+    b.  Press **y** to confirm the changes.
+    c.  Press **Enter** to save the file as `/etc/sudoers.tmp`.
 
         **Note**: While working in the nano editor, the backspace/delete
         key works unexpectedly, deleting characters in front of the
@@ -111,8 +112,8 @@ for applicable OnMetal steps.
 The new behavior takes effect after you save the file and open nano
 again.
 
-Set up public and private keys (SSH keygen) {#SetUpPublicAndPrivateKeys}
--------------------------------------------
+<span class="mw-headline">Set up public and private keys (SSH keygen)</span> {#SetUpPublicAndPrivateKeys}
+----------------------------------------------------------------------------
 
 One effective way of securing SSH access to your cloud server is to use
 a **public/private** key, which means that a public key is placed on the
@@ -124,29 +125,31 @@ server, and set the correct permissions for the key.
 
 The following instructions assume that you use Linux or Mac OS X. For
 Windows instructions, see [Key generation using Putty for
-Windows](http://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen).
+Windows](/howto/generating-rsa-keys-with-ssh-puttygen).
 
 ### Step 1. Create the public and private keys
 
 1.  On your local computer, create a folder to hold your keys:
 
-        mkdir ~/.ssh 
+        mkdir ~/.ssh
 
 2.  To create the SSH keys, on your *local* computer,  enter the
     following command:
 
-        ssh-keygen -t rsa 
+        ssh-keygen -t rsa
 
     -   The id\_rsa and id\_rsa.pub are created in the .ssh directory.
         The rsa.pub file holds the public key. You'll place this file on
         you server.
 
+    <!-- -->
+
     -   The id\_rsa file is your private key. Never show, give away, or
         keep this file on a public computer.
 
-### Step 2. Copy the public key
+### <span class="mw-headline">Step 2. Copy the public key</span>
 
-You can use the `scp` command to place the public key on your server. 
+You can use the `scp` command to place the public key on your server.
 
 1.  While still on your *local* computer, enter the following command,
     substituting your admin user for demo, IP address and admin user's
@@ -170,22 +173,22 @@ changing the "demo" user and group to your admin user and group:
 
     chown -R demo:demo /home/demo/.ssh
     chmod 700 /home/demo/.ssh
-    chmod 600 /home/demo/.ssh/authorized_keys 
+    chmod 600 /home/demo/.ssh/authorized_keys
 
 You have now successfully created the key on your local computer, copied
 the public key to your server, and set the correct permissions for the
-key. 
+key.
 
-Modify the SSH configuration {#ModifyTheSSHConfiguration}
-----------------------------
+<span class="mw-headline">Modify the SSH configuration</span> {#ModifyTheSSHConfiguration}
+-------------------------------------------------------------
 
 Keeping the SSH service on the default port of 22 makes it an easy
 target. We recommend changing the default SSH configuration to make it
-more secure. 
+more secure.
 
 1.  Issue the following command:
 
-        nano /etc/ssh/sshd_config 
+        nano /etc/ssh/sshd_config
 
 2.  Change the default port of 22 to one of your choosing, turn off root
     logins, and define which users can log in:
@@ -197,10 +200,10 @@ more secure.
         UseDNS no
         AllowUsers demo
 
-    **Note**: The port number can be any integer from 1025 through
-    65536. Be sure to note the new port number and remember to avoid
-    port conflicts if you later configure additional listening
-    processes.
+    **Note**: The port number can be any integer from 1025
+    through 65536. Be sure to note the new port number and remember to
+    avoid port conflicts if you later configure additional
+    listening processes.
 
 Because you have set up a public/private key, you can set the
 PasswordAuthentication parameter to no. However, if you intend to access
@@ -214,8 +217,8 @@ iptables.
 
 **NOTE: Do not restart SSH yet.**
 
-Set up a private firewall by using iptables {#SetUpAPrivateFirewall}
--------------------------------------------
+<span class="mw-headline">Set up a private firewall by using iptables</span> {#SetUpAPrivateFirewall}
+----------------------------------------------------------------------------
 
 The utility called iptables is the default firewall for Linux systems.
 It works by refusing connections to ports or services that you specify.
@@ -259,14 +262,14 @@ the following commands.
         Chain OUTPUT (policy ACCEPT)
         target     prot opt source               destination
 
-    This means the server is are accepting anything from anyone on any
-    port.
+    This means the server is are accepting anything from anyone on
+    any port.
 
 2.  To build the firewall, create the
     file `/etc/iptables.test.rules` and add some rules. If you have
     worked through these steps previously, this file may not be empty:
 
-        nano /etc/iptables.test.rules 
+        nano /etc/iptables.test.rules
 
 3.  Change and add ports as necessary.
 4.  Issue the following command to apply the rules to your server:
@@ -279,9 +282,9 @@ the following commands.
 
 6.  If there is no change in the output, repeat the preceding steps and
     try again.
-7.  Check the rules and see exactly what is being accepted, rejected and
-    dropped. When you're satisfied with the rules, save them permanently
-    by issuing the following command:
+7.  Check the rules and see exactly what is being accepted, rejected
+    and dropped. When you're satisfied with the rules, save them
+    permanently by issuing the following command:
 
         iptables-save > /etc/iptables.up.rules
 
@@ -289,8 +292,8 @@ the following commands.
     permanently, the changes are lost and the server reverts to the
     previous settings.
 
-8.  Add a script that the system runs when your network interfaces are
-    started. Create the file by running:
+8.  Add a script that the system runs when your network interfaces
+    are started. Create the file by running:
 
         nano /etc/network/if-pre-up.d/iptables
 
@@ -413,8 +416,8 @@ rules to).
 
 This lists the enabled services in a specified zone.
 
-Restart ssh
------------
+[]()Restart ssh
+---------------
 
 Now you can restart the SSH service.  **Stay logged in while you restart
 ssh and test it with a new connection.**  That way if an error occurs,
@@ -453,6 +456,6 @@ repair the configurations.
 
 These are the basics of connecting to a Linux Cloud Server and setting
 up security.  See [Windows Cloud
-Server](http://www.rackspace.com/knowledge_center/article/log-in-to-your-server-via-rdp-windows) to
+Server](/howto/log-in-to-your-server-via-rdp-windows) to
 be perform these steps on a Windows server.
 
