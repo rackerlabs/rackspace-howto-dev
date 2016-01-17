@@ -1,10 +1,10 @@
 ---
 title: Cloud Images
 type: product
-created_date: '2016-01-14 12:00:00'
-created_by: cloud.images
-last_modified_date: '22016-01-14 12:00:00'
-last_modified_by: steve.ortiz
+created_date: '2016-01-14'
+created_by: Rackspace Support
+last_modified_date: '2016-01-14'
+last_modified_by: Rackspace Support
 product: Cloud Images
 ---
 
