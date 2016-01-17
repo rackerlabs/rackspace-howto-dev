@@ -6,7 +6,7 @@ created_date: '2013-06-04'
 created_by: Rose Contreras
 last_modified_date: '2016-01-06'
 last_modified_by: Kelly Holcomb
-product: Sharepoint
+product: SharePoint
 body_format: tinymce
 ---
 

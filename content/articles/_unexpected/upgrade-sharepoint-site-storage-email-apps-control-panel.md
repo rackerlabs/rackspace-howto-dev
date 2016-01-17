@@ -6,7 +6,7 @@ created_date: '2014-04-10'
 created_by: Mawutor Amesawu
 last_modified_date: '2014-11-12'
 last_modified_by: Rose Contreras
-product: Sharepoint
+product: SharePoint
 body_format: full_html
 ---
 
