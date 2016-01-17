@@ -1,21 +1,30 @@
 ---
 title: Cloud Images
 type: product
-created_date: '2016-01-14'
+created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
+last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Images
 ---
 
-### Preparing images
+The Rackspace Cloud Images service offers retrieval, storage, and
+metadata assignment for Rackspace Cloud Server images.
 
-* [Preparing an image for import into the Rackspace open cloud](/howto/preparing-an-image-for-import-into-the-rackspace-open-cloud)
-* [Creating a CentOS 6.5 image for the Rackspace open cloud](/howto/creating-a-centos-65-image-for-the-rackspace-open-cloud)
-* [Creating an Ubuntu 13.10 image for the Rackspace open cloud](/howto/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud-0)
+###  Preparing images
 
-### Uploading and downloading images
+-   [Preparing an image for import into the Rackspace open
+    cloud](/howto/preparing-an-image-for-import-into-the-rackspace-open-cloud)
+-   [Creating a CentOS 6.5 image for the Rackspace open
+    cloud](/howto/creating-a-centos-65-image-for-the-rackspace-open-cloud)
+-   [Creating an Ubuntu 13.10 image for the Rackspace open
+    cloud](/howto/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud-0)
 
-* [Installing the Swiftly Cloud Files Client](/howto/installing-the-swiftly-cloud-files-client)
-* [Using Swiftly to Download an Exported Image](/howto/using-swiftly-to-download-an-exported-image)
-* [Using Swiftly to upload an image to be imported](/howto/using-swiftly-to-upload-an-image-to-be-imported)
+###  Uploading and downloading images
+
+-   [Installing the Swiftly Cloud Files
+    Client](/howto/installing-the-swiftly-cloud-files-client)
+-   [Using Swiftly to Download an Exported
+    Image](/howto/using-swiftly-to-download-an-exported-image)
+-   [Using Swiftly to upload an image to be
+    imported](/howto/using-swiftly-to-upload-an-image-to-be-imported)

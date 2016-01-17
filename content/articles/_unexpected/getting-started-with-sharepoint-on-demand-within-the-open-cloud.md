@@ -6,7 +6,7 @@ created_date: '2012-09-24'
 created_by: Rae D. Cabello
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
-product: Microsoft Sharepoint
+product: Sharepoint
 body_format: tinymce
 ---
 
