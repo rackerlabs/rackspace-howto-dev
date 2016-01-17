@@ -1,0 +1,44 @@
+---
+title: Cloud Load Balancers
+type: product
+created_date: '2016-01-17'
+created_by: Rackspace Support
+last_modified_date: '2016-01-17'
+last_modified_by: Rackspace Support
+product: Cloud Load Balancers
+---
+
+What is Load Balancing? Mission critical web-based applications and
+workloads often require an HA, or High Availability, solution.
+Load-balancing distributes workloads across two or more servers, network
+links, and other resources to maximize throughput, minimize response
+time, and avoid overload. Rackspace Cloud Load Balancers allow customers
+to quickly load-balance multiple Cloud Servers or external servers for
+optimal resource utilization. Read more to see how easy it is to do!
+
+###  Add a Load Balancer
+
+-   [Video: Introducing Cloud Load
+    Balancers](/howto/cloud-load-balancers)
+-   [Create and Configure a Load
+    Balancer](/howto/rackspace-cloud-essentials-2-configuring-a-load-balancer)
+
+###  Load Balancer Features
+
+-   [Content Caching for Cloud Load
+    Balancers](/howto/content-caching-for-cloud-load-balancers)
+-   [SSL Termination on Cloud Load
+    Balancers](/howto/ssl-termination-on-cloud-load-balancers)
+-   [Using SSL Offloading with IIS and Cloud Load
+    Balancers](/howto/configuring-load-balanced-sites-with-ssl-offloading-using-iis)
+-   [Using Cloud Load Balancers with
+    RackConnect](/howto/using-cloud-load-balancers-with-rackconnect)
+
+###  Cloud Load Balancers API
+
+-   [API Getting Started
+    Guide](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/DB_Overview.html)
+-   [API Developer's
+    Guide](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Overview-d1e82.html)
+-   [Role-Based Access Permissions via the
+    API](/howto/permissions-matrix-for-cloud-load-balancers)
