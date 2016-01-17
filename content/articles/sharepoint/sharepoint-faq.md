@@ -6,7 +6,7 @@ created_date: '2015-12-03'
 created_by: Rackspace Support
 last_modified_date: '2016-01-11'
 last_modified_by: Kyle Laffoon
-product: SharePoint
+product: Microsoft SharePoint
 body_format: full_html
 ---
 

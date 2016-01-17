@@ -6,7 +6,7 @@ created_date: '2013-07-09'
 created_by: Rose Contreras
 last_modified_date: '2016-01-13'
 last_modified_by: Rose Contreras
-product: SharePoint
+product: Microsoft SharePoint
 body_format: markdown_w_tinymce
 ---
 
