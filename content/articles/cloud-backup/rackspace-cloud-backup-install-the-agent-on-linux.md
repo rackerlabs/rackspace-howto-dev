@@ -84,7 +84,7 @@ reboot. However, an agent update does not require a reboot.
 
 
 
-### Install the agent on APT-based systems, such as Ubuntu and Debian {#apt}
+### Install the agent on APT-based systems, such as Ubuntu and Debian
 
 Use SSH to log in to your server and run the following commands
 consecutively as a user with sudo or superuser privileges.
@@ -169,7 +169,7 @@ consecutively as a user with sudo or superuser privileges.
 
 ###
 
-### Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat {#rpm}
+### Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat
 
 Use SSH to log in to your server and run the following commands
 consecutively as a user with sudo or superuser privileges.
@@ -226,7 +226,7 @@ consecutively as a user with sudo or superuser privileges.
 
 ###
 
-### Install the agent on Arch, Gentoo, and SUSE systems {#arch}
+### Install the agent on Arch, Gentoo, and SUSE systems
 
 For Arch, Gentoo, and SUSE Linux systems, you must first download the
 tarball. Then, use SSH to log in to your server and run the following
@@ -301,19 +301,19 @@ tarball instructions.
 
 -
 
-Troubleshooting {#troubleshoot}
+Troubleshooting
 ---------------
 
 If you encounter issues during installation, use the tips in this
 section to troubleshoot.
 
-### Connection error {#connection}
+### Connection error
 
 If Cloud Backup indicates that the agent is not running on your server,
 ensure that your firewall isn't blocking outgoing connections on port
 443.
 
-### Status codes {#status}
+### Status codes
 
 #### What do the backup statuses Skipped, Missed, Errored, and Failed mean?
 
@@ -344,7 +344,7 @@ ensure that your firewall isn't blocking outgoing connections on port
 -   Failed: As with the Errored status, check the logs on the server. A
     failed status is severe.
 
-### Agent logs {#agent}
+### Agent logs
 
 If you need to read the logs of the agent, you can find them in
 `/var/log`.
@@ -353,7 +353,7 @@ If you need to read the logs of the agent, you can find them in
 
 
 
-Uninstall the agent from Linux {#uninstalllinux}
+Uninstall the agent from Linux
 ------------------------------
 
 To uninstall the agent, you can stop and remove both the auto-updater

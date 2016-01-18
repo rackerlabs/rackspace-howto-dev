@@ -26,7 +26,7 @@ Balancer. For instructions on creating a new Load Balancer,
 see [Configuring a Load
 Balancer](/how-to/configure-a-load-balancer).
 
-### Pointing an Existing Domain to a Load Balancer {#pointing-an-existing-domain-to-a-load-balancer .p1}
+### Pointing an Existing Domain to a Load Balancer
 
 1.  Click **Load Balancers **at the top of the Control Panel.
 2.  Click on an existing load balancer to see the **Load Balancer

@@ -32,13 +32,13 @@ This article provides examples of using each method.
     -   [Example 2: Use regular expressions](#Example_232_2)
     -   [References](#References_2)
 
-IIS 7 URL Rewrite Module {#The_IIS_7_URL_Rewrite_Module}
+IIS 7 URL Rewrite Module
 ------------------------
 
 This section provides examples of using the URL Rewrite Module to define
 rewrite rules in the **web.config** file.
 
-### Example 1: Rewrite ASP, ASPX, and HTML pages {#Example_231}
+### Example 1: Rewrite ASP, ASPX, and HTML pages
 
 You can use the URL Rewrite Module to rewrite ASP, ASPX, and HTML pages.
 In this example, we match **example.asp**, **example.aspx**, and
@@ -66,7 +66,7 @@ In this example, we match **example.asp**, **example.aspx**, and
       </system.webServer>
     </configuration>
 
-### Example 2: Use regular expressions {#Example_232}
+### Example 2: Use regular expressions
 
 The URL Rewrite Module also supports
 <a href="http://www.regular-expressions.info/" class="external text" title="http://www.regular-expressions.info/">regular expressions</a>.
@@ -89,7 +89,7 @@ processed by **article.aspx** as a standard GET request:
       </system.webServer>
     </configuration>
 
-### Example 3: Create a catch-all rewrite rule {#Example_233}
+### Example 3: Create a catch-all rewrite rule
 
 The URL Rewrite Module also provides a method to create a *catch-all*
 rewrite rule. This is similar to the way that applications like
@@ -117,7 +117,7 @@ directory and send it to **default.aspx**:
       </system.webServer>
     </configuration>
 
-### Example 4: Create redirects {#Example_234}
+### Example 4: Create redirects
 
 The following example shows an IIS rewrite reading the host header to
 perform a 301 redirect. The example takes a non-www domain and redirects
@@ -140,7 +140,7 @@ to a www.mydomain.com domain.
       </system.webServer>
     </configuration>
 
-### References {#References}
+### References
 
 The following references are on
 <a href="http://www.iis.net/" class="external text" title="http://www.iis.net/">iis.net</a>,
@@ -150,7 +150,7 @@ the official Microsoft IIS site:
 -   <a href="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/" class="external text" title="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/">Creating Rewrite Rules for the URL Rewrite Module</a>
 -   <a href="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/" class="external text" title="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/">URL Rewrite Module Configuration Reference</a>
 
-Third-party solutions {#Third-party_Solutions}
+Third-party solutions
 ---------------------
 
 Prior to the URL Rewrite Module, web developers had to create this
@@ -169,12 +169,12 @@ HttpModule to handle URL rewrites. This article describes using
 <a href="http://www.urlrewriter.net/" class="external text" title="http://www.urlrewriter.net/">UrlRewriter.NET</a> to
 do this.
 
-### Get started {#Getting_Started}
+### Get started
 
 To get started, [bin-deploy UrlRewriter.NET on Cloud
 Sites](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites).
 
-### Use UrlRewriter.NET {#Using_UrlRewriterNET}
+### Use UrlRewriter.NET
 
 UrlRewriter.NET provides a
 <a href="http://urlrewriter.net/index.php/support/reference" class="external text" title="http://urlrewriter.net/index.php/support/reference">full reference guide</a>
@@ -186,7 +186,7 @@ you added a `<configSections>` element, which causes the `rewriter`
 configuration section to be processed by UrlRewriter.NET. The following
 examples show rewrite rules that use this configuration element.
 
-### Example 1: Match info to info.aspx {#Example_231_2}
+### Example 1: Match info to info.aspx
 
 In this example, we match **info** and display the contents of
 **info.aspx**:
@@ -195,7 +195,7 @@ In this example, we match **info** and display the contents of
       <rewrite url="~/info" to="~/info.aspx" />
     </rewriter>
 
-### Example 2: Use regular expressions {#Example_232_2}
+### Example 2: Use regular expressions
 
 UrlRewriter.NET also supports
 <a href="http://www.regular-expressions.info/" class="external text" title="http://www.regular-expressions.info/">regular expressions</a>.
@@ -208,7 +208,7 @@ example, we want to match **products/*id*** and have it processed by
       <rewrite url="~/products/(.+)" to="~/products.aspx?category=$1" />
     </rewriter>
 
-### References {#References_2}
+### References
 
 -   <a href="http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx" class="external text" title="http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx">Tip/Trick: Url Rewriting with ASP.NET</a>
     from Scott Guthrie's blog, particularly approach 3

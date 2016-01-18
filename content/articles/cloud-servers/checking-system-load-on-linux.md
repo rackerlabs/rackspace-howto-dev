@@ -12,7 +12,7 @@ body_format: tinymce
 
 <div id="concept_mj5_zhv_ng" class="nested0">
 
-### Checking system load {#checking-system-load .title .topictitle1}
+### Checking system load
 
 <div class="body conbody">
 
@@ -27,7 +27,7 @@ to poor performance and system instability.
 
 <div id="concept_yy3_4hv_ng" class="topic concept nested0">
 
-### Uptime {#uptime .title .topictitle1}
+### Uptime
 
 <div class="body conbody">
 
@@ -71,7 +71,7 @@ processor requests, which reduces performance.
 
 <div id="concept_cyr_phv_ng" class="topic concept nested0">
 
-### top {#top .title .topictitle1}
+### top
 
 <div class="body conbody">
 
@@ -87,7 +87,7 @@ where your server is receiving the biggest demands on its resources.
 
 <div id="concept_1gm_qhv_ng" class="topic concept nested0">
 
-### vmstat {#vmstat .title .topictitle1}
+### vmstat
 
 <div class="body conbody">
 
@@ -143,7 +143,7 @@ processes that are consuming the most resources.
 
 <div id="concept_wym_rhv_ng" class="topic concept nested0">
 
-### Summary {#summary .title .topictitle1}
+### Summary
 
 <div class="body conbody">
 

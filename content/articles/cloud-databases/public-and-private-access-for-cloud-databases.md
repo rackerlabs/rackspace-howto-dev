@@ -49,7 +49,7 @@ implementation.
 ![Accessing a Cloud
 Database](http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustration-rev2.png)
 
-### Related Information {#relatedinformation}
+### Related Information
 
 [Connecting to Your Cloud
 Database](/how-to/connect-to-a-cloud-databases-instance "Connecting to Your Cloud Database")

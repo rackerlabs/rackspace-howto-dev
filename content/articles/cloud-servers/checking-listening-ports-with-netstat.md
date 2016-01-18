@@ -12,7 +12,7 @@ body_format: tinymce
 
 <div id="concept_qbl_bjv_ng" class="nested0">
 
-### netstat {#netstat .title .topictitle1}
+### netstat
 
 <div class="body conbody">
 
@@ -36,7 +36,7 @@ Remember that netstat is not affected by your firewall configuration.
 
 <div id="task_dcl_2jv_ng" class="topic task nested0">
 
-### Checking ports {#checking-ports .title .topictitle1}
+### Checking ports
 
 <div class="body taskbody">
 
@@ -70,7 +70,7 @@ tcp        0      0 :::22                       :::*                        LIST
 
 <div id="task_f4j_hjv_ng" class="topic task nested0">
 
-### Filtering the list {#filtering-the-list .title .topictitle1}
+### Filtering the list
 
 <div class="body taskbody">
 
@@ -93,7 +93,7 @@ tcp        0      0 :::80                       :::*                        LIST
 
 <div id="concept_3pn_ljv_ng" class="topic concept nested0">
 
-### Analysing the results {#analysing-the-results .title .topictitle1}
+### Analysing the results
 
 <div class="body conbody">
 
@@ -135,7 +135,7 @@ port you need to address its configuration before you go any further.
 
 <div id="concept_s5f_njv_ng" class="topic concept nested0">
 
-### Outcome {#outcome .title .topictitle1}
+### Outcome
 
 <div class="body conbody">
 

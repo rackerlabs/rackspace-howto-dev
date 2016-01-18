@@ -46,7 +46,7 @@ powered by the
 
 <div>
 
-[]()Rackspace Private Cloud Sandbox {#rackspace-private-cloud-sandbox .title}
+[]()Rackspace Private Cloud Sandbox
 -----------------------------------
 
 </div>
@@ -86,7 +86,7 @@ Specific changes are listed in the
 
 <div>
 
-[]()Requirements {#requirements .title}
+[]()Requirements
 ----------------
 
 </div>
@@ -123,7 +123,7 @@ physical machine with these specifications:
 
 <div>
 
-[]()Setup {#setup .title}
+[]()Setup
 ---------
 
 </div>
@@ -158,7 +158,7 @@ designed for VirtualBox.
 
 <div>
 
-### []()VMWare {#vmware .title}
+### []()VMWare
 
 </div>
 
@@ -220,7 +220,7 @@ During the import process, you may experience the following messages:
 
 <div>
 
-### []()VirtualBox {#virtualbox .title}
+### []()VirtualBox
 
 </div>
 
@@ -387,7 +387,7 @@ If the VM fails on first boot:
 
 <div>
 
-[]()Using the private cloud {#using-the-private-cloud .title}
+[]()Using the private cloud
 ---------------------------
 
 </div>
@@ -407,7 +407,7 @@ the <a href="http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrad
 
 <div>
 
-### []()Logging into the cloud {#logging-into-the-cloud .title}
+### []()Logging into the cloud
 
 </div>
 
@@ -440,7 +440,7 @@ using the command line interface, look in the root user's
 
 <div>
 
-### []()Cloud features {#cloud-features .title}
+### []()Cloud features
 
 </div>
 
@@ -473,7 +473,7 @@ can be used to boot instances.
 
 <div>
 
-### []()Cloud performance {#cloud-performance .title}
+### []()Cloud performance
 
 </div>
 

@@ -25,7 +25,7 @@ CNAME records using the Cloud Control Panel.
 -   [Deleting a Domain](#F)
 -   [What are the canonical DNS servers for Cloud Servers?](#G)
 
-### Adding a Domain {#A}
+### Adding a Domain
 
 1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **DNS **at the top.
@@ -44,7 +44,7 @@ CNAME records using the Cloud Control Panel.
 3.  You will see your domain listed in the domain section as well
     options to create other DNS records as well.
 
-### Adding an A Record {#B}
+### Adding an A Record
 
 Next, let's go through the process of adding an A Record for your
 domain.
@@ -60,7 +60,7 @@ domain.
 3.  After you have entered everything, select **Add Record** and you are
     finished!
 
-### Adding a CName Record {#C}
+### Adding a CName Record
 
 Next, we will go through the process of setting up CNAME Records for
 your domain.
@@ -76,7 +76,7 @@ your domain.
 3.  After you have entered everything, select **Add Record** and you are
     finished!
 
-### Adding an MX Record {#D}
+### Adding an MX Record
 
 Next, we'll go through the process of setting up MX Records for your
 domain.
@@ -89,7 +89,7 @@ domain.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/5.png)
 
-### Deleting a Record {#E}
+### Deleting a Record
 
 Next, we'll go through the process of Deleting a DNS Record for your
 domain.
@@ -101,7 +101,7 @@ domain.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/6.png)
 
-### Deleting a Domain {#F}
+### Deleting a Domain
 
 Next, we'll go through the process of Deleting a Domain.
 
@@ -112,7 +112,7 @@ Next, we'll go through the process of Deleting a Domain.
 
     ![](http://c15154024.r24.cf2.rackcdn.com/7.png)
 
-### What are the canonical DNS servers for Cloud Servers? {#G}
+### What are the canonical DNS servers for Cloud Servers?
 
 If you're setting the canonical name servers for your domain with your
 domain registrar (the NS records), use the following addresses:

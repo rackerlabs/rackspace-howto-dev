@@ -97,7 +97,7 @@ other companies.
 
 
 
-**The Use of the word PARTNER** {#the-use-of-the-word-partner .MsoNormal}
+**The Use of the word PARTNER**
 -------------------------------
 
 The use of the word &lsquo;partner&rsquo; or &lsquo;channel partner&rsquo; does not imply a

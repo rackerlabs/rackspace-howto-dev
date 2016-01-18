@@ -21,7 +21,7 @@ After you have installed Postfix, you can work with settings in the
 **Note:** This article assumes that you are using a single domain for
 your email needs.
 
-Modular nature of Postfix {#modular}
+Modular nature of Postfix
 -------------------------
 
 One of the key aspects of Postfix is that it is designed to be a modular
@@ -39,7 +39,7 @@ Postfix and editing multiple files for what might seem like simple
 settings. Such modularity will be useful when you start adding multiple
 domains, users, and aliases to your setup.
 
-The main.cf file {#maincf}
+The main.cf file
 ----------------
 
 To see the **main.cf** file, issue the following command:
@@ -200,7 +200,7 @@ file looks as follows:
     recipient_delimiter = +
     inet_interfaces = all
 
-Test the settings {#test}
+Test the settings
 -----------------
 
 As with all packages, after you have made any changes to the

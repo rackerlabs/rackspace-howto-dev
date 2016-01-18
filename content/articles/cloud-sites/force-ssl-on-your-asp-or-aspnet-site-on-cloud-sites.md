@@ -18,7 +18,7 @@ ASP.NET site.
 -   [ASP.NET (MVC 3)](#aspnetmvc3)
 -   [Classic ASP](#classicASP)
 
-web.config file {#web.config}
+web.config file
 ---------------
 
 If your website has the IIS Rewrite Module available, you can use
@@ -57,7 +57,7 @@ and
 <a href="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/" class="external text" title="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/">URL Rewrite Module Configuration Reference</a>
 on the Microsoft IIS site.
 
-ASP.NET (not MVC 3) {#ASP.NET}
+ASP.NET (not MVC 3)
 -------------------
 
 Using ASP.NET, you can use the following code to force SSL on a page on
@@ -100,7 +100,7 @@ your site:
     </body>
     </html>
 
-ASP.NET (MVC 3) {#aspnetmvc3}
+ASP.NET (MVC 3)
 ---------------
 
 You can use the following code when using the `RequireHttps` attribute
@@ -139,7 +139,7 @@ public static class Extensions
 }
 ```
 
-Classic ASP {#classicASP}
+Classic ASP
 -----------
 
 Using classic ASP, you can use the following code to force SSL on a page

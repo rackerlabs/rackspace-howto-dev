@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### Prerequisites {#prerequisites .p1}
+### Prerequisites
 
 [Installing NGINX and PHP-FPM -
 Preface](/how-to/installing-nginx-and-php-fpm-preface)
@@ -42,7 +42,7 @@ will use this User later in our setup.
 WOW, that was tough! I know you may be tired, so this is a good time to
 take a break.
 
-### Next steps {#next-steps .p1}
+### Next steps
 
 [Installing NGINX and
 PHP-FPM](/how-to/installing-nginx-and-php-fpm)

@@ -19,7 +19,7 @@ servers; check response times across multiple data centers; look up the
 Rackspace Cloud System Status; and contact Rackspace Fanatical Support
 across all regions.
 
-### Download the Application {#GettingStartedwiththeRackspaceMobileApplication-GettingStartedwiththeRackspaceiOSApplicationandManagingAccounts}
+### Download the Application
 
 Download the Rackspace mobile application appropriate for your mobile
 device:
@@ -53,7 +53,7 @@ account!
     additional account. Again, this will match the Username and Password
     used to log into the account on the Cloud Control Panel.
 
-### []()Creating a Cloud Server on your mobile application     {#ManagingCloudServersonyourMobileApp-CreatingaCloudServeronyourmobileapplication.1}
+### []()Creating a Cloud Server on your mobile application
 
 After tapping on the "+" icon in the top right of the Server List page,
 you will see the 4 primary setup options - Name, Region, Image, and Size
@@ -111,7 +111,7 @@ Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-se
     -   Tap the Rename button
     -   You will be able to add in the new server name
 
-### IP Features on your Cloud Server {#ManagingCloudServersonyourMobileApp-IPFeaturesonyourCloudServer}
+### IP Features on your Cloud Server
 
 On your Server Details page you can select your Public IPs and/or
 Private IP to Ping the server, Copy the IP address or open the IP in
@@ -124,12 +124,12 @@ to:
 -   Copy to clipboard
 -   Open in Browser
 
-### Change the Root Password on your Cloud Server {#ManagingCloudServersonyourMobileApp-ChangetheRootPasswordonyourCloudServer}
+### Change the Root Password on your Cloud Server
 
 On your Server Details page you can tap the Change Root Password button
 to update the password you use to access your server
 
-### Deleting an Account from the Mobile Device {#ManagingCloudServersonyourMobileApp-DeletingaCloudServeronyourmobileapplication}
+### Deleting an Account from the Mobile Device
 
 -   To delete an account from your **Android** Rackspace mobile
     application, you will go to your device's Settings menu.  Under the

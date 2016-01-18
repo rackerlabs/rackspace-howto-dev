@@ -13,7 +13,7 @@ body_format: tinymce
 This guide is designed to get administrators started with Role-Based
 Access Control (RBAC) and to answer questions about the service.
 
-### What is RBAC? {#what-is-rbac .field-items}
+### What is RBAC?
 
 RBAC is a secure method of restricting account access to authorized
 users. This method enables the account owner to add users to the account
@@ -30,7 +30,7 @@ RBAC is important because it provides customers a greater degree of
 control over cloud resource utilization with the added layer of system
 security.
 
-### What are roles? {#what-are-roles .field-items}
+### What are roles?
 
 *Role* describes the level of access users have for their account. By
 assigning roles to users, administrators can allow multiple users to
@@ -41,11 +41,11 @@ Roles grant access across all resources of a single product or for
 multiple products. RBAC does not restrict access to specific files,
 directories, or servers.
 
-### What roles are available through RBAC? {#what-roles-are-available-through-rbac .field-items}
+### What roles are available through RBAC?
 
 RBAC provides the following roles.
 
-### Multiple-product roles {#account-admin-role}
+### Multiple-product roles
 
 -   **Full access** - The full access role has the permissions to
     create, read, update, and delete resources within multiple
@@ -66,7 +66,7 @@ automatic access to all new products that become RBAC-enabled, with the
 exception of account administration tasks such as billing. Product roles
 do not include Account roles.
 
-### **Custom roles** {#single-product-roles}
+### **Custom roles**
 
 The Custom roles provide a useful mix of permission levels for assigning
 permissions per product. After the user is assigned the Custom roles,
@@ -115,7 +115,7 @@ Then assign the appropriate Account role to the user.
 
 
 
-### What types of users does RBAC have? {#user-types}
+### What types of users does RBAC have?
 
 RBAC has the following types of users:
 
@@ -132,7 +132,7 @@ RBAC has the following types of users:
 
 
 
-### What actions are restricted to the account owner role? {#actions-restricted-to-account-owner-role}
+### What actions are restricted to the account owner role?
 
 Only the account owner role can perform the following actions:
 
@@ -141,7 +141,7 @@ Only the account owner role can perform the following actions:
 
 
 
-### **What are the contact types in the Control Panel?** {#what-are-contact-types .p1}
+### **What are the contact types in the Control Panel?**
 
 The following types of contacts are shown in the Control Panel. Contact
 types are similar to tags that can assist with user management.
@@ -166,7 +166,7 @@ types are similar to tags that can assist with user management.
 
 
 
-### When do I need to implement RBAC? {#when-to-implement}
+### When do I need to implement RBAC?
 
 Implement RBAC in the following situations:
 
@@ -185,13 +185,13 @@ needed for an account.
 
 
 
-### Who can use RBAC? {#who-can-use .field-items}
+### Who can use RBAC?
 
 RBAC is available to all Rackspace customers.
 
 
 
-### How can I get RBAC? {#how-to-get .field-items}
+### How can I get RBAC?
 
 Adding users to the account activates RBAC. Account owners can add users
 through the Cloud Control Panel or through API.
@@ -201,7 +201,7 @@ API documentation at <https://developer.rackspace.com/docs/>.
 
 
 
-### <a href="" id="enabled"></a>Which products are currently RBAC enabled? {#supported-services .field-items}
+### <a href="" id="enabled"></a>Which products are currently RBAC enabled?
 
 -   <a href="/how-to/next-generation-cloud-servers-migration-considerations-and-options" class="external-link">Next Generation Servers</a>
 -   <a href="/how-to/getting-started-with-cloud-servers-0" class="external-link">First Generation Servers</a>
@@ -241,14 +241,14 @@ API documentation at <https://developer.rackspace.com/docs/>.
 
 
 
-### <a href="" id="future"></a>Which products will be RBAC enabled in the future? {#future-service-support}
+### <a href="" id="future"></a>Which products will be RBAC enabled in the future?
 
 -   Rackspace Orchestration Service
 -   New products as they are launched
 
 
 
-### Which products will not have RBAC? {#services-not-supported}
+### Which products will not have RBAC?
 
 -   Cloud Sites
 -   RackConnect

@@ -199,7 +199,7 @@ To check for duplicate entities by using cURL, do the following:
     with varying label cases. If duplicate entities exist, open a ticket
     with Support.
 
-### M<span>anually configure the Rackspace Monitoring agent to function behind an HTTPS proxy</span> {#ManuallyconfiguretheCloudMonitoringagenttofunctionbehindanHTTPSproxy}
+### M<span>anually configure the Rackspace Monitoring agent to function behind an HTTPS proxy</span>
 
 If you need to connect the agent through an HTTP proxy, you can manually
 configure the Rackspace Monitoring agent to function behind an HTTPs

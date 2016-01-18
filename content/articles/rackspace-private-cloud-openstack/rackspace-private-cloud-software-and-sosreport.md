@@ -81,7 +81,7 @@ Once you are successfully logged in, use <span class="command">**sudo
 
 <div class="section" title="Generating a report">
 
-### []()Generating a report {#generating-a-report .title}
+### []()Generating a report
 
 To generate a basic report with default settings, run the command on the
 command line:
@@ -124,7 +124,7 @@ requested by Rackspace Support.
 
 <div class="section" title="sosreport plugins">
 
-### []()sosreport plugins {#sosreport-plugins .title}
+### []()sosreport plugins
 
 Depending on your issue and the instructions of Rackspace Support, you
 may need to disable or enable certain plugins when the report is

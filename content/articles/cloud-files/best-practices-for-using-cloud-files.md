@@ -10,7 +10,7 @@ product: Cloud Files
 body_format: tinymce
 ---
 
-### What is Cloud Files used for? {#what-is-cloud-files-used-for .MsoNormal}
+### What is Cloud Files used for?
 
 There are many ways to utilize Cloud Files, but it is strongest when
 functioning as **unlimited object storage** on the Cloud, or when used
@@ -36,7 +36,7 @@ Files is not designed for that.  It was designed so that when you write
 to an object in Cloud Files, that object will be there each and every
 time you call for it.
 
-### Organize Content for Web Acceleration {#organize-content-for-web-acceleration .MsoNormal}
+### Organize Content for Web Acceleration
 
 When using Cloud Files for web acceleration, a basic organizational
 structure would separate your content into different containers based on
@@ -44,9 +44,9 @@ object type (for example): images, css, javascript, videos, uploaded
 content, etc.  This structure enables quick location of objects when you
 need them.
 
-### Container Management {#container-management .MsoNormal style="border-style: initial; border-color: initial;"}
+### Container Management
 
-#### Using Multiple Containers {#using-multiple-containers .MsoNormal style="border-style: initial; border-color: initial;"}
+#### Using Multiple Containers
 
 If you have an extremely large number of objects, we recommend storing
 them in multiple containers (you can have up to 500,000 containers per
@@ -54,7 +54,7 @@ account in Cloud Files). When writing large numbers of objects to a
 single container, the limit of 100 object write requests per second per
 container may reduce overall performance.
 
-#### How to Label Your Containers {#how-to-label-your-containers .MsoNormal style="border-style: initial; border-color: initial;"}
+#### How to Label Your Containers
 
 When organizing your containers for an object storage solution, we
 recommend labeling the container based on type of storage, perhaps based
@@ -66,7 +66,7 @@ separate containers (for example): images, css, javascript, videos,
 uploaded content, etc.  This structure enables quick location of objects
 when you need them.
 
-#### Keep a Local Database of Your Container Structure {#keep-a-local-database-of-your-container-structure .MsoNormal style="border-style: initial; border-color: initial;"}
+#### Keep a Local Database of Your Container Structure
 
 For users with a larger number of files, another recommendation is to
 keep a local copy of the container structure and listing so that you are
@@ -91,7 +91,7 @@ Keeping track of the object count can be done locally, and verified
 against the object count in the container by performing a HEAD on the
 container, and checking the Object Count.
 
-### Pathing {#pathing .MsoNormal}
+### Pathing
 
 Remember, containers in Cloud Files do not nest, and all objects in a
 single conatiner are subject to the same limitations.  There are
@@ -107,14 +107,14 @@ displays in the browser, for example:
 
 where the name of the object is ducks/funny/duckling.jpg.
 
-### Removing Containers and Container Data {#removing-containers-and-container-data .MsoNormal}
+### Removing Containers and Container Data
 
 All objects in a container must be deleted before the container itself
 can be deleted.  Multiple containers allow for better threading of the
 deletion scripts.  Content grows regardless of the use case, so it&rsquo;s
 best to plan ahead for this.
 
-### TTL {#ttl .MsoNormal}
+### TTL
 
 In addition to the performance benefit of reduced time in listings, you
 also get the improvement of being able to set the TTL (Time To Live

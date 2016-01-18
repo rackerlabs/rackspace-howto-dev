@@ -21,7 +21,7 @@ data disks, but they will include local system disks<span>. This means
 that you will need to use a separate method for saving information
 located on the data disk(s).</span>
 
-Saving Your Configuration Using System Images {#saving-your-configuration-using-system-images .MsoNormal}
+Saving Your Configuration Using System Images
 ---------------------------------------------
 
 You can retain the operating system and configuration information from
@@ -32,14 +32,14 @@ Backup](/how-to/cloud-backup), which is a
 granular file level backup system that you can configure to save only
 the files and folders you wish to keep.
 
-How Do I Back up a Data Disk? {#how-do-i-back-up-a-data-disk .MsoNormal}
+How Do I Back up a Data Disk?
 -----------------------------
 
 Since system images will only save data from the system disk, you will
 need to use a backup solution like the Rackspace Cloud Backup service to
 retain information from the data disk(s)..
 
-What About Scaling and Resizing?  {#what-about-scaling-and-resizing .MsoNormal}
+What About Scaling and Resizing?
 ---------------------------------
 
 Only first-generation and standard servers can be directly

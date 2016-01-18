@@ -12,7 +12,7 @@ body_format: tinymce
 
 
 
-##### <span>NOTE: *This documentation refers to a feature that is no longer available for Cloud Sites.  This article is here for the purpose of legacy support only.*</span> {#notethis-documentation-refers-to-a-feature-that-is-no-longer-available-for-cloud-sites.-this-article-is-here-for-the-purpose-of-legacy-support-only. .p1}
+##### <span>NOTE: *This documentation refers to a feature that is no longer available for Cloud Sites.  This article is here for the purpose of legacy support only.*</span>
 
 
 

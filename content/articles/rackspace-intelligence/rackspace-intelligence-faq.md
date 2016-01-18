@@ -62,14 +62,14 @@ resource use.
 
 ^[back\\ to\\ top](#top)^
 
-### Who can use Rackspace Intelligence? {#who-can-use}
+### Who can use Rackspace Intelligence?
 
 All Rackspace customers with a Cloud services account can use Rackspace
 Intelligence.
 
 ^[back\\ to\\ top](#top)^
 
-### How do I sign up for Rackspace Intelligence? {#how-do-i-sign-up}
+### How do I sign up for Rackspace Intelligence?
 
 There is no separate sign-up process for Rackspace Intelligence. If you
 have a Cloud services account, log in to
@@ -78,7 +78,7 @@ credentials.
 
 ^[back\\ to\\ top](#top)^
 
-### Can I use Rackspace Intelligence for both Cloud and Dedicated resources? {#can-i-use-cloud-and-dedicated}
+### Can I use Rackspace Intelligence for both Cloud and Dedicated resources?
 
 Currently you can use Rackspace Intelligence for your Cloud resources
 only. The Rackspace Intelligence development team is working to enable
@@ -87,7 +87,7 @@ available soon and will keep you updated.
 
 ^[back\\ to\\ top](#top)^
 
-### What are the benefits of using Rackspace Intelligence? {#benefits}
+### What are the benefits of using Rackspace Intelligence?
 
 With this set of visualization and analytics tools, you no longer have
 to set up, maintain, or pay for an additional set of tools.
@@ -96,7 +96,7 @@ Rackers.
 
 ^[back\\ to\\ top](#top)^
 
-### How do I access Rackspace Intelligence? {#access}
+### How do I access Rackspace Intelligence?
 
 Go to
 [https://intelligence.rackspace.com](http://intelligence.rackspace.com)
@@ -110,14 +110,14 @@ displays the Rackspace Intelligence portal.
 
 ^[back\\ to\\ top](#top)^
 
-### How much does Rackspace Intelligence cost? {#cost}
+### How much does Rackspace Intelligence cost?
 
 Rackspace Intelligence is available at no charge for Rackspace customers
 with a Cloud services account.
 
 ^[back\\ to\\ top](#top)^
 
-### Is there an API for Rackspace Intelligence? {#api}
+### Is there an API for Rackspace Intelligence?
 
 Rackspace Intelligence currently does not expose an API. However, many
 monitoring-related features, such as the creation and editing of checks
@@ -131,7 +131,7 @@ API](/how-to/cloud-monitoring).
 Account services
 ----------------
 
-### Are any features of Rackspace Intelligence limited to specific service levels? {#service-levels}
+### Are any features of Rackspace Intelligence limited to specific service levels?
 
 All the features in Rackspace Intelligence are available to all service
 levels (Managed Infrastructure and Managed Operations) for all Cloud
@@ -139,7 +139,7 @@ customers.
 
 ^[back\\ to\\ top](#top)^
 
-### How can I provide feedback about Rackspace Intelligence? {#feedback}
+### How can I provide feedback about Rackspace Intelligence?
 
 If you want to suggest features to add to Rackspace Intelligence, or if
 you discover any issues, click the **Feedback** link at the top of the
@@ -152,14 +152,14 @@ portal.
 Features
 --------
 
-### What is an entity? {#entity}
+### What is an entity?
 
 An *entity* is a resource (for example, a website or server) that you
 want to monitor.
 
 ^[back\\ to\\ top](#top)^
 
-### Do I need to create entities manually to monitor them? {#entity-manual}
+### Do I need to create entities manually to monitor them?
 
 Rackspace Intelligence automatically creates entities for all of your
 Rackspace cloud servers and databases. If you want to monitor other
@@ -167,41 +167,41 @@ systems, you must manually create entities for them.
 
 ^[back\\ to\\ top](#top)^
 
-### What is a check? {#check}
+### What is a check?
 
 A *check* specifies the aspect of the resource that you want to monitor.
 
 ^[back\\ to\\ top](#top)^
 
-### What is an alarm? {#alarm}
+### What is an alarm?
 
 An *alarm* is a set of rules that determine what status is returned
 based on the result of the check.
 
 ^[back\\ to\\ top](#top)^
 
-### Why are the concepts of checks and alarms separate? {#checks-vs-alarms}
+### Why are the concepts of checks and alarms separate?
 
 <span>We wanted to build a state-of-the-art monitoring platform, which
 requires that data collection be separate from thresholds.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### What is a notification? {#notification}
+### What is a notification?
 
 A *notification* defines how the customer wants to be contacted in the
 case of a system failure.
 
 ^[back\\ to\\ top](#top)^
 
-### What is a notification plan? {#notification-plan}
+### What is a notification plan?
 
 <span>A *notification plan* specifies a set of actions that are
 performed when a certain status is returned by the check.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### What features will be available in the future? {#future-features}
+### What features will be available in the future?
 
 We plan to provide the following features in future releases:
 

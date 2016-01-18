@@ -17,7 +17,7 @@ Databases instance:
 -   [Connect to the database directly by using the hostname](#direct)
 -   [Connect by using a cloud load balancer](#lb)
 
-Connect through a cloud server by using SSH and the hostname {#ssh}
+Connect through a cloud server by using SSH and the hostname
 ------------------------------------------------------------
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
@@ -39,7 +39,7 @@ Connect through a cloud server by using SSH and the hostname {#ssh}
         mysql -h hostname_string -u database_instance_username -p
 
 
-Connect to the database directly by using the hostname {#direct}
+Connect to the database directly by using the hostname
 ------------------------------------------------------
 
 This section provides a sample script that creates a very simple
@@ -191,7 +191,7 @@ Copy the following PHP script and paste it into a text editor:
 3.  Type a MySQL expression (for example, **PI()\*3\*3**) and click
     **Submit** to have it evaluated.
 
-Connect by using a cloud load balancer {#lb}
+Connect by using a cloud load balancer
 --------------------------------------
 
 **Note:** This load balancer should be used only to access your Cloud

@@ -29,7 +29,7 @@ metadata key in one of the following ways:
 -   If you already use other applications to access Cloud Files,
     [specify an existing user](#specify).
 
-Create a new account {#createnew}
+Create a new account
 --------------------
 
 In the Create New Account form (shown in the following figure), provide
@@ -48,7 +48,7 @@ Control Panel](https://mycloud.rackspace.com).
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Fig%20--%20Create%20New%20Account_0.jpg" width="452" height="437" />
 
-Specify an existing user {#specify}
+Specify an existing user
 ------------------------
 
 If you already use other applications to connect to your Cloud Files

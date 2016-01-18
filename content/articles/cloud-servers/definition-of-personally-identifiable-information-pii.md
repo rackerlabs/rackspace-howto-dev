@@ -19,7 +19,7 @@ privacy of an individual or used for identity theft. Extra care should
 be taken with servers that contain PII. To address this specific need,
 some Rackspace content discusses PII.
 
-### What is PII? {#what-is-pii .p1}
+### What is PII?
 
 PII includes the following information:
 

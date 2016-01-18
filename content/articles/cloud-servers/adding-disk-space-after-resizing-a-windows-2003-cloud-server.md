@@ -13,12 +13,12 @@ body_format: tinymce
 <div id="toctitle"
 style="border-style: initial; border-color: initial; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: normal;">
 
-### Note:  Rackspace no longer offers Cloud Servers with Windows 2003, but these instructions are here for legacy support purposes. {#note-rackspace-no-longer-offers-cloud-servers-with-windows-2003-but-these-instructions-are-here-for-legacy-support-purposes. .p1}
+### Note:  Rackspace no longer offers Cloud Servers with Windows 2003, but these instructions are here for legacy support purposes.
 
-  {#section style="border-style: initial; border-color: initial;"}
+
 -
 
-Contents {#contents style="border-style: initial; border-color: initial;"}
+Contents
 --------
 
 </div>
@@ -69,17 +69,17 @@ Contents {#contents style="border-style: initial; border-color: initial;"}
 <div>
 
 
-**[]()** {#section-1 style="border-style: initial; border-color: initial; color: #222222; font-family: Arial, Verdana, sans-serif;"}
+**[]()**
 --------
 
-**Windows Server 2003[]()** {#windows-server-2003 style="border-style: initial; border-color: initial; color: #222222; font-family: Arial, Verdana, sans-serif;"}
+**Windows Server 2003[]()**
 ---------------------------
 
 
 
-### []() {#section-2 style="border-style: initial; border-color: initial; color: #222222; font-family: Arial, Verdana, sans-serif;"}
+### []()
 
-### Formatting the Disk and Adding an Additional Drive {#formatting-the-disk-and-adding-an-additional-drive style="border-style: initial; border-color: initial; color: #222222; font-family: Arial, Verdana, sans-serif;"}
+### Formatting the Disk and Adding an Additional Drive
 
 -   Log into your Windows Server 2003 Cloud Server using Remote Desktop
     and logging in as the user Administrator, or with an account that is
@@ -167,7 +167,7 @@ Contents {#contents style="border-style: initial; border-color: initial;"}
 
 
 
-[]() {#section-3 style="border-style: initial; border-color: initial; color: #222222; font-family: Arial, Verdana, sans-serif;"}
+[]()
 ----
 
 </div>

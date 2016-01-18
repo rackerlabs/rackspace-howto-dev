@@ -23,7 +23,7 @@ provides a brief overview of the control panel, which you can access at
 -   [Domains](#Domains)
 -   [Support](#Support)
 
-### Control Panel Main {#ControlPanelMain}
+### Control Panel Main
 
 Once you're logged into the Control Panel, you will see a variety of
 sections that showcase the products that you have signed up for (in this
@@ -38,7 +38,7 @@ the landing page.
 <span
 class="s4"><img src="http://c15042926.r26.cf2.rackcdn.com/exchange_cp_main.png" alt="Image" width="600" height="563" /></span>
 
-### Microsoft Exchange {#RackspaceEmail}
+### Microsoft Exchange
 
 The Microsoft Exchange section provides you with various options and
 tools like spam filtering, creating distribution lists, and accessing
@@ -110,7 +110,7 @@ about options are provided.
 -   **Troubleshooting Tools** - helpful tools such as a DNS checker and
     header analyzer
 
-### My Account {#MyAccount}
+### My Account
 
 The **My Account** section allows users to Manage their Invoice History,
 Manage Administrators and find General Information.Below is a News and
@@ -153,7 +153,7 @@ class="s4"><img src="http://c15042926.r26.cf2.rackcdn.com/Cp10.png" alt="Image" 
     tickets
 -   **Feedback** - an option to provide feedback for our services
 
-### Domains {#Domains}
+### Domains
 
 The **Domains** service section allows users to access your domains DNS
 Settings, Add Disclaimers, View Domain Details and set Spam Filtering.
@@ -189,7 +189,7 @@ class="s4"><img src="http://c15042926.r26.cf2.rackcdn.com/CP5.png" alt="Image" w
 -   **Blacklists / Safelists** - search for users on Blacklists or
     Safelists
 
-#### Support {#Support}
+#### Support
 
 -   **Documentation** - self service support documentation on our
     products
@@ -209,7 +209,7 @@ class="s4"><img src="http://c15042926.r26.cf2.rackcdn.com/CP5.png" alt="Image" w
 -   **Migrations** - set up new migrations for migrating company data
     from a previous hosting provider
 
-### Support {#support-2}
+### Support
 
 The **Support** section allows users to utilize the support documents
 for the most common questions as well the ability to **View / Create

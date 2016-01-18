@@ -40,7 +40,7 @@ options of both below.
 
 
 
-Monitoring/Alerting: {#monitoringalerting style="margin-left: -27.0pt;"}
+Monitoring/Alerting:
 --------------------
 
 ***Control Panel***
@@ -117,7 +117,7 @@ style="mso-spacerun: yes;">    </span>
 
 
 
-Hiding Source Code: {#hiding-source-code style="margin-left: -.5in;"}
+Hiding Source Code:
 -------------------
 
 While completely hiding your source code is impossible, below are some

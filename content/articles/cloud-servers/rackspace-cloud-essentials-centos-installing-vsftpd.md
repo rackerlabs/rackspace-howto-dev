@@ -71,10 +71,10 @@ security and convenience.
 
 
 
-Configuration {#configuration .p1}
+Configuration
 -------------
 
-### []()Set vsftp service to start on reboot {#set-vsftp-service-to-start-on-reboot .p1}
+### []()Set vsftp service to start on reboot
 
 You can use the chkconfig tool to view which services will start
 automatically when the server boots, and on which run level they'll
@@ -104,7 +104,7 @@ and convenience:
 
 Open /etc/vsftpd/vsftpd.conf in your favorite text editor.
 
-### []()Disable anonymous users {#disable-anonymous-users .p1}
+### []()Disable anonymous users
 
 It is generally advised to disable anonymous FTP, unless you have a
 specific requirement to use it.
@@ -122,7 +122,7 @@ to read:
 anonymous_enable=NO
 ```
 
-### []()Restriciting user access {#restriciting-user-access .p1}
+### []()Restriciting user access
 
 Now configure vsftpd to be able to chroot(commonly referred to as
 jailing or jail) users to their home directories for security and
@@ -160,7 +160,7 @@ Create the chroot\_list file so you do not get an error when restarting:
 sudo touch /etc/vsftpd/chroot_list
 ```
 
-### Configure Firewall {#configure-firewall .p1}
+### Configure Firewall
 
 Open ports in your firewall by running the following
 

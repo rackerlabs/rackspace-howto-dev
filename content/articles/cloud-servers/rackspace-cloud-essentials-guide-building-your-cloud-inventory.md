@@ -11,7 +11,7 @@ body_format: tinymce
 ---
 
 ####
-This Second Guide will show you how to add new Cloud Servers and Cloud Load Balancers to your account. {#this-second-guide-will-show-you-how-to-add-new-cloud-servers-and-cloud-load-balancers-to-your-account. .first .leaf}
+This Second Guide will show you how to add new Cloud Servers and Cloud Load Balancers to your account.
 
 **Cloud Servers**
 

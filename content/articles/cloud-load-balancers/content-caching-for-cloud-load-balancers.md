@@ -14,13 +14,13 @@ The Cloud Load Balancers product has a Content Caching feature that
 stores recently-accessed files on the load balancer for easy retrieval
 by web clients.
 
-#### Getting started {#gettingstarted}
+#### Getting started
 
 -   [How do I enable content caching?](#howenable)
 -   [What are the benefits of content caching?](#benefits)
 -   [What kind of files work well with content caching?](#workwell)
 
-#### Caching details {#cachingdetails}
+#### Caching details
 
 -   [Is there a maximum file size that can be cached?](#maxsize)
 -   [How long is content cached?](#ttl)
@@ -28,18 +28,18 @@ by web clients.
 -   [Do nodes share a cache?](#share)
 -   [Does cache carry over in a failover situation?](#failover)
 
-#### File types {#filetypes}
+#### File types
 
 -   [What file types are supported for content caching?](#filetypes)
 -   [Can I exclude specific file types?](#nocache)
 
 ------------------------------------------------------------------------
 
-### Getting started {#gettingstarted}
+### Getting started
 
 <a href="" id="howenable"></a>
 
-#### How do I enable content caching? {#howdoienablecontentcaching}
+#### How do I enable content caching?
 
 Content caching can be enabled through our [Cloud Load Balancers
 API](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/index.html) or
@@ -54,7 +54,7 @@ Content Caching.
 
 <a href="" id="benefits"></a>
 
-#### What are the benefits of content caching? {#whatarethebenefitsofcontentcaching}
+#### What are the benefits of content caching?
 
 Content caching improves the performance of a web site by temporarily
 storing data that was recently accessed. While it&rsquo;s cached, requests for
@@ -66,7 +66,7 @@ on the web server.
 
 <a href="" id="workwell"></a>
 
-#### What kind of files work well with content caching? {#whatkindoffilesworkwellwithcontentcaching}
+#### What kind of files work well with content caching?
 
 Content caching works well for files that don&rsquo;t change or that rarely
 change. Most images and static content are good candidates for content
@@ -75,17 +75,17 @@ caching.
 You don&rsquo;t want to cache files that would change regularly or would be
 dynamically generated for different site visitors.
 
-### Caching details {#cachingdetails}
+### Caching details
 
 <a href="" id="maxsize"></a>
 
-#### Is there a maximum file size that can be cached? {#isthereamaximumfilesizethatcanbecached}
+#### Is there a maximum file size that can be cached?
 
 The maximum file size per cached item is 2 MB.
 
 <a href="" id="ttl"></a>
 
-#### How long is content cached? {#howlongiscontentcached}
+#### How long is content cached?
 
 Up to 10 minutes, depending on the load and amount of traffic being
 handled by the load balancer host.
@@ -96,30 +96,30 @@ from being uncached during a period of heavy traffic.
 
 <a href="" id="purge"></a>
 
-#### Can I choose how long files will be cached? {#canichoosehowlongfileswillbecached}
+#### Can I choose how long files will be cached?
 
 No, not at this time. You cannot purge a file from the cache manually,
 but it will be automatically removed when its cache time expires.
 
 <a href="" id="share"></a>
 
-#### Do nodes share a cache? {#donodesshareacache}
+#### Do nodes share a cache?
 
 No. Each node has its own cache, separate from other load-balanced
 nodes.
 
 <a href="" id="failover"></a>
 
-#### Does cache carry over in a failover situation? {#doescachecarryoverinafailoversituation}
+#### Does cache carry over in a failover situation?
 
 No. If a failover occurs the load balancer will retrieve a fresh copy of
 a file from the failover host.
 
-### File types {#filetypes}
+### File types
 
 <a href="" id="filetypes"></a>
 
-#### What file types are supported for content caching? {#whatfiletypesaresupportedforcontentcaching}
+#### What file types are supported for content caching?
 
 At this time the following file extensions are cached:
 
@@ -139,7 +139,7 @@ At this time the following file extensions are cached:
 
 <a href="" id="nocache"></a>
 
-#### Can I exclude specific file types? {#caniexcludespecificfiletypes}
+#### Can I exclude specific file types?
 
 Yes. Have your web server set the **Cache-Control** header to
 **no-cache** for requests for the file types you don&rsquo;t want cached.

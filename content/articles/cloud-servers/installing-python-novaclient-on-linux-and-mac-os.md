@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### Remote management {#remote-management .title .topictitle1}
+### Remote management
 
 The Cloud Control Panel isn't the only way to manage Cloud Servers. If
 you're running a script or program you can use the [Cloud Servers
@@ -27,7 +27,7 @@ considered software in development. While we don't directly support the
 nova client you can post in the comments below if you run into any
 difficulties.
 
-### Prerequisites {#prerequisites .title .topictitle1}
+### Prerequisites
 
 To run python-novaclient you'll need python 2.6 or later installed on
 your system (the nova client doesn't support python 3 at the time of
@@ -43,7 +43,7 @@ Linux distributions provide packages to make setuptools easy to install.
 To run the nova client you'll need to have access to your Rackspace
 Cloud account username and password.
 
-### setuptools {#setuptools .title .topictitle1}
+### setuptools
 
 The setuptools python package is required to run the installer for the
 nova client. If you're running Mac OS X the setuptools package should
@@ -54,20 +54,20 @@ Depending on your Linux distribution you can install setuptools through
 your package manager. Some install commands for various distributions
 are...
 
-#### Debian and Ubuntu {#debian-and-ubuntu .title .sectiontitle}
+#### Debian and Ubuntu
 
 ``` {.pre .codeblock}
 sudo apt-get update
 sudo apt-get install python-setuptools
 ```
 
-#### Fedora, CentOS, and RHEL {#fedora-centos-and-rhel .title .sectiontitle}
+#### Fedora, CentOS, and RHEL
 
 ``` {.pre .codeblock}
 sudo yum install python-setuptools
 ```
 
-#### Arch {#arch .title .sectiontitle}
+#### Arch
 
 ``` {.pre .codeblock}
 sudo pacman -S python2-setuptools
@@ -79,13 +79,13 @@ the "python2-setuptools" package will ensure that you have a copy of
 python 2.x installed without affecting your existing python 3
 installation.
 
-#### Gentoo {#gentoo .title .sectiontitle}
+#### Gentoo
 
 ``` {.pre .codeblock}
 sudo emerge setuptools
 ```
 
-#### Other distributions {#other-distributions .title .sectiontitle}
+#### Other distributions
 
 If you're not using one of the above, try searching your distribution's
 package manager for "setuptools" to find an installation package. If
@@ -97,7 +97,7 @@ directly:
 http://pypi.python.org/pypi/setuptools
 ```
 
-### pip {#pip .title .topictitle1}
+### pip
 
 Now that setuptools is installed we can use one of its programs to
 install the python package manager "pip".
@@ -106,7 +106,7 @@ install the python package manager "pip".
 sudo easy_install pip
 ```
 
-### Installing the package {#installing-the-package .title .topictitle1}
+### Installing the package
 
 And now we finally get to install the client. We'll use pip to download
 and install a metapackage that includes the latest version of
@@ -126,13 +126,13 @@ problems with the metapackage you can instead use pip to install the
 "python-novaclient" and "rackspace-auth-openstack" packages individually
 for basic operation.
 
-### Environment variables {#environment-variables .title .topictitle1}
+### Environment variables
 
 Now that the nova client is installed we just need to set up the
 environment variables that will allow it to connect to your Rackspace
 Cloud account.
 
-#### Setting the environment variables {#setting-the-environment-variables .title .topictitle2}
+#### Setting the environment variables
 
 Now you'll need to set some environment variables. Open your
 .bash\_profile file for editing:
@@ -147,7 +147,7 @@ key, and tenant name/account number.  You can find your account number
 displayed in the upper right of the [Cloud Control
 Panel](https://mycloud.rackspace.com) when you are logged in.
 
-#### USA, HKG, and AUS Datacenters Example {#usa-hkg-and-aus-datacenters-example .p}
+#### USA, HKG, and AUS Datacenters Example
 
 For these regions (<span>DFW, IAD, ORD, HKG, and SYD)</span><span>, use
 the following format: </span>
@@ -186,7 +186,7 @@ people can't read it:
 chmod 600 ~/.bash_profile
 ```
 
-#### Environment variable explanations {#environment-variable-explanations .title .topictitle2}
+#### Environment variable explanations
 
 The following table lists explanations for each environment variable and
 offers suggested values.
@@ -201,7 +201,7 @@ offers suggested values.
 | OS\_REGION\_NAME | datacenter region   | The code for the datacenter region containing the servers you want to manipulate. You can check your server's datacenter by checking its details screen in the Cloud Control Panel. The datacenter code is just the first three letters of the datacenter's identifier; e.g. `DFW, ORD, HKG, SYD, or LON.` You can override the region setting with the `--os-region-name` command-line option.   |
 | OS\_NO\_CACHE    | 0 or 1              | On newer versions of Ubuntu the nova client tries to use a system keyring that's usually not set up on servers. Setting this value to "1" will work around the issue. It shouldn't be necessary on other systems, but it shouldn't interfere with the client's operations either. You can override the no\_cache setting with the `--no-cache` command-line option.                               |
 
-#### Loading the environment variables {#loading-the-environment-variables .title .topictitle2}
+#### Loading the environment variables
 
 To apply these environment variables to your current shell, run:
 
@@ -209,7 +209,7 @@ To apply these environment variables to your current shell, run:
 source ~/.bash_profile
 ```
 
-### Testing the client {#testing-the-client .title .topictitle1}
+### Testing the client
 
 Now we'll run a quick query to make sure the nova client is ready to go.
 To see if you can talk to the API server, run:
@@ -221,7 +221,7 @@ nova image-list
 If all is well you'll get back a list of the images available to you
 when creating a server.
 
-#### Keychain password message {#keychain-password-message .p}
+#### Keychain password message
 
 If you're running the client on an Ubuntu system and it asks for a
 "keychain password" run the client with the  `--no-cache` option, as in:
@@ -233,7 +233,7 @@ nova --no-cache image-list
 To save some typing you can set the environment variable
 "OS\_NO\_CACHE=1" as in our sample config above.
 
-### Viewing the command list {#viewing-the-command-list .title .topictitle1}
+### Viewing the command list
 
 You can get a full list of commands by typing:
 
@@ -255,7 +255,7 @@ nova help network
 We'll talk about some of the more commonly-used commands in a later
 article.
 
-### Troubleshooting {#troubleshooting .title .topictitle1}
+### Troubleshooting
 
 The client's error reports aren't terribly comprehensive. Most
 troubleshooting will involve checking settings and trying again.
@@ -280,7 +280,7 @@ the region, for example, you can substitute it with the
 nova --os-region-name ORD image-list
 ```
 
-### Where to go next {#where-to-go-next .title .topictitle1}
+### Where to go next
 
 You should have the nova client set up where you can access it, and it
 should be able to talk to your Rackspace Cloud account. <span>To look at

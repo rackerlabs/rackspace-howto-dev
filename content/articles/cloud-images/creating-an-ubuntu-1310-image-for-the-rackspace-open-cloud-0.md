@@ -26,7 +26,7 @@ own custom image for the Rackspace cloud.
 -   A Rackspace Cloud account in the region where you want to import
     your image.
 
-### Tips and warnings {#CreatingUbuntu13.10ImageforRackspaceCloud-Tips&Warnings}
+### Tips and warnings
 
 -   The instructions in this article are provided to you as an example
     of how to prepare an image.  Read through them carefully before
@@ -71,7 +71,7 @@ own custom image for the Rackspace cloud.
         similar to the following entry:
         `network --onboot yes --device eth0 --bootproto static --ip 10.1.2.3 --netmask 255.255.255.0 --gateway 10.1.2.1 --nameserver 8.8.8.8 --ipv6 auto --hostname localhost`
 
-### Quick instructions {#CreatingUbuntu13.10ImageforRackspaceCloud-Instructions}
+### Quick instructions
 
 1.  Use the following one-liner to kickstart the VM and generate the VHD
     file.
@@ -98,7 +98,7 @@ own custom image for the Rackspace cloud.
 
         echo "Your prepared image is named '$VMVHD' and is located in the directory '$SR' "
 
-#### Detailed Instructions {#CreatingUbuntu13.10ImageforRackspaceCloud-DetailedInstructions}
+#### Detailed Instructions
 
 1.  Log in to XenServer as root.
 2.  Set the following variables:
@@ -334,7 +334,7 @@ own custom image for the Rackspace cloud.
         applicable law.
         root@ubuntu1310v1-vm1:~#
 
-### Related information {#CreatingUbuntu13.10ImageforRackspaceCloud-Related}
+### Related information
 
 -   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux>
 -   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Cloud-Init-for-Linux>

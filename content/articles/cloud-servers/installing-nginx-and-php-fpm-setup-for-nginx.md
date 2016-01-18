@@ -112,7 +112,7 @@ needs of your particular environment, we recommend that you use the
 configuration shown in the example because this configuration will work
 for most production systems.
 
-### fastcgi params {#fastcgi-params .p7}
+### fastcgi params
 
 Use the following parameters in your **fastcgi params** file:
 
@@ -143,7 +143,7 @@ fastcgi_param   SERVER_NAME     $server_name;
 fastcgi_param   REDIRECT_STATUS     200;
 ```
 
-### security {#security .p1}
+### security
 
 Although it is not required, adding a security file to
 your **/etc/nginx** directory will simplify the deployment of a virtual
@@ -211,7 +211,7 @@ Note how each directive is commented out. If you want to change your
 NGINX configuration for a high-performance mail proxy server, uncomment
 the preceding directives above by deleting every \#.
 
-Set up virtual hosts {#set-up-virtual-hosts .p8}
+Set up virtual hosts
 --------------------
 
 After you have completed your NGINX configuration, you can set up your
@@ -316,7 +316,7 @@ serve.
 Now that you have configured NGINX and created your virtual hosts, you
 are now ready to configure PHP-FPM.
 
-### Next steps {#next-steps .p2}
+### Next steps
 
 [Installing NGINX and PHP-FPM - Setup for
 PHP-FPM](/how-to/installing-nginx-and-php-fpm-setup-for-php-fpm)

@@ -31,7 +31,7 @@ Transfer) interface. There are also language-specific API&rsquo;s that utilize
 the ReST API but make it much easier for developers to integrate into
 their applications.
 
-#### Ideal uses for Cloud Files {#idealusesforcloudfiles}
+#### Ideal uses for Cloud Files
 
 There are a number of uses for the Cloud Files service. Cloud Files is
 an excellent storage solution for a number of scenarios and is well
@@ -45,7 +45,7 @@ suited for a number of applications such as:
 -   Storing data when predicting storage capacity is difficult
 -   Storing data for applications affordably
 
-#### Key Concepts {#keyconcepts}
+#### Key Concepts
 
 Cloud Files&trade; is not a &ldquo;file system&rdquo; in the traditional sense. You will
 not be able to map or mount virtual disk drives like you can with other
@@ -54,7 +54,7 @@ way of thinking when it comes to storage, please take a few moments
 to [review the
 concepts](/how-to/cloud-files-key-concepts).
 
-#### Using Cloud Files {#usingcloudfiles}
+#### Using Cloud Files
 
 There are two ways to use Cloud Files:
 
@@ -72,7 +72,7 @@ users can CDN-enable the Container by marking it &ldquo;public&rdquo;. Any Objec
 stored in a public, CDN-enabled Container are directly accessible over
 the Akamai&rsquo;s CDN.
 
-#### Programming Interfaces {#programminginterfaces}
+#### Programming Interfaces
 
 There are several programming interfaces for Cloud Files that will allow
 you to integrate the storage solution into your applications, or provide

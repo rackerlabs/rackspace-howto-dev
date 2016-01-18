@@ -51,7 +51,7 @@ highlighted values in the examples need to be modified.*
 
 
 
--   #### HOW TO ENABLE CONTAINMENT ON A DATABASE {#how-to-enable-containment-on-a-database .p1}
+-   #### HOW TO ENABLE CONTAINMENT ON A DATABASE
 
 USE \[master\]
 GO
@@ -60,11 +60,11 @@ style="background-color:#ffff00;">myDbHere</span>\] SET CONTAINMENT =
 PARTIAL WITH NO\_WAIT
 GO
 
-####   {#section .p1}
+####
 
-####   {#section-1 .p1}
+####
 
--   #### HOW TO DISABLE CONTAINMENT ON A DATABASE {#how-to-disable-containment-on-a-database .p1}
+-   #### HOW TO DISABLE CONTAINMENT ON A DATABASE
 
 USE \[master\]
 GO
@@ -74,7 +74,7 @@ NONE WITH NO\_WAIT
 GO
 
 
--   #### HOW TO CREATE A SQL USER WITH PASSWORD WHEN USING PARTIAL CONTAINMENT AND ADD TO DB OWNER ROLE {#how-to-create-a-sql-user-with-password-when-using-partial-containment-and-add-to-db-owner-role .p1}
+-   #### HOW TO CREATE A SQL USER WITH PASSWORD WHEN USING PARTIAL CONTAINMENT AND ADD TO DB OWNER ROLE
 
 USE \[<span style="background-color:#ffff00;">myDbHere</span>\]
 GO
@@ -89,9 +89,9 @@ ALTER ROLE \[db\_owner\] ADD MEMBER \[<span
 style="background-color:#ffff00;">sqlUserName</span>\]
 GO
 
-####   {#section-2 .p1}
+####
 
--   #### HOW TO DROP SQL USER INSIDE DATABASE  {#how-to-drop-sql-user-inside-database .p1}
+-   #### HOW TO DROP SQL USER INSIDE DATABASE
 
 ***Note:** Run this for deleting a SQL user used within containment. If
 you created additional logins from the control panel, please use the

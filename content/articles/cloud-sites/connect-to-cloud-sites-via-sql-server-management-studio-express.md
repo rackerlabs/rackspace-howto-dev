@@ -32,7 +32,7 @@ to connect.
 -   [Get started](#get_started)
 -   [Connect by using the external IP address](#connect)
 
-Prerequisite {#prereq}
+Prerequisite
 ------------
 
 Ensure that you have installed the latest version of SQL Server
@@ -41,7 +41,7 @@ last update of this article, SQL Server 2008 Management Studio Express
 was available at
 <a href="http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b" class="uri" class="external free" title="http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b">http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b</a>.
 
-Get started {#get_started}
+Get started
 -----------
 
 To make an external connection, you need the external IP address for
@@ -57,7 +57,7 @@ your database. You can get the IP address by following these steps:
 The IP address is listed as the **Database Management IP Address**. You
 need this address in the next section.
 
-Connect by using the external IP address {#connect}
+Connect by using the external IP address
 ----------------------------------------
 
 1.  Open Microsoft SQL Server Management Studio Express.

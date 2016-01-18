@@ -89,7 +89,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 ### Next steps
 
-### <span><a href="" id="serverImages"></a>1</span><span>.</span> Saving server images {#list-area-2}
+### <span><a href="" id="serverImages"></a>1</span><span>.</span> Saving server images
 
 <div class="six columns omega">
 
@@ -106,7 +106,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns alpha">
 
-### <span><a href="" id="remoteAccess"></a>2.</span> Remote access {#list-area-3}
+### <span><a href="" id="remoteAccess"></a>2.</span> Remote access
 
 -   [Remote Connection from Windows to a Linux
     Server](/how-to/connecting-to-linux-from-windows-by-using-putty)
@@ -119,7 +119,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns omega">
 
-### <span><a href="" id="serverSecurity"></a>3.</span> Cloud Server security {#list-area-4}
+### <span><a href="" id="serverSecurity"></a>3.</span> Cloud Server security
 
 -   [Basic Linux Cloud Server
     security](/how-to/basic-cloud-server-security)[](http://www.rackspace.com/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
@@ -132,7 +132,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns alpha">
 
-### <span><a href="" id="uploadContent"></a>4.</span> Uploading your content {#list-area-5}
+### <span><a href="" id="uploadContent"></a>4.</span> Uploading your content
 
 -   [CentOS - Installing
     vsftpd](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd)
@@ -143,7 +143,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns omega">
 
-### <span><a href="" id="dnsDomainMGMT"></a>5.</span> DNS & domain management {#list-area-6}
+### <span><a href="" id="dnsDomainMGMT"></a>5.</span> DNS & domain management
 
 -   [What Are Your
     Nameservers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)

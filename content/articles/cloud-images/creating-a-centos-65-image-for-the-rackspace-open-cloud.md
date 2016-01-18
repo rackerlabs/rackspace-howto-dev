@@ -18,7 +18,7 @@ prepare an image of a particular operating system.  After you've worked
 through it, you'll have a better idea of how to go about creating your
 own custom image for the Rackspace cloud.
 
-### Requirements {#CreatingCentOS6.5ImageforRackspaceCloud-Requirements}
+### Requirements
 
 -   XenServer Hypervisor already set up with a network available for the
     new VM.
@@ -28,7 +28,7 @@ own custom image for the Rackspace cloud.
 -   A Rackspace Cloud account in the region where you want to import
     your image.
 
-### Tips and warnings {#CreatingCentOS6.5ImageforRackspaceCloud-Tips&Warnings}
+### Tips and warnings
 
 -   The instructions in this article are provided to you as an example
     of how to prepare an image.  Read through them carefully before
@@ -73,7 +73,7 @@ own custom image for the Rackspace cloud.
         similar to the following entry:
         `network --onboot yes --device eth0 --bootproto static --ip 10.1.2.3 --netmask 255.255.255.0 --gateway 10.1.2.1 --nameserver 8.8.8.8 --ipv6 auto --hostname localhost`
 
-### Quick instructions {#CreatingCentOS6.5ImageforRackspaceCloud-Instructions}
+### Quick instructions
 
 1.  Use the following one-liner to kickstart the VM and generate the VHD
     file.
@@ -100,7 +100,7 @@ own custom image for the Rackspace cloud.
 
         echo "Your prepared image is named '$VMVHD' and is located in the directory '$SR' "
 
-#### Detailed instructions {#CreatingCentOS6.5ImageforRackspaceCloud-DetailedInstructions}
+#### Detailed instructions
 
 1.  Log in to XenServer as root.
 2.  Set the following variables:
@@ -321,7 +321,7 @@ own custom image for the Rackspace cloud.
         Last login: Tue Dec 31 21:22:07 2013 from of1-nat2.aus1.rackspace.com
         [root@centos65v1-vm1 ~]#
 
-### Related information {#CreatingCentOS6.5ImageforRackspaceCloud-Related}
+### Related information
 
 -   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Nova-Agent-for-Linux>
 -   <https://github.com/rackerlabs/boot.rackspace.com/wiki/Using-Cloud-Init-for-Linux>

@@ -29,7 +29,7 @@ virtual circuit with Rackspace.</span>
 
 <div>
 
-### <span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Establishing a RackConnect Global </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">(RCG) </span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">dedicated connection</span> {#magicdomid4}
+### <span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Establishing a RackConnect Global </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">(RCG) </span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">dedicated connection</span>
 
 <span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Only use
 this procedure if you are colocated in the sam</span><span
@@ -248,7 +248,7 @@ Rackspace, please see the section above/below </span>
     Exchange. </span></span></span></span></span>
 
 
-### <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Establishing a RackConnect Global connection</span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">if you use Microsoft Azure (via Microsoft ExpressRoute)</span> {#magicdomid46}
+### <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Establishing a RackConnect Global connection</span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">if you use Microsoft Azure (via Microsoft ExpressRoute)</span>
 
 <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">This
 procedure applies if you are Microsoft Azure customer requiring a

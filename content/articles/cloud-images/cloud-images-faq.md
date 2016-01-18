@@ -179,7 +179,7 @@ Glance is the OpenStack image registry and storage service. Cloud Images
 is the product name for the initiative where we expose the Glance image
 service endpoints in the Rackspace open cloud.
 
-#### What does Cloud Images expose? {#what-does-cloud-images-expose-exactly}
+#### What does Cloud Images expose?
 
 Cloud Images exposes the Rackspace open cloud deployment of the
 OpenStack Images v2 API powered by OpenStack Glance.
@@ -215,7 +215,7 @@ responses in XML.
 Image Sharing
 -------------
 
-#### Can I share or accept images in the Control Panel? {#can-I-share-or-accept-images-in-the-Control-Panel}
+#### Can I share or accept images in the Control Panel?
 
 Yes! Image sharing is now available in the Cloud Control Panel. Please
 see the following Knowledge Center article for details: [Sharing images
@@ -277,7 +277,7 @@ know the UUID of the image that was shared with you. Please consult the
 documention](http://docs.rackspace.com/images/api/v2/ci-devguide/content/PUT_updateImageMember_images__image_id__members__member_id__Image_Consumer_Calls.html)
 for instructions on how to accept an image.
 
-#### Can I share or accept an image in the Chicago (ORD) region? {#can-I-share-or-accept-an-image-in-the-Chicago-ORD-region}
+#### Can I share or accept an image in the Chicago (ORD) region?
 
 If you are an image producer who wants to share an image in the ORD
 region of the Rackspace cloud, please be aware that the provisioning of
@@ -415,12 +415,12 @@ all Glance installations. At the same time, since the infrastructures of
 OpenStack clouds can vary greatly, tasks can be customized for each
 particular cloud.
 
-#### <a href="" id="what-can-I-do-with-tasks"></a>What can I do with tasks? {#"what-can-i-do-with-tasks}
+#### <a href="" id="what-can-I-do-with-tasks"></a>What can I do with tasks?
 
 You can import and export images. See [Image Import and
 Export](#image-import-and-export) elsewhere in this FAQ.
 
-#### <a href="" id="what-RBAC-roles-can-create-tasks"></a>What RBAC roles can create tasks? {#"what-roles-can-create-tasks}
+#### <a href="" id="what-RBAC-roles-can-create-tasks"></a>What RBAC roles can create tasks?
 
 You must have an **Admin** role to create tasks.
 
@@ -520,7 +520,7 @@ licenses in order to use an image outside the Rackspace open cloud,
 depending on the software licenses involved. Please contact the
 appropriate software vendor if you have questions.
 
-#### How can I tell if an image can be exported? {#how-can-i-tell-if-an-image-is-exportable}
+#### How can I tell if an image can be exported?
 
 First, only the image owner can export an image. You cannot export a
 Rackspace public image and you cannot export an image that has been
@@ -535,7 +535,7 @@ You can tell for sure by looking at the image you want to export. It
 will have a property named `com.rackspace__1__options`. If the value is
 zero, you may export the image.
 
-#### Can you give me step-by-step instructions for exporting an image? {#export-step-by-step}
+#### Can you give me step-by-step instructions for exporting an image?
 
 You can find a detailed example of exporting an image in the first half
 of the article [Transferring images between regions of the Rackspace
@@ -570,7 +570,7 @@ Files object whose name follows the format `{image_uuid}.vhd`. (We do
 not, however, suggest that you attempt to download an object the size of
 a typical VM image through the Cloud Control Panel.)
 
-#### Can you recommend a way for me to download my exported image from Cloud Files? {#how-to-download}
+#### Can you recommend a way for me to download my exported image from Cloud Files?
 
 We recommend using the **Swiftly** Cloud Files client. Please
 read [Use Swiftly to Download an Exported
@@ -589,13 +589,13 @@ allow you to move images directly from region to region without having
 to perform the intermediate Cloud Files transfer and image import in
 each region.
 
-#### How do I transfer an image to another region? {#how-can-i-transfer-an-image-to-another-region}
+#### How do I transfer an image to another region?
 
 See the Knowledge Center article [Transferring Images Between Regions of
 the Rackspace Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
-#### Can I use image export and import to move between Infrastructure and Managed accounts? {#can-i-end-run-managed-service}
+#### Can I use image export and import to move between Infrastructure and Managed accounts?
 
 Yes, it is possible to now move images between Infrastructure and
 Managed accounts by following the steps in the article [Transferring
@@ -615,20 +615,20 @@ See the Knowledge Center article [Preparing an Image for Import into the
 Rackspace Open
 Cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
-#### Can you recommend a way to upload my image to Cloud Files so it can be imported? {#how-to-upload}
+#### Can you recommend a way to upload my image to Cloud Files so it can be imported?
 
 We recommend using the **swiftly** Cloud Files client. Please see this
 Knowledge Center article: [Using Swiftly to upload an image to be
 imported](/how-to/use-swiftly-to-upload-an-image).
 
-#### Can you give me step-by-step instructions for importing an image? {#import-step-by-step}
+#### Can you give me step-by-step instructions for importing an image?
 
 You can find a detailed example of importing an image in the second half
 of the article [Transferring images between regions of the Rackspace
 Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
-#### What's the deal with the checksum on my imported (or exported) image? {#whats-the-deal-with-checksums}
+#### What's the deal with the checksum on my imported (or exported) image?
 
 Customers who are really, really careful with their data may have this
 question: When I look at my image in the Images (or Compute) API, I see
@@ -658,7 +658,7 @@ immediately export the imported image, the checksum of the VHD that's
 exported will be different (although the "content" of the VHD, i.e., the
 non-header and non-footer part, will be identical).
 
-#### I want to boot a server from my imported image, but I can't find the image in the Cloud Control Panel. Where is it? {#boot-from-imported-image}
+#### I want to boot a server from my imported image, but I can't find the image in the Cloud Control Panel. Where is it?
 
 On the Create Server page in the Control Panel, you see a list of images
 you can choose from. The Cloud Control Panel sorts your images according
@@ -669,7 +669,7 @@ imported image is listed under the **Deleted Servers** category.
 
 ------------------------------------------------------------------------
 
-Image Metadata and Property Protection {#image-metadata-andproperty-protection}
+Image Metadata and Property Protection
 --------------------------------------
 
 #### What's the difference between "image metadata" and "image properties"?
@@ -746,7 +746,7 @@ ensure host servers are functioning properly and that the API
 availability meets the SLA. We will also provide advice on sharing,
 importing, and exporting images.
 
-#### I'm a managed cloud customer&mdash;do I still only get infrastructure level support for servers built from non-standard images? {#managed-support-for-non-standard}
+#### I'm a managed cloud customer&mdash;do I still only get infrastructure level support for servers built from non-standard images?
 
 Our managed cloud support team wants to create amazing customer
 outcomes, so when you build a server from a non-standard image, your

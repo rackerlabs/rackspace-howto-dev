@@ -29,7 +29,7 @@ Read the following sections to learn how to bin-deploy an assembly:
     file](#Loading_the_Assembly_in_the_Webconfig)
 -   [Use the assembly](#Using_the_Assembly)
 
-Prerequisites {#Prerequisites}
+Prerequisites
 -------------
 
 -   You must have an existing Cloud Sites website. If you do not have
@@ -48,7 +48,7 @@ Prerequisites {#Prerequisites}
         Support to confirm whether the requirements are met.
     -   Any assembly requiring full trust is not supported at this time.
 
-Get started {#Getting_Started}
+Get started
 -----------
 
 To get started, you must obtain the assembly that you want to bin
@@ -57,7 +57,7 @@ deploy. As an example, the instructions in this article bin-deploy
 a URL rewriter for ASP.NET applications that do not have the URL Rewrite
 Module installed.
 
-Obtain the assembly {#Obtaining_UrlRewriterNET}
+Obtain the assembly
 -------------------
 
 The following steps use UrlRewriter.NET. Substitute with the assembly
@@ -76,7 +76,7 @@ that you want to deploy.
 5.  Save the file to your computer.
 6.  Extract the **Intelligencia.UrlRewriter.dll** file.
 
-Upload the assembly {#Uploading_the_Assembly}
+Upload the assembly
 -------------------
 
 To use the assembly from your website code, the module must be located
@@ -89,7 +89,7 @@ to the following directory (**www.example.com** is your website name):
 
     /www.example.com/web/content/Bin
 
-Load the assembly in the web.config file {#Loading_the_Assembly_in_the_Webconfig}
+Load the assembly in the web.config file
 ----------------------------------------
 
 Some assemblies require different definitions in the **web.config** file
@@ -126,7 +126,7 @@ following example **web.config** configuration:
       </system.webServer>
     </configuration>
 
-Use the assembly {#Using_the_Assembly}
+Use the assembly
 ----------------
 
 Because of the vast amount of assemblies that can be bin-deployed, it's

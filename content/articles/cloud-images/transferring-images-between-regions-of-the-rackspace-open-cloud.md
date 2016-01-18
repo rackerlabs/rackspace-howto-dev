@@ -42,7 +42,7 @@ Before we get into the details, consider the following information:
     it's not available in the Cloud Control Panel yet.
 -   Cloud Images uses only JSON; it does not use XML.
 
- Working in the source region {#export}
+ Working in the source region
 -----------------------------
 
 1.  Create an image of the source server.
@@ -180,7 +180,7 @@ experience.  Feel free to record your experience with any of these tools
 in the comments section of this article so other users can benefit from
 your experience.
 
-Working in the target region {#import}
+Working in the target region
 ----------------------------
 
 This example assumes that the object

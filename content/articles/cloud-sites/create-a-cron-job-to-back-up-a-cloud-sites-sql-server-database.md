@@ -29,7 +29,7 @@ performing the following steps:
 **Note:** The scripts in this tutorial were created by one of our forum
 users. If you need further assistance, contact your developer.
 
-Create the folder {#createfolder}
+Create the folder
 -----------------
 
 First, you need to create a folder to store the backup in your FTP
@@ -52,7 +52,7 @@ application.
 **IMPORTANT:** For this specific example to work, the permissions on the
 **/www.domain.com** and **/web** folders must be set to **751**.
 
-Create the stored procedure {#createsp}
+Create the stored procedure
 ---------------------------
 
 You will also need to create a stored procedure that performs the backup
@@ -77,7 +77,7 @@ example, the stored procedure is named `FullBackup`.
 
     END
 
-Create the web page {#createpage}
+Create the web page
 -------------------
 
 Next, you create a web page that has code to execute the stored
@@ -154,7 +154,7 @@ path and SQL connection string. The contents of the file are as follows:
     </body>
     </html>
 
-Schedule the cron job {#createcron}
+Schedule the cron job
 ---------------------
 
 Schedule a cron job to call the web page.

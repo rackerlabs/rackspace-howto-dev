@@ -304,7 +304,7 @@ GET /stacks/{stack\_name}/{stack\_id}/template
 
 Gets a template for a specified stack.
 
-### BUILD INFORMATION {#build-information .p1}
+### BUILD INFORMATION
 
 Get Build Info
 

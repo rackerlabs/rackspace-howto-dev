@@ -22,7 +22,7 @@ quickly.</span>
 for rewrite help for sites that need to be adapted to account for the
 single-technology requirement.</span>
 
-### SCENARIO 1 {#scenario-1 .MsoNormal}
+### SCENARIO 1
 
 Running a single CMS or application on your site, but this application
 is running on an inappropriate <span
@@ -40,7 +40,7 @@ Please ensure that you are only running a single application on this
 site and ensure that the application is running on the appropriate
 technology.
 
-### SCENARIO 2 {#scenario-2 .MsoNormal}
+### SCENARIO 2
 
 Running more than one, disparate CMS/Application on your site, and these
 applications have different default technologies, one that is an IIS and
@@ -48,7 +48,7 @@ one that is PHP/Perl/Python.
 
 **Solutions:**
 
-### IIS files running on PHP {#iis-files-running-on-php .MsoNormal}
+### IIS files running on PHP
 
 If you are currently running IIS files (<span
 id="GRmark_51fbe8c60526f0395c362513cf23c7ee059f0038_.:0"
@@ -70,7 +70,7 @@ new site. An example is given below:
 RewriteRule ^(.+)\.asp$ http://www.iisexample.com/$1.asp [R=301,NC]
 ```
 
-### PHP files running on IIS {#php-files-running-on-iis .MsoNormal}
+### PHP files running on IIS
 
 If you are currently running PHP files (<span
 id="GRmark_d46f4a1fe06d41e83cf919bac3ba0877a59b6138_.:0"
@@ -104,7 +104,7 @@ new site. An example is given below:
 </configuration>
 ```
 
-### PHP based blog running on IIS {#php-based-blog-running-on-iis .MsoNormal}
+### PHP based blog running on IIS
 
 If you are currently running a PHP based blog on your IIS based website
 (Drupal, Magento, <span

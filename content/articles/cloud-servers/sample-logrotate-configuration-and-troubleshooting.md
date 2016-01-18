@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### Applying knowledge {#applying_knowledge}
+### Applying knowledge
 
 In the [previous
 article](/how-to/understanding-logrotate-utility "Understanding logrotate - part 1")
@@ -20,7 +20,7 @@ rotation solution for a custom virtual host or two (or three, or four,
 etc.). We&rsquo;ll also look at some options for testing and troubleshooting
 logrotate.
 
-### Tying it all together: virtual host logs {#tying_it_all_together_virtual_host_logs}
+### Tying it all together: virtual host logs
 
 To show how you can use logrotate for your own applications, let&rsquo;s look
 at an example that will come in handy for a lot of people: rotating logs
@@ -42,7 +42,7 @@ files to handle the needs of your different domains. We&rsquo;ll also specify
 several items that are probably already set in your main config, just so
 we cover all the bases.
 
-#### The files {#the_files}
+#### The files
 
 We&rsquo;ll say that we have two virtual domains, domain1.com and domain2.com,
 and that the log files for each are in /home/demo/public\_html/(domain
@@ -72,7 +72,7 @@ it if you prefer a longer interval):
 
     daily
 
-#### Size (optional) {#size_optional}
+#### Size (optional)
 
 The size setting specifies a maximum size for your logs.  When the log
 reaches that size a log rotation is triggered.
@@ -113,7 +113,7 @@ And finally, we close the config block with a curly bracket:
 
     }
 
-#### The whole shebang {#the_whole_shebang}
+#### The whole shebang
 
 Once we bring it all together our config file will look like this:
 
@@ -138,7 +138,7 @@ If you don&rsquo;t get any errors back you should be okay. But if you want to
 be absolutely certain you can run through some of the tests we would use
 when we suspect something isn&rsquo;t working right.
 
-### Testing logrotate {#testing_logrotate}
+### Testing logrotate
 
 If you suspect logrotate is having some trouble, or you just want to
 make sure a new config you&rsquo;ve put in place will work, there are some
@@ -186,7 +186,7 @@ already taken). In that circumstance you may need to rename the most
 recent archive (for each log file in a given config block) before you
 can force a log rotation.
 
-#### Combining flags {#combining_flags}
+#### Combining flags
 
 The testing flags can be used together quite effectively. To have
 logrotate tell you what it would do if you made it rotate everything,
@@ -209,7 +209,7 @@ catch any obvious problems. You&rsquo;ll also want to make sure that all your
 services are still running okay (that there was nothing wrong with the
 postrotate scripts), and that all the logs actually did get rotated.
 
-### How logrotate remembers {#how_logrotate_remembers}
+### How logrotate remembers
 
 If you find that a log isn&rsquo;t rotating even though it&rsquo;s old enough that
 it should, a simple way to fix the problem is to manually run logrotate

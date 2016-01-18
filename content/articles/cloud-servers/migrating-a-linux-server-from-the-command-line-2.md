@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: full_html
 ---
 
-### Other scenarios {#otherscenarios}
+### Other scenarios
 
 It&rsquo;s not always practical to perform a live sync the way we outlined it,
 or you may want to migrate just a couple applications instead of the
@@ -23,7 +23,7 @@ from running:
 
     which rsync
 
-### Syncing with the server inactive {#syncingwiththeserverinactive}
+### Syncing with the server inactive
 
 A live sync has the advantage of minimizing downtime during the
 migration but it can require multiple runs of rsync to complete if you
@@ -47,7 +47,7 @@ virtual rescue disk, allowing you to mount your server&rsquo;s file system
 while the system isn&rsquo;t running. For Rackspace Cloud Servers it&rsquo;s called
 &ldquo;rescue mode&rdquo;.
 
-#### Rescue mode {#rescuemode}
+#### Rescue mode
 
 For a Cloud Server you can put the instance into rescue mode via
 the [Cloud Control
@@ -82,7 +82,7 @@ rsync command again to pick up where things left off. If you still run
 into trouble with the time limit talk to our support staff and they can
 assist you.
 
-### Rsyncing from a mount point {#rsyncingfromamountpoint}
+### Rsyncing from a mount point
 
 After booting your server into a rescue mode and mounting your server&rsquo;s
 file system to a mount point like &ldquo;/mnt/origin&rdquo; you will need to adjust
@@ -141,7 +141,7 @@ As a bonus, with that trailing slash on the directories rsync will treat
 the exclude file list as relative to the source directory. That&rsquo;s why we
 don&rsquo;t need to change the exclude file to account for the mount point.
 
-#### Both servers in rescue mode {#bothserversinrescuemode}
+#### Both servers in rescue mode
 
 If you&rsquo;re being extra careful and have both the origin and the
 destination in a rescue mode you would change the destination directory
@@ -153,7 +153,7 @@ command would look like:
 Once the final sync is done you can boot up the destination server and
 run your tests.
 
-### Per-package approaches {#per-packageapproaches}
+### Per-package approaches
 
 It may be impractical to migrate your entire server, or you may only
 have a couple services you need to bring over. In that case you can
@@ -174,7 +174,7 @@ need to be migrated.
 
 A couple examples follow to illustrate the approach.
 
-#### Web servers {#webservers}
+#### Web servers
 
 If you&rsquo;re migrating a web server you&rsquo;ll need to make sure you bring over
 your configuration files (including virtual host definitions) as well as

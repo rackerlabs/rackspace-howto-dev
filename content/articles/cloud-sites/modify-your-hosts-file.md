@@ -37,7 +37,7 @@ especificado. Ap&oacute;s os testes, estas entradas devem ser removidas.
 -   [Mac OS X 10.0 through 10.1.5](#Mac_OS_X_100_through_1015)
 -   [Mac OS X 10.6 through 10.8](#macosx10.6)
 
-Windows 8, Windows 7, e Windows Vista {#Windows_Vista}
+Windows 8, Windows 7, e Windows Vista
 -------------------------------------
 
 Windows 8, Windows 7 e Windows Vista usam o Controle de Conta de Usu&aacute;rio
@@ -70,7 +70,7 @@ permiss&atilde;o".
     Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias no arquivo hosts.
     Clique Arquivo -&gt; Salvar para salvar as altera&ccedil;&otilde;es.
 
-Windows NT, Windows 2000, and Windows XP {#Windows_NT2000XP}
+Windows NT, Windows 2000, and Windows XP
 ----------------------------------------
 
 1.  Clique Iniciar -&gt; Todos os Programas&gt; Acess&oacute;rios -&gt; Bloco
@@ -82,7 +82,7 @@ Windows NT, Windows 2000, and Windows XP {#Windows_NT2000XP}
         Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias  no arquivo hosts.
         Clique Arquivo -&gt; Salvar para salvar as altera&ccedil;&otilde;es.
 
-Linux {#Linux}
+Linux
 -----
 
 1\. Abra uma janela de terminal.
@@ -100,7 +100,7 @@ sudo nano / etc / hosts
 quando perguntado se voc&ecirc; deseja salvar as altera&ccedil;&otilde;es.
 
 
-Mac OS X 10.0 through 10.1.5 {#Mac_OS_X_100_through_1015}
+Mac OS X 10.0 through 10.1.5
 ----------------------------
 
 1.  1\. Abra **/Applications/Utilities/NetInfo Manager**..
@@ -142,7 +142,7 @@ Mac OS X 10.0 through 10.1.5 {#Mac_OS_X_100_through_1015}
     reiniciar o computador.
 
 
-Mac OS X 10.6 - 10.8 {#macosx10.6}
+Mac OS X 10.6 - 10.8
 --------------------
 
 1.  1\. Abra Aplicativos&gt; Utilit&aacute;rios&gt; Terminal.

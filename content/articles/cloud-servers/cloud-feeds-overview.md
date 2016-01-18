@@ -21,7 +21,7 @@ provides the following high-level information about Cloud Feeds:
 -   [Finding more information](#moreinfo)
 -   [Getting help and providing feedback](#help)
 
-What is Cloud Feeds? {#whatis}
+What is Cloud Feeds?
 --------------------
 
 Modern complex computing environments generate large amounts of data
@@ -51,7 +51,7 @@ addition, because Cloud Feeds uses the Atom Publishing Protocol
 access notifications from multiple Rackspace Cloud services by using a
 single protocol and format.
 
-How to grant users access to Cloud Feeds {#howtogrant}
+How to grant users access to Cloud Feeds
 ----------------------------------------
 
 No registration is required to access Cloud Feeds; it is already
@@ -74,7 +74,7 @@ following steps:
 [Overview: Role Based Access Control
 (RBAC)](/how-to/overview-role-based-access-control-rbac).
 
-How to access Cloud Feeds {#howtoaccess}
+How to access Cloud Feeds
 -------------------------
 
 Cloud Feeds events are accessed via the simple Atom Publishing Protocol,
@@ -101,7 +101,7 @@ retrieve only events that match a certain criteria. The results are
 returned in Atom Syndication Format, which includes information to help
 you navigate the list of events in the feed.
 
-Finding more information {#moreinfo}
+Finding more information
 ------------------------
 
 If you want more information, such as a list of URLs, information about
@@ -113,7 +113,7 @@ and the *[Cloud Feeds Developer
 Guide](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/index.html)*
 at [docs.rackspace.com](http://docs.rackspace.com/).
 
-Getting help and providing feedback {#help}
+Getting help and providing feedback
 -----------------------------------
 
 If you have questions about Cloud Feeds, see the [Cloud Feeds

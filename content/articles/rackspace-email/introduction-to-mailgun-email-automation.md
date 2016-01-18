@@ -52,7 +52,7 @@ resources available in the [Further reading](#further-reading)section.
 -   [Further Reading](#further-reading)
 
 ###
-**[]()Sending emails via SMTP** {#sending-emails-via-smtp .p3}
+**[]()Sending emails via SMTP**
 
 Integration with Mailgun programatically is available from languages
 with an SMTP library. Let's take a look at a trivial Python script that
@@ -80,7 +80,7 @@ recipient, and email body data. We end the script calling the
 Note: You will use the username and password from the [Mailgun control
 panel](https://mailgun.com/sessions/new).
 
-### **[]()Sending emails via HTTP** {#sending-emails-via-http .p3}
+### **[]()Sending emails via HTTP**
 
 SMTP is the most common protocol used when sending email. It is used by
 most email applications. However, SMTP may not be the first choice for
@@ -108,7 +108,7 @@ and more. See the [API
 Documentation](http://documentation.mailgun.com/user_manual.html) for
 more information.
 
-### **[]()Receiving messages via HTTP** {#receiving-messages-via-http .p3}
+### **[]()Receiving messages via HTTP**
 
 Mailgun is able to receive email via rules you define. This is performed
 by generating routes within the Mailgun control panel or through the
@@ -125,7 +125,7 @@ HTTP request, for sending the email to your application. See [Sending
 Documentation](http://documentation.mailgun.com/user_manual.html#receiving-messages)
 for more information.
 
-### []()**Further Reading** {#further-reading .p6}
+### []()**Further Reading**
 
 This article included a few possibilities available with Mailgun. The
 mailgun website provides extensive API Reference material for multiple

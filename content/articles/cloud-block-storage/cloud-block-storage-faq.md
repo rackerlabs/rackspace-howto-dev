@@ -304,7 +304,7 @@ volumes before deleting the server.
 
 ^[back\\ to\\ top](#top)^
 
-###   {#section align="center"}
+###
 
 ------------------------------------------------------------------------
 

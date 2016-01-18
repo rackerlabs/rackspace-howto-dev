@@ -19,7 +19,7 @@ mechanisms.
 -   [How to create a tag](#howto)
 -   [Tips for creating tags](#tips)
 
-How to create a tag {#howto}
+How to create a tag
 -------------------
 
 1.  In the Cloud Servers list, click the gear icon next to the server
@@ -36,7 +36,7 @@ How to create a tag {#howto}
 To find tagged instances, select the check boxes next to the tags in the
 **Tag** on the left side of the server&rsquo;s list.
 
-Tips for creating tags {#tips}
+Tips for creating tags
 ----------------------
 
 A few simple tags can help you identify a server&rsquo;s purpose at a glance.
@@ -67,13 +67,13 @@ systems, *master* and *slave* databases, or DNS servers. Tagging servers
 according to their role in the environment can help when you plan
 maintenance.
 
-### Operating system {#operatingsystem}
+### Operating system
 
 Tags can let you quickly see which servers are running Linux or Windows,
 or what Linux distributions are being used on each server (like Ubuntu
 or CentOS).
 
-### And more {#andmore}
+### And more
 
 These are some basic ideas for organizing servers with tags, but because
 tags are completely flexible, this is definitely not a comprehensive
@@ -82,7 +82,7 @@ among team members, to label servers that have only internal network
 interfaces active, and to track any other qualities that distinguish
 your servers from one another.
 
-Related information {#relatedinformation}
+Related information
 -------------------
 
 [Learn more about Cloud

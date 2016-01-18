@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### Previous section {#previous-section .p1}
+### Previous section
 
 [Installing NGINX and PHP-FPM running on UNIX File
 Sockets](/how-to/installing-nginx-and-php-fpm-running-on-unix-file-sockets)
@@ -69,7 +69,7 @@ Once you have finished updating, this set will allow you to restart the
 server. This ensures that the updates have been installed and
 initialized completely.
 
-### Next steps {#next-steps .p2}
+### Next steps
 
 [Installing NGINX and PHP-FPM - The Fun
 Begins](/how-to/installing-nginx-and-php-fpm-the-fun-begins)

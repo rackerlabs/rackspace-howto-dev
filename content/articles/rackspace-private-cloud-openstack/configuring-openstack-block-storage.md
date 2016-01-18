@@ -53,7 +53,7 @@ Rackspace Private Cloud installs `cinder-api`{.filename} and
 will need to add additional `cinder-volume`{.filename} nodes to use
 OpenStack Block Storage on your cluster.
 
-### []()Node Prerequisites {#node-prerequisites .title}
+### []()Node Prerequisites
 
 Rackspace recommends that the physical server that will become a Cinder
 volume node or a Cinder all-in-one node meet the following criteria.
@@ -77,7 +77,7 @@ Your environment must meet the following criteria.
 -   You DO NOT already have a node running nova-volumes in the
     OpenStack cluster.
 
-### []()Volume Storage Installation {#volume-storage-installation .title}
+### []()Volume Storage Installation
 
 1.  Install Ubuntu 12.04 on the server that will become the Cinder
     volume node.
@@ -338,7 +338,7 @@ the compute node on which the instance resides.
 `nova-compute`{.filename} on the compute node will then present the
 volume as a disk to the instance.
 
-### []()Using Cinder with EMC {#using-cinder-with-emc .title}
+### []()Using Cinder with EMC
 
 Additional information about using Cinder with EMC can be found at the
 <a href="https://wiki.openstack.org/wiki/Cinder/EMCVolumeDriver" class="link">OpenStack wiki page for Cinder/EMCVolumeDriver</a>.
@@ -371,7 +371,7 @@ node["cinder"]["storage"]["emc"]["EcomPassword"] = "<userPassword>"
 These will then be used to populate `/etc/cinder.conf`{.filename}
 appropriately, and provisioning can proceed.
 
-### []()Using Cinder with NetApp {#using-cinder-with-netapp .title}
+### []()Using Cinder with NetApp
 
 Rackspace has tested NetApp with NFS with OpenStack Grizzly. NetApp with
 iscsi exists, but has not been tested yet. For information about the
@@ -409,7 +409,7 @@ NetApp administrator.*
 These will then be used to populate `/etc/cinder.conf`{.filename}
 appropriately, and provisioning can proceed.
 
-### []()Using Cinder with SolidFire {#using-cinder-with-solidfire .title}
+### []()Using Cinder with SolidFire
 
 To configure Cinder to use SolidFire, you must set the following
 variables in the override\_attributes section of your Chef environment:

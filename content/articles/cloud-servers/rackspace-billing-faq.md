@@ -97,7 +97,7 @@ to help you organize your billing information.
 
 ^[back\\ to\\ top](#top)^
 
-### How do I view current service usage? {#i-dont-agree-with-my-bill.-how-can-i-view-usage}
+### How do I view current service usage?
 
 If you have existing services and want to view your current usage, you
 can perform the following steps:
@@ -142,7 +142,7 @@ Follow these steps to change your billing address:
 Charges
 -------
 
-### What are the separate charges and minimums that are applied to Cloud Servers pricing? {#cs-separate-charges}
+### What are the separate charges and minimums that are applied to Cloud Servers pricing?
 
 The listed prices for Cloud Servers include both *raw
 infrastructure* and *managed service* charges. The price is split to
@@ -166,7 +166,7 @@ are added to your bill.
 
 ^[back\\ to\\ top](#top)^
 
-### Why am I being billed for a service when I'm not using it? {#why-am-i-still-being-billed-i-never-used-the-services.}
+### Why am I being billed for a service when I'm not using it?
 
 Billing begins the moment that you provision a service or server on your
 account. You are charged for servers and services as long as their
@@ -181,7 +181,7 @@ or Rackspace support for Azure, create a ticket for our billing team.
 
 ^[back\\ to\\ top](#top)^
 
-### How do I delete or cancel my services? {#i-am-still-getting-billed.-how-do-i-delete-or-cancel-my-services}
+### How do I delete or cancel my services?
 
 Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and
 review all services to ensure that all your data is backed up outside of
@@ -211,7 +211,7 @@ the need to register a new account.
 
 ^[back\\ to\\ top](#top)^
 
-### I don&rsquo;t agree with my bill.  How can I dispute a charge? {#i-dont-agree-with-my-bill.-how-can-i-get-a-credit}
+### I don&rsquo;t agree with my bill.  How can I dispute a charge?
 
 You can create a ticket via the [Cloud Control
 Panel](https://mycloud.rackspace.com/) with the details of your dispute

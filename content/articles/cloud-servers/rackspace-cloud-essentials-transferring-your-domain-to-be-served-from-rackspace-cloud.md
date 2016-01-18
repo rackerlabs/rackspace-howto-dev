@@ -38,7 +38,7 @@ basic questions about transferring your domain to Rackspace.
 
 []()
 
-### We are not a Domain Registrar {#we-are-not-a-domain-registrar .p1}
+### We are not a Domain Registrar
 
 Rackspace IS a provider of world-class Cloud Hosting services on demand
 backed by our commitment to Fanatical Support.  What we are NOT is a
@@ -51,7 +51,7 @@ service](/how-to/getting-started-with-cloud-sites-registering-andor-transferring
 have already registered it at a domain registrar, and then transfer it
 to Rackspace.[]()
 
-### What is a Name Server? {#what-is-a-name-server .p1}
+### What is a Name Server?
 
 In the Domain Name (DNS) System, the nameserver is part of the process
 that translates a human readable domain (like rackspace.com) into the
@@ -66,7 +66,7 @@ Cloud Server, you will need to update the nameservers so that the DNS
 system knows where to locate the new IP address that is serving your
 domain.[]()
 
-### What are Rackspace's Name Servers? {#what-are-rackspaces-name-servers .p1}
+### What are Rackspace's Name Servers?
 
 For Rackspace Cloud services, the nameservers you need to use are:
 
@@ -81,7 +81,7 @@ Please continue to use these Name Servers for your dedicated services,
 but you will use the 'stabletransit' Name Servers above for any domain
 hosted from a Rackspace Cloud Server.[]()
 
-### How Do I Transfer the Domain? {#how-do-i-transfer-the-domain .p1}
+### How Do I Transfer the Domain?
 
 When you first register a domain, you are usually assigned the
 nameservers belonging to the domain registrar, unless you specify
@@ -98,7 +98,7 @@ Panel.  You can follow the instructions in the next article to learn how
 to [create DNS records through the
 ControlPanel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).[]()
 
-### How Long Does DNS Propagation Take? {#how-long-does-dns-propagation-take .p1}
+### How Long Does DNS Propagation Take?
 
 DNS propagation is the time it takes for the updated information that
 you provided to your registrar (the new name servers for your domain) to
@@ -106,7 +106,7 @@ be communicated through the hierarchical DNS system.  In general, DNS
 propagation of new name server information should take no longer than 24
 - 48 hours.[]()
 
-### How Do I Know My Domain is Set Up Correctly? {#how-do-i-know-my-domain-is-set-up-correctly .p1}
+### How Do I Know My Domain is Set Up Correctly?
 
 There are a number of ways you can test your DNS.  You can use the 'dig'
 command from a Linux machine to view the DNS records associated with
@@ -134,7 +134,7 @@ to take a closer look at the configuration of your web applications.
 Control
 Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
-### Next steps {#next-steps .p1}
+### Next steps
 
 [Managing
 DNS](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)

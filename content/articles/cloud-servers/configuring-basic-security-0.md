@@ -36,7 +36,7 @@ following tasks to enhance security of the server:
 necesssary if you're using a different distribution. If necessary, refer
 to your operating system documentation.
 
-<span class="mw-headline">Log in to the server</span> {#LogIntoYourServer}
+<span class="mw-headline">Log in to the server</span>
 -----------------------------------------------------
 
 <span class="mw-headline">As soon as you have your server's IP address
@@ -59,7 +59,7 @@ If your local computer is running an operating system other than Linux
 or Mac OS X, the location of the `known_hosts` file will differ. Refer
 to your OS documention to learn the location of this file.
 
-<span class="mw-headline">Change the root password</span> {#ChangeTheRootPassword}
+<span class="mw-headline">Change the root password</span>
 ---------------------------------------------------------
 
 After logging in to your server, change the root password by issuing the
@@ -67,7 +67,7 @@ following command:
 
     passwd
 
-Add an Admin User {#AddAnAdminUser}
+Add an Admin User
 -----------------
 
 **Note**: If you are setting up additional SSH users for an OnMetal
@@ -112,7 +112,7 @@ for applicable OnMetal steps.
 The new behavior takes effect after you save the file and open nano
 again.
 
-<span class="mw-headline">Set up public and private keys (SSH keygen)</span> {#SetUpPublicAndPrivateKeys}
+<span class="mw-headline">Set up public and private keys (SSH keygen)</span>
 ----------------------------------------------------------------------------
 
 One effective way of securing SSH access to your cloud server is to use
@@ -179,7 +179,7 @@ You have now successfully created the key on your local computer, copied
 the public key to your server, and set the correct permissions for the
 key.
 
-<span class="mw-headline">Modify the SSH configuration</span> {#ModifyTheSSHConfiguration}
+<span class="mw-headline">Modify the SSH configuration</span>
 -------------------------------------------------------------
 
 Keeping the SSH service on the default port of 22 makes it an easy
@@ -217,7 +217,7 @@ iptables.
 
 **NOTE: Do not restart SSH yet.**
 
-<span class="mw-headline">Set up a private firewall by using iptables</span> {#SetUpAPrivateFirewall}
+<span class="mw-headline">Set up a private firewall by using iptables</span>
 ----------------------------------------------------------------------------
 
 The utility called iptables is the default firewall for Linux systems.
@@ -306,7 +306,7 @@ the following commands.
 
         chmod +x /etc/network/if-pre-up.d/iptables
 
-### Set up iptables in Red Hat {#SetUpAPrivateFirewallUsingIPtables}
+### Set up iptables in Red Hat
 
 If you are using a Red Hat distribution, iptables works a little
 differently than it does in an Ubuntu distribution. Using the following

@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### Prerequisites {#prerequisites .p1}
+### Prerequisites
 
 [Installing NGINX and PHP-FPM -
 Preface](/how-to/installing-nginx-and-php-fpm-preface)

@@ -36,7 +36,7 @@ service:
 -   [Using Cloud Files](#Using)
 -   [Getting started](#Getting)
 
-Ideal uses for Cloud Files {#Ideal}
+Ideal uses for Cloud Files
 --------------------------
 
 The Cloud Files service is an excellent storage solution for a number of
@@ -51,7 +51,7 @@ some of the ideal uses for Cloud Files:
 -   Storing data when predicting storage capacity is difficult
 -   Storing data for applications affordably
 
-Key concepts {#Key}
+Key concepts
 ------------
 
 Cloud Files is not a file system in the traditional sense. You can't map
@@ -60,7 +60,7 @@ such as a SAN or NAS. Because Cloud Files is a different kind of storage
 solution, take a few moments to [review some key
 concepts](/how-to/cloud-files-key-concepts).
 
-Using Cloud Files {#Using}
+Using Cloud Files
 -----------------
 
 You can access Cloud Files by using the following interfaces:

@@ -10,16 +10,16 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### What is the cost to opt in to RBAC? {#GettingStartedwithRBACRoughDraft-WhatisthecosttooptintoRBAC}
+### What is the cost to opt in to RBAC?
 
 RBAC is a free feature that is available to selected open cloud services
 with an API.
 
-### Can a customer opt out of RBAC? {#GettingStartedwithRBACRoughDraft-CanacustomeroptoutofRBAC}
+### Can a customer opt out of RBAC?
 
 Customers can opt out by simply removing the account users.
 
-### Is RBAC available internationally? {#GettingStartedwithRBACRoughDraft-IsRBACavailableinternationally}
+### Is RBAC available internationally?
 
 Yes, RBAC is available to all Rackspace customers.
 
@@ -29,7 +29,7 @@ Yes, you can. See [Managing: Role-Based Access Control
 (RBAC)](/how-to/managing-role-based-access-control-rbac) for
 instructions.
 
-### How do I query the capability of a given user? {#GettingStartedwithRBACRoughDraft-HowdoIquerythecapabilityofagivenuser}
+### How do I query the capability of a given user?
 
 You can query the roles for a given user by using the List User Global
 Roles API operation described in the [Cloud Identity Client Developer
@@ -37,7 +37,7 @@ Guide](http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Over
 you can view the roles that a user has through the [Cloud Control
 Panel](http://MyCloud.rackspace.com).
 
-### Can I view multiple accounts in the Cloud Control Panel? {#GettingStartedwithRBACRoughDraft-CanIviewmultipleaccountsintheNewCloudControlPanel}
+### Can I view multiple accounts in the Cloud Control Panel?
 
 You may view only one account at a time in the Cloud Control Panel.
 
@@ -45,17 +45,17 @@ You may view only one account at a time in the Cloud Control Panel.
 
 No. Per-billing and per-user usage are not offered at this time.
 
-### Which users can create support tickets? {#GettingStartedwithRBACRoughDraft-Whichuserscancreatetickets}
+### Which users can create support tickets?
 
 All users can create support tickets; however, only the account owner is
 updated on the ticket status.
 
-### Will I be able to delegate all functionality as an account owner? {#GettingStartedwithRBACRoughDraft-WillmultipleAccountAdministratorsbeallowed}
+### Will I be able to delegate all functionality as an account owner?
 
 Not at this time, but we are working on developing and delivering that
 functionality.
 
-### Does RBAC provide fine-grained access control for specific servers, directories, or files? {#GettingStartedwithRBACRoughDraft-DoesRBACallowfine-grainedaccesscontroloverspecificserversdirectoriesorfiles}
+### Does RBAC provide fine-grained access control for specific servers, directories, or files?
 
 RBAC is limited to granting a user control over a given product. It is
 not granular enough to restrict access to individual servers, files, or
@@ -67,11 +67,11 @@ Yes, at this time more features are available through the API. For more
 information about using the API for RBAC see the [Rackspace API
 Documentation](http://docs.rackspace.com/).
 
-### Will account users automatically inherit the RackConnect and Managed Cloud features? {#GettingStartedwithRBACRoughDraft-WillaccountusersautomaticallyinherittheRackConnectandManagedCloudfeatures}
+### Will account users automatically inherit the RackConnect and Managed Cloud features?
 
 Yes.
 
-### How does RBAC work with MyRackspace? {#GettingStartedwithRBACRoughDraft-HowwillRBACworkwithMyRack}
+### How does RBAC work with MyRackspace?
 
 With the implementation of RBAC, account owners can leave permissions as
 they are in MyRackspace or set up restricted access to specific products
@@ -79,7 +79,7 @@ for users through the Cloud Control Panel. For more detailed information
 see [Using RBAC with
 MyRackspace](/how-to/using-rbac-with-myrackspace).
 
-### Is there a way to link dedicated, hybrid, and cloud permissions? {#GettingStartedwithRBACRoughDraft-Isthereapathtolinkdedicatedhybridandcloudpermissions}
+### Is there a way to link dedicated, hybrid, and cloud permissions?
 
 These permissions cannot be linked at this time. Having a common
 permission scheme between dedicated, hybrid, and cloud customers will be

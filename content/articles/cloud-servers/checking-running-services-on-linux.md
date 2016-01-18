@@ -12,7 +12,7 @@ body_format: tinymce
 
 <div id="concept_ntk_d53_vf" class="nested0">
 
-### Is the program running? {#is-the-program-running .title .topictitle1}
+### Is the program running?
 
 <div class="body conbody">
 
@@ -25,7 +25,7 @@ program is running.
 
 <div id="concept_sh5_nr3_vf" class="topic concept nested0">
 
-### service {#service .title .topictitle1}
+### service
 
 To check that the program is running we will start by using the command
 'service'. You can use service to start, stop, and check status for an
@@ -33,7 +33,7 @@ application that has an init script installed.
 
 <div id="concept_zbn_yr3_vf" class="topic concept nested1">
 
-#### Service names {#service-names .title .topictitle2}
+#### Service names
 
 <div class="body conbody">
 
@@ -50,7 +50,7 @@ CentOS, for exampe, while it's 'apache2' on Ubuntu.
 
 <div id="concept_sq3_2s3_vf" class="topic concept nested1">
 
-#### Service status {#service-status .title .topictitle2}
+#### Service status
 
 <div class="body conbody">
 
@@ -68,7 +68,7 @@ httpd is stopped
 
 <div id="concept_sbf_3s3_vf" class="topic concept nested1">
 
-#### Service control {#service-control .title .topictitle2}
+#### Service control
 
 <div class="body conbody">
 
@@ -99,7 +99,7 @@ Unable to open logs
 
 <div id="concept_s3g_4s3_vf" class="topic concept nested0">
 
-### netstat {#netstat .title .topictitle1}
+### netstat
 
 <div class="body conbody">
 
@@ -136,7 +136,7 @@ connection is received.
 
 <div id="concept_jgp_ws3_vf" class="topic concept nested0">
 
-### Checking again {#checking-again .title .topictitle1}
+### Checking again
 
 <div class="body conbody">
 
@@ -161,7 +161,7 @@ help with making use of your logs.
 
 <div id="concept_35x_rt3_vf" class="topic concept nested0">
 
-### Continuing onward {#continuing-onward .title .topictitle1}
+### Continuing onward
 
 <div class="body conbody">
 

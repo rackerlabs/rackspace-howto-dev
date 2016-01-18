@@ -14,7 +14,7 @@ body_format: tinymce
 Role-Based Access Control (RBAC) and to answer questions about the
 service.</span>
 
-### 1. Overview {#list-area-1}
+### 1. Overview
 
 -   [What is
     RBAC?](/how-to/overview-role-based-access-control-rbac)
@@ -43,7 +43,7 @@ service.</span>
 -   [Which products will not have
     RBAC?](/how-to/overview-role-based-access-control-rbac)
 
-### <span>2.</span><span> Managing RBAC</span> {#list-area-3}
+### <span>2.</span><span> Managing RBAC</span>
 
 -   [Implementing RBAC through the Cloud Control
     Panel](/how-to/managing-role-based-access-control-rbac)

@@ -17,7 +17,7 @@ answer audio calls through the application.
 -   [Make an audio call](#2)
 -   [Answer an audio call](#3)
 
-<a href="" id="1"></a>Set up your audio device {#RackerLyncHowtoGuide-Checkyouraudiodevice}
+<a href="" id="1"></a>Set up your audio device
 ----------------------------------------------
 
 Before you use Skype for Business to make or join an audio call, set up
@@ -45,7 +45,7 @@ microphone and speakers, or you can use a headset or earphones.
 
 <a href="" id="_Toc359420929"></a>
 
-<a href="" id="_Toc359420929"></a><a href="" id="2"></a>Make an audio call {#RackerLyncHowtoGuide-Makeacall}
+<a href="" id="_Toc359420929"></a><a href="" id="2"></a>Make an audio call
 --------------------------------------------------------------------------
 
 In your contact list, hover your mouse pointer over the picture of the
@@ -54,7 +54,7 @@ id="cke_bm_432E"> </span>
 
 ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/audio1a.jpg)
 
-[]()<a href="" id="3"></a>Answer an audio call {#RackerLyncHowtoGuide-Answeracall}
+[]()<a href="" id="3"></a>Answer an audio call
 ----------------------------------------------
 
 When someone calls you, a notification appears on your screen.

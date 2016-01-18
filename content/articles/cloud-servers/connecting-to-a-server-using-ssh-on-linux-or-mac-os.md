@@ -43,7 +43,7 @@ free program called
 To generate keys, you can use a related program,
 [PuTTYGen](/how-to/generating-rsa-keys-with-ssh-puttygen).
 
-Log in {#Log_in}
+Log in
 ------
 
 Using the IP address and password for your cloud server, log in by
@@ -83,7 +83,7 @@ location of the `known_hosts` file might differ. Refer to your OS for
 information about the file location. PuTTY on Windows gives you the
 option of replacing the saved host key.
 
-Generate a new SSH key pair {#SSH_keygen}
+Generate a new SSH key pair
 ---------------------------
 
 You can secure SSH access to your cloud server against brute force
@@ -128,7 +128,7 @@ the server.
     by following the instructions in the Shortcut configuration section
     later in this article.
 
-Add the public key to your cloud account {#pubkey}
+Add the public key to your cloud account
 ----------------------------------------
 
 To make it easy to add your key to the new cloud servers you create,
@@ -161,7 +161,7 @@ drop-down menu and select your key from the list. If you don't see a
 stored key in the list, you must switch the region for the new server to
 the region where you've stored the SSH key.
 
-Add the key to an existing server {#SSH_Permissions}
+Add the key to an existing server
 ---------------------------------
 
 You cannot use the Cloud Control Panel to add a public key to an
@@ -189,7 +189,7 @@ existing server. Follow these steps to add the key manually:
 With the public key added to the `authorized_keys`, you can make an SSH
 connection using your key pair instead of the account password.
 
-Shortcut configuration {#shortcut}
+Shortcut configuration
 ----------------------
 
 You can set up a connection shortcut by creating a `~/.ssh/config` file
@@ -218,7 +218,7 @@ text editor.
 
         ssh shortcutName
 
-Troubleshooting {#trouble}
+Troubleshooting
 ---------------
 
 If you have trouble making a new connection after you restart the

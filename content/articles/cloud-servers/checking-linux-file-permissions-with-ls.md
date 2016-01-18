@@ -14,7 +14,7 @@ This article focuses on the basics of how to use the `ls` command to
 check Linux file permissions and what it can tell you about a file's
 type and permissions.
 
-ls command {#checkingpermissions}
+ls command
 ----------
 
 You use the `ls` command (the first letter is a lowercase L) to see what
@@ -40,7 +40,7 @@ displaying file sizes in raw bytes, `-h` displays them in the
 human-readable format of kilobytes, megabytes, and so on. You can
 accomplish the same result by using the `df -h` command.
 
-### ls -l {#ls-l}
+### ls -l
 
 To get more information about the files in a directory, use the `-l`
 option with ls. The following example shows a result of using the `-l`
@@ -74,7 +74,7 @@ However, before going into those details, you should know about one
 other option that can be used with `ls` to return a comprehensive list
 of files, `-a`.
 
-#### ls -a {#ls-la}
+#### ls -a
 
 When you use the `ls` command, if you want to see any files whose names
 start with a period, you must use the `-a` option. For example, if you

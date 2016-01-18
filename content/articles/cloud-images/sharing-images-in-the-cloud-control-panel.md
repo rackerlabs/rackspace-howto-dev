@@ -27,7 +27,7 @@ Control Panel.
     -   [Accept an image after rejecting it](#acceptAfterReject)
 -   [Use a shared image](#using)
 
-How are shared images useful? {#how-useful}
+How are shared images useful?
 -----------------------------
 
 Image sharing enables you to use custom images created by other
@@ -56,7 +56,7 @@ Following are example scenarios in which image sharing would be helpful:
 **Note**: Image sharing is only available in Next Generation Cloud
 Servers.  It is not available in First Generation Cloud Servers.
 
-Image sharing overview {#overview}
+Image sharing overview
 ----------------------
 
 Here's a quick overview of some aspects of image sharing.  To keep
@@ -124,12 +124,12 @@ For more information about Cloud Images RBAC, please see the Knowledge
 Center article [Detailed Permission Matrix for Cloud
 Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
-Sharing an image in the Cloud Control Panel {#sharing}
+Sharing an image in the Cloud Control Panel
 -------------------------------------------
 
 Use the following considerations and steps to share server images.
 
-### Before you share an image {#before-sharing}
+### Before you share an image
 
 Before you share an image, consider the following questions:
 
@@ -147,7 +147,7 @@ Before you share an image, consider the following questions:
     regard to the type of software included on images.  Ensure that
     you're familiar with the AUP before you share an image.
 
-### Share an image {#sharing-process}
+### Share an image
 
 1.  When your image is ready to share, use one of the following methods
     in the Control Panel to share it:
@@ -186,7 +186,7 @@ populated with a row containing information about this sharing event.
 You can see which users have accepted or rejected your sharing request,
 and for which users the request is pending acceptance.
 
-#### What about Chicago (ORD)? {#ORD}
+#### What about Chicago (ORD)?
 
 If you are an image producer who wants to share an image in the ORD
 region of the Rackspace cloud, please be aware that the provisioning of
@@ -207,7 +207,7 @@ To learn more about regions in the Rackspace cloud, please see the
 Knowledge Center article [Where are the Rackspace data centers
 located?](/how-to/rackspace-data-centers-and-regions).
 
-### Image sharing courtesy {#courtesy}
+### Image sharing courtesy
 
 To keep the Rackspace cloud a friendly place, observe the following
 suggestions:
@@ -223,7 +223,7 @@ suggestions:
     re-share the image with the consumer.  As an image producer, you
     cannot directly change their status.
 
-Accept or reject a shared image {##accepting}
+Accept or reject a shared image
 -------------------------------
 
 As explained earlier, to prevent spam in your image list, you must
@@ -269,7 +269,7 @@ If you reject an image and decide later that you want it after all, you
 must notify the image producer and ask that the image be re-shared with
 you.
 
-Use a shared image {#using}
+Use a shared image
 ------------------
 
 After you accept a shared image, you can use it to boot a server using

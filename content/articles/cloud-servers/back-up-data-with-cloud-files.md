@@ -17,7 +17,7 @@ Files service.
 **Note:** If you would like for us to provide Cloud Backup as a service,
 see <http://www.rackspace.com/cloud/backup> for information.
 
-Prepare to back up {#prepare}
+Prepare to back up
 ------------------
 
 Before you use Cloud files to back up your data, perform the following

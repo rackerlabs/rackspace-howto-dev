@@ -37,7 +37,7 @@ deliver a private cloud infrastructure as a service offering. Following
 are the key software features and components used for every
 implementation hosted at Rackspace.
 
-Cloud Platform Base Cloud {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-CloudPlatform&ldquo;BaseCloud&rdquo;}
+Cloud Platform Base Cloud
 -------------------------
 
 Base Cloud is a basic System Center 2012 R2 plus Windows Azure Pack that
@@ -295,7 +295,7 @@ Keep in mind that if you add any of them, the minimum required compute
 and storage needs to account for the additional compute and storage
 loads.
 
-### Web Sites Cloud {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-WebSitesCloud}
+### Web Sites Cloud
 
 Web Sites Cloud is a service that helps you provide a high-density,
 scalable, shared web hosting platform for ASP.NET, PHP, and Node.js web
@@ -441,7 +441,7 @@ are 24 vCPU, 56 GB of RAM, and 1 TB of storage.  This workload is in
 addition to the Base Cloud system, which is split across two physical
 host servers configured in a failover cluster.
 
-### Service Bus {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-ServiceBus}
+### Service Bus
 
 The Service Bus service provides reliable messaging services between
 distributed applications. The Service Bus service includes queued and
@@ -488,7 +488,7 @@ vCPU, 4 GB of RAM, and 60 GB of storage.  This workload is in addition
 to the Base Cloud system, which is split across two physical host
 servers configured in a failover cluster.
 
-### Active Directory Federation Services {#CloudPlatformPoweredByRackspace-ProductLineArchitectureRequirements-ADFS}
+### Active Directory Federation Services
 
 Active Directory Federation Services (ADFS) provides simplified, secured
 identity federation and web single sign-on (SSO) capabilities for end

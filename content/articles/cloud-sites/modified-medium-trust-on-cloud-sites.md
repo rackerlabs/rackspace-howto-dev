@@ -126,7 +126,7 @@ AspJpeg, to determine if their component will work under .NET in our
 modified Medium Trust environment. It should be noted, however, that the
 AspJpeg component is fully functional under Classic ASP.
 
-### <span class="mw-headline"><a href="" id="Configurations"></a>Configurations</span> {#configurations .p1}
+### <span class="mw-headline"><a href="" id="Configurations"></a>Configurations</span>
 
 To facilitate your ability to test your applications on your local
 development machine, we have made our modified Medium Trust

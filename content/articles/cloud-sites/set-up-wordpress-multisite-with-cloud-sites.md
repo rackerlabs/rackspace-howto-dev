@@ -60,7 +60,7 @@ The process is divided into the following steps:
 1. Set up a Cloud Databases instance and install WordPress
 ----------------------------------------------------------
 
-#### <span data-mce-mark="1">[]()Set up a Cloud Databases instance</span> {#set-up-a-cloud-databases-instance .highlight}
+#### <span data-mce-mark="1">[]()Set up a Cloud Databases instance</span>
 
 Set up a Cloud Databases instance that meets the following criteria:
 
@@ -80,7 +80,7 @@ Cloud Databases instance, review the following articles:
 
 </div>
 
-#### []()Install WordPress {#install-wordpress .highlight}
+#### []()Install WordPress
 
 Install WordPress on a Cloud Sites website.  This site is the primary
 domain you will be hosting on WordPress Multisite, and it will serve as
@@ -105,7 +105,7 @@ the one-click installer.
 
 </div>
 
-#### []()Adjust the WordPress address URL {#adjust-the-wordpress-address-url .highlight}
+#### []()Adjust the WordPress address URL
 
 In the WordPress Administration console, go to **Settings** and change
 the **WordPress Address** (**URL**) value to use
@@ -115,7 +115,7 @@ already set this way. For example: **http://example.com**e.
 
  <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/WP_url_configuration.PNG" width="290" height="18" />
 
-#### []()Allow WordPress Multisite in wp-config.php {#allow-wordpress-multisite-in-wp-config.php .highlight}
+#### []()Allow WordPress Multisite in wp-config.php
 
 1.  In the root WordPress installation directory, locate the
     **wp-config.php** file and open it in a text editor.
@@ -126,7 +126,7 @@ already set this way. For example: **http://example.com**e.
 
     define( 'WP_ALLOW_MULTISITE', true );
 
-#### []()Set up the Multisite network {#set-up-the-multisite-network .highlight}
+#### []()Set up the Multisite network
 
 1.  In WordPress, go to the admin area, click the **Tools** menu, and
     then click **Network Setup**.
@@ -232,7 +232,7 @@ the WordPress MU Domain Mapping plug-in, as follows:
 
 5.  Activate the plug-in by clicking **Network Activate**.
 
-#### []()Configure the Domain Mapping plug-in {#configure-the-domain-mapping-plug-in .highlight}
+#### []()Configure the Domain Mapping plug-in
 
 1.  Copy the
     **`../wp-content/plugins/wordpress-mu-domain-mapping/sunrise.php `**file
@@ -257,7 +257,7 @@ the WordPress MU Domain Mapping plug-in, as follows:
 
  []()
 
-3. Add sites to the WordPress network {#add-sites-to-the-wordpress-network .highlight}
+3. Add sites to the WordPress network
 -------------------------------------
 
 The final step in this process is to add sites to your WordPress

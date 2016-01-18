@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-### What is logrotate? {#what_is_logrotate}
+### What is logrotate?
 
 It may surprise you to learn that logrotate is a program used to rotate
 logs. It&rsquo;s true! The system usually runs logrotate once a day, and when
@@ -25,7 +25,7 @@ it&rsquo;s been doing, what errors it&rsquo;s run into, that sort of thing. So l
 are good, you just usually don&rsquo;t want to keep a ton of them around.
 That&rsquo;s where logrotate comes in.
 
-### The importance of log rotation {#the_importance_of_log_rotation}
+### The importance of log rotation
 
 Logs are wonderful things when you want to track usage or troubleshoot
 an application. Unfortunately the more information that gets logged, the
@@ -42,7 +42,7 @@ use.
 
 Fortunately logrotate makes log rotation easy.
 
-### How it works {#how_it_works}
+### How it works
 
 The system runs logrotate on a schedule, usually daily. In fact, on most
 distributions you&rsquo;ll find the script that runs logrotate daily at:
@@ -63,7 +63,7 @@ to find the log files it needs to rotate, and to check on details like
 how often the files should be rotated and how many archived logs to
 keep.
 
-### logrotate.conf {#logrotateconf}
+### logrotate.conf
 
 The main logrotate configuration file is located at:
 
@@ -81,7 +81,7 @@ Note that one line reads:
 That&rsquo;s where we&rsquo;ll find most of the application-specific configuration
 files.
 
-### logrotate.d {#logrotated}
+### logrotate.d
 
 Take a look inside the directory where you&rsquo;ll store application-specific
 log settings:
@@ -103,7 +103,7 @@ versions of Ubuntu older than Karmic Koala (9.10). Prior to that release
 the system logs were rotated by a &ldquo;savelog&rdquo; command run from the
 &ldquo;/etc/cron.daily/sysklogd&rdquo; script.
 
-#### Inside an application file {#inside_an_application_file}
+#### Inside an application file
 
 As an example, let&rsquo;s take a look at the contents of a logrotate config
 file that might be put in place when you install apache on a Fedora
@@ -139,7 +139,7 @@ That might be more clear if we talk about what some of the more
 commonly-used commands actually do in a logrotate config file. So let&rsquo;s
 do that next.
 
-### Configuration commands {#configuration_commands}
+### Configuration commands
 
 You can get a full list of commands used in logrotate configuration
 files by checking the man page:
@@ -151,7 +151,7 @@ We&rsquo;ll go over more commonly-used commands here.
 Remember, the config files for applications in /etc/logrotate.d inherit
 their defaults from the main /etc/logrotate.conf file.
 
-#### Log files {#log_files}
+#### Log files
 
 A log file and its rotation behavior is defined by listing the log file
 (or files) followed by curly brackets. Most application configuration
@@ -172,7 +172,7 @@ block like so:
 
 Just not with as many blahs.
 
-#### Rotate count {#rotate_count}
+#### Rotate count
 
 The &ldquo;rotate&rdquo; command determines how many archived logs will be kept
 around before logrotate starts deleting the older ones. For example:
@@ -184,7 +184,7 @@ are already four archived logs when the log is rotated again, the oldest
 one (the one with &ldquo;.4&rdquo; at the end, usually) will be deleted to make room
 for the new archive.
 
-#### Rotation interval {#rotation_interval}
+#### Rotation interval
 
 You can specify a command that will tell logrotate how often to rotate a
 particular log. The possible commands include:
@@ -301,7 +301,7 @@ config block before running the postrotate script. If one or both of the
 logs get rotated, the postrotate script still only gets run once. If
 none of the logs get rotated, the postrotate script won&rsquo;t run at all.
 
-### Where to go next {#summary}
+### Where to go next
 
 You&rsquo;ve seen an overview of what logrotate does and what kind of
 configuration options are available to you. You should be all set to go

@@ -42,7 +42,7 @@ user, and you must update your credentials (password and secret
 question) as soon as possible. See &lt;Insert Name&gt; for your
 temporary access information.**
 
-### Creating New Users  {#GettingStartedwithRBACRoughDraft-CreatingnewusersthroughtheNewCloudControlPanel}
+### Creating New Users
 
 <span>1.</span> <span> In the upper-right corner o</span><span>f
 the</span> [Cloud Control Panel](https://mycloud.rackspace.com/)<span>,
@@ -145,7 +145,7 @@ optimal product interaction.
 </tbody>
 </table>
 
-### **Adding a User Login and Custom Role to an Existing Contact** {#adding-a-user-login-and-custom-role-to-an-existing-contact .MsoNormal}
+### **Adding a User Login and Custom Role to an Existing Contact**
 
 1\. In the **User Management** box, click the actions cog next to the
 contact's name.

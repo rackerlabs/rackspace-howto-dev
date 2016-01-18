@@ -13,7 +13,7 @@ body_format: tinymce
 This article discusses several of the commands that can be run against
 Cloud Servers using python-novaclient.
 
-### Nova Client Operations {#novaclientoperations}
+### Nova Client Operations
 
 Now that you&rsquo;ve installed the nova client on a
 [Windows](/how-to/installing-python-novaclient-on-windows),
@@ -26,7 +26,7 @@ We&rsquo;ll assume you&rsquo;ve run through the installation and the client is
 working with your Cloud Servers account. If not, see the previous
 articles in this series for installation instructions.
 
-### The help command {#thehelpcommand}
+### The help command
 
 The first, and possibly most important, command to know about is the
 &ldquo;help&rdquo; command. Running &ldquo;help&rdquo; by itself will give a list of available
@@ -49,13 +49,13 @@ manage a full OpenStack installation.
 We&rsquo;ll walk through the more common operations that will work with
 Rackspace Cloud Servers and how to use them.
 
-### Note on spaces {#noteonspaces}
+### Note on spaces
 
 If you want to refer to a server or image by name and the name has a
 space in it, remember to put the name in quotes so the client knows it&rsquo;s
 a single argument.
 
-### More common commands {#morecommoncommands}
+### More common commands
 
 These are commands used for most day-to-day operations with Cloud
 Servers.
@@ -117,7 +117,7 @@ Example:
 
     nova flavor-list
 
-#### boot &ndash;image 100 &ndash;flavor 1 name {#boot--image100--flavor1name}
+#### boot &ndash;image 100 &ndash;flavor 1 name
 
 To create a new Cloud Server you use the &ldquo;boot&rdquo; command. At its
 simplest, you tell the boot command what flavor to use with the
@@ -166,7 +166,7 @@ Example:
 
     nova image-delete imagename
 
-### Less common commands {#lesscommoncommands}
+### Less common commands
 
 These are commands that are also useful, but aren&rsquo;t necessarily used as
 often as that first batch.

@@ -12,7 +12,7 @@ body_format: tinymce
 
 <div id="task_jfg_d2y_jf" class="nested0">
 
-### Using netcat {#using-netcat .title .topictitle1}
+### Using netcat
 
 <div class="body taskbody">
 
@@ -36,7 +36,7 @@ distros or "sudo apt-get install netcat" on Debian-based distros.
 
 <div id="concept_sxn_xmy_pg" class="topic concept nested0">
 
-### Basic test {#basic-test .title .topictitle1}
+### Basic test
 
 <div class="body conbody">
 
@@ -58,7 +58,7 @@ The following three examples show the possible output:
 
 <div class="section">
 
-#### The connection is successfully made {#the-connection-is-successfully-made .title .sectiontitle}
+#### The connection is successfully made
 
 ``` {.pre .codeblock}
 nc -vz 203.0.113.96 21
@@ -69,7 +69,7 @@ Connection to 203.0.113.96 21 port [tcp/ftp] succeeded!
 
 <div class="section">
 
-#### The connection is refused {#the-connection-is-refused .title .sectiontitle}
+#### The connection is refused
 
 ``` {.pre .codeblock}
 nc -vz 203.0.113.96 80
@@ -80,7 +80,7 @@ nc: connect to 203.0.113.96 port 80 (tcp) failed: Connection refused
 
 <div class="section">
 
-#### There is no response to the connection request {#there-is-no-response-to-the-connection-request .title .sectiontitle}
+#### There is no response to the connection request
 
 ``` {.pre .codeblock}
 nc -vz 203.0.113.96 80
@@ -95,7 +95,7 @@ nc: connect to 203.0.113.96 port 80 (tcp) failed: Connection timed out
 
 <div id="task_r1x_nfy_jf" class="topic task nested0">
 
-### Connection refused {#connection-refused .title .topictitle1}
+### Connection refused
 
 <div class="body taskbody">
 
@@ -121,7 +121,7 @@ firewall.
 
 <div id="task_2qm_xfy_jf" class="topic task nested0">
 
-### Connection timed out {#connection-timed-out .title .topictitle1}
+### Connection timed out
 
 <div class="body taskbody">
 
@@ -167,7 +167,7 @@ sudo /sbin/iptables -L -v
 
 <div id="task_c2f_p2y_jf" class="topic task nested0">
 
-### Connection succeeded {#connection-succeeded .title .topictitle1}
+### Connection succeeded
 
 <div class="body taskbody">
 
@@ -199,7 +199,7 @@ response from the service.
 
 <div id="concept_kl2_zpy_pg" class="topic concept nested1">
 
-#### Closing the connection {#closing-the-connection .title .topictitle2}
+#### Closing the connection
 
 <div class="body conbody">
 
@@ -223,7 +223,7 @@ QUIT
 
 <div id="concept_sbn_yqy_pg" class="topic concept nested1">
 
-#### Commands rejected {#commands-rejected .title .topictitle2}
+#### Commands rejected
 
 <div class="body conbody">
 
@@ -264,7 +264,7 @@ anything.
 
 <div id="concept_nkp_1ry_pg" class="topic concept nested1">
 
-#### Checking logs {#checking-logs .title .topictitle2}
+#### Checking logs
 
 <div class="body conbody">
 
@@ -284,7 +284,7 @@ Tue Jun  7 16:14:21 2011 [pid 28599] CONNECT: Client "203.0.113.43", "Connection
 
 <div id="concept_51j_cry_pg" class="topic concept nested1">
 
-#### hosts.deny {#hosts.deny .title .topictitle2}
+#### hosts.deny
 
 <div class="body conbody">
 
@@ -317,7 +317,7 @@ wrappers.
 
 <div id="concept_1zs_5lj_qg" class="topic concept nested0">
 
-### Further investigation {#further-investigation .title .topictitle1}
+### Further investigation
 
 <div class="body conbody">
 

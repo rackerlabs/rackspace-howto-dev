@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-### Now available in Cloud Sites - MySQL 5.1!   {#now-available-in-cloud-sites---mysql-5.1 .p1}
+### Now available in Cloud Sites - MySQL 5.1!
 
 Read on to learn the process of migrating your current Cloud Sites
 running MySQL 5.0 to begin running on a MySQL 5.1 database.

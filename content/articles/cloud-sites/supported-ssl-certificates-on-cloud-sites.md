@@ -31,7 +31,7 @@ certificates.</span>
 
 
 
-Installing EV, multi-domain or wildcard certificates {#installing-ev-multi-domain-or-wildcard-certificates .Syntax}
+Installing EV, multi-domain or wildcard certificates
 ----------------------------------------------------
 
 When you install EV, multi-domain or wildcard certificates, the
