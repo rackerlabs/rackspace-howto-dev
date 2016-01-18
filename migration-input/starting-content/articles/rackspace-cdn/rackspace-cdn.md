@@ -16,41 +16,41 @@ and running quickly.
 ###  Introduction to Rackspace CDN
 
 -   [Rackspace CDN
-    overview](/howto/rackspace-cdn-overview)
+    overview](/how-to/rackspace-cdn-overview)
 -   [Features of Rackspace
-    CDN](/howto/features-of-rackspace-cdn)
+    CDN](/how-to/features-of-rackspace-cdn)
 -   [Uses of Rackspace
-    CDN](/howto/uses-of-rackspace-cdn)
+    CDN](/how-to/uses-of-rackspace-cdn)
 -   [Limits of Rackspace
-    CDN](/howto/limits-for-rackspace-cdn)
+    CDN](/how-to/limits-for-rackspace-cdn)
 -   [Differences between Rackspace CDN and Cloud
-    Files](/howto/differences-between-rackspace-cdn-and-rackspace-cloud-files)
+    Files](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
 -   [Rackspace CDN
-    terminology](/howto/rackspace-cdn-terminology)
+    terminology](/how-to/rackspace-cdn-terminology)
 
 ###  Create a CDN Service
 
 -   [Create a Rackspace CDN
-    service](/howto/create-a-rackspace-cdn-service)
+    service](/how-to/create-a-rackspace-cdn-service)
 -   [Add
-    domains](/howto/add-and-manage-domains-in-rackspace-cdn)
+    domains](/how-to/add-and-manage-domains-in-rackspace-cdn)
 -   [Work with origins and origin
-    rules](/howto/work-with-origins-and-origin-rules-in-rackspace-cdn)
+    rules](/how-to/work-with-origins-and-origin-rules-in-rackspace-cdn)
 -   [Create and manage caching
-    rules](/howto/create-and-manage-caching-rules-in-rackspace-cdn)
+    rules](/how-to/create-and-manage-caching-rules-in-rackspace-cdn)
 -   [Create and manage
-    restrictions](/howto/create-and-manage-restrictions-in-rackspace-cdn)
+    restrictions](/how-to/create-and-manage-restrictions-in-rackspace-cdn)
 
 ###  Manage a CDN service
 
 -   [Enable or disable
-    logging](/howto/enable-or-disable-logging-in-rackspace-cdn)
+    logging](/how-to/enable-or-disable-logging-in-rackspace-cdn)
 -   [Rename a CDN
-    service](/howto/rename-a-rackspace-cdn-service)
+    service](/how-to/rename-a-rackspace-cdn-service)
 -   [Refresh Content in a Rackspace CDN
-    service](/howto/refresh-content-in-a-rackspace-cdn-service)
+    service](/how-to/refresh-content-in-a-rackspace-cdn-service)
 
 ###  Delete a Rackspace CDN Service
 
 -   [Delete CDN
-    service](/howto/delete-a-rackspace-cdn-service)
+    service](/how-to/delete-a-rackspace-cdn-service)

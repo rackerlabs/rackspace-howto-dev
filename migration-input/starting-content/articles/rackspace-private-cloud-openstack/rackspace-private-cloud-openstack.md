@@ -21,15 +21,15 @@ Learn more [on the main product
 page](http://www.rackspace.com/cloud/private/openstack/). You can also
 learn more about the documentation at the [Rackspace Private Cloud
 Documentation
-page.](/howto/rackspace-private-cloud-documentation)
+page.](/how-to/rackspace-private-cloud-documentation)
 
 ###  General resources
 
--   [FAQ](/howto/rackspace-private-cloud-faq)
+-   [FAQ](/how-to/rackspace-private-cloud-faq)
 -   [Spheres of
-    Support](/howto/rackspace-private-cloud-spheres-of-support)
+    Support](/how-to/rackspace-private-cloud-spheres-of-support)
 -   [Private Cloud Tech
-    Resources](/howto/private-cloud-tech-resources)
+    Resources](/how-to/private-cloud-tech-resources)
 -   [Rackspace Private Cloud Software and Reference
     Architecture](http://www.rackspace.com/cloud/private/openstack/software/)
 -   [Rackspace Private Cloud

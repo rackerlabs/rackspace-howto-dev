@@ -19,26 +19,26 @@ through Cloud Office.
 ###  Enable and access Email Archiving
 
 -   [Enable Email
-    Archiving](/howto/enable-email-archiving)
+    Archiving](/how-to/enable-email-archiving)
 -   [Log in to the Archive
-    Manager](/howto/log-in-to-the-archive-manager)
+    Manager](/how-to/log-in-to-the-archive-manager)
 
 ###  Set up Email Archiving
 
 -   [Add and edit archive users in Cloud
-    Office](/howto/add-and-edit-archive-users-in-cloud-office)
+    Office](/how-to/add-and-edit-archive-users-in-cloud-office)
 -   [Set access rules for archive end
-    users](/howto/set-access-rules-for-archive-end-users-0)
+    users](/how-to/set-access-rules-for-archive-end-users-0)
 -   [Create an archive login
-    message](/howto/create-an-archive-login-message)
+    message](/how-to/create-an-archive-login-message)
 -   [Integrate Rackspace Email Archiving
-    with Outlook.](https://admin.rackspace.com/howto/integrate-rackspace-email-archiving-with-outlook)
+    with Outlook.](https://admin.rackspace.com/how-to/integrate-rackspace-email-archiving-with-outlook)
 
 ###  Search and report
 
 -   [Create an archive audit
-    report](/howto/create-an-archive-audit-report)
+    report](/how-to/create-an-archive-audit-report)
 -   [Create an archive
-    search](/howto/create-an-archive-search)
+    search](/how-to/create-an-archive-search)
 -   [Export archive search results in Cloud
-    Office](/howto/export-archive-search-results-in-cloud-office)
+    Office](/how-to/export-archive-search-results-in-cloud-office)

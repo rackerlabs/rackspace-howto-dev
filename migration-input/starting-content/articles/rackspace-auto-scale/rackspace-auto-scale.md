@@ -16,27 +16,27 @@ monitoring system, or on a simple schedule that you configure.
 ###  Introduction
 
 -   [Rackspace Auto Scale
-    Overview](/howto/rackspace-auto-scale-overview)
+    Overview](/how-to/rackspace-auto-scale-overview)
 
 ###  General Information
 
 -   [Rackspace Auto Scale
-    Glossary](/howto/rackspace-auto-scale-glossary)
+    Glossary](/how-to/rackspace-auto-scale-glossary)
 -   [Rackspace Auto Scale Tips and How
-    To's](/howto/rackspace-auto-scale-tips-and-how-tos)
+    To's](/how-to/rackspace-auto-scale-tips-and-how-tos)
 -   [Rackspace Auto Scale RBAC Permissions
-    Matrix](/howto/permissions-matrix-for-auto-scale)
+    Matrix](/how-to/permissions-matrix-for-auto-scale)
 
 ###  Administrator's Information
 
 -   [Rackspace Auto Scale Control Panel User Guide --
-    Introduction](/howto/rackspace-auto-scale-control-panel-user-guide-introduction)
+    Introduction](/how-to/rackspace-auto-scale-control-panel-user-guide-introduction)
 -   [Rackspace Auto Scale Control Panel User Guide --
-    Concepts](/howto/rackspace-auto-scale-control-panel-user-guide-concepts)
+    Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts)
 -   [Rackspace Auto Scale Control Panel User Guide -- Creating Scaling
-    Groups](/howto/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups)
+    Groups](/how-to/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups)
 -   [Rackspace Auto Scale Control Panel User Guide -- Creating Scaling
-    Policies](/howto/rackspace-auto-scale-control-panel-user-guide-creating-scaling-policies)
+    Policies](/how-to/rackspace-auto-scale-control-panel-user-guide-creating-scaling-policies)
 
 ###  Developer's Information
 

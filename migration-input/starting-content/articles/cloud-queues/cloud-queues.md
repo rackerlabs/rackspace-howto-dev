@@ -17,20 +17,20 @@ publisher-subscriber, and point-to-point.
 ###  Overview
 
 -   [Cloud Queues
-    Overview](/howto/cloud-queues-overview)
+    Overview](/how-to/cloud-queues-overview)
 -   [Cloud Queues message
-    patterns](/howto/cloud-queues-message-patterns)
+    patterns](/how-to/cloud-queues-message-patterns)
 
 ###  Working with queues
 
 -   [Creating Cloud
-    Queues](/howto/creating-cloud-queues)
+    Queues](/how-to/creating-cloud-queues)
 -   [Listing Cloud
-    Queues](/howto/listing-cloud-queues)
+    Queues](/how-to/listing-cloud-queues)
 -   [Tips for Monitoring Your Queues in Cloud
-    Queues](/howto/tips-for-monitoring-your-queues-in-cloud-queues)
+    Queues](/how-to/tips-for-monitoring-your-queues-in-cloud-queues)
 
 ###  API access
 
 -   [Cloud Queues cURL
-    Cookbook](/howto/cloud-queues-curl-cookbook)
+    Cookbook](/how-to/cloud-queues-curl-cookbook)

@@ -62,12 +62,12 @@ Control Panel interface.
     -   Paste your public key into the Public Key field.
         **Note:** If you do not have a public key yet, click [How to get
         a public
-        key](/howto/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
+        key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
         and follow the instructions in that article.
                   For more information on how to generate a public and
         private key pairs, see
                   [Manage SSH Keypairs for Cloud Servers
-        with-python-novaclient](/howto/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+        with-python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
     -   Once you have your entered your Key Name, Region, and the Public
         Key, click **Add Public Key**.
 
@@ -96,11 +96,11 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### [](){#serverImages}1. Saving server images
 
 -   [Saving a Cloud Server
-    Image](/howto/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
+    Image](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
 -   [Restoring a Server From a
-    Snapshot](/howto/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
+    Snapshot](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
 -   [Snapshot
-    Limitations](/howto/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations)
+    Limitations](/how-to/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations)
 
 ### [](){#remoteAccess}2. Remote access
 
@@ -109,12 +109,12 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Remote Connection from Mac to a Linux
     Server](/knowledge_center/Mac_to_Linux_using_iTerm)
 -   [Remote Connection to a Windows Cloud Server Using
-    RDP](/howto/log-in-to-your-server-via-rdp-windows)
+    RDP](/how-to/log-in-to-your-server-via-rdp-windows)
 
 ### [](){#serverSecurity}3. Cloud Server security
 
 -   [Basic Linux Cloud Server
-    security](/howto/rackspace-cloud-essentials-3-basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
+    security](/how-to/rackspace-cloud-essentials-3-basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
 
 ### [](){#uploadContent}4. Uploading your content
 
@@ -128,31 +128,31 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [What Are Your
     Nameservers?](/knowledge_center/index.php/nameservers)
 -   [Transferring Your Domain to the Rackspace
-    Cloud](/howto/transferring-your-domain-to-Rackspace-Cloud)
+    Cloud](/how-to/transferring-your-domain-to-Rackspace-Cloud)
 -   [Managing DNS](/knowledge_center/index.php/Managing_DNS)
 
 ### [](){#accountMGMT}6. Managing your account
 
 -   [Billing services
-    overview](/howto/rackspace-cloud-essentials-1-billing-services-overview)
+    overview](/how-to/rackspace-cloud-essentials-1-billing-services-overview)
 -   [Navigating the Cloud Control
-    Panel](/howto/navigating-the-cloud-control-panel)
+    Panel](/how-to/navigating-the-cloud-control-panel)
 -   [Generating your API
-    key](/howto/rackspace-cloud-essentials-1-generating-your-api-key-0)
+    key](/how-to/rackspace-cloud-essentials-1-generating-your-api-key-0)
 
-### [](){#serverMGMT}7. [Managing your server](/howto/rackspace-cloud-essentials-managing-your-server)
+### [](){#serverMGMT}7. [Managing your server](/how-to/rackspace-cloud-essentials-managing-your-server)
 
 -   [Start a Console
-    session](/howto/managing-your-server-start-a-console-session)
+    session](/how-to/managing-your-server-start-a-console-session)
 -   [Reboot your
-    server](/howto/managing-your-server-reboot-your-server)
+    server](/how-to/managing-your-server-reboot-your-server)
 -   [Recue
-    mode](/howto/managing-your-server-rescue-mode)
+    mode](/how-to/managing-your-server-rescue-mode)
 -   [Rebuild a Cloud
-    Server](/howto/managing-your-server-rebuild-a-cloud-server)
+    Server](/how-to/managing-your-server-rebuild-a-cloud-server)
 -   [Resize standard
-    servers](/howto/managing-your-server-resizing-standard-servers)
+    servers](/how-to/managing-your-server-resizing-standard-servers)
 -   [Reset your server
-    password](/howto/managing-your-server-reset-your-server-password)
+    password](/how-to/managing-your-server-reset-your-server-password)
 -   [Deleting your
-    server](/howto/managing-your-server-deleting-your-server)
+    server](/how-to/managing-your-server-deleting-your-server)

@@ -21,19 +21,19 @@ content to.
 ###  Setting Up Rackspace Cloud Orchestration
 
 -   [Create a
-    Stack](/howto/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationCreateStack)
+    Stack](/how-to/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationCreateStack)
 -   [Delete a
-    Stack](/howto/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationDeleteAStack)
+    Stack](/how-to/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationDeleteAStack)
 -   [Scaling a Stack Up or
-    Down](/howto/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationScaleAStackUpOrDown)
+    Down](/how-to/quick-set-up-with-rackspace-orchestration#SettingUpRackspaceOrchestrationScaleAStackUpOrDown)
 
 ###  Rackspace Orchestration - FAQ
 
--   [General](/howto/cloud-orchestration#2433)
+-   [General](/how-to/cloud-orchestration#2433)
 -   [Billing and
-    Account](/howto/cloud-orchestration#2438)
--   [Templates](/howto/cloud-orchestration#2435)
--   [Features](/howto/cloud-orchestration#2429)
--   [Software](/howto/cloud-orchestration#2437)
--   [Support](/howto/cloud-orchestration#2436)
--   [OpenStack](/howto/cloud-orchestration#2434)
+    Account](/how-to/cloud-orchestration#2438)
+-   [Templates](/how-to/cloud-orchestration#2435)
+-   [Features](/how-to/cloud-orchestration#2429)
+-   [Software](/how-to/cloud-orchestration#2437)
+-   [Support](/how-to/cloud-orchestration#2436)
+-   [OpenStack](/how-to/cloud-orchestration#2434)
