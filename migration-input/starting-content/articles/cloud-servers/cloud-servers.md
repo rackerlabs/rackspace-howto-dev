@@ -21,34 +21,29 @@ Control Panel interface.
 3.  In the** Identity **section enter a name for your server in
     the **Server Name** field.
 
-      ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.12.15%20AM.png){width="259"
-    height="163"}
+      ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.12.15%20AM.png)
 
 4.  From the Region list, select the region in which you want to create
     the server.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.13.25%20AM.png){width="261"
-    height="142"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.13.25%20AM.png)
      
 5.  In the **Image** section, select which operating system you want to
     use.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.15.30%20AM.png){width="472"
-    height="241"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.15.30%20AM.png)
      
 6.  In the **Flavor** section, choose the appropriate configuration for
     the server.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.16.55%20AM.png){width="473"
-    height="372"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.16.55%20AM.png)
 7.  *(Optional)* Assign a public key to the server by selecting an
     existing key.
      
     -   To assign an existing public key, under Advanced Options, select
         a public key from the drop down list.
 
-        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.18.41%20AM.png){width="379"
-        height="87"}
+        ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.18.41%20AM.png)
 
     -   Select the public key from the list and continue with the
         next step.
@@ -72,8 +67,7 @@ Control Panel interface.
         Key, click **Add Public Key**.
 
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.30.59%20AM.png){width="655"
-    height="299"}
+    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.30.59%20AM.png)
      
 9.  Confirm that your key is listed in the SSH Key list for your new
     server.
@@ -93,7 +87,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 ### Next steps
 
-### [](){#serverImages}1. Saving server images
+1. Saving server images
 
 -   [Saving a Cloud Server
     Image](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
@@ -102,7 +96,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Snapshot
     Limitations](/how-to/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations)
 
-### [](){#remoteAccess}2. Remote access
+2. Remote access
 
 -   [Remote Connection from Windows to a Linux
     Server](/knowledge_center/index.php/Logging_in_via_Putty)
@@ -111,19 +105,19 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Remote Connection to a Windows Cloud Server Using
     RDP](/how-to/log-in-to-your-server-via-rdp-windows)
 
-### [](){#serverSecurity}3. Cloud Server security
+3. Cloud Server security
 
 -   [Basic Linux Cloud Server
     security](/how-to/rackspace-cloud-essentials-3-basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
 
-### [](){#uploadContent}4. Uploading your content
+4. Uploading your content
 
 -   [CentOS - Installing
     vsftpd](/knowledge_center/index.php/CentOS_-_Installing_vsftpd)
 -   [CentOS - Configuring a user in
     vsftpd](/knowledge_center/index.php/CentOS_-_Configuring_a_user_in_vsftpd)
 
-### [](){#dnsDomainMGMT}5. DNS & domain management
+### 5. DNS & domain management
 
 -   [What Are Your
     Nameservers?](/knowledge_center/index.php/nameservers)
@@ -131,7 +125,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
     Cloud](/how-to/transferring-your-domain-to-Rackspace-Cloud)
 -   [Managing DNS](/knowledge_center/index.php/Managing_DNS)
 
-### [](){#accountMGMT}6. Managing your account
+### 6. Managing your account
 
 -   [Billing services
     overview](/how-to/rackspace-cloud-essentials-1-billing-services-overview)
@@ -140,7 +134,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Generating your API
     key](/how-to/rackspace-cloud-essentials-1-generating-your-api-key-0)
 
-### [](){#serverMGMT}7. [Managing your server](/how-to/rackspace-cloud-essentials-managing-your-server)
+### 7. [Managing your server](/how-to/rackspace-cloud-essentials-managing-your-server)
 
 -   [Start a Console
     session](/how-to/managing-your-server-start-a-console-session)
