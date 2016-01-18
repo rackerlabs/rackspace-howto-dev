@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prior section
 
 **[Rackspace Cloud DNS - API
-Example](/howto/rackspace-cloud-dns-api-example)**
+Example](/how-to/rackspace-cloud-dns-api-example)**
 
 **Resources**
 
@@ -59,5 +59,5 @@ message in a way that can be validated by a recipient.
 ### Next steps
 
 [**Rackspace Cloud DNS - Frequently Asked
-Questions**](/howto/rackspace-cloud-dns-faq)
+Questions**](/how-to/rackspace-cloud-dns-faq)
 

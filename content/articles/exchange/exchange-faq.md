@@ -61,7 +61,7 @@ folders](http://www.rackspace.com/knowledge_center/article/microsoft-exchange-pu
 administrator through the Cloud Office control panel. To learn more
 about adding the license please read the following article
 - </span>[Adding An Activesync/BES
-license](/howto/add-an-activesync-or-bes-license).
+license](/how-to/add-an-activesync-or-bes-license).
 
 ^[back\\ to\\ top](#top)^
 

@@ -32,11 +32,11 @@ This article assumes you have already done the following:
 For information on how to do this, see the following articles:
 
 -   [How do I change my site's default
-    technology?](/howto/change-your-sites-default-technology "How do I change my site's default technology?")
+    technology?](/how-to/change-your-sites-default-technology "How do I change my site's default technology?")
 -   [How do I add a MySQL database to my
-    site?](/howto/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
+    site?](/how-to/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
 -   [How do I add content to my
-    website?](/howto/getting-started-with-cloud-sites-uploading-your-content "How do I add content to my website?")
+    website?](/how-to/getting-started-with-cloud-sites-uploading-your-content "How do I add content to my website?")
 
 CakePHP installation
 --------------------

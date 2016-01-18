@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: full_html
 ---
 
-[](){#top}
+<a href="" id="top"></a>
 
 This article describes the procedures that are necessary to restore your
 Windows server to a working state automatically after a reboot. After
@@ -24,7 +24,7 @@ Windows server has rebooted.
 2.  [Automatically start all critical services](#crit)
 3.  [Perform a test reboot](#test)
 
-[](){#verify}
+<a href="" id="verify"></a>
 
 Verify that your server is fully patched
 ----------------------------------------
@@ -78,7 +78,7 @@ pending updates.
 [back to top](#top)
 
 
-[](){#crit}
+<a href="" id="crit"></a>
 
 Automatically start all critical services
 -----------------------------------------
@@ -121,7 +121,7 @@ grab all services that have an automatic startup:
 [back to top](#top)
 
 
-[](){#test}
+<a href="" id="test"></a>
 
 Perform a test reboot
 ---------------------

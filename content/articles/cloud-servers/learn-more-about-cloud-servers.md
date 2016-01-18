@@ -15,31 +15,31 @@ Looking for information about Cloud Servers? The following sections contain link
 The basics
 ----------
 
-[About regions](/howto/about-regions): Explains the concept of regions as they relate to Cloud Servers.
+[About regions](/how-to/about-regions): Explains the concept of regions as they relate to Cloud Servers.
 
-[Private and Public Access](/howto/private-and-public-access-to-your-cloud-server): Provides details about public and private IP addresses assigned to cloud servers.
+[Private and Public Access](/how-to/private-and-public-access-to-your-cloud-server): Provides details about public and private IP addresses assigned to cloud servers.
 
-[Connect to a cloud server](/howto/connect-to-a-cloud-server): Explains how to remotely log in to your server.
+[Connect to a cloud server](/how-to/connect-to-a-cloud-server): Explains how to remotely log in to your server.
 
-[Managing My Server](/howto/managing-my-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
+[Managing My Server](/how-to/managing-my-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
 
 Best practices
 --------------
 
 [Choosing the Right Size Server](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-choosing-the-right-size-cloud-server): Explains how to determine the right size and operating system image for a new server.
 
-[Using Cloud Servers Tags](/howto/using-cloud-servers-tags): Explains how to use tags to organize your cloud infrastructure.
+[Using Cloud Servers Tags](/how-to/using-cloud-servers-tags): Explains how to use tags to organize your cloud infrastructure.
 
-[Configuring basic security](/howto/configuring-basic-security-0): Provides information about how to secure your new server.
+[Configuring basic security](/how-to/configuring-basic-security-0): Provides information about how to secure your new server.
 
-[Rebuild a Cloud Server](/howto/rebuild-a-cloud-server): Describes how to rebuild a server by using the Cloud Control Panel.
+[Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server): Describes how to rebuild a server by using the Cloud Control Panel.
 
 Additional resources
 --------------------
 
 [Calculating Price](http://www.rackspace.com/calculator): Helps you determine the cost of creating a new cloud server.
 
-[FAQ](/howto/cloud-servers-faq): Answers frequently asked questions about Cloud Servers.
+[FAQ](/how-to/cloud-servers-faq): Answers frequently asked questions about Cloud Servers.
 
 [Product
 Page](http://www.rackspace.com/cloud/servers): Provides product information about Cloud Servers.

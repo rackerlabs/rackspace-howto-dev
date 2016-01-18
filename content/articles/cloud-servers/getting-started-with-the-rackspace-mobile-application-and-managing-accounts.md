@@ -70,11 +70,11 @@ default configuration details.
     select your Operating System type and version
 -   Select the flavor class you want for your server
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3SelectFlavorClassScreen.png){width="300"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3SelectFlavorClassScreen.png" width="300" />
 -   Select the flavor (includes CPU, RAM and disk) on the resulting
     screen
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4SelectFlavorScreen.png){width="300"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4SelectFlavorScreen.png" width="300" />
 -   Once you return to the Select Options page, tap **Create Server**.
 
 You will be returned to the Server List where you will see your new
@@ -90,7 +90,7 @@ your Server Details page you will be able to Rebuild, Reboot, and Rename
 your server.
 **Note**: If you need to changed the size of your server, see [Changing
 the size of your General Purpose Cloud
-Server](/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 -   #### Rebuild
 

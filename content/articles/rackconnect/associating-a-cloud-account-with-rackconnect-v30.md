@@ -34,7 +34,7 @@ network device roles, along with the stored settings needed to make
 these devices function with RackConnect. You may have multiple
 RackConnect configurations. A configuration is normally associated with
 one or more cloud accounts. Please view the [RackConnect Key
-Terms](/howto/rackconnect-key-terms)
+Terms](/how-to/rackconnect-key-terms)
 article for further details.
 
 Once you have linked your cloud accounts with your dedicated account,
@@ -48,7 +48,7 @@ cloud account with one of your RackConnect v3.0 configurations, a ticket
 will automatically be generated for us, where we will work with you to
 fully configure the cloud account for use with RackConnect v3.0. Please
 view the [RackConnect v3.0
-Requirements](/howto/rackconnect-v30-requirements)
+Requirements](/how-to/rackconnect-v30-requirements)
 article for further details.
 
 Details on linking and associating a cloud account are listed below.
@@ -61,8 +61,7 @@ Details on Creating a New Cloud Account or Linking an Existing Cloud Account
     navigate to **Products** &gt; **Rackspace Cloud**.
 2.  Near the top of the screen, there are "Link Cloud Account" or
     "Create Cloud Account" options:
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RCv3-link-create-cloud-account_2.png){width="793"
-    height="228"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RCv3-link-create-cloud-account_2.png" width="793" height="228" />
 3.  Select the appropriate option, and follow the guide to complete the
     process
 
@@ -82,15 +81,14 @@ Details on Associating a Cloud Account with your RackConnect v3.0 Configuration
     sign (+) under the RackConnect column to associate a cloud account
     with one of your RackConnect configurations. In most cases, you have
     only one RackConnect configuration:
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RCv3-associate-to-RCv3-config_1.png){width="906"
-    height="140"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RCv3-associate-to-RCv3-config_1.png" width="906" height="140" />
 
 
 
 We hope that you have found this article helpful. If you have further
 questions, we are always here to help, so please reach out to us.
  Contact information is available on our [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 
 
 

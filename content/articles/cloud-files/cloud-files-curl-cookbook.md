@@ -20,59 +20,59 @@ several protocols, including HTTP. This article describes how to install
 cURL, its basic functions, and how to use it with Cloud Files.
 
 -   [cURL
-    Installation](/howto/cloud-files-curl-cookbook)
+    Installation](/how-to/cloud-files-curl-cookbook)
 -   [cURL
-    Basics](/howto/cloud-files-curl-cookbook)
+    Basics](/how-to/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    Get](/howto/cloud-files-curl-cookbook)
+    Get](/how-to/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    POST](/howto/cloud-files-curl-cookbook)
+    POST](/how-to/cloud-files-curl-cookbook)
 -   [Performing an HTTP
-    PUT](/howto/cloud-files-curl-cookbook)
+    PUT](/how-to/cloud-files-curl-cookbook)
 -   [Viewing the HTTP
-    headers](/howto/cloud-files-curl-cookbook)
+    headers](/how-to/cloud-files-curl-cookbook)
 -   [Viewing more HTTP debug
-    information](/howto/cloud-files-curl-cookbook)
+    information](/how-to/cloud-files-curl-cookbook)
 -   [Sending HTTP
-    headers](/howto/cloud-files-curl-cookbook)
+    headers](/how-to/cloud-files-curl-cookbook)
 
 **Authenticating with the API**
 
 -   [Authenticating with the
-    API](/howto/cloud-files-curl-cookbook)
+    API](/how-to/cloud-files-curl-cookbook)
 
 **Cloud Files cURL Recipes**
 
 -   [Storage
-    recipes](/howto/cloud-files-curl-cookbook)
+    recipes](/how-to/cloud-files-curl-cookbook)
 -   [Listing
-    containers](/howto/cloud-files-curl-cookbook)
+    containers](/how-to/cloud-files-curl-cookbook)
 -   [Creating a
-    container](/howto/cloud-files-curl-cookbook)
+    container](/how-to/cloud-files-curl-cookbook)
     -   [Deleting a
-        Container](/howto/cloud-files-curl-cookbook)
+        Container](/how-to/cloud-files-curl-cookbook)
     -   [Downloading an
-        object](/howto/cloud-files-curl-cookbook)
+        object](/how-to/cloud-files-curl-cookbook)
     -   [Uploading an
-        object](/howto/cloud-files-curl-cookbook)
+        object](/how-to/cloud-files-curl-cookbook)
     -   [Deleting an
-        object](/howto/cloud-files-curl-cookbook)
+        object](/how-to/cloud-files-curl-cookbook)
     -   [Performing a server side
-        copy](/howto/cloud-files-curl-cookbook)
+        copy](/how-to/cloud-files-curl-cookbook)
     -   [Updating object
-        headers](/howto/cloud-files-curl-cookbook)
+        headers](/how-to/cloud-files-curl-cookbook)
 -   [CDN
-    recipes](/howto/cloud-files-curl-cookbook)
+    recipes](/how-to/cloud-files-curl-cookbook)
     -   [Listing CDN enabled
-        containers](/howto/cloud-files-curl-cookbook)
+        containers](/how-to/cloud-files-curl-cookbook)
     -   [CDN enabling a
-        container](/howto/cloud-files-curl-cookbook)
+        container](/how-to/cloud-files-curl-cookbook)
     -   [Viewing a container's CDN
-        details](/howto/cloud-files-curl-cookbook)
+        details](/how-to/cloud-files-curl-cookbook)
     -   [Updating a CDN's container
-        attributes ](/howto/cloud-files-curl-cookbook)
+        attributes ](/how-to/cloud-files-curl-cookbook)
     -   [Purging an
-        object](/howto/cloud-files-curl-cookbook)
+        object](/how-to/cloud-files-curl-cookbook)
 
 **cURL installation**
 ---------------------
@@ -107,8 +107,8 @@ from the[Downloads page](http://www.curl.com/download/). The Windows
 binary will require installation of some Microsoft Visual C++ libraries
 to work correctly.
 
-**[](){#curlbasics}cURL basics**
---------------------------------
+**<a href="" id="curlbasics"></a>cURL basics**
+----------------------------------------------
 
 cURL is a command line tool that offers a means of communicating with
 various services at a protocol level. In particular, cURL supports
@@ -119,7 +119,7 @@ level of detail.
 This section provides some basic information about how to use cURL with
 HTTP.
 
-**[](){#B}Performing an HTTP GET**
+**<a href="" id="B"></a>Performing an HTTP GET**
 
 A HTTP GET operation is what browsers typically perform to download web
 pages and images whenever you go to a website. In the same manner, you
@@ -145,7 +145,7 @@ $ curl -o index.html http://www.example.com
 $ curl http://www.example.com > index.html
 ```
 
-**[](){#C}**
+**<a href="" id="C"></a>**
 
 ### **Performing an HTTP POST**
 
@@ -166,7 +166,7 @@ $ curl -X POST -d @mydocument.json -H "Content-Type: application/json" http://ww
 You can also specify the data as a quoted string, but this can be
 unwieldy when done from the command line.
 
-**[](){#D}**
+**<a href="" id="D"></a>**
 
 ### Performing an HTTP PUT
 
@@ -183,7 +183,7 @@ file is uploaded in a standard fashion. The syntax is as follows:
 $ curl -X PUT -T myobject.jpg -H "Content-Type: image/jpeg" http://www.example.com/upload
 ```
 
-**[](){#E}**
+**<a href="" id="E"></a>**
 
 ### Viewing the HTTP headers
 
@@ -202,7 +202,7 @@ Connection: Keep-Alive
 Content-Length: 0
 ```
 
-**[](){#F}**
+**<a href="" id="F"></a>**
 
 ### **Viewing More HTTP Debug Information**
 
@@ -220,7 +220,7 @@ $ curl -v http://www.example.com
 ...
 ```
 
-**[](){#G}**
+**<a href="" id="G"></a>**
 
 ### **Sending HTTP Headers**
 
@@ -242,7 +242,7 @@ $ curl -v -H "Accept: application/xml" www.example.com
 ...
 ```
 
-[](){#H}
+<a href="" id="H"></a>
 
 Authenticating with the API
 ---------------------------
@@ -262,7 +262,7 @@ the Identity API sservice is used in the following example. To query the
 service, you need your Rackspace Cloud account username and API key.
 Instructions for locating these credentials are documented in [View and
 Reset your API
-Key](/howto/view-and-reset-your-api-key).
+Key](/how-to/view-and-reset-your-api-key).
 
 Authenticating requires sending a POST request to the Identity service
 with a document that contains your Cloud credentials. You can submit XML
@@ -346,7 +346,7 @@ request. The following authentication token will be used in the below
 recipes: 3c5c8187-2569-47e0-8a11-edadd384e12b. We will also assume that
 we will be submitting and receiving only XML documents.
 
-**[](){#I}**
+**<a href="" id="I"></a>**
 
 ### **Storage Recipes**
 
@@ -356,7 +356,7 @@ following recipes use the following example URL:
 https://storage101.ord1.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-**[](){#J}**
+**<a href="" id="J"></a>**
 
 #### **Listing Containers**
 
@@ -389,7 +389,7 @@ $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage10
 ...
 ```
 
-**[](){#K}**
+**<a href="" id="K"></a>**
 
 #### **Creating a Container**
 
@@ -404,7 +404,7 @@ $ curl -X PUT -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://st
 
 The request is accepted for processing.
 
-**[](){#L}**
+**<a href="" id="L"></a>**
 
 #### **Deleting a Container**
 
@@ -457,7 +457,7 @@ by passing some additional URL parameter options. For more detailed
 information about the available parameters and how they work, see the
 Cloud Files Developer Guide.
 
-**[](){#M}**
+**<a href="" id="M"></a>**
 
 #### **Downloading an Object**
 
@@ -473,7 +473,7 @@ curl -o option to save the HTTP response body to a file:
 $ curl -o cloud.png -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/cloud.png
 ```
 
-**[](){#N}**
+**<a href="" id="N"></a>**
 
 #### **Uploading an Object**
 
@@ -522,7 +522,7 @@ $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c818
 </html>
 ```
 
-**[](){#O}**
+**<a href="" id="O"></a>**
 
 #### **Deleting an Object**
 
@@ -543,7 +543,7 @@ $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" http
 * Closing connection #0 * SSLv3, TLS alert, Client hello (1):
 ```
 
-**[](){#P}**
+**<a href="" id="P"></a>**
 
 #### **Performing a Server Side Copy**
 
@@ -569,7 +569,7 @@ $ curl -X COPY -H "Destination: images/rackspace.jpeg" -H "X-Auth-Token: 3c5c818
 </html>
 ```
 
-**[](){#Q}**
+**<a href="" id="Q"></a>**
 
 #### **Updating Object Headers**
 
@@ -598,7 +598,7 @@ $ curl -X POST -H "Content-Type: image/jpeg" -H "X-Auth-Token: 3c5c8187-2569-47e
 </html>
 ```
 
-**[](){#R}**
+**<a href="" id="R"></a>**
 
 ### **CDN Recipes**
 
@@ -609,7 +609,7 @@ URL:
 https://cdn2.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-**[](){#S}**
+**<a href="" id="S"></a>**
 
 #### **Listing CDN Enabled Containers**
 
@@ -624,7 +624,7 @@ files
 static
 ```
 
-**[](){#T}**
+**<a href="" id="T"></a>**
 
 #### **CDN Enabling a Container**
 
@@ -657,7 +657,7 @@ Connection: close
 Content-Type: text/plain; charset=UTF-8
 ```
 
-**[](){#U}**
+**<a href="" id="U"></a>**
 
 #### **Viewing a Container's CDN Details**
 
@@ -684,7 +684,7 @@ Connection: close
 Content-Type: text/plain; charset=UTF-8
 ```
 
-**[](){#V}**
+**<a href="" id="V"></a>**
 
 #### **Updating a Container's CDN Attributes**
 
@@ -728,7 +728,7 @@ $ curl -v -X POST -H "X-CDN-Enabled: False" -H "X-Auth-Token: 3c5c8187-2569-47e0
 <
 ```
 
-**[](){#W}**
+**<a href="" id="W"></a>**
 
 #### **Purging an Object**
 

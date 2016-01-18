@@ -39,10 +39,9 @@ for the domain pointing to your existing server (described as your
 external mail server in this documentation). Once the migration is
 complete you can switch them to the Rackspace MX records listed here:
 [Set up DNS records for Cloud Office email and Skype for
-Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
-![](http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting.png){width="617"
-height="333"}
+<img src="http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting.png" width="617" height="333" />
 
 ### **Enabling Split Domain Routing through the Cloud Office control panel:**
 
@@ -55,8 +54,7 @@ that external mail server. We will use this address only to validate the
 server. You must also open port 25 on the external mail server so that
 our system can connect to it.
 
-![](http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting2.png){width="652"
-height="281"}
+<img src="http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting2.png" width="652" height="281" />
 
 ###
 
@@ -67,15 +65,13 @@ height="281"}
 the </span>**Go To Section**<span> drop-down menu and select
 </span>**Domains**<span>.</span>
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/a.png){width="152"
-height="96"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/a.png" width="152" height="96" />
 
 <span>2. In the </span>**Tools**<span> section, select the
 </span>**Split Domain**<span> link & select the domain you want to set
 up Split Domain Routing for.</span>
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/b.png){width="235"
-height="171"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/b.png" width="235" height="171" />
 
 <span>3. Check the </span>**Enable Split Domain Routing**<span> box & in
 the </span>**External Mail Server**<span> box, enter the name of your
@@ -83,7 +79,7 @@ external mail server. In the </span>**Verification Address box**<span>,
 enter in a valid email address that is hosted on your external mail
 server and then select the </span>**Save**<span> button.</span>
 
-### ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/c.png){width="742" height="178"}
+### <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/c.png" width="742" height="178" />
 
 
 
@@ -135,13 +131,12 @@ domain alias on our system in order for this to work.</span>
     subdomain as a **domain alias**. In order to do this, please contact
     Support (chat, phone call, or open a ticket).
 
-![](http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting6.png){width="633"
-height="261"}
+<img src="http://c973967.r67.cf2.rackcdn.com/(E%26A)SplitDomainRouting6.png" width="633" height="261" />
 
 <span>If Rackspace is your DNS host, enter this sub-domain name in the
 Mail Records (MX) section of the DNS Settings page in the Control Panel.
 To learn more, please see the help topic, </span>[Manage DNS
-Records](/howto/managing-cloud-sites-email-dns-records)<span>.</span>
+Records](/how-to/managing-cloud-sites-email-dns-records)<span>.</span>
 
 *Note:* *For a migration, when changing the MX Records, ensure that you
 are changing them for the new sub-domain, e.g. rackspace.example.com,

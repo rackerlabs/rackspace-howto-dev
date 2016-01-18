@@ -19,7 +19,7 @@ Yes, but instances are provisioned only with network interfaces on their
 data center's internal service network (ServiceNet). Connecting to a
 Cloud Database instance remotely requires either a Cloud Server or Cloud
 Load Balancer to [proxy the
-connection](/howto/connect-to-a-cloud-databases-instance).
+connection](/how-to/connect-to-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
@@ -111,7 +111,7 @@ Yes. Click **Databases** in the [Cloud Control
 Panel](http://mycloud.rackspace.com/). Connecting to a Cloud Database
 instance remotely requires either a Cloud Server or Cloud Load Balancer
 to [proxy the
-connection](/howto/connect-to-a-cloud-databases-instance).
+connection](/how-to/connect-to-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
@@ -176,7 +176,7 @@ directly to your Cloud Files account for storage.
 Manual backup and restore operations are currently supported from within
 the Control Panel. For more information, please read the article
 [Managing Backups for Cloud
-Databases](/howto/managing-backups-for-cloud-databases).
+Databases](/how-to/managing-backups-for-cloud-databases).
 Alternately you can manage backup operations[via the Cloud Databases
 API](http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/backups.html),
 or by using the [Trove command line tool
@@ -254,11 +254,11 @@ Monitoring is available for all Cloud Databases instances through
 pre-configured Cloud Monitoring checks, including load average, CPU,
 memory, disk storage, network, and a number of MySQL metrics. You can
 monitor your Cloud Databases instances using the[Cloud Control
-Panel](/howto/monitoring-cloud-databases-in-the-cloud-control-panel),
+Panel](/how-to/monitoring-cloud-databases-in-the-cloud-control-panel),
 the[Cloud Monitoring
 API](http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html),
 or the [Cloud Monitoring command-line
-tool](/howto/getting-started-with-rackspace-monitoring-cli).
+tool](/how-to/getting-started-with-rackspace-monitoring-cli).
 
 You can also set up alarms to send you email alerts based on thresholds
 you define. An alert for disk space is set up by default for every
@@ -408,7 +408,7 @@ recommend our customers use the latest version of MySQL, Percona, or
 MariaDB because they offer significant performance improvements and
 newer features. For more information to help you choose the right
 database version for your application, see [Choosing the right data
-store](/howto/choosing-the-right-database-with-rackspace-cloud-databases).
+store](/how-to/choosing-the-right-database-with-rackspace-cloud-databases).
 
 ^[back\\ to\\ top](#top)^
 
@@ -492,10 +492,10 @@ Rackspace private network by default. However, you can connect to your
 database by using several methods described at the following links:
 
 [Public Vs. Private
-Access](/howto/public-and-private-access-for-cloud-databases)
+Access](/how-to/public-and-private-access-for-cloud-databases)
 
 [Connecting to Your
-Database](/howto/connect-to-a-cloud-databases-instance)
+Database](/how-to/connect-to-a-cloud-databases-instance)
 
 Additionally, you can use the Cloud Control Panel, API, or command line
 interface (CLI) to manage your database instance. Some of the features
@@ -514,7 +514,7 @@ default\_time\_zone parameter to the offset from UTC (for example,
 "-6:00" for CST).
 
 For more information, see [Setting the time zone for a Cloud Databases
-instance](/howto/setting-the-time-zone-for-a-cloud-databases-instance).
+instance](/how-to/setting-the-time-zone-for-a-cloud-databases-instance).
 
 ^[back\\ to\\ top](#top)^
 
@@ -523,9 +523,9 @@ instance](/howto/setting-the-time-zone-for-a-cloud-databases-instance).
 You can use standard MySQL client tools to import data into and export
 data from your instance. Knowledge Center articles that detail the
 processes
-of [importing](/howto/importing-data-into-cloud-databases)
+of [importing](/how-to/importing-data-into-cloud-databases)
 or
-[exporting](/howto/exporting-data-from-mysql)
+[exporting](/how-to/exporting-data-from-mysql)
 data are available.
 
 ^[back\\ to\\ top](#top)^
@@ -602,7 +602,7 @@ a future release.
 
 Technical architecture details are provided in the [High Availability
 for Cloud
-Databases](/howto/high-availability-for-cloud-databases)
+Databases](/how-to/high-availability-for-cloud-databases)
 article.
 
 ^[back\\ to\\ top](#top)^
@@ -642,7 +642,7 @@ of replicas that can be added to the HA group.
 ### Where can I find more technical details about High Availability (HA)?
 
 See the article [High Availability for Cloud
-Databases](/howto/high-availability-for-cloud-databases).
+Databases](/how-to/high-availability-for-cloud-databases).
 
 ^[back\\ to\\ top](#top)^
 
@@ -706,7 +706,7 @@ do not support replication for MySQL 5.1 as this is an older version of
 MySQL and there have been significant improvements for replication
 support in newer versions of MySQL. We highly recommend all users to
 [upgrade from MySQL 5.1 to MySQL
-5.6](/howto/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
+5.6](/how-to/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56).
 
 ^[back\\ to\\ top](#top)^
 

@@ -64,7 +64,7 @@ take no more than a few minutes for complete provisioning.
 You should not use SSL termination when transferring certain types of
 sensitive customer data classified as [Personally Identifiable
 Information
-(PII)](/howto/definition-of-personally-identifiable-information-pii).
+(PII)](/how-to/definition-of-personally-identifiable-information-pii).
 Examples of PII include information protected by the HIPAA and
 Gramm-Leach-Bliley acts, credit card information, or any personal data
 that can result in identity theft if disclosed.
@@ -202,7 +202,7 @@ If you filter traffic to your servers by using a firewall, the best
 practice is to allow the subnet range in which your Load Balancer
 resides. For more information how to filter traffic from a load balancer
 on your servers, see [Using Cloud Load Balancers with
-RackConnect](/howto/using-cloud-load-balancers-with-rackconnect).
+RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect).
 
 ^[back\\ to\\ top](#top)^
 
@@ -228,7 +228,7 @@ in the following diagram.
 SSL Termination on Cloud Load Balancers is supported[via the
 API](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/SSLTermination-d1e2479.html)
 and [through the Cloud Control
-Panel](/howto/cloud-load-balancers-faqs).
+Panel](/how-to/cloud-load-balancers-faqs).
 SSL Termination allows users to have their secure traffic terminate at
 the load balancer with centralized certificate management. Features of
 this service are as follows:
@@ -239,7 +239,7 @@ this service are as follows:
 
 **Note** : SSL Termination should not be used when transferring certain
 types of [Personally Identifiable Information
-(PII)](/howto/definition-of-personally-identifiable-information-pii)
+(PII)](/how-to/definition-of-personally-identifiable-information-pii)
 .
 
 ^[back\\ to\\ top](#top)^

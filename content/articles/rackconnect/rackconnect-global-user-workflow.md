@@ -19,7 +19,7 @@ between Rackspace and your off-premises data centers or your
 infrastructure at other cloud hosting providers, such as Microsoft
 Azure. It allows you to share application workloads and data across
 environments.  Please see
-</span><http://www.rackspace.com/cloud/hybrid/rackconnect/global><span
+</span><a href="http://www.rackspace.com/cloud/hybrid/rackconnect/global" class="uri" class="external-link">http://www.rackspace.com/cloud/hybrid/rackconnect/global</a><span
 class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"> for more
 details on the product.</span>
 

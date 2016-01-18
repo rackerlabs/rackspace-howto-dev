@@ -10,10 +10,9 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-[Phusion's
-Passenger](http://www.modrails.com/ "http://www.modrails.com/"){.external
-.text} (mod\_rails) is an exciting development in serving your Ruby on
-Rails application with the Apache web server.
+<a href="http://www.modrails.com/" class="external text" title="http://www.modrails.com/">Phusion's Passenger</a>
+(mod\_rails) is an exciting development in serving your Ruby on Rails
+application with the Apache web server.
 
 Incredibly simple to install and use, you can have a rails application
 up and running in no time. You don't have to worry about ports or
@@ -21,7 +20,7 @@ setting up a proxy to another server.
 
 ------------------------------------------------------------------------
 
-[](){#Prerequisites}
+<a href="" id="Prerequisites"></a>
 
 <span class="mw-headline">Prerequisites </span>
 -----------------------------------------------
@@ -29,7 +28,7 @@ setting up a proxy to another server.
 -   Install Apache
 -   Install Ruby and Rubygems
 
-[](){#mod_rails_installation}
+<a href="" id="mod_rails_installation"></a>
 
 <span class="mw-headline">mod\_rails installation </span>
 ---------------------------------------------------------
@@ -98,7 +97,7 @@ apache2.conf:
        PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-2.0.6
        PassengerRuby /usr/bin/ruby1.8
 
-[](){#Apache_restart}
+<a href="" id="Apache_restart"></a>
 
 <span class="mw-headline">Apache restart </span>
 ------------------------------------------------

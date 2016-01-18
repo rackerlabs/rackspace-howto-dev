@@ -53,8 +53,7 @@ If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
 last time stamp.
 
-![](/knowledge_center/sites/default/files/field/image/preset1.1_0.png){width="640"
-height="50"}
+<img src="/knowledge_center/sites/default/files/field/image/preset1.1_0.png" width="640" height="50" />
 
 Working with custom graphs
 --------------------------
@@ -76,19 +75,19 @@ focus:
 Click **Visualize** at the top of the interface, click **Custom
 Graphs**, and then choos your focus.
 
-### [](){#explore-metric}Explore a metric
+### <a href="" id="explore-metric"></a>Explore a metric
 
 When you focus on a single metric, you can simultaneously view that
 metric on any of the entities you have defined. For example, you can
 choose to see the percentage of idle time for all your entities.
 
-### [](){#explore-entity}Explore an entity
+### <a href="" id="explore-entity"></a>Explore an entity
 
 When you focus on a single entity, you can simultaneously view any of
 the metrics available for that entity. For example, you can choose to
 see the entity's percentage of idle time and its maximum usage.
 
-### [](){#generate-graphs}Generate graphs
+### <a href="" id="generate-graphs"></a>Generate graphs
 
 After you have selected the combination of entities and metrics that you
 want to view, click **Generate Graphs**.

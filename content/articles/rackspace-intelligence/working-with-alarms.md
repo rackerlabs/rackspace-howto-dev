@@ -67,10 +67,10 @@ alarm names listed with it.
 -   Connection time
 
 Before you can create an alarm, you must have [created a
-check](/howto/working-with-checks).
+check](/how-to/working-with-checks).
 
-[](){#create-alarm}Create an alarm
-----------------------------------
+<a href="" id="create-alarm"></a>Create an alarm
+------------------------------------------------
 
 To create a new alarm, complete the following steps:
 
@@ -79,15 +79,13 @@ To create a new alarm, complete the following steps:
 2.  In the **Monitoring** section, click the entity for which you want
     to define an alarm.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-entities-list.png){width="871"
-    height="506"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-entities-list.png" width="871" height="506" />
 
     On the entity overview page, in the **Monitoring Checks** section,
     select the check for which you want to create the alarm and click
     on it.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-select-check.png){width="893"
-    height="522"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-select-check.png" width="893" height="522" />
 
 3.  In the **Monitoring Checks** section of the entity details page,
     click the check for which you want to create the alarm.
@@ -132,15 +130,14 @@ To create a new alarm, complete the following steps:
     **Test Alarm** returns either a **Warning** or **Critical**
     result.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-test-critical.png){width="757"
-    height="533"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-test-critical.png" width="757" height="533" />
 9.  After you have tested your alarm, click **Create Alarm**.
 
 After the alarm is successfully created, a new alarm details page
 displays the alarm and shows that the alarm has been created.
 
-[](){#editalarm}Edit an alarm
------------------------------
+<a href="" id="editalarm"></a>Edit an alarm
+-------------------------------------------
 
 To edit an alarm, click the **Actions** menu on the alarm details page.
 
@@ -151,14 +148,14 @@ You can perform the following editing actions for alarms:
 -   [Edit the alarm criteria](#editalarmcriteria)
 -   [Delete an alarm](#deletealarm)
 
-### [](){#renamealarm}Rename an alarm
+### <a href="" id="renamealarm"></a>Rename an alarm
 
 1.  From the **Actions** menu on the alarm details page, select **Rename
     Alarm**.
 2.  In the Rename Alarm dialog box, type a new name in the **Alarm
     Name** box, and click **Save**.
 
-### [](){#editnotificationplan}Edit a notification plan
+### <a href="" id="editnotificationplan"></a>Edit a notification plan
 
 1.  From the **Actions** menu on the alarm details page, select **Edit
     Notification Plan**.
@@ -166,7 +163,7 @@ You can perform the following editing actions for alarms:
     notification plan from the **Notification Plan** list, and click
     **Save**.
 
-### [](){#editalarmcriteria}Edit the alarm criteria
+### <a href="" id="editalarmcriteria"></a>Edit the alarm criteria
 
 1.  From the **Actions** menu on the alarm details page, select **Edit
     Criteria**.
@@ -188,7 +185,7 @@ criteria, click the arrow next to **Help Guide and Example Criteria**.
 **Important:** If you update an alarm in advanced mode, you can no
 longer view the alarm criteria in basic mode.
 
-### [](){#deletealarm}Delete an alarm
+### <a href="" id="deletealarm"></a>Delete an alarm
 
 1.  From the **Actions** menu on the alarm details page,
     select **Delete**.
@@ -209,7 +206,7 @@ create alarms for different check types.
 -   [Create an alarm for an agent check type without an agent
     installed](#createagenttypealarmwithoutagent)
 
-### [](){#createalarmforremotecheck}Create an alarm for a remote check type
+### <a href="" id="createalarmforremotecheck"></a>Create an alarm for a remote check type
 
 This example provides steps for creating an alarm for an HTTP check.
 This alarm is remote and does not require a monitoring agent to be
@@ -245,7 +242,7 @@ installed. These steps assume that you already created an HTTP check.
 
 The new alarm is displayed on the alarm details page.
 
-### [](){#createagenttypealarmwithagent}Create an alarm for an agent check type with an agent installed
+### <a href="" id="createagenttypealarmwithagent"></a>Create an alarm for an agent check type with an agent installed
 
 This example provides steps for creating an alarm for a file system
 check. This alarm is an agent-type alarm and requires a monitoring agent
@@ -268,11 +265,10 @@ system check.
     left side of the section.
 7.  After you have successfully tested your alarm, click **Create
     Alarm**.
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-filesystem-alarm-settings.png){width="850"
-    height="581"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-filesystem-alarm-settings.png" width="850" height="581" />
     The new alarm is displayed on the alarm details page.
 
-### [](){#createagenttypealarmwithoutagent}Create an alarm for an agent check type without an agent installed
+### <a href="" id="createagenttypealarmwithoutagent"></a>Create an alarm for an agent check type without an agent installed
 
 This example provides steps for creating an alarm for a CPU check. This
 alarm is an agent-type alarm and requires a monitoring agent to be

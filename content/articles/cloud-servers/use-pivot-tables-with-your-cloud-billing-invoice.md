@@ -49,24 +49,21 @@ different ways.
 6.  Open the CSV in your spreadsheet program
     If prompted, separate values on **comma**
 
-           ![Select 'comma'
-separation.](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1%20-%20billing_import_circle.png){width="593"
-height="565"}
+
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1%20-%20billing_import_circle.png" alt="Select &#39;comma&#39; separation." width="593" height="565" />
 
 7.  Click the small blank square at the top left of the spreadsheet to
     select all values
 
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2%20-%20billing_SelectAll_arrow.png){width="314"
-height="268"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2%20-%20billing_SelectAll_arrow.png" width="314" height="268" />
 
 8.  Copy the data to your clipboard
 9.  Open the file that you downloaded in step 1
 10. Paste the CSV data into the **Invoice CSV Data** worksheet
 
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3%20-%20billing_csvTab_arrow.png){width="538"
-height="130"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3%20-%20billing_csvTab_arrow.png" width="538" height="130" />
 
 11. In each of the three pivot tables (worksheets), right-click in the
     pivot table and select **Refresh Data**

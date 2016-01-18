@@ -37,7 +37,7 @@ body_format: tinymce
 
 ------------------------------------------------------------------------
 
-### [](){#aa1}API Operations
+### <a href="" id="aa1"></a>API Operations
 
 -   Servers
     -   List Servers
@@ -80,7 +80,7 @@ body_format: tinymce
 
 ### cURL
 
-#### [](){#aa2}Code Sample &ndash; Add User To Your Account Through API (cURL)
+#### <a href="" id="aa2"></a>Code Sample &ndash; Add User To Your Account Through API (cURL)
 
 To add a user to your account through the API, you can do the following:
 
@@ -122,7 +122,7 @@ You can also update or delete a user.
 
 ### XML
 
-#### [](){#aa3}Code Sample: Create Server Request (XML)
+#### <a href="" id="aa3"></a>Code Sample: Create Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns="http://docs.openstack.org/compute/api/v1.1" imageRef="5f68715f-201f-4600-b5a1-0b97e2b1cb31" flavorRef="2" diskConfig="auto" name="new-server-test" min_count="1" max_count="1">
@@ -144,7 +144,7 @@ You can also update or delete a user.
         </personality>
     </server>
 
-#### [](){#aa4}Code Sample: Create Server Response (XML)
+#### <a href="" id="aa4"></a>Code Sample: Create Server Response (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns:OS-DCF="http://docs.openstack.org/compute/ext/disk_config/api/v1.1" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://docs.openstack.org/compute/api/v1.1" id="827bf583-0b54-4526-b58b-8c3dca04ab28" adminPass="123456789abc" OS-DCF:diskConfig="AUTO">
@@ -153,7 +153,7 @@ You can also update or delete a user.
         <atom:link href="https://dfw.servers.api.rackspacecloud.com/123456/servers/827bf583-0b54-4526-b58b-8c3dca04ab28" rel="bookmark"/>
     </server>
 
-#### [](){#aa5}Code Sample:  Get Server Details Response (XML)
+#### <a href="" id="aa5"></a>Code Sample:  Get Server Details Response (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns:RAX-SERVER="http://docs.rackspace.com/servers/api/ext/server_bandwidth/" xmlns="http://docs.openstack.org/compute/api/v1.1" xmlns:atom="http://www.w3.org/2005/Atom" id="52415800-8b69-11e0-9b19-734f000004d2" tenant_id="1234" user_id="5678" name="sample-server" status="BUILD" updated="2010-10-10T12:00:00Z" created="2010-08-10T12:00:00Z" progress="60" hostId="e4d909c290d0fb1ca068ffaddf22cbd0" accessIPv4="67.23.10.132" accessIPv6="::babe:67.23.10.132">
@@ -188,7 +188,7 @@ You can also update or delete a user.
         </RAX-SERVER:bandwidth>
     </server>
 
-#### [](){#aa6}Code Sample:  Reboot Server Request (XML)
+#### <a href="" id="aa6"></a>Code Sample:  Reboot Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <reboot xmlns="http://docs.openstack.org/compute/api/v1.1" type="HARD"/>
@@ -197,7 +197,7 @@ You can also update or delete a user.
 
 ### JSON
 
-#### [](){#aa7}Code Sample:  Create Server Request (JSON)
+#### <a href="" id="aa7"></a>Code Sample:  Create Server Request (JSON)
 
     {
         "server": {
@@ -225,7 +225,7 @@ You can also update or delete a user.
         }
     }
 
-#### [](){#aa8}Code Sample: Create Server Response (JSON)
+#### <a href="" id="aa8"></a>Code Sample: Create Server Response (JSON)
 
     {
         "server": {
@@ -242,7 +242,7 @@ You can also update or delete a user.
         }
     }
 
-#### [](){#aa9}Code Sample:  Get Server Details Response (JSON)
+#### <a href="" id="aa9"></a>Code Sample:  Get Server Details Response (JSON)
 
     {
         "server": {
@@ -309,7 +309,7 @@ You can also update or delete a user.
         }
     }
 
-#### [](){#aa10}Code Sample:  Reboot Server Request (JSON)
+#### <a href="" id="aa10"></a>Code Sample:  Reboot Server Request (JSON)
 
     {
         "reboot": {
@@ -319,7 +319,7 @@ You can also update or delete a user.
 
 ------------------------------------------------------------------------
 
-[](){#aa11}**Legal Disclaimer**
+<a href="" id="aa11"></a>**Legal Disclaimer**
 
 This information is intended for software developers who want to develop
 applications by using the next generation Rackspace Cloud Servers

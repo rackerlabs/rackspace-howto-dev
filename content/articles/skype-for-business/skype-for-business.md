@@ -18,32 +18,32 @@ Skype for Business service to your users will vary.
 
 -   [Microsoft Skype for Business at Rackspace: Compare the Standard and
     Enterprise
-    licenses](/howto/microsoft-lync-at-rackspace-compare-the-standard-and-enterprise-licenses)
+    licenses](/how-to/microsoft-lync-at-rackspace-compare-the-standard-and-enterprise-licenses)
 -   [Hosted Microsoft Skype for Business deployment
-    guide](rackspace.com/howto/hosted-microsoft-lync-at-rackspace-deployment-guide)
+    guide](rackspace.com/how-to/hosted-microsoft-lync-at-rackspace-deployment-guide)
 -   [Set up DNS records for email and Hosted Microsoft Skype for
-    Business](/howto/set-up-dns-records-for-email-and-hosted-lync)
+    Business](/how-to/set-up-dns-records-for-email-and-hosted-lync)
 
 ###  Work with Hosted Skype for Business
 
 -   [Work with contacts and
-    conversations](https://admin.rackspace.com/howto/hosted-lync-work-with-contacts-and-conversations)
+    conversations](https://admin.rackspace.com/how-to/hosted-lync-work-with-contacts-and-conversations)
 -   [Work with audio and voice
-    calls](https://admin.rackspace.com/howto/hosted-lync-work-with-audio-and-voice-calls)
+    calls](https://admin.rackspace.com/how-to/hosted-lync-work-with-audio-and-voice-calls)
 -   [Work with video
-    calls](/howto/hosted-lync-work-with-video-calls)
+    calls](/how-to/hosted-lync-work-with-video-calls)
 -   [Share and
-    collaborate](/howto/hosted-lync-share-and-collaborate)
+    collaborate](/how-to/hosted-lync-share-and-collaborate)
 
 ###  Set up a client
 
 -   [Help Tool for hosted Email and Microsoft Skype for
-    Business](/howto/help-tool-for-hosted-email-and-lync)
+    Business](/how-to/help-tool-for-hosted-email-and-lync)
 
 ###  Frequently asked questions
 
 -   [Can I add everyone in the domain automatically to my Microsoft
     Skype for Business
-    contacts?](/howto/can-i-add-everyone-in-the-domain-automatically-to-lync-contacts)
+    contacts?](/how-to/can-i-add-everyone-in-the-domain-automatically-to-lync-contacts)
 -   [Microsoft Office FAQ about Skype for
     Business](https://support.office.microsoft.com/en-us/article/FAQ-about-Lync-a0b87a3e-016a-410e-bb0c-77d4b5654041?CTT=5&origin=HA103065025&CorrelationId=a66ece08-6a45-4a14-aba0-ad05cf4a94a2&ui=en-US&rs=en-US&ad=US#_Toc382835950)

@@ -13,7 +13,7 @@ body_format: tinymce
 If you would like to learn more about the differences between Post
 Office Protocol (POP) and Internet Message Access Protocol (IMAP), see
 the help topic, [POP vs.
-IMAP](/howto/imap-and-pop-mail-protocol-comparison).
+IMAP](/how-to/imap-and-pop-mail-protocol-comparison).
 
 For increased security, we recommend that you use our Secure Sockets
 Layer (SSL) servers as detailed below.

@@ -35,7 +35,7 @@ the cloud control panel as pictured below. To send more than the free
 50,000 emails/month with the basic plan, you will need to pick a paid
 plan in the Mailgun control panel.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3231-newimg_0.png){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3231-newimg_0.png" width="700" />
 
 For more information on Mailgun pricing for Rackspace customers, please
 visit their [Rackspace pricing page](http://www.mailgun.com/rackspace).
@@ -117,7 +117,7 @@ can be forwarded to your application via the use of an HTTP POST or your
 inbox. The screenshot below presents an example route from the Mailgun
 control panel.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3231-newimg2_0.png){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-3231-newimg2_0.png" width="700" />
 
 Routes can be created for static email addresses and for a regular
 expression (regex) pattern match. They are also available to forward an

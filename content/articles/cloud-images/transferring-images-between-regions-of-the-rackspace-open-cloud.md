@@ -34,7 +34,7 @@ Before we get into the details, consider the following information:
         server just like the one you have in the source region.
 -   Because not all images are exportable, not all images can
     be transferred. See [How can I tell if an image can
-    exported?](/howto/cloud-images-faq)
+    exported?](/how-to/cloud-images-faq)
     in the Cloud Images FAQ for details.
 -   Cloud Images is currently accessible only through the [Cloud Images
     v2
@@ -170,9 +170,9 @@ How exactly you accomplish this is up to you. Here are some suggestions:
 -   Use [turbolift](https://github.com/cloudnull/turbolift).
 -   Use [swiftly](https://github.com/gholt/swiftly):
     -   [Using Swiftly to download an exported
-        image](/howto/use-swiftly-to-download-an-exported-image)
+        image](/how-to/use-swiftly-to-download-an-exported-image)
     -   [Using Swiftly to upload an image to be
-        imported](/howto/use-swiftly-to-upload-an-image)
+        imported](/how-to/use-swiftly-to-upload-an-image)
 
 We don't recommend using the Cloud Control Panel for this operation.
  Most images are large enough you would likely have a poor user
@@ -282,6 +282,6 @@ Related information
 -   [Rackspace Cloud Images Developer
     Guide](http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html)
 -   [Cloud Images
-    FAQ](/howto/cloud-images-faq)
+    FAQ](/how-to/cloud-images-faq)
 
 

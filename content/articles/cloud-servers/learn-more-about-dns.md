@@ -14,15 +14,15 @@ The Basics
 ----------
 
 [Rackspace Name
-Servers](/howto/rackspace-name-servers "Rackspace Name Servers")
+Servers](/how-to/rackspace-name-servers "Rackspace Name Servers")
 
 [Choosing Record
-Types](/howto/choosing-dns-record-types "Choosing Record Types")
+Types](/how-to/choosing-dns-record-types "Choosing Record Types")
 
 <div>
 
 [Creating a Reverse DNS
-Record](/howto/create-a-reverse-dns-record-0)
+Record](/how-to/create-a-reverse-dns-record-0)
 
 
 
@@ -32,10 +32,10 @@ Best Practices
 --------------
 
 [Setting Up SPF and DKIM
-Records](/howto/set-up-spf-and-dkim-records)
+Records](/how-to/set-up-spf-and-dkim-records)
 
 [Transferring Your Domain to
-Rackspace](/howto/serving-your-domain-from-a-rackspace-cloud-server)
+Rackspace](/how-to/serving-your-domain-from-a-rackspace-cloud-server)
 
 
 

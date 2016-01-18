@@ -139,11 +139,9 @@ How to use the script on Windows
     **scripts.rackconnect.rackspace.com** is not part of your Trusted
     Sites. If so, add the domain to your Trusted Sites and retry step 1.
 
-    ![URL not in Trusted Sites dialog box; Clicking
-    Add](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-download2-1.png){width="550"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-download2-1.png" alt="URL not in Trusted Sites dialog box; Clicking Add" width="550" />
 
-    ![Add URL to Trusted Sites dialog box; Clicking
-    Add](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-download2-2.png){width="550"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-download2-2.png" alt="Add URL to Trusted Sites dialog box; Clicking Add" width="550" />
 
 3.  Save the script to disk.
 
@@ -155,30 +153,22 @@ How to use the script on Windows
     You might see a command prompt window briefly appear and
     then disappear. This is normal behavior.
 
-    ![Preflight script start screen; Clicking Run
-    Preflight](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-start.png){width="354"
-    height="179"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-start.png" alt="Preflight script start screen; Clicking Run Preflight" width="354" height="179" />
 
     When the script has finished gathering data, it displays a results
     report:
 
-    ![
-    True](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-fail.png){width="354"
-    height="233"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-fail.png" alt=" True" width="354" height="233" />
 
 6.  If there are any issues, click the + icon to expand the item and
     display more detail:
 
-    ![Preflight results report, Firewall error
-    expanded](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-fail-expanded.png){width="354"
-    height="255"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-fail-expanded.png" alt="Preflight results report, Firewall error expanded" width="354" height="255" />
 
 7.  After all of the issues have been resolved, repeat steps 4-5 until
     the script reports that all tests have passed:
 
-    ![Preflight results report, all tests
-    successful](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-success.png){width="354"
-    height="233"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winpreflight-success.png" alt="Preflight results report, all tests successful" width="354" height="233" />
 
 ### Disable Windows Firewall
 
@@ -196,8 +186,7 @@ disable the third by performing the following steps:
 
 2.   Click the **Windows Firewall Properties** link.
 
-    ![Windows Firewall overview page; Clicking Windows Firewall
-    Properties](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winfirewall-overview.png){width="550"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winfirewall-overview.png" alt="Windows Firewall overview page; Clicking Windows Firewall Properties" width="550" />
 
 3.  From the Windows Firewall Properties page, you can disable Windows
     Firewall for all three profiles. <span
@@ -207,10 +196,7 @@ disable the third by performing the following steps:
     Public and Private profiles if Windows Firewall is still enabled for
     either profile.
 
-    ![Windows Firewall properties; Domain Profile tab; Clicking Firewall
-    state
-    Off](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winfirewall-domainoff.png){width="408"
-    height="452"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/winfirewall-domainoff.png" alt="Windows Firewall properties; Domain Profile tab; Clicking Firewall state Off" width="408" height="452" />
 
 
 

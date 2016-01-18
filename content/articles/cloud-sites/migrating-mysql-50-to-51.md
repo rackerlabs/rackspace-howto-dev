@@ -47,26 +47,26 @@ database to a MySQL 5.1 database:
 -   Proceed to backing up your current MySQL 5.0 database.  You may wish
     to use the the process we describe in the Knowledge Center article:
     [How to backup your MySQL database with
-    phpMyAdmin](/howto/backup-your-mysql-database-with-phpmyadmin).
+    phpMyAdmin](/how-to/backup-your-mysql-database-with-phpmyadmin).
 
 ### Step 3 - Create Your New Database
 
 -   You will next need to provision a new MySQL 5.1 database to contain
     the newly migrated database.  Do this by following the instructions
     in our Knowledge Center article: [Adding a MySQL
-    Database](/howto/rackspace-cloud-sites-essentials-mysql-databases).
+    Database](/how-to/rackspace-cloud-sites-essentials-mysql-databases).
 
 ### Step 4 - Import Your Saved DB Backup
 
 -   The next step is to import your saved database backup into your
     newly provisioned MySQL 5.1 database. You should be able to use the
     [PHPmyAdmin Database Management
-    Interface](/howto/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface) to
+    Interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface) to
     handle imports for databases which are less than 16MB in size
     without issue.  There may be times where you need to import more
     than 16MB of data, in which case you should follow the directions in
     the [Cloud Sites
-    FAQ](/howto/cloud-sites-faq).
+    FAQ](/how-to/cloud-sites-faq).
 
 ### Step 5 - Update Your References
 

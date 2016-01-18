@@ -36,7 +36,7 @@ Notes</span></span></span>](https://developer.rackspace.com/docs/cloud-servers/v
 Center</span></span>**
 
 <span><span>The Rackspace </span></span>[<span><span><span>Knowledge
-Center</span></span></span>](/howto/)<span><span><span>
+Center</span></span></span>](/how-to/)<span><span><span>
 houses &ldquo;how-to&rdquo; articles, getting started guides, code samples, security
 best practices and hundreds of tips for getting the most out of your
 Cloud Servers.<span>  </span>Check out these popular
@@ -44,38 +44,38 @@ articles:</span></span></span>
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Cloud Servers:
-FAQs</span></span></span>](/howto/product-faq/cloud-servers)
+FAQs</span></span></span>](/how-to/product-faq/cloud-servers)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Getting Started with Cloud
-Servers</span></span></span>](/howto/article/getting-started-with-cloud-servers)
+Servers</span></span></span>](/how-to/article/getting-started-with-cloud-servers)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Basic Cloud Server
-Security</span></span></span>](/howto/article/basic-cloud-server-security)
+Security</span></span></span>](/how-to/article/basic-cloud-server-security)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Create an image of a server and
 restore a server from a saved
-image</span></span></span>](/howto/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+image</span></span></span>](/how-to/article/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Create DNS Records for cloud
 servers with the Control
-Panel</span></span></span>](/howto/article/create-dns-records-for-cloud-servers-with-the-control-panel)
+Panel</span></span></span>](/how-to/article/create-dns-records-for-cloud-servers-with-the-control-panel)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>CentOS 6 - Apache and PHP
-Install</span></span></span>](/howto/article/centos-6-apache-and-php-install)
+Install</span></span></span>](/how-to/article/centos-6-apache-and-php-install)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>MySQL - Connect to your database
-remotely</span></span></span>](/howto/article/mysql-connect-to-your-database-remotely)
+remotely</span></span></span>](/how-to/article/mysql-connect-to-your-database-remotely)
 
 <span><span><span>&middot;</span><span>
 </span></span></span>[<span><span><span>Install EPEL and additional
 repositories on CentOS and Red
-Hat</span></span></span>](/howto/article/install-epel-and-additional-repositories-on-centos-and-red-hat)
+Hat</span></span></span>](/how-to/article/install-epel-and-additional-repositories-on-centos-and-red-hat)
 
 <span><span> </span></span>
 

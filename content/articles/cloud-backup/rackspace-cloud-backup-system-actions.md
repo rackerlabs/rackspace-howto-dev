@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Rackspace Cloud Backup - Backup
-actions](/howto/rackspace-cloud-backup-backup-actions-0)
+actions](/how-to/rackspace-cloud-backup-backup-actions-0)
 
 How to Use System Actions
 -------------------------
@@ -48,14 +48,14 @@ The System Actions menu offers the following actions:
 
 <div>
 
-#### [](){#createbackup}Create Backup
+#### <a href="" id="createbackup"></a>Create Backup
 
 </div>
 
 Clicking **Create Backup** from the System Actions menu is the same as
 clicking Create Backup on the system screen. For complete instructions,
 see [Create a
-Backup](/howto/rackspace-cloud-backup-create-a-backup-0)
+Backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
 in this guide.
 
 -   Note: You cannot back up restore a system that is offline. If the
@@ -70,14 +70,14 @@ in this guide.
 
 <div>
 
-#### [](){#restorebackup}Restore Backup
+#### <a href="" id="restorebackup"></a>Restore Backup
 
 </div>
 
 Clicking **Restore Backup** from the System Actions menu is the same as
 clicking Restore Backup from the Single Backup Action menu. For complete
 instructions, see [*Restore
-Backup*](/howto/rackspace-cloud-backup-backup-actions-0)
+Backup*](/how-to/rackspace-cloud-backup-backup-actions-0)
 in this guide.
 
 -   Note: You cannot back up or restore to a system with an
@@ -92,7 +92,7 @@ in this guide.
 
 <div>
 
-#### [](){#encryptsystem}Encrypt System
+#### <a href="" id="encryptsystem"></a>Encrypt System
 
 </div>
 
@@ -119,9 +119,7 @@ To encrypt your backups, perform the following steps:
 
 1.  From the Systems Actions menu, select **Encrypt**.
 
-![RCBU Encryption - Enter
-passphrase](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rcbu_begin_encryption.png){width="478"
-height="441"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rcbu_begin_encryption.png" alt="RCBU Encryption - Enter passphrase" width="478" height="441" />
 
 2.  Enter a passphrase that only you know.
 3.  Enter your passphrase again.
@@ -149,7 +147,7 @@ You can change your passphrase for encryption as follows:
 
 <div>
 
-#### [](){#cleanupsystem}Cleanup System
+#### <a href="" id="cleanupsystem"></a>Cleanup System
 
 </div>
 
@@ -169,7 +167,7 @@ space in your Cloud Files account, where you backups are stored.
 
 <div>
 
-#### [](){#disablesystem}Disable System
+#### <a href="" id="disablesystem"></a>Disable System
 
 </div>
 
@@ -185,7 +183,7 @@ re-enable the system, select Enable System from the System Actions menu.
 
 <div>
 
-#### [](){#deletesystem}Delete System
+#### <a href="" id="deletesystem"></a>Delete System
 
 </div>
 
@@ -196,5 +194,5 @@ verify that this is your intention.
 ### Next steps
 
 [Rackspace Cloud Backup -
-Preferences](/howto/rackspace-cloud-backup-preferences-0)
+Preferences](/how-to/rackspace-cloud-backup-preferences-0)
 

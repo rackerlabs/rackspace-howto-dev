@@ -10,7 +10,7 @@ product: Cloud Files
 body_format: tinymce
 ---
 
-[](){#Introduction}<span
+<a href="" id="Introduction"></a><span
 style="font-size: 12.0pt; mso-bidi-font-family: Arial; color: #333333;">Rackspace
 Cloud Servers can connect to Cloud Files without bandwidth charges when
 the server and the Cloud Files account are in the same data center. This
@@ -35,7 +35,7 @@ style="font-size: 12.0pt; mso-bidi-font-family: Arial; color: #c50022;">docs.rac
 style="font-size: 12.0pt; mso-bidi-font-family: Arial; color: #333333;">.
 Code samples are available for PHP, Python, and Java.</span>
 
-[](){#Connection_Information}
+<a href="" id="Connection_Information"></a>
 
 ### <span class="mw-headline">How to Connect</span>
 

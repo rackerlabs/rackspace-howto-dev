@@ -43,7 +43,7 @@ Visit the following links to learn how to:
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
 **Note:** The Advanced Packaging Tool (APT) automatically stops and
@@ -70,7 +70,7 @@ Backup Updater that keeps the agent up to date on the system. ****
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
 **Note:** Yum automatically stops and restarts the driveclient service
@@ -91,7 +91,7 @@ up to date on the system.
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
 wish to review [Rackspace Cloud Backup - Install the agent on
-Linux](/howto/rackspace-cloud-backup-install-the-agent-on-linux)
+Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing the steps shown below.
 
 **Note:** The tarball you download in Step 3 has the most up-to-date
@@ -141,7 +141,7 @@ Example init/startup scripts are included in the tarball.
 The steps shown in this section should be run as Administrator or as a
 user with Administrator privileges. You might wish to review [Rackspace
 Cloud Backup - Install the agent on
-Windows](/howto/rackspace-cloud-backup-install-the-agent-on-windows)
+Windows](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 before performing the steps shown below.
 
 Because the Windows agent inlcudes an automated updater, there should
@@ -187,7 +187,7 @@ without APIUSER and APIKEY.
 Otherwise, updating the agent using the MSI is the same as a fresh
 install. You have all the same MSI options available. For the
 verification steps to test the update, see [Test Windows installation or
-update](/howto/rackspace-cloud-backup-install-the-agent-on-windows#testsetup).
+update](/how-to/rackspace-cloud-backup-install-the-agent-on-windows#testsetup).
 
 
 

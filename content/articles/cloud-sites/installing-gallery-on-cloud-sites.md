@@ -34,13 +34,14 @@ Contents
 -   [<span class="tocnumber">5</span> <span
     class="toctext">Success</span>](#Success)
 
-[](){#Getting_Started}
+<a href="" id="Getting_Started"></a>
 
 <span class="mw-headline">Getting Started </span>
 -------------------------------------------------
 
-If you have not already done so, goto <http://gallery.menalto.com/> and
-download the latest stable release of Gallery.
+If you have not already done so, goto
+<a href="http://gallery.menalto.com/" class="uri" class="external free" title="http://gallery.menalto.com/">http://gallery.menalto.com/</a>
+and download the latest stable release of Gallery.
 
 Here is the link that was current at the time of this article:
 
@@ -50,7 +51,7 @@ Here is the link that was current at the time of this article:
 
     http://codex.gallery2.org/Downloads
 
-[](){#Setting_up_the_Sites}
+<a href="" id="Setting_up_the_Sites"></a>
 
 <span class="mw-headline">Setting up the Sites </span>
 ------------------------------------------------------
@@ -65,7 +66,7 @@ Here is the link that was current at the time of this article:
     information provided, the hostname, database name, database username
     and, database password.)
 
-[](){#Prepare_your_data}
+<a href="" id="Prepare_your_data"></a>
 
 <span class="mw-headline">Prepare your data </span>
 ---------------------------------------------------
@@ -75,17 +76,17 @@ Here is the link that was current at the time of this article:
 2.  Open up your FTP client software and login to your new domain. If
     you are not familiar with uploading content, go here: [What FTP
     software should I
-    use?](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
+    use?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
     and use the information to connect provided here: [Getting Started
     With Cloud Sites, FTP/SSHFS/FTP
-    Clients](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients) .
+    Clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients) .
     Your best bet will be to upload everything inside the &lsquo;gallery&rsquo;
     folder contained within the .zip file you downloaded to your
     web/content folder.
 3.  Once the files have finished uploading, you are ready to get started
     with the installation of the Gallery and its settings.
 
-[](){#Configure_the_Site}
+<a href="" id="Configure_the_Site"></a>
 
 <span class="mw-headline">Configure the Site</span>
 ---------------------------------------------------
@@ -106,7 +107,7 @@ Here is the link that was current at the time of this article:
     it.
 4.  Click Start Using Gallery.
 
-[](){#Success}
+<a href="" id="Success"></a>
 
 <span class="mw-headline">Success </span>
 -----------------------------------------

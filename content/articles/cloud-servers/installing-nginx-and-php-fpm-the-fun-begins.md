@@ -13,10 +13,10 @@ body_format: tinymce
 ### Prerequisites {#prerequisites .p1}
 
 [Installing NGINX and PHP-FPM -
-Preface](/howto/installing-nginx-and-php-fpm-preface)
+Preface](/how-to/installing-nginx-and-php-fpm-preface)
 
 Now that you've [read the
-preface](/howto/installing-nginx-and-php-fpm-preface)
+preface](/how-to/installing-nginx-and-php-fpm-preface)
 and know what you're getting yourself into, It is time to get your
 system ready to install NGINX and PHP-FPM.
 
@@ -69,5 +69,5 @@ apt-get update
 ### Next steps
 
 [Installing NGINX and
-PHP-FPM](/howto/installing-nginx-and-php-fpm)
+PHP-FPM](/how-to/installing-nginx-and-php-fpm)
 

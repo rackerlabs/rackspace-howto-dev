@@ -50,8 +50,7 @@ click</span> <span> userName (accountNumber)</span><span>.</span>
 
 2\. From the menu, select **User Management.**
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/UserManagement_1.png){width="289"
-height="221"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/UserManagement_1.png" width="289" height="221" />
 
 <span>3. In the</span> **User Management**<span> box, click</span>
 **Create User**<span>.</span>
@@ -77,7 +76,7 @@ Configurations.](#configuration)
 role cannot be changed to a multi-product role through the Cloud Control
 Panel. For more information about changing a custom role to a full
 access or read-only access role see[ custom
-role](/howto/known-issues-and-suggested-workarounds-role-based-access-control-rbac).</span>
+role](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).</span>
 
 7\. In the **Contact Information** section, select the contact type.
 
@@ -169,12 +168,11 @@ same user to access to each account. In this situation, the account
 owner will need to configure that user with a different username for
 each account. The following graphic illustrates this scenario.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MutiAccountsRBAC.png){width="534"
-height="250"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MutiAccountsRBAC.png" width="534" height="250" />
 
 
 
-[&lt; Overview of RBAC ](/howto/overview-role-based-access-control-rbac)  -   [Using RBAC with MyRack &gt;](/howto/using-rbac-with-myrackspace)
+[&lt; Overview of RBAC ](/how-to/overview-role-based-access-control-rbac)  -   [Using RBAC with MyRack &gt;](/how-to/using-rbac-with-myrackspace)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

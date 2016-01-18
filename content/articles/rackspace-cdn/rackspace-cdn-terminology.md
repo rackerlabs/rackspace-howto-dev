@@ -41,7 +41,7 @@ nodes cache your content for a time frame that you set; see Time to live
 Instructions that you give to the edge nodes that explain how to handle
 the content. Caching rules and restrictions are two types of edge rules.
 For more informaiton about how to set up edge rules, see [Rackspace CDN
-edge rules](/howto/rackspace-cdn-edge-rules).
+edge rules](/how-to/rackspace-cdn-edge-rules).
 
 **Edge server**
 
@@ -89,7 +89,7 @@ The period of time that an asset is cached on the edge node before a new
 origin pull is made.
 
 [&lt; Limits for Rackspace
-CDN](/howto/limits-for-rackspace-cdn)
+CDN](/how-to/limits-for-rackspace-cdn)
 -    [Differences between Rackspace CDN and Rackspace Cloud Files
-&gt;](/howto/differences-between-rackspace-cdn-and-rackspace-cloud-files)
+&gt;](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
 

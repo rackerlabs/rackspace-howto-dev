@@ -16,11 +16,12 @@ interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
 and selecting Cloud Sites Control Panel.
 
-1.  If you have not already done so, go to <http://www.s9y.org/12.html>
+1.  If you have not already done so, go to
+    <a href="http://www.s9y.org/12.html" class="uri" class="external free" title="http://www.s9y.org/12.html">http://www.s9y.org/12.html</a>
     and download the latest full release of Serendipity.
 2.  Create your new domain from the Cloud Sites Control Panel. If you
     need assistance, please see [How do I add a
-    website?](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website)
+    website?](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website)
 3.  Once the domain has finished creating, create your database. To do
     this, click Hosting --&gt; Cloud Sites from the left sidebar, then
     select your website from the menu. Scroll down to the Website
@@ -37,7 +38,7 @@ and selecting Cloud Sites Control Panel.
     use?](/knowledge_center/index.php/What_FTP_software_should_I_use%3F "What FTP software should I use?")
     and use the information to connect provided in [Getting Started With
     Cloud Sites, FTP/SSHFS/FTP
-    Clients](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+    Clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).
     Your best bet will be to upload (to your web/content folder)
     everything inside the &lsquo;serendipity&rsquo; folder contained within the .zip
     or tar.gz file you downloaded.

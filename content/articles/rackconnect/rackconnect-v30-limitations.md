@@ -37,7 +37,7 @@ The following table describes the limitations of RackConnect v3.0.
 <tr class="even">
 <td align="left"><p><strong><strong><a href="" id="cloudnetworks"></a>Cloud Networks</strong></strong></p></td>
 <td align="left"><ul>
-<li>Cloud Networks limitations also apply to cloud networks that are associated with RackConnect v3.0. For example, Cloud Networks is currently limited to 10 isolated networks and up to 250 cloud servers per network; these limitations also apply to cloud networks that are associated with RackConnect v3.0. For a list of current Cloud Networks limitations, see the articles <a href="/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server">Create an Isolated Cloud Network</a> and <a href="/howto/cloud-networks-faq">Cloud Networks FAQ</a>.</li>
+<li>Cloud Networks limitations also apply to cloud networks that are associated with RackConnect v3.0. For example, Cloud Networks is currently limited to 10 isolated networks and up to 250 cloud servers per network; these limitations also apply to cloud networks that are associated with RackConnect v3.0. For a list of current Cloud Networks limitations, see the articles <a href="/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server">Create an Isolated Cloud Network</a> and <a href="/how-to/cloud-networks-faq">Cloud Networks FAQ</a>.</li>
 </ul>
 <ul>
 <li>Currently, only cloud servers configured with a single cloud network are supported.</li>
@@ -55,8 +55,8 @@ The following table describes the limitations of RackConnect v3.0.
 <tr class="odd">
 <td align="left"><p><strong>RackConnect v3.0</strong></p></td>
 <td align="left"><ul>
-<li>Not all of the Rackspace public cloud products are compatible with RackConnect v3.0 cloud servers. To verify which offerings are supported, see the article, <a href="/howto/rackconnect-v30-compatibility">RackConnect v3.0 Compatibility Matrix</a>.</li>
-<li>QoS: Traffic that traverses across your RackConnect v3.0 link between your cloud and dedicated environments is now bandwidth limited by Quality of Service (QoS) policies. By default, these QoS policies are set to limit bandwidth throughput to 100 Mbps (megabits per second), but with Rackspace approval, they may be increased. If you have need for more than 100 Mbps of bandwidth, please <a href="/howto/support">contact us</a> for details on potential one-off solutions.</li>
+<li>Not all of the Rackspace public cloud products are compatible with RackConnect v3.0 cloud servers. To verify which offerings are supported, see the article, <a href="/how-to/rackconnect-v30-compatibility">RackConnect v3.0 Compatibility Matrix</a>.</li>
+<li>QoS: Traffic that traverses across your RackConnect v3.0 link between your cloud and dedicated environments is now bandwidth limited by Quality of Service (QoS) policies. By default, these QoS policies are set to limit bandwidth throughput to 100 Mbps (megabits per second), but with Rackspace approval, they may be increased. If you have need for more than 100 Mbps of bandwidth, please <a href="/how-to/support">contact us</a> for details on potential one-off solutions.</li>
 <li>As with RackConnect v2.0, RackConnect v3.0 bandwidth might be limited by the capabilities of the Cloud Servers flavors that you are running, your network device's capabilities, and your dedicated server's capabilities.</li>
 <li>The default setting for RackConnect v3.0 access between cloud and dedicated network segments is to restrict all communication. During the RackConnect v3.0 implementation process and afterwards, you can provide us with details on how you want the access between your network segments configured. Alternatively, you can also setup any necessary firewall rules on your own by using the Firewall Manager feature available in the <a href="https://my.rackspace.com/">MyRackspace Portal</a>.</li>
 <li>Your devices must be deployed in a region supported by RackConnect v3.0. The regions supported, as of October 2014, are DFW, IAD, ORD, LON, HKG, and SYD.</li>
@@ -74,11 +74,11 @@ The following table describes the limitations of RackConnect v3.0.
 <td align="left"><p><strong>RackConnect v3.0 Cloud Servers</strong></p></td>
 <td align="left"><ul>
 <li>IPv6 is not currently supported.</li>
-<li>First Generation Cloud Servers are not supported. Next Generation Standard Cloud Servers, <a href="/howto/new-features-in-general-purpose-and-work-optimized-cloud-servers">Performance 1 Cloud Servers</a>, and <a href="/howto/new-features-in-general-purpose-and-work-optimized-cloud-servers">Performance 2 Cloud Servers</a> are supported.</li>
+<li>First Generation Cloud Servers are not supported. Next Generation Standard Cloud Servers, <a href="/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers">Performance 1 Cloud Servers</a>, and <a href="/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers">Performance 2 Cloud Servers</a> are supported.</li>
 <li>Currently, PublicNet network interfaces are not supported. Optionally, a single <em>Network Address Translation</em> (NAT) from a dedicated public IP address to a cloud server's cloud network IP address may be configured. This is also known as provisioning a public IP address to a RackConnect v3.0 cloud server.</li>
 <li>Currently, only cloud servers configured with a single cloud network are supported.</li>
 <li>ServiceNet network interfaces are optional for <a href="http://www.rackspace.com/managed-cloud/">Managed Infrastructure</a> service level customers, but are required for <a href="http://www.rackspace.com/managed-cloud/">Managed Operations</a> service level customers.</li>
-<li>Cloud Servers limitations also apply to RackConnect v3.0 cloud servers. For a list of current Cloud Servers limitations, see the <a href="/howto/cloud-servers-faq">Cloud Servers: FAQ</a>. Cloud Server bandwidth limitations are described in the <a href="http://www.rackspace.com/cloud/public-pricing/#cloud-servers">Rackspace Public Cloud Pricing</a> article.</li>
+<li>Cloud Servers limitations also apply to RackConnect v3.0 cloud servers. For a list of current Cloud Servers limitations, see the <a href="/how-to/cloud-servers-faq">Cloud Servers: FAQ</a>. Cloud Server bandwidth limitations are described in the <a href="http://www.rackspace.com/cloud/public-pricing/#cloud-servers">Rackspace Public Cloud Pricing</a> article.</li>
 <li>Currently, you cannot have multiple cloud network IP addresses on individual RackConnect v3.0 cloud servers.</li>
 <li>Currently, you cannot move, change, add, or remove IP addresses from RackConnect v3.0 cloud servers.</li>
 </ul></td>
@@ -88,7 +88,7 @@ The following table describes the limitations of RackConnect v3.0.
 
 If you have any questions, we are always here to help, reach out to
 us.  Contact information is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 
 
 

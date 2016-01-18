@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 **[Rackspace Cloud DNS -
-Overview](/howto/rackspace-cloud-dns-overview)**
+Overview](/how-to/rackspace-cloud-dns-overview)**
 
 **Available Features**
 
@@ -70,5 +70,5 @@ zone delegation, and create SPF records.
 ### Next steps
 
 **[Rackspace Cloud DNS - Technical
-Details](/howto/rackspace-cloud-dns-technical-details)**
+Details](/how-to/rackspace-cloud-dns-technical-details)**
 

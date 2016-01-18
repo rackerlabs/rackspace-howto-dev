@@ -17,7 +17,7 @@ corresponding RESTful API commands, and the roles that are supported.
 **[API Documentation](http://docs.rackspace.com/)**
 
 **[Related Knowledge Center
-Articles](/howto/)**
+Articles](/how-to/)**
 
 **[Cloud DNS Terminology](#Cloud%20DNS%20Terminology)**
 
@@ -47,14 +47,11 @@ Admin
 
 <span>GET /limits</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="39"
-height="37"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="39" height="37" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="39"
-height="37"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="39" height="37" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists all applicable limits.</span>
 
@@ -62,14 +59,11 @@ height="39"}
 
 <span>GET /limits/types</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists the types of limits.</span>
 
@@ -80,14 +74,11 @@ height="39"}
 /limits/*rate\_limit*,
 /limits/*domain\_record\_limit*</span><span>)</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>List assigned limits of the specified type.</span> </span>
 
@@ -97,14 +88,11 @@ height="39"}
 
 <span>GET /domains</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists all account domains. </span>
 
@@ -112,14 +100,11 @@ height="39"}
 
 <span>GET /domains?name=</span>*<span>domainName</span>*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Filters domains by domain name: lists all domains manageable by
 the account specified that exactly match the the value of the name
@@ -129,14 +114,11 @@ parameter.</span>
 
 <span>GET /domains/</span>*<span class="s1">domainId</span>*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Lists details for a specific domain. By default this call
 displays information for records but not subdomains.</span> </span>
@@ -147,14 +129,11 @@ displays information for records but not subdomains.</span> </span>
 class="s1">/changes?</span>*<span>since</span>*<span
 class="s1">=</span><span>\[date/time\]</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows all changes to the specified domain </span>`since`<span> the
 specified </span>`date/time`{.code}<span>.</span>
@@ -164,14 +143,11 @@ specified </span>`date/time`{.code}<span>.</span>
 <span>GET /domains/</span>*<span
 class="s1">domainId</span>*<span>/export</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Exports details of the specified domain.</span> </span>
 
@@ -179,14 +155,11 @@ height="39"}
 
 <span>GET /domains/search{?name}</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 Searches domains by domain name: lists all names manageable by the
 specified account that have the value of the name parameter as part of
@@ -198,11 +171,9 @@ their name.
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a new domain.</span>
 
@@ -212,11 +183,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates specified domain</span><span> by cloning domain with
 id</span><span>*domainId*</span><span>. </span>
@@ -227,11 +196,9 @@ id</span><span>*domainId*</span><span>. </span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Imports a new domain with the configuration specified by the
 request.</span>
@@ -242,11 +209,9 @@ request.</span>
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Modifies the configuration of a domain.</span> </span>
 
@@ -256,11 +221,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Modifies multiple domains.</span>
 
@@ -272,8 +235,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Removes a domain.</span> </span>
 
@@ -286,8 +248,7 @@ class="s1">domainId</span>*<span>?deleteSubdomains=true</span>
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Removes a domain and all its subdomains.</span> </span>
 
@@ -299,8 +260,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Removes multiple domains.</span>
 
@@ -314,8 +274,7 @@ class="s1">domainId2</span>*<span>&deleteSubdomains=true</span>
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Removes multiple domains and their
 subdomains.</span> </span>
@@ -327,14 +286,11 @@ subdomains.</span> </span>
 <span>GET /domains/</span>*<span
 class="s1">domainId</span>*<span>/subdomains</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists domains that are subdomains of the specified domain.</span>
 
@@ -345,14 +301,11 @@ height="39"}
 <span>GET /domains/</span>*<span
 class="s1">domainId</span>*<span>/records</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists all records configured for the domain.  </span>
 
@@ -363,14 +316,11 @@ class="s1">/records?type=</span><span>record\_type</span><span
 class="s1"> &name=</span><span>record\_name</span><span
 class="s1"> &data=</span><span>record\_data</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists all records for the specified domain of the specified type
 that match the specified *`name`* and/or *`data`*. </span>
@@ -381,14 +331,11 @@ that match the specified *`name`* and/or *`data`*. </span>
 class="s1">domainId</span>*<span>/records/</span>*<span
 class="s1">recordId</span>*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Lists details for a specific record.</span> </span>
 
@@ -399,11 +346,9 @@ class="s1">domainId</span>*<span>/records</span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Adds new record(s) to the domain.</span> </span>
 
@@ -415,11 +360,9 @@ class="s1">recordId</span>*
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Modifies the configuration of a record in the domain.</span>
 
@@ -430,11 +373,9 @@ class="s1">domainId</span>*<span>/records</span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Modifies the configuration of records in the domain.</span>
 
@@ -448,8 +389,7 @@ class="s1">recordId</span>*
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Removes a record from the domain.</span> </span>
 
@@ -464,8 +404,7 @@ class="s1">recordId2</span>*
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Removes multiple records from the domain.</span> </span>
 
@@ -481,14 +420,11 @@ service you are associating the PTR record with.
 <span class="s1">GET /rdns/</span>*<span>service\_name</span>*<span
 class="s1">?href=</span>*<span>device-resource-uri</span>*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Lists all PTR records configured for a Rackspace Cloud
 device.</span> </span>
@@ -499,14 +435,11 @@ device.</span> </span>
 class="s1">/</span>*<span>recordId</span>*<span
 class="s1">?href=</span>*<span>device-resource-uri</span>*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Lists details for a specific PTR record associated with a
 Rackspace Cloud device.</span> </span>
@@ -517,11 +450,9 @@ Rackspace Cloud device.</span> </span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Adds new PTR record(s) for a Rackspace Cloud
 device.</span> </span>
@@ -532,11 +463,9 @@ device.</span> </span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Modifies one or more PTR records associated with a Rackspace
 Cloud device.</span> </span>
@@ -551,8 +480,7 @@ class="s1">&ip=</span>*<span>optional-ip-address</span>*
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Removes one or all PTR records associated with a Rackspace Cloud
 device. </span>
@@ -568,14 +496,11 @@ GET
 /status?*showDetails*=true|false&*showErrors*=true|false&*showRunning*=
 true|false&*showCompleted*=true|false&*limit*=int1&*offset*=int2
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists status of all asynchronous job requests for an account and
 filters the information requested by using the optional boolean request
@@ -622,7 +547,7 @@ fifth-level, and deeper levels of nesting are possible.</span>
 
 ### <span> </span>
 
-[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+[&lt; Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 

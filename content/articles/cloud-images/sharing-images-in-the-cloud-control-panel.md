@@ -68,7 +68,7 @@ and the "consumer" is the share-ee.)
 -   **Support for shared images:** Shared images are considered
     *nonstandard images* (for more information, see [Standard and
     Non-Standard
-    Images](/howto/rackspace-standard-and-non-standard-images)).
+    Images](/how-to/rackspace-standard-and-non-standard-images)).
       *Regardless of the service level you are subscribed to, we cannot
     guarantee supportability of these images. * Your SLA on cloud
     servers that use shared images will extend only to the physical
@@ -106,7 +106,7 @@ and the "consumer" is the share-ee.)
     image list.
 
 For more information, see the image sharing section of the [Cloud Images
-FAQ](/howto/cloud-images-faq).
+FAQ](/how-to/cloud-images-faq).
 
 ### Permissions
 
@@ -122,7 +122,7 @@ Access Control for Cloud Images. Briefly:
 
 For more information about Cloud Images RBAC, please see the Knowledge
 Center article [Detailed Permission Matrix for Cloud
-Images](/howto/detailed-permissions-matrix-for-cloud-images).
+Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
 Sharing an image in the Cloud Control Panel {#sharing}
 -------------------------------------------
@@ -205,7 +205,7 @@ users can look directly in their service catalog.
 
 To learn more about regions in the Rackspace cloud, please see the
 Knowledge Center article [Where are the Rackspace data centers
-located?](/howto/rackspace-data-centers-and-regions).
+located?](/how-to/rackspace-data-centers-and-regions).
 
 ### Image sharing courtesy {#courtesy}
 
@@ -254,7 +254,7 @@ If you don't want to boot from the image now and want to postpone the
 decision to accept or reject the image, simply close the dialog box and
 the notification will remain.
 
-### **[](){#rejectAfterAccept}Reject an image after accepting it**
+### **<a href="" id="rejectAfterAccept"></a>Reject an image after accepting it**
 
 If you accept an image and then decide later that you don't want it, you
 can reject it.
@@ -263,7 +263,7 @@ can reject it.
 2.  Click the gear icon to the left of the image name, and
     select **Remove Image**.
 
-### **[](){#acceptAfterReject}Accept an image after rejecting it**
+### **<a href="" id="acceptAfterReject"></a>Accept an image after rejecting it**
 
 If you reject an image and decide later that you want it after all, you
 must notify the image producer and ask that the image be re-shared with
@@ -278,7 +278,7 @@ following information before booting a server from a shared image:
 
 -   **Shared images are nonstandard images** (for more information, see
     [Standard and Non-Standard
-    Images](/howto/rackspace-standard-and-non-standard-images)).
+    Images](/how-to/rackspace-standard-and-non-standard-images)).
     For servers booted from nonstandard images, you may expect that we
     will ensure host servers are functioning properly and that the API
     availability meets the SLA. *However, we cannot promise to support

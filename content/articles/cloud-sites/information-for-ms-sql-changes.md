@@ -103,8 +103,7 @@ What could have occurred?**
 -   From the domain details page click on the 'Features' tab and select
     the active database you wish to reference:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MSSQL.png){width="760"
-height="675"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MSSQL.png" width="760" height="675" />
 
 **Will my database content be affected after the maintenance?**
 
@@ -145,15 +144,15 @@ class="field field-name-body field-type-text-with-summary field-label-hidden">
 <div id="logged_content" class="messages warning">
 
 -   [Important scheduled maintenance: DFW environment
-    migration](/howto/important-scheduled-maintenance-dfw-environment-migration)
+    migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
 -   [Information for Customer IPs &
-    DNS](/howto/information-for-customer-ip-addresses-and-dns)
+    DNS](/how-to/information-for-customer-ip-addresses-and-dns)
 -   [Information for MS SQL
-    changes](/howto/information-for-ms-sql-changes)
+    changes](/how-to/information-for-ms-sql-changes)
 -   [Information for MySQL Users
-    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
+    (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100-0)
 -   [Information for new PHP 5.6 & Apache
-    version](/howto/information-for-new-php-56-apache-version-0)
+    version](/how-to/information-for-new-php-56-apache-version-0)
 
 </div>
 

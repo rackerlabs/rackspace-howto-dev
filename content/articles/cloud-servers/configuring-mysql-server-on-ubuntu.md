@@ -11,7 +11,7 @@ body_format: tinymce
 ---
 
 In the [previous
-article](/howto/installing-mysql-server-on-ubuntu)
+article](/how-to/installing-mysql-server-on-ubuntu)
 we covered a basic MySQL server setup on Ubuntu Linux. We set the root
 password, created a database, and created a user for the database. Now
 let's look at MySQL in a little more detail so we can tweak its

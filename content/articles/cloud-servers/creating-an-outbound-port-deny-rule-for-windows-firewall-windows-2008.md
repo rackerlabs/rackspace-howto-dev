@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-[](){#Creating_an_Outbound_Port_Deny_Rule}
+<a href="" id="Creating_an_Outbound_Port_Deny_Rule"></a>
 
 <span class="mw-headline">Creating an Outbound Port Deny Rule </span>
 ---------------------------------------------------------------------

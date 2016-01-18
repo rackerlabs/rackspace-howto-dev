@@ -17,7 +17,7 @@ corresponding RESTful API commands, and the roles that are supported.
 **[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
-Articles](/howto/)**
+Articles](/how-to/)**
 
 **[Cloud Networks Terminology](#Cloud%20Networks%20Terminology)**
 
@@ -54,14 +54,11 @@ Admin
 
 </div>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists networks to which the specified tenant has access.</span>
 
@@ -69,14 +66,11 @@ height="39"}
 
 <span>GET /networks/{network-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows information for a specified network ID.</span>
 
@@ -86,11 +80,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 Creates a network.
 
@@ -102,8 +94,7 @@ Creates a network.
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Updates editable attributes for a specified network.</span>
 
@@ -115,8 +106,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 Deletes the specified network and its associated resources.
 
@@ -126,14 +116,11 @@ Deletes the specified network and its associated resources.
 
 <span>GET /subnets</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists subnets to which the specified tenant has access.</span>
 
@@ -141,14 +128,11 @@ height="39"}
 
 <span>GET /subnets/{subnet-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows information for a specified subnet.</span>
 
@@ -158,11 +142,9 @@ Create a Subnet
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a subnet on a specified network.</span>
 
@@ -174,8 +156,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Updates editable attributes for a specified subnet.</span>
 
@@ -187,8 +168,7 @@ Delete a Subnet
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 Deletes a specified subnet.
 
@@ -198,14 +178,11 @@ List Ports
 
 <span>GET /ports</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists ports to which the tenant has access.</span>
 
@@ -213,14 +190,11 @@ List Details for a Port
 
 <span>GET /ports/{port-id}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows information for a specified port.</span>
 
@@ -230,11 +204,9 @@ Create a Port
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a port on a specified network.</span>
 
@@ -246,8 +218,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Updates a editable attributes for a specified port.</span>
 
@@ -259,8 +230,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Deletes a specified port.</span>
 
@@ -303,14 +273,11 @@ List Networks
 
 <span>GET/os-networksv2</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 Lists the networks configured for a specified tenant ID.
 
@@ -320,11 +287,9 @@ POST/os-networksv2
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a network for the specified tenant ID.</span>
 
@@ -334,11 +299,9 @@ POST/servers
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Provisions a new server and attaches networks.</span>
 
@@ -346,14 +309,11 @@ Show Network
 
 GET/os-networkv2/id
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows information for a specified network ID. </span>
 
@@ -365,8 +325,7 @@ Delete Network
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span> Deletes the specified network.</span>
 
@@ -386,14 +345,11 @@ List Virtual Interfaces
 
 <span>GET/servers/instance\_id/os-virtual-interfacesv2</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Lists the virtual interfaces configured for a server
 instance.</span>
@@ -404,11 +360,9 @@ POST/servers/instance\_id/os-virtual-interfacesv2
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a virtual interface for a network and attaches the network
 to a server instances.</span>
@@ -421,8 +375,7 @@ Delete Virtual Interface
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span> Deletes a virtual interface from a server instance.</span>
 
@@ -451,7 +404,7 @@ networks.</span></span>
 
 ### <span> </span>
 
-[&lt; Permissions Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+[&lt; Permissions Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -50,7 +50,7 @@ alphabetically.  Rackspace also allows you to sync your contacts with
 your mobile device as well with Rackspace Mobile Sync. For more
 information on how to do this, please see the following article -
 [Rackspace Email and Hosted Exchange
-settings](/howto/rackspace-email-and-hosted-exchange-settings)
+settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
 []()**Calendar** Rackspace email allows users the ability to manage
 their appointments and meetings through our Wembail interface. Users
@@ -59,7 +59,7 @@ import events and add shared calendars within your domain. Rackspace
 also allows you to sync your calender events with your mobile device as
 well with Rackspace Mobile Sync. For more information on how to do this,
 please see the following article - [Rackspace Email and Hosted Exchange
-settings](/howto/rackspace-email-and-hosted-exchange-settings)
+settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
 []()**Tasks** Rackspace email allows users the ability to manage their
 tasks through our Webmail interface. Users have the ability to create
@@ -70,7 +70,7 @@ for new ideas, meeting summarys or just some quick thoughts.  Rackspace
 also allows you to sync your Notes with your mobile device as well with
 Rackspace Mobile Sync. For more information on how to do this, please
 see the following article - [Rackspace Email and Hosted Exchange
-settings](/howto/rackspace-email-and-hosted-exchange-settings)
+settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
 []()**Settings** Rackspace Email provides various options for users to
 manage their email account. While in the Webmail interface, select
@@ -127,7 +127,7 @@ options available for users:
 -   Add New Signature - the ability to add a new signature and assign it
     to your outgoing email and also to specific identities. To learn
     more, please see the following article: [Adding A Rackspace Email
-    Signature](/howto/adding-a-signature-to-rackspace-email)
+    Signature](/how-to/adding-a-signature-to-rackspace-email)
 
 
 

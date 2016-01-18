@@ -224,7 +224,7 @@ The basics of Cloud Files include:
     Control Panel or language-specific programming interfaces.
 
 More detail can be found in [Cloud Files Key
-Concepts](/howto/cloud-files-key-concepts).
+Concepts](/how-to/cloud-files-key-concepts).
 
 []() **Cloud Files Usage Scenarios**
 
@@ -248,7 +248,7 @@ classified them based on user objectives.
 -   A development guide is available at [Cloud Files Dev
     Guide](http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html "http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html")
 -   Cloud Files has several [Software Development
-    Kits (SDKs)](/howto/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet)
+    Kits (SDKs)](/how-to/sdks-for-java-ruby-python-nodejs-php-and-microsoftnet)
     for popular programming languages
 -   An [API Getting Started
     Guide](http://docs.rackspace.com/files/api/v1/cf-getting-started/content/Overview-d1e01.html)
@@ -263,9 +263,9 @@ classified them based on user objectives.
 </div>
 
 -   [Use Cloud Files to serve static content for
-    websites](/howto/serve-static-content-for-websites-by-using-cloud-files "Use Cloud Files to serve static content for websites")
+    websites](/how-to/serve-static-content-for-websites-by-using-cloud-files "Use Cloud Files to serve static content for websites")
 -   Check out some [Cloud Files
-    tools](/howto/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
+    tools](/how-to/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
     which can improve website performance and scalability.
 
 []() **For IT Managers**
@@ -277,7 +277,7 @@ classified them based on user objectives.
 </div>
 
 -   Check out some [Cloud Files
-    tools](/howto/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
+    tools](/how-to/tools-to-use-with-cloud-files "What can I do with Cloud files tools ?")
     which can ease day to day operations such as data backup
     and archival.
 
@@ -290,9 +290,9 @@ classified them based on user objectives.
 </div>
 
 -   [Getting your API key for Cloud
-    Files](/howto/view-and-reset-your-api-key "Getting the key to use Cloud Files")
+    Files](/how-to/view-and-reset-your-api-key "Getting the key to use Cloud Files")
 -   [Uploading to Cloud Files with
-    Cyberduck](/howto/configuring-rackspace-cloud-files-with-cyberduck)
+    Cyberduck](/how-to/configuring-rackspace-cloud-files-with-cyberduck)
 
 []() **Additional Cloud Files Resources**
 
@@ -475,7 +475,7 @@ not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments to
 [review the
-concepts](/howto/cloud-files-key-concepts).
+concepts](/how-to/cloud-files-key-concepts).
 
 **Using Cloud Files**
 
@@ -516,7 +516,7 @@ between a Container and these other &ldquo;file system&rdquo; constructs is that
 Containers cannot be nested. You can have up to 500,000 Containers in
 your account, but they only exist at the &ldquo;top level&rdquo; of your account and
 Containers cannot reside within other Containers.
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createContainer1.png){width="400"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createContainer1.png" width="400" />
 
 **Note**: Containers scale to about one million objects before
 peformance degrades. Containers can only be removed from Cloud Files if
@@ -530,11 +530,11 @@ you can use either the Cloud Files user interface in the Rackspace Cloud
 Control Panel or one of our programming interfaces.
 
 Please see the [How do I use Cloud Files and
-CDN?](/howto/getting-started-with-cloud-files-and-cdn-0)
+CDN?](/how-to/getting-started-with-cloud-files-and-cdn-0)
 Knowledge Center article for more details.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -558,7 +558,7 @@ Please click here to view [The Rackspace Cloud Terms of
 Service](http://www.rackspace.com/cloud/legal/).
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -596,7 +596,7 @@ Cloud Files must include a valid "storage token" in an HTTP header
 transmitted over a HTTPS connection.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -635,10 +635,10 @@ There are several different ways to stream your content with Cloud
 Files. Click a link below to find out more for each approach.
 
 -   [JW
-    Player](/howto/streaming-cloud-files-with-jw-player)
--   [FlowPlayer](/howto/cloud-files-streaming-with-flowplayer-plugins)
+    Player](/how-to/streaming-cloud-files-with-jw-player)
+-   [FlowPlayer](/how-to/cloud-files-streaming-with-flowplayer-plugins)
 -   [OSMF (Open Source
-    Media Framework)](/howto/cloud-files-streaming-with-osmf-plugins)
+    Media Framework)](/how-to/cloud-files-streaming-with-osmf-plugins)
     , which allows you to build your own player
 -   [iOS Device
     Streaming](http://docs.rackspace.com/files/api/v1/cf-devguide/content/iOS-Streaming-d1f3725.html)
@@ -680,7 +680,7 @@ will have access to them.
 Yes, this is available to both US and UK Cloud customers.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -796,7 +796,7 @@ Options for sharing your file are displayed.
 
 To learn more about how to operate with Cloud Files through the API,
 read the article [Connecting to Cloud
-Files](/howto/connecting-to-cloudfiles)
+Files](/how-to/connecting-to-cloudfiles)
 and read the [API Developer Guides](http://docs.rackspace.com/).
 
 Akamai Frequently Asked Questions
@@ -890,11 +890,9 @@ place servers around the world and, depending on where the end user is
 located, serves them with the closest or most appropriate server. CDNs
 cut down on the amount of travel your content must make. This is shown
 in the following figures.
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN1.png){width="457"
-height="514"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN1.png" width="457" height="514" />
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN2.png){width="453"
-height="474"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/whatisaCDN2.png" width="453" height="474" />
 
 
 ### Technology
@@ -931,8 +929,7 @@ the switch. This has the advantages of balancing load, increasing total
 capacity, improving scalability, and providing increased reliability by
 redistributing the load of a failed web server and providing server
 health checks.
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Technology1.png){width="529"
-height="324"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Technology1.png" width="529" height="324" />
 
 Request routing directs client requests to the content source best able
 to serve the request. This may involve directing a client request to the
@@ -943,7 +940,7 @@ service node is done using a variety of techniques including proactive
 probing and connection monitoring.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -966,7 +963,7 @@ illegal characters and name length limits) include:
 -   Object and container names must be URL-encoded and UTF-8 encoded.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 <div align="center">
 
@@ -1112,7 +1109,7 @@ At this time, Rackspace has not implemented this functionality into the
 Rackspace Cloud Control Panel.
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 ------------------------------------------------------------------------
 
@@ -1133,7 +1130,7 @@ SDKs.
     Kits](http://docs.rackspace.com/sdks/guide/content/intro.html)
 
 [**Back to
-Top**](/howto/cloud-files-faqs)
+Top**](/how-to/cloud-files-faqs)
 
 ------------------------------------------------------------------------
 

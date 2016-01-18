@@ -59,8 +59,7 @@ in the following figures.
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content through multiple servers.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-BEFORE_0.png){width="715"
-height="386"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-BEFORE_0.png" width="715" height="386" />
 
 
 
@@ -69,8 +68,7 @@ height="386"}
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content from the optimum servers.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-AFTER_0.png){width="723"
-height="363"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-AFTER_0.png" width="723" height="363" />
 
 ###
 
@@ -110,8 +108,7 @@ optimization goals.
 
 
 
-[![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-thirdIMAGE.png){width="783"
-height="419"}](#_msocom_4){#_anchor_4 .msocomanchor}
+<a href="#_msocom_4" id="_anchor_4" class="msocomanchor"><img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-thirdIMAGE.png" width="783" height="419" /></a>
 
 -   Request routing directs client requests to the content source best
     able to serve the request. This may involve directing a client

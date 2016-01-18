@@ -36,7 +36,7 @@ stored, you can change how your PHP sessions are handled by using a
 the 'files' handler, we suggest disabling it  or explicitly setting it
 to 'redisr' to benefit from the performance of the state servers.
 
-[](){#How_do_I_make_the_changes.3F}
+<a href="" id="How_do_I_make_the_changes.3F"></a>
 
 <span class="mw-headline">How do I make the changes?</span>
 -----------------------------------------------------------
@@ -52,13 +52,13 @@ save the session in a place of your choosing.
 
 You will want to change the path of the last line in the example above
 to use your website's absolute path. [Please see this
-article](/howto/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
+article](/how-to/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
 to locate your website's absolute path.
 
 Your website's absolute path should resemble this:
 **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
 
-[](){#Where_should_I_store_my_sessions.3F}
+<a href="" id="Where_should_I_store_my_sessions.3F"></a>
 
 <span class="mw-headline">Where should I store my sessions?</span>
 ------------------------------------------------------------------

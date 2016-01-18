@@ -45,7 +45,7 @@ On this Page:
 Volume Cloning shares many similarities with Volume Snapshots. Namely,
 they both utilize LVM as the primary copy and locking mechanism and
 therefore detaching prior to cloning is recommended. Click
-[here](/howto/allowing-snapshots-without-detaching-the-volumes)
+[here](/how-to/allowing-snapshots-without-detaching-the-volumes)
 for additional information on allowing snapshots (now clones) without
 detaching the volumes.
 
@@ -58,7 +58,7 @@ data out of sync and could create a problem. To detach your Volume, see
 the instructions on "Detatch and Delete Volumes". You can always
 re-attach the Volume by following the "Attach Volume to a Server" steps
 on the [Create and attach a Cloud Block Storage
-volume](/howto/create-and-attach-a-cloud-block-storage-volume)
+volume](/how-to/create-and-attach-a-cloud-block-storage-volume)
 article.
 
 More advanced users may sync the filesystem in order ensure the

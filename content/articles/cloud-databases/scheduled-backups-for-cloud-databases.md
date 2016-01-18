@@ -101,7 +101,7 @@ Scheduled backups can be managed and restored in the same manner as on
 demand backups. Details on how to manage backups can be found in the
 following Knowledge Center article:
 
-</howto/managing-backups-for-cloud-databases>
+</how-to/managing-backups-for-cloud-databases>
 
 Cloud Databases automated backups API
 -------------------------------------
@@ -143,5 +143,5 @@ Notes:
 For more information on backups with Cloud Databases, please see the
 general backup Knowledge Center Article:
 
-</howto/managing-backups-for-cloud-databases>
+</how-to/managing-backups-for-cloud-databases>
 

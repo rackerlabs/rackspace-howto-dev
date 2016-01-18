@@ -13,7 +13,7 @@ body_format: full_html
 You can enable Rackspace Email users to change their passwords without
 contacting an administrator. To do this, you must first [enable mobile
 phone collection for your private label Webmail
-site](/howto/enable-and-disable-collection-of-mobile-phone-numbers-in-rackspace-webmail). Then, you follow the steps in this
+site](/how-to/enable-and-disable-collection-of-mobile-phone-numbers-in-rackspace-webmail). Then, you follow the steps in this
 article to link to the self-service password recovery from your
 Rackspace Email Webmail site login page.
 

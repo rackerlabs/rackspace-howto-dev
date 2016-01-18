@@ -18,7 +18,7 @@ by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The web application used here is the Spring Framework Petclinic sample
 available at
@@ -27,8 +27,7 @@ available at
 The topology of the application in this scenario is represented in the
 following figure:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3588-1.png){width="607"
-height="171"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3588-1.png" width="607" height="171" />
 
 ### Prerequisites
 
@@ -46,7 +45,7 @@ height="171"}
     in the application-for example, Simple Email Server (SES) for email
     or Relational Database Service (RDS) for database.
 -   If you have not already, [create a Cloud Server
-    instance](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+    instance](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
     and any supporting Rackspace Cloud services.
 
 ### Install software packages
@@ -292,16 +291,16 @@ Access the web application at
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](/howto/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](/how-to/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 
 -   [Migrating an application built on a LAMP stack from Amazon Web
-    Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+    Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrating a .NET application from Amazon Web
-    Services](/howto/migrating-a-net-application-from-amazon-web-services)
+    Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating an application based on Backbone.js, Node.js, and MongoDB
     from Amazon Web
-    Services](/howto/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+    Services](/how-to/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
 
 

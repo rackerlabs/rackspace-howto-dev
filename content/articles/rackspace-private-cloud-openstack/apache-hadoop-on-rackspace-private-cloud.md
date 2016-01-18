@@ -113,8 +113,8 @@ some of the limitations for some workloads.
 This is one benefit, but there are many positives of running Hadoop in
 the cloud.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/masscompute-web.jpg){width="600"
-height="398"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/masscompute-web.jpg" width="600" height="398" />
+
 
 
 Additional benefits of Hadoop Openstack can be summarized as:

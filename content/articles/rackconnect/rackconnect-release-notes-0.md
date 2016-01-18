@@ -50,7 +50,7 @@ RackConnect.
     billed for) and perform several quality assurance checks before
     removing the servers and marking the configuration complete.
 -   The
-    [AutoNAT](/howto/rackconnect-auto-nat-feature)
+    [AutoNAT](/how-to/rackconnect-auto-nat-feature)
     feature is now available
 
 ### November 19, 2012

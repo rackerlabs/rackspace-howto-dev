@@ -200,7 +200,7 @@ own custom image for the Rackspace cloud.
         **images** in the region where you want to import the image
         -   if you don't know how to do this, please consult the article
             [Using Swiftly to upload an image to be
-            imported](/howto/use-swiftly-to-upload-an-image)
+            imported](/how-to/use-swiftly-to-upload-an-image)
             in the Rackspace Knowledge Center.
     -   you have named your image **ubuntu1310v1.vhd**.
 

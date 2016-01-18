@@ -103,8 +103,8 @@ Related information
 -------------------
 
 [Load Balancing Internal IPs in the Same
-Region](/howto/load-balancing-internal-ips-in-the-same-region)
+Region](/how-to/load-balancing-internal-ips-in-the-same-region)
 
 [Learn More About Cloud
-Servers](/howto/learn-more-about-cloud-servers)
+Servers](/how-to/learn-more-about-cloud-servers)
 

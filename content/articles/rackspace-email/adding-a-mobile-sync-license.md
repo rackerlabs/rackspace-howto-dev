@@ -71,7 +71,7 @@ look:</span></span></span>
 
 For additional information on setting up email on mobile devices, see
 [Rackspace Email and Hosted Exchange
-settings](/howto/rackspace-email-and-hosted-exchange-settings).
+settings](/how-to/rackspace-email-and-hosted-exchange-settings).
 
 </div>
 

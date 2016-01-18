@@ -114,9 +114,9 @@ ensure a smooth transition, however, we have created articles with
 recommendations for your OS.
 
 -   [Preparing for Migration &ndash;
-    Linux](/howto/prepare-to-migrate-a-linux-server)
+    Linux](/how-to/prepare-to-migrate-a-linux-server)
 -   [Preparing for Migration &ndash;
-    Windows](/howto/prepare-to-migrate-a-windows-server)
+    Windows](/how-to/prepare-to-migrate-a-windows-server)
 
 Migrating prior to your designated window
 -----------------------------------------
@@ -128,7 +128,7 @@ to provide this process early.
 
 If you want to make the transition early, you can do so via the
 traditional [Image-Based migration
-method](/howto/next-generation-cloud-servers-migration-considerations-and-options),
+method](/how-to/next-generation-cloud-servers-migration-considerations-and-options),
 with the caveats that accompany it. Be aware that image-based migration
 does not allow for IP address retention across platforms. If this
 retention is a necessity, you might want to wait until your designated
@@ -141,7 +141,7 @@ For more information, contact your support team or refer to the
 following resources:
 
 -   [First Generation to Next Generation Migration
-    FAQ](/howto/first-generation-to-next-generation-cloud-server-migration-faq)
+    FAQ](/how-to/first-generation-to-next-generation-cloud-server-migration-faq)
 -   [Community Migration
     Thread](https://community.rackspace.com/products/f/25/t/4787)
 

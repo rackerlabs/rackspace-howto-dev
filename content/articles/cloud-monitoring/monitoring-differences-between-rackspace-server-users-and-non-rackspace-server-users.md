@@ -94,7 +94,7 @@ Agent configuration file location:
 
 Learn more about agent configuration with the [Install the Cloud
 Monitoring
-Agent](/howto/install-and-configure-the-rackspace-monitoring-agent)
+Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent)
 article.
 
 By default, the monitoring agent is installed and turned ON and the

@@ -11,7 +11,7 @@ body_format: tinymce
 ---
 
 The Rackspace Cloud has
-[SLAs](http://www.rackspace.com/information/legal/cloud/sla "http://www.rackspacecloud.com/legal"){.external
-.text} for each of the products and they can be viewed online with the
-Terms of service and AUP (Accepted use policy).
+<a href="http://www.rackspace.com/information/legal/cloud/sla" class="external text" title="http://www.rackspacecloud.com/legal">SLAs</a>
+for each of the products and they can be viewed online with the Terms of
+service and AUP (Accepted use policy).
 

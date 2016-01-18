@@ -103,18 +103,18 @@ For additional information, see the following Knowledge Center articles:
 
 -   Cloud Server images &mdash; Create and restore images via our[Cloud
     Control
-    Panel](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+    Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
     or
     [API](http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Create_Image-d1e4206.html).
 -   Rackspace Cloud Backup &mdash; Create and schedule [file-based
-    backups](/howto/rackspace-cloud-backup-overview).
+    backups](/how-to/rackspace-cloud-backup-overview).
 -   [Holland Backup Manager](http://hollandbackup.org/)&mdash; An open-source
     backup framework originally developed at Rackspace and written
     in Python.
 
 For a comparison of Cloud Server images and Rackspace Cloud Backup, see
 [Rackspace Cloud Backup vs. Cloud Server Image
-Backups](/howto/rackspace-cloud-backup-vs-cloud-server-image-backups).
+Backups](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups).
 
 ^[back\\ to\\ top](#top)^
 
@@ -125,7 +125,7 @@ backups. You have the following options for backing up your server:
 
 For a comparison of Cloud Server images and Rackspace Cloud Backup, see
 [Rackspace Cloud Backup vs. Cloud Server Image
-Backups](/howto/rackspace-cloud-backup-vs-cloud-server-image-backups).
+Backups](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups).
 
 ^[back\\ to\\ top](#top)^
 
@@ -185,18 +185,18 @@ Servers.
 ^[back\\ to\\ top](#top)^
 
 -   [Rackspace Cloud Backup:
-    FAQs](/howto/cloud-backup-faq)
+    FAQs](/how-to/cloud-backup-faq)
 -   [Rackspace Cloud Backup: Getting Started
-    Guide](/howto/cloud-backup)
+    Guide](/how-to/cloud-backup)
 -   [Rackspace Cloud Backup (File-Level) vs. Cloud Server
-    Images](/howto/rackspace-cloud-backup-vs-cloud-server-image-backups)
+    Images](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups)
     -   Cloud Server images &mdash; Create and restore images via our[Cloud
         Control
-        Panel](/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+        Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
         or
         [API](http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Create_Image-d1e4206.html).
     -   Rackspace Cloud Backup &mdash; Create and schedule [file-based
-        backups](/howto/rackspace-cloud-backup-overview).
+        backups](/how-to/rackspace-cloud-backup-overview).
     -   [Holland Backup Manager](http://hollandbackup.org/)&mdash; An
         open-source backup framework originally developed at Rackspace
         and written in Python.

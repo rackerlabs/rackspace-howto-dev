@@ -150,14 +150,14 @@ when utilizing the updated test links. What may have occurred?**
 **Related Topics**
 
 -   [Important scheduled maintenance: DFW environment
-    migration](/howto/important-scheduled-maintenance-dfw-environment-migration)
+    migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
 -   [Information for Customer IPs &
-    DNS](/howto/information-for-customer-ip-addresses-and-dns)
+    DNS](/how-to/information-for-customer-ip-addresses-and-dns)
 -   [Information for MS SQL
-    changes](/howto/information-for-ms-sql-changes)
+    changes](/how-to/information-for-ms-sql-changes)
 -   [Information for MySQL Users
-    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
+    (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100-0)
 -   [Information for new PHP 5.6 & Apache version
-    ****](/howto/information-for-new-php-56-apache-version-0)
+    ****](/how-to/information-for-new-php-56-apache-version-0)
 
 

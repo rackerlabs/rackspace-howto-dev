@@ -22,20 +22,17 @@ following steps:
 
 2. In the context menu, click **Recover Deleted Email&mldr;**
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_1.png){width="216"
-height="299"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_1.png" width="216" height="299" />
 
 3. Select the message(s) that you want to recover
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_2.png){width="638"
-height="405"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_2.png" width="638" height="405" />
 
 4. Click **Recover to Folder**.
 
 5. Select the folder you want to move the messages to
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_3.png){width="631"
-height="345"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RecoverDeleted_3.png" width="631" height="345" />
 
 6. When you see the confirmation &ldquo;Message(s) Recovered&rdquo;, you are done.
 
@@ -43,6 +40,5 @@ height="345"}
 Webmail **LoginAs***
 *functionality available in the Control Panel.*
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/recoverdeleted_4.png){width="704"
-height="172"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/recoverdeleted_4.png" width="704" height="172" />
 

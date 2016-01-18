@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prerequisites
 
 [Rackspace Cloud
-DNS:](/howto/rackspace-cloud-dns)
+DNS:](/how-to/rackspace-cloud-dns)
 
 **Cloud DNS Overview**
 
@@ -37,5 +37,5 @@ us two advantages:
 ### Next steps
 
 **[Rackspace Cloud DNS - Available
-Features](/howto/rackspace-cloud-dns-available-features)**
+Features](/how-to/rackspace-cloud-dns-available-features)**
 

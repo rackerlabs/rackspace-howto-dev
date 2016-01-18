@@ -23,8 +23,8 @@ For instructions on how to create DNS TXT Records for DKIM and SPF, see
 the following articles:
 
 [Creating a DKIM TXT
-Record](/howto/create-a-dkim-txt-record "Creating a DKIM TXT Record")
+Record](/how-to/create-a-dkim-txt-record "Creating a DKIM TXT Record")
 
 [Creating a SPF TXT
-Record](/howto/create-an-spf-txt-record "Creating a SPF TXT Record")
+Record](/how-to/create-an-spf-txt-record "Creating a SPF TXT Record")
 

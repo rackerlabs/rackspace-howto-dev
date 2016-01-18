@@ -13,13 +13,13 @@ body_format: tinymce
 **Note:** The commands and utilities in this article have been tested on
 a Debian Cloud Server. They are not guaranteed to function correctly on
 other distributions. However, the [General Package Installation
-Guidelines](/howto/general-package-installation-guidelines "General Package Installation Guidelines")
+Guidelines](/how-to/general-package-installation-guidelines "General Package Installation Guidelines")
 article may assist in "porting" this article to another distro.
 
 **Prerequisites:** [VNC
-Install](/howto/vnc-install "VNC Install")
+Install](/how-to/vnc-install "VNC Install")
 
-[](){#Introduction}
+<a href="" id="Introduction"></a>
 
 <span class="mw-headline">Introduction </span>
 ----------------------------------------------
@@ -29,17 +29,17 @@ used to set up complex firewall policies in situations where
 command-line scripting tools would simply be too slow or clunky. For
 simpler configurations or for users who are newer to Linux, we recommend
 our
-[iptables](/howto/introduction-to-firewalls)
+[iptables](/how-to/introduction-to-firewalls)
 articles.
 
-[](){#Installation}
+<a href="" id="Installation"></a>
 
 <span class="mw-headline">Installation </span>
 ----------------------------------------------
 
 Fwbuilder may either be downloaded from
-[Sourceforge](http://sourceforge.net/project/showfiles.php?group_id=5314&package_id=125359 "http://sourceforge.net/project/showfiles.php?group_id=5314&package_id=125359"){.external
-.text} or installed via your Cloud Server's built-in package manager:
+<a href="http://sourceforge.net/project/showfiles.php?group_id=5314&amp;package_id=125359" class="external text" title="http://sourceforge.net/project/showfiles.php?group_id=5314&amp;package_id=125359">Sourceforge</a>
+or installed via your Cloud Server's built-in package manager:
 
     aptitude install fwbuilder
 
@@ -48,10 +48,8 @@ VNC or X over SSH articles above, then simply type
 
     fwbuilder
 
-to launch the application. [](){#Configuration}
+to launch the application. <a href="" id="Configuration"></a>
 
--   [Firewall Builder 5 User's
-    Guide](http://www.fwbuilder.org/4.0/docs/users_guide5/ "http://www.fwbuilder.org/4.0/docs/users_guide5/"){.external
-    .text}
+-   <a href="http://www.fwbuilder.org/4.0/docs/users_guide5/" class="external text" title="http://www.fwbuilder.org/4.0/docs/users_guide5/">Firewall Builder 5 User's Guide</a>
 
 

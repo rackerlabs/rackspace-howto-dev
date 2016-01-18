@@ -46,7 +46,7 @@ instructions for MariaDB procedures are included in this article.
 
 
 
-[](){#install}
+<a href="" id="install"></a>
 
 Installing the database application
 -----------------------------------
@@ -77,7 +77,7 @@ then reload the privileges so that your changes will take effect.
 
     sudo yum install mariadb-server mariadb
 
-[](){#allow}
+<a href="" id="allow"></a>
 
 Allow remote access
 -------------------
@@ -103,7 +103,7 @@ this reason, the instructions in this article represent a compromise. It
 is easy to paste the lines into a rules file, and they can be used with
 the \`iptables\` command instead.
 
-[](){#launch}
+<a href="" id="launch"></a>
 
 Starting and stopping the database service
 ------------------------------------------
@@ -130,7 +130,7 @@ Use the following command to stop MariaDB:
 
     sudo systemctl stop mariadb.service
 
-[](){#boot}
+<a href="" id="boot"></a>
 
 Launching at reboot
 
@@ -147,7 +147,7 @@ enable the chkconfig utility. Use the following commands to do this.
 
 
 
-[](){#shell}
+<a href="" id="shell"></a>
 
 The MySQL shell
 ---------------
@@ -165,7 +165,7 @@ password. The following \`mysql\` shell prompt should appear:
 
     mysql>
 
-[](){#root}
+<a href="" id="root"></a>
 
 Set the root password
 ---------------------
@@ -182,7 +182,7 @@ also type them in lowercase. The commands are shown capitalized by
 convention, to make them stand out from field names and other data
 that's being manipulated.
 
-[](){#users}
+<a href="" id="users"></a>
 
 Viewing users
 -------------
@@ -270,7 +270,7 @@ user (refer to the username with empty quotes, like '') or set a
 password for it. Both tasks are covered later in this series of
 articles.
 
-[](){#db}
+<a href="" id="db"></a>
 
 Create a database
 -----------------
@@ -306,7 +306,7 @@ output:
     +--------------------+
     3 rows in set (0.00 sec)
 
-[](){#users}
+<a href="" id="users"></a>
 
 Adding users and permissions
 ----------------------------
@@ -402,7 +402,7 @@ as a very bad practice). You should also read official MySQL
 documentation regarding possible privilege choices, to grant only those
 privileges truly needed, rather than using `ALL`.
 
-[](){#sum}
+<a href="" id="sum"></a>
 
 Summary
 -------
@@ -414,7 +414,7 @@ learn more.
 ### Next steps
 
 [Configuring MySQL server on
-CentOS](/howto/configuring-mysql-server-on-centos)
+CentOS](/how-to/configuring-mysql-server-on-centos)
 
 
 

@@ -14,7 +14,7 @@ For testing and production use of our database server, we'll want to
 create additional roles, as it's not recommended to work regularly in
 our databases as the default superuser role.
 
-[](){#Login}
+<a href="" id="Login"></a>
 
 <span class="mw-headline">Login </span>
 ---------------------------------------
@@ -28,14 +28,14 @@ First, we need to login to our slice as a normal Linux user, then:
 
     # sudo su - postgres
 
-[](){#Connect_with_psql}
+<a href="" id="Connect_with_psql"></a>
 
 <span class="mw-headline">Connect with psql </span>
 ---------------------------------------------------
 
 Now connect to the database server using the
-[psql](http://www.postgresql.org/docs/8.3/static/app-psql.html "http://www.postgresql.org/docs/8.3/static/app-psql.html"){.external
-.text} client, as the postgres role:
+<a href="http://www.postgresql.org/docs/8.3/static/app-psql.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-psql.html">psql</a>
+client, as the postgres role:
 
 
     postgres@demo:~$ psql -U postgres
@@ -50,7 +50,7 @@ Now connect to the database server using the
 
     postgres=#
 
-[](){#Creating_a_Role}
+<a href="" id="Creating_a_Role"></a>
 
 <span class="mw-headline">Creating a Role </span>
 -------------------------------------------------
@@ -76,7 +76,7 @@ Did it work? We can check using '\\du' command:
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-[](){#Dropping_a_Role}
+<a href="" id="Dropping_a_Role"></a>
 
 <span class="mw-headline">Dropping a Role </span>
 -------------------------------------------------
@@ -89,18 +89,17 @@ What if we want to drop (delete, remove) a role? Easy:
 If we check with the '\\du' command we'll see that 'demorole1' is no
 longer listed.
 
-[](){#_createuser_and_dropuser}
+<a href="" id="_createuser_and_dropuser"></a>
 
 <span class="mw-headline">Alternative: createuser and dropuser </span>
 ----------------------------------------------------------------------
 
 Alternatively, we can create and drop database roles using the
-[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html"){.external
-.text} and
-[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html"){.external
-.text} shell commands, which are basically "wrappers" for the CREATE and
-DROP SQL statements. They are included in a standard postgres
-installation.
+<a href="http://www.postgresql.org/docs/8.3/static/app-createuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-createuser.html">createuser</a>
+and
+<a href="http://www.postgresql.org/docs/8.3/static/app-dropuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-dropuser.html">dropuser</a>
+shell commands, which are basically "wrappers" for the CREATE and DROP
+SQL statements. They are included in a standard postgres installation.
 
 With our present setup, we can only run these commands (successfully) as
 the postgres Linux user. We're still connected with the psql client, so
@@ -113,14 +112,14 @@ let's exit with Ctrl-D or the '\\q' command:
 
 Good, we have a shell prompt as the postgres Linux user.
 
-[](){#createuser}
+<a href="" id="createuser"></a>
 
 <span class="mw-headline">createuser </span>
 --------------------------------------------
 
 With
-[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html"){.external
-.text} we'll create a non-superuser role that has the LOGIN attribute.
+<a href="http://www.postgresql.org/docs/8.3/static/app-createuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-createuser.html">createuser</a>
+we'll create a non-superuser role that has the LOGIN attribute.
 
 
     postgres@demo:~$ createuser -PE demorole2
@@ -148,14 +147,14 @@ this:
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-[](){#dropuser}
+<a href="" id="dropuser"></a>
 
 <span class="mw-headline">dropuser </span>
 ------------------------------------------
 
 We can drop (delete, remove) a role with the
-[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html"){.external
-.text} shell command:
+<a href="http://www.postgresql.org/docs/8.3/static/app-dropuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-dropuser.html">dropuser</a>
+shell command:
 
 
     postgres@demo:~$ dropuser -i demorole2
@@ -168,7 +167,7 @@ We can drop (delete, remove) a role with the
 The '-i' flag provides a confirmation prompt, which is a good safety
 measure when running a potentially destructive command.
 
-[](){#Creating_a_superuser}
+<a href="" id="Creating_a_superuser"></a>
 
 <span class="mw-headline">Creating a superuser </span>
 ------------------------------------------------------

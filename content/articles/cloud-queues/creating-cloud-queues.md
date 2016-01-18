@@ -17,7 +17,7 @@ needed.  All other Queue commands will be completed through the
 terminal.
 
 **Note**: Be sure to [set up your authentication
-token](/howto/cloud-queues-curl-cookbook)
+token](/how-to/cloud-queues-curl-cookbook)
 before completing the terminal steps for creating your cloud queue.
 
 #### In the Control Panel
@@ -30,7 +30,7 @@ before completing the terminal steps for creating your cloud queue.
 When the queue is finished building, you will see the details for your
 queue listed in the Control Panel. You will then need to complete the
 steps under [Testing Your
-Queue](/howto/cloud-queues-curl-cookbook)
+Queue](/how-to/cloud-queues-curl-cookbook)
 in your terminal to begin posting messages to your Queue.
 
 #### Or, In Your Terminal

@@ -39,16 +39,16 @@ functionality prior to the migration.
 Please review the links below which include FAQs & helpful information
 on common break changes for your specific technology during to prepare
 for the upcoming DFW
-migrations. [](/howto/information-for-aspnet-changes-0)
+migrations. [](/how-to/information-for-aspnet-changes-0)
 
 1.  [Information for Customer IPs &
-    DNS](/howto/information-for-customer-ip-addresses-and-dns)
+    DNS](/how-to/information-for-customer-ip-addresses-and-dns)
 2.  [Information for MS SQL
-    changes](/howto/information-for-ms-sql-changes)
+    changes](/how-to/information-for-ms-sql-changes)
 3.  [Information for MySQL Users
-    (MariaDB 10.0)](/howto/information-for-mysql-users-mariadb-100-0)
+    (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100-0)
 4.  [Information for new PHP 5.6 & Apache
-    version](/howto/information-for-new-php-56-apache-version-0)
+    version](/how-to/information-for-new-php-56-apache-version-0)
 
 Our normal Cloud Sites SLA
 (<http://www.rackspace.com/information/legal/cloud/sla>) applies for

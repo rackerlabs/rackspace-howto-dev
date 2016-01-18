@@ -37,7 +37,7 @@ The current versions are
 
 Documentation for Rackspace Private Cloud is available
 [here](http://docs.rackspace.com) and
-[here](/howto/rackspace-private-cloud-openstack).
+[here](/how-to/rackspace-private-cloud-openstack).
 
 Developer documentation for the community
 [openstack-ansible](https://launchpad.net/openstack-ansible) project is

@@ -33,14 +33,14 @@ Who is the target audience for this article?
 This article is aimed at advanced Linux users who are familiar with the
 iptables software firewall and who have a need to create custom iptables
 rules to perform tasks that are beyond the scope of [Network
-Policies](/howto/managing-rackconnect-v20-network-policies).
+Policies](/how-to/managing-rackconnect-v20-network-policies).
 
 If you are unfamiliar with iptables syntax or how to write custom
 iptables rules in Linux, or if you do not have a pressing need to create
 and maintain your own iptables rules, it is highly recommended that you
 do not modify the default behavior of RackConnect Automation.
 [RackConnect Network
-Policies](/howto/managing-rackconnect-v20-network-policies)
+Policies](/how-to/managing-rackconnect-v20-network-policies)
 provide a friendlier and more scalable solution for software firewall
 management than writing your own custom iptables rules on each
 individual Cloud Server.
@@ -74,29 +74,19 @@ the "merge method" on a particular server, simply do the following:
     someone with IP 1.1.1.1 will try to access your server, but better
     safe than sorry).
 
-    ![Add Network Policy Screenshot; Name TempPolicy, Access Scenario
-    Dedicated to Cloud Server, Source 1.1.1.1, Destination All,
-    Destination Protocol
-    All](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy_0.jpg){width="506"
-    height="509"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy_0.jpg" alt="Add Network Policy Screenshot; Name TempPolicy, Access Scenario Dedicated to Cloud Server, Source 1.1.1.1, Destination All, Destination Protocol All" width="506" height="509" />
 
 
 
-    ![Network Policy Indicator Screenshot; Yellow, still
-    syncing](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-syncing_0.jpg){width="749"
-    height="63"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-syncing_0.jpg" alt="Network Policy Indicator Screenshot; Yellow, still syncing" width="749" height="63" />
 
 
 
-    ![Network Policy Indicator Screenshot; Green, sync
-    complete](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-synced_0.jpg){width="750"
-    height="58"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-synced_0.jpg" alt="Network Policy Indicator Screenshot; Green, sync complete" width="750" height="58" />
 
 
 
-    ![Network Policy Delete Screenshot; Check TempPolicy, Click Delete
-    Policy](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-delete_0.jpg){width="749"
-    height="238"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/framed-netpolicy-delete_0.jpg" alt="Network Policy Delete Screenshot; Check TempPolicy, Click Delete Policy" width="749" height="238" />
 
 
 

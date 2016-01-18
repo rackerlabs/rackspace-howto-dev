@@ -19,20 +19,17 @@ going to [apps.rackspace.com](http://apps.rackspace.com) and in the
 upper right hand side next to your username click the drop-down to
 access the **Settings** menu.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/WebmailBar.png){width="698"
-height="93"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/WebmailBar.png" width="698" height="93" />
 
 
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/WebmailSettings.png){width="703"
-height="81"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/WebmailSettings.png" width="703" height="81" />
 
 2\. Select **Composing Email**, located in the left pane and then select
 the **Signatures** tab located in the window. Next, select the **Add New
 Signature** button.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AddNewSig.png){width="613"
-height="509"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AddNewSig.png" width="613" height="509" />
 
 3\. In the **Add New Signature** window, enter a descriptive name for
 your signature. In the **Edit Signature** area, enter the text for your
@@ -41,8 +38,7 @@ the with the formatting options available in the editor <span
 style="line-height: 1.538em;">(e.g., bold, italics, colored
 text)</span><span style="line-height: 1.538em;">. </span>
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/TestSig.png){width="613"
-height="409"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/TestSig.png" width="613" height="409" />
 
 *Note:* *If you switch to Plain Text, you will lose any HTML formatting
 you have applied.*
@@ -51,8 +47,7 @@ you have applied.*
 the name of your signature file from the **Current Signatures **list in
 order to select it and choose any of the additional options below.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SigOptions.png){width="612"
-height="508"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SigOptions.png" width="612" height="508" />
 
 -   To automatically insert the signature when composing a new email,
     select the "**Always show signature when composing an email**"

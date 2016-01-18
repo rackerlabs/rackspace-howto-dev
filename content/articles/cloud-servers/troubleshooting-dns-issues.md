@@ -129,7 +129,7 @@ Important sections of the output for troubleshooting are as follows:
     web-based control panel is provided for self-service. If you want to
     host your DNS records with Rackspace, see [Rackspace Cloud
     Essentials - What Are Your Name
-    Servers?](/howto/rackspace-cloud-essentials-what-are-your-name-servers)
+    Servers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
     for details.
 
 To see all the records that are currently being hosted for your domain,
@@ -138,7 +138,7 @@ Most name servers won't allow someone who doesn't own the domain to
 request a list of all the records for it. If the domain is hosted on
 Rackspace Cloud, you can find instructions in [Create DNS Records for
 cloud servers with the Control
-Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
+Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 #### DNS lookups
 
@@ -151,7 +151,7 @@ cached, confirm whether it matched the authoritative name server's copy,
 and understand the output of the tools:
 
 -   [nslookup
-    guide](/howto/nslookup-checking-dns-records-on-windows)
+    guide](/how-to/nslookup-checking-dns-records-on-windows)
 
 To get an indication of how a record is cached around the world, you can
 use the third-party website <http://www.whatsmydns.net/> . You specify

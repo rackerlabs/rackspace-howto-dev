@@ -40,8 +40,7 @@ adoption increases within their company.</span>
 <span style="line-height: 1.538em;">Cinder Software Architecture</span>
 -----------------------------------------------------------------------
 
-![](/knowledge_center/sites/default/files/styles/full_width/public/field/image/cinder-refarch-sims.png){.image-full_width
-width="700" height="624"}
+<img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/cinder-refarch-sims.png" class="image-full_width" width="700" height="624" />
 
 **Figure 1: The Cinder Architecture provides horizontally scaling volume
 servers to serve block device volumes to guest instances**
@@ -60,8 +59,7 @@ do not need to be capable of booting directly from iSCSI targets.</span>
 <span style="line-height: 1.538em;">Reference Architecture: Mass Compute with External Storage</span>
 -----------------------------------------------------------------------------------------------------
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-03-27%20at%2012.08.10%20PM.png){width="741"
-height="839"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-03-27%20at%2012.08.10%20PM.png" width="741" height="839" />
 
 **<span style="line-height: 1.538em;">Figure 2: The Mass Compute with
 External Storage reference architecture provides scaling compute and
@@ -118,8 +116,8 @@ After the Rackspace Private Cloud Software is installed on the
 infrastructure, the cinder chef roles must be added to the controller
 and storage nodes. For details on this step, review the following
 article: [Configuring OpenStack Block
-Storage](/howto/configuring-openstack-block-storage)[
-](/howto/configuring-openstack-block-storage)
+Storage](/how-to/configuring-openstack-block-storage)[
+](/how-to/configuring-openstack-block-storage)
 
 *Note: the storage requirements in the document. All drive devices on
 the storage nodes can be added to the cinder-volumes group. This can be

@@ -45,5 +45,5 @@ We recommend creating the load balancer in the region that is closest to
 your external nodes.
 
 For more information, see [Load Balancing Public Vs. Private
-IPs](/howto/load-balancing-internal-ips-in-the-same-region).
+IPs](/how-to/load-balancing-internal-ips-in-the-same-region).
 

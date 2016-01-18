@@ -16,17 +16,17 @@ Most people serve more than one domain on their [Cloud Server](http://www.racksp
 
 ## Contents
 
--  [1 Overview](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
--  [2 Procedure](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
--  [3 Virtual Hosts](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
--  [4 Multiple domains](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
--  [5 Troubleshooting](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.1 Restart Apache](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.2 Understanding the Configuration Report](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.3 Common Virtual Host Configuration Mistakes](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.4 Using Curl to Test Your Site](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.5 Check Error Log](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
-  -  [5.6 Common Permissions-Related Errors](/howto/how-to-serve-multiple-domains-using-virtual-hosts)
+-  [1 Overview](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+-  [2 Procedure](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+-  [3 Virtual Hosts](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+-  [4 Multiple domains](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+-  [5 Troubleshooting](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.1 Restart Apache](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.2 Understanding the Configuration Report](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.3 Common Virtual Host Configuration Mistakes](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.4 Using Curl to Test Your Site](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.5 Check Error Log](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
+  -  [5.6 Common Permissions-Related Errors](/how-to/how-to-serve-multiple-domains-using-virtual-hosts)
  |
 | --- |
 

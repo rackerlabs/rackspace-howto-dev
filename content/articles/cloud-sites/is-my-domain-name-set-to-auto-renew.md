@@ -16,5 +16,5 @@ Control Panel. Please see the following article on how to manually renew
 your domain:
 
 [How Do I Renew My
-Domain?](/howto/renew-a-cloud-sites-domain-name)
+Domain?](/how-to/renew-a-cloud-sites-domain-name)
 

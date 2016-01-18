@@ -36,13 +36,13 @@ Monitoring.
 ###  Cloud Monitoring Resources
 
 -   [How-Tos and Other
-    Resources](/howto/cloud-monitoring-how-tos-other-resources)
+    Resources](/how-to/cloud-monitoring-how-tos-other-resources)
 -   [Control Panel Monitoring: What Do the Options
-    Do?](/howto/control-panel-monitoring-what-do-the-options-do)
+    Do?](/how-to/control-panel-monitoring-what-do-the-options-do)
 -   [Rackspace Monitoring Checks and
-    Alarms](/howto/rackspace-cloud-monitoring-checks-and-alarms%20)
+    Alarms](/how-to/rackspace-cloud-monitoring-checks-and-alarms%20)
 -   [Monitoring On The Go With Mobile
-    App](/howto/introducing-cloud-monitoring-on-mobile)
+    App](/how-to/introducing-cloud-monitoring-on-mobile)
 
 ###  Cloud Monitoring API
 
@@ -51,4 +51,4 @@ Monitoring.
 -   [Rackspace Monitoring API
     Documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
 -   [Getting Started with Rackspace Monitoring
-    CLI](/howto/getting-started-with-cloud-monitoring)
+    CLI](/how-to/getting-started-with-cloud-monitoring)

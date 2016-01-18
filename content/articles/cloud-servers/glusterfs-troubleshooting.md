@@ -134,4 +134,4 @@ On one of the nodes, the file itself, as well as the associated GFID file (in th
      This is version 1 of the file
 <br />
 
-Previous article: [GlusterFS build steps](/howto/getting-started-with-glusterfs-considerations-and-installation)          Next article: [GlusterFS HA and load balancing](/howto/glusterfs-high-availability-through-ctdb)
+Previous article: [GlusterFS build steps](/how-to/getting-started-with-glusterfs-considerations-and-installation)          Next article: [GlusterFS HA and load balancing](/how-to/glusterfs-high-availability-through-ctdb)

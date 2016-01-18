@@ -18,11 +18,11 @@ instructions step by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The topology of the application in this scenario is presented in the
 following figure:
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.4-diagram.png){width="650"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4.4-diagram.png" width="650" />
 
 ### Prerequisites
 
@@ -40,7 +40,7 @@ following figure:
 -   Create a list of all additional Amazon services that are being used
     in your application-for example, SES for email or RDS for database.
 -   If you have not already, [create a Cloud Server
-    instance](/howto/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+    instance](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
     and any supporting Rackspace Cloud services.
 
 ### Install software packages
@@ -175,7 +175,7 @@ following figure:
     N.  Because Tomcat is running on port 8080, ensure iptables will not
         interfere with connectivity.
         To learn about iptables, see [Introduction to
-        iptables](/howto/introduction-to-iptables).
+        iptables](/how-to/introduction-to-iptables).
     O.  Test Tomcat by looking up the cloud server IP from the Rackspace
         Cloud Control Panel and opening the URL in a browser (for
         example, **http://&lt;*ip\_address*&gt;:8080/**).
@@ -257,7 +257,7 @@ following figure:
 ### Back up data from AWS to Rackspace Cloud Files
 
 Retrieve your data from EC2. You can transfer the data directly via
-[rsync](/howto/migrating-a-linux-server-from-the-command-line-1)
+[rsync](/how-to/migrating-a-linux-server-from-the-command-line-1)
 or sftp, or you can use the OpenStack Swift client to transfer your data
 to Cloud Files, and from there transfer to the Cloud Server.
 
@@ -354,15 +354,15 @@ access and test your application.
 ### Next steps
 
 [Post-migration considerations when migrating from Amazon Web
-Services](/howto/post-migration-considerations-when-migrating-from-amazon-web-services)
+Services](/how-to/post-migration-considerations-when-migrating-from-amazon-web-services)
 
 For other migration scenarios, see the following articles:
 
 -   [Migrating an application built on a LAMP stack from Amazon Web
-    Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+    Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrating a .NET application from Amazon Web
-    Services](/howto/migrating-a-net-application-from-amazon-web-services)
+    Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating a Java web application from Amazon Web
-    Services](/howto/migrating-a-java-web-application-from-amazon-web-services)
+    Services](/how-to/migrating-a-java-web-application-from-amazon-web-services)
 
 

@@ -14,22 +14,22 @@ The Basics
 ----------
 
 [Creating a producer-consumer queuing
-model](/howto/setting-up-a-producer-consumer-model-with-cloud-queues)
+model](/how-to/setting-up-a-producer-consumer-model-with-cloud-queues)
 
 [Creating a publisher-subscriber queuing
-model](/howto/setting-up-a-pub-sub-model-in-cloud-queues)
+model](/how-to/setting-up-a-pub-sub-model-in-cloud-queues)
 
 [Cloud Queues Curl
-Cookbook](/howto/cloud-queues-curl-cookbook)
+Cookbook](/how-to/cloud-queues-curl-cookbook)
 
 Best Practices
 --------------
 
 [Determining storage for different
-payloads](/howto/cloud-queues-curl-cookbook)
+payloads](/how-to/cloud-queues-curl-cookbook)
 
 [Deciding how many workers are
-needed](/howto/cloud-queues-curl-cookbook)
+needed](/how-to/cloud-queues-curl-cookbook)
 
 Additonal Resources
 -------------------
@@ -40,5 +40,5 @@ Guide](http://docs-internal.rackspace.com/queues/api/v1.0/cq-devguide/content/ov
 [Cloud Queues Getting Started
 Guide](http://docs.rackspace.com/queues/api/v1.0/cq-gettingstarted/content/doc-change-history.html)
 
-[FAQ](/howto/cloud-queues-faq)
+[FAQ](/how-to/cloud-queues-faq)
 

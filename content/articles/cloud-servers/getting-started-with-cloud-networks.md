@@ -34,13 +34,13 @@ articles and API developer resources.
 ### Using the Control Panel with Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network")
+Server](/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network")
 
 [Removing Networks From a Cloud
-Server](/howto/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
+Server](/how-to/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](/howto/using-cidr-notation-in-cloud-networks "CIDR Notation")
+Networks](/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 
 ### Using the Cloud Networks API

@@ -75,8 +75,7 @@ triggers a script that switches the new source out of the read-only pool
 and updates the write pool. Total downtime is around 10-30 seconds.
 
 **Figure 1. Cloud Databases HA setup**
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/HighAvailabilityforCloudDatabases1b.png){width="818"
-height="605"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/HighAvailabilityforCloudDatabases1b.png" width="818" height="605" />
 
 
 

@@ -16,10 +16,10 @@ Cloud Servers using python-novaclient.
 ### Nova Client Operations {#novaclientoperations}
 
 Now that you&rsquo;ve installed the nova client on a
-[Windows](/howto/installing-python-novaclient-on-windows),
-[Linux](/howto/installing-python-novaclient-on-linux-and-mac-os),
+[Windows](/how-to/installing-python-novaclient-on-windows),
+[Linux](/how-to/installing-python-novaclient-on-linux-and-mac-os),
 or [Mac OS
-X](/howto/installing-python-novaclient-on-linux-and-mac-os)
+X](/how-to/installing-python-novaclient-on-linux-and-mac-os)
 machine, it&rsquo;s time to look at what you can do with it.
 
 We&rsquo;ll assume you&rsquo;ve run through the installation and the client is
@@ -201,7 +201,7 @@ second argument will be the flavor name or ID.
 Standard servers with manual disk allocation enabled. For more
 information on changing the size of a virtual cloud server, see
 [Changing the Size of Your Performance Cloud
-Server](/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 A server cannot be resized to a smaller flavor if it has more disk space
 allocated to it than would be allowed in the smaller flavor.

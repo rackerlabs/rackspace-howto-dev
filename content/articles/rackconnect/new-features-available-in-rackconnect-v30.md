@@ -48,5 +48,5 @@ you need to properly manage your hybrid environment.
 
 If you have questions, please reach out to us. Our contact information
 is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 

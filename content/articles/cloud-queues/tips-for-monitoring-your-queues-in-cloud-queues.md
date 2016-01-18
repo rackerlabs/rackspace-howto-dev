@@ -10,7 +10,7 @@ product: Cloud Queues
 body_format: markdown_w_tinymce
 ---
 
-**Note:** Be sure to set up your [authentication token](/howto/cloud-queues-curl-cookbook) before completing the terminal steps for creating your cloud queue.</p>
+**Note:** Be sure to set up your [authentication token](/how-to/cloud-queues-curl-cookbook) before completing the terminal steps for creating your cloud queue.</p>
 
 The steps in this process will return queue statistics, including the number of messages that exist in the queue. These are broken out by status.
 

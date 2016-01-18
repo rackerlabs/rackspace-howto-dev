@@ -23,7 +23,7 @@ the Cloud Files API for moving your backups to your Cloud Files storage.
 
 If you want a web-based tool to manage manual and scheduled backups
 instead, the [Zipit
-tool](/howto/zipit-backup-utility-for-cloud-sites-linux) can
+tool](/how-to/zipit-backup-utility-for-cloud-sites-linux) can
 offer that additional functionality.
 
 **Limitations:**
@@ -58,7 +58,7 @@ database.*
 -   Enter your Cloud Files username and API Key.
 
 [Click here for instructions on generating Cloud Files API
-Key](/howto/view-and-reset-your-api-key)
+Key](/how-to/view-and-reset-your-api-key)
 
 <span>For more information regarding Cloud Files pricing visit:</span>
 
@@ -68,8 +68,7 @@ Key](/howto/view-and-reset-your-api-key)
 
 Here is a screenshot of the Cron Backup Setup interface:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-backup-setup.png){width="419"
-height="755"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-backup-setup.png" width="419" height="755" />
 
 Once the installation is complete you will see one new directory that
 contains the Cloud Files API files and two files used to backup your
@@ -86,7 +85,7 @@ you can setup your cron job to backup your site.
 
 For more information on setting up a cron task in Cloud Sites, see the
 article [*How do I schedule a cron job for Cloud
-Site*s?](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites)
+Site*s?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites)
 
 Here are the basics of what you will use for the cron task:
 
@@ -100,8 +99,7 @@ backups fail for any reason.*
 
 Here is a screenshot of the the cron setup in the Cloud Control Panel:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-setup.png){width="624"
-height="598"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cron-setup.png" width="624" height="598" />
 
 That's it! You should now have scheduled backups setup for your Cloud
 Site. Your backups can be found within your Cloud Files section of the

@@ -106,7 +106,7 @@ run the following commands:
 
 Note: for information about how to find your API key, see [View and
 reset your API
-key](/howto/view-and-reset-your-api-key).
+key](/how-to/view-and-reset-your-api-key).
 
 This will install the Chef server, knife-rackspace plugin and upload the
 chef hdp-cookbooks, and configure it to talk to Rackspace Cloud using

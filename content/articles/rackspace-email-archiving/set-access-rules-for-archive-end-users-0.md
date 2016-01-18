@@ -16,7 +16,7 @@ verifying registered addresses.
 1.  Log in to the [Archive
     Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).
     For more information, see [Log in to the Archive
-    Manager](/howto/log-in-to-the-archive-manager).
+    Manager](/how-to/log-in-to-the-archive-manager).
 
 2.  In the upper-right corner of the window, click **Admin User** to
     access the Admin User dashboard.
@@ -25,8 +25,7 @@ verifying registered addresses.
 
 3.  Select the tab, **End User Access Rules.**
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png){width="551"
-    height="207"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png" width="551" height="207" />
 
 4.  Specify which domains are allowed to access the archive and which
     domains are denied access:

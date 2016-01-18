@@ -24,11 +24,11 @@ embed it as needed into your website, Rackspace does not have
 step-by-step instructions.  If you are looking for a player that does
 not require development by your team, try our [FlowPlayer plugins for
 Streaming over the Akamai
-CDN](/howto/cloud-files-streaming-with-flowplayer-plugins).
+CDN](/how-to/cloud-files-streaming-with-flowplayer-plugins).
 
 For more resources on OSMF, visit
 <http://mediapm.edgesuite.net/akamai-osmf-plugins/samples/>.
 
 For more information on streaming, please visit the [Cloud Files
-FAQ](/howto/cloud-files-faqs).
+FAQ](/how-to/cloud-files-faqs).
 

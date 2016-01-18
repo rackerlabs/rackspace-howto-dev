@@ -22,12 +22,12 @@ body_format: tinymce
 -   [How to use VNstat](#usingtoolsv)
 -   [How to use IPtraf](#usingtoolsi)
 -   [How to use
-    Tcpdump](/howto/capturing-packets-with-tcpdump)
+    Tcpdump](/how-to/capturing-packets-with-tcpdump)
 -   [Conclusion...](#conclusion)
 
 ------------------------------------------------------------------------
 
-[](){#preface}
+<a href="" id="preface"></a>
 
 ### Preface
 
@@ -47,9 +47,9 @@ Rackspace offers its [Cloud
 Monitoring](http://www.rackspace.com/cloud/monitoring/) service at no
 cost for use with Cloud Servers. For more information about this
 flexible service, see [Getting Started with Cloud
-Monitoring](/howto/cloud-monitoring).
+Monitoring](/how-to/cloud-monitoring).
 
-[](){#monitoring}
+<a href="" id="monitoring"></a>
 
 ### Monitoring in Linux
 
@@ -60,7 +60,7 @@ setup and achieve very high accuracy. Out of all the tools available I
 am partial to VNstat and IPtraf. Both of these can be found in most
 repositories, have minimal dependencies, and work on ALL Linux systems.
 
-[](){#aboutthetools}
+<a href="" id="aboutthetools"></a>
 
 ### About The Tools
 
@@ -86,7 +86,7 @@ repositories, have minimal dependencies, and work on ALL Linux systems.
 
 ------------------------------------------------------------------------
 
-[](){#debin}
+<a href="" id="debin"></a>
 
 #### Ubuntu / Debian
 
@@ -120,7 +120,7 @@ Lastly we setup VNstat to begin monitoring the interfaces.
 
 ------------------------------------------------------------------------
 
-[](){#centin}
+<a href="" id="centin"></a>
 
 #### CentOS / RHEL
 
@@ -184,7 +184,7 @@ To install here is the command :
 
 ------------------------------------------------------------------------
 
-[](){#fedin}
+<a href="" id="fedin"></a>
 
 #### Fedora (16+)
 
@@ -219,7 +219,7 @@ Lastly we create a symlink for legacy purposes
 
 ------------------------------------------------------------------------
 
-[](){#susein}
+<a href="" id="susein"></a>
 
 #### openSUSE
 
@@ -283,7 +283,7 @@ To install iptraf here is the command :
 
 ------------------------------------------------------------------------
 
-[](){#usingtoolsv}
+<a href="" id="usingtoolsv"></a>
 
 #### Using VNstat : [*Manual Page for VNstat*](http://linux.die.net/man/1/vnstat)
 
@@ -362,7 +362,7 @@ contain data and begin showing you metrics.
 
 ------------------------------------------------------------------------
 
-[](){#usingtoolsi}
+<a href="" id="usingtoolsi"></a>
 
 #### Using IPtraf :
 
@@ -389,7 +389,7 @@ installed. IPtraf watches traffic in real time.
 
 
 
-[](){#conclusion}
+<a href="" id="conclusion"></a>
 
 ### Conclusion
 

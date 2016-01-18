@@ -24,7 +24,7 @@ point to the load balancer.
 This article describes how to point an existing domain to a Cloud Load
 Balancer. For instructions on creating a new Load Balancer,
 see [Configuring a Load
-Balancer](/howto/configure-a-load-balancer).
+Balancer](/how-to/configure-a-load-balancer).
 
 ### Pointing an Existing Domain to a Load Balancer {#pointing-an-existing-domain-to-a-load-balancer .p1}
 

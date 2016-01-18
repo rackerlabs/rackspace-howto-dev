@@ -61,14 +61,14 @@ Sites](http://www.rackspace.com/cloud/cloud_hosting_products/sites/ "http://www.
 service. To host a domain that you have registered on your Rackspace
 Cloud Server, go to your domain registrar and [set the nameservers to
 Rackspace's
-nameservers](/howto/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud).
+nameservers](/how-to/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud).
 This will allow DNS to route to your domain hosted on your Cloud Server.
 
 ### Related Information
 
 [Serving Your Domain From a Rackspace Cloud
-Server](/howto/serving-your-domain-from-a-rackspace-cloud-server "Serving Your Domain From a Rackspace Cloud Server")
+Server](/how-to/serving-your-domain-from-a-rackspace-cloud-server "Serving Your Domain From a Rackspace Cloud Server")
 
 [Create DNS Records for Cloud Servers with the Control
-Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel "Create DNS Records for Cloud Servers with the Control Panel")
+Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel "Create DNS Records for Cloud Servers with the Control Panel")
 

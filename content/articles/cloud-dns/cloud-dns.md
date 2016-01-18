@@ -21,21 +21,21 @@ our DNS infrastructure programatically. This will significantly help you
 automate and simplify your domain management.
 
 -   **[Rackspace Cloud DNS -
-    Overview](/howto/rackspace-cloud-dns-overview)**
+    Overview](/how-to/rackspace-cloud-dns-overview)**
 -   **[Rackspace Cloud DNS - Available
-    Features](/howto/rackspace-cloud-dns-available-features)**
+    Features](/how-to/rackspace-cloud-dns-available-features)**
 -   **[Rackspace Cloud DNS - Technical
-    Details](/howto/rackspace-cloud-dns-technical-details)**
+    Details](/how-to/rackspace-cloud-dns-technical-details)**
 -   **[Rackspace Cloud DNS - API
-    Example](/howto/rackspace-cloud-dns-api-example)**
+    Example](/how-to/rackspace-cloud-dns-api-example)**
 -   [**Rackspace Cloud DNS - Additional
-    Resources**](/howto/rackspace-cloud-dns-additional-resources)
+    Resources**](/how-to/rackspace-cloud-dns-additional-resources)
 -   [**Rackspace Cloud DNS - Frequently Asked
-    Questions**](/howto/rackspace-cloud-dns-faq)
+    Questions**](/how-to/rackspace-cloud-dns-faq)
 
  
 
 ### Next steps
 
 **[Rackspace Cloud DNS -
-Overview](/howto/rackspace-cloud-dns-overview)**
+Overview](/how-to/rackspace-cloud-dns-overview)**

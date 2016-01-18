@@ -19,20 +19,20 @@ optimal resource utilization. Read more to see how easy it is to do!
 ###  Add a Load Balancer
 
 -   [Video: Introducing Cloud Load
-    Balancers](/howto/cloud-load-balancers)
+    Balancers](/how-to/cloud-load-balancers)
 -   [Create and Configure a Load
-    Balancer](/howto/rackspace-cloud-essentials-2-configuring-a-load-balancer)
+    Balancer](/how-to/rackspace-cloud-essentials-2-configuring-a-load-balancer)
 
 ###  Load Balancer Features
 
 -   [Content Caching for Cloud Load
-    Balancers](/howto/content-caching-for-cloud-load-balancers)
+    Balancers](/how-to/content-caching-for-cloud-load-balancers)
 -   [SSL Termination on Cloud Load
-    Balancers](/howto/ssl-termination-on-cloud-load-balancers)
+    Balancers](/how-to/ssl-termination-on-cloud-load-balancers)
 -   [Using SSL Offloading with IIS and Cloud Load
-    Balancers](/howto/configuring-load-balanced-sites-with-ssl-offloading-using-iis)
+    Balancers](/how-to/configuring-load-balanced-sites-with-ssl-offloading-using-iis)
 -   [Using Cloud Load Balancers with
-    RackConnect](/howto/using-cloud-load-balancers-with-rackconnect)
+    RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 
 ###  Cloud Load Balancers API
 
@@ -41,4 +41,4 @@ optimal resource utilization. Read more to see how easy it is to do!
 -   [API Developer's
     Guide](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/Overview-d1e82.html)
 -   [Role-Based Access Permissions via the
-    API](/howto/permissions-matrix-for-cloud-load-balancers)
+    API](/how-to/permissions-matrix-for-cloud-load-balancers)

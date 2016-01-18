@@ -37,7 +37,7 @@ by web clients.
 
 ### Getting started {#gettingstarted}
 
-[](){#howenable}
+<a href="" id="howenable"></a>
 
 #### How do I enable content caching? {#howdoienablecontentcaching}
 
@@ -50,9 +50,9 @@ Cloud Control Panel by going to its details screen, scrolling down to
 the Optional Features section, and clicking the pencil icon next to
 Content Caching.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/lbcontentcache.png){width="360"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/lbcontentcache.png" width="360" />
 
-[](){#benefits}
+<a href="" id="benefits"></a>
 
 #### What are the benefits of content caching? {#whatarethebenefitsofcontentcaching}
 
@@ -64,7 +64,7 @@ query to a web server behind it.
 The result is improved response times for those requests and less load
 on the web server.
 
-[](){#workwell}
+<a href="" id="workwell"></a>
 
 #### What kind of files work well with content caching? {#whatkindoffilesworkwellwithcontentcaching}
 
@@ -77,13 +77,13 @@ dynamically generated for different site visitors.
 
 ### Caching details {#cachingdetails}
 
-[](){#maxsize}
+<a href="" id="maxsize"></a>
 
 #### Is there a maximum file size that can be cached? {#isthereamaximumfilesizethatcanbecached}
 
 The maximum file size per cached item is 2 MB.
 
-[](){#ttl}
+<a href="" id="ttl"></a>
 
 #### How long is content cached? {#howlongiscontentcached}
 
@@ -94,21 +94,21 @@ If a cached file is requested shortly before it will expire, the load
 balancer will retrieve a new copy of the file early to prevent the file
 from being uncached during a period of heavy traffic.
 
-[](){#purge}
+<a href="" id="purge"></a>
 
 #### Can I choose how long files will be cached? {#canichoosehowlongfileswillbecached}
 
 No, not at this time. You cannot purge a file from the cache manually,
 but it will be automatically removed when its cache time expires.
 
-[](){#share}
+<a href="" id="share"></a>
 
 #### Do nodes share a cache? {#donodesshareacache}
 
 No. Each node has its own cache, separate from other load-balanced
 nodes.
 
-[](){#failover}
+<a href="" id="failover"></a>
 
 #### Does cache carry over in a failover situation? {#doescachecarryoverinafailoversituation}
 
@@ -117,7 +117,7 @@ a file from the failover host.
 
 ### File types {#filetypes}
 
-[](){#filetypes}
+<a href="" id="filetypes"></a>
 
 #### What file types are supported for content caching? {#whatfiletypesaresupportedforcontentcaching}
 
@@ -137,7 +137,7 @@ At this time the following file extensions are cached:
     .mp4
     .swf
 
-[](){#nocache}
+<a href="" id="nocache"></a>
 
 #### Can I exclude specific file types? {#caniexcludespecificfiletypes}
 

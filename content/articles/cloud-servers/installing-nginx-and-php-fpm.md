@@ -13,10 +13,10 @@ body_format: tinymce
 ### Prerequisites {#prerequisites .p1}
 
 [Installing NGINX and PHP-FPM -
-Preface](/howto/installing-nginx-and-php-fpm-preface)
+Preface](/how-to/installing-nginx-and-php-fpm-preface)
 
 You've [gotten your system
-ready](/howto/installing-nginx-and-php-fpm-the-fun-begins)
+ready](/how-to/installing-nginx-and-php-fpm-the-fun-begins)
 to install PHP-FPM.
 
 Now this is the most complicated and quite possibly the hardest piece to
@@ -45,5 +45,5 @@ take a break.
 ### Next steps {#next-steps .p1}
 
 [Installing NGINX and
-PHP-FPM](/howto/installing-nginx-and-php-fpm)
+PHP-FPM](/how-to/installing-nginx-and-php-fpm)
 

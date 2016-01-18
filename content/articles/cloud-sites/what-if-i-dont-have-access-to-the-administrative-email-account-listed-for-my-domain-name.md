@@ -14,9 +14,9 @@ You must have access to the administrative email to approve transfer
 requests when you are changing registrars or updating your name servers.
 Your current registrar will send an email to this account that will
 require a reply from you, confirming that the transfer is authorized. If
-you do not have access to this email address, please contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do"){.external
-.text} for help.
+you do not have access to this email address, please contact
+<a href="http://manage.rackspacecloud.com/SupportMain.do" class="external text" title="http://manage.rackspacecloud.com/SupportMain.do">customer support</a>
+for help.
 
 
 

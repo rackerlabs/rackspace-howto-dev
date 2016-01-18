@@ -25,18 +25,17 @@ post](http://www.rackspace.com/blog/install-drupal-and-joomla-on-rackspace-cloud
 
 -   Administrative access to the Rackspace Cloud to create domains and
     add databases
--   Latest Drupal version from <http://drupal.org/> uncompressed in a
-    local repository.
+-   Latest Drupal version from
+    <a href="http://drupal.org/" class="uri" class="external free" title="http://drupal.org/">http://drupal.org/</a>
+    uncompressed in a local repository.
 -   ftp access to website, and a ftp client like ExpanDrive
 
 **Procedure**
 
--   Login to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp%7C "http://manage.rackspacecloud.com/pages/Login.jsp|"){.external
-    .text}
--   If you are new to Rackspace Cloud, please refer to [Adding a new
-    website](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website "/knowledge_center/index.php/Adding_a_new_website"){.external
-    .text}
+-   Login to the
+    <a href="http://manage.rackspacecloud.com/pages/Login.jsp%7C" class="external text" title="http://manage.rackspacecloud.com/pages/Login.jsp|">Cloud Sites Control Panel</a>
+-   If you are new to Rackspace Cloud, please refer to
+    <a href="/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website" class="external text" title="/knowledge_center/index.php/Adding_a_new_website">Adding a new website</a>
 -   Navigate the Hosting -&gt;Cloud Sites menu to the website hyperlink
     on which Drupal is to be installed.
 
@@ -45,10 +44,8 @@ The database feature can be added by using the CHANGE PLAN hyperlink on
 the domain **General Settings** tab.
 
 -   Upload Drupal files from the local repository to the desired
-    location on the website using FTP - Refer to [Upload content to a
-    website using
-    FTP](/howto/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP"){.external
-    .text}
+    location on the website using FTP - Refer to
+    <a href="/how-to/getting-started-with-cloud-sites-uploading-your-content" class="external text" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP">Upload content to a website using FTP</a>
     -   To integrate Drupal to the root of domain (e.g.
         http://example.com/), place all contents of the unzipped Drupal
         directory (but excluding the directory itself) into the root
@@ -63,10 +60,8 @@ the domain **General Settings** tab.
 <!-- -->
 
 -   Next create a new Mysql database (e.g. *prefix*\_drupal62) with
-    user (e.g. *prefix*\_drupal62) (Refer to \* [Add a MySQL database to
-    a website or
-    domain](/howto/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain"){.external
-    .text}).
+    user (e.g. *prefix*\_drupal62) (Refer to \*
+    <a href="/how-to/rackspace-cloud-sites-essentials-mysql-databases" class="external text" title="/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain">Add a MySQL database to a website or domain</a>).
 -   Note the database information a) database name b) user name c)
     password d) hostname (not localhost) for use during the
     Drupal installation.
@@ -120,8 +115,9 @@ the domain **General Settings** tab.
 **Additional Resources**
 
 -   Add new content using the Drupal help and documentation at
-    <http://drupal.org/handbooks>
--   Learn how to set up cron jobs at <http://drupal.org/node/565408>
+    <a href="http://drupal.org/handbooks" class="uri" class="external free" title="http://drupal.org/handbooks">http://drupal.org/handbooks</a>
+-   Learn how to set up cron jobs at
+    <a href="http://drupal.org/node/565408" class="uri" class="external free" title="http://drupal.org/node/565408">http://drupal.org/node/565408</a>
 
 ---**RKN** - 12/6/2009
 

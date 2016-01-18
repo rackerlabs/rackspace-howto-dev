@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 **[Rackspace Cloud DNS - Available
-Features](/howto/rackspace-cloud-dns-available-features)**
+Features](/how-to/rackspace-cloud-dns-available-features)**
 
 ### Technical Details
 
@@ -129,10 +129,10 @@ the details of these new record types:
     of servers used for a specific service.
 
 For a full list of record types and their definitions, please click
-[here](/howto/rackspace-cloud-dns-additional-resources).
+[here](/how-to/rackspace-cloud-dns-additional-resources).
 
 ### Next steps
 
 **[Rackspace Cloud DNS - API
-Example](/howto/rackspace-cloud-dns-api-example)**
+Example](/how-to/rackspace-cloud-dns-api-example)**
 

@@ -39,7 +39,7 @@ These requirements must be met to implement RackConnect v3.0:
 -   For a detailed list of the network devices currently supported by
     RackConnect v3.0 and their capabilities, see the article
     [RackConnect Network Device
-    Comparison](/howto/rackconnect-network-device-comparison).
+    Comparison](/how-to/rackconnect-network-device-comparison).
 
 **Supported region**
 
@@ -64,14 +64,14 @@ These requirements must be met to implement RackConnect v3.0:
     implementation process. RackConnect v3.0 supports up to 10
     cloud networks. For details about Cloud Networks limitations, see
     the article, [RackConnect v3.0
-    Limitations](/howto/rackconnect-v30-limitations).
+    Limitations](/how-to/rackconnect-v30-limitations).
 -   During the implementation process, you must provide the
     subnet (CIDR) and network segment name that you want to use with
     your cloud networks.
 -   With RackConnect v3.0,  multiple cloud networks can be associated
     with a single cloud account. However, to have RackConnect
     connectivity, the networks must be created by Rackspace. Please
-    [contact us](/howto/support) if
+    [contact us](/how-to/support) if
     you want to add additional cloud networks to your RackConnect
     v3.0 configuration.
 -   Additionally, to have RackConnect v3.0 connectivity, any cloud
@@ -82,5 +82,5 @@ These requirements must be met to implement RackConnect v3.0:
 
 If you have any questions, please reach out to us. Contact information
 is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 

@@ -72,7 +72,7 @@ Add an Admin User {#AddAnAdminUser}
 
 **Note**: If you are setting up additional SSH users for an OnMetal
 server, see [Create OnMetal Cloud
-Servers](/howto/create-onmetal-cloud-servers)
+Servers](/how-to/create-onmetal-cloud-servers)
 for applicable OnMetal steps.
 
 1.  To add an admin user, issue the following command and replace
@@ -125,7 +125,7 @@ server, and set the correct permissions for the key.
 
 The following instructions assume that you use Linux or Mac OS X. For
 Windows instructions, see [Key generation using Putty for
-Windows](/howto/generating-rsa-keys-with-ssh-puttygen).
+Windows](/how-to/generating-rsa-keys-with-ssh-puttygen).
 
 ### Step 1. Create the public and private keys
 
@@ -456,6 +456,6 @@ repair the configurations.
 
 These are the basics of connecting to a Linux Cloud Server and setting
 up security.  See [Windows Cloud
-Server](/howto/log-in-to-your-server-via-rdp-windows) to
+Server](/how-to/log-in-to-your-server-via-rdp-windows) to
 be perform these steps on a Windows server.
 

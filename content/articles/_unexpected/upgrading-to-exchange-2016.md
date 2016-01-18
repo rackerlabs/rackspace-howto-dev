@@ -46,7 +46,7 @@ Public Folders function only if this record is in place.
 
 Complete instructions for setting up your Autodiscover record are
 located in [Set up DNS records for Cloud Office email and Skype for
-Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
 
 ### Outlook Web Access
 
@@ -110,7 +110,7 @@ mailbox will begin to resyncronize.
 We recommend using Autodiscover to configure users. If a manual
 configuration is needed, visit the following link for our setup guides:
 [Setup Up Microsoft Exchange Email Clients and Mobile
-Devices](/howto/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange)
+Devices](/how-to/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange)
 
 ### Rackspace Auto Configuration Tool (Outlook 2010 and Outlook 2013)
 
@@ -132,7 +132,7 @@ Exchange 2016 migration.
 In most cases, you do not need to change your MX records because they
 should already be pointed to our environment. Our MX record details are
 located here in [Set up DNS records for Cloud Office email and Skype for
-Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
 
 **Could we migrate a portion of our mailboxes?**
 

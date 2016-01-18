@@ -41,20 +41,18 @@ ServiceNet from your Cloud Server, it cannot access certain Rackspace
 products and services. The graphic below depicts the services that are
 not available when these networks are removed from a Cloud Server:
 
-![Removing Networks from a Cloud
-Server](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cloud-networks-infographic-revised4.png){width="438"
-height="722"}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/cloud-networks-infographic-revised4.png" alt="Removing Networks from a Cloud Server" width="438" height="722" />
 
 ### More Information on Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](/howto/create-an-isolated-cloud-network-and-attach-it-to-a-server "Attach an Isolated Network to a New Cloud Server")
+Server](/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server "Attach an Isolated Network to a New Cloud Server")
 
 [Attach a Cloud Network to an Existing Cloud
-Server](/howto/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
+Server](/how-to/attach-a-cloud-network-to-an-existing-cloud-server "Attach an Isolated Network to an Existing Cloud Server")
 
 [Using CIDR notation in Cloud
-Networks](/howto/using-cidr-notation-in-cloud-networks "CIDR Notation")
+Networks](/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 [Cloud Networks Developer Guide](https://developer.rackspace.com/docs/)
 

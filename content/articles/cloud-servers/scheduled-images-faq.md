@@ -77,7 +77,7 @@ Consider the following issues:
     DBMS vendor for more information. If you have such a DBMS and you
     want to create an image of the server, read [Using task states with
     server
-    imaging](/howto/using-task-states-with-server-imaging).
+    imaging](/how-to/using-task-states-with-server-imaging).
 -   As is the case with a manual image, a scheduled image is an image of
     the system disk only.
 
@@ -126,7 +126,7 @@ it:
 
 For information about using the novaclient tool for scheduled images,
 see [Using python-novaclient to manage scheduled
-images](/howto/using-python-novaclient-to-manage-scheduled-images).
+images](/how-to/using-python-novaclient-to-manage-scheduled-images).
 
 #### Is there a minimum or maximum time between scheduled images? {#time-between-images}
 
@@ -227,7 +227,7 @@ control panel. If you don't want to make API calls directly, a
 command-line tool called novaclient is available. For more information
 about using the novaclient tool to manage your scheduled images, see
 [Using python-novaclient to manage scheduled
-images](/howto/using-python-novaclient-to-manage-scheduled-images).
+images](/how-to/using-python-novaclient-to-manage-scheduled-images).
 
 #### How can I change the retention value on my server? {#change-retention}
 
@@ -282,9 +282,7 @@ options will remain the same as they are now.
 
 #### Where can I get more information about Scheduled Images? {#more-info}
 
--   [Scheduled Images API Extension
-    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images){.links}
--   [Using python-novaclient to manage scheduled
-    images](/howto/using-python-novaclient-to-manage-scheduled-images){.links}
+-   <a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images" class="links">Scheduled Images API Extension Documentation</a>
+-   <a href="/how-to/using-python-novaclient-to-manage-scheduled-images" class="links">Using python-novaclient to manage scheduled images</a>
 
 

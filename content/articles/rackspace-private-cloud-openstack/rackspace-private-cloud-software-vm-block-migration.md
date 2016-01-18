@@ -19,8 +19,8 @@ that deploy and manage the suite of OpenStack core projects: Compute
 (Keystone), and Block Storage (Cinder). OpenStack Object Storage (Swift)
 is installed separately, as described in this document.
 
-Rackspace Private Cloud Software v 2.0 (Alamo) supports the [Folsom
-release of OpenStack](http://www.openstack.org/software/essex/){.link}
+Rackspace Private Cloud Software v 2.0 (Alamo) supports the
+<a href="http://www.openstack.org/software/essex/" class="link">Folsom release of OpenStack</a>
 for these components.
 
 ### []()Intended Audience
@@ -51,11 +51,9 @@ November 15, 2012
 
 ### []()Additional Resources
 
--   [Rackspace Private Cloud Knowledge
-    Center](/howto/rackspace-private-cloud){.link}
--   [OpenStack Manuals](http://docs.openstack.org){.link}
--   [OpenStack Documentation: Configuring Live
-    Migrations](http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html){.link}
+-   <a href="/how-to/rackspace-private-cloud" class="link">Rackspace Private Cloud Knowledge Center</a>
+-   <a href="http://docs.openstack.org" class="link">OpenStack Manuals</a>
+-   <a href="http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html" class="link">OpenStack Documentation: Configuring Live Migrations</a>
 
 []()OpenStack Compute Migration Concepts
 ----------------------------------------
@@ -71,10 +69,11 @@ nodes.
 The guest components that are migrated include the current memory pages
 and disk state, and the host components include the network rules and IP
 addresses that allow access to and from the guest. There are two
-different modes of guest migration, [live
-migration](#migration-live "Live Migrations"){.link} and [block
-migration](#migration-block "Block Migrations"){.link}.  Both types of
-migration must be performed by an admin user.
+different modes of guest migration,
+<a href="#migration-live" class="link" title="Live Migrations">live migration</a>
+and
+<a href="#migration-block" class="link" title="Block Migrations">block migration</a>.
+Both types of migration must be performed by an admin user.
 
 <div class="section" title="Live Migrations">
 

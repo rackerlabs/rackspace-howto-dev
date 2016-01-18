@@ -16,15 +16,15 @@ clusters.
 ###  Working with Hadoop
 
 -   [Deploying Rackspace Cloud Big
-    Data](/howto/deploying-rackspace-cloud-big-data)
+    Data](/how-to/deploying-rackspace-cloud-big-data)
 -   [Getting data into your Big Data
-    cluster](/howto/getting-data-into-your-big-data-cluster)
+    cluster](/how-to/getting-data-into-your-big-data-cluster)
 
 ###  Service information
 
 -   [Rackspace Cloud Big Data Service
-    Glossary](/howto/rackspace-cloud-big-data-service-glossary)
+    Glossary](/how-to/rackspace-cloud-big-data-service-glossary)
 -   [Cloud Big Data Platform provisioning and
-    pricing](/howto/cloud-big-data-platform-provisioning-and-pricing)
+    pricing](/how-to/cloud-big-data-platform-provisioning-and-pricing)
 -   [What are the limits for Cloud Big
-    Data?](/howto/what-are-the-limits-for-cloud-big-data)
+    Data?](/how-to/what-are-the-limits-for-cloud-big-data)

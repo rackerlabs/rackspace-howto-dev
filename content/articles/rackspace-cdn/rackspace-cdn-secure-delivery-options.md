@@ -10,7 +10,7 @@ product: Rackspace CDN
 body_format: tinymce
 ---
 
-[](){#top}Rackspace CDN \[[product
+<a href="" id="top"></a>Rackspace CDN \[[product
 page](http://www.rackspace.com/cloud/cdn-content-delivery-network)\]
 offers the following certificate types for secure delivery: Rackspace
 shared domain, SAN, and Custom. These types are distinguished by how
@@ -25,14 +25,14 @@ much ownership a customer has over the secure certificate.
 -   [SAN certificate](#SAN%20certificate)
 -   [Custom certificate](#Custom%20certificate)
 
-[](){#Requirements for all Rackspace CDN certificate types}Requirements for all Rackspace CDN certificate types
----------------------------------------------------------------------------------------------------------------
+<a href="" id="Requirements for all Rackspace CDN certificate types"></a>Requirements for all Rackspace CDN certificate types
+-----------------------------------------------------------------------------------------------------------------------------
 
 No matter what your secure certficate type, the following requirements
 apply to all customers delivering HTTPS traffic with the Rackspace CDN
 product.
 
-### [](){#Secure origin}Secure origin
+### <a href="" id="Secure origin"></a>Secure origin
 
 To serve encrypted traffic from the Akamai edge network to an origin
 over HTTPS, the origin (that is, the web server or load balancer) must
@@ -86,7 +86,7 @@ Following is a list of approved CAs:
 -   VeriSign Class 3 Public Primary Certification Authority - G5
 -   VeriSign Universal Root Certification Authority
 
-### [](){#HTTPS request fees}HTTPS request fees
+### <a href="" id="HTTPS request fees"></a>HTTPS request fees
 
 All traffic delivered over HTTPS is charged an increased request fee.
 Request pricing for HTTP versus HTTPS is as follows:
@@ -94,7 +94,7 @@ Request pricing for HTTP versus HTTPS is as follows:
 -   \$0.0075 per 10,000 requests for HTTP traffic
 -   \$0.010 per 10,000 requests for HTTPS traffic
 
-### [](){#Organizational validation}Organizational validation
+### <a href="" id="Organizational validation"></a>Organizational validation
 
 All Rackspace CDN certificates are provisioned using organizational
 validation (OV). This method of validation requires that the domain
@@ -111,8 +111,8 @@ up-to-date. You can check your current WHOIS information at
 If this information is out-of-date, update it with your DNS provider
 before submitting a request for a SAN or Custom certificate.
 
-[](){#Rackspace shared domain}Rackspace shared domain
------------------------------------------------------
+<a href="" id="Rackspace shared domain"></a>Rackspace shared domain
+-------------------------------------------------------------------
 
 This method of secure delivery uses a shared Rackspace domain and
 implements a wildcard certificate that Rackspace owns and manages. When
@@ -131,10 +131,9 @@ To use the Rackspace shared domain method, you create a CDN service in
 the Cloud Control Panel and select **HTTPS** in **Choose Traffic Type**
 and select **Shared Rackspace Domain Certificate** in **Choose
 Certificate Type**. For more information, see [Create a Rackspace CDN
-service](/howto/create-a-rackspace-cdn-service).
+service](/how-to/create-a-rackspace-cdn-service).
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%209.49.51%20AM.png){width="665"
-height="548"}
+<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%209.49.51%20AM.png" width="665" height="548" />
 
 In the Domain Name field, enter the domain that you want to use in the
 shared domain URL. This name must be unique across all Rackspace CDN
@@ -148,8 +147,8 @@ additional monthly fee. Customers who use this certificate type for
 secure delivery are charged the standard fee for CDN bandwidth and the
 HTTPS request fee (\$0.010 per 10,000 requests).
 
-[](){#SAN certificate}SAN certificate
-------------------------------------------
+<a href="" id="SAN certificate"></a>SAN certificate
+--------------------------------------------------------
 
 Customers who choose the Subject Alternative Name (SAN) certificate type
 can use their own domain name when serving traffic over HTTPS. In this
@@ -166,18 +165,16 @@ under **Choose Traffic Type** and **Shared SAN Certificate** selected
 under **Choose Certificate Type**. Make sure that you enter a **Domain
 Name** with a subdomain and also enter an **Origin**. Then click Create
 Service. For more information, see [Create a Rackspace CDN
-service](/howto/create-a-rackspace-cdn-service).
+service](/how-to/create-a-rackspace-cdn-service).
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.28.59%20AM.png){width="672"
-height="555"}
+<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.28.59%20AM.png" width="672" height="555" />
 
 When you click **Create Service**, the process is started to create the
 SAN certificate. You can follow the process on the CDN Service
 page in the **Domains** section. Below you see the **Status** is
 **Certificate Pending**.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.13.35%20AM.png){width="622"
-height="449"}
+<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.13.35%20AM.png" width="622" height="449" />
 
 The certificate authority (CA) will contact the administrator of the
 domain to confirm that Rackspace has the right to add the domain to a
@@ -194,8 +191,8 @@ fee of \$36 per domain. Customers who use this certificate type for
 secure delivery are charged the standard per-GB fee for CDN bandwidth
 and the HTTPS request fee (\$0.010 per 10,000 requests).
 
-[](){#Custom certificate}Custom certificate
--------------------------------------------
+<a href="" id="Custom certificate"></a>Custom certificate
+---------------------------------------------------------
 
 Customers who choose a Custom secure certificate have the most
 flexibility over their certificate because they fully own the
@@ -228,16 +225,14 @@ deployed, you can request a certificate by clicking the **Request a
 Secure Certificate** link in **CUSTOM SECURE CERTIFICATES** in the
 sidebar, which is shown in the figure below.
 
-![](/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.35.08%20AM.png){width="771"
-height="531"}
+<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-17%20at%2010.35.08%20AM.png" width="771" height="531" />
 
 This link routes you to a page to create a ticket. When you request a
 Custom certificate, you need to supply multiple types of information.
 Fill in all bolded items in the **Custom** section of the ticket
 message.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CustomCertificateTicket.png){width="764"
-height="447"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CustomCertificateTicket.png" width="764" height="447" />
 
 After you submit the ticket, a Support Technician will contact you to
 verify your information and will send your request to a certificate

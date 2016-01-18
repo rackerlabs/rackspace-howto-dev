@@ -17,7 +17,7 @@ Rackspace CDN currently has the following limits:
 
 
 
-#### [&lt; Uses of Rackspace CDN](/howto/uses-of-rackspace-cdn)    -    [Rackspace CDN terminology &gt;](/howto/rackspace-cdn-terminology)
+#### [&lt; Uses of Rackspace CDN](/how-to/uses-of-rackspace-cdn)    -    [Rackspace CDN terminology &gt;](/how-to/rackspace-cdn-terminology)
 
 
 

@@ -23,7 +23,7 @@ cause you to lose access to some Rackspace services.
 The article below describes what services are impacted by disconnecting
 Public and/or SNET interfaces from your cloud servers.
 
-</howto/removing-networks-from-a-cloud-server>
+</how-to/removing-networks-from-a-cloud-server>
 
 Vyatta Network Appliance
 ------------------------
@@ -44,8 +44,7 @@ and is used as the default gateway by the server in question. The Vyatta
 appliance is connected to all three networks (Public, SNET and
 Isolated).<span style="line-height: 1.538em;"> </span>
 
-![](/knowledge_center/sites/default/files/styles/half_width/public/field/image/Vyatta.jpg){.image-half_width
-width="350" height="224"}
+<img src="/knowledge_center/sites/default/files/styles/half_width/public/field/image/Vyatta.jpg" class="image-half_width" width="350" height="224" />
 
 <span style="line-height: 1.538em;">The table below summarizes what
 services can be accessed if the Vyatta is configured as described in the
@@ -98,7 +97,7 @@ In order for the services listed in the table above to work as explained
 more comprehensive explanation of Source NAT configuration , visit the
 link below:
 
-</howto/enable-internet-access-on-cloud-servers-using-snat-on-a-vyatta-network-appliance>
+</how-to/enable-internet-access-on-cloud-servers-using-snat-on-a-vyatta-network-appliance>
 
 ###### Note: The cloud servers are on the isolated interface 192.168.1.0/24 and they are using the Vyatta network appliance as their default gateway
 
@@ -152,5 +151,5 @@ Vyatta appliance. For configuration assistance of firewall policies on
 Vyatta please visit the URL below:
 
 [http://www.rackspace.com/knowledge\_center/article/configuring-interface-based-firewall-on-the-vyatta-network-appliance
-](/howto/configuring-interface-based-firewall-on-the-vyatta-network-appliance)
+](/how-to/configuring-interface-based-firewall-on-the-vyatta-network-appliance)
 

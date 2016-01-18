@@ -30,7 +30,7 @@ Networks. As a result, RackConnect v3.0 can support all cloud servers
 that Cloud Networks supports. This also means that RackConnect v3.0 does
 not currently support OnMetal servers. You can view the [RackConnect
 v3.0 Compatibility
-Matrix](/howto/rackconnect-v30-compatibility)
+Matrix](/how-to/rackconnect-v30-compatibility)
 for a list of all products with which RackConnect v3.0 is compatible.
 
 To provide you with the best experience possible, we recommend that you
@@ -56,7 +56,7 @@ you build a cloud server via the Cloud Control Panel, unless you select
 the **RackConnect IP** option to provision a public IP address. The
 access IP is also updated when you add and remove a public IP address
 from your cloud servers with the [RackConnect v3.0
-API](/howto/getting-started-with-the-rackconnect-v30-api).
+API](/how-to/getting-started-with-the-rackconnect-v30-api).
 
 **Note:** Both access\_ip\_v4 and access\_ip\_v6 values are listed via
 the Cloud Servers API, but because RackConnect v3.0 is currently an

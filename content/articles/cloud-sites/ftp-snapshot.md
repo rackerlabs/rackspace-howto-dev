@@ -25,14 +25,14 @@ is not intended to be used for general backup purposes. We strongly
 recommend that you utilize your own backup process using a cron script.
 For more information on using cron scripts, see [Create a cron job to
 back up a Cloud Sites SQL Server
-database](/howto/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database).
+database](/how-to/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database).
 
 ### How Do I Recover My FTP Snapshot Data?
 
 In order to view your FTP content snapshots you must first login to your
 site via FTP.  For help with this, please refer to our article
 on [Uploading content to a website using
-FTP](/howto/getting-started-with-cloud-sites-uploading-your-content "Uploading content to a website using FTP")
+FTP](/how-to/getting-started-with-cloud-sites-uploading-your-content "Uploading content to a website using FTP")
 
 Once you are logged in to your FTP site, please go to the path of the
 file(s) / folder(s) you want to attempt to recover.
@@ -44,7 +44,7 @@ for the site.
 **NOTE:** *You may need to execute a manual change directory command to
 .snapshot if you are not able to view and modify the current FTP path.*
 
-![](http://c15056451.r51.cf2.rackcdn.com/FTPSnapshot.png){width="550"}
+<img src="http://c15056451.r51.cf2.rackcdn.com/FTPSnapshot.png" width="550" />
 
 You should see the following sub-directories if successful:
 

@@ -23,16 +23,15 @@ connect to your Cloud Database from Cloud Sites.
 <http://mycloud.rackspace.com> and once you're logged in, select
 **Databases** at the top.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/6.png){width="496"
-height="57"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/6.png" width="496" height="57" />
 
 2\. Next, select the **Create MySQL Instance** option and you'll then be
 taken to the **Create MySQL Instance** screen. Fill out the fields with
 your desired specifications to creating your Database and then select
 **Create Instance** when finished.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2_0.png){width="549"
-height="744"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2_0.png" width="549" height="744" />
+
 
 *Note: We recommend creating your Database in the same region as your
 Cloud Site. You can find out the location of your Cloud Site by looking
@@ -43,10 +42,10 @@ you'll see your status go from an Orange color to a green which
 indicates it's active. Selecting your Instance will display all
 information relating to that particular Instance.
 
-### ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4_0.png){width="532" height="74"}
+### <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4_0.png" width="532" height="74" />
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/15.png){width="639"
-height="221"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/15.png" width="639" height="221" />
+
 
 ###
 
@@ -67,8 +66,7 @@ against your instance. First thing you'll do is login to the [Cloud
 Control Panel](https://mycloud.rackspace.com) and select **Load
 Balancers** at the top.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/13.png){width="493"
-height="55"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/13.png" width="493" height="55" />
 
 2\. Next, select **Create A Load Balancer** and fill out the fields with
 your desired specifications. When you approach the **Add Nodes**
@@ -79,11 +77,9 @@ we just created and then select **Create Load Balancer**.
 *Note: You can grab the hostname of your Instance by selecting the
 Instance name in the Databases section.*
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/9.png){width="341"
-height="87"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/9.png" width="341" height="87" />
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/16.png){width="746"
-height="421"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/16.png" width="746" height="421" />
 
 3\. Once your Load Balancer is created (Active), select the Load Balancer
 and you may then grab the public IP address to create a new connection.
@@ -91,8 +87,7 @@ Plug the IP address into the Hostname field in MySQL Workbench, your
 database credentials, and also the standard port (**3306**) in the port
 field.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/14.png){width="673"
-height="449"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/14.png" width="673" height="449" />
 
 4\. Connect your MySQL workbench by selecting OK and you can then import
 your database, edit user permissions, etc.
@@ -108,8 +103,7 @@ and your database host (this will be your MySQL instance hostname, not
 your load balancer IP address, you do not need a load balancer to
 connect to your database from your website) and you're good to go!
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/8.png){width="736"
-height="534"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/8.png" width="736" height="534" />
 
 There you have it! You've created a MySQL instance and database using
 Cloud Databases, a Load Balancer to connect and manage your database,

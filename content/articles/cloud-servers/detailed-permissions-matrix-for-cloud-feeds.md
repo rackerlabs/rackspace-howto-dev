@@ -14,7 +14,7 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [**API Documentation**](https://developer.rackspace.com/docs/)
 
-[**Related Knowledge Center Articles**](/howto/cloud-feeds-faq)
+[**Related Knowledge Center Articles**](/how-to/cloud-feeds-faq)
 
 ### As of January 20, 2015
 
@@ -29,6 +29,6 @@ Any other users with just valid token, irrespective of the role | &nbsp; | &nbsp
 
 **Note:** Beginning January 20, users must have one of the cloudfeeds roles to access feeds (read or write).
 
-**<** [**Permission Matrices for RBAC**](/howto/permissions-matrix-for-role-based-access-control-rbac)
+**<** [**Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 
 &nbsp;

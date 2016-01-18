@@ -282,9 +282,9 @@ role. This will create a node with the `cinder-api`{.filename},
 `cinder-scheduler`{.filename}, and `cinder-volume`{.filename} roles.
 
 You can also create a block storage all-in-one node following the steps
-outlined in [Adding Volume Storage
-Nodes](#cinder-additional "Adding Volume Storage Nodes"){.link}, with
-one change.
+outlined in
+<a href="#cinder-additional" class="link" title="Adding Volume Storage Nodes">Adding Volume Storage Nodes</a>,
+with one change.
 
 In step 8, you will specify the `cinder-all`{.filename} role instead of
 `cinder-volume`{.filename}. For `<serverName>`{.filename}, substitute
@@ -319,9 +319,9 @@ By default, Cinder uses LVM for volume storage. An environment created
 with the Rackspace Private Cloud cookbooks can also be configured to use
 the following drivers.
 
--   [EMC](#cinder-emc "Using Cinder with EMC"){.link}
--   [NetApp](#cinder-netapp "Using Cinder with NetApp"){.link}
--   [SolidFire](#cinder-solidfire "Using Cinder with SolidFire"){.link}
+-   <a href="#cinder-emc" class="link" title="Using Cinder with EMC">EMC</a>
+-   <a href="#cinder-netapp" class="link" title="Using Cinder with NetApp">NetApp</a>
+-   <a href="#cinder-solidfire" class="link" title="Using Cinder with SolidFire">SolidFire</a>
 
 When using Cinder with one of these drivers, the
 `cinder-volume`{.filename} service interfaces via iscsi with the driver
@@ -341,8 +341,7 @@ volume as a disk to the instance.
 ### []()Using Cinder with EMC {#using-cinder-with-emc .title}
 
 Additional information about using Cinder with EMC can be found at the
-[OpenStack wiki page for
-Cinder/EMCVolumeDriver](https://wiki.openstack.org/wiki/Cinder/EMCVolumeDriver){.link}.
+<a href="https://wiki.openstack.org/wiki/Cinder/EMCVolumeDriver" class="link">OpenStack wiki page for Cinder/EMCVolumeDriver</a>.
 
 To configure Cinder to use EMC, you must set the following variables in
 the override\_attributes section of your Chef environment:
@@ -377,7 +376,7 @@ appropriately, and provisioning can proceed.
 Rackspace has tested NetApp with NFS with OpenStack Grizzly. NetApp with
 iscsi exists, but has not been tested yet. For information about the
 iscsi configuration, refer to the readme at
-[`https://github.com/rcbops-cookbooks/cinder`{.uri}](https://github.com/rcbops-cookbooks/cinder){.link}
+<a href="https://github.com/rcbops-cookbooks/cinder" class="link"><code class="uri">https://github.com/rcbops-cookbooks/cinder</code></a>
 
 To configure Cinder to use NetApp and NFS, you must set the following
 variables in the override\_attributes section of your Chef environment:

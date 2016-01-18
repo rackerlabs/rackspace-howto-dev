@@ -15,7 +15,7 @@ page](http://www.rackspace.com/cloud/cdn-content-delivery-network)\]
 enables you to create rules for content served over the content delivery
 network (or CDN). You create the rules after you [create the Rackspace
 CDN
-service](/howto/create-a-rackspace-cdn-service).
+service](/how-to/create-a-rackspace-cdn-service).
 Edge rules are a set of policies that tell the CDN how to handle your
 traffic. They are called "edge rules" because these policies are applied
 at the edge, meaning that you don't need logic on your web server to
@@ -28,8 +28,8 @@ rule types is covered in more detail below.
 -   [Restrictions](#restrictions)
 -   [Rule set up](#Rule%20set%20up)
 
-[](){#order}Caching rules
--------------------------
+<a href="" id="order"></a>Caching rules
+---------------------------------------
 
 Caching rules control the TTL for your site's content. Setting the TTL
 for content tells the edge servers how long to cache content before
@@ -49,8 +49,7 @@ You can still give your static content the higher TTL while setting the
 rest of your content's TTL to 0. For sites with dynamic content, your
 rules might be set up as follows:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CachingRulesExample_2_0.png){width="683"
-height="192"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CachingRulesExample_2_0.png" width="683" height="192" />
 
 **Note:**  If no TTL is set, Rackspace CDN sets default TTL values for
 your content as follows:
@@ -62,8 +61,8 @@ your content as follows:
 
 
 
-[](){#examples}Origin rules
----------------------------
+<a href="" id="examples"></a>Origin rules
+-----------------------------------------
 
 Origin rules are used when you need to pull content from two or more
 origins (web servers, load balancers, etc) for the same CDN service.
@@ -80,8 +79,7 @@ To setup a new origin, begin by clicking on the **Add Origin** link on
 the Details page for your CDN service.  Get started with your origin
 rule for your new origin by giving an IP or domain for that origin.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%201.43.49%20PM.png){width="435"
-height="181"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%201.43.49%20PM.png" width="435" height="181" />
 
 **Tip**:  Rackspace recommends that customers use domains to identify
 their origins when possible, as IP addresses can change over time.  When
@@ -115,8 +113,8 @@ from the origin. However, that is not the case.
 
 
 
-[](){#restrictions}Restrictions
--------------------------------
+<a href="" id="restrictions"></a>Restrictions
+---------------------------------------------
 
 Rackspace CDN enables you to specify restrictions based the following:
 
@@ -130,15 +128,13 @@ Rackspace CDN enables you to specify restrictions based the following:
 Use the **Add Rule** button in the Restrictions area to create a
 restriction.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%202.23.56%20PM.png){width="740"
-height="193"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%202.23.56%20PM.png" width="740" height="193" />
 
 Choose the **Type** of restriction that you want to define. Use
 **Access** to indicate whether you want to **Allow** or **Block**
 requests.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%202.24.57%20PM.png){width="446"
-height="269"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%202.24.57%20PM.png" width="446" height="269" />
 
 
 
@@ -169,8 +165,7 @@ To implement multiple Referrer domains to a single path, you can use a
 space to separate the list of domains that you want to have access in
 the **Referrer** field. Following is an example:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%201.46.58%20PM.png){width="407"
-height="247"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%201.46.58%20PM.png" width="407" height="247" />
 
 **Note**: Rackspace does not recommend implementing referrer
 restrictions for an entire domain.
@@ -200,7 +195,7 @@ them on your production domain.
 
 Rackspace CDN allows you to restrict content based on geographical
 regions. See [Rackspace CDN geography
-mapping](/howto/rackspace-cdn-geography-mapping)
+mapping](/how-to/rackspace-cdn-geography-mapping)
 for a list of the Rackspace CDN geographical regions and the countries
 and territories within them.
 
@@ -211,8 +206,8 @@ address to which the retrictions applies.
 
 
 
-[](){#Rule set up}Rule set up
------------------------------
+<a href="" id="Rule set up"></a>Rule set up
+-------------------------------------------
 
 No matter what type of edge rule you create, the concepts in the
 following sections apply.

@@ -70,8 +70,7 @@ To configure archiving for Cloud Feeds
 
 6.  Click **Save Configuration**.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Cloud%20Feeds%20archiving.png){width="497"
-    height="335"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Cloud%20Feeds%20archiving.png" width="497" height="335" />
 
 
 

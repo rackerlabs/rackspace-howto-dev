@@ -14,7 +14,7 @@ To enable or disable logging for a Rackspace CDN service, follow these
 steps. By default, logging in is disabled when you create a service.
 
 1\. Access Rackspace CDN as described in [Access Rackspace
-CDN](/howto/access-rackspace-cdn).
+CDN](/how-to/access-rackspace-cdn).
 
 2\. In the list of CDN services, click the name of the service for which
 you want to enable or disable logging.
@@ -23,8 +23,7 @@ you want to enable or disable logging.
 dialog box appears. Note the information about managing the data that is
 stored.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/EnableLogging.png){width="468"
-height="229"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/EnableLogging.png" width="468" height="229" />
 
 4\. To turn logging on, click the **Enable Logging** button. The
 **Service Status** is **Pending** until the value for **Logging**
@@ -39,12 +38,11 @@ the **Service Details** section of the CDN service page. Then, click
 **Disable Logging** again in the dialog box that opens. Note the
 information that is displayed in the dialog box about created logs.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DisableLogging.png){width="449"
-height="206"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DisableLogging.png" width="449" height="206" />
 
 
 
-#### [&lt; Create and manage restrictions in Rackspace CDN](/howto/create-and-manage-restrictions-in-rackspace-cdn)    -    [Rename a Rackspace CDN service &gt;](/howto/rename-a-rackspace-cdn-service)
+#### [&lt; Create and manage restrictions in Rackspace CDN](/how-to/create-and-manage-restrictions-in-rackspace-cdn)    -    [Rename a Rackspace CDN service &gt;](/how-to/rename-a-rackspace-cdn-service)
 
 
 

@@ -11,8 +11,8 @@ body_format: tinymce
 ---
 
 This tutorial will walk you through the process of installing the
-[iRedMail](http://code.google.com/p/iredmail/ "http://code.google.com/p/iredmail/"){.external
-.text} bundled mail server to successfully send and receive e-mail.
+<a href="http://code.google.com/p/iredmail/" class="external text" title="http://code.google.com/p/iredmail/">iRedMail</a>
+bundled mail server to successfully send and receive e-mail.
 
 This tutorial assumes a few things:
 
@@ -74,8 +74,8 @@ may run into problems and become frustrated very quickly.
 -   [<span class="toctext">Troubleshooting: View Mail
     Logs</span>](#Troubleshooting:_View_Mail_Logs)
 
-[](){#Reverse_DNS}<span>Reverse DNS</span>
-------------------------------------------
+<a href="" id="Reverse_DNS"></a><span>Reverse DNS</span>
+--------------------------------------------------------
 
 Before we can begin installing the mail server we need to setup our
 reverse DNS. Without this you will find it hard to send or receive alot
@@ -84,20 +84,20 @@ spamming them or sending falsified e-mail.
 
 Setting up reverse DNS through our Control Panel is very easy. Please
 refer to our instruction on [how to setup a reverse DNS
-record](/howto/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record").
+record](/how-to/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record").
 Keep in mind that DNS changes may take up to 24 hours to propagate
 across the Internet.
 
-<span class="mw-headline">[](){#Perl_Locale_Fix}Perl Locale Fix </span>
------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Perl_Locale_Fix"></a>Perl Locale Fix </span>
+-------------------------------------------------------------------------------------
 
 Our servers ship with no locale information so they are world-friendly.
 To install the locale information type the following:
 
     # sudo aptitude install language-pack-en-base
 
-<span class="mw-headline">[](){#Aptitude_Update}Aptitude Update </span>
------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Aptitude_Update"></a>Aptitude Update </span>
+-------------------------------------------------------------------------------------
 
 Next we will make sure that our server is update to date software-wise.
 To do this we will run an Aptitude update:
@@ -105,8 +105,8 @@ To do this we will run an Aptitude update:
     # sudo aptitude update
     # sudo aptitude upgrade
 
-<span class="mw-headline">[](){#Setting_the_Host_Name}Setting the Host Name </span>
------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Setting_the_Host_Name"></a>Setting the Host Name </span>
+-------------------------------------------------------------------------------------------------
 
 One final step that needs to take place is setting up the host name of
 your mail server. You can view your current host name by typing:
@@ -135,8 +135,8 @@ set your host name to as we will need it later on.
 Once you have modified the host name simply press **CTRL-X** followed by
 **Y** and **Enter** to save.
 
-<span class="mw-headline">[](){#Modify_your_Host_File}Modify your Host File </span>
------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Modify_your_Host_File"></a>Modify your Host File </span>
+-------------------------------------------------------------------------------------------------
 
 We have one more change to make before we can begin the installation.
 When addressing your FQDN we need to tell the server that it will be
@@ -163,8 +163,8 @@ below:
 To save the file simply press **CTRL-X** followed by **Y** and **Enter**
 as we did before.
 
-<span class="mw-headline">[](){#Reboot}Reboot </span>
------------------------------------------------------
+<span class="mw-headline"><a href="" id="Reboot"></a>Reboot </span>
+-------------------------------------------------------------------
 
 To apply our host name changes we will need to reboot the server.
 
@@ -172,8 +172,8 @@ To apply our host name changes we will need to reboot the server.
 
 Once your server has rebooted please log back in.
 
-<span class="mw-headline">[](){#Enable_Aptitude_Sources}Enable Aptitude Sources </span>
----------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Enable_Aptitude_Sources"></a>Enable Aptitude Sources </span>
+-----------------------------------------------------------------------------------------------------
 
 To enable the additional Aptitude sources so iRedMail can find the
 software it needs to function. To do this we need to modify the
@@ -193,8 +193,8 @@ following:
 
     # sudo aptitude update
 
-<span class="mw-headline">[](){#Install_Pre-requisite_Packages}Install Pre-requisite Packages </span>
------------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Install_Pre-requisite_Packages"></a>Install Pre-requisite Packages </span>
+-------------------------------------------------------------------------------------------------------------------
 
 You're probably thinking "when are we going to install the software?"
 Have no fear, we are almost there! First we need to install a software
@@ -207,8 +207,8 @@ package needs to be installed:
 
     # sudo aptitude install acl
 
-<span class="mw-headline">[](){#Enable_ACL}Enable ACL </span>
--------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Enable_ACL"></a>Enable ACL </span>
+---------------------------------------------------------------------------
 
 We need to enable ACL access control on the file system. Please read
 this portion **very carefully**! Making improper changes to this file
@@ -239,8 +239,8 @@ Save the file with CTRL-X, then Y and Enter.
 
 Take a breath!
 
-<span class="mw-headline">[](){#Remount_the_File_System}Remount the File System </span>
----------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Remount_the_File_System"></a>Remount the File System </span>
+-----------------------------------------------------------------------------------------------------
 
 Once you have the changes made to the /etc/fstab file you now need to
 reload them. This is fairly easy to do.
@@ -249,8 +249,8 @@ reload them. This is fairly easy to do.
 
 Now we are ready to install iRedMail!
 
-<span class="mw-headline">[](){#Switch_to_Root_User}Switch to Root User </span>
--------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Switch_to_Root_User"></a>Switch to Root User </span>
+---------------------------------------------------------------------------------------------
 
 iRedMail will not install with *sudo* privileges so we must switch to
 the *root* user. To do this type the following:
@@ -259,23 +259,23 @@ the *root* user. To do this type the following:
 
 You should be presented with a *root@* prompt now.
 
-<span class="mw-headline">[](){#Download_iRedMail}Download iRedMail </span>
----------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Download_iRedMail"></a>Download iRedMail </span>
+-----------------------------------------------------------------------------------------
 
 To install iRedMail you will need to download the installation package
 from their website. Please point your web browser to
-<http://code.google.com/p/iredmail/downloads/list> and download the
-latest version. At the time of writing the current version is *0.6.0*.
-For the purposes of our installation we will be using *wget* to download
-the installation package. Note that we are downloading this to the home
-directory of the current user.
+<a href="http://code.google.com/p/iredmail/downloads/list" class="uri" class="external free" title="http://code.google.com/p/iredmail/downloads/list">http://code.google.com/p/iredmail/downloads/list</a>
+and download the latest version. At the time of writing the current
+version is *0.6.0*. For the purposes of our installation we will be
+using *wget* to download the installation package. Note that we are
+downloading this to the home directory of the current user.
 
     # cd ~
     # wget http://iredmail.googlecode.com/files/iRedMail-0.6.0.tar.bz2
 
 
-<span class="mw-headline">[](){#Uncompress_iRedMail}Uncompress iRedMail </span>
--------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Uncompress_iRedMail"></a>Uncompress iRedMail </span>
+---------------------------------------------------------------------------------------------
 
 You'll notice that iRedMail comes packaged as a TAR file with further
 BZ2 (BZip2) compression. To unpack this type the following:
@@ -284,8 +284,8 @@ BZ2 (BZip2) compression. To unpack this type the following:
 
 This will create a directory called *iRedMail-0.6.0*.
 
-<span class="mw-headline">[](){#Download_Installation-Related_Packages}Download Installation-Related Packages </span>
----------------------------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Download_Installation-Related_Packages"></a>Download Installation-Related Packages </span>
+-----------------------------------------------------------------------------------------------------------------------------------
 
 A few packages need to be downloaded by the installer before
 installation can commence. Run the following lines of code to make this
@@ -297,8 +297,8 @@ happen:
 This will download all of the packages necessary to install. Now we need
 to refresh the repository list:
 
-<span class="mw-headline">[](){#Start_the_iRedMail_Installer}Start the iRedMail Installer </span>
--------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Start_the_iRedMail_Installer"></a>Start the iRedMail Installer </span>
+---------------------------------------------------------------------------------------------------------------
 
 The moment has come! To start the installation type the following:
 
@@ -396,8 +396,8 @@ The moment has come! To start the installation type the following:
 Your installation should now be finished and you will be returned to a
 shell prompt.
 
-<span class="mw-headline">[](){#Delete_Setup_Files}Delete Setup Files </span>
------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Delete_Setup_Files"></a>Delete Setup Files </span>
+-------------------------------------------------------------------------------------------
 
 Before this server is ready to be used in a production environment it
 must be safely locked down and the setup files should be removed. This
@@ -405,8 +405,8 @@ is easily accomplished with one *rm* statement.
 
     # rm -f ~/iRedMail-0.6.0/config
 
-<span class="mw-headline">[](){#Reboot_2}Reboot </span>
--------------------------------------------------------
+<span class="mw-headline"><a href="" id="Reboot_2"></a>Reboot </span>
+---------------------------------------------------------------------
 
 Go ahead and reboot the server to reload everything and cleanly start
 Postfix.
@@ -415,17 +415,18 @@ Postfix.
 
 Once the server comes back up go ahead and log back in as a normal user.
 
-<span class="mw-headline">[](){#Setup_SPF_Record}Setup SPF Record </span>
--------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Setup_SPF_Record"></a>Setup SPF Record </span>
+---------------------------------------------------------------------------------------
 
 Now we will need to go setup an SPF record. Go to
-<http://old.openspf.org/wizard.html> to determine what your SPF record
-should be. Once you have done this please submit a ticket and we will
-process your SPF record. Note that your mail may still function without
-this but you may receive frequent mail rejections.
+<a href="http://old.openspf.org/wizard.html" class="uri" class="external free" title="http://old.openspf.org/wizard.html">http://old.openspf.org/wizard.html</a>
+to determine what your SPF record should be. Once you have done this
+please submit a ticket and we will process your SPF record. Note that
+your mail may still function without this but you may receive frequent
+mail rejections.
 
-<span class="mw-headline">[](){#_Create_DKIM_.28DomainKey.29}OPTIONAL: Create DKIM (DomainKey) </span>
-------------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="_Create_DKIM_.28DomainKey.29"></a>OPTIONAL: Create DKIM (DomainKey) </span>
+--------------------------------------------------------------------------------------------------------------------
 
 To create a the Domain Key entry type the following:
 
@@ -452,8 +453,8 @@ elsewhere you will need to create a TXT record for
 *dkim.\_domainkey.mydomain.com* and use the enclosed text (without the
 quotes) as the content.
 
-<span class="mw-headline">[](){#_Test_DKIM}OPTIONAL: Test DKIM </span>
-----------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="_Test_DKIM"></a>OPTIONAL: Test DKIM </span>
+------------------------------------------------------------------------------------
 
 Once you have the TXT record created you can test it on your server by
 typing the following:
@@ -468,8 +469,8 @@ If you receive 'fail' then you may have a problem with your key. Please
 check it again. This will also result from DNS entries that have not
 propagated yet.
 
-<span class="mw-headline">[](){#Reboot_3}Reboot </span>
--------------------------------------------------------
+<span class="mw-headline"><a href="" id="Reboot_3"></a>Reboot </span>
+---------------------------------------------------------------------
 
 Reboot your server one more time.
 
@@ -477,34 +478,39 @@ Reboot your server one more time.
 
 Once the server has come back online proceed below.
 
-<span class="mw-headline">[](){#Access_WebMail}Access WebMail </span>
----------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Access_WebMail"></a>Access WebMail </span>
+-----------------------------------------------------------------------------------
 
-Point your web-browser to <http://mail.mydomain.com/mail/> and this
-should bring up the RoundCubeMail WebMail application. Type in your
-login name and password and click Login. Send yourself an e-mail from
-another e-mail account to see if it is working. You can also send an
-e-mail to someone on the Internet to test outbound e-mail.
+Point your web-browser to
+<a href="http://mail.mydomain.com/mail/" class="uri" class="external free" title="http://mail.mydomain.com/mail/">http://mail.mydomain.com/mail/</a>
+and this should bring up the RoundCubeMail WebMail application. Type in
+your login name and password and click Login. Send yourself an e-mail
+from another e-mail account to see if it is working. You can also send
+an e-mail to someone on the Internet to test outbound e-mail.
 
-<span class="mw-headline">[](){#Information_About_Your_Install}Information About Your Install </span>
------------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Information_About_Your_Install"></a>Information About Your Install </span>
+-------------------------------------------------------------------------------------------------------------------
 
 You can find information about your installation file located here:
 **\~/iRedMail-0.6.0/iRedMail.tips**
 
-<span class="mw-headline">[](){#Common_Links}Common Links </span>
------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Common_Links"></a>Common Links </span>
+-------------------------------------------------------------------------------
 
 The following links are valid for your iRedMail installation. Please
 replace *mail.mydomain.com* with your FQDN.
 
--   postfix.admin - <https://mail.mydomain.com/postfixadmin/>
--   RoundCubeMail WebMail - <http://mail.mydomain.com/mail/>
--   phpMyAdmin - <https://mail.mydomain.com/phpmyadmin/>
--   AWstats - <http://mail.mydomain.com/awstats/awstats.pl>
+-   postfix.admin -
+    <a href="https://mail.mydomain.com/postfixadmin/" class="uri" class="external free" title="https://mail.mydomain.com/postfixadmin/">https://mail.mydomain.com/postfixadmin/</a>
+-   RoundCubeMail WebMail -
+    <a href="http://mail.mydomain.com/mail/" class="uri" class="external free" title="http://mail.mydomain.com/mail/">http://mail.mydomain.com/mail/</a>
+-   phpMyAdmin -
+    <a href="https://mail.mydomain.com/phpmyadmin/" class="uri" class="external free" title="https://mail.mydomain.com/phpmyadmin/">https://mail.mydomain.com/phpmyadmin/</a>
+-   AWstats -
+    <a href="http://mail.mydomain.com/awstats/awstats.pl" class="uri" class="external free" title="http://mail.mydomain.com/awstats/awstats.pl">http://mail.mydomain.com/awstats/awstats.pl</a>
 
-<span class="mw-headline">[](){#_View_Mail_Logs}Troubleshooting: View Mail Logs </span>
----------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="_View_Mail_Logs"></a>Troubleshooting: View Mail Logs </span>
+-----------------------------------------------------------------------------------------------------
 
 If you are having troubles with your mail server you might want to take
 a peek at the logs. To view the logs for iRedMail simply type the
@@ -523,7 +529,6 @@ they are added in real-time. Your output may look like the output below:
         delays=0.04/0.01/0/0.02, dsn=2.0.0, status=sent (delivered via dovecot service)
     Jul  8 23:25:53 mail postfix/qmgr[4298]: 87F93D49DA: removed
 
---[Kelly
-Koehn](/knowledge_center/index.php?title=User:Kkoehn&action=edit&redlink=1 "Kkoehn (page does not exist)"){.new}
+--<a href="/how-to/?title=User%253AKkoehn&amp%253Baction=edit&amp%253Bredlink=1" class="new" title="Kkoehn (page does not exist)">Kelly Koehn</a>
 14:26, 9 July 2009 (CDT)
 

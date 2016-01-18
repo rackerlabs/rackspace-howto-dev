@@ -33,7 +33,7 @@ place.
 
 Complete instructions for setting up your Autodiscover record are
 located here: [Set up DNS records for Cloud Office email and Skype for
-Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 ### Outlook Web Access
 
@@ -100,7 +100,7 @@ then begin to re-sync.
 We highly recommend using Autodiscover to configure users. If a manual
 configuration is needed, visit the following link for our set up guides:
 [Configure email clients and mobile devices for email hosted on
-Exchange](/howto/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange)
+Exchange](/how-to/configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange)
 
 
 
@@ -121,7 +121,7 @@ Frequently Asked Questions
     should already be pointed to our environment. Our MX record details
     are located here:* [Set up DNS records for Cloud Office email and
     Skype for
-    Business](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+    Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 2.  **Could we migrate a portion of our mailboxes?**
 

@@ -68,8 +68,7 @@ the upper-right corner of the page.
 the **Migrate New Items** icon .  The **Status** will then change to
 Processing, indicating that the pass has begun.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2013-12-04_1555%20copy.jpg){width="756"
-height="422"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2013-12-04_1555%20copy.jpg" width="756" height="422" />
 
 
 

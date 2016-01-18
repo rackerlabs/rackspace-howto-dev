@@ -19,10 +19,10 @@ are support by RackConnect v3.0 and the differences between RackConnect
 v3.0 and v2.0, see the following articles:
 
 -   [RackConnect v3.0
-    compatibility](/howto/rackconnect-v30-compatibility)
+    compatibility](/how-to/rackconnect-v30-compatibility)
 
 -   [Comparing RackConnect v3.0 to RackConnect
-    v2.0](/howto/comparing-rackconnect-v30-and-rackconnect-v20)
+    v2.0](/how-to/comparing-rackconnect-v30-and-rackconnect-v20)
 
 **Note:** The rest of this article applies only to RackConnect v2.0.
 
@@ -98,7 +98,7 @@ RackConnect:
 -   Use RackConnect to provide back-end connectivity to dedicated
     database servers from your cloud servers
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RC.CLB_.png){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RC.CLB_.png" width="700" />
 In this example, a cloud load balancer balances traffic between cloud
 web servers, and RackConnect provides connectivity from the web servers
 to the dedicated database servers. When you use cloud load balancers
@@ -120,15 +120,15 @@ To reiterate, RackConnect *cannot* be used to balance traffic between
 cloud and dedicated servers, or to protect your inbound cloud load
 balancer Internet connections.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/How.CLB_.RC_.Do_.Not_.Work_.png){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/How.CLB_.RC_.Do_.Not_.Work_.png" width="700" />
 
 The following image shows some use cases that further illustrate the
 limitations of using cloud load balancers:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CLB.Use_.Cases__0.png){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CLB.Use_.Cases__0.png" width="700" />
 
 
 If you have any questions, please reach out to us. Our contact
 information is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 

@@ -15,8 +15,8 @@ body_format: tinymce
 RackConnect Global (RCGlobal) is a connectivity service that makes it
 possible for you to deploy a hybrid cloud infrastructure at Rackspace
 with the best network performance possible. Please see
-<http://www.rackspace.com/cloud/hybrid/rackconnect/global> for more
-details.
+<a href="http://www.rackspace.com/cloud/hybrid/rackconnect/global" class="uri" class="external-link">http://www.rackspace.com/cloud/hybrid/rackconnect/global</a> for
+more details.
 
 ### Who is RCGlobal targeted for and what pain points does it solve? {#RackConnectGlobal-Whoisittargetedforandwhatpainpointsdoesitsolve?}
 

@@ -70,6 +70,6 @@ up for updates.
 
 
 Please see the [Cloud Queues
-FAQ](/howto/cloud-queues-faq)
+FAQ](/how-to/cloud-queues-faq)
 for more information on features, limits, support, and more.
 

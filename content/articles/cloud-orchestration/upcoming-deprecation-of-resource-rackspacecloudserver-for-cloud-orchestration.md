@@ -83,7 +83,7 @@ functionalities, the workarounds are described below.
     to indicate whether the user data script completed. For detailed
     documentation and examples for using Swift Signal resources, please
     refer to
-    this [article](/howto/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts).
+    this [article](/how-to/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts).
 
 2.  If user data script execution had a failure, the server create would
     show as failed.
@@ -95,7 +95,7 @@ functionalities, the workarounds are described below.
     Signal resources (OS Heat SwiftSignal and OS Heat SwiftSignalHandle)
     to indicate whether the user data scripts succeed or failed. For
     detailed documentation and examples on this, please refer to this
-    [article](/howto/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts).
+    [article](/how-to/using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts).
 
 3.  The pre-assigned server admin password could be retrieved without
     any additional instrumentation.

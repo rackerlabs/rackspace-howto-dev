@@ -35,7 +35,7 @@ body_format: markdown_w_tinymce
 		<li><a href="#benefits">What are the benefits?</a></li>
 		<li><a href="#whatisbeingLaunched">What is being launched?</a></li>
 		<li><a href="#featuresSupportedatLaunch">What features are supported at launch?</a></li>
-		<li><a href="/howto/cloud-servers-faq">Are security groups on Cloud Networks supported?</a></li>
+		<li><a href="/how-to/cloud-servers-faq">Are security groups on Cloud Networks supported?</a></li>
 		<li><a href="#supportedNeutronClient">Will security groups be supported via the neutron client?</a></li>
 		<li><a href="#supportedinControlPanel">Will this be integrated and available from within the Control Panel and Reach?</a></li>
 		<li><a href="#supportedforOnmetal">Are security groups supported for OnMetal users?</a></li>
@@ -132,7 +132,7 @@ body_format: markdown_w_tinymce
 
 <h3>Will you help me install my software package?<a id="willyouhelpmeinstallmysoftwarpackage" name="willyouhelpmeinstallmysoftwarpackage"></a></h3>
 
-<p>It depends on your service level. For Managed Infrastructure Cloud accounts, you are responsible for installing and maintaining all software on your server. Rackspace does provide support for specific software and server configurations on Cloud Servers with Managed Operations. For more information on supported systems and third party packages, see <a href="/howto/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers wih Managed Operations - Spheres of Support</a>.</p>
+<p>It depends on your service level. For Managed Infrastructure Cloud accounts, you are responsible for installing and maintaining all software on your server. Rackspace does provide support for specific software and server configurations on Cloud Servers with Managed Operations. For more information on supported systems and third party packages, see <a href="/how-to/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers wih Managed Operations - Spheres of Support</a>.</p>
 
 <h3>Do you support Ruby/Python/(insert language or application here)?<a id="doyousupportRubyPythonetc" name="doyousupportRubyPythonetc"></a></h3>
 
@@ -158,7 +158,7 @@ body_format: markdown_w_tinymce
 
 <p>We have two Service Levels: <strong>Managed Infrastructure</strong> and <strong>Managed Operations</strong>. At the Managed Infrastructure level, we support the Cloud Server hardware, datacenter environment, and Internet connectivity - but do not support the software installed on your server, including the operating system and its configuration. When you provision a Cloud Server, you will be given a server with unrestricted access. The Managed Infrastructure support team will not assist in the installation of software or troubleshooting any kind of issue related to the software installed. We have some articles in the Knowledge Center covering basic installation of common applications. We also have community forums where you can share tips and tricks with other customers.</p>
 
-<p>If you would like to have a <a href="/howto/cloud-servers-with-managed-operations-support-for-linux">Managed Operations</a> on your Cloud Servers, we offer that service. This operations level provides additional support on Cloud Servers, which includes monitoring, operating system and application infrastructure layer support, and technical guidance.</p>
+<p>If you would like to have a <a href="/how-to/cloud-servers-with-managed-operations-support-for-linux">Managed Operations</a> on your Cloud Servers, we offer that service. This operations level provides additional support on Cloud Servers, which includes monitoring, operating system and application infrastructure layer support, and technical guidance.</p>
 
 <h3>What can I do with a Cloud Server?<a id="whatCanIdowithaCloudServer" name="whatCanIdowithaCloudServer"></a></h3>
 
@@ -170,9 +170,9 @@ body_format: markdown_w_tinymce
 
 <h3>What if I mess up my Cloud Server?<a id="whatIfIMessUp" name="whatIfIMessUp"></a></h3>
 
-<p>You can <a href="/howto/reboot-your-server">reboot your server</a>. You can <a href="/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">restore from a backup</a>. You can <a href="/howto/deleting-your-server">delete your server</a> and start over. You can <a href="/howto/rescue-mode">boot into an emergency rescue mode</a> and attempt fix the problem. There are many options for recovering from mistakes, but the easiest is to keep regular backups and to <a href="/howto/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup">make a fresh backup</a> before attempting any major configuration changes or before installing new software.</p>
+<p>You can <a href="/how-to/reboot-your-server">reboot your server</a>. You can <a href="/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">restore from a backup</a>. You can <a href="/how-to/deleting-your-server">delete your server</a> and start over. You can <a href="/how-to/rescue-mode">boot into an emergency rescue mode</a> and attempt fix the problem. There are many options for recovering from mistakes, but the easiest is to keep regular backups and to <a href="/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup">make a fresh backup</a> before attempting any major configuration changes or before installing new software.</p>
 
-<h3><a href="/howto/cloud-servers-faq">Back to Top</a></h3>
+<h3><a href="/how-to/cloud-servers-faq">Back to Top</a></h3>
 
 <h3 align="center">&nbsp;</h3>
 
@@ -287,7 +287,7 @@ body_format: markdown_w_tinymce
 
 <p><strong>Note</strong>: Work-optimized servers (Compute, I/O, and Memory) require PVHVM images. If you try to create a work-optimized server by using a non-PVHVM image, the following error message is displayed: <code>Image cannot be built with provided flavor</code>.</p>
 
-<p>For more information about PVHVM, see <a href="/howto/choosing-a-virtualization-mode-pv-versus-pvhvm">Choosing a Virtualization Mode (PV versus PVHVM)</a>.</p>
+<p>For more information about PVHVM, see <a href="/how-to/choosing-a-virtualization-mode-pv-versus-pvhvm">Choosing a Virtualization Mode (PV versus PVHVM)</a>.</p>
 
 <h3>What do I enter in the Server Name field? <a id="whatdoIEnterinServerNameField" name="whatdoIEnterinServerNameField"></a></h3>
 
@@ -312,9 +312,9 @@ body_format: markdown_w_tinymce
 <p>At Rackspace, our goal is to make the Cloud easy for you to use. To meet that goal, we have created many different ways for you to get the support that you need to get the most out of the Cloud.</p>
 
 <ul>
-	<li>Your first stop should be our <a href="/howto/">Knowledge Center</a>, which is the best source for articles and tutorials to help you get the precise answers that you need.<br />
+	<li>Your first stop should be our <a href="/how-to/">Knowledge Center</a>, which is the best source for articles and tutorials to help you get the precise answers that you need.<br />
 	&nbsp;</li>
-	<li>The Knowledge Center contains the <a href="/howto/">Getting Started with Cloud Servers Guide</a>, which provides you with the most important information that you need to set up a server.<br />
+	<li>The Knowledge Center contains the <a href="/how-to/">Getting Started with Cloud Servers Guide</a>, which provides you with the most important information that you need to set up a server.<br />
 	&nbsp;</li>
 	<li>Our <a href="https://community.rackspace.com/products/f/25">Open Cloud Forum</a> in the Rackspace Community is always open. Use the forum to get your questions answered by a Racker.<br />
 	&nbsp;</li>
@@ -334,11 +334,11 @@ body_format: markdown_w_tinymce
 
 <h3>Do you host DNS? <a id="doYouHostDNS" name="doYouHostDNS"></a></h3>
 
-<p>Yes. Our Control Panel has a DNS menu for maintaining domain records for your Cloud Servers. Read this article for <a href="/howto/create-dns-records-for-cloud-servers-with-the-control-panel">detailed information on using the Rackspace Cloud DNS Control Panel</a>.</p>
+<p>Yes. Our Control Panel has a DNS menu for maintaining domain records for your Cloud Servers. Read this article for <a href="/how-to/create-dns-records-for-cloud-servers-with-the-control-panel">detailed information on using the Rackspace Cloud DNS Control Panel</a>.</p>
 
 <h3>How do I get reverse DNS setup for my Cloud Server? <a id="reverseDNS" name="reverseDNS"></a></h3>
 
-<p>You can setup reverse DNS from your control panel. This article will show you how:<a href="/howto/create-a-reverse-dns-record-0" title="/knowledge_center/index.php/DNS_-_Creating_a_Reverse_DNS_Record">DNS - Creating a Reverse DNS Record.</a></p>
+<p>You can setup reverse DNS from your control panel. This article will show you how:<a href="/how-to/create-a-reverse-dns-record-0" title="/knowledge_center/index.php/DNS_-_Creating_a_Reverse_DNS_Record">DNS - Creating a Reverse DNS Record.</a></p>
 
 <h3>Is there a throughput limit on my server's network interface card? <a id="throughputLimit" name="throughputLimit"></a></h3>
 
@@ -350,23 +350,23 @@ body_format: markdown_w_tinymce
 
 <h3><span>Can I buy extra public IPs? <a id="publicIPs" name="publicIPs"></a></span></h3>
 
-<p>Yes.&nbsp; For more informaton on the IP request process, see <a href="/howto/requesting-additional-ipv4-addresses-for-cloud-servers">Requesting Additional IPv4 Addresses for First and Next Generation Cloud Servers</a>.</p>
+<p>Yes.&nbsp; For more informaton on the IP request process, see <a href="/how-to/requesting-additional-ipv4-addresses-for-cloud-servers">Requesting Additional IPv4 Addresses for First and Next Generation Cloud Servers</a>.</p>
 
 <h3><span>I would like to set up multiple servers from the same image. Can I do this? <a id="multpileServersfromSameImage" name="multpileServersfromSameImage"></a></span></h3>
 
-<p>As a Cloud Servers customer, you have access to create both on-demand images and scheduled images of your cloud server. All Cloud Server images will be stored in your Cloud Files account. This enables you to keep these images even after the Cloud Server they were created on is deleted. It also allows the flexibility to create an unlimited number of on-demand images of your Cloud Server. All Cloud Server images can be used to create new Cloud Servers or restore an existing Cloud Server. For details, see <a href="/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">Creating an Image of Your Performance Flavor Server with the Control Panel</a>.</p>
+<p>As a Cloud Servers customer, you have access to create both on-demand images and scheduled images of your cloud server. All Cloud Server images will be stored in your Cloud Files account. This enables you to keep these images even after the Cloud Server they were created on is deleted. It also allows the flexibility to create an unlimited number of on-demand images of your Cloud Server. All Cloud Server images can be used to create new Cloud Servers or restore an existing Cloud Server. For details, see <a href="/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">Creating an Image of Your Performance Flavor Server with the Control Panel</a>.</p>
 
 <h3><span>Do you offer on-demand images (snapshots) and scheduled images and what are the prices? <a id="ondemandImages" name="ondemandImages"></a></span></h3>
 
 <p>You can create an image of any General Purpose&nbsp;Cloud Server, and you can use this image to restore a server or clone a new one. You can create an unlimited number of images on-demand, or you can schedule an automatic daily or weekly image.</p>
 
-<p>Images will be compressed and stored on Rackspace Cloud Files at the <a href="http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/">current storage rates</a>. Please also read this list of <a href="/howto/rackspace-cloud-essentials-cloud-server-image-limitations">Snapshot Limitations</a>.</p>
+<p>Images will be compressed and stored on Rackspace Cloud Files at the <a href="http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/">current storage rates</a>. Please also read this list of <a href="/how-to/rackspace-cloud-essentials-cloud-server-image-limitations">Snapshot Limitations</a>.</p>
 
-<p>If using a virtual cloud server, see <a href="/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">Creating an image of your General Purpose Cloud Server with the control panel</a> for more information on the image options associated with virtual cloud servers.</p>
+<p>If using a virtual cloud server, see <a href="/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">Creating an image of your General Purpose Cloud Server with the control panel</a> for more information on the image options associated with virtual cloud servers.</p>
 
 <h3><span>I would like to use the GUI interface for my Linux Cloud Server. Is this possible? <a id="guiforLinux" name="guiforLinux"></a></span></h3>
 
-<p>Yes it is! An article on how to install VNC and X-Windows is located here: <a href="/howto/vnc-install" title="VNC Install">VNC Install</a>. Keep in mind that this will use up a large amount of bandwidth on your server.</p>
+<p>Yes it is! An article on how to install VNC and X-Windows is located here: <a href="/how-to/vnc-install" title="VNC Install">VNC Install</a>. Keep in mind that this will use up a large amount of bandwidth on your server.</p>
 
 <h3><span>Do you have a control panel? <a id="doYouhaveaControlPanel" name="doYouhaveaControlPanel"></a></span></h3>
 
@@ -388,11 +388,11 @@ body_format: markdown_w_tinymce
 
 <p>Yes. You will be billed for the resources that are used on the host while your server is in the <strong>Active</strong> status. When your server is created, you are given a dedicated amount of RAM and hard drive space. As long as your server exists, no one else will be able to use those resources that have been allocated to you - this is why you are billed per hour even while powered off. If you would like to stop incurring charges for a given server, you must delete that server in the Control Panel.</p>
 
-<p>If you want to stop paying for a server, but still need to retain the configurations from it, your best option is to <a href="/howto/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">create an image</a> of the Cloud Server. Your system configurations on your system disk will be preserved in the image. The image will be saved in Cloud Files and accessible through the Saved Images tab in the Control Panel. There is a fee associated with Cloud Files storage but it is much less than the cost of an active server. You will also need to save the data from your data disk out to Cloud Block Storage or Rackspace Cloud Backup to have available on your next server. Then you will be free to delete the original server, safe in the knowledge that you can always provision a new server using the saved image of your old server and you saved data.&nbsp; After restoring your server from the saved image, the primary difference will be that your new server has a different IP address from the old one. Putting the new server into production may require you to update any associated DNS records to reflect the new IP address.</p>
+<p>If you want to stop paying for a server, but still need to retain the configurations from it, your best option is to <a href="/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image">create an image</a> of the Cloud Server. Your system configurations on your system disk will be preserved in the image. The image will be saved in Cloud Files and accessible through the Saved Images tab in the Control Panel. There is a fee associated with Cloud Files storage but it is much less than the cost of an active server. You will also need to save the data from your data disk out to Cloud Block Storage or Rackspace Cloud Backup to have available on your next server. Then you will be free to delete the original server, safe in the knowledge that you can always provision a new server using the saved image of your old server and you saved data.&nbsp; After restoring your server from the saved image, the primary difference will be that your new server has a different IP address from the old one. Putting the new server into production may require you to update any associated DNS records to reflect the new IP address.</p>
 
 <h3><span>How do I power my server back on after shutting it down? <a id="powerServerBackOn" name="powerServerBackOn"></a></span></h3>
 
-<p>Please see the following article: <a href="/howto/reboot-your-server" title="Shutting Down and Restarting a Cloud Server">Shutting Down and Restarting a Cloud Server</a></p>
+<p>Please see the following article: <a href="/how-to/reboot-your-server" title="Shutting Down and Restarting a Cloud Server">Shutting Down and Restarting a Cloud Server</a></p>
 
 <h3><span>Which distributions do you offer? <a id="whichDistros" name="whichDistros"></a></span></h3>
 
@@ -403,8 +403,8 @@ body_format: markdown_w_tinymce
 <p>Yes.&nbsp; With General Purpose&nbsp;Cloud Servers, you can change the size of your data storage space in one of two ways:</p>
 
 <ul type="disc">
-	<li class="MsoNormal"><span>Increase Available Storage with Cloud Block Storage. For more information on Cloud Block Storage, see <a href="/howto/create-and-attach-a-cloud-block-storage-volume">Create and Attach a Cloud Block Storage Volume</a>.</span></li>
-	<li class="MsoNormal"><span>Migrate to a larger size server with more RAM, disk space, and vCPUs. For&nbsp; more information on resizing, see <a href="/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers">Changing the Size of Your First Generation Cloud Server</a>.</span></li>
+	<li class="MsoNormal"><span>Increase Available Storage with Cloud Block Storage. For more information on Cloud Block Storage, see <a href="/how-to/create-and-attach-a-cloud-block-storage-volume">Create and Attach a Cloud Block Storage Volume</a>.</span></li>
+	<li class="MsoNormal"><span>Migrate to a larger size server with more RAM, disk space, and vCPUs. For&nbsp; more information on resizing, see <a href="/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers">Changing the Size of Your First Generation Cloud Server</a>.</span></li>
 </ul>
 
 <h3><span>How many users go onto each machine? <a id="usersPerMachine" name="usersPerMachine"></a></span></h3>
@@ -413,7 +413,7 @@ body_format: markdown_w_tinymce
 
 <h3><span>How does the CPU scheduling work on Standard Next Generation servers? <a id="CPUscheduling" name="CPUscheduling"></a></span></h3>
 
-<p><strong>Note</strong>: <a href="/howto/new-features-in-general-purpose-and-work-optimized-cloud-servers" target="_blank">General Purpose Cloud Servers</a> have specific virtual CPU allocations, as detailed on the <a href="http://www.rackspace.com/cloud/servers/pricing/">Cloud Servers pricing page</a>. &nbsp;The following information on CPU scheduling applies only to next-generation standard (for example, not General Purpose) Cloud Servers.</p>
+<p><strong>Note</strong>: <a href="/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers" target="_blank">General Purpose Cloud Servers</a> have specific virtual CPU allocations, as detailed on the <a href="http://www.rackspace.com/cloud/servers/pricing/">Cloud Servers pricing page</a>. &nbsp;The following information on CPU scheduling applies only to next-generation standard (for example, not General Purpose) Cloud Servers.</p>
 
 <p>For Windows images, each Cloud Server is assigned a number of virtual cores based on the size of the Cloud Server. The Standard 1 GB Cloud Server receives 1 virtual core, the standard 2 GB and 4 GB Cloud Servers receive 2 virtual cores, the standard 8 GB and 15.5 GB Cloud Servers receive 4 virtual cores, and the standard 30GB servers receive 8 virtual cores. Each of these cores is given equal weight when allocating CPU cycles.</p>
 
@@ -436,7 +436,7 @@ body_format: markdown_w_tinymce
 	This includes:&nbsp; Standard resize down.</span></li>
 </ul>
 
-<p><strong>NOTE: Resizing is not available for workload-optimized Cloud Servers. For information on your available options, see <a href="/howto/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers">Changing the size of your workload-optimized Cloud Server</a>.</strong></p>
+<p><strong>NOTE: Resizing is not available for workload-optimized Cloud Servers. For information on your available options, see <a href="/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers">Changing the size of your workload-optimized Cloud Server</a>.</strong></p>
 
 <h3><span>Can I buy extra storage? <a id="extraStorage" name="extraStorage"></a></span></h3>
 
@@ -458,7 +458,7 @@ body_format: markdown_w_tinymce
 	<li class="MsoNormal"><span>Maximum network bandwidth on Standard Cloud Servers is 300 Mbps public network and 600 Mbps private network. Maximum network bandwidth on General Purpose Cloud Servers is 10,000 Mbps to divide between public and private networks as you choose..</span></li>
 </ul>
 
-<p>For more information about General Purpose Cloud Servers, see <a href="/howto/new-features-in-general-purpose-and-work-optimized-cloud-servers">What is new with&nbsp;General Purpose Cloud Servers</a>.</p>
+<p>For more information about General Purpose Cloud Servers, see <a href="/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers">What is new with&nbsp;General Purpose Cloud Servers</a>.</p>
 
 <h3 align="center">&nbsp;</h3>
 
@@ -614,6 +614,6 @@ body_format: markdown_w_tinymce
 
 <p>You can find the documentation for the API for Cloud Servers and our other products on&nbsp;our <a href="http://docs.rackspace.com/">API documentation website</a>.</p>
 
-<p>Before you can start using our APIs, you will need your API Key.&nbsp;You can obtain your API key by following the instructions in our article, <a href="/howto/view-and-reset-your-api-key">Viewing and Regenerating Your API Key</a>.</p>
+<p>Before you can start using our APIs, you will need your API Key.&nbsp;You can obtain your API key by following the instructions in our article, <a href="/how-to/view-and-reset-your-api-key">Viewing and Regenerating Your API Key</a>.</p>
 
 <p class="MsoNormal">&nbsp;</p>

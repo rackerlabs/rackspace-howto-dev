@@ -115,7 +115,7 @@ Each variable set will require a name and a value.  These will be:
 <td valign="top" headers="d26e245" class="stentry proptype">OS_PASSWORD</td>
 <td valign="top" headers="d26e248" class="stentry propvalue">password or API key</td>
 <td valign="top" headers="d26e251" class="stentry propdesc">Set this value to your Rackspace Cloud API key. You can retrieve your API key in
-          the Cloud Control Panel. For information about how to find your API key, see <a href="/howto/view-and-reset-your-api-key">View and reset your API keyCloud Control Panel</a>. With a non-Rackspace Openstack cloud, you will usually put the account password in this variable.</td>
+          the Cloud Control Panel. For information about how to find your API key, see <a href="/how-to/view-and-reset-your-api-key">View and reset your API keyCloud Control Panel</a>. With a non-Rackspace Openstack cloud, you will usually put the account password in this variable.</td>
 </tr>
 <tr class="strow property">
 <td valign="top" headers="d26e245" class="stentry proptype">OS_AUTH_URL</td>
@@ -176,4 +176,4 @@ You can also use the options that are listed at the end of the "nova help" outpu
 
 ### Where to go next
 
-You should have the nova client set up where you can access it, and it should be able to talk to your Rackspace Cloud account. To look at some common operations you can perform with the client, like creating servers and taking snapshots, see <a href="/howto/useful-python-novaclient-commands">Useful python-novaclient commands</a>.
+You should have the nova client set up where you can access it, and it should be able to talk to your Rackspace Cloud account. To look at some common operations you can perform with the client, like creating servers and taking snapshots, see <a href="/how-to/useful-python-novaclient-commands">Useful python-novaclient commands</a>.

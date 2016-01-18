@@ -22,7 +22,7 @@ You can use Cyberduck to manage your Rackspace Cloud Files storage account and t
 
 2.	Install the FTP client on your system.
 
-3.	Log in to the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com) to retrieve your API key. (For information about viewing your API key, see [View and reset your API key](/howto/view-and-reset-your-api-key).)
+3.	Log in to the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com) to retrieve your API key. (For information about viewing your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).)
 
 4.	In the upper-right corner of the control panel, click the **Account:** ***yourAccountName*** menu and then select **Account Settings**.
 

@@ -24,7 +24,7 @@ new Rackspace Email account.
 
 If you would like to learn more about the differences between POP and
 IMAP, please see the help topic, [IMAP vs.
-POP](/howto/imap-and-pop-mail-protocol-comparison).
+POP](/how-to/imap-and-pop-mail-protocol-comparison).
 
 ### Prerequisites
 
@@ -33,9 +33,9 @@ been created on the Rackspace environment and that the MX records have
 been updated so to that email is routing correctly to Rackspace.
 
 -   [How to create
-    mailboxes](/howto/add-rackspace-email-mailboxes)
+    mailboxes](/how-to/add-rackspace-email-mailboxes)
 -   [How to change mx
-    records](/howto/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+    records](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 ### Export Outlook Data
 
@@ -54,20 +54,17 @@ export it to a file from Outlook 2011.
     from Outlook 2011 to Rackspace Email.  All other items will continue
     to be stored locally.*
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Export_Shot_Mac.png){width="405"
-    height="356"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Export_Shot_Mac.png" width="405" height="356" />
 
 5.  Choose whether you'd like to delete the items from your local client
     after export. Press the **purple arrow** to continue.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Delete.png){width="405"
-    height="354"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Delete.png" width="405" height="354" />
 
 6.  A new window will appear asking where you&rsquo;d like to save the file.
      Choose a location that is easy to remember such as the **Desktop**.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Location_file%20copy.jpg){width="515"
-    height="325"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Location_file%20copy.jpg" width="515" height="325" />
 
 The items will now be exported.  You will see a progress bar on your
 screen letting you know how much of the process has completed.
@@ -81,13 +78,13 @@ mailbox by itself via IMAP.
 
 To setup your Rackspace Email mailbox as IMAP see the following guide:
 [How to setup Rackspace Email via IMAP in Outlook
-2011](/howto/help-tool-for-hosted-email-and-skype-for-business).
+2011](/how-to/help-tool-for-hosted-email-and-skype-for-business).
 
 For increased security, we recommend that you use our secure (SSL)
 servers. If your internal system configurations require non-SSL ports,
 those settings are available in the article referenced previously, [IMAP
 vs.
-POP](/howto/imap-and-pop-mail-protocol-comparison).
+POP](/how-to/imap-and-pop-mail-protocol-comparison).
 
 When your Rackspace Email account is set up in Outlook, you can import
 the .olm into the new mailbox.
@@ -99,8 +96,7 @@ the .olm into the new mailbox.
     **purple arrow** on the bottom-right-hand corner of the window
     to continue.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Import.png){width="394"
-    height="348"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Import.png" width="394" height="348" />
 
 3.  On the next page select **Outlook for Mac Data File (.olm)** and
     then click on the **purple arrow**.
@@ -109,8 +105,7 @@ the .olm into the new mailbox.
     and then click on the **Import** button.  You will see a progress
     bar while the data is imported.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Import_2%20copy.jpg){width="550"
-    height="344"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Import_2%20copy.jpg" width="550" height="344" />
 
 5.  Move items from the .olm to the newly configured Rackspace
     Email mailbox.
@@ -123,8 +118,7 @@ mailbox or drag and drop the entire Inbox folder.  *Note: You may want
 to create a new folder in your Rackspace Email account to help keep
 track of the items you have imported.*
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2013-11-25_1013%20copy_0.jpg){width="199"
-height="660"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/2013-11-25_1013%20copy_0.jpg" width="199" height="660" />
 
 Once the items are moved into the Rackspace Email account in Outlook
 2011, it will start to sync with Webmail and any other device connected

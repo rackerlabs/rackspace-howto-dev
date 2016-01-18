@@ -20,8 +20,7 @@ After you create your service, you enter origin rules in the **Origin
 Rules** section of the CDN service page. A **Default Origin** rule is
 created for the origin that you defined when you created your service.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.06.36%20PM.png){width="726"
-height="256"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.06.36%20PM.png" width="726" height="256" />
 
 **Note**: If you have specified only one origin for a service, the **Add
 Rule** button does not display. You must have at least two origins
@@ -30,7 +29,7 @@ defined for the **Add Rule** button to be shown in the dialog.
 If you create multiple origin rules, you must order the rules from least
 specific to most specific. For more information about rules, see the
 following sections and [Rackspace CDN edge
-rules](/howto/rackspace-cdn-edge-rules).
+rules](/how-to/rackspace-cdn-edge-rules).
 
 
 
@@ -45,8 +44,7 @@ resides.
 
 3\. Enter the path for the origin. You can use a wildcard for the path.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AddOrigin.png){width="376"
-height="166"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/AddOrigin.png" width="376" height="166" />
 
 4\. Click **Save Origin**. The **Service Status** is **Pending** until
 the new origin is deployed. After the origin is deployed, it is
@@ -60,11 +58,10 @@ To change the **Host Header** for any origin that you create, follow
 these steps to create an origin rule:
 
 1\. Click the pencil icon
-(![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.44.26%20PM.png){width="23"
-height="26"}) beside the origin name.   A popup dialog box appears.
+(<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.44.26%20PM.png" width="23" height="26" />)
+beside the origin name.   A popup dialog box appears.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.45.32%20PM.png){width="665"
-height="223"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.45.32%20PM.png" width="665" height="223" />
 
 2\. Select the type of Host Header from the dropdown. The following types
 are available:
@@ -118,8 +115,7 @@ follow these steps to create an origin rule:
 1\. Click **Add Rule**. The **Add Rule** button appears only if you have
 multiple origins for the service. A popup dialog box appears.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createOriginRule.png){width="370"
-height="176"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/createOriginRule.png" width="370" height="176" />
 
 2\. Enter the following information to define the rule:
 
@@ -133,8 +129,7 @@ height="176"}
 new rule is deployed. After the rule is deployed, it is displayed in the
 **Origin Rules** list.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.27.59%20PM.png){width="743"
-height="284"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-07-15%20at%202.27.59%20PM.png" width="743" height="284" />
 
 
 
@@ -148,8 +143,7 @@ To edit an origin rule, follow these steps:
 2\. In the popup dialog box, edit the name of the rule or the path for
 the rule.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/EditOriginRule.png){width="397"
-height="160"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/EditOriginRule.png" width="397" height="160" />
 
 3\. Click **Save Rule**. The **Service Status** is **Pending** until the
 updated rule is deployed. After the rule is deployed, it is displayed in
@@ -166,15 +160,14 @@ select **Delete Rule**.
 
 2\. In the popup dialog box, click **Delete Rule**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DeleteOriginRule.png){width="210"
-height="136"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DeleteOriginRule.png" width="210" height="136" />
 
 The **Service Status** is **Pending** until the rule is deleted. After
 the rule is deleted, it is removed from the **Origin Rules** list.
 
 
 
-#### [&lt; Add and manage domains with Rackspace CDN](/howto/add-and-manage-domains-in-rackspace-cdn)    -    [Create and manage caching rules in Rackspace CDN &gt;](/howto/create-and-manage-caching-rules-in-rackspace-cdn)
+#### [&lt; Add and manage domains with Rackspace CDN](/how-to/add-and-manage-domains-in-rackspace-cdn)    -    [Create and manage caching rules in Rackspace CDN &gt;](/how-to/create-and-manage-caching-rules-in-rackspace-cdn)
 
 
 

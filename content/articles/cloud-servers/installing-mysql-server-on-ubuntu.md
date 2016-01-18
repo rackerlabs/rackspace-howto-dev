@@ -310,7 +310,7 @@ grounding from which to learn more. Good work.
 ### Next steps
 
 [Configuring MySQL server on
-Ubuntu](/howto/configuring-mysql-server-on-ubuntu)
+Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
 
 
 

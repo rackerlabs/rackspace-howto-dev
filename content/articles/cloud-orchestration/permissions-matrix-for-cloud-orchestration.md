@@ -19,12 +19,12 @@ supported.
 Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/)
 
 [Cloud Orchestration
-FAQs](/howto/cloud-orchestration-faq)
+FAQs](/how-to/cloud-orchestration-faq)
 
 [Cloud Orchestration Terminology](#orchestration)
 
 [Permission Matrices for
-RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 
 ### **As of May, 2015     **
 
@@ -57,11 +57,9 @@ POST /stacks
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Creates a stack.
 
@@ -69,14 +67,11 @@ List Stack Data
 
 GET /stacks
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Lists active stacks.
 
@@ -84,14 +79,11 @@ Find Stack
 
 GET /stacks/{stack\_name}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Finds the canonical URL for a specified stack.
 
@@ -99,14 +91,11 @@ Get Stack Data
 
 GET /stacks/{stack\_name}/{stack\_id}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets data about a specified stack.
 
@@ -116,11 +105,9 @@ PUT /stacks/{stack\_name}/{stack\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Updates a specified stack.
 
@@ -132,8 +119,7 @@ DELETE /stacks/{stack\_name}/{stack\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Deletes a specified stack.
 
@@ -145,8 +131,7 @@ DELETE /stacks/{stack\_name}/{stack\_id}/abandon
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Deletes a given stack (from orchestration system database) but leaves
 the stack resources intact.
@@ -157,11 +142,9 @@ POST /stacks
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 This operation is similar to the Create Stack operation. Along with
 stack create parameters, an additional body parameter
@@ -175,11 +158,9 @@ POST /stacks/preview
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Previews a stack.
 
@@ -189,14 +170,11 @@ Find Stack Resources
 
 GET /stacks/{stack\_name}/resources
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Finds the canonical URL for the resource list of a specified stack.
 
@@ -204,14 +182,11 @@ List Resources
 
 GET /stacks/{stack\_name}/{stack\_id}/resources
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Lists resources in a stack.
 
@@ -219,14 +194,11 @@ Get Resource Data
 
 GET /stacks/{stack\_name}/{stack\_id}/resources/{resource\_name}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets data for a specified resource.
 
@@ -234,14 +206,11 @@ List Resource Types
 
 GET /resource\_types
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Lists the supported template resource types.
 
@@ -249,14 +218,11 @@ Get Resource Schema
 
 GET /resource\_types/{type\_name}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets the interface schema for a specified resource type.
 
@@ -266,14 +232,11 @@ GET /resource\_types/{type\_name}/template
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets a template representation for a specified resource type.
 
@@ -283,14 +246,11 @@ Find Stack Events
 
 GET /stacks/{stack\_name}/events
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Finds the canonical URL for the event list of a specified stack.
 
@@ -298,14 +258,11 @@ List Stack Events
 
 GET /stacks/{stack\_name}/{stack\_id}/events
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Lists events for a specified stack.
 
@@ -313,14 +270,11 @@ List Resource Events
 
 GET /stacks/{stack\_name}/{stack\_id}/resources/{resource\_name}/events
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Lists events for a specified stack resource.
 
@@ -328,14 +282,11 @@ Show Event
 
 GET /stacks/{stack\_name}/{stack\_id}/resources/events/{event\_id}
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets data about a specified event.
 
@@ -345,14 +296,11 @@ Get Stack Template
 
 GET /stacks/{stack\_name}/{stack\_id}/template
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 Gets a template for a specified stack.
 
@@ -362,14 +310,11 @@ Get Build Info
 
 GET /build\_info
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_9.png" width="41" height="39" />
 
 
 
@@ -378,8 +323,8 @@ Gets information about the current heat build.
 
 -
 
-[](){#orchestration}Cloud Orchestration Terminology
----------------------------------------------------
+<a href="" id="orchestration"></a>Cloud Orchestration Terminology
+-----------------------------------------------------------------
 
 **Template**
 

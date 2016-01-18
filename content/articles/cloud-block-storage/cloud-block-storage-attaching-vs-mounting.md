@@ -30,7 +30,7 @@ mount a volume through the computer's operating system.
 
  For more information on how to mount your volume, see Knowledge Center
 article [Prepare Your
-Volume](/howto/prepare-your-cloud-block-storage-volume).
+Volume](/how-to/prepare-your-cloud-block-storage-volume).
 
 
 

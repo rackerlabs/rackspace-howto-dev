@@ -24,7 +24,7 @@ The following diagram shows the path that inbound (and return) load
 balancer pool traffic follows to your cloud servers when you use Auto
 Scale with a F5 BIG-IP load balancer and RackConnect.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/F5_AS-5-13-14%5B1%5D.jpg){width="700"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/F5_AS-5-13-14%5B1%5D.jpg" width="700" />
 [View image at full
 resolution](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/F5_AS-5-13-14%5B1%5D.jpg)
 
@@ -78,7 +78,7 @@ following requirements:
     manual intervention.
 -   To learn more about cloud bursting see [Using Dedicated Load
     Balancers with
-    RackConnect](/howto/using-dedicated-load-balancers-with-rackconnect-v20).
+    RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20).
 
 To get the name of one or more load balancer pools, contact your Support
 team.

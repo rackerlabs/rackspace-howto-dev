@@ -18,8 +18,8 @@ device. This method is suitable for anyone who wants to install an
 OpenStack-powered private cloud for testing or demonstration purposes.
 
 Rackspace Private Cloud Sandbox v1.0 runs Rackspace Private Cloud v4.2.1
-powered by the [Havana release of
-OpenStack](http://www.openstack.org/software/havana/){.link}.
+powered by the
+<a href="http://www.openstack.org/software/havana/" class="link">Havana release of OpenStack</a>.
 
 </div>
 
@@ -73,11 +73,10 @@ or any other upstream packages have not been changed. Because of this
 plugin, the Horizon cookbook template file for
 `local_settings.py`{.filename} was modified.
 
-More information for this project can be seen at the [RCBOPS Virtual
-Appliance Builder Github
-page](https://github.com/cloudnull/rcbops_virt_builder){.link}. Specific
-changes are listed in the [setup notes on that
-page](https://github.com/cloudnull/rcbops_virt_builder/blob/master/setup_notes.rst){.link}.
+More information for this project can be seen at the
+<a href="https://github.com/cloudnull/rcbops_virt_builder" class="link">RCBOPS Virtual Appliance Builder Github page</a>.
+Specific changes are listed in the
+<a href="https://github.com/cloudnull/rcbops_virt_builder/blob/master/setup_notes.rst" class="link">setup notes on that page</a>.
 
 <div class="section" title="Requirements">
 
@@ -171,16 +170,15 @@ This section explains how to import the appliance and start the VM on
 VMWare Player 6, Fusion 6, and Workstation 7 and later.
 
 It is strongly recommended that you use this system on VMWare. You can
-download VMWare Player 6 for Windows or Linux from the [VMWare
-site](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0){.link}.
+download VMWare Player 6 for Windows or Linux from the
+<a href="https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_player/6_0" class="link">VMWare site</a>.
 
 <div class="procedure"
 title="Procedure 2.1. To set up Rackspace Private Cloud Sandbox on VMWare">
 
 []()**Procedure 2.1. To set up Rackspace Private Cloud Sandbox on
 VMWare**
-1.  [Download the OVA
-    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VMWARE.ova){.link}
+1.  <a href="http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VMWARE.ova" class="link">Download the OVA file</a>
     and save it to your local device.
 
 2.  In VMWare, import the OVA file. Navigate to <span
@@ -233,7 +231,7 @@ During the import process, you may experience the following messages:
 This section explains how to set up Rackspace Private Cloud Sandbox
 using VirtualBox 4.3.x. Rackspace strongly recommends that you work on a
 clean installation of VirtualBox. You can download VirtualBox from the
-[VirtualBox site](https://www.virtualbox.org/){.link}.
+<a href="https://www.virtualbox.org/" class="link">VirtualBox site</a>.
 
 VirtualBox provides many network options. While any network setup that
 functions in your environment will work, the recommended setup is:
@@ -276,8 +274,7 @@ title="Procedure 2.2. To set up Rackspace Private Cloud Sandbox on VirtualBox 4.
 
 []()**Procedure 2.2. To set up Rackspace Private Cloud Sandbox on
 VirtualBox 4.3.x**
-1.  [Download the OVA
-    file](http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VBOX.ova){.link}
+1.  <a href="http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VBOX.ova" class="link">Download the OVA file</a>
     and save it to your local device.
 
 2.  In VirtualBox, navigate to <span
@@ -400,8 +397,7 @@ If the VM fails on first boot:
 </div>
 
 For general information about using the private cloud, refer to
-the [Rackspace Private Cloud
-API](http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrade/content/rpc-common-front.html){.link}.
+the <a href="http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrade/content/rpc-common-front.html" class="link">Rackspace Private Cloud API</a>.
 
 <div class="section" title="Logging into the cloud">
 

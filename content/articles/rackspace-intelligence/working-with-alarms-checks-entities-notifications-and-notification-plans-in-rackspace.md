@@ -20,8 +20,8 @@ configuration information about the following items:
 -   [Notifications](#notifications)
 -   [Notification plans](#notification_plans)
 
-[](){#entities}Entities
------------------------
+<a href="" id="entities"></a>Entities
+-------------------------------------
 
 To view the configuration information for a specific item, you typically
 start off with a list of all the entities that have been set up and
@@ -32,19 +32,18 @@ perform the following steps:
 
 1.  Click **Monitor**, and then click the **Entities** tab.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Entity%20List1_0.png){width="600"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Entity%20List1_0.png" width="600" />
 
 2.  To view details about a specific entity, click the link for the
     entity.
     The top of the details page shows information about the  entity.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Entity%20Details1.png){width="359"
-    height="346"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Entity%20Details1.png" width="359" height="346" />
 
 
 
-[](){#checks}Checks
--------------------
+<a href="" id="checks"></a>Checks
+---------------------------------
 
 
 -
@@ -74,12 +73,12 @@ steps:
     and click the link for the check that you want to view.
     A page that lists the check details is displayed.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Check%20Details1.png){width="600"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Check%20Details1.png" width="600" />
 
 
 
-[](){#alarms}Alarms
--------------------
+<a href="" id="alarms"></a>Alarms
+---------------------------------
 
 Rackspace Intelligence supports alarms that analyze the data that is
 collected by a check.
@@ -97,13 +96,12 @@ To view an alarm, perform the following steps:
     for which you want to view details.
     The alarm detail are displayed.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Alarm%20Details1.png){width="582"
-    height="570"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Alarm%20Details1.png" width="582" height="570" />
 
 
 
-[](){#open_alerts}Open alerts
------------------------------
+<a href="" id="open_alerts"></a>Open alerts
+-------------------------------------------
 
 Open alerts report statuses that you have asked Rackspace Intelligence
 to monitor.
@@ -112,13 +110,12 @@ You can view a list of all open alerts by clicking** Monitor** at the
 top of the Rackspace Intelligence interface and then clicking **Open
 Alerts**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Open%20Alerts.png){width="610"
-height="308"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Open%20Alerts.png" width="610" height="308" />
 
 
 
-[](){#notifications}Notifications
----------------------------------
+<a href="" id="notifications"></a>Notifications
+-----------------------------------------------
 
 Rackspace Intelligence lets you view notifications that have been
 created for your entities. Notifications must be defined before you can
@@ -132,10 +129,10 @@ click the **Notifications** tab. This action displays the
 **Notifications** page, which lists all the notifications that have been
 configured for you.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Notifications1.png){width="600"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Notifications1.png" width="600" />
 
-[](){#notification_plans}Notification plans
--------------------------------------------
+<a href="" id="notification_plans"></a>Notification plans
+---------------------------------------------------------
 
 You can have notification plans defined that work with your monitoring
 checks and alarms. You can specify several ways to notify members of
@@ -146,5 +143,5 @@ To view the notification plans that have been configured for you, select
 **Notify** at the top of the Rackspace Intelligence interface, and then
 click the **Notification Plans** tab. This acction displays the
 **Notification Plans** page.
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Notification%20Plans1.png){width="600"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Notification%20Plans1.png" width="600" />
 

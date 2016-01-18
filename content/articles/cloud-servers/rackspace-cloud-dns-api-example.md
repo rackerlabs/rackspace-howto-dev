@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prior section
 
 **[Rackspace Cloud DNS - Technical
-Details](/howto/rackspace-cloud-dns-technical-details)**
+Details](/how-to/rackspace-cloud-dns-technical-details)**
 
 ### API Example
 
@@ -101,5 +101,5 @@ precedence.
 ### Next steps
 
 [**Rackspace Cloud DNS - Additional
-Resources**](/howto/rackspace-cloud-dns-additional-resources)
+Resources**](/how-to/rackspace-cloud-dns-additional-resources)
 

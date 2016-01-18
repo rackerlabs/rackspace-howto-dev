@@ -19,6 +19,6 @@ SharePoint site plus access to Rackspace's renowned Fanatical Support.
 ###  SharePoint first steps
 
 -   [How to Add an Active Directory Account to
-    SharePoint](/howto/how-to-add-an-active-directory-account-to-sharepoint)
+    SharePoint](/how-to/how-to-add-an-active-directory-account-to-sharepoint)
 -   [Cloud Storage App for Microsoft
-    SharePoint](/howto/cloud-storage-app-for-microsoft-sharepoint-overview)
+    SharePoint](/how-to/cloud-storage-app-for-microsoft-sharepoint-overview)

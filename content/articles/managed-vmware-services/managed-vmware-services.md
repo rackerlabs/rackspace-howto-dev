@@ -36,9 +36,9 @@ environment.
     Handbook](http://docs.rackspace.com/vcloud/api/v1/bk-dedicated-vcloud-handbook/content/vcloud-common-front.html)
 -   [Dedicated vCloud Product
     Page](http://www.rackspace.com/managed-virtualization/vmware-vcloud)
--   [FAQ](/howto/dedicated-vmware-vcloud-faq)
+-   [FAQ](/how-to/dedicated-vmware-vcloud-faq)
 -   [Spheres of
-    Support](/howto/dedicated-vmware-vcloud-support-coverage)
+    Support](/how-to/dedicated-vmware-vcloud-support-coverage)
 -   [Resources](http://www.rackspace.com/managed-virtualization/vmware-vcloud/resources/)
 
 ###  Server Virtualization powered by VMware

@@ -65,11 +65,10 @@ You can create a cluster through the Cloud Control Panel as follows:
     Gateway node&rsquo;s PublicNet IP address, using the username and ssh key
     that you provided at cluster creation.
 
-    ![](/knowledge_center/sites/default/files/field/image/logintoYourCluster_0.png){width="369"
-    height="385"}
+    <img src="/knowledge_center/sites/default/files/field/image/logintoYourCluster_0.png" width="369" height="385" />
 
-[](){#Choosingacluster} Choosing a Stack
-----------------------------------------
+<a href="" id="Choosingacluster"></a> Choosing a Stack
+------------------------------------------------------
 
 The various predefined stacks comprise of different services. It is best
 to choose a stack that meets the requirement for all the services that
@@ -83,8 +82,7 @@ Cloud Big Data offers four flavors: Small (1.25 TB), Medium (2.5T),
 Large (5T), and XLarge (10 TB). In the IAD region we additionally offer
 the OnMetal IO flavor. For complete specifications and pricing, see
 <http://www.rackspace.com/cloud/big-data/pricing/>.
-![](/knowledge_center/sites/default/files/field/image/CBDexampleBuilds.1.png){width="641"
-height="291"}
+<img src="/knowledge_center/sites/default/files/field/image/CBDexampleBuilds.1.png" width="641" height="291" />
 
 For maximum performance, choose extra-large data nodes, which take up an
 entire physical server to provide consistent cluster performance, or for
@@ -106,8 +104,8 @@ as well as a data ingest method supported by Rackspace:
 **Apache Spark:** **http://spark.apache.org/**
 
 **Rackspace Swiftfs**:
-[http://www.rackspace.com/knowledge\_center/article/swift-filesystem-for-hadoop](/howto/swift-filesystem-for-hadoop)
+[http://www.rackspace.com/knowledge\_center/article/swift-filesystem-for-hadoop](/how-to/swift-filesystem-for-hadoop)
 
 **Getting Data Into Your Cluster**:
-[http://www.rackspace.com/knowledge\_center/article/getting-data-into-your-big-data-cluster](/howto/getting-data-into-your-big-data-cluster)
+[http://www.rackspace.com/knowledge\_center/article/getting-data-into-your-big-data-cluster](/how-to/getting-data-into-your-big-data-cluster)
 

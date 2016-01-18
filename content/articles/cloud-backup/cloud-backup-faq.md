@@ -91,7 +91,7 @@ passphrase, you will not be able to restore data from your backups.
 
 For more information, see the section on [Setting up Encryption on your
 Cloud Backup
-System](/howto/rackspace-cloud-backup-system-actions)
+System](/how-to/rackspace-cloud-backup-system-actions)
 in the *Getting Started Guide.*
 
 ^[back\\ to\\ top](#top)^
@@ -101,7 +101,7 @@ in the *Getting Started Guide.*
 If you wish to create your own encrypted key and bypass the default
 client-side encryption, please refer to [this article on using OpenSSL
 to generate a
-key](/howto/generating-your-encrypted-key-in-cloud-backup).
+key](/how-to/generating-your-encrypted-key-in-cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
@@ -123,9 +123,9 @@ You can create any number of backup jobs for each of your servers, and
 you can include a nearly unlimited number of files in each job.
 
 For more inoformation, see [Creating a
-Backup](/howto/rackspace-cloud-backup-create-a-backup-0)
+Backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
 in the [*Rackspace Cloud Backup Getting Started
-Guide*](/howto/rackspace-cloud-backup-overview).
+Guide*](/how-to/rackspace-cloud-backup-overview).
 
 ^[back\\ to\\ top](#top)^
 
@@ -141,7 +141,7 @@ previous versions of your files (up to the limits specified in your data
 retention settings).
 
 See our section on [Scheduling and
-De-duplication](/howto/rackspace-cloud-backup-backup-actions-0)
+De-duplication](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the RCBU *Getting Started Guide*.
 
 ^[back\\ to\\ top](#top)^
@@ -161,7 +161,7 @@ already have the Cloud Backup agent installed on your system. If not,
 contact your account representative to get started.
 
 For more informations, see the Rackspace Cloud Backup [*Getting Started
-Guide*](/howto/rackspace-cloud-backup-overview).
+Guide*](/how-to/rackspace-cloud-backup-overview).
 
 ^[back\\ to\\ top](#top)^
 
@@ -188,7 +188,7 @@ Some key features are
 
 For information on getting started with Cloud Backup, see our [Getting
 Started
-Guide](/howto/cloud-backup).
+Guide](/how-to/cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
@@ -198,9 +198,9 @@ You choose how long your backups are saved: 30 days, 60 days, or
 indefinitely.
 
 Read more about [Retaining your
-Backup](/howto/rackspace-cloud-backup-backup-actions-0)
+Backup](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the [Rackspace Cloud Back Up Getting Started
-Guide](/howto/cloud-backup).
+Guide](/how-to/cloud-backup).
 
 ^[back\\ to\\ top](#top)^
 
@@ -213,14 +213,14 @@ and then the **Create Backup** button. If you already have a Backup and
 want to re-configure it, click the gear icon next to the Backup name and
 select **Configure Backup**. See our page on [Configuring a Backup
 through Backup
-Actions](/howto/rackspace-cloud-backup-backup-actions-0)
+Actions](/how-to/rackspace-cloud-backup-backup-actions-0)
 for more information.
 
 Backups can be set to run hourly, daily, weekly, or on demand
 (manually).
 
 Read more about [Scheduling your
-Backup](/howto/rackspace-cloud-backup-backup-actions-0)
+Backup](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the Cloud Backup Getting Started Guide.
 
 ^[back\\ to\\ top](#top)^
@@ -295,7 +295,7 @@ If you do need to back up these files, our suggested workarounds are:
 -   For databases&mdash;Take a snapshot of the database (e.g., a
     database dump) and back up the dump. See [Rackspace Cloud Backup -
     Backing up
-    Databases](/howto/rackspace-cloud-backup-backing-up-databases)
+    Databases](/how-to/rackspace-cloud-backup-backing-up-databases)
     for full instructions.
 -   For log files&mdash;Take snapshots of your log files and back them up.
     -   To avoid running out of disk space, rotate your log

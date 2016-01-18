@@ -30,8 +30,7 @@ To manage your domain level spam settings, go to **Domains** section and
 select **Filter Settings, Blacklists, or Safelists** (please reference
 the below steps for each specific option)
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DomainsSpam_1.JPG){width="537"
-height="133"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DomainsSpam_1.JPG" width="537" height="133" />
 
 *Note: If you have multiple domains, you may be prompted to select the
 domain you intend to make changes to first.*
@@ -45,13 +44,11 @@ To manage **indiviual** user's spam settings, go to **Rackspace Email**
 section and select **Filter Settings, Blacklists, or Safelists** (please
 reference the below steps for each specific option)
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RSSpam.JPG){width="527"
-height="148"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RSSpam.JPG" width="527" height="148" />
 
 Select the desired **User** to update Spam Settings
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RSEUsers_0.JPG){width="658"
-height="241"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RSEUsers_0.JPG" width="658" height="241" />
 
 
 
@@ -65,8 +62,7 @@ Select **Filter Settings** to edit the Spam Filter Settings.
 **Rackspace Email** section. For the domain, select **Filter Settings**
 in the **Domains** Section.*
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DomainsSpam_0.JPG){width="527"
-height="110"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DomainsSpam_0.JPG" width="527" height="110" />
 
 In the Settings section select whether you'd like to turn the spam
 filtering on or off.
@@ -75,8 +71,7 @@ from senders on your domain&rsquo;s safelist if you desire.
 Next, select the preferred settings for your domain. Below is an
 overview of each of the options:
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Afterdomain1_1.JPG){width="499"
-height="398"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Afterdomain1_1.JPG" width="499" height="398" />
 
 
 
@@ -112,8 +107,7 @@ settings to users who have not already set their spam preferences, or if
 these settings should override spam preferences for all users. If you're
 finished select the **Save** button.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20Override.png){width="403"
-height="153"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20Override.png" width="403" height="153" />
 
 *Note: The override option will not be presented if you selected
 Individual Rackspace Email Mailbox.*
@@ -134,13 +128,11 @@ To manage your Safe List, select **Safelists**
 Email** section. For the domain, select **Safelists** in the **Domains**
 Section.*
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CPFiltersettingsSL_0.jpg){width="519"
-height="106"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CPFiltersettingsSL_0.jpg" width="519" height="106" />
 
 ### Domain & Email Safelist
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20SL%20Domains%20and%20Email.png){width="335"
-height="385"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20SL%20Domains%20and%20Email.png" width="335" height="385" />
 
 1.  To add a domain name or email address to the safelist, enter the
     domain or email address inside the box, then select the
@@ -157,8 +149,7 @@ information.*
 
 ### IP Safelist
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20SL%20IP.png){width="327"
-height="377"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20SL%20IP.png" width="327" height="377" />
 
 1.  To add an IP address to the safelist, enter the IP address
     (or range) into the box then select the **Add** button.
@@ -187,13 +178,11 @@ To manage your Black List, select **Blacklists**
 Email** section. For the domain, select **Blacklists** in the
 **Domains** Section.*
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CPFiltersettingsBL_0.jpg){width="519"
-height="106"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CPFiltersettingsBL_0.jpg" width="519" height="106" />
 
 ### Domain & Email Blacklist
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20BL%20Domains%20and%20Email.png){width="331"
-height="389"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20BL%20Domains%20and%20Email.png" width="331" height="389" />
 
 1.  To add a domain name or email address to the blacklist, enter the
     domain or email address inside the box then select
@@ -210,8 +199,7 @@ information.*
 
 ### IP Blacklist
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20BL%20IP.png){width="346"
-height="374"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SpamFiltering%20BL%20IP.png" width="346" height="374" />
 
 1.  To add an IP address to the blacklist, enter the IP address
     (or range) into the box then select the **Add** button.

@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [RackConnect v2.0
-Requirements](/howto/rackconnect-v20-requirements)
+Requirements](/how-to/rackconnect-v20-requirements)
 
 **Applies to:** RackConnect v3.0 and RackConnect v2.0
 
@@ -50,10 +50,10 @@ Levels](http://www.rackspace.com/managed-hosting/service-levels/) and
 
 If you have any questions, please reach out to us. Our contact
 information is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 
 ### Next steps
 
 [Getting started with RackConnect
-v2.0](/howto/getting-started-with-rackconnect-v20)
+v2.0](/how-to/getting-started-with-rackconnect-v20)
 

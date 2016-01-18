@@ -14,12 +14,12 @@ step-by-step guide to help you get started.
 ###  Administrator introduction
 
 -   [Email administrator
-    guidelines](/howto/rackspace-responsibility-vs-admin-responsibility)
+    guidelines](/how-to/rackspace-responsibility-vs-admin-responsibility)
 
 ###  Plan your migration
 
 -   [Migration
-    services](/howto/email-migration-services)
+    services](/how-to/email-migration-services)
 
 ###  Control Panel basics
 
@@ -28,18 +28,18 @@ step-by-step guide to help you get started.
 -   [Create a Rackspace Email
     mailbox](https://cp.rackspace.com/EmailHosting/Mail/Mailboxes/List.aspx)
 -   [Rackspace Email mailbox
-    features](/howto/exchange-email-mailbox-features)
+    features](/how-to/exchange-email-mailbox-features)
 -   [Exchange Mailbox
-    Features](/howto/exchange-email-mailbox-features)
+    Features](/how-to/exchange-email-mailbox-features)
 
 ###  Start receiving mail
 
 -   [Help Tool for hosted Email and
-    Lync](/howto/help-tool-for-hosted-email-and-lync)
+    Lync](/how-to/help-tool-for-hosted-email-and-lync)
 -   [Rackspace Email and Exchange
-    Settings](/howto/rackspace-email-and-exchange-settings)
+    Settings](/how-to/rackspace-email-and-exchange-settings)
 -   [DNS records for email with
-    Rackspace](/howto/dns-records-for-email-with-rackspace%20)
+    Rackspace](/how-to/dns-records-for-email-with-rackspace%20)
 
 ###  Access your mail
 
@@ -49,4 +49,4 @@ step-by-step guide to help you get started.
     mail from additional devices
     and programs.](https://emailhelp.rackspace.com/)
 -   [Connection settings
-    only](/howto/rackspace-email-exchange-settings)
+    only](/how-to/rackspace-email-exchange-settings)

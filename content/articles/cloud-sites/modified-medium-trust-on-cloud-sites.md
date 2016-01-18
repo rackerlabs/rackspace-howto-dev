@@ -28,8 +28,8 @@ Trust.
     -   [<span class="toctext">AspJpeg</span>](#AspJpeg)
     -   [<span class="toctext">Configurations</span>](#Configurations)
 
-[](){#Overview}<span style="line-height: 1.2;">Overview</span>
---------------------------------------------------------------
+<a href="" id="Overview"></a><span style="line-height: 1.2;">Overview</span>
+----------------------------------------------------------------------------
 
 The "trust level" refers to permissions set in the Web.config file that
 dictate what operations can and cannot be performed by web applications.
@@ -60,82 +60,73 @@ Applications operating under a Medium Trust level have no registry
 access, and no access to the Windows event log. Both network and file
 system access will be limited.
 
-<span class="mw-headline">[](){#Running_Applications_under_Medium_Trust}Running Applications under Medium Trust</span>
-----------------------------------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Running_Applications_under_Medium_Trust"></a>Running Applications under Medium Trust</span>
+------------------------------------------------------------------------------------------------------------------------------------
 
-### <span class="mw-headline">[](){#DotNetNuke}DotNetNuke</span>
+### <span class="mw-headline"><a href="" id="DotNetNuke"></a>DotNetNuke</span>
 
 DotNetNuke can be installed in our modified Medium Trust environment by
 following [our
-guide](/howto/install-dotnetnuke-on-cloud-sites "DotNetNuke"). If you do
+guide](/how-to/install-dotnetnuke-on-cloud-sites "DotNetNuke"). If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit DotNetNuke's
-community
-forums](http://www.dotnetnuke.com/tabid/795/default.aspx "http://www.dotnetnuke.com/tabid/795/default.aspx"){.external
-.text}.
+issue to our support team, post in our forums, or
+<a href="http://www.dotnetnuke.com/tabid/795/default.aspx" class="external text" title="http://www.dotnetnuke.com/tabid/795/default.aspx">visit DotNetNuke's community forums</a>.
 
-### <span class="mw-headline">[](){#ASPDotNetStoreFront}ASPDotNetStoreFront</span>
+### <span class="mw-headline"><a href="" id="ASPDotNetStoreFront"></a>ASPDotNetStoreFront</span>
 
-Per [this article at ASPDotNetStoreFront's
-website](https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105 "https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105"){.external
-.text}:
+Per
+<a href="https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=105" class="external text" title="https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&amp;_a=viewarticle&amp;kbarticleid=105">this article at ASPDotNetStoreFront's website</a>:
 "Beginning with version 7.0.2.5, the software will run in Medium Trust
 natively. Customers on earlier versions than that will need to contact
-[ASPDotNetStoreFront's
-support](http://www.aspdotnetstorefront.com/t-support.aspx "http://www.aspdotnetstorefront.com/t-support.aspx"){.external
-.text} with their original order number for a special medium trust
-build."
+<a href="http://www.aspdotnetstorefront.com/t-support.aspx" class="external text" title="http://www.aspdotnetstorefront.com/t-support.aspx">ASPDotNetStoreFront's support</a>
+with their original order number for a special medium trust build."
 
-### <span class="mw-headline">[](){#Umbraco}Umbraco</span>
+### <span class="mw-headline"><a href="" id="Umbraco"></a>Umbraco</span>
 
 [Umbraco](http://umbraco.com/) can be configured to run in a Medium
 Trust environment.
 
-### <span class="mw-headline">[](){#BlogEngine}BlogEngine</span>
+### <span class="mw-headline"><a href="" id="BlogEngine"></a>BlogEngine</span>
 
 BlogEngine works in our modified Medium Trust environment. If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit BlogEngine&rsquo;s
-community
-forums](http://www.codeplex.com/blogengine/Thread/List.aspx "http://www.codeplex.com/blogengine/Thread/List.aspx"){.external
-.text}.
+issue to our support team, post in our forums, or
+<a href="http://www.codeplex.com/blogengine/Thread/List.aspx" class="external text" title="http://www.codeplex.com/blogengine/Thread/List.aspx">visit BlogEngine&rsquo;s community forums</a>.
 
-### <span class="mw-headline">[](){#mojoPortal}mojoPortal</span>
+### <span class="mw-headline"><a href="" id="mojoPortal"></a>mojoPortal</span>
 
 mojoPortal works in our modified Medium Trust environment. If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit mojoPortal's
-community
-forums](http://www.mojoportal.com/forums.aspx "http://www.mojoportal.com/forums.aspx"){.external
-.text}.
+issue to our support team, post in our forums, or
+<a href="http://www.mojoportal.com/forums.aspx" class="external text" title="http://www.mojoportal.com/forums.aspx">visit mojoPortal's community forums</a>.
 
-<span class="mw-headline">[](){#Partially_Trusted_Callers}Partially Trusted Callers</span>
-------------------------------------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Partially_Trusted_Callers"></a>Partially Trusted Callers</span>
+--------------------------------------------------------------------------------------------------------
 
 If you do experience trust-related issues, it may relate to assemblies
 that do not allow *Partially Trusted Callers*. For additional
 information on this, please review Microsoft&rsquo;s documentation regarding
 Partially Trusted Callers
-[here](http://msdn.microsoft.com/en-us/library/wyts434y.aspx "http://msdn.microsoft.com/en-us/library/wyts434y.aspx"){.external
-.text} and
-[here](http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7 "http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7"){.external
-.text} (these are components that will **NOT** work with Partially
-Trusted Callers).
+<a href="http://msdn.microsoft.com/en-us/library/wyts434y.aspx" class="external text" title="http://msdn.microsoft.com/en-us/library/wyts434y.aspx">here</a>
+and
+<a href="http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7" class="external text" title="http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7">here</a>
+(these are components that will **NOT** work with Partially Trusted
+Callers).
 
 Many components also have support documentation concerning functioning
 in a Medium Trust.
 
-<span class="mw-headline">[](){#Other_Items}Other Items</span>
---------------------------------------------------------------
+<span class="mw-headline"><a href="" id="Other_Items"></a>Other Items</span>
+----------------------------------------------------------------------------
 
-### <span class="mw-headline">[](){#AspJpeg}AspJpeg</span>
+### <span class="mw-headline"><a href="" id="AspJpeg"></a>AspJpeg</span>
 
 The Rackspace Cloud has been working with Persists, the creator of
 AspJpeg, to determine if their component will work under .NET in our
 modified Medium Trust environment. It should be noted, however, that the
 AspJpeg component is fully functional under Classic ASP.
 
-### <span class="mw-headline">[](){#Configurations}Configurations</span> {#configurations .p1}
+### <span class="mw-headline"><a href="" id="Configurations"></a>Configurations</span> {#configurations .p1}
 
 To facilitate your ability to test your applications on your local
 development machine, we have made our modified Medium Trust

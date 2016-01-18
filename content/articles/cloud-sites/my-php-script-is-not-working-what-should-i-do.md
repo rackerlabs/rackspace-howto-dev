@@ -24,8 +24,8 @@ can verify that PHP is indeed installed and working by running PHPinfo.
 If you check all of these without success please contact a support
 specialist. You can also find additional help at the following websites:
 
--   <http://www.hotscripts.com>
--   <http://www.php-scripts.com>
--   <http://www.phpfreebies.com>
+-   <a href="http://www.hotscripts.com" class="uri" class="external free" title="http://www.hotscripts.com">http://www.hotscripts.com</a>
+-   <a href="http://www.php-scripts.com" class="uri" class="external free" title="http://www.php-scripts.com">http://www.php-scripts.com</a>
+-   <a href="http://www.phpfreebies.com" class="uri" class="external free" title="http://www.phpfreebies.com">http://www.phpfreebies.com</a>
 
 

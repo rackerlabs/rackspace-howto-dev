@@ -40,10 +40,10 @@ Insurance Portability and Accountability Act found at 45 CFR &sect;160.103.
 ### Rackspace Knowledge Center Articles That Reference PII
 
 -   [SSL Termination on Cloud Load
-    Balancers](/howto/cloud-load-balancers-faqs)
+    Balancers](/how-to/cloud-load-balancers-faqs)
 -   [Picking the Right Option for Hosted
-    Storage](/howto/picking-the-right-option-for-hosted-storage)
+    Storage](/how-to/picking-the-right-option-for-hosted-storage)
 -   [Cloud: Vision to
-    Reality](/howto/cloud-vision-to-reality-0)
+    Reality](/how-to/cloud-vision-to-reality-0)
 
 

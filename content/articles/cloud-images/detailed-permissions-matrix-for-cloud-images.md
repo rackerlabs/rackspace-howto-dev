@@ -44,14 +44,11 @@ List All Images
 
 GET /v2/images
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Lists public virtual machine (VM) images.
 
@@ -59,14 +56,11 @@ Get an Image
 
 GET /v2/images/{image\_id}
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets the details for the specified image.
 
@@ -78,8 +72,7 @@ PATCH /v2/images/{image\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Updates the specified image.
 
@@ -93,8 +86,7 @@ DELETE /v2/images/{image\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Deletes the specified image.
 
@@ -108,11 +100,9 @@ POST /v2/images/{image\_id}/members
 
 
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Adds the specified tenant ID as an image member (user).
 
@@ -124,14 +114,11 @@ GET /v2/images/{image\_id}/members
 
 
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Returns a collection of members (user) with whom the image has been
 shared.
@@ -144,14 +131,11 @@ GET /v2/images/{image\_id}/members/{member\_id}
 
 
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 
 
@@ -167,8 +151,7 @@ PUT /v2/images/{image\_id}/members/{member\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Sets the specified status for the specified member (user) of the
 specified image.
@@ -185,8 +168,7 @@ DELETE /v2/images/{image\_id}/members/{member\_id}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 
 
@@ -205,8 +187,7 @@ PUT /v2/images/{image\_id}/tags/{tag}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Adds the specified tag to the specified image.
 
@@ -220,8 +201,7 @@ DELETE /v2/images/{image\_id}/tags/{tag}
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Deletes the specified tag from the specified image.
 
@@ -233,14 +213,11 @@ Get Images Schema
 
 GET /v2/schemas/images
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 
 
@@ -253,14 +230,11 @@ Get Image Schema
 
 GET /v2/schemas/image
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets a json-schema document that represents a single image entity.
 
@@ -270,14 +244,11 @@ Get Image Members Schema
 
 GET /v2/schemas/members
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets a json-schema document that represents an image members entity.
 
@@ -287,14 +258,11 @@ Get Task Schema
 
 GET /v2/schemas/task
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets a json-schema document that represents a specified task entity.
 
@@ -304,14 +272,11 @@ Get Tasks Schema
 
 GET /v2/schemas/tasks
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets a json-schema document that represents a tasks entity.
 
@@ -323,14 +288,11 @@ List Tasks
 
 GET /v2/tasks
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Returns a collection of tasks.
 
@@ -344,8 +306,7 @@ POST /v2/tasks
 
 
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Creates a task.
 
@@ -355,14 +316,11 @@ Get a Task
 
 GET /v2/tasks/{task\_id}
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
- ![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
-![](/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_7.png" width="41" height="39" />
 
 Gets the details for a specified task.
 
@@ -371,8 +329,8 @@ Gets the details for a specified task.
 
 -
 
-[](){#images}Cloud Images Terminology
--------------------------------------
+<a href="" id="images"></a>Cloud Images Terminology
+---------------------------------------------------
 
 ### Image
 
@@ -399,7 +357,7 @@ objects consisting of key:value pairs.
 
 
 
-[&lt; Permissions Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+[&lt; Permissions Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 

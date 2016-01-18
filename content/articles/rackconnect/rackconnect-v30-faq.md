@@ -12,7 +12,7 @@ body_format: tinymce
 
 **Applies to:** RackConnect v3.0. For questions on RackConnect v2.0, see
 [RackConnect 2.0 -
-FAQ](/howto/rackconnect-20-faq).
+FAQ](/how-to/rackconnect-20-faq).
 
 Get quick answers to common questions about RackConnect v3.0.
 
@@ -38,13 +38,13 @@ Get quick answers to common questions about RackConnect v3.0.
     try to build RackConnect v3.0 cloud servers by using the Cloud
     Servers API or the Nova client?](#11)
 
-### [](){#1}Can I allocate multiple cloud networks to a single RackConnect v3.0 cloud server?
+### <a href="" id="1"></a>Can I allocate multiple cloud networks to a single RackConnect v3.0 cloud server?
 
 No. We currently support only one cloud network per cloud server.
 
 
 
-### [](){#2}Can I assign more than one cloud network IP address to my RackConnect v3.0 cloud servers?
+### <a href="" id="2"></a>Can I assign more than one cloud network IP address to my RackConnect v3.0 cloud servers?
 
 No. For each cloud server, we currently only support:
 
@@ -55,7 +55,7 @@ No. For each cloud server, we currently only support:
 
 
 
-### [](){#3}Can I upgrade my RackConnect v2.0 environment to RackConnect v3.0?
+### <a href="" id="3"></a>Can I upgrade my RackConnect v2.0 environment to RackConnect v3.0?
 
 Not yet, but we are working on a migration path. Initially, we plan to
 offer you the ability to associate a *new *cloud account with your
@@ -68,34 +68,34 @@ available.
 
 
 
-### [](){#4}Can I use a Brocade ADX 1000 as my RackConnect v3.0 edge device?
+### <a href="" id="4"></a>Can I use a Brocade ADX 1000 as my RackConnect v3.0 edge device?
 
 No. Because of access list limitations, we currently support the Brocade
 ADX 1000 devices only in the connected device role. For a full list of
 network devices that are compatible with RackConnect v3.0, see
 [RackConnect Network Device
-Comparison](/howto/rackconnect-network-device-comparison).
+Comparison](/how-to/rackconnect-network-device-comparison).
 
 
 
-### [](){#5}Does RackConnect v3.0 support IPv6?
+### <a href="" id="5"></a>Does RackConnect v3.0 support IPv6?
 
 Not yet &mdash; but support for IPv6 is anticipated for early 2016.
 
 
 
-### [](){#6}Does RackConnect v3.0 support Managed Colocation environments?
+### <a href="" id="6"></a>Does RackConnect v3.0 support Managed Colocation environments?
 
 Network devices in a Managed Colocation environment are supported only
 if the network devices are managed by the Rackspace Network Security
 team. Customer-managed network devices are not supported. For more
 details about RackConnect v3.0 compatibility with other Rackspace
 offerings, see [RackConnect v3.0 Compatibility
-Matrix](/howto/rackconnect-v30-compatibility).
+Matrix](/how-to/rackconnect-v30-compatibility).
 
 
 
-### [](){#7}How do I get RackConnect v3.0?
+### <a href="" id="7"></a>How do I get RackConnect v3.0?
 
 
 
@@ -116,7 +116,7 @@ customer:
 
 
 
-### [](){#isitpossible}Is it possible to attach a RackConnect v3.0 cloud network to pre-existing cloud servers?
+### <a href="" id="isitpossible"></a>Is it possible to attach a RackConnect v3.0 cloud network to pre-existing cloud servers?
 
 Yes, but with the following caveats:
 
@@ -140,23 +140,23 @@ built before RackConnect v3.0 was associated with the cloud account.
 
 
 
-### [](){#8}What network subnet (CIDR) should I assign to my RackConnect v3.0 cloud network?
+### <a href="" id="8"></a>What network subnet (CIDR) should I assign to my RackConnect v3.0 cloud network?
 
 See the [Cloud
-Networks](/howto/rackconnect-v30-limitations) section
+Networks](/how-to/rackconnect-v30-limitations) section
 of [RackConnect v3.0
-limitations](/howto/rackconnect-v30-limitations).
+limitations](/how-to/rackconnect-v30-limitations).
 
 
 
-### [](){#9}What requirements must be met to implement RackConnect v3.0 in my environment?
+### <a href="" id="9"></a>What requirements must be met to implement RackConnect v3.0 in my environment?
 
 For the full list of requirements, see [RackConnect v3.0
-requirements](/howto/rackconnect-v30-requirements).
+requirements](/how-to/rackconnect-v30-requirements).
 
 
 
-### [](){#10}Whom do I contact for help with RackConnect v3.0?
+### <a href="" id="10"></a>Whom do I contact for help with RackConnect v3.0?
 
 Because RackConnect spans both your cloud and dedicated environments,
 you can contact your cloud or dedicated hosting support teams for help
@@ -166,11 +166,11 @@ cloud hosting team first. However, if you are certain that the issue is
 related to your network device, we recommend contacting your dedicated
 hosting team first. For details about how to contact your support teams,
 visit the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 
 
 
-### [](){#11}Why do I receive 403 Forbidden HTTP status code responses when I try to build RackConnect v3.0 cloud servers by using the Cloud Servers API or the nova client?
+### <a href="" id="11"></a>Why do I receive 403 Forbidden HTTP status code responses when I try to build RackConnect v3.0 cloud servers by using the Cloud Servers API or the nova client?
 
 By default, when you use the Cloud Servers API or nova client to build
 cloud servers, the servers are built with a PublicNet network. However,

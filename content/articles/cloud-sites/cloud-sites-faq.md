@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: full_html
 ---
 
-[](){#top}
+<a href="" id="top"></a>
 
 Getting Started
 ---------------
@@ -90,7 +90,7 @@ was featured on Oprah) please contact us via chat, phone, or ticket in
 advance and we will help you prepare for it. The information we will
 need can be found at the end of the article [Optimize your website on
 Cloud
-Sites](/howto/optimize-your-website-on-cloud-sites).
+Sites](/how-to/optimize-your-website-on-cloud-sites).
 
 ^[back\\ to\\ top](#top)^
 
@@ -129,7 +129,7 @@ functions typically accessed via shell are available on the Rackspace
 Cloud, including cron jobs, file permissions, and unzip. You can also do
 many SSH type functions by mounting your FTP location locally using
 SSHFS. More information can be found
-[here](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+[here](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).
 
 ^[back\\ to\\ top](#top)^
 
@@ -254,7 +254,7 @@ rules.
 
 For instructions, see [Controlling access to Linux Cloud Sites based on
 the client IP
-address](/howto/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
+address](/how-to/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
 
 ^[back\\ to\\ top](#top)^
 
@@ -266,7 +266,7 @@ Backups
 ### How often do Cloud Sites backup information?
 
 The entire Cloud Sites FTP structure is backed up in an [FTP
-Snapshot](/howto/ftp-snapshot)
+Snapshot](/how-to/ftp-snapshot)
 at the top of every hour, going back 32 hours. Those backups are rolled
 into a nightly backup, which are retained for two days. However, these
 backups are for disaster recovery on the server side. If for any reason
@@ -636,11 +636,11 @@ This will not work for IIS (ASP / ASP.NET).
 
 Please see this article for converting a site from Windows (IIS) to
 Linux (PHP) technology: [Change your site's default
-technology](/howto/change-your-sites-default-technology).
+technology](/how-to/change-your-sites-default-technology).
 
 You can also view this article for assistance with rewriting from
 ASP.NET: [How do I rewrite URLs from
-ASP.NET?](/howto/rewrite-urls-from-aspnet-on-cloud-sites)
+ASP.NET?](/how-to/rewrite-urls-from-aspnet-on-cloud-sites)
 
 ^[back\\ to\\ top](#top)^
 
@@ -661,7 +661,7 @@ example, you might add this to your .htaccess:
 
 You will want to change the path in the example above to use your
 website's absolute path. Please see [this
-article](/howto/locate-the-linux-path-for-your-cloud-sites-website)
+article](/how-to/locate-the-linux-path-for-your-cloud-sites-website)
 to locate your website's absolute path.
 
 Your website's absolute path should resemble this:
@@ -693,7 +693,7 @@ While Cloud Sites is not designed for credit card storage and is not PCI
 compliant, it can be used as a flexible front-end to a payment gateway.
 For more information, see our article on [utilizing Cloud Sites in an
 e-commerce
-solution](/howto/utilize-cloud-sites-in-an-e-commerce-solution).
+solution](/how-to/utilize-cloud-sites-in-an-e-commerce-solution).
 
 ^[back\\ to\\ top](#top)^
 
@@ -903,7 +903,7 @@ MySQL
 
 You should be able to use the *Online Manager* (see [PHPmyAdmin Database
 Management
-Interface](/howto/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface "Working with a MySQL database"))
+Interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface "Working with a MySQL database"))
 to import databases that are less than 16 MB in size without issue.
 
 However, if you need to import database data that exceeds 16 MB into

@@ -16,7 +16,7 @@ other forms of storage such as a SAN or NAS. Since Cloud Files is a
 different way of thinking when it comes to storage, following is a
 review of key concepts.
 
-[](){#Accounts}
+<a href="" id="Accounts"></a>
 
 #### <span class="mw-headline">Accounts </span>
 
@@ -26,7 +26,7 @@ user must identify themselves with a valid Username and their API Access
 Key. Once authenticated, that user has full read/write access to the
 Objects (files) stored under that user account.
 
-[](){#Containers}
+<a href="" id="Containers"></a>
 
 #### <span class="mw-headline">Containers </span>
 
@@ -37,7 +37,7 @@ a Container and these other &ldquo;file system&rdquo; concepts is that Container
 cannot be nested. You can, however, create up to 500,000 Containers
 under your account.
 
-[](){#Objects}
+<a href="" id="Objects"></a>
 
 #### <span class="mw-headline">Objects </span>
 
@@ -50,7 +50,7 @@ backup of your digital photos and add a metadata key/value pair of
 &ldquo;PhotoAlbum-CaribbeanCruise&rdquo;. Objects are grouped into Containers and
 you can have any number of Objects within a Container.
 
-[](){#Operations}
+<a href="" id="Operations"></a>
 
 #### <span class="mw-headline">Operations </span>
 
@@ -61,7 +61,7 @@ API section of the Developer Guide. Operations are performed via the
 ReST web service API or a language-specific API (currently we support
 Python, PHP, Java, and C\#/.NET).
 
-[](){#Permissions}
+<a href="" id="Permissions"></a>
 
 #### <span class="mw-headline">Permissions </span>
 
@@ -73,7 +73,7 @@ create/delete Containers and Objects only within that Account.
 At this time, there is no way to make a storage object publicly
 accessible.
 
-[](){#CDN-enabled_Containers}
+<a href="" id="CDN-enabled_Containers"></a>
 
 #### <span class="mw-headline">CDN-enabled Containers </span>
 

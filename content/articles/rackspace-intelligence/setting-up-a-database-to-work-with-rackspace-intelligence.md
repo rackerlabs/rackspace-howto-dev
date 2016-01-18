@@ -21,6 +21,6 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
 
 2.  Establish monitoring checks and alarms for the database as described
     in [Monitoring Cloud Databases in the Cloud Control
-    Panel](/howto/monitoring-cloud-databases-in-the-cloud-control-panel).
+    Panel](/how-to/monitoring-cloud-databases-in-the-cloud-control-panel).
 
 

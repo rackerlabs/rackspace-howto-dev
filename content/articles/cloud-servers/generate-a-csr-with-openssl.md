@@ -24,7 +24,7 @@ using this certificate signing request (CSR).
 **Tip:** You can also generate a CSR and private key using a [feature in
 the Cloud Control Panel](https://csrgenerator.rackspace.com/). For more
 information, see [Create an SSL CSR in the Rackspace Cloud Control
-Panel](/howto/create-a-csr-in-the-cloud-control-panel).
+Panel](/how-to/create-a-csr-in-the-cloud-control-panel).
 
 Contents
 -----------

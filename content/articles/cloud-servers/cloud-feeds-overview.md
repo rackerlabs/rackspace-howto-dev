@@ -72,7 +72,7 @@ following steps:
 
 **Note:** For more information about role-based access control, see
 [Overview: Role Based Access Control
-(RBAC)](/howto/overview-role-based-access-control-rbac).
+(RBAC)](/how-to/overview-role-based-access-control-rbac).
 
 How to access Cloud Feeds {#howtoaccess}
 -------------------------
@@ -117,7 +117,7 @@ Getting help and providing feedback {#help}
 -----------------------------------
 
 If you have questions about Cloud Feeds, see the [Cloud Feeds
-FAQ](/howto/cloud-feeds-faq).
+FAQ](/how-to/cloud-feeds-faq).
 
 You may also post questions and other discussions in the Rackspace
 Community [API/SDK Developer

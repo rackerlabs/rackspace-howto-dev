@@ -22,28 +22,22 @@ and selecting Cloud Sites Control Panel.
 
 **Procedure**
 
--   Login to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp%7C "http://manage.rackspacecloud.com/pages/Login.jsp|"){.external
-    .text}
--   If you are new to The Rackspace Cloud, please refer to [Adding a new
-    website](/howto/getting-started-with-cloud-sites-how-to-add-a-new-website "/knowledge_center/index.php/Adding_a_new_website"){.external
-    .text} and add the website.
+-   Login to the
+    <a href="http://manage.rackspacecloud.com/pages/Login.jsp%7C" class="external text" title="http://manage.rackspacecloud.com/pages/Login.jsp|">Cloud Sites Control Panel</a>
+-   If you are new to The Rackspace Cloud, please refer to
+    <a href="/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website" class="external text" title="/knowledge_center/index.php/Adding_a_new_website">Adding a new website</a>
+    and add the website.
 -   Navigate to Hosting -&gt; Cloud Sites -&gt; This will list all the
     domains/websites owned by the account, now click on the php website
     hyperlink
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screenshot_5_20_13_12_11_PM.png){width="509"
-height="285"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screenshot_5_20_13_12_11_PM.png" width="509" height="285" />
 
--   Verify that logging is turned on if needed. Refer to [Enable logging
-    for a
-    website](/howto/enabling-raw-logging-for-a-cloud-sites-website "/knowledge_center/index.php/Enabling_logging_for_a_website"){.external
-    .text}
+-   Verify that logging is turned on if needed. Refer to
+    <a href="/how-to/enabling-raw-logging-for-a-cloud-sites-website" class="external text" title="/knowledge_center/index.php/Enabling_logging_for_a_website">Enable logging for a website</a>
 -   Upload a sample index.php file (like the one shown below) to the
-    main directory for the website using FTP - Refer to [Upload content
-    to a website using
-    FTP](/howto/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP"){.external
-    .text}
+    main directory for the website using FTP - Refer to
+    <a href="/how-to/getting-started-with-cloud-sites-uploading-your-content" class="external text" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP">Upload content to a website using FTP</a>
 
 <!-- -->
 
@@ -60,9 +54,8 @@ height="285"}
 
 
 -   Navigate to index.php using the Test URL if necessary. Refer to
-    [Using a Staging
-    URL](/howto/using-a-staging-url "/knowledge_center/index.php/Using_a_staging_URL"){.external
-    .text}. Ensure that is served by Cloud Sites.
+    <a href="/how-to/using-a-staging-url" class="external text" title="/knowledge_center/index.php/Using_a_staging_URL">Using a Staging URL</a>.
+    Ensure that is served by Cloud Sites.
 
 
 

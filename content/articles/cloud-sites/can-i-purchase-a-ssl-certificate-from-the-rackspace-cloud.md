@@ -15,7 +15,7 @@ Please see our article on which SSL certificates we support, you will
 need to purchase your cert from a supported vendor. </span>
 
 Click
-[here](/howto/supported-ssl-certificates-on-cloud-sites)for
+[here](/how-to/supported-ssl-certificates-on-cloud-sites)for
 a list of supported SSL certificates. There is a fee associated with
 providing the SSL capability and this can be found on the Cloud Sites
 pricing page [here](http://www.rackspace.com/cloud/sites/pricing/).

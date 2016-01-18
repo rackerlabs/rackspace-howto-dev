@@ -29,7 +29,7 @@ customers.
 -   [Can I view a history of my online e-Check
     payments?](#e-checkHistory)
 
-#### [](){#whychangingpolicy}Why are you changing your policy?
+#### <a href="" id="whychangingpolicy"></a>Why are you changing your policy?
 
 For Rackspace to comply with NACHA regulations, we need to make the
 following changes to our ACH process:
@@ -40,31 +40,28 @@ following changes to our ACH process:
 -   Pre-authorize your checking account to confirm that the account
     exists, and store the pre-authorization information
 
-#### [](){#wherepaymentinfo}Where do I go to access or view my payment information?
+#### <a href="" id="wherepaymentinfo"></a>Where do I go to access or view my payment information?
 
 Log in to the MyRack Portal. Click **Account**, and then select
 **Payments** from the menu.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ1.png){width="185"
-height="305"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ1.png" width="185" height="305" />
 
 
-#### [](){#wherere-enter}Where do I go to re-enter my ACH payment information?
+#### <a href="" id="wherere-enter"></a>Where do I go to re-enter my ACH payment information?
 
 On the Payments page in the MyRackspace Portal, click **Recurring
 Payments** at the top of the screen. Update your payment information in
 the fields on the **Direct Debit / E-Check** tab.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ2a.png){width="595"
-height="326"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ2a.png" width="595" height="326" />
 
-#### [](){#whatachinfoneeded}What ACH information will I need to re-enter?
+#### <a href="" id="whatachinfoneeded"></a>What ACH information will I need to re-enter?
 
 You need to enter information in the fields on the **Direct Debit /
 E-Check** tab.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ3.png){width="453"
-height="102"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ3.png" width="453" height="102" />
 
 This information includes:
 
@@ -74,13 +71,12 @@ This information includes:
 -   Routing number
 -   Bank account number
 
-#### [](){#e-checkHistory}Can I view a history of my online e-Check payments?
+#### <a href="" id="e-checkHistory"></a>Can I view a history of my online e-Check payments?
 
 Yes. You can find this new feature on the **Payments** page of the
 portal. In the top menu, click  **E-Check Payment History**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ4a.png){width="454"
-height="120"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ4a.png" width="454" height="120" />
 
 **Note**: This feature maintains a history of only e-Check payments.
 Payments made with other payment methods do not appear in this list.

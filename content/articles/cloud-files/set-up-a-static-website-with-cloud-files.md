@@ -21,13 +21,11 @@ Rackspace Cloud Files service.
 
 2.  At the top of the page, select **Storage &gt; Files.**
 
-    ![](/knowledge_center/sites/default/files/field/image/Kcstatic1_03.png){width="601"
-    height="261"}
+    <img src="/knowledge_center/sites/default/files/field/image/Kcstatic1_03.png" width="601" height="261" />
 
 3.  On the Cloud Files/Containers page, click **Create Container**
 
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic2_03.png){width="604"
-    height="188"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic2_03.png" width="604" height="188" />
 
 4.  Type a name for your container and select the region where you want
     to host your site
@@ -35,8 +33,7 @@ Rackspace Cloud Files service.
 5.  Select the **Static Website** option and then click
     **Create Container.**
 
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic3.png){width="600"
-    height="446"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic3.png" width="600" height="446" />
 
     Selecting the **Static Website** option automates the
     following Cloud Files API operations:
@@ -48,8 +45,7 @@ Rackspace Cloud Files service.
 
 6.  On the page for your container, click **Upload Files**.
 
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic4.png){width="600"
-    height="289"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic4.png" width="600" height="289" />
 
 7.  Select the files that contain your website and click **Open**.
 
@@ -67,15 +63,13 @@ URL.
 2.  Click the great icon next to the name of your container and select
     **View All Links**.
 
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic5.png){width="600"
-    height="408"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic5.png" width="600" height="408" />
 
     All of the CDN URLs for your container are displayed. For HTML pages
     and pictures, use the HTTP link to access your static website. If
     you want to be securely connected to your site, use the HTTPS
     link.
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic6.png){width="600"
-    height="304"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic6.png" width="600" height="304" />
 
 ### Next Steps
 
@@ -91,8 +85,7 @@ container. To find your target, perform the following steps:
 2.  In the drop down menu, copy the string in the **Target (Domain)**
     field.
 
-    ![](/knowledge_center/sites/default/files/field/image/kcstatic7_0.png){width="600"
-    height="376"}
+    <img src="/knowledge_center/sites/default/files/field/image/kcstatic7_0.png" width="600" height="376" />
 
 3.  Go to your DNS registrar and point the CNAME to the domain that
     you copied. For instruction on how to complete this for the most
@@ -103,7 +96,7 @@ container. To find your target, perform the following steps:
 
 You can also create your own CNAME using the Rackspace DNS service. For
 instructions, see [Create DNS Records for cloud servers with the Control
-Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
+Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 
 

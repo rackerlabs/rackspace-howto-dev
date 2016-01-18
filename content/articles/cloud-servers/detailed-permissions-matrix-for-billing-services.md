@@ -12,7 +12,7 @@ body_format: markdown_w_tinymce
 
 The following permissions matrix displays specific capabilities for the roles in Billing and Payment Services.
 
-[**Related Knowledge Center Articles**](/howto/billing-services-overview)
+[**Related Knowledge Center Articles**](/how-to/billing-services-overview)
 
 ### As of April 8, 2014
 
@@ -49,4 +49,4 @@ Get Supported Methods | **Observer & Admin** | Lists the supported method of pay
 
 **Note:** RBAC is enabled for Billing Services Level (BSL) and Payment Services Level only through the Cloud Control Panel. API access for BSL and PSL is not provided at this time.
 
-**&lt;** [**Permission Matrices for RBAC**](/howto/permissions-matrix-for-role-based-access-control-rbac)
+**&lt;** [**Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)

@@ -49,7 +49,7 @@ your web servers.
 
 
 
-#### [&lt; Features of Rackspace CDN](/howto/features-of-rackspace-cdn)    -    [Limits for Rackspace CDN &gt;](/howto/limits-for-rackspace-cdn)
+#### [&lt; Features of Rackspace CDN](/how-to/features-of-rackspace-cdn)    -    [Limits for Rackspace CDN &gt;](/how-to/limits-for-rackspace-cdn)
 
 
 

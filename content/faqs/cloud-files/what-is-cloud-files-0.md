@@ -52,7 +52,7 @@ not be able to map or mount virtual disk drives like you can with other
 forms of storage such as a SAN or NAS. Since Cloud Files is a different
 way of thinking when it comes to storage, please take a few moments
 to [review the
-concepts](/howto/cloud-files-key-concepts).
+concepts](/how-to/cloud-files-key-concepts).
 
 #### Using Cloud Files {#usingcloudfiles}
 

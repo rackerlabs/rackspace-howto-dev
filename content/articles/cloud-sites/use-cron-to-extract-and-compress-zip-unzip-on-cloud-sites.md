@@ -59,8 +59,7 @@ Where "file.zip" is the name that you assign to the zip file.
 
 The final script should look similar to this:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png){width="709"
-height="142"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png" width="709" height="142" />
 
 **Note:** *If you're only compressing a single file the script would be
 similar, but would not require the "r" in the options.*
@@ -86,8 +85,7 @@ Where "file.tar.gz" is the name that you assign to the compressed file.
 
 The final script should look similar to this:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png){width="727"
-height="145"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Zip_script_visual.png" width="727" height="145" />
 
 ### <span>II. Extracting</span>
 
@@ -106,8 +104,7 @@ Where "file.zip" is the name of the zip file to be uncompressed.
 
 The final script should look similar to this:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Unzip_script_visual_0.png){width="717"
-height="138"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Unzip_script_visual_0.png" width="717" height="138" />
 
 #### []()
 
@@ -126,20 +123,13 @@ Where "file.tar.gz" is the name of the compressed file.
 
 The final script should look similar to this:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Untar_script_visual.png){width="712"
-height="136"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Untar_script_visual.png" width="712" height="136" />
 
 ### Cron FAQ's:
 
-[What is a cron
-job?](/howto/what-is-a-cloud-sites-cron-job "What is a cron job?"){.external
-.free}
+<a href="/how-to/what-is-a-cloud-sites-cron-job" class="external free" title="What is a cron job?">What is a cron job?</a>
 
-[How do I enable or disable
-cron?](/howto/enable-or-disable-a-cloud-sites-scheduled-task-cron-job "How do I enable or disable cron?"){.external
-.free}
+<a href="/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job" class="external free" title="How do I enable or disable cron?">How do I enable or disable cron?</a>
 
-[How do I schedule a cron
-job?](/howto/how-do-i-schedule-a-cron-job-for-cloud-sites "How do I schedule a cron job?"){.external
-.free}
+<a href="/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites" class="external free" title="How do I schedule a cron job?">How do I schedule a cron job?</a>
 

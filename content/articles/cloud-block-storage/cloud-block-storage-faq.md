@@ -205,7 +205,7 @@ application is time sensitive, consider using volume cloning.
 
 For instructions on volume cloning, see [How to Create a Clone of a
 Cloud Block Storage
-Volume](/howto/create-a-clone-of-a-cloud-block-storage-volume).
+Volume](/how-to/create-a-clone-of-a-cloud-block-storage-volume).
 
 ^[back\\ to\\ top](#top)^
 
@@ -217,9 +217,9 @@ switch volume types by using the cloning or snapshot method outlined in
 the following articles:
 
 -   [How to Create a Clone of a Cloud Block Storage
-    Volume](/howto/create-a-clone-of-a-cloud-block-storage-volume) .
+    Volume](/how-to/create-a-clone-of-a-cloud-block-storage-volume) .
 -   [Create and Use Cloud Block Storage
-    Snapshots](/howto/create-and-use-cloud-block-storage-snapshots)
+    Snapshots](/how-to/create-and-use-cloud-block-storage-snapshots)
 
 
 
@@ -299,7 +299,7 @@ Cloud Servers is ephemeral and exists only as long as the Cloud Server
 exists. When the server is deleted, so is its local storage.
 
 We recommend that you [unmount and detach Cloud Block
-Storage](/howto/detach-and-delete-cloud-block-storage-volumes)
+Storage](/how-to/detach-and-delete-cloud-block-storage-volumes)
 volumes before deleting the server.
 
 ^[back\\ to\\ top](#top)^

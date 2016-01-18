@@ -21,7 +21,6 @@ out 10 days after the expiration date. If you do not renew before the
 stated expiration date, the domain name will be held in reserve for a
 redemption period of 45 days. During this redemption period, you may
 incur a registry-imposed redemption fee in order to reactivate your
-domain. To renew or redeem your domain name, please contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do"){.external
-.text}.
+domain. To renew or redeem your domain name, please contact
+<a href="http://manage.rackspacecloud.com/SupportMain.do" class="external text" title="http://manage.rackspacecloud.com/SupportMain.do">customer support</a>.
 

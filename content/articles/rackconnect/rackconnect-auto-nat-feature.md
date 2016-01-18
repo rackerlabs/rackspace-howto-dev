@@ -104,7 +104,7 @@ The Auto NAT feature is available to all RackConnect 2.0 customer with
 Automation Features enabled as of January 16, 2013.  For details
 regarding the RackConnect Automation features, please view the
 [RackConnect Automation Features
-FAQ](/howto/rackconnect-v20-automation-features-faq).
+FAQ](/how-to/rackconnect-v20-automation-features-faq).
 
 If you have any further questions regarding the RackConnect Auto NAT
 feature, please contact your Support Team.

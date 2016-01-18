@@ -12,7 +12,7 @@ body_format: tinymce
 
 **Note:** This article was written before the introduction of [Cloud
 Load
-Balancers](/howto/cloud-load-balancers),
+Balancers](/how-to/cloud-load-balancers),
 which is our recommended solution for load balancing. Because customers
 might still want to try this procedure, it is available for legacy
 support purposes.
@@ -37,7 +37,7 @@ drone servers behind a smart host each working a piece of workload.
     -   [Load balancer](#Load_Balancer)
 -   [Summary](#Summary)
 
-[](){#Prerequisites}
+<a href="" id="Prerequisites"></a>
 
 Prerequisites
 -------------
@@ -45,7 +45,7 @@ Prerequisites
 You need to have the following hardware and software in place before you
 begin.
 
-[](){#Hardware}
+<a href="" id="Hardware"></a>
 
 ### Hardware
 
@@ -55,7 +55,7 @@ this as a model to scale horizontally.
 -   One cloud server to be used as the load balancer
 -   Two cloud servers to be used as dumb webheads
 
-[](){#Software}
+<a href="" id="Software"></a>
 
 ### Software
 
@@ -77,14 +77,14 @@ Perform the following steps.
 
         # yum groupinstall "Text-based Internet"
 
-[](){#Server_Configuration}
+<a href="" id="Server_Configuration"></a>
 
 Server configuration
 --------------------
 
 Configure the servers as two webheads and one load balancer.
 
-[](){#Web_Servers}
+<a href="" id="Web_Servers"></a>
 
 ### Web servers
 
@@ -95,7 +95,7 @@ distinguishing characteristics you want. For example, you could put "It
 works you looking at WebHead \#" where \# is the numerical identifier of
 that particular webhead.
 
-[](){#Load_Balancer}
+<a href="" id="Load_Balancer"></a>
 
 ### Load balancer
 
@@ -104,7 +104,7 @@ end, so you know what the end product should be. Place all of the
 configurations that you define at the bottom of the
 **/etc/httpd/conf/httpd.conf** file in a standard virtual host.
 
-[](){#Unwanted_Requests}
+<a href="" id="Unwanted_Requests"></a>
 
 #### Unwanted requests
 
@@ -112,7 +112,7 @@ Turn off ProxyRequests to avoid any unwanted traffic.
 
     ProxyRequests off
 
-[](){#The_Balance}
+<a href="" id="The_Balance"></a>
 
 #### The balance
 
@@ -145,15 +145,16 @@ network, where bandwidth is free.
 
     </Proxy>
 
-[](){#Balance_Manager}
+<a href="" id="Balance_Manager"></a>
 
 #### Balance-manager (optional)
 
 The `balance-manager` is a tool packaged with the `mod_proxy_balancer`
 tool, and it enables you to make configurations from a GUI tool through
 the web browser. You can view it at
-<http://domain.com/balancer-manager>. Consider that any changes made by
-this tool end after you restart Apache.
+<a href="http://domain.com/balancer-manager" class="uri" class="external free" title="http://domain.com/balancer-manager">http://domain.com/balancer-manager</a>.
+Consider that any changes made by this tool end after you restart
+Apache.
 
     <Location /balancer-manager>
 
@@ -162,7 +163,7 @@ this tool end after you restart Apache.
 
 
 
-[](){#ProxyPass}
+<a href="" id="ProxyPass"></a>
 
 #### ProxyPass
 
@@ -173,7 +174,7 @@ but you do want to proxy everything else.
        ProxyPass /balancer-manager !
        ProxyPass / balancer://mycluster/
 
-[](){#Summary}
+<a href="" id="Summary"></a>
 
 Summary
 -------

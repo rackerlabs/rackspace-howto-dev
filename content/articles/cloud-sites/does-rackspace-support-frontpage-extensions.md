@@ -14,7 +14,7 @@ Unfortunately, we do not support FrontPage Extensions. While still used
 on many sites, Microsoft has discontinued support for FrontPage and has
 replaced it with a new set of technologies.
 
-Please see [this
-link](http://office.microsoft.com/en-us/frontpage/default.aspx "http://office.microsoft.com/en-us/frontpage/default.aspx"){.external
-.text} for additional information from Microsoft.
+Please see
+<a href="http://office.microsoft.com/en-us/frontpage/default.aspx" class="external text" title="http://office.microsoft.com/en-us/frontpage/default.aspx">this link</a>
+for additional information from Microsoft.
 

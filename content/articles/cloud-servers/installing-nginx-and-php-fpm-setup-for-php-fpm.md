@@ -13,11 +13,11 @@ body_format: tinymce
 ### Previous section
 
 [Installing NGINX and PHP-FPM - Setup for
-NGINX](/howto/installing-nginx-and-php-fpm-setup-for-nginx)
+NGINX](/how-to/installing-nginx-and-php-fpm-setup-for-nginx)
 
 The steps in this article guide you through adding pool information to
 the PHP-FPM setup that you [previously
-completed](/howto/installing-nginx-and-php-fpm-setup-for-nginx).
+completed](/how-to/installing-nginx-and-php-fpm-setup-for-nginx).
 
 When you entered the command to install PHP-FPM, the system created a
 default configuration for PHP-FPM. This default configuration might have
@@ -77,5 +77,5 @@ DOMAINNAME with your domain name.
 ### Next steps
 
 [Installing NGINX and PHP-FPM -
-Conclusion](/howto/installing-nginx-and-php-fpm-conclusion)
+Conclusion](/how-to/installing-nginx-and-php-fpm-conclusion)
 

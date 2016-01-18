@@ -26,8 +26,7 @@ which you can create a ticket:
 -   Click on your **Account** in the top navigation bar, and in the
     drop-down menu, select **Support Tickets**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/control-panel-drop-down-support.png){width="250"
-height="279"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/control-panel-drop-down-support.png" width="250" height="279" />
 
 <span>When you click on the **Support Tickets** or **Create or View a
 Ticket** link, you will see a list displaying your currently open

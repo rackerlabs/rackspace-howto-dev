@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prerequisites
 
 [Installing NGINX and
-PHP-FPM](/howto/installing-nginx-and-php-fpm)
+PHP-FPM](/how-to/installing-nginx-and-php-fpm)
 
 After NGINX installed, you can set up NGINX and PHP-FPM to work on your
 system.
@@ -319,5 +319,5 @@ are now ready to configure PHP-FPM.
 ### Next steps {#next-steps .p2}
 
 [Installing NGINX and PHP-FPM - Setup for
-PHP-FPM](/howto/installing-nginx-and-php-fpm-setup-for-php-fpm)
+PHP-FPM](/how-to/installing-nginx-and-php-fpm-setup-for-php-fpm)
 

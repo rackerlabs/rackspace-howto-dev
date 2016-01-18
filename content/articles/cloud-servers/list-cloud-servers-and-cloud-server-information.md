@@ -26,7 +26,7 @@ View server information through novaclient
 
 For information about installing the nova client on Windows, Linux, or
 Mac systems, see  [Using python-novaclient with the Rackspace
-Cloud](/howto/using-python-novaclient-with-the-rackspace-cloud).
+Cloud](/how-to/using-python-novaclient-with-the-rackspace-cloud).
 
 On the command line, run the following command::
 
@@ -55,15 +55,13 @@ whether the region you selected supports General Purpose Cloud Servers:
 
 ### **Server list for General Purpose and Compute, I/O, or Memory servers**
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-10-11%20at%205.03.29%20PM_0_0.png){width="791"
-height="205"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-10-11%20at%205.03.29%20PM_0_0.png" width="791" height="205" />
 
 ###
 
 ### **Server list for only General Purpose servers**
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-10-11%20at%205.04.01%20PM_0_0.png){width="787"
-height="168"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202013-10-11%20at%205.04.01%20PM_0_0.png" width="787" height="168" />
 
 Copy the ID of the configuration that you want to use from the ID field.
 You need it to create your server. To create a cloud server with nova

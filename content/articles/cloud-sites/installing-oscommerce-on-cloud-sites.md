@@ -20,11 +20,11 @@ Please see the following articles on how you change your default
 technology, add a MySQL database, and connect to FTP:
 
 -   [How do I change my site's default
-    technology?](/howto/change-your-sites-default-technology "How do I change my site's default technology?")
+    technology?](/how-to/change-your-sites-default-technology "How do I change my site's default technology?")
 -   [How do I add a MySQL database to my
-    site?](/howto/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
+    site?](/how-to/rackspace-cloud-sites-essentials-mysql-databases "How do I add a MySQL database to my site?")
 -   [How do I add content to my
-    website?](/howto/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
+    website?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
 
 1.  Open your browser and enter your domain's URL and include the
     "catalog" directory in the path if you left it as is

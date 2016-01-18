@@ -33,8 +33,7 @@ Folder that you will be migrating.
 
 2.Click **File &gt; Open &gt; Import**
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic1.png){width="625"
-height="451"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic1.png" width="625" height="451" />
 
 
 
@@ -42,16 +41,14 @@ height="451"}
 **Export to a file &gt; Next**.**
 **
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic2.png){width="436"
-height="329"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic2.png" width="436" height="329" />
 
 
 
 4\. In the next wizard dialog, Select **Outlook Data File (pst) &gt;
 Next.**
 
-**![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic3.png){width="439"
-height="327"}**
+**<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic3.png" width="439" height="327" />**
 
 
 
@@ -59,23 +56,20 @@ height="327"}**
 Public Folders, scroll down to select the public folders from the list
 (see the example below)*.  Select **Include Subfolders &gt; Next**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic4png.jpg){width="438"
-height="315"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic4png.jpg" width="438" height="315" />
 
 
 
 6\. Browse to the location where you would like to save the file **&gt;**
 Click **Finish**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic5png.png){width="435"
-height="316"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic5png.png" width="435" height="316" />
 
 
 
 7\. A password is not required and may be left blank.  Click **OK.**
 
-**![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic6png.png){width="301"
-height="156"}**
+**<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_export_pic6png.png" width="301" height="156" />**
 
 
 
@@ -87,47 +81,41 @@ height="156"}**
 
 9\. Click** File &gt; Open &gt; Open Outlook Data File**
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic7png.png){width="569"
-height="404"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic7png.png" width="569" height="404" />
 
 
 
 10\. You will not see the file listed in the Outlook folder tree.  Please
 expand it and select the folder in question.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic8png.jpg){width="205"
-height="482"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic8png.jpg" width="205" height="482" />
 
 
 
 *Note: If you don't see it make sure that Folder View is enabled.*
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic9.png){width="231"
-height="170"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic9.png" width="231" height="170" />
 
 
 
 12\. Expand the current public folders **&gt; All Public Folders &gt;
 Root \#\#\# &gt; Domain.com.**
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic10_0.jpg){width="212"
-height="367"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic10_0.jpg" width="212" height="367" />
 
 
 
 13\. Right-click on the domain.com public folder and select **New
 Folder.**
 
- ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic11.jpg){width="268"
-height="486"}
+ <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic11.jpg" width="268" height="486" />
 
 
 
 14\. Enter the name of the folder and select the **Folder Contains** drop
 down to select the folder type.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic13.jpg){width="316"
-height="354"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic13.jpg" width="316" height="354" />
 
 
 
@@ -135,8 +123,7 @@ height="354"}
 A), drag and drop them to the Public Folder. You may also copy and paste
 them if you like.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic12.jpg){width="582"
-height="479"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Outlook_2010_-_import_pic12.jpg" width="582" height="479" />
 
 
 

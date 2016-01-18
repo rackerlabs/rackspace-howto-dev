@@ -35,7 +35,7 @@ network.</span></span></span>
 -   *[Rackspace Cloud Orchestration Templates User Guide  - API
     v1.0](https://developer.rackspace.com/docs/user-guides/orchestration/)*
 -   [Cloud Orchestration:
-    FAQs](/howto/cloud-orchestration-faq)
+    FAQs](/how-to/cloud-orchestration-faq)
 
 Although an official RackConnect v3.0 heat template has not been
 released yet, an in-development template is available on GitHub at
@@ -110,6 +110,6 @@ address to the cloud server.
 
 
 If you have any questions, contact us.  Contact details are available on
-the [Contact Us](/howto/support)
+the [Contact Us](/how-to/support)
 page.
 

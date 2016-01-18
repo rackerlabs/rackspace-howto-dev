@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Rackspace Cloud Backup -
-Preferences](/howto/rackspace-cloud-backup-preferences-0)
+Preferences](/how-to/rackspace-cloud-backup-preferences-0)
 
 If you encounter issues when working with Cloud Backup, use the
 following information to help you troubleshoot.
@@ -51,14 +51,14 @@ On this page:
         corrupted](Files%20modified%20during%20backup%20are%20missing%20or%20corrupted)
 
 
-[](){#Backup statuses}Backup statuses
--------------------------------------
+<a href="" id="Backup statuses"></a>Backup statuses
+---------------------------------------------------
 
 Descriptions for each of the backup statues follow along with tips for
 why you might receive each status and what action you might take.
 
 ###
-[](){#Backup status "Skipped"}Backup status &ldquo;Skipped&rdquo;
+<a href="" id="Backup status &quot;Skipped&quot;"></a>Backup status &ldquo;Skipped&rdquo;
 
 The backup job was skipped because a backup job was already queued. A
 single backup job can be queued only once.
@@ -84,7 +84,7 @@ service through Window's Service Manager, or through the `sc` command
 line Windows utility.
 
 
-### [](){#Backup status "Missed"}Backup status &ldquo;Missed&rdquo;
+### <a href="" id="Backup status &quot;Missed&quot;"></a>Backup status &ldquo;Missed&rdquo;
 
 A status of Missed indicates that the backup job was missed. The
 DriveClient service was likely not running at the time of the scheduled
@@ -100,7 +100,7 @@ agent was not running, or the agent was manually stopped or
 terminated.
 
 
-### [](){#Backup status "Completed with Errors"}Backup status &ldquo;Completed with Errors&rdquo;
+### <a href="" id="Backup status &quot;Completed with Errors&quot;"></a>Backup status &ldquo;Completed with Errors&rdquo;
 
 A backup status of Completed with Errors indicates that the backup
 completed, but one or more files could not be backed up. The most common
@@ -123,7 +123,7 @@ issues that cause this type of status are as follows:
     current version of Cloud Backup supports only UTF-8 characters.
 
 
-### [](){#Backup status "Error"}Backup status &ldquo;Error&rdquo;
+### <a href="" id="Backup status &quot;Error&quot;"></a>Backup status &ldquo;Error&rdquo;
 
 Many issues might cause a backup status of Error to occur, such as Cloud
 account permissions for the user who configured that agent or the
@@ -196,15 +196,15 @@ Following are some of the issues and some possible fixes:
     Then, try to connect again.
 
 
-### [](){#Backup status "Failed"}Backup status &ldquo;Failed&rdquo;
+### <a href="" id="Backup status &quot;Failed&quot;"></a>Backup status &ldquo;Failed&rdquo;
 
 The Failed status indicates that a serious problem occurred, and the
 backup job did not run. As with the Error status, check the logs on the
 server.
 
 
-[](){#Connection errors - DriveClient fails to start, or DriveClient does not stay running}Connection errors: DriveClient fails to start, or DriveClient does not stay running
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<a href="" id="Connection errors - DriveClient fails to start, or DriveClient does not stay running"></a>Connection errors: DriveClient fails to start, or DriveClient does not stay running
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 When DriveClient is started, it attempts to connect to the RSE API
 endpoint (**rse.drivesrvr.com** or **rse.drivesrvr.co.uk**), to let the
@@ -262,8 +262,8 @@ required API endpoints:
 | HKG    | storage101.hkg1.clouddrive.com | snet-storage101.hkg1.clouddrive.com |
 
 
-[](){#Backup agent logs - Where they are located, and how to read them}Backup agent logs: Where they are located, and how to read them
---------------------------------------------------------------------------------------------------------------------------------------
+<a href="" id="Backup agent logs - Where they are located, and how to read them"></a>Backup agent logs: Where they are located, and how to read them
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 The agent logs are stored, by default, in the following directories:
 
@@ -278,7 +278,7 @@ The only thing that can be manually edited in the **log4cxx.xml** file
 (`MaxFileSize`) and how many previous versions (`MaxBackupIndex`) will
 be saved before they are deleted. For more information about how to
 configure this file, see [Cloud Backup agent logging
-basics](/howto/cloud-backup-agent-logging-basics).
+basics](/how-to/cloud-backup-agent-logging-basics).
 
 The following common items are included in the **DriveClient.log** file:
 
@@ -319,8 +319,8 @@ If the errors continue for more than 5 - 10 seconds, contact Rackspace
 Support.
 
 
-[](){#Recovery of your encrypted vault password}Recovery of your encrypted vault password
------------------------------------------------------------------------------------------
+<a href="" id="Recovery of your encrypted vault password"></a>Recovery of your encrypted vault password
+-------------------------------------------------------------------------------------------------------
 
 You cannot recover your encrypted vault password. The vault password is
 stored only on the cloud server that is linked to that encrypted vault.
@@ -328,8 +328,8 @@ If that password is forgotten, and the **bootstrap.json** file was
 overwritten or lost, there is no way to recover the password.
 
 
-[](){#Unable to backup or restore files (Windows only)}Unable to backup or restore files (Windows only)
--------------------------------------------------------------------------------------------------------
+<a href="" id="Unable to backup or restore files (Windows only)"></a>Unable to backup or restore files (Windows only)
+---------------------------------------------------------------------------------------------------------------------
 
 Windows has the ability to *exclusively lock* a file, so that no other
 process can read or write to it. This locking is common in database
@@ -346,25 +346,25 @@ The latest version of Cloud Backup for Windows automatically takes a VSS
 snapshot of the drive and attempts to back up files from it.
 
 
-[](){#System resource utilization}System resource utilization
--------------------------------------------------------------
+<a href="" id="System resource utilization"></a>System resource utilization
+---------------------------------------------------------------------------
 
 The amount of resources (memory, CPU, and load) used by the DriveClient
 is directly related to how many files are being backed up in each backup
 configuration. An increased number of files (or the size of files) can
 cause the agent to consume more resources. For suggestions for best
 practices, see [Best practices for Cloud
-Backup](/howto/best-practices-for-cloud-backup).
+Backup](/how-to/best-practices-for-cloud-backup).
 
 
 
-[](){#Other errors and problems}Other errors and problems
----------------------------------------------------------
+<a href="" id="Other errors and problems"></a>Other errors and problems
+-----------------------------------------------------------------------
 
 Following are other errors and problems that you might encounter:
 
 ####
-**[](){#Backup failed with 403 error from Cloud Files when account has sub-users}Backup failed with a 403 error from Cloud Files when account has sub-users**
+**<a href="" id="Backup failed with 403 error from Cloud Files when account has sub-users"></a>Backup failed with a 403 error from Cloud Files when account has sub-users**
 
 A registered sub-user is authorized for Cloud Backup but not for Cloud
 Files access. When this user attempts a backup, all requests to Cloud
@@ -378,7 +378,7 @@ access to Cloud Files for your sub-user account. Cloud Backup does not
 support Dedicated Users with Cloud access Federated users.
 
 ####
-**[](){#Unable to browse a previous backup or browse a backup to select files to restore}Unable to browse a previous backup or browse a backup to select files to restore**
+**<a href="" id="Unable to browse a previous backup or browse a backup to select files to restore"></a>Unable to browse a previous backup or browse a backup to select files to restore**
 
 The list of files in a backup in the Cloud Control Panel is generated by
 the running DriveClient service. When you are browsing existing backup
@@ -390,7 +390,7 @@ cloud server &ndash; the server to which you have selected to restore the
 files.
 
 ####
-**[](){#Cleanup stuck in "preparing" mode}Cleanup stuck in &ldquo;preparing&rdquo; mode**
+**<a href="" id="Cleanup stuck in &quot;preparing&quot; mode"></a>Cleanup stuck in &ldquo;preparing&rdquo; mode**
 
 The cleanup process requires a large number of calculations before it
 can start cleaning up for the file rotation. As a result, the cleanup
@@ -399,7 +399,7 @@ start being rotated. There is no way to track the percentage complete at
 this time.
 
 ####
-**[](){#Unexpected "Skipped" notifications for a backup}Unexpected "Skipped" notifications for a backup**
+**<a href="" id="Unexpected &quot;Skipped&quot; notifications for a backup"></a>Unexpected "Skipped" notifications for a backup**
 
 You might get this notification if you have reregistered servers (the
 old server appears offline with a duplicate online server). By design,
@@ -420,7 +420,7 @@ fresh agent (with no backup configurations or previous backups run
 against it).
 
 ####
-**[](){#Files modified during backup are missing or corrupted}Files modified during backup are missing or corrupted**
+**<a href="" id="Files modified during backup are missing or corrupted"></a>Files modified during backup are missing or corrupted**
 
 **Note**: This issue relates to the data that is backed up, and not to
 the actual file on the file system.
@@ -449,7 +449,7 @@ workarounds:
 -   For databases, take a snapshot of the database (for example, a
     database dump) and back up the dump. See [Rackspace Cloud Backup -
     Backing up
-    Databases](/howto/rackspace-cloud-backup-backing-up-databases)
+    Databases](/how-to/rackspace-cloud-backup-backing-up-databases)
     for full instructions.
 -   For log files, take snapshots of your log files and back them up. To
     avoid running out of disk space, rotate your log files periodically.

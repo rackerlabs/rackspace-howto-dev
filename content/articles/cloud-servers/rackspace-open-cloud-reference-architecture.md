@@ -34,7 +34,7 @@ the cloud, yet already uses platform services like Cloud Databases and
 Cloud Files to replace dedicated hardware like beefy dedicated database
 servers and expensive storage arrays.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/basic%20cloud%20configuration.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/basic%20cloud%20configuration.png" class="image-full_width" />
 
 1. **Public Network **- Each **Rackspace Cloud Server** has two networks
 . Here, the Cloud Server is accessible from the Internet over the Public
@@ -77,7 +77,7 @@ platform which allows for more customization. This configuration also
 shows the power of the asynchronous processing of tasks - basically
 making each tier that much more modular.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/six.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/six.png" class="image-full_width" />
 
 1. [**Rackspace Cloud Load
 Balancers**](http://www.rackspace.com/cloud/public/loadbalancers/) - Rackspace
@@ -106,8 +106,7 @@ Storage for extra disk space. Cloud Load Balancers is also used in
 multiple levels of the application, balancing not only web workloads but
 application workloads as well.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/10_0.png){width="701"
-height="431"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/10_0.png" width="701" height="431" />
 
 1\.  [**Rackspace** **Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
@@ -143,7 +142,7 @@ Varnish for some static content and Memcached for database query
 caching. This configuration also allows you to scale horizontally
 quickly for events or high traffic.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/two_0.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/two_0.png" class="image-full_width" />
 
 1\. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - **Rackspace
@@ -177,7 +176,7 @@ global content delivery.
 Below is an example of the way our Managed Cloud Servers team could
 potentially configure the Open Cloud for WordPress.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/7.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/7.png" class="image-full_width" />
 
 1\. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
@@ -217,7 +216,7 @@ or other use cases. This architecture also displays a use case for Cloud
 Networks, where you can create virtual private clouds for application
 servers limiting their accessibility for better security.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/eight.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/eight.png" class="image-full_width" />
 
 1. [**Rackspace** **Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
@@ -253,7 +252,7 @@ their application that have a high number of I/O operations. RackConnect
 configurations are also utilized for customers that  require higher
 levels of PCI compliance.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/five.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/five.png" class="image-full_width" />
 
 1\. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
@@ -293,7 +292,7 @@ change their application to suit a new API. This also shows that
 customers can link their in-house private cloud to a Rackspace hosted
 private cloud for the same purpose.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/four.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/four.png" class="image-full_width" />
 
 1\. [**Rackspace Cloud
 Monitoring**](http://www.rackspace.com/cloud/public/monitoring/) - Rackspace
@@ -325,7 +324,7 @@ SendGrid for end user email deliverability. This configuration also
 takes advantage of a bare metal database server for PCI compliance
 standards and to take full advantage of computing resources.
 
-![](http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/mailgun.png){.image-full_width}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/mailgun.png" class="image-full_width" />
 
 1\. [**Rackspace Cloud
 Servers**](http://www.rackspace.com/cloud/public/servers/) - When a

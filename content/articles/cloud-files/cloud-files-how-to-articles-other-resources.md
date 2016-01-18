@@ -20,7 +20,7 @@ Documentation
 -   [Release
     Notes](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-release-notes)
 -   [General Getting Started
-    Guide](/howto/cloud-files)
+    Guide](/how-to/cloud-files)
 
 SDKs
 ----
@@ -40,19 +40,19 @@ Popular How To Articles from the Rackspace Knowledge Center
 -----------------------------------------------------------
 
 The Rackspace [Knowledge
-Center](/howto/) houses "how-to"
+Center](/how-to/) houses "how-to"
 articles, getting started guides, code samples, security best practices
 and hundreds of tips for getting the most out of your Cloud Files.
 Check out these popular articles:
 
 -   [Rackspace Cloud Files
-    FAQs](/howto/product-faq/cloud-files)
+    FAQs](/how-to/product-faq/cloud-files)
 -   [Best Practices Using Cloud
-    Files](/howto/best-practices-for-using-cloud-files)
+    Files](/how-to/best-practices-for-using-cloud-files)
 -   [Mounting Rackspace Cloud Files to Linux Using
-    CloudFuse](/howto/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
+    CloudFuse](/how-to/article/mounting-rackspace-cloud-files-to-linux-using-cloudfuse)
 -   [Viewing Your API
-    Key](/howto/article/view-and-reset-your-api-key)
+    Key](/how-to/article/view-and-reset-your-api-key)
 
 Popular Technical Articles from the Rackspace Blog
 --------------------------------------------------

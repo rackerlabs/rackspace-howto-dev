@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section {#previous-section .p1}
 
 [Installing NGINX and PHP-FPM running on UNIX File
-Sockets](/howto/installing-nginx-and-php-fpm-running-on-unix-file-sockets)
+Sockets](/how-to/installing-nginx-and-php-fpm-running-on-unix-file-sockets)
 
 **Preface**
 
@@ -72,5 +72,5 @@ initialized completely.
 ### Next steps {#next-steps .p2}
 
 [Installing NGINX and PHP-FPM - The Fun
-Begins](/howto/installing-nginx-and-php-fpm-the-fun-begins)
+Begins](/how-to/installing-nginx-and-php-fpm-the-fun-begins)
 

@@ -29,8 +29,7 @@ In addition to receiving compensation benefits, resellers can also take
 advantage of sales, marketing and training resources. Some of these
 benefits include:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Reseller_Prog_Collateral_Update-1a.png){width="600"
-height="296"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Reseller_Prog_Collateral_Update-1a.png" width="600" height="296" />
 
 \*These benefits are limited and require a business review and approval.
 
@@ -41,8 +40,7 @@ selling Rackspace solutions to your prospects and customers. Our program
 offers market competitive reseller discounts that lead to higher margins
 and greater competitive advantages.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Reseller_Prog_Collateral_Update-2a.png){width="476"
-height="136"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Reseller_Prog_Collateral_Update-2a.png" width="476" height="136" />
 
 ### Program Requirements
 

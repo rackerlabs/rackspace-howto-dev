@@ -49,8 +49,7 @@ Cloud Monitoring lets you:
 -   Use multiple data center alert policies to seamlessly evaluate alarm
     criteria from multiple datacenters:
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Alarm%20Visualization_0.png){width="717"
-height="262"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Alarm%20Visualization_0.png" width="717" height="262" />
 
 *The graph above shows a check running in 3 monitoring zones. The yellow
 and red areas represent when an alarm is in WARNING and CRITICAL

@@ -25,7 +25,7 @@ Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage and Cloud Backup
 options on General Purpose servers, see [Best Practices for Backing Up
 Your Data: Cloud Block Storage versus Cloud
-Backup](/howto/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 There are two types of volumes you can attach to your server:
 
@@ -121,17 +121,17 @@ Storage.
 In this Getting Started Guide, you will learn how to:
 
 -   [Create and Attach a
-    Volume](/howto/create-and-attach-a-cloud-block-storage-volume)
+    Volume](/how-to/create-and-attach-a-cloud-block-storage-volume)
 -   [Prepare Your Volume for Use with a Server (Linux
-    or Windows)](/howto/create-and-attach-a-cloud-block-storage-volume)
+    or Windows)](/how-to/create-and-attach-a-cloud-block-storage-volume)
 -   [Take Snapshots of Your
-    Volume](/howto/create-and-use-cloud-block-storage-snapshots)
+    Volume](/how-to/create-and-use-cloud-block-storage-snapshots)
 -   [Detach and Delete a
-    Volume](/howto/detach-and-delete-cloud-block-storage-volumes)
+    Volume](/how-to/detach-and-delete-cloud-block-storage-volumes)
 -   [Attach a Cloud Block Storage Volume to an OnMetal
-    Server](/howto/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
+    Server](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 
 
 Let's get started and [Create your first
-volume](/howto/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
+volume](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 

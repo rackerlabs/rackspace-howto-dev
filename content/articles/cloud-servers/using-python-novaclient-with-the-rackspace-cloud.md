@@ -19,14 +19,14 @@ needing to delve into the API directly.
 We have installation instructions for Windows, Mac OS X, and Linux:
 
 -   [Installing python-novaclient on
-    Windows](/howto/installing-python-novaclient-on-windows)
+    Windows](/how-to/installing-python-novaclient-on-windows)
 -   [Installing python-novaclient on Linux and Mac
-    OS](/howto/installing-python-novaclient-on-linux-and-mac-os)
+    OS](/how-to/installing-python-novaclient-on-linux-and-mac-os)
 
 You'll find a list of common operations that can be performed with the
 client here:
 
 -   [Useful python-novaclient
-    commands](/howto/useful-python-novaclient-commands)
+    commands](/how-to/useful-python-novaclient-commands)
 
 

@@ -20,12 +20,10 @@ following steps:
 1.  Mouse over the **Go to section** drop-down menu and select
     **Domains**.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-20%20at%2010.19.12%20AM.png){width="230"
-    height="211"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-20%20at%2010.19.12%20AM.png" width="230" height="211" />
 2.  In the **Spam Filtering** section, click the **Blacklists** link.
 
-    ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-20%20at%208.41.19%20AM_0.png){width="250"
-    height="124"}
+    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202014-05-20%20at%208.41.19%20AM_0.png" width="250" height="124" />
 3.  If you have multiple domains, you may be prompted to select a
     domain name. Or, to change domains at any time, click the **change
     domain** link.

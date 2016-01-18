@@ -37,12 +37,12 @@ region. To accomplish this, RackConnect relies on Rackspace Cloud
 Networks on the cloud side and dedicated network devices on the
 dedicated side of your environment. For a basic introduction into Cloud
 Networks, see [Getting Started with Cloud
-Networks](/howto/getting-started-with-cloud-networks).
+Networks](/how-to/getting-started-with-cloud-networks).
 For a complete list of dedicated network devices currently supported by
 RackConnect, see [RackConnect Network Device
-Comparison](/howto/rackconnect-network-device-comparison).
+Comparison](/how-to/rackconnect-network-device-comparison).
 
 If you have any questions, please reach out to us. Our contact
 information is available on the [Contact
-Us](/howto/support) page.
+Us](/how-to/support) page.
 

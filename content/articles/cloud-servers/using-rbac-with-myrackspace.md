@@ -53,11 +53,10 @@ not through the MyRackspace Portal).
 
 The following graphic illustrates this scenario.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MyRack%20BEST%20Diagram.png){width="652"
-height="751"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MyRack%20BEST%20Diagram.png" width="652" height="751" />
 
 [&lt; Managing
-RBAC](/howto/managing-role-based-access-control-rbac)
+RBAC](/how-to/managing-role-based-access-control-rbac)
  -   [RBAC Permissions Matrix
-&gt;](/howto/permissions-matrix-for-role-based-access-control-rbac)
+&gt;](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 

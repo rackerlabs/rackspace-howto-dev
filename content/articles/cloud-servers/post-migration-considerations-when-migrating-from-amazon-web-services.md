@@ -15,14 +15,14 @@ body_format: tinymce
 Migrate an application from Amazon Web Services to Rackspace:
 
 -   [Migrating an application built on a LAMP stack from Amazon Web
-    Services](/howto/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
+    Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrating a .NET application from Amazon Web
-    Services](/howto/migrating-a-net-application-from-amazon-web-services)
+    Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 -   [Migrating a Java web application from Amazon Web
-    Services](/howto/migrating-a-java-web-application-from-amazon-web-services)
+    Services](/how-to/migrating-a-java-web-application-from-amazon-web-services)
 -   [Migrating an application based on Backbone.js, Node.js, and MongoDB
     from Amazon Web
-    Services](/howto/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
+    Services](/how-to/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
 
 #### Security
 
@@ -68,7 +68,7 @@ and using a nonstandard (other than port 22) port for SSH.
 To create a robust and scalable monitoring system, consider using
 Rackspace Cloud Monitoring. Read [Install and Configure the Rackspace
 Monitoring
-Agent](/howto/install-and-configure-the-rackspace-monitoring-agent) for
+Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent) for
 information about installing, configuring, and running an agent and
 enabling monitoring checks by using the Cloud Control Panel.
 
@@ -94,7 +94,7 @@ provides a file-based backup system to help you meet your backup and
 restore needs. You can install the [Rackspace Cloud Backup
 agent](http://www.rackspace.com/cloud/backup/) by following the steps in
 the article [Rackspace Cloud Backup -
-Overview](/howto/rackspace-cloud-backup-overview).
+Overview](/how-to/rackspace-cloud-backup-overview).
 
 Following are the key features of Cloud Backup:
 

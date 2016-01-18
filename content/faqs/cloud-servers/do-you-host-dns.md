@@ -13,5 +13,5 @@ body_format: tinymce
 Yes. Our Control Panel has a DNS menu for maintaining domain records for
 your Cloud Servers. Read this article for [detailed information on using
 the Rackspace Cloud DNS Control
-Panel](/howto/create-dns-records-for-cloud-servers-with-the-control-panel).
+Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 

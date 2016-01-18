@@ -10,7 +10,7 @@ product: Cloud Files
 body_format: tinymce
 ---
 
-[](){#Simple_Ruby_Application}
+<a href="" id="Simple_Ruby_Application"></a>
 
 <span class="mw-headline">Sample Ruby Application </span>
 ---------------------------------------------------------
@@ -21,7 +21,7 @@ In the sample command below, use your Rackspace Cloud account username
 and API key, where indicated by &lt;username&gt; and &lt;API key&gt; in
 the following command. For information about how to find your API key,
 see [View and reset your API
-key.](/howto/view-and-reset-your-api-key)
+key.](/how-to/view-and-reset-your-api-key)
 
     #!/usr/bin/env ruby
     require 'rubygems'

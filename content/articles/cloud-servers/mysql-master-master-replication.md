@@ -14,18 +14,18 @@ Note: Rackspace Support cannot assist with master-master replication setups due 
 
 ## Contents
 
--  [1 MySQL Master-Master Replication](/howto/mysql-master-master-replication)
-  -  [1.1 Setup Outline](/howto/mysql-master-master-replication)
-  -  [1.2 Creating the Cloud Servers](/howto/mysql-master-master-replication)
-  -  [1.3 Installing MySQL](/howto/mysql-master-master-replication)
-  -  [1.4 Configuring Replication](/howto/mysql-master-master-replication)
-  -  [1.5 Testing the scenarios](/howto/mysql-master-master-replication)
+-  [1 MySQL Master-Master Replication](/how-to/mysql-master-master-replication)
+  -  [1.1 Setup Outline](/how-to/mysql-master-master-replication)
+  -  [1.2 Creating the Cloud Servers](/how-to/mysql-master-master-replication)
+  -  [1.3 Installing MySQL](/how-to/mysql-master-master-replication)
+  -  [1.4 Configuring Replication](/how-to/mysql-master-master-replication)
+  -  [1.5 Testing the scenarios](/how-to/mysql-master-master-replication)
  |
 | --- |
 
 ## MySQL Master-Master Replication
 
-This article is about setting up [MySQL Master-Master database replication](http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication-multi-master.html) between two Cloud Servers. Master-Master data replication allows for replicated data, stored on multiple computers, to be updated by any authorized contributing member of the group. This allows for more open collaboration than [Master-Slave replication](/howto/set-up-mysql-master-slave-replication) where any needed changes identified by a group member must to be submitted to the designated "master" of the node.
+This article is about setting up [MySQL Master-Master database replication](http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication-multi-master.html) between two Cloud Servers. Master-Master data replication allows for replicated data, stored on multiple computers, to be updated by any authorized contributing member of the group. This allows for more open collaboration than [Master-Slave replication](/how-to/set-up-mysql-master-slave-replication) where any needed changes identified by a group member must to be submitted to the designated "master" of the node.
 
 The operating system we will use is Debian 5 (Lenny), built from the Rackspace Cloud base image.
 

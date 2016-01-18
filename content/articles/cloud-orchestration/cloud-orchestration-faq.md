@@ -10,7 +10,7 @@ product: Cloud Orchestration
 body_format: tinymce
 ---
 
-[](){#top}
+<a href="" id="top"></a>
 
 General
 -------
@@ -134,7 +134,7 @@ applications that use the credentials that you are resetting.
 After your stack has completed, you are provided with private keys and
 passwords for your cloud resources. To reset your server passwords, use
 the [Change
-Password](/howto/how-to-change-your-server-rootadmin-password-from-your-account)
+Password](/how-to/how-to-change-your-server-rootadmin-password-from-your-account)
 function.
 
 ^[back\\ to\\ top](#top)^
@@ -431,7 +431,7 @@ the application provider or community.
 
 The stack is supported at the system level with the Managed Operations
 Service Level of support. Only the software in our [Spheres of
-Support](/howto/cloud-servers-with-managed-operations-support-for-linux)
+Support](/how-to/cloud-servers-with-managed-operations-support-for-linux)
 is supported. Software installed on top of a web server or database
 server (like WordPress or Drupal) is not directly supported, bu the
 underlying system, web server, and database server are supported.

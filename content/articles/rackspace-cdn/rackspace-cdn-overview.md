@@ -55,21 +55,21 @@ The following articles provide more general information about Rackspace
 CDN:
 
 -   [Features of Rackspace
-    CDN](/howto/features-of-rackspace-cdn)
+    CDN](/how-to/features-of-rackspace-cdn)
 -   [Uses of Rackspace
-    CDN](/howto/uses-of-rackspace-cdn)
+    CDN](/how-to/uses-of-rackspace-cdn)
 -   [Limits for Rackspace
-    CDN](/howto/limits-for-rackspace-cdn)
+    CDN](/how-to/limits-for-rackspace-cdn)
 -   [Rackspace CDN
-    terminology](/howto/rackspace-cdn-terminology)
+    terminology](/how-to/rackspace-cdn-terminology)
 -   [Differences between Rackspace CDN and Rackspace Cloud
-    Files](/howto/differences-between-rackspace-cdn-and-rackspace-cloud-files)
+    Files](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
 -   [Access Rackspace
-    CDN](/howto/access-rackspace-cdn)
+    CDN](/how-to/access-rackspace-cdn)
 
 
 
-#### [&lt; Rackspace CDN User Guide](/howto/rackspace-cdn)    -    [Features of Rackspace CDN &gt;](/howto/features-of-rackspace-cdn)
+#### [&lt; Rackspace CDN User Guide](/how-to/rackspace-cdn)    -    [Features of Rackspace CDN &gt;](/how-to/features-of-rackspace-cdn)
 
 
 

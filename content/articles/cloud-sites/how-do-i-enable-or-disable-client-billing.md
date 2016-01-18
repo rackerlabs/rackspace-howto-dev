@@ -16,7 +16,8 @@ body_format: tinymce
     billing for it, follow these directions to do so:
 
 
-1. Log into your control panel at <https://manage.rackspacecloud.com>
+1. Log into your control panel at
+<a href="https://manage.rackspacecloud.com" class="uri" class="external free" title="https://manage.rackspacecloud.com">https://manage.rackspacecloud.com</a>
 
 2\. Click on "Hosting."
 

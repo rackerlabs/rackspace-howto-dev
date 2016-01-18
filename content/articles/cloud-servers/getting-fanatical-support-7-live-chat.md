@@ -22,14 +22,14 @@ it's no wonder why Rackspace is known as the home of Fanatical Support!
 way to manage your services that we have not looked at yet.  If you have
 an iPhone, iPad, or Android device, you will want to read [Getting
 Started with the Rackspace Mobile Application and Managing
-Accounts](/howto/getting-started-with-the-rackspace-mobile-application-and-managing-accounts).
+Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts).
 
 
 
 On to Next Article - [Getting Started with the Rackspace Mobile
 Application and Managing
-Accounts](/howto/getting-started-with-the-rackspace-mobile-application-and-managing-accounts)
+Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts)
 
 [Back to Getting Started with Cloud
-Servers](/howto/getting-started-with-cloud-servers-0)
+Servers](/how-to/getting-started-with-cloud-servers-0)
 

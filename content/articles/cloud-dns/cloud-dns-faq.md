@@ -13,7 +13,7 @@ body_format: tinymce
 ### Prior section
 
 [**Rackspace Cloud DNS - Additional
-Resources**](/howto/rackspace-cloud-dns-additional-resources)
+Resources**](/how-to/rackspace-cloud-dns-additional-resources)
 
 #### **Table of Contents**
 
@@ -172,7 +172,7 @@ x-headers.
     it in the XAuth-
     User x-header.
 -   [Obtain your API access
-    key](/howto/view-and-reset-your-api-key)
+    key](/how-to/view-and-reset-your-api-key)
     from the Rackspace Cloud Control Panel in the Your Account API
     Access section. Place it in the X-Auth-Key x-header.
 
@@ -247,7 +247,7 @@ to a bind9-formatted file. Currently, you will not be able to export
 zone files from MyRackspace to Cloud DNS and should contact Support to
 request a domain transfer from dedicated resources to Cloud resources.
 
-[](){#dnsservers}
+<a href="" id="dnsservers"></a>
 
 #### What are the Rackspace DNS servers?
 

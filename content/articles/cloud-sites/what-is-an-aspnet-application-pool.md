@@ -22,5 +22,5 @@ contacting support, this can be processed for you.
 For in-depth information concerning application pools, please see the
 following article:
 
-<http://www.developer.com/net/asp/article.php/2245511>
+<a href="http://www.developer.com/net/asp/article.php/2245511" class="uri" class="external free" title="http://www.developer.com/net/asp/article.php/2245511">http://www.developer.com/net/asp/article.php/2245511</a>
 

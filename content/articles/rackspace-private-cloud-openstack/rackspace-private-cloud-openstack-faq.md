@@ -11,7 +11,7 @@ body_format: markdown_w_tinymce
 ---
 
 ### Previous section
-[Getting Started with Rackspace Private Cloud - OpenStack ](/howto/rackspace-private-cloud-openstack)
+[Getting Started with Rackspace Private Cloud - OpenStack ](/how-to/rackspace-private-cloud-openstack)
 
 Rackspace Private Cloud is powered by OpenStack and delivers the agility and efficiency of a public cloud combined with the enhanced security, control and performance of a dedicated environment.  It can be deployed in your data center or ours, is managed by our OpenStack experts and backed by Fanatical Support®.  Rackspace Private Cloud gives you all the power of the cloud without the pain of running it, so you can focus on your core business.
 
@@ -165,4 +165,4 @@ The general public can download our solution templates at the following GitHub s
 Yes, Rackspace plans to continue adding new solution templates to the RPC “Solutions” tab.
 
 ### Next section
-[Spheres of Support](/howto/rackspace-private-cloud-spheres-of-support)
+[Spheres of Support](/how-to/rackspace-private-cloud-spheres-of-support)

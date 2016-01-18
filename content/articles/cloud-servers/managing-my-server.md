@@ -19,7 +19,7 @@ Two types of servers can be listed on the Cloud Servers page in the control pane
 - Next Generation Cloud Servers powered by OpenStack.
 - First Generation Cloud Servers, our legacy Cloud Server offering.
 
-For a comparison of the features of First and Next Generation Cloud Servers, see [Next-Generation Cloud Migration Considerations and Options](/howto/next-generation-cloud-servers-migration-considerations-and-options).
+For a comparison of the features of First and Next Generation Cloud Servers, see [Next-Generation Cloud Migration Considerations and Options](/how-to/next-generation-cloud-servers-migration-considerations-and-options).
 
 You can identify First Generation Cloud Servers in the control panel by the blue asterisk that follows the server name.
 
@@ -54,7 +54,7 @@ You can use the gear menu or the Actions menu to perform the following server ma
 You can rename your server or add tags (descriptive labels) to it:
 
 - Click **Rename** to change the server name.
-- Click **Add Tag** to add new tags or remove existing tags.  For more information on tags, see [Using Tags](/howto/using-cloud-servers-tags).
+- Click **Add Tag** to add new tags or remove existing tags.  For more information on tags, see [Using Tags](/how-to/using-cloud-servers-tags).
 
 
 ### Image and recover your server
@@ -90,6 +90,6 @@ For example, next to the **System Image** field, you can click **Rebuild** to re
 
 ### Related Information
 
-[Learn More About Cloud Servers](/howto/learn-more-about-cloud-servers)
+[Learn More About Cloud Servers](/how-to/learn-more-about-cloud-servers)
 
 <p>&nbsp;</p>

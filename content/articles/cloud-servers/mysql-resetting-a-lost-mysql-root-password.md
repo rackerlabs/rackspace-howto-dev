@@ -26,7 +26,7 @@ root password is easy as long as you have sudo access to the Server.
 -   [<span class="toctext">Restart</span>](#Restart)
 -   [<span class="toctext">Login</span>](#Login_2)
 
-[](){#Not_the_Server_root_user}
+<a href="" id="Not_the_Server_root_user"></a>
 
 <span class="mw-headline">Not the Server root user </span>
 ----------------------------------------------------------
@@ -38,7 +38,7 @@ The Server root user is the server's main user. The MySQL root user has
 complete control over MySQL only. The two 'root' users are not connected
 in any way.
 
-[](){#Stop_MySQL}
+<a href="" id="Stop_MySQL"></a>
 
 <span class="mw-headline">Stop MySQL </span>
 --------------------------------------------
@@ -52,7 +52,7 @@ For CentOS, Fedora, and RHEL the command is:
 
     sudo /etc/init.d/mysqld stop
 
-[](){#Safe_mode}
+<a href="" id="Safe_mode"></a>
 
 <span class="mw-headline">Safe mode</span>
 ------------------------------------------
@@ -66,7 +66,7 @@ any user being able to reset the MySQL root password:
 
 Note: The ampersand (&) at the end of the command is required.
 
-[](){#Login}
+<a href="" id="Login"></a>
 
 <span class="mw-headline">Login </span>
 ---------------------------------------
@@ -82,7 +82,7 @@ Next, instruct MySQL which database to use:
 
     use mysql;
 
-[](){#Reset_Password}
+<a href="" id="Reset_Password"></a>
 
 <span class="mw-headline">Reset Password </span>
 ------------------------------------------------
@@ -95,7 +95,7 @@ and finally, flush the privileges:
 
     flush privileges;
 
-[](){#Restart}
+<a href="" id="Restart"></a>
 
 <span class="mw-headline">Restart </span>
 -----------------------------------------
@@ -119,7 +119,7 @@ and simply stopping and starting MySQL.
     ...
     sudo /etc/init.d/mysqld start
 
-[](){#Login_2}
+<a href="" id="Login_2"></a>
 
 <span class="mw-headline">Login </span>
 ---------------------------------------

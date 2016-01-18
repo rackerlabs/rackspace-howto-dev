@@ -29,8 +29,7 @@ and selecting Cloud Sites Control Panel.*
     URL link, this identifies the technology, cluster and data center
     used for this website.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/staging_url.png){width="401"
-height="45"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/staging_url.png" width="401" height="45" />
 
 -   All content and code uploaded to the site can now be accessed with
     the test or staging url

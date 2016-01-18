@@ -17,7 +17,7 @@ have a better email sending reputation. As an additional precaution, it
 is helpful to research and consider using the following:
 
 -   [DomainKeys Identified
-    Mail (DKIM)](/howto/rackspace-cloud-dns-additional-resources)
+    Mail (DKIM)](/how-to/rackspace-cloud-dns-additional-resources)
 -   [Domain-based Message Authentication, Reporting &
     Conformance (DMARC) DNS records](http://www.dmarc.org/index.html)
 
@@ -45,7 +45,7 @@ Contents
 -   [<span class="tocnumber">5</span> <span
     class="toctext">Summary</span>](#Summary)
 
-[](){#Assumptions}
+<a href="" id="Assumptions"></a>
 
 <span class="mw-headline">Assumptions </span>
 ---------------------------------------------
@@ -55,7 +55,7 @@ The only assumptions made for these email articles are:
 1: You are running and have set up Ubuntu Hardy (The instructions may
 work on other distros but it has not been tested and is not guaranteed)
 
-[](){#Hostname}
+<a href="" id="Hostname"></a>
 
 <span class="mw-headline">Hostname </span>
 ------------------------------------------
@@ -102,7 +102,7 @@ Following on from what we are doing, replace 'cloudserver1' with
 
 Of course, replace mail.democloud.com with your domain.
 
-[](){#Reboot}
+<a href="" id="Reboot"></a>
 
 <span class="mw-headline">Reboot </span>
 ----------------------------------------
@@ -121,23 +121,23 @@ The output is now:
 
 Good start!
 
-[](){#Reverse_DNS}
+<a href="" id="Reverse_DNS"></a>
 
 <span class="mw-headline">Reverse DNS </span>
 ---------------------------------------------
 
 Now, we need to properly set the reverse DNS for the server.
 
-[](){#Change_Reverse_DNS_in_the_Control_Panel}
+<a href="" id="Change_Reverse_DNS_in_the_Control_Panel"></a>
 
 ### <span class="mw-headline">Change Reverse DNS in the Control Panel </span>
 
 Navigate to your Server's DNS tab and scroll down to the Reverse DNS
 section. Change the relevant field to the domain name which you'd like
 in the rDNS record. (See [DNS - Creating a Reverse DNS
-Record](/howto/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record"))
+Record](/how-to/create-a-reverse-dns-record-0 "DNS - Creating a Reverse DNS Record"))
 
-[](){#Check_the_Reverse_DNS}
+<a href="" id="Check_the_Reverse_DNS"></a>
 
 ### <span class="mw-headline">Check the Reverse DNS </span>
 
@@ -166,7 +166,7 @@ In this case, the output includes the correct answer:
     ;; ANSWER SECTION:
     20.84.75.208.in-addr.arpa. 3477 IN      PTR     mail.democloud.com.
 
-[](){#Summary}
+<a href="" id="Summary"></a>
 
 <span class="mw-headline">Summary </span>
 -----------------------------------------

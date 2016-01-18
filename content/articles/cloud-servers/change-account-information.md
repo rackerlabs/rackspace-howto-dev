@@ -23,8 +23,8 @@ complete them.
 
 
 
-**[](){#new_owner}Company under new ownership or tax ID changed**
------------------------------------------------------------------
+**<a href="" id="new_owner"></a>Company under new ownership or tax ID changed**
+-------------------------------------------------------------------------------
 
 If the ownership of your company has changed or the company's tax ID has
 changed, you must inform us of these changes by completing the
@@ -44,8 +44,8 @@ the Cloud Control Panel by using the following steps:
 If you are a Dedicated Hosting customer, you can request this form
 directly from your Account Manager.
 
-**[](){#changed_name}Company name changed**
--------------------------------------------
+**<a href="" id="changed_name"></a>Company name changed**
+---------------------------------------------------------
 
 If your company has filed for a name change with the Secretary of State
 where the company is registered and there was a change in tax ID,
@@ -64,8 +64,8 @@ evidence of the name change:
 Attach these forms to a support ticket with **Company Name Change
 Request** in the subject line.
 
-**[](){#changed_contact}Primary contact listed on the account is no longer with the company or no longer managing the account**
--------------------------------------------------------------------------------------------------------------------------------
+**<a href="" id="changed_contact"></a>Primary contact listed on the account is no longer with the company or no longer managing the account**
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 If you have access to the account, you can update the primary contact
 details in the **Account Settings** section in the [Cloud Control
@@ -91,8 +91,8 @@ used.</span>
 To update the billing information, including the billing address and the
 credit card on file, go to the **Billing & Payments** section.
 
-**[](){#best_practices}Best practices for legal change forms**
---------------------------------------------------------------
+**<a href="" id="best_practices"></a>Best practices for legal change forms**
+----------------------------------------------------------------------------
 
 The forms described in this guide have many required fields that must be
 completed before the Billing team can process the forms. After you have
@@ -125,10 +125,7 @@ efficiently.
 -   **Accepting Customer / Assignee** - **** In this section, provide
     the new account information.
 
-![Account details, including Transferring customer (Assignor) and
-Accepting customer (assignee)
-information](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-1.jpg){width="597"
-height="228"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-1.jpg" alt="Account details, including Transferring customer (Assignor) and Accepting customer (assignee) information" width="597" height="228" />
 
 **Page 2 - Signatures sections**
 
@@ -140,10 +137,7 @@ height="228"}
     contact or the existing contact if that is not changing.
 
 
-![Signature section details, including Transferring customer (Assignor)
-and Accepting customer (assignee)
-information](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-2.jpg){width="567"
-height="448"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-2.jpg" alt="Signature section details, including Transferring customer (Assignor) and Accepting customer (assignee) information" width="567" height="448" />
 
 Do not fill out the **RACKSPACE US, INC.** section. A Rackspace
 representative will complete this section.
@@ -162,13 +156,9 @@ representative will complete this section.
     -   **Utility Fee for Instances** - Enter the amount of the
         account's last invoice.
 
-![Cloud Instances Exhibit
-A](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-3.jpg){width="593"
-height="141"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-3.jpg" alt="Cloud Instances Exhibit A" width="593" height="141" />
 
-![Lower part of Cloud Instances Exhibit
-A](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-4.jpg){width="599"
-height="295"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/change-account-4.jpg" alt="Lower part of Cloud Instances Exhibit A" width="599" height="295" />
 
 
 

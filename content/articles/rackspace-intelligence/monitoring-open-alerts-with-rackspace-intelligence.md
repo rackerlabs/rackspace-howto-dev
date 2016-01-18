@@ -12,7 +12,7 @@ body_format: tinymce
 
 Open alerts report statuses that you have asked Rackspace Intelligence
 to monitor but not
-[suppress](/howto/working-with-notification-suppressions-in-rackspace-intelligence).
+[suppress](/how-to/working-with-notification-suppressions-in-rackspace-intelligence).
 
 You can view a list of all open alerts by clicking** Monitor** at the
 top of the Rackspace Intelligence interface and then clicking **Open

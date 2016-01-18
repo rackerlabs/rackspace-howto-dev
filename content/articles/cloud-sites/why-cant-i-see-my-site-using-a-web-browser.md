@@ -17,19 +17,19 @@ site, check the following:
 registration? If not, try uploading content to your website using the
 test FTP (ftp1.ftptoyoursite.com) and checking the changes on your test
 website. [Click
-here](/howto/using-a-staging-url)
+here](/how-to/using-a-staging-url)
 for instructions on how to use your test website.
 
 2\. Have you put files in the correct folders on the server? See [Where
 should I put my web content
-files?](/howto/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Where_should_I_put_my_web_content_%28files%29%3F")
+files?](/how-to/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Where_should_I_put_my_web_content_%28files%29%3F")
 for more information.
 
 3\. Did you upload the files in the [appropriate
-format?](/howto/should-i-upload-files-as-ascii-or-binary "/knowledge_center/index.php/Should_I_upload_files_as_ASCII_or_binary%3Fappropriate")
+format?](/how-to/should-i-upload-files-as-ascii-or-binary "/knowledge_center/index.php/Should_I_upload_files_as_ASCII_or_binary%3Fappropriate")
 
 4\. Did you [check your
-nameservers](/howto/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
+nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
 to make sure that they are pointing to Rackspaces nameservers?
 
 <span>If you have checked these points without success, </span>[contact

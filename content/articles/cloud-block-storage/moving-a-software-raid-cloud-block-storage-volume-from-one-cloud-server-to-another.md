@@ -19,7 +19,7 @@ task when you need to build to a larger General Purpose server.
 Before you can perform this task, you must have a software RAID volume.
 For information about creating a RAID volume, see [Configuring a
 Software RAID on a Linux General Purpose Cloud
-Server](/howto/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
+Server](/how-to/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
 
 ### Detach the RAID Volume
 
@@ -66,21 +66,17 @@ Actions gear next to each volume that you want to detach, and select
 
 7. In the warning pop-up box, click **Detach Volume**.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage1.png){width="586"
-height="251"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage1.png" width="586" height="251" />
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage2.png){width="620"
-height="269"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage2.png" width="620" height="269" />
 
 ### Attach the RAID Volume
 
 8\. Attach raid volume to Destination server.
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage3.png){width="626"
-height="234"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage3.png" width="626" height="234" />
 
-![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage4.png){width="627"
-height="214"}
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RAIDImage4.png" width="627" height="214" />
 
 9\. Run fdisk &ndash;l to see the device IDs of the newly attached Cloud Block
 Storage volumes.

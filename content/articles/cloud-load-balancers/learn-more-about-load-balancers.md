@@ -14,12 +14,12 @@ The Basics
 ----------
 
 [Products I Can Load
-Balance](/howto/products-i-can-load-balance "Products I Can Load Balance")
+Balance](/how-to/products-i-can-load-balance "Products I Can Load Balance")
 
 <div>
 
 [Configuring a Load
-Balancer](/howto/configure-a-load-balancer)
+Balancer](/how-to/configure-a-load-balancer)
 
 
 
@@ -29,16 +29,16 @@ Best Practices
 --------------
 
 [Load Balancing Private IPs in the Same
-Region](/howto/load-balancing-internal-ips-in-the-same-region)
+Region](/how-to/load-balancing-internal-ips-in-the-same-region)
 
 [Preventing Server
-Overload](/howto/prevent-server-overload-with-cloud-load-balancers "Preventing Server Overload")
+Overload](/how-to/prevent-server-overload-with-cloud-load-balancers "Preventing Server Overload")
 
 [Configuring a Health
-Monitor](/howto/configure-a-health-monitor-in-cloud-load-balancers "Configuring a Health Monitor")
+Monitor](/how-to/configure-a-health-monitor-in-cloud-load-balancers "Configuring a Health Monitor")
 
 [Using SSL
-Termination](/howto/cloud-load-balancers-faqs)
+Termination](/how-to/cloud-load-balancers-faqs)
 
 
 

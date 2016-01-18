@@ -17,7 +17,7 @@ corresponding RESTful API commands, and the roles that are supported.
 **[API Documentation](http://developer.rackspace.com/docs/)**
 
 **[Related Knowledge Center
-Articles](/howto/)**
+Articles](/how-to/)**
 
 **[Cloud Queues Terminology](#queues)**
 
@@ -47,14 +47,11 @@ Admin
 
 <span>GET {version}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Gets the home document.    </span>
 
@@ -64,14 +61,11 @@ height="39"}
 
 <span>GET/ </span>*{*<span>version}/queues?marker</span>*=string&*<span>limit</span>*=integer&*<span>detailed</span>*=boolean*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Lists queues.    </span> </span>
 
@@ -81,11 +75,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Creates a queue.    </span>
 
@@ -97,8 +89,7 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Deletes the queue.    </span> </span>
 
@@ -106,14 +97,11 @@ height="39"}
 
 <span>GET/ </span>*{version}/queues/{queue\_name}*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Verifies whether the specified queue exists.</span>
 
@@ -123,11 +111,9 @@ height="39"}
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Sets queue metadata.    </span> </span>
 
@@ -135,14 +121,11 @@ height="39"}
 
 <span>GET/ {version}/queues/{queue\_name}/metadata</span>
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Returns queue metadata.    </span> </span>
 
@@ -150,14 +133,11 @@ height="39"}
 
 <span>GET/ {version}/queues/{queue\_name}/stats</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Returns queue statistics.    </span> </span>
 
@@ -169,11 +149,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Posts the message or messages for the specified queue.    </span>
 
@@ -183,14 +161,11 @@ height="39"}
 {version}/queues/{queue\_name}/messages?marker=</span>*string*<span>&limit=</span>*integer*
 <span>&echo+</span>*=boolean*<span>&include\_claimed=</span>*boolean*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Gets the message or messages in the specified queue.
  </span> </span>
@@ -200,14 +175,11 @@ height="39"}
 <span>GET/
 {version}/queues/{queue\_name}/messages/{messageId}?claim\_id=</span>*string*
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span><span>Gets the specified set of messages from the specified
 queue.</span>  </span><span>   </span> </span>
@@ -219,11 +191,9 @@ class="s1">s</span><span>=</span>*string*
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Bulk-deletes for messages.</span>
 
@@ -232,14 +202,11 @@ height="39"}
 <span>GET/
 {version}/queues/{queue\_name}/messages?ids=</span>*string*<span>&claim\_id=</span>*string*
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Shows details for the specified message from the specified
 queue.</span>
@@ -251,11 +218,9 @@ queue.</span>
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Deletes the specified message from the specified queue.</span>
 
@@ -267,11 +232,9 @@ height="39"}
 
 
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Claims a set of messages from the specified queue.
  </span> </span>
@@ -280,14 +243,11 @@ height="39"}
 
 <span>GET/ {version}/queues/{queue\_name}/claims/{claimId}</span>
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span>Queries the specified claim for the specified queue.    </span>
 
@@ -297,11 +257,9 @@ height="39"}
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Updates the specified claim for the specified queue.
  </span> </span>
@@ -312,11 +270,9 @@ height="39"}
 
 
 
- ![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+ <img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
-![check](/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png){width="41"
-height="39"}
+<img src="/knowledge_center/sites/default/files/field/image/green%20checkmark_1.png" alt="check" width="41" height="39" />
 
 <span><span>Releases the specified claim for the specified queue.
  </span> </span>
@@ -324,8 +280,8 @@ height="39"}
 
 -
 
-[](){#queues}Cloud Queues Terminology
--------------------------------------
+<a href="" id="queues"></a>Cloud Queues Terminology
+---------------------------------------------------
 
 ### Message
 
@@ -343,7 +299,7 @@ only compress files.</span>
 
 ### <span> </span>
 
-[&lt; Permission Matrices for RBAC](/howto/permissions-matrix-for-role-based-access-control-rbac)
+[&lt; Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 

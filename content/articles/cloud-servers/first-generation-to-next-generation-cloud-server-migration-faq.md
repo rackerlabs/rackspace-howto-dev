@@ -10,9 +10,9 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-[](){#top}This article provides answers to frequently asked questions
-about the migration from First Generation Cloud Servers to Next
-Generation Cloud Servers. If you have additional questions about
+<a href="" id="top"></a>This article provides answers to frequently
+asked questions about the migration from First Generation Cloud Servers
+to Next Generation Cloud Servers. If you have additional questions about
 the migration, see the [migration thread in our community
 forum](https://community.rackspace.com/products/f/25/t/4787).
 
@@ -38,23 +38,23 @@ forum](https://community.rackspace.com/products/f/25/t/4787).
 
 ------------------------------------------------------------------------
 
-#### [](){#1}Why is there a migration?
+#### <a href="" id="1"></a>Why is there a migration?
 
 <span class="s1">First Generation Cloud Servers is moving to an End of
 Life status.</span>
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#2}What is the Next Generation Cloud Servers platform?
+#### <a href="" id="2"></a>What is the Next Generation Cloud Servers platform?
 
 Next Generation is the Cloud Servers environment powered by OpenStack.
 For more information about the details and features of this change, see
 [Next Generation Cloud Servers migration considerations and
-options](/howto/next-generation-cloud-servers-migration-considerations-and-options).
+options](/how-to/next-generation-cloud-servers-migration-considerations-and-options).
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#3}How will I be notified about the migration of my servers?
+#### <a href="" id="3"></a>How will I be notified about the migration of my servers?
 
 Rackspace will create a migration ticket that includes a scheduled
 migration date for your server. During the time *before* a server's
@@ -68,7 +68,7 @@ by Rackspace to the Next Generation platform.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#4}How can I migrate my server now?
+#### <a href="" id="4"></a>How can I migrate my server now?
 
 Migration batch schedules are based on the virtual server, not on the
 customer. As a customer, you might have servers in various states of
@@ -78,7 +78,7 @@ server only when that server's migration window is open.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#5}How will the migration work?
+#### <a href="" id="5"></a>How will the migration work?
 
 The public, private, and shared IP addresses of your server will remain
 the same if you schedule the migration during the migration window or if
@@ -94,7 +94,7 @@ starts and ends.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#6}What is the benefit of taking advantage of the self-migration window?
+#### <a href="" id="6"></a>What is the benefit of taking advantage of the self-migration window?
 
 The self-migration was designed to allow a server to be migrated at a
 time of your choosing within the given time period. This level of
@@ -106,7 +106,7 @@ start mid update.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#7}What happens if I wait for Rackspace to perform the migration?
+#### <a href="" id="7"></a>What happens if I wait for Rackspace to perform the migration?
 
 At the end of the self-migration window, all customers within a batch
 will be placed into a queue. There will be a degree of variability when
@@ -115,7 +115,7 @@ number of simultaneous migrations to ensure overall quality.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#8}What will happen to my backups and snapshots?
+#### <a href="" id="8"></a>What will happen to my backups and snapshots?
 
 Because of the large number of snapshots and backups, we will migrate
 snapshots and backups that are one year and under in age. We will
@@ -133,7 +133,7 @@ than 72 hours after the server has been migrated.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#9}Will my backups and snapshots stay in the same Cloud Files container?
+#### <a href="" id="9"></a>Will my backups and snapshots stay in the same Cloud Files container?
 
 No. In the Next Generation platform, backups and snapshots are located
 in a common container owned by Rackspace. This change was made because
@@ -145,15 +145,15 @@ Cloud Files rate.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#10}What about my current scheduled images or Backup Schedule?
+#### <a href="" id="10"></a>What about my current scheduled images or Backup Schedule?
 
 <span class="author-a-bjz122zpkrz76zevz87zz81zz84zz65zz86zkz79z">Backup
 schedules for First Generation servers *will not* be carried over to
 Next Generation servers. The Next Generation cloud offers several data
 backup options, including [Rackspace Cloud
-Backup](/howto/cloud-backup) and [Rackspace
+Backup](/how-to/cloud-backup) and [Rackspace
 Cloud Block
-Storage](/howto/cloud-block-storage) volume
+Storage](/how-to/cloud-block-storage) volume
 snapshots. You can schedule images, but image scheduling works
 differently than backup schedules, and may not be appropriate for all
 use cases. </span>For instance, with Scheduled Backups in the Next
@@ -189,18 +189,18 @@ needs and select the option that will best safeguard your data.</span>
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#11}What can I do to ensure a smooth transition?
+#### <a href="" id="11"></a>What can I do to ensure a smooth transition?
 
 The migration involves transferring data, so anything that you can do to
 ensure a healthy file system will make the move smoother. This includes
 performing routine maintenance and trimming log and temporary files from
 the server. The following article provides steps that you can take
 before your migration: [Preparing for a Cloud Server
-Migration](/howto/prepare-to-migrate-a-linux-server).
+Migration](/how-to/prepare-to-migrate-a-linux-server).
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#12}Will the flavor (size) of my server remain the same?
+#### <a href="" id="12"></a>Will the flavor (size) of my server remain the same?
 
 A flavor refers to the RAM, vCPU, and disk that a server is provisioned
 with. A new flavor class called Classic will be created to mirror the
@@ -211,7 +211,7 @@ will be that the server is now running on the Next Generation platform.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#13}There are less expensive flavors in Next Generation. How can I get those rates?
+#### <a href="" id="13"></a>There are less expensive flavors in Next Generation. How can I get those rates?
 
 The Next Generation environment has multiple flavor classes that are
 built around specific ratios of resources and features, and they are
@@ -222,7 +222,7 @@ server out of one environment and placing it in another.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#14}How will I be billed in Next Generation?
+#### <a href="" id="14"></a>How will I be billed in Next Generation?
 
 You will be billed at the same usage rate as you are in First
 Generation. When the migration of a server starts, the billing usage
@@ -238,7 +238,7 @@ environments.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#15}Does the API change?
+#### <a href="" id="15"></a>Does the API change?
 
 Yes. The Next Generation platform has a different API. Information about
 getting starting with the Next Generation API is located at
@@ -248,7 +248,7 @@ be updated.
 
 [&lt;back to top&gt;](#top)
 
-#### [](){#externalresources}Where are the external customer resources?
+#### <a href="" id="externalresources"></a>Where are the external customer resources?
 
 -   Official External Thread on the Rackspace Community:
     [https://community.rackspace.com/products/f/25/t/4787 ](https://community.rackspace.com/products/f/25/t/4787)

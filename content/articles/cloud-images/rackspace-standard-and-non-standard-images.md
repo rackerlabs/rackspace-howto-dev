@@ -37,4 +37,4 @@ body_format: markdown_w_tinymce
 
 <h2>How Can I Determine if an Image is Standard or Non-Standard?</h2>
 
-<p>Please see <a href="/howto/identifying-rackspace-standard-images">Identifying Rackspace Standard Images</a>.</p>
+<p>Please see <a href="/how-to/identifying-rackspace-standard-images">Identifying Rackspace Standard Images</a>.</p>

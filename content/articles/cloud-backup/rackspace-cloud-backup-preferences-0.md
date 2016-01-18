@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Rackspace Cloud Backup - System
-Actions](/howto/rackspace-cloud-backup-system-actions)
+Actions](/how-to/rackspace-cloud-backup-system-actions)
 
 Preferences
 -----------
@@ -36,9 +36,7 @@ account: Daily, Weekly, or Both.
 2.  Enter your email address.
 3.  Click the **Save Preferences** button.
 
-![RCBU
-Preferences](http://www.rackspace.com/knowledge_center/sites/default/files/field/image/rcbu_preferences.png){width="525"
-height="351"}
+<img src="http://www.rackspace.com/knowledge_center/sites/default/files/field/image/rcbu_preferences.png" alt="RCBU Preferences" width="525" height="351" />
 
 You may cancel your Daily or Weekly emails by unchecking the respective
 boxes and click **Save Preferences** button.
@@ -46,5 +44,5 @@ boxes and click **Save Preferences** button.
 ### Next steps
 
 [Rackspace Cloud Backup -
-Troubleshooting](/howto/cloud-backup-troubleshooting)
+Troubleshooting](/how-to/cloud-backup-troubleshooting)
 
