@@ -4,7 +4,7 @@ title: Permissions Matrix for Next Generation Cloud Servers
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-01-14'
+last_modified_date: '2016-01-18'
 last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce

@@ -4,8 +4,8 @@ title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-18'
+last_modified_by: Renee Rendon
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---

@@ -4,8 +4,8 @@ title: 'Upgrade SharePoint site storage: Cloud Office Control Panel'
 type: article
 created_date: '2014-04-10'
 created_by: Mawutor Amesawu
-last_modified_date: '2014-11-12'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-18'
+last_modified_by: Kyle Laffoon
 product: Microsoft SharePoint
 body_format: full_html
 ---

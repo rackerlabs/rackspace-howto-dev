@@ -4,931 +4,163 @@ title: Permissions matrix for Cloud Databases
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-01-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-18'
+last_modified_by: Nate Archer
 product: Cloud Databases
-body_format: tinymce
+body_format: markdown_w_tinymce
 ---
 
 The following permissions matrix displays specific permissions for the
 roles in Cloud Databases. The matrix displays the method names, their
 corresponding RESTful API commands, and the roles that are supported.
 
-**[API Documentation](http://docs.rackspace.com/)**
+**[API Documentation](http://developer.rackspace.com)**
 
 **[Related Knowledge Center
 Articles](/how-to/)**
 
-**[Cloud Databases Terminology](#Cloud%20Databases%20Terminology)**
 
-### <span>**Updated July 1, 2015**</span>
-
-CAPABILITY
-
-ROLE
-
-DESCRIPTION
-
-Method name
-
-API action
-
-Observer
-
-Creator
-
-Admin
-
-
-
-### VERSIONS
-
-<span>List versions</span>
-
-GET /
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists information about all versions of the API.</span>
-
-<span>List version details</span>
-
-GET /{version}
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Returns detailed information about the specified version of the
-API.</span>
-
-### DATABASE INSTANCES
-
-<span>Create a database instance</span>
-
-<span>POST /instances</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a new database instance.</span>
-
-<span>List all database instances</span>
-
-<span>GET /instances</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the status and information for all database
-instances.</span>
-
-<span>Update a database instance</span>
-
-PUT /instances/{instanceId}
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Associates a specified database instance with the configuration group.
-
-<span>List database instance status and details</span>
-
-<span>GET /instances/{instanceId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists status and details for the specified database
-instance.</span>
-
-<span>Delete a database instance</span>
-
-<span>DELETE /instances/{instanceId}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified database instance.</span>
-
-<span>Get the default configuration</span>
-
-<span>GET /instances/{instanceId}/configuration</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists the default MySQL configuration settings from the template that
-were applied to the specified instance.
-
-<span>Enable the root user</span>
-
-<span>POST /instances/{instanceId}/root</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Enables the root user for the specified database instance and
-returns the root password.</span>
-
-<span>List root-enabled status</span>
-
-<span>GET /instances/{instanceId}/root</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Returns true if the root user is enabled for the specified
-database instance or false otherwise.</span>
-
-### DATABASE INSTANCE ACTIONS
-
-<span>Restart an instance</span>
-
-<span>POST /instances/{instanceId}/action</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Restarts the database service on the specified instance.</span>
-
-<span>Resize an instance</span>
-
-<span>POST /instances/{instanceId}/action</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Resizes the memory of the specified instance.</span>
-
-<span>Resize the instance volume</span>
-
-<span>POST /instances/{instanceId}/action</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Resizes the volume attached to the instance.</span>
-
-### DATABASES
-
-<span>Create a database</span>
-
-<span>POST /instances/{instanceId}/databases</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Creates a new database <span>within the specified instance.</span>
-
-<span>List databases for an instance</span>
-
-<span>GET /instances/{instanceId}/databases</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists databases for the specified instance.</span>
-
-<span>Delete a database</span>
-
-<span>DELETE /instances/{instanceId}/databases/{databaseName}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified database.</span>
-
-### USERS
-
-<span>Create  a user</span>
-
-<span>POST /instances/{instanceId}/users</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a user for the specified database instance.</span>
-
-<span>List users a in database instance</span>
-
-<span>GET /instances/{instanceId}/users</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the users in the specified database instance.</span>
-
-<span>List a user</span>
-
-<span>GET /instances/{instanceId}/users/{name}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the specified user's name and a list of databases that the
-user can access.</span>
-
-List user access
-
-<span>GET /instances/{instanceId}/users/{name}/databases</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists user access for the specified database instance.
-
-Grant user access
-
-<span>PUT /instances/{instanceId}/users/{name}/databases</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Grants access for the specified user to one or more databases for
-the specified instance.</span>
-
-Delete user access
-
-<span>DELETE
-/instances/{instanceId}/users/{name}/databases/{database}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Removes access to the specified database for the specified
-user.</span>
-
-Delete a user
-
-<span>DELETE /instances/{instanceId}/users/{name}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified user from the specified database
-instance.</span>
-
-Change user passwords
-
-<span>PUT /instances/{instanceId}/users</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Changes the user passwords for the specified database
-instance.</span>
-
-Modify user attributes
-
-<span>PUT /instances/{instanceId}/users/{name}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Modifies one or more of the following values for the specified
-user: name, password, or the host from which the user is allowed to
-connect to the database.</span>
-
-### FLAVORS
-
-List flavors
-
-<span>GET /flavors</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists information for all available flavors.</span>
-
-List flavors by ID
-
-<span>GET /flavors/{flavorId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists information about the specified flavor.</span>
-
-List flavors for the datastore version
-
-<span>GET
-/datastores/{datastoreType}/versions/{versionId}/flavors</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists flavors for a datastore version.</span>
-
-### ON DEMAND BACKUPS
-
-**Note**: Any user calling the on demand backup operations for Cloud
-Databases must have access to Cloud Files.
-
-<span>Create a backup</span>
-
-<span>POST /backups</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a new backup for a database instance.</span>
-
-<span>Delete a backup</span>
-
-<span>DELETE </span><span>/backups/{backupId}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified backup.</span>
-
-<span>List backups</span>
-
-<span>GET </span><span>/backups</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all backups for all database instances.</span>
-
-<span>List backup by ID</span>
-
-<span>GET </span><span>/backups/{backupId}</span>
-
- <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
- <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists details about the specified backup.
-
-<span>List backups for instance</span>
-
-<span>GET /instance/{instanceId}/backups</span>
-
- <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
- <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all backups for the specified instance.</span>
-
-<span>Restore a backup</span>
-
-<span>POST /instances</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a new database instance from a backup.</span>
-
-### SCHEDULED BACKUPS
-
-**Note**: Any user calling the scheduled backup operations for Cloud
-Databases must have access to Cloud Files.
-
-Create scheduled backup
-
-POST <span>/{version}/{accountId}/schedules</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a schedule for running a backup periodically.</span>
-
-List <span>scheduled backups</span>
-
-GET <span>/{version}/{accountId}/schedules</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all scheduled backups for all database instances for an
-account.</span>
-
-List the <span>schedule for running a backup </span>
-
-GET <span>/{version}/{accountId}/schedules/{scheduleId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the specified schedule for running a backup.</span>
-
-Delete the <span>schedule for running a backup</span>
-
-DELETE <span>/{version}/{accountId}/schedules/{scheduleId}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified schedule for running a backup.</span>
-
-### REPLICATION
-
-Create a replica
-
-**Note**: Because the process of creating a replica creates a
-backup, the
-user calling the Create replica operation must have access to Cloud
-Files.
-
-POST /instances
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Creates a replica of the source instance.
-
-List all replicas and replica source database instances
-
-<span>GET /</span><span>instances</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists the status and information for all replicas or replica sources.
-
-List a replica source
-
-<span>GET /</span><span>instances{instanceId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists status and details for the specified replica source instance.
-
-List replica details
-
-<span>GET /</span><span>instances{instanceId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists status and details for the specified replica.
-
-Detach a replica
-
-<span>PATCH /</span><span>instances{instanceId}</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Detaches the specified replica instance from its replication source
-instance.
-
-List replicas for a source instance
-
-<span>GET
-/</span><span>{version}/{accountId}/instances/{instanceId}/replicas</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-Lists replicas for the specified source instance.
-
-### HIGH AVAILABILITY
-
-Create an HA database instance
-
-POST <span>/{version}/{accountId}/ha</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a new HA instance.</span>
-
-List all HA database instances
-
-GET <span>/{version}/{accountId}/ha</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all the HA database instances.</span>
-
-List HA database instance details
-
-GET <span>/{version}/{accountId}/ha/{haId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists details for a specified HA instance.</span>
-
-Delete an HA database instance
-
-DELETE <span>/{version}/{accountId}/ha/{haId}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes an HA database instance.</span>
-
-Add HCLs to an HA database instance
-
-POST <span>/{version}/{accountId}/ha/{haId}/acls</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Adds access control lists (ACLs) to an HA instance.</span>
-
-List ACLs for an HA instance
-
-GET <span>/{version}/{accountId}/ha/{haId}/acls</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists ACLs for an HA instance.</span>
-
-Delete ACLs from an HA instance
-
-DELETE <span>/{version}/{accountId}/ha/{haId}/acls/{address}</span>
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes ACLs from an HA instance.</span>
-
-Add Replica to an HA instance
-
-POST <span>/{version}/{accountId}/ha/{haId}/action</span>
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Adds a replica node to the HA group specified by {ha\_id}.</span>
-
-### CONFIGURATIONS
-
-List configurations
-
-<span>GET /configurations</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all defined configuration groups for the tenant.</span>
-
-Create a configuration
-
-<span>POST /co</span>nfigurations
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Creates a new configuration group.</span>
-
-List configuration details
-
-GET / <span>co</span>nfigurations/{configId}
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists details for the specified </span>configuration group*.*
-
-Update some configuration parameters
-
-PATCH / <span>co</span>nfigurations/{configId}
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Updates some of the configuration parameters associated with the
-specified </span>configuration group.
-
-Replace all configuration parameters
-
-PUT /<span>co</span>nfigurations/{configId}
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Replaces all the configuration parameters associated with the
-specified </span>configuration group.
-
-Delete configuration group
-
-*DELETE /*<span>co</span>nfigurations/{configId}
-
-
-
-
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Deletes the specified </span>configuration group.
-
-List instances for a configuration
-
-GET / <span>co</span>nfigurations/{configId}/instances
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists instances that are associated with the
-specified </span>configuration group.
-
-### CONFIGURATION PARAMETERS
-
-List configuration parameters
-
-<span>GET
-/datastores/{datastoreId}/versions/{versionId}/parameters</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists configuration parameters that might be configured on the
-system.</span>
-
-List configuration parameter details
-
-<span>GET
-/datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the details of a specified configuration parameter that
-might be configured on the system.</span>
-
-List configuration parameters without datastore
-
-<span>GET /datastores/versions/{versionId}/parameters</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the configuration parameters that might be configured on the
-system without specifying a datastore.</span>
-
-List configuration parameter details without datastore
-
-<span>GET
-/datastores/versions/{versionId}/parameters/</span><span>{parameterId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the details of a specified configuration parameter that
-might be configured on the system </span><span>without specifying a
-datastore.</span>
-
-List verbose default configuration parameters
-
-<span>GET /datastore/version/{versionId}/configuration/{flavorId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the default configuration parameters for a datastore version
-flavor </span><span>without specifying a datastore.</span>
-
-### DATASTORE TYPES AND VERSIONS
-
-<span>List all datastore types</span>
-
-<span>GET /datastores</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all datastore types.</span>
-
-<span>List all datastore types for a datastore</span>
-
-<span>GET /datastores/{datastoreId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all datastore types for the specified datastore.</span>
-
-<span>List all datastore versions for a datastore</span>
-
-<span>GET /datastores/{datastoreId}/versions</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists all versions for the specified datastore.</span>
-
-<span>List a version for a datastore.</span>
-
-<span>GET /datastores/{datastoreId}/versions/{versionId}</span>
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_3.png" width="41" height="39" />
-
-<span>Lists the specified datastore version for the specified
-datastore.</span>
-
-
--
-
-[]()Cloud Databases terminology
+**Updated July 1, 2015**
+
+### Versions
+
+| Method | API action | Role | Description |
+|------|---------|---|--------|
+| List versions | `GET /` | **Observer & Creator & Admin** |Lists information about all versions of the API. |
+| List version details | `GET /{version}` | 	**Observer & Creator & Admin** | Returns detailed information about the specified version of the API. |
+
+### Database Instances
+
+| Method | API action | Role | Description |
+|------|---------|---|--------|
+| Create a database instance | `POST /instances`	| **Creator & Admin** | Creates a new database instance. |
+| List all database instances |	`GET /instances`	| **Observer & Creator & Admin**	| Lists the status and information for all database instances.|
+| Update a database instance | `PUT /instances/{instanceId}` | **Creator & Admin** | Associates a specified database instance with the configuration group. |
+| List database instance status and details |	`GET /instances/{instanceId}`	| **Observer & Creator & Admin**	| `Lists status and details for the specified database instance. |
+| Delete a database instance	| `DELETE /instances/{instanceId}`	| **Admin only**  | Deletes the specified database instance. |
+| Get the default configuration | `GET /instances/{instanceId}/configuration`	| **Observer & Creator & Admin**	| Lists the default MySQL configuration settings from the template that were applied to the specified instance. |
+| Enable the root user | `POST /instances/{instanceId}/root` | **Admin only**	| Enables the root user for the specified database instance and returns the root password. |
+| List root-enabled status | `GET /instances/{instanceId}/root` | **Observer & Creator & Admin**	| Returns true if the root user is enabled for the specified database instance or false otherwise. |
+
+### Database Instance actions
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Restart an instance | `POST /instances/{instanceId}/action` | **Admin only** | Restarts the database service on the specified instance. |
+| Resize an instance | `POST /instances/{instanceId}/action`	| **Admin only** | Resizes the memory of the specified instance. |
+| Resize the instance volume |	 `POST /instances/{instanceId}/action` | **Admin only**	| Resizes the volume attached to the instance. |
+
+### Databases
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create a database |	`POST /instances/{instanceId}/databases` | **Creator & Admin** | Creates a new database within the specified instance. |
+| List databases for an instance	| `GET /instances/{instanceId}/databases`	|	**Observer & Creator & Admin** | Lists databases for the specified instance. |
+| Delete a database |	`DELETE /instances/{instanceId}/databases/{databaseName}`	| **Admin only** | Deletes the specified database. |
+
+### Users
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create  a user |	`POST /instances/{instanceId}/users` | **Creator & Admin** |	Creates a user for the specified database instance. |
+|List users a in database instance |	`GET /instances/{instanceId}/users` |	**Observer & Creator & Admin**	|	Lists the users in the specified database instance. |
+| List a user |	`GET /instances/{instanceId}/users/{name}` | **Observer & Creator & Admin**	|	Lists the specified user's name and a list of databases that the user can access. |
+| List user access |	`GET /instances/{instanceId}/users/{name}/databases` | **Observer & Creator & Admin**	|	Lists user access for the specified database instance. |
+| Grant user access |	`PUT /instances/{instanceId}/users/{name}/databases` | **Creator & Admin** | Grants access for the specified user to one or more databases for the specified instance. |
+| Delete user access |	`DELETE /instances/{instanceId}/users/{name}/databases/{database}` | **Admin only**	| Removes access to the specified database for the specified user. |
+| Delete a user	| `DELETE /instances/{instanceId}/users/{name}`	| **Admin only** | Deletes the specified user from the specified database instance. |
+| Change user passwords |	`PUT /instances/{instanceId}/users`	| **Admin only**	|	Changes the user passwords for the specified database instance. |
+| Modify user attributes |	`PUT /instances/{instanceId}/users/{name}` |	**Admin only** | Modifies one or more of the following values for the specified user: name, password, or the host from which the user is allowed to connect to the database. |
+
+### Flavors
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| List flavors |	`GET /flavors` |	**Observer & Creator & Admin** |	Lists information for all available flavors. |
+| List flavors by ID |	`GET /flavors/{flavorId}`	 |	**Observer & Creator & Admin** |	Lists information about the specified flavor. |
+| List flavors for the datastore version | `GET /datastores/{datastoreType}/versions/{versionId}/flavors` |	**Observer & Creator & Admin** |			Lists flavors for a datastore version. |
+
+### On Demand Backups
+
+**Note**: Any user calling the on demand backup operations for Cloud Databases must have access to Cloud Files.
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create a backup |	`POST /backups`	| **Creator & Admin** |	Creates a new backup for a database instance. |
+|Delete a backup|	`DELETE /backups/{backupId}` |	**Admin only** | Deletes the specified backup. |
+| List backups |	`GET /backups` |	**Observer & Creator & Admin** | Lists all backups for all database instances. |
+| List backup by ID |	`GET /backups/{backupId}` |	**Observer & Creator & Admin** | Lists details about the specified backup. |
+| List backups for instance |	`GET /instance/{instanceId}/backups` | **Observer & Creator & Admin** | Lists all backups for the specified instance.
+| Restore a backup |	`POST /instances` |	 **Creator & Admin**	| Creates a new database instance from a backup. |
+
+### Scheduled Backups
+
+**Note:** Any user calling the scheduled backup operations for Cloud Databases must have access to Cloud Files.
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create scheduled backup |	`POST /{version}/{accountId}/schedules` |	 **Creator & Admin** | Creates a schedule for running a backup periodically. |
+| List scheduled backups |	`GET /{version}/{accountId}/schedules` |	**Observer & Creator & Admin** | Lists all scheduled backups for all database instances for an account. |
+| List the schedule for running a backup | 	`GET /{version}/{accountId}/schedules/{scheduleId}` |	**Observer & Creator & Admin** | Lists the specified schedule for running a backup. |
+| Delete the schedule for running a backup. | `DELETE /{version}/{accountId}/schedules/{scheduleId}` | **Admin only** | Deletes the specified schedule for running a backup. |
+
+### Replication
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create a replica </br></br> **Note:** Because the process of creating a replica creates a backup, the user calling the Create replica operation must have access to Cloud Files. | `POST /instances` |	**Creator & Admin**	| Creates a replica of the source instance. |
+| List all replicas and replica source database instances. |	`GET /instances` | **Observer & Creator & Admin** |	Lists the status and information for all replicas or replica sources. |
+| List a replica source |	`GET /instances{instanceId}` | **Observer & Creator & Admin** |	Lists status and details for the specified replica source instance. |
+| List replica details |	`GET /instances{instanceId}` | **Observer & Creator & Admin**	| Lists status and details for the specified replica. |
+| Detach a replica |	`PATCH /instances{instanceId}` | **Creator & Admin** | Detaches the specified replica instance from its replication source instance. |
+| List replicas for a source instance |	`GET /{version}/{accountId}/instances/{instanceId}/replicas` | **Observer & Creator & Admin**	| Lists replicas for the specified source instance. |
+
+### High Availability
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| Create an HA database instance | `POST /{version}/{accountId}/ha` |	**Creator & Admin** |	Creates a new HA instance. |
+| List all HA database instances | `GET /{version}/{accountId}/ha`	|	**Observer & Creator & Admin**	|	Lists all the HA database instances. |
+| List HA database instance details | `GET /{version}/{accountId}/ha/{haId}` | **Observer & Creator & Admin**	| Lists details for a specified HA instance. |
+| Delete an HA database instance | `DELETE /{version}/{accountId}/ha/{haId}` | **Admin only** | Deletes an HA database instance. |
+| Add HCLs to an HA database instance | `POST /{version}/{accountId}/ha/{haId}/acls` | **Creator & Admin** | Adds access control lists (ACLs) to an HA instance. |
+| List ACLs for an HA instance | `GET /{version}/{accountId}/ha/{haId}/acls` | **Observer & Creator & Admin** |	Lists ACLs for an HA instance. |
+| Delete ACLs from an HA instance | `DELETE /{version}/{accountId}/ha/{haId}/acls/{address}` | **Admin only** |	Deletes ACLs from an HA instance. |
+| Add Replica to an HA instance | `POST /{version}/{accountId}/ha/{haId}/action`	| **Creator & Admin**	|	Adds a replica node to the HA group specified by {ha_id}. |
+
+### Configurations
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| List configurations |	`GET /configurations`	|	**Observer & Creator & Admin** |	Lists all defined configuration groups for the tenant. |
+| Create a configuration |	`POST /configurations` | **Creator & Admin** |	Creates a new configuration group. |
+| List configuration details |	`GET / configurations/{configId}`	| **Observer & Creator & Admin** | Lists details for the specified configuration group. |
+| Update some configuration parameters | `PATCH / configurations/{configId}` | **Creator & Admin** | Updates some of the configuration parameters associated with the specified configuration group. |
+| Replace all configuration parameters |	`PUT /configurations/{configId}` | **Creator & Admin**	|	Replaces all the configuration parameters associated with the specified configuration group. |
+| Delete configuration group | `DELETE /configurations/{configId}` | **Admin only** | Deletes the specified configuration group. |
+| List instances for a configuration | `GET / configurations/{configId}/instances` | **Observer & Creator & Admin** |	Lists instances that are associated with the specified configuration group.
+
+### Configuration Parameters
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| List configuration parameters |	`GET /datastores/{datastoreId}/versions/{versionId}/parameters` |	**Observer & Creator & Admin** | Lists configuration parameters that might be configured on the system. |
+| List configuration parameter details | `GET /datastores/{datastoreId}/versions/{versionId}/parameters/{parameterId}` |**Observer & Creator & Admin** | Lists the details of a specified configuration parameter that might be configured on the system. |
+| List configuration parameters without datastore |	`GET /datastores/versions/{versionId}/parameters` | **Observer & Creator & Admin** | Lists the configuration parameters that might be configured on the system without specifying a datastore.
+| List configuration parameter details without datastore | `GET /datastores/versions/{versionId}/parameters/{parameterId}`	|	**Observer & Creator & Admin**	|	Lists the details of a specified configuration parameter that might be configured on the system without specifying a datastore. |
+| List verbose default configuration parameters |	`GET /datastore/version/{versionId}/configuration/{flavorId}` |	**Observer & Creator & Admin** | Lists the default configuration parameters for a datastore version flavor without specifying a datastore. |
+
+### Datastore types and versions
+
+| Method | API action | Role | Description |
+|-------|---------|---|--------|
+| List all datastore types | `GET /datastores` | **Observer & Creator & Admin** |	Lists all datastore types. |
+| List all datastore types for a datastore |	`GET /datastores/{datastoreId}` |	**Observer & Creator & Admin** | Lists all datastore types for the specified datastore. |
+| List all datastore versions for a datastore |	`GET /datastores/{datastoreId}/versions` | **Observer & Creator & Admin** |	Lists all versions for the specified datastore. |
+| List a version for a datastore. |	`GET /datastores/{datastoreId}/versions/{versionId}` | **Observer & Creator & Admin**	|	Lists the specified datastore version for the specified datastore. |
+
+
+Cloud Databases terminology
 -------------------------------
 
 The following terms are used to describe Cloud Databases.
@@ -956,8 +188,4 @@ performance, scalability, availability, and manageability.
 
 
 
-[&lt; Permission Matrixes for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
+### [Permission Matrixes for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)

@@ -4,7 +4,7 @@ title: Permissions Matrix for Cloud Networks
 type: article
 created_date: '2013-08-20'
 created_by: Renee Rendon
-last_modified_date: '2016-01-11'
+last_modified_date: '2016-01-18'
 last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
