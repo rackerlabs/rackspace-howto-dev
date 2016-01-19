@@ -18,7 +18,7 @@ Control Panel interface.
     Panel](https://mycloud.rackspace.com). The Cloud Servers list opens
     by default.
 2.  Click the **Create Server** button.
-3.  In the** Identity **section enter a name for your server in
+3.  In the **Identity** section enter a name for your server in
     the **Server Name** field.
 
       ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.12.15%20AM.png)
@@ -87,7 +87,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 ### Next steps
 
-1. Saving server images
+### 1. Saving server images
 
 -   [Saving a Cloud Server
     Image](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
@@ -96,7 +96,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Snapshot
     Limitations](/how-to/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations)
 
-2. Remote access
+### 2. Remote access
 
 -   [Remote Connection from Windows to a Linux
     Server](/knowledge_center/index.php/Logging_in_via_Putty)
@@ -105,12 +105,12 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Remote Connection to a Windows Cloud Server Using
     RDP](/how-to/log-in-to-your-server-via-rdp-windows)
 
-3. Cloud Server security
+### 3. Cloud Server security
 
 -   [Basic Linux Cloud Server
     security](/how-to/rackspace-cloud-essentials-3-basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
 
-4. Uploading your content
+### 4. Uploading your content
 
 -   [CentOS - Installing
     vsftpd](/knowledge_center/index.php/CentOS_-_Installing_vsftpd)

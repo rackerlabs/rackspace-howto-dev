@@ -26,5 +26,5 @@ clusters.
     Glossary](/how-to/rackspace-cloud-big-data-service-glossary)
 -   [Cloud Big Data Platform provisioning and
     pricing](/how-to/cloud-big-data-platform-provisioning-and-pricing)
--   [What are the limits for Cloud Big
-    Data?](/how-to/what-are-the-limits-for-cloud-big-data)
+-   [Limits for Cloud Big
+    Data](/how-to/limits-for-cloud-big-data)
