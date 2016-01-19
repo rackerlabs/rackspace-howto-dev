@@ -4,8 +4,8 @@ title: Windows Server security best practices
 type: article
 created_date: '2014-07-15'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -282,7 +282,7 @@ have the best validation possible to prevent hackers from exploiting the
 web application and gaining control of the server. A good starting point
 for improving the ASP .Net security can be found at the following sites:
 
--   <http://www.asp.net/web-forms/tutorials/security>
+-   <http://www.asp.net/web-forms/pluralsight>
 -   <http://www.iis.net/configreference/system.webserver/security/requestfiltering>
 -   <http://blogs.iis.net/wadeh/archive/2008/12/18/filtering-for-sql-injection-on-iis-7-and-later.aspx>
 

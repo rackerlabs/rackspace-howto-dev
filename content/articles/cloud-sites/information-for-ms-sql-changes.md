@@ -50,11 +50,11 @@ NEW My Little Admin URL
 <tbody>
 <tr class="odd">
 <td align="left">Contains &quot;DFW1-1&quot;</td>
-<td align="left"><a href="https://mssql.dfw3-1.websitesettings.com/mla" class="uri" class="external-link">https://mssql.dfw3-1.websitesettings.com/mla</a></td>
+<td align="left"><a href="https://mssql.dfw3-1.websitesettings.com/mla" class="uri">https://mssql.dfw3-1.websitesettings.com/mla</a></td>
 </tr>
 <tr class="even">
 <td align="left">Contains &quot;DFW1-2&quot;</td>
-<td align="left"><a href="https://mssql.dfw3-2.websitesettings.com/mla" class="uri" class="external-link">https://mssql.dfw3-2.websitesettings.com/mla</a></td>
+<td align="left"><a href="https://mssql.dfw3-2.websitesettings.com/mla" class="uri">https://mssql.dfw3-2.websitesettings.com/mla</a></td>
 </tr>
 </tbody>
 </table>

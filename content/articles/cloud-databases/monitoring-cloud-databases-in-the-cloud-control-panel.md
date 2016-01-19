@@ -33,8 +33,8 @@ instance are described in the following sections:
 
 -
 
-<a href="" id="checks"></a>Checks
----------------------------------
+Checks
+----------
 
 Monitoring checks are listed on the details page of a Cloud Databases
 instance in the Cloud Control Panel.
@@ -56,7 +56,7 @@ instances:
 
 
 
-### <a href="" id="cpu-check"></a>CPU check
+### CPU check
 
 The graph for the CPU check displays how much of its available
 processing power the instance uses. It also displays minimum, maximum,
@@ -66,7 +66,7 @@ and average CPU usage for that period.
 
 
 
-### <a href="" id="file-system"></a>File system check
+### File system check
 
 The graph for the File system check displays disk usage for the Cloud
 Databases instance. The **Total** value represents the total disk space
@@ -75,7 +75,7 @@ resized.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbfilesystemgraph.png" width="561" height="229" />
 
-### <a href="" id="load-average"></a>Load average check
+### Load average check
 
 The graph for the load average check displays your instance&rsquo;s load
 average on a per-minute basis. Whereas the CPU usage graph displays
@@ -86,7 +86,7 @@ reflects overall CPU usage.
 
 
 
-### <a href="" id="memory-check"></a>Memory check
+### Memory check
 
 The graph for the memory check displays your instance&rsquo;s memory use
 (RAM). The **Total** value represents the total memory available to the
@@ -97,7 +97,7 @@ in use.
 
 
 
-### <a href="" id="network-check"></a>Network check
+### Network check
 
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
@@ -106,7 +106,7 @@ traffic in kilobytes per second.
 
 
 
-### <a href="" id="mysql-check"></a>MySQL check
+### MySQL check
 
 Graphs that report metrics for the MySQL datastore running on your
 instance will be added to the Cloud Control Panel in the future. In the
@@ -116,8 +116,8 @@ beta.
 
 
 
-<a href="" id="alarms"></a>Alarms
----------------------------------
+Alarms
+----------
 
 You can set up custom alarms that will trigger notifications when
 defined criteria are met for monitored metrics. By default Cloud
@@ -168,8 +168,8 @@ gear icon next to an existing alarm and select **Edit Criteria**.
 
 
 
-<a href="" id="alarm-criteria-examples"></a>Alarm criteria examples
--------------------------------------------------------------------
+Alarm criteria examples
+---------------------------
 
 The following sections provide example criteria for each of the Cloud
 Databases checks:

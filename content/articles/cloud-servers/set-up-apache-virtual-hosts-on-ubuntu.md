@@ -33,7 +33,7 @@ multiple domains by using *virtual hosts*.
 -   [Set directory options](#Directory)
 -   [Summary](#Summary)
 
-<a href="" id="Create_the_layout"></a>
+
 
 Create the layout
 -----------------
@@ -53,7 +53,7 @@ This example uses two domains: domain1.com and domain2.com.
         mkdir -p public_html/domain1.com/{public,private,log,cgi-bin,backup}
         mkdir -p public_html/domain2.com/{public,private,log,cgi-bin,backup}
 
-<a href="" id="index.html"></a>
+
 
 Create index.html
 -----------------
@@ -80,7 +80,7 @@ very simple HTML file so that you can check the virtual host's work.
 3.  Repeat the process so that you have a similar file for domain2.com.
     Replace all instances of `domain1.com` with `domain2.com`.
 
-<a href="" id="Virtual_Hosts"></a>
+
 
 Define virtual hosts
 --------------------
@@ -88,7 +88,7 @@ Define virtual hosts
 Now you have a basic structure for your two domains, you can define two
 virtual hosts.
 
-<a href="" id="NameVirtualHost"></a>
+
 
 ### Review NameVirtualHost
 
@@ -129,7 +129,7 @@ for HTTP requests made on any available interface (\*) at port 80.
 'ports.conf' is new to Ubuntu's Apache layout; prior Ubuntu releases
 placed a similar setting in the default vhost.
 
-<a href="" id="Custom_Virtual_Hosts"></a>
+
 
 ### Define custom virtual hosts
 
@@ -166,7 +166,7 @@ The contents looks as follows:
       ErrorLog /var/log/apache2/error-mydomainname.com.log
       CustomLog /var/log/apache2/access-mydomainname.com.log combined
 
-<a href="" id="a2ensite"></a>
+
 
 Enable the site
 ---------------
@@ -183,7 +183,7 @@ Run the recommended command:
 
     sudo /etc/init.d/apache2 reload
 
-<a href="" id="Navigate"></a>
+
 
 Navigate to the site
 --------------------
@@ -218,7 +218,7 @@ site in a web browser on your local computer:
 
 The contents of public/index.html file is shown.
 
-<a href="" id="ServerAlias"></a>
+
 
 Use the ServerAlias
 -------------------
@@ -231,7 +231,7 @@ set up correctly, you can also use that address:
 We'll talk about forcing one address or the other in a later article
 about rewrite rules.
 
-<a href="" id="Repeat_as_necessary"></a>
+
 
 Repeat the process for the other domain
 ---------------------------------------
@@ -258,7 +258,7 @@ To create and enable domain2.com, repeat the process as follows:
 
 You should see the 'domain2.com' index file.
 
-<a href="" id="Log_Files"></a>
+
 
 View log files
 --------------
@@ -273,7 +273,7 @@ The output is exactly as expected:
 
     access.log  error.log
 
-<a href="" id="Default"></a>
+
 
 Default vhost file
 ------------------
@@ -299,7 +299,7 @@ This is something to consider when planning your websites. Do you want a
 particular domain to be the default? Do you want the IP address to have
 completely different content?
 
-<a href="" id="Email"></a>
+
 
 Set the admin email address
 ---------------------------
@@ -311,7 +311,7 @@ section, [Define Apache footers](#Apache_Footers).)
 
     ServerAdmin webmaster@domain.com
 
-<a href="" id="Domain_Name"></a>
+
 
 Set the domain name
 -------------------
@@ -327,7 +327,7 @@ domain.com and domain.net point to the same content.
 will serve the same content (assuming you have set the DNS to point to
 your Cloud Server IP).
 
-<a href="" id="Index_Files"></a>
+
 
 Define the index file
 ---------------------
@@ -342,7 +342,7 @@ directed to an alternate page or to a nonstandard home page.
 might go directly to a nonspecified page, such as domain.com/index.php,
 while the DirectoryIndex value works only for those entering domain.com.
 
-<a href="" id="Documents"></a>
+
 
 Define the documents path
 -------------------------
@@ -352,7 +352,7 @@ name.
 
     DocumentRoot /home/demo/public_html/domain.com/public
 
-<a href="" id="Log_Files_2"></a>
+
 
 Set the log files
 -----------------
@@ -363,7 +363,7 @@ Set the log levels and the location for the virtual hosts' log files.
     ErrorLog  /var/log/apache2/error-mydomainname.com.log
     CustomLog /var/log/apache2/access-mydomainname.com.log combined
 
-<a href="" id="Error_Documents"></a>
+
 
 Define error documents
 ----------------------
@@ -382,7 +382,7 @@ If error messages are not defined, Apache generates its own error pages.
 Custom error pages are more user friendly and can be customized as much,
 or as little, as you want.
 
-<a href="" id="Apache_Footers"></a>
+
 
 Define Apache footers
 ---------------------
@@ -401,7 +401,7 @@ Apache configuration \#2 NEED LINK article for more details.
 If ServerSignature is set to **Email**, the ServerAdmin email will be
 displayed.
 
-<a href="" id="cgi-bin"></a>
+
 
 Enable cgi-bin
 --------------
@@ -415,7 +415,7 @@ want.
       Options +ExecCGI
     </Location>
 
-<a href="" id="Directory"></a>
+
 
 Set directory options
 ---------------------
@@ -428,7 +428,7 @@ domain.com.
 
 Following are other options that you can set:
 
-<a href="" id="Directory_Browsing"></a>
+
 
 ### Directory browsing option
 
@@ -437,7 +437,7 @@ browsing, use +Indexes.
 
     Options -Indexes
 
-<a href="" id="SSI"></a>
+
 
 ### SSI option
 
@@ -446,7 +446,7 @@ it.
 
     Options -Includes
 
-<a href="" id="Symlinks"></a>
+
 
 ### Symlinks option
 
@@ -463,7 +463,7 @@ of the target file or directory (in terms of Linux filesystem
 ownership/permissions). This prevents many of the security risks that a
 simple FollowSymlinks directive can create.
 
-<a href="" id=".htaccess"></a>
+
 
 ### .htaccess option
 
@@ -498,7 +498,7 @@ from external sources:
 &lt;/SatisfyAll&gt; ** with **Order Allow,Deny | Deny from all | Satisfy
 all**.
 
-<a href="" id="No_Options"></a>
+
 
 ### No Options
 
@@ -506,7 +506,7 @@ Specify None to turn off all the available options.
 
     Options None
 
-<a href="" id="Hierarchy"></a>
+
 
 ### Options hierarchy
 
@@ -524,7 +524,7 @@ The first directory setting would turn off all options and disable
 However, the second directory setting would override the first and allow
 .htaccess support for the domain.com/public directory.
 
-<a href="" id="Summary"></a>
+
 
 Summary
 -------

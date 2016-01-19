@@ -26,11 +26,11 @@ and selecting Cloud Sites Control Panel.
 **Procedure**
 
 -   Review the mojoPortal Installation reference
-    <a href="http://www.mojoportal.com/installation-quick-start.aspx" class="uri" class="external free" title="http://www.mojoportal.com/installation-quick-start.aspx">http://www.mojoportal.com/installation-quick-start.aspx</a>
--   Login to the
-    <a href="http://manage.rackspacecloud.com/pages/Login.jsp%7C" class="external text" title="http://manage.rackspacecloud.com/pages/Login.jsp|">Cloud Sites Control Panel</a>
--   If you are new to Rackspace Cloud, please refer to
-    <a href="/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website" class="external text" title="Adding a new website">Adding a new website</a>
+    <http://www.mojoportal.com/installation-quick-start.aspx>
+-   Login to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com/pages/Login.jsp%7C "http://manage.rackspacecloud.com/pages/Login.jsp|")
+-   If you are new to Rackspace Cloud, please refer to [Adding a new
+    website](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website "Adding a new website")
 -   Navigate the Hosting-&gt;Cloud Sites menu to the website hyperlink
     on which mojoPortal is to be installed.
 
@@ -39,15 +39,17 @@ database Feature selected. The database feature can be added by using
 the CHANGE PLAN hyperlink on the domain **General Settings** tab.
 
 -   Upload the uncompressed files from the local repository to the
-    desired location on the website using FTP - Refer to
-    <a href="/how-to/getting-started-with-cloud-sites-uploading-your-content" class="external text" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP">Upload content to a website using FTP</a>.
+    desired location on the website using FTP - Refer to [Upload content
+    to a website using
+    FTP](/how-to/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP").
     (We will assume you are using the primary ftp user name for
     the account.)
 
 <!-- -->
 
--   Next create a new MSSQL database (Refer to \*
-    <a href="/how-to/rackspace-cloud-sites-essentials-mysql-databases" class="external text" title="/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain">Add a MSSQL database to a website or domain</a>).
+-   Next create a new MSSQL database (Refer to \* [Add a MSSQL database
+    to a website or
+    domain](/how-to/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain")).
 -   Note the database information a) database name b) user name c)
     password d) hostname (not localhost) for use during the mojoPortal
     installation
@@ -61,8 +63,8 @@ environment.
 -   Copy the file Web.mediumtrust.config to file Web.config in the
     /web/content/ directory
 -   Modify the Web.config file to add the Impersonate directive. Refer
-    to
-    <a href="/how-to/add-impersonation-to-your-aspnet-cloud-site" class="external text" title="/knowledge_center/index.php/How_do_I_add_impersonation_to_my_ASP.NET_site%3F">Add impersonation to your ASP.NET site</a>.
+    to [Add impersonation to your ASP.NET
+    site](/how-to/add-impersonation-to-your-aspnet-cloud-site "/knowledge_center/index.php/How_do_I_add_impersonation_to_my_ASP.NET_site%3F").
 -   Copy the file user.config.sample to user.config in the
     /web/content/ directory. Modify the connection string with MSSQL
     database information noted during the preparation phase.
@@ -72,8 +74,9 @@ environment.
 
      <add key="MSSQLConnectionString" value="server=mssql0804.wc1\inst2;UID=3xxxx_mojo;PWD=XXXX;database=3xxxx_mojo" />
 
--   Verify that logging is turned on if needed. Refer to
-    <a href="/how-to/enabling-raw-logging-for-a-cloud-sites-website" class="external text" title="/knowledge_center/index.php/Enabling_logging_for_a_website">Enable logging for a website</a>
+-   Verify that logging is turned on if needed. Refer to [Enable logging
+    for a
+    website](/how-to/enabling-raw-logging-for-a-cloud-sites-website "/knowledge_center/index.php/Enabling_logging_for_a_website")
 -   mojoPortal is fully functional and can be accessed with the
     domain URL. e.g. visit: http://asp.example.com
     -   If DNS is not setup for the domain, visit the Testing

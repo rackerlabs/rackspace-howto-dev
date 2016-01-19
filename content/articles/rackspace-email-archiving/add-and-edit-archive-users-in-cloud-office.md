@@ -55,8 +55,8 @@ This article contains the following tasks:
 -   [Add multiple archive users](#addMultipleusers)
 -   [Edit archive user settings](#editUsersettings)
 
-<a href="" id="addOneuser"></a>Add an archive user
---------------------------------------------------
+Add an archive user
+-----------------------
 
 Use the following steps to add individual users to the Archive Manager.
 
@@ -111,8 +111,8 @@ Use the following steps to add individual users to the Archive Manager.
 
 10. Click **Add user and send welcome message**.
 
-<a href="" id="addMultipleusers"></a>Add multiple archive users
----------------------------------------------------------------
+Add multiple archive users
+------------------------------
 
 Use the following steps to add multiple users to the Archive Manager.
 
@@ -145,8 +145,8 @@ Use the following steps to add multiple users to the Archive Manager.
 8.  Click **Process list and send welcome message**.
 
 
-<a href="" id="editUsersettings"></a>Edit archive user settings
----------------------------------------------------------------
+Edit archive user settings
+------------------------------
 
 To edit the settings for an archive user, select the user name from
 the **Users** list and click **Edit**. Edit specific user information as

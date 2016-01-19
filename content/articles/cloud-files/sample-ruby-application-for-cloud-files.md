@@ -10,7 +10,7 @@ product: Cloud Files
 body_format: tinymce
 ---
 
-<a href="" id="Simple_Ruby_Application"></a>
+
 
 <span class="mw-headline">Sample Ruby Application </span>
 ---------------------------------------------------------

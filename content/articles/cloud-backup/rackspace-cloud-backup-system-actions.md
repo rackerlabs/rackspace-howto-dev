@@ -48,7 +48,7 @@ The System Actions menu offers the following actions:
 
 <div>
 
-#### <a href="" id="createbackup"></a>Create Backup
+#### Create Backup
 
 </div>
 
@@ -70,7 +70,7 @@ in this guide.
 
 <div>
 
-#### <a href="" id="restorebackup"></a>Restore Backup
+#### Restore Backup
 
 </div>
 
@@ -92,7 +92,7 @@ in this guide.
 
 <div>
 
-#### <a href="" id="encryptsystem"></a>Encrypt System
+#### Encrypt System
 
 </div>
 
@@ -147,7 +147,7 @@ You can change your passphrase for encryption as follows:
 
 <div>
 
-#### <a href="" id="cleanupsystem"></a>Cleanup System
+#### Cleanup System
 
 </div>
 
@@ -167,7 +167,7 @@ space in your Cloud Files account, where you backups are stored.
 
 <div>
 
-#### <a href="" id="disablesystem"></a>Disable System
+#### Disable System
 
 </div>
 
@@ -183,7 +183,7 @@ re-enable the system, select Enable System from the System Actions menu.
 
 <div>
 
-#### <a href="" id="deletesystem"></a>Delete System
+#### Delete System
 
 </div>
 

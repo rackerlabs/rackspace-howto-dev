@@ -4,17 +4,15 @@ title: Rackspace Cloud Backup - Install the agent on Linux
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
-last_modified_date: '2016-01-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-19'
+last_modified_by: Kelly Holcomb
 product: Cloud Backup
 body_format: tinymce
 ---
 
-<a href="" id="backtotop"></a>
 
-### Previous section
 
-[Rackspace Cloud Backup -
+**Previous section:** [Rackspace Cloud Backup -
 Overview](/how-to/rackspace-cloud-backup-overview)
 
 The following instructions are for the installation of the Rackspace
@@ -31,31 +29,17 @@ Rackspace Cloud. Exceptions are FreeBSD 9 (not supported) and Debian 5
 use an alternate method to backup your data. Also note that 32-bit
 servers and agents on Linux are not supported.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><h2 id="contents">Contents</h2>
-<p><a href="#installagent"><strong>1. Install the agent</strong></a></p>
-<ul>
-<li><a href="#apt">Install the agent on APT-based systems, such as Ubuntu and Debian</a></li>
-<li><a href="#rpm">Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat</a></li>
-<li><a href="#arch">Install the agent on Arch, Gentoo, and SUSE systems</a></li>
-</ul>
-<p><a href="#troubleshoot"><strong>2. Troubleshooting</strong></a></p>
-<ul>
-<li><a href="#connection">Connection error</a></li>
-<li><a href="#status">Status codes</a></li>
-<li><a href="#agent">Agent logs</a></li>
-</ul>
-<p><a href="#uninstalllinux"><strong>3. Uninstall the agent from Linux</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
-
+-   [Install the agent](#installagent)
+    -   [Install the agent on APT-based systems, such as Ubuntu and
+        Debian](#apt)
+    -   [Install the agent on RPM-based systems, such as CentOS, Fedora,
+        and Red Hat](#rpm)
+    -   [Install the agent on Arch, Gentoo, and SUSE systems](#arch)
+-   [Troubleshooting](#troubleshoot)
+    -   [Connection error](#connection)
+    -   [Status codes](#status)
+    -   [Agent logs](#agent)
+-   [Uninstall the agent from Linux](#uninstalllinux)
 
 Install the agent
 -----------------

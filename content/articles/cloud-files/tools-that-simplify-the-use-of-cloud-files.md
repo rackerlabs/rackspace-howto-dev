@@ -14,11 +14,11 @@ There are several tools available for use with Cloud Files:
 
 -   Rackspace tools, such as the Control Panel and Jungledisk.
 -   Third-party community tools, such as Cyberduck. For more
-    information, go to
-    <a href="https://cloudtools.rackspace.com/home" class="external text" title="https://cloudtools.rackspace.com/home">Cloud Tools</a>.
+    information, go to [Cloud
+    Tools](https://cloudtools.rackspace.com/home "https://cloudtools.rackspace.com/home").
 -   Third-party commercial tools, such as CloudPlug from CTERA Networks.
-    <span>For more information,
-    go </span><span>to</span> <a href="https://cloudtools.rackspace.com/home" class="external text" title="https://cloudtools.rackspace.com/home">Cloud Tools</a>.
+    <span>For more information, go </span><span>to</span> [Cloud
+    Tools](https://cloudtools.rackspace.com/home "https://cloudtools.rackspace.com/home").
 
 <div class="printfooter">
 

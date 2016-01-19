@@ -16,7 +16,7 @@ following steps:
 -   [Install the Blueflood Statsd backend engine](#blueflood)
 -   [Integrate with Rackspace Metrics](#integrate)
 
-### <a href="" id="blueflood"></a>Install the Blueflood Statsd backend engine
+### Install the Blueflood Statsd backend engine
 
 Clone the statsd repository by typing the following at a command-line
 interface:
@@ -75,7 +75,7 @@ us the 0d out values, is unexpected in some cases.
         }
     }
 
-### <a href="" id="integrate"></a>Integrate with Rackspace Metrics
+### Integrate with Rackspace Metrics
 
 Add your Rackspace Username and Api Key to the config. If the keys are
 present, the metrics will be sent to the Rackspace Metrics endpoint. If

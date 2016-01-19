@@ -15,7 +15,7 @@ Follow the instructions below to restore your MSSQL database.
 -   **Note: The Rackspace Cloud recommends using Internet Explorer when
     managing your MSSQL databases via myLittleAdmin.**
 
-<a href="" id="Restoring_Your_MSSQL_Database"></a>
+
 
 <span class="mw-headline">Restoring Your MSSQL Database</span>
 --------------------------------------------------------------
@@ -81,7 +81,7 @@ Follow the instructions below to restore your MSSQL database.
     Review the statements in the message and if you agree, click OK
     to continue.
 
-<a href="" id="Finish_Line"></a>
+
 
 <span class="mw-headline">Finish Line</span>
 --------------------------------------------

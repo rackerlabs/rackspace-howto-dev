@@ -24,8 +24,8 @@ point the domain to a website at a later date.
 To register a parked domain with Cloud Sites
 --------------------------------------------
 
-1.  Log in to the
-    <a href="http://manage.rackspacecloud.com" class="external free" title="http://manage.rackspacecloud.com">Cloud Sites Control Panel</a>.
+1.  Log in to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
 2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Click **Add A Site**.
 4.  In the Add a New Website dialog box, select the site owner and enter

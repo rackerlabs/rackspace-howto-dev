@@ -4,580 +4,275 @@ title: Rackspace Monitoring - FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-01-11'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Monitoring
-body_format: full_html
+body_format: markdown_w_tinymce
 ---
 
-<a href="" id="top"></a>
+<h2>Getting Started</h2>
 
-Getting Started
----------------
+<h3>How many zones can I monitor my resources from?</h3>
 
-### How many zones can I monitor my resources from?
+<p>There are six monitoring zones:</p>
 
-There are six monitoring zones:
+<ul>
+     <li>Blacksburg (IAD)</li>
+     <li>Dallas-Fort Worth (DFW)</li>
+     <li>Chicago (ORD)</li>
+     <li>London (LON)</li>
+     <li>Hong Kong (HKG)</li>
+     <li>Sydney (SYD)</li>
+</ul>
 
--   Blacksburg (IAD)
--   Dallas-Fort Worth (DFW)
--   Chicago (ORD)
--   London (LON)
--   Hong Kong (HKG)
--   Sydney (SYD)
+<p>Using multiple monitoring zones eliminates the need for maintenance and upgrade downtime, as well as ensures your monitoring services remain uninterrupted even in the event of a datacenter failure. You can find an up-to-date list of monitoring zones in the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-index">Rackspace Monitoring Developer Guide</a>.</p>
 
-Using multiple monitoring zones eliminates the need for maintenance and
-upgrade downtime, as well as ensures your monitoring services remain
-uninterrupted even in the event of a datacenter failure. You can find an
-up-to-date list of monitoring zones in the [Rackspace Monitoring
-Developer
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-index).
+<h3>What are the various terms I need to know when using Rackspace Monitoring?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>For more information, see the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-concepts">Concepts</a> section in the Rackspace Monitoring Developer Guide.</p>
 
-### What are the various terms I need to know when using Rackspace Monitoring?
+<h3>How do I configure my monitoring system?</h3>
 
-For more information, see the [back to
-top](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-concepts%3EConcepts%3C/a%3E%20section%20in%20the%20Rackspace%20Monitoring%20Developer%20Guide.%3C/p%3E%0A%0A%3Cp%3E%3Csup%3E%3Ca%20href=)
+<p>Rackspace Monitoring is an API-based system. You can access it using the following methods:</p>
 
-### How do I configure my monitoring system?
+<ul>
+	<li><a href="/how-to/available-checks-for-rackspace-monitoring">Cloud Control Panel</a></li>
+	<li><a href="/how-to/getting-started-with-rackspace-monitoring-cli">raxmon command line inteface (CLI)</a></li>
+	<li><a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/">Rackspace Monitoring API</a></li>
+</ul>
 
-Rackspace Monitoring is an API-based system. You can access it using the
-following methods:
+<p>To set a monitoring check using the Cloud Control Panel, log into the Control Panel and go the Server Details page of a Cloud Server. Then scroll down to the Monitoring Checks section and click Create Check.</p>
 
--   [Cloud Control
-    Panel](/how-to/available-checks-for-rackspace-monitoring)
--   [raxmon command line
-    inteface (CLI)](/how-to/getting-started-with-rackspace-monitoring-cli)
--   [Rackspace Monitoring
-    API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
+<p>If you would like to practice setting up a monitoring check&nbsp;using the CLI, consult the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-getting-started">Rackspace Monitoring Getting Started Guide</a>.</p>
 
-To set a monitoring check using the Cloud Control Panel, log into the
-Control Panel and go the Server Details page of a Cloud Server. Then
-scroll down to the Monitoring Checks section and click Create Check.
+<p>For a complete list of Rackspace Monitoring API endpoints, see the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/">Rackspace Monitoring Developer's Guide</a>.</p>
 
-If you would like to practice setting up a monitoring check using the
-CLI, consult the [Rackspace Monitoring Getting Started
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-getting-started).
+<h3>What are the ways to receive an alert when my website is down?</h3>
 
-For a  complete list of Rackspace Monitoring API endpoints, see
-the [Rackspace Monitoring Developer's
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
+<p>We currently support email, SMS, PagerDuty, VictorOps and webhook. You can find the most up-to-date information in the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notification-type-operations">Notification types</a> section in the Rackspace Monitoring Developer's Guide.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What does Rackspace Monitoring actually monitor?</h3>
 
-### What are the ways to receive an alert when my website is down?
+<p>Anything with a URL or an IP address that is not blocked by a firewall. You can find more information in the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/check-operations">Checks</a> section in the Rackspace Monitoring Developer's Guide.</p>
 
-We currently support email, SMS, PagerDuty, VictorOps and webhook. You
-can find the most up-to-date information in the [Notification
-types](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notification-type-operations)
-section in the Rackspace Monitoring Developer's Guide.
+<h3>What do I need Rackspace Monitoring?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>As the complexity of your business increases with the number of products, customers, websites, etc., there is an increasing possibility of one or more of your resources suffering from a variety of system failures. Learning of a problem from your customers means that you’ve already lost business, and your customers are already having a negative experience using your website or application. Preventing this is what Rackspace Monitoring is all about.</p>
 
-### What does Rackspace Monitoring actually monitor?
+<h3>What is Rackspace Monitoring?</h3>
 
-Anything with a URL or an IP address that is not blocked by a firewall.
-You can find more information in the
-[Checks](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/check-operations)
-section in the Rackspace Monitoring Developer's Guide.
+<p>Rackspace Monitoring is an API driven cloud service built for infrastructure monitoring. It offers a simple yet powerful feature-set, allowing extreme flexibility in configuration and execution.  Very simply, we help answer the question, “Is my service up and running?” To do that, we have two simple objectives; to alert the resource owner before their customer knows, and to take measure against allowing the system to go down in the first place.</p>
 
-^[back\\ to\\ top](#top)^
+---------
+<h2>Account Services</h2>
 
-### What do I need Rackspace Monitoring?
+<h3>Can I use a UK account as well as a US account?</h3>
 
-As the complexity of your business increases with the number of
-products, customers, websites, etc., there is an increasing possibility
-of one or more of your resources suffering from a variety of system
-failures. Learning of a problem from your customers means that you&rsquo;ve
-already lost business, and your customers are already having a negative
-experience using your website or application. Preventing this is what
-Rackspace Monitoring is all about.
+<p>Yes, you can use both US and UK accounts. This is a global system that works with both identities. Use the identity server where your tenant lives and pass that token and tenantId to the Rackspace Monitoring system.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What is High Availability?</h3>
 
-### What is Rackspace Monitoring?
+<p>High availability is a feature unique to Rackspace Monitoring. Because we provide Monitoring as a Service hosted in the cloud, we are able to keep that service up and running without any downtime. When implementing improvements to the system, we can take a region down for an upgrade, even lose another data center due to a localized disaster or event, and Rackspace Monitoring will continue to monitor your resources and send you notifications.</p>
 
-Rackspace Monitoring is an API driven cloud service built for
-infrastructure monitoring. It offers a simple yet powerful feature-set,
-allowing extreme flexibility in configuration and execution. Very
-simply, we help answer the question, &ldquo;Is my service up and running?&rdquo; To
-do that, we have two simple objectives; to alert the resource owner
-before their customer knows, and to take measure against allowing the
-system to go down in the first place.
+<h3>Where can I tell Rackspace about features I would like added or issues I discover while using Rackspace Monitoring?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>Please let us know of any features you would like added or any issues you find via the <a href="https://feedback.rackspace.com/">Rackspace Product Feedback</a> forums. For more immediate assistance with a time-sensitive issue, please file a ticket or contact your account team.</p>
 
-------------------------------------------------------------------------
+<h3>Will you support SNMP traps?</h3>
 
-Account Services
-----------------
+<p>Not yet, but we are planning on starting in the near future.</p>
 
-### Can I use a UK account as well as a US account?
+---------
+<h2>Notification Plans</h2>
 
-Yes, you can use both US and UK accounts. This is a global system that
-works with both identities. Use the identity server where your tenant
-lives and pass that token and tenantId to the Rackspace Monitoring
-system.
+<h3>What is a notification plan?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>A notification plan contains a set of actions that Rackspace Monitoring executes when triggered by an alarm. You may have multiple notification plans in your cloud account.</p>
 
-### What is High Availability?
+<h3>How are notifications used?</h3>
 
-High availability is a feature unique to Rackspace Monitoring. Because
-we provide Monitoring as a Service hosted in the cloud, we are able to
-keep that service up and running without any downtime. When implementing
-improvements to the system, we can take a region down for an upgrade,
-even lose another data center due to a localized disaster or event, and
-Rackspace Monitoring will continue to monitor your resources and send
-you notifications.
+<p>Each monitoring check can reference one notification plan. When an alarm for that check triggers the critical state, the notification plan associated with the check is used.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What does the default notification plan, Technical Contracts - Email, do?</h3>
 
-### Where can I tell Rackspace about features I would like added or issues I discover while using Rackspace Monitoring?
+<p>If you do not set up a custom notification plan, then by default, email is sent to all of the technical contacts on your account. If your account lists no technical contacts, then the primary contact is emailed. You can view the list of contacts for your account on the User Management Page in the <a href="https://mycloud.rackspace.com">Cloud Control Panel</a>.</p>
 
-Please let us know of any features you would like added or any issues
-you find via the [Rackspace Product
-Feedback](https://feedback.rackspace.com/) forums. For more immediate
-assistance with a time-sensitive issue, please file a ticket or contact
-your account team.
+<h3>What does the Rackspace Managed Notifications plan do?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>It creates a support ticket within your account. This feature is available only to customers with a Managed Operations service level. </p>
 
-### Will you support SNMP traps?
+<h3>How do I set up a custom notification plan?</h3>
 
-Not yet, but we are planning on starting in the near future.
+<p>You can use the Rackspace Monitoring API. For instructions, see the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/">Rackspace Monitoring Developer Guide</a>.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>Where can I download the Rackspace Monitoring CLI?</h3>
 
-------------------------------------------------------------------------
+<p>You can find the download for the Rackspace Monitoring CLI on the <a href="https://pypi.python.org/pypi/rackspace-monitoring-cli/0.4.5">Python website</a>.</p>
 
-Notification Plans
-------------------
+<h3>Where can I find the API documentation for Rackspace Monitoring notification plans?</h3>
 
-### What is a notification plan?
+<p>You can find information about Rackspace Monitoring <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notification-plans-operations">notification plans</a> in the Rackspace Monitoring Developer Guide.</p>
 
-A notification plan contains a set of actions that Rackspace Monitoring
-executes when triggered by an alarm. You may have multiple notification
-plans in your cloud account.
+---------
+<h2>Monitoring and Troubleshooting</h2>
 
-^[back\\ to\\ top](#top)^
+<h3>Aren't my cloud resources already being monitored?</h3>
 
-How are notifications used?
+<p>We will only notify you when there is a problem with our infrastructure that impacts your Cloud resource. We do not run monitoring checks on your individual Cloud Servers, Cloud Load Balancers, or websites to verify functionality.  This leaves a lot of exposure in situations where the infrastructure is working fine, but a given application or resource in your Cloud setup has stopped functioning correctly, leaving your site performance degraded, or totally inaccessible.</p>
 
-Each monitoring check can reference one notification plan. When an alarm
-for that check triggers the critical state, the notification plan
-associated with the check is used.
+<h3>What kind of additional monitoring is available for my cloud resources?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>It can take a lot of administrative overhead in order to correctly configure and maintain a robust monitoring application.  If there is no built-in redundancy for the monitoring application, you could lose all monitoring services if the server hosting your monitoring application runs into trouble.  A simpler option, with built-in redundancy, is to use the newly available Rackspace Monitoring service.  It provides you with four key pieces of information that can help you manage your business as well as address and prevent infrastructure problems before they affect your customers.</p>
 
-### What does the default notification plan, Technical Contracts - Email, do?
+<h3>How do I set up Rackspace Monitoring?</h3>
 
-If you do not set up a custom notification plan, then by default, email
-is sent to all of the technical contacts on your account. If your
-account lists no technical contacts, then the primary contact is
-emailed. You can view the list of contacts for your account on the User
-Management Page in the [Cloud Control
-Panel](https://mycloud.rackspace.com).
+<p>Rackspace Monitoring is released through the cloud without need for software installation on servers or computers. By eliminating the need for installation, Rackspace can upgrade the monitoring service without involving the customer. This process hides the complexity of the upgrade and maintenance processes from the customer, giving them a simple and reliable experience.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>Can I view historical metrics for monitoring checks?</h3>
 
-### What does the Rackspace Managed Notifications plan do?
+<p>You can access metrics for a check directly by using the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/metrics-operations">Rackspace Monitoring API</a>.  You can also access metrics by using the <a href="https://intelligence.rackspace.com/">Rackspace Intelligence portal</a>.</p>
 
-It creates a support ticket within your account. This feature is
-available only to customers with a Managed Operations service level.
+<h3>How do I submit commands through the Rackspace Monitoring API?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>As with any commands you will submit to your Cloud resources through the API, you must first authenticate through the API in order for the commands to be correctly processed.</p>
 
-### How do I set up a custom notification plan?
+<p>In our <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/">Rackspace Monitoring Developer Guide</a>, we show the detailed configuration options available with this service offering, and the necessary components to build functioning monitoring checks.  This will require you to work with the following components:</p>
 
-You can use the Rackspace Monitoring API. For instructions, see the
-[Rackspace Monitoring Developer
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
+<ul>
+     <li>Account - An account contains attributes describing your account. This description contains mostly read only data; however, a few properties can be modified with the API.</li>
+     <li>Entities - An entity is a resource that you want to monitor. Some examples are a server, a website, or a service.</li>
+     <li>Checks  - Checks explicitly specify how you want to monitor an entity.</li>
+     <li>Check Types - These are the available service monitoring checks that you can configure, such as PING, HTTPS, SMTP (and many more).</li>
+     <li>Monitoring Zones - A monitoring zone is the "launch point" of a check. You can launch checks from multiple monitoring zones.</li>
+     <li>Alarms - An alarm contains a set of rules that determine when a notification is triggered.</li>
+     <li>Notifications - A notification is an informational message sent to one or more addresses when an alarm is triggered.</li>
+     <li>Notification Plans - A notification plan is a set of notification rules to execute when an alarm is triggered.</li>
+</ul>
 
-^[back\\ to\\ top](#top)^
+---------
+<h2>General</h2>
 
-### Where can I download the Rackspace Monitoring CLI?
+<h3>Is there a discount for companies that need to monitor in bulk?</h3>
 
-You can find the download for the Rackspace Monitoring CLI on the
-[Python
-website](https://pypi.python.org/pypi/rackspace-monitoring-cli/0.4.5).
+<p>Please contact our sales department in order to make a custom service plan that will both cover your monitoring needs and fit your budget.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>If I am a Managed Servers customer, may I use this?</h3>
 
-### Where can I find the API documentation for Rackspace Monitoring notification plans?
+<p>Yes, but you will need a Cloud account. You configure your own notifications, so alerts may only go to you (the user).  A Racker will not respond to your alarms unless they are included in the notifications.</p>
 
-You can find information about Rackspace Monitoring [notification
-plans](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notification-plans-operations)
-in the Rackspace Monitoring Developer Guide.
+<h3>Will this be available globally or US only?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>This is a global product which is supported in both the US and UK. We have a primary datacenter in the UK that can process alerts on its own if the link between the US and UK goes down, as well as other datacenters that act as safety nets in case of localized datacenter failure; no matter what, your monitoring service will remain functional.</p>
 
-------------------------------------------------------------------------
+<h3>What is a Monitoring Zone?</h3>
 
-Monitoring and Troubleshooting
-------------------------------
+<p>A monitoring zone is the “launch point” of a check.  You can launch checks from multiple monitoring zones.</p>
 
-### Aren't my cloud resources already being monitored?
+<h3>What is an Alarm?</h3>
 
-We will only notify you when there is a problem with our infrastructure
-that impacts your Cloud resource. We do not run monitoring checks on
-your individual Cloud Servers, Cloud Load Balancers, or websites to
-verify functionality. This leaves a lot of exposure in situations where
-the infrastructure is working fine, but a given application or resource
-in your Cloud setup has stopped functioning correctly, leaving your site
-performance degraded, or totally inaccessible.
+<p>An Alarm is a set of rules that determine what status is returned based on the result of the check.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What mechanism do we use to check that the site content is reliably correct?</h3>
 
-### What kind of additional monitoring is available for my cloud resources?
+<p>At this time, we don’t do "synthetic transactions” (a simulated set of actions.) However, we do support checking the HTML of the response. We follow redirects but don’t check content within a frame/iframe.</p>
 
-It can take a lot of administrative overhead in order to correctly
-configure and maintain a robust monitoring application. If there is no
-built-in redundancy for the monitoring application, you could lose all
-monitoring services if the server hosting your monitoring application
-runs into trouble. A simpler option, with built-in redundancy, is to use
-the newly available Rackspace Monitoring service. It provides you with
-four key pieces of information that can help you manage your business as
-well as address and prevent infrastructure problems before they affect
-your customers.
+<h3>What is a Notification Plan?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>A Notification Plan is a set of actions undertaken when a certain status is returned by the check.</p>
 
-### How do I set up Rackspace Monitoring?
+<h3>Do we have a detailed 'recipe' or plan for how to monitor a hosted app?</h3>
 
-Rackspace Monitoring is released through the cloud without need for
-software installation on servers or computers. By eliminating the need
-for installation, Rackspace can upgrade the monitoring service without
-involving the customer. This process hides the complexity of the upgrade
-and maintenance processes from the customer, giving them a simple and
-reliable experience.
+<p>Right now we have a Getting Started Guide which is an evolving document that is updated on a regular basis. This guide includes situations set up as well as just an overview of how to use some of the tools to start getting value. We are working on setting up a feedback site for dealing with customer feature requests.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What is a Notification?</h3>
 
-### Can I view historical metrics for monitoring checks?
+<p>A Notification defines how the customer wants to be contacted in the case of a system failure.</p>
 
-You can access metrics for a check directly by using the [Rackspace
-Monitoring
-API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/metrics-operations).
-You can also access metrics by using the [Rackspace Intelligence
-portal](https://intelligence.rackspace.com/).
+<h3>How secure is the Rackspace Monitoring system?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>The Rackspace Monitoring system is extremely secure. Before releasing the product, an independent firm assessed the level of security of the Rackspace Monitoring systems and API, and all reported issues have been addressed. You can have confidence that Rackspace Monitoring is both safe and secure.</p>
 
-### How do I submit commands through the Rackspace Monitoring API?
+<h3>What is a Check?</h3>
 
-As with any commands you will submit to your Cloud resources through the
-API, you must first authenticate through the API in order for the
-commands to be correctly processed.
+<p>A Check specifies what aspect of the resource you wish to monitor.</p>
 
-In our [Rackspace Monitoring Developer
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/),
-we show the detailed configuration options available with this service
-offering, and the necessary components to build functioning monitoring
-checks. This will require you to work with the following components:
+<h3>What’s the most important aspect of Rackspace Monitoring?</h3>
 
--   Account - An account contains attributes describing your account.
-    This description contains mostly read only data; however, a few
-    properties can be modified with the API.
--   Entities - An entity is a resource that you want to monitor. Some
-    examples are a server, a website, or a service.
--   Checks - Checks explicitly specify how you want to monitor
-    an entity.
--   Check Types - These are the available service monitoring checks that
-    you can configure, such as PING, HTTPS, SMTP (and many more).
--   Monitoring Zones - A monitoring zone is the "launch point" of
-    a check. You can launch checks from multiple monitoring zones.
--   Alarms - An alarm contains a set of rules that determine when a
-    notification is triggered.
--   Notifications - A notification is an informational message sent to
-    one or more addresses when an alarm is triggered.
--   Notification Plans - A notification plan is a set of notification
-    rules to execute when an alarm is triggered.
+<p>The user experience. At Rackspace, we strive to make your interactions with us and our products as easy as possible, and we work towards improving that experience every day. Rackspace Monitoring was built first and foremost with the user in mind - we want your experience to be even easier than ours when using the product.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>What is an Entity?</h3>
 
-------------------------------------------------------------------------
+<p>An Entity is the resource (website, server, etc) you wish to monitor.</p>
 
-General
--------
+<h3>Once I’ve made a check, how will I know it works?</h3>
 
-### Is there a discount for companies that need to monitor in bulk?
+<p>We have an on-demand simulation feature which allows the user to test the functionality of their monitoring system by simulating a normal operating situation.</p>
 
-Please contact our sales department in order to make a custom service
-plan that will both cover your monitoring needs and fit your budget.
+<h3>Why do you not have everything other monitoring services have?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>Rackspace Monitoring was built as a means, not an end. Although just as (and in many aspects, more) advanced than the other monitoring services, Rackspace Monitoring has promoted reliable functionality and a solid foundation over superficial “whizz bang” features. This is by no means the final product - we plan to continue innovating and improving on what we have already, which is a solid, reliable foundation for the future. Customer feedback remains a very valuable source of input concerning the direction of Rackspace Monitoring.</p>
 
-### If I am a Managed Servers customer, may I use this?
+<h3>How responsive is the system to change, especially in large numbers?</h3>
 
-Yes, but you will need a Cloud account. You configure your own
-notifications, so alerts may only go to you (the user). A Racker will
-not respond to your alarms unless they are included in the
-notifications.
+<p>Rackspace Monitoring tries very hard to make sure that if a change fails it let's the customer know.  Deliberate action is necessary in a monitoring system. Along with that scalability has been one of our priorities from the beginning. Even if a customer adds thousands of Cloud Servers in minutes, Rackspace Monitoring can instantly begin monitoring all of them.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>How does this compare to open source solutions like Nagios?</h3>
 
-### Will this be available globally or US only?
+<p>It is targeted at replacing these type of tools. Right now we don’t offer all the features of Nagios; however, Rackspace Monitoring is hosted as a service, API driven and built for the cloud. Rackspace Monitoring also provides geographically redundant checks which is something that is generally very difficult to get with any solution. Customers will get to leverage our big datacenter footprint, incredible scalability, and our continuous release feature. Future improvements to the service will be released as they become functional (no need to wait for an upgrade package, and no need for downtime).</p>
 
-This is a global product which is supported in both the US and UK. We
-have a primary datacenter in the UK that can process alerts on its own
-if the link between the US and UK goes down, as well as other
-datacenters that act as safety nets in case of localized datacenter
-failure; no matter what, your monitoring service will remain functional.
+<h3>Will there be an API call or published URI to get all the collector IPs as with Cloudkick?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>Listing monitoring zones will give you CIDR’s of the set of collectors in that zone.  To get the most accurate list possible use this API call.</p>
 
-### What is a Monitoring Zone?
+<h3>Does "60 day retention" mean "default 60 days on all customer alert log data"? If so, can customers ask that it be less than 60 days for some bizarre reason?</h3>
 
-A monitoring zone is the &ldquo;launch point&rdquo; of a check. You can launch
-checks from multiple monitoring zones.
+<p>Not today, we will have more flexibility in setting policies in the future though.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>Are there good patterns to use to better leverage the alarm language?</h3>
 
-### What is an Alarm?
+<p>Most of the interesting patterns are represented here. Let us know in the comments if there are additional examples you’d like to contribute.</p>
 
-An Alarm is a set of rules that determine what status is returned based
-on the result of the check.
+<h3>How are Email notifications sent? Do I need to worry they will end up in my SPAM folder?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>Email notifications are sent via Mailgun. They make sure that email will be sent properly and not placed into SPAM folders.</p>
 
-### What mechanism do we use to check that the site content is reliably correct?
+<h3>Why separate out the check/alarm concept?</h3>
 
-At this time, we don&rsquo;t do "synthetic transactions&rdquo; (a simulated set of
-actions.) However, we do support checking the HTML of the response. We
-follow redirects but don&rsquo;t check content within a frame/iframe.
+<p>We wanted to build a state of the art monitoring platform. This requires the data collection to be separate from the thresholding. On the CLI/API level, this is a more complex user experience, but provides the most flexibility. The dashboard GUI simplifies the process for those users who don’t want to work with a CLI.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>I've heard about this Alarm Language. How does it work?</h3>
 
-### What is a Notification Plan?
+<p>The alarm language is one of the coolest features in the product. In past experiences, we've discovered that building an API around thresholds was really cumbersome. So we decided to represent thresholds in a javascript-like language. It gives you the ability to write some very concise thresholds. For a list of examples, see <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#best-practices-for-creating-alerts">Best practices for creating alerts</a> in the Rackspace Monitoring Developer Guide.</p>
 
-A Notification Plan is a set of actions undertaken when a certain status
-is returned by the check.
+<h3>What is the production URL?</h3>
 
-^[back\\ to\\ top](#top)^
+<p>The production URL is <a href="https://monitoring.api.rackspacecloud.com">https://monitoring.api.rackspacecloud.com</a>.</p>
 
-### Do we have a detailed 'recipe' or plan for how to monitor a hosted app?
+<h3>Is there a set of command line tools to use with Rackspace Monitoring?</h3>
 
-Right now we have a Getting Started Guide which is an evolving document
-that is updated on a regular basis. This guide includes situations set
-up as well as just an overview of how to use some of the tools to start
-getting value. We are working on setting up a feedback site for dealing
-with customer feature requests.
+<p>Yes. Check out the <a href="https://github.com/racker/rackspace-monitoring-cli">raxmon project</a>. It uses the Apache Libcloud framework for building a reliable API implementation that functions well.</p>
 
-^[back\\ to\\ top](#top)^
+<p>To avoid repeating the raxmon installation on each new Cloud Server, install it on your workstation and not your server.</p><p><strong>Note</strong>: raxmon requires Python 2.5, 2.6 or 2.7.</p>
 
-### What is a Notification?
+<h3>Is there a good tutorial for customers unfamiliar with monitoring in general?</h3>
 
-A Notification defines how the customer wants to be contacted in the
-case of a system failure.
+<p>Yes - please visit our <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-getting-started">Rackspace Monitoring Getting Started Guide</a>, which can guide you through the steps in creating your Rackspace Monitoring setup from scratch.</p>
 
-^[back\\ to\\ top](#top)^
+<h3>Why would I want to monitor from multiple monitoring zones?</h3>
 
-### How secure is the Rackspace Monitoring system?
+<p>Monitoring from multiple monitoring zones allows you to monitor the experience of customers from many locations, which is important for companies that do business in more than one region. Consider this: your website might be working fine in the Western United States, but users from the Eastern half of the country are experiencing high load times and non-responsive web pages. Monitoring from just a western data center would report an OK status, but if you also monitor from the eastern data center, you will be alerted to this problem before it affects your customers.</p>
 
-The Rackspace Monitoring system is extremely secure. Before releasing
-the product, an independent firm assessed the level of security of the
-Rackspace Monitoring systems and API, and all reported issues have been
-addressed. You can have confidence that Rackspace Monitoring is both
-safe and secure.
+<p>If you’re only monitoring from a single zone, and for some reason there is an error with a check, you may get false notifications that your site has a problem, when in reality it is working fine. Using multiple monitoring zones helps prevent these false alarms by verifying a system failure from multiple sources before alerting you. Or, you can have it send you a message if even just one check returns a failure status - the level of customization possible through our alarm language is incredible.</p>
 
-^[back\\ to\\ top](#top)^
+---------
+<h2>API</h2>
 
-### What is a Check?
+<h3>How do you see monitors for both your Dedicated and Cloud Servers?</h3>
 
-A Check specifies what aspect of the resource you wish to monitor.
+<p>Through the API by using a check: <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/check-operations">here</a>.</p>
 
-^[back\\ to\\ top](#top)^
+<p>Through the Raxmon CLI: <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#using-the-raxmon-client">here</a>.</p>
 
-### What&rsquo;s the most important aspect of Rackspace Monitoring?
+<h3>How fast and easy is it to work with the API?</h3>
 
-The user experience. At Rackspace, we strive to make your interactions
-with us and our products as easy as possible, and we work towards
-improving that experience every day. Rackspace Monitoring was built
-first and foremost with the user in mind - we want your experience to be
-even easier than ours when using the product.
-
-^[back\\ to\\ top](#top)^
-
-### What is an Entity?
-
-An Entity is the resource (website, server, etc) you wish to monitor.
-
-^[back\\ to\\ top](#top)^
-
-### Once I&rsquo;ve made a check, how will I know it works?
-
-We have an on-demand simulation feature which allows the user to test
-the functionality of their monitoring system by simulating a normal
-operating situation.
-
-^[back\\ to\\ top](#top)^
-
-### Why do you not have everything other monitoring services have?
-
-Rackspace Monitoring was built as a means, not an end. Although just as
-(and in many aspects, more) advanced than the other monitoring services,
-Rackspace Monitoring has promoted reliable functionality and a solid
-foundation over superficial &ldquo;whizz bang&rdquo; features. This is by no means
-the final product - we plan to continue innovating and improving on what
-we have already, which is a solid, reliable foundation for the future.
-Customer feedback remains a very valuable source of input concerning the
-direction of Rackspace Monitoring.
-
-^[back\\ to\\ top](#top)^
-
-### How responsive is the system to change, especially in large numbers?
-
-Rackspace Monitoring tries very hard to make sure that if a change fails
-it let's the customer know. Deliberate action is necessary in a
-monitoring system. Along with that scalability has been one of our
-priorities from the beginning. Even if a customer adds thousands of
-Cloud Servers in minutes, Rackspace Monitoring can instantly begin
-monitoring all of them.
-
-^[back\\ to\\ top](#top)^
-
-### How does this compare to open source solutions like Nagios?
-
-###
-
-It is targeted at replacing these type of tools. Right now we don&rsquo;t
-offer all the features of Nagios; however, Rackspace Monitoring is
-hosted as a service, API driven and built for the cloud. Rackspace
-Monitoring also provides geographically redundant checks which is
-something that is generally very difficult to get with any solution.
-Customers will get to leverage our big datacenter footprint, incredible
-scalability, and our continuous release feature. Future improvements to
-the service will be released as they become functional (no need to wait
-for an upgrade package, and no need for downtime).
-
-^[back\\ to\\ top](#top)^
-
-### Will there be an API call or published URI to get all the collector IPs as with Cloudkick?
-
-Listing monitoring zones will give you CIDR&rsquo;s of the set of collectors
-in that zone. To get the most accurate list possible use this API call.
-
-^[back\\ to\\ top](#top)^
-
-### Does "60 day retention" mean "default 60 days on all customer alert log data"? If so, can customers ask that it be less than 60 days for some bizarre reason?
-
-Not today, we will have more flexibility in setting policies in the
-future though.
-
-^[back\\ to\\ top](#top)^
-
-### Are there good patterns to use to better leverage the alarm language?
-
-Most of the interesting patterns are represented here. Let us know in
-the comments if there are additional examples you&rsquo;d like to contribute.
-
-^[back\\ to\\ top](#top)^
-
-### How are Email notifications sent? Do I need to worry they will end up in my SPAM folder?
-
-Email notifications are sent via Mailgun. They make sure that email will
-be sent properly and not placed into SPAM folders.
-
-^[back\\ to\\ top](#top)^
-
-### Why separate out the check/alarm concept?
-
-We wanted to build a state of the art monitoring platform. This requires
-the data collection to be separate from the thresholding. On the CLI/API
-level, this is a more complex user experience, but provides the most
-flexibility. The dashboard GUI simplifies the process for those users
-who don&rsquo;t want to work with a CLI.
-
-^[back\\ to\\ top](#top)^
-
-### I've heard about this Alarm Language. How does it work?
-
-The alarm language is one of the coolest features in the product. In
-past experiences, we've discovered that building an API around
-thresholds was really cumbersome. So we decided to represent thresholds
-in a javascript-like language. It gives you the ability to write some
-very concise thresholds. For a list of examples, see [Best practices for
-creating
-alerts](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#best-practices-for-creating-alerts)
-in the Rackspace Monitoring Developer Guide.
-
-^[back\\ to\\ top](#top)^
-
-### What is the production URL?
-
-The production URL is <https://monitoring.api.rackspacecloud.com>.
-
-^[back\\ to\\ top](#top)^
-
-### Is there a set of command line tools to use with Rackspace Monitoring?
-
-Yes. Check out the [raxmon
-project](https://github.com/racker/rackspace-monitoring-cli). It uses
-the Apache Libcloud framework for building a reliable API implementation
-that functions well.
-
-To avoid repeating the raxmon installation on each new Cloud Server,
-install it on your workstation and not your server.
-
-**Note**: raxmon requires Python 2.5, 2.6 or 2.7.
-
-^[back\\ to\\ top](#top)^
-
-### Is there a good tutorial for customers unfamiliar with monitoring in general?
-
-Yes - please visit our [Rackspace Monitoring Getting Started
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-getting-started),
-which can guide you through the steps in creating your Rackspace
-Monitoring setup from scratch.
-
-^[back\\ to\\ top](#top)^
-
-### Why would I want to monitor from multiple monitoring zones?
-
-Monitoring from multiple monitoring zones allows you to monitor the
-experience of customers from many locations, which is important for
-companies that do business in more than one region. Consider this: your
-website might be working fine in the Western United States, but users
-from the Eastern half of the country are experiencing high load times
-and non-responsive web pages. Monitoring from just a western data center
-would report an OK status, but if you also monitor from the eastern data
-center, you will be alerted to this problem before it affects your
-customers.
-
-If you&rsquo;re only monitoring from a single zone, and for some reason there
-is an error with a check, you may get false notifications that your site
-has a problem, when in reality it is working fine. Using multiple
-monitoring zones helps prevent these false alarms by verifying a system
-failure from multiple sources before alerting you. Or, you can have it
-send you a message if even just one check returns a failure status - the
-level of customization possible through our alarm language is
-incredible.
-
-^[back\\ to\\ top](#top)^
-
-------------------------------------------------------------------------
-
-API
----
-
-### How do you see monitors for both your Dedicated and Cloud Servers?
-
-Through the API by using a check:
-[here](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/check-operations).
-
-Through the Raxmon CLI:
-[here](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#using-the-raxmon-client).
-
-^[back\\ to\\ top](#top)^
-
-### How fast and easy is it to work with the API?
-
-You must set up your account at the Rackspace Cloud account signup
-process [here](https://cart.rackspace.com/cloud/).  Once complete,
-adding incremental monitoring is fast and easy, especially in the [Cloud
-Control Panel](https://mycloud.rackspace.com/).
-
-^[back\\ to\\ top](#top)^
-
+<p>You must set up your account at the Rackspace Cloud account signup process <a href="https://cart.rackspace.com/cloud/">here</a>. &nbsp;Once complete, adding incremental monitoring is fast and easy, especially in the <a href="https://mycloud.rackspace.com/">Cloud Control Panel</a>.</p>

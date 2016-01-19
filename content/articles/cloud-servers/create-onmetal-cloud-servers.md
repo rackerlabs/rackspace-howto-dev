@@ -23,8 +23,8 @@ up an OnMetal server through the Control Panel.
 Servers through the
 API](/how-to/using-onmetal-cloud-servers-through-api).
 
-<a href="" id="create"></a>Create an OnMetal server in the Cloud Control Panel
-------------------------------------------------------------------------------
+Create an OnMetal server in the Cloud Control Panel
+-------------------------------------------------------
 
 1.  Log in to the [Cloud Control Panel.](http://mycloud.rackspace.com)
 
@@ -79,8 +79,8 @@ API](/how-to/using-onmetal-cloud-servers-through-api).
 14. Click **Create Server**.
     <span>Your server is built.</span>
 
-<a href="" id="boot"></a>Boot the server
-----------------------------------------
+Boot the server
+-------------------
 
 1.  On the details page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
@@ -166,8 +166,8 @@ API](/how-to/using-onmetal-cloud-servers-through-api).
     first time. The server is not reachable, however, until the network
     configuration is complete, which might take another few minutes.
 
-<a href="" id="login"></a>Log in to the server
-----------------------------------------------
+Log in to the server
+------------------------
 
 After the server has booted, use the SSH key pair that you specified to
 log in to the server.
@@ -176,8 +176,8 @@ log in to the server.
 
     ssh root@publicIpAddress
 
-<a href="" id="delete"></a>Delete the server
---------------------------------------------
+Delete the server
+---------------------
 
 If needed, you can also delete or cancel the server.
 
@@ -202,8 +202,8 @@ If needed, you can also delete or cancel the server.
     server deletions take longer than virtual server deletions, usually
     a few minutes.
 
-<a href="" id="usintOnmetal"></a>Using OnMetal
-----------------------------------------------
+Using OnMetal
+-----------------
 
 The flash cards included with the OnMetal I/O flavor are unformatted.
 You can RAID and format them however you like. For more information, see

@@ -75,19 +75,19 @@ focus:
 Click **Visualize** at the top of the interface, click **Custom
 Graphs**, and then choos your focus.
 
-### <a href="" id="explore-metric"></a>Explore a metric
+### Explore a metric
 
 When you focus on a single metric, you can simultaneously view that
 metric on any of the entities you have defined. For example, you can
 choose to see the percentage of idle time for all your entities.
 
-### <a href="" id="explore-entity"></a>Explore an entity
+### Explore an entity
 
 When you focus on a single entity, you can simultaneously view any of
 the metrics available for that entity. For example, you can choose to
 see the entity's percentage of idle time and its maximum usage.
 
-### <a href="" id="generate-graphs"></a>Generate graphs
+### Generate graphs
 
 After you have selected the combination of entities and metrics that you
 want to view, click **Generate Graphs**.

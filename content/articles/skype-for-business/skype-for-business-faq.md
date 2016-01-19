@@ -4,8 +4,8 @@ title: 'Microsoft Skype for Business: FAQs'
 type: article
 created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Microsoft Skype for Business
 body_format: tinymce
 ---
@@ -623,9 +623,9 @@ The following guidelines will improve device audio quality.
 
 -   Use a high quality audio device, replace any defective or damaged
     devices, and run the set up to make sure it works correctly. We
-    recommend you use a device listed in [Phones and Devices Qualified
-    for Microsoft Skype for
-    Business](http://office.microsoft.com/en-us/lync-help/redir/XT102324544.aspx?CTT=5&origin=HA102847523) .
+    recommend you use a device listed in [Phones and Devices for Skype
+    for
+    Business](https://technet.microsoft.com/en-us/office/dn947482.aspx) .
 -   It&rsquo;s important that a noise-canceling microphone is positioned close
     to the mouth, approximately less than 1 inch away from the mouth, to
     filter out unwanted background noise.

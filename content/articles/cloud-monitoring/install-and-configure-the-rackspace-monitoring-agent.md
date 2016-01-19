@@ -33,8 +33,8 @@ This article describes the following tasks:
 -   [Upgrade the monitoring agent](#UpgradeAgent)
 -   [Uninstall the monitoring agent](#UninstallAgent)
 
-<a href="" id="CI"></a>Install the monitoring agent by using the Cloud Intelligence interface
----------------------------------------------------------------------------------------------
+Install the monitoring agent by using the Cloud Intelligence interface
+--------------------------------------------------------------------------
 
 We recommend using the Cloud Intelligence web-based interface to install
 and configure the monitoring agent. <span>The Cloud Intelligence
@@ -73,8 +73,8 @@ agent: </span>Quick Install, Step By Step, and Source.
 immediately. You can then continue to create checks for the agent, which
 you can also do within the Cloud Intelligence interface.
 
-<a href="" id="metaPackage"></a>Install the monitoring agent by using meta packages
------------------------------------------------------------------------------------
+Install the monitoring agent by using meta packages
+-------------------------------------------------------
 
 The meta packages installation obviates the need to install the
 certificate or create a repository manually.
@@ -88,12 +88,12 @@ class="s1">.</span>
 
 3\. Find your operating system and enter the commands provided.
 
-<a href="" id="agent-setup"></a>Configure the monitoring agent by using the agent setup program
------------------------------------------------------------------------------------------------
+Configure the monitoring agent by using the agent setup program
+-------------------------------------------------------------------
 
 After you have installed the agent package on your server, you can
-configure the monitoring agent by running the
-<a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup" class="link" title="4.3.1. Configure the agent with the Setup program">agent Setup program</a>.
+configure the monitoring agent by running the [agent Setup
+program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup "4.3.1. Configure the agent with the Setup program").
 The agent setup program completes the following configuration tasks for
 you:
 
@@ -117,8 +117,8 @@ section in the *Rackspace Monitoring Developer Guide*.
 
 </div>
 
-<a href="" id="otherMethods"></a>Install the monitoring agent by using other methods
-------------------------------------------------------------------------------------
+Install the monitoring agent by using other methods
+-------------------------------------------------------
 
 For more information about the monitoring agent and in-depth
 installation and configuration information, see the following sections
@@ -127,8 +127,8 @@ agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/
 the
 agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-the-agent)<span> sections.</span>
 
-<a href="" id="UpgradeAgent"></a>Upgrade the agent
---------------------------------------------------
+Upgrade the agent
+---------------------
 
 The agent does not upgrade itself. However, if you've added the agent
 repository to a Linux system, the agent is upgraded when you run a
@@ -142,8 +142,8 @@ guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/
 If you upgrade manually, we recommend that you check for an upgrade
 to the agent every three to four weeks.
 
-<a href="" id="UninstallAgent"></a>Uninstall the agent
-------------------------------------------------------
+Uninstall the agent
+-----------------------
 
 Use the standard method for your operating system to uninstall the
 agent.

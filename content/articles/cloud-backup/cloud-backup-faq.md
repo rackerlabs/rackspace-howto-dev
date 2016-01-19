@@ -4,8 +4,8 @@ title: Cloud Backup - FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -22,10 +22,8 @@ configurations of its own.
 You also cannot migrate an encrypted vault.
 
 See [Migrate Vault API
-call](http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/PUT_migrateVault_v1.0__tenant_id__agent_migratevault_Agent.html)
+call](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/#migrate-vault)
 for a description.
-
-^[back\\ to\\ top](#top)^
 
 ### Why does my backup fail with the error: "container does not exist Invalid snapshot id and engine, and check config\_backup.json id." ?
 
@@ -57,8 +55,6 @@ Do not delete the *z\_DO\_NOT\_DELETE\_CloudBackup* container in their
 cloud files; it is used for backup. If you have accidentally deleted
 this container, contact Rackspace Support.
 
-^[back\\ to\\ top](#top)^
-
 ------------------------------------------------------------------------
 
 Backups
@@ -70,8 +66,6 @@ Yes - Some Ubuntu users have older agents installed on their machines.
 In order to communicate properly with your system, the config file may
 need to be overwritten with a current version.
 
-^[back\\ to\\ top](#top)^
-
 ### How does Rackspace Cloud Backup handle corrupt files?
 
 Rackspace double checks to make sure files get written properly when
@@ -80,8 +74,6 @@ get backed up and restored as corrupted. The backup and restore
 processes themselves should never corrupt files. File corruption
 occurring in Cloud Files itself may render the backup unusable, should
 this ever occur.
-
-^[back\\ to\\ top](#top)^
 
 ### What happens if I lose my encryption key?
 
@@ -92,9 +84,7 @@ passphrase, you will not be able to restore data from your backups.
 For more information, see the section on [Setting up Encryption on your
 Cloud Backup
 System](/how-to/rackspace-cloud-backup-system-actions)
-in the *Getting Started Guide.*
-
-^[back\\ to\\ top](#top)^
+in the Getting Started Guide.
 
 ### How do I generate a Rackspace Cloud Backup Encryption key?
 
@@ -102,8 +92,6 @@ If you wish to create your own encrypted key and bypass the default
 client-side encryption, please refer to [this article on using OpenSSL
 to generate a
 key](/how-to/generating-your-encrypted-key-in-cloud-backup).
-
-^[back\\ to\\ top](#top)^
 
 ### Where are my Cloud Backups stored?
 
@@ -115,8 +103,6 @@ When you established your Cloud Account, a Cloud Files account was set
 up as well. You are not charged storage fees for your Cloud Files
 account until you begin storing things in it.
 
-^[back\\ to\\ top](#top)^
-
 ### How many backup jobs can I have at one time?
 
 You can create any number of backup jobs for each of your servers, and
@@ -124,10 +110,8 @@ you can include a nearly unlimited number of files in each job.
 
 For more inoformation, see [Creating a
 Backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
-in the [*Rackspace Cloud Backup Getting Started
-Guide*](/how-to/rackspace-cloud-backup-overview).
-
-^[back\\ to\\ top](#top)^
+in the [Rackspace Cloud Backup Getting Started
+Guide](/how-to/rackspace-cloud-backup-overview).
 
 ### What is De-duplication?
 
@@ -144,26 +128,22 @@ See our section on [Scheduling and
 De-duplication](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the RCBU *Getting Started Guide*.
 
-^[back\\ to\\ top](#top)^
-
 ### Can I use Rackspace Cloud Backup on my server?
 
 You can use Rackspace Cloud Backup on virtually any server in the
 Rackspace Cloud. The exceptions are FreeBSD 9, Debian 5 and Windows
 2003.
 
-**Note:** *If you have servers that are not in the Rackspace Cloud, you
-can use the [equivalent service offered by
-JungleDisk](https://jungledisk.com/) for those servers.*
+**Note:** ** If you have servers that are not in the Rackspace Cloud,
+you can use the [equivalent service offered by
+JungleDisk](https://jungledisk.com/) for those servers.
 
 If you have a server with a Managed Operations Service Level, you may
 already have the Cloud Backup agent installed on your system. If not,
 contact your account representative to get started.
 
-For more informations, see the Rackspace Cloud Backup [*Getting Started
-Guide*](/how-to/rackspace-cloud-backup-overview).
-
-^[back\\ to\\ top](#top)^
+For more informations, see the Rackspace Cloud Backup [Getting Started
+Guide](/how-to/rackspace-cloud-backup-overview).
 
 ### What is Rackspace Cloud Backup?
 
@@ -190,8 +170,6 @@ For information on getting started with Cloud Backup, see our [Getting
 Started
 Guide](/how-to/cloud-backup).
 
-^[back\\ to\\ top](#top)^
-
 ### How long are my Cloud Backups kept?
 
 You choose how long your backups are saved: 30 days, 60 days, or
@@ -201,8 +179,6 @@ Read more about [Retaining your
 Backup](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the [Rackspace Cloud Back Up Getting Started
 Guide](/how-to/cloud-backup).
-
-^[back\\ to\\ top](#top)^
 
 ### How do I configure my Rackspace Cloud Backups?
 
@@ -223,13 +199,9 @@ Read more about [Scheduling your
 Backup](/how-to/rackspace-cloud-backup-backup-actions-0)
 in the Cloud Backup Getting Started Guide.
 
-^[back\\ to\\ top](#top)^
-
 ### Are 32-bit servers and agents on Linux supported?
 
 No, 32-bit servers and agents on Linus are not supported.
-
-^[back\\ to\\ top](#top)^
 
 ### Why does by Backup fail with a 403 error from Cloud Files when account has sub-users?
 
@@ -247,8 +219,6 @@ Management section of the Cloud Control Panel. Submit a request to your
 account administrator for **Full** access to your account or
 **Administrative** access to Cloud Files for your sub-user account.
 
-^[back\\ to\\ top](#top)^
-
 ### What does Rackspace Cloud Backup cost?
 
 With advanced deduplication and compression capabilities built-in,
@@ -256,8 +226,6 @@ Rackspace Cloud Backup can save you money by using less storage.
 Standard rates for Cloud Files storage fees apply. For current storage
 fees, see the [Cloud Files storage
 fees](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/).
-
-^[back\\ to\\ top](#top)^
 
 ### Why are files that are being modified during backup missing or corrupted?
 
@@ -301,12 +269,8 @@ If you do need to back up these files, our suggested workarounds are:
     -   To avoid running out of disk space, rotate your log
         files periodically.
 
-^[back\\ to\\ top](#top)^
-
 ### Does the backup agent accept incoming connections?
 
 No. The agent only makes outgoing SSL connections to our API server on
 port 443.
-
-^[back\\ to\\ top](#top)^
 

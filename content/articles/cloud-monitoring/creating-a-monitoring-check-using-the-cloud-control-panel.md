@@ -41,8 +41,8 @@ only the system disk. The data disk is not monitored.
 -   [The Check Region](#ChkRegion)
 -   [The Check Status](#ChkStatus)
 
-<a href="" id="Create"></a>Create a Monitoring Check
-----------------------------------------------------
+Create a Monitoring Check
+-----------------------------
 
 1.  Log in to the [Cloud Control
     Panel](https://mycloud.rackspace.com/) at
@@ -72,8 +72,8 @@ only the system disk. The data disk is not monitored.
 
 
 
-<a href="" id="ChkRegion"></a>The Check Region
-----------------------------------------------
+The Check Region
+--------------------
 
 Each check is configured by default to originate from the 3 regions:
 DFW, ORD, and LON. Once your monitoring check has been created, you can
@@ -85,8 +85,8 @@ regions, including: IAD (Northern Virginia), HKG (Hong Kong), and SYD
 
 
 
-<a href="" id="ChkStatus"></a>The Check Status
-----------------------------------------------
+The Check Status
+--------------------
 
 The check status is calculated by determining if there is an agreement
 from a majority of the monitoring zones (two out of three monitoring

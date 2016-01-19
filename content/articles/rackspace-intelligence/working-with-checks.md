@@ -79,8 +79,8 @@ Rackspace Intelligence dashboard. You can also choose to notify someone
 (for example, on-call technical support) or to suppress notification
 (for example, during scheduled maintenance).
 
-<a href="" id="createcheck"></a>Create a check
-----------------------------------------------
+Create a check
+------------------
 
 To create a new check, complete the following steps:
 
@@ -114,20 +114,20 @@ You can perform the following editing actions for checks:
 -   [Modify the parameters of your check](#modifyparams)
 -   [Delete the check](#deleting)
 
-### <a href="" id="renaming"></a>Rename a check
+### Rename a check
 
 1.  From the **Actions** menu on the check details page, select **Rename
     Check**.
 2.  In the Rename Check dialog box, type the new name and then
     click **Rename**.
 
-### <a href="" id="addingalarm"></a>Add an alarm
+### Add an alarm
 
 For instructions on adding an alarm for a check, see the &ldquo;Create an
 alarm&rdquo; section of [Working with Alarms in Rackspace
 Intelligence](/how-to/working-with-alarms).
 
-### <a href="" id="modify"></a>Modify the status of a check
+### Modify the status of a check
 
 1.  From the **Actions** menu on the check details page, select **Modify
     Status**.
@@ -135,14 +135,14 @@ Intelligence](/how-to/working-with-alarms).
     select **Disabled**.
 3.  Click **Save Status**.
 
-### <a href="" id="modifyparams"></a>Modify the parameters of a check
+### Modify the parameters of a check
 
 1.  From the **Actions** menu on the check details page, select **Modify
     Parameters**.
 2.  In the dialog box, type the new parameter values, and then
     click **Save Parameters**.
 
-### <a href="" id="deleting"></a>Delete a check
+### Delete a check
 
 1.  From the **Actions** menu on the check details page, select **Delete
     Check**.

@@ -19,7 +19,7 @@ managing your MSSQL databases via myLittleAdmin.
 one time. It may be necessary to go to "Manage Backup Files" and delete
 any existing backup file before you can create a new one.
 
-<a href="" id="Backing_Up_Your_MSSQL_Database"></a>
+
 
 <span class="mw-headline">Backing Up Your MSSQL Database</span>
 ---------------------------------------------------------------
@@ -68,7 +68,7 @@ any existing backup file before you can create a new one.
     Be patient and do not click the stop button until done.**
 
 
-<a href="" id="Finish_Line"></a>
+
 
 <span class="mw-headline">Finish Line</span>
 --------------------------------------------

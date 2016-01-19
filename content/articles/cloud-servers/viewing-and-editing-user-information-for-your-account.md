@@ -48,8 +48,8 @@ preferences.
     monitored 24 hours a day.
 -   Select your local time zone in the **Preferences** section.
 
-<a href="" id="usermanagement"></a>User Management page
--------------------------------------------------------
+User Management page
+------------------------
 
 Use the **User Management** page to edit user-related information, such
 as email addresses and passwords, and to add new users.

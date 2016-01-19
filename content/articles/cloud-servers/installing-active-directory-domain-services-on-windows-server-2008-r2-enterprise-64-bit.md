@@ -36,7 +36,7 @@ Infrastructure.
 
 </div>
 
-<a href="" id="Preparation_for_Active_Directory"></a>
+
 
 <span class="mw-headline">Prepare for Active Directory</span>
 -------------------------------------------------------------
@@ -134,7 +134,7 @@ framework for Windows Server 2008 to become a DC and run AD DS. It does
 3.  <span>Select the **Enable remote management of this server from
     other computers** check box.</span>
 
-<a href="" id="Installation_of_Active_Directory_Domain_Services_.28DCPROMO.29"></a>
+
 
 <span class="mw-headline">Install Active Directory Domain Services (DCPROMO)</span>
 -----------------------------------------------------------------------------------

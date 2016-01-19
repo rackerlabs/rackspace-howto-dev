@@ -21,7 +21,7 @@ Windows will not run.**
 of bandwidth. Please use wisely!**
 
 If you would like information about tunnelling VNC over SSH please visit
-<a href="http://martybugs.net/smoothwall/puttyvnc.cgi" class="uri" class="external free" title="http://martybugs.net/smoothwall/puttyvnc.cgi">http://martybugs.net/smoothwall/puttyvnc.cgi</a>
+<http://martybugs.net/smoothwall/puttyvnc.cgi>
 
 ------------------------------------------------------------------------
 
@@ -75,20 +75,20 @@ Contents
             class="toctext">Stopping the VNC
             Server</span>](#Stopping_the_VNC_Server)
 
-<a href="" id="Install_the_Necessary_Packages"></a>
+
 
 <span class="mw-headline">Install the Necessary Packages </span>
 ----------------------------------------------------------------
 
 This article will assume you know how to use the YUM Update Manager.
 
-<a href="" id="Install_Perl"></a>
+
 
 ### <span class="mw-headline">Install Perl </span>
 
     # yum install perl
 
-<a href="" id="Install_X_Windows"></a>
+
 
 ### <span class="mw-headline">Install X Windows </span>
 
@@ -100,19 +100,18 @@ To install run the following as root:
 
     # yum groupinstall "X Window System"
 
-<a href="" id="Install_a_Window_Manager"></a>
+
 
 ### <span class="mw-headline">Install a Window Manager </span>
 
-<a href="http://www.kde.org/" class="external text" title="http://www.kde.org/">KDE</a>,
-<a href="http://www.gnome.org./" class="external text" title="http://www.gnome.org./">GNOME</a>
-and
-<a href="http://xwinman.org/vtwm.php" class="external text" title="http://xwinman.org/vtwm.php">TWM</a>
-are all Window Managers and are the human usable layer that you are
-probably familiar with. This gives you the access to use a mouse and
-send calls to the X11 server.
+[KDE](http://www.kde.org/ "http://www.kde.org/"),
+[GNOME](http://www.gnome.org./ "http://www.gnome.org./") and
+[TWM](http://xwinman.org/vtwm.php "http://xwinman.org/vtwm.php") are all
+Window Managers and are the human usable layer that you are probably
+familiar with. This gives you the access to use a mouse and send calls
+to the X11 server.
 
-<a href="" id="KDE"></a>
+
 
 #### <span class="mw-headline">KDE </span>
 
@@ -122,7 +121,7 @@ Also, this may be needed:
 
     # yum install kde-session
 
-<a href="" id="GNOME"></a>
+
 
 #### <span class="mw-headline">GNOME </span>
 
@@ -132,7 +131,7 @@ Also, this may be needed:
 
     # yum install gnome-session
 
-<a href="" id="TWM"></a>
+
 
 #### <span class="mw-headline">TWM </span>
 
@@ -140,7 +139,7 @@ TWM is the default X-Window Manager and you don't have to install any
 additional packages, it is light and will run on almost anything, but is
 also not very user friendly and almost requires a power-user.
 
-<a href="" id="Install_VNC_Server"></a>
+
 
 ### <span class="mw-headline">Install VNC Server </span>
 
@@ -149,12 +148,12 @@ the internet.
 
     # yum install vnc-server
 
-<a href="" id="Configuration"></a>
+
 
 <span class="mw-headline">Configuration </span>
 -----------------------------------------------
 
-<a href="" id="Configure_VNC"></a>
+
 
 ### <span class="mw-headline">Configure VNC </span>
 
@@ -179,7 +178,7 @@ add additional users to that line. For example...
 You will also need to add additional VNCSERVERARGS lines to correspond
 to each user. Change the \[1\] to match the session number.
 
-<a href="" id="Firewall"></a>
+
 
 ### <span class="mw-headline">Firewall </span>
 
@@ -195,18 +194,18 @@ Save the new iptables rule:
 
     # service iptables save
 
-<a href="" id="Test_the_Server"></a>
+
 
 ### <span class="mw-headline">Test the Server </span>
 
-<a href="" id="Switch_to_your_User"></a>
+
 
 #### <span class="mw-headline">Switch to your User </span>
 
     # su username
     $ cd ~
 
-<a href="" id="Create_a_.vnc_directory"></a>
+
 
 #### <span class="mw-headline">Create a .vnc directory </span>
 
@@ -215,7 +214,7 @@ Save the new iptables rule:
     $ mkdir .vnc
     $ cd .vnc
 
-<a href="" id="Create_the_xstartup_file"></a>
+
 
 #### <span class="mw-headline">Create the xstartup file </span>
 
@@ -239,7 +238,7 @@ Make the file executable:
 
     $ chmod u+x xstartup
 
-<a href="" id="Setup_your_VNC_user"></a>
+
 
 #### <span class="mw-headline">Setup your VNC user </span>
 
@@ -249,7 +248,7 @@ Set the user's private VNC connection password
 
 -   You will be required to confirm your password.
 
-<a href="" id="Start_the_VNC_server"></a>
+
 
 #### <span class="mw-headline">Start the VNC server </span>
 
@@ -263,7 +262,7 @@ start the server:
     syntax errors -- these are normal. If you see **\[ OK \]** then the
     service has started properly.
 
-<a href="" id="Connect_to_your_VNC"></a>
+
 
 #### <span class="mw-headline">Connect to your VNC </span>
 
@@ -279,7 +278,7 @@ Example: 64.25.25.25:1
 
 To close the connection simple close the window.
 
-<a href="" id="Stopping_the_VNC_Server"></a>
+
 
 #### <span class="mw-headline">Stopping the VNC Server </span>
 

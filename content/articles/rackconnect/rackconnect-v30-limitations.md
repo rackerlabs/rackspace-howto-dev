@@ -35,7 +35,7 @@ The following table describes the limitations of RackConnect v3.0.
 </ul></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong><strong><a href="" id="cloudnetworks"></a>Cloud Networks</strong></strong></p></td>
+<td align="left"><p><strong><strong><a href=""></a>Cloud Networks</strong></strong></p></td>
 <td align="left"><ul>
 <li>Cloud Networks limitations also apply to cloud networks that are associated with RackConnect v3.0. For example, Cloud Networks is currently limited to 10 isolated networks and up to 250 cloud servers per network; these limitations also apply to cloud networks that are associated with RackConnect v3.0. For a list of current Cloud Networks limitations, see the articles <a href="/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server">Create an Isolated Cloud Network</a> and <a href="/how-to/cloud-networks-faq">Cloud Networks FAQ</a>.</li>
 </ul>

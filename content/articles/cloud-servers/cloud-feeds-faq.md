@@ -4,8 +4,8 @@ title: Cloud Feeds FAQ
 type: article
 created_date: '2014-07-31'
 created_by: David Hendler
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Kelly Holcomb
 product: Cloud Servers
 body_format: tinymce
 ---

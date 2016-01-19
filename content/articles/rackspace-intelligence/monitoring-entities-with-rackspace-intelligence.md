@@ -45,16 +45,16 @@ on the list of entities:
 -   [Visualize an
     entity](/how-to/monitoring-entities-with-rackspace-intelligence)
 
-<a href="" id="sort-entities"></a>Sort entities
------------------------------------------------
+Sort entities
+-----------------
 
 You can sort the list of monitored entities by entity name, by the
 number of alarms reported for each entity in the Critical, Warning, and
 OK categories, and by the number of monitoring checks reported for each
 entity.
 
-<a href="" id="see-details-entities"></a>View the details of an entity
-----------------------------------------------------------------------
+View the details of an entity
+---------------------------------
 
 All the entity labels in Rackspace Intelligence are linked to an entity
 details page. To view the details page for an entity, click on the
@@ -70,8 +70,8 @@ If the entity is a cloud server, the details page provides the same
 information that you can get about the server by using the Cloud Control
 Panel or by logging in to the server itself.
 
-<a href="" id="create-entities"></a>Create an entity
-----------------------------------------------------
+Create an entity
+--------------------
 
 1.  To create a new entity, on the Monitoring page, click **Create
     Entity**.
@@ -84,8 +84,8 @@ Rackspace Intelligence creates the entity and displays the information
 on the entity details page. You can now update the entity by adding an
 IP address or a check. See the next section for instructions.
 
-<a href="" id="update-entities"></a>Update an entity
-----------------------------------------------------
+Update an entity
+--------------------
 
 You can update an existing entity by clicking the **Actions** menu at
 the top of the entity details page.
@@ -103,7 +103,7 @@ You can perform the following updates on an entity:
 -   [Create a
     suppression](/how-to/monitoring-entities-with-rackspace-intelligence)
 
-### <a href="" id="rename-entities"></a>Rename an entity
+### Rename an entity
 
 1.  To rename an entity, select **Rename Entity** from the
     **Actions** menu.
@@ -112,7 +112,7 @@ You can perform the following updates on an entity:
 
 The new name appears on the entity details page.
 
-### <a href="" id="adding-ip-address"></a>Add an IP address to an entity
+### Add an IP address to an entity
 
 You can add one or more IP addresses to an entity. You can reference
 these IP addresses by the checks on the entity.
@@ -126,7 +126,7 @@ these IP addresses by the checks on the entity.
 
 The IP addresses that you added appear on the entity details page.
 
-### <a href="" id="deleting-entity"></a>Delete an entity
+### Delete an entity
 
 1.  To delete an entity, select **Delete Entity** from the
     **Actions** menu.
@@ -136,7 +136,7 @@ The IP addresses that you added appear on the entity details page.
 The entity is permanently deleted from the database and is no longer
 monitored by Rackspace.
 
-### <a href="" id="creating-check"></a>Create a check for an entity
+### Create a check for an entity
 
 1.  To create a check for an entity, select **Create Check** from the
     **Actions** menu.
@@ -154,7 +154,7 @@ check details page. If your check requires a monitoring agent to be
 installed to collect metrics, a message is displayed in the **Check
 Details** section.
 
-### <a href="" id="create-suppression"></a>Create a suppression
+### Create a suppression
 
 1.  To create a suppression, select **Create Suppression** from the
     **Actions** menu.
@@ -176,8 +176,8 @@ the **Suppression Targets** section.
 For more information about suppressions, see [Working with notification
 suppressions](/how-to/working-with-notification-suppressions-in-rackspace-intelligence).
 
-<a href="" id="visualize-entity"></a>Visualize an entity
---------------------------------------------------------
+Visualize an entity
+-----------------------
 
 In the list of entities, click in the **Visualize** column of the row
 for an entity to launch a **Default Graphs** presentation for the

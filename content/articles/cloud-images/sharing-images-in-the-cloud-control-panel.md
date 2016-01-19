@@ -254,7 +254,7 @@ If you don't want to boot from the image now and want to postpone the
 decision to accept or reject the image, simply close the dialog box and
 the notification will remain.
 
-### **<a href="" id="rejectAfterAccept"></a>Reject an image after accepting it**
+### **Reject an image after accepting it**
 
 If you accept an image and then decide later that you don't want it, you
 can reject it.
@@ -263,7 +263,7 @@ can reject it.
 2.  Click the gear icon to the left of the image name, and
     select **Remove Image**.
 
-### **<a href="" id="acceptAfterReject"></a>Accept an image after rejecting it**
+### **Accept an image after rejecting it**
 
 If you reject an image and decide later that you want it after all, you
 must notify the image producer and ask that the image be re-shared with

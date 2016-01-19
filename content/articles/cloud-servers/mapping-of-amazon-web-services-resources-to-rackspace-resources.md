@@ -62,7 +62,7 @@ Services](/how-to/migrating-to-the-rackspace-cloud-from-amazon-web-services)
 
 
 
-### <a href="" id="instancetypes"></a>Mapping of EC2 instance types to Rackspace Cloud instance types
+### Mapping of EC2 instance types to Rackspace Cloud instance types
 
 The following table maps Amazon EC2 instance types to equivalent
 Rackspace Cloud instance types so that you can select an appropriate

@@ -40,7 +40,7 @@ Servers](/how-to/getting-started-with-cloud-servers-0)
 </tbody>
 </table>
 
-<a href="" id="Add_your_system_User"></a>
+
 
 <span class="mw-headline">Add your system User </span>
 ------------------------------------------------------
@@ -51,7 +51,7 @@ as easy as creating a new valid linux system user.
         # useradd test
         # passwd test
 
-<a href="" id="Disable_SSH_access_for_FTP_users"></a>
+
 
 <span class="mw-headline">Disable SSH access for FTP users </span>
 ------------------------------------------------------------------
@@ -65,7 +65,7 @@ modify your users:
 
     usermod -s /sbin/nologin test
 
-<a href="" id="Chroot_a_user"></a>
+
 
 <span class="mw-headline">Chroot a user </span>
 -----------------------------------------------

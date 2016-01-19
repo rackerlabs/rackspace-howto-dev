@@ -41,8 +41,8 @@ public folders in the Cloud Office Control Panel:
         subfolder](#searchforfolderorsub)
 -   [Edit mail settings](#editmailsettings)
 
-**<a href="" id="Publicfolderlistings"></a>Public folder list**
----------------------------------------------------------------
+**Public folder list**
+--------------------------
 
 When you click on **Folders**, a page that lists all of your public
 folders is displayed.
@@ -57,7 +57,7 @@ folders that you have created:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Basic_a.png" height="250" />
 
-### **<a href="" id="Managepublicfolders"></a>Manage your public folders**
+### **Manage your public folders**
 
 You click the gear icons on the Public Folders page to manage your
 folders. Clicking the gear icon displays a menu from which you can
@@ -66,7 +66,7 @@ delete a specific folder. Additionally, on this page you can bulk delete
 folders, create new folders, and manage different components of the
 folder.
 
-### **<a href="" id="createnewfolder"></a>Create a new folder**
+### **Create a new folder**
 
 As an admin, you can create a new folder by performing the following
 steps:
@@ -83,7 +83,7 @@ steps:
 8.  Click **Save** to create the folder.
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Create_a.png" height="250" />
 
-### **<a href="" id="deleteafolder"></a>Delete a Folder**
+### **Delete a Folder**
 
 1.  In the list on the Folders page, click the gear icon next to the
     folder that you want to delete.
@@ -92,7 +92,7 @@ steps:
 3.  In the confirmation pop up box, click **Delete Folder**, to
     permanently delete the folder.
 
-### **<a href="" id="bulkfolderdelete"></a>Bulk-delete folders**
+### **Bulk-delete folders**
 
 From the list of public folders, you can delete multiple folders at once
 (bulk delete).
@@ -109,7 +109,7 @@ From the list of public folders, you can delete multiple folders at once
 3.  In the confirmation popup box, click **Delete Folders** to
     permanently delete the selected folders.
 
-### **<a href="" id="folderrename"></a>Rename a folder**
+### **Rename a folder**
 
 1.  In the list of folders on the Folders page, click the gear icon next
     to the folder that you want to rename.
@@ -117,7 +117,7 @@ From the list of public folders, you can delete multiple folders at once
 3.  Click **Rename**.
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rename_a.png" height="250" />
 
-### **<a href="" id="publicfolderchildsubfolderview"></a>View and create subfolders (child folders)**
+### **View and create subfolders (child folders)**
 
 The option to expand folders to see their child folders, or
 **subfolders**, has changed. To view the subfolders that have been
@@ -136,7 +136,7 @@ You can crat a subfolder in the following ways:
 -   By clicking the parent's folder and creating a subfolder from the
     subfolder list page
 
-### **<a href="" id="createsubfolerinparent"></a>Create a subfolder from the parent folder's page**
+### **Create a subfolder from the parent folder's page**
 
 1.  Click the gear icon next to the folder for which you want to
     create subfolders.
@@ -149,7 +149,7 @@ You can crat a subfolder in the following ways:
 8.  Select or edit the reply-to address.
 9.  Click **Save** to create the folder.
 
-#### **<a href="" id="ceatesubfolderfrompubliclisting"></a>Create a subfolder from public folder listing page**
+#### **Create a subfolder from public folder listing page**
 
 1.  Click the gear icon.
 2.  Click **Create Subfolder**.
@@ -158,7 +158,7 @@ You can crat a subfolder in the following ways:
 5.  Select whether or not this will be a mail enabled folder.
 6.  Click **Save** to create the folder.
 
-#### **<a href="" id="createsubfolderfromchildsublisting"></a>Create a subfolder from the subfolder list page**
+#### **Create a subfolder from the subfolder list page**
 
 1.  In the folder list, click the name of the folder for which you want
     to create a subfolder.
@@ -171,7 +171,7 @@ You can crat a subfolder in the following ways:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/subfolders2_a.png" height="250" />
 
-#### **<a href="" id="searchforfolderorsub"></a>Search for a specific folder or subfolder**
+#### **Search for a specific folder or subfolder**
 
 You can find a specific folder in the following ways:
 
@@ -185,7 +185,7 @@ You can find a specific folder in the following ways:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/search.png" width="500" />
 
-### **<a href="" id="editmailsettings"></a>Edit Mail Settings**
+### **Edit Mail Settings**
 
 You can edit the mail settings for a folder by performing the following
 steps.

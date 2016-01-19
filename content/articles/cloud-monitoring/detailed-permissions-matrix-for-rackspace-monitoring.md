@@ -593,7 +593,7 @@ alarms defined for that entity.</span>
 
 <span>Creates a new check and associates it with an entity using the
 parameters listed
-in <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes" class="link" title="Table 4.3. Attributes">Attributes.</a></span>
+in [Attributes.](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes "Table 4.3. Attributes")</span>
 
 <span>Test Existing Check</span>
 
@@ -683,7 +683,7 @@ to update.</span>
 
 <span>Creates a new alarm for the specified entity. Specify the alarm's
 characteristics using a valid set of parameters from the table shown in
-the <a href="https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarms" class="link" title="Table 4.10. Attributes">Attributes</a>.</span>
+the [Attributes](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarms "Table 4.10. Attributes").</span>
 
 <span>Test New Alarm</span>
 
@@ -1082,8 +1082,8 @@ two points in time.</span>
 
 
 
-<a href="" id="monitoring"></a>Cloud Monitoring Terminology
------------------------------------------------------------
+Cloud Monitoring Terminology
+--------------------------------
 
 ### Agent
 

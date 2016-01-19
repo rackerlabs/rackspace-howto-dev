@@ -94,7 +94,7 @@ Before you begin using Rackspace Intelligence
 You can use Rackspace Intelligence most effectively if you prepare
 yourself by learning its terminology and exploring its user interface.
 
-### <a href="" id="concepts"></a>Learn Rackspace Intelligence vocabulary
+### Learn Rackspace Intelligence vocabulary
 
 To be able to fully use the features Rackspace Intelligence offers, you
 need to familiarize yourself with the basic concepts about entity
@@ -102,7 +102,7 @@ monitoring and metrics. See [Learning the Rackspace Intelligence
 vocabulary](/how-to/learning-the-rackspace-intelligence-vocabulary) for
 more details.
 
-### <a href="" id="ui-intro"></a>Explore the Rackspace Intelligence user interface
+### Explore the Rackspace Intelligence user interface
 
 Actions that you can perform in the user interface are grouped into four
 sections:  **Monitor**, **Suppress**, **Notify**, **Visualize**. Within
@@ -113,8 +113,8 @@ more details.
 
 ------------------------------------------------------------------------
 
-<a href="" id="login"></a>Log in
---------------------------------
+Log in
+----------
 
 If you have a Rackspace cloud account, you are authorized to use
 Rackspace Intelligence.
@@ -142,8 +142,8 @@ available to Rackspace Intelligence.
 
 ------------------------------------------------------------------------
 
-<a href="" id="ui-using"></a>Using the Rackspace Intelligence dashboard
------------------------------------------------------------------------
+Using the Rackspace Intelligence dashboard
+----------------------------------------------
 
 You can use the Rackspace Intelligence dashboard to examine and manage
 how Rackspace Intelligence interacts with your infrastructure. The
@@ -161,13 +161,13 @@ You can also use the Rackspace Intelligence dashboard to [generate
 graphs](/how-to/getting-started-with-rackspace-intelligence) to
 visualize infrastructure status.
 
-### <a href="" id="define-infrastructure"></a>Identify infrastructure to be monitored
+### Identify infrastructure to be monitored
 
 You can use the **Monitor**, **Suppress**, **Notify**,
 and **Visualize** sections of the interface to examine events in your
 configuration.
 
-#### <a href="" id="monitor-entities"></a>Monitor entities
+#### Monitor entities
 
 The [list of
 entities](/how-to/monitoring-entities-with-rackspace-intelligence) identifies
@@ -176,7 +176,7 @@ of known entities, you can perform management functions such
 as [defining new
 entities](/how-to/monitoring-entities-with-rackspace-intelligence#create-entities).
 
-#### <a href="" id="manage-checks-and-alarms"></a>Create and manage checks and alarms
+#### Create and manage checks and alarms
 
 Rackspace Intelligence provides a wizard that lets you [create
 monitoring
@@ -189,7 +189,7 @@ checks](/how-to/working-with-checks) and
 [editing your
 alarms](/how-to/working-with-alarms).
 
-#### <a href="" id="monitor-open-alerts"></a>Monitor open alerts
+#### Monitor open alerts
 
 The [list of open
 alerts](/how-to/monitoring-open-alerts-with-rackspace-intelligence) identifies
@@ -202,7 +202,7 @@ directly means that, whether or not you were
 automatically [notified](/how-to/working-with-notifications-in-rackspace-intelligence) of
 a status change, you can investigate infrastructure status in context.
 
-### <a href="" id="report-status"></a>Report infrastructure status
+### Report infrastructure status
 
 When Rackspace Intelligence detects a status change, it can report its
 findings by sending email or a text message. Rackspace Intelligence can
@@ -230,7 +230,7 @@ To investigate status changes while notifications were suppressed, you
 can [examine the suppression
 log](/how-to/examining-the-log-of-alerts-suppressed-by-rackspace-intelligence).
 
-### <a href="" id="visualize"></a>Visualize infrastructure status
+### Visualize infrastructure status
 
 Rackspace Intelligence can report its findings visually with predefined
 or custom graphs:

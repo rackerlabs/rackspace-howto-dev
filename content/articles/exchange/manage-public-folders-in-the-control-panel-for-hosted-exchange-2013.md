@@ -42,8 +42,8 @@ working with public folders in the control panel:
     -   [Authorization to add, delete, or modify
         content](#adddeletemodifycontent)
 
-<a href="" id="publicfolderlistings"></a>Public folder list
------------------------------------------------------------
+Public folder list
+----------------------
 
 When you click **Folders**, a page that lists all of your public folders
 is displayed.
@@ -58,8 +58,8 @@ folders that you have created:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Basic_0.png" width="757" height="264" />
 
-<a href="" id="managefolders"></a>Manage your public folders
-------------------------------------------------------------
+Manage your public folders
+------------------------------
 
 You click the gear icons on the Public Folders page to manage your
 folders.  Clicking the gear icon displays a menu from which you can
@@ -70,7 +70,7 @@ folder.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Manage_0.png" width="740" height="269" />
 
-### <a href="" id="createnewfolder"></a>Create a new folder
+### Create a new folder
 
 As an admin, you can create a new folder by performing the following
 steps:
@@ -86,7 +86,7 @@ steps:
 7.  Select or edit the reply-to address.
 8.  Click **Save** to create the folder
 
-### <a href="" id="deletefolder"></a>Delete a folder
+### Delete a folder
 
 1.  In the list on the Folders page, click the gear icon next to the
     folder that you want to delete.
@@ -94,7 +94,7 @@ steps:
 3.  In the confirmation popup box, click **Delete Folder** to
     permanently delete the folder.
 
-### <a href="" id="bulkdelete"></a>Bulk-delete folders
+### Bulk-delete folders
 
 From the list of public folders, you can delete multiple folders at once
 (bulk delete).
@@ -109,15 +109,15 @@ From the list of public folders, you can delete multiple folders at once
 3.  In the confirmation popup box, click **Delete Folders** to
     permanently delete the selected folders.
 
-### <a href="" id="renamefolder"></a>Rename a folder
+### Rename a folder
 
 1.  In the list of folders on the Folders page, click the gear icon next
     to the folder that you want to rename.
 2.  Select **Rename**.
 3.  Enter a new name and then click **Rename**.
 
-<a href="" id="viewandcreate"></a>View and create subfolders
-------------------------------------------------------------
+View and create subfolders
+------------------------------
 
 To view the subfolders that have been created under a folder, click the
 name of the parent folder in the list. All of the subfolders nested
@@ -134,7 +134,7 @@ You can create a subfolder in the following ways:
 -   By clicking the parent&rsquo;s folder and creating the subfolder from the
     subfolder list page.
 
-### <a href="" id="createsubfrompubliclisting"></a>Create a subfolder from the parent Folders page
+### Create a subfolder from the parent Folders page
 
 1.  Click the gear icon next to the folder for which you want to
     create subfolders.
@@ -147,7 +147,7 @@ You can create a subfolder in the following ways:
 8.  Select or edit the reply-to address.
 9.  Click **Save** to create the subfolder.
 
-#### <a href="" id="createsubfromchildsublisting"></a>Create a subfolder from the subfolder list page
+#### Create a subfolder from the subfolder list page
 
 1.  In the folder list, click the name of the folder for which you want
     to create a subfolder.
@@ -161,8 +161,8 @@ You can create a subfolder in the following ways:
 8.  Select or edit the reply-to address.
 9.  Click **Save** to create the folder.
 
-<a href="" id="searchforfolderorsub"></a>Search for a specific folder or subfolder
-----------------------------------------------------------------------------------
+Search for a specific folder or subfolder
+---------------------------------------------
 
 You can find a specific folder in the following ways:
 
@@ -176,8 +176,8 @@ You can find a specific folder in the following ways:
     name.
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/search_0.png" width="643" height="169" />
 
-<a href="" id="editmailsettings"></a>Edit mail settings
--------------------------------------------------------
+Edit mail settings
+----------------------
 
 You can edit the mail settings for a folder by performing the following
 steps.
@@ -192,14 +192,14 @@ steps.
 7.  Click **Save**.
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cupcakesandkittens_a.png" width="583" height="315" />
 
-<a href="" id="permissionmanagement"></a>Manage permissions
------------------------------------------------------------
+Manage permissions
+----------------------
 
 Public folders for Hosted Exchange 2013 are managed exclusively through
 the administrator control panel. Any users who need to manage public
 folders must have administrator access.
 
-### <a href="" id="adddeletemodifycontent"></a>Authorization  to add, delete, or modify content
+### Authorization  to add, delete, or modify content
 
 Unlike Exchange 2007 and 2010, individual permissions are no longer
 managed through Outlook for Exchange 2013.  We are working on a release

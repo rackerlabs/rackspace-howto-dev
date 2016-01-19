@@ -1,13 +1,13 @@
 ---
-node_id: 3970
+node_id: 5138
 title: What is an SOA record?
-type: frequently_asked_question
-created_date: '2014-03-25'
-created_by: Nicole Schwartz
-last_modified_date: '2014-03-31'
+type: article
+created_date: '2016-01-19'
+created_by: Rose Contreras
+last_modified_date: '2016-01-19'
 last_modified_by: Rose Contreras
-product: Cloud Hosting
-body_format: tinymce
+product: Cloud DNS
+body_format: full_html
 ---
 
 A Start of Authority (SOA) resource record indicates which DNS name

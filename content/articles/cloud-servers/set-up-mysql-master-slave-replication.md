@@ -36,7 +36,7 @@ Servers base image.
 
 
 
-### <span class="mw-headline"><a href="" id="1"></a>Before you begin</span>
+### <span class="mw-headline">Before you begin</span>
 
 The steps in this article use two cloud servers named db01 and db02.
 Cloud servers have two IP addresses (one public, one private). The
@@ -56,7 +56,7 @@ section.
 
 
 
-### <span class="mw-headline"><a href="" id="2"></a>Create the Cloud Servers</span>
+### <span class="mw-headline">Create the Cloud Servers</span>
 
 Create two Linux cloud servers, using the Centos 6 base image. Use the
 following steps to create each server separately.
@@ -77,7 +77,7 @@ brackets should be replaced with data specific to your setup.
 
 
 
-### <span class="mw-headline"><a href="" id="3"></a>Install MySQL</span>
+### <span class="mw-headline">Install MySQL</span>
 
 You must install the *mysql-server* package on both CentOS Cloud
 Servers.
@@ -141,7 +141,7 @@ enable replication.
 
 
 
-### <span class="mw-headline"><a href="" id="4"></a>Configure replication</span>
+### <span class="mw-headline">Configure replication</span>
 
 A MySQL user is required on the master server (db01) to be used for
 replication.
@@ -251,7 +251,7 @@ replication.
 
 
 
-### <span class="mw-headline"><a href="" id="5"></a>Test replication</span>
+### <span class="mw-headline">Test replication</span>
 
 To test the replication setup, create a new database and associated
 table on db01, and insert data to confirm that the changes are mirrored

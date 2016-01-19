@@ -22,7 +22,7 @@ that drive it.
 -   [Scaling policies](#Scalingpolicies)
 -   [Load Balancers](#LoadBalancers)
 
-#### <a href="" id="Server"></a>Servers
+#### Servers
 
 A *server* is defined as a virtual machine (VM) instance in the
 Rackspace Cloud Servers environment. To create a server, you must
@@ -151,7 +151,7 @@ scaling policies.
 -   [Scaling policies restricted by minimum and maximum values](#minmax)
 -   [Delete servers policy](#DeleteServers)
 
-##### <a href="" id="Scaleupbypercentage"></a>Scale up by percentage policy
+##### Scale up by percentage policy
 
 The following diagram illustrates how a percentage scale-up policy
 translates into a different amount of scaling each time that it is
@@ -166,7 +166,7 @@ configured to respond to anticipated increases in traffic.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/image005_3.png" width="600" height="450" />
 
-##### <a href="" id="minmax"></a>Scaling policies restricted by minimum and maximum values
+##### Scaling policies restricted by minimum and maximum values
 
 The following diagram illustrates how the configured minimum and maximum
 number of servers in the scaling group restricts scale-ups and
@@ -174,7 +174,7 @@ scale-downs.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/image007_3.png" width="600" height="450" />
 
-#####  <a href="" id="DeleteServers"></a>Delete servers policy
+#####  Delete servers policy
 
 The following diagram illustrates how a scale-down policy operates first
 on pending servers (servers in the process of being added) and then on

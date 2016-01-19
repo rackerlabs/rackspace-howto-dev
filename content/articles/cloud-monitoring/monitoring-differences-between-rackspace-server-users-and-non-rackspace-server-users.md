@@ -4,126 +4,87 @@ title: 'Monitoring: Differences Between Rackspace Server Users and Non-Rackspace
 type: article
 created_date: '2014-06-16'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-05'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-19'
+last_modified_by: Kelly Holcomb
 product: Cloud Monitoring
-body_format: tinymce
+body_format: markdown_w_tinymce
 ---
 
-Rackspace Cloud Monitoring can be used on Rackspace servers and
-non-Rackspace servers. When using a Rackspace server, you can be a
-managed or an unmanaged user. There are some differences between what
-you can do in any one of these circumstances. This page describes those
-differences.
+Rackspace Cloud Monitoring can be used with Rackspace servers and non-Rackspace servers. When you are using a Rackspace server, you can be at a Managed Operations service level or a Managed Infrastructure service level. There are some differences between what you can do in any one of these circumstances. This page describes each circumstance.
 
-Please Note: The **Rackspace Managed** **Infrastructure Servers** column
-(in the middle) overlaps at times with both the
-**<span>Rackspace </span>Managed** **Operations Servers** and
-**Unmanaged Non-Rackspace Servers** as the table indicates. There are no
-managed non-Rackspace servers.
+- [Rackspace servers with a Managed Operations service level](#managed-operations)
+- [Rackspace servers with a Managed Infrastructure service level](#managed-infra)
+- [Unmanaged non-Rackspace servers](#unmanaged)
 
-<span>Rackspace </span>Managed Operations Servers
+**Note:** No non-Rackspace servers are managed.
 
-<span>Rackspace </span>Managed Infrastructure Servers
+<a name="managed-operations"></a>
+## Rackspace servers with a Managed Operations service level
 
-Unmanaged Non-Rackspace Servers
-
-Entities for Rackspace servers and databases are managed automatically,
-this means:
-
--   Monitoring entities are created automatically for new Cloud Servers
-    or new Cloud Database.
--   When a Cloud Server or Cloud Database is deleted, the associated
-    entity is deleted in monitoring.
--   When the Cloud Server name is changed, the name is changed in
-    monitoring automatically. (You cannot change the instance name for
-    Cloud Database)
-
-Entities for non-Rackspace servers and databases must be managed
-manually, this means:
-
--   <span>Monitoring entities need to be created manually for new
-    servers</span> <span>.</span> When configuring the default
-    monitoring agent, you either select an entity you already created
-    for it,or let the setup process create one for you.
--   When a server is deleted, you must delete the associated monitoring
-    entity through the API or CLI.
--   When the server name is changed, you must manually change the name
-    in monitoring.
-
-The label for Rackspace Cloud Servers can only be changed on the Cloud
-Server directly. The change will be propagated to monitoring system
-quickly.
-
-The instance name for Cloud Database cannot be changed.
-
-CAN delete monitoring entities or change the label for servers.
-
-Have the default notification plan: **npTechnicalContactsEmail** and
-have an additional notification entry: **npManaged**
-
-Have the default notification plan, **npTechnicalContactsEmail**, only.
-
-The agent only needs the agent token to authenticate with the monitoring
-server. This value is stored as **monitoring\_token** in the agent
-configuration file.
-
-The agent is able to identify the server it is installed on to the
-server.
-
-The agent needs the agent token to authenticate with the monitoring
-server. This value is stored as **monitoring\_token** in the agent
-configuration file.
-
-In addition, the agent needs to know which entity it is installed on.
-This value is the **agent\_id** associated with the entity on the
-monitoring server. This is also a field in the agent configuration file
-
-If you are going to create an image out of a non-Rackspace server to be
-used to spin up more servers, you need to remove the **agent\_id** field
-(*before you generate the image*) in the agent configuration file that
-is generated when you run agent setup. Otherwise, the agent will be
-associated with the same entity that the image was created from and the
-checks won't work properly.
-
-Agent configuration file location:
-
--   Ubuntu, CentOS: /etc/rackspace-monitoring-agent.cfg
--   Windows: c:\\ProgramData\\Rackspace
-    Monitoring\\config\\rackspace-monitoring-agent.cfg
-
-Learn more about agent configuration with the [Install the Cloud
-Monitoring
-Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent)
-article.
-
-By default, the monitoring agent is installed and turned ON and the
-monitoring is configured automatically. For details, see Managed
-accounts Hosting
-([rackspace.com/managed-hosting/](http://rackspace.com/managed-hosting/)).
+- Entities for Rackspace servers and databases are managed automatically, which means:
+  - Monitoring entities are created automatically for new cloud servers or new cloud databases.
+  - When a cloud server or cloud database is deleted, the associated entity is deleted in the monitoring system.
+  - When the cloud server name is changed, the name is changed in monitoring automatically. (You cannot change the instance name for cloud database)
 
 
+- The label for Rackspace Cloud Servers can be changed only on the server directly. The change  propagates to the monitoring system quickly. The instance name for a cloud database cannot be changed.
 
-By default, the monitoring agent must be manually installed. For
-details, see [Manually Configure the
-Agent](http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/install-configure.html#agent-config-manual)
-in the *Cloud Monitoring Getting Started Guide*.
+- These servers have the default notification plan **npTechnicalContactsEmail** and have an additional notification entry, **npManaged**.
 
-For Cloud Database customers, the monitoring agent is installed with
-monitoring configured automatically, by default. For details, see Cloud
-Database documentation
-(<http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/Monitoring_Cloud_Databases-d1e4673.html>).
+- The agent needs the agent token to authenticate with the monitoring server. This value is stored as **monitoring_token** in the agent configuration file. The agent is able to identify the server it is installed on to the server.
 
-N/A
+- By default, the monitoring agent is installed and turned on, and the monitoring is configured automatically. For details, see [Managed accounts hosting](https://www.rackspace.com/dedicated-servers).
 
-You can access some monitoring features through the Control Panel and
-all the features through API. You can see more monitoring features, as
-well as metrics, through the [Cloud
-Intelligence interface](https://intelligence.rackspace.com).
+- For Cloud Databases customers, the monitoring agent is installed with monitoring configured automatically, by default. For details, see the [Cloud Databases documentation](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/).
 
-<span>You can see monitoring features, as well as</span><span> metrics,
-through the </span>[Cloud
-Intelligence interface](https://intelligence.rackspace.com)<span>. </span>
+- You can access some monitoring features through the Cloud Control Panel and all the features through API. You can see more monitoring features, as well as metrics, through the [Cloud Intelligence interface](https://intelligence.rackspace.com/).
+
+<a name="managed-infra"></a>
+## Rackspace servers with a Managed Infrastructure service level
+
+- Entities for Rackspace servers and databases are managed automatically, which means:
+  - Monitoring entities are created automatically for new cloud servers or new cloud databases.
+  - When a cloud server or cloud database is deleted, the associated entity is deleted in the monitoring system.
+  - When the cloud server name is changed, the name is changed in monitoring automatically. (You cannot change the instance name for cloud database)
 
 
+- The label for Rackspace Cloud Servers can be changed only on the server directly. The change propagates to the monitoring system quickly. The instance name for a cloud database cannot be changed.
 
+- These servers have the default notification plan **npTechnicalContactsEmail** only.
+
+- The agent needs the agent token to authenticate with the monitoring server. This value is stored as **monitoring_token** in the agent configuration file. The agent is able to identify the server it is installed on to the server.
+
+- By default, the monitoring agent must be manually installed. For details, see the [Cloud Monitoring documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-and-configure-the-agent).
+
+- For Cloud Databases customers, the monitoring agent is installed with monitoring configured automatically, by default. For details, see the [Cloud Databases documentation](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/)
+
+- You can access some monitoring features through the Cloud Control Panel and all the features through API. You can see more monitoring features, as well as metrics, through the [Cloud Intelligence interface](https://intelligence.rackspace.com/).
+
+<a name="unmanaged"></a>
+## Unmanaged non-Rackspace servers
+
+- Entities for non-Rackspace servers and databases must be managed manually, this means:
+  - Monitoring entities need to be created manually for new servers . When configuring the default monitoring agent, you either select an entity you already created for it,or let the setup process create one for you.
+  - When a server is deleted, you must delete the associated monitoring entity through the API or CLI.
+  - When the server name is changed, you must manually change the name in monitoring.
+
+
+- Monitoring entities can be deleted, and the label for servers can be changed.
+
+- These servers have the default notification plan **npTechnicalContactsEmail** only.
+
+- The agent needs the agent token to authenticate with the monitoring server. This value is stored as **monitoring_token** in the agent configuration file.
+
+  In addition, the agent needs to know the entity on which it is installed. This value is the **agent_id** associated with the entity on the monitoring server. This is also a field in the agent configuration file.
+
+  If you are going to create an image from a non-Rackspace server to be used to create more servers, you need to remove the **agent_id field**, *before you generate the image*, in the agent configuration file that is generated when you run the agent setup. Otherwise, the agent will be associated with the entity from which the image was created and the checks won't work properly.
+
+  Agent configuration file are located at the following paths:
+  - Ubuntu, CentOS: **/etc/rackspace-monitoring-agent.cfg**
+  - Windows: **c:\ProgramData\Rackspace Monitoring\config\rackspace-monitoring-agent.cfg**
+
+  To learn more about agent configuration, see [Install and configure the Rackspace Monitoring Agent](https://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent).
+
+- By default, the monitoring agent must be manually installed. For details, see the [Cloud Monitoring documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-and-configure-the-agent).
+
+- You can see monitoring features, as well as metrics, through the [Cloud Intelligence interface](https://intelligence.rackspace.com/).

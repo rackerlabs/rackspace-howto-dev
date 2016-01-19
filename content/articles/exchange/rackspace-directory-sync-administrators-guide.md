@@ -108,7 +108,7 @@ change any information, such as passwords, using Outlook Web App or
 Control Panel, your mailboxes will not be synchronized with Active
 Directory.
 
-### <a href="" id="domain names">Domain names</a>
+### [Domain names]()
 
 Directory Sync synchronizes one local Active Directory domain with
 multiple email domains.
@@ -116,7 +116,7 @@ multiple email domains.
 The domain names can be the same or different. You specify the local
 Active Directory domain at set up.
 
-### <a href="" id="security groups">Security Groups</a>
+### [Security Groups]()
 
 Directory Sync uses Active Directory security groups to manage which
 objects are synchronized with your email service. If you use Hosted
@@ -128,13 +128,13 @@ Email, you will have two security groups. Directory Sync creates and
 manages mailboxes for all user objects that you add to the security
 groups.
 
-### <a href="" id="user mailboxes">User Mailboxes</a>
+### [User Mailboxes]()
 
 Directory Sync associates Active Directory user objects with email
 accounts by their mail attribute. The mail attribute is the email
 address property associated with the user.
 
-### <a href="" id="password sync">Password synchronization</a>
+### [Password synchronization]()
 
 Password synchronization occurs *after* the user object has synchronized
 to the mailbox. Password changes occur on their own synchronization
@@ -157,14 +157,14 @@ domain controllers. It is used to synchronize password changes on
 secondary domain controllers to the primary domain controller and then
 synchronize those changes to Rackspace Hosted Mail.
 
-### <a href="" id="dl member sync">Distribution list membership synchronization</a>
+### [Distribution list membership synchronization]()
 
 Synchronize users within distribution lists or security groups from
 Active Directory to distribution list membership within the Email
 Control Panel. Directory Sync uses the group&rsquo;s email address property to
 synchronize with the Hosted Exchange distribution list.
 
-### <a href="" id="exchange contacts">Exchange contacts</a>
+### [Exchange contacts]()
 
 Synchronize contact objects within Active Directory to your Exchange
 contacts within the Hosted Exchange environment. Within Active
@@ -172,7 +172,7 @@ Directory, you can set up the external email address to which the
 contact will forward. Directory Sync uses the contact object&rsquo;s mail
 attribute to set this.
 
-### <a href="" id="alternate address sync">Alternate email addresses (Optional Synchronization)</a>
+### [Alternate email addresses (Optional Synchronization)]()
 
 The `proxyAddresses` attribute is used to create alternate email
 addresses (aliases) for the Hosted Exchange environment. If the user has

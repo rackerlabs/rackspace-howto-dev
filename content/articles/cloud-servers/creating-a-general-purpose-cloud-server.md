@@ -21,17 +21,15 @@ Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-server
 
 2.  [Create a server from a saved image](#fromsavedimage), or [create a
     new server](#createnew).
-    -   <a href="" id="fromsavedimage"></a>To create a server from a
-        previously saved image, select **Servers &gt; Saved Images**.
-        Click the gear icon next to the image that you want to use to
-        create the server, and select **Create Server with Image**. Skip
-        to step 3.
+    -   To create a server from a previously saved image,
+        select **Servers &gt; Saved Images**. Click the gear icon next
+        to the image that you want to use to create the server, and
+        select **Create Server with Image**. Skip to step 3.
 
         ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/SavedImages.png)
 
-    -   <a href="" id="createnew"></a>To create a new server, select
-        **Cloud Servers &gt; Create Servers**, and then click **Create
-        Server**.
+    -   To create a new server, select **Cloud Servers &gt; Create
+        Servers**, and then click **Create Server**.
 
 
 3.  In the **Server Details** section of the Create Servers page, enter

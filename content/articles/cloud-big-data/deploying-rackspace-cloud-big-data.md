@@ -67,8 +67,8 @@ You can create a cluster through the Cloud Control Panel as follows:
 
     <img src="/knowledge_center/sites/default/files/field/image/logintoYourCluster_0.png" width="369" height="385" />
 
-<a href="" id="Choosingacluster"></a> Choosing a Stack
-------------------------------------------------------
+ Choosing a Stack
+---------------------
 
 The various predefined stacks comprise of different services. It is best
 to choose a stack that meets the requirement for all the services that

@@ -35,7 +35,7 @@ body_format: tinymce
 </tbody>
 </table>
 
-<a href="" id="Introduction"></a>
+
 
 <span class="mw-headline">Introduction </span>
 ----------------------------------------------
@@ -50,7 +50,7 @@ each distribution. The purpose of this article is to aid you in making
 the adaptations needed to apply a given set of instructions to your
 Cloud Server.
 
-<a href="" id="Package_Managers_and_Repositories"></a>
+
 
 <span class="mw-headline">Package Managers and Repositories </span>
 -------------------------------------------------------------------
@@ -73,7 +73,7 @@ manager. We've included basic summaries of each of these; however, Linux
 novices would do well to become familiar with the details by reading the
 relevant documentation.
 
-<a href="" id="APT.2FDpkg_.28Debian.2C_Ubuntu.29"></a>
+
 
 ### <span class="mw-headline">APT/Dpkg (Debian, Ubuntu) </span>
 
@@ -114,11 +114,12 @@ relevant documentation.
         aptitude search SEARCHSTRING
 
 For more information on APT-based package management, please see the
-<a href="http://www.debian.org/doc/FAQ/ch-pkgtools.en.html" class="external text" title="http://www.debian.org/doc/FAQ/ch-pkgtools.en.html">Debian GNU/Linux FAQ</a>
-and the
-<a href="http://www.debian.org/doc/manuals/apt-howto/" class="external text" title="http://www.debian.org/doc/manuals/apt-howto/">APT HOWTO</a>.
+[Debian GNU/Linux
+FAQ](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html "http://www.debian.org/doc/FAQ/ch-pkgtools.en.html")
+and the [APT
+HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/manuals/apt-howto/").
 
-<a href="" id="Yum.2FRPM_.28CentOS.2C_Fedora.2C_Red_Hat.29"></a>
+
 
 ### <span class="mw-headline">Yum/RPM (CentOS, Fedora, Red Hat) </span>
 
@@ -171,11 +172,12 @@ and the
         yum groupremove 'GROUP NAME'
 
 For more information on RPM-based package management, please see the
-<a href="http://www.brennan.id.au/07-Package_Management.html" class="external text" title="http://www.brennan.id.au/07-Package_Management.html">Linux Home Server HOWTO</a>
-and
-<a href="http://www.rpm.org/max-rpm/" class="external text" title="http://www.rpm.org/max-rpm/">Maximum RPM</a>.
+[Linux Home Server
+HOWTO](http://www.brennan.id.au/07-Package_Management.html "http://www.brennan.id.au/07-Package_Management.html")
+and [Maximum
+RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
 
-<a href="" id="Pacman_.28Arch.29"></a>
+
 
 ### <span class="mw-headline">Pacman (Arch) </span>
 
@@ -212,9 +214,9 @@ and
         pacman -Ss SEARCHSTRING
 
 For more information on Pacman, please see the
-<a href="http://wiki.archlinux.org/index.php/Pacman" class="external text" title="http://wiki.archlinux.org/index.php/Pacman">ArchWiki</a>.
+[ArchWiki](http://wiki.archlinux.org/index.php/Pacman "http://wiki.archlinux.org/index.php/Pacman").
 
-<a href="" id="Emerge.2FPortage_.28Gentoo.29"></a>
+
 
 ### <span class="mw-headline">Emerge/Portage (Gentoo) </span>
 
@@ -246,10 +248,11 @@ For more information on Pacman, please see the
 
         emerge --searchdesc SEARCHSTRING
 
-For more information on Portage and ebuilds, please see the
-<a href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1" class="external text" title="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;chap=1">Gentoo Linux Documentation</a>.
+For more information on Portage and ebuilds, please see the [Gentoo
+Linux
+Documentation](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1 "http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1").
 
-<a href="" id="But_what_if_the_software_I.27m_looking_for_isn.27t_in_the_repositories.3F"></a>
+
 
 ### <span class="mw-headline">But what if the software I'm looking for isn't in the repositories? </span>
 
@@ -258,13 +261,11 @@ isn't in your package manager's main repositories. There may be many
 reasons for this; usually, the software isn't considered well-known
 enough to be included. The best way to locate a single package like this
 is to search the Internet! The package's website is a good place to
-start.
-<a href="http://rpmfind.net" class="external text" title="http://rpmfind.net">Rpmfind</a>
-is another good source for RPM packages. Once you've located and
-downloaded the package, you can still use your distro's package manager
-to install it.
+start. [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
+good source for RPM packages. Once you've located and downloaded the
+package, you can still use your distro's package manager to install it.
 
-<a href="" id="Installing_from_Source"></a>
+
 
 <span class="mw-headline">Installing from Source </span>
 --------------------------------------------------------

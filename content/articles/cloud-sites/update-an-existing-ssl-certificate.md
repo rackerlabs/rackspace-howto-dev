@@ -37,7 +37,7 @@ Contents
 
 
 
-<a href="" id="Getting_Started"></a>
+
 
 <span class="mw-headline">Getting Started</span>
 ------------------------------------------------
@@ -54,11 +54,10 @@ Renewing Your Certificate
 Next, you will need to update/renew your SSL Certificate. SSL
 Certificates are available from a number of third party sources. Some
 recommended sellers are
-<a href="http://www.rapidssl.com" class="external text" title="http://www.rapidssl.com">RapidSSL</a>,
-<a href="http://www.geotrust.com" class="external text" title="http://www.geotrust.com">Geotrust</a>,
-and
-<a href="http://www.verisign.com" class="external text" title="http://www.verisign.com">Verisign</a>.
-[Click here for a more complete list of supported
+[RapidSSL](http://www.rapidssl.com "http://www.rapidssl.com"),
+[Geotrust](http://www.geotrust.com "http://www.geotrust.com"), and
+[Verisign](http://www.verisign.com "http://www.verisign.com"). [Click
+here for a more complete list of supported
 certificates.](/how-to/supported-ssl-certificates-on-cloud-sites "What kinds of SSL certificates can be installed?")
 
 Follow your vendor's SSL Certificate renewal process; in particular you
@@ -71,7 +70,7 @@ may require the following details:
 Once you have completed your certificate renewal, you're ready to
 [install the new certificate](#Installing_the_Certificate)!
 
-<a href="" id="Installing_the_Certificate"></a>
+
 
 <span class="mw-headline">Installing the Certificate</span>
 -----------------------------------------------------------
@@ -94,7 +93,7 @@ On the next screen, you will see three fields for Certificate, Private
 Key, and Intermediate Certificate; simply replace the current
 information with your updated info and hit save.
 
-<a href="" id="DNS_Update"></a>
+
 
 <span class="mw-headline">DNS Update</span>
 -------------------------------------------
@@ -103,7 +102,7 @@ Because you are updating an existing SSL certificate, you will not need
 to wait for propagation as you would when installing a new SSL
 Certificate.
 
-<a href="" id="What_To_Watch_For"></a>
+
 
 <span class="mw-headline">What To Watch For</span>
 --------------------------------------------------

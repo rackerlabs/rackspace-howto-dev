@@ -20,7 +20,7 @@ To change the the access path for a secondary FTP user, follow these
 steps:
 
 1.  Log in to your Cloud Sites Control Panel at
-    <a href="http://manage.rackspacecloud.com" class="uri" class="external free" title="http://manage.rackspacecloud.com">http://manage.rackspacecloud.com</a>.
+    <http://manage.rackspacecloud.com>.
 2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Click the domain that contains the FTP account that you want
     to alter.

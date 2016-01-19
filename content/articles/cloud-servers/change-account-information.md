@@ -23,8 +23,8 @@ complete them.
 
 
 
-**<a href="" id="new_owner"></a>Company under new ownership or tax ID changed**
--------------------------------------------------------------------------------
+**Company under new ownership or tax ID changed**
+-----------------------------------------------------
 
 If the ownership of your company has changed or the company's tax ID has
 changed, you must inform us of these changes by completing the
@@ -44,8 +44,8 @@ the Cloud Control Panel by using the following steps:
 If you are a Dedicated Hosting customer, you can request this form
 directly from your Account Manager.
 
-**<a href="" id="changed_name"></a>Company name changed**
----------------------------------------------------------
+**Company name changed**
+----------------------------
 
 If your company has filed for a name change with the Secretary of State
 where the company is registered and there was a change in tax ID,
@@ -64,8 +64,8 @@ evidence of the name change:
 Attach these forms to a support ticket with **Company Name Change
 Request** in the subject line.
 
-**<a href="" id="changed_contact"></a>Primary contact listed on the account is no longer with the company or no longer managing the account**
----------------------------------------------------------------------------------------------------------------------------------------------
+**Primary contact listed on the account is no longer with the company or no longer managing the account**
+-------------------------------------------------------------------------------------------------------------
 
 If you have access to the account, you can update the primary contact
 details in the **Account Settings** section in the [Cloud Control
@@ -91,8 +91,8 @@ used.</span>
 To update the billing information, including the billing address and the
 credit card on file, go to the **Billing & Payments** section.
 
-**<a href="" id="best_practices"></a>Best practices for legal change forms**
-----------------------------------------------------------------------------
+**Best practices for legal change forms**
+---------------------------------------------
 
 The forms described in this guide have many required fields that must be
 completed before the Billing team can process the forms. After you have

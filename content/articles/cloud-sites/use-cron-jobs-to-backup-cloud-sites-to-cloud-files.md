@@ -103,7 +103,7 @@ Files](/how-to/cloud-files)
 for more information on setting up your Cloud Files account. Also,
 please note that you may incur any charges associated with using Cloud
 Files. For more information regarding Cloud Files costs please visit ::
-<a href="http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/" class="uri" class="external free" title="http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/">http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/</a>
+<http://www.rackspacecloud.com/cloud_hosting_products/files/pricing/>
 
 Now obtain and set up the PHP API. To download the PHP API documentation
 and files, click [here](https://github.com/rackerlabs/php-cloudfiles).

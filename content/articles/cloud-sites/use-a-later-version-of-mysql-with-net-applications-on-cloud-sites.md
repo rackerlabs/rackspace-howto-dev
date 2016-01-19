@@ -26,8 +26,8 @@ of MySQL:
 MySQL versions 6.4.6 (MySQL) and 6.4.4 (MySQL NuGet) are known to work
 in Cloud Sites and are medium trust compliant.
 
-<a href="" id="visualstudio">Perform a bin deploy with NuGet and Visual Studio 2013</a>
----------------------------------------------------------------------------------------
+[Perform a bin deploy with NuGet and Visual Studio 2013]()
+----------------------------------------------------------
 
 1.  Open Visual Studio and your .NET application.
 
@@ -52,8 +52,8 @@ in Cloud Sites and are medium trust compliant.
 
 5.  Publish your application and upload it to Cloud Sites.
 
-<a href="" id="msi">Perform a bin deploy with an MSI package from MySQL</a>
----------------------------------------------------------------------------
+[Perform a bin deploy with an MSI package from MySQL]()
+-------------------------------------------------------
 
 We recommend running an MSI installation on a development machine to
 avoid installing extra software on a production machine.

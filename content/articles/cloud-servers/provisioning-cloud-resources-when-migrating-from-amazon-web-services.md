@@ -4,8 +4,8 @@ title: Provisioning cloud resources when migrating from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---
@@ -17,13 +17,13 @@ This article describes how to provision your Rackspace Cloud services when migra
 
 Perform the following procedures to provision and configure your cloud instances:
 
-- [Provision a cloud server]("#provision")
-- [Create a customer password (optional)]("#root")
-- [Add Cloud Block Storage (optional)]("#addblock")
-- [Create a Cloud Files container (optional)]("#filecontainer")
-- [Create a Cloud Database instance (optional)]("#createinstance")
-- [Connect to the cloud server]("#connectserver")
-- [Migrate your data]("migrate")
+- [Provision a cloud server](#provision)
+- [Create a customer password (optional)](#root)
+- [Add Cloud Block Storage (optional)](#addblock)
+- [Create a Cloud Files container (optional)](#filecontainer)
+- [Create a Cloud Database instance (optional)](#createinstance)
+- [Connect to the cloud server](#connectserver)
+- [Migrate your data](#migrate)
 
 <a name="provision"> </a>
 ### Provision a new cloud server
@@ -41,7 +41,7 @@ Perform the following procedures to provision and configure your cloud instances
 5. Select the size (flavor) that matches your EC2 instance (RAM and disk space), and click **Create Server**.
     For information about instance size mapping, see [Mapping of Amazon Web Services resources to Rackspace resources](/how-to/mapping-of-amazon-web-services-resources-to-rackspace-resources).
 
-	**Note:** You can add more storage to your cloud server after it is created by adding a Cloud Block Storage volume. For instructions, see [Add Cloud Block Storage]("#addblock") (later in this article).
+	**Note:** You can add more storage to your cloud server after it is created by adding a Cloud Block Storage volume. For instructions, see [Add Cloud Block Storage](#addblock) (later in this article).
 6. When your root admin password is displayed, copy the password to a secure location, and then click **Dismiss Password**.
 
 <a name="root"> </a>

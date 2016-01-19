@@ -14,7 +14,7 @@ For testing and production use of our database server, we'll want to
 create additional roles, as it's not recommended to work regularly in
 our databases as the default superuser role.
 
-<a href="" id="Login"></a>
+
 
 <span class="mw-headline">Login </span>
 ---------------------------------------
@@ -28,13 +28,13 @@ First, we need to login to our slice as a normal Linux user, then:
 
     # sudo su - postgres
 
-<a href="" id="Connect_with_psql"></a>
+
 
 <span class="mw-headline">Connect with psql </span>
 ---------------------------------------------------
 
 Now connect to the database server using the
-<a href="http://www.postgresql.org/docs/8.3/static/app-psql.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-psql.html">psql</a>
+[psql](http://www.postgresql.org/docs/8.3/static/app-psql.html "http://www.postgresql.org/docs/8.3/static/app-psql.html")
 client, as the postgres role:
 
 
@@ -50,7 +50,7 @@ client, as the postgres role:
 
     postgres=#
 
-<a href="" id="Creating_a_Role"></a>
+
 
 <span class="mw-headline">Creating a Role </span>
 -------------------------------------------------
@@ -76,7 +76,7 @@ Did it work? We can check using '\\du' command:
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-<a href="" id="Dropping_a_Role"></a>
+
 
 <span class="mw-headline">Dropping a Role </span>
 -------------------------------------------------
@@ -89,15 +89,15 @@ What if we want to drop (delete, remove) a role? Easy:
 If we check with the '\\du' command we'll see that 'demorole1' is no
 longer listed.
 
-<a href="" id="_createuser_and_dropuser"></a>
+
 
 <span class="mw-headline">Alternative: createuser and dropuser </span>
 ----------------------------------------------------------------------
 
 Alternatively, we can create and drop database roles using the
-<a href="http://www.postgresql.org/docs/8.3/static/app-createuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-createuser.html">createuser</a>
+[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html")
 and
-<a href="http://www.postgresql.org/docs/8.3/static/app-dropuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-dropuser.html">dropuser</a>
+[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html")
 shell commands, which are basically "wrappers" for the CREATE and DROP
 SQL statements. They are included in a standard postgres installation.
 
@@ -112,13 +112,13 @@ let's exit with Ctrl-D or the '\\q' command:
 
 Good, we have a shell prompt as the postgres Linux user.
 
-<a href="" id="createuser"></a>
+
 
 <span class="mw-headline">createuser </span>
 --------------------------------------------
 
 With
-<a href="http://www.postgresql.org/docs/8.3/static/app-createuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-createuser.html">createuser</a>
+[createuser](http://www.postgresql.org/docs/8.3/static/app-createuser.html "http://www.postgresql.org/docs/8.3/static/app-createuser.html")
 we'll create a non-superuser role that has the LOGIN attribute.
 
 
@@ -147,13 +147,13 @@ this:
      postgres  | yes       | yes         | yes       | no limit    | {}
     (2 rows)
 
-<a href="" id="dropuser"></a>
+
 
 <span class="mw-headline">dropuser </span>
 ------------------------------------------
 
 We can drop (delete, remove) a role with the
-<a href="http://www.postgresql.org/docs/8.3/static/app-dropuser.html" class="external text" title="http://www.postgresql.org/docs/8.3/static/app-dropuser.html">dropuser</a>
+[dropuser](http://www.postgresql.org/docs/8.3/static/app-dropuser.html "http://www.postgresql.org/docs/8.3/static/app-dropuser.html")
 shell command:
 
 
@@ -167,7 +167,7 @@ shell command:
 The '-i' flag provides a confirmation prompt, which is a good safety
 measure when running a potentially destructive command.
 
-<a href="" id="Creating_a_superuser"></a>
+
 
 <span class="mw-headline">Creating a superuser </span>
 ------------------------------------------------------

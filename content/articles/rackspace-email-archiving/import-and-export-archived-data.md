@@ -82,8 +82,8 @@ You can also provide search names based on the following criteria:
 -   Recipient
 -   Words or attachments in the body
 
-<a href="" id="maxtime"></a>Time frames for importing and exporting data
-------------------------------------------------------------------------
+Time frames for importing and exporting data
+------------------------------------------------
 
 Following are the *maximum* completion times for both importing and
 exporting:

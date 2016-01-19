@@ -18,8 +18,8 @@ not reliably get through to your intended recipients.
 
 To be able to send email reliably from your server, we recommend you
 sign up for a Rackspace Email account
-(<a href="http://www.rackspace.com/apps/email_hosting/" class="uri" class="external free" title="http://www.rackspace.com/apps/email_hosting/">http://www.rackspace.com/apps/email_hosting/</a>),
-use a relay service like
+(<http://www.rackspace.com/apps/email_hosting/>), use a relay service
+like
 [Mailgun](/how-to/introduction-to-mailgun-email-automation),
 or use any email account that allows you to send email via secure SMTP
 authentication. You can then configure your server to send email through
@@ -41,7 +41,7 @@ password for the account you are going to send the mail to. For our
 other Cloud Servers customer, this article is intended to help you with
 the basic setup.
 
-<a href="" id="Step_by_Step"></a>
+
 
 <span class="mw-headline">Step by Step </span>
 ----------------------------------------------

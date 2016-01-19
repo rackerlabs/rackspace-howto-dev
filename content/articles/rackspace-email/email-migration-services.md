@@ -20,7 +20,7 @@ you have any questions or concerns.
 -   [Rackspace archive services](#Rackspacearchives)
 -   [Internal migration services](#Internalmirgrations)
 
-### **<a href="" id="Externalmigrations"></a>External migration services**
+### **External migration services**
 
 Are you a new customer and require email data to be migrated from
 another provider? Well you&rsquo;re in luck! We've partnered with a 3^rd^
@@ -83,7 +83,7 @@ our services.
 
 
 
-### **<a href="" id="Rackspacearchives"></a>Rackspace archive services**
+### **Rackspace archive services**
 
 -   **Rackspace archive imports**
     -   \$6 per GB via FTP
@@ -94,7 +94,7 @@ our services.
     -   \$6 per GB EML format
     -   \$9 per GB PST format
 
-### **<a href="" id="Internalmirgrations"></a>Internal migration services**
+### **Internal migration services**
 
 Do you have an employee who is going through a name change and needs an
 email account renamed? Does your company need a domain rename? Do you

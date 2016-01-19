@@ -27,7 +27,7 @@ server while networking is being reset on the server.
 To attach an isolated network to an existing cloud server by cloning it
 in the Cloud Control Panel, perform the following steps:
 
-<a href="" id="step4"></a>
+
 
 1.  Log in to the Cloud Control Panel.
 2.  In the Cloud Servers list, click the server to which you want to

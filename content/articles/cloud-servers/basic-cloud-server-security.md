@@ -35,7 +35,7 @@ modifications may be required for other distributions.)
 -   [iptables in RedHat](#iptablesRH)
 -   [If you're locked out...](#If_you.27re_locked_out...)
 
-<a href="" id="Log_in"></a>
+
 
 Log in
 ------
@@ -65,7 +65,7 @@ If you are not using Linux or a Mac on your local computer, the location
 of the known\_hosts file will differ.  Please refer to your own OS for
 details of where this file is kept.
 
-<a href="" id="User_administration"></a>
+
 
 User administration
 -------------------
@@ -109,7 +109,7 @@ adding the line:
 The corrected behavior will take effect after the file has been saved
 and nano has been opened again.
 
-<a href="" id="SSH_keygen"></a>
+
 
 SSH keygen
 ----------
@@ -145,7 +145,7 @@ the Cloud Server.
 The other file is your private key. Never show, give away or keep this
 file on a public computer.
 
-<a href="" id="SSH_copy"></a>
+
 
 SSH copy
 --------
@@ -165,7 +165,7 @@ Change the IP address to your cloud server and the location to your
 admin user's home directory (remember the admin user in this example is
 called demo).
 
-<a href="" id="SSH_Permissions"></a>
+
 
 SSH Permissions
 ---------------
@@ -194,7 +194,7 @@ see the order of things: create the key on your local workstation, copy
 the public key to the Cloud Server, and set the correct permissions for
 the key.
 
-<a href="" id="SSH_config"></a>
+
 
 SSH config
 ----------
@@ -238,7 +238,7 @@ the new port.
 
 That's worth emphasizing:  **Do not restart ssh yet.**
 
-<a href="" id="iptables"></a>
+
 
 iptables in Ubuntu
 ------------------
@@ -338,8 +338,8 @@ Save your changes, and then make the new script executable:
 That should ensure that whenever your network interfaces are brought up
 (usually just at boot time), the firewall will be too.
 
-<a href="" id="iptablesRH"></a>iptables in Red Hat
---------------------------------------------------
+iptables in Red Hat
+-----------------------
 
 If you are using a Red Hat distribution, iptables works a little
 differently.  Using the commands below, you can change your iptables
@@ -400,7 +400,7 @@ ruleset!
 
         # sudo /sbin/service iptables restart
 
-<a href="" id="If_you.27re_locked_out..."></a>
+
 
 Restarting ssh
 --------------

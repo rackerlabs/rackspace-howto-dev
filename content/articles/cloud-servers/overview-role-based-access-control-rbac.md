@@ -201,13 +201,18 @@ API documentation at <https://developer.rackspace.com/docs/>.
 
 
 
-### <a href="" id="enabled"></a>Which products are currently RBAC enabled?
+### Which products are currently RBAC enabled?
 
--   <a href="/how-to/next-generation-cloud-servers-migration-considerations-and-options" class="external-link">Next Generation Servers</a>
--   <a href="/how-to/getting-started-with-cloud-servers-0" class="external-link">First Generation Servers</a>
--   <a href="/how-to/cloud-files-0" class="external-link">Cloud Files</a>
--   <a href="/how-to/cloud-databases" class="external-link">Cloud Databases</a>
--   <a href="/how-to/cloud-load-balancers" class="external-link">Cloud Load Balancers</a>
+-   [Next Generation
+    Servers](/how-to/next-generation-cloud-servers-migration-considerations-and-options)
+-   [First Generation
+    Servers](/how-to/getting-started-with-cloud-servers-0)
+-   [Cloud
+    Files](/how-to/cloud-files-0)
+-   [Cloud
+    Databases](/how-to/cloud-databases)
+-   [Cloud Load
+    Balancers](/how-to/cloud-load-balancers)
 -   [Cloud
     Queues](/how-to/creating-cloud-queues)
 -   [Rackspace
@@ -241,7 +246,7 @@ API documentation at <https://developer.rackspace.com/docs/>.
 
 
 
-### <a href="" id="future"></a>Which products will be RBAC enabled in the future?
+### Which products will be RBAC enabled in the future?
 
 -   Rackspace Orchestration Service
 -   New products as they are launched

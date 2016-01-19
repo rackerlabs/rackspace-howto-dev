@@ -10,7 +10,7 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-<a href="" id="Backing_Up_Your_MySQL_Database"></a>
+
 
 <span class="mw-headline">Backing Up Your MySQL Database</span>
 ---------------------------------------------------------------
@@ -49,7 +49,7 @@ body_format: tinymce
     to complete. You will then be prompted to save the file to
     your desktop.
 
-<a href="" id="Finish_Line"></a>
+
 
 <span class="mw-headline">Finish Line</span>
 --------------------------------------------

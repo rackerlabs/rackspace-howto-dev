@@ -4,8 +4,8 @@ title: Installing NGINX and PHP-FPM  - Setup for PHP-FPM
 type: article
 created_date: '2012-03-13'
 created_by: Kevin Carter
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -73,9 +73,4 @@ DOMAINNAME with your domain name.
 
     ; host-specific php ini settings here
     ; php_admin_value[open_basedir] = /var/www/DOMAINNAME/htdocs:/tmp
-
-### Next steps
-
-[Installing NGINX and PHP-FPM -
-Conclusion](/how-to/installing-nginx-and-php-fpm-conclusion)
 

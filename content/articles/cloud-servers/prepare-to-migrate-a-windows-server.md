@@ -31,8 +31,8 @@ to migrate a Linux server](/how-to/prepare-to-migrate-a-linux-server)<span>.</sp
 
 
 
-<a href="" id="backupData"></a>Back up your data
-------------------------------------------------
+Back up your data
+---------------------
 
 Before you perform any migration, create a tested, file-level backup of
 important data. Rackspace offers a backup solution, Cloud Backup, which
@@ -53,8 +53,8 @@ Backup](/how-to/rackspace-cloud-backup-create-a-backup-0).
 You can find more information about Cloud Backup
 at <http://www.rackspace.com/cloud/backup>.
 
-<a href="" id="verifyServerisPatched"></a>Verify that the server is fully patched
----------------------------------------------------------------------------------
+Verify that the server is fully patched
+-------------------------------------------
 
 If the server is not fully patched, it will likely attempt to install
 remaining patches during the migration, which will delay the operation.
@@ -82,8 +82,8 @@ version.
     there are pending updates to install.
 5.  If so, install the updates at a convenient time.
 
-<a href="" id="checkBootStatus"></a>Check the pending reboot status
--------------------------------------------------------------------
+Check the pending reboot status
+-----------------------------------
 
 A migration can require a server reboot if you're performing a full
 server migration. Verify whether your server is already pending a reboot
@@ -116,16 +116,16 @@ imaging or migrating a server.
     If any pending updates are present, reboot the server and apply the
     updates on reboot.
 
-<a href="" id="pruneOldData"></a>Prune and archive old data
------------------------------------------------------------
+Prune and archive old data
+------------------------------
 
 Remove or export all large or unused files. You can use Cloud Backup to
 export large files to Cloud Files.
 
 Delete old logs.
 
-<a href="" id="truncateLog"></a>Truncate the database log
----------------------------------------------------------
+Truncate the database log
+-----------------------------
 
 If your database log is large, consider truncating it. Microsoft
 provides instructions at
@@ -187,8 +187,8 @@ service.
     stop the service.
     *instanceName* is the instance name of the database server.
 
-<a href="" id="ensureAutoStart"></a>Ensure that all critical services are set to start automatically
-----------------------------------------------------------------------------------------------------
+Ensure that all critical services are set to start automatically
+--------------------------------------------------------------------
 
 Review and confirm that all of the services critical to your processes
 are set to start automatically.
@@ -211,8 +211,8 @@ are set to start automatically.
     service that you want to configure to auto start and set the startup
     type to **Automatic**.
 
-<a href="" id="afterMigration"></a>After the migration
-------------------------------------------------------
+After the migration
+-----------------------
 
 -   Ensure that the server is online. You can ping the IP address by
     running the ping command followed by your server&rsquo;s IP address.

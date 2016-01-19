@@ -19,7 +19,7 @@ Control Panel.
 -   [How does it work?](#work)
 -   [How do I set it up?](#setup)
 
-### Why reverse DNS lookups? <a href="" id="dns"></a>
+### Why reverse DNS lookups?
 
 Reverse DNS records are essential for those running a mail server since
 many recipient servers reject, or mark as spam, all email that
@@ -41,7 +41,7 @@ RDNS can also be very useful when tracking down network issues and was
 the original driving force of RDNS. When pinging a website or IP
 address, one part of the output is the server's RDNS record.
 
-### How does it work? <a href="" id="work"></a>
+### How does it work?
 
 When you enter a domain name into your browser, the DNS system will find
 the IP address of the server the domain is associated with.
@@ -51,7 +51,7 @@ associated with the IP address. This is a useful setting to configure
 for anyone, but it is essential for customers running an outgoing mail
 server on their Cloud Server.
 
-### How do I set it up? <a href="" id="setup"></a>
+### How do I set it up?
 
 You can easily set up reverse DNS through the control panel. Just
 perform these steps:

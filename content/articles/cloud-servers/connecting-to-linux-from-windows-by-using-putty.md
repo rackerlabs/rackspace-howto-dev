@@ -37,20 +37,20 @@ server.
     Terminal](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal), a
     console program included with the operating system.
 
-<a href="" id="Windows_Versions"></a>
+
 
 Windows versions
 ----------------
 
 The procedure and examples in this article use  Windows XP, Service Pack
 2.  Different versions of Windows may have slightly different
-interfaces.<a href="" id="Download_and_install"></a>
+interfaces.
 
 Download PuTTY
 --------------
 
 Download PuTTY from the
-<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/" class="external text" title="http://www.chiark.greenend.org.uk/~sgtatham/putty/">website</a>.
+[website](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "http://www.chiark.greenend.org.uk/~sgtatham/putty/").
 Be sure to comply with the license requirements.
 
 After you download PuTTY, launch the application.
@@ -70,7 +70,7 @@ click **Open**:
 
 ![](http://c768825.r25.cf2.rackcdn.com/1_Connect.png)
 
-<a href="" id="Accept_key"></a>
+
 
 Accept the key
 --------------
@@ -90,7 +90,7 @@ different computer.
 
 
 
-<a href="" id="Username_and_Password"></a>
+
 
 Enter your username and password
 --------------------------------

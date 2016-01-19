@@ -19,8 +19,8 @@ and selecting **Cloud Sites**.
 A task's status can be <span>either </span>enabled or disabled. Use the
 following steps to change the status of a task.
 
-1.  Log in to the
-    <a href="http://manage.rackspacecloud.com" class="external free" title="http://manage.rackspacecloud.com">Cloud Sites Control Panel</a>.
+1.  Log in to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
 2.  In the left navigation, click **Hosting &gt; Cloud Sites**.
 3.  Click the name of the site for which you want to change the
     task status.

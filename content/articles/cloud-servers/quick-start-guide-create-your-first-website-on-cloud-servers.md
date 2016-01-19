@@ -201,8 +201,8 @@ server installed on your cloud server.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.18.png" width="694" height="157" />
 
-<a href="" id="Step2"></a>Upload your code
-------------------------------------------
+Upload your code
+--------------------
 
 The next step is to upload your site. You might be familiar with File
 Transfer Protocol (FTP) as a way to upload files to and download files

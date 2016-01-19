@@ -29,7 +29,8 @@ the administrative email address you used when first registering the
 domain. Your current registrar will send an email to this account that
 will require a reply from you, confirming that the transfer is
 authorized. If you do not have access to this email address, contact
-<a href="http://manage.rackspacecloud.com/SupportMain.do" class="external text" title="http://manage.rackspacecloud.com/SupportMain.do">customer support</a>
+[customer
+support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do")
 for help.
 
 You can do a WHOIS search to find the administrative email and the

@@ -24,7 +24,7 @@ Contents
 -   [3 Summary](#Summary)
 -   [4 Related Articles](#RelatedArticles)
 
-<a href="" id="Introduction"></a>
+
 
 Introduction
 ------------
@@ -36,12 +36,12 @@ Using a key pair makes it impossible for someone to log in by using just
 a password, as long as you set up SSH to deny password-based
 authentication.
 
-<a href="" id="Generate_Keys"></a>
+
 
 Generate Keys
 -------------
 
-<a href="" id="PuTTYgen"></a>
+
 
 In Windows, use PuTTYgen to generate our public and private keys.
 
@@ -64,7 +64,7 @@ In Windows, use PuTTYgen to generate our public and private keys.
     into the public key tool in the Control Panel or directly into the
     authorized keys on your cloud server.
 
-### <a href="" id="Usage"></a>Use the Key Pair
+### Use the Key Pair
 
  <span>You can use the RSA key pair in the following ways: </span>
 
@@ -137,7 +137,7 @@ connecting.
 After you save your session, your key is loaded automatically whe you
 connect to your Cloud Server.
 
-<a href="" id="Summary"></a>
+
 
 Summary
 -------

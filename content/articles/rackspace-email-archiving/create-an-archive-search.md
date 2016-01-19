@@ -72,7 +72,7 @@ in Cloud Office.
 
 
 
-**<a href="" id="advancedSearch"></a>Advanced search**
+**Advanced search**
 
 Sometimes your search results can be too large to sort through, and in
 cases when you are looking for something specific, it is often best to

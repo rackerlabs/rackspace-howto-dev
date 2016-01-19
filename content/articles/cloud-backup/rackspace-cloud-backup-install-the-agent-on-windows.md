@@ -352,8 +352,8 @@ The following changes should occur:
 
 
 
-<a href="" id="uninstallwindows"></a>Uninstall the agent from older versions of Windows
----------------------------------------------------------------------------------------
+Uninstall the agent from older versions of Windows
+------------------------------------------------------
 
 **Note**: Complete the following steps **ONLY** if unistalling the agent
 from Window's agent version 1.18 or lower. You can check your agent

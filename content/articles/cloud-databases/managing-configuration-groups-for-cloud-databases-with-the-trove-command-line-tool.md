@@ -32,7 +32,7 @@ to manage configuration groups.
 Configuration groups and configuration parameters
 -------------------------------------------------
 
-<a href="" id="configgroups"></a>
+
 
 A *configuration group* is a collection of settings that can be saved
 and applied to one or more instances in Cloud Databases.
@@ -48,7 +48,7 @@ with the `default_time_zone` parameter.
 Installing python-troveclient
 -----------------------------
 
-<a href="" id="install"></a>
+
 
 The `python-troveclient` package installs the `trove` command by using
 the Python package manager tool [pip](https://pypi.python.org/pypi/pip).
@@ -69,7 +69,7 @@ run the following command:
 Command options
 ---------------
 
-<a href="" id="options"></a>
+
 
 Some options used by the commands in this article require further
 explanation or have specific requirements.
@@ -83,7 +83,7 @@ explanation or have specific requirements.
 
 ### value pairs option
 
-<a href="" id="valuepairs"></a>
+
 
 The value pairs option represents one or more parameter name and value
 pairs. The entry should be in JSON object format, enclosed in single
@@ -110,7 +110,7 @@ that many bytes (104857600).
 
 ### datastore type option
 
-<a href="" id="datastoretype"></a>
+
 
 The datastore type option refers to a valid datastore (database engine)
 type that can be run on an instance. We recommend using the ID of the
@@ -121,7 +121,7 @@ although you can use the name of the datastore type.
 
 ### `datastore_version` option
 
-<a href="" id="datastoreversion"></a>
+
 
 The `datastore_version` option refers to a valid version of a datastore
 that can be run on an instance. We recommend using the ID of the
@@ -136,7 +136,7 @@ version they can be applied to.
 
 ### Configuration group ID option
 
-<a href="" id="configid"></a>
+
 
 The configuration group ID option refers to the ID of an existing
 configuration group. You can see a list of configuration groups and
@@ -146,7 +146,7 @@ their IDs by using `configuration-list` command.
 
 ### Instance ID option
 
-<a href="" id="instanceid"></a>
+
 
 The `instance ID` option refers to the ID of an existing instance. You
 can see a list of instances and their IDs by using the `list` command.
@@ -155,7 +155,7 @@ can see a list of instances and their IDs by using the `list` command.
 
 ### flavor
 
-<a href="" id="flavor"></a>
+
 
 The flavor option refers to the ID of an instance flavor, which
 typically refers to the size of the instance determined by its
@@ -168,14 +168,14 @@ using the `flavor-list` command.
 Creating and deleting configuration groups
 ------------------------------------------
 
-<a href="" id="creatingdeleting"></a>
+
 
 -   [Create a new configuration group](#creategroup)
 -   [Delete a configuration group](#deletegroup)
 
 ### Create a new configuration group
 
-<a href="" id="creategroup"></a>
+
 
 Use the `configuration-create` command with the following options to
 create a new configuration group.
@@ -213,7 +213,7 @@ instance](/how-to/setting-the-time-zone-for-a-cloud-databases-instance).
 
 ### Delete a configuration group
 
-<a href="" id="deletegroup"></a>
+
 
 Use the `configuration-delete` command to delete a configuration group.
 
@@ -235,7 +235,7 @@ changes require that the datastore be restarted.
 
 ### Apply a configuration group to an existing instance
 
-<a href="" id="applyexisting"></a>
+
 
 Use the `configuration-attach` command to assign a configuration group
 to an existing instance.
@@ -268,7 +268,7 @@ applied configuration group's ID (shown as the configuration property).
 
 ### Create a new instance with a configuration group
 
-<a href="" id="createinstance"></a>
+
 
 Use the `create` command to create a new instance that uses a custom
 configuration group.
@@ -302,7 +302,7 @@ The output displays the properties of the new instance.
 
 ### Remove the configuration group from an instance
 
-<a href="" id="removegroup"></a>
+
 
 The `configuration-detach` command clears the configuration assigned to
 an instance and restores the instance to its datastore's default
@@ -313,7 +313,7 @@ configuration.
 Modifying configuration groups
 ------------------------------
 
-<a href="" id="modifying"></a>
+
 
 -   [Change a subset of the parameters of a configuration
     group](#changesubset)
@@ -331,7 +331,7 @@ creating a new one.
 
 ### Change a subset of the parameters of a configuration group
 
-<a href="" id="changesubset"></a>
+
 
 Use the `configuration-patch` command to change only the specified
 parameters for a configuration group.
@@ -366,7 +366,7 @@ unaffected by the change.
 
 ### Replace all parameters of a configuration group
 
-<a href="" id="replaceall"></a>
+
 
 Use the `configuration-update` command to replace all existing
 parameters of a configuration group with the supplied values. Any
@@ -405,11 +405,11 @@ is for `character_set_server`.
 Listing configuration groups
 ----------------------------
 
-<a href="" id="listgroups"></a>
+
 
 ### View all defined and available configuration groups
 
-<a href="" id="viewallgroups"></a>
+
 
 Use the `configuration-list` command to list all configuration groups
 currently defined and available.
@@ -429,7 +429,7 @@ The output would look follows:
 
 ### View all instances associated with a configuration group
 
-<a href="" id="viewallinstances"></a>
+
 
 Use the `configuration-instances` command to list all of the instances
 to which a configuration group is assigned.
@@ -448,7 +448,7 @@ The output would look as follows:
 Viewing configuration details
 -----------------------------
 
-<a href="" id="viewconfig"></a>
+
 
 -   [View details of a configuration group](#viewgroupdetails)
 -   [View properties for a single configuration parameter that can be
@@ -460,7 +460,7 @@ Viewing configuration details
 
 ### View details of a configuration group
 
-<a href="" id="viewgroupdetails"></a>
+
 
 Use the `configuration-show` command to view the details of a
 configuration group, including its name, ID, the datastore version ID
@@ -482,7 +482,7 @@ The output would look as follows:
 
 ### View properties for a single configuration parameter that can be configured for a datastore version
 
-<a href="" id="viewparameter"></a>
+
 
 Use the `configuration-parameter-show` command to view the properties of
 a configuration parameter for a datastore version.
@@ -508,7 +508,7 @@ MySQL 5.1 would look as follows:
 
 ### View all configuration parameters that can be configured for a datastore version
 
-<a href="" id="viewallparameters"></a>
+
 
 Use the `configuration-parameter-list` command to view a list of all the
 parameters that can be configured for a datastore version.
@@ -558,7 +558,7 @@ The output would look as follows:
 
 ### View the default configuration settings for a specific instance
 
-<a href="" id="viewdefault"></a>
+
 
 Use the `configuration-default` command to view the default
 configuration settings for an instance.

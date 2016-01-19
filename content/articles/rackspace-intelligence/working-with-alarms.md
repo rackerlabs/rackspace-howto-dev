@@ -69,8 +69,8 @@ alarm names listed with it.
 Before you can create an alarm, you must have [created a
 check](/how-to/working-with-checks).
 
-<a href="" id="create-alarm"></a>Create an alarm
-------------------------------------------------
+Create an alarm
+-------------------
 
 To create a new alarm, complete the following steps:
 
@@ -136,8 +136,8 @@ To create a new alarm, complete the following steps:
 After the alarm is successfully created, a new alarm details page
 displays the alarm and shows that the alarm has been created.
 
-<a href="" id="editalarm"></a>Edit an alarm
--------------------------------------------
+Edit an alarm
+-----------------
 
 To edit an alarm, click the **Actions** menu on the alarm details page.
 
@@ -148,14 +148,14 @@ You can perform the following editing actions for alarms:
 -   [Edit the alarm criteria](#editalarmcriteria)
 -   [Delete an alarm](#deletealarm)
 
-### <a href="" id="renamealarm"></a>Rename an alarm
+### Rename an alarm
 
 1.  From the **Actions** menu on the alarm details page, select **Rename
     Alarm**.
 2.  In the Rename Alarm dialog box, type a new name in the **Alarm
     Name** box, and click **Save**.
 
-### <a href="" id="editnotificationplan"></a>Edit a notification plan
+### Edit a notification plan
 
 1.  From the **Actions** menu on the alarm details page, select **Edit
     Notification Plan**.
@@ -163,7 +163,7 @@ You can perform the following editing actions for alarms:
     notification plan from the **Notification Plan** list, and click
     **Save**.
 
-### <a href="" id="editalarmcriteria"></a>Edit the alarm criteria
+### Edit the alarm criteria
 
 1.  From the **Actions** menu on the alarm details page, select **Edit
     Criteria**.
@@ -185,7 +185,7 @@ criteria, click the arrow next to **Help Guide and Example Criteria**.
 **Important:** If you update an alarm in advanced mode, you can no
 longer view the alarm criteria in basic mode.
 
-### <a href="" id="deletealarm"></a>Delete an alarm
+### Delete an alarm
 
 1.  From the **Actions** menu on the alarm details page,
     select **Delete**.
@@ -206,7 +206,7 @@ create alarms for different check types.
 -   [Create an alarm for an agent check type without an agent
     installed](#createagenttypealarmwithoutagent)
 
-### <a href="" id="createalarmforremotecheck"></a>Create an alarm for a remote check type
+### Create an alarm for a remote check type
 
 This example provides steps for creating an alarm for an HTTP check.
 This alarm is remote and does not require a monitoring agent to be
@@ -242,7 +242,7 @@ installed. These steps assume that you already created an HTTP check.
 
 The new alarm is displayed on the alarm details page.
 
-### <a href="" id="createagenttypealarmwithagent"></a>Create an alarm for an agent check type with an agent installed
+### Create an alarm for an agent check type with an agent installed
 
 This example provides steps for creating an alarm for a file system
 check. This alarm is an agent-type alarm and requires a monitoring agent
@@ -268,7 +268,7 @@ system check.
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-alarms-filesystem-alarm-settings.png" width="850" height="581" />
     The new alarm is displayed on the alarm details page.
 
-### <a href="" id="createagenttypealarmwithoutagent"></a>Create an alarm for an agent check type without an agent installed
+### Create an alarm for an agent check type without an agent installed
 
 This example provides steps for creating an alarm for a CPU check. This
 alarm is an agent-type alarm and requires a monitoring agent to be

@@ -59,7 +59,7 @@ Control Panel.
 
 
 1. Log into the Cloud Sites Control Panel at
-<a href="https://manage.rackspacecloud.com" class="uri" class="external free" title="https://manage.rackspacecloud.com">https://manage.rackspacecloud.com</a>.
+<https://manage.rackspacecloud.com>.
 
 2\. Click on "Hosting" on the left navigation menu and then click on
 "Cloud Sites".

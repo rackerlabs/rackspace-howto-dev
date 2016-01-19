@@ -28,8 +28,8 @@ rule types is covered in more detail below.
 -   [Restrictions](#restrictions)
 -   [Rule set up](#Rule%20set%20up)
 
-<a href="" id="order"></a>Caching rules
----------------------------------------
+Caching rules
+-----------------
 
 Caching rules control the TTL for your site's content. Setting the TTL
 for content tells the edge servers how long to cache content before
@@ -61,8 +61,8 @@ your content as follows:
 
 
 
-<a href="" id="examples"></a>Origin rules
------------------------------------------
+Origin rules
+----------------
 
 Origin rules are used when you need to pull content from two or more
 origins (web servers, load balancers, etc) for the same CDN service.
@@ -113,8 +113,8 @@ from the origin. However, that is not the case.
 
 
 
-<a href="" id="restrictions"></a>Restrictions
----------------------------------------------
+Restrictions
+----------------
 
 Rackspace CDN enables you to specify restrictions based the following:
 
@@ -206,8 +206,8 @@ address to which the retrictions applies.
 
 
 
-<a href="" id="Rule set up"></a>Rule set up
--------------------------------------------
+Rule set up
+---------------
 
 No matter what type of edge rule you create, the concepts in the
 following sections apply.

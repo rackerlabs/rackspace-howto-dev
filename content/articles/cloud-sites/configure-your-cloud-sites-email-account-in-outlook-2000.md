@@ -14,8 +14,8 @@ body_format: tinymce
 for Cloud Sites. It is provided for legacy support only.
 
 For instructions on setting up a POP or IMAP account in Outlook 2000,
-see the
-<a href="http://cdn.cloudfiles.rackspacecloud.com/c62652/Outlook-2000.pdf" class="external text" title="http://cdn.cloudfiles.rackspacecloud.com/c62652/Outlook-2000.pdf"><em>Setting Up Microsoft&reg; Outlook 2000</em> PDF</a>.
+see the [*Setting Up Microsoft&reg; Outlook 2000*
+PDF](http://cdn.cloudfiles.rackspacecloud.com/c62652/Outlook-2000.pdf "http://cdn.cloudfiles.rackspacecloud.com/c62652/Outlook-2000.pdf").
 
 If you have any questions about mail server names, see [Mail servers for
 Cloud

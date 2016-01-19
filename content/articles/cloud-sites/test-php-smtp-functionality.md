@@ -120,13 +120,12 @@ appropriate values for your system:
     ?>
 
 **Note**:
-<a href="http://pear.php.net/package/Mail" class="external text" title="http://pear.php.net/package/Mail">Mail.php</a>
-is a
-<a href="http://pear.php.net/" class="external text" title="http://pear.php.net/">PEAR</a>
-module and is installed on the server. It is included in the default
-<a href="http://www.php.net/manual/en/ini.core.php" class="external text" title="http://www.php.net/manual/en/ini.core.php#ini.include-path">include_path</a>
+[Mail.php](http://pear.php.net/package/Mail "http://pear.php.net/package/Mail")
+is a [PEAR](http://pear.php.net/ "http://pear.php.net/") module and is
+installed on the server. It is included in the default
+[include\_path](http://www.php.net/manual/en/ini.core.php "http://www.php.net/manual/en/ini.core.php#ini.include-path")
 for PHP, so
-<a href="http://php.net/manual/en/function.require.php" class="external text" title="http://php.net/manual/en/function.require.php">requiring</a>
+[requiring](http://php.net/manual/en/function.require.php "http://php.net/manual/en/function.require.php")
 it here works by default.
 
 Related article

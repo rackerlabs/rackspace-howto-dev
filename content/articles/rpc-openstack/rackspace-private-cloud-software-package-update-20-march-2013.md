@@ -64,8 +64,7 @@ Package Update Changes
 The following list summarizes key changes included in this package
 update. Where relevant, it includes the issue number from the related
 Github repository. All issues addressed in this package update can be
-found at
-<a href="https://github.com/rcbops" class="link">the RCBOPS Github repository</a>.
+found at [the RCBOPS Github repository](https://github.com/rcbops).
 
 The Rackspace Private Cloud Software *Getting Started Guide*, the *CLI
 and API Guide*, and the Knowledge Center content have been updated to

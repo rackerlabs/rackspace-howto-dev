@@ -23,8 +23,8 @@ interface. This article introduces you to some of the features of the
 control panel that will make your daily administration tasks seem
 effortless.
 
-<a href="" id="nav"></a>Control panel navigation
-------------------------------------------------
+Control panel navigation
+----------------------------
 
 With a few clicks, you'll be in the product workspace where you can
 begin managing your cloud resources.

@@ -10,13 +10,12 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-<a href="" id="top"></a>Before you open the migration window for each of
-your cloud servers, you must perform a series of checks to rule out
-common issues that you might encounter with migrations. If your cloud
-server fails any of these checks, a ticket will be created in your
-account so that you can fix the issue before your self-migration window
-opens. This article will help you understand and fix the results of
-these checks.
+Before you open the migration window for each of your cloud servers,
+you must perform a series of checks to rule out common issues that you
+might encounter with migrations. If your cloud server fails any of these
+checks, a ticket will be created in your account so that you can fix the
+issue before your self-migration window opens. This article will help
+you understand and fix the results of these checks.
 
 **Note:** The checks will prevent your server from migrating correctly.
 If your server has not migrated correctly by the end of your window,
@@ -29,12 +28,12 @@ data loss will occur when your source server is decommissioned.
 3.  [Kernel overhead check](#kernel)
 4.  [Inode count check](#inode)
 5.  [PV drivers check](#pv)
-6.  [Nova agent check](#nova)<a href="" id="top"></a>
+6.  [Nova agent check](#nova)
 
-<a href="" id="selinux"></a>
 
-SELinux check<a href="" id="sellinux"></a>
-------------------------------------------
+
+SELinux check
+-----------------
 
 The SELinux check indicates whether SELinux is currently enabled on your
 server. SELinux interferes with several OS-level changes that are made
@@ -45,10 +44,10 @@ You must enable it manually.
 
 [^back\\ to\\ top^](#top)
 
-<a href="" id="diskused"></a>
 
-Disk used check<a href="" id="diskused"></a>
---------------------------------------------
+
+Disk used check
+-------------------
 
 The disk used check compares the amount of space used by your server
 with the total disk size available to determine percentage usage. The
@@ -69,10 +68,10 @@ Linux cloud server, or by checking the properties of your disk from the
 
 [^back\\ to\\ top^](#top)
 
-<a href="" id="kernel"></a>
 
-Kernel overhead check<a href="" id="kernel"></a>
-------------------------------------------------
+
+Kernel overhead check
+-------------------------
 
 In a subset of the First Gen Linux infrastructure, the kernel and
 initial RAM disk are handled by the hypervisor instead of within your
@@ -88,10 +87,10 @@ ensure that you have at least 5 to 10 GB free on your root partition.
 
 [^back\\ to\\ top^](#top)
 
-<a href="" id="inode"></a>
 
-Inode count check<a href="" id="inode"></a>
--------------------------------------------
+
+Inode count check
+---------------------
 
 This check counts the actual number of files on your root file system.
 The check thresholds are as follows:
@@ -113,10 +112,10 @@ Backup is good for this purpose), and remove it from the server.
 
 [^back\\ to\\ top^](#top)
 
-<a href="" id="pv"></a>
 
-PV drivers check<a href="" id="pv"></a>
----------------------------------------
+
+PV drivers check
+--------------------
 
 The majority of the First Gen infrastructure and the entire Next Gen
 infrastructure use XenServer to power the host machines for your cloud
@@ -145,10 +144,10 @@ install these drivers manually.
 
 [^back\\ to\\ top^](#top)
 
-<a href="" id="nova"></a>
 
-Nova agent check<a href="" id="nova"></a>
------------------------------------------
+
+Nova agent check
+--------------------
 
 In the XenServer infrastructure, the OpenStack&reg; guest agent is the same
 as that used in the Next Gen Cloud Servers infrastructure. This nova

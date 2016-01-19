@@ -19,8 +19,8 @@ upgrading.</span>
 -   [Upgrade eligibility](#upgradeeligibility)
 -   [Options for migrating to RackConnect v 3.0](#migrationoptions)
 
-<a href="" id="benefits"></a>Benefits of RackConnect 3.0
---------------------------------------------------------
+Benefits of RackConnect 3.0
+-------------------------------
 
 RackConnect v3.0 provides the following benefits:
 
@@ -88,8 +88,8 @@ RackConnect v3.0 provides the following benefits:
     permissions automatically applied. This is a benefit for highly
     automated operations.
 
-<a href="" id="limitations"></a>Limitations of RackConnect 3.0
---------------------------------------------------------------
+Limitations of RackConnect 3.0
+----------------------------------
 
 RackConnect v3.0 has the following limitations:
 
@@ -121,8 +121,8 @@ RackConnect v3.0 has the following limitations:
     connected network device before making its way to the
     destination network.
 
-<a href="" id="upgradeeligibility"></a>Upgrade eligibility
-----------------------------------------------------------
+Upgrade eligibility
+-----------------------
 
 Some customers might require firewall software version updates to be
 eligible for RackConnect v3.0.  Contact your Rackspace Account Manager
@@ -130,8 +130,8 @@ or Service Delivery Manager for additional details and to ensure that
 you have no other potential issues that would prevent you from upgrading
 to RackConnect v3.0.
 
-<a href="" id="migrationoptions"></a>Options for migrating to RackConnect v 3.0
--------------------------------------------------------------------------------
+Options for migrating to RackConnect v 3.0
+----------------------------------------------
 
 You can follow one of two paths to upgrade to RackConnect v3.0 from
 RackConnect v2.0.

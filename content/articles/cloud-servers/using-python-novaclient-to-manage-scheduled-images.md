@@ -280,8 +280,10 @@ done through the API or python-novaclient.
 More Information
 ----------------
 
--   <a href="/how-to/scheduled-images-faq" class="links" title="Scheduled Images FAQ">Scheduled Images FAQ</a>
--   <a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images" class="links">Scheduled Images API Extension Documentation</a>
+-   [Scheduled Images
+    FAQ](/how-to/scheduled-images-faq "Scheduled Images FAQ")
+-   [Scheduled Images API Extension
+    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images)
 
 
 

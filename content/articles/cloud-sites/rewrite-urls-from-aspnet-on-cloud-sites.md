@@ -68,8 +68,8 @@ In this example, we match **example.asp**, **example.aspx**, and
 
 ### Example 2: Use regular expressions
 
-The URL Rewrite Module also supports
-<a href="http://www.regular-expressions.info/" class="external text" title="http://www.regular-expressions.info/">regular expressions</a>.
+The URL Rewrite Module also supports [regular
+expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
 You can match characters in the incoming URL and then use **{R:\#}**
 (for example, {R:1} and {R:2}) to reference them in the resulting URL.
 In this example, we want to match **article/*id*/*title*** and have it
@@ -143,12 +143,15 @@ to a www.mydomain.com domain.
 ### References
 
 The following references are on
-<a href="http://www.iis.net/" class="external text" title="http://www.iis.net/">iis.net</a>,
-the official Microsoft IIS site:
+[iis.net](http://www.iis.net/ "http://www.iis.net/"), the official
+Microsoft IIS site:
 
--   <a href="http://learn.iis.net/page.aspx/460/using-url-rewrite-module/" class="external text" title="http://learn.iis.net/page.aspx/460/using-url-rewrite-module/">Using the URL Rewrite Module</a>
--   <a href="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/" class="external text" title="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/">Creating Rewrite Rules for the URL Rewrite Module</a>
--   <a href="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/" class="external text" title="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/">URL Rewrite Module Configuration Reference</a>
+-   [Using the URL Rewrite
+    Module](http://learn.iis.net/page.aspx/460/using-url-rewrite-module/ "http://learn.iis.net/page.aspx/460/using-url-rewrite-module/")
+-   [Creating Rewrite Rules for the URL Rewrite
+    Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/")
+-   [URL Rewrite Module Configuration
+    Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
 
 Third-party solutions
 ---------------------
@@ -160,13 +163,14 @@ and created modules that could be deployed to add this functionality
 with little effort on the part of the web developer. Some of these
 third-party modules are as follows:
 
--   <a href="http://www.urlrewriter.net/" class="external text" title="http://www.urlrewriter.net/">UrlRewriter.NET</a>
--   <a href="http://www.urlrewriting.net/" class="external text" title="http://www.urlrewriting.net/">UrlRewritingNet</a>
--   <a href="http://www.isapirewrite.com/" class="external text" title="http://www.isapirewrite.com/">Helicon Tech's ISAPI_Rewrite</a>
+-   [UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/")
+-   [UrlRewritingNet](http://www.urlrewriting.net/ "http://www.urlrewriting.net/")
+-   [Helicon Tech's
+    ISAPI\_Rewrite](http://www.isapirewrite.com/ "http://www.isapirewrite.com/")
 
 For older sites on the Cloud Sites platform, we recommend deploying an
 HttpModule to handle URL rewrites. This article describes using
-<a href="http://www.urlrewriter.net/" class="external text" title="http://www.urlrewriter.net/">UrlRewriter.NET</a> to
+[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/") to
 do this.
 
 ### Get started
@@ -176,10 +180,10 @@ Sites](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites).
 
 ### Use UrlRewriter.NET
 
-UrlRewriter.NET provides a
-<a href="http://urlrewriter.net/index.php/support/reference" class="external text" title="http://urlrewriter.net/index.php/support/reference">full reference guide</a>
-and examples of
-<a href="http://urlrewriter.net/index.php/support/using" class="external text" title="http://urlrewriter.net/index.php/support/using">common rules</a>.
+UrlRewriter.NET provides a [full reference
+guide](http://urlrewriter.net/index.php/support/reference "http://urlrewriter.net/index.php/support/reference")
+and examples of [common
+rules](http://urlrewriter.net/index.php/support/using "http://urlrewriter.net/index.php/support/using").
 When you [bin-deployed
 UrlRewriter.NET](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites "How do I bin deploy an ASP/.NET assembly?"),
 you added a `<configSections>` element, which causes the `rewriter`
@@ -197,8 +201,8 @@ In this example, we match **info** and display the contents of
 
 ### Example 2: Use regular expressions
 
-UrlRewriter.NET also supports
-<a href="http://www.regular-expressions.info/" class="external text" title="http://www.regular-expressions.info/">regular expressions</a>.
+UrlRewriter.NET also supports [regular
+expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
 You can match characters in the incoming URL and then use **\$\#** (for
 example, \$1 and \$2) to reference them in the resulting URL. In this
 example, we want to match **products/*id*** and have it processed by
@@ -210,8 +214,10 @@ example, we want to match **products/*id*** and have it processed by
 
 ### References
 
--   <a href="http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx" class="external text" title="http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx">Tip/Trick: Url Rewriting with ASP.NET</a>
+-   [Tip/Trick: Url Rewriting with
+    ASP.NET](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx "http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx")
     from Scott Guthrie's blog, particularly approach 3
--   <a href="http://urlrewriter.net" class="external text" title="http://urlrewriter.net">UrlRewrite.NET home page</a>
+-   [UrlRewrite.NET home
+    page](http://urlrewriter.net "http://urlrewriter.net")
 
 

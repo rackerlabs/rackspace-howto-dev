@@ -49,33 +49,33 @@ MySQL 4 database to a MySQL 5 database.
         SHOW FULL PROCESSLIST
 
     You can see more information about listing the processes in the
-    MySQL manual
-    <a href="http://dev.mysql.com/doc/refman/5.0/en/show-processlist.html" class="xref">Section 12.4.5.27, &quot;SHOW FULL PROCESSLISTSyntax&quot;</a>.
+    MySQL manual [Section 12.4.5.27, "SHOW FULL
+    PROCESSLISTSyntax"](http://dev.mysql.com/doc/refman/5.0/en/show-processlist.html).
 
     If you don't want to wait for active connections to conclude, those
     threads can be killed with the MySQLKILLstatement. For more details
-    onKILL, see the MySQL Manual
-    <a href="http://dev.mysql.com/doc/refman/5.0/en/kill.html" class="xref">Section 12.4.6.3, &quot;KILLSyntax&quot;</a>.
+    onKILL, see the MySQL Manual [Section 12.4.6.3,
+    "KILLSyntax"](http://dev.mysql.com/doc/refman/5.0/en/kill.html).
 
 4.  **Back up your current MySQL 4 database.**
 
     You may wish to use the method outlined in the Knowledge Center
-    article
-    <a href="/how-to/backup-your-mysql-database-with-phpmyadmin" class="xref">How to backup your MySQL Database with phpMyAdmin</a>.
+    article [How to backup your MySQL Database with
+    phpMyAdmin](/how-to/backup-your-mysql-database-with-phpmyadmin).
 
 5.  **Provision a new MySQL 5 database to contain the
     migrated database.**
 
     For a guide to provisioning a new MySQL 5 database, see the
-    Knowledge Center article
-    <a href="/how-to/rackspace-cloud-sites-essentials-mysql-databases" class="xref">Adding a MySQL Database to a Website or Domain</a>.
+    Knowledge Center article [Adding a MySQL Database to a Website or
+    Domain](/how-to/rackspace-cloud-sites-essentials-mysql-databases).
 
 6.  **Import your database into the newly-provisioned MySQL
     5 database.**
 
     Databases that are less than 16 MB in size can be imported easily
-    using the *Online Manager* (see
-    <a href="/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface" class="xref">Working with a MySQL database</a>).
+    using the *Online Manager* (see [Working with a MySQL
+    database](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface)).
 
     If the data to be imported exceeds 16 MB, see the [Cloud Sites
     FAQ](/how-to/cloud-sites-faq).

@@ -4,8 +4,8 @@ title: Rackspace Private Cloud FAQ
 type: article
 created_date: '2014-09-09'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Rackspace Private Cloud Powered by OpenStack
 body_format: markdown_w_tinymce
 ---
@@ -26,12 +26,15 @@ Rackspace Private Cloud (RPC) consists of the Rackspace Private Cloud Software p
 -   [What are Rackspace Private Cloud's main differentiators?](#3a)
 -   [Where can I deploy Rackspace Private Cloud?](#1)
 -   [Is Rackspace Private Cloud updated with each new OpenStack version release (e.g. Juno, Kilo, etc)?](#4)
+-   [Can I install Rackspace Private Cloud on virtual machines?](#12)
 -   [What is the maximum number of nodes for Rackspace Private Cloud?](#7)
 -   [Does Rackspace Private Cloud come with any images?](#8)
+-   [Why does the node IP address need to have Internet access?](#13)
 -   [Is there a proof-of-concept offering to allow a customer to test Rackspace Private Cloud before they buy it?](#5)
 -   [What devices are certified for Rackspace Private Cloud compute nodes?](#6)
 -   [Where can I get more technical information?](#9)
 -   [Where can I learn more?](#10)
+-   [How is Rackspace Monitoring billed?](#11)
 
 **FAQ: Rackspace Private Cloud Solutions Templates**
 
@@ -107,6 +110,9 @@ You can deploy a Rackspace Private Cloud in your own data center, in a Rackspace
 
 Yes, Rackspace updates and releases a major version of Rackspace Private Cloud software following each OpenStack version release.  We first verify that the new OpenStack version release meets our stability requirements before launching, which typically takes about six weeks.  We also have minor releases throughout the year to introduce new features, fix bugs and provide security patches
 
+## Can I install Rackspace Private Cloud on virtual machines? {#12}
+
+Rackspace strongly recommends that you install Rackspace Private Cloud on physical hardware nodes running Ubuntu 12.04 or CentOS 6.3. Installation on virtual platforms should only be performed for evaluation purposes.
 
 ## What is the maximum number of nodes for Rackspace Private Cloud? {#7}
 
@@ -115,6 +121,10 @@ Rackspace Private Cloud is designed to scale to hundreds of nodes. The maximum n
 ## Does Rackspace Private Cloud come with any images? {#8}
 
 Currently, Rackspace Private Cloud Software does not include any images. For more information about downloading and creating images, refer to the [OpenStack Virtual Machine Image Guide](http://docs.openstack.org/image-guide/content/).
+
+## Why does the node IP address need to have Internet access? {#13}
+
+Rackspace Private Cloud Software downloads Ubuntu installation files as part of the installation process to ensure that you have the most up-to-date operating system that works with our software. If the node doesn't have internet access, the installation process will fail. You may also experience issues if the node is behind a firewall.
 
 ## Is there a proof-of-concept offering to allow a customer to test Rackspace Private Cloud before they buy it? {#5}
 
@@ -131,6 +141,10 @@ Get quick answers to common technical questions about Rackspace Private Cloud in
 ## Where can I learn more? {#10}
 
 More information about Rackspace Private Cloud is available on the Rackspace Private Cloud web site at [http://www.rackspace.com/cloud/private](http://www.rackspace.com/cloud/private). You can also visit the Rackspace Private Cloud Forum at [https://community.rackspace.com/products/f/45](https://community.rackspace.com/products/f/45).
+
+## How is Rackspace Monitoring billed? {#11}
+
+Rackspace Monitoring bills you by how much you use. While other monitoring services lock you into a month-long or even year-long contract, with Rackspace Monitoring you are billed by the hourly usage based on how many checks were running in that hour, and from how many monitoring zones were involved. Adjusting your usage is quick and easy, and this flexibility can help reduce unnecessary costs. Never again will you have to pay for more than you use.
 
 # FAQ: Rackspace Private Cloud Solutions templates {#solutionstemplates}
 

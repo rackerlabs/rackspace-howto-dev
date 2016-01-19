@@ -26,14 +26,14 @@ Contents
 -   [Create a webhook](#createWebhook)
 -   [Set up Rackspace Monitoring](#setUpCloudMonitoring)
 
-<a href="" id="beforeBegin"></a>Before you begin
-------------------------------------------------
+Before you begin
+--------------------
 
 Before you can configure the webhooks, you must  [create an Auto Scale
 group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group).
 
-**<a href="" id="createPolicies"></a>**Create Auto Scale policies
------------------------------------------------------------------
+****Create Auto Scale policies
+----------------------------------
 
 1.  In the Cloud Control Panel, select **Servers** &gt; **Auto Scale**.
 2.  Select your Auto Scale group from the list.
@@ -49,8 +49,8 @@ group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-gr
         cooldown period to elapse, or the group's minimum cooldown to
         elapse, whichever is longer.
 
-**<a href="" id="createWebhook"></a>Create a webhook**
-------------------------------------------------------
+**Create a webhook**
+------------------------
 
 Create a corresponding webhook to activate each of the Auto Scale
 policies you created.
@@ -70,8 +70,8 @@ policies you created.
 
 
 
-**<a href="" id="setUpCloudMonitoring"></a>Set up Rackspace Monitoring**
-------------------------------------------------------------------------
+**Set up Rackspace Monitoring**
+-----------------------------------
 
 1.  On the Scaling group details pages, click the cloud server at the
     bottom of the page.

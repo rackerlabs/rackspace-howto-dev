@@ -31,7 +31,7 @@ have invested a significant amount of time in planning this migration
 and have allocated dedicated resources to ensure the project is
 completed successfully.
 
-### Content <a href="" id="top"></a>
+### Content
 
 -   [Why is Rackspace closing these data centres?](#why)
 -   [How will cloud devices be migrated to LON5?](#process)
@@ -61,7 +61,7 @@ completed successfully.
     migration?](#questions)
 -   [What about customers who use RackConnect?](#rackconnect)
 
-**Why is Rackspace closing these data centres?<a href="" id="why"></a>**
+**Why is Rackspace closing these data centres?**
 
 DH4 was brought online in March 2013 to ease capacity issues in our LON3
 Data Centre caused by extensive growth. At that stage LON5 was still in
@@ -70,8 +70,7 @@ proximity to LON3.
 
 [&lt;top&gt;](#top)
 
-**How will cloud devices be migrated to
-LON5?<a href="" id="process"></a>**
+**How will cloud devices be migrated to LON5?**
 
 Your migration date will be determined by the location of your solution.
 Rackspace is working hard to ensure the maintenance has minimal impact
@@ -86,8 +85,7 @@ additional details 21 days before your scheduled maintenance.
 
 [&lt;top&gt;](#top)
 
-**Will there be any interruption to
-service?<a href="" id="interruption"></a>**
+**Will there be any interruption to service?**
 
 <span class="s1">Yes. The total scheduled migration window will be four
 hours but our goal is to return to service as quickly as possible.
@@ -102,7 +100,7 @@ Control Panel and a standard migration will be scheduled.</span>
 
 [&lt;top&gt;](#top)
 
-**Will there be any IP or DNS changes?<a href="" id="ip"></a>**
+**Will there be any IP or DNS changes?**
 
 <span class="s1">No. You should be able to retain your IPs and DNS with
 this migration. If your server is not able to retain its original IPs,
@@ -111,8 +109,7 @@ resolve.</span>
 
 [&lt;top&gt;](#top)
 
-**When are my servers scheduled to be
-migrated?<a href="" id="schedule"></a>**
+**When are my servers scheduled to be migrated?**
 
 The migrations will begin in September and continue through October
 2015.  You will receive a notification via ticket on the Rackspace
@@ -121,8 +118,7 @@ tickets will include the date range in which you will be migrated.
 
 [&lt;top&gt;](#top)
 
-**How will I need to prepare for the
-migration?<a href="" id="preparation"></a>**
+**How will I need to prepare for the migration?**
 
 We encourage you to make your own offsite backups and use the Managed
 Backup solution that Rackspace offers. If your solution is not currently
@@ -132,7 +128,7 @@ Account Team to put backup methods in place before the migration date.
 [&lt;top&gt;](#top)
 
 **Is the move date flexible? Can I choose the date of the
-migration?<a href="" id="date"></a>**
+migration?**
 
 Because we must move hardware according to its network topography, we
 cannot offer flexible move dates to customers.
@@ -140,7 +136,7 @@ cannot offer flexible move dates to customers.
 [&lt;top&gt;](#top)
 
 **I have more than one solution with Rackspace. Will they all be
-migrated at the same time?<a href="" id="multiplesolutions"></a>**
+migrated at the same time?**
 
 The answer depends on where those solutions are physically located
 within the data centre. Dedicated hardware will be moved before Cloud
@@ -148,8 +144,7 @@ hardware, so they will be handled in two different maintenance windows.
 
 [&lt;top&gt;](#top)
 
-**Will my current services change because of the
-migration?<a href="" id="services"></a>**
+**Will my current services change because of the migration?**
 
 There will be no change to any of the services that you currently
 consume.
@@ -157,7 +152,7 @@ consume.
 [&lt;top&gt;](#top)
 
 **Are there any guarantees that my server will not have to be migrated
-again afterwards?<a href="" id="guarantee"></a>**
+again afterwards?**
 
 Rackspace is investing heavily in the design and construction of the
 LON5 Data Centre and in our partnership with Digital Realty Trust, a
@@ -168,7 +163,7 @@ effort not to migrate you again in the near future.
 
 [&lt;top&gt;](#top)
 
-**Where is LON5 located?<a href="" id="location"></a>**
+**Where is LON5 located?**
 
 This facility is located near Crawley, Sussex. For security reasons, we
 have not published the address in this FAQ. You can obtain the address
@@ -179,8 +174,7 @@ private circuits.
 [&lt;top&gt;](#top)
 
 **Does the LON5 Data Centre have the same level of redundancy and
-security as other Rackspace data
-centres?<a href="" id="redundancy"></a>**
+security as other Rackspace data centres?**
 
 Yes. The LON5 Data Centre provides the same or improved levels of
 redundancy, and more resilience in its electrical and mechanical
@@ -191,7 +185,7 @@ portfolio.
 [&lt;top&gt;](#top)
 
 **What assurance can Rackspace provide customers regarding security
-controls in the new LON5 Data Centre?<a href="" id="security"></a>**
+controls in the new LON5 Data Centre?**
 
 All Rackspace entities implement uniform global data centre security and
 environmental controls in their data centres.
@@ -213,7 +207,7 @@ to meet the PCI-DSS SP L1 and ISAE / SSAE standards to which we adhere.
 [&lt;top&gt;](#top)
 
 **Has an SSAE16 / ISAE 3402 SOC report been completed for the LON5 Data
-Centre?<a href="" id="report"></a>**
+Centre?**
 
 LON5 came online in the middle of the Rackspace ISAE / SSAE annual audit
 cycle and will therefore not be assessed upon opening.
@@ -225,8 +219,7 @@ with the final report being made available in early December 2015.
 
 [&lt;top&gt;](#top)
 
-**Will the LON5 Data Centre be PCI-DSS
-compliant?<a href="" id="compliant"></a>**
+**Will the LON5 Data Centre be PCI-DSS compliant?**
 
 LON5 came online prior to the Rackspace Annual PCI-DSS Service Provider
 audit.
@@ -237,8 +230,7 @@ of July or early August 2015.
 
 [&lt;top&gt;](#top)
 
-**What are the green credentials of the LON5 Data
-Centre?<a href="" id="green"></a>**
+**What are the green credentials of the LON5 Data Centre?**
 
 In support of our commitment to our customers, Rackspace employees, and
 the environment, the LON3 Data Centre and UK head office (LON4) are
@@ -271,14 +263,13 @@ reduce our carbon footprint:
 [&lt;top&gt;](#top)
 
 **Who should I contact if I have more questions about the
-migration?<a href="" id="questions"></a>**
+migration?**
 
 You can submit a ticket to your Account Team in the Cloud Control Panel.
 
 [&lt;top&gt;](#top)
 
-**What about customers who use
-RackConnect?<a href="" id="rackconnect"></a>**
+**What about customers who use RackConnect?**
 
 Customers who connect their Dedicated and Cloud hardware via RackConnect
 will only be impacted by the migration of Dedicated hardware.

@@ -78,7 +78,7 @@ and selecting **Cloud Sites**.
     using FTP: For instructions, see [Uploading your
     content](/how-to/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP").
 7.  Navigate to the **First\_asp\_page.asp** file by using the Testing
-    URL if necessary. For instrutions, see
-    <a href="/how-to/using-a-staging-url" class="external text" title="/knowledge_center/index.php/Using_a_staging_URL">Use a staging URL</a>.
+    URL if necessary. For instrutions, see [Use a staging
+    URL](/how-to/using-a-staging-url "/knowledge_center/index.php/Using_a_staging_URL").
 
 

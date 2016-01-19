@@ -16,8 +16,7 @@ interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
 and selecting Cloud Sites Control Panel.
 
-1.  If you have not already done so, go to
-    <a href="http://www.s9y.org/12.html" class="uri" class="external free" title="http://www.s9y.org/12.html">http://www.s9y.org/12.html</a>
+1.  If you have not already done so, go to <http://www.s9y.org/12.html>
     and download the latest full release of Serendipity.
 2.  Create your new domain from the Cloud Sites Control Panel. If you
     need assistance, please see [How do I add a

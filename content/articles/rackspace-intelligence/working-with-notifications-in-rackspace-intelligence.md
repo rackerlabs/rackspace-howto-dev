@@ -36,8 +36,8 @@ type groups everyone who prefers to be notified by email.
 For each notification, the **Detail** field contains specific contact
 information such as an email ID or a telephone number.
 
-<a href="" id="createnotification"></a>Create a notification
-------------------------------------------------------------
+Create a notification
+-------------------------
 
 1.  To define a new notification method, click **Create Notification**.
 2.  Enter a name for the notification, and choose a notification type.
@@ -47,8 +47,8 @@ information such as an email ID or a telephone number.
 
 The notification appears on the Notifications page.
 
-<a href="" id="editnotification"></a>Edit a notification
---------------------------------------------------------
+Edit a notification
+-----------------------
 
 To edit a notification, click the settings icon to the left of the
 notification name on the Notifications page.
@@ -58,14 +58,14 @@ You can perform the following modifications to notifications:
 -   [Update the settings for a notification](#updatenotification)
 -   [Delete a notification](deletenotification)
 
-### <a href="" id="updatenotification"></a>Update the settings for a notification
+### Update the settings for a notification
 
 1.  Click the settings icon to the left of the notification, and
     select **Edit Notification**.
 2.  In the popup dialog box, make the necessary updates for the
     notification, and then click **Save Notification**.
 
-### <a href="" id="deletenotification"></a>Delete a notification
+### Delete a notification
 
 1.  Click the settings icon to the left of the notification, and
     select **Delete**.

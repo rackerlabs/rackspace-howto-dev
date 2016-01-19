@@ -30,8 +30,8 @@ notifications, or number of alarms.
 Sorting by the number of alarms can help you prioritize follow-up
 investigations.
 
-<a href="" id="createnotificationplan"></a>Create a notification plan
----------------------------------------------------------------------
+Create a notification plan
+------------------------------
 
 1.  On the **Notification Plans** page, click **Create
     Notification** Plan.
@@ -59,8 +59,8 @@ investigations.
 Your notification plan is saved and displayed on the **Notification
 Plans** overview page.
 
-<a href="" id="editnotificationplan"></a>Edit a notification plan
------------------------------------------------------------------
+Edit a notification plan
+----------------------------
 
 To edit a notification plan, click the **Actions** menu on the
 notification plan details page.
@@ -72,14 +72,14 @@ You can perform the following modifications on notification plans:
     plan](#addnotificationstonotificationplan)
 -   [Delete a notification plan](#deletenotificationplan)
 
-### <a href="" id="renamenotificationplan"></a>Rename a notification plan
+### Rename a notification plan
 
 1.  From the **Actions** menu on the notification plan details page,
     select **Rename Plan**.
 2.  In the **Rename Notification Plan** box, type the new name, and then
     click **Rename**.
 
-### <a href="" id="addnotificationstonotificationplan"></a>Change the notifications in a notification plan
+### Change the notifications in a notification plan
 
 1.  From the **Actions** menu on the notification plan details page,
     select **Add Notifications**.
@@ -90,7 +90,7 @@ You can perform the following modifications on notification plans:
     notification, click **Deselect** beside it.
 3.  Click **Save Notification Plan**.
 
-### <a href="" id="deletenotificationplan"></a>Delete a notification plan
+### Delete a notification plan
 
 1.  From the **Actions** menu on the notification plan details page,
     select **Delete Plan**.

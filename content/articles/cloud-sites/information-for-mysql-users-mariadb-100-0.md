@@ -55,11 +55,11 @@ NEW phpMyAdmin URL
 <tbody>
 <tr class="odd">
 <td align="left">Contains &quot;DFW1-1&quot;</td>
-<td align="left"><a href="https://mysql.dfw3-1.websitesettings.com" class="uri" class="external-link">https://mysql.dfw3-1.websitesettings.com</a></td>
+<td align="left"><a href="https://mysql.dfw3-1.websitesettings.com" class="uri">https://mysql.dfw3-1.websitesettings.com</a></td>
 </tr>
 <tr class="even">
 <td align="left">Contains &quot;DFW1-2&quot;</td>
-<td align="left"><a href="https://mysql.dfw3-2.websitesettings.com" class="uri" class="external-link">https://mysql.dfw3-2.websitesettings.com</a></td>
+<td align="left"><a href="https://mysql.dfw3-2.websitesettings.com" class="uri">https://mysql.dfw3-2.websitesettings.com</a></td>
 </tr>
 </tbody>
 </table>

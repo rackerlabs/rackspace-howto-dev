@@ -22,8 +22,8 @@ root](/how-to/locate-the-linux-path-for-your-cloud-sites-website).
 To point to a folder other than the website's web root, you must use a
 redirect script. Perform the following steps.
 
-1.  Log in to the
-    <a href="http://manage.rackspacecloud.com" class="external free" title="http://manage.rackspacecloud.com">Cloud Sites Control Panel</a>.
+1.  Log in to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
 2.  Create the new domain or subdomain under the correct account. If you
     have any questions about how to do this, see [Getting Started With
     Cloud Sites: How To Add A New

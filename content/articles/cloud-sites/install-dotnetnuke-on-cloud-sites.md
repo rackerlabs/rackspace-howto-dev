@@ -26,11 +26,12 @@ technology, add a MSSQL database, and connect to FTP:
 
 -   [How do I change my site's default
     technology?](/how-to/change-your-sites-default-technology "How do I change my site's default technology?")
--   <a href="/how-to/rackspace-cloud-sites-essentials-mssql-databases" class="mw-redirect" title="How do I add a MSSQL database to my site?">How do I add a MSSQL database to my site?</a>
+-   [How do I add a MSSQL database to my
+    site?](/how-to/rackspace-cloud-sites-essentials-mssql-databases "How do I add a MSSQL database to my site?")
 -   [How do I add content to my
     website?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "How do I add content to my website?")
 
-<a href="" id="Before_You_Begin"></a>
+
 
 <span class="mw-headline">Before You Begin </span>
 --------------------------------------------------
@@ -41,7 +42,7 @@ In your web.config file:
     site?](/how-to/add-impersonation-to-your-aspnet-cloud-site "How do I add impersonation to my ASP.NET site?")
 -   Set customErrors to "Off", which is case-sensitive
 
-<a href="" id="Installing_DNN_5.0"></a>
+
 
 <span class="mw-headline">Installing DNN 5.0 </span>
 ----------------------------------------------------
@@ -90,7 +91,7 @@ suggestions:
 -   If all other attempts fail to correct error, you can wipe out your
     database and start again fresh to ensure no data was added. Follow
     this link for those instructions:
-    <a href="http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html" class="uri" class="external free" title="http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html">http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html</a>
+    <http://xman892.blogspot.com/2006/04/how-to-drop-all-tables-from.html>
 
 If you have any questions concerning this article, please contact
 support.

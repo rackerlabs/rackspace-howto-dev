@@ -20,8 +20,8 @@ configuration information about the following items:
 -   [Notifications](#notifications)
 -   [Notification plans](#notification_plans)
 
-<a href="" id="entities"></a>Entities
--------------------------------------
+Entities
+------------
 
 To view the configuration information for a specific item, you typically
 start off with a list of all the entities that have been set up and
@@ -42,8 +42,8 @@ perform the following steps:
 
 
 
-<a href="" id="checks"></a>Checks
----------------------------------
+Checks
+----------
 
 
 -
@@ -77,8 +77,8 @@ steps:
 
 
 
-<a href="" id="alarms"></a>Alarms
----------------------------------
+Alarms
+----------
 
 Rackspace Intelligence supports alarms that analyze the data that is
 collected by a check.
@@ -100,8 +100,8 @@ To view an alarm, perform the following steps:
 
 
 
-<a href="" id="open_alerts"></a>Open alerts
--------------------------------------------
+Open alerts
+---------------
 
 Open alerts report statuses that you have asked Rackspace Intelligence
 to monitor.
@@ -114,8 +114,8 @@ Alerts**.
 
 
 
-<a href="" id="notifications"></a>Notifications
------------------------------------------------
+Notifications
+-----------------
 
 Rackspace Intelligence lets you view notifications that have been
 created for your entities. Notifications must be defined before you can
@@ -131,8 +131,8 @@ configured for you.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Notifications1.png" width="600" />
 
-<a href="" id="notification_plans"></a>Notification plans
----------------------------------------------------------
+Notification plans
+----------------------
 
 You can have notification plans defined that work with your monitoring
 checks and alarms. You can specify several ways to notify members of

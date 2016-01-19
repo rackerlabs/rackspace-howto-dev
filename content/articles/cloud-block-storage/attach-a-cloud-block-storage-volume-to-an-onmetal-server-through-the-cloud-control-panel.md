@@ -22,8 +22,8 @@ Compute and Memory v1 flavors.
 server via the Cloud Control Panel.</span><span> The procedure assumes
 that the server instance already exists.</span>
 
-<a href="" id="create">Create a new volume</a>
-----------------------------------------------
+[Create a new volume]()
+-----------------------
 
 If you want to create a new volume, the following steps will guide you.
 If you have already created a volume, go to [Attach a volume](#attach).
@@ -40,8 +40,8 @@ If you have already created a volume, go to [Attach a volume](#attach).
 
 
 
-<a href="" id="attach">Attach a volume</a>
-------------------------------------------
+[Attach a volume]()
+-------------------
 
 1\. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -123,8 +123,8 @@ Volume](/how-to/prepare-your-cloud-block-storage-volume).
 
 
 
-<a href="" id="detach">Detach a volume</a>
-------------------------------------------
+[Detach a volume]()
+-------------------
 
 If you want detach a volume from an OnMetal server, be sure that the
 volume is [fully

@@ -4,10 +4,10 @@ title: Private Cloud Tech Resources
 type: article
 created_date: '2013-01-24'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-07'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Rackspace Private Cloud Powered by OpenStack
-body_format: tinymce
+body_format: full_html
 ---
 
 ### Previous section
@@ -38,8 +38,6 @@ An implementation guide to building a Rackspace Private Cloud with
 external storage that targets Enterprise IT applications. Volumes are
 provided via the Cinder volume service running on Linux server head
 units.
-
-[ ](http://www.rackspace.com/knowledge_center/article/rackspace-private-cloud-cluster-networking)
 
 Tech Center Tools and Software
 ------------------------------

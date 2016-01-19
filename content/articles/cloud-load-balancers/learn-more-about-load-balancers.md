@@ -4,8 +4,8 @@ title: Learn more about load balancers
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-01-19'
+last_modified_by: Renee Rendon
 product: Cloud Load Balancers
 body_format: tinymce
 ---
@@ -19,7 +19,7 @@ Balance](/how-to/products-i-can-load-balance "Products I Can Load Balance")
 <div>
 
 [Configuring a Load
-Balancer](/how-to/configure-a-load-balancer)
+Balancer](/how-to/configure-a-load-balancer "Configuring a Load Balancer")
 
 
 

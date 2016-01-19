@@ -177,7 +177,7 @@ Backing Up Your MSSQL Database
     Be patient and do not click the stop button until done.**
 
 
-<a href="" id="Finish_Line"></a>
+
 
 Finish Line
 -----------

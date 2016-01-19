@@ -10,7 +10,7 @@ product: Rackspace CDN
 body_format: tinymce
 ---
 
-<a href="" id="top"></a>
+
 
 This article provides information about how to use Rackspace CDN with
 Rackspace Cloud Sites.
@@ -29,8 +29,8 @@ records](/how-to/getting-started-with-cloud-sites-managing-dns-records).
 
 
 
-<a href="" id="Create a CDN service"></a>Create a CDN service
--------------------------------------------------------------
+Create a CDN service
+------------------------
 
 To create a CDN service to use with your webiste, you need to know the
 IP address of your site (your origin) and and the **www** address of
@@ -75,8 +75,8 @@ You need this URL in the next section, to update your DNS records.
 
 
 
-<a href="" id="Update DNS"></a>Update DNS
------------------------------------------
+Update DNS
+--------------
 
 After you have created your Rackspace CDN service, use the Cloud Sites
 DNS management tool to update the DNS for your **www** domain by
@@ -109,8 +109,8 @@ CDN.
 
 
 
-**<span><a href="" id="Create caching rules"></a>Create caching rules</span>**
-------------------------------------------------------------------------------
+**<span>Create caching rules</span>**
+-----------------------------------------
 
 Caching rules determine how long your content lives on the edge servers
 (or nodes) before checking the origin server for an update. If your

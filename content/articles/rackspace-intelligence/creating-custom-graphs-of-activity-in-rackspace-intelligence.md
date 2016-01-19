@@ -25,8 +25,8 @@ choose to see the percentage of idle time for all your entities.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/4743.1a.png" width="678" height="364" />
 
-<a href="" id="explore-entity"></a>Explore an entity
-----------------------------------------------------
+Explore an entity
+---------------------
 
 When you focus on a single entity, you can simultaneously view any of
 the metrics available for that entity. For example, you can choose to

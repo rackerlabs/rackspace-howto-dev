@@ -24,8 +24,8 @@ that have changed - saving time and bandwidth.
 -   [<span class="toctext">Output</span>](#Output)
 -   [<span class="toctext">Summary</span>](#Summary)
 
-<a href="" id="Installation"></a><span>Installation</span>
-----------------------------------------------------------
+<span>Installation</span>
+-----------------------------
 
 Installing rsync is as simple as implementing your OS's package manager
 such as:
@@ -35,8 +35,8 @@ such as:
 Do remember that if you are downloading files to another system, both
 will require rsync to be installed.
 
-<span class="mw-headline"><a href="" id="Preparation"></a>Preparation </span>
------------------------------------------------------------------------------
+<span class="mw-headline">Preparation </span>
+-------------------------------------------------
 
 Very little to do here expect to establish where the saved files will be
 located.
@@ -44,8 +44,8 @@ located.
 In this example, I am going to backup my main Cloud Server home
 directory to another server.
 
-<span class="mw-headline"><a href="" id="Security"></a>Security </span>
------------------------------------------------------------------------
+<span class="mw-headline">Security </span>
+----------------------------------------------
 
 As a rule (and one I stick to very closely), we don't upload and
 download anything without some encryption in place. As such we will be
@@ -61,8 +61,8 @@ each time I attempt to rsync my home folder. It's perfectly fine not to
 do it that way, but you will need to enter the password each time you
 rsync.
 
-<span class="mw-headline"><a href="" id="Command"></a>Command </span>
----------------------------------------------------------------------
+<span class="mw-headline">Command </span>
+---------------------------------------------
 
 So on the destination server, the command I would give is as follows:
 
@@ -103,8 +103,8 @@ called 'public\_html' or 'configs' or 'bin' and so on.
 
 /backup/: Identifies the folder on the backup server to place the files.
 
-<span class="mw-headline"><a href="" id="Output"></a>Output </span>
--------------------------------------------------------------------
+<span class="mw-headline">Output </span>
+--------------------------------------------
 
 So from the command above, my storage server would start to output
 something like this:
@@ -133,8 +133,8 @@ Running rsync again will only download files that have changed so,
 depending on how busy your home directory is, a much smaller download
 will be conducted.
 
-<span class="mw-headline"><a href="" id="Summary"></a>Summary </span>
----------------------------------------------------------------------
+<span class="mw-headline">Summary </span>
+---------------------------------------------
 
 This was a quick introduction to rsync. The command shown is a simple
 but effective and secure means of creating an incremental backup of your

@@ -40,7 +40,7 @@ servers with one or more load balancer pools:
 -   [Use the RackConnect v3.0 API](#Option2)
 
 ###
-**<a href="" id="option1"></a>Use the Cloud Control Panel**
+**Use the Cloud Control Panel**
 
 After you initially create your cloud server by using the [Cloud Control
 Panel](https://mycloud.rackspace.com/), the management page for the
@@ -88,7 +88,7 @@ request the creation of one or more load balancer pools that are
 RackConnect automation-ready.
 
 ###
-**<a href="" id="Option2"></a>Use the RackConnect v3.0 API**
+**Use the RackConnect v3.0 API**
 
 After you initially create a cloud server, you can use the following
 RackConnect v3.0 API load balancer pool operations:

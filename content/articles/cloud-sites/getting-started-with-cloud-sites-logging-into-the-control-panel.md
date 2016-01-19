@@ -46,7 +46,7 @@ The Control Panel has 3 main sections
 
 [<img src="http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png" title="Click here to view full size image" alt="Click here to view full size image" width="1463" height="780" />](http://c739518.r18.cf2.rackcdn.com/CP3Colors2.png)
 
-<a href="" id="Left_Navigation_Menu"></a>
+
 
 <span class="mw-headline">Left Navigation Menu</span>
 -----------------------------------------------------

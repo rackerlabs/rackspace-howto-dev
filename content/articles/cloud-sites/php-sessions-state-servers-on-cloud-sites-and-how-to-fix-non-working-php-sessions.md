@@ -36,7 +36,7 @@ stored, you can change how your PHP sessions are handled by using a
 the 'files' handler, we suggest disabling it  or explicitly setting it
 to 'redisr' to benefit from the performance of the state servers.
 
-<a href="" id="How_do_I_make_the_changes.3F"></a>
+
 
 <span class="mw-headline">How do I make the changes?</span>
 -----------------------------------------------------------
@@ -58,7 +58,7 @@ to locate your website's absolute path.
 Your website's absolute path should resemble this:
 **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
 
-<a href="" id="Where_should_I_store_my_sessions.3F"></a>
+
 
 <span class="mw-headline">Where should I store my sessions?</span>
 ------------------------------------------------------------------

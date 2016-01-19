@@ -107,8 +107,8 @@ from the[Downloads page](http://www.curl.com/download/). The Windows
 binary will require installation of some Microsoft Visual C++ libraries
 to work correctly.
 
-**<a href="" id="curlbasics"></a>cURL basics**
-----------------------------------------------
+**cURL basics**
+-------------------
 
 cURL is a command line tool that offers a means of communicating with
 various services at a protocol level. In particular, cURL supports
@@ -119,7 +119,7 @@ level of detail.
 This section provides some basic information about how to use cURL with
 HTTP.
 
-**<a href="" id="B"></a>Performing an HTTP GET**
+**Performing an HTTP GET**
 
 A HTTP GET operation is what browsers typically perform to download web
 pages and images whenever you go to a website. In the same manner, you
@@ -145,7 +145,7 @@ $ curl -o index.html http://www.example.com
 $ curl http://www.example.com > index.html
 ```
 
-**<a href="" id="C"></a>**
+****
 
 ### **Performing an HTTP POST**
 
@@ -166,7 +166,7 @@ $ curl -X POST -d @mydocument.json -H "Content-Type: application/json" http://ww
 You can also specify the data as a quoted string, but this can be
 unwieldy when done from the command line.
 
-**<a href="" id="D"></a>**
+****
 
 ### Performing an HTTP PUT
 
@@ -183,7 +183,7 @@ file is uploaded in a standard fashion. The syntax is as follows:
 $ curl -X PUT -T myobject.jpg -H "Content-Type: image/jpeg" http://www.example.com/upload
 ```
 
-**<a href="" id="E"></a>**
+****
 
 ### Viewing the HTTP headers
 
@@ -202,7 +202,7 @@ Connection: Keep-Alive
 Content-Length: 0
 ```
 
-**<a href="" id="F"></a>**
+****
 
 ### **Viewing More HTTP Debug Information**
 
@@ -220,7 +220,7 @@ $ curl -v http://www.example.com
 ...
 ```
 
-**<a href="" id="G"></a>**
+****
 
 ### **Sending HTTP Headers**
 
@@ -242,7 +242,7 @@ $ curl -v -H "Accept: application/xml" www.example.com
 ...
 ```
 
-<a href="" id="H"></a>
+
 
 Authenticating with the API
 ---------------------------
@@ -346,7 +346,7 @@ request. The following authentication token will be used in the below
 recipes: 3c5c8187-2569-47e0-8a11-edadd384e12b. We will also assume that
 we will be submitting and receiving only XML documents.
 
-**<a href="" id="I"></a>**
+****
 
 ### **Storage Recipes**
 
@@ -356,7 +356,7 @@ following recipes use the following example URL:
 https://storage101.ord1.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-**<a href="" id="J"></a>**
+****
 
 #### **Listing Containers**
 
@@ -389,7 +389,7 @@ $ curl -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage10
 ...
 ```
 
-**<a href="" id="K"></a>**
+****
 
 #### **Creating a Container**
 
@@ -404,7 +404,7 @@ $ curl -X PUT -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://st
 
 The request is accepted for processing.
 
-**<a href="" id="L"></a>**
+****
 
 #### **Deleting a Container**
 
@@ -457,7 +457,7 @@ by passing some additional URL parameter options. For more detailed
 information about the available parameters and how they work, see the
 Cloud Files Developer Guide.
 
-**<a href="" id="M"></a>**
+****
 
 #### **Downloading an Object**
 
@@ -473,7 +473,7 @@ curl -o option to save the HTTP response body to a file:
 $ curl -o cloud.png -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" https://storage101.ord1.clouddrive.com/v1/MossoCloudFS_c4f83243-7537-4600-a94d-ab7065f0a27b/images/cloud.png
 ```
 
-**<a href="" id="N"></a>**
+****
 
 #### **Uploading an Object**
 
@@ -522,7 +522,7 @@ $ curl -X PUT -T style.css -H "Content-Type: text/css" -H "X-Auth-Token: 3c5c818
 </html>
 ```
 
-**<a href="" id="O"></a>**
+****
 
 #### **Deleting an Object**
 
@@ -543,7 +543,7 @@ $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" http
 * Closing connection #0 * SSLv3, TLS alert, Client hello (1):
 ```
 
-**<a href="" id="P"></a>**
+****
 
 #### **Performing a Server Side Copy**
 
@@ -569,7 +569,7 @@ $ curl -X COPY -H "Destination: images/rackspace.jpeg" -H "X-Auth-Token: 3c5c818
 </html>
 ```
 
-**<a href="" id="Q"></a>**
+****
 
 #### **Updating Object Headers**
 
@@ -598,7 +598,7 @@ $ curl -X POST -H "Content-Type: image/jpeg" -H "X-Auth-Token: 3c5c8187-2569-47e
 </html>
 ```
 
-**<a href="" id="R"></a>**
+****
 
 ### **CDN Recipes**
 
@@ -609,7 +609,7 @@ URL:
 https://cdn2.clouddrive.com/v1/MossoCloudFS\_c4f83243-7537-4600-a94d-ab7065f0a27b.
 When you use the recipes, be sure to substitute your own endpoint URL.
 
-**<a href="" id="S"></a>**
+****
 
 #### **Listing CDN Enabled Containers**
 
@@ -624,7 +624,7 @@ files
 static
 ```
 
-**<a href="" id="T"></a>**
+****
 
 #### **CDN Enabling a Container**
 
@@ -657,7 +657,7 @@ Connection: close
 Content-Type: text/plain; charset=UTF-8
 ```
 
-**<a href="" id="U"></a>**
+****
 
 #### **Viewing a Container's CDN Details**
 
@@ -684,7 +684,7 @@ Connection: close
 Content-Type: text/plain; charset=UTF-8
 ```
 
-**<a href="" id="V"></a>**
+****
 
 #### **Updating a Container's CDN Attributes**
 
@@ -728,7 +728,7 @@ $ curl -v -X POST -H "X-CDN-Enabled: False" -H "X-Auth-Token: 3c5c8187-2569-47e0
 <
 ```
 
-**<a href="" id="W"></a>**
+****
 
 #### **Purging an Object**
 

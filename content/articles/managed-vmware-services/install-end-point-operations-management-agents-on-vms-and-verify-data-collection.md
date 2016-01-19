@@ -39,8 +39,8 @@ The following sections include steps and information about:
     metrics](#View%20EP%20Ops%20specific%20metrics)
 -   [EP Ops specifc alerts](#View%20EP%20Ops%20specific%20alerts)
 
-<a href="" id="Locating EP Ops Agent&#39;s files"></a>Locate EP Ops Agent files
--------------------------------------------------------------------------------
+Locate EP Ops Agent files
+-----------------------------
 
 The EP Ops agent files will be located in the *vROps End Point Agents*
 folder the local VMFS datastore on the first ESXi host in your
@@ -59,8 +59,8 @@ Installation and Configuration Guide for instructions.
 <http://pubs.vmware.com/vrealizeoperationsmanager-61/topic/com.vmware.ICbase/PDF/vrealize-operations-manager-61-linux-windows-install-guide.pdf>
 {Page 56}
 
-<a href="" id="Installing EP Ops Agent on Linux"></a>Install EP Ops Agent on Linux
-----------------------------------------------------------------------------------
+Install EP Ops Agent on Linux
+---------------------------------
 
 1.  Locate the Linux (tar) EP Ops agent installation files in both the
     x32 and x64-bit formats, as described in the [Locate EP Ops Agent
@@ -91,8 +91,8 @@ Installation and Configuration Guide for instructions.
         Enter your server password: vCenter Password
 
 
-<a href="" id="Installing EP Ops Agent on Windows"></a>Install EP Ops Agent on Windows
---------------------------------------------------------------------------------------
+Install EP Ops Agent on Windows
+-----------------------------------
 
 1.  <span>Locate the Windows (zip) EP Ops agent installation files in
     both the x32 and x64-bit formats, as described in the </span>[Locate
@@ -130,8 +130,8 @@ Installation and Configuration Guide for instructions.
         Enter your server password: vCenter Password
 
 
-**<a href="" id="Uninstalling EP Ops Agent on Linux"></a>**Remove EP Ops Agent on Linux
-----------------------------------------------------------------------------------------
+****Remove EP Ops Agent on Linux
+-------------------------------------
 
 If you no longer want to monitor a guest OS on a particular VM, you must
 remove the EP Ops agent from the VM.  Alternatively, if you want to
@@ -155,8 +155,8 @@ installation of the EP Ops agent to successfully re-register.
 
         # rm /etc/vmware/epops-token
 
-**<a href="" id="Uninstall EP Ops Agent on Windows"></a>**Remove EP Ops Agent on Windows
-----------------------------------------------------------------------------------------
+****Remove EP Ops Agent on Windows
+--------------------------------------
 
 1.  Open the command prompt and change directory to the EP Ops agent bin
     directory:
@@ -186,8 +186,8 @@ installation of the EP Ops agent to successfully re-register.
 **Note:** Enable **Show hidden files, folder, and drives** in **Folder
 Options** if using Windows Explorer.
 
-<a href="" id="Verify that EP Ops Agent is collecting data"></a>Verify that EP Ops Agent is collecting data
------------------------------------------------------------------------------------------------------------
+Verify that EP Ops Agent is collecting data
+-----------------------------------------------
 
 After installing the agent on a VM, verify that the agent is collecting
 data properly.
@@ -218,8 +218,8 @@ data properly.
 
 
 
-<a href="" id="View EP Ops specific metrics"></a>View EP Ops specific metrics
------------------------------------------------------------------------------
+View EP Ops specific metrics
+--------------------------------
 
 vROps 6.1 with End Point Operations Management adds specific OS metrics
 to get a granular view of what is happening inside your VMs. To view a
@@ -245,8 +245,8 @@ list of these metrics complete the following steps:
     You can double click on the images in the map view to see specific
     info on those objects.
 
-<a href="" id="View EP Ops specific alerts"></a>View EP Ops specific alerts
----------------------------------------------------------------------------
+View EP Ops specific alerts
+-------------------------------
 
 vROps 6.1 with End Point Operations Management adds alerts specific to
 operating systems to get a broader view of what is happening inside your

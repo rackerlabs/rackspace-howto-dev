@@ -41,7 +41,7 @@ Contents
     Mode](#Troubleshooting_your_server_in_Rescue_Mode)
 -   [Exiting Rescue Mode](#Exiting_Rescue_Mode)
 
-#### <a href="" id="What_is_Rescue_mode"></a>**What is Rescue mode?**
+#### **What is Rescue mode?**
 
 Rescue mode grants the Administrator user full access to your
 non-bootable server&rsquo;s filesystem. You can use it to modify problems in
@@ -49,8 +49,7 @@ configuration files or to copy data from your Cloud Server to a remote
 location. Rescue Mode through the Rackspace Cloud Control Panel is
 similar to booting into safe mode with networking enabled.
 
-<a href="" id="Getting_your_server_into_Rescue_mode"></a>**Getting your
-server into Rescue mode**
+**Getting your server into Rescue mode**
 
 1.  Log in to the Cloud Control Panel, and click **Servers**.
 2.  From your list of servers, click the Actions cog next to the server
@@ -81,7 +80,7 @@ Notice that the rescue environment is limited to 24 hours. This means
 that you will have one day to correct the problems on your server before
 it automatically reverts to its original state.
 
-#### <a href="" id="Connecting_to_your_server_in_Rescue_Mode"></a>Connecting to your server in Rescue Mode
+#### Connecting to your server in Rescue Mode
 
 You can now use a RDP client to connect to your server using the public
 IP address and the temporary Administrator password to login to Rescue
@@ -90,7 +89,7 @@ Mode.
 
   <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/rdpclient.png" width="387" height="450" />
 
-#### <a href="" id="Troubleshooting_your_server_in_Rescue_Mode"></a>Troubleshooting your server in Rescue Mode
+#### Troubleshooting your server in Rescue Mode
 
 Before you can access the files on your server you'll need to mount the
 server's file system. To do that you'll need to look at your partitions
@@ -127,7 +126,7 @@ access your data.
 
  <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ddrive.png" width="600" height="374" />
 
-#### <a href="" id="Exiting_Rescue_Mode"></a>**Exiting Rescue Mode**
+#### **Exiting Rescue Mode**
 
 Once you are done troubleshooting your system, you can exit Rescue Mode
 by clicking the button labeled **Exit Rescue Mode** in the Rackspace

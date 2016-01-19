@@ -26,8 +26,8 @@ server](/how-to/prepare-to-migrate-a-windows-server).
 -   [Right before the migration](#rightBefore)
 -   [After a migration](#afterMigration)
 
-<a href="" id="backUpYourData"></a>Back up your data
-----------------------------------------------------
+Back up your data
+---------------------
 
 Before you perform any migration, create a file-level backup of
 important data. You can use Rackspace Cloud Backup to automate the
@@ -39,8 +39,8 @@ rsync to copy your data to another server.
 -   [Backing up your files with
     rsync](/how-to/backing-up-your-files-with-rsync)
 
-<a href="" id="prepareforSystemReboot"></a>Prepare for a system reboot
-----------------------------------------------------------------------
+Prepare for a system reboot
+-------------------------------
 
 It's good practice to shut down your server during the final stages of a
 migration to safely copy dynamic content to the new host. During a
@@ -50,8 +50,8 @@ purpose.
 Ensure that your server will reboot quickly and safely when the
 migration completes.
 
-<a href="" id="generalPrep"></a>General preparation
----------------------------------------------------
+General preparation
+-----------------------
 
 The following tasks help to avoid issues with server time and the size
 of the disk space on the server.
@@ -67,8 +67,8 @@ Protocol (NTP) on your server.
 For details on setting up NTP on your server, see [Using NTP to sync
 time](/how-to/using-ntp-to-sync-time).
 
-<a href="" id="rightBefore"></a>Right before the migration
-----------------------------------------------------------
+Right before the migration
+------------------------------
 
 You can reduce the time required for a migration and improve the
 reliability of a resulting image by reducing the number and size of
@@ -87,8 +87,8 @@ To lock your tables in MySQL, run the following command:
 
     mysql -u root -p --execute="FLUSH TABLES WITH READ LOCK"
 
-<a href="" id="afterMigration"></a>After a migration
-----------------------------------------------------
+After a migration
+---------------------
 
 After a migration is complete and your new server starts, you should
 test your web sites and applications. Ensure that applications are

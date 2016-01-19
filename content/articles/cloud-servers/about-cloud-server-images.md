@@ -24,7 +24,7 @@ be used as a back-up solution.
 -   [Linux servers](#linux)
 -   [Windows servers](#windows)
 
-### <a href="" id="all">For all server types</a>
+### [For all server types]()
 
 Please take note of the following limitations when creating server
 images:
@@ -69,7 +69,7 @@ images:
     past the image limits, contact Rackspace Cloud support. Our admins
     may be able to succeed where our automated processes do not.
 
-### <a href="" id="linux">Linux Servers</a>
+### [Linux Servers]()
 
 -   When an image creation is attempted the system runs a process that
     tries to reclaim space that has been freed by deleting files
@@ -79,7 +79,7 @@ images:
     creation process again about a half hour after it fails could result
     in a successful image process thanks to that cleanup operation.
 
-### <a href="" id="windows">Windows Servers</a>
+### [Windows Servers]()
 
 -   On a **Windows** Cloud Server, current ***or previous*** disk usage
     cannot exceed **160GB**. Due to limitations with the Windows

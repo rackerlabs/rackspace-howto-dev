@@ -108,7 +108,7 @@ optimization goals.
 
 
 
-<a href="#_msocom_4" id="_anchor_4" class="msocomanchor"><img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-thirdIMAGE.png" width="783" height="419" /></a>
+[<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CDN-thirdIMAGE.png" width="783" height="419" />](#_msocom_4)
 
 -   Request routing directs client requests to the content source best
     able to serve the request. This may involve directing a client

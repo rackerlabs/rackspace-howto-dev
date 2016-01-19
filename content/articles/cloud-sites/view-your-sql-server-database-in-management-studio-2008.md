@@ -15,7 +15,7 @@ Management Studio 2008 and the database is provisioned correctly in the
 Rackspace system, refer to the following blog post for troubleshooting
 information:
 
-<a href="http://sqlblog.com/blogs/aaron_bertrand/archive/2008/07/07/a-little-management-studio-oops.aspx" class="uri" class="external free" title="http://sqlblog.com/blogs/aaron_bertrand/archive/2008/07/07/a-little-management-studio-oops.aspx">http://sqlblog.com/blogs/aaron_bertrand/archive/2008/07/07/a-little-management-studio-oops.aspx</a>
+<http://sqlblog.com/blogs/aaron_bertrand/archive/2008/07/07/a-little-management-studio-oops.aspx>
 
 To fix the problem, you must connect to a SQL Server 2008 database
 engine, click the **Databases** folder, right-click in the column

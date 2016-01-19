@@ -35,8 +35,8 @@ To unlock the domain, you must have access to the administrative email
 address you used when first registering the domain. Your current
 registrar will send an email to this account that will require a reply
 from you, confirming that the transfer is authorized. If you do not have
-access to this email address, contact
-<a href="http://manage.rackspacecloud.com/SupportMain.do" class="external text" title="http://manage.rackspacecloud.com/SupportMain.do">customer support</a>
+access to this email address, contact [customer
+support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do")
 for help. You can do a WHOIS search to find the administrative email and
 the current registrar for the domain.
 
@@ -63,14 +63,14 @@ If you are hosting DNS at a provider that is not listed here, contact
 your DNS provider for steps showing you how to configure custom
 nameservers.
 
-<a href="" id="GoDaddy"></a>
+
 
 ### GoDaddy
 
 [Setting up Custom Nameservers in
 GoDaddy](http://help.godaddy.com/article/3952 "http://help.godaddy.com/article/3952")
 
-<a href="" id="OpenSRS_Tucows_RackSpace_Cloud"></a>
+
 
 ### OpenSRS/Tucows/RackSpace Cloud
 
@@ -96,7 +96,7 @@ follow these steps.
 4.  Repeat step 3 for your second DNS server (**ns2**).
 5.  You will now see your DNS servers listed on the page.
 
-<a href="" id="Dotster"></a>
+
 
 ### Dotster
 
@@ -111,7 +111,7 @@ steps.
     NameServer** link.
 4.  Fill in the form with your nameserver name and IP address.
 
-<a href="" id="eNom"></a>
+
 
 ### eNom
 
@@ -131,7 +131,7 @@ new or update current DNS servers.
     complete email.
 4.  Click **Update**.
 
-<a href="" id="Directi"></a>
+
 
 ### Directi
 
@@ -150,7 +150,7 @@ follow these steps.
 6.  To modify a DNS server, make the modifications in the **IP Address**
     text box and click **Modify IP Address**.
 
-<a href="" id="Name.com"></a>
+
 
 ### Name.com
 

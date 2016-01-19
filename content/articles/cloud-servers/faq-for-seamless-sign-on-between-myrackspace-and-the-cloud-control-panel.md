@@ -30,7 +30,7 @@ Panel.
 -   [How do I add or modify metadata?](#metadata)
 -   [What are the limitations of SSO?](#limitations)
 
-### <a href="" id="whatis"></a>What is seamless sign-on (SSO)?
+### What is seamless sign-on (SSO)?
 
 Rackspace allows dedicated customers to manage your public cloud
 environment without having to sign on multiple times. After you log in
@@ -43,7 +43,7 @@ dedicated account and its corresponding linked cloud accounts.
 
 </div>
 
-### <a href="" id="howdoi"></a>How do I use SSO?
+### How do I use SSO?
 
 SSO is integrated into our products as much as possible. When you
 navigate Cloud accounts in the MyRackspace portal, hyperlinks for
@@ -59,7 +59,7 @@ name](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rack
 
 </div>
 
-### <a href="" id="disable"></a>How do I disable SSO?
+### How do I disable SSO?
 
 You may remove user permissions from any linked Cloud account for which
 you do not want someone to have SSO access. Manage your user permissions
@@ -68,7 +68,7 @@ Assign by Product**.
 
 ([back to top](#top))
 
-### <a href="" id="permissions"></a>What permissions do I have when using SSO?
+### What permissions do I have when using SSO?
 
 Permissions are based on the access set for the individual Cloud account
 you are trying to access.
@@ -78,7 +78,7 @@ screen](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.ra
 
 ([back to top](#top))
 
-### <a href="" id="mapping"></a>How do MyRackspace permissions map to Cloud Control Panel permissions?
+### How do MyRackspace permissions map to Cloud Control Panel permissions?
 
 <table>
 <colgroup>
@@ -131,7 +131,7 @@ screen](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.ra
 
 ([back to top](#top))
 
-### <a href="" id="changepermissions"></a>How are user permissions set or changed for SSO?
+### How are user permissions set or changed for SSO?
 
 User permissions for SSO are directly mapped based on the user's Cloud
 account permission settings.You can view permissions by user or by
@@ -149,27 +149,27 @@ product](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.r
 
 ([back to top](#top))
 
-### <a href="" id="linkback"></a>Can I link back to MyRackspace from the Cloud Control Panel?
+### Can I link back to MyRackspace from the Cloud Control Panel?
 
 Yes. Click the **Back to MyRackspace** link in the upper-left corner of
 the Cloud Control Panel.
 
 ([back to top](#top))
 
-### <a href="" id="seamless"></a>Can I log in to the Cloud Control Panel and seamlessly link to and be logged in to MyRackspace?
+### Can I log in to the Cloud Control Panel and seamlessly link to and be logged in to MyRackspace?
 
 No, not at this time.
 
 ([back to top](#top))
 
-### <a href="" id="manageeverything"></a>Can I manage all my tickets, billing, and users in one place now?
+### Can I manage all my tickets, billing, and users in one place now?
 
 No, not at this time. Tickets, billing, and users are currently managed
 separately in the respective interfaces.
 
 ([back to top](#top))
 
-### <a href="" id="metadata"></a>How do I add or modify metadata?
+### How do I add or modify metadata?
 
 With the introduction of this new functionality, one of the features
 that will no longer be available is the ability to edit Cloud Server
@@ -190,7 +190,7 @@ functionality, there are 3 options:
 
 ([back to top](#top))
 
-### <a href="" id="limitations"></a>What are the limitations of SSO?
+### What are the limitations of SSO?
 
 -   Tickets are not consolidated to one location. Cloud and Dedicated
     support tickets are still handled in their respective interfaces.

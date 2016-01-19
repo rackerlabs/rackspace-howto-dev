@@ -282,7 +282,9 @@ options will remain the same as they are now.
 
 #### Where can I get more information about Scheduled Images?
 
--   <a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images" class="links">Scheduled Images API Extension Documentation</a>
--   <a href="/how-to/using-python-novaclient-to-manage-scheduled-images" class="links">Using python-novaclient to manage scheduled images</a>
+-   [Scheduled Images API Extension
+    Documentation](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_extensions.html#scheduled_images)
+-   [Using python-novaclient to manage scheduled
+    images](/how-to/using-python-novaclient-to-manage-scheduled-images)
 
 

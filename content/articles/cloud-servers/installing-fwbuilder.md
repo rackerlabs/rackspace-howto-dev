@@ -4,8 +4,8 @@ title: Installing fwbuilder
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-30'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Cloud Servers
 body_format: tinymce
 ---
@@ -19,26 +19,22 @@ article may assist in "porting" this article to another distro.
 **Prerequisites:** [VNC
 Install](/how-to/vnc-install "VNC Install")
 
-<a href="" id="Introduction"></a>
+
 
 <span class="mw-headline">Introduction </span>
 ----------------------------------------------
 
 Fwbuilder is an advanced graphical firewall configuration tool. It is
 used to set up complex firewall policies in situations where
-command-line scripting tools would simply be too slow or clunky. For
-simpler configurations or for users who are newer to Linux, we recommend
-our
-[iptables](/how-to/introduction-to-firewalls)
-articles.
+command-line scripting tools would simply be too slow or clunky.
 
-<a href="" id="Installation"></a>
+
 
 <span class="mw-headline">Installation </span>
 ----------------------------------------------
 
 Fwbuilder may either be downloaded from
-<a href="http://sourceforge.net/project/showfiles.php?group_id=5314&amp;package_id=125359" class="external text" title="http://sourceforge.net/project/showfiles.php?group_id=5314&amp;package_id=125359">Sourceforge</a>
+[Sourceforge](http://sourceforge.net/project/showfiles.php?group_id=5314&package_id=125359 "http://sourceforge.net/project/showfiles.php?group_id=5314&package_id=125359")
 or installed via your Cloud Server's built-in package manager:
 
     aptitude install fwbuilder
@@ -48,8 +44,9 @@ VNC or X over SSH articles above, then simply type
 
     fwbuilder
 
-to launch the application. <a href="" id="Configuration"></a>
+to launch the application.
 
--   <a href="http://www.fwbuilder.org/4.0/docs/users_guide5/" class="external text" title="http://www.fwbuilder.org/4.0/docs/users_guide5/">Firewall Builder 5 User's Guide</a>
+-   [Firewall Builder 5 User's
+    Guide](http://www.fwbuilder.org/4.0/docs/users_guide5/ "http://www.fwbuilder.org/4.0/docs/users_guide5/")
 
 

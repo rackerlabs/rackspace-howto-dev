@@ -34,8 +34,10 @@ Pre-Migration Tasks
     restored to the new MSSQL2008 location please add your full
     text catalogs. The information at the following links will assist
     you in completing this task:
-    -   <a href="http://msdn.microsoft.com/en-us/library/ms188403.aspx" class="external free" title="http://msdn.microsoft.com/en-us/library/ms188403.aspx">How to drop a full text catalog</a>
-    -   <a href="http://msdn.microsoft.com/en-us/library/ms189520.aspx" class="external free" title="http://msdn.microsoft.com/en-us/library/ms189520.aspx">How to create a fulltext catalog</a>
+    -   [How to drop a full text
+        catalog](http://msdn.microsoft.com/en-us/library/ms188403.aspx "http://msdn.microsoft.com/en-us/library/ms188403.aspx")
+    -   [How to create a fulltext
+        catalog](http://msdn.microsoft.com/en-us/library/ms189520.aspx "http://msdn.microsoft.com/en-us/library/ms189520.aspx")
 
 5.  You can set the database to `READ-ONLY` mode to ensure there are no
     updates done to the database while the migration is performed with
@@ -87,8 +89,9 @@ Cloud Site migration steps
     owner login that you used to restore the database. If you need to
     change the owner to another login you created in the control panel
     or remap users in your database to new logins please refer to the KB
-    article
-    <a href="/how-to/remap-database-users-in-mylittleadmin" class="mw-redirect" title="How to Change ownership and remap database users using the web based admin tool for MSSQL.">How to Change ownership and remap database users using the web based admin tool for MSSQL.</a>
+    article [How to Change ownership and remap database users using the
+    web based admin tool
+    for MSSQL.](/how-to/remap-database-users-in-mylittleadmin "How to Change ownership and remap database users using the web based admin tool for MSSQL.")
 8.  Once the migration is complete, update all connection strings to
     point to the new database. After you verify that everything is
     working from the MSSQL2008 database, delete your MSSQL2005 database

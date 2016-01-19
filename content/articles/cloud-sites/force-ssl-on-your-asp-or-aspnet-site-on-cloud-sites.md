@@ -51,10 +51,11 @@ site, contact Support.
     </configuration>
 
 You could modify the example to force SSL on one page or specific pages.
-For more information about the IIS Rewrite Module, see
-<a href="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/" class="external text" title="http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/">Creating Rewrite Rules for the URL Rewrite Module</a>
-and
-<a href="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/" class="external text" title="http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/">URL Rewrite Module Configuration Reference</a>
+For more information about the IIS Rewrite Module, see [Creating Rewrite
+Rules for the URL Rewrite
+Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/")
+and [URL Rewrite Module Configuration
+Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
 on the Microsoft IIS site.
 
 ASP.NET (not MVC 3)

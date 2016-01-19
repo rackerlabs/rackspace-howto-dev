@@ -37,19 +37,19 @@ Get quick answers to common questions about Rackspace Email.
 Getting started
 ---------------
 
-### <a href="" id="Maximum mailbox"></a>What is the maximum mailbox storage?
+### What is the maximum mailbox storage?
 
 The maximum size of a Rackspace Email box is 25 GB.
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="Max attach"></a>What is the maximum size for an attachment?
+### What is the maximum size for an attachment?
 
 The maximum size for an attachment in the Rackspace environment is 50mb.
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="Email sig"></a>How do I add a signature to my email?
+### How do I add a signature to my email?
 
 You can find instructions for this in the article: [Adding a signature
 to Rackspace
@@ -57,7 +57,7 @@ Email](/how-to/adding-a-signature-to-rackspace-email)
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="add alias"></a>How do I add an Alias?
+### How do I add an Alias?
 
 You can find instructions for this in the article: [Adding an alias with
 Rackspace
@@ -65,21 +65,21 @@ Email](/how-to/adding-an-alias-with-rackspace-email)
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="group lists"></a>How many group lists can I create?
+### How many group lists can I create?
 
 There's no hard limit to how many Group Lists you can have. The maximum
 number of recipients for a group list is 50.
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="email online"></a>How can I view my email online?
+### How can I view my email online?
 
 You can view and manage your email at the following
 address:[https://apps.rackspace.com](https://apps.rackspace.com/)
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="password"></a>How do I change my password?
+### How do I change my password?
 
 A Rackspace Email user can do this through webmail. You can go to
 [cp.rackspace.com](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f) and
@@ -89,7 +89,7 @@ Password,** located at the bottom left hand pane**.**
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="IMAP &amp; POP"></a>What's the difference between IMAP and POP?
+### What's the difference between IMAP and POP?
 
 The main difference between IMAP and POP is that IMAP works with email
 directly on the server, while POP fetches mail from the server and works
@@ -106,7 +106,7 @@ We strongly recommend using an IMAP connection with Rackspace Email.
 Account Services
 ----------------
 
-### <a href="" id="billing"></a>Where can I view my billing invoice?
+### Where can I view my billing invoice?
 
 Your billing invoice can be view through the [Cloud Office control
 panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f). <span>Once
@@ -117,14 +117,14 @@ to view their history.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### <span><a href="" id="Help!"></a>Help! I'm locked out of my control panel!</span>
+### <span>Help! I'm locked out of my control panel!</span>
 
 <span>No worries! Just call our main support line so we can direct you
 to your dedicated support team for help: 1-800-961-4454.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### <a href="" id="purchase storage"></a>How do I purchase more storage, mailboxes, licenses to my account?
+### How do I purchase more storage, mailboxes, licenses to my account?
 
 <span>To purchase or make an upgrade to your account log in to your
 control panel and on the right hand side under </span>**My
@@ -138,7 +138,7 @@ Order**<span>.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### <span><a href="" id="admin account"></a>How can I add an admin to my account? </span>
+### <span>How can I add an admin to my account? </span>
 
 <span>Log in to your control panel and on the right hand side under
 </span>**My Account**<span> select </span>**Manage
@@ -149,7 +149,7 @@ can only have up to 3 Administrators per account; choose wisely.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### <span><a href="" id="submit ticket"></a>How do I submit a ticket?</span>
+### <span>How do I submit a ticket?</span>
 
 <span>Log in to your control panel and navigate to **Support** at the
 bottom and select **View/Create Ticket**. To create a new ticket select
@@ -159,7 +159,7 @@ recent tickets.</span>
 
 ^[back\\ to\\ top](#top)^
 
-### <span><a href="" id="System status"></a>How can I determine the Cloud Office system status?</span>
+### <span>How can I determine the Cloud Office system status?</span>
 
 <span>For Cloud Office system status verification, use the following
 link: [Cloud Office system

@@ -57,8 +57,8 @@ article provides the following information:
 -   [Install the certificate](#ssl_install)
 -   [SSL tips](#ssl_tips_and_tricks)
 
-<a href="" id="supported_ssls"></a>**Supported types of SSL Certificates**
---------------------------------------------------------------------------
+**Supported types of SSL Certificates**
+-------------------------------------------
 
 The primary certificates supported on Cloud Sites are as follows:
 
@@ -74,8 +74,8 @@ domain to work properly.
 **Note**: Cloud Sites no longer supports *any* self-signed
 certificates.
 
-**<a href="" id="generateaCSR"></a>Generate a CSR for your site**
------------------------------------------------------------------
+**Generate a CSR for your site**
+------------------------------------
 
 Complete the following steps to generate a certificate signing request
 (CSR), which you will need to have when you purchase an SSL certificate.
@@ -108,7 +108,7 @@ Your CSR is generated. With the CSR ready for use, you can proceed to
 [purchasing a
 certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/27345/view#ssl_purchase).
 
-<a href="" id="ssl_purchase"></a>
+
 
 **Purchase a certificate**
 --------------------------
@@ -132,7 +132,7 @@ After you have completed your certificate purchase, you're ready to
 [install the
 certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/27345/view#ssl_install).
 
-<a href="" id="ssl_install"></a>
+
 
 **Install the certificate**
 ---------------------------
@@ -179,7 +179,7 @@ Removing an SSL certificate from a site will change the site's IP
 address in the same way that adding a new certificate changes the IP
 address.  DNS must be updated in that case as well.
 
-<a href="" id="ssl_tips_and_tricks"></a>
+
 
 **SSL tips**
 ------------

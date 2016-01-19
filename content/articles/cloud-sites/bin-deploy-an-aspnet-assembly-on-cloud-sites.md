@@ -53,7 +53,7 @@ Get started
 
 To get started, you must obtain the assembly that you want to bin
 deploy. As an example, the instructions in this article bin-deploy
-<a href="http://www.urlrewriter.net/" class="external text" title="http://www.urlrewriter.net/">UrlRewriter.NET</a>,
+[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"),
 a URL rewriter for ASP.NET applications that do not have the URL Rewrite
 Module installed.
 
@@ -63,8 +63,7 @@ Obtain the assembly
 The following steps use UrlRewriter.NET. Substitute with the assembly
 that you want to deploy.
 
-1.  Go to
-    <a href="http://www.urlrewriter.net/" class="uri" class="external free" title="http://www.urlrewriter.net/">http://www.urlrewriter.net/</a>.
+1.  Go to <http://www.urlrewriter.net/>.
 2.  Click the **Download** tab, and then click the **source code** link
     to download the binaries and source code.
 3.  Select one of the binary files, which is typically the first link
@@ -96,8 +95,8 @@ Some assemblies require different definitions in the **web.config** file
 to work correctly. The best way to learn how to load an assembly is to
 consult the vendor's website. In this example, we are bin-deploying
 **Intelligencia.UrlRewriter.dll**, so we consulted the vendor's website
-and found
-<a href="http://urlrewriter.net/index.php/support/configuration" class="external text" title="http://urlrewriter.net/index.php/support/configuration">a help document that explains the configuration</a>.
+and found [a help document that explains the
+configuration](http://urlrewriter.net/index.php/support/configuration "http://urlrewriter.net/index.php/support/configuration").
 Using this information, you could load UrlRewriter.NET by using the
 following example **web.config** configuration:
 

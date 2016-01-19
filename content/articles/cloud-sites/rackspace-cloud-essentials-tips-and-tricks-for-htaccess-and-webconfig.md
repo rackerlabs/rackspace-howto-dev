@@ -41,7 +41,7 @@ reading below.
 
 **What is .htaccess and what is it used for?**
 
-<a href="http://en.wikipedia.org/wiki/Htaccess" class="external text" title="http://en.wikipedia.org/wiki/Htaccess">Wikipedia</a>
+[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess")
 explains the **.htaccess** file as follows:
 
 "In several web servers (most commonly Apache), .htaccess (hypertext
@@ -58,11 +58,13 @@ control."
 For more information, and several examples, the following links are
 highly recommended:
 
--   <a href="http://www.htaccess-guide.com/" class="external text" title="http://www.htaccess-guide.com/">.htaccess-Guide.com</a>
--   <a href="http://www.javascriptkit.com/howto/htaccess.shtml" class="external text" title="http://www.javascriptkit.com/howto/htaccess.shtml">JavascriptKit.com's &quot;Comprehensive guide to .htaccess&quot;</a>
+-   [.htaccess-Guide.com](http://www.htaccess-guide.com/ "http://www.htaccess-guide.com/")
+-   [JavascriptKit.com's "Comprehensive guide to
+    .htaccess"](http://www.javascriptkit.com/howto/htaccess.shtml "http://www.javascriptkit.com/howto/htaccess.shtml")
 
-For a more comprehensive technical overview, please see
-<a href="http://httpd.apache.org/docs/2.0/howto/htaccess.html" class="external text" title="http://httpd.apache.org/docs/2.0/howto/htaccess.html">the Apache documentation on .htaccess files</a>.
+For a more comprehensive technical overview, please see [the Apache
+documentation on .htaccess
+files](http://httpd.apache.org/docs/2.0/howto/htaccess.html "http://httpd.apache.org/docs/2.0/howto/htaccess.html").
 
 On the Rackspace Cloud Sites platform, .htaccess can be used for
 handling certain points of website security, PHP configuration changes,
@@ -76,7 +78,7 @@ file is used for security.
 
 **What is web.config and what is it used for?**
 
-<a href="http://en.wikipedia.org/wiki/Htaccess" class="external text" title="http://en.wikipedia.org/wiki/Htaccess">Wikipedia</a> explains
+[Wikipedia](http://en.wikipedia.org/wiki/Htaccess "http://en.wikipedia.org/wiki/Htaccess") explains
 the **web.config** file as follows:
 
 Web.config is the main settings and configuration file for

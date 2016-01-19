@@ -79,7 +79,7 @@ from the list below based on your requirements.
     allow from env=allowclient
     SetEnvIf X-Cluster-Client-Ip 000.000.000.000 allowclient
 
-#### <a href="" id="Allowing_only_a_certain_IP_IP_Addresses_when_your_site_is_using_SSL"></a> <span class="mw-headline">Allowing only a certain IP/IP Addresses when your site is using SSL:</span>
+####  <span class="mw-headline">Allowing only a certain IP/IP Addresses when your site is using SSL:</span>
 
 order deny,allow
 deny from all
@@ -92,7 +92,7 @@ your IP address to access your site, and is a great way to develop your
 site without the risk of someone reaching it before it's ready.
 **You can repeat line 1 to allow multiple IPs.**
 
-<a href="" id="Denying_an_IPMultiple_IP_Addresses"></a>
+
 
 #### <span class="mw-headline">Denying an IP/Multiple IP addresses:</span>
 
@@ -101,7 +101,7 @@ site without the risk of someone reaching it before it's ready.
     Allow from all
     SetEnvIf X-Cluster-Client-Ip "^000\.000\.000\.000" DenyAccess
 
-<a href="" id="Denying_an_IPMultiple_IP_addresses_when_your_site_is_using_SSL"></a>
+
 
 #### <span class="mw-headline">Denying an IP/Multiple IP addresses when your site is using SSL:</span>
 

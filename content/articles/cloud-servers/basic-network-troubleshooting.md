@@ -21,8 +21,8 @@ simple commands.
 -   [<span class="toctext">iptables</span>](#iptables)
 -   [<span class="toctext">route</span>](#route)
 
-<a href="" id="ifconfig"></a>ip addr show<span class="mw-headline"> </span>
----------------------------------------------------------------------------
+ip addr show<span class="mw-headline"> </span>
+--------------------------------------------------
 
 ip addr show is a basic network information and configuration tool. On a
 working Cloud Server, its output may look something like this:
@@ -71,8 +71,8 @@ This will bring up the interface under its default configuration.
 Similar steps may be followed to fix the internal connection by using
 'eth1' and your assigned private (10.xx.xx.xx) IP.
 
-<span class="mw-headline"><a href="" id="iptables"></a>iptables </span>
------------------------------------------------------------------------
+<span class="mw-headline">iptables </span>
+----------------------------------------------
 
 iptables is a commonly-used firewall in Linux. By default, your Cloud
 Server should have iptables already installed, but it will not be
@@ -97,8 +97,8 @@ configured. To list the firewall rules, run
 If your iptables output differs from the above, the firewall may be
 causing your issue.
 
-<span class="mw-headline"><a href="" id="route"></a>route </span>
------------------------------------------------------------------
+<span class="mw-headline">route </span>
+-------------------------------------------
 
 route is used to view and edit the routing table. The output of route
 may display several lines, but the most important (or the most commonly

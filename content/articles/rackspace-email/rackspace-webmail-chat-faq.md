@@ -10,12 +10,13 @@ product: Rackspace Email
 body_format: tinymce
 ---
 
-<a href="" id="top"></a>
+
 
 Get quick answers to common questions about the Webmail Chat feature in
 Rackspace Email.
 
--   <a href="#1" id="Top">How do I enable and disable Rackspace Webmail Chat on my private label site?</a>
+-   [How do I enable and disable Rackspace Webmail Chat on my private
+    label site?](#1)
 -   [How do I enable and disable Rackspace Webmail Chat for users in an
     email domain?](#2)
 -   [What browsers are supported for Rackspace Webmail Chat?](#3)
@@ -28,10 +29,10 @@ Rackspace Email.
 -   [Does Rackspace Webmail Chat require a certain port on the firewall
     to be open?](#9)
 
-  <a href="" id="private"></a>
 
-<a href="" id="1"></a>How do I enable and disable Rackspace Webmail Chat on my private label site?
---------------------------------------------------------------------------------------------------
+
+How do I enable and disable Rackspace Webmail Chat on my private label site?
+--------------------------------------------------------------------------------
 
 You can display the chat link or prevent the chat link from being
 displayed in your private label Webmail Site by performing the following
@@ -63,10 +64,10 @@ steps in hte Cloud Office Control Panel.
 
 
 
-<a href="" id="email"></a>
 
-<a href="" id="2"></a>How do I enable and disable Rackspace Webmail Chat for users in an email domain?
-------------------------------------------------------------------------------------------------------
+
+How do I enable and disable Rackspace Webmail Chat for users in an email domain?
+------------------------------------------------------------------------------------
 
 You can display the chat link or prevent the chat link from being
 displayed in Webmail for users of specific email domains by completing
@@ -85,10 +86,10 @@ the following steps in the Cloud Office Control Panel.
 
 
 
-<a href="" id="browsers"></a>
 
-<a href="" id="3"></a>What browsers are supported for Rackspace Webmail Chat?
------------------------------------------------------------------------------
+
+What browsers are supported for Rackspace Webmail Chat?
+-----------------------------------------------------------
 
 The latest versions of Chrome, Firefox, Internet Explorer, and Safari
 are all supported for Rackspace Webmail Chat. We have no plans to
@@ -98,10 +99,10 @@ support earlier versions of Internet Explorer.
 
 
 
-<a href="" id="logs"></a>
 
-<a href="" id="4"></a>How long are chat logs retained?
-------------------------------------------------------
+
+How long are chat logs retained?
+------------------------------------
 
 We don&rsquo;t store chat logs on our system, but users are able to see any
 messages sent or received during their current Webmail session. We plan
@@ -112,10 +113,10 @@ feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 
 
-<a href="" id="chat"></a>
 
-<a href="" id="5"></a>Is it possible to chat with a group or team?
-------------------------------------------------------------------
+
+Is it possible to chat with a group or team?
+------------------------------------------------
 
 Currently it is not possible to chat with a group or team. We plan to
 add group/team chat in the future. Please [submit your
@@ -125,10 +126,10 @@ feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 
 
-<a href="" id="sfb"></a>
 
-<a href="" id="6"></a>Can I chat with Skype for Business users?
----------------------------------------------------------------
+
+Can I chat with Skype for Business users?
+---------------------------------------------
 
 Currently it is not possible to chat with Skype for Business users. We
 are researching this capability for potential future enhancement. Please
@@ -139,10 +140,10 @@ feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 
 
-<a href="" id="third"></a>
 
-<a href="" id="7"></a>Can I use Rackspace Webmail Chat with third-party IM clients?
------------------------------------------------------------------------------------
+
+Can I use Rackspace Webmail Chat with third-party IM clients?
+-----------------------------------------------------------------
 
 Currently it is not possible to use third-party IM clients. We plan to
 allow access via third-party clients in the future. Please [submit your
@@ -152,10 +153,10 @@ feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 
 
-<a href="" id="html5"></a>
 
-<a href="" id="8"></a>How do I enable or disable HTML5 notifications after the initial permissions request?
------------------------------------------------------------------------------------------------------------
+
+How do I enable or disable HTML5 notifications after the initial permissions request?
+-----------------------------------------------------------------------------------------
 
 *In Chrome:*
 
@@ -182,10 +183,10 @@ feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 
 
-<a href="" id="port"></a>
 
-<a href="" id="9"></a>Does Rackspace Webmail Chat require a certain port on the firewall to be open?
-----------------------------------------------------------------------------------------------------
+
+Does Rackspace Webmail Chat require a certain port on the firewall to be open?
+----------------------------------------------------------------------------------
 
 Yes. Webmail Chat uses port 5291. This port must be open on your network
 for Webmail Chat to function properly.

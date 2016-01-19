@@ -10,10 +10,10 @@ product: Cloud Sites
 body_format: tinymce
 ---
 
-If your website is running in
-<a href="http://www.code-magazine.com/Article.aspx?quickid=060103" class="external text" title="http://www.code-magazine.com/Article.aspx?quickid=060103">integrated mode</a>,
+If your website is running in [integrated
+mode](http://www.code-magazine.com/Article.aspx?quickid=060103 "http://www.code-magazine.com/Article.aspx?quickid=060103"),
 you might have noticed that your
-<a href="http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx" class="external text" title="http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx">HttpHandlers</a>
+[HttpHandlers](http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx "http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx")
 no longer function even though they are set in your **web.config** file.
 
 Explanation
@@ -30,12 +30,14 @@ updated.
 Solutions
 ---------
 
--   Peter Kellner's article,
-    <a href="http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/" class="external text" title="http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/">How to use HttpHandlers such as .ashx files with IIS7 Integrated Mode</a>,
+-   Peter Kellner's article, [How to use HttpHandlers such as .ashx
+    files with IIS7 Integrated
+    Mode](http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/ "http://peterkellner.net/2008/09/06/iis7-httphandlers-handlers-integrated-mode-webfarm/"),
     briefly covers the differences between the *old way* to set up
     handlers and the *new way*.
--   The Microsoft Developer Network also explains
-    <a href="http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx" class="external text" title="http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx">how to set up HttpHandlers for each of the above situations</a>.
+-   The Microsoft Developer Network also explains [how to set up
+    HttpHandlers for each of the above
+    situations](http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx "http://msdn.microsoft.com/en-us/library/46c5ddfy.aspx").
     This article covers the differences in detail.
 
 

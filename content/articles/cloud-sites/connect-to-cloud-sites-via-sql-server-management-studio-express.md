@@ -39,7 +39,7 @@ Ensure that you have installed the latest version of SQL Server
 Management Studio Express and any available service packs. As of the
 last update of this article, SQL Server 2008 Management Studio Express
 was available at
-<a href="http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b" class="uri" class="external free" title="http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b">http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b</a>.
+<http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b>.
 
 Get started
 -----------
@@ -47,8 +47,8 @@ Get started
 To make an external connection, you need the external IP address for
 your database. You can get the IP address by following these steps:
 
-1.  Log in to
-    <a href="https://manage.rackspacecloud.com" class="external free" title="https://manage.rackspacecloud.com">the Cloud Sites Control Panel</a>.
+1.  Log in to [the Cloud Sites Control
+    Panel](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
 2.  In the left navigation pane, click **Hosting** **&gt; Cloud Sites**.
 3.  Click the domain name under which the database exists.
 4.  Click the **Features** tab.

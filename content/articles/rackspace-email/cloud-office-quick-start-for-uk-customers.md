@@ -10,7 +10,7 @@ product: Rackspace Email
 body_format: full_html
 ---
 
-<a href="" id="top"></a>
+
 
 The instructions in this article are for customers who signed up for
 their Rackspace email account at <http://www.rackspace.co.uk>. The steps
@@ -31,7 +31,7 @@ Videos](http://www.rackspace.co.uk/cloud-office/email-demo-videos).
 9.  [Downgrade or cancel services](#down)
 10. [Mail terms, conditions, and acceptable use policy](#tocaus)
 
-  <a href="" id="setup"></a>
+
 
 Set up your mailboxes
 ---------------------
@@ -95,7 +95,7 @@ the update has occurred because mail will start being delivered to your
 
 [back to top](#top)
 
-<a href="" id="view"></a>
+
 
 View your mail
 --------------
@@ -119,7 +119,7 @@ Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
 
 [back to top](#top)
 
-<a href="" id="add"></a>
+
 
 Add a new domain
 ----------------
@@ -148,7 +148,7 @@ Add a new domain
 
 [back to top](#top)
 
-<a href="" id="alias"></a>
+
 
 Add an alias
 ------------
@@ -187,7 +187,7 @@ Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).
 
 [back to top](#top)
 
-<a href="" id="auto"></a>
+
 
 Set up autodiscover records
 ---------------------------
@@ -198,7 +198,7 @@ Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-busine
 
 [back to top](#top)
 
-<a href="" id="migrate"></a>
+
 
 Migrating your existing mail account
 ------------------------------------
@@ -225,7 +225,7 @@ following ways:
 
 [back to top](#top)
 
-<a href="" id="pay"></a>
+
 
 Set up payments
 ---------------
@@ -241,7 +241,7 @@ payment. Follow these steps to set up your preferred payment method:
 
 [back to top](#top)
 
-<a href="" id="invo"></a>
+
 
 View and download invoices
 --------------------------
@@ -259,7 +259,7 @@ To view and download your invoices follow these steps:
 
 [back to top](#top)
 
-<a href="" id="invo"></a>
+
 
 Downgrade or cancel your services
 ---------------------------------
@@ -275,7 +275,7 @@ arrears and will not be billed pro-rata.
 
 [back to top](#top)
 
-<a href="" id="tocaus"></a>
+
 
 Mail terms, conditions, and acceptable usage policy
 ---------------------------------------------------

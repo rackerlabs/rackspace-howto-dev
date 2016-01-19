@@ -49,7 +49,7 @@ The Domain Tab contains 4 sections:
 Let's take a closer look at each of these sections and review their
 contents.
 
-<a href="" id="website_domain_information"></a>
+
 
 **Website Domain Information**
 
@@ -60,7 +60,7 @@ settings**, **register an unregistered domain (if applicable)** and
 [![Click here to view full size
 image](http://c806394.r94.cf2.rackcdn.com/websitedomaininfo.png "Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/websitedomaininfo.png)
 
-<a href="" id="dns_management"></a>
+
 
 **DNS Management**
 
@@ -101,7 +101,7 @@ a FQDN for a CNAME record change. *
 
 -   Click **Save** to update the change in the DNS entry
 
-<a href="" id="mx_management"></a>
+
 
 **MX (Mail Exchanger) Management**
 
@@ -121,7 +121,7 @@ MX hosts up to date. Of course, if you host your DNS with The Rackspace
 Cloud, you will not need to make any changes and all of the MX hosts
 will be updated automatically.
 
-<a href="" id="spf"></a>
+
 
 **SPF (Sender Policy Framework) Records**
 

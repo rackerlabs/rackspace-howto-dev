@@ -18,7 +18,7 @@ since it is the most common web server on Linux and the Internet. Again,
 I'm pulling the majority of this documentation from RapidSSL.com which
 is a great place to buy a certificate if you haven't already chosen:
 
-<a href="http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm" class="uri" class="external free" title="http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm">http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm</a>
+<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>
 
 -   [<span class="tocnumber">1</span> <span
     class="toctext">Prerequisites</span>](#Prerequisites)
@@ -34,7 +34,7 @@ is a great place to buy a certificate if you haven't already chosen:
 -   [<span class="tocnumber">4</span> <span class="toctext">Restart
     Apache</span>](#Restart_Apache)
 
-<a href="" id="Prerequisites"></a>
+
 
 <span class="mw-headline">Prerequisites</span>
 ----------------------------------------------
@@ -44,12 +44,12 @@ to have an IP address for this SSL cert and a unique IP address for each
 SSL that you want to host. Certificate authorities and browsers require
 that all SSL certs be on their own IP address.
 
-<a href="" id="Installing_your_SSL_Certificate"></a>
+
 
 <span class="mw-headline">Installing your SSL Certificate</span>
 ----------------------------------------------------------------
 
-<a href="" id="Copy_the_files_in_into_the_default_locale"></a>
+
 
 ### <span class="mw-headline">Copy the files in into the default locale</span>
 
@@ -63,7 +63,7 @@ your server and place it in \~/domain.com.ssl/domain.com.crt
 **Note: Copy the entire contents of the certificate from (and including)
 the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines.**
 
-<a href="" id="Edit_the_httpd.conf"></a>
+
 
 ### <span class="mw-headline">Edit the httpd.conf</span>
 
@@ -91,7 +91,7 @@ Save the changes and exit the editor.
 
 Save the changes and exit the editor.
 
-<a href="" id="iptables"></a>
+
 
 <span class="mw-headline">iptables</span>
 -----------------------------------------
@@ -112,7 +112,7 @@ Hat-based distributions, run:
 
     sudo /sbin/service iptables save
 
-<a href="" id="Restart_Apache"></a>
+
 
 <span class="mw-headline">Restart Apache</span>
 -----------------------------------------------

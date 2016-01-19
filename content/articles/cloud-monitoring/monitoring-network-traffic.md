@@ -27,7 +27,7 @@ body_format: tinymce
 
 ------------------------------------------------------------------------
 
-<a href="" id="preface"></a>
+
 
 ### Preface
 
@@ -49,7 +49,7 @@ cost for use with Cloud Servers. For more information about this
 flexible service, see [Getting Started with Cloud
 Monitoring](/how-to/cloud-monitoring).
 
-<a href="" id="monitoring"></a>
+
 
 ### Monitoring in Linux
 
@@ -60,7 +60,7 @@ setup and achieve very high accuracy. Out of all the tools available I
 am partial to VNstat and IPtraf. Both of these can be found in most
 repositories, have minimal dependencies, and work on ALL Linux systems.
 
-<a href="" id="aboutthetools"></a>
+
 
 ### About The Tools
 
@@ -86,7 +86,7 @@ repositories, have minimal dependencies, and work on ALL Linux systems.
 
 ------------------------------------------------------------------------
 
-<a href="" id="debin"></a>
+
 
 #### Ubuntu / Debian
 
@@ -120,7 +120,7 @@ Lastly we setup VNstat to begin monitoring the interfaces.
 
 ------------------------------------------------------------------------
 
-<a href="" id="centin"></a>
+
 
 #### CentOS / RHEL
 
@@ -184,7 +184,7 @@ To install here is the command :
 
 ------------------------------------------------------------------------
 
-<a href="" id="fedin"></a>
+
 
 #### Fedora (16+)
 
@@ -219,7 +219,7 @@ Lastly we create a symlink for legacy purposes
 
 ------------------------------------------------------------------------
 
-<a href="" id="susein"></a>
+
 
 #### openSUSE
 
@@ -283,7 +283,7 @@ To install iptraf here is the command :
 
 ------------------------------------------------------------------------
 
-<a href="" id="usingtoolsv"></a>
+
 
 #### Using VNstat : [*Manual Page for VNstat*](http://linux.die.net/man/1/vnstat)
 
@@ -362,7 +362,7 @@ contain data and begin showing you metrics.
 
 ------------------------------------------------------------------------
 
-<a href="" id="usingtoolsi"></a>
+
 
 #### Using IPtraf :
 
@@ -389,7 +389,7 @@ installed. IPtraf watches traffic in real time.
 
 
 
-<a href="" id="conclusion"></a>
+
 
 ### Conclusion
 

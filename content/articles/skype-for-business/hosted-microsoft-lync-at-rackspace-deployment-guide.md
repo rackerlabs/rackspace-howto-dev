@@ -4,8 +4,8 @@ title: Hosted Microsoft Lync at Rackspace Deployment Guide
 type: article
 created_date: '2014-10-20'
 created_by: Aaron Medrano
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Microsoft Skype for Business
 body_format: tinymce
 ---
@@ -59,11 +59,5 @@ download a basic version for free.
 -   [Lync 2013 deployment guide on
     Technet](http://technet.microsoft.com/en-us/library/jj204827.aspx)
 
-### User training
-
-The following guide covers the basics of using Skype for Business with
-Rackspace Hosted Exchange 2013:
-
-[Work with Skype for Business in Outlook Web App
-Guide](/how-to/work-with-skype-for-business-in-outlook-web-app-guide)
+###
 

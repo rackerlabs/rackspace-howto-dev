@@ -34,14 +34,13 @@ Contents
 -   [<span class="tocnumber">5</span> <span
     class="toctext">Success</span>](#Success)
 
-<a href="" id="Getting_Started"></a>
+
 
 <span class="mw-headline">Getting Started </span>
 -------------------------------------------------
 
-If you have not already done so, goto
-<a href="http://gallery.menalto.com/" class="uri" class="external free" title="http://gallery.menalto.com/">http://gallery.menalto.com/</a>
-and download the latest stable release of Gallery.
+If you have not already done so, goto <http://gallery.menalto.com/> and
+download the latest stable release of Gallery.
 
 Here is the link that was current at the time of this article:
 
@@ -51,7 +50,7 @@ Here is the link that was current at the time of this article:
 
     http://codex.gallery2.org/Downloads
 
-<a href="" id="Setting_up_the_Sites"></a>
+
 
 <span class="mw-headline">Setting up the Sites </span>
 ------------------------------------------------------
@@ -66,7 +65,7 @@ Here is the link that was current at the time of this article:
     information provided, the hostname, database name, database username
     and, database password.)
 
-<a href="" id="Prepare_your_data"></a>
+
 
 <span class="mw-headline">Prepare your data </span>
 ---------------------------------------------------
@@ -86,7 +85,7 @@ Here is the link that was current at the time of this article:
 3.  Once the files have finished uploading, you are ready to get started
     with the installation of the Gallery and its settings.
 
-<a href="" id="Configure_the_Site"></a>
+
 
 <span class="mw-headline">Configure the Site</span>
 ---------------------------------------------------
@@ -107,7 +106,7 @@ Here is the link that was current at the time of this article:
     it.
 4.  Click Start Using Gallery.
 
-<a href="" id="Success"></a>
+
 
 <span class="mw-headline">Success </span>
 -----------------------------------------

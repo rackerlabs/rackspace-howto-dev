@@ -29,7 +29,7 @@ customers.
 -   [Can I view a history of my online e-Check
     payments?](#e-checkHistory)
 
-#### <a href="" id="whychangingpolicy"></a>Why are you changing your policy?
+#### Why are you changing your policy?
 
 For Rackspace to comply with NACHA regulations, we need to make the
 following changes to our ACH process:
@@ -40,7 +40,7 @@ following changes to our ACH process:
 -   Pre-authorize your checking account to confirm that the account
     exists, and store the pre-authorization information
 
-#### <a href="" id="wherepaymentinfo"></a>Where do I go to access or view my payment information?
+#### Where do I go to access or view my payment information?
 
 Log in to the MyRack Portal. Click **Account**, and then select
 **Payments** from the menu.
@@ -48,7 +48,7 @@ Log in to the MyRack Portal. Click **Account**, and then select
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ1.png" width="185" height="305" />
 
 
-#### <a href="" id="wherere-enter"></a>Where do I go to re-enter my ACH payment information?
+#### Where do I go to re-enter my ACH payment information?
 
 On the Payments page in the MyRackspace Portal, click **Recurring
 Payments** at the top of the screen. Update your payment information in
@@ -56,7 +56,7 @@ the fields on the **Direct Debit / E-Check** tab.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ACHFAQ2a.png" width="595" height="326" />
 
-#### <a href="" id="whatachinfoneeded"></a>What ACH information will I need to re-enter?
+#### What ACH information will I need to re-enter?
 
 You need to enter information in the fields on the **Direct Debit /
 E-Check** tab.
@@ -71,7 +71,7 @@ This information includes:
 -   Routing number
 -   Bank account number
 
-#### <a href="" id="e-checkHistory"></a>Can I view a history of my online e-Check payments?
+#### Can I view a history of my online e-Check payments?
 
 Yes. You can find this new feature on the **Payments** page of the
 portal. In the top menu, click  **E-Check Payment History**.

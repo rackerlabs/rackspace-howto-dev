@@ -89,7 +89,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 ### Next steps
 
-### <span><a href="" id="serverImages"></a>1</span><span>.</span> Saving server images
+### <span>1</span><span>.</span> Saving server images
 
 <div class="six columns omega">
 
@@ -106,7 +106,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns alpha">
 
-### <span><a href="" id="remoteAccess"></a>2.</span> Remote access
+### <span>2.</span> Remote access
 
 -   [Remote Connection from Windows to a Linux
     Server](/how-to/connecting-to-linux-from-windows-by-using-putty)
@@ -119,7 +119,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns omega">
 
-### <span><a href="" id="serverSecurity"></a>3.</span> Cloud Server security
+### <span>3.</span> Cloud Server security
 
 -   [Basic Linux Cloud Server
     security](/how-to/basic-cloud-server-security)[](/how-to/create-an-inbound-port-allow-rule-for-windows-firewall-2008)
@@ -132,7 +132,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns alpha">
 
-### <span><a href="" id="uploadContent"></a>4.</span> Uploading your content
+### <span>4.</span> Uploading your content
 
 -   [CentOS - Installing
     vsftpd](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd)
@@ -143,7 +143,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 <div class="six columns omega">
 
-### <span><a href="" id="dnsDomainMGMT"></a>5.</span> DNS & domain management
+### <span>5.</span> DNS & domain management
 
 -   [What Are Your
     Nameservers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
@@ -152,7 +152,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Managing
     DNS](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)
 
-### <span><a href="" id="accountMGMT"></a>6.</span> Managing your account
+### <span>6.</span> Managing your account
 
 -   [Billing services
     overview](/how-to/billing-services-overview)
@@ -165,7 +165,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 
 </div>
 
-### <span><a href="" id="serverMGMT"></a>7.</span> [Managing your server](/how-to/managing-your-server)
+### <span>7.</span> [Managing your server](/how-to/managing-your-server)
 
 -   [Start a Console
     session](/how-to/start-a-console-session)

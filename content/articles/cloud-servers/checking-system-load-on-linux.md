@@ -16,8 +16,8 @@ body_format: tinymce
 
 <div class="body conbody">
 
-If the demands being placed on a
-<a href="/how-to/checking-running-services-on-linux" class="xref">running program</a>
+If the demands being placed on a [running
+program](/how-to/checking-running-services-on-linux)
 cause it to request excessive resources from your server this can lead
 to poor performance and system instability.
 

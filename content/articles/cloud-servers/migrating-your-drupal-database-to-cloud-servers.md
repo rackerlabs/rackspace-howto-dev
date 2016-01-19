@@ -56,7 +56,7 @@ A few pieces of advice that should be noted before beginning:
     setup it is recommended that you run a larger server (1GB
     or higher).
 
-<a href="" id="Creating_Your_Cloud_Server"></a>
+
 
 <span class="mw-headline">Creating Your Cloud Server</span>
 -----------------------------------------------------------
@@ -66,7 +66,7 @@ To begin we will need to create your Cloud Server via the control panel
 article on creating a new Cloud
 Server](/how-to/getting-started-with-cloud-servers-0).
 
-<a href="" id="Connecting_to_the_server"></a>
+
 
 <span class="mw-headline">Connecting to the server</span>
 ---------------------------------------------------------
@@ -109,7 +109,7 @@ Your screen should look similar to this once connected:
 
 ![sites\_mysql\_ssh\_login.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_ssh_login.png)
 
-<a href="" id="Change_Root_Password"></a>
+
 
 <span class="mw-headline">Change Root Password</span>
 -----------------------------------------------------
@@ -122,7 +122,7 @@ type the following command:
 You will be prompted for your new password twice, please enter it. *You
 will not see the characters on the screen as you type!*
 
-<a href="" id="Performing_System_Updates"></a>
+
 
 <span class="mw-headline">Performing System Updates</span>
 ----------------------------------------------------------
@@ -138,7 +138,7 @@ To do this type the following command:
 
     # apt-get upgrade
 
-<a href="" id="Configure_Time_Zone"></a>
+
 
 <span class="mw-headline">Configure Time Zone</span>
 ----------------------------------------------------
@@ -162,7 +162,7 @@ prompt and you'll see something similar to the following:
     Local time is now:      Thu Jan 14 09:47:05 CST 2010.
     Universal Time is now:  Thu Jan 14 15:47:05 UTC 2010.
 
-<a href="" id="Configure_Firewall_.28iptables.29"></a>
+
 
 <span class="mw-headline">Configure Firewall (iptables)</span>
 --------------------------------------------------------------
@@ -191,8 +191,7 @@ or server configurations.
 
 
 For more information about iptables rules with Ubuntu, check out the
-following link:
-<a href="https://help.ubuntu.com/community/IptablesHowTo" class="uri" class="external free" title="https://help.ubuntu.com/community/IptablesHowTo">https://help.ubuntu.com/community/IptablesHowTo</a>
+following link: <https://help.ubuntu.com/community/IptablesHowTo>
 
 
 Let's start by adding a rule to allow established traffic to our server:
@@ -278,7 +277,7 @@ the *root* user. You can issue **iptables -L** on your server and you
 should see your rules listed. If you do not see them, be sure that you
 created the script above correctly.
 
-<a href="" id="Installing_Apache"></a>
+
 
 <span class="mw-headline">Installing Apache</span>
 --------------------------------------------------
@@ -295,7 +294,7 @@ address in a web-browser and you should see something like this:
 
 ![sites\_mysql\_apache\_test.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_apache_test.png)
 
-<a href="" id="Install_MySQL"></a>
+
 
 <span class="mw-headline">Install MySQL</span>
 ----------------------------------------------
@@ -311,7 +310,7 @@ twice.
 
 ![sites\_mysql\_mysql\_root\_password.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_mysql_root_password.png)
 
-<a href="" id="Install_phpMyAdmin"></a>
+
 
 <span class="mw-headline">Install phpMyAdmin</span>
 ---------------------------------------------------
@@ -350,17 +349,15 @@ allow it to generate a random password. Press **Enter** to allow this.
 
 
 Once the install finishes we need to test our phpMyAdmin installation.
-Point your web browser to
-**<a href="http://12.34.56.78/phpmyadmin" class="uri" class="external free" title="http://12.34.56.78/phpmyadmin">http://12.34.56.78/phpmyadmin</a>**
-(change to your Server's IP). You should see a screen like the one
-below:
+Point your web browser to **<http://12.34.56.78/phpmyadmin>** (change to
+your Server's IP). You should see a screen like the one below:
 
 ![sites\_mysql\_phpmyadmin\_test.png](http://c0042672.cdn.cloudfiles.rackspacecloud.com/sites_mysql_phpmyadmin_test.png)
 
 You may test your login by using the *root* user and entering your MySQL
 root password.
 
-<a href="" id="Download_Your_Drupal_Database"></a>
+
 
 <span class="mw-headline">Download Your Drupal Database</span>
 --------------------------------------------------------------
@@ -371,10 +368,8 @@ system. The location you need connect to depends on where your site is
 located. Please refer to the Control Panel to determine what data center
 your site is hosted in.
 
--   DFW:
-    <a href="https://mysql.dfw1-1.websitesettings.com/" class="uri" class="external free" title="https://mysql.dfw1-1.websitesettings.com/">https://mysql.dfw1-1.websitesettings.com/</a>
--   SAT:
-    <a href="https://mysql.websitesettings.com/" class="uri" class="external free" title="https://mysql.websitesettings.com/">https://mysql.websitesettings.com/</a>
+-   DFW: <https://mysql.dfw1-1.websitesettings.com/>
+-   SAT: <https://mysql.websitesettings.com/>
 
 For the sake of demonstration we will assume you are using the DFW data
 center.
@@ -410,16 +405,15 @@ file... save it somewhere on your computer.
 Once you have your database file (it may take a while to download) you
 can close phpMyAdmin.
 
-<a href="" id="Import_Your_Drupal_Database"></a>
+
 
 <span class="mw-headline">Import Your Drupal Database</span>
 ------------------------------------------------------------
 
 Now we are ready to import your database into your Cloud Server. Let's
 pull up phpMyAdmin that is hosted on your Cloud Server. Point your
-web-browser to
-<a href="http://12.34.56.78/phpmyadmin/" class="uri" class="external free" title="http://12.34.56.78/phpmyadmin/">http://12.34.56.78/phpmyadmin/</a>.
-*Be sure to change 12.34.56.78 to your IP address!*
+web-browser to <http://12.34.56.78/phpmyadmin/>. *Be sure to change
+12.34.56.78 to your IP address!*
 
 You should see the login screen. Type in **root** for the login and type
 in your MySQL root password that we chose earlier. Click **Go** to
@@ -468,7 +462,7 @@ with the mysql command-line tools. If your file is named
 
 Please note that you will be prompted for your MySQL root password.
 
-<a href="" id="Setup_Drupal_User"></a>
+
 
 <span class="mw-headline">Setup Drupal User</span>
 --------------------------------------------------
@@ -519,7 +513,7 @@ You should now have the correct user setup for your Drupal installation.
 Next we need to modify your settings.php file to connect to your new
 Cloud Server database.
 
-<a href="" id="Modifying_settings.php"></a>
+
 
 <span class="mw-headline">Modifying settings.php</span>
 -------------------------------------------------------
@@ -550,7 +544,7 @@ replace the existing *settings.php* file. *If you receive an error
 overwriting the file you may need to change the permissions to 744 with
 your FTP program.*
 
-<a href="" id="Modify_MySQL_Configuration"></a>
+
 
 <span class="mw-headline">Modify MySQL Configuration</span>
 -----------------------------------------------------------
@@ -594,7 +588,7 @@ You should see the following output:
 If you see any errors or \[FAIL\] you may have mistyped in the
 configuration file.
 
-<a href="" id="Test_Your_Installation"></a>
+
 
 <span class="mw-headline">Test Your Installation</span>
 -------------------------------------------------------

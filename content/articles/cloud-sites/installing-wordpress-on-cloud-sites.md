@@ -22,8 +22,7 @@ This article shows how to manually install WordPress on Cloud Sites.
 
 -   Administrative access to the Rackspace Cloud to create domains and
     add databases
--   WordPress software from
-    <a href="http://wordpress.org/download/" class="uri" class="external free" title="http://wordpress.org/download/">http://wordpress.org/download/</a>
+-   WordPress software from <http://wordpress.org/download/>
     uncompressed in a local repository
 -   FTP access to website, and a FTP client like ExpanDrive
 
@@ -44,8 +43,9 @@ This article shows how to manually install WordPress on Cloud Sites.
     the domain **General Settings** tab.</span>
 
 3.  <span class="external text">Upload WordPress software files to the
-    desired location on the website using FTP - Refer to
-    <a href="/how-to/getting-started-with-cloud-sites-uploading-your-content" class="external text" title="/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP">Upload content to a website using FTP</a></span>
+    desired location on the website using FTP - Refer to [Upload content
+    to a website using
+    FTP](/how-to/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP")</span>
 
 4.  To integrate WordPress to the root of domain (e.g.
     http://example.com/), place all contents of the uncompressed
@@ -61,8 +61,9 @@ This article shows how to manually install WordPress on Cloud Sites.
 
 6.  Next create a new Mysql database (e.g. *prefix*\_wp20) with
     user (e.g. *prefix*\_wp20 ).  To create the database within the
-    Cloud Sites infrastructure please refer to our article
-    on <a href="/how-to/rackspace-cloud-sites-essentials-mysql-databases" class="external text" title="/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain">Adding a MySQL database to a website or domain</a>.
+    Cloud Sites infrastructure please refer to our article on [Adding a
+    MySQL database to a website or
+    domain](/how-to/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain").
 
 
     If you prefer to use our Cloud Databases service you can follow the
@@ -112,6 +113,7 @@ install location
 
 **Additional Resources**
 
--   <a href="http://wordpress.org/download/" class="external text" title="http://wordpress.org/download/">More about Word Press</a>
+-   [More about Word
+    Press](http://wordpress.org/download/ "http://wordpress.org/download/")
 
 

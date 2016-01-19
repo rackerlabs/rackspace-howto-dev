@@ -16,8 +16,8 @@ body_format: tinymce
 
 <div class="body conbody">
 
-If you're troubleshooting a service that you know
-<a href="/how-to/checking-system-load-on-linux" class="xref">is running normally</a>
+If you're troubleshooting a service that you know [is running
+normally](/how-to/checking-system-load-on-linux)
 the next step is to make sure it's listening to the right network port.
 
 The netstat command shows the services listening to ports on a Linux
@@ -103,7 +103,8 @@ Common outcomes are:
     files then try restarting the service.
 -   The correct service is listening on the correct port. In this case
     we need to test the service more thoroughly - skip to the article on
-    <a href="/how-to/testing-network-services-with-netcat" class="xref">testing the listening service for response using netcat</a>.
+    [testing the listening service for response using
+    netcat](/how-to/testing-network-services-with-netcat).
 -   Something other than the expected service appears to be listening on
     the port.
 
@@ -142,8 +143,9 @@ port you need to address its configuration before you go any further.
 If you make changes at this point make sure to test your setup &ndash; you may
 have resolved your issue.
 
-If not, let's continue to test connections to the service by using
-<a href="/how-to/testing-network-services-with-netcat" class="xref">the netcat command.</a>
+If not, let's continue to test connections to the service by using [the
+netcat
+command.](/how-to/testing-network-services-with-netcat)
 
 </div>
 

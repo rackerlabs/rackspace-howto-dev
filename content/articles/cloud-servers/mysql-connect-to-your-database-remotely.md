@@ -23,7 +23,7 @@ The following items are assumed:
 
 -   You have access to login as the 'root' MySQL user
 
-<a href="" id="Getting_your_IP_address"></a>
+
 
 <span class="mw-headline">Getting your IP address </span>
 ---------------------------------------------------------
@@ -31,10 +31,10 @@ The following items are assumed:
 You will need to know what the IP address you are connecting from. To
 find this you can go to one of the following sites:
 
--   <a href="http://www.ipchicken.com" class="uri" class="external free" title="http://www.ipchicken.com">http://www.ipchicken.com</a>
--   <a href="http://www.whatismyip.com" class="uri" class="external free" title="http://www.whatismyip.com">http://www.whatismyip.com</a>
+-   <http://www.ipchicken.com>
+-   <http://www.whatismyip.com>
 
-<a href="" id="Granting_Access"></a>
+
 
 <span class="mw-headline">Granting Access </span>
 -------------------------------------------------
@@ -64,7 +64,7 @@ This statement will grant ALL permissions to the newly created user
 *fooUser* with a password of 'my\_password' when they connect from the
 IP address *1.2.3.4*.
 
-<a href="" id="Testing_Remotely"></a>
+
 
 <span class="mw-headline">Testing Remotely </span>
 --------------------------------------------------
@@ -84,7 +84,7 @@ server from another Linux server:
 
 Note that the IP of our MySQL server is 44.55.66.77 in this example.
 
-<a href="" id="Notes"></a>
+
 
 <span class="mw-headline">Notes </span>
 ---------------------------------------

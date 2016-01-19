@@ -211,7 +211,7 @@ secondary, and pool.
 Deciding what type of server to sync from will depend on how accurate
 you need your servers to be.
 
-#### <a href="" id="poolservers"></a>NTP pool servers
+#### NTP pool servers
 
 For most users, the pool servers are the best choice. Pool servers are
 machines that have volunteered to make their NTP server available to the

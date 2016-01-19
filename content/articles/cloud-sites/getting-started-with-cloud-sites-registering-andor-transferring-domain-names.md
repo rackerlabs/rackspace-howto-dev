@@ -27,7 +27,7 @@ through the Rackspace Cloud Control Panel.** Below, we will go through
 the process for [Registering a New Domain Name](#register_new_domain)
 and [Transferring Your Existing Domain](#transfer_domain).
 
-<a href="" id="register_new_domain"></a>
+
 
 **Registering a New Domain Name**
 
@@ -63,7 +63,7 @@ article for a list of domain extensions available for purchase.*</span>
 -   The next screen will allow you to review your new domain
     purchase order. If you are ready to purchase, then click **Finish**
 
-<a href="" id="transfer_domain"></a>
+
 
 **Transferring Your Existing Domain**
 

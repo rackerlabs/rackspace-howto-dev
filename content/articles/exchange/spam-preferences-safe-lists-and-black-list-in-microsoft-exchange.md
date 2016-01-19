@@ -26,7 +26,7 @@ how to manage this:
 
 -   [Managing Black List](#Blacklist)
 
-### <a href="" id="ManageDomain"></a>Manage Domain Spam Settings
+### Manage Domain Spam Settings
 
 1\. To manage your domain spam settings select **Set Preferences** under
 **Spam Filtering** in the Rackspace Email Box.
@@ -68,7 +68,7 @@ select the **Save** button.
 *Note: The override option will not be presented if you selected
 Individual Rackspace Email Mailbox.*
 
-### <a href="" id="SafeList"></a>Managing Safe List
+### Managing Safe List
 
 1\. To manage your Safe List select **Edit Safe List** under **Spam
 Filtering** in the Rackspace Email Box.
@@ -107,7 +107,7 @@ you're finished select the **Save** button.
 use the bulk import option to upload a .csv or .txt file containing the
 information*
 
-### <a href="" id="Blacklist"></a>Managing Black List
+### Managing Black List
 
 1\. To manage your Safe List, select **Edit Safe List** under **Spam
 Filtering** in the Microsoft Exchange product box.

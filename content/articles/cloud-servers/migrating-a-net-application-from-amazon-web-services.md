@@ -4,10 +4,10 @@ title: Migrating a .NET application from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-07'
+last_modified_date: '2016-01-19'
 last_modified_by: Rose Contreras
 product: Cloud Servers
-body_format: tinymce
+body_format: full_html
 ---
 
 This article describes the migration of a .NET web application from
@@ -17,7 +17,7 @@ minutes to complete, if you follow the instructions step by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The topology of the application in this scenario is represented in the
 following figure:

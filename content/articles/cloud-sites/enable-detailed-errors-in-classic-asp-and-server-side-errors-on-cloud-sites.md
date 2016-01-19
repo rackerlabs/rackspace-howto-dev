@@ -24,6 +24,6 @@ security reasons should be turned off when the site is in production.
     </configuration>
 
 For more information about the syntax and use of the &lt;`httpErrors>`
-element, see
-<a href="http://www.iis.net/ConfigReference/system.webServer/httpErrors" class="external text" title="http://www.iis.net/ConfigReference/system.webServer/httpErrors">the HTTP Errors article on www.iis.net</a>.
+element, see [the HTTP Errors article on
+www.iis.net](http://www.iis.net/ConfigReference/system.webServer/httpErrors "http://www.iis.net/ConfigReference/system.webServer/httpErrors").
 

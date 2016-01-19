@@ -13,8 +13,8 @@ body_format: full_html
 There are variety of options open to the sysadmin when serving Ruby
 applications.
 
-One of the original ways is to use
-<a href="http://mongrel.rubyforge.org/" class="external text" title="http://mongrel.rubyforge.org/">mongrel web server</a>.
+One of the original ways is to use [mongrel web
+server](http://mongrel.rubyforge.org/ "http://mongrel.rubyforge.org/").
 Requests are proxied to the mongrel(s) from the main web server (Apache,
 Nginx, etc).
 
@@ -54,14 +54,14 @@ Contents
 -   [<span class="tocnumber">9</span> <span
     class="toctext">Summary</span>](#Summary)
 
-<a href="" id="Prerequisites"></a>
+
 
 <span class="mw-headline">Prerequisites </span>
 -----------------------------------------------
 
 -   Install Ruby and Rubygems
 
-<a href="" id="Installation"></a>
+
 
 <span class="mw-headline">Installation </span>
 ----------------------------------------------
@@ -81,7 +81,7 @@ the process installed the following gems:
 
 That can vary depending on what you already have installed.
 
-<a href="" id="Mongrel_basics"></a>
+
 
 <span class="mw-headline">Mongrel basics </span>
 ------------------------------------------------
@@ -112,7 +112,7 @@ fashion):
 
 Again, the command should be given when in the rails directory.
 
-<a href="" id="Mongrel_Clusters"></a>
+
 
 <span class="mw-headline">Mongrel Clusters </span>
 --------------------------------------------------
@@ -125,7 +125,7 @@ One solution is to create what are called mongrel clusters. These
 stop, etc as a cluster and be configured to start on a Cloud Server
 reboot (so your application will start itself on a reboot).
 
-<a href="" id="Installation_2"></a>
+
 
 ### <span class="mw-headline">Installation </span>
 
@@ -138,7 +138,7 @@ As I had already installed the mongrel gem with its dependencies, only
 the mongrel\_cluster gem itself was installed. This may vary on your
 Cloud Server, depending on what you already have installed.
 
-<a href="" id="Configuration"></a>
+
 
 ### <span class="mw-headline">Configuration </span>
 
@@ -158,7 +158,7 @@ and the easiest thing is to have a look at the help file:
 
     mongrel_rails cluster::configure -h
 
-<a href="" id="YAML"></a>
+
 
 <span class="mw-headline">YAML </span>
 --------------------------------------
@@ -183,7 +183,7 @@ options into a YAML format.
 You can edit the file by hand if you wish to change something and don't
 want to go through the configure command again.
 
-<a href="" id="Mongrel_cluster_basics"></a>
+
 
 <span class="mw-headline">Mongrel\_cluster basics </span>
 ---------------------------------------------------------
@@ -201,7 +201,7 @@ Stopping and restarting:
     ...
     mongrel_rails cluster::stop
 
-<a href="" id="init_scripts"></a>
+
 
 <span class="mw-headline">init scripts </span>
 ----------------------------------------------
@@ -240,7 +240,7 @@ and then add the script to the runlevels:
 Wow. Quite a long and complicated procedure when compared to using
 'thin' or mod\_rails.
 
-<a href="" id="Cluster_control"></a>
+
 
 <span class="mw-headline">Cluster control </span>
 -------------------------------------------------
@@ -275,7 +275,7 @@ Remember you may need to put a sudo in front of the 'stop' command if
 you have just rebooted as the process started on reboot is owned by
 root.
 
-<a href="" id="Summary"></a>
+
 
 <span class="mw-headline">Summary </span>
 -----------------------------------------

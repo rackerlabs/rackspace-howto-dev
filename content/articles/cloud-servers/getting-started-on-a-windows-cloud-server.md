@@ -19,8 +19,8 @@ Panel](https://manage.rackspacecloud.com).
 
 **Procedure**
 
--   Login to the
-    <a href="http://manage.rackspacecloud.com/pages/Login.jsp" class="external text" title="http://manage.rackspacecloud.com/pages/Login.jsp|">Cloud Sites Control Panel</a>
+-   Login to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp|")
 -   Navigate to Hosting-&gt;Cloud Servers
 -   Click on **Add Server** button
 -   Click on the **Windows** tab in order to see the options as
@@ -52,8 +52,8 @@ Panel](https://manage.rackspacecloud.com).
 
 **Additional Resources**
 
--   A comprehensive set of articles can be found under
-    <a href="/how-to/cloud-servers" class="external text" title="/how-to/cloud-servers">List of Articles</a>
+-   A comprehensive set of articles can be found under [List of
+    Articles](/how-to/cloud-servers "/how-to/cloud-servers")
 
 
 

@@ -19,12 +19,14 @@ you may have.
 
 However, the Rackspace Cloud highly recommends consulting the vendors of
 the application for in-depth and up-to-date information. For this,
-Magento has a
-<a href="http://www.magentocommerce.com/consulting" class="external text" title="http://www.magentocommerce.com/consulting">consulting group</a>,
-<a href="http://www.magentocommerce.com/wiki/" class="external text" title="http://www.magentocommerce.com/wiki/">a well-documented wiki</a>,
-<a href="http://www.magentocommerce.com/boards" class="external text" title="http://www.magentocommerce.com/boards">a friendly forum community</a>,
-and even
-<a href="http://www.magentocommerce.com/support/overview" class="external text" title="http://www.magentocommerce.com/support/overview">dedicated support</a>
+Magento has a [consulting
+group](http://www.magentocommerce.com/consulting "http://www.magentocommerce.com/consulting"),
+[a well-documented
+wiki](http://www.magentocommerce.com/wiki/ "http://www.magentocommerce.com/wiki/"),
+[a friendly forum
+community](http://www.magentocommerce.com/boards "http://www.magentocommerce.com/boards"),
+and even [dedicated
+support](http://www.magentocommerce.com/support/overview "http://www.magentocommerce.com/support/overview")
 from Varien (the makers of Magento)--for a fee.
 
 Get quick answers to common questions about Magento.

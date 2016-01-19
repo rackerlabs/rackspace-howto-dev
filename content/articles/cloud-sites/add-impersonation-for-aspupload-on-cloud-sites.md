@@ -68,7 +68,6 @@ ready to upload files.
 
 Here's a working example of the above scripts, hosted on Cloud Sites.
 
-For more information, please visit
-<a href="http://www.aspupload.com/" class="uri" class="external free" title="http://www.aspupload.com/">http://www.aspupload.com/</a>
-for more examples and the manual.
+For more information, please visit <http://www.aspupload.com/> for more
+examples and the manual.
 

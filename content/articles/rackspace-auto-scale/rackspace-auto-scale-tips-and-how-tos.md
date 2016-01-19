@@ -42,8 +42,8 @@ goals with Rackspace Auto Scale.
 -   [Using Auto Scale to change the size of your General Purpose or
     work-optimized server](#changePerfServerSize)
 
-<a href="" id="ASandNova"></a>How Auto Scale works
---------------------------------------------------
+How Auto Scale works
+------------------------
 
 Rackspace Auto Scale is written in Python and calls the Rackspace Cloud
 Servers, Rackspace Cloud Load Balancers, and Rackspace RackConnect v3
@@ -55,8 +55,8 @@ documentation](https://github.com/rackerlabs/otter/tree/master/doc) and
 the public [Auto Scale GitHub
 Wiki](https://github.com/rackerlabs/otter/wiki).
 
-<a href="" id="InvalidPreventScaling"></a>Invalid load balancers can prevent scaling
-------------------------------------------------------------------------------------
+Invalid load balancers can prevent scaling
+----------------------------------------------
 
 If you create a scaling group with more than one load balancer and one
 of the load balancers is invalid (bad configuration), the scaling group
@@ -68,8 +68,8 @@ never scales. Auto Scale goes through the following process:
 4.  Deletes the servers
 5.  Removes the node from the valid load balancers.
 
-<a href="" id="DeleteScalingGroupsMissingServers"></a>Deleting scaling groups with missing servers
---------------------------------------------------------------------------------------------------
+Deleting scaling groups with missing servers
+------------------------------------------------
 
 If you have manually deleted servers outside of Auto Scale, or you want
 to delete a scaling group without using the **force delete** option
@@ -104,8 +104,8 @@ for the Auto Scale group. In the future, Auto Scale will validate
 that the ServiceNet network is part of the launch configuration if a
 load balancer is configured.
 
-<a href="" id="ConnectSingleCloudMonitoring"></a>Connecting Auto Scale to a single Cloud Monitoring alarm
----------------------------------------------------------------------------------------------------------
+Connecting Auto Scale to a single Cloud Monitoring alarm
+------------------------------------------------------------
 
 This tip shows you how to use a webhook to trigger an Auto Scale policy.
 It does not explain how to create a check or an Auto Scale group.  For
@@ -212,8 +212,8 @@ from scaling
 group](https://developer.rackspace.com/docs/autoscale/v1/developer-guide/#delete-server-from-scaling-group)
 section of the *Rackspace Auto Scale API Developer Guide.*
 
-<a href="" id="MaxandMinEntities"></a>maxEntities and minEntities settings affect scaling
------------------------------------------------------------------------------------------
+maxEntities and minEntities settings affect scaling
+-------------------------------------------------------
 
 If the number of active servers (desired capacity) in a scaling group is
 equal to the configured **maxEntities** value during a scale-up, or
@@ -237,8 +237,8 @@ Panel](https://mycloud.rackspace.com/). To do this, select **Auto
 Scale** from the **Servers** menu, select the scaling group, and
 then, from the **Actions** menu, select **Edit Min / Max Servers**.
 
-<a href="" id="CreateandUpdate"></a>Creating and updating the launch configuration setting
-------------------------------------------------------------------------------------------
+Creating and updating the launch configuration setting
+----------------------------------------------------------
 
 All Auto Scale API update requests completely replace all of the
 settings of the item being updated. Any parameters that are not
@@ -257,7 +257,7 @@ So it is best for there to be one admin user in the tenant. This
 restriction cannot be changed currently. There is no option to specify a
 user to impersonate.
 
-### <a href="" id="CreateScalingGroup"></a>Create a scaling group with the launch configuration setting
+### Create a scaling group with the launch configuration setting
 
 This example creates a scaling group with load balancers, server
 metadata, networks, and personality.
@@ -318,7 +318,7 @@ metadata, networks, and personality.
     ]
     }
 
-### <a href="" id="UpdateLaunchSuccess"></a>Update the launch configuration setting successfully
+### Update the launch configuration setting successfully
 
 This example shows updating only the **flavorRef** and **name**
 parameters without the remaining fields, and a successful 204 response
@@ -350,7 +350,7 @@ preceding update.
     "imageRef": "0d589460-f177-4b0f-81c1-8ab8903ac7d8"
     }}}
 
-### <a href="" id="UpdateLaunchEviction"></a>Update the launch configuration eviction policy
+### Update the launch configuration eviction policy
 
 When a launch configuration setting is updated, the servers that scale
 up after the update use the latest launch configuration settings.
@@ -363,8 +363,8 @@ scale-down policy execution, then servers with the older launch
 configuration setting, and lastly any other servers required by the
 scale-down policy.
 
-<a href="" id="DeletingServers"></a>Deleting servers
-----------------------------------------------------
+Deleting servers
+--------------------
 
 Deleting servers requires an Auto Scale Python call to the Rackspace
 Cloud Servers Nova-based API, and there are a few things about this
@@ -372,7 +372,7 @@ process that it is good to understand. Additionally, new functionality
 has been added to allow you to delete a specific server from a scaling
 group. These topics are discussed in this section.
 
-### <a href="" id="AboutActiveServers"></a>About the server "Active" state when deleting servers
+### About the server "Active" state when deleting servers
 
 When a scale-down policy is being executed, servers in the **Active**
 state are deleted immediately because Nova, the software
@@ -387,7 +387,7 @@ servers, you might see five servers in the Control Panel until they are
 all done building and go into the Active state, immediately after which
 two servers will be deleted.
 
-### <a href="" id="DeletingServerFromGroup"></a>Delete a specific server from a scaling group
+### Delete a specific server from a scaling group
 
 You can remove a specific server from a scaling group by using the
 delete server operation. For more information, see the [Delete server
@@ -395,8 +395,8 @@ from scaling
 group](https://developer.rackspace.com/docs/autoscale/v1/developer-guide/#delete-server-from-scaling-group)
 section *Rackspace Auto Scale API Developer Guide.*
 
-<a href="" id="ChooseFlavor"></a>Choosing the flavor of a server for a scaling group
-------------------------------------------------------------------------------------
+Choosing the flavor of a server for a scaling group
+-------------------------------------------------------
 
 If you create an image of a server and use that image to create a
 scaling group, you must choose a flavor in the scaling group that is
@@ -406,8 +406,8 @@ flavors, see
 [Flavors](http://docs.rackspace.com/servers/api/v2/cs-devguide/content/List_Flavors-d1e4188.html)
 in the Cloud Servers API documentation.
 
-<a href="" id="cloudBurst"></a>Cloud bursting with Auto Scale and RackConnect
------------------------------------------------------------------------------
+Cloud bursting with Auto Scale and RackConnect
+--------------------------------------------------
 
 Auto Scale and RackConnect allow bursting into the public cloud from
 events in a dedicated environment. RackConnect is provisioned by setting
@@ -427,8 +427,8 @@ Example RackConnect metadata key and value pair for Auto Scale:
     "RackConnectLBPool": "MyRCPoolName"
     }
 
-<a href="" id="changePerfServerSize"></a>Using Auto Scale to change the size of your General Purpose or work-optimized server
------------------------------------------------------------------------------------------------------------------------------
+Using Auto Scale to change the size of your General Purpose or work-optimized server
+----------------------------------------------------------------------------------------
 
 General Purpose and work-optimized servers do not resize as simply as
 first-generation and Standard servers. You have to go through a process

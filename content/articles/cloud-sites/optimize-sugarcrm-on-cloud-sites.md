@@ -14,15 +14,15 @@ body_format: tinymce
 
 To learn about optimization techniques for any web application,
 Rackspace recommends consulting the vendors of the application. However,
-SugarCRM does have detailed documentation on their
-<a href="http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki" class="external text" title="http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki">Support Wiki</a>,
+SugarCRM does have detailed documentation on their [Support
+Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki"),
 some of which we have made available here.
 
 -   [Quick guide](#Quick_Guide)
 -   [Developer tools](#Developer_Tools)
 -   [External links](#External_Links)
 
-<a href="" id="Quick_Guide"></a>
+
 
 <span class="mw-headline">Quick guide</span>
 --------------------------------------------
@@ -30,7 +30,7 @@ some of which we have made available here.
 Following is the quick guide to modifying your SugarCRM configuration
 for improved performance in the cloud.
 
-<a href="" id="htaccess"></a>
+
 
 ### <span class="mw-headline">.htaccess</span>
 
@@ -61,15 +61,15 @@ following example when done:
     php_value timeout 601
     </IfModule>
 
-<a href="" id="config_overridephp"></a>
+
 
 ### <span class="mw-headline">config\_override.php</span>
 
 **Note:** The following configuration options should improve the
 performance of your SugarCRM installation, but might change the way some
 of the front-end looks. For a detailed explanation of the configuration
-options, see
-<a href="http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems" class="external text" title="http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems">SugarCRM's Performance Tweaks page</a>.
+options, see [SugarCRM's Performance Tweaks
+page](http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/wiki/index.php?title=Performance_Tweaks_for_Large_Systems").
 
 Add the following SugarCRM configuration options to your
 **config\_override.php** file:
@@ -81,22 +81,25 @@ Add the following SugarCRM configuration options to your
     $sugar_config['save_query'] = 'populate_only';
     $sugar_config['verify_client_ip'] = false;
 
-<a href="" id="Developer_Tools"></a>
+
 
 <span class="mw-headline">Developer tools</span>
 ------------------------------------------------
 
-The
-<a href="http://www.sugarforge.org/projects/sugardevtools/" class="external text" title="http://www.sugarforge.org/projects/sugardevtools/">SugarDev.net Developer Tools</a>
+The [SugarDev.net Developer
+Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/")
 also provide some performance options that you might find useful.
 
-<a href="" id="External_Links"></a>
+
 
 <span class="mw-headline">External links</span>
 -----------------------------------------------
 
--   <a href="http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki" class="external text" title="http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki">SugarCRM Support Wiki</a>
--   <a href="http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems" class="external text" title="http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems">SugarCRM Support Wiki: Performance Tweaks for Large Systems</a>
--   <a href="http://www.sugarforge.org/projects/sugardevtools/" class="external text" title="http://www.sugarforge.org/projects/sugardevtools/">SugarDev.net Developer Tools</a>
+-   [SugarCRM Support
+    Wiki](http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki")
+-   [SugarCRM Support Wiki: Performance Tweaks for Large
+    Systems](http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems "http://www.sugarcrm.com/kb/index.php?title=Performance_Tweaks_for_Large_Systems")
+-   [SugarDev.net Developer
+    Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/")
 
 

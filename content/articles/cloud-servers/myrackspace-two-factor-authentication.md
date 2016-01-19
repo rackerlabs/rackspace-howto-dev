@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: full_html
 ---
 
-<a href="" id="top"></a>
+
 
 Two-factor authentication uses an extra device, like a mobile phone, to
 provide an additional layer of security when you access your account.
@@ -29,7 +29,7 @@ authentication for your MyRackspace account.
 -   [Manage your two-factor devices.](#manage)
 -   [Troubleshoot two-factor authentication problems](#trouble)
 
-<a href="" id="setup"></a>
+
 
 Set up two-factor authentication for users
 ------------------------------------------
@@ -66,7 +66,7 @@ authentication.
 
 [top](#top)
 
-<a href="" id="register"></a>
+
 
 Register a device after two-factor authentication is enabled for your account
 -----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ these steps:
 
 [top](#top)
 
-<a href="" id="login"></a>
+
 
 Log in with two-factor authentication
 -------------------------------------
@@ -107,7 +107,7 @@ authentication to the [MyRackspace portal](https://myrackspace.com).
 
 [top](#top)
 
-<a href="" id="manage"></a>
+
 
 Manage your two-factor devices
 ------------------------------
@@ -132,7 +132,7 @@ Users are allowed multiple devices for two-factor authentication.
 
 [top](#top)
 
-<a href="" id="trouble"></a>
+
 
 Troubleshoot two-factor authentication problems
 -----------------------------------------------

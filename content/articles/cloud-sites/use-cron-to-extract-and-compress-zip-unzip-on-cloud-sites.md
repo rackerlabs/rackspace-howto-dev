@@ -127,9 +127,12 @@ The final script should look similar to this:
 
 ### Cron FAQ's:
 
-<a href="/how-to/what-is-a-cloud-sites-cron-job" class="external free" title="What is a cron job?">What is a cron job?</a>
+[What is a cron
+job?](/how-to/what-is-a-cloud-sites-cron-job "What is a cron job?")
 
-<a href="/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job" class="external free" title="How do I enable or disable cron?">How do I enable or disable cron?</a>
+[How do I enable or disable
+cron?](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job "How do I enable or disable cron?")
 
-<a href="/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites" class="external free" title="How do I schedule a cron job?">How do I schedule a cron job?</a>
+[How do I schedule a cron
+job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites "How do I schedule a cron job?")
 

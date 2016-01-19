@@ -30,7 +30,7 @@ records](/how-to/getting-started-with-cloud-sites-managing-dns-records).
 -   [Delete a record](#F)
 -   [Delete a domain](#G)
 
-<a href="" id="H"></a>
+
 
 DNS servers for cloud servers
 -----------------------------
@@ -40,7 +40,7 @@ Following are the DNS servers for your cloud servers:
 -   dns1.stabletransit.com
 -   dns2.stabletransit.com
 
-<a href="" id="A"></a>
+
 
 Create a DNS zone for your domain
 ---------------------------------
@@ -53,7 +53,7 @@ Create a DNS zone for your domain
 3.  Continue with the following procedures to create the records for
     your domain's DNS zone.
 
-<a href="" id="B"></a>
+
 
 ### Add a domain
 
@@ -66,7 +66,7 @@ Create a DNS zone for your domain
 
 3.  Click **Create Domain**.
 
-<a href="" id="C"></a>
+
 
 ### Add an A record
 
@@ -86,7 +86,7 @@ to an IP address. It is also known as an A name.
 
 4.  Click **Add Record**.
 
-<a href="" id="D"></a>
+
 
 ### Add a CNAME record
 
@@ -109,7 +109,7 @@ Use the Common Name (CNAME) record to point to another record.
 
 4.  Click **Add Record**
 
-<a href="" id="E"></a>
+
 
 ### Add an MX record
 
@@ -137,7 +137,7 @@ record for your domain name, but you cannot receive emails without it.
 
 4.  Click **Add Record**.
 
-<a href="" id="F"></a>
+
 
 ### Delete a record from your domain
 
@@ -155,7 +155,7 @@ record for your domain name, but you cannot receive emails without it.
 
         <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-16%20at%203.27.52%20PM_0.png" width="217" height="213" />
 
-<a href="" id="G"></a>
+
 
 ### Delete a domain
 

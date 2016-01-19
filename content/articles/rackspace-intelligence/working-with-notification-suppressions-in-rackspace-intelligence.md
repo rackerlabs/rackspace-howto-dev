@@ -51,8 +51,8 @@ corresponding metrics, such as status, entities, and suppression time.
 
 
 
-<a href="" id="createsuppression"></a>Create a suppression
-----------------------------------------------------------
+Create a suppression
+------------------------
 
 You can create a suppression in one of the following ways:
 
@@ -60,7 +60,7 @@ You can create a suppression in one of the following ways:
     page](#createsuppressionfromhome)
 -   [From within an entity](#createsuppressionfromentity)
 
-### <a href="" id="createsuppressionfromhome"></a>Create a suppression from the Suppressions overview page
+### Create a suppression from the Suppressions overview page
 
 1.  On the Suppressions overview page, click **Create Suppression**.
 
@@ -80,7 +80,7 @@ Rackspace Intelligence creates the suppression and it goes into effect
 immediately. Details about your new suppression are available on the
 suppression details page.
 
-### <a href="" id="createsuppressionfromentity"></a>Create a suppression from within an entity
+### Create a suppression from within an entity
 
 1.  To create a suppression from within an entity, open the entity
     details page by clicking **Monitor &gt; Entities** and then clicking
@@ -98,8 +98,8 @@ After you have confirmed that you want to create the suppression,
 Rackspace Intelligence creates the suppression and it goes into effect
 immediately.
 
-<a href="" id="editsuppression"></a>Edit a suppression
-------------------------------------------------------
+Edit a suppression
+----------------------
 
 You can edit an existing suppression by using the **Actions** menu on
 the suppression details page.
@@ -109,7 +109,7 @@ You can perform the following editing actions for suppressions:
 -   [Edit the timeframe for a suppression](#editsuppressiontimeframe)
 -   [Delete the suppression](#deletesuppression)
 
-### <a href="" id="editsuppressiontimeframe"></a>Edit the time frame of a suppression
+### Edit the time frame of a suppression
 
 1.  From the **Actions** menu on the suppression details page,
     select **Edit Timeframe**.
@@ -124,7 +124,7 @@ You can perform the following editing actions for suppressions:
 
 **Note:** If you end a suppression, you cannot restart it.
 
-### <a href="" id="deletesuppression"></a>Delete a suppression
+### Delete a suppression
 
 1.  From the **Actions** menu on the suppression details page,
     select **Delete Suppression**.

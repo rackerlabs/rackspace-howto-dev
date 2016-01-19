@@ -18,9 +18,9 @@ a table. A lot of performance problems occur in Cloud Sites for database
 queries when customers have not created the necessary indexes on their
 tables. To look into how to create an index in MySQL, please refer to:
 
-<a href="http://dev.mysql.com/doc/refman/5.0/en/create-index.html" class="uri" class="external free" title="http://dev.mysql.com/doc/refman/5.0/en/create-index.html">http://dev.mysql.com/doc/refman/5.0/en/create-index.html</a>
+<http://dev.mysql.com/doc/refman/5.0/en/create-index.html>
 
-<a href="" id="The_Explain_Statement"></a>
+
 
 <span class="mw-headline">The Explain Statement</span>
 ------------------------------------------------------
@@ -31,9 +31,9 @@ by the optimizer in executing the query and help give you an idea as to
 whether or not you will benefit from creating an index. More on the
 explain plan here:
 
-<a href="http://dev.mysql.com/doc/refman/5.0/en/explain.html" class="uri" class="external free" title="http://dev.mysql.com/doc/refman/5.0/en/explain.html">http://dev.mysql.com/doc/refman/5.0/en/explain.html</a>
+<http://dev.mysql.com/doc/refman/5.0/en/explain.html>
 
-<a href="" id="Prefixing_index_lengths_with_an_example"></a>
+
 
 <span class="mw-headline">Prefixing index lengths with an example</span>
 ------------------------------------------------------------------------
@@ -61,7 +61,7 @@ meta\_key index and then re-creating an index but at prefix length of
 20. Doing this helps gain performance and saves space. This also reduces
 disk IO which buys your faster performance also.
 
-<a href="" id="Covering_Index"></a>
+
 
 <span class="mw-headline">Covering Index</span>
 -----------------------------------------------

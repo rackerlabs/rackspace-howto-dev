@@ -56,7 +56,7 @@ to set up a program to intercept your connection and steal your login
 credentials - a "man in the middle" attack - then the only warning
 you'll get is your SSH client complaining that the host key has changed.
 
-### <a href="" id="Why"></a> Why the host key might change
+###  Why the host key might change
 
 The more innocent explanations for a changed host key include
 recompiling or upgrading SSH, rebuilding the server, or just using a

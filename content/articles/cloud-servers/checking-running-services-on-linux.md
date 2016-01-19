@@ -107,8 +107,8 @@ In the example above httpd cannot be started because something is
 already listening on the port. To find out what it is you can run
 netstat.
 
-We will cover netstat in more detail
-<a href="/how-to/checking-listening-ports-with-netstat" class="xref">later in this series</a>
+We will cover netstat in more detail [later in this
+series](/how-to/checking-listening-ports-with-netstat)
 but for this example it is enough to know that it can be used to display
 a list of listening programs and the ports they are using.
 
@@ -165,8 +165,9 @@ help with making use of your logs.
 
 <div class="body conbody">
 
-Once you're sure the application is running you'll want to
-<a href="/how-to/checking-system-load-on-linux" class="xref">take a look at the server resources it is consuming</a>.
+Once you're sure the application is running you'll want to [take a look
+at the server resources it is
+consuming](/how-to/checking-system-load-on-linux).
 
 </div>
 

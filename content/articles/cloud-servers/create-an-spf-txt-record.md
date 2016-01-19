@@ -22,7 +22,7 @@ You can add an SPF record to your DNS zone as a TXT record. The SPF
 record is associated with your domain and specifies which mail server or
 servers the domain uses to send email.
 
-<a href="" id="Setting_SPF"></a>
+
 
 <span class="mw-headline">Considerations for setting the SPF</span>
 -------------------------------------------------------------------
@@ -39,7 +39,7 @@ questions:
     a "soft fail," meaning that the email will be subjected to
     further scrutiny.
 
-<a href="" id="Example"></a>
+
 
 ### <span class="mw-headline">Example of how to create an SPF rule</span>
 

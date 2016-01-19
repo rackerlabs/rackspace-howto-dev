@@ -19,8 +19,8 @@ Sites Control Panel or within the webmail client.
 Change your email password in the control panel
 -----------------------------------------------
 
-1.  Log in to the
-    <a href="http://manage.rackspacecloud.com" class="external text" title="http://manage.rackspacecloud.com">Cloud Sites Control Panel</a>.
+1.  Log in to the [Cloud Sites Control
+    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
 2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
 3.  Select the website for the email account that you want to edit.
 4.  Click on the **Email accounts** tab at the top of the page.

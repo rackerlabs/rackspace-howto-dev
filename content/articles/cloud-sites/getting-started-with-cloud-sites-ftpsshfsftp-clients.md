@@ -109,16 +109,19 @@ To create FTP users:
 According to [Wikipedia](http://en.wikipedia.org/wiki/SSHFS):
 
 **"SSHFS** (**SSH Filesystem**) is
-a <a href="http://en.wikipedia.org/wiki/Filesystem" class="mw-redirect" title="Filesystem">filesystem</a> client
+a [filesystem](http://en.wikipedia.org/wiki/Filesystem "Filesystem") client
 to [mount](http://en.wikipedia.org/wiki/Mount_(computing) "Mount (computing)") and
 interact
-with <a href="http://en.wikipedia.org/wiki/Directory_(file_systems)" class="mw-redirect" title="Directory (file systems)">directories</a> and [files](http://en.wikipedia.org/wiki/Computer_file "Computer file") located
+with [directories](http://en.wikipedia.org/wiki/Directory_(file_systems) "Directory (file systems)") and [files](http://en.wikipedia.org/wiki/Computer_file "Computer file") located
 on a
 remote [server](http://en.wikipedia.org/wiki/Server_(computing) "Server (computing)") or [workstation](http://en.wikipedia.org/wiki/Workstation "Workstation"). The
 client interacts with the remote file system via the [SSH File Transfer
-Protocol](http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol "SSH File Transfer Protocol") (SFTP), a <a href="http://en.wikipedia.org/wiki/Network_protocol" class="mw-redirect" title="Network protocol">network protocol</a> providing <a href="http://en.wikipedia.org/wiki/File_access" class="mw-redirect" title="File access">file access</a>, [file
+Protocol](http://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol "SSH File Transfer Protocol") (SFTP), a [network
+protocol](http://en.wikipedia.org/wiki/Network_protocol "Network protocol") providing [file
+access](http://en.wikipedia.org/wiki/File_access "File access"), [file
 transfer](http://en.wikipedia.org/wiki/File_transfer "File transfer"),
-and <a href="http://en.wikipedia.org/wiki/File_management" class="mw-redirect" title="File management">file management</a> functionality
+and [file
+management](http://en.wikipedia.org/wiki/File_management "File management") functionality
 over any reliable [data
 stream](http://en.wikipedia.org/wiki/Data_stream "Data stream") that was
 designed as an extension of the [Secure

@@ -18,7 +18,7 @@ Servers](/how-to/getting-started-with-cloud-servers-0)
 This article addresses how to connect and log in to your Windows Server
 using Microsoft Remote Desktop Protocol.
 
-<a href="" id="Windows_and_Mac_Versions"></a>
+
 
 <span class="mw-headline">Windows and Mac Versions </span>
 ----------------------------------------------------------
@@ -31,13 +31,13 @@ versions of Windows.
 On a Mac, download and install the Remote Desktop Connection Client for
 Mac. The steps to connect to your server are very similar. You can
 download the software
-<a href="https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12" class="external text" title="http://www.microsoft.com/mac/downloads.mspx?pid=Mactopia_RDC&amp;fid=CD9EC77E-5B07-4332-849F-046611458871#viewer">here</a>
+[here](https://itunes.apple.com/us/app/microsoft-remote-desktop/id715768417?mt=12 "http://www.microsoft.com/mac/downloads.mspx?pid=Mactopia_RDC&fid=CD9EC77E-5B07-4332-849F-046611458871#viewer")
 
 For more information on configuring and running Remote Desktop
 Connection for Mac please see this
-<a href="https://technet.microsoft.com/en-us/library/dn473012.aspx" class="external text" title="http://www.microsoft.com/mac/products/remote-desktop/default.mspx">link</a>
+[link](https://technet.microsoft.com/en-us/library/dn473012.aspx "http://www.microsoft.com/mac/products/remote-desktop/default.mspx")
 
-<a href="" id="Running_the_Remote_Desktop_Connection_Client"></a>
+
 
 <span class="mw-headline">Running the Remote Desktop Connection Client </span>
 ------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ Click the **Local Resources** tab, select the Clipboard option, click
 Save your session by clicking the General tab, then clicking **Save
 As...**.
 
-<a href="" id="Logging_in_to_Your_Server"></a>
+
 
 <span class="mw-headline">Log in to Your Server </span>
 -------------------------------------------------------
