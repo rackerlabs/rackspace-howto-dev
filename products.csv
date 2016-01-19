@@ -25,5 +25,5 @@ Cloud Office,Microsoft SharePoint,sharepoint
 Cloud Office,Microsoft Skype for Business,skype-for-business
 Cloud Office,Rackspace Email Archiving,rackspace-email-archiving
 Cloud Office,Rackspace Email,rackspace-email
-Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rackspace-private-cloud-microsoft-cloud-platform
-Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rackspace-private-cloud-openstack
+Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rpc-microsoft
+Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rpc-openstack
