@@ -53,7 +53,7 @@ account!
     additional account. Again, this will match the Username and Password
     used to log into the account on the Cloud Control Panel.
 
-### []()Creating a Cloud Server on your mobile application
+### Creating a Cloud Server on your mobile application
 
 After tapping on the "+" icon in the top right of the Server List page,
 you will see the 4 primary setup options - Name, Region, Image, and Size

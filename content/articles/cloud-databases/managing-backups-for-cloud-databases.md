@@ -19,7 +19,7 @@ Databases instances.
 -   [Delete a backup](#DeletingBackups)
 -   [Restore a backup](#RestoringBackups)
 
-### []()
+###
 
 ### Create a Backup
 
@@ -63,7 +63,7 @@ during the backup process.
     restore and deletion of backups to work properly, you should not
     move, rename, or delete any of the files from this container.
 
-[]()
+
 
 ### List Details of all backups for the account
 
@@ -82,7 +82,7 @@ following details for your backups:
 
 You can also filter the backups for different regions by clicking on the
 **Regions** filter from the drop-down.
-[]()
+
 
 ### List Details of All Backups for an Instance
 
@@ -92,7 +92,7 @@ associated for that instance.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ListDetailsInstance.png" width="664" height="512" />
 
-[]()
+
 
 ### Delete a Backup
 
@@ -104,7 +104,7 @@ name.
 You can also delete any backups for an instance from the **Instance
 Details** page.
 
-[]()
+
 
 ### Restore a Backup
 

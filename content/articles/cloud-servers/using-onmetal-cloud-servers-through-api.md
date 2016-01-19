@@ -20,7 +20,7 @@ OnMetal server through the API:
 -   [Logging in or deleting a server](#loginDelete)
 -   [Using OnMetal](#usingOnMetal)
 
-    []()
+
     ----
 
 **Note:** For the parallel steps in the Cloud Control Panel, see [Create
@@ -87,7 +87,7 @@ For information on generating SSH Keys, see [Manage SSH Key Pairs for
 Cloud Servers with
 python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-[]()Boot your server
+Boot your server
 --------------------
 
 To boot your OnMetal server, choose an image (operating system) and a
@@ -195,7 +195,7 @@ becomes `ACTIVE`, the server boots for the first time. The server will
 not be reachable, however, until the network configuration is complete,
 which may take another few minutes.
 
-[]()Log in to the server
+Log in to the server
 ------------------------
 
 After the server has booted, use the SSH key pair that you specified to
@@ -231,7 +231,7 @@ If needed, you can also deleteor cancel the server.
 server deletions take longer than virtual server deletions, usually a
 few minutes.
 
-[]()Using OnMetal
+Using OnMetal
 -----------------
 
 The flash cards included with the OnMetal I/O flavor are unformatted.

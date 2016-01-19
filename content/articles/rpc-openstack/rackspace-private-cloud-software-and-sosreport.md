@@ -15,7 +15,7 @@ use `sosreport` tool to help troubleshoot their Rackspace Private Cloud
 environment. It is assumed that you have successfully installed a cloud
 with Rackspace Private Cloud Software and are familiar with OpenStack.
 
-[]()The SOS Tool
+The SOS Tool
 ----------------
 
 Rackspace Private Cloud Software installs the
@@ -25,7 +25,7 @@ help you or Rackspace Support troubleshoot issues in your Rackspace
 Private Cloud environment. The `sosreport` package is installed from the
 <a href="https://launchpad.net/~osops-packaging/+archive/ppa" class="link">OS Ops team PPA</a>.
 
-[]()sosreport Command List
+sosreport Command List
 --------------------------
 
 The complete list of `sosreport` options is displayed with
@@ -71,7 +71,7 @@ Options:
 
 <div class="section" title="Using sosreport">
 
-[]()Using sosreport
+Using sosreport
 -------------------
 
 Before you begin to use `sosreport`, log into the node with the OS
@@ -81,7 +81,7 @@ Once you are successfully logged in, use <span class="command">**sudo
 
 <div class="section" title="Generating a report">
 
-### []()Generating a report
+### Generating a report
 
 To generate a basic report with default settings, run the command on the
 command line:
@@ -124,7 +124,7 @@ requested by Rackspace Support.
 
 <div class="section" title="sosreport plugins">
 
-### []()sosreport plugins
+### sosreport plugins
 
 Depending on your issue and the instructions of Rackspace Support, you
 may need to disable or enable certain plugins when the report is

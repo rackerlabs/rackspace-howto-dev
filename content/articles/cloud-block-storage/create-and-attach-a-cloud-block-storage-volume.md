@@ -30,7 +30,7 @@ In this tutorial, you will learn how to:
 
 
 
-### []() Create the Volume
+###  Create the Volume
 
 Make sure you are logged in to the [Cloud Control
 Panel](https://mycloud.rackspace.com/).
@@ -78,7 +78,7 @@ To detach and delete the volume, see [Detach and Delete Cloud Block
 Storage
 Volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
 
-### []() View Volume Details
+###  View Volume Details
 
 The Volume Details screen displays basic information about the volume.
 Here you can see the Volume's Status, what server it may be attached to,
@@ -142,7 +142,7 @@ volume. There is also a link which allows you to Create a Snapshot.
 Snapshots are described [later in this Getting Started
 Guide](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
-### []() Attach the Volume to a Server
+###  Attach the Volume to a Server
 
 When the volume is created, it exists by itself and cannot have any data
 written to it. The volume must be attached to a server before anything

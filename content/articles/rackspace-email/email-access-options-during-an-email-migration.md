@@ -93,7 +93,7 @@ newer versions of Outlook.
 To add an account in Outlook 2010+ click the **File** tab, and then
 click **Add Account** in the Account Information section.
 
-### []()Configuration Resources
+### Configuration Resources
 
 [Webmail link for Rackspace Email and
 Exchange](https://apps.rackspace.com)

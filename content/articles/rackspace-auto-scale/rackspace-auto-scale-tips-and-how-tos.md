@@ -85,7 +85,7 @@ The following example illustrates those steps:
     {"maxEntities": 0, "cooldown": 0, "name": "ready_to_be_deleted", "minEntities": 0, "metadata": {}}
     DELETE v1.0/{tenantId}/groups/{groupId}
 
-[]()ServiceNet dependency can cause server creation to fail
+ServiceNet dependency can cause server creation to fail
 -----------------------------------------------------------
 
 When you configure your Auto Scale scaling group with a load balancer,
@@ -185,7 +185,7 @@ Intelligence](https://intelligence.rackspace.com/) UI.
         "notification_plan_id": "<notification_plan_you_just_created>"
         }
 
-[]()Adding or removing servers quickly
+Adding or removing servers quickly
 --------------------------------------
 
 To quickly add servers to or remove servers from a scaling group, send a

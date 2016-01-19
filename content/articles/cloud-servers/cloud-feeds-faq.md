@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: tinymce
 ---
 
-[]()Get quick answers to common questions about the Rackspace Cloud
+Get quick answers to common questions about the Rackspace Cloud
 Feeds service.
 
 -   [Who can use Cloud Feeds?](#who)
@@ -24,27 +24,27 @@ Feeds service.
 
 ------------------------------------------------------------------------
 
-### []()Who can use Cloud Feeds?
+### Who can use Cloud Feeds?
 
 All Rackspace customers with a Cloud services account can use Cloud
 Feeds.
 
 ^[back\\ to\\ top](#top)^
 
-### []()How much does Cloud Feeds cost?
+### How much does Cloud Feeds cost?
 
 Cloud Feeds is available at no charge.
 
 ^[back\\ to\\ top](#top)^
 
-### []()How do I grant access to Cloud Feeds?
+### How do I grant access to Cloud Feeds?
 
 For information about how to add Cloud Feeds to individual users on your
 Cloud account, see [Cloud Feeds overview](/how-to/cloud-feeds-overview).
 
 ^[back\\ to\\ top](#top)^
 
-### []()What can I use Cloud Feeds for?
+### What can I use Cloud Feeds for?
 
 During the Early Access Program, Cloud Feeds has limited functionality
 and event notifications. Additional features will be added as
@@ -81,7 +81,7 @@ events.
 
 ^[back\\ to\\ top](#top)^
 
-### []()What features will be available in the future?
+### What features will be available in the future?
 
 We plan to provide the following features in future releases:
 
@@ -95,7 +95,7 @@ We plan to provide the following features in future releases:
 
 ^[back\\ to\\ top](#top)^
 
-### []()Where is Cloud Feeds available?
+### Where is Cloud Feeds available?
 
 Cloud Feeds is available in the following regions:
 
@@ -108,7 +108,7 @@ Cloud Feeds is available in the following regions:
 
 ^[back\\ to\\ top](#top)^
 
-### []()What is the Early Access Program?
+### What is the Early Access Program?
 
 The Early Access Program lets customers use and give feedback on our
 products before a final version is released. This program ensures that
@@ -118,7 +118,7 @@ available during Early Access might change.
 
 ^[back\\ to\\ top](#top)^
 
-### []()What are the Terms of Service?
+### What are the Terms of Service?
 
 During the Early Access period, the Cloud Feeds Terms of Service are
 available at <http://www.rackspace.com/information/legal/testterms>.

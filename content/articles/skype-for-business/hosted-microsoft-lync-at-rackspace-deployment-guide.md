@@ -21,7 +21,7 @@ vary. The overall deployment plan has three basic steps, and this
 article is designed to help you decide the best rollout method for your
 environment.
 
-### **[]()Set up DNS records for Lync**
+### **Set up DNS records for Lync**
 
 As the first step, you must create Auto-discover entries on your DNS
 server.  If you have an internal DNS you must also set up these records

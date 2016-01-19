@@ -18,7 +18,7 @@ workload and based on your defined thresholds.
 -   [What you can do with Rackspace Auto Scale](#Whatyoucando)
 -   [Prerequisites](#prereqs)
 
-#### []()What you will learn in this guide
+#### What you will learn in this guide
 
 After reading this guide you will understand the following information:
 
@@ -29,7 +29,7 @@ After reading this guide you will understand the following information:
     and policies
 -   Where to go next to get the most out of Auto Scale
 
-#### []()What you can do with Rackspace Auto Scale
+#### What you can do with Rackspace Auto Scale
 
 You can use Rackspace Auto Scale to perform the following tasks:
 
@@ -42,7 +42,7 @@ You can use Rackspace Auto Scale to perform the following tasks:
 -   Support your dedicated servers by adding&mdash;and removing&mdash;cloud servers
     based on a schedule
 
-#### []()Prerequisites
+#### Prerequisites
 
 Before you can use Rackspace Auto Scale, you need to have the following
 prerequisites:

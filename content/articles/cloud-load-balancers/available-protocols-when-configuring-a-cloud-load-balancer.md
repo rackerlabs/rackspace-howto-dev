@@ -32,7 +32,7 @@ fetches the page and returns it your browser.
 (SSL) provides encrypted communication over the Internet. It securely
 verifies the authenticity of the web server you're communicating with.
 
-**[]()IMAPS** - The Internet Message Application Protocol over Secure
+**IMAPS** - The Internet Message Application Protocol over Secure
 Socket Layer (SSL) defines how an email client, such as Microsoft
 Outlook, retrieves and transfers email messages with a mail server.
 
@@ -70,7 +70,7 @@ servers to send and receive email messages. Email clients use this
 protocol to relay messages to another computer or web server, but use
 IMAP or POP to send and receive messages.
 
-[]()**TCP** - The Transmission Control Protocol is a part of the
+**TCP** - The Transmission Control Protocol is a part of the
 Transport Layer protocol and is one of the core protocols of the
 Internet Protocol Suite. It provides a reliable, ordered delivery of a
 stream of bytes from one program on a computer to another program on
@@ -89,7 +89,7 @@ for protocols where there is no request-response semantic. Either side
 of the connection can write the first message, with no response being
 necessarily required or expected.
 
-[]()**UDP** - The User Datagram Protocol provides a datagram service
+**UDP** - The User Datagram Protocol provides a datagram service
 that emphasizes speed over reliability, It works well with applications
 that provide security through other measures.
 

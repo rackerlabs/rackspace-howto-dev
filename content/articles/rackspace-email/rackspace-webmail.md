@@ -27,7 +27,7 @@ Webmail features below:
 
 
 
-[]()**Logging Into Webmail** To login into Webmail visit the following
+**Logging Into Webmail** To login into Webmail visit the following
 URL: <https://apps.rackspace.com/>
 
 ![](http://c15043262.r62.cf2.rackcdn.com/WebmailLogin.png)
@@ -42,7 +42,7 @@ Upon logging in, Rackspace allows several options:
 
 
 
-[]()**Contacts** Rackspace email allows users the ability to manage
+**Contacts** Rackspace email allows users the ability to manage
 their contacts through our Webmail interface. Users have the ability add
 new contacts, import/export old contacts using a .csv file, export to
 various email clients, create groups and sort through contacts
@@ -52,7 +52,7 @@ information on how to do this, please see the following article -
 [Rackspace Email and Hosted Exchange
 settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
-[]()**Calendar** Rackspace email allows users the ability to manage
+**Calendar** Rackspace email allows users the ability to manage
 their appointments and meetings through our Wembail interface. Users
 have the ability to share their calendar, creat personal calendars,
 import events and add shared calendars within your domain. Rackspace
@@ -61,18 +61,18 @@ well with Rackspace Mobile Sync. For more information on how to do this,
 please see the following article - [Rackspace Email and Hosted Exchange
 settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
-[]()**Tasks** Rackspace email allows users the ability to manage their
+**Tasks** Rackspace email allows users the ability to manage their
 tasks through our Webmail interface. Users have the ability to create
 new tasks, manage their tasks and create task list.
 
-[]()**Notes** Rackspace email allows users the ability to create notes
+**Notes** Rackspace email allows users the ability to create notes
 for new ideas, meeting summarys or just some quick thoughts.  Rackspace
 also allows you to sync your Notes with your mobile device as well with
 Rackspace Mobile Sync. For more information on how to do this, please
 see the following article - [Rackspace Email and Hosted Exchange
 settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 
-[]()**Settings** Rackspace Email provides various options for users to
+**Settings** Rackspace Email provides various options for users to
 manage their email account. While in the Webmail interface, select
 Settings in the top right hand corner to see a list of features and
 options available for users:

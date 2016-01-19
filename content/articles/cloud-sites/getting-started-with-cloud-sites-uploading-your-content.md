@@ -30,7 +30,7 @@ Protocol) credentials and connect to the Rackspace Cloud FTP servers.
 
 In order to add content to your web site you will need to log in with an
 [FTP
-client](/knowledge_center/index.php/What_FTP_software_should_I_use%3F "What FTP software should I use?")
+client](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
 using your FTP settings. Let's start by showing you where you can locate
 your FTP settings.
 

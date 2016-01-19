@@ -4,9 +4,9 @@ title: Getting Started with Cloud Networks
 type: article
 created_date: '2012-10-29'
 created_by: Susan Million
-last_modified_date: '2016-01-10'
-last_modified_by: Renee Rendon
-product: Cloud Servers
+last_modified_date: '2016-01-19'
+last_modified_by: Kyle Laffoon
+product: Cloud Networks
 body_format: tinymce
 ---
 

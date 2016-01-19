@@ -24,7 +24,7 @@ MyRackspace customers).
 -   [Domains](#Domains)
 -   [Support](#Support)
 
-[]()
+
 
 Control Panel Main page
 -----------------------
@@ -40,7 +40,7 @@ that you can manage it directly from the landing page.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CP_Main.png" width="761" height="624" />
 
-[]()
+
 
 ### Rackspace Email section
 
@@ -124,7 +124,7 @@ about options are provided.
 -   **Troubleshooting Tools** - Access helpful tools such as a DNS
     checker and header analyzer.
 
-[]()
+
 
 ### My Account and News & Alerts sections
 
@@ -173,7 +173,7 @@ options are provided
     support tickets.
 -   **Feedback** - Provide feedback for Cloud Office services.
 
-[]()
+
 
 ### Domains section
 
@@ -232,7 +232,7 @@ are provided.
 -   **Migrations** - Set up new migrations for migrating company data
     from a previous hosting provider.
 
-[]()
+
 
 ### Support section
 

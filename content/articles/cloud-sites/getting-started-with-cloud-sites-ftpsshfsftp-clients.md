@@ -27,7 +27,7 @@ Sites does not offer full SSH access to the web servers, the other
 recommendations would be to use FTP, or you could use SSHFS (SSH
 Filesystem).
 
-[]()
+
 
 **File Transfer Protocol (FTP)** is a method for adding content to your
 website. As its name indicates, FTP is a means for transferring files
@@ -98,7 +98,7 @@ To create FTP users:
 
 -   Click **Save** to finish adding the new FTP user
 
-[]()
+
 
 </div>
 
@@ -198,7 +198,7 @@ such as below to ensure you do not lose connection while working:
 use [ExpanDrive](http://www.expandrive.com/ "http://www.expandrive.com") to
 map your FTP storage location as a local drive. *
 
-[]()
+
 
 **FTP Clients**
 

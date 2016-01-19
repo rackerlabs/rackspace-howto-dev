@@ -21,7 +21,7 @@ variations.
 -   [Point-to-point](#Pointtopoint)
 -   [Auditing](#Auditing)
 
-### []()Task distribution
+### Task distribution
 
 In the task distribution pattern, customers use Cloud Queues much like
 Amazon Simple Queue Service (SQS) to feed worker pools, as follows:
@@ -65,7 +65,7 @@ check is necessary.
 
 
 
-### []()Pub-sub
+### Pub-sub
 
 Pub-Sub stands for Publisher-Subscriber, and it means notifying one or
 more consumers or subscribers of an event, as follows:
@@ -99,7 +99,7 @@ able to get message X as long as it is able to poll within the TTL
 period set by the publisher.
 
 
-### []()Point-to-point
+### Point-to-point
 
 In this pattern, each agent gets its own queue. A &ldquo;queue&rdquo; resource is
 extremely lightweight in Cloud Queues, so users can create hundreds of
@@ -134,7 +134,7 @@ from its request.
 4b. If no result is expected, this step and the next step are skipped.
 
 ###
-[]()Auditing
+Auditing
 
 In auditing, users add an additional observer that is constantly listing
 and recording messages in a queue. This observer could be a CLI

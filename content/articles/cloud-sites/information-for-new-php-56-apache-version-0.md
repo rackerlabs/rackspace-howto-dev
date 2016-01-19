@@ -128,7 +128,7 @@ support HTTPS.*
 **FAQ**
 -------
 
-[]()**Is this Apache version fixing CVE \#\#\#?**
+**Is this Apache version fixing CVE \#\#\#?**
 
 -   The version of Apache has been updated to 2.4 along with all of its
     relevant CVE updates.

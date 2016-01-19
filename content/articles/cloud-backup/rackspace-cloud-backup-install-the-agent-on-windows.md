@@ -46,7 +46,7 @@ Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 
 
-[]()
+
 
 Requirements
 ------------
@@ -76,7 +76,7 @@ from</span><span> </span><http://agentrepo.drivesrvr.com/><span>.</span>
     will almost always be the correct one for your server.)
 
 
-[]()Installation
+Installation
 ----------------
 
 You can choose one of the following methods of installation:
@@ -86,7 +86,7 @@ You can choose one of the following methods of installation:
 -   [Update](#update)
 
 
-### []()Interactive installation
+### Interactive installation
 
 Use the Windows package installer (`msiexec.exe`) to install the Cloud
 Backup agent in interactive mode. This command launches the Cloud Backup
@@ -141,7 +141,7 @@ See [Test Windows installation or update](#testsetup) for the
 verification steps to test the installation.
 
 
-### []()Silent installation
+### Silent installation
 
 See [Rackspace Cloud Backup - Install the agent on Windows by using
 silent
@@ -152,7 +152,7 @@ to learn how to perform a silent installation.
 administrator account of the server.
 
 
-### []()Update Cloud Backup agent on Windows
+### Update Cloud Backup agent on Windows
 
 For instructions to update the agent on Windows, see [Update the
 Rackspace Cloud Backup
@@ -160,7 +160,7 @@ Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 
 
-[]()
+
 ----
 
 Test the Windows installation or update
@@ -239,7 +239,7 @@ This is the same as running the setup with no parameters.
 
 
 
-[]()Troubleshooting installs, upgrades, and uninstalls
+Troubleshooting installs, upgrades, and uninstalls
 ------------------------------------------------------
 
 **Note:**The silent installation method will fail without a clear error
@@ -304,7 +304,7 @@ and failed statuses:
 
 
 
-[]()Uninstall Cloud Backup agent on Windows
+Uninstall Cloud Backup agent on Windows
 -------------------------------------------
 
 To uninstall the Cloud Backup agent, the preferred method is to

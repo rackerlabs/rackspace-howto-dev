@@ -4,8 +4,8 @@ title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2016-01-18'
-last_modified_by: Renee Rendon
+last_modified_date: '2016-01-19'
+last_modified_by: Rose Contreras
 product: Cloud Backup
 body_format: markdown_w_tinymce
 ---
@@ -23,7 +23,7 @@ This Guide shows you how to get the most out of Rackspace Cloud Backup well and 
 <a name="conventions"> </a>
 
 | Conventions |
---- | ---
+--- |
 &#9989; | **Best Practice**. Look to these when you need to make good backup decisions.
 &#9995; | **Caution**. Consider the potential outcomes before you do these actions.
 &#10060; | **Do Not Attempt**. These are warnings against possible future trouble.

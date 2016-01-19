@@ -122,7 +122,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### <span><a href="" id="serverSecurity"></a>3.</span> Cloud Server security
 
 -   [Basic Linux Cloud Server
-    security](/how-to/basic-cloud-server-security)[](http://www.rackspace.com/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
+    security](/how-to/basic-cloud-server-security)[](/how-to/create-an-inbound-port-allow-rule-for-windows-firewall-2008)
 
 </div>
 

@@ -91,7 +91,7 @@ High I/O instances as Data
 drives](/how-to/configure-flash-drives-in-high-io-instances-as-data-drives)
 for more information on this option.
 
-[]() What Is Different with OnMetal Cloud Servers from other cloud servers?
+ What Is Different with OnMetal Cloud Servers from other cloud servers?
 ---------------------------------------------------------------------------
 
 API-driven instant provisioning of OnMetal Cloud Servers brings the
@@ -127,7 +127,7 @@ information on generating SSH keys, see [Manage SSH Key Pairs for Cloud
 Servers with
 python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-[]() Limitations
+ Limitations
 ----------------
 
 After an OnMetal server is built, there is a slight delay in network

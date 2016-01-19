@@ -42,7 +42,7 @@ Once complete, save the file with the **.sh** extension.
 
 **Suggested Filename:** *compress.sh*
 
-#### []()
+####
 
 **NOTE:** For these examples make sure to replace "/SOURCE/DIRECTORY/"
 and "/DESTINATION DIRECTORY" with the appropriate Web directories (like
@@ -69,7 +69,7 @@ similar, but would not require the "r" in the options.*
     #!/bin/sh
     zip -9p /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/targetfile.txt
 
-#### []()
+####
 
 ###
 
@@ -89,7 +89,7 @@ The final script should look similar to this:
 
 ### <span>II. Extracting</span>
 
-#### []()
+####
 
 **Suggested Filename:** *decompress.sh*
 
@@ -106,7 +106,7 @@ The final script should look similar to this:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Unzip_script_visual_0.png" width="717" height="138" />
 
-#### []()
+####
 
 (**NOTE: the -o option will force unzip to overwrite existing files!**)
 

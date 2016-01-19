@@ -100,7 +100,7 @@ To create a new check, complete the following steps:
     displays a details page with the name of your check. This page
     provides relevant information about your check.
 
-[]()Edit a check
+Edit a check
 ----------------
 
 To edit your check, click the **Actions** menu on the check details

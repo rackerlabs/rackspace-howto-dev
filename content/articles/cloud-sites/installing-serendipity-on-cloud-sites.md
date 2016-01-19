@@ -35,7 +35,7 @@ and selecting Cloud Sites Control Panel.
 5.  Open up your FTP client software and login to your new domain. If
     you are not familiar with uploading content, check out [What FTP
     software should I
-    use?](/knowledge_center/index.php/What_FTP_software_should_I_use%3F "What FTP software should I use?")
+    use?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
     and use the information to connect provided in [Getting Started With
     Cloud Sites, FTP/SSHFS/FTP
     Clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).

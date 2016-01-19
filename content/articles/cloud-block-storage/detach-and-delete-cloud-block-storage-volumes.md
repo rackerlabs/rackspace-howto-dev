@@ -30,7 +30,7 @@ On this Page:
 -   [Detach a Volume](#detach-a-volume)
 -   [Delete a Volume](#delete-a-volume)
 
-### []()Unmount a Volume
+### Unmount a Volume
 
 There are a few reasons to detach a volume:
 
@@ -82,7 +82,7 @@ The output is the prompt ready for the next command.
 The Cloud Block Storage Volume no longer displays as a drive under
 **Computer**.
 
-### []()Detach a Volume
+### Detach a Volume
 
 In the Rackspace Cloud Control Panel, click **Block Storage** in the
 Servers sub-navigation to display the **Block Storage Volumes** screen.
@@ -101,7 +101,7 @@ Note: It may take several minutes for your Volume to detach.
 
 
 
-### []()Delete a Volume
+### Delete a Volume
 
  In the Rackspace Cloud Control Panel, click **Block Storage** in the
 Servers sub-navigation to display the **Block Storage Volumes** screen.

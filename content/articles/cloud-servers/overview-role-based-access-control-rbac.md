@@ -237,7 +237,7 @@ API documentation at <https://developer.rackspace.com/docs/>.
 -   [Rackspace
     CDN](/how-to/rackspace-cdn)
 -   [Billing and Payment
-    Services](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-billing-faq%20)
+    Services](/how-to/rackspace-billing-faq)
 
 
 

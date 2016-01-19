@@ -26,7 +26,7 @@ Contents
 -   <span style="font-size: 1.385em; line-height: 1.538em;">[Applying
     Custom Rules](#custom)</span>
 
-<span style="font-size: 1.385em; line-height: 1.538em;">[]()[]()Managing Firewall Settings</span>
+<span style="font-size: 1.385em; line-height: 1.538em;">Managing Firewall Settings</span>
 -------------------------------------------------------------------------------------------------
 
 <span style="font-size: 1.385em; line-height: 1.538em;">The Windows
@@ -55,7 +55,7 @@ access to modify the settings** for each of the three firewall profiles,
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/firewall_properties.png" width="664" height="471" />
 
-<span style="font-size: 1.385em; line-height: 1.538em;">[]()[]()Applying Custom Rules</span>
+<span style="font-size: 1.385em; line-height: 1.538em;">Applying Custom Rules</span>
 --------------------------------------------------------------------------------------------
 
 Custom Rules allow the finest level of control over inbound and outbound

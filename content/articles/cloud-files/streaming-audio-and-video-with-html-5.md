@@ -35,7 +35,7 @@ Now you are ready to learn about streaming audio and video with HTML5.
 -   [Streaming Audio with HTML 5](#audio)
 -   [Streaming Video with HTML 5](#video)
 
-[]()
+
 
 Streaming Audio
 ---------------
@@ -80,7 +80,7 @@ Here is what you should see when it's working:
 
 *Sorry, your browser doesn't support HTML5 audio.*
 
-[]()
+
 
 Streaming Video
 ---------------

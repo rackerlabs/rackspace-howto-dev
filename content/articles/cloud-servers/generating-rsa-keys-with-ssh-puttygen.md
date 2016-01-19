@@ -73,7 +73,7 @@ In Windows, use PuTTYgen to generate our public and private keys.
 -   <span>[Assign your SSH key to your existing Cloud Server through
     PuTTY](#Assigntoexisting).</span>
 
-#### []()Specify Your SSH Key When Creating a New Cloud Server
+#### Specify Your SSH Key When Creating a New Cloud Server
 
 When you create a cloud server, you can add a new public key or assign
 an existing public key.
@@ -95,7 +95,7 @@ Add an existing public key when creating a cloud server
 4.  Confirm that your key is listed in the **SSH Key** list for your
     new server.
 
-#### []()Assign Your SSH Key to Your Existing Cloud Server
+#### Assign Your SSH Key to Your Existing Cloud Server
 
 To make use of your newly generated RSA key pair, you must tell PuTTY to
 use it when connecting to your Cloud Server.
@@ -147,7 +147,7 @@ in many ways. By eliminating the possibility of SSH brute-force attacks
 targeted towards your Cloud Server, the chances of it being compromised
 are decreased by an order of magnitude.
 
-[]()Related Articles
+Related Articles
 --------------------
 
 -   [Connecting to a server using SSH on Linux or Mac

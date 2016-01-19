@@ -228,7 +228,7 @@ in the following diagram.
 SSL Termination on Cloud Load Balancers is supported[via the
 API](http://docs.rackspace.com/loadbalancers/api/v1.0/clb-devguide/content/SSLTermination-d1e2479.html)
 and [through the Cloud Control
-Panel](/how-to/cloud-load-balancers-faqs).
+Panel](/how-to/cloud-load-balancers-faq).
 SSL Termination allows users to have their secure traffic terminate at
 the load balancer with centralized certificate management. Features of
 this service are as follows:

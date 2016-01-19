@@ -22,7 +22,7 @@ troubleshoot issues accessing a particular service.
 
 To access the tool you need to open up a command prompt, you should be
 able to find this under Start &gt; All Programs &gt; Accessories &gt;
-Command Prompt[]()
+Command Prompt
 
 ### Checking For a Record
 
@@ -45,7 +45,7 @@ name resolution. The second section, which specifies a non-authoritative
 answer, gives the name of the record and the corresponding IP address.
 The answer is non-authoritative because the answer comes from a server,
 cachens1.lon.rackspace.com in this case, that is not the root source for
-those records.[]()
+those records.
 
 ### Getting an Authoritative Answer
 
@@ -86,7 +86,7 @@ against that name server.
     Name:    rackspace.co.uk
     Address:  212.64.133.165
 
-[]()
+
 
 ### Checking When a Cached Record Will Expire
 
@@ -189,7 +189,7 @@ So from this you can see that the name server being used by the client
 computer will keep reusing the same A record for rackspace.co.uk for the
 next 4 minutes and 39 seconds. If you were to run the same command on
 the authoritative name server you would see what the current maximum TTL
-for the record is.[]()
+for the record is.
 
 ### Summary
 

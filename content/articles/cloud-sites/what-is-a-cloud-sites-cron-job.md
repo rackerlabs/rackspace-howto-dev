@@ -21,7 +21,7 @@ automatically terminated.
 Here are additional articles related to Cron jobs:
 
 [How do I schedule a cron
-job?](/knowledge_center/index.php/How_do_I_schedule_a_cron_job%3F "How do I schedule a cron job?")
+job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites "How do I schedule a cron job?")
 
 [How do I enable/disable Cloud Sites cron
 jobs?](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)

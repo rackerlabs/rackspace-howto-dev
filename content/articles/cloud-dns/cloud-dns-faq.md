@@ -84,7 +84,7 @@ have?](#howcaniraiseapilimit)
 
 
 
-[]()
+
 ----
 
 #### What is a domain name system (DNS)?
@@ -101,7 +101,7 @@ failure of the master invokes the slave. DNS servers may also be
 clustered or replicated such that changes made to one DNS server are
 automatically propagated to other active servers.
 
-[]()
+
 ----
 
 #### What types of customers/accounts can access Cloud DNS?
@@ -110,14 +110,14 @@ Anyone who has a Rackspace Cloud account can access the Cloud DNS
 service.  Existing Cloud customers will have access to the Rackspace
 Cloud DNS by default.
 
-[]()
+
 ----
 
 #### Where can I find the Cloud DNS API documentation?
 
 [http://docs.rackspace.com](http://docs.rackspace.com/)
 
-[]()
+
 ----
 
 #### How much does this service cost?
@@ -125,7 +125,7 @@ Cloud DNS by default.
 Cloud DNS is currently available at no additional cost, and is intended
 for use with Cloud accounts that have provisioned and active resources.
 
-[]()
+
 ----
 
 #### Can this service be used for Dedicated Servers?
@@ -135,7 +135,7 @@ Managed / Dedicated customers with Rack Connect (i.e. those customers
 who also have a Cloud account) have access, but can only use the service
 to manage DNS for their Rackspace Cloud resources.
 
-[]()
+
 ----
 
 #### Does Cloud DNS work with Cloud Sites?
@@ -146,7 +146,7 @@ edited and deleted via Cloud DNS API. Domain registration is not
 supported by the Cloud DNS API, but you can still register domains
 through the existing Cloud Sites Control Panel.
 
-<span>[]()</span>
+<span></span>
 
 **<span>How does this work for Hybrid customers?</span>**
 
@@ -157,7 +157,7 @@ utilize Cloud DNS to manage domains for their Cloud resources.
 \*\*Duplicate domains may not exist between Managed Hosting and Cloud
 Hosting resources.\*\*
 
-[]()
+
 ----
 
 #### How do I authenticate with the Cloud DNS API?
@@ -179,14 +179,14 @@ x-headers.
 For full authentication details, see the [Cloud DNS Developers
 Guide](http://docs.rackspace.com/api).
 
-[]()
+
 ----
 
 #### What account number do I use to access the service?
 
 Customers should use their existing Cloud account number.
 
-[]()
+
 ----
 
 #### What is the difference between US and UK Cloud DNS?
@@ -197,7 +197,7 @@ have their own separate API endpoint:
 US = `https://dns.api.rackspacecloud.com/v1.0/1234/`
 UK = `https://lon.dns.api.rackspacecloud.com/v1.0/1234/`
 
-[]()
+
 ----
 
 #### What DNS management operations does the Cloud DNS API support?
@@ -211,7 +211,7 @@ filtering records.
 For a full list of supported API operations, see the [Cloud DNS
 Developers Guide](http://docs.rackspace.com/api).
 
-[]()
+
 ----
 
 #### What record types does Cloud DNS support?
@@ -236,7 +236,7 @@ with custom attributes indicating the record type. We do not currently
 support the SPF RR type as defined in [RFC
 4408](http://tools.ietf.org/html/rfc4408).
 
-[]()
+
 ----
 
 #### Can I import and export domains?
@@ -259,7 +259,7 @@ Our default DNS servers are:
 
 -   dns2.stabletransit.com
 
-[]()
+
 ----
 
 #### What type of DNS network does Rackspace use?
@@ -275,7 +275,7 @@ datacenter were to fail, or even if all of the DNS servers within a
 specific datacenter were to fail, the DNS queries will automatically
 start going to the next best location.
 
-[]()
+
 ----
 
 #### What are the limitations of the search functionality?
@@ -283,14 +283,14 @@ start going to the next best location.
 You will be able to search for domains within your own account.  The
 functionality does not allow you to search for records.
 
-[]()
+
 ----
 
 #### Do my TTL settings expire?
 
 No.<span> </span>
 
-[]()
+
 ----
 
 #### What are the default TTL&rsquo;s for domains and records?
@@ -300,7 +300,7 @@ specified, a default value of 3600 seconds is used. When the domain
 and/or record TTL is supplied by the user via a create or update
 operation, the specified TTL values must be 300 seconds or more.
 
-[]()
+
 ----
 
 #### How long does it take for DNS changes to be propagated globally?
@@ -318,7 +318,7 @@ up to a few minutes to propagate to our Rackspace nameservers.
 When changing nameservers for a domain, complete propagation will take
 about 2 days for most domains. This is enforced by the registries.
 
-[]()
+
 ----
 
 #### Are there API rate limits?
@@ -330,7 +330,7 @@ limits are thresholds that are reset after a certain amount of time
 passes. Absolute limits are fixed. See the [developers
 guide](http://docs.rackspace.com/) for more information on rate limits.
 
-[]()
+
 ----
 
 #### How many Cloud DNS domains and records can I have?
@@ -346,7 +346,7 @@ returned. See the [Cloud DNS Developer's
 Guide](http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html)
 for more information on absolute limits.
 
-[]()
+
 ----
 
 #### How can I create a Cloud DNS ticket?

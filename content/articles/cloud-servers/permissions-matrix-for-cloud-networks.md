@@ -382,7 +382,7 @@ Delete Virtual Interface
 
 -
 
-[]()Cloud Networks Terminology
+Cloud Networks Terminology
 ------------------------------
 
 **<span>Network</span>**

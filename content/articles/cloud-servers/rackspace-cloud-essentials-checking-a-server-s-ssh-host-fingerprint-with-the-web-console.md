@@ -36,7 +36,7 @@ Servers](/how-to/getting-started-with-cloud-servers-0)
 -   [Windows and PuTTY](#WIndowsPutty)
 -   [Summary](#Summary)
 
-### []() Explaining the host key
+###  Explaining the host key
 
 One of the fundamentals of
 [SSH](/how-to/connecting-to-linux-from-windows-by-using-putty)
@@ -75,7 +75,7 @@ So let's look at when and how to check the host fingerprint without
 using an SSH connection. We'll do it by going in through the server's
 web console.
 
-### []() A dire warning
+###  A dire warning
 
 First we'll look at the error message that probably brought you to this
 article, a warning that the host's identification has changed:
@@ -98,7 +98,7 @@ The warning can be summed up as: The fingerprint that identifies the SSH
 server is different from what it was the last time you connected to it.
 Expected or not, you'll want to check on that.
 
-### []() How to check
+###  How to check
 
 If you have your server's SSH fingerprint written down somewhere you can
 compare it to what SSH shows you to make sure you're connecting to the
@@ -109,14 +109,14 @@ computers (like from a consulting client's desktop or server).
 If you don't have the host fingerprint handy you can use the control
 panel's web console to find it.
 
-### []() The web console
+###  The web console
 
 The web console lets you connect to your server as if you were, well,
 sitting at the console. If anything weird is going on with SSH it won't
 interfere with you connecting directly to the console through the Cloud
 Control Panel.
 
-#### []() In the Control Panel
+####  In the Control Panel
 
 You can connect to the web console for your server through the Cloud
 Control Panel.  If you need assistance opening the web console, [see
@@ -128,12 +128,12 @@ passwords for all accounts, for example) you can use the Cloud Control
 Panel to reset your server's root password. Then you can use the new
 credentials to get in.
 
-### []() In the console
+###  In the console
 
 Now that you're on the server it's time to get that host key
 fingerprint.
 
-#### []() The best way
+####  The best way
 
 The official way to get that fingerprint is to run the "ssh-keygen"
 command against the server's public key, as in:
@@ -155,7 +155,7 @@ The first number indicates the strength of the key (in this case, 2048
 bits). The fingerprint follows, along with the location of the key it
 analyzed and the type of key it's using (usually RSA).
 
-#### []() The not-best way
+####  The not-best way
 
 This isn't a bad method to getting the fingerprint, it's just not as
 technical and fancy as the official way. It also only works when the SSH
@@ -186,18 +186,18 @@ And then edit the "known\_hosts" file. Look for a line that starts with
 "localhost", delete it, save the file, and try again. You should get the
 fingerprint this time.
 
-### []() Write it down
+###  Write it down
 
 Write the fingerprint down or put it in a note on your cell phone or
 something. You went to all this trouble to get the key, you might as
 make sure you have it handy in case you need to do this again.
 
-### []() Completing the connection - maybe
+###  Completing the connection - maybe
 
 Now that we have the host key fingerprint in-hand we can see if the SSH
 connection is a good one.
 
-### []() First-time connection
+###  First-time connection
 
 If your client was connecting to the server for the first time and you
 were just confirming the host key before accepting it, you're set.
@@ -211,13 +211,13 @@ have been local, so moving may get the jerk out of your hair. Otherwise
 it might be a good time to get in touch with our support staff and they
 can help you figure out your options.
 
-### []() Host key has changed
+###  Host key has changed
 
 If the warning you got was that the fingerprint didn't match what the
 client was expecting then you'll need to edit your client's list of
 known hosts before you can connect.
 
-#### []() Linux and Mac OS X
+####  Linux and Mac OS X
 
 On Linux, Mac OS X, and other Unix-based operating systems you usually
 use the "ssh" command to connect to a server via SSH. That should mean
@@ -247,7 +247,7 @@ the line and save the edited file. The next time you make a connection
 it will be as if you'd never connected to the server before. Remember to
 check the host fingerprint again before completing the connection!
 
-#### []() Windows and PuTTY
+####  Windows and PuTTY
 
 There are a variety of SSH clients that can be used on Windows, but
 we'll talk about the free and widely-used PuTTY terminal program. If you
@@ -292,7 +292,7 @@ fingerprint again.
 Double-check against the fingerprint you pulled up in the web console,
 and if it matches, accept the key.
 
-### []() Summary
+###  Summary
 
 It took a little poking around, but now you should have your server's
 host key fingerprint handy in case you need to check it again. At the

@@ -52,7 +52,7 @@ time you can use an HTML file created for this exercise. Download it
 [here](http://90df0b8db988dcfbf5da-c1875553a16f2a6d80002cac1a22fc37.r75.cf1.rackcdn.com/index.html)
 (right-click to save the file).
 
-### []()Build the infrastructure
+### Build the infrastructure
 
 In this section, you create your server, connect to it, and install the
 Apache web server package to turn the server into a web server.
@@ -269,7 +269,7 @@ earlier.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/3768.25.png" width="654" height="616" />
 
-[]() Test your site
+ Test your site
 -------------------
 
 Now that the correct HTML file is uploaded to the correct directory, you

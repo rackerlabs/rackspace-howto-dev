@@ -16,7 +16,7 @@ The following matrix displays specific permissions for the roles in Cloud Files.
 
 [Related Knowledge Center Articles](/how-to/)
 
-[Cloud Files Terminology](/how-to/cloud-files-faqs)
+[Cloud Files Terminology](/how-to/cloud-files-faq)
 
 ## As of September 26, 2013
 

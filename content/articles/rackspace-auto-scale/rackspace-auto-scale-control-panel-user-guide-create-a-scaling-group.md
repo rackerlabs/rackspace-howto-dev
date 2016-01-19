@@ -21,7 +21,7 @@ policies operate.
 -   [Create a scaling group](#CreateScalingGroup)
 -   [About the Auto Scale control panel](#AboutControlPanel)
 
-### []()Create a scaling group
+### Create a scaling group
 
 
 1.  Log in to the Cloud Control Panel.
@@ -106,7 +106,7 @@ policies operate.
     turning green by each server as it completes. When the scaling group
     has been created, the status is **Active**.
 
-### []()About the Auto Scale control panel
+### About the Auto Scale control panel
 
 Following are a few things you should know about the pages in the Auto
 Scale control panel:

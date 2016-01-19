@@ -681,7 +681,7 @@ to a server instance</span>.
 
 -
 
-[]()Next Generation Cloud Servers Terminology
+Next Generation Cloud Servers Terminology
 ---------------------------------------------
 
 ### <span>Flavor</span>

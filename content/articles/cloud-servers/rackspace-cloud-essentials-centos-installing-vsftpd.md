@@ -51,7 +51,7 @@ administration and security steps.
 Installation
 ------------
 
-### []()Install vsftpd
+### Install vsftpd
 
 Using the group install available in the YUM package manager makes this
 step very easy. Use the following command to install everything you will
@@ -59,7 +59,7 @@ need:
 
     sudo yum install vsftpd
 
-### []()Turn on vsftpd
+### Turn on vsftpd
 
 Using the service command, this is how you startup vsftpd:
 
@@ -74,7 +74,7 @@ security and convenience.
 Configuration
 -------------
 
-### []()Set vsftp service to start on reboot
+### Set vsftp service to start on reboot
 
 You can use the chkconfig tool to view which services will start
 automatically when the server boots, and on which run level they'll
@@ -104,7 +104,7 @@ and convenience:
 
 Open /etc/vsftpd/vsftpd.conf in your favorite text editor.
 
-### []()Disable anonymous users
+### Disable anonymous users
 
 It is generally advised to disable anonymous FTP, unless you have a
 specific requirement to use it.
@@ -122,7 +122,7 @@ to read:
 anonymous_enable=NO
 ```
 
-### []()Restriciting user access
+### Restriciting user access
 
 Now configure vsftpd to be able to chroot(commonly referred to as
 jailing or jail) users to their home directories for security and
@@ -199,21 +199,21 @@ Save the iptables-config file and restart iptables
 Access your server through FTP
 ------------------------------
 
-### []()Using a browser
+### Using a browser
 
 Simply input the name of your FTP site into a browser address bar as
 shown here, and supply the login credentials when prompted:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/ftp.png" width="538" height="73" />
 
-### []()Using an FTP client
+### Using an FTP client
 
 There are many low-cost or free FTP applications, such as
 [CyberDuck](https://cyberduck.io/?l=en) and
 [Fireuploader](http://www.fireuploader.com/), that are available for
 download.
 
-### []()Using the command line
+### Using the command line
 
 Here is the syntax for opening an FTP session from the command line:
 

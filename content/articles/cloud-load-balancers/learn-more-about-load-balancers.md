@@ -38,7 +38,7 @@ Overload](/how-to/prevent-server-overload-with-cloud-load-balancers "Preventing 
 Monitor](/how-to/configure-a-health-monitor-in-cloud-load-balancers "Configuring a Health Monitor")
 
 [Using SSL
-Termination](/how-to/cloud-load-balancers-faqs)
+Termination](/how-to/cloud-load-balancers-faq)
 
 
 

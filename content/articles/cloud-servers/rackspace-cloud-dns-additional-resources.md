@@ -59,5 +59,5 @@ message in a way that can be validated by a recipient.
 ### Next steps
 
 [**Rackspace Cloud DNS - Frequently Asked
-Questions**](/how-to/rackspace-cloud-dns-faq)
+Questions**](/how-to/cloud-dns-faq)
 

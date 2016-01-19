@@ -18,7 +18,7 @@ Databases:
 -   [Manage Database Access for Users](#manage)
 -   [Set Access-Level Permissions for Individual Users](#set)
 
-[]()
+
 -----
 
 Create Users with Host Parameters
@@ -79,7 +79,7 @@ value of %, which allows them to connect to the database from any host.
 -   Valid host name - 111.111.111.11
 -   Invalid host name - server1.test.com
 
-####  []()
+####
 
 ### Modify User Accounts
 
@@ -94,7 +94,7 @@ the cog icon next to the user name:
 -   Manage database access (grant or revoke access to
     specific databases)
 
-[]()
+
 
 ### Manage Database Access for Users
 
@@ -118,7 +118,7 @@ revoked full permissions on a database. To add more specific
 permissions, you must enable the root user as described in the following
 section.
 
-#### []()
+####
 
 #### Set Access-Level Permissions for Individual Users
 

@@ -32,7 +32,7 @@ body_format: tinymce
 
 ------------------------------------------------------------------------
 
-### []()API Operations
+### API Operations
 
 -   Servers
     -   List Servers
@@ -74,7 +74,7 @@ body_format: tinymce
 
 ### XML
 
-#### []()Code Sample: Create Server Request (XML)
+#### Code Sample: Create Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns="http://docs.rackspacecloud.com/servers/api/v1.0" name="new-server-test" imageId="1" flavorId="1">
@@ -96,7 +96,7 @@ body_format: tinymce
         </personality>
     </server>
 
-#### []()Code Sample: Create Server Response (XML)
+#### Code Sample: Create Server Response (XML)
 
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <server xmlns="http://docs.rackspacecloud.com/servers/api/v1.0" status="BUILD" progress="0" hostId="312452f3d7a72d3def18a06e09ec01b7" flavorId="2" imageId="119" adminPass="Whul7KK67api-test-server-xml" id="21034280" name="api-test-server-xml">
@@ -113,7 +113,7 @@ body_format: tinymce
         </addresses>
     </server>
 
-#### []()Code Sample:  Get Server Details Response (XML)
+#### Code Sample:  Get Server Details Response (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <server xmlns="http://docs.rackspacecloud.com/servers/api/v1.0" id="1234" name="sample-server" imageId="1" flavorId="1" status="BUILD" progress="60" hostId="e4d909c290d0fb1ca068ffaddf22cbd0">
@@ -132,7 +132,7 @@ body_format: tinymce
         </addresses>
     </server>
 
-#### []()Code Sample:  Reboot Server Request (XML)
+#### Code Sample:  Reboot Server Request (XML)
 
     <?xml version="1.0" encoding="UTF-8"?>
     <reboot xmlns="http://docs.rackspacecloud.com/servers/api/v1.0" type="HARD"/>
@@ -141,7 +141,7 @@ body_format: tinymce
 
 ### JSON
 
-#### []()Code Sample:  Create Server Request (JSON)
+#### Code Sample:  Create Server Request (JSON)
 
     {
         "server": {
@@ -158,7 +158,7 @@ body_format: tinymce
         }
     }
 
-#### []()Code Sample: Create Server Response (JSON)
+#### Code Sample: Create Server Response (JSON)
 
     {
         "server": {
@@ -180,7 +180,7 @@ body_format: tinymce
         }
     }
 
-#### []()Code Sample:  Get Server Details Response (JSON)
+#### Code Sample:  Get Server Details Response (JSON)
 
     {
         "server": {
@@ -202,7 +202,7 @@ body_format: tinymce
         }
     }
 
-#### []()Code Sample:  Reboot Server Request (JSON)
+#### Code Sample:  Reboot Server Request (JSON)
 
     {
         "reboot": {
@@ -212,7 +212,7 @@ body_format: tinymce
 
 ------------------------------------------------------------------------
 
-[]()**Legal Disclaimer**
+**Legal Disclaimer**
 
 This information is intended for software developers who want to develop
 applications by using the first generation Rackspace Cloud Servers

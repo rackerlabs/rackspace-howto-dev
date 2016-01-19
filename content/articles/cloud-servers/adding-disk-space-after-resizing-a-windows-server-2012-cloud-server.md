@@ -49,7 +49,7 @@ Contents
 
 ### ** **
 
-### **[]()Open Computer Management**
+### **Open Computer Management**
 
 From the Desktop of your Windows Server 2012 Cloud Server, open
 the **Server Manager** and select **Tools** &gt; **Computer
@@ -57,7 +57,7 @@ Management**.** **
 
 ### **<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/tools_computer_manager.png" width="846" height="634" /> **
 
-### **[]()Open Disk Management**
+### **Open Disk Management**
 
 Under the **Storage** folder in the left pane, select **Disk
 Management**. In the left pane of Disk Management you will see the
@@ -69,21 +69,21 @@ resized to 80 GB. That expanded storage space is the unallocated 40 GB.
 <span
 style="font-size: 1.231em; font-weight: bold; line-height: normal;"><img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/disk_managment.png" width="848" height="635" /></span>
 
-### []()Extend the Volume
+### Extend the Volume
 
 Select the C:\\ drive and right-click on it.  Choose **Extend
 Volume** from the drop down menu.
 
 **<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/extend_volume.png" width="849" height="636" />**
 
-### **[]()Extend Volume Wizard**
+### **Extend Volume Wizard**
 
 This will open the Extend Volume Wizard. Click **Next** to begin the
 process.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/extend_1.png" width="641" height="519" />
 
-### []()Select the Volume you wish to Extend
+### Select the Volume you wish to Extend
 
 To add all available space to your C:\\ drive (**Disk 0**) you can keep
 the default selections and press **Next**.
@@ -95,7 +95,7 @@ To finalize the modifications click **Finish**.
 
 ** <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/extend_3.png" width="640" height="519" />**
 
-### **[]()Verify Disk Space**
+### **Verify Disk Space**
 
 You will now see the additional disk drive volume that you created.
  Close Computer Management and begin using the additional space that you

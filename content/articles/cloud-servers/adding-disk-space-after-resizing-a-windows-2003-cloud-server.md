@@ -69,15 +69,15 @@ Contents
 <div>
 
 
-**[]()**
+****
 --------
 
-**Windows Server 2003[]()**
+**Windows Server 2003**
 ---------------------------
 
 
 
-### []()
+###
 
 ### Formatting the Disk and Adding an Additional Drive
 
@@ -107,18 +107,18 @@ Contents
 -   This will open the **New Partition Wizard** screen.
      Press **Next** to begin.
 
-![](http://c575672.r72.cf2.rackcdn.com/Win2003NewPartitionWizard.png)[]()
+![](http://c575672.r72.cf2.rackcdn.com/Win2003NewPartitionWizard.png)
 
-**[]()**
+****
 
 -   **Select Partition Type** - Check the radio button next
     to **Primary partition **and click **Next. **
 
-![](http://c575672.r72.cf2.rackcdn.com/Win2003PrimaryPartition.png)[]()
+![](http://c575672.r72.cf2.rackcdn.com/Win2003PrimaryPartition.png)
 
 
 
-**[]()**
+****
 
 -   **Specify Partition Size** - Next you will be asked to specify the
     partition size.  If you want to add all of your available disk space
@@ -127,29 +127,29 @@ Contents
     disk space for the new partition, you can specify the amount of
     space to use in the **Partition size in MB** field.
 
-![](http://c575672.r72.cf2.rackcdn.com/Win2003SpecifyPartitionSize.png)[]()
+![](http://c575672.r72.cf2.rackcdn.com/Win2003SpecifyPartitionSize.png)
 
 
 
-**[]()**
+****
 
 -   **Assign Drive Letter** - Choose the drive letter for your new
     volume and click **Next**.
 
-![](http://c575672.r72.cf2.rackcdn.com/Win2003AssignDriveLetter.png)[]()
+![](http://c575672.r72.cf2.rackcdn.com/Win2003AssignDriveLetter.png)
 
 
 
-**[]()**
+****
 
 -   **Format Partition** - Format the partition as an NTFS partition.
      Here you can also name the partition, such as "New Volume" in
     this example.  Keep the default settings on this screen, and
     press **Next**.
 
-![](http://c575672.r72.cf2.rackcdn.com/Win2003FormatPartition.png)[]()
+![](http://c575672.r72.cf2.rackcdn.com/Win2003FormatPartition.png)
 
-**[]()**
+****
 
 -   **Complete the New Partition Wizard** - You have now successfully
     created and formatted a new partition as the destination for the
@@ -167,7 +167,7 @@ Contents
 
 
 
-[]()
+
 ----
 
 </div>

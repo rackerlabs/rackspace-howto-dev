@@ -246,7 +246,7 @@ v2](/how-to/detailed-permissions-matrix-for-cloud-big-data-v2)**
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_4.png" width="41" height="39" />
 
 [**Cloud
-Backup**](/how-to/detailed-permissions-matrix-for-cloud-backup)
+Backup**](http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-backup)
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/green%20checkmark_4.png" width="41" height="39" />
 

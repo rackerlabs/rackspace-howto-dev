@@ -23,7 +23,7 @@ how to manage this:
 -   [Managing Safe Lists](#Safelist)
 -   [Managing Black Lists](#Blacklist)
 
-**Manage Domain Spam Settings[]()**
+**Manage Domain Spam Settings**
 -----------------------------------
 
 To manage your domain level spam settings, go to **Domains** section and
@@ -37,7 +37,7 @@ domain you intend to make changes to first.*
 
 
 
-**Managing Individual User Spam Settings[]()**
+**Managing Individual User Spam Settings**
 ----------------------------------------------
 
 To manage **indiviual** user's spam settings, go to **Rackspace Email**
@@ -52,7 +52,7 @@ Select the desired **User** to update Spam Settings
 
 
 
-**Spam Filtering Setting Options[]()
+**Spam Filtering Setting Options
 **
 --------------------------------------
 
@@ -75,7 +75,7 @@ overview of each of the options:
 
 
 
-### **Rackspace Email Handling[]()**
+### **Rackspace Email Handling**
 
 -   Deliver to Spam folder: Spam messages are sent to the user&rsquo;s Spam
     folder.
@@ -114,7 +114,7 @@ Individual Rackspace Email Mailbox.*
 
 
 
-**Managing Safe List[]()**
+**Managing Safe List**
 --------------------------
 
 Safelists allow you to add a sender's email address, domains, or IP
@@ -165,7 +165,7 @@ information*
 
 
 
-**Managing Blacklists[]()**
+**Managing Blacklists**
 ---------------------------
 
 Blacklists allow you block a sender's email address, domain, or IP

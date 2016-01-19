@@ -10,7 +10,7 @@ product: Rackspace Private Cloud Powered by OpenStack
 body_format: tinymce
 ---
 
-[]()Overview
+Overview
 ------------
 
 Rackspace Private Cloud Software installs a collection of Chef cookbooks
@@ -23,7 +23,7 @@ Rackspace Private Cloud Software v 2.0 (Alamo) supports the
 <a href="http://www.openstack.org/software/essex/" class="link">Folsom release of OpenStack</a>
 for these components.
 
-### []()Intended Audience
+### Intended Audience
 
 This guide is intended for users who have used Rackspace Private Cloud
 Software to deploy an OpenStack-powered cloud that has been tested and
@@ -35,7 +35,7 @@ To use the product and this document, you should have prior knowledge of
 OpenStack and cloud computing, basic Linux administration skills, and a
 side of bacon.
 
-### []()Document Change History
+### Document Change History
 
 This version of the Rackspace Private Cloud Cookbook Update Guide
 replaces and obsoletes all previous versions. The most recent changes
@@ -49,13 +49,13 @@ November 15, 2012
 
 -   Rackspace Private Cloud Software v 2.0 release
 
-### []()Additional Resources
+### Additional Resources
 
 -   <a href="/how-to/rackspace-private-cloud" class="link">Rackspace Private Cloud Knowledge Center</a>
 -   <a href="http://docs.openstack.org" class="link">OpenStack Manuals</a>
 -   <a href="http://docs.openstack.org/trunk/openstack-compute/admin/content/configuring-live-migrations.html" class="link">OpenStack Documentation: Configuring Live Migrations</a>
 
-[]()OpenStack Compute Migration Concepts
+OpenStack Compute Migration Concepts
 ----------------------------------------
 
 In virtual machine migration, a VM (also known as a guest) that is
@@ -77,7 +77,7 @@ Both types of migration must be performed by an admin user.
 
 <div class="section" title="Live Migrations">
 
-### []()Live Migrations
+### Live Migrations
 
 For a live migration to be successful, your configuration must meet the
 following prerequisites:
@@ -108,7 +108,7 @@ that were associated with the guest. Finally, the destination node adds
 the relevant network details, unpauses the guest, and updates the
 database to show that the migration is complete.
 
-### []()Block Migrations
+### Block Migrations
 
 Block migrations are useful when you don't have, and don't want the
 management overhead of, shared storage to place your guest images on.
@@ -118,7 +118,7 @@ network from the source node to the destination node.  This does mean
 that the migration takes a little longer, but achieves a similar result
 in that the guest is fully migrated from one node to another.
 
-[]()Rackspace Private Cloud Block Migration
+Rackspace Private Cloud Block Migration
 -------------------------------------------
 
 By default, shared storage is not configured in an Rackspace Private
@@ -128,7 +128,7 @@ migration. In this example, we have a 2-node nova compute cluster, with
 compute hosts called `compute1` and `compute2`. All actions are
 performed with `root` access.
 
-### []()Migration Example
+### Migration Example
 
 First, get a list of the VM guests:
 
@@ -278,7 +278,7 @@ it at the other end of the migration process.
 
 <div class="section" title="Troubleshooting a Migration">
 
-### []()Troubleshooting a Migration
+### Troubleshooting a Migration
 
 Sometimes when attempting a migration, you will encounter an error from
 the nova client, similar to the following :

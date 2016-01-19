@@ -14,11 +14,11 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [Cloud Orchestration API v1.0 Developer Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/)
 
-[Cloud Orchestration FAQs](https://admin.rackspace.com/knowledge_center/product-faq/cloud-orchestration)
+[Cloud Orchestration FAQs](/how-to/cloud-orchestration-faq)
 
-[Cloud Orchestration Terminology](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-orchestration#orchestration)
+[Cloud Orchestration Terminology](/how-to/permissions-matrix-for-cloud-orchestration)
 
-[Permission Matrices for RBAC](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
 
 ## As of May, 2015
 

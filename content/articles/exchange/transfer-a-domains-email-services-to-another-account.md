@@ -24,7 +24,7 @@ transfer does not affect existing mail data or mail delivery.
 
 
 
-[]()Initiate a domain transfer
+Initiate a domain transfer
 ------------------------------
 
 1.  Log in to the Rackspace Email Control Panel.
@@ -46,7 +46,7 @@ transfer does not affect existing mail data or mail delivery.
 
 
 
-[]()Accept a domain transfer
+Accept a domain transfer
 ----------------------------
 
 The administrator of the destination account performs the following step

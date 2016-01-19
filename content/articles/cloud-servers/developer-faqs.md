@@ -10,7 +10,7 @@ product: Cloud Servers
 body_format: full_html
 ---
 
--   []()[What is the developer+&trade; program?](#what_is)
+-   [What is the developer+&trade; program?](#what_is)
 -   [What is the difference between the developer+ program and the
     Startup Program?](#difference)
 -   [How is developer+&trade; identified in the different Service
@@ -24,7 +24,7 @@ body_format: full_html
 
 
 
-### []()What is the developer+&trade; program?
+### What is the developer+&trade; program?
 
 developer+ is an introductory program for developers that enables them
 to experience Fanatical Support&reg; and grow with Rackspace toward adoption
@@ -53,7 +53,7 @@ examine our offerings, documentation, user experience, and more.
 
 
 
-### []()What is the difference between developer+&trade; and the Startup Program?
+### What is the difference between developer+&trade; and the Startup Program?
 
 developer+ offers a way for developers who are comfortable writing and
 deploying their code and require minimal assistance to use the Rackspace
@@ -71,7 +71,7 @@ network of startup and technology business professionals.
 
 
 
-### []()How is developer+ identified in the different Service Levels?
+### How is developer+ identified in the different Service Levels?
 
 Customers in the developer+&trade; program are a part of the Managed
 Infrastructure service level, but have limited access to support Rackers
@@ -98,7 +98,7 @@ The following features are part of developer+:
 [back to top](#top)
 
 
-### []()What if developers want to add another server? Test a website or database?
+### What if developers want to add another server? Test a website or database?
 
 developer+ customers can consume cloud at a "pay for what you consume"
 price for all services in any region at our adjusted infrastructure
@@ -109,7 +109,7 @@ available to our other customers.
 
 ###
 
-### []()Can developers upgrade to another service level?
+### Can developers upgrade to another service level?
 
 At any time, participants in the program may log into the Control Panel
 and upgrade to our Managed Cloud service levels. Customers may not,
@@ -119,7 +119,7 @@ however, switch to developer+.
 
 
 
-### []()How are developer+&trade; customers billed?
+### How are developer+&trade; customers billed?
 
 Customers in developer+ pay only for infrastructure they consume over
 \$50 per month.
@@ -128,7 +128,7 @@ Customers in developer+ pay only for infrastructure they consume over
 
 
 
-### []()Are developer+ customers eligiable for the SLA guarantees covered by Managed Infrastructure?
+### Are developer+ customers eligiable for the SLA guarantees covered by Managed Infrastructure?
 
 Yes, but their credit is reduced by 50 percent as noted in the Terms and
 Conditions.

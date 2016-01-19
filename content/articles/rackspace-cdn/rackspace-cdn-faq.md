@@ -144,7 +144,7 @@ pricing](http://www.rackspace.com/cloud/cdn-content-delivery-network).
 ### <a href="" id="certificate authorities"></a>Is there a list of approved Certificate Authorities (CAs) for Rackspace CDN?
 
 Yes. See [Rackspace CDN secure delivery
-options](https://www.rackspace.com/knowledge_center/article/rackspace-cdn-secure-delivery-options#Secure%20origin).
+options](/how-to/rackspace-cdn-secure-delivery-options#Secure%2520origin).
 
 ^[back\\ to\\ top](#top)^
 

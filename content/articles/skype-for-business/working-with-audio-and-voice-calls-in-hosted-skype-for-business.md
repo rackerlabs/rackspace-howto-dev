@@ -54,7 +54,7 @@ id="cke_bm_432E"> </span>
 
 ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/audio1a.jpg)
 
-[]()<a href="" id="3"></a>Answer an audio call
+<a href="" id="3"></a>Answer an audio call
 ----------------------------------------------
 
 When someone calls you, a notification appears on your screen.

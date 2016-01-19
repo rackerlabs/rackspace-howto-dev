@@ -10,7 +10,7 @@ product: Cloud Monitoring
 body_format: tinymce
 ---
 
-[]()Get quick answers to common questions about the Rackspace Rackspace
+Get quick answers to common questions about the Rackspace Rackspace
 Metrics service.
 
 -   [What can I use Rackspace Metrics for?](#usage)
@@ -25,7 +25,7 @@ Metrics service.
 
 ------------------------------------------------------------------------
 
-### []()What can I use Rackspace Metrics for?
+### What can I use Rackspace Metrics for?
 
 You can use Rackspace Metrics to ingest metrics and to retrieve and
 visualize these metrics. Rackspace Metrics features two APIs: the Query
@@ -40,7 +40,7 @@ Program](http://docs.rackspace.com/cmet/api/v1.0/cmet-gettingstarted/content/Ear
 
 ^[back\\ to\\ top](#top)^
 
-### []()Who can use Rackspace Metrics?
+### Who can use Rackspace Metrics?
 
 All Rackspace customers with a Cloud services account can use the
 Rackspace Metrics Query API. To use the Rackspace Metrics Ingestion API,
@@ -49,13 +49,13 @@ Program](http://docs.rackspace.com/cmet/api/v1.0/cmet-gettingstarted/content/Ear
 
 ^[back\\ to\\ top](#top)^
 
-### []()How much does Rackspace Metrics cost?
+### How much does Rackspace Metrics cost?
 
 Rackspace Metrics is available at no charge.
 
 ^[back\\ to\\ top](#top)^
 
-### []()How do I grant access to Rackspace Metrics?
+### How do I grant access to Rackspace Metrics?
 
 For information about how to add Rackspace Metrics to individual users
 on your Cloud account, see [Rackspace Metrics
@@ -63,7 +63,7 @@ Overview](/how-to/rackspace-metrics-overview).
 
 ^[back\\ to\\ top](#top)^
 
-### []()What features will be available in the future?
+### What features will be available in the future?
 
 We plan to provide the following features in future releases:
 
@@ -73,7 +73,7 @@ We plan to provide the following features in future releases:
 
 ^[back\\ to\\ top](#top)^
 
-### []()Where is Rackspace Metrics available?
+### Where is Rackspace Metrics available?
 
 Rackspace Metrics is available through global end points that can be
 accessed from anywhere. For more information, see the [Service access
@@ -83,7 +83,7 @@ Guide](http://docs.rackspace.com/cmet/api/v1.0/cmet-devguide/content/Overview.ht
 
 ^[back\\ to\\ top](#top)^
 
-### []()What is the Early Access Program?
+### What is the Early Access Program?
 
 The Early Access Program lets customers use and give feedback on our
 products before a final version is released. This program ensures that
@@ -93,7 +93,7 @@ available during Early Access might change.
 
 ^[back\\ to\\ top](#top)^
 
-### []()What are the Terms of Service?
+### What are the Terms of Service?
 
 During the Early Access period, the Rackspace Metrics Terms of Service
 are available at <http://www.rackspace.com/information/legal/testterms>.
@@ -104,7 +104,7 @@ to the standard Cloud Terms of Service.
 
 
 
-### []()How can I get support?
+### How can I get support?
 
 During the Early Access program, support for Rackspace Metrics is
 available via email only during regular business hours. Please contact

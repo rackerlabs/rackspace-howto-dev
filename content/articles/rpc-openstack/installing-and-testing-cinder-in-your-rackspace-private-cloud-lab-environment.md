@@ -25,7 +25,7 @@ Contents
 -   [Conclusion](#conclusion.3F)
 -   [Reference Materials](#reference.3F)
 
-[]()Synopsis
+Synopsis
 ------------
 
 This article provides instructions for setting up the OpenStack Cinder
@@ -40,7 +40,7 @@ This is specifically for sandbox and testing / development environments
 the controller, using a loopback device for cinder-volumes and so on are
 not supported and should not be used in production.
 
-[]()Environment Overview
+Environment Overview
 ------------------------
 
 While this post does not cover RPC installation in detail there are some
@@ -79,7 +79,7 @@ It&rsquo;s not quite time to run this command yet however; let&rsquo;s continue 
 to complete all of the necessary tasks to prepare for the node
 deployment.
 
-[]()Environment Preparation &ndash; Operating System
+Environment Preparation &ndash; Operating System
 ----------------------------------------------
 
 The following configuration tasks in this section are to be completed on
@@ -170,7 +170,7 @@ Some of your considerations may include:
 4.  Ensure Internet connectivity and necessary repository access is
     present
 
-[]()Environment Preparation &ndash; cinder-volumes
+Environment Preparation &ndash; cinder-volumes
 --------------------------------------------
 
 The following configuration tasks are to be completed on controller-1.
@@ -266,7 +266,7 @@ to this:
 This concludes the operating system and storage configuration tasks,
 move on to the chef and environment installation processes.
 
-[]()Environment Creation &ndash; Installing Chef, Cookbooks, and Creating the Environment File
+Environment Creation &ndash; Installing Chef, Cookbooks, and Creating the Environment File
 ----------------------------------------------------------------------------------------
 
 In this section we will cover installing chef and configuring your
@@ -487,7 +487,7 @@ there are issues with syntax or definitions.  Instead your edits are
 lost each time it fails and there is no debug information displayed
 either.*
 
-[]()Environment Deployment
+Environment Deployment
 --------------------------
 
 All the tedious work is over, now we push our roles to our controller /
@@ -499,7 +499,7 @@ compute node with the following command.
 
 </div>
 
-[]()Environment Testing
+Environment Testing
 -----------------------
 
 If everything went according to plan you should be able to login to your
@@ -1201,7 +1201,7 @@ creation with the instance boot as follows.
 
 </div>
 
-[]()Conclusion
+Conclusion
 --------------
 
 In this article we covered the basics of a cinder-enabled environment
@@ -1216,7 +1216,7 @@ using NetApp, EMC or SolidFire cinder drivers, providing Cinder HA to
 your instances and using multiple cinder devices to provide workload
 separation and performance tiering for your instances.
 
-[]()Reference Material
+Reference Material
 ----------------------
 
 You may also find the following references helpful as you explore cinder

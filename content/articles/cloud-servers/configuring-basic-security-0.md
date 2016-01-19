@@ -416,7 +416,7 @@ rules to).
 
 This lists the enabled services in a specified zone.
 
-[]()Restart ssh
+Restart ssh
 ---------------
 
 Now you can restart the SSH service.  **Stay logged in while you restart
@@ -443,7 +443,7 @@ the symptoms to determine what might be wrong.
     characters that were missed in a copy-and-paste operation).
 -   If you've been rebuilding the server, you might need to [remove the
     host key from your known\_hosts
-    file](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-checking-a-server%E2%80%99s-ssh-host-fingerprint-with-the-web-console) before
+    file](/how-to/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console) before
     you can make a connection.
 
 If you're locked out

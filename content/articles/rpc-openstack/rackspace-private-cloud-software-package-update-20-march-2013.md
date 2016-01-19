@@ -13,7 +13,7 @@ body_format: tinymce
 Rackspace has released a package update for Rackspace Private Cloud
 Software.
 
-[]()Update Instructions
+Update Instructions
 -----------------------
 
 If you have an existing environment created with Rackspace Private Cloud
@@ -58,7 +58,7 @@ After the server has been successfully updated, update each agent.
 
         $ service opencenter-agent restart
 
-[]()Package Update Changes
+Package Update Changes
 --------------------------
 
 The following list summarizes key changes included in this package

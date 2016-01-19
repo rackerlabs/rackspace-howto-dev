@@ -4,9 +4,9 @@ title: Cloud Networks FAQ
 type: article
 created_date: '2013-10-02'
 created_by: Sameer Satyam
-last_modified_date: '2015-11-12'
+last_modified_date: '2016-01-19'
 last_modified_by: Kyle Laffoon
-product: Cloud Servers
+product: Cloud Networks
 body_format: tinymce
 ---
 

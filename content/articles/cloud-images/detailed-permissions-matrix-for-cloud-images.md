@@ -4,8 +4,8 @@ title: Detailed Permissions Matrix for Cloud Images
 type: article
 created_date: '2013-10-28'
 created_by: Renee Rendon
-last_modified_date: '2016-01-18'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-19'
+last_modified_by: Kyle Laffoon
 product: Cloud Images
 body_format: markdown_w_tinymce
 ---
@@ -14,7 +14,7 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [API Documentation](https://developer.rackspace.com/docs/)
 
-[Cloud Images Terminology](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-images#images)
+[Cloud Images Terminology](/how-to/detailed-permissions-matrix-for-cloud-images)
 
 ## As of January 20, 2014
 
@@ -67,4 +67,4 @@ An image tag is a string of characters used to identify a specific image.
 
 An open standard format that uses human-readable text to transmit data objects consisting of key:value pairs.
 
-[**&lt; Permissions Matrices for RBAC**](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[**&lt; Permissions Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)

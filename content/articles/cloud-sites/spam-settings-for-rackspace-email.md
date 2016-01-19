@@ -27,7 +27,7 @@ webmail.</span></span>
 
 <span><span>To verify if spam filtering is enabled, please see [Is spam
 filtering enabled on my email
-accounts?](/knowledge_center/index.php/Is_spam_filtering_enabled_on_my_email_accounts%3F "Is spam filtering enabled on my email accounts?")</span></span>
+accounts?](/how-to/manage-spam-filtering-for-your-cloud-sites-email-accounts "Is spam filtering enabled on my email accounts?")</span></span>
 
 <div id="toctitle">
 

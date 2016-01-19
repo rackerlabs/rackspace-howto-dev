@@ -87,7 +87,7 @@ and 1200 (or 4x300) GB data disks can perform about 80k IOPS. Compare
 this with the Standard server class for Cloud Servers, which can process
 approximately only 2k IOPS.
 
-[]()Work-optimized server types
+Work-optimized server types
 -------------------------------
 
 **I/O-optimized **servers are assigned networking resources and use
@@ -124,7 +124,7 @@ or changing the size of your work-optimized server, see [Upgrading
 resources for General Purpose or I/O optimized Cloud
 Servers](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
-[]()Images capture the system disk only
+Images capture the system disk only
 ---------------------------------------
 
 Images of your system capture only your operating system's configuration

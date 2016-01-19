@@ -84,7 +84,7 @@ then select the **Finish** button to begin your Export
 
 *Note: Since this file is only being used for temporary export/import we
 recommend you use **No Encryption** by leaving the password blank for
-speed and compatibility purposes.[]()*
+speed and compatibility purposes.*
 
 *
 

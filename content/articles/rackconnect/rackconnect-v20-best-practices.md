@@ -15,7 +15,7 @@ body_format: tinymce
 This document outlines [recommendations](#recommendations) and
 [cautions](#cautions) based on customer feedback with RackConnect.
 
-### []()Recommendations
+### Recommendations
 
 #### Use RackConnect Network Policies to make changes to network access for your Cloud Servers
 
@@ -76,7 +76,7 @@ Balancer
 
 ------------------------------------------------------------------------
 
-### []()Cautions
+### Cautions
 
 #### Do not change your root/administrator password before your Cloud Server is deployed
 

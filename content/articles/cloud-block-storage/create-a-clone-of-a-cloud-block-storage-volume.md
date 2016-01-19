@@ -49,7 +49,7 @@ therefore detaching prior to cloning is recommended. Click
 for additional information on allowing snapshots (now clones) without
 detaching the volumes.
 
-[]()**Create a Volume Clone**
+**Create a Volume Clone**
 
 It is a good idea to detach your Volume from your Server before you take
 a Volume Clone. This is the safest method to prevent your Server from
@@ -83,11 +83,11 @@ Steps to create a volume clone:
 -   After you click the "Clone Volume" button and are redirected to the
     new volume details page, you can safely reattach your volume.
 
-[]() **Please note:** While considerably faster than creating a volume
+ **Please note:** While considerably faster than creating a volume
 from a snapshot, the larger your volume, the longer it may take to
 create a clone.
 
-[]() **Delete a Volume Clone**
+ **Delete a Volume Clone**
 
 1.  Once created, a cloned volume can be treated like any other
     existing volume.
@@ -101,7 +101,7 @@ or
 -   Selecting "Delete Volume&rdquo; from the Action cog next to the Volume
     name in the Block Storage Volumes screen.
 
-**[]()Volume Cloning Mini-FAQ**
+**Volume Cloning Mini-FAQ**
 
 -   **How is cloning different from snapshotting? **A snapshot cannot be
     directly used as a volume. You need to create a volume from the
@@ -151,7 +151,7 @@ or
     Volume snapshots and cloning share the same locking mechanism, and
     therefor cannot happen simultaneously on the same volume.
 
-**[]()Volume Cloning Constraints**
+**Volume Cloning Constraints**
 
 -   You cannot create more than one clone per volume at a
     time. Snapshots and cloning use the same locking mechanism, so a

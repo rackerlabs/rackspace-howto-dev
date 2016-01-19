@@ -46,7 +46,7 @@ powered by the
 
 <div>
 
-[]()Rackspace Private Cloud Sandbox
+Rackspace Private Cloud Sandbox
 -----------------------------------
 
 </div>
@@ -86,7 +86,7 @@ Specific changes are listed in the
 
 <div>
 
-[]()Requirements
+Requirements
 ----------------
 
 </div>
@@ -123,7 +123,7 @@ physical machine with these specifications:
 
 <div>
 
-[]()Setup
+Setup
 ---------
 
 </div>
@@ -158,7 +158,7 @@ designed for VirtualBox.
 
 <div>
 
-### []()VMWare
+### VMWare
 
 </div>
 
@@ -176,7 +176,7 @@ download VMWare Player 6 for Windows or Linux from the
 <div class="procedure"
 title="Procedure 2.1. To set up Rackspace Private Cloud Sandbox on VMWare">
 
-[]()**Procedure 2.1. To set up Rackspace Private Cloud Sandbox on
+**Procedure 2.1. To set up Rackspace Private Cloud Sandbox on
 VMWare**
 1.  <a href="http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VMWARE.ova" class="link">Download the OVA file</a>
     and save it to your local device.
@@ -220,7 +220,7 @@ During the import process, you may experience the following messages:
 
 <div>
 
-### []()VirtualBox
+### VirtualBox
 
 </div>
 
@@ -272,7 +272,7 @@ to be adjusted to suit your environment.
 <div class="procedure"
 title="Procedure 2.2. To set up Rackspace Private Cloud Sandbox on VirtualBox 4.3.x">
 
-[]()**Procedure 2.2. To set up Rackspace Private Cloud Sandbox on
+**Procedure 2.2. To set up Rackspace Private Cloud Sandbox on
 VirtualBox 4.3.x**
 1.  <a href="http://b73074de3e3005d3cbe3-e008c7df2e56236b013895bc1d6b995e.r10.cf2.rackcdn.com/RPC-SANDBOX-VBOX.ova" class="link">Download the OVA file</a>
     and save it to your local device.
@@ -351,7 +351,7 @@ VirtualBox 4.3.x**
 
 <div class="procedure" title="Procedure 2.3. To troubleshoot the VM">
 
-[]()**Procedure 2.3. To troubleshoot the VM**
+**Procedure 2.3. To troubleshoot the VM**
 If the VM fails on first boot:
 
 1.  Log in to the virtual machine from a command prompt, and run these
@@ -387,7 +387,7 @@ If the VM fails on first boot:
 
 <div>
 
-[]()Using the private cloud
+Using the private cloud
 ---------------------------
 
 </div>
@@ -407,7 +407,7 @@ the <a href="http://docs.rackspace.com/rpc/api/v4/rackspace-private-cloud-upgrad
 
 <div>
 
-### []()Logging into the cloud
+### Logging into the cloud
 
 </div>
 
@@ -440,7 +440,7 @@ using the command line interface, look in the root user's
 
 <div>
 
-### []()Cloud features
+### Cloud features
 
 </div>
 
@@ -473,7 +473,7 @@ can be used to boot instances.
 
 <div>
 
-### []()Cloud performance
+### Cloud performance
 
 </div>
 

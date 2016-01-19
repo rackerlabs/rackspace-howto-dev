@@ -4,9 +4,9 @@ title: Getting Started with Microsoft Office 365
 type: article
 created_date: '2015-11-19'
 created_by: Zach Corleissen
-last_modified_date: '2016-01-08'
+last_modified_date: '2016-01-19'
 last_modified_by: Kyle Laffoon
-product: Cloud Office
+product: Office 365
 body_format: markdown_w_tinymce
 ---
 

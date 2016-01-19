@@ -51,7 +51,7 @@ Horizontal scaling is the most flexible approach, but it requires that
 your application be able to work in a clustered environment.  With
 horizontal scaling in place you can add and remove servers on demand,
 either manually or with our [Auto Scale
-features](/how-to/auto-scale).
+features](/how-to/rackspace-auto-scale).
 
 To recreate the server you can take an image of your server and build a
 new server with a different size, or migrate data to a new server using

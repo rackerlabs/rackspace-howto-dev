@@ -72,7 +72,7 @@ For more information, see the following sections:
 
 ------------------------------------------------------------------------
 
-### []()**Notes**
+### **Notes**
 
 -   MyRackspace also implements multi-factor authentication, but it is
     not implemented through the Rackspace Cloud Identity 2.0 API. For
@@ -128,7 +128,7 @@ For more information, see the following sections:
 
 ------------------------------------------------------------------------
 
-[]()Configure your account to authenticate by using an SMS device
+Configure your account to authenticate by using an SMS device
 -----------------------------------------------------------------
 
 To configure you account to use an SMS device for multi-factor
@@ -145,7 +145,7 @@ device. The device must be enabled to receive SMS text messages.
 
 3.  In the **Multi-factor authentication** field, click **Add**.
 
-4.  []()On the Register SMS Device form, select the country code for the
+4.  On the Register SMS Device form, select the country code for the
     device, and then type the device phone number. Click **Add
     SMS Device.**
 
@@ -170,7 +170,7 @@ device. The device must be enabled to receive SMS text messages.
     login page is displayed so that you can re-authenticate by using the
     multi-factor authentication process.
 
-[]()Configure your account to authenticate by using an OTP device
+Configure your account to authenticate by using an OTP device
 -----------------------------------------------------------------
 
 To configure your account to use an OTP device for multi-factor
@@ -194,7 +194,7 @@ OTP](https://www.secureauth.com/Support/Downloads/Client-Applications.aspx)
 3.  In the **Multi-factor Authentication Mobile Passcode** field, click
     **Add**.
 
-4.  []()On the Name of your Device form, type a **Device nickname** for
+4.  On the Name of your Device form, type a **Device nickname** for
     the OTP device. Then, click **Add Device.**
 
     ![Add an OTP device to your Rackspace Cloud
@@ -243,7 +243,7 @@ OTP](https://www.secureauth.com/Support/Downloads/Client-Applications.aspx)
 
 ------------------------------------------------------------------------
 
-**[]()Change default multi-factor authentication method**
+**Change default multi-factor authentication method**
 ---------------------------------------------------------
 
 If your account has been configured with both SMS and OTP devices, you
@@ -264,7 +264,7 @@ Account Settings page.
 
 ------------------------------------------------------------------------
 
-**[]()Configure account-wide multi-factor authentication settings from an Administrator account**
+**Configure account-wide multi-factor authentication settings from an Administrator account**
 -------------------------------------------------------------------------------------------------
 
 Account administrators can update Rackspace Cloud account-wide settings
@@ -313,7 +313,7 @@ authentication****
 
 ------------------------------------------------------------------------
 
-**[]()Configure multi-factor authentication during account login**
+**Configure multi-factor authentication during account login**
 ------------------------------------------------------------------
 
 **If your account is not configured for multi-factor authentication when
@@ -329,7 +329,7 @@ device, and authenticate by using the passcode sent to the device.
 
 ------------------------------------------------------------------------
 
-******[]()****Log in to the Rackspace Cloud by using multi-factor authentication**
+**********Log in to the Rackspace Cloud by using multi-factor authentication**
 ----------------------------------------------------------------------------------
 
 If you add multi-factor authentication capabilities to your account,
@@ -379,7 +379,7 @@ To log in to the Rackspace Cloud with multi-factor authentication
 
 ------------------------------------------------------------------------
 
-**[]()Manage multi-factor authentication**
+**Manage multi-factor authentication**
 ------------------------------------------
 
 <span>Rackspace Cloud users can view and manage the multi-factor
@@ -461,7 +461,7 @@ your account.
 
 ------------------------------------------------------------------------
 
-******[]()Troubleshooting******
+******Troubleshooting******
 -------------------------------
 
 **Use the following information to resolve common issues that can occur

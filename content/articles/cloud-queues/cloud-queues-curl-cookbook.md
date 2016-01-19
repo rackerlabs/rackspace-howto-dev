@@ -55,7 +55,7 @@ samples.
 
 ### Queue cURL Commands
 
-#### **[]()Get Authentication Token**
+#### **Get Authentication Token**
 
 You will need to get an authentication token in order to use with the
 following calls.
@@ -153,7 +153,7 @@ So far we have one queue, let's list our queues.
 
 #### **Post a Message**
 
-**[]()Note**: Smaller payloads will keep your bandwidth low. If your
+**Note**: Smaller payloads will keep your bandwidth low. If your
 json data will be large in your submitted messages (such as PDF files or
 video conversion requests) be sure to store the large files in another
 locations (like Cloud Files) and just refer to a link to the location in
@@ -282,7 +282,7 @@ messages claimed as we use pass 2 as limit.
 the given message and claim id. It doesn't necessarily say that message
 is deleted, though.
 
-#### []()Determine Number of Workers Needed
+#### Determine Number of Workers Needed
 
 Determine the number of workers for an application based on how many
 message you expect to see.  If the number of new messages coming in is

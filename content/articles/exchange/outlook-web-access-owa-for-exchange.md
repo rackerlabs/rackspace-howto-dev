@@ -55,7 +55,7 @@ options:</span></span></span>
 -   <span><span><span>Use the light version of Outlook Web App - This
     removes some the features of OWA.</span></span></span>
 
-### <span><span><span><span>[]()Contacts</span></span></span></span>
+### <span><span><span><span>Contacts</span></span></span></span>
 
 <span><span><span>Microsoft Exchange 2010 lets users manage their
 contacts through the OWA interface. Users have the ability to add new
@@ -63,7 +63,7 @@ contacts, import/export old contacts using a .csv file, set categories
 and sort through contacts alphabetically, all while syncing to mobile
 device and email clients.</span></span></span>
 
-### <span><span><span><span>[]()Calender</span></span></span></span>
+### <span><span><span><span>Calender</span></span></span></span>
 
 <span><span><span>Microsoft Exchange 2010 allows users to manage their
 appointments and meetings through the OWA interface. Users have the
@@ -82,7 +82,7 @@ lists.</span></span></span></span>
 
 </div>
 
-### <span><span><span><span>[]()Public Folders</span></span></span></span>
+### <span><span><span><span>Public Folders</span></span></span></span>
 
 <span><span><span>Microsoft Exchange 2010 allows users to update their
 domain's Public Folders through the OWA interface while syncing with

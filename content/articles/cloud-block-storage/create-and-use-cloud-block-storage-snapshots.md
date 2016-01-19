@@ -40,7 +40,7 @@ Volumes](/how-to/allowing-snapshots-without-detaching-the-volumes) for
 additional information on allowing snapshots without detaching the
 volumes.
 
-### []()Create a Snapshot
+### Create a Snapshot
 
 It is a good idea to detach your volume from your server before you take
 a snapshot. This is the safest method to prevent your server from
@@ -106,7 +106,7 @@ From the Storage Snapshots screen:
     **Note**: If a snapshot of a volume exists, you cannot delete the
     volume until you delete the snapshot.
 
-### []()Create Volume from Snapshot
+### Create Volume from Snapshot
 
 The volume you create from a snapshot must be the same size and in the
 same region as the original volume. However, you may choose a different
@@ -128,7 +128,7 @@ type.
 
 The larger your volume, the longer it may take to create.
 
-### []()Delete Snapshot
+### Delete Snapshot
 
 1.  From the "Block Storage Snapshots" screen, click the Action button
     (the cog) next to the snapshot.

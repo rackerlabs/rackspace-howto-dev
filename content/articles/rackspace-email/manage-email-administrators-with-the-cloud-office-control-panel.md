@@ -116,7 +116,7 @@ log in.
 
 
 
-[]()Delete an administrator
+Delete an administrator
 ---------------------------
 
 Deleting an administrator completely removes the admin user from the
@@ -137,7 +137,7 @@ panel](https://cp.rackspace.com/), and perform the following steps:
 5.  Click **Delete**.
 6.  In the confirmation box, click **OK**.
 
-[]()Disable Administrator
+Disable Administrator
 -------------------------
 
 Disabling administrators removes their ability to log in to the control

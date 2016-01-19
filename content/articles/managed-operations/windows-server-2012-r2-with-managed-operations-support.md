@@ -34,7 +34,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 
 [Dedicated: Windows Server 2003 R2](#F)
 
-### []()
+###
 
 ###
 
@@ -54,7 +54,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 | Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Supported           | Unsupported           |
 | Dynamic Acces Control                                         | Supported           | Unsupported[ ]()      |
 
-### []()
+###
 
 ###
 
@@ -74,7 +74,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 | Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Partially Supported | Unsupported           |
 | Dynamic Acces Control                                         | Unsupported         | Unsupported[ ]()      |
 
-### []()
+###
 
 ###
 
@@ -94,7 +94,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 | Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Unsupported         | Unsupported           |
 | Dynamic Acces Control                                         | Unsupported         | Unsupported[ ]()      |
 
-### []()
+###
 
 ###
 
@@ -114,7 +114,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 | Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Supported           | Unsupported           |
 | Dynamic Acces Control                                         | Supported           | Pending               |
 
-### []()
+###
 
 ###
 
@@ -134,7 +134,7 @@ Top 10 Features of Windows Server 2012 compared to 2008 and 2003
 | Simplified, Feature-Rich Virtual Desktop Infrastructure (VDI) | Partially Supported | Unsupported           |
 | Dynamic Acces Control                                         | Unsupported         | Unsupported           |
 
-### []()
+###
 
 ###
 

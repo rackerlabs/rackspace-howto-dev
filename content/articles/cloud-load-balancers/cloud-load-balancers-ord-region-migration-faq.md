@@ -13,7 +13,7 @@ body_format: full_html
 This article provides answers to frequently asked questions about the
 Cloud Load Balancers migration in the ORD region.
 
-[]()
+
 
 ### Contents
 
@@ -25,7 +25,7 @@ Cloud Load Balancers migration in the ORD region.
 -   [Do I need to make any update to my configurations?](#firewall)
 -   [Can I self-migrate my load balancer?](#self)
 
-[]()
+
 
 ### Why is there a migration?
 
@@ -37,7 +37,7 @@ following ways:
 -   Enhancements to mitigate resource oversubscription
 -   Architectural improvements that allow for better fault tolerance
 
-[back to top](#top) []()
+[back to top](#top)
 
 ### How will the migration work?
 
@@ -51,7 +51,7 @@ perform the following tasks:
 After those steps are we will set your load balancer status back to
 `ACTIVE`.
 
-[back to top](#top) []()
+[back to top](#top)
 
 ### What is the expected impact to my load balancer?
 
@@ -62,7 +62,7 @@ session persistence, if enabled, is reset until the migration is
 completed. You might also see up to 1 minute of degradation (for
 example, sporadic timeouts or some dropped connections).
 
-[back to top](#top) []()
+[back to top](#top)
 
 ### What options are available to avoid disruption due to the migration?
 
@@ -74,7 +74,7 @@ The following options are available:
 -   Move the load balancer and applicable nodes to a different region.
 -   Temporarily leverage DNS load balancing to your cloud servers.
 
-[back to top](#top) []()
+[back to top](#top)
 
 ### Do I need to make any update to my configurations?
 

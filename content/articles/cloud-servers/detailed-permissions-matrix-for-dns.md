@@ -14,9 +14,9 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [API Documentation](http://docs.rackspace.com/)
 
-[Related Knowledge Center Articles](https://admin.rackspace.com/knowledge_center/cloud-hosting)
+[Related Knowledge Center Articles](/how-to/)
 
-[Cloud DNS Terminology](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-dns#Cloud%20DNS%20Terminology)
+[Cloud DNS Terminology](/how-to/detailed-permissions-matrix-for-dns)
 
 ## As of July 16, 2014
 
@@ -82,4 +82,4 @@ Subdomains are domains within a parent domain, and subdomains cannot be register
 
 
 
-[**&lt; Permission Matrices for RBAC**](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[**&lt; Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)

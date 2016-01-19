@@ -69,7 +69,7 @@ warns you of possibly suspicious activity.
 
 To ensure the security of your server, you can [use the web console in
 the Cloud Control Panel to verify your server's new
-key](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-checking-a-server%E2%80%99s-ssh-host-fingerprint-with-the-web-console "Checking a server's ssh host key").
+key](/how-to/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console "Checking a server's ssh host key").
 If you're confident that you aren't being spoofed, you can skip that
 step and delete the record of the old SSH host key as follows:
 

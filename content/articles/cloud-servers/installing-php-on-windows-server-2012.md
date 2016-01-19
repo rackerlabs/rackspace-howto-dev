@@ -31,7 +31,7 @@ Contents
 -   [<span>Testing PHP</span>](#testphp)
 -   [<span>Configuring PHP</span>](#extendphp)
 
-[]()Installing PHP with Web PI
+Installing PHP with Web PI
 ------------------------------
 
 1\. Open the Web PI application from the following location on your
@@ -63,7 +63,7 @@ location:
 
     C:\Program Files (x86)\PHP\%version
 
-[]()[]()Testing PHP
+Testing PHP
 -------------------
 
 Once you have successfully installed PHP you can test its functionality

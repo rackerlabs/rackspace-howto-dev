@@ -24,7 +24,7 @@ servers with local system disks only. Resource allocation for servers
 that boot from Cloud Block Storage volumes can be changed by using the
 boot volume to create a new server.
 
-[]()Increasing Available Storage
+Increasing Available Storage
 --------------------------------
 
 You can add to the available data storage space of your server by adding
@@ -34,7 +34,7 @@ more information about Cloud Block Storage, see [Create and Attach a
 Cloud Block Storage
 Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 
-[]()Creating a new server with more resources
+Creating a new server with more resources
 ---------------------------------------------
 
 You can migrate your data to a new server with a larger allocation

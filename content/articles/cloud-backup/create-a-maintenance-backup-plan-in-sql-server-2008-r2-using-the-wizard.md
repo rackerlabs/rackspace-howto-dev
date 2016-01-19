@@ -27,7 +27,7 @@ This process has the following steps:
 -   [Test your setup](#testsetup)
 -   [Troubleshoot errors by viewing the job history](#errors)
 
-[]()Check SQL Server Agent service
+Check SQL Server Agent service
 ----------------------------------
 
 Verify that the SQL Server Agent service is running and set to
@@ -47,7 +47,7 @@ automatic. The maintenance plan depends on this service to run.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/CheckSQLServerAgent3.png" width="439" height="188" />
 
-[]()[]()Create the maintenance plan
+Create the maintenance plan
 -----------------------------------
 
 1.  Launch the SQL Management Studio and log in.
@@ -71,7 +71,7 @@ automatic. The maintenance plan depends on this service to run.
 6.  On the Select Maintenance Task Order page, leave the order as shown,
     and then click **Next**.
 
-[]()
+
 ----
 
 Define full backup settings
@@ -111,7 +111,7 @@ according to the following instructions.
 12. On the Define Back Up Database (Full) Task page of the Maintenance
     Plan Wizard, click **Next**.
 
-[]()Define differential Backup Settings
+Define differential Backup Settings
 ---------------------------------------
 
 On the Define Back Up Database (Differential) Task page, set up the
@@ -139,7 +139,7 @@ settings are similar to the settings for the full backup.
 12. On the Define Back Up Database (Differential) Task page of the
     Maintenance Plan Wizard, click **Next**.
 
-[]()Define transaction log backup settings
+Define transaction log backup settings
 ------------------------------------------
 
 On the Define Back Up Database (Transaction Log) Task page, set up the
@@ -187,7 +187,7 @@ transaction log backup according to the following instructions.
 
 
 
-[]()Set up the transaction Log Cleanup Task
+Set up the transaction Log Cleanup Task
 -------------------------------------------
 
 This section demonstrates how to set up a maintenance cleanup task. This
@@ -243,7 +243,7 @@ transaction log backups between the full and differential backups.
     You have finished setting up your maintenance backup plan. You can
     adjust your backup plan to your needs, but you should first test it.
 
-[]()Test your setup
+Test your setup
 -------------------
 
 After you are done setting up your maintenance plan, verify that it
@@ -261,7 +261,7 @@ force the job to run by performing the following steps.
 If all of your steps run without error, your maintenance plan works and
 you are finished.
 
-[]()Troubleshoot errors by viewing the job history
+Troubleshoot errors by viewing the job history
 --------------------------------------------------
 
 

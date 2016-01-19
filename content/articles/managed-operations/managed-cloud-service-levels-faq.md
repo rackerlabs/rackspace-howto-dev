@@ -13,7 +13,7 @@ body_format: tinymce
 Get quick answers to common questions about Rackspace Managed Cloud
 service levels.
 
--   []()[What are the Rackspace service levels?](#service_levels)
+-   [What are the Rackspace service levels?](#service_levels)
 -   [What is the DevOps Automation Service?](#devops)
 -   [Can new public-cloud customers choose other service levels besides
     Managed Cloud?](#choose)
@@ -28,7 +28,7 @@ service levels.
 
 
 
-### []()What are the Rackspace service levels?
+### What are the Rackspace service levels?
 
 The Rackspace public cloud has two service levels in public cloud:
 Managed Infrastructure and Managed Operations.
@@ -43,7 +43,7 @@ Managed Infrastructure and Managed Operations.
 
 
 
-### []()What is the DevOps Automation service?
+### What is the DevOps Automation service?
 
 The DevOps Automation service provides [managed support for DevOps
 tools](http://www.rackspace.com/devops/automation-service/) that help
@@ -68,7 +68,7 @@ infrastructure in the future. Here are some cases for this service:
 
 
 
-### []()Can new public-cloud customers choose other service levels?
+### Can new public-cloud customers choose other service levels?
 
 No, new customers can choose *only* between Managed Infrastructure or
 Managed Operations. Customers with the previous pricing model can stay
@@ -80,7 +80,7 @@ Infrastructure or Managed Operations service levesl.
 
 
 
-### []()What happens with customers who are on the old Infrastructure service level?
+### What happens with customers who are on the old Infrastructure service level?
 
 Customers who have the Infrastructure Service Level will be
 grandfathered into their current pricing plan and will continue to
@@ -91,7 +91,7 @@ we&rsquo;re announcing.
 
 
 
-### []()Is Rackspace improving the support experience?
+### Is Rackspace improving the support experience?
 
 Yes, we are always looking at ways to improve our support. We expect
 that our pricing changes will cause some new customers who don&rsquo;t value
@@ -103,7 +103,7 @@ to pay for it.
 
 
 
-### []()What do I get with *Fanatical Support&reg;*?
+### What do I get with *Fanatical Support&reg;*?
 
 There are five foundational components to Fanatical Support:
 
@@ -125,7 +125,7 @@ There are five foundational components to Fanatical Support:
 
 
 
-### []()Do Managed Operations customers get additional services?
+### Do Managed Operations customers get additional services?
 
 Yes. Customers at the Managed Operations service level can take
 advantage of the following additional services:
@@ -140,7 +140,7 @@ advantage of the following additional services:
 
 
 
-### []()What support guarantees do customers receive with Managed Cloud?
+### What support guarantees do customers receive with Managed Cloud?
 
 **Support SLA**: A service level agreement (SLA) that covers support
 circumstances within our control.

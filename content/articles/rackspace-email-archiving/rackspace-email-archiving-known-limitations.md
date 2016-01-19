@@ -26,8 +26,8 @@ outside of your domain, messages are not archived at all.
 
 If you have an alias set up to forward email to an address outside of
 your domain, that email is not archived. When you send as an alias,
-Rackspace only archives[]()the sent message if you are sending from a
-domain with archiving enabled or one of its[]()accepted domains or
+Rackspace only archivesthe sent message if you are sending from a
+domain with archiving enabled or one of itsaccepted domains or
 domain aliases. If a recipient is archived, the inbound message is
 always archived for that recipient..
 

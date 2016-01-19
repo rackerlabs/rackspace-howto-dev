@@ -42,7 +42,7 @@ From the **Backup Actions** menu, you can perform the following actions:
 -   [Disable Backup](#disablebackup)
 -   [Delete Backup](#deletebackup)
 
-[]()
+
 
 [Perform Backup]()
 ------------------
@@ -54,9 +54,9 @@ If you are looking at the **Configuration Details** page, the backup
 progress bar is displayed until the backup is completed.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-15%20at%204.29.20%20PM.png" width="666" height="101" />
-[]()
 
-[]()
+
+
 
 [Restore Backup]()
 ------------------
@@ -112,7 +112,7 @@ The **Activity** page is displayed when the restore is complete.
 
            <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-15%20at%205.22.45%20PM.png" width="608" height="140" />
 
-[]()
+
 
 [Configure Backup]()
 --------------------
@@ -171,7 +171,7 @@ Backup to deduplication those files as well.
 
            <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-16%20at%201.46.18%20PM.png" width="533" height="315" />
 
-[]()
+
 
 [Configure Files]()
 -------------------
@@ -196,7 +196,7 @@ settings.
      4. Confirm the settings on the next page and click **Save** to save
 your file configuration.
 
-[]()
+
 
 [Disable Backup]()
 ------------------
@@ -215,7 +215,7 @@ To re-enable your backup, from the **Backup Actions** menu, select
 **Enable Backup**. Your backup returns to **Active** status with all its
 previous settings.
 
-[]()
+
 
 [Delete Backup]()
 -----------------

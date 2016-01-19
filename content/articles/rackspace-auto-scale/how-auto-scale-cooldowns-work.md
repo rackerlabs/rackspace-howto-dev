@@ -20,7 +20,7 @@ has the following types of cooldowns:
 because those policies are triggered by events that could occur before a
 required minimum cooldown period ends. However, a schedule-based policy
 will not override a cooldown and will not run during a cooldown
-period.[]()
+period.
 
 ### Using a group cooldown
 
@@ -51,7 +51,7 @@ minimum cooldown period in order to fully deploy. You should set the
 group minimum cooldown to the length of time that it takes for one
 server to fully deploy.
 
-[]()
+
 
 ### Using a policy cooldown
 

@@ -28,7 +28,7 @@ environment:
 
 -   [Add folders to your public dolders and assign permissions](#d)
 
-[]()Enable public folders from within the control panel
+Enable public folders from within the control panel
 -------------------------------------------------------
 
 1.  Log in to your Cloud Office Control Panel and select **Microsoft
@@ -43,7 +43,7 @@ environment:
 minutes to complete. You must close and reopen Outlook to see your new
 public folder.
 
-[]()Access your public folders within your email client
+Access your public folders within your email client
 -------------------------------------------------------
 
 You can access public folders from email clients on both Windows and
@@ -75,7 +75,7 @@ Outlook and Entourage.
 2.  From the **Tools** menu, select **Public Folders** and within the
     Folder Browser select the root folder and your domain.
 
-[]()Add folders to your public folders and assign permissions
+Add folders to your public folders and assign permissions
 -------------------------------------------------------------
 
 **Create a public folder**:

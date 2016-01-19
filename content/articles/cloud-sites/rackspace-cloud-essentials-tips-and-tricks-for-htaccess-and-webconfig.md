@@ -37,7 +37,7 @@ reading below.
 -   [.htaccess](#htaccess)
 -   [web.config](#web_config)
 
-[]()
+
 
 **What is .htaccess and what is it used for?**
 
@@ -72,7 +72,7 @@ file is used for security.
 -   [Deny certain IP addresses access to web
     site](/how-to/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address "How do I deny certain IP addresses from accessing my site?")
 
-[]()
+
 
 **What is web.config and what is it used for?**
 
@@ -116,7 +116,7 @@ file:
 6.  [Why are my HttpHandlers not working for my ASP/.NET site on Cloud
     Sites](/how-to/httphandlers-not-working-in-integrated-mode-for-aspnet-sites-on-cloud-sites)
 7.  [How do I rectify an invalid view state error with an ASP/.NET
-    application](/how-to/How_do_I_rectify_an_invalid_view_state_error_with_an_ASP.NET_application%20(Caused%20by%20%3Cclass%20'socket.error'%3E:%20%5BErrno%20101%5D%20Network%20is%20unreachable))
+    application](/how-to/how-do-i-rectify-an-invalid-view-state-error-with-an-aspnet-application)
 8.  [ASP/.NET Integrated
     Mode](/how-to/aspnet-integrated-mode-on-cloud-sites)
 9.  [Overview of Cloud Sites modified Medium

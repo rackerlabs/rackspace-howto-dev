@@ -26,7 +26,7 @@ usable like a drive on your server.
 -   [Prepare Your Volume for Use with a Windows
     Server](#prepare_windows)
 
-[]()Prepare Your Volume for Use with a Linux Server
+Prepare Your Volume for Use with a Linux Server
 ---------------------------------------------------
 
 ### Step 1. Use SSH to connect to your server.
@@ -334,7 +334,7 @@ the volume to the static file system:
 
 Now the volume persists on the server after server restarts.
 
-[]()Prepare Your Volume for Use with a Windows Server
+Prepare Your Volume for Use with a Windows Server
 -----------------------------------------------------
 
 **Note**: In the examples in the procedure, a 100 GB volume is added to

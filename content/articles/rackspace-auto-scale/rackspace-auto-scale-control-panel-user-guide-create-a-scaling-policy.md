@@ -26,7 +26,7 @@ There are two steps to create a scaling policy:
 -   [Create a scaling policy](#createpolicy)
 -   [Test  your configuration](#testconfig)
 
-#### []()Create a scaling policy
+#### Create a scaling policy
 
 1.  On the Create Scaling Group page or on the details page of an
     existing group, click  **Create Policy**.
@@ -70,14 +70,14 @@ There are two steps to create a scaling policy:
     The dialog box closes and the scaling policy that you created is
     added to the list of scaling policies on the page.
 
-#### []()Test your configuration
+#### Test your configuration
 
 After you create a scaling group and scaling policy, in addition to
 checking the status and animated gifs showing deployment, you can test
 your configuration by changing the minimum number of entities for the
 group and watching the new server or servers being added.
 
-#### []()Next steps
+#### Next steps
 
 After you have created a scaling group and policy, following are some
 next steps that you might take:

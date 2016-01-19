@@ -14,7 +14,7 @@ Get quick answers to common questions about Seamless sign-on (SSO)
 between the MyRackspace Customer Portal and the Rackspace Cloud Control
 Panel.
 
--   []()[What is seamless sign-on (SSO)?](#whatis)
+-   [What is seamless sign-on (SSO)?](#whatis)
 -   [How do I use SSO?](#howdoi)
 -   [How do I disable SSO?](#disable)
 -   [What permissions do I have when using SSO?](#permissions)

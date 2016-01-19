@@ -25,7 +25,7 @@ could potentially serve your business or personal project(s).
 
 
 
-### []()Basic Cloud Architecture
+### Basic Cloud Architecture
 
 This is a basic cloud architecture &ndash; a starting point to build on for
 future applications. Every journey starts with a single step. Typically,
@@ -67,7 +67,7 @@ platform.
 
 
 
-### []()Tiered Cloud Configuration
+### Tiered Cloud Configuration
 
 The tiered architecture is the next step in configuring an application
 for the Open Cloud. This configuration allows you to scale each tier
@@ -98,7 +98,7 @@ CDN for global content delivery.
 
 
 
-### []()Web Application Configuration
+### Web Application Configuration
 
 This is a typical web application configuration in the Open Cloud. In
 this architecture you can see the web servers utilizing Cloud Block
@@ -133,7 +133,7 @@ platform.
 
 
 
-### []()Content Management System Architecture
+### Content Management System Architecture
 
 This architecture is how Rackspace Fanatical Support technicians would
 architect a content management system such as Drupal. Typically, we try
@@ -171,7 +171,7 @@ global content delivery.
 
 
 
-### []()Wordpress Cloud Architecture
+### Wordpress Cloud Architecture
 
 Below is an example of the way our Managed Cloud Servers team could
 potentially configure the Open Cloud for WordPress.
@@ -208,7 +208,7 @@ data.
 
 
 
-### []()Reverse Proxy Cloud Architecture
+### Reverse Proxy Cloud Architecture
 
 This architecture uses Cloud Servers acting as reverse proxies for
 specialized workloads. This could be used for caching, SSL termination,
@@ -242,7 +242,7 @@ servers.
 
 
 
-### []()Basic RackConnect Configuration
+### Basic RackConnect Configuration
 
 This architecture goes hand in hand with the CMS and Web Application
 architectures, but uses dedicated hardware for part of the configuration
@@ -278,7 +278,7 @@ global content delivery.
 
 
 
-### []()Hybrid Cloud Configuration
+### Hybrid Cloud Configuration
 
 This is a high level overview of the possibilities of mixing private
 clouds and public cloud. This configuration is for customers that want
@@ -315,7 +315,7 @@ Cloud to the Rackspace Public Cloud.
 
 
 
-### []()E-Commerce Use Case
+### E-Commerce Use Case
 
 This use case can be coupled with the Web Application or RackConnect
 Architectures for E-Commerce. This also shows the power of our Cloud

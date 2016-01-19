@@ -74,7 +74,7 @@ website, or a service.
 A resource configuration for a server. Each flavor is a unique
 combination of disk, memory, vCPUs, and network bandwidth.
 
-### []()Group cooldown
+### Group cooldown
 
 The length of time that must pass before a scaling group can be scaled
 up or down again. The purpose is to prevent events from triggering a
@@ -87,7 +87,7 @@ A configurable feature of each load balancer. A health monitor is used
 to determine whether a back-end node is usable for processing a request.
 The load balancing service currently supports active health monitoring.
 
-### []()Image
+### Image
 
 A collection of files for a specific operating system (OS) that you use
 to create or rebuild a server. Rackspace provides prebuilt images. You
@@ -119,7 +119,7 @@ A back-end device that provides a service on a specified IP and port.
 An informational message that is sent to one or more addresses when an
 alarm is triggered.
 
-### []()Policy cooldown
+### Policy cooldown
 
 The length of time that must pass before a policy can be executed again.
 The purpose is to allow for a fast scale up and a slow scale downof

@@ -21,7 +21,7 @@ contact from your account.
 [Edit a company contact](#edit)
 [Delete a company contact](delete)
 
-**[]()Add a company contact**
+**Add a company contact**
 -----------------------------
 
 1.  Log in to the [Cloud Office control
@@ -54,7 +54,7 @@ contact from your account.
 
 
 
-**[]()Edit a company contact**
+**Edit a company contact**
 
 --------------------------------
 
@@ -72,7 +72,7 @@ contact from your account.
 
 
 
-**[]()Delete a company contact**
+**Delete a company contact**
 
 ----------------------------------
 

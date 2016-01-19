@@ -14,9 +14,9 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [API Documentation](http://developer.rackspace.com/docs/)
 
-[Related Knowledge Center Articles](https://admin.rackspace.com/knowledge_center/cloud-hosting)
+[Related Knowledge Center Articles](/how-to/)
 
-[Cloud Queues Terminology](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-queues#queues)
+[Cloud Queues Terminology](/how-to/permissions-matrix-for-cloud-queues)
 
 ## As of October 4, 2013
 
@@ -55,4 +55,4 @@ A message is a task, a notification, or any meaningful data that gets posted to 
 
 A queue holds messages. Ideally, a queue is created per work type. For example, if you want to compress files, you would create a queue dedicated to this job. Any application that reads from this queue would only compress files.
 
-[**&lt; Permission Matrices for RBAC**](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[**&lt; Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)

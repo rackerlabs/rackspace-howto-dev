@@ -39,7 +39,7 @@ automatically appears in the **Auto Scale** tab.
 -   [Server flavor](#Serverflavor)
 -   [Server networks](#Servernetworks)
 
-##### []()Server image
+##### Server image
 
 A *server image* is a copy of a server's disk. It contains the operating
 system and all of the installed data and software on the server at the
@@ -72,7 +72,7 @@ generated. Server images can be created so that they update themselves
 at startup with the newest version of software. Or you can create a new
 image and edit the scaling group to incorporate new software versions.
 
-##### []()Server flavor
+##### Server flavor
 
 The *server flavor* is the amount of CPU, RAM, system disk, networks
 (the aggregate outbound bandwidth across all attached networks), and
@@ -80,19 +80,19 @@ disk I/O that you assign when you configure a server. For example, the
 **512MB Standard Instance** server flavor corresponds to 1 vCPU, 512 MB
 RAM, 20 GB system disk, 80 Mb/s network, and Good disk I/O.
 
-##### []()Server networks
+##### Server networks
 
 The *server networks* that you choose are all of the networks on which
 your service operates.
 
-#### []()Scaling groups
+#### Scaling groups
 
 A *scaling group* is a set of identical servers and, optionally, a load
 balancer, defined by the launch configuration that you set. The group
 can scale up and down in response to load, as defined by the scaling
 policy that you configure and bound by your scaling group configuration.
 
-#### []()Cooldowns
+#### Cooldowns
 
 *Cooldowns* enforce a period of time between possible actions. Auto
 Scale has the following types of cooldowns:
@@ -116,7 +116,7 @@ The following graph illustrates how cooldowns affect policy execution.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/image001_4.png" width="599" height="449" />
 
-#### []()Scaling policies
+#### Scaling policies
 
 -   -   [Scale Up by Percentage Policy](#Scaleupbypercentage)
     -   [Scale by Schedule Policy](#Scaleupbyschedule)
@@ -159,7 +159,7 @@ invoked and changes the total number of servers.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/image003_3.png" width="600" height="450" />
 
-##### []()Scale by schedule policy
+##### Scale by schedule policy
 
 The following diagram illustrates how a scheduled scale-up policy can be
 configured to respond to anticipated increases in traffic.
@@ -182,7 +182,7 @@ the oldest servers in the scaling group.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/image009_1.png" width="598" height="449" />
 
-#### []()Load balancers
+#### Load balancers
 
 A properly configured *load balancer* automatically distributes traffic
 to the least-loaded servers. The load balancer configuration in your

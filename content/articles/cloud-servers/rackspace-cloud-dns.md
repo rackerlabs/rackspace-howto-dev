@@ -33,7 +33,7 @@ automate and simplify your domain management.
 -   [**Rackspace Cloud DNS - Additional
     Resources**](/how-to/rackspace-cloud-dns-additional-resources)
 -   [**Rackspace Cloud DNS - Frequently Asked
-    Questions**](/how-to/rackspace-cloud-dns-faq)
+    Questions**](/how-to/cloud-dns-faq)
 
 
 

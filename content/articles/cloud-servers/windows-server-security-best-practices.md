@@ -42,7 +42,7 @@ Servers running Windows.
 -   [Code](#code)
 -   [Conclusion](#conclusion)
 
-[]()Use local firewall rules
+Use local firewall rules
 ----------------------------
 
 For those servers that will be interacting with the public Internet with
@@ -131,7 +131,7 @@ server:
 </tbody>
 </table>
 
-[]()
+
 
 Be careful what you share
 -------------------------
@@ -154,7 +154,7 @@ Additionally, be careful of the software that you allow your users to
 download and install on your server. Every software package installed
 increases the exposure of your server to attack.
 
-[]()Password policy
+Password policy
 -------------------
 
 Whether you have provisioned a cloud server with or without a hardware
@@ -185,7 +185,7 @@ that they are logging off the server to free up any used resources
 instead of simply closing their RDC windows, which leaves the session
 open on the server.
 
-[]()Active Directory
+Active Directory
 --------------------
 
 We typically discourage running Active Directory on a cloud server
@@ -209,7 +209,7 @@ you run two Domain Controllers in case one fails (imaging is currently
 unavailable for Domain Controllers). We also recommend locking down DNS
 to prevent DNS amplification attacks.
 
-[]()SQL Server instances
+SQL Server instances
 ------------------------
 
 For those servers running Microsoft SQL Server, it is important to
@@ -231,7 +231,7 @@ the data from the live database files into flat files that can be backed
 up off the server as well as a cleanup task so the backups do not fill
 your hard drive.
 
-[]()Windows updates
+Windows updates
 -------------------
 
 Don't disable Windows updates, and be mindful of the state of your
@@ -242,7 +242,7 @@ must decide how best to implement a patching strategy that will keep
 their server up to date. By default, Rackspace Cloud Servers are set up
 to check for updates between 2 a.m. and 4 a.m. every day.
 
-[]()Server backups
+Server backups
 ------------------
 
 You should have some type of disaster recovery plan in place. We offer
@@ -270,7 +270,7 @@ instance from a Cloud Image is always a good idea to ensure that the
 image is good, and restoring a file from Cloud Backups helps to verify
 that the data being backed up can be restored.
 
-[]()Code
+Code
 --------
 
 The last attack surface exposed to the Internet is the code. You and
@@ -286,7 +286,7 @@ for improving the ASP .Net security can be found at the following sites:
 -   <http://www.iis.net/configreference/system.webserver/security/requestfiltering>
 -   <http://blogs.iis.net/wadeh/archive/2008/12/18/filtering-for-sql-injection-on-iis-7-and-later.aspx>
 
-[]()Conclusion
+Conclusion
 --------------
 
 Depending on the use case, each customer might have other more specific

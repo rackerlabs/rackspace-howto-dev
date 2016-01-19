@@ -25,7 +25,7 @@ account. Let's take at look at the procedure below:</span></span></span>
 
 <div>
 
-<span><span><span><span>[]()</span></span></span></span>
+<span><span><span><span></span></span></span></span>
 
 </div>
 
@@ -189,7 +189,7 @@ File.</span></span></span>*
 
 <div>
 
-<span><span><span><span>[]()</span></span></span></span>
+<span><span><span><span></span></span></span></span>
 
 </div>
 

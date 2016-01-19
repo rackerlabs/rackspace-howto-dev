@@ -30,5 +30,5 @@ For more resources on OSMF, visit
 <http://mediapm.edgesuite.net/akamai-osmf-plugins/samples/>.
 
 For more information on streaming, please visit the [Cloud Files
-FAQ](/how-to/cloud-files-faqs).
+FAQ](/how-to/cloud-files-faq).
 

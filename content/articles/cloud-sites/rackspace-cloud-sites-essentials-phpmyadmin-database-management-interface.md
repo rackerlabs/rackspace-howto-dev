@@ -88,12 +88,12 @@ well.*
 
 <img src="http://c806394.r94.cf2.rackcdn.com/databaseinformation.png" width="600" />
 
--   []()The *server name* is listed as **Hostname** under the **Database
+-   The *server name* is listed as **Hostname** under the **Database
     Information** section
 
 <img src="http://c806394.r94.cf2.rackcdn.com/hostname.png" width="600" />
 
--   []()The *user names* are listed under the **Database
+-   The *user names* are listed under the **Database
     Users** section. By default, there is only one user and this would
     be the user name you would use to log in to phpMyAdmin.
 

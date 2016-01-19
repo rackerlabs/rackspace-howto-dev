@@ -31,4 +31,4 @@ Endpoint | RBAC-Creator | RBAC-Observer | RBAC-Admin | RBAC-Operator
 ```POST /flavors``` | No | No | No | Yes
 ```DELETE /flavors/\{flavor_id\}``` | No | No | No | Yes
 
-[** &lt; Permission Matrices for RBAC**](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[** &lt; Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)

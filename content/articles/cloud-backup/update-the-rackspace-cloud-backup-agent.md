@@ -36,7 +36,7 @@ Visit the following links to learn how to:
 
 <div>
 
-### []()Update the agent for apt-based Sytems, like Ubuntu, Debian, and Vyatta
+### Update the agent for apt-based Sytems, like Ubuntu, Debian, and Vyatta
 
 </div>
 
@@ -63,7 +63,7 @@ Backup Updater that keeps the agent up to date on the system. ****
 
 <div>
 
-### []()Update the agent for yum-based Systems, like CentOS, Fedora, and Red Hat
+### Update the agent for yum-based Systems, like CentOS, Fedora, and Red Hat
 
 </div>
 
@@ -86,7 +86,7 @@ up to date on the system.
 (Dandified Yum).
 
 
-### []()Update the agent for Arch, Gentoo, and Suse systems
+### Update the agent for Arch, Gentoo, and Suse systems
 
 First, you must SSH into your server and run the below commands
 consecutively on a user with sudo or superuser privileges. You might
@@ -136,7 +136,7 @@ Example init/startup scripts are included in the tarball.
 
 <div>
 
-### []()Update the agent on a Windows systems
+### Update the agent on a Windows systems
 
 The steps shown in this section should be run as Administrator or as a
 user with Administrator privileges. You might wish to review [Rackspace

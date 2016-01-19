@@ -25,7 +25,7 @@ page.](/how-to/rackspace-private-cloud-documentation)
 
 ###  General resources
 
--   [FAQ](/how-to/rackspace-private-cloud-faq)
+-   [FAQ](/how-to/rackspace-private-cloud-openstack-faq)
 -   [Spheres of
     Support](/how-to/rackspace-private-cloud-spheres-of-support)
 -   [Private Cloud Tech

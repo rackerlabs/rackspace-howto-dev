@@ -17,19 +17,19 @@ preferences. Let's get started!
 
 -   [Overview](/how-to/rackspace-cloud-backup-overview)
 -   [Install the Agent for Ubuntu and Debian
-    Systems](/how-to/rackspace-cloud-backup-install-the-agent#installubuntu)
+    Systems](/how-to/rackspace-cloud-backup-install-the-agent-on-linux#apt)
 -   [Install the Agent for Red Hat
-    Systems](/how-to/rackspace-cloud-backup-install-the-agent#installredhat)
+    Systems](/how-to/rackspace-cloud-backup-install-the-agent-on-linux#rpm)
 -   [Install the Agent for Windows
-    Systems](/how-to/rackspace-cloud-backup-install-the-agent#installwindows)
+    Systems](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 -   [Troubleshoot Agent
-    installation](/how-to/rackspace-cloud-backup-install-the-agent#troubleshooting)
+    installation](/how-to/rackspace-cloud-backup-install-the-agent-on-linux#troubleshooting)
 -   [Find your Agent
-    Logs](/how-to/rackspace-cloud-backup-install-the-agent#logs)
+    Logs](/how-to/rackspace-cloud-backup-install-the-agent-on-linux#agents)
 -   [Uninstall the Agent from
-    Linux](/how-to/rackspace-cloud-backup-install-the-agent#uninstalllinux)
+    Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux#uninstalllinux)
 -   [Uninstall the Agent from Windows
-    Systems](/how-to/rackspace-cloud-backup-install-the-agent#uninstallwindows)
+    Systems](/how-to/rackspace-cloud-backup-install-the-agent-on-windows#uninstallwindows)
 
 ###  Creating a Backup
 

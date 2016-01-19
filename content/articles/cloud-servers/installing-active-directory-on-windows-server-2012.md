@@ -25,7 +25,7 @@ Content
 -   [Installing Active Directory](#install)
 -   [Configuring Active Directory](#configure)
 
-[]()Installing Active Directory
+Installing Active Directory
 -------------------------------
 
 <span>1. Open the **Server Manager** from the task bar. </span>
@@ -81,7 +81,7 @@ the </span><span>'Server Manager' landing page.</span>*
 
 
 
-[]()Configuring Active Directory
+Configuring Active Directory
 --------------------------------
 
 Once the AD DS role is installed the server will need to be configured

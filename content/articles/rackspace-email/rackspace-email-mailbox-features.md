@@ -34,7 +34,7 @@ how to get the most of your Rackspace e-mail experience.
 
 
 
-### **[]()Group Lists**
+### **Group Lists**
 
 A group list is a great way to manage users in a select team or group on
 your domain. There is no limit to the number of internal address
@@ -51,7 +51,7 @@ Panel [here](https://cp.rackspace.com/EmailHosting/Mail/GroupLists "here").
 
 
 
-### []()Aliases
+### Aliases
 
 Aliases are a way to create an alternate name for an existing mailbox.
 i.e. John likes to go by Johnny and would like to receive emails to both
@@ -65,7 +65,7 @@ To setup an alias, log into the Admin Control Panel
 
 
 
-### **[]()Webmail**
+### **Webmail**
 
 Webmail is a direct connection to your E-mail without the need of
 additional software. Accessing your E-mail account from webmail is very

@@ -4,10 +4,10 @@ title: Cloud Sites - FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-18'
+last_modified_by: Nate Archer
 product: Cloud Sites
-body_format: full_html
+body_format: tinymce
 ---
 
 <a href="" id="top"></a>
@@ -59,6 +59,20 @@ Service](http://www.rackspace.com/information/legal/cloud/tos) (TOS) and
 [Service Level
 Agreement](http://www.rackspace.com/information/legal/cloud/sla)
 (SLA) on our website.
+
+^[back\\ to\\ top](#top)^
+
+### Where can I view usage information for my Cloud sites account?
+
+Overall usuage for diskspace and bandwidth is availiable in the **Home**
+tab when first logging in.
+
+Individual site usage is available on the **General Settings** tab after
+clicking **Hosting** on the left navigation menu and then click
+on **Cloud Sites** and then on the domain in question.
+
+More detailed information on usage is available in **Reports,**
+which breaks down bandwidth, MySQL, and MSSQL usage.
 
 ^[back\\ to\\ top](#top)^
 
@@ -155,8 +169,8 @@ computer cluster for serving web content. That means that it is not
 really designed for audio processing, video processing, or streaming
 tasks. You can have some audio or video content on Cloud Sites, but the
 service was not designed to be a processing farm for audio conversion,
-video conversion, or a Shoutcast system to use for live audio streaming.
-.
+video conversion, or a Shoutcast system to use for live audio
+streaming.
 
 ^[back\\ to\\ top](#top)^
 
@@ -165,6 +179,143 @@ video conversion, or a Shoutcast system to use for live audio streaming.
 Please refer to our Acceptable Use Policy for details on what content
 can be hosted with us. You can find a copy of our
 [AUP](http://www.rackspace.com/information/legal/aup) on our website.
+
+^[back\\ to\\ top](#top)^
+
+### Who is my domain registrar?
+
+The company who serves as your domain registrar is responsible for
+managing your domain registration records. Your domain registrar is
+often the company who sold you your domain name. Register.com, GoDaddy,
+and TuCows are examples of popular domain registrars. Typically, you'll
+contact your registrar (or log in to their website) in order to renew
+your domain name, change your name servers, or update your contact
+information. If you purchased your domain name through us, we serve as
+your domain registrar. We also serve as your domain registrar if you
+elected to transfer your domain name to us. If don't know where you
+bought your domain name or who serves as your registrar, you can find
+out by doing a WHOIS search.
+
+^[back\\ to\\ top](#top)^
+
+### Why was my request to change registrars rejected?
+
+Your current registrar may reject a registrar change request if:
+
+-   the request was made within 60 days of the initial registration.
+-   there is a legal dispute over the domain name.
+-   there is a pending bankruptcy of the domain name holder.
+-   there is a dispute over the identity of the domain name holder.
+-   the domain name is "on hold" or "locked."
+
+Please note that your current registrar may offer "transfer lock" or a
+similar service as a security measure to prevent unauthorized transfer
+of your domain name. If this feature is activated, you will need to log
+on to your account with your current registrar in order to unlock the
+domain.
+
+In order to turn the transfer lock function off, you must have access to
+the administrative email address you used when first registering the
+domain. Your current registrar will send an email to this account that
+will require a reply from you, confirming that the transfer is
+authorized. If you do not have access to this email address,
+contact [customer
+support](http://manage.rackspacecloud.com/SupportMain.do)for help.
+
+You can do a WHOIS search to find the administrative email and the
+current registar for the domain.
+
+^[back\\ to\\ top](#top)^
+
+### What happens if my Cloud Sites domain registration expires?
+
+For any domain that is registered with or transferred to The Rackspace
+Cloud, we will automatically notify you as the expiration date for your
+domain name nears. The notices will be sent to the email address listed
+under the administrative contact for that particular domain name.
+
+A total of three email notices will be sent to you, beginning 90 days
+before your domain is set to expire, and a fourth notice will be sent
+out 10 days after the expiration date. If you do not renew before the
+stated expiration date, the domain name will be held in reserve for a
+redemption period of 45 days. During this redemption period, you may
+incur a registry-imposed redemption fee in order to reactivate your
+domain. To renew or redeem your domain name, please contact [customer
+support](http://manage.rackspacecloud.com/SupportMain.do).
+
+^[back\\ to\\ top](#top)^
+
+### Is my domain name set to auto renew?
+
+Unfortunately Automatic Domain Renewal is not available for registered
+Cloud Sites domains; the domains must be manually renewed via the
+Control Panel. Please see the following article on how to manually renew
+your domain:
+
+[How Do I Renew My
+Domain?](/how-to/renew-a-cloud-sites-domain-name)
+
+^[back\\ to\\ top](#top)^
+
+### What does it mean when my domain name is "locked"?
+
+A "locked" domain cannot be transferred to a new registrar. Your current
+registrar may offer "transfer lock" or a similar service as a security
+measure to prevent unauthorized transfer of your domain name. If this
+feature is activated, you will need to log on to your account with your
+current registrar and turn this feature off before you can transfer your
+domain name.
+
+^[back\\ to\\ top](#top)^
+
+### What top level domain extensions (TLDs) can I purchase through the control panel?
+
+You can set up domains with any extension, but only the following ones
+can be purchased or transferred to Cloud Sites at this time:
+
+-   .com
+-   .org
+-   .net
+-   .co.uk
+
+Though they can be registered in the control panel, all .uk address can
+only be registered for a 2 year minimum and maximum.
+
+^[back\\ to\\ top](#top)^
+
+### What is the Cloud Sites' IPS tag for .uk domain transfers?
+
+When you transfer your .uk domain into a new registrar, you must ensure
+that the Internet Provider Security (IPS) tag points to the correct
+place before you begin the transfer process. If you are transferring
+your domain registration to Rackspace, the IPS tag must point to
+TUCOWS-CA.
+
+To change the IPS tag, contact your current Domain Registrar and request
+the change (some providers might  charge an administration fee).
+
+[back to top](#top)
+
+### What is the administrative email account listed for my domain name?
+
+You can do a WHOIS search to find the administrative email and the
+current registrar for the domain. A WHOIS search reveals details about a
+domain name, including who owns it, where it was registered, when it
+expires, and which name servers are assigned to the domain. There are
+many software tools for performing a WHOIS search, and you can also
+search online. One good web site to try
+is <http://whois.domaintools.com/>
+
+[back to top](#top)
+
+### What if I don't have access to the administrative email account listed for my domain name?
+
+You must have access to the administrative email to approve transfer
+requests when you are changing registrars or updating your name servers.
+Your current registrar will send an email to this account that will
+require a reply from you, confirming that the transfer is authorized. If
+you do not have access to this email address, please contact [customer
+support](http://manage.rackspacecloud.com/SupportMain.do)for help.
 
 ^[back\\ to\\ top](#top)^
 
@@ -589,8 +740,6 @@ website](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html).
 
 ### How do I enable SSI?
 
-
-
 You can activate Server Side Includes (SSI) by using .htaccess with the
 following directives:
 
@@ -694,6 +843,32 @@ compliant, it can be used as a flexible front-end to a payment gateway.
 For more information, see our article on [utilizing Cloud Sites in an
 e-commerce
 solution](/how-to/utilize-cloud-sites-in-an-e-commerce-solution).
+
+^[back\\ to\\ top](#top)^
+
+### Why can't I see my site using a web browser?
+
+If you have uploaded new content and can't see the changes in your web
+site, check the following:
+
+-   Has it been at least 48 hours since you completed your domain
+    registration? If not, try uploading content to your website using
+    the test FTP (ftp1.ftptoyoursite.com) and checking the changes on
+    your test website. [Click
+    here](/how-to/using-a-staging-url)for
+    instructions on how to use your test website.
+-   Have you put files in the correct folders on the server? See [Where
+    should I put my web content
+    files?](/how-to/getting-started-with-cloud-sites-uploading-your-content)for
+    more information.
+-   Did you upload the files in the [appropriate
+    format?](/how-to/should-i-upload-files-as-ascii-or-binary)
+-   Did you [check your
+    nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers) to
+    make sure that they are pointing to Rackspaces nameservers?
+
+If you have checked these points without success [contact
+support](https://manage.rackspacecloud.com/) for more help.
 
 ^[back\\ to\\ top](#top)^
 
@@ -868,6 +1043,14 @@ No, FTP bandwidth does not count against your monthly transfer.
 
 ^[back\\ to\\ top](#top)^
 
+### How can I contact the Cloud Sites billing team?
+
+A Cloud Billing Specialist can help you with account billing questions.
+The Billing Team may be reached directly by phone at 1-877-934-0410
+between the hours of 8:00 am and 5:00 pm CT, Monday through Friday.
+
+^[back\\ to\\ top](#top)^
+
 ------------------------------------------------------------------------
 
 Linux and PHP
@@ -969,17 +1152,53 @@ following articles:
 **Cron FAQ's:**
 
 -   **[What is a cron
-    job?](/knowledge_center/index.php/What_is_a_cron_job%3F "What is a cron job?")**
+    job?](/how-to/what-is-a-cloud-sites-cron-job "What is a cron job?")**
 -   **[How do I enable/disable a cron
-    job?](/knowledge_center/index.php/How_do_I_enable/disable_a_cron_job%3F "How do I enable/disable a cron job?")**
+    job?](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job "How do I enable/disable a cron job?")**
 -   **[How do I schedule a cron
-    job?](/knowledge_center/index.php/How_do_I_schedule_a_cron_job%3F "How do I schedule a cron job?")**
+    job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites "How do I schedule a cron job?")**
 -   **[How do I create a cron job to backup my MySQL
-    database?](/knowledge_center/index.php/How_do_I_create_a_cron_job_to_backup_my_MySQL_database%3F "How do I create a cron job to backup my MySQL database?")**
+    database?](/how-to/how-do-i-create-a-cron-job-to-backup-my-mysql-database-on-cloud-sites "How do I create a cron job to backup my MySQL database?")**
 
 ^[back\\ to\\ top](#top)^
 
+### What is the shortest scheduled interval I can set for a Cloud Sites cron job?
 
+The minimum scheduled interval for a cron job is set to 5 minutes.
 
+^[back\\ to\\ top](#top)^
 
+------------------------------------------------------------------------
+
+IIS, Windows, and .NET
+----------------------
+
+### How do I rectify an invalid view state error with an ASP.NET application?
+
+To correct this error, modify the machineKey in web.config. Use the
+information at the following sites to generate a key and usage in
+web.config.
+
+-   <http://www.orcsweb.com/articles/generate-aspnet-machine-key/>
+-   <http://support.orcsweb.com/KB/a248/why-am-i-am-getting-following-viewstate-error-view.aspx>
+
+^[back\\ to\\ top](#top)^
+
+### What is an ASP.NET application pool?
+
+An application pool is a form of encapsulation to prevent the effects of
+bad code being executing from impacting other processes. Each
+application pool has its own worker process associated with it. By
+default, each site's /content directory is an application pool. In some
+situations, you may have installed a separate application into a
+sub-directory, such as /content/gallery. In this case, you may need to
+have the /gallery sub-directory turned into an application pool. By
+contacting support, this can be processed for you.
+
+For in-depth information concerning application pools, please see the
+following article:
+
+<http://www.developer.com/net/asp/article.php/2245511>
+
+^[back\\ to\\ top](#top)^
 

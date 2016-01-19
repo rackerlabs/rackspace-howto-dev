@@ -14,9 +14,9 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [API Documentation](http://docs.rackspace.com/)
 
-[Related Knowledge Center Articles](https://admin.rackspace.com/knowledge_center/)
+[Related Knowledge Center Articles](/how-to/)
 
-[First Generation Servers terminology](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-first-generation-cloud-servers#terminology)
+[First Generation Servers terminology](/how-to/article/permissions-matrix-for-first-generation-cloud-servers#terminology)
 
 ## As of September 26, 2013
 
@@ -68,4 +68,4 @@ A collection of files for a specific operating system (OS) that you use to creat
 
 A virtual machine (VM) instance in the Cloud Servers environment. To create a server, you must specify a name, flavor reference, and image reference.
 
-[## &lt; Permission Matrices for RBAC](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+[## &lt; Permission Matrices for RBAC](/how-to/article/permissions-matrix-for-role-based-access-control-rbac)

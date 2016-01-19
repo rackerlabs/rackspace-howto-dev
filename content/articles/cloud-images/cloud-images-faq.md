@@ -4,8 +4,8 @@ title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-19'
+last_modified_by: Kyle Laffoon
 product: Cloud Images
 body_format: tinymce
 ---

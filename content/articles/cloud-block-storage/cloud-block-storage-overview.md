@@ -4,8 +4,8 @@ title: Cloud Block Storage - Overview
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-05'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-18'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 body_format: tinymce
 ---
@@ -47,7 +47,7 @@ On This Page:
 -   [Cloud Block Storage Getting Started Table of Contents](#cbs-gs-toc)
 
 ###
-[]()Some Uses of Cloud Block Storage
+Some Uses of Cloud Block Storage
 
 -   Mount a drive to a server to scale storage without paying for more
     compute capability
@@ -62,7 +62,7 @@ On This Page:
 
 
 
-### []()Access Cloud Block Storage
+### Access Cloud Block Storage
 
 Access Cloud Block Storage the way you like: you can use it through the
 GUI interface of the [Cloud Control
@@ -74,7 +74,7 @@ Guide](http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html
 located in [docs.rackspace.com](http://docs.rackspace.com/api/).
 
 
-### []()Limits of Cloud Block Storage
+### Limits of Cloud Block Storage
 
 -   50 GB to 1 TB for SSD volumes
 -   75 GB to 1 TB for SATA volumes

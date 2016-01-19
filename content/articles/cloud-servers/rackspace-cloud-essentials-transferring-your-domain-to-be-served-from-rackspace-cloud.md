@@ -36,7 +36,7 @@ basic questions about transferring your domain to Rackspace.
 -   [How Do I Know My Domain is Set Up
     Correctly?](#howdoiknowmydomainissetup_6)
 
-[]()
+
 
 ### We are not a Domain Registrar
 
@@ -49,7 +49,7 @@ as a Domain Registrar is if you are using our [Cloud Sites
 service](/how-to/getting-started-with-cloud-sites-registering-andor-transferring-domain-names).
  So in order to host a domain from your Cloud Server, you will need to
 have already registered it at a domain registrar, and then transfer it
-to Rackspace.[]()
+to Rackspace.
 
 ### What is a Name Server?
 
@@ -64,7 +64,7 @@ that knows where to find the IP address matching the domain name you
 requested.  Now that you want your domain to be hosted on a Rackspace
 Cloud Server, you will need to update the nameservers so that the DNS
 system knows where to locate the new IP address that is serving your
-domain.[]()
+domain.
 
 ### What are Rackspace's Name Servers?
 
@@ -79,7 +79,7 @@ previously instructed to use the following nameservers:
 
 Please continue to use these Name Servers for your dedicated services,
 but you will use the 'stabletransit' Name Servers above for any domain
-hosted from a Rackspace Cloud Server.[]()
+hosted from a Rackspace Cloud Server.
 
 ### How Do I Transfer the Domain?
 
@@ -96,7 +96,7 @@ Your next step, if you haven't already done so, is to create
 corresponding DNS records for your domain in the Rackspace Cloud Control
 Panel.  You can follow the instructions in the next article to learn how
 to [create DNS records through the
-ControlPanel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).[]()
+ControlPanel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 ### How Long Does DNS Propagation Take?
 
@@ -104,7 +104,7 @@ DNS propagation is the time it takes for the updated information that
 you provided to your registrar (the new name servers for your domain) to
 be communicated through the hierarchical DNS system.  In general, DNS
 propagation of new name server information should take no longer than 24
-- 48 hours.[]()
+- 48 hours.
 
 ### How Do I Know My Domain is Set Up Correctly?
 

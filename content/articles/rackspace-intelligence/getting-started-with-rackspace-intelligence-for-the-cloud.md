@@ -128,7 +128,7 @@ explains how that works.
 
 ------------------------------------------------------------------------
 
-[]()Prepare entities to be monitored by Rackspace Intelligence
+Prepare entities to be monitored by Rackspace Intelligence
 --------------------------------------------------------------
 
 As soon as it becomes aware of an entity, Rackspace Intelligence can
@@ -219,7 +219,7 @@ status change, perform the following actions:
     plans](/how-to/working-with-rackspace-intelligence-notification-plans),
     defining which notifications to perform under which circumstances
 
-### []()Suppress reporting of infrastructure status
+### Suppress reporting of infrastructure status
 
 Rackspace Intelligence enables you to [suppress
 notifications](/how-to/working-with-notification-suppressions-in-rackspace-intelligence) for

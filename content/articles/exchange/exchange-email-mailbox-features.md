@@ -31,7 +31,7 @@ collaborative solution for their business/organization.
 
 </div>
 
-### []()Lists
+### Lists
 
 Lists, or Exchange Distribution Lists, are a great way to manage users
 in a select team or group. Only e-mail address in your domain can be
@@ -49,7 +49,7 @@ To setup a List, log into the Admin Control Panel
 
 
 
-### **[]()Outlook Web App (OWA)**
+### **Outlook Web App (OWA)**
 
 The Outlook Web App is a direct connection to your E-mail without the
 need of additional software. Accessing your E-mail account from OWA is

@@ -48,7 +48,7 @@ new one generated. You can contact our Fanatical Support through a
 ticket, live chat or via phone and we can assist you with obtaining this
 information.
 
-[]()Renewing Your Certificate
+Renewing Your Certificate
 -----------------------------
 
 Next, you will need to update/renew your SSL Certificate. SSL
