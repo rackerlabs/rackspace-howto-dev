@@ -34,7 +34,7 @@ monitoring system, or on a simple schedule that you configure.
 -   [Rackspace Auto Scale Control Panel User Guide --
     Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts)
 -   [Rackspace Auto Scale Control Panel User Guide -- Creating Scaling
-    Groups](/how-to/rackspace-auto-scale-control-panel-user-guide-creating-scaling-groups)
+    Groups](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group)
 -   [Rackspace Auto Scale Control Panel User Guide -- Creating Scaling
     Policies](/how-to/rackspace-auto-scale-control-panel-user-guide-creating-scaling-policies)
 

@@ -22,11 +22,11 @@ environment per account.
 ###  Managing an Instance
 
 -   [Connecting to Your Cloud
-    Database](/how-to/connecting-to-your-cloud-database)
+    Database](/how-to/connect-to-a-cloud-databases-instance)
 -   [Managing Users for Cloud
     Databases](/how-to/managing-users-for-cloud-databases)
 -   [Importing Data to Cloud
-    Databases](/how-to/importing-data-to-cloud-databases)
+    Databases](/how-to/importing-data-into-cloud-databases)
 -   [Exporting Data from
     MySQL](/how-to/exporting-data-from-mysql)
 -   [Managing configuration groups for Cloud Databases with the trove

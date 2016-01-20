@@ -14,7 +14,7 @@ metadata assignment for Rackspace Cloud Server images.
 ###  Preparing images
 
 -   [Preparing an image for import into the Rackspace open
-    cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-open-cloud)
+    cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud)
 -   [Creating a CentOS 6.5 image for the Rackspace open
     cloud](/how-to/creating-a-centos-65-image-for-the-rackspace-open-cloud)
 -   [Creating an Ubuntu 13.10 image for the Rackspace open
@@ -23,8 +23,8 @@ metadata assignment for Rackspace Cloud Server images.
 ###  Uploading and downloading images
 
 -   [Installing the Swiftly Cloud Files
-    Client](/how-to/installing-the-swiftly-cloud-files-client)
+    Client](/how-to/install-the-swiftly-client-for-cloud-files)
 -   [Using Swiftly to Download an Exported
     Image](/how-to/using-swiftly-to-download-an-exported-image)
 -   [Using Swiftly to upload an image to be
-    imported](/how-to/using-swiftly-to-upload-an-image-to-be-imported)
+    imported](/how-to/use-swiftly-to-upload-an-image)

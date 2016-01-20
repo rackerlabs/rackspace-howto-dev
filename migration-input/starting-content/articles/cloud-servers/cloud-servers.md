@@ -90,11 +90,11 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### 1. Saving server images
 
 -   [Saving a Cloud Server
-    Image](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
+    Image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 -   [Restoring a Server From a
-    Snapshot](/how-to/rackspace-cloud-essentials-4-restoring-cloud-server-saved-image)
+    Snapshot](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 -   [Snapshot
-    Limitations](/how-to/rackspace-cloud-essentials-4-cloud-server-snapshot-limitations)
+    Limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
 
 ### 2. Remote access
 
@@ -108,7 +108,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### 3. Cloud Server security
 
 -   [Basic Linux Cloud Server
-    security](/how-to/rackspace-cloud-essentials-3-basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
+    security](/how-to/basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
 
 ### 4. Uploading your content
 
@@ -122,31 +122,31 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [What Are Your
     Nameservers?](/knowledge_center/index.php/nameservers)
 -   [Transferring Your Domain to the Rackspace
-    Cloud](/how-to/transferring-your-domain-to-Rackspace-Cloud)
+    Cloud](/how-to/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud)
 -   [Managing DNS](/knowledge_center/index.php/Managing_DNS)
 
 ### 6. Managing your account
 
 -   [Billing services
-    overview](/how-to/rackspace-cloud-essentials-1-billing-services-overview)
+    overview](/how-to/billing-services-overview)
 -   [Navigating the Cloud Control
-    Panel](/how-to/navigating-the-cloud-control-panel)
+    Panel](/how-to/introducing-the-rackspace-cloud-control-panel)
 -   [Generating your API
-    key](/how-to/rackspace-cloud-essentials-1-generating-your-api-key-0)
+    key](/how-to/view-and-reset-your-api-key)
 
-### 7. [Managing your server](/how-to/rackspace-cloud-essentials-managing-your-server)
+### 7. [Managing your server](/how-to/managing-your-server)
 
 -   [Start a Console
-    session](/how-to/managing-your-server-start-a-console-session)
+    session](/how-to/start-a-console-session)
 -   [Reboot your
-    server](/how-to/managing-your-server-reboot-your-server)
+    server](/how-to/reboot-your-server)
 -   [Recue
-    mode](/how-to/managing-your-server-rescue-mode)
+    mode](/how-to/rescue-mode)
 -   [Rebuild a Cloud
-    Server](/how-to/managing-your-server-rebuild-a-cloud-server)
+    Server](/how-to/rebuild-a-cloud-server)
 -   [Resize standard
-    servers](/how-to/managing-your-server-resizing-standard-servers)
+    servers](/how-to/managing-your-server-resizing-standard-and-general-purpose-servers)
 -   [Reset your server
-    password](/how-to/managing-your-server-reset-your-server-password)
+    password](/how-to/reset-your-server-password)
 -   [Deleting your
-    server](/how-to/managing-your-server-deleting-your-server)
+    server](/how-to/deleting-your-server)

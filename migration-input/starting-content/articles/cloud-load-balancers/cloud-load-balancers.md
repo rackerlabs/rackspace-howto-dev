@@ -28,7 +28,7 @@ optimal resource utilization. Read more to see how easy it is to do!
 -   [Content Caching for Cloud Load
     Balancers](/how-to/content-caching-for-cloud-load-balancers)
 -   [SSL Termination on Cloud Load
-    Balancers](/how-to/ssl-termination-on-cloud-load-balancers)
+    Balancers](/how-to/cloud-load-balancers-faqs)
 -   [Using SSL Offloading with IIS and Cloud Load
     Balancers](/how-to/configuring-load-balanced-sites-with-ssl-offloading-using-iis)
 -   [Using Cloud Load Balancers with

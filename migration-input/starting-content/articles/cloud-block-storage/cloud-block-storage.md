@@ -39,9 +39,9 @@ without needing to create a bigger server.
 ###  Prepare Your Volume
 
 -   [Prepare your Volume for use with a Linux
-    Server](/how-to/prepare-your-volume#prepare_linux)
+    Server](/how-to/prepare-your-cloud-block-storage-volume#prepare_linux)
 -   [Prepare your Volume for use with a Windows
-    Server](/how-to/prepare-your-volume#prepare_windows)
+    Server](/how-to/prepare-your-cloud-block-storage-volume#prepare_windows)
 
 ###  Create and Use Snapshots
 
