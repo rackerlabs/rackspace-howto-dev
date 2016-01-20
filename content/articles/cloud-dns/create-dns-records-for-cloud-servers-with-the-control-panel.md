@@ -4,9 +4,9 @@ title: Create DNS Records for cloud servers with the Control Panel
 type: article
 created_date: '2012-07-13'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
-product: Cloud Servers
+last_modified_date: '2016-01-20'
+last_modified_by: Kyle Laffoon
+product: Cloud DNS
 body_format: full_html
 ---
 

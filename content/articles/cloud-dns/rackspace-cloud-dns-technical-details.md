@@ -4,9 +4,9 @@ title: Rackspace Cloud DNS - Technical Details
 type: article
 created_date: '2011-10-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
-product: Cloud Servers
+last_modified_date: '2016-01-20'
+last_modified_by: Kyle Laffoon
+product: Cloud DNS
 body_format: tinymce
 ---
 

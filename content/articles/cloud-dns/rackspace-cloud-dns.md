@@ -1,10 +1,10 @@
 ---
 node_id: 1236
-title: 'Rackspace Cloud DNS: Getting Started Guide'
+title: Rackspace Cloud DNS
 type: article
 created_date: '2011-10-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
+last_modified_date: '2016-01-20'
 last_modified_by: Kyle Laffoon
 product: Cloud DNS
 body_format: tinymce

@@ -1,11 +1,13 @@
 ---
+node_id: 3146
 title: Cloud Networks
-type: product
-created_date: '2016-01-17'
-created_by: Rackspace Support
-last_modified_date: '2016-01-17'
-last_modified_by: Rackspace Support
+type: article
+created_date: '2012-10-29'
+created_by: Susan Million
+last_modified_date: '2016-01-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
+body_format: tinymce
 ---
 
 Cloud Networks lets you create and manage secure, isolated networks in
@@ -18,9 +20,10 @@ Networks can be combined with [Brocade Vyatta
 vRouters](http://www.rackspace.com/cloud/servers/vrouter/) to create
 more complex topologies to route traffic between Cloud Networks or to
 external data centers over VPN.  Cloud Networks can be created and
-managed via API or using the Rackspace Cloud Control Panel.  
+managed via API or using the Rackspace Cloud Control
+Panel. <span> </span>
 
-Using Cloud Networks 
+Using Cloud Networks
 ---------------------
 
 You can use the Cloud Control Panel or the [Cloud Servers
@@ -39,6 +42,7 @@ Server](/how-to/removing-networks-from-a-cloud-server "Removing Networks from a 
 [Using CIDR notation in Cloud
 Networks](/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
+
 ### Using the Cloud Networks API
 
 [Cloud Networks Release
@@ -49,3 +53,4 @@ Started](http://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/inde
 
 [Cloud Networks API Developers
 Guide](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/index.html "Cloud Networks API Developers Guide")
+

@@ -4,9 +4,9 @@ title: Using CIDR notation in Cloud Networks
 type: article
 created_date: '2012-09-17'
 created_by: David Hendler
-last_modified_date: '2016-01-10'
-last_modified_by: Renee Rendon
-product: Cloud Servers
+last_modified_date: '2016-01-20'
+last_modified_by: Rose Contreras
+product: Cloud Networks
 body_format: tinymce
 ---
 

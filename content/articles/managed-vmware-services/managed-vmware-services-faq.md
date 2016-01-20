@@ -4,16 +4,15 @@ title: Managed VMware Services - FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
+last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Managed VMware Services
-body_format: tinymce
+body_format: full_html
 ---
 
-Architecture
-------------
+### Architecture
 
-### What type of replication solutions do you offer?
+#### What type of replication solutions do you offer?
 
 Rackspace offers two different solutions for replication. At a high
 level, the differences are automated vs. manual failover and the
@@ -23,38 +22,37 @@ selection should depend on your RPO/RTO.
     configuration and based on testing.
 -   VM Replication (vRanger): Manual failover. Provides no RTO/RPO.
 
-### What are the benefits of virtualization?
+#### What are the benefits of virtualization?
 
 Server portability, consolidation, cloning and snapshots.
 
-### With Managed VMware, can I log in to the hypervisor?
+#### With Managed VMware, can I log in to the hypervisor?
 
 No. However, if you have Dedicated vCenter, you do have the ability to
 log in to your hypervisor(s).
 
-### With Managed VMware, do I get API access to the virtual centers or hypervisors?
+#### With Managed VMware, do I get API access to the virtual centers or hypervisors?
 
 No. Rackspace does not provide API access.
 
 ------------------------------------------------------------------------
 
-Features
---------
+### Features
 
-### How do I reimage a VM?
+#### How do I reimage a VM?
 
 You can request this through an action in the customer portal.
 
-### Are imaged-based backups part of the managed virtualization offering?
+#### Are imaged-based backups part of the managed virtualization offering?
 
 Yes, for an additional service fee. This is accomplished via VM
 Recovery.
 
-### Can I use fault tolerance with my Rackspace VMs?
+#### Can I use fault tolerance with my Rackspace VMs?
 
 This is not a currently-supported feature.
 
-### How does vMotion work?
+#### How does vMotion work?
 
 vMotion is the process by which one hypervisor hands off a VM's memory
 and processes to another hypervisor in the cluster. This process is down
@@ -64,17 +62,17 @@ event of a fatal hypervisor failure. The source and destination
 hypervisors must be operational and healthy in order for the vMotion to
 be successful.
 
-### Does Rackspace offer utility billing for VMs?
+#### Does Rackspace offer utility billing for VMs?
 
 Yes. If you power down a VM through the customer portal, you will not be
 paying for it as long as it is powered down?
 
-### How are my VMs backed up?
+#### How are my VMs backed up?
 
 Rackspace can be back up VMs through our VM Recovery service or
 CommVault.
 
-### What is a snapshot and how does it work?
+#### What is a snapshot and how does it work?
 
 Snapshot is a point-in-time delta file to track all changes to a virtual
 machine. Snapshots give you the ability to roll-back (i.e. Windows
@@ -82,7 +80,7 @@ patching at the disk level). Snapshots ARE NOT a permanent backup, and
 should generally not be kept for more than 72 hours as they take up the
 required 15% overhead.
 
-### What can I use the portal for?
+#### What can I use the portal for?
 
 Order new VMs, change resources of a VM, resize VMs, power on/off and
 reset VMs, Snapshots, suspend VMs, performance metrics (CPU/RAM
@@ -90,10 +88,9 @@ utilization, network, disk utilization)
 
 ------------------------------------------------------------------------
 
-Implementation
---------------
+### Implementation
 
-### How do I appropriately size my VMs?
+#### How do I appropriately size my VMs?
 
 Less is better. It is more important to size VMs closer to what they
 need as opposed to loading in extra capacity that may not be used.
@@ -102,17 +99,16 @@ Assigning too many CPUs slows performance down. Begin with 2 CPUs, go to
 recommendation for a physical environment, virtual CPUs do not map 1:1
 to physical CPUs. It's a completely different architecture.
 
-### Why does Rackspace require 15% overhead storage?
+#### Why does Rackspace require 15% overhead storage?
 
 This overhead is necessary to perform functions like
 cloning/snapshotting/vMotion. 15% is non-negotiable.
 
 ------------------------------------------------------------------------
 
-Maintenance
------------
+### Maintenance
 
-### How do I add RAM or CPU to a VM?
+#### How do I add RAM or CPU to a VM?
 
 In the
 [my.rackspace.com](https://my.rackspace.com/portal/auth/login?targetUri=%2Fhome)
@@ -125,7 +121,7 @@ RAM and CPU are selected. Change the values as necessary and then click
 immediately. This process will take approximately 5 minutes plus the
 required boot time.
 
-### Where is data stored if I create a snapshot, clone, or template?
+#### Where is data stored if I create a snapshot, clone, or template?
 
 -   Snapshots are stored with the VM and consume your allocated
     storage infrastructure. Snapshots must be carefully managed to
@@ -135,7 +131,7 @@ required boot time.
 -   Templates are stored on the Rackspace infrastructure. You can create
     one template per VM.
 
-### What are the differences between snapshot, clones, and templates?
+#### What are the differences between snapshot, clones, and templates?
 
 -   **Snapshot** : A snapshot is a point-in-time &ldquo;instance&rdquo; of a VM that
     can be reverted or remerged (deleted). When a snapshot is taken, the
@@ -163,22 +159,22 @@ required boot time.
     of future VMs. It is also stored on the Rackspace
     storage infrastructure. You can create one template per VM.
 
-### How can I expand or shrink my virtual disk?
+#### How can I expand or shrink my virtual disk?
 
 You can expand but you can't shrink. To expand, submit a ticket and
 specify which virtual disk you would like expanded.
 
-### How do I view the performance of a VM or host?
+#### How do I view the performance of a VM or host?
 
 Performance monitors are built into the portal under the
 VM/host/cluster.
 
-### Can I have a clone or template created at a scheduled time interval?
+#### Can I have a clone or template created at a scheduled time interval?
 
 This can be done in an automated fashion with the VM Recovery service,
 or manually at your preferred times within the customer portal.
 
-### How do I monitor my available sever virtualization resources?
+#### How do I monitor my available sever virtualization resources?
 
 Use the [portal](https://my.rackspace.com/)to see which resources
 (storage - local or otherwise) are reserved or available to provision
@@ -187,20 +183,20 @@ VMs in your environment**.**
 **Note**: This only applies for the Server Virtualization product, not
 Dedicated vCenter or Dedicated vCloud.
 
-### How do I create and delete clones or templates?
+#### How do I create and delete clones or templates?
 
 Use the portal to access the VM, and click **Create Clone/Template** in
 the **Clone**/**Templates** section. Use a similar process for deleting,
 by clicking **Delete Clone/Template**. You can also clone a VM by
 clicking the **Copy VM** action in the portal.
 
-### How do I create and delete snapshots?
+#### How do I create and delete snapshots?
 
 Use the portal to access the VM, and click **Create Snapshot** in the
 **Snapshots** section. Use a similar process to delete a VM, by clicking
 **Delete Snapshot** .
 
-### Can I have a copy of my Rackspace VM?
+#### Can I have a copy of my Rackspace VM?
 
 Due to our licensing agreements with vendors, we cannot provide a
 licensed VM image until approved by our Legal team.
@@ -211,14 +207,14 @@ Yes. The **Available RAM (or CPU)** field in the portal takes into
 account all VMs, whether powered down or not. However, powered-down VMs
 prevent the VM from consuming resources on the hypervisor.
 
-### How many clones/templates/snapshots can I have active?
+#### How many clones/templates/snapshots can I have active?
 
 1 clone, 1 template, unlimited snapshots (snapshots can be "unlimited"
 in that they take up to the original size of the original disk). The
 snapshots take up customer's storage and does count to the required 15%
 overhead.
 
-### How long will it take to provision a VM?
+#### How long will it take to provision a VM?
 
 It depends, but probably greater than a week. Deployment times can vary
 based on the request (rely on other teams); availability of resources/IP

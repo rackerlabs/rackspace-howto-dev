@@ -4,13 +4,13 @@ title: Cloud Networks - FAQ
 type: article
 created_date: '2013-10-02'
 created_by: Sameer Satyam
-last_modified_date: '2016-01-19'
+last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Networks
 body_format: markdown_w_tinymce
 ---
 
-###What are the different networks in the Rackspace Cloud?
+####What are the different networks in the Rackspace Cloud?
 
 The Rackspace Cloud contains the following networks:
 
@@ -25,21 +25,21 @@ The Rackspace Cloud contains the following networks:
    <p>Cloud networks are isolated networks that can be used for secure communication between your cloud servers. Cloud networks are completely private and single tenant, and can be either IPv4 or IPv6. Cloud networks are recommended for all communication between cloud servers. Like ServiceNet, all bandwidth on cloud networks is provided at no charge.</p></li>
 </ul>
 
-###What are the different networking APIs in the Rackspace Cloud?
+####What are the different networking APIs in the Rackspace Cloud?
 
 The Rackspace Cloud has two networking APIs - Neutron and Nova-Network.
 
 Rackspace first introduced networking services that were based on the OpenStack Nova-Network API. This version of the service is now superseded by the current networking API, based on OpenStack Neutron, which offers a richer suite of networking services. Both APIs continue to function, but the Neutron API will be the base for all the future networking services that Rackspace offers. For more information, see [Networking: Neutron versus Nova-Network](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#networking-neutron-versus-nova-network) in the Cloud Networks Developer Guide.
 
-###How many cloud networks can I create?
+####How many cloud networks can I create?
 
 Every Rackspace Managed Infrastructure account has a default limit of 10 cloud networks per region. To request an increase, please submit a ticket in the Cloud Control Panel with details about how you intend to use the additional networks.
 
-###Is there a limit on the number of servers that can be attached to a single cloud network?
+####Is there a limit on the number of servers that can be attached to a single cloud network?
 
 Yes. A maximum of 250 servers can be attached to a single cloud network.
 
-###What are the other limits in the Cloud Networks service?
+####What are the other limits in the Cloud Networks service?
 
 The following list shows all the limits defined for the service:
 
@@ -54,7 +54,7 @@ The following list shows all the limits defined for the service:
 -   Security group rules per security group: 20
 -   Security group rules per user: 100
 
-###Can I add or remove existing networks from a cloud server?
+####Can I add or remove existing networks from a cloud server?
 
 Yes. You can add or remove any network (PublicNet, ServiceNet, or cloud network) from a server that is in a Managed Infrastructure service level account. However, Managed Operations service level and RackConnect customers are required to have PublicNet and ServiceNet interfaces. This capability means that you can freely make networking changes to your existing deployments without having to rebuild Cloud Servers.
 
@@ -62,18 +62,18 @@ For more information, see the [Virtual Interfaces extension](https://developer.r
 
 **Note**: Be aware that removing PublicNet or ServiceNet interfaces might impact certain Rackspace services and capabilities.
 
-###Can I transfer Cloud Networks IP addresses from one Rackspace cloud server to another?
+####Can I transfer Cloud Networks IP addresses from one Rackspace cloud server to another?
 
 Yes. IP addresses on Cloud Networks are usable by any other cloud server on that network.
 
-###Can I transfer a PublicNet or ServiceNet IP address from one Rackspace cloud server to another?
+####Can I transfer a PublicNet or ServiceNet IP address from one Rackspace cloud server to another?
 
 No. At this time, you cannot transfer a PublicNet or ServiceNet IP address between cloud servers.
 
-###What is the network throughput on Cloud Servers?
+####What is the network throughput on Cloud Servers?
 
 The amount of network throughput varies based on the Cloud Server flavor. For more details, see the [Cloud Servers pricing information](http://www.rackspace.com/cloud/public-pricing/#cloud-servers).
 
-###What is the scope of a cloud network?
+####What is the scope of a cloud network?
 
 Cloud networks are regional in scope and can be attached to any of your cloud servers in a given region.

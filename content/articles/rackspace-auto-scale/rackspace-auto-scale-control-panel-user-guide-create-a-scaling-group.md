@@ -4,8 +4,8 @@ title: Rackspace Auto Scale Control Panel User Guide - Create a scaling group
 type: article
 created_date: '2013-11-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-01-20'
+last_modified_by: Robin Norwood
 product: Rackspace Auto Scale
 body_format: tinymce
 ---

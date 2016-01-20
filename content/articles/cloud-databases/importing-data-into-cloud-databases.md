@@ -4,8 +4,8 @@ title: Importing data into Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-01-20'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
 body_format: tinymce
 ---

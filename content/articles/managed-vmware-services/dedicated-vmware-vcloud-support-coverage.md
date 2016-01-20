@@ -4,33 +4,32 @@ title: Dedicated VMware vCloud support coverage
 type: article
 created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-13'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-20'
+last_modified_by: Kelly Holcomb
 product: Managed VMware Services
 body_format: markdown_w_tinymce
 ---
 
-<p>Support coverage for Rackspace Dedicated VMware vCloud is similar to that of our other server virtualization products. Our virtualization team maintains configurations and services in order to ensure server uptime.</p>
+Support coverage for Rackspace Dedicated VMware vCloud is similar to that of our other server virtualization products. Our virtualization team maintains configurations and services in order to ensure server uptime.
 
-<p>With Dedicated&nbsp;vCloud, you can designate the service level for virtual machines (VMs) as managed or unmanaged. Both service levels&nbsp;include Rackspace support for the host infrastructure and virtualization software. Managed VMs&nbsp;include additional&nbsp;support for&nbsp;the guest operating system running on the VM.</p>
+With Dedicated vCloud, you can designate the service level for virtual machines (VMs) as managed or unmanaged. Both service levels include Rackspace support for the host infrastructure and virtualization software. Managed VMs include additional support for the guest operating system running on the VM.
 
-## [Supported operations for managed VMs](#managed)
+- [Supported operations for managed VMs](#managed)
+  - [Virtualization](#virtualization-managed)
+  - [Hardware](#hardware-managed)
+  - [Operating system](#os-managed)
+  - [Monitoring](#monitoring-managed)
+  - [Network](#network-managed)
+  - [Security](#security-managed)
 
-- [Virtualization](#virtualization-managed)
-- [Hardware](#hardware-managed)
-- [Operating system](#os-managed)
-- [Monitoring](#monitoring-managed)
-- [Network](#network-managed)
-- [Security](#security-managed)
 
-## [Supported operations for unmanaged VMs](#unmanaged)
-
-- [Virtualization](#virtualization-unmanaged)
-- [Hardware](#hardware-unmanaged)
-- [Operating system](#os-unmanaged)
-- [Monitoring](#monitoring-unmanaged)
-- [Network](#network-unmanaged)
-- [Security](#security-unmanaged)
+- [Supported operations for unmanaged VMs](#unmanaged)
+  - [Virtualization](#virtualization-unmanaged)
+  - [Hardware](#hardware-unmanaged)
+  - [Operating system](#os-unmanaged)
+  - [Monitoring](#monitoring-unmanaged)
+  - [Network](#network-unmanaged)
+  - [Security](#security-unmanaged)
 
 <a name="managed"> </a>
 ## Supported operations for managed VMs

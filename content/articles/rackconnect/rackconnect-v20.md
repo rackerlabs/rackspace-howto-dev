@@ -1,11 +1,11 @@
 ---
 node_id: 2022
-title: Getting started with RackConnect v2.0
+title: RackConnect v2.0
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-01-06'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-20'
+last_modified_by: Kyle Laffoon
 product: RackConnect
 body_format: tinymce
 ---
