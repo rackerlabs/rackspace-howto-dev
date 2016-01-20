@@ -101,7 +101,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 -   [Remote Connection from Windows to a Linux
     Server](/knowledge_center/index.php/Logging_in_via_Putty)
 -   [Remote Connection from Mac to a Linux
-    Server](/knowledge_center/Mac_to_Linux_using_iTerm)
+    Server](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
 -   [Remote Connection to a Windows Cloud Server Using
     RDP](/how-to/log-in-to-your-server-via-rdp-windows)
 
@@ -113,17 +113,17 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### 4. Uploading your content
 
 -   [CentOS - Installing
-    vsftpd](/knowledge_center/index.php/CentOS_-_Installing_vsftpd)
+    vsftpd](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd)
 -   [CentOS - Configuring a user in
-    vsftpd](/knowledge_center/index.php/CentOS_-_Configuring_a_user_in_vsftpd)
+    vsftpd](/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd)
 
 ### 5. DNS & domain management
 
 -   [What Are Your
-    Nameservers?](/knowledge_center/index.php/nameservers)
+    Nameservers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
 -   [Transferring Your Domain to the Rackspace
     Cloud](/how-to/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud)
--   [Managing DNS](/knowledge_center/index.php/Managing_DNS)
+-   [Managing DNS](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)
 
 ### 6. Managing your account
 
