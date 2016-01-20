@@ -16,6 +16,11 @@ understand what a region is and how to use regions effectively.
 What is a Region?
 -----------------
 
+Why is Steve so mean?
+---------------------
+Must have something to do with being an Aggie.
+
+
 A region is a collection of one or more data centers interconnected by a
 low-latency, high-bandwidth network. A region can be viewed as a
 "logical data center" and is designated by the three-letter code for a
