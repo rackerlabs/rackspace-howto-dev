@@ -44,7 +44,7 @@ RackConnect v2.0, or both versions.
 -   [Getting Started with the RackConnect v3.0
     API](/how-to/getting-started-with-the-rackconnect-v30-api)
 -   [RackConnect v3.0 Compatibility
-    Matrix](/how-to/rackconnect-v30-compatibility-matrix)
+    Matrix](/how-to/rackconnect-v30-compatibility)
 -   [RackConnect Network Device
     Comparison](/how-to/rackconnect-network-device-comparison)
 -   [Associating a Cloud Account with RackConnect
@@ -54,7 +54,7 @@ RackConnect v2.0, or both versions.
 -   [Using Cloud Load Balancers with
     RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 -   [Using dedicated load balancers with RackConnect
-    v3.0](/how-to/using-dedicated-load-balancers-with-rackconnect-v30)
+    v3.0](/how-to/using-dedicated-load-balancers-with-rackconnect-v20-v30)
 -   [RackConnect v3.0 Cloud Server Image
     Compatibility](/how-to/rackconnect-v30-cloud-server-image-compatibility)
 -   [Cloud Orchestration Support for RackConnect
@@ -65,9 +65,9 @@ RackConnect v2.0, or both versions.
 -   [What Is RackConnect
     v2.0?](/how-to/what-is-rackconnect-v20)
 -   [What new features were introduced in RackConnect
-    v2.0?](/how-to/what-features-were-introduced-in-rackconnect-v20)
+    v2.0?](/how-to/features-introduced-in-rackconnect-v20)
 -   [What Are The Requirements For Implementing RackConnect
-    v2.0?](/how-to/what-are-the-requirements-for-implementing-rackconnect-v20)
+    v2.0?](/how-to/rackconnect-v20-requirements)
 -   [Getting Rack Connect
     Support](/how-to/getting-rackconnect-support)
 -   [RackConnect Key
@@ -76,7 +76,7 @@ RackConnect v2.0, or both versions.
 ###  Getting started with RackConnect v2.0
 
 -   [How Do I Get Started With RackConnect
-    v2.0?](/how-to/how-do-i-get-started-with-rackconnect-v20)
+    v2.0?](/how-to/getting-started-with-rackconnect-v20)
 
 ###  Managing your RackConnect v2.0 environment
 
@@ -87,12 +87,12 @@ RackConnect v2.0, or both versions.
 -   [Accessing RackConnected Cloud
     Servers](/how-to/accessing-rackconnect-cloud-servers)
 -   [Using Dedicated Load Balancers With
-    RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect)
+    RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 -   [Using Cloud Load Balancers With
     RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 -   [RackConnect v2.0 Compatibility With First Gen Cloud Server
     Images](/how-to/cloud-server-images-for-use-with-rackconnect-v20)
 -   [RackConnect v2.0 Compatibility With Next Gen Cloud Server
-    Images](/how-to/rackconnect-v20-compatibility-with-cloud-server-images)
+    Images](/how-to/rackconnect-v20-compatibility-with-cloud-servers-images)
 -   [Using the RackConnect v2.0
     API](/how-to/the-rackconnect-v20-api)

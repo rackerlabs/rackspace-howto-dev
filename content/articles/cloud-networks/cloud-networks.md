@@ -31,7 +31,7 @@ articles and API developer resources.
 ### Using the Control Panel with Cloud Networks
 
 [Attach an Isolated Network to a New Cloud
-Server](/how-to/create-an-isolated-cloud-network "Create an Isolated Cloud Network")
+Server](/how-to/create-an-isolated-cloud-network-and-attach-it-to-a-server "Create an Isolated Cloud Network")
 
 [Removing Networks From a Cloud
 Server](/how-to/removing-networks-from-a-cloud-server "Removing Networks from a Cloud Server")

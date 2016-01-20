@@ -50,4 +50,4 @@ you get started.
 -   [Setup tool for accessing your mail from additional devices and
     programs (login page)](https://emailhelp.rackspace.com/)
 -   [Connection settings
-    only](/how-to/rackspace-email-exchange-settings)
+    only](/how-to/rackspace-email-and-hosted-exchange-settings)

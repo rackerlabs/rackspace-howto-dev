@@ -38,7 +38,7 @@ Monitoring.
 -   [How-Tos and Other
     Resources](/how-to/cloud-monitoring-how-tos-other-resources)
 -   [Control Panel Monitoring: What Do the Options
-    Do?](/how-to/control-panel-monitoring-what-do-the-options-do)
+    Do?](/how-to/available-checks-for-rackspace-monitoring)
 -   [Rackspace Monitoring Checks and
     Alarms](/how-to/rackspace-cloud-monitoring-checks-and-alarms%20)
 -   [Monitoring On The Go With Mobile

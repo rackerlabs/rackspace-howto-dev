@@ -39,9 +39,9 @@ preferences. Let's get started!
 ###  Backup Information
 
 -   [A Single Backup's
-    Activities](/how-to/rackspace-cloud-backup-backup-information-0#single)
+    Activities](/how-to/rackspace-cloud-backup-view-backup-information#single)
 -   [All Activities For All
-    Backups](/how-to/rackspace-cloud-backup-backup-information-0#all)
+    Backups](/how-to/rackspace-cloud-backup-view-backup-information#all)
 
 ###  Backup Actions Menu
 
