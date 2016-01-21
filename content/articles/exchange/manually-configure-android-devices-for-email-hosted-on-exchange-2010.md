@@ -7,6 +7,7 @@ created_by: Marco Salazar
 last_modified_date: '2015-05-01'
 last_modified_by: Kelly Holcomb
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 This article describes how to set up your new Android phone with your

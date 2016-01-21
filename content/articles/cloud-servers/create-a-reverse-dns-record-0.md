@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 In this article we discuss how to add a reverse DNS record (also known

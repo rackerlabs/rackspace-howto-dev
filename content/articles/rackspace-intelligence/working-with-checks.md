@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2015-08-27'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence provides an interface that you can use to create

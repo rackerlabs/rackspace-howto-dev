@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2016-01-21'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Rackspace CDN \[[product

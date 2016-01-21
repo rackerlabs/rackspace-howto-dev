@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Contreras
 product: Cloud Queues
+product_url: cloud-queues
 ---
 
 Setting up a Producer-Consumer model in Cloud Queues consists of posting

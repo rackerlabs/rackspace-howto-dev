@@ -7,6 +7,7 @@ created_by: Joanna Salazar
 last_modified_date: '2015-01-23'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 When you create a company directory, users in the directory have access

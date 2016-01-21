@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-01-02'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 <span style="line-height: 1.538em;">The Rackspace Cloud Sites product

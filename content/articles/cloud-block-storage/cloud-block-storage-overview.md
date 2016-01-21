@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-18'
 last_modified_by: Catherine Richardson
 product: Cloud Block Storage
+product_url: cloud-block-storage
 ---
 
 Rackspace Cloud Block Storage is a block-level storage solution that

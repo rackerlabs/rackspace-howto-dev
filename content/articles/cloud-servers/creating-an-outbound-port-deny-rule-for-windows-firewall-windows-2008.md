@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2011-07-05'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 

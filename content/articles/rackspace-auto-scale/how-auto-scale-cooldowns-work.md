@@ -7,6 +7,7 @@ created_by: Maria Abrahms
 last_modified_date: '2014-05-13'
 last_modified_by: Kyle Laffoon
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 Cooldowns enforce a period of time between possible actions. Auto Scale

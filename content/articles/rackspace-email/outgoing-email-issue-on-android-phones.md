@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-09-15'
 last_modified_by: Kelly Holcomb
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 If you are an Android mobile phone user, you might sometimes experience

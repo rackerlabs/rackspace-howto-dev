@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 ### What is logrotate?

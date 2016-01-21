@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2015-10-29'
 last_modified_by: Renee Rendon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 <div class="page" title="Page 1">

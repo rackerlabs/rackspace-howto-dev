@@ -7,6 +7,7 @@ created_by: Rose Coste
 last_modified_date: '2016-01-07'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 You can customize your Rackspace Intelligence graphs by choosing how to

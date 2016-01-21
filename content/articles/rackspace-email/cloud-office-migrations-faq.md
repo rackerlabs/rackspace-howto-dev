@@ -7,6 +7,7 @@ created_by: Milton Prado
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 What types of environments can you migrate from?

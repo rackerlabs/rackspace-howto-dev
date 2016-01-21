@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Backup
+product_url: cloud-backup
 ---
 
 \#\#\# Previous section \[Rackspace Cloud Backup - Create a

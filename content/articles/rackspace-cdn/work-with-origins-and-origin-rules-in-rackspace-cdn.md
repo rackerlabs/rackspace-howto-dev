@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-10-02'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 You can add origins to your CDN service. For example, if all your images

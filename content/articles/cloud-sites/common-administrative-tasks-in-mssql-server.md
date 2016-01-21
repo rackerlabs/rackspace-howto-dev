@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2012-05-21'
 last_modified_by: Jimmy Rudley
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 This article contains examples of a few common administrative tasks that

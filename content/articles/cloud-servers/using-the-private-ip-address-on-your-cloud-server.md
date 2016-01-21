@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-08-20'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Each Cloud Server comes with two addresses that are available for your

@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-09-23'
 last_modified_by: Nate Archer
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 You can add a single mailbox to your Rackspace Email account or add

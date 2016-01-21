@@ -7,6 +7,7 @@ created_by: Jerry Schwartz
 last_modified_date: '2015-09-03'
 last_modified_by: Constanze Kratel
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 **<span

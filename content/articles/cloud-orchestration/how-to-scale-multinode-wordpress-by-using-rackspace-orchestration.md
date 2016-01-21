@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-21'
 last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
+product_url: cloud-orchestration
 ---
 
 This guide provides the instructions for adding a new node to scale a

@@ -7,6 +7,7 @@ created_by: Sameer Satyam
 last_modified_date: '2015-09-29'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Introduction

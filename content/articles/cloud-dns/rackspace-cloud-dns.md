@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Kyle Laffoon
 product: Cloud DNS
+product_url: cloud-dns
 ---
 
 ![](http://c783359.r59.cf2.rackcdn.com/DNS_logo.jpg)

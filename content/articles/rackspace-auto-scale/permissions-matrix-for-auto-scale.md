@@ -7,6 +7,7 @@ created_by: Renee Rendon
 last_modified_date: '2016-01-19'
 last_modified_by: Kelly Holcomb
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 \[API

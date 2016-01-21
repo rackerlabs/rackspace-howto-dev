@@ -7,6 +7,7 @@ created_by: Aaron Medrano
 last_modified_date: '2015-01-09'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article shows you how to set up your Microsoft Exchange

@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-15'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 Rackspace Metrics lets you build a Grafana dashboard to visualize your

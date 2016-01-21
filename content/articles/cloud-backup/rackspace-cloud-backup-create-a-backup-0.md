@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-04'
 last_modified_by: Rose Contreras
 product: Cloud Backup
+product_url: cloud-backup
 ---
 
 The following steps show how to use the Cloud Backup service to create a

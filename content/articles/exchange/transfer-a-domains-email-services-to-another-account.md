@@ -7,6 +7,7 @@ created_by: Cody Jobson
 last_modified_date: '2014-10-27'
 last_modified_by: Ross Diaz
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 You can transfer a domain's email services from one account to another

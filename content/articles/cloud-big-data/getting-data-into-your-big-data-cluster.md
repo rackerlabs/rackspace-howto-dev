@@ -7,6 +7,7 @@ created_by: David Dobbins
 last_modified_date: '2016-01-07'
 last_modified_by: Rose Contreras
 product: Cloud Big Data
+product_url: cloud-big-data
 ---
 
 After you have successfully created a new Cloud Big Data cluster, you

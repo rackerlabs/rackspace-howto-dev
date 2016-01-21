@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Managed Operations
+product_url: managed-operations
 ---
 
 To deliver a Managed Cloud experience, Rackspace runs support automation

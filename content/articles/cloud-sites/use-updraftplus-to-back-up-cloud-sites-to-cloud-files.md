@@ -7,6 +7,7 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 UpdraftPlus is a WordPress plugin that gives users the ability to

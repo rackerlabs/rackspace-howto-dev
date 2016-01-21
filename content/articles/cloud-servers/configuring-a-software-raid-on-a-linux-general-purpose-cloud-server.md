@@ -7,6 +7,7 @@ created_by: Tim Pownall
 last_modified_date: '2014-12-11'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article will demonstrate how to put multiple data disks on a

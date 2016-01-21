@@ -7,6 +7,7 @@ created_by: Stephanie Fillmon
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 ### Getting Started

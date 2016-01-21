@@ -7,6 +7,7 @@ created_by: Nicole Schwartz
 last_modified_date: '2015-03-25'
 last_modified_by: David Hendler
 product: Cloud Orchestration
+product_url: cloud-orchestration
 ---
 
 Rackspace Cloud Orchestration helps you set up projects and servers with

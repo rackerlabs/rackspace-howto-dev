@@ -7,6 +7,7 @@ created_by: Kevin Richey
 last_modified_date: '2014-12-05'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 On December 17, 2014, Rackspace is making public folders available for

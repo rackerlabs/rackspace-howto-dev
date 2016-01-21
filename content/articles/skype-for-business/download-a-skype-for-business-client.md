@@ -7,6 +7,7 @@ created_by: Kevin Richey
 last_modified_date: '2016-01-08'
 last_modified_by: Kyle Laffoon
 product: Microsoft Skype for Business
+product_url: skype-for-business
 ---
 
 Skype for Business clients are available for multiple platforms. Select

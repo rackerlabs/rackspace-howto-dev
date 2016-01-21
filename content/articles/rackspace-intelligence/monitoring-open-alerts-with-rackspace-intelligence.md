@@ -7,6 +7,7 @@ created_by: Rose Coste
 last_modified_date: '2015-12-22'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Open alerts report statuses that you have asked Rackspace Intelligence

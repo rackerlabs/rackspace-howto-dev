@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2015-10-30'
 last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 <div class="content">

@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Nate Archer
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article provides prerequisites and steps for installing Active

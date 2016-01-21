@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-11'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 When you modify a firewall configuration, it is important to consider

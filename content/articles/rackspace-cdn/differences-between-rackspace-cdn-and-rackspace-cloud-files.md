@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-10-05'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Rackspace Cloud Files is storage service that enables users to store an

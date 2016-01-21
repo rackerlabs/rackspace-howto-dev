@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2014-06-30'
 last_modified_by: Jered Heeschen
 product: Cloud Queues
+product_url: cloud-queues
 ---
 
 ### Product Overview

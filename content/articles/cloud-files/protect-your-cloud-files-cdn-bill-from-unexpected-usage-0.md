@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-21'
 last_modified_by: Catherine Richardson
 product: Cloud Files
+product_url: cloud-files
 ---
 
 <span>When choosing to use the content delivery network (CDN) to

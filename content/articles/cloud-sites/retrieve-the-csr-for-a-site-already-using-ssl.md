@@ -7,6 +7,7 @@ created_by: Thomas Hester
 last_modified_date: '2015-03-05'
 last_modified_by: Rose Contreras
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 Follow the steps in this article to retrieve a previously generated

@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-02-19'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 You can use two methods to configure an Internet Protocol Security

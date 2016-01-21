@@ -7,6 +7,7 @@ created_by: Eric Zuniga
 last_modified_date: '2015-09-09'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 To share a Microsoft Exchange calendar with another Exchange user within

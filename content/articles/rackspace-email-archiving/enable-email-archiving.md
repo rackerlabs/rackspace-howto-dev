@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2015-09-01'
 last_modified_by: Nate Archer
 product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 The archiving feature of Rackspace Cloud Office collects and stores

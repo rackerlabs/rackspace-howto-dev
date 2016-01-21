@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-13'
 last_modified_by: Nate Archer
 product: Managed Operations
+product_url: managed-operations
 ---
 
 Managed Operations provides support beyond Managed Infrastructure,

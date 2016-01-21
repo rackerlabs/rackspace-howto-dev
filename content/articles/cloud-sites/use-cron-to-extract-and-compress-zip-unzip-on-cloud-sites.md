@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-04'
 last_modified_by: Nate Archer
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 ### Scripting extraction and compression of files

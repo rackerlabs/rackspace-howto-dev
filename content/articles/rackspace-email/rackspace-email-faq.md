@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-02'
 last_modified_by: Nate Archer
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Get quick answers to common questions about Rackspace Email.

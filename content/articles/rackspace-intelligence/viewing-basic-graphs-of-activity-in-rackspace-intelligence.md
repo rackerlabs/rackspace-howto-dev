@@ -7,6 +7,7 @@ created_by: Rose Coste
 last_modified_date: '2016-01-13'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence provides a set of predefined graphs that

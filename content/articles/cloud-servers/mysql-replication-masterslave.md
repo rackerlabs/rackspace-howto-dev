@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-05-06'
 last_modified_by: David Hendler
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 MySQL replication enables one database server (referred to as the Master

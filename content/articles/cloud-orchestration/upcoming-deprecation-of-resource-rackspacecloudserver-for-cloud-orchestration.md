@@ -7,6 +7,7 @@ created_by: Mike Asthalter
 last_modified_date: '2016-01-08'
 last_modified_by: Rose Contreras
 product: Cloud Orchestration
+product_url: cloud-orchestration
 ---
 
 Rackspace hereby announces the full deprecation of the

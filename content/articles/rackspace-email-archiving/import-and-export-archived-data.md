@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 You can import data into and export data from your archive in Cloud

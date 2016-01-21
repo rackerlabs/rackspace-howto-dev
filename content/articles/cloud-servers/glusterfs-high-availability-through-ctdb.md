@@ -7,6 +7,7 @@ created_by: Marcin Stangel
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 In its native form, GlusterFS gives you redundancy and high availability

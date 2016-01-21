@@ -7,6 +7,7 @@ created_by: Alyssa Hurtgen
 last_modified_date: '2016-01-13'
 last_modified_by: Rose Contreras
 product: Rackspace Private Cloud Powered by OpenStack
+product_url: rpc-openstack
 ---
 
 \#\# Rackspace Private Cloud Certified and Supported Devices \*\*Private

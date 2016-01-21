@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-08'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Caching rules are designed to determine how long your content should

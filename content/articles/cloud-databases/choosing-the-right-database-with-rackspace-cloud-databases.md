@@ -7,6 +7,7 @@ created_by: Ross Diaz
 last_modified_date: '2016-01-18'
 last_modified_by: Kelly Holcomb
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 Cloud Databases supports MySQL 5.6, Percona 5.6, and MariaDB 10.

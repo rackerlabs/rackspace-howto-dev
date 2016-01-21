@@ -7,6 +7,7 @@ created_by: Jim Culbreath
 last_modified_date: '2016-01-19'
 last_modified_by: Kelly Holcomb
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 In the Cloud Control Panel, you can choose to set monitoring checks on

@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2012-07-24'
 last_modified_by: Rackspace Support
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 <div>

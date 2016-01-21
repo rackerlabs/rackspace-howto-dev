@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Queues
+product_url: cloud-queues
 ---
 
 \#\#\#\# Will Cloud Queues work with Hybrid or RackConnect? Yes. Cloud

@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2016-01-08'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Rackspace CDN allows users to restrict content based on geographical

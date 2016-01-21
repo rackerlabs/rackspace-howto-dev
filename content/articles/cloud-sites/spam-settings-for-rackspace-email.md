@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-21'
 last_modified_by: Rose Contreras
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 **Note:** This documentation refers to a feature that is no longer

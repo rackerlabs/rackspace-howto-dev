@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-10-02'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 This article describes how you create and manage read replicas for your

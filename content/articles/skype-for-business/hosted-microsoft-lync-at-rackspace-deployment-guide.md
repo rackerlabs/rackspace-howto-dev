@@ -7,6 +7,7 @@ created_by: Aaron Medrano
 last_modified_date: '2016-01-19'
 last_modified_by: Rose Contreras
 product: Microsoft Skype for Business
+product_url: skype-for-business
 ---
 
 Hosted Microsoft Lync is a unified communications tool that offers

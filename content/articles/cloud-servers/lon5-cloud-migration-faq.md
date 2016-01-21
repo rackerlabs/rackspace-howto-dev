@@ -7,6 +7,7 @@ created_by: Stephanie Fillmon
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 In May 2015, Rackspace opened a new data centre, LON5, to support our

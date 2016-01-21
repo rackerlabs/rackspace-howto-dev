@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-01-12'
 last_modified_by: Kyle Laffoon
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 This article shows you how to upgrade from a MySQL 5.1 instance to a new

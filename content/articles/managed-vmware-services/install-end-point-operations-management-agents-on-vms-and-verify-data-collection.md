@@ -7,6 +7,7 @@ created_by: Erik Wilson
 last_modified_date: '2016-01-20'
 last_modified_by: Nate Archer
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 To get the new functionality from VMware^&reg;^ vRealize^&trade;^Operations^&trade;^

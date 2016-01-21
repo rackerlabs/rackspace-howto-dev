@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2015-07-10'
 last_modified_by: Renee Rendon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 All servers provisioned by Rackspace are configured to use Rackspace

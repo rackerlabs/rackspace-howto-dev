@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-06-12'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 If you are having issues viewing your SQL Server 2005 database in

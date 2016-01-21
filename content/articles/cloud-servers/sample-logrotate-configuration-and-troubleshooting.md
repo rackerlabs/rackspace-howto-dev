@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 ### Applying knowledge

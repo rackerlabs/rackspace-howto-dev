@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Contreras
 product: Managed Operations
+product_url: managed-operations
 ---
 
 Get quick answers to common questions about Rackspace Managed Cloud

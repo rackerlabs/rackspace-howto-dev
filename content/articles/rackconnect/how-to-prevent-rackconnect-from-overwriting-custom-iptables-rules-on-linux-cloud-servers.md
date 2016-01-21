@@ -7,6 +7,7 @@ created_by: Russell Lambert
 last_modified_date: '2014-11-11'
 last_modified_by: Jered Heeschen
 product: RackConnect
+product_url: rackconnect
 ---
 
 By default, RackConnect Automation takes complete control of the

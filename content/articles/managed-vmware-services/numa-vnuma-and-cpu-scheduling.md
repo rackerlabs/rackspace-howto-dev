@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 \# What is NUMA? NUMA stands for Non-Uniform Memory Access, but what

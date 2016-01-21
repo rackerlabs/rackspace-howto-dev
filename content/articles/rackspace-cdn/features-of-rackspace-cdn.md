@@ -7,6 +7,7 @@ created_by: Catherine Richardson
 last_modified_date: '2015-05-28'
 last_modified_by: David Hendler
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Following are some of the top features of Rackspace CDN:

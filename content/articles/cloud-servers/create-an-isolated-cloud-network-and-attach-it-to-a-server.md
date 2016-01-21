@@ -7,6 +7,7 @@ created_by: Susan Million
 last_modified_date: '2016-01-10'
 last_modified_by: Renee Rendon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 With Cloud Networks you can create a virtual layer 2 network that you

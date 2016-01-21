@@ -7,6 +7,7 @@ created_by: Joseph Palumbo
 last_modified_date: '2016-01-07'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Developing a powerful application or a beautifully designed web

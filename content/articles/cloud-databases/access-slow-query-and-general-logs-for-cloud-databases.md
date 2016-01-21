@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-07'
 last_modified_by: Nate Archer
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 Database logs can be useful tools when analyzing database performance or

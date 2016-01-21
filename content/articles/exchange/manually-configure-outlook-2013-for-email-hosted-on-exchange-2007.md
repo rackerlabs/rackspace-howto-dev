@@ -7,6 +7,7 @@ created_by: Marco Salazar
 last_modified_date: '2015-01-09'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 Complete the following steps to set up your Microsoft Exchange 2007

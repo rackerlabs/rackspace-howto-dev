@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-10'
 last_modified_by: Renee Rendon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Cloud Networks lets you attach an isolated network to new next

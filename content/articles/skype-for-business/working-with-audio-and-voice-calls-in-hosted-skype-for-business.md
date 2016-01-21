@@ -7,6 +7,7 @@ created_by: Aaron Medrano
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Skype for Business
+product_url: skype-for-business
 ---
 
 When you use Hosted Skype for Business at Rackspace, you can make and

@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-11'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 <span>Creating an image lets you have saved images for later use as a

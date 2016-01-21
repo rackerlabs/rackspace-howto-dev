@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 For testing and production use of our database server, we'll want to

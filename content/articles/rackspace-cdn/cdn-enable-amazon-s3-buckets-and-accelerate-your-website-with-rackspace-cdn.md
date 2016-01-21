@@ -7,6 +7,7 @@ created_by: Catherine Richardson
 last_modified_date: '2016-01-08'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 To create a static website<span>, a site that does not change for each

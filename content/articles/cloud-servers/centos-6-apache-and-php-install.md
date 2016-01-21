@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article demonstrates how to install Apache and PHP on CentOS 6.

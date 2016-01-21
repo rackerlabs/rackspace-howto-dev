@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Nate Archer
 product: Managed Operations
+product_url: managed-operations
 ---
 
 Linux patching comes directly from vendors or distribution communities.

@@ -7,6 +7,7 @@ created_by: Brian Hazzard
 last_modified_date: '2015-09-14'
 last_modified_by: Kelly Holcomb
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 You can enable Rackspace Email users to change their passwords without

@@ -7,6 +7,7 @@ created_by: Ian Avery
 last_modified_date: '2015-03-30'
 last_modified_by: Kelly Holcomb
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 This article shows you how to set up your Rackspace Email account using

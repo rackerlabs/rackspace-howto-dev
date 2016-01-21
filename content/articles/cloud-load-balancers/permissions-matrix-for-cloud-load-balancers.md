@@ -7,6 +7,7 @@ created_by: Renee Rendon
 last_modified_date: '2016-01-17'
 last_modified_by: Rose Contreras
 product: Cloud Load Balancers
+product_url: cloud-load-balancers
 ---
 
 The following permissions matrix displays specific permissions for the

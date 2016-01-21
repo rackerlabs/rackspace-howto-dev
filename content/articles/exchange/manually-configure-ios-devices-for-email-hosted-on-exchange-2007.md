@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-01-09'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article below will get your Microsoft Exchange email

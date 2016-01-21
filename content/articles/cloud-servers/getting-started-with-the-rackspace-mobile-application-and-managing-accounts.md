@@ -7,6 +7,7 @@ created_by: Jamie Rosenfield
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Now that you are familiar with the Control Panel, let's introduce you to

@@ -7,6 +7,7 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-20'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 You can use the Cloud Control Panel to provision an instance of Brocade

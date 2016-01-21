@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-08'
 last_modified_by: Constanze Kratel
 product: RackConnect
+product_url: rackconnect
 ---
 
 <span>Customers can now upgrade from RackConnect v2.0 to RackConnect

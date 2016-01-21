@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
+product_url: cloud-orchestration
 ---
 
 This tutorial walks through the process of manually adding another

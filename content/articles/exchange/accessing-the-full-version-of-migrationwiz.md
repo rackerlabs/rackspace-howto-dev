@@ -7,6 +7,7 @@ created_by: Milton Prado
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 We provide our customers with a Private Label version of MigrationWiz.

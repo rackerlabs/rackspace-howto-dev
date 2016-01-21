@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-22'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 We offer a number of Email Migration services to our customers at no

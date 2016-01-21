@@ -7,6 +7,7 @@ created_by: Ian Avery
 last_modified_date: '2015-02-11'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 This article explains how to recover a Rackspace Email mailbox that was

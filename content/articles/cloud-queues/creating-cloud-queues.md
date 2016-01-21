@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2016-01-05'
 last_modified_by: Mike Asthalter
 product: Cloud Queues
+product_url: cloud-queues
 ---
 
 Creating a Cloud Queue can be accomplished through the Control Panel or

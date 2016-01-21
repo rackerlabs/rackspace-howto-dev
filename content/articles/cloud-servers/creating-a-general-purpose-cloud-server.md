@@ -7,6 +7,7 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article explains how to set up a General Purpose cloud server

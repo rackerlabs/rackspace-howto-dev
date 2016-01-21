@@ -7,6 +7,7 @@ created_by: Neha Verma
 last_modified_date: '2016-01-21'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 Monitoring is included with Cloud Databases to help you manage the

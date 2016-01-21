@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Backup
+product_url: cloud-backup
 ---
 
 Some users are used to taking snapshots of their Cloud Server ([product

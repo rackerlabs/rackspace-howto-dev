@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2013-02-04'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 Our clusters now have the MSSQL 2012 data types installed (assembly

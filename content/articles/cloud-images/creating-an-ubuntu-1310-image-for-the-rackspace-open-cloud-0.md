@@ -7,6 +7,7 @@ created_by: Cloud Images
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Images
+product_url: cloud-images
 ---
 
 You can use the Cloud Images service to import custom virtual machine

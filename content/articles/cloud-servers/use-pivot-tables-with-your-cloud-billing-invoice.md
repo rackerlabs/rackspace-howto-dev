@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 You can use the Rackspace CSV-formatted invoice to filter and manipulate

@@ -7,6 +7,7 @@ created_by: Joanna Salazar
 last_modified_date: '2015-02-19'
 last_modified_by: Rose Contreras
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 When you create a distribution list in Hosted Microsoft Exchange, you

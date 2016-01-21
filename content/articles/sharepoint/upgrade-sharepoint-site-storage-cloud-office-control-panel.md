@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Microsoft SharePoint
+product_url: sharepoint
 ---
 
 The SharePoint service provides 250 MB of storage at no charge. When you

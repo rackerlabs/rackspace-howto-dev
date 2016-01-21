@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-04-03'
 last_modified_by: Kelly Holcomb
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 A configuration group is a collection of settings that you can save and

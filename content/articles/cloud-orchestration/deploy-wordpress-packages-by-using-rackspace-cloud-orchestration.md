@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-21'
 last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
+product_url: cloud-orchestration
 ---
 
 Rackspace Cloud Orchestration for Cloud Servers simplifies the process

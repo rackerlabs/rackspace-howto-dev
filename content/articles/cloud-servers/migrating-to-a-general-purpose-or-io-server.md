@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Migrating your data to a General Purpose or I/O-optimized cloud server

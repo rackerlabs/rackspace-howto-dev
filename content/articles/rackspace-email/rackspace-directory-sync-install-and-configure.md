@@ -7,6 +7,7 @@ created_by: Kevin Richey
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Systems Requirements

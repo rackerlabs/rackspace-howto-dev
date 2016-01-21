@@ -7,6 +7,7 @@ created_by: Juan Perez
 last_modified_date: '2014-10-21'
 last_modified_by: Kyle Laffoon
 product: RackConnect
+product_url: rackconnect
 ---
 
 <span style="line-height: 1.538em;">RackConnect Auto NAT is a new

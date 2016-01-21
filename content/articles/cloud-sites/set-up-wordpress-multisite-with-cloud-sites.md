@@ -7,6 +7,7 @@ created_by: Thomas Hester
 last_modified_date: '2016-01-04'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 WordPress Multisite, which prior to version 3.0 of WordPress was known

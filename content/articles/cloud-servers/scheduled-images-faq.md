@@ -7,6 +7,7 @@ created_by: Brian Rosmaita
 last_modified_date: '2016-01-06'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 -   [Scheduled Images](#overview)

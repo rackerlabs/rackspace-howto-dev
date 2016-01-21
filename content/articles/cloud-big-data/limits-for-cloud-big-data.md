@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-21'
 last_modified_by: Margaret Eker
 product: Cloud Big Data
+product_url: cloud-big-data
 ---
 
 All accounts, by default, have a preconfigured set of thresholds (or

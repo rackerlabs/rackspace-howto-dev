@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-11-11'
 last_modified_by: David Hendler
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Creating DNS records for your domain is easy to do within the [Cloud

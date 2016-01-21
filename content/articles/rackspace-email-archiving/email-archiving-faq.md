@@ -7,6 +7,7 @@ created_by: Benjamin Jeffery
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 #### Is there a limit on how much data I can export from my email archive?

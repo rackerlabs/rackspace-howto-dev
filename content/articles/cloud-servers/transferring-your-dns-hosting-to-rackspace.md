@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Rackspace enables you to manage your DNS through our control panel while

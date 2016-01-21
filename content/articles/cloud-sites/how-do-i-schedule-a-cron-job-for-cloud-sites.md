@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-04'
 last_modified_by: Justin Taylor
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 **NOTE:** This article refers to the [Cloud Sites Control

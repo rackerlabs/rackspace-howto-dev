@@ -7,6 +7,7 @@ created_by: Karin Levenstein
 last_modified_date: '2016-01-05'
 last_modified_by: Kyle Laffoon
 product: Rackspace Private Cloud Powered by OpenStack
+product_url: rpc-openstack
 ---
 
 [Rackspace Private Cloud Powered by

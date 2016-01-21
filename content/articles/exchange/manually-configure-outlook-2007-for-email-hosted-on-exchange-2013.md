@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2015-01-09'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 Use the following steps to set up your Microsoft Exchange 2013 mailbox

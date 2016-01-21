@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-06'
 last_modified_by: Kelly Holcomb
 product: Microsoft SharePoint
+product_url: sharepoint
 ---
 
 Rackspace Cloud Storage App *for Microsoft SharePoint* enables you to

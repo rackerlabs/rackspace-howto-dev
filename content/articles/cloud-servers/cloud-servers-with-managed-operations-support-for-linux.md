@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-21'
 last_modified_by: Zach Corleissen
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Managed Operations provides support beyond Managed Infrastructure,

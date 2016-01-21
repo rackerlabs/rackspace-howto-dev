@@ -7,6 +7,7 @@ created_by: Jerry Schwartz
 last_modified_date: '2015-12-11'
 last_modified_by: Nate Archer
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 ### First Generation Cloud Servers:  Sample Code

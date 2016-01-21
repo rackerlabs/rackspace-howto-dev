@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 Archive search results can be exported to share with outside parties.

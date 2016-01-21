@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-02'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 Scheduled backups for Cloud Databases allow users to schedule periodic

@@ -7,6 +7,7 @@ created_by: Matt Sherborne
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 In the \[previous

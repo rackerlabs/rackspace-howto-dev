@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-21'
 last_modified_by: Catherine Richardson
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Rackspace Cloud Identity supports tokens of

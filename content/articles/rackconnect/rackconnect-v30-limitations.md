@@ -7,6 +7,7 @@ created_by: Juan Perez
 last_modified_date: '2014-11-17'
 last_modified_by: Rose Contreras
 product: RackConnect
+product_url: rackconnect
 ---
 
 **Applies to:** RackConnect v3.0

@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-19'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Rackspace data centers are Payment Card Industry (PCI) Data Security

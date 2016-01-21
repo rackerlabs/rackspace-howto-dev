@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-12'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 With updates being made to the Cloud Sites infrastucture, some users

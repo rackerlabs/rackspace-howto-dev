@@ -7,6 +7,7 @@ created_by: Trey Hoehne
 last_modified_date: '2016-01-11'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 The SSH protocol for remotely connecting to servers supports the use of

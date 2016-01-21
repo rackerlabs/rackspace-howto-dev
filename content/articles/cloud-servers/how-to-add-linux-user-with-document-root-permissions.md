@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2012-10-09'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article will walk you through setting up a Linux user with read and

@@ -7,6 +7,7 @@ created_by: Jerry Schwartz
 last_modified_date: '2016-01-05'
 last_modified_by: Catherine Richardson
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 **<span><span>First Generation and Next Generation Cloud Servers:  How

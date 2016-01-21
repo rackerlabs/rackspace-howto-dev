@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-15'
 last_modified_by: Nate Archer
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 Directory permissions in a shared environment are exponentially more

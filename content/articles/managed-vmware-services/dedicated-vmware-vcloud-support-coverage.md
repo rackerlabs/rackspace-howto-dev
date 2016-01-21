@@ -7,6 +7,7 @@ created_by: Karin Levenstein
 last_modified_date: '2016-01-20'
 last_modified_by: Kelly Holcomb
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 Support coverage for Rackspace Dedicated VMware vCloud is similar to

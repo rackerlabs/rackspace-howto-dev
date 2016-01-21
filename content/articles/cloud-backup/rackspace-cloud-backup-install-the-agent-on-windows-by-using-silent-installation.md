@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2015-09-01'
 last_modified_by: Catherine Richardson
 product: Cloud Backup
+product_url: cloud-backup
 ---
 
 This article describes how to perform a fresh installation or update of

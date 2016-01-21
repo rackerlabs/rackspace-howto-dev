@@ -7,6 +7,7 @@ created_by: Kyle Laffoon
 last_modified_date: '2015-04-02'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 The Rackspace Knowledge Center is an online support resource that

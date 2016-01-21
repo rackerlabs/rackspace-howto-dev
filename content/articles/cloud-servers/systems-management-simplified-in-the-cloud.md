@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2012-08-01'
 last_modified_by: Rackspace Support
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 [<img src="http://c179631.r31.cf0.rackcdn.com/scalextreme.png" alt="scalextreme" id="__mce_tmp" width="395" height="129" />](http://www.scalextreme.com/)

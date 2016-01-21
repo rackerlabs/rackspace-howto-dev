@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-19'
 last_modified_by: Kelly Holcomb
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 The \[Cloud Office Control

@@ -7,6 +7,7 @@ created_by: Catherine Richardson
 last_modified_date: '2015-05-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Following are some uses of Rackspace CDN:

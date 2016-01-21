@@ -7,6 +7,7 @@ created_by: Renee Rendon
 last_modified_date: '2016-01-18'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 The following permissions matrix displays specific permissions for the

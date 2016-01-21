@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-13'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
  The MyRackspace Firewall Manager application is an upgraded version

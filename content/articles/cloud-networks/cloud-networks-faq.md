@@ -7,6 +7,7 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Networks
+product_url: cloud-networks
 ---
 
 \#\#\# Getting Started \#\#\#\# What are the different networks in the

@@ -7,6 +7,7 @@ created_by: Juan Perez
 last_modified_date: '2014-10-03'
 last_modified_by: Jered Heeschen
 product: RackConnect
+product_url: rackconnect
 ---
 
 Each Cloud Server comes with a single private IP address.  When

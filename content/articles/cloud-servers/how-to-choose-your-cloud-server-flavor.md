@@ -7,6 +7,7 @@ created_by: Thomas Duesing
 last_modified_date: '2014-11-04'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Each flavor class is designed for a specific workload range. Review the

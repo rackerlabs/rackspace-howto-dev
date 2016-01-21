@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-11'
 last_modified_by: Catherine Richardson
 product: Cloud Block Storage
+product_url: cloud-block-storage
 ---
 
 In Cloud Block Storage, we work with volumes. Volumes are the detachable

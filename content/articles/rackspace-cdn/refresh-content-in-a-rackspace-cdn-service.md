@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-11'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 To refresh the content in a Rackspace CDN service, follow these steps:

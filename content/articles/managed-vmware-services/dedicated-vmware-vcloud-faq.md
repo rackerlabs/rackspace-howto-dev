@@ -7,6 +7,7 @@ created_by: Karin Levenstein
 last_modified_date: '2016-01-21'
 last_modified_by: Rose Coste
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 Dedicated VMware vCloud&reg; is a private cloud offering based on VMware

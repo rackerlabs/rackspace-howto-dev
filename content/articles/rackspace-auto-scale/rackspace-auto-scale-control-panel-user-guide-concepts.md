@@ -7,6 +7,7 @@ created_by: Maria Abrahms
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 The [Introduction to Rackspace Auto

@@ -7,6 +7,7 @@ created_by: Thomas Hester
 last_modified_date: '2014-10-15'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 WP Super Cache is an available plugin for [Wordpress

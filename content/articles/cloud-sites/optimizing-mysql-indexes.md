@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2011-09-07'
 last_modified_by: Rackspace Support
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 **Importance of using Indexes in your MySQL database:**

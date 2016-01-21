@@ -7,6 +7,7 @@ created_by: Paul Querna
 last_modified_date: '2014-07-24'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Cloud-init works out of the box with OnMetal servers. Therefore, you can

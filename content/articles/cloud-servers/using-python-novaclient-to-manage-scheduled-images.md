@@ -7,6 +7,7 @@ created_by: Brian Rosmaita
 last_modified_date: '2014-10-29'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Introduction

@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 

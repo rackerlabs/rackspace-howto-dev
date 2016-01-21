@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article will help you setup your Microsoft Exchange 2010

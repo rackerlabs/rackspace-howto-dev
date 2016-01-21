@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-12'
 last_modified_by: Nate Archer
 product: Cloud Files
+product_url: cloud-files
 ---
 
 You can enhance your WordPress blog by using Cloud Files with content

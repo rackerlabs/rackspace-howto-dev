@@ -7,6 +7,7 @@ created_by: Bekki Bolthouse
 last_modified_date: '2015-12-18'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 Sometimes, an email alert isn't enough. If you are on call, on the go,

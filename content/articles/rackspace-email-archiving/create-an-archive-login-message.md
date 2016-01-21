@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2015-11-19'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 **Note:** The information contained in this article is for Cloud Office

@@ -7,6 +7,7 @@ created_by: Maria Abrahms
 last_modified_date: '2014-03-19'
 last_modified_by: Ross Diaz
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 ### Agent

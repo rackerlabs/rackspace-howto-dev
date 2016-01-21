@@ -7,6 +7,7 @@ created_by: Rose Coste
 last_modified_date: '2016-01-08'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence provides an interface that you can use to create

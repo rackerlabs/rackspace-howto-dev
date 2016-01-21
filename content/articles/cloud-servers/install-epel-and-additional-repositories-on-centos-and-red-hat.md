@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-03'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article describes how to configure a CentOS or Red Hat Enterprise

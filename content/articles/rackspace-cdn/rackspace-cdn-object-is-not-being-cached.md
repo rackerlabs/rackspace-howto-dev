@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 When an object that is defined in the origin and in the appropriate path

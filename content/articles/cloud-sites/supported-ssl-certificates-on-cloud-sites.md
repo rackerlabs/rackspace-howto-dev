@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-06'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 The following SSL certificates are supported on Cloud Sites:

@@ -7,6 +7,7 @@ created_by: Luis Garcia
 last_modified_date: '2016-01-11'
 last_modified_by: Nate Archer
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 Because domain transfer processes can vary, the process outlined in this

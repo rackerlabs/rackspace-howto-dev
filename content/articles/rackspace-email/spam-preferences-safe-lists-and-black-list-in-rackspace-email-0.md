@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-07-14'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Rackspace gives our users the flexibility to set their own Spam

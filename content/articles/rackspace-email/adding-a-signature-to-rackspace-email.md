@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-02-03'
 last_modified_by: Ross Diaz
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 The following article will help set up your signature which can include

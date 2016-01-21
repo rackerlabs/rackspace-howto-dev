@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 **Note**: This guide is for Rackspace Intelligence on a standard cloud

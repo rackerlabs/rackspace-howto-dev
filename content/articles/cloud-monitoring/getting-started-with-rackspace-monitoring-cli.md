@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 Cloud Monitoring is an API driven cloud service built for infrastructure

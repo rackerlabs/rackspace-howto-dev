@@ -7,6 +7,7 @@ created_by: Jered Heeschen
 last_modified_date: '2015-10-01'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 The data disks attached to some Cloud Servers flavors, specifically I/O

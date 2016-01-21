@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-08'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 <span>This article is intended to help you map Amazon Web Services (AWS)

@@ -7,6 +7,7 @@ created_by: Jerry Schwartz
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 The Rackspace [Knowledge

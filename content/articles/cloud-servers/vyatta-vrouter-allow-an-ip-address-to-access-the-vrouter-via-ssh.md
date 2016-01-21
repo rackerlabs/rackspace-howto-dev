@@ -7,6 +7,7 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-07'
 last_modified_by: Renee Rendon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article demonstrates how to configure an IP address to connect to a

@@ -7,6 +7,7 @@ created_by: Erik Wilson
 last_modified_date: '2016-01-13'
 last_modified_by: Rose Contreras
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 Dedicated VMware^&reg;^ vCenter Server&trade;, and Rackspace Private Cloud powered

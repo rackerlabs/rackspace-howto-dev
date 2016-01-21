@@ -7,6 +7,7 @@ created_by: Thomas Hester
 last_modified_date: '2015-11-12'
 last_modified_by: Nate Archer
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 W3 Total Cache is a plugin that enables you to store cached versions of

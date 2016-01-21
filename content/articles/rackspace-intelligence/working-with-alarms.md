@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-13'
 last_modified_by: Rose Coste
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence provides a wizard that guides you through the

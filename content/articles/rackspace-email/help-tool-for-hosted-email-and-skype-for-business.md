@@ -7,6 +7,7 @@ created_by: Beau Bailey
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Rackspace provides a self-service help tool to assist you and your users

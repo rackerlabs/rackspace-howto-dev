@@ -7,6 +7,7 @@ created_by: Catherine Richardson
 last_modified_date: '2015-06-03'
 last_modified_by: Kyle Laffoon
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 Rackspace CDN currently has the following limits:

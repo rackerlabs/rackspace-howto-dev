@@ -7,6 +7,7 @@ created_by: Milton Prado
 last_modified_date: '2015-12-17'
 last_modified_by: Nate Archer
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 What is Forced MX Routing?

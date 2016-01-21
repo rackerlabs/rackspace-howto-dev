@@ -7,6 +7,7 @@ created_by: Kenny Johnston
 last_modified_date: '2015-08-10'
 last_modified_by: Nate Archer
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Your monthly Rackspace account invoice includes account and billing

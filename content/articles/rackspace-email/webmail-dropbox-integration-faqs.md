@@ -7,6 +7,7 @@ created_by: Aaron Medrano
 last_modified_date: '2014-12-30'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Overview

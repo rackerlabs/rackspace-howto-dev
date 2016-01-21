@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 Use the following MySQL command to export your database.

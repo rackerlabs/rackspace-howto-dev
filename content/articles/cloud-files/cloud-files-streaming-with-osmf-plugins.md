@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
+product_url: cloud-files
 ---
 
 Streaming allows users to serve their content directly from Akamai edge

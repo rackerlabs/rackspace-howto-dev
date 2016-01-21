@@ -7,6 +7,7 @@ created_by: Bryon Farris
 last_modified_date: '2013-12-19'
 last_modified_by: Ross Diaz
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 *This article is an expansion of an existing article regarding basic

@@ -7,6 +7,7 @@ created_by: Megan Meza
 last_modified_date: '2015-12-17'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 After you create your CDN service, you must activate it by pointing the

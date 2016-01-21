@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Kyle Laffoon
 product: Cloud Files
+product_url: cloud-files
 ---
 
 This article is about setting up automatic MySQL server backups from

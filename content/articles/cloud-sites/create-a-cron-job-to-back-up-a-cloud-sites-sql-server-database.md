@@ -7,6 +7,7 @@ created_by: Matt Costello
 last_modified_date: '2015-03-30'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 **Note:** This article is written for the [Cloud Sites Control

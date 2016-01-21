@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
+product_url: rackconnect
 ---
 
 **Applies to:** RackConnect v2.0. For questions on RackConnect v3.0, see

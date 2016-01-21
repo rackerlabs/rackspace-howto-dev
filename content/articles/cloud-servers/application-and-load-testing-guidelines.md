@@ -7,6 +7,7 @@ created_by: Lee Kimber
 last_modified_date: '2015-11-23'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Application and load testing guidelines

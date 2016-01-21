@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-12-29'
 last_modified_by: Nate Archer
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 The following article will cover how to create an alias that can be used

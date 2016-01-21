@@ -7,6 +7,7 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 To deploy the Rackspace Metrics service, you first need to complete the

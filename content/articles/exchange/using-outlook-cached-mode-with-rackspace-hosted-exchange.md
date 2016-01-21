@@ -7,6 +7,7 @@ created_by: Kevin Richey
 last_modified_date: '2015-01-20'
 last_modified_by: David Hendler
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 Outlook 2010 and 2013 have a feature called Cached Exchange Mode that

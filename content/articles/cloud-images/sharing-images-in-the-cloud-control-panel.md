@@ -7,6 +7,7 @@ created_by: Cloud Images
 last_modified_date: '2015-03-17'
 last_modified_by: Kyle Laffoon
 product: Cloud Images
+product_url: cloud-images
 ---
 
 This article provides some general information about sharing server

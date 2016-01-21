@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-21'
 last_modified_by: Mike Asthalter
 product: Cloud Load Balancers
+product_url: cloud-load-balancers
 ---
 
 This article shows you how to set up a load balancer. - \[What is a load

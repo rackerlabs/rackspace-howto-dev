@@ -7,6 +7,7 @@ created_by: Kevin Richey
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 This article provides information for domain administrators working with

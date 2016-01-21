@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Managed Operations
+product_url: managed-operations
 ---
 
 Managed Operations for Windows 2012 R2 Servers includes upsizes,

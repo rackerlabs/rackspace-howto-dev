@@ -7,6 +7,7 @@ created_by: Susan Million
 last_modified_date: '2016-01-06'
 last_modified_by: Catherine Richardson
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 All Next Generation Cloud Servers automatically receive three static IP

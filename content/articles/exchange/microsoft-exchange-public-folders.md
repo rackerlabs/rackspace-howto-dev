@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-15'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 Public folders are a feature of Microsoft Exchange that are used to

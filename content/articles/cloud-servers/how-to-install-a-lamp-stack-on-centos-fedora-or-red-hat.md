@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-08-19'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 <span class="message_content">This article provides instructions for

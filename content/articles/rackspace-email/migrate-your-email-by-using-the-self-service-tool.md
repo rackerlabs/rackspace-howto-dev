@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-07'
 last_modified_by: Constanze Kratel
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 This article demonstrates how to use the Self-Service Migration Tool

@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-09-28'
 last_modified_by: Renee Rendon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article will get your Microsoft Exchange 2010 Mailbox set

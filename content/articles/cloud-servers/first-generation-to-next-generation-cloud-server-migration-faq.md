@@ -7,6 +7,7 @@ created_by: Trey Hoehne
 last_modified_date: '2016-01-07'
 last_modified_by: Renee Rendon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article provides answers to frequently asked questions about

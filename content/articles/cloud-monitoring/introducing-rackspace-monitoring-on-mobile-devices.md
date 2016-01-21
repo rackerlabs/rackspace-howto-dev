@@ -7,6 +7,7 @@ created_by: Maria Abrahms
 last_modified_date: '2016-01-04'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 <span>The new Rackspace Cloud mobile application for iOS and Android

@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-08'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article provides a high-level overview of the steps to perform to

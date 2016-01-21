@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-05-06'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 This article provides methods for bypassing the cache when delivering

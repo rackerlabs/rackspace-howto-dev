@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-11'
 last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
+product_url: cloud-block-storage
 ---
 
 A clone of a Cloud Block Storage volume is a copy made of an existing

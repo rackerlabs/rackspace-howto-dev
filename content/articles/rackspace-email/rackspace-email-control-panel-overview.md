@@ -7,6 +7,7 @@ created_by: Nicholas Fleisig
 last_modified_date: '2015-09-03'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 Welcome to Rackspace Cloud Office! After you sign up for Rackspace Email

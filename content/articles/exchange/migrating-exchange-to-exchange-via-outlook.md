@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2013-12-12'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article will demonstrate how to transfer your current

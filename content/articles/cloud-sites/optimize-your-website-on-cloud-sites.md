@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 This article describes some best practices and suggestions for

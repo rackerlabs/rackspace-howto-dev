@@ -7,6 +7,7 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 This article provides links to instructions for setting up email clients

@@ -7,6 +7,7 @@ created_by: David Hendler
 last_modified_date: '2016-01-21'
 last_modified_by: Kelly Holcomb
 product: RackConnect
+product_url: rackconnect
 ---
 
 **Applies to:** RackConnect v2.0

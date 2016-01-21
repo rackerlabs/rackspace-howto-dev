@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2015-11-05'
 last_modified_by: Renee Rendon
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 The following article will help you setup your Microsoft Exchange 2013

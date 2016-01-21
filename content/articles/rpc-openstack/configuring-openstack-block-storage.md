@@ -7,6 +7,7 @@ created_by: Karin Levenstein
 last_modified_date: '2015-09-23'
 last_modified_by: Kyle Laffoon
 product: Rackspace Private Cloud Powered by OpenStack
+product_url: rpc-openstack
 ---
 
 Rackspace has developed a set of OpenStack Block Storage (Cinder) chef

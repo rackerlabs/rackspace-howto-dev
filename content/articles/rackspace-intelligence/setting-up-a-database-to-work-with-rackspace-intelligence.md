@@ -7,6 +7,7 @@ created_by: Rose Coste
 last_modified_date: '2015-09-01'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 You can use Rackspace Intelligence to help you observe the status of

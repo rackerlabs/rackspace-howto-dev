@@ -7,6 +7,7 @@ created_by: Mawutor Amesawu
 last_modified_date: '2015-03-05'
 last_modified_by: Rose Contreras
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 Use the procedure in this article to configure a Microsoft Exchange 2010

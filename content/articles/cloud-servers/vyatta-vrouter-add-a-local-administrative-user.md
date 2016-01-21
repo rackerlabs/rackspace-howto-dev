@@ -7,6 +7,7 @@ created_by: Sameer Satyam
 last_modified_date: '2015-02-18'
 last_modified_by: Rose Contreras
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article demonstrates how to add a local user to a Brocade Vyatta

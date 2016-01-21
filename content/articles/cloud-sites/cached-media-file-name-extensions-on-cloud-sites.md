@@ -7,6 +7,7 @@ created_by: Luis Garcia
 last_modified_date: '2016-01-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 The Cloud Sites load-balancing layer provides caching services for the

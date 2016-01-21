@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2014-11-12'
 last_modified_by: David Hendler
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 One of the greatest conveniences of Rackspace Cloud Sites is automatic

@@ -7,6 +7,7 @@ created_by: Nate Archer
 last_modified_date: '2015-08-13'
 last_modified_by: Nate Archer
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 To change a cloud server's root/admin password from your account's list

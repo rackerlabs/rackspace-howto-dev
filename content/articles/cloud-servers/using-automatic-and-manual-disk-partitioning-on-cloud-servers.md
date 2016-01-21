@@ -7,6 +7,7 @@ created_by: Trey Hoehne
 last_modified_date: '2014-11-03'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 When you use the Cloud Control Panel to create a Cloud Server that uses

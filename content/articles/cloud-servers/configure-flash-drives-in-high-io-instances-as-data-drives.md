@@ -7,6 +7,7 @@ created_by: Paul Querna
 last_modified_date: '2014-08-15'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 The two 1.6 TB PCIe flash cards included with the OnMetal I/O flavor

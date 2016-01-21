@@ -7,6 +7,7 @@ created_by: Sterling Mcneill
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
+product_url: rackspace-email
 ---
 
 To protect the email service and ensure a timely and reliable experience

@@ -7,6 +7,7 @@ created_by: Renee Rendon
 last_modified_date: '2016-01-19'
 last_modified_by: Kyle Laffoon
 product: Cloud Images
+product_url: cloud-images
 ---
 
 The following permissions matrix displays specific permissions for the

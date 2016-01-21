@@ -7,6 +7,7 @@ created_by: Nicole Schwartz
 last_modified_date: '2016-01-18'
 last_modified_by: Kelly Holcomb
 product: Managed Operations
+product_url: managed-operations
 ---
 
 The Managed Cloud pricing model provides greater transparency of your

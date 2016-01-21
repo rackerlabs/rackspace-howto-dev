@@ -7,6 +7,7 @@ created_by: Renee Rendon
 last_modified_date: '2016-01-15'
 last_modified_by: Rose Contreras
 product: Cloud Block Storage
+product_url: cloud-block-storage
 ---
 
 The following permissions matrix displays specific permissions for the

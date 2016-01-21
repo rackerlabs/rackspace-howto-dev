@@ -7,6 +7,7 @@ created_by: Mike Hicklen
 last_modified_date: '2014-12-17'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
+product_url: cloud-sites
 ---
 
 Many Rackspace Manager Cloud customers already use the power of the open

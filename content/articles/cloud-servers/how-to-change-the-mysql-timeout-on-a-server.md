@@ -7,6 +7,7 @@ created_by: Rose Contreras
 last_modified_date: '2014-03-10'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 A MySQL server timeout can occur for many reasons, but happens most

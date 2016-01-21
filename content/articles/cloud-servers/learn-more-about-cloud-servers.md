@@ -7,6 +7,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-06'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Looking for information about Cloud Servers? The following sections
