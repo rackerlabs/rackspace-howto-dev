@@ -35,7 +35,7 @@ The basics of Cloud Files include:
     Control Panel or language-specific programming interfaces
 
 For more details, see the [Cloud Files Key
-Concepts](/how-to/cloud-files-key-concepts).
+Concepts](https://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
 
 What is the CDN?
 ----------------

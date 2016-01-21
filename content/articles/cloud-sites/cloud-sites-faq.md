@@ -1010,13 +1010,13 @@ following articles:
 **Cron FAQ's:**
 
 -   **[What is a cron
-    job?](https://www.rackspace.com/knowledge_center/article/what-is-a-cloud-sites-cron-job)**
+    job?](/how-to/cloud-sites-faq)**
 -   **[Enable or disable a Cloud Sites scheduled task
-    (cron job)](https://www.rackspace.com/knowledge_center/article/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)**
+    (cron job)](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)**
 -   **[How do I schedule a cron
-    job?](https://www.rackspace.com/knowledge_center/article/how-do-i-schedule-a-cron-job-for-cloud-sites)**
+    job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites)**
 -   **[Create a cron job to back up a Cloud Sites SQL Server
-    database](https://www.rackspace.com/knowledge_center/article/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database)**
+    database](/how-to/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database)**
 
 #### What is the shortest scheduled interval I can set for a Cloud Sites cron job?
 

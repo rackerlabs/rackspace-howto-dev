@@ -80,7 +80,7 @@ For a summary of the concepts mentioned in this article, read the
 <span>[Single Pane of Glass for Your IT
 Ops](http://bit.ly/maas-intelligence) blog post or the [Getting Started
 with Rackspace
-Intelligence](/how-to/getting-started-with-rackspace-intelligence)
+Intelligence](/how-to/rackspace-intelligence)
 article.</span><span> </span>
 
 Start using agent health monitoring

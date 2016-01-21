@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 This article provides a closer look at the services available on
 the **Account Settings** and **User Management** pages in the Cloud

@@ -12,7 +12,7 @@ body_format: full_html
 
 **Applies to:** RackConnect v3.0. For questions on RackConnect v2.0, see
 [RackConnect 2.0 -
-FAQ](/how-to/rackconnect-20-faq).
+FAQ](/how-to/rackconnect-v20-faq).
 
 #### Can I allocate multiple cloud networks to a single RackConnect v3.0 cloud server?
 

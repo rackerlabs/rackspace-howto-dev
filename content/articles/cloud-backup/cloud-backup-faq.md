@@ -89,7 +89,7 @@ in the Getting Started Guide.
 If you wish to create your own encrypted key and bypass the default
 client-side encryption, please refer to [this article on using OpenSSL
 to generate a
-key](https://www.rackspace.com/knowledge_center/article/generating-your-encrypted-key-in-cloud-backup).
+key](/how-to/generating-your-encrypted-key-in-cloud-backup).
 
 #### Where are my Cloud Backups stored?
 
@@ -107,9 +107,9 @@ You can create any number of backup jobs for each of your servers, and
 you can include a nearly unlimited number of files in each job.
 
 For more inoformation, see [Creating a
-Backup](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0)
+Backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
 in the [Rackspace Cloud Backup Getting Started
-Guide](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+Guide](/how-to/rackspace-cloud-backup-overview).
 
 #### What is De-duplication?
 
@@ -123,7 +123,7 @@ previous versions of your files (up to the limits specified in your data
 retention settings).
 
 See our section on [Scheduling and
-De-duplication](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-backup-actions-0#configurebackup)
+De-duplication](/how-to/rackspace-cloud-backup-backup-actions-0#configurebackup)
 in the RCBU Getting Started Guide.
 
 #### Can I use Rackspace Cloud Backup on my server?
@@ -141,7 +141,7 @@ already have the Cloud Backup agent installed on your system. If not,
 contact your account representative to get started.
 
 For more informations, see the Rackspace Cloud Backup [Getting Started
-Guide](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-overview).
+Guide](/how-to/rackspace-cloud-backup-overview).
 
 #### What is Rackspace Cloud Backup?
 

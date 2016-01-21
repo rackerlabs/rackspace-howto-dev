@@ -59,7 +59,7 @@ In the example, the term `bricks` is used because each directory in the setup is
 
 ## Set up a Rackspace network
 
-Run GlusterFS on its own [Rackspace cloud network](/how-to/getting-started-with-cloud-networks), which allows you to manage the network and firewall settings more easily.
+Run GlusterFS on its own [Rackspace cloud network](/how-to/cloud-networks), which allows you to manage the network and firewall settings more easily.
 
 As an example, you can set up a network by using the Nova client on your laptop as follows:
 
@@ -71,7 +71,7 @@ The first command returns the UUID of the network, which you can copy and paste 
 
     nova network-associate-host 4dad2eb0-5ed7-4147-8196-bba7dc2bb45f 23.253.156.109
 
-You could also perform these steps by using [the web UI](/how-to/getting-started-with-cloud-networks) instead of using the Nova command line.
+You could also perform these steps by using [the web UI](/how-to/cloud-networks) instead of using the Nova command line.
 
 ### Open the firewall
 

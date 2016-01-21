@@ -102,7 +102,7 @@ RackConnect can help you build for and maintain the highest availability
 possible.
 
 For more information, read [How do I get started with RackConnect
-v2.0](/how-to/getting-started-with-rackconnect-v20) and
+v2.0](/how-to/rackconnect-v20) and
 [RackConnect v2.0 Best
 Practices](/how-to/rackconnect-v20-best-practices).
 

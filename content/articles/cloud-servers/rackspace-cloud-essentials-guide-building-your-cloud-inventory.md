@@ -16,7 +16,7 @@ This Second Guide will show you how to add new Cloud Servers and Cloud Load Bala
 **Cloud Servers**
 
 -   [Getting Started with Cloud
-    Servers](/how-to/getting-started-with-cloud-servers-0)
+    Servers](/how-to/cloud-servers)
 -   [Rackspace Cloud Essentials - Choosing the right size cloud
     server](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-choosing-the-right-size-cloud-server)
 -   [<span>Managing your
@@ -30,5 +30,5 @@ This Second Guide will show you how to add new Cloud Servers and Cloud Load Bala
 
 
 [Back to Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 

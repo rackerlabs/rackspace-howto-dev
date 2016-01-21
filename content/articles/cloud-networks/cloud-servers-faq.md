@@ -27,7 +27,7 @@ software on your server. Rackspace does provide support for specific
 software and server configurations on Cloud Servers with Managed
 Operations. For more information on supported systems and third party
 packages, see [Cloud Servers with Managed Operations - Spheres of
-Support](https://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-service-level-spheres-of-support).
+Support](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 #### Do you support Ruby/Python/(insert language or application here)?
 
@@ -45,7 +45,7 @@ Software Development Kits (SDKs) documented at
 Yes. Our Control Panel has a DNS menu for maintaining domain records for
 your Cloud Servers. See [Create DNS records for Cloud Servers with the
 Control
-Panel](https://www.rackspace.com/knowledge_center/article/create-dns-records-for-cloud-servers-with-the-control-panel)
+Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)
 for more information.
 
 #### What are the DNS servers for my Cloud Server?
@@ -87,7 +87,7 @@ installation of common applications. We also have community forums where
 you can share tips and tricks with other customers.
 
 If you would like to have a [Managed
-Operations](https://www.rackspace.com/knowledge_center/article/cloud-servers-with-managed-cloud-service-level-spheres-of-support)
+Operations](/how-to/cloud-servers-with-managed-operations-support-for-linux)
 on your Cloud Servers, we offer that service. This operations level
 provides additional support on Cloud Servers, which includes monitoring,
 operating system and application infrastructure layer support, and
@@ -113,17 +113,17 @@ address.
 #### What if I mess up my Cloud Server?
 
 You can [reboot your
-server](https://www.rackspace.com/knowledge_center/article/managing-your-server-3-reboot-your-server-0).
+server](/how-to/reboot-your-server).
 You can [restore from a
-backup](https://www.rackspace.com/knowledge_center/article/cloud-essentials-4-creating-an-image-backup-cloning-and-restoring-a-server-from-a-saved).
+backup](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 You can [delete your
-server](https://www.rackspace.com/knowledge_center/article/managing-your-server-8-deleting-your-server-0)
+server](/how-to/deleting-your-server)
 and start over. You can [boot into an emergency rescue
-mode](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-3-rescue-mode-on-linux-cloud-servers-1)
+mode](/how-to/rescue-mode)
 and attempt fix the problem. There are many options for recovering from
 mistakes, but the easiest is to keep regular backups and to [make a
 fresh
-backup](https://www.rackspace.com/knowledge_center/article/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup)
+backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup)
 before attempting any major configuration changes or before installing
 new software.
 
@@ -173,7 +173,7 @@ non-PVHVM image, the following error message is displayed:
 
 For more information about PVHVM, see [Choosing a Virtualization Mode
 (PV versus
-PVHVM)](https://www.rackspace.com/knowledge_center/article/choosing-a-virtualization-mode-pv-versus-pvhvm).
+PVHVM)](/how-to/choosing-a-virtualization-mode-pv-versus-pvhvm).
 
 #### What do I enter in the Server Name field?
 
@@ -244,13 +244,13 @@ support that you need to get the most out of the Cloud.
 Yes. Our Control Panel has a DNS menu for maintaining domain records for
 your Cloud Servers. Read this article for [detailed information on using
 the Rackspace Cloud DNS Control
-Panel](https://www.rackspace.com/knowledge_center/article/getting-started-with-cloud-sites-managing-dns-records).
+Panel](/how-to/getting-started-with-cloud-sites-managing-dns-records).
 
 #### How do I get reverse DNS setup for my Cloud Server?
 
 You can setup reverse DNS from your control panel. This article will
 show you how: [Create a reverse DNS
-record.](https://www.rackspace.com/knowledge_center/article/create-a-reverse-dns-record-0)
+record.](/how-to/create-a-reverse-dns-record-0)
 
 #### Is there a throughput limit on my server's network interface card?
 
@@ -272,7 +272,7 @@ per datacenter.
 
 Yes. For more information on the IP request process, see [Requesting
 Additional IPv4 Addresses for First and Next Generation Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/requesting-additional-ipv4-addresses-for-first-and-next-generation-cloud-servers).
+Servers](/how-to/requesting-additional-ipv4-addresses-for-cloud-servers).
 
 #### I would like to set up multiple servers from the same image. Can I do this?
 
@@ -285,7 +285,7 @@ on-demand images of your Cloud Server. All Cloud Server images can be
 used to create new Cloud Servers or restore an existing Cloud Server.
 For details, see [Creating an Image of Your Performance Flavor Server
 with the Control
-Panel](https://www.rackspace.com/knowledge_center/article/creating-an-image-of-your-performance-flavor-server-with-the-control-panel).
+Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 #### Do you offer on-demand images (snapshots) and scheduled images and what are the prices?
 
@@ -298,11 +298,11 @@ Images will be compressed and stored on Rackspace Cloud Files at the
 [current storage
 rates](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/).
 Please also read this list of [Snapshot
-Limitations](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-cloud-server-image-limitations).
+Limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations).
 
 If using a virtual cloud server, see [Creating an image of your General
 Purpose Cloud Server with the control
-panel](https://www.rackspace.com/knowledge_center/article/creating-an-image-of-your-performance-flavor-server-with-the-control-panel)
+panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 for more information on the image options associated with virtual cloud
 servers.
 
@@ -357,7 +357,7 @@ Panel.
 
 If you want to stop paying for a server, but still need to retain the
 configurations from it, your best option is to [create an
-image](https://www.rackspace.com/knowledge_center/article/creating-an-image-of-your-performance-flavor-server-with-the-control-panel)
+image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 of the Cloud Server. Your system configurations on your system disk will
 be preserved in the image. The image will be saved in Cloud Files and
 accessible through the Saved Images tab in the Control Panel. There is a
@@ -375,7 +375,7 @@ any associated DNS records to reflect the new IP address.
 #### How do I power my server back on after shutting it down?
 
 Please see the following article: [Shutting Down and Restarting a Cloud
-Server](https://www.rackspace.com/knowledge_center/index.php/Shutting_Down_and_Restarting_a_Cloud_Server "Shutting Down and Restarting a Cloud Server")
+Server](/how-to/reboot-your-server "Shutting Down and Restarting a Cloud Server")
 
 #### Which distributions do you offer?
 
@@ -392,11 +392,11 @@ data storage space in one of two ways:
 -   Increase Available Storage with Cloud Block Storage. For more
     information on Cloud Block Storage, see [Create and Attach a Cloud
     Block Storage
-    Volume](https://www.rackspace.com/knowledge_center/article/create-and-attach-a-cloud-block-storage-volume).
+    Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   Migrate to a larger size server with more RAM, disk space,
     and vCPUs. For  more information on resizing, see [Changing the Size
     of Your First Generation Cloud
-    Server](https://www.rackspace.com/knowledge_center/article/changing-the-size-of-your-performance-cloud-server).
+    Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 #### How many users go onto each machine?
 
@@ -406,7 +406,7 @@ size of the customers&rsquo; Cloud Servers, and the type of operating system.
 #### How does the CPU scheduling work on Standard Next Generation servers?
 
 **Note**: [General Purpose Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/what-is-new-with-performance-cloud-servers)
+Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers)
 have specific virtual CPU allocations, as detailed on the [Cloud Servers
 pricing page](http://www.rackspace.com/cloud/servers/pricing/). The
 following information on CPU scheduling applies only to next-generation
@@ -460,7 +460,7 @@ There are different processes of resizes, as follows:
 **NOTE**: Resizing is not available for workload-optimized Cloud
 Servers. For information on your available options, see [Changing the
 size of your workload-optimized Cloud
-Server](https://www.rackspace.com/knowledge_center/article/changing-the-size-of-your-performance-cloud-server).
+Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 #### Can I buy extra storage?
 
@@ -492,7 +492,7 @@ Purpose Cloud Servers:
 
 For more information about General Purpose Cloud Servers, see [What is
 new with General Purpose Cloud
-Servers](https://www.rackspace.com/knowledge_center/article/what-is-new-with-performance-cloud-servers).
+Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers).
 
 ------------------------------------------------------------------------
 
@@ -678,5 +678,5 @@ Docs](https://developer.rackspace.com/docs/).
 Before you can start using our APIs, you will need your API Key. You can
 obtain your API key by following the instructions in our article,
 [Viewing and Regenerating Your API
-Key](https://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-1-viewing-and-regenerating-your-api-key).
+Key](/how-to/view-and-reset-your-api-key).
 

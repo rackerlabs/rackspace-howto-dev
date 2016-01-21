@@ -55,5 +55,5 @@ Us](/how-to/support) page.
 ### Next steps
 
 [Getting started with RackConnect
-v2.0](/how-to/getting-started-with-rackconnect-v20)
+v2.0](/how-to/rackconnect-v20)
 

@@ -128,7 +128,7 @@ The final script should look similar to this:
 ### Cron FAQ's:
 
 [What is a cron
-job?](/how-to/what-is-a-cloud-sites-cron-job "What is a cron job?")
+job?](/how-to/cloud-sites-faq "What is a cron job?")
 
 [How do I enable or disable
 cron?](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job "How do I enable or disable cron?")

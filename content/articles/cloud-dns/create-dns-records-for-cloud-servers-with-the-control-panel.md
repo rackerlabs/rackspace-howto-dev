@@ -11,7 +11,7 @@ body_format: full_html
 ---
 
 **Previous section:** [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 This article provides instructions for creating a DNS zone for your
 domain and adding basic A, MX, and CNAME records by using the Cloud

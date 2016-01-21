@@ -17,7 +17,7 @@ minutes to complete, if you follow the instructions step by step.
 ### Previous section
 
 [Provisioning cloud resources when migrating from Amazon Web
-Services](/knowledge_center/article/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
+Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 The topology of the application in this scenario is represented in the
 following figure:

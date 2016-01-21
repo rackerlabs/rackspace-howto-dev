@@ -85,7 +85,7 @@ further details and caveats.
 <td align="left"><p>Cloud Networks lets you create a virtual Layer 2 network, which gives you greater control and security when you deploy web applications.  <br />
 <br />
 <a href="/how-to/rackconnect-v20-with-cloud-networks-faq">RackConnect with Cloud Networks FAQ</a></p></td>
-<td align="left"><p><a href="/how-to/getting-started-with-cloud-networks">Getting Started with Cloud Networks</a></p></td>
+<td align="left"><p><a href="/how-to/cloud-networks">Getting Started with Cloud Networks</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Managed Operation</p></td>

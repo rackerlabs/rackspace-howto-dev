@@ -206,7 +206,7 @@ API documentation at <https://developer.rackspace.com/docs/>.
 -   [Next Generation
     Servers](/how-to/next-generation-cloud-servers-migration-considerations-and-options)
 -   [First Generation
-    Servers](/how-to/getting-started-with-cloud-servers-0)
+    Servers](/how-to/cloud-servers)
 -   [Cloud
     Files](/how-to/cloud-files-0)
 -   [Cloud

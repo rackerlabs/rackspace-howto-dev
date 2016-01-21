@@ -13,12 +13,12 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 
 
 Once you have learned how to [Create a new Cloud
-Server](/how-to/getting-started-with-cloud-servers-0),
+Server](/how-to/cloud-servers),
 you may use several of our tools that allow control over your server.
 
 -   [Reboot

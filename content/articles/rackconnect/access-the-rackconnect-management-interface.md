@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Getting started with RackConnect
-v2.0](/how-to/getting-started-with-rackconnect-v20)
+v2.0](/how-to/rackconnect-v20)
 
 You can access the RackConnect Management Interface from the
 [MyRackspace Portal](https://my.rackspace.com/). To view your

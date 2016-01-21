@@ -11,7 +11,7 @@ body_format: markdown_w_tinymce
 ---
 
 ## Previous section
-[Getting Started with Cloud Servers](/how-to/getting-started-with-cloud-servers-0)
+[Getting Started with Cloud Servers](/how-to/cloud-servers)
 
 As the administrator for your cloud servers, you might need to occasionally log in to one of your servers by using the Console feature in the Cloud Control Panel.
 

@@ -16,7 +16,7 @@ currently available for OnMetal servers.
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 
 

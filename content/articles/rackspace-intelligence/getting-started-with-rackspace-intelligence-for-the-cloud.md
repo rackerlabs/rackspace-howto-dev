@@ -158,7 +158,7 @@ following items:
 -   Notifications that were suppressed in the past
 
 You can also use the Rackspace Intelligence dashboard to [generate
-graphs](/how-to/getting-started-with-rackspace-intelligence) to
+graphs](/how-to/rackspace-intelligence) to
 visualize infrastructure status.
 
 ### Identify infrastructure to be monitored

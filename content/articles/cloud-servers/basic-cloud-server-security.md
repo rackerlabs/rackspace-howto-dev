@@ -16,7 +16,7 @@ setting up security.
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 Although Rackspace Cloud has taken steps to make your default Cloud
 Server image as secure as possible, the first line of defense lies in

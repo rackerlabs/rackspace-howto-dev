@@ -96,7 +96,7 @@ When you create a Network check, you set the following options:
 
 - Select which network interface to use (typically eth0 or eth1).
 - Set the receive rate alert for warning and critical states.
-- Set the transmit rate alert for warning and critical states. (For more information, see [Rackspace Monitoring Checks and Alarms](https://www.rackspace.com/knowledge_center/article/rackspace-monitoring-checks-and-alarms).)
+- Set the transmit rate alert for warning and critical states. (For more information, see [Rackspace Monitoring Checks and Alarms](/how-to/rackspace-monitoring-checks-and-alarms).)
 
 You can edit the following options for an existing Network check:
 

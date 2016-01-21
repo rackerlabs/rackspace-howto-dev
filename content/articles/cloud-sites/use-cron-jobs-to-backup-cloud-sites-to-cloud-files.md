@@ -197,7 +197,7 @@ often you would like to create and upload your backups.
 **Resources and Disclaimer**
 
 [What is a Cloud Sites cron
-job?](/how-to/what-is-a-cloud-sites-cron-job)
+job?](/how-to/cloud-sites-faq)
 
 [Enable or disable a Cloud Sites scheduled task (cron
 job)](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)

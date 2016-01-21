@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 In the previous article you learned how to [identify the Rackspace Cloud
 Nameservers](/how-to/rackspace-cloud-essentials-what-are-your-name-servers),

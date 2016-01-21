@@ -22,7 +22,7 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
 2.  Create a server as you normally would, or select an existing server.
     For instructions on creating a server, see [Rackspace Cloud
     Essentials - Creating A Cloud
-    Server](/how-to/getting-started-with-cloud-servers-0).
+    Server](/how-to/cloud-servers).
 3.  List the server's details by selecting **Servers &gt; Cloud
     Servers** and then clicking the server&rsquo;s name.
 

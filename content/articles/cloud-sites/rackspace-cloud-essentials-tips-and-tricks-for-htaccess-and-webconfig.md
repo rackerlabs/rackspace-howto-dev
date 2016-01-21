@@ -118,7 +118,7 @@ file:
 6.  [Why are my HttpHandlers not working for my ASP/.NET site on Cloud
     Sites](/how-to/httphandlers-not-working-in-integrated-mode-for-aspnet-sites-on-cloud-sites)
 7.  [How do I rectify an invalid view state error with an ASP/.NET
-    application](/how-to/how-do-i-rectify-an-invalid-view-state-error-with-an-aspnet-application)
+    application](/how-to/cloud-sites-faq)
 8.  [ASP/.NET Integrated
     Mode](/how-to/aspnet-integrated-mode-on-cloud-sites)
 9.  [Overview of Cloud Sites modified Medium

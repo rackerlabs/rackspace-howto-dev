@@ -13,7 +13,7 @@ body_format: tinymce
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/getting-started-with-cloud-servers-0)
+Servers](/how-to/cloud-servers)
 
 By now, you have built your server, made it secure, and uploaded content
 to your server.  The last step in the First 48 Hour Essentials is to

@@ -186,7 +186,7 @@ multiple scaling groups and a tree of load balancers to service requests
 or using RackConnect to use a higher capacity hardware load balancer
 solution. For more information on RackConnect, see [How do I get started
 with
-RackConnect?](https://www.rackspace.com/knowledge_center/article/how-do-i-get-started-with-rackconnect-v20)
+RackConnect?](/how-to/rackconnect-v20)
 
 #### Do the servers that I'm going to automatically scale up have to be associated with a group? If so, why?
 

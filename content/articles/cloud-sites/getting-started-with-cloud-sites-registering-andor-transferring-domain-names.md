@@ -35,7 +35,7 @@ and [Transferring Your Existing Domain](#transfer_domain).
 Panel, the DNS will automatically be setup for you to point to the
 Rackspace Cloud.*<span> *Please see the "[What Top Level Domain
 extensions can I purchase through the control
-panel?"](/how-to/what-top-level-domain-extensions-tlds-can-i-purchase-through-the-control-panel)
+panel?"](/how-to/cloud-sites-faq)
 article for a list of domain extensions available for purchase.*</span>
 
 -   First, Log in to the [Rackspace Cloud Control

@@ -20,31 +20,31 @@ Create, Read, Update, and Delete describes the permissions that are available in
 
 Product | (CRUD) Across all RBAC enabled products | Across all RBAC enabled products | ADMIN (CRUD): Within specified product | CREATOR (CRU): Within specified product | OBSERVER: Read-only within specified product
 ------------------------- | :---: | :---: | :---: | :---: | :---:
-[Next Gen Servers](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-next-generation-cloud-servers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[First Generation Servers](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-first-generation-cloud-servers) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
-[Cloud Files](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-files) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
-[Rackspace CDN](https://admin.rackspace.com/knowledge_center/article/permission-matrix-for-rackspace-cdn)| **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Databases](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-databases) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Load Balancers](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-load-balancers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Queues](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-queues) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Networks](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-networks) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Monitoring](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-monitoring) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Block Storage](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-block-storage) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Auto Scale](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-auto-scale) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
-[Cloud Images](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-images) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Big Data v1](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Big Data v2](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-big-data-v2) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Next Gen Servers](/how-to/permissions-matrix-for-next-generation-cloud-servers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[First Generation Servers](/how-to/permissions-matrix-for-first-generation-cloud-servers) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
+[Cloud Files](/how-to/permissions-matrix-for-cloud-files) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
+[Rackspace CDN](/how-to/permission-matrix-for-rackspace-cdn)| **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Databases](/how-to/permissions-matrix-for-cloud-databases) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Load Balancers](/how-to/permissions-matrix-for-cloud-load-balancers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Queues](/how-to/permissions-matrix-for-cloud-queues) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Networks](/how-to/permissions-matrix-for-cloud-networks) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Monitoring](/how-to/detailed-permissions-matrix-for-rackspace-monitoring) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Block Storage](/how-to/permissions-matrix-for-cloud-block-storage) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Auto Scale](/how-to/permissions-matrix-for-auto-scale) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
+[Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Big Data v1](/how-to/detailed-permissions-matrix-for-cloud-big-data) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Big Data v2](/how-to/detailed-permissions-matrix-for-cloud-big-data-v2) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Backup](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-backup) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Orchestration](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-orchestration) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud DNS](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-dns) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Feeds](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-feeds)| **NO** | **READ ONLY** | **NO** | **NO** | **YES**
+[Cloud Orchestration](/how-to/permissions-matrix-for-cloud-orchestration) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud DNS](/how-to/detailed-permissions-matrix-for-dns) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Feeds](/how-to/detailed-permissions-matrix-for-cloud-feeds)| **NO** | **READ ONLY** | **NO** | **NO** | **YES**
 
 ### Account Access
 
 ACCOUNT ACCESS | (CRUD) WITHIN SPECIFIED PRODUCT | READ-ONLY WITHIN SPECIFIED PRODUCT
 -------------- | :---: | :---:
-[Billing Services](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-billing-services) | **YES** | **YES**
-[Payment Services](https://admin.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-billing-services) | **YES** | **YES**
+[Billing Services](/how-to/detailed-permissions-matrix-for-billing-services) | **YES** | **YES**
+[Payment Services](/how-to/detailed-permissions-matrix-for-billing-services) | **YES** | **YES**
 
 The following products will not be RBAC enabled:
 
@@ -52,4 +52,4 @@ The following products will not be RBAC enabled:
 - RackConnect
 - Mailgun
 
-### [&lt; Managing RBAC](https://admin.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac)    -    [FAQ for RBAC &gt;](https://admin.rackspace.com/knowledge_center/article/faq-role-based-access-control-rbac)
+### [&lt; Managing RBAC](/how-to/managing-role-based-access-control-rbac)    -    [FAQ for RBAC &gt;](/how-to/faq-role-based-access-control-rbac)

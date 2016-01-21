@@ -14,9 +14,9 @@ The following permissions matrix displays specific permissions for the roles in 
 
 [API Documentation](http://developer.rackspace.com/docs/)
 
-[Related Knowledge Center Articles](https://admin.rackspace.com/knowledge_center/cloud-hosting)
+[Related Knowledge Center Articles](/how-to/)
 
-[Cloud Networks Terminology](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-cloud-networks#Cloud%20Networks%20Terminology)
+[Cloud Networks Terminology](/how-to/permissions-matrix-for-cloud-networks)
 
 ### As of October 30, 2014
 
@@ -75,4 +75,4 @@ An extension to the networking API that is specifically used for attaching and d
 
 
 
-## [&lt; Permissions Matrices for RBAC](https://admin.rackspace.com/knowledge_center/article/permissions-matrix-for-role-based-access-control-rbac)
+## [&lt; Permissions Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)

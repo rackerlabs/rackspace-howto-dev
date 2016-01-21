@@ -64,7 +64,7 @@ A few pieces of advice that should be noted before beginning:
 To begin we will need to create your Cloud Server via the control panel
 (<https://mycloud.rackspace.com>).  For more information, refer to [this
 article on creating a new Cloud
-Server](/how-to/getting-started-with-cloud-servers-0).
+Server](/how-to/cloud-servers).
 
 
 

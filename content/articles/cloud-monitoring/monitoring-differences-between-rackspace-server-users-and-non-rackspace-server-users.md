@@ -83,7 +83,7 @@ Rackspace Cloud Monitoring can be used with Rackspace servers and non-Rackspace 
   - Ubuntu, CentOS: **/etc/rackspace-monitoring-agent.cfg**
   - Windows: **c:\ProgramData\Rackspace Monitoring\config\rackspace-monitoring-agent.cfg**
 
-  To learn more about agent configuration, see [Install and configure the Rackspace Monitoring Agent](https://www.rackspace.com/knowledge_center/article/install-and-configure-the-rackspace-monitoring-agent).
+  To learn more about agent configuration, see [Install and configure the Rackspace Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent).
 
 - By default, the monitoring agent must be manually installed. For details, see the [Cloud Monitoring documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-and-configure-the-agent).
 
