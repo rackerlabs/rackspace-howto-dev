@@ -10,10 +10,10 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-When you're creating new Rackspace cloud resources it's important to
+When you're creating new Rackspace cloud resources, it's important to
 understand what a region is and how to use regions effectively.
 
-What is a Region?
+What is a region?
 -----------------
 
 A region is a collection of one or more data centers interconnected by a
