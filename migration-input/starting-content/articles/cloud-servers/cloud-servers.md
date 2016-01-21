@@ -99,7 +99,7 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### 2. Remote access
 
 -   [Remote Connection from Windows to a Linux
-    Server](/knowledge_center/index.php/Logging_in_via_Putty)
+    Server](/how-to/connecting-to-linux-from-windows-by-using-putty)
 -   [Remote Connection from Mac to a Linux
     Server](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
 -   [Remote Connection to a Windows Cloud Server Using
@@ -108,7 +108,8 @@ displayed in the side bar on the right of the Cloud Control Panel.
 ### 3. Cloud Server security
 
 -   [Basic Linux Cloud Server
-    security](/how-to/basic-cloud-server-security)[](/knowledge_center/index.php/Creating_an_Inbound_Port_Allow_Rule_for_Windows_Firewall_%28Windows_2008%29)
+    security](/how-to/basic-cloud-server-security)
+-   [Windows Firewall Rules](/how-to/create-an-inbound-port-allow-rule-for-windows-firewall-2008)
 
 ### 4. Uploading your content
 

@@ -21,11 +21,11 @@ day one.
 ###  Cloud Files Basics
 
 -   [Getting Started With Cloud
-    Files](http://www.rackspace.com/knowledge_center/index.php/Getting_started_on_Cloud_Files_with_CDN)
+    Files](/how-to/getting-started-with-cloud-files-and-cdn-0)
 -   [Key Concepts of Cloud
-    Files](http://www.rackspace.com/knowledge_center/index.php/Key_Concepts)
+    Files](/how-to/cloud-files-key-concepts)
 -   [Why Should I Use Cloud
-    Files?](http://www.rackspace.com/knowledge_center/index.php/Why_should_I_use_Cloud_Files)
+    Files?](/how-to/why-choose-cloud-files)
 
 ###  Cloud Files API and SDKs
 

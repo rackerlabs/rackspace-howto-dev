@@ -21,50 +21,50 @@ Maximize your potential in the cloud. Visit the Knowledge Center today.
 ###  Managing Your Account
 
 -   [Logging into the Control
-    Panel](http://www.rackspace.com/knowledge_center/logging_into_the_Control_Panel)
+    Panel](/how-to/getting-started-with-cloud-sites-logging-into-the-control-panel)
 -   [Accessing billing
-    information](http://www.rackspace.com/knowledge_center/Accessing_billing_information)
+    information](/how-to/getting-started-with-cloud-sites-accessing-billing-information)
 -   [Getting Fanatical
-    Support](http://www.rackspace.com/knowledge_center/Fanatical_Support)
+    Support](/how-to/getting-started-with-cloud-sites-getting-fanatical-support)
 
 ###  Building Your First Website
 
 -   [Adding your first
-    domain](http://www.rackspace.com/knowledge_center/index.php/How_do_I_add_a_website)
+    domain](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website)
 -   [Uploading your
-    content](http://www.rackspace.com/knowledge_center/index.php/Uploading_your_content)
+    content](/how-to/getting-started-with-cloud-sites-uploading-your-content)
 
 ###  DNS & Domain Management
 
 -   [Registering and/or transferring your
-    domain name(s)](http://www.rackspace.com/knowledge_center/registering_and_or_transferring_your_domain)
+    domain name(s)](/how-to/getting-started-with-cloud-sites-registering-andor-transferring-domain-names)
 -   [Managing DNS
-    records](http://www.rackspace.com/knowledge_center/managing_your_dns_records)
+    records](/how-to/getting-started-with-cloud-sites-managing-dns-records)
 -   [Using the Rackspace
-    nameservers](http://www.rackspace.com/knowledge_center/rackspace_and_custom_nameservers)
+    nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
 -   [Creating Sub-domains and/or domain
-    aliases](http://www.rackspace.com/knowledge_center/creating_subdomains_and_aliases)
+    aliases](/how-to/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)
 -   [Using Cloud
-    DNS](http://www.rackspace.com/knowledge_center/cloud_dns)
+    DNS](/how-to/rackspace-cloud-dns)
 
 ###  Managing Cloud Sites Databases
 
 -   [MySQL
-    databases](http://www.rackspace.com/knowledge_center/create_a_mysql_database)
+    databases](/how-to/rackspace-cloud-sites-essentials-mysql-databases)
 -   [PHPmyAdmin database management
     interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface)
 -   [MSSQL
-    databases](http://www.rackspace.com/knowledge_center/adding_a_mssql_database)
+    databases](/how-to/rackspace-cloud-sites-essentials-mssql-databases)
 -   [MyLittleAdmin database management
-    interface](http://www.rackspace.com/knowledge_center/mssql_database_admin_interface_mylittleadmin)
+    interface](/how-to/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface)
 
 ###  Cloud Sites Web Services
 
 -   [Cloud Sites
-    Technologies](http://www.rackspace.com/knowledge_center/cloud_sites_technologies)
+    Technologies](/how-to/rackspace-cloud-sites-essentials-cloud-sites-technologies)
 -   [Tips and Tricks for .htaccess and
-    web.config](http://www.rackspace.com/knowledge_center/htaccess_and_web_config)
+    web.config](/how-to/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
 -   [Configuring SSL on
     your website(s)](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
 -   [FTP/SSHFS/FTP
-    clients](http://www.rackspace.com/knowledge_center/ftp_sshfs_ftpclients)
+    clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients)
