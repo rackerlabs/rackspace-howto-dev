@@ -8,15 +8,14 @@ last_modified_by: Rackspace Support
 product: Microsoft SharePoint
 ---
 
-Our hosted SharePoint service offers all of the benefits of an online
-SharePoint site plus access to Rackspace's renowned Fanatical Support.
+<p class="lead" markdown="1">Our hosted SharePoint service offers all of the benefits of an online SharePoint site plus access to Rackspace's renowned Fanatical Support.</p>
+
+<hr />
 
 ###  SharePoint information
 
--   [Rackspace SharePoint Hosting, Services, and
-    Training](http://sharepoint.rackspace.com/)
+- [Rackspace SharePoint Hosting, Services, and Training](http://sharepoint.rackspace.com/)
 
 ###  SharePoint first steps
 
--   [Cloud Storage App for Microsoft
-    SharePoint](/how-to/cloud-storage-app-for-microsoft-sharepoint-overview)
+- [Cloud Storage App for Microsoft SharePoint](/how-to/cloud-storage-app-for-microsoft-sharepoint-overview)

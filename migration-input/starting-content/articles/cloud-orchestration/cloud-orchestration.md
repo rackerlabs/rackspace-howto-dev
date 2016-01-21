@@ -8,17 +8,11 @@ last_modified_by: Rackspace Support
 product: Cloud Orchestration
 ---
 
-Cloud Orchestration automates the creation of application environments
-on the Rackspace Cloud so you don't have to perform a lengthy setup
-and installation process. You can select an application or framework
-then provide application configuration parameters; Cloud Orchestration
-handles the rest. It will build required cloud resources, install all
-necessary software, and configure the software according to Rackspace
-best practices. Once the deployment is complete, you will have a
-fully-functioning application or framework ready for you to push code or
-content to.
+<p class="lead" markdown="1">Cloud Orchestration automates the creation of application environments on the Rackspace Cloud so you don't have to perform a lengthy setup and installation process. You can select an application or framework then provide application configuration parameters; Cloud Orchestration handles the rest. It will build required cloud resources, install all necessary software, and configure the software according to Rackspace best practices. Once the deployment is complete, you will have a fully-functioning application or framework ready for you to push code or content to.</p>
+
+<hr />
 
 ###  Setting Up Rackspace Cloud Orchestration
 
--   [Quick Set-up with Cloud Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration)
--   [Cloud Orchestration FAQ](/how-to/cloud-orchestration-faq)
+- [Quick Set-up with Cloud Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration)
+- [Cloud Orchestration FAQ](/how-to/cloud-orchestration-faq)
