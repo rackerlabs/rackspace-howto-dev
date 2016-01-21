@@ -10,7 +10,7 @@ branches:
 env:
   global:
       - KC_DOC_ROOT=content
-      - KC_BASE_URL=https://github.com/rackerlabs/rackspace-howto-dev
+      - KC_BASE_URL=https://github.com/rackerlabs/rackspace-how-to
       - NEXUS_URL=http://172.99.65.43:9000
       - secure: hH4WbUZ7FvpHFXmwVf2Z16/IB5D3mK8kVi8MeXHHUAjc9CaX7FZiJX0m8ZIrE5rChXcye+PozadGH/p+ZQaZQMLimuAcDJ4jS49tHyovPA6Vd7aq1YUjfpQVklGf+Sard34WVHLpFjaJDXpB8Nu5HpF/oCylE3q6f2nU7E5sOKRe6f4RJ+geG+pOl0ZXvYiPWMTBgkIAnt4+8ve6emEjsk4qvFh1bfBpVrQkXkighQaIT7m6jPQkEju5Q8LlsiyrMrEl4uSg6z/G9I4o/AFiggOdkKsss3hcXzl/u3knCLxHwaq+f6pzLcBlPmfFuVE24Mh0VZP0/lNqNd7EN2HyCHHidRDqjcqB5l/rjl828NtiWEw82zguo6qU2mmKENSq4Cgl27HXU3oNPioN2TFTFD7QWr10i9t+I/Lch2h9M46Ye6kVXryxcwsylsyxYQ54fqvJcI9/8wrhgvLQItM22dUJ9oZGcAvgqm0q0E8grSSl8mFpyA1C8pwrzJGSIvCIyqP4ewrlNsqEVxXi97YfTAxXbHrNBUW+sb7AZgYpOYAvN7v6RkbVTGdQp85Mkt7TgPQSh9+5ECB05pssTxsyoeo/MmabNkr9cN9EEBw8CFT9pD1eKP+P0wq3LH7PPjQsvsKAgWT5QqeHHoGvRruNeDFV2GtMjoxCKZatJOwcfSE=
       - secure: OU3sNkE3XB+B1q2+F+Jr1sgIlCuXxCpdttcKmmtSIHOTtj2Z9VN2s3wkAZhF/qPqs5X6JSeiAU+aGWry4V0YNlEkLg1CJVL9y+wwGszvZLEh+ZbJMW0KXQXuD7OkdYub8t/xEjbuuHFa7ge4bhz3ti7VZFpfEoKCyta79DZ4ekYLT0WNn9b58rPH7H/7Q8iAIM0rvKG1vQqTCxTlZDKMumlNs6jWuFw1t/TvCCsXfbuMSQQ7MjfR7ja32iUlV0QSgsseKimkK9YE/Q6oGxMeLBO3vE8CUExi+PxL+XzE3NHljLLHpHsAwVg6nKZfG1egrXtNSu/hXfo2p5MeEGaEvTz8IxeK/UBCLx5wN7TKj2VsPuQSKsPC/xWcP1fLW+8RLJXNQGw5miF6rwlfK6lcCNDTjsdcgRD/rI6oEl0/q+idudHuVQaxhW3nLjDgRfaRWKknNG61U3rNQQqP1oK33JLUm/IQt4yRZsFHYv9QcoXWk7i/Q0fTHD8PbjF5AWd0fd3ubvpZZxoTDtmbldReWxhSDSU+01+/hBMvLrYFddmuHeYJIFv6dTVJxHunzGLV1mFcBMFRk477XGhUuCW1g3ITaPK7SR/6lxfsu5H9bvq4nfPjodwf1BWS7ZfgqB2TgQhvJ41bmLMXlmXkzY3NGytyXfJzFLWPPXvPWIUCQms=
@@ -18,7 +18,6 @@ env:
 install:
     - gem install specific_install
     - gem specific_install https://github.com/rackerlabs/rackspace-howto-preparer.git
-    - echo $TRAVIS_REPO_SLUG
     - echo $TRAVIS_COMMIT
 
 script:
