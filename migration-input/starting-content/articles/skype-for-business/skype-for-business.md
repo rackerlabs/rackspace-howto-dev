@@ -26,14 +26,8 @@ Skype for Business service to your users will vary.
 
 ###  Work with Hosted Skype for Business
 
--   [Work with contacts and
-    conversations](/how-to/work-with-contacts-and-conversations-in-hosted-skype-for-business)
 -   [Work with audio and voice
     calls](/how-to/working-with-audio-and-voice-calls-in-hosted-skype-for-business)
--   [Work with video
-    calls](/how-to/working-with-video-calls-in-hosted-skype-for-business)
--   [Share and
-    collaborate](/how-to/sharing-and-collaborating-in-hosted-skype-for-business)
 
 ###  Set up a client
 
@@ -42,8 +36,6 @@ Skype for Business service to your users will vary.
 
 ###  Frequently asked questions
 
--   [Can I add everyone in the domain automatically to my Microsoft
-    Skype for Business
-    contacts?](/how-to/can-i-automatically-add-everyone-in-the-domain-to-my-skype-for-business)
+-   [Microsoft Skype for Business FAQ](/how-to/skype-for-business-faq/)
 -   [Microsoft Office FAQ about Skype for
     Business](https://support.office.microsoft.com/en-us/article/FAQ-about-Lync-a0b87a3e-016a-410e-bb0c-77d4b5654041?CTT=5&origin=HA103065025&CorrelationId=a66ece08-6a45-4a14-aba0-ad05cf4a94a2&ui=en-US&rs=en-US&ad=US#_Toc382835950)

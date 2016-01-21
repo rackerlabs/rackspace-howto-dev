@@ -11,11 +11,6 @@ product: Microsoft Exchange
 Welcome to Microsoft Exchange hosted by Rackspace! Use this brief
 step-by-step guide to help you get started.
 
-###  Administrator introduction
-
--   [Email administrator
-    guidelines](/how-to/email-administrator-guidelines)
-
 ###  Plan your migration
 
 -   [Migration
