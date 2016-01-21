@@ -15,7 +15,7 @@ Servers you have two convenient choices: Cloud Block Storage or Cloud
 Backup. Identifying which one to use depends on what features are most
 important to you.
 
-### Cloud Block Storage for Portability
+#### Cloud Block Storage for Portability
 
 Cloud Block Storage works much like a portable drive. It can be attached
 to one server and later detached and attached to another server. This
@@ -42,7 +42,7 @@ To get started with Cloud Block Storage, see [Create and Attach a Block
 Storage
 Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 
-### Cloud Backup for Incremental Backups
+#### Cloud Backup for Incremental Backups
 
 After the initial setup, including installation of the Cloud Backup
 Agent and capture of all the initial files, Cloud Backup uses
