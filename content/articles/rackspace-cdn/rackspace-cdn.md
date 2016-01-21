@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Rackspace CDN
+product_url: rackspace-cdn
 ---
 
 <p class="lead" markdown="1">The Rackspace Content Delivery Network (CDN) allows you to improve your user experiences and reduce load on your servers by moving your content closer to your users. This Getting Started guide shows you how to get up and running quickly.</p>

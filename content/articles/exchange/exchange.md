@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Microsoft Exchange
+product_url: exchange
 ---
 
 <p class="lead" markdown="1">Welcome to Microsoft Exchange hosted by Rackspace! Use this brief step-by-step guide to help you get started.</p>

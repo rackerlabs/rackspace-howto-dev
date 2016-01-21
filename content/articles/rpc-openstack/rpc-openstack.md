@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Rackspace Private Cloud Powered by OpenStack
+product_url: rpc-openstack
 ---
 
 <p class="lead" markdown="1">Rackspace has developed a set of tools that allow you to quickly install an OpenStack private cloud, configured as recommended by Rackspace OpenStack specialists.</p>
@@ -18,7 +19,7 @@ product: Rackspace Private Cloud Powered by OpenStack
 
 ###  General resources
 
-- [FAQ](/how-to/rpc-openstack-faq)
+- [FAQ](/how-to/rackspace-private-cloud-faq)
 - [Spheres of Support](/how-to/rackspace-private-cloud-spheres-of-support)
 - [Private Cloud Tech Resources](/how-to/private-cloud-tech-resources)
 - [Rackspace Private Cloud Software and Reference Architecture](http://www.rackspace.com/cloud/private/openstack/software/)

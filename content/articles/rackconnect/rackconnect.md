@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: RackConnect
+product_url: rackconnect
 ---
 
 <p class="lead" markdown="1">Welcome to RackConnect! This guide is designed to get you started with RackConnect. It includes an overview, describes how to manage your environment, and covers both RackConnect v3.0 and RackConnect v2.0.</p>

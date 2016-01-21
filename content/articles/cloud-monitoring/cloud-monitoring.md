@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Monitoring
+product_url: cloud-monitoring
 ---
 
 <p class="lead" markdown="1">When something in your system unexpectedly breaks, it can impact performance, or worse, it can take down your server or company website and prevent you and your customers from accessing critical data. If this happens, you'll want to know right away so that you can take the appropriate actions to keep your business operational and your customers happy.</p>
