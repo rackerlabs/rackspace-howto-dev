@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-19'
 last_modified_by: Renee Rendon
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 The Basics

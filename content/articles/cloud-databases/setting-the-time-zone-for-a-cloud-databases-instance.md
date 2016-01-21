@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2014-11-21'
 last_modified_by: Jered Heeschen
 product: Cloud Databases
-body_format: tinymce
 ---
 
 You can set the server time zone for a Cloud Databases instance so that

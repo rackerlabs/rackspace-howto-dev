@@ -7,7 +7,6 @@ created_by: Brian Rosmaita
 last_modified_date: '2016-01-06'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 -   [Scheduled Images](#overview)

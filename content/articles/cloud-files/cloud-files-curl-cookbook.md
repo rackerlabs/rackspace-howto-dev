@@ -4,10 +4,9 @@ title: Cloud Files cURL Cookbook
 type: article
 created_date: '2012-06-25'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 The Rackspace Cloud Files service is offered with a RESTful API
@@ -19,63 +18,9 @@ the command line is cURL, which is a generic client that supports
 several protocols, including HTTP. This article describes how to install
 cURL, its basic functions, and how to use it with Cloud Files.
 
--   [cURL
-    Installation](/how-to/cloud-files-curl-cookbook)
--   [cURL
-    Basics](/how-to/cloud-files-curl-cookbook)
--   [Performing an HTTP
-    Get](/how-to/cloud-files-curl-cookbook)
--   [Performing an HTTP
-    POST](/how-to/cloud-files-curl-cookbook)
--   [Performing an HTTP
-    PUT](/how-to/cloud-files-curl-cookbook)
--   [Viewing the HTTP
-    headers](/how-to/cloud-files-curl-cookbook)
--   [Viewing more HTTP debug
-    information](/how-to/cloud-files-curl-cookbook)
--   [Sending HTTP
-    headers](/how-to/cloud-files-curl-cookbook)
 
-**Authenticating with the API**
 
--   [Authenticating with the
-    API](/how-to/cloud-files-curl-cookbook)
-
-**Cloud Files cURL Recipes**
-
--   [Storage
-    recipes](/how-to/cloud-files-curl-cookbook)
--   [Listing
-    containers](/how-to/cloud-files-curl-cookbook)
--   [Creating a
-    container](/how-to/cloud-files-curl-cookbook)
-    -   [Deleting a
-        Container](/how-to/cloud-files-curl-cookbook)
-    -   [Downloading an
-        object](/how-to/cloud-files-curl-cookbook)
-    -   [Uploading an
-        object](/how-to/cloud-files-curl-cookbook)
-    -   [Deleting an
-        object](/how-to/cloud-files-curl-cookbook)
-    -   [Performing a server side
-        copy](/how-to/cloud-files-curl-cookbook)
-    -   [Updating object
-        headers](/how-to/cloud-files-curl-cookbook)
--   [CDN
-    recipes](/how-to/cloud-files-curl-cookbook)
-    -   [Listing CDN enabled
-        containers](/how-to/cloud-files-curl-cookbook)
-    -   [CDN enabling a
-        container](/how-to/cloud-files-curl-cookbook)
-    -   [Viewing a container's CDN
-        details](/how-to/cloud-files-curl-cookbook)
-    -   [Updating a CDN's container
-        attributes ](/how-to/cloud-files-curl-cookbook)
-    -   [Purging an
-        object](/how-to/cloud-files-curl-cookbook)
-
-**cURL installation**
----------------------
+### **cURL installation**
 
 All the major distributions have packages for installing cURL. Following
 is an example of how to install cURL on Debian and Ubuntu:
@@ -107,8 +52,7 @@ from the[Downloads page](http://www.curl.com/download/). The Windows
 binary will require installation of some Microsoft Visual C++ libraries
 to work correctly.
 
-**cURL basics**
--------------------
+### **cURL basics**
 
 cURL is a command line tool that offers a means of communicating with
 various services at a protocol level. In particular, cURL supports
@@ -119,7 +63,7 @@ level of detail.
 This section provides some basic information about how to use cURL with
 HTTP.
 
-**Performing an HTTP GET**
+#### **Performing an HTTP GET**
 
 A HTTP GET operation is what browsers typically perform to download web
 pages and images whenever you go to a website. In the same manner, you
@@ -147,7 +91,7 @@ $ curl http://www.example.com > index.html
 
 ****
 
-### **Performing an HTTP POST**
+#### **Performing an HTTP POST**
 
 You can also use cURL to perform an HTTP POST operation, which is what
 most HTML-based forms use to send data to a remote server. There are a
@@ -168,7 +112,7 @@ unwieldy when done from the command line.
 
 ****
 
-### Performing an HTTP PUT
+#### Performing an HTTP PUT
 
 The HTTP PUT operation is similar to the HTTP POST operation, except PUT
 operations normally imply some sort of storage request. For example,
@@ -185,7 +129,7 @@ $ curl -X PUT -T myobject.jpg -H "Content-Type: image/jpeg" http://www.example.c
 
 ****
 
-### Viewing the HTTP headers
+#### Viewing the HTTP headers
 
 Many operations do not return a response body, just response headers.
 Much of the usefulness of the API result is in the headers, which
@@ -204,7 +148,7 @@ Content-Length: 0
 
 ****
 
-### **Viewing More HTTP Debug Information**
+#### **Viewing More HTTP Debug Information**
 
 At times, it is useful to view the full HTTP request/response
 transaction. You can do this by using the verbose flag, which prints out
@@ -222,7 +166,7 @@ $ curl -v http://www.example.com
 
 ****
 
-### **Sending HTTP Headers**
+#### **Sending HTTP Headers**
 
 When sending an HTTP request, it is sometimes useful to specify
 additional headers to give the server more information about the request
@@ -244,8 +188,7 @@ $ curl -v -H "Accept: application/xml" www.example.com
 
 
 
-Authenticating with the API
----------------------------
+### Authenticating with the API
 
 Before you can use any of the Rackspace Cloud APIs, you must first
 authenticate yourself to receive an authentication token. The token is
@@ -334,8 +277,7 @@ The benefit of using ServiceNet are that the Cloud Server does not incur
 bandwidth costs and the throughput rates to and from the Cloud Files
 storage servers are better.
 
-Cloud Files cURL Recipes
-------------------------
+### Cloud Files cURL Recipes
 
 This section contains cURL based recipes that you can use with Cloud
 Files API to quickly and easily do various Cloud Files related
@@ -358,7 +300,7 @@ When you use the recipes, be sure to substitute your own endpoint URL.
 
 ****
 
-#### **Listing Containers**
+**Listing Containers**
 
 Querying the Cloud Files storage endpoint returns a simple list of
 available containers, each on a new line.
@@ -425,7 +367,7 @@ $ curl -v -X DELETE -H "X-Auth-Token: 3c5c8187-2569-47e0-8a11-edadd384e12b" http
 < Date: Wed, 01 Feb 2012 13:05:00 GMT
 ```
 
-#### Listing Objects
+**Listing Objects**
 
 Querying a container returns a simple list of objects within that
 container. By default only the first 10,000 objects are returned. The
@@ -770,8 +712,7 @@ $ curl -v -X DELETE -H "X-Purge-Email: user@example.com" -H "X-Auth-Token: 3c5c8
 * SSLv3, TLS alert, Client hello (1):
 ```
 
-**Summary**
------------
+### **Summary**
 
 This article is meant to serve as a quick reference to the more common
 Cloud Files API requests and how to use them with cURL. For more

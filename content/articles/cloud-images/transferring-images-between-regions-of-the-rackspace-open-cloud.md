@@ -7,7 +7,6 @@ created_by: Cloud Images
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Images
-body_format: tinymce
 ---
 
 A common request we receive is, "Dear Rackspace, I've got a server in

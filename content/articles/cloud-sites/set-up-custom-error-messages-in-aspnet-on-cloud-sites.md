@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-06-23'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
-body_format: tinymce
 ---
 
 You can enable custom error messages for your ASP.NET application on

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2013-01-11'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 <table>

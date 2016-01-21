@@ -7,7 +7,6 @@ created_by: Milton Prado
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 POP email is typically stored locally on a computer and removed from the

@@ -4,10 +4,9 @@ title: Deploying a Cloud Site with media content on Cloud Files
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 **Note:** This article is written for the [Cloud Sites Control
@@ -17,21 +16,13 @@ Panel](https://mycloud.rackspace.com) by clicking your username in the
 upper-right corner of the Cloud Sites Control Panel and selecting
 "Classic Cloud Control Panel".
 
--   [Overview](#overview)
--   [Prerequisites](#prereqs)
--   [Upload the image to Cloud Files](#upload)
--   [Set up a Cloud Site](#setup)
--   [Conclusion](#conclusion)
-
-<span style="line-height: 1.2;">Overview</span>
----------------------------------------------------
+### <span>Overview</span>
 
 In this tutorial, you deploy a simple web page that retrieves an image
 from the Cloud Files platform. The tutorial uses some rewrite rules to
 obfuscate the origin URL to optimized searching.
 
-Prerequisites
------------------
+### Prerequisites
 
 -   *(If using the browser to upload)* FTP application.
     <span>FileZilla</span> is a good choice.
@@ -44,15 +35,14 @@ Prerequisites
 -   Mozilla Firefox or Python, depending on what method you use to
     upload to Cloud Files.
 
-Upload the image to Cloud Files
------------------------------------
+### Upload the image to Cloud Files
 
 The first step in this process is to upload your image to a CDN-enabled
 container in Cloud Files. This section describes uploading files using
 the Python SDK, however you can also use third party tools, such as
 CyberDuck to upload content.
 
-### Example: Using Python SDK
+#### Example: Using Python SDK
 
 This example assumes that you have pyrax, the Python SDK installed. For
 more information about setting up the SDK for Python, see <span>pyrax
@@ -107,19 +97,18 @@ CDN.
 When the upload is complete, the script prints out details about your
 newly-uploaded object.
 
-Set up a Cloud Site
------------------------
+### Set up a Cloud Site
 
 This section of the tutorial covers creating a simple page that calls
 the image by using the local server side path and creating a Cloud Site.
 
-### Create a sample HTML page
+#### Create a sample HTML page
 
 You create a simple XHTML page that calls an image on Cloud Files by
 using the local server side path. This part of the tutorial uses
 `mod_rewrite`.
 
-### Redirect the image
+#### Redirect the image
 
 In a `.htaccess` file, create the rewrite rules that redirect the image
 to the Cloud Files platform. To do so, you need the CDN URL for the
@@ -154,7 +143,7 @@ might have trouble getting mod\_rewrite to work. Try replacing the slash
 directive, as shown in the FAQ article <span>Why is mod\_rewrite not
 working on my site?</span>.
 
-### Create the demo Cloud Site
+#### Create the demo Cloud Site
 
 For this tutorial, create a sample Cloud Site by performing the
 following steps:
@@ -174,8 +163,7 @@ following steps:
 9.  Upload the `.htaccess` file and the simple HTML page that you
     created to the `/www.domain.com/web/content/` directory.
 
-Conclusion
---------------
+### Conclusion
 
 Now navigate to the sample page that you created. The image is being
 called from Cloud Files, but if a user looks at your source code, it

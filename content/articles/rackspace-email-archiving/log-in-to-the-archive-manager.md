@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2016-01-04'
 last_modified_by: Nate Archer
 product: Rackspace Email Archiving
-body_format: tinymce
 ---
 
 You can log in to the Email Archive Manager directly from your

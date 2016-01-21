@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-10-23'
 last_modified_by: Allen Ramirez
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 The following article will demonstrate how to create a Contact with

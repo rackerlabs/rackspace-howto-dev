@@ -7,7 +7,6 @@ created_by: Justin Taylor
 last_modified_date: '2015-12-10'
 last_modified_by: Renee Rendon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Cloud Sites is updating current versions of PHP to PHP 5.6. This

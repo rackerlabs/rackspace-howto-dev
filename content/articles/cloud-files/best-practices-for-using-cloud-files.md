@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-05-16'
 last_modified_by: Kyle Laffoon
 product: Cloud Files
-body_format: tinymce
 ---
 
 ### What is Cloud Files used for?

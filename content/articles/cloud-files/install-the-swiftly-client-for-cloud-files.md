@@ -7,7 +7,6 @@ created_by: Cloud Images
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
-body_format: tinymce
 ---
 
 Swiftly is a client tool that you can use to upload objects to and

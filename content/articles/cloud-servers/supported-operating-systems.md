@@ -7,7 +7,6 @@ created_by: Nate Archer
 last_modified_date: '2015-08-05'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Our service levels support a number of operating systems (OSs). Services

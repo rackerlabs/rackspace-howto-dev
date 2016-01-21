@@ -7,7 +7,6 @@ created_by: Russell Lambert
 last_modified_date: '2016-01-15'
 last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
 You've built your base server and are about to take an image of it. You

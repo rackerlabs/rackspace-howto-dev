@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Before you open the migration window for each of your cloud servers,

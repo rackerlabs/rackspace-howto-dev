@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Renee Rendon
 product: Cloud Hosting
-body_format: tinymce
 ---
 
 Rackspace sends ALL used compute/storage/network/drives (e-waste) to a

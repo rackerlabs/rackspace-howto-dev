@@ -7,7 +7,6 @@ created_by: Catherine Richardson
 last_modified_date: '2016-01-11'
 last_modified_by: Catherine Richardson
 product: Cloud Block Storage
-body_format: tinymce
 ---
 
 Your OnMetal server can connect to a Cloud Block Storage volume.

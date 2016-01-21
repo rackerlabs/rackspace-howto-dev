@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-11-09'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The Rackspace Cloud Sites environment differs from a traditional hosting

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-18'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 This scenario describes the migration of a Backbone.js, Node.js, and

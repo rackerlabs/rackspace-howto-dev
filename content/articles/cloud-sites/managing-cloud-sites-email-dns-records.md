@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2013-07-17'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
-body_format: tinymce
 ---
 
 DNS records are like "phone books" for the Internet and can be very

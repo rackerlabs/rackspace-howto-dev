@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-08-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: full_html
 ---
 
 Creating a support ticket in your [Cloud Control

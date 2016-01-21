@@ -7,7 +7,6 @@ created_by: Evan Nabors
 last_modified_date: '2013-04-30'
 last_modified_by: Evan Nabors
 product: Cloud Servers
-body_format: tinymce
 ---
 
  <span style="font-size: 1.385em; line-height: 1.538em; font-weight: bold;">Description</span>

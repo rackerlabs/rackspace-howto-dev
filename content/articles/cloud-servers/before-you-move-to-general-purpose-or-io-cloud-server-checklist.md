@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2015-11-12'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
-body_format: tinymce
 ---
 
 General Purpose and I/O-optimized Cloud Servers offer an increase in

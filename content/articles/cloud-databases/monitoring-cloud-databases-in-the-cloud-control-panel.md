@@ -4,10 +4,9 @@ title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2014-11-07'
-last_modified_by: Ross Diaz
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: tinymce
 ---
 
 Monitoring is included with Cloud Databases to help you manage the
@@ -24,17 +23,11 @@ email when the memory check shows free memory has dropped below a
 specified level.
 
 The checks and alarms that are set up by default on a Cloud Databases
-instance are described in the following sections:
-
--   [Checks](#checks)
--   [Alarms](#alarms)
--   [Alarm criteria examples](#alarm-criteria-examples)
+instance are described in the following sections.
 
 
--
 
-Checks
-----------
+### Checks
 
 Monitoring checks are listed on the details page of a Cloud Databases
 instance in the Cloud Control Panel.
@@ -45,18 +38,11 @@ Click the name of a check to view a graph of the check's results over
 time and any alarms configured for that check.
 
 The following monitoring checks are preconfigured for Cloud Databases
-instances:
-
--   [CPU check](#cpu-check)
--   [File system](#file-system)
--   [Load average](#load-average)
--   [Memory check](#memory-check)
--   [Network check](#network-check)
--   [MySQL check](#mysql-check)
+instances.
 
 
 
-### CPU check
+#### CPU check
 
 The graph for the CPU check displays how much of its available
 processing power the instance uses. It also displays minimum, maximum,
@@ -66,7 +52,7 @@ and average CPU usage for that period.
 
 
 
-### File system check
+#### File system check
 
 The graph for the File system check displays disk usage for the Cloud
 Databases instance. The **Total** value represents the total disk space
@@ -75,7 +61,7 @@ resized.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbfilesystemgraph.png" width="561" height="229" />
 
-### Load average check
+#### Load average check
 
 The graph for the load average check displays your instance&rsquo;s load
 average on a per-minute basis. Whereas the CPU usage graph displays
@@ -86,7 +72,7 @@ reflects overall CPU usage.
 
 
 
-### Memory check
+#### Memory check
 
 The graph for the memory check displays your instance&rsquo;s memory use
 (RAM). The **Total** value represents the total memory available to the
@@ -97,7 +83,7 @@ in use.
 
 
 
-### Network check
+#### Network check
 
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
@@ -106,7 +92,7 @@ traffic in kilobytes per second.
 
 
 
-### MySQL check
+#### MySQL check
 
 Graphs that report metrics for the MySQL datastore running on your
 instance will be added to the Cloud Control Panel in the future. In the
@@ -116,8 +102,7 @@ beta.
 
 
 
-Alarms
-----------
+### Alarms
 
 You can set up custom alarms that will trigger notifications when
 defined criteria are met for monitored metrics. By default Cloud
@@ -127,7 +112,7 @@ disk space is low.
 **Note:** You might need to add **alerts@cloudmonitoring.rackspace.com**
 to your contacts list to prevent email alerts from being marked as spam.
 
-### Creating alarms
+#### Creating alarms
 
 You can view and create alarms from a check's details page.
 
@@ -161,25 +146,17 @@ You can view and create alarms from a check's details page.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/dbcpualarm.png" width="407" height="546" />
 
-### Editing alarms
+#### Editing alarms
 
 To change the alarm name, alert recipient, or alarm criteria, click the
 gear icon next to an existing alarm and select **Edit Criteria**.
 
 
 
-Alarm criteria examples
----------------------------
+### Alarm criteria examples
 
 The following sections provide example criteria for each of the Cloud
-Databases checks:
-
--   [CPU alarms](#cpualarms)
--   [File system](#filesys)
--   [Load average](#loadavg)
--   [Memory](#mem)
--   [Network](#network)
--   [MySQL](#mysql)
+Databases checks.
 
 These examples define criteria for *Warning*, *Critical*, and OK
 statuses. By default, Warning and Critical statuses cause the text of
@@ -194,8 +171,7 @@ documentation](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendi
 
 
 
-CPU alarms
-----------
+### CPU alarms
 
 The following criteria returns a Warning status when CPU usage is above
 90% and a Critical status when CPU usage is above 95%.
@@ -213,8 +189,7 @@ The following criteria returns a Warning status when CPU usage is above
 
 
 
-File system alarms
-------------------
+### File system alarms
 
 A monitoring alarm is included by default for this check. The criteria
 for the Low Disk Space alarm will return a warning status when disk
@@ -235,8 +210,7 @@ disk usage exceeds 95% of total space available.
 
 
 
-Load average alarms
--------------------
+### Load average alarms
 
 The time period used to calculate load average for the load average
 alarm can be set to 1 minute, 5 minutes, or 15 minutes.
@@ -256,8 +230,7 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
 
 
 
-Memory alarms
--------------
+### Memory alarms
 
     if (percentage(metric['actual_used'], metric['total']) > 90) {
            return new AlarmStatus(CRITICAL, "Memory usage is above your critical threshold
@@ -273,8 +246,7 @@ Memory alarms
 
 
 
-Network alarms
---------------
+### Network alarms
 
     if (rate(metric['rx_bytes']) > 24903680) {
            return new AlarmStatus(CRITICAL, "Network receive rate on eth0 is above your
@@ -291,8 +263,7 @@ Network alarms
 
 
 
-MySQL alarms
-------------
+### MySQL alarms
 
 The following criteria returns a Warning status when the number of open
 connections is above 400 and returns a Critical status when the number

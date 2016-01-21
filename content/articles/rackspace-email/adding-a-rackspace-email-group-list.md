@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2012-07-24'
 last_modified_by: Rackspace Support
 product: Rackspace Email
-body_format: tinymce
 ---
 
 <div>

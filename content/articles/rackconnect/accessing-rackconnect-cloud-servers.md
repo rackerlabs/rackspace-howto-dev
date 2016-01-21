@@ -4,15 +4,12 @@ title: Accessing RackConnect cloud servers
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
-### Previous section
-
-[Managing RackConnect v2.0 network
+**Previous section:** [Managing RackConnect v2.0 network
 policies](/how-to/managing-rackconnect-v20-network-policies)
 
 **Applies to:** RackConnect v3.0 and RackConnect v2.0
@@ -20,8 +17,7 @@ policies](/how-to/managing-rackconnect-v20-network-policies)
 You can use several methods to access your RackConnect cloud servers.
 This article provides an overview of some of these methods.
 
-Direct access to RackConnect cloud servers via their public IP address
-----------------------------------------------------------------------
+### Direct access to RackConnect cloud servers via their public IP address
 
 With RackConnect v2.0, if the automation feature to provision public IP
 addresses ** is enabled on your RackConnect cloud account, then the
@@ -58,8 +54,7 @@ RackConnect cloud server in the MyRackspace portal.
 servers when they are built. With RackConnect v2.0, the automation
 processes deactivates the initial public IP address.
 
-Alternative methods of connecting to your RackConnect cloud servers
--------------------------------------------------------------------
+### Alternative methods of connecting to your RackConnect cloud servers
 
 If you have not provisioned dedicated public IP addresses to your
 RackConnect cloud servers, you might be able to use one of these

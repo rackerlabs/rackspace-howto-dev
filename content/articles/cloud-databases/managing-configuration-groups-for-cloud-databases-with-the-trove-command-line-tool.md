@@ -4,10 +4,9 @@ title: Managing configuration groups for Cloud Databases with the trove command-
 type: article
 created_date: '2014-03-17'
 created_by: Neha Verma
-last_modified_date: '2015-12-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: tinymce
 ---
 
 You can save and manage the settings for Cloud Databases instances in
@@ -20,17 +19,7 @@ command-line interface for the API.
 This article describes the commands that you run with python-troveclient
 to manage configuration groups.
 
--   [Configuration group and configuration parameters](#configgroups)
--   [Installing python-troveclient](#install)
--   [Command options](#options)
--   [Creating and deleting configuration groups](#creatingdeleting)
--   [Applying configuration groups to instances](#applying)
--   [Modifying configuration groups](#modifying)
--   [Listing configuration groups](#listgroups)
--   [Viewing configuration details](#viewconfig)
-
-Configuration groups and configuration parameters
--------------------------------------------------
+### Configuration groups and configuration parameters
 
 
 
@@ -45,8 +34,7 @@ group could have a configuration parameter of `max_connections` set to
 instance](/how-to/setting-the-time-zone-for-a-cloud-databases-instance)
 with the `default_time_zone` parameter.
 
-Installing python-troveclient
------------------------------
+### Installing python-troveclient
 
 
 
@@ -66,8 +54,7 @@ run the following command:
 
     trove help
 
-Command options
----------------
+### Command options
 
 
 
@@ -81,7 +68,7 @@ explanation or have specific requirements.
 -   [Instance ID](#instanceid)
 -   [Flavor](#flavor)
 
-### value pairs option
+#### value pairs option
 
 
 
@@ -108,7 +95,7 @@ type is an integer representing bytes. If you you want to set it to 100
 megabytes, you would need to set its value to an integer representing
 that many bytes (104857600).
 
-### datastore type option
+#### datastore type option
 
 
 
@@ -119,7 +106,7 @@ although you can use the name of the datastore type.
 
     trove datastore-list
 
-### `datastore_version` option
+#### `datastore_version` option
 
 
 
@@ -134,7 +121,7 @@ version.
 Configuration groups and parameters are associated with a datastore
 version they can be applied to.
 
-### Configuration group ID option
+#### Configuration group ID option
 
 
 
@@ -144,7 +131,7 @@ their IDs by using `configuration-list` command.
 
     trove configuration-list
 
-### Instance ID option
+#### Instance ID option
 
 
 
@@ -153,7 +140,7 @@ can see a list of instances and their IDs by using the `list` command.
 
     trove list
 
-### flavor
+#### flavor
 
 
 
@@ -165,15 +152,14 @@ using the `flavor-list` command.
 
     trove flavor-list
 
-Creating and deleting configuration groups
-------------------------------------------
+### Creating and deleting configuration groups
 
 
 
 -   [Create a new configuration group](#creategroup)
 -   [Delete a configuration group](#deletegroup)
 
-### Create a new configuration group
+#### Create a new configuration group
 
 
 
@@ -211,7 +197,7 @@ For a detailed example of creating and applying a configuration group,
 see [setting the time zone for a Cloud Databases
 instance](/how-to/setting-the-time-zone-for-a-cloud-databases-instance).
 
-### Delete a configuration group
+#### Delete a configuration group
 
 
 
@@ -219,8 +205,9 @@ Use the `configuration-delete` command to delete a configuration group.
 
     trove configuration-delete <config_id>
 
-Applying configuration groups to instances
-------------------------------------------
+### Applying configuration groups to instances
+
+
 
 -   [Apply a configuration group to an existing
     instance](#applyexisting)
@@ -233,7 +220,7 @@ applied to a running instance, the configuration parameters can affect
 the datastore's behavior immediately, although some configuration
 changes require that the datastore be restarted.
 
-### Apply a configuration group to an existing instance
+#### Apply a configuration group to an existing instance
 
 
 
@@ -266,7 +253,7 @@ applied configuration group's ID (shown as the configuration property).
         |       volume      |                                1                                 |
         +-------------------+------------------------------------------------------------------+
 
-### Create a new instance with a configuration group
+#### Create a new instance with a configuration group
 
 
 
@@ -300,7 +287,7 @@ The output displays the properties of the new instance.
         |       volume      |                                1                                 |
         +-------------------+------------------------------------------------------------------+
 
-### Remove the configuration group from an instance
+#### Remove the configuration group from an instance
 
 
 
@@ -310,8 +297,7 @@ configuration.
 
     trove configuration-detach <instance_id>
 
-Modifying configuration groups
-------------------------------
+### Modifying configuration groups
 
 
 
@@ -329,7 +315,7 @@ Panel](https://mycloud.rackspace.com/) by clicking on **Databases &gt;
 MySQL Configurations** and then modifying an existing configuration or
 creating a new one.
 
-### Change a subset of the parameters of a configuration group
+#### Change a subset of the parameters of a configuration group
 
 
 
@@ -364,7 +350,7 @@ The command returns the properties of the configuration group.
 Note that the other parameter set on the group, `collation_server`, is
 unaffected by the change.
 
-### Replace all parameters of a configuration group
+#### Replace all parameters of a configuration group
 
 
 
@@ -402,12 +388,11 @@ is for `character_set_server`.
         |        values        | {u'character_set_server': u'latin1'} |
         +----------------------+--------------------------------------+
 
-Listing configuration groups
-----------------------------
+### Listing configuration groups
 
 
 
-### View all defined and available configuration groups
+#### View all defined and available configuration groups
 
 
 
@@ -427,7 +412,7 @@ The output would look follows:
         | b52de6cc-5c4f-4deb-afbc-f7190ee7573b |   Stagingconfig    |    UpdatedStagingConfig   | 4f83ff38-3ef3-4a27-8b4c-330dc59857ca |
         +--------------------------------------+--------------------+---------------------------+--------------------------------------+
 
-### View all instances associated with a configuration group
+#### View all instances associated with a configuration group
 
 
 
@@ -445,8 +430,7 @@ The output would look as follows:
         | c46a0bba-6c15-4db5-ad7b-832ee2c0b59d | CloudDBStaging |
         +--------------------------------------+----------------+
 
-Viewing configuration details
------------------------------
+### Viewing configuration details
 
 
 
@@ -458,7 +442,7 @@ Viewing configuration details
 -   [View the default configuration settings for a specific
     instance](#viewdefault)
 
-### View details of a configuration group
+#### View details of a configuration group
 
 
 
@@ -480,7 +464,7 @@ The output would look as follows:
         |        values        | {u'collation_server': u'latin1_swedish_ci', u'max_connections': 50} |
         +----------------------+-----------------------------------------------------------------------+
 
-### View properties for a single configuration parameter that can be configured for a datastore version
+#### View properties for a single configuration parameter that can be configured for a datastore version
 
 
 
@@ -506,7 +490,7 @@ MySQL 5.1 would look as follows:
         |       type       |         integer         |
         +------------------+-------------------------+
 
-### View all configuration parameters that can be configured for a datastore version
+#### View all configuration parameters that can be configured for a datastore version
 
 
 
@@ -556,7 +540,7 @@ The output would look as follows:
         |          wait_timeout          | integer |    1    |       31536000       |      False       |
         +--------------------------------+---------+---------+----------------------+------------------+
 
-### View the default configuration settings for a specific instance
+#### View the default configuration settings for a specific instance
 
 
 

@@ -7,7 +7,6 @@ created_by: Daniel Dispaltro
 last_modified_date: '2014-05-15'
 last_modified_by: Rose Contreras
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 It is not necessary to edit config files on a Nagios server. Rackspace

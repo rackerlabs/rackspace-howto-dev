@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2014-11-07'
 last_modified_by: Ross Diaz
 product: Cloud Servers
-body_format: tinymce
 ---
 
 You can attach (add) or detach (disconnect) networks from existing Next

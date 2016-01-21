@@ -4,15 +4,12 @@ title: Access the RackConnect Management Interface
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
-### Previous section
-
-[Getting started with RackConnect
+**Previous section**: [Getting started with RackConnect
 v2.0](/how-to/rackconnect-v20)
 
 You can access the RackConnect Management Interface from the
@@ -36,7 +33,7 @@ The status indicators can be green, blue, red, or yellow.
 -   Red circle:  Failed
 -   Yellow circle:  Removing
 
-### Next steps
+### Next step
 
 [Managing RackConnect v2.0 Network
 Policies](/how-to/managing-rackconnect-v20-network-policies)

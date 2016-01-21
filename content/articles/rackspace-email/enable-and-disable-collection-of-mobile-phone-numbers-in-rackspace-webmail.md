@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-01-20'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
-body_format: tinymce
 ---
 
 You can enable or disable mobile phone collection in Webmail for a

@@ -7,7 +7,6 @@ created_by: Trey Hoehne
 last_modified_date: '2015-08-19'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: full_html
 ---
 
 Swap is space on a disk that is reserved to be used as virtual memory.

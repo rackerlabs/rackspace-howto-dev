@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
-body_format: full_html
 ---
 
 Rackspace Email allows users to check and manage their email online

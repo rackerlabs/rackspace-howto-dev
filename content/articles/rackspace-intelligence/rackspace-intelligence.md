@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-20'
 last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Which of the Rackspace Intelligence services would you like to use?

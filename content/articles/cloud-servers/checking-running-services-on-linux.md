@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 <div id="concept_ntk_d53_vf" class="nested0">

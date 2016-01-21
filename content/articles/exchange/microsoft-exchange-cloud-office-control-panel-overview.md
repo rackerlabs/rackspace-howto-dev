@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2014-12-29'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 Welcome to Rackspace Cloud Office Control Panel! After you sign up for

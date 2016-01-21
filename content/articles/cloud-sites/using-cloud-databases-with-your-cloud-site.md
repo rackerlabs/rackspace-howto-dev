@@ -7,7 +7,6 @@ created_by: Chris Farmer
 last_modified_date: '2014-11-13'
 last_modified_by: David Hendler
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Cloud Databases is part of the Cloud Control Panel. One of the

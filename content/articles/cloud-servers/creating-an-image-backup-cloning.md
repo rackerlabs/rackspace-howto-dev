@@ -7,7 +7,6 @@ created_by: Renee Rendon
 last_modified_date: '2015-07-29'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 <span><span><span>This article guides you through the process of

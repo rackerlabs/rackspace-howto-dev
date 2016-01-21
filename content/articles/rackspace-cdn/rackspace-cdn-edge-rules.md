@@ -4,10 +4,9 @@ title: Rackspace CDN edge rules
 type: article
 created_date: '2015-02-11'
 created_by: Megan Meza
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2016-01-21'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
-body_format: tinymce
 ---
 
 Rackspace CDN \[[product
@@ -23,13 +22,7 @@ enforce this behavior. Rackspace currently supports three types of edge
 rules:  caching rules, origin rules, and restrictions. Each of these
 rule types is covered in more detail below.
 
--   [Caching rules](#order)
--   [Origin rules](#examples)
--   [Restrictions](#restrictions)
--   [Rule set up](#Rule%20set%20up)
-
-Caching rules
------------------
+### Caching rules
 
 Caching rules control the TTL for your site's content. Setting the TTL
 for content tells the edge servers how long to cache content before
@@ -59,10 +52,7 @@ your content as follows:
 -   If you do not set up any caching rules, all content is cached for
     1 day.
 
-
-
-Origin rules
-----------------
+### Origin rules
 
 Origin rules are used when you need to pull content from two or more
 origins (web servers, load balancers, etc) for the same CDN service.
@@ -111,10 +101,7 @@ in the header. If your CDN domain is
 change the hostname to [mysite.com](http://mysite.com) when fetching
 from the origin. However, that is not the case.
 
-
-
-Restrictions
-----------------
+### Restrictions
 
 Rackspace CDN enables you to specify restrictions based the following:
 
@@ -136,9 +123,7 @@ requests.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-10-02%20at%202.24.57%20PM.png" width="446" height="269" />
 
-
-
-### Referrer restrictions
+#### Referrer restrictions
 
 Referrer restrictions allow customers to limit access to their site&rsquo;s
 content by checking the *referrer header* of the incoming request. Users
@@ -191,7 +176,7 @@ example, **test.yoursite.com**) to test all rules before implementing
 them on your production domain.
 
 
-### Geography restrictions
+#### Geography restrictions
 
 Rackspace CDN allows you to restrict content based on geographical
 regions. See [Rackspace CDN geography
@@ -199,20 +184,17 @@ mapping](/how-to/rackspace-cdn-geography-mapping)
 for a list of the Rackspace CDN geographical regions and the countries
 and territories within them.
 
-### IP address restrictions
+#### IP address restrictions
 
 Rackspace CDN allows you to restrict content by specifying the IP
 address to which the retrictions applies.
 
-
-
-Rule set up
----------------
+### Rule set up
 
 No matter what type of edge rule you create, the concepts in the
 following sections apply.
 
-### Path information
+#### Path information
 
 Each type of edge rule is enforced based on a path. This path tells the
 network which portion of content should enforce a rule. This path
@@ -229,7 +211,7 @@ to anything with **/logos** in the path. If your path is set to
 including files in different subdirectories, such as
 **/logos/partnerA/image.jpg** and **/logos/partnerB/image.png**.
 
-### Rule Ordering
+#### Rule Ordering
 
 Users commonly create multiple rules with the same rule type. For
 example, when setting up caching rules, you may want one TTL for static

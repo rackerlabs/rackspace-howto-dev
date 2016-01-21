@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 You can cause PHP to be processed on HTM and HTML pages by setting those

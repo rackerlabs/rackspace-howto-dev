@@ -7,7 +7,6 @@ created_by: Catherine Richardson
 last_modified_date: '2015-05-28'
 last_modified_by: David Hendler
 product: Rackspace CDN
-body_format: tinymce
 ---
 
 Rackspace CDN \[[product

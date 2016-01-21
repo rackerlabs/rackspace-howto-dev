@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Managed VMware Services
-body_format: full_html
 ---
 
 ### Architecture

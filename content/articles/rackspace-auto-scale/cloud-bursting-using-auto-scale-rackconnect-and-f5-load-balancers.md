@@ -7,7 +7,6 @@ created_by: Maria Abrahms
 last_modified_date: '2016-01-04'
 last_modified_by: Kyle Laffoon
 product: Rackspace Auto Scale
-body_format: tinymce
 ---
 
 You can use Auto Scale and RackConnect for &ldquo;cloud bursting&rdquo;: adding

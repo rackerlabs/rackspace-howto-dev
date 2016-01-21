@@ -7,7 +7,6 @@ created_by: Jereme Hancock
 last_modified_date: '2015-09-22'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 ***NOTE:** This article is written for our [Cloud Sites Control

@@ -5,9 +5,8 @@ type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
 last_modified_date: '2016-01-21'
-last_modified_by: Steve Ortiz
-product: Cloud Networks
-body_format: full_html
+last_modified_by: Kyle Laffoon
+product: Cloud Servers
 ---
 
 ### - Getting started -
@@ -235,7 +234,7 @@ support that you need to get the most out of the Cloud.
 -   Call us 24x7x365 at 800 961 4454 (toll-free) or +1 210 312
     4000 (international).
 
-#### Can I install the Rackspace Private Cloud on virtual machine machines?
+#### Can I install the Rackspace Private Cloud on virtual machines?
 
 Rackspace strongly recommends that you install Rackspace Private Cloud
 on physical hardware nodes running Ubuntu 12.04 or CentOS 6.3.

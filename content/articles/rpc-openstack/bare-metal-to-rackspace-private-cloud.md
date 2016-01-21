@@ -7,7 +7,6 @@ created_by: Alyssa Hurtgen
 last_modified_date: '2014-05-15'
 last_modified_by: Rose Contreras
 product: Rackspace Private Cloud Powered by OpenStack
-body_format: tinymce
 ---
 
 <span style="line-height: 1.538em;">Overview</span>

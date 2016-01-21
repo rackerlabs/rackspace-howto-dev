@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: tinymce
 ---
 
 What is the network throughput on the Brocade Vyatta vRouter?

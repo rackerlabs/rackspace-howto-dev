@@ -4,20 +4,13 @@ title: Managing Backups for Cloud Databases
 type: article
 created_date: '2014-01-15'
 created_by: Rackspace Support
-last_modified_date: '2014-01-21'
-last_modified_by: Ross Diaz
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: tinymce
 ---
 
 You can perform the following operations on your Rackspace Cloud
 Databases instances.
-
--   [Create a backup](#CreateBackup)
--   [List details of all backups for the account](#ListDetails)
--   [List details of all backups for an instance](#ListDetailsInstance)
--   [Delete a backup](#DeletingBackups)
--   [Restore a backup](#RestoringBackups)
 
 ###
 
@@ -127,6 +120,5 @@ on the instance at the time of the backup will be restored along with
 the databases. Once restored, you can create new users or databases, but
 they cannot be the same as the ones from the instance that was backed
 up.
-
 
 

@@ -7,7 +7,6 @@ created_by: Megan Meza
 last_modified_date: '2015-07-16'
 last_modified_by: Stephanie Fillmon
 product: Cloud Queues
-body_format: tinymce
 ---
 
 Cloud Queues was built to be flexible for a wide variety of messaging

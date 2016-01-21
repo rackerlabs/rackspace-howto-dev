@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 Learn how to manage blacklist settings for your domain. Blacklists can

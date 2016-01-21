@@ -7,7 +7,6 @@ created_by: Juan Perez
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
-body_format: tinymce
 ---
 
 ### Previous section

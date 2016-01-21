@@ -7,7 +7,6 @@ created_by: Matt Costello
 last_modified_date: '2014-06-23'
 last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The version of MySQL installed on Cloud Sites that use Windows

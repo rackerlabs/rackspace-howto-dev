@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2014-12-23'
 last_modified_by: Rose Contreras
 product: Cloud Files
-body_format: tinymce
 ---
 
 Rackspace allows you to choose the data center where you would like to

@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2016-01-08'
 last_modified_by: Kyle Laffoon
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Do you leverage data center automation to build products faster? Do you

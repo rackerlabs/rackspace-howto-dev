@@ -7,7 +7,6 @@ created_by: Milton Prado
 last_modified_date: '2014-12-30'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
-body_format: tinymce
 ---
 
 This article provides information about a known issue with Apple Mail

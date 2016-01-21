@@ -7,7 +7,6 @@ created_by: Maria Abrahms
 last_modified_date: '2016-01-07'
 last_modified_by: Rose Contreras
 product: Rackspace Auto Scale
-body_format: tinymce
 ---
 
 Read the following tips and how-to sections to help you achieve your

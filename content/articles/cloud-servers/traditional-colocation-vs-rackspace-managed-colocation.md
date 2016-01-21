@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 [Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)

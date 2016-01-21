@@ -7,7 +7,6 @@ created_by: Neha Verma
 last_modified_date: '2015-12-01'
 last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: tinymce
 ---
 
 High Availability for Cloud Databases means that Cloud Databases users

@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2013-06-21'
 last_modified_by: Rose Contreras
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 The following article will show you how to add a single Microsoft

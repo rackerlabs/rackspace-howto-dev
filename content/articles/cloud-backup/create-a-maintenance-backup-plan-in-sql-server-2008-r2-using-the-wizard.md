@@ -7,7 +7,6 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-21'
 last_modified_by: Margaret Eker
 product: Cloud Backup
-body_format: tinymce
 ---
 
 When you create a maintenance backup plan in SQL Server 2008 R2, you

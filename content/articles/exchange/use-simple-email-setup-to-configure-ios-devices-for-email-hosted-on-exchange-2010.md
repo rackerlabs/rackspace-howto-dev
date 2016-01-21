@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-09-04'
 last_modified_by: Constanze Kratel
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 The Following Article will guide you through using our Simple Email

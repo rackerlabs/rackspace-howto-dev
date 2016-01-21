@@ -4,10 +4,9 @@ title: Streaming Cloud Files with JW Player
 type: article
 created_date: '2012-12-05'
 created_by: David Hendler
-last_modified_date: '2016-01-06'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 Cloud Files supports the JW Player for streaming video files. We also
@@ -32,8 +31,7 @@ Video:
 
 
 
-Upload JW Player 6
-------------------
+### Upload JW Player 6
 
 1\. Download the JW Player from
 [www.longtailvideo.com/jw-player/](http://www.longtailvideo.com/jw-player/ "Get the JW Player").
@@ -63,8 +61,7 @@ Container"](http://docs.rackspace.com/files/api/v1/cf-devguide/content/PUT_enabl
 
 
 
-Add JW Player 6 to Your Web Page
---------------------------------
+### Add JW Player 6 to Your Web Page
 
 There are three elements you must add to your web page in order to make
 JW Player work: a SCRIPT element that points to the player, a DIV that

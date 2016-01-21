@@ -4,16 +4,10 @@ title: Sample Ruby Application for Cloud Files
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-09-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
-
-
-
-<span class="mw-headline">Sample Ruby Application </span>
----------------------------------------------------------
 
 *From Connection to Objects*
 

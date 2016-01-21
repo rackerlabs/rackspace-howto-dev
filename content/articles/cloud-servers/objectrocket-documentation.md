@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2014-03-13'
 last_modified_by: Ross Diaz
 product: Cloud Servers
-body_format: tinymce
 ---
 
 What is ObjectRocket?

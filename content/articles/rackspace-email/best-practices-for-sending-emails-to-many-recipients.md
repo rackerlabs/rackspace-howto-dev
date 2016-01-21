@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-12-22'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 Sending email to many recipients is a common practice of spammers. As a

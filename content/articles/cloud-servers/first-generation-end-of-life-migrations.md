@@ -7,7 +7,6 @@ created_by: Reese Mcjunkin
 last_modified_date: '2015-12-14'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 On January 5, 2015, we announced plans to retire our First Generation

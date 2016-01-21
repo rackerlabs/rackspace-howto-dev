@@ -7,7 +7,6 @@ created_by: David Grier
 last_modified_date: '2016-01-21'
 last_modified_by: Margaret Eker
 product: Cloud Big Data
-body_format: tinymce
 ---
 
 Rackspace Cloud Big Data Platform is a new public cloud offering

@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-02-10'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
-body_format: tinymce
 ---
 
 You can recover the password for your Rackspace Email account by having

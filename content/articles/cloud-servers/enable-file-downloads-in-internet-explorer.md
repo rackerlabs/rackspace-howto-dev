@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-06-04'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 If you have just created a cloud server on Microsoft Windows but are

@@ -4,10 +4,9 @@ title: Cloud Server images for use with RackConnect v2.0
 type: article
 created_date: '2012-08-21'
 created_by: David Hendler
-last_modified_date: '2016-01-06'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
 **Applies to:** RackConnect v2.0
@@ -20,8 +19,7 @@ compatible with RackConnect, we recommend that you use the MyRackspace
 Portal when creating your servers. This article provides details about
 the compatibility of Cloud Servers images with RackConnect.
 
-Managed Infrastructure images
------------------------------
+### Managed Infrastructure images
 
 Some Cloud Servers images are incompatible with RackConnect at the
 Managed Infrastructure service level. If you have the Managed
@@ -40,8 +38,7 @@ with RackConnect:
 | Gentoo 11.0                                        | 108      |
 | openSUSE 12                                        | 109      |
 
-Managed Infrastructure Windows images
--------------------------------------
+### Managed Infrastructure Windows images
 
 **Note:** You cannot use the Cloud Control Panel to create Managed
 Infrastructure Windows cloud servers for use with RackConnect. Use the
@@ -98,8 +95,7 @@ Cloud account with RackConnect, you will automatically see the correct
 Windows images, and no additional action is required. You might not see
 the image IDs through the MyRackspace Portal.
 
-Managed Operations images
--------------------------
+### Managed Operations images
 
 All standard base images that are available through the API and
 MyRackspace Portal are compatible with RackConnect at the Managed

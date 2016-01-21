@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2015-03-17'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### What is Neutron?

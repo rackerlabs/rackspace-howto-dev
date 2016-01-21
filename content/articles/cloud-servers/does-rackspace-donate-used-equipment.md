@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-20'
 last_modified_by: Renee Rendon
 product: Cloud Servers
-body_format: full_html
 ---
 
 Rackspace sends all used compute/storage/network/drives (e-waste) to a

@@ -4,10 +4,9 @@ title: Protect Your Cloud Files CDN Bill from Unexpected Usage
 type: article
 created_date: '2012-09-14'
 created_by: David Hendler
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 <span>When choosing to use the content delivery network (CDN) to
@@ -32,12 +31,8 @@ linking in the following ways:
 -- Proactive measures to make it more difficult to access your site&rsquo;s
 source code
 
-The following sections discuss  these options.
 
-
-
-Monitoring and alerting ******
-------------------------------
+### Monitor usage in the Cloud Control Panel ******
 
 One way to monitor your current CDN usage is through the Cloud Control
 Panel.
@@ -54,6 +49,10 @@ Panel.
     Files usage.
 
  ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1560-2162-newimg.png)
+
+###
+
+### Examine CDN logs
 
 Another method for monitoring your CDN usage is by examining the CDN
 logs. Every CDN customer can turn on CDN logs for their containers that
@@ -100,8 +99,7 @@ Ability](https://cloudtools.rackspace.com/apps/445?1601080659) and [QloudStat](h
 
 
 
-Hiding source code
-------------------
+### Hide source code
 
 Although completely hiding your source code is impossible, following are
 some common tools that can serve as a first line of defense against

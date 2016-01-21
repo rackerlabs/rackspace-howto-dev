@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-02-03'
 last_modified_by: Ross Diaz
 product: Rackspace Email
-body_format: tinymce
 ---
 
 The following article will help set up your signature which can include

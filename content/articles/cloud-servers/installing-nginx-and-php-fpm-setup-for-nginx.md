@@ -7,7 +7,6 @@ created_by: Kevin Carter
 last_modified_date: '2015-12-23'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### Prerequisites

@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2014-06-30'
 last_modified_by: Jered Heeschen
 product: Cloud Big Data
-body_format: tinymce
 ---
 
 **Cluster** A group of servers (nodes). In Cloud Big Data, the servers

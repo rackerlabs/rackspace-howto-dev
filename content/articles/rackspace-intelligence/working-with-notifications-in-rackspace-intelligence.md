@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-08-25'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Before you can build [notification plans for Rackspace

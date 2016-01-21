@@ -7,7 +7,6 @@ created_by: Gerry Lecanu
 last_modified_date: '2015-06-02'
 last_modified_by: David Hendler
 product: Rackspace Private Cloud Powered by Microsoft Cloud Platform
-body_format: tinymce
 ---
 
 To compete in the global economy and keep up with the pace of

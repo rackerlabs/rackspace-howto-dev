@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2013-09-17'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 The following information will direct you in setting up your traffic

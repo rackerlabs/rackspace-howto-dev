@@ -7,7 +7,6 @@ created_by: Juan Perez
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
-body_format: tinymce
 ---
 
 **APPLIES TO:** RackConnect v2.0, OnMetal Cloud Servers

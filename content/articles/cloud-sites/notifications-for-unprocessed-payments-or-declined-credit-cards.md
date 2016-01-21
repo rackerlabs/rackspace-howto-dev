@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-08-03'
 last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Previously, if billing for your account failed, a message would be

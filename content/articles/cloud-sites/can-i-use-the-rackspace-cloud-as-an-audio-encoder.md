@@ -4,10 +4,9 @@ title: Can I use The Rackspace Cloud as an audio encoder?
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2011-09-07'
-last_modified_by: Richard Valadez
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The Rackspace Cloud isn't afraid of the facts. And the fact is, audio

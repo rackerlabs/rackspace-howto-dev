@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-09-04'
 last_modified_by: Constanze Kratel
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 This article explains how to use the Simple Email setup tool located in

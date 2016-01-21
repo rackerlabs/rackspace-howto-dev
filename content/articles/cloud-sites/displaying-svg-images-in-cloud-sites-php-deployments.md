@@ -7,7 +7,6 @@ created_by: Bryon Farris
 last_modified_date: '2013-12-19'
 last_modified_by: Ross Diaz
 product: Cloud Sites
-body_format: tinymce
 ---
 
 ***Note: As of Wordpress 3.8, Wordpress employs an SVG logo for the

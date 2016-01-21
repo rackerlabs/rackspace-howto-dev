@@ -7,7 +7,6 @@ created_by: Alonzo Garza
 last_modified_date: '2016-01-11'
 last_modified_by: Nate Archer
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Overview

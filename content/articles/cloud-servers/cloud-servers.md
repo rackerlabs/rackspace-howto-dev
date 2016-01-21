@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-20'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 This article covers everything you'll need to know as a new Rackspace

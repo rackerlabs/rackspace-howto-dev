@@ -7,7 +7,6 @@ created_by: Theresa Kinney
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 You can manage public folders through email clients on both Windows and

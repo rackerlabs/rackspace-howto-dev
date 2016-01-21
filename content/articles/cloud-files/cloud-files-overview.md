@@ -4,10 +4,9 @@ title: Cloud Files overview
 type: article
 created_date: '2012-07-23'
 created_by: Rackspace Support
-last_modified_date: '2016-01-05'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 Cloud Files is an affordable, redundant, scalable, and dynamic storage
@@ -28,16 +27,7 @@ content with a simple web service (REST) interface. There are also
 language-specific APIs that use the REST API but make it easier for
 developers to integrate Cloud Files into their applications.
 
-This article provides the following information about the Cloud Files
-service:
-
--   [Ideal uses for Cloud Files](#Ideal)
--   [Key concepts](#Key)
--   [Using Cloud Files](#Using)
--   [Getting started](#Getting)
-
-Ideal uses for Cloud Files
---------------------------
+### Ideal uses for Cloud Files
 
 The Cloud Files service is an excellent storage solution for a number of
 scenarios and is well suited for a number of applications. Following are
@@ -51,8 +41,7 @@ some of the ideal uses for Cloud Files:
 -   Storing data when predicting storage capacity is difficult
 -   Storing data for applications affordably
 
-Key concepts
-------------
+### Key concepts
 
 Cloud Files is not a file system in the traditional sense. You can't map
 or mount virtual disk drives like you can with other forms of storage
@@ -60,8 +49,7 @@ such as a SAN or NAS. Because Cloud Files is a different kind of storage
 solution, take a few moments to [review some key
 concepts](http://www.rackspace.com/knowledge_center/frequently-asked-question/cloud-files-key-concepts).
 
-Using Cloud Files
------------------
+### Using Cloud Files
 
 You can access Cloud Files by using the following interfaces:
 
@@ -70,7 +58,7 @@ You can access Cloud Files by using the following interfaces:
 -   Programming interfaces via REST, Python, PHP, Ruby, Java, and C\#
     .NET
 
-### Cloud Control Panel interface
+#### Cloud Control Panel interface
 
 The Cloud Control Panel provides a browser-based, intuitive, easy-to-use
 graphical user interface (GUI). The control panel enables you to manage
@@ -79,7 +67,7 @@ knowledge. From the control panel, you can CDN-enable a container by
 marking it **public**. Any objects stored in a public, CDN-enabled
 container are directly accessible over the CDN.
 
-### Programming interfaces
+#### Programming interfaces
 
 There are several programming interfaces for Cloud Files that enable you
 to integrate the storage solution into your applications, or provide

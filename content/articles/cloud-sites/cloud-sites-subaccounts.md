@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 A Cloud Sites *subaccount*, also called a *client*, provides access to a

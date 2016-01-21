@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Get quick answers to common questions about Seamless sign-on (SSO)

@@ -4,10 +4,9 @@ title: Optimize SugarCRM on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 **Note:** This article is intended for advanced users.
@@ -17,12 +16,6 @@ Rackspace recommends consulting the vendors of the application. However,
 SugarCRM does have detailed documentation on their [Support
 Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki"),
 some of which we have made available here.
-
--   [Quick guide](#Quick_Guide)
--   [Developer tools](#Developer_Tools)
--   [External links](#External_Links)
-
-
 
 <span class="mw-headline">Quick guide</span>
 --------------------------------------------

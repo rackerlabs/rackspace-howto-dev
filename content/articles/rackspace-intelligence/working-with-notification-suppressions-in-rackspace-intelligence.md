@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-09-01'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Rackspace Intelligence enables you to temporarily suspend [Rackspace

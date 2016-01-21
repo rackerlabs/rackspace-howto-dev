@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-08-27'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Master-slave data replication allows for replicated data to be copied to

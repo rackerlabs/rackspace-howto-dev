@@ -4,19 +4,13 @@ title: Force SSL on your ASP or ASP.NET site on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-06-23'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 This article provides examples of how to force SSL on your ASP or
 ASP.NET site.
-
--   [web.config file](#web.config)
--   [ASP.NET (not MVC 3)](#ASP.NET)
--   [ASP.NET (MVC 3)](#aspnetmvc3)
--   [Classic ASP](#classicASP)
 
 web.config file
 ---------------

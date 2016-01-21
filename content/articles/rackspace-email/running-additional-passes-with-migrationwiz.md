@@ -7,7 +7,6 @@ created_by: Milton Prado
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 When you are migrating email to Rackspace, all email might not be

@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-15'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: full_html
 ---
 
 ### Overview

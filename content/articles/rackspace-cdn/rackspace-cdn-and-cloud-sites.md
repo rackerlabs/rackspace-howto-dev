@@ -4,13 +4,10 @@ title: Rackspace CDN and Cloud Sites
 type: article
 created_date: '2015-04-27'
 created_by: Megan Meza
-last_modified_date: '2016-01-08'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-21'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
-body_format: tinymce
 ---
-
-
 
 This article provides information about how to use Rackspace CDN with
 Rackspace Cloud Sites.
@@ -23,14 +20,7 @@ management tool in Cloud Sites, see [Getting Started with Cloud Sites -
 Managing DNS
 records](/how-to/getting-started-with-cloud-sites-managing-dns-records).
 
--   [Create a CDN service](#Create%20a%20CDN%20service)
--   [Update DNS](#Update%20DNS)
--   [Create caching rules](#Create%20caching%20rules)
-
-
-
-Create a CDN service
-------------------------
+### Create a CDN service
 
 To create a CDN service to use with your webiste, you need to know the
 IP address of your site (your origin) and and the **www** address of
@@ -53,15 +43,11 @@ shown in the following figure.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-09-16%20at%204.05.52%20PM.png" width="627" height="308" />
 
-
-
 5\. In the **Origin** field, enter the IP address for your site. You can
 find the IP address on the **General Settings** tab in the Cloud Sites
 Control Panel, as shown in the following figure.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-09-16%20at%204.14.51%20PM.png" width="637" height="478" />
-
-
 
 6\. Click **Create Service**.
 
@@ -73,10 +59,7 @@ You need this URL in the next section, to update your DNS records.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-09-16%20at%204.21.48%20PM.png" width="647" height="377" />
 
-
-
-Update DNS
---------------
+### Update DNS
 
 After you have created your Rackspace CDN service, use the Cloud Sites
 DNS management tool to update the DNS for your **www** domain by
@@ -89,8 +72,6 @@ site.
 Selected**, and confirming the deletion.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-09-17%20at%202.31.45%20PM.png" width="655" height="252" />
-
-
 
 3\. In the DNS Management section, click **Add Record**.
 
@@ -107,10 +88,7 @@ origin via the specified domain name. In the example for this article,
 anything stored on **www.brandedexample.com** is now available via the
 CDN.
 
-
-
-**<span>Create caching rules</span>**
------------------------------------------
+### Create caching rules
 
 Caching rules determine how long your content lives on the edge servers
 (or nodes) before checking the origin server for an update. If your
@@ -129,14 +107,4 @@ Community](https://community.rackspace.com/) forum.
 For more information about caching rules and other Rackspace CDN edge
 rules, see [Rackspace CDN edge
 rules](/how-to/rackspace-cdn-edge-rules).
-
-
-
-
-
-
-
-
-
-
 

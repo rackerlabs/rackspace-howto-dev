@@ -7,7 +7,6 @@ created_by: Juan Perez
 last_modified_date: '2016-01-04'
 last_modified_by: Constanze Kratel
 product: RackConnect
-body_format: tinymce
 ---
 
 [Rackspace Cloud

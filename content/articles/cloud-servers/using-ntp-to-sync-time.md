@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2013-04-18'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Keeping your system&rsquo;s date and time accurate is easy to do using NTP.

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-05-12'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 A Cloud Billing Specialist can help you with account billing questions.

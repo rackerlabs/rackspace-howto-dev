@@ -4,15 +4,12 @@ title: Getting RackConnect support
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
-### Previous section
-
-[RackConnect v2.0
+**Previous section:** [RackConnect v2.0
 Requirements](/how-to/rackconnect-v20-requirements)
 
 **Applies to:** RackConnect v3.0 and RackConnect v2.0
@@ -52,7 +49,7 @@ If you have any questions, please reach out to us. Our contact
 information is available on the [Contact
 Us](/how-to/support) page.
 
-### Next steps
+### Next step
 
 [Getting started with RackConnect
 v2.0](/how-to/rackconnect-v20)

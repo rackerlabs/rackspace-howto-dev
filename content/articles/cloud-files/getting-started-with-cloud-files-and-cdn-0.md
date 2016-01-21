@@ -7,7 +7,6 @@ created_by: Stephanie Fillmon
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
-body_format: full_html
 ---
 
 This guide provides an overview of Rackspace Cloud Files and its

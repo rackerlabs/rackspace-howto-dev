@@ -4,10 +4,9 @@ title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16'
 created_by: Chris Farmer
-last_modified_date: '2016-01-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Updating your existing SSL Certificate is a quick and simple process.
@@ -19,23 +18,6 @@ get your SSL updated and installed quickly.
 environment, follow the instructions in the [Reissuing your Rackspace
 SSL Certificates](https://community.rackspace.com/products/f/43/t/4478)
 article posted in the Rackspace Support forum.
-
-Contents
---------
-
--   [<span class="tocnumber">1</span> <span class="toctext">Getting
-    Started</span>](#Getting_Started)
--   [<span class="tocnumber">2</span> <span
-    class="toctext">R</span>enewing Your
-    Certificate](#Renewing_Your_Certificate)
--   [<span class="tocnumber">3</span> <span class="toctext">Installing
-    the Certificate</span>](#Installing_the_Certificate)
--   [<span class="tocnumber">4</span> <span class="toctext">DNS
-    Update</span>](#DNS_Update)
--   [<span class="tocnumber">5</span> <span class="toctext">What To
-    Watch For</span>](#What_To_Watch_For)
-
-
 
 
 

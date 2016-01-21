@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2015-01-09'
 last_modified_by: Jered Heeschen
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 This article describes how to configure an Exchange 2013 account on your

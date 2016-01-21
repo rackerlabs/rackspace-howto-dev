@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-06-12'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
-body_format: tinymce
 ---
 
 To test PHP mail functionality, you can use the following code saved

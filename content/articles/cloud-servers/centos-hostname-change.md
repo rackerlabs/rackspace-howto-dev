@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 By default, your server is started with the server's given name as the

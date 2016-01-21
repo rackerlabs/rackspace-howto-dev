@@ -7,7 +7,6 @@ created_by: David Dobbins
 last_modified_date: '2015-09-01'
 last_modified_by: Catherine Richardson
 product: Cloud Servers
-body_format: tinymce
 ---
 
 <div>

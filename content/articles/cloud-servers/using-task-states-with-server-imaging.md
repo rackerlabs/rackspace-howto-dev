@@ -7,7 +7,6 @@ created_by: Brian Rosmaita
 last_modified_date: '2015-06-03'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Some new task states have been exposed in the OpenStack Server Extended

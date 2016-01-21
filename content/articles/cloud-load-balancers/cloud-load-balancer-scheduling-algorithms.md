@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-06-04'
 last_modified_by: Jered Heeschen
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 <span

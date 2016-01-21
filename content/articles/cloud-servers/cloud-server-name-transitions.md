@@ -7,7 +7,6 @@ created_by: Thomas Duesing
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Rackspace has recently changed the names of the flavors that you can

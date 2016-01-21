@@ -7,7 +7,6 @@ created_by: Thomas Hester
 last_modified_date: '2015-09-15'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Cloud Sites has added MariaDB 10 as a database option. Although it is a

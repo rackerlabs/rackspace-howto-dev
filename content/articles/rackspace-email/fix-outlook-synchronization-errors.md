@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-08-05'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 If you recently migrated to Exchange 2010 or have been using Outlook

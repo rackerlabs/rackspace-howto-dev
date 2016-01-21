@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-01-27'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 If you ever need to check the status of your DNS records, Windows has a

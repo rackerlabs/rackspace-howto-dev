@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2013-04-25'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Tcpdump is a powerful network debugging tool that can be used for

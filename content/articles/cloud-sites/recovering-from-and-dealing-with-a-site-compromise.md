@@ -4,29 +4,16 @@ title: Recovering from and dealing with a site compromise
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Your site has been compromised and the initial priority is to restore to
 the original state. Do not be so hasty that you remove all evidence that
 can be used to track down the source of the compromise. Please follow
-the following suggestions for responding to a site compromise incident.
-
--   [Step One: Secure your workstation](#_Secure_your_workstation)
--   [Step Two: Change all passwords](#_Change_all_passwords)
--   [Step Three: Back up the compromised
-    data](#_Back_up_the_compromised_data)
--   [Step Four: Identify what has been
-    compromised](#_Identify_what_has_been_compromised)
--   [Step Five: Find the vulnerability](#_Find_the_vulnerability)
--   [Step Six: Clean Up](#_Clean_Up)
--   [Step Seven: Preventative/Counter
-    Measures](#_Preventative.2FCounter_Measures)
-
-
+the following suggestions for responding to a site compromise
+incident.
 
 <span class="mw-headline">Step One: Secure your workstation </span>
 -------------------------------------------------------------------

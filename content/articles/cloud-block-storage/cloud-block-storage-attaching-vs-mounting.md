@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2016-01-05'
 last_modified_by: Rose Contreras
 product: Cloud Block Storage
-body_format: tinymce
 ---
 
 In Cloud Block Storage you both attach and mount a Volume to a Server.

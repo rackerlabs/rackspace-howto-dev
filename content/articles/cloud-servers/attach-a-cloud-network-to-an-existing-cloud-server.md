@@ -7,7 +7,6 @@ created_by: Susan Million
 last_modified_date: '2016-01-05'
 last_modified_by: Rose Contreras
 product: Cloud Servers
-body_format: tinymce
 ---
 
 When you create a new cloud server, you can attach an isolated network

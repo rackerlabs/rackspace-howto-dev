@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-11'
 last_modified_by: Stephanie Fillmon
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 The following list provides information about the protocols you can

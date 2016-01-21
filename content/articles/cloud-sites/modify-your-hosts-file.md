@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-09-18'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Modificar seu arquivo hosts permite que voc&ecirc; substitua o dom&iacute;nio DNS em
@@ -168,11 +167,4 @@ Mac OS X 10.6 - 10.8
     6. Agora, aplique o novo mapeamento.
 
 
-
-. Para que se apliquen sus cambios, vac&iacute;e la cach&eacute; del DNS con el
-siguiente comando:
-
-    dscacheutil -flushcache
-
-6\. Ahora se aplicar&aacute;n los nuevos mapeos.
 

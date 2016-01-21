@@ -7,7 +7,6 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-08'
 last_modified_by: Kelly Holcomb
 product: Managed Operations
-body_format: tinymce
 ---
 
 Depending on your Support Service Level for Rackspace Public Cloud, you

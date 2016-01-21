@@ -7,7 +7,6 @@ created_by: Russell Haering
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: full_html
 ---
 
 OnMetal Cloud Servers enables you to boot bare metal servers via the

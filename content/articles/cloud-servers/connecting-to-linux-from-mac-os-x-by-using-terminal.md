@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 If you use Mac OS X, you don&rsquo;t need to install a third-party client like

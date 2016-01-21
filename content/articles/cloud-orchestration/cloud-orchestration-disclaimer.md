@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-10-03'
 last_modified_by: Jered Heeschen
 product: Cloud Orchestration
-body_format: tinymce
 ---
 
 The automated Orchestration feature is available as a convenience to

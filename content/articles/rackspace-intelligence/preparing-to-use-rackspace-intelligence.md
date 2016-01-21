@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2016-01-04'
 last_modified_by: Nate Archer
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Everyone who has a Rackspace cloud account can use the Rackspace Cloud

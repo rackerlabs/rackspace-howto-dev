@@ -7,7 +7,6 @@ created_by: Susan Million
 last_modified_date: '2016-01-06'
 last_modified_by: Rose Contreras
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 This article describes different methods for installing and

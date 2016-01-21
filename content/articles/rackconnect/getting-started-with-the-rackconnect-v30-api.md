@@ -1,16 +1,15 @@
 ---
 node_id: 4231
-title: Getting Started with the RackConnect v3.0 API
+title: Getting started with the RackConnect v3.0 API
 type: article
 created_date: '2014-09-10'
 created_by: Juan Perez
-last_modified_date: '2015-09-14'
+last_modified_date: '2016-01-21'
 last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
-**Applies to**: RackConnect v3.0[](#overview)
+**Applies to**: RackConnect v3.0
 
 RackConnect v3.0 includes a new enhanced API that enables you to
 seamlessly add and remove cloud servers from your load balancer pools,
@@ -20,12 +19,11 @@ Additionally, RackConnect v3.0 no longer uses the Cloud Servers API
 metadata options that were necessary to accomplish certain tasks with
 RackConnect v2.0.
 
-**Note: **To view the full range of API operations available with the
+**Note:** To view the full range of API operations available with the
 RackConnect v3.0 API, including sample requests and responses, visit the
 official [RackConnect v3.0 Public API reference
 documentation](http://docs.rcv3.apiary.io/) site. This site displays
 code samples for the RackConnect v3.0 API calls in multiple languages.
-
 
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RCv3_apiary_show_code_sample.png" alt="RackConnect v3.0 apiary show code sample" width="700" />
@@ -44,56 +42,14 @@ cURL is installed by default on many Linux distributions. If it is not
 already installed on your computer, you can download and install it &mdash;
 versions are available for most operating systems.
 
-[Use Cloud Identity to obtain an authentication
-token](#section1_use_cloud_identity_to_obtain_auth)
+### Use Cloud Identity to obtain an authentication token
 
--   [Cloud Identity Service request for an authentication token ID using
-    your cloud account's API key](#1_cloud_identity_req_API_key)
--   [Cloud Identity Service request for an authentication token ID using
-    your cloud account's password](#2_cloud_identity_req_cloud_password)
--   [Example JSON response to a Cloud Identity Service
-    request](#3_Example_JSON_response)
-
-[Manage IP addresses using the API](#section2_manage_IP_addresses_API)
-
--   [RackConnect v3.0 endpoint](#4_RackConnect_v3_endpoint)
--   [List public IP address for a cloud server API
-    request](#5_list_public_IP_API_call)
--   [Example response from list public IP address for a cloud server API
-    request](#6_example_response_list_public_IP)
-
-[Add a public IP address using the
-API](#section3_add_public_IP_address_API)
-
--   [Add or provision a public IP address to a cloud server API
-    request](#7_add_provision_IP_API)
--   [Example response to the add or provision a public IP address to a
-    cloud server API
-    request](#8_example_response_add_provision_IP_API_call)
-
-[Remove a public IP address using the
-API](#section4_remove_public_IP_address_API)
-
--   [Remove a public IP address from a cloud server API
-    request](#9_remove_public_IP_API)
--   [Example 204 response to the remove a public IP address from a cloud
-    server API request](#10_example_204_response_remove_IP_API)
-
-[Examples with sample data](#section5_examples_with_sample_data)
-
--   [List public IP address for a cloud server API request with sample
-    data](#11_list_public_IP_API_with_sample_data)
--   [Sample data entries for this example](#12_sample_data_entries)
-
-<span>Use</span><span> Cloud Identity to obtain an authentication token</span>
-----------------------------------------------------------------------------------
-
-The first step is going to be obtaining a valid authentication token ID
-number for your RackConnect v3.0-enabled cloud account from the
-Rackspace Cloud Identity Service API. This authentication token is
-required for all RackConnect v3.0 API operations. Your authentication
-token ID is how the RackConnect v3.0 API validates that you have access
-to make API calls against your RackConnect v3.0 environment.
+The first step is to obtain a valid authentication token ID number for
+your RackConnect v3.0-enabled cloud account from the Rackspace Cloud
+Identity Service API. This authentication token is required for all
+RackConnect v3.0 API operations. Your authentication token ID is how the
+RackConnect v3.0 API validates that you have access to make API calls
+against your RackConnect v3.0 environment.
 
 Your authentication token ID is sent within an X-Auth-Token header in
 your API calls. Details about obtaining your authentication token ID are
@@ -104,16 +60,18 @@ Guide](http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Quic
 You can use either one of the following combinations of credentials to
 obtain your authentication token ID:
 
--   Your cloud account user name and cloud account API key
--   Your cloud account user name and cloud account password
+-   Your Rackspace Cloud account user name and API key. (For information
+    about how to find your API key, see [View and reset your API
+    key](/knowledge_center/node/3288).)
+-   Your Rackspace Cloud account user name and password.
 
 Insert your cloud account's values in the following requests where
-italicized placeholders are shown. For example, if your cloud account's
-user name is *ExampleCloudAccountUserName*, replace the "yourUserName"
-placeholder in the requests below with "ExampleCloudAccountUserName" (be
-sure to retain the quotation marks).
+placeholders are shown. For example, if your cloud account's user name
+is ExampleCloudAccountUserName, replace the &lt;yourUserName&gt;
+placeholder in the requests with "ExampleCloudAccountUserName" (be sure
+to retain the quotation marks).
 
-### ****Cloud Identity Service request for an auth token ID using your cloud account's API key
+#### Cloud Identity Service request for an auth token ID using your cloud account's API key
 
     $ curl <br>
     --request POST <br>
@@ -122,9 +80,7 @@ sure to retain the quotation marks).
     https://identity.api.rackspacecloud.com/v2.0/tokens <br>
     | python -m json.tool
 
-
-
-### ****Cloud Identity Service request for an authentication token ID using your cloud account's password
+#### Cloud Identity Service request for an authentication token ID using your cloud account's password
 
     $ curl <br>
     --request POST <br>
@@ -158,7 +114,7 @@ of 32 alphanumeric characters, while the tenant ID consists of a series
 of numeric values. You need these values when you make RackConnect v3.0
 API calls.
 
-### ****Example JSON response to a Cloud Identity Service request
+#### Example JSON response to a Cloud Identity Service request
 
     { "access":
     ...
@@ -178,8 +134,7 @@ API calls.
     ...
     ...
 
-<span>Manage IP addresses using the API</span>
---------------------------------------------------
+### Manage IP addresses using the API
 
 Now that you have the RackConnect v3.0 cloud account's authentication
 token ID and tenant ID, you can make your first RackConnect v3.0 API
@@ -187,7 +142,7 @@ call. The API endpoint takes the following form, and you must replace
 the *region* and *tenantID* placeholders with the region where your
 cloud servers are located and your cloud account's tenant ID number.
 
-### ****RackConnect v3.0 endpoint
+#### RackConnect v3.0 endpoint
 
     https://<region>.rackconnect.api.rackspacecloud.com/v3/tenantId/
 
@@ -195,7 +150,7 @@ Using the authentication token ID that you previously gathered, you can
 now list the public IP address currently assigned to your RackConnect
 v3.0 cloud server with the following request:
 
-### ****List public IP address for a cloud server API request
+#### List public IP address for a cloud server API request
 
     curl --include \
     --request GET <br>
@@ -221,8 +176,8 @@ Note the following important points:
     there is no data for it to process. In such cases, you can use the
     *-*-include option to verify that a proper response code was
     received for the call.
--   In an operation, use only the --include option or the | python
-    -m json.tool option. Use only one of these options in a single
+-   In an operation, use only the --include option or the | python -m
+    json.tool option. Use only one of these options in a single
     operation to avoid errors.
 
 The following example response is the type of response you would see if
@@ -230,7 +185,7 @@ the cloud server has a public IP address assigned to it already. In the
 example, the public IP address assigned to the cloud server and the UUID
 associated with this public IP address are highlighted.
 
-### ****Example response from list public IP address for a cloud server API request
+#### Example response from list public IP address for a cloud server API request
 
     [
         {
@@ -255,15 +210,12 @@ associated with this public IP address are highlighted.
         }
     ]
 
-
-
-<span>Add a public IP address using the API</span>
-------------------------------------------------------
+### Add a public IP address using the API
 
 Use the following operation to add a public IP address to your
 RackConnect v3.0 cloud server.
 
-### ****Add or provision a public IP address to a cloud server API request
+#### Add or provision a public IP address to a cloud server API request
 
     curl <br>
     --request POST <br>
@@ -273,10 +225,10 @@ RackConnect v3.0 cloud server.
     https://region.rackconnect.api.rackspacecloud.com/v3/tenantId/public_ips <br>
     | python -m json.tool
 
-Following is an example of the type of response expected after
-sending the preceding request.
+Following is an example of the type of response expected after sending
+the preceding request.
 
-### ****Example response to the add or provision a public IP address to a cloud server API request
+#### Example response to the add or provision a public IP address to a cloud server API request
 
     {
         "cloud_server": {
@@ -307,13 +259,12 @@ public IP address that is ultimately assigned to the cloud server, you
 can run the operation to list the public IP address for a cloud
 server described previously.
 
-<span>Remove a public IP address using the API</span>
----------------------------------------------------------
+### Remove a public IP address using the API
 
 Use the following operation to remove a public IP address from a cloud
 server.
 
-### ****Remove a public IP address from a cloud server API request
+#### Remove a public IP address from a cloud server API request
 
     curl --include <br>
     --request DELETE <br>
@@ -331,7 +282,7 @@ JSON data&mdash;only an HTTP response code&mdash;so you use the *--include* opti
 with the request. A 204 response code signifies that the public IP
 address was successfully removed from the cloud server.
 
-### ****Example 204 response to the remove a public IP address from a cloud server API request
+#### Example 204 response to the remove a public IP address from a cloud server API request
 
     HTTP/1.1 204 No Content
     Server: Apache-Coyote/1.1
@@ -341,16 +292,15 @@ address was successfully removed from the cloud server.
     date: Thu, 13 Sep 2014 14:48:58 GMT
     pragma: no-cache
 
-Examples with sample data
------------------------------
+### Examples with sample data
 
-The preceding sections explained how to use the RackConnect v3.0 API
-to list, add, and remove cloud server public IP addresses. To help
-clarify the information that has been covered, this section provides a
-final example that uses sample data instead of placeholders in the *list
+The preceding sections explained how to use the RackConnect v3.0 API to
+list, add, and remove cloud server public IP addresses. To help clarify
+the information that has been covered, this section provides a final
+example that uses sample data instead of placeholders in the *list
 public IP address* operation.
 
-### ****List public IP address for a cloud server API request with sample data
+#### List public IP address for a cloud server API request with sample data
 
     curl --include \
     --request GET <br>
@@ -358,7 +308,7 @@ public IP address* operation.
     --header "Content-Type: application/json" <br>
     https://iad.rackconnect.api.rackspacecloud.com/v3/NNNNNNN/public_ips?cloud_server_id=aaaNNNNNa-aaaa-NNNN-aNaN-aNNaaNaNaNaa
 
-### ****Sample data entries for this example are as follows:
+Sample data entries for this example are as follows:
 
 -   Authentication Token ID = NNNaaNNaNNaaaaNNaNaNNNNaaNaNaaaa
 -   Region = iad

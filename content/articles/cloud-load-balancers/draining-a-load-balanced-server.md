@@ -7,7 +7,6 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-08'
 last_modified_by: Kyle Laffoon
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 <span>Server &ldquo;draining&rdquo; is the redirection of incoming calls and new

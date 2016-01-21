@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-10-07'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 To use Rackspace Intelligence, you must have a [Rackspace Cloud

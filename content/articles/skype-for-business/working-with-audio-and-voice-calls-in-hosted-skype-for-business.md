@@ -7,7 +7,6 @@ created_by: Aaron Medrano
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Skype for Business
-body_format: tinymce
 ---
 
 When you use Hosted Skype for Business at Rackspace, you can make and

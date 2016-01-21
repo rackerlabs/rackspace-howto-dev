@@ -7,7 +7,6 @@ created_by: Margaret Eker
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Customers can increase security on Rackspace Cloud accounts by using the

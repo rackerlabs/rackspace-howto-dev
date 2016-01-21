@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-06'
 last_modified_by: Renee Rendon
 product: undefined
-body_format: tinymce
 ---
 
 Except where otherwise noted, Rackspace Knowledge Center site and

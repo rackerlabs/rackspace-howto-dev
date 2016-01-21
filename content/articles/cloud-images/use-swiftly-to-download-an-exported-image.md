@@ -7,7 +7,6 @@ created_by: Cloud Images
 last_modified_date: '2015-11-30'
 last_modified_by: Catherine Richardson
 product: Cloud Images
-body_format: tinymce
 ---
 
 This article describes two ways that you can use the Swiftly client to

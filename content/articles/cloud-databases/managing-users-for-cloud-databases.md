@@ -4,25 +4,17 @@ title: Managing Users for Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2015-09-03'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: tinymce
 ---
 
 You can perform the following user management operations for Cloud
-Databases:
+Databases.
 
--   [Create Users with Host Parameters](#create)
--   [Modify User Accounts](#modify)
--   [Manage Database Access for Users](#manage)
--   [Set Access-Level Permissions for Individual Users](#set)
+###
 
-
------
-
-Create Users with Host Parameters
----------------------------------
+### Create Users with Host Parameters
 
  You can create a user in the Cloud Databases section of the Cloud
 Control Panel by clicking on an existing instance name and then clicking
@@ -79,7 +71,7 @@ value of %, which allows them to connect to the database from any host.
 -   Valid host name - 111.111.111.11
 -   Invalid host name - server1.test.com
 
-####
+###
 
 ### Modify User Accounts
 
@@ -118,9 +110,9 @@ revoked full permissions on a database. To add more specific
 permissions, you must enable the root user as described in the following
 section.
 
-####
+###
 
-#### Set Access-Level Permissions for Individual Users
+### Set Access-Level Permissions for Individual Users
 
 Currently the Control Panel allows you to grant or revoke user access
 for a given database, but all users are granted universal privileges on

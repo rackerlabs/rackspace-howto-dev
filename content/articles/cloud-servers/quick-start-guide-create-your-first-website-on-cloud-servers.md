@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: tinymce
 ---
 
 The Rackspace Cloud can save you both time and money. This guide shows

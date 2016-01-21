@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: tinymce
 ---
 
 In addition to viewing CPU, RAM, and disk space configuration

@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2013-03-20'
 last_modified_by: Rae D. Cabello
 product: Rackspace Email
-body_format: tinymce
 ---
 
 The following steps are required to setup an IMAP account on a Windows

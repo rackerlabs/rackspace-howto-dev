@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-07-23'
 last_modified_by: Nate Archer
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Because of the unique hosting environment of Cloud Sites, an addition to

@@ -7,7 +7,6 @@ created_by: Aaron Medrano
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 This article provides step-by-step information about using your Active

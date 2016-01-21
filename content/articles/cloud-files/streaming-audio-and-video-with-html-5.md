@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2014-10-14'
 last_modified_by: Kyle Laffoon
 product: Cloud Files
-body_format: full_html
 ---
 
 In addition to the various players, you can stream your media using HTML

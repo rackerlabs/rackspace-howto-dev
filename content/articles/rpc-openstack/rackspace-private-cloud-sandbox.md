@@ -7,7 +7,6 @@ created_by: Karin Levenstein
 last_modified_date: '2016-01-07'
 last_modified_by: Rose Contreras
 product: Rackspace Private Cloud Powered by OpenStack
-body_format: tinymce
 ---
 
 <div class="chapter" title="Chapter 1. Overview">

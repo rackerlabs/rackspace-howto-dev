@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 To view past invoices for your Cloud Office account, [log into the

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 If you would like to learn more about the differences between Post

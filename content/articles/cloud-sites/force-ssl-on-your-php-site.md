@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-06-23'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
-body_format: tinymce
 ---
 
 To force SSL on your PHP site, you can use the following code in a

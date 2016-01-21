@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2015-12-21'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Agent Health Monitoring is a feature within Rackspace Monitoring that

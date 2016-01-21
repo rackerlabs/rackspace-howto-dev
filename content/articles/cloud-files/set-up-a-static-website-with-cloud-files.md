@@ -7,7 +7,6 @@ created_by: Nate Archer
 last_modified_date: '2016-01-13'
 last_modified_by: Nate Archer
 product: Cloud Files
-body_format: tinymce
 ---
 
 If you want to host a static website, a site where the content does not

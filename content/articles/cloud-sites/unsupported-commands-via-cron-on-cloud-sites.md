@@ -7,7 +7,6 @@ created_by: Jason Swindle
 last_modified_date: '2014-10-30'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Unsupported commands via CRON

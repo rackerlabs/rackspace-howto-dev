@@ -7,7 +7,6 @@ created_by: Lee Jelley
 last_modified_date: '2014-04-14'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### Introduction

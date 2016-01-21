@@ -4,10 +4,9 @@ title: Cloud Sites - FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-01-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: full_html
 ---
 
 ### Getting Started
@@ -269,6 +268,18 @@ require a reply from you, confirming that the transfer is authorized. If
 you do not have access to this email address, please contact [customer
 support](http://manage.rackspacecloud.com/SupportMain.do)for help.
 
+#### Can I purchase a SSL certificate from the Rackspace Cloud?
+
+Unfortunately, we do not provide the actual SSL certificates. Please see
+our article on which SSL certificates we support, you will need to
+purchase your cert from a supported vendor.
+
+Click
+[here](https://admin.rackspace.com/knowledge_center/article/supported-ssl-certificates-on-cloud-sites)
+for a list of supported SSL certificates. There is a fee associated with
+providing the SSL capability and this can be found on the Cloud Sites
+pricing page [here](http://www.rackspace.com/cloud/sites/pricing/).
+
 ------------------------------------------------------------------------
 
 ### Compromised Sites
@@ -377,6 +388,13 @@ every web page, image, and email. Inside each storage device, drives are
 mirrored to each other in a RAID configuration to create a first level
 of redundancy. And, as a final precautionary measure, all data on the
 system is automatically backed up on a repeating schedule.
+
+#### Does the Cloud Sites FTP service support restarts/continuations?
+
+The Cloud Sites FTP service does support resumable uploading. This means
+that if there is a connection failure during an upload, it does not have
+to be started from the beginning. The ftp client may need to be
+configured appropriately to permit this.
 
 ------------------------------------------------------------------------
 
@@ -761,6 +779,79 @@ site, check the following:
 If you have checked these points without success [contact
 support](https://manage.rackspacecloud.com/) for more help.
 
+#### Can I use The Rackspace Cloud as an audio encoder?
+
+The Rackspace Cloud isn't afraid of the facts. And the fact is, audio
+encoding is a good example of a task that a dedicated server is better
+suited for. We built Cloud Sites to be a highly specialized and
+optimized computer cluster for serving web content. That means it's not
+really designed for audio processing or streaming tasks. It's okay to
+have some audio content on Cloud Sites (if you own the copyrights, of
+course), but it's not meant to be a processing farm for audio conversion
+or a ShoutCast system to use for live audio streaming.
+
+#### Does Rackspace Cloud Sites provide raw log files for stats?
+
+**Note:** This reply refers to the [Cloud Sites Control
+Panel](https://manage.rackspacecloud.com/). You can access this
+interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
+by clicking your username in the upper-right corner of the control panel
+and selecting Cloud Sites Control Panel.
+
+Yes, you can activate raw logs for stats within the Cloud Sites Control
+Panel.
+
+**Pre-requisites**
+
+-   Administrative access to the Rackspace Cloud
+
+**Procedure**
+
+-   Click **Hosting** on the left navigation menu and then click on
+    **Cloud Sites**.
+-   From the list of domains click on the hyperlink of the domain for
+    which logging needs to be enabled.
+    -   You should now be on the **General Settings** tab for that
+        website
+-   Scroll down to **Website Features** section and click on the
+    **Enable** hyperlink for Raw logs.
+
+**Note:**The log collection occurs at 12 AM Central Time every day, and
+log files are purged after 6 days
+
+#### Does Rackspace support FrontPage extensions?
+
+Unfortunately, we do not support FrontPage Extensions. While still used
+on many sites, Microsoft has discontinued support for FrontPage and has
+replaced it with a new set of technologies. Please see [this
+link](http://office.microsoft.com/en-us/frontpage/default.aspx) for
+additional information from Microsoft.
+
+#### Does The Rackspace Cloud support secure email?
+
+**Note:** This documentation refers to a feature that is no longer
+available for Cloud Sites.  This article is here for the purpose of
+legacy support only.
+
+Secure email is supported and below are the server names and ports that
+you can use to configure your email client(s) with:
+
+1.  **POP3 with SSL**
+    -   Address: **secure.emailsrvr.com**
+    -   Port: 995
+
+<!-- -->
+
+1.  **IMAP with SSL**
+    -   Address: **secure.emailsrvr.com**
+    -   Port: 993
+
+<!-- -->
+
+1.  **SMTP with SSL**
+    -   Address: **secure.emailsrvr.com**
+    -   Ports: 25, 465, 587, 8025, and 2525
+
 ------------------------------------------------------------------------
 
 ### Billing
@@ -915,6 +1006,10 @@ A Cloud Billing Specialist can help you with account billing questions.
 The Billing Team may be reached directly by phone at 1-877-934-0410
 between the hours of 8:00 am and 5:00 pm CT, Monday through Friday.
 
+#### Am I Charged Bandwidth For Uploading Data To Or From My Cloud Sites Account?
+
+No, FTP bandwidth does not count against your monthly transfer.
+
 ------------------------------------------------------------------------
 
 ### Linux and PHP
@@ -1021,6 +1116,117 @@ following articles:
 #### What is the shortest scheduled interval I can set for a Cloud Sites cron job?
 
 The minimum scheduled interval for a cron job is set to 5 minutes.
+
+#### I scheduled my cron job, but I haven&rsquo;t received any email confirmation. Did my task run correctly?
+
+-   Please confirm that you entered in your email address correctly
+    within the control panel. If so, please also check your "Junk
+    Folder" to make sure that the email notification was not delivered
+    there accidentally.
+-   There is the chance that your scrip may not work correctly. Check to
+    make sure that your script has no errors and has been tested and
+    performs as expected.
+-   For your script to be readable, the file permissions should be
+    appropriately set. Make sure that you set file permissions to at
+    least 644.
+-   Is the path to the script correct? Note that the leading slash is
+    not required and your top-level domain directory is automatically
+    appended to the path.
+-   You can navigate through FTP to your /logs directory. Here you can
+    access your task log which will list any errors, or confirmation
+    that the cron job did run.
+
+If you have any other questions on scheduling a task, please do not
+hesitate to contact our support team.
+
+#### How do I schedule a cron job for Cloud Sites?
+
+\*\*Note:\*\* This reply refers to the Cloud Sites Control Panel. You
+can access this interface from the Cloud Control Panel by clicking your
+username in the upper-right corner of the control panel and selecting
+Cloud Sites Control Panel.
+
+Before scheduling a task, take a minute to review the five necessary
+components in creating a scheduled task on Cloud Sites:
+
+Task Name &ndash; You will need to name each cron job you schedule. The name
+you choose is completely up to you and does not have any specific
+requirements.
+
+Email Address for Output - You will need a valid email address so you
+can receive notice once the job has completed. You may have to tune your
+spam filter settings to receive the desired status emails.
+
+Command Language - What language is the script to be executed written
+in? The Rackspace Cloud supports the scheduling of scripts which execute
+in the following environments:
+
+-   PHP
+-   Python
+-   Perl
+-   HTTP
+
+Items to note about the scripting language options:
+
+The "Perl" option can also be used to execute shell scripts. The "HTTP"
+option causes a visit to the URL you provide (technically running "curl
+" for the cron task). The output is sent to the task log in your
+webroot's "logs" directory.
+
+Command to Run &ndash; You&rsquo;ll need to indicate the path to the script that you
+wish to be execute.
+
+Frequency / Date / Time - How frequently do you want the task to run?
+Everyday? Once a week? Once a week on a certain day of the week? Once a
+month? Once a month on a certain day of the month? What time of day do
+you want the specified task to run? All of these variations are possible
+through the Classic Cloud Control Panel.
+
+Here&rsquo;s an example of setting up a new scheduled task in the Cloud Sites
+Control Panel.
+
+1.  Log into the Cloud Sites Control Panel
+    at https://manage.rackspacecloud.com.
+2.  Click on "Hosting" on the left navigation menu and then click on
+    "Cloud Sites".
+3.  Click on the site to which you want to add a cron backup.
+4.  Click on the "Features" tab on the top navigation bar.
+5.  Scroll down to the section called &ldquo;Scheduled Tasks (Cron Jobs).&rdquo;
+    This is where you will see all tasks that you have scheduled and
+    their status for that particular domain.
+6.  Add a new task by clicking the &ldquo;Add New Task&rdquo; button. (NOTE: All
+    newly created cron jobs are enabled by default.)
+7.  Enter a task name. For this example, let&rsquo;s call our task as &ldquo;Wake Me
+    Up.&rdquo;
+8.  Enter the email address where you want the output from your task to
+    be sent. For this illustration, we&rsquo;ll enter sleepyuser@myhome.com.
+9.  The script that was chosen is written in Perl. So we&rsquo;ll choose Perl
+    as the command language.
+10. Under the Command to Run option, it&rsquo;s important to note that the
+    top-level fully qualified path will be appended to the script path.
+    Now the fully qualified path to our script is:
+
+        /mnt/Target01/123456/www.wakeupcall.com/scripts/wakemeup.pl
+
+    In this case, we would only have to enter &ldquo;scripts/wakemeup.pl&rdquo; in
+    the field. &ldquo;/mnt/Target01/123456/www.wakeupcall.com/&rdquo; will
+    automatically be appended. Please also note that the trailing slash
+    is automatically added.
+
+11. The next section involves scheduling the time when the job needs to
+    be run. In our case, we want the script to run every day at 7:00AM.
+    So we would change the selection under &ldquo;Repeat by the: \\\_\_\\&rdquo;
+    drop down menu to &ldquo;Day.&rdquo; In the &ldquo;Time&rdquo; field, we would enter &ldquo;7:00.&rdquo;
+12. Click the &ldquo;Add Task&rdquo; button at the bottom and the cron job will
+    be enabled.
+
+**Note:** When you add a website through the Cloud Sites Control Panel,
+a log directory is also created as a part of the website directory
+structure. In order for the cron tool to run properly, this directory
+structure must be preserved.
+
+If you have any other questions on scheduling a task, please do not
+hesitate to contact our support team.
 
 ------------------------------------------------------------------------
 

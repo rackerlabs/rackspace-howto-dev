@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: full_html
 ---
 
 Backing up files on a regular basis is an integral part of administering

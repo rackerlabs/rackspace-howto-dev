@@ -4,10 +4,9 @@ title: Using CNAMEs with Cloud Files containers
 type: article
 created_date: '2011-04-27'
 created_by: Rackspace Support
-last_modified_date: '2015-05-12'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 A CNAME record is way to link your Cloud Files container to a branded
@@ -16,8 +15,7 @@ create a CNAME record that links your CDN URL (for example,
 `http://c186397.r00.cf1.rackcdn.com`) to a shorter or branded URL (for
 example, `http://images.mycompany.com`).
 
-Find your CDN URL
------------------
+### Find your CDN URL
 
 Before you can create the CNAME record, you need to know the CDN URL of
 the container. You can find this in the Cloud Files section of the
@@ -30,8 +28,7 @@ popup dialog box with the CDN links to the container is displayed:
 Alternatively, you can request your container information via the Cloud
 Files API.
 
-Set up CNAME records
---------------------
+### Set up CNAME records
 
 You set up your CNAME record by managing your DNS. Within your DNS
 settings, request a new record. Ensure that your CNAME record points to

@@ -7,7 +7,6 @@ created_by: David Hendler
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Rackspace has data centers located across the globe to better serve you,

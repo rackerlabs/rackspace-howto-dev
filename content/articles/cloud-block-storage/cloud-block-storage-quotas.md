@@ -7,7 +7,6 @@ created_by: Rose Contreras
 last_modified_date: '2014-10-16'
 last_modified_by: Kyle Laffoon
 product: Cloud Block Storage
-body_format: tinymce
 ---
 
 By default, all new Cloud Block Storage users are assigned a 10 TB / 50

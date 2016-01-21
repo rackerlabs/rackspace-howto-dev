@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-15'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: full_html
 ---
 
 A **catch-all address** receives all email sent to invalid mailboxes at

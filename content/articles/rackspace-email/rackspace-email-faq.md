@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-02'
 last_modified_by: Nate Archer
 product: Rackspace Email
-body_format: tinymce
 ---
 
 Get quick answers to common questions about Rackspace Email.

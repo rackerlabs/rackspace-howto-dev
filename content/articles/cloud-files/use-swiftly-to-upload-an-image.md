@@ -7,7 +7,6 @@ created_by: Cloud Images
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
-body_format: tinymce
 ---
 
 In order to provide high availability and data resiliency, the size of

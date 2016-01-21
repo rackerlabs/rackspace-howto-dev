@@ -4,25 +4,24 @@ title: Cloud Files - Uploading Large Files
 type: article
 created_date: '2012-03-06'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: tinymce
 ---
 
 For large files support, Cloud Files allows you to upload multiple file
 segments and a manifest file to map the segments together.
 
-A few limitations:
+Following are a few limitations:
 
 -   Files larger than 5 GB must first be segmented into smaller files.
 -   We recommend that you do not create file segments smaller than
     100-200 MB.
 -   Files larger than 10GB cannot be served from the CDN.
 
-There are 2 options for uploading large files:
+There are two options for uploading large files.
 
-### Automatically Segment & Upload:
+### Automatically Segment & Upload
 
 <div>
 
@@ -46,7 +45,7 @@ segments as needed.  It will look like this:
     largefile.iso segment 0
     largefile.iso
 
-### Use the API with your Application:
+### Use the API with your Application
 
 You can use the Cloud Files API to incorporate large file support
 directly into your application. Here is a simple cURL example of how you
@@ -65,8 +64,8 @@ can use the API:
     curl -H 'X-Auth-Token: <token>' \
     http://<storage_url>/container/myobject
 
-### For more information:
+### For more information
 
-[Large Object Creation API
-Documentation](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#creating-large-objects)
+See [Large Object Creation API
+Documentation.](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#creating-large-objects)
 

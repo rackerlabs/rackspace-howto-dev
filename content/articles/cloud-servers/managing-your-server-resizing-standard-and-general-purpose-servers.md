@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-04'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### Previous section

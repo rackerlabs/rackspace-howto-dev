@@ -7,7 +7,6 @@ created_by: Jason Swindle
 last_modified_date: '2012-11-09'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
-body_format: tinymce
 ---
 
 In order to protect the performance of the Rackspace Cloud Sites shared

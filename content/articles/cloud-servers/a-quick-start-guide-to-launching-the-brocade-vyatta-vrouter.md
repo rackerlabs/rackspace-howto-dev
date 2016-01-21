@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Introduction

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-05-22'
 last_modified_by: Rose Contreras
 product: Cloud Files
-body_format: tinymce
 ---
 
 A Container is a &ldquo;storage compartment&rdquo; for your data and provides a way

@@ -7,7 +7,6 @@ created_by: Tom Hopkins
 last_modified_date: '2013-12-16'
 last_modified_by: Jered Heeschen
 product: Cloud Files
-body_format: tinymce
 ---
 
 Developer guides are available on the Rackspace API documentation site.

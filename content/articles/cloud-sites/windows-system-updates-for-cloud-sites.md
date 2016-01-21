@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2011-09-07'
 last_modified_by: Rae D. Cabello
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Microsoft is currently on a comprehensive once-a-month release of

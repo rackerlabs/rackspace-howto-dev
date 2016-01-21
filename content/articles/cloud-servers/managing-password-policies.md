@@ -7,7 +7,6 @@ created_by: Marcin Stangel
 last_modified_date: '2015-03-05'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 By default after system installation, most Linux distributions have

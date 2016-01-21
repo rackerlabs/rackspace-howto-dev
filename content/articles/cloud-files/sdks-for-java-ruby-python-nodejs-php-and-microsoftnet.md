@@ -4,13 +4,10 @@ title: 'SDKs for Java, Ruby, Python, Node.js, PHP, and Microsoft.NET'
 type: article
 created_date: '2011-04-04'
 created_by: David Hendler
-last_modified_date: '2014-11-12'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Files
-body_format: full_html
 ---
-
-Download Cloud Files SDKs for Different Languages
 
 You can download the language-specific software development kits (SDKs)
 for Cloud Files from the Rackspace Developer website at
@@ -27,16 +24,14 @@ the SDKs for the following languages:
 In addition to links to the SDKs, this site provides links to reference
 materials, sample code, and tips on how to use each SDK.
 
-Using Git
----------
+### Using Git
 
 Some of the SDK instructions use the Git version control system. The
 documentation for each SDK assumes that you have Git installed and
 configured on your local machine. For more information about Git, see
 the Git website for UNIX or Linux or for Windows.
 
-Downloading an SDK
-------------------
+### Downloading an SDK
 
 To download an SDK, follow the instructions on the SDK&rsquo;s web page. In
 general, you run a git clone command with the URL of the repository that

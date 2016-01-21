@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 This article will show you how to create and configure a user in MSSQL

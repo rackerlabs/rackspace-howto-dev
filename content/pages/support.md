@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-07-14'
 last_modified_by: Rose Contreras
 product: undefined
-body_format: full_html
 ---
 
 Rackspace support is available 24 hours a day, 7 days a week, and 365

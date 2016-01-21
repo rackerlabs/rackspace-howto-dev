@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-23'
 last_modified_by: Nate Archer
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 <span><span><span>Microsoft Exchange allows users to access and manage

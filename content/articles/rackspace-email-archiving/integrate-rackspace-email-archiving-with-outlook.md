@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-08-27'
 last_modified_by: Nate Archer
 product: Rackspace Email Archiving
-body_format: tinymce
 ---
 
 You can create a folder in Microsoft Outlook that connects to your

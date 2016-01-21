@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Cloud Servers
-body_format: full_html
 ---
 
 Brocade Vyatta vRouter can be configured for two methods of firewall

@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-03-25'
 last_modified_by: Kyle Laffoon
 product: Cloud Files
-body_format: tinymce
 ---
 
 The Rackspace Cloud system restricts the maximum execution time of any

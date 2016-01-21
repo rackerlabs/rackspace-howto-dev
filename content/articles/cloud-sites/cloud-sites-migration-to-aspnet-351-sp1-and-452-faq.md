@@ -7,7 +7,6 @@ created_by: Thomas Hester
 last_modified_date: '2015-02-17'
 last_modified_by: Jered Heeschen
 product: Cloud Sites
-body_format: tinymce
 ---
 
 What is changing?

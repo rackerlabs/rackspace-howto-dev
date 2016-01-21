@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-08-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Rackspace Intelligence monitors the performance and availability of

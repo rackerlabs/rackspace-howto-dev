@@ -7,7 +7,6 @@ created_by: Alonzo Garza
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Cloud Sites
-body_format: full_html
 ---
 
 **What is changing?**

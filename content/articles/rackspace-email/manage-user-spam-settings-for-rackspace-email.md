@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2012-11-26'
 last_modified_by: Rae D. Cabello
 product: Rackspace Email
-body_format: tinymce
 ---
 
 The following article will explore more about how to manage individual

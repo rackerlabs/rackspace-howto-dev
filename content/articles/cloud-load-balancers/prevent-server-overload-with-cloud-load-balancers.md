@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-11'
 last_modified_by: Rose Contreras
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 One way that you can prevent a server from becoming overloaded is to use

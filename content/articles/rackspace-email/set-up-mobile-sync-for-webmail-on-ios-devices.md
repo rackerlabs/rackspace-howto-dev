@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-02-02'
 last_modified_by: Jered Heeschen
 product: Rackspace Email
-body_format: tinymce
 ---
 
 This article provides instructions for setting up Mobile Sync for

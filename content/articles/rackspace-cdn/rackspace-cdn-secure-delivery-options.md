@@ -4,10 +4,9 @@ title: Rackspace CDN secure delivery options
 type: article
 created_date: '2015-04-20'
 created_by: Megan Meza
-last_modified_date: '2015-12-17'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-21'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
-body_format: tinymce
 ---
 
 Rackspace CDN \[[product
@@ -16,23 +15,13 @@ offers the following certificate types for secure delivery: Rackspace
 shared domain, SAN, and Custom. These types are distinguished by how
 much ownership a customer has over the secure certificate.
 
--   [Requirements for all Rackspace CDN certificate
-    types](#Requirements%20for%20all%20Rackspace%20CDN%20certificate%20types)
--   [Secure origin](#Secure%20origin)
--   [HTTPS request fees](#HTTPS%20request%20fees)
--   [Organizational validation](#Organizational%20validation)
--   [Rackspace shared domain](#Rackspace%20shared%20domain)
--   [SAN certificate](#SAN%20certificate)
--   [Custom certificate](#Custom%20certificate)
-
-Requirements for all Rackspace CDN certificate types
---------------------------------------------------------
+### Requirements for all Rackspace CDN certificate types
 
 No matter what your secure certficate type, the following requirements
 apply to all customers delivering HTTPS traffic with the Rackspace CDN
 product.
 
-### Secure origin
+#### Secure origin
 
 To serve encrypted traffic from the Akamai edge network to an origin
 over HTTPS, the origin (that is, the web server or load balancer) must
@@ -86,7 +75,7 @@ Following is a list of approved CAs:
 -   VeriSign Class 3 Public Primary Certification Authority - G5
 -   VeriSign Universal Root Certification Authority
 
-### HTTPS request fees
+#### HTTPS request fees
 
 All traffic delivered over HTTPS is charged an increased request fee.
 Request pricing for HTTP versus HTTPS is as follows:
@@ -94,7 +83,7 @@ Request pricing for HTTP versus HTTPS is as follows:
 -   \$0.0075 per 10,000 requests for HTTP traffic
 -   \$0.010 per 10,000 requests for HTTPS traffic
 
-### Organizational validation
+#### Organizational validation
 
 All Rackspace CDN certificates are provisioned using organizational
 validation (OV). This method of validation requires that the domain
@@ -111,8 +100,7 @@ up-to-date. You can check your current WHOIS information at
 If this information is out-of-date, update it with your DNS provider
 before submitting a request for a SAN or Custom certificate.
 
-Rackspace shared domain
----------------------------
+### Rackspace shared domain
 
 This method of secure delivery uses a shared Rackspace domain and
 implements a wildcard certificate that Rackspace owns and manages. When
@@ -147,8 +135,7 @@ additional monthly fee. Customers who use this certificate type for
 secure delivery are charged the standard fee for CDN bandwidth and the
 HTTPS request fee (\$0.010 per 10,000 requests).
 
-SAN certificate
-------------------------
+### SAN certificate
 
 Customers who choose the Subject Alternative Name (SAN) certificate type
 can use their own domain name when serving traffic over HTTPS. In this
@@ -191,8 +178,7 @@ fee of \$36 per domain. Customers who use this certificate type for
 secure delivery are charged the standard per-GB fee for CDN bandwidth
 and the HTTPS request fee (\$0.010 per 10,000 requests).
 
-Custom certificate
-----------------------
+### Custom certificate
 
 Customers who choose a Custom secure certificate have the most
 flexibility over their certificate because they fully own the
@@ -251,6 +237,4 @@ Using a Custom certificate with Rackspace CDN carries an additional
 monthly fee of \$730 per certificate. Customers who use this certificate
 for secure delivery are charged the standard per-GB fee for CDN
 bandwidth and the HTTPS request fee (\$0.010 per 10,000 requests).
-
-
 

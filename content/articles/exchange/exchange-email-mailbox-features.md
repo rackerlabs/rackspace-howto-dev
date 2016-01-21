@@ -7,7 +7,6 @@ created_by: Marco Salazar
 last_modified_date: '2014-08-29'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 Rackspace offers a Hosted Exchange solution for users who require a

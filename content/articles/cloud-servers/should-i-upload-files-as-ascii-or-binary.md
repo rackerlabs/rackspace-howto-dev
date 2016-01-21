@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-05-06'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Deciding on how you should upload a file depends strictly on the type of

@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-10-29'
 last_modified_by: Renee Rendon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 <div class="page" title="Page 1">

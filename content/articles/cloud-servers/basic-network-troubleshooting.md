@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Networking issues can be problematic when working on a remote server. If

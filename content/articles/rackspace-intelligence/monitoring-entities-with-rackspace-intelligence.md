@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-08-17'
 last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Rackspace Intelligence lets you create, edit, and view entities.

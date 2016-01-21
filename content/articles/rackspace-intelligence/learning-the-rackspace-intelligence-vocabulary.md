@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2015-08-18'
 last_modified_by: Kyle Laffoon
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 To tell Rackspace Intelligence which aspects of your configuration to

@@ -7,7 +7,6 @@ created_by: Kyle Laffoon
 last_modified_date: '2016-01-05'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 What is OnMetal?

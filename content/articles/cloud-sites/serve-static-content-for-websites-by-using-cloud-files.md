@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2014-10-16'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Use the following steps to set up a website from a basic HTML page

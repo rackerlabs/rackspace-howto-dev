@@ -7,7 +7,6 @@ created_by: Jonathan Hogue
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
-body_format: tinymce
 ---
 
 Below is a summary of features, updates, and changes in regards to

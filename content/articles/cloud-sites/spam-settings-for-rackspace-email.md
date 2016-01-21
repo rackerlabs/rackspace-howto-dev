@@ -4,19 +4,14 @@ title: Spam Settings for Rackspace Email
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-01-07'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
-
-
-##### <span>NOTE: *This documentation refers to a feature that is no longer available for Cloud Sites.  This article is here for the purpose of legacy support only.*</span>
-
-
-
-
+**Note:** This documentation refers to a feature that is no longer
+available for Cloud Sites.  This article is here for the purpose of
+legacy support only.
 
 <span><span>If our spam filtering software suspects that an incoming
 message is spam, it will be sent to the Spam folder. However, in some
@@ -28,29 +23,6 @@ webmail.</span></span>
 <span><span>To verify if spam filtering is enabled, please see [Is spam
 filtering enabled on my email
 accounts?](/how-to/manage-spam-filtering-for-your-cloud-sites-email-accounts "Is spam filtering enabled on my email accounts?")</span></span>
-
-<div id="toctitle">
-
-<span><span>Contents</span></span>
-----------------------------------
-
-</div>
-
--   <span><span><span class="toctext">The Catch All
-    Account</span></span></span>
--   <span><span><span class="toctext">Blacklisting
-    Users/Domains</span></span></span>
--   <span><span><span class="toctext">Removing Users/Domains From the
-    Blacklist</span></span></span>
--   <span><span><span class="toctext">Adding users/domains to your
-    Safelist</span></span></span>
--   <span><span><span class="toctext">Report Spam</span></span></span>
--   <span><span><span class="toctext">Report a message as not
-    spam</span></span></span>
--   <span><span><span class="toctext">Edit Spam Settings per Email
-    user</span></span></span>
-
-
 
 <span><span>**The Catch All Account:**</span></span>
 

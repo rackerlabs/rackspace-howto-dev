@@ -7,7 +7,6 @@ created_by: Jason Grimm
 last_modified_date: '2016-01-11'
 last_modified_by: Nate Archer
 product: Rackspace Private Cloud Powered by OpenStack
-body_format: tinymce
 ---
 
 Contents

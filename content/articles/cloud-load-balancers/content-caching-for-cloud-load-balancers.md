@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2013-12-11'
 last_modified_by: Jered Heeschen
 product: Cloud Load Balancers
-body_format: tinymce
 ---
 
 The Cloud Load Balancers product has a Content Caching feature that

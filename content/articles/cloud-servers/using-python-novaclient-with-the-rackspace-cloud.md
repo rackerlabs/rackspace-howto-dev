@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2016-01-04'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Python-novaclient is a command-line client for controlling OpenStack

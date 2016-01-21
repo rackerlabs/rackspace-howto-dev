@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2016-01-04'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Rackspace Monitoring bills you by how much you use. While other

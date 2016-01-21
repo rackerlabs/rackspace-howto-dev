@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 This tutorial will walk you through setting up a user on your MySQL

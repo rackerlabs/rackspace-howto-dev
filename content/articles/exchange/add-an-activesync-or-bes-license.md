@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2014-11-14'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 To set up your Microsoft Exchange email account on your mobile device,

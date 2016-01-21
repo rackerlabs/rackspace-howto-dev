@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-15'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 Do you have your domain name hosted with Rackspace and need to renew it?

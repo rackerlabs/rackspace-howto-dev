@@ -7,7 +7,6 @@ created_by: Megan Meza
 last_modified_date: '2015-09-01'
 last_modified_by: Catherine Richardson
 product: Cloud Queues
-body_format: tinymce
 ---
 
 ### What are Cloud Queues?

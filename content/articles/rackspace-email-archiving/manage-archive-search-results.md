@@ -7,7 +7,6 @@ created_by: Beau Bailey
 last_modified_date: '2015-07-27'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email Archiving
-body_format: tinymce
 ---
 
 **Manage Archive Search Results**

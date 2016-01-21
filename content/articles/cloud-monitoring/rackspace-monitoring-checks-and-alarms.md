@@ -7,7 +7,6 @@ created_by: Jim Culbreath
 last_modified_date: '2016-01-04'
 last_modified_by: Mike Asthalter
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Rackspace Monitoring has several different types of checks with

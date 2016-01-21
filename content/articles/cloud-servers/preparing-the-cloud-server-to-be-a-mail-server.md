@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 **Warning:** Email in the Cloud (Rackspace or otherwise), even with

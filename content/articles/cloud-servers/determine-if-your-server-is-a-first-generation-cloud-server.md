@@ -7,7 +7,6 @@ created_by: Kyle Laffoon
 last_modified_date: '2015-12-14'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: tinymce
 ---
 
 You can determine whether your server is a First Generation cloud server

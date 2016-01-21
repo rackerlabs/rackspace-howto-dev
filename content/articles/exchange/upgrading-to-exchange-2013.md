@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 Welcome to the Exchange 2013 upgrade portal. Here you will find

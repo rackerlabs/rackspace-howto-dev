@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Kelly Holcomb
 product: Cloud Servers
-body_format: tinymce
 ---
 
 Now that Apache is installed and running, you can configure it to serve

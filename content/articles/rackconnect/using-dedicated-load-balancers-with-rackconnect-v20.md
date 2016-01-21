@@ -7,7 +7,6 @@ created_by: Juan Perez
 last_modified_date: '2015-07-15'
 last_modified_by: Kelly Holcomb
 product: RackConnect
-body_format: tinymce
 ---
 
 **Applies to**: RackConnect v2.0

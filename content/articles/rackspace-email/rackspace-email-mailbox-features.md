@@ -7,7 +7,6 @@ created_by: Marco Salazar
 last_modified_date: '2014-08-29'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 Rackspace E-mail is Rackspace's home grown e-mail service. We manage the

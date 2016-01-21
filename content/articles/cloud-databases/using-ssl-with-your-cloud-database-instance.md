@@ -7,7 +7,6 @@ created_by: Neha Verma
 last_modified_date: '2014-10-17'
 last_modified_by: Jered Heeschen
 product: Cloud Databases
-body_format: tinymce
 ---
 
 SSL (Secure Sockets Layer) is a security protocol that uses encryption

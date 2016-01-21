@@ -7,7 +7,6 @@ created_by: Catherine Richardson
 last_modified_date: '2016-01-08'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
-body_format: tinymce
 ---
 
 You can access Rackspace CDN in the following ways:

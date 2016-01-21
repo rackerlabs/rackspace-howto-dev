@@ -4,21 +4,12 @@ title: Connect to a Cloud Databases instance
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2015-09-03'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Databases
-body_format: full_html
 ---
 
-This article describes the following methods for connecting to a Cloud
-Databases instance:
-
--   [Connect through a cloud server by using SSH and the hostname](#ssh)
--   [Connect to the database directly by using the hostname](#direct)
--   [Connect by using a cloud load balancer](#lb)
-
-Connect through a cloud server by using SSH and the hostname
-------------------------------------------------------------
+### Connect through a cloud server by using SSH and the hostname
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
 2.  In the top navigation bar, select **Databases &gt; Database
@@ -39,8 +30,7 @@ Connect through a cloud server by using SSH and the hostname
         mysql -h hostname_string -u database_instance_username -p
 
 
-Connect to the database directly by using the hostname
-------------------------------------------------------
+### Connect to the database directly by using the hostname
 
 This section provides a sample script that creates a very simple
 webpage. You can use this webpage to test that your MySQL database is
@@ -58,7 +48,7 @@ network).
 **Note:** This process assumes that your web server and PHP are
 configured correctly.
 
-### Copy and paste the PHP script
+#### Copy and paste the PHP script
 
 Copy the following PHP script and paste it into a text editor:
 
@@ -124,7 +114,7 @@ Copy the following PHP script and paste it into a text editor:
         </pre></body>
     </html>
 
-### Copy the instance hostname
+#### Copy the instance hostname
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
 2.  In the top navigation bar, select **Databases &gt; Database
@@ -133,7 +123,7 @@ Copy the following PHP script and paste it into a text editor:
     view the details for the instance.
 4.  Copy the hostname string.
 
-### Paste the instance hostname into the text editor
+#### Paste the instance hostname into the text editor
 
 1.  Locate the following line of the script in the text editor:
 
@@ -146,7 +136,7 @@ Copy the following PHP script and paste it into a text editor:
         5c70345ad036fc112dc0a14ee1db7992f5c172db.rackspaceclouddb.com
 
 
-### Modify the information in the script to specify your database user, password, and database instance name
+#### Modify the information in the script to specify your database user, password, and database instance name
 
 1.  Locate the following line of the script in the text editor:
 
@@ -178,7 +168,7 @@ Copy the following PHP script and paste it into a text editor:
         <FORM ACTION='clouddatabases.php' METHOD='POST'>
 
 
-### Copy the modified script and execute it on your server
+#### Copy the modified script and execute it on your server
 
 1.  Copy the modified script to your server (for example, to the
     website's **cgi-bin** folder).
@@ -191,13 +181,12 @@ Copy the following PHP script and paste it into a text editor:
 3.  Type a MySQL expression (for example, **PI()\*3\*3**) and click
     **Submit** to have it evaluated.
 
-Connect by using a cloud load balancer
---------------------------------------
+### Connect by using a cloud load balancer
 
 **Note:** This load balancer should be used only to access your Cloud
 Databases instance. Do not add other nodes to the load balancer.
 
-### Copy the instance hostname
+#### Copy the instance hostname
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
 2.  In the top navigation bar, select **Databases &gt; Database
@@ -208,7 +197,7 @@ Databases instance. Do not add other nodes to the load balancer.
     balancer in the same region.
 5.  Copy the hostname string.
 
-### Create a load balancer for the instance
+#### Create a load balancer for the instance
 
 1.  In the top navigation bar of the Cloud Control Panel, click
     **Networking**.

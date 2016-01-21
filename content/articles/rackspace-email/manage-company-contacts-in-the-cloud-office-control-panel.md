@@ -7,7 +7,6 @@ created_by: Mawutor Amesawu
 last_modified_date: '2015-06-15'
 last_modified_by: David Hendler
 product: Rackspace Email
-body_format: tinymce
 ---
 
 A company contact is different from an account administrator. A company

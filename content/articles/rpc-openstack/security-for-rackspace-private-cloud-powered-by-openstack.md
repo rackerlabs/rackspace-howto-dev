@@ -7,7 +7,6 @@ created_by: Kenny Johnston
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Rackspace Private Cloud Powered by OpenStack
-body_format: tinymce
 ---
 
 Security is a very complex topic for every organization. Challenges can

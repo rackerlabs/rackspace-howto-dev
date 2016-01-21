@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2015-10-16'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Rackspace Intelligence monitors the availability of your IT

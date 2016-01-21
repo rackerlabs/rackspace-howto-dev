@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2015-12-29'
 last_modified_by: Stephanie Fillmon
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The UNIX find utility is disabled for performance reasons. To find older

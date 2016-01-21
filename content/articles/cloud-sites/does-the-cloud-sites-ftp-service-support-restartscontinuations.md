@@ -4,10 +4,9 @@ title: Does the Cloud Sites FTP service support restarts/continuations?
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2011-09-07'
-last_modified_by: Matt Wheeler
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The Cloud Sites FTP service does support resumable uploading. This means

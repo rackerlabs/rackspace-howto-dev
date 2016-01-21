@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Kelly Holcomb
 product: Cloud Sites
-body_format: tinymce
 ---
 
 Microsoft SQL Server has two logical layers of security.

@@ -7,7 +7,6 @@ created_by: Richard Goodwin
 last_modified_date: '2013-11-11'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
-body_format: tinymce
 ---
 
 <span style="font-size: small;">**Problem:  **After issuing a password

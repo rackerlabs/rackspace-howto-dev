@@ -7,7 +7,6 @@ created_by: Amanda Clark
 last_modified_date: '2015-06-08'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### What Happens to Old Images?

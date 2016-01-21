@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2015-09-04'
 last_modified_by: Constanze Kratel
 product: Cloud Databases
-body_format: tinymce
 ---
 
 *Note: To complete this process, you will need both a cloud server and a

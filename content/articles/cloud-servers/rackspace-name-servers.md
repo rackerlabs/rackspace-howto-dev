@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-05'
 last_modified_by: Catherine Richardson
 product: Cloud Servers
-body_format: tinymce
 ---
 
 What Is a Name Server?

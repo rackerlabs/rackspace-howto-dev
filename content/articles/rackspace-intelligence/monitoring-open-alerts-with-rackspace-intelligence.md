@@ -7,7 +7,6 @@ created_by: Rose Coste
 last_modified_date: '2015-12-22'
 last_modified_by: Constanze Kratel
 product: Rackspace Intelligence
-body_format: tinymce
 ---
 
 Open alerts report statuses that you have asked Rackspace Intelligence

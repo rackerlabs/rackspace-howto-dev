@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-07'
 last_modified_by: Constanze Kratel
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Rackspace Monitoring Agent Support Matrix

@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2013-08-02'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 The following article will demonstrate how to Configure Load Balanced

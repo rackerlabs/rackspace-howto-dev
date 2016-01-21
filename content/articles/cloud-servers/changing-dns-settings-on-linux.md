@@ -7,7 +7,6 @@ created_by: Jered Heeschen
 last_modified_date: '2013-10-23'
 last_modified_by: Ross Diaz
 product: Cloud Servers
-body_format: tinymce
 ---
 
 ### Manual DNS

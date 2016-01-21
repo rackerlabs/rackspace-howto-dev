@@ -7,7 +7,6 @@ created_by: Sterling Mcneill
 last_modified_date: '2016-01-20'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
-body_format: tinymce
 ---
 
 To protect the email service and ensure a timely and reliable experience

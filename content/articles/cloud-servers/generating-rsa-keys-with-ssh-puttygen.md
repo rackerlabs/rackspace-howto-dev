@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-13'
 last_modified_by: Nate Archer
 product: Cloud Servers
-body_format: full_html
 ---
 
 This article provides steps for generating RSA keys by using PuTTYgen on

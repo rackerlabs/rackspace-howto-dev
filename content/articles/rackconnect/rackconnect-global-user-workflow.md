@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2015-10-22'
 last_modified_by: Nate Archer
 product: RackConnect
-body_format: tinymce
 ---
 
 ### RackConnect Global

@@ -7,7 +7,6 @@ created_by: Constanze Kratel
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Monitoring
-body_format: tinymce
 ---
 
 Get quick answers to common questions about the Rackspace Rackspace

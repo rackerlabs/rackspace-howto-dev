@@ -7,7 +7,6 @@ created_by: Nicole Schwartz
 last_modified_date: '2016-01-14'
 last_modified_by: Rose Coste
 product: Cloud Orchestration
-body_format: full_html
 ---
 
 Cloud Orchestration templates allow you to quickly and easily set up

@@ -7,265 +7,276 @@ created_by: Sameer Satyam
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-body_format: markdown_w_tinymce
 ---
 
-The Brocade Vyatta vRouter is a network appliance that you can spin up in the Rackspace public cloud. It acts as a firewall, VPN gateway, router, and NAT device.
+The Brocade Vyatta vRouter is a network appliance that you can spin up
+in the Rackspace public cloud. It acts as a firewall, VPN gateway,
+router, and NAT device. You read more about the Brocade Vyatta vRouter
+at the \[Rackspace virtual cloud
+servers\](http://www.rackspace.com/cloud/servers/vrouter). The following
+articles provide detailed configurations for the Brocade Vyatta vrouter:
+\[Brocade Vyatta vRouter configuration
+guide\](https://www.rackspace.com/knowledge\_center/node/4165/revisions/20104/view)
+\[Configuring a policy-based IPsec site-to-site VPN on a Vyatta
+vRouter\](https://www.rackspace.com/knowledge\_center/article/configuring-a-policy-based-ipsec-site-to-site-vpn-on-a-vyatta-vrouter)
+\[Configure a Site-to-site VPN using the Vyatta Network
+Appliance\](https://www.rackspace.com/knowledge\_center/article/configure-a-site-to-site-vpn-using-the-vyatta-network-appliance)
+\[Creating NAT rules for Vyatta
+vRouter\](https://www.rackspace.com/knowledge\_center/article/creating-nat-rules-for-vyatta-vrouter)
+\[Vyatta vRouter: Allow an IP address to access the vRouter via
+SSH\](https://www.rackspace.com/knowledge\_center/article/vyatta-vrouter-allow-an-ip-address-to-access-the-vrouter-via-ssh)
+\[Vyatta vRouter: Adding a local administrative
+user\](https://www.rackspace.com/knowledge\_center/article/vyatta-vrouter-adding-a-local-administrative-user)
+\[Vyatta vRouter: Configure an interface
+firewall\](https://www.rackspace.com/knowledge\_center/article/vyatta-vrouter-configure-an-interface-firewall)
+The following table shows the list of Rackspace supported features on
+the Brocade Vyatta vRouter
 
-You read more about the Brocade Vyatta vRouter at the [Rackspace virtual cloud servers](http://www.rackspace.com/cloud/servers/vrouter).
+Feature
 
-The following articles provide detailed configurations for the Brocade Vyatta vrouter:
+Support Status on Vyatta vRouter
 
-[Brocade Vyatta vRouter configuration guide](https://www.rackspace.com/knowledge_center/node/4165/revisions/20104/view)
+Routing
 
-[Configuring a policy-based IPsec site-to-site VPN on a Vyatta vRouter](/how-to/vyatta-ipsec-site-to-site-vpn)
+Static routing
 
-[Configure a Site-to-site VPN using the Vyatta Network Appliance](/how-to/configure-a-site-to-site-vpn-using-the-vyatta-network-appliance)
+**Supported**
 
-[Creating NAT rules for Vyatta vRouter](/how-to/creating-nat-rules-for-vyatta-vrouter)
+Static routing with IP SLA tracking
 
-[Vyatta vRouter: Allow an IP address to access the vRouter via SSH](/how-to/vyatta-vrouter-allow-an-ip-address-to-access-the-vrouter-via-ssh)
+Not supported
 
-[Vyatta vRouter: Adding a local administrative user](/how-to/vyatta-vrouter-add-a-local-administrative-user)
+Dynamic routing protocols OSPF, EIGRP
 
-[Vyatta vRouter: Configure an interface firewall](/how-to/vyatta-vrouter-configure-an-interface-firewall)
+Not supported
 
-The following table shows the list of Rackspace supported features on the Brocade Vyatta vRouter
+Dynamic routing protocols - all other
 
-<table border="1">
-	<tr border="1">
-		<th colspan="2">Feature</th>
-		<th>Support Status on Vyatta vRouter</th>
-	</tr>
-	<tr>
-		<td rowspan="4">Routing</td>
-		<td>Static routing</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>Static routing with IP SLA tracking</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Dynamic routing protocols OSPF, EIGRP</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Dynamic routing protocols - all other</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td rowspan="3">IPv6</td>
-		<td>Static routing</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Static routing with IP SLA tracking</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Dynamic routing protocols</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td rowspan="5">NAT</td>
-		<td>Static (one-to-one)</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>PAT (NAT overloading)</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>Policy NAT/PAT</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>DNS Doctoring</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Connection limits via static NAT</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td rowspan="2">Packet filtering</td>
-		<td>Layer 3/4 filtering ingress/egress</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>FQDN based filtering</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td rowspan="25">VPN</td>
-		<td>IPsec - IKEv2</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>IPsec LAN-to-LAN Layer 3/4 filtering</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>IPsec LAN-to-LAN Pre-shared keys authentication</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>IPsec LAN-to-LAN Hub and spoke configuration</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>IPsec LAN-to-LAN Cert-based authentication</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>IPsec DMVPN</td>
-		<td>N/A</td>
-	<tr>
-		<td>IPsec remote access with Cisco Client</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with Apple OS X native IPsec client</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with Shrew Soft client</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with group authentication</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with group and user authentication</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with two-factor authentication</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access - Multiple VPN groups</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access with layer 3/4 filtering</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access - Split-tunneling</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access - all traffic through VPN (tunnel all)</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access - DNS server assignment</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access - Client certificate-based authentication</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>IPsec remote access on Windows 8</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>SSL VPN - AnyConnect</td>
-		<td><strong>N/A (Supported via Open VPN SSL client)</strong></td>
-	</tr>
-	<tr>
-		<td>SSL VPN - Certificate authentication</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>SSL VPN - Two-factor authentication</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>SSL VPN - Clientless SSL VPN</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>SSL VPN - Secure desktop</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>SSL VPN - Mobile client</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td rowspan="7">Management</td>
-		<td>Buffered Logging</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>Log shipping to log correlation device within customer's account</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td>Custom logging, logging lists</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Log retention by Rackspace</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Log analysis, outside of troubleshooting an issue</td>
-		<td>Not supported</td>
-	</tr>
-	<tr>
-		<td>Direct customer access if firewall is on TACACS</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>SNMP read-only for customer</td>
-		<td><strong>Supported</strong></td>
-	</tr>
-	<tr>
-		<td rowspan="3">High Availability (HA)</td>
-		<td>Active/Standby (stateful and non-stateful)</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Active/Active (stateful and non-stateful)</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Clustering of more than two units</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td rowspan="6">Modes and modules</td>
-		<td>Mode - Multi-Context Routed</td>
-		<td>N/A</td>
-	<tr>
-		<td>Mode - Routed</td>
-		<td><strong>Supported</strong></td>
-	<tr>
-		<td>Mode - Transparent</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Modules/Configs - Threat-detection</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Modules/Configs - IPS Module</td>
-		<td>N/A</td>
-	</tr>
-	<tr>
-		<td>Modules/Configs - Cisco Unified Communications Proxy</td>
-		<td>N/A</td>
-	<tr>
-		<td>RackConnect</td>
-		<td>RackConnect VLANs termination</td>
-		<td>N/A</td>
-	</tr>
-</table>
+Not supported
 
-<p>&nbsp;</p>
+IPv6
+
+Static routing
+
+Not supported
+
+Static routing with IP SLA tracking
+
+Not supported
+
+Dynamic routing protocols
+
+Not supported
+
+NAT
+
+Static (one-to-one)
+
+**Supported**
+
+PAT (NAT overloading)
+
+**Supported**
+
+Policy NAT/PAT
+
+**Supported**
+
+DNS Doctoring
+
+N/A
+
+Connection limits via static NAT
+
+N/A
+
+Packet filtering
+
+Layer 3/4 filtering ingress/egress
+
+**Supported**
+
+FQDN based filtering
+
+N/A
+
+VPN
+
+IPsec - IKEv2
+
+Not supported
+
+IPsec LAN-to-LAN Layer 3/4 filtering
+
+Not supported
+
+IPsec LAN-to-LAN Pre-shared keys authentication
+
+**Supported**
+
+IPsec LAN-to-LAN Hub and spoke configuration
+
+**Supported**
+
+IPsec LAN-to-LAN Cert-based authentication
+
+Not supported
+
+IPsec DMVPN
+
+N/A
+
+IPsec remote access with Cisco Client
+
+N/A
+
+IPsec remote access with Apple OS X native IPsec client
+
+N/A
+
+IPsec remote access with Shrew Soft client
+
+N/A
+
+IPsec remote access with group authentication
+
+N/A
+
+IPsec remote access with group and user authentication
+
+N/A
+
+IPsec remote access with two-factor authentication
+
+N/A
+
+IPsec remote access - Multiple VPN groups
+
+N/A
+
+IPsec remote access with layer 3/4 filtering
+
+N/A
+
+IPsec remote access - Split-tunneling
+
+N/A
+
+IPsec remote access - all traffic through VPN (tunnel all)
+
+N/A
+
+IPsec remote access - DNS server assignment
+
+N/A
+
+IPsec remote access - Client certificate-based authentication
+
+N/A
+
+IPsec remote access on Windows 8
+
+N/A
+
+SSL VPN - AnyConnect
+
+**N/A (Supported via Open VPN SSL client)**
+
+SSL VPN - Certificate authentication
+
+Not supported
+
+SSL VPN - Two-factor authentication
+
+Not supported
+
+SSL VPN - Clientless SSL VPN
+
+Not supported
+
+SSL VPN - Secure desktop
+
+N/A
+
+SSL VPN - Mobile client
+
+N/A
+
+Management
+
+Buffered Logging
+
+**Supported**
+
+Log shipping to log correlation device within customer's account
+
+**Supported**
+
+Custom logging, logging lists
+
+Not supported
+
+Log retention by Rackspace
+
+Not supported
+
+Log analysis, outside of troubleshooting an issue
+
+Not supported
+
+Direct customer access if firewall is on TACACS
+
+N/A
+
+SNMP read-only for customer
+
+**Supported**
+
+High Availability (HA)
+
+Active/Standby (stateful and non-stateful)
+
+N/A
+
+Active/Active (stateful and non-stateful)
+
+N/A
+
+Clustering of more than two units
+
+N/A
+
+Modes and modules
+
+Mode - Multi-Context Routed
+
+N/A
+
+Mode - Routed
+
+**Supported**
+
+Mode - Transparent
+
+N/A
+
+Modules/Configs - Threat-detection
+
+N/A
+
+Modules/Configs - IPS Module
+
+N/A
+
+Modules/Configs - Cisco Unified Communications Proxy
+
+N/A
+
+RackConnect
+
+RackConnect VLANs termination
+
+N/A
+
+
+

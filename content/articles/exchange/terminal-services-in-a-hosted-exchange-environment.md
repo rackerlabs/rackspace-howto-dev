@@ -7,7 +7,6 @@ created_by: Milton Prado
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
 product: Microsoft Exchange
-body_format: tinymce
 ---
 
 Terminal Services In A Hosted Exchange Environment

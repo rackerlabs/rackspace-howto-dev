@@ -7,7 +7,6 @@ created_by: Rae D. Cabello
 last_modified_date: '2013-01-23'
 last_modified_by: Rae D. Cabello
 product: Cloud Sites
-body_format: full_html
 ---
 
  The Billing section of your existing control panel will be transitioned

@@ -7,7 +7,6 @@ created_by: Jake Coe
 last_modified_date: '2015-12-18'
 last_modified_by: Constanze Kratel
 product: Rackspace Auto Scale
-body_format: tinymce
 ---
 
 Auto Scale uses webhooks to initiate scaling events. A webhook is an

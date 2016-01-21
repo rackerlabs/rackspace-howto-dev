@@ -7,7 +7,6 @@ created_by: Rackspace Support
 last_modified_date: '2011-09-07'
 last_modified_by: Matt Wheeler
 product: Cloud Sites
-body_format: tinymce
 ---
 
 The Rackspace Cloud provisions IIS sites in &ldquo;Integrated Mode.&rdquo; Running

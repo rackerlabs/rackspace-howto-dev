@@ -7,7 +7,6 @@ created_by: Lee Jelley
 last_modified_date: '2016-01-05'
 last_modified_by: Rose Contreras
 product: Cloud Servers
-body_format: tinymce
 ---
 
 In this article we discuss adding [Google

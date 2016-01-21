@@ -7,7 +7,6 @@ created_by: Trenton Guthrie
 last_modified_date: '2014-10-30'
 last_modified_by: Kyle Laffoon
 product: Cloud Block Storage
-body_format: tinymce
 ---
 
 This article describes how to move a software RAID Cloud Block Storage

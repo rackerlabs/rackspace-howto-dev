@@ -7,7 +7,6 @@ created_by: Courtney Dunaway
 last_modified_date: '2014-11-13'
 last_modified_by: David Hendler
 product: Cloud Sites
-body_format: tinymce
 ---
 
 ***NOTE:** This article is written for our [Cloud Sites Control

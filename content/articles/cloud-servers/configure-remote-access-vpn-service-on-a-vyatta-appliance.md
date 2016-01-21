@@ -7,7 +7,6 @@ created_by: Sameer Satyam
 last_modified_date: '2015-09-29'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
-body_format: tinymce
 ---
 
 You can configure a Vyatta Appliance to act as a remote access VPN
