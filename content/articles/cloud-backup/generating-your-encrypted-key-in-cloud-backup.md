@@ -4,8 +4,8 @@ title: Generating Your Encrypted Key in Cloud Backup
 type: article
 created_date: '2012-02-20'
 created_by: Rackspace Support
-last_modified_date: '2014-03-13'
-last_modified_by: Ross Diaz
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Backup
 body_format: tinymce
 ---

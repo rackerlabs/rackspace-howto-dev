@@ -4,15 +4,15 @@ title: Detailed Permissions Matrix for Cloud Big Data v2
 type: article
 created_date: '2015-06-01'
 created_by: Catherine Richardson
-last_modified_date: '2016-01-15'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Big Data
 body_format: markdown_w_tinymce
 ---
 
 The following permissions matrix displays specific permissions for the roles in Cloud Big Data v2. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
-**<a href="http://docs.rackspace.com/">API Documentation</a>**
+**<a href="http://developer.rackspace.com/docs">API Documentation</a>**
 
 **<a href="#bigdata">Cloud Big Data Terminology</a>**
 
@@ -53,37 +53,37 @@ List available flavors | <code>GET /flavors</code> | **Observer & Creator & Admi
 List resource limits	| <code>GET /limits</code> | **Observer & Creator & Admin** | Lists the resource limits for the user, including the remaining node count, available RAM, and remaining disk space.
 
 <a id="bigdata" name="bigdata"></a>
-## Cloud Big Data terminology
+### Cloud Big Data terminology
 
-### Credentials
+#### Credentials
 
 Credentials allow you to set up SSH keys and other connector credentials for use with clusters.
 
-### Distros
+#### Distros
 
 Distros provide a list of supported distributions and their corresponding versions, as well as a list of supported services and components per distribution.
 
-### Stacks
+#### Stacks
 
 Stacks are high-level building blocks of software that compose a Big Data architecture. Stacks are composed of services, which in turn are composed of components. A stack is specific to a distribution because of to the differences in services that are supported across distributions.
 
-### Clusters
+#### Clusters
 
 A cluster is a group of servers (nodes). In Cloud Big Data, the servers are virtual.
 
-### Node
+#### Node
 
 In a network, a node (or server) is a connection point—either a redistribution point or an end point for data transmissions. In general, a node has programmed or engineered capability to recognize and process or forward transmissions to other nodes. A node is a member of a cluster.
 
-### Scripts
+#### Scripts
 
 You can create a custom script that runs during various phases of the cluster's life cycle. The script is invoked on all nodes of the cluster. The script type currently supported is POST_INIT, which runs after the cluster is completely set up. The script must be executable. Preferably, the script should be a bash script, but it could be a Python script or a self-contained executable that works with the base libraries of the installed OS.
 
-### Flavor
+#### Flavor
 
 A flavor is an available configuration for Cloud Big Data. Each flavor has a unique combination of memory capacity and priority for CPU time.
 
-### Resource limits
+#### Resource limits
 
 Resource limits include items such as remaining node count, available RAM, and remaining disk space for the user.
 

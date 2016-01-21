@@ -4,8 +4,8 @@ title: Use Tableau Desktop with Hive on Cloud Big Data
 type: article
 created_date: '2015-07-29'
 created_by: Scott Kruger
-last_modified_date: '2015-10-05'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Big Data
 body_format: markdown_w_tinymce
 ---
@@ -20,16 +20,19 @@ is to set up a SSH tunnel, which is similar to a VPN, except that you make
 services available individually instead of all at once
 ([additional information about SSH tunneling](https://en.wikipedia.org/wiki/Tunneling_protocol#Secure_Shell_tunneling)).
 
-## Table of Contents
+### Table of Contents
+
 1. [Prerequisites](#prerequisites)
+
 2. [Setting up an SSH tunnel](#setting_up_an_ssh_tunnel)
     *    [Linux or Mac OS X](#linux_or_max_osx)
     *    [Windows](#windows)
+
 3. [Connect to Hive in Tableau Desktop](#connect_to_hive)
 
-<a name="prerequisites"/>
-Prerequisites
-------------
+<a name="prerequisites"></a>
+### Prerequisites
+
 *   Tableau Desktop installed on your workstation
 *   Cloud Big Data cluster provisioned with Hive
 *   [Hortonworks Hive ODBC driver](http://hortonworks.com/products/releases/hdp-2-2/#add_ons)
@@ -39,13 +42,12 @@ Prerequisites
 
 
 <a name="setting_up_an_ssh_tunnel"></a>
-Setting up an SSH tunnel
----------------------
+### Setting up an SSH tunnel
 
 The first thing to do is to set up the SSH tunnel to the server in your Cloud Big Data cluster that contains the Hive server.  The instructions on how to do this depend on what operating system is running on your workstation.
 
 <a name="linux_or_max_osx"></a>
-### Linux or Mac OS X
+#### Linux or Mac OS X
 
 On Linux or Mac OS X, you have two choices:
 
@@ -99,7 +101,7 @@ to use the credentials with which you created the cluster.
 
 
 <a name="windows"></a>
-### Windows
+#### Windows
 
 Open PuTTY and under the options on the left, select **Connection -> SSH -> Tunnels**.
 Under **Add new forwarded port**, add the following information:
@@ -122,8 +124,7 @@ for a login, enter the username with which you created the cluster.
 
 
 <a name="connect_to_hive"></a>
-Connect to Hive in Tableau Desktop
--------------------------------
+### Connect to Hive in Tableau Desktop
 
 Assuming you've already installed the Hortonworks Hive ODBC driver, open
 Tableau Desktop.  On the left, under **Connect -> To a server**, click

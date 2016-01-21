@@ -4,8 +4,8 @@ title: Adding Disk Space After Resizing a Windows 2003 Cloud Server
 type: article
 created_date: '2012-03-01'
 created_by: Rackspace Support
-last_modified_date: '2012-03-01'
-last_modified_by: Rackspace Support
+last_modified_date: '2016-01-21'
+last_modified_by: Zach Corleissen
 product: Cloud Servers
 body_format: tinymce
 ---

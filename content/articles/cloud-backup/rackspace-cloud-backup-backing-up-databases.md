@@ -4,8 +4,8 @@ title: Rackspace Cloud Backup - Backing up Databases
 type: article
 created_date: '2012-08-23'
 created_by: David Hendler
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Backup
 body_format: tinymce
 ---

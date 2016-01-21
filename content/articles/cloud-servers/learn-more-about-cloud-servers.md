@@ -39,7 +39,7 @@ Additional resources
 
 [Calculating Price](http://www.rackspace.com/calculator): Helps you determine the cost of creating a new cloud server.
 
-[FAQ](/how-to/cloud-servers-faq): Answers frequently asked questions about Cloud Servers.
+[FAQ](http://www.rackspace.com/knowledge_center/product-faq/cloud-servers): Answers frequently asked questions about Cloud Servers.
 
 [Product
 Page](http://www.rackspace.com/cloud/servers): Provides product information about Cloud Servers.

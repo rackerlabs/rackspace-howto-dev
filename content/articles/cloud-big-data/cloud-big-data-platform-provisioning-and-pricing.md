@@ -4,8 +4,8 @@ title: Cloud Big Data Platform provisioning and pricing
 type: article
 created_date: '2014-05-07'
 created_by: David Grier
-last_modified_date: '2016-01-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -29,8 +29,7 @@ includes gigabit Ethernet, optimized local storage, and easy API access.
 The following sections provide information that will help you understand
 the pricing and provisioning of this service.
 
-Data node instances
--------------------
+### Data node instances
 
 Cloud Big Data Platform offers four datanode sizes:
 
@@ -44,11 +43,11 @@ Cloud Big Data Platform offers four datanode sizes:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><h3 id="flavor-id"><strong>Flavor ID</strong></h3></td>
-<td align="left"><h3 id="name"><strong>Name</strong></h3></td>
-<td align="left"><h3 id="vcpu"><strong>vCPU</strong></h3></td>
-<td align="left"><h3 id="ram"><strong>RAM</strong></h3></td>
-<td align="left"><h3 id="disk"><strong>Disk</strong></h3></td>
+<td align="left"><h4 id="flavor-id"><strong>Flavor ID</strong></h4></td>
+<td align="left"><h4 id="name"><strong>Name</strong></h4></td>
+<td align="left"><h4 id="vcpu"><strong>vCPU</strong></h4></td>
+<td align="left"><h4 id="ram"><strong>RAM</strong></h4></td>
+<td align="left"><h4 id="disk"><strong>Disk</strong></h4></td>
 </tr>
 <tr class="even">
 <td align="left"><p>hadoop1-7</p></td>
@@ -104,22 +103,19 @@ One additional thing to note is that a 10 TB instance actually occupies
 an entire physical machine, so users do not have to worry about sharing
 resources.
 
-Gateway node
-------------
+### Gateway node
 
 The Gateway node is provisioned automatically when you create a cluster.
 It is designed to give you access directly into the data nodes residing
 in the cluster.
 
-Name node
----------
+### Name node
 
 The Name node is provisioned at the time of cluster creation. The Name
 node handles the master services of the Hadoop cluster including the map
 operation and logical location of the data copies.
 
-Bandwidth
----------
+### Bandwidth
 
 All incoming bandwidth is provided at no charge, which means that you
 are not metered or billed for bandwidth usage during import. Only
@@ -128,8 +124,7 @@ or distributed from the Hadoop cluster is charged. Bandwidth between
 data nodes and the Name node or Gateway node, or between sets of data
 nodes, is not metered or billed.
 
-Scaling
--------
+### Scaling
 
 Hadoop is a distributed technology that allows for seamless horizontal
 scaling. This means that you can easily expand the capacity of your
@@ -137,8 +132,7 @@ Hadoop cluster by simply adding a node to the cluster via the Coud
 Control Panel or API. You can also scale down the resources by removing
 data node instances from the cluster.
 
-Cloud Files integration
------------------------
+### Cloud Files integration
 
 One of the main features of Cloud Big Data Platform is its ability to
 process data that lives in Cloud Files. For detailed information about

@@ -4,8 +4,8 @@ title: Adding Disk Space After Resizing a Windows Server 2012 Cloud Server
 type: article
 created_date: '2013-04-10'
 created_by: Rackspace Support
-last_modified_date: '2013-04-30'
-last_modified_by: Evan Nabors
+last_modified_date: '2016-01-21'
+last_modified_by: Zach Corleissen
 product: Cloud Servers
 body_format: tinymce
 ---

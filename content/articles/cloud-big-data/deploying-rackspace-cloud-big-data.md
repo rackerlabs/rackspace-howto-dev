@@ -4,8 +4,8 @@ title: Deploying Rackspace Cloud Big Data
 type: article
 created_date: '2014-05-07'
 created_by: Kyle Laffoon
-last_modified_date: '2016-01-07'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -25,8 +25,7 @@ We currently support two deployment options:
 2.  Spark 1.5 with support for Spark Standalone, Tachyon, Zeppelin
     and Kafka.
 
-Build a cluster
----------------
+### Build a cluster
 
 There are multiple methods for deploying and scaling your Hadoop
 cluster: the API, Cloud Control Panel, and Lava command line. API and
@@ -67,16 +66,14 @@ You can create a cluster through the Cloud Control Panel as follows:
 
     <img src="/knowledge_center/sites/default/files/field/image/logintoYourCluster_0.png" width="369" height="385" />
 
- Choosing a Stack
----------------------
+###  Choosing a Stack
 
 The various predefined stacks comprise of different services. It is best
 to choose a stack that meets the requirement for all the services that
 you need. If you are unsure and want to try out, we recommend using the
 &ldquo;HDP 2.3 with all services&rdquo; stack.
 
-Choosing a data node size
--------------------------
+### Choosing a data node size
 
 Cloud Big Data offers four flavors: Small (1.25 TB), Medium (2.5T),
 Large (5T), and XLarge (10 TB). In the IAD region we additionally offer
@@ -90,8 +87,7 @@ bare metal performance choose the OnMetal IO flavor. If you prefer to
 scale your environment more granularly or have lower storage and
 processing needs, you can choose small data nodes.
 
-More information
-----------------
+### More information
 
 Following are some great links for further reading about data processing
 as well as a data ingest method supported by Rackspace:
@@ -101,10 +97,8 @@ as well as a data ingest method supported by Rackspace:
 
 **Apache Hive**: <http://hive.apache.org>
 
-**Apache Spark:** **http://spark.apache.org/**
-
-**Rackspace Swiftfs**:
-[http://www.rackspace.com/knowledge\_center/article/swift-filesystem-for-hadoop](/how-to/swift-filesystem-for-hadoop)
+**Apache
+Spark:**[http://www.rackspace.com/knowledge\_center/article/swift-filesystem-for-hadoop](http://spark.apache.org/%3C/a%3E%3C/p%3E%0A%0A%3Cp%3E%3Cstrong%3ERackspace%20Swifts%3C/strong%3E:%20%3Ca%20href=)
 
 **Getting Data Into Your Cluster**:
 [http://www.rackspace.com/knowledge\_center/article/getting-data-into-your-big-data-cluster](/how-to/getting-data-into-your-big-data-cluster)

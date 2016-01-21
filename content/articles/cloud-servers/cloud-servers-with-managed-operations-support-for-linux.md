@@ -4,8 +4,8 @@ title: Cloud Servers with Managed Operations support for Linux
 type: article
 created_date: '2011-05-26'
 created_by: David Hendler
-last_modified_date: '2016-01-14'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Zach Corleissen
 product: Cloud Servers
 body_format: markdown_w_tinymce
 ---

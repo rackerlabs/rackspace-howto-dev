@@ -4,8 +4,8 @@ title: Cloud Backup agent logging basics
 type: article
 created_date: '2014-05-29'
 created_by: Ross Diaz
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Backup
 body_format: tinymce
 ---
@@ -18,8 +18,7 @@ also critical for gathering information about how Cloud Backup is
 interacting with your server or storage volume, and you can use it for
 detailed logging when troubleshooting a problem with Rackspace Support.
 
-Log configuration file
-----------------------
+### Log configuration file
 
 Your log configuration file is named log4cxx.xml and has a format
 similar to the following (abbreviated) Windows example:
@@ -40,8 +39,7 @@ similar to the following (abbreviated) Windows example:
       </root>
     </log4j:configuration>
 
-Agent logging operations
-------------------------
+### Agent logging operations
 
 Agent logs can store valuable troubleshooting information by outputting
 data to a series of log files. When the problem condition occurs, the
@@ -66,8 +64,7 @@ configuration file for your agent and set the appropriate *level value*.
 
 **Note:** TRACE and ALL are equivalent values for logging.
 
-Trace-level debugging
----------------------
+### Trace-level debugging
 
 When you set the logging level to TRACE, the agent captures more
 granular data than when in DEBUG mode. If you activate TRACE debugging
@@ -75,8 +72,7 @@ you increase the risk of losing log information because of the large
 volume of data written to the logs in this mode. You might need to
 increase the size and number of rollover logs.
 
-Rolling logs
-------------
+### Rolling logs
 
 Cloud Backup agent logs are rolling logs, which means they have a
 maximum size and that a maximum number of logs are stored on a server.
@@ -117,8 +113,7 @@ The maximum values for these parameters are as follows:
 After the problem is diagnosed, we recommend that you return these
 parameters to their original values to conserve disk space.
 
-Where to store saved logs
--------------------------
+### Where to store saved logs
 
 Log files can quickly accumulate a large amount of data in a short
 period of time. To keep the file sizes manageable, log files should
@@ -150,7 +145,7 @@ on Linux systems:
 **Note: **If driveclient is installed as an individual user, most of
 these files are under \~/.driveclient.
 
-### Agent file locations (Windows)
+#### Agent file locations (Windows)
 
 Finding the driveclient files under various flavors of Windows is a
 little more complicated. In general, you can find these files under the
@@ -171,8 +166,7 @@ In a typical installation, the files will be located in these folders:
 -   Application: %ProgramFiles%\\Driveclient
 -   Database: search for a \*.db file under %ProgramData%\\Driveclient
 
-Disable logging
----------------
+### Disable logging
 
 To disable logging, remove the tag named `appender-ref` from
 `log4cxx.xml`.

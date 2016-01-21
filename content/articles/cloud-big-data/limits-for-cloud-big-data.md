@@ -4,8 +4,8 @@ title: Limits for Cloud Big Data
 type: article
 created_date: '2014-03-28'
 created_by: Rose Contreras
-last_modified_date: '2015-05-08'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Big Data
 body_format: tinymce
 ---
@@ -16,8 +16,7 @@ recognizes *rate limits* and *absolute limits*. Rate limits are
 thresholds that are reset after a certain amount of time passes.
 Absolute limits are fixed.
 
-Rate limits
------------
+### Rate limits
 
 Rate limits are specified in both a human-readable wildcard URI and a
 machine-processable regular expression. The regular expression boundary
@@ -46,8 +45,7 @@ If you exceed the thresholds established for your account, a 413
 (OverLimit) HTTP response is returned with a Retry-After header to
 notify the client when it can attempt to try again.
 
-Absolute limits
----------------
+#### Absolute limits
 
 The following table describes the absolute limits that are set.
 

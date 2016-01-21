@@ -18,7 +18,7 @@ body_format: tinymce
 -   [Getting started on a Windows Cloud
     Server](/how-to/getting-started-on-a-windows-cloud-server "Getting Started on a Windows Cloud Server")
 -   [Frequently Asked
-    Questions](/how-to/cloud-servers-faq "Frequently Asked Questions")
+    Questions](https://admin.rackspace.com/knowledge_center/article/cloud-servers-faqs "Frequently Asked Questions")
 -   [Logging in to your server via
     RDP (Windows)](/how-to/log-in-to-your-server-via-rdp-windows "Logging in to Your Server via RDP (Windows)")
 -   [Preparing data disks on Windows Cloud

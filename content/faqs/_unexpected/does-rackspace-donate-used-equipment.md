@@ -4,8 +4,8 @@ title: Does Rackspace donate used equipment?
 type: frequently_asked_question
 created_date: '2012-07-25'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-20'
+last_modified_by: Renee Rendon
 product: Cloud Hosting
 body_format: tinymce
 ---

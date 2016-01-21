@@ -4,9 +4,9 @@ title: Back up data with Cloud Files
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-05-12'
-last_modified_by: Kelly Holcomb
-product: Cloud Servers
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
+product: Cloud Files
 body_format: tinymce
 ---
 

@@ -4,9 +4,9 @@ title: Learn More About Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
+last_modified_date: '2016-01-20'
 last_modified_by: Renee Rendon
-product: multiple
+product: Cloud Databases
 body_format: tinymce
 ---
 
