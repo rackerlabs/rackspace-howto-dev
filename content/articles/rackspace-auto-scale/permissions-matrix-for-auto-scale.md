@@ -4,7 +4,7 @@ title: Permissions Matrix for Auto Scale
 type: article
 created_date: '2013-09-04'
 created_by: Renee Rendon
-last_modified_date: '2016-01-19'
+last_modified_date: '2016-01-21'
 last_modified_by: Kelly Holcomb
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
@@ -41,5 +41,4 @@ As of November 11, 2013
 | Delete a Webhook | `DELETE /groups/{groupId}/policies/{policyId}/webhook/{webhookId}` | **Admin Only** | Deletes a webhook. |
 | View Webhook Info | `GET /groups/{groupId}/policies/{policyId}/webhook/{webhookId}` | **Admin Only** | Describes one webhook. |
 
-
-### <a href="/how-to/permissions-matrix-for-role-based-access-control-rbac"> &lt; Permission Matrices for RBAC</a>
+**[&lt; Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)**

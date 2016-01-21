@@ -4,8 +4,8 @@ title: Magento FAQ
 type: article
 created_date: '2014-05-07'
 created_by: Mike Hicklen
-last_modified_date: '2014-12-17'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -31,30 +31,7 @@ from Varien (the makers of Magento)--for a fee.
 
 Get quick answers to common questions about Magento.
 
--   [**General questions**](#generalquestions)
-    -   [What is Magento?](#whatismagento)
-    -   [Does Magento have an Enterprise edition?](#magentoenterprise)
-    -   [What are the differences between Magento Community and Magento
-        Enterprise Editions?](#differencescommunityenterprise)
--   [**Typical questions after
-    installation**](#typicalquestionsafterinstall)
-    -   [Where can I find the database/memcache configuration file for
-        Magento?](#locationdbasememcacheconfig)
-    -   [What, and where, is the Magento Connect
-        Manager?](#connectmanager)
-    -   [How do I clear the cache on a Magento store?](#clearcache)
-    -   [Why rename the cache folder? Shouldn&rsquo;t I just delete it because
-        it's an old cache?](#whyrenamecachefldr)
-    -   [What is reindexing and how can I do it via the command
-        line?](#reindexingviacmdline)
-    -   [What other maintenance tasks can I do with the Magento shell
-        scripts?](#othermaintscripts)
-    -   ["An Error Log Record Number" doesn't tell me
-        anything meaningful. Where can I find the actual error instead
-        of just a number?](#errorloginfo)
-
-**General questions**
--------------------------
+### **General questions**
 
 ### What is Magento?
 
@@ -102,8 +79,7 @@ The Enterprise Edition of Magento includes the following features:
 Gold level support. Multiyear, multiserver, and Platinum level support
 options are also available.
 
-Typical questions after installation
-----------------------------------------
+### Typical questions after installation
 
 ### Where can I find the database/memcache configuration file for Magento?
 

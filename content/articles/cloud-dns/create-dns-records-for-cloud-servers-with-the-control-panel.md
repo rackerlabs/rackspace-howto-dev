@@ -11,7 +11,7 @@ product_url: cloud-dns
 ---
 
 **Previous section:** [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 This article provides instructions for creating a DNS zone for your
 domain and adding basic A, MX, and CNAME records by using the Cloud

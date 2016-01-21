@@ -4,8 +4,8 @@ title: Set up WordPress Multisite with Cloud Sites
 type: article
 created_date: '2014-04-29'
 created_by: Thomas Hester
-last_modified_date: '2016-01-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -57,8 +57,7 @@ The process is divided into the following steps:
 
 
 
-1. Set up a Cloud Databases instance and install WordPress
-----------------------------------------------------------
+### 1. Set up a Cloud Databases instance and install WordPress
 
 #### <span data-mce-mark="1">Set up a Cloud Databases instance</span>
 
@@ -100,8 +99,7 @@ the one-click installer.
 
 <div class="highlight">
 
-2. Configure WordPress
---------------------------
+### 2. Configure WordPress
 
 </div>
 
@@ -257,8 +255,7 @@ the WordPress MU Domain Mapping plug-in, as follows:
 
 
 
-3. Add sites to the WordPress network
--------------------------------------
+### 3. Add sites to the WordPress network
 
 The final step in this process is to add sites to your WordPress
 network. To do so, perform the following steps:

@@ -4,8 +4,8 @@ title: Rackspace Cloud Backup - Install the agent on Windows by using silent ins
 type: article
 created_date: '2015-01-20'
 created_by: Rose Contreras
-last_modified_date: '2015-09-01'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Backup
 product_url: cloud-backup
 ---

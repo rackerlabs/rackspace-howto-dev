@@ -4,8 +4,8 @@ title: Dedicated VMware vCloud support coverage
 type: article
 created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-20'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Coste
 product: Managed VMware Services
 product_url: managed-vmware-services
 ---
@@ -14,30 +14,13 @@ Support coverage for Rackspace Dedicated VMware vCloud is similar to that of our
 
 With Dedicated vCloud, you can designate the service level for virtual machines (VMs) as managed or unmanaged. Both service levels include Rackspace support for the host infrastructure and virtualization software. Managed VMs include additional support for the guest operating system running on the VM.
 
-- [Supported operations for managed VMs](#managed)
-  - [Virtualization](#virtualization-managed)
-  - [Hardware](#hardware-managed)
-  - [Operating system](#os-managed)
-  - [Monitoring](#monitoring-managed)
-  - [Network](#network-managed)
-  - [Security](#security-managed)
-
-
-- [Supported operations for unmanaged VMs](#unmanaged)
-  - [Virtualization](#virtualization-unmanaged)
-  - [Hardware](#hardware-unmanaged)
-  - [Operating system](#os-unmanaged)
-  - [Monitoring](#monitoring-unmanaged)
-  - [Network](#network-unmanaged)
-  - [Security](#security-unmanaged)
-
 <a name="managed"> </a>
-## Supported operations for managed VMs
+### Supported operations for managed VMs
 
 For managed VMs, the following tables show which operations are supported by Rackspace and which operations the customer is responsible for.
 
 <a name="virtualization-managed"> </a>
-### Virtualization support - managed
+#### Virtualization support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -48,7 +31,7 @@ VM troubleshooting | X | &nbsp;
 Remote administration for VMs | X | &nbsp;
 
 <a name="hardware-managed"> </a>
-### Hardware support - managed
+#### Hardware support - managed
 Operation | Rackspace | Customer
 --- | --- | ---
 Manage delivery of equipment | X | &nbsp;
@@ -57,7 +40,7 @@ Rackspace fully-managed dedicated NAS | X | &nbsp;
 Rackspace fully-managed dedicated SAN | X | &nbsp;
 
 <a name="os-managed"> </a>
-### Operating system support - managed
+#### Operating system support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -67,7 +50,7 @@ Patch operating system | X | &nbsp;
 
 <a name="monitoring-managed"> </a>
 
-### Monitoring support - managed
+#### Monitoring support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -80,7 +63,7 @@ Configure and respond to vCenter Operations Manager alerts (such as ping and por
 Configure and respond to Infrastructure Navigator alerts (such as(ping and port alerts) | X | &nbsp;
 
 <a name="network-managed"> </a>
-### Network support - managed
+#### Network support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -98,19 +81,19 @@ Manage VM DNS | &nbsp; | X
 
 <a name="security-managed"> </a>
 
-### Security support - managed
+#### Security support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
 Maintain security specifications for VMs | &nbsp; | X
 
 <a name="unmanaged"> </a>
-## Supported operations for unmanaged VMs
+### Supported operations for unmanaged VMs
 
 For unmanaged VMs, including customer-provided images, the following tables show which operations are supported by Rackspace and which operations the customer is responsible for.
 
 <a name="virtualization support - unmanaged"> </a>
-### Virtualization support - unmanaged
+#### Virtualization support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -121,7 +104,7 @@ VMware vCenter Operations Manager - Analytics | X | &nbsp;
 Remote administration for VMs | &nbsp; | X
 
 <a name="hardware-unmanaged"> </a>
-### Hardware support - unmanaged
+#### Hardware support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -132,7 +115,7 @@ Rackspace fully-managed dedicated SAN | X | &nbsp;
 
 <a name="os-unmanaged"> </a>
 
-### Operating system support - unmanaged
+#### Operating system support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -142,7 +125,7 @@ Patch operating systems | &nbsp; | X
 
 <a name="monitoring-unmanaged"> </a>
 
-### Monitoring support - unmanaged
+#### Monitoring support - unmanaged
 
 Operation | Rackspace | Customer
 --- | ---- | ---
@@ -155,7 +138,7 @@ Configure and respond to vCenter Operations Manager alerts (such as ping and por
 
 <a name="network-unmanaged"> </a>
 
-### Network support - unmanaged
+#### Network support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
@@ -173,7 +156,7 @@ Manage <span>VM</span> DNS | &nbsp; | X
 
 <a name="security-unmanaged"> </a>
 
-### Security support - unmanaged
+#### Security support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---

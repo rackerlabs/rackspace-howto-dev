@@ -1,11 +1,11 @@
 ---
 node_id: 3714
-title: 'Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup'
+title: 'Best practices for backing up your data: Cloud Block Storage versus Cloud Backup'
 type: article
 created_date: '2013-10-01'
 created_by: Kyle Laffoon
-last_modified_date: '2014-10-30'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -14,6 +14,8 @@ When backing up the data disk or disks on your General Purpose Cloud
 Servers you have two convenient choices: Cloud Block Storage or Cloud
 Backup. Identifying which one to use depends on what features are most
 important to you.
+
+
 
 ### Cloud Block Storage for Portability
 
@@ -26,7 +28,7 @@ option, which helps control costs, and an SSD option for higher
 performance. Unlike Cloud Backup, there is no agent to install. You
 simply copy your files to the attached volume.
 
-**Limitations**
+#### **Limitations**
 
 Cloud Block Storage attaches a traditional data volume to your server,
 so there is no built-in mechanism to track or retrieve overwritten data.
@@ -36,11 +38,13 @@ options. Additionally, the Cloud Block Storage process cannot be
 automated. You must copy the data to the volume after configuring it on
 your server.
 
-**Getting Started with Cloud Block Storage**
+#### **Getting Started with Cloud Block Storage**
 
 To get started with Cloud Block Storage, see [Create and Attach a Block
 Storage
 Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
+
+
 
 ### Cloud Backup for Incremental Backups
 
@@ -56,7 +60,7 @@ The Cloud Backup Agent can complete the backup automatically following a
 schedule that you identify, so that you can avoid waiting for the
 process to complete. Manual backup is also available on Cloud Backup.
 
-**Encryption**
+#### **Encryption**
 
 With Cloud Backup, enterprise-grade encryption (Advanced Encryption
 Standard, 256-bit key) is available. When encryption is enabled, your
@@ -67,7 +71,7 @@ leaves the server and remains safely encrypted while stored.
 **Note**: After AES-encryption is set, it cannot be removed from your
 files.
 
-**Limitations**
+#### **Limitations**
 
 To use Cloud Backup, you must set up the Cloud Backup Agent. Backups
 cannot occur until you have set up the agent and identified what files
@@ -76,7 +80,7 @@ server is required for the Cloud Backup Agent. All backups performed
 with Cloud Backup are placed in Cloud Files, so there are no cost
 control options with different storage types.
 
-**Getting Started with Cloud Backup**
+#### **Getting Started with Cloud Backup**
 
 See [Getting Started with Cloud
 Backup](/how-to/cloud-backup)

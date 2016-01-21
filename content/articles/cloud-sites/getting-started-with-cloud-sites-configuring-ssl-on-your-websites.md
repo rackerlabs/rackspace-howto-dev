@@ -4,8 +4,8 @@ title: 'Getting started with Cloud Sites: Configuring SSL on your websites'
 type: article
 created_date: '2011-03-14'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Renee Rendon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -49,16 +49,9 @@ protocol) programs. These programs are automatically able to receive SSL
 connections.
 
 Adding SSL to a website on Cloud Sites is a straightforward process.This
-article provides the following information:
+article provides the information for this process.
 
--   [Supported types of SSL certificates](#supported_ssls)
--   [Generate a CSR for your site](#generateaCSR)
--   [Purchase a SSL certificate ](#ssl_purchase)
--   [Install the certificate](#ssl_install)
--   [SSL tips](#ssl_tips_and_tricks)
-
-**Supported types of SSL Certificates**
--------------------------------------------
+### **Supported types of SSL Certificates**
 
 The primary certificates supported on Cloud Sites are as follows:
 
@@ -74,8 +67,7 @@ domain to work properly.
 **Note**: Cloud Sites no longer supports *any* self-signed
 certificates.
 
-**Generate a CSR for your site**
-------------------------------------
+### **Generate a CSR for your site**
 
 Complete the following steps to generate a certificate signing request
 (CSR), which you will need to have when you purchase an SSL certificate.
@@ -110,8 +102,7 @@ certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/273
 
 
 
-**Purchase a certificate**
---------------------------
+### **Purchase a certificate**
 
 SSL certificates are available from a number of third party sources.
 Some recommended sellers are
@@ -134,8 +125,7 @@ certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/273
 
 
 
-**Install the certificate**
----------------------------
+### **Install the certificate**
 
 1.  Log in to the [Cloud Sites Control
     Panel](https://manage.rackspacecloud.com).
@@ -181,8 +171,7 @@ address.  DNS must be updated in that case as well.
 
 
 
-**SSL tips**
-------------
+### **SSL tips**
 
 -   [Force SSL on your PHP
     site](/how-to/force-ssl-on-your-php-site)

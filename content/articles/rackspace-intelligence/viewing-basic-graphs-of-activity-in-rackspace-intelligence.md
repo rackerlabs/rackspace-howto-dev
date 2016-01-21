@@ -4,8 +4,8 @@ title: Viewing basic graphs of activity in Rackspace Intelligence
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2016-01-13'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -20,8 +20,7 @@ custom graphs. For more information, read [Creating custom graphs of
 activity in Rackspace
 Intelligence](/how-to/creating-custom-graphs-of-activity-in-rackspace-intelligence).
 
-View default graphs
--------------------
+### View default graphs
 
 To view the default graphs that are available for you, click
 **Visualize** at the top of the interface, and then click **Basic
@@ -40,8 +39,7 @@ A list of graphs are displayed that are available for your check.
 
 <img src="/knowledge_center/sites/default/files/field/image/BG_Check.2.png" width="650" height="405" />
 
-Work with favorites
--------------------
+### Work with favorites
 
 Rackspace Intelligence lets you specify one or more favorite graphs and
 filter for your favorites.
@@ -54,8 +52,7 @@ Collections.**
 
 <img src="/knowledge_center/sites/default/files/field/image/BG_Fav.1.png" width="650" height="405" />I
 
-Specify a time range
---------------------
+### Specify a time range
 
 Rackspace Intelligence lets you use preset or custom time ranges for the
 data that is collected and displayed in graphs.
@@ -75,8 +72,7 @@ last time stamp.
 
 <img src="/knowledge_center/sites/default/files/field/image/preset1.1.png" width="584" height="41" />
 
-Adjust the layout of your graph page
-------------------------------------
+### Adjust the layout of your graph page
 
 You can adjust the way your graphs are displayed on the page by
 selecting the appropriate display icon on the top right corner of the

@@ -4,15 +4,13 @@ title: Detach and Delete Cloud Block Storage Volumes
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-### Previous section
-
-[Create and Use Cloud Block Storage
+**Previous section:**[Create and Use Cloud Block Storage
 Snapshots](/how-to/create-and-use-cloud-block-storage-snapshots)
 
 Detaching a Cloud Block Storage volume will prevent you from writing to
@@ -24,11 +22,7 @@ volume before you delete it. In all cases, you must unmount the volume
 before you detach it through the Control Panel. The instructions are
 below.
 
-On this Page:
 
--   [Unmount a Volume](#unmount_a_volume)
--   [Detach a Volume](#detach-a-volume)
--   [Delete a Volume](#delete-a-volume)
 
 ### Unmount a Volume
 
@@ -42,7 +36,7 @@ There are a few reasons to detach a volume:
 Before you detach a Volume from a Server, you should unmount it to
 prevent errors.
 
-**Unmount Volume from a Linux Server.**
+#### **Unmount Volume from a Linux Server**
 
 Confirm in the Control Panel how the volume is presented to the cloud
 server.
@@ -70,7 +64,7 @@ The output is the prompt ready for the next command.
 
     #
 
-**Unmount a Volume from a Windows Server.**
+#### **Unmount a Volume from a Windows Server**
 
 1.  In the Server Manager, Select File and Storage Services &gt; Disks.
 2.  Under the **Disks** window, right-click the Cloud Block
@@ -81,6 +75,8 @@ The output is the prompt ready for the next command.
 
 The Cloud Block Storage Volume no longer displays as a drive under
 **Computer**.
+
+
 
 ### Detach a Volume
 

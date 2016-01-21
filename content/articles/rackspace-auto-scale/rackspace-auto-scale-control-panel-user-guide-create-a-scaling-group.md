@@ -4,8 +4,8 @@ title: Rackspace Auto Scale Control Panel User Guide - Create a scaling group
 type: article
 created_date: '2013-11-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-20'
-last_modified_by: Robin Norwood
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -18,11 +18,7 @@ policies through scaling group configuration. The scaling group
 configuration sets a number of parameters that affect how scaling
 policies operate.
 
--   [Create a scaling group](#CreateScalingGroup)
--   [About the Auto Scale control panel](#AboutControlPanel)
-
-### Create a scaling group
-
+### <span>Create a scaling group</span>
 
 1.  Log in to the Cloud Control Panel.
 
@@ -160,7 +156,7 @@ Scale control panel:
 -   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
     group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
 -   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
-    policy](https://www.rackspace.com/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Crating Scaling Policies")
+    policy](http://rackspace.com/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Creating Scaling Policies")
 
 
 

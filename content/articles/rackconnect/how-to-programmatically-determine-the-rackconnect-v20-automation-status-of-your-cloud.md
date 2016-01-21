@@ -4,13 +4,13 @@ title: How to programmatically determine the RackConnect v2.0 Automation Status 
 type: article
 created_date: '2012-10-02'
 created_by: Juan Perez
-last_modified_date: '2016-01-05'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
 
-**APPLIES TO**: RackConnect v2.0
+**Applies to**: RackConnect v2.0
 
 Programmatically querying the RackConnect Automation status of your
 Cloud Servers can help you determine when a new Cloud Server build has
@@ -19,8 +19,7 @@ with RackConnect. RackConnect Automation status and enabled features can
 be determined programmatically using the RackConnect API or the Cloud
 Servers API.
 
-Utilizing the RackConnect API
------------------------------
+### Using the RackConnect API
 
 The RackConnect API can be used to query RackConnect Automation status
 from any of your Cloud Servers. It also allows you to query the
@@ -28,12 +27,9 @@ RackConnect Gateway IP, Automation Status, Automation Status Details,
 and the Automation Features. If you would like to utilize the
 RackConnect API, please view the following article for further
 details: [The RackConnect
-API](/how-to/the-rackconnect-v20-api)
+API](/how-to/the-rackconnect-v20-api).
 
-** **
-
-Utilizing the Next Generation Cloud Servers API to query your Cloud Servers' MetaData
--------------------------------------------------------------------------------------
+### Using the Next Generation Cloud Servers API to query your Cloud Servers' MetaData
 
 You may also use the Cloud Servers API to query the RackConnect
 Automation Status of your Cloud Servers. The benefits of using this
@@ -61,11 +57,11 @@ RackConnect:
     "rackconnect_automation_status": "DEPLOYED"
     },
 
-**NOTE:** The "UNPROCESSABLE" status normally occurs when you build a
+**Note**: The "UNPROCESSABLE" status normally occurs when you build a
 cloud server in a region that does not match your RackConnect
 Configuration region.
 
-### Obtaining the metadata information via the next-generation Cloud Servers API (Examples)
+#### Obtaining the metadata information via the next-generation Cloud Servers API (Examples)
 
 **Authenticate and obtain an Auth Token:**
 
@@ -99,7 +95,8 @@ fields.
 
     curl -s https://ord.servers.api.rackspacecloud.com/v2/<Cloud Account Number>/servers/<Server ID> -H "X-Auth-Token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx" | python -m json.tool
 
-*Note: Do not include the &lt; &gt; brackets when entering your values.*
+**Note**: Do not include the &lt; &gt; brackets when entering your
+values.
 
 This is just a brief introduction to get you started on using the Cloud
 Servers API to query the RackConnect statuses of your Cloud Servers; if
@@ -110,12 +107,7 @@ the following articles:
 
 <http://docs.rackspace.com/servers/api/v2/cs-gettingstarted/content/curl_summary.html>
 
-
--
-
-
-Utilizing the First Generation Cloud Servers API to query your Cloud Servers' MetaData
---------------------------------------------------------------------------------------
+### Using the First Generation Cloud Servers API to query your Cloud Servers' MetaData
 
 You may also use the First Generation Cloud Servers API to query the
 RackConnect Automation Status of First Generation Cloud Servers. The
@@ -139,8 +131,7 @@ RackConnect:
 
     "metadata":{"rackconnect_automation_feature_configure_network_stack":"ENABLED","rackconnect_automation_status":"DEPLOYED","rackconnect_automation_feature_provison_public_ip":"ENABLED","rackconnect_automation_feature_manage_software_firewall":"ENABLED"
 
-###
-Obtaining the metadata information via the First Generation Cloud Servers API (Examples)
+#### Obtaining the metadata information via the First Generation Cloud Servers API (Examples)
 
 **Authenticate and obtain an X-Auth-Token:**
 
@@ -175,8 +166,8 @@ XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX, &lt;Cloud Account Number&gt;, and
 
     curl -k -X GET -D - -H "X-Auth-Token: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" https://servers.api.rackspacecloud.com/v1.0/<Cloud Account Number>/servers/<Server ID>
 
-*Note: Do not include the &lt; &gt; brackets when entering your Cloud
-Account's values.*
+**Note**: Do not include the &lt; &gt; brackets when entering your Cloud
+Account's values.
 
 This is just a brief introduction to get you started on using the First
 Generation Cloud Servers API to query the RackConnect statuses of your
@@ -187,10 +178,7 @@ API, please view the following articles:
 
 <http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/API_Operations-d1e1720.html>
 
-
-
-Determining when the Managed Operations Post-Build Automation Process is Complete
----------------------------------------------------------------------------------
+### Determining when the Managed Operations Post-Build Automation Process is Complete
 
 As part of an effort to improve your experience with RackConnect, we
 made an automation change that affects RackConnect customers with the

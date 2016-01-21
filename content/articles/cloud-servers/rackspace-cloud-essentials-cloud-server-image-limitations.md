@@ -13,7 +13,7 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 In the preceding article in this series you learned how to [restore
 servers from an

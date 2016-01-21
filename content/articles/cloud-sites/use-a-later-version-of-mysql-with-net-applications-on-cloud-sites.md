@@ -4,7 +4,7 @@ title: Use a later version of MySQL with .NET applications on Cloud Sites
 type: article
 created_date: '2014-05-07'
 created_by: Matt Costello
-last_modified_date: '2014-06-23'
+last_modified_date: '2016-01-21'
 last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
@@ -16,18 +16,14 @@ application requires a later version of MySQL, you can perform what's
 called a *bin deploy*, bundling a later version of the MySQL DLL into
 your .NET application.
 
-This article describes two approaches to bin deploying a later version
-of MySQL:
+This article describes the two approaches to bin deploying a later
+version of MySQL.
 
--   [Perform a bin deploy with NuGet and Visual Studio
-    2013](#visualstudio)
--   [Perform a bin deploy with an MSI from MySQL](#msi)
+<span style="line-height: 1.6;">MySQL versions 6.4.6 (MySQL) and 6.4.4
+(MySQL NuGet) are known to work in Cloud Sites and are medium trust
+compliant.</span>
 
-MySQL versions 6.4.6 (MySQL) and 6.4.4 (MySQL NuGet) are known to work
-in Cloud Sites and are medium trust compliant.
-
-[Perform a bin deploy with NuGet and Visual Studio 2013]()
-----------------------------------------------------------
+### [Perform a bin deploy with NuGet and Visual Studio 2013]()
 
 1.  Open Visual Studio and your .NET application.
 
@@ -52,8 +48,7 @@ in Cloud Sites and are medium trust compliant.
 
 5.  Publish your application and upload it to Cloud Sites.
 
-[Perform a bin deploy with an MSI package from MySQL]()
--------------------------------------------------------
+### [Perform a bin deploy with an MSI package from MySQL]()
 
 We recommend running an MSI installation on a development machine to
 avoid installing extra software on a production machine.

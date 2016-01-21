@@ -4,8 +4,8 @@ title: Create a cron job to back up a Cloud Sites SQL Server database
 type: article
 created_date: '2011-03-16'
 created_by: Matt Costello
-last_modified_date: '2015-03-30'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -18,19 +18,12 @@ selecting **Cloud Sites**.
 
 Microsoft SQL Server has a built-in backup feature that you can run as a
 query or a stored procedure. You can configure the output file to write
-to an FTP folder. This tutorial explains how to accomplish this task by
-performing the following steps:
-
-1.  [Create the folder where backups will be deposited](#createfolder)
-2.  [Create a backup stored procedure in SQL Server](#createsp)
-3.  [Create the web page that runs the stored procedure](#createpage)
-4.  [Schedule the task to run every day](#createcron)
+to an FTP folder. This tutorial explains how to accomplish this task.
 
 **Note:** The scripts in this tutorial were created by one of our forum
 users. If you need further assistance, contact your developer.
 
-Create the folder
------------------
+### Create the folder
 
 First, you need to create a folder to store the backup in your FTP
 application.
@@ -52,8 +45,7 @@ application.
 **IMPORTANT:** For this specific example to work, the permissions on the
 **/www.domain.com** and **/web** folders must be set to **751**.
 
-Create the stored procedure
----------------------------
+### Create the stored procedure
 
 You will also need to create a stored procedure that performs the backup
 with an input parameter for the file name.
@@ -77,8 +69,7 @@ example, the stored procedure is named `FullBackup`.
 
     END
 
-Create the web page
--------------------
+### Create the web page
 
 Next, you create a web page that has code to execute the stored
 procedure. You can use any language we support on Windows, such as ASP
@@ -154,8 +145,7 @@ path and SQL connection string. The contents of the file are as follows:
     </body>
     </html>
 
-Schedule the cron job
----------------------
+### Schedule the cron job
 
 Schedule a cron job to call the web page.
 

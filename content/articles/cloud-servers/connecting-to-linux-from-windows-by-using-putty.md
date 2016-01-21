@@ -13,10 +13,10 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 After you have [created a new cloud
-server](/how-to/cloud-servers)
+server](/how-to/create-a-cloud-server)
 with the control panel, your next step is to make a secure remote
 connection from your local computer to your cloud server.  This article
 describes how to use a client called PuTTY to form an Secure Shell (SSH)

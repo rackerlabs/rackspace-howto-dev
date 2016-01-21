@@ -4,26 +4,14 @@ title: Cloud Load Balancers ORD region migration FAQ
 type: article
 created_date: '2015-08-18'
 created_by: Jorge Miramontes
-last_modified_date: '2015-12-22'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
 This article provides answers to frequently asked questions about the
 Cloud Load Balancers migration in the ORD region.
-
-
-
-### Contents
-
--   [Why is there a migration?](#why)
--   [How will the migration work?](#how)
--   [What will be the expected impact to my load balancer?](#imp)
--   [What options are available to avoid disruption due to the
-    migration?](#work)
--   [Do I need to make any update to my configurations?](#firewall)
--   [Can I self-migrate my load balancer?](#self)
 
 
 

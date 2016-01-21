@@ -13,7 +13,7 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 
 
@@ -53,5 +53,5 @@ Balancer](/how-to/configure-a-load-balancer)
 Page](/how-to/managing-your-server)
 
 [Back to the First 48
-Guide](/how-to/cloud-servers)
+Guide](/how-to/cloud-servers-0)
 

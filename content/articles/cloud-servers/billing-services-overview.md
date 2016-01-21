@@ -12,7 +12,7 @@ product_url: cloud-servers
 
 ## Previous section
 
-[Getting Started with Cloud Servers](/how-to/cloud-servers)
+[Getting Started with Cloud Servers](/how-to/create-a-cloud-server)
 
 <p>&nbsp;</p>
 This article provides an overview of the billing resources available to you through the Rackspace website and the Cloud Control Panel. The resources described in this article can help you manage and track the billing for your account.

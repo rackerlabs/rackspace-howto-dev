@@ -4,14 +4,14 @@ title: Alarm Language - Generic Thresholds Made Easy
 type: article
 created_date: '2012-08-10'
 created_by: Daniel Dispaltro
-last_modified_date: '2014-05-15'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Constanze Kratel
 product: Cloud Monitoring
 product_url: cloud-monitoring
 ---
 
 It is not necessary to edit config files on a Nagios server. Rackspace
-Cloud Monitoring lets you:
+Monitoring lets you:
 
 -   Set thresholds with an easy to use alarm language:
 
@@ -57,23 +57,22 @@ respectively.*
 
 ------------------------------------------------------------------------
 
-Key Takeaways
--------------
+### Key Takeaways
 
 -   Don't run a DIY nagios server.
--   Start monitoring faster and spend less sysadmin time on making sure
-    that server stays up.
--   Reduce false alerts on network hiccups.
--   Monitor your website from up to [5
-    different locations.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
-    Set the policy you&rsquo;d like to execute on mixed results.
--   Send an alert to different [notification addresses depending on
-    severity](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html).
--   Supports dual stacks, both IPv4 and IPv6.
 -   Our [flexible alerting
     language](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html)
     puts you in control, don&rsquo;t bother with an awkward JSON API for
     defining thresholds.
+-   Supports dual stacks, both IPv4 and IPv6.
+-   Send an alert to different [notification addresses depending on
+    severity](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notification-plans.html).
+-   Monitor your website from up to [5
+    different locations.](http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-monitoring-zones.html)
+    Set the policy you&rsquo;d like to execute on mixed results.
+-   Reduce false alerts on network hiccups.
+-   Start monitoring faster and spend less sysadmin time on making sure
+    that server stays up.
 
 
 

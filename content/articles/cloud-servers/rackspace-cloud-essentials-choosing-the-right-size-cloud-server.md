@@ -22,7 +22,7 @@ This article shows some of the standard tools for viewing your server's performa
 
 #### Considerations
 
-One thing to consider is that Rackspace Cloud Servers are virtual partitions of larger physical machines that allocate resources based on a process called CPU scheduling.  They do not perform exactly like a dedicated machine with similar resources. You can find out more details about CPU scheduling by reading the Performance section of our [Cloud Servers FAQ](https://admin.rackspace.com/knowledge_center/product-faq/cloud-servers).
+One thing to consider is that Rackspace Cloud Servers are virtual partitions of larger physical machines that allocate resources based on a process called CPU scheduling.  They do not perform exactly like a dedicated machine with similar resources. You can find out more details about CPU scheduling by reading the Performance section of our [Cloud Servers FAQ](/how-to/cloud-servers-faq).
 
 OnMetal Cloud Servers ( [product page](http://www.rackspace.com/cloud/servers/onmetal)) are also available. OnMetal servers are single-tenant, bare metal servers provisioned via the same OpenStack API as our cloud server. They can be created or deleted as quickly as VMs to offer the agility of multi-tenant environments with the performance of single-tenant hardware.
 

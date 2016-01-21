@@ -12,7 +12,7 @@ product_url: rackconnect
 
 **Applies to:** RackConnect v2.0. For questions on RackConnect v3.0, see
 [RackConnect 3.0 -
-FAQ](/how-to/rackconnect-v30-faq).
+FAQ](/how-to/rackconnect-faq).
 
 ### Getting Started
 
@@ -189,7 +189,7 @@ into the cloud environment.
 #### Where can I find answers to questions about RackConnect v3.0?
 
 See the [RackConnect v3.0
-FAQ](/how-to/rackconnect-v30-faq),
+FAQ](/how-to/rackconnect-faq),
 for question and answer items specific to this new version.
 
 #### Does RackConnect enhance my ability to connect to my Cloud Files?

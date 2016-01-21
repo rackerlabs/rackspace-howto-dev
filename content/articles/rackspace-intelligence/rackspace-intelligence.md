@@ -4,21 +4,15 @@ title: Rackspace Intelligence
 type: article
 created_date: '2015-06-09'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-20'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
-Which of the Rackspace Intelligence services would you like to use?
 
--   [Rackspace Intelligence for cloud
-    accounts](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud)
--   [Rackspace Intelligence for dedicated
-    accounts](/how-to/getting-started-with-rackspace-intelligence-for-dedicated-accounts)
 
-Differences between Rackspace Intelligence for cloud accounts and dedicated accounts
-------------------------------------------------------------------------------------
+### Differences between Rackspace Intelligence for cloud accounts and dedicated accounts
 
 Rackspace Intelligence for dedicated accounts differs from Rackspace
 Intelligence for Rackspace Cloud accounts in the way that several

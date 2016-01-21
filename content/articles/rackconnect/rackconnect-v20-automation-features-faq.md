@@ -4,17 +4,17 @@ title: RackConnect v2.0 Automation Features FAQ
 type: article
 created_date: '2012-11-29'
 created_by: Juan Perez
-last_modified_date: '2016-01-06'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
 
-****APPLIES TO****: RackConnect v2.0
+****Applies to****: RackConnect v2.0
 
-**What are RackConnect Automation Features?**
+#### What are RackConnect Automation Features?
 
-The RackConnect Automation Features are three (3) [Automation
+The RackConnect Automation Features are three [Automation
 Features](/how-to/rackconnect)that
 were not initially available to customers that upgraded from RackConnect
 1.0, but that have always been enabled for customers who started off as
@@ -39,8 +39,7 @@ for all new cloud servers you build in the future and the pre-existing
 cloud server settings will be used if you perform a rebuild or make
 other changes to your cloud server.
 
-**What are the pre-requisites for enabling the Automation Features on my
-cloud account associated with RackConnect?**
+#### What are the pre-requisites for enabling the Automation Features on my cloud account associated with RackConnect?
 
 1.  You must have completed the RackConnect 1.0 upgrade process to
     RackConnect 2.0, since the RackConnect Automation Features are not
@@ -49,13 +48,12 @@ cloud account associated with RackConnect?**
     Network Device meets the requirements for enabling the Automation
     Features, such as the RAM, version, and configuration requirements.
 
-*Note: Enabling the Automation Features, assuming you meet the
+**Note**: Enabling the Automation Features, assuming you meet the
 requirements, should not require any downtime.  Your Rackspace Support
 Team will inform you if a maintenance needs to take place, if they find
-that your Network Device does not meet the requirements.*
+that your Network Device does not meet the requirements.
 
-**Are there any additional costs for enabling the RackConnect Automation
-Features?**
+#### Are there any additional costs for enabling the RackConnect Automation Features?
 
 No, as with all RackConnect versions, RackConnect is a free service
 available to all Rackspace customers that meet the Network Device
@@ -64,7 +62,7 @@ charges associated with the cost of your Dedicated and Cloud
 environements, but there are no costs for the RackConnect service
 itself.
 
-**At what level are Automation Features set?**
+#### At what level are Automation Features set?
 
 Automation Features are set at the individual cloud account level.  If
 you have multiple cloud accounts associated with your RackConnect
@@ -76,13 +74,12 @@ created.  Essentially, what happens is that when cloud servers are
 created they inherit the Automation Features settings set at the cloud
 account level.
 
-**Can I modify a single feature from within the Automation Features
-set?**
+#### Can I modify a single feature from within the Automation Features set?
 
 No, it is only possible to enable or disable all (3) Automation Features
 together.
 
-**When and how can I opt-in to the Automation Features?**
+#### When and how can I opt-in to the Automation Features?
 
 These features are currently available to customers upgraded from
 RackConnect 1.0 on an opt-in basis.  You may  request these features by
@@ -102,27 +99,23 @@ opt-in process:
 5.  They will then enable the RackConnect Automation Features and let
     you know when the process is complete
 
-**Why don't all RackConnect 2.0 customers have their Automation Features
-enabled by default?**
+#### Why don't all RackConnect 2.0 customers have their Automation Features enabled by default?
 
 The reason that these features were not initially available to customers
 upgraded from RackConnect 1.0 is because of their potential to disrupt
 functionality that many RackConnect 1.0 users have taken advantage of.
 
-**How will enabling/disabling the Automation Features affect new cloud
-server builds?**
+#### How will enabling/disabling the Automation Features affect new cloud server builds?
 
 New cloud server builds will inherit the cloud account's Automation
 Features settings at the instant they are created.
 
-**How will enabling/disabling the Automation Features affect cloud
-server rebuilds?**
+#### How will enabling/disabling the Automation Features affect cloud server rebuilds?
 
 When cloud servers are rebuilt, they will use the Automation Features
 settings that are set at the cloud server level.
 
-**Can I change the Automation Features set at the individual cloud
-server level?**
+#### Can I change the Automation Features set at the individual cloud server level?
 
 No, it is not possible to directly change the Automation Features
 settings for existing cloud servers.  If the Automation Features set at
@@ -137,35 +130,38 @@ the only way to accomplish this:
 The new cloud server, upon creation, will inherit the Automation
 Features settings set at the cloud account level.
 
-**Where can I check what the current Automation Features settings are
-for my cloud account(s)?**
+#### Where can I check what the current Automation Features settings are for my cloud accounts?
 
-1.  Login to your account in the
-    [my.rackspace.com](https://my.rackspace.com/) portal
-2.  Select "Network" -&gt; "RackConnect" to enter the RackConnect
-    Management Interface:
+1.  Log in to your account in the
+    [my.rackspace.com](https://my.rackspace.com/) portal.
+2.  Select **Network &gt; RackConnect** to enter the RackConnect
+    Management Interface.
+
     <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.RC_.Management.Interface.Navigation.png" class="image-full_width" width="700" height="239" />
+
 3.  Select your RackConnect Configuration from the left-hand pane, then
     select your cloud account.  The cloud account's overview page will
-    list your current Automation Features settings:
+    list your current Automation Features settings.
+
     <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.MyRack.Automation.Features.status.png" class="image-full_width" width="700" height="487" />
 
-**Where can I check what the current Automation Features settings are
-for my cloud server(s)?**
+#### Where can I check what the current Automation Features settings are for my cloud servers?
 
-1.  Login to your account in the
-    [my.rackspace.com](https://my.rackspace.com/) portal
-2.  Select "Network" -&gt; "RackConnect" to enter the RackConnect
-    Management Interface:
+1.  Log in to your account in the
+    [my.rackspace.com](https://my.rackspace.com/) portal.
+2.  Select **Network &gt; RackConnect** to enter the RackConnect
+    Management Interface.
+
     <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.RC_.Management.Interface.Navigation.png" class="image-full_width" width="700" height="239" />
-3.  Select your RackConnect Configuration from the left-hand pane -&gt;
-    select your cloud account -&gt; select one of your cloud servers.
-    The cloud server's overview page will list your current Automation
-    Features settings:
+
+3.  Select your RackConnect Configuration from the left-hand pane,
+    then select your cloud account, and then select one of your
+    cloud servers. The cloud server's overview page will list your
+    current Automation Features settings.
+
     <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/New.MyRack.CS_.Automation.Features.status.png" class="image-full_width" width="700" height="566" />
 
-**How will enabling the Automation Features affect my pre-existing cloud
-servers?**
+#### How will enabling the Automation Features affect my pre-existing cloud servers?
 
 Once Automation Features are enabled on your cloud account, the features
 will only apply to new cloud servers created after the features were
@@ -179,9 +175,7 @@ caveats around how Network Policies work in environments with
 pre-existing cloud servers, so please review the FAQ entries in this
 article regarding how Network Policies work.
 
-**In an environment where the Automation Features settings at the cloud
-account level do not match those set at the cloud server level, how do
-Network Policies work?**
+#### In an environment where the Automation Features settings at the cloud account level do not match those set at the cloud server level, how do Network Policies work?
 
 When there is a mismatch between Automation Features settings at the
 cloud account and cloud server levels, it is possible to create Network
@@ -212,8 +206,7 @@ server level, since having different Automation Features settings
 between the cloud account and cloud server levels may lead to unexpected
 results when creating Network Policies.
 
-**What Network Policies are available if Automation Features are
-disabled at the cloud account level?**
+#### What Network Policies are available if Automation Features are disabled at the cloud account level?
 
 When all Automation Features are disabled at the cloud account level,
 you are only able to create the following types of Network Policies:
@@ -221,7 +214,7 @@ you are only able to create the following types of Network Policies:
 -   Cloud Server(s) to Dedicated
 -   Cloud Server(s) to Internet
 
-**IMPORTANT: Even when Automation Features are disabled at the cloud
+**Important:** Even when Automation Features are disabled at the cloud
 account level, if Automation Features for pre-existing cloud servers are
 enabled at the cloud server level, you will still be able to see all (5)
 Network Policy options, but only the 2 types of Network Policies listed
@@ -229,12 +222,9 @@ above will be valid for all of your cloud servers.  If you create
 invalid Network Polices, they will look like they deployed correctly,
 but they will not actually work as expected.  We are working on adding
 some warnings to the my.rackspace.com portal when you attempt to create
-Network Policies that are not actually valid, as in the above
-scenario.**
+Network Policies that are not actually valid, as in the above scenario.
 
-
-**What Network Policies are available if Automation Features are enabled
-at the cloud account level?**
+#### What Network Policies are available if Automation Features are enabled at the cloud account level?
 
 When all Automation Features are enabled at the cloud account level, you
 will be able to create all of the available Network Policies:
@@ -245,7 +235,7 @@ will be able to create all of the available Network Policies:
 -   Dedicated to Cloud Server(s)
 -   Internet to Cloud Server(s)
 
-**IMPORTANT: Even when Automation Features are enabled at the cloud
+**Important:** Even when Automation Features are enabled at the cloud
 account level, if Automation Features for pre-existing cloud servers are
 disabled at the cloud server level, you will still see all (5) Network
 Policy options as being available for those pre-existing cloud servers,
@@ -255,12 +245,9 @@ servers.  If you create invalid Network Polices for these pre-existing
 cloud servers, they will look like they deployed correctly, but they
 will not actually work as expected.  We are working on adding some
 warnings to the my.rackspace.com portal when you attempt to create
-Network Policies that are not actually valid, as in the above
-scenario.**
+Network Policies that are not actually valid, as in the above scenario.
 
-
-**Can I disable Automation Features on my cloud account associated with
-RackConnect?**
+#### Can I disable Automation Features on my cloud account associated with RackConnect?
 
 Yes, we have the ability to disable your Automation Features.  While
 this would greatly limit the features you would have with RackConnect,
@@ -269,15 +256,15 @@ preferred.  Please submit a request to your Rackspace Support Team, if
 you would like to disable the Automation Features on any of your cloud
 accounts.
 
-*Note: If Automation Features are disabled on your cloud account, you
+**Note**: If Automation Features are disabled on your cloud account, you
 would need to manually configure the network stack on your new cloud
 servers, as described in the [RackConnect 1.0 Post-Upgrade
 FAQ](/how-to/rackconnect-10-post-upgrade-faq)article.
 You may also need to clean up any pre-existing Network Policies that are
 no longer valid in an environment where Automation Features are
-disabled.*
+disabled.
 
-**What are periodic software firewall updates?**
+#### What are periodic software firewall updates?
 
 As part of the automation feature  'manage software firewall', the
 RackConnect system will periodically connect to your cloud servers to

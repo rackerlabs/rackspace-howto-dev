@@ -31,5 +31,5 @@ Application and Managing
 Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts)
 
 [Back to Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 

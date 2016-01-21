@@ -11,7 +11,7 @@ product_url: cloud-servers
 ---
 
 ## Previous section
-[Getting Started with Cloud Servers](/how-to/cloud-servers)
+[Getting Started with Cloud Servers](/how-to/create-a-cloud-server)
 
 As the administrator for your cloud servers, you might need to occasionally log in to one of your servers by using the Console feature in the Cloud Control Panel.
 

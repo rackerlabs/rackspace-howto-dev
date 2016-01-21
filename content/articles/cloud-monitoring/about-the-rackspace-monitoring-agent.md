@@ -4,8 +4,8 @@ title: About the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-06'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Constanze Kratel
 product: Cloud Monitoring
 product_url: cloud-monitoring
 ---
@@ -30,8 +30,7 @@ system information:
 
 -
 
-Using the Monitoring Agent
---------------------------
+### Using the Monitoring Agent
 
 The first step to using the Monitoring Agent is to install it on your
 Cloud Server. If you are a Rackspace Managed Cloud customer the agent is
@@ -48,8 +47,7 @@ Guide***](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-gui
 
 -
 
-Live Host Statistics in the Cloud Control Panel
------------------------------------------------
+### Live Host Statistics in the Cloud Control Panel
 
 You can view the host statistics of a Cloud Server provided by the agent
 on the Server Details page of the Cloud Control Panel:

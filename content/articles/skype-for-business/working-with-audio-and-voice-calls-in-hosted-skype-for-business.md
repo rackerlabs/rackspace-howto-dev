@@ -4,8 +4,8 @@ title: Working with audio and voice calls in Hosted Skype for Business
 type: article
 created_date: '2014-10-20'
 created_by: Aaron Medrano
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Kyle Laffoon
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
@@ -17,8 +17,7 @@ answer audio calls through the application.
 -   [Make an audio call](#2)
 -   [Answer an audio call](#3)
 
-Set up your audio device
-----------------------------
+### Set up your audio device
 
 Before you use Skype for Business to make or join an audio call, set up
 your audio device and check the quality. You can use your computer&rsquo;s
@@ -45,8 +44,7 @@ microphone and speakers, or you can use a headset or earphones.
 
 
 
-Make an audio call
---------------------------
+### Make an audio call
 
 In your contact list, hover your mouse pointer over the picture of the
 person you want to call, and then click the **Phone** icon.<span
@@ -54,8 +52,7 @@ id="cke_bm_432E"> </span>
 
 ![](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/audio1a.jpg)
 
-Answer an audio call
-----------------------------
+### Answer an audio call
 
 When someone calls you, a notification appears on your screen.
 

@@ -22,8 +22,7 @@ article posted in the Rackspace Support forum.
 
 
 
-<span class="mw-headline">Getting Started</span>
-------------------------------------------------
+### <span class="mw-headline">Getting Started</span>
 
 In order to update or renew your SSL Certificate, you will need your
 CSR. If you don't have your CSR saved, please contact support to have a
@@ -31,8 +30,7 @@ new one generated. You can contact our Fanatical Support through a
 ticket, live chat or via phone and we can assist you with obtaining this
 information.
 
-Renewing Your Certificate
------------------------------
+### Renewing Your Certificate
 
 Next, you will need to update/renew your SSL Certificate. SSL
 Certificates are available from a number of third party sources. Some
@@ -55,8 +53,7 @@ Once you have completed your certificate renewal, you're ready to
 
 
 
-<span class="mw-headline">Installing the Certificate</span>
------------------------------------------------------------
+### <span class="mw-headline">Installing the Certificate</span>
 
 <span class="mw-headline">In order to install your new SSL certificate,
 you will need the following information:</span>
@@ -78,8 +75,7 @@ information with your updated info and hit save.
 
 
 
-<span class="mw-headline">DNS Update</span>
--------------------------------------------
+### <span class="mw-headline">DNS Update</span>
 
 Because you are updating an existing SSL certificate, you will not need
 to wait for propagation as you would when installing a new SSL
@@ -87,8 +83,7 @@ Certificate.
 
 
 
-<span class="mw-headline">What To Watch For</span>
---------------------------------------------------
+### <span class="mw-headline">What To Watch For</span>
 
 -   Rackspace Cloud Sites does not support wildcard certificates - such
     as **\*.domain.com** or **\*.example.com**. - or

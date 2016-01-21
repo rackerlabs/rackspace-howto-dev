@@ -4,8 +4,8 @@ title: Email migration services
 type: article
 created_date: '2013-07-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-22'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Kyle Laffoon
 product: Rackspace Email
 product_url: rackspace-email
 ---

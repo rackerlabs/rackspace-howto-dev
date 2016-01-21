@@ -16,8 +16,7 @@ can be used to track down the source of the compromise. Please follow
 the following suggestions for responding to a site compromise
 incident.
 
-<span class="mw-headline">Step One: Secure your workstation </span>
--------------------------------------------------------------------
+### <span class="mw-headline">Step One: Secure your workstation </span>
 
 Most site compromises result from the harvesting of valid login
 credentials (FTP/SFTP, or web site CMS logins) from the workstation used
@@ -50,8 +49,7 @@ passwords and compromise your site again.
 
 
 
-<span class="mw-headline">Step Two: Change all passwords </span>
-----------------------------------------------------------------
+### <span class="mw-headline">Step Two: Change all passwords </span>
 
 Assume all passwords have been compromised related to the hack. If any
 of your scripts contained passwords for databases and such, assume those
@@ -111,8 +109,7 @@ combination.
 
 
 
-<span class="mw-headline">Step Three: Back up the compromised data</span>
--------------------------------------------------------------------------
+### <span class="mw-headline">Step Three: Back up the compromised data</span>
 
 Before you modify any of the compromised data you should create a backup
 to preserve as much information as possible.
@@ -167,8 +164,7 @@ that could have been used to identify the criminal.
 
 
 
-<span class="mw-headline">Step Four: Identify what has been compromised </span>
--------------------------------------------------------------------------------
+### <span class="mw-headline">Step Four: Identify what has been compromised </span>
 
 There are many ways to identify a compromised. The easiest to detect is
 blatant defacement of the site, such as a message that reads *U R
@@ -444,8 +440,7 @@ track down and identify the source of the malicious content.
 
 
 
-<span class="mw-headline">Step Five: Find the vulnerability </span>
--------------------------------------------------------------------
+### <span class="mw-headline">Step Five: Find the vulnerability </span>
 
 Up until this point, all we have been doing is identifying the results
 of the vulnerability. The next step is to plug the hole so that it does
@@ -589,8 +584,7 @@ precautions in these situations to protect sensitive data.
 
 
 
-<span class="mw-headline">Step Six: Clean Up </span>
-----------------------------------------------------
+### <span class="mw-headline">Step Six: Clean Up </span>
 
 Now that you have identified the compromised content, and plugged the
 vulnerability, you can proceed with [restoring the original
@@ -602,8 +596,7 @@ content.
 
 
 
-<span class="mw-headline">Step Seven: Preventative/Counter Measures </span>
----------------------------------------------------------------------------
+### <span class="mw-headline">Step Seven: Preventative/Counter Measures </span>
 
 Here is where we will discuss some tips to help improve security and
 awareness.

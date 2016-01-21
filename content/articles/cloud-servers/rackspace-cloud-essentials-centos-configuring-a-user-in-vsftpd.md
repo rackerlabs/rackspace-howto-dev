@@ -18,7 +18,7 @@ chrooting (jail - isolation to their home directory) them if necessary.
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 
 
@@ -85,7 +85,7 @@ basic tweaks to their access level.
 
 Return to the Cloud Servers Getting Started Guide and chose the
 applicable option for [DNS & Domain
-Management](/how-to/cloud-servers#dnsDomainMGMT).
+Management](/how-to/create-a-cloud-server#dnsDomainMGMT).
 
 
 

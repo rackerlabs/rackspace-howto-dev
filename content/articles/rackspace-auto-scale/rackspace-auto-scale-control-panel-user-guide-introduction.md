@@ -4,8 +4,8 @@ title: Rackspace Auto Scale Control Panel User Guide - Introduction
 type: article
 created_date: '2013-11-18'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -14,11 +14,7 @@ Welcome to Rackspace Auto Scale, the easy way to scale your cloud
 resources up or down in response to an increase or decrease in overall
 workload and based on your defined thresholds.
 
--   [What you will learn in this guide](#Whatyouwilllearn)
--   [What you can do with Rackspace Auto Scale](#Whatyoucando)
--   [Prerequisites](#prereqs)
-
-#### What you will learn in this guide
+#### <span>What you will learn in this guide</span>
 
 After reading this guide you will understand the following information:
 

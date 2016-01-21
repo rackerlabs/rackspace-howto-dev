@@ -4,8 +4,8 @@ title: Rackspace Cloud Sites Essentials - PHPmyAdmin Database Management Interfa
 type: article
 created_date: '2011-03-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-28'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -20,8 +20,6 @@ Panel](https://manage.rackspacecloud.com/).
 
 [Getting Started with Cloud
 Sites](/how-to/cloud-sites)
-
-
 
 <div>
 
@@ -175,5 +173,5 @@ new ticket.
 ### Next section
 
 [MSSQL
-databases](/how-to/rackspace-cloud-sites-essentials-mssql-databases)
+databases](//www.rackspace.com/knowledge_center/article/rackspace-cloud-sites-essentials-mssql-databases)
 

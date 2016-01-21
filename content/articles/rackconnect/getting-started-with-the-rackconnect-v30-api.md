@@ -63,7 +63,7 @@ obtain your authentication token ID:
 
 -   Your Rackspace Cloud account user name and API key. (For information
     about how to find your API key, see [View and reset your API
-    key](/knowledge_center/node/3288).)
+    key](/how-to/view-and-reset-your-api-key).)
 -   Your Rackspace Cloud account user name and password.
 
 Insert your cloud account's values in the following requests where

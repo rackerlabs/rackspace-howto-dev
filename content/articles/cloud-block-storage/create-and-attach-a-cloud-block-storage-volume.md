@@ -4,7 +4,7 @@ title: Create and Attach a Cloud Block Storage Volume
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
+last_modified_date: '2016-01-21'
 last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -22,15 +22,9 @@ charged by the GB of storage you provision, so create volumes of the
 size you need. Volumes can be anywhere from 50 GB (SSD) or 75 GB (SATA)
 to 1 TB, and you can always create larger volumes later.
 
-In this tutorial, you will learn how to:
-
--   [Create the Volume](#create-the-volume)
--   [View Volume Details](#view-volume-details)
--   [Attach the Volume to a Server](#attach-volume-to-server)
 
 
-
-###  Create the Volume
+###  Create the volume
 
 Make sure you are logged in to the [Cloud Control
 Panel](https://mycloud.rackspace.com/).
@@ -77,6 +71,8 @@ The next step is to attach your volume, as described below.
 To detach and delete the volume, see [Detach and Delete Cloud Block
 Storage
 Volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
+
+
 
 ###  View Volume Details
 
@@ -142,7 +138,9 @@ volume. There is also a link which allows you to Create a Snapshot.
 Snapshots are described [later in this Getting Started
 Guide](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
-###  Attach the Volume to a Server
+
+
+###  Attach the volume to a server
 
 When the volume is created, it exists by itself and cannot have any data
 written to it. The volume must be attached to a server before anything
@@ -171,6 +169,8 @@ the Cloud Block Storage volume is attaching, its status bar will be
 yellow in the Block Storage Volumes list. When it is done attaching, its
 status bar will turn green and the name of the server it is attached to
 displays under the heading **Attached to**.
+
+
 
 ### Next steps
 

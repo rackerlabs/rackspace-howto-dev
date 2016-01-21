@@ -4,8 +4,8 @@ title: Rewrite URLs from ASP.NET on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -17,23 +17,7 @@ in the the **web.config** file.
 For older sites on the Cloud Sites platform, we recommend using a
 third-party solution to deploy an HttpModule to handle URL rewrites.
 
-This article provides examples of using each method.
-
--   [IIS 7 URL Rewrite Module](#The_IIS_7_URL_Rewrite_Module)
-    -   [Example 1: Rewrite ASP, ASPX, and HTML pages](#Example_231)
-    -   [Example 2: Use regular expressions](#Example_232)
-    -   [Example 3: Create a catch-all rewrite rule](#Example_233)
-    -   [Example 4: Create redirects](#Example_234)
-    -   [References](#References)
--   [Third-party solutions](#Third-party_Solutions)
-    -   [Get started](#Getting_Started)
-    -   [Use UrlRewriter.NET](#Using_UrlRewriterNET)
-    -   [Example 1: Match info to info.aspx](#Example_231_2)
-    -   [Example 2: Use regular expressions](#Example_232_2)
-    -   [References](#References_2)
-
-IIS 7 URL Rewrite Module
-------------------------
+### IIS 7 URL Rewrite Module
 
 This section provides examples of using the URL Rewrite Module to define
 rewrite rules in the **web.config** file.
@@ -153,8 +137,7 @@ Microsoft IIS site:
 -   [URL Rewrite Module Configuration
     Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
 
-Third-party solutions
----------------------
+### Third-party solutions
 
 Prior to the URL Rewrite Module, web developers had to create this
 functionality by using application code or by generating their own

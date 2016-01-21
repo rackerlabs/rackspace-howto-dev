@@ -4,15 +4,13 @@ title: Create and Use Cloud Block Storage Snapshots
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-05'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-### Previous section
-
-[Prepare Your Cloud Block Storage
+**Previous section:**[Prepare Your Cloud Block Storage
 Volume](/how-to/prepare-your-cloud-block-storage-volume)
 
 A snapshot is a copy made of your volume at a specific moment in time.
@@ -29,16 +27,12 @@ the new volume must be of equal size or larger than the original volume
 from which you made the snapshot. The new volume must be in the same
 region. It can, however, be a different type.
 
-On this page:
-
--   [Create a Snapshot](#create-a-snapshot)
--   [Create a new Volume from Snapshot](#create-vol-from-snap)
--   [Delete Snapshot](#delete-snapshot)
-
  Read [Allowing Snapshots Without Detaching the
 Volumes](/how-to/allowing-snapshots-without-detaching-the-volumes) for
 additional information on allowing snapshots without detaching the
 volumes.
+
+
 
 ### Create a Snapshot
 
@@ -106,6 +100,7 @@ From the Storage Snapshots screen:
     **Note**: If a snapshot of a volume exists, you cannot delete the
     volume until you delete the snapshot.
 
+
 ### Create Volume from Snapshot
 
 The volume you create from a snapshot must be the same size and in the
@@ -128,11 +123,14 @@ type.
 
 The larger your volume, the longer it may take to create.
 
+
+
 ### Delete Snapshot
 
 1.  From the "Block Storage Snapshots" screen, click the Action button
     (the cog) next to the snapshot.
 2.  Click the "Delete Snapshot" link.
+
 
 ### Next steps
 

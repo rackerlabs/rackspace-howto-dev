@@ -4,8 +4,8 @@ title: 'Rackspace Cloud Essentials: Tips and Tricks for .htaccess and web.config
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -20,8 +20,6 @@ Panel](https://manage.rackspacecloud.com/).
 
 [Getting Started with Cloud
 Sites](/how-to/cloud-sites)
-
-
 
 **In this article we're going to take a look at the .htaccess file** and
 the **web.config file.** We'll discuss what they are, and how they're

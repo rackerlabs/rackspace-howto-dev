@@ -1,18 +1,16 @@
 ---
 node_id: 3132
-title: Prepare Your Cloud Block Storage Volume
+title: Prepare your Cloud Block Storage volume
 type: article
 created_date: '2012-10-21'
 created_by: David Hendler
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-### Previous section
-
-[Create and Attach a Cloud Block Storage
+**Previous section:** [Create and Attach a Cloud Block Storage
 Volume](/how-to/create-and-attach-a-cloud-block-storage-volume)
 
 After you have [created and
@@ -22,14 +20,11 @@ server. To prepare your volume, you must partition, format, and mount
 it.  After you have successfully completed these steps, your volume is
 usable like a drive on your server.
 
--   [Prepare Your Volume for Use with a Linux Server](#prepare_linux)
--   [Prepare Your Volume for Use with a Windows
-    Server](#prepare_windows)
 
-Prepare Your Volume for Use with a Linux Server
----------------------------------------------------
 
-### Step 1. Use SSH to connect to your server.
+### Prepare Your Volume for Use with a Linux Server
+
+#### Step 1. Use SSH to connect to your server.
 
 When you created your server, you were given a password. You will need
 that password for this step. If you do not have the password, go to the
@@ -88,7 +83,7 @@ Example Output:
 
     Disk /dev/xvdb doesn't contain a valid partition table
 
-### Step 2. Partition the disk.
+#### Step 2. Partition the disk.
 
 Partitioning the disk tells the server how much space on the drive you
 want to use. To use all of it, we tell the server to start at the first
@@ -227,7 +222,7 @@ Example Ouput:
         Device Boot      Start         End      Blocks   Id  System
     /dev/xvdb1               1       13054   104856223+  83  Linux
 
-### Step 3. Format the volume.
+#### Step 3. Format the volume.
 
 Formatting the volume enables the server to store information on it. In
 the following example, ext3 is used. However, you can use other file
@@ -263,7 +258,7 @@ Example Output:
     This filesystem will be automatically checked every 31 mounts or
     180 days, whichever comes first.  Use tune2fs -c or -i to override.
 
-### Step 4. Mount the volume.
+#### Step 4. Mount the volume.
 
 After partitioning and formatting the volume, you must mount it on the
 server. After the volume is mounted, it is available for use.
@@ -301,7 +296,7 @@ Your drive is ready for use with your Linux server. However, you should
 consider performing the following step to ensure that your volume
 remains persistent after a server reboot.
 
-### Step 5. Make the volume permanent.
+#### Step 5. Make the volume permanent.
 
 This step is optional, but it keeps your volume attached to your server
 after restarts.
@@ -334,14 +329,15 @@ the volume to the static file system:
 
 Now the volume persists on the server after server restarts.
 
-Prepare Your Volume for Use with a Windows Server
------------------------------------------------------
+
+
+### Prepare Your Volume for Use with a Windows Server
 
 **Note**: In the examples in the procedure, a 100 GB volume is added to
 a Windows Server 2012 server. The steps are similar for all
 next-generation Windows cloud servers.
 
-### Step 1. Remotely connect to your Server.
+#### Step 1. Remotely connect to your Server.
 
 When you created your server, you were given a password. You need that
 password for this step. If you do not have the password, go to the Cloud
@@ -379,7 +375,7 @@ The Server Manager window is displayed:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20disks.png" width="608" height="259" />
 
-### Step 2. Partition and format the drive.
+#### Step 2. Partition and format the drive.
 
 For Windows servers, you partition and format the volume by using the
 New Volume Wizard. The mounting process, called "bringing it online" in
@@ -423,6 +419,8 @@ volume is displayed like a regular hard drive.
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cbs%20-%20win%20-%20confirmation.png" width="615" height="164" />
 
 Your volume is now ready for use.
+
+
 
 ### Next steps
 

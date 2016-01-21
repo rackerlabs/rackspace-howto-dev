@@ -4,8 +4,8 @@ title: Content Caching for Cloud Load Balancers
 type: article
 created_date: '2012-05-21'
 created_by: Rackspace Support
-last_modified_date: '2013-12-11'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-01-21'
+last_modified_by: Mike Asthalter
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
@@ -13,27 +13,6 @@ product_url: cloud-load-balancers
 The Cloud Load Balancers product has a Content Caching feature that
 stores recently-accessed files on the load balancer for easy retrieval
 by web clients.
-
-#### Getting started
-
--   [How do I enable content caching?](#howenable)
--   [What are the benefits of content caching?](#benefits)
--   [What kind of files work well with content caching?](#workwell)
-
-#### Caching details
-
--   [Is there a maximum file size that can be cached?](#maxsize)
--   [How long is content cached?](#ttl)
--   [Can I choose how long files will be cached?](#purge)
--   [Do nodes share a cache?](#share)
--   [Does cache carry over in a failover situation?](#failover)
-
-#### File types
-
--   [What file types are supported for content caching?](#filetypes)
--   [Can I exclude specific file types?](#nocache)
-
-------------------------------------------------------------------------
 
 ### Getting started
 

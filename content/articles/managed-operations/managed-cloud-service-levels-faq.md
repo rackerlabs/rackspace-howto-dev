@@ -4,8 +4,8 @@ title: Managed Cloud Service Levels FAQ
 type: article
 created_date: '2014-07-14'
 created_by: David Hendler
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -13,22 +13,7 @@ product_url: managed-operations
 Get quick answers to common questions about Rackspace Managed Cloud
 service levels.
 
--   [What are the Rackspace service levels?](#service_levels)
--   [What is the DevOps Automation Service?](#devops)
--   [Can new public-cloud customers choose other service levels besides
-    Managed Cloud?](#choose)
--   [What happens with customers who are on the old Infrastructure
-    service level?](#old_infra)
--   [Are we improving the support experience?](#improving)
--   [What do I get with Fanatical Support&reg;?](#pillars)
--   [Do Managed Operations customers get additional
-    services?](#add_service)
--   [What support guarantees do customers receive with Managed
-    Cloud?](#guarantees)
-
-
-
-### What are the Rackspace service levels?
+#### What are the Rackspace service levels?
 
 The Rackspace public cloud has two service levels in public cloud:
 Managed Infrastructure and Managed Operations.
@@ -39,11 +24,7 @@ Managed Infrastructure and Managed Operations.
     infrastructure, virtualization layers, operating system, database
     layer, and web server.
 
-[back to top](#top)
-
-
-
-### What is the DevOps Automation service?
+#### What is the DevOps Automation service?
 
 The DevOps Automation service provides [managed support for DevOps
 tools](http://www.rackspace.com/devops/automation-service/) that help
@@ -64,34 +45,22 @@ infrastructure in the future. Here are some cases for this service:
     the environment, and responds to alerts as they occur so that your
     team can focus on your application.
 
-[back to top](#top)
-
-
-
-### Can new public-cloud customers choose other service levels?
+#### Can new public-cloud customers choose other service levels?
 
 No, new customers can choose *only* between Managed Infrastructure or
 Managed Operations. Customers with the previous pricing model can stay
 on that model or they may choose to move to the new pricing model.
 Customers cannot return to the old model after they upgrade to Managed
-Infrastructure or Managed Operations service levesl.
+Infrastructure or Managed Operations service levels.
 
-[back to top](#top)
-
-
-
-### What happens with customers who are on the old Infrastructure service level?
+#### What happens with customers who are on the old Infrastructure service level?
 
 Customers who have the Infrastructure Service Level will be
 grandfathered into their current pricing plan and will continue to
 receive the same support as always, along with the enhancements that
 we&rsquo;re announcing.
 
-[back to top](#top)
-
-
-
-### Is Rackspace improving the support experience?
+#### Is Rackspace improving the support experience?
 
 Yes, we are always looking at ways to improve our support. We expect
 that our pricing changes will cause some new customers who don&rsquo;t value
@@ -99,13 +68,9 @@ support to choose other providers. As a result, we will be able to shift
 more resources to serve customers who do value support and are willing
 to pay for it.
 
-[back to top](#top)
+#### What do I get with Fanatical Support?
 
-
-
-### What do I get with *Fanatical Support&reg;*?
-
-There are five foundational components to Fanatical Support:
+There are five foundational components to ***Fanatical Support**&reg;*:
 
 -   **Architecture advisors**: Move beyond one-size-fits-all
     reference architectures. Let our experts tailor your workload
@@ -121,11 +86,7 @@ There are five foundational components to Fanatical Support:
 -   **24x7 access to cloud engineers**: Reach our experts when you need
     them, and when your business is depending on it.
 
-[back to top](#top)
-
-
-
-### Do Managed Operations customers get additional services?
+#### Do Managed Operations customers get additional services?
 
 Yes. Customers at the Managed Operations service level can take
 advantage of the following additional services:
@@ -136,11 +97,7 @@ advantage of the following additional services:
 -   Cloud app service management
 -   Named account manager
 
-[back to top](#top)
-
-
-
-### What support guarantees do customers receive with Managed Cloud?
+#### What support guarantees do customers receive with Managed Cloud?
 
 **Support SLA**: A service level agreement (SLA) that covers support
 circumstances within our control.
@@ -174,8 +131,5 @@ Operations.** Limited availability and subject to certain restrictions.
     event per month). For example, if the standard payout is 5 percent
     per 30 minutes, it will become 50 percent per 30 minutes up to
     200 percent.
-
-[back to top](#top)
-
 
 

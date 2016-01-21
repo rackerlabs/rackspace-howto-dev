@@ -4,8 +4,8 @@ title: Installing Gallery on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -20,24 +20,9 @@ This article will lead you through prepping your Cloud Sites domain to
 host a php based photo gallery using "Gallery", an open source and
 readily available site application.
 
-Contents
---------
-
--   [<span class="tocnumber">1</span> <span class="toctext">Getting
-    Started</span>](#Getting_Started)
--   [<span class="tocnumber">2</span> <span class="toctext">Setting up
-    the Sites</span>](#Setting_up_the_Sites)
--   [<span class="tocnumber">3</span> <span class="toctext">Prepare your
-    data</span>](#Prepare_your_data)
--   [<span class="tocnumber">4</span> <span class="toctext">Configure
-    the Site</span>](#Configure_the_Site)
--   [<span class="tocnumber">5</span> <span
-    class="toctext">Success</span>](#Success)
 
 
-
-<span class="mw-headline">Getting Started </span>
--------------------------------------------------
+### <span class="mw-headline">Getting Started </span>
 
 If you have not already done so, goto <http://gallery.menalto.com/> and
 download the latest stable release of Gallery.
@@ -52,8 +37,7 @@ Here is the link that was current at the time of this article:
 
 
 
-<span class="mw-headline">Setting up the Sites </span>
-------------------------------------------------------
+### <span class="mw-headline">Setting up the Sites </span>
 
 1.  Create your new domain from the Cloud Sites Control Panel with
     minimum requirements being PHP 4, and MySQL 4 or 5.
@@ -67,8 +51,7 @@ Here is the link that was current at the time of this article:
 
 
 
-<span class="mw-headline">Prepare your data </span>
----------------------------------------------------
+### <span class="mw-headline">Prepare your data </span>
 
 1.  Extract the content of the Gallery file you downloaded earlier to
     your local computer.
@@ -87,8 +70,7 @@ Here is the link that was current at the time of this article:
 
 
 
-<span class="mw-headline">Configure the Site</span>
----------------------------------------------------
+### <span class="mw-headline">Configure the Site</span>
 
 1.  The information needed here is provided when you created your
     Database, if did you not already write them down, you can view this
@@ -108,8 +90,7 @@ Here is the link that was current at the time of this article:
 
 
 
-<span class="mw-headline">Success </span>
------------------------------------------
+### <span class="mw-headline">Success </span>
 
 You have now successfully installed Gallery. Please keep in mind that
 this is a very much used and known PHP application, just like any well

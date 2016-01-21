@@ -13,12 +13,12 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 
 
 Once you have learned how to [Create a new Cloud
-Server](/how-to/cloud-servers),
+Server](/how-to/create-a-cloud-server),
 you may use several of our tools that allow control over your server.
 
 -   [Reboot

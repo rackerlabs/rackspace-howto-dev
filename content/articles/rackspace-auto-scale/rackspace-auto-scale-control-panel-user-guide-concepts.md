@@ -4,8 +4,8 @@ title: Rackspace Auto Scale Control Panel User Guide - Concepts
 type: article
 created_date: '2013-11-18'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -16,13 +16,7 @@ outlined what you can do with Auto Scale and what is required for its
 setup. This section discusses what Auto Scale does and the core concepts
 that drive it.
 
--   [Servers](#Servers)
--   [Scaling groups](#Scalinggroups)
--   [Cooldowns](#cooldowns)
--   [Scaling policies](#Scalingpolicies)
--   [Load Balancers](#LoadBalancers)
-
-#### Servers
+<span>Servers</span>
 
 A *server* is defined as a virtual machine (VM) instance in the
 Rackspace Cloud Servers environment. To create a server, you must
@@ -35,11 +29,7 @@ have saved server images. If you create a server by using the **Cloud
 Servers** tab in the Cloud Control Panel and save the image, the image
 automatically appears in the **Auto Scale** tab.
 
--   [Server image](#Serverimage)
--   [Server flavor](#Serverflavor)
--   [Server networks](#Servernetworks)
-
-##### Server image
+<span>Server image</span>
 
 A *server image* is a copy of a server's disk. It contains the operating
 system and all of the installed data and software on the server at the
@@ -118,16 +108,7 @@ The following graph illustrates how cooldowns affect policy execution.
 
 #### Scaling policies
 
--   -   [Scale Up by Percentage Policy](#Scaleupbypercentage)
-    -   [Scale by Schedule Policy](#Scaleupbyschedule)
-    -   [Scaling Policies Restricted by Minimum and Maximum
-        Values](#minmax)
-    -   [Delete Servers Policy](#DeleteServers)
-
-The *scaling policy* determines what kind of scaling occurs&mdash;up or
-down&mdash;and when scaling occurs. You must define separate polices for
-scaling up and scaling down. You can have multiple scaling policies per
-scaling group.
+#### <span style="line-height: 1.6;">The </span>*scaling policy*<span style="line-height: 1.6;"> determines what kind of scaling occurs&mdash;up or down&mdash;and when scaling occurs. You must define separate polices for scaling up and scaling down. You can have multiple scaling policies per scaling group.</span>
 
 For schedule-based policies, you can use a cron job to configure the
 schedule. At the specified time, Auto Scale adds servers or removes them
@@ -146,12 +127,7 @@ Developers Guide* section on
 The following diagrams illustrate some of the principles governing
 scaling policies.
 
--   [Scale up by percentage policy](#Scaleupbypercentage)
--   [Scale up by schedule policy](#Scaleupbyschedule)
--   [Scaling policies restricted by minimum and maximum values](#minmax)
--   [Delete servers policy](#DeleteServers)
-
-##### Scale up by percentage policy
+<span>Scale up by percentage policy</span>
 
 The following diagram illustrates how a percentage scale-up policy
 translates into a different amount of scaling each time that it is

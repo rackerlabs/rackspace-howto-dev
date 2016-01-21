@@ -4,14 +4,14 @@ title: Create an image of a server and restore a server from a saved image
 type: article
 created_date: '2012-07-15'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-01-21'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 ## Previous section
-[Getting Started with Cloud Servers](/how-to/cloud-servers)
+[Create a Cloud Server](/how-to/create-a-cloud-server)
 
 This article guides you through the process of creating an image of a cloud server (also known as cloning a server) and restoring a server from a saved image in the Cloud Control Panel. For information about using the Cloud Servers API to create an image from a server, see the [Create Image section in the Cloud Servers Developer Guide](http://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-image-of-specified-server).
 

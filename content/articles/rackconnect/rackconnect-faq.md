@@ -323,7 +323,7 @@ into the cloud environment.
 #### Where can I find answers to questions about RackConnect v3.0?
 
 See the [RackConnect v3.0
-FAQ](http://www.rackspace.com/knowledge_center/article/rackconnect-v30-faq),
+FAQ](/how-to/rackconnect-faq),
 for question and answer items specific to this new version.
 
 #### Does RackConnect enhance my ability to connect to my Cloud Files?
@@ -366,7 +366,7 @@ environments.
 
 **IMPORTANT**: RackConnect Network Policies are limited to Port Ranges
 of 100.  Please view the [Managing RackConnect Network
-Policies](http://www.rackspace.com/knowledge_center/article/managing-rackconnect-network-policies)
+Policies](/how-to/managing-rackconnect-v20-network-policies)
 article for further details.
 
 **Note**: Connecting Cloud Servers to the Intensive Active Directory
@@ -381,7 +381,7 @@ PAT (Port Address Translation).
 
 Please view the following article for further details on PAT: [Multiple
 SSL Certificates on a Single RackConnected Cloud Server
-(PAT)](http://www.rackspace.com/knowledge_center/article/multiple-ssl-certificates-on-a-single-rackconnected-cloud-server-pat).
+(PAT)](/how-to/multiple-ssl-certificates-on-a-single-rackconnected-cloud-server-pat).
 
 #### Can Cloud Load Balancers (CLB) be used with RackConnect?
 
@@ -401,7 +401,7 @@ server.
 
 For further details, please view the article: [Using Cloud Load
 Balancers with
-RackConnect](http://www.rackspace.com/knowledge_center/article/using-cloud-load-balancers-with-rackconnect)
+RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 
 #### Do pre-existing snapshots cause issues after an account is set up with RackConnect?
 

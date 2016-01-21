@@ -1,22 +1,22 @@
 ---
 node_id: 3394
-title: Permissions Matrix for Cloud Block Storage
+title: Permissions matrix for Cloud Block Storage
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-01-15'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
 The following permissions matrix displays specific permissions for the roles in Cloud Block Storage. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
-[**API Documentation**](http://docs.rackspace.com/)
+[**API documentation**](http://docs.rackspace.com/)
 
-[**Related Knowledge Center Articles**](/how-to/)
+[**Related Knowledge Center articles**](/how-to/)
 
-[**Cloud Block Storage Terminology**](#blockstorage)
+[**Cloud Block Storage terminology**](#blockstorage)
 
 ### As of February 7, 2013
 

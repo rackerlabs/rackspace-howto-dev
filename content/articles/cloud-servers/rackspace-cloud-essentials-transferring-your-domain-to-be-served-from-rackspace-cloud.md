@@ -13,7 +13,7 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 In the previous article you learned how to [identify the Rackspace Cloud
 Nameservers](/how-to/rackspace-cloud-essentials-what-are-your-name-servers),

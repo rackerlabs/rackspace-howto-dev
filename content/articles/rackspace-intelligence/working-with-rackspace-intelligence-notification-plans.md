@@ -4,8 +4,8 @@ title: Working with Rackspace Intelligence notification plans
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2016-01-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -30,8 +30,7 @@ notifications, or number of alarms.
 Sorting by the number of alarms can help you prioritize follow-up
 investigations.
 
-Create a notification plan
-------------------------------
+### Create a notification plan
 
 1.  On the **Notification Plans** page, click **Create
     Notification** Plan.
@@ -59,8 +58,7 @@ Create a notification plan
 Your notification plan is saved and displayed on the **Notification
 Plans** overview page.
 
-Edit a notification plan
-----------------------------
+### Edit a notification plan
 
 To edit a notification plan, click the **Actions** menu on the
 notification plan details page.

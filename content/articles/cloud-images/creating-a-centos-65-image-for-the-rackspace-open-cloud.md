@@ -10,8 +10,6 @@ product: Cloud Images
 product_url: cloud-images
 ---
 
-### Robin is kind
-
 You can use the Cloud Images service to import custom virtual machine
 disk images into the Rackspace open cloud.  In order for your images to
 be bootable as servers in the Rackspace cloud, however, they must be
@@ -92,7 +90,7 @@ own custom image for the Rackspace cloud.
     Details about the agent installations are in the &ldquo;Tips and
     Warnings&rdquo; section.
 
-        VMNAME=centostestvm1; TEMPLATENAME=CentOS6.5; NETNAME=publicnet; MIRROR="http://mirror.rackspace.com/centos/6.5/os/x86_64/"; KICKFILE="http://host.com/kickstart.cfg"; VMUUID=`xe vm-list name-label=$VMNAME params=uuid --minimal`; NETUUID=`network-list name-label=$NETNAME params=uuid --minimal`; TEMPLATEUUID=`xe template-list name-label=$TEMPLATENAME params=uuid --minimal`; TEMPLATESOURCE=`xe template-list name-label=CentOS\ 6.0\ \(64-bit\)\ \(experimental\) params=uuid --minimal`; SR=`mount |grep sr-mount |cut -d' ' -f3`; if [ "$VMUUID" != "" ]; then xe vm-uninstall uuid=$VMUUID --force; fi; if [ "$TEMPLATEUUID" != "" ]; then xe template-uninstall template-uuid=$TEMPLATEUUID --force; fi; TEMPLATEUUID=`xe vm-clone uuid="$TEMPLATESOURCE" new-name-label="$TEMPLATENAME"`; VMUUID=`xe vm-install template=$TEMPLATENAME new-name-label=$VMNAME`; VMVHD=`xe vbd-list vm-name-label=$VMNAME params=vdi-uuid --minimal`.vhd; xe vif-create vm-uuid=$VMUUID network-uuid=$NETUUID mac=random device=0; xe vm-param-set uuid=$VMUUID other-config:install-repository=$MIRROR; xe vm-param-set uuid=$VMUUID PV-args="console=hvc0 ks=$KICKFILE ksdevice=eth0 ip=dhcp noipv6"; xe vm-start uuid=$VMUUID
+        VMNAME=centostestvm1; TEMPLATENAME=CentOS6.5; NETNAME=publicnet; MIRROR="http://mirror.rackspace.com/centos/6.5/os/x86_64/"; KICKFILE="http://host.com/kickstart.cfg"; VMUUID=`xe vm-list name-label=$VMNAME params=uuid --minimal`; NETUUID=`xe network-list name-label=$NETNAME params=uuid --minimal`; TEMPLATEUUID=`xe template-list name-label=$TEMPLATENAME params=uuid --minimal`; TEMPLATESOURCE=`xe template-list name-label=CentOS\ 6.0\ \(64-bit\)\ \(experimental\) params=uuid --minimal`; SR=`mount |grep sr-mount |cut -d' ' -f3`; if [ "$VMUUID" != "" ]; then xe vm-uninstall uuid=$VMUUID --force; fi; if [ "$TEMPLATEUUID" != "" ]; then xe template-uninstall template-uuid=$TEMPLATEUUID --force; fi; TEMPLATEUUID=`xe vm-clone uuid="$TEMPLATESOURCE" new-name-label="$TEMPLATENAME"`; VMUUID=`xe vm-install template=$TEMPLATENAME new-name-label=$VMNAME`; VMVHD=`xe vbd-list vm-name-label=$VMNAME params=vdi-uuid --minimal`.vhd; xe vif-create vm-uuid=$VMUUID network-uuid=$NETUUID mac=random device=0; xe vm-param-set uuid=$VMUUID other-config:install-repository=$MIRROR; xe vm-param-set uuid=$VMUUID PV-args="console=hvc0 ks=$KICKFILE ksdevice=eth0 ip=dhcp noipv6"; xe vm-start uuid=$VMUUID
 
 2.  Shut down the VM.
 

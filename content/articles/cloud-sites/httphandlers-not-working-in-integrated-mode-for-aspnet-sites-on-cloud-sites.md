@@ -4,8 +4,8 @@ title: HttpHandlers not working in integrated mode for ASP.NET sites on Cloud Si
 type: article
 created_date: '2011-03-10'
 created_by: Rackspace Support
-last_modified_date: '2015-05-06'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -16,8 +16,7 @@ you might have noticed that your
 [HttpHandlers](http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx "http://msdn.microsoft.com/en-us/library/aa903367(VS.71).aspx")
 no longer function even though they are set in your **web.config** file.
 
-Explanation
------------
+### Explanation
 
 This behavior is expected because integrated mode changed the way that
 modules and handlers are defined in the **web.config** file, compared to
@@ -27,8 +26,7 @@ the Rackspace Cloud. If your website code was originally written for
 classic mode or using IIS 6, the **web.config** file might need to be
 updated.
 
-Solutions
----------
+### Solutions
 
 -   Peter Kellner's article, [How to use HttpHandlers such as .ashx
     files with IIS7 Integrated

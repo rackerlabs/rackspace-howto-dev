@@ -17,7 +17,7 @@ CDN.
 This article assumes that you have already completed the installation of
 your WordPress website and database. If you have not completed this,
 please read the following article: [Install and Use
-WordPress](/knowledge_center/index.php/Install_and_use_WordPress "/knowledge_center/index.php/Install_and_use_WordPress")
+WordPress](/how-to/installing-wordpress-on-cloud-sites "/how-to/installing-wordpress-on-cloud-sites")
 
 You can speed up your WordPress blog by using Cloud Files with CDN
 Technology to display content to users faster and more efficiently. You
@@ -66,7 +66,7 @@ our Cloud Panel. Go to the panel, click on your username and select
 Account Settings. Now you will find the API as demonstrated below. (For
 more information about viewing your API key, see [View and reset your
 API
-key](http://www.rackspace.com/knowledge_center/article/view-and-reset-your-api-key).)
+key](/how-to/view-and-reset-your-api-key).)
 <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/08.5.png" class="image-full_width" width="700" height="366" />
 
 
@@ -98,9 +98,9 @@ on the same region, you could get charged for the bandwidth between
 regions. If needed you can check your default region using nova:
 Install on
 Windows: [http://www.rackspace.com/knowledge\_center/article/installing-python-novaclient-on-windows
-I](http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-windows)nstall
+I](/how-to/installing-python-novaclient-on-windows)nstall
 on Linux and Mac
-OS: <http://www.rackspace.com/knowledge_center/article/installing-python-novaclient-on-linux-and-mac-os>
+OS: </how-to/installing-python-novaclient-on-linux-and-mac-os>
 
 After all this was said, here is how it will look like:
 <img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/09.png" class="image-full_width" width="700" height="368" />

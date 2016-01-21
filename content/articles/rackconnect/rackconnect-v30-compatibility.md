@@ -4,28 +4,21 @@ title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
 created_by: Juan Perez
-last_modified_date: '2016-01-15'
+last_modified_date: '2016-01-21'
 last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
 
-**Applies to:** RackConnect v3.0
+**Applies to**: RackConnect v3.0
 
-This article outlines RackConnect v3.0's compatibility with other Rackspace products and offerings. The following tables are provided:
+This article outlines RackConnect v3.0's compatibility with other Rackspace products and offerings.
 
--   [Table 1: RackConnect v3.0 compatibility with Rackspace public cloud
-    offerings](#table1)
--   [Table 2: RackConnect v3.0 compatibility with Rackspace dedicated
-    network device offerings](#table2)
--   [Table 3: RackConnect v3.0 compatibility with Rackspace dedicated
-    offerings](#table3)
+###RackConnect v3.0 compatibility with Rackspace public cloud offerings
 
-## <a name="table1"></a>Table 1: RackConnect v3.0 compatibility with Rackspace public cloud offerings
+This table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
 
-Table 1 lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
-
-**Note:** Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.
+**Note**: Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.
 
 Product | Requirements | Details | Product support
 --- | --- | --- | ---
@@ -41,9 +34,9 @@ Hadoop | Provisioned public IP address and ServiceNet | Hadoop is an open source
 Managed Operations support level | ServiceNet | Managed Operations provides support beyond Managed Infrastructure, including direct assistance with resizes, snapshots, host machine issues, adding and removing servers, and managing IP addresses. To ensure <em><strong>Fanatical Support®</strong></em>, Rackspace provides support for specific software and server configurations on Cloud Servers with Managed Operations support. | [Cloud Servers with Managed Operations support for Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux)
 ObjectRocket | ServiceNet | The ObjectRocket platform is built for scalability, speed, and safety. It provides fully managed instances of MongoDB and Redis in data centers across the globe. </br></br> RackConnect v3.0 is <strong>compatible</strong> with <strong>ObjectRocket Redis </strong>instances that have a ServiceNet IP address in the 10.188.0.0/15 range. If an instance has a ServiceNet IP address that is not in this range, contact ObjectRocket support. </br></br> RackConnect v3.0 is <strong>compatible</strong> with <strong>MonogoDB</strong>. | [ObjectRocket Getting Started Guide](https://docs.objectrocket.com/getting_started.html)
 
-## <a name="table2"></a>Table 2: RackConnect v3.0 compatibility with Rackspace dedicated network device offerings
+### RackConnect v3.0 compatibility with Rackspace dedicated network device offerings
 
-Table 2 lists the dedicated network device offerings that are compatible with RackConnect v3.0.
+This table lists the dedicated network device offerings that are compatible with RackConnect v3.0.
 
 Network device | More information
 --- | ---
@@ -52,9 +45,9 @@ Cisco ASA X Series Firewalls | [RackConnect Network Device Comparison](/how-to/r
 BIG-IP F5 Load Balancers | [Using Dedicated Load Balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 Brocade Load Balancer | [Using Dedicated Load Balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 
-## <a name="table3"></a>Table 3: RackConnect v3.0 compatibility with Rackspace dedicated offerings
+### RackConnect v3.0 compatibility with Rackspace dedicated offerings
 
-Table 3 lists the dedicated offerings that are compatible with RackConnect v3.0. Compatibility with dedicated offerings is based on network connectivity from these offerings to and from your RackConnect v3.0 cloud networks. The correct routes to allow this traffic can be set up by your Network Security team.
+This table lists the dedicated offerings that are compatible with RackConnect v3.0. Compatibility with dedicated offerings is based on network connectivity from these offerings to and from your RackConnect v3.0 cloud networks. The correct routes to allow this traffic can be set up by your Network Security team.
 
 Network offering | Compatible | Further details |
 --- | --- | ---

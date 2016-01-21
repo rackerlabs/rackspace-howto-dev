@@ -4,8 +4,8 @@ title: Rackspace Cloud Backup - Install the agent on Linux
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
-last_modified_date: '2016-01-19'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-01-21'
+last_modified_by: Margaret Eker
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -21,7 +21,7 @@ server, see [Rackspace Cloud Backup - Install the Agent
 (Windows)](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 for parallel instructions.  To schedule and configure backups after the
 agent is installed, see [Rackspace Cloud Backup - Create a
-Backup](/how-to/rackspace-cloud-backup-create-a-backup-0).
+Backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0).
 
 **Note:** You can use Cloud Backup on almost any Linux server in the
 Rackspace Cloud. Exceptions are FreeBSD 9 (not supported) and Debian 5
@@ -373,5 +373,5 @@ installation, remove that as well.
 ### Next steps
 
 [Rackspace Cloud Backup - Create a
-backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
+backup](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0)
 

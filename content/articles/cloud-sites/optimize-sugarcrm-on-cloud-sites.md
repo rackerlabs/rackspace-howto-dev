@@ -18,15 +18,14 @@ SugarCRM does have detailed documentation on their [Support
 Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki"),
 some of which we have made available here.
 
-<span class="mw-headline">Quick guide</span>
---------------------------------------------
+### <span class="mw-headline">Quick guide</span>
 
 Following is the quick guide to modifying your SugarCRM configuration
 for improved performance in the cloud.
 
 
 
-### <span class="mw-headline">.htaccess</span>
+**<span class="mw-headline">.htaccess</span>**
 
 Add the following PHP configuration directives to your **.htaccess**
 file:
@@ -57,7 +56,7 @@ following example when done:
 
 
 
-### <span class="mw-headline">config\_override.php</span>
+**<span class="mw-headline">config\_override.php</span>**
 
 **Note:** The following configuration options should improve the
 performance of your SugarCRM installation, but might change the way some
@@ -77,8 +76,7 @@ Add the following SugarCRM configuration options to your
 
 
 
-<span class="mw-headline">Developer tools</span>
-------------------------------------------------
+### <span class="mw-headline">Developer tools</span>
 
 The [SugarDev.net Developer
 Tools](http://www.sugarforge.org/projects/sugardevtools/ "http://www.sugarforge.org/projects/sugardevtools/")
@@ -86,8 +84,7 @@ also provide some performance options that you might find useful.
 
 
 
-<span class="mw-headline">External links</span>
------------------------------------------------
+### <span class="mw-headline">External links</span>
 
 -   [SugarCRM Support
     Wiki](http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki "http://www.sugarcrm.com/wiki/index.php?title=Sugar_Support_Wiki")

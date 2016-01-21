@@ -4,149 +4,54 @@ title: RackConnect Global user workflow
 type: article
 created_date: '2015-10-16'
 created_by: Sameer Satyam
-last_modified_date: '2015-10-22'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
 
-### RackConnect Global
-
-<span
-class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">RackConnect
-Global provides highly available, secure, private network connectivity
-between Rackspace and your off-premises data centers or your
-infrastructure at other cloud hosting providers, such as Microsoft
+RackConnect Global provides highly available, secure, private network
+connectivity between Rackspace and your off-premises data centers or
+your infrastructure at other cloud hosting providers, such as Microsoft
 Azure. It allows you to share application workloads and data across
-environments.  Please see
-</span><http://www.rackspace.com/cloud/hybrid/rackconnect/global><span
-class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"> for more
-details on the product.</span>
+environments. See
+<http://www.rackspace.com/cloud/hybrid/rackconnect/global> for more
+details about the product.
 
-<span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">This
-document shows the steps needed to establish a RackConnect Global
-virtual circuit with Rackspace.</span>
+This document shows the steps needed to establish a RackConnect Global
+virtual circuit with Rackspace.
 
-<div>
+### Establishing a RackConnect Global (RCG) dedicated connection
 
-### <span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Establishing a RackConnect Global </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">(RCG) </span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">dedicated connection</span>
+Use this procedure only if you are colocated in the same facility as
+Rackspace.
 
-<span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Only use
-this procedure if you are colocated in the sam</span><span
-class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">e</span><span
-class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> facility as
-Rackspace. </span>
+**Note**: If you are part of the Equinix Cloud exchange or a Microsoft
+Azure customer and need to establish a RackConnect Global connection
+with Rackspace, please see below.
 
-</div>
+1.  You can order RackConnect Global service using the dedicated
+    connection method via our sales account team or appropriate
+    Rackspace representative.
 
-<span
-class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z i">**NOTE:** If
-you are part of the Equinix Cloud exchange or a Microsoft Azure customer
-and need to establish a RackConnect Global connection with Rackspace,
-please see below.</span>
+2.  You are repsonsible for the physical cross-connection to Rackspace's
+    RCG Edge devices. Rackspace generates and provides a Letter of
+    Authority (LOA) which identifies the physical port and cage location
+    for the RackConnect Global edge device.
 
-1.  <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">You
-    can order R</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">ackConnect
-    Globa</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">l
-    </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">service
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">using the
-    dedicated connection method</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> via
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">our</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> sales
-    account team or </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">appropriate
-    Rackspace representative.</span>
+3.  Customer submits the LOA and orders the cross connect via the
+    colocation provider's portal. Currently, the only supported
+    colocation provider is Equinix.
 
-2.  <span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">You are
-    repsonsible for the physical cross-connection to Rackspace's RCG
-    Edge devices. Rackspace </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">generates
-    and provides </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">a Letter of
-    Authority (</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">LOA</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">) which
-    identifies the physical port and cage location for the RackConnect
-    Global edge device.  </span></span>
+4.  The colocation provider makes the physical connection between
+    customer and RackConnect Global edge devices.
 
-3.  <span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Customer
-    submits </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">the
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">LOA and
-    order</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">s</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"> the
-    cross connect </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">via the
-    colocation provider's portal</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">.
-    C</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">urrently</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">,
-    the</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> only
-    supported colocation </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">provider
-    </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">is
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Equini</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">x.</span></span></span>
-
-4.  <span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">The
-    colocation provider makes the physical connection between customer
-    and R</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">ackConnect
-    Global edge </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">device</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">(s).</span></span></span></span>
-
-5.  <span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">R</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">ackspace
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">configures
-    </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">the
-    R</span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">ackConnect
-    Global</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">edge
-    device(s)  </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">while
-    </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">customer
-    configures their side to establish </span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">the
-    Virtual Connection. </span><span
-    class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">The
-    virtual circuit is establishe</span><span
-    class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">d.</span></span></span></span></span>
+5.  Rackspace configures the RackConnect Global edge devices while
+    customer configures their side to establish the Virtual Connection.
+    The virtual circuit is established.
 
 
-### <span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">Establishing a RackConnect Global connection via Equinix Cloud Exchange</span>
+### Establishing a RackConnect Global connection via Equinix Cloud Exchange
 
 <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Use
 this procedure if you are an Equinix Cloud </span><span
@@ -156,10 +61,8 @@ class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">xchange
 class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z">customer</span><span
 class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">. </span>
 
-<span
-class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z i">**NOTE:** **
-If you need to connect your on-premise infrastructure to Rackspace via a
-dedicated connection or a</span><span
+**Note**: If you need to connect your on-premise infrastructure to
+Rackspace via a dedicated connection or a<span
 class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z i"> Microsoft
 Azure customer needing to establish RackConnect Global connectivity with
 Rackspace, please see the section above/below </span>
@@ -248,19 +151,16 @@ Rackspace, please see the section above/below </span>
     Exchange. </span></span></span></span></span>
 
 
-### <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">Establishing a RackConnect Global connection</span><span class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z"> </span><span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">if you use Microsoft Azure (via Microsoft ExpressRoute)</span>
+### Establishing a RackConnect Global connection if you use Microsoft Azure (via Microsoft ExpressRoute)
 
 <span class="author-a-z85zz86zz86zgz85zfz81zfz86z418z74ziz122zo">This
 procedure applies if you are Microsoft Azure customer requiring a
 private connection to your infrastructure at Rackspace.</span>
 
-<span
-class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z i">**NOTE:** If
-you need to connect your on-premise infrastructure to Rackspace via a
-dedicated connection or if</span><span
-class="author-a-6z68z17wrz74zz86zz122zvz69zunz87zuz72z i"> you need to
-establish RackConnect Global connectivity with Rackspace via Equinix
-Cloud Exchange, please see the relevant sections above</span>
+**Note**: If you need to connect your on-premise infrastructure to
+Rackspace via a dedicated connection or if you need to establish
+RackConnect Global connectivity with Rackspace via Equinix Cloud
+Exchange, please see the relevant sections above.
 
 1.  <div id="magicdomid56">
 

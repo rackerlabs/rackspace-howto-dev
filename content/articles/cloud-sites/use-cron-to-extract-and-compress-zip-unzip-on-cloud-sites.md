@@ -4,15 +4,15 @@ title: 'Use cron to extract and compress (zip & unzip) on Cloud Sites'
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
 
 ### Scripting extraction and compression of files
 
-##### General Process:
+### General Process:
 
 In Cloud Sites, the general process for extracting and compressing files
 through a cron job consists of the following steps:
@@ -42,13 +42,13 @@ Once complete, save the file with the **.sh** extension.
 
 **Suggested Filename:** *compress.sh*
 
-####
+###
 
 **NOTE:** For these examples make sure to replace "/SOURCE/DIRECTORY/"
 and "/DESTINATION DIRECTORY" with the appropriate Web directories (like
 "/mnt/stor1-wc1-dfw1/123456/www.example.com/web/content/archives/").
 
-#### Zip compression
+### Zip compression
 
 To compress a directory to zip format add these lines to the script:
 
@@ -69,7 +69,7 @@ similar, but would not require the "r" in the options.*
     #!/bin/sh
     zip -9p /DESTINATION/DIRECTORY/file.zip /SOURCE/DIRECTORY/targetfile.txt
 
-####
+###
 
 ###
 
@@ -89,11 +89,11 @@ The final script should look similar to this:
 
 ### <span>II. Extracting</span>
 
-####
+###
 
 **Suggested Filename:** *decompress.sh*
 
-#### Zip extraction
+### Zip extraction
 
 Add these lines to decompress from zip format:
 
@@ -106,13 +106,13 @@ The final script should look similar to this:
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Unzip_script_visual_0.png" width="717" height="138" />
 
-####
+###
 
 (**NOTE: the -o option will force unzip to overwrite existing files!**)
 
 Where "file.tar" is the name that you assign to the compressed file.
 
-#### Tar.gz extraction
+### Tar.gz extraction
 
 Put this in the script to extract from tar format:
 

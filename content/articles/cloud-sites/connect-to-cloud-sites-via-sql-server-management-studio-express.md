@@ -4,8 +4,8 @@ title: Connect to Cloud Sites via SQL Server Management Studio Express
 type: article
 created_date: '2011-03-23'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -26,14 +26,7 @@ the only one who is allowed to connect via SQL Server Management Studio
 Express. Any secondary users who have been added who need to make
 changes must use
 [myLittleAdmin](/how-to/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database")
-to connect.
-
--   [Prerequisite](#prereq)
--   [Get started](#get_started)
--   [Connect by using the external IP address](#connect)
-
-Prerequisite
-------------
+to connect.<span style="line-height: 1.2;">Prerequisite</span>
 
 Ensure that you have installed the latest version of SQL Server
 Management Studio Express and any available service packs. As of the
@@ -41,8 +34,7 @@ last update of this article, SQL Server 2008 Management Studio Express
 was available at
 <http://www.microsoft.com/downloads/details.aspx?familyid=08e52ac2-1d62-45f6-9a4a-4b76a8564a2b>.
 
-Get started
------------
+### Get started
 
 To make an external connection, you need the external IP address for
 your database. You can get the IP address by following these steps:
@@ -57,8 +49,7 @@ your database. You can get the IP address by following these steps:
 The IP address is listed as the **Database Management IP Address**. You
 need this address in the next section.
 
-Connect by using the external IP address
-----------------------------------------
+### Connect by using the external IP address
 
 1.  Open Microsoft SQL Server Management Studio Express.
     If <span>the connection dialog box </span>does not open, click the

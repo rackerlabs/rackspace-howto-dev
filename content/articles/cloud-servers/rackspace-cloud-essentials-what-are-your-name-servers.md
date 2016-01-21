@@ -13,7 +13,7 @@ product_url: cloud-servers
 ### Previous section
 
 [Getting Started with Cloud
-Servers](/how-to/cloud-servers)
+Servers](/how-to/create-a-cloud-server)
 
 By now, you have built your server, made it secure, and uploaded content
 to your server.  The last step in the First 48 Hour Essentials is to

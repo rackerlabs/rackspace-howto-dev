@@ -4,8 +4,8 @@ title: Boot a server from a Cloud Block Storage volume
 type: article
 created_date: '2014-08-26'
 created_by: Trey Hoehne
-last_modified_date: '2015-07-20'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -26,7 +26,7 @@ You can now boot most cloud servers from a network-attached [Cloud Block Storage
 *   API volume boot options
 
 
-## Benefits
+### Benefits
 
 Booting from a Cloud Block Storage volume provides the following benefits:
 
@@ -36,7 +36,7 @@ Booting from a Cloud Block Storage volume provides the following benefits:
 
 You can get started through the [Control Panel](https://mycloud.rackspace.com) or through the [API](http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html).
 
-## Setup options
+### Setup options
 
 Servers have a local system and can have one or more data disks depending on the flavor.
 
@@ -48,11 +48,11 @@ Additional remote data volumes can be attached to a server; however, the local s
 
 Booting from a remote volume moves the system disk off the local server. The local data disk will still be present if the flavor has one.
 
-## Booting from an existing volume
+### Booting from an existing volume
 
 Booting from a volume requires a Cloud Block Storage volume built from a valid image or a volume cloned from an existing bootable volume. These volumes are charged at the current Cloud Block Storage rates and can be configured to persist after server deletion.
 
-## Volume preparation
+### Volume preparation
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/1424-4.png" width="650" alt=""  />
 
@@ -62,7 +62,7 @@ A volume must be created equal to or larger than the <code>min_disk</code> value
 
 After the volume is prepared, its bootable flag is set to <code>True</code>, and the volume is available to boot from.
 
-## Boot a server from a volume (Cloud Control Panel)
+### Boot a server from a volume (Cloud Control Panel)
 
 Use the following steps to boot a server from a Cloud Block Storage volume through the Cloud Control Panel.
 
@@ -88,20 +88,20 @@ Using the API directly or a command-line client provides some added customizatio
 
 Use the following API commands to boot a server from a Cloud Block Storage volume using the API.
 
-## Boot a server from a volume (API)
+### Boot a server from a volume (API)
 
 The API provides two different methods to boot from a volume. One option is a two-step method that separates volume creation from boot, and the other is an all-in-one method that combines the steps into one step.
 
 **Note:** OpenStack community documentation for this function using the python nova client is located [here](http://docs.openstack.org/user-guide/content/create_volume_from_image_and_boot.html).
 
 
-### Prepare the volume independently (option 1)
+#### Prepare the volume independently (option 1)
 
 Send a request to Cloud Block Storage for a volume. In the following example, the nova client is used:
 
      nova volume-create 100 --volume-type=SSD --display-name=BFB-test-SSD --image-id=ff228647-fd57-47fe-b42d-2b7813bb9115
 
-### Map to an existing block device (option 2)
+#### Map to an existing block device (option 2)
 
 Use this option to perform either of the following tasks:
 
@@ -162,7 +162,7 @@ The preceding example boots a General Purpose 1 GB server from the prepared volu
              }
      }
 
-### Option 2
+#### Option 2
 
 The following example boots a General Purpose 1 GB server from a volume that is prepared with the image set by the id. If you wanted to use this command to boot from an existing volume <code>source</code> would be <code>source=volume</code> and <code>id</code> would be set to the volume's ID.
 
@@ -172,7 +172,7 @@ The Cloud Control Panel uses this option.
 
 **Note:** As of August 21, 2014, this option builds only SATA drives and does not allow the volume to be named when it is built. In the future, this option will build only SSD drives, and the name will be based on the following template: 'System disk for '. The name can be changed after the volume is built and the Cloud Control Panel displays the volume ID as the name if no name is present.
 
-## Rebuild or resize the server
+### Rebuild or resize the server
 
 If you have deleted the server that was attached to the Cloud Block Storage volume, you can rebuild the server from the volume. You can also resize the server while retaining the previously attached system disk.
 

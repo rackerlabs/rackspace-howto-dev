@@ -4,8 +4,8 @@ title: Rackspace Auto Scale Control Panel User Guide - Create a scaling policy
 type: article
 created_date: '2013-11-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -23,10 +23,7 @@ one to scale down. You can create up to 1000 policies per group.
 
 There are two steps to create a scaling policy:
 
--   [Create a scaling policy](#createpolicy)
--   [Test  your configuration](#testconfig)
-
-#### Create a scaling policy
+#### <span>Create a scaling policy</span>
 
 1.  On the Create Scaling Group page or on the details page of an
     existing group, click  **Create Policy**.

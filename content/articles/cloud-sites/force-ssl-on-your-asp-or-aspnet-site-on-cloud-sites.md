@@ -13,8 +13,7 @@ product_url: cloud-sites
 This article provides examples of how to force SSL on your ASP or
 ASP.NET site.
 
-web.config file
----------------
+### web.config file
 
 If your website has the IIS Rewrite Module available, you can use
 rewrite rules in your **web.config** file to force SSL on all pages, as
@@ -53,8 +52,7 @@ and [URL Rewrite Module Configuration
 Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
 on the Microsoft IIS site.
 
-ASP.NET (not MVC 3)
--------------------
+### ASP.NET (not MVC 3)
 
 Using ASP.NET, you can use the following code to force SSL on a page on
 your site:
@@ -96,8 +94,7 @@ your site:
     </body>
     </html>
 
-ASP.NET (MVC 3)
----------------
+### ASP.NET (MVC 3)
 
 You can use the following code when using the `RequireHttps` attribute
 to decorate actions within your MVC application:
@@ -135,8 +132,7 @@ public static class Extensions
 }
 ```
 
-Classic ASP
------------
+### Classic ASP
 
 Using classic ASP, you can use the following code to force SSL on a page
 on your site:

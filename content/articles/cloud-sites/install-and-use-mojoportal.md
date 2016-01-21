@@ -4,8 +4,8 @@ title: Install and use mojoPortal
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-30'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-21'
+last_modified_by: Rose Contreras
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -16,14 +16,14 @@ interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
 and selecting Cloud Sites Control Panel.
 
-**Prerequisites**
+### **Prerequisites**
 
 -   Administrative access to the Rackspace Cloud to create domains and
     add databases
 -   Latest mojoPortal release version uncompressed in a local repository
 -   Ftp access to website, and a ftp client like ExpanDrive
 
-**Procedure**
+### **Procedure**
 
 -   Review the mojoPortal Installation reference
     <http://www.mojoportal.com/installation-quick-start.aspx>
@@ -34,9 +34,9 @@ and selecting Cloud Sites Control Panel.
 -   Navigate the Hosting-&gt;Cloud Sites menu to the website hyperlink
     on which mojoPortal is to be installed.
 
-NOTE: The domain must have .Net and Asp technology Feature enabled, and
-database Feature selected. The database feature can be added by using
-the CHANGE PLAN hyperlink on the domain **General Settings** tab.
+**NOTE:** The domain must have .Net and Asp technology Feature enabled,
+and database Feature selected. The database feature can be added by
+using the CHANGE PLAN hyperlink on the domain **General Settings** tab.
 
 -   Upload the uncompressed files from the local repository to the
     desired location on the website using FTP - Refer to [Upload content

@@ -4,8 +4,8 @@ title: RackConnect v3.0 upgrade information
 type: article
 created_date: '2015-12-21'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
@@ -14,13 +14,7 @@ product_url: rackconnect
 v3.0. This article provides information about RackConnect v3.0 and about
 upgrading.</span>
 
--   [Benefits of RackConnect 3.0](#benefits)
--   [Limitations of RackConnect 3.0](#limitations)
--   [Upgrade eligibility](#upgradeeligibility)
--   [Options for migrating to RackConnect v 3.0](#migrationoptions)
-
-Benefits of RackConnect 3.0
--------------------------------
+### Benefits of RackConnect 3.0
 
 RackConnect v3.0 provides the following benefits:
 
@@ -88,8 +82,7 @@ RackConnect v3.0 provides the following benefits:
     permissions automatically applied. This is a benefit for highly
     automated operations.
 
-Limitations of RackConnect 3.0
-----------------------------------
+### Limitations of RackConnect 3.0
 
 RackConnect v3.0 has the following limitations:
 
@@ -121,8 +114,7 @@ RackConnect v3.0 has the following limitations:
     connected network device before making its way to the
     destination network.
 
-Upgrade eligibility
------------------------
+### Upgrade eligibility
 
 Some customers might require firewall software version updates to be
 eligible for RackConnect v3.0.  Contact your Rackspace Account Manager
@@ -130,13 +122,12 @@ or Service Delivery Manager for additional details and to ensure that
 you have no other potential issues that would prevent you from upgrading
 to RackConnect v3.0.
 
-Options for migrating to RackConnect v 3.0
-----------------------------------------------
+### Options for migrating to RackConnect v 3.0
 
 You can follow one of two paths to upgrade to RackConnect v3.0 from
 RackConnect v2.0.
 
-### **Upgrade path A**
+#### Upgrade path A
 
 Upgrade path A is ideal for customers who want to run RackConnect v2.0
 and RackConnect v3.0 side-by-side. However, this path might require
@@ -181,7 +172,7 @@ this upgrade path:
 -   All RackConnect v2.0-supported images are currently fully compatible
     with this upgrade path.
 
-### **Upgrade path B**
+#### Upgrade path B
 
 Most customers prefer upgrade path B.  Following are the requirements
 and caveats for this upgrade path:
@@ -220,8 +211,7 @@ and caveats for this upgrade path:
     v2.0 must be in place for the entire process (until the upgrade is
     complete)*. *
 
-Next step
----------
+### Next step
 
 After you determine which upgrade option best meets your needs, call
 your Account Manager or Server Delivery Manager to being the migration

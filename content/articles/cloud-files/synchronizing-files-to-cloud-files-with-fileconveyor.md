@@ -16,7 +16,7 @@ Many file synchronization applications exist, but few are as versatile as the op
 
 Using File Conveyor to synchronize files to the content delivery network (CDN) enables you to use ecommerce solutions like Magento or CMS applications like Drupal or WordPress with Cloud Files without relying on a plug-in to handle the file transfers.
 
-## Prerequisites ##
+### Prerequisites ###
 
 [githome]:http://git-scm.com/ "Git Project Page"
 [sthome]:http://pypi.python.org/pypi/setuptools "Setuptools Project Page"
@@ -36,7 +36,7 @@ Using File Conveyor to synchronize files to the content delivery network (CDN) e
 
 			sudo easy_install pip
 
-## Install File Conveyor ##
+### Install File Conveyor ###
 
 Change to the directory that you want to hold the File Conveyor files, and then run the following command:
 
@@ -46,7 +46,7 @@ The File Conveyor source files are downloaded to the `src/fileconveyor` director
 
 Running the installation with sudo (or as root) lets pip handle the installation of dependencies like Django and python-cloudfiles.
 
-## Configure File Conveyor ##
+### Configure File Conveyor ###
 
 Before running File Conveyor, you need to configure it by creating a file named `config.xml` in the same directory as the `arbitrator.py` file.
 
@@ -92,7 +92,7 @@ Before running File Conveyor, you need to configure it by creating a file named 
 
 You can perform more complex synchronizations by using multiple rules, synchronizing from multiple sources, or having File Conveyor change the file name or some of a file's properties before copying it to Cloud Files (using "processors"). You can find details  in the File Conveyor documentation and [on the project's website][fchome].
 
-## Run File Conveyor ##
+### Run File Conveyor ###
 
 With the configuration set, run File Conveyor for its initial synchronization. The `arbitrator.py` script launches  File Conveyor's various components:
 
@@ -104,7 +104,7 @@ The File Conveyor program runs as a console script, without an included init scr
 
 After the initial synchronization is complete, you should be able to see the results in the target container within the Cloud Control Panel.
 
-## More options ##
+### More options ###
 
 The sample configuration provided in this article is simple, and you can do much more with File Conveyor to customize its operation for your needs. See the documentation in the source directory and the [project web page][fchome] for full details, but following are a few more options:
 

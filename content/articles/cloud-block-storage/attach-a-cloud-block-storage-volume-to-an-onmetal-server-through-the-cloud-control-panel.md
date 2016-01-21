@@ -4,8 +4,8 @@ title: Attach a Cloud Block Storage volume to an OnMetal server through the Clou
 type: article
 created_date: '2015-07-09'
 created_by: Renee Rendon
-last_modified_date: '2015-08-14'
-last_modified_by: Nate Archer
+last_modified_date: '2016-01-21'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -22,8 +22,9 @@ Compute and Memory v1 flavors.
 server via the Cloud Control Panel.</span><span> The procedure assumes
 that the server instance already exists.</span>
 
-[Create a new volume]()
------------------------
+
+
+### [Create a new volume]()
 
 If you want to create a new volume, the following steps will guide you.
 If you have already created a volume, go to [Attach a volume](#attach).
@@ -40,8 +41,7 @@ If you have already created a volume, go to [Attach a volume](#attach).
 
 
 
-[Attach a volume]()
--------------------
+### [Attach a volume]()
 
 1\. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -123,8 +123,7 @@ Volume](/how-to/prepare-your-cloud-block-storage-volume).
 
 
 
-[Detach a volume]()
--------------------
+### [Detach a volume]()
 
 If you want detach a volume from an OnMetal server, be sure that the
 volume is [fully

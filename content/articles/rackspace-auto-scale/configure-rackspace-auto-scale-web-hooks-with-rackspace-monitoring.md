@@ -4,8 +4,8 @@ title: Configure Rackspace Auto Scale web hooks with Rackspace Monitoring
 type: article
 created_date: '2015-06-04'
 created_by: Jake Coe
-last_modified_date: '2015-12-18'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -18,13 +18,6 @@ that is set through Rackspace Monitoring or another monitoring service.
 When that event occurs, the source site makes an HTTP request to the URI
 configured for the webhook. Therefore, correct configuration of the
 webhooks is needed for the Auto Scale service to perform correctly.
-
-Contents
-
--   [Before you begin](#beforeBegin)
--   [Create Auto Scale policies](#createPolicies)
--   [Create a webhook](#createWebhook)
--   [Set up Rackspace Monitoring](#setUpCloudMonitoring)
 
 Before you begin
 --------------------

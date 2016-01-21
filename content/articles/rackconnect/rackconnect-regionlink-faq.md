@@ -4,30 +4,13 @@ title: RackConnect RegionLink FAQ
 type: article
 created_date: '2014-12-04'
 created_by: Sameer Satyam
-last_modified_date: '2014-12-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-21'
+last_modified_by: Kelly Holcomb
 product: RackConnect
 product_url: rackconnect
 ---
 
 Get quick answers to common questions about RackConnect RegionLink.
-
--   [What is RackConnect RegionLink?](#Q1)
--   [Why do you need it?](#Q2)
--   [What are some common use cases for this service?](#Q3)
--   [What are the benefits of the interregional solution?](#Q4)
--   [Which Rackspace customers can use this service?](#Q5)
--   [In which data centers is this service available?](#Q6)
--   [Is a dedicated aggregation (customer edge) device needed to use
-    this service?](#Q8)
--   [Is the traffic encrypted?](#Q9)
--   [What kind of speeds are supported?](#Q10)
--   [Is redundancy built in to the solution?](#Q11)
--   [What is the SLA for this service?](#Q12)
--   [For an MPLS L3 VPN connection, how many VPN prefixes can be
-    exchanged between the sites?](#Q13)
--   [Is IPv6 traffic supported?](#Q14)
--   [How do I order the service, and what is the pricing?](#Q15)
 
 #### What is RackConnect RegionLink?
 

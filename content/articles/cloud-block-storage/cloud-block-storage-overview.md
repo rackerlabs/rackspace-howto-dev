@@ -4,7 +4,7 @@ title: Cloud Block Storage - Overview
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-18'
+last_modified_date: '2016-01-21'
 last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -38,13 +38,7 @@ Both types are priced per gigabyte (GB) of storage and not by
 input/output operations per second (IOPS), which can be difficult to
 predict or control.
 
-On This Page:
 
--   [Uses of Cloud Block Storage](#uses-of-cbs)
--   [Access to Cloud Block Storage](#access-cbs)
--   [Limits of Cloud Block Storage](#limits-of-cbs)
--   [Cloud Block Storage Terminology](#cbs-terminology)
--   [Cloud Block Storage Getting Started Table of Contents](#cbs-gs-toc)
 
 ###
 Some Uses of Cloud Block Storage

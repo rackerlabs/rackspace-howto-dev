@@ -4,8 +4,8 @@ title: "Rackspace Auto Scale tips and how-to's"
 type: article
 created_date: '2014-01-14'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-07'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-21'
+last_modified_by: Renee Rendon
 product: Rackspace Auto Scale
 product_url: rackspace-auto-scale
 ---
@@ -13,37 +13,8 @@ product_url: rackspace-auto-scale
 Read the following tips and how-to sections to help you achieve your
 goals with Rackspace Auto Scale.
 
--   [How Auto Scale works](#ASandNova)
--   [Invalid load balancers can prevent scaling](#InvalidPreventScaling)
--   [Deleting scaling groups with missing
-    servers](#DeleteScalingGroupsMissingServers)
--   [ServiceNet dependency can cause server creation to
-    fail](#serviceNet)
--   [Connecting Auto Scale to a single Cloud Monitoring
-    alarm](#ConnectSingleCloudMonitoring)
--   [Adding or removing servers quickly](#AddRemoveServers)
--   [maxEntities and minEntities settings affect
-    scaling](#MaxandMinEntities)
--   [Creating and updating the launchConfiguration
-    setting](#CreateandUpdate)
-    -   [Create a scaling group with the launchConfiguration
-        setting](#CreateScalingGroup)
-    -   [Update the launchConfiguration setting
-        successfully](#UpdateLaunchSuccess)
-    -   [Update the launchConfiguration eviction
-        policy](#UpdateLaunchEviction)
--   [Deleting servers](#DeletingServers)
-    -   [About the server "Active" state when deleting
-        servers](#AboutActiveServers)
-    -   [Delete a specific server from a scaling
-        group](#DeletingServerFromGroup)
--   [Choosing the flavor of a server for a scaling group](#ChooseFlavor)
--   [Cloud Bursting with Auto Scale and RackConnect V3](#cloudBurst)
--   [Using Auto Scale to change the size of your General Purpose or
-    work-optimized server](#changePerfServerSize)
-
-How Auto Scale works
-------------------------
+<span style="line-height: 1.2;">How Auto Scale works</span>
+---------------------------------------------------------------
 
 Rackspace Auto Scale is written in Python and calls the Rackspace Cloud
 Servers, Rackspace Cloud Load Balancers, and Rackspace RackConnect v3
