@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This Getting Started Guide covers everything you'll need to know as a new Rackspace customer, including how to manage your account, create servers, set up security, and schedule server imaging.

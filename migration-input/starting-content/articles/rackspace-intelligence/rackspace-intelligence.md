@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Rackspace Intelligence
+product_url: rackspace-intelligence
 ---
 
 Which of the Rackspace Intelligence services would you like to use?

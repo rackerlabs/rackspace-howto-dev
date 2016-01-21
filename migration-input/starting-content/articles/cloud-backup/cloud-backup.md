@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Backup
+product_url: cloud-backup
 ---
 
 <p class="lead" markdown="1">Welcome to Rackspace Cloud Backup! This guide is designed to you get you up and running with Cloud Backup. Here you will find tips for trouble shooting, managing your configuration, systems actions, and email preferences. Let's get started!</p>

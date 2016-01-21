@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Microsoft Skype for Business
+product_url: skype-for-business
 ---
 
 <p class="lead" markdown="1">Microsoft Skype for Business is an instant messaging and video capable client for use with the Rackspace's Hosted Exchange 2013 email platform, and is a replacement for Microsoft Instant Messenger. Depending on the size of your organization and your IT infrastructure, the rollout of the Skype for Business service to your users will vary.</p>

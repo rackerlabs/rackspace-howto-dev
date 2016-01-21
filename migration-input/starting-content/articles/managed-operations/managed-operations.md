@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Managed Operations
+product_url: managed-operations
 ---
 
 Cloud Servers with a Managed Operations Service Level extends the enhanced managed support level from our Managed Hosting offering into our Cloud offering. The Managed Operations Service Level provides an additional level of support that includes monitoring, OS and application infrastructure layer support, and technical guidance for Cloud Servers.

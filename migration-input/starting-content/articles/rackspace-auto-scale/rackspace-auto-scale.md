@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Rackspace Auto Scale
+product_url: rackspace-auto-scale
 ---
 
 <p class="lead" markdown="1">Rackspace Auto Scale automatically scales resources that are allocated to your application up or down based on user-defined need. Scaling events can be based on scaling rules that you define through your monitoring system, or on a simple schedule that you configure.</p>

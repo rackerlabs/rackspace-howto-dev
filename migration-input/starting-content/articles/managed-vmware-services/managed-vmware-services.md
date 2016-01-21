@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 <p class="lead" markdown="1">Rackspace Managed Virtualization services offer customizable, single-tenant infrastructure that can be architected to support even the most demanding workloads. Our experienced engineers are available 24x7x365 to help architect, deploy, and troubleshoot your hosted VMware environment.</p>

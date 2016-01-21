@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Big Data
+product_url: cloud-big-data
 ---
 
 <p class="lead" markdown="1">Rackspace Cloud Big Data is an on-demand Apache Hadoop service for the Rackspace Open Cloud. The service supports a RESTful API and alleviates the pain associated with deploying, managing, and scaling Hadoop clusters.</p>

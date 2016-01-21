@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud DNS
+product_url: cloud-dns
 ---
 
 <p class="lead" markdown="1">The Domain Name System is essentially the phonebook for the Internet. It manages the relationships between IP addresses (the phone numbers), and domains (individuals and corporations). All domains and their components, such as mail servers, utilize DNS to resolve to the appropriate locations.</p>

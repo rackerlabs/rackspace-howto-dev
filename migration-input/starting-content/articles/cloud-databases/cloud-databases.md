@@ -6,6 +6,7 @@ created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
 product: Cloud Databases
+product_url: cloud-databases
 ---
 
 <p class="lead" markdown="1">Our Cloud Databases product is a standalone, API-based relational database service built on OpenStack&reg; cloud that allows Rackspace customers to easily provision and manage multiple MySQL database instances. Instances are provisioned in a single-tenant, container-based environment per account.</p>
