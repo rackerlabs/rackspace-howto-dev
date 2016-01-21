@@ -19,7 +19,7 @@ product_url: cloud-load-balancers
 ###  Load Balancer Features
 
 - [Content Caching for Cloud Load Balancers](/how-to/content-caching-for-cloud-load-balancers)
-- [SSL Termination on Cloud Load Balancers](/how-to/cloud-load-balancers-faqs)
+- [SSL Termination on Cloud Load Balancers](/how-to/cloud-load-balancers-faq)
 - [Using SSL Offloading with IIS and Cloud Load Balancers](/how-to/configuring-load-balanced-sites-with-ssl-offloading-using-iis)
 - [Using Cloud Load Balancers with RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 

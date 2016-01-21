@@ -19,7 +19,7 @@ product_url: rpc-openstack
 
 ###  General resources
 
-- [FAQ](/how-to/rackspace-private-cloud-faq)
+- [FAQ](/how-to/rpc-openstack-faq)
 - [Spheres of Support](/how-to/rackspace-private-cloud-spheres-of-support)
 - [Private Cloud Tech Resources](/how-to/private-cloud-tech-resources)
 - [Rackspace Private Cloud Software and Reference Architecture](http://www.rackspace.com/cloud/private/openstack/software/)

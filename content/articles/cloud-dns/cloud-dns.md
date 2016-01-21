@@ -20,7 +20,7 @@ product_url: cloud-dns
 - [Rackspace Cloud DNS - Technical Details](/how-to/rackspace-cloud-dns-technical-details)
 - [Rackspace Cloud DNS - API Example](/how-to/rackspace-cloud-dns-api-example)
 - [Rackspace Cloud DNS - Additional Resources](/how-to/rackspace-cloud-dns-additional-resources)
-- [Rackspace Cloud DNS - Frequently Asked Questions](/how-to/rackspace-cloud-dns-faq)
+- [Rackspace Cloud DNS - Frequently Asked Questions](/how-to/cloud-dns-faq)
 
  
 

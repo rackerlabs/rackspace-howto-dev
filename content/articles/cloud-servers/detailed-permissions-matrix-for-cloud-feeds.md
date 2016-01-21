@@ -10,19 +10,25 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The following permissions matrix displays specific permissions for the
-roles in Cloud Feeds. The matrix displays the method names, their
-corresponding RESTful API commands, and the roles that are supported.
-\[\*\*API Documentation\*\*\](https://developer.rackspace.com/docs/)
-\[\*\*Related Knowledge Center
-Articles\*\*\](http://www.rackspace.com/knowledge\_center/article/cloud-feeds-faq)
-\#\#\# As of January 20, 2015 Role | Private Feeds: Get or Post | Other:
-Get or Post --- | :---: | :---: Cloud Feeds: Observer |   | GET Admin |
-  |   Observer |   |   Identity: User-Admin |   |  Identity: Admin |   |
-  Any other users with just valid token, irrespective of the role |   |
-  \*\*Note:\*\* Beginning January 20, users must have one of the
-cloudfeeds roles to access feeds (read or write). \*\*&lt;\*\*
-\[\*\*Permission Matrices for
-RBAC\*\*\](http://www.rackspace.com/knowledge\_center/article/permissions-matrix-for-role-based-access-control-rbac)
+The following permissions matrix displays specific permissions for the roles in Cloud Feeds. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
+[**API Documentation**](https://developer.rackspace.com/docs/)
 
+[**Related Knowledge Center Articles**](/how-to/cloud-feeds-faq)
+
+### As of January 20, 2015
+
+Role | Private Feeds: Get or Post | Other: Get or Post
+--- | :---: | :---:
+Cloud Feeds: Observer | &nbsp; | GET
+Admin | &nbsp; | &nbsp;
+Observer | &nbsp; | &nbsp;
+Identity: User-Admin | &nbsp; |&nbsp;
+Identity: Admin | &nbsp; | &nbsp;
+Any other users with just valid token, irrespective of the role | &nbsp; | &nbsp;
+
+**Note:** Beginning January 20, users must have one of the cloudfeeds roles to access feeds (read or write).
+
+**<** [**Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+
+&nbsp;

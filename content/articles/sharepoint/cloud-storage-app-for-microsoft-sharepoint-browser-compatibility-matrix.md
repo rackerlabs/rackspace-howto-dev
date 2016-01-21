@@ -10,12 +10,13 @@ product: Microsoft SharePoint
 product_url: sharepoint
 ---
 
-\#\#\# Previous section: \[Cloud Storage App for Microsoft SharePoint:
-Overview\](http://www.rackspace.com/knowledge\_center/article/cloud-storage-app-for-microsoft-sharepoint-overview)
-\*\*Browser Compatibility Matrix\*\* |   |   |   |   --- | --- | --- |
---- | ---   | \*\*Navigate Containers\*\* | \*\*Download Files\*\* |
-\*\*Share Files\*\* | \*\*Upload Files\*\* Internet Explorer 9.0 | X | X
-| X |   Internet Explorer 10.0 | X | X | X | X Chrome (latest version) |
-X | X | X | X Firefox (latest version) | X | X | X | X Safari (latest
-version) | X | X | X | X
+### Previous section: [Cloud Storage App for Microsoft SharePoint: Overview](/how-to/cloud-storage-app-for-microsoft-sharepoint-overview)
 
+**Browser Compatibility Matrix** | &nbsp; | &nbsp; | &nbsp; | &nbsp;
+--- | --- | --- | --- | ---
+&nbsp; | **Navigate Containers** | **Download Files** | **Share Files** | **Upload Files**
+Internet Explorer 9.0 | X | X | X | &nbsp;
+Internet Explorer 10.0 | X | X | X | X
+Chrome (latest version) | X | X | X | X
+Firefox (latest version) | X | X | X | X
+Safari (latest version) | X | X | X | X
