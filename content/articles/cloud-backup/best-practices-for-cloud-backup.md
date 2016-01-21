@@ -21,7 +21,7 @@ This Guide shows you how to get the most out of Rackspace Cloud Backup well and 
 &#10060; | **Do Not Attempt**. These are warnings against possible future trouble.
 
 <a name="concepts"> </a>
-### Key concepts
+#### Key concepts
 
 Knowing the language of backup goes a long way towards helping you make informed decisions about your backup operations.
 
@@ -38,7 +38,7 @@ Knowing the language of backup goes a long way towards helping you make informed
 
 
 <a name="choosing"></a>
-### Choosing what to backup
+#### Choosing what to backup
 
 Our best guidance is not what to backup, but what not to backup:
 
@@ -69,7 +69,7 @@ These file types either change too rapidly (databases, logs, caches) or don't ex
 &#10060; | Do not back up session files or caches at all. Don't back up databases or log files directly; use a snapshot instead.
 
 <a name="best_practices"> </a>
-### Backup and Restore Best Practices
+#### Backup and Restore Best Practices
 
 There are many ways to configure backups and restores. To make Cloud Backup work best for you, it helps to understand some of the tradeoffs you make when you configure the many options available to you.
 
@@ -80,7 +80,7 @@ There are many ways to configure backups and restores. To make Cloud Backup work
 &#9989; | First off, choose your contact email carefully when you configure your backup. If anything goes wrong, you will be alerted there first.
 
 <a name="frequency"></a>
-#### Backup Frequency
+##### Backup Frequency
 
 When trying to determine how often to back up a file, there are three variables to consider:
 
@@ -108,7 +108,7 @@ Larger Size | Smaller Size
 &#9989; | Do not make decisions about backup frequency lightly. If you try to backup or restore files more frequently than the backup engine can keep up with, anomalous behavior may result.
 
 <a name="restores"></a>
-#### Effective Restores
+##### Effective Restores
 
 It is a good idea to periodically test your restores to make sure that they are working as you expect. You do not want to get in the situation where needed backups aren’t available because you haven't been configured as you expected.
 
@@ -119,7 +119,7 @@ It is a good idea to periodically test your restores to make sure that they are 
 Another point to consider is the restore destination. Restoring to the original location and overwriting saves on storage space, but you risk accidentally overwriting important existing files. Proceed with caution when restoring.
 
 <a name="encryption"></a>
-#### Encryption: Costs and Benefits
+##### Encryption: Costs and Benefits
 
 Encryption is important for keeping your data confidential. However, encryption has its costs. It takes significantly longer to backup and restore encrypted data. Consider if the data you are storing must be encrypted. If not, then it is best to proceed without encryption. Encryption applies across the board, and once you encrypt a backup server, you may not remove it.
 
