@@ -21,7 +21,7 @@ optimal resource utilization. Read more to see how easy it is to do!
 -   [Video: Introducing Cloud Load
     Balancers](/how-to/cloud-load-balancers)
 -   [Create and Configure a Load
-    Balancer](/how-to/rackspace-cloud-essentials-2-configuring-a-load-balancer)
+    Balancer](/how-to/configure-a-load-balancer)
 
 ###  Load Balancer Features
 

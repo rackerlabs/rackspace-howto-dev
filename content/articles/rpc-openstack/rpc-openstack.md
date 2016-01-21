@@ -54,7 +54,7 @@ page.](/how-to/rackspace-private-cloud-documentation)
 -   [Installation
     Guide](http://docs.rackspace.com/rpc/api/v10/bk-rpc-installation/content/rpc-common-front.html)
 -   [Object Storage Deployment
-    Guide](http://docs.rackspace.com/rpc/api/v10/bk-rpc-swift/content/ch-object-storage-overview.xml.html)
+    Guide](http://docs.rackspace.com/rpc/api/v10/bk-rpc-swift/content/ch-object-storage-overview.html)
 -   [Technical
     FAQ](http://docs.rackspace.com/rpc/api/v9/rpc-faq-v9/content/rpc-common-front.html)
 

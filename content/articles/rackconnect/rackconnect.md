@@ -54,7 +54,7 @@ RackConnect v2.0, or both versions.
 -   [Using Cloud Load Balancers with
     RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 -   [Using dedicated load balancers with RackConnect
-    v3.0](/how-to/using-dedicated-load-balancers-with-rackconnect-v20-v30)
+    v3.0](/how-to/using-dedicated-load-balancers-with-rackconnect-v30)
 -   [RackConnect v3.0 Cloud Server Image
     Compatibility](/how-to/rackconnect-v30-cloud-server-image-compatibility)
 -   [Cloud Orchestration Support for RackConnect
@@ -63,7 +63,7 @@ RackConnect v2.0, or both versions.
 ###  RackConnect v2.0 overview
 
 -   [What Is RackConnect
-    v2.0?](/how-to/what-is-rackconnect-v20)
+    v2.0?](/how-to/introducing-rackconnect-v20)
 -   [What new features were introduced in RackConnect
     v2.0?](/how-to/features-introduced-in-rackconnect-v20)
 -   [What Are The Requirements For Implementing RackConnect
@@ -76,12 +76,12 @@ RackConnect v2.0, or both versions.
 ###  Getting started with RackConnect v2.0
 
 -   [How Do I Get Started With RackConnect
-    v2.0?](/how-to/getting-started-with-rackconnect-v20)
+    v2.0?](/how-to/rackconnect-v20)
 
 ###  Managing your RackConnect v2.0 environment
 
 -   [Accessing The RackConnect Management
-    Interface](/how-to/accessing-the-rackconnect-management-interface)
+    Interface](/how-to/access-the-rackconnect-management-interface)
 -   [Managing RackConnect v2.0 Network
     Policies](/how-to/managing-rackconnect-v20-network-policies)
 -   [Accessing RackConnected Cloud

@@ -14,7 +14,7 @@ you get started.
 ###  Administrator introduction
 
 -   [Email administrator
-    guidelines](/how-to/rackspace-responsibility-vs-admin-responsibility)
+    guidelines](/how-to/email-administrator-guidelines)
 
 ###  Plan your migration
 
@@ -35,18 +35,18 @@ you get started.
 ###  Start receiving email
 
 -   [Help Tool for hosted Email and
-    Lync](/how-to/help-tool-for-hosted-email-and-lync)
+    Lync](/how-to/help-tool-for-hosted-email-and-skype-for-business)
 -   [Rackspace Email and Exchange
-    Settings](/how-to/rackspace-email-and-exchange-settings)
+    Settings](/how-to/rackspace-email-and-hosted-exchange-settings)
 -   [DNS records for email with
-    Rackspace](/how-to/dns-records-for-email-with-rackspace%20)
+    Rackspace](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 ###  Access your mail
 
 -   [Rackspace Email Webmail
     (login page)](https://apps.rackspace.com/index.php)
 -   [Exchange Online Web Access
-    (login page)](https://apps.rackspace.com/index.php%20)
+    (login page)](https://apps.rackspace.com/index.php)
 -   [Setup tool for accessing your mail from additional devices and
     programs (login page)](https://emailhelp.rackspace.com/)
 -   [Connection settings

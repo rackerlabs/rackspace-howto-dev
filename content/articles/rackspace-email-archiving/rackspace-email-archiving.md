@@ -32,7 +32,7 @@ through Cloud Office.
 -   [Create an archive login
     message](/how-to/create-an-archive-login-message)
 -   [Integrate Rackspace Email Archiving
-    with Outlook.](https://admin.rackspace.com/how-to/integrate-rackspace-email-archiving-with-outlook)
+    with Outlook.](/how-to/integrate-rackspace-email-archiving-with-outlook)
 
 ###  Search and report
 
