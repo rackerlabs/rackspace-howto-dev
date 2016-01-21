@@ -14,11 +14,6 @@ customers to easily provision and manage multiple MySQL database
 instances. Instances are provisioned in a single-tenant, container-based
 environment per account.
 
-###  Introduction
-
--   [Rackspace Cloud Databases Overview
-    Video](/how-to/open-cloud-databases)
-
 ###  Managing an Instance
 
 -   [Connecting to Your Cloud

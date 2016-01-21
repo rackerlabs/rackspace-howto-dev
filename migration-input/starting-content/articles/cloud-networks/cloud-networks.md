@@ -41,11 +41,4 @@ Networks](/how-to/using-cidr-notation-in-cloud-networks "CIDR Notation")
 
 ### Using the Cloud Networks API
 
-[Cloud Networks Release
-Notes](http://docs.rackspace.com/servers/api/v2/cn-releasenotes/content/index.html "Cloud Networks Release Notes")
-
-[Cloud Networks Getting
-Started](http://docs.rackspace.com/servers/api/v2/cn-gettingstarted/content/index.html "Cloud Networks Getting Started Guide")
-
-[Cloud Networks API Developers
-Guide](http://docs.rackspace.com/servers/api/v2/cn-devguide/content/index.html "Cloud Networks API Developers Guide")
+[Cloud Networks Developer Guide](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/)

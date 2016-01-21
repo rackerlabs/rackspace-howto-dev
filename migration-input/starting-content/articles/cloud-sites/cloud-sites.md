@@ -52,7 +52,7 @@ Maximize your potential in the cloud. Visit the Knowledge Center today.
 -   [MySQL
     databases](http://www.rackspace.com/knowledge_center/create_a_mysql_database)
 -   [PHPmyAdmin database management
-    interface](/how-to/rackspace-cloud-sites-first-48-5-2-phpmyadmin-database-management-interface)
+    interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface)
 -   [MSSQL
     databases](http://www.rackspace.com/knowledge_center/adding_a_mssql_database)
 -   [MyLittleAdmin database management
@@ -65,6 +65,6 @@ Maximize your potential in the cloud. Visit the Knowledge Center today.
 -   [Tips and Tricks for .htaccess and
     web.config](http://www.rackspace.com/knowledge_center/htaccess_and_web_config)
 -   [Configuring SSL on
-    your website(s)](/how-to/rackspace-cloud-sites-first-48-6-3-configuring-ssl-your-websites)
+    your website(s)](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
 -   [FTP/SSHFS/FTP
     clients](http://www.rackspace.com/knowledge_center/ftp_sshfs_ftpclients)

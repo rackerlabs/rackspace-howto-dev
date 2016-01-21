@@ -20,30 +20,30 @@ Skype for Business service to your users will vary.
     Enterprise
     licenses](/how-to/microsoft-lync-at-rackspace-compare-the-standard-and-enterprise-licenses)
 -   [Hosted Microsoft Skype for Business deployment
-    guide](rackspace.com/how-to/hosted-microsoft-lync-at-rackspace-deployment-guide)
+    guide](/how-to/hosted-microsoft-lync-at-rackspace-deployment-guide)
 -   [Set up DNS records for email and Hosted Microsoft Skype for
-    Business](/how-to/set-up-dns-records-for-email-and-hosted-lync)
+    Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
 
 ###  Work with Hosted Skype for Business
 
 -   [Work with contacts and
-    conversations](https://admin.rackspace.com/how-to/hosted-lync-work-with-contacts-and-conversations)
+    conversations](/how-to/work-with-contacts-and-conversations-in-hosted-skype-for-business)
 -   [Work with audio and voice
-    calls](https://admin.rackspace.com/how-to/hosted-lync-work-with-audio-and-voice-calls)
+    calls](/how-to/working-with-audio-and-voice-calls-in-hosted-skype-for-business)
 -   [Work with video
-    calls](/how-to/hosted-lync-work-with-video-calls)
+    calls](/how-to/working-with-video-calls-in-hosted-skype-for-business)
 -   [Share and
-    collaborate](/how-to/hosted-lync-share-and-collaborate)
+    collaborate](/how-to/sharing-and-collaborating-in-hosted-skype-for-business)
 
 ###  Set up a client
 
 -   [Help Tool for hosted Email and Microsoft Skype for
-    Business](/how-to/help-tool-for-hosted-email-and-lync)
+    Business](/how-to/help-tool-for-hosted-email-and-skype-for-business)
 
 ###  Frequently asked questions
 
 -   [Can I add everyone in the domain automatically to my Microsoft
     Skype for Business
-    contacts?](/how-to/can-i-add-everyone-in-the-domain-automatically-to-lync-contacts)
+    contacts?](/how-to/can-i-automatically-add-everyone-in-the-domain-to-my-skype-for-business)
 -   [Microsoft Office FAQ about Skype for
     Business](https://support.office.microsoft.com/en-us/article/FAQ-about-Lync-a0b87a3e-016a-410e-bb0c-77d4b5654041?CTT=5&origin=HA103065025&CorrelationId=a66ece08-6a45-4a14-aba0-ad05cf4a94a2&ui=en-US&rs=en-US&ad=US#_Toc382835950)
