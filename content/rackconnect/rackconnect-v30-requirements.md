@@ -12,9 +12,9 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v3.0
 
-These requirements must be met to implement RackConnect v3.0:
+These requirements must be met to implement RackConnect v3.0.
 
-**Cloud account**
+### Cloud account
 
 -   The cloud account that you want to use with RackConnect must
     be *linked* to your dedicated account. You can accomplish this in
@@ -28,12 +28,12 @@ These requirements must be met to implement RackConnect v3.0:
 -   You can have multiple cloud accounts associated with a
     RackConnect configuration.
 
-**Dedicated account**
+### Dedicated account
 
 -   To use RackConnect v3.0, you must have a dedicated account
     with Rackspace.
 
-**Supported network device**
+### Supported network device
 
 -   You must have a supported network device in your dedicated account.
 -   For a detailed list of the network devices currently supported by
@@ -41,7 +41,7 @@ These requirements must be met to implement RackConnect v3.0:
     [RackConnect Network Device
     Comparison](/how-to/rackconnect-network-device-comparison).
 
-**Supported region**
+### Supported region
 
 -   Your devices must be deployed in a region supported by
     RackConnect v3.0. The regions supported, as of October 2014, are
@@ -52,7 +52,7 @@ These requirements must be met to implement RackConnect v3.0:
     not possible with RackConnect v3.0 (although, cross-communication
     between regions might be possible with a VPN solution).
 
-**Cloud network**
+### Cloud network
 
 -   **Important**: You cannot create the cloud network for use with
     RackConnect v3.0 yourself, and any existing cloud networks will not
@@ -78,9 +78,6 @@ These requirements must be met to implement RackConnect v3.0:
     servers that you build must be built with a RackConnect v3.0
     associated cloud network.
 
-
-
-If you have any questions, please reach out to us. Contact information
+If you have any questions, contact us. Contact information
 is available on the [Contact
 Us](/how-to/support) page.
-
