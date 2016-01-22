@@ -31,8 +31,8 @@ host `https://www.example-domain.com` and `https://www.example-domain-2.com`, yo
 follows:
 
 -   Cloud server private IP address is 10.1.1.1
--   DNS points www.example-domain.com to public IP 1.1.1.1
--   DNS points www.example-domain-2.com to public IP 1.1.1.2
+-   DNS points `www.example-domain.com` to public IP 1.1.1.1
+-   DNS points `www.example-domain-2.com` to public IP 1.1.1.2
 -   PAT entry on network device points 1.1.1.1 port 443 to 10.1.1.1 port
     8443
 -   PAT entry on network device points 1.1.1.2 port 443 to 10.1.1.1 port
