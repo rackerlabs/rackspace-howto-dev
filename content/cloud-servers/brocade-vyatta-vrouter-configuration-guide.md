@@ -16,8 +16,6 @@ You read more about the Brocade Vyatta vRouter at the [Rackspace virtual cloud s
 
 The following articles provide detailed configurations for the Brocade Vyatta vrouter:
 
-[Brocade Vyatta vRouter configuration guide](/how-to/node/4165/revisions/20104/view)
-
 [Configuring a policy-based IPsec site-to-site VPN on a Vyatta vRouter](/how-to/vyatta-ipsec-site-to-site-vpn)
 
 [Configure a Site-to-site VPN using the Vyatta Network Appliance](/how-to/configure-a-site-to-site-vpn-using-the-vyatta-network-appliance)

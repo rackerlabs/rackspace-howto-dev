@@ -72,7 +72,7 @@ After you know which data will be copied to your system disk and which will be c
 
 ### Create the destination server
 
-[arch]:/knowledge_center/rackspace-open-cloud-reference-architecture
+[arch]:/how-to/rackspace-open-cloud-reference-architecture
 
 When you create the destination server, consider your storage requirements as well as your memory, CPU, and network requirements.
 
