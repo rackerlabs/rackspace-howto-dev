@@ -1,6 +1,6 @@
 ---
 node_id: 2056
-title: Multiple SSL certificates on a single RackConnect Cloud Server (PAT)
+title: Multiple SSL certificates on a single RackConnect cloud server (PAT)
 type: article
 created_date: '2012-08-23'
 created_by: Juan Perez
@@ -27,8 +27,7 @@ accomplished leveraging PAT (Port Address Translation) on your network
 device versus NAT.
 
 For example, if you have a single Cloud Server that you want to use to
-host **https://www.example-domain.com** and https://
-**www.example-domain-2.com**, your network device could be set up as
+host `https://www.example-domain.com` and `https://www.example-domain-2.com`, your network device could be set up as
 follows:
 
 -   Cloud server private IP address is 10.1.1.1
@@ -45,4 +44,3 @@ distinguish which site the encrypted traffic was destined for based on
 the unique port number).
 
 For assistance with setting up PAT on your network device, contact your Dedicated Support team .
-
