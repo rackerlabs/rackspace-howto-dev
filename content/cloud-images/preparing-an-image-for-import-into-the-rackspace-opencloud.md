@@ -15,16 +15,6 @@ disk images into the Rackspace open cloud. For such images to boot
 correctly, they must be prepared according to the following requirements
 and instructions.
 
-In this article ...
-
--   [General requirements](#requirements)
--   [Microsoft Windows](#no-can-haz-windows)
--   [Preparing an image offline using
-    XenServer](#offline-using-xenserver)
--   [Preparing an image online in another
-    cloud](#online-in-another-cloud)
--   [Alternatives to image import](#alternatives)
-
 General Requirements
 --------------------
 
