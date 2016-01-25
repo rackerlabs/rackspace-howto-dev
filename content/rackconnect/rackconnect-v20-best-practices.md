@@ -63,7 +63,7 @@ Server, please read the following description of the process.
 
 Traffic flow between Dedicated and Cloud Servers: RackConnect Firewall
 
-<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.png" class="image-full_width" />
+<img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.png" class="image-full_width" />
 
 
 
@@ -71,7 +71,7 @@ Traffic flow between Dedicated and Cloud Servers: RackConnect Firewall
  Traffic Flow between Dedicated and Cloud Servers: RackConnect Load
 Balancer
 
-<img src="http://www.rackspace.com/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.LB_.png" class="image-full_width" />
+<img src="/knowledge_center/sites/default/files/styles/full_width/public/field/image/RC.Traffic.Flow_.LB_.png" class="image-full_width" />
 
 
 ------------------------------------------------------------------------
