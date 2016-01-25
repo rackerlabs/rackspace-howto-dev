@@ -9,7 +9,7 @@ last_modified_by: Margaret Eker
 product: Cloud Big Data
 product_url: cloud-big-data
 ---
-
+PRACTICE EDIT
 Rackspace Cloud Big Data Platform is a new public cloud offering
 leveraging the Hortonworks Data Platform (HDP) and OpenStack. Users can
 quickly deploy a full HDP stack and scale the solution simply by adding
