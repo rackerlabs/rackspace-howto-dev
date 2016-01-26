@@ -149,5 +149,5 @@ center) as the Hadoop cluster.
 We hope that these additional points help you successfully understand
 and deploy your Cloud Big Data solution. If you need help, reach out to
 our data specialist support team by creating a ticket in the Rackspace
-Cloud Control Panel.
+Cloud Control Panel
 
