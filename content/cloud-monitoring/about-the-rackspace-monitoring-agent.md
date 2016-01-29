@@ -55,5 +55,3 @@ Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the
 
 [Troubleshoot the Monitoring
 Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
-
-Hai Steve!
