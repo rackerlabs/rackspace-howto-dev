@@ -27,9 +27,6 @@ system information:
 -   CPU
 -   Network
 
-
--
-
 ### Using the Monitoring Agent
 
 The first step to using the Monitoring Agent is to install it on your
@@ -43,9 +40,6 @@ provides CPU, Filesystem, and Memory metrics. You can manage the agent
 using either the Cloud Control panel or the Monitoring API, which you
 can learn about by reading the [Rackspace Monitoring API Developer
 Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/ "Rackspace Monitoring API Developer Guide").
-
-
--
 
 ### Live Host Statistics in the Cloud Control Panel
 
@@ -61,3 +55,5 @@ Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the
 
 [Troubleshoot the Monitoring
 Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
+
+
