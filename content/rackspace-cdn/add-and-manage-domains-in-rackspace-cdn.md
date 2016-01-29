@@ -4,7 +4,7 @@ title: Add and manage domains in Rackspace CDN
 type: article
 created_date: '2015-05-08'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
+last_modified_date: '2016-01-25'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -31,11 +31,7 @@ enter the **Domain Name** of the domain that you want to add. For secure
 domains, the name must be a single word and cannot contain periods (.),
 but can contain hyphens (-).
 
-
-
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.28.18%20PM.png" width="559" height="318" />
-
-
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-16%20at%203.28.18%20PM.png" width="559" height="318" />
 
 5\. Click **Add Domain**.  In the **Domains** section, you can see the
 Domain Name, along with the **Certificate Type**, and the **Status** of
@@ -45,12 +41,12 @@ If the **Status** is **Domain Not Configured**, click on that text to
 get instructions and to see the Rackspace CDN URL (see the figure below)
 that you need for the CNAME record creation.
 
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.39.21%20PM.png" width="521" height="157" />
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-16%20at%203.39.21%20PM.png" width="521" height="157" />
 
 The instructions that see see when you click on **Domain Not
 Configured** are similar to those in the following figure:
 
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%203.57.27%20PM.png" width="485" height="240" />
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-16%20at%203.57.27%20PM.png" width="485" height="240" />
 
 It might take some time for your DNS change to propagate across the
 internet. After this has happened (based on the TTL you have set with
@@ -63,8 +59,3 @@ CDN](/how-to/change-dns-to-enable-rackspace-cdn).
 
 
 #### [&lt; Create a Rackspace CDN service](/how-to/create-a-rackspace-cdn-service)    -    [Work with origins and origin rules in Rackspace CDN &gt;](/how-to/work-with-origins-and-origin-rules-in-rackspace-cdn)
-
-
-
-
-

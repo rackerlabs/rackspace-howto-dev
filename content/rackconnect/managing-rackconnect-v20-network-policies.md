@@ -10,8 +10,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-**Previous section:** [Access the RackConnect v2.0 Management
-Interface](/how-to/access-the-rackconnect-management-interface)
+**Previous section:** [Access the RackConnect v2.0 Management Interface](/how-to/access-the-rackconnect-management-interface)
 
 **Applies to:** RackConnect v2.0
 
@@ -23,7 +22,7 @@ policies*.
 
 Network policies are configurable under each individual Cloud Account in
 the RackConnect Management Interface (available in the [MyRackspace
-Portal](https://my.rackspace.com/)), and can be added to control access
+portal](https://my.rackspace.com/)), and can be added to control access
 between your cloud servers, your dedicated environment, and the
 Internet.
 
@@ -34,19 +33,19 @@ five RackConnect traffic scenarios. Following are the available network
 policies, with their effect on network device access lists and software
 firewalls (iptables or Windows Firewall):
 
--   Cloud Server(s) to Dedicated &ndash; Updates connected network device
+-   Cloud Servers to Dedicated&mdash;Updates connected network device
     access lists
 
--   Cloud Server(s) to Internet &ndash; Updates connected network device
+-   Cloud Servers to Internet&mdash;Updates connected network device
     access lists
 
--   Cloud Server(s) to Cloud Server(s) &ndash; Updates inbound software
+-   Cloud Servers to Cloud Servers&mdash;Updates inbound software
     firewalls on cloud servers
 
--   Dedicated to Cloud Server(s) &ndash; Updates inbound software firewalls on
+-   Dedicated to Cloud Servers&mdash;Updates inbound software firewalls on
     cloud servers
 
--   Internet to Cloud Server(s) &ndash; Updates edge network device access
+-   Internet to Cloud Servers&mdash;Updates edge network device access
     lists and inbound software firewalls on cloud servers
 
 **Note:** Software firewalls are configured to allow unrestricted
@@ -99,9 +98,8 @@ the form xxxxxx-xxxxxx.
 Any time you change a network policy, the automation status indicators
 show you when the policy is being deployed (or removed) and when the
 changes are complete. You can also track details of the status on the
-**Tasks** tab. You must refresh the page in the [MyRackspace
-Portal](https://my.rackspace.com/) to view the updated status
-indicators, which can have the following meanings:
+**Tasks** tab. You must refresh the page in the MyRackspace
+portal to view the updated status indicators, which can have the following meanings:
 
 -   Green=Deployed
 -   Blue=Deploying
@@ -159,5 +157,4 @@ Us](/how-to/support) page.
 
 ### Next step
 
-[Accessing RackConnect Cloud
-Servers](/how-to/accessing-rackconnect-cloud-servers)
+[Accessing RackConnect cloud servers](/how-to/accessing-rackconnect-cloud-servers)

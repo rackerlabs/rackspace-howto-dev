@@ -10,16 +10,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-<div class="content">
-
-<div
-class="field field-name-body field-type-text-with-summary field-label-hidden">
-
-<div class="field-items">
-
-<div class="field-item even">
-
-**Note**: This article is written for our [Cloud Sites Control
+**Note:** This article is written for our [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com/). You can get to it from the
 Cloud Control Panel by clicking the Rackspace Cloud menu at the top of
 the screen and selecting **Cloud Sites**.
@@ -28,8 +19,6 @@ the screen and selecting **Cloud Sites**.
 
 [Getting Started with Cloud
 Sites](/how-to/cloud-sites)
-
-
 
 Secure Sockets Layer (SSL) is an encryption technology that protects
 your visitors' private information while it's in transit via the
@@ -98,7 +87,7 @@ Complete the following steps to generate a certificate signing request
 
 Your CSR is generated. With the CSR ready for use, you can proceed to
 [purchasing a
-certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/27345/view#ssl_purchase).
+certificate](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
 
 
 
@@ -116,12 +105,12 @@ vendor might require the following details:
 -   Server type: Apache
 -   SSL type: OpenSSL or modSSL
 -   CSR: [You generated
-    this](https://admin.rackspace.com/knowledge_center/node/127/revisions/27345/view#install_ssl)
+    this](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites)
     in the preceding section
 
 After you have completed your certificate purchase, you're ready to
 [install the
-certificate](https://admin.rackspace.com/knowledge_center/node/127/revisions/27345/view#ssl_install).
+certificate](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
 
 
 

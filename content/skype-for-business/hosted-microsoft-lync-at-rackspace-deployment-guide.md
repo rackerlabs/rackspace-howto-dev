@@ -4,14 +4,14 @@ title: Hosted Microsoft Lync at Rackspace Deployment Guide
 type: article
 created_date: '2014-10-20'
 created_by: Aaron Medrano
-last_modified_date: '2016-01-19'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-26'
+last_modified_by: Catherine Richardson
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
 
 Hosted Microsoft Lync is a unified communications tool that offers
-secure instant Mmessaging, video chat, file transfer, and presence to
+secure instant messaging, video chat, file transfer, and presence to
 users from desktop and mobile devices. It is available as an add-on
 for Rackspace Hosted Exchange 2013 email platform.
 
@@ -27,10 +27,9 @@ As the first step, you must create Auto-discover entries on your DNS
 server.  If you have an internal DNS you must also set up these records
 on your internal DNS.
 
-We highly recommend that you perfor this step because all of the Hosted
+We highly recommend that you perform this step because all of the Hosted
 Lync features will work only if DNS is correctly configured. For
-instructions, see [Hosted Lync DNS
-Records](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+instructions, see [Set up DNS records](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
 
 **Note:** If you are a Rackspace Hosted Exchange customer, these
 settings are in addition to what you might currently have for Hosted
@@ -57,7 +56,4 @@ download a basic version for free.
     for setting up Lync on your devices)
 
 -   [Lync 2013 deployment guide on
-    Technet](http://technet.microsoft.com/en-us/library/jj204827.aspx)
-
-###
-
+    TechNet](http://technet.microsoft.com/en-us/library/jj204827.aspx)

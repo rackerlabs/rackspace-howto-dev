@@ -4,8 +4,8 @@ title: Attach a Cloud Block Storage volume to an OnMetal server through the Clou
 type: article
 created_date: '2015-07-09'
 created_by: Renee Rendon
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-01-27'
+last_modified_by: Mike Asthalter
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -18,30 +18,31 @@ the fast I/O normally provided by an OnMetal server. Using an OnMetal
 server with Cloud Block Storage is particularly useful for OnMetal
 Compute and Memory v1 flavors.
 
-<span>Use the following procedure to attach a volume to your OnMetal
-server via the Cloud Control Panel.</span><span> The procedure assumes
-that the server instance already exists.</span>
+Use the following procedure to attach a volume to your OnMetal
+server via the Cloud Control Panel. The procedure assumes
+that the server instance already exists.
 
 
 
-### [Create a new volume]()
+### Create a new volume
 
 If you want to create a new volume, the following steps will guide you.
-If you have already created a volume, go to [Attach a volume](#attach).
+If you have already created a volume, go to the "Attach a volume" section.
 
 1\. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
-2\. <span>Under the Storage tab, choose **Block Storage Volumes**.</span>
+2\. Under the Storage tab, choose **Block Storage Volumes**.
 
 <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/storage.png" width="276" height="200" />
 
-3. Click **Create Volume** and and complete the fields.
+3\. Click **Create Volume** and complete the fields.
 
-4\. Click **Create Volume**.
+4\. Click **Create Volume** again.
 
 
 
-### [Attach a volume]()
+
+### Attach a volume
 
 1\. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -54,7 +55,7 @@ select **Attach Volume**.
 
 4\. Select a server from the list and click **Attach Volume**.
 
-    Note: <span>You can attach more than one volume to a server.</span>
+**Note**: You can attach more than one volume to a server.
 
 You must use a CLI to complete steps 5 - 12.
 
@@ -88,8 +89,8 @@ later. The output might vary depending on the server flavor.
     $ lsblk
     NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
     sda      8:0    0  28.9G  0 disk
-    &boxvr;&boxh;sda1   8:1    0  28.8G  0 part /
-    &boxur;&boxh;sda2   8:2    0    64M  0 part
+    sda1     8:1    0  28.8G  0 part /
+    sda2     8:2    0    64M  0 part
     sdb      8:16   0   1.5T  0 disk
     sdc      8:32   0   1.5T  0 disk
 
@@ -111,33 +112,32 @@ later. The output might vary depending on the server flavor.
     $ lsblk
     NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
     sda      8:0    0  28.9G  0 disk
-    &boxvr;&boxh;sda1   8:1    0  28.8G  0 part /
-    &boxur;&boxh;sda2   8:2    0    64M  0 part
+    sda1     8:1    0  28.8G  0 part /
+    sda2     8:2    0    64M  0 part
     sdb      8:16   0   1.5T  0 disk
     sdc      8:32   0   1.5T  0 disk
     sdd      8:48   0     2G  0 disk
 
 Now you can use the device, just like on other cloud servers. For more
-information, see [Prepare Your Cloud Block Storage
-Volume](/how-to/prepare-your-cloud-block-storage-volume).
+information, see [Prepare your Cloud Block Storage
+volume](/how-to/prepare-your-cloud-block-storage-volume).
 
 
 
-### [Detach a volume]()
+### Detach a volume
 
 If you want detach a volume from an OnMetal server, be sure that the
 volume is [fully
 unmounted](/how-to/detach-and-delete-cloud-block-storage-volumes)
 from within the OnMetal server before following the steps below.
 
-1. <span>Under the Storage tab, choose Block Storage Volumes.</span>
+1\. Under the Storage tab, choose Block Storage Volumes.
 
-<span>2. Click the cog beside the volume that you want to attach and
-select </span>**Detach Volume**<span>.</span>
+2\. Click the cog beside the volume that you want to attach and
+select **Detach Volume**.
 
-<span>3. Click **Detach Volume**.</span>
+3\. Click **Detach Volume**.
 
-<span>Note: If any volumes are attached to an instance, deleting the
+**Note**: If any volumes are attached to an instance, deleting the
 instance fails. Detaching the instances and re-deleting will
-succeed.</span>
-
+succeed.

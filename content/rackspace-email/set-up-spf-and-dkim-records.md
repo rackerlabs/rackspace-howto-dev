@@ -1,6 +1,6 @@
 ---
 node_id: 1499
-title: Set Up SPF and DKIM Records
+title: Set up SPF and DKIM Records
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
@@ -10,21 +10,15 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-DomainKey Identified Mail (DKIM) and Sender Policy Framework (SPF) are
-two different methods that can protect you from email spamming,
-spoofing, and phishing attempts. The SPF model lets you specify which
-email servers are legitimate servers for your domain. The DKIM model
-lets you attach a DomainKey signature to your outgoing mail. The
-receiving server then verifies the validity of the key and either
-accepts or rejects the mail. SPF and DKIM are frequently used in
-combination since they attack email problems from two different angles.
+DomainKey Identified Mail (DKIM) and Sender Policy Framework (SPF) are two methods that can protect you from email spamming, spoofing, and phishing attempts. 
 
-For instructions on how to create DNS TXT Records for DKIM and SPF, see
-the following articles:
+- The SPF method lets you specify which email servers are legitimate servers for your domain. 
+- The DKIM method lets you attach a DomainKey signature to your outgoing mail. The receiving server then verifies the validity of the key and either accepts or rejects the mail. 
 
-[Creating a DKIM TXT
-Record](/how-to/create-a-dkim-txt-record "Creating a DKIM TXT Record")
+SPF and DKIM are frequently used in combination since they attack email problems from two different angles.
 
-[Creating a SPF TXT
-Record](/how-to/create-an-spf-txt-record "Creating a SPF TXT Record")
+For instructions on how to create DNS TXT records for DKIM and SPF, see the following articles:
 
+- [Create a DKIM TXT record](/how-to/create-a-dkim-txt-record "Creating a DKIM TXT Record")
+
+- [Create a SPF TXT record](/how-to/create-an-spf-txt-record "Creating a SPF TXT Record")

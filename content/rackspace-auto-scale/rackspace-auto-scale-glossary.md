@@ -1,25 +1,25 @@
 ---
 node_id: 3757
-title: Rackspace Auto Scale Glossary
+title: Rackspace Autoscale Glossary
 type: article
 created_date: '2013-11-05'
 created_by: Maria Abrahms
-last_modified_date: '2014-03-19'
-last_modified_by: Ross Diaz
-product: Rackspace Auto Scale
+last_modified_date: '2016-01-22'
+last_modified_by: Constanze Kratel
+product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
 
 ### Agent
 
 A monitoring daemon that resides on the server being monitored. The
-agent gathers metrics based on agent checks and pushes them to Cloud
+agent gathers metrics based on agent checks and pushes them to Rackspace
 Monitoring.
 
 ### Agent token
 
 An authentication token used to identify the agent when it communicates
-with Cloud Monitoring.
+with Rackspace Monitoring.
 
 ### Alarm
 
@@ -50,7 +50,7 @@ mapped directly to an individual computer or a virtual machine.
 
 ### Convergence
 
-The act of Auto Scale adding or removing enough servers to satisfy the
+The act of Autoscale adding or removing enough servers to satisfy the
 needed capacity.
 
 ### Convergence Delta
@@ -61,8 +61,8 @@ system adds 2 servers. If it is -10, the system removes 10 servers.
 
 ### Cooldown
 
-See **[Group cooldown](#GroupCooldown)** and [**Policy
-cooldown**](#PolicyCooldown).
+See **Group cooldown** and **Policy
+cooldown**.
 
 ### Entity
 
@@ -98,7 +98,7 @@ additional servers.
 ### Launch configuration
 
 A configuration that contains the necessary details for adding and
-removing servers from a scaling group in the Rackspace Auto Scale API.
+removing servers from a scaling group in the Rackspace Autoscale API.
 The **launchConfiguration** object specifies whether you are creating a
 server or a load balancer and the necessary details about the
 configuration.
@@ -122,7 +122,7 @@ alarm is triggered.
 ### Policy cooldown
 
 The length of time that must pass before a policy can be executed again.
-The purpose is to allow for a fast scale up and a slow scale downof
+The purpose is to allow for a fast scale up and a slow scale down of
 servers.
 
 ### Scaling
@@ -158,7 +158,7 @@ name, flavor reference, and image reference.
 
 ### Server image
 
-See [**Image**](#Image).
+See **Image**.
 
 ### Virtual IP
 
@@ -171,4 +171,3 @@ based on the configuration of the load balancer.
 
 A URL that can activate a specific (scale-up or scale-down) policy for a
 scaling group without requiring does this without authentication.
-

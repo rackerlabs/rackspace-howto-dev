@@ -9,7 +9,9 @@ product: Cloud Images
 product_url: cloud-images
 ---
 
-The Rackspace Cloud Images service offers retrieval, storage, and metadata assignment for Rackspace Cloud Server images.
+<p class="lead" markdown="1">The Rackspace Cloud Images service offers retrieval, storage, and metadata assignment for Rackspace Cloud Server images.</p>
+
+<hr />
 
 ###  Preparing images
 
@@ -19,6 +21,6 @@ The Rackspace Cloud Images service offers retrieval, storage, and metadata assig
 
 ###  Uploading and downloading images
 
-- [Installing the Swiftly Cloud Files client](/how-to/install-the-swiftly-client-for-cloud-files)
-- [Using Swiftly to download an exported image](/how-to/using-swiftly-to-download-an-exported-image)
+- [Installing the Swiftly Cloud Files Client](/how-to/install-the-swiftly-client-for-cloud-files)
+- [Using Swiftly to Download an Exported Image](/how-to/use-swiftly-to-download-an-exported-image)
 - [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image)

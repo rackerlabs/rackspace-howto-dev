@@ -17,7 +17,8 @@ that happen?"
 You can make it happen by using Cloud Images.  This article explains how
 to do it.
 
-### Setting expectations
+Setting expectations
+--------------------
 
 Before we get into the details, consider the following information:
 
@@ -37,11 +38,12 @@ Before we get into the details, consider the following information:
     in the Cloud Images FAQ for details.
 -   Cloud Images is currently accessible only through the [Cloud Images
     v2
-    API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#api-reference);
+    API](http://docs.rackspace.com/images/api/v2/ci-devguide/content/ch_image_preface.html);
     it's not available in the Cloud Control Panel yet.
 -   Cloud Images uses only JSON; it does not use XML.
 
-#### Working in the source region
+ Working in the source region
+-----------------------------
 
 1.  Create an image of the source server.
 
@@ -82,14 +84,11 @@ Before we get into the details, consider the following information:
     task is executed, it copies the image in Cloud Images and puts the
     copy into the container named `exported-images` in your Cloud Files
     account (also in the source region).
-5.  Enter:
-
-    ```curl -X POST <br>
+5.  curl -X POST <br>
           -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
           -H "Content-Type: application/json" <br>
           -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" <br>
           "$OS_IMAGE_URL/v2/tasks"
-    ```
 
     Cloud Images returns a 201 (Created) response. The body of the
     response contains an `id` element whose value is the UUID of your
@@ -157,7 +156,8 @@ Before we get into the details, consider the following information:
     `a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd` is, you can look it up
     using either the Cloud Images or Cloud Servers API.
 
-### Working between the regions
+Working between the regions
+---------------------------
 
 At this point, you need to download the image from your Cloud Files
 account in the source region to a neutral location (you could use your
@@ -180,7 +180,8 @@ experience.  Feel free to record your experience with any of these tools
 in the comments section of this article so other users can benefit from
 your experience.
 
-### Working in the target region
+Working in the target region
+----------------------------
 
 This example assumes that the object
 named  `a6da1504-e1c0-4f40-8461-1ed9a9990e90.vhd` is in a container
@@ -275,7 +276,8 @@ can import it for use with Cloud Servers.
     Server**. Because the imported image is not an image of any server
     in the target region, the Control Panel shows the server as deleted.
 
-### Related information
+Related information
+-------------------
 
 -   [Rackspace Cloud Images Developer
     Guide](http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html)

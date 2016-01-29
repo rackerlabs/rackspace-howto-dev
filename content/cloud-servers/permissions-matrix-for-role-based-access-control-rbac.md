@@ -10,6 +10,10 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
+### Previous section
+
+[Managing RBAC](/how-to/managing-role-based-access-control-rbac)
+
 The RBAC permissions matrix displays the type of roles that are available within each product. Select a product within the table to view the detailed permissions matrix.
 
 Create, Read, Update, and Delete describes the permissions that are available in RBAC roles.
@@ -25,7 +29,7 @@ Product | (CRUD) Across all RBAC enabled products | Across all RBAC enabled prod
 [Cloud Files](/how-to/permissions-matrix-for-cloud-files) | **YES** | **READ ONLY** | **YES** | **NO** | **YES**
 [Rackspace CDN](/how-to/permission-matrix-for-rackspace-cdn)| **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Databases](/how-to/permissions-matrix-for-cloud-databases) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Load Balancers](https://admin.rackspace.com/knowledge_center/permissions-matrix-for-cloud-load-balancers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Load Balancers](/how-to/permissions-matrix-for-cloud-load-balancers) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Queues](/how-to/permissions-matrix-for-cloud-queues) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Networks](/how-to/permissions-matrix-for-cloud-networks) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Monitoring](/how-to/detailed-permissions-matrix-for-rackspace-monitoring) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
@@ -34,7 +38,7 @@ Product | (CRUD) Across all RBAC enabled products | Across all RBAC enabled prod
 [Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Big Data v1](/how-to/detailed-permissions-matrix-for-cloud-big-data) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Big Data v2](/how-to/detailed-permissions-matrix-for-cloud-big-data-v2) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
-[Cloud Backup](https://admin.rackspace.com/knowledge_center/detailed-permissions-matrix-for-cloud-backup) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
+[Cloud Backup](/knowledge_center/detailed-permissions-matrix-for-cloud-backup) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Orchestration](/how-to/permissions-matrix-for-cloud-orchestration) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud DNS](/how-to/detailed-permissions-matrix-for-dns) | **YES** | **READ ONLY** | **YES** | **YES** | **YES**
 [Cloud Feeds](/how-to/detailed-permissions-matrix-for-cloud-feeds)| **NO** | **READ ONLY** | **NO** | **NO** | **YES**
@@ -52,4 +56,6 @@ The following products will not be RBAC enabled:
 - RackConnect
 - Mailgun
 
-### [&lt; Managing RBAC](/how-to/managing-role-based-access-control-rbac)    -    [FAQ for RBAC &gt;](/how-to/faq-role-based-access-control-rbac)
+### Next section
+
+[FAQ for RBAC &gt;](/how-to/faq-role-based-access-control-rbac)

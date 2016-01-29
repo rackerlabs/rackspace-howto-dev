@@ -10,20 +10,12 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-***NOTE:** This article is written for our [Cloud Sites Control
+***Note:** This article is written for our [Cloud Sites Control
 Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control
 Panel](https://mycloud.rackspace.com/) by clicking **Rackspace Cloud**
 upper-leftt of the control panel and selecting **Cloud Sites**.*
 
-<div class="content">
-
-<div
-class="field field-name-body field-type-text-with-summary field-label-hidden">
-
-<div class="field-items">
-
-<div class="field-item even">
 
 ### Cloud Sites:  .NET 4.5 Now Available
 
@@ -55,13 +47,13 @@ click on the **Change Technology** button.
 Next select the appropriate .NET 4.5 option and click **Change
 Technology**.
 
-<img src="/knowledge_center/sites/default/files/field/image/Selection_003_0.png" width="694" height="137" />
+<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/Selection_003_0.png" width="694" height="137" />
 
 Your Site may take up to 2 minutes to migrate to the new .NET 4.5
 cluster.  Repeat this process for each site that you host that is
 running .NET 4.0.
 
-**Please Note**: changing the default technology from .NET 4.0 to .NET
+**Note**: changing the default technology from .NET 4.0 to .NET
 4.5 will change the site&rsquo;s IP address. If you are managing your DNS with
 Rackspace Cloud (your site is pointing to our nameservers:
 dns1.stabletransit.com or dns2.stabletransit.com) your IP address will
@@ -69,15 +61,5 @@ be automatically updated. If you are managing your own DNS (your site is
 not pointing to our nameservers) you will need to update your DNS to
 point the site to the new IP address.
 
-That&rsquo;s it, you are now migrated to .NET 4.5 !
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
+That's it, you are now migrated to .NET 4.5 !
 

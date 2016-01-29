@@ -26,12 +26,11 @@ either an HA Cloud Databases instance group or with a [Rackspace Cloud
 Load
 Balancer](/how-to/connect-to-a-cloud-databases-instance#lb).
 
-Importing using a Rackspace Cloud Server
-----------------------------------------
+### Importing using a Rackspace Cloud Server
 
 Perform the following steps:
 
-### Creating a Cloud Database Instance
+#### Creating a Cloud Database Instance
 
 1.  Use the [Cloud Control Panel](http://mycloud.rackspace.com),
     [API](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-api-reference),
@@ -49,67 +48,61 @@ Perform the following steps:
     the Hostname. You'll use it in a later step. The Hostname looks
     something like this:
 
-<img src="http://c691244.r44.cf2.rackcdn.com/Hostname%20of%20Database.png" alt="Database Hostname" width="600" />
+    <img src="http://c691244.r44.cf2.rackcdn.com/Hostname%20of%20Database.png" alt="Database Hostname" width="600" />
 
-### On your current database
+    **On your current database**
 
 4.  On the machine where your existing database is currently located,
     run the following MySQL command to export your database:
 
-<!-- -->
+        mysqldump -u username -p database_name > database_name.sql
 
-         mysqldump -u username -p database_name > database_name.sql
+  - `database_name` is the name of your existing database.
 
-          `database_name` is the name of your existing database.
+  - `database_name.sql` is the name of the exported database file.
 
-          `database_name.sql` is the name of the exported database file.
-
-
-          Replace `username` with the username you use to access the
+  - Replace `username` with the username you use to access the
 original database.
 
-          **Note**: If you are creating a dump from a Cloud Databases
+  **Note**: If you are creating a dump from a Cloud Databases
 Instance, see [exporting
 data](/how-to/exporting-data-from-mysql)
 for information on how to perform this dump.
-
 5.  Use SFTP to copy the exported .sql file to the Cloud Server that
     will access your Cloud Database.
 6.  With the .sql file copied to your Cloud Server, use ssh to log into
     the Cloud Server.
 7.  If you don't have a MySQL client installed on your server, install
-    it now. On Ubuntu and Debian, install the client with the following
+    it now.
+
+   - On Ubuntu and Debian, install the client with the following
     command:
 
-<!-- -->
+            sudo apt-get install mysql-client
 
-         sudo apt-get install mysql-client
+   - On Fedora and CentOS, install the client with this command:
 
-           On Fedora and CentOS, install the client with this command:
-
-         sudo yum install mysql
+            sudo yum install mysql
 
 8.  Run the following MySQL import command, substituting that long
     public hostname you copied from the Control Panel for the `hostname`
     in the command:
 
-<!-- -->
+        mysql -h 31blah2d.rackspaceclouddb.com -u username -p database_name < database_name.sql
 
-         mysql -h 31blah2d.rackspaceclouddb.com -u username -p database_name < database_name.sql
 
-           Replace `username` with the username you use to access the
+  - Replace `username` with the username you use to access the
 database.
 
-`     database_name` is the name of the database.
+  - `database_name` is the name of the database.
 
-           The database is imported and ready to accept new data.
+  The database is imported and ready to accept new data.
 
-Importing to a Cloud Database with public access (HA group or Cloud Load Balancer)
-----------------------------------------------------------------------------------
+### Importing to a Cloud Database with public access (HA group or Cloud Load Balancer)
 
 Perform the following steps:
 
-### Creating a Cloud Database Instance
+#### Creating a Cloud Database Instance
 
 1.  Use the [Cloud Control Panel](http://mycloud.rackspace.com),
     [API](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-api-reference),
@@ -127,48 +120,40 @@ Perform the following steps:
     You'll use it in a later step. The public Hostname for an HA
     instance looks something like this:
 
+    <img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/HA_Group_Details_KC.png" width="600" />
 
-<img src="/knowledge_center/sites/default/files/field/image/HA_Group_Details_KC.png" width="600" />
-
-### On your current database
+    **On your current database**
 
 4.  On the machine where your existing database is currently located,
     run the following MySQL command to export your database:
 
-<!-- -->
-
          mysqldump -u username -p database_name > database_name.sql
 
-          `database_name` is the name of your existing database.
+  - `database_name` is the name of your existing database.
 
-          `database_name.sql` is the name of the exported database file.
+  - `database_name.sql` is the name of the exported database file.
 
+  - Replace `username` with the username you use to access the
+    original database.
 
-          Replace `username` with the username you use to access the
-original database.
-
-          **Note**: If you are creating a dump from a Cloud Databases
-Instance, see [exporting
-data](/how-to/exporting-data-from-mysql)
-for information on how to perform this dump.
+  **Note**: If you are creating a dump from a Cloud Databases
+  Instance, see [exporting data](/how-to/exporting-data-from-mysql)
+  for information on how to perform this dump.
 
 5.  Run the following MySQL import command, substituting that long
     public hostname you copied from the Control Panel for the `hostname`
     in the command:
 
-<!-- -->
-
          mysql -h hostname -u username -p database_name < database_name.sql
 
-           Replace `username` with the username you use to access the
+  - Replace `username` with the username you use to access the
 database.
 
-`     database_name` is the name of the database.
+  - `database_name` is the name of the database.
 
-           The database is imported and ready to accept new data.
+  The database is imported and ready to accept new data.
 
-Best Practices
---------------
+### Best Practices
 
 Large imports to new HA or replicated Cloud Databases instances should
 utilize a single instance for the import then convert to HA/add replicas
@@ -185,8 +170,7 @@ of your application. [Upgrading a database
 instance](/how-to/upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56)
 for an example on how to upgrade from MySQL 5.1 to 5.6.
 
-Limitations
------------
+### Limitations
 
 -   A full instance export (with users and settings) requires root
     access on both the original and new database instances.
@@ -199,12 +183,10 @@ Limitations
     definer other than the database user importing data will fail due to
     a requirement for SUPER privilege.
 
-External Links
---------------
+### External Links
 
 [MYSQL Documentation](http://dev.mysql.com/doc/)
 
 <https://mariadb.com/kb/en/mariadb/documentation/>
 
 <https://www.percona.com/software/mysql-database/percona-server>
-

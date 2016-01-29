@@ -1,6 +1,6 @@
 ---
 node_id: 3851
-title: Cloud Images - FAQ
+title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
@@ -16,8 +16,13 @@ product_url: cloud-images
 
 There are several types of documentation available:
 
+-   The [Rackspace Cloud Images Getting Started
+    Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#document-getting-started)
+    walks you through the basics of using the Images API for all your
+    image-related needs
 -   The [Rackspace Cloud Images Developer
-    Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/) gives you details on the Cloud Images v2 API
+    Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
+    gives you details on the Cloud Images v2 API
 -   There are links to Rackspace Knowledge Center articles giving
     step-by-step instructions for various Cloud Images operations at
     appropriate places in this document.
@@ -85,7 +90,7 @@ client `image-list` call, or in the Cloud Control Panel. As it is not a
 copy of the image, the cost of storage is handled by the image producer
 (who is charged at normal Cloud Files rates).
 
-#### Is there a limit to what kinds of images or how many I can share or have shared with me?
+#### Is there a limit to what kinds of images, or how many, I can share or have shared with me?
 
 There is no limit on the number of images that can be shared from, or
 shared to, a cloud user. You can act as an image producer and share as
@@ -140,7 +145,7 @@ access to the ORD region by looking in the Control Panel &mdash; it won't show
 up as an option in the Region dropdown on either the Server List or
 Create Server pages. API users can look directly in their service
 catalog. To learn more about regions in the Rackspace cloud, please see
-the Knowledge Center article titled [Where are the Rackspace data centers
+the Knowledge Center article[Where are the Rackspace data centers
 located?](/how-to/rackspace-data-centers-and-regions).
 
 #### What if someone shares an image to me that I don't want, or if I don't know the person?
@@ -155,7 +160,8 @@ using the image. Only create servers from images you trust.
 
 You can reject the image and it will no longer be displayed in your
 image list. Please consult the [Cloud Images v2 API
-documention](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing) for instructions on how to reject an image.
+documention](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)
+for instructions on how to reject an image.
 
 #### What happens if someone accidentally (or intentionally) shares an image with malware, root kits, backdoors, or other vulnerabilities? Who is liable?
 

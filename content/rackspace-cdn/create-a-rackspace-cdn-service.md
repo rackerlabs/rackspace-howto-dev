@@ -4,7 +4,7 @@ title: Create a Rackspace CDN service
 type: article
 created_date: '2015-05-08'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
+last_modified_date: '2016-01-25'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -21,17 +21,17 @@ A box opens letting you know that your service is being deployed.
 Another box opens showing that your set up is complete along with the
 URL you need to use to create your CNAME record.
 
-1\. Click Create Service. A popup dialog box is displayed. (Pricing
+1\. Click **Create Service**. A popup dialog box is displayed. (Pricing
 information is displayed under the drop down menu in the following
-figure. To get pricing information, click the dollar sign (\\\$) icon.)
+figure. To get pricing information, click the dollar sign ($) icon.)
 
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-15%20at%201.29.00%20PM.png" width="391" height="192" />
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-15%20at%201.29.00%20PM.png" width="391" height="192" />
 
 
 2\. Enter the following information to create your service:
 
--   **Service Name**: A human-readable name for your service.
--   **Choose Traffic Type**: Choose HTTP or HTTPS.
+-   **Service Name:** A human-readable name for your service.
+-   **Choose Traffic Type:** Choose HTTP or HTTPS.
 
 When you choose HTTPS, **Choose Certificate Type** displays to enable
 you to select the kind of certificate your service will use. After June
@@ -46,7 +46,7 @@ options](/how-to/rackspace-cdn-secure-delivery-options).
 
 **Shared SAN Certificate** enables you to use your own domain name with
 Rackspace CDN and serve traffic securely. (Note that pricing information
-displays below under the type of certficate chosen.) When you create a
+displays below under the type of certificate chosen.) When you create a
 service using a shared SAN certificate, when you click **Create
 Service**, you are also creating your SAN certificate. The following
 steps are involved when you create a service using a shared SAN
@@ -62,7 +62,7 @@ certificate:
     Rackspace CDN.
 -   Rackspace CDN shows the completed status in the Control Panel.
 
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%201.34.40%20PM.png" width="553" height="210" />
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-16%20at%201.34.40%20PM.png" width="553" height="210" />
 
 -   **Domain Name**: This is the domain name through which visitors
     receive content. The domain name must have a subdomain in it, for
@@ -94,7 +94,7 @@ servers are configured to accept the domain name that you chose because
 the domain that is generated for https will produce an error.
 
 For example, if the CDN domain is `cdn.customer.com.cdn306.raxcdn.com`,
-to update the website configuration (Origin) for Apache, you need to
+to update the website configuration (origin) for Apache, you need to
 include the CDN domain `cdn.customer.com.cdn306.raxcdn.com `as
 `ServerAlias `for Apache or as `Server_Name` for Nginx.
 
@@ -111,7 +111,7 @@ The response should be `HTTP/1.1 200 OK`.
 4\.  Click **Close** to close this box and open a page with all the
 details about the new service.
 
-<img src="/knowledge_center/sites/default/files/field/image/Screen%20Shot%202015-12-16%20at%201.43.03%20PM.png" width="667" height="845" />
+<img src="http://16909682886ee5c2b59a-fffceaebb8c6ee053c935e8915a3fbe7.r35.cf2.rackcdn.com/Screen%20Shot%202015-12-16%20at%201.43.03%20PM.png" width="667" height="845" />
 
 On this page, [add and manage your
 domains](/how-to/add-and-manage-domains-in-rackspace-cdn)
@@ -132,6 +132,3 @@ Service](/how-to/rackspace-cdn).
 CDN](/how-to/access-rackspace-cdn)
 -    [Add and manage domains in Rackspace CDN
 &gt;](/how-to/add-and-manage-domains-in-rackspace-cdn)
-
-
-

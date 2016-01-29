@@ -10,9 +10,9 @@ product: Cloud Databases
 product_url: cloud-databases
 ---
 
-The Rackspace [Knowledge
-Center](/how-to/) provides how-to
-articles, getting started guides, code samples, security best practices
+The Rackspace [Support
+network](/how-to/) provides how-to
+articles, code samples, security best practices
 and hundreds of tips for getting the most out of your Rackspace Cloud
 Databases.
 
@@ -30,17 +30,17 @@ Databases.
 ### Popular how-to articles
 
 -   [Rackspace Cloud Databases
-    FAQs](/how-to/cloud-databases-faq)
--   [Rackspace Cloud Databases: Public Vs. Private
+    FAQ](/how-to/cloud-databases-faq)
+-   [Public Vs. Private
     Access](/how-to/public-and-private-access-for-cloud-databases)
--   [Rackspace Cloud Databases: Connecting to Your
+-   [Connecting to Your
     Database](/how-to/connect-to-a-cloud-databases-instance)
--   [Rackspace Cloud Databases: Importing
-    Data](/how-to/importing-data-into-cloud-databases)
--   [Rackspace Cloud Databases: Managing
-    Users](/how-to/managing-users-for-cloud-databases)
--   [Rackspace Cloud Databases: Creating an
-    Instance](/how-to/cloud-database-instance-parameters)
+-   [Importing
+    data with Cloud Databases](/how-to/importing-data-into-cloud-databases)
+-   [Managing
+    users with Cloud Databases](/how-to/managing-users-for-cloud-databases)
+-   [Creating an
+    Instance with Cloud Databases](/how-to/cloud-database-instance-parameters)
 
 ### Popular technical articles and other resources
 
@@ -73,6 +73,3 @@ deployment, configuration, patching, backups, restores, and monitoring.
 -   Test and Deployment Images:
     -   <http://c629296.r96.cf2.rackcdn.com/ubuntu-10.04-x86_64-openvz.tar.gz>
     -   <http://c629296.r96.cf2.rackcdn.com/lucid_ext3_openvz.box>
-
-
-

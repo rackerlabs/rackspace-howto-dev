@@ -14,7 +14,7 @@ In the [previous article](/how-to/set-up-a-two-server-glusterfs-array), you crea
 
 This article describes how to add a new node, balance it into the array, and then remove it.
 
-## Create a new server
+### Create a new server
 
 Use the `nova boot` command from the previous article to create a server called web3:
 
@@ -22,76 +22,67 @@ Use the `nova boot` command from the previous article to create a server called 
 
 You could also use the [Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel) to create the new server.
 
-## Add the server to the Rackspace custom network
+### Add the server to the Rackspace custom network
 
 In the previous article, you added a Rackspace custom network.
 
-1.  Get the UUID of the network by using the following `nova` command:
+1. Get the UUID of the network by using the following `nova` command:
 
-    `nova network-list`
+       nova network-list
 
-1.  After you have the UUID, associate the new host with it. Replace `UUID` in the following command with the actual UUID (for example, 5492de89-1497-4aa0-96eb-bcdd55e1195c). `web03` is the host name of the server that you want to add.
+2. After you have the UUID, associate the new host with it. Replace `UUID` in the following command with the actual UUID (for example, 5492de89-1497-4aa0-96eb-bcdd55e1195c). `web03` is the host name of the server that you want to add.
 
-    `nova network-associate-host UUID web03`
+       nova network-associate-host UUID web03
 
 You can also use the Rackspace Cloud Control panel to associate a server with your existing network.
 
 When you are done, the new server should have the IP address 192.168.0.3 on interface `/dev/eth3`. That is the address that GlusterFS will use to communicate with the other server.
 
-## Format the partition and install GlusterFS
+### Format the partition and install GlusterFS
 
 1.  Use SSH to log in to the server.
 
-1.  Using the instructions from the previous article, install GlusterFS and format the `bricks` partition as follows:
+2.  Using the instructions from the previous article, install GlusterFS and format the `bricks` partition as follows:
 
- `apt-get update`
+        apt-get update
+        apt-get install -y glusterfs-server glusterfs-client
+        apt-get install -y xfsprogs
+        mkfs.xfs /dev/xvde1
+        mkdir /srv/.bricks
+        echo /dev/xvde1 /srv/.bricks xfs rw 0 1 >> /etc/fstab
+        mount /srv/.bricks
+        ufw allow in on eth2
 
- `apt-get install -y glusterfs-server glusterfs-client`
-
- `apt-get install -y xfsprogs`
-
- `mkfs.xfs /dev/xvde1`
-
- `mkdir /srv/.bricks`
-
- `echo /dev/xvde1 /srv/.bricks xfs rw 0 1 >> /etc/fstab`
-
- `mount /srv/.bricks`
-
- `ufw allow in on eth2`
-
-## Incorporate the new brick into the Gluster volume
+### Incorporate the new brick into the Gluster volume
 
 1.  Use SSH to log in to either web01 or web02.
 
-1.  Tell GlusterFS to trust the new server:
+2.  Tell GlusterFS to trust the new server:
 
-    `root@web02 :~# gluster peer probe 192.168.0.3`
+        root@web02 :~# gluster peer probe 192.168.0.3
+        peer probe: success
 
-    `peer probe: success`
+3.  Add the brick into the volume:
 
-1.  Add the brick into the volume:
-
-    `root@web02 :~# gluster volume add-brick www replica 3 192.168.0.3:/srv/.bricks/www`
-
-    `volume add-brick: success`
+        root@web02 :~# gluster volume add-brick www replica 3 192.168.0.3:/srv/.bricks/www
+        volume add-brick: success
 
 The parts of the command are as follows:
 
- * `gluster` – The command is for GlusterFS.
- * `volume` – The command is related to a volume.
- * `add-brick` – You are adding a brick to the volume.
- * `www` – This is the name of the volume.
- * `replica 3` – After you add this brick, the volume will keep at least three copies of each file, one copy per brick, and in this case, one copy per server (because there is only one brick on each server).
- * `192.168.0.3:/srv/.bricks/www` – This is the IP address of the Gluster server, followed by the absolute path to where the brick data should be stored.
+ * `gluster` - The command is for GlusterFS.
+ * `volume` - The command is related to a volume.
+ * `add-brick` - You are adding a brick to the volume.
+ * `www` - This is the name of the volume.
+ * `replica 3` - After you add this brick, the volume will keep at least three copies of each file, one copy per brick, and in this case, one copy per server (because there is only one brick on each server).
+ * `192.168.0.3:/srv/.bricks/www` - This is the IP address of the Gluster server, followed by the absolute path to where the brick data should be stored.
 
 ### Volume storage strategies
 
 GlusterFS offers different types of volume storage strategies:
 
- * Distributed – One file on one brick, the next file on the next. This strategy gives you more space because your volume is the sum of all the bricks.
- * Replicated – Every file is copied to every server. This is the strategy that we recommend.
- * Striped – Files are cut into chunks, and one chunk is written to the first brick, one chunk is written to the second brick, and so on.
+ * **Distributed** - One file on one brick, the next file on the next. This strategy gives you more space because your volume is the sum of all the bricks.
+ * **Replicated** - Every file is copied to every server. This is the strategy that we recommend.
+ * **Striped** - Files are cut into chunks, and one chunk is written to the first brick, one chunk is written to the second brick, and so on.
 
 You can also combine strategies, for example replicated-distributed, as illustrated in the following example:
 
@@ -105,11 +96,11 @@ Having a replicated-distributed volume gives you a little extra speed, and more 
 
 Striped-replicated volumes are recommended only when you have files that are bigger than a brick, or many large files that are undergoing many IO operations.
 
-## View the state of the servers
+### View the state of the servers
 
 Following are some commands that you can use to find out more about what's happening in your cluster. You will use these commands in the later articles.
 
-### peer status
+#### peer status
 
 If you run the following command from any server, it shows all the peer servers that it knows about:
 
@@ -124,7 +115,7 @@ If you run the following command from any server, it shows all the peer servers 
     Uuid: 56e02356-d2c3-4787-ae25-6b46e867751a
     State: Peer in Cluster (Connected)
 
-### volume status
+#### volume status
 
 The following command is a helpful troubleshooting command. It gives information about all the GlusterFS volumes and tasks queued and in progress.
 
@@ -144,7 +135,7 @@ The following command is a helpful troubleshooting command. It gives information
 
     There are no active volume tasks
 
-## Remove a brick
+### Remove a brick
 
 Now, remove a brick from the volume. The following example removes brick 2:
 
@@ -164,7 +155,7 @@ Then, `watch` it until it finishes:
 
 Running the command that way gives GlusterFS time to re-distribute the files around the bricks.
 
-## Re-add a brick
+### Re-add a brick
 
 Re-adding a brick is not as straight forward as it could be, so this section explains how to do it.
 
@@ -194,6 +185,6 @@ Now that you have a clean location in which to store the brick, adding the brick
     root@web01:/srv# gluster volume add-brick www replica 3 192.168.0.2:/srv/.bricks/www
     volume add-brick: success
 
-## Where to go from here
+### Next section
 
-The next article in this GlusterFS series describes [How to recover from a failed server](/how-to/recover-from-a-failed-server-in-a-glusterfs-array) in a GlusterFS array.
+[How to recover from a failed server in a GlusterFS array](/how-to/recover-from-a-failed-server-in-a-glusterfs-array)

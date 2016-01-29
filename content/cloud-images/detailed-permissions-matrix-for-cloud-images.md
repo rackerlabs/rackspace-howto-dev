@@ -67,3 +67,4 @@ An image tag is a string of characters used to identify a specific image.
 
 An open standard format that uses human-readable text to transmit data objects consisting of key:value pairs.
 
+[**&lt; Permissions Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)
