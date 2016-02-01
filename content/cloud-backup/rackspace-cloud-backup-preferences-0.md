@@ -17,6 +17,8 @@ Actions](/how-to/rackspace-cloud-backup-system-actions)
 
 ### Preferences
 
+The things you can do...
+
 On the Preferences screen, you can determine how Cloud Backup notifies
 you about Backup activity on your Account.
 
